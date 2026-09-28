@@ -1,0 +1,30 @@
+#include "basetypes.h"
+
+extern f32 D_800C9A50;
+extern f32 D_800D2988;
+
+f32 func_80274710(f32 arg0, f32 arg1, f32 arg2) {
+    if (arg1 < 0.0f) {
+        if (arg0 <= -arg2) {
+            return arg0;
+        }
+    }
+    if (0.0f < arg1) {
+        if (arg2 <= arg0) {
+            return arg0;
+        }
+    }
+    if ((arg0 < 0.0f && 0.0f < arg1) ||
+        (0.0f < arg0 && arg1 < 0.0f)) {
+        arg1 *= D_800C9A50;
+    }
+    arg0 += arg1 * D_800D2988;
+    if (arg1 < 0.0f) {
+        if (arg0 < -arg2) {
+            arg0 = -arg2;
+        }
+    } else if (arg2 < arg0) {
+        arg0 = arg2;
+    }
+    return arg0;
+}

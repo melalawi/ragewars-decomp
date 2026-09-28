@@ -1,0 +1,124 @@
+#include "basetypes.h"
+
+typedef struct Source Source;
+typedef struct Dest Dest;
+typedef void *(*StateCallback)(Source *, Dest *);
+
+typedef struct StateEntry {
+    char pad0[0x10];
+    StateCallback callback;
+    f32 scale;
+    s32 threshold;
+    u32 flags;
+} StateEntry;
+
+struct Source {
+    char pad0[0x100];
+    u32 flags;
+    f32 limit;
+    s16 current_state;
+    s16 previous_state;
+    s16 counter;
+    s8 state_changed;
+};
+
+struct Dest {
+    u32 flags;
+    char pad4[0x2C];
+    StateEntry *entry;
+    s8 state;
+    s8 old_state;
+    char pad36[2];
+    u32 old_entry_flags;
+    u32 entry_flags;
+    char pad40[0x80];
+    f32 scale;
+    f32 entry_scale;
+    s16 result;
+    s8 state_result;
+    u8 count;
+};
+
+extern f32 D_800D2988;
+extern double D_800C7220;
+extern s32 func_80265898(StateCallback);
+extern s32 func_802657A4(u32);
+extern void *func_8024B728(void *, void *, s32);
+extern s32 func_802469F8(void *, s32, s32);
+extern s32 func_8024B6E4(void *, s32, s32);
+
+void func_80213ED4(Source *src, Dest *dst) {
+    StateEntry *entry;
+    StateCallback callback;
+    f32 factor;
+
+    entry = dst->entry;
+    if (entry != 0) {
+        if (dst->old_state != dst->state) {
+            if (entry->scale >= 0.0f) {
+                dst->entry_scale = entry->scale;
+            }
+            dst->old_entry_flags = dst->entry_flags;
+            dst->entry_flags = entry->flags;
+            src->state_changed = 0;
+            callback = entry->callback;
+            if (callback != 0) {
+                if (func_80265898(callback) != 0) {
+                    callback = callback(src, dst);
+                } else if (func_802657A4((u32)callback) != 0) {
+                    callback = (StateCallback)func_8024B728(src, callback, dst->state_result);
+                }
+                if (callback != 0) {
+                    if (callback != (StateCallback)-1) {
+                        dst->state_result = func_802469F8(src, (s32)callback, dst->state_result);
+                        dst->result = (s16)callback;
+                        if (src->current_state == dst->state_result) {
+                            src->limit = 0.0f;
+                        }
+                    }
+                    dst->count = 0;
+                    dst->flags &= ~1U;
+                }
+            }
+            dst->old_state = (u8)dst->state;
+        } else if ((dst->state_result == -1) || (dst->result == -1)) {
+            dst->count++;
+            dst->flags |= 1;
+        } else if (src->current_state == dst->state_result) {
+            if (!(dst->flags & 1)) {
+                s32 difference = src->counter - entry->threshold;
+                double converted = difference;
+                if (difference < 0) {
+                    converted += D_800C7220;
+                }
+                if ((f32)converted <= src->limit) {
+                    dst->count++;
+                    dst->flags |= 1;
+                }
+            }
+            if (src->state_changed != 0) {
+                src->state_changed = 0;
+                if (!(dst->flags & 1)) {
+                    dst->count++;
+                }
+                dst->flags &= ~1U;
+            }
+        }
+
+        if (dst->entry_flags & 0x10) {
+            factor = dst->entry_scale;
+        } else {
+            factor = dst->scale * dst->entry_scale;
+        }
+        D_800D2988 *= factor;
+        func_8024B6E4(src, dst->state_result, (dst->entry_flags >> 5) & 1);
+        if ((dst->state_result != -1) && (src->previous_state != dst->state_result)) {
+            dst->count = 0;
+            dst->flags &= ~1U;
+            src->state_changed = 0;
+        }
+        if (src->flags & 0x08000000) {
+            dst->count++;
+        }
+    }
+}

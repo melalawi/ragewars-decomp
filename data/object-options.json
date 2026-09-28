@@ -1,0 +1,107 @@
+{
+ "de": {
+  "__floatdisf": [
+   "-mfp32"
+  ],
+  "func_80278A78": [
+   "-fno-strength-reduce"
+  ],
+  "func_802BC380": [
+   "-ffast-math",
+   "-fno-delayed-branch"
+  ],
+  "func_802BE100": [
+   "-fforce-addr"
+  ],
+  "func_802C6970": [
+   "-mfp32"
+  ],
+  "func_804357C4": [
+   "-fno-strength-reduce"
+  ]
+ },
+ "eu": {
+  "__floatdisf": [
+   "-mfp32"
+  ],
+  "func_80278A78": [
+   "-fno-strength-reduce"
+  ],
+  "func_802BC380": [
+   "-ffast-math",
+   "-fno-delayed-branch"
+  ],
+  "func_802BE100": [
+   "-fforce-addr"
+  ],
+  "func_802C6970": [
+   "-mfp32"
+  ],
+  "func_804357C4": [
+   "-fno-strength-reduce"
+  ]
+ },
+ "eu-mul": {
+  "__floatdisf": [
+   "-mfp32"
+  ],
+  "func_80278A78": [
+   "-fno-strength-reduce"
+  ],
+  "func_802BC380": [
+   "-ffast-math",
+   "-fno-delayed-branch"
+  ],
+  "func_802BE100": [
+   "-fforce-addr"
+  ],
+  "func_802C6970": [
+   "-mfp32"
+  ],
+  "func_804357C4": [
+   "-fno-strength-reduce"
+  ]
+ },
+ "us": {
+  "__floatdisf": [
+   "-mfp32"
+  ],
+  "func_80278A78": [
+   "-fno-strength-reduce"
+  ],
+  "func_802BC380": [
+   "-ffast-math",
+   "-fno-delayed-branch"
+  ],
+  "func_802BE100": [
+   "-fforce-addr"
+  ],
+  "func_802C6970": [
+   "-mfp32"
+  ],
+  "func_804357C4": [
+   "-fno-strength-reduce"
+  ]
+ },
+ "us-rev1": {
+  "__floatdisf": [
+   "-mfp32"
+  ],
+  "func_80278A78": [
+   "-fno-strength-reduce"
+  ],
+  "func_802BC380": [
+   "-ffast-math",
+   "-fno-delayed-branch"
+  ],
+  "func_802BE100": [
+   "-fforce-addr"
+  ],
+  "func_802C6970": [
+   "-mfp32"
+  ],
+  "func_804357C4": [
+   "-fno-strength-reduce"
+  ]
+ }
+}

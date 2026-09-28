@@ -1,0 +1,5 @@
+{
+  "schema": "decomp.text-alignment.v1",
+  "note": "No inter-function alignment case has been reviewed for this cartridge. The mechanism only bites where an authored C body is shorter than the cartridge interval it replaces, and no unit of this cartridge is matched yet, so there is nothing to restore. Add the reviewed case here when the first short body lands; do not carry us-rev1's func_8041B63C over, as that address is not this build's.",
+  "placements": []
+}

@@ -1,0 +1,9 @@
+#include "basetypes.h"
+
+/* Calls func_802A33BC with 2 and returns zero. */
+extern void func_802A33BC(s32);
+
+s32 func_804360D4(void) {
+    func_802A33BC(2);
+    return 0;
+}

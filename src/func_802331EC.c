@@ -1,0 +1,43 @@
+#include "basetypes.h"
+
+extern s32 D_801450B8;
+extern void *D_800D052C[];
+extern f32 D_800C8138;
+
+extern void func_802227D0(void *, void *, s32);
+extern void func_8021A9A4(void *arg0, s32 arg1);
+extern s32 func_80214178(void *, void *, s32);
+extern void func_8022AE90(void *arg0, s32 arg1);
+extern void func_8022AF64(void *arg0, s32 arg1);
+
+void func_802331EC(void *arg0, void *arg1) {
+    void *temp_s0;
+    void *temp_a0;
+    s16 index;
+
+    temp_s0 = *(void **)((char *)arg0 + 0x1D8);
+    if (*(s32 *)((char *)arg1 + 0x13C) == 2) {
+        func_802227D0(temp_s0, temp_s0, 2);
+    } else {
+        *(f32 *)((char *)arg1 + 0x64) = D_800C8138;
+        if ((*(s32 *)((char *)temp_s0 + 0x1450) == 0) &&
+            (D_801450B8 == 1)) {
+            func_8021A9A4(*(void **)((char *)arg0 + 0x1D8), 0x3FB);
+        } else {
+            func_8021A9A4(*(void **)((char *)arg0 + 0x1D8), 0x4CD);
+        }
+        func_80214178(arg0, arg1, 4);
+        func_8022AE90(temp_s0, 0x977);
+        func_8022AF64(temp_s0, 0x974);
+
+        temp_a0 = *(void **)((char *)arg0 + 0x1D8);
+        index = *(s16 *)((char *)temp_a0 + 0x62E);
+        *(f32 *)((char *)arg1 + 0x130) =
+            *(f32 *)((char *)D_800D052C[index] + 0x18) *
+            *(&D_800C8138 + 1);
+        if ((*(s16 *)((char *)temp_a0 + 0x62E) == 8) &&
+            (*(volatile s32 *)((char *)temp_a0 + 0x11C0) == 0)) {
+            func_8022AF64(temp_a0, 0xA3C);
+        }
+    }
+}

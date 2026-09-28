@@ -1,0 +1,50 @@
+#include "basetypes.h"
+
+extern char D_80145088;
+extern void func_8023919C(void *, s32, s32, s32, s32, s32, s32, s32);
+extern void func_80237E70(void *, void *, void *);
+extern s32 func_8025DE74(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
+                         s32 arg4, s32 arg5);
+extern void func_8025E13C(s32 arg0);
+
+/** Apply an accumulating effect descriptor and its optional payloads. */
+s32 func_802ADD18(void *arg0, void *arg1) {
+    void *resource;
+    s32 sound;
+    s32 callback;
+    s32 amount;
+
+    amount = *(u16 *)((char *)arg0 + 0x5E8) +
+             *(u16 *)((char *)arg1 + 0xC);
+    *(s16 *)((char *)arg0 + 0x5E8) = amount;
+    if ((s16)amount >= 100) {
+        *(s16 *)((char *)arg0 + 0x5E8) = amount - 100;
+        if (*(s16 *)((char *)arg0 + 0x5EA) < 9) {
+            *(s16 *)((char *)arg0 + 0x5EA) =
+                *(u16 *)((char *)arg0 + 0x5EA) + 1;
+        }
+    }
+
+    resource = *(void **)arg1;
+    sound = *(s16 *)((char *)arg1 + 6);
+    callback = *(s16 *)((char *)arg1 + 8);
+    if (*(void **)((char *)arg0 + 0x5DC) != 0) {
+        func_8023919C(*(void **)((char *)arg0 + 0x5DC),
+                      0x80, 0x32, 0x32, 0x4B, 0, 0, 2);
+        if (resource != 0) {
+            func_80237E70(&D_80145088,
+                          *(void **)((char *)arg0 + 0x5DC),
+                          *(void **)resource);
+        }
+    }
+    if (sound != 0) {
+        func_8025DE74(sound,
+                      *(s32 *)((char *)arg0 + 8),
+                      *(s32 *)((char *)arg0 + 0xC),
+                      *(s32 *)((char *)arg0 + 0x10), 0, -1);
+    }
+    if (callback != 0) {
+        func_8025E13C(callback);
+    }
+    return 1;
+}

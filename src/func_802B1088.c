@@ -1,0 +1,115 @@
+#include "basetypes.h"
+
+/* Sends the 0xC0 command with a 32-bit address over the handshake port after a 0x10/0x11 greeting, then waits for the port to go idle and releases it, returning 0. Adapted from func_802AFFEC with the command byte 0x81 changed to 0xC0. */
+
+extern s32 D_800D3650;
+extern u8 D_8014D3E1;
+extern s32 D_8014D3E8;
+extern s16 D_B2000004;
+extern u8 D_B2000015;
+
+extern u32 func_802BDEA0(void);
+extern s32 func_802AE5AC(s32);
+extern s32 func_802AE380(u8 *);
+
+typedef struct TransferScratch {
+    u8 response;
+    u8 status;
+    u16 pad;
+    s32 output;
+} TransferScratch;
+
+s32 func_802B1088(s32 arg0) {
+    TransferScratch scratch;
+    s32 timeout;
+    s32 retries;
+    u8 initial_control;
+    s32 expected;
+    u8 mask;
+    u8 final_control;
+    u8 cleanup_control;
+    s32 final_expected;
+    u8 final_mask;
+    s32 valid;
+
+    D_8014D3E8 = 0;
+    D_800D3650 = 100;
+    initial_control = D_8014D3E1 | 4;
+    D_8014D3E1 = initial_control;
+    do {
+    } while (func_802BDEA0() & 3);
+
+    mask = 2;
+    timeout = 0x4E20;
+    retries = D_800D3650;
+    expected = 2;
+    D_B2000004 = initial_control;
+    do {
+        do {
+        } while (func_802BDEA0() & 3);
+        if ((D_B2000015 & mask) == expected) {
+            goto ready;
+        }
+        if (timeout-- == 0) {
+            retries--;
+            timeout = 0x4E20;
+        }
+    } while (retries > 0);
+    D_8014D3E8 = 1;
+ready:
+    if (D_8014D3E8 != 0) {
+        goto cleanup;
+    }
+    func_802AE5AC(0x10);
+    valid = 0;
+    if (D_8014D3E8 == 0) {
+        func_802AE380(&scratch.response);
+        if (D_8014D3E8 == 0) {
+            valid = scratch.response == 0x11;
+        }
+    }
+    if (valid == 0) {
+        goto cleanup;
+    }
+    func_802AE5AC(0xC0);
+    if (D_8014D3E8 != 0) goto cleanup;
+    func_802AE5AC((u32)arg0 >> 24);
+    if (D_8014D3E8 != 0) goto cleanup;
+    func_802AE5AC(((u32)arg0 >> 16) & 0xFF);
+    if (D_8014D3E8 != 0) goto cleanup;
+    func_802AE5AC(((u32)arg0 >> 8) & 0xFF);
+    if (D_8014D3E8 != 0) goto cleanup;
+    func_802AE5AC(arg0 & 0xFF);
+    if (D_8014D3E8 != 0) goto cleanup;
+
+    final_control = D_8014D3E1 & 0xFB;
+    D_8014D3E1 = final_control;
+    do {
+    } while (func_802BDEA0() & 3);
+    final_mask = 0;
+    final_expected = 2;
+    timeout = 0x4E20;
+    retries = D_800D3650;
+    D_B2000004 = final_control;
+    do {
+        do {
+        } while (func_802BDEA0() & 3);
+        if ((D_B2000015 & final_expected) == final_mask) {
+            goto cleanup;
+        }
+        if (timeout-- == 0) {
+            retries--;
+            timeout = 0x4E20;
+        }
+    } while (retries > 0);
+    D_8014D3E8 = 1;
+
+cleanup:
+    cleanup_control = D_8014D3E1 & 0xFB;
+    D_8014D3E1 = cleanup_control;
+    do {
+    } while (func_802BDEA0() & 3);
+    D_B2000004 = cleanup_control;
+    D_800D3650 = 1;
+    return 0;
+}

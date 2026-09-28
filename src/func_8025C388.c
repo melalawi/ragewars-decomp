@@ -1,0 +1,44 @@
+#include "basetypes.h"
+
+/* Returns how strongly a listener at 0x128 hears a source at 0x34: one minus the squared distance over the squared range D_800D0D10 (zero beyond it), shaped by the source's curve at 0x44 as the eighth power, the square or the plain value. */
+
+typedef struct Vec3 {
+    f32 x, y, z;
+} Vec3;
+
+extern f32 D_800D0D10;
+extern f32 D_800C9088[];
+
+f32 func_8025C388(char *source, char *listener)
+{
+    Vec3 *a = (Vec3 *)(source + 0x34);
+    Vec3 *b = (Vec3 *)(listener + 0x128);
+    f32 dx = a->x - b->x;
+    f32 dy;
+    f32 dz;
+    f32 d;
+    f32 t;
+
+    dx *= dx;
+    dy = a->y - b->y;
+    dy *= dy;
+    dz = a->z - b->z;
+    dz *= dz;
+    d = dx + dy + dz;
+    if (d >= D_800D0D10) {
+        t = 0.0f;
+    } else {
+        t = D_800C9088[1] - d / D_800D0D10;
+    }
+    switch (*(s8 *)(source + 0x44)) {
+    case 2:
+        return t;
+    case 0:
+        t *= t;
+        t *= t;
+    case 1:
+        return t * t;
+    default:
+        return 0.0f;
+    }
+}

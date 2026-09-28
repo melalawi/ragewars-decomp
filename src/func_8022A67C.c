@@ -1,0 +1,46 @@
+/** Start the round-end sequence once no menu or transition is active and any player is flagged. */
+extern int func_80245788(void);
+extern int func_80245774(void);
+extern int D_8013B29C;
+typedef struct State {
+    char pad0[0x1C];
+    int armed;
+    int active;
+} State;
+
+extern State D_801468A0;
+
+typedef struct Player {
+    char pad0[0x5D8];
+    unsigned char *info;
+    char pad5DC[0x16E0 - 0x5DC];
+    struct Player *next;
+} Player;
+
+int func_8022A67C(char *arg0) {
+    Player *p;
+    int count;
+    State *s;
+    State *t;
+
+    if (func_80245788() != 0 || func_80245774() != 0 || D_8013B29C != 0) {
+        return 0;
+    }
+    t = &D_801468A0;
+    if (t->active != 0 || t->armed == 0) {
+        return 0;
+    }
+    count = 0;
+    for (p = *(Player **)(arg0 + 0x20); p != 0; p = p->next) {
+        if (p->info[0x8E] == 1) {
+            count++;
+        }
+    }
+    if (count <= 0) {
+        return 0;
+    }
+    s = &D_801468A0;
+    s->active = 1;
+    s->armed = 0;
+    return 1;
+}

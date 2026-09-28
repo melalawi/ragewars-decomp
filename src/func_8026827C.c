@@ -1,0 +1,74 @@
+#include "basetypes.h"
+
+/* Plays an effect at a position through func_8025DEE0 unless the global D_80146894 is set, selecting the target from the given object's type and team masks and choosing the scale from the global option flags. Adapted from func_80267324 with the null object test and case 2 removed, a team test for case 0, a mask test for case 1, and the scale constants changed. */
+typedef struct Vec3 {
+    f32 x;
+    f32 y;
+    f32 z;
+} Vec3;
+
+typedef struct Params {
+    s16 unk0;
+    s16 value;
+    s32 team;
+} Params;
+
+typedef struct Kind {
+    s32 value;
+    u8 pad4[0xA];
+    s8 team;
+} Kind;
+
+typedef struct Object {
+    u8 type;
+    u8 pad1[0x17];
+    Kind *kind;
+    u8 pad1C[0xB4];
+    s32 value;
+    u8 padD4[0xA8];
+    u32 mask;
+} Object;
+
+extern f32 D_800C9550[];
+extern f32 D_800C9558;
+extern f32 D_800C955C;
+extern s32 D_80146894;
+
+extern s32 func_8025DEE0(s32 arg0, Vec3 arg1, s32 arg4, s32 arg5,
+                         f32 arg6);
+
+void func_8026827C(Object *arg0, Object *arg1, s32 arg2, Vec3 arg3,
+                   Params arg6) {
+    s32 *global = &D_80146894;
+    s32 selected;
+    f32 scale;
+
+    scale = D_800C9550[1];
+    selected = -1;
+    if (global[0] != 0) {
+        return;
+    }
+
+    switch (arg1->type) {
+    case 0:
+        if (arg0->kind->team != arg6.team) {
+            return;
+        }
+        selected = arg1->value;
+        break;
+    case 1:
+        if (arg1->kind->value == arg1->type) {
+            if (global[-371] & 0x40) {
+                scale = D_800C9558;
+            } else if (global[-371] & 0x20) {
+                scale = D_800C955C;
+            }
+        }
+        if ((arg1->mask & (1 << arg6.team)) == 0) {
+            return;
+        }
+        break;
+    }
+
+    func_8025DEE0(arg6.value, arg3, 0, selected, scale);
+}

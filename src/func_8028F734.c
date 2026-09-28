@@ -1,0 +1,53 @@
+#include "basetypes.h"
+
+/* Initialises a panel: marks it active, clears its counters, lays out its two eight-slot rows, binds text 0x29B to 0x29D and 0x29A with the given style byte to the first row, and builds its element list from the D_28E910 template. */
+
+typedef struct Panel {
+    s16 active;
+    char pad2[0x20 - 2];
+    s16 mode;
+    char pad22[0x40 - 0x22];
+    char row0[0x18];
+    char row0Slots[0x20];
+    char row1[0x18];
+    char row1Slots[0x20];
+    char elements[0x2E0 - 0xB0];
+    s32 field2E0;
+    s32 field2E4;
+    s32 field2E8;
+    s32 field2EC;
+    s32 field2F0;
+    s32 field2F4;
+    s32 field2F8;
+    s32 field2FC;
+    s32 field300;
+} Panel;
+
+extern char D_28E910;
+extern void func_802BFD50(char *row, char *slots, s32 count);
+extern void func_802C0640(s32 slot, char *row, s32 text);
+extern void func_802BF740(char *row, s32 text, s32 style);
+extern void func_802BFD80(char *list, s32 count, void *template, Panel *owner, s32 arg4, s32 arg5);
+extern void func_802C0840(char *list);
+
+void func_8028F734(Panel *panel, s32 arg1, s32 arg2, s32 arg3, unsigned char style) {
+    panel->active = 1;
+    panel->field2F4 = 0;
+    panel->field2F8 = 0;
+    panel->field2E0 = 0;
+    panel->field2FC = 0;
+    panel->field2E4 = 0;
+    panel->field2E8 = 0;
+    panel->field2EC = 0;
+    panel->field2F0 = 0;
+    panel->field300 = 0;
+    panel->mode = 4;
+    func_802BFD50(panel->row0, panel->row0Slots, 8);
+    func_802BFD50(panel->row1, panel->row1Slots, 8);
+    func_802C0640(4, panel->row0, 0x29B);
+    func_802C0640(9, panel->row0, 0x29C);
+    func_802C0640(0xE, panel->row0, 0x29D);
+    func_802BF740(panel->row0, 0x29A, style);
+    func_802BFD80(panel->elements, 7, &D_28E910, panel, arg1, arg2);
+    func_802C0840(panel->elements);
+}

@@ -1,0 +1,128 @@
+/* Builds a player's aiming marker matrices for the current view D_800D297C and turns the marker on at
+   0x1214: a beam from the eye (the view position at 0x128, or func_8022B134 without a view) toward the
+   target point, pitched straight up or down when nearly vertical, is stored in the table at 0x1480; the
+   laser from the weapon muzzle at 0x260 to the aim point at 0x1464 (lowered by the view's height above
+   the muzzle) in the table at 0x1500; and with a surface normal given, a dot flattened against the
+   surface and lifted along the normal is stored in the table at 0x1580. */
+#define ABS(x) ((x) < 0.0f ? -(x) : (x))
+
+#include "basetypes.h"
+
+typedef struct {
+    f32 x;
+    f32 y;
+    f32 z;
+} Vec3f;
+
+typedef struct {
+    f32 x;
+    f32 y;
+    f32 z;
+    f32 w;
+} Quat;
+
+typedef struct {
+    f32 m[16];
+} Matrix;
+
+typedef struct {
+    char pad0[0x128];
+    Vec3f position;
+} View;
+
+typedef struct {
+    char pad0[0x6C];
+    f32 heading;
+    char pad70[0x260 - 0x70];
+    Vec3f muzzle;
+    char pad26C[0x5DC - 0x26C];
+    View *view;
+    char pad5E0[0x1214 - 0x5E0];
+    s32 marker;
+    char pad1218[0x1464 - 0x1218];
+    Vec3f aim;
+    char pad1470[0x1480 - 0x1470];
+    Matrix beams[2];
+    Matrix lasers[2];
+    Matrix dots[2];
+} Player;
+
+extern f32 D_800CF1B4;
+extern s32 D_800D297C;
+extern void func_8022B134(Player *, Vec3f *);
+extern void func_80271FD8(Vec3f *, Vec3f *, Vec3f *);
+extern void func_802720EC(Vec3f *);
+extern void func_80272848(Matrix *);
+extern void func_80272EAC(Matrix *, f32, f32, f32);
+extern void func_80273208(Matrix *, Vec3f *);
+extern void func_802734B8(Matrix *, Vec3f);
+extern void func_80273424(Matrix *, f32, f32, f32);
+extern void func_802734EC(Matrix *, f32, f32, f32);
+extern f32 func_80272768(Vec3f *, Vec3f *);
+extern void func_802702EC(Matrix *, Matrix *);
+extern void func_80271888(Quat *, Vec3f *);
+extern void func_802742B4(Quat *, Matrix *);
+extern void func_80273860(Matrix *, f32);
+extern void func_8027200C(Vec3f *, Vec3f *, f32);
+extern void func_80271FA4(Vec3f *, Vec3f *, Vec3f *);
+
+void func_8021D3E4(Player *player, Vec3f *target, Vec3f *normal) {
+    Vec3f to;
+    Vec3f eye;
+    Vec3f lift;
+    Vec3f direction;
+    Vec3f aim;
+    Vec3f origin;
+    Matrix matrix;
+    Quat turn;
+    f32 scale;
+
+    if (player->view != 0) {
+        origin = player->view->position;
+    } else {
+        func_8022B134(player, &origin);
+    }
+    eye = origin;
+    to = *target;
+    func_80271FD8(&direction, &to, &eye);
+    func_802720EC(&direction);
+    func_80272848(&matrix);
+    if (0.99999899f <= direction.y) {
+        func_80272EAC(&matrix, -1.57079649f, player->heading, 0.0f);
+    } else if (direction.y <= -0.99999899f) {
+        func_80272EAC(&matrix, 1.57079649f, player->heading, 0.0f);
+    } else {
+        func_80273208(&matrix, &direction);
+    }
+    func_802734B8(&matrix, eye);
+    func_80273424(&matrix, 0.0f, 0.0f, D_800CF1B4);
+    func_802734EC(&matrix, 0.05f, 1.0f, D_800CF1B4 - func_80272768(&eye, &to));
+    func_802702EC(&matrix, &player->beams[D_800D297C]);
+
+    aim = player->aim;
+    if (player->view != 0) {
+        aim.y -= ABS(player->view->position.y - player->muzzle.y);
+    }
+    func_80271FD8(&direction, &aim, &player->muzzle);
+    func_802720EC(&direction);
+    func_80272848(&matrix);
+    func_80273208(&matrix, &direction);
+    func_802734B8(&matrix, player->muzzle);
+    scale = 1.0f;
+    func_802734EC(&matrix, scale, scale, -func_80272768(&origin, &player->aim));
+    func_802702EC(&matrix, &player->lasers[D_800D297C]);
+
+    if (normal != 0) {
+        lift = *normal;
+        func_80271888(&turn, &lift);
+        func_802742B4(&turn, &matrix);
+        func_80273860(&matrix, 1.57079649f);
+        func_802720EC(&lift);
+        func_8027200C(&lift, &lift, 2.048f);
+        func_80271FA4(&eye, &eye, &lift);
+        func_802734B8(&matrix, to);
+        func_802734EC(&matrix, 1.536f, scale, 1.536f);
+        func_802702EC(&matrix, &player->dots[D_800D297C]);
+    }
+    player->marker = 1;
+}

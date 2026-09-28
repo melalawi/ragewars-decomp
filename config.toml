@@ -1,0 +1,470 @@
+# Turok: Rage Wars Metadata
+
+[project]
+slug = "ragewars"
+repo = "https://github.com/melalawi/ragewars-decomp"
+title = "Turok: Rage Wars"
+tracker_title = "Turok - Rage Wars"
+reference = "us-rev1"
+
+[[region]]
+name = "main"
+
+[[region]]
+name = "code_80400000"
+
+[target]
+linker = "artifacts/{version}/{slug}.ld"
+text_alignment = "data/text-alignment/{version}.json"
+
+[split]
+linker = "versions/{version}/{slug}.ld"
+include = "splat/include"
+# False: this project's extraction writes both tables [split].generated_symbols names (the toolkit's
+# convention) from the split every time it runs,
+# so the repository must not carry them. A committed copy is a derived store that looks
+# editable, and a correction written into one survives exactly until the next extraction and is
+# then erased with nothing said; corrections belong in [split].symbols, which is committed and which
+# the extraction reads. Both are in .gitignore, and `check sources` refuses a tracked one by name.
+generated_symbols_tracked = false
+objects = "artifacts/{version}/obj"
+asm_objects = "artifacts/{version}/obj/asm/nonmatchings"
+subalign = 4
+# How far apart in the ROM file this cartridge's filler repeats. The contract this satisfies is the
+# toolkit's docs/contract.md, not a document of this repository's: read as project-relative it names a
+# file that is not here, which is the ambiguity rather than a missing document.
+filler_mirror_distance = 0x1000
+
+[source]
+include = ["splat/include", "splat/types"]
+
+[toolchain]
+# The build graph: this project displaces the cartridge's own assembly one interval at a time.
+graph = "sn64"
+# The block whose assembler assembles the cartridge's own extracted assembly.
+assembly = "gcc-2.8.1"
+asflags = ["-Isplat/include"]
+objdump_machine = "mips:4000"
+
+# The one compiler that built every cartridge here; every split segment below names it.
+[toolchains."gcc-2.8.1"]
+kind = "sn64"
+cc = "{toolkit}/sn64/cc"
+as = "{toolkit}/sn64/as"
+# The assembler that reproduces this cartridge's words, by the banner it prints (`asn64.exe` run with no
+# arguments). A lean scorer stands in for the build's driver only when it drives this same assembler.
+assembler = "SN ASN64 version 2.81"
+# The options cc1 compiles every object with, then the project's own. They were the driver's until the
+# driver ran two releases of cc1 and one refused the other's options, so they are stated here, in the
+# order the driver used to give them.
+cflags = ["-Iinclude", "-Isplat/include", "-Isplat/types", "-G0", "-mips3", "-O2", "-mgas", "-meb",
+          "-mcpu=VR4300", "-mhard-float", "-mgp32", "-mfp64", "-mno-fix4300", "-O2"]
+pins = "{toolkit}/sn64/toolchain.sha256"
+installed = "artifacts/sn64"
+# Where the diagnostic build of that compiler is installed: the same compiler plus the
+# local-allocation decision log, which is the one pass whose choices its released streams do
+# not record. It is a separate directory from `installed` and is verified against a separate
+# digest file, because it must never be the thing a match is proved with.
+diagnostic_installed = "artifacts/sn64-diagnostic"
+
+[rodata]
+segment = "main_code"
+resident_delta = 0x200000
+table_entry_bias = 0x80000000
+quarantine = 0xB0000000
+
+# Where `make cartridge-differences` writes what it measured, and what the README's difference matrix
+# is rendered from. One record for the project and not one per cartridge: every figure in it is about
+# a pair of cartridges, so no single cartridge owns it and five cartridges naming it would be five
+# statements of one fact with nothing keeping them equal. `decomp/compare.py` wrote this path and
+# `decomp/readme.py` read it, each spelling it for itself, so the file the README depends on was named
+# by nothing here at all.
+[differences]
+
+# The spans `make cartridge-differences` compares on their own, beside the whole image. Where the
+# loaded program ends and the packed data begins is a fact about these cartridges, so it is stated
+# here rather than assumed by the measurement.
+#
+# main_code is the extent the CIC checksum covers. That extent is fixed by the boot protocol and not
+# chosen by this project or by any one build, which is what makes it name the same region of every
+# cartridge and the only code window comparable before a version is split. assets runs to the end of
+# the image and on every cartridge here holds packed data rather than code, which makes it the window
+# least disturbed by a rebuild; it states no length because it has none of its own.
+[[differences.windows]]
+name = "main_code"
+start = 0x1000
+bytes = 0x100000
+
+[[differences.windows]]
+name = "assets"
+start = 0x200000
+
+[checks]
+inline_asm_keywords = ["asm", "__asm", "__asm__"]
+# The one word of data an authored object may emit in .text beside its function, per function. It is a
+# fact about the object, so it holds on every cartridge that links the source.
+allowed_text_residue = {func_802C0390 = "00000000"}
+forbidden_labels = ["PAL"]
+
+# Each cartridge defines two macros, its own and its family's. The family macro is shared between the
+# cartridges it covers on purpose: most differences between related releases belong to the family
+# rather than to one release, so a guard over a family is one condition instead of a disjunction over
+# its members that a sixth cartridge would have to be added to by hand. Sharing is safe because what
+# must hold is that no two cartridges define the same complete *set* of macros, which `version_macros`
+# refuses: each cartridge still names its own, so every pair is still separable by a guard.
+#
+# Two families, stated rather than derived from `region` or `code`. The NTSC pair and the three PAL
+# releases have no order between them, and taking a family from a field that happens to correlate
+# today is the derived-behind-your-back default this description refuses everywhere else.
+[[cartridge]]
+id = "us"
+name = "North America"
+region = "North America"
+cartridge = "NUS-NRWE-0"
+code = "NRWE"
+revision = 0
+bytes = 8388608
+sha1 = "9f8cb190831945f6f707aa8c2b20e04fa4276795"
+sha256 = "0433043aaba2649bdd1fe717c4020550ac663c0362527aa082490f5977a3e46b"
+crc1 = "ADB9498B"
+crc2 = "DAF28F55"
+buildable = true
+note = "First NTSC release (black cartridge)."
+version_macro = "VERSION_US"
+family_macro = "VERSION_NTSC"
+
+[cartridge.rodata]
+resident_blocks = ["data/D_802C18F0"]
+
+[cartridge.split]
+link_symbols = ["versions/{version}/symbol_addrs.txt", "versions/{version}/undefined_syms_auto.txt", "versions/{version}/undefined_funcs_auto.txt"]
+c_objects = "artifacts/{version}/obj/src"
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "main_code"
+source = "subsegments"
+region = "main"
+vram = 0x80200400
+rom = 0x1000
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "code_80400000"
+source = "subsegments"
+region = "code_80400000"
+vram = 0x80400000
+
+[[cartridge]]
+id = "us-rev1"
+name = "North America, Rev 1"
+region = "North America"
+cartridge = "NUS-NRWE-1"
+code = "NRWE"
+revision = 1
+bytes = 8388608
+sha1 = "037fb397cee2669048ed6b762a64698de4a4d88a"
+sha256 = "5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089"
+crc1 = "2388984C"
+crc2 = "DA7B3CC5"
+buildable = true
+note = "Revised NTSC release (grey cartridge)."
+version_macro = "VERSION_US_REV1"
+family_macro = "VERSION_NTSC"
+
+[cartridge.rodata]
+resident_blocks = ["data/D_802C6AB0"]
+
+[cartridge.split]
+link_symbols = ["versions/{version}/symbol_addrs.txt", "versions/{version}/undefined_syms_auto.txt", "versions/{version}/undefined_funcs_auto.txt"]
+c_objects = "artifacts/{version}/obj/src"
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "main_code"
+source = "symbols"
+region = "main"
+vram = 0x80200400
+rom = 0x1000
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "code_80400000"
+source = "subsegments"
+region = "code_80400000"
+vram = 0x80400000
+exclude = ["func_8044ED98"]
+
+[[cartridge]]
+id = "eu"
+name = "Europe"
+region = "Europe"
+cartridge = "NUS-NRWP-0"
+code = "NRWP"
+revision = 0
+bytes = 8388608
+sha1 = "46b474fac79a4b21535bb6c78ce3039a2c202359"
+sha256 = "d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1"
+crc1 = "1EA26214"
+crc2 = "E790900F"
+buildable = true
+note = "PAL release."
+version_macro = "VERSION_EU"
+family_macro = "VERSION_EUROPE"
+
+[cartridge.rodata]
+resident_blocks = ["data/D_802C21F0"]
+
+[cartridge.split]
+link_symbols = ["versions/{version}/symbol_addrs.txt", "versions/{version}/undefined_syms_auto.txt", "versions/{version}/undefined_funcs_auto.txt"]
+c_objects = "artifacts/{version}/obj/src"
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "main_code"
+source = "subsegments"
+region = "main"
+vram = 0x80200400
+rom = 0x1000
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "code_80400000"
+source = "subsegments"
+region = "code_80400000"
+vram = 0x80400000
+
+[[cartridge]]
+id = "eu-mul"
+name = "Europe, multi-language"
+region = "Europe"
+cartridge = "NUS-NRWX-0"
+code = "NRWX"
+revision = 0
+bytes = 8388608
+sha1 = "0b54615930a55675955eef8d8a22f1dfc34d2b44"
+sha256 = "511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750"
+crc1 = "B6BE20A5"
+crc2 = "FACAF66D"
+buildable = true
+note = "PAL multi-language release."
+version_macro = "VERSION_EU_MUL"
+family_macro = "VERSION_EUROPE"
+
+[cartridge.rodata]
+resident_blocks = ["data/D_802C1CA0"]
+
+[cartridge.split]
+link_symbols = ["versions/{version}/symbol_addrs.txt", "versions/{version}/undefined_syms_auto.txt", "versions/{version}/undefined_funcs_auto.txt"]
+c_objects = "artifacts/{version}/obj/src"
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "main_code"
+source = "subsegments"
+region = "main"
+vram = 0x80200400
+rom = 0x1000
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "code_80400000"
+source = "subsegments"
+region = "code_80400000"
+vram = 0x80400000
+
+[[cartridge]]
+id = "de"
+name = "Germany"
+region = "Germany"
+cartridge = "NUS-NRWD-0"
+code = "NRWD"
+revision = 0
+bytes = 8388608
+sha1 = "a6daacbd0e7f77c73208cf494aefc24703060b17"
+sha256 = "9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8"
+crc1 = "66E4FA0F"
+crc2 = "DE88C7D0"
+buildable = true
+note = "Censored German release."
+version_macro = "VERSION_DE"
+family_macro = "VERSION_EUROPE"
+
+[cartridge.rodata]
+resident_blocks = ["data/D_802C19C0"]
+
+[cartridge.split]
+link_symbols = ["versions/{version}/symbol_addrs.txt", "versions/{version}/undefined_syms_auto.txt", "versions/{version}/undefined_funcs_auto.txt"]
+c_objects = "artifacts/{version}/obj/src"
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "main_code"
+source = "subsegments"
+region = "main"
+vram = 0x80200400
+rom = 0x1000
+
+[[cartridge.split.segments]]
+toolchain = "gcc-2.8.1"
+name = "code_80400000"
+source = "subsegments"
+region = "code_80400000"
+vram = 0x80400000
+
+# Version values: a quantity the cartridges hold differently, stated with its value on every
+# cartridge. Each is shown from the bytes: the same immediate at the same aligned instruction of two
+# or more functions, and the same value on every cartridge each time (stack offsets and branches
+# are code, not values, and are left out). Named by the reference cartridge's value until someone
+# learns what each one is; each build defines every name to its own cartridge's value, and the
+# near-twin measure and `try` name a difference that is exactly one of these.
+
+[[version_value]]
+name = "VV_0060"
+# shown in func_804366D0, func_80436DD4
+values = {us = 0x60, "us-rev1" = 0x60, eu = 0x60, "eu-mul" = 0x64, de = 0x5E}
+
+[[version_value]]
+name = "VV_013B"
+# shown in func_804375F4, func_80437624, func_80437790
+values = {us = 0x13B, "us-rev1" = 0x13B, eu = 0x13B, "eu-mul" = 0x13F, de = 0x139}
+
+[[version_value]]
+name = "VV_014B"
+# shown in func_8042872C, func_804288E0
+values = {us = 0x14B, "us-rev1" = 0x14B, eu = 0x14B, "eu-mul" = 0x14F, de = 0x149}
+
+[[version_value]]
+name = "VV_01D3"
+# shown in func_80439420, func_80439588
+values = {us = 0x1D3, "us-rev1" = 0x1D3, eu = 0x1D3, "eu-mul" = 0x1DC, de = 0x1CF}
+
+[[version_value]]
+name = "VV_01D9"
+# shown in func_80429180, func_804291A8
+values = {us = 0x1D9, "us-rev1" = 0x1D9, eu = 0x1D9, "eu-mul" = 0x1DD, de = 0x1D5}
+
+[[version_value]]
+name = "VV_01DA"
+# shown in func_80429180, func_804291A8
+values = {us = 0x1DA, "us-rev1" = 0x1DA, eu = 0x1DA, "eu-mul" = 0x1DE, de = 0x1D6}
+
+[[version_value]]
+name = "VV_0237"
+# shown in func_8042D870, func_8042D968
+values = {us = 0x237, "us-rev1" = 0x237, eu = 0x237, "eu-mul" = 0x23C, de = 0x233}
+
+[[version_value]]
+name = "VV_0238"
+# shown in func_8042D870, func_8042D968
+values = {us = 0x238, "us-rev1" = 0x238, eu = 0x238, "eu-mul" = 0x23D, de = 0x234}
+
+[[version_value]]
+name = "VV_026A"
+# shown in func_8042D4E4, func_8042D5F8
+values = {us = 0x26A, "us-rev1" = 0x26A, eu = 0x26A, "eu-mul" = 0x26E, de = 0x265}
+
+[[version_value]]
+name = "VV_026B"
+# shown in func_8042D4E4, func_8042D5F8
+values = {us = 0x26B, "us-rev1" = 0x26B, eu = 0x26B, "eu-mul" = 0x26F, de = 0x266}
+
+[[version_value]]
+name = "VV_026C"
+# shown in func_8042D4E4, func_8042D5F8
+values = {us = 0x26C, "us-rev1" = 0x26C, eu = 0x26C, "eu-mul" = 0x270, de = 0x267}
+
+[[version_value]]
+name = "VV_026D"
+# shown in func_8042D4E4, func_8042D5F8
+values = {us = 0x26D, "us-rev1" = 0x26D, eu = 0x26D, "eu-mul" = 0x271, de = 0x268}
+
+[[version_value]]
+name = "VV_0272"
+# shown in func_80438E64, func_80438F74
+values = {us = 0x272, "us-rev1" = 0x272, eu = 0x272, "eu-mul" = 0x277, de = 0x26E}
+
+[[version_value]]
+name = "VV_0273"
+# shown in func_80438E64, func_80438F74
+values = {us = 0x273, "us-rev1" = 0x273, eu = 0x273, "eu-mul" = 0x278, de = 0x26F}
+
+[[version_value]]
+name = "VV_0392"
+# shown in func_8041ED24, func_8041EE78, func_8041EF40
+values = {us = 0x392, "us-rev1" = 0x392, eu = 0x392, "eu-mul" = 0x396, de = 0x38C}
+
+[[version_value]]
+name = "VV_03AB"
+# shown in func_8042144C, func_804215D8, func_804217EC
+values = {us = 0x3AB, "us-rev1" = 0x3AB, eu = 0x3AB, "eu-mul" = 0x3AF, de = 0x3A5}
+
+[[version_value]]
+name = "VV_03AD"
+# shown in func_80420E90, func_804212A4
+values = {us = 0x3AD, "us-rev1" = 0x3AD, eu = 0x3AD, "eu-mul" = 0x3B6, de = 0x3A7}
+
+[[version_value]]
+name = "VV_03AF"
+# shown in func_80420E90, func_804212A4
+values = {us = 0x3AF, "us-rev1" = 0x3AF, eu = 0x3AF, "eu-mul" = 0x3B8, de = 0x3A9}
+
+[[version_value]]
+name = "VV_03B1"
+# shown in func_80420E90, func_804212A4
+values = {us = 0x3B1, "us-rev1" = 0x3B1, eu = 0x3B1, "eu-mul" = 0x3B3, de = 0x3AB}
+
+[[version_value]]
+name = "VV_03B4"
+# shown in func_80420E90, func_804212A4
+values = {us = 0x3B4, "us-rev1" = 0x3B4, eu = 0x3B4, "eu-mul" = 0x3B0, de = 0x3AE}
+
+[[version_value]]
+name = "VV_03B8"
+# shown in func_804215D8, func_80421844
+values = {us = 0x3B8, "us-rev1" = 0x3B8, eu = 0x3B8, "eu-mul" = 0x3BC, de = 0x3B2}
+
+[[version_value]]
+name = "VV_03BD"
+# shown in func_8042144C, func_804215D8
+values = {us = 0x3BD, "us-rev1" = 0x3BD, eu = 0x3BD, "eu-mul" = 0x3BD, de = 0x3B7}
+
+[[version_value]]
+name = "VV_03BE"
+# shown in func_8042144C, func_804215D8
+values = {us = 0x3BE, "us-rev1" = 0x3BE, eu = 0x3BE, "eu-mul" = 0x3BE, de = 0x3B8}
+
+[[version_value]]
+name = "VV_03BF"
+# shown in func_8042144C, func_804215D8
+values = {us = 0x3BF, "us-rev1" = 0x3BF, eu = 0x3BF, "eu-mul" = 0x3BF, de = 0x3B9}
+
+[[version_value]]
+name = "VV_03C0"
+# shown in func_8042144C, func_804215D8
+values = {us = 0x3C0, "us-rev1" = 0x3C0, eu = 0x3C0, "eu-mul" = 0x3C0, de = 0x3BA}
+
+[[version_value]]
+name = "VV_03C1"
+# shown in func_8042144C, func_804215D8
+values = {us = 0x3C1, "us-rev1" = 0x3C1, eu = 0x3C1, "eu-mul" = 0x3C1, de = 0x3BB}
+
+[[version_value]]
+name = "VV_03C6"
+# shown in func_8041BF10, func_8041C514
+values = {us = 0x3C6, "us-rev1" = 0x3C6, eu = 0x3C6, "eu-mul" = 0x3C9, de = 0x3C1}
+
+[[version_value]]
+name = "VV_03D0"
+# shown in func_804379C8, func_80437B10
+values = {us = 0x3D0, "us-rev1" = 0x3D0, eu = 0x3D0, "eu-mul" = 0x3D4, de = 0x3CA}
+
+[[version_value]]
+name = "VV_03D1"
+# shown in func_804379C8, func_80437B10
+values = {us = 0x3D1, "us-rev1" = 0x3D1, eu = 0x3D1, "eu-mul" = 0x3D5, de = 0x3CB}
+
+[[version_value]]
+name = "VV_8B245"
+# shown in func_802A1D38, func_802A209C
+values = {us = 0x8B245, "us-rev1" = 0x8B245, eu = 0x8B245, "eu-mul" = 0x90385, de = 0x8BB01}
