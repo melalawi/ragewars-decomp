@@ -709,7 +709,7 @@ segments:
       - [0x02EBA8, asm, nonmatchings/func_8022DF98]
       - [0x02ECB0, asm, nonmatchings/func_8022E0A0]
       - [0x02ED30, asm, nonmatchings/func_8022E120]
-      - [0x02ED7C, asm, nonmatchings/func_8022E274]
+      - [0x02ED7C, asm, nonmatchings/func_8022E16C]
       - [0x02EE60, asm, nonmatchings/func_8022E250]
       - [0x02EE90, asm, nonmatchings/func_8022E280]
       - [0x02EFC4, asm, nonmatchings/func_8022E3B4]

@@ -704,7 +704,7 @@ segments:
       - [0x02ECA0, asm, nonmatchings/func_8022DF98]
       - [0x02EDA8, asm, nonmatchings/func_8022E0A0]
       - [0x02EE28, asm, nonmatchings/func_8022E120]
-      - [0x02EE74, asm, nonmatchings/func_8022E274]
+      - [0x02EE74, asm, nonmatchings/func_8022E16C]
       - [0x02EF58, asm, nonmatchings/func_8022E250]
       - [0x02EF88, asm, nonmatchings/func_8022E280]
       - [0x02F0BC, asm, nonmatchings/func_8022E3B4]
@@ -3154,7 +3154,7 @@ segments:
       - [0x0C2720, asm, nonmatchings/func_802C6970]
       - [0x0C27A8, asm, nonmatchings/eu_func_802C1BA8]
       - [0x0C27B0, asm, nonmatchings/__floatdisf]
-      - [0x0C2860, asm, nonmatchings/func_802C1C60]
+      - [0x0C2860, bin, data/D_802C1C60]
       - [0x0C2DF0, bin, data/D_802C21F0]
       # END GENERATED FUNCTION SPLIT
   # A STALE image of the 0x80400000 overlay, which the North American cartridges do not carry:

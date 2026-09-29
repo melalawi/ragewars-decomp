@@ -16,4 +16,9 @@ typedef unsigned long long u64;
 typedef float f32;
 typedef double f64;
 
+/* The null pointer constant, as the SDK spells it. A source that defines its own is left alone. */
+#ifndef NULL
+#define NULL ((void *)0)
+#endif
+
 #endif

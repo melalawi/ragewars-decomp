@@ -695,7 +695,7 @@ segments:
       - [0x02ECCC, asm, nonmatchings/func_8022DF98]
       - [0x02EDD4, asm, nonmatchings/func_8022E0A0]
       - [0x02EE54, asm, nonmatchings/func_8022E120]
-      - [0x02EEA0, asm, nonmatchings/func_8022E274]
+      - [0x02EEA0, asm, nonmatchings/func_8022E16C]
       - [0x02EF84, asm, nonmatchings/func_8022E250]
       - [0x02EFB4, asm, nonmatchings/func_8022E280]
       - [0x02F0E8, asm, nonmatchings/func_8022E3B4]

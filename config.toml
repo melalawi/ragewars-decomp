@@ -105,6 +105,11 @@ inline_asm_keywords = ["asm", "__asm", "__asm__"]
 # fact about the object, so it holds on every cartridge that links the source.
 allowed_text_residue = {func_802C0390 = "00000000"}
 forbidden_labels = ["PAL"]
+# The upstream source trees a note may cite a path in ("from ultralib src/audio/load.c").
+note_upstreams = ["ultralib"]
+# Raw offset access is refused, marked or not: a pointer cast of a byte pointer plus an offset,
+# `(T *)((char|u8|s8 *)x + n)`, dereferenced or not. Matched after preprocessing, so a macro cannot hide it.
+forbidden_source_forms = {raw-offset-access = '\(\s*[A-Za-z_]\w*(?:\s+[A-Za-z_]\w*)*\s*\*+\s*\)\s*\(\s*\(\s*(?:(?:unsigned|signed)\s+)?(?:char|u8|s8)\s*\*\s*\)'}
 
 # Each cartridge defines two macros, its own and its family's. The family macro is shared between the
 # cartridges it covers on purpose: most differences between related releases belong to the family
@@ -213,7 +218,7 @@ version_macro = "VERSION_EU"
 family_macro = "VERSION_EUROPE"
 
 [cartridge.rodata]
-resident_blocks = ["data/D_802C21F0"]
+resident_blocks = ["data/D_802C1C60", "data/D_802C21F0"]
 
 [cartridge.split]
 link_symbols = ["versions/{version}/symbol_addrs.txt", "versions/{version}/undefined_syms_auto.txt", "versions/{version}/undefined_funcs_auto.txt"]
