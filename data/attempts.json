@@ -19666,7 +19666,7 @@
    "verdict": "Open"
   },
   "func_8029D984": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Builds a 4x4 rotation matrix from three Euler angles using func_8029CBB0 for each sine and cosine, zero translation and D_800CAC34 in the corner; the cartridge computes all fourteen products before any store and writes the zero entries through a float register in descending order, and row-order, store-order and chained-zero drafts stayed 63 to 78 words apart.",
@@ -19746,6 +19746,78 @@
      "outcome": "failed",
      "recorded_at": "2026-09-29T07:52:19Z",
      "retained": "artifacts/retained-candidates/func_8029D984/2.c",
+     "retained_sha256": "4c5770a021253fcf1007f196ccb0e583e240f1396890ebc1a60c8845a574b9e8"
+    },
+    {
+     "assignment": "20260929T095554Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      },
+      "eu": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      },
+      "eu-mul": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      },
+      "us": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      },
+      "us-rev1": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      }
+     },
+     "measurement": {
+      "identical": 61,
+      "inserted": 0,
+      "missing": 0,
+      "of": 76
+     },
+     "note": "Near miss remains: the recorded draft matches 61/76 words on every cartridge, with 14 register-only differences and one reordered load; permute search reached an unproven 70/76 rewrite then ended status -9 without a byte-identical result.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T09:58:13Z",
+     "retained": "artifacts/retained-candidates/func_8029D984/3.c",
      "retained_sha256": "4c5770a021253fcf1007f196ccb0e583e240f1396890ebc1a60c8845a574b9e8"
     }
    ],
