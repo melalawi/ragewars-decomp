@@ -122,6 +122,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -146,54 +147,6 @@
      "func_8024C0E4",
      "func_8026D834",
      "func_8029E8A0"
-    ]
-   },
-   {
-    "bytes": 8,
-    "rom": "0x8DD00",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443528",
-     "func_80443D3C",
-     "func_8044ED1C"
     ]
    },
    {
@@ -223,54 +176,6 @@
      "func_8024C0E4",
      "func_8026D834",
      "func_8029E8A0"
-    ]
-   },
-   {
-    "bytes": 8,
-    "rom": "0xA1264",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443528",
-     "func_80443D3C",
-     "func_8044ED1C"
     ]
    },
    {
@@ -622,6 +527,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -633,39 +539,6 @@
      "func_804435BC",
      "func_804435C4",
      "func_804435CC"
-    ]
-   },
-   {
-    "bytes": 28,
-    "rom": "0x1A325C",
-    "sources": [
-     "func_804453C4"
-    ]
-   },
-   {
-    "bytes": 20,
-    "rom": "0x1A41A4",
-    "sources": [
-     "func_8043E21C"
-    ]
-   },
-   {
-    "bytes": 44,
-    "rom": "0x1A4468",
-    "sources": [
-     "func_8043E4A4",
-     "func_8043EA94",
-     "func_8043EDB8",
-     "func_8043EDE4",
-     "func_8043EE10",
-     "func_8043EEF0",
-     "func_804458F4",
-     "func_80445920",
-     "func_8044594C",
-     "func_80445978",
-     "func_804459A4",
-     "func_80446140",
-     "func_8044616C"
     ]
    },
    {
@@ -709,6 +582,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -741,16 +615,6 @@
     "rom": "0x1A8ADC",
     "sources": [
      "func_80442C4C"
-    ]
-   },
-   {
-    "bytes": 56,
-    "rom": "0x1ABEF4",
-    "sources": [
-     "func_8043E2E0",
-     "func_8043E5BC",
-     "func_8043E750",
-     "func_80446B44"
     ]
    },
    {
@@ -1030,54 +894,6 @@
     ]
    },
    {
-    "bytes": 8,
-    "rom": "0x8DE0C",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443528",
-     "func_80443D3C",
-     "func_8044ED1C"
-    ]
-   },
-   {
     "bytes": 24,
     "rom": "0x91780",
     "sources": [
@@ -1104,54 +920,6 @@
      "func_8024C0E4",
      "func_8026D834",
      "func_8029E8A0"
-    ]
-   },
-   {
-    "bytes": 8,
-    "rom": "0xA1384",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443528",
-     "func_80443D3C",
-     "func_8044ED1C"
     ]
    },
    {
@@ -1274,6 +1042,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -1428,6 +1197,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -1443,16 +1213,17 @@
    },
    {
     "bytes": 28,
-    "rom": "0x1B414C",
+    "rom": "0x1B3FC4",
     "sources": [
-     "func_804453C4"
+     "func_8043D2B4"
     ]
    },
    {
     "bytes": 20,
     "rom": "0x1B4F40",
     "sources": [
-     "func_8043E21C"
+     "func_8043E21C",
+     "func_8043E230"
     ]
    },
    {
@@ -1460,6 +1231,7 @@
     "rom": "0x1B5214",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -1472,16 +1244,6 @@
      "func_804459A4",
      "func_80446140",
      "func_8044616C"
-    ]
-   },
-   {
-    "bytes": 56,
-    "rom": "0x1B52DC",
-    "sources": [
-     "func_8043E2E0",
-     "func_8043E5BC",
-     "func_8043E750",
-     "func_80446B44"
     ]
    },
    {
@@ -1525,6 +1287,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -1542,7 +1305,8 @@
     "bytes": 20,
     "rom": "0x1BBFB4",
     "sources": [
-     "func_8043E21C"
+     "func_8043E21C",
+     "func_8043E230"
     ]
    },
    {
@@ -1550,6 +1314,7 @@
     "rom": "0x1BC088",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -1569,6 +1334,7 @@
     "rom": "0x1BC0B4",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -1588,6 +1354,7 @@
     "rom": "0x1BC0E0",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -1607,6 +1374,7 @@
     "rom": "0x1BC10C",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -1626,6 +1394,7 @@
     "rom": "0x1BC138",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -1736,54 +1505,6 @@
     ]
    },
    {
-    "bytes": 8,
-    "rom": "0x8DE3C",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443528",
-     "func_80443D3C",
-     "func_8044ED1C"
-    ]
-   },
-   {
     "bytes": 24,
     "rom": "0x917B0",
     "sources": [
@@ -1810,54 +1531,6 @@
      "func_8024C0E4",
      "func_8026D834",
      "func_8029E8A0"
-    ]
-   },
-   {
-    "bytes": 8,
-    "rom": "0xA13B4",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443528",
-     "func_80443D3C",
-     "func_8044ED1C"
     ]
    },
    {
@@ -2075,6 +1748,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -2090,16 +1764,17 @@
    },
    {
     "bytes": 28,
-    "rom": "0x12E27C",
+    "rom": "0x12E304",
     "sources": [
-     "func_804453C4"
+     "func_8043D4C4"
     ]
    },
    {
     "bytes": 20,
     "rom": "0x12F070",
     "sources": [
-     "func_8043E21C"
+     "func_8043E21C",
+     "func_8043E230"
     ]
    },
    {
@@ -2143,6 +1818,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -2161,6 +1837,7 @@
     "rom": "0x12F344",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -2179,6 +1856,7 @@
     "bytes": 56,
     "rom": "0x12F40C",
     "sources": [
+     "func_8043E24C",
      "func_8043E2E0",
      "func_8043E5BC",
      "func_8043E750",
@@ -2226,6 +1904,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -2243,7 +1922,8 @@
     "bytes": 20,
     "rom": "0x1360E4",
     "sources": [
-     "func_8043E21C"
+     "func_8043E21C",
+     "func_8043E230"
     ]
    },
    {
@@ -2251,6 +1931,7 @@
     "rom": "0x1361B8",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -2270,6 +1951,7 @@
     "rom": "0x1361E4",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -2289,6 +1971,7 @@
     "rom": "0x136210",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -2308,6 +1991,7 @@
     "rom": "0x13623C",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -2327,6 +2011,7 @@
     "rom": "0x136268",
     "sources": [
      "func_8043E4A4",
+     "func_8043E4F4",
      "func_8043EA94",
      "func_8043EDB8",
      "func_8043EDE4",
@@ -2463,6 +2148,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -2517,6 +2203,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -2571,6 +2258,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -2797,6 +2485,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -2873,54 +2562,6 @@
     ]
    },
    {
-    "bytes": 8,
-    "rom": "0x8DC50",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443528",
-     "func_80443D3C",
-     "func_8044ED1C"
-    ]
-   },
-   {
     "bytes": 24,
     "rom": "0x91580",
     "sources": [
@@ -2991,54 +2632,6 @@
    },
    {
     "bytes": 8,
-    "rom": "0xA11A4",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443528",
-     "func_80443D3C",
-     "func_8044ED1C"
-    ]
-   },
-   {
-    "bytes": 8,
     "rom": "0xA1A98",
     "sources": [
      "func_8020F59C",
@@ -3078,6 +2671,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -3355,6 +2949,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -3409,6 +3004,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -3716,103 +3312,6 @@
    },
    {
     "bytes": 8,
-    "rom": "0x1A0DE8",
-    "sources": [
-     "func_8020F59C",
-     "func_8022C87C",
-     "func_8024C334",
-     "func_8024E130",
-     "func_8024E138",
-     "func_8024E140",
-     "func_8024E2E4",
-     "func_8025477C",
-     "func_802A1F50",
-     "func_802A1F58",
-     "func_802A2004",
-     "func_802A21EC",
-     "func_804134F8",
-     "func_8041BBB4",
-     "func_8041C4EC",
-     "func_80420C60",
-     "func_80420C68",
-     "func_80420C70",
-     "func_80420C78",
-     "func_8042358C",
-     "func_80423594",
-     "func_80429904",
-     "func_8042B4BC",
-     "func_8042B5B4",
-     "func_80435BA4",
-     "func_80435E40",
-     "func_80435E48",
-     "func_804361FC",
-     "func_80436574",
-     "func_80436D48",
-     "func_80436DCC",
-     "func_8043722C",
-     "func_80437234",
-     "func_80438CB4",
-     "func_804391F0",
-     "func_804394E0",
-     "func_80439930",
-     "func_8043E244",
-     "func_8043E654",
-     "func_8043E748",
-     "func_80442514",
-     "func_8044359C",
-     "func_804435A4",
-     "func_804435AC",
-     "func_804435B4",
-     "func_804435BC",
-     "func_804435C4",
-     "func_804435CC"
-    ]
-   },
-   {
-    "bytes": 28,
-    "rom": "0x1A143C",
-    "sources": [
-     "func_804453C4"
-    ]
-   },
-   {
-    "bytes": 20,
-    "rom": "0x1A2230",
-    "sources": [
-     "func_8043E21C"
-    ]
-   },
-   {
-    "bytes": 56,
-    "rom": "0x1A224C",
-    "sources": [
-     "func_8043E2E0",
-     "func_8043E5BC",
-     "func_8043E750",
-     "func_80446B44"
-    ]
-   },
-   {
-    "bytes": 44,
-    "rom": "0x1A24F4",
-    "sources": [
-     "func_8043E4A4",
-     "func_8043EA94",
-     "func_8043EDB8",
-     "func_8043EDE4",
-     "func_8043EE10",
-     "func_8043EEF0",
-     "func_804458F4",
-     "func_80445920",
-     "func_8044594C",
-     "func_80445978",
-     "func_804459A4",
-     "func_80446140",
-     "func_8044616C"
-    ]
-   },
-   {
-    "bytes": 8,
     "rom": "0x1A31B0",
     "sources": [
      "func_80207730",
@@ -3900,6 +3399,7 @@
      "func_804391F0",
      "func_804394E0",
      "func_80439930",
+     "func_8043CDE8",
      "func_8043E244",
      "func_8043E654",
      "func_8043E748",
@@ -3981,100 +3481,6 @@
     ]
    },
    {
-    "bytes": 8,
-    "rom": "0x8DCDC",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443D3C",
-     "func_8044ED1C"
-    ]
-   },
-   {
-    "bytes": 8,
-    "rom": "0xA2264",
-    "sources": [
-     "func_80207730",
-     "func_802077C4",
-     "func_80218464",
-     "func_8022BEEC",
-     "func_8022D1FC",
-     "func_8022D244",
-     "func_8022D278",
-     "func_8022D410",
-     "func_8022DC04",
-     "func_8022EAF4",
-     "func_8022EDE4",
-     "func_80233304",
-     "func_80233334",
-     "func_802393F4",
-     "func_802394A4",
-     "func_80239FBC",
-     "func_80239FC4",
-     "func_8024B644",
-     "func_8025C8F0",
-     "func_80272664",
-     "func_8027451C",
-     "func_8028B4A4",
-     "func_802909D0",
-     "func_802909EC",
-     "func_80293DDC",
-     "func_80294120",
-     "func_80294404",
-     "func_80294ABC",
-     "func_802A28F4",
-     "func_802A67C8",
-     "func_802A853C",
-     "func_802B1554",
-     "func_802BFD40",
-     "func_802C31B0",
-     "func_8040C9C8",
-     "func_8040F5E8",
-     "func_80411ABC",
-     "func_80435A18",
-     "func_8043F1B0",
-     "func_80443D3C",
-     "func_8044ED1C"
-    ]
-   },
-   {
     "bytes": 308,
     "rom": "0x17A648",
     "sources": [
@@ -4131,99 +3537,11 @@
      "func_8043A014",
      "func_8043C1D0"
     ]
-   },
-   {
-    "bytes": 8,
-    "rom": "0x1AADE8",
-    "sources": [
-     "func_8020F59C",
-     "func_8022C87C",
-     "func_8024C334",
-     "func_8024E130",
-     "func_8024E138",
-     "func_8024E140",
-     "func_8024E2E4",
-     "func_8025477C",
-     "func_802A1F50",
-     "func_802A1F58",
-     "func_802A2004",
-     "func_802A21EC",
-     "func_804134F8",
-     "func_8041BBB4",
-     "func_8041C4EC",
-     "func_80420C60",
-     "func_80420C68",
-     "func_80420C70",
-     "func_80420C78",
-     "func_8042358C",
-     "func_80423594",
-     "func_80429904",
-     "func_8042B4BC",
-     "func_8042B5B4",
-     "func_80435BA4",
-     "func_80435E40",
-     "func_80435E48",
-     "func_804361FC",
-     "func_80436574",
-     "func_80436D48",
-     "func_80436DCC",
-     "func_8043722C",
-     "func_80437234",
-     "func_80438CB4",
-     "func_804391F0",
-     "func_804394E0",
-     "func_80439930",
-     "func_8043E244",
-     "func_8043E654",
-     "func_8043E748",
-     "func_80442514",
-     "func_8044359C",
-     "func_804435A4",
-     "func_804435AC",
-     "func_804435B4",
-     "func_804435BC",
-     "func_804435C4",
-     "func_804435CC"
-    ]
-   },
-   {
-    "bytes": 20,
-    "rom": "0x1AC230",
-    "sources": [
-     "func_8043E21C"
-    ]
-   },
-   {
-    "bytes": 56,
-    "rom": "0x1AC24C",
-    "sources": [
-     "func_8043E2E0",
-     "func_8043E5BC",
-     "func_8043E750",
-     "func_80446B44"
-    ]
-   },
-   {
-    "bytes": 44,
-    "rom": "0x1AC4F4",
-    "sources": [
-     "func_8043E4A4",
-     "func_8043EA94",
-     "func_8043EDB8",
-     "func_8043EDE4",
-     "func_8043EE10",
-     "func_8043EEF0",
-     "func_804458F4",
-     "func_80445920",
-     "func_8044594C",
-     "func_80445978",
-     "func_804459A4"
-    ]
    }
   ]
  },
  "date": "2026-09-28",
- "reason": "landed func_8041EE78, func_8043E4D0, func_8043EAF4",
+ "reason": "landed func_80210180, func_80227E68, func_80256710, func_802596D4, func_8028BC98, func_8028CABC, func_8028D02C, func_8028D864, func_80297A48, func_80297AD4, func_802992C4, func_8029AA80, func_8029F8AC, func_802A15D0, func_802A166C, func_802A2FE8, func_802A80C4, func_802B8ED0, func_802C3D24, func_80404E28, func_804050CC, func_80405648, func_80409824, func_8040A0C8, func_8040A3A8, func_8040B560, func_8040E87C, func_80412D60, func_80415CA0, func_8041CE20, func_8041CE4C, func_8041CE78, func_8041CE88, func_8041D1A4, func_80421B20, func_80424D70, func_8042E640, func_8042F074, func_804350D0, func_80439808, func_8043C868, func_8043CB78, func_8043CB8C, func_8043CD10, func_8043CDE8, func_8043CFD8, func_8043D124, func_8043D2B4, func_8043D3BC, func_8043D43C, func_8043D4C4, func_8043E0E8, func_8043E230, func_8043E24C, func_8043E284, func_8043E364, func_8043E4F4, func_8043E520, func_8043E65C, func_8043E81C, func_8043E924, func_8043EC10, func_8043F1B8, func_80444484",
  "schema": "decomp.drift.v2",
  "written_by": "land run"
 }
