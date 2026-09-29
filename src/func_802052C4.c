@@ -1,9 +1,20 @@
 typedef void (*FuncPtr)(void);
 
+typedef struct func_802052C4_S1 func_802052C4_S1;
+typedef struct func_802052C4_S2 func_802052C4_S2;
+struct func_802052C4_S1 {
+    char pad0[0x30];
+    void* unk30;
+};
+struct func_802052C4_S2 {
+    char pad0[0x8];
+    FuncPtr unk8;
+};
+
 void func_802052C4(void *arg0, void *arg1) {
-    void *obj = *(void **)((char *)arg1 + 0x30);
+    void *obj = ((func_802052C4_S1 *)(arg1))->unk30;
     if (obj != 0) {
-        FuncPtr fn = *(FuncPtr *)((char *)obj + 8);
+        FuncPtr fn = ((func_802052C4_S2 *)(obj))->unk8;
         if (fn != 0) {
             fn();
         }

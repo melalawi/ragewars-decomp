@@ -37,6 +37,12 @@ extern s32 func_802412C0(Polygon *, Vec3 *, Vec3 *, f32 *);
 extern void func_80272038(Vec3 *, f32, Vec3 *, Vec3 *);
 extern s32 func_80241604(Polygon *, Vec3 *, f32, Vec3 *);
 
+typedef struct func_8023EA34_S1 func_8023EA34_S1;
+struct func_8023EA34_S1 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 static inline s32 accepts(Ray *ray, Polygon *poly) {
     if (poly->t <= 0.0f) {
         if (poly->kind == 7) {
@@ -45,7 +51,7 @@ static inline s32 accepts(Ray *ray, Polygon *poly) {
         if ((u32)(poly->type - 5) < 2) {
             return 0;
         }
-        if (poly->t * ray->slack < -(D_800D0648 * *(f32 *)((char *)&D_800C87C0 + 4))) {
+        if (poly->t * ray->slack < -(D_800D0648 * ((func_8023EA34_S1 *)(&D_800C87C0))->unk4)) {
             return 0;
         }
     }

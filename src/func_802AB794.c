@@ -13,6 +13,14 @@ extern void func_802A8650(void *arg0, int arg1);
 extern f32 D_800CB380;
 extern u8 D_801462DE;
 
+typedef struct func_802AB794_S1 func_802AB794_S1;
+struct func_802AB794_S1 {
+    char pad0[0x40];
+    int unk40;
+    char pad40[0x88 - 0x40 - sizeof(int)];
+    int unk88;
+};
+
 void func_802AB794(void *arg0) {
     char pad[256];
     (void)pad;
@@ -27,10 +35,10 @@ void func_802AB794(void *arg0) {
     func_802ABB58(D_800CB380, D_800CB380);
     func_802ABB2C(0xFF, 0xFF, 0xFF, 0xC8, 0xC8, 0xC8);
     func_802AA224(D_801462DE);
-    if (*(int *)((char *)arg0 + 0x40) != 0) {
+    if (((func_802AB794_S1 *)(arg0))->unk40 != 0) {
         func_802A8650(arg0, 1);
     }
-    if (*(int *)((char *)arg0 + 0x88) != 0) {
+    if (((func_802AB794_S1 *)(arg0))->unk88 != 0) {
         func_802A8650(arg0, 2);
     }
 }

@@ -24,6 +24,17 @@ extern void func_8027200C(void *out, void *vector, f32 scale);
 extern f32 D_800C9520[];
 extern f32 D_800C9528;
 
+typedef struct func_802675E0_S1 func_802675E0_S1;
+typedef struct func_802675E0_S2 func_802675E0_S2;
+struct func_802675E0_S1 {
+    char pad0[0x8];
+    Vec3 unk8;
+};
+struct func_802675E0_S2 {
+    char pad0[0x8];
+    Vec3 unk8;
+};
+
 void func_802675E0(void *arg0, u8 *arg1, Arg2 arg2, Arg3 arg3, Vec3 *arg4)
 {
     volatile char prefix[0x10];
@@ -42,8 +53,8 @@ void func_802675E0(void *arg0, u8 *arg1, Arg2 arg2, Arg3 arg3, Vec3 *arg4)
     arg4->x = zero;
     if (*arg1 == 2) {
         offsetp = &offset;
-        func_80271FD8(offsetp, (Vec3 *)((char *)arg0 + 8),
-                      (Vec3 *)((char *)arg1 + 8));
+        func_80271FD8(offsetp, &((func_802675E0_S1 *)(arg0))->unk8,
+                      &((func_802675E0_S2 *)(arg1))->unk8);
         distance = func_802BC380((offset.x * offset.x) +
                                  (offset.y * offset.y) +
                                  (offset.z * offset.z));

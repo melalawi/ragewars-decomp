@@ -15,6 +15,50 @@ extern void func_8025E13C(s32 arg0);
 
 extern void *jtbl_800CB448[];
 
+typedef struct func_802ADE28_S1 func_802ADE28_S1;
+typedef struct func_802ADE28_S2 func_802ADE28_S2;
+typedef struct func_802ADE28_S3 func_802ADE28_S3;
+typedef struct func_802ADE28_S4 func_802ADE28_S4;
+typedef struct func_802ADE28_S5 func_802ADE28_S5;
+struct func_802ADE28_S1 {
+    char pad0[0x18];
+    void* unk18;
+};
+struct func_802ADE28_S2 {
+    char pad0[0x14];
+    char unk14;
+};
+struct func_802ADE28_S3 {
+    char pad0[0x4];
+    u16 unk4;
+    char pad4[0x6 - 0x4 - sizeof(u16)];
+    s16 unk6;
+    char pad6[0x8 - 0x6 - sizeof(s16)];
+    s16 unk8;
+};
+struct func_802ADE28_S4 {
+    char pad0[0x8];
+    s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x10 - 0xC - sizeof(s32)];
+    s32 unk10;
+    char pad10[0x5DC - 0x10 - sizeof(s32)];
+    void* unk5DC;
+    char pad5DC[0x670 - 0x5DC - sizeof(void*)];
+    f32 unk670;
+    char pad670[0x674 - 0x670 - sizeof(f32)];
+    f32 unk674;
+    char pad674[0x678 - 0x674 - sizeof(f32)];
+    f32 unk678;
+    char pad678[0xD40 - 0x678 - sizeof(f32)];
+    char unkD40;
+};
+struct func_802ADE28_S5 {
+    char pad0[0xC];
+    f32 unkC;
+};
+
 /** Apply a scripted effect command and its optional sound callbacks. */
 s32 func_802ADE28(void *arg0, void *arg1, void *arg2) {
     void *resource;
@@ -23,8 +67,8 @@ s32 func_802ADE28(void *arg0, void *arg1, void *arg2) {
     s32 callback;
     s16 command;
 
-    state_value = (char *)*(void **)((char *)arg2 + 0x18) + 0x14;
-    command = *(u16 *)((char *)arg1 + 4) - 0x708;
+    state_value = &((func_802ADE28_S2 *)(((func_802ADE28_S1 *)(arg2))->unk18))->unk14;
+    command = ((func_802ADE28_S3 *)(arg1))->unk4 - 0x708;
     {
         static void *sw_command_labels[0] __attribute__((section(".sdata"))) = {
             &&sw_command_0, &&sw_command_1, &&sw_command_2, &&sw_command_3, &&sw_command_7, &&sw_command_default
@@ -37,17 +81,17 @@ s32 func_802ADE28(void *arg0, void *arg1, void *arg2) {
     }
     do {
     sw_command_0:
-        *(f32 *)((char *)arg0 + 0x670) = D_800CB468;
+        ((func_802ADE28_S4 *)(arg0))->unk670 = D_800CB468;
         break;
     sw_command_1:
-        *(f32 *)((char *)arg0 + 0x674) = D_800CB46C;
+        ((func_802ADE28_S4 *)(arg0))->unk674 = D_800CB46C;
         break;
     sw_command_2:
     sw_command_3:
-        *(f32 *)((char *)arg0 + 0x678) += *(f32 *)(state_value + 0xC);
+        ((func_802ADE28_S4 *)(arg0))->unk678 += ((func_802ADE28_S5 *)(state_value))->unkC;
         break;
     sw_command_7:
-        func_802A7FA8((char *)arg0 + 0xD40, 1, 0, 0x7FD,
+        func_802A7FA8(&((func_802ADE28_S4 *)(arg0))->unkD40, 1, 0, 0x7FD,
                        0, 0, 0, &D_2AE1A4, &D_2AE254);
         break;
     
@@ -55,22 +99,22 @@ s32 func_802ADE28(void *arg0, void *arg1, void *arg2) {
     } while (0);
 
     resource = *(void **)arg1;
-    sound = *(s16 *)((char *)arg1 + 6);
-    callback = *(s16 *)((char *)arg1 + 8);
-    if (*(void **)((char *)arg0 + 0x5DC) != 0) {
-        func_8023919C(*(void **)((char *)arg0 + 0x5DC),
+    sound = ((func_802ADE28_S3 *)(arg1))->unk6;
+    callback = ((func_802ADE28_S3 *)(arg1))->unk8;
+    if (((func_802ADE28_S4 *)(arg0))->unk5DC != 0) {
+        func_8023919C(((func_802ADE28_S4 *)(arg0))->unk5DC,
                       0x80, 0x32, 0x32, 0x4B, 0, 0, 2);
         if (resource != 0) {
             func_80237E70(&D_80145088,
-                          *(void **)((char *)arg0 + 0x5DC),
+                          ((func_802ADE28_S4 *)(arg0))->unk5DC,
                           *(void **)resource);
         }
     }
     if (sound != 0) {
         func_8025DE74(sound,
-                      *(s32 *)((char *)arg0 + 8),
-                      *(s32 *)((char *)arg0 + 0xC),
-                      *(s32 *)((char *)arg0 + 0x10), 0, -1);
+                      ((func_802ADE28_S4 *)(arg0))->unk8,
+                      ((func_802ADE28_S4 *)(arg0))->unkC,
+                      ((func_802ADE28_S4 *)(arg0))->unk10, 0, -1);
     }
     if (callback != 0) {
         func_8025E13C(callback);

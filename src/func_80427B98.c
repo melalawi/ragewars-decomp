@@ -14,6 +14,12 @@ extern void func_804286A0(s32,Settings *);
 extern Record *func_8028D450(void *,s32);
 extern s32 func_8041F1B0(s8);
 extern void func_8041CB48(void *,s32,s32,s32,s32,Vec,Vec,f32,s32);
+typedef struct func_80427B98_S1 func_80427B98_S1;
+struct func_80427B98_S1 {
+    char pad0[0x20];
+    char unk20;
+};
+
 void func_80427B98(void) {
  Vec scale; s32 record,index; u8 kind; Entry *entry; Settings *settings=&D_801462C8;
  if(settings->mode==4) {
@@ -24,6 +30,6 @@ void func_80427B98(void) {
  entry->kind=kind;
  index=func_8041F1B0((s8)kind);
  scale.x=D_800E3A58[index].scale[0]; scale.y=D_800E3A58[index].scale[0]; scale.z=D_800E3A58[index].scale[0];
- func_8041CB48((char *)D_800E4690+0x20,9,entry->kind+0x38F,0x4B,0x5DC0,scale,D_800E3A58[index].position[0],D_800E3A58[index].distance[0],D_800E3A58[index].light[0]);
+ func_8041CB48(&((func_80427B98_S1 *)(D_800E4690))->unk20,9,entry->kind+0x38F,0x4B,0x5DC0,scale,D_800E3A58[index].position[0],D_800E3A58[index].distance[0],D_800E3A58[index].light[0]);
  }
 }

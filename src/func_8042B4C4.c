@@ -7,13 +7,23 @@ struct Item {
     u8 alpha;
 };
 
-extern char *D_800E4F60;
+typedef struct func_8042B4C4_S1 func_8042B4C4_S1;
+struct func_8042B4C4_S1 {
+    char pad0[0x450];
+    struct Item* unk450;
+    char pad450[0x454 - 0x450 - sizeof(struct Item*)];
+    struct Item* unk454;
+    char pad454[0x46C - 0x454 - sizeof(struct Item*)];
+    s32 unk46C;
+};
+
+extern func_8042B4C4_S1 *D_800E4F60;
 extern void func_8040E958(struct Item *, s32);
 
 void func_8042B4C4(void) {
-    (*(struct Item **) (D_800E4F60 + 0x454))->alpha = 0xFF;
-    (*(struct Item **) (D_800E4F60 + 0x450))->alpha = 0xFF;
-    func_8040E958(*(struct Item **) (D_800E4F60 + 0x450), 1);
-    func_8040E958(*(struct Item **) (D_800E4F60 + 0x454), 1);
-    *(s32 *) (D_800E4F60 + 0x46C) = 0;
+    (D_800E4F60->unk454)->alpha = 0xFF;
+    (D_800E4F60->unk450)->alpha = 0xFF;
+    func_8040E958(D_800E4F60->unk450, 1);
+    func_8040E958(D_800E4F60->unk454, 1);
+    D_800E4F60->unk46C = 0;
 }

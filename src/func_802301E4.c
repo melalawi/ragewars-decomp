@@ -19,23 +19,60 @@ extern s32 func_8022A590(void *, void *);
 extern void func_802398F8(void *, void *, s32, s32, f32);
 extern void func_80214178(void *, void *, s32);
 
+typedef struct func_802301E4_S1 func_802301E4_S1;
+typedef struct func_802301E4_S2 func_802301E4_S2;
+typedef struct func_802301E4_S3 func_802301E4_S3;
+typedef struct func_802301E4_S4 func_802301E4_S4;
+struct func_802301E4_S1 {
+    char pad0[0x5D4];
+    s32 unk5D4;
+    char pad5D4[0x5DC - 0x5D4 - sizeof(s32)];
+    void* unk5DC;
+    char pad5DC[0x62E - 0x5DC - sizeof(void*)];
+    s16 unk62E;
+    char pad62E[0x6AC - 0x62E - sizeof(s16)];
+    s32 unk6AC;
+    char pad6AC[0x11D8 - 0x6AC - sizeof(s32)];
+    f32 unk11D8;
+    char pad11D8[0x1450 - 0x11D8 - sizeof(f32)];
+    s32 unk1450;
+    char pad1450[0x1454 - 0x1450 - sizeof(s32)];
+    char* unk1454;
+};
+struct func_802301E4_S2 {
+    char pad0[0x100];
+    s32 unk100;
+    char pad100[0x1D8 - 0x100 - sizeof(s32)];
+    char* unk1D8;
+};
+struct func_802301E4_S3 {
+    char pad0[0x23C];
+    s32 unk23C;
+};
+struct func_802301E4_S4 {
+    char pad0[0xCB];
+    u8 unkCB;
+    char padCB[0x13C - 0xCB - sizeof(u8)];
+    s32 unk13C;
+};
+
 static inline s32 can_fire(char *player) {
     s32 ammo;
 
-    if (*(f32 *)(player + 0x11D8) > 0.0f) {
+    if (((func_802301E4_S1 *)(player))->unk11D8 > 0.0f) {
         return 0;
     }
-    if (*(s32 *)(player + 0x1450) != 0) {
+    if (((func_802301E4_S1 *)(player))->unk1450 != 0) {
         return 1;
     }
     if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F54C(&D_80102B00[*(s32 *)(player + 0x5D4) * 0x190], *(s16 *)(player + 0x62E));
+    ammo = func_8022F54C(&D_80102B00[((func_802301E4_S1 *)(player))->unk5D4 * 0x190], ((func_802301E4_S1 *)(player))->unk62E);
     if (ammo == 0) {
         func_8025DF54(0xD4D);
-        if (*(void **)(player + 0x5DC) != 0) {
-            func_802398F8(&D_80145088, *(void **)(player + 0x5DC), D_800D70E8, func_8022A590(&D_80145040, player),
+        if (((func_802301E4_S1 *)(player))->unk5DC != 0) {
+            func_802398F8(&D_80145088, ((func_802301E4_S1 *)(player))->unk5DC, D_800D70E8, func_8022A590(&D_80145040, player),
                           D_800C7FD4);
         }
     }
@@ -47,24 +84,24 @@ s32 func_802301E4(void *actor, void *attack) {
     s32 trigger;
     char *control;
 
-    player = *(char **)((char *)actor + 0x1D8);
-    if (*(f32 *)(player + 0x11D8) > D_800C7FD0) {
+    player = ((func_802301E4_S2 *)(actor))->unk1D8;
+    if (((func_802301E4_S1 *)(player))->unk11D8 > D_800C7FD0) {
         return 0;
     }
-    if ((*(s32 *)((char *)actor + 0x100) & 0x300000) && *(s32 *)(player + 0x1450) != 0) {
-        control = *(char **)(player + 0x1454);
-        trigger = *(s32 *)(control + 0x23C);
-        *(s32 *)(control + 0x23C) = 0;
+    if ((((func_802301E4_S2 *)(actor))->unk100 & 0x300000) && ((func_802301E4_S1 *)(player))->unk1450 != 0) {
+        control = ((func_802301E4_S1 *)(player))->unk1454;
+        trigger = ((func_802301E4_S3 *)(control))->unk23C;
+        ((func_802301E4_S3 *)(control))->unk23C = 0;
     } else {
-        trigger = *(s32 *)(player + 0x6AC) & 0x2000;
+        trigger = ((func_802301E4_S1 *)(player))->unk6AC & 0x2000;
     }
     if (trigger != 0 && func_80230048(actor, attack) != 0) {
-        if (*(s32 *)((char *)attack + 0x13C) == 2 && can_fire(player)) {
+        if (((func_802301E4_S4 *)(attack))->unk13C == 2 && can_fire(player)) {
             func_80214178(actor, attack, 8);
             return 2;
         }
         func_80214178(actor, attack, 4);
-        *(u8 *)((char *)attack + 0xCB) = 0;
+        ((func_802301E4_S4 *)(attack))->unkCB = 0;
         return 1;
     }
     return 0;

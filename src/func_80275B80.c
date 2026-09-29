@@ -1,5 +1,16 @@
 #include "basetypes.h"
 
+typedef struct func_80275B80_S1 func_80275B80_S1;
+typedef struct func_80275B80_S2 func_80275B80_S2;
+struct func_80275B80_S1 {
+    char pad0[0x8];
+    f32 unk8;
+};
+struct func_80275B80_S2 {
+    char pad0[0x8];
+    f32 unk8;
+};
+
 s32 func_80275B80(void **arg0, f32 arg1, f32 arg2) {
     s32 i;
     s32 address1;
@@ -16,11 +27,11 @@ s32 func_80275B80(void **arg0, f32 arg1, f32 arg2) {
         address2 = (s32)arg0 + ((i + 1) % 3) * 4 + 4;
         point1 = *(void **)address1;
         point2 = *(void **)address2;
-        if (((*(f32 *)((char *)point2 + 8) -
-              *(f32 *)((char *)point1 + 8)) *
+        if (((((func_80275B80_S1 *)(point2))->unk8 -
+              ((func_80275B80_S2 *)(point1))->unk8) *
              (arg1 - *(f32 *)point1)) +
                 ((*(f32 *)point1 - *(f32 *)point2) *
-                 (arg2 - *(f32 *)((char *)point1 + 8))) <
+                 (arg2 - ((func_80275B80_S2 *)(point1))->unk8)) <
             0.0f) {
             return 0;
         }

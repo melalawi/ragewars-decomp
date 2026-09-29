@@ -19,6 +19,14 @@ extern s32 func_8040F508(Quad *, Quad *);
 extern void func_802A2870(s32, s32, s32, s32);
 extern void func_8040E87C(void *, Args);
 
+typedef struct func_8040CA08_S1 func_8040CA08_S1;
+struct func_8040CA08_S1 {
+    char pad0[0x8];
+    void* unk8;
+    char pad8[0x12 - 0x8 - sizeof(void*)];
+    u16 unk12;
+};
+
 void func_8040CA08(void *widget, Args args) {
     Quad first;
     Quad basis;
@@ -28,14 +36,14 @@ void func_8040CA08(void *widget, Args args) {
 
     changed = 0;
     if (func_8040E154(&first, &basis, widget, &args) != 0) {
-        if ((*(u16 *)((char *)widget + 0x12) & 0x200) != 0) {
+        if ((((func_8040CA08_S1 *)(widget))->unk12 & 0x200) != 0) {
             func_802A2898(&value.x0, &value.x1, &value.y0, &value.y1);
             transformed = value;
             func_8040F508(&transformed, &basis);
             func_802A2870(transformed.x0, transformed.x1, transformed.y0, transformed.y1);
             changed = 1;
         }
-        func_8040E87C(*(void **)((char *)widget + 8), args);
+        func_8040E87C(((func_8040CA08_S1 *)(widget))->unk8, args);
         if (changed != 0) {
             func_802A2870(value.x0, value.x1, value.y0, value.y1);
         }

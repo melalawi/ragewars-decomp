@@ -35,6 +35,18 @@ extern f32 func_802BC200(f32);
 extern f32 func_802BB630(f32);
 extern void func_80274108(Quat *, Quat *, Quat *);
 
+typedef struct func_80247BA4_S1 func_80247BA4_S1;
+struct func_80247BA4_S1 {
+    char pad0[0x8];
+    Vec3 unk8;
+    char pad8[0x70 - 0x8 - sizeof(Vec3)];
+    f32 unk70;
+    char pad70[0x100 - 0x70 - sizeof(f32)];
+    s32 unk100;
+    char pad100[0x174 - 0x100 - sizeof(s32)];
+    s32 unk174;
+};
+
 Quat func_80247BA4(char *actor, Vec3 point, Quat *assist, f32 cone) {
     Vec3 dir;
     Vec3 local;
@@ -73,11 +85,11 @@ Quat func_80247BA4(char *actor, Vec3 point, Quat *assist, f32 cone) {
     count = D_80120CD8;
     for (; i < count; i++) {
         entity = D_80120AD8[i];
-        if (entity == actor || (*(s32 *)(entity + 0x100) & 1) || *(s32 *)(entity + 0x174) == 0) {
+        if (entity == actor || (((func_80247BA4_S1 *)(entity))->unk100 & 1) || ((func_80247BA4_S1 *)(entity))->unk174 == 0) {
             continue;
         }
-        center = *(Vec3 *)(entity + 0x8);
-        center.y += *(f32 *)(entity + 0x70);
+        center = ((func_80247BA4_S1 *)(entity))->unk8;
+        center.y += ((func_80247BA4_S1 *)(entity))->unk70;
         center.y += func_8024D274(entity) * 0.5f;
         func_80271FD8(&dir, &center, &point);
         func_802720EC(&dir);

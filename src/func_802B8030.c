@@ -16,6 +16,12 @@ typedef struct {
 
 extern s32 func_802B51A4(void *, s16 *, s32);
 
+typedef struct func_802B8030_S1 func_802B8030_S1;
+struct func_802B8030_S1 {
+    char pad0[0x14];
+    char unk14;
+};
+
 void func_802B8030(Obj *arg0) {
     s32 new_var;
     Buf16 sp10;
@@ -23,5 +29,5 @@ void func_802B8030(Obj *arg0) {
     new_var = arg0->field40;
     sp10.count = 1;
     sp10.value = new_var + (arg0->field3C * 0x30);
-    func_802B51A4((char *)arg0 + 0x14, &sp10, 0);
+    func_802B51A4(&((func_802B8030_S1 *)(arg0))->unk14, &sp10, 0);
 }

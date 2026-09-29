@@ -31,6 +31,16 @@ extern void func_80272898(f32 *);
 extern void func_8026FD0C(f32 *, s32);
 extern void func_8026C6D8(s32, s32, s32, s32, void *, s32, s32);
 
+typedef struct func_8024BA6C_S1 func_8024BA6C_S1;
+struct func_8024BA6C_S1 {
+    char pad0[0x3];
+    s8 unk3;
+    char pad3[0xB4 - 0x3 - sizeof(s8)];
+    s32 unkB4;
+    char padB4[0x140 - 0xB4 - sizeof(s32)];
+    Frame unk140;
+};
+
 void func_8024BA6C(void *actor, Camera *camera, f32 *transform, u8 layer) {
     f32 mf[16];
     s32 mtx;
@@ -39,7 +49,7 @@ void func_8024BA6C(void *actor, Camera *camera, f32 *transform, u8 layer) {
     Gfx *load;
     s32 offset;
 
-    if (*(s32 *)((char *)actor + 0xB4) != 0) {
+    if (((func_8024BA6C_S1 *)(actor))->unkB4 != 0) {
         mtx = func_80279A30(&D_8011FFB0, 1);
         if (mtx != 0) {
             matrices = camera->matrices;
@@ -49,8 +59,8 @@ void func_8024BA6C(void *actor, Camera *camera, f32 *transform, u8 layer) {
             load = D_80110634++;
             load->words.w0 = 0xDA380007;
             load->words.w1 = mtx;
-            func_8026C6D8(layer, camera->style, *(s32 *)((char *)actor + 0xB4), 1,
-                          &((Frame *)((char *)actor + 0x140))[D_800D297C], 0, *(s8 *)((char *)actor + 3));
+            func_8026C6D8(layer, camera->style, ((func_8024BA6C_S1 *)(actor))->unkB4, 1,
+                          &(&((func_8024BA6C_S1 *)(actor))->unk140)[D_800D297C], 0, ((func_8024BA6C_S1 *)(actor))->unk3);
             restore = D_80110634++;
             offset = (D_800D297C << 6) + 0x380;
             restore->words.w0 = 0xDA380007;

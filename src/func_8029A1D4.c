@@ -33,6 +33,12 @@ extern s32 func_80411E70(s32 id);
 extern s32 func_80298A34(s32 event, s32, s32, s32);
 extern s32 func_80297E3C(s32 id, s32 event, s32, s32, s32);
 
+typedef struct func_8029A1D4_S1 func_8029A1D4_S1;
+struct func_8029A1D4_S1 {
+    char pad0[0xC];
+    s16 unkC;
+};
+
 static inline s32 send_event(s32 value, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     Menu *manager;
     s32 locked;
@@ -63,7 +69,7 @@ static inline s32 send_event(s32 value, s32 arg1, s32 arg2, s32 arg3, s32 arg4) 
         }
         D_8014D080->handled = saved;
     }
-    if (value == *(s16 *)((char *)D_8014D080->entries[D_8014D080->current].primary + 0xC)) {
+    if (value == ((func_8029A1D4_S1 *)(D_8014D080->entries[D_8014D080->current].primary))->unkC) {
         result = func_80298A34(arg1, arg2, arg3, arg4);
     } else {
         result = func_80297E3C(value, arg1, arg2, arg3, arg4);

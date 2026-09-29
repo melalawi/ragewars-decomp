@@ -2,6 +2,19 @@
 
 extern void func_80285D80(void *, void *, s32);
 
+typedef struct func_8028CDCC_S1 func_8028CDCC_S1;
+typedef struct func_8028CDCC_S2 func_8028CDCC_S2;
+struct func_8028CDCC_S1 {
+    char pad0[0x138];
+    s32 unk138;
+    char pad138[0x140 - 0x138 - sizeof(s32)];
+    s32 unk140;
+};
+struct func_8028CDCC_S2 {
+    char pad0[0x18];
+    s32* unk18;
+};
+
 void func_8028CDCC(void *arg0) {
     s32 count;
     s32 i;
@@ -10,14 +23,14 @@ void func_8028CDCC(void *arg0) {
     s32 field;
     s32 three;
 
-    count = *(s32 *)((char *)arg0 + 0x140);
+    count = ((func_8028CDCC_S1 *)(arg0))->unk140;
     i = 0;
     if (count > 0) {
         three = 3;
         offset = 0;
         do {
-            entry = (char *)(*(s32 *)((char *)arg0 + 0x138)) + offset;
-            field = *(*(s32 **)((char *)entry + 0x18));
+            entry = (char *)(((func_8028CDCC_S1 *)(arg0))->unk138) + offset;
+            field = *(((func_8028CDCC_S2 *)(entry))->unk18);
             if (field != three) {
                 i += 1;
             } else {

@@ -57,6 +57,12 @@ extern s32 func_80404F04(s32 ch);
 extern s32 func_802645A0(s32 ch);
 extern void func_804426E4(char *, char *, Player *, Slot *, s32);
 
+typedef struct func_80408E1C_S1 func_80408E1C_S1;
+struct func_80408E1C_S1 {
+    char pad0[0x554];
+    char unk554;
+};
+
 s32 func_80408E1C(void *owner, Menu *menu) {
     s32 ch;
     s32 status;
@@ -117,7 +123,7 @@ s32 func_80408E1C(void *owner, Menu *menu) {
         }
         if (menu->prompt != 0) {
             func_804426E4(menu->prompt != D_44F0DC && menu->player != 0 ?
-                              (char *)menu->player->messages + 0x554 : D_8014561C,
+                              &((func_80408E1C_S1 *)(menu->player->messages))->unk554 : D_8014561C,
                           menu->prompt, menu->player, menu->slot, ch);
         }
     }

@@ -33,6 +33,41 @@ extern void func_80272908(void *arg0, void *arg1, void *arg2);
 extern void func_8026DF30(s32 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4);
 extern void func_8026D9D0(void);
 
+typedef struct func_80219490_S1 func_80219490_S1;
+typedef struct func_80219490_S2 func_80219490_S2;
+struct func_80219490_S1 {
+    char pad0[0x8];
+    s32 unk8;
+    char pad8[0x90 - 0x8 - sizeof(s32)];
+    s32 unk90;
+    char pad90[0x94 - 0x90 - sizeof(s32)];
+    s32 unk94;
+    char pad94[0x98 - 0x94 - sizeof(s32)];
+    s32 unk98;
+    char pad98[0x9C - 0x98 - sizeof(s32)];
+    f32 unk9C;
+    char pad9C[0xA0 - 0x9C - sizeof(f32)];
+    f32 unkA0;
+    char padA0[0xA8 - 0xA0 - sizeof(f32)];
+    f32 unkA8;
+    char padA8[0xAC - 0xA8 - sizeof(f32)];
+    f32 unkAC;
+    char padAC[0xB0 - 0xAC - sizeof(f32)];
+    f32 unkB0;
+    char padB0[0xB4 - 0xB0 - sizeof(f32)];
+    s32 unkB4;
+};
+struct func_80219490_S2 {
+    char pad0[0x29C];
+    f32 unk29C;
+    char pad29C[0x2A0 - 0x29C - sizeof(f32)];
+    f32 unk2A0;
+    char pad2A0[0x2A4 - 0x2A0 - sizeof(f32)];
+    f32 unk2A4;
+    char pad2A4[0x2A8 - 0x2A4 - sizeof(f32)];
+    f32 unk2A8;
+};
+
 void func_80219490(char *object, char *camera) {
     f32 first[16];
     f32 second[16];
@@ -45,7 +80,7 @@ void func_80219490(char *object, char *camera) {
     char *matrix;
 
     func_8026D8F8();
-    if (*(s32 *)(object + 8) == 0 || *(s32 *)(object + 0xB4) == 0) {
+    if (((func_80219490_S1 *)(object))->unk8 == 0 || ((func_80219490_S1 *)(object))->unkB4 == 0) {
         return;
     }
 
@@ -60,18 +95,18 @@ void func_80219490(char *object, char *camera) {
     command->words.w1 = 0x2000;
     func_8026D980();
 
-    x = *(f32 *)(camera + 0x2A4);
-    y = *(f32 *)(camera + 0x2A8);
-    z = *(f32 *)(camera + 0x2A0) + y;
-    w = *(f32 *)(camera + 0x29C) + x;
+    x = ((func_80219490_S2 *)(camera))->unk2A4;
+    y = ((func_80219490_S2 *)(camera))->unk2A8;
+    z = ((func_80219490_S2 *)(camera))->unk2A0 + y;
+    w = ((func_80219490_S2 *)(camera))->unk29C + x;
     func_80291BF8(&D_8011FAC0, (s32)x, (s32)w, (s32)y, (s32)z, 0);
 
-    func_80272D20(first, *(s32 *)(object + 0x90),
-                   *(s32 *)(object + 0x94), *(s32 *)(object + 0x98));
-    func_80273B08(first, *(f32 *)(object + 0xA0));
-    func_80273930(first, *(f32 *)(object + 0x9C));
-    func_802734B8((char *)first, *(f32 *)(object + 0xA8),
-                   *(f32 *)(object + 0xAC), *(f32 *)(object + 0xB0));
+    func_80272D20(first, ((func_80219490_S1 *)(object))->unk90,
+                   ((func_80219490_S1 *)(object))->unk94, ((func_80219490_S1 *)(object))->unk98);
+    func_80273B08(first, ((func_80219490_S1 *)(object))->unkA0);
+    func_80273930(first, ((func_80219490_S1 *)(object))->unk9C);
+    func_802734B8((char *)first, ((func_80219490_S1 *)(object))->unkA8,
+                   ((func_80219490_S1 *)(object))->unkAC, ((func_80219490_S1 *)(object))->unkB0);
     func_80273DDC(first);
 
     matrix = (char *)second;
@@ -86,7 +121,7 @@ void func_80219490(char *object, char *camera) {
     func_80272908(first, object + 0xA8, output);
     {
         s32 offset = (D_800D297C << 6) + 0x10;
-        func_8026DF30(*(s32 *)(object + 8), (s32)(object + offset),
+        func_8026DF30(((func_80219490_S1 *)(object))->unk8, (s32)(object + offset),
                        (s32)&D_800D0EE0, 0, -1);
     }
     func_8026D9D0();

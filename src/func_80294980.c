@@ -5,7 +5,18 @@ extern s32 D_8011FAB0;
 extern f32 D_8014AD78;
 extern s32 D_80146958;
 extern s32 D_800D29D4;
-extern s8 D_800E28D0[];
+typedef struct func_80294980_S1 func_80294980_S1;
+typedef struct func_80294980_S2 func_80294980_S2;
+struct func_80294980_S1 {
+    char pad0[0x1D];
+    s8 unk1D;
+};
+struct func_80294980_S2 {
+    char pad0[0x4];
+    s32 unk4;
+};
+
+extern func_80294980_S2 D_800E28D0;
 extern s8 D_80145040;
 extern s32 D_801462C8;
 
@@ -17,10 +28,10 @@ extern void func_8029397C(s32 arg0, s32 arg1);
 void func_80294980(s32 arg0) {
     s8 *base = &D_801462C8;
 
-    *(s8 *)(base + 0x1D) = 0;
+    ((func_80294980_S1 *)(base))->unk1D = 0;
     D_800D29D0 = 0;
     D_8011FAB0 = 0;
-    D_8014AD78 = (f32)(*(s32 *)(D_800E28D0 + 4));
+    D_8014AD78 = (f32)(D_800E28D0.unk4);
     D_80146958 = 0;
     func_8022A404(base - 0x1288);
     D_800D29D4 = 0;

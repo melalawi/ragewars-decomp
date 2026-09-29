@@ -18,6 +18,34 @@ extern void func_80291BF8(void *arg0, s32 arg1, s32 arg2, s32 arg3,
                           s32 arg4, s32 arg5);
 extern void func_80249E18(void *arg0, void *arg1);
 
+typedef struct func_8021CBAC_S1 func_8021CBAC_S1;
+typedef struct func_8021CBAC_S2 func_8021CBAC_S2;
+typedef struct func_8021CBAC_S3 func_8021CBAC_S3;
+struct func_8021CBAC_S1 {
+    char pad0[0x2E8];
+    char unk2E8;
+    char pad2E8[0x5EA - 0x2E8 - sizeof(char)];
+    s16 unk5EA;
+    char pad5EA[0x62E - 0x5EA - sizeof(s16)];
+    s16 unk62E;
+};
+struct func_8021CBAC_S2 {
+    char pad0[0x120];
+    s32 unk120;
+    char pad120[0x29C - 0x120 - sizeof(s32)];
+    f32 unk29C;
+};
+struct func_8021CBAC_S3 {
+    char pad0[0x44];
+    f32 unk44;
+    char pad44[0x48 - 0x44 - sizeof(f32)];
+    f32 unk48;
+    char pad48[0x4C - 0x48 - sizeof(f32)];
+    f32 unk4C;
+    char pad4C[0x50 - 0x4C - sizeof(f32)];
+    f32 unk50;
+};
+
 void func_8021CBAC(void *arg0, void *arg1) {
     void *entry;
     f32 *rect;
@@ -28,8 +56,8 @@ void func_8021CBAC(void *arg0, void *arg1) {
     f32 top;
     f32 bottom;
 
-    if ((*(s16 *)((char *)arg0 + 0x62E) != -1) &&
-        (*(s16 *)((char *)arg0 + 0x5EA) != 0)) {
+    if ((((func_8021CBAC_S1 *)(arg0))->unk62E != -1) &&
+        (((func_8021CBAC_S1 *)(arg0))->unk5EA != 0)) {
         {
             Gfx *cmd = D_80110634++;
             cmd->words.w0 = 0xE3001201;
@@ -42,16 +70,16 @@ void func_8021CBAC(void *arg0, void *arg1) {
         }
         func_8026D8F8();
 
-        entry = D_800D052C[*(s16 *)((char *)arg0 + 0x62E)];
-        rect = (f32 *)((char *)arg1 + 0x29C);
+        entry = D_800D052C[((func_8021CBAC_S1 *)(arg0))->unk62E];
+        rect = &((func_8021CBAC_S2 *)(arg1))->unk29C;
         x = rect[0];
         y = rect[1];
-        left = *(f32 *)((char *)entry + 0x44) * x + rect[2];
-        right = *(f32 *)((char *)entry + 0x4C) * x + rect[2];
-        top = *(f32 *)((char *)entry + 0x48) * y + rect[3];
-        bottom = *(f32 *)((char *)entry + 0x50) * y + rect[3];
+        left = ((func_8021CBAC_S3 *)(entry))->unk44 * x + rect[2];
+        right = ((func_8021CBAC_S3 *)(entry))->unk4C * x + rect[2];
+        top = ((func_8021CBAC_S3 *)(entry))->unk48 * y + rect[3];
+        bottom = ((func_8021CBAC_S3 *)(entry))->unk50 * y + rect[3];
         func_80291BF8(&D_8011FAC0, (s32)left, (s32)right, (s32)top,
-                      (s32)bottom, *(s32 *)((char *)arg1 + 0x120));
+                      (s32)bottom, ((func_8021CBAC_S2 *)(arg1))->unk120);
 
         {
             Gfx *cmd = D_80110634++;
@@ -79,7 +107,7 @@ void func_8021CBAC(void *arg0, void *arg1) {
             cmd->words.w1 = 0xFFFF;
         }
         func_8026D980();
-        func_80249E18((char *)arg0 + 0x2E8, arg1);
+        func_80249E18(&((func_8021CBAC_S1 *)(arg0))->unk2E8, arg1);
         func_8026D9D0();
     }
 }

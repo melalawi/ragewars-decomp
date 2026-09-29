@@ -3,6 +3,12 @@
 extern char *func_8028FD94(s32 *, s32);
 extern void func_8028FDD8(s32 arg0, s32 arg1);
 
+typedef struct func_8028B790_S1 func_8028B790_S1;
+struct func_8028B790_S1 {
+    char pad0[0x80];
+    void* unk80;
+};
+
 void func_8028B790(void *arg0, s32 arg1, s32 arg2, s32 arg3) {
     void *temp_v0;
     u8 *base1;
@@ -11,7 +17,7 @@ void func_8028B790(void *arg0, s32 arg1, s32 arg2, s32 arg3) {
     s32 idx;
     s32 idx2;
 
-    temp_v0 = func_8028FD94(func_8028FD94(func_8028FD94(*(void **) ((char *) arg0 + 0x80), 0), arg1), 1);
+    temp_v0 = func_8028FD94(func_8028FD94(func_8028FD94(((func_8028B790_S1 *)(arg0))->unk80, 0), arg1), 1);
     func_8028FD94(temp_v0, 0);
     func_8028FDD8((s32) temp_v0, 1);
     base1 = (u8 *) func_8028FD94(temp_v0, 1);

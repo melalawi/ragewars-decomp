@@ -27,15 +27,23 @@ extern s32 func_802BEB30(s32, u32, void *, u32);
 extern void func_802C2060(void *, s32);
 extern void func_802566A8(s32, void *);
 
+typedef struct func_8025651C_S1 func_8025651C_S1;
+struct func_8025651C_S1 {
+    char pad0[0x230];
+    char unk230;
+    char pad230[0xA48 - 0x230 - sizeof(char)];
+    char unkA48;
+};
+
 void func_8025651C(s32 arg0) {
     Timer timer;
     ReadRequest *request;
     void *done;
 
     for (;;) {
-        func_802C0390((char *)arg0 + 0x230, &request, 1);
+        func_802C0390(&((func_8025651C_S1 *)(arg0))->unk230, &request, 1);
         if (request == (ReadRequest *)0xBEEFDEAD) {
-            func_802C07B0(&timer, 0, 0x393870, (char *)arg0 + 0x230, (void *)0xDEADBEEF);
+            func_802C07B0(&timer, 0, 0x393870, &((func_8025651C_S1 *)(arg0))->unk230, (void *)0xDEADBEEF);
         } else if (request == (ReadRequest *)0xDEADBEEF) {
             if (func_802955C8() != 0) {
                 func_802AF990();
@@ -43,7 +51,7 @@ void func_8025651C(s32 arg0) {
         } else {
             func_802C2370(request->buffer, request->size);
             func_802BEB30(0, request->devAddr, request->buffer, request->size);
-            func_802C0390((char *)arg0 + 0xA48, &done, 1);
+            func_802C0390(&((func_8025651C_S1 *)(arg0))->unkA48, &done, 1);
             func_802C2060(request->buffer, request->size);
             if (request->replyQueue != 0) {
                 func_802C0510(request->replyQueue, request->replyMsg, 1);

@@ -7,21 +7,42 @@ extern s32 D_801468A0;
 extern f32 D_800C6F40;
 extern f32 D_800C6F48;
 
+typedef struct func_8020EA10_S1 func_8020EA10_S1;
+typedef struct func_8020EA10_S2 func_8020EA10_S2;
+typedef struct func_8020EA10_S3 func_8020EA10_S3;
+typedef struct func_8020EA10_S4 func_8020EA10_S4;
+struct func_8020EA10_S1 {
+    char pad0[0x78];
+    s32 unk78;
+};
+struct func_8020EA10_S2 {
+    char pad0[0x5D8];
+    void* unk5D8;
+};
+struct func_8020EA10_S3 {
+    char pad0[0x8F];
+    u8 unk8F;
+};
+struct func_8020EA10_S4 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 s32 func_8020EA10(void **arg0) {
     char *base;
     f32 temp_f20;
 
     base = (char *)&D_801468A0;
-    if (*(s32 *)(base + 0x78) == 0) {
+    if (((func_8020EA10_S1 *)(base))->unk78 == 0) {
         return 0;
     }
-    if (*(u8 *)((char *)(*(void **)((char *)(*arg0) + 0x5D8)) + 0x8F) != 0) {
+    if (((func_8020EA10_S3 *)((((func_8020EA10_S2 *)((*arg0)))->unk5D8)))->unk8F != 0) {
         return 0;
     }
     if (func_8022A82C(base - 0x1860) != 0) {
         return 0;
     }
-    temp_f20 = func_80209B64(arg0) * D_800C6F40 + *(f32 *)((char *)&D_800C6F40 + 4);
+    temp_f20 = func_80209B64(arg0) * D_800C6F40 + ((func_8020EA10_S4 *)(&D_800C6F40))->unk4;
     if (temp_f20 < func_80274B00(0.0f, D_800C6F48)) {
         return 1;
     }

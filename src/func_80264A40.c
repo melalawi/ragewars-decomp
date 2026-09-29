@@ -25,6 +25,14 @@ extern s32 func_802934DC(void);
 extern void func_80264D00(void);
 extern void *func_8022A404(void *);
 
+typedef struct func_80264A40_S1 func_80264A40_S1;
+struct func_80264A40_S1 {
+    char pad0[0x5EC];
+    s32 unk5EC;
+    char pad5EC[0x650 - 0x5EC - sizeof(s32)];
+    u16 unk650;
+};
+
 void func_80264A40(void) {
     Snapshot *snapshot;
     void *player;
@@ -59,11 +67,11 @@ void func_80264A40(void) {
             player = func_8022A404((char *)options - 0x1288);
             if (player != 0) {
                 if (snapshot->mode == 1 &&
-                    (D_8013B2BC != *(s32 *)((char *)player + 0x5EC) ||
-                     (u16)(*(u16 *)((char *)player + 0x650) - 0x16) < 12)) {
+                    (D_8013B2BC != ((func_80264A40_S1 *)(player))->unk5EC ||
+                     (u16)(((func_80264A40_S1 *)(player))->unk650 - 0x16) < 12)) {
                     snapshot->mode = 2;
                 }
-                snapshot->target = *(s32 *)((char *)player + 0x5EC);
+                snapshot->target = ((func_80264A40_S1 *)(player))->unk5EC;
             }
         }
     } else {

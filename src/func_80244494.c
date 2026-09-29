@@ -26,6 +26,48 @@ extern s32 func_8023D148(void *arg0);
 extern void func_8023E44C(void *arg0);
 extern s32 func_8023D370(void *arg0);
 
+typedef struct func_80244494_S1 func_80244494_S1;
+typedef struct func_80244494_S2 func_80244494_S2;
+struct func_80244494_S1 {
+    char* unk0;
+    char pad0[0x4 - 0x0 - sizeof(char*)];
+    s32 unk4;
+    char pad4[0x1C - 0x4 - sizeof(s32)];
+    s32 unk1C;
+    char pad1C[0x20 - 0x1C - sizeof(s32)];
+    s32 unk20;
+    char pad20[0x24 - 0x20 - sizeof(s32)];
+    s32 unk24;
+    char pad24[0x28 - 0x24 - sizeof(s32)];
+    s32 unk28;
+    char pad28[0x2C - 0x28 - sizeof(s32)];
+    s32 unk2C;
+    char pad2C[0x30 - 0x2C - sizeof(s32)];
+    s32 unk30;
+    char pad30[0x34 - 0x30 - sizeof(s32)];
+    s32 unk34;
+    char pad34[0x40 - 0x34 - sizeof(s32)];
+    s32 unk40;
+    char pad40[0x44 - 0x40 - sizeof(s32)];
+    Vector3 unk44;
+    char pad44[0x50 - 0x44 - sizeof(Vector3)];
+    Vector3 unk50;
+    char pad50[0x74 - 0x50 - sizeof(Vector3)];
+    Vector3 unk74;
+    char pad74[0xAC - 0x74 - sizeof(Vector3)];
+    s32 unkAC;
+    char padAC[0x180 - 0xAC - sizeof(s32)];
+    Vector3 unk180;
+    char pad180[0x198 - 0x180 - sizeof(Vector3)];
+    Vector3 unk198;
+    char pad198[0x1A4 - 0x198 - sizeof(Vector3)];
+    Vector3 unk1A4;
+};
+struct func_80244494_S2 {
+    char pad0[0x100];
+    s32 unk100;
+};
+
 s32 func_80244494(char *arg0, Vector3 arg1, Vector3 arg2, s32 arg3) {
     Work80244494 work;
     VectorPair vectors;
@@ -57,30 +99,30 @@ s32 func_80244494(char *arg0, Vector3 arg1, Vector3 arg2, s32 arg3) {
     }
     D_800D065C = next;
 
-    *(char **)(out + 0x0) = object;
+    ((func_80244494_S1 *)(out))->unk0 = object;
     if (object != 0) {
         s32 value = 0;
         if (*(u8 *)object == 1) {
-            flags = *(s32 *)(object + 0x100);
+            flags = ((func_80244494_S2 *)(object))->unk100;
             flags &= 0x300000;
             value = flags != 0;
         }
-        *(s32 *)(out + 0x4) = value;
+        ((func_80244494_S1 *)(out))->unk4 = value;
     } else {
-        *(s32 *)(out + 0x4) = 0;
+        ((func_80244494_S1 *)(out))->unk4 = 0;
     }
 
-    *(Vector3 *)(out + 0x44) = vectors.first;
-    *(Vector3 *)(out + 0x50) = vectors.second;
-    *(s32 *)(out + 0x24) = 0;
-    *(s32 *)(out + 0x20) = 0;
-    *(s32 *)(out + 0x28) = 0;
-    *(s32 *)(out + 0x2C) = 0;
-    *(s32 *)(out + 0x1C) = 0;
-    *(s32 *)(out + 0x40) = arg3;
-    *(s32 *)(out + 0xAC) = 0;
-    *(s32 *)(out + 0x30) = 0;
-    *(s32 *)(out + 0x34) = 0;
+    ((func_80244494_S1 *)(out))->unk44 = vectors.first;
+    ((func_80244494_S1 *)(out))->unk50 = vectors.second;
+    ((func_80244494_S1 *)(out))->unk24 = 0;
+    ((func_80244494_S1 *)(out))->unk20 = 0;
+    ((func_80244494_S1 *)(out))->unk28 = 0;
+    ((func_80244494_S1 *)(out))->unk2C = 0;
+    ((func_80244494_S1 *)(out))->unk1C = 0;
+    ((func_80244494_S1 *)(out))->unk40 = arg3;
+    ((func_80244494_S1 *)(out))->unkAC = 0;
+    ((func_80244494_S1 *)(out))->unk30 = 0;
+    ((func_80244494_S1 *)(out))->unk34 = 0;
     func_8023E828(out);
 
     active = 1;
@@ -90,13 +132,13 @@ s32 func_80244494(char *arg0, Vector3 arg1, Vector3 arg2, s32 arg3) {
             func_8023E44C(out);
             count += 1;
             result = func_8023D370(out);
-            *(Vector3 *)(out + 0x44) = *(Vector3 *)(out + 0x180);
-            *(Vector3 *)(out + 0x50) = *(Vector3 *)(out + 0x198);
-            *(Vector3 *)(out + 0x74) = *(Vector3 *)(out + 0x1A4);
+            ((func_80244494_S1 *)(out))->unk44 = ((func_80244494_S1 *)(out))->unk180;
+            ((func_80244494_S1 *)(out))->unk50 = ((func_80244494_S1 *)(out))->unk198;
+            ((func_80244494_S1 *)(out))->unk74 = ((func_80244494_S1 *)(out))->unk1A4;
             active -= 1;
         } else {
             result = 0;
-            *(Vector3 *)(out + 0x44) = *(Vector3 *)(out + 0x50);
+            ((func_80244494_S1 *)(out))->unk44 = ((func_80244494_S1 *)(out))->unk50;
             active -= 1;
         }
     } while (result != 0 && active != 0);

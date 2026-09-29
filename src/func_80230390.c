@@ -80,23 +80,37 @@ extern void func_802398F8(void *, void *, s32, s32, f32);
 extern s32 func_802301E4(Actor *, Fire *);
 extern void func_80214178(Actor *, Fire *, s16);
 
+typedef struct func_80230390_S1 func_80230390_S1;
+struct func_80230390_S1 {
+    char pad0[0x5D4];
+    s32 unk5D4;
+    char pad5D4[0x5DC - 0x5D4 - sizeof(s32)];
+    void* unk5DC;
+    char pad5DC[0x62E - 0x5DC - sizeof(void*)];
+    s16 unk62E;
+    char pad62E[0x11D8 - 0x62E - sizeof(s16)];
+    f32 unk11D8;
+    char pad11D8[0x1450 - 0x11D8 - sizeof(f32)];
+    s32 unk1450;
+};
+
 static inline s32 can_fire(char *player) {
     s32 ammo;
 
-    if (*(f32 *)(player + 0x11D8) > 0.0f) {
+    if (((func_80230390_S1 *)(player))->unk11D8 > 0.0f) {
         return 0;
     }
-    if (*(s32 *)(player + 0x1450) != 0) {
+    if (((func_80230390_S1 *)(player))->unk1450 != 0) {
         return 1;
     }
     if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F54C(&D_80102B00[*(s32 *)(player + 0x5D4) * 0x190], *(s16 *)(player + 0x62E));
+    ammo = func_8022F54C(&D_80102B00[((func_80230390_S1 *)(player))->unk5D4 * 0x190], ((func_80230390_S1 *)(player))->unk62E);
     if (ammo == 0) {
         func_8025DF54(0xD4D);
-        if (*(void **)(player + 0x5DC) != 0) {
-            func_802398F8(&D_80145088, *(void **)(player + 0x5DC), D_800D70E8[0], func_8022A590(&D_80145040, player),
+        if (((func_80230390_S1 *)(player))->unk5DC != 0) {
+            func_802398F8(&D_80145088, ((func_80230390_S1 *)(player))->unk5DC, D_800D70E8[0], func_8022A590(&D_80145040, player),
                           D_800C7FD8);
         }
     }
@@ -127,7 +141,7 @@ void func_80230390(Actor *actor, Fire *fire) {
         }
     }
     if ((holder->input & 0x4000) && holder->weapon < 0x12) {
-        ready = can_fire((char *) holder);
+        ready = can_fire((char *)holder);
         if (ready != 0) {
             if (fire->mode == 1) {
                 fire->mode = 2;

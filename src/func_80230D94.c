@@ -30,23 +30,66 @@ extern void func_802398F8(void *, void *, s32, s32, f32);
 extern f32 func_80274810(f32, f32);
 extern void func_80214178(void *, void *, s32);
 
+typedef struct func_80230D94_S1 func_80230D94_S1;
+typedef struct func_80230D94_S2 func_80230D94_S2;
+typedef struct func_80230D94_S3 func_80230D94_S3;
+typedef struct func_80230D94_S4 func_80230D94_S4;
+struct func_80230D94_S1 {
+    char pad0[0x5D4];
+    s32 unk5D4;
+    char pad5D4[0x5DC - 0x5D4 - sizeof(s32)];
+    void* unk5DC;
+    char pad5DC[0x5F6 - 0x5DC - sizeof(void*)];
+    s16 unk5F6;
+    char pad5F6[0x62E - 0x5F6 - sizeof(s16)];
+    s16 unk62E;
+    char pad62E[0x698 - 0x62E - sizeof(s16)];
+    char* unk698;
+    char pad698[0x6AC - 0x698 - sizeof(char*)];
+    s32 unk6AC;
+    char pad6AC[0x11D8 - 0x6AC - sizeof(s32)];
+    f32 unk11D8;
+    char pad11D8[0x122C - 0x11D8 - sizeof(f32)];
+    s32 unk122C;
+    char pad122C[0x1230 - 0x122C - sizeof(s32)];
+    f32 unk1230;
+    char pad1230[0x1450 - 0x1230 - sizeof(f32)];
+    s32 unk1450;
+};
+struct func_80230D94_S2 {
+    char pad0[0x1D8];
+    char* unk1D8;
+};
+struct func_80230D94_S3 {
+    char pad0[0x34];
+    s8 unk34;
+    char pad34[0x124 - 0x34 - sizeof(s8)];
+    f32 unk124;
+    char pad124[0x128 - 0x124 - sizeof(f32)];
+    f32 unk128;
+};
+struct func_80230D94_S4 {
+    char pad0[0x168];
+    f32 unk168;
+};
+
 static inline s32 can_fire(char *player) {
     s32 ammo;
 
-    if (*(f32 *)(player + 0x11D8) > 0.0f) {
+    if (((func_80230D94_S1 *)(player))->unk11D8 > 0.0f) {
         return 0;
     }
-    if (*(s32 *)(player + 0x1450) != 0) {
+    if (((func_80230D94_S1 *)(player))->unk1450 != 0) {
         return 1;
     }
     if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F54C(&D_80102B00[*(s32 *)(player + 0x5D4) * 0x190], *(s16 *)(player + 0x62E));
+    ammo = func_8022F54C(&D_80102B00[((func_80230D94_S1 *)(player))->unk5D4 * 0x190], ((func_80230D94_S1 *)(player))->unk62E);
     if (ammo == 0) {
         func_8025DF54(0xD4D);
-        if (*(void **)(player + 0x5DC) != 0) {
-            func_802398F8(&D_80145088, *(void **)(player + 0x5DC), D_800D70E8, func_8022A590(&D_80145040, player),
+        if (((func_80230D94_S1 *)(player))->unk5DC != 0) {
+            func_802398F8(&D_80145088, ((func_80230D94_S1 *)(player))->unk5DC, D_800D70E8, func_8022A590(&D_80145040, player),
                           1.0f);
         }
     }
@@ -57,27 +100,27 @@ void func_80230D94(void *actor, void *weapon) {
     char *player;
     char *model;
 
-    player = *(char **)((char *)actor + 0x1D8);
-    if (*(s8 *)((char *)weapon + 0x34) != 4) {
-        *(f32 *)((char *)weapon + 0x128) = func_80274810(*(f32 *)((char *)weapon + 0x128), 0.013613569f);
+    player = ((func_80230D94_S2 *)(actor))->unk1D8;
+    if (((func_80230D94_S3 *)(weapon))->unk34 != 4) {
+        ((func_80230D94_S3 *)(weapon))->unk128 = func_80274810(((func_80230D94_S3 *)(weapon))->unk128, 0.013613569f);
     }
-    *(f32 *)((char *)weapon + 0x124) += *(f32 *)((char *)weapon + 0x128) * D_800D2988 * 2.0f;
-    model = *(char **)(player + 0x698);
-    if (!(*(f32 *)((char *)weapon + 0x128) < 0.0f ? 1.0f < -*(f32 *)((char *)weapon + 0x128) * 1.7904929f
-                                                   : 1.0f < *(f32 *)((char *)weapon + 0x128) * 1.7904929f)) {
-        if (*(f32 *)((char *)weapon + 0x128) < 0.0f) {
-            *(f32 *)(model + 0x168) = -*(f32 *)((char *)weapon + 0x128) * 1.7904929f;
+    ((func_80230D94_S3 *)(weapon))->unk124 += ((func_80230D94_S3 *)(weapon))->unk128 * D_800D2988 * 2.0f;
+    model = ((func_80230D94_S1 *)(player))->unk698;
+    if (!(((func_80230D94_S3 *)(weapon))->unk128 < 0.0f ? 1.0f < -((func_80230D94_S3 *)(weapon))->unk128 * 1.7904929f
+                                                   : 1.0f < ((func_80230D94_S3 *)(weapon))->unk128 * 1.7904929f)) {
+        if (((func_80230D94_S3 *)(weapon))->unk128 < 0.0f) {
+            ((func_80230D94_S4 *)(model))->unk168 = -((func_80230D94_S3 *)(weapon))->unk128 * 1.7904929f;
         } else {
-            *(f32 *)(model + 0x168) = *(f32 *)((char *)weapon + 0x128) * 1.7904929f;
+            ((func_80230D94_S4 *)(model))->unk168 = ((func_80230D94_S3 *)(weapon))->unk128 * 1.7904929f;
         }
     } else {
-        *(f32 *)(model + 0x168) = 1.0f;
+        ((func_80230D94_S4 *)(model))->unk168 = 1.0f;
     }
-    if ((*(s32 *)(player + 0x6AC) & 0x4000) && can_fire(player) && *(s16 *)(player + 0x5F6) > 0) {
-        if (!(*(s32 *)(player + 0x122C) & 0x18400)) {
+    if ((((func_80230D94_S1 *)(player))->unk6AC & 0x4000) && can_fire(player) && ((func_80230D94_S1 *)(player))->unk5F6 > 0) {
+        if (!(((func_80230D94_S1 *)(player))->unk122C & 0x18400)) {
             func_8025DF54(0x7BC);
         }
-        *(s32 *)(player + 0x122C) |= 0x18400;
-        *(f32 *)(player + 0x1230) = 25.0f;
+        ((func_80230D94_S1 *)(player))->unk122C |= 0x18400;
+        ((func_80230D94_S1 *)(player))->unk1230 = 25.0f;
     }
 }

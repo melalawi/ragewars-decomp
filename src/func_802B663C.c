@@ -11,6 +11,12 @@ typedef struct {
     Node802B663C *free;
 } List802B663C;
 
+typedef struct func_802B663C_S1 func_802B663C_S1;
+struct func_802B663C_S1 {
+    char pad0[0x4];
+    unsigned char unk4;
+};
+
 void func_802B663C(List802B663C *arg0, void *arg1) {
     Node802B663C *node;
     Node802B663C *prev;
@@ -18,7 +24,7 @@ void func_802B663C(List802B663C *arg0, void *arg1) {
     prev = 0;
     node = arg0->head;
     while (node != 0) {
-        if ((void *)((char *)node + 4) == arg1) {
+        if ((void *)&((func_802B663C_S1 *)(node))->unk4 == arg1) {
             if (prev != 0) {
                 prev->next = node->next;
             } else {

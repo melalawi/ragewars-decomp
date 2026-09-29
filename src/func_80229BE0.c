@@ -5,10 +5,23 @@ extern s32 D_80146910;
 
 extern void *jtbl_800C7D70[];
 
+typedef struct func_80229BE0_S1 func_80229BE0_S1;
+typedef struct func_80229BE0_S2 func_80229BE0_S2;
+struct func_80229BE0_S1 {
+    char pad0[0xE4];
+    u16 unkE4;
+    char padE4[0x5D8 - 0xE4 - sizeof(u16)];
+    char* unk5D8;
+};
+struct func_80229BE0_S2 {
+    char pad0[0x80];
+    s8 unk80;
+};
+
 /** Return the animation-table offset selected by the actor state. */
 s32 func_80229BE0(void *arg0, s32 arg1) {
     s32 *types = &D_800CE47C;
-    u16 type = *(u16 *)((char *)arg0 + 0xE4);
+    u16 type = ((func_80229BE0_S1 *)(arg0))->unkE4;
     char *state;
     s32 offset;
 
@@ -33,7 +46,7 @@ s32 func_80229BE0(void *arg0, s32 arg1) {
     } else if (type == types[-1]) {
         offset = 0x3E8;
     } else {
-        state = *(char **)((char *)arg0 + 0x5D8);
+        state = ((func_80229BE0_S1 *)(arg0))->unk5D8;
         {
         static void *sw_state_labels[0] __attribute__((section(".sdata"))) = {
             &&sw_state_1, &&sw_state_2, &&sw_state_3,
@@ -42,7 +55,7 @@ s32 func_80229BE0(void *arg0, s32 arg1) {
             &&sw_state_11, &&sw_state_12, &&sw_state_13,
             &&sw_state_16, &&sw_state_14
         };
-        s32 sw_state_value = *(s8 *)(state + 0x80);
+        s32 sw_state_value = ((func_80229BE0_S2 *)(state))->unk80;
         if ((unsigned int)sw_state_value > 16) {
             goto sw_state_invalid;
         }
@@ -50,7 +63,7 @@ s32 func_80229BE0(void *arg0, s32 arg1) {
     }
     do {
         sw_state_invalid:
-            *(s8 *)(state + 0x80) = 0;
+            ((func_80229BE0_S2 *)(state))->unk80 = 0;
             offset = 0;
             break;
         sw_state_1:

@@ -24,12 +24,20 @@ typedef struct State {
 } State;
 
 extern f32 D_800D2988;
+typedef struct { f32 first; f32 second; } D_800D2988_Pair;
+typedef struct { f32 unk0; } func_802A3F94_G2;
 extern f32 D_800D2990;
 extern f32 D_800CAF70[];
 extern f32 D_800CAF78[];
 
 extern void func_802A6770(s32, State *, Node *);
 extern void func_802A6FE0(State *);
+
+typedef struct func_802A3F94_S1 func_802A3F94_S1;
+struct func_802A3F94_S1 {
+    char pad0[0x100];
+    u32 unk100;
+};
 
 s32 func_802A3F94(s32 arg0, State *state) {
     Node *node;
@@ -46,7 +54,7 @@ s32 func_802A3F94(s32 arg0, State *state) {
         D_800D2988 = saved_step * D_800D2990;
     }
     if (state->flags & 1) {
-        D_800D2988 *= *(&D_800D2988 + 1);
+        D_800D2988 *= ((D_800D2988_Pair *)&D_800D2988)->second;
     }
     if (state->flags & 8) {
         state->retries++;
@@ -92,7 +100,7 @@ s32 func_802A3F94(s32 arg0, State *state) {
     }
 
     if (state->object != 0 && (state->flags & 1) &&
-        !(*(u32 *)((u8 *)state->object + 0x100) & 0x200)) {
+        !(((func_802A3F94_S1 *)(state->object))->unk100 & 0x200)) {
         func_802A6FE0(state);
     }
     D_800D2988 = saved_step;

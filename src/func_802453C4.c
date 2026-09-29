@@ -1,5 +1,18 @@
 #include "basetypes.h"
-extern void *D_800E2830;
+typedef struct func_802453C4_S1 func_802453C4_S1;
+typedef struct func_802453C4_S2 func_802453C4_S2;
+struct func_802453C4_S1 {
+    char pad0[0x1E0];
+    s32 unk1E0;
+};
+struct func_802453C4_S2 {
+    char pad0[0x118];
+    char unk118;
+    char pad118[0x1E0 - 0x118 - sizeof(char)];
+    s32 unk1E0;
+};
+
+extern func_802453C4_S1 *D_800E2830;
 extern s32 D_800E28D0;
 extern f32 D_800C88B0;
 extern f32 D_800C88B4;
@@ -23,7 +36,7 @@ void func_802453C4(void)
   s32 new_var;
   s32 temp_height;
   void *temp_a0;
-  if ((*((s32 *) (((char *) D_800E2830) + 0x1E0))) > 0)
+  if ((D_800E2830->unk1E0) > 0)
   {
     s32 temp_s7;
     s32 temp_s6;
@@ -53,14 +66,14 @@ void func_802453C4(void)
     D_8013B878[0] = 1;
     D_8013B878[1] = 1;
     var_s0 = new_var;
-    if ((*((s32 *) (((char *) temp_a0) + 0x1E0))) > new_var)
+    if ((((func_802453C4_S2 *)(temp_a0))->unk1E0) > new_var)
     {
       new_var2 = 0;
       temp_f22 = D_800C88B8[new_var2];
       temp_f21 = D_800C88B8[1];
       do
       {
-        func_802A9F18(((char *) temp_a0) + 0x118 + (var_s0 * 0x28), temp_s6, var_s1, 0xFF, 1, 1, temp_f22, temp_f22);
+        func_802A9F18(&((func_802453C4_S2 *)(temp_a0))->unk118 + (var_s0 * 0x28), temp_s6, var_s1, 0xFF, 1, 1, temp_f22, temp_f22);
         temp_f1 = ((f32) temp_s7) * var_f20;
         temp_f12 = (f32) (D_800E28D0 / 284);
         var_f20 = ((f32) ((*((&D_800E28D0) + 1)) / 222)) * temp_f21;

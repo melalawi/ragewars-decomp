@@ -22,6 +22,23 @@ extern u8 D_801462D5;
 extern s32 D_800CE3E8[];
 extern Profile D_80102B14[];
 
+typedef struct func_80222D40_S1 func_80222D40_S1;
+typedef struct func_80222D40_S2 func_80222D40_S2;
+struct func_80222D40_S1 {
+    char pad0[0xC];
+    s16 unkC;
+};
+struct func_80222D40_S2 {
+    char pad0[0x18];
+    Desc* unk18;
+    char pad18[0x5D4 - 0x18 - sizeof(Desc*)];
+    s32 unk5D4;
+    char pad5D4[0x5F4 - 0x5D4 - sizeof(s32)];
+    char unk5F4;
+    char pad5F4[0x1450 - 0x5F4 - sizeof(char)];
+    s32 unk1450;
+};
+
 s32 func_80222D40(void *arg0, s32 arg1) {
     void *pickup;
     s32 slot;
@@ -33,22 +50,22 @@ s32 func_80222D40(void *arg0, s32 arg1) {
     if (pickup == 0) {
         return 0;
     }
-    slot = *(s16 *) ((char *) pickup + 0xC);
-    count = (s16 *) ((char *) arg0 + 0x5F4 + slot * 2);
+    slot = ((func_80222D40_S1 *)(pickup))->unkC;
+    count = (s16 *) (&((func_80222D40_S2 *)(arg0))->unk5F4 + slot * 2);
     if (slot == -1) {
         cap = 0;
     } else {
         if (D_801462D5 != 1) {
-            base = (*(Desc **) ((char *) arg0 + 0x18))->caps[slot];
+            base = (((func_80222D40_S2 *)(arg0))->unk18)->caps[slot];
         } else {
             base = D_800CE3E8[slot];
-            if (*(s32 *) ((char *) arg0 + 0x1450) == 0) {
+            if (((func_80222D40_S2 *)(arg0))->unk1450 == 0) {
                 if (slot == 0) {
-                    base += D_80102B14[*(s32 *) ((char *) arg0 + 0x5D4)].bonus0;
+                    base += D_80102B14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus0;
                 } else if (slot == 1) {
-                    base += D_80102B14[*(s32 *) ((char *) arg0 + 0x5D4)].bonus1;
+                    base += D_80102B14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus1;
                 } else if (slot == 2) {
-                    base += D_80102B14[*(s32 *) ((char *) arg0 + 0x5D4)].bonus2;
+                    base += D_80102B14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus2;
                 }
             }
         }

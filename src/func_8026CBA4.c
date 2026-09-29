@@ -24,6 +24,14 @@ extern void func_80253B5C(s32 heap, void **resource);
 extern void *func_8028FD94(void *table, s32 index);
 extern s32 func_80269A80(void *material, s32 pass);
 
+typedef struct { u8 pad[6]; u8 flags; } Material;
+
+typedef struct func_8026CBA4_S1 func_8026CBA4_S1;
+struct func_8026CBA4_S1 {
+    char pad0[0x122C];
+    s32 unk122C;
+};
+
 void func_8026CBA4(void **resource, void *owner, s32 matrix, s32 segment, s32 lights, void *textures, s32 pass) {
     void *header;
     void *base;
@@ -89,7 +97,7 @@ void func_8026CBA4(void **resource, void *owner, s32 matrix, s32 segment, s32 li
     for (i = 0; i < count; i++) {
         part = func_8028FD94(parts, i);
         material = func_8028FD94(part, 0);
-        if ((((unsigned char *)material)[6] & 0x38) != 0x38 || (*(s32 *)((char *)owner + 0x122C) & 0x400)) {
+        if ((((Material *)material)->flags & 0x38) != 0x38 || (((func_8026CBA4_S1 *)(owner))->unk122C & 0x400)) {
             Gfx *cmd;
             void *list = func_8028FD94(part, 1);
 

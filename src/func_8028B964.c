@@ -3,6 +3,19 @@
 extern char *func_8028FD94(s32 *, s32);
 extern void func_8028FDD8(s32 arg0, s32 arg1);
 
+typedef struct func_8028B964_S1 func_8028B964_S1;
+typedef struct func_8028B964_S2 func_8028B964_S2;
+struct func_8028B964_S1 {
+    char pad0[0x19E];
+    u16 unk19E;
+};
+struct func_8028B964_S2 {
+    char pad0[0x80];
+    void* unk80;
+    char pad80[0x1B40C - 0x80 - sizeof(void*)];
+    s32 unk1B40C;
+};
+
 s32 func_8028B964(void *arg0, void *arg1) {
     s32 bitIndex;
     void *field80;
@@ -11,9 +24,9 @@ s32 func_8028B964(void *arg0, void *arg1) {
     u8 *temp_a0;
     s32 mask;
 
-    bitIndex = *(u16 *) ((char *) arg1 + 0x19E);
-    field80 = *(void **) ((char *) arg0 + 0x80);
-    field1B40C = *(s32 *) ((char *) arg0 + 0x1B40C);
+    bitIndex = ((func_8028B964_S1 *)(arg1))->unk19E;
+    field80 = ((func_8028B964_S2 *)(arg0))->unk80;
+    field1B40C = ((func_8028B964_S2 *)(arg0))->unk1B40C;
     temp_v0 = func_8028FD94(func_8028FD94(func_8028FD94(field80, 0), field1B40C), 1);
     func_8028FD94(temp_v0, 0);
     func_8028FDD8((s32) temp_v0, 1);

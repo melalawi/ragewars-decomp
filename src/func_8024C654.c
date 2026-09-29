@@ -10,6 +10,12 @@ extern char D_800CFB04[];
 extern void *D_800D0680[];
 extern ObjectList D_80145040;
 
+typedef struct func_8024C654_S1 func_8024C654_S1;
+struct func_8024C654_S1 {
+    char pad0[0x18];
+    s32* unk18;
+};
+
 void *func_8024C654(char *arg0)
 {
     s32 type;
@@ -19,7 +25,7 @@ void *func_8024C654(char *arg0)
     char *object;
     ObjectList *list;
 
-    type = **(s32 **)(arg0 + 0x18);
+    type = *((func_8024C654_S1 *)(arg0))->unk18;
     if ((unsigned int)type >= 15) {
         return 0;
     }

@@ -12,6 +12,12 @@ struct Node {
 extern s32 func_802C2260(s32);
 extern void func_802B7550(void *, void * *);
 
+typedef struct func_802B4E3C_S1 func_802B4E3C_S1;
+struct func_802B4E3C_S1 {
+    char pad0[0x8];
+    Node* unk8;
+};
+
 void func_802B4E3C(void *arg0, Node *arg1) {
     s32 saved;
     Node **link;
@@ -20,7 +26,7 @@ void func_802B4E3C(void *arg0, Node *arg1) {
     s32 node_value;
 
     saved = func_802C2260(1);
-    link = (Node **)((char *)arg0 + 8);
+    link = &((func_802B4E3C_S1 *)(arg0))->unk8;
     if (link != 0) {
 loop:
         node = *link;

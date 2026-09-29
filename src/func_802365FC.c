@@ -27,9 +27,21 @@ static inline f32 approach(f32 value, f32 target, f32 step) {
     return value;
 }
 
+typedef struct func_802365FC_S1 func_802365FC_S1;
+struct func_802365FC_S1 {
+    char pad0[0x29C];
+    f32 unk29C;
+    char pad29C[0x2A0 - 0x29C - sizeof(f32)];
+    f32 unk2A0;
+    char pad2A0[0x2A4 - 0x2A0 - sizeof(f32)];
+    f32 unk2A4;
+    char pad2A4[0x2A8 - 0x2A4 - sizeof(f32)];
+    f32 unk2A8;
+};
+
 void func_802365FC(char *camera, f32 a, f32 b, f32 c, f32 d) {
-    *(f32 *)(camera + 0x29C) = approach(*(f32 *)(camera + 0x29C), a, 16.0f);
-    *(f32 *)(camera + 0x2A0) = approach(*(f32 *)(camera + 0x2A0), b, 16.0f);
-    *(f32 *)(camera + 0x2A4) = approach(*(f32 *)(camera + 0x2A4), c, 16.0f);
-    *(f32 *)(camera + 0x2A8) = approach(*(f32 *)(camera + 0x2A8), d, 16.0f);
+    ((func_802365FC_S1 *)(camera))->unk29C = approach(((func_802365FC_S1 *)(camera))->unk29C, a, 16.0f);
+    ((func_802365FC_S1 *)(camera))->unk2A0 = approach(((func_802365FC_S1 *)(camera))->unk2A0, b, 16.0f);
+    ((func_802365FC_S1 *)(camera))->unk2A4 = approach(((func_802365FC_S1 *)(camera))->unk2A4, c, 16.0f);
+    ((func_802365FC_S1 *)(camera))->unk2A8 = approach(((func_802365FC_S1 *)(camera))->unk2A8, d, 16.0f);
 }

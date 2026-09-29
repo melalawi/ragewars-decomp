@@ -19,6 +19,19 @@ extern f32 func_80274640(f32);
 extern f32 func_802BC200(f32);
 extern float fabsf(float);
 
+typedef struct func_80259B30_S1 func_80259B30_S1;
+typedef struct func_80259B30_S2 func_80259B30_S2;
+struct func_80259B30_S1 {
+    char pad0[0x128];
+    Vec3 unk128;
+    char pad128[0x160 - 0x128 - sizeof(Vec3)];
+    char unk160;
+};
+struct func_80259B30_S2 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 s16 func_80259B30(Vec3 *position, void *listener) {
     Vec3 forward;
     Vec3 offset;
@@ -28,14 +41,14 @@ s16 func_80259B30(Vec3 *position, void *listener) {
     if (listener == 0) {
         return 0x40;
     }
-    func_80271FD8(&offset, (Vec3 *)((char *)listener + 0x128), position);
+    func_80271FD8(&offset, &((func_80259B30_S1 *)(listener))->unk128, position);
     if (offset.x * offset.x + offset.z * offset.z < D_800C8FF0) {
         return 0x40;
     }
-    func_80272C3C((char *)listener + 0x160, &offset, &local);
+    func_80272C3C(&((func_80259B30_S1 *)(listener))->unk160, &offset, &local);
     local.y = 0.0f;
     forward.x = forward.y = local.y;
-    forward.z = *(f32 *)((char *)&D_800C8FF0 + 4);
+    forward.z = ((func_80259B30_S2 *)(&D_800C8FF0))->unk4;
     func_802720EC(&local);
     pan = func_802BC200(func_80274640(local.x * forward.x + local.y * forward.y + local.z * forward.z));
     if (local.x == 0.0f) {

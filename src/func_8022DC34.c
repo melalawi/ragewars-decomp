@@ -11,6 +11,21 @@ extern f32 D_800C7EE0;
 extern s32 func_802227D0(void *, void *, s32);
 extern void func_802748E0(f32 *, f32, f32);
 
+typedef struct func_8022DC34_S1 func_8022DC34_S1;
+typedef struct func_8022DC34_S2 func_8022DC34_S2;
+struct func_8022DC34_S1 {
+    char pad0[0x38];
+    s32 unk38;
+};
+struct func_8022DC34_S2 {
+    char pad0[0x650];
+    s16 unk650;
+    char pad650[0x718 - 0x650 - sizeof(s16)];
+    f32 unk718;
+    char pad718[0x71C - 0x718 - sizeof(f32)];
+    s32 unk71C;
+};
+
 void func_8022DC34(void *arg0, void *arg1, s32 unused, s32 *flags) {
     s32 held;
     s32 crouch;
@@ -21,11 +36,11 @@ void func_8022DC34(void *arg0, void *arg1, s32 unused, s32 *flags) {
     f32 moved;
     f32 lo;
 
-    held = *(s32 *) ((char *) arg1 + 0x38) & 0xC0000;
+    held = ((func_8022DC34_S1 *)(arg1))->unk38 & 0xC0000;
     crouch = held != 0;
-    if (*(s32 *) ((char *) arg0 + 0x71C) != 0) {
+    if (((func_8022DC34_S2 *)(arg0))->unk71C != 0) {
         crouch = 1;
-        if (*(s16 *) ((char *) arg0 + 0x650) != 4) {
+        if (((func_8022DC34_S2 *)(arg0))->unk650 != 4) {
             func_802227D0(arg0, arg1, 4);
         }
     }
@@ -33,10 +48,10 @@ void func_8022DC34(void *arg0, void *arg1, s32 unused, s32 *flags) {
     if (crouch) {
         target = D_800C7ED0[0];
     }
-    depth = *(f32 *) ((char *) arg0 + 0x718);
+    depth = ((func_8022DC34_S2 *)(arg0))->unk718;
     func_802748E0(&depth, target, 0.25f);
     do {
-        step = depth - *(f32 *) ((char *) arg0 + 0x718);
+        step = depth - ((func_8022DC34_S2 *)(arg0))->unk718;
         if (step < 0.0f) {
             if (-step < D_800C7ED0[1]) {
                 goto still;
@@ -45,11 +60,11 @@ void func_8022DC34(void *arg0, void *arg1, s32 unused, s32 *flags) {
         still:
             step = 0.0f;
         }
-        moved = *(f32 *) ((char *) arg0 + 0x718) + step;
+        moved = ((func_8022DC34_S2 *)(arg0))->unk718 + step;
         clearance = D_800C7ED8[1] - moved;
         lo = D_800C7EE0;
     } while (0);
-    *(f32 *) ((char *) arg0 + 0x718) = moved;
+    ((func_8022DC34_S2 *)(arg0))->unk718 = moved;
     if (lo <= clearance && clearance <= (&D_800C7EE0)[1]) {
         *flags |= 0x80;
     } else {

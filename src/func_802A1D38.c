@@ -21,6 +21,12 @@ extern s32 D_2A21F4;
 extern s32 D_2A2220;
 extern s32 D_2A2230;
 
+typedef struct func_802A1D38_S1 func_802A1D38_S1;
+struct func_802A1D38_S1 {
+    char pad0[0x8];
+    s32 unk8;
+};
+
 void func_802A1D38(void) {
     s32 v0;
     s32 one;
@@ -42,7 +48,7 @@ void func_802A1D38(void) {
         D_800D2BB0 = v0;
         func_8025631C(&D_801051B8, 0x200000, D_800D2BB8, v0);
         D_800D2BBC = 0;
-        *(s32 *) ((char *) p + 8) = one;
+        ((func_802A1D38_S1 *)(p))->unk8 = one;
     }
     func_802A2050((s32) &D_2A2158, (s32) &D_2A2188, (s32) &D_2A2198, (s32) &D_2A21EC, (s32) &D_2A21F4, (s32) &D_2A2220, (s32) &D_2A2230);
 }

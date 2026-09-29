@@ -61,6 +61,12 @@ extern void *func_80419ED4(s32, s32);
 extern s32 func_8029A9F4(void);
 extern void func_8040C4A8(s32);
 
+typedef struct func_80423C20_S1 func_80423C20_S1;
+struct func_80423C20_S1 {
+    char pad0[0xA8];
+    s32 unkA8;
+};
+
 s32 func_80423C20(void *node) {
     u8 *game;
     u8 *slots;
@@ -80,7 +86,7 @@ s32 func_80423C20(void *node) {
     func_8042B1A0(-1);
     func_8042EB80(0, 0);
     game = D_801468A0;
-    *(s32 *)(game + 0xA8) = 0;
+    ((func_80423C20_S1 *)(game))->unkA8 = 0;
     func_802A33F8(0.0f);
     slots = game - 0x508;
     game[-0x5BB] = 1;

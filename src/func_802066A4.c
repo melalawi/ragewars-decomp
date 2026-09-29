@@ -5,13 +5,35 @@ extern s32 func_80285F28(void *, void *);
 extern s32 D_8011FE88;
 extern f32 D_800C6BD0;
 
+typedef struct func_802066A4_S1 func_802066A4_S1;
+typedef struct func_802066A4_S2 func_802066A4_S2;
+typedef struct func_802066A4_S3 func_802066A4_S3;
+struct func_802066A4_S1 {
+    char pad0[0x124];
+    s32 unk124;
+    char pad124[0x128 - 0x124 - sizeof(s32)];
+    f32 unk128;
+    char pad128[0x12C - 0x128 - sizeof(f32)];
+    f32 unk12C;
+};
+struct func_802066A4_S2 {
+    char pad0[0x18];
+    void* unk18;
+    char pad18[0x100 - 0x18 - sizeof(void*)];
+    s32 unk100;
+};
+struct func_802066A4_S3 {
+    char pad0[0x18];
+    s32 unk18;
+};
+
 void func_802066A4(void *arg0, void *arg1) {
-    *(s32 *)((char *)arg1 + 0x124) = *(s32 *)((char *)*(void **)((char *)arg0 + 0x18) + 0x18);
+    ((func_802066A4_S1 *)(arg1))->unk124 = ((func_802066A4_S3 *)(((func_802066A4_S2 *)(arg0))->unk18))->unk18;
     func_80214178(arg0, arg1, 0);
-    *(f32 *)((char *)arg1 + 0x128) = D_800C6BD0;
-    *(f32 *)((char *)arg1 + 0x12C) = D_800C6BD0;
+    ((func_802066A4_S1 *)(arg1))->unk128 = D_800C6BD0;
+    ((func_802066A4_S1 *)(arg1))->unk12C = D_800C6BD0;
     if (func_80285F28(&D_8011FE88, arg0) == 1) {
-        *(s32 *)((char *)arg0 + 0x100) &= ~0x2000;
-        *(s32 *)((char *)arg0 + 0x100) &= ~0x100;
+        ((func_802066A4_S2 *)(arg0))->unk100 &= ~0x2000;
+        ((func_802066A4_S2 *)(arg0))->unk100 &= ~0x100;
     }
 }

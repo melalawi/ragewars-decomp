@@ -8,12 +8,27 @@
 extern f32 D_800C7948[];
 extern s32 func_802227D0(void *, void *, s32);
 
+typedef struct func_80222E80_S1 func_80222E80_S1;
+typedef struct func_80222E80_S2 func_80222E80_S2;
+struct func_80222E80_S1 {
+    char pad0[0x20];
+    f32 unk20;
+    char pad20[0x38 - 0x20 - sizeof(f32)];
+    s32 unk38;
+};
+struct func_80222E80_S2 {
+    char pad0[0x38];
+    s32 unk38;
+    char pad38[0x650 - 0x38 - sizeof(s32)];
+    s16 unk650;
+};
+
 s32 func_80222E80(void *arg0, void *arg1) {
     s16 state;
     s32 hit;
 
-    if (*(s32 *) ((char *) arg1 + 0x38) & 0x1000) {
-        state = *(s16 *) ((char *) arg0 + 0x650);
+    if (((func_80222E80_S1 *)(arg1))->unk38 & 0x1000) {
+        state = ((func_80222E80_S2 *)(arg0))->unk650;
         if (state != 0xB) {
             if (state != 0xC) {
                 if (state != 9) {
@@ -25,7 +40,7 @@ s32 func_80222E80(void *arg0, void *arg1) {
                                 hit = 0;
                             }
                             if (hit) {
-                                *(s32 *) ((char *) arg0 + 0x38) |= 0x1000;
+                                ((func_80222E80_S2 *)(arg0))->unk38 |= 0x1000;
                                 return 0;
                             }
                             func_802227D0(arg0, arg1, 0xC);
@@ -36,7 +51,7 @@ s32 func_80222E80(void *arg0, void *arg1) {
             }
         }
     }
-    state = *(s16 *) ((char *) arg0 + 0x650);
+    state = ((func_80222E80_S2 *)(arg0))->unk650;
     if (state == 0x15 || state == 0x13 || state == 0x14) {
         hit = 1;
     } else {
@@ -45,16 +60,16 @@ s32 func_80222E80(void *arg0, void *arg1) {
     if (hit) {
         return 0;
     }
-    if ((*(s32 *) ((char *) arg1 + 0x38) & 0x2003) != 0x2000) {
+    if ((((func_80222E80_S1 *)(arg1))->unk38 & 0x2003) != 0x2000) {
         return 0;
     }
-    if (!(*(f32 *) ((char *) arg1 + 0x20) <= 0.0f)) {
+    if (!(((func_80222E80_S1 *)(arg1))->unk20 <= 0.0f)) {
         return 0;
     }
-    if (!(D_800C7948[1] < *(f32 *) ((char *) arg1 + 0x20))) {
+    if (!(D_800C7948[1] < ((func_80222E80_S1 *)(arg1))->unk20)) {
         return 0;
     }
-    state = *(s16 *) ((char *) arg0 + 0x650);
+    state = ((func_80222E80_S2 *)(arg0))->unk650;
     if (state == 0xB) {
         return 0;
     }

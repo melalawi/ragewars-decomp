@@ -39,6 +39,14 @@ extern Type D_8011F448;
 extern f32 D_800CA490[];
 extern void func_8024F490(Entity *);
 extern void func_80243A80(Entity *, f32, f32, f32, void *);
+typedef struct func_80290404_S1 func_80290404_S1;
+struct func_80290404_S1 {
+    char pad0[0x18C];
+    f32 unk18C;
+    char pad18C[0x190 - 0x18C - sizeof(f32)];
+    f32 unk190;
+};
+
 void func_80290404(Entity *arg0)
 {
   void *var_s1;
@@ -74,7 +82,7 @@ void func_80290404(Entity *arg0)
   {
     f32 z = arg0->unk10 + radius;
     f32 y = arg0->unkC + radius;
-    *((f32 *) (((char *) arg0) + 0x18c)) = y;
-    *((f32 *) (((char *) arg0) + 0x190)) = z;
+    ((func_80290404_S1 *)(arg0))->unk18C = y;
+    ((func_80290404_S1 *)(arg0))->unk190 = z;
   }
 }

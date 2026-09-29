@@ -17,6 +17,16 @@ extern f32 func_802BC200(f32 angle);
 extern f32 func_802BB630(f32 angle);
 extern Vec3 *func_80275C38(Vec3 *out, Node75 *node);
 
+typedef struct func_8024BCF8_S1 func_8024BCF8_S1;
+struct func_8024BCF8_S1 {
+    char pad0[0xC];
+    f32 unkC;
+    char padC[0x14 - 0xC - sizeof(f32)];
+    Node75* unk14;
+    char pad14[0x6C - 0x14 - sizeof(Node75*)];
+    f32 unk6C;
+};
+
 s32 func_8024BCF8(void *arg0) {
     Vec3 direction;
     Node75 *node;
@@ -27,7 +37,7 @@ s32 func_8024BCF8(void *arg0) {
     f32 sine;
     f32 cosine;
 
-    node = *(Node75 **)((char *)arg0 + 0x14);
+    node = ((func_8024BCF8_S1 *)(arg0))->unk14;
     if (node != 0) {
         upper = node->cur->y;
         if (node->prev->y <= upper) {
@@ -49,14 +59,14 @@ s32 func_8024BCF8(void *arg0) {
         } else {
             lowerNext = lower;
         }
-        if (upperNext < *(f32 *)((char *)arg0 + 0xC)) {
+        if (upperNext < ((func_8024BCF8_S1 *)(arg0))->unkC) {
             return 0;
         }
-        if (*(f32 *)((char *)arg0 + 0xC) < lowerNext) {
+        if (((func_8024BCF8_S1 *)(arg0))->unkC < lowerNext) {
             return 0;
         }
-        sine = func_802BC200(*(f32 *)((char *)arg0 + 0x6C));
-        cosine = func_802BB630(*(f32 *)((char *)arg0 + 0x6C));
+        sine = func_802BC200(((func_8024BCF8_S1 *)(arg0))->unk6C);
+        cosine = func_802BB630(((func_8024BCF8_S1 *)(arg0))->unk6C);
         func_80275C38(&direction, node);
         if (direction.x * -sine + direction.z * -cosine < 0.0f) {
             return 1;

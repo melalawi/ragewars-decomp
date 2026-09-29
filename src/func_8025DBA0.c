@@ -6,6 +6,31 @@ extern s32 func_80265508(void *arg0, s32 arg1, s32 arg2);
 extern char *func_8028FD94(s32 *, s32);
 extern f32 func_802B2350(s32 arg0);
 
+typedef struct func_8025DBA0_S1 func_8025DBA0_S1;
+typedef struct func_8025DBA0_S2 func_8025DBA0_S2;
+typedef struct func_8025DBA0_S3 func_8025DBA0_S3;
+typedef struct func_8025DBA0_S4 func_8025DBA0_S4;
+struct func_8025DBA0_S1 {
+    char pad0[0x2B60];
+    void* unk2B60;
+    char pad2B60[0x2B64 - 0x2B60 - sizeof(void*)];
+    s32 unk2B64;
+};
+struct func_8025DBA0_S2 {
+    char pad0[0x2B50];
+    void* unk2B50;
+};
+struct func_8025DBA0_S3 {
+    char pad0[0x24];
+    s32 unk24;
+    char pad24[0x30 - 0x24 - sizeof(s32)];
+    f32 unk30;
+};
+struct func_8025DBA0_S4 {
+    char pad0[0x4];
+    u16 unk4;
+};
+
 void *func_8025DBA0(void *arg0, s32 arg1) {
     void *root;
     s32 index;
@@ -14,17 +39,17 @@ void *func_8025DBA0(void *arg0, s32 arg1) {
     f32 value;
 
     root = *(void **)arg0;
-    index = func_80265508(*(void **)((char *)root + 0x2B60),
-                          *(s32 *)((char *)root + 0x2B64), arg1);
+    index = func_80265508(((func_8025DBA0_S1 *)(root))->unk2B60,
+                          ((func_8025DBA0_S1 *)(root))->unk2B64, arg1);
     if (index != -1) {
         index *= 2;
-        first = func_8028FD94(*(void **)((char *)*(void **)arg0 + 0x2B50), index | 1);
-        second = func_8028FD94(*(void **)((char *)*(void **)arg0 + 0x2B50), index);
-        *(s32 *)((char *)arg0 + 0x24) = *(s32 *)second;
-        value = func_802B2350(*(u16 *)((char *)second + 4));
-        *(f32 *)((char *)arg0 + 0x30) = value;
+        first = func_8028FD94(((func_8025DBA0_S2 *)(*(void **)arg0))->unk2B50, index | 1);
+        second = func_8028FD94(((func_8025DBA0_S2 *)(*(void **)arg0))->unk2B50, index);
+        ((func_8025DBA0_S3 *)(arg0))->unk24 = *(s32 *)second;
+        value = func_802B2350(((func_8025DBA0_S4 *)(second))->unk4);
+        ((func_8025DBA0_S3 *)(arg0))->unk30 = value;
         if (value <= 0.0f) {
-            *(f32 *)((char *)arg0 + 0x30) = D_800C910C;
+            ((func_8025DBA0_S3 *)(arg0))->unk30 = D_800C910C;
         }
         return first;
     }

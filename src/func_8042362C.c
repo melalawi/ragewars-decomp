@@ -32,6 +32,12 @@ extern s32 func_8041A600(s32, s32, s32);
 extern void func_8041A76C(s32, s32);
 extern void func_802A338C(void);
 
+typedef struct func_8042362C_S1 func_8042362C_S1;
+struct func_8042362C_S1 {
+    char pad0[0x10];
+    s32 unk10;
+};
+
 s32 func_8042362C(void) {
     u8 *settings;
     s32 list;
@@ -63,7 +69,7 @@ s32 func_8042362C(void) {
     D_800E4514->slider = slider;
     do {
     } while (0);
-    func_8041A76C(slider, *(s32 *)(settings + 0x10));
+    func_8041A76C(slider, ((func_8042362C_S1 *)(settings))->unk10);
     func_8041B190(0x1C3);
     func_8041B190(0x1C4);
     D_800E4514->state = 0;

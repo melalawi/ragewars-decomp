@@ -14,6 +14,12 @@ typedef struct
   void *f30;
   void **f34;
 } Block;
+typedef struct func_8023C77C_S1 func_8023C77C_S1;
+struct func_8023C77C_S1 {
+    char pad0[0xC];
+    void** unkC;
+};
+
 s32 func_8023C77C(s32 arg0, s32 arg1_unused, s32 arg2)
 {
   char sp10[0x18];
@@ -39,7 +45,7 @@ s32 func_8023C77C(s32 arg0, s32 arg1_unused, s32 arg2)
     temp_v0 = func_802533DC(0, new_var2 + rounded, 3, &D_800C86F0);
     temp_v1 = *temp_v0;
     blk.f30 = temp_v1;
-    *((void ***) (((char *) temp_v1) + 0xC)) = temp_v0;
+    ((func_8023C77C_S1 *)(temp_v1))->unkC = temp_v0;
   }
   *((s32 *) (((char *) blk.f30) + 8)) = arg2;
   func_802C0510(&D_80103254, &blk.f28, 1);

@@ -10,27 +10,51 @@ extern s32 func_802301E4(void *, void *);
 
 extern f32 D_800C8144;
 
+typedef struct func_8023333C_S1 func_8023333C_S1;
+typedef struct func_8023333C_S2 func_8023333C_S2;
+typedef struct func_8023333C_S3 func_8023333C_S3;
+struct func_8023333C_S1 {
+    char pad0[0x104];
+    f32 unk104;
+    char pad104[0x1D8 - 0x104 - sizeof(f32)];
+    void* unk1D8;
+};
+struct func_8023333C_S2 {
+    char pad0[0x13C];
+    s32 unk13C;
+};
+struct func_8023333C_S3 {
+    char pad0[0x5E4];
+    s32 unk5E4;
+    char pad5E4[0x62E - 0x5E4 - sizeof(s32)];
+    s16 unk62E;
+    char pad62E[0x6AC - 0x62E - sizeof(s16)];
+    s32 unk6AC;
+    char pad6AC[0x770 - 0x6AC - sizeof(s32)];
+    s16 unk770;
+};
+
 void func_8023333C(void *arg0, void *arg1) {
     void *actor;
 
-    actor = *(void **)((char *)arg0 + 0x1D8);
-    *(s32 *)((char *)arg1 + 0x13C) = 2;
-    if (func_80222A80(actor, *(s16 *)((char *)actor + 0x62E)) == 0) {
-        *(s16 *)((char *)actor + 0x770) = func_8022F95C(actor);
+    actor = ((func_8023333C_S1 *)(arg0))->unk1D8;
+    ((func_8023333C_S2 *)(arg1))->unk13C = 2;
+    if (func_80222A80(actor, ((func_8023333C_S3 *)(actor))->unk62E) == 0) {
+        ((func_8023333C_S3 *)(actor))->unk770 = func_8022F95C(actor);
         return;
     }
 
-    if (*(f32 *)((char *)arg0 + 0x104) >= D_800C8144) {
+    if (((func_8023333C_S1 *)(arg0))->unk104 >= D_800C8144) {
         if (func_8022B174(actor) == 0) {
             func_8022B974(actor);
         }
     }
 
-    if (!((*(s32 *)((char *)actor + 0x6AC) & 0x4000) &&
-          (*(s32 *)((char *)actor + 0x5E4) != 0))) {
+    if (!((((func_8023333C_S3 *)(actor))->unk6AC & 0x4000) &&
+          (((func_8023333C_S3 *)(actor))->unk5E4 != 0))) {
         func_80214178(arg0, arg1, 2);
         func_8022B9B4(actor);
-        *(s32 *)((char *)arg1 + 0x13C) = 1;
+        ((func_8023333C_S2 *)(arg1))->unk13C = 1;
     }
 
     if (func_802301E4(arg0, arg1) != 0) {

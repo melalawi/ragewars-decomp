@@ -47,6 +47,23 @@ typedef struct {
 
 extern void *func_802C2490(void *destination, const void *source, int count);
 
+typedef struct func_802597A4_S1 func_802597A4_S1;
+typedef struct func_802597A4_S2 func_802597A4_S2;
+struct func_802597A4_S1 {
+    char pad0[0x8];
+    char unk8;
+};
+struct func_802597A4_S2 {
+    char pad0[0x2A84];
+    s32 unk2A84;
+    char pad2A84[0x2A88 - 0x2A84 - sizeof(s32)];
+    s32 unk2A88;
+    char pad2A88[0x2AB4 - 0x2A88 - sizeof(s32)];
+    s16 unk2AB4;
+    char pad2AB4[0x2AB6 - 0x2AB4 - sizeof(s16)];
+    s16 unk2AB6;
+};
+
 void func_802597A4(Manager *manager, s32 index, s32 owner, Vec3 *position) {
     Entry *entry;
     Node *node;
@@ -63,7 +80,7 @@ void func_802597A4(Manager *manager, s32 index, s32 owner, Vec3 *position) {
         first->prev->next = first->next;
         first->next->prev = first->prev;
         node = first;
-        func_802C2490((char *)node + 8, entry, 0xCC);
+        func_802C2490(&((func_802597A4_S1 *)(node))->unk8, entry, 0xCC);
         node->owner = owner;
         node->position.x = position->x;
         node->position.y = position->y;
@@ -82,8 +99,8 @@ void func_802597A4(Manager *manager, s32 index, s32 owner, Vec3 *position) {
         at->prev->next = node;
         at->prev = node;
     }
-    *(s16 *)((char *)manager->scene + 0x2AB4) = 0;
-    *(s16 *)((char *)manager->scene + 0x2AB6) = -1;
-    *(s32 *)((char *)manager->scene + 0x2A88) = -1;
-    *(s32 *)((char *)manager->scene + 0x2A84) = -1;
+    ((func_802597A4_S2 *)(manager->scene))->unk2AB4 = 0;
+    ((func_802597A4_S2 *)(manager->scene))->unk2AB6 = -1;
+    ((func_802597A4_S2 *)(manager->scene))->unk2A88 = -1;
+    ((func_802597A4_S2 *)(manager->scene))->unk2A84 = -1;
 }

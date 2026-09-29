@@ -20,8 +20,11 @@ struct Game {
     s32 selection;
 };
 
+typedef struct { struct Screen * unk0; } func_80422C20_G1;
 extern struct Screen *D_800E4518;
+typedef struct { struct Game * unk0; } func_80422C20_G2;
 extern struct Game *D_800E2830;
+typedef struct { s32 unk0; } func_80422C20_G3;
 extern s32 D_8015402C;
 extern char D_80145088[];
 extern char D_8011FE88[];
@@ -43,12 +46,21 @@ extern void func_8044A600(void *, s32, s32);
 extern void func_80286A78(void *, s32, s32);
 extern void func_8042E080(void);
 
+typedef struct func_80422C20_S1 func_80422C20_S1;
+struct func_80422C20_S1 {
+    char pad0[0x1240];
+    u8 unk1240;
+    char pad1240[0x180C - 0x1240 - sizeof(u8)];
+    s32 unk180C;
+};
+
 s32 func_80422C20(void *item, s32 arg1, s32 event) {
     s32 state;
     s32 humans;
     s32 i;
     u8 *settings;
     u8 *player;
+    s32 *pause;
 
     if (event == 1) {
         state = func_8043C4E8(D_800E4518);
@@ -76,11 +88,12 @@ s32 func_80422C20(void *item, s32 arg1, s32 event) {
             } else {
                 func_8025E2F4(D_800E4518->arena);
             }
-            *(s32 *)(D_80145088 + 0x180C) = 0;
+            pause = &((func_80422C20_S1 *)D_80145088)->unk180C;
+            *pause = 0;
             if (D_800E4518->mode == -1) {
                 humans = 0;
                 i = 0;
-                player = (u8 *)D_80145088 + 0x1240;
+                player = (u8 *)pause - 0x5CC;
                 do {
                     if (player[i * 0x96 + 0x161] == 0 && player[i * 0x96 + 0x148] == 1) {
                         humans++;
@@ -96,8 +109,8 @@ s32 func_80422C20(void *item, s32 arg1, s32 event) {
                 func_802A3304();
                 return 0;
             }
-            func_8044AFC0(D_80145088, 0);
-            func_8044A600(D_80145088 - 0x48, 0, 0);
+            func_8044AFC0((u8 *)pause - 0x180C, 0);
+            func_8044A600((u8 *)pause - 0x1854, 0, 0);
             func_80286A78(D_8011FE88, 0, 0);
             func_8042E080();
         }

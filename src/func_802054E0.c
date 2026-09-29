@@ -15,6 +15,12 @@ extern s32 func_8025DE74(s16, s32, s32, s32, s32, s32);
 extern void func_80216288(void *, s32, CTriple, s32);
 extern s32 func_802170A0(void *, void *, s32, s32, s32);
 
+typedef struct func_802054E0_S1 func_802054E0_S1;
+struct func_802054E0_S1 {
+    char pad0[0x8];
+    CTriple unk8;
+};
+
 void func_802054E0(void *arg0, void *arg1) {
     void *temp_s1;
 
@@ -35,7 +41,7 @@ void func_802054E0(void *arg0, void *arg1) {
         }
         if (M2C_FIELD(temp_s1, s32 *, 0x30) != -1) {
             func_80216288(arg0, M2C_FIELD(temp_s1, s32 *, 0x30),
-                          *(CTriple *)((char *)arg0 + 8), 0);
+                          ((func_802054E0_S1 *)(arg0))->unk8, 0);
         }
         func_802170A0(arg0, arg1, 8,
                       M2C_FIELD(temp_s1, s32 *, 0x38),

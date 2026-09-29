@@ -12,12 +12,37 @@ typedef struct {
 
 extern char D_8011FE88;
 extern f32 D_800C8668;
-extern f32 D_800C8670;
-extern f32 D_800C8674;
-extern f32 D_800C8678;
-extern f32 D_800C867C;
+typedef struct { f32 first; f32 second; } D_800C8668_Pair;
+typedef struct { f32 unk0; } func_80239E94_G2;
+extern func_80239E94_G2 D_800C8670;
+typedef struct { f32 unk0; } func_80239E94_G3;
+extern func_80239E94_G3 D_800C8674;
+typedef struct { f32 unk0; } func_80239E94_G4;
+extern func_80239E94_G4 D_800C8678;
+typedef struct { f32 unk0; } func_80239E94_G5;
+extern func_80239E94_G5 D_800C867C;
 extern void *func_8028B2D4(char *, s32);
 extern f32 func_80274B00(f32, f32);
+
+typedef struct func_80239E94_S1 func_80239E94_S1;
+typedef struct func_80239E94_S2 func_80239E94_S2;
+typedef struct func_80239E94_S3 func_80239E94_S3;
+struct func_80239E94_S1 {
+    char pad0[0x58];
+    s32 unk58;
+    char pad58[0xF4 - 0x58 - sizeof(s32)];
+    f32 unkF4;
+    char padF4[0xF8 - 0xF4 - sizeof(f32)];
+    f32 unkF8;
+};
+struct func_80239E94_S2 {
+    char pad0[0x44];
+    s32 unk44;
+};
+struct func_80239E94_S3 {
+    char pad0[0x4];
+    f32 unk4;
+};
 
 void func_80239E94(void *arg0, Vec3 *out) {
     char *o = (char *)arg0;
@@ -29,23 +54,23 @@ void func_80239E94(void *arg0, Vec3 *out) {
 
     targetY = 0.0f;
     targetX = targetY;
-    entry = func_8028B2D4(&D_8011FE88, *(s32 *)(o + 0x58));
+    entry = func_8028B2D4(&D_8011FE88, ((func_80239E94_S1 *)(o))->unk58);
     if (entry == 0) {
         out->x = targetY;
         out->y = targetY;
         out->z = targetY;
         return;
     }
-    if (*(s32 *)((char *)entry + 0x44) & 0x10000) {
+    if (((func_80239E94_S2 *)(entry))->unk44 & 0x10000) {
         targetX = D_800C8668;
-        targetY = *(f32 *)((char *)&D_800C8668 + 4);
+        targetY = ((D_800C8668_Pair *)&D_800C8668)->second;
     }
-    value = *(f32 *)(o + 0xF4) + (targetX - *(f32 *)(o + 0xF4)) * D_800C8670;
-    scale = D_800C8674;
-    *(f32 *)(o + 0xF4) = value;
-    *(f32 *)(o + 0xF8) += (targetY - *(f32 *)(o + 0xF8)) * D_800C8678;
-    out->x = func_80274B00(-*(f32 *)(o + 0xF4) * scale, *(f32 *)(o + 0xF4) * scale);
-    out->y = func_80274B00(0.0f, *(f32 *)(o + 0xF8) * D_800C867C);
-    value = -*(f32 *)(o + 0xF4) * scale;
-    out->z = func_80274B00(value, *(f32 *)(o + 0xF4) * scale);
+    value = ((func_80239E94_S1 *)(o))->unkF4 + (targetX - ((func_80239E94_S1 *)(o))->unkF4) * D_800C8670.unk0;
+    scale = D_800C8674.unk0;
+    ((func_80239E94_S1 *)(o))->unkF4 = value;
+    ((func_80239E94_S1 *)(o))->unkF8 += (targetY - ((func_80239E94_S1 *)(o))->unkF8) * D_800C8678.unk0;
+    out->x = func_80274B00(-((func_80239E94_S1 *)(o))->unkF4 * scale, ((func_80239E94_S1 *)(o))->unkF4 * scale);
+    out->y = func_80274B00(0.0f, ((func_80239E94_S1 *)(o))->unkF8 * D_800C867C.unk0);
+    value = -((func_80239E94_S1 *)(o))->unkF4 * scale;
+    out->z = func_80274B00(value, ((func_80239E94_S1 *)(o))->unkF4 * scale);
 }

@@ -17,6 +17,21 @@ extern char D_80103140;
 extern char D_80146398;
 extern s32 D_80154028;
 
+typedef struct func_8043847C_S1 func_8043847C_S1;
+typedef union func_8043847C_S1_U28 { char v0; u8 v1; } func_8043847C_S1_U28;
+typedef union func_8043847C_S1_U32 { char v0; u8 v1; } func_8043847C_S1_U32;
+typedef union func_8043847C_S1_U3C { char v0; u8 v1; } func_8043847C_S1_U3C;
+struct func_8043847C_S1 {
+    char pad0[0x28];
+    func_8043847C_S1_U28 unk28;
+    char pad28[0x32 - 0x28 - sizeof(func_8043847C_S1_U28)];
+    func_8043847C_S1_U32 unk32;
+    char pad32[0x3C - 0x32 - sizeof(func_8043847C_S1_U32)];
+    func_8043847C_S1_U3C unk3C;
+    char pad3C[0x46 - 0x3C - sizeof(func_8043847C_S1_U3C)];
+    char unk46;
+};
+
 void func_8043847C(void) {
     char *temp_s4;
     char *var_a1;
@@ -49,13 +64,13 @@ void func_8043847C(void) {
     func_8040E958(widget, 1);
     temp_s4 = &D_800E1F40 + 4;
     widget->unk10 = 0xAF;
-    func_802A1C08((char *)D_800E5830 + 0x28, temp_s4, temp_s2->unk4);
-    widget->unk38 = (void *) ((char *)D_800E5830 + 0x28);
+    func_802A1C08(&((func_8043847C_S1 *)(D_800E5830))->unk28.v0, temp_s4, temp_s2->unk4);
+    widget->unk38 = (void *)&((func_8043847C_S1 *)(D_800E5830))->unk28.v1;
     widget = func_8040ECB0(D_800E5830->unk20, 0x27D);
     func_8040E958(widget, 1);
     widget->unk10 = 0xAF;
-    func_802A1C08((char *)D_800E5830 + 0x32, temp_s4, temp_s2->unk2 + temp_s2->unk0);
-    widget->unk38 = (void *) ((char *)D_800E5830 + 0x32);
+    func_802A1C08(&((func_8043847C_S1 *)(D_800E5830))->unk32.v0, temp_s4, temp_s2->unk2 + temp_s2->unk0);
+    widget->unk38 = (void *)&((func_8043847C_S1 *)(D_800E5830))->unk32.v1;
     widget = func_8040ECB0(D_800E5830->unk20, 0x27E);
     func_8040E958(widget, 1);
     widget->unk10 = 0xAF;
@@ -71,18 +86,18 @@ void func_8043847C(void) {
         }
         var_a2 = temp_v0_7 / temp_a0;
     }
-    func_802A1C08((char *)D_800E5830 + 0x3C, &D_800E1F48, var_a2);
-    widget->unk38 = (void *) ((char *)D_800E5830 + 0x3C);
+    func_802A1C08(&((func_8043847C_S1 *)(D_800E5830))->unk3C.v0, &D_800E1F48, var_a2);
+    widget->unk38 = (void *)&((func_8043847C_S1 *)(D_800E5830))->unk3C.v1;
     widget = func_8040ECB0(D_800E5830->unk20, 0x27F);
     func_8040E958(widget, 1);
     widget->unk10 = 0xAF;
     last = widget;
     switch(D_80154028) {
-    case 0: func_802A1C08((char *)D_800E5830+0x46,temp_s4,temp_s2->unk8);break;
-    case 1: func_802A1C08((char *)D_800E5830+0x46,temp_s4,temp_s2->unk6);break;
-    default: func_802A1C08((char *)D_800E5830+0x46,&D_800E1F40+4,0);break;
+    case 0: func_802A1C08(&((func_8043847C_S1 *)(D_800E5830))->unk46,temp_s4,temp_s2->unk8);break;
+    case 1: func_802A1C08(&((func_8043847C_S1 *)(D_800E5830))->unk46,temp_s4,temp_s2->unk6);break;
+    default: func_802A1C08(&((func_8043847C_S1 *)(D_800E5830))->unk46,&D_800E1F40+4,0);break;
     }
-    last->unk38=(char *)D_800E5830+0x46;
+    last->unk38=&((func_8043847C_S1 *)(D_800E5830))->unk46;
     if (D_800E5830->unk98 != -1) {
         widget = func_8040ECB0(D_800E5830->unk20, 0x280);
         widget->unk10 = 0x96;

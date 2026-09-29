@@ -32,6 +32,17 @@ extern void func_80435190(s32);
 extern void func_8022F594(char *, s32);
 extern void func_8041A4B0(void *, s32);
 
+typedef struct func_80424128_S1 func_80424128_S1;
+typedef struct func_80424128_S2 func_80424128_S2;
+struct func_80424128_S1 {
+    char pad0[0xD0];
+    struct Status unkD0;
+};
+struct func_80424128_S2 {
+    char pad0[0xD0];
+    struct Status unkD0;
+};
+
 s32 func_80424128(void) {
     struct Status *status;
     u8 *settings;
@@ -45,7 +56,7 @@ s32 func_80424128(void) {
         break;
     case 0x49:
         settings = D_801462C8;
-        status = (struct Status *)(settings + 0xD0);
+        status = &((func_80424128_S1 *)(settings))->unkD0;
         D_800E4600->next = 7;
         settings[0xD] = 2;
         for (i = 0; i < 2; i++) {
@@ -57,7 +68,7 @@ s32 func_80424128(void) {
         }
         break;
     case 0x46:
-        status = (struct Status *)(D_801462C8 + 0xD0);
+        status = &((func_80424128_S2 *)(D_801462C8))->unkD0;
         status->joined = 1;
         status->slot = 0;
         func_8022EF20(D_80102B00);
@@ -75,7 +86,7 @@ s32 func_80424128(void) {
         D_800E4600->next = 0x10;
         break;
     case 0x48:
-        status = (struct Status *)(D_801462C8 + 0xD0);
+        status = &((func_80424128_S2 *)(D_801462C8))->unkD0;
         D_800E4600->next = 7;
         status->joined = 1;
         status->slot = 0;
@@ -88,7 +99,7 @@ s32 func_80424128(void) {
         D_801462C8[0xD] = 3;
         break;
     case 0x4A:
-        status = (struct Status *)(D_801462C8 + 0xD0);
+        status = &((func_80424128_S2 *)(D_801462C8))->unkD0;
         D_800E4600->next = 0xA;
         status->joined = 1;
         status->slot = 0;

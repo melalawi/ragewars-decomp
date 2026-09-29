@@ -8,7 +8,50 @@ typedef struct {
     s32 w[3];
 } Vec3Words;
 
-extern void *D_800E2830;
+typedef struct func_80244E48_S1 func_80244E48_S1;
+typedef struct func_80244E48_S2 func_80244E48_S2;
+typedef struct func_80244E48_S3 func_80244E48_S3;
+struct func_80244E48_S1 {
+    char pad0[0x40];
+    s32 unk40;
+    char pad40[0x50 - 0x40 - sizeof(s32)];
+    s32 unk50;
+    char pad50[0x54 - 0x50 - sizeof(s32)];
+    s32 unk54;
+    char pad54[0x5C - 0x54 - sizeof(s32)];
+    s32 unk5C;
+    char pad5C[0xD8 - 0x5C - sizeof(s32)];
+    s32 unkD8;
+    char padD8[0x108 - 0xD8 - sizeof(s32)];
+    s32 unk108;
+    char pad108[0x10C - 0x108 - sizeof(s32)];
+    s32 unk10C;
+    char pad10C[0x110 - 0x10C - sizeof(s32)];
+    s32 unk110;
+    char pad110[0x114 - 0x110 - sizeof(s32)];
+    s32 unk114;
+};
+struct func_80244E48_S2 {
+    char pad0[0x57C];
+    s32 unk57C;
+    char pad57C[0x580 - 0x57C - sizeof(s32)];
+    s32 unk580;
+    char pad580[0x590 - 0x580 - sizeof(s32)];
+    s32 unk590;
+};
+struct func_80244E48_S3 {
+    char pad0[0x29C];
+    f32 unk29C;
+    char pad29C[0x2A0 - 0x29C - sizeof(f32)];
+    f32 unk2A0;
+    char pad2A0[0x2A4 - 0x2A0 - sizeof(f32)];
+    f32 unk2A4;
+    char pad2A4[0x2A8 - 0x2A4 - sizeof(f32)];
+    f32 unk2A8;
+};
+
+typedef struct { func_80244E48_S1 * unk0; } func_80244E48_G1;
+extern func_80244E48_S1 *D_800E2830;
 typedef struct {
     void *lead;
     char pad4[0x24];
@@ -16,13 +59,17 @@ typedef struct {
 } Group;
 
 extern Group D_80145060;
-extern void *D_801450A8;
+typedef struct { func_80244E48_S3 * unk0; } func_80244E48_G2;
+extern struct { func_80244E48_S3 *unk0; } D_801450A8;
 extern char D_8010EC90;
 extern char D_8011FE88;
-extern s32 D_8013B294;
-extern s32 D_8013B2A4;
+typedef struct { s32 unk0; } func_80244E48_G3;
+extern func_80244E48_G3 D_8013B294;
+typedef struct { s32 unk0; } func_80244E48_G4;
+extern func_80244E48_G4 D_8013B2A4;
 extern char D_8013B2A8;
-extern s32 D_8013B2BC;
+typedef struct { s32 unk0; } func_80244E48_G5;
+extern func_80244E48_G5 D_8013B2BC;
 extern void func_8022E280(void *);
 extern void func_80239B54(void *);
 extern void func_80285D00(void *);
@@ -32,48 +79,50 @@ extern s32 func_8040332C(void);
 
 void func_80244E48(void) {
     Vec3Words origin;
+    func_80244E48_S3 *camera;
     void *player;
     Group *group;
     s32 target;
     s32 found;
     char *table;
 
-    target = *(s32 *)((char *)D_800E2830 + 0xD8);
-    if (*(s32 *)((char *)D_800E2830 + 0x40) != 0) {
+    target = D_800E2830->unkD8;
+    if (D_800E2830->unk40 != 0) {
         return;
     }
-    if (*(s32 *)((char *)D_800E2830 + 0x54) != 0) {
+    if (D_800E2830->unk54 != 0) {
         group = &D_80145060;
         player = group->lead;
         if (player != 0) {
             func_8022E280(player);
-            *(s32 *)((char *)player + 0x57C) = 0;
-            *(s32 *)((char *)player + 0x580) = 0;
-            *(s32 *)((char *)player + 0x590) = 0;
+            ((func_80244E48_S2 *)(player))->unk57C = 0;
+            ((func_80244E48_S2 *)(player))->unk580 = 0;
+            ((func_80244E48_S2 *)(player))->unk590 = 0;
         }
         func_80239B54(group->members);
         func_80285D00(&D_8010EC90);
     }
     if (target != -1) {
         table = &D_8011FE88;
-        if (D_8013B294 != target) {
+        if (D_8013B294.unk0 != target) {
             origin.w[0] = 0;
             origin.w[1] = 0;
             origin.w[2] = 0;
             found = func_8044E038(table, &origin, target, &D_8013B2A8);
-            D_8013B2BC = found;
-            D_8013B2A4 = found != 0;
+            D_8013B2BC.unk0 = found;
+            D_8013B2A4.unk0 = found != 0;
             func_80286A78(table, target, found != 0);
         }
     }
-    *(s32 *)((char *)D_800E2830 + 0x5C) = func_8040332C();
-    *(s32 *)((char *)D_800E2830 + 0x50) = 1;
-    *(s32 *)((char *)D_800E2830 + 0xD8) = -1;
-    *(s32 *)((char *)D_800E2830 + 0x40) = 1;
-    if (D_801450A8 != 0) {
-        *(f32 *)((char *)D_801450A8 + 0x29C) = *(s32 *)((char *)D_800E2830 + 0x108);
-        *(f32 *)((char *)D_801450A8 + 0x2A0) = *(s32 *)((char *)D_800E2830 + 0x10C);
-        *(f32 *)((char *)D_801450A8 + 0x2A4) = *(s32 *)((char *)D_800E2830 + 0x110);
-        *(f32 *)((char *)D_801450A8 + 0x2A8) = *(s32 *)((char *)D_800E2830 + 0x114);
+    D_800E2830->unk5C = func_8040332C();
+    D_800E2830->unk50 = 1;
+    D_800E2830->unkD8 = -1;
+    D_800E2830->unk40 = 1;
+    camera = D_801450A8.unk0;
+    if (camera != 0) {
+        camera->unk29C = D_800E2830->unk108;
+        camera->unk2A0 = D_800E2830->unk10C;
+        camera->unk2A4 = D_800E2830->unk110;
+        camera->unk2A8 = D_800E2830->unk114;
     }
 }

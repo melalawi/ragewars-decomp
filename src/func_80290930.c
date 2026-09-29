@@ -8,6 +8,16 @@ struct ListNode {
     ListNode *next;
 };
 
+typedef struct func_80290930_S1 func_80290930_S1;
+struct func_80290930_S1 {
+    char pad0[0x3C00];
+    ListNode* unk3C00;
+    char pad3C00[0x3C04 - 0x3C00 - sizeof(ListNode*)];
+    ListNode* unk3C04;
+    char pad3C04[0x3C08 - 0x3C04 - sizeof(ListNode*)];
+    ListNode* unk3C08;
+};
+
 /** Unlink an active node and return it to the container's free list. */
 void func_80290930(void *container, ListNode *node) {
     ListNode *free_node;
@@ -23,15 +33,15 @@ void func_80290930(void *container, ListNode *node) {
         if (node->next != 0) {
             node->next->previous = node->previous;
         }
-        if (*(ListNode **)((char *)container + 0x3C04) == node) {
-            *(ListNode **)((char *)container + 0x3C04) = node->next;
+        if (((func_80290930_S1 *)(container))->unk3C04 == node) {
+            ((func_80290930_S1 *)(container))->unk3C04 = node->next;
         }
-        if (*(ListNode **)((char *)container + 0x3C08) == node) {
-            *(ListNode **)((char *)container + 0x3C08) = node->previous;
+        if (((func_80290930_S1 *)(container))->unk3C08 == node) {
+            ((func_80290930_S1 *)(container))->unk3C08 = node->previous;
         }
-        free_node = *(ListNode **)((char *)container + 0x3C00);
+        free_node = ((func_80290930_S1 *)(container))->unk3C00;
         node->previous = 0;
         node->next = free_node;
-        *(ListNode **)((char *)container + 0x3C00) = node;
+        ((func_80290930_S1 *)(container))->unk3C00 = node;
     }
 }

@@ -16,6 +16,23 @@ extern int D_800D2634;
 extern void func_80272088(V3 *, V3 *, V3 *);
 extern void func_802720EC(V3 *);
 
+typedef struct func_80275120_S1 func_80275120_S1;
+typedef struct func_80275120_S2 func_80275120_S2;
+struct func_80275120_S1 {
+    float unk0;
+    char pad0[0x8 - 0x0 - sizeof(float)];
+    float unk8;
+    char pad8[0xC - 0x8 - sizeof(float)];
+    float unkC;
+};
+struct func_80275120_S2 {
+    float unk0;
+    char pad0[0x8 - 0x0 - sizeof(float)];
+    float unk8;
+    char pad8[0xC - 0x8 - sizeof(float)];
+    float unkC;
+};
+
 static inline V3 *cross_edges(V3 *out, Node75 *node) {
     V3 a;
     V3 b;
@@ -29,22 +46,22 @@ static inline V3 *cross_edges(V3 *out, Node75 *node) {
     } else if ((int)node != D_800D2630) {
         p = node->cur;
         q = node->prev;
-        a.x = *(float *)(p + 0) - *(float *)(q + 0);
+        a.x = ((func_80275120_S1 *)(p))->unk0 - ((func_80275120_S2 *)(q))->unk0;
         p = node->cur;
         q = node->prev;
-        a.y = *(float *)(p + 12) - *(float *)(q + 12);
+        a.y = ((func_80275120_S1 *)(p))->unkC - ((func_80275120_S2 *)(q))->unkC;
         p = node->cur;
         q = node->prev;
-        a.z = *(float *)(p + 8) - *(float *)(q + 8);
+        a.z = ((func_80275120_S1 *)(p))->unk8 - ((func_80275120_S2 *)(q))->unk8;
         p = node->next;
         q = node->cur;
-        b.x = *(float *)(p + 0) - *(float *)(q + 0);
+        b.x = ((func_80275120_S1 *)(p))->unk0 - ((func_80275120_S2 *)(q))->unk0;
         p = node->next;
         q = node->cur;
-        b.y = *(float *)(p + 12) - *(float *)(q + 12);
+        b.y = ((func_80275120_S1 *)(p))->unkC - ((func_80275120_S2 *)(q))->unkC;
         p = node->next;
         q = node->cur;
-        b.z = *(float *)(p + 8) - *(float *)(q + 8);
+        b.z = ((func_80275120_S1 *)(p))->unk8 - ((func_80275120_S2 *)(q))->unk8;
         func_80272088((V3 *)&D_80115DF0, &b, &a);
     }
     D_800D2630 = (int)node;

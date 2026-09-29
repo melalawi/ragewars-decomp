@@ -20,6 +20,12 @@ extern void func_8025470C(s32);
 extern void func_8042EB68(s32);
 extern void func_8029A8A8(void);
 
+typedef struct func_804291A8_S1 func_804291A8_S1;
+struct func_804291A8_S1 {
+    char pad0[0x17F0];
+    s32 unk17F0;
+};
+
 s32 func_804291A8(void) {
     static void *labels[0] __attribute__((section(".sdata"))) = {
         &&send_20, &&send_10, &&send_15, &&send_10_again, &&send_3
@@ -42,7 +48,7 @@ s32 func_804291A8(void) {
             func_8025470C(1);
         }
         level = (u8)objects[0x124D];
-        *(s32 *)(objects + 0x17F0) = 8;
+        ((func_804291A8_S1 *)(objects))->unk17F0 = 8;
         if (level >= 5) {
             goto send_3;
         }

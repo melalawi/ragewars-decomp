@@ -52,6 +52,12 @@ extern void func_80293038(Context *context);
 extern void func_8025DE50(void);
 
 static inline u32 ring_index(u32 i, u32 bias, u32 count) { return (i+bias)%count; }
+typedef struct func_802911E8_S1 func_802911E8_S1;
+struct func_802911E8_S1 {
+    char pad0[0x26DB4];
+    s32 unk26DB4;
+};
+
 void func_802911E8(Context *context) {
     FrameRecord *record;
     u32 i;
@@ -63,7 +69,7 @@ void func_802911E8(Context *context) {
     func_802A101C(D_800F3C80, 7, 0x2000);
     func_8028F734(&D_801469E8, D_800F3C80 + 0x2000, D_800D2B38, 0, 1);
     func_8028F844(&D_801469E8, &D_8014AD80, &D_80146980);
-    *(s32 *)((char *)context + 0x26DB4) = -1;
+    ((func_802911E8_S1 *)(context))->unk26DB4 = -1;
     func_80293574(context);
     D_80110634 = 0;
     func_802BBC50(&D_80146D20);

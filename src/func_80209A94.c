@@ -1,9 +1,15 @@
 #include "basetypes.h"
 
+typedef struct func_80209A94_S1 func_80209A94_S1;
+struct func_80209A94_S1 {
+    char pad0[0x21C];
+    s32 unk21C;
+};
+
 s32 func_80209A94(void *arg0) {
     s32 val;
 
-    val = *(s32 *)((char *)arg0 + 0x21C);
+    val = ((func_80209A94_S1 *)(arg0))->unk21C;
     if (val >= 8) {
         goto ge_8;
     }

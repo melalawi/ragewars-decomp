@@ -36,6 +36,14 @@ extern void func_802729B4(Matrix *arg0, Vec3 *arg1, Vec3 *arg2, s32 count);
 extern void func_80243A80(Source *arg0, Vec3 arg1, CollisionInfo *arg2);
 extern void func_80207730(u8 *arg0, Source *arg1);
 
+typedef struct func_80213CF8_S1 func_80213CF8_S1;
+struct func_80213CF8_S1 {
+    char pad0[0x8];
+    Vec3 unk8;
+    char pad8[0x18 - 0x8 - sizeof(Vec3)];
+    s32* unk18;
+};
+
 void func_80213CF8(Source *arg0, void *arg1) {
     Vec3 saved_velocity;
     Vec3 position;
@@ -45,7 +53,7 @@ void func_80213CF8(Source *arg0, void *arg1) {
     f32 amount;
 
     object = func_8024E690(arg0);
-    if ((object != 0) && (**(s32 **)(object + 0x18) == 2)) {
+    if ((object != 0) && (*((func_80213CF8_S1 *)(object))->unk18 == 2)) {
         position = arg0->position;
         func_8024E6C8(object, &saved_velocity);
         if (!(arg0->flags38 & 0x1000) || (saved_velocity.y > 0.0f)) {
@@ -55,17 +63,17 @@ void func_80213CF8(Source *arg0, void *arg1) {
         arg0->velocity.x = 0.0f;
         arg0->velocity.y = 0.0f;
         arg0->velocity.z = 0.0f;
-        func_80271FD8(&transformed, &position, (Vec3 *)(object + 8));
+        func_80271FD8(&transformed, &position, &((func_80213CF8_S1 *)(object))->unk8);
         amount = func_8024E72C(object);
         func_80273744(&matrix, amount);
         func_802729B4(&matrix, &transformed, &transformed, 1);
-        func_80271FA4(&transformed, &transformed, (Vec3 *)(object + 8));
+        func_80271FA4(&transformed, &transformed, &((func_80213CF8_S1 *)(object))->unk8);
         func_80271FD8(&transformed, &transformed, &position);
         arg0->height += amount;
         func_80271FA4(&position, &position, &transformed);
         func_80243A80(arg0, position, &D_80104338);
         arg0->velocity = saved_velocity;
-        if ((object[0] == 1) && (**(s32 **)(object + 0x18) == 2)) {
+        if ((object[0] == 1) && (*((func_80213CF8_S1 *)(object))->unk18 == 2)) {
             func_80207730(object, arg0);
         }
     }

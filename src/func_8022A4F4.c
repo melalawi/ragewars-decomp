@@ -2,6 +2,25 @@
 
 extern f32 D_800C7DD8;
 
+typedef struct func_8022A4F4_S1 func_8022A4F4_S1;
+typedef struct func_8022A4F4_S2 func_8022A4F4_S2;
+struct func_8022A4F4_S1 {
+    char pad0[0x20];
+    void* unk20;
+};
+struct func_8022A4F4_S2 {
+    char pad0[0x8];
+    f32 unk8;
+    char pad8[0xC - 0x8 - sizeof(f32)];
+    f32 unkC;
+    char padC[0x10 - 0xC - sizeof(f32)];
+    f32 unk10;
+    char pad10[0x5E4 - 0x10 - sizeof(f32)];
+    s32 unk5E4;
+    char pad5E4[0x16E0 - 0x5E4 - sizeof(s32)];
+    void* unk16E0;
+};
+
 void *func_8022A4F4(void *arg0, s32 arg1, s32 arg2, s32 arg3, void *arg4) {
     f32 var_f3;
     void *var_v1;
@@ -9,16 +28,16 @@ void *func_8022A4F4(void *arg0, s32 arg1, s32 arg2, s32 arg3, void *arg4) {
     f32 dx, dy, dz, distSq;
 
     var_f3 = D_800C7DD8;
-    var_v1 = *(void **)((char *)arg0 + 0x20);
+    var_v1 = ((func_8022A4F4_S1 *)(arg0))->unk20;
     var_a1 = 0;
     if (var_v1 != 0) {
         do {
-            if (*(s32 *)((char *)var_v1 + 0x5E4) != 0 && var_v1 != arg4) {
-                dx = *(f32 *)((char *)var_v1 + 8) - *(f32 *)&arg1;
+            if (((func_8022A4F4_S2 *)(var_v1))->unk5E4 != 0 && var_v1 != arg4) {
+                dx = ((func_8022A4F4_S2 *)(var_v1))->unk8 - *(f32 *)&arg1;
                 dx = dx * dx;
-                dy = *(f32 *)((char *)var_v1 + 0xC) - *(f32 *)&arg2;
+                dy = ((func_8022A4F4_S2 *)(var_v1))->unkC - *(f32 *)&arg2;
                 dy = dy * dy;
-                dz = *(f32 *)((char *)var_v1 + 0x10) - *(f32 *)&arg3;
+                dz = ((func_8022A4F4_S2 *)(var_v1))->unk10 - *(f32 *)&arg3;
                 dz = dz * dz;
                 distSq = (dx + dy) + dz;
                 if (distSq < var_f3) {
@@ -26,7 +45,7 @@ void *func_8022A4F4(void *arg0, s32 arg1, s32 arg2, s32 arg3, void *arg4) {
                     var_a1 = var_v1;
                 }
             }
-            var_v1 = *(void **)((char *)var_v1 + 0x16E0);
+            var_v1 = ((func_8022A4F4_S2 *)(var_v1))->unk16E0;
         } while (var_v1 != 0);
     }
     return var_a1;

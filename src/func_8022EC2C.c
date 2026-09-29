@@ -3,28 +3,40 @@ extern int D_800CE47C;
 extern float D_800C7F78;
 extern float D_800C7F7C;
 
+typedef struct func_8022EC2C_S1 func_8022EC2C_S1;
+struct func_8022EC2C_S1 {
+    char pad0[0xE4];
+    unsigned short unkE4;
+    char padE4[0x10E - 0xE4 - sizeof(unsigned short)];
+    signed char unk10E;
+    char pad10E[0x6C0 - 0x10E - sizeof(signed char)];
+    float unk6C0;
+    char pad6C0[0x86C - 0x6C0 - sizeof(float)];
+    int unk86C;
+};
+
 void func_8022EC2C(void *object) {
     int suppress = 0;
     float value;
 
-    if (*(int *)((char *)object + 0x86C) == 0x1144) {
-        suppress = *(signed char *)((char *)object + 0x10E) == 0;
+    if (((func_8022EC2C_S1 *)(object))->unk86C == 0x1144) {
+        suppress = ((func_8022EC2C_S1 *)(object))->unk10E == 0;
     }
-    if (*(unsigned short *)((char *)object + 0xE4) == D_800CE47C) {
-        *(int *)((char *)object + 0x86C) = 0x8A2;
+    if (((func_8022EC2C_S1 *)(object))->unkE4 == D_800CE47C) {
+        ((func_8022EC2C_S1 *)(object))->unk86C = 0x8A2;
         return;
     }
     if (!suppress) {
-        value = *(float *)((char *)object + 0x6C0);
+        value = ((func_8022EC2C_S1 *)(object))->unk6C0;
         if (D_800C7F78 <= value) {
-            *(int *)((char *)object + 0x86C) = 0x8A2;
+            ((func_8022EC2C_S1 *)(object))->unk86C = 0x8A2;
             return;
         }
         if (value <= D_800C7F7C) {
-            *(int *)((char *)object + 0x86C) = 0x8A7;
+            ((func_8022EC2C_S1 *)(object))->unk86C = 0x8A7;
             return;
         }
-        *(int *)((char *)object + 0x86C) = 0x14;
+        ((func_8022EC2C_S1 *)(object))->unk86C = 0x14;
     }
 }
 

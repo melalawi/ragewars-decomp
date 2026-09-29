@@ -27,12 +27,18 @@ static inline int isTwoWay(Link *link) {
     return 0;
 }
 
+typedef struct func_8020CC0C_S1 func_8020CC0C_S1;
+struct func_8020CC0C_S1 {
+    char pad0[0x8];
+    char unk8;
+};
+
 int func_8020CC0C(Graph *graph, int from, int to) {
     int i;
     Link *link;
 
     for (i = 0; i < graph->count; i++) {
-        link = (Link *)((char *)graph->links + 8 + i * graph->links->stride);
+        link = (Link *)(&((func_8020CC0C_S1 *)(graph->links))->unk8 + i * graph->links->stride);
         if (link->from == from && link->to == to) {
             return i;
         }

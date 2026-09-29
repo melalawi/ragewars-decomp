@@ -7,9 +7,15 @@ typedef struct
   s32 unk4;
 } Header;
 extern void func_802C2490(void *, void *, s32);
+typedef struct func_8028FEEC_S1 func_8028FEEC_S1;
+struct func_8028FEEC_S1 {
+    char pad0[0x8];
+    char unk8;
+};
+
 void func_8028FEEC(void *arg0, void *arg1, s32 arg2)
 {
-  char *data = ((char *) arg0) + 8;
+  char *data = &((func_8028FEEC_S1 *)(arg0))->unk8;
   s32 temp_a2;
   int first_column;
   s32 temp_t0;

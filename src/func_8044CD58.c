@@ -59,6 +59,27 @@ static inline s32 groupHas(World *world, s32 n) {
     return bits[n / 8] & mask;
 }
 
+typedef struct func_8044CD58_S1 func_8044CD58_S1;
+typedef struct func_8044CD58_S2 func_8044CD58_S2;
+typedef struct func_8044CD58_S3 func_8044CD58_S3;
+typedef struct func_8044CD58_S4 func_8044CD58_S4;
+struct func_8044CD58_S1 {
+    char pad0[0x8];
+    char unk8;
+};
+struct func_8044CD58_S2 {
+    char pad0[0x8];
+    Face unk8;
+};
+struct func_8044CD58_S3 {
+    char pad0[0x8];
+    char unk8;
+};
+struct func_8044CD58_S4 {
+    char pad0[0x8];
+    Face unk8;
+};
+
 void func_8044CD58(World *world, void ***handle) {
     void *node;
     List *l0;
@@ -78,12 +99,12 @@ void func_8044CD58(World *world, void ***handle) {
         l2 = func_8028FD94(node, 2);
         l3 = func_8028FD94(node, 3);
         count = l0->count;
-        world->verts = (char *) l0 + 8;
-        world->faces = (Face *) ((char *) l1 + 8);
+        world->verts = &((func_8044CD58_S1 *)(l0))->unk8;
+        world->faces = &((func_8044CD58_S2 *)(l1))->unk8;
         world->nfaces = count;
         count = l2->count;
-        world->edgeData = (char *) l2 + 8;
-        world->edges = (Face *) ((char *) l3 + 8);
+        world->edgeData = &((func_8044CD58_S3 *)(l2))->unk8;
+        world->edges = &((func_8044CD58_S4 *)(l3))->unk8;
         world->nedges = count;
         func_80255C40(world->listA, 0, 4);
         func_80255C40(world->listB, 0, 4);

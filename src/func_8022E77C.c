@@ -25,6 +25,12 @@ extern void func_8024BC84(Vec3 *, void *, Vec3);
 extern void func_80271FA4(Vec3 *, Vec3 *, Vec3 *);
 extern f32 func_8024D274(void *);
 
+typedef struct func_8022E77C_S1 func_8022E77C_S1;
+struct func_8022E77C_S1 {
+    char pad0[0x8];
+    Vec3 unk8;
+};
+
 void func_8022E77C(void *actor, Marker **slot, s32 kind, f32 distance) {
     Marker *marker;
     Vec3 offset;
@@ -42,7 +48,7 @@ void func_8022E77C(void *actor, Marker **slot, s32 kind, f32 distance) {
     offset.y = 0.0f;
     offset.z = distance;
     func_8024BC84(&pos, actor, offset);
-    func_80271FA4(&pos, &pos, (Vec3 *) ((char *) actor + 8));
+    func_80271FA4(&pos, &pos, &((func_8022E77C_S1 *)(actor))->unk8);
     marker->active = 1;
     marker->x = pos.x;
     marker->y = pos.y + func_8024D274(actor) * D_800C7F08[1];

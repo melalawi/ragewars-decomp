@@ -5,6 +5,17 @@ extern void func_8029CBB0(f32 arg0, f32 *arg1, f32 *arg2);
 extern void func_802A1748(s32, s32, s32);
 extern void func_8029DE3C(s32, s32, s32);
 
+typedef struct func_8029FE78_S1 func_8029FE78_S1;
+struct func_8029FE78_S1 {
+    f32 unk0;
+    char pad0[0x14 - 0x0 - sizeof(f32)];
+    f32 unk14;
+    char pad14[0x28 - 0x14 - sizeof(f32)];
+    f32 unk28;
+    char pad28[0x3C - 0x28 - sizeof(f32)];
+    f32 unk3C;
+};
+
 void func_8029FE78(s32 arg0, f32 arg1) {
     u8 sp10[0x40];
     f32 sp50;
@@ -15,14 +26,14 @@ void func_8029FE78(s32 arg0, f32 arg1) {
         func_8029CBB0(arg1, &sp50, &sp54);
         p = sp10;
         func_802A1748((s32) p, 0, 0x40);
-        *(f32 *) (p + 0x0) = D_800CAE54;
+        ((func_8029FE78_S1 *)(p))->unk0 = D_800CAE54;
         {
             f32 t54 = sp54;
             f32 t50 = sp50;
             f32 t50n;
-            *(f32 *) (p + 0x14) = D_800CAE54;
-            *(f32 *) (p + 0x28) = D_800CAE54;
-            *(f32 *) (p + 0x3C) = D_800CAE54;
+            ((func_8029FE78_S1 *)(p))->unk14 = D_800CAE54;
+            ((func_8029FE78_S1 *)(p))->unk28 = D_800CAE54;
+            ((func_8029FE78_S1 *)(p))->unk3C = D_800CAE54;
             t50n = -t50;
             *(f32 *) (sp10 + 0x20) = t50;
             *(f32 *) (sp10 + 0x0) = t54;

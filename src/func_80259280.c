@@ -63,6 +63,12 @@ extern u8 func_8025E568(void *);
 extern s16 func_8025E598(void *);
 extern s8 func_8025E574(void *);
 
+typedef struct func_80259280_S1 func_80259280_S1;
+struct func_80259280_S1 {
+    char pad0[0x2B8C];
+    s16 unk2B8C;
+};
+
 s32 func_80259280(Manager *manager, void *desc, Vec3Words *position, s32 volume, s32 extra) {
     Node *node;
     Node *first;
@@ -95,7 +101,7 @@ s32 func_80259280(Manager *manager, void *desc, Vec3Words *position, s32 volume,
         node->position = *position;
         node->pad58 = 0;
         node->padB4 = 0;
-        func_8025BB9C(node->channel, *(s16 *)((char *)manager->scene + 0x2B8C));
+        func_8025BB9C(node->channel, ((func_80259280_S1 *)(manager->scene))->unk2B8C);
         node->mix = manager->scene[0x2BAC / 4];
         func_8025BBA4(node->channel, desc, extra);
         at = manager->active.next;

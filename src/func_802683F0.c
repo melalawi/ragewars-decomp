@@ -22,9 +22,15 @@ static inline void fire(char *arg0, s32 arg1, s32 arg2, Triple arg3, Pair arg6)
     func_80266830(arg0, arg1, arg2, arg3, arg6, 1, 0, 0x200);
 }
 
+typedef struct func_802683F0_S1 func_802683F0_S1;
+struct func_802683F0_S1 {
+    char pad0[0xC];
+    f32 unkC;
+};
+
 void func_802683F0(char *arg0, s32 arg1, s32 arg2, Triple arg3, Pair arg6)
 {
-    f32 d = *(f32 *)(arg0 + 0xC) - arg3.y;
+    f32 d = ((func_802683F0_S1 *)(arg0))->unkC - arg3.y;
 
     if (d < 0.0f ? -d <= D_800C9560 : d <= D_800C9564) {
         fire(arg0, arg1, arg2, arg3, arg6);

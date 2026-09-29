@@ -27,6 +27,19 @@ extern void func_80268C7C(void *arg0, s32 arg1);
 extern void func_80255E78(void *arg0, s32 arg1);
 extern s32 func_80255C58(void *arg0, s32 arg1);
 
+typedef struct func_80282A18_S1 func_80282A18_S1;
+typedef struct func_80282A18_S2 func_80282A18_S2;
+struct func_80282A18_S1 {
+    char pad0[0x8];
+    Triple unk8;
+};
+struct func_80282A18_S2 {
+    char pad0[0xFC00];
+    char unkFC00;
+    char padFC00[0xFC14 - 0xFC00 - sizeof(char)];
+    char unkFC14;
+};
+
 void func_80282A18(void *arg0, s32 arg1) {
     Pair pair;
     s32 *temp_v1_4;
@@ -68,7 +81,7 @@ void func_80282A18(void *arg0, s32 arg1) {
                     temp_s3 = M2C_FIELD((char *)M2C_FIELD(temp_s1, s32 *, 0x18) + temp_a1, u16 *, 0xA8);
                     if (temp_a2 != 0xFFFF) {
                         func_80265E30(var_s0, var_s0, temp_a2, -1,
-                                     *(Triple *)((char *)var_s0 + 8), pair);
+                                     ((func_80282A18_S1 *)(var_s0))->unk8, pair);
                     }
                     if (temp_s2 != 0xFFFF) {
                         func_80279BB0(var_s0, temp_s2, M2C_FIELD(var_s0, s8 *, 0x1D0), 1);
@@ -99,9 +112,9 @@ void func_80282A18(void *arg0, s32 arg1) {
                         M2C_FIELD(var_s0, s32 *, 0x5C) = M2C_FIELD(var_s0, s32 *, 0x5C) & 0xFDFFFEFF;
                         func_80255E78(M2C_FIELD(var_s0, void **, 0x1E4), (s32)var_s0);
                         M2C_FIELD(var_s0, void **, 0x1E4) = 0;
-                        func_80255C58((char *)arg0 + 0xFC00, (s32)var_s0);
+                        func_80255C58(&((func_80282A18_S2 *)(arg0))->unkFC00, (s32)var_s0);
                         if (M2C_FIELD(var_s0, s32 *, 0x5C) & 0x01000000) {
-                            func_80255E78((char *)arg0 + 0xFC14, (s32)var_s0);
+                            func_80255E78(&((func_80282A18_S2 *)(arg0))->unkFC14, (s32)var_s0);
                         }
                       }
                     }

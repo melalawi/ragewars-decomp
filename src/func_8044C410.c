@@ -43,7 +43,33 @@ extern char D_800CA160;                                /* unable to generate ini
 extern char D_800CA188;                                /* unable to generate initializer: unknown type; const */
 extern s32 D_800D29B4[3]; /* const */
 extern char D_800F81F0;                                /* unable to generate initializer: unknown type; const */
-extern char D_800FD1F0;                                /* unable to generate initializer: unknown type; const */
+extern char D_800FD1F0;                                typedef struct func_8044C410_S1 func_8044C410_S1;
+struct func_8044C410_S1 {
+    char pad0[0x4C];
+    char unk4C;
+    char pad4C[0x50 - 0x4C - sizeof(char)];
+    char unk50;
+    char pad50[0x54 - 0x50 - sizeof(char)];
+    char unk54;
+    char pad54[0x58 - 0x54 - sizeof(char)];
+    char unk58;
+    char pad58[0x5C - 0x58 - sizeof(char)];
+    char unk5C;
+    char pad5C[0x74 - 0x5C - sizeof(char)];
+    char unk74;
+    char pad74[0x1B450 - 0x74 - sizeof(char)];
+    char unk1B450;
+    char pad1B450[0x1B46C - 0x1B450 - sizeof(char)];
+    char unk1B46C;
+    char pad1B46C[0x1B488 - 0x1B46C - sizeof(char)];
+    char unk1B488;
+    char pad1B488[0x1B4A4 - 0x1B488 - sizeof(char)];
+    char unk1B4A4;
+    char pad1B4A4[0x1B4C0 - 0x1B4A4 - sizeof(char)];
+    char unk1B4C0;
+};
+
+/* unable to generate initializer: unknown type; const */
 
 void func_8044C410(Level *arg0, s32 arg1) {
     s32 *sp20;
@@ -79,20 +105,20 @@ void func_8044C410(Level *arg0, s32 arg1) {
     func_80254224(0, &sp20, arg1, &D_800CA040);
     temp_v0 = func_8028FE08(sp20, arg1, 5);
     arg0->unk1C = temp_v0;
-    func_80254224(0, (char *)arg0 + 0x4C, temp_v0, &D_800CA050);
+    func_80254224(0, &((func_8044C410_S1 *)(arg0))->unk4C, temp_v0, &D_800CA050);
     temp_v0_2 = func_8028FE08(sp20, arg1, 3);
     arg0->unk20 = temp_v0_2;
-    func_80254224(0, (char *)arg0 + 0x50, temp_v0_2, &D_800CA060);
+    func_80254224(0, &((func_8044C410_S1 *)(arg0))->unk50, temp_v0_2, &D_800CA060);
     arg0->unk94 = (s32) *func_802543A8(0, sp20, 2, arg1, arg0, &D_285130, &D_800CA074);
     temp_v0_3 = func_8028FE08(sp20, arg1, 0);
     arg0->unk24 = temp_v0_3;
-    func_80254224(0, (char *)arg0 + 0x54, temp_v0_3, &D_800CA084);
+    func_80254224(0, &((func_8044C410_S1 *)(arg0))->unk54, temp_v0_3, &D_800CA084);
     arg0->unk78 = (s32) *func_802543A8(0, sp20, 1, arg1, arg0, &D_44E584, &D_800CA094);
     arg0->unkB4 = func_802543A8(0, sp20, 4, arg1, arg0, &D_44E454, &D_800CA0A4);
     arg0->unk98 = (s32) *func_802543A8(0, sp20, 0xA, arg1, arg0, &D_285130, &D_800CA074);
     temp_v0_4 = func_8028FE08(sp20, arg1, 9);
     arg0->unk28 = temp_v0_4;
-    func_80254224(0, (char *)arg0 + 0x58, temp_v0_4, &D_800CA0B8);
+    func_80254224(0, &((func_8044C410_S1 *)(arg0))->unk58, temp_v0_4, &D_800CA0B8);
     arg0->unk70 = (s32) *func_802543A8(0, sp20, 0xB, arg1, arg0, &D_285130, &D_800CA0C8);
     temp_v1 = *func_802543A8(0, sp20, 0xC, arg1, arg0, &D_285130, &D_800CA0DC);
     arg0->unk80 = &D_800FD1F0;
@@ -109,10 +135,10 @@ void func_8044C410(Level *arg0, s32 arg1) {
     arg0->unk9C = (s32) *func_802543A8(0, sp20, 0x11, arg1, arg0, &D_285130, &D_800CA118);
     temp_v0_6 = func_8028FE08(sp20, arg1, 0x10);
     arg0->unk2C = temp_v0_6;
-    func_80254224(0, (char *)arg0 + 0x5C, temp_v0_6, &D_800CA128);
+    func_80254224(0, &((func_8044C410_S1 *)(arg0))->unk5C, temp_v0_6, &D_800CA128);
     temp_v0_7 = func_8028FE08(sp20, arg1, 0x12);
     arg0->unk34 = temp_v0_7;
-    func_80254224(0, (char *)arg0 + 0x74, temp_v0_7, &D_800CA13C);
+    func_80254224(0, &((func_8044C410_S1 *)(arg0))->unk74, temp_v0_7, &D_800CA13C);
     func_80403BE0();
     temp_v0_8 = *func_802543A8(0, sp20, 0x13, arg1, arg0, &D_285130, &D_800CA14C);
     arg0->unkC = 0;
@@ -137,11 +163,11 @@ void func_8044C410(Level *arg0, s32 arg1) {
     }
     func_8044DC48(arg0, arg1);
     *D_800D29B4 = 1;
-    func_8044C250(arg0, (char *)arg0 + 0x1B450, 0xDAC);
-    func_8044C250(arg0, (char *)arg0 + 0x1B46C, 0xDAD);
-    func_8044C250(arg0, (char *)arg0 + 0x1B488, 0xDAE);
-    func_8044C250(arg0, (char *)arg0 + 0x1B4A4, 0xDAF);
-    func_8044C250(arg0, (char *)arg0 + 0x1B4C0, 0xDB0);
+    func_8044C250(arg0, &((func_8044C410_S1 *)(arg0))->unk1B450, 0xDAC);
+    func_8044C250(arg0, &((func_8044C410_S1 *)(arg0))->unk1B46C, 0xDAD);
+    func_8044C250(arg0, &((func_8044C410_S1 *)(arg0))->unk1B488, 0xDAE);
+    func_8044C250(arg0, &((func_8044C410_S1 *)(arg0))->unk1B4A4, 0xDAF);
+    func_8044C250(arg0, &((func_8044C410_S1 *)(arg0))->unk1B4C0, 0xDB0);
     arg0->unkF0 = 0;
     arg0->unkF4 = 0;
     arg0->unkFC = 0;

@@ -4,6 +4,12 @@ extern u32 D_800D0930;
 extern volatile s32 D_800D0938;
 extern s32 D_80105194;
 
+typedef struct func_8025552C_S1 func_8025552C_S1;
+struct func_8025552C_S1 {
+    char pad0[0xC];
+    void* unkC;
+};
+
 void func_8025552C(void) {
     s32 var_a1;
     s32 var_v1;
@@ -28,7 +34,7 @@ void func_8025552C(void) {
             var_v1 = 0;
             if (var_v0 != 0) {
                 do {
-                    var_v0 = *(void **)((char *)var_v0 + 0xC);
+                    var_v0 = ((func_8025552C_S1 *)(var_v0))->unkC;
                     var_v1 += 1;
                 } while (var_v0 != 0);
             }

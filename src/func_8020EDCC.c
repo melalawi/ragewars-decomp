@@ -8,6 +8,12 @@ typedef struct Actor {
     char **info;
 } Actor;
 
+typedef struct func_8020EDCC_S1 func_8020EDCC_S1;
+struct func_8020EDCC_S1 {
+    char pad0[0x1454];
+    char* unk1454;
+};
+
 void func_8020EDCC(char *arg0) {
     char *table = D_8013B364;
     int i;
@@ -18,7 +24,7 @@ void func_8020EDCC(char *arg0) {
         for (i = 0; i < 10; i++) {
             Actor *a = *(Actor **)(arg0 + 0x3C + i * 4);
             if (a != 0) {
-                *(float *)(func_8020CFE0(table, *(int *)(*(char **)((char *)a->info + 0x1454) + 4)) + 0x18) = value;
+                *(float *)(func_8020CFE0(table, *(int *)(((func_8020EDCC_S1 *)(a->info))->unk1454 + 4)) + 0x18) = value;
             }
         }
     }

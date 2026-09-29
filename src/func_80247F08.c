@@ -14,6 +14,21 @@ extern void func_80272088(Vector3 *out, Vector3 *a, Vector3 *b);
 extern void func_802720EC(Vector3 *arg0);
 extern void func_8027200C(Vector3 *out, Vector3 *in, f32 scale);
 
+typedef struct func_80247F08_S1 func_80247F08_S1;
+typedef struct func_80247F08_S2 func_80247F08_S2;
+struct func_80247F08_S1 {
+    char pad0[0x30];
+    f32 unk30;
+    char pad30[0x34 - 0x30 - sizeof(f32)];
+    f32 unk34;
+    char pad34[0x38 - 0x34 - sizeof(f32)];
+    f32 unk38;
+};
+struct func_80247F08_S2 {
+    char pad0[0x18];
+    Vector3 unk18;
+};
+
 void func_80247F08(char *arg0, char *arg1, char *arg2, Vector3 arg3,
                    Vector3 arg6, s32 arg9) {
     Vector3 sp10;
@@ -47,9 +62,9 @@ void func_80247F08(char *arg0, char *arg1, char *arg2, Vector3 arg3,
         } while (var_v1 < 4);
         func_802536F4(0, temp_v0);
         arg1[0x12] = 0x19;
-        sp20.x = *(f32 *)(arg2 + 0x30);
-        sp20.y = *(f32 *)(arg2 + 0x34);
-        sp20.z = *(f32 *)(arg2 + 0x38);
+        sp20.x = ((func_80247F08_S1 *)(arg2))->unk30;
+        sp20.y = ((func_80247F08_S1 *)(arg2))->unk34;
+        sp20.z = ((func_80247F08_S1 *)(arg2))->unk38;
         func_80271FD8(&arg3, &arg3, &sp20);
         func_80272088(&sp10, &arg3, &arg6);
         func_802720EC(&sp10);
@@ -60,7 +75,7 @@ void func_80247F08(char *arg0, char *arg1, char *arg2, Vector3 arg3,
                       (sp30.x * arg6.x) + (sp30.y * arg6.y) +
                           (sp30.z * arg6.z));
         func_802720EC(&sp10);
-        *(Vector3 *)(arg1 + 0x18) = sp10;
+        ((func_80247F08_S2 *)(arg1))->unk18 = sp10;
        }
       }
     }

@@ -11,6 +11,12 @@ extern s32 D_8014AD94;
 extern void func_8040C4A8(s32 arg0);
 extern void func_80299368(s32 arg0);
 
+typedef struct func_80293DE4_S1 func_80293DE4_S1;
+struct func_80293DE4_S1 {
+    char pad0[0x26DC4];
+    f32 unk26DC4;
+};
+
 void func_80293DE4(void *arg0) {
     D_800E28C8 = -1;
     D_80146D70 = 0;
@@ -19,6 +25,6 @@ void func_80293DE4(void *arg0) {
     D_80146D60 = 1;
     D_800E28CC = 1;
     D_8014AD94 = 0;
-    *(f32 *)((char *)arg0 + 0x26DC4) = D_800CA5AC;
+    ((func_80293DE4_S1 *)(arg0))->unk26DC4 = D_800CA5AC;
     func_80299368(0x1D);
 }

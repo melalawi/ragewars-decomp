@@ -12,6 +12,12 @@ extern Box D_800E3570;
 extern f32 D_800E14B8[];
 extern void func_80272908(void *,Vec *,Vec *),func_8025470C(int),func_804171B8(int),func_8026D844(void),func_8024B8B4(Entity *),func_80246E34(Entity *),func_80273860(void *,f32),func_8026D980(void),func_80249E18(Entity *,void *),func_8026D9D0(void);
 extern int func_8025471C(void);
+typedef struct func_8041C864_S1 func_8041C864_S1;
+struct func_8041C864_S1 {
+    char pad0[0x204];
+    char unk204;
+};
+
 void func_8041C864(Root *arg0) {
  Vec pos,out;
  char *world=D_801450C8;
@@ -34,7 +40,7 @@ void func_8041C864(Root *arg0) {
  arg0->obj.pos=out;arg0->obj.saved=out;
  if(arg0->refresh || !obj->flag) {
  func_80246E34(obj);
- if(arg0->angle)func_80273860((char *)arg0+0x204,(f32)arg0->angle*0.017453294f);
+ if(arg0->angle)func_80273860(&((func_8041C864_S1 *)(arg0))->unk204,(f32)arg0->angle*0.017453294f);
  }
  obj->scale=arg0->scale*D_800E14B8[1];
  obj->pos=out;obj->saved=out;

@@ -15,6 +15,13 @@ extern void func_802AB794(void *arg0);
 extern void func_80294F1C(void);
 extern void func_80293378(void *arg0);
 
+typedef struct func_80293CD0_S1 func_80293CD0_S1;
+typedef union func_80293CD0_S1_U26DB0 { f32 v0; s32 v1; } func_80293CD0_S1_U26DB0;
+struct func_80293CD0_S1 {
+    char pad0[0x26DB0];
+    func_80293CD0_S1_U26DB0 unk26DB0;
+};
+
 void func_80293CD0(void *arg0) {
     s32 *global;
     void *state;
@@ -23,7 +30,7 @@ void func_80293CD0(void *arg0) {
     state = arg0;
     global = &D_801468A0;
     if (global[0x2B] == 1) {
-        value = *(f32 *)((char *)state + 0x26DB0);
+        value = ((func_80293CD0_S1 *)(state))->unk26DB0.v0;
         if (D_800CA5A4 < value) {
             if (D_800CA5A8 < value) {
                 global[0x2B] = 0;
@@ -31,13 +38,13 @@ void func_80293CD0(void *arg0) {
                 func_80299368(2);
                 func_8040C4A8(0);
                 func_80293774(state, 1);
-                *(s32 *)((char *)state + 0x26DB0) = 0;
+                ((func_80293CD0_S1 *)(state))->unk26DB0.v1 = 0;
             } else if (D_8010F190 != 0) {
                 global[0x2B] = 0;
                 func_802A3224();
                 func_80299368(2);
                 func_80293774(state, 8);
-                *(s32 *)((char *)state + 0x26DB0) = 0;
+                ((func_80293CD0_S1 *)(state))->unk26DB0.v1 = 0;
             }
         }
     }

@@ -9,13 +9,21 @@ struct Pair {
 extern void func_80217388(u8 *, u8 *);
 extern void func_80262CA8(void *arg0);
 
+typedef struct func_802689CC_S1 func_802689CC_S1;
+struct func_802689CC_S1 {
+    char pad0[0x100];
+    s32 unk100;
+    char pad100[0x170 - 0x100 - sizeof(s32)];
+    s32 unk170;
+};
+
 void func_802689CC(u8 *object, s32 second, s32 third, struct Pair pair) {
-    func_80217388(object, object + 0x170);
-    *(s32 *)(object + 0x170) |= 0x20;
-    *(s32 *)(object + 0x100) &= 0xFFFEFFFF;
-    *(s32 *)(object + 0x100) &= ~0x2000;
-    *(s32 *)(object + 0x100) &= ~0x100;
-    if (*(s32 *)(object + 0x100) & 0x80000) {
+    func_80217388(object, (char *)object + 0x170);
+    ((func_802689CC_S1 *)(object))->unk170 |= 0x20;
+    ((func_802689CC_S1 *)(object))->unk100 &= 0xFFFEFFFF;
+    ((func_802689CC_S1 *)(object))->unk100 &= ~0x2000;
+    ((func_802689CC_S1 *)(object))->unk100 &= ~0x100;
+    if (((func_802689CC_S1 *)(object))->unk100 & 0x80000) {
         func_80262CA8(object);
     }
 }

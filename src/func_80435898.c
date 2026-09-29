@@ -25,6 +25,14 @@ extern struct Block *D_800E54A4;
 extern char D_80102B00[];
 extern void func_802A1724(void *, void *, s32);
 
+typedef struct func_80435898_S1 func_80435898_S1;
+struct func_80435898_S1 {
+    char pad0[0xC];
+    s8 unkC;
+    char padC[0xD - 0xC - sizeof(s8)];
+    s8 unkD;
+};
+
 void func_80435898(s32 arg0) {
     char *record;
     s32 place;
@@ -35,7 +43,7 @@ void func_80435898(s32 arg0) {
     record = &D_80102B00[arg0 * 400];
     if (place != -1) {
         func_802A1724(record, D_800E54A4->players[place].slots[owner], 400);
-        *(s8 *)(record + 0xC) = (s8) owner;
+        ((func_80435898_S1 *)(record))->unkC = (s8) owner;
     }
-    *(s8 *)(record + 0xD) = (s8) place;
+    ((func_80435898_S1 *)(record))->unkD = (s8) place;
 }

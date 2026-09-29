@@ -10,12 +10,18 @@ typedef struct Result {
 extern Result *func_8028FD94(s32, s32);
 extern char D_8011FE88[];
 
+typedef struct func_80278B2C_S1 func_80278B2C_S1;
+struct func_80278B2C_S1 {
+    char pad0[0x1500];
+    s32 unk1500;
+};
+
 s32 func_80278B2C(void) {
     s32 total = 0;
     s32 i;
     char *base = D_8011FE88;
 
-    for (i = 0; i < *(s32 *)(base + 0x1500); i++) {
+    for (i = 0; i < ((func_80278B2C_S1 *)(base))->unk1500; i++) {
         total += func_8028FD94(**(s32 **)(base + i * 0xC + 0x1508), 2)->size;
     }
     return total;

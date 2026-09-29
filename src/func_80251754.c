@@ -19,16 +19,30 @@ typedef struct HashNode {
 
 extern s32 D_80104570;
 extern Queue D_80105140;
+typedef struct { s32 unk0; } func_80251754_G1;
 extern s32 D_8010515C;
-extern s32 D_80105180;
-extern s32 D_80105190;
-extern s32 D_80105194;
+typedef struct { s32 unk0; } func_80251754_G2;
+extern func_80251754_G2 D_80105180;
+typedef struct { s32 unk0; } func_80251754_G3;
+extern func_80251754_G3 D_80105190;
+typedef struct { s32 unk0; } func_80251754_G4;
+extern func_80251754_G4 D_80105194;
 
 extern u32 func_802C2020(void);
 extern void func_802C2040(u32);
 extern void func_802C0390(s32, s32, s32);
 extern s32 func_802C0510(Queue *, s32, s32);
 extern void func_80255F58(void *, s32);
+
+typedef struct func_80251754_S1 func_80251754_S1;
+struct func_80251754_S1 {
+    char pad0[0x8];
+    s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x10 - 0xC - sizeof(s32)];
+    s32 unk10;
+};
 
 void *func_80251754(s32 arg0, s32 arg1) {
     s32 temp_v1;
@@ -51,9 +65,9 @@ void *func_80251754(s32 arg0, s32 arg1) {
     }
 
     out = &value;
-    node = (HashNode *)((s32)D_80105194 +
+    node = (HashNode *)((s32)D_80105194.unk0 +
         ((((arg1 << 5) ^ ((u32)arg1 >> 1) ^ ((u32)arg1 >> 9) ^
-           ((u32)arg1 >> 17)) & D_80105190) * 0x10));
+           ((u32)arg1 >> 17)) & D_80105190.unk0) * 0x10));
     if (node->key != arg1) {
         goto not_initial;
     }
@@ -80,9 +94,9 @@ found:
     object = 0;
     if (value != 0) {
         object = *(void **)value;
-        *(s32 *)((char *)object + 0x8) += 1;
-        *(s32 *)((char *)object + 0xC) |= 0x100;
-        *(s32 *)((char *)object + 0x10) = D_80105180;
+        ((func_80251754_S1 *)(object))->unk8 += 1;
+        ((func_80251754_S1 *)(object))->unkC |= 0x100;
+        ((func_80251754_S1 *)(object))->unk10 = D_80105180.unk0;
         func_80255F58(&D_80104570, object);
     }
 

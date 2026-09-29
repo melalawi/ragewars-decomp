@@ -37,6 +37,13 @@ extern f32 func_802BC200(f32 arg0);
 extern s32 func_80244494(InstanceHdr *arg0, Vec3 current, Vec3 desired,
                           void *collisionInfo);
 
+typedef struct func_8020E674_S1 func_8020E674_S1;
+typedef union func_8020E674_S1_U8 { f32 v0; Vec3 v1; } func_8020E674_S1_U8;
+struct func_8020E674_S1 {
+    char pad0[0x8];
+    func_8020E674_S1_U8 unk8;
+};
+
 s32 func_8020E674(Actor *actor, f32 scale, f32 lateral) {
     Vec3 current;
     Vec3 desired;
@@ -58,9 +65,9 @@ s32 func_8020E674(Actor *actor, f32 scale, f32 lateral) {
     }
 
     invDuration = D_800C6F30 / actor->field264;
-    delta.x = (actor->field258 - *(f32 *)((char *)actor->instance + 8)) * invDuration;
+    delta.x = (actor->field258 - ((func_8020E674_S1 *)(actor->instance))->unk8.v0) * invDuration;
     delta.x *= scale * func_802BB630(actor->field278);
-    delta.z = (actor->field260 - *(f32 *)((char *)actor->instance + 0x10)) * invDuration;
+    delta.z = (actor->field260 - ((func_8020E674_S1 *)(actor->instance))->unk8.v1.z) * invDuration;
     delta.z *= scale * func_802BB630(actor->field278);
     delta.y = scale * func_802BC200(actor->field278);
 
@@ -78,7 +85,7 @@ s32 func_8020E674(Actor *actor, f32 scale, f32 lateral) {
     }
 
     segment = total / (f32)count;
-    current = *(Vec3 *)((char *)actor->instance + 8);
+    current = ((func_8020E674_S1 *)(actor->instance))->unk8.v1;
     accelScale = segment * segment * D_800C6F38;
     accelX = acceleration.x * accelScale;
     accelY = acceleration.y * accelScale;

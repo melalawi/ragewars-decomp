@@ -46,6 +46,12 @@ typedef struct {
 
 extern Reusable *D_80103FCC;
 
+typedef struct func_8023EE50_S1 func_8023EE50_S1;
+struct func_8023EE50_S1 {
+    char pad0[0x28];
+    Entry unk28;
+};
+
 void func_8023EE50(Entry *arg0)
 {
     Entry *e = arg0;
@@ -72,7 +78,7 @@ void func_8023EE50(Entry *arg0)
             dst->unk10 = e->z;
             dst->unk14 = e->w;
             dst->unk18 = e->extra;
-            e = (Entry *)((u8 *)e + 0x28);
+            e = &((func_8023EE50_S1 *)(e))->unk28;
         } while (e->dst != 0);
     }
 }

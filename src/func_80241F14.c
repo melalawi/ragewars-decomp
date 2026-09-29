@@ -50,6 +50,29 @@ extern void *D_80103FCC;
 extern char D_801040F0;
 extern f32 D_800C8848[];
 
+typedef struct func_80241F14_S1 func_80241F14_S1;
+typedef struct func_80241F14_S2 func_80241F14_S2;
+typedef struct func_80241F14_S3 func_80241F14_S3;
+typedef struct func_80241F14_S4 func_80241F14_S4;
+struct func_80241F14_S1 {
+    char pad0[0x8];
+    char unk8;
+};
+struct func_80241F14_S2 {
+    char pad0[0x8];
+    f32 unk8;
+};
+struct func_80241F14_S3 {
+    char pad0[0x4];
+    s32 unk4;
+    char pad4[0x34 - 0x4 - sizeof(s32)];
+    f32 unk34;
+};
+struct func_80241F14_S4 {
+    char pad0[0x1C];
+    Vec3 unk1C;
+};
+
 void func_80241F14(Actor *actor, Owner *owner, Bounds *bounds, Query *query, Input *input) {
     u8 collision[0x108];
     Vec3 next;
@@ -63,9 +86,9 @@ void func_80241F14(Actor *actor, Owner *owner, Bounds *bounds, Query *query, Inp
     void *entry;
     void *owner_data;
 
-    owner_data = (u8 *)owner + 8;
+    owner_data = &((func_80241F14_S1 *)(owner))->unk8;
     entry = owner->entries + 0x14;
-    height = *(f32 *)((u8 *)entry + 8) + func_8024D388(input);
+    height = ((func_80241F14_S2 *)(entry))->unk8 + func_8024D388(input);
     if (actor->move_y > 0.0f) {
         query->word0 = 3;
         func_80240D10(query, bounds);
@@ -111,11 +134,11 @@ void func_80241F14(Actor *actor, Owner *owner, Bounds *bounds, Query *query, Inp
     if (actor->move_x != 0.0f || actor->move_z != 0.0f) {
         query->word0 = 3;
         if (func_8023E168(actor, owner_data, height,
-                          *(s32 *)((u8 *)bounds + 4), *(f32 *)((u8 *)bounds + 0x34),
+                          ((func_80241F14_S3 *)(bounds))->unk4, ((func_80241F14_S3 *)(bounds))->unk34,
                           1, query, 1)) {
             actor->flags |= 8;
-            func_80271FA4((Vec3 *)((u8 *)input + 0x1C),
-                          (Vec3 *)((u8 *)input + 0x1C),
+            func_80271FA4(&((func_80241F14_S4 *)(input))->unk1C,
+                          &((func_80241F14_S4 *)(input))->unk1C,
                           (Vec3 *)&actor->move_x);
         }
     }

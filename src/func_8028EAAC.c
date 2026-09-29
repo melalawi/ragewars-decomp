@@ -57,6 +57,12 @@ extern s32 D_800D2950, D_800D2954, D_800D2B1C, D_800E28A0, D_8010A248;
 extern s32 D_8011FAB4, D_801469E0, D_80146CF0, D_80146CF8, D_8014AD88, D_8014AD90;
 extern FrameSchedule *D_80146970[];
 
+typedef struct func_8028EAAC_S1 func_8028EAAC_S1;
+struct func_8028EAAC_S1 {
+    char pad0[0x78];
+    char unk78;
+};
+
 /** Handle one scheduler retrace, recover a lost yielded-task completion, and notify clients. */
 void func_8028EAAC(OSSched *sc) {
     OSScTask *event = 0;
@@ -72,7 +78,7 @@ void func_8028EAAC(OSSched *sc) {
         if (D_800D2954 == 0) func_802C06E0(&D_8010A248, D_800D2B1C);
     }
     sc->frameCount++;
-    while (func_802C0390((char *)sc + 0x78, &event, 0) != -1) func_8028F934(sc, event);
+    while (func_802C0390(&((func_8028EAAC_S1 *)(sc))->unk78, &event, 0) != -1) func_8028F934(sc, event);
     D_801469E0++;
     if (D_8014AD88 != 0) {
         D_801469E0 = 0;

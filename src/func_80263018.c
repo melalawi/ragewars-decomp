@@ -4,6 +4,12 @@ extern s32 D_8013B290;
 extern void func_80255E78(void *, s32);
 extern s32 func_80255C58(void *, s32);
 
+typedef struct func_80263018_S1 func_80263018_S1;
+struct func_80263018_S1 {
+    char pad0[0x2F0];
+    s32* unk2F0;
+};
+
 void *func_80263018(s32 arg0, s32 *arg1) {
     void *temp_s0;
 
@@ -12,7 +18,7 @@ void *func_80263018(s32 arg0, s32 *arg1) {
         if (temp_s0 != 0) {
             func_80255E78((void *)(arg0 + 0x5F00), (s32)temp_s0);
             func_80255C58((void *)(arg0 + 0x5F14), (s32)temp_s0);
-            *(s32 **)((char *)temp_s0 + 0x2F0) = arg1;
+            ((func_80263018_S1 *)(temp_s0))->unk2F0 = arg1;
             if (arg1 != 0) {
                 *arg1 += 1;
             }

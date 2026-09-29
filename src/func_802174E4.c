@@ -18,11 +18,17 @@ typedef struct {
     s32 extra2;
 } Dest;
 
+typedef struct func_802174E4_S1 func_802174E4_S1;
+struct func_802174E4_S1 {
+    char pad0[0x8];
+    Triple unk8;
+};
+
 void func_802174E4(void *arg0, void *unused1, Dest *arg2) {
     Triple local1;
     Triple local2;
 
-    local1 = *(Triple *)((char *)arg0 + 0x8);
+    local1 = ((func_802174E4_S1 *)(arg0))->unk8;
     local2.a = 0;
     local2.b = 0;
     local2.c = 0;

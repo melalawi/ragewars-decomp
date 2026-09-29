@@ -24,16 +24,24 @@ extern void func_80272848(void *);
 extern void func_802A41D8(Node438C *, Node438C *, void *, void *);
 extern void func_802702EC(void *, s32);
 
+typedef struct func_802A438C_S1 func_802A438C_S1;
+struct func_802A438C_S1 {
+    char pad0[0x40];
+    Node438C* unk40;
+    char pad40[0x48 - 0x40 - sizeof(Node438C*)];
+    s32 unk48;
+};
+
 void func_802A438C(void *arg0, void *arg1) {
     f32 matrix[16];
     Node438C *first;
     Node438C *next;
 
-    if (*(s32 *)((u8 *)arg0 + 0x48) < 2) {
+    if (((func_802A438C_S1 *)(arg0))->unk48 < 2) {
         return;
     }
 
-    first = *(Node438C **)((u8 *)arg0 + 0x40);
+    first = ((func_802A438C_S1 *)(arg0))->unk40;
     next = first->next;
     if (first != 0) {
         func_80272D20(matrix, first->a, first->b, first->c);

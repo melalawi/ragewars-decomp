@@ -72,6 +72,12 @@ extern void func_8043C3F0(Screen *, s32, s32, s32, s32);
 extern void func_8043C458(Screen *);
 extern void func_80422218(void);
 
+typedef struct func_80422728_S1 func_80422728_S1;
+struct func_80422728_S1 {
+    char pad0[0x10];
+    s32 unk10;
+};
+
 s32 func_80422728(void *node) {
     u8 *settings;
     Node *handle;
@@ -143,7 +149,7 @@ s32 func_80422728(void *node) {
     D_800E4518->slider = slider;
     do {
     } while (0);
-    func_8041A76C(slider, *(s32 *)(settings + 0x10));
+    func_8041A76C(slider, ((func_80422728_S1 *)(settings))->unk10);
     switch (settings[0xD]) {
     case 0:
         if (func_8042B108() == 0) {

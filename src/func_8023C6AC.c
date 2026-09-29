@@ -6,8 +6,24 @@ typedef struct Node {
 
 extern u32 D_80103B5C;
 extern Node D_80103F88;
-extern void *D_80103E20;
-extern char D_8010324C;
+typedef struct func_8023C6AC_S1 func_8023C6AC_S1;
+typedef struct func_8023C6AC_S2 func_8023C6AC_S2;
+typedef struct func_8023C6AC_S3 func_8023C6AC_S3;
+struct func_8023C6AC_S1 {
+    char pad0[0x6];
+    u16 unk6;
+};
+struct func_8023C6AC_S2 {
+    s32 unk0;
+};
+struct func_8023C6AC_S3 {
+    char pad0[0xC];
+    s32 unkC;
+};
+
+typedef struct { func_8023C6AC_S3 * unk0; } func_8023C6AC_G1;
+extern func_8023C6AC_S3 *D_80103E20;
+extern s32 D_8010324C[];
 
 void func_8023C6AC(void) {
     u32 var_a2;
@@ -18,6 +34,8 @@ void func_8023C6AC(void) {
     Node *var_v1;
     s32 var_a0_2;
     u16 temp_v0;
+    s32 *out;
+    volatile s32 *ordered;
 
     var_a2 = 0;
     var_a3 = 0x80000000;
@@ -40,14 +58,16 @@ void func_8023C6AC(void) {
     var_a0_2 = 0;
     if (&D_80103F88 != 0) {
         do {
-            temp_v0 = *(u16 *)((char *)var_v1 + 6);
+            temp_v0 = ((func_8023C6AC_S1 *)(var_v1))->unk6;
             var_v1 = var_v1->next;
             var_a0_2 += temp_v0 << 0xC;
         } while (var_v1 != 0);
     }
 
-    *(s32 *)((char *)&D_8010324C + 0) = var_a0_2;
-    *(u32 *)((char *)&D_8010324C - 0xC) = var_a2;
-    *(u32 *)((char *)&D_8010324C - 0x8) = var_a3;
-    *(s32 *)((char *)&D_8010324C - 0x4) = *(s32 *)((char *)D_80103E20 + 0xC);
+    out = D_8010324C;
+    ordered = out;
+    ordered[0] = var_a0_2;
+    ordered[-3] = var_a2;
+    ordered[-2] = var_a3;
+    out[-1] = D_80103E20->unkC;
 }

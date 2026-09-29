@@ -63,9 +63,15 @@ extern void func_8025A3EC(View *);
 extern void func_8025A864(View *);
 extern void func_8025ABB4(View *);
 
+typedef struct func_8025AE3C_S1 func_8025AE3C_S1;
+struct func_8025AE3C_S1 {
+    char pad0[0x84];
+    char unk84;
+};
+
 static inline char *selectChannel(Context *context, s32 slot) {
-    func_802B7FD0((char *)context + 0x84, context->slots.ids[slot]);
-    return (char *)context + 0x84;
+    func_802B7FD0(&((func_8025AE3C_S1 *)(context))->unk84, context->slots.ids[slot]);
+    return &((func_8025AE3C_S1 *)(context))->unk84;
 }
 
 void func_8025AE3C(View *view) {
@@ -88,7 +94,7 @@ void func_8025AE3C(View *view) {
             view->tracked = 0;
             context = view->context;
             if (view->frame != context->frame) {
-                channel = (char *)context + 0x84;
+                channel = &((func_8025AE3C_S1 *)(context))->unk84;
                 func_802B7FD0(channel, context->slots.ids[view->slot]);
                 if (func_802B76F0(channel) != 0) {
                     func_802B8030(channel);
@@ -109,7 +115,7 @@ void func_8025AE3C(View *view) {
     if (playing == 0) {
         context = view->context;
         slots = &context->slots;
-        func_802B76A0((char *)context + 0x84, slots->ids[view->slot]);
+        func_802B76A0(&((func_8025AE3C_S1 *)(context))->unk84, slots->ids[view->slot]);
         slots->ids[view->slot] = -1;
         view->field38 = 0;
         view->fieldC = -1;

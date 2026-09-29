@@ -91,6 +91,16 @@ extern void func_80434CE4(s32);
 extern void func_8022F1F4(s32);
 extern s32 func_80405290(s32);
 
+typedef struct func_804308B8_S1 func_804308B8_S1;
+struct func_804308B8_S1 {
+    char pad0[0x8];
+    u8* unk8;
+    char pad8[0x12 - 0x8 - sizeof(u8*)];
+    u16 unk12;
+    char pad12[0x38 - 0x12 - sizeof(u16)];
+    u8* unk38;
+};
+
 s32 func_804308B8(s32 arg0, s32 arg1, s32 arg2) {
     s32 answer;
     s32 i;
@@ -272,9 +282,9 @@ s32 func_804308B8(s32 arg0, s32 arg1, s32 arg2) {
         slot = func_80435304(p);
         if (slot >= 0) {
             node = func_8040ECB0(D_800E54A4->players[p].menu, 0x2F3);
-            for (j = 0; *(u16 *)(node + 0x12) & 0x10; j++) {
-                D_800E54A4->players[p].records[slot].name[j] = **(u8 **)(*(u8 **)(node + 8) + 0x38);
-                next = *(u8 **)(node + 0x38);
+            for (j = 0; ((func_804308B8_S1 *)(node))->unk12 & 0x10; j++) {
+                D_800E54A4->players[p].records[slot].name[j] = **(u8 **)(((func_804308B8_S1 *)(node))->unk8 + 0x38);
+                next = ((func_804308B8_S1 *)(node))->unk38;
                 if (next == 0) {
                     break;
                 }

@@ -41,6 +41,34 @@ extern void func_8026F690(f32 *, f32 *, f32 *);
 extern void func_802734B8(f32 *, s32, s32, s32);
 extern void func_802729B4(f32 *, Vec3 *, Vec3 *, s32);
 
+typedef struct func_80241940_S1 func_80241940_S1;
+typedef struct func_80241940_S2 func_80241940_S2;
+typedef struct func_80241940_S3 func_80241940_S3;
+struct func_80241940_S1 {
+    char pad0[0x8];
+    s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x10 - 0xC - sizeof(s32)];
+    s32 unk10;
+    char pad10[0x18 - 0x10 - sizeof(s32)];
+    char* unk18;
+    char pad18[0x5C - 0x18 - sizeof(char*)];
+    Quat unk5C;
+    char pad5C[0x6C - 0x5C - sizeof(Quat)];
+    f32 unk6C;
+};
+struct func_80241940_S2 {
+    char pad0[0x134];
+    s32 unk134;
+};
+struct func_80241940_S3 {
+    char pad0[0x10];
+    f32 unk10;
+    char pad10[0x54 - 0x10 - sizeof(f32)];
+    f32 unk54;
+};
+
 void func_80241940(char *obj, Vec3 *corners, char *floor, s32 attachment) {
     f32 matrix[16];
     f32 rest[16];
@@ -66,7 +94,7 @@ void func_80241940(char *obj, Vec3 *corners, char *floor, s32 attachment) {
     f32 angle;
 
     anim = obj + 0x170;
-    shape = (Shape *)(*(char **)(obj + 0x18) + 0x14);
+    shape = (Shape *)(((func_80241940_S1 *)(obj))->unk18 + 0x14);
     if (attachment != 0) {
         grow = func_8024D388(attachment);
         lift = func_8024D274(attachment);
@@ -116,21 +144,21 @@ void func_80241940(char *obj, Vec3 *corners, char *floor, s32 attachment) {
     corners[7].x = minX;
     corners[7].y = bottom;
     corners[7].z = minZ;
-    func_802736B8(rest, *(s32 *)(anim + 0x134));
-    sine = func_802BC200(*(f32 *)(obj + 0x6C) * 0.5f);
+    func_802736B8(rest, ((func_80241940_S2 *)(anim))->unk134);
+    sine = func_802BC200(((func_80241940_S1 *)(obj))->unk6C * 0.5f);
     yaw.x = 0.0f;
     yaw.y = sine;
     yaw.z = 0.0f;
-    angle = *(f32 *)(obj + 0x6C) * 0.5f;
+    angle = ((func_80241940_S1 *)(obj))->unk6C * 0.5f;
     D_80115DEC = sine;
     yaw.w = func_802BB630(angle);
-    func_80274108(&orient, &yaw, (Quat *)(obj + 0x5C));
+    func_80274108(&orient, &yaw, &((func_80241940_S1 *)(obj))->unk5C);
     func_802742B4(&orient, turn);
     func_8026F690(matrix, rest, turn);
-    func_802734B8(matrix, *(s32 *)(obj + 0x8), *(s32 *)(obj + 0xC), *(s32 *)(obj + 0x10));
+    func_802734B8(matrix, ((func_80241940_S1 *)(obj))->unk8, ((func_80241940_S1 *)(obj))->unkC, ((func_80241940_S1 *)(obj))->unk10);
     func_802729B4(matrix, corners, corners, 8);
     if (shape->flags & 1) {
-        bottom = *(f32 *)(floor + 0x54) - *(f32 *)(floor + 0x10);
+        bottom = ((func_80241940_S3 *)(floor))->unk54 - ((func_80241940_S3 *)(floor))->unk10;
         lift = bottom;
         corners[4].y = bottom;
         corners[5].y = bottom;

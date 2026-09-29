@@ -19,6 +19,23 @@ extern s32 func_80285A94(void *, void *, s32);
 extern s32 func_802BD0A8(void *, void *, s32);
 extern u32 func_802BCD20(void *);
 
+typedef struct func_80264268_S1 func_80264268_S1;
+typedef struct func_80264268_S2 func_80264268_S2;
+struct func_80264268_S1 {
+    char pad0[0xC8];
+    s32 unkC8;
+    char padC8[0xCC - 0xC8 - sizeof(s32)];
+    s32 unkCC;
+    char padCC[0xD0 - 0xCC - sizeof(s32)];
+    s32 unkD0;
+    char padD0[0xD4 - 0xD0 - sizeof(s32)];
+    s32 unkD4;
+};
+struct func_80264268_S2 {
+    char pad0[0x8];
+    char unk8;
+};
+
 void func_80264268(PakEntry *arg0) {
     u32 address=(u32)arg0;
     char *o=(char *)address;
@@ -29,18 +46,18 @@ void func_80264268(PakEntry *arg0) {
         }
         func_80263760();
         D_8010FBB8 = 2;
-        *(s32 *)(o + 0xCC) = 0;
-        *(s32 *)(o + 0xD0) = 0;
-        *(s32 *)(o + 0xD4) = 0;
+        ((func_80264268_S1 *)(o))->unkCC = 0;
+        ((func_80264268_S1 *)(o))->unkD0 = 0;
+        ((func_80264268_S1 *)(o))->unkD4 = 0;
         func_80285A94(o + 0x140, o + 0x16C, 3);
         func_802BD0A8(&D_8010FC00, o + 0xD8, arg0->channel);
-        func_802BCD20(o + 0xD8);
-        func_802BCD20(o + 0xD8);
+        func_802BCD20((char *)o + 0xD8);
+        func_802BCD20((char *)o + 0xD8);
         if (func_802BD0A8(&D_8010FC00, o + 0xD8, arg0->channel) == 0) {
-            *(s32 *)(o + 0xC8) = 1;
+            ((func_80264268_S1 *)(o))->unkC8 = 1;
         }
         D_8010FBB8 = 2;
         D_800D0E5C = -1;
-        func_802C0510((char *)&D_8010FBB8 + 8, 0, 1);
+        func_802C0510(&((func_80264268_S2 *)(&D_8010FBB8))->unk8, 0, 1);
     }
 }

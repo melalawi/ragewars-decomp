@@ -10,6 +10,12 @@ void func_80270D40(void *, f32, void *, f32 *);        /* extern */
 void func_802743F0(void *, f32 *);                     /* extern */
 extern f32 D_800C8A10[], D_800C8A18[], D_800C8A20[], D_800D2988[];
 
+typedef struct func_80246FF4_S1 func_80246FF4_S1;
+struct func_80246FF4_S1 {
+    char pad0[0x5C];
+    char unk5C;
+};
+
 void func_80246FF4(Obj *arg0) {
     f32 vec[4];
     f32 var_f0;
@@ -29,7 +35,7 @@ void func_80246FF4(Obj *arg0) {
             vec[3] = D_800C8A10[1];
         }
         if (flags) {
-            if ((!(arg0->unk100 & 0x1000) && (var_a0 = (char *)arg0 + 0x5C, (temp_s2 != 0))) || (var_a0 = (char *)arg0 + 0x5C, (temp_s1 != 0))) {
+            if ((!(arg0->unk100 & 0x1000) && (var_a0 = &((func_80246FF4_S1 *)(arg0))->unk5C, (temp_s2 != 0))) || (var_a0 = &((func_80246FF4_S1 *)(arg0))->unk5C, (temp_s1 != 0))) {
                 func_802743F0(var_a0, vec);
             }
         } else {
@@ -39,7 +45,7 @@ void func_80246FF4(Obj *arg0) {
                 var_f0 = D_800D2988[0]; var_f1 = D_800C8A18[1];
             }
             var_f0 = var_f0 * var_f1;
-            temp_a0 = (char *)arg0 + 0x5C;
+            temp_a0 = &((func_80246FF4_S1 *)(arg0))->unk5C;
             if (var_f0 > D_800C8A20[0]) {
                 var_f0 = D_800C8A20[0];
             }

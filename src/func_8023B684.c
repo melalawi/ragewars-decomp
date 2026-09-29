@@ -19,11 +19,17 @@ typedef struct {
 
 extern void func_80296DDC(s32 *arg0, s32 arg1);
 
+typedef struct func_8023B684_S1 func_8023B684_S1;
+struct func_8023B684_S1 {
+    char pad0[0x14];
+    s32 unk14;
+};
+
 void func_8023B684(Effect *effect, s16 *definition, s16 mask, f32 scale,
                    f32 offset0, f32 offset1, f32 offset2) {
     effect->definition = definition;
     effect->mask = mask;
-    func_80296DDC((s32 *)((char *)effect + 0x14), *definition);
+    func_80296DDC(&((func_8023B684_S1 *)(effect))->unk14, *definition);
     effect->angle0 = 0;
     effect->angle1 = 0;
     effect->timer = 0;

@@ -17,11 +17,17 @@ typedef struct Obj {
     float timer;
 } Obj;
 
+typedef struct func_802039F8_S1 func_802039F8_S1;
+struct func_802039F8_S1 {
+    char pad0[0xE4];
+    unsigned short unkE4;
+};
+
 void func_802039F8(char *arg0, Obj *arg1) {
     if (arg1->hook != 0 && arg1->hook->fn != 0) {
         arg1->hook->fn(arg0, arg1);
     }
-    if (*(unsigned short *)(arg0 + 0xE4) == 0x40C) {
+    if (((func_802039F8_S1 *)(arg0))->unkE4 == 0x40C) {
         arg1->timer += D_800D2988;
         if (D_800C6B38 < arg1->timer || arg1->count <= 0) {
             func_80214178(arg0, arg1, 0x40);

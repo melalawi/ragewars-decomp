@@ -19,10 +19,16 @@ typedef struct Filter {
 
 extern void func_80216288(void *, s32, Triple, s32);
 
+typedef struct func_8026836C_S1 func_8026836C_S1;
+struct func_8026836C_S1 {
+    char pad0[0x1];
+    s8 unk1;
+};
+
 void func_8026836C(void *arg0, Filter *arg1, s32 arg2, Triple arg3, Pair arg6) {
     switch (arg1->type) {
     case 0:
-        if (*(s8 *)((char *)arg0 + 1) != arg6.y) {
+        if (((func_8026836C_S1 *)(arg0))->unk1 != arg6.y) {
             return;
         }
         break;

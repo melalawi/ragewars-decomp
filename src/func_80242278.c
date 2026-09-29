@@ -3,7 +3,11 @@
 typedef struct {
     u8 pad0[4];
     u16 kind;
+    u8 pad6[2];
+    f32 value;
 } Entry;
+
+typedef struct { u8 pad[0x14]; Entry entry; } EntryBlock;
 
 typedef struct {
     u8 pad0[0x18];
@@ -51,13 +55,31 @@ extern void func_80240FB0(s32 *, Bounds *);
 extern void func_80241090(s32 *, Bounds *);
 extern void func_80241170(s32 *, Bounds *);
 
+typedef struct func_80242278_S1 func_80242278_S1;
+typedef struct func_80242278_S2 func_80242278_S2;
+typedef struct func_80242278_S3 func_80242278_S3;
+struct func_80242278_S1 {
+    char pad0[0x4];
+    s8 unk4;
+};
+struct func_80242278_S2 {
+    char pad0[0x8];
+    u8 unk8;
+};
+struct func_80242278_S3 {
+    char pad0[0x4];
+    s32 unk4;
+    char pad4[0x34 - 0x4 - sizeof(s32)];
+    f32 unk34;
+};
+
 void func_80242278(Actor *actor, Owner *owner) {
     Query query;
     Bounds bounds;
     Entry *entry;
 
-    entry = (Entry *)(owner->entries + 0x14);
-    if ((actor->field40 != &D_80104338) && (*(s8 *)((u8 *)actor->field40 + 4) != 0)) {
+    entry = &((EntryBlock *)owner->entries)->entry;
+    if ((actor->field40 != &D_80104338) && (((func_80242278_S1 *)(actor->field40))->unk4 != 0)) {
         f32 value;
         s32 *word;
         void *owner_data;
@@ -72,13 +94,13 @@ void func_80242278(Actor *actor, Owner *owner) {
         switch (entry->kind) {
         case 1:
             word = &query.word0;
-            owner_data = (u8 *)owner + 8;
-            value = *(f32 *)(owner->entries + 0x1C) + actor->fieldC;
+            owner_data = &((func_80242278_S2 *)(owner))->unk8;
+            value = ((EntryBlock *)owner->entries)->entry.value + actor->fieldC;
             if ((actor->field5C != *(f32 *)&query.word4) ||
                 (actor->field64 != *(f32 *)&query.word4)) {
                 *word = 3;
-                func_8023E168(actor, owner_data, value, *(s32 *)((u8 *)&bounds + 4),
-                              *(f32 *)((u8 *)&bounds + 0x34), 1, word, 1);
+                func_8023E168(actor, owner_data, value, ((func_80242278_S3 *)(&bounds))->unk4,
+                              ((func_80242278_S3 *)(&bounds))->unk34, 1, word, 1);
             }
             if (actor->field60 > 0.0f) {
                 *word = 2;

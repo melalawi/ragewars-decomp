@@ -11,30 +11,45 @@ extern char D_800CE730;
 extern s32 D_800CED30;
 extern f32 D_800C7E68[2];
 
+typedef struct func_8022CC24_S1 func_8022CC24_S1;
+typedef struct func_8022CC24_S2 func_8022CC24_S2;
+struct func_8022CC24_S1 {
+    char pad0[0x660];
+    s32 unk660;
+    char pad660[0x86C - 0x660 - sizeof(s32)];
+    s32 unk86C;
+    char pad86C[0x13B4 - 0x86C - sizeof(s32)];
+    void* unk13B4;
+};
+struct func_8022CC24_S2 {
+    char pad0[0x20];
+    f32 unk20;
+};
+
 void func_8022CC24(void *arg0, void *arg1) {
     s32 value;
 
     func_802748E0((s32)arg0 + 0x72C, 0.0f, 0.25f);
     func_802231B0((s32)arg0, (s32)arg1, &D_800CE7E4);
-    if (!(*(s32 *)((char *)arg0 + 0x660) & 0x8000)) {
+    if (!(((func_8022CC24_S1 *)(arg0))->unk660 & 0x8000)) {
         func_802233CC((s32)arg0, (s32)arg1, &D_800CE730);
     }
-    if (*(f32 *)((char *)arg1 + 0x20) <= 0.0f) {
+    if (((func_8022CC24_S2 *)(arg1))->unk20 <= 0.0f) {
         if (func_8024E61C(arg1) != 0) {
             func_802227D0(arg0, arg1, 2);
         }
     }
-    if (*(f32 *)((char *)arg1 + 0x20) <= 0.0f) {
+    if (((func_8022CC24_S2 *)(arg1))->unk20 <= 0.0f) {
         if (func_8024E668(arg1, 0) < 0.0f) {
             if (-func_8024E668(arg1, 0) < D_800C7E68[0]) {
                 goto set_value;
             }
         } else if (func_8024E668(arg1, 0) < D_800C7E68[1]) {
 set_value:
-            if (*(void **)((char *)arg0 + 0x13B4) == &D_800CED30) {
-                *(s32 *)((char *)arg0 + 0x86C) = 0x5E2E;
+            if (((func_8022CC24_S1 *)(arg0))->unk13B4 == &D_800CED30) {
+                ((func_8022CC24_S1 *)(arg0))->unk86C = 0x5E2E;
             } else {
-                *(s32 *)((char *)arg0 + 0x86C) = 0x7F8;
+                ((func_8022CC24_S1 *)(arg0))->unk86C = 0x7F8;
             }
         }
     }

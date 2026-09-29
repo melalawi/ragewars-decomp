@@ -9,10 +9,23 @@ typedef struct Vec3 {
 extern f32 D_800D0D10;
 extern f32 D_800C9088[];
 
+typedef struct func_8025C388_S1 func_8025C388_S1;
+typedef struct func_8025C388_S2 func_8025C388_S2;
+struct func_8025C388_S1 {
+    char pad0[0x34];
+    Vec3 unk34;
+    char pad34[0x44 - 0x34 - sizeof(Vec3)];
+    s8 unk44;
+};
+struct func_8025C388_S2 {
+    char pad0[0x128];
+    Vec3 unk128;
+};
+
 f32 func_8025C388(char *source, char *listener)
 {
-    Vec3 *a = (Vec3 *)(source + 0x34);
-    Vec3 *b = (Vec3 *)(listener + 0x128);
+    Vec3 *a = &((func_8025C388_S1 *)(source))->unk34;
+    Vec3 *b = &((func_8025C388_S2 *)(listener))->unk128;
     f32 dx = a->x - b->x;
     f32 dy;
     f32 dz;
@@ -30,7 +43,7 @@ f32 func_8025C388(char *source, char *listener)
     } else {
         t = D_800C9088[1] - d / D_800D0D10;
     }
-    switch (*(s8 *)(source + 0x44)) {
+    switch (((func_8025C388_S1 *)(source))->unk44) {
     case 2:
         return t;
     case 0:

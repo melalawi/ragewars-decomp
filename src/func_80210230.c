@@ -35,6 +35,17 @@ extern void *func_8022A5E4(void *, s32);
 extern f32 func_80272768(void *, void *);
 extern s32 func_8021035C(void *, s32);
 
+typedef struct func_80210230_S1 func_80210230_S1;
+typedef struct func_80210230_S2 func_80210230_S2;
+struct func_80210230_S1 {
+    char pad0[0x1860];
+    Settings unk1860;
+};
+struct func_80210230_S2 {
+    char pad0[0x8];
+    char unk8;
+};
+
 s32 func_80210230(TargetList *self) {
     s32 i;
     s32 count;
@@ -51,7 +62,7 @@ s32 func_80210230(TargetList *self) {
     count = 0;
     i = 0;
     base = D_80145040;
-    settings = (Settings *)(base + 0x1860);
+    settings = &((func_80210230_S1 *)(base))->unk1860;
 
     for (; i < 8; i++) {
         candidate = func_8022A5E4(base, i);
@@ -71,7 +82,7 @@ s32 func_80210230(TargetList *self) {
         }
 
         self->targets[count] = candidate;
-        self->distances[count] = (s32)func_80272768((u8 *)self->self + 8, (u8 *)candidate + 8);
+        self->distances[count] = (s32)func_80272768(&((func_80210230_S2 *)(self->self))->unk8, (u8 *)candidate + 8);
         self->scores[count] = func_8021035C(self, count);
         count++;
     }

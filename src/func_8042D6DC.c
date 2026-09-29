@@ -35,6 +35,12 @@ extern s32 func_8042AEB8();
 extern void func_8042E080();
 extern void func_80299368(s32);
 
+typedef struct func_8042D6DC_S1 func_8042D6DC_S1;
+struct func_8042D6DC_S1 {
+    char pad0[0x17F0];
+    s32 unk17F0;
+};
+
 s32 func_8042D6DC(void *window, void *arg1, s32 event) {
     s32 state;
     char *object;
@@ -60,7 +66,7 @@ s32 func_8042D6DC(void *window, void *arg1, s32 event) {
             func_8044AFC0(object, 0);
             func_8044A600(object - 0x48, 0, 0);
             func_80286A78(D_8011FE88, 0, 0);
-            *(s32 *)(object + 0x17F0) = 8;
+            ((func_8042D6DC_S1 *)(object))->unk17F0 = 8;
         } else {
             func_8040E958(window, 0);
             func_8029A73C();

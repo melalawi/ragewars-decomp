@@ -15,6 +15,47 @@ extern void func_80208410(void *);
 extern void func_80208AAC(void *arg0);
 extern void func_8020FA10(void *arg0);
 
+typedef struct func_80212A7C_S1 func_80212A7C_S1;
+typedef struct func_80212A7C_S2 func_80212A7C_S2;
+typedef struct func_80212A7C_S3 func_80212A7C_S3;
+typedef struct func_80212A7C_S4 func_80212A7C_S4;
+typedef struct func_80212A7C_S5 func_80212A7C_S5;
+typedef struct func_80212A7C_S6 func_80212A7C_S6;
+struct func_80212A7C_S1 {
+    char pad0[0x1D8];
+    void* unk1D8;
+};
+struct func_80212A7C_S2 {
+    char pad0[0x1454];
+    void* unk1454;
+};
+struct func_80212A7C_S3 {
+    char pad0[0x4];
+    s32 unk4;
+    char pad4[0xC - 0x4 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x14 - 0xC - sizeof(s32)];
+    char unk14;
+    char pad14[0x28 - 0x14 - sizeof(char)];
+    s32 unk28;
+};
+struct func_80212A7C_S4 {
+    char pad0[0x4];
+    s32 unk4;
+    char pad4[0x18 - 0x4 - sizeof(s32)];
+    s32 unk18;
+};
+struct func_80212A7C_S5 {
+    char pad0[0x8];
+    f32 unk8;
+    char pad8[0x38 - 0x8 - sizeof(f32)];
+    u32 unk38;
+};
+struct func_80212A7C_S6 {
+    char pad0[0xC];
+    u32 unkC;
+};
+
 void func_80212A7C(void *arg0)
 {
     void *state;
@@ -25,34 +66,34 @@ void func_80212A7C(void *arg0)
     s32 value;
     u32 flags;
 
-    state = *(void **)((char *)*(void **)((char *)arg0 + 0x1D8) + 0x1454);
+    state = ((func_80212A7C_S2 *)(((func_80212A7C_S1 *)(arg0))->unk1D8))->unk1454;
     table = &D_8013B364;
-    if (*(s32 *)((char *)state + 0xC) == -1) {
+    if (((func_80212A7C_S3 *)(state))->unkC == -1) {
         func_8020D014(table);
         func_8020D1FC((s32)table);
         threshold = *(f32 *)(&D_800C71B8 + 4);
         index = 0;
-        if (*(s32 *)((char *)table + 4) > 0) {
+        if (((func_80212A7C_S4 *)(table))->unk4 > 0) {
             do {
                 entry = func_8020C994(table, index);
-                if (func_8027272C((f32 *)((char *)*(void **)state + 8), entry) < threshold &&
-                    !(*(u32 *)((char *)entry + 0xC) & 0x04300000)) {
+                if (func_8027272C(&((func_80212A7C_S5 *)(*(void **)state))->unk8, entry) < threshold &&
+                    !(((func_80212A7C_S6 *)(entry))->unkC & 0x04300000)) {
                     func_8020D220(table, index);
                 }
                 index++;
-            } while (index < *(s32 *)((char *)table + 4));
+            } while (index < ((func_80212A7C_S4 *)(table))->unk4);
         }
-        func_8020D0CC(table, *(s32 *)((char *)state + 4));
-        func_8020D114(table, (char *)state + 0x14, 4);
-        value = *(s32 *)((char *)table + 0x18);
-        *(s32 *)((char *)state + 0xC) = value;
-        *(s32 *)((char *)state + 0x28) = value;
+        func_8020D0CC(table, ((func_80212A7C_S3 *)(state))->unk4);
+        func_8020D114(table, &((func_80212A7C_S3 *)(state))->unk14, 4);
+        value = ((func_80212A7C_S4 *)(table))->unk18;
+        ((func_80212A7C_S3 *)(state))->unkC = value;
+        ((func_80212A7C_S3 *)(state))->unk28 = value;
     }
     func_80211020(state);
     func_80208410(state);
     func_80208AAC(state);
-    flags = (*(u32 *)((char *)*(void **)state + 0x38) & 0x3000) != 0;
-    if (*(s32 *)((char *)state + 4) == *(s32 *)((char *)state + 0xC) &&
+    flags = (((func_80212A7C_S5 *)(*(void **)state))->unk38 & 0x3000) != 0;
+    if (((func_80212A7C_S3 *)(state))->unk4 == ((func_80212A7C_S3 *)(state))->unkC &&
         !flags) {
         func_8020FA10(state);
     }

@@ -39,10 +39,37 @@ extern Quat func_8024D718(char *);
 extern f32 func_80240A88(Probe *, f32, f32, f32, f32);
 extern void func_80270D40(Quat *, f32, Quat *, Quat *);
 
+typedef struct func_8024D860_S1 func_8024D860_S1;
+typedef struct func_8024D860_S2 func_8024D860_S2;
+struct func_8024D860_S1 {
+    char pad0[0x8];
+    f32 unk8;
+    char pad8[0x10 - 0x8 - sizeof(f32)];
+    f32 unk10;
+    char pad10[0x14 - 0x10 - sizeof(f32)];
+    s32 unk14;
+    char pad14[0x38 - 0x14 - sizeof(s32)];
+    s32 unk38;
+    char pad38[0x100 - 0x38 - sizeof(s32)];
+    s32 unk100;
+};
+struct func_8024D860_S2 {
+    char pad0[0x8];
+    f32 unk8;
+    char pad8[0x10 - 0x8 - sizeof(f32)];
+    f32 unk10;
+    char pad10[0x40 - 0x10 - sizeof(f32)];
+    f32 unk40;
+    char pad40[0x44 - 0x40 - sizeof(f32)];
+    Vec3 unk44;
+    char pad44[0x6C - 0x44 - sizeof(Vec3)];
+    f32 unk6C;
+};
+
 #define MIN(a, b) ((a) > (b) ? (b) : (a))
 
 static inline s32 is_held(char *obj) {
-    return (*(u8 *)obj != 1) ? 0 : (*(s32 *)(obj + 0x100) & 1);
+    return (*(u8 *)obj != 1) ? 0 : (((func_8024D860_S1 *)(obj))->unk100 & 1);
 }
 
 Quat func_8024D860(char *obj) {
@@ -60,17 +87,17 @@ Quat func_8024D860(char *obj) {
     f32 half;
     char *self;
 
-    if (*(s32 *)(obj + 0x14) != 0 && is_held(obj) == 0) {
+    if (((func_8024D860_S1 *)(obj))->unk14 != 0 && is_held(obj) == 0) {
         if (*(u8 *)obj == 1) {
             self = obj;
-            if (*(s32 *)(obj + 0x38) & 3) {
+            if (((func_8024D860_S1 *)(obj))->unk38 & 3) {
                 goto identity;
             }
-            if (*(s32 *)(obj + 0x100) & 0x300000) {
-                if (func_80275854(*(s32 *)(obj + 0x14)) != 0) {
+            if (((func_8024D860_S1 *)(obj))->unk100 & 0x300000) {
+                if (func_80275854(((func_8024D860_S1 *)(obj))->unk14) != 0) {
                     goto identity;
                 }
-                func_80275D04(&normal, *(s32 *)(obj + 0x14));
+                func_80275D04(&normal, ((func_8024D860_S1 *)(obj))->unk14);
                 up.x = 0.0f;
                 up.y = 1.0f;
                 up.z = 0.0f;
@@ -83,14 +110,14 @@ Quat func_8024D860(char *obj) {
                 tilt.z = axis.z * D_80115DEC;
                 tilt.w = func_802BB630(MIN(slope, 0.43633235f) * 0.375f);
                 tilt = func_8024D718(obj);
-                sine = func_802BC200(*(f32 *)(self + 0x6C));
-                cosine = func_802BB630(*(f32 *)(self + 0x6C));
-                probe.dir = *(Vec3 *)(self + 0x44);
-                probe.start.x = *(f32 *)(self + 0x8);
-                probe.start.y = *(f32 *)(self + 0x40);
-                probe.start.z = *(f32 *)(self + 0x10);
-                slope = func_80240A88(&probe, *(f32 *)(obj + 0x8), *(f32 *)(obj + 0x10), *(f32 *)(obj + 0x8) - sine,
-                                      *(f32 *)(obj + 0x10) - cosine);
+                sine = func_802BC200(((func_8024D860_S2 *)(self))->unk6C);
+                cosine = func_802BB630(((func_8024D860_S2 *)(self))->unk6C);
+                probe.dir = ((func_8024D860_S2 *)(self))->unk44;
+                probe.start.x = ((func_8024D860_S2 *)(self))->unk8;
+                probe.start.y = ((func_8024D860_S2 *)(self))->unk40;
+                probe.start.z = ((func_8024D860_S2 *)(self))->unk10;
+                slope = func_80240A88(&probe, ((func_8024D860_S1 *)(obj))->unk8, ((func_8024D860_S1 *)(obj))->unk10, ((func_8024D860_S1 *)(obj))->unk8 - sine,
+                                      ((func_8024D860_S1 *)(obj))->unk10 - cosine);
                 slope = MIN(slope, 25.0f) * 0.75f;
                 half = 0.5f;
                 angle = slope * half;

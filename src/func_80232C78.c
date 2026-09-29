@@ -4,14 +4,37 @@ extern void *D_800D052C[];
 extern f32 D_800C8110;
 extern void func_8022AF64(void *arg0, s32 arg1);
 
+typedef struct func_80232C78_S1 func_80232C78_S1;
+typedef struct func_80232C78_S2 func_80232C78_S2;
+typedef struct func_80232C78_S3 func_80232C78_S3;
+typedef struct func_80232C78_S4 func_80232C78_S4;
+struct func_80232C78_S1 {
+    char pad0[0x1D8];
+    void* unk1D8;
+};
+struct func_80232C78_S2 {
+    char pad0[0x62E];
+    s16 unk62E;
+    char pad62E[0x11C0 - 0x62E - sizeof(s16)];
+    s32 unk11C0;
+};
+struct func_80232C78_S3 {
+    char pad0[0x130];
+    f32 unk130;
+};
+struct func_80232C78_S4 {
+    char pad0[0x18];
+    f32 unk18;
+};
+
 void func_80232C78(void *arg0, void *arg1) {
     void *temp_a0;
     s16 idx;
 
-    temp_a0 = *(void **)((char *)arg0 + 0x1D8);
-    idx = *(s16 *)((char *)temp_a0 + 0x62E);
-    *(f32 *)((char *)arg1 + 0x130) = *(f32 *)((char *)D_800D052C[idx] + 0x18) * D_800C8110;
-    if ((*(s16 *)((char *)temp_a0 + 0x62E) == 8) && (*(s32 *)((char *)temp_a0 + 0x11C0) == 0)) {
+    temp_a0 = ((func_80232C78_S1 *)(arg0))->unk1D8;
+    idx = ((func_80232C78_S2 *)(temp_a0))->unk62E;
+    ((func_80232C78_S3 *)(arg1))->unk130 = ((func_80232C78_S4 *)(D_800D052C[idx]))->unk18 * D_800C8110;
+    if ((((func_80232C78_S2 *)(temp_a0))->unk62E == 8) && (((func_80232C78_S2 *)(temp_a0))->unk11C0 == 0)) {
         func_8022AF64(temp_a0, 0xA3C);
     }
 }

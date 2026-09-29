@@ -10,6 +10,14 @@ struct Node8020D114 {
     Node8020D114 *parent;
 };
 
+typedef struct func_8020D114_S1 func_8020D114_S1;
+struct func_8020D114_S1 {
+    char pad0[0x18];
+    s32 unk18;
+    char pad18[0x24 - 0x18 - sizeof(s32)];
+    Node8020D114* unk24;
+};
+
 void func_8020D114(char *owner, s32 *output, s32 count) {
     s32 i;
     s32 done;
@@ -20,8 +28,8 @@ void func_8020D114(char *owner, s32 *output, s32 count) {
         output[i] = -1;
     }
 
-    node = *(Node8020D114 **)(owner + 0x24);
-    value = *(s32 *)(owner + 0x18);
+    node = ((func_8020D114_S1 *)(owner))->unk24;
+    value = ((func_8020D114_S1 *)(owner))->unk18;
     done = 0;
     if (node == 0) {
         goto not_found;

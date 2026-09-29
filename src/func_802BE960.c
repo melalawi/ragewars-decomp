@@ -21,6 +21,12 @@ extern void *func_802A101C(void *, s32, u32);
 extern u32 func_802C2020(void);
 extern void func_802C2040(u32);
 
+typedef struct func_802BE960_S1 func_802BE960_S1;
+struct func_802BE960_S1 {
+    char pad0[0x14];
+    char unk14;
+};
+
 DeviceState *func_802BE960(void) {
     DeviceState *state;
     u32 lock;
@@ -40,7 +46,7 @@ DeviceState *func_802BE960(void) {
     *(volatile u32 *)0xA460002C = 6;
     *(volatile u32 *)0xA4600030 = 2;
     state->queue = 0;
-    func_802A101C((u8 *)state + 0x14, 0, 0x60);
+    func_802A101C(&((func_802BE960_S1 *)(state))->unk14, 0, 0x60);
     lock = func_802C2020();
     slot = &D_800D83AC;
     previous = *slot;

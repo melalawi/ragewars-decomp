@@ -9,6 +9,12 @@ typedef struct {
     u8 records[1];
 } Object;
 
+typedef struct func_8027899C_S1 func_8027899C_S1;
+struct func_8027899C_S1 {
+    char pad0[0x6];
+    u16 unk6;
+};
+
 void func_8027899C(Object *object, u8 *colors) {
     s32 state;
     s32 i;
@@ -22,7 +28,7 @@ void func_8027899C(Object *object, u8 *colors) {
         end = record + object->count * 0x10;
         if (record != end) {
             do {
-                u16 flags = *(u16 *)(record + 6);
+                u16 flags = ((func_8027899C_S1 *)(record))->unk6;
                 s32 amount;
                 s32 value;
                 u8 *color;

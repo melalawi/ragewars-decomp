@@ -12,6 +12,26 @@ extern StateFlags *D_801042A4;
 extern f32 func_8024D274(InstanceHdr *);
 extern s32 func_80244494(InstanceHdr *arg0, Vec3 current, Vec3 desired, CollisionInfo *arg3);
 
+typedef struct func_80216A6C_S1 func_80216A6C_S1;
+typedef struct func_80216A6C_S2 func_80216A6C_S2;
+typedef struct func_80216A6C_S3 func_80216A6C_S3;
+struct func_80216A6C_S1 {
+    char pad0[0xC];
+    f32 unkC;
+    char padC[0x70 - 0xC - sizeof(f32)];
+    f32 unk70;
+};
+struct func_80216A6C_S2 {
+    char pad0[0x8];
+    Vec3 unk8;
+    char pad8[0x70 - 0x8 - sizeof(Vec3)];
+    f32 unk70;
+};
+struct func_80216A6C_S3 {
+    char pad0[0x8];
+    Vec3 unk8;
+};
+
 s32 func_80216A6C(InstanceHdr *arg0, void *unused, InstanceHdr *target) {
     InstanceHdr saved;
     Vec3 desired;
@@ -19,14 +39,14 @@ s32 func_80216A6C(InstanceHdr *arg0, void *unused, InstanceHdr *target) {
 
     saved = *arg0;
     scale = D_800C72BC;
-    *(f32 *)((char *)arg0 + 0xC) += func_8024D274(arg0) * scale;
-    *(f32 *)((char *)arg0 + 0xC) += *(f32 *)((char *)arg0 + 0x70);
+    ((func_80216A6C_S1 *)(arg0))->unkC += func_8024D274(arg0) * scale;
+    ((func_80216A6C_S1 *)(arg0))->unkC += ((func_80216A6C_S1 *)(arg0))->unk70;
 
-    desired = *(Vec3 *)((char *)target + 8);
+    desired = ((func_80216A6C_S2 *)(target))->unk8;
     desired.y += func_8024D274(target) * scale;
-    desired.y += *(f32 *)((char *)target + 0x70);
+    desired.y += ((func_80216A6C_S2 *)(target))->unk70;
 
-    func_80244494(arg0, *(Vec3 *)((char *)arg0 + 8), desired, &D_80103FD0);
+    func_80244494(arg0, ((func_80216A6C_S3 *)(arg0))->unk8, desired, &D_80103FD0);
     *arg0 = saved;
 
     if (D_8010428C != 0 && (D_8010428C->flags & 2)) {

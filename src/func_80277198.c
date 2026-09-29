@@ -12,6 +12,14 @@ extern f32 D_800D2648[];
 extern f32 D_800D274C[];
 extern void func_802720EC(f32 *);
 
+typedef struct func_80277198_S1 func_80277198_S1;
+struct func_80277198_S1 {
+    char pad0[0x14];
+    Vec3 unk14;
+    char pad14[0xBB - 0x14 - sizeof(Vec3)];
+    u8 unkBB;
+};
+
 s32 func_80277198(void *arg0, u32 arg1, u32 arg2, u32 arg3,
                   Vec3 *arg4, f32 *arg5) {
     f32 temp_f0;
@@ -26,7 +34,7 @@ s32 func_80277198(void *arg0, u32 arg1, u32 arg2, u32 arg3,
     if (!(D_800C9BB0 <= var_f3) && !(var_f3 <= D_800C9BB4) &&
         !(D_800C9BB0 <= *(f32 *)&arg2) && !(*(f32 *)&arg2 <= D_800C9BB4) &&
         !(D_800C9BB0 <= *(f32 *)&arg3) && !(*(f32 *)&arg3 <= D_800C9BB4)) {
-        temp_v1 = *(u8 *)((char *)arg0 + 0xBB);
+        temp_v1 = ((func_80277198_S1 *)(arg0))->unkBB;
         switch (temp_v1) {
         case 0:
             var_f20 = (var_f3 * var_f3) + (*(f32 *)&arg2 * *(f32 *)&arg2) +
@@ -81,8 +89,8 @@ shared:
         } else {
             var_f20 = D_800C9BC0;
         }
-        if (*(u8 *)((char *)arg0 + 0xBB) == 1) {
-            *arg4 = *(Vec3 *)((char *)arg0 + 0x14);
+        if (((func_80277198_S1 *)(arg0))->unkBB == 1) {
+            *arg4 = ((func_80277198_S1 *)(arg0))->unk14;
         } else {
             *arg4 = *(Vec3 *)&arg1;
         }

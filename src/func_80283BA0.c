@@ -12,8 +12,18 @@ typedef struct {
 
 extern D801041F8_Layout D_801041F8;
 
+typedef struct func_80283BA0_S1 func_80283BA0_S1;
+struct func_80283BA0_S1 {
+    char pad0[0x8];
+    Vec3i unk8;
+    char pad8[0x1C - 0x8 - sizeof(Vec3i)];
+    Vec3i unk1C;
+    char pad1C[0x5C - 0x1C - sizeof(Vec3i)];
+    int unk5C;
+};
+
 void func_80283BA0(void *arg0) {
-    *(int *)((char *)arg0 + 0x5C) |= 0x20000;
-    *(Vec3i *)((char *)arg0 + 8) = D_801041F8.first;
-    *(Vec3i *)((char *)arg0 + 0x1C) = D_801041F8.second;
+    ((func_80283BA0_S1 *)(arg0))->unk5C |= 0x20000;
+    ((func_80283BA0_S1 *)(arg0))->unk8 = D_801041F8.first;
+    ((func_80283BA0_S1 *)(arg0))->unk1C = D_801041F8.second;
 }

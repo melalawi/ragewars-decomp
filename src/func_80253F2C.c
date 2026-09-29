@@ -29,6 +29,12 @@ extern void func_802C0390(s32, s32, s32);
 extern s32 func_802C0510(Queue *, s32, s32);
 extern void func_80255F58(void *, s32);
 
+typedef struct func_80253F2C_S1 func_80253F2C_S1;
+struct func_80253F2C_S1 {
+    char pad0[0x10];
+    s32 unk10;
+};
+
 void func_80253F2C(s32 arg0, s32 arg1) {
     s32 temp_v1;
     s32 temp_v1_2;
@@ -77,7 +83,7 @@ found:
 
     if (value != 0) {
         void *object = *(void **)value;
-        *(s32 *)((char *)object + 0x10) = D_80105180;
+        ((func_80253F2C_S1 *)(object))->unk10 = D_80105180;
         func_80255F58(&D_80104570, object);
     }
 

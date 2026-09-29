@@ -36,6 +36,17 @@ typedef struct Record {
     char padC8[4];
 } Record;
 
+typedef struct func_8025B778_S1 func_8025B778_S1;
+typedef struct func_8025B778_S2 func_8025B778_S2;
+struct func_8025B778_S1 {
+    char pad0[0x4];
+    f32 unk4;
+};
+struct func_8025B778_S2 {
+    char pad0[0x4];
+    Record unk4;
+};
+
 void func_8025B778(s32 *arg0, s32 arg1) {
     s32 i;
     s32 idx;
@@ -50,7 +61,7 @@ void func_8025B778(s32 *arg0, s32 arg1) {
     s32 one;
 
     i = 0;
-    k1 = *(f32 *)((char *)&D_800C9068 + 4);
+    k1 = ((func_8025B778_S1 *)(&D_800C9068))->unk4;
     k2 = D_800C9070;
     *arg0 = arg1;
     do {
@@ -68,7 +79,7 @@ void func_8025B778(s32 *arg0, s32 arg1) {
     off = i;
     do {
         rec = (Record *)((u32)off + (u32)arg0);
-        rec = (Record *)((char *)rec + 4);
+        rec = &((func_8025B778_S2 *)(rec))->unk4;
         rec->index = i;
         i += 1;
         rec->owner = arg1;

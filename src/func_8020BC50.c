@@ -41,6 +41,13 @@ extern void func_8020EC14(void *);
 extern void func_8020D220(void *, s32);
 extern s32 func_8020C5A0(Obj8020BC50 *, Node8020BC50 *);
 
+typedef struct func_8020BC50_S1 func_8020BC50_S1;
+typedef union func_8020BC50_S1_UC { u32 v0; u16 v1; } func_8020BC50_S1_UC;
+struct func_8020BC50_S1 {
+    char pad0[0xC];
+    func_8020BC50_S1_UC unkC;
+};
+
 s32 func_8020BC50(Obj8020BC50 *obj, s32 key, s32 requested, void *owner) {
     Node8020BC50 *node;
     s32 found;
@@ -89,7 +96,7 @@ s32 func_8020BC50(Obj8020BC50 *obj, s32 key, s32 requested, void *owner) {
                             (product + requested) * obj->links->stride + 4) != 0) {
                     record = (char *)obj->records +
                              (i * obj->records->stride + 8);
-                    if (record != 0 && (*(u32 *)(record + 0xC) & mask) == 0) {
+                    if (record != 0 && (((func_8020BC50_S1 *)(record))->unkC.v0 & mask) == 0) {
                         func_8020D220(obj, i);
                         found++;
                     }
@@ -111,7 +118,7 @@ s32 func_8020BC50(Obj8020BC50 *obj, s32 key, s32 requested, void *owner) {
                                 (product + requested) * obj->links->stride + 4) != 0) {
                         record = (char *)obj->records +
                                  (i * obj->records->stride + 8);
-                        if (record != 0 && (*(u16 *)(record + 0xC) & 0x400) == 0) {
+                        if (record != 0 && (((func_8020BC50_S1 *)(record))->unkC.v1 & 0x400) == 0) {
                             func_8020D220(obj, i);
                         }
                     }

@@ -1,10 +1,16 @@
 #include "basetypes.h"
 
+typedef struct func_8020C9CC_S1 func_8020C9CC_S1;
+struct func_8020C9CC_S1 {
+    char pad0[0x4];
+    u8 unk4;
+};
+
 s32 func_8020C9CC(void *arg0) {
     u8 temp_v1;
     s32 val;
 
-    temp_v1 = *(u8 *)((char *)arg0 + 4);
+    temp_v1 = ((func_8020C9CC_S1 *)(arg0))->unk4;
     val = temp_v1;
     if (val == 4) {
         goto ret1;

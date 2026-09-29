@@ -7,6 +7,15 @@ typedef struct Node {
     s32 value;
 } Node;
 
+typedef struct func_802598D4_S1 func_802598D4_S1;
+typedef union func_802598D4_S1_UD8 { Node v0; Node* v1; } func_802598D4_S1_UD8;
+struct func_802598D4_S1 {
+    char pad0[0x4];
+    union { Node node; struct { void *first; Node *second; } links; } at4;
+    char pad14[0xD8 - 0x4 - sizeof(Node)];
+    func_802598D4_S1_UD8 unkD8;
+};
+
 void func_802598D4(void *arg0, s32 arg1) {
     Node *node;
     Node *next;
@@ -14,9 +23,9 @@ void func_802598D4(void *arg0, s32 arg1) {
     Node *initial_end;
     Node *tail_end;
 
-    node = *(Node **)((char *)arg0 + 8);
-    tail_end = (Node *)((char *)arg0 + 0xD8);
-    initial_end = (Node *)((char *)arg0 + 4);
+    node = ((func_802598D4_S1 *)(arg0))->at4.links.second;
+    tail_end = &((func_802598D4_S1 *)(arg0))->unkD8.v0;
+    initial_end = &((func_802598D4_S1 *)(arg0))->at4.node;
     if (node != initial_end) {
         end = initial_end;
         do {
@@ -24,10 +33,10 @@ void func_802598D4(void *arg0, s32 arg1) {
             if (node->value == arg1) {
                 node->prev->next = next;
                 node->next->prev = node->prev;
-                node->prev = *(Node **)((char *)arg0 + 0xD8);
+                node->prev = ((func_802598D4_S1 *)(arg0))->unkD8.v1;
                 node->next = tail_end;
-                (*(Node **)((char *)arg0 + 0xD8))->next = node;
-                *(Node **)((char *)arg0 + 0xD8) = node;
+                (((func_802598D4_S1 *)(arg0))->unkD8.v1)->next = node;
+                ((func_802598D4_S1 *)(arg0))->unkD8.v1 = node;
             }
             node = next;
         } while (node != end);

@@ -20,7 +20,9 @@ extern struct RegenRate gFastRegen;
 extern f32 D_800C78B8;
 extern f32 D_800C78BC;
 extern struct RegenRate D_800C78C0;
-extern u8 D_801462E5;
+typedef struct { u8 enabled; u8 reserved[2]; u8 session; } MultiplayerOptions;
+typedef struct { u8 reserved[0x60C]; s32 paused; } SessionState;
+extern MultiplayerOptions D_801462E5;
 extern s32 func_8022ABF0(Player *p);
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
@@ -31,7 +33,7 @@ void func_80220D20(Player *p) {
     f32 cur;
     s32 cap;
     s32 val;
-    u8 *regen;
+    MultiplayerOptions *regen;
 
     if ((p->flags & 4) && p->health > 0) {
         cap = func_8022ABF0(p);
@@ -46,11 +48,11 @@ void func_80220D20(Player *p) {
     }
     regen = &D_801462E5;
     f20 = p->body->speed;
-    if (*regen == 0) return;
+    if (regen->enabled == 0) return;
     if (f20 < D_800C78B8) return;
     cur = p->health;
     if (cur == 0.0f) return;
-    if (p->ctrl->flag != 0 && *(s32 *)(regen + 0x60F) != 0) return;
+    if (p->ctrl->flag != 0 && ((SessionState *)&regen->session)->paused != 0) return;
     f20 = cur + (s32)(f20 * D_800C78BC) * (D_800D2988 * D_800C78C0.unk0);
     p->health = MIN(f20, func_8022ABF0(p));
 }

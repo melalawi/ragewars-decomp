@@ -6,6 +6,12 @@
 extern void func_80255C40(void *, s32, s32);
 extern void func_80255CB4(void *, void *);
 
+typedef struct func_8044B420_S1 func_8044B420_S1;
+struct func_8044B420_S1 {
+    char pad0[0x8C8];
+    s16 unk8C8;
+};
+
 void func_8044B420(char *pool) {
     s32 i;
     char *entry;
@@ -15,5 +21,5 @@ void func_8044B420(char *pool) {
     for (i = 0, entry = pool; i < 4; i++, entry += 0x228) {
         func_80255CB4(pool + 0x8A0, entry);
     }
-    *(s16 *) (pool + 0x8C8) = 0;
+    ((func_8044B420_S1 *)(pool))->unk8C8 = 0;
 }

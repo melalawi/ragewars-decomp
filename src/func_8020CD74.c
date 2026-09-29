@@ -25,6 +25,12 @@ extern s32 func_8024DF4C(void *);
 extern s32 func_8024DF90(void *);
 extern s32 func_80243A80(Instance8020CD74 *, Vec3, CollisionInfo8020CD74 *);
 
+typedef struct func_8020CD74_S1 func_8020CD74_S1;
+struct func_8020CD74_S1 {
+    char pad0[0x100];
+    s32 unk100;
+};
+
 s32 func_8020CD74(s32 **arg0, Instance8020CD74 *arg1, s32 arg2) {
     Vec3 position;
     CollisionInfo8020CD74 collision;
@@ -39,7 +45,7 @@ s32 func_8020CD74(s32 **arg0, Instance8020CD74 *arg1, s32 arg2) {
     position = *(Vec3 *)entry;
     position.y += D_800C6E80[1];
 
-    if ((*(u8 *)arg1 == 1) && (*(s32 *)((u8 *)arg1 + 0x100) & 0x300000)) {
+    if ((*(u8 *)arg1 == 1) && (((func_8020CD74_S1 *)(arg1))->unk100 & 0x300000)) {
         collision = D_801040D0;
     } else {
         first_test = func_8024DED0(arg1);

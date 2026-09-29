@@ -24,6 +24,12 @@ extern f32 func_802BC200(f32);
 extern void func_80271FD8(Vector3 *, Vector3 *, Vector3 *);
 extern void func_80271FA4(Vector3 *, Vector3 *, Vector3 *);
 
+typedef struct func_80279E40_S1 func_80279E40_S1;
+struct func_80279E40_S1 {
+    char pad0[0x1C];
+    Vec3 unk1C;
+};
+
 void func_80279E40(void *arg0, f32 arg1) {
     Vec3 sp10;
     Vec3 sp20;
@@ -76,8 +82,8 @@ void func_80279E40(void *arg0, f32 arg1) {
         temp_f12_2 = M2C_FIELD(arg0, f32 *, 0x1A0) + (M2C_FIELD(arg0, f32 *, 0x1A8) * var_f20 * D_800D2988);
         M2C_FIELD(arg0, f32 *, 0x1A0) = temp_f12_2;
         func_8027200C(&sp50, &sp20, func_802BC200(temp_f12_2) * M2C_FIELD(arg0, f32 *, 0x1B0) * var_f20);
-        func_80271FD8((Vec3 *)((char *)arg0 + 0x1C), (Vec3 *)((char *)arg0 + 0x1C), &sp40);
-        func_80271FA4((Vec3 *)((char *)arg0 + 0x1C), (Vec3 *)((char *)arg0 + 0x1C), &sp50);
+        func_80271FD8(&((func_80279E40_S1 *)(arg0))->unk1C, &((func_80279E40_S1 *)(arg0))->unk1C, &sp40);
+        func_80271FA4(&((func_80279E40_S1 *)(arg0))->unk1C, &((func_80279E40_S1 *)(arg0))->unk1C, &sp50);
         return;
     }
     M2C_FIELD(arg0, f32 *, 0x1A0) = (f32) (M2C_FIELD(arg0, f32 *, 0x1A0) + (M2C_FIELD(arg0, f32 *, 0x1A8) * var_f20 * D_800D2988));

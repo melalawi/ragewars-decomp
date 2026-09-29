@@ -34,6 +34,19 @@ extern f32 func_802BC200(f32);
 extern f32 func_802BB630(f32);
 extern void func_80274108(Quat *, Quat *, Quat *);
 
+typedef struct func_8024D49C_S1 func_8024D49C_S1;
+typedef struct func_8024D49C_S2 func_8024D49C_S2;
+struct func_8024D49C_S1 {
+    char pad0[0x1F0];
+    char* unk1F0;
+};
+struct func_8024D49C_S2 {
+    char pad0[0x8];
+    Vec3 unk8;
+    char pad8[0x70 - 0x8 - sizeof(Vec3)];
+    f32 unk70;
+};
+
 Quat func_8024D49C(char *actor, Vec3 point) {
     Vec3 origin;
     Vec3 dir;
@@ -51,7 +64,7 @@ Quat func_8024D49C(char *actor, Vec3 point) {
 
     target = 0;
     if (actor != 0 && *(u8 *)actor == 1) {
-        target = *(char **)(actor + 0x1F0);
+        target = ((func_8024D49C_S1 *)(actor))->unk1F0;
         aim = func_8024795C(actor);
         func_802742B4(&aim, matrix);
         local.x = 0.0f;
@@ -74,8 +87,8 @@ Quat func_8024D49C(char *actor, Vec3 point) {
             return result;
         }
     }
-    origin = *(Vec3 *)(target + 0x8);
-    origin.y += *(f32 *)(target + 0x70);
+    origin = ((func_8024D49C_S2 *)(target))->unk8;
+    origin.y += ((func_8024D49C_S2 *)(target))->unk70;
     origin.y += func_8024D274(target) * 0.75f;
     func_80271FD8(&dir, &origin, &point);
     func_802720EC(&dir);

@@ -11,6 +11,12 @@ typedef struct {
     Entry802AB8DC entries[1];
 } Table802AB8DC;
 
+typedef struct func_802AB8DC_S1 func_802AB8DC_S1;
+struct func_802AB8DC_S1 {
+    char pad0[0x8];
+    Entry802AB8DC unk8;
+};
+
 void func_802AB8DC(Table802AB8DC **handle, s32 index, void **out, u8 *tag) {
     Table802AB8DC *table;
     Entry802AB8DC *entry;
@@ -21,7 +27,7 @@ void func_802AB8DC(Table802AB8DC **handle, s32 index, void **out, u8 *tag) {
     *out = 0;
     if (handle != 0) {
         table = *handle;
-        entry = (Entry802AB8DC *)((u8 *)table + 8);
+        entry = &((func_802AB8DC_S1 *)(table))->unk8;
         remainder = index % table->count;
         remainder *= 8;
         remainder += (s32)entry;

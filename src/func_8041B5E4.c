@@ -4,17 +4,32 @@
 
 extern s32 func_8025DF54(s32);
 
+typedef struct func_8041B5E4_S1 func_8041B5E4_S1;
+typedef struct func_8041B5E4_S2 func_8041B5E4_S2;
+struct func_8041B5E4_S1 {
+    char pad0[0x8];
+    void* unk8;
+};
+struct func_8041B5E4_S2 {
+    char pad0[0x4];
+    void* unk4;
+    char pad4[0xE - 0x4 - sizeof(void*)];
+    u16 unkE;
+    char padE[0x10 - 0xE - sizeof(u16)];
+    s8 unk10;
+};
+
 s32 func_8041B5E4(void *arg0) {
     void *p;
 
     func_8025DF54(0xE74);
-    p = *(void **)((char *)arg0 + 8);
+    p = ((func_8041B5E4_S1 *)(arg0))->unk8;
     if (p != 0) {
         do {
-            if (*(u16 *)((char *)p + 0xE) != 8) {
-                *(s8 *)((char *)p + 0x10) = 0x64;
+            if (((func_8041B5E4_S2 *)(p))->unkE != 8) {
+                ((func_8041B5E4_S2 *)(p))->unk10 = 0x64;
             }
-            p = *(void **)((char *)p + 4);
+            p = ((func_8041B5E4_S2 *)(p))->unk4;
         } while (p != 0);
     }
     return 0;

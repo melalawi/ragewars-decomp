@@ -7,29 +7,54 @@ extern void func_802734EC(void *arg0, f32 sx, f32 sy, f32 sz);
 extern void func_80272898(f32 *arg0);
 extern void func_802A35C0(void *arg0, void *arg1, f32 *arg2);
 
+typedef struct func_802A68A0_S1 func_802A68A0_S1;
+typedef struct func_802A68A0_S2 func_802A68A0_S2;
+typedef struct func_802A68A0_S3 func_802A68A0_S3;
+typedef struct func_802A68A0_S4 func_802A68A0_S4;
+struct func_802A68A0_S1 {
+    char pad0[0x7528];
+    void* unk7528;
+};
+struct func_802A68A0_S2 {
+    char pad0[0x4];
+    void* unk4;
+    char pad4[0x1C - 0x4 - sizeof(void*)];
+    void* unk1C;
+    char pad1C[0x24 - 0x1C - sizeof(void*)];
+    f32 unk24;
+};
+struct func_802A68A0_S3 {
+    char pad0[0x118];
+    void* unk118;
+};
+struct func_802A68A0_S4 {
+    char pad0[0x14];
+    s32 unk14;
+};
+
 void func_802A68A0(void *arg0, void *arg1, s32 arg2) {
     f32 local[16];
     f32 scale;
     f32 zero;
     void *node;
 
-    node = *(void **)((char *)arg0 + 0x7528);
+    node = ((func_802A68A0_S1 *)(arg0))->unk7528;
     if (node != 0) {
         zero = 0.0f;
         do {
-            if (*(void **)((char *)node + 0x1C) == arg1 &&
-                *(f32 *)((char *)node + 0x24) > zero &&
-                *(f32 *)((char *)node + 0x24) > zero) {
+            if (((func_802A68A0_S2 *)(node))->unk1C == arg1 &&
+                ((func_802A68A0_S2 *)(node))->unk24 > zero &&
+                ((func_802A68A0_S2 *)(node))->unk24 > zero) {
                 func_80270980(local, arg2);
                 scale = D_800CB028;
-                if (*(s32 *)((char *)*(void **)((char *)arg1 + 0x118) + 0x14) != 0) {
+                if (((func_802A68A0_S4 *)(((func_802A68A0_S3 *)(arg1))->unk118))->unk14 != 0) {
                     scale = D_800CB02C;
                 }
                 func_802734EC(local, scale, scale, scale);
                 func_80272898(local);
                 func_802A35C0(arg0, node, local);
             }
-            node = *(void **)((char *)node + 4);
+            node = ((func_802A68A0_S2 *)(node))->unk4;
         } while (node != 0);
     }
 }

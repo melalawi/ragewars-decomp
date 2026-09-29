@@ -14,6 +14,12 @@ typedef struct Block {
     void *data;
 } Block;
 
+typedef struct func_8023C84C_S1 func_8023C84C_S1;
+struct func_8023C84C_S1 {
+    char pad0[0xC];
+    void* unkC;
+};
+
 void func_8023C84C(s32 arg0) {
     char sp10[0x18];
     Block block;
@@ -26,5 +32,5 @@ void func_8023C84C(s32 arg0) {
     block.data = sp10;
     func_802C0510(&D_80103254, &block, 1);
     func_802C0390(sp10, &sp3C, 1);
-    func_802537D8(0, *(void **)((char *)sp3C + 0xC));
+    func_802537D8(0, ((func_8023C84C_S1 *)(sp3C))->unkC);
 }

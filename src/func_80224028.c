@@ -16,6 +16,12 @@ struct Object {
 extern f32 D_800C7A38[];
 extern void func_802748E0(void *, f32, f32);
 
+typedef struct func_80224028_S1 func_80224028_S1;
+struct func_80224028_S1 {
+    char pad0[0x740];
+    char unk740;
+};
+
 void func_80224028(struct Object *object) {
     f32 level;
 
@@ -24,5 +30,5 @@ void func_80224028(struct Object *object) {
     } else {
         level = D_800C7A38[1];
     }
-    func_802748E0((char *) object + 0x740, level, 0.5f);
+    func_802748E0(&((func_80224028_S1 *)(object))->unk740, level, 0.5f);
 }

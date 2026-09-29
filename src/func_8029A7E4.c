@@ -8,15 +8,23 @@ typedef struct {
     int nextId;
 } Entry;
 
-extern char *D_8014D080;
+typedef struct func_8029A7E4_S1 func_8029A7E4_S1;
+struct func_8029A7E4_S1 {
+    char pad0[0x1C];
+    int unk1C;
+    char pad1C[0x20 - 0x1C - sizeof(int)];
+    Entry unk20;
+};
+
+extern func_8029A7E4_S1 *D_8014D080;
 
 int func_8029A7E4(int id) {
     int i;
     int *key;
     Entry *entry;
 
-    key = (int *)(D_8014D080 + 0x1C);
-    entry = (Entry *)(D_8014D080 + 0x20);
+    key = &D_8014D080->unk1C;
+    entry = &D_8014D080->unk20;
     for (i = 0; i < 64; i++) {
         if (*key == id) {
             if (entry->override != 0) {

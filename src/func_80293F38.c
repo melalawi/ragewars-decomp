@@ -6,6 +6,12 @@ extern volatile s32 D_800D29CC;
 extern u32 func_80265370(void);
 extern s32 func_802938E8(s32 arg0, u32 arg1, s32 arg2, s32 arg3);
 
+typedef struct func_80293F38_S1 func_80293F38_S1;
+struct func_80293F38_S1 {
+    char pad0[0x26DB0];
+    f32 unk26DB0;
+};
+
 void func_80293F38(void *arg0) {
     s32 var_a2;
     s32 call_result;
@@ -16,7 +22,7 @@ void func_80293F38(void *arg0) {
     if ((result > 0x400000U) && (D_800D29C8 != 0)) {
         var_a2 = 3;
     }
-    if (*(f32 *)((char *)arg0 + 0x26DB0) > D_800CA5B0) {
+    if (((func_80293F38_S1 *)(arg0))->unk26DB0 > D_800CA5B0) {
         D_800D29CC = 0;
     }
     if (D_800D29CC != 0) {

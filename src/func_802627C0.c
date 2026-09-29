@@ -38,16 +38,27 @@ extern void func_80255C58(void *, Effect *);
 extern void func_80246690(Effect *, s32, s32, s32, s32, s32, s32, f32, Vec3f, s32, Vec3f, Vec3f, s32);
 extern void func_8024B2C0(Effect *);
 
+typedef struct func_802627C0_S1 func_802627C0_S1;
+typedef union func_802627C0_S1_U5F00 { Effect* v0; char v1; } func_802627C0_S1_U5F00;
+struct func_802627C0_S1 {
+    char pad0[0x5F00];
+    func_802627C0_S1_U5F00 unk5F00;
+    char pad5F00[0x5F14 - 0x5F00 - sizeof(func_802627C0_S1_U5F00)];
+    char unk5F14;
+    char pad5F14[0x5F24 - 0x5F14 - sizeof(char)];
+    s32 unk5F24;
+};
+
 static inline Effect *take_effect(void *scene, s32 *ref) {
     Effect *effect;
 
-    if (D_8013B290 == 0 && (unsigned int)*(s32 *)((char *)scene + 0x5F24) >= 3) {
+    if (D_8013B290 == 0 && (unsigned int)((func_802627C0_S1 *)(scene))->unk5F24 >= 3) {
         return 0;
     }
-    effect = *(Effect **)((char *)scene + 0x5F00);
+    effect = ((func_802627C0_S1 *)(scene))->unk5F00.v0;
     if (effect != 0) {
-        func_80255E78((char *)scene + 0x5F00, effect);
-        func_80255C58((char *)scene + 0x5F14, effect);
+        func_80255E78(&((func_802627C0_S1 *)(scene))->unk5F00.v1, effect);
+        func_80255C58(&((func_802627C0_S1 *)(scene))->unk5F14, effect);
         effect->ref = ref;
         if (ref != 0) {
             *ref += 1;

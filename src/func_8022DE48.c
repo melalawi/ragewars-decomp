@@ -15,6 +15,38 @@ extern s32 func_8024490C(void *arg0, Vec3 arg1, Vec3 arg2, void *arg3,
 extern char D_801040F0;
 extern char D_80103FCC[];
 
+typedef struct func_8022DE48_S1 func_8022DE48_S1;
+typedef struct func_8022DE48_S2 func_8022DE48_S2;
+typedef struct func_8022DE48_S3 func_8022DE48_S3;
+typedef struct func_8022DE48_S4 func_8022DE48_S4;
+typedef union func_8022DE48_S3_U8 { f32 v0; Vec3 v1; } func_8022DE48_S3_U8;
+struct func_8022DE48_S1 {
+    char pad0[0x18];
+    void* unk18;
+    char pad18[0x6EC - 0x18 - sizeof(void*)];
+    f32 unk6EC;
+    char pad6EC[0x6F4 - 0x6EC - sizeof(f32)];
+    f32 unk6F4;
+    char pad6F4[0x718 - 0x6F4 - sizeof(f32)];
+    f32 unk718;
+    char pad718[0x720 - 0x718 - sizeof(f32)];
+    f32 unk720;
+    char pad720[0x780 - 0x720 - sizeof(f32)];
+    f32 unk780;
+};
+struct func_8022DE48_S2 {
+    char pad0[0xF4];
+    f32 unkF4;
+};
+struct func_8022DE48_S3 {
+    char pad0[0x8];
+    func_8022DE48_S3_U8 unk8;
+};
+struct func_8022DE48_S4 {
+    char pad0[0xE8];
+    f32 unkE8;
+};
+
 void func_8022DE48(void *arg0, void *arg1) {
     Vec3 next;
     f32 temp_f0;
@@ -24,27 +56,27 @@ void func_8022DE48(void *arg0, void *arg1) {
     f32 temp_f22;
     f32 var_f23;
 
-    var_f23 = (((*(f32 *)((char *)*(void **)((char *)arg0 + 0x18) + 0xF4) -
-                    *(f32 *)((char *)arg0 + 0x780)) -
-                   *(f32 *)((char *)arg0 + 0x718)) -
-                  *(f32 *)((char *)arg0 + 0x720)) -
-                 *(f32 *)((char *)arg0 + 0x6F4);
+    var_f23 = (((((func_8022DE48_S2 *)(((func_8022DE48_S1 *)(arg0))->unk18))->unkF4 -
+                    ((func_8022DE48_S1 *)(arg0))->unk780) -
+                   ((func_8022DE48_S1 *)(arg0))->unk718) -
+                  ((func_8022DE48_S1 *)(arg0))->unk720) -
+                 ((func_8022DE48_S1 *)(arg0))->unk6F4;
     if (var_f23 > 0.0f) {
         temp_f22 = func_8024E454(arg1);
         temp_f21 = func_8024D388(arg1);
         temp_f20 = func_8024D274(arg1);
         temp_f0 = func_8024E410(arg1);
-        next.x = *(f32 *)((char *)arg1 + 8);
-        next.y = *(f32 *)((char *)arg1 + 0xC) + var_f23;
-        next.z = *(f32 *)((char *)arg1 + 0x10);
-        if (func_8024490C(arg1, *(Vec3 *)((char *)arg1 + 8), next,
+        next.x = ((func_8022DE48_S3 *)(arg1))->unk8.v0;
+        next.y = ((func_8022DE48_S3 *)(arg1))->unk8.v1.y + var_f23;
+        next.z = ((func_8022DE48_S3 *)(arg1))->unk8.v1.z;
+        if (func_8024490C(arg1, ((func_8022DE48_S3 *)(arg1))->unk8.v1, next,
                            &D_801040F0, temp_f22, temp_f21, temp_f20,
                            temp_f0) != 0) {
-            temp_f1 = *(f32 *)((char *)*(void **)D_80103FCC + 0xE8) -
-                      *(f32 *)((char *)arg1 + 0xC);
-            *(f32 *)((char *)arg0 + 0x6EC) -= var_f23 - temp_f1;
+            temp_f1 = ((func_8022DE48_S4 *)(*(void **)D_80103FCC))->unkE8 -
+                      ((func_8022DE48_S3 *)(arg1))->unk8.v1.y;
+            ((func_8022DE48_S1 *)(arg0))->unk6EC -= var_f23 - temp_f1;
             var_f23 = temp_f1;
         }
     }
-    *(f32 *)((char *)arg0 + 0x6F4) += var_f23;
+    ((func_8022DE48_S1 *)(arg0))->unk6F4 += var_f23;
 }

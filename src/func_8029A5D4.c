@@ -28,6 +28,12 @@ extern s32 func_80411E70(s32 value);
 extern s32 func_80298A34(s32, s32, s32, s32);
 extern s32 func_80297E3C(s32, s32, s32, s32, s32);
 
+typedef struct func_8029A5D4_S1 func_8029A5D4_S1;
+struct func_8029A5D4_S1 {
+    char pad0[0xC];
+    s16 unkC;
+};
+
 s32 func_8029A5D4(s32 value, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     Manager *manager;
     s32 blockedValue;
@@ -58,7 +64,7 @@ s32 func_8029A5D4(s32 value, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
         }
         D_8014D080->dispatching = saved;
     }
-    if (value == *(s16 *)((char *)D_8014D080->entries[D_8014D080->index].object + 0xC)) {
+    if (value == ((func_8029A5D4_S1 *)(D_8014D080->entries[D_8014D080->index].object))->unkC) {
         result = func_80298A34(arg1, arg2, arg3, arg4);
     } else {
         result = func_80297E3C(value, arg1, arg2, arg3, arg4);

@@ -24,6 +24,19 @@ extern void func_802B7520(Node *arg0);
 extern void func_802B7550(Node *arg0, Node *arg1);
 extern void func_802B4E3C(void *arg0, Node *arg1);
 
+typedef struct func_802B4C3C_S1 func_802B4C3C_S1;
+typedef struct func_802B4C3C_S2 func_802B4C3C_S2;
+struct func_802B4C3C_S1 {
+    char pad0[0x24];
+    s32 unk24;
+    char pad24[0x48 - 0x24 - sizeof(s32)];
+    char unk48;
+};
+struct func_802B4C3C_S2 {
+    char pad0[0x8];
+    volatile s32 unk8;
+};
+
 void func_802B4C3C(void *arg0, Message *arg1) {
     volatile s32 padding[4];
     s32 total = 0;
@@ -36,14 +49,14 @@ void func_802B4C3C(void *arg0, Message *arg1) {
         if (arg1->unk9 != 0x51) {
             return;
         }
-        scale = *(s32 *)((char *)arg0 + 0x24);
+        scale = ((func_802B4C3C_S1 *)(arg0))->unk24;
         func_802B4ECC(arg0,
                       (f32)((arg1->unkB << 16) | (arg1->unkC << 8) | arg1->unkD));
 
         node = *(Node *volatile *)((char *)arg0 + 0x50);
         while (node != 0) {
             next = *(Node *volatile *)((char *)node + 0);
-            total += *(volatile s32 *)((char *)node + 8);
+            total += ((func_802B4C3C_S2 *)(node))->unk8;
             if (node->type == 0x15) {
                 s32 node_total;
 
@@ -68,8 +81,8 @@ void func_802B4C3C(void *arg0, Message *arg1) {
         node = head;
         while (node != 0) {
             next = node->prev;
-            node->value = (node->value / scale) * *(s32 *)((char *)arg0 + 0x24);
-            func_802B4E3C((char *)arg0 + 0x48, node);
+            node->value = (node->value / scale) * ((func_802B4C3C_S1 *)(arg0))->unk24;
+            func_802B4E3C(&((func_802B4C3C_S1 *)(arg0))->unk48, node);
             node = next;
         }
     }

@@ -9,13 +9,25 @@ extern void func_8044ED1C();
 extern void func_802ABD04();
 extern void func_802AC34C(void *, void *, s32, void *);
 
+typedef struct func_8044ECB0_S1 func_8044ECB0_S1;
+struct func_8044ECB0_S1 {
+    char pad0[0x90];
+    s32 unk90;
+    char pad90[0x94 - 0x90 - sizeof(s32)];
+    s32 unk94;
+    char pad94[0x98 - 0x94 - sizeof(s32)];
+    s32 unk98;
+    char pad98[0x9C - 0x98 - sizeof(s32)];
+    s32 unk9C;
+};
+
 void func_8044ECB0(char *object) {
-    *(s32 *) (object + 0x90) = 0;
-    *(s32 *) (object + 0x94) = 0;
-    *(s32 *) (object + 0x98) = 0;
-    *(s32 *) (object + 0x9C) = 0;
+    ((func_8044ECB0_S1 *)(object))->unk90 = 0;
+    ((func_8044ECB0_S1 *)(object))->unk94 = 0;
+    ((func_8044ECB0_S1 *)(object))->unk98 = 0;
+    ((func_8044ECB0_S1 *)(object))->unk9C = 0;
     func_8044ED1C();
     func_802ABD04();
-    func_802AC34C(object, D_800D3080, 0x75, object + 0xC8);
-    func_802AC34C(object, D_800D2F94, 0x75, object + 0x1C8);
+    func_802AC34C(object, D_800D3080, 0x75, (char *)object + 0xC8);
+    func_802AC34C(object, D_800D2F94, 0x75, (char *)object + 0x1C8);
 }

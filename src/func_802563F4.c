@@ -14,6 +14,12 @@ extern Chunk *func_8025663C(void *arg0);
 extern s32 func_802C0250(Queue *, void *, s32);
 extern s32 func_802C0510(Queue *, s32, s32);
 
+typedef struct func_802563F4_S1 func_802563F4_S1;
+struct func_802563F4_S1 {
+    char pad0[0x230];
+    char unk230;
+};
+
 void func_802563F4(void *arg0, void *source, s32 length, void *destination,
                    Queue *queue, s32 value, s32 direct) {
     s32 remaining;
@@ -28,7 +34,7 @@ void func_802563F4(void *arg0, void *source, s32 length, void *destination,
             chunk->length = length;
             chunk->queue = queue;
             chunk->value = value;
-            func_802C0250((Queue *)((char *)arg0 + 0x230), chunk, 1);
+            func_802C0250(&((func_802563F4_S1 *)(arg0))->unk230, chunk, 1);
         }
     } else {
         remaining = length;
@@ -52,7 +58,7 @@ void func_802563F4(void *arg0, void *source, s32 length, void *destination,
                 chunk->queue = queue;
                 chunk->value = value;
             }
-            func_802C0510((Queue *)((char *)arg0 + 0x230), (s32)chunk, 1);
+            func_802C0510(&((func_802563F4_S1 *)(arg0))->unk230, (s32)chunk, 1);
         } while ((chunk != 0) && (remaining != 0));
     }
 }

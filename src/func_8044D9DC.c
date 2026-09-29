@@ -51,6 +51,12 @@ extern void func_8026E158(void *handle);
 extern void *func_8028FD94(void *node, s32 index);
 extern s32 func_8028FE1C(s32, s32, s32, s32 *);
 
+typedef struct func_8044D9DC_S1 func_8044D9DC_S1;
+struct func_8044D9DC_S1 {
+    char pad0[0x8];
+    Cell unk8;
+};
+
 void func_8044D9DC(Level *level) {
     s32 size;
     s32 width;
@@ -78,7 +84,7 @@ void func_8044D9DC(Level *level) {
     width = ((List *) func_8028FD94(level->grid, 0))->count;
     row = 0;
     rows = ((List *) func_8028FD94(level->grid, 2))->count;
-    cells = (Cell *) ((char *) func_8028FD94(level->grid, 4) + 8);
+    cells = &((func_8044D9DC_S1 *)(func_8028FD94(level->grid, 4)))->unk8;
     lastRow = rows - 1;
     lastCol = width - 1;
     /* FAKEMATCH: constant-holding local first keeps the column loop's entry test as slt */

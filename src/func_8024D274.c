@@ -6,29 +6,64 @@
 
 extern f32 func_8024E3B4(void *);
 
+typedef struct func_8024D274_S1 func_8024D274_S1;
+typedef struct func_8024D274_S2 func_8024D274_S2;
+typedef struct func_8024D274_S3 func_8024D274_S3;
+typedef struct func_8024D274_S4 func_8024D274_S4;
+struct func_8024D274_S1 {
+    char pad0[0x18];
+    void* unk18;
+    char pad18[0x100 - 0x18 - sizeof(void*)];
+    s32 unk100;
+    char pad100[0x174 - 0x100 - sizeof(s32)];
+    s32 unk174;
+    char pad174[0x1D8 - 0x174 - sizeof(s32)];
+    void* unk1D8;
+};
+struct func_8024D274_S2 {
+    char pad0[0x6F4];
+    f32 unk6F4;
+};
+struct func_8024D274_S3 {
+    char pad0[0x1C];
+    f32 unk1C;
+    char pad1C[0x20 - 0x1C - sizeof(f32)];
+    f32 unk20;
+    char pad20[0x30 - 0x20 - sizeof(f32)];
+    f32 unk30;
+    char pad30[0xF4 - 0x30 - sizeof(f32)];
+    f32 unkF4;
+};
+struct func_8024D274_S4 {
+    char pad0[0x14];
+    s32 unk14;
+    char pad14[0x1C - 0x14 - sizeof(s32)];
+    f32 unk1C;
+};
+
 f32 func_8024D274(void *arg0) {
     void *state;
 
-    if (*(u8 *)arg0 == 1 && *(s32 *)((char *)arg0 + 0x174) <= 0) {
+    if (*(u8 *)arg0 == 1 && ((func_8024D274_S1 *)(arg0))->unk174 <= 0) {
         return func_8024E3B4(arg0);
     }
-    switch (*(s32 *)*(void **)((char *)arg0 + 0x18)) {
+    switch (*(s32 *)((func_8024D274_S1 *)(arg0))->unk18) {
     case 11:
-        if (*(u8 *)arg0 == 1 && (*(s32 *)((char *)arg0 + 0x100) & 0x300000) != 0) {
-            return *(f32 *)((char *)*(void **)((char *)arg0 + 0x1D8) + 0x6F4);
+        if (*(u8 *)arg0 == 1 && (((func_8024D274_S1 *)(arg0))->unk100 & 0x300000) != 0) {
+            return ((func_8024D274_S2 *)(((func_8024D274_S1 *)(arg0))->unk1D8))->unk6F4;
         }
-        return *(f32 *)((char *)*(void **)((char *)arg0 + 0x18) + 0xF4);
+        return ((func_8024D274_S3 *)(((func_8024D274_S1 *)(arg0))->unk18))->unkF4;
     case 1:
     case 4:
-        return *(f32 *)((char *)*(void **)((char *)arg0 + 0x18) + 0x30);
+        return ((func_8024D274_S3 *)(((func_8024D274_S1 *)(arg0))->unk18))->unk30;
     case 8:
-        state = *(void **)((char *)arg0 + 0x18);
-        if (*(s32 *)((char *)state + 0x14) & 1) {
+        state = ((func_8024D274_S1 *)(arg0))->unk18;
+        if (((func_8024D274_S4 *)(state))->unk14 & 1) {
             return 122.88f;
         }
-        return *(f32 *)((char *)state + 0x1C);
+        return ((func_8024D274_S4 *)(state))->unk1C;
     case 7:
-        return *(f32 *)((char *)*(void **)((char *)arg0 + 0x18) + 0x20);
+        return ((func_8024D274_S3 *)(((func_8024D274_S1 *)(arg0))->unk18))->unk20;
     case 6:
         return 102.399994f;
     case 0:
@@ -37,7 +72,7 @@ f32 func_8024D274(void *arg0) {
     case 12:
     case 13:
     case 14:
-        return *(f32 *)((char *)*(void **)((char *)arg0 + 0x18) + 0x1C);
+        return ((func_8024D274_S3 *)(((func_8024D274_S1 *)(arg0))->unk18))->unk1C;
     }
     return 0.0f;
 }

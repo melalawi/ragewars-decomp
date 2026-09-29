@@ -27,6 +27,26 @@ extern f32 D_800C9044;
 extern f32 D_800C9048;
 extern f32 D_800D0B28;
 
+typedef struct func_8025AA4C_S1 func_8025AA4C_S1;
+typedef struct func_8025AA4C_S2 func_8025AA4C_S2;
+typedef struct func_8025AA4C_S3 func_8025AA4C_S3;
+struct func_8025AA4C_S1 {
+    char pad0[0x2B98];
+    char* unk2B98;
+};
+struct func_8025AA4C_S2 {
+    char pad0[0x128];
+    f32 unk128;
+    char pad128[0x12C - 0x128 - sizeof(f32)];
+    f32 unk12C;
+    char pad12C[0x130 - 0x12C - sizeof(f32)];
+    f32 unk130;
+};
+struct func_8025AA4C_S3 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 void func_8025AA4C(Emitter *emitter) {
     char *listener;
     f32 dx;
@@ -42,10 +62,10 @@ void func_8025AA4C(Emitter *emitter) {
     if (emitter->reset != 0) {
         emitter->level = D_800C9040;
     }
-    listener = *(char **)((char *)emitter->scene + 0x2B98);
-    dx = emitter->x - *(f32 *)(listener + 0x128);
-    dy = emitter->y - *(f32 *)(listener + 0x12C);
-    dz = emitter->z - *(f32 *)(listener + 0x130);
+    listener = ((func_8025AA4C_S1 *)(emitter->scene))->unk2B98;
+    dx = emitter->x - ((func_8025AA4C_S2 *)(listener))->unk128;
+    dy = emitter->y - ((func_8025AA4C_S2 *)(listener))->unk12C;
+    dz = emitter->z - ((func_8025AA4C_S2 *)(listener))->unk130;
     distance = dx * dx + dy * dy + dz * dz;
     emitter->distance = distance;
     if (emitter->lastDistance < distance) {
@@ -72,8 +92,8 @@ void func_8025AA4C(Emitter *emitter) {
     level = emitter->level;
     if (D_800C9048 < level) {
         emitter->level = D_800C9048;
-    } else if (level < *(f32 *)((char *)&D_800C9048 + 4)) {
-        emitter->level = *(f32 *)((char *)&D_800C9048 + 4);
+    } else if (level < ((func_8025AA4C_S3 *)(&D_800C9048))->unk4) {
+        emitter->level = ((func_8025AA4C_S3 *)(&D_800C9048))->unk4;
     }
     emitter->lastDistance = emitter->distance;
 }

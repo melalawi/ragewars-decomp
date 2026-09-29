@@ -8,33 +8,56 @@ extern s32 func_8025DE74(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
                          s32 arg4, s32 arg5);
 extern void func_8025E13C(s32 arg0);
 
+typedef struct func_802ADB08_S1 func_802ADB08_S1;
+typedef struct func_802ADB08_S2 func_802ADB08_S2;
+struct func_802ADB08_S1 {
+    char pad0[0x6];
+    s16 unk6;
+    char pad6[0x8 - 0x6 - sizeof(s16)];
+    s16 unk8;
+    char pad8[0xC - 0x8 - sizeof(s16)];
+    s16 unkC;
+    char padC[0xE - 0xC - sizeof(s16)];
+    s16 unkE;
+};
+struct func_802ADB08_S2 {
+    char pad0[0x8];
+    s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x10 - 0xC - sizeof(s32)];
+    s32 unk10;
+    char pad10[0x5DC - 0x10 - sizeof(s32)];
+    void* unk5DC;
+};
+
 /** Apply an effect descriptor's optional setup, resource, sound, and callback. */
 s32 func_802ADB08(void *arg0, void *arg1) {
     void *resource;
     s32 sound;
     s32 callback;
-    if (*(s16 *)((char *)arg1 + 0xC) != -1) {
-        func_80222BC4(arg0, *(s16 *)((char *)arg1 + 0xC),
-                      *(s16 *)((char *)arg1 + 0xE));
+    if (((func_802ADB08_S1 *)(arg1))->unkC != -1) {
+        func_80222BC4(arg0, ((func_802ADB08_S1 *)(arg1))->unkC,
+                      ((func_802ADB08_S1 *)(arg1))->unkE);
     }
 
     resource = *(void **)arg1;
-    sound = *(s16 *)((char *)arg1 + 6);
-    callback = *(s16 *)((char *)arg1 + 8);
-    if (*(void **)((char *)arg0 + 0x5DC) != 0) {
-        func_8023919C(*(void **)((char *)arg0 + 0x5DC),
+    sound = ((func_802ADB08_S1 *)(arg1))->unk6;
+    callback = ((func_802ADB08_S1 *)(arg1))->unk8;
+    if (((func_802ADB08_S2 *)(arg0))->unk5DC != 0) {
+        func_8023919C(((func_802ADB08_S2 *)(arg0))->unk5DC,
                       0x80, 0x32, 0x32, 0x4B, 0, 0, 2);
         if (resource != 0) {
             func_80237E70(&D_80145088,
-                          *(void **)((char *)arg0 + 0x5DC),
+                          ((func_802ADB08_S2 *)(arg0))->unk5DC,
                           *(void **)resource);
         }
     }
     if (sound != 0) {
         func_8025DE74(sound,
-                      *(s32 *)((char *)arg0 + 8),
-                      *(s32 *)((char *)arg0 + 0xC),
-                      *(s32 *)((char *)arg0 + 0x10), 0, -1);
+                      ((func_802ADB08_S2 *)(arg0))->unk8,
+                      ((func_802ADB08_S2 *)(arg0))->unkC,
+                      ((func_802ADB08_S2 *)(arg0))->unk10, 0, -1);
     }
     if (callback != 0) {
         func_8025E13C(callback);

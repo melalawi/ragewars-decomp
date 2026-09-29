@@ -35,6 +35,23 @@ extern s32 func_8025DF54(s32);
 extern void func_80237E70(void *arg0, void *arg1, void *arg2);
 extern void func_802C2410(void *arg0, void *arg1, void *arg2);
 
+typedef struct func_8022B7E8_S1 func_8022B7E8_S1;
+typedef struct func_8022B7E8_S2 func_8022B7E8_S2;
+struct func_8022B7E8_S1 {
+    char pad0[0x5DC];
+    void* unk5DC;
+    char pad5DC[0x11E4 - 0x5DC - sizeof(void*)];
+    f32 unk11E4;
+    char pad11E4[0x13E0 - 0x11E4 - sizeof(f32)];
+    void* unk13E0;
+};
+struct func_8022B7E8_S2 {
+    char pad0[0x100];
+    s32 unk100;
+    char pad100[0x5D8 - 0x100 - sizeof(s32)];
+    char* unk5D8;
+};
+
 void func_8022B7E8(void *arg0, void *arg1) {
     char *state = arg0;
     char *source = arg1;
@@ -45,14 +62,14 @@ void func_8022B7E8(void *arg0, void *arg1) {
     Settings *settings;
 #endif
 
-    if (*(f32 *)(state + 0x11E4) != 0.0f) {
+    if (((func_8022B7E8_S1 *)(state))->unk11E4 != 0.0f) {
         return;
     }
 
     func_8025DF54(0xB45);
-    *(f32 *)(state + 0x11E4) = D_800C7E0C;
-    *(void **)(state + 0x13E0) = source;
-    owner = *(void **)(state + 0x5DC);
+    ((func_8022B7E8_S1 *)(state))->unk11E4 = D_800C7E0C;
+    ((func_8022B7E8_S1 *)(state))->unk13E0 = source;
+    owner = ((func_8022B7E8_S1 *)(state))->unk5DC;
     if (owner == 0) {
         return;
     }
@@ -68,13 +85,13 @@ void func_8022B7E8(void *arg0, void *arg1) {
     if (*(u8 *)source != 1) {
         return;
     }
-    if ((*(s32 *)(source + 0x100) & 0x300000) == 0) {
+    if ((((func_8022B7E8_S2 *)(source))->unk100 & 0x300000) == 0) {
         return;
     }
 
     payload = state + 0x13EC;
     func_802C2410(payload, RESOURCE(D_800D71E8),
-                  *(char **)(source + 0x5D8) + 0x84);
-    func_80237E70(GAME, *(void **)(state + 0x5DC), payload);
-    func_80237E70(GAME, *(void **)(state + 0x5DC), RESOURCE(D_800D71EC));
+                  ((func_8022B7E8_S2 *)(source))->unk5D8 + 0x84);
+    func_80237E70(GAME, ((func_8022B7E8_S1 *)(state))->unk5DC, payload);
+    func_80237E70(GAME, ((func_8022B7E8_S1 *)(state))->unk5DC, RESOURCE(D_800D71EC));
 }

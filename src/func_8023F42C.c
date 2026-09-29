@@ -35,6 +35,35 @@ extern Shape D_80104170;
 extern EntityTable D_8011FE88;
 extern void func_8023EEF0(void *, Query *, u8 *);
 
+typedef struct func_8023F42C_S1 func_8023F42C_S1;
+typedef struct func_8023F42C_S2 func_8023F42C_S2;
+struct func_8023F42C_S1 {
+    char pad0[0xC];
+    f32 unkC;
+    char padC[0x10 - 0xC - sizeof(f32)];
+    f32 unk10;
+    char pad10[0x14 - 0x10 - sizeof(f32)];
+    f32 unk14;
+    char pad14[0x40 - 0x14 - sizeof(f32)];
+    Shape* unk40;
+    char pad40[0x44 - 0x40 - sizeof(Shape*)];
+    f32 unk44;
+    char pad44[0x48 - 0x44 - sizeof(f32)];
+    f32 unk48;
+    char pad48[0x4C - 0x48 - sizeof(f32)];
+    f32 unk4C;
+    char pad4C[0x50 - 0x4C - sizeof(f32)];
+    f32 unk50;
+    char pad50[0x54 - 0x50 - sizeof(f32)];
+    f32 unk54;
+    char pad54[0x58 - 0x54 - sizeof(f32)];
+    f32 unk58;
+};
+struct func_8023F42C_S2 {
+    char pad0[0x174];
+    s32 unk174;
+};
+
 void func_8023F42C(char *obj) {
     Query query;
     Query *q;
@@ -47,41 +76,41 @@ void func_8023F42C(char *obj) {
     f32 radius;
     f32 bound;
 
-    shape = *(Shape **)(obj + 0x40);
+    shape = ((func_8023F42C_S1 *)(obj))->unk40;
     if (shape->enabled == 0 || shape == &D_80104170) {
         return;
     }
     table = &D_8011FE88;
     q = &query;
-    radius = *(f32 *)(obj + 0xC);
+    radius = ((func_8023F42C_S1 *)(obj))->unkC;
     self = *(void **)obj;
     q->radius = radius;
     count = table->count;
     q->flag = shape->flags & 0x400;
-    q->bottom = *(f32 *)(obj + 0x14);
-    q->top = q->bottom + *(f32 *)(obj + 0x10);
-    q->bottom1 = *(f32 *)(obj + 0x48) + q->bottom;
-    q->top1 = *(f32 *)(obj + 0x48) + q->top;
-    q->bottom2 = *(f32 *)(obj + 0x54) + q->bottom;
-    q->top2 = *(f32 *)(obj + 0x54) + q->top;
-    bound = *(f32 *)(obj + 0x50);
-    if (!(bound <= *(f32 *)(obj + 0x44))) {
-        bound = *(f32 *)(obj + 0x44);
+    q->bottom = ((func_8023F42C_S1 *)(obj))->unk14;
+    q->top = q->bottom + ((func_8023F42C_S1 *)(obj))->unk10;
+    q->bottom1 = ((func_8023F42C_S1 *)(obj))->unk48 + q->bottom;
+    q->top1 = ((func_8023F42C_S1 *)(obj))->unk48 + q->top;
+    q->bottom2 = ((func_8023F42C_S1 *)(obj))->unk54 + q->bottom;
+    q->top2 = ((func_8023F42C_S1 *)(obj))->unk54 + q->top;
+    bound = ((func_8023F42C_S1 *)(obj))->unk50;
+    if (!(bound <= ((func_8023F42C_S1 *)(obj))->unk44)) {
+        bound = ((func_8023F42C_S1 *)(obj))->unk44;
     }
     q->minX = bound - radius;
-    bound = *(f32 *)(obj + 0x50);
-    if (!(*(f32 *)(obj + 0x44) <= bound)) {
-        bound = *(f32 *)(obj + 0x44);
+    bound = ((func_8023F42C_S1 *)(obj))->unk50;
+    if (!(((func_8023F42C_S1 *)(obj))->unk44 <= bound)) {
+        bound = ((func_8023F42C_S1 *)(obj))->unk44;
     }
     q->maxX = bound + radius;
-    bound = *(f32 *)(obj + 0x58);
-    if (!(bound <= *(f32 *)(obj + 0x4C))) {
-        bound = *(f32 *)(obj + 0x4C);
+    bound = ((func_8023F42C_S1 *)(obj))->unk58;
+    if (!(bound <= ((func_8023F42C_S1 *)(obj))->unk4C)) {
+        bound = ((func_8023F42C_S1 *)(obj))->unk4C;
     }
     q->minZ = bound - radius;
-    bound = *(f32 *)(obj + 0x58);
-    if (!(*(f32 *)(obj + 0x4C) <= bound)) {
-        bound = *(f32 *)(obj + 0x4C);
+    bound = ((func_8023F42C_S1 *)(obj))->unk58;
+    if (!(((func_8023F42C_S1 *)(obj))->unk4C <= bound)) {
+        bound = ((func_8023F42C_S1 *)(obj))->unk4C;
     }
     q->maxZ = bound + radius;
     for (i = 0; i < count; i++) {
@@ -93,7 +122,7 @@ void func_8023F42C(char *obj) {
         case 2:
             break;
         case 1:
-            if ((shape->flags & 1) && *(s32 *)(entity + 0x174) == 0) {
+            if ((shape->flags & 1) && ((func_8023F42C_S2 *)(entity))->unk174 == 0) {
                 continue;
             }
             break;

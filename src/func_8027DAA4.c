@@ -51,6 +51,12 @@ extern void func_80272908(void *matrix, Vec3 *in, Vec3 *out);
 extern void func_80272BA8(void *matrix, Vec3 *in, Vec3 *out);
 extern void func_80226DAC(Model *model, f32 *out);
 
+typedef struct func_8027DAA4_S1 func_8027DAA4_S1;
+struct func_8027DAA4_S1 {
+    char pad0[0x160];
+    char unk160;
+};
+
 void func_8027DAA4(Actor *actor, Vec3 *outPosition, Vec3 *outHeading) {
     f32 matrix[16];
     Vec3 position;
@@ -95,7 +101,7 @@ void func_8027DAA4(Actor *actor, Vec3 *outPosition, Vec3 *outHeading) {
         owner = actor->owner;
         if (owner->flags & 0x300000) {
             if (owner->model->matrices != 0) {
-                transform = (char *)owner->model->matrices + 0x160;
+                transform = &((func_8027DAA4_S1 *)(owner->model->matrices))->unk160;
             } else {
                 func_80226DAC(owner->model, built);
                 transform = built;

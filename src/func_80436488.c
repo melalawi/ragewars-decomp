@@ -6,6 +6,7 @@
    at D_80145088), stops those objects and the ones 0x48 bytes before them, releases resource 0x24
    of D_8011FE88, restarts func_8025470C when func_8025471C reports it idle, and calls
    func_8025E3A4 and func_8042E080. Returns zero. */
+typedef struct { void * unk0; } func_80436488_G1;
 extern void *D_800E5558;
 extern char D_80145088[];
 extern char D_8011FE88[];
@@ -21,7 +22,14 @@ extern void func_8025470C(s32);
 extern void func_8025E3A4(void);
 extern void func_8042E080(void);
 
+typedef struct func_80436488_S1 func_80436488_S1;
+struct func_80436488_S1 {
+    char pad0[0x180C];
+    s32 unk180C;
+};
+
 s32 func_80436488(s32 arg0, s32 arg1, s32 event) {
+    s32 *pause;
     if (event == 1) {
         if (func_8043C4E8(D_800E5558) != 1) {
             return 0;
@@ -32,9 +40,10 @@ s32 func_80436488(s32 arg0, s32 arg1, s32 event) {
             return 0;
         }
         func_8029A73C();
-        *(s32 *)(D_80145088 + 0x180C) = 0;
-        func_8044AFC0(D_80145088, 0);
-        func_8044A600(D_80145088 - 0x48, 0, 0);
+        pause = &((func_80436488_S1 *)D_80145088)->unk180C;
+        *pause = 0;
+        func_8044AFC0((char *)pause - 0x180C, 0);
+        func_8044A600((char *)pause - 0x1854, 0, 0);
         func_80286A78(D_8011FE88, 0x24, 0);
         if (func_8025471C() == 0) {
             func_8025470C(1);

@@ -31,6 +31,12 @@ extern s32 func_80265670(PlayerRecord *bits, s32 bit);
 extern void func_80439E60(void *record, s32 count);
 extern void func_80439EB4(void *object, s32 value);
 
+typedef struct func_8041D550_S1 func_8041D550_S1;
+struct func_8041D550_S1 {
+    char pad0[0x8];
+    char unk8;
+};
+
 /** Looks up the id table entry for the current menu's focused node; on a match, checks the current player's unlock bit, picks a message via a 14-way switch or a default, and shows it, closing the menu on a further condition. Falls back to clearing the message when there is no focus, no unlock, or the loop runs out. */
 void func_8041D550(void) {
     s32 i;
@@ -38,7 +44,7 @@ void func_8041D550(void) {
     s32 s2;
 
     if (D_800E3590->unkEC == 0) {
-        func_80439E60((u8 *) D_800E3590 + 8, 0);
+        func_80439E60(&((func_8041D550_S1 *)(D_800E3590))->unk8, 0);
         return;
     }
 
@@ -96,15 +102,15 @@ void func_8041D550(void) {
                     a1 = 0xE74;
                     s2 = i;
                 }
-                func_80439E60((u8 *) D_800E3590 + 8, a1);
-                func_80439EB4((u8 *) D_800E3590 + 8, s2);
+                func_80439E60(&((func_8041D550_S1 *)(D_800E3590))->unk8, a1);
+                func_80439EB4(&((func_8041D550_S1 *)(D_800E3590))->unk8, s2);
                 if (func_8025471C() == 0) {
                     func_8025470C(1);
                 }
                 return;
             }
 
-            func_80439E60((u8 *) D_800E3590 + 8, 0);
+            func_80439E60(&((func_8041D550_S1 *)(D_800E3590))->unk8, 0);
             return;
         }
         i += 1;

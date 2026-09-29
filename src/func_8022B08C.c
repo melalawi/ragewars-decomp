@@ -13,6 +13,17 @@ typedef struct Matrix {
 extern void func_80226DAC(char *, Matrix *);
 extern void func_80272908(void *, void *, void *);
 
+typedef struct func_8022B08C_S1 func_8022B08C_S1;
+typedef struct func_8022B08C_S2 func_8022B08C_S2;
+struct func_8022B08C_S1 {
+    char pad0[0x5DC];
+    Matrix* unk5DC;
+};
+struct func_8022B08C_S2 {
+    char pad0[0x160];
+    Matrix unk160;
+};
+
 void func_8022B08C(void *arg0, Vec3 *arg1) {
     Vec3 input;
     Matrix matrix;
@@ -21,10 +32,10 @@ void func_8022B08C(void *arg0, Vec3 *arg1) {
 
     input = *arg1;
     input_ptr = &input;
-    matrix_ptr = *(Matrix **)((char *)arg0 + 0x5DC);
+    matrix_ptr = ((func_8022B08C_S1 *)(arg0))->unk5DC;
 
     if (matrix_ptr != 0) {
-        matrix_ptr = (Matrix *)((char *)matrix_ptr + 0x160);
+        matrix_ptr = &((func_8022B08C_S2 *)(matrix_ptr))->unk160;
     } else {
         func_80226DAC(arg0, &matrix);
         matrix_ptr = &matrix;

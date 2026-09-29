@@ -14,7 +14,13 @@ extern void func_802C2040(u32 arg0);
 extern void func_802C145C(void *arg0);
 extern s32 func_802C1648(Queue *arg0);
 extern void func_802C0840(s32 arg0);
-extern void *D_800D92A0;
+typedef struct func_802C0250_S1 func_802C0250_S1;
+struct func_802C0250_S1 {
+    char pad0[0x10];
+    s16 unk10;
+};
+
+extern func_802C0250_S1 *D_800D92A0;
 
 s32 func_802C0250(Queue *arg0, void *arg1, s32 arg2) {
     u32 saved;
@@ -26,7 +32,7 @@ s32 func_802C0250(Queue *arg0, void *arg1, s32 arg2) {
             func_802C2040(saved);
             return -1;
         }
-        *(s16 *)((char *)D_800D92A0 + 0x10) = 8;
+        D_800D92A0->unk10 = 8;
         func_802C145C(&arg0->unk04);
     }
 

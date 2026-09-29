@@ -18,6 +18,23 @@ extern Queue *func_802BDE70(void);
 extern s32 func_802C0250(Queue *, void *, s32);
 extern s32 func_802C0510(Queue *, s32, s32);
 
+typedef struct func_802BDDC0_S1 func_802BDDC0_S1;
+struct func_802BDDC0_S1 {
+    s16 unk0;
+    char pad0[0x2 - 0x0 - sizeof(s16)];
+    s8 unk2;
+    char pad2[0x4 - 0x2 - sizeof(s8)];
+    s32 unk4;
+    char pad4[0x8 - 0x4 - sizeof(s32)];
+    s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x10 - 0xC - sizeof(s32)];
+    s32 unk10;
+    char pad10[0x14 - 0x10 - sizeof(s32)];
+    s32 unk14;
+};
+
 s32 func_802BDDC0(void *entry, s32 subtype, s32 arg2, s32 arg3,
                    s32 arg4, s32 arg5, s32 arg6) {
     s16 type;
@@ -29,13 +46,13 @@ s32 func_802BDDC0(void *entry, s32 subtype, s32 arg2, s32 arg3,
     if (arg2 == 0) {
         type = 11;
     }
-    *(s16 *)((s8 *)entry + 0) = type;
-    *(s8 *)((s8 *)entry + 2) = subtype;
-    *(s32 *)((s8 *)entry + 4) = arg6;
-    *(s32 *)((s8 *)entry + 8) = arg4;
-    *(s32 *)((s8 *)entry + 0xC) = arg3;
-    *(s32 *)((s8 *)entry + 0x10) = arg5;
-    *(s32 *)((s8 *)entry + 0x14) = 0;
+    ((func_802BDDC0_S1 *)(entry))->unk0 = type;
+    ((func_802BDDC0_S1 *)(entry))->unk2 = subtype;
+    ((func_802BDDC0_S1 *)(entry))->unk4 = arg6;
+    ((func_802BDDC0_S1 *)(entry))->unk8 = arg4;
+    ((func_802BDDC0_S1 *)(entry))->unkC = arg3;
+    ((func_802BDDC0_S1 *)(entry))->unk10 = arg5;
+    ((func_802BDDC0_S1 *)(entry))->unk14 = 0;
     if (subtype != 1) {
         return func_802C0510(func_802BDE70(), (s32)entry, 0);
     }

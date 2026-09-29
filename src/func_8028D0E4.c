@@ -17,6 +17,16 @@ extern u8 D_8011FAC0[];
 extern void func_80293100(void *arg0, s8 *arg1, s32 arg2, s32 arg3,
                           s32 arg4, s32 arg5);
 
+typedef struct func_8028D0E4_S1 func_8028D0E4_S1;
+struct func_8028D0E4_S1 {
+    char pad0[0x1B410];
+    s32 unk1B410;
+    char pad1B410[0x1B414 - 0x1B410 - sizeof(s32)];
+    s32 unk1B414;
+    char pad1B414[0x1B418 - 0x1B414 - sizeof(s32)];
+    f32 unk1B418;
+};
+
 void func_8028D0E4(void *arg0) {
     s8 color[4];
     s32 state;
@@ -24,7 +34,7 @@ void func_8028D0E4(void *arg0) {
     f32 alpha;
     s32 converted;
 
-    state = *(s32 *)((char *)arg0 + 0x1B414);
+    state = ((func_8028D0E4_S1 *)(arg0))->unk1B414;
     if (state == 0) {
         return;
     }
@@ -35,12 +45,12 @@ void func_8028D0E4(void *arg0) {
         return;
     }
     {
-        entry = &D_800D2934[*(s32 *)((char *)arg0 + 0x1B410)];
+        entry = &D_800D2934[((func_8028D0E4_S1 *)(arg0))->unk1B410];
         if (entry->value != 0.0f) {
             color[0] = entry->red;
             color[1] = entry->green;
             color[2] = entry->blue;
-            alpha = (*(f32 *)((char *)arg0 + 0x1B418) * D_800CA3E0[1]) /
+            alpha = (((func_8028D0E4_S1 *)(arg0))->unk1B418 * D_800CA3E0[1]) /
                     entry->value;
             if (!(D_800CA3E8 <= alpha)) {
                 converted = (s32)alpha;

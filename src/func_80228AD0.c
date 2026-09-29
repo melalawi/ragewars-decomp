@@ -6,12 +6,16 @@ typedef struct {
     f32 height;
 } ViewState;
 
-extern u8 D_801462DE;
+typedef struct { u8 fade; u8 reserved; u8 state; } HudGlobals;
+typedef struct { u8 reserved[0x5D4]; f32 timer; } HudState;
+extern HudGlobals D_801462DE;
+typedef struct { s32 width; s32 height; } ScreenSize;
 extern s32 D_800E28D0;
 extern s32 D_800D2980;
 extern s32 D_801450B8;
 extern s32 D_800E28D8;
 extern f32 D_800C7CCC;
+typedef struct { f32 scale; f32 remainder; } PositionScale;
 extern f32 D_800C7CD0;
 extern f32 D_800C7CD8;
 extern f32 D_800C7CDC;
@@ -19,6 +23,7 @@ extern f32 D_800C7CE0;
 extern f32 D_800C7CE4;
 extern f32 D_800C7CE8[];
 extern f32 D_800C7CF0[];
+typedef struct { f32 offset; f32 labelOffset; } HudOffsets;
 extern f32 D_800C7CF8;
 extern f32 D_800C7D00[];
 extern s32 D_800C7CC8;
@@ -38,7 +43,7 @@ void func_80228AD0(void *arg0, ViewState *arg1) {
     f32 scale_x;
     f32 scale_y;
     f32 position;
-    u8 *hud;
+    HudGlobals *hud;
 
     if (func_80245774() != 0) {
         return;
@@ -47,16 +52,16 @@ void func_80228AD0(void *arg0, ViewState *arg1) {
         return;
     }
     hud = &D_801462DE;
-    func_802AA224(*hud);
-    if (*(f32 *)(hud + 0x5D6) <= 0.0f) {
+    func_802AA224(hud->fade);
+    if (((HudState *)&hud->state)->timer <= 0.0f) {
         return;
     }
 
-    position = *(f32 *)(hud + 0x5D6) * D_800C7CCC;
+    position = ((HudState *)&hud->state)->timer * D_800C7CCC;
     x = (f32)(s32)(position * D_800C7CD0);
     scale_x = arg1->width / (f32)D_800E28D0;
-    position -= x * *(&D_800C7CD0 + 1);
-    scale_y = arg1->height / (f32)*(&D_800E28D0 + 1);
+    position -= x * ((PositionScale *)&D_800C7CD0)->remainder;
+    scale_y = arg1->height / (f32)((ScreenSize *)&D_800E28D0)->height;
     if ((x < D_800C7CD8) && (position < D_800C7CDC) &&
         ((D_800D2980 % 15U) < 5U)) {
         return;
@@ -74,7 +79,7 @@ void func_80228AD0(void *arg0, ViewState *arg1) {
         }
     } else {
         center_x = (f32)D_800E28D0 * D_800C7CF0[1];
-        center_y = (f32)(*(&D_800E28D0 + 1) - 10) * D_800C7CF0[1];
+        center_y = (f32)(((ScreenSize *)&D_800E28D0)->height - 10) * D_800C7CF0[1];
     }
 
     func_802A921C((s32)x, center_x - (scale_x * D_800C7CF8),
@@ -83,7 +88,7 @@ void func_80228AD0(void *arg0, ViewState *arg1) {
                    center_y, scale_x, scale_y, 1, 0, 2);
     func_802A94E8();
     func_802A9F18(&D_800C7CC8,
-                  (s32)(center_x - (scale_x * *(&D_800C7CF8 + 1))),
+                  (s32)(center_x - (scale_x * ((HudOffsets *)&D_800C7CF8)->labelOffset)),
                   (s32)(center_y - (scale_y * D_800C7D00[0])),
                   0xFF, 0, 0, scale_x, scale_y);
 }

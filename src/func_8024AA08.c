@@ -35,6 +35,47 @@ extern void func_8024ADC0(char *, s32, s32);
 
 #define ABS(x) ((x) < 0.0f ? -(x) : (x))
 
+typedef struct func_8024AA08_S1 func_8024AA08_S1;
+typedef struct func_8024AA08_S2 func_8024AA08_S2;
+typedef struct func_8024AA08_S3 func_8024AA08_S3;
+typedef struct func_8024AA08_S4 func_8024AA08_S4;
+struct func_8024AA08_S1 {
+    char pad0[0x8];
+    f32 unk8;
+    char pad8[0xC - 0x8 - sizeof(f32)];
+    f32 unkC;
+    char padC[0x10 - 0xC - sizeof(f32)];
+    f32 unk10;
+    char pad10[0x14 - 0x10 - sizeof(f32)];
+    s32 unk14;
+    char pad14[0xBC - 0x14 - sizeof(s32)];
+    void* unkBC;
+    char padBC[0x100 - 0xBC - sizeof(void*)];
+    s32 unk100;
+    char pad100[0x13A - 0x100 - sizeof(s32)];
+    u8 unk13A;
+};
+struct func_8024AA08_S2 {
+    char pad0[0x8];
+    u8 unk8;
+    char pad8[0x9 - 0x8 - sizeof(u8)];
+    u8 unk9;
+    char pad9[0x10 - 0x9 - sizeof(u8)];
+    s8 unk10;
+    char pad10[0x11 - 0x10 - sizeof(s8)];
+    s8 unk11;
+    char pad11[0x12 - 0x11 - sizeof(s8)];
+    s8 unk12;
+};
+struct func_8024AA08_S3 {
+    char pad0[0x8];
+    Vec3 unk8;
+};
+struct func_8024AA08_S4 {
+    char pad0[0x14];
+    s32 unk14;
+};
+
 void func_8024AA08(char *obj, s32 unused, char *info) {
     Vec3 dir;
     f32 projection[16];
@@ -48,29 +89,29 @@ void func_8024AA08(char *obj, s32 unused, char *info) {
     char *light;
     s32 alpha;
 
-    if (*(s32 *)(obj + 0x14) == 0 || func_8024E148() == 0 || (*(s32 *)(obj + 0x100) & 0x200000)) {
+    if (((func_8024AA08_S1 *)(obj))->unk14 == 0 || func_8024E148() == 0 || (((func_8024AA08_S1 *)(obj))->unk100 & 0x200000)) {
         return;
     }
-    if (*(s32 *)(obj + 0x100) & 0x10000000) {
-        if (*(void **)(obj + 0xBC) == 0) {
+    if (((func_8024AA08_S1 *)(obj))->unk100 & 0x10000000) {
+        if (((func_8024AA08_S1 *)(obj))->unkBC == 0) {
             ground = func_8024E640(obj, 0);
-            if (*(f32 *)(obj + 0xC) < ground) {
+            if (((func_8024AA08_S1 *)(obj))->unkC < ground) {
                 return;
             }
-            diff = *(f32 *)(obj + 0xC) - ground;
+            diff = ((func_8024AA08_S1 *)(obj))->unkC - ground;
             height = (512.0f < diff) ? 512.0f : diff;
-            if ((*(void **)(obj + 0xBC) = func_80279A30(&D_8011FFB0, 1)) == 0) {
+            if ((((func_8024AA08_S1 *)(obj))->unkBC = func_80279A30(&D_8011FFB0, 1)) == 0) {
                 return;
             }
             light = obj + (D_800D297C * 0x18 + 0x140);
-            dir.x = *(s8 *)(light + 0x10) * 0.007874016f;
-            dir.y = *(s8 *)(light + 0x11) * 0.007874016f;
-            dir.z = *(s8 *)(light + 0x12) * 0.007874016f;
-            strength = func_802BC380((f32)*(u8 *)(light + 0x8) * (f32)*(u8 *)(light + 0x8) +
-                                         (f32)*(u8 *)(light + 0x9) * (f32)*(u8 *)(light + 0x9) +
-                                         (f32)*(u8 *)(light + 0x9) * (f32)*(u8 *)(light + 0x9)) *
+            dir.x = ((func_8024AA08_S2 *)(light))->unk10 * 0.007874016f;
+            dir.y = ((func_8024AA08_S2 *)(light))->unk11 * 0.007874016f;
+            dir.z = ((func_8024AA08_S2 *)(light))->unk12 * 0.007874016f;
+            strength = func_802BC380((f32)((func_8024AA08_S2 *)(light))->unk8 * (f32)((func_8024AA08_S2 *)(light))->unk8 +
+                                         (f32)((func_8024AA08_S2 *)(light))->unk9 * (f32)((func_8024AA08_S2 *)(light))->unk9 +
+                                         (f32)((func_8024AA08_S2 *)(light))->unk9 * (f32)((func_8024AA08_S2 *)(light))->unk9) *
                        -0.00090497744f;
-            func_80268A40(&D_8013B1A8, *(Vec3 *)(obj + 0x8), &dir, &strength);
+            func_80268A40(&D_8013B1A8, ((func_8024AA08_S3 *)(obj))->unk8, &dir, &strength);
             if (strength < -1.0f) {
                 strength = -1.0f;
             }
@@ -78,7 +119,7 @@ void func_8024AA08(char *obj, s32 unused, char *info) {
             if (D_800D15E0 == 1) {
                 alpha = alpha * D_800D15F0 * 0.003921569f;
             }
-            *(u8 *)(obj + 0x13A) = alpha;
+            ((func_8024AA08_S1 *)(obj))->unk13A = alpha;
             dir.y = 1.0f;
             func_802720EC(&dir);
             if (ABS(dir.y) < 0.15f) {
@@ -91,18 +132,18 @@ void func_8024AA08(char *obj, s32 unused, char *info) {
             }
             plane = ground + height * 0.9f;
             func_8027317C(projection, &dir, plane);
-            func_802734B8(projection, -*(f32 *)(obj + 0x8), -plane, -*(f32 *)(obj + 0x10));
+            func_802734B8(projection, -((func_8024AA08_S1 *)(obj))->unk8, -plane, -((func_8024AA08_S1 *)(obj))->unk10);
             scale = height * 0.003f + 1.0f;
             func_80273618(projection, scale, scale, scale);
             func_802742B4(obj + 0x5C, turn);
-            func_8026F690(*(void **)(obj + 0xBC), projection, turn);
-            func_802734B8(*(void **)(obj + 0xBC), *(f32 *)(obj + 0x8), ground, *(f32 *)(obj + 0x10));
-            if (*(void **)(obj + 0xBC) == 0) {
+            func_8026F690(((func_8024AA08_S1 *)(obj))->unkBC, projection, turn);
+            func_802734B8(((func_8024AA08_S1 *)(obj))->unkBC, ((func_8024AA08_S1 *)(obj))->unk8, ground, ((func_8024AA08_S1 *)(obj))->unk10);
+            if (((func_8024AA08_S1 *)(obj))->unkBC == 0) {
                 return;
             }
         }
-        func_8024BA6C(obj, info, *(void **)(obj + 0xBC), *(u8 *)(obj + 0x13A));
+        func_8024BA6C(obj, info, ((func_8024AA08_S1 *)(obj))->unkBC, ((func_8024AA08_S1 *)(obj))->unk13A);
     } else {
-        func_8024ADC0(obj, *(s32 *)(info + 0x14), 0);
+        func_8024ADC0(obj, ((func_8024AA08_S4 *)(info))->unk14, 0);
     }
 }

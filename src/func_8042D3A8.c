@@ -11,6 +11,12 @@ extern s32 func_80425FDC(s32);
 extern void func_804260C4(s32, s32 *);
 extern void func_80425BC0(s32);
 
+typedef struct func_8042D3A8_S1 func_8042D3A8_S1;
+struct func_8042D3A8_S1 {
+    char pad0[0x32C];
+    s32 unk32C;
+};
+
 void func_8042D3A8(void) {
     s32 id;
     s32 i;
@@ -27,7 +33,7 @@ void func_8042D3A8(void) {
         if (record[0x91] != 0) {
             continue;
         }
-        *(s32 *)(D_800E53C0 + 0x32C) = func_80425FDC(id);
+        ((func_8042D3A8_S1 *)(D_800E53C0))->unk32C = func_80425FDC(id);
         func_804260C4(id, (s32 *)((id * 8 + 0x110) + D_800E53C0));
         func_80425BC0(id);
     }

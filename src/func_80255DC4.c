@@ -1,30 +1,43 @@
 #include "basetypes.h"
 
+typedef struct func_80255DC4_S1 func_80255DC4_S1;
+struct func_80255DC4_S1 {
+    s32 unk0;
+    char pad0[0x4 - 0x0 - sizeof(s32)];
+    s32 unk4;
+    char pad4[0x8 - 0x4 - sizeof(s32)];
+    s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x10 - 0xC - sizeof(s32)];
+    s32 unk10;
+};
+
 void func_80255DC4(void *arg0, s32 arg1, s32 arg2) {
     char *o = (char *) arg0;
-    s32 next = *(s32 *) (arg1 + *(s32 *) (o + 0xC));
+    s32 next = *(s32 *) (arg1 + ((func_80255DC4_S1 *)(o))->unkC);
     s32 v0;
 
     if (next != 0) {
         s32 offC;
-        *(s32 *) (next + *(s32 *) (o + 8)) = arg2;
-        offC = *(s32 *) (o + 0xC);
+        *(s32 *) (next + ((func_80255DC4_S1 *)(o))->unk8) = arg2;
+        offC = ((func_80255DC4_S1 *)(o))->unkC;
         *(s32 *) (arg2 + offC) = *(s32 *) (arg1 + offC);
-        *(s32 *) (arg1 + *(s32 *) (o + 0xC)) = arg2;
-        *(s32 *) (arg2 + *(s32 *) (o + 8)) = arg1;
-        v0 = *(s32 *) (o + 0x10) + 1;
+        *(s32 *) (arg1 + ((func_80255DC4_S1 *)(o))->unkC) = arg2;
+        *(s32 *) (arg2 + ((func_80255DC4_S1 *)(o))->unk8) = arg1;
+        v0 = ((func_80255DC4_S1 *)(o))->unk10 + 1;
     } else {
-        s32 head = *(s32 *) (o + 0x4);
+        s32 head = ((func_80255DC4_S1 *)(o))->unk4;
         if (head != 0) {
-            *(s32 *) (arg2 + *(s32 *) (o + 8)) = head;
-            *(s32 *) (*(s32 *) (o + 0x4) + *(s32 *) (o + 0xC)) = arg2;
+            *(s32 *) (arg2 + ((func_80255DC4_S1 *)(o))->unk8) = head;
+            *(s32 *) (((func_80255DC4_S1 *)(o))->unk4 + ((func_80255DC4_S1 *)(o))->unkC) = arg2;
         } else {
-            *(s32 *) (arg2 + *(s32 *) (o + 8)) = 0;
-            *(s32 *) (o + 0) = arg2;
+            *(s32 *) (arg2 + ((func_80255DC4_S1 *)(o))->unk8) = 0;
+            ((func_80255DC4_S1 *)(o))->unk0 = arg2;
         }
-        *(s32 *) (arg2 + *(s32 *) (o + 0xC)) = 0;
-        *(s32 *) (o + 4) = arg2;
-        v0 = *(s32 *) (o + 0x10) + 1;
+        *(s32 *) (arg2 + ((func_80255DC4_S1 *)(o))->unkC) = 0;
+        ((func_80255DC4_S1 *)(o))->unk4 = arg2;
+        v0 = ((func_80255DC4_S1 *)(o))->unk10 + 1;
     }
-    *(s32 *) (o + 0x10) = v0;
+    ((func_80255DC4_S1 *)(o))->unk10 = v0;
 }

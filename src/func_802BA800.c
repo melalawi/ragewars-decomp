@@ -2,6 +2,20 @@
 
 extern void *jtbl_800CC9A0[];
 
+typedef struct func_802BA800_S1 func_802BA800_S1;
+struct func_802BA800_S1 {
+    char pad0[0x18];
+    s32 unk18;
+    char pad18[0x1C - 0x18 - sizeof(s32)];
+    s32 unk1C;
+    char pad1C[0x20 - 0x1C - sizeof(s32)];
+    s32 unk20;
+    char pad20[0x24 - 0x20 - sizeof(s32)];
+    s32 unk24;
+    char pad24[0x30 - 0x24 - sizeof(s32)];
+    s32 unk30;
+};
+
 /** Apply a control message to this node and forward handled messages. */
 s32 func_802BA800(void *arg0, s32 arg1, s32 arg2) {
     void *node = arg0;
@@ -24,10 +38,10 @@ s32 func_802BA800(void *arg0, s32 arg1, s32 arg2) {
         *(s32 *)arg0 = arg2;
         break;
     sw_message_4:
-        *(s32 *)((char *)node + 0x20) = 0;
-        *(s32 *)((char *)node + 0x24) = 1;
-        *(s32 *)((char *)node + 0x30) = 0;
-        *(s32 *)((char *)node + 0x1C) = 0;
+        ((func_802BA800_S1 *)(node))->unk20 = 0;
+        ((func_802BA800_S1 *)(node))->unk24 = 1;
+        ((func_802BA800_S1 *)(node))->unk30 = 0;
+        ((func_802BA800_S1 *)(node))->unk1C = 0;
         target = *(void **)arg0;
         if (target != 0) {
             callback = *(void (**)(void *, s32, s32))((char *)target + 8);
@@ -35,7 +49,7 @@ s32 func_802BA800(void *arg0, s32 arg1, s32 arg2) {
         }
         break;
     sw_message_9:
-        *(s32 *)((char *)node + 0x30) = 1;
+        ((func_802BA800_S1 *)(node))->unk30 = 1;
         target = *(void **)arg0;
         if (target != 0) {
             callback = *(void (**)(void *, s32, s32))((char *)target + 8);
@@ -43,10 +57,10 @@ s32 func_802BA800(void *arg0, s32 arg1, s32 arg2) {
         }
         break;
     sw_message_7:
-        *(s32 *)((char *)node + 0x18) = arg2;
+        ((func_802BA800_S1 *)(node))->unk18 = arg2;
         break;
     sw_message_8:
-        *(s32 *)((char *)node + 0x1C) = 1;
+        ((func_802BA800_S1 *)(node))->unk1C = 1;
         break;
     sw_message_default:
         target = *(void **)arg0;

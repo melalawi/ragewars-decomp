@@ -20,6 +20,14 @@ extern void func_802A6D28(void *arg0, void *arg1);
 extern void func_802671B0(void *arg0, void *arg1, s32 arg2,
                           Triple arg3, Pair arg4);
 
+typedef struct func_80204D2C_S1 func_80204D2C_S1;
+struct func_80204D2C_S1 {
+    char pad0[0x8];
+    Triple unk8;
+    char pad8[0x100 - 0x8 - sizeof(Triple)];
+    s32 unk100;
+};
+
 void func_80204D2C(void *arg0) {
     Pair local;
     s32 *flag;
@@ -31,7 +39,7 @@ void func_80204D2C(void *arg0) {
     func_802A6D28(&D_8013BA80, arg0);
     if (*flag != 4) {
         func_802671B0(arg0, arg0, 7,
-                      *(Triple *)((char *)arg0 + 8), local);
-        *(s32 *)((char *)arg0 + 0x100) |= 0x08000000;
+                      ((func_80204D2C_S1 *)(arg0))->unk8, local);
+        ((func_80204D2C_S1 *)(arg0))->unk100 |= 0x08000000;
     }
 }

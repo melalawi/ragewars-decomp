@@ -53,6 +53,12 @@ extern void *D_80103FCC;
 extern char D_801040F0;
 extern f32 D_800C8848[];
 
+typedef struct func_80241B9C_S1 func_80241B9C_S1;
+struct func_80241B9C_S1 {
+    char pad0[0x1C];
+    Vec3 unk1C;
+};
+
 void func_80241B9C(Actor *actor, Owner *owner, Bounds *bounds, Query *query, Input *input) {
     u8 collision[0x108];
     Vec3 next;
@@ -118,8 +124,8 @@ void func_80241B9C(Actor *actor, Owner *owner, Bounds *bounds, Query *query, Inp
         hit |= func_8023E8C4(actor, query, 1);
         if (hit) {
             actor->flags |= 8;
-            func_80271FA4((Vec3 *)((u8 *)input + 0x1C),
-                          (Vec3 *)((u8 *)input + 0x1C),
+            func_80271FA4(&((func_80241B9C_S1 *)(input))->unk1C,
+                          &((func_80241B9C_S1 *)(input))->unk1C,
                           (Vec3 *)&actor->move_x);
         }
     }

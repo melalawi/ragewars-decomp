@@ -41,6 +41,18 @@ extern void func_8026925C(s32);
         _g->words.w1 = (u32)(b);         \
     }
 
+typedef struct func_802362D8_S1 func_802362D8_S1;
+struct func_802362D8_S1 {
+    char pad0[0x29C];
+    f32 unk29C;
+    char pad29C[0x2A0 - 0x29C - sizeof(f32)];
+    f32 unk2A0;
+    char pad2A0[0x2A4 - 0x2A0 - sizeof(f32)];
+    f32 unk2A4;
+    char pad2A4[0x2A8 - 0x2A4 - sizeof(f32)];
+    f32 unk2A8;
+};
+
 #define _SHIFTL(v, s, w) ((u32)(((u32)(v) & ((0x01 << (w)) - 1)) << (s)))
 
 void func_802362D8(char *view, char *world) {
@@ -78,12 +90,12 @@ void func_802362D8(char *view, char *world) {
         {
             Gfx *_g;
 
-            right = *(f32 *)(view + 0x2A4) + *(f32 *)(view + 0x29C);
+            right = ((func_802362D8_S1 *)(view))->unk2A4 + ((func_802362D8_S1 *)(view))->unk29C;
             _g = (Gfx *)(D_80110634++);
             _g->words.w0 = _SHIFTL(0xF6, 24, 8) |
                            _SHIFTL(right, 14, 10) |
-                           _SHIFTL(*(f32 *)(view + 0x2A8) + *(f32 *)(view + 0x2A0), 2, 10);
-            _g->words.w1 = _SHIFTL(*(f32 *)(view + 0x2A4), 14, 10) | _SHIFTL(*(f32 *)(view + 0x2A8), 2, 10);
+                           _SHIFTL(((func_802362D8_S1 *)(view))->unk2A8 + ((func_802362D8_S1 *)(view))->unk2A0, 2, 10);
+            _g->words.w1 = _SHIFTL(((func_802362D8_S1 *)(view))->unk2A4, 14, 10) | _SHIFTL(((func_802362D8_S1 *)(view))->unk2A8, 2, 10);
         }
     }
 }

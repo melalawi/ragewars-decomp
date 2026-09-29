@@ -17,6 +17,12 @@ extern s32 func_804057F8(void *,s32,s32);
 extern void func_80432488(s32);
 extern s32 func_80435600(void);
 typedef struct { s32 file; s32 ready; s32 used; s32 free; } PakStatus;
+typedef struct func_80434604_S1 func_80434604_S1;
+struct func_80434604_S1 {
+    char pad0[0x2E28];
+    char unk2E28;
+};
+
 s32 func_80434604(s32 arg0) {
     char sp18[8];
     s8 sp20[16];
@@ -55,13 +61,13 @@ s32 func_80434604(s32 arg0) {
     if (var_s2 == 1) {
         var_s2 = 0;
         if (func_80405454(arg0, sp18) == 0) {
-            temp_s1 = (char *)D_800E54A4 + 0x2E28;
+            temp_s1 = &((func_80434604_S1 *)(D_800E54A4))->unk2E28;
             func_802A1724(temp_s1, D_800E54A4->slots[arg0].record, 0x640);
             D_800E54A4->checksum = D_800E54A4->slots[arg0].checksum;
             D_800E54A4->crc = func_804057F8(temp_s1, 0x640, 7);
             var_a1 = 0xF;
             var_a0 = &sp20[15];
-            temp_s1_2 = (char *)D_800E54A4 + 0x2E28;
+            temp_s1_2 = &((func_80434604_S1 *)(D_800E54A4))->unk2E28;
             do {
                 *var_a0 = 0;
                 var_a1 -= 1;

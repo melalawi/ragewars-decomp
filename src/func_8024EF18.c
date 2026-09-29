@@ -23,6 +23,18 @@ extern void func_802734B8(f32 *, f32, f32, f32);
 extern void func_802702EC(f32 *, void *);
 extern void func_8026992C(void *, s32, s32);
 
+typedef struct func_8024EF18_S1 func_8024EF18_S1;
+struct func_8024EF18_S1 {
+    char pad0[0x8];
+    f32 unk8;
+    char pad8[0xC - 0x8 - sizeof(f32)];
+    f32 unkC;
+    char padC[0x10 - 0xC - sizeof(f32)];
+    f32 unk10;
+    char pad10[0x40 - 0x10 - sizeof(f32)];
+    f32 unk40;
+};
+
 void func_8024EF18(void *actor) {
     f32 matrix[16];
     Vec3 position;
@@ -31,16 +43,16 @@ void func_8024EF18(void *actor) {
     f32 height;
     f32 size;
 
-    ground = *(f32 *)((char *)actor + 0x40);
-    height = *(f32 *)((char *)actor + 0xC) - ground;
+    ground = ((func_8024EF18_S1 *)(actor))->unk40;
+    height = ((func_8024EF18_S1 *)(actor))->unkC - ground;
     if (!(MIN(func_8024E2EC(actor) * 0.5f, func_8024E2EC(actor) * 0.5f - height * 0.1f) < 0.0f)) {
         size = MIN(func_8024E2EC(actor) * 0.5f, func_8024E2EC(actor) * 0.5f - height * 0.1f);
     } else {
         size = 0.0f;
     }
     func_8024D860(rotation, actor);
-    position.x = *(f32 *)((char *)actor + 0x8);
-    position.z = *(f32 *)((char *)actor + 0x10);
+    position.x = ((func_8024EF18_S1 *)(actor))->unk8;
+    position.z = ((func_8024EF18_S1 *)(actor))->unk10;
     position.y = ground;
     func_802725BC(&position, 20000.0f);
     func_802742B4(rotation, matrix);

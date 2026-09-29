@@ -24,6 +24,32 @@ extern void func_8026DF30(void *, void *, char *, s32, s32);
 extern void func_8022F760(void *, void *);
 extern void func_80229CFC(void *);
 
+typedef struct func_80228934_S1 func_80228934_S1;
+typedef struct func_80228934_S2 func_80228934_S2;
+typedef struct func_80228934_S3 func_80228934_S3;
+struct func_80228934_S1 {
+    char pad0[0x5D8];
+    char* unk5D8;
+};
+struct func_80228934_S2 {
+    char pad0[0x20];
+    char* unk20;
+};
+struct func_80228934_S3 {
+    char pad0[0x5D8];
+    char* unk5D8;
+    char pad5D8[0x5DC - 0x5D8 - sizeof(char*)];
+    s32 unk5DC;
+    char pad5DC[0x11FC - 0x5DC - sizeof(s32)];
+    f32 unk11FC;
+    char pad11FC[0x120C - 0x11FC - sizeof(f32)];
+    s32 unk120C;
+    char pad120C[0x1210 - 0x120C - sizeof(s32)];
+    s32 unk1210;
+    char pad1210[0x16E0 - 0x1210 - sizeof(s32)];
+    char* unk16E0;
+};
+
 void func_80228934(void *game, s32 view) {
     char *player;
     s32 *match;
@@ -34,16 +60,16 @@ void func_80228934(void *game, s32 view) {
     match = D_801468A0;
     team = -1;
     if (match[0x24 / 4] != 0 || match[0x78 / 4] != 0) {
-        team = *(u8 *) (*(char **) ((char *) func_802392DC(view) + 0x5D8) + 0x92);
+        team = *(u8 *) (((func_80228934_S1 *)(func_802392DC(view)))->unk5D8 + 0x92);
     }
     func_8026D980();
-    for (player = *(char **) ((char *) game + 0x20); player != 0; player = *(char **) (player + 0x16E0)) {
+    for (player = ((func_80228934_S2 *)(game))->unk20; player != 0; player = ((func_80228934_S3 *)(player))->unk16E0) {
         zoomed = 0;
-        if (*(f32 *) (player + 0x11FC) > 0.0f) {
+        if (((func_80228934_S3 *)(player))->unk11FC > 0.0f) {
             zoomed = 1;
         }
         if (zoomed) {
-            if (*(s32 *) (player + 0x120C) != 0) {
+            if (((func_80228934_S3 *)(player))->unk120C != 0) {
                 model = func_8028B1F8(&D_8011FE88, 0xC84);
             } else {
                 model = func_8028B1F8(&D_8011FE88, 0xC85);
@@ -52,11 +78,11 @@ void func_80228934(void *game, s32 view) {
                 func_8026DF30(func_8028C174(&D_8011FE88, model), player + 0x1600, &D_800D0EF8, 0, -1);
             }
         }
-        if (*(s32 *) (player + 0x5DC) != 0 && *(s32 *) (player + 0x1210) != 0 && *(s32 *) (player + 0x5DC) == view) {
-            func_8022F760(player + 0x2E8, player + 0x458);
+        if (((func_80228934_S3 *)(player))->unk5DC != 0 && ((func_80228934_S3 *)(player))->unk1210 != 0 && ((func_80228934_S3 *)(player))->unk5DC == view) {
+            func_8022F760(player + 0x2E8, (char *)player + 0x458);
         }
         if ((((Match *) D_801468A0)->teams != 0 || ((Match *) D_801468A0)->squads != 0)
-            && *(u8 *) (*(char **) (player + 0x5D8) + 0x92) == team && func_802392DC(view) != player) {
+            && *(u8 *) (((func_80228934_S3 *)(player))->unk5D8 + 0x92) == team && func_802392DC(view) != player) {
             func_80229CFC(player);
         }
     }

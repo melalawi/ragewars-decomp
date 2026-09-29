@@ -10,6 +10,12 @@ typedef struct {
 extern Selection D_8014AECC;
 extern s32 *D_8014AED4;
 
+typedef struct func_802955EC_S1 func_802955EC_S1;
+struct func_802955EC_S1 {
+    char pad0[0x10];
+    s32 unk10;
+};
+
 void func_802955EC(s32 arg0, s32 **arg1) {
     s32 enabled;
     s32 choose;
@@ -26,7 +32,7 @@ void func_802955EC(s32 arg0, s32 **arg1) {
         }
         if (arg0 == D_8014AECC.value) {
             if (choose != 0) {
-                *arg1 = (s32 *)((char *)&D_8014AECC + 0x10);
+                *arg1 = &((func_802955EC_S1 *)(&D_8014AECC))->unk10;
                 return;
             }
             *arg1 = D_8014AED4;

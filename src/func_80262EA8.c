@@ -30,17 +30,31 @@ static inline s32 overlaps(Effect *effect, f32 *max) {
     return 0;
 }
 
+typedef struct func_80262EA8_S1 func_80262EA8_S1;
+typedef struct func_80262EA8_S2 func_80262EA8_S2;
+typedef union func_80262EA8_S1_U5F14 { Effect* v0; char v1; } func_80262EA8_S1_U5F14;
+struct func_80262EA8_S1 {
+    char pad0[0x5F00];
+    char unk5F00;
+    char pad5F00[0x5F14 - 0x5F00 - sizeof(char)];
+    func_80262EA8_S1_U5F14 unk5F14;
+};
+struct func_80262EA8_S2 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 void func_80262EA8(void *scene, s32 arg1) {
     Effect *effect;
     Effect *next;
     f32 *max;
 
-    effect = *(Effect **)((char *)scene + 0x5F14);
+    effect = ((func_80262EA8_S1 *)(scene))->unk5F14.v0;
     if (effect == 0) {
         return;
     }
     do {
-        max = (f32 *)((char *)&D_801031F8 + 4);
+        max = &((func_80262EA8_S2 *)(&D_801031F8))->unk4;
     next_effect:
         next = effect->next;
         if (overlaps(effect, max)) {
@@ -55,8 +69,8 @@ void func_80262EA8(void *scene, s32 arg1) {
             if (effect->ref != 0) {
                 *effect->ref -= 1;
             }
-            func_80255E78((char *)scene + 0x5F14, effect);
-            func_80255CB4((char *)scene + 0x5F00, effect);
+            func_80255E78(&((func_80262EA8_S1 *)(scene))->unk5F14.v1, effect);
+            func_80255CB4(&((func_80262EA8_S1 *)(scene))->unk5F00, effect);
         }
         effect = next;
     } while (0);

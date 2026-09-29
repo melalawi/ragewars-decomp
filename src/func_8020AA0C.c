@@ -6,6 +6,12 @@ extern f32 func_80209AE8(void);
 extern f32 D_800C6E20;
 extern f32 D_800C6E28;
 
+typedef struct func_8020AA0C_S1 func_8020AA0C_S1;
+struct func_8020AA0C_S1 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 f32 func_8020AA0C(void) {
-    return (*(f32 *)((char *)&D_800C6E20 + 4) - func_80209AE8()) * (D_800C6E28);
+    return (((func_8020AA0C_S1 *)(&D_800C6E20))->unk4 - func_80209AE8()) * (D_800C6E28);
 }

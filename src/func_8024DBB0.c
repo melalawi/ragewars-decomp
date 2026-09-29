@@ -33,6 +33,12 @@ extern void func_802720EC(Vec3f *);
 extern void func_8027200C(void *, void *, f32);
 extern s32 func_8028FFB0(s32, s32, s32, Vec3Words, Vec3Words, s32, f32);
 
+typedef struct func_8024DBB0_S1 func_8024DBB0_S1;
+struct func_8024DBB0_S1 {
+    char pad0[0x14];
+    s32 unk14;
+};
+
 void func_8024DBB0(void *actor, Vec3Words pos, s32 sound, f32 volume) {
     Vec3f up;
     Vec3f dir;
@@ -44,7 +50,7 @@ void func_8024DBB0(void *actor, Vec3Words pos, s32 sound, f32 volume) {
     emitter = func_8020C994(&D_8013B364, func_8020CB3C(&D_8013B364, &pos));
     request.position = pos;
     at = request.position;
-    request.owner = *(s32 *)((char *)actor + 0x14);
+    request.owner = ((func_8024DBB0_S1 *)(actor))->unk14;
     if (emitter != 0) {
         at = *emitter;
     }

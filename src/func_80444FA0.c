@@ -14,6 +14,12 @@ extern s32 D_800E63AC;
 extern char D_8011FE88;
 extern s32 D_8011FEF4;
 
+typedef struct func_80444FA0_S1 func_80444FA0_S1;
+struct func_80444FA0_S1 {
+    char pad0[0x8];
+    Header unk8;
+};
+
 s32 func_80444FA0(State *arg0, State *arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5, s32 arg6, f32 arg7) {
     s32 temp_a1_2;
     s32 temp_a1_3;
@@ -64,7 +70,7 @@ s32 func_80444FA0(State *arg0, State *arg1, s32 arg2, s32 arg3, s32 arg4, s32 ar
                     temp_v0_2 = func_8028FD94(D_8011FEF4, 0);
                     var_v1 = 0;
                     temp_a1_3 = temp_v0_2->unk4;
-                    temp_v0_2=(Header *)((char *)temp_v0_2+8);
+                    temp_v0_2=&((func_80444FA0_S1 *)(temp_v0_2))->unk8;
                     if (temp_a1_3 > 0) {
                         do {
                             var_a0 = (char *)temp_v0_2 + var_v1 * 100;

@@ -37,10 +37,10 @@ extern s32 D_800E28C8;
 extern s32 D_80153784;
 extern s32 D_80153730;
 extern u8 D_80153740;
-extern u16 D_80153738;
-extern u16 D_8015373A;
-extern u16 D_8015373C;
-extern u16 D_8015373E;
+extern struct { u16 value; } D_80153738;
+extern struct { u16 value; } D_8015373A;
+extern struct { u16 value; } D_8015373C;
+extern struct { u16 value; } D_8015373E;
 extern u8 D_80153744[];
 extern s8 D_80153720;
 extern s32 D_8015378C;
@@ -56,6 +56,17 @@ extern void func_8044AD14(Player *player, s32 team);
 extern void func_80442934(char *text, Menu *menu, char *format);
 extern s32 func_80404858(s32 ch, s32 index);
 extern void func_804426E4(char *, char *, Player *, Slot *, char *);
+
+typedef struct func_80408C78_S1 func_80408C78_S1;
+struct func_80408C78_S1 {
+    u16 unk0;
+    char pad0[0x2 - 0x0 - sizeof(u16)];
+    u16 unk2;
+    char pad2[0x4 - 0x2 - sizeof(u16)];
+    u16 unk4;
+    char pad4[0x6 - 0x4 - sizeof(u16)];
+    u16 unk6;
+};
 
 s32 func_80408C78(void *unused, Menu *menu) {
     s32 ch;
@@ -76,13 +87,13 @@ s32 func_80408C78(void *unused, Menu *menu) {
         player = func_8022A5B0(&D_80145040, menu->slot);
         menu->player = player;
         profile = player->profile;
-        ((u8 *)profile)[0x80] = D_80153740;
-        *(u16 *)((u8 *)profile + 0) = D_80153738;
-        *(u16 *)((u8 *)profile + 2) = D_8015373A;
-        *(u16 *)((u8 *)profile + 4) = D_8015373C;
-        *(u16 *)((u8 *)profile + 6) = D_8015373E;
+        profile->flags = D_80153740;
+        ((func_80408C78_S1 *)(profile))->unk0 = D_80153738.value;
+        ((func_80408C78_S1 *)(profile))->unk2 = D_8015373A.value;
+        ((func_80408C78_S1 *)(profile))->unk4 = D_8015373C.value;
+        ((func_80408C78_S1 *)(profile))->unk6 = D_8015373E.value;
         for (i = 0; i < 8; i++) {
-            *((u8 *)profile + i + 0x84) = D_80153744[i];
+            profile->name[i] = D_80153744[i];
         }
         func_8044AD14(player, D_80153720);
         func_80442934(player->messages + 0x554, menu, D_450698);

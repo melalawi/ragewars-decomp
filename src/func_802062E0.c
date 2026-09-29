@@ -35,6 +35,24 @@ extern u8 *D_800E4680;
 extern Node *func_8028FFB0(char *, void *, s32, Vec3Words, Vec3Words, s32, s32);
 extern void func_80216288(Node *, s32, Vec3Words, s32);
 
+typedef struct func_802062E0_S1 func_802062E0_S1;
+typedef struct func_802062E0_S2 func_802062E0_S2;
+typedef struct func_802062E0_S3 func_802062E0_S3;
+struct func_802062E0_S1 {
+    char pad0[0x124];
+    char unk124;
+    char pad124[0x128 - 0x124 - sizeof(char)];
+    s32 unk128;
+};
+struct func_802062E0_S2 {
+    char pad0[0x1C];
+    Vec3Words unk1C;
+};
+struct func_802062E0_S3 {
+    char pad0[0x1A0];
+    s32 unk1A0;
+};
+
 void func_802062E0(void *actor, void *owner, Params params, s32 kind) {
     Node *node;
     Settings *settings;
@@ -51,11 +69,11 @@ void func_802062E0(void *actor, void *owner, Params params, s32 kind) {
             return;
         }
     }
-    node = func_8028FFB0(&D_80131600, (char *) owner + 0x124, kind,
-                         *(Vec3Words *) ((char *) actor + 0x1C), params.v, params.w, 0);
+    node = func_8028FFB0(&D_80131600, &((func_802062E0_S1 *)(owner))->unk124, kind,
+                         ((func_802062E0_S2 *)(actor))->unk1C, params.v, params.w, 0);
     if (node != 0) {
-        *(s32 *) ((char *) node + 0x1A0) = 0;
-        *(s32 *) ((char *) owner + 0x128) -= 1;
+        ((func_802062E0_S3 *)(node))->unk1A0 = 0;
+        ((func_802062E0_S1 *)(owner))->unk128 -= 1;
         func_80216288(node, 0x11D, node->pos, 0);
     }
 }

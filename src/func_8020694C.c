@@ -14,6 +14,14 @@ typedef struct Rec {
     void *b;
 } Rec;
 
+typedef struct func_8020694C_S1 func_8020694C_S1;
+struct func_8020694C_S1 {
+    char pad0[0xB4];
+    int unkB4;
+    char padB4[0x140 - 0xB4 - sizeof(int)];
+    Slot unk140;
+};
+
 void func_8020694C(char *arg0, void *arg1, Rec *arg2) {
     int i;
     int n;
@@ -26,7 +34,7 @@ void func_8020694C(char *arg0, void *arg1, Rec *arg2) {
             arg2->a = child;
             arg2->b = child;
             func_8024AA08(arg0, arg1, arg2);
-            func_8026DA4C(child, *(int *)(arg0 + 0xB4), 1, &((Slot *)(arg0 + 0x140))[D_800D297C], 0, arg0[3]);
+            func_8026DA4C(child, ((func_8020694C_S1 *)(arg0))->unkB4, 1, &(&((func_8020694C_S1 *)(arg0))->unk140)[D_800D297C], 0, arg0[3]);
         }
     }
 }

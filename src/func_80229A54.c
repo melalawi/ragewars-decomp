@@ -9,6 +9,26 @@ typedef struct {
     s16 kills[8];
 } Stats;
 
+typedef struct func_80229A54_S1 func_80229A54_S1;
+typedef struct func_80229A54_S2 func_80229A54_S2;
+typedef struct func_80229A54_S3 func_80229A54_S3;
+struct func_80229A54_S1 {
+    char pad0[0x4];
+    char* unk4;
+    char pad4[0x20 - 0x4 - sizeof(char*)];
+    char* unk20;
+};
+struct func_80229A54_S2 {
+    char pad0[0x5D8];
+    char* unk5D8;
+    char pad5D8[0x16E0 - 0x5D8 - sizeof(char*)];
+    char* unk16E0;
+};
+struct func_80229A54_S3 {
+    char pad0[0x92];
+    u8 unk92;
+};
+
 s32 func_80229A54(void *game) {
     s32 total0;
     s32 total1;
@@ -27,14 +47,14 @@ s32 func_80229A54(void *game) {
     total2 = 0;
     total1 = 0;
     total0 = 0;
-    for (player = *(char **) ((char *) game + 0x20); player != 0; player = *(char **) (player + 0x16E0)) {
-        self = (u32) (player - *(char **) ((char *) game + 4)) / 0x16E8;
+    for (player = ((func_80229A54_S1 *)(game))->unk20; player != 0; player = ((func_80229A54_S2 *)(player))->unk16E0) {
+        self = (u32) (player - ((func_80229A54_S1 *)(game))->unk4) / 0x16E8;
         for (other = 0; other < 8; other++) {
             if (other == self) {
                 continue;
             }
-            stats = *(char **) (player + 0x5D8);
-            switch (*(u8 *) (stats + 0x92)) {
+            stats = ((func_80229A54_S2 *)(player))->unk5D8;
+            switch (((func_80229A54_S3 *)(stats))->unk92) {
             case 0xFF:
                 return 0;
             case 0:

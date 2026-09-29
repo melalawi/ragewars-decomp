@@ -23,6 +23,20 @@ extern u8 D_801462D5;
 extern s32 D_800CE3E8[];
 extern Profile D_80102B14[];
 
+typedef struct func_80222BC4_S1 func_80222BC4_S1;
+struct func_80222BC4_S1 {
+    char pad0[0x18];
+    Desc* unk18;
+    char pad18[0x5D4 - 0x18 - sizeof(Desc*)];
+    s32 unk5D4;
+    char pad5D4[0x5F4 - 0x5D4 - sizeof(s32)];
+    char unk5F4;
+    char pad5F4[0xCC0 - 0x5F4 - sizeof(char)];
+    s32 unkCC0;
+    char padCC0[0x1450 - 0xCC0 - sizeof(s32)];
+    s32 unk1450;
+};
+
 s32 func_80222BC4(void *player, s32 slot, s32 amount) {
     s16 *count;
     s32 cap;
@@ -30,20 +44,20 @@ s32 func_80222BC4(void *player, s32 slot, s32 amount) {
     s32 total;
     s32 have;
 
-    count = (s16 *) ((char *) player + 0x5F4 + slot * 2);
+    count = (s16 *) (&((func_80222BC4_S1 *)(player))->unk5F4 + slot * 2);
     if (slot == -1) {
         cap = 0;
     } else if (D_801462D5 != 1) {
-        cap = (*(Desc **) ((char *) player + 0x18))->caps[slot];
+        cap = (((func_80222BC4_S1 *)(player))->unk18)->caps[slot];
     } else {
         cap = D_800CE3E8[slot];
-        if (*(s32 *) ((char *) player + 0x1450) == 0) {
+        if (((func_80222BC4_S1 *)(player))->unk1450 == 0) {
             if (slot == 0) {
-                cap += D_80102B14[*(s32 *) ((char *) player + 0x5D4)].bonus0;
+                cap += D_80102B14[((func_80222BC4_S1 *)(player))->unk5D4].bonus0;
             } else if (slot == 1) {
-                cap += D_80102B14[*(s32 *) ((char *) player + 0x5D4)].bonus1;
+                cap += D_80102B14[((func_80222BC4_S1 *)(player))->unk5D4].bonus1;
             } else if (slot == 2) {
-                cap += D_80102B14[*(s32 *) ((char *) player + 0x5D4)].bonus2;
+                cap += D_80102B14[((func_80222BC4_S1 *)(player))->unk5D4].bonus2;
             }
         }
     }
@@ -53,13 +67,13 @@ s32 func_80222BC4(void *player, s32 slot, s32 amount) {
         if (have == 0 && amount > 0) {
             switch (slot) {
             case 0:
-                *(s32 *) ((char *) player + 0xCC0) = 1;
+                ((func_80222BC4_S1 *)(player))->unkCC0 = 1;
                 break;
             case 1:
-                *(s32 *) ((char *) player + 0xCC0) = 5;
+                ((func_80222BC4_S1 *)(player))->unkCC0 = 5;
                 break;
             case 2:
-                *(s32 *) ((char *) player + 0xCC0) = 4;
+                ((func_80222BC4_S1 *)(player))->unkCC0 = 4;
                 break;
             }
         }

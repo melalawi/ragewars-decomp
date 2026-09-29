@@ -19,6 +19,30 @@ extern void func_8020D220(s32 *, s32);
 extern void func_8020D0CC(s32 *, s32);
 extern void func_8020D114(s32 *, s32 *, s32);
 
+typedef struct func_8020EAE0_S1 func_8020EAE0_S1;
+struct func_8020EAE0_S1 {
+    char pad0[0x4];
+    s32 unk4;
+    char pad4[0xC - 0x4 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x14 - 0xC - sizeof(s32)];
+    s32 unk14;
+    char pad14[0x18 - 0x14 - sizeof(s32)];
+    s32 unk18;
+    char pad18[0x28 - 0x18 - sizeof(s32)];
+    s32 unk28;
+    char pad28[0x1BC - 0x28 - sizeof(s32)];
+    s32 unk1BC;
+    char pad1BC[0x1C0 - 0x1BC - sizeof(s32)];
+    s32 unk1C0;
+    char pad1C0[0x2F4 - 0x1C0 - sizeof(s32)];
+    s32 unk2F4;
+    char pad2F4[0x2F8 - 0x2F4 - sizeof(s32)];
+    s32 unk2F8;
+    char pad2F8[0x2FC - 0x2F8 - sizeof(s32)];
+    s32 unk2FC;
+};
+
 s32 func_8020EAE0(void *arg0) {
     s32 *base;
     s32 requested;
@@ -29,17 +53,17 @@ s32 func_8020EAE0(void *arg0) {
     if (base == 0) {
         return 1;
     }
-    requested = *(s32 *) ((char *) arg0 + 0xC);
+    requested = ((func_8020EAE0_S1 *)(arg0))->unkC;
     if (requested == -1) {
         return 1;
     }
-    current = *(s32 *) ((char *) arg0 + 0x4);
+    current = ((func_8020EAE0_S1 *)(arg0))->unk4;
     if (current == requested) {
         return 1;
     }
-    if (*(s32 *) ((char *) arg0 + 0x28) == requested) {
-        link = *(s32 *) ((char *) arg0 + 0x14);
-        if (link != -1 && *(s32 *) ((char *) arg0 + 0x18) != -1) {
+    if (((func_8020EAE0_S1 *)(arg0))->unk28 == requested) {
+        link = ((func_8020EAE0_S1 *)(arg0))->unk14;
+        if (link != -1 && ((func_8020EAE0_S1 *)(arg0))->unk18 != -1) {
             if (current == link) {
                 return 1;
             }
@@ -49,23 +73,23 @@ s32 func_8020EAE0(void *arg0) {
         }
     }
     func_8020D014(base);
-    if (*(s32 *) ((char *) arg0 + 0x2F4) != 0) {
+    if (((func_8020EAE0_S1 *)(arg0))->unk2F4 != 0) {
         func_8020EDCC(arg0);
     }
-    if (*(s32 *) ((char *) arg0 + 0x2F8) != 0) {
+    if (((func_8020EAE0_S1 *)(arg0))->unk2F8 != 0) {
         func_8020EE50(arg0);
     }
-    if (*(s32 *) ((char *) arg0 + 0x2FC) != 0) {
+    if (((func_8020EAE0_S1 *)(arg0))->unk2FC != 0) {
         func_8020EEA4(arg0);
     }
     func_8020EC14(arg0);
     func_8020D1FC(base);
-    func_8020D220(base, *(s32 *) ((char *) arg0 + 0xC));
+    func_8020D220(base, ((func_8020EAE0_S1 *)(arg0))->unkC);
     base[6] = -1;
-    func_8020D0CC(base, *(s32 *) ((char *) arg0 + 0x4));
-    func_8020D114(base, (s32 *) ((char *) arg0 + 0x14), 4);
-    *(s32 *) ((char *) arg0 + 0x1BC) = 0;
-    *(s32 *) ((char *) arg0 + 0x1C0) = -1;
-    *(s32 *) ((char *) arg0 + 0x28) = *(s32 *) ((char *) arg0 + 0xC);
+    func_8020D0CC(base, ((func_8020EAE0_S1 *)(arg0))->unk4);
+    func_8020D114(base, &((func_8020EAE0_S1 *)(arg0))->unk14, 4);
+    ((func_8020EAE0_S1 *)(arg0))->unk1BC = 0;
+    ((func_8020EAE0_S1 *)(arg0))->unk1C0 = -1;
+    ((func_8020EAE0_S1 *)(arg0))->unk28 = ((func_8020EAE0_S1 *)(arg0))->unkC;
     return 1;
 }

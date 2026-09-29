@@ -41,6 +41,12 @@ extern void func_80255CB4(void *list, Particle *particle);
 extern void func_8026D8F8(void);
 extern void func_80296FF8(void);
 
+typedef struct func_802A6170_S1 func_802A6170_S1;
+struct func_802A6170_S1 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 void func_802A6170(Scene *scene) {
     Particle *particle;
     Particle *next;
@@ -64,7 +70,7 @@ void func_802A6170(Scene *scene) {
     { Gfx *g = D_80110634++; g->w0 = 0xFA000000; g->w1 = 0xFFFFFFC8; }
     { Gfx *g = D_80110634++; g->w0 = 0xDE000000; g->w1 = (u32)&D_800D2E60; }
     for (i = 0; i < 10; i++) {
-        max = (f32 *)((char *)&D_801031F8 + 4);
+        max = &((func_802A6170_S1 *)(&D_801031F8))->unk4;
         list = &scene->lists[i];
         particle = list->active;
         while (particle != 0) {

@@ -12,36 +12,67 @@ extern f32 D_800C7948;
 extern u8 D_801462C8[];
 extern s32 func_8024E61C(void *);
 
+typedef struct func_802228E4_S1 func_802228E4_S1;
+typedef struct func_802228E4_S2 func_802228E4_S2;
+typedef struct func_802228E4_S3 func_802228E4_S3;
+typedef struct func_802228E4_S4 func_802228E4_S4;
+struct func_802228E4_S1 {
+    char pad0[0x5D8];
+    char* unk5D8;
+    char pad5D8[0x650 - 0x5D8 - sizeof(char*)];
+    u16 unk650;
+    char pad650[0x784 - 0x650 - sizeof(u16)];
+    f32 unk784;
+    char pad784[0x1450 - 0x784 - sizeof(f32)];
+    s32 unk1450;
+};
+struct func_802228E4_S2 {
+    char pad0[0x18];
+    char* unk18;
+    char pad18[0x38 - 0x18 - sizeof(char*)];
+    s32 unk38;
+};
+struct func_802228E4_S3 {
+    char pad0[0x20];
+    f32 unk20;
+};
+struct func_802228E4_S4 {
+    char pad0[0x30];
+    f32 unk30;
+    char pad30[0x52 - 0x30 - sizeof(f32)];
+    u16 unk52;
+};
+
 void func_802228E4(void *arg0, void *arg1, void *ground) {
     u8 *options;
 
-    if (*(u16 *) ((char *) arg0 + 0x650) < 2) {
-        *(f32 *) ((char *) arg0 + 0x784) = D_800C7938[0];
+    if (((func_802228E4_S1 *)(arg0))->unk650 < 2) {
+        ((func_802228E4_S1 *)(arg0))->unk784 = D_800C7938[0];
         return;
     }
-    *(f32 *) ((char *) arg0 + 0x784) = *(f32 *) (*(char **) ((char *) arg1 + 0x18) + 0x1C);
-    if (*(s32 *) ((char *) arg0 + 0x1450) != 0) {
-        switch (*(u8 *) (*(char **) ((char *) arg0 + 0x5D8) + 0x93)) {
+    ((func_802228E4_S1 *)(arg0))->unk784 = *(f32 *) (((func_802228E4_S2 *)(arg1))->unk18 + 0x1C);
+    if (((func_802228E4_S1 *)(arg0))->unk1450 != 0) {
+        switch (*(u8 *) (((func_802228E4_S1 *)(arg0))->unk5D8 + 0x93)) {
         default:
-            *(u8 *) (*(char **) ((char *) arg0 + 0x5D8) + 0x93) = 0;
+            *(u8 *) (((func_802228E4_S1 *)(arg0))->unk5D8 + 0x93) = 0;
         case 0:
-            *(f32 *) ((char *) arg0 + 0x784) *= D_800C7938[1];
+            ((func_802228E4_S1 *)(arg0))->unk784 *= D_800C7938[1];
             break;
         case 1:
-            *(f32 *) ((char *) arg0 + 0x784) *= D_800C7940[0];
+            ((func_802228E4_S1 *)(arg0))->unk784 *= D_800C7940[0];
             break;
         case 2:
             break;
         }
-        if (*(s32 *) ((char *) arg0 + 0x1450) != 0) {
-            switch (*(u8 *) (*(char **) ((char *) arg0 + 0x5D8) + 0x93)) {
+        if (((func_802228E4_S1 *)(arg0))->unk1450 != 0) {
+            switch (*(u8 *) (((func_802228E4_S1 *)(arg0))->unk5D8 + 0x93)) {
             default:
-                *(u8 *) (*(char **) ((char *) arg0 + 0x5D8) + 0x93) = 0;
+                *(u8 *) (((func_802228E4_S1 *)(arg0))->unk5D8 + 0x93) = 0;
             case 0:
-                *(f32 *) ((char *) arg0 + 0x784) *= D_800C7940[1];
+                ((func_802228E4_S1 *)(arg0))->unk784 *= D_800C7940[1];
                 break;
             case 1:
-                *(f32 *) ((char *) arg0 + 0x784) *= D_800C7948;
+                ((func_802228E4_S1 *)(arg0))->unk784 *= D_800C7948;
                 break;
             case 2:
                 break;
@@ -50,10 +81,10 @@ void func_802228E4(void *arg0, void *arg1, void *ground) {
     }
     options = D_801462C8;
     if (options[0x1D] != 0) {
-        *(f32 *) ((char *) arg0 + 0x784) *= *(f32 *) (options + 0x20);
+        ((func_802228E4_S1 *)(arg0))->unk784 *= ((func_802228E4_S3 *)(options))->unk20;
     }
-    if (!(*(s32 *) ((char *) arg1 + 0x38) & 3) && ground != 0
-        && (func_8024E61C(arg1) != 0 || (*(u16 *) ((char *) ground + 0x52) & 0x800))) {
-        *(f32 *) ((char *) arg0 + 0x784) *= *(f32 *) ((char *) ground + 0x30);
+    if (!(((func_802228E4_S2 *)(arg1))->unk38 & 3) && ground != 0
+        && (func_8024E61C(arg1) != 0 || (((func_802228E4_S4 *)(ground))->unk52 & 0x800))) {
+        ((func_802228E4_S1 *)(arg0))->unk784 *= ((func_802228E4_S4 *)(ground))->unk30;
     }
 }

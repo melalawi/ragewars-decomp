@@ -2,13 +2,19 @@
 
 extern char D_8014D470;
 
+typedef struct func_802BC91C_S1 func_802BC91C_S1;
+struct func_802BC91C_S1 {
+    char pad0[0x3C];
+    s32 unk3C;
+};
+
 void func_802BC91C(void) {
     s32 var_v0;
     u8 *var_v1;
     s32 val;
 
     var_v1 = &D_8014D470;
-    *(s32 *)(var_v1 + 0x3C) = 1;
+    ((func_802BC91C_S1 *)(var_v1))->unk3C = 1;
     val = 0xFD;
     var_v0 = 3;
     do {

@@ -23,6 +23,14 @@ extern void func_80264874(s32);
 extern void func_80285D00(void *);
 extern void func_8022A870(void *);
 
+typedef struct func_8044E9A0_S1 func_8044E9A0_S1;
+struct func_8044E9A0_S1 {
+    char pad0[0x26DBC];
+    s32 unk26DBC;
+    char pad26DBC[0x26DC1 - 0x26DBC - sizeof(s32)];
+    u8 unk26DC1;
+};
+
 void func_8044E9A0(char *match) {
     struct State *state;
 
@@ -35,6 +43,6 @@ void func_8044E9A0(char *match) {
     state->c = 0;
     state->d = 0;
     state->e = 0;
-    *(u8 *) (match + 0x26DC1) = 2;
-    *(s32 *) (match + 0x26DBC) = 1;
+    ((func_8044E9A0_S1 *)(match))->unk26DC1 = 2;
+    ((func_8044E9A0_S1 *)(match))->unk26DBC = 1;
 }

@@ -20,6 +20,12 @@ typedef struct {
 
 extern f32 D_800CC760;
 
+typedef struct func_802B75E0_S1 func_802B75E0_S1;
+struct func_802B75E0_S1 {
+    char pad0[0xD];
+    u8 unkD;
+};
+
 s16 func_802B75E0(Pool *pool, void *owner) {
     s32 count = pool->count;
     Slot *slots = pool->slots;
@@ -39,7 +45,7 @@ s16 func_802B75E0(Pool *pool, void *owner) {
             slot->value = value;
             slot->flags = flags;
             slot->extra = 0;
-            slot->amount = ((*(u8 *)((char *)owner + 0xD) * 0x7FFF) / 127);
+            slot->amount = ((((func_802B75E0_S1 *)(owner))->unkD * 0x7FFF) / 127);
             return index;
         }
         i++;

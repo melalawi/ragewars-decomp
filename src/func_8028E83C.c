@@ -18,12 +18,18 @@ typedef struct {
 
 extern void func_80271FD8(Vec3 *arg0, Vec3 *arg1, Vec3 *arg2);
 
+typedef struct func_8028E83C_S1 func_8028E83C_S1;
+struct func_8028E83C_S1 {
+    char pad0[0x8];
+    Vec3 unk8;
+};
+
 s32 func_8028E83C(Obj *arg0, Vec3 *arg1) {
     Vec3 delta;
     u16 type;
 
     if (arg0->unk0 == 1 && *arg0->unk18 == 7) {
-        func_80271FD8(&delta, (Vec3 *)((char *)arg0 + 8), arg1);
+        func_80271FD8(&delta, &((func_8028E83C_S1 *)(arg0))->unk8, arg1);
         delta.y = 0;
         if (262144.0f < delta.x * delta.x + delta.z * delta.z) {
             return 0;

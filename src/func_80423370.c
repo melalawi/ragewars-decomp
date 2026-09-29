@@ -16,7 +16,17 @@ struct Options {
     u8 second;
 };
 
-extern char *D_800E4518;
+typedef struct func_80423370_S1 func_80423370_S1;
+struct func_80423370_S1 {
+    char pad0[0x50];
+    void* unk50;
+    char pad50[0x54 - 0x50 - sizeof(void*)];
+    void* unk54;
+    char pad54[0x58 - 0x54 - sizeof(void*)];
+    void* unk58;
+};
+
+extern func_80423370_S1 *D_800E4518;
 extern struct Options D_801462C8;
 extern s32 func_8041AD84(void *);
 extern s32 func_8041A760(void *);
@@ -25,9 +35,9 @@ void func_80423370(void) {
     struct Options *options;
     s32 value;
 
-    value = func_8041AD84(*(void **) (D_800E4518 + 0x54));
+    value = func_8041AD84(D_800E4518->unk54);
     options = &D_801462C8;
     options->first = value;
-    options->second = func_8041AD84(*(void **) (D_800E4518 + 0x58));
-    options->position = func_8041A760(*(void **) (D_800E4518 + 0x50));
+    options->second = func_8041AD84(D_800E4518->unk58);
+    options->position = func_8041A760(D_800E4518->unk50);
 }

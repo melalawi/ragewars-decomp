@@ -17,6 +17,12 @@ typedef struct Player {
     struct Player *next;
 } Player;
 
+typedef struct func_8022A67C_S1 func_8022A67C_S1;
+struct func_8022A67C_S1 {
+    char pad0[0x20];
+    Player* unk20;
+};
+
 int func_8022A67C(char *arg0) {
     Player *p;
     int count;
@@ -31,7 +37,7 @@ int func_8022A67C(char *arg0) {
         return 0;
     }
     count = 0;
-    for (p = *(Player **)(arg0 + 0x20); p != 0; p = p->next) {
+    for (p = ((func_8022A67C_S1 *)(arg0))->unk20; p != 0; p = p->next) {
         if (p->info[0x8E] == 1) {
             count++;
         }

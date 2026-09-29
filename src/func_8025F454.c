@@ -22,17 +22,28 @@ static inline f32 round_up(f32 x, f32 floor) {
     return (f32)(i + 1);
 }
 
+typedef struct func_8025F454_S1 func_8025F454_S1;
+typedef struct func_8025F454_S2 func_8025F454_S2;
+struct func_8025F454_S1 {
+    char pad0[0x4];
+    f32 unk4;
+};
+struct func_8025F454_S2 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 f32 func_8025F454(f32 amount, f32 period) {
     f32 rate;
 
     rate = 0.0f;
-    if (amount == *(f32 *)((char *)&D_800C91F8 + 4)) {
-        return *(f32 *)((char *)&D_800C91F8 + 4);
+    if (amount == ((func_8025F454_S1 *)(&D_800C91F8))->unk4) {
+        return ((func_8025F454_S1 *)(&D_800C91F8))->unk4;
     }
     if (period <= D_800C9200) {
-        return *(f32 *)((char *)&D_800C91F8 + 4);
+        return ((func_8025F454_S1 *)(&D_800C91F8))->unk4;
     }
-    rate = round_up(amount / period * *(f32 *)((char *)&D_800C9200 + 4), rate);
+    rate = round_up(amount / period * ((func_8025F454_S2 *)(&D_800C9200))->unk4, rate);
     if (rate < D_800D0DA0) {
         return rate;
     }

@@ -16,6 +16,18 @@ extern char D_800CC5A4[];
 
 extern void *jtbl_800CC620[];
 
+typedef struct func_802B4220_S1 func_802B4220_S1;
+struct func_802B4220_S1 {
+    char pad0[0x18];
+    s32 unk18;
+    char pad18[0x24 - 0x18 - sizeof(s32)];
+    s32 unk24;
+    char pad24[0x2C - 0x24 - sizeof(s32)];
+    s32 unk2C;
+    char pad2C[0x48 - 0x2C - sizeof(s32)];
+    char unk48;
+};
+
 /** Dispatch the current object message and forward any resulting value. */
 void func_802B4220(void *arg0) {
     Message message;
@@ -26,7 +38,7 @@ void func_802B4220(void *arg0) {
     s32 field18;
     s32 value;
 
-    field18 = *(s32 *)((char *)arg0 + 0x18);
+    field18 = ((func_802B4220_S1 *)(arg0))->unk18;
     if (field18 != 0) {
         func_802B378C(field18, &message);
         {
@@ -42,8 +54,8 @@ void func_802B4220(void *arg0) {
     do {
         sw_message_0:
             func_802B43B0(arg0, &message);
-            if (*(s32 *)((char *)arg0 + 0x2C) == 1) {
-                field18 = *(s32 *)((char *)arg0 + 0x18);
+            if (((func_802B4220_S1 *)(arg0))->unk2C == 1) {
+                field18 = ((func_802B4220_S1 *)(arg0))->unk18;
                 if (field18 != 0 && (func_802B3A80(field18, &value1) & 0xFF)) {
                     output.type = 0;
                     value = value1;
@@ -53,8 +65,8 @@ void func_802B4220(void *arg0) {
             break;
         sw_message_2:
             func_802B4C3C(arg0, &message);
-            if (*(s32 *)((char *)arg0 + 0x2C) == 1) {
-                field18 = *(s32 *)((char *)arg0 + 0x18);
+            if (((func_802B4220_S1 *)(arg0))->unk2C == 1) {
+                field18 = ((func_802B4220_S1 *)(arg0))->unk18;
                 if (field18 != 0 && (func_802B3A80(field18, &value2) & 0xFF)) {
                     output.type = 0;
                     value = value2;
@@ -63,21 +75,21 @@ void func_802B4220(void *arg0) {
             }
             break;
         sw_message_3:
-            *(s32 *)((char *)arg0 + 0x2C) = 2;
+            ((func_802B4220_S1 *)(arg0))->unk2C = 2;
             message.type = 0x10;
-            func_802B51A4((char *)arg0 + 0x48, &message, 0x7FFFFFFF);
+            func_802B51A4(&((func_802B4220_S1 *)(arg0))->unk48, &message, 0x7FFFFFFF);
             break;
         sw_message_17:
         sw_message_18:
         sw_message_19:
-            if (*(s32 *)((char *)arg0 + 0x2C) == 1) {
-                field18 = *(s32 *)((char *)arg0 + 0x18);
+            if (((func_802B4220_S1 *)(arg0))->unk2C == 1) {
+                field18 = ((func_802B4220_S1 *)(arg0))->unk18;
                 if (field18 != 0 && (func_802B3A80(field18, &value3) & 0xFF)) {
                     output.type = 0;
                     value = value3;
 send_value:
-                    func_802B51A4((char *)arg0 + 0x48, &output,
-                                  value * *(s32 *)((char *)arg0 + 0x24));
+                    func_802B51A4(&((func_802B4220_S1 *)(arg0))->unk48, &output,
+                                  value * ((func_802B4220_S1 *)(arg0))->unk24);
                 }
             }
             break;

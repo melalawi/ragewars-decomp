@@ -27,9 +27,9 @@ typedef struct HashNode {
 extern char D_80105120;
 extern char D_801051A0;
 extern s32 D_80104570;
-extern Node **D_80104564;
+extern struct { Node **value; } D_80104564;
 extern Node *D_80104568;
-extern s32 D_8010513C;
+extern struct { s32 value; } D_8010513C;
 extern u32 D_80105190;
 extern HashNode *D_80105194;
 
@@ -57,16 +57,22 @@ static inline void find(s32 key, Request **out) {
     }
 }
 
+typedef struct func_80252714_S1 func_80252714_S1;
+struct func_80252714_S1 {
+    char pad0[0x14];
+    char unk14;
+};
+
 static inline void release(s32 node) {
     func_80255E78(&D_80104570, (void *)node);
-    if (*(s32 *)(node + 0xC) & 0x1000) {
-        func_80255E78((char *)&D_80104570 + 0x14, (void *)node);
+    if (((Node *)node)->flags & 0x1000) {
+        func_80255E78(&((func_80252714_S1 *)(&D_80104570))->unk14, (void *)node);
     }
     if (*(&D_80104570 - 2) == node) {
         *(&D_80104570 - 2) = 0;
     }
-    *(s32 *)(node + 0xC) = 0;
-    D_80104564[D_8010513C] = (Node *)node;
+    ((Node *)node)->flags = 0;
+    D_80104564.value[D_8010513C.value] = (Node *)node;
     *(&D_80104570 + 0x2F3) += 1;
 }
 

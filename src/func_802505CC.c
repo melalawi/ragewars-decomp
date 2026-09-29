@@ -24,6 +24,14 @@ extern void func_80272908(void *, Triple *, Triple *);
 extern void func_80265E30(void *, void *, s32, s32, Triple, Pair);
 extern void func_802536F4(s32, s32 **);
 
+typedef struct func_802505CC_S1 func_802505CC_S1;
+struct func_802505CC_S1 {
+    char pad0[0x1C];
+    s32 unk1C;
+    char pad1C[0x68 - 0x1C - sizeof(s32)];
+    char unk68;
+};
+
 void func_802505CC(void *object, s32 all) {
     s32 **model;
     s32 **table;
@@ -36,12 +44,12 @@ void func_802505CC(void *object, s32 all) {
     s32 count;
     s32 i;
 
-    model = func_802518DC(0, *(s32 *)((char *)object + 0x1C), *(s32 *)((char *)object + 0x1C), 0x18, 4, 0, 0,
+    model = func_802518DC(0, ((func_802505CC_S1 *)(object))->unk1C, ((func_802505CC_S1 *)(object))->unk1C, 0x18, 4, 0, 0,
                           &D_800C8F4C, 0);
     if (model == 0) {
         return;
     }
-    name = func_8028FE1C(*model, *(s32 *)((char *)object + 0x1C), 3, &size);
+    name = func_8028FE1C(*model, ((func_802505CC_S1 *)(object))->unk1C, 3, &size);
     table = func_802518DC(0, name, name, size, 0, 0, 0, &D_800C8F60, 0);
     if (table != 0) {
         header = *table;
@@ -50,7 +58,7 @@ void func_802505CC(void *object, s32 all) {
         for (i = 0; i < count; i++) {
             attachment = &entries[i];
             if (all != 0 || attachment->type == 8) {
-                func_80272908((char *)object + 0x68, &attachment->offset, &position);
+                func_80272908(&((func_802505CC_S1 *)(object))->unk68, &attachment->offset, &position);
                 func_80265E30(object, object, attachment->type, -1, position, attachment->params);
             }
         }

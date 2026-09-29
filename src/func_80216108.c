@@ -10,6 +10,16 @@ typedef struct AudioState {
 extern AudioState D_801468A0;
 extern s32 func_8024E914(void *arg0);
 
+typedef struct func_80216108_S1 func_80216108_S1;
+struct func_80216108_S1 {
+    char pad0[0x100];
+    u32 unk100;
+    char pad100[0x5D8 - 0x100 - sizeof(u32)];
+    char* unk5D8;
+    char pad5D8[0x122C - 0x5D8 - sizeof(char*)];
+    u32 unk122C;
+};
+
 s32 func_80216108(void *arg0)
 {
     char *actor = arg0;
@@ -40,13 +50,13 @@ s32 func_80216108(void *arg0)
     case 1123:
     case 1126:
         if (*(u8 *)actor == 1) {
-            if ((*(u32 *)(actor + 0x100) & 0x300000) != 0) {
-                if ((*(u32 *)(actor + 0x122C) & 0x18400) != 0) {
+            if ((((func_80216108_S1 *)(actor))->unk100 & 0x300000) != 0) {
+                if ((((func_80216108_S1 *)(actor))->unk122C & 0x18400) != 0) {
                     return 9;
                 }
                 audio = &D_801468A0;
                 if (audio->field98 != 0 &&
-                    *(s8 *)(*(char **)(actor + 0x5D8) + 0x80) == 0xB &&
+                    *(s8 *)(((func_80216108_S1 *)(actor))->unk5D8 + 0x80) == 0xB &&
                     audio->fieldA0 > 0) {
                     return 9;
                 }

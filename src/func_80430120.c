@@ -4,6 +4,22 @@
 extern char *D_800E54A4;
 extern void *func_8041B87C(s32, s32);
 extern void func_8025DF54(s32, void *);
+typedef struct func_80430120_S1 func_80430120_S1;
+typedef struct func_80430120_S2 func_80430120_S2;
+typedef struct func_80430120_S3 func_80430120_S3;
+struct func_80430120_S1 {
+    char pad0[0x4];
+    s32 unk4;
+};
+struct func_80430120_S2 {
+    char pad0[0xB8C];
+    u8 unkB8C;
+};
+struct func_80430120_S3 {
+    char pad0[0x10];
+    u8 unk10;
+};
+
 s32 func_80430120(s32 unusedA, s32 unusedB, s32 index, s32 mode)
 {
   s32 slot = index & 0xFFFF;
@@ -11,7 +27,7 @@ s32 func_80430120(s32 unusedA, s32 unusedB, s32 index, s32 mode)
   void *handle;
   if ((*((s32 *) ((D_800E54A4 + offset) + 0x58))) == 0xC)
   {
-    handle = func_8041B87C(*((s32 *) (D_800E54A4 + 4)), slot);
+    handle = func_8041B87C(((func_80430120_S1 *)(D_800E54A4))->unk4, slot);
     *((s32 *) ((D_800E54A4 + offset) + 0xBA4)) = 0;
     *((s32 *) ((D_800E54A4 + offset) + 0xBA0)) = 2;
     if (mode == 1)
@@ -25,12 +41,12 @@ s32 func_80430120(s32 unusedA, s32 unusedB, s32 index, s32 mode)
         char *base = D_800E54A4;
         s32 row = slot * 0xB68;
         char *entry = base + (((*((s32 *) ((base + row) + 0xB9C))) * 2) + row);
-        if ((*((u8 *) (entry + 0xB8C))) == 0)
+        if ((((func_80430120_S2 *)(entry))->unkB8C) == 0)
         {
-          *((u8 *) (entry + 0xB8C)) = 0x41;
+          ((func_80430120_S2 *)(entry))->unkB8C = 0x41;
         }
       }
-      *((u8 *) (((char *) handle) + 0x10)) = 0xFF;
+      ((func_80430120_S3 *)(handle))->unk10 = 0xFF;
       func_8025DF54(0xE74, handle);
     }
   }

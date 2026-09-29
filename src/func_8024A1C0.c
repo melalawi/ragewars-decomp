@@ -78,6 +78,14 @@ static inline void func_8024A1C0_spawn(Actor *actor, Lookup *lookup) {
     }
 }
 
+typedef struct func_8024A1C0_S1 func_8024A1C0_S1;
+struct func_8024A1C0_S1 {
+    char pad0[0x3];
+    s8 unk3;
+    char pad3[0xB4 - 0x3 - sizeof(s8)];
+    s32 unkB4;
+};
+
 void func_8024A1C0(Actor *actor, void *arg1, Lookup *lookup) {
     s32 one;
 
@@ -86,9 +94,9 @@ void func_8024A1C0(Actor *actor, void *arg1, Lookup *lookup) {
     }
     if (lookup->unk0 != 0) {
         one = 1;
-        func_8026DA4C((s32)lookup->value, *(s32 *)((char *)actor + 0xB4), one,
+        func_8026DA4C((s32)lookup->value, ((func_8024A1C0_S1 *)(actor))->unkB4, one,
                       (char *)actor + ((((D_800D297C << one) + D_800D297C) << 3) + 0x140),
-                      0, *(s8 *)((char *)actor + 3));
+                      0, ((func_8024A1C0_S1 *)(actor))->unk3);
         func_8024A1C0_spawn(actor, lookup);
     }
     D_800D15E0 = 0;

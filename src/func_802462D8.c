@@ -24,13 +24,19 @@ extern s32 func_8024DF4C(InstanceHdr *);
 extern s32 func_8024DF90(InstanceHdr *);
 extern s32 func_80243A80(InstanceHdr *, Vec3, char *);
 
+typedef struct func_802462D8_S1 func_802462D8_S1;
+struct func_802462D8_S1 {
+    char pad0[0x100];
+    s32 unk100;
+};
+
 s32 func_802462D8(InstanceHdr *arg0, Vec3 position, char **out) {
     InstanceHdr saved;
     char *set;
     s32 grounded;
     s32 collisions;
 
-    if (*(u8 *)arg0 == 1 && (*(s32 *)((char *)arg0 + 0x100) & 0x300000) != 0) {
+    if (*(u8 *)arg0 == 1 && (((func_802462D8_S1 *)(arg0))->unk100 & 0x300000) != 0) {
         set = &D_801040D0;
     } else {
         grounded = func_8024DED0(arg0);

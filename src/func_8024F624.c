@@ -10,23 +10,41 @@ extern void func_802702EC(void *arg0, void *arg1);
 extern s32 D_8013B190;
 extern s32 D_800D297C;
 
+typedef struct func_8024F624_S1 func_8024F624_S1;
+struct func_8024F624_S1 {
+    char pad0[0x8];
+    f32 unk8;
+    char pad8[0xC - 0x8 - sizeof(f32)];
+    f32 unkC;
+    char padC[0x10 - 0xC - sizeof(f32)];
+    f32 unk10;
+    char pad10[0x18 - 0x10 - sizeof(f32)];
+    s32* unk18;
+    char pad18[0x174 - 0x18 - sizeof(s32*)];
+    s32 unk174;
+    char pad174[0x194 - 0x174 - sizeof(s32)];
+    f32 unk194;
+    char pad194[0x198 - 0x194 - sizeof(f32)];
+    f32 unk198;
+};
+
 void func_8024F624(void *arg0) {
     char *o = (char *) arg0;
     f32 sp10[16];
     s32 var_a1;
 
-    if (*(s32 *) (*(s32 **) (o + 0x18)) == 8) {
+    if (*(s32 *) (((func_8024F624_S1 *)(o))->unk18) == 8) {
         var_a1 = D_8013B190;
     } else {
-        var_a1 = *(s32 *) (o + 0x174);
+        var_a1 = ((func_8024F624_S1 *)(o))->unk174;
     }
     func_80273744(sp10, var_a1);
 
-    func_802734EC(sp10, *(f32 *) (o + 0x194), *(f32 *) (o + 0x194), *(f32 *) (o + 0x194));
+    func_802734EC(sp10, ((func_8024F624_S1 *)(o))->unk194, ((func_8024F624_S1 *)(o))->unk194, ((func_8024F624_S1 *)(o))->unk194);
 
-    func_802725BC((f32 *) (o + 8), 20000.0f);
+    func_802725BC(&((func_8024F624_S1 *)(o))->unk8, 20000.0f);
 
-    func_802734B8((char *) sp10, *(f32 *) (o + 8), *(f32 *) (o + 0xC) + *(f32 *) (o + 0x198), *(f32 *) (o + 0x10));
+    func_802734B8((char *) sp10, ((func_8024F624_S1 *)(o))->unk8, ((func_8024F624_S1 *)(o))->unkC + ((func_8024F624_S1 *)(o))->unk198, ((func_8024F624_S1 *)(o))->unk10);
 
     func_80273DDC(sp10);
 

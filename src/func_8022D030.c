@@ -15,36 +15,59 @@ extern f32 D_800C7E94;
 extern f32 D_800C7E98;
 extern f32 D_800C7E9C;
 
+typedef struct func_8022D030_S1 func_8022D030_S1;
+typedef struct func_8022D030_S2 func_8022D030_S2;
+struct func_8022D030_S1 {
+    char pad0[0xE4];
+    u16 unkE4;
+    char padE4[0x10E - 0xE4 - sizeof(u16)];
+    s8 unk10E;
+    char pad10E[0x650 - 0x10E - sizeof(s8)];
+    s16 unk650;
+    char pad650[0x658 - 0x650 - sizeof(s16)];
+    f32 unk658;
+    char pad658[0x6C0 - 0x658 - sizeof(f32)];
+    f32 unk6C0;
+    char pad6C0[0x6C8 - 0x6C0 - sizeof(f32)];
+    f32 unk6C8;
+    char pad6C8[0x86C - 0x6C8 - sizeof(f32)];
+    s32 unk86C;
+};
+struct func_8022D030_S2 {
+    char pad0[0x38];
+    s32 unk38;
+};
+
 void func_8022D030(void *arg0, void *arg1) {
     char *player;
     s32 busy;
     f32 x;
 
     player = arg0;
-    if (*(f32 *) (player + 0x6C8) == 0.0f) {
-        *(s16 *) (player + 0x650) = 0xD;
+    if (((func_8022D030_S1 *)(player))->unk6C8 == 0.0f) {
+        ((func_8022D030_S1 *)(player))->unk650 = 0xD;
     } else {
-        *(s16 *) (player + 0x650) = 0xE;
+        ((func_8022D030_S1 *)(player))->unk650 = 0xE;
     }
     func_802231B0(player, arg1, &D_800CE88C);
     func_802238BC(player, arg1, &D_800CE8A4);
     busy = 0;
-    if (*(s32 *) (player + 0x86C) == 0x1144) {
-        busy = *(s8 *) (player + 0x10E) == 0;
+    if (((func_8022D030_S1 *)(player))->unk86C == 0x1144) {
+        busy = ((func_8022D030_S1 *)(player))->unk10E == 0;
     }
-    if (*(u16 *) (player + 0xE4) == D_800CE47C) {
-        *(s32 *) (player + 0x86C) = 0x8A2;
+    if (((func_8022D030_S1 *)(player))->unkE4 == D_800CE47C) {
+        ((func_8022D030_S1 *)(player))->unk86C = 0x8A2;
     } else if (!busy) {
-        x = *(f32 *) (player + 0x6C0);
+        x = ((func_8022D030_S1 *)(player))->unk6C0;
         if (D_800C7E94 <= x) {
-            *(s32 *) (player + 0x86C) = 0x8A2;
+            ((func_8022D030_S1 *)(player))->unk86C = 0x8A2;
         } else if (x <= D_800C7E98) {
-            *(s32 *) (player + 0x86C) = 0x8A7;
+            ((func_8022D030_S1 *)(player))->unk86C = 0x8A7;
         } else {
-            *(s32 *) (player + 0x86C) = 0x14;
+            ((func_8022D030_S1 *)(player))->unk86C = 0x14;
         }
     }
-    if (!(*(s32 *) ((char *) arg1 + 0x38) & 0x20000) && *(f32 *) (player + 0x658) > D_800C7E9C) {
+    if (!(((func_8022D030_S2 *)(arg1))->unk38 & 0x20000) && ((func_8022D030_S1 *)(player))->unk658 > D_800C7E9C) {
         func_802227D0(player, arg1, 3);
     }
 }

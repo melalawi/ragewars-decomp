@@ -22,13 +22,19 @@ extern void func_80298EA4(s32 arg0);
 extern void func_8029AC80(void *arg0);
 extern void func_80411E98(s16 arg0);
 
+typedef struct func_80299ECC_S1 func_80299ECC_S1;
+struct func_80299ECC_S1 {
+    char pad0[0xC];
+    s16 unkC;
+};
+
 void func_80299ECC(void) {
     s32 index;
 
     if (D_8014D080->entries[D_8014D080->index].object != 0) {
         func_80298EA4(D_8014D080->entries[D_8014D080->index - 1].field4);
         func_8029AC80(&D_8014D080->entries[D_8014D080->index].fieldC);
-        func_80411E98(*(s16 *)((char *)D_8014D080->entries[D_8014D080->index].object + 0xC));
+        func_80411E98(((func_80299ECC_S1 *)(D_8014D080->entries[D_8014D080->index].object))->unkC);
     }
     D_8014D080->entries[D_8014D080->index].object = 0;
     D_8014D080->entries[D_8014D080->index].field4 = 0;

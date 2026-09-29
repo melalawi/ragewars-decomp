@@ -42,7 +42,24 @@ extern f32 D_800CA450;
 extern f32 D_800D299C;
 extern f32 D_800D29A0;
 extern s32 D_800D2950;
-extern char D_8011FAC0[];
+typedef struct func_8028ED80_S1 func_8028ED80_S1;
+typedef struct func_8028ED80_S2 func_8028ED80_S2;
+struct func_8028ED80_S1 {
+    char pad0[0x110];
+    void* unk110;
+    char pad110[0x250 - 0x110 - sizeof(void*)];
+    void* unk250;
+    char pad250[0x390 - 0x250 - sizeof(void*)];
+    void* unk390;
+};
+struct func_8028ED80_S2 {
+    char pad0[0x140];
+    FrameSchedule unk140;
+    char pad140[0x280 - 0x140 - sizeof(FrameSchedule)];
+    FrameSchedule unk280;
+};
+
+extern func_8028ED80_S1 D_8011FAC0;
 extern s32 D_801536F4;
 
 /** Finish a yielded graphics task, account for its elapsed RSP time, and schedule more work. */
@@ -83,19 +100,19 @@ void func_8028ED80(OSSched *sc)
 
                 ticks = ((func_802BFEB0() - D_8011F290) << 6) / 3;
                 elapsed = (f32)ticks * D_800CA448[1];
-                schedule = (FrameSchedule *)D_8011FAC0;
+                schedule = (FrameSchedule *)&D_8011FAC0;
                 framebuffer = task->framebuffer;
-                scheduledFramebuffer = *(void **)(D_8011FAC0 + 0x110);
+                scheduledFramebuffer = D_8011FAC0.unk110;
                 D_800D299C = elapsed;
                 if (framebuffer == scheduledFramebuffer) {
                     goto schedule_selected;
                 }
-                if (framebuffer == *(void **)(D_8011FAC0 + 0x250)) {
-                    schedule = (FrameSchedule *)(D_8011FAC0 + 0x140);
+                if (framebuffer == D_8011FAC0.unk250) {
+                    schedule = &((func_8028ED80_S2 *)(&D_8011FAC0))->unk140;
                     goto schedule_selected;
                 }
-                if (framebuffer == *(void **)(D_8011FAC0 + 0x390)) {
-                    schedule = (FrameSchedule *)(D_8011FAC0 + 0x280);
+                if (framebuffer == D_8011FAC0.unk390) {
+                    schedule = &((func_8028ED80_S2 *)(&D_8011FAC0))->unk280;
                 }
 schedule_selected:
                 func_80253C8C(0, (schedule->task == D_801536F4));

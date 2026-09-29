@@ -22,21 +22,41 @@ typedef struct {
     f32 scaleY;
 } Message;
 
+typedef struct { u8 * unk0; } func_8023A334_G1;
 extern u8 *D_800D7028;
+typedef struct { u8 * unk0; } func_8023A334_G2;
 extern u8 *D_800D7034;
+typedef struct { s32 unk0; } func_8023A334_G3;
 extern s32 D_800E28D0;
 extern void func_80239CD0(Message *);
 extern void func_80255E78(void *, Message *);
 extern void func_80255CB4(void *, Message *);
 
+typedef struct func_8023A334_S1 func_8023A334_S1;
+typedef struct func_8023A334_S2 func_8023A334_S2;
+typedef struct func_8023A334_S3 func_8023A334_S3;
+typedef union func_8023A334_S1_UF24 { Message* v0; char v1; } func_8023A334_S1_UF24;
+struct func_8023A334_S1 {
+    char pad0[0xF24];
+    func_8023A334_S1_UF24 unkF24;
+};
+struct func_8023A334_S2 {
+    char pad0[0xE40];
+    char unkE40;
+};
+struct func_8023A334_S3 {
+    char pad0[0x4];
+    s32 unk4;
+};
+
 static inline Message *recycle(void *owner, void *pool) {
     Message *oldest;
 
-    oldest = *(Message **)((char *)owner + 0xF24);
+    oldest = ((func_8023A334_S1 *)(owner))->unkF24.v0;
     if (oldest != 0) {
         func_80239CD0(oldest);
-        func_80255E78((char *)owner + 0xF24, oldest);
-        func_80255CB4((char *)pool + 0xE40, oldest);
+        func_80255E78(&((func_8023A334_S1 *)(owner))->unkF24.v1, oldest);
+        func_80255CB4(&((func_8023A334_S2 *)(pool))->unkE40, oldest);
     }
     return oldest;
 }
@@ -45,6 +65,7 @@ Message *func_8023A334(void *owner, void *pool, u8 *text, s32 kind, f32 size, s3
     Message *message;
     u8 *line;
     u8 *p;
+    s32 height;
 
     message = 0;
     if (pool == 0) {
@@ -71,8 +92,9 @@ Message *func_8023A334(void *owner, void *pool, u8 *text, s32 kind, f32 size, s3
                     message->pad2C = 0;
                     message->scaleX = 1.0f;
                     message->scaleY = 1.0f;
+                    height = (&D_800E28D0)[1]; /* FAKEMATCH */
                     message->x = D_800E28D0 / 2;
-                    message->y = *(s32 *)((char *)&D_800E28D0 + 4) - 80;
+                    message->y = height - 80;
                     message->size = size * 15.0f;
                 }
                 line = p + 1;

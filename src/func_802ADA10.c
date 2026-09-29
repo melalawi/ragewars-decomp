@@ -2,6 +2,12 @@
 
 extern char D_800D3390;
 
+typedef struct func_802ADA10_S1 func_802ADA10_S1;
+struct func_802ADA10_S1 {
+    char pad0[0x4];
+    s16 unk4;
+};
+
 void *func_802ADA10(s32 arg0) {
     char *v1;
     s32 i;
@@ -10,7 +16,7 @@ void *func_802ADA10(s32 arg0) {
     i = 2;
     do {
         i -= 1;
-        if (*(s16 *)(v1 + 4) != arg0) {
+        if (((func_802ADA10_S1 *)(v1))->unk4 != arg0) {
             v1 += 0x10;
         } else {
             return v1;

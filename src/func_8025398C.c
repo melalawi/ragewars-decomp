@@ -9,6 +9,12 @@ extern s32 D_80104598[];
 extern s32 D_801045A8;
 extern s32 D_8010515C;
 
+typedef struct func_8025398C_S1 func_8025398C_S1;
+struct func_8025398C_S1 {
+    char pad0[0xB98];
+    char unkB98;
+};
+
 void func_8025398C(s32 unused, s32 arg1) {
     s32 temp_v1;
     s32 temp_v1_2;
@@ -33,7 +39,7 @@ void func_8025398C(s32 unused, s32 arg1) {
     D_8010515C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802C2040(temp_v0);
-        func_802C0510((char *)base + 0xB98, 0, 1);
+        func_802C0510(&((func_8025398C_S1 *)(base))->unkB98, 0, 1);
         return;
     }
     func_802C2040(temp_v0);

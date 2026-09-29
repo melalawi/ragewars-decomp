@@ -4,27 +4,52 @@ extern s32 func_80214178(void *, void *, s32);
 extern f32 D_800D2988;
 extern f32 D_800C6C90;
 
+typedef struct func_80207BB8_S1 func_80207BB8_S1;
+typedef struct func_80207BB8_S2 func_80207BB8_S2;
+typedef struct func_80207BB8_S3 func_80207BB8_S3;
+typedef struct func_80207BB8_S4 func_80207BB8_S4;
+struct func_80207BB8_S1 {
+    char pad0[0x18];
+    void* unk18;
+    char pad18[0x38 - 0x18 - sizeof(void*)];
+    s32 unk38;
+};
+struct func_80207BB8_S2 {
+    char pad0[0x14];
+    char unk14;
+};
+struct func_80207BB8_S3 {
+    char pad0[0x24];
+    s32 unk24;
+    char pad24[0x38 - 0x24 - sizeof(s32)];
+    f32 unk38;
+};
+struct func_80207BB8_S4 {
+    char pad0[0x64];
+    f32 unk64;
+};
+
 void func_80207BB8(void *arg0, void *arg1) {
     void *temp_a3;
     s32 temp_a2;
     s32 var_v1;
 
-    temp_a3 = (char *)*(void **)((char *)arg0 + 0x18) + 0x14;
-    temp_a2 = *(s32 *)((char *)temp_a3 + 0x24);
+    temp_a3 = &((func_80207BB8_S2 *)(((func_80207BB8_S1 *)(arg0))->unk18))->unk14;
+    temp_a2 = ((func_80207BB8_S3 *)(temp_a3))->unk24;
     var_v1 = 1;
     if (temp_a2 & 0x10000) {
-        var_v1 = (u32)(*(s32 *)((char *)arg0 + 0x38) & 0x40) < (u32)var_v1;
+        var_v1 = (u32)(((func_80207BB8_S1 *)(arg0))->unk38 & 0x40) < (u32)var_v1;
     }
-    if ((temp_a2 & 0x4000) && !(*(s32 *)((char *)arg0 + 0x38) & 0x40)) {
+    if ((temp_a2 & 0x4000) && !(((func_80207BB8_S1 *)(arg0))->unk38 & 0x40)) {
         var_v1 = 0;
     }
-    if (*(s32 *)((char *)arg0 + 0x38) & 8) {
+    if (((func_80207BB8_S1 *)(arg0))->unk38 & 8) {
         var_v1 = 0;
     }
     if (var_v1 != 0) {
-        *(f32 *)((char *)arg1 + 0x64) = *(f32 *)((char *)arg1 + 0x64) + (D_800D2988 / *(f32 *)((char *)temp_a3 + 0x38));
+        ((func_80207BB8_S4 *)(arg1))->unk64 = ((func_80207BB8_S4 *)(arg1))->unk64 + (D_800D2988 / ((func_80207BB8_S3 *)(temp_a3))->unk38);
     }
-    if (*(f32 *)((char *)arg1 + 0x64) >= D_800C6C90) {
+    if (((func_80207BB8_S4 *)(arg1))->unk64 >= D_800C6C90) {
         func_80214178(arg0, arg1, 2);
     }
 }

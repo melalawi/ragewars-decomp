@@ -11,6 +11,49 @@ extern s32 func_80258D4C(void *arg0);
 extern s16 func_80259B30(void *arg0, s32 arg1);
 extern f32 func_802B2350(s32 arg0);
 
+typedef struct func_8025BBA4_S1 func_8025BBA4_S1;
+typedef struct func_8025BBA4_S2 func_8025BBA4_S2;
+typedef struct func_8025BBA4_S3 func_8025BBA4_S3;
+typedef struct func_8025BBA4_S4 func_8025BBA4_S4;
+struct func_8025BBA4_S1 {
+    char pad0[0x28];
+    s16 unk28;
+    char pad28[0x44 - 0x28 - sizeof(s16)];
+    char unk44;
+    char pad44[0x88 - 0x44 - sizeof(char)];
+    s32 unk88;
+    char pad88[0x8C - 0x88 - sizeof(s32)];
+    Block12 unk8C;
+    char pad8C[0x98 - 0x8C - sizeof(Block12)];
+    f32 unk98;
+    char pad98[0x9C - 0x98 - sizeof(f32)];
+    f32 unk9C;
+    char pad9C[0xA8 - 0x9C - sizeof(f32)];
+    s32 unkA8;
+    char padA8[0xB0 - 0xA8 - sizeof(s32)];
+    void* unkB0;
+    char padB0[0xC0 - 0xB0 - sizeof(void*)];
+    s32 unkC0;
+};
+struct func_8025BBA4_S2 {
+    char pad0[0xC];
+    s16 unkC;
+};
+struct func_8025BBA4_S3 {
+    char pad0[0x8E];
+    u16 unk8E;
+    char pad8E[0x90 - 0x8E - sizeof(u16)];
+    u16 unk90;
+    char pad90[0x92 - 0x90 - sizeof(u16)];
+    s16 unk92;
+};
+struct func_8025BBA4_S4 {
+    char pad0[0x2B94];
+    s8 unk2B94;
+    char pad2B94[0x2B98 - 0x2B94 - sizeof(s8)];
+    s32 unk2B98;
+};
+
 void func_8025BBA4(void *arg0, void *arg1, s32 arg2) {
     f32 first;
     s16 index;
@@ -19,35 +62,35 @@ void func_8025BBA4(void *arg0, void *arg1, s32 arg2) {
 
     func_80259C7C(arg0, arg1, arg2);
     func_80259F88(arg0, arg1, arg2);
-    *(s16 *)((u8 *)arg0 + 0x28) = 0x40;
-    index = *(s16 *)((u8 *)arg1 + 0xC);
+    ((func_8025BBA4_S1 *)(arg0))->unk28 = 0x40;
+    index = ((func_8025BBA4_S2 *)(arg1))->unkC;
     if (index != -1) {
-        record = func_80258C14(*(void **)((u8 *)arg0 + 0xB0), index);
-        *(Block12 *)((u8 *)arg0 + 0x8C) = *(Block12 *)record;
-        first = func_802B2350(*(u16 *)((u8 *)arg0 + 0x8E));
-        *(f32 *)((u8 *)arg0 + 0x9C) =
-            (first - func_802B2350(*(u16 *)((u8 *)arg0 + 0x90))) /
-            *(s16 *)((u8 *)arg0 + 0x92);
-        *(f32 *)((u8 *)arg0 + 0x98) =
-            func_802B2350(*(u16 *)((u8 *)arg0 + 0x8E));
-        *(s16 *)((u8 *)arg0 + 0x28) =
-            (s16)(s32)func_802B2350(*(u16 *)((u8 *)arg0 + 0x8E));
-        *(s32 *)((u8 *)arg0 + 0x88) = 1;
+        record = func_80258C14(((func_8025BBA4_S1 *)(arg0))->unkB0, index);
+        ((func_8025BBA4_S1 *)(arg0))->unk8C = *(Block12 *)record;
+        first = func_802B2350(((func_8025BBA4_S3 *)(arg0))->unk8E);
+        ((func_8025BBA4_S1 *)(arg0))->unk9C =
+            (first - func_802B2350(((func_8025BBA4_S3 *)(arg0))->unk90)) /
+            ((func_8025BBA4_S3 *)(arg0))->unk92;
+        ((func_8025BBA4_S1 *)(arg0))->unk98 =
+            func_802B2350(((func_8025BBA4_S3 *)(arg0))->unk8E);
+        ((func_8025BBA4_S1 *)(arg0))->unk28 =
+            (s16)(s32)func_802B2350(((func_8025BBA4_S3 *)(arg0))->unk8E);
+        ((func_8025BBA4_S1 *)(arg0))->unk88 = 1;
         return;
     }
 
-    *(s32 *)((u8 *)arg0 + 0x88) = 0;
-    if (*(s32 *)((u8 *)arg0 + 0xA8) < 0x100) {
-        if (*(s32 *)((u8 *)arg0 + 0xC0) == 0 &&
-            func_80258D4C(*(void **)((u8 *)arg0 + 0xB0)) != 0) {
-            value = *(s8 *)((u8 *)*(void **)((u8 *)arg0 + 0xB0) + 0x2B94);
+    ((func_8025BBA4_S1 *)(arg0))->unk88 = 0;
+    if (((func_8025BBA4_S1 *)(arg0))->unkA8 < 0x100) {
+        if (((func_8025BBA4_S1 *)(arg0))->unkC0 == 0 &&
+            func_80258D4C(((func_8025BBA4_S1 *)(arg0))->unkB0) != 0) {
+            value = ((func_8025BBA4_S4 *)(((func_8025BBA4_S1 *)(arg0))->unkB0))->unk2B94;
             goto store_value;
         }
-    } else if (*(s32 *)((u8 *)arg0 + 0xC0) == 0 &&
-               func_80258D4C(*(void **)((u8 *)arg0 + 0xB0)) != 0) {
-        value = func_80259B30((u8 *)arg0 + 0x44,
-            *(s32 *)((u8 *)*(void **)((u8 *)arg0 + 0xB0) + 0x2B98));
+    } else if (((func_8025BBA4_S1 *)(arg0))->unkC0 == 0 &&
+               func_80258D4C(((func_8025BBA4_S1 *)(arg0))->unkB0) != 0) {
+        value = func_80259B30(&((func_8025BBA4_S1 *)(arg0))->unk44,
+            ((func_8025BBA4_S4 *)(((func_8025BBA4_S1 *)(arg0))->unkB0))->unk2B98);
 store_value:
-        *(s16 *)((u8 *)arg0 + 0x28) = value;
+        ((func_8025BBA4_S1 *)(arg0))->unk28 = value;
     }
 }

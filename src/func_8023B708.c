@@ -47,6 +47,12 @@ extern f32 D_800C86E8;
 extern f32 D_800D2988;
 extern f32 D_800D2994;
 
+typedef struct func_8023B708_S1 func_8023B708_S1;
+struct func_8023B708_S1 {
+    char pad0[0x4];
+    f32 unk4;
+};
+
 s32 func_8023B708(Rotor *rotor, s32 mask, f32 fallback, s32 boosting, f32 boost, Host *host) {
     Descriptor *descriptor;
     f32 throttle;
@@ -84,7 +90,7 @@ s32 func_8023B708(Rotor *rotor, s32 mask, f32 fallback, s32 boosting, f32 boost,
     if (wrap < angle) {
         rotor->angleA = angle - wrap;
     }
-    angle = rotor->angleB + value * *(f32 *)((char *)&D_800C86E8 + 4);
+    angle = rotor->angleB + value * ((func_8023B708_S1 *)(&D_800C86E8))->unk4;
     rotor->angleB = angle;
     if (wrap < angle) {
         rotor->angleB = angle - wrap;

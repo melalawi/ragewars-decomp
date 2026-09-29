@@ -10,6 +10,12 @@ typedef struct
   f32 unk1B31C;
 } State;
 extern void func_802505CC(s32, s32);
+typedef struct func_8028D658_S1 func_8028D658_S1;
+struct func_8028D658_S1 {
+    char pad0[0x4];
+    State unk4;
+};
+
 void func_8028D658(State *arg0)
 {
   f32 temp_f1;
@@ -37,7 +43,7 @@ void func_8028D658(State *arg0)
     {
       temp_a0 = var_s1->values[0];
       func_802505CC(temp_a0, var_s3);
-      var_s1 = (State *) (((char *) var_s1) + 4);
+      var_s1 = &((func_8028D658_S1 *)(var_s1))->unk4;
       var_s0 += 1;
     }
     while (var_s0 < arg0->unkC4C);

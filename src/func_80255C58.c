@@ -1,20 +1,32 @@
 #include "basetypes.h"
 
+typedef struct func_80255C58_S1 func_80255C58_S1;
+struct func_80255C58_S1 {
+    char pad0[0x4];
+    s32 unk4;
+    char pad4[0x8 - 0x4 - sizeof(s32)];
+    s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(s32)];
+    s32 unkC;
+    char padC[0x10 - 0xC - sizeof(s32)];
+    s32 unk10;
+};
+
 s32 func_80255C58(void *arg0, s32 arg1) {
     s32 temp_v1;
     s32 temp_v0;
 
     temp_v1 = *(s32 *)arg0;
     if (temp_v1 != 0) {
-        *(s32 *)(arg1 + *(s32 *)((char *)arg0 + 0xC)) = temp_v1;
-        *(s32 *)(*(s32 *)arg0 + *(s32 *)((char *)arg0 + 8)) = arg1;
+        *(s32 *)(arg1 + ((func_80255C58_S1 *)(arg0))->unkC) = temp_v1;
+        *(s32 *)(*(s32 *)arg0 + ((func_80255C58_S1 *)(arg0))->unk8) = arg1;
     } else {
-        *(s32 *)(arg1 + *(s32 *)((char *)arg0 + 0xC)) = 0;
-        *(s32 *)((char *)arg0 + 4) = arg1;
+        *(s32 *)(arg1 + ((func_80255C58_S1 *)(arg0))->unkC) = 0;
+        ((func_80255C58_S1 *)(arg0))->unk4 = arg1;
     }
-    *(s32 *)(arg1 + *(s32 *)((char *)arg0 + 8)) = 0;
+    *(s32 *)(arg1 + ((func_80255C58_S1 *)(arg0))->unk8) = 0;
     *(s32 *)arg0 = arg1;
-    temp_v0 = *(s32 *)((char *)arg0 + 0x10) + 1;
-    *(s32 *)((char *)arg0 + 0x10) = temp_v0;
+    temp_v0 = ((func_80255C58_S1 *)(arg0))->unk10 + 1;
+    ((func_80255C58_S1 *)(arg0))->unk10 = temp_v0;
     return temp_v0;
 }

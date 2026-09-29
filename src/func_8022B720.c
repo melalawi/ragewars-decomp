@@ -3,7 +3,15 @@
 
 extern f32 D_800C7E08;
 
+typedef struct func_8022B720_S1 func_8022B720_S1;
+struct func_8022B720_S1 {
+    char pad0[0x11DC];
+    f32 unk11DC;
+    char pad11DC[0x122C - 0x11DC - sizeof(f32)];
+    s32 unk122C;
+};
+
 void func_8022B720(void *arg0, f32 arg1) {
-    *(f32 *)((char *)arg0 + 0x11DC) = *(f32 *)((char *)arg0 + 0x11DC) + arg1 * D_800C7E08;
-    *(s32 *)((char *)arg0 + 0x122C) = *(s32 *)((char *)arg0 + 0x122C) | 0x2000;
+    ((func_8022B720_S1 *)(arg0))->unk11DC = ((func_8022B720_S1 *)(arg0))->unk11DC + arg1 * D_800C7E08;
+    ((func_8022B720_S1 *)(arg0))->unk122C = ((func_8022B720_S1 *)(arg0))->unk122C | 0x2000;
 }

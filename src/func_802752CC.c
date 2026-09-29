@@ -18,6 +18,38 @@ extern int D_800D2630;
 extern int D_80115DF0;
 extern void func_80272088(Vec752 *, Vec752 *, Vec752 *);
 
+typedef struct func_802752CC_S1 func_802752CC_S1;
+typedef struct func_802752CC_S2 func_802752CC_S2;
+typedef struct func_802752CC_S3 func_802752CC_S3;
+typedef struct func_802752CC_S4 func_802752CC_S4;
+typedef struct func_802752CC_S5 func_802752CC_S5;
+struct func_802752CC_S1 {
+    f32 unk0;
+    char pad0[0x8 - 0x0 - sizeof(f32)];
+    f32 unk8;
+    char pad8[0xC - 0x8 - sizeof(f32)];
+    f32 unkC;
+};
+struct func_802752CC_S2 {
+    f32 unk0;
+    char pad0[0x8 - 0x0 - sizeof(f32)];
+    f32 unk8;
+    char pad8[0xC - 0x8 - sizeof(f32)];
+    f32 unkC;
+};
+struct func_802752CC_S3 {
+    char pad0[0xC];
+    f32 unkC;
+};
+struct func_802752CC_S4 {
+    char pad0[0xC];
+    f32 unkC;
+};
+struct func_802752CC_S5 {
+    char pad0[0xC];
+    f32 unkC;
+};
+
 f32 func_802752CC(Node752 *node, f32 x, f32 z) {
     Vec752 normal;
     Vec752 point;
@@ -32,37 +64,37 @@ f32 func_802752CC(Node752 *node, f32 x, f32 z) {
     if ((int)node != D_800D2630) {
         p = node->cur;
         q = node->prev;
-        a.x = *(f32 *)(p + 0) - *(f32 *)(q + 0);
+        a.x = ((func_802752CC_S1 *)(p))->unk0 - ((func_802752CC_S2 *)(q))->unk0;
         p = node->cur;
         q = node->prev;
-        a.y = *(f32 *)(p + 12) - *(f32 *)(q + 12);
+        a.y = ((func_802752CC_S1 *)(p))->unkC - ((func_802752CC_S2 *)(q))->unkC;
         p = node->cur;
         q = node->prev;
-        a.z = *(f32 *)(p + 8) - *(f32 *)(q + 8);
+        a.z = ((func_802752CC_S1 *)(p))->unk8 - ((func_802752CC_S2 *)(q))->unk8;
         p = node->next;
         q = node->cur;
-        b.x = *(f32 *)(p + 0) - *(f32 *)(q + 0);
+        b.x = ((func_802752CC_S1 *)(p))->unk0 - ((func_802752CC_S2 *)(q))->unk0;
         p = node->next;
         q = node->cur;
-        b.y = *(f32 *)(p + 12) - *(f32 *)(q + 12);
+        b.y = ((func_802752CC_S1 *)(p))->unkC - ((func_802752CC_S2 *)(q))->unkC;
         p = node->next;
         q = node->cur;
-        b.z = *(f32 *)(p + 8) - *(f32 *)(q + 8);
+        b.z = ((func_802752CC_S1 *)(p))->unk8 - ((func_802752CC_S2 *)(q))->unk8;
         func_80272088((Vec752 *)&D_80115DF0, &b, &a);
     }
     normal = *(Vec752 *)&D_80115DF0;
     D_800D2630 = (int)node;
     if (normal.y == 0.0f) {
-        return (*(f32 *)((char *)node->prev + 12) +
-                *(f32 *)((char *)node->cur + 12) +
-                *(f32 *)((char *)node->next + 12)) * D_800C9AB8;
+        return (((func_802752CC_S3 *)(node->prev))->unkC +
+                ((func_802752CC_S4 *)(node->cur))->unkC +
+                ((func_802752CC_S5 *)(node->next))->unkC) * D_800C9AB8;
     }
     p = node->prev;
-    point.x = *(f32 *)(p + 0);
+    point.x = ((func_802752CC_S1 *)(p))->unk0;
     p = node->prev;
-    point.y = *(f32 *)(p + 12);
+    point.y = ((func_802752CC_S1 *)(p))->unkC;
     p = node->prev;
-    point.z = *(f32 *)(p + 8);
+    point.z = ((func_802752CC_S1 *)(p))->unk8;
     return (((point.z - z) * normal.z) +
             ((point.x - x) * normal.x) + (point.y * normal.y)) /
            normal.y;

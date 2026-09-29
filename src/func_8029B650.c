@@ -6,15 +6,29 @@ extern void func_8029BAD8(s8 port, s32 event, s32 pressed);
 #define DISPATCH_EDGE(button_mask, event_id, label)                  \
     if (!(current & (button_mask))) goto release_##label;            \
     if (previous & (button_mask)) goto select_##label;               \
-    func_8029BAD8(*(s8 *)(arg0 + 4), (event_id), 1);                 \
+    func_8029BAD8(((func_8029B650_S1 *)(arg0))->unk4, (event_id), 1);                 \
     return;                                                         \
 release_##label:                                                    \
     if (!(previous & (button_mask))) goto next_##label;             \
 select_##label:                                                     \
     if (current & (button_mask)) goto next_##label;                 \
-    func_8029BAD8(*(s8 *)(arg0 + 4), (event_id), 0);                 \
+    func_8029BAD8(((func_8029B650_S1 *)(arg0))->unk4, (event_id), 0);                 \
     return;                                                         \
 next_##label:
+
+typedef struct func_8029B650_S1 func_8029B650_S1;
+struct func_8029B650_S1 {
+    char pad0[0x4];
+    s8 unk4;
+    char pad4[0xAC - 0x4 - sizeof(s8)];
+    s32 unkAC;
+    char padAC[0xB0 - 0xAC - sizeof(s32)];
+    s32 unkB0;
+    char padB0[0xC4 - 0xB0 - sizeof(s32)];
+    s8 unkC4;
+    char padC4[0xC5 - 0xC4 - sizeof(s8)];
+    s8 unkC5;
+};
 
 /**
  * Dispatch the first controller-button edge since the previous sample.
@@ -44,10 +58,10 @@ void func_8029B650(char *arg0) {
     s32 current;
     s32 previous;
 
-    current = *(s32 *)(arg0 + 0xB0);
-    previous = *(s32 *)(arg0 + 0xAC);
-    func_8029BB24(*(s8 *)(arg0 + 4), *(s8 *)(arg0 + 0xC4),
-                  *(s8 *)(arg0 + 0xC5));
+    current = ((func_8029B650_S1 *)(arg0))->unkB0;
+    previous = ((func_8029B650_S1 *)(arg0))->unkAC;
+    func_8029BB24(((func_8029B650_S1 *)(arg0))->unk4, ((func_8029B650_S1 *)(arg0))->unkC4,
+                  ((func_8029B650_S1 *)(arg0))->unkC5);
 
     if (current == previous) {
         return;

@@ -23,17 +23,24 @@ typedef struct Mtx {
 
 extern Vec3f D_800C97B0[2];
 extern f32 D_800C99D0;
-extern f32 D_800C99D8;
+typedef struct { f32 unk0; } func_80273208_G2;
+extern func_80273208_G2 D_800C99D8;
 extern f32 D_800C99DC;
 extern f32 D_800C99E0;
 extern void func_80272088(Vec3f *out, Vec3f *a, Vec3f *b);
 extern void func_802720EC(Vec3f *v);
 
+typedef struct func_80273208_S1 func_80273208_S1;
+struct func_80273208_S1 {
+    char pad0[0x4];
+    Vec3f unk4;
+};
+
 void func_80273208(Mtx *m, Vec3f *direction) {
     Vec3f up;
 
-    up = *(Vec3f *)((char *)D_800C97B0 + 4);
-    if (direction->y < 0.0f ? *(&D_800C99D0 + 1) <= -direction->y : D_800C99D8 <= direction->y) {
+    up = ((func_80273208_S1 *)(D_800C97B0))->unk4;
+    if (direction->y < 0.0f ? (&D_800C99D0)[1] <= -direction->y : D_800C99D8.unk0 <= direction->y) {
         m->right.y = 0;
         m->right.z = 0;
         m->right.x = D_800C99DC;

@@ -28,6 +28,12 @@ extern void func_80254C10(s32, Node80254858 *);
 extern void func_80254A70(s32, Node80254858 *);
 extern s32 func_802C0510(Queue *, s32, s32);
 
+typedef struct func_80254420_S1 func_80254420_S1;
+struct func_80254420_S1 {
+    char pad0[0x1C];
+    u32 unk1C;
+};
+
 Node80254858 *func_80254420(s32 arg0, void *arg1, s32 arg2) {
     Node80254858 *node;
     s32 result;
@@ -46,7 +52,7 @@ Node80254858 *func_80254420(s32 arg0, void *arg1, s32 arg2) {
     } else {
         func_802C2040(token);
     }
-    flags = *(u32 *)((char *)arg1 + 0x1C);
+    flags = ((func_80254420_S1 *)(arg1))->unk1C;
     node = func_80251448(0, flags);
     if (node != 0) {
         node->references++;
