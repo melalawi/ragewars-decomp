@@ -14966,7 +14966,7 @@
    "verdict": "Open"
   },
   "func_8027AC64": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Steers an actor toward its target via func_8027A9B8 when the target is far, otherwise accelerates and clamps it like func_80283A54 and applies func_80279E40; shares the unresolved float condition of func_80283A54, 31 words apart.",
@@ -14975,10 +14975,67 @@
      "recorded_at": "2026-09-16T21:01:29Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T081537Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 86,
+       "inserted": 0,
+       "missing": 0,
+       "of": 86,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 86,
+       "inserted": 0,
+       "missing": 0,
+       "of": 86,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 86,
+       "inserted": 0,
+       "missing": 0,
+       "of": 86,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 86,
+       "inserted": 0,
+       "missing": 0,
+       "of": 86,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 86,
+       "inserted": 0,
+       "missing": 0,
+       "of": 86,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 86,
+      "inserted": 0,
+      "missing": 0,
+      "of": 86
+     },
+     "note": "Steers toward a distant target; otherwise accelerates, clamps speed, and updates the actor.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T08:30:33Z"
     }
    ],
+   "best": {
+    "identical": 86,
+    "inserted": 0,
+    "missing": 0,
+    "of": 86
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 31,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8027ADBC": {
    "attempt_count": 1,
