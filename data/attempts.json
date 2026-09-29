@@ -4180,7 +4180,7 @@
    "verdict": "Landed"
   },
   "func_80218F9C": {
-   "attempt_count": 1,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Lays out and draws a four-option ring menu: each option's size eases toward D_800CE3C8[1] (enlarged by D_800C73A0[1] when selected), its position is the ring radius turned by the option's angle through func_80272848/func_80273CD8/func_80272908, and the labels with text ids 0xC1C onward are drawn through func_802185D0. The drafter's C differs in 93 words: the cartridge strength-reduces the label array into two induction pointers (index field and the rest) and saves one more register; the float constant CSE was fixed with scalar[1] reads; tried label pointers, chained stores and do-while(0) groupings.",
@@ -4189,8 +4189,405 @@
      "recorded_at": "2026-09-16T21:30:43Z",
      "trials": 15,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T082638Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C22B0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A0"
+        },
+        {
+         "address": "0x800C22B8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A8"
+        },
+        {
+         "address": "0x800C22C0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73B0"
+        }
+       ],
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "eu": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2550",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A0"
+        },
+        {
+         "address": "0x800C2558",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A8"
+        },
+        {
+         "address": "0x800C2560",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73B0"
+        }
+       ],
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "eu-mul": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2590",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A0"
+        },
+        {
+         "address": "0x800C2598",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A8"
+        },
+        {
+         "address": "0x800C25A0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73B0"
+        }
+       ],
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "us": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C21E0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A0"
+        },
+        {
+         "address": "0x800C21E8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A8"
+        },
+        {
+         "address": "0x800C21F0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73B0"
+        }
+       ],
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "us-rev1": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      }
+     },
+     "measurement": {
+      "identical": 96,
+      "inserted": 0,
+      "missing": 0,
+      "of": 98
+     },
+     "note": "Near miss tried at 96/98 on all five cartridges; only mul.s ,, and addu ,/usr/bin/zsh,/usr/bin/zsh remain reordered. Manual permute search reached its 100-second wall bound without improving the prior best score 120.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T08:31:13Z",
+     "retained": "artifacts/retained-candidates/func_80218F9C/2.c",
+     "retained_sha256": "ca542ef8a2fdcba165daff4d095aaec8bd452a2dd6816da928032069812f12d1"
+    },
+    {
+     "assignment": "20260929T084217Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C22B0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A0"
+        },
+        {
+         "address": "0x800C22B8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A8"
+        },
+        {
+         "address": "0x800C22C0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73B0"
+        }
+       ],
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "eu": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2550",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A0"
+        },
+        {
+         "address": "0x800C2558",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A8"
+        },
+        {
+         "address": "0x800C2560",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73B0"
+        }
+       ],
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "eu-mul": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2590",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A0"
+        },
+        {
+         "address": "0x800C2598",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A8"
+        },
+        {
+         "address": "0x800C25A0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73B0"
+        }
+       ],
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "us": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C21E0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A0"
+        },
+        {
+         "address": "0x800C21E8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73A8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73A8"
+        },
+        {
+         "address": "0x800C21F0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73B0"
+        }
+       ],
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "us-rev1": {
+       "identical": 96,
+       "inserted": 0,
+       "missing": 0,
+       "of": 98,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      }
+     },
+     "measurement": {
+      "identical": 96,
+      "inserted": 0,
+      "missing": 0,
+      "of": 98
+     },
+     "note": "Recorded 96/98 on all five cartridges: target initializes label base s4 at +0x050, then mul.s at +0x054, then loop index s2 at +0x058; draft initializes s2 at +0x050 and label base at +0x058. Moving label initialization before radius setup, separating i initialization, and combining label/i in the for initializer each left the same two-word order.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T08:43:47Z",
+     "retained": "artifacts/retained-candidates/func_80218F9C/3.c",
+     "retained_sha256": "1e9bbe1016be86dd7cbe2ea3315f698b4ad7a89dab54d703d738299893fe1cdb"
     }
    ],
+   "best": {
+    "identical": 96,
+    "inserted": 0,
+    "missing": 0,
+    "of": 98
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 93,
    "verdict": "Open"
   },
@@ -23561,7 +23958,7 @@
    "verdict": "Landed"
   },
   "func_802C4A18": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "In-place complex FFT (bit-reversal swap by order table, then butterfly passes with cos/sin tables and sign); permutation loop matches with indexed access but the target recomputes loop-invariant shifts inside the inner loops while GCC hoists them in all tried shapes",
@@ -23570,8 +23967,92 @@
      "recorded_at": "2026-09-16T21:41:54Z",
      "trials": 3,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T083957Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 83,
+       "inserted": 2,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "inserted": 2,
+        "reg": 12,
+        "reordered": 2
+       }
+      },
+      "eu": {
+       "identical": 83,
+       "inserted": 2,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "inserted": 2,
+        "reg": 12,
+        "reordered": 2
+       }
+      },
+      "eu-mul": {
+       "identical": 83,
+       "inserted": 2,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "inserted": 2,
+        "reg": 12,
+        "reordered": 2
+       }
+      },
+      "us": {
+       "identical": 83,
+       "inserted": 2,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "inserted": 2,
+        "reg": 12,
+        "reordered": 2
+       }
+      },
+      "us-rev1": {
+       "identical": 83,
+       "inserted": 2,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "inserted": 2,
+        "reg": 12,
+        "reordered": 2
+       }
+      }
+     },
+     "measurement": {
+      "identical": 83,
+      "inserted": 2,
+      "missing": 0,
+      "of": 97
+     },
+     "note": "83/97 identical on all five cartridges; only register allocation/instruction order and two candidate-only instructions remain (extra pointer copy at +0x0A4 and index addition at +0x154); the j-indexed table update closes the prior branch and offset differences, making this a permute/grind case.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T08:41:59Z",
+     "retained": "artifacts/retained-candidates/func_802C4A18/2.c",
+     "retained_sha256": "d55156da13c4253629f1c2cc550ae8503857dd06be984c61da2ceb4a4ff70350"
     }
    ],
+   "best": {
+    "identical": 83,
+    "inserted": 2,
+    "missing": 0,
+    "of": 97
+   },
+   "budget_failed_attempts": 10,
    "observations": [
     {
      "note": "FFT/butterfly-style nested loop over log2(n) stages with float mul/sub network; well beyond time-box, skipped without a compile attempt.",
@@ -36854,7 +37335,7 @@
    "verdict": "Landed"
   },
   "func_80427430": {
-   "attempt_count": 5,
+   "attempt_count": 6,
    "attempts": [
     {
      "note": "Extends a -1 terminated path of item indices through a 36-bit flag set: while any bit is set, tries each set item whose D_800E4694 entry func_80428338 accepts after the path's last item, appends it, clears its bit and recurses, restoring bit and terminator on failure; always returns 1; best draft differs only in the order of two hoisted loop constants (1, -1) against the computation of the last-element pointer; tried pointer-in-init, pre-loop pointer, decremented length, do-while and goto loops; 600 s permuter run found no zero",
@@ -36897,8 +37378,82 @@
      "supersedes_earlier": false,
      "trials": 148,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T084019Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 95,
+       "inserted": 0,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "eu": {
+       "identical": 95,
+       "inserted": 0,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "eu-mul": {
+       "identical": 95,
+       "inserted": 0,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "us": {
+       "identical": 95,
+       "inserted": 0,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      },
+      "us-rev1": {
+       "identical": 95,
+       "inserted": 0,
+       "missing": 0,
+       "of": 97,
+       "result": "differs",
+       "typed": {
+        "reordered": 2
+       }
+      }
+     },
+     "measurement": {
+      "identical": 95,
+      "inserted": 0,
+      "missing": 0,
+      "of": 97
+     },
+     "note": "Improved the prior cursor draft to 95/97 identical on all five cartridges using a marked copy-only scan terminator; only the two last-element pointer calculation instructions are scheduled before the hoisted 1 and -1 constants instead of after them. The trial reports a permute case.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T08:43:45Z",
+     "retained": "artifacts/retained-candidates/func_80427430/6.c",
+     "retained_sha256": "fed2bc8974020601d9045f7f7f1b059f59c833c264550b74efac44dc83783fbd"
     }
    ],
+   "best": {
+    "identical": 95,
+    "inserted": 0,
+    "missing": 0,
+    "of": 97
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 3,
    "verdict": "Open"
   },
@@ -53562,7 +54117,7 @@
    "verdict": "Landed"
   },
   "func_8044CBE0": {
-   "attempt_count": 10,
+   "attempt_count": 11,
    "attempts": [
     {
      "note": "Interval is one unit of five functions (func_8044CBE0, func_8044CD58, func_8044D024, func_8044D408, func_8044D9DC), about 1050 instructions, and it only lands when all five are byte-exact together; no draft was compiled, so there is no word count. Read against the cartridge: func_8044CBE0 is a teardown that calls func_802537D8(0, x) on eleven fields of arg0 (0x100, 0xB8, 0xBC, 0xC0, 0xC4, 0xC8, 0xD0, 0xD4, 0xEC, 0xCC, 0xE8), then three more each guarded by a null test (0xF0, 0xF4, 0xFC), then walks the list at arg0+0x1B500 unlinking through func_80255E78 and finishes with func_80254784 on the saved head; 0x1B500 is past the 16-bit displacement range, so it appears as lui 0x2 / addu / lw -0x4B00 for the load and as a hoisted 0x1B500 constant in a register for the address-of inside the loop. func_8044CD58 and func_8044D024 both repeat a six-call chain through func_8028FD94 and func_8028FDD8 ending in a bit test (1 shifted left by index&7, byte index sra(index+7,3) when the index is negative) against a byte table, and both write flag bytes at 0xE and 0xF of a 0x14-stride record. func_8044D024 spills nine values into its 0x68-byte frame at 0x18..0x38; func_8044D408 uses a 0x120-byte frame, recomputes the 0x2E8 element stride as ((n*3)<<5 - n*3)<<3, and carries a five-slot literal pool (D_800CA2E4, D_800CA2E8, D_800CA2E8+4, D_800CA2F0, D_800CA2F4) whose first-use order must be reproduced, plus the file-scope tables D_80145040/44/48, D_80145100/04/20 and D_80146398. Nothing in the unit looked non-C; what blocks it is size, and specifically that the two large functions are dominated by stack-slot assignment and spill ordering that only converge by iteration.",
@@ -54006,11 +54561,61 @@
      "recorded_at": "2026-09-28T12:12:39Z",
      "retained": "artifacts/retained-candidates/func_8044C100/1.c",
      "retained_sha256": "5da3c86547b662bc7cb835558e3d6c3b0cf73127af71c376f0f05a5bf2f6f78f"
+    },
+    {
+     "assignment": "20260929T083157Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 94,
+       "inserted": 0,
+       "missing": 0,
+       "of": 94,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 94,
+       "inserted": 0,
+       "missing": 0,
+       "of": 94,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 94,
+       "inserted": 0,
+       "missing": 0,
+       "of": 94,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 94,
+       "inserted": 0,
+       "missing": 0,
+       "of": 94,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 94,
+       "inserted": 0,
+       "missing": 0,
+       "of": 94,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 94,
+      "inserted": 0,
+      "missing": 0,
+      "of": 94
+     },
+     "note": "Shut down the subsystem, free its owned resources, and unlink its list.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T08:47:35Z"
     }
    ],
    "best": {
-    "identical": 79,
-    "inserted": 3,
+    "identical": 94,
+    "inserted": 0,
     "missing": 0,
     "of": 94
    },
@@ -54023,7 +54628,7 @@
      "reason": "us's split renamed func_8044C100 to func_8044CBE0, the function's one name"
     }
    ],
-   "verdict": "Retired"
+   "verdict": "Landed"
   },
   "func_8044CD58": {
    "attempt_count": 1,
