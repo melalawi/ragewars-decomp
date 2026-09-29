@@ -1747,7 +1747,7 @@
    "verdict": "Landed"
   },
   "func_802070D0": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Steers an actor along path nodes, blending direction, speed and orientation and advancing reached waypoints; vector and mixed-width flag recovery produces 1596 of 1632 bytes with 319 differences and sixteen conflicting literal placements, classified as structural source recovery drift.",
@@ -1838,10 +1838,72 @@
      "recorded_at": "2026-09-29T09:11:34Z",
      "retained": "artifacts/retained-candidates/func_802070D0/2.c",
      "retained_sha256": "c10f080065915a85984b3a01eb48612cb069e271888f6e2842c83e7baa13a235"
+    },
+    {
+     "assignment": "20260929T171012Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x80219310",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_802192C0"
+        }
+       ],
+       "of": 408,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 408,
+      "inserted": 0,
+      "missing": 0,
+      "of": 408
+     },
+     "note": "func_802070D0 identical 408/408 words: byte-identical on all five cartridges that contain it",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T17:10:18Z",
+     "retained": "artifacts/retained-candidates/func_802070D0/3.c",
+     "retained_sha256": "58c27220c2b929f763a38cdf1c9643a9450c812b45fe0d68660cfb02096a3753"
     }
    ],
    "best": {
-    "identical": 401,
+    "identical": 408,
     "inserted": 0,
     "missing": 0,
     "of": 408
@@ -11473,6 +11535,86 @@
    ],
    "positional_best_differing_words": 0,
    "verdict": "Landed"
+  },
+  "func_802529E4": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T170333Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 379,
+       "inserted": 0,
+       "missing": 0,
+       "of": 390,
+       "result": "differs",
+       "typed": {
+        "reg": 11
+       }
+      },
+      "eu": {
+       "identical": 379,
+       "inserted": 0,
+       "missing": 0,
+       "of": 390,
+       "result": "differs",
+       "typed": {
+        "reg": 11
+       }
+      },
+      "eu-mul": {
+       "identical": 379,
+       "inserted": 0,
+       "missing": 0,
+       "of": 390,
+       "result": "differs",
+       "typed": {
+        "reg": 11
+       }
+      },
+      "us": {
+       "identical": 379,
+       "inserted": 0,
+       "missing": 0,
+       "of": 390,
+       "result": "differs",
+       "typed": {
+        "reg": 11
+       }
+      },
+      "us-rev1": {
+       "identical": 379,
+       "inserted": 0,
+       "missing": 0,
+       "of": 390,
+       "result": "differs",
+       "typed": {
+        "reg": 11
+       }
+      }
+     },
+     "measurement": {
+      "identical": 379,
+      "inserted": 0,
+      "missing": 0,
+      "of": 390
+     },
+     "note": "func_802529E4 ready 379/390 words: all remaining differences are register allocation",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T17:03:39Z",
+     "retained": "artifacts/retained-candidates/func_802529E4/1.c",
+     "retained_sha256": "46f454a60cd47adbe5b694237e39d4edb071ff6303dcb5d11197fd93c2af9677"
+    }
+   ],
+   "best": {
+    "identical": 379,
+    "inserted": 0,
+    "missing": 0,
+    "of": 390
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Open"
   },
   "func_80253A74": {
    "attempt_count": 1,

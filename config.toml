@@ -111,6 +111,14 @@ note_upstreams = ["ultralib"]
 # `(T *)((char|u8|s8 *)x + n)`, dereferenced or not. Matched after preprocessing, so a macro cannot hide it.
 forbidden_source_forms = {raw-offset-access = '\(\s*[A-Za-z_]\w*(?:\s+[A-Za-z_]\w*)*\s*\*+\s*\)\s*\(\s*\(\s*(?:(?:unsigned|signed)\s+)?(?:char|u8|s8)\s*\*\s*\)'}
 
+# Where `make readme` writes each cartridge's progress report for decomp.dev, in objdiff's report
+# format, and the GitHub Actions workflow that uploads every one as the `<id>_report` artifact
+# decomp.dev reads. Both are rendered from the measurement README.md is rendered from, and `make check`
+# refuses either when it differs. CI builds nothing and never holds a cartridge: it uploads these.
+[tracker]
+report = "data/progress-report/{version}.json"
+workflow = ".github/workflows/progress-report.yml"
+
 # Each cartridge defines two macros, its own and its family's. The family macro is shared between the
 # cartridges it covers on purpose: most differences between related releases belong to the family
 # rather than to one release, so a guard over a family is one condition instead of a disjunction over

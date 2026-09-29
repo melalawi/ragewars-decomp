@@ -64,26 +64,3 @@ versions:
       expected_dir: "artifacts/de"
       asm: "artifacts/de/extracted/asm"
       nonmatchings: "artifacts/de/extracted/asm/nonmatchings"
-
-tools:
-  mapfile_parser:
-    progress_report:
-      # Reported against us-rev1, the manifest's reference version.
-      check_asm_paths: true
-      report_data: false
-      path_index: 4
-      prefixes_to_trim:
-        - artifacts/us-rev1/obj/
-      categories:
-        - id: code_80400000
-          name: code_80400000
-          paths:
-            - src/func_804
-            - asm/nonmatchings/func_804
-        - id: main
-          name: main_code
-          paths:
-            - src/_
-            - asm/nonmatchings/_
-            - src/func_802
-            - asm/nonmatchings/func_802

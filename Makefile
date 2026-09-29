@@ -11,9 +11,8 @@
 #   make check      the per-landing gate: real C, selection, measurement, game checks
 #   make test       this project's own controls; it keeps none, so it says so and passes
 #   make progress   matching-C and real-code shares, by size band
-#   make readme     rewrite README.md from a live measurement
+#   make readme     rewrite README.md, the decomp.dev progress reports and their workflow
 #   make decomp-yaml  rewrite decomp.yaml from config.toml
-#   make report     objdiff artifacts/report.json for decomp.dev
 #   make versions   list the cartridges this project describes
 #
 # VERSION picks a cartridge; left unset, config.toml's reference is used, so the choice stays a
@@ -39,7 +38,7 @@ endif
 # and it reads the reference out of config.toml.
 VERSION_ARG := $(if $(strip $(VERSION)),--version $(VERSION),)
 
-GOALS := bootstrap setup build check test progress readme development decomp-yaml report versions \
+GOALS := bootstrap setup build check test progress readme development decomp-yaml versions \
          cartridge-differences clean distclean
 .PHONY: $(GOALS)
 
