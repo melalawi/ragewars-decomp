@@ -15,14 +15,10 @@ typedef struct {
     s16 frags;
 } Controls;
 
-typedef struct Player Player;
-struct Player {
-    char pad0[0x5D4];
-    s32 slot;
-    Controls *controls;
-    char pad5DC[0x16E0 - 0x5DC];
-    Player *next;
-};
+#define MATCHKIT_KNOWN_Controls 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
+
 
 typedef struct {
     char pad0[0x20];
@@ -129,13 +125,13 @@ s32 func_8022804C(World *world) {
         Settings *trial;
         Player *player;
 
-        for (player = world->players; player != 0; player = player->next) {
+        for (player = world->players; player != 0; player = player->views16E0.view16E0_2.next) {
             limits = &D_8014561C.rules;
-            if (player->controls->frags >= limits->scoreLimit) {
+            if (player->views5D8.view5D8_2.controls->frags >= limits->scoreLimit) {
                 trial = &D_8014561C.settings;
                 kind = trial->trialKind;
                 if (kind != TRIAL_NONE) {
-                    if (player->slot < HUMAN_SLOTS) {
+                    if (player->views1C.view5D4_46.slot < HUMAN_SLOTS) {
                         limits->humanWon = 1;
                         return 1;
                     }

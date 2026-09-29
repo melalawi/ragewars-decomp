@@ -1,12 +1,8 @@
 /* Releases temporary profile buffers and opens the controller-pak prompt for the selected player and channel, labelling the port prompt by channel. */
 #include "basetypes.h"
 
-typedef struct Player {
-    char pad0[0x5DC];
-    char *storage;
-    char pad5E0[0xB8];
-    char *title;
-} Player;
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct Slot {
     char pad0[4];
@@ -90,7 +86,7 @@ s32 func_804085E0(void *unused, Menu *menu) {
         if (D_80153760 != 0) {
             D_80153784 = 1;
             target = func_8022A5B0(D_80145040, menu->slot);
-            func_804426E4(target->storage + 0x554, D_450758, target, target->title, channel);
+            func_804426E4(target->views5DC.view5DC_6.storage + 0x554, D_450758, target, target->views5E8.view698_38.title, channel);
             return 1;
         }
         if (D_80153750 != 0) {
@@ -114,14 +110,14 @@ s32 func_804085E0(void *unused, Menu *menu) {
                 label = D_45188C;
                 break;
             }
-            func_804426E4(target->storage + 0x554, label, target, target->title, channel);
+            func_804426E4(target->views5DC.view5DC_6.storage + 0x554, label, target, target->views5E8.view698_38.title, channel);
             return 1;
         }
     } else {
         target = func_8022A5B0(D_80145040, menu->slot);
         if (D_80153760 != 0) {
             D_80153784 = 1;
-            func_804426E4(D_80145040 + 0x5DC, D_450BD0, target, target->title, channel);
+            func_804426E4(D_80145040 + 0x5DC, D_450BD0, target, target->views5E8.view698_38.title, channel);
             return 1;
         }
         if (D_80153750 != 0) {

@@ -5,14 +5,8 @@
  * and finishes the entity through func_80245884. */
 #include "basetypes.h"
 
-typedef struct Player {
-    char pad0[0x38];
-    s32 flags;
-    char pad3C[0x5DC - 0x3C];
-    void *entity;
-    char pad5E0[0x16E0 - 0x5E0];
-    struct Player *next;
-} Player;
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x29C];
@@ -39,8 +33,8 @@ extern void func_80245884(Entity *);
 static inline Player *find_owner(Entity *entity) {
     Player *player;
 
-    for (player = D_80145060; player != 0; player = player->next) {
-        if (player->entity == entity) {
+    for (player = D_80145060; player != 0; player = player->views16E0.view16E0_1.next) {
+        if (player->views5DC.view5DC_4.entity == entity) {
             return player;
         }
     }
@@ -56,7 +50,7 @@ void func_80233C78(Entity *entity) {
     if (owner == 0) {
         return;
     }
-    if (owner->flags & 0x1000) {
+    if (owner->views1C.view38_3.flags & 0x1000) {
         color[0] = entity->color[0];
         color[1] = entity->color[1];
         color[2] = entity->color[2];

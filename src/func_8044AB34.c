@@ -1,51 +1,8 @@
 #include "basetypes.h"
 
 /* Sets up a player in a slot: records whether its record at arg2 is a computer driver, loads the driver's profile at 0x688 through func_8026369C from D_8010EEB8 (computers, keeping the record's slot) or from the slot's entry of D_8010F328, clears its race counters and eight lap splits, links it to its vehicle through func_802097E8 and resets it through func_8021A78C and func_802A7F58. */
-typedef struct {
-    char pad0[0x1D8];
-    s32 f1D8;
-    char pad1DC[0x3F4];
-    s32 f5D0;
-    s32 f5D4;
-    s32 f5D8;
-    char pad5DC[0x10];
-    s32 f5EC;
-    s32 f5F0;
-    char pad5F4[0x270];
-    s32 f864;
-    s32 f868;
-    char pad86C[0x950];
-    s32 f11BC;
-    s32 f11C0;
-    char pad11C4[0x8];
-    s32 f11CC;
-    char pad11D0[0x18];
-    s32 f11E8;
-    char pad11EC[0x2C];
-    s32 f1218;
-    s32 f121C;
-    s32 f1220;
-    char pad1224[0x8];
-    s32 f122C;
-    char pad1230[0x94];
-    s32 f12C4;
-    s32 f12C8;
-    s32 splitsA[8];
-    char pad12EC[0x8];
-    s32 splitsB[8];
-    char pad1314[0x20];
-    s32 f1334;
-    s32 f1338;
-    char pad133C[0x78];
-    s32 f13B4;
-    char pad13B8[0x10];
-    s32 f13C8;
-    char pad13CC[0x84];
-    s32 f1450;
-    s32 f1454;
-    char pad1458[0x27C];
-    s32 f16D4;
-} Player;
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x7F];
@@ -77,44 +34,44 @@ void func_8044AB34(char *player, s32 slot, Record *record) {
     u8 team;
 
     computer = record->computer;
-    ((Player *)player)->f5D0 = 0;
-    ((Player *)player)->f1450 = computer;
+    ((Player *)player)->views1C.view5D0_44.f5D0 = 0;
+    ((Player *)player)->views1450.view1450_5.f1450 = computer;
     if (computer != 0) {
         func_8026369C(player + 0x688, D_8010EEB8);
-        ((Player *)player)->f5D4 = record->slot;
+        ((Player *)player)->views1C.view5D4_48.f5D4 = record->slot;
     } else {
         func_8026369C(player + 0x688, D_8010F328 + slot * 0x224);
-        ((Player *)player)->f5D4 = slot;
+        ((Player *)player)->views1C.view5D4_48.f5D4 = slot;
     }
-    ((Player *)player)->f5D8 = (s32)record;
+    ((Player *)player)->views5D8.view5D8_8.f5D8 = (s32)record;
     team = record->team;
-    ((Player *)player)->f11BC = 0;
-    ((Player *)player)->f11C0 = 0;
-    ((Player *)player)->f5EC = 0;
-    ((Player *)player)->f5F0 = 0;
-    ((Player *)player)->f864 = 0;
-    ((Player *)player)->f868 = 0;
-    ((Player *)player)->f1D8 = (s32)player;
+    ((Player *)player)->views5E8.view11BC_140.f11BC = 0;
+    ((Player *)player)->views5E8.view11C0_142.f11C0 = 0;
+    ((Player *)player)->views5E8.view5EC_8.f5EC = 0;
+    ((Player *)player)->views5E8.view5F0_10.f5F0 = 0;
+    ((Player *)player)->views5E8.view864_122.f864 = 0;
+    ((Player *)player)->views5E8.view868_124.f868 = 0;
+    ((Player *)player)->views1C.view1D8_24.f1D8 = (s32)player;
     player[3] = team;
-    func_802097E8(((Player *)player)->f1454, player);
-    ((Player *)player)->f13C8 = 0;
-    ((Player *)player)->f121C = slot * 2;
-    ((Player *)player)->f1220 = 0;
-    ((Player *)player)->f122C = 0;
-    ((Player *)player)->f11CC = 0;
-    ((Player *)player)->f1218 = 0;
+    func_802097E8(((Player *)player)->views1454.view1454_1.f1454, player);
+    ((Player *)player)->views13C8.view13C8_2.f13C8 = 0;
+    ((Player *)player)->views5E8.view121C_160.f121C = slot * 2;
+    ((Player *)player)->views5E8.view1220_162.f1220 = 0;
+    ((Player *)player)->views122C.view122C_3.f122C = 0;
+    ((Player *)player)->views5E8.view11CC_146.f11CC = 0;
+    ((Player *)player)->views5E8.view1218_158.f1218 = 0;
     for (i = 0; i < 8; i++) {
-        ((Player *)player)->splitsA[i] = 0;
-        ((Player *)player)->splitsB[i] = 0;
+        ((Player *)player)->views12CC.view12CC_1.splitsA[i] = 0;
+        ((Player *)player)->views12F4.view12F4_1.splitsB[i] = 0;
     }
-    ((Player *)player)->f1338 = -1;
-    ((Player *)player)->f12C4 = 0;
-    ((Player *)player)->f12C8 = 0;
-    ((Player *)player)->f1334 = 0;
-    ((Player *)player)->f13B4 = (s32)D_800CE8C8;
-    ((Player *)player)->f11E8 = 0;
+    ((Player *)player)->views1338.view1338_1.f1338 = -1;
+    ((Player *)player)->views12C4.view12C4_1.f12C4 = 0;
+    ((Player *)player)->views12C8.view12C8_1.f12C8 = 0;
+    ((Player *)player)->views1334.view1334_1.f1334 = 0;
+    ((Player *)player)->views13B4.view13B4_4.f13B4 = (s32)D_800CE8C8;
+    ((Player *)player)->views5E8.view11E8_151.f11E8 = 0;
     func_8021A78C(player);
-    ((Player *)player)->f16D4 = 0;
+    ((Player *)player)->views16D4.view16D4_1.f16D4 = 0;
     ((func_8044AB34_S1 *)(player))->unk16D8 = 0;
     func_802A7F58((char *)player + 0xD40);
 }

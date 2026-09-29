@@ -8,18 +8,9 @@ typedef struct {
     u8 display;
 } Record;
 
-typedef struct {
-    char pad0[0x5D8];
-    Record *record;
-    char pad5DC[8];
-    s32 health;
-    char pad5E8[0x68];
-    s16 state;
-    char pad652[0xCEE];
-    s32 stalls;
-    char pad1344[0x10C];
-    s32 computer;
-} Player;
+#define MATCHKIT_KNOWN_Record 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[8];
@@ -67,7 +58,7 @@ void func_80208158(Brain *brain) {
     Tutorial *tutorial;
     Player *player;
 
-    if (brain->player->computer == 0) {
+    if (brain->player->views1450.view1450_1.computer == 0) {
         return;
     }
     if (brain->route == -1) {
@@ -80,9 +71,9 @@ void func_80208158(Brain *brain) {
     if (brain->cooldown > 0) {
         brain->cooldown--;
     }
-    if (brain->player->record->display != 0) {
-        health = brain->player->health >> 8;
-        kind = brain->player->record->kind;
+    if (brain->player->views5D8.view5D8_1.record->display != 0) {
+        health = brain->player->views5E4.view5E4_2.health >> 8;
+        kind = brain->player->views5D8.view5D8_1.record->kind;
         if (kind == 11) {
             maximum = 400;
         } else if (kind == 12) {
@@ -95,7 +86,7 @@ void func_80208158(Brain *brain) {
             maximum = func_8022ABF0(brain->player) >> 8;
         }
         meter = (f32)health / (f32)maximum * 100.0f;
-        if (brain->player->record->kind == 14) {
+        if (brain->player->views5D8.view5D8_1.record->kind == 14) {
             if (meter == 0.0f) {
                 meter = (3 - D_8014693C) * 33;
             } else {
@@ -108,7 +99,7 @@ void func_80208158(Brain *brain) {
         }
         tutorial = &D_801468A0;
         if (tutorial->active != 0) {
-            if (brain->player->record->kind == 11) {
+            if (brain->player->views5D8.view5D8_1.record->kind == 11) {
                 func_802AB784(D_8013B7B8, (f32)tutorial->timer);
                 if (tutorial->refills > 0) {
                     tutorial->refills--;
@@ -116,13 +107,13 @@ void func_80208158(Brain *brain) {
                     brain->w23C = 0;
                     brain->w240 = 0;
                 }
-                if (tutorial->refills == 0 && brain->player->health > 0) {
+                if (tutorial->refills == 0 && brain->player->views5E4.view5E4_2.health > 0) {
                     tutorial->timer = 100;
                     tutorial->refills = -1;
                     func_802227D0(brain->player, brain->player, 2);
                 }
             }
-            if (brain->player->record->display == 1) {
+            if (brain->player->views5D8.view5D8_1.record->display == 1) {
                 func_802AB784(D_8013B7B8, meter);
             } else {
                 func_802AB78C(D_8013B7B8, meter);
@@ -130,8 +121,8 @@ void func_80208158(Brain *brain) {
         }
     }
     player = brain->player;
-    if (player->state == 0x12) {
-        player->stalls++;
+    if (player->views5E8.view650_16.state == 0x12) {
+        player->views1340.view1340_1.stalls++;
         func_80209CD8(brain, player);
     }
 }

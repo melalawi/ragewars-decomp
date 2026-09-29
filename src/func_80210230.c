@@ -8,12 +8,9 @@ typedef struct {
     u8 team;
 } TeamInfo;
 
-typedef struct {
-    char pad[0x5D8];
-    TeamInfo *teamInfo;
-    char pad2[0x5E4 - 0x5D8 - 4];
-    s32 health;
-} Player;
+#define MATCHKIT_KNOWN_TeamInfo 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad[0x24];
@@ -73,11 +70,11 @@ s32 func_80210230(TargetList *self) {
             continue;
         }
         if (settings->teamPlay) {
-            if (candidate->teamInfo->team == self->self->teamInfo->team) {
+            if (candidate->views5D8.view5D8_3.teamInfo->team == self->self->views5D8.view5D8_3.teamInfo->team) {
                 continue;
             }
         }
-        if ((candidate->health >> 8) <= 0) {
+        if ((candidate->views5E4.view5E4_2.health >> 8) <= 0) {
             continue;
         }
 

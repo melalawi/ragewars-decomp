@@ -42,30 +42,13 @@ typedef struct {
     f32 heading;
 } Body;
 
-typedef struct {
-    char pad0[0x5DC];
-    void *view;
-    char pad5E0[0x69C - 0x5E0];
-    f32 stick;
-    char pad6A0[0x6B8 - 0x6A0];
-    s32 input;
-    char pad6BC[0x6C0 - 0x6BC];
-    f32 speed;
-    f32 side;
-    char pad6C8[0x704 - 0x6C8];
-    f32 lift;
-    char pad708[0x72C - 0x708];
-    f32 lean;
-    char pad730[0x73C - 0x730];
-    Vec3f weapon;
-    char pad748[0x80C - 0x748];
-    Mount *mount;
-    s32 kind;
-    Triple offset;
-    char pad820[0x838 - 0x820];
-    f32 rideTime;
-    f32 bump;
-} Player;
+#define MATCHKIT_KNOWN_Body 1
+#define MATCHKIT_KNOWN_Matrix 1
+#define MATCHKIT_KNOWN_Mount 1
+#define MATCHKIT_KNOWN_Triple 1
+#define MATCHKIT_KNOWN_Vec3f 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 extern f32 D_800D2988;
 extern f32 D_800CE758;
@@ -94,51 +77,51 @@ void func_80225F20(Player *player, Body *body) {
     f32 bump;
     f32 shake;
 
-    mount = player->mount;
-    sway = player->stick * (((func_802BB630(player->rideTime * 0.2792527f) + 1.0f) * 0.01f + 0.06f) * 80.0f)
+    mount = player->views5E8.view80C_108.mount;
+    sway = player->views5E8.view69C_40.stick * (((func_802BB630(player->views5E8.view838_114.rideTime * 0.2792527f) + 1.0f) * 0.01f + 0.06f) * 80.0f)
         * 0.017453294f;
-    player->rideTime += D_800D2988;
+    player->views5E8.view838_114.rideTime += D_800D2988;
     heading = body->heading;
     func_802748E0(&body->heading, heading + sway, 0.9f);
-    func_802748E0(&player->lean, ((heading - body->heading) + player->stick * 8.0f) * 0.017453294f, 0.1f);
+    func_802748E0(&player->views5E8.view72C_77.lean, ((heading - body->heading) + player->views5E8.view69C_40.stick * 8.0f) * 0.017453294f, 0.1f);
     func_802231B0(player, body, &D_800CE814);
     offset = 0;
-    if (player->input & 8) {
+    if (player->views5E8.view6B8_50.input & 8) {
         func_80214178(mount, mount->state, 0x2E);
-        player->lift = 90.0f;
-        player->speed = 2.0f * D_800CE758;
+        player->views5E8.view704_68.lift = 90.0f;
+        player->views5E8.view6C0_53.speed = 2.0f * D_800CE758;
     }
-    bump = player->bump + MAX(ABS(player->speed), ABS(2.0f * player->side));
-    player->bump = bump;
+    bump = player->views5E8.view83C_116.bump + MAX(ABS(player->views5E8.view6C0_53.speed), ABS(2.0f * player->views5E8.view6C4_55.side));
+    player->views5E8.view83C_116.bump = bump;
     if (*(f32 *) (&D_800CF228 + 1) < bump) {
-        player->bump = bump - *(f32 *) (&D_800CF228 + 1);
+        player->views5E8.view83C_116.bump = bump - *(f32 *) (&D_800CF228 + 1);
         if (mount->action != 0x2E) {
-            player->speed *= 0.5f;
-            player->side *= 0.5f;
+            player->views5E8.view6C0_53.speed *= 0.5f;
+            player->views5E8.view6C4_55.side *= 0.5f;
         }
-        shake = ABS(player->speed) * 2.5f;
+        shake = ABS(player->views5E8.view6C0_53.speed) * 2.5f;
         if (50.0f < shake) {
             shake = 50.0f;
         }
-        if (player->view != 0) {
-            func_80239314(player->view, 0.0f, shake, 0.0f, 1.0f, 1, body->position);
+        if (player->views5DC.view5DC_1.view != 0) {
+            func_80239314(player->views5DC.view5DC_1.view, 0.0f, shake, 0.0f, 1.0f, 1, body->position);
         }
     }
-    if (player->speed > 0.0f) {
+    if (player->views5E8.view6C0_53.speed > 0.0f) {
         func_802233CC(player, body, &D_800CE754);
     } else {
         func_802233CC(player, body, &D_800CE778);
     }
-    if (10.24f < ABS(player->speed)) {
-        player->lift = 15.0f;
+    if (10.24f < ABS(player->views5E8.view6C0_53.speed)) {
+        player->views5E8.view704_68.lift = 15.0f;
     }
-    if (player->kind == 0x136) {
+    if (player->views5E8.view810_110.kind == 0x136) {
         offset = &D_800CE714;
-        player->offset = D_800CE720;
+        player->views5E8.view814_112.offset = D_800CE720;
     }
     if (offset != 0) {
         func_80273744(&matrix, body->heading);
-        func_80272908(&matrix, offset, &player->weapon);
-        func_8027200C(&player->weapon, &player->weapon, 10.24f);
+        func_80272908(&matrix, offset, &player->views5E8.view73C_82.weapon);
+        func_8027200C(&player->views5E8.view73C_82.weapon, &player->views5E8.view73C_82.weapon, 10.24f);
     }
 }

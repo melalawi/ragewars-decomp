@@ -11,24 +11,9 @@ typedef struct {
     f32 height;
 } Model;
 
-typedef struct {
-    char pad0[0x18];
-    Model *model;
-    char pad1C[0x658 - 0x1C];
-    f32 stride;
-    char pad65C[0x728 - 0x65C];
-    f32 kickPitch;
-    f32 kickRoll;
-    f32 sway[3];
-    f32 side;
-    f32 height;
-    f32 forward;
-    char pad748[0x758 - 0x748];
-    f32 bobStrength;
-    f32 bobSpeed;
-    char pad760[0x11D8 - 0x760];
-    f32 recoil;
-} Player;
+#define MATCHKIT_KNOWN_Model 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x6C];
@@ -47,34 +32,34 @@ void func_80223E10(Player *player, Camera *camera) {
     f32 rate;
     f32 amount;
 
-    if (!(player->recoil > 0.0f)) {
-        func_802748E0(&player->kickRoll, 0.0f, 0.25f);
-        func_802748E0(&player->kickPitch, 0.0f, 0.5f);
+    if (!(player->views5E8.view11D8_148.recoil > 0.0f)) {
+        func_802748E0(&player->views5E8.view72C_76.kickRoll, 0.0f, 0.25f);
+        func_802748E0(&player->views5E8.view728_74.kickPitch, 0.0f, 0.5f);
         step = 0.08726647496f;
-        player->sway[0] = func_80274810(player->sway[0], step);
-        player->sway[1] = func_80274810(player->sway[1], step);
-        player->sway[2] = func_80274810(player->sway[2], step);
-        if (21.0f < player->bobSpeed) {
-            player->bobSpeed = 21.0f;
+        player->views5E8.view730_79.sway[0] = func_80274810(player->views5E8.view730_79.sway[0], step);
+        player->views5E8.view730_79.sway[1] = func_80274810(player->views5E8.view730_79.sway[1], step);
+        player->views5E8.view730_79.sway[2] = func_80274810(player->views5E8.view730_79.sway[2], step);
+        if (21.0f < player->views5E8.view75C_90.bobSpeed) {
+            player->views5E8.view75C_90.bobSpeed = 21.0f;
         }
-        if (0.1f < player->bobStrength) {
-            player->bobStrength = 0.1f;
+        if (0.1f < player->views5E8.view758_88.bobStrength) {
+            player->views5E8.view758_88.bobStrength = 0.1f;
         }
-        player->bobSpeed = func_80274810(player->bobSpeed, 0.11666667f);
-        player->bobStrength = func_80274810(player->bobStrength, 0.00055555557f);
-        if (player->bobStrength < 0.06f) {
-            player->bobSpeed = player->bobStrength = 0.0f;
+        player->views5E8.view75C_90.bobSpeed = func_80274810(player->views5E8.view75C_90.bobSpeed, 0.11666667f);
+        player->views5E8.view758_88.bobStrength = func_80274810(player->views5E8.view758_88.bobStrength, 0.00055555557f);
+        if (player->views5E8.view758_88.bobStrength < 0.06f) {
+            player->views5E8.view75C_90.bobSpeed = player->views5E8.view758_88.bobStrength = 0.0f;
         }
-        phase = player->stride * player->bobSpeed * 0.017453294f;
-        if (player->model != 0) {
-            height = player->model->height * 0.9f;
+        phase = player->views5E8.view658_23.stride * player->views5E8.view75C_90.bobSpeed * 0.017453294f;
+        if (player->views18.view18_2.model != 0) {
+            height = player->views18.view18_2.model->height * 0.9f;
         } else {
             height = 82.94399261f;
         }
         rate = 0.5f;
-        func_802748E0(&player->height, height + player->bobStrength * (func_802BC200(phase) * 10.24f), rate);
-        amount = player->bobStrength * (func_802BB630(phase) * 8.192f);
-        func_802748E0(&player->side, -func_802BC200(camera->heading + 3.1415927f) * amount, rate);
-        func_802748E0(&player->forward, -func_802BB630(camera->heading + 3.1415927f) * amount, rate);
+        func_802748E0(&player->views5E8.view740_84.height, height + player->views5E8.view758_88.bobStrength * (func_802BC200(phase) * 10.24f), rate);
+        amount = player->views5E8.view758_88.bobStrength * (func_802BB630(phase) * 8.192f);
+        func_802748E0(&player->views5E8.view73C_81.side, -func_802BC200(camera->heading + 3.1415927f) * amount, rate);
+        func_802748E0(&player->views5E8.view744_86.forward, -func_802BB630(camera->heading + 3.1415927f) * amount, rate);
     }
 }

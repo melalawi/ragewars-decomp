@@ -20,20 +20,10 @@ typedef struct {
     char menu[1];
 } View;
 
-typedef struct {
-    char pad0[0x5D4];
-    s32 slot;
-    Controls *controls;
-    View *view;
-    char pad5E0[0x5E4 - 0x5E0];
-    s32 alive;
-    char pad5E8[0x5EA - 0x5E8];
-    s16 respawns;
-    char pad5EC[0x698 - 0x5EC];
-    void *controller;
-    char pad69C[0x1450 - 0x69C];
-    s32 infinite;
-} Player;
+#define MATCHKIT_KNOWN_Controls 1
+#define MATCHKIT_KNOWN_View 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x1C];
@@ -67,45 +57,45 @@ void func_8022591C(Player *player, Body *body) {
     body->motion[2] = 0;
     func_8044ACCC();
     if (D_801462E5 != 0) {
-        if (player->infinite == 0) {
-            switch (player->slot) {
+        if (player->views1450.view1450_2.infinite == 0) {
+            switch (player->views1C.view5D4_46.slot) {
             case 0:
-                func_804426E4(player->view->menu, &D_451700, player, player->controller, 0);
+                func_804426E4(player->views5DC.view5DC_2.view->menu, &D_451700, player, player->views5E8.view698_36.controller, 0);
                 break;
             case 1:
-                func_804426E4(player->view->menu, &D_451724, player, player->controller, 0);
+                func_804426E4(player->views5DC.view5DC_2.view->menu, &D_451724, player, player->views5E8.view698_36.controller, 0);
                 break;
             case 2:
-                func_804426E4(player->view->menu, &D_451748, player, player->controller, 0);
+                func_804426E4(player->views5DC.view5DC_2.view->menu, &D_451748, player, player->views5E8.view698_36.controller, 0);
                 break;
             case 3:
-                func_804426E4(player->view->menu, &D_45176C, player, player->controller, 0);
+                func_804426E4(player->views5DC.view5DC_2.view->menu, &D_45176C, player, player->views5E8.view698_36.controller, 0);
                 break;
             }
         }
-        if (D_80146938 != 0 && player->controls->team == 0 && player->controls->active != 0) {
+        if (D_80146938 != 0 && player->views5D8.view5D8_2.controls->team == 0 && player->views5D8.view5D8_2.controls->active != 0) {
             active = 0;
             out = 0;
             leader = 0;
             for (i = 0; i < 8; i++) {
                 other = func_8022A5E4(&D_80145040, i);
                 if (other != 0) {
-                    if (other->controls->active != 0) {
+                    if (other->views5D8.view5D8_2.controls->active != 0) {
                         active++;
-                        if (other->alive == 0) {
+                        if (other->views5E4.view5E4_3.alive == 0) {
                             out++;
                         }
                     }
-                    if (other->controls->mode == 0xE) {
+                    if (other->views5D8.view5D8_2.controls->mode == 0xE) {
                         leader = other;
                     }
                 }
             }
             if (out == active) {
-                if (D_8014693C == 2 && leader->alive == 0) {
+                if (D_8014693C == 2 && leader->views5E4.view5E4_3.alive == 0) {
                     for (i = 0; i < 8; i++) {
                         other = func_8022A5E4(&D_80145040, i);
-                        if (other != 0 && other->controls->active != 0) {
+                        if (other != 0 && other->views5D8.view5D8_2.controls->active != 0) {
                             func_8044A37C(other);
                         }
                     }
@@ -115,11 +105,11 @@ void func_8022591C(Player *player, Body *body) {
                 }
             }
         }
-    } else if (player->view != 0) {
-        if (player->respawns != 0) {
-            func_804426E4(player->view->menu, &D_45047C, player, player->controller, 0);
+    } else if (player->views5DC.view5DC_2.view != 0) {
+        if (player->views5E8.view5EA_3.respawns != 0) {
+            func_804426E4(player->views5DC.view5DC_2.view->menu, &D_45047C, player, player->views5E8.view698_36.controller, 0);
         } else {
-            func_804426E4(player->view->menu, &D_450DA8, player, player->controller, 0);
+            func_804426E4(player->views5DC.view5DC_2.view->menu, &D_450DA8, player, player->views5E8.view698_36.controller, 0);
         }
     }
 }

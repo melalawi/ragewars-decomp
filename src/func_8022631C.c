@@ -26,19 +26,11 @@ typedef struct {
     s32 options;
 } Held;
 
-typedef struct {
-    char pad0[0x100];
-    s32 flags;
-    char pad104[0x170 - 0x104];
-    char body[0x1D4 - 0x170];
-    f32 holdTime;
-    char pad1D8[0x5DC - 0x1D8];
-    View *view;
-    char pad5E0[0x5E4 - 0x5E0];
-    s32 holding;
-    char pad5E8[0x13D8 - 0x5E8];
-    Held *held;
-} Player;
+#define MATCHKIT_KNOWN_Held 1
+#define MATCHKIT_KNOWN_Triple 1
+#define MATCHKIT_KNOWN_View 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x18];
@@ -60,27 +52,27 @@ void func_8022631C(Player *player) {
     f32 alpha;
     s32 level;
 
-    if (player->view != 0 && 80.0f < func_802745D4(100.0f)) {
-        view = player->view;
+    if (player->views5DC.view5DC_2.view != 0 && 80.0f < func_802745D4(100.0f)) {
+        view = player->views5DC.view5DC_2.view;
         alpha = func_802745D4(7.5f);
         level = (u32) alpha;
         func_8023919C(view, 0xFF, 0xFF, 0, 0, (u8) level, 3, 7);
         func_802394AC(&D_80145088, 0.0f, 204.79999f, 0.0f, 512.0f, 0, view->position);
     }
-    player->holdTime -= D_800D2988;
-    if (player->holdTime <= 0.0f || player->holding == 0) {
+    player->views1C.view1D4_21.holdTime -= D_800D2988;
+    if (player->views1C.view1D4_21.holdTime <= 0.0f || player->views5E4.view5E4_4.holding == 0) {
         owner = 0;
-        if (player->held->type == 1 && (player->held->flags & 0x300000)) {
-            owner = player->held;
+        if (player->views13D8.view13D8_1.held->type == 1 && (player->views13D8.view13D8_1.held->flags & 0x300000)) {
+            owner = player->views13D8.view13D8_1.held;
         }
-        player->flags &= ~0x800000;
+        player->views1C.view100_9.flags &= ~0x800000;
         func_802227D0(player, player, 2);
         if (owner->options & 0x200) {
-            func_80216488(&hit, player->held, 0x30200, 25.599998f, 0x80, 0);
+            func_80216488(&hit, player->views13D8.view13D8_1.held, 0x30200, 25.599998f, 0x80, 0);
         } else {
-            func_80216488(&hit, player->held, 0x4600, 25.599998f, 0x80, 0);
+            func_80216488(&hit, player->views13D8.view13D8_1.held, 0x4600, 25.599998f, 0x80, 0);
         }
-        player->held = 0;
-        func_80219A40(player, player->body, &hit);
+        player->views13D8.view13D8_1.held = 0;
+        func_80219A40(player, player->views1C.view170_16.body, &hit);
     }
 }

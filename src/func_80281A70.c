@@ -15,14 +15,9 @@ typedef struct Object {
     s32 count;
 } Object;
 
-typedef struct Player {
-    char pad0[8];
-    Vec3 position;
-    char pad14[0x5D0];
-    s32 health;
-    char pad5E8[0x10F8];
-    struct Player *next;
-} Player;
+#define MATCHKIT_KNOWN_Vec3 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct Actor {
     char pad0[4];
@@ -63,9 +58,9 @@ void func_80281A70(s32 unused, Actor *actor, Actor **others, s32 count) {
             }
         }
     }
-    for (player = D_80145060; player != 0; player = player->next) {
-        if (actor->owner != player && player->health > 0) {
-            func_80271FD8(&delta, &player->position, &actor->position);
+    for (player = D_80145060; player != 0; player = player->views16E0.view16E0_1.next) {
+        if (actor->owner != player && player->views5E4.view5E4_2.health > 0) {
+            func_80271FD8(&delta, &player->views0.view8_4.position, &actor->position);
             if (delta.x * delta.x + delta.y * delta.y + delta.z * delta.z <= 65536.0f) {
                 actor->crowded = 1;
                 return;

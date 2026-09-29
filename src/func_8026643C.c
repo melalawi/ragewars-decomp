@@ -9,12 +9,11 @@ typedef struct Rider {
     Vec3f centre;
 } Rider;
 
-typedef struct Player {
-    char pad0[0x5DC];
-    Rider *rider;
-    char pad5E0[0x698 - 0x5E0];
-    char *emitter;
-} Player;
+#define MATCHKIT_KNOWN_Rider 1
+#define MATCHKIT_KNOWN_Triple 1
+#define MATCHKIT_KNOWN_Vec3f 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct Actor {
     u8 kind;
@@ -61,7 +60,7 @@ static inline void spawn_hit_effect(Player *player, Actor *actor, Triple positio
     Quad rotation;
     s32 unused;
 
-    if (player->rider == 0) {
+    if (player->views5DC.view5DC_5.rider == 0) {
         return;
     }
     player = actor->player;  /* FAKEMATCH: reuses the helper's player parameter for actor->player; a separate local gives the right code but not the target register numbering. Owner-accepted 2026-09-28; clean draft 236/253. */
@@ -69,9 +68,9 @@ static inline void spawn_hit_effect(Player *player, Actor *actor, Triple positio
     v.y = direction.y;
     v.z = direction.z;
     func_8022B08C(player, &v);
-    v.x -= player->rider->centre.x;
-    v.y -= player->rider->centre.y;
-    v.z -= player->rider->centre.z;
+    v.x -= player->views5DC.view5DC_5.rider->centre.x;
+    v.y -= player->views5DC.view5DC_5.rider->centre.y;
+    v.z -= player->views5DC.view5DC_5.rider->centre.z;
     func_80271888(&rotation, &v);
     func_8024E78C(actor, position, &point, &unused, 0, 1);
     point = position;
@@ -83,7 +82,7 @@ static inline void spawn_hit_effect(Player *player, Actor *actor, Triple positio
     point.a = 0;
     point.b = 0;
     point.c = 0;
-    func_8028CE70(&D_8011FE88, player->emitter + 0x140, 3, point, 10.24f, 1.0f);
+    func_8028CE70(&D_8011FE88, player->views5E8.view698_37.emitter + 0x140, 3, point, 10.24f, 1.0f);
 }
 
 void func_8026643C(Actor *self, Actor *other, s32 hit, Triple pos, Vec3f vel, s32 spin, Thing *thing, s32 flags) {
@@ -92,11 +91,11 @@ void func_8026643C(Actor *self, Actor *other, s32 hit, Triple pos, Vec3f vel, s3
     if (other->kind == 1) {
         other->unk170 |= 0x8000;
         target = other;
-        if ((self->flags & 0x300000) && self->player->rider != 0) {
+        if ((self->flags & 0x300000) && self->player->views5DC.view5DC_5.rider != 0) {
             if (other->unk1AC & 0x4000) {
-                func_80239314(self->player->rider, 20.0f, 100.0f, 20.0f, 1.0f, 1, pos);
+                func_80239314(self->player->views5DC.view5DC_5.rider, 20.0f, 100.0f, 20.0f, 1.0f, 1, pos);
             } else if (other->unk1AC & 0x2000) {
-                func_80239314(self->player->rider, 10.0f, 50.0f, 10.0f, 1.0f, 1, pos);
+                func_80239314(self->player->views5DC.view5DC_5.rider, 10.0f, 50.0f, 10.0f, 1.0f, 1, pos);
             }
         }
         if (hit != 0) {

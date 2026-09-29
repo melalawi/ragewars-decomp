@@ -14,25 +14,10 @@ typedef struct {
     s32 menu;
 } View;
 
-typedef struct Player Player;
-struct Player {
-    char pad0[0x5DC];
-    View *view;
-    char pad5E0[0x5E4 - 0x5E0];
-    s32 alive;
-    char pad5E8[0x688 - 0x5E8];
-    char body[0x698 - 0x688];
-    void *controller;
-    char pad69C[0x6B0 - 0x69C];
-    s32 state;
-    char pad6B4[0x938 - 0x6B4];
-    char strokes[0xF54 - 0x938];
-    s32 selection;
-    char padF58[0xF90 - 0xF58];
-    s32 choice;
-    char padF94[0x16E0 - 0xF94];
-    Player *next;
-};
+#define MATCHKIT_KNOWN_View 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
+
 
 typedef struct {
     char pad0[0x20];
@@ -102,8 +87,8 @@ void func_80226A10(World *world) {
             world->spin = 0;
         }
         rules = &D_8014687C.rules;
-        for (player = world->players; player != 0; player = player->next) {
-            func_802631D0(player->body, player);
+        for (player = world->players; player != 0; player = player->views16E0.view16E0_2.next) {
+            func_802631D0(player->views5E8.view688_33.body, player);
             D_800D2988 = frameTime;
             if (rules->teams != 0 || rules->teamRule != 0) {
                 func_8022C480(player);
@@ -113,21 +98,21 @@ void func_80226A10(World *world) {
             }
             func_80220A5C(player, player);
         }
-        for (player = world->players; player != 0; player = player->next) {
-            if (func_80245774() != 0 && (player->state & 0x8000)) {
+        for (player = world->players; player != 0; player = player->views16E0.view16E0_2.next) {
+            if (func_80245774() != 0 && (player->views5E8.view6B0_48.state & 0x8000)) {
                 func_802456FC();
-            } else if (func_8026437C(player->controller) != 0) {
+            } else if (func_8026437C(player->views5E8.view698_36.controller) != 0) {
                 if (func_80245774() != 0 || func_8024575C() != 0) {
                     func_802456FC();
-                } else if (func_802A33AC() == 0 && func_80442B98(&D_8014561C) == 0 && player->alive != 0
-                           && player->view != 0 && player->view->menu == 0
+                } else if (func_802A33AC() == 0 && func_80442B98(&D_8014561C) == 0 && player->views5E4.view5E4_3.alive != 0
+                           && player->views5DC.view5DC_2.view != 0 && player->views5DC.view5DC_2.view->menu == 0
                            && ((&D_8014561C.rules)->locked == 0 || D_8014561C.allowed == 0)) {
                     D_8014561C.open = 1;
                     func_8025E380();
                     func_8025E3C8();
-                    func_80218464(player->strokes);
-                    player->selection = -1;
-                    player->choice = -1;
+                    func_80218464(player->views5E8.view938_130.strokes);
+                    player->views5E8.viewF54_132.selection = -1;
+                    player->views5E8.viewF90_134.choice = -1;
                     func_80435CF0();
                 }
             }

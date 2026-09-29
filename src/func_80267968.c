@@ -25,12 +25,11 @@ typedef struct Rider {
     Vec3f centre;
 } Rider;
 
-typedef struct Player {
-    char pad0[0x5DC];
-    Rider *rider;
-    char pad5E0[0x698 - 0x5E0];
-    char *emitter;
-} Player;
+#define MATCHKIT_KNOWN_Rider 1
+#define MATCHKIT_KNOWN_Triple 1
+#define MATCHKIT_KNOWN_Vec3f 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct Actor {
     char pad0[0x1D8];
@@ -56,7 +55,7 @@ void func_80267968(Player *target, Actor *actor, Triple position, Vec3f directio
     Quad rotation;
     s32 unused;
 
-    if (target->rider == 0) {
+    if (target->views5DC.view5DC_5.rider == 0) {
         return;
     }
     player = actor->player;
@@ -64,9 +63,9 @@ void func_80267968(Player *target, Actor *actor, Triple position, Vec3f directio
     v.y = direction.y;
     v.z = direction.z;
     func_8022B08C(player, &v);
-    v.x -= player->rider->centre.x;
-    v.y -= player->rider->centre.y;
-    v.z -= player->rider->centre.z;
+    v.x -= player->views5DC.view5DC_5.rider->centre.x;
+    v.y -= player->views5DC.view5DC_5.rider->centre.y;
+    v.z -= player->views5DC.view5DC_5.rider->centre.z;
     func_80271888(&rotation, &v);
     func_8024E78C(actor, position, &point, &unused, 0, 1);
     point = position;
@@ -78,5 +77,5 @@ void func_80267968(Player *target, Actor *actor, Triple position, Vec3f directio
     point.a = 0;
     point.b = 0;
     point.c = 0;
-    func_8028CE70(&D_8011FE88, player->emitter + 0x140, 3, point, *(&D_800C9538 + 1), D_800C9540);
+    func_8028CE70(&D_8011FE88, player->views5E8.view698_37.emitter + 0x140, 3, point, *(&D_800C9538 + 1), D_800C9540);
 }

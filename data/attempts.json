@@ -26342,7 +26342,7 @@
    "verdict": "Open"
   },
   "func_802C1648": {
-   "attempt_count": 3,
+   "attempt_count": 4,
    "attempts": [
     {
      "note": "Pops the head of a linked queue: returns *queue, clears its link word and stores the old link back into *queue. It uses $25 as scratch and fills a load delay slot with nop, the register and scheduling of hand-written assembly; GCC 2.8.1 targeting MIPS III emits no load delay nop.",
@@ -26376,8 +26376,86 @@
      "retained": "artifacts/retained-candidates/func_802C1648/3.c",
      "retained_sha256": "bf62971248ab9b72fdc81af1caf388ad631ef55501d4062de5f3d84faeff0c31",
      "trials": 1
+    },
+    {
+     "assignment": "20260929T210014Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 3,
+       "inserted": 0,
+       "missing": 1,
+       "of": 6,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 2
+       }
+      },
+      "eu": {
+       "identical": 3,
+       "inserted": 0,
+       "missing": 1,
+       "of": 6,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 2
+       }
+      },
+      "eu-mul": {
+       "identical": 3,
+       "inserted": 0,
+       "missing": 1,
+       "of": 6,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 2
+       }
+      },
+      "us": {
+       "identical": 3,
+       "inserted": 0,
+       "missing": 1,
+       "of": 6,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 2
+       }
+      },
+      "us-rev1": {
+       "identical": 3,
+       "inserted": 0,
+       "missing": 1,
+       "of": 6,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 2
+       }
+      }
+     },
+     "measurement": {
+      "identical": 3,
+      "inserted": 0,
+      "missing": 1,
+      "of": 6
+     },
+     "note": "func_802C1648 ready 3/6 words: gemini-3.8-flash-low draft; 1 missing load-delay nop and t9/v1 register allocation on all five carts",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T21:00:24Z",
+     "retained": "artifacts/retained-candidates/func_802C1648/4.c",
+     "retained_sha256": "0b09ec09d5fb885bf676ecfd5337f6b09efb684e737d0b933253605f1198993c"
     }
    ],
+   "best": {
+    "identical": 3,
+    "inserted": 0,
+    "missing": 1,
+    "of": 6
+   },
    "budget_failed_attempts": 10,
    "positional_best_differing_words": 2,
    "verdict": "Open"
@@ -50656,6 +50734,70 @@
    },
    "budget_failed_attempts": 10,
    "verdict": "Landed"
+  },
+  "func_8043CEB0": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T210031Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us": {
+       "identical": 20,
+       "inserted": 0,
+       "missing": 3,
+       "needs": [
+        {
+         "address": "0x800E0904",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E5CA4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E5CA4"
+        }
+       ],
+       "of": 37,
+       "result": "differs",
+       "typed": {
+        "missing": 3,
+        "reg": 14
+       }
+      },
+      "us-rev1": {
+       "identical": 20,
+       "inserted": 0,
+       "missing": 3,
+       "of": 37,
+       "result": "differs",
+       "typed": {
+        "missing": 3,
+        "reg": 14
+       }
+      }
+     },
+     "measurement": {
+      "identical": 20,
+      "inserted": 0,
+      "missing": 3,
+      "of": 37
+     },
+     "note": "func_8043CEB0 ready 20/37 words: gemini-3.8-flash-low draft; register-blind 28/32 (codex draft 24/32); 14 register-only words and 3 missing",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T21:00:37Z",
+     "retained": "artifacts/retained-candidates/func_8043CEB0/1.c",
+     "retained_sha256": "a5e204cb8074ea287eaf35489806181e434c5f866fbe6944e3aeef5b432d8070"
+    }
+   ],
+   "best": {
+    "identical": 20,
+    "inserted": 0,
+    "missing": 3,
+    "of": 37
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Open"
   },
   "func_8043CFD8": {
    "attempt_count": 1,

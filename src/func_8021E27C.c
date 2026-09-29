@@ -20,33 +20,10 @@ typedef struct {
     u8 paused;
 } Controls;
 
-typedef struct {
-    char pad0[0xE4];
-    u16 kind;
-    char padE6[0x48C - 0xE6];
-    s8 state;
-    char pad48D[0x523 - 0x48D];
-    s8 busy;
-    char pad524[0x594 - 0x524];
-    s32 mode;
-    char pad598[0x5A0 - 0x598];
-    f32 charge;
-    char pad5A4[0x5D8 - 0x5A4];
-    Controls *controls;
-    char pad5DC[0x62E - 0x5DC];
-    s16 weapon;
-    char pad630[0x650 - 0x630];
-    s16 action;
-    char pad652[0x788 - 0x652];
-    s32 icons;
-    char pad78C[0x798 - 0x78C];
-    s32 carried;
-    Vec3f carriedPosition;
-    char pad7A8[0x7B8 - 0x7A8];
-    s32 target;
-    f32 timer;
-    Vec3f targetPosition;
-} Player;
+#define MATCHKIT_KNOWN_Controls 1
+#define MATCHKIT_KNOWN_Vec3f 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 extern f32 D_800D2988;
 extern s32 D_800CE474[2];
@@ -62,53 +39,53 @@ void func_8021E27C(Player *player, void *view) {
     s32 show;
     f32 scale;
 
-    player->timer += D_800D2988;
-    if (player->icons == 0) {
+    player->views5E8.view7BC_102.timer += D_800D2988;
+    if (player->views5E8.view788_94.icons == 0) {
         return;
     }
-    if (player->controls->paused == 1 && D_801468F4 != 0) {
+    if (player->views5D8.view5D8_2.controls->paused == 1 && D_801468F4 != 0) {
         return;
     }
-    if (player->action == 0x27) {
+    if (player->views5E8.view650_17.action == 0x27) {
         return;
     }
-    if (player->mode == 2 && player->weapon == 3) {
+    if (player->views1C.view594_40.mode == 2 && player->views5E8.view62E_14.weapon == 3) {
         return;
     }
     if (func_802A33AC() != 0) {
         return;
     }
-    if (player->carried == 0x2DA) {
-        if (player->mode == 1) {
-            if (player->kind != D_800CE474[0] && player->kind != D_800CE474[1]) {
-                player->carried = 0x2EF;
-                if ((u8) player->state - 2U < 2) {
-                    player->timer = 0.0f;
-                } else if (player->busy != 0) {
-                    player->timer = 0.0f;
+    if (player->views5E8.view798_96.carried == 0x2DA) {
+        if (player->views1C.view594_40.mode == 1) {
+            if (player->views1C.viewE4_7.kind != D_800CE474[0] && player->views1C.viewE4_7.kind != D_800CE474[1]) {
+                player->views5E8.view798_96.carried = 0x2EF;
+                if ((u8) player->views1C.view48C_35.state - 2U < 2) {
+                    player->views5E8.view7BC_102.timer = 0.0f;
+                } else if (player->views1C.view523_37.busy != 0) {
+                    player->views5E8.view7BC_102.timer = 0.0f;
                 } else {
-                    player->timer = 1.0f;
+                    player->views5E8.view7BC_102.timer = 1.0f;
                 }
             }
-        } else if (player->kind != D_800CE474[0] && player->kind != D_800CE474[1]) {
-            player->carried = 0x2F1;
-            if (player->weapon == 9 && player->charge > 0.0f) {
-                player->timer = 1.0f;
-            } else if (player->state == 0xB || player->state == 3 || player->state == 2) {
-                player->timer = 0.0f;
-            } else if (player->busy != 0) {
-                player->timer = 0.0f;
+        } else if (player->views1C.viewE4_7.kind != D_800CE474[0] && player->views1C.viewE4_7.kind != D_800CE474[1]) {
+            player->views5E8.view798_96.carried = 0x2F1;
+            if (player->views5E8.view62E_14.weapon == 9 && player->views1C.view5A0_42.charge > 0.0f) {
+                player->views5E8.view7BC_102.timer = 1.0f;
+            } else if (player->views1C.view48C_35.state == 0xB || player->views1C.view48C_35.state == 3 || player->views1C.view48C_35.state == 2) {
+                player->views5E8.view7BC_102.timer = 0.0f;
+            } else if (player->views1C.view523_37.busy != 0) {
+                player->views5E8.view7BC_102.timer = 0.0f;
             } else {
-                player->timer = 1.0f;
+                player->views5E8.view7BC_102.timer = 1.0f;
             }
         } else {
-            player->carried = 0x302;
-            player->timer = 0.0f;
+            player->views5E8.view798_96.carried = 0x302;
+            player->views5E8.view7BC_102.timer = 0.0f;
         }
     }
     func_802AA224(0xFF);
 
-    icon = player->target;
+    icon = player->views5E8.view7B8_100.target;
     show = 1;
     if (icon == 0x2DA && D_801462E5 != 0) {
         show = D_801462F3;
@@ -137,11 +114,11 @@ void func_8021E27C(Player *player, void *view) {
             break;
         }
         if (show) {
-            func_8021E068(view, &player->targetPosition, icon, player->timer, scale, 1.0f);
+            func_8021E068(view, &player->views5E8.view7C0_104.targetPosition, icon, player->views5E8.view7BC_102.timer, scale, 1.0f);
         }
     }
 
-    icon = player->carried;
+    icon = player->views5E8.view798_96.carried;
     show = 1;
     if (icon == 0x2DA && D_801462E5 != 0) {
         show = D_801462F3;
@@ -168,7 +145,7 @@ void func_8021E27C(Player *player, void *view) {
             break;
         }
         if (show) {
-            func_8021E068(view, &player->carriedPosition, icon, player->timer, scale, 1.0f);
+            func_8021E068(view, &player->views5E8.view79C_98.carriedPosition, icon, player->views5E8.view7BC_102.timer, scale, 1.0f);
         }
     }
 }

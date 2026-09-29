@@ -16,22 +16,10 @@ typedef struct {
     s32 slots[8];
 } Model;
 
-typedef struct {
-    char pad0[0x18];
-    Model *model;
-    char pad1C[0x578];
-    s32 gear;
-    char pad598[0x40];
-    Record *record;
-    char pad5DC[4];
-    s32 state;
-    char pad5E4[0x4A];
-    s16 weapon;
-    char pad630[0x140];
-    s16 nextWeapon;
-    char pad772[0xCDE];
-    s32 computer;
-} Player;
+#define MATCHKIT_KNOWN_Model 1
+#define MATCHKIT_KNOWN_Record 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     Player *player;
@@ -55,22 +43,22 @@ void func_8020FDB0(Brain *brain, s32 *ammo) {
     s32 weapon;
     s32 pick;
 
-    if (brain->player->computer == 0) {
+    if (brain->player->views1450.view1450_1.computer == 0) {
         return;
     }
-    if (brain->player->state == 14) {
+    if (brain->player->views5DC.view5E0_9.state == 14) {
         func_802100E0(brain);
         return;
     }
     holding = count = 0;
     for (i = count; i < 8; i++) {
-        weapon = brain->player->model->slots[i];
+        weapon = brain->player->views18.view18_2.model->slots[i];
         weapon -= 0x4C3;
         if (weapon < 0 || ammo[i] == 0 || func_8022EAFC(brain->player, weapon) == 0) {
             continue;
         }
         if ((u32)weapon >= 2) {
-            switch (brain->player->record->weaponMode) {
+            switch (brain->player->views5D8.view5D8_1.record->weaponMode) {
             case 1:
                 goto second;
             case 0:
@@ -78,7 +66,7 @@ void func_8020FDB0(Brain *brain, s32 *ammo) {
             case 2:
                 goto add;
             default:
-                brain->player->record->weaponMode = 0;
+                brain->player->views5D8.view5D8_1.record->weaponMode = 0;
                 break;
             }
             if (*D_800D052C[weapon]->weaponClass == 1) {
@@ -94,12 +82,12 @@ void func_8020FDB0(Brain *brain, s32 *ammo) {
         }
     add:
         choices[count++] = weapon;
-        if (weapon == brain->player->weapon) {
+        if (weapon == brain->player->views5E8.view62E_14.weapon) {
             holding = 1;
         }
     }
     if (holding) {
-        if (brain->player->weapon == 4 && brain->player->gear == 2) {
+        if (brain->player->views5E8.view62E_14.weapon == 4 && brain->player->views1C.view594_39.gear == 2) {
             return;
         }
         if (func_802831FC(D_80121990, brain->player) > 0) {
@@ -113,8 +101,8 @@ void func_8020FDB0(Brain *brain, s32 *ammo) {
         return;
     }
     pick = choices[func_80274544() % count];
-    brain->player->nextWeapon = pick;
-    if (pick != brain->player->weapon) {
+    brain->player->views5E8.view770_92.nextWeapon = pick;
+    if (pick != brain->player->views5E8.view62E_14.weapon) {
         brain->switchTimer = 0;
     }
 }

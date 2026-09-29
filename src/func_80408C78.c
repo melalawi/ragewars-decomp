@@ -14,11 +14,9 @@ typedef struct {
     u8 name[8];
 } Profile;
 
-typedef struct {
-    char pad0[0x5D8];
-    Profile *profile;
-    char *messages;
-} Player;
+#define MATCHKIT_KNOWN_Profile 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[4];
@@ -86,7 +84,7 @@ s32 func_80408C78(void *unused, Menu *menu) {
     if (D_80153730 != 0) {
         player = func_8022A5B0(&D_80145040, menu->slot);
         menu->player = player;
-        profile = player->profile;
+        profile = player->views5D8.view5D8_6.profile;
         profile->flags = D_80153740;
         ((func_80408C78_S1 *)(profile))->unk0 = D_80153738.value;
         ((func_80408C78_S1 *)(profile))->unk2 = D_8015373A.value;
@@ -96,7 +94,7 @@ s32 func_80408C78(void *unused, Menu *menu) {
             profile->name[i] = D_80153744[i];
         }
         func_8044AD14(player, D_80153720);
-        func_80442934(player->messages + 0x554, menu, D_450698);
+        func_80442934(player->views5DC.view5DC_7.messages + 0x554, menu, D_450698);
         return 1;
     }
     if (func_80404858(ch, D_8015378C) == 0) {

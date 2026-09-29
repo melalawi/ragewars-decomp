@@ -16,15 +16,10 @@ typedef struct {
     u8 active;
 } Controls;
 
-typedef struct Player Player;
-struct Player {
-    char pad0[0x5D8];
-    Controls *controls;
-    char pad5DC[0x5E4 - 0x5DC];
-    s32 alive;
-    char pad5E8[0x16E0 - 0x5E8];
-    Player *next;
-};
+#define MATCHKIT_KNOWN_Controls 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
+
 
 typedef struct {
     char pad0[0x20];
@@ -79,7 +74,7 @@ static inline Player *player_at(World *world, u32 index) {
                 if (count == (s32) index) {
                     return player;
                 }
-                player = player->next;
+                player = player->views16E0.view16E0_2.next;
                 count += 1;
             } while (player != 0);
         }
@@ -127,12 +122,12 @@ void func_80228394(World *world) {
             special = 0;
             for (i = 0; i < 8; i++) {
                 player = player_at(world, i);
-                if (player != 0 && player->controls->active != 0) {
+                if (player != 0 && player->views5D8.view5D8_2.controls->active != 0) {
                     active++;
-                    if (player->alive == 0) {
+                    if (player->views5E4.view5E4_3.alive == 0) {
                         out++;
                     }
-                    if (player->controls->mode == 0xE) {
+                    if (player->views5D8.view5D8_2.controls->mode == 0xE) {
                         special = 1;
                     }
                 }

@@ -19,18 +19,10 @@ typedef struct {
     s32 buttons;
 } Controller;
 
-typedef struct {
-    char pad0[0x5D8];
-    Controls *controls;
-    void *view;
-    char pad5E0[0x670 - 0x5E0];
-    f32 shield;
-    char pad674[0x698 - 0x674];
-    Controller *controller;
-    char pad69C[0x11B4 - 0x69C];
-    s32 locked;
-    s32 frozen;
-} Player;
+#define MATCHKIT_KNOWN_Controller 1
+#define MATCHKIT_KNOWN_Controls 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x1E];
@@ -54,6 +46,17 @@ extern s32 D_800D7194;
 extern s32 D_800D7198;
 extern s32 D_800D719C;
 extern s32 D_800D71A0;
+#ifdef VERSION_EU
+extern s32 D_800E0FF4[];
+extern s32 D_800E1004[];
+extern s32 D_800E1014[];
+extern s32 D_800E1024[];
+#elif defined(VERSION_EU_MUL)
+extern s32 D_800DCE6C[];
+extern s32 D_800DCE78[];
+extern s32 D_800DCE84[];
+extern s32 D_800DCE90[];
+#endif
 extern char D_80145088;
 extern s32 D_8014561C;
 extern s32 D_801468C4;
@@ -78,17 +81,17 @@ void func_80218B84(TeamMenu *menu, Player *player) {
         func_80218F84(menu);
         return;
     }
-    held = player->controller->buttons & 0x8000;
+    held = player->views5E8.view698_35.controller->buttons & 0x8000;
     if (menu->state == 0 || menu->state == 3) {
-        if (D_801468C4 == 0 || player->controls->team != 0xFF) {
+        if (D_801468C4 == 0 || player->views5D8.view5D8_2.controls->team != 0xFF) {
             goto run;
         }
         func_80219124(menu, held, player);
         menu->state = 1;
     }
-    player->locked = 1;
-    player->frozen = 1;
-    player->shield = 2.0f;
+    player->views5E8.view11B4_136.locked = 1;
+    player->views5E8.view11B8_138.frozen = 1;
+    player->views5E8.view670_31.shield = 2.0f;
     slot = func_80218988(player);
     if (slot != menu->hover) {
         if (slot != -1) {
@@ -104,7 +107,7 @@ void func_80218B84(TeamMenu *menu, Player *player) {
             if (slot != menu->cursor) {
                 menu->cursor = slot;
             }
-            player->controls->team = team;
+            player->views5D8.view5D8_2.controls->team = team;
         }
         menu->hover = slot;
     }
@@ -122,23 +125,47 @@ run:
             break;
         }
         menu->state = 3;
-        player->locked = 0;
-        player->frozen = 0;
-        switch (player->controls->team) {
+        player->views5E8.view11B4_136.locked = 0;
+        player->views5E8.view11B8_138.frozen = 0;
+        switch (player->views5D8.view5D8_2.controls->team) {
         case 0:
-            func_80237E70(&D_80145088, player->view, D_800D7194);
+#ifdef VERSION_EU
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800E0FF4[((u8 *) &D_80145088)[0x17C1]]);
+#elif defined(VERSION_EU_MUL)
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800DCE6C[((u8 *) &D_80145088)[0x17C1]]);
+#else
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800D7194);
+#endif
             func_8025DF54(0x2E6);
             break;
         case 1:
-            func_80237E70(&D_80145088, player->view, D_800D7198);
+#ifdef VERSION_EU
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800E1004[((u8 *) &D_80145088)[0x17C1]]);
+#elif defined(VERSION_EU_MUL)
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800DCE78[((u8 *) &D_80145088)[0x17C1]]);
+#else
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800D7198);
+#endif
             func_8025DF54(0x2E4);
             break;
         case 2:
-            func_80237E70(&D_80145088, player->view, D_800D719C);
+#ifdef VERSION_EU
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800E1014[((u8 *) &D_80145088)[0x17C1]]);
+#elif defined(VERSION_EU_MUL)
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800DCE84[((u8 *) &D_80145088)[0x17C1]]);
+#else
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800D719C);
+#endif
             func_8025DF54(0x2E8);
             break;
         case 3:
-            func_80237E70(&D_80145088, player->view, D_800D71A0);
+#ifdef VERSION_EU
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800E1024[((u8 *) &D_80145088)[0x17C1]]);
+#elif defined(VERSION_EU_MUL)
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800DCE90[((u8 *) &D_80145088)[0x17C1]]);
+#else
+            func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800D71A0);
+#endif
             func_8025DF54(0x2EC);
             break;
         }

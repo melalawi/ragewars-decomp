@@ -11,24 +11,9 @@ typedef struct {
     u8 laps;
 } Course;
 
-typedef struct {
-    char pad0[0x5D4];
-    s32 slot;
-    Record *record;
-    char pad5DC[4];
-    s32 state;
-    char pad5E4[6];
-    s16 runType;
-    s32 model;
-    char pad5F0[0x26C];
-    s32 w85C;
-    char pad860[0xADC];
-    s32 laps;
-    char pad1340[0x88];
-    s32 w13C8;
-    char pad13CC[0x84];
-    s32 computer;
-} Player;
+#define MATCHKIT_KNOWN_Record 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 extern s32 D_80145048;
 extern u8 D_801462E5;
@@ -46,22 +31,22 @@ void func_8044A37C(Player *player) {
 
     scale = (D_80145048 >= 2) * 2;
     if (D_801462E5 != 0) {
-        if (D_801462D5 == 1 && player->computer == 0) {
-            player->laps = ((u8)func_8022F444(D_80102B00 + player->slot * 0x190, player->record->track) >> 1) + 1;
+        if (D_801462D5 == 1 && player->views1450.view1450_1.computer == 0) {
+            player->views133C.view133C_1.laps = ((u8)func_8022F444(D_80102B00 + player->views1C.view5D4_46.slot * 0x190, player->views5D8.view5D8_1.record->track) >> 1) + 1;
         }
-        if (D_801462D5 == 4 && player->computer == 0 && D_800E4680 != 0) {
-            player->laps = D_800E4680->laps;
+        if (D_801462D5 == 4 && player->views1450.view1450_1.computer == 0 && D_800E4680 != 0) {
+            player->views133C.view133C_1.laps = D_800E4680->laps;
         }
-        player->runType = 1;
+        player->views5E8.view5EA_4.runType = 1;
     } else {
-        player->runType = 3;
+        player->views5E8.view5EA_4.runType = 3;
     }
-    player->w13C8 = 0;
+    player->views13C8.view13C8_1.w13C8 = 0;
     func_8044A17C(player);
-    player->w85C = 0;
-    if (player->state == 12 && player->computer != 0 && D_8013B294 == 9) {
+    player->views5E8.view85C_120.w85C = 0;
+    if (player->views5DC.view5E0_9.state == 12 && player->views1450.view1450_1.computer != 0 && D_8013B294 == 9) {
         func_8021B1E4(player, 0xC1D, scale, 1);
     } else {
-        func_8021B1E4(player, player->model, scale, 1);
+        func_8021B1E4(player, player->views5E8.view5EC_6.model, scale, 1);
     }
 }

@@ -14,22 +14,9 @@ typedef struct {
     s32 pad14;
 } StateInfo;
 
-typedef struct {
-    char pad0[0x100];
-    s32 flags;
-    char pad104[0x650 - 0x104];
-    s16 state;
-    s16 previous;
-    char pad654[4];
-    s32 counter;
-    char pad65C[4];
-    s32 previousTimer;
-    s32 timer;
-    char pad668[0x86C - 0x668];
-    s32 parameter;
-    char pad870[0x13B4 - 0x870];
-    StateInfo *states;
-} Player;
+#define MATCHKIT_KNOWN_StateInfo 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 extern unsigned char D_801462E5;
 extern s32 func_8022C450(void);
@@ -41,21 +28,21 @@ s32 func_802227D0(Player *player, void *arg1, s32 state) {
     if (D_801462E5 != 0 && func_8022C450() != 0 && state != 0x15 && state != 0x13 && state != 0x14) {
         return 0;
     }
-    player->previous = player->state;
-    player->previousTimer = player->timer;
-    player->state = state;
-    player->flags &= ~0x800000;
-    enter = player->states[state].enter;
+    player->views5E8.view652_20.previous = player->views5E8.view650_16.state;
+    player->views5E8.view660_26.previousTimer = player->views5E8.view664_28.timer;
+    player->views5E8.view650_16.state = state;
+    player->views1C.view100_9.flags &= ~0x800000;
+    enter = player->views13B4.view13B4_1.states[state].enter;
     if (enter != 0) {
         enter(player, arg1);
     }
-    player->timer = player->states[player->state].timer;
-    parameter = player->states[player->state].parameter;
+    player->views5E8.view664_28.timer = player->views13B4.view13B4_1.states[player->views5E8.view650_16.state].timer;
+    parameter = player->views13B4.view13B4_1.states[player->views5E8.view650_16.state].parameter;
     if (parameter != 0) {
-        player->parameter = parameter;
+        player->views5E8.view86C_126.parameter = parameter;
     }
-    if (player->state == state) {
-        player->counter = 0;
+    if (player->views5E8.view650_16.state == state) {
+        player->views5E8.view658_22.counter = 0;
         return 1;
     }
     return 0;

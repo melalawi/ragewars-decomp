@@ -11,12 +11,9 @@ typedef struct {
     s8 team;
 } Settings;
 
-typedef struct {
-    char pad[0x5D8];
-    Settings *settings;
-    char pad5DC[0x4];
-    s32 slot;
-} Player;
+#define MATCHKIT_KNOWN_Settings 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad[0x1C];
@@ -36,11 +33,11 @@ extern void func_80442934(void *, Menu *, char *);
 
 s32 func_8043E65C(void *arg0, Menu *menu, void *arg2) {
     Player *player = menu->player;
-    Settings *settings = player->settings;
+    Settings *settings = player->views5D8.view5D8_7.settings;
 
     if (func_8026439C(menu->input) != 0) {
         func_8044AD14(player, settings->team);
-        func_8025DF54(D_800E5DFA[player->slot].sound);
+        func_8025DF54(D_800E5DFA[player->views5DC.view5E0_10.slot].sound);
         func_80442934(arg2, menu, D_450698);
         return 1;
     }

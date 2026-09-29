@@ -12,20 +12,10 @@ typedef struct {
     u8 team;
 } Record;
 
-typedef struct Player {
-    char pad0[8];
-    Vec3 pos;
-    char pad14[4];
-    char *track;
-    char pad1C[0x1BC];
-    struct Player *self;
-    char pad1DC[0x3FC];
-    Record *record;
-    char pad5DC[8];
-    s32 active;
-    char pad5E8[0x10F8];
-    struct Player *next;
-} Player;
+#define MATCHKIT_KNOWN_Record 1
+#define MATCHKIT_KNOWN_Vec3 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x80];
@@ -73,28 +63,28 @@ void func_80203278(Player *player, Rider *rider, Result *result) {
 
     nearest = 0.0f;
     best = 0;
-    segment = (Segment *)(player->track + 0x14);
+    segment = (Segment *)(player->views18.view18_1.track + 0x14);
     other = D_80145060;
     if (other != 0) {
         lift = D_800C6B14;
         do {
-            distance = func_8027272C(&player->pos, &other->pos);
+            distance = func_8027272C(&player->views0.view8_3.pos, &other->views0.view8_3.pos);
             if (distance < segment->range * segment->range) {
                 enemy = 0;
-                if (player->self != other && other->active != 0) {
+                if (player->views1C.view1D8_23.self != other && other->views5E4.view5E4_1.active != 0) {
                     enemy = 1;
                     if (D_801468C4 != 0) {
-                        enemy = player->self->record->team != other->record->team;
+                        enemy = player->views1C.view1D8_23.self->views5D8.view5D8_1.record->team != other->views5D8.view5D8_1.record->team;
                     }
                 }
                 if (enemy) {
-                    func_80271FD8(&to, &other->pos, &player->pos);
+                    func_80271FD8(&to, &other->views0.view8_3.pos, &player->views0.view8_3.pos);
                     from.x = rider->aim.x;
                     from.y = rider->aim.y;
                     from.z = rider->aim.z;
-                    from = player->pos;
+                    from = player->views0.view8_3.pos;
                     from.y += func_8024D274(player) * lift;
-                    to = other->pos;
+                    to = other->views0.view8_3.pos;
                     to.y += func_8024D274(other) * lift;
                     blocked = func_80244494(player, from, to, D_80103FD0);
                     valid = 1;
@@ -107,7 +97,7 @@ void func_80203278(Player *player, Rider *rider, Result *result) {
                     }
                 }
             }
-            other = other->next;
+            other = other->views16E0.view16E0_1.next;
         } while (other != 0);
     }
     if (best != 0) {

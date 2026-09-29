@@ -4,14 +4,10 @@
 
 typedef struct { u8 pad[0x24]; f32 speed; } Body;
 typedef struct { u8 pad[0x8F]; u8 flag; } Ctrl;
-typedef struct {
-    u8 pad0[0x18]; Body *body;
-    u8 pad1[0x174 - 0x1C]; s32 unk174;
-    u8 pad2[0x45C - 0x178]; s32 unk45C;
-    u8 pad3[0x5D8 - 0x460]; Ctrl *ctrl;
-    u8 pad4[0x5E4 - 0x5DC]; s32 health;
-    u8 pad5[0x122C - 0x5E8]; u32 flags;
-} Player;
+#define MATCHKIT_KNOWN_Body 1
+#define MATCHKIT_KNOWN_Ctrl 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 struct RegenRate { f32 unk0; f32 unk4; };
 
@@ -35,24 +31,24 @@ void func_80220D20(Player *p) {
     s32 val;
     MultiplayerOptions *regen;
 
-    if ((p->flags & 4) && p->health > 0) {
+    if ((p->views122C.view122C_1.flags & 4) && p->views5E4.view5E4_2.health > 0) {
         cap = func_8022ABF0(p);
-        f20 = p->health + D_800D2988 * gFastRegen.unk4;
+        f20 = p->views5E4.view5E4_2.health + D_800D2988 * gFastRegen.unk4;
         f0 = cap;
         if (!(f0 <= f20)) {
             f0 = f20;
         }
         val = f0;
-        p->health = val; p->unk174 = val; p->unk45C = p->health;
+        p->views5E4.view5E4_2.health = val; p->views1C.view174_17.unk174 = val; p->views1C.view45C_31.unk45C = p->views5E4.view5E4_2.health;
         return;
     }
     regen = &D_801462E5;
-    f20 = p->body->speed;
+    f20 = p->views18.view18_3.body->speed;
     if (regen->enabled == 0) return;
     if (f20 < D_800C78B8) return;
-    cur = p->health;
+    cur = p->views5E4.view5E4_2.health;
     if (cur == 0.0f) return;
-    if (p->ctrl->flag != 0 && ((SessionState *)&regen->session)->paused != 0) return;
+    if (p->views5D8.view5D8_4.ctrl->flag != 0 && ((SessionState *)&regen->session)->paused != 0) return;
     f20 = cur + (s32)(f20 * D_800C78BC) * (D_800D2988 * D_800C78C0.unk0);
-    p->health = MIN(f20, func_8022ABF0(p));
+    p->views5E4.view5E4_2.health = MIN(f20, func_8022ABF0(p));
 }

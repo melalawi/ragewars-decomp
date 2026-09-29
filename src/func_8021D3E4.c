@@ -30,22 +30,11 @@ typedef struct {
     Vec3f position;
 } View;
 
-typedef struct {
-    char pad0[0x6C];
-    f32 heading;
-    char pad70[0x260 - 0x70];
-    Vec3f muzzle;
-    char pad26C[0x5DC - 0x26C];
-    View *view;
-    char pad5E0[0x1214 - 0x5E0];
-    s32 marker;
-    char pad1218[0x1464 - 0x1218];
-    Vec3f aim;
-    char pad1470[0x1480 - 0x1470];
-    Matrix beams[2];
-    Matrix lasers[2];
-    Matrix dots[2];
-} Player;
+#define MATCHKIT_KNOWN_Matrix 1
+#define MATCHKIT_KNOWN_Vec3f 1
+#define MATCHKIT_KNOWN_View 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 extern f32 D_800CF1B4;
 extern s32 D_800D297C;
@@ -77,8 +66,8 @@ void func_8021D3E4(Player *player, Vec3f *target, Vec3f *normal) {
     Quat turn;
     f32 scale;
 
-    if (player->view != 0) {
-        origin = player->view->position;
+    if (player->views5DC.view5DC_2.view != 0) {
+        origin = player->views5DC.view5DC_2.view->position;
     } else {
         func_8022B134(player, &origin);
     }
@@ -88,29 +77,29 @@ void func_8021D3E4(Player *player, Vec3f *target, Vec3f *normal) {
     func_802720EC(&direction);
     func_80272848(&matrix);
     if (0.99999899f <= direction.y) {
-        func_80272EAC(&matrix, -1.57079649f, player->heading, 0.0f);
+        func_80272EAC(&matrix, -1.57079649f, player->views1C.view6C_5.heading, 0.0f);
     } else if (direction.y <= -0.99999899f) {
-        func_80272EAC(&matrix, 1.57079649f, player->heading, 0.0f);
+        func_80272EAC(&matrix, 1.57079649f, player->views1C.view6C_5.heading, 0.0f);
     } else {
         func_80273208(&matrix, &direction);
     }
     func_802734B8(&matrix, eye);
     func_80273424(&matrix, 0.0f, 0.0f, D_800CF1B4);
     func_802734EC(&matrix, 0.05f, 1.0f, D_800CF1B4 - func_80272768(&eye, &to));
-    func_802702EC(&matrix, &player->beams[D_800D297C]);
+    func_802702EC(&matrix, &player->views1480.view1480_1.beams[D_800D297C]);
 
-    aim = player->aim;
-    if (player->view != 0) {
-        aim.y -= ABS(player->view->position.y - player->muzzle.y);
+    aim = player->views1464.view1464_1.aim;
+    if (player->views5DC.view5DC_2.view != 0) {
+        aim.y -= ABS(player->views5DC.view5DC_2.view->position.y - player->views1C.view260_26.muzzle.y);
     }
-    func_80271FD8(&direction, &aim, &player->muzzle);
+    func_80271FD8(&direction, &aim, &player->views1C.view260_26.muzzle);
     func_802720EC(&direction);
     func_80272848(&matrix);
     func_80273208(&matrix, &direction);
-    func_802734B8(&matrix, player->muzzle);
+    func_802734B8(&matrix, player->views1C.view260_26.muzzle);
     scale = 1.0f;
-    func_802734EC(&matrix, scale, scale, -func_80272768(&origin, &player->aim));
-    func_802702EC(&matrix, &player->lasers[D_800D297C]);
+    func_802734EC(&matrix, scale, scale, -func_80272768(&origin, &player->views1464.view1464_1.aim));
+    func_802702EC(&matrix, &player->views1500.view1500_1.lasers[D_800D297C]);
 
     if (normal != 0) {
         lift = *normal;
@@ -122,7 +111,7 @@ void func_8021D3E4(Player *player, Vec3f *target, Vec3f *normal) {
         func_80271FA4(&eye, &eye, &lift);
         func_802734B8(&matrix, to);
         func_802734EC(&matrix, 1.536f, scale, 1.536f);
-        func_802702EC(&matrix, &player->dots[D_800D297C]);
+        func_802702EC(&matrix, &player->views1580.view1580_1.dots[D_800D297C]);
     }
-    player->marker = 1;
+    player->views5E8.view1214_155.marker = 1;
 }

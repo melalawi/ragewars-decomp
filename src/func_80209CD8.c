@@ -12,12 +12,9 @@ typedef struct {
     u8 active;
 } Controls;
 
-typedef struct {
-    char pad0[0x5D8];
-    Controls *controls;
-    char pad5DC[0x1340 - 0x5DC];
-    s32 timer;
-} Player;
+#define MATCHKIT_KNOWN_Controls 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x98];
@@ -36,7 +33,7 @@ void func_80209CD8(Player **arg0) {
     s8 mode;
 
     if (D_80146938 != 0) {
-        mode = (*arg0)->controls->mode;
+        mode = (*arg0)->views5D8.view5D8_2.controls->mode;
         if (mode == 0xC || mode == 0xF) {
             limit = 0x384;
         } else {
@@ -45,13 +42,13 @@ void func_80209CD8(Player **arg0) {
     } else {
         limit = 0x1E;
     }
-    if (limit < (*arg0)->timer) {
+    if (limit < (*arg0)->views1340.view1340_2.timer) {
         session = &D_801468A0;
         do {
-            (*arg0)->timer = 0;
+            (*arg0)->views1340.view1340_2.timer = 0;
         } while (0);
         if (session->running != 0) {
-            controls = (*arg0)->controls;
+            controls = (*arg0)->views5D8.view5D8_2.controls;
             if (controls->team == 0) {
                 if (controls->active == 0 || session->mode == 3) {
                     func_8044A37C(*arg0);

@@ -20,29 +20,9 @@ typedef struct {
     s32 flags;
 } Body;
 
-typedef struct {
-    char pad0[0xE4];
-    u16 kind;
-    char padE6[0x10E - 0xE6];
-    s8 idle;
-    char pad10F[0x650 - 0x10F];
-    s16 mode;
-    char pad652[0x658 - 0x652];
-    f32 swimTime;
-    char pad65C[0x6C0 - 0x65C];
-    f32 climb;
-    char pad6C4[0x6C8 - 0x6C4];
-    f32 speed;
-    char pad6CC[0x730 - 0x6CC];
-    f32 sway[3];
-    char pad73C[0x840 - 0x73C];
-    s32 surfaced;
-    char pad844[0x86C - 0x844];
-    s32 animation;
-    char pad870[0x938 - 0x870];
-    char strokes[0x11C4 - 0x938];
-    f32 soundTime;
-} Player;
+#define MATCHKIT_KNOWN_Body 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x22];
@@ -64,21 +44,21 @@ extern f32 func_802745D4(f32);
 void func_80224F38(Player *player, Body *body) {
     s32 idle;
 
-    if (player->speed == 0.0f) {
-        player->mode = 0xB;
+    if (player->views5E8.view6C8_57.speed == 0.0f) {
+        player->views5E8.view650_18.mode = 0xB;
     } else {
-        player->mode = 0xC;
+        player->views5E8.view650_18.mode = 0xC;
     }
     func_802231B0(player, body, &D_800CE874);
-    player->sway[0] = 2.0f * func_802BC200(player->swimTime * 0.06981318f) * 0.017453294f;
-    player->sway[1] = 2.0f * func_802BC200(player->swimTime * 0.08726647496f) * 0.017453294f;
-    player->sway[2] = 2.0f * func_802BC200(player->swimTime * 0.10471976548f) * 0.017453294f;
+    player->views5E8.view730_79.sway[0] = 2.0f * func_802BC200(player->views5E8.view658_24.swimTime * 0.06981318f) * 0.017453294f;
+    player->views5E8.view730_79.sway[1] = 2.0f * func_802BC200(player->views5E8.view658_24.swimTime * 0.08726647496f) * 0.017453294f;
+    player->views5E8.view730_79.sway[2] = 2.0f * func_802BC200(player->views5E8.view658_24.swimTime * 0.10471976548f) * 0.017453294f;
     func_802238BC(player, body, &D_800CE850);
-    if (!(body->flags & 0x1000) && 2.0f < player->swimTime) {
-        func_80218464(player->strokes);
+    if (!(body->flags & 0x1000) && 2.0f < player->views5E8.view658_24.swimTime) {
+        func_80218464(player->views5E8.view938_129.strokes);
         body->stroke = 0;
         func_8025DE74(0x2DE, body->x, body->y, body->z, 0, -1);
-        player->surfaced = 0;
+        player->views5E8.view840_118.surfaced = 0;
         if (body->flags & 3) {
             func_802227D0(player, body, 2);
         } else {
@@ -86,23 +66,23 @@ void func_80224F38(Player *player, Body *body) {
         }
     }
     idle = 0;
-    if (player->animation == 0x1144) {
-        idle = player->idle == 0;
+    if (player->views5E8.view86C_127.animation == 0x1144) {
+        idle = player->views1C.view10E_13.idle == 0;
     }
-    if (player->kind == D_800CE47C) {
-        player->animation = 0x8A2;
+    if (player->views1C.viewE4_7.kind == D_800CE47C) {
+        player->views5E8.view86C_127.animation = 0x8A2;
     } else if (!idle) {
-        if (1.024f <= player->climb) {
-            player->animation = 0x8A2;
-        } else if (player->climb <= -1.024f) {
-            player->animation = 0x8A7;
+        if (1.024f <= player->views5E8.view6C0_52.climb) {
+            player->views5E8.view86C_127.animation = 0x8A2;
+        } else if (player->views5E8.view6C0_52.climb <= -1.024f) {
+            player->views5E8.view86C_127.animation = 0x8A7;
         } else {
-            player->animation = 0x14;
+            player->views5E8.view86C_127.animation = 0x14;
         }
     }
-    player->soundTime += D_800D2988;
-    if (5.12f < player->speed && 45.0f < player->soundTime) {
-        player->soundTime = func_802745D4(15.0f);
+    player->views5E8.view11C4_144.soundTime += D_800D2988;
+    if (5.12f < player->views5E8.view6C8_57.speed && 45.0f < player->views5E8.view11C4_144.soundTime) {
+        player->views5E8.view11C4_144.soundTime = func_802745D4(15.0f);
         func_8025DE74(D_800CE850.strokeSound, body->x, body->y, body->z, 0, -1);
         func_8025DE74(0x2E0, body->x, body->y, body->z, 0, -1);
     }

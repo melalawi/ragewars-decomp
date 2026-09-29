@@ -10,12 +10,8 @@ typedef struct State {
 
 extern State D_801468A0;
 
-typedef struct Player {
-    char pad0[0x5D8];
-    unsigned char *info;
-    char pad5DC[0x16E0 - 0x5DC];
-    struct Player *next;
-} Player;
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct func_8022A67C_S1 func_8022A67C_S1;
 struct func_8022A67C_S1 {
@@ -37,8 +33,8 @@ int func_8022A67C(char *arg0) {
         return 0;
     }
     count = 0;
-    for (p = ((func_8022A67C_S1 *)(arg0))->unk20; p != 0; p = p->next) {
-        if (p->info[0x8E] == 1) {
+    for (p = ((func_8022A67C_S1 *)(arg0))->unk20; p != 0; p = p->views16E0.view16E0_1.next) {
+        if (p->views5D8.view5D8_5.info[0x8E] == 1) {
             count++;
         }
     }

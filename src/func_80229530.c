@@ -12,16 +12,9 @@ typedef struct {
     s32 maxAmmo[4];
 } Character;
 
-typedef struct {
-    char pad0[0x18];
-    Character *character;
-    char pad1C[0x5D4 - 0x1C];
-    s32 profile;
-    char pad5D8[0x5F4 - 0x5D8];
-    s16 ammo[4];
-    char pad5FC[0x1450 - 0x5FC];
-    s32 unlimited;
-} Player;
+#define MATCHKIT_KNOWN_Character 1
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x14];
@@ -49,16 +42,16 @@ static inline s32 max_ammo(Player *player, s32 type) {
         return 0;
     }
     if (D_801462D5 != 1) {
-        max = player->character->maxAmmo[type];
+        max = player->views18.view18_4.character->maxAmmo[type];
     } else {
         max = D_800CE3E8[type];
-        if (player->unlimited == 0) {
+        if (player->views1450.view1450_3.unlimited == 0) {
             if (type == 0) {
-                max += D_80102B00[player->profile].bonus0;
+                max += D_80102B00[player->views1C.view5D4_47.profile].bonus0;
             } else if (type == 1) {
-                max += D_80102B00[player->profile].bonus1;
+                max += D_80102B00[player->views1C.view5D4_47.profile].bonus1;
             } else if (type == 2) {
-                max += D_80102B00[player->profile].bonus2;
+                max += D_80102B00[player->views1C.view5D4_47.profile].bonus2;
             }
         }
     }
@@ -70,7 +63,7 @@ void func_80229530(Player *player, s32 type, s32 amount) {
     char message[32];
 
     if (amount != 0) {
-        player->ammo[type] = MIN(player->ammo[type] + amount, max_ammo(player, type));
+        player->views5E8.view5F4_12.ammo[type] = MIN(player->views5E8.view5F4_12.ammo[type] + amount, max_ammo(player, type));
         func_802A166C(amount, number);
         func_802A125C(message, number);
         func_802A12E8(message, D_800C7D40);
