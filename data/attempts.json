@@ -21077,7 +21077,7 @@
    "verdict": "Landed"
   },
   "func_802A5588": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Attaches a sound emitter to an actor, reusing one tracking a shared-kind owner or allocating and initialising one, then counts it and creates a linked marker; remaining differences are register choice in the search loop and schedule of the pitch and effect loads, 16 words.",
@@ -21094,8 +21094,124 @@
      "recorded_at": "2026-09-19T17:38:31Z",
      "trials": 8,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T094258Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 109,
+       "inserted": 0,
+       "missing": 1,
+       "needs": [
+        {
+         "address": "0x800CDBD0",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D2E40"
+        }
+       ],
+       "of": 125,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 10,
+        "reordered": 5
+       }
+      },
+      "eu": {
+       "identical": 109,
+       "inserted": 0,
+       "missing": 1,
+       "needs": [
+        {
+         "address": "0x800CE7B0",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D2E40"
+        }
+       ],
+       "of": 125,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 10,
+        "reordered": 5
+       }
+      },
+      "eu-mul": {
+       "identical": 109,
+       "inserted": 0,
+       "missing": 1,
+       "needs": [
+        {
+         "address": "0x800CF180",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D2E40"
+        }
+       ],
+       "of": 125,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 10,
+        "reordered": 5
+       }
+      },
+      "us": {
+       "identical": 109,
+       "inserted": 0,
+       "missing": 1,
+       "needs": [
+        {
+         "address": "0x800CDAE0",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D2E40"
+        }
+       ],
+       "of": 125,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 10,
+        "reordered": 5
+       }
+      },
+      "us-rev1": {
+       "identical": 109,
+       "inserted": 0,
+       "missing": 1,
+       "of": 125,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 10,
+        "reordered": 5
+       }
+      }
+     },
+     "measurement": {
+      "identical": 109,
+      "inserted": 0,
+      "missing": 1,
+      "of": 125
+     },
+     "note": "Tried draft matches 109/125 on all five cartridges with 0 inserted and 1 missing; remaining differences are 10 register-only and 5 reordered instructions, a permute case. Struct fields replace all constant-offset raw access.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T09:46:03Z",
+     "retained": "artifacts/retained-candidates/func_802A5588/3.c",
+     "retained_sha256": "a8f3f19ab5f79361f7158cb735ff8cc06fbdd6c0173294a358b934b465b680b0"
     }
    ],
+   "best": {
+    "identical": 109,
+    "inserted": 0,
+    "missing": 1,
+    "of": 125
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 16,
    "verdict": "Open"
   },
@@ -27071,7 +27187,7 @@
    "verdict": "Landed"
   },
   "func_80407578": {
-   "attempt_count": 1,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Writes the save image to the pak (free space and note checks, free extension, func_80404958) or prompts, then releases save buffers; target spills the channel and copies branch results at the join, not reproduced",
@@ -27080,8 +27196,279 @@
      "recorded_at": "2026-09-16T21:41:54Z",
      "trials": 3,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T093238Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0044EEAC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        }
+       ],
+       "of": 116,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 113,
+       "inserted": 0,
+       "missing": 2,
+       "needs": [
+        {
+         "address": "0x0045017C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        },
+        {
+         "address": "0x80130018",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_80152208"
+        }
+       ],
+       "of": 124,
+       "result": "differs",
+       "typed": {
+        "imm": 1,
+        "missing": 2,
+        "reg": 3,
+        "reloc": 1,
+        "reordered": 4
+       }
+      },
+      "eu-mul": {
+       "identical": 113,
+       "inserted": 0,
+       "missing": 2,
+       "needs": [
+        {
+         "address": "0x004502AC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        },
+        {
+         "address": "0x800DDEBC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E25B4"
+        },
+        {
+         "address": "0x800DDED4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E25D4"
+        },
+        {
+         "address": "0x80120018",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_80152208"
+        }
+       ],
+       "of": 124,
+       "result": "differs",
+       "typed": {
+        "imm": 1,
+        "missing": 2,
+        "reg": 3,
+        "reloc": 1,
+        "reordered": 4
+       }
+      },
+      "us": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0044F01C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        }
+       ],
+       "of": 116,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "of": 116,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 116,
+      "inserted": 0,
+      "missing": 0,
+      "of": 116
+     },
+     "note": "Closest trial matches us-rev1, us and de (116/116 each); EU and EU-MUL reach 113/124 with two target-only words in locale-table indexing (second shift at +0x0F4 and size move at +0x114), plus register/order differences and unresolved D_80152208 and table symbol placements. This improves the earlier 53/116 draft and adds the EU-only indexed table path.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T09:41:16Z",
+     "retained": "artifacts/retained-candidates/func_80407578/2.c",
+     "retained_sha256": "ced5b6a0847f705f1c720f33e2f93a45c00c3257aee958955738b619e1c851b0"
+    },
+    {
+     "assignment": "20260929T094356Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0044EEAC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        }
+       ],
+       "of": 116,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 114,
+       "inserted": 2,
+       "missing": 2,
+       "needs": [
+        {
+         "address": "0x0045017C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        }
+       ],
+       "of": 124,
+       "result": "differs",
+       "typed": {
+        "changed": 1,
+        "inserted": 2,
+        "missing": 2,
+        "reg": 6,
+        "reordered": 1
+       }
+      },
+      "eu-mul": {
+       "identical": 114,
+       "inserted": 2,
+       "missing": 2,
+       "needs": [
+        {
+         "address": "0x004502AC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        },
+        {
+         "address": "0x800DDEBC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E25B4"
+        },
+        {
+         "address": "0x800DDED4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E25D4"
+        }
+       ],
+       "of": 124,
+       "result": "differs",
+       "typed": {
+        "changed": 1,
+        "inserted": 2,
+        "missing": 2,
+        "reg": 6,
+        "reordered": 1
+       }
+      },
+      "us": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0044F01C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        }
+       ],
+       "of": 116,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "of": 116,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 116,
+      "inserted": 0,
+      "missing": 0,
+      "of": 116
+     },
+     "note": "EU and EU-MUL remain nonidentical. Reusing the single locale index misses the target's second shift and argument move; recomputing locale->index for the second table access produces two extra loads and still differs. Getting the target's separate scaled values without duplicated loads needs an unapproved code-shaping trick; trial 2 is the closest candidate.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T09:45:12Z",
+     "retained": "artifacts/retained-candidates/func_80407578/3.c",
+     "retained_sha256": "90676ee5ec66fe892d0adb4af22550d57d961cd9ffe31c7b57caf2e4a51e5b24"
     }
    ],
+   "best": {
+    "identical": 116,
+    "inserted": 0,
+    "missing": 0,
+    "of": 116
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 102,
    "verdict": "Open"
   },
