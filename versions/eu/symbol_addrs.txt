@@ -7092,3 +7092,7 @@ func_802B2590 = 0x802AD760; // placed by decomp --version eu split out --cut fun
 func_802B2A10 = 0x802ADBE0; // placed by decomp --version eu split out --cut func_802B2590@0x802AD760 --cut func_802B2A10@0x802ADBE0 --apply
 D_800D7B40 = 0x800E36A4; // type:u32 derived by the trial of func_8043D4E0
 D_800D7B44 = 0x800E36B4; // type:u32 derived by the trial of func_8043D4E0
+D_800C975C = 0x800C491C; // type:u32 derived by the trial of func_8026C484
+D_800C9770 = 0x800C4930; // type:u32 derived by the trial of func_8026C484
+D_800C9784 = 0x800C4944; // type:u32 derived by the trial of func_8026C484
+D_800C9F78 = 0x800C5138; // type:u32 derived by the trial of func_80284200

@@ -399,52 +399,6 @@
     ]
    },
    {
-    "bytes": 144,
-    "rom": "0x1850A8",
-    "sources": [
-     "func_802A2B50",
-     "func_80412624",
-     "func_80419ACC",
-     "func_8041A01C",
-     "func_8041A510",
-     "func_8041A7A4",
-     "func_8041ADFC",
-     "func_8041B3C0",
-     "func_8041B9F0",
-     "func_8041C5EC",
-     "func_8041DF24",
-     "func_80420E00",
-     "func_80421A88",
-     "func_80421E00",
-     "func_8042247C",
-     "func_8042359C",
-     "func_80423930",
-     "func_80423B88",
-     "func_80424528",
-     "func_80429058",
-     "func_804290E8",
-     "func_8042931C",
-     "func_80429B74",
-     "func_8042BCB0",
-     "func_8042DB38",
-     "func_8042DFF0",
-     "func_80435C54",
-     "func_80435F70",
-     "func_8043630C",
-     "func_80436634",
-     "func_80436FE4",
-     "func_80437454",
-     "func_80437868",
-     "func_80437B98",
-     "func_8043905C",
-     "func_80439390",
-     "func_8043962C",
-     "func_80439938",
-     "func_8043A014",
-     "func_8043C1D0"
-    ]
-   },
-   {
     "bytes": 152,
     "rom": "0x1882A8",
     "sources": [
@@ -615,13 +569,6 @@
     "rom": "0x1A8ADC",
     "sources": [
      "func_80442C4C"
-    ]
-   },
-   {
-    "bytes": 912,
-    "rom": "0x1B8468",
-    "sources": [
-     "func_80440618"
     ]
    }
   ],
@@ -1526,20 +1473,6 @@
     ]
    },
    {
-    "bytes": 16,
-    "rom": "0xB7534",
-    "sources": [
-     "func_8024BE1C"
-    ]
-   },
-   {
-    "bytes": 16,
-    "rom": "0xB817C",
-    "sources": [
-     "func_8024BE1C"
-    ]
-   },
-   {
     "bytes": 452,
     "rom": "0xB8B30",
     "sources": [
@@ -1617,52 +1550,6 @@
     "sources": [
      "func_804143E0",
      "func_80414404"
-    ]
-   },
-   {
-    "bytes": 144,
-    "rom": "0x10F55C",
-    "sources": [
-     "func_802A2B50",
-     "func_80412624",
-     "func_80419ACC",
-     "func_8041A01C",
-     "func_8041A510",
-     "func_8041A7A4",
-     "func_8041ADFC",
-     "func_8041B3C0",
-     "func_8041B9F0",
-     "func_8041C5EC",
-     "func_8041DF24",
-     "func_80420E00",
-     "func_80421A88",
-     "func_80421E00",
-     "func_8042247C",
-     "func_8042359C",
-     "func_80423930",
-     "func_80423B88",
-     "func_80424528",
-     "func_80429058",
-     "func_804290E8",
-     "func_8042931C",
-     "func_80429B74",
-     "func_8042BCB0",
-     "func_8042DB38",
-     "func_8042DFF0",
-     "func_80435C54",
-     "func_80435F70",
-     "func_8043630C",
-     "func_80436634",
-     "func_80436FE4",
-     "func_80437454",
-     "func_80437868",
-     "func_80437B98",
-     "func_8043905C",
-     "func_80439390",
-     "func_8043962C",
-     "func_80439938",
-     "func_8043A014",
-     "func_8043C1D0"
     ]
    },
    {
@@ -2219,13 +2106,6 @@
      "func_804435BC",
      "func_804435C4",
      "func_804435CC"
-    ]
-   },
-   {
-    "bytes": 12,
-    "rom": "0x4F444",
-    "sources": [
-     "func_8024E854"
     ]
    },
    {
@@ -3431,57 +3311,11 @@
      "func_8041B450",
      "func_8041BA80"
     ]
-   },
-   {
-    "bytes": 144,
-    "rom": "0x18D118",
-    "sources": [
-     "func_802A2B50",
-     "func_80412624",
-     "func_80419ACC",
-     "func_8041A01C",
-     "func_8041A510",
-     "func_8041A7A4",
-     "func_8041ADFC",
-     "func_8041B3C0",
-     "func_8041B9F0",
-     "func_8041C5EC",
-     "func_8041DF24",
-     "func_80420E00",
-     "func_80421A88",
-     "func_80421E00",
-     "func_8042247C",
-     "func_8042359C",
-     "func_80423930",
-     "func_80423B88",
-     "func_80424528",
-     "func_80429058",
-     "func_804290E8",
-     "func_8042931C",
-     "func_80429B74",
-     "func_8042BCB0",
-     "func_8042DB38",
-     "func_8042DFF0",
-     "func_80435C54",
-     "func_80435F70",
-     "func_8043630C",
-     "func_80436634",
-     "func_80436FE4",
-     "func_80437454",
-     "func_80437868",
-     "func_80437B98",
-     "func_8043905C",
-     "func_80439390",
-     "func_8043962C",
-     "func_80439938",
-     "func_8043A014",
-     "func_8043C1D0"
-    ]
    }
   ]
  },
  "date": "2026-09-29",
- "reason": "landed func_80200568, func_80285150, func_8043D4E0",
+ "reason": "landed func_8026C484, func_80284200, func_8029D984, func_80419D04, func_8044044C",
  "schema": "decomp.drift.v2",
  "written_by": "land run"
 }
