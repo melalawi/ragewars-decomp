@@ -5864,7 +5864,7 @@
     {
       "function": "func_8025C67C",
       "path": "src/func_8025C67C.c",
-      "sha256": "5d036a58b1b7a1f1c70b07225035eb39f8f2c2577e735a948bae100b7e6b7d35"
+      "sha256": "5fee72c9af8aa0a434ba63b56f5bc33035e778c2ad54c86b0a491abcafae6227"
     },
     {
       "function": "func_8025C6F4",
@@ -5874,7 +5874,7 @@
     {
       "function": "func_8025C844",
       "path": "src/func_8025C844.c",
-      "sha256": "9dd2b4635b052fdbc31935a27960e847744ca736b50186939dd82a27edebb757"
+      "sha256": "0c6d1cce110249aba3f4360085d6f93f4d9c84a0968e73b65cec4d1139cffeca"
     },
     {
       "function": "func_8025C8E0",
@@ -16994,7 +16994,7 @@
     {
       "function": "func_804387F4",
       "path": "src/func_804387F4.c",
-      "sha256": "7ae7c3e1196c19699aa1d9505e7c8d7c1a430a1ad2fda2b213365c8819bad0b7"
+      "sha256": "8dced77b89a9a2f0efce99cb141c31f452686c98c9097543fad7c1a8a6fbe3a0"
     },
     {
       "function": "func_80438A08",
