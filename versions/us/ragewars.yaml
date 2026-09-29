@@ -360,7 +360,7 @@ segments:
       - [0x013890, asm, nonmatchings/func_80212C90]
       - [0x0138C4, asm, nonmatchings/func_80212CC4]
       - [0x013958, asm, nonmatchings/D_80212D58]
-      - [0x013960, asm, nonmatchings/func_80212D58]
+      - [0x013960, asm, nonmatchings/func_80212D60]
       - [0x013994, asm, nonmatchings/func_80212D94]
       - [0x013A04, asm, nonmatchings/func_80212E04]
       - [0x013BBC, asm, nonmatchings/func_80212FBC]

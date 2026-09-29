@@ -2817,7 +2817,7 @@
    "verdict": "Open"
   },
   "func_80211120": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 852,
@@ -2827,8 +2827,37 @@
      "recorded_at": "2026-09-16T22:00:52Z",
      "trials": 0,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T021835Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 212,
+       "inserted": 0,
+       "missing": 0,
+       "of": 212,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 212,
+      "inserted": 0,
+      "missing": 0,
+      "of": 212
+     },
+     "note": "Runs an AI rider's close attack state: refreshes its view, re-checks line of sight every fourth frame, backs off when its target is out of its layer or too close, re-rolls its strafe pattern and steers toward the target.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:00Z"
     }
    ],
+   "best": {
+    "identical": 212,
+    "inserted": 0,
+    "missing": 0,
+    "of": 212
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_8021111C",
@@ -2838,7 +2867,7 @@
     }
    ],
    "positional_best_differing_words": 1,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80211A7C": {
    "attempt_count": 1,
@@ -2949,7 +2978,7 @@
    "verdict": "Open"
   },
   "func_80212D60": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "measured_bytes": 60,
@@ -2976,8 +3005,35 @@
      "retained": "artifacts/retained-candidates/func_80212D60/2.c",
      "retained_sha256": "994dfaf66276f73a9b757c1688ecc0a6a6c9f68b960efe56f10bc999885bb953",
      "trials": 1
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 13,
+       "inserted": 0,
+       "missing": 0,
+       "of": 13,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 13,
+      "inserted": 0,
+      "missing": 0,
+      "of": 13
+     },
+     "note": "Resets a computer player's brain: clears its word at 0x220, runs func_80209988 on it, then clears its word at 0x2FC.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:01Z"
     }
    ],
+   "best": {
+    "identical": 13,
+    "inserted": 0,
+    "missing": 0,
+    "of": 13
+   },
    "budget_failed_attempts": 10,
    "moved_from": [
     {
@@ -2988,7 +3044,7 @@
     }
    ],
    "positional_best_differing_words": 2,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80212E04": {
    "attempt_count": 0,
@@ -7847,7 +7903,7 @@
    "verdict": "Open"
   },
   "func_8023B9A0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 720,
@@ -7857,8 +7913,115 @@
      "recorded_at": "2026-09-17T02:17:54Z",
      "trials": 0,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T021835Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "eu": {
+       "identical": 177,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x00176000",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0016E000",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_16E000"
+        },
+        {
+         "address": "0x0023C934",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0023C914",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_23C914"
+        },
+        {
+         "address": "0x00052BF0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x00052860",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_52860"
+        }
+       ],
+       "of": 177,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 177,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x00164000",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0016E000",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_16E000"
+        },
+        {
+         "address": "0x0023C904",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0023C914",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_23C914"
+        },
+        {
+         "address": "0x00051A50",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x00052860",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_52860"
+        }
+       ],
+       "of": 177,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 177,
+       "inserted": 0,
+       "missing": 0,
+       "of": 177,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 177,
+      "inserted": 0,
+      "missing": 0,
+      "of": 177
+     },
+     "note": "Initializes the game state: clears the whole state block and fills its slot and lookup tables with 0xFF, resets the 24 player entries and queue slots, sets up the three lists and the stream descriptor for the ROM data at D_16E000, loads the expansion-pak data when more memory is present, and builds the eight channels, the message pool and the sprite queue.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:01Z"
     }
    ],
+   "best": {
+    "identical": 177,
+    "inserted": 0,
+    "missing": 0,
+    "of": 177
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_8023B994",
@@ -7868,7 +8031,7 @@
     }
    ],
    "positional_best_differing_words": 180,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8023BD24": {
    "attempt_count": 1,
@@ -21158,7 +21321,7 @@
    "verdict": "Open"
   },
   "func_802BBEC0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 432,
@@ -21168,7 +21331,38 @@
      "recorded_at": "2026-09-12T04:31:26Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 107,
+       "inserted": 0,
+       "missing": 0,
+       "of": 107,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 107,
+      "inserted": 0,
+      "missing": 0,
+      "of": 107
+     },
+     "note": "guMtxIdentF",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:01Z"
     }
+   ],
+   "best": {
+    "identical": 107,
+    "inserted": 0,
+    "missing": 0,
+    "of": 107
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "copy-only local row stands in for the inlined guPerspectiveF parameter and steers the matrix pointer register"
    ],
    "moved_from": [
     {
@@ -21179,7 +21373,7 @@
     }
    ],
    "positional_best_differing_words": 107,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_802BC06C": {
    "attempt_count": 1,
@@ -34182,7 +34376,7 @@
    "verdict": "Open"
   },
   "func_80422510": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 540,
@@ -34192,8 +34386,36 @@
      "recorded_at": "2026-09-17T02:29:00Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 134,
+       "inserted": 0,
+       "missing": 0,
+       "of": 134,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 134,
+      "inserted": 0,
+      "missing": 0,
+      "of": 134
+     },
+     "note": "Options screen state words: 0 screen, 4 label, 8 slider, 0xC/0x10/0x14 the three option lists, 0x20 selection, 0x24 state.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:01Z"
     }
    ],
+   "best": {
+    "identical": 134,
+    "inserted": 0,
+    "missing": 0,
+    "of": 134
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_8042250C",
@@ -34213,7 +34435,7 @@
     }
    ],
    "positional_best_differing_words": 135,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80422728": {
    "attempt_count": 2,
@@ -36065,7 +36287,7 @@
    "verdict": "Open"
   },
   "func_804293B0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 760,
@@ -36075,8 +36297,36 @@
      "recorded_at": "2026-09-17T02:50:05Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 189,
+       "inserted": 0,
+       "missing": 0,
+       "of": 189,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 189,
+      "inserted": 0,
+      "missing": 0,
+      "of": 189
+     },
+     "note": "Opens screen D_800E4EF0: shows the course options that match the current mode, creates its four toggles and the selector, and fills its two lists.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:02Z"
     }
    ],
+   "best": {
+    "identical": 189,
+    "inserted": 0,
+    "missing": 0,
+    "of": 189
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_804293AC",
@@ -36086,7 +36336,7 @@
     }
    ],
    "positional_best_differing_words": 190,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_804296A4": {
    "attempt_count": 1,
@@ -38513,7 +38763,7 @@
    "verdict": "Landed"
   },
   "func_804308B8": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Handles player setup menu events and advances selection state; recovered source retains 1680 differing words and produces 5928 of 6780 bytes, a structural reconstruction residue.",
@@ -38522,10 +38772,45 @@
      "recorded_at": "2026-09-20T01:37:53Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "us": {
+       "identical": 1695,
+       "inserted": 0,
+       "missing": 0,
+       "of": 1695,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 1695,
+       "inserted": 0,
+       "missing": 0,
+       "of": 1695,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 1695,
+      "inserted": 0,
+      "missing": 0,
+      "of": 1695
+     },
+     "note": "Steps player arg2's menu state machine at 0x58 of its 0xB68-byte record in the block D_800E54A4 on the event func_8041B890 reports: each state accepts its events, moves to the next state (by the game mode at 0x54 where it matters), updates the player's name records, and refreshes the player through func_80432488. Returns zero.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:02Z"
     }
    ],
+   "best": {
+    "identical": 1695,
+    "inserted": 0,
+    "missing": 0,
+    "of": 1695
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 1680,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80432334": {
    "attempt_count": 1,
@@ -41337,7 +41622,7 @@
    "verdict": "Open"
   },
   "func_804390F0": {
-   "attempt_count": 3,
+   "attempt_count": 4,
    "attempts": [
     {
      "measured_bytes": 212,
@@ -41373,8 +41658,42 @@
      "retained": "artifacts/retained-candidates/func_804390F0/3.c",
      "retained_sha256": "01de507c4967c1d0ba30996e1231e3c297189d754d3777c8620f680127651479",
      "trials": 1
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "eu": {
+       "identical": 52,
+       "inserted": 0,
+       "missing": 0,
+       "of": 52,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 52,
+       "inserted": 0,
+       "missing": 0,
+       "of": 52,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 52,
+      "inserted": 0,
+      "missing": 0,
+      "of": 52
+     },
+     "note": "Allocates the HUD-cue object D_800E58A0, opens its handle for 0x6C/0x6D, starts its two timed cues at the volumes in D_801462E0 and its ambient loop, then arms state 3; returns 0.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:02Z"
     }
    ],
+   "best": {
+    "identical": 52,
+    "inserted": 0,
+    "missing": 0,
+    "of": 52
+   },
    "budget_failed_attempts": 10,
    "moved_from": [
     {
@@ -41385,7 +41704,7 @@
     }
    ],
    "positional_best_differing_words": 5,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_804391C0": {
    "attempt_count": 1,
@@ -41762,7 +42081,7 @@
    "verdict": "Open"
   },
   "func_804396C0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 284,
@@ -41772,8 +42091,36 @@
      "recorded_at": "2026-09-16T20:58:40Z",
      "trials": 6,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 70,
+       "inserted": 0,
+       "missing": 0,
+       "of": 70,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 70,
+      "inserted": 0,
+      "missing": 0,
+      "of": 70
+     },
+     "note": "Opens screen D_800E5950: resets the game objects and course state, clears byte 0x78 of the eight player records, opens window 0x397, sets settings bytes 0x24/0x25 to 10 and resets the four player slots.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:02Z"
     }
    ],
+   "best": {
+    "identical": 70,
+    "inserted": 0,
+    "missing": 0,
+    "of": 70
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_804396BC",
@@ -41783,7 +42130,7 @@
     }
    ],
    "positional_best_differing_words": 10,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_804397D8": {
    "attempt_count": 1,
@@ -43847,7 +44194,7 @@
    "verdict": "Landed"
   },
   "func_8043D164": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "assignment": "20260928T120656Z-d4",
@@ -43973,6 +44320,56 @@
      "recorded_at": "2026-09-29T01:15:58Z",
      "retained": "artifacts/retained-candidates/func_8043D164/2.c",
      "retained_sha256": "5b6dc3a883c3971c94105e80f077d22c24396c8652e8b27b083514693c9d8d82"
+    },
+    {
+     "assignment": "20260929T020757Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 63,
+       "inserted": 0,
+       "missing": 0,
+       "of": 63,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 63,
+       "inserted": 0,
+       "missing": 0,
+       "of": 63,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 63,
+       "inserted": 0,
+       "missing": 0,
+       "of": 63,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 63,
+       "inserted": 0,
+       "missing": 0,
+       "of": 63,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 63,
+       "inserted": 0,
+       "missing": 0,
+       "of": 63,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 63,
+      "inserted": 0,
+      "missing": 0,
+      "of": 63
+     },
+     "note": "Steps index through the eleven entries (wrapping 10 to 0 and below 0 to 10), before the test when mode is 0 and after it otherwise, until one whose flag bit is set in D_801462CC; returns that index, or -1 after eleven tries.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:02Z"
     }
    ],
    "best": {
@@ -43982,7 +44379,10 @@
     "of": 63
    },
    "budget_failed_attempts": 10,
-   "verdict": "Open"
+   "fakematch": [
+    "copy-only local, set inside the loop, orders the hoisted flag and jump-table addresses"
+   ],
+   "verdict": "Landed"
   },
   "func_8043D260": {
    "attempt_count": 1,
@@ -50187,6 +50587,48 @@
     }
    ],
    "positional_best_differing_words": 0,
+   "verdict": "Landed"
+  },
+  "func_80448470": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T022814Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "eu-mul": {
+       "identical": 95,
+       "inserted": 0,
+       "missing": 0,
+       "of": 95,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 95,
+       "inserted": 0,
+       "missing": 0,
+       "of": 95,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 95,
+      "inserted": 0,
+      "missing": 0,
+      "of": 95
+     },
+     "note": "Polls the controllers under SI access: sends a status request and reads the replies through queue mq, retrying up to three times while a channel lacks status bit 2, then stores in *bitpattern the channels that answered without error with status bit 0 set; returns the read DMA result.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:44:03Z"
+    }
+   ],
+   "best": {
+    "identical": 95,
+    "inserted": 0,
+    "missing": 0,
+    "of": 95
+   },
+   "budget_failed_attempts": 10,
    "verdict": "Landed"
   },
   "func_804485EC": {
