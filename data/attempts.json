@@ -25127,7 +25127,7 @@
    "verdict": "Landed"
   },
   "func_804082FC": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Searches controller pak slots and selects a save or error screen; the recovered typed draft differs in 183 words including prologue and search-loop allocation.",
@@ -25136,10 +25136,80 @@
      "recorded_at": "2026-09-19T18:13:14Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T025038Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 185,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0044EEF4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FB44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FB44"
+        }
+       ],
+       "of": 185,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 185,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0044F064",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FB44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FB44"
+        }
+       ],
+       "of": 185,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 185,
+       "inserted": 0,
+       "missing": 0,
+       "of": 185,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 185,
+      "inserted": 0,
+      "missing": 0,
+      "of": 185
+     },
+     "note": "Searches controller pak slots for the pak menu: takes the channel (the cycling one D_800E28C8 or the menu slot's) and returns 1 (setting D_80153784) when func_80406178 takes over; with a note search pending (D_8015377C) it shows the notes through func_80407290; otherwise it looks for the game's note (D_800D7704) among the channel's 16 notes and shows the found prompt or the create screen func_80407578; when cycling, it advances D_800E28C8 to the next channel whose pak is present (-1 and a failure flag when none) and retries it, returning 0 after func_80405F48 when nothing answers.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T03:16:01Z"
     }
    ],
+   "best": {
+    "identical": 185,
+    "inserted": 0,
+    "missing": 0,
+    "of": 185
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "flag local keeps the found result in v0"
+   ],
    "positional_best_differing_words": 183,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_804085E0": {
    "attempt_count": 2,
@@ -38866,6 +38936,48 @@
     "copy-only local, set inside the draw loop, steers the base register"
    ],
    "positional_best_differing_words": 42,
+   "verdict": "Landed"
+  },
+  "func_8042F130": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T025155Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "eu": {
+       "identical": 534,
+       "inserted": 0,
+       "missing": 0,
+       "of": 534,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 534,
+       "inserted": 0,
+       "missing": 0,
+       "of": 534,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 534,
+      "inserted": 0,
+      "missing": 0,
+      "of": 534
+     },
+     "note": "Creates the match setup block D_800E54A4 for screen arg0: allocates and clears it, loads its sprites and centres the two banner rows, links every player slot, shows the header for the game mode, resets each player's menu state, records and name entries, then starts each player in the state the mode needs (team handoff for mode 5, memory-card check for mode 6, the host for mode 7) and starts the menu music. Returns zero.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T03:16:01Z"
+    }
+   ],
+   "best": {
+    "identical": 534,
+    "inserted": 0,
+    "missing": 0,
+    "of": 534
+   },
+   "budget_failed_attempts": 10,
    "verdict": "Landed"
   },
   "func_8042F988": {

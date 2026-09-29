@@ -6893,3 +6893,4 @@ D_8011F038 = 0x8011AF78; // type:u32 derived by the trial of func_8044C050
 D_28795C = 0x0028798C; // type:u32 derived by the trial of func_8044D9DC
 D_800CA300 = 0x800C5210; // type:u32 derived by the trial of func_8044D9DC
 func_802769D8 = 0x80276968; // placed by decomp land run
+D_44FB44 = 0x0044EEF4; // type:u32 derived by the trial of func_804082FC

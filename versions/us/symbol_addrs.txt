@@ -5784,3 +5784,4 @@ func_802C2320 = 0x802BD160; // placed by decomp --version us split out --functio
 D_16E000 = 0x00164000; // type:u32 derived by the trial of func_8023B9A0
 D_23C914 = 0x0023C904; // type:u32 derived by the trial of func_8023B9A0
 D_52860 = 0x00051A50; // type:u32 derived by the trial of func_8023B9A0
+D_44FB44 = 0x0044F064; // type:u32 derived by the trial of func_804082FC
