@@ -1,0 +1,216 @@
+typedef signed char s8;
+typedef unsigned char u8;
+typedef signed short s16;
+typedef unsigned short u16;
+typedef signed int s32;
+typedef unsigned int u32;
+typedef signed long long s64;
+typedef unsigned long long u64;
+typedef float f32;
+typedef double f64;
+#define NULL ((void *)0)
+/*
+ * This header contains macros emitted by m2c in "valid syntax" mode,
+ * which can be enabled by passing `--valid-syntax` on the command line.
+ *
+ * In this mode, unhandled types and expressions are emitted as macros so
+ * that the output is compilable without human intervention.
+ */
+
+#ifndef M2C_MACROS_H
+#define M2C_MACROS_H
+
+/* Unknown types */
+typedef s32 M2C_UNK;
+typedef s8  M2C_UNK8;
+typedef s16 M2C_UNK16;
+typedef s32 M2C_UNK32;
+typedef s64 M2C_UNK64;
+
+/* Unknown field access, like `*(type_ptr) &expr->unk_offset` */
+#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
+
+/* Bitwise (reinterpret) cast */
+#define M2C_BITWISE(type, expr) ((type)(expr))
+
+/* Unaligned reads */
+#define M2C_LWL(expr) (expr)
+#define M2C_FIRST3BYTES(expr) (expr)
+#define M2C_UNALIGNED32(expr) (expr)
+
+/* Unhandled instructions */
+#define M2C_ERROR(desc) (0)
+#define M2C_TRAP_IF(cond) (0)
+#define M2C_BREAK() (0)
+#define M2C_SYNC() (0)
+#define M2C_DCACHE_CLEAN(addr) (0)
+#define M2C_DCACHE_INVALIDATE(addr) (0)
+#define M2C_DCACHE_CLEAN_INVALIDATE(addr) (0)
+#define M2C_DCACHE_BLOCK_SETZERO(addr) (0)
+#define M2C_DCACHE_BLOCK_SETZERO_LOCKED(addr) (0)
+#define M2C_ICACHE_INVALIDATE(addr) (0)
+#define M2C_PREFETCH(addr) (0)
+#define M2C_PREFETCH_STORE(addr) (0)
+
+#define GLUE_F64(a, b) (0.0)
+#define MULT_HI(a, b) (0)
+#define MULTU_HI(a, b) (0)
+#define DMULT_HI(a, b) (0)
+#define DMULTU_HI(a, b) (0)
+#define CLZ(x) (0)
+#define REVERSE_BITS(x) (0)
+#define ROTATE_RIGHT(x, shift) (0)
+#define ARM_RRX(x, carry) (0)
+#define BSWAP32(x) (0)
+#define BSWAP16(x) (0)
+#define BSWAP16X2(x) (0)
+
+/* Carry/overflow bits from partially-implemented instructions */
+#define M2C_CARRY 0
+#define M2C_OVERFLOW(a) (0)
+
+/* Memcpy patterns */
+#define M2C_MEMCPY_ALIGNED memcpy
+#define M2C_MEMCPY_UNALIGNED memcpy
+#define M2C_STRUCT_COPY memcpy
+
+/* Sh2 control register loads/stores */
+#define M2C_LOAD_SR() (0)
+#define M2C_LOAD_GBR() (0)
+#define M2C_LOAD_VBR() (0)
+#define M2C_STORE_SR(a)
+#define M2C_STORE_GBR(a)
+#define M2C_STORE_VBR(a)
+
+#define M2C_CMP_STR(a, b) (0)
+#define M2C_TAS_B(a) (0)
+
+#endif
+s32 func_80216BF4(void *, void *, void *);
+typedef struct func_8021CD70_S1 func_8021CD70_S1;
+typedef struct func_8021CD70_S2 func_8021CD70_S2;
+typedef struct func_8021CD70_S3 func_8021CD70_S3;
+typedef struct func_8021CD70_S4 func_8021CD70_S4;
+typedef struct func_8021CD70_S5 func_8021CD70_S5;
+typedef struct func_8021CD70_S6 func_8021CD70_S6;
+struct func_8021CD70_S1 {
+    char pad0[0x170];
+    s8 unk170;
+    char pad170[0x4BD];
+    s16 unk62E;
+};
+struct func_8021CD70_S2 {
+    char pad0[0x18];
+    func_8021CD70_S3 * unk18;
+    char pad18[0xE4];
+    s32 unk100;
+    char pad100[0x70];
+    s32 unk174;
+    char pad174[0x2C];
+    s8 unk1A4;
+    char pad1A4[0x437];
+    void* unk5DC;
+};
+struct func_8021CD70_S3 {
+    s32 unk0;
+    char pad0[0x10];
+    s32 unk14;
+};
+struct func_8021CD70_S4 {
+    char pad0[0x564];
+    s32 unk564;
+};
+struct func_8021CD70_S5 {
+    s32 unk0;
+    char pad0[0x10];
+    s32 unk14;
+};
+struct func_8021CD70_S6 {
+    char pad0[0x564];
+    s32 unk564;
+};
+
+/* Checks whether the player's current weapon can lock onto the target. */
+s32 func_8021CD70(func_8021CD70_S1 *arg0, func_8021CD70_S2 *arg1) {
+    s16 temp_a1;
+    s32 temp_v1_3;
+    s32 var_a0;
+    s32 var_v0;
+    s32 var_v0_2;
+    s16 shielded;
+    s8 temp_v1;
+    s8 temp_v1_2;
+    s8 temp_v1_4;
+    func_8021CD70_S5 *temp_a1_2;
+    func_8021CD70_S6 *temp_a1_3;
+    func_8021CD70_S4 *temp_v0;
+
+    temp_a1 = arg0->unk62E;
+    if (temp_a1 == 0x12) {
+        if (arg1->unk100 & 0x300000) {
+            if (arg1->unk18->unk14 & 0x20) {
+                temp_v1 = arg1->unk1A4;
+                if ((temp_v1 != 0x26) && (temp_v1 != temp_a1) && (arg1->unk174 != 0)) {
+                    temp_v0 = arg1->unk5DC;
+                    if (temp_v0 == NULL) {
+                        var_v0 = 0;
+                    } else {
+                        var_v0 = temp_v0->unk564 != 0;
+                    }
+                    if (var_v0 != 0) {
+                        return 0;
+                    }
+                    goto block_25;
+                }
+                /* Duplicate return node #35. Try simplifying control flow for better match */
+                return 0;
+            }
+            goto block_34;
+        }
+        temp_a1_2 = arg1->unk18;
+        if (temp_a1_2->unk0 == 1) {
+            if ((temp_a1_2->unk14 & 0x2400) == 0) {
+                goto block_34;
+            }
+            temp_v1_2 = arg1->unk1A4;
+            if (((temp_v1_2 == 0x21) || (temp_v1_2 == 0x34) ||
+                 (temp_v1_2 == 0x3C) || (temp_v1_2 == 0x3D)) ||
+                (arg1->unk174 == 0)) {
+                goto block_34;
+            }
+            goto block_25;
+        }
+        goto block_19;
+    }
+block_19:
+    temp_v1_3 = arg1->unk18->unk0;
+    if (temp_v1_3 == 4) goto block_24;
+    if (temp_v1_3 < 5) return 0;
+    if (temp_v1_3 == 7) goto block_34;
+    if (temp_v1_3 == 11) goto block_27;
+    return 0;
+block_24:
+    do {
+        if (arg1->unk174 == 0) goto block_34;
+    } while (0);
+block_25:
+    return func_80216BF4(arg0, &arg0->unk170, arg1) == 0;
+block_27:
+    temp_v1_4 = arg1->unk1A4;
+    var_a0 = 0;
+    if (temp_v1_4 == 0x26) goto block_33;
+    if (temp_v1_4 == 0x12) goto block_33;
+    if (arg1->unk174 == 0) goto block_33;
+    var_v0_2 = 0;
+    temp_a1_3 = arg1->unk5DC;
+    if (temp_a1_3 != NULL) {
+        /* FAKEMATCH: keep the shield predicate in a named flag for register selection. */
+        shielded = temp_a1_3->unk564 != 0;
+        var_v0_2 = shielded;
+    }
+    if (var_v0_2 == 0) var_a0 = 1;
+block_33:
+    return var_a0;
+block_34:
+    return 0;
+}
