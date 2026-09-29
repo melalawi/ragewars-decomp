@@ -3481,7 +3481,7 @@
   ]
  },
  "date": "2026-09-29",
- "reason": "landed func_8021CD70",
+ "reason": "landed func_802A373C, func_80422E54",
  "schema": "decomp.drift.v2",
  "written_by": "land run"
 }
