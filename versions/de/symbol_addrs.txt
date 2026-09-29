@@ -6907,3 +6907,7 @@ D_800D7BDC = 0x800D3BB0; // type:u32 derived by the trial of func_8043D2D0
 D_800D7BE0 = 0x800D3BB4; // type:u32 derived by the trial of func_8043D2D0
 D_800D7B38 = 0x800D3B0C; // type:u32 derived by the trial of func_8043D458
 D_800D7B3C = 0x800D3B10; // type:u32 derived by the trial of func_8043D458
+func_802B2590 = 0x802AD4C0; // placed by decomp --version de split out --cut func_802B2590@0x802AD4C0 --apply
+de_func_8045229C = 0x8045229C; // placed by decomp --version de split out --cut de_func_8045229C@0x8045229C --apply
+D_800D7B40 = 0x800D3B14; // type:u32 derived by the trial of func_8043D4E0
+D_800D7B44 = 0x800D3B18; // type:u32 derived by the trial of func_8043D4E0

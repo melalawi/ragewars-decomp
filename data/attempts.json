@@ -149,7 +149,7 @@
    "verdict": "Open"
   },
   "func_80200568": {
-   "attempt_count": 3,
+   "attempt_count": 4,
    "attempts": [
     {
      "note": "Waits until the PI status register at 0xA4600010 shows neither DMA nor I/O busy, then writes a word to a peripheral address. Every spelling fills the first branch's delay slot with the loop's lui where the cartridge leaves a nop; it sits among libultra routines compiled with a different scheduler.",
@@ -233,17 +233,67 @@
      "recorded_at": "2026-09-29T09:20:04Z",
      "retained": "artifacts/retained-candidates/func_80200568/3.c",
      "retained_sha256": "c3f7d1b50dff2115eff6a6cf1d6122bd5a10a63a00773a969f8c64698c90fd1e"
+    },
+    {
+     "assignment": "20260929T104327Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 0,
+       "of": 14,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 0,
+       "of": 14,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 0,
+       "of": 14,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 0,
+       "of": 14,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 0,
+       "of": 14,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 14,
+      "inserted": 0,
+      "missing": 0,
+      "of": 14
+     },
+     "note": "* This header contains macros emitted by m2c in \"valid syntax\" mode, * which can be enabled by passing `--valid-syntax` on the command line. * * In this mode, unhandled types and expressions are emitted as macros so * that the output is compilable without human intervention.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T11:31:57Z"
     }
    ],
    "best": {
-    "identical": 13,
+    "identical": 14,
     "inserted": 0,
-    "missing": 1,
+    "missing": 0,
     "of": 14
    },
    "budget_failed_attempts": 10,
    "positional_best_differing_words": 10,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_802005A0": {
    "attempt_count": 4,
@@ -16549,7 +16599,7 @@
    "verdict": "Landed"
   },
   "func_80285150": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Unpacks a resource into a new buffer (RNC method 1 or 2 depack, or a copy) and installs it with func_80253CB0; the 312-byte body is 2 words from the assembly, but try-candidate's interval is 320 bytes because function_intervals.all_intervals ignores the yaml-only 8-byte fragment func_80285288, so the candidate can never report byte-identical until that interval is fixed.",
@@ -16656,6 +16706,56 @@
      "recorded_at": "2026-09-29T07:59:45Z",
      "retained": "artifacts/retained-candidates/func_80285150/2.c",
      "retained_sha256": "00f34a16f3984c00293aa9d7938294427f4c7aeaebed230f63ab4f1f46efdea7"
+    },
+    {
+     "assignment": "20260929T095314Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "of": 78,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "of": 78,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "of": 78,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "of": 78,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "of": 78,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 78,
+      "inserted": 0,
+      "missing": 0,
+      "of": 78
+     },
+     "note": "* This header contains macros emitted by m2c in \"valid syntax\" mode, * which can be enabled by passing `--valid-syntax` on the command line. * * In this mode, unhandled types and expressions are emitted as macros so * that the output is compilable without human intervention.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T11:31:58Z"
     }
    ],
    "best": {
@@ -16666,7 +16766,7 @@
    },
    "budget_failed_attempts": 10,
    "positional_best_differing_words": 4,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80285290": {
    "attempt_count": 1,
@@ -48868,7 +48968,7 @@
    "verdict": "Landed"
   },
   "func_8043D4E0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "assignment": "20260929T075823Z-d1",
@@ -49024,16 +49124,154 @@
      "recorded_at": "2026-09-29T07:59:20Z",
      "retained": "artifacts/retained-candidates/func_8043D4E0/1.c",
      "retained_sha256": "ecf360ec1a9a4c04ce45f1ff9014cbaf5390a7b56fae0d35ccc4d73ffecaf307"
+    },
+    {
+     "assignment": "20260929T104318Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D3B14",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B40",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B40"
+        },
+        {
+         "address": "0x800D3B18",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B44"
+        }
+       ],
+       "of": 27,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800E36A4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B40",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B40"
+        },
+        {
+         "address": "0x800E36B4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B44"
+        }
+       ],
+       "of": 27,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DEB70",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B40",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B40"
+        },
+        {
+         "address": "0x800DEB7C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B44"
+        }
+       ],
+       "of": 27,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D27C0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B40",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B40"
+        },
+        {
+         "address": "0x800D27C4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B44"
+        }
+       ],
+       "of": 27,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "of": 27,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 27,
+      "inserted": 0,
+      "missing": 0,
+      "of": 27
+     },
+     "note": "* This header contains macros emitted by m2c in \"valid syntax\" mode, * which can be enabled by passing `--valid-syntax` on the command line. * * In this mode, unhandled types and expressions are emitted as macros so * that the output is compilable without human intervention.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T11:32:00Z"
     }
    ],
    "best": {
-    "identical": 24,
+    "identical": 27,
     "inserted": 0,
     "missing": 0,
     "of": 27
    },
    "budget_failed_attempts": 10,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8043D54C": {
    "attempt_count": 1,
@@ -50095,7 +50333,7 @@
    "verdict": "Landed"
   },
   "func_8043DFC0": {
-   "attempt_count": 3,
+   "attempt_count": 4,
    "attempts": [
     {
      "measured_by": "re-measured with the aligner on us-rev1 from artifacts/retained-candidates/func_8043DFC0/1.c",
@@ -50284,6 +50522,161 @@
      "outcome": "failed",
      "recorded_at": "2026-09-29T09:18:28Z",
      "retained": "artifacts/retained-candidates/func_8043DFC0/3.c",
+     "retained_sha256": "5335dcbf0d00fd1a9e8437e1bf8e5c623bc074f5b28be52d7b2005059d7fcbb9"
+    },
+    {
+     "assignment": "20260929T103833Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 36,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DE320",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E2350",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E2350"
+        },
+        {
+         "address": "0x800DE324",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E2354",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E2354"
+        }
+       ],
+       "of": 37,
+       "result": "differs",
+       "typed": {
+        "reordered": 1
+       }
+      },
+      "eu": {
+       "identical": 36,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800EE9A0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E2350",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E2350"
+        },
+        {
+         "address": "0x800EE9A4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E2354",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E2354"
+        }
+       ],
+       "of": 37,
+       "result": "differs",
+       "typed": {
+        "reordered": 1
+       }
+      },
+      "eu-mul": {
+       "identical": 36,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800E9B60",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E2350",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E2350"
+        },
+        {
+         "address": "0x800E9B64",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E2354",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E2354"
+        }
+       ],
+       "of": 37,
+       "result": "differs",
+       "typed": {
+        "reordered": 1
+       }
+      },
+      "us": {
+       "identical": 36,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DCFD0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E2350",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E2350"
+        },
+        {
+         "address": "0x800DCFD4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E2354",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E2354"
+        }
+       ],
+       "of": 37,
+       "result": "differs",
+       "typed": {
+        "reordered": 1
+       }
+      },
+      "us-rev1": {
+       "identical": 36,
+       "inserted": 0,
+       "missing": 0,
+       "of": 37,
+       "result": "differs",
+       "typed": {
+        "reordered": 1
+       }
+      }
+     },
+     "measurement": {
+      "identical": 36,
+      "inserted": 0,
+      "missing": 0,
+      "of": 37
+     },
+     "note": "36/37 on all 5 carts (permute case): lw v1,16(sp) for the stack arg unk78 is hoisted early by the target right after &D_801468A0 is formed, before D_800E2350 loads, while its store stays late (after 3 unrelated stores); this is scheduler-driven and independent of C statement order -- prior assignments already tried moving the store first (010304Z-d1, 012845Z-d1, 020757Z-d1) with no change or worse, and address-of the arg (compiler-coaxing) is refused. try classifies it a permute case, but manual permute --state on the .compared.txt report faults with JSONDecodeError (reproduces 091735Z-d1's report; logged in GAPS.md), so it must go to grind's unattended search.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T10:40:03Z",
+     "retained": "artifacts/retained-candidates/func_8043DFC0/4.c",
      "retained_sha256": "5335dcbf0d00fd1a9e8437e1bf8e5c623bc074f5b28be52d7b2005059d7fcbb9"
     }
    ],
@@ -52551,7 +52944,7 @@
    "verdict": "Open"
   },
   "func_8044044C": {
-   "attempt_count": 3,
+   "attempt_count": 4,
    "attempts": [
     {
      "note": "Draws a menu option as a highlighted box through func_802A8DD4 (flag 0x40000000 with func_802934DC, or D_801462E5 with the sign flag and func_80265370 reporting 0x400000; opacity 0x80/0xC0/0xFF) or as text through func_802ABC18 with the field's scaled opacity; best draft matches the first 37 words and then differs in the order the box extent products are computed and in reaching D_801462E5 at -0x5AF from D_80146894 as the cartridge does; 600 s permuter run did not improve",
@@ -52660,6 +53053,56 @@
      "note": "Draws a menu option as a highlighted box or as text, with state-dependent opacity.",
      "outcome": "failed",
      "recorded_at": "2026-09-29T09:39:17Z"
+    },
+    {
+     "assignment": "20260929T093348Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 115,
+      "inserted": 0,
+      "missing": 0,
+      "of": 115
+     },
+     "note": "Draws a menu option as a highlighted box or as text, with state-dependent opacity.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T11:24:35Z"
     }
    ],
    "best": {

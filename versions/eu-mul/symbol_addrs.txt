@@ -7006,3 +7006,7 @@ D_800D7BDC = 0x800DED44; // type:u32 derived by the trial of func_8043D2D0
 D_800D7BE0 = 0x800DED50; // type:u32 derived by the trial of func_8043D2D0
 D_800D7B38 = 0x800DEB58; // type:u32 derived by the trial of func_8043D458
 D_800D7B3C = 0x800DEB64; // type:u32 derived by the trial of func_8043D458
+func_802B2590 = 0x802AD7A0; // placed by decomp --version eu-mul split out --cut func_802B2590@0x802AD7A0 --cut func_802B2A10@0x802ADC20 --apply
+func_802B2A10 = 0x802ADC20; // placed by decomp --version eu-mul split out --cut func_802B2590@0x802AD7A0 --cut func_802B2A10@0x802ADC20 --apply
+D_800D7B40 = 0x800DEB70; // type:u32 derived by the trial of func_8043D4E0
+D_800D7B44 = 0x800DEB7C; // type:u32 derived by the trial of func_8043D4E0

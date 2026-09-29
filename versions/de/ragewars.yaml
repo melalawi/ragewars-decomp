@@ -2725,6 +2725,7 @@ segments:
       - [0x0ADFF0, asm, nonmatchings/func_802B24C0]
       - [0x0AE02C, asm, nonmatchings/func_802AD42C]
       - [0x0AE0B4, asm, nonmatchings/func_802AD4B4]
+      - [0x0AE0C0, asm, nonmatchings/func_802B2590]
       - [0x0AE130, asm, nonmatchings/func_802AD460]
       - [0x0AE29C, asm, nonmatchings/func_802B276C]
       - [0x0AE340, asm, nonmatchings/func_802B2810]
@@ -4506,7 +4507,7 @@ segments:
       - [0x1B40D4, asm, nonmatchings/func_8044E244]
       - [0x1B4144, asm, nonmatchings/D_8044E144]
       - [0x1B7DFC, asm, nonmatchings/func_80451DFC]
-      - [0x1B829C, asm, nonmatchings/func_8045229C]
+      - [0x1B829C, asm, nonmatchings/de_func_8045229C]
       - [0x1B8468, asm, nonmatchings/de_func_80452468]
       - [0x1B87F8, asm, nonmatchings/func_804409A8]
       # From 0x80451DFC this overlay carries a stale copy of its own last stretch of code, 0x11FC0
