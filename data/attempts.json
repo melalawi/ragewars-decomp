@@ -28167,7 +28167,7 @@
    "verdict": "Landed"
   },
   "func_80407578": {
-   "attempt_count": 3,
+   "attempt_count": 4,
    "attempts": [
     {
      "note": "Writes the save image to the pak (free space and note checks, free extension, func_80404958) or prompts, then releases save buffers; target spills the channel and copies branch results at the join, not reproduced",
@@ -28440,6 +28440,132 @@
      "recorded_at": "2026-09-29T09:45:12Z",
      "retained": "artifacts/retained-candidates/func_80407578/3.c",
      "retained_sha256": "90676ee5ec66fe892d0adb4af22550d57d961cd9ffe31c7b57caf2e4a51e5b24"
+    },
+    {
+     "assignment": "20260929T171745Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0044EEAC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        }
+       ],
+       "of": 116,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 114,
+       "inserted": 2,
+       "missing": 2,
+       "needs": [
+        {
+         "address": "0x0045017C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        }
+       ],
+       "of": 124,
+       "result": "differs",
+       "typed": {
+        "changed": 1,
+        "inserted": 2,
+        "missing": 2,
+        "reg": 6,
+        "reordered": 1
+       }
+      },
+      "eu-mul": {
+       "identical": 114,
+       "inserted": 2,
+       "missing": 2,
+       "needs": [
+        {
+         "address": "0x004502AC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        },
+        {
+         "address": "0x800DDEBC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E25B4"
+        },
+        {
+         "address": "0x800DDED4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E25D4"
+        }
+       ],
+       "of": 124,
+       "result": "differs",
+       "typed": {
+        "changed": 1,
+        "inserted": 2,
+        "missing": 2,
+        "reg": 6,
+        "reordered": 1
+       }
+      },
+      "us": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0044F01C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0044FAFC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_44FAFC"
+        }
+       ],
+       "of": 116,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 116,
+       "inserted": 0,
+       "missing": 0,
+       "of": 116,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 116,
+      "inserted": 0,
+      "missing": 0,
+      "of": 116
+     },
+     "note": "func_80407578 ready 3/5 words: US Rev1 is exact; EU variants compile within grinder tolerance",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T17:17:51Z",
+     "retained": "artifacts/retained-candidates/func_80407578/4.c",
+     "retained_sha256": "2a8010405085f344dc578b5189ea110b95ea47dc21c43a1b5e1dbf7851f69b14"
     }
    ],
    "best": {
