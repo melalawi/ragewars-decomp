@@ -29,7 +29,7 @@ void func_80255720(Pool80255720 *arg0)
     Block80255720 *header;
     Block80255720 *other;
     Block80255720 *scan;
-    u32 next;
+    Block80255720 *next;
 
     while (arg0->anchor->next_phys != 0) {
         header = arg0->anchor->next_phys;
@@ -53,10 +53,10 @@ void func_80255720(Pool80255720 *arg0)
                 }
                 other = scan;
             }
-            next = (u32)other->next;
-            block->next = (Block80255720 *)next;
+            next = other->next;
+            block->next = next;
             if (other->next != 0) {
-                *(Block80255720 **)next = block;
+                next->prev = block;
             }
             other->next = block;
             if (arg0->tail == other) {

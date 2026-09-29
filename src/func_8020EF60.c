@@ -17,33 +17,38 @@ typedef struct Obj8020EF60 {
     u32 unkBC;
 } Obj8020EF60;
 
-extern s32 D_8013B364;
+typedef struct {
+    u8 pad0[0x18];
+    u32 selected;
+} NodeList;
 
-extern void func_8020D014(void *arg0);
-extern void func_8020D1FC(void *arg0);
+typedef struct {
+    u8 pad0[0x34];
+    s32 goal;
+} NodeRecord;
+
+extern NodeList D_8013B364;
+
+extern void func_8020D014(NodeList *list);
+extern void func_8020D1FC(NodeList *list);
 extern s32 func_8020F150(s32 *ids);
-extern void func_8020D0CC(void *arg0, s32 key);
-extern void *func_8020CFE0(void *arg0, u32 key);
-extern void func_8020D114(void *arg0, s32 *output, s32 count);
+extern void func_8020D0CC(NodeList *list, s32 key);
+extern NodeRecord *func_8020CFE0(NodeList *list, u32 key);
+extern void func_8020D114(NodeList *list, s32 *output, s32 count);
 
 s32 func_8020EF60(Obj8020EF60 *arg0) {
     s32 buffer[30];
     s32 count;
-    void *p;
-    void *record;
-    void *base;
+    NodeRecord *record;
+    NodeList *base;
     u32 sel;
     s32 *key; /* FAKEMATCH: pointer-to-field local places the key load after the -1 store */
 
     if (arg0->unk68 == 0) {
         base = &D_8013B364;
-        count = 0x1D;
-        p = &buffer[29];
-        do {
-            *(s32 *) p = 0;
-            count -= 1;
-            p = (u8 *) p - 4;
-        } while (count >= 0);
+        for (count = 29; count >= 0; count--) {
+            buffer[count] = 0;
+        }
 
         switch (arg0->unkBC) {
         case 0:
@@ -99,14 +104,14 @@ s32 func_8020EF60(Obj8020EF60 *arg0) {
                 return 1;
             }
 
-            *(u32 *) ((u8 *) base + 0x18) = -1U;
+            base->selected = -1U;
             func_8020D0CC(base, *key);
 
-            sel = *(u32 *) ((u8 *) base + 0x18);
+            sel = base->selected;
             if (sel != -1U) {
                 record = func_8020CFE0(base, sel);
-                arg0->unkC = *(u32 *) ((u8 *) base + 0x18);
-                arg0->unk68 = *(s32 *) ((u8 *) record + 0x34);
+                arg0->unkC = base->selected;
+                arg0->unk68 = record->goal;
                 func_8020D114(base, arg0->history, 4);
                 return 1;
             }

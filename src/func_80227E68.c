@@ -33,12 +33,17 @@ struct ActorNode {
     ActorNode *unk16E0;
 };
 
-s32 func_802282C8(void *arg0);
-void func_8022A738(void *arg0);
+typedef struct {
+    char pad0[0x20];
+    ActorNode *players;
+} Round;
+
+s32 func_802282C8(Round *arg0);
+void func_8022A738(Round *arg0);
 s32 func_80245774(void);
 s32 func_80245788(void);
 
-void func_80227E68(void *arg0) {
+void func_80227E68(Round *arg0) {
     s32 count;
     s32 count2;
     ActorNode *node;
@@ -48,7 +53,7 @@ void func_80227E68(void *arg0) {
     s32 found; /* FAKEMATCH: flag local keeps the loop exit from being threaded past the found check */
 
     if ((D_80146918 != 0) && (func_80245774() == 0) && (func_80245788() == 0)) {
-        node = *(ActorNode **) ((char *) arg0 + 0x20);
+        node = arg0->players;
         count = 0;
         if (node != 0) {
             do {
@@ -60,7 +65,7 @@ void func_80227E68(void *arg0) {
         }
         count2 = count;
         if (count2 > 0) {
-            for (node = *(ActorNode **) ((char *) arg0 + 0x20); node != 0; node = node->unk16E0) {
+            for (node = arg0->players; node != 0; node = node->unk16E0) {
                 if ((node->unk5D8->unk8F == 1) || (node->unk5D8->unk90 == 1)) {
                     break;
                 }
@@ -74,7 +79,7 @@ void func_80227E68(void *arg0) {
             case 0:
             default:
                 if (count2 > 0) {
-                    for (node = *(ActorNode **) ((char *) arg0 + 0x20); node != 0; node = node->unk16E0) {
+                    for (node = arg0->players; node != 0; node = node->unk16E0) {
                         if ((node->unk5D8->unk8F == 1) || (node->unk5D8->unk90 == 1)) {
                             break;
                         }
@@ -90,7 +95,7 @@ void func_80227E68(void *arg0) {
                 break;
             case 1:
                 state->unk84 = 2;
-                for (node = *(ActorNode **) ((char *) arg0 + 0x20); node != 0; node = node->unk16E0) {
+                for (node = arg0->players; node != 0; node = node->unk16E0) {
                     if ((node->unk5D8->unk8F == 1) || (node->unk5D8->unk90 == 1)) {
                         break;
                     }
