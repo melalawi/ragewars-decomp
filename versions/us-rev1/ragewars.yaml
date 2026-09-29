@@ -4591,6 +4591,7 @@ segments:
       - [0x1B5D80, asm, nonmatchings/func_80447D80]
       - [0x1B61BC, asm, nonmatchings/func_804481BC]
       - [0x1B6308, asm, nonmatchings/func_80448308]
+      - [0x1B6470, asm, nonmatchings/func_80448470]
       - [0x1B65EC, asm, nonmatchings/func_804485EC]
       - [0x1B6688, asm, nonmatchings/func_80448688]
       - [0x1B673C, asm, nonmatchings/func_8044873C]

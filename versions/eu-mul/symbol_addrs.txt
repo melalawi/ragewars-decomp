@@ -6992,3 +6992,4 @@ func_8043E81C = 0x8043F66C; // placed by decomp land run
 func_8043F1B8 = 0x80440018; // placed by decomp land run
 D_8011F038 = 0x80124F78; // type:u32 derived by the trial of func_8044C050
 D_800CA300 = 0x800C5500; // type:u32 derived by the trial of func_8044D9DC
+func_80448470 = 0x80448BB0; // placed by decomp --version eu-mul split out --function func_80448470 --address 0x80448BB0 --apply

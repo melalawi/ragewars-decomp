@@ -3102,7 +3102,7 @@ segments:
       - [0x0BDCA0, asm, nonmatchings/func_802C2260]
       - [0x0BDD48, asm, nonmatchings/func_802BD148]
       - [0x0BDD50, asm, nonmatchings/func_802C2310]
-      - [0x0BDD60, asm, nonmatchings/func_802BD160]   # + 12 bytes of literal data at 0x802BD1A4, in the text stream
+      - [0x0BDD60, asm, nonmatchings/func_802C2320]   # + 12 bytes of literal data at 0x802BD1A4, in the text stream
       - [0x0BDDB0, asm, nonmatchings/func_802C2370]
       - [0x0BDE18, asm, nonmatchings/func_802BD218]
       - [0x0BDE20, asm, nonmatchings/func_802C23E0]
@@ -3482,7 +3482,8 @@ segments:
       - [0x176C8C, asm, nonmatchings/func_80412C8C]
       - [0x176CD4, asm, nonmatchings/func_80412CD4]
       - [0x176D20, asm, nonmatchings/func_80412D20]
-      - [0x176D5C, asm, nonmatchings/func_80412D60]
+      - [0x176D5C, asm, nonmatchings/func_80412D5C]
+      - [0x176D60, asm, nonmatchings/func_80412D60]
       - [0x176E14, asm, nonmatchings/func_80412E14]
       - [0x176FD4, asm, nonmatchings/func_80412FD4]
       - [0x177464, asm, nonmatchings/func_80413464]

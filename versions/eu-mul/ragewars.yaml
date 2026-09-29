@@ -4405,6 +4405,7 @@ segments:
       - [0x1384C0, asm, nonmatchings/func_80447D80]
       - [0x1388FC, asm, nonmatchings/func_804481BC]
       - [0x138A48, asm, nonmatchings/func_80448308]
+      - [0x138BB0, asm, nonmatchings/func_80448470]
       - [0x138D2C, asm, nonmatchings/func_804485EC]
       - [0x138DC8, asm, nonmatchings/func_80448688]
       - [0x138E7C, asm, nonmatchings/func_8044873C]
