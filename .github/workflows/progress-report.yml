@@ -16,33 +16,33 @@ jobs:
         with:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
-            data/progress-report/us.json
-            data/progress-report/us-rev1.json
-            data/progress-report/eu.json
-            data/progress-report/eu-mul.json
-            data/progress-report/de.json
+            data/progress-report/us_report.json
+            data/progress-report/us-rev1_report.json
+            data/progress-report/eu_report.json
+            data/progress-report/eu-mul_report.json
+            data/progress-report/de_report.json
       - uses: actions/upload-artifact@v4
         with:
           name: us_report
-          path: data/progress-report/us.json
+          path: data/progress-report/us_report.json
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
           name: us-rev1_report
-          path: data/progress-report/us-rev1.json
+          path: data/progress-report/us-rev1_report.json
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
           name: eu_report
-          path: data/progress-report/eu.json
+          path: data/progress-report/eu_report.json
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
           name: eu-mul_report
-          path: data/progress-report/eu-mul.json
+          path: data/progress-report/eu-mul_report.json
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
           name: de_report
-          path: data/progress-report/de.json
+          path: data/progress-report/de_report.json
           if-no-files-found: error
