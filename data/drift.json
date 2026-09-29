@@ -3360,7 +3360,7 @@
   ]
  },
  "date": "2026-09-29",
- "reason": "boundary/filler sweep: eu-mul split-out cuts (twin-misnamed renames) separated previously-merged rows, exposing 6 newly-visible drift matches (func_80211140, func_8020F6E0, func_80212E30, func_802050C0, func_802101A0, func_80212D80) already reproduced elsewhere; recording as new baseline rather than placing/renaming, to keep this batch scoped to boundary fixes",
+ "reason": "landed func_80204808, func_80205F18, func_8043CDF0",
  "schema": "decomp.drift.v2",
- "written_by": "land rebaseline-drift"
+ "written_by": "land run"
 }
