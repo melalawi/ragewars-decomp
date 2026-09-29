@@ -7067,3 +7067,6 @@ func_8043D43C = 0x8043E14C; // placed by decomp land run
 func_8043E24C = 0x8043F2DC; // placed by decomp land run
 func_8043E81C = 0x8043F53C; // placed by decomp land run
 func_8043F1B8 = 0x8043FEE8; // placed by decomp land run
+D_8011F038 = 0x8012AF78; // type:u32 derived by the trial of func_8044C050
+D_28795C = 0x0028792C; // type:u32 derived by the trial of func_8044D9DC
+D_800CA300 = 0x800C54C0; // type:u32 derived by the trial of func_8044D9DC

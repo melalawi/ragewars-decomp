@@ -2046,7 +2046,7 @@
    "verdict": "Open"
   },
   "func_8020D370": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 328,
@@ -2056,8 +2056,44 @@
      "recorded_at": "2026-09-16T20:30:20Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T015033Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "eu": {
+       "identical": 79,
+       "inserted": 0,
+       "missing": 0,
+       "of": 79,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 79,
+       "inserted": 0,
+       "missing": 0,
+       "of": 79,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 79,
+      "inserted": 0,
+      "missing": 0,
+      "of": 79
+     },
+     "note": "Advances a committed selection's stage against the node list D_8013B364: finishes through func_8020DB14 when there are no stages at 0x1BC, counts once into 0x1C8 the list's kind-6 nodes whose id matches the selection id at 0x1C0, then runs func_8020D4AC while the stage is within that count, func_8020D6E4 on the stage right after it and func_8020D9C0 on the one after that.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:12Z"
     }
    ],
+   "best": {
+    "identical": 79,
+    "inserted": 0,
+    "missing": 0,
+    "of": 79
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_8020D364",
@@ -2077,7 +2113,7 @@
     }
    ],
    "positional_best_differing_words": 3,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8020D384": {
    "attempt_count": 1,
@@ -2260,7 +2296,7 @@
    "verdict": "Open"
   },
   "func_8020EF60": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 508,
@@ -2270,7 +2306,39 @@
      "recorded_at": "2026-09-16T21:09:46Z",
      "trials": 0,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T015033Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 124,
+       "inserted": 0,
+       "missing": 0,
+       "of": 124,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 124,
+      "inserted": 0,
+      "missing": 0,
+      "of": 124
+     },
+     "note": "Chooses a computer player's next pickup goal when it has none at 0x68: fills a list with the pickup kinds its need at 0xBC wants (0xBC4 to 0xBC9 and 0x6BA/0x6BB), resets the node list D_8013B364 and selects the matching nodes through func_8020F150, then records the chosen node's goal, id and history or clears the need when nothing is selected.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:12Z"
     }
+   ],
+   "best": {
+    "identical": 124,
+    "inserted": 0,
+    "missing": 0,
+    "of": 124
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "pointer-to-field local places the key load after the -1 store"
    ],
    "moved_from": [
     {
@@ -2281,7 +2349,7 @@
     }
    ],
    "positional_best_differing_words": 3,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8020F150": {
    "attempt_count": 1,
@@ -2931,7 +2999,7 @@
    "verdict": "Open"
   },
   "func_80212E10": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 440,
@@ -2941,8 +3009,37 @@
      "recorded_at": "2026-09-16T21:09:46Z",
      "trials": 0,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T020507Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 107,
+       "inserted": 0,
+       "missing": 0,
+       "of": 107,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 107,
+      "inserted": 0,
+      "missing": 0,
+      "of": 107
+     },
+     "note": "Runs a computer player's patrol step: starts its route at 0x224 on the first route of D_8011FE88, or random roaming (-2) when there are none; once within D_800C71C0 of its goal node it advances the route position at 0x228 (wrapping at the route length) and drops the goal; a dropped goal is then taken from the route through func_8028D220 and func_8020CB3C, or a random node of D_8013B364 when roaming; finally runs func_80208410, func_80211020 and func_80208AAC.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:12Z"
     }
    ],
+   "best": {
+    "identical": 107,
+    "inserted": 0,
+    "missing": 0,
+    "of": 107
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_80212E04",
@@ -2952,7 +3049,7 @@
     }
    ],
    "positional_best_differing_words": 3,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80212FD4": {
    "attempt_count": 0,
@@ -9956,7 +10053,7 @@
    "verdict": "Landed"
   },
   "func_80255720": {
-   "attempt_count": 2,
+   "attempt_count": 4,
    "attempts": [
     {
      "measured_bytes": 300,
@@ -10046,8 +10143,65 @@
      "recorded_at": "2026-09-28T12:11:33Z",
      "retained": "artifacts/retained-candidates/func_80255720/1.c",
      "retained_sha256": "d741042abf51a658335336e027b4390c8e8cdc3f9dc3f6fcb48e1365cc1563c7"
+    },
+    {
+     "assignment": "20260929T015033Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 77,
+       "inserted": 0,
+       "missing": 0,
+       "of": 77,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 77,
+       "inserted": 0,
+       "missing": 0,
+       "of": 77,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 77,
+       "inserted": 0,
+       "missing": 0,
+       "of": 77,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 77,
+       "inserted": 0,
+       "missing": 0,
+       "of": 77,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 77,
+       "inserted": 0,
+       "missing": 0,
+       "of": 77,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 77,
+      "inserted": 0,
+      "missing": 0,
+      "of": 77
+     },
+     "note": "Coalesces every block that physically follows a pool's anchor block at 0x10 into its physical predecessor: first puts an empty predecessor on the free list (after the next non-empty block, or at the head), then grows it by the block's header and size, unlinks the block from the physical chain and, when it was free, from the free list. Written like func_80255ACC, which absorbs one block.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:13Z"
     }
    ],
+   "best": {
+    "identical": 77,
+    "inserted": 0,
+    "missing": 0,
+    "of": 77
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_80255728",
@@ -10057,7 +10211,7 @@
     }
    ],
    "positional_best_differing_words": 75,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80255728": {
    "attempt_count": 0,
@@ -20706,7 +20860,7 @@
    "verdict": "Open"
   },
   "func_802BA4D0": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "measured_bytes": 324,
@@ -20725,8 +20879,36 @@
      "recorded_at": "2026-09-12T04:31:25Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 80,
+       "inserted": 0,
+       "missing": 0,
+       "of": 80,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 80,
+      "inserted": 0,
+      "missing": 0,
+      "of": 80
+     },
+     "note": "alMainBusPull (libultra audio main bus): clears the main left and right buffers, then pulls each source and mixes the aux outputs into the main buffers.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:13Z"
     }
    ],
+   "best": {
+    "identical": 80,
+    "inserted": 0,
+    "missing": 0,
+    "of": 80
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_802BA4CC",
@@ -20736,7 +20918,7 @@
     }
    ],
    "positional_best_differing_words": 0,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_802BA640": {
    "attempt_count": 1,
@@ -20852,7 +21034,7 @@
    "verdict": "Open"
   },
   "func_802BB450": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "measured_bytes": 264,
@@ -20871,8 +21053,36 @@
      "recorded_at": "2026-09-12T04:31:25Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 64,
+       "inserted": 0,
+       "missing": 0,
+       "of": 64,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 64,
+      "inserted": 0,
+      "missing": 0,
+      "of": 64
+     },
+     "note": "__assert",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:13Z"
     }
    ],
+   "best": {
+    "identical": 64,
+    "inserted": 0,
+    "missing": 0,
+    "of": 64
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_802BB448",
@@ -20882,7 +21092,7 @@
     }
    ],
    "positional_best_differing_words": 0,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_802BB734": {
    "attempt_count": 0,
@@ -29861,7 +30071,7 @@
    "verdict": "Open"
   },
   "func_80419B90": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 376,
@@ -29871,7 +30081,39 @@
      "recorded_at": "2026-09-16T21:41:54Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T020507Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 93,
+       "inserted": 0,
+       "missing": 0,
+       "of": 93,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 93,
+      "inserted": 0,
+      "missing": 0,
+      "of": 93
+     },
+     "note": "Steps a blink-style frame animation while active (0x84 == 1): idle, it counts the delay at 0x7C down (kept within 0..50) and, once it runs out, starts blinking with a 2% chance per step; blinking, it restores the sprite's base byte, counts the current frame's timer down and on expiry advances to the next frame, showing its value on the sprite with sound 0xE75, or after the last frame resets through func_80419D04 and waits 50 steps again.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:13Z"
     }
+   ],
+   "best": {
+    "identical": 93,
+    "inserted": 0,
+    "missing": 0,
+    "of": 93
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "copy-only local holds the object in a second saved register"
    ],
    "moved_from": [
     {
@@ -29882,7 +30124,7 @@
     }
    ],
    "positional_best_differing_words": 94,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80419D04": {
    "attempt_count": 1,
@@ -42605,6 +42847,41 @@
    "positional_best_differing_words": 0,
    "verdict": "Landed"
   },
+  "func_8043C500": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T015025Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 139,
+       "inserted": 0,
+       "missing": 0,
+       "of": 139,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 139,
+      "inserted": 0,
+      "missing": 0,
+      "of": 139
+     },
+     "note": "Maps an id from 1 to 33 to the address of its data block, returning 0 for any other id.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:13Z"
+    }
+   ],
+   "best": {
+    "identical": 139,
+    "inserted": 0,
+    "missing": 0,
+    "of": 139
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Landed"
+  },
   "func_8043C868": {
    "attempt_count": 1,
    "attempts": [
@@ -46550,7 +46827,7 @@
    "verdict": "Open"
   },
   "func_8043EFD0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 484,
@@ -46560,8 +46837,37 @@
      "recorded_at": "2026-09-16T22:00:52Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T015033Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 120,
+       "inserted": 0,
+       "missing": 0,
+       "of": 120,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 120,
+      "inserted": 0,
+      "missing": 0,
+      "of": 120
+     },
+     "note": "Draws a menu option's image dimmed unless it is available (option id 0x10FE: sub-index below the unlock counts at 0x64D/0x64E of the save data; id 0x1194: flag byte 0x644 + sub-index), setting the draw alpha through func_802AA224 once (tracked by D_800E5E70 = 5), emitting a pipe sync, an other-mode word and a white or grey environment colour to D_80110634, and drawing it through func_802ABC18.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:13Z"
     }
    ],
+   "best": {
+    "identical": 120,
+    "inserted": 0,
+    "missing": 0,
+    "of": 120
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_8043EFCC",
@@ -46571,7 +46877,7 @@
     }
    ],
    "positional_best_differing_words": 1,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8043F1B0": {
    "attempt_count": 1,
@@ -50491,6 +50797,117 @@
    "positional_best_differing_words": 0,
    "verdict": "Landed"
   },
+  "func_8044C050": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T004246Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 125,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8011AF78",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x8011F038",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_8011F038"
+        }
+       ],
+       "of": 125,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 125,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8012AF78",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x8011F038",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_8011F038"
+        }
+       ],
+       "of": 125,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 125,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x80124F78",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x8011F038",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_8011F038"
+        }
+       ],
+       "of": 125,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 125,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x80118F78",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x8011F038",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_8011F038"
+        }
+       ],
+       "of": 125,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 125,
+       "inserted": 0,
+       "missing": 0,
+       "of": 125,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 125,
+      "inserted": 0,
+      "missing": 0,
+      "of": 125
+     },
+     "note": "Resets a pool of 128 0x1F8-byte entries: marks each in state 2 with handler D_8011EE70 and clears three of its words, sets up the pool's free list and puts every entry on it, sets up the second list and three more through func_80255C40, then fills the four direction records of D_8011F038 (signs and angles per quadrant), rebuilds D_8011EFF8 at a quarter turn through func_802736B8 and stores arg1 in the pool.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:13Z"
+    }
+   ],
+   "best": {
+    "identical": 125,
+    "inserted": 0,
+    "missing": 0,
+    "of": 125
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Landed"
+  },
   "func_8044C100": {
    "attempt_count": 0,
    "attempts": [],
@@ -51007,6 +51424,276 @@
     }
    ],
    "verdict": "Retired"
+  },
+  "func_8044CD58": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T005623Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 179,
+       "inserted": 0,
+       "missing": 0,
+       "of": 179,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 179,
+       "inserted": 0,
+       "missing": 0,
+       "of": 179,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 179,
+       "inserted": 0,
+       "missing": 0,
+       "of": 179,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 179,
+       "inserted": 0,
+       "missing": 0,
+       "of": 179,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 179,
+       "inserted": 0,
+       "missing": 0,
+       "of": 179,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 179,
+      "inserted": 0,
+      "missing": 0,
+      "of": 179
+     },
+     "note": "Binds a loaded collision mesh to the world: records the vertex, face and edge lists from the node's four chunks with their counts, resets the two bucket lists and files the 48 buckets into the second, then for every face of both lists clears the solid bit when it is hidden and marks it 0xF0 when its group bit is set in the current group's bitmap.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:14Z"
+    }
+   ],
+   "best": {
+    "identical": 179,
+    "inserted": 0,
+    "missing": 0,
+    "of": 179
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Landed"
+  },
+  "func_8044D024": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T004242Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 249,
+       "inserted": 0,
+       "missing": 0,
+       "of": 249,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 249,
+       "inserted": 0,
+       "missing": 0,
+       "of": 249,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 249,
+       "inserted": 0,
+       "missing": 0,
+       "of": 249,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 249,
+       "inserted": 0,
+       "missing": 0,
+       "of": 249,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 249,
+       "inserted": 0,
+       "missing": 0,
+       "of": 249,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 249,
+      "inserted": 0,
+      "missing": 0,
+      "of": 249
+     },
+     "note": "Packs a collision mesh into one allocated block: copies the node's vertex list, the triangle source and the trailing chunk behind a five-offset header, builds a 0x20-byte triangle record per source face, lowers the world's minimum height to every triangle vertex, and flags triangles whose group bit, callback or neighbours mark them with the default surface mask.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:14Z"
+    }
+   ],
+   "best": {
+    "identical": 249,
+    "inserted": 0,
+    "missing": 0,
+    "of": 249
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Landed"
+  },
+  "func_8044D9DC": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T005623Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 155,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0028798C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0028795C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_28795C"
+        },
+        {
+         "address": "0x800C5210",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CA300",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CA300"
+        }
+       ],
+       "of": 155,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 155,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x0028792C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0028795C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_28795C"
+        },
+        {
+         "address": "0x800C54C0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CA300",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CA300"
+        }
+       ],
+       "of": 155,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 155,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C5500",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CA300",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CA300"
+        }
+       ],
+       "of": 155,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 155,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x002878DC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x0028795C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_28795C"
+        },
+        {
+         "address": "0x800C5140",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CA300",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CA300"
+        }
+       ],
+       "of": 155,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 155,
+       "inserted": 0,
+       "missing": 0,
+       "of": 155,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 155,
+      "inserted": 0,
+      "missing": 0,
+      "of": 155
+     },
+     "note": "Loads every still-empty cell of the level's tile grid: for each row and column whose cell record has no resource, fetches the cell's block through func_8028FE1C and func_802518DC, binds and spawns each object of its two object lists (0xE8- and 0x1C8-byte records) and releases the spawned handles and the block.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T02:14:14Z"
+    }
+   ],
+   "best": {
+    "identical": 155,
+    "inserted": 0,
+    "missing": 0,
+    "of": 155
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "constant-holding local first keeps the column loop's entry test as slt"
+   ],
+   "verdict": "Landed"
   },
   "func_8044DC48": {
    "attempt_count": 1,
