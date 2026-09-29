@@ -2,7 +2,18 @@
 #include "basetypes.h"
 #define NULL ((void *)0)
 typedef struct {s32 unk0, unk4, unk8, unkC, unk10, unk14, unk18, unk1C;} Obj;
-void func_802537D8(s32, s32);                            /* extern */
+void func_802537D8(s32, s32);                            typedef struct func_80405CDC_S1 func_80405CDC_S1;
+typedef struct func_80405CDC_S2 func_80405CDC_S2;
+struct func_80405CDC_S1 {
+    char pad0[0x4];
+    Obj unk4;
+};
+struct func_80405CDC_S2 {
+    char pad0[0x8];
+    Obj unk8;
+};
+
+/* extern */
 
 void func_80405CDC(Obj *arg0) {
     s32 temp_a1;
@@ -39,10 +50,10 @@ void func_80405CDC(Obj *arg0) {
             func_802537D8(0, temp_a1_5);
         }
         var_s1 += 1;
-        var_s0 = (Obj *)((char *)var_s0 + 4);
+        var_s0 = &((func_80405CDC_S1 *)(var_s0))->unk4;
     } while (var_s1 < 3);
     var_v1 = 2;
-    var_v0 = (Obj *)((char *)arg0 + 8);
+    var_v0 = &((func_80405CDC_S2 *)(arg0))->unk8;
     arg0->unk0 = 0;
     arg0->unk4 = 0;
     arg0->unk8 = 0;
@@ -51,6 +62,6 @@ void func_80405CDC(Obj *arg0) {
     do {
         var_v0->unkC = 0;
         var_v1 -= 1;
-        var_v0 = (Obj *)((char *)var_v0 - 4);
+        var_v0 = (Obj *)((s32 *)var_v0 - 1);
     } while (var_v1 >= 0);
 }

@@ -16,6 +16,37 @@ extern s32 func_8025DE74(s16, s32, s32, s32, s32, s32);
 extern void func_80284544(void *, void *);
 extern s32 func_80284408(void *);
 
+typedef struct func_8027C5A0_S1 func_8027C5A0_S1;
+typedef struct func_8027C5A0_S2 func_8027C5A0_S2;
+typedef struct func_8027C5A0_S3 func_8027C5A0_S3;
+typedef union func_8027C5A0_S1_U118 { void* v0; s32* v1; } func_8027C5A0_S1_U118;
+struct func_8027C5A0_S1 {
+    char pad0[0x1C];
+    Triple unk1C;
+    char pad1C[0x5C - 0x1C - sizeof(Triple)];
+    s32 unk5C;
+    char pad5C[0x118 - 0x5C - sizeof(s32)];
+    func_8027C5A0_S1_U118 unk118;
+    char pad118[0x12C - 0x118 - sizeof(func_8027C5A0_S1_U118)];
+    void* unk12C;
+    char pad12C[0x130 - 0x12C - sizeof(void*)];
+    s32 unk130;
+    char pad130[0x134 - 0x130 - sizeof(s32)];
+    s32 unk134;
+};
+struct func_8027C5A0_S2 {
+    char pad0[0x18];
+    s32 unk18;
+};
+struct func_8027C5A0_S3 {
+    char pad0[0x70];
+    u16 unk70;
+    char pad70[0x8C - 0x70 - sizeof(u16)];
+    u16 unk8C;
+    char pad8C[0xA8 - 0x8C - sizeof(u16)];
+    u16 unkA8;
+};
+
 void func_8027C5A0(void *arg0) {
     Pair pair;
     Quad rotation;
@@ -42,40 +73,39 @@ void func_8027C5A0(void *arg0) {
         var_a0 = 8;
         break;
     }
-    temp_s1 = *(void **)((char *)arg0 + 0x118);
+    temp_s1 = ((func_8027C5A0_S1 *)(arg0))->unk118.v0;
     temp_a1 = var_a0 * 2;
-    temp_v0 = *(s32 *)((char *)temp_s1 + 0x18);
+    temp_v0 = ((func_8027C5A0_S2 *)(temp_s1))->unk18;
     temp_v1 = (char *)temp_v0 + temp_a1;
-    temp_s2 = *(u16 *)((char *)temp_v1 + 0x70);
-    temp_a2 = *(u16 *)((char *)temp_v1 + 0x8C);
+    temp_s2 = ((func_8027C5A0_S3 *)(temp_v1))->unk70;
+    temp_a2 = ((func_8027C5A0_S3 *)(temp_v1))->unk8C;
     temp_v0_2 = (char *)temp_v0 + (var_a0 * 8);
     pair = *(Pair *)temp_v0_2;
-    sound = *(u16 *)((char *)*(s32 *)((char *)temp_s1 + 0x18) +
-                   temp_a1 + 0xA8);
+    sound = ((func_8027C5A0_S3 *)((( func_8027C5A0_S2 *)temp_s1)->unk18 + temp_a1))->unkA8;
     if (temp_a2 != 0xFFFF) {
         func_80265E30(arg0, arg0, temp_a2, -1, D_801042B8, pair);
     }
     if (temp_s2 != 0xFFFF) {
-        if ((**(s32 **)((char *)arg0 + 0x118) & 0x10) != 0) {
+        if ((*((func_8027C5A0_S1 *)(arg0))->unk118.v1 & 0x10) != 0) {
             position = D_801042C8;
         } else {
-            position = *(Triple *)((char *)arg0 + 0x1C);
+            position = ((func_8027C5A0_S1 *)(arg0))->unk1C;
         }
         func_80271888(&rotation, &position);
         func_80280094(&D_80121990, arg0,
-                      *(void **)((char *)arg0 + 0x12C),
-                      *(s32 *)((char *)arg0 + 0x130),
-                      *(s32 *)((char *)arg0 + 0x134), temp_s2,
+                      ((func_8027C5A0_S1 *)(arg0))->unk12C,
+                      ((func_8027C5A0_S1 *)(arg0))->unk130,
+                      ((func_8027C5A0_S1 *)(arg0))->unk134, temp_s2,
                       position, rotation, D_801042B8, 0,
                       -5,
-                      (*(s32 *)((char *)arg0 + 0x5C) & 0x200006) | 1);
+                      (((func_8027C5A0_S1 *)(arg0))->unk5C & 0x200006) | 1);
     }
     if (sound != 0xFFFF) {
         func_8025DE74((s16)sound, D_801042B8.x,
                       D_801042B8.y, D_801042B8.z, 0, -1);
     }
-    *(s32 *)((char *)arg0 + 0x5C) |= 0x200;
-    if ((**(s32 **)((char *)arg0 + 0x118) & 0x20000) != 0) {
+    ((func_8027C5A0_S1 *)(arg0))->unk5C |= 0x200;
+    if ((*((func_8027C5A0_S1 *)(arg0))->unk118.v1 & 0x20000) != 0) {
         func_80284544(&D_80121990, arg0);
         func_80284408(arg0);
     }

@@ -18,6 +18,7 @@ typedef struct {
     s32 y;
     f32 z;
 } Entry;
+typedef struct { s32 words[6]; } MenuRecord;
 
 extern s32 D_801468F4;
 extern void *D_800D052C[];
@@ -25,6 +26,29 @@ extern s32 func_8022C450(void *);
 extern void func_802181FC(void *, s32, void *);
 extern s32 func_80217B3C(void *);
 extern void func_8025DF54(s32);
+
+typedef struct func_80217D74_S1 func_80217D74_S1;
+typedef struct func_80217D74_S2 func_80217D74_S2;
+struct func_80217D74_S1 {
+    char pad0[0x38];
+    s32 unk38;
+    char pad38[0x5D8 - 0x38 - sizeof(s32)];
+    char* unk5D8;
+    char pad5D8[0x62E - 0x5D8 - sizeof(char*)];
+    s16 unk62E;
+    char pad62E[0x698 - 0x62E - sizeof(s16)];
+    char* unk698;
+    char pad698[0x770 - 0x698 - sizeof(char*)];
+    s16 unk770;
+    char pad770[0xCC0 - 0x770 - sizeof(s16)];
+    s32 unkCC0;
+    char padCC0[0x11B4 - 0xCC0 - sizeof(s32)];
+    s32 unk11B4;
+};
+struct func_80217D74_S2 {
+    char pad0[0xC];
+    s16 unkC;
+};
 
 void func_80217D74(s32 *menu, void *player) {
     s32 held;
@@ -35,11 +59,11 @@ void func_80217D74(s32 *menu, void *player) {
     s16 alternate;
     char *ammo;
 
-    held = *(s32 *) (*(char **) ((char *) player + 0x698) + 0xB0) & 0x8000;
+    held = *(s32 *) (((func_80217D74_S1 *)(player))->unk698 + 0xB0) & 0x8000;
     if (func_8022C450(player) != 0) {
         held = 0;
     }
-    if (D_801468F4 != 0 && *(u8 *) (*(char **) ((char *) player + 0x5D8) + 0x8F) == 1) {
+    if (D_801468F4 != 0 && *(u8 *) (((func_80217D74_S1 *)(player))->unk5D8 + 0x8F) == 1) {
         held = 0;
         menu[0] = 3;
     }
@@ -48,15 +72,15 @@ void func_80217D74(s32 *menu, void *player) {
     }
     if (menu[0] == 0 || menu[0] == 3) {
         if (!held) {
-            if (*(s32 *) ((char *) player + 0xCC0) != -1 && menu[0x388 / 4] != 8) {
+            if (((func_80217D74_S1 *)(player))->unkCC0 != -1 && menu[0x388 / 4] != 8) {
                 func_802181FC(menu, 0, player);
                 menu[0] = 1;
             }
             return;
         }
-        *(s32 *) ((char *) player + 0xCC0) = -1;
+        ((func_80217D74_S1 *)(player))->unkCC0 = -1;
         func_802181FC(menu, held, player);
-        *(s32 *) ((char *) player + 0x11B4) = 1;
+        ((func_80217D74_S1 *)(player))->unk11B4 = 1;
         menu[0] = 1;
     }
     category = menu[0x388 / 4];
@@ -68,7 +92,7 @@ void func_80217D74(s32 *menu, void *player) {
         return;
     }
     if (slot != category) {
-        entry = (Entry *) ((char *) menu + slot * 0x18);
+        entry = (Entry *)&((MenuRecord *)menu)[slot];
         weapon = entry->weapon;
         if (entry->owned == 0) {
             func_8025DF54(0xD4D);
@@ -81,13 +105,13 @@ void func_80217D74(s32 *menu, void *player) {
         if (slot != menu[0x37C / 4]) {
             menu[0x37C / 4] = slot;
         }
-        if (weapon == *(s16 *) ((char *) player + 0x62E)) {
+        if (weapon == ((func_80217D74_S1 *)(player))->unk62E) {
             menu[0x390 / 4] = slot;
             return;
         }
-        *(s16 *) ((char *) player + 0x770) = weapon;
-        if (!(*(s32 *) ((char *) player + 0x38) & 0x1000)) {
-            alternate = *(s16 *) ((char *) D_800D052C[weapon] + 0xC);
+        ((func_80217D74_S1 *)(player))->unk770 = weapon;
+        if (!(((func_80217D74_S1 *)(player))->unk38 & 0x1000)) {
+            alternate = ((func_80217D74_S2 *)(D_800D052C[weapon]))->unkC;
             if (alternate != category && (ammo = (char *) player + alternate * 2)[0x602] != 0) {
                 entry->weapon = alternate;
             }

@@ -32,6 +32,25 @@ extern void func_802C0510(void *, s32, s32);
 extern void func_802598D4(void *, s32);
 extern void func_8025BABC(void *, s16);
 
+typedef struct func_80257A34_S1 func_80257A34_S1;
+typedef struct func_80257A34_S2 func_80257A34_S2;
+struct func_80257A34_S1 {
+    char pad0[0x7C];
+    Handles unk7C;
+    char pad7C[0x110 - 0x7C - sizeof(Handles)];
+    char unk110;
+    char pad110[0x138 - 0x110 - sizeof(char)];
+    char unk138;
+    char pad138[0x1DB8 - 0x138 - sizeof(char)];
+    char unk1DB8;
+    char pad1DB8[0x1DBC - 0x1DB8 - sizeof(char)];
+    char unk1DBC;
+};
+struct func_80257A34_S2 {
+    char pad0[0x1C];
+    s32 unk1C;
+};
+
 s32 func_80257A34(void *arg0, s32 id) {
     void *temp_s0;
     void *var_a0;
@@ -46,23 +65,23 @@ s32 func_80257A34(void *arg0, s32 id) {
     if (id == -1) {
         return found;
     }
-    temp_s0 = (char *)arg0 + 0x110;
+    temp_s0 = &((func_80257A34_S1 *)(arg0))->unk110;
     temp_a0 = func_802C2020();
-    temp_v1 = *(s32 *)((char *)temp_s0 + 0x1C) + 1;
-    *(s32 *)((char *)temp_s0 + 0x1C) = temp_v1;
+    temp_v1 = ((func_80257A34_S2 *)(temp_s0))->unk1C + 1;
+    ((func_80257A34_S2 *)(temp_s0))->unk1C = temp_v1;
     if (temp_v1 != 1) {
         func_802C2040(temp_a0);
         func_802C0390((s32)temp_s0, 0, 1);
-        var_a0 = (char *)arg0 + 0x138;
+        var_a0 = &((func_80257A34_S1 *)(arg0))->unk138;
     } else {
         func_802C2040(temp_a0);
-        var_a0 = (char *)arg0 + 0x138;
+        var_a0 = &((func_80257A34_S1 *)(arg0))->unk138;
     }
     func_802598D4(var_a0, id);
     for (i = 0; i < 17; i++) {
-        if (((Voice *)((char *)arg0 + 0x1DBC + i * sizeof(Voice)))->sound == id) {
+        if (((Voice *)(&((func_80257A34_S1 *)(arg0))->unk1DBC + i * sizeof(Voice)))->sound == id) {
             found++;
-            voice = (Voice *)((char *)arg0 + (i * sizeof(Voice) + 0x1DBC));
+            voice = &((Voice *)&((func_80257A34_S1 *)arg0)->unk1DBC)[i];
             if (i == 16) {
                 voice->sound = -1;
                 voice->priority = 0;
@@ -74,16 +93,16 @@ s32 func_80257A34(void *arg0, s32 id) {
                     voice->pending = 0;
                     voice->flags &= ~0x10;
                 }
-                if (((Handles *)((char *)arg0 + 0x7C))[0].handles[i] != -1) {
-                    func_8025BABC((char *)arg0 + 0x1DB8, i);
+                if ((&((func_80257A34_S1 *)(arg0))->unk7C)[0].handles[i] != -1) {
+                    func_8025BABC(&((func_80257A34_S1 *)(arg0))->unk1DB8, i);
                 }
             }
         }
     }
-    temp_s0 = (char *)arg0 + 0x110;
+    temp_s0 = &((func_80257A34_S1 *)(arg0))->unk110;
     temp_v0 = func_802C2020();
-    temp_v1 = *(s32 *)((char *)temp_s0 + 0x1C) - 1;
-    *(s32 *)((char *)temp_s0 + 0x1C) = temp_v1;
+    temp_v1 = ((func_80257A34_S2 *)(temp_s0))->unk1C - 1;
+    ((func_80257A34_S2 *)(temp_s0))->unk1C = temp_v1;
     if (temp_v1 != 0) {
         func_802C2040(temp_v0);
         func_802C0510(temp_s0, 0, 1);

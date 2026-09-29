@@ -25,7 +25,22 @@ extern s32 func_8028FE1C(s32, s32, s32, s32 *);
 extern void func_8026DC24(void **, s32, s32, void *, s32, s32);
 extern void func_802536F4(s32, void *);
 
-#define AT(t, p, o) (*(t *)((char *)(p) + (o)))
+typedef struct func_8027EB00_S1 func_8027EB00_S1;
+typedef struct func_8027EB00_S2 func_8027EB00_S2;
+struct func_8027EB00_S1 {
+    char pad0[0x220];
+    char unk220;
+};
+struct func_8027EB00_S2 {
+    char pad0[0x8];
+    char unk8;
+    char pad8[0x110 - 0x8 - sizeof(char)];
+    s32 unk110;
+    s32 unk114;
+    void *unk118;
+};
+
+typedef struct { char pad[0x14]; s32 unk14; } Resource;
 
 void func_8027EB00(void *arg0, void *arg1) {
     Vec3 delta;
@@ -45,7 +60,7 @@ void func_8027EB00(void *arg0, void *arg1) {
         if (lookup == 0) {
             return;
         }
-        func_80272908((char *)arg1 + 0x220, (char *)arg0 + 8, &delta);
+        func_80272908(&((func_8027EB00_S1 *)(arg1))->unk220, &((func_8027EB00_S2 *)(arg0))->unk8, &delta);
         amount = delta.z;
         if (amount < 0.0f) {
             amount = -amount;
@@ -53,29 +68,29 @@ void func_8027EB00(void *arg0, void *arg1) {
         func_8027DD1C(arg0, (s32)lookup, (s32)arg1, amount);
     }
 
-    if (AT(s32, arg0, 0x110) == 0) {
-        resource = func_802518DC(0, AT(s32, AT(void *, arg0, 0x118), 0x14),
-                                AT(s32, AT(void *, arg0, 0x118), 0x14), 0x18,
+    if (((func_8027EB00_S2 *)arg0)->unk110 == 0) {
+        resource = func_802518DC(0, ((Resource *)((func_8027EB00_S2 *)arg0)->unk118)->unk14,
+                                ((Resource *)((func_8027EB00_S2 *)arg0)->unk118)->unk14, 0x18,
                                 0, 0, 0, &D_800C9E28, 1);
         if (resource != 0) {
             key = func_8028FE08(*resource,
-                                AT(s32, AT(void *, arg0, 0x118), 0x14), 1);
+                                ((Resource *)((func_8027EB00_S2 *)arg0)->unk118)->unk14, 1);
             func_802537D8(0, resource);
             found = func_80254094(0, &sp38, key, &D_800C9E40, 1);
             if (found != 0) {
-                AT(s32, arg0, 0x110) = func_8028FE1C(
+                ((func_8027EB00_S2 *)arg0)->unk110 = func_8028FE1C(
                     (s32)sp38, key, index % *(s32 *)sp38,
-                    (s32 *)((char *)arg0 + 0x114));
+                    &((func_8027EB00_S2 *)(arg0))->unk114);
                 func_802537D8(0, (void *)found);
             }
         }
-        if (AT(s32, arg0, 0x110) == 0) {
+        if (((func_8027EB00_S2 *)arg0)->unk110 == 0) {
             return;
         }
     }
 
-    resource = func_802518DC(0, AT(s32, arg0, 0x110),
-                            AT(s32, arg0, 0x110), AT(s32, arg0, 0x114),
+    resource = func_802518DC(0, ((func_8027EB00_S2 *)arg0)->unk110,
+                            ((func_8027EB00_S2 *)arg0)->unk110, ((func_8027EB00_S2 *)arg0)->unk114,
                             0, 0, &D_26D7F4, &D_800C9E58, 1);
     if (resource != 0) {
         func_8026DC24(resource, (s32)lookup, 0,

@@ -1,10 +1,41 @@
 #include "basetypes.h"
 typedef void (*Callback)(void *, void *);
 
-#define AT(type, base, offset) (*(type *)((char *)(base) + (offset)))
+typedef struct { void * field; } Access_void_0;
+typedef struct { u32 field; } Access_u32_0;
+typedef struct { char pad[0x4]; Callback field; } Access_Callback_4;
+typedef struct { char pad[0x1C]; s32 field; } Access_s32_1C;
+typedef struct { char pad[0x20]; s32 field; } Access_s32_20;
+typedef struct { char pad[0x24]; s32 field; } Access_s32_24;
+typedef struct { char pad[0x2C]; void * field; } Access_void_2C;
+typedef struct { char pad[0x30]; void * field; } Access_void_30;
+typedef struct { char pad[0x30]; s32 * field; } Access_s32_30;
+typedef struct { char pad[0x34]; u8 field; } Access_u8_34;
+typedef struct { char pad[0x34]; s8 field; } Access_s8_34;
+typedef struct { char pad[0x36]; u8 field; } Access_u8_36;
+typedef struct { char pad[0x3C]; s32 field; } Access_s32_3C;
+typedef struct { char pad[0x40]; s32 field; } Access_s32_40;
+typedef struct { char pad[0xCB]; u8 field; } Access_u8_CB;
+typedef struct { char pad[0xFC]; s32 field; } Access_s32_FC;
+typedef struct { char pad[0x100]; u32 field; } Access_u32_100;
+typedef struct { char pad[0x10F]; u8 field; } Access_u8_10F;
+typedef struct { char pad[0x123]; u8 field; } Access_u8_123;
+typedef struct { char pad[0x2E0]; u32 field; } Access_u32_2E0;
+
 
 extern s32 D_8011FE88;
 extern void func_80217388(void *, void *);
+
+typedef struct func_80214178_S1 func_80214178_S1;
+typedef struct func_80214178_S2 func_80214178_S2;
+struct func_80214178_S1 {
+    char pad0[0x20];
+    s32 unk20;
+};
+struct func_80214178_S2 {
+    char pad0[0x20];
+    s32 unk20;
+};
 
 s32 func_80214178(void *arg0, void *arg1, s32 arg2) {
     void *node;
@@ -16,22 +47,22 @@ s32 func_80214178(void *arg0, void *arg1, s32 arg2) {
         return 1;
     }
     if (D_8011FE88 == 4) {
-        AT(u32, arg0, 0x100) |= 0x100;
+        ((Access_u32_100 *)(arg0))->field |= 0x100;
     }
 
-    AT(u8, arg1, 0x36) = AT(u8, arg1, 0x34);
-    AT(u8, arg0, 0x10F) = 1;
-    AT(u8, arg0, 0x123) = 1;
-    if ((AT(void *, arg1, 0x30) != 0) && (AT(s8, arg1, 0x34) == arg2)) {
+    ((Access_u8_36 *)(arg1))->field = ((Access_u8_34 *)(arg1))->field;
+    ((Access_u8_10F *)(arg0))->field = 1;
+    ((Access_u8_123 *)(arg0))->field = 1;
+    if ((((Access_void_30 *)(arg1))->field != 0) && (((Access_s8_34 *)(arg1))->field == arg2)) {
         return 1;
     }
 
-    node = AT(void *, arg1, 0x2C);
+    node = ((Access_void_2C *)(arg1))->field;
     entry = 0;
-    AT(s8, arg1, 0x34) = arg2;
-    AT(s32, arg1, 0x40) = 0;
+    ((Access_s8_34 *)(arg1))->field = arg2;
+    ((Access_s32_40 *)(arg1))->field = 0;
     while (node != 0) {
-        scan = (s32 *)((char *)node + 0x20);
+        scan = &((func_80214178_S1 *)(node))->unk20;
         if (*scan != -1) {
             while (*scan != -1) {
                 if (*scan == arg2) {
@@ -39,11 +70,11 @@ s32 func_80214178(void *arg0, void *arg1, s32 arg2) {
                     node = 0;
                     break;
                 }
-                scan = (s32 *)((char *)scan + 0x20);
+                scan = &((func_80214178_S2 *)(scan))->unk20;
             }
         }
         if (node != 0) {
-            node = AT(void *, node, 0);
+            node = ((Access_void_0 *)(node))->field;
         }
     }
 
@@ -51,24 +82,24 @@ s32 func_80214178(void *arg0, void *arg1, s32 arg2) {
         return 0;
     }
 
-    AT(s32 *, arg1, 0x30) = entry;
-    AT(u32, arg0, 0x2E0) &= 0x1F80007F;
-    if ((AT(u32, arg0, 0x100) & 0x08000000) == 0) {
-        AT(u8, arg1, 0xCB) = 0;
-        AT(u32, arg1, 0) &= ~1U;
+    ((Access_s32_30 *)(arg1))->field = entry;
+    ((Access_u32_2E0 *)(arg0))->field &= 0x1F80007F;
+    if ((((Access_u32_100 *)(arg0))->field & 0x08000000) == 0) {
+        ((Access_u8_CB *)(arg1))->field = 0;
+        ((Access_u32_0 *)(arg1))->field &= ~1U;
     }
-    if (AT(s32, arg1, 0xFC) != 0) {
+    if (((Access_s32_FC *)(arg1))->field != 0) {
         func_80217388(arg0, arg1);
     }
-    if (AT(Callback, entry, 4) != 0) {
-        AT(Callback, entry, 4)(arg0, arg1);
+    if (((Access_Callback_4 *)(entry))->field != 0) {
+        ((Access_Callback_4 *)(entry))->field(arg0, arg1);
     }
     flags = entry[7];
-    AT(s32, arg1, 0x3C) = flags;
+    ((Access_s32_3C *)(arg1))->field = flags;
     if (flags & 4) {
-        AT(s32, arg0, 0x1C) = 0;
-        AT(s32, arg0, 0x20) = 0;
-        AT(s32, arg0, 0x24) = 0;
+        ((Access_s32_1C *)(arg0))->field = 0;
+        ((Access_s32_20 *)(arg0))->field = 0;
+        ((Access_s32_24 *)(arg0))->field = 0;
     }
-    return AT(s8, arg1, 0x34) == arg2;
+    return ((Access_s8_34 *)(arg1))->field == arg2;
 }

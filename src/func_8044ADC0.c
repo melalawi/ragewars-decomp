@@ -14,6 +14,41 @@ void func_804426B4(void *);                    /* extern */
 extern s32 D_800E28D0, D_800E28D4;
 extern Pair D_80103220;
 
+typedef struct func_8044ADC0_S1 func_8044ADC0_S1;
+typedef struct func_8044ADC0_S2 func_8044ADC0_S2;
+struct func_8044ADC0_S1 {
+    char pad0[0x24];
+    u8 unk24;
+    char pad24[0xA0 - 0x24 - sizeof(u8)];
+    u8 unkA0;
+    char padA0[0xB8 - 0xA0 - sizeof(u8)];
+    u8 unkB8;
+    char padB8[0xCC - 0xB8 - sizeof(u8)];
+    u8 unkCC;
+    char padCC[0xE0 - 0xCC - sizeof(u8)];
+    u8 unkE0;
+    char padE0[0x140 - 0xE0 - sizeof(u8)];
+    u8 unk140;
+    char pad140[0x160 - 0x140 - sizeof(u8)];
+    u8 unk160;
+    char pad160[0x1A0 - 0x160 - sizeof(u8)];
+    u8 unk1A0;
+    char pad1A0[0x1E0 - 0x1A0 - sizeof(u8)];
+    u8 unk1E0;
+    char pad1E0[0x554 - 0x1E0 - sizeof(u8)];
+    u8 unk554;
+    char pad554[0xE40 - 0x554 - sizeof(u8)];
+    u8 unkE40;
+    char padE40[0xE54 - 0xE40 - sizeof(u8)];
+    u8 unkE54;
+    char padE54[0xE94 - 0xE54 - sizeof(u8)];
+    u8 unkE94;
+};
+struct func_8044ADC0_S2 {
+    char pad0[0x10];
+    State unk10;
+};
+
 /* Warning: Gap in callee-saved word stack region.
  * Saved: [0x10, 0x14, 0x20, 0x24], gap at: 0x18. */
 void func_8044ADC0(State *arg0) {
@@ -28,18 +63,19 @@ void func_8044ADC0(State *arg0) {
     Floats *temp_v0_5;
     State *var_v1;
     State *record;
+    typedef struct { u8 bytes[16]; } ClipStride;
 
-    func_80238EA8(((void *)((char *)arg0 + 0x24)));
-    func_80272848(((void *)((char *)arg0 + 0x160)));
-    func_80272848(((void *)((char *)arg0 + 0x1E0)));
+    func_80238EA8(((void *)&((func_8044ADC0_S1 *)(arg0))->unk24));
+    func_80272848(((void *)&((func_8044ADC0_S1 *)(arg0))->unk160));
+    func_80272848(((void *)&((func_8044ADC0_S1 *)(arg0))->unk1E0));
     zero = 0.0f;
     temp_f21 = 1.0f;
-    temp_v0 = ((void *)((char *)arg0 + 0x140));
+    temp_v0 = ((void *)&((func_8044ADC0_S1 *)(arg0))->unk140);
     temp_v0->unk8 = zero;
     temp_v0->unk4 = zero;
     arg0->unk140 = zero;
     arg0->unk14C = temp_f21;
-    func_80272848(((void *)((char *)arg0 + 0x1A0)));
+    func_80272848(((void *)&((func_8044ADC0_S1 *)(arg0))->unk1A0));
     arg0->unk29C = (f32) D_800E28D0;
     arg0->unk2A0 = (f32) D_800E28D4;
     arg0->unk518 = -1;
@@ -65,24 +101,24 @@ void func_8044ADC0(State *arg0) {
     arg0->unk530 = (f32) 47.5f;
     arg0->unk534 = (f32) 47.5f;
     func_802393C8(arg0);
-    temp_v0_2 = ((void *)((char *)arg0 + 0xA0));
+    temp_v0_2 = ((void *)&((func_8044ADC0_S1 *)(arg0))->unkA0);
     arg0->unkF4 = zero;
     arg0->unkF8 = zero;
     temp_v0_2->unk8 = zero;
     temp_v0_2->unkC = zero;
     temp_v0_2->unk10 = zero;
     temp_v0_2->unk14 = temp_f21;
-    temp_v0_3 = ((void *)((char *)arg0 + 0xB8));
+    temp_v0_3 = ((void *)&((func_8044ADC0_S1 *)(arg0))->unkB8);
     temp_v0_3->unk4 = zero;
     temp_v0_3->unk8 = zero;
     temp_v0_3->unkC = zero;
     temp_v0_3->unk10 = zero;
-    temp_v0_4 = ((void *)((char *)arg0 + 0xCC));
+    temp_v0_4 = ((void *)&((func_8044ADC0_S1 *)(arg0))->unkCC);
     temp_v0_4->unk4 = zero;
     temp_v0_4->unk8 = zero;
     temp_v0_4->unkC = zero;
     temp_v0_4->unk10 = zero;
-    temp_v0_5 = ((void *)((char *)arg0 + 0xE0));
+    temp_v0_5 = ((void *)&((func_8044ADC0_S1 *)(arg0))->unkE0);
     temp_v0_5->unk4 = zero;
     temp_v0_5->unk8 = zero;
     temp_v0_5->unkC = zero;
@@ -90,9 +126,10 @@ void func_8044ADC0(State *arg0) {
     func_802390E4(arg0, 0);
     var_a1 = 0;
     var_v1 = arg0;
+
     temp_a0 = D_800E28D0 * 2;
     do {
-        record = (State *)((char *)arg0 + var_a1 * 16);
+        record = (State *)&((ClipStride *)arg0)[var_a1];
         record->unk2B0 = temp_a0;
         record->unk2B2 = temp_a0;
         record->unk2B4 = 0x3FF;
@@ -102,16 +139,17 @@ void func_8044ADC0(State *arg0) {
         record->unk2BC = 0;
         record->unk2BE = 0;
         var_a1 += 1;
-        var_v1 = (State *)((char *)var_v1 + 0x10);
+        var_v1 = &((func_8044ADC0_S2 *)(var_v1))->unk10;
+
     } while (var_a1 < 2);
-    func_804426B4(((void *)((char *)arg0 + 0x554)));
-    func_80272848(((void *)((char *)arg0 + 0xE54)));
-    func_80272848(((void *)((char *)arg0 + 0xE94)));
+    func_804426B4(((void *)&((func_8044ADC0_S1 *)(arg0))->unk554));
+    func_80272848(((void *)&((func_8044ADC0_S1 *)(arg0))->unkE54));
+    func_80272848(((void *)&((func_8044ADC0_S1 *)(arg0))->unkE94));
     arg0->unk544 = 0;
     arg0->unk120 = 0;
     arg0->unk124 = 0x32;
     arg0->unk126 = 0;
     D_80103220.unk4 = 0;
-    func_80255C40(((void *)((char *)arg0 + 0xE40)), 0, 4);
+    func_80255C40(((void *)&((func_8044ADC0_S1 *)(arg0))->unkE40), 0, 4);
     func_80239C10(arg0);
 }

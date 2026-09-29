@@ -16,7 +16,21 @@ extern void func_80438BA4(void);
 extern void *func_8025CC8C(void);
 extern void func_8025CBA8(void *arg0);
 
-#define FIELD(t, p, o) (*(t *)((char *)(p) + (o)))
+typedef struct func_80286254_S1 func_80286254_S1;
+typedef struct func_80286254_S2 func_80286254_S2;
+struct func_80286254_S1 {
+    char pad0[0xC50];
+    s32 unkC50;
+    char padC54[0xE50-0xC54];
+    s32 unkE50;
+};
+struct func_80286254_S2 {
+    char pad0[0x18];
+    s32* unk18;
+};
+
+typedef struct { char pad[0x100]; u32 flags; } ObjectFlags;
+typedef struct { char pad[0x1295]; u8 mode; } GlobalMode;
 
 void func_80286254(void *arg0) {
     s32 count;
@@ -32,8 +46,8 @@ void func_80286254(void *arg0) {
     u32 remove_value;
 
     count = 0;
-    total = FIELD(s32, arg0, 0xE50);
-    objects = (s32 *)((char *)arg0 + 0xC50);
+    total = ((func_80286254_S1 *)arg0)->unkE50;
+    objects = &((func_80286254_S1 *)(arg0))->unkC50;
     if (total > 0) {
         object_type = 2;
         skip_mask = 0x40000000;
@@ -44,18 +58,18 @@ void func_80286254(void *arg0) {
             void *next_object;
 
             next_object = (void *)*objectp;
-            if (**(s32 **)((char *)next_object + 0x18) != object_type) {
+            if (*((func_80286254_S2 *)(next_object))->unk18 != object_type) {
                 goto first_pass_done;
             }
             object = next_object;
             objectp++;
-            flags = FIELD(u32, object, 0x100);
+            flags = ((ObjectFlags *)object)->flags;
             saved_delta = D_800D2988;
             count++;
             if (!(flags & skip_mask)) {
                 func_8024BE2C(object);
             }
-            if ((FIELD(u32, object, 0x100) & remove_mask) == remove_value) {
+            if ((((ObjectFlags *)object)->flags & remove_mask) == remove_value) {
                 func_80246E34(object);
             }
             D_800D2988 = saved_delta;
@@ -72,7 +86,7 @@ first_pass_done:
         static void *sw_mode_labels[0] __attribute__((section(".sdata"))) = {
             &&sw_mode_0, &&sw_mode_2, &&sw_mode_1, &&sw_mode_3, &&sw_mode_4, &&sw_mode_default
         };
-        s32 sw_mode_value = FIELD(u8, &D_80145040, 0x1295);
+        s32 sw_mode_value = ((GlobalMode *)&D_80145040)->mode;
         if ((unsigned int)sw_mode_value > 4) {
             goto sw_mode_default;
         }
@@ -101,7 +115,7 @@ first_pass_done:
             saved_delta = D_800D2988;
             func_8024BE2C(object);
             count++;
-            if (FIELD(u32, object, 0x100) & 0x2000) {
+            if (((ObjectFlags *)object)->flags & 0x2000) {
                 func_80246E34(object);
             }
             D_800D2988 = saved_delta;

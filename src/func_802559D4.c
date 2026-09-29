@@ -17,6 +17,12 @@ typedef struct {
     Block *tail;
 } Heap;
 
+typedef struct func_802559D4_S1 func_802559D4_S1;
+struct func_802559D4_S1 {
+    char pad0[0x20];
+    char unk20;
+};
+
 void *func_802559D4(Heap *heap, s32 request)
 {
     Block *block;
@@ -26,7 +32,7 @@ void *func_802559D4(Heap *heap, s32 request)
     size = (request + 0x2F) & ~0xF;
     for (block = heap->tail; block != 0; block = block->prevFree) {
         if (block->free >= size) {
-            split = (Block *)((char *)block + block->size + block->free - size);
+            { u8 *cursor = (u8 *)block; cursor += block->size; cursor += block->free; cursor -= size; split = (Block *)cursor; }
             split->size = size;
             split->free = 0;
             block->free -= size;
@@ -54,7 +60,7 @@ void *func_802559D4(Heap *heap, s32 request)
                 split->next->prev = split;
             }
             block->next = split;
-            return (char *)split + 0x20;
+            return &((func_802559D4_S1 *)(split))->unk20;
         }
     }
     return 0;

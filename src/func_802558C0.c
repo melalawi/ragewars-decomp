@@ -20,6 +20,12 @@ typedef struct {
     Block *tail;
 } Heap;
 
+typedef struct func_802558C0_S1 func_802558C0_S1;
+struct func_802558C0_S1 {
+    char pad0[0x20];
+    char unk20;
+};
+
 void *func_802558C0(Heap *heap, s32 request) {
     Block *block;
     Block *split;
@@ -28,7 +34,7 @@ void *func_802558C0(Heap *heap, s32 request) {
     size = (request + 0x2F) & ~0xF;
     for (block = heap->head; block != 0; block = block->nextFree) {
         if (block->free >= size) {
-            split = (Block *)((char *)block + block->size);
+            { u8 *cursor = (u8 *)block; cursor += block->size; split = (Block *)cursor; }
             split->size = size;
             split->free = block->free - size;
             if (split->free != 0) {
@@ -66,7 +72,7 @@ void *func_802558C0(Heap *heap, s32 request) {
                 split->next->prev = split;
             }
             block->next = split;
-            return (char *)split + 0x20;
+            return &((func_802558C0_S1 *)(split))->unk20;
         }
     }
     return 0;

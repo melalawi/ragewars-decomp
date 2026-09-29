@@ -4,13 +4,20 @@
 
 typedef s32 (*Handler8043C1D0)(void *, s32, s32, s32, s32);
 
-extern s32 D_800E5C04;
-extern s32 D_800E5C08;
+typedef struct { s32 value; char pad[8]; } FieldRow;
+extern FieldRow D_800E5C04[];
+extern FieldRow D_800E5C08[];
 extern Handler8043C1D0 D_800E5C0C;
+
+typedef struct func_8043C1D0_S1 func_8043C1D0_S1;
+struct func_8043C1D0_S1 {
+    char pad0[0xC];
+    s16 unkC;
+};
 
 s32 func_8043C1D0(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     char *entry;
-    s32 offset;
+    s32 index;
     s32 wildcard;
     s32 actor_kind;
     s32 table_kind;
@@ -18,17 +25,17 @@ s32 func_8043C1D0(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     if (D_800E5C0C != 0) {
         wildcard = 0x7530;
         entry = (char *)&D_800E5C0C;
-        offset = 0;
+        index = 0;
         do {
-            if (*(s32 *)((char *)&D_800E5C04 + offset) == arg1) {
-                actor_kind = *(s16 *)((char *)arg0 + 0xC);
-                table_kind = *(s32 *)((char *)&D_800E5C08 + offset);
+            if (D_800E5C04[index].value == arg1) {
+                actor_kind = ((func_8043C1D0_S1 *)(arg0))->unkC;
+                table_kind = D_800E5C08[index].value;
                 if ((table_kind == actor_kind) || (table_kind == wildcard)) {
                     return (*(Handler8043C1D0 *)entry)(arg0, arg1, arg2, arg3, arg4);
                 }
             }
             entry += 0xC;
-            offset += 0xC;
+            index++;
         } while (*(Handler8043C1D0 *)entry != 0);
     }
     return 0;

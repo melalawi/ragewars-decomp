@@ -9,6 +9,41 @@ extern s32 D_800D7F88;
 extern char D_80145088;
 extern char D_801450C8;
 
+typedef struct func_80204308_S1 func_80204308_S1;
+typedef struct func_80204308_S2 func_80204308_S2;
+typedef struct func_80204308_S3 func_80204308_S3;
+typedef struct func_80204308_S4 func_80204308_S4;
+typedef struct func_80204308_S5 func_80204308_S5;
+typedef struct func_80204308_S6 func_80204308_S6;
+struct func_80204308_S1 {
+    char pad0[0x18];
+    void* unk18;
+};
+struct func_80204308_S2 {
+    char pad0[0x14];
+    char unk14;
+};
+struct func_80204308_S3 {
+    char pad0[0x16];
+    s16 unk16;
+    char pad16[0x18 - 0x16 - sizeof(s16)];
+    s16 unk18;
+};
+struct func_80204308_S4 {
+    char pad0[0x34];
+    s8 unk34;
+};
+struct func_80204308_S5 {
+    char pad0[0x100];
+    s32 unk100;
+    char pad100[0x1D8 - 0x100 - sizeof(s32)];
+    void* unk1D8;
+};
+struct func_80204308_S6 {
+    char pad0[0x5DC];
+    void* unk5DC;
+};
+
 s32 func_80204308(void *arg0, void *arg1, void *arg2) {
     char *rec;
     void *table;
@@ -17,37 +52,37 @@ s32 func_80204308(void *arg0, void *arg1, void *arg2) {
     s16 index;
     s32 callback;
 
-    rec = (char *)*(void **)((char *)arg0 + 0x18) + 0x14;
-    if (*(s16 *)(rec + 0x16) == 0) {
+    rec = &((func_80204308_S2 *)(((func_80204308_S1 *)(arg0))->unk18))->unk14;
+    if (((func_80204308_S3 *)(rec))->unk16 == 0) {
         return 1;
     }
-    if (*(s8 *)((char *)arg1 + 0x34) != 0) {
+    if (((func_80204308_S4 *)(arg1))->unk34 != 0) {
         return 1;
     }
     if (*(u8 *)arg2 != 1) {
         return 1;
     }
-    if ((*(s32 *)((char *)arg2 + 0x100) & 0x300000) == 0) {
+    if ((((func_80204308_S5 *)(arg2))->unk100 & 0x300000) == 0) {
         return 1;
     }
 
-    index = *(s16 *)(rec + 0x18);
-    table = *(void **)((char *)arg2 + 0x1D8);
+    index = ((func_80204308_S3 *)(rec))->unk18;
+    table = ((func_80204308_S5 *)(arg2))->unk1D8;
     if (index == 0) {
         return 0;
     }
 
-    value = *(void **)((char *)table + 0x5DC);
+    value = ((func_80204308_S6 *)(table))->unk5DC;
     fallback = &D_801450C8;
     if (value != 0) {
         fallback = value;
     }
     func_802398F8(&D_80145088, fallback,
-                  **(s32 **)((char *)D_800D7F84 + index * 8), arg0,
+                  *D_800D7F84[index * 2], arg0,
                   D_800C6B5C);
 
-    index = *(s16 *)(rec + 0x18);
-    callback = *(s32 *)((char *)&D_800D7F88 + index * 8);
+    index = ((func_80204308_S3 *)(rec))->unk18;
+    callback = (&D_800D7F88)[index * 2];
     if (callback != 0) {
         func_8025E13C(callback);
     }
