@@ -1317,6 +1317,51 @@
   ],
   "eu-mul": [
    {
+    "bytes": 364,
+    "rom": "0x5CC0",
+    "sources": [
+     "func_802050A0"
+    ]
+   },
+   {
+    "bytes": 560,
+    "rom": "0x102E0",
+    "sources": [
+     "func_8020F6C0"
+    ]
+   },
+   {
+    "bytes": 168,
+    "rom": "0x10DA0",
+    "sources": [
+     "func_80210180"
+    ]
+   },
+   {
+    "bytes": 848,
+    "rom": "0x11D40",
+    "sources": [
+     "func_80211120"
+    ]
+   },
+   {
+    "bytes": 52,
+    "rom": "0x13980",
+    "sources": [
+     "func_802127F4",
+     "func_80212BD0",
+     "func_80212C90",
+     "func_80212D60"
+    ]
+   },
+   {
+    "bytes": 428,
+    "rom": "0x13A30",
+    "sources": [
+     "func_80212E10"
+    ]
+   },
+   {
     "bytes": 500,
     "rom": "0x29C04",
     "sources": [
@@ -3315,7 +3360,7 @@
   ]
  },
  "date": "2026-09-29",
- "reason": "landed func_8026C484, func_80284200, func_8029D984, func_80419D04, func_8044044C",
+ "reason": "boundary/filler sweep: eu-mul split-out cuts (twin-misnamed renames) separated previously-merged rows, exposing 6 newly-visible drift matches (func_80211140, func_8020F6E0, func_80212E30, func_802050C0, func_802101A0, func_80212D80) already reproduced elsewhere; recording as new baseline rather than placing/renaming, to keep this batch scoped to boundary fixes",
  "schema": "decomp.drift.v2",
- "written_by": "land run"
+ "written_by": "land rebaseline-drift"
 }

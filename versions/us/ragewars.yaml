@@ -38,7 +38,7 @@ segments:
       - [0x001138, asm, nonmatchings/func_80200538]
       - [0x001168, asm, nonmatchings/func_80200568]
       - [0x0011A0, asm, nonmatchings/func_802005A0]
-      - [0x0011DC, asm, nonmatchings/func_802005DC]
+      - [0x0011DC, asm, nonmatchings/us_func_802005DC]
       - [0x001210, asm, nonmatchings/func_80200610]
       - [0x001400, asm, nonmatchings/func_80200800]
       - [0x001440, asm, nonmatchings/func_80200840]

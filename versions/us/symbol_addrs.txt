@@ -5802,3 +5802,4 @@ D_800C975C = 0x800C459C; // type:u32 derived by the trial of func_8026C484
 D_800C9770 = 0x800C45B0; // type:u32 derived by the trial of func_8026C484
 D_800C9784 = 0x800C45C4; // type:u32 derived by the trial of func_8026C484
 D_800C9F78 = 0x800C4DB8; // type:u32 derived by the trial of func_80284200
+us_func_802005DC = 0x802005DC; // placed by decomp --version us split out --cut us_func_802005DC@0x802005DC --apply
