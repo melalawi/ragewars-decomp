@@ -1,0 +1,344 @@
+{
+  "objects": {
+    "SharedMovement": {
+      "fields": [
+        {
+          "array": 1,
+          "name": "unk0",
+          "offset": 0,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unk8",
+          "offset": 8,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unkC",
+          "offset": 12,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unk10",
+          "offset": 16,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unk14",
+          "offset": 20,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unk1C",
+          "offset": 28,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unk22",
+          "offset": 34,
+          "provenance": [
+            "src/func_802233CC.c",
+            "src/func_802238BC.c"
+          ],
+          "size": 2,
+          "type": "s16"
+        }
+      ],
+      "header": "movement.h",
+      "members": [
+        "src/func_802233CC.c:Movement",
+        "src/func_802238BC.c:Movement"
+      ],
+      "proof": {
+        "src/func_802233CC.c": {
+          "cartridges": {
+            "de": "byte-identical -- identical 316 of 316; 0 inserted, 0 missing",
+            "eu": "byte-identical -- identical 316 of 316; 0 inserted, 0 missing",
+            "eu-mul": "byte-identical -- identical 316 of 316; 0 inserted, 0 missing",
+            "us": "byte-identical -- identical 316 of 316; 0 inserted, 0 missing",
+            "us-rev1": "byte-identical -- identical 316 of 316; 0 inserted, 0 missing"
+          },
+          "status": "proven"
+        },
+        "src/func_802238BC.c": {
+          "cartridges": {
+            "de": "byte-identical -- identical 341 of 341; 0 inserted, 0 missing",
+            "eu": "byte-identical -- identical 341 of 341; 0 inserted, 0 missing",
+            "eu-mul": "byte-identical -- identical 341 of 341; 0 inserted, 0 missing",
+            "us": "byte-identical -- identical 341 of 341; 0 inserted, 0 missing",
+            "us-rev1": "byte-identical -- identical 341 of 341; 0 inserted, 0 missing"
+          },
+          "status": "proven"
+        }
+      },
+      "size": 36
+    },
+    "SharedPlayer": {
+      "fields": [
+        {
+          "array": 1,
+          "name": "unk5D8",
+          "offset": 1496,
+          "provenance": [
+            "src/func_8022C54C.c"
+          ],
+          "size": 4,
+          "type": "void *"
+        },
+        {
+          "array": 1,
+          "name": "unk5DC",
+          "offset": 1500,
+          "provenance": [
+            "src/func_8022A37C.c",
+            "src/func_8022A624.c"
+          ],
+          "size": 4,
+          "type": "void *"
+        },
+        {
+          "array": 1,
+          "name": "unk5E4",
+          "offset": 1508,
+          "provenance": [
+            "src/func_8023333C.c"
+          ],
+          "size": 4,
+          "type": "s32"
+        },
+        {
+          "array": 1,
+          "name": "unk5F4",
+          "offset": 1524,
+          "provenance": [
+            "src/func_8022BEF4.c"
+          ],
+          "size": 2,
+          "type": "s16"
+        },
+        {
+          "array": 1,
+          "name": "unk5F6",
+          "offset": 1526,
+          "provenance": [
+            "src/func_8022BEF4.c"
+          ],
+          "size": 2,
+          "type": "s16"
+        },
+        {
+          "array": 1,
+          "name": "unk5F8",
+          "offset": 1528,
+          "provenance": [
+            "src/func_8022BEF4.c"
+          ],
+          "size": 2,
+          "type": "s16"
+        },
+        {
+          "array": 1,
+          "name": "unk62E",
+          "offset": 1582,
+          "provenance": [
+            "src/func_8023333C.c"
+          ],
+          "size": 2,
+          "type": "s16"
+        },
+        {
+          "array": 1,
+          "name": "unk650",
+          "offset": 1616,
+          "provenance": [
+            "src/func_8022BEF4.c"
+          ],
+          "size": 2,
+          "type": "u16"
+        },
+        {
+          "array": 1,
+          "name": "unk670",
+          "offset": 1648,
+          "provenance": [
+            "src/func_8022BEF4.c"
+          ],
+          "size": 4,
+          "type": "f32"
+        },
+        {
+          "array": 1,
+          "name": "unk6AC",
+          "offset": 1708,
+          "provenance": [
+            "src/func_8023333C.c"
+          ],
+          "size": 4,
+          "type": "s32"
+        },
+        {
+          "array": 1,
+          "name": "unk770",
+          "offset": 1904,
+          "provenance": [
+            "src/func_8023333C.c"
+          ],
+          "size": 2,
+          "type": "s16"
+        },
+        {
+          "array": 1,
+          "name": "unk80C",
+          "offset": 2060,
+          "provenance": [
+            "src/func_8022BEF4.c"
+          ],
+          "size": 4,
+          "type": "s32"
+        },
+        {
+          "array": 1,
+          "name": "unk84C",
+          "offset": 2124,
+          "provenance": [
+            "src/func_8022BEF4.c"
+          ],
+          "size": 4,
+          "type": "s32"
+        },
+        {
+          "array": 1,
+          "name": "unk16E0",
+          "offset": 5856,
+          "provenance": [
+            "src/func_8022A37C.c",
+            "src/func_8022A624.c",
+            "src/func_8022C54C.c"
+          ],
+          "size": 4,
+          "type": "void *"
+        }
+      ],
+      "header": "player.h",
+      "members": [
+        "src/func_8022A37C.c:func_8022A37C_S2",
+        "src/func_8022A624.c:func_8022A624_S2",
+        "src/func_8022BEF4.c:func_8022BEF4_S1",
+        "src/func_8022C54C.c:func_8022C54C_S2",
+        "src/func_8023333C.c:func_8023333C_S3"
+      ],
+      "proof": {
+        "src/func_8022A37C.c": {
+          "cartridges": {
+            "de": "byte-identical -- identical 24 of 24; 0 inserted, 0 missing",
+            "eu": "byte-identical -- identical 24 of 24; 0 inserted, 0 missing",
+            "eu-mul": "byte-identical -- identical 24 of 24; 0 inserted, 0 missing",
+            "us": "byte-identical -- identical 24 of 24; 0 inserted, 0 missing",
+            "us-rev1": "byte-identical -- identical 27 of 27; 0 inserted, 0 missing"
+          },
+          "status": "proven"
+        },
+        "src/func_8022A624.c": {
+          "cartridges": {
+            "de": "byte-identical -- identical 22 of 22; 0 inserted, 0 missing",
+            "eu": "byte-identical -- identical 22 of 22; 0 inserted, 0 missing",
+            "eu-mul": "byte-identical -- identical 22 of 22; 0 inserted, 0 missing",
+            "us": "byte-identical -- identical 22 of 22; 0 inserted, 0 missing",
+            "us-rev1": "byte-identical -- identical 22 of 22; 0 inserted, 0 missing"
+          },
+          "status": "proven"
+        },
+        "src/func_8022BEF4.c": {
+          "cartridges": {
+            "de": "byte-identical -- identical 87 of 87; 0 inserted, 0 missing",
+            "eu": "byte-identical -- identical 87 of 87; 0 inserted, 0 missing",
+            "eu-mul": "byte-identical -- identical 87 of 87; 0 inserted, 0 missing",
+            "us": "byte-identical -- identical 87 of 87; 0 inserted, 0 missing",
+            "us-rev1": "byte-identical -- identical 87 of 87; 0 inserted, 0 missing"
+          },
+          "status": "proven"
+        },
+        "src/func_8022C54C.c": {
+          "cartridges": {
+            "de": "byte-identical -- identical 20 of 20; 0 inserted, 0 missing",
+            "eu": "byte-identical -- identical 20 of 20; 0 inserted, 0 missing",
+            "eu-mul": "byte-identical -- identical 20 of 20; 0 inserted, 0 missing",
+            "us": "byte-identical -- identical 20 of 20; 0 inserted, 0 missing",
+            "us-rev1": "byte-identical -- identical 20 of 20; 0 inserted, 0 missing"
+          },
+          "status": "proven"
+        },
+        "src/func_8023333C.c": {
+          "cartridges": {
+            "de": "byte-identical -- identical 59 of 59; 0 inserted, 0 missing",
+            "eu": "byte-identical -- identical 59 of 59; 0 inserted, 0 missing",
+            "eu-mul": "byte-identical -- identical 59 of 59; 0 inserted, 0 missing",
+            "us": "byte-identical -- identical 59 of 59; 0 inserted, 0 missing",
+            "us-rev1": "byte-identical -- identical 59 of 59; 0 inserted, 0 missing"
+          },
+          "status": "proven"
+        }
+      },
+      "size": 5860
+    }
+  },
+  "schema": "matchkit.unify.v1"
+}

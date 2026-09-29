@@ -32,6 +32,7 @@ The Makefile here holds no build logic. It forwards each goal to the toolkit ver
 | `make build` | extract, compile, link, and verify the image against the cartridge |
 | `make cartridge-differences` | measure how the released cartridges differ |
 | `make check` | judge the built tree |
+| `make check-fast` | judge sources and generated descriptions without building an image |
 | `make clean` | remove this cartridge's build products |
 | `make decomp-yaml` | rewrite the split description |
 | `make development` | rewrite this file |
@@ -52,5 +53,5 @@ The Makefile here holds no build logic. It forwards each goal to the toolkit ver
 | `artifacts` | everything not committed: your ROM, your compiler, all build output |
 | `.github` | declared by `[tracker].workflow` |
 | `data` | declared by `[differences].record`, `[share].history`, `[source].ownership`, `[state].attempts`, `[state].drift`, `[target].text_alignment`, `[toolchain].object_options`, `[toolchain].survey`, `[tracker].report` |
-| `splat` | declared by `[source].include`, `[split].include` |
+| `splat` | declared by `[source].include`, `[source].shared_structs`, `[split].include` |
 

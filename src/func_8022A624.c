@@ -1,18 +1,14 @@
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
 
 typedef struct func_8022A624_S1 func_8022A624_S1;
-typedef struct func_8022A624_S2 func_8022A624_S2;
+typedef SharedPlayer func_8022A624_S2;
 typedef struct func_8022A624_S3 func_8022A624_S3;
 struct func_8022A624_S1 {
     char pad0[0x20];
     void* unk20;
 };
-struct func_8022A624_S2 {
-    char pad0[0x5DC];
-    void* unk5DC;
-    char pad5DC[0x16E0 - 0x5DC - sizeof(void*)];
-    void* unk16E0;
-};
+
 struct func_8022A624_S3 {
     char pad0[0x564];
     s32 unk564;

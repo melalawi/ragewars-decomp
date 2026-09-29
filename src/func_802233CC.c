@@ -1,6 +1,7 @@
 /* Updates player forward, strafe and impulse velocities, accumulates movement and plays the impulse sound. */
 extern float D_800D2988[];
 #include "basetypes.h"
+#include "../splat/types/shared/movement.h"
 typedef struct Vec { f32 x,y,z; } Vec;
 typedef struct Player {
  char pad0[0x66c];
@@ -32,18 +33,7 @@ typedef struct Actor {
  char pad14[0x58];
  f32 unk6C;
 } Actor;
-typedef struct Movement {
- f32 unk0;
- f32 unk4;
- f32 unk8;
- f32 unkC;
- f32 unk10;
- f32 unk14;
- f32 unk18;
- f32 unk1C;
- char pad20[0x2];
- s16 unk22;
-} Movement;
+typedef SharedMovement Movement;
 extern s32 func_80245774(void);
 extern void func_8025DE74(s16,Vec,s32,s32),func_80271FA4(Vec *,Vec *,Vec *),func_8027200C(Vec *,Vec *,f32),func_802727B8(Vec *,f32);
 extern f32 func_80274710(f32,f32,f32),func_80274810(f32,f32),func_802BB630(f32),func_802BC200(f32);

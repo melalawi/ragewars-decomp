@@ -36,6 +36,7 @@ subalign = 4
 filler_mirror_distance = 0x1000
 
 [source]
+shared_structs = "splat/types/shared"
 include = ["splat/include", "splat/types"]
 
 [toolchain]

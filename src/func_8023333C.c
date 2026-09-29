@@ -1,4 +1,5 @@
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
 
 extern s32 func_80222A80(void *arg0, s16 arg1);
 extern s16 func_8022F95C(void *arg0);
@@ -12,7 +13,7 @@ extern f32 D_800C8144;
 
 typedef struct func_8023333C_S1 func_8023333C_S1;
 typedef struct func_8023333C_S2 func_8023333C_S2;
-typedef struct func_8023333C_S3 func_8023333C_S3;
+typedef SharedPlayer func_8023333C_S3;
 struct func_8023333C_S1 {
     char pad0[0x104];
     f32 unk104;
@@ -23,16 +24,7 @@ struct func_8023333C_S2 {
     char pad0[0x13C];
     s32 unk13C;
 };
-struct func_8023333C_S3 {
-    char pad0[0x5E4];
-    s32 unk5E4;
-    char pad5E4[0x62E - 0x5E4 - sizeof(s32)];
-    s16 unk62E;
-    char pad62E[0x6AC - 0x62E - sizeof(s16)];
-    s32 unk6AC;
-    char pad6AC[0x770 - 0x6AC - sizeof(s32)];
-    s16 unk770;
-};
+
 
 void func_8023333C(void *arg0, void *arg1) {
     void *actor;

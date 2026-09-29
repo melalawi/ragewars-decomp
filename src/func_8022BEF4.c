@@ -5,29 +5,15 @@
    three slot counts at 0x5F4 without going below zero. Written from its own assembly with early
    returns and a clamp-at-zero decrement. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
 
 extern s32 D_8013B29C;
 extern s32 D_801462C8;
 extern s32 func_80245774(void);
 extern s32 func_8022C450(void *);
 
-typedef struct func_8022BEF4_S1 func_8022BEF4_S1;
-struct func_8022BEF4_S1 {
-    char pad0[0x5F4];
-    s16 unk5F4;
-    char pad5F4[0x5F6 - 0x5F4 - sizeof(s16)];
-    s16 unk5F6;
-    char pad5F6[0x5F8 - 0x5F6 - sizeof(s16)];
-    s16 unk5F8;
-    char pad5F8[0x650 - 0x5F8 - sizeof(s16)];
-    u16 unk650;
-    char pad650[0x670 - 0x650 - sizeof(u16)];
-    f32 unk670;
-    char pad670[0x80C - 0x670 - sizeof(f32)];
-    s32 unk80C;
-    char pad80C[0x84C - 0x80C - sizeof(s32)];
-    s32 unk84C;
-};
+typedef SharedPlayer func_8022BEF4_S1;
+
 
 #define DRAIN(x) ((x) = ((x) - 1 < 0) ? 0 : (x) - 1)
 

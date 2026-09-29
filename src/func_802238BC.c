@@ -1,5 +1,6 @@
 /* Updates flying-player thrust and impulses, transforms movement into world space and applies descent and roll. */
 #include "basetypes.h"
+#include "../splat/types/shared/movement.h"
 typedef struct Vec { f32 x,y,z; } Vec;
 typedef struct Quat { f32 x,y,z,w; } Quat;
 typedef struct Matrix { f32 m[4][4]; } Matrix;
@@ -41,18 +42,7 @@ typedef struct Actor {
  char pad14[0xc];
  f32 unk20;
 } Actor;
-typedef struct Movement {
- f32 unk0;
- f32 unk4;
- f32 unk8;
- f32 unkC;
- f32 unk10;
- f32 unk14;
- f32 unk18;
- f32 unk1C;
- char pad20[0x2];
- s16 unk22;
-} Movement;
+typedef SharedMovement Movement;
 extern f32 D_800D2988[];
 extern void func_8024795C(Quat *,Actor *),func_802742B4(Quat *,Matrix *),func_80272908(Matrix *,Vec *,Vec *),func_80271FA4(Vec *,Vec *,Vec *),func_8025DE74(s16,Vec,s32,s32),func_802748E0(f32 *,f32,f32);
 extern f32 func_80274710(f32,f32,f32),func_80274810(f32,f32),func_802BC380(f32);
