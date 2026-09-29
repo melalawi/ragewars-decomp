@@ -1331,7 +1331,7 @@
    "verdict": "Open"
   },
   "func_802050A0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 376,
@@ -1341,8 +1341,44 @@
      "recorded_at": "2026-09-16T21:09:46Z",
      "trials": 0,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T080101Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "eu": {
+       "identical": 91,
+       "inserted": 0,
+       "missing": 0,
+       "of": 91,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 91,
+       "inserted": 0,
+       "missing": 0,
+       "of": 91,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 91,
+      "inserted": 0,
+      "missing": 0,
+      "of": 91
+     },
+     "note": "Applies a hit to a damageable object: when its descriptor at 0x18 takes the hit (flag 1 for hits without bit 0x200, flag 2 for hits with it) it lowers the health at 0x4 by the damage, not below zero, turns the remaining percentage into the damage stage with the lowest threshold above it to set the model and time at 0x124 and 0x128 and the stage byte, and runs func_80214178 (kind 2 when the descriptor has flag 0x40, else 1) once the health reaches zero.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T08:13:14Z"
     }
    ],
+   "best": {
+    "identical": 91,
+    "inserted": 0,
+    "missing": 0,
+    "of": 91
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_80205094",
@@ -1352,7 +1388,7 @@
     }
    ],
    "positional_best_differing_words": 3,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80205720": {
    "attempt_count": 1,
@@ -1814,7 +1850,7 @@
    "verdict": "Landed"
   },
   "func_8020AA40": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Links a graph's flagged nodes to their nearest matching object in D_8011FE88 (by type 0xE4 for kind 0x64E, by func_8028B238 for types 0x643/0x644), storing it at 0x34 when closer than D_800C6E38 and otherwise clearing the link and the node flag. The drafter's C differs in 61 words, mostly branch offsets from one extra word plus the index and nearest-object registers swapped; tried loop forms, int kinds, hoisted constants, scalar[1] constants, declaration orders and do-while(0) groupings.",
@@ -1823,8 +1859,140 @@
      "recorded_at": "2026-09-16T21:30:43Z",
      "trials": 20,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T072955Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 95,
+       "inserted": 1,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C1D40",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C6E30",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C6E30"
+        }
+       ],
+       "of": 108,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 12,
+        "reloc": 1
+       }
+      },
+      "eu": {
+       "identical": 95,
+       "inserted": 1,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C1FE0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C6E30",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C6E30"
+        }
+       ],
+       "of": 108,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 12,
+        "reloc": 1
+       }
+      },
+      "eu-mul": {
+       "identical": 95,
+       "inserted": 1,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2020",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C6E30",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C6E30"
+        }
+       ],
+       "of": 108,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 12,
+        "reloc": 1
+       }
+      },
+      "us": {
+       "identical": 95,
+       "inserted": 1,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C1C70",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C6E30",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C6E30"
+        }
+       ],
+       "of": 108,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 12,
+        "reloc": 1
+       }
+      },
+      "us-rev1": {
+       "identical": 95,
+       "inserted": 1,
+       "missing": 0,
+       "of": 108,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 12,
+        "reloc": 1
+       }
+      }
+     },
+     "measurement": {
+      "identical": 95,
+      "inserted": 1,
+      "missing": 0,
+      "of": 108
+     },
+     "note": "Closest compliant C trials at 95/108 on all five cartridges; remaining differences are register allocation plus one candidate-only move v0 to v1 after func_8028B238, which shifts a local jump target by one word; matchkit try identifies a permute case for unattended grind. Earlier 77/108 candidate lacked this control-flow and struct typing.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T07:33:28Z",
+     "retained": "artifacts/retained-candidates/func_8020AA40/2.c",
+     "retained_sha256": "d07870075155695ade4695cb693f48a63d15430b48ad146aea56de0e87908b39"
     }
    ],
+   "best": {
+    "identical": 95,
+    "inserted": 1,
+    "missing": 0,
+    "of": 108
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 61,
    "verdict": "Open"
   },
@@ -4993,7 +5161,7 @@
    "verdict": "Open"
   },
   "func_80220EB0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Updates a player simulation step, including movement, effects, animation and game-mode state; recovered source retains 1594 differing words and produces 6364 of 6432 bytes, a structural reconstruction residue.",
@@ -5002,8 +5170,170 @@
      "recorded_at": "2026-09-20T01:37:53Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T073514Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 1588,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x801002EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801421D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 20
+       }
+      },
+      "eu": {
+       "identical": 1588,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x801102EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801521D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 20
+       }
+      },
+      "eu-mul": {
+       "identical": 1588,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8010A2EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x8014C1D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 20
+       }
+      },
+      "us": {
+       "identical": 1588,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800FE2EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801401D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 20
+       }
+      },
+      "us-rev1": {
+       "identical": 1588,
+       "inserted": 0,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 20
+       }
+      }
+     },
+     "measurement": {
+      "identical": 1588,
+      "inserted": 0,
+      "missing": 0,
+      "of": 1608
+     },
+     "note": "Closest legal draft matches 1588/1608 words on all five cartridges, with 0 inserted or missing and only 20 register-allocation differences at +0x6FC-0x744, +0x91C-0x960, +0x1080-0x10BC, and +0x16A0-0x16C0. A 100-second manual permute search (1624 compiles) found no improvement; retain candidate for unattended grind.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T07:38:38Z",
+     "retained": "artifacts/retained-candidates/func_80220EB0/2.c",
+     "retained_sha256": "bd98814de12f090e879b9f33da6eaa758f47ca13e09a6adda1d6794c2f89ba25"
     }
    ],
+   "best": {
+    "identical": 1588,
+    "inserted": 0,
+    "missing": 0,
+    "of": 1608
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 1594,
    "verdict": "Open"
   },
@@ -15167,7 +15497,7 @@
    "verdict": "Landed"
   },
   "func_80285150": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Unpacks a resource into a new buffer (RNC method 1 or 2 depack, or a copy) and installs it with func_80253CB0; the 312-byte body is 2 words from the assembly, but try-candidate's interval is 320 bytes because function_intervals.all_intervals ignores the yaml-only 8-byte fragment func_80285288, so the candidate can never report byte-identical until that interval is fixed.",
@@ -15176,8 +15506,113 @@
      "recorded_at": "2026-09-16T21:01:29Z",
      "trials": 8,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T075617Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x802AD4C0",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_802B2590"
+        }
+       ],
+       "of": 78,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x802AD760",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_802B2590"
+        },
+        {
+         "address": "0x802ADBE0",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_802B2A10"
+        }
+       ],
+       "of": 78,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x802AD7A0",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_802B2590"
+        },
+        {
+         "address": "0x802ADC20",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_802B2A10"
+        }
+       ],
+       "of": 78,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "of": 78,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 78,
+       "inserted": 0,
+       "missing": 0,
+       "of": 78,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 78,
+      "inserted": 0,
+      "missing": 0,
+      "of": 78
+     },
+     "note": "Candidate matches 78/78 instructions on all five cartridges (trial 7), but land submit is held until de/eu/eu-mul split out func_802B2590 and func_802B2A10 at the named mid-interval addresses; these split edits are outside this lane.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T07:59:45Z",
+     "retained": "artifacts/retained-candidates/func_80285150/2.c",
+     "retained_sha256": "00f34a16f3984c00293aa9d7938294427f4c7aeaebed230f63ab4f1f46efdea7"
     }
    ],
+   "best": {
+    "identical": 78,
+    "inserted": 0,
+    "missing": 0,
+    "of": 78
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 4,
    "verdict": "Open"
   },
@@ -18179,7 +18614,7 @@
    "verdict": "Open"
   },
   "func_8029D984": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Builds a 4x4 rotation matrix from three Euler angles using func_8029CBB0 for each sine and cosine, zero translation and D_800CAC34 in the corner; the cartridge computes all fourteen products before any store and writes the zero entries through a float register in descending order, and row-order, store-order and chained-zero drafts stayed 63 to 78 words apart.",
@@ -18188,8 +18623,87 @@
      "recorded_at": "2026-09-16T20:35:57Z",
      "trials": 5,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T074739Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      },
+      "eu": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      },
+      "eu-mul": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      },
+      "us": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      },
+      "us-rev1": {
+       "identical": 61,
+       "inserted": 0,
+       "missing": 0,
+       "of": 76,
+       "result": "differs",
+       "typed": {
+        "reg": 14,
+        "reordered": 1
+       }
+      }
+     },
+     "measurement": {
+      "identical": 61,
+      "inserted": 0,
+      "missing": 0,
+      "of": 76
+     },
+     "note": "Tried draft matches 61/76 words on all five cartridges with zero inserted or missing; remaining 14 register-only words and one reordered load require permute/grind, and trial explicitly recommends giving this near miss back.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T07:52:19Z",
+     "retained": "artifacts/retained-candidates/func_8029D984/2.c",
+     "retained_sha256": "4c5770a021253fcf1007f196ccb0e583e240f1396890ebc1a60c8845a574b9e8"
     }
    ],
+   "best": {
+    "identical": 61,
+    "inserted": 0,
+    "missing": 0,
+    "of": 76
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 63,
    "verdict": "Open"
   },
@@ -19089,7 +19603,7 @@
    "verdict": "Landed"
   },
   "func_802A3478": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Recursively applies the screen scale D_800CAF48 once to a tree of interface nodes (siblings, children and type-8 extras), storing the scale pair for type 4 nodes or scaling the node rectangle; the rectangle products are truncated into integer registers early in the cartridge but stay in float registers in every draft (casts, int locals, inline helper, declaration order).",
@@ -19107,8 +19621,167 @@
      "supersedes_earlier": false,
      "trials": 6,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T080317Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 56,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C5DB8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CAF48",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CAF48"
+        },
+        {
+         "address": "0x800C5DBC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800CAF4C"
+        }
+       ],
+       "of": 81,
+       "result": "differs",
+       "typed": {
+        "reg": 21,
+        "reordered": 4
+       }
+      },
+      "eu": {
+       "identical": 56,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C6058",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CAF48",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CAF48"
+        },
+        {
+         "address": "0x800C605C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800CAF4C"
+        }
+       ],
+       "of": 81,
+       "result": "differs",
+       "typed": {
+        "reg": 21,
+        "reordered": 4
+       }
+      },
+      "eu-mul": {
+       "identical": 56,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C6098",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CAF48",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CAF48"
+        },
+        {
+         "address": "0x800C609C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800CAF4C"
+        }
+       ],
+       "of": 81,
+       "result": "differs",
+       "typed": {
+        "reg": 21,
+        "reordered": 4
+       }
+      },
+      "us": {
+       "identical": 56,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C5CE8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CAF48",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CAF48"
+        },
+        {
+         "address": "0x800C5CEC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800CAF4C"
+        }
+       ],
+       "of": 81,
+       "result": "differs",
+       "typed": {
+        "reg": 21,
+        "reordered": 4
+       }
+      },
+      "us-rev1": {
+       "identical": 56,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800CAF4C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800CAF4C"
+        }
+       ],
+       "of": 81,
+       "result": "differs",
+       "typed": {
+        "reg": 21,
+        "reordered": 4
+       }
+      }
+     },
+     "measurement": {
+      "identical": 56,
+      "inserted": 0,
+      "missing": 0,
+      "of": 81
+     },
+     "note": "Tried draft matches 56/81 words on all five cartridges with zero inserted or missing; remaining 21 register-only and 4 reordered words concern resident scale float allocation and early truncation. Separate D_800CAF4C symbol resolves the second float address; trial names data-symbol additions for other cartridges. Handing near miss to grind as NEXT(try) directs.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T08:05:52Z",
+     "retained": "artifacts/retained-candidates/func_802A3478/3.c",
+     "retained_sha256": "77e13624583a8752acb4297da8341bcbcd6cc6ea16013024c88e096045dfaf1b"
     }
    ],
+   "best": {
+    "identical": 56,
+    "inserted": 0,
+    "missing": 0,
+    "of": 81
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 27,
    "verdict": "Open"
   },
@@ -32643,7 +33316,7 @@
    "verdict": "Landed"
   },
   "func_8041DD30": {
-   "attempt_count": 3,
+   "attempt_count": 4,
    "attempts": [
     {
      "note": "In pass 1 with screen D_800E3590 state 3, clears D_800D15E0, sets the four colour floats D_800D15E4 to D_800E1554, appends a 0xED scissor command sized from D_800E28D0 scaled by D_800E1558 to the display list D_80110634, and draws the screen body through func_80439EA8/func_804399D0 with D_800D15E0 set and the alpha raised to D_800E155C; the cartridge computes the width product and the list increment before the colour stores and writes the list head back after them, which the tried statement orders (direct, saved base float, chained colour assignment, command struct, size struct) did not reproduce",
@@ -32694,12 +33367,218 @@
      "recorded_at": "2026-09-28T09:25:07Z",
      "retained": "artifacts/retained-candidates/func_8041E110/1.c",
      "retained_sha256": "a362c0b63d684cc296ea1ce10a524b3fd42dfb975ff4b615c518216be550a625"
+    },
+    {
+     "assignment": "20260929T075301Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 65,
+       "inserted": 0,
+       "missing": 1,
+       "needs": [
+        {
+         "address": "0x800DD524",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E1554",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E1554"
+        },
+        {
+         "address": "0x800DD528",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E1558",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E1558"
+        },
+        {
+         "address": "0x800DD52C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E155C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E155C"
+        }
+       ],
+       "of": 77,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 5,
+        "reloc": 1,
+        "reordered": 5
+       }
+      },
+      "eu": {
+       "identical": 66,
+       "inserted": 0,
+       "missing": 1,
+       "needs": [
+        {
+         "address": "0x800EDBA4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E1554",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E1554"
+        },
+        {
+         "address": "0x800EDBA8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E1558",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E1558"
+        },
+        {
+         "address": "0x800EDBAC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E155C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E155C"
+        }
+       ],
+       "of": 77,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 5,
+        "reordered": 5
+       }
+      },
+      "eu-mul": {
+       "identical": 66,
+       "inserted": 0,
+       "missing": 1,
+       "needs": [
+        {
+         "address": "0x800E8D64",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E1554",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E1554"
+        },
+        {
+         "address": "0x800E8D68",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E1558",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E1558"
+        },
+        {
+         "address": "0x800E8D6C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E155C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E155C"
+        }
+       ],
+       "of": 77,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 5,
+        "reordered": 5
+       }
+      },
+      "us": {
+       "identical": 66,
+       "inserted": 0,
+       "missing": 1,
+       "needs": [
+        {
+         "address": "0x800DC1D4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E1554",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E1554"
+        },
+        {
+         "address": "0x800DC1D8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E1558",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E1558"
+        },
+        {
+         "address": "0x800DC1DC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E155C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E155C"
+        }
+       ],
+       "of": 77,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 5,
+        "reordered": 5
+       }
+      },
+      "us-rev1": {
+       "identical": 66,
+       "inserted": 0,
+       "missing": 1,
+       "of": 77,
+       "result": "differs",
+       "typed": {
+        "missing": 1,
+        "reg": 5,
+        "reordered": 5
+       }
+      }
+     },
+     "measurement": {
+      "identical": 66,
+      "inserted": 0,
+      "missing": 1,
+      "of": 77
+     },
+     "note": "Closest trial is 66/77 identical on us-rev1 with 0 inserted, 1 missing, and only register/order differences: display-list head pointer loads in v1/a1 instead of a1/v1, missing the a2 copy, and height load/command constant move early. The same code shape holds on all five cartridges; de also needs func_804399D0 mapped to 0x804397F0, and non-reference cartridges need D_800E1554/1558/155C data symbols.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T07:55:53Z",
+     "retained": "artifacts/retained-candidates/func_8041DD30/4.c",
+     "retained_sha256": "f8627246c6131ae55a2f3d7104b98ddc8435f26e1d7cb734f92ec2fda356abbc"
     }
    ],
    "best": {
-    "identical": 37,
-    "inserted": 15,
-    "missing": 11,
+    "identical": 66,
+    "inserted": 0,
+    "missing": 1,
     "of": 77
    },
    "budget_failed_attempts": 10,
@@ -44834,6 +45713,521 @@
    "budget_failed_attempts": 10,
    "verdict": "Landed"
   },
+  "func_8043D2D0": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T075953Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 59,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D3B8C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BB8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BB8"
+        },
+        {
+         "address": "0x800D3B90",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BBC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BBC"
+        },
+        {
+         "address": "0x800D3B94",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC0"
+        },
+        {
+         "address": "0x800D3B98",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC4"
+        },
+        {
+         "address": "0x800D3B9C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC8"
+        },
+        {
+         "address": "0x800D3BA0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BCC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BCC"
+        },
+        {
+         "address": "0x800D3BA4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD0"
+        },
+        {
+         "address": "0x800D3BA8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD4"
+        },
+        {
+         "address": "0x800D3BAC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD8"
+        },
+        {
+         "address": "0x800D3BB0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BDC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BDC"
+        },
+        {
+         "address": "0x800D3BB4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BE0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BE0"
+        }
+       ],
+       "of": 59,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 59,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800E3884",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BB8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BB8"
+        },
+        {
+         "address": "0x800E3894",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BBC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BBC"
+        },
+        {
+         "address": "0x800E38A4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC0"
+        },
+        {
+         "address": "0x800E38B4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC4"
+        },
+        {
+         "address": "0x800E38C4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC8"
+        },
+        {
+         "address": "0x800E38D4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BCC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BCC"
+        },
+        {
+         "address": "0x800E38E4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD0"
+        },
+        {
+         "address": "0x800E38F4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD4"
+        },
+        {
+         "address": "0x800E3904",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD8"
+        },
+        {
+         "address": "0x800E3914",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BDC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BDC"
+        },
+        {
+         "address": "0x800E3924",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BE0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BE0"
+        }
+       ],
+       "of": 59,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 59,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DECD8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BB8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BB8"
+        },
+        {
+         "address": "0x800DECE4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BBC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BBC"
+        },
+        {
+         "address": "0x800DECF0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC0"
+        },
+        {
+         "address": "0x800DECFC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC4"
+        },
+        {
+         "address": "0x800DED08",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC8"
+        },
+        {
+         "address": "0x800DED14",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BCC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BCC"
+        },
+        {
+         "address": "0x800DED20",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD0"
+        },
+        {
+         "address": "0x800DED2C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD4"
+        },
+        {
+         "address": "0x800DED38",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD8"
+        },
+        {
+         "address": "0x800DED44",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BDC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BDC"
+        },
+        {
+         "address": "0x800DED50",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BE0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BE0"
+        }
+       ],
+       "of": 59,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 59,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D2838",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BB8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BB8"
+        },
+        {
+         "address": "0x800D283C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BBC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BBC"
+        },
+        {
+         "address": "0x800D2840",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC0"
+        },
+        {
+         "address": "0x800D2844",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC4"
+        },
+        {
+         "address": "0x800D2848",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BC8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BC8"
+        },
+        {
+         "address": "0x800D284C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BCC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BCC"
+        },
+        {
+         "address": "0x800D2850",
+         "conflicts": [
+          "address-named"
+         ],
+         "counterpart": {
+          "address": "0x800D7BD0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD0"
+        },
+        {
+         "address": "0x800D2854",
+         "conflicts": [
+          "address-named"
+         ],
+         "counterpart": {
+          "address": "0x800D7BD4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD4"
+        },
+        {
+         "address": "0x800D2858",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BD8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BD8"
+        },
+        {
+         "address": "0x800D285C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BDC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BDC"
+        },
+        {
+         "address": "0x800D2860",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7BE0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7BE0"
+        }
+       ],
+       "of": 59,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 59,
+       "inserted": 0,
+       "missing": 0,
+       "of": 59,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 59,
+      "inserted": 0,
+      "missing": 0,
+      "of": 59
+     },
+     "note": "* This header contains macros emitted by m2c in \"valid syntax\" mode, * which can be enabled by passing `--valid-syntax` on the command line. * * In this mode, unhandled types and expressions are emitted as macros so * that the output is compilable without human intervention.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T08:13:15Z"
+    }
+   ],
+   "best": {
+    "identical": 59,
+    "inserted": 0,
+    "missing": 0,
+    "of": 59
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Landed"
+  },
   "func_8043D3BC": {
    "attempt_count": 1,
    "attempts": [
@@ -44923,6 +46317,157 @@
    "budget_failed_attempts": 10,
    "verdict": "Landed"
   },
+  "func_8043D458": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T075656Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D3B0C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B38",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B38"
+        },
+        {
+         "address": "0x800D3B10",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B3C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B3C"
+        }
+       ],
+       "of": 27,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800E3684",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B38",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B38"
+        },
+        {
+         "address": "0x800E3694",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B3C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B3C"
+        }
+       ],
+       "of": 27,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DEB58",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B38",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B38"
+        },
+        {
+         "address": "0x800DEB64",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B3C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B3C"
+        }
+       ],
+       "of": 27,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D27B8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B38",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B38"
+        },
+        {
+         "address": "0x800D27BC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B3C",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B3C"
+        }
+       ],
+       "of": 27,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 27,
+       "inserted": 0,
+       "missing": 0,
+       "of": 27,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 27,
+      "inserted": 0,
+      "missing": 0,
+      "of": 27
+     },
+     "note": "Updates the option item's flag bit and selects its associated text pointer.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T08:13:15Z"
+    }
+   ],
+   "best": {
+    "identical": 27,
+    "inserted": 0,
+    "missing": 0,
+    "of": 27
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Landed"
+  },
   "func_8043D4C4": {
    "attempt_count": 1,
    "attempts": [
@@ -44978,6 +46523,174 @@
    },
    "budget_failed_attempts": 10,
    "verdict": "Landed"
+  },
+  "func_8043D4E0": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T075823Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 24,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D3B14",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B40",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B40"
+        },
+        {
+         "address": "0x800D3B18",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B44"
+        }
+       ],
+       "of": 27,
+       "result": "differs",
+       "typed": {
+        "reg": 3
+       }
+      },
+      "eu": {
+       "identical": 24,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800E36A4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B40",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B40"
+        },
+        {
+         "address": "0x800E36B4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B44"
+        }
+       ],
+       "of": 27,
+       "result": "differs",
+       "typed": {
+        "reg": 3
+       }
+      },
+      "eu-mul": {
+       "identical": 24,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DEB70",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B40",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B40"
+        },
+        {
+         "address": "0x800DEB7C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B44"
+        }
+       ],
+       "of": 27,
+       "result": "differs",
+       "typed": {
+        "reg": 3
+       }
+      },
+      "us": {
+       "identical": 24,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D27C0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B40",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B40"
+        },
+        {
+         "address": "0x800D27C4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800D7B44",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800D7B44"
+        }
+       ],
+       "of": 27,
+       "result": "differs",
+       "typed": {
+        "reg": 3
+       }
+      },
+      "us-rev1": {
+       "identical": 24,
+       "inserted": 0,
+       "missing": 0,
+       "of": 27,
+       "result": "differs",
+       "typed": {
+        "reg": 3
+       }
+      }
+     },
+     "measurement": {
+      "identical": 24,
+      "inserted": 0,
+      "missing": 0,
+      "of": 27
+     },
+     "note": "us-rev1 has only 3 register allocation differences at +0x010, +0x014, and +0x01C; try classified this as a permute case",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T07:59:20Z",
+     "retained": "artifacts/retained-candidates/func_8043D4E0/1.c",
+     "retained_sha256": "ecf360ec1a9a4c04ce45f1ff9014cbaf5390a7b56fae0d35ccc4d73ffecaf307"
+    }
+   ],
+   "best": {
+    "identical": 24,
+    "inserted": 0,
+    "missing": 0,
+    "of": 27
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Open"
   },
   "func_8043D54C": {
    "attempt_count": 1,
@@ -47793,7 +49506,7 @@
    "verdict": "Open"
   },
   "func_8044044C": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Draws a menu option as a highlighted box through func_802A8DD4 (flag 0x40000000 with func_802934DC, or D_801462E5 with the sign flag and func_80265370 reporting 0x400000; opacity 0x80/0xC0/0xFF) or as text through func_802ABC18 with the field's scaled opacity; best draft matches the first 37 words and then differs in the order the box extent products are computed and in reaching D_801462E5 at -0x5AF from D_80146894 as the cartridge does; 600 s permuter run did not improve",
@@ -47802,8 +49515,65 @@
      "recorded_at": "2026-09-17T02:24:44Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T072942Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 115,
+      "inserted": 0,
+      "missing": 0,
+      "of": 115
+     },
+     "note": "Draws a menu option as a highlighted box or as text, with state-dependent opacity.",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T08:11:20Z"
     }
    ],
+   "best": {
+    "identical": 115,
+    "inserted": 0,
+    "missing": 0,
+    "of": 115
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 33,
    "verdict": "Open"
   },

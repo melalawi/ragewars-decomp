@@ -627,48 +627,6 @@
   ],
   "eu": [
    {
-    "bytes": 668,
-    "rom": "0x3BDC",
-    "sources": [
-     "func_80202FDC"
-    ]
-   },
-   {
-    "bytes": 296,
-    "rom": "0x4B04",
-    "sources": [
-     "func_80203F04"
-    ]
-   },
-   {
-    "bytes": 764,
-    "rom": "0x79F4",
-    "sources": [
-     "func_80206DD4"
-    ]
-   },
-   {
-    "bytes": 696,
-    "rom": "0x8D78",
-    "sources": [
-     "func_80208158"
-    ]
-   },
-   {
-    "bytes": 752,
-    "rom": "0x9F28",
-    "sources": [
-     "func_80209308"
-    ]
-   },
-   {
-    "bytes": 568,
-    "rom": "0xE0CC",
-    "sources": [
-     "func_8020D4AC"
-    ]
-   },
-   {
     "bytes": 500,
     "rom": "0x29BE0",
     "sources": [
@@ -3522,8 +3480,8 @@
    }
   ]
  },
- "date": "2026-09-28",
- "reason": "landed func_804082FC, func_8042F130",
+ "date": "2026-09-29",
+ "reason": "landed func_802050A0, func_8043D2D0, func_8043D458",
  "schema": "decomp.drift.v2",
  "written_by": "land run"
 }
