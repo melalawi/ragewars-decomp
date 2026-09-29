@@ -1903,7 +1903,7 @@ segments:
       - [0x077110, asm, nonmatchings/func_80276580]
       - [0x0771A8, asm, nonmatchings/func_802765A8]
       - [0x0771B0, asm, nonmatchings/func_80276620]
-      - [0x077568, asm, nonmatchings/func_80276998]
+      - [0x077568, asm, nonmatchings/func_802769D8]
       - [0x077744, asm, nonmatchings/func_80276BB4]
       - [0x0778A4, asm, nonmatchings/func_80276CA4]
       - [0x0778B0, asm, nonmatchings/func_80276D20]

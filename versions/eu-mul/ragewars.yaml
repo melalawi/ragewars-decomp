@@ -1884,7 +1884,7 @@ segments:
       - [0x077170, asm, nonmatchings/func_80276580]
       - [0x077208, asm, nonmatchings/func_80276618]
       - [0x077210, asm, nonmatchings/func_80276620]
-      - [0x0775C8, asm, nonmatchings/func_80276998]
+      - [0x0775C8, asm, nonmatchings/func_802769D8]
       - [0x0777A4, asm, nonmatchings/func_80276BB4]
       - [0x077904, asm, nonmatchings/func_80276D04]
       - [0x077D88, asm, nonmatchings/func_80277198]

@@ -2397,7 +2397,7 @@
    "verdict": "Open"
   },
   "func_8020F6C0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 568,
@@ -2407,8 +2407,37 @@
      "recorded_at": "2026-09-16T22:00:52Z",
      "trials": 0,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T025011Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 140,
+       "inserted": 0,
+       "missing": 0,
+       "of": 140,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 140,
+      "inserted": 0,
+      "missing": 0,
+      "of": 140
+     },
+     "note": "Chooses an AI rider's target: drops the current one when inactive, shielded (status 0x20) or on its own team, measures it and any flagged object, then keeps it or switches to the flagged object or a route target, and aims at the chosen target; returns 1.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T03:09:22Z"
     }
    ],
+   "best": {
+    "identical": 140,
+    "inserted": 0,
+    "missing": 0,
+    "of": 140
+   },
+   "budget_failed_attempts": 10,
    "moved_from": [
     {
      "function": "func_8020F6B8",
@@ -2418,7 +2447,7 @@
     }
    ],
    "positional_best_differing_words": 2,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8020F8F0": {
    "attempt_count": 1,
@@ -3138,7 +3167,7 @@
    "verdict": "Open"
   },
   "func_80212FE0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "measured_bytes": 472,
@@ -3148,7 +3177,39 @@
      "recorded_at": "2026-09-16T21:09:46Z",
      "trials": 0,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T020507Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 115,
+       "inserted": 0,
+       "missing": 0,
+       "of": 115,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 115,
+      "inserted": 0,
+      "missing": 0,
+      "of": 115
+     },
+     "note": "Runs a computer player's chase step toward the object at 0x68: without a target id at 0xBC it switches to mode 2 and without an object it only updates; farther than D_800C71D0[0] from its goal node it heads there through func_80208410, otherwise it takes mode 8 once arrived or copies the object's position to 0x2C; then, within D_800C71D0[1] of the object and not yet arrived, it marks arrival at 0x238 and plans a new route through func_8020B95C to pick the next goal node.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T03:09:23Z"
     }
+   ],
+   "best": {
+    "identical": 115,
+    "inserted": 0,
+    "missing": 0,
+    "of": 115
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "constant-holding local places the li"
    ],
    "moved_from": [
     {
@@ -3159,7 +3220,7 @@
     }
    ],
    "positional_best_differing_words": 3,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_802131D8": {
    "attempt_count": 0,
@@ -14019,7 +14080,7 @@
    "verdict": "Open"
   },
   "func_802769D8": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Float-heavy leaf routine (33 float operations); not drafted within budget.",
@@ -14028,10 +14089,46 @@
      "recorded_at": "2026-09-16T21:01:29Z",
      "trials": 0,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T025011Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us": {
+       "identical": 119,
+       "inserted": 0,
+       "missing": 0,
+       "of": 119,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 119,
+       "inserted": 0,
+       "missing": 0,
+       "of": 119,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 119,
+      "inserted": 0,
+      "missing": 0,
+      "of": 119
+     },
+     "note": "Blends a colour toward the grey of its brightest channel: with amount (0-100) zero it copies r, g, b to the outputs, otherwise each output is (channel * (100 - amount) + max(r, g, b) * amount) / 100.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-29T03:09:23Z"
     }
    ],
+   "best": {
+    "identical": 119,
+    "inserted": 0,
+    "missing": 0,
+    "of": 119
+   },
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 119,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80276BB4": {
    "attempt_count": 2,
