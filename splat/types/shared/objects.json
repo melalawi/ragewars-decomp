@@ -10013,6 +10013,303 @@
       },
       "size": 400
     },
+    "Shared_MenuGlobal": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'alternateTitle', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "alternateTitle",
+          "offset": 0,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 11,
+          "canonical_keys": [
+            "(1, 'unused0', 'u8', 11, 11)"
+          ],
+          "dimensions": [
+            11
+          ],
+          "name": "unused0",
+          "offset": 1,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 11,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(12, 'selectionIndex', 'volatile s32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "selectionIndex",
+          "offset": 12,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 4,
+          "type": "volatile s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'selectionValue', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "selectionValue",
+          "offset": 16,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(20, 'titleWasShown', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "titleWasShown",
+          "offset": 20,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 8480,
+          "canonical_keys": [
+            "(24, 'unused1', 'u8', 8480, 8480)"
+          ],
+          "dimensions": [
+            8480
+          ],
+          "name": "unused1",
+          "offset": 24,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 8480,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8504, 'displayData', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "displayData",
+          "offset": 8504,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 127,
+          "canonical_keys": [
+            "(8505, 'unused2', 'u8', 127, 127)"
+          ],
+          "dimensions": [
+            127
+          ],
+          "name": "unused2",
+          "offset": 8505,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 127,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8632, 'frameCount', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "frameCount",
+          "offset": 8632,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "menuglobal.h",
+      "members": [
+        "src/func_80294F1C.c:MenuGlobal"
+      ],
+      "paths": {
+        "(0, 'alternateTitle', 'u8', 1, 1)": "alternateTitle",
+        "(1, 'unused0', 'u8', 11, 11)": "unused0",
+        "(12, 'selectionIndex', 'volatile s32', 4, 1)": "selectionIndex",
+        "(16, 'selectionValue', 's32', 4, 1)": "selectionValue",
+        "(20, 'titleWasShown', 's32', 4, 1)": "titleWasShown",
+        "(24, 'unused1', 'u8', 8480, 8480)": "unused1",
+        "(8504, 'displayData', 'u8', 1, 1)": "displayData",
+        "(8505, 'unused2', 'u8', 127, 127)": "unused2",
+        "(8632, 'frameCount', 's32', 4, 1)": "frameCount",
+        "canonical:0": "alternateTitle",
+        "canonical:1": "unused0",
+        "canonical:10": "selectionValue",
+        "canonical:14": "titleWasShown",
+        "canonical:18": "unused1",
+        "canonical:2138": "displayData",
+        "canonical:2139": "unused2",
+        "canonical:21B8": "frameCount",
+        "canonical:C": "selectionIndex"
+      },
+      "proof": {
+        "src/func_80294F1C.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 8636
+    },
+    "Shared_MenuSelection": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'index', 'volatile s32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "index",
+          "offset": 0,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 4,
+          "type": "volatile s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'value', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "value",
+          "offset": 4,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'changed', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "changed",
+          "offset": 8,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "menuselection.h",
+      "members": [
+        "src/func_80294F1C.c:MenuSelection"
+      ],
+      "paths": {
+        "(0, 'index', 'volatile s32', 4, 1)": "index",
+        "(4, 'value', 's32', 4, 1)": "value",
+        "(8, 'changed', 's32', 4, 1)": "changed",
+        "canonical:0": "index",
+        "canonical:4": "value",
+        "canonical:8": "changed"
+      },
+      "proof": {
+        "src/func_80294F1C.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 12
+    },
+    "Shared_MenuTextBuffer": {
+      "fields": [
+        {
+          "array": 64,
+          "canonical_keys": [
+            "(0, 'unused', 'u8', 64, 64)"
+          ],
+          "dimensions": [
+            64
+          ],
+          "name": "unused",
+          "offset": 0,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 64,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(64, 'title', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "title",
+          "offset": 64,
+          "provenance": [
+            "src/func_80294F1C.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        }
+      ],
+      "header": "menutextbuffer.h",
+      "members": [
+        "src/func_80294F1C.c:MenuTextBuffer"
+      ],
+      "paths": {
+        "(0, 'unused', 'u8', 64, 64)": "unused",
+        "(64, 'title', 's8', 1, 1)": "title",
+        "canonical:0": "unused",
+        "canonical:40": "title"
+      },
+      "proof": {
+        "src/func_80294F1C.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 65
+    },
     "Shared_Model": {
       "fields": [
         {
@@ -20276,6 +20573,91 @@
         }
       },
       "size": 147
+    },
+    "Shared_func_804069F4_S1": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(28, 'first', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "first",
+          "offset": 28,
+          "provenance": [
+            "src/func_804069F4.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(32, 'second', 'func_804069F4_S2 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "second",
+          "offset": 32,
+          "provenance": [
+            "src/func_804069F4.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_804069F4_S2 *",
+          "views": []
+        }
+      ],
+      "header": "func_804069f4_s1.h",
+      "members": [
+        "src/func_804069F4.c:func_804069F4_S1"
+      ],
+      "paths": {
+        "(28, 'first', 's32', 4, 1)": "first",
+        "(32, 'second', 'func_804069F4_S2 *', 4, 1)": "second",
+        "canonical:1C": "first",
+        "canonical:20": "second"
+      },
+      "proof": {
+        "src/func_804069F4.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 36
+    },
+    "Shared_func_804069F4_S2": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(176, 'flags', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "flags",
+          "offset": 176,
+          "provenance": [
+            "src/func_804069F4.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_804069f4_s2.h",
+      "members": [
+        "src/func_804069F4.c:func_804069F4_S2"
+      ],
+      "paths": {
+        "(176, 'flags', 's32', 4, 1)": "flags",
+        "canonical:B0": "flags"
+      },
+      "proof": {
+        "src/func_804069F4.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 180
     },
     "Shared_func_8043DEDC_S1": {
       "fields": [

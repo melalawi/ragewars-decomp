@@ -26403,7 +26403,7 @@
    "verdict": "Open"
   },
   "func_80294F1C": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Processes debug-overlay controls and draws adjustable overlay counters and state information; the recovered C produces 1196 of 1248 bytes with 253 aligned differences, a structural reconstruction residue; .rdata at 0xAEBB8015 lies outside the resident block.",
@@ -26412,10 +26412,76 @@
      "recorded_at": "2026-09-20T00:53:19Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260930T215056Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "us-rev1": {
+       "identical": 312,
+       "inserted": 0,
+       "missing": 0,
+       "not_held": {
+        "de": {
+         "found": "none"
+        },
+        "eu": {
+         "found": "none"
+        },
+        "eu-mul": {
+         "found": "none"
+        },
+        "us": {
+         "found": "none"
+        }
+       },
+       "of": 312,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 312,
+      "inserted": 0,
+      "missing": 0,
+      "of": 312
+     },
+     "note": "Handles repeated menu navigation inputs and draws the current menu display.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T22:54:02Z"
     }
    ],
+   "best": {
+    "identical": 312,
+    "inserted": 0,
+    "missing": 0,
+    "of": 312
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "retain the ordered intermediate selection stores.",
+    "separate the five-step navigation live range for allocation.",
+    "isolate the incremented repeat-count live range.",
+    "isolate the incremented repeat-count live range.",
+    "isolate the incremented repeat-count live range.",
+    "isolate the incremented repeat-count live range.",
+    "isolate the incremented repeat-count live range.",
+    "isolate the incremented repeat-count live range.",
+    "preserve declaration order for the original register allocation.",
+    "preserve declaration order for the original register allocation.",
+    "preserve declaration order for the original register allocation.",
+    "isolate the one-step decrement from remainder temporaries.",
+    "retain the late field pointer to reproduce address reuse.",
+    "retain a copy while incrementing the count in place.",
+    "retain a copy while incrementing the count in place.",
+    "retain a copy while incrementing the count in place.",
+    "retain a copy while incrementing the count in place.",
+    "retain the pre-modulo index store present in the original.",
+    "retain a copy while incrementing the count in place.",
+    "retain a copy while incrementing the count in place.",
+    "retain the pre-modulo index store present in the original."
+   ],
    "positional_best_differing_words": 253,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80295B90": {
    "attempt_count": 1,
@@ -36910,7 +36976,7 @@
    "verdict": "Landed"
   },
   "func_804069F4": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Scans Controller Paks, chooses the active device and displays save-space or device-error prompts; the recovered C produces 1364 of 1416 bytes with 338 aligned differences, a structural reconstruction residue.",
@@ -36928,10 +36994,71 @@
      "supersedes_earlier": false,
      "trials": 8,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260930T214034Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 354,
+       "inserted": 0,
+       "missing": 0,
+       "of": 354,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 354,
+       "inserted": 0,
+       "missing": 0,
+       "not_held": {
+        "eu": {
+         "found": "none"
+        },
+        "eu-mul": {
+         "found": "none"
+        }
+       },
+       "of": 354,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 354,
+       "inserted": 0,
+       "missing": 0,
+       "of": 354,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 354,
+      "inserted": 0,
+      "missing": 0,
+      "of": 354
+     },
+     "note": "Selects a usable Controller Pak, checks its notes and free space, and opens the appropriate prompt.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T22:54:03Z"
     }
    ],
+   "best": {
+    "identical": 354,
+    "inserted": 0,
+    "missing": 0,
+    "of": 354
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "reuse the dead second note cursor for the Pak error status.",
+    "reuse the completed retry count for the second note name.",
+    "split the second note flag from the dead retry counter.",
+    "keep the absent-channel sentinel live across the retry scan.",
+    "preserve the status-to-counter copy across a compiler loop boundary.",
+    "redundant copies preserve the status-to-counter register move.",
+    "place found-note exits before the loops to preserve branch layout.",
+    "retain the repeated minimum-size test and its target branch."
+   ],
    "positional_best_differing_words": 102,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80406F7C": {
    "attempt_count": 1,
