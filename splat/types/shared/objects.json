@@ -7214,6 +7214,57 @@
       },
       "size": 3244
     },
+    "Shared_GameMode": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(28, 'unk1C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1C",
+          "offset": 28,
+          "provenance": [
+            "src/func_8022D2F8.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(40, 'unk28', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk28",
+          "offset": 40,
+          "provenance": [
+            "src/func_8022D2F8.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "gamemode.h",
+      "members": [
+        "src/func_8022D2F8.c:GameMode"
+      ],
+      "paths": {
+        "(28, 'unk1C', 's32', 4, 1)": "unk1C",
+        "(40, 'unk28', 's32', 4, 1)": "unk28",
+        "canonical:1C": "unk1C",
+        "canonical:28": "unk28"
+      },
+      "proof": {
+        "src/func_8022D2F8.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 44
+    },
     "Shared_GlobalFlowState": {
       "fields": [
         {
