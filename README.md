@@ -6,7 +6,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 ## Progress
 
-<pre><code>all     [############--------]  63.27%  3,533,448 of 5,584,356 bytes</code><br><code>us      [#############-------]  65.61%  726,112 of 1,106,680 bytes</code><br><code>us-rev1 [#############-------]  67.59%  766,304 of 1,133,680 bytes</code><br><code>eu      [############--------]  61.50%  685,932 of 1,115,352 bytes</code><br><code>eu-mul  [###########---------]  59.70%  665,828 of 1,115,364 bytes</code><br><code>de      [############--------]  61.91%  689,272 of 1,113,280 bytes</code></pre>
+<pre><code>all     [############--------]  63.27%  3,533,464 of 5,584,356 bytes</code><br><code>us      [#############-------]  65.61%  726,112 of 1,106,680 bytes</code><br><code>us-rev1 [#############-------]  67.60%  766,312 of 1,133,680 bytes</code><br><code>eu      [############--------]  61.50%  685,932 of 1,115,352 bytes</code><br><code>eu-mul  [###########---------]  59.70%  665,828 of 1,115,364 bytes</code><br><code>de      [############--------]  61.91%  689,280 of 1,113,280 bytes</code></pre>
 
 | us (NUS-NRWE-0, North America). First NTSC release (black cartridge). SHA256 `0433043aaba2649bdd1fe717c4020550ac663c0362527aa082490f5977a3e46b` |
 |---|
@@ -14,7 +14,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | us-rev1 (NUS-NRWE-1, North America). Revised NTSC release (grey cartridge). SHA256 `5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089` |
 |---|
-| <pre><code>bytes     [#############-------]  67.59%  766,304 of 1,133,680</code><br><code>functions [##################--]  90.01%  3,919 of 4,354</code></pre> |
+| <pre><code>bytes     [#############-------]  67.60%  766,312 of 1,133,680</code><br><code>functions [##################--]  90.03%  3,920 of 4,354</code></pre> |
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
@@ -26,7 +26,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
-| <pre><code>bytes     [############--------]  61.91%  689,272 of 1,113,280</code><br><code>functions [################----]  84.46%  3,668 of 4,343</code></pre> |
+| <pre><code>bytes     [############--------]  61.91%  689,280 of 1,113,280</code><br><code>functions [################----]  84.48%  3,669 of 4,343</code></pre> |
 
 ## Development & Contributions
 
