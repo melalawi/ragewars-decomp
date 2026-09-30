@@ -1,14 +1,7 @@
+#include "../splat/types/shared/func_80261eb8_s1.h"
+#include "../splat/types/shared/func_80261eb8_s2.h"
+#include "../splat/types/shared/func_80261eb8_s3.h"
 /* Selects adjacent animation frames and interpolation weights for a track. */
-typedef signed char s8;
-typedef unsigned char u8;
-typedef signed short s16;
-typedef unsigned short u16;
-typedef signed int s32;
-typedef unsigned int u32;
-typedef signed long long s64;
-typedef unsigned long long u64;
-typedef float f32;
-typedef double f64;
 #define NULL ((void *)0)
 #if defined(VERSION_US_REV1)
 #define TrackUnit D_800C92E8
@@ -30,32 +23,12 @@ extern const f32 TrackUnit[2];
 extern const f32 TrackLastUnit;
 int func_80253294(void *);
 void *func_8028FD94(int *, int);
-typedef struct func_80261EB8_S1 func_80261EB8_S1;
-typedef struct func_80261EB8_S2 func_80261EB8_S2;
-typedef struct func_80261EB8_S3 func_80261EB8_S3;
-struct func_80261EB8_S1 {
-    f32 unk0;
-    char pad0[0x4];
-    s16 unk8;
-    char pad8[0x2];
-    s32 unkC;
-    s32** unk10;
-};
-struct func_80261EB8_S2 {
-    s8* unk0;
-    s8 *unk4;
-    s8* unk8;
-    s8* unkC;
-    s32 unk10;
-    s32 unk14;
-    s32 unk18;
-    s32 unk1C;
-    f32 unk20;
-};
-struct func_80261EB8_S3 {
-    char pad0[0x8];
-    s8 unk8;
-};
+typedef Shared_func_80261EB8_S1 func_80261EB8_S1;
+typedef Shared_func_80261EB8_S2 func_80261EB8_S2;
+typedef Shared_func_80261EB8_S3 func_80261EB8_S3;
+
+
+
 
 /* Warning: Gap in callee-saved word stack region.
  * Saved: [0x10, 0x14, 0x18, 0x1c, 0x20, 0x24, 0x30, 0x34, 0x38, 0x3c], gap at: 0x28. */

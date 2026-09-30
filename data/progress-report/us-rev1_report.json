@@ -2,17 +2,17 @@
  "measures": {
   "fuzzy_match_percent": 77.269295,
   "total_code": "1133680",
-  "matched_code": "799392",
-  "matched_code_percent": 70.51302,
+  "matched_code": "800904",
+  "matched_code_percent": 70.646391,
   "matched_data_percent": 100.0,
   "total_functions": 4354,
-  "matched_functions": 3942,
-  "matched_functions_percent": 90.537437,
-  "complete_code": "799392",
-  "complete_code_percent": 70.51302,
+  "matched_functions": 3943,
+  "matched_functions_percent": 90.560404,
+  "complete_code": "800904",
+  "complete_code_percent": 70.646391,
   "complete_data_percent": 100.0,
   "total_units": 4608,
-  "complete_units": 3942
+  "complete_units": 3943
  },
  "units": [
   {
@@ -61898,10 +61898,17 @@
    "measures": {
     "fuzzy_match_percent": 100.0,
     "total_code": "1512",
+    "matched_code": "1512",
+    "matched_code_percent": 100.0,
     "matched_data_percent": 100.0,
     "total_functions": 1,
+    "matched_functions": 1,
+    "matched_functions_percent": 100.0,
+    "complete_code": "1512",
+    "complete_code_percent": 100.0,
     "complete_data_percent": 100.0,
-    "total_units": 1
+    "total_units": 1,
+    "complete_units": 1
    },
    "sections": [
     {
@@ -61921,8 +61928,8 @@
     }
    ],
    "metadata": {
-    "complete": false,
-    "source_path": "nonmatching/func_80261EB8.c",
+    "complete": true,
+    "source_path": "src/func_80261EB8.c",
     "progress_categories": [
      "main_code"
     ]
@@ -184324,17 +184331,17 @@
    "measures": {
     "fuzzy_match_percent": 74.73774,
     "total_code": "812680",
-    "matched_code": "559272",
-    "matched_code_percent": 68.818231,
+    "matched_code": "560784",
+    "matched_code_percent": 69.004282,
     "matched_data_percent": 100.0,
     "total_functions": 3028,
-    "matched_functions": 2704,
-    "matched_functions_percent": 89.299868,
-    "complete_code": "559272",
-    "complete_code_percent": 68.818231,
+    "matched_functions": 2705,
+    "matched_functions_percent": 89.332893,
+    "complete_code": "560784",
+    "complete_code_percent": 69.004282,
     "complete_data_percent": 100.0,
     "total_units": 3230,
-    "complete_units": 2704
+    "complete_units": 2705
    }
   },
   {

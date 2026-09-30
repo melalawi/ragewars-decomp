@@ -19369,7 +19369,7 @@
    "verdict": "Open"
   },
   "func_80261EB8": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Selects adjacent animation frames and interpolation weights for looping tracks; a typed reconstruction with floor and ceiling helpers produces 1172 of 1512 bytes with 362 differences and conflicting literal placement, a structural residue.",
@@ -19378,10 +19378,71 @@
      "recorded_at": "2026-09-19T18:24:17Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260930T211525Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 378,
+       "inserted": 0,
+       "missing": 0,
+       "of": 378,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 378,
+       "inserted": 0,
+       "missing": 0,
+       "of": 378,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 378,
+       "inserted": 0,
+       "missing": 0,
+       "of": 378,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 378,
+       "inserted": 0,
+       "missing": 0,
+       "of": 378,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 378,
+       "inserted": 0,
+       "missing": 0,
+       "of": 378,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 378,
+      "inserted": 0,
+      "missing": 0,
+      "of": 378
+     },
+     "note": "Selects adjacent animation frames and interpolation weights for a track.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T22:26:10Z"
     }
    ],
+   "best": {
+    "identical": 378,
+    "inserted": 0,
+    "missing": 0,
+    "of": 378
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "carry the multiplier across the final lookup to obtain the saved float register.",
+    "the final chunk lookup only reads the unchanged input table."
+   ],
    "positional_best_differing_words": 362,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_802627C0": {
    "attempt_count": 1,
