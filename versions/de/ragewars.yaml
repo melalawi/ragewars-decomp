@@ -3810,6 +3810,7 @@ segments:
       - [0x18A328, asm, nonmatchings/func_80424508]
       - [0x18A348, asm, nonmatchings/func_80424528]
       - [0x18A3D8, asm, nonmatchings/func_804243D8]
+      - [0x18A3E0, asm, nonmatchings/func_804245C0]
       - [0x18AB90, asm, nonmatchings/func_80424D70]
       - [0x18AC50, asm, nonmatchings/func_804253F0]
       - [0x18ADE8, asm, nonmatchings/func_80424FC8]

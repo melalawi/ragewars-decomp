@@ -18485,7 +18485,7 @@
    "verdict": "Landed"
   },
   "func_80260A7C": {
-   "attempt_count": 4,
+   "attempt_count": 5,
    "attempts": [
     {
      "note": "Quantizes a float to range.width bits over (base, scale) with a rounding floor and writes it into the packed bit stream at a bit address (encoder paired with func_802609CC). Inlining the landed bit writer func_80260744 as a static inline reproduces every instruction; only the quantized value and the bit shift swap argument registers a0/a1 (14 words). Tried declaration orders, all writer parameter orders, inline floor/quantize helpers, if/else floor forms; the permuter's only zero duplicated the floor branch under a meaningless if (bitAddress). A draft was kept outside the repository.",
@@ -18561,7 +18561,58 @@
      "outcome": "failed",
      "recorded_at": "2026-09-30T13:20:57Z",
      "retained": "artifacts/retained-candidates/func_80260A7C/tried/8e6fb619847613e14941d0430d3fb5f66715974075c728fdde5bf26f254036cb/func_80260A7C.c",
+     "retained_pruned": true,
+     "retained_pruned_reason": "func_80260A7C landed",
      "retained_sha256": "8e6fb619847613e14941d0430d3fb5f66715974075c728fdde5bf26f254036cb"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 73,
+       "inserted": 0,
+       "missing": 0,
+       "of": 73,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 73,
+       "inserted": 0,
+       "missing": 0,
+       "of": 73,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 73,
+       "inserted": 0,
+       "missing": 0,
+       "of": 73,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 73,
+       "inserted": 0,
+       "missing": 0,
+       "of": 73,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 73,
+       "inserted": 0,
+       "missing": 0,
+       "of": 73,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 73,
+      "inserted": 0,
+      "missing": 0,
+      "of": 73
+     },
+     "note": "Quantizes a float into a range's bit width and writes the value into the packed bit words at an address.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T16:32:20Z"
     }
    ],
    "best": {
@@ -18572,7 +18623,7 @@
    },
    "budget_failed_attempts": 10,
    "positional_best_differing_words": 14,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80260CBC": {
    "attempt_count": 1,
@@ -50605,7 +50656,7 @@
    "verdict": "Landed"
   },
   "func_8042D2F8": {
-   "attempt_count": 4,
+   "attempt_count": 5,
    "attempts": [
     {
      "note": "Refreshes each configured participant whose status allows an update; current verification differs in 42 aligned words, producing 160 bytes for the 176-byte interval.",
@@ -50629,6 +50680,8 @@
      "positional_differing_words": 42,
      "recorded_at": "2026-09-27T07:54:02Z",
      "retained": "artifacts/retained-candidates/func_8042D2F8/2.c",
+     "retained_pruned": true,
+     "retained_pruned_reason": "func_8042D2F8 landed",
      "retained_sha256": "27c2af2b5bff18844c2bbab972297e24e7e9eb05c915ca227219d36f5c9a56f2",
      "trials": 1
     },
@@ -50711,7 +50764,58 @@
      "outcome": "failed",
      "recorded_at": "2026-09-30T13:23:14Z",
      "retained": "artifacts/retained-candidates/func_8042D2F8/tried/f279aa88d96a23e97d4c2dbb6337be45f23f31ca222c7c0b61b76831fca453a9/func_8042D2F8.c",
+     "retained_pruned": true,
+     "retained_pruned_reason": "func_8042D2F8 landed",
      "retained_sha256": "f279aa88d96a23e97d4c2dbb6337be45f23f31ca222c7c0b61b76831fca453a9"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 44,
+       "inserted": 0,
+       "missing": 0,
+       "of": 44,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 44,
+       "inserted": 0,
+       "missing": 0,
+       "of": 44,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 44,
+       "inserted": 0,
+       "missing": 0,
+       "of": 44,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 44,
+       "inserted": 0,
+       "missing": 0,
+       "of": 44,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 44,
+       "inserted": 0,
+       "missing": 0,
+       "of": 44,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 44,
+      "inserted": 0,
+      "missing": 0,
+      "of": 44
+     },
+     "note": "For each of the 8 occupied slots without the pending-remove flag, runs its two release callbacks.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T16:32:20Z"
     }
    ],
    "best": {
@@ -50722,7 +50826,7 @@
    },
    "budget_failed_attempts": 10,
    "positional_best_differing_words": 42,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8042D3A8": {
    "attempt_count": 2,
