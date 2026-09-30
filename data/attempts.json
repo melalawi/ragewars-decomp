@@ -6725,7 +6725,7 @@
    "verdict": "Open"
   },
   "func_80220EB0": {
-   "attempt_count": 5,
+   "attempt_count": 6,
    "attempts": [
     {
      "note": "Updates a player simulation step, including movement, effects, animation and game-mode state; recovered source retains 1594 differing words and produces 6364 of 6432 bytes, a structural reconstruction residue.",
@@ -7354,6 +7354,83 @@
      "recorded_at": "2026-09-29T23:50:06Z",
      "retained": "artifacts/retained-candidates/func_80220EB0/5.c",
      "retained_sha256": "4713253245a701389129c9d5dc7493e24f725ed86c2a28cada19eabfdab269a3"
+    },
+    {
+     "assignment": "20260930T015808Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 1589,
+       "inserted": 1,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 5,
+        "reloc": 14
+       }
+      },
+      "eu": {
+       "identical": 1589,
+       "inserted": 1,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 5,
+        "reloc": 14
+       }
+      },
+      "eu-mul": {
+       "identical": 1589,
+       "inserted": 1,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 5,
+        "reloc": 14
+       }
+      },
+      "us": {
+       "identical": 1589,
+       "inserted": 1,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 5,
+        "reloc": 14
+       }
+      },
+      "us-rev1": {
+       "identical": 1589,
+       "inserted": 1,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "inserted": 1,
+        "reg": 5,
+        "reloc": 14
+       }
+      }
+     },
+     "measurement": {
+      "identical": 1589,
+      "inserted": 1,
+      "missing": 0,
+      "of": 1608
+     },
+     "note": "func_80220EB0 not-ready 1604/1608 words: three crouch-flag register words and one effect-clamp load-order word remain",
+     "outcome": "failed",
+     "recorded_at": "2026-09-30T01:58:18Z",
+     "retained": "artifacts/retained-candidates/func_80220EB0/6.c",
+     "retained_sha256": "af566d80005f1eb26f3547231659b47666d6f11bbece6e99910eeb2d26137781"
     }
    ],
    "best": {
@@ -54800,8 +54877,66 @@
    "verdict": "Open"
   },
   "func_8043E054": {
-   "attempt_count": 0,
-   "attempts": [],
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260930T015926Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 37,
+       "inserted": 0,
+       "missing": 0,
+       "of": 37,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 37,
+       "inserted": 0,
+       "missing": 0,
+       "of": 37,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 37,
+       "inserted": 0,
+       "missing": 0,
+       "of": 37,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 37,
+       "inserted": 0,
+       "missing": 0,
+       "of": 37,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 37,
+       "inserted": 0,
+       "missing": 0,
+       "of": 37,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 37,
+      "inserted": 0,
+      "missing": 0,
+      "of": 37
+     },
+     "note": "Clears eight player active flags, then marks the first settings slot whose controller profile is active.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T02:02:10Z"
+    }
+   ],
+   "best": {
+    "identical": 37,
+    "inserted": 0,
+    "missing": 0,
+    "of": 37
+   },
+   "budget_failed_attempts": 10,
    "observations": [
     {
      "note": "shares the same 4-slot predicate-scan loop shape as func_8043E0E8, already failed on register pressure (extra callee-saved reg not reproduced); skipped without a fresh attempt.",
@@ -54811,7 +54946,8 @@
      "note": "shares the same 4-slot predicate-scan loop shape as func_8043E0E8, already failed on register pressure (extra callee-saved reg not reproduced); skipped without a fresh attempt.",
      "observed_at": "2026-09-27T07:58:11Z"
     }
-   ]
+   ],
+   "verdict": "Landed"
   },
   "func_8043E0E8": {
    "attempt_count": 2,
