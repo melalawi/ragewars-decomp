@@ -17958,7 +17958,7 @@
    "verdict": "Open"
   },
   "func_80279520": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "assignment": "20260929T232425Z-d1",
@@ -18004,6 +18004,49 @@
      "recorded_at": "2026-09-29T23:47:34Z",
      "retained": "artifacts/retained-candidates/func_80279520/1.c",
      "retained_sha256": "fd787c49a932e7c8fd8e218cc05b0cf4322aaddc70ae1dba70ce5c0f4b8c7166"
+    },
+    {
+     "assignment": "20260929T232425Z-d1",
+     "cartridge": "us",
+     "carts": {
+      "de": {
+       "identical": 4,
+       "inserted": 0,
+       "missing": 0,
+       "of": 4,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 4,
+       "inserted": 0,
+       "missing": 0,
+       "of": 4,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 4,
+       "inserted": 0,
+       "missing": 0,
+       "of": 4,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 4,
+       "inserted": 0,
+       "missing": 0,
+       "of": 4,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 4,
+      "inserted": 0,
+      "missing": 0,
+      "of": 4
+     },
+     "note": "Initializes an empty linked-list header by clearing its two links and count.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T00:45:07Z"
     }
    ],
    "best": {
@@ -18013,7 +18056,7 @@
     "of": 4
    },
    "budget_failed_attempts": 10,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80279620": {
    "attempt_count": 4,
@@ -28771,7 +28814,7 @@
    "verdict": "Landed"
   },
   "func_80404DDC": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "assignment": "20260929T232418Z-d1",
@@ -28819,6 +28862,51 @@
      "recorded_at": "2026-09-29T23:47:27Z",
      "retained": "artifacts/retained-candidates/func_80404DDC/1.c",
      "retained_sha256": "62d052d3673e5df930bd8bcd59e115827a4498e479529c054f2a30262c5f6439"
+    },
+    {
+     "assignment": "20260929T232418Z-d1",
+     "cartridge": "us",
+     "carts": {
+      "de": {
+       "identical": 19,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DE808",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E2858"
+        }
+       ],
+       "of": 19,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 19,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DD4B8",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E2858"
+        }
+       ],
+       "of": 19,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 19,
+      "inserted": 0,
+      "missing": 0,
+      "of": 19
+     },
+     "note": "Releases the save buffer and clears its global state.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T00:45:07Z"
     }
    ],
    "best": {
@@ -28828,7 +28916,7 @@
     "of": 19
    },
    "budget_failed_attempts": 10,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80404E28": {
    "attempt_count": 3,

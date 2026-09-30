@@ -6945,3 +6945,4 @@ filler_80439D2C = 0x80439D2C; // type:u32 size:0x4 placed by decomp --version de
 D_800C6BB8 = 0x800C1AC8; // type:u32 derived by the trial of func_80205F18
 D_800C6BBC = 0x800C1ACC; // type:u32 derived by the trial of func_80205F18
 func_8043CDF0 = 0x8043CC10; // placed by decomp land run
+D_800E2858 = 0x800DE808; // type:u32 derived by the trial of func_80404DDC

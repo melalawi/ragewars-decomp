@@ -254,6 +254,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -302,6 +303,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -350,6 +352,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -373,13 +376,6 @@
      "func_80443528",
      "func_80443D3C",
      "func_8044ED1C"
-    ]
-   },
-   {
-    "bytes": 164,
-    "rom": "0x16AD84",
-    "sources": [
-     "func_80404D84"
     ]
    },
    {
@@ -858,6 +854,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -1556,6 +1553,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -1942,7 +1940,6 @@
      "func_8022D3DC",
      "func_8022D48C",
      "func_8024C0E4",
-     "func_8026D834",
      "func_8029E8A0"
     ]
    },
@@ -1955,7 +1952,6 @@
      "func_8022D3DC",
      "func_8022D48C",
      "func_8024C0E4",
-     "func_8026D834",
      "func_8029E8A0"
     ]
    },
@@ -1968,7 +1964,6 @@
      "func_8022D3DC",
      "func_8022D48C",
      "func_8024C0E4",
-     "func_8026D834",
      "func_8029E8A0"
     ]
    },
@@ -2403,6 +2398,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -2466,6 +2462,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -2500,7 +2497,6 @@
      "func_8022D3DC",
      "func_8022D48C",
      "func_8024C0E4",
-     "func_8026D834",
      "func_8029E8A0"
     ]
    },
@@ -2631,13 +2627,6 @@
     ]
    },
    {
-    "bytes": 164,
-    "rom": "0x168D84",
-    "sources": [
-     "func_80404D84"
-    ]
-   },
-   {
     "bytes": 8,
     "rom": "0x1709C8",
     "sources": [
@@ -2660,6 +2649,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -3207,6 +3197,7 @@
      "func_80239FC4",
      "func_8024B644",
      "func_8025C8F0",
+     "func_8026D834",
      "func_80272664",
      "func_8027451C",
      "func_8028B4A4",
@@ -3360,7 +3351,7 @@
   ]
  },
  "date": "2026-09-29",
- "reason": "landed func_80200AD8",
+ "reason": "landed func_80279520, func_80404DDC",
  "schema": "decomp.drift.v2",
  "written_by": "land run"
 }
