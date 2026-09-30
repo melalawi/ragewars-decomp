@@ -9310,6 +9310,57 @@
       },
       "size": 44
     },
+    "Shared_Gfx": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'words.w0', 'u32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "words.w0",
+          "offset": 0,
+          "provenance": [
+            "src/func_80417BA0.c"
+          ],
+          "size": 4,
+          "type": "u32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'words.w1', 'u32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "words.w1",
+          "offset": 4,
+          "provenance": [
+            "src/func_80417BA0.c"
+          ],
+          "size": 4,
+          "type": "u32",
+          "views": []
+        }
+      ],
+      "header": "gfx.h",
+      "members": [
+        "src/func_80417BA0.c:Gfx"
+      ],
+      "paths": {
+        "(0, 'words.w0', 'u32', 4, 1)": "words_w0",
+        "(4, 'words.w1', 'u32', 4, 1)": "words_w1",
+        "canonical:0": "words_w0",
+        "canonical:4": "words_w1"
+      },
+      "proof": {
+        "src/func_80417BA0.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 8
+    },
     "Shared_GlobalFlowState": {
       "fields": [
         {
@@ -11335,6 +11386,91 @@
       },
       "size": 16
     },
+    "Shared_Quat": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'x', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "x",
+          "offset": 0,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'y', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "y",
+          "offset": 4,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'z', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "z",
+          "offset": 8,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(12, 'w', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "w",
+          "offset": 12,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        }
+      ],
+      "header": "quat.h",
+      "members": [
+        "src/func_8027ADBC.c:Quat"
+      ],
+      "paths": {
+        "(0, 'x', 'f32', 4, 1)": "x",
+        "(12, 'w', 'f32', 4, 1)": "w",
+        "(4, 'y', 'f32', 4, 1)": "y",
+        "(8, 'z', 'f32', 4, 1)": "z",
+        "canonical:0": "x",
+        "canonical:4": "y",
+        "canonical:8": "z",
+        "canonical:C": "w"
+      },
+      "proof": {
+        "src/func_8027ADBC.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 16
+    },
     "Shared_Rec3": {
       "fields": [
         {
@@ -11368,6 +11504,74 @@
         }
       },
       "size": 150
+    },
+    "Shared_RenderSwitches": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'filter', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "filter",
+          "offset": 0,
+          "provenance": [
+            "src/func_80417BA0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'enable', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "enable",
+          "offset": 4,
+          "provenance": [
+            "src/func_80417BA0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'depth', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "depth",
+          "offset": 8,
+          "provenance": [
+            "src/func_80417BA0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "renderswitches.h",
+      "members": [
+        "src/func_80417BA0.c:RenderSwitches"
+      ],
+      "paths": {
+        "(0, 'filter', 's32', 4, 1)": "filter",
+        "(4, 'enable', 's32', 4, 1)": "enable",
+        "(8, 'depth', 's32', 4, 1)": "depth",
+        "canonical:0": "filter",
+        "canonical:4": "enable",
+        "canonical:8": "depth"
+      },
+      "proof": {
+        "src/func_80417BA0.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 12
     },
     "Shared_SceneActorKind": {
       "fields": [
@@ -16604,6 +16808,142 @@
         }
       },
       "size": 8
+    },
+    "Shared_func_8027ADBC_S2": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'pos', 'Vec3', 12, 1)"
+          ],
+          "dimensions": [],
+          "name": "pos",
+          "offset": 8,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 12,
+          "type": "Vec3",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112, 'unk70', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk70",
+          "offset": 112,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(5856, 'unk16E0', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk16E0",
+          "offset": 5856,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        }
+      ],
+      "header": "func_8027adbc_s2.h",
+      "members": [
+        "src/func_8027ADBC.c:func_8027ADBC_S2"
+      ],
+      "paths": {
+        "(112, 'unk70', 'f32', 4, 1)": "unk70",
+        "(5856, 'unk16E0', 'void *', 4, 1)": "unk16E0",
+        "(8, 'pos', 'Vec3', 12, 1)": "pos",
+        "canonical:16E0": "unk16E0",
+        "canonical:70": "unk70",
+        "canonical:8": "pos"
+      },
+      "proof": {
+        "src/func_8027ADBC.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 5860
+    },
+    "Shared_func_8027ADBC_S3": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'pos', 'Vec3', 12, 1)"
+          ],
+          "dimensions": [],
+          "name": "pos",
+          "offset": 8,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 12,
+          "type": "Vec3",
+          "views": []
+        }
+      ],
+      "header": "func_8027adbc_s3.h",
+      "members": [
+        "src/func_8027ADBC.c:func_8027ADBC_S3"
+      ],
+      "paths": {
+        "(8, 'pos', 'Vec3', 12, 1)": "pos",
+        "canonical:8": "pos"
+      },
+      "proof": {
+        "src/func_8027ADBC.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 20
+    },
+    "Shared_func_8027ADBC_S6": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'pos', 'Vec3', 12, 1)"
+          ],
+          "dimensions": [],
+          "name": "pos",
+          "offset": 8,
+          "provenance": [
+            "src/func_8027ADBC.c"
+          ],
+          "size": 12,
+          "type": "Vec3",
+          "views": []
+        }
+      ],
+      "header": "func_8027adbc_s6.h",
+      "members": [
+        "src/func_8027ADBC.c:func_8027ADBC_S6"
+      ],
+      "paths": {
+        "(8, 'pos', 'Vec3', 12, 1)": "pos",
+        "canonical:8": "pos"
+      },
+      "proof": {
+        "src/func_8027ADBC.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 20
     },
     "Shared_func_802856B0_S1": {
       "fields": [

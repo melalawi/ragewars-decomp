@@ -1955,7 +1955,7 @@ segments:
       - [0x07B0C0, asm, nonmatchings/func_8027A540]
       - [0x07B538, asm, nonmatchings/func_8027A9B8]
       - [0x07B7E4, asm, nonmatchings/func_8027AC64]
-      - [0x07B93C, asm, nonmatchings/func_8027AD3C]
+      - [0x07B93C, asm, nonmatchings/func_8027ADBC]
       - [0x07C018, asm, nonmatchings/func_8027B498]
       - [0x07C310, asm, nonmatchings/func_8027B790]
       - [0x07CEA4, asm, nonmatchings/func_8027C324]

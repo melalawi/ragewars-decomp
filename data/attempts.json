@@ -22682,7 +22682,7 @@
    "verdict": "Landed"
   },
   "func_8027ADBC": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Updates a moving effect from its type, nearby players and tracked target; recovered source retains 429 differing words and produces 1764 of 1756 bytes, a structural reconstruction residue.",
@@ -22691,10 +22691,234 @@
      "recorded_at": "2026-09-20T01:32:25Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 439,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C4BCC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4BCC"
+        },
+        {
+         "address": "0x800C4BD4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4BD4"
+        },
+        {
+         "address": "0x800C4BDC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4BDC"
+        },
+        {
+         "address": "0x800C4BE4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4BE4"
+        },
+        {
+         "address": "0x800C4BEC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4BEC"
+        }
+       ],
+       "of": 439,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 439,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C4E7C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4E7C"
+        },
+        {
+         "address": "0x800C4E84",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4E84"
+        },
+        {
+         "address": "0x800C4E8C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4E8C"
+        },
+        {
+         "address": "0x800C4E94",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4E94"
+        },
+        {
+         "address": "0x800C4E9C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4E9C"
+        }
+       ],
+       "of": 439,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 439,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C4EBC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4EBC"
+        },
+        {
+         "address": "0x800C4EC4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4EC4"
+        },
+        {
+         "address": "0x800C4ECC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4ECC"
+        },
+        {
+         "address": "0x800C4ED4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4ED4"
+        },
+        {
+         "address": "0x800C4EDC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4EDC"
+        }
+       ],
+       "of": 439,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 439,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C4AFC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4AFC"
+        },
+        {
+         "address": "0x800C4B04",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4B04"
+        },
+        {
+         "address": "0x800C4B0C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4B0C"
+        },
+        {
+         "address": "0x800C4B14",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4B14"
+        },
+        {
+         "address": "0x800C4B1C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C4B1C"
+        }
+       ],
+       "of": 439,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 439,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C9CBC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C9CBC"
+        },
+        {
+         "address": "0x800C9CC4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C9CC4"
+        },
+        {
+         "address": "0x800C9CCC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C9CCC"
+        },
+        {
+         "address": "0x800C9CD4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C9CD4"
+        },
+        {
+         "address": "0x800C9CDC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C9CDC"
+        }
+       ],
+       "of": 439,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 439,
+      "inserted": 0,
+      "missing": 0,
+      "of": 439
+     },
+     "note": "Updates a moving effect using its type, nearby players, and tracked target.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T21:40:05Z"
     }
    ],
+   "best": {
+    "identical": 439,
+    "inserted": 0,
+    "missing": 0,
+    "of": 439
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "Stage the nearby-player scratch address before loop constants.",
+    "Recycle the tracking velocity pointer for scratch and velocity in both acceleration paths.",
+    "Reuse the dead nearby-motion pointer for the special-effect velocity.",
+    "Preserve the ordering of nearby-loop initialization.",
+    "Overwrite the scratch pointer with the velocity pointer after scaling.",
+    "Overwrite the scratch pointer with the velocity pointer after scaling."
+   ],
    "positional_best_differing_words": 429,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8027B498": {
    "attempt_count": 1,
@@ -42646,7 +42870,7 @@
    "verdict": "Open"
   },
   "func_80417BA0": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Clips a textured screen region and dispatches tiled rectangle rendering with the current format and filtering state; the recovered C produces 1608 of 1668 bytes with 385 aligned differences, a structural reconstruction residue.",
@@ -42655,10 +42879,162 @@
      "recorded_at": "2026-09-20T01:00:39Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260930T205353Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 417,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DF260",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E32B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E32B0"
+        },
+        {
+         "address": "0x800DF26C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E32BC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E32BC"
+        }
+       ],
+       "of": 417,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 417,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800EF8D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E32B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E32B0"
+        },
+        {
+         "address": "0x800EF8DC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E32BC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E32BC"
+        }
+       ],
+       "of": 417,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 417,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800EAA90",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E32B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E32B0"
+        },
+        {
+         "address": "0x800EAA9C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E32BC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E32BC"
+        }
+       ],
+       "of": 417,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 417,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DDF10",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E32B0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E32B0"
+        },
+        {
+         "address": "0x800DDF1C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800E32BC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800E32BC"
+        }
+       ],
+       "of": 417,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 417,
+       "inserted": 0,
+       "missing": 0,
+       "of": 417,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 417,
+      "inserted": 0,
+      "missing": 0,
+      "of": 417
+     },
+     "note": "Clips a textured screen rectangle to the viewport and emits the matching render commands.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T21:40:06Z"
     }
    ],
+   "best": {
+    "identical": 417,
+    "inserted": 0,
+    "missing": 0,
+    "of": 417
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "retain the default render mode for dispatch.",
+    "keep the clipping product distinct from its input delta to reproduce register allocation.",
+    "keep the clipping product distinct from its input delta to reproduce register allocation.",
+    "keep the clipping product distinct from its input delta to reproduce register allocation.",
+    "keep the clipping product distinct from its input delta to reproduce register allocation."
+   ],
    "positional_best_differing_words": 385,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80418224": {
    "attempt_count": 1,
