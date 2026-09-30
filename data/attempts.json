@@ -6543,7 +6543,7 @@
    "verdict": "Open"
   },
   "func_8021A2D4": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Draws a player with team visibility and color effects and weapon attachments; repaired pointer-table indexing and resident aliases compile to 1020 of 1208 bytes with 278 differences including an unrecovered argument position and control-flow structure.",
@@ -6552,10 +6552,314 @@
      "recorded_at": "2026-09-19T17:24:37Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260930T220006Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 302,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C22E4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73D4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73D4"
+        },
+        {
+         "address": "0x800C22E8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73D8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73D8"
+        },
+        {
+         "address": "0x800C22EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73DC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73DC"
+        },
+        {
+         "address": "0x800C22F0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73E0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73E0"
+        },
+        {
+         "address": "0x800C9228",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CE478",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CE478"
+        },
+        {
+         "address": "0x800CC3A4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D15F4"
+        }
+       ],
+       "of": 302,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 302,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2584",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73D4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73D4"
+        },
+        {
+         "address": "0x800C2588",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73D8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73D8"
+        },
+        {
+         "address": "0x800C258C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73DC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73DC"
+        },
+        {
+         "address": "0x800C2590",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73E0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73E0"
+        },
+        {
+         "address": "0x800C9E18",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CE478",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CE478"
+        },
+        {
+         "address": "0x800CCF84",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D15F4"
+        }
+       ],
+       "of": 302,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 302,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C25C4",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73D4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73D4"
+        },
+        {
+         "address": "0x800C25C8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73D8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73D8"
+        },
+        {
+         "address": "0x800C25CC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73DC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73DC"
+        },
+        {
+         "address": "0x800C25D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73E0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73E0"
+        },
+        {
+         "address": "0x800CA7E8",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CE478",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CE478"
+        },
+        {
+         "address": "0x800CD954",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D15F4"
+        }
+       ],
+       "of": 302,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 302,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2214",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73D4",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73D4"
+        },
+        {
+         "address": "0x800C2218",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73D8",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73D8"
+        },
+        {
+         "address": "0x800C221C",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73DC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73DC"
+        },
+        {
+         "address": "0x800C2220",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800C73E0",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800C73E0"
+        },
+        {
+         "address": "0x800C9148",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x800CE478",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_800CE478"
+        },
+        {
+         "address": "0x800CC2B4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D15F4"
+        }
+       ],
+       "of": 302,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 302,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800D15F4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800D15F4"
+        }
+       ],
+       "of": 302,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 302,
+      "inserted": 0,
+      "missing": 0,
+      "of": 302
+     },
+     "note": "note: Draws an actor with visibility, color effects, and optional weapon attachments.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T23:18:25Z"
     }
    ],
+   "best": {
+    "identical": 302,
+    "inserted": 0,
+    "missing": 0,
+    "of": 302
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "volatile preserves independent visibility flag reads.",
+    "volatile preserves animation comparison ordering.",
+    "volatile preserves the effect float store/load order.",
+    "volatile keeps the active path field read order.",
+    "the byte view exposes the aligned active word through a real field."
+   ],
    "positional_best_differing_words": 278,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8021A9A4": {
    "attempt_count": 1,
@@ -52044,7 +52348,7 @@
    "verdict": "Landed"
   },
   "func_8042BD40": {
-   "attempt_count": 10,
+   "attempt_count": 11,
    "attempts": [
     {
      "note": "rw47-half: 1208-byte menu-state initializer drafted with m2c and typed byte/word/pointer accesses checked against the assembly. One source syntax failure corrected, two standalone compiled comparisons; bounded 45-second pinned GCC permuter, 643 compilations. Best tested candidate still 251 differing words and 1224 produced bytes. No source landed.",
@@ -52134,11 +52438,75 @@
      "positional_differing_words": 2,
      "recorded_at": "2026-09-27T20:42:29Z",
      "retained": "artifacts/retained-candidates/func_8042BD40/10.c",
+     "retained_pruned": true,
+     "retained_pruned_reason": "func_8042BD40 landed",
      "retained_sha256": "543d71206da08d345182ea90b4d59f30168e1cf6e3d0c7238454ce49ca416603",
      "trials": 1
+    },
+    {
+     "assignment": "20260930T220144Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 302,
+       "inserted": 0,
+       "missing": 0,
+       "of": 302,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 326,
+       "inserted": 0,
+       "missing": 0,
+       "of": 326,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 326,
+       "inserted": 0,
+       "missing": 0,
+       "of": 326,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 302,
+       "inserted": 0,
+       "missing": 0,
+       "of": 302,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 302,
+       "inserted": 0,
+       "missing": 0,
+       "of": 302,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 302,
+      "inserted": 0,
+      "missing": 0,
+      "of": 302
+     },
+     "note": "Opens the results screen, records trial rewards, and initializes its controls and labels.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T23:18:26Z"
     }
    ],
+   "best": {
+    "identical": 302,
+    "inserted": 0,
+    "missing": 0,
+    "of": 302
+   },
    "budget_failed_attempts": 3,
+   "fakematch": [
+    "volatile preserves the final menu activation store order.",
+    "carries the active marker across reward setup to control scheduling.",
+    "a single-pass wrapper restores the reward flag allocation without changing behavior.",
+    "volatile keeps cursor initialization before screen activation."
+   ],
    "observations": [
     {
      "note": "Held pending a named mechanism, not abandoned. Two aligned differing words at nine of ten attempts spent: the residue is the order of a hoisted constant copy and a pointer add before a call, and 27,275 permuter iterations plus every placement of the counter and pointer initialisers are recorded here as holding at two. Re-deriving a draft already known to sit at two words would spend the last attempt on a measurement the record already has, and destroy the attempt a future mechanism would need. Pick this up when an idiom names the ordering of a hoisted constant copy against an address add across a call, then reinstate it; do not pick it up to try harder.",
@@ -52165,7 +52533,7 @@
      "was_retired": false
     }
    ],
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8042C1F8": {
    "attempt_count": 1,

@@ -120,11 +120,11 @@ extern s32 D_800CE474[2];
 extern s32 D_800CE478[];
 #define PLAYER_MODE_TABLE D_800CE478
 #elif defined(VERSION_US)
-extern s32 D_800C9148[];
-#define PLAYER_MODE_TABLE D_800C9148
+extern s32 D_800CE478[];
+#define PLAYER_MODE_TABLE D_800CE478
 #elif defined(VERSION_DE)
-extern s32 D_800C9228[];
-#define PLAYER_MODE_TABLE D_800C9228
+extern s32 D_800CE478[];
+#define PLAYER_MODE_TABLE D_800CE478
 #endif
 extern struct Shared__struct_D_800D34C0_0x18 D_800D34C0[0x10]; /* unable to generate initializer: non-zero padding; const */
 #if defined(VERSION_US_REV1)
