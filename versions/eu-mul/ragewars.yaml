@@ -440,6 +440,7 @@ segments:
       - [0x019DCC, asm, nonmatchings/func_8021917C]
       - [0x019E08, asm, nonmatchings/func_802191B8]
       - [0x019F04, asm, nonmatchings/eu_mul_func_80219304]
+      - [0x019F10, asm, nonmatchings/func_802192C0]
       - [0x01A018, asm, nonmatchings/func_802193C8]
       - [0x01A058, asm, nonmatchings/func_80219408]
       - [0x01A084, asm, nonmatchings/func_80219434]

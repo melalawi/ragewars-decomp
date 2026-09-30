@@ -2396,7 +2396,7 @@
    "verdict": "Landed"
   },
   "func_802070D0": {
-   "attempt_count": 4,
+   "attempt_count": 5,
    "attempts": [
     {
      "note": "Steers an actor along path nodes, blending direction, speed and orientation and advancing reached waypoints; vector and mixed-width flag recovery produces 1596 of 1632 bytes with 319 differences and sixteen conflicting literal placements, classified as structural source recovery drift.",
@@ -2486,6 +2486,8 @@
      "outcome": "failed",
      "recorded_at": "2026-09-29T09:11:34Z",
      "retained": "artifacts/retained-candidates/func_802070D0/2.c",
+     "retained_pruned": true,
+     "retained_pruned_reason": "func_802070D0 landed",
      "retained_sha256": "c10f080065915a85984b3a01eb48612cb069e271888f6e2842c83e7baa13a235"
     },
     {
@@ -2548,6 +2550,8 @@
      "outcome": "failed",
      "recorded_at": "2026-09-29T17:10:18Z",
      "retained": "artifacts/retained-candidates/func_802070D0/3.c",
+     "retained_pruned": true,
+     "retained_pruned_reason": "func_802070D0 landed",
      "retained_sha256": "58c27220c2b929f763a38cdf1c9643a9450c812b45fe0d68660cfb02096a3753"
     },
     {
@@ -2610,7 +2614,58 @@
      "outcome": "failed",
      "recorded_at": "2026-09-30T05:40:40Z",
      "retained": "artifacts/retained-candidates/func_802070D0/tried/7387f17fdeef279754603ecd1352ccb8e548d4c49198329964c2be76b2896682/func_802070D0.c",
+     "retained_pruned": true,
+     "retained_pruned_reason": "func_802070D0 landed",
      "retained_sha256": "7387f17fdeef279754603ecd1352ccb8e548d4c49198329964c2be76b2896682"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 408,
+       "inserted": 0,
+       "missing": 0,
+       "of": 408,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 408,
+      "inserted": 0,
+      "missing": 0,
+      "of": 408
+     },
+     "note": "Steers an actor along path nodes, blending direction, speed and orientation as it advances waypoints.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T06:24:37Z"
     }
    ],
    "best": {
@@ -2621,7 +2676,7 @@
    },
    "budget_failed_attempts": 10,
    "positional_best_differing_words": 319,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80207738": {
    "attempt_count": 1,
