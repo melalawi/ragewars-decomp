@@ -21,17 +21,17 @@ typedef struct { char pad[336]; s8 active; } StatusView;
 extern StatusStep D_801466E2[];
 #define PLAYER_STATUS D_801466E2
 #elif defined(VERSION_US)
-extern StatusStep D_80140622[];
-#define PLAYER_STATUS D_80140622
+extern StatusStep D_801466E2[];
+#define PLAYER_STATUS D_801466E2
 #elif defined(VERSION_EU)
-extern StatusStep D_80152622[];
-#define PLAYER_STATUS D_80152622
+extern StatusStep D_801466E2[];
+#define PLAYER_STATUS D_801466E2
 #elif defined(VERSION_EU_MUL)
-extern StatusStep D_8014C622[];
-#define PLAYER_STATUS D_8014C622
+extern StatusStep D_801466E2[];
+#define PLAYER_STATUS D_801466E2
 #elif defined(VERSION_DE)
-extern StatusStep D_80142622[];
-#define PLAYER_STATUS D_80142622
+extern StatusStep D_801466E2[];
+#define PLAYER_STATUS D_801466E2
 #endif
 extern PlayerSettings D_80146398[];
 extern ControllerProfile D_8010F328[];

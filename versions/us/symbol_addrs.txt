@@ -5823,3 +5823,4 @@ D_800D7D4C = 0x800D29CC; // placed by decomp land run
 D_800D7D50 = 0x800D29D0; // placed by decomp land run
 D_800D7D54 = 0x800D29D4; // placed by decomp land run
 D_800D7D5C = 0x800D29DC; // placed by decomp land run
+D_801466E2 = 0x80140622; // type:u32 derived by the trial of func_8043DEDC

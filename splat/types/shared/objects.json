@@ -4478,6 +4478,761 @@
         }
       },
       "size": 5860
+    },
+    "Shared_Block": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'window', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "window",
+          "offset": 0,
+          "provenance": [
+            "src/func_80433F14.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'list', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "list",
+          "offset": 4,
+          "provenance": [
+            "src/func_80433F14.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 4,
+          "canonical_keys": [
+            "(88, 'players', 'struct Player', 11680, 4)"
+          ],
+          "dimensions": [
+            4
+          ],
+          "name": "players",
+          "offset": 88,
+          "provenance": [
+            "src/func_80433F14.c"
+          ],
+          "size": 11680,
+          "type": "Shared_Player_func_80433F14",
+          "views": []
+        }
+      ],
+      "header": "block.h",
+      "members": [
+        "src/func_80433F14.c:Block"
+      ],
+      "paths": {
+        "(0, 'window', 'void *', 4, 1)": "window",
+        "(4, 'list', 'void *', 4, 1)": "list",
+        "(88, 'players', 'struct Player', 11680, 4)": "players",
+        "canonical:0": "window",
+        "canonical:4": "list",
+        "canonical:58": "players"
+      },
+      "proof": {
+        "src/func_80433F14.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 11768
+    },
+    "Shared_Entry": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'value', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "value",
+          "offset": 0,
+          "provenance": [
+            "src/func_8043CEB0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'timer', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "timer",
+          "offset": 4,
+          "provenance": [
+            "src/func_8043CEB0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'count', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "count",
+          "offset": 8,
+          "provenance": [
+            "src/func_8043CEB0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 24,
+          "canonical_keys": [
+            "(12, 'text', 'u8', 24, 24)"
+          ],
+          "dimensions": [
+            24
+          ],
+          "name": "text",
+          "offset": 12,
+          "provenance": [
+            "src/func_8043CEB0.c"
+          ],
+          "size": 24,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "entry.h",
+      "members": [
+        "src/func_8043CEB0.c:Entry"
+      ],
+      "paths": {
+        "(0, 'value', 's32', 4, 1)": "value",
+        "(12, 'text', 'u8', 24, 24)": "text",
+        "(4, 'timer', 's32', 4, 1)": "timer",
+        "(8, 'count', 's32', 4, 1)": "count",
+        "canonical:0": "value",
+        "canonical:4": "timer",
+        "canonical:8": "count",
+        "canonical:C": "text"
+      },
+      "proof": {
+        "src/func_8043CEB0.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 36
+    },
+    "Shared_Item": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'label', 'struct Label *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "label",
+          "offset": 8,
+          "provenance": [
+            "src/func_80433F14.c"
+          ],
+          "size": 4,
+          "type": "Shared_Label *",
+          "views": []
+        }
+      ],
+      "header": "item.h",
+      "members": [
+        "src/func_80433F14.c:Item"
+      ],
+      "paths": {
+        "(8, 'label', 'struct Label *', 4, 1)": "label",
+        "canonical:8": "label"
+      },
+      "proof": {
+        "src/func_80433F14.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 12
+    },
+    "Shared_Label": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(56, 'text', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "text",
+          "offset": 56,
+          "provenance": [
+            "src/func_80433F14.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        }
+      ],
+      "header": "label.h",
+      "members": [
+        "src/func_80433F14.c:Label"
+      ],
+      "paths": {
+        "(56, 'text', 'void *', 4, 1)": "text",
+        "canonical:38": "text"
+      },
+      "proof": {
+        "src/func_80433F14.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 60
+    },
+    "Shared_Player_func_80433F14": {
+      "fields": [
+        {
+          "array": 1600,
+          "canonical_keys": [
+            "(24, 'slots', 'char', 1600, 1600)"
+          ],
+          "dimensions": [
+            4,
+            400
+          ],
+          "name": "slots",
+          "offset": 24,
+          "provenance": [
+            "src/func_80433F14.c"
+          ],
+          "size": 1600,
+          "type": "char",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(2796, 'chosen', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "chosen",
+          "offset": 2796,
+          "provenance": [
+            "src/func_80433F14.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "player_func_80433F14.h",
+      "members": [
+        "src/func_80433F14.c:Player"
+      ],
+      "paths": {
+        "(24, 'slots', 'char', 1600, 1600)": "slots",
+        "(2796, 'chosen', 's32', 4, 1)": "chosen",
+        "canonical:18": "slots",
+        "canonical:AEC": "chosen"
+      },
+      "proof": {
+        "src/func_80433F14.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 2920
+    },
+    "Shared_PointBits": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'x', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "x",
+          "offset": 0,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'y', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "y",
+          "offset": 4,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'z', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "z",
+          "offset": 8,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "pointbits.h",
+      "members": [
+        "src/func_802856B0.c:PointBits"
+      ],
+      "paths": {
+        "(0, 'x', 's32', 4, 1)": "x",
+        "(4, 'y', 's32', 4, 1)": "y",
+        "(8, 'z', 's32', 4, 1)": "z",
+        "canonical:0": "x",
+        "canonical:4": "y",
+        "canonical:8": "z"
+      },
+      "proof": {
+        "src/func_802856B0.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 12
+    },
+    "Shared_PointCopy": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'pad', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "pad",
+          "offset": 0,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'point', 'PointBits', 12, 1)"
+          ],
+          "dimensions": [],
+          "name": "point",
+          "offset": 4,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 12,
+          "type": "Shared_PointBits",
+          "views": []
+        }
+      ],
+      "header": "pointcopy.h",
+      "members": [
+        "src/func_802856B0.c:PointCopy"
+      ],
+      "paths": {
+        "(0, 'pad', 's32', 4, 1)": "pad",
+        "(4, 'point', 'PointBits', 12, 1)": "point",
+        "canonical:0": "pad",
+        "canonical:4": "point"
+      },
+      "proof": {
+        "src/func_802856B0.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 16
+    },
+    "Shared_func_802856B0_S1": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(20, 'unk14', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk14",
+          "offset": 20,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(40, 'unk28', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk28",
+          "offset": 40,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        }
+      ],
+      "header": "func_802856b0_s1.h",
+      "members": [
+        "src/func_802856B0.c:func_802856B0_S1"
+      ],
+      "paths": {
+        "(20, 'unk14', 'void *', 4, 1)": "unk14",
+        "(40, 'unk28', 'f32', 4, 1)": "unk28",
+        "canonical:14": "unk14",
+        "canonical:28": "unk28"
+      },
+      "proof": {
+        "src/func_802856B0.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 44
+    },
+    "Shared_func_802856B0_S2": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'unk4', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(12, 'unkC', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC",
+          "offset": 12,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'unk10', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk10",
+          "offset": 16,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(20, 'unk14', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk14",
+          "offset": 20,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(28, 'unk1C', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1C",
+          "offset": 28,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(32, 'unk20', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk20",
+          "offset": 32,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(44, 'unk2C', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2C",
+          "offset": 44,
+          "provenance": [
+            "src/func_802856B0.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        }
+      ],
+      "header": "func_802856b0_s2.h",
+      "members": [
+        "src/func_802856B0.c:func_802856B0_S2"
+      ],
+      "paths": {
+        "(12, 'unkC', 'f32', 4, 1)": "unkC",
+        "(16, 'unk10', 'f32', 4, 1)": "unk10",
+        "(20, 'unk14', 'f32', 4, 1)": "unk14",
+        "(24, 'unk18', 'f32', 4, 1)": "unk18",
+        "(28, 'unk1C', 'f32', 4, 1)": "unk1C",
+        "(32, 'unk20', 'f32', 4, 1)": "unk20",
+        "(4, 'unk4', 'void *', 4, 1)": "unk4",
+        "(44, 'unk2C', 'f32', 4, 1)": "unk2C",
+        "canonical:10": "unk10",
+        "canonical:14": "unk14",
+        "canonical:18": "unk18",
+        "canonical:1C": "unk1C",
+        "canonical:20": "unk20",
+        "canonical:2C": "unk2C",
+        "canonical:4": "unk4",
+        "canonical:C": "unkC"
+      },
+      "proof": {
+        "src/func_802856B0.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 48
+    },
+    "Shared_func_8043DEDC_S1": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(328, 'unk148', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk148",
+          "offset": 328,
+          "provenance": [
+            "src/func_8043DEDC.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        }
+      ],
+      "header": "func_8043dedc_s1.h",
+      "members": [
+        "src/func_8043DEDC.c:func_8043DEDC_S1"
+      ],
+      "paths": {
+        "(328, 'unk148', 's8', 1, 1)": "unk148",
+        "canonical:148": "unk148"
+      },
+      "proof": {
+        "src/func_8043DEDC.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 329
+    },
+    "Shared_func_8043DEDC_S2": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(548, 'unk224', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk224",
+          "offset": 548,
+          "provenance": [
+            "src/func_8043DEDC.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_8043dedc_s2.h",
+      "members": [
+        "src/func_8043DEDC.c:func_8043DEDC_S2"
+      ],
+      "paths": {
+        "(548, 'unk224', 's32', 4, 1)": "unk224",
+        "canonical:224": "unk224"
+      },
+      "proof": {
+        "src/func_8043DEDC.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 552
+    },
+    "Shared_func_8043DEDC_S3": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(120, 'unk78', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk78",
+          "offset": 120,
+          "provenance": [
+            "src/func_8043DEDC.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(127, 'unk7F', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk7F",
+          "offset": 127,
+          "provenance": [
+            "src/func_8043DEDC.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        }
+      ],
+      "header": "func_8043dedc_s3.h",
+      "members": [
+        "src/func_8043DEDC.c:func_8043DEDC_S3"
+      ],
+      "paths": {
+        "(120, 'unk78', 's8', 1, 1)": "unk78",
+        "(127, 'unk7F', 's8', 1, 1)": "unk7F",
+        "canonical:78": "unk78",
+        "canonical:7F": "unk7F"
+      },
+      "proof": {
+        "src/func_8043DEDC.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 128
+    },
+    "Shared_func_8043DEDC_S4": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(32, 'unk20', 's32 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk20",
+          "offset": 32,
+          "provenance": [
+            "src/func_8043DEDC.c"
+          ],
+          "size": 4,
+          "type": "s32 *",
+          "views": []
+        }
+      ],
+      "header": "func_8043dedc_s4.h",
+      "members": [
+        "src/func_8043DEDC.c:func_8043DEDC_S4"
+      ],
+      "paths": {
+        "(32, 'unk20', 's32 *', 4, 1)": "unk20",
+        "canonical:20": "unk20"
+      },
+      "proof": {
+        "src/func_8043DEDC.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 36
     }
   },
   "schema": "shared-layout.v1"

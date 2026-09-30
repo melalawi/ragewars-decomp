@@ -4182,7 +4182,7 @@ segments:
       - [0x1B3A10, asm, nonmatchings/func_8043CD10]
       - [0x1B3AE8, asm, nonmatchings/func_8043DAE8]
       - [0x1B3AF0, asm, nonmatchings/func_8043DAF0]
-      - [0x1B3BC0, asm, nonmatchings/func_8043DBC0]
+      - [0x1B3BC0, asm, nonmatchings/func_8043CEB0]
       - [0x1B3C54, asm, nonmatchings/func_8043CF44]
       - [0x1B3CE8, asm, nonmatchings/func_8043CFD8]
       - [0x1B3E34, asm, nonmatchings/func_8043D124]
