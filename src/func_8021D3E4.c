@@ -7,12 +7,8 @@
 #define ABS(x) ((x) < 0.0f ? -(x) : (x))
 
 #include "basetypes.h"
-
-typedef struct {
-    f32 x;
-    f32 y;
-    f32 z;
-} Vec3f;
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     f32 x;
@@ -21,20 +17,11 @@ typedef struct {
     f32 w;
 } Quat;
 
-typedef struct {
-    f32 m[16];
-} Matrix;
-
-typedef struct {
+typedef struct View {
     char pad0[0x128];
     Vec3f position;
 } View;
 
-#define MATCHKIT_KNOWN_Matrix 1
-#define MATCHKIT_KNOWN_Vec3f 1
-#define MATCHKIT_KNOWN_View 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 extern f32 D_800CF1B4;
 extern s32 D_800D297C;

@@ -8,15 +8,14 @@
    one (unless the match forbids it), before the match end check func_80228394 and the world updates
    func_80227014 and func_80227E68 run and the frame time is restored. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct View {
     char pad0[0x564];
     s32 menu;
 } View;
 
-#define MATCHKIT_KNOWN_View 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 
 typedef struct {

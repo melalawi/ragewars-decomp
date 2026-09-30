@@ -4,17 +4,16 @@
    unlimited at 0x1450), and the message "<amount> <type name>" with a plural suffix for more than one
    is built and shown through func_8022B74C. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
-typedef struct {
+typedef struct Character {
     char pad0[0x108];
     s32 maxAmmo[4];
 } Character;
 
-#define MATCHKIT_KNOWN_Character 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x14];

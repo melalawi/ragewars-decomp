@@ -1,21 +1,13 @@
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 /* Picks a rider's nearest target: walks the player list D_80145060 for players within the segment's range at 0x54 (squared distance through func_8027272C) that are not the rider's own player, are active and, in team play (D_801468C4), are on the other team, keeps those with a clear line of sight between their raised centres through func_80244494 (or whose blocker is the player itself), and records the nearest in the rider at 0x80 and in the result with its distance through func_802BC380, clearing both when none qualifies. */
-typedef struct {
-    f32 x;
-    f32 y;
-    f32 z;
-} Vec3;
-
-typedef struct {
+typedef struct Record {
     char pad0[0x92];
     u8 team;
 } Record;
 
-#define MATCHKIT_KNOWN_Record 1
-#define MATCHKIT_KNOWN_Vec3 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x80];

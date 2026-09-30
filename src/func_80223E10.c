@@ -5,15 +5,14 @@
    weapon height at 0x740 (from the model's height at 0xF4 or a default) and its side and forward
    offsets at 0x73C and 0x744 along the camera's heading. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct Model {
     char pad0[0xF4];
     f32 height;
 } Model;
 
-#define MATCHKIT_KNOWN_Model 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x6C];

@@ -1,24 +1,18 @@
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct Triple { s32 a, b, c; } Triple;
+typedef struct RiderTriple { s32 a, b, c; } RiderTriple;
 typedef struct Quad { s32 a, b, c, d; } Quad;
-typedef struct Vec3f { f32 x, y, z; } Vec3f;
-
 typedef struct Rider {
     char pad0[0x128];
     Vec3f centre;
 } Rider;
 
-#define MATCHKIT_KNOWN_Rider 1
-#define MATCHKIT_KNOWN_Triple 1
-#define MATCHKIT_KNOWN_Vec3f 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
-
 typedef struct Actor {
     u8 kind;
     char pad1[7];
-    Triple position;
+    RiderTriple position;
     char pad14[4];
     s32 *state;
     Vec3f origin;
@@ -42,21 +36,21 @@ typedef struct Thing {
 extern char D_80121990;
 extern char D_8011FE88;
 
-extern f32 func_80216F44(Actor *, Triple);
+extern f32 func_80216F44(Actor *, RiderTriple);
 extern void func_8022B08C(Player *, Vec3f *);
-extern void func_80239314(Rider *, f32, f32, f32, f32, s32, Triple);
-extern void func_8024E78C(void *, Triple, void *, s32 *, s32, s32);
+extern void func_80239314(Rider *, f32, f32, f32, f32, s32, RiderTriple);
+extern void func_8024E78C(void *, RiderTriple, void *, s32 *, s32, s32);
 extern void func_80271888(Quad *, Vec3f *);
 extern void func_80271FA4(Vec3f *, Vec3f *, Vec3f *);
 extern void func_80278DE8(Actor *, s32, Actor *);
-extern void func_80280094(void *, void *, void *, s32, s32, s32, Triple, Quad, Triple, s32, s32, s32);
-extern void func_8028CE70(void *, void *, s32, Triple, f32, f32);
+extern void func_80280094(void *, void *, void *, s32, s32, s32, RiderTriple, Quad, RiderTriple, s32, s32, s32);
+extern void func_8028CE70(void *, void *, s32, RiderTriple, f32, f32);
 
 /* func_80267968, integrated here: the parameter copies are the frame's 0x58..0x6F block. */
-static inline void spawn_hit_effect(Player *player, Actor *actor, Triple position, Vec3f direction, s32 kind) {
+static inline void spawn_hit_effect(Player *player, Actor *actor, RiderTriple position, Vec3f direction, s32 kind) {
     Vec3f v;
-    Triple point;
-    Triple zero;
+    RiderTriple point;
+    RiderTriple zero;
     Quad rotation;
     s32 unused;
 
@@ -85,7 +79,7 @@ static inline void spawn_hit_effect(Player *player, Actor *actor, Triple positio
     func_8028CE70(&D_8011FE88, player->views5E8.view698_37.emitter + 0x140, 3, point, 10.24f, 1.0f);
 }
 
-void func_8026643C(Actor *self, Actor *other, s32 hit, Triple pos, Vec3f vel, s32 spin, Thing *thing, s32 flags) {
+void func_8026643C(Actor *self, Actor *other, s32 hit, RiderTriple pos, Vec3f vel, s32 spin, Thing *thing, s32 flags) {
     Actor *target;
 
     if (other->kind == 1) {

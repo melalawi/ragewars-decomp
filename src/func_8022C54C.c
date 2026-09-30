@@ -24,13 +24,13 @@ void *func_8022C54C(void *arg0, u32 arg1) {
         var_v1 = ((func_8022C54C_S1 *)(arg0))->unk20;
         if (var_v1 != 0) {
             do {
-                if (((func_8022C54C_S3 *)((((func_8022C54C_S2 *)(var_v1))->unk5D8)))->unk90 == 0) {
+                if (((func_8022C54C_S3 *)((((func_8022C54C_S2 *)(var_v1))->views5D8.view5D8_0.unk5D8)))->unk90 == 0) {
                     if (var_a2 == (s32) arg1) {
                         return var_v1;
                     }
                     var_a2 += 1;
                 }
-                var_v1 = ((func_8022C54C_S2 *)(var_v1))->unk16E0;
+                var_v1 = ((func_8022C54C_S2 *)(var_v1))->views16E0.view16E0_0.unk16E0;
             } while (var_v1 != 0);
         }
     }

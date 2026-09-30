@@ -2,15 +2,14 @@
    other present player on another team (when team play is on) with health above one unit, along
    with its distance and score, and stores the final count. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct TeamInfo {
     char pad[0x92];
     u8 team;
 } TeamInfo;
 
-#define MATCHKIT_KNOWN_TeamInfo 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad[0x24];

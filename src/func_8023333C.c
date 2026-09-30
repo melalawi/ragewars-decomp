@@ -31,8 +31,8 @@ void func_8023333C(void *arg0, void *arg1) {
 
     actor = ((func_8023333C_S1 *)(arg0))->unk1D8;
     ((func_8023333C_S2 *)(arg1))->unk13C = 2;
-    if (func_80222A80(actor, ((func_8023333C_S3 *)(actor))->unk62E) == 0) {
-        ((func_8023333C_S3 *)(actor))->unk770 = func_8022F95C(actor);
+    if (func_80222A80(actor, ((func_8023333C_S3 *)(actor))->views5E8.view62E_13.unk62E) == 0) {
+        ((func_8023333C_S3 *)(actor))->views5E8.view770_91.unk770 = func_8022F95C(actor);
         return;
     }
 
@@ -42,8 +42,8 @@ void func_8023333C(void *arg0, void *arg1) {
         }
     }
 
-    if (!((((func_8023333C_S3 *)(actor))->unk6AC & 0x4000) &&
-          (((func_8023333C_S3 *)(actor))->unk5E4 != 0))) {
+    if (!((((func_8023333C_S3 *)(actor))->views5E8.view6AC_45.unk6AC & 0x4000) &&
+          (((func_8023333C_S3 *)(actor))->views5E4.view5E4_0.unk5E4 != 0))) {
         func_80214178(arg0, arg1, 2);
         func_8022B9B4(actor);
         ((func_8023333C_S2 *)(arg1))->unk13C = 1;

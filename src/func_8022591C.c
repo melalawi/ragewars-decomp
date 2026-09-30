@@ -6,8 +6,10 @@
    multiplayer the view shows the respawn menu, D_45047C when the player has a respawn count at 0x5EA
    or D_450DA8 otherwise. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct Controls {
     char pad0[0x80];
     s8 mode;
     char pad81[0x94 - 0x81];
@@ -15,15 +17,11 @@ typedef struct {
     u8 active;
 } Controls;
 
-typedef struct {
+typedef struct View {
     char pad0[0x554];
     char menu[1];
 } View;
 
-#define MATCHKIT_KNOWN_Controls 1
-#define MATCHKIT_KNOWN_View 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x1C];

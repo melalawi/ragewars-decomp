@@ -9,46 +9,25 @@
    than 10.24, and for mount kind 0x136 sets the rider offset at 0x814 and places the weapon at 0x73C
    along the body heading. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 #define ABS(x) ((x) < 0.0f ? -(x) : (x))
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
-typedef struct {
-    f32 x;
-    f32 y;
-    f32 z;
-} Vec3f;
-
-typedef struct {
-    s32 x;
-    s32 y;
-    s32 z;
-} Triple;
-
-typedef struct {
-    f32 m[16];
-} Matrix;
-
-typedef struct {
+typedef struct Mount {
     char pad0[0x170];
     char state[0x1A4 - 0x170];
     s8 action;
 } Mount;
 
-typedef struct {
+typedef struct Body {
     char pad0[8];
     Triple position;
     char pad14[0x6C - 0x14];
     f32 heading;
 } Body;
 
-#define MATCHKIT_KNOWN_Body 1
-#define MATCHKIT_KNOWN_Matrix 1
-#define MATCHKIT_KNOWN_Mount 1
-#define MATCHKIT_KNOWN_Triple 1
-#define MATCHKIT_KNOWN_Vec3f 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 extern f32 D_800D2988;
 extern f32 D_800CE758;

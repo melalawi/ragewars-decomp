@@ -3,6 +3,8 @@
    respawns (func_8021B1E4, func_8044A17C), and any other is finished with event 0x12 (func_802227D0)
    unless the replay setting holds it back. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 #define SETTING_REPLAY_MENU 2
 #define TRIAL_LIVES 1
@@ -10,15 +12,10 @@
 #define EVENT_FELL_OUT 0x12
 #define SOLO_PLAYERS 2
 
-typedef struct {
+typedef struct Controls {
     char pad0[0x8F];
     u8 replayed;
 } Controls;
-
-#define MATCHKIT_KNOWN_Controls 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
-
 
 typedef struct {
     s32 flags;

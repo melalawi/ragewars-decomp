@@ -1,7 +1,8 @@
-#ifndef MATCHKIT_SHARED_SHAREDPLAYER_H
-#define MATCHKIT_SHARED_SHAREDPLAYER_H
+#ifndef RAGEWARS_SHARED_PLAYER_H
+#define RAGEWARS_SHARED_PLAYER_H
 
 #include "basetypes.h"
+#include "player_types.h"
 
 typedef struct SharedPlayer SharedPlayer;
 struct SharedPlayer {
@@ -14,27 +15,15 @@ struct SharedPlayer {
         } view0_1;
         struct {
             char pad[0x8];
-#ifdef MATCHKIT_KNOWN_Vec3
             Vec3 unk8; /* +0x8: src/func_80203278.c, src/func_80281A70.c */
-#else
-            char unk8[0xC];
-#endif
         } view8_2;
         struct {
             char pad[0x8];
-#ifdef MATCHKIT_KNOWN_Vec3
             Vec3 pos; /* +0x8: src/func_80203278.c */
-#else
-            char pos[0xC];
-#endif
         } view8_3;
         struct {
             char pad[0x8];
-#ifdef MATCHKIT_KNOWN_Vec3
             Vec3 position; /* +0x8: src/func_80281A70.c */
-#else
-            char position[0xC];
-#endif
         } view8_4;
     } views0;
     union {
@@ -45,25 +34,13 @@ struct SharedPlayer {
             char * track; /* +0x18: src/func_80203278.c */
         } view18_1;
         struct {
-#ifdef MATCHKIT_KNOWN_Model
-            Model * model; /* +0x18: src/func_8020FDB0.c */
-#else
-            void * model;
-#endif
+            struct Model * model; /* +0x18: src/func_8020FDB0.c */
         } view18_2;
         struct {
-#ifdef MATCHKIT_KNOWN_Body
-            Body * body; /* +0x18: src/func_80220D20.c */
-#else
-            void * body;
-#endif
+            struct Body * body; /* +0x18: src/func_80220D20.c */
         } view18_3;
         struct {
-#ifdef MATCHKIT_KNOWN_Character
-            Character * character; /* +0x18: src/func_80229530.c */
-#else
-            void * character;
-#endif
+            struct Character * character; /* +0x18: src/func_80229530.c */
         } view18_4;
     } views18;
     union {
@@ -167,19 +144,11 @@ struct SharedPlayer {
         } view1D8_24;
         struct {
             char pad[0x244];
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f unk260; /* +0x260: src/func_8021D3E4.c */
-#else
-            char unk260[0xC];
-#endif
         } view260_25;
         struct {
             char pad[0x244];
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f muzzle; /* +0x260: src/func_8021D3E4.c */
-#else
-            char muzzle[0xC];
-#endif
         } view260_26;
         struct {
             char pad[0x2CC];
@@ -272,56 +241,28 @@ struct SharedPlayer {
     } views1C;
     union {
         struct {
-#ifdef MATCHKIT_KNOWN_Record
-            Record * unk5D8; /* +0x5D8: src/func_80203278.c, src/func_80208158.c, src/func_80209CD8.c, src/func_8020FDB0.c, src/func_80210230.c, src/func_80218B84.c, src/func_8021E27C.c, src/func_80220D20.c, src/func_8022591C.c, src/func_8022804C.c, src/func_80228394.c, src/func_802297F0.c, src/func_8022A67C.c, src/func_80408C78.c, src/func_8043E65C.c, src/func_8044A37C.c, src/func_8044A4C0.c, src/func_8044AB34.c */
-#else
-            void * unk5D8;
-#endif
+            struct Record * unk5D8; /* +0x5D8: src/func_80203278.c, src/func_80208158.c, src/func_80209CD8.c, src/func_8020FDB0.c, src/func_80210230.c, src/func_80218B84.c, src/func_8021E27C.c, src/func_80220D20.c, src/func_8022591C.c, src/func_8022804C.c, src/func_80228394.c, src/func_802297F0.c, src/func_8022A67C.c, src/func_80408C78.c, src/func_8043E65C.c, src/func_8044A37C.c, src/func_8044A4C0.c, src/func_8044AB34.c */
         } view5D8_0;
         struct {
-#ifdef MATCHKIT_KNOWN_Record
-            Record * record; /* +0x5D8: src/func_80203278.c */
-#else
-            void * record;
-#endif
+            struct Record * record; /* +0x5D8: src/func_80203278.c */
         } view5D8_1;
         struct {
-#ifdef MATCHKIT_KNOWN_Controls
-            Controls * controls; /* +0x5D8: src/func_80209CD8.c */
-#else
-            void * controls;
-#endif
+            struct Controls * controls; /* +0x5D8: src/func_80209CD8.c */
         } view5D8_2;
         struct {
-#ifdef MATCHKIT_KNOWN_TeamInfo
-            TeamInfo * teamInfo; /* +0x5D8: src/func_80210230.c */
-#else
-            void * teamInfo;
-#endif
+            struct TeamInfo * teamInfo; /* +0x5D8: src/func_80210230.c */
         } view5D8_3;
         struct {
-#ifdef MATCHKIT_KNOWN_Ctrl
-            Ctrl * ctrl; /* +0x5D8: src/func_80220D20.c */
-#else
-            void * ctrl;
-#endif
+            struct Ctrl * ctrl; /* +0x5D8: src/func_80220D20.c */
         } view5D8_4;
         struct {
             unsigned char * info; /* +0x5D8: src/func_8022A67C.c */
         } view5D8_5;
         struct {
-#ifdef MATCHKIT_KNOWN_Profile
-            Profile * profile; /* +0x5D8: src/func_80408C78.c */
-#else
-            void * profile;
-#endif
+            struct Profile * profile; /* +0x5D8: src/func_80408C78.c */
         } view5D8_6;
         struct {
-#ifdef MATCHKIT_KNOWN_Settings
-            Settings * settings; /* +0x5D8: src/func_8043E65C.c */
-#else
-            void * settings;
-#endif
+            struct Settings * settings; /* +0x5D8: src/func_8043E65C.c */
         } view5D8_7;
         struct {
             s32 f5D8; /* +0x5D8: src/func_8044AB34.c */
@@ -335,11 +276,7 @@ struct SharedPlayer {
             void * view; /* +0x5DC: src/func_80218B84.c */
         } view5DC_1;
         struct {
-#ifdef MATCHKIT_KNOWN_View
-            View * view; /* +0x5DC: src/func_8021D3E4.c */
-#else
-            void * view;
-#endif
+            struct View * view; /* +0x5DC: src/func_8021D3E4.c */
         } view5DC_2;
         struct {
             u8 pad4[8]; /* +0x5DC: src/func_80220D20.c */
@@ -348,11 +285,7 @@ struct SharedPlayer {
             void * entity; /* +0x5DC: src/func_80233C78.c */
         } view5DC_4;
         struct {
-#ifdef MATCHKIT_KNOWN_Rider
-            Rider * rider; /* +0x5DC: src/func_8026643C.c */
-#else
-            void * rider;
-#endif
+            struct Rider * rider; /* +0x5DC: src/func_8026643C.c */
         } view5DC_5;
         struct {
             char * storage; /* +0x5DC: src/func_804085E0.c */
@@ -527,19 +460,11 @@ struct SharedPlayer {
         } view688_33;
         struct {
             char pad[0xB0];
-#ifdef MATCHKIT_KNOWN_Controller
-            Controller * unk698; /* +0x698: src/func_80218B84.c, src/func_8022591C.c, src/func_80226A10.c, src/func_8026643C.c, src/func_80267968.c, src/func_804085E0.c */
-#else
-            void * unk698;
-#endif
+            struct Controller * unk698; /* +0x698: src/func_80218B84.c, src/func_8022591C.c, src/func_80226A10.c, src/func_8026643C.c, src/func_80267968.c, src/func_804085E0.c */
         } view698_34;
         struct {
             char pad[0xB0];
-#ifdef MATCHKIT_KNOWN_Controller
-            Controller * controller; /* +0x698: src/func_80218B84.c */
-#else
-            void * controller;
-#endif
+            struct Controller * controller; /* +0x698: src/func_80218B84.c */
         } view698_35;
         struct {
             char pad[0xB0];
@@ -727,11 +652,7 @@ struct SharedPlayer {
         } view73C_81;
         struct {
             char pad[0x154];
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f weapon; /* +0x73C: src/func_80225F20.c */
-#else
-            char weapon[0xC];
-#endif
         } view73C_82;
         struct {
             char pad[0x158];
@@ -791,19 +712,11 @@ struct SharedPlayer {
         } view798_96;
         struct {
             char pad[0x1B4];
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f unk79C; /* +0x79C: src/func_8021E27C.c */
-#else
-            char unk79C[0xC];
-#endif
         } view79C_97;
         struct {
             char pad[0x1B4];
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f carriedPosition; /* +0x79C: src/func_8021E27C.c */
-#else
-            char carriedPosition[0xC];
-#endif
         } view79C_98;
         struct {
             char pad[0x1D0];
@@ -823,19 +736,11 @@ struct SharedPlayer {
         } view7BC_102;
         struct {
             char pad[0x1D8];
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f unk7C0; /* +0x7C0: src/func_8021E27C.c */
-#else
-            char unk7C0[0xC];
-#endif
         } view7C0_103;
         struct {
             char pad[0x1D8];
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f targetPosition; /* +0x7C0: src/func_8021E27C.c */
-#else
-            char targetPosition[0xC];
-#endif
         } view7C0_104;
         struct {
             char pad[0x200];
@@ -847,19 +752,11 @@ struct SharedPlayer {
         } view7E8_106;
         struct {
             char pad[0x224];
-#ifdef MATCHKIT_KNOWN_Mount
-            Mount * unk80C; /* +0x80C: src/func_80225F20.c */
-#else
-            void * unk80C;
-#endif
+            struct Mount * unk80C; /* +0x80C: src/func_80225F20.c */
         } view80C_107;
         struct {
             char pad[0x224];
-#ifdef MATCHKIT_KNOWN_Mount
-            Mount * mount; /* +0x80C: src/func_80225F20.c */
-#else
-            void * mount;
-#endif
+            struct Mount * mount; /* +0x80C: src/func_80225F20.c */
         } view80C_108;
         struct {
             char pad[0x228];
@@ -871,19 +768,11 @@ struct SharedPlayer {
         } view810_110;
         struct {
             char pad[0x22C];
-#ifdef MATCHKIT_KNOWN_Triple
             Triple unk814; /* +0x814: src/func_80225F20.c */
-#else
-            char unk814[0xC];
-#endif
         } view814_111;
         struct {
             char pad[0x22C];
-#ifdef MATCHKIT_KNOWN_Triple
             Triple offset; /* +0x814: src/func_80225F20.c */
-#else
-            char offset[0xC];
-#endif
         } view814_112;
         struct {
             char pad[0x250];
@@ -909,6 +798,10 @@ struct SharedPlayer {
             char pad[0x258];
             s32 surfaced; /* +0x840: src/func_80224F38.c */
         } view840_118;
+        struct {
+            char pad[0x264];
+            s32 unk84C; /* +0x84C: src/func_8022BEF4.c */
+        } view84C_149;
         struct {
             char pad[0x274];
             s32 unk85C; /* +0x85C: src/func_8044A37C.c */
@@ -1179,25 +1072,13 @@ struct SharedPlayer {
     char pad1344[0x70];
     union {
         struct {
-#ifdef MATCHKIT_KNOWN_StateInfo
-            StateInfo * unk13B4; /* +0x13B4: src/func_802227D0.c, src/func_802238BC.c, src/func_802243E4.c, src/func_8044AB34.c */
-#else
-            void * unk13B4;
-#endif
+            struct StateInfo * unk13B4; /* +0x13B4: src/func_802227D0.c, src/func_802238BC.c, src/func_802243E4.c, src/func_8044AB34.c */
         } view13B4_0;
         struct {
-#ifdef MATCHKIT_KNOWN_StateInfo
-            StateInfo * states; /* +0x13B4: src/func_802227D0.c */
-#else
-            void * states;
-#endif
+            struct StateInfo * states; /* +0x13B4: src/func_802227D0.c */
         } view13B4_1;
         struct {
-#ifdef MATCHKIT_KNOWN_Mode
-            Mode * unk13B4; /* +0x13B4: src/func_802238BC.c */
-#else
-            void * unk13B4;
-#endif
+            struct Mode * unk13B4; /* +0x13B4: src/func_802238BC.c */
         } view13B4_2;
         struct {
             void * character; /* +0x13B4: src/func_802243E4.c */
@@ -1221,18 +1102,10 @@ struct SharedPlayer {
     char pad13CC[0xC];
     union {
         struct {
-#ifdef MATCHKIT_KNOWN_Held
-            Held * unk13D8; /* +0x13D8: src/func_8022631C.c */
-#else
-            void * unk13D8;
-#endif
+            struct Held * unk13D8; /* +0x13D8: src/func_8022631C.c */
         } view13D8_0;
         struct {
-#ifdef MATCHKIT_KNOWN_Held
-            Held * held; /* +0x13D8: src/func_8022631C.c */
-#else
-            void * held;
-#endif
+            struct Held * held; /* +0x13D8: src/func_8022631C.c */
         } view13D8_1;
     } views13D8;
     char pad13DC[0x74];
@@ -1267,67 +1140,35 @@ struct SharedPlayer {
     char pad1458[0xC];
     union {
         struct {
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f unk1464; /* +0x1464: src/func_8021D3E4.c */
-#else
-            char unk1464[0xC];
-#endif
         } view1464_0;
         struct {
-#ifdef MATCHKIT_KNOWN_Vec3f
             Vec3f aim; /* +0x1464: src/func_8021D3E4.c */
-#else
-            char aim[0xC];
-#endif
         } view1464_1;
     } views1464;
     char pad1470[0x10];
     union {
         struct {
-#ifdef MATCHKIT_KNOWN_Matrix
             Matrix unk1480[2]; /* +0x1480: src/func_8021D3E4.c */
-#else
-            char unk1480[0x80];
-#endif
         } view1480_0;
         struct {
-#ifdef MATCHKIT_KNOWN_Matrix
             Matrix beams[2]; /* +0x1480: src/func_8021D3E4.c */
-#else
-            char beams[0x80];
-#endif
         } view1480_1;
     } views1480;
     union {
         struct {
-#ifdef MATCHKIT_KNOWN_Matrix
             Matrix unk1500[2]; /* +0x1500: src/func_8021D3E4.c */
-#else
-            char unk1500[0x80];
-#endif
         } view1500_0;
         struct {
-#ifdef MATCHKIT_KNOWN_Matrix
             Matrix lasers[2]; /* +0x1500: src/func_8021D3E4.c */
-#else
-            char lasers[0x80];
-#endif
         } view1500_1;
     } views1500;
     union {
         struct {
-#ifdef MATCHKIT_KNOWN_Matrix
             Matrix unk1580[2]; /* +0x1580: src/func_8021D3E4.c */
-#else
-            char unk1580[0x80];
-#endif
         } view1580_0;
         struct {
-#ifdef MATCHKIT_KNOWN_Matrix
             Matrix dots[2]; /* +0x1580: src/func_8021D3E4.c */
-#else
-            char dots[0x80];
-#endif
         } view1580_1;
     } views1580;
     char pad1600[0xD4];

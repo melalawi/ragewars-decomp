@@ -4480,5 +4480,5 @@
       "size": 5860
     }
   },
-  "schema": "matchkit.unify.v1"
+  "schema": "shared-layout.v1"
 }

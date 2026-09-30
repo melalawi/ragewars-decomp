@@ -2111,6 +2111,50 @@
    "positional_best_differing_words": 0,
    "verdict": "Landed"
   },
+  "func_80206764": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T232433Z-d1",
+     "cartridge": "us",
+     "carts": {
+      "de": {
+       "identical": 2,
+       "inserted": 0,
+       "missing": 0,
+       "of": 2,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 2,
+       "inserted": 0,
+       "missing": 0,
+       "of": 2,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 2,
+      "inserted": 0,
+      "missing": 0,
+      "of": 2
+     },
+     "note": "grind stopped; resume from its retained draft",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T23:47:40Z",
+     "retained": "artifacts/retained-candidates/func_80206764/1.c",
+     "retained_sha256": "a6b9e2f5633004bbfd74a9d3ed1e085410f18544b89a00f8bc1038d825444d8a"
+    }
+   ],
+   "best": {
+    "identical": 2,
+    "inserted": 0,
+    "missing": 0,
+    "of": 2
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Open"
+  },
   "func_8020694C": {
    "attempt_count": 1,
    "attempts": [
@@ -6068,7 +6112,7 @@
    "verdict": "Open"
   },
   "func_8021EED8": {
-   "attempt_count": 4,
+   "attempt_count": 5,
    "attempts": [
     {
      "note": "Updates actor HUD panels, counters, bars and messages; corrected the formatting buffer and missing stack arguments, but eight trials leave extensive scheduling differences and unresolved literal placement in the closest source, and trial-only -mfix4300 does not match.",
@@ -6101,8 +6145,17 @@
      "recorded_at": "2026-09-25T18:17:16Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "assignment": "20260929T214748Z-d1",
+     "note": "grind stopped; resume from its retained draft",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T21:50:38Z",
+     "retained": "artifacts/retained-candidates/func_8021EED8/5.c",
+     "retained_sha256": "185bbaf0bec5db5d281e4d6692e1625f730b8b18390662747c47cac8ed032389"
     }
    ],
+   "budget_failed_attempts": 10,
    "positional_best_differing_words": 1468,
    "verdict": "Open"
   },
@@ -6672,7 +6725,7 @@
    "verdict": "Open"
   },
   "func_80220EB0": {
-   "attempt_count": 2,
+   "attempt_count": 5,
    "attempts": [
     {
      "note": "Updates a player simulation step, including movement, effects, animation and game-mode state; recovered source retains 1594 differing words and produces 6364 of 6432 bytes, a structural reconstruction residue.",
@@ -6836,10 +6889,475 @@
      "recorded_at": "2026-09-29T07:38:38Z",
      "retained": "artifacts/retained-candidates/func_80220EB0/2.c",
      "retained_sha256": "bd98814de12f090e879b9f33da6eaa758f47ca13e09a6adda1d6794c2f89ba25"
+    },
+    {
+     "assignment": "20260929T212913Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x801002EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801421D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "eu": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x801102EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801521D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "eu-mul": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8010A2EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x8014C1D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "us": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800FE2EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801401D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "us-rev1": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      }
+     },
+     "measurement": {
+      "identical": 1595,
+      "inserted": 0,
+      "missing": 0,
+      "of": 1608
+     },
+     "note": "grind stopped; resume from its retained draft",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T23:23:50Z",
+     "retained": "artifacts/retained-candidates/func_80220EB0/3.c",
+     "retained_sha256": "4713253245a701389129c9d5dc7493e24f725ed86c2a28cada19eabfdab269a3"
+    },
+    {
+     "assignment": "20260929T232501Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x801002EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801421D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "eu": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x801102EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801521D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "eu-mul": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8010A2EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x8014C1D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "us": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800FE2EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801401D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "us-rev1": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      }
+     },
+     "measurement": {
+      "identical": 1595,
+      "inserted": 0,
+      "missing": 0,
+      "of": 1608
+     },
+     "note": "grind stopped; resume from its retained draft",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T23:47:56Z",
+     "retained": "artifacts/retained-candidates/func_80220EB0/4.c",
+     "retained_sha256": "4713253245a701389129c9d5dc7493e24f725ed86c2a28cada19eabfdab269a3"
+    },
+    {
+     "assignment": "20260929T234837Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x801002EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801421D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "eu": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x801102EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801521D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "eu-mul": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8010A2EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x8014C1D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "us": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800FE2EC",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x801042EC",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_801042EC"
+        },
+        {
+         "address": "0x801401D0",
+         "conflicts": [],
+         "counterpart": {
+          "address": "0x80146290",
+          "cartridge": "us-rev1"
+         },
+         "kind": "data-symbol",
+         "name": "D_80146290"
+        }
+       ],
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      },
+      "us-rev1": {
+       "identical": 1595,
+       "inserted": 0,
+       "missing": 0,
+       "of": 1608,
+       "result": "differs",
+       "typed": {
+        "reg": 13
+       }
+      }
+     },
+     "measurement": {
+      "identical": 1595,
+      "inserted": 0,
+      "missing": 0,
+      "of": 1608
+     },
+     "note": "grind stopped; resume from its retained draft",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T23:50:06Z",
+     "retained": "artifacts/retained-candidates/func_80220EB0/5.c",
+     "retained_sha256": "4713253245a701389129c9d5dc7493e24f725ed86c2a28cada19eabfdab269a3"
     }
    ],
    "best": {
-    "identical": 1588,
+    "identical": 1595,
     "inserted": 0,
     "missing": 0,
     "of": 1608
@@ -17437,6 +17955,64 @@
     }
    ],
    "positional_best_differing_words": 3,
+   "verdict": "Open"
+  },
+  "func_80279520": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T232425Z-d1",
+     "cartridge": "us",
+     "carts": {
+      "de": {
+       "identical": 4,
+       "inserted": 0,
+       "missing": 0,
+       "of": 4,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 4,
+       "inserted": 0,
+       "missing": 0,
+       "of": 4,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 4,
+       "inserted": 0,
+       "missing": 0,
+       "of": 4,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 4,
+       "inserted": 0,
+       "missing": 0,
+       "of": 4,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 4,
+      "inserted": 0,
+      "missing": 0,
+      "of": 4
+     },
+     "note": "grind stopped; resume from its retained draft",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T23:47:34Z",
+     "retained": "artifacts/retained-candidates/func_80279520/1.c",
+     "retained_sha256": "fd787c49a932e7c8fd8e218cc05b0cf4322aaddc70ae1dba70ce5c0f4b8c7166"
+    }
+   ],
+   "best": {
+    "identical": 4,
+    "inserted": 0,
+    "missing": 0,
+    "of": 4
+   },
+   "budget_failed_attempts": 10,
    "verdict": "Open"
   },
   "func_80279620": {
@@ -28193,6 +28769,66 @@
    ],
    "positional_best_differing_words": 0,
    "verdict": "Landed"
+  },
+  "func_80404DDC": {
+   "attempt_count": 1,
+   "attempts": [
+    {
+     "assignment": "20260929T232418Z-d1",
+     "cartridge": "us",
+     "carts": {
+      "de": {
+       "identical": 19,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DE808",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E2858"
+        }
+       ],
+       "of": 19,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 19,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800DD4B8",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800E2858"
+        }
+       ],
+       "of": 19,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 19,
+      "inserted": 0,
+      "missing": 0,
+      "of": 19
+     },
+     "note": "grind stopped; resume from its retained draft",
+     "outcome": "failed",
+     "recorded_at": "2026-09-29T23:47:27Z",
+     "retained": "artifacts/retained-candidates/func_80404DDC/1.c",
+     "retained_sha256": "62d052d3673e5df930bd8bcd59e115827a4498e479529c054f2a30262c5f6439"
+    }
+   ],
+   "best": {
+    "identical": 19,
+    "inserted": 0,
+    "missing": 0,
+    "of": 19
+   },
+   "budget_failed_attempts": 10,
+   "verdict": "Open"
   },
   "func_80404E28": {
    "attempt_count": 3,

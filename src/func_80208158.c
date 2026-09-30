@@ -1,16 +1,15 @@
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 /* Updates a computer player's brain for the frame: fixes its route start, runs its planner through func_802095F8 and its state callback, counts down its cooldown at 0x324, and for a displayed player sets the health meter from its health over the character's maximum (400 for kinds 11 and 12, 300 for 13 and 14, otherwise func_8022ABF0), as a percentage, rescaled for kind 14 by the difficulty D_8014693C; in the tutorial (D_801468A0) kind 11 also shows the timer and refills its ammunition, then the meter is drawn through func_802AB784 or func_802AB78C; finally it restarts a stalled player (state 0x12) through func_80209CD8. */
-typedef struct {
+typedef struct Record {
     char pad0[0x80];
     s8 kind;
     char pad81[0x13];
     u8 display;
 } Record;
 
-#define MATCHKIT_KNOWN_Record 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[8];

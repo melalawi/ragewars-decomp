@@ -3,8 +3,10 @@
    unless the session at 0x98 is running and the player's team membership at 0x94 and control
    mode disagree, or it is teamless and active outside session mode 3. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct Controls {
     char pad0[0x80];
     s8 mode;
     char pad81[0x94 - 0x81];
@@ -12,9 +14,6 @@ typedef struct {
     u8 active;
 } Controls;
 
-#define MATCHKIT_KNOWN_Controls 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x98];

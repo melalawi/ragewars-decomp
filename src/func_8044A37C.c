@@ -1,7 +1,9 @@
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 /* Starts a player's run: in a multiplayer session (D_801462E5) picks the lap count from the chosen track through func_8022F444 in mode 1 or from the loaded course in mode 4 for a human player, sets the run type at 0x5EA (1, or 3 in single player), clears 0x13C8 and 0x85C around func_8044A17C, then starts its vehicle through func_8021B1E4 with model 0xC1D for a computer player in state 12 during stage 9 and its own model otherwise, doubled when D_80145048 is two or more. */
-typedef struct {
+typedef struct Record {
     char pad0[0x80];
     signed char track;
 } Record;
@@ -11,9 +13,6 @@ typedef struct {
     u8 laps;
 } Course;
 
-#define MATCHKIT_KNOWN_Record 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 extern s32 D_80145048;
 extern u8 D_801462E5;

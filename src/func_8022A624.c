@@ -25,14 +25,14 @@ void *func_8022A624(void *arg0, u32 arg1) {
         var_v1 = ((func_8022A624_S1 *)(arg0))->unk20;
         if (var_v1 != 0) {
             do {
-                temp_v0 = ((func_8022A624_S2 *)(var_v1))->unk5DC;
+                temp_v0 = ((func_8022A624_S2 *)(var_v1))->views5DC.view5DC_0.unk5DC;
                 if (temp_v0 != 0 && ((func_8022A624_S3 *)(temp_v0))->unk564 == 0) {
                     if (var_a2 == (s32) arg1) {
                         return var_v1;
                     }
                     var_a2 += 1;
                 }
-                var_v1 = ((func_8022A624_S2 *)(var_v1))->unk16E0;
+                var_v1 = ((func_8022A624_S2 *)(var_v1))->views16E0.view16E0_0.unk16E0;
             } while (var_v1 != 0);
         }
     }

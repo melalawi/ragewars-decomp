@@ -5,8 +5,10 @@
    through func_80442934; otherwise it deletes the chosen note through func_80404858 and shows the
    D_44F7C0 or D_44F82C result prompt. Returns 1. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct Profile {
     u16 words[4];
     char pad8[0x78];
     u8 flags;
@@ -14,9 +16,6 @@ typedef struct {
     u8 name[8];
 } Profile;
 
-#define MATCHKIT_KNOWN_Profile 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[4];

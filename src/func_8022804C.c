@@ -3,6 +3,8 @@
    in humanWon whether the human side reached it and ends the match on any other side reaching it
    unless the trial needs the human to reach it. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 #define NO_TEAM 0xFF
 #define TEAM_COUNT 5
@@ -10,15 +12,10 @@
 #define TRIAL_NONE 0
 #define TRIAL_HUMAN_MUST_REACH 1
 
-typedef struct {
+typedef struct Controls {
     char pad0[0x4];
     s16 frags;
 } Controls;
-
-#define MATCHKIT_KNOWN_Controls 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
-
 
 typedef struct {
     char pad0[0x20];

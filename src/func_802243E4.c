@@ -7,13 +7,15 @@
    units at 0x104, and otherwise the turning animations follow the heading change this frame (0xA28
    while the body is falling, with a separate set for the character D_800CED30). */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x14];
     s32 flags;
 } Surface;
 
-typedef struct {
+typedef struct Body {
     char pad0[8];
     s32 x;
     s32 y;
@@ -28,9 +30,6 @@ typedef struct {
     f32 heading;
 } Body;
 
-#define MATCHKIT_KNOWN_Body 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x22];

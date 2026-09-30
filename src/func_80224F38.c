@@ -8,8 +8,10 @@
    plays) and, while moving faster than 5.12, plays the tuning's stroke sound and sound 0x2E0 whenever
    the sound timer at 0x11C4 passes 45, restarting it at a random value below 15. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct Body {
     char pad0[8];
     s32 x;
     s32 y;
@@ -20,9 +22,6 @@ typedef struct {
     s32 flags;
 } Body;
 
-#define MATCHKIT_KNOWN_Body 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x22];

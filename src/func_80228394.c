@@ -8,17 +8,16 @@
    are out, directly or, when a mode 14 player takes part, only after the rules' round count at 0x9C
    reaches 3, marking humanWon. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct Controls {
     char pad0[0x80];
     s8 mode;
     char pad81[0x94 - 0x81];
     u8 active;
 } Controls;
 
-#define MATCHKIT_KNOWN_Controls 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 
 typedef struct {

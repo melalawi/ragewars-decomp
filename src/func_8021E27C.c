@@ -8,22 +8,14 @@
    options at D_801462F3 allow). The second switch lists two icons that share the default scale, which
    the original needed for its jump table; which icons they were is not recoverable from the bytes. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
-    f32 x;
-    f32 y;
-    f32 z;
-} Vec3f;
-
-typedef struct {
+typedef struct Controls {
     char pad0[0x8F];
     u8 paused;
 } Controls;
 
-#define MATCHKIT_KNOWN_Controls 1
-#define MATCHKIT_KNOWN_Vec3f 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 extern f32 D_800D2988;
 extern s32 D_800CE474[2];

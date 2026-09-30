@@ -24,10 +24,10 @@ void func_8022A37C(void *arg0, void *arg1) {
         var_s0 = ((func_8022A37C_S1 *)(arg0))->unk20;
         if (var_s0 != 0) {
             do {
-                if (((func_8022A37C_S2 *)(var_s0))->unk5DC == arg1) {
+                if (((func_8022A37C_S2 *)(var_s0))->views5DC.view5DC_0.unk5DC == arg1) {
                     func_8021EED8(var_s0, arg1);
                 }
-                var_s0 = ((func_8022A37C_S2 *)(var_s0))->unk16E0;
+                var_s0 = ((func_8022A37C_S2 *)(var_s0))->views16E0.view16E0_0.unk16E0;
             } while (var_s0 != 0);
         }
 #if defined(VERSION_US_REV1)

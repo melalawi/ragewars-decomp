@@ -32,21 +32,21 @@ void func_8022BEF4(void *arg0, s32 unused, s32 period, s32 kind) {
     if (D_801462C8 & 1) {
         return;
     }
-    if (((func_8022BEF4_S1 *)(arg0))->unk650 < 2) {
+    if ((u16)(((func_8022BEF4_S1 *)(arg0))->views5E8.view650_15.unk650) < 2) {
         return;
     }
-    if (((func_8022BEF4_S1 *)(arg0))->unk80C != 0) {
+    if (((func_8022BEF4_S1 *)(arg0))->views5E8.view80C_107.unk80C != 0) {
         period /= 5;
     }
-    if (((func_8022BEF4_S1 *)(arg0))->unk670 > 0.0f && kind != 0x20) {
+    if (((func_8022BEF4_S1 *)(arg0))->views5E8.view670_30.unk670 > 0.0f && kind != 0x20) {
         return;
     }
-    tick = (((func_8022BEF4_S1 *)(arg0))->unk84C + 1) % period;
-    ((func_8022BEF4_S1 *)(arg0))->unk84C = tick;
+    tick = (((func_8022BEF4_S1 *)(arg0))->views5E8.view84C_149.unk84C + 1) % period;
+    ((func_8022BEF4_S1 *)(arg0))->views5E8.view84C_149.unk84C = tick;
     if (tick != 0) {
         return;
     }
-    DRAIN(((func_8022BEF4_S1 *)(arg0))->unk5F4);
-    DRAIN(((func_8022BEF4_S1 *)(arg0))->unk5F6);
-    DRAIN(((func_8022BEF4_S1 *)(arg0))->unk5F8);
+    DRAIN(((func_8022BEF4_S1 *)(arg0))->views5E8.view5F4_11.unk5F4[0]);
+    DRAIN(((func_8022BEF4_S1 *)(arg0))->views5E8.view5F4_11.unk5F4[1]);
+    DRAIN(((func_8022BEF4_S1 *)(arg0))->views5E8.view5F4_11.unk5F4[2]);
 }

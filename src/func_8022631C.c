@@ -6,19 +6,15 @@
    the object is a carried actor with option 0x200, 0x4600 otherwise) before forgetting it and applying
    the result through func_80219A40. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
-    s32 x;
-    s32 y;
-    s32 z;
-} Triple;
-
-typedef struct {
+typedef struct View {
     char pad0[0x128];
     Triple position;
 } View;
 
-typedef struct {
+typedef struct Held {
     u8 type;
     char pad1[0x100 - 0x1];
     s32 flags;
@@ -26,11 +22,6 @@ typedef struct {
     s32 options;
 } Held;
 
-#define MATCHKIT_KNOWN_Held 1
-#define MATCHKIT_KNOWN_Triple 1
-#define MATCHKIT_KNOWN_View 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x18];

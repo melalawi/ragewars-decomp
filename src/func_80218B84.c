@@ -8,21 +8,19 @@
    announces the chosen team with its message and sound, and slides closed, the menu's spin at 0x14
    turning while it is shown. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct Controls {
     char pad0[0x92];
     u8 team;
 } Controls;
 
-typedef struct {
+typedef struct Controller {
     char pad0[0xB0];
     s32 buttons;
 } Controller;
 
-#define MATCHKIT_KNOWN_Controller 1
-#define MATCHKIT_KNOWN_Controls 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x1E];

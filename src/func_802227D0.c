@@ -4,8 +4,10 @@
    nonzero parameter at 0x86C, and returns 1 with the counter at 0x658 cleared when the handler left
    the state in place, otherwise 0. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct {
+typedef struct StateInfo {
     void (*enter)(void *, void *);
     s32 pad4;
     s32 pad8;
@@ -14,9 +16,6 @@ typedef struct {
     s32 pad14;
 } StateInfo;
 
-#define MATCHKIT_KNOWN_StateInfo 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 extern unsigned char D_801462E5;
 extern s32 func_8022C450(void);

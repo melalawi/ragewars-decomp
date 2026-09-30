@@ -9,13 +9,15 @@
    whenever the step timer at 0x11C4 passes 11.25. Adapted from func_80224F38 with the jump check as
    an inline function and the D_80104418 flags read as an array. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x14];
     s32 flags;
 } Surface;
 
-typedef struct {
+typedef struct Body {
     char pad0[8];
     s32 x;
     s32 y;
@@ -28,9 +30,6 @@ typedef struct {
     s32 flags;
 } Body;
 
-#define MATCHKIT_KNOWN_Body 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct {
     char pad0[0x22];

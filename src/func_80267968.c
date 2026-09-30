@@ -1,11 +1,13 @@
 /* Spawns a hit effect when the target has a rider: turns the negated hit direction into the victim's frame through func_8022B08C, makes it relative to the victim rider's centre and converts it to a rotation, resolves the hit position on the attacker through func_8024E78C, spawns effect 0xE9 there raised by D_800C9538 (size 3 for kind 5, otherwise 1), and starts effect 3 on the victim's emitter. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 
-typedef struct Triple {
+typedef struct RiderTriple {
     s32 a;
     s32 b;
     s32 c;
-} Triple;
+} RiderTriple;
 
 typedef struct Quad {
     s32 a;
@@ -14,22 +16,11 @@ typedef struct Quad {
     s32 d;
 } Quad;
 
-typedef struct Vec3f {
-    f32 x;
-    f32 y;
-    f32 z;
-} Vec3f;
-
 typedef struct Rider {
     char pad0[0x128];
     Vec3f centre;
 } Rider;
 
-#define MATCHKIT_KNOWN_Rider 1
-#define MATCHKIT_KNOWN_Triple 1
-#define MATCHKIT_KNOWN_Vec3f 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 
 typedef struct Actor {
     char pad0[0x1D8];
@@ -43,15 +34,15 @@ extern char D_8011FE88;
 
 extern void func_8022B08C(Player *, Vec3f *);
 extern void func_80271888(Quad *, Vec3f *);
-extern void func_8024E78C(void *, Triple, void *, s32 *, s32, s32);
-extern void func_80280094(void *, void *, void *, s32, s32, s32, Triple, Quad, Triple, s32, s32, s32);
-extern void func_8028CE70(void *, void *, s32, Triple, f32, f32);
+extern void func_8024E78C(void *, RiderTriple, void *, s32 *, s32, s32);
+extern void func_80280094(void *, void *, void *, s32, s32, s32, RiderTriple, Quad, RiderTriple, s32, s32, s32);
+extern void func_8028CE70(void *, void *, s32, RiderTriple, f32, f32);
 
-void func_80267968(Player *target, Actor *actor, Triple position, Vec3f direction, s32 kind) {
+void func_80267968(Player *target, Actor *actor, RiderTriple position, Vec3f direction, s32 kind) {
     Player *player;
     Vec3f v;
-    Triple point;
-    Triple zero;
+    RiderTriple point;
+    RiderTriple zero;
     Quad rotation;
     s32 unused;
 

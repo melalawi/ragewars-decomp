@@ -1,15 +1,13 @@
 /* Updates flying-player thrust and impulses, transforms movement into world space and applies descent and roll. */
 #include "basetypes.h"
+#include "../splat/types/shared/player.h"
+typedef SharedPlayer Player;
 #include "../splat/types/shared/movement.h"
 typedef struct Vec { f32 x,y,z; } Vec;
 typedef struct Quat { f32 x,y,z,w; } Quat;
-typedef struct Matrix { f32 m[4][4]; } Matrix;
+typedef struct Matrix4x4 { f32 m[4][4]; } Matrix4x4;
 typedef struct Physics { char pad[8]; f32 gravity; } Physics;
 typedef struct Mode { char pad0[8]; Physics *physics; char padC[12]; } Mode;
-#define MATCHKIT_KNOWN_Matrix 1
-#define MATCHKIT_KNOWN_Mode 1
-#include "../splat/types/shared/player.h"
-typedef SharedPlayer Player;
 typedef struct Actor {
  char pad0[0x8];
  Vec unk8;
@@ -18,11 +16,11 @@ typedef struct Actor {
 } Actor;
 typedef SharedMovement Movement;
 extern f32 D_800D2988[];
-extern void func_8024795C(Quat *,Actor *),func_802742B4(Quat *,Matrix *),func_80272908(Matrix *,Vec *,Vec *),func_80271FA4(Vec *,Vec *,Vec *),func_8025DE74(s16,Vec,s32,s32),func_802748E0(f32 *,f32,f32);
+extern void func_8024795C(Quat *,Actor *),func_802742B4(Quat *,Matrix4x4 *),func_80272908(Matrix4x4 *,Vec *,Vec *),func_80271FA4(Vec *,Vec *,Vec *),func_8025DE74(s16,Vec,s32,s32),func_802748E0(f32 *,f32,f32);
 extern f32 func_80274710(f32,f32,f32),func_80274810(f32,f32),func_802BC380(f32);
 void func_802238BC(Player *arg0, Actor *arg1, Movement *arg2) {
     Vec v18,v28,v38,v48,v58;
-    Matrix sp68;
+    Matrix4x4 sp68;
     Quat spA8;
     f32 temp_f0;
     f32 temp_f0_2;
