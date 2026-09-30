@@ -5828,3 +5828,4 @@ D_800C2AD4 = 0x800C2AD4; // type:u32 derived by the trial of func_80227014
 D_800C2ADC = 0x800C2ADC; // type:u32 derived by the trial of func_80227014
 D_800C2AE4 = 0x800C2AE4; // type:u32 derived by the trial of func_80227014
 D_800C2AEC = 0x800C2AEC; // type:u32 derived by the trial of func_80227014
+D_800C6E30 = 0x800C1C70; // type:u32 derived by the trial of func_8020AA40

@@ -3271,3 +3271,5 @@ D_800C7C94 = 0x800C7C94; // type:u32 size:0x4 placed by decomp --version us-rev1
 D_800C7C9C = 0x800C7C9C; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7C9C
 D_800C7CA4 = 0x800C7CA4; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7CA4
 D_800C7CAC = 0x800C7CAC; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7CAC
+D_800C8884 = 0x800C8884; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C8884
+D_800C888C = 0x800C888C; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C888C
