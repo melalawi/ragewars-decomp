@@ -13332,7 +13332,7 @@
    "verdict": "Landed"
   },
   "func_80234FDC": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Updates the actor view transform and projection matrices and applies camera effects; recovered source retains 660 differing words and produces 2792 of 2804 bytes, a structural reconstruction residue.",
@@ -13341,10 +13341,78 @@
      "recorded_at": "2026-09-20T01:28:39Z",
      "trials": 3,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 701,
+       "inserted": 0,
+       "missing": 0,
+       "of": 701,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 701,
+       "inserted": 0,
+       "missing": 0,
+       "of": 701,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 701,
+       "inserted": 0,
+       "missing": 0,
+       "of": 701,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 701,
+       "inserted": 0,
+       "missing": 0,
+       "of": 701,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 701,
+       "inserted": 0,
+       "missing": 0,
+       "of": 701,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 701,
+      "inserted": 0,
+      "missing": 0,
+      "of": 701
+     },
+     "note": "Updates the view and projection matrices and applies camera effects.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T16:47:40Z"
     }
    ],
+   "best": {
+    "identical": 701,
+    "inserted": 0,
+    "missing": 0,
+    "of": 701
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "order the default state load before position capture.",
+    "separate projection quotient to affect float register reuse",
+    "split initial zoom from the later aspect ratio lifetime.",
+    "keep the state capture separate from the earlier call result.",
+    "keep later state pointer across calls.",
+    "shorten complement scope",
+    "stage counter limit",
+    "retain denominator constant in existing local",
+    "add a use so the field-of-view pseudo wins f22.",
+    "sequence state capture before the position reads."
+   ],
    "positional_best_differing_words": 660,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80235AD0": {
    "attempt_count": 1,
@@ -29630,7 +29698,7 @@
    "verdict": "Landed"
   },
   "func_802ACBCC": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Handles player menu commands and updates selection and game-mode state; recovered source retains 672 differing words and produces 2540 of 2704 bytes, a structural reconstruction residue.",
@@ -29639,10 +29707,60 @@
      "recorded_at": "2026-09-20T01:37:53Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 676,
+       "inserted": 0,
+       "missing": 0,
+       "of": 676,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 676,
+       "inserted": 0,
+       "missing": 0,
+       "of": 676,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 676,
+       "inserted": 0,
+       "missing": 0,
+       "of": 676,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 676,
+      "inserted": 0,
+      "missing": 0,
+      "of": 676
+     },
+     "note": "* This header contains macros emitted by m2c in \"valid syntax\" mode, * which can be enabled by passing `--valid-syntax` on the command line. * * In this mode, unhandled types and expressions are emitted as macros so * that the output is compilable without human intervention.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T16:47:40Z"
     }
    ],
+   "best": {
+    "identical": 676,
+    "inserted": 0,
+    "missing": 0,
+    "of": 676
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "retain the bonus constant across player callbacks.",
+    "preserve the case-specific 255.0f load.",
+    "order the divisor load before the shared tail.",
+    "preserve unsigned flag bits across the switch.",
+    "carry the checked attachment into the shared callback.",
+    "equivalent address paths retain counter uses and * widen the derived cursor's live length. The counter ranks * above the actor and the cursor below it; this predicate * and both redundant paths disappear from the emitted code."
+   ],
    "positional_best_differing_words": 672,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_802AD65C": {
    "attempt_count": 5,
