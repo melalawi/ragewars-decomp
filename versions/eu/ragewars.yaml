@@ -4226,7 +4226,7 @@ segments:
       - [0x1B49CC, asm, nonmatchings/func_8043E9CC]
       - [0x1B49F4, asm, nonmatchings/func_8043DCE4]
       - [0x1B4A3C, asm, nonmatchings/filler_8043EA3C]
-      - [0x1B4A40, asm, nonmatchings/func_8043EA40]
+      - [0x1B4A40, asm, nonmatchings/func_8043DD30]
       - [0x1B4BEC, asm, nonmatchings/func_8043DEDC]
       - [0x1B4C94, asm, nonmatchings/func_8043DF84]
       - [0x1B4CD0, asm, nonmatchings/func_8043DFC0]
