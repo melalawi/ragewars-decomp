@@ -3266,3 +3266,4 @@ func_802C3E9C = 0x802C3E9C; // placed by decomp --version us-rev1 split function
 D_0044FB90 = 0x0044FB90; // type:u32 derived by the trial of func_8043CFD8
 D_44FB94 = 0x0044FB94; // type:u32 derived by the trial of func_8043D124
 D_00450854 = 0x00450854; // type:u32 derived by the trial of func_8043E81C
+func_8026D83C = 0x8026D83C; // placed by split-symbol-correction

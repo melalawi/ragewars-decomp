@@ -1755,6 +1755,7 @@ segments:
       - [0x06E3F4, asm, nonmatchings/func_8026D7F4]
       - [0x06E414, asm, nonmatchings/func_8026D814]
       - [0x06E434, asm, nonmatchings/func_8026D834]
+      - [0x06E43C, asm, nonmatchings/func_8026D83C]
       - [0x06E444, asm, nonmatchings/func_8026D844]
       - [0x06E48C, asm, nonmatchings/func_8026D88C]
       - [0x06E4F8, asm, nonmatchings/func_8026D8F8]
