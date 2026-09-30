@@ -7035,3 +7035,4 @@ D_800C6E30 = 0x800C2020; // type:u32 derived by the trial of func_8020AA40
 func_8023CFD0 = 0x8023D020; // placed by decomp land run
 D_800C3A84 = 0x800C3A84; // type:u32 derived by the trial of func_80243A80
 D_800C3A8C = 0x800C3A8C; // type:u32 derived by the trial of func_80243A80
+func_8044BD30 = 0x8044C4E0; // placed by decomp land run

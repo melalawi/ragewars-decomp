@@ -298,7 +298,7 @@
    "verdict": "Landed"
   },
   "func_802005A0": {
-   "attempt_count": 9,
+   "attempt_count": 10,
    "attempts": [
     {
      "note": "Reads a word from a peripheral address once the PI status register at 0xA4600010 shows neither DMA nor I/O busy. As with func_80200568, the pinned GCC 2.8.1 fills the first branch's delay slot where the cartridge leaves nops; it sits among libultra routines compiled with a different scheduler.",
@@ -690,6 +690,73 @@
      "recorded_at": "2026-09-30T07:12:53Z",
      "retained": "artifacts/retained-candidates/func_802005A0/tried/fd19ffd9c8e2b5ca3791dfe036607edf1d79b9670ddc0c068310fc427ca1ce6e/func_802005A0.c",
      "retained_sha256": "fd19ffd9c8e2b5ca3791dfe036607edf1d79b9670ddc0c068310fc427ca1ce6e"
+    },
+    {
+     "assignment": "20260930T181923Z-d1",
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 1,
+       "of": 15,
+       "result": "differs",
+       "typed": {
+        "missing": 1
+       }
+      },
+      "eu": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 1,
+       "of": 15,
+       "result": "differs",
+       "typed": {
+        "missing": 1
+       }
+      },
+      "eu-mul": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 1,
+       "of": 15,
+       "result": "differs",
+       "typed": {
+        "missing": 1
+       }
+      },
+      "us": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 1,
+       "of": 15,
+       "result": "differs",
+       "typed": {
+        "missing": 1
+       }
+      },
+      "us-rev1": {
+       "identical": 14,
+       "inserted": 0,
+       "missing": 1,
+       "of": 15,
+       "result": "differs",
+       "typed": {
+        "missing": 1
+       }
+      }
+     },
+     "measurement": {
+      "identical": 14,
+      "inserted": 0,
+      "missing": 1,
+      "of": 15
+     },
+     "note": "grind stopped; resume from its retained draft",
+     "outcome": "failed",
+     "recorded_at": "2026-09-30T19:46:51Z",
+     "retained": "artifacts/retained-candidates/func_802005A0/3.c",
+     "retained_sha256": "c4070702bb629e24c796ab3a0fe792f371065cb2fb3c7376d0bf73284017be69"
     }
    ],
    "best": {
@@ -700,7 +767,7 @@
    },
    "budget_failed_attempts": 10,
    "positional_best_differing_words": 11,
-   "verdict": "Open"
+   "verdict": "Retired"
   },
   "func_802005EC": {
    "attempt_count": 1,
@@ -24128,7 +24195,7 @@
    "verdict": "Landed"
   },
   "func_80286A78": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Initializes a scene and its world resources, actors and game-mode state; recovered source retains 874 differing words and produces 3488 of 3540 bytes, a structural reconstruction residue.",
@@ -24137,10 +24204,122 @@
      "recorded_at": "2026-09-20T01:37:53Z",
      "trials": 1,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 885,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8044DF60",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_8044EBB0"
+        }
+       ],
+       "of": 885,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 885,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8044F230",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_8044EBB0"
+        }
+       ],
+       "of": 885,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 885,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x8044C4E0",
+         "conflicts": [
+          "mid-interval"
+         ],
+         "kind": "data-symbol",
+         "name": "func_8044BD30"
+        }
+       ],
+       "of": 885,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 885,
+       "inserted": 0,
+       "missing": 0,
+       "of": 885,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 885,
+       "inserted": 0,
+       "missing": 0,
+       "of": 885,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 885,
+      "inserted": 0,
+      "missing": 0,
+      "of": 885
+     },
+     "note": "* This header contains macros emitted by m2c in \"valid syntax\" mode, * which can be enabled by passing `--valid-syntax` on the command line. * * In this mode, unhandled types and expressions are emitted as macros so * that the output is compilable without human intervention.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T19:51:30Z"
     }
    ],
+   "best": {
+    "identical": 885,
+    "inserted": 0,
+    "missing": 0,
+    "of": 885
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "share cleanup bounds; conflicts with both stride registers retain s4.",
+    "stage resource count across state byte store",
+    "retain loop IDs across the actor lookup call",
+    "retain actor IDs in the second scan",
+    "stage the six header words before their stores",
+    "split buffer pointer live range in resource loop",
+    "separate entry index (priority 941) from kind constant so its priority falls below arg2 (640).",
+    "stage the post-call ID comparison for constant rematerialization in t6.",
+    "isolate the first category from the later tally priority.",
+    "stage the actor type constant before the clear loop to match its rematerialized register.",
+    "share the early actor pointer with the linked cleanup cursor; 18/32 and 9/18 priority.",
+    "share the resource counter with the early scan to lower its allocator priority.",
+    "use a separate tally to rank below the a0 cursor and a1 table.",
+    "reuse the later call index for the first cursor, raising priority and retaining its a0 preference.",
+    "reuse the clear-loop counter; its higher priority retains v1 for the scan.",
+    "share the actor category with the later actor tally.",
+    "share actor counters with the cleanup index, whose stride conflict retains s1.",
+    "stage the array member displacement as a pointer, retaining the byte-stride clear cursor.",
+    "reuse the second scan index; its call-argument preference retains a0 in the clear loop.",
+    "stage this array member displacement as a pointer for the second byte-stride clear cursor.",
+    "stage the cleanup alias after the null test, retaining the s1 cursor load.",
+    "continue reusing early actor pointer in final cleanup.",
+    "reuse the s0 cleanup alias for the final paired address calls to restore allocator priority.",
+    "stage the typed member displacement in the alias so its constant load also uses s0."
+   ],
    "positional_best_differing_words": 874,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_8028784C": {
    "attempt_count": 1,

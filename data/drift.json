@@ -240,28 +240,6 @@
     ]
    },
    {
-    "bytes": 260,
-    "rom": "0xB7160",
-    "sources": [
-     "func_802BB630"
-    ]
-   },
-   {
-    "bytes": 380,
-    "rom": "0xB7D30",
-    "sources": [
-     "func_802BC200"
-    ]
-   },
-   {
-    "bytes": 452,
-    "rom": "0xB8850",
-    "sources": [
-     "func_802BCD20",
-     "func_802BCEE4"
-    ]
-   },
-   {
     "bytes": 920,
     "rom": "0xB9C10",
     "sources": [
@@ -922,14 +900,6 @@
     ]
    },
    {
-    "bytes": 452,
-    "rom": "0xB8AF0",
-    "sources": [
-     "func_802BCD20",
-     "func_802BCEE4"
-    ]
-   },
-   {
     "bytes": 368,
     "rom": "0xBB1F0",
     "sources": [
@@ -1553,14 +1523,6 @@
      "func_8043903C",
      "func_80439910",
      "func_804461F4"
-    ]
-   },
-   {
-    "bytes": 452,
-    "rom": "0xB8B30",
-    "sources": [
-     "func_802BCD20",
-     "func_802BCEE4"
     ]
    },
    {
@@ -3397,7 +3359,7 @@
   ]
  },
  "date": "2026-09-30",
- "reason": "landed func_80243A80",
+ "reason": "landed func_80286A78",
  "schema": "decomp.drift.v2",
  "written_by": "land run"
 }

@@ -11369,6 +11369,445 @@
       },
       "size": 150
     },
+    "Shared_SceneActorKind": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'kind', 'u16', 2, 1)"
+          ],
+          "dimensions": [],
+          "name": "kind",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 2,
+          "type": "u16",
+          "views": []
+        }
+      ],
+      "header": "sceneactorkind.h",
+      "members": [
+        "src/func_80286A78.c:SceneActorKind"
+      ],
+      "paths": {
+        "(0, 'kind', 'u16', 2, 1)": "kind",
+        "canonical:0": "kind"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 2
+    },
+    "Shared_SceneActorPrefix": {
+      "fields": [
+        {
+          "array": 24,
+          "canonical_keys": [
+            "(0, 'pad0', 'u8', 24, 24)"
+          ],
+          "dimensions": [
+            24
+          ],
+          "name": "pad0",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 24,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'definition', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "definition",
+          "offset": 24,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 200,
+          "canonical_keys": [
+            "(28, 'pad1C', 'u8', 200, 200)"
+          ],
+          "dimensions": [
+            200
+          ],
+          "name": "pad1C",
+          "offset": 28,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 200,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "sceneactorprefix.h",
+      "members": [
+        "src/func_80286A78.c:SceneActorPrefix"
+      ],
+      "paths": {
+        "(0, 'pad0', 'u8', 24, 24)": "pad0",
+        "(24, 'definition', 'void *', 4, 1)": "definition",
+        "(28, 'pad1C', 'u8', 200, 200)": "pad1C",
+        "canonical:0": "pad0",
+        "canonical:18": "definition",
+        "canonical:1C": "pad1C"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 228
+    },
+    "Shared_SceneActorResources": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'base', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "base",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "sceneactorresources.h",
+      "members": [
+        "src/func_80286A78.c:SceneActorResources"
+      ],
+      "paths": {
+        "(0, 'base', 'u8', 1, 1)": "base",
+        "canonical:0": "base"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 1
+    },
+    "Shared_SceneActorStride": {
+      "fields": [
+        {
+          "array": 744,
+          "canonical_keys": [
+            "(0, 'bytes', 'u8', 744, 744)"
+          ],
+          "dimensions": [
+            744
+          ],
+          "name": "bytes",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 744,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "sceneactorstride.h",
+      "members": [
+        "src/func_80286A78.c:SceneActorStride"
+      ],
+      "paths": {
+        "(0, 'bytes', 'u8', 744, 744)": "bytes",
+        "canonical:0": "bytes"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 744
+    },
+    "Shared_SceneActorTables": {
+      "fields": [
+        {
+          "array": 10,
+          "canonical_keys": [
+            "(0, 'kind64e', 'void *', 40, 10)"
+          ],
+          "dimensions": [
+            10
+          ],
+          "name": "kind64e",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 40,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(40, 'primary', 'ScenePrimaryActors', 20, 1)"
+          ],
+          "dimensions": [],
+          "name": "primary",
+          "offset": 40,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 20,
+          "type": "Shared_ScenePrimaryActors",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(60, 'kindBd6', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "kindBd6",
+          "offset": 60,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        }
+      ],
+      "header": "sceneactortables.h",
+      "members": [
+        "src/func_80286A78.c:SceneActorTables"
+      ],
+      "paths": {
+        "(0, 'kind64e', 'void *', 40, 10)": "kind64e",
+        "(40, 'primary', 'ScenePrimaryActors', 20, 1)": "primary",
+        "(60, 'kindBd6', 'void *', 4, 1)": "kindBd6",
+        "canonical:0": "kind64e",
+        "canonical:28": "primary",
+        "canonical:3C": "kindBd6"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 64
+    },
+    "Shared_SceneFontResources": {
+      "fields": [
+        {
+          "array": 712,
+          "canonical_keys": [
+            "(0, 'bytes', 'u8', 712, 712)"
+          ],
+          "dimensions": [
+            712
+          ],
+          "name": "bytes",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 712,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "scenefontresources.h",
+      "members": [
+        "src/func_80286A78.c:SceneFontResources"
+      ],
+      "paths": {
+        "(0, 'bytes', 'u8', 712, 712)": "bytes",
+        "canonical:0": "bytes"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 712
+    },
+    "Shared_SceneGlobal": {
+      "fields": [
+        {
+          "array": 72,
+          "canonical_keys": [
+            "(0, 'pad0', 'u8', 72, 72)"
+          ],
+          "dimensions": [
+            72
+          ],
+          "name": "pad0",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 72,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(72, 'address48', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address48",
+          "offset": 72,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "sceneglobal.h",
+      "members": [
+        "src/func_80286A78.c:SceneGlobal"
+      ],
+      "paths": {
+        "(0, 'pad0', 'u8', 72, 72)": "pad0",
+        "(72, 'address48', 'u8', 1, 1)": "address48",
+        "canonical:0": "pad0",
+        "canonical:48": "address48"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 73
+    },
+    "Shared_ScenePrimaryActors": {
+      "fields": [
+        {
+          "array": 4,
+          "canonical_keys": [
+            "(0, 'actors', 'void *', 16, 4)"
+          ],
+          "dimensions": [
+            4
+          ],
+          "name": "actors",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 16,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'kindBd7', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "kindBd7",
+          "offset": 16,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        }
+      ],
+      "header": "sceneprimaryactors.h",
+      "members": [
+        "src/func_80286A78.c:ScenePrimaryActors"
+      ],
+      "paths": {
+        "(0, 'actors', 'void *', 16, 4)": "actors",
+        "(16, 'kindBd7', 'void *', 4, 1)": "kindBd7",
+        "canonical:0": "actors",
+        "canonical:10": "kindBd7"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 20
+    },
+    "Shared_SceneResources": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'font', 'SceneFontResources', 712, 1)"
+          ],
+          "dimensions": [],
+          "name": "font",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 712,
+          "type": "Shared_SceneFontResources",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(712, 'actors', 'SceneActorResources', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "actors",
+          "offset": 712,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "Shared_SceneActorResources",
+          "views": []
+        }
+      ],
+      "header": "sceneresources.h",
+      "members": [
+        "src/func_80286A78.c:SceneResources"
+      ],
+      "paths": {
+        "(0, 'font', 'SceneFontResources', 712, 1)": "font",
+        "(712, 'actors', 'SceneActorResources', 1, 1)": "actors",
+        "canonical:0": "font",
+        "canonical:2C8": "actors"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 713
+    },
     "Shared_Scratch": {
       "fields": [
         {
@@ -16369,6 +16808,1961 @@
         }
       },
       "size": 48
+    },
+    "Shared_func_80286A78_S1": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'unk0', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk0",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(28, 'unk1C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1C",
+          "offset": 28,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(48, 'unk30', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk30",
+          "offset": 48,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(60, 'address3C', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address3C",
+          "offset": 60,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(64, 'unk40', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk40",
+          "offset": 64,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(76, 'unk4C', 's32 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4C",
+          "offset": 76,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(96, 'unk60', 's32 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk60",
+          "offset": 96,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(100, 'address64', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address64",
+          "offset": 100,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(104, 'unk68', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk68",
+          "offset": 104,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(108, 'unk6C', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk6C",
+          "offset": 108,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(140, 'unk8C', 's32 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8C",
+          "offset": 140,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(180, 'unkB4', 's32 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkB4",
+          "offset": 180,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(184, 'unkB8', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkB8",
+          "offset": 184,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(188, 'unkBC', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkBC",
+          "offset": 188,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(192, 'unkC0', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC0",
+          "offset": 192,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(196, 'unkC4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC4",
+          "offset": 196,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(200, 'unkC8', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC8",
+          "offset": 200,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(204, 'unkCC', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkCC",
+          "offset": 204,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(208, 'unkD0', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkD0",
+          "offset": 208,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(212, 'unkD4', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkD4",
+          "offset": 212,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(232, 'unkE8', 's32 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkE8",
+          "offset": 232,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(236, 'unkEC', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkEC",
+          "offset": 236,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(240, 'unkF0', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkF0",
+          "offset": 240,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(244, 'unkF4', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkF4",
+          "offset": 244,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(252, 'unkFC', 'void **', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkFC",
+          "offset": 252,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void **",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(256, 'unk100', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk100",
+          "offset": 256,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(296, 'address128', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address128",
+          "offset": 296,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(312, 'unk138', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk138",
+          "offset": 312,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(316, 'unk13C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk13C",
+          "offset": 316,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(320, 'unk140', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk140",
+          "offset": 320,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(6920, 'address1B08', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address1B08",
+          "offset": 6920,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(71544, 'address11778', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address11778",
+          "offset": 71544,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(86920, 'address15388', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address15388",
+          "offset": 86920,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111280, 'unk1B2B0', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B2B0",
+          "offset": 111280,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111292, 'address1B2BC', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address1B2BC",
+          "offset": 111292,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111356, 'unk1B2FC', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B2FC",
+          "offset": 111356,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111360, 'unk1B300', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B300",
+          "offset": 111360,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111364, 'unk1B304', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B304",
+          "offset": 111364,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111392, 'address1B320', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address1B320",
+          "offset": 111392,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111624, 'unk1B408', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B408",
+          "offset": 111624,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111628, 'unk1B40C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B40C",
+          "offset": 111628,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111644, 'unk1B41C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B41C",
+          "offset": 111644,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111668, 'unk1B434', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B434",
+          "offset": 111668,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111836, 'unk1B4DC', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B4DC",
+          "offset": 111836,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111840, 'unk1B4E0', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B4E0",
+          "offset": 111840,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111844, 'unk1B4E4', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B4E4",
+          "offset": 111844,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111848, 'unk1B4E8', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B4E8",
+          "offset": 111848,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111852, 'unk1B4EC', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B4EC",
+          "offset": 111852,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111856, 'unk1B4F0', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B4F0",
+          "offset": 111856,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(111872, 'address1B500', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address1B500",
+          "offset": 111872,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112292, 'unk1B6A4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B6A4",
+          "offset": 112292,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112300, 'unk1B6AC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B6AC",
+          "offset": 112300,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112912, 'unk1B910', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B910",
+          "offset": 112912,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112916, 'unk1B914', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B914",
+          "offset": 112916,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112920, 'unk1B918', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B918",
+          "offset": 112920,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112924, 'unk1B91C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B91C",
+          "offset": 112924,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112928, 'unk1B920', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B920",
+          "offset": 112928,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112932, 'unk1B924', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B924",
+          "offset": 112932,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112940, 'unk1B92C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B92C",
+          "offset": 112940,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s1.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S1"
+      ],
+      "paths": {
+        "(0, 'unk0', 's32', 4, 1)": "unk0",
+        "(100, 'address64', 'u8', 1, 1)": "address64",
+        "(104, 'unk68', 'void *', 4, 1)": "unk68",
+        "(108, 'unk6C', 'void *', 4, 1)": "unk6C",
+        "(111280, 'unk1B2B0', 'void *', 4, 1)": "unk1B2B0",
+        "(111292, 'address1B2BC', 'u8', 1, 1)": "address1B2BC",
+        "(111356, 'unk1B2FC', 'f32', 4, 1)": "unk1B2FC",
+        "(111360, 'unk1B300', 'void *', 4, 1)": "unk1B300",
+        "(111364, 'unk1B304', 's32', 4, 1)": "unk1B304",
+        "(111392, 'address1B320', 'u8', 1, 1)": "address1B320",
+        "(111624, 'unk1B408', 's32', 4, 1)": "unk1B408",
+        "(111628, 'unk1B40C', 's32', 4, 1)": "unk1B40C",
+        "(111644, 'unk1B41C', 's32', 4, 1)": "unk1B41C",
+        "(111668, 'unk1B434', 's32', 4, 1)": "unk1B434",
+        "(111836, 'unk1B4DC', 'void *', 4, 1)": "unk1B4DC",
+        "(111840, 'unk1B4E0', 's32', 4, 1)": "unk1B4E0",
+        "(111844, 'unk1B4E4', 'void *', 4, 1)": "unk1B4E4",
+        "(111848, 'unk1B4E8', 's32', 4, 1)": "unk1B4E8",
+        "(111852, 'unk1B4EC', 'void *', 4, 1)": "unk1B4EC",
+        "(111856, 'unk1B4F0', 's32', 4, 1)": "unk1B4F0",
+        "(111872, 'address1B500', 'u8', 1, 1)": "address1B500",
+        "(112292, 'unk1B6A4', 's32', 4, 1)": "unk1B6A4",
+        "(112300, 'unk1B6AC', 's32', 4, 1)": "unk1B6AC",
+        "(112912, 'unk1B910', 's32', 4, 1)": "unk1B910",
+        "(112916, 'unk1B914', 's32', 4, 1)": "unk1B914",
+        "(112920, 'unk1B918', 's32', 4, 1)": "unk1B918",
+        "(112924, 'unk1B91C', 's32', 4, 1)": "unk1B91C",
+        "(112928, 'unk1B920', 's32', 4, 1)": "unk1B920",
+        "(112932, 'unk1B924', 's32', 4, 1)": "unk1B924",
+        "(112940, 'unk1B92C', 's32', 4, 1)": "unk1B92C",
+        "(140, 'unk8C', 's32 *', 4, 1)": "unk8C",
+        "(180, 'unkB4', 's32 *', 4, 1)": "unkB4",
+        "(184, 'unkB8', 's32', 4, 1)": "unkB8",
+        "(188, 'unkBC', 'void **', 4, 1)": "unkBC",
+        "(192, 'unkC0', 'void **', 4, 1)": "unkC0",
+        "(196, 'unkC4', 's32', 4, 1)": "unkC4",
+        "(200, 'unkC8', 'void **', 4, 1)": "unkC8",
+        "(204, 'unkCC', 'void **', 4, 1)": "unkCC",
+        "(208, 'unkD0', 'void **', 4, 1)": "unkD0",
+        "(212, 'unkD4', 'void **', 4, 1)": "unkD4",
+        "(232, 'unkE8', 's32 *', 4, 1)": "unkE8",
+        "(236, 'unkEC', 'void **', 4, 1)": "unkEC",
+        "(240, 'unkF0', 'void **', 4, 1)": "unkF0",
+        "(244, 'unkF4', 'void **', 4, 1)": "unkF4",
+        "(252, 'unkFC', 'void **', 4, 1)": "unkFC",
+        "(256, 'unk100', 's32', 4, 1)": "unk100",
+        "(28, 'unk1C', 's32', 4, 1)": "unk1C",
+        "(296, 'address128', 'u8', 1, 1)": "address128",
+        "(312, 'unk138', 'void *', 4, 1)": "unk138",
+        "(316, 'unk13C', 's32', 4, 1)": "unk13C",
+        "(320, 'unk140', 's32', 4, 1)": "unk140",
+        "(48, 'unk30', 's32', 4, 1)": "unk30",
+        "(60, 'address3C', 'u8', 1, 1)": "address3C",
+        "(64, 'unk40', 's32', 4, 1)": "unk40",
+        "(6920, 'address1B08', 'u8', 1, 1)": "address1B08",
+        "(71544, 'address11778', 'u8', 1, 1)": "address11778",
+        "(76, 'unk4C', 's32 *', 4, 1)": "unk4C",
+        "(86920, 'address15388', 'u8', 1, 1)": "address15388",
+        "(96, 'unk60', 's32 *', 4, 1)": "unk60",
+        "canonical:0": "unk0",
+        "canonical:100": "unk100",
+        "canonical:11778": "address11778",
+        "canonical:128": "address128",
+        "canonical:138": "unk138",
+        "canonical:13C": "unk13C",
+        "canonical:140": "unk140",
+        "canonical:15388": "address15388",
+        "canonical:1B08": "address1B08",
+        "canonical:1B2B0": "unk1B2B0",
+        "canonical:1B2BC": "address1B2BC",
+        "canonical:1B2FC": "unk1B2FC",
+        "canonical:1B300": "unk1B300",
+        "canonical:1B304": "unk1B304",
+        "canonical:1B320": "address1B320",
+        "canonical:1B408": "unk1B408",
+        "canonical:1B40C": "unk1B40C",
+        "canonical:1B41C": "unk1B41C",
+        "canonical:1B434": "unk1B434",
+        "canonical:1B4DC": "unk1B4DC",
+        "canonical:1B4E0": "unk1B4E0",
+        "canonical:1B4E4": "unk1B4E4",
+        "canonical:1B4E8": "unk1B4E8",
+        "canonical:1B4EC": "unk1B4EC",
+        "canonical:1B4F0": "unk1B4F0",
+        "canonical:1B500": "address1B500",
+        "canonical:1B6A4": "unk1B6A4",
+        "canonical:1B6AC": "unk1B6AC",
+        "canonical:1B910": "unk1B910",
+        "canonical:1B914": "unk1B914",
+        "canonical:1B918": "unk1B918",
+        "canonical:1B91C": "unk1B91C",
+        "canonical:1B920": "unk1B920",
+        "canonical:1B924": "unk1B924",
+        "canonical:1B92C": "unk1B92C",
+        "canonical:1C": "unk1C",
+        "canonical:30": "unk30",
+        "canonical:3C": "address3C",
+        "canonical:40": "unk40",
+        "canonical:4C": "unk4C",
+        "canonical:60": "unk60",
+        "canonical:64": "address64",
+        "canonical:68": "unk68",
+        "canonical:6C": "unk6C",
+        "canonical:8C": "unk8C",
+        "canonical:B4": "unkB4",
+        "canonical:B8": "unkB8",
+        "canonical:BC": "unkBC",
+        "canonical:C0": "unkC0",
+        "canonical:C4": "unkC4",
+        "canonical:C8": "unkC8",
+        "canonical:CC": "unkCC",
+        "canonical:D0": "unkD0",
+        "canonical:D4": "unkD4",
+        "canonical:E8": "unkE8",
+        "canonical:EC": "unkEC",
+        "canonical:F0": "unkF0",
+        "canonical:F4": "unkF4",
+        "canonical:FC": "unkFC"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 112944
+    },
+    "Shared_func_80286A78_S10": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'unk4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s10.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S10"
+      ],
+      "paths": {
+        "(4, 'unk4', 's32', 4, 1)": "unk4",
+        "canonical:4": "unk4"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 8
+    },
+    "Shared_func_80286A78_S11": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'unk4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s11.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S11"
+      ],
+      "paths": {
+        "(4, 'unk4', 's32', 4, 1)": "unk4",
+        "canonical:4": "unk4"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 8
+    },
+    "Shared_func_80286A78_S12": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'unk4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'address8', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address8",
+          "offset": 8,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s12.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S12"
+      ],
+      "paths": {
+        "(4, 'unk4', 's32', 4, 1)": "unk4",
+        "(8, 'address8', 'u8', 1, 1)": "address8",
+        "canonical:4": "unk4",
+        "canonical:8": "address8"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 12
+    },
+    "Shared_func_80286A78_S13": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112228, 'unk1B664', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B664",
+          "offset": 112228,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s13.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S13"
+      ],
+      "paths": {
+        "(112228, 'unk1B664', 's32', 4, 1)": "unk1B664",
+        "canonical:1B664": "unk1B664"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 112232
+    },
+    "Shared_func_80286A78_S14": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 's32 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32 *",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s14.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S14"
+      ],
+      "paths": {
+        "(24, 'unk18', 's32 *', 4, 1)": "unk18",
+        "canonical:18": "unk18"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 28
+    },
+    "Shared_func_80286A78_S15": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(112228, 'unk1B664', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1B664",
+          "offset": 112228,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s15.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S15"
+      ],
+      "paths": {
+        "(112228, 'unk1B664', 'void *', 4, 1)": "unk1B664",
+        "canonical:1B664": "unk1B664"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 112232
+    },
+    "Shared_func_80286A78_S16": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'prefix', 'SceneActorPrefix', 228, 1)"
+          ],
+          "dimensions": [],
+          "name": "prefix",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 228,
+          "type": "Shared_SceneActorPrefix",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(228, 'kind', 'SceneActorKind', 2, 1)"
+          ],
+          "dimensions": [],
+          "name": "kind",
+          "offset": 228,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 2,
+          "type": "Shared_SceneActorKind",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s16.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S16"
+      ],
+      "paths": {
+        "(0, 'prefix', 'SceneActorPrefix', 228, 1)": "prefix",
+        "(228, 'kind', 'SceneActorKind', 2, 1)": "kind",
+        "canonical:0": "prefix",
+        "canonical:E4": "kind"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 232
+    },
+    "Shared_func_80286A78_S17": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'unk0', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk0",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(40, 'unk28', 's16', 2, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk28",
+          "offset": 40,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 2,
+          "type": "s16",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s17.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S17"
+      ],
+      "paths": {
+        "(0, 'unk0', 's32', 4, 1)": "unk0",
+        "(40, 'unk28', 's16', 2, 1)": "unk28",
+        "canonical:0": "unk0",
+        "canonical:28": "unk28"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 44
+    },
+    "Shared_func_80286A78_S18": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'prefix', 'SceneActorPrefix', 228, 1)"
+          ],
+          "dimensions": [],
+          "name": "prefix",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 228,
+          "type": "Shared_SceneActorPrefix",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(228, 'kind', 'SceneActorKind', 2, 1)"
+          ],
+          "dimensions": [],
+          "name": "kind",
+          "offset": 228,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 2,
+          "type": "Shared_SceneActorKind",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s18.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S18"
+      ],
+      "paths": {
+        "(0, 'prefix', 'SceneActorPrefix', 228, 1)": "prefix",
+        "(228, 'kind', 'SceneActorKind', 2, 1)": "kind",
+        "canonical:0": "prefix",
+        "canonical:E4": "kind"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 232
+    },
+    "Shared_func_80286A78_S19": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'unk0', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk0",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(40, 'unk28', 's16', 2, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk28",
+          "offset": 40,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 2,
+          "type": "s16",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s19.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S19"
+      ],
+      "paths": {
+        "(0, 'unk0', 's32', 4, 1)": "unk0",
+        "(40, 'unk28', 's16', 2, 1)": "unk28",
+        "canonical:0": "unk0",
+        "canonical:28": "unk28"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 44
+    },
+    "Shared_func_80286A78_S2": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1496, 'unk5D8', 'func_80286A78_S6 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D8",
+          "offset": 1496,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80286A78_S6 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(5204, 'unk1454', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1454",
+          "offset": 5204,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s2.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S2"
+      ],
+      "paths": {
+        "(1496, 'unk5D8', 'func_80286A78_S6 *', 4, 1)": "unk5D8",
+        "(5204, 'unk1454', 's32', 4, 1)": "unk1454",
+        "canonical:1454": "unk1454",
+        "canonical:5D8": "unk5D8"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 5208
+    },
+    "Shared_func_80286A78_S20": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'address8', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address8",
+          "offset": 8,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(5204, 'unk1454', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1454",
+          "offset": 5204,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(5856, 'unk16E0', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk16E0",
+          "offset": 5856,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s20.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S20"
+      ],
+      "paths": {
+        "(5204, 'unk1454', 'void *', 4, 1)": "unk1454",
+        "(5856, 'unk16E0', 'void *', 4, 1)": "unk16E0",
+        "(8, 'address8', 'u8', 1, 1)": "address8",
+        "canonical:1454": "unk1454",
+        "canonical:16E0": "unk16E0",
+        "canonical:8": "address8"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 5860
+    },
+    "Shared_func_80286A78_S21": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'unk4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s21.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S21"
+      ],
+      "paths": {
+        "(4, 'unk4', 's32', 4, 1)": "unk4",
+        "canonical:4": "unk4"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 8
+    },
+    "Shared_func_80286A78_S3": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(120, 'unk78', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk78",
+          "offset": 120,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(145, 'unk91', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk91",
+          "offset": 145,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s3.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S3"
+      ],
+      "paths": {
+        "(120, 'unk78', 'u8', 1, 1)": "unk78",
+        "(145, 'unk91', 'u8', 1, 1)": "unk91",
+        "canonical:78": "unk78",
+        "canonical:91": "unk91"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 146
+    },
+    "Shared_func_80286A78_S4": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(152, 'unk98', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk98",
+          "offset": 152,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s4.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S4"
+      ],
+      "paths": {
+        "(152, 'unk98', 's32', 4, 1)": "unk98",
+        "canonical:98": "unk98"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 156
+    },
+    "Shared_func_80286A78_S5": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(132, 'address84', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "address84",
+          "offset": 132,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(148, 'unk94', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk94",
+          "offset": 148,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s5.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S5"
+      ],
+      "paths": {
+        "(132, 'address84', 'u8', 1, 1)": "address84",
+        "(148, 'unk94', 'u8', 1, 1)": "unk94",
+        "canonical:84": "address84",
+        "canonical:94": "unk94"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 149
+    },
+    "Shared_func_80286A78_S6": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(128, 'unk80', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk80",
+          "offset": 128,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s6.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S6"
+      ],
+      "paths": {
+        "(128, 'unk80', 's8', 1, 1)": "unk80",
+        "canonical:80": "unk80"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 129
+    },
+    "Shared_func_80286A78_S7": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'unk0', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk0",
+          "offset": 0,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'unk4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'unk8', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8",
+          "offset": 8,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(12, 'unkC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC",
+          "offset": 12,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'unk10', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk10",
+          "offset": 16,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(20, 'unk14', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk14",
+          "offset": 20,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s7.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S7"
+      ],
+      "paths": {
+        "(0, 'unk0', 's32', 4, 1)": "unk0",
+        "(12, 'unkC', 's32', 4, 1)": "unkC",
+        "(16, 'unk10', 's32', 4, 1)": "unk10",
+        "(20, 'unk14', 's32', 4, 1)": "unk14",
+        "(4, 'unk4', 's32', 4, 1)": "unk4",
+        "(8, 'unk8', 's32', 4, 1)": "unk8",
+        "canonical:0": "unk0",
+        "canonical:10": "unk10",
+        "canonical:14": "unk14",
+        "canonical:4": "unk4",
+        "canonical:8": "unk8",
+        "canonical:C": "unkC"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 24
+    },
+    "Shared_func_80286A78_S8": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'unk10', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk10",
+          "offset": 16,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s8.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S8"
+      ],
+      "paths": {
+        "(16, 'unk10', 'u8', 1, 1)": "unk10",
+        "canonical:10": "unk10"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 17
+    },
+    "Shared_func_80286A78_S9": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'unk4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_80286A78.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80286a78_s9.h",
+      "members": [
+        "src/func_80286A78.c:func_80286A78_S9"
+      ],
+      "paths": {
+        "(4, 'unk4', 's32', 4, 1)": "unk4",
+        "canonical:4": "unk4"
+      },
+      "proof": {
+        "src/func_80286A78.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 8
     },
     "Shared_func_802ACBCC_S1": {
       "fields": [
