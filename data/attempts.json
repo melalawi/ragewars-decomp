@@ -15281,7 +15281,7 @@
    "verdict": "Open"
   },
   "func_80243A80": {
-   "attempt_count": 1,
+   "attempt_count": 2,
    "attempts": [
     {
      "note": "Moves an actor through collision queries and updates its contact flags and resolved position; recovered source retains 626 differing words and produces 2568 of 2580 bytes, a structural reconstruction residue.",
@@ -15290,10 +15290,120 @@
      "recorded_at": "2026-09-20T01:28:39Z",
      "trials": 2,
      "unmeasurable": "no draft was retained for this attempt"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 645,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C3794",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C3794"
+        },
+        {
+         "address": "0x800C379C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C379C"
+        }
+       ],
+       "of": 645,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 645,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C3A84",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C3A84"
+        },
+        {
+         "address": "0x800C3A8C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C3A8C"
+        }
+       ],
+       "of": 645,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 645,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C36C4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C36C4"
+        },
+        {
+         "address": "0x800C36CC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C36CC"
+        }
+       ],
+       "not_held": {
+        "eu": {
+         "bytes": 2580,
+         "compared_with": "de",
+         "evidence": "the word before 0x0446A0 is a jump or branch",
+         "found": "delay-slot",
+         "rom": "0x0446A0"
+        }
+       },
+       "of": 645,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 645,
+       "inserted": 0,
+       "missing": 0,
+       "of": 645,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 645,
+      "inserted": 0,
+      "missing": 0,
+      "of": 645
+     },
+     "note": "Moves an actor through collision queries and resolves its position and contact state.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T17:23:34Z"
     }
    ],
+   "best": {
+    "identical": 645,
+    "inserted": 0,
+    "missing": 0,
+    "of": 645
+   },
+   "budget_failed_attempts": 10,
+   "fakematch": [
+    "reuse the earlier flag local for the query loop.",
+    "keep the collision-query mask live across calls.",
+    "preserve the displacement across the query call.",
+    "retain the selected actor across flag writes.",
+    "keep the collision kind across loop calls.",
+    "keep the hit elevation for the landing update.",
+    "stage actor elevation before hit elevation.",
+    "stage source elevation before displacement load."
+   ],
    "positional_best_differing_words": 626,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80244D54": {
    "attempt_count": 0,

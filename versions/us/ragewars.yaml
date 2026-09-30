@@ -917,7 +917,7 @@ segments:
       - [0x03DA7C, asm, nonmatchings/func_8023CE8C]
       - [0x03DBAC, asm, nonmatchings/func_8023CFAC]
       - [0x03DBB8, asm, nonmatchings/D_8023CFB8]
-      - [0x03DBC0, asm, nonmatchings/func_8023CFC0]
+      - [0x03DBC0, asm, nonmatchings/func_8023CFD0]
       - [0x03DD38, asm, nonmatchings/func_8023D148]
       - [0x03DF60, asm, nonmatchings/func_8023D370]
       - [0x03E680, asm, nonmatchings/func_8023DA90]
