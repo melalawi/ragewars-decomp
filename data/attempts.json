@@ -8526,7 +8526,7 @@
    "verdict": "Open"
   },
   "func_80227014": {
-   "attempt_count": 2,
+   "attempt_count": 3,
    "attempts": [
     {
      "note": "Not reproduced. 3668 B, 917 instructions; best candidate is 3620 B, 905 instructions, 858 aligned differing words, and with registers erased 40 hunks over 77 instructions with 840 of 917 cartridge instructions aligning, first structural divergence at instruction 67 (0x80227120). Read the structure, not the word count: the candidate runs 12 instructions short, so almost every word after the first hunk is displaced. Fixed and confirmed against the cartridge. The dispatch is an eight-arm jump table on D_80146914 through jtbl_800C7C70 whose out-of-range arm shares the arm-0 body at 0x802270DC, and the arms sit in source order 0/default, 1, 2, 5, 3, 4, 6, 7. The four banner draws hold D_800C7C90, D_800C7C98, D_800C7CA0 and D_800C7CA8 as pairs, and arms 5 and 6 must read the pair into two f32 locals before their loop, which is what puts the pair in $f20/$f21, raises the frame from 0x40 to the cartridge's 0x50 and adds the sdc1 pair; passing the pair as an f32 * and subscripting inside the loop loses all of that. The tint selector must be a chain of single equality tests with the body duplicated per constant, if kind==11 else if kind==12 else if kind==14 else if kind==13, each assigning its own literal: the pinned compiler folds any adjacent pair, whether written as case 11: case 12: or as kind==11 || kind==12, into an addiu/sltiu range test, while the cartridge tests 11, 12, 14, 13 by beq/bne and tail-merges the duplicated bodies. That one change was worth 46 instructions of alignment, from 794 to 840. Ruled out. Arm 1's modulo is the largest remaining hunk: the cartridge divides separately inside each arm of the game-mode test at 0x8022712c and at 0x80227164, with the 0x74 store ending each arm, while the candidate hoists both 0x74 stores above the divide and cross-jumps the div/break/mfhi tail into one, 11 instructions short. Writing the 0x74 store before the modulo in each arm is worse, 833 aligning against 840. The other two systematic differences are loop-invariant motion and the D_801468A0 base, both at the arm 3 and arm 4 loops: the cartridge hoists only the constants 11, 12, 14, 13 and 1 into $t0-$t3 and reloads D_80146938 and D_801462D5 through a fresh lui every iteration, while the candidate hoists those two loads out instead, five instructions early at 0x802276FC and 0x80227A3C; and the cartridge materialises D_801468A0 plain and indexes it positively (lw 92($s1), lw 96($s1), sw 116($s1)) where the candidate folds the first field into the base and indexes from there, the same base-register difference already recorded against func_8021EED8. Blocking. What is left is scheduling, cross-jumping and invariant-motion choices rather than statement order or types, which is the permuter's ground; no permuter run was made, the machine being loaded.",
@@ -8724,7 +8724,162 @@
      "outcome": "failed",
      "recorded_at": "2026-09-30T08:59:17Z",
      "retained": "artifacts/retained-candidates/func_80227014/tried/a2e62d7cdc5df8759873f6a31a5c0d047d250bcc1a9a40d5b5947cf9d03536e9/func_80227014.c",
+     "retained_pruned": true,
+     "retained_pruned_reason": "func_80227014 landed",
      "retained_sha256": "a2e62d7cdc5df8759873f6a31a5c0d047d250bcc1a9a40d5b5947cf9d03536e9"
+    },
+    {
+     "cartridge": "us-rev1",
+     "carts": {
+      "de": {
+       "identical": 917,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2BA4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2BA4"
+        },
+        {
+         "address": "0x800C2BAC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2BAC"
+        },
+        {
+         "address": "0x800C2BB4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2BB4"
+        },
+        {
+         "address": "0x800C2BBC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2BBC"
+        }
+       ],
+       "of": 917,
+       "result": "byte-identical"
+      },
+      "eu": {
+       "identical": 917,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2E44",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2E44"
+        },
+        {
+         "address": "0x800C2E4C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2E4C"
+        },
+        {
+         "address": "0x800C2E54",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2E54"
+        },
+        {
+         "address": "0x800C2E5C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2E5C"
+        }
+       ],
+       "of": 917,
+       "result": "byte-identical"
+      },
+      "eu-mul": {
+       "identical": 917,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2E84",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2E84"
+        },
+        {
+         "address": "0x800C2E8C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2E8C"
+        },
+        {
+         "address": "0x800C2E94",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2E94"
+        },
+        {
+         "address": "0x800C2E9C",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2E9C"
+        }
+       ],
+       "of": 917,
+       "result": "byte-identical"
+      },
+      "us": {
+       "identical": 917,
+       "inserted": 0,
+       "missing": 0,
+       "needs": [
+        {
+         "address": "0x800C2AD4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2AD4"
+        },
+        {
+         "address": "0x800C2ADC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2ADC"
+        },
+        {
+         "address": "0x800C2AE4",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2AE4"
+        },
+        {
+         "address": "0x800C2AEC",
+         "conflicts": [],
+         "kind": "data-symbol",
+         "name": "D_800C2AEC"
+        }
+       ],
+       "of": 917,
+       "result": "byte-identical"
+      },
+      "us-rev1": {
+       "identical": 917,
+       "inserted": 0,
+       "missing": 0,
+       "of": 917,
+       "result": "byte-identical"
+      }
+     },
+     "measurement": {
+      "identical": 917,
+      "inserted": 0,
+      "missing": 0,
+      "of": 917
+     },
+     "note": "Updates the battle presentation and character banners for the active world.",
+     "outcome": "landed",
+     "recorded_at": "2026-09-30T11:11:17Z"
     }
    ],
    "best": {
@@ -8734,8 +8889,21 @@
     "of": 917
    },
    "budget_failed_attempts": 10,
+   "fakematch": [
+    "preserve late modifier-load order.",
+    "preserve score-branch load order.",
+    "split early rules pointer lifetime.",
+    "isolate selector rules pointer.",
+    "keep short case-2 address in caller register.",
+    "end entry address lifetime at actor lookup.",
+    "short rules pointer inside third state loop.",
+    "end entry address lifetime at actor lookup.",
+    "short countdown rules pointer.",
+    "short rules address in fourth state loop.",
+    "short active-score address lifetime."
+   ],
    "positional_best_differing_words": 858,
-   "verdict": "Open"
+   "verdict": "Landed"
   },
   "func_80227E68": {
    "attempt_count": 3,

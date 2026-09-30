@@ -5824,3 +5824,7 @@ D_800D7D50 = 0x800D29D0; // placed by decomp land run
 D_800D7D54 = 0x800D29D4; // placed by decomp land run
 D_800D7D5C = 0x800D29DC; // placed by decomp land run
 D_801466E2 = 0x80140622; // type:u32 derived by the trial of func_8043DEDC
+D_800C2AD4 = 0x800C2AD4; // type:u32 derived by the trial of func_80227014
+D_800C2ADC = 0x800C2ADC; // type:u32 derived by the trial of func_80227014
+D_800C2AE4 = 0x800C2AE4; // type:u32 derived by the trial of func_80227014
+D_800C2AEC = 0x800C2AEC; // type:u32 derived by the trial of func_80227014

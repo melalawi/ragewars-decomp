@@ -4636,6 +4636,59 @@
       },
       "size": 36
     },
+    "Shared_Entry190": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'value', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "value",
+          "offset": 0,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 396,
+          "canonical_keys": [
+            "(4, 'pad', 'u8', 396, 396)"
+          ],
+          "dimensions": [
+            396
+          ],
+          "name": "pad",
+          "offset": 4,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 396,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "entry190.h",
+      "members": [
+        "src/func_80227014.c:Entry190"
+      ],
+      "paths": {
+        "(0, 'value', 's32', 4, 1)": "value",
+        "(4, 'pad', 'u8', 396, 396)": "pad",
+        "canonical:0": "value",
+        "canonical:4": "pad"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 400
+    },
     "Shared_Item": {
       "fields": [
         {
@@ -4876,6 +4929,2309 @@
         }
       },
       "size": 16
+    },
+    "Shared_func_80227014_S1": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(28, 'unk1C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1C",
+          "offset": 28,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(84, 'unk54', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk54",
+          "offset": 84,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(92, 'unk5C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5C",
+          "offset": 92,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(96, 'unk60', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk60",
+          "offset": 96,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(100, 'unk64', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk64",
+          "offset": 100,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(104, 'unk68', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk68",
+          "offset": 104,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(108, 'unk6C', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk6C",
+          "offset": 108,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(116, 'unk74', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk74",
+          "offset": 116,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s1.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S1"
+      ],
+      "paths": {
+        "(100, 'unk64', 's32', 4, 1)": "unk64",
+        "(104, 'unk68', 's32', 4, 1)": "unk68",
+        "(108, 'unk6C', 's32', 4, 1)": "unk6C",
+        "(116, 'unk74', 's32', 4, 1)": "unk74",
+        "(28, 'unk1C', 's32', 4, 1)": "unk1C",
+        "(84, 'unk54', 's32', 4, 1)": "unk54",
+        "(92, 'unk5C', 's32', 4, 1)": "unk5C",
+        "(96, 'unk60', 's32', 4, 1)": "unk60",
+        "canonical:1C": "unk1C",
+        "canonical:54": "unk54",
+        "canonical:5C": "unk5C",
+        "canonical:60": "unk60",
+        "canonical:64": "unk64",
+        "canonical:68": "unk68",
+        "canonical:6C": "unk6C",
+        "canonical:74": "unk74"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 120
+    },
+    "Shared_func_80227014_S10": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(143, 'unk8F', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8F",
+          "offset": 143,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s10.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S10"
+      ],
+      "paths": {
+        "(143, 'unk8F', 'u8', 1, 1)": "unk8F",
+        "canonical:8F": "unk8F"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 144
+    },
+    "Shared_func_80227014_S11": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(128, 'unk80', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk80",
+          "offset": 128,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(143, 'unk8F', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8F",
+          "offset": 143,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(148, 'unk94', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk94",
+          "offset": 148,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s11.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S11"
+      ],
+      "paths": {
+        "(128, 'unk80', 's8', 1, 1)": "unk80",
+        "(143, 'unk8F', 'u8', 1, 1)": "unk8F",
+        "(148, 'unk94', 'u8', 1, 1)": "unk94",
+        "canonical:80": "unk80",
+        "canonical:8F": "unk8F",
+        "canonical:94": "unk94"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 149
+    },
+    "Shared_func_80227014_S12": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s12.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S12"
+      ],
+      "paths": {
+        "(24, 'unk18', 's32', 4, 1)": "unk18",
+        "canonical:18": "unk18"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 28
+    },
+    "Shared_func_80227014_S13": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'unk8', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8",
+          "offset": 8,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(12, 'unkC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC",
+          "offset": 12,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'unk10', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk10",
+          "offset": 16,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 'func_80227014_S17 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80227014_S17 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(372, 'unk174', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk174",
+          "offset": 372,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(744, 'unk2E8', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2E8",
+          "offset": 744,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1112, 'unk458', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk458",
+          "offset": 1112,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1492, 'unk5D4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D4",
+          "offset": 1492,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1496, 'unk5D8', 'func_80227014_S15 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D8",
+          "offset": 1496,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80227014_S15 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1500, 'unk5DC', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5DC",
+          "offset": 1500,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1508, 'unk5E4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5E4",
+          "offset": 1508,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1516, 'unk5EC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5EC",
+          "offset": 1516,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 2172,
+          "canonical_keys": [
+            "(2360, 'unk938', 'char', 2172, 2172)"
+          ],
+          "dimensions": [
+            2172
+          ],
+          "name": "unk938",
+          "offset": 2360,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 2172,
+          "type": "char",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4532, 'unk11B4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk11B4",
+          "offset": 4532,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(5200, 'unk1450', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1450",
+          "offset": 5200,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s13.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S13"
+      ],
+      "paths": {
+        "(1112, 'unk458', 's8', 1, 1)": "unk458",
+        "(12, 'unkC', 's32', 4, 1)": "unkC",
+        "(1492, 'unk5D4', 's32', 4, 1)": "unk5D4",
+        "(1496, 'unk5D8', 'func_80227014_S15 *', 4, 1)": "unk5D8",
+        "(1500, 'unk5DC', 'void *', 4, 1)": "unk5DC",
+        "(1508, 'unk5E4', 's32', 4, 1)": "unk5E4",
+        "(1516, 'unk5EC', 's32', 4, 1)": "unk5EC",
+        "(16, 'unk10', 's32', 4, 1)": "unk10",
+        "(2360, 'unk938', 'char', 2172, 2172)": "unk938",
+        "(24, 'unk18', 'func_80227014_S17 *', 4, 1)": "unk18",
+        "(372, 'unk174', 's32', 4, 1)": "unk174",
+        "(4532, 'unk11B4', 's32', 4, 1)": "unk11B4",
+        "(5200, 'unk1450', 's32', 4, 1)": "unk1450",
+        "(744, 'unk2E8', 's8', 1, 1)": "unk2E8",
+        "(8, 'unk8', 's32', 4, 1)": "unk8",
+        "canonical:10": "unk10",
+        "canonical:11B4": "unk11B4",
+        "canonical:1450": "unk1450",
+        "canonical:174": "unk174",
+        "canonical:18": "unk18",
+        "canonical:2E8": "unk2E8",
+        "canonical:458": "unk458",
+        "canonical:5D4": "unk5D4",
+        "canonical:5D8": "unk5D8",
+        "canonical:5DC": "unk5DC",
+        "canonical:5E4": "unk5E4",
+        "canonical:5EC": "unk5EC",
+        "canonical:8": "unk8",
+        "canonical:938": "unk938",
+        "canonical:C": "unkC"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 5204
+    },
+    "Shared_func_80227014_S14": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(668, 'unk29C', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk29C",
+          "offset": 668,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(672, 'unk2A0', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A0",
+          "offset": 672,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(676, 'unk2A4', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A4",
+          "offset": 676,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(680, 'unk2A8', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A8",
+          "offset": 680,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1380, 'unk564', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk564",
+          "offset": 1380,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s14.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S14"
+      ],
+      "paths": {
+        "(1380, 'unk564', 's32', 4, 1)": "unk564",
+        "(668, 'unk29C', 'f32', 4, 1)": "unk29C",
+        "(672, 'unk2A0', 'f32', 4, 1)": "unk2A0",
+        "(676, 'unk2A4', 'f32', 4, 1)": "unk2A4",
+        "(680, 'unk2A8', 'f32', 4, 1)": "unk2A8",
+        "canonical:29C": "unk29C",
+        "canonical:2A0": "unk2A0",
+        "canonical:2A4": "unk2A4",
+        "canonical:2A8": "unk2A8",
+        "canonical:564": "unk564"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 1384
+    },
+    "Shared_func_80227014_S15": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(143, 'unk8F', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8F",
+          "offset": 143,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s15.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S15"
+      ],
+      "paths": {
+        "(143, 'unk8F', 'u8', 1, 1)": "unk8F",
+        "canonical:8F": "unk8F"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 144
+    },
+    "Shared_func_80227014_S16": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(128, 'unk80', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk80",
+          "offset": 128,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(143, 'unk8F', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8F",
+          "offset": 143,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(148, 'unk94', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk94",
+          "offset": 148,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s16.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S16"
+      ],
+      "paths": {
+        "(128, 'unk80', 's8', 1, 1)": "unk80",
+        "(143, 'unk8F', 'u8', 1, 1)": "unk8F",
+        "(148, 'unk94', 'u8', 1, 1)": "unk94",
+        "canonical:80": "unk80",
+        "canonical:8F": "unk8F",
+        "canonical:94": "unk94"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 149
+    },
+    "Shared_func_80227014_S17": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s17.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S17"
+      ],
+      "paths": {
+        "(24, 'unk18', 's32', 4, 1)": "unk18",
+        "canonical:18": "unk18"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 28
+    },
+    "Shared_func_80227014_S18": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'unk8', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8",
+          "offset": 8,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(12, 'unkC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC",
+          "offset": 12,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'unk10', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk10",
+          "offset": 16,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 'func_80227014_S23 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80227014_S23 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(372, 'unk174', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk174",
+          "offset": 372,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(744, 'unk2E8', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2E8",
+          "offset": 744,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1112, 'unk458', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk458",
+          "offset": 1112,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1492, 'unk5D4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D4",
+          "offset": 1492,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1496, 'unk5D8', 'func_80227014_S21 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D8",
+          "offset": 1496,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80227014_S21 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1500, 'unk5DC', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5DC",
+          "offset": 1500,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1508, 'unk5E4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5E4",
+          "offset": 1508,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1516, 'unk5EC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5EC",
+          "offset": 1516,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 2172,
+          "canonical_keys": [
+            "(2360, 'unk938', 'char', 2172, 2172)"
+          ],
+          "dimensions": [
+            2172
+          ],
+          "name": "unk938",
+          "offset": 2360,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 2172,
+          "type": "char",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4532, 'unk11B4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk11B4",
+          "offset": 4532,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(5200, 'unk1450', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1450",
+          "offset": 5200,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s18.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S18"
+      ],
+      "paths": {
+        "(1112, 'unk458', 's8', 1, 1)": "unk458",
+        "(12, 'unkC', 's32', 4, 1)": "unkC",
+        "(1492, 'unk5D4', 's32', 4, 1)": "unk5D4",
+        "(1496, 'unk5D8', 'func_80227014_S21 *', 4, 1)": "unk5D8",
+        "(1500, 'unk5DC', 'void *', 4, 1)": "unk5DC",
+        "(1508, 'unk5E4', 's32', 4, 1)": "unk5E4",
+        "(1516, 'unk5EC', 's32', 4, 1)": "unk5EC",
+        "(16, 'unk10', 's32', 4, 1)": "unk10",
+        "(2360, 'unk938', 'char', 2172, 2172)": "unk938",
+        "(24, 'unk18', 'func_80227014_S23 *', 4, 1)": "unk18",
+        "(372, 'unk174', 's32', 4, 1)": "unk174",
+        "(4532, 'unk11B4', 's32', 4, 1)": "unk11B4",
+        "(5200, 'unk1450', 's32', 4, 1)": "unk1450",
+        "(744, 'unk2E8', 's8', 1, 1)": "unk2E8",
+        "(8, 'unk8', 's32', 4, 1)": "unk8",
+        "canonical:10": "unk10",
+        "canonical:11B4": "unk11B4",
+        "canonical:1450": "unk1450",
+        "canonical:174": "unk174",
+        "canonical:18": "unk18",
+        "canonical:2E8": "unk2E8",
+        "canonical:458": "unk458",
+        "canonical:5D4": "unk5D4",
+        "canonical:5D8": "unk5D8",
+        "canonical:5DC": "unk5DC",
+        "canonical:5E4": "unk5E4",
+        "canonical:5EC": "unk5EC",
+        "canonical:8": "unk8",
+        "canonical:938": "unk938",
+        "canonical:C": "unkC"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 5204
+    },
+    "Shared_func_80227014_S19": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(143, 'unk8F', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8F",
+          "offset": 143,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(144, 'unk90', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk90",
+          "offset": 144,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s19.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S19"
+      ],
+      "paths": {
+        "(143, 'unk8F', 'u8', 1, 1)": "unk8F",
+        "(144, 'unk90', 's8', 1, 1)": "unk90",
+        "canonical:8F": "unk8F",
+        "canonical:90": "unk90"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 145
+    },
+    "Shared_func_80227014_S2": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'unk8', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8",
+          "offset": 8,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(12, 'unkC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC",
+          "offset": 12,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'unk10', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk10",
+          "offset": 16,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 'func_80227014_S7 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80227014_S7 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(372, 'unk174', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk174",
+          "offset": 372,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(744, 'unk2E8', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2E8",
+          "offset": 744,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1112, 'unk458', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk458",
+          "offset": 1112,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1492, 'unk5D4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D4",
+          "offset": 1492,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1496, 'unk5D8', 'func_80227014_S6 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D8",
+          "offset": 1496,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80227014_S6 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1500, 'unk5DC', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5DC",
+          "offset": 1500,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1508, 'unk5E4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5E4",
+          "offset": 1508,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1516, 'unk5EC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5EC",
+          "offset": 1516,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 2172,
+          "canonical_keys": [
+            "(2360, 'unk938', 'char', 2172, 2172)"
+          ],
+          "dimensions": [
+            2172
+          ],
+          "name": "unk938",
+          "offset": 2360,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 2172,
+          "type": "char",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4532, 'unk11B4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk11B4",
+          "offset": 4532,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(5200, 'unk1450', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1450",
+          "offset": 5200,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s2.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S2"
+      ],
+      "paths": {
+        "(1112, 'unk458', 's8', 1, 1)": "unk458",
+        "(12, 'unkC', 's32', 4, 1)": "unkC",
+        "(1492, 'unk5D4', 's32', 4, 1)": "unk5D4",
+        "(1496, 'unk5D8', 'func_80227014_S6 *', 4, 1)": "unk5D8",
+        "(1500, 'unk5DC', 'void *', 4, 1)": "unk5DC",
+        "(1508, 'unk5E4', 's32', 4, 1)": "unk5E4",
+        "(1516, 'unk5EC', 's32', 4, 1)": "unk5EC",
+        "(16, 'unk10', 's32', 4, 1)": "unk10",
+        "(2360, 'unk938', 'char', 2172, 2172)": "unk938",
+        "(24, 'unk18', 'func_80227014_S7 *', 4, 1)": "unk18",
+        "(372, 'unk174', 's32', 4, 1)": "unk174",
+        "(4532, 'unk11B4', 's32', 4, 1)": "unk11B4",
+        "(5200, 'unk1450', 's32', 4, 1)": "unk1450",
+        "(744, 'unk2E8', 's8', 1, 1)": "unk2E8",
+        "(8, 'unk8', 's32', 4, 1)": "unk8",
+        "canonical:10": "unk10",
+        "canonical:11B4": "unk11B4",
+        "canonical:1450": "unk1450",
+        "canonical:174": "unk174",
+        "canonical:18": "unk18",
+        "canonical:2E8": "unk2E8",
+        "canonical:458": "unk458",
+        "canonical:5D4": "unk5D4",
+        "canonical:5D8": "unk5D8",
+        "canonical:5DC": "unk5DC",
+        "canonical:5E4": "unk5E4",
+        "canonical:5EC": "unk5EC",
+        "canonical:8": "unk8",
+        "canonical:938": "unk938",
+        "canonical:C": "unkC"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 5204
+    },
+    "Shared_func_80227014_S20": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(668, 'unk29C', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk29C",
+          "offset": 668,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(672, 'unk2A0', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A0",
+          "offset": 672,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(676, 'unk2A4', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A4",
+          "offset": 676,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(680, 'unk2A8', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A8",
+          "offset": 680,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1380, 'unk564', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk564",
+          "offset": 1380,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s20.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S20"
+      ],
+      "paths": {
+        "(1380, 'unk564', 's32', 4, 1)": "unk564",
+        "(668, 'unk29C', 'f32', 4, 1)": "unk29C",
+        "(672, 'unk2A0', 'f32', 4, 1)": "unk2A0",
+        "(676, 'unk2A4', 'f32', 4, 1)": "unk2A4",
+        "(680, 'unk2A8', 'f32', 4, 1)": "unk2A8",
+        "canonical:29C": "unk29C",
+        "canonical:2A0": "unk2A0",
+        "canonical:2A4": "unk2A4",
+        "canonical:2A8": "unk2A8",
+        "canonical:564": "unk564"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 1384
+    },
+    "Shared_func_80227014_S21": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(143, 'unk8F', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8F",
+          "offset": 143,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s21.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S21"
+      ],
+      "paths": {
+        "(143, 'unk8F', 'u8', 1, 1)": "unk8F",
+        "canonical:8F": "unk8F"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 144
+    },
+    "Shared_func_80227014_S22": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(128, 'unk80', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk80",
+          "offset": 128,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(143, 'unk8F', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8F",
+          "offset": 143,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(148, 'unk94', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk94",
+          "offset": 148,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s22.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S22"
+      ],
+      "paths": {
+        "(128, 'unk80', 's8', 1, 1)": "unk80",
+        "(143, 'unk8F', 'u8', 1, 1)": "unk8F",
+        "(148, 'unk94', 'u8', 1, 1)": "unk94",
+        "canonical:80": "unk80",
+        "canonical:8F": "unk8F",
+        "canonical:94": "unk94"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 149
+    },
+    "Shared_func_80227014_S23": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s23.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S23"
+      ],
+      "paths": {
+        "(24, 'unk18', 's32', 4, 1)": "unk18",
+        "canonical:18": "unk18"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 28
+    },
+    "Shared_func_80227014_S3": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(128, 'unk80', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk80",
+          "offset": 128,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(144, 'unk90', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk90",
+          "offset": 144,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(148, 'unk94', 'u8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk94",
+          "offset": 148,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "u8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s3.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S3"
+      ],
+      "paths": {
+        "(128, 'unk80', 's8', 1, 1)": "unk80",
+        "(144, 'unk90', 'u8', 1, 1)": "unk90",
+        "(148, 'unk94', 'u8', 1, 1)": "unk94",
+        "canonical:80": "unk80",
+        "canonical:90": "unk90",
+        "canonical:94": "unk94"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 149
+    },
+    "Shared_func_80227014_S4": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(668, 'unk29C', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk29C",
+          "offset": 668,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(672, 'unk2A0', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A0",
+          "offset": 672,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(676, 'unk2A4', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A4",
+          "offset": 676,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(680, 'unk2A8', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A8",
+          "offset": 680,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1380, 'unk564', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk564",
+          "offset": 1380,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s4.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S4"
+      ],
+      "paths": {
+        "(1380, 'unk564', 's32', 4, 1)": "unk564",
+        "(668, 'unk29C', 'f32', 4, 1)": "unk29C",
+        "(672, 'unk2A0', 'f32', 4, 1)": "unk2A0",
+        "(676, 'unk2A4', 'f32', 4, 1)": "unk2A4",
+        "(680, 'unk2A8', 'f32', 4, 1)": "unk2A8",
+        "canonical:29C": "unk29C",
+        "canonical:2A0": "unk2A0",
+        "canonical:2A4": "unk2A4",
+        "canonical:2A8": "unk2A8",
+        "canonical:564": "unk564"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 1384
+    },
+    "Shared_func_80227014_S5": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(0, 'unk0', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk0",
+          "offset": 0,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4, 'unk4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk4",
+          "offset": 4,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s5.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S5"
+      ],
+      "paths": {
+        "(0, 'unk0', 's32', 4, 1)": "unk0",
+        "(4, 'unk4', 's32', 4, 1)": "unk4",
+        "canonical:0": "unk0",
+        "canonical:4": "unk4"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 8
+    },
+    "Shared_func_80227014_S6": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(143, 'unk8F', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8F",
+          "offset": 143,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s6.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S6"
+      ],
+      "paths": {
+        "(143, 'unk8F', 's8', 1, 1)": "unk8F",
+        "canonical:8F": "unk8F"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 144
+    },
+    "Shared_func_80227014_S7": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s7.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S7"
+      ],
+      "paths": {
+        "(24, 'unk18', 's32', 4, 1)": "unk18",
+        "canonical:18": "unk18"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 28
+    },
+    "Shared_func_80227014_S8": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(8, 'unk8', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk8",
+          "offset": 8,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(12, 'unkC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unkC",
+          "offset": 12,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(16, 'unk10', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk10",
+          "offset": 16,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(24, 'unk18', 'func_80227014_S12 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk18",
+          "offset": 24,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80227014_S12 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(372, 'unk174', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk174",
+          "offset": 372,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(744, 'unk2E8', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2E8",
+          "offset": 744,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1112, 'unk458', 's8', 1, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk458",
+          "offset": 1112,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 1,
+          "type": "s8",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1492, 'unk5D4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D4",
+          "offset": 1492,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1496, 'unk5D8', 'func_80227014_S10 *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5D8",
+          "offset": 1496,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "Shared_func_80227014_S10 *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1500, 'unk5DC', 'void *', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5DC",
+          "offset": 1500,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "void *",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1508, 'unk5E4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5E4",
+          "offset": 1508,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1516, 'unk5EC', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk5EC",
+          "offset": 1516,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 2172,
+          "canonical_keys": [
+            "(2360, 'unk938', 'char', 2172, 2172)"
+          ],
+          "dimensions": [
+            2172
+          ],
+          "name": "unk938",
+          "offset": 2360,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 2172,
+          "type": "char",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(4532, 'unk11B4', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk11B4",
+          "offset": 4532,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(5200, 'unk1450', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk1450",
+          "offset": 5200,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s8.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S8"
+      ],
+      "paths": {
+        "(1112, 'unk458', 's8', 1, 1)": "unk458",
+        "(12, 'unkC', 's32', 4, 1)": "unkC",
+        "(1492, 'unk5D4', 's32', 4, 1)": "unk5D4",
+        "(1496, 'unk5D8', 'func_80227014_S10 *', 4, 1)": "unk5D8",
+        "(1500, 'unk5DC', 'void *', 4, 1)": "unk5DC",
+        "(1508, 'unk5E4', 's32', 4, 1)": "unk5E4",
+        "(1516, 'unk5EC', 's32', 4, 1)": "unk5EC",
+        "(16, 'unk10', 's32', 4, 1)": "unk10",
+        "(2360, 'unk938', 'char', 2172, 2172)": "unk938",
+        "(24, 'unk18', 'func_80227014_S12 *', 4, 1)": "unk18",
+        "(372, 'unk174', 's32', 4, 1)": "unk174",
+        "(4532, 'unk11B4', 's32', 4, 1)": "unk11B4",
+        "(5200, 'unk1450', 's32', 4, 1)": "unk1450",
+        "(744, 'unk2E8', 's8', 1, 1)": "unk2E8",
+        "(8, 'unk8', 's32', 4, 1)": "unk8",
+        "canonical:10": "unk10",
+        "canonical:11B4": "unk11B4",
+        "canonical:1450": "unk1450",
+        "canonical:174": "unk174",
+        "canonical:18": "unk18",
+        "canonical:2E8": "unk2E8",
+        "canonical:458": "unk458",
+        "canonical:5D4": "unk5D4",
+        "canonical:5D8": "unk5D8",
+        "canonical:5DC": "unk5DC",
+        "canonical:5E4": "unk5E4",
+        "canonical:5EC": "unk5EC",
+        "canonical:8": "unk8",
+        "canonical:938": "unk938",
+        "canonical:C": "unkC"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 5204
+    },
+    "Shared_func_80227014_S9": {
+      "fields": [
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(668, 'unk29C', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk29C",
+          "offset": 668,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(672, 'unk2A0', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A0",
+          "offset": 672,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(676, 'unk2A4', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A4",
+          "offset": 676,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(680, 'unk2A8', 'f32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk2A8",
+          "offset": 680,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "f32",
+          "views": []
+        },
+        {
+          "array": 1,
+          "canonical_keys": [
+            "(1380, 'unk564', 's32', 4, 1)"
+          ],
+          "dimensions": [],
+          "name": "unk564",
+          "offset": 1380,
+          "provenance": [
+            "src/func_80227014.c"
+          ],
+          "size": 4,
+          "type": "s32",
+          "views": []
+        }
+      ],
+      "header": "func_80227014_s9.h",
+      "members": [
+        "src/func_80227014.c:func_80227014_S9"
+      ],
+      "paths": {
+        "(1380, 'unk564', 's32', 4, 1)": "unk564",
+        "(668, 'unk29C', 'f32', 4, 1)": "unk29C",
+        "(672, 'unk2A0', 'f32', 4, 1)": "unk2A0",
+        "(676, 'unk2A4', 'f32', 4, 1)": "unk2A4",
+        "(680, 'unk2A8', 'f32', 4, 1)": "unk2A8",
+        "canonical:29C": "unk29C",
+        "canonical:2A0": "unk2A0",
+        "canonical:2A4": "unk2A4",
+        "canonical:2A8": "unk2A8",
+        "canonical:564": "unk564"
+      },
+      "proof": {
+        "src/func_80227014.c": {
+          "cartridges": {},
+          "status": "proven"
+        }
+      },
+      "size": 1384
     },
     "Shared_func_802856B0_S1": {
       "fields": [

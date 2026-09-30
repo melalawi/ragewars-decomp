@@ -3267,3 +3267,7 @@ D_0044FB90 = 0x0044FB90; // type:u32 derived by the trial of func_8043CFD8
 D_44FB94 = 0x0044FB94; // type:u32 derived by the trial of func_8043D124
 D_00450854 = 0x00450854; // type:u32 derived by the trial of func_8043E81C
 func_8026D83C = 0x8026D83C; // placed by split-symbol-correction
+D_800C7C94 = 0x800C7C94; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7C94
+D_800C7C9C = 0x800C7C9C; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7C9C
+D_800C7CA4 = 0x800C7CA4; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7CA4
+D_800C7CAC = 0x800C7CAC; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7CAC
