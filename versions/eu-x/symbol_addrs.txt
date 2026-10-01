@@ -4540,6 +4540,7 @@ D_801043D8 = 0x8010A3D8; // absolute:True
 D_801043F8 = 0x8010A3F8; // absolute:True
 D_80104418 = 0x8010A418; // absolute:True
 D_80104438 = 0x8010A438; // absolute:True
+D_80104530 = 0x8010A530; // absolute:True
 D_80104560 = 0x8010A560; // absolute:True
 D_80104564 = 0x8010A564; // absolute:True
 D_80104568 = 0x8010A568; // absolute:True

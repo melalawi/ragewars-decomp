@@ -1081,7 +1081,7 @@ segments:
       - [0x0487A4, c, func_80247BA4]
       - [0x048B08, c, func_80247F08]
       - [0x048CE0, c, func_802480E0]
-      - [0x0490A0, asm, func_802484A0]
+      - [0x0490A0, c, func_802484A0]
       - [0x04AA18, asm, func_80249E18]
       - [0x04ADC0, c, func_8024A1C0]
       - [0x04AFA0, c, func_8024A3A0]
