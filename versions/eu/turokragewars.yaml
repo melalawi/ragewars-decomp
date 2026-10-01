@@ -473,7 +473,7 @@ segments:
       - [0x01EF3C, c, func_8021E27C]
       - [0x01F294, asm, func_8021E5D4]
       - [0x01F6F0, asm, func_8021EA30]
-      - [0x01FB98, asm, func_8021EED8]
+      - [0x01FB98, c, func_8021EED8]
       - [0x02171C, c, func_80220A5C]
       - [0x0219E0, c, func_80220D20]
       - [0x021B70, c, func_80220EB0]

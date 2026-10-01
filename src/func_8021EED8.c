@@ -1,1340 +1,601 @@
-#ifdef NON_MATCHING
-/* Draws the player HUD, animated score icons, and fading player names. */
-/* Data names follow each cartridge while preserving the shared HUD layout. */
-#if defined(VERSION_US)
-#define hudData76EC D_800C252C
-#define hudDataE61C D_800C92EC
-#define hudDataE680 us_D_800C9350
-#define hudDataE6AC D_800C937C
-#define hudDataE6E8 D_800C93B8
-#define hudDataF1A8 D_800C9E78
-#define hudDataF1B8 D_800C9E88
-#define hudDataF1D8 D_800C9EA8
-#elif defined(VERSION_EU)
-#define hudData76EC D_800C289C
-#define hudDataE61C D_800C9FBC
-#define hudDataE680 D_800CA020
-#define hudDataE6AC D_800CA04C
-#define hudDataE6E8 D_800CA088
-#define hudDataF1A8 D_800CAB48
-#define hudDataF1B8 D_800CAB58
-#define hudDataF1D8 D_800CAB78
-#elif defined(VERSION_EU_X)
-#define hudData76EC D_800C28DC
-#define hudDataE61C D_800CA98C
-#define hudDataE680 D_800CA9F0
-#define hudDataE6AC eu_x_D_800CAA1C
-#define hudDataE6E8 eu_x_D_800CAA58
-#define hudDataF1A8 D_800CB518
-#define hudDataF1B8 D_800CB528
-#define hudDataF1D8 D_800CB548
-#elif defined(VERSION_DE)
-#define hudData76EC D_800C25FC
-#define hudDataE61C D_800C93D8
-#define hudDataE680 D_800C943C
-#define hudDataE6AC D_800C9468
-#define hudDataE6E8 D_800C94A4
-#define hudDataF1A8 D_800C9F64
-#define hudDataF1B8 D_800C9F74
-#define hudDataF1D8 D_800C9F94
-#else
-#define hudData76EC D_800C76EC
-#define hudDataE61C D_800CE61C
-#define hudDataE680 D_800CE680
-#define hudDataE6AC D_800CE6AC
-#define hudDataE6E8 D_800CE6E8
-#define hudDataF1A8 D_800CF1A8
-#define hudDataF1B8 D_800CF1B8
-#define hudDataF1D8 D_800CF1D8
-#endif
-#define hudDataE3E0 D_800CE3E0[0]
-#define hudDataE3E4 D_800CE3E0[1]
-#define hudDataE47C D_800CE47C
-typedef signed char s8;
-typedef unsigned char u8;
-typedef short s16;
-typedef unsigned short u16;
-typedef int s32;
-typedef unsigned int u32;
-typedef long long s64;
-typedef unsigned long long u64;
-typedef float f32;
-typedef double f64;
-typedef int M2C_UNK;
-typedef int M2C_UNK32;
-typedef struct HudOwner
-{
-  char gap0[4];
-  s16 counter4;
-  s16 counter6;
-  char gap8[0x84 - 8];
-  char name[0x8F - 0x84];
-  u8 active;
-  char gap90[2];
-  u8 teamIndex;
-} HudOwner;
-typedef struct HudView
-{
-  char gap0[0x24];
-  s32 flags24;
-  char gap28[0x29C - 0x28];
-  f32 width;
-  f32 height;
-  f32 originX;
-  f32 originY;
-} HudView;
-typedef struct HudMode
-{
-  s32 mode;
-  char gap04[0x20 - 4];
-  s32 hideMain;
-  s32 teams;
-  char gap28[0x2C - 0x28];
-  union 
-  {
-    s32 teamScores[10];
-    struct 
-    {
-      s32 primaryScores[5];
-      s32 alternateScores[5];
-    } split;
-  } scores;
-  s32 rule54;
-  char gap58[0x78 - 0x58];
-  s32 squads;
-  char gap7C[0x98 - 0x7C];
-  s32 rule98;
-} HudMode;
-typedef union HudGlobalBlock
-{
-  struct {
-    char gap0[1];
-    u8 gameMode;
-    char gap2[8];
-    u8 counterMode;
-    char gapB[6];
-    u8 visible;
-  } counters;
-  struct {
-    char gap0[0x5A8];
-    HudMode guard;
-  } modes;
-  struct {
-    char gap0[0x5CC];
-    HudMode score;
-  } scores;
-  struct {
-    char gap0[0x664];
-    s32 names;
-  } flags;
-} HudGlobalBlock;
-extern HudGlobalBlock hudGlobals;
-#define D_8014687C hudGlobals.modes.guard
-extern HudMode D_801468A0;
-#define D_801462D5 hudGlobals.counters.gameMode
-#define D_801462DE hudGlobals.counters.counterMode
-#define D_801462E5 hudGlobals.counters.visible
-#define D_80146938 hudGlobals.flags.names
-typedef struct HudGfxCommand
-{
-  s32 opcode;
-  s32 payload;
-} HudGfxCommand;
-typedef struct EffectLayout
-{
-  char gap0[228];
-  u16 fieldE4;
-  char gapE6[1266];
-  HudOwner *field5D8;
-  HudView *view;
-  char gap5E0[4];
-  s32 healthFixed;
-  char gap5E8[2];
-  s16 field5EA;
-  char gap5EC[12];
-  s16 ammoSlot2;
-  char gap5FA[52];
-  s16 field62E;
-  char gap630[0x878 - 0x630];
-  char object878;
-  char gap879[0x938 - 0x879];
-  char object938;
-  char gap939[0xCCC - 0x939];
-  char objectCCC;
-  char gapCCD[0xD40 - 0xCCD];
-  char objectD40;
-  char gapD41[0xE2C - 0xD41];
-  char objectE2C;
-  char gapE2D[0xE68 - 0xE2D];
-  char objectE68;
-  char gapE69[0xEA4 - 0xE69];
-  char objectEA4;
-  char gapEA5[0xEE0 - 0xEA5];
-  char objectEE0;
-  char gapEE1[0xEF0 - 0xEE1];
-  f32 fieldEF0;
-  f32 fieldEF4;
-  char gapEF8[36];
-  s32 fieldF1C;
-  char gapF20[4];
-  s32 fieldF24;
-  char gapF28[4];
-  f32 fieldF2C;
-  f32 fieldF30;
-  char gapF34[32];
-  s32 fieldF54;
-  char objectF58[240];
-  s32 field1048;
-  char gap104C[4];
-  u32 field1050;
-  char gap1054[4];
-  f32 field1058;
-  f32 field105C;
-  char gap1060[28];
-  f32 field107C;
-  s32 field1080;
-  s32 field1084;
-  char gap1088[4];
-  u32 field108C;
-  char gap1090[4];
-  f32 field1094;
-  f32 field1098;
-  char gap109C[32];
-  s32 field10BC;
-  s32 field10C0;
-  char gap10C4[4];
-  u32 field10C8;
-  char gap10CC[4];
-  f32 field10D0;
-  f32 field10D4;
-  char gap10D8[32];
-  s32 field10F8;
-  char gap10FC[8];
-  s32 field1104;
-  char gap1108[40];
-  f32 field1130;
-  s32 field1134;
-  char gap1138[8];
-  s32 field1140;
-  char gap1144[40];
-  f32 field116C;
-  s32 field1170;
-  char gap1174[8];
-  s32 field117C;
-  char gap1180[40];
-  f32 field11A8;
-  s32 field11AC;
-  char gap11B0[28];
-  s32 field11CC;
-  s32 field11D0;
-  s32 field11D4;
-  f32 field11D8;
-  char gap11DC[8];
-  f32 field11E4;
-  char gap11E8[68];
-  s32 field122C;
-  f32 field1230;
-  char gap1234[4];
-  s32 field1238;
-  char gap123C[132];
-  f32 field12C0;
-  char gap12C4[8];
-  struct EffectLayout *slotOwners[8];
-  char gap12EC[8];
-  s32 slotFades[8];
-  s32 slotWidths[8];
-  s32 field1334;
-  s32 field1338;
-  s32 field133C;
-  char gap1340[272];
-  s32 field1450;
-  char gap1454[0x16E0 - 0x1454];
-  struct EffectLayout *next;
-} EffectLayout;
-extern f32 hudData7894;
+/* Draws a player's HUD for one frame unless the game state is 8 or 11: ticks the HUD animations,
+   draws the health counter and its hurt flash (four corner sprites in an environment colour that
+   fades with the flash), the lives or trial counter, the score counter with its animated icon and
+   the ticker of fading player names, the second counter (count rule) or the squad score, the
+   power-up icon and status sprite, the zoom gauge, the ammo pips for weapon 12, and finally the
+   team and squad overlays. */
+#include "basetypes.h"
+#include "shared/hudplayer.h"
+#include "shared/settings.h"
+
+typedef struct Gfx {
+    struct {
+        u32 w0;
+        u32 w1;
+    } words;
+} Gfx;
+
+#define _SHIFTL(v, s, w) ((u32)(((u32)(v) & ((0x01 << (w)) - 1)) << (s)))
+
+#define gDPWord(pkt, a, b)                                                                     \
+    {                                                                                          \
+        Gfx *_g = (Gfx *)(pkt);                                                                \
+        _g->words.w0 = (a);                                                                    \
+        _g->words.w1 = (b);                                                                    \
+    }
+
+#define gDPSetEnvColor(pkt, r, g, b, a)                                                        \
+    gDPWord(pkt, 0xFB000000,                                                                   \
+            _SHIFTL(r, 24, 8) | _SHIFTL(g, 16, 8) | _SHIFTL(b, 8, 8) | _SHIFTL(a, 0, 8))
+
+extern char HUD_NAME_FORMAT[];
+extern char HUD_LIVES_ANIM;
+extern char HUD_SCORE_ANIM;
+extern char HUD_COUNT_ANIM;
+extern char HUD_SQUAD_ANIM;
+extern f32 HUD_FLASH_X[];
+extern f32 HUD_FLASH_Y[];
+extern f32 HUD_AMMO_X[];
+
+extern Shared_Settings D_801462C8;
+extern s32 D_800CE47C;
 extern f32 D_800CE3E0[2];
-s32 func_802ABC18(s32, s32, s16, s16, f32, f32, s32);
-M2C_UNK func_802183E8(void *, void *, void *);
-M2C_UNK func_80218F08(void *, void *, void *);
-M2C_UNK func_80219490(void *, void *);
-M2C_UNK func_8021E27C(void *, void *);
-M2C_UNK func_8021EA30(void *, void *);
-M2C_UNK func_8022C1D8(void *, void *);
-M2C_UNK func_8022C36C(void *, void *);
-M2C_UNK func_802536F4(M2C_UNK, s16 **);
-int func_802831FC(void *, void *);
-s16 **func_8028BE88(void *, M2C_UNK, M2C_UNK, M2C_UNK);
-M2C_UNK func_802A78F0(void *, void *);
-M2C_UNK func_802A8A94(void *);
-M2C_UNK func_802A921C(s32, f32, f32, f32, f32, s32, s32, s32);
-M2C_UNK func_802A94E8();
-M2C_UNK func_802A9F18(void *, s32, s32, s32, s32, s32, f32, f32);
-M2C_UNK func_802AA224(s32);
-M2C_UNK func_802AB6FC(void *, void *);
-f32 func_802AB854();
-M2C_UNK func_802ABB2C(M2C_UNK, M2C_UNK, M2C_UNK, M2C_UNK, s32, s32);
-M2C_UNK func_802ABB58(f32, f32);
-s32 func_802C2410(char *, const char *, ...);
-f32 func_80442460(void *, f32, f32);
-extern char hudData76EC[];
-extern s32 hudDataE47C;
-extern char hudDataE61C;
-extern char hudDataE680;
-extern char hudDataE6AC;
-extern char hudDataE6E8;
 extern s32 D_800E28D0;
 extern s32 D_800E28D4;
 extern s32 D_800E28D8;
-extern s32 *D_80110634;
+extern Gfx *D_80110634;
 extern char D_8011FE88;
 extern char D_80121990;
 extern f32 D_8013B870;
 extern s32 D_801450B8;
-extern s32 D_801468C4;
-extern f32 hudDataF1A8[];
-extern f32 hudDataF1B8[];
-extern f32 hudDataF1D8[];
-void func_8021EED8(EffectLayout *arg0, HudView *arg1)
-{
-  u8 *counterMode;
-  HudMode *secondaryMode;
-  HudMode *scoreMode;
-  HudMode *initialScoreMode;
-  /* FAKEMATCH: these copy/flag locals reproduce compiler lifetimes. */
-  int new_var6;
-  HudMode *guardMode;
-  HudMode *earlyScoreMode;
-  HudMode *tailMode;
-  HudMode *tailModeAfterCall;
-  /* FAKEMATCH: preserve the secondary score x-coordinate lifetime. */
-  float new_var4;
-  char sp20[16];
-  /* FAKEMATCH: reuse the coordinate locals across disjoint HUD sections. */
-  f32 hudF25;
-  f32 hudF21;
-  f32 iconScaleY;
-  f32 firstScoreIconX;
-  f32 firstScoreIconY;
-  /* FAKEMATCH: split the numeric and sprite y offsets to match allocator priorities. */
-  f32 regpart_firstScoreIconY;
-  f32 flashIconHeight;
-  f32 nameScaleX;
-  f32 nameScaleY;
-  M2C_UNK var_a1;
-  M2C_UNK var_a1_4;
-  M2C_UNK var_a2;
-  f32 temp_f0;
-  f32 temp_f0_2;
-  f32 temp_f0_3;
-  f32 temp_f0_4;
-  f32 temp_f0_5;
-  f32 temp_f0_6;
-  f32 temp_f1;
-  f32 temp_f1_2;
-  f32 temp_f1_3;
-  f32 temp_f1_4;
-  f32 temp_f1_5;
-  f32 temp_f20;
-  f32 temp_f20_2;
-  EffectLayout *new_var;
-  f32 temp_f23;
-  f32 temp_f26;
-  f32 temp_f2;
-  f32 temp_f2_2;
-  f32 temp_f2_3;
-  f32 temp_f3;
-  f32 temp_f4;
-  f32 var_f0;
-  f32 var_f0_2;
-  f32 var_f0_3;
-  f32 var_f0_4;
-  f32 var_f0_5;
-  f32 var_f0_6;
-  f32 var_f0_7;
-  f32 var_f1;
-  f32 var_f1_2;
-  f32 var_f1_3;
-  f32 var_f1_4;
-  f32 var_f1_5;
-  f32 var_f1_6;
-  f32 var_f1_7;
-  f32 var_f22;
-  f32 var_f23;
-  f32 var_f24;
-  /* FAKEMATCH: retain the status-icon y-coordinate expression boundary. */
-  float new_var7;
-  f32 var_f2;
-  f32 var_f2_2;
-  f32 var_f2_3;
-  f32 var_f2_4;
-  f32 var_f3;
-  s16 **temp_v0;
-  s16 **temp_v0_6;
-  s16 **temp_v0_9;
-  /* FAKEMATCH: scalar temporaries avoid two unused array stack slots. */
-  s16 *new_var2_0;
-  s16 *new_var2_1;
-  s16 *temp_v1_7;
-  s32 temp_a0_5;
-  s16 temp_s0_2;
-  s16 temp_s0_3;
-  s16 var_a2_2;
-  s32 var_s0_8;
-  s32 var_s1_3;
-  s32 var_s0_9;
-  s32 var_s1_6;
-  s32 **gfxCursor;
-  s32 *temp_a0;
-  s32 *temp_a0_2;
-  s32 temp_a0_3;
-  s32 temp_a0_4;
-  s32 temp_a1;
-  s32 temp_a1_2;
-  s32 temp_f5;
-  s32 temp_f5_2;
-  s32 temp_f5_3;
-  s32 temp_f5_4;
-  s32 temp_v0_10;
-  s32 temp_v0_11;
-  s32 temp_v0_12;
-  s32 temp_v0_2;
-  s32 temp_v0_3;
-  s32 temp_v0_4;
-  s32 temp_v0_5;
-  s32 temp_v0_7;
-  s32 temp_v0_8;
-  s32 temp_v1;
-  s32 temp_v1_4;
-  s32 temp_v1_8;
-  s32 var_a0_2;
-  s32 var_a0_3;
-  s32 var_a0_5;
-  s32 var_a0_6;
-  s32 var_a1_2;
-  s32 var_a1_3;
-  s32 var_a1_5;
-  s32 var_a3;
-  /* FAKEMATCH: share disjoint health/status integer lifetimes to match s0 allocation. */
-  s32 hudCounter;
-  s32 var_s0;
-  /* FAKEMATCH: keep the zero numeric-draw argument in a local. */
-  int new_var5;
-  s32 var_s0_11;
-  s32 var_s0_12;
-  s32 var_s0_2;
-  s32 var_s0_3;
-  s32 var_s0_4;
-  s32 var_s0_5;
-  s32 var_s0_6;
-  /* FAKEMATCH: retain the score-resource selection flag lifetime. */
-  unsigned short new_var8;
-  s32 var_s0_7;
-  s32 var_s1_5;
-  s32 var_s1;
-  s32 var_s1_2;
-  s32 var_s2;
-  s32 var_s2_2;
-  s32 var_s5;
-  s32 var_s4_2;
-  s32 var_s4;
-  s32 var_v0;
-  f32 new_var3;
-  s32 var_v0_2;
-  s32 var_v1;
-  u8 temp_v1_2;
-  u8 temp_v1_6;
-  u8 var_a0_7;
-  void *var_a0;
-  void *var_s1_4;
-  void *var_v1_2;
-  void *var_v1_3;
-  guardMode = &D_8014687C;
-  if ((guardMode->mode != 0xB) && (guardMode->mode != 8))
-  {
-    func_802A8A94(&arg0->objectE2C);
-    func_802A8A94(&arg0->objectE68);
-    func_802A8A94(&arg0->objectEA4);
-    func_802A8A94(&arg0->objectEE0);
-    func_802A8A94(&arg0->fieldF1C);
-    func_802A8A94(arg0->objectF58);
-    func_802A8A94(&arg0->field1048);
-    func_802A8A94(&arg0->field1084);
-    func_802A8A94(&arg0->field10C0);
-    func_8021E27C(arg0, arg1);
-    if (arg1->flags24 == 0)
-    {
-      func_80219490(&arg0->object878, arg1);
-    }
-    func_802183E8(&arg0->object938, arg1, arg0);
-    func_80218F08(&arg0->objectCCC, arg1, arg0);
-    func_802A78F0(&arg0->objectD40, arg0);
-    func_802AA224(hudGlobals.counters.counterMode);
-    temp_f23 = arg1->width / ((f32) D_800E28D0);
-    temp_f26 = arg1->height / ((f32) D_800E28D4);
-    var_f0 = 1.5f;
-    var_f1 = 1.5f;
-    if (D_800E28D8 == 0)
-    {
-      var_f0 = 1.0f;
-      var_f1 = 1.0f;
-    }
-    var_f24 = temp_f23 * var_f1;
-    var_f22 = temp_f26 * var_f0;
-    earlyScoreMode = &D_801468A0;
-    if (earlyScoreMode->hideMain == 0)
-    {
-      func_8021EA30(arg0, arg1);
-    }
-    /* FAKEMATCH: volatile access preserves the target load order. */
-    hudCounter = (*(volatile s32 *)&arg0->healthFixed + 0xFF) >> 8;
-    /* FAKEMATCH: volatile access preserves the target load order. */
-    hudF21 = (arg0->fieldEF0 * var_f24) + *(volatile f32 *)&arg1->originX;
-    /* FAKEMATCH: volatile access preserves the target load order. */
-    hudF25 = ((arg0->fieldEF4 * var_f22) + *(volatile f32 *)&arg1->originY) + arg1->height;
-    /* FAKEMATCH: volatile access preserves the target load order. */
-    if (((volatile HudMode *)earlyScoreMode)->hideMain == 0)
-    {
-      func_802A921C(hudCounter, hudF21 - (var_f24 * 3.0f), hudF25 - (var_f22 * 4.0f), var_f24, var_f22, 1, 0, 0);
-    }
-    hudCounter = arg0->healthFixed;
-    temp_v1 = arg0->field1134;
-    if (hudCounter != temp_v1)
-    {
-      if (hudCounter < temp_v1)
-      {
-        arg0->field1130 = (f32) (arg0->field1130 + ((f32) ((((s32) (temp_v1 - hudCounter)) >> 8) * 5)));
-        if (hudCounter == 0)
-        {
-          arg0->field1130 = 255.0f;
-        }
-        if (arg0->field1130 < 50.0f)
-        {
-          arg0->field1130 = 50.0f;
-        }
-        if (arg0->field1130 > 255.0f)
-        {
-          arg0->field1130 = 255.0f;
-        }
-        arg0->field1104 = 2;
-      }
-      arg0->field1134 = hudCounter;
-    }
-    if (arg0->field11D8 > 0.0f)
-    {
-      temp_f0 = arg0->field1130 - 12.0f;
-      var_f2 = temp_f0;
-      if (temp_f0 < 0.0f)
-      {
-        var_f2 = 0.0f;
-      }
-      arg0->field1130 = var_f2;
-      if (arg0->field122C & 0x4000)
-      {
-        var_s4 = 0x7D;
-        if (var_f2 != 0.0f)
-        {
-          var_s4 = (s32) (253.0f - (128.0f - (var_f2 * 0.512000024f)));
-          var_s5 = (s32) (198.0f - (var_f2 * 0.791999996f));
-          var_s2 = (s32) (34.0f - (var_f2 * 0.136000007f));
-        }
-        else
-        {
-          var_s5 = 0xC6;
-          var_s2 = 0x22;
-        }
-      }
-      else
-      {
-        var_s4 = 0;
-        if (var_f2 != 0.0f)
-        {
-          var_s4 = (s32) (var_f2 * 1.01199996f);
-          var_s5 = (s32) (105.0f - (var_f2 * 0.419999987f));
-          var_s2 = (s32) (179.0f - (var_f2 * 0.716000021f));
-        }
-        else
-        {
-          var_s5 = 0x69;
-          var_s2 = 0xB3;
-        }
-      }
-      var_s1 = 0;
-      hudF25 = arg1->originX + (arg1->width * 0.5f);
-      hudF21 = arg1->originY + (arg1->height * 0.5f);
-      func_802AA224(0xFAU);
-      gfxCursor = &D_80110634;
-      temp_a0 = *gfxCursor;
-      flashIconHeight = var_f22 * 1.5f;
-      *gfxCursor = temp_a0 + 2;
-      ((HudGfxCommand *) temp_a0)->opcode = 0xFB000000;
-      ((HudGfxCommand *) temp_a0)->payload = (s32) ((((var_s4 << 0x18) | ((var_s5 & 0xFF) << 0x10)) | ((var_s2 & 0xFF) << 8)) | 0xFA);
-      do
-      {
-        temp_f0_5 = var_f22;
-        temp_f0_2 = var_f24 * hudDataF1A8[var_s1 + 4];
-        temp_f1 = temp_f0_5 * hudDataF1B8[var_s1 + 4];
-        /* FAKEMATCH: retain a single-pass block for compiler instruction ordering. */
-        do
-        {
-          temp_a1 = var_s1;
-          var_s1 += 1;
-          func_802ABC18(0x208, temp_a1, (s16) ((s32) (hudF25 + temp_f0_2)), (s16) ((s32) (hudF21 + temp_f1)), temp_f23, flashIconHeight, 1);
-        }
-        while (0);
-      }
-      while (var_s1 < 4);
-      arg0->field1104 = 0;
-    }
-    if (arg0->field1104 == 2)
-    {
-      var_f0_2 = arg0->field1130 - 12.0f;
-      if (var_f0_2 < 0.0f)
-      {
-        var_f0_2 = 0.0f;
-      }
-      arg0->field1130 = var_f0_2;
-      if (var_f0_2 > 0.0f)
-      {
-        gfxCursor = &D_80110634;
-        temp_a0_2 = *gfxCursor;
-        hudF25 = arg1->originX + (arg1->width * 0.5f);
-        ((HudGfxCommand *) temp_a0_2)->opcode = 0xFB000000;
-        temp_f2 = arg0->field1130;
-        *gfxCursor = temp_a0_2 + 2;
-        hudF21 = arg1->originY + (arg1->height * 0.5f);
-        if (!(temp_f2 >= 2.14748365e+09f))
-        {
-          var_v1 = (s32) temp_f2;
-          var_s1_2 = 0;
-        }
-        else
-        {
-          var_v1 = ((s32) (temp_f2 - 2.14748365e+09f)) | 0x80000000;
-        }
-        flashIconHeight = var_f22 * 1.5f;
-        var_s1_2 = 0;
-        ((HudGfxCommand *) temp_a0_2)->payload = (s32) (0xFD000000 | (var_v1 & 0xFF));
-        /* FAKEMATCH: retain a single-pass block for compiler instruction ordering. */
-        do
-        {
-          loop_41:
-          temp_f0_3 = var_f24 * hudDataF1A8[var_s1_2 + 4];
 
-          temp_f1_2 = var_f22 * hudDataF1B8[var_s1_2 + 4];
-          temp_a1_2 = var_s1_2;
-          var_s1_2 += 1;
-          func_802ABC18(0x208, temp_a1_2, (s16) ((s32) (hudF25 + temp_f0_3)), (s16) ((s32) (hudF21 + temp_f1_2)), temp_f23, flashIconHeight, 1);
-          if (var_s1_2 >= 4)
-          {
-            /* FAKEMATCH: retain a single-pass block for compiler instruction ordering. */
-            do
-            {
-            }
-            while (0);
-            goto flash_done;
-          }
-          goto loop_41;
-        }
-        while (0);
-      }
-      else
-      {
-        arg0->field1104 = 0;
-      }
-    }
-    flash_done:
-    var_f0_3 = 1.0f;
+void func_802183E8(void *, Shared_HudView *, Shared_HudPlayer *);
+void func_80218F08(void *, Shared_HudView *, Shared_HudPlayer *);
+void func_80219490(void *, Shared_HudView *);
+void func_8021E27C(Shared_HudPlayer *, Shared_HudView *);
+void func_8021EA30(Shared_HudPlayer *, Shared_HudView *);
+void func_8022C1D8(Shared_HudPlayer *, Shared_HudView *);
+void func_8022C36C(Shared_HudPlayer *, Shared_HudView *);
+void func_802536F4(s32, s16 **);
+s32 func_802831FC(void *, Shared_HudPlayer *);
+s16 **func_8028BE88(void *, s32, s32, s32);
+void func_802A78F0(void *, Shared_HudPlayer *);
+void func_802A8A94(void *);
+void func_802A921C(s32, f32, f32, f32, f32, s32, s32, s32);
+void func_802A94E8(void);
+void func_802A9F18(char *, s32, s32, s32, s32, s32, f32, f32);
+void func_802AA224(s32);
+void func_802AB6FC(void *, void *);
+f32 func_802AB854(void);
+void func_802ABB2C(s32, s32, s32, s32, s32, s32);
+void func_802ABB58(f32, f32);
+s32 func_802ABC18(s32, s32, s16, s16, f32, f32, s32);
+s32 func_802C2410(char *, const char *, ...);
+f32 func_80442460(char *, f32, f32);
 
-    var_f1_2 = 1.0f;
-    if (D_800E28D8 == 0)
-    {
-      var_f0_3 = 0.75f;
-      var_f1_2 = 0.75f;
-    }
-    var_f24 = temp_f23 * var_f1_2;
-    var_f22 = temp_f26 * var_f0_3;
-    counterMode = &D_801462E5;
-    if ((*counterMode) == 0)
-    {
-      temp_s0_2 = arg0->field5EA;
-      if (arg0->fieldF54 != temp_s0_2)
-      {
-        func_802AB6FC(&arg0->fieldF1C, &hudDataE61C);
-        arg0->fieldF54 = (s32) temp_s0_2;
-      }
-      if ((arg0->fieldF1C != 0) && (arg0->fieldF24 != 0))
-      {
-        hudF21 = (arg0->fieldF2C * temp_f23) + arg1->originX;
-        hudF25 = (arg0->fieldF30 * temp_f26) + arg1->originY;
-        func_802ABC18(0x12C, 0, (s16) ((s32) (hudF21 + (temp_f23 * 18.0f))), (s16) ((s32) (hudF25 + (temp_f26 * 28.0f))), temp_f23, temp_f26, 1);
-        func_802ABC18(new_var6 = 0x1F6, 0, (s16) ((s32) hudF21), (s16) ((s32) hudF25), temp_f23, temp_f26, 1);
-        func_802A921C((s32) arg0->field5EA, hudF21 + (temp_f23 * 30.0f), hudF25 + (temp_f26 * 24.0f), temp_f23, temp_f26, 1, 0, 0);
-      }
-    }
-    else
-      if (((D_801462D5 == 1) || (D_801462D5 == 4)) && (arg0->field1450 == 0))
-    {
-      var_s0_3 = arg0->field133C - 1;
-      if (var_s0_3 < 0)
-      {
-        var_s0_3 = 0;
-      }
-      hudF21 = (arg0->fieldF2C * var_f24) + arg1->originX;
-      hudF25 = (arg0->fieldF30 * var_f22) + arg1->originY;
-      func_802AA224((s32) arg0->field107C);
-      firstScoreIconY = var_f22 * 22.0f;
-      func_802A921C(var_s0_3, hudF21, hudF25 + firstScoreIconY, var_f24, var_f22, 1, 0, 0);
-      firstScoreIconX = var_f24 * 20.0f;
-      regpart_firstScoreIconY = var_f22 * 16.0f;
-      temp_f20 = var_f22 * 1.5f;
-      func_802ABC18(0x1F6, 0, (s16) ((s32) (hudF21 + firstScoreIconX)), (s16) ((s32) (hudF25 + regpart_firstScoreIconY)), var_f24, temp_f20, 1);
-      if (D_80146938 != 0)
-      {
-        func_802ABC18(0x203, 0, (s16) ((s32) (hudF21 + (var_f24 * 40.0f))), (s16) ((s32) (hudF25 + (var_f22 * 11.0f))), var_f24, temp_f20, 1);
-      }
-    }
-    initialScoreMode = &D_801468A0;
-    if ((initialScoreMode->hideMain == 0) && ((*counterMode) != 0))
-    {
-      if (initialScoreMode->teams != 0)
-      {
-        temp_v1_2 = arg0->field5D8->teamIndex;
-        if (temp_v1_2 != 0xFF)
-        {
-          var_s0_4 = initialScoreMode->scores.teamScores[temp_v1_2];
-          var_v0 = var_s0_4 < (-0x63);
-        }
-        else
-        {
-          var_s0_4 = 0;
-          goto block_66;
-        }
-      }
-      else
-      {
-        var_s0_4 = (s32) arg0->field5D8->counter4;
-        block_66:
-        var_v0 = var_s0_4 < (-0x63);
-
-      }
-      if (var_v0 != 0)
-      {
-        var_s0_4 = -0x63;
-      }
-      if (arg0->field1080 != var_s0_4)
-      {
-        func_802AB6FC(&arg0->field1048, &hudDataE680);
-        arg0->field1080 = var_s0_4;
-        arg0->field11CC = 0;
-      }
-      if (arg0->field1050 == 0)
-      {
-        arg0->field1050 = 1U;
-      }
-      arg0->field1048 = 1;
-      arg0->field107C = 255.0f;
-      new_var5 = 0;
-        if ((arg0->field1048 != 0) && (arg0->field1050 != 0))
-      {
-        var_s1_3 = 1;
-        new_var8 = D_801468C4 != 0;
-        if (new_var8)
-        {
-          temp_v0 = func_8028BE88(&D_8011FE88, 0x204, 0, 1);
-        }
-        else
-        {
-          temp_v0 = func_8028BE88(&D_8011FE88, 0x1FA, 0, 1);
-        }
-        if (temp_v0 != 0)
-        {
-          new_var2_0 = *temp_v0;
-          var_s1_3 = 1;
-          if (new_var2_0 != 0)
-          {
-            var_s1_3 = *new_var2_0;
-          }
-          func_802536F4(0, temp_v0);
-        }
-        hudF25 = (arg0->field105C * var_f22) + arg1->originY;
-        hudF21 = arg1->width + ((arg0->field1058 * var_f24) + arg1->originX);
-        temp_f1_3 = var_s1_3 == 0;
-        if (hudF21 > 200.0f)
-        {
-          /* FAKEMATCH: equivalent branches retain the original basic-block shape. */
-          if (arg0)
-          {
-            hudF21 -= 12.0f;
-          }
-          else
-          {
-            hudF21 -= 12.0f;
-          }
-        }
-        func_802AA224((s32) arg0->field107C);
-        func_802A921C(arg0->field1080, hudF21 + (var_f24 * 48.0f), hudF25 + (var_f22 * 22.0f), var_f24, var_f22, 1, new_var5, 0);
-        if (((u32) arg0->field1050) < 2U)
-        {
-          scoreMode = &D_801468A0;
-          if (scoreMode->rule98 != 0)
-          {
-            func_802ABC18(0x202, 0, (s16) ((s32) hudF21), (s16) ((s32) (hudF25 + (var_f22 * 11.0f))), var_f24, var_f22 * 1.5f, 1);
-          }
-          var_a0_2 = 0x204;
-          if (scoreMode->teams != 0)
-          {
-            var_f1_3 = var_f24 * 8.0f;
-            var_f2_2 = var_f22 * 16.0f;
-            var_f0_4 = var_f22 * 1.5f;
-          }
-          else
-          {
-            var_f1_3 = var_f24 * 8.0f;
-            var_f2_2 = var_f22 * 16.0f;
-            var_f0_4 = var_f22 * 1.5f;
-            var_a0_2 = 0x1FA;
-          }
-          func_802ABC18(var_a0_2, 0, (s16) ((s32) (hudF21 + var_f1_3)), (s16) ((s32) (hudF25 + var_f2_2)), var_f24, var_f0_4, 1);
-          var_s0_5 = 0;
-          arg0->field1338 = 0;
-          arg0->field1334 = 0;
-          do
-          {
-            arg0->slotOwners[var_s0_5] = 0;
-            arg0->slotFades[var_s0_5] = 0xFF;
-            var_s0_5 += 1;
-          }
-          while (var_s0_5 < 8);
-        }
-        else
-        {
-          scoreMode = &D_801468A0;
-          temp_v0_2 = arg0->field11CC + 1;
-          arg0->field11CC = temp_v0_2;
-          var_s0_6 = 0;
-          if (temp_v0_2 >= (var_s1_3 * 4))
-          {
-            arg0->field11CC = 0;
-            arg0->field1050 = 1U;
-            arg0->field1338 = 0;
-            arg0->field1334 = 0;
-            do
-            {
-              arg0->slotOwners[var_s0_6] = 0;
-              arg0->slotFades[var_s0_6] = 0xFF;
-              var_s0_6 += 1;
-            }
-            while (var_s0_6 < 8);
-          }
-          if (scoreMode->rule98 != 0)
-          {
-            func_802ABC18(0x202, 0, (s16) ((s32) hudF21), (s16) ((s32) (hudF25 + (var_f22 * 11.0f))), var_f24, var_f22 * 1.5f, 1);
-          }
-          var_a0_3 = 0x204;
-          if (scoreMode->teams != 0)
-          {
-            temp_v0_3 = arg0->field11CC;
-            /* FAKEMATCH: retain the compiler division-check expression boundary. */
-            if (var_s1_3 == 0)
-            {
-            }
-            /* FAKEMATCH: retain the compiler division-check expression boundary. */
-            if ((var_s1_3 == (-1)) && ((temp_v0_3 / var_s1_3) == 0x80000000))
-            {
-            }
-            var_a1_2 = temp_v0_3 % var_s1_3;
-            var_f1_4 = var_f24 * 8.0f;
-            var_f2_3 = var_f22 * 16.0f;
-            var_f0_5 = var_f22 * 1.5f;
-          }
-          else
-          {
-            temp_v0_4 = arg0->field11CC;
-            /* FAKEMATCH: retain the compiler division-check expression boundary. */
-            if (temp_f1_3)
-            {
-            }
-            /* FAKEMATCH: retain the compiler division-check expression boundary. */
-            if ((var_s1_3 == (-1)) && ((temp_v0_4 / var_s1_3) == 0x80000000))
-            {
-            }
-            var_a1_2 = temp_v0_4 % var_s1_3;
-            var_f1_4 = var_f24 * 8.0f;
-            var_f2_3 = var_f22 * 16.0f;
-            var_f0_5 = var_f22 * 1.5f;
-            var_a0_3 = 0x1FA;
-          }
-          func_802ABC18(var_a0_3, var_a1_2, (s16) ((s32) (hudF21 + var_f1_4)), (s16) ((s32) (hudF25 + var_f2_3)), var_f24, var_f0_5, 1);
-          func_802A94E8();
-          func_802ABB58(1.0f, 1.0f);
-          if (D_80146938 == 0)
-          {
-            var_s0_7 = arg0->field1338;
-            if (var_s0_7 >= arg0->field1334)
-            {
-              
-              nameScaleX = 0.5f;
-              
-              nameScaleY = 16.0f;
-              do
-              {
-                if (arg0->slotOwners[var_s0_7] != 0)
-                {
-                  if ((D_800E28D8 == 0) && ((var_s4_2 = 0xF, D_801450B8 == 1)))
-                  {
-                    var_f23 = 0.75f;
-                  }
-                  else
-                  {
-                    var_f23 = 1.0f;
-                    var_s4_2 = 0;
-                  }
-                  var_f24 *= var_f23;
-                  /* FAKEMATCH: retain a single-pass block for compiler instruction ordering. */
-                  do
-                  {
-                  }
-                  while (0);
-                  func_802C2410(sp20, hudData76EC, arg0->slotOwners[var_s0_7]->field5D8->name);
-                  func_802ABB2C(0, 0, 0, 1, 1, 1);
-                  temp_f20_2 = ((D_8013B870 * nameScaleX) * var_f24) * func_802AB854();
-                  var_f22 *= var_f23;
-                  temp_f5 = (s32) func_80442460(sp20, temp_f20_2, func_802AB854());
-                  arg0->slotWidths[var_s0_7] = temp_f5;
-                  var_a1_3 = arg0->field1338;
-                  var_s2_2 = temp_f5;
-                  if (var_s0_7 < var_a1_3)
-                  {
-                    
-                    do
-                    {
-                      var_s2_2 = (var_s2_2 + 8) + arg0->slotWidths[var_a1_3];
-                      var_a1_3 -= 1;
-                      
-                    }
-                    while (var_s0_7 < var_a1_3);
-                  }
-                  temp_f5_2 = (s32) ((hudF21 - 12.0f) + ((f32) var_s4_2));
-                  temp_f5_3 = (s32) (hudF25 + 4.0f);
-                  func_802A9F18(sp20, (temp_f5_2 - var_s2_2) + 2, (s32) (((f32) (temp_f5_3 + 2)) + (var_f22 * nameScaleY)), arg0->slotFades[var_s0_7], 0, 0, var_f24 * nameScaleX, var_f22);
-                  if (arg0->slotOwners[var_s0_7] == arg0)
-                  {
-                    var_a1_4 = 0;
-                    var_a2 = 0;
-                  }
-                  else
-                  {
-                    var_a1_4 = 0xFF;
-                    var_a2 = 0xFF;
-                  }
-                  func_802ABB2C(0xFF, var_a1_4, var_a2, 1, 1, 1);
-                  func_802A9F18(sp20, temp_f5_2 - var_s2_2, (s32) (((f32) temp_f5_3) + (var_f22 * nameScaleY)), arg0->slotFades[var_s0_7], 0, 0, var_f24 * nameScaleX, var_f22);
-                  temp_v0_5 = arg0->slotFades[var_s0_7] - 6;
-                  arg0->slotFades[var_s0_7] = temp_v0_5;
-                  if (temp_v0_5 < 0)
-                  {
-                    arg0->slotFades[var_s0_7] = 0;
-                    temp_a0_3 = arg0->field1334;
-                    temp_v1_4 = temp_a0_3 + 1;
-                    var_v0_2 = temp_v1_4;
-                    if (temp_v1_4 < 0)
-                    {
-                      var_v0_2 = temp_a0_3 + 8;
-                    }
-                    arg0->field1334 = (s32) (temp_v1_4 - ((var_v0_2 >> 3) * 8));
-                  }
-                  var_f24 = var_f24 / var_f23;
-                  var_f22 = var_f22 / var_f23;
-                }
-                var_s0_7 -= 1;
-                
-              }
-              while (var_s0_7 >= arg0->field1334);
-            }
-          }
-        }
-      }
-      secondaryMode = &D_801468A0;
-      if (secondaryMode->rule54 != 0)
-      {
-        temp_s0_3 = arg0->field5D8->counter6;
-        if (arg0->field10BC != temp_s0_3)
-        {
-          func_802AB6FC(&arg0->field1084, &hudDataE6AC);
-          if (arg0->field10BC == (-1))
-          {
-            arg0->field108C = 1U;
-          }
-          arg0->field10BC = (s32) temp_s0_3;
-        }
-        if (arg0->field108C == 0)
-        {
-          arg0->field108C = 1U;
-        }
-        arg0->field1084 = 1;
-        if (arg0->field108C != 0)
-        {
-          var_s0_8 = 1;
-          temp_v0_6 = func_8028BE88(&D_8011FE88, 0x1FD, 0, 1);
-          if (temp_v0_6 != 0)
-          {
-            new_var2_1 = *temp_v0_6;
-            /* FAKEMATCH: retain a single-pass block for compiler instruction ordering. */
-            do
-            {
-              if (new_var2_1 != 0)
-              {
-                var_s0_8 = *new_var2_1;
-              }
-            }
-            while (0);
-            func_802536F4(0, temp_v0_6);
-          }
-          new_var4 = ((arg0->field1094 * var_f24) + arg1->originX) + arg1->width;
-          hudF25 = (arg0->field1098 * var_f22) + arg1->originY;
-          hudF21 = new_var4;
-          if (hudF21 > 200.0f)
-          {
-            hudF21 -= 12.0f;
-          }
-          func_802AA224((s32) arg0->field107C);
-          func_802A921C((s32) arg0->field5D8->counter6, hudF21 + (var_f24 * 48.0f), hudF25 + (var_f22 * 20.0f), var_f24, var_f22, 1, 0, 0);
-          var_a0_5 = 0x1FD;
-          if (((u32) arg0->field108C) < 2U)
-          {
-            var_a1_5 = 0;
-            func_802ABC18(var_a0_5, var_a1_5, (s16) ((s32) (hudF21 + (var_f24 * 8.0f))), (s16) ((s32) (hudF25 + (var_f22 * 16.0f))), var_f24, var_f22, 1);
-          }
-          else
-          {
-            temp_v0_7 = arg0->field11D4 + 1;
-            arg0->field11D4 = temp_v0_7;
-            if (temp_v0_7 >= (var_s0_8 * 4))
-            {
-              arg0->field11D4 = 0;
-              arg0->field108C = 1U;
-            }
-            temp_v0_8 = arg0->field11D4;
-            /* FAKEMATCH: retain the compiler division-check expression boundary. */
-            if (var_s0_8 == 0)
-            {
-            }
-            /* FAKEMATCH: retain the compiler division-check expression boundary. */
-            if ((var_s0_8 == (-1)) && ((temp_v0_8 / var_s0_8) == 0x80000000))
-            {
-            }
-            var_a1_5 = temp_v0_8 % var_s0_8;
-            var_a0_5 = 0x1FD;
-            func_802ABC18(var_a0_5, var_a1_5, (s16) ((s32) (hudF21 + (var_f24 * 8.0f))), (s16) ((s32) (hudF25 + (var_f22 * 16.0f))), var_f24, var_f22, 1);
-          }
-        }
-      }
-      else
-        if (secondaryMode->squads != 0)
-      {
-        temp_v1_6 = arg0->field5D8->teamIndex;
-        if (temp_v1_6 != 0xFF)
-        {
-          var_s0_9 = secondaryMode->scores.split.alternateScores[temp_v1_6];
-        }
-        else
-        {
-          var_s0_9 = 0;
-        }
-        if (arg0->field10F8 != var_s0_9)
-        {
-          func_802AB6FC(&arg0->field10C0, &hudDataE6E8);
-          if (arg0->field10F8 == (-1))
-          {
-            arg0->field10C8 = 1U;
-          }
-          arg0->field10F8 = var_s0_9;
-        }
-        if (arg0->field10C8 == 0)
-        {
-          arg0->field10C8 = 1U;
-        }
-        arg0->field10C0 = 1;
-        if (arg0->field10C8 != 0)
-        {
-          var_s1_5 = 1;
-          temp_v0_9 = func_8028BE88(&D_8011FE88, 0x201, 0, 1);
-          if (temp_v0_9 != 0)
-          {
-            temp_v1_7 = *temp_v0_9;
-            if (temp_v1_7 != 0)
-            {
-              var_s1_5 = *temp_v1_7;
-            }
-            func_802536F4(0, temp_v0_9);
-          }
-          hudF25 = (arg0->field10D4 * var_f22) + arg1->originY;
-          hudF21 = ((arg0->field10D0 * var_f24) + arg1->originX) + arg1->width;
-          if (hudF21 > (temp_f3 = 200.0f))
-          {
-            hudF21 -= 12.0f;
-          }
-          func_802AA224((s32) arg0->field107C);
-          func_802A921C(var_s0_9, hudF21 + (48.0f * var_f24), hudF25 + (var_f22 * 20.0f), var_f24, var_f22, 1, 0, 0);
-          var_a0_5 = 0x201;
-          if (((u32) arg0->field10C8) < 2U)
-          {
-            var_f1_5 = var_f24 * 8.0f;
-            var_f2_4 = var_f22 * 16.0f;
-            iconScaleY = var_f22 * 1.5f;
-            var_a1_5 = 0;
-          }
-          else
-          {
-            temp_v0_10 = arg0->field11D0 + 1;
-            arg0->field11D0 = temp_v0_10;
-            if (temp_v0_10 >= (var_s1_5 * 4))
-            {
-              arg0->field11D0 = 0;
-              arg0->field10C8 = 1U;
-            }
-            temp_v0_11 = arg0->field11D0;
-            /* FAKEMATCH: retain the compiler division-check expression boundary. */
-            if (var_s1_5 == 0)
-            {
-            }
-            /* FAKEMATCH: retain the compiler division-check expression boundary. */
-            if ((var_s1_5 == (-1)) && ((temp_v0_11 / var_s1_5) == 0x80000000))
-            {
-            }
-            var_a1_5 = temp_v0_11 % var_s1_5;
-            var_f1_5 = var_f24 * 8.0f;
-            var_f2_4 = var_f22 * 16.0f;
-            iconScaleY = var_f22 * 1.5f;
-            var_a0_5 = 0x201;
-          }
-          var_a2_2 = (s16) ((s32) (hudF21 + var_f1_5));
-          var_a3 = (s32) (hudF25 + var_f2_4);
-          block_175:
-          func_802ABC18(var_a0_5, var_a1_5, var_a2_2, (s16) var_a3, var_f24, iconScaleY, 1);
-
-        }
-      }
-    }
-    if (arg0->field122C & 0x10000)
-    {
-      temp_f5_4 = (s32) arg0->field1230;
-      if (temp_f5_4 != arg0->field1170)
-      {
-        arg0->field1140 = 2;
-        arg0->field1170 = temp_f5_4;
-      }
-      if (arg0->field1140 == 2)
-      {
-        temp_f0_4 = arg0->field1230 * 5.0f;
-        var_f3 = temp_f0_4;
-        if (temp_f0_4 > 255.0f)
-        {
-          var_f3 = 255.0f;
-        }
-        arg0->field116C = var_f3;
-        if (var_f3 > 0.0f)
-        {
-          hudF21 = arg1->originX + (arg1->width * 0.5f);
-          hudF25 = arg1->originY + (arg1->height * 0.5f);
-          func_802AA224((s32) var_f3);
-          var_a0_5 = (s16) ((s32) (hudF21 - (var_f24 * 31.0f)));
-          func_802ABC18(0x209, 0, var_a0_5, (s16) ((s32) (hudF25 - (var_f22 * 32.0f))), var_f24, var_f22, 1);
-        }
-        else
-        {
-          arg0->field1140 = 0;
-        }
-      }
-    }
-    temp_v0_12 = arg0->field122C;
-    if (((temp_v0_12 != 0) && (temp_v0_12 < 0x2000)) || (arg0->field11E4 > 0.0f))
-    {
-      hudCounter = (s32) arg0->field1230;
-      if ((hudCounter != arg0->field11AC) || (arg0->field11E4 > 0.0f))
-      {
-        arg0->field117C = 2;
-        arg0->field11AC = hudCounter;
-      }
-      temp_a0_4 = arg0->field117C;
-      if (temp_a0_4 == 2)
-      {
-        if (arg0->field122C & 0x20)
-        {
-          temp_v1_8 = arg0->field1238;
-          if (temp_v1_8 == temp_a0_4)
-          {
-            var_f1_6 = 255.0f - (arg0->field1230 * 1.70000005f);
-            if (var_f1_6 < 0.0f)
-            {
-              var_f1_6 = 0.0f;
-            }
-            arg0->field11A8 = var_f1_6;
-          }
-          else
-          {
-            if (temp_v1_8 == 3)
-            {
-              arg0->field11A8 = 0.0f;
-            }
-            else
-            {
-              goto block_205;
-            }
-          }
-        }
-        else
-        {
-          temp_f1_3 = arg0->field1230;
-          if (temp_f1_3 > 0.0f)
-          {
-            var_f0_6 = temp_f1_3 * 5.0f;
-            if (var_f0_6 > 255.0f)
-            {
-              /* FAKEMATCH: equivalent branches retain the original status block shape. */
-              if (var_f24)
-              {
-                goto block_205;
-              }
-              else
-              {
-                goto block_205;
-              }
-            }
-            goto block_206;
-          }
-          if (arg0->field11E4 > 0.0f)
-          {
-            block_205:
-            var_f0_6 = 255.0f;
-
-            block_206:
-            arg0->field11A8 = var_f0_6;
-
-          }
-        }
-        temp_f2_2 = arg0->field11A8;
-        if (temp_f2_2 > 0.0f)
-        {
-          hudF21 = arg1->originX + arg1->width;
-          hudF25 = arg1->originY + arg1->height;
-          hudCounter = 0;
-          if (arg0->field11E4 > 0.0f)
-          {
-            hudCounter = 1;
-          }
-          func_802AA224((s32) temp_f2_2);
-          func_802ABC18(0x20C, hudCounter, (s16) ((s32) (hudF21 - (var_f24 * 70.0f))), (s16) ((s32) (new_var7 = hudF25 - (var_f22 * 140.0f))), var_f24, var_f22, 1);
-        }
-        else
-        {
-          arg0->field1140 = 0;
-        }
-      }
-    }
-    temp_f4 = arg0->field12C0;
-    if (temp_f4 < 1.0f)
-    {
-      temp_f3 = (1.0f - hudDataE3E4) * 0.25f;
-      hudF25 = arg1->originY + arg1->height;
-      hudF21 = arg1->originX;
-      temp_f0_5 = hudDataE3E4 + temp_f3;
-      var_s0_11 = 3;
-      if (!(temp_f4 < temp_f0_5))
-      {
-        temp_f0_6 = temp_f0_5 + temp_f3;
-        var_s0_11 = 2;
-        if (!(temp_f4 < temp_f0_6))
-        {
-          var_s0_11 = 0;
-          if (temp_f4 < (temp_f0_6 + temp_f3))
-          {
-            var_s0_11 = 1;
-          }
-        }
-      }
-      func_802AA224(0xFFU);
-      var_f0_7 = var_f24 * 10.0f;
-      var_f1_7 = 140.0f;
-      var_f1_7 = var_f22 * var_f1_7;
-      var_a0_6 = 0x20B;
-      goto block_225;
-    }
-    if (temp_f4 > 1.0f)
-    {
-      temp_f2_3 = (hudDataE3E0 - 1.0f) * 0.25f;
-      hudF25 = arg1->originY + arg1->height;
-      hudF21 = arg1->originX;
-      var_s0_11 = 3;
-      if (!((hudDataE3E0 - temp_f2_3) < temp_f4))
-      {
-        temp_f1_4 = 2.0f * temp_f2_3;
-        var_s0_11 = 2;
-        if (!((hudDataE3E0 - temp_f1_4) < temp_f4))
-        {
-          var_s0_11 = 0;
-          if ((hudDataE3E0 - (temp_f1_4 + temp_f2_3)) < temp_f4)
-          {
-            var_s0_11 = 1;
-          }
-        }
-      }
-      func_802AA224(0xFFU);
-      var_f0_7 = var_f24 * 10.0f;
-      var_f1_7 = var_f22 * 140.0f;
-      var_a0_6 = 0x20A;
-      block_225:
-      func_802ABC18(var_a0_6, var_s0_11, (s16) ((s32) (hudF21 + var_f0_7)), (s16) ((s32) (hudF25 - var_f1_7)), var_f24, var_f22, 1);
-
-    }
-    if ((arg0->field62E == 0xC) && (arg0->fieldE4 != hudDataE47C))
-    {
-      var_s1_6 = 3 - func_802831FC(&D_80121990, arg0);
-      temp_a0_5 = arg0->ammoSlot2;
-      if (temp_a0_5 < var_s1_6)
-      {
-        var_s1_6 = temp_a0_5;
-      }
-      var_s0_12 = 0;
-      hudF21 = arg1->originX + (arg1->width * 0.5f);
-      hudF25 = arg1->originY + (arg1->height * 0.5f);
-      do
-      {
-        var_a0_7 = 0x40;
-        if (var_s1_6 > 0)
-        {
-          /* FAKEMATCH: equivalent branches extend the name-scale lifetime. */
-          if (nameScaleX)
-          {
-            var_a0_7 = 0xFF;
-          }
-          else
-          {
-            var_a0_7 = 0xFF;
-          }
-        }
-        var_s1_6 -= 1;
-        func_802AA224(var_a0_7);
-        temp_f1_5 = hudDataF1D8[var_s0_12] * var_f24;
-        func_802ABC18(0x2F4, 0, (s16) ((s32) (hudF21 + temp_f1_5)), (s16) ((s32) (hudF25 + (var_f22 * 64.0f))), var_f24, var_f22, 1);
-        var_s0_12 += 1;
-      }
-      while (var_s0_12 < 3);
-    }
-    tailMode = &D_801468A0;
-    if (tailMode->hideMain == 0)
-    {
-      if ((arg0->field5D8->active == 1) && (tailMode->rule54 != 0))
-      {
-        func_8022C1D8(arg0, arg1);
-      }
-      tailModeAfterCall = &D_801468A0;
-      if (((tailModeAfterCall->hideMain == 0) && (tailModeAfterCall->squads != 0)) && (arg0->field5D8->active != 0))
-      {
-        func_8022C36C(arg0, arg1);
-      }
-    }
-  }
+static inline Shared_MatchRules *hudRules(void) {
+    return &D_801462C8.rules;
 }
 
-#endif
+void func_8021EED8(Shared_HudPlayer *player, Shared_HudView *view) {
+    char text[16];
+    f32 sx;
+    f32 sy;
+    f32 kx;
+    f32 ky;
+    f32 scaleX;
+    f32 scaleY;
+    f32 x;
+    f32 y;
+    f32 flashFade;
+    f32 fade;
+    f32 flashFade2;
+    f32 fade2;
+    f32 textScale;
+    f32 nameZoom;
+    f32 iconFade;
+    f32 icon;
+    f32 status;
+    f32 zoom;
+    f32 step;
+    f32 stepOut;
+    f32 limit;
+    s32 n;
+    s32 i;
+    s32 k;
+    s32 ammo;
+    s32 j;
+    s32 r;
+    s32 g;
+    s32 b;
+    s32 score;
+    s32 frames;
+    s16 **res;
+    s32 indent;
+    s32 left;
+    s32 top;
+    s32 w;
+    s32 width;
+    s32 level;
+
+    if (D_801462C8.state != 0xB && D_801462C8.state != 8) {
+        func_802A8A94(player->anim0);
+        func_802A8A94(player->anim1);
+        func_802A8A94(player->anim2);
+        func_802A8A94(player->anim3);
+        func_802A8A94(&player->livesAnim);
+        func_802A8A94(player->anim5);
+        func_802A8A94(&player->scoreAnim);
+        func_802A8A94(&player->countAnim);
+        func_802A8A94(&player->squadAnim);
+        func_8021E27C(player, view);
+        if (view->flags == 0) {
+            func_80219490(player->effect, view);
+        }
+        func_802183E8(player->strokes, view, player);
+        func_80218F08(player->trails, view, player);
+        func_802A78F0(player->marks, player);
+        func_802AA224(D_801462C8.hudFade);
+
+        sx = view->width / (f32) D_800E28D0;
+        sy = view->height / (f32) D_800E28D4;
+        if (D_800E28D8 == 0) {
+            kx = ky = 1.0f;
+        } else {
+            kx = ky = 1.5f;
+        }
+        scaleX = sx * kx;
+        scaleY = sy * ky;
+
+        if (hudRules()->hideHud == 0) {
+            func_8021EA30(player, view);
+        }
+        n = (player->health + 0xFF) >> 8;
+        x = player->healthX * scaleX + view->x;
+        y = player->healthY * scaleY + view->y + view->height;
+        if (hudRules()->hideHud == 0) {
+            func_802A921C(n, x - scaleX * 3.0f, y - scaleY * 4.0f, scaleX, scaleY, 1, 0, 0);
+        }
+
+        n = player->health;
+        if (n != player->flashHealth) {
+            if (n < player->flashHealth) {
+                player->flashAlpha += ((player->flashHealth - n) >> 8) * 5;
+                if (n == 0) {
+                    player->flashAlpha = 255.0f;
+                }
+                if (player->flashAlpha < 50.0f) {
+                    player->flashAlpha = 50.0f;
+                }
+                if (player->flashAlpha > 255.0f) {
+                    player->flashAlpha = 255.0f;
+                }
+                player->flashState = 2;
+            }
+            player->flashHealth = n;
+        }
+
+        /* The two flash blocks keep the centre's x in y and its y in x. */
+        if (player->hurt > 0.0f) {
+            flashFade = player->flashAlpha - 12.0f;
+            fade = (flashFade < 0.0f) ? 0.0f : flashFade;
+            player->flashAlpha = fade;
+            if (player->fxFlags & 0x4000) {
+                if (fade != 0.0f) {
+                    r = 253.0f - (128.0f - fade * 0.512f);
+                    g = 198.0f - fade * 0.792f;
+                    b = 34.0f - fade * 0.136f;
+                } else {
+                    r = 0x7D;
+                    g = 0xC6;
+                    b = 0x22;
+                }
+            } else {
+                if (fade != 0.0f) {
+                    r = fade * 1.012f;
+                    g = 105.0f - fade * 0.42f;
+                    b = 179.0f - fade * 0.716f;
+                } else {
+                    r = 0;
+                    g = 0x69;
+                    b = 0xB3;
+                }
+            }
+            y = view->x + view->width * 0.5f;
+            x = view->y + view->height * 0.5f;
+            func_802AA224(0xFA);
+            gDPSetEnvColor(D_80110634++, r, g, b, 0xFA);
+            for (k = 0; k < 4; k++) {
+                func_802ABC18(0x208, k, y + scaleX * HUD_FLASH_X[k + 4], x + scaleY * HUD_FLASH_Y[k + 4], sx,
+                              scaleY * 1.5f, 1);
+            }
+            player->flashState = 0;
+        }
+
+        if (player->flashState == 2) {
+            flashFade2 = player->flashAlpha - 12.0f;
+            fade2 = (flashFade2 < 0.0f) ? 0.0f : flashFade2;
+            player->flashAlpha = fade2;
+            if (fade2 > 0.0f) {
+                y = view->x + view->width * 0.5f;
+                x = view->y + view->height * 0.5f;
+                r = 253;
+                g = 0;
+                b = 0;
+                gDPSetEnvColor(D_80110634++, r, g, b, player->flashAlpha);
+                for (k = 0; k < 4; k++) {
+                    func_802ABC18(0x208, k, y + scaleX * HUD_FLASH_X[k + 4], x + scaleY * HUD_FLASH_Y[k + 4], sx,
+                                  scaleY * 1.5f, 1);
+                }
+            } else {
+                player->flashState = 0;
+            }
+        }
+
+        if (D_800E28D8 == 0) {
+            kx = ky = 0.75f;
+        } else {
+            kx = ky = 1.0f;
+        }
+        scaleX = sx * kx;
+        scaleY = sy * ky;
+
+        if (D_801462C8.hudShown == 0) {
+            n = player->lives;
+            if (player->livesLast != n) {
+                func_802AB6FC(&player->livesAnim, &HUD_LIVES_ANIM);
+                player->livesLast = n;
+            }
+            if (player->livesAnim != 0 && player->livesShown != 0) {
+                x = player->livesX * sx + view->x;
+                y = player->livesY * sy + view->y;
+                func_802ABC18(0x12C, 0, x + sx * 18.0f, y + sy * 28.0f, sx, sy, 1);
+                func_802ABC18(0x1F6, 0, x, y, sx, sy, 1);
+                func_802A921C(player->lives, x + sx * 30.0f, y + sy * 24.0f, sx, sy, 1, 0, 0);
+            }
+        } else if ((D_801462C8.trialKind == 1 || D_801462C8.trialKind == 4) && player->hideLives == 0) {
+            n = player->lifeCount - 1;
+            if (n < 0) {
+                n = 0;
+            }
+            x = player->livesX * scaleX + view->x;
+            y = player->livesY * scaleY + view->y;
+            func_802AA224(player->alpha);
+            func_802A921C(n, x, y + scaleY * 22.0f, scaleX, scaleY, 1, 0, 0);
+            func_802ABC18(0x1F6, 0, x + scaleX * 20.0f, y + scaleY * 16.0f, scaleX, scaleY * 1.5f, 1);
+            if (D_801462C8.rules.markers != 0) {
+                func_802ABC18(0x203, 0, x + scaleX * 40.0f, y + scaleY * 11.0f, scaleX, scaleY * 1.5f, 1);
+            }
+        }
+
+        if (hudRules()->hideHud == 0 && D_801462C8.hudShown != 0) {
+            if (hudRules()->teams != 0) {
+                if (player->owner->team != 0xFF) {
+                    score = hudRules()->teamScores[player->owner->team];
+                } else {
+                    score = 0;
+                }
+            } else {
+                score = player->owner->score;
+            }
+            if (score < -99) {
+                score = -99;
+            }
+            if (player->scoreLast != score) {
+                func_802AB6FC(&player->scoreAnim, &HUD_SCORE_ANIM);
+                player->scoreLast = score;
+                player->scoreFrame = 0;
+            }
+            if (player->scoreState == 0) {
+                player->scoreState = 1;
+            }
+            player->scoreAnim = 1;
+            player->alpha = 255.0f;
+            if (player->scoreAnim != 0 && player->scoreState != 0) {
+                frames = 1;
+                if (D_801462C8.rules.teams != 0) {
+                    res = func_8028BE88(&D_8011FE88, 0x204, 0, 1);
+                } else {
+                    res = func_8028BE88(&D_8011FE88, 0x1FA, 0, 1);
+                }
+                if (res != NULL) {
+                    frames = (*res != NULL) ? **res : 1;
+                    func_802536F4(0, res);
+                }
+                x = player->scoreX * scaleX + view->x + view->width;
+                y = player->scoreY * scaleY + view->y;
+                if (x > 200.0f) {
+                    x -= 12.0f;
+                }
+                func_802AA224(player->alpha);
+                func_802A921C(player->scoreLast, x + scaleX * 48.0f, y + scaleY * 22.0f, scaleX, scaleY, 1, 0, 0);
+                if (player->scoreState < 2) {
+                    if (hudRules()->markers != 0) {
+                        func_802ABC18(0x202, 0, x, y + scaleY * 11.0f, scaleX, scaleY * 1.5f, 1);
+                    }
+                    if (hudRules()->teams != 0) {
+                        func_802ABC18(0x204, 0, x + scaleX * 8.0f, y + scaleY * 16.0f, scaleX, scaleY * 1.5f, 1);
+                    } else {
+                        func_802ABC18(0x1FA, 0, x + scaleX * 8.0f, y + scaleY * 16.0f, scaleX, scaleY * 1.5f, 1);
+                    }
+                    player->nameHead = 0;
+                    player->nameTail = 0;
+                    for (i = 0; i < 8; i++) {
+                        player->names[i] = NULL;
+                        player->nameFades[i] = 0xFF;
+                    }
+                } else {
+                    if (++player->scoreFrame >= frames * 4) {
+                        player->scoreFrame = 0;
+                        player->scoreState = 1;
+                        player->nameHead = 0;
+                        player->nameTail = 0;
+                        for (i = 0; i < 8; i++) {
+                            player->names[i] = NULL;
+                            player->nameFades[i] = 0xFF;
+                        }
+                    }
+                    if (hudRules()->markers != 0) {
+                        func_802ABC18(0x202, 0, x, y + scaleY * 11.0f, scaleX, scaleY * 1.5f, 1);
+                    }
+                    if (hudRules()->teams != 0) {
+                        func_802ABC18(0x204, player->scoreFrame % frames, x + scaleX * 8.0f, y + scaleY * 16.0f,
+                                      scaleX, scaleY * 1.5f, 1);
+                    } else {
+                        func_802ABC18(0x1FA, player->scoreFrame % frames, x + scaleX * 8.0f, y + scaleY * 16.0f,
+                                      scaleX, scaleY * 1.5f, 1);
+                    }
+                    func_802A94E8();
+                    func_802ABB58(1.0f, 1.0f);
+                    if (D_801462C8.rules.markers == 0) {
+                        /* Names scroll right to left, each fading out from 0xFF in steps of 6. */
+                        for (i = player->nameHead; i >= player->nameTail; i--) {
+                            if (player->names[i] != NULL) {
+                                if (D_800E28D8 == 0 && D_801450B8 == 1) {
+                                    nameZoom = 0.75f;
+                                    indent = 0xF;
+                                } else {
+                                    nameZoom = 1.0f;
+                                    indent = 0;
+                                }
+                                scaleX *= nameZoom;
+                                func_802C2410(text, HUD_NAME_FORMAT, player->names[i]->owner->name);
+                                func_802ABB2C(0, 0, 0, 1, 1, 1);
+                                textScale = D_8013B870 * 0.5f * scaleX * func_802AB854();
+                                scaleY *= nameZoom;
+                                w = func_80442460(text, textScale, func_802AB854());
+                                player->nameWidths[i] = w;
+                                width = w;
+                                for (j = player->nameHead; i < j; j--) {
+                                    width += player->nameWidths[j] + 8;
+                                }
+                                left = (x - 12.0f) + indent;
+                                top = y + 4.0f;
+                                func_802A9F18(text, left - width + 2, (top + 2) + scaleY * 16.0f,
+                                              player->nameFades[i], 0, 0, scaleX * 0.5f, scaleY);
+                                if (player->names[i] == player) {
+                                    func_802ABB2C(0xFF, 0, 0, 1, 1, 1);
+                                } else {
+                                    func_802ABB2C(0xFF, 0xFF, 0xFF, 1, 1, 1);
+                                }
+                                func_802A9F18(text, left - width, top + scaleY * 16.0f, player->nameFades[i], 0, 0,
+                                              scaleX * 0.5f, scaleY);
+                                player->nameFades[i] -= 6;
+                                if (player->nameFades[i] < 0) {
+                                    player->nameFades[i] = 0;
+                                    player->nameTail = (player->nameTail + 1) % 8;
+                                }
+                                scaleX /= nameZoom;
+                                scaleY /= nameZoom;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (hudRules()->countRule != 0) {
+                n = player->owner->count;
+                if (player->countLast != n) {
+                    func_802AB6FC(&player->countAnim, &HUD_COUNT_ANIM);
+                    if (player->countLast == -1) {
+                        player->countState = 1;
+                    }
+                    player->countLast = n;
+                }
+                if (player->countState == 0) {
+                    player->countState = 1;
+                }
+                player->countAnim = 1;
+                if (player->countState != 0) {
+                    n = 1;
+                    res = func_8028BE88(&D_8011FE88, 0x1FD, 0, 1);
+                    if (res != NULL) {
+                        if (*res != NULL) {
+                            n = **res;
+                        }
+                        func_802536F4(0, res);
+                    }
+                    x = player->countX * scaleX + view->x + view->width;
+                    y = player->countY * scaleY + view->y;
+                    if (x > 200.0f) {
+                        x -= 12.0f;
+                    }
+                    func_802AA224(player->alpha);
+                    func_802A921C(player->owner->count, x + scaleX * 48.0f, y + scaleY * 20.0f, scaleX, scaleY, 1,
+                                  0, 0);
+                    if (player->countState < 2) {
+                        func_802ABC18(0x1FD, 0, x + scaleX * 8.0f, y + scaleY * 16.0f, scaleX, scaleY, 1);
+                    } else {
+                        if (++player->countFrame >= n * 4) {
+                            player->countFrame = 0;
+                            player->countState = 1;
+                        }
+                        func_802ABC18(0x1FD, player->countFrame % n, x + scaleX * 8.0f, y + scaleY * 16.0f, scaleX,
+                                      scaleY, 1);
+                    }
+                }
+            } else if (hudRules()->squads != 0) {
+                if (player->owner->team != 0xFF) {
+                    score = hudRules()->squadScores[player->owner->team];
+                } else {
+                    score = 0;
+                }
+                if (player->squadLast != score) {
+                    func_802AB6FC(&player->squadAnim, &HUD_SQUAD_ANIM);
+                    if (player->squadLast == -1) {
+                        player->squadState = 1;
+                    }
+                    player->squadLast = score;
+                }
+                if (player->squadState == 0) {
+                    player->squadState = 1;
+                }
+                player->squadAnim = 1;
+                if (player->squadState != 0) {
+                    frames = 1;
+                    res = func_8028BE88(&D_8011FE88, 0x201, 0, 1);
+                    if (res != NULL) {
+                        if (*res != NULL) {
+                            frames = **res;
+                        }
+                        func_802536F4(0, res);
+                    }
+                    x = player->squadX * scaleX + view->x + view->width;
+                    y = player->squadY * scaleY + view->y;
+                    if (x > 200.0f) {
+                        x -= 12.0f;
+                    }
+                    func_802AA224(player->alpha);
+                    func_802A921C(score, x + scaleX * 48.0f, y + scaleY * 20.0f, scaleX, scaleY, 1, 0, 0);
+                    if (player->squadState < 2) {
+                        func_802ABC18(0x201, 0, x + scaleX * 8.0f, y + scaleY * 16.0f, scaleX, scaleY * 1.5f, 1);
+                    } else {
+                        if (++player->squadFrame >= frames * 4) {
+                            player->squadFrame = 0;
+                            player->squadState = 1;
+                        }
+                        func_802ABC18(0x201, player->squadFrame % frames, x + scaleX * 8.0f, y + scaleY * 16.0f,
+                                      scaleX, scaleY * 1.5f, 1);
+                    }
+                }
+            }
+        }
+
+        if (player->fxFlags & 0x10000) {
+            level = player->fxTime;
+            if (level != player->iconLast) {
+                player->iconState = 2;
+                player->iconLast = level;
+            }
+            if (player->iconState == 2) {
+                iconFade = player->fxTime * 5.0f;
+                icon = (iconFade > 255.0f) ? 255.0f : iconFade;
+                player->iconAlpha = icon;
+                if (icon > 0.0f) {
+                    x = view->x + view->width * 0.5f;
+                    y = view->y + view->height * 0.5f;
+                    func_802AA224(icon);
+                    func_802ABC18(0x209, 0, x - scaleX * 31.0f, y - scaleY * 32.0f, scaleX, scaleY, 1);
+                } else {
+                    player->iconState = 0;
+                }
+            }
+        }
+
+        if ((player->fxFlags != 0 && player->fxFlags < 0x2000) || player->boost > 0.0f) {
+            level = player->fxTime;
+            if (level != player->statusLast || player->boost > 0.0f) {
+                player->statusState = 2;
+                player->statusLast = level;
+            }
+            if (player->statusState == 2) {
+                if (player->fxFlags & 0x20) {
+                    if (player->fxStage == 2) {
+                        status = 255.0f - player->fxTime * 1.7f;
+                        if (status < 0.0f) {
+                            status = 0.0f;
+                        }
+                        player->statusAlpha = status;
+                    } else if (player->fxStage == 3) {
+                        player->statusAlpha = 0.0f;
+                    } else {
+                        player->statusAlpha = 255.0f;
+                    }
+                } else if (player->fxTime > 0.0f) {
+                    player->statusAlpha = (player->fxTime * 5.0f > 255.0f) ? 255.0f : player->fxTime * 5.0f;
+                } else if (player->boost > 0.0f) {
+                    player->statusAlpha = 255.0f;
+                }
+                if (player->statusAlpha > 0.0f) {
+                    x = view->x + view->width;
+                    y = view->y + view->height;
+                    level = 0;
+                    if (player->boost > 0.0f) {
+                        level = 1;
+                    }
+                    func_802AA224(player->statusAlpha);
+                    func_802ABC18(0x20C, level, x - scaleX * 70.0f, y - scaleY * 140.0f, scaleX, scaleY, 1);
+                } else {
+                    /* Clears the icon state, not the status state. */
+                    player->iconState = 0;
+                }
+            }
+        }
+
+        zoom = player->zoom;
+        if (zoom < 1.0f) {
+            step = (1.0f - D_800CE3E0[1]) * 0.25f;
+            y = view->y + view->height;
+            x = view->x;
+            limit = D_800CE3E0[1] + step;
+            if (zoom < limit) {
+                level = 3;
+            } else if (zoom < (limit += step)) {
+                level = 2;
+            } else if (zoom < limit + step) {
+                level = 1;
+            } else {
+                level = 0;
+            }
+            func_802AA224(0xFF);
+            func_802ABC18(0x20B, level, x + scaleX * 10.0f, y - scaleY * 140.0f, scaleX, scaleY, 1);
+        } else if (zoom > 1.0f) {
+            stepOut = (D_800CE3E0[0] - 1.0f) * 0.25f;
+            y = view->y + view->height;
+            x = view->x;
+            if (D_800CE3E0[0] - stepOut < zoom) {
+                level = 3;
+            } else if (D_800CE3E0[0] - (stepOut + stepOut) < zoom) {
+                level = 2;
+            } else if (D_800CE3E0[0] - (stepOut + stepOut + stepOut) < zoom) {
+                level = 1;
+            } else {
+                level = 0;
+            }
+            func_802AA224(0xFF);
+            func_802ABC18(0x20A, level, x + scaleX * 10.0f, y - scaleY * 140.0f, scaleX, scaleY, 1);
+        }
+
+        if (player->weapon == 0xC && player->kind != D_800CE47C) {
+            ammo = 3 - func_802831FC(&D_80121990, player);
+            if (player->ammo < ammo) {
+                ammo = player->ammo;
+            }
+            x = view->x + view->width * 0.5f;
+            y = view->y + view->height * 0.5f;
+            for (i = 0; i < 3; i++, ammo--) {
+                func_802AA224(ammo > 0 ? 0xFF : 0x40);
+                func_802ABC18(0x2F4, 0, x + HUD_AMMO_X[i] * scaleX, y + scaleY * 64.0f, scaleX, scaleY, 1);
+            }
+        }
+
+        if (hudRules()->hideHud == 0) {
+            if (player->owner->active == 1 && hudRules()->countRule != 0) {
+                func_8022C1D8(player, view);
+            }
+            if (hudRules()->hideHud == 0 && hudRules()->squads != 0 && player->owner->active != 0) {
+                func_8022C36C(player, view);
+            }
+        }
+    }
+}
