@@ -1,20 +1,7 @@
 #ifndef SHARED_HEAP_USAGE_GRAPH_H
 #define SHARED_HEAP_USAGE_GRAPH_H
-typedef signed char s8;
-typedef unsigned char u8;
-typedef short s16;
-typedef unsigned short u16;
-typedef int s32;
-typedef unsigned int u32;
-typedef long long s64;
-typedef unsigned long long u64;
-typedef float f32;
-typedef double f64;
-typedef struct 
-{
-  u32 w0;
-  u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 typedef struct HeapUsageBlock
 {
   u32 start;
