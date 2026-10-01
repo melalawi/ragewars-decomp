@@ -2,7 +2,7 @@
  * frame timing totals. */
 #include "basetypes.h"
 
-#include "../include/shared/pose.h"
+#include "shared/pose.h"
 
 extern char D_800C8A20;
 extern f32 D_800D06C0[];
