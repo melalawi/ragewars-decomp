@@ -29,7 +29,7 @@ extern Settings D_801462C8;
 extern s32 D_800D7330[];
 extern s32 D_800D72F0[];
 extern NameEntry D_800E3820[];
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
 
@@ -79,21 +79,21 @@ s32 func_8042E640(u8 *request) {
         player->rank = request[2];
         switch (player->kind) {
         case 15:
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
             name = D_800D7330[D_80152789];
 #else
             name = D_800D7330[0];
 #endif
             break;
         case 16:
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
             name = D_800D72F0[D_80152789];
 #else
             name = D_800D72F0[0];
 #endif
             break;
         default:
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
             name = D_800E3820[player->team * 17 + func_8041F1B0(player->kind)].names[D_80152789];
 #else
             name = *D_800E3820[player->team * 17 + func_8041F1B0(player->kind)].names;

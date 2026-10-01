@@ -7,7 +7,7 @@
 
 #if defined(VERSION_DE)
 #define MESSAGE_BASE 0x39C
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define MESSAGE_BASE 0x3A6
 #else
 #define MESSAGE_BASE 0x3A2

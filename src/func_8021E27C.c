@@ -8,7 +8,7 @@
    options at D_801462F3 allow). The second switch lists two icons that share the default scale, which
    the original needed for its jump table; which icons they were is not recoverable from the bytes. */
 #include "basetypes.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Controls {

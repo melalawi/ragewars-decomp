@@ -8,7 +8,7 @@ s32 func_8041B890(s32, s32);                        /* extern */
 void func_80420688(s32, s32);                          /* extern */
 extern State *D_800E42D0;
 
-#ifdef VERSION_EU_MUL
+#ifdef VERSION_EU_X
 #define SPECIAL_CHAR 0x85
 #else
 #define SPECIAL_CHAR 0x81

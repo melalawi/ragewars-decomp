@@ -1,5 +1,5 @@
-#include "../splat/types/shared/gfx.h"
-#include "../splat/types/shared/renderswitches.h"
+#include "../include/shared/gfx.h"
+#include "../include/shared/renderswitches.h"
 /* Clips a textured screen rectangle to the viewport and emits the matching render commands. */
 #define NULL ((void *)0)
 /* The values func_80417BA0 loads by address:

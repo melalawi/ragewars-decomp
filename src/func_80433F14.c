@@ -1,10 +1,10 @@
-#include "../splat/types/shared/label.h"
-#include "../splat/types/shared/item.h"
-#include "../splat/types/shared/player_func_80433F14.h"
-#include "../splat/types/shared/block.h"
+#include "../include/shared/label.h"
+#include "../include/shared/item.h"
+#include "../include/shared/player_func_80433F14.h"
+#include "../include/shared/block.h"
 /* Updates the four player control rows, their visibility, and the selected player label. */
 
-#if defined(VERSION_EU_MUL)
+#if defined(VERSION_EU_X)
 #define FIRST_ROW_ITEM 0x29F
 #elif defined(VERSION_DE)
 #define FIRST_ROW_ITEM 0x296

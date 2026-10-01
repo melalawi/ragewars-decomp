@@ -1,7 +1,7 @@
 /* Advances the join screen's pulse timer by delta and sets byte 0x10 of node 0x392 under the edited request's root to 150 plus 100 times the sine of the timer over 300; returns zero. */
 #include "basetypes.h"
 
-#ifdef VERSION_EU_MUL
+#ifdef VERSION_EU_X
 #define VV_0392 0x396
 #elif defined(VERSION_DE)
 #define VV_0392 0x38C

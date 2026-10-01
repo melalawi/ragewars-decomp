@@ -8,7 +8,7 @@
 #define MESSAGE_1C2 0x1BE
 #define MESSAGE_1C3 0x1BF
 #define MESSAGE_1C4 0x1C0
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define MESSAGE_1BD 0x1C1
 #define MESSAGE_1C2 0x1C6
 #define MESSAGE_1C3 0x1C7

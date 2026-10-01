@@ -10,7 +10,7 @@ typedef struct State {
 
 extern State D_801468A0;
 
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct func_8022A67C_S1 func_8022A67C_S1;

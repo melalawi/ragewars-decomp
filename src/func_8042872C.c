@@ -1,4 +1,4 @@
-/* Picks a menu element id from arg0 and whether arg2 is set, hides the 0x14B child of that element and stores 0x64 and the value func_8042881C reports for arg1 into its 0x14A child; on eu-mul every element id in this menu is renumbered 4 higher. */
+/* Picks a menu element id from arg0 and whether arg2 is set, hides the 0x14B child of that element and stores 0x64 and the value func_8042881C reports for arg1 into its 0x14A child; on eu-x every element id in this menu is renumbered 4 higher. */
 
 #include "basetypes.h"
 
@@ -19,7 +19,7 @@ extern Element *func_8040ECB0(Element *element, s32 id);
 extern void func_8040E958(Element *element, s32 arg1);
 extern s32 func_8042881C(s32 arg0);
 
-#ifdef VERSION_EU_MUL
+#ifdef VERSION_EU_X
 #define ID_SHIFT 4
 #else
 #define ID_SHIFT 0

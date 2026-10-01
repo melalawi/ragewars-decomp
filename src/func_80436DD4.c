@@ -1,6 +1,6 @@
 #include "basetypes.h"
 
-#ifdef VERSION_EU_MUL
+#ifdef VERSION_EU_X
 #define VV_0060 0x64
 #elif defined(VERSION_DE)
 #define VV_0060 0x5E

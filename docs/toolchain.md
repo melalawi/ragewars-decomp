@@ -45,7 +45,7 @@ byte, are in `docs/compiler-rebuild.md`.
 to equal the cartridge's. That is a real result and it shows the pinned compiler is
 *sufficient*. It cannot show that it is necessary: every one of those functions was
 iterated against that compiler until it matched, so the corpus was authored against the
-very thing it would be used to test. `us`, `eu`, `eu-mul` and `de` have no authored C
+very thing it would be used to test. `us`, `eu`, `eu-x` and `de` have no authored C
 at all and verify entirely from extracted assembly, so the survey below is the only
 compiler evidence they carry.
 
@@ -171,10 +171,10 @@ Code in this image that was **not** surveyed:
 
 - `second_overlay_80400000`, rom 0x176000-0x200000: the split configuration types it bin and fits it no vram, so there is no address at which to decode it; it is code and it is not surveyed
 
-## eu-mul
+## eu-x
 
-`artifacts/roms/ragewars.eu-mul.z64`, sha256 `511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750`.
-Boundaries from `versions/eu-mul/ragewars.yaml`; description in `versions/eu-mul/toolchain-description.json`.
+`artifacts/roms/ragewars.eu-x.z64`, sha256 `511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750`.
+Boundaries from `versions/eu-x/ragewars.yaml`; description in `versions/eu-x/toolchain-description.json`.
 
 4 regions. 3 narrowed at least one axis. 1 narrowed nothing on any axis and is reported unidentified. 0 hold a contradiction. 0 words fall outside an admissible body and are counted nowhere. 15 discriminator abstentions.
 
@@ -241,12 +241,12 @@ stray, and only one standing on many is a second producer.
 
 ## Do the four cartridges with no authored C agree with us-rev1?
 
-`us`, `eu`, `eu-mul` and `de` carry no authored C, so this survey is the only compiler
+`us`, `eu`, `eu-x` and `de` carry no authored C, so this survey is the only compiler
 evidence they will ever carry. Comparing majority label sets, axis by axis:
 
 - **us**: narrows less on `b-encoding` (an abstention, not a disagreement)
 - **eu**: agrees on every axis, label for label
-- **eu-mul**: agrees on every axis, label for label
+- **eu-x**: agrees on every axis, label for label
 - **de**: narrows less on `b-encoding` (an abstention, not a disagreement)
 
 No cartridge contradicts another. Agreement here is a measured fact about the
@@ -260,8 +260,8 @@ These axes name a question the discriminator set offers no label to answer.
 They are not contradictions and they are not findings: nothing stands because
 there is nothing to stand.
 
-- `fp-double-transfer`, on `us`, `us-rev1`, `eu`, `eu-mul`, `de`.
-- `fp-calling-convention`, on `us`, `us-rev1`, `eu`, `eu-mul`, `de`.
+- `fp-double-transfer`, on `us`, `us-rev1`, `eu`, `eu-x`, `de`.
+- `fp-calling-convention`, on `us`, `us-rev1`, `eu`, `eu-x`, `de`.
 
 ## What each discriminator excluded
 

@@ -30,7 +30,7 @@ typedef struct {
     char data[0x190];
 } PlayerRecord;
 
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
 typedef struct {
     char pad0[0x17C1];
     u8 language;

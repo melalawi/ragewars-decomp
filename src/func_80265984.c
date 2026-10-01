@@ -5,7 +5,7 @@
 
 #if defined(VERSION_DE)
 #define RESOURCE_ROM 0x28BB00
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define RESOURCE_ROM 0x290384
 #else
 #define RESOURCE_ROM 0x28B244

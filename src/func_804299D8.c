@@ -10,7 +10,7 @@
 #define VALUE_369 0x365
 #define VALUE_36A 0x366
 #define VALUE_36B 0x367
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_369 0x36D
 #define VALUE_36A 0x36E
 #define VALUE_36B 0x36F

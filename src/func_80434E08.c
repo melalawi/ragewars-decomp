@@ -11,7 +11,7 @@
 #define VALUE_2D6 0x2AC
 #define VALUE_2C2 0x2AA
 #define VALUE_2C6 0x2AB
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_2D6 0x2C7
 #define VALUE_2C2 0x2C2
 #define VALUE_2C6 0x2C6

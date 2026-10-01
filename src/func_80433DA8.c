@@ -8,9 +8,9 @@ typedef signed char s8;
    this row as p's focus in the list at 0x4, otherwise at the row's 400-byte record in D_80102B00
    when its owner byte 0xD is not negative, or at nothing. */
 
-/* The first row item's id: eu-mul numbers its items 9 higher and de 1 higher, as each cartridge's
+/* The first row item's id: eu-x numbers its items 9 higher and de 1 higher, as each cartridge's
    own bytes show; us, us-rev1 and eu share 0x28B. */
-#if defined(VERSION_EU_MUL)
+#if defined(VERSION_EU_X)
 #define FIRST_ROW_ITEM 0x294
 #elif defined(VERSION_DE)
 #define FIRST_ROW_ITEM 0x28C

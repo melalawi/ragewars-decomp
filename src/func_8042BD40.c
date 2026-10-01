@@ -1,9 +1,9 @@
-#include "../splat/types/shared/item_func_8042BD40.h"
-#include "../splat/types/shared/screen.h"
-#include "../splat/types/shared/rosterentry.h"
-#include "../splat/types/shared/settings.h"
-#include "../splat/types/shared/profile_func_8042BD40.h"
-#include "../splat/types/shared/profileflag.h"
+#include "../include/shared/item_func_8042BD40.h"
+#include "../include/shared/screen.h"
+#include "../include/shared/rosterentry.h"
+#include "../include/shared/settings.h"
+#include "../include/shared/profile_func_8042BD40.h"
+#include "../include/shared/profileflag.h"
 /* Opens the results screen, records trial rewards, and initializes its controls and labels. */
 #include "basetypes.h"
 
@@ -39,7 +39,7 @@
 #define ITEM_CURSOR 0x239
 #define ITEM_FAILED_BANNER 0x262
 #define ITEM_FAILED_PROMPT 0x26A
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define ITEM_TITLE 0x239
 #define ITEM_STAGE_NAME 0x23A
 #define ITEM_HEADING_LEFT 0x23B
@@ -88,7 +88,7 @@ extern ProfileFlag D_80102B0D[];
 extern ProfileFlag D_80102B0E[];
 extern s32 D_80154028;
 extern s32 D_8015402C;
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #if defined(VERSION_EU)
 extern s32 D_800E2044[];
@@ -157,7 +157,7 @@ extern void func_8043C3F0(Screen *screen, s32 kind, s32 a, s32 b, s32 c);
 extern void func_8043C458(Screen *screen);
 extern void func_80424D70(void);
 extern void func_8042C8AC(void);
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL) || defined(VERSION_DE)
+#if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_DE)
 extern void func_804253F0(s32 first, s32 stage);
 #define RECORD_RESULT func_804253F0
 #else
@@ -181,7 +181,7 @@ extern void func_802A338C(void);
 s32 func_8042BD40(void *menu) {
     char name[0x40];
     Settings *settings;
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
     Settings *textSettings;
 #endif
     RosterEntry *entry;
@@ -240,7 +240,7 @@ s32 func_8042BD40(void *menu) {
         } while (0);
         break;
     }
-    #if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+    #if defined(VERSION_EU) || defined(VERSION_EU_X)
     textSettings = &D_801462C8;
     kind = textSettings->trialKind;
 #else

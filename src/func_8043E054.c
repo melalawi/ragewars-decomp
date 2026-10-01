@@ -26,7 +26,7 @@ extern StatusStep D_801466E2[];
 #elif defined(VERSION_EU)
 extern StatusStep D_801466E2[];
 #define PLAYER_STATUS D_801466E2
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 extern StatusStep D_801466E2[];
 #define PLAYER_STATUS D_801466E2
 #elif defined(VERSION_DE)

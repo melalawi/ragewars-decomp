@@ -11,7 +11,7 @@
 #define VALUE_3C9 0x3C3
 #define VALUE_3C4 0x3BD
 #define VALUE_3C5 0x3BF
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_3C3 0x3CC
 #define VALUE_3C9 0x3CD
 #define VALUE_3C4 0x3C6

@@ -1,7 +1,7 @@
 #include "basetypes.h"
 
 /* Sets up a player in a slot: records whether its record at arg2 is a computer driver, loads the driver's profile at 0x688 through func_8026369C from D_8010EEB8 (computers, keeping the record's slot) or from the slot's entry of D_8010F328, clears its race counters and eight lap splits, links it to its vehicle through func_802097E8 and resets it through func_8021A78C and func_802A7F58. */
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct {

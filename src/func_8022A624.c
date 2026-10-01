@@ -1,5 +1,5 @@
 #include "basetypes.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 
 typedef struct func_8022A624_S1 func_8022A624_S1;
 typedef SharedPlayer func_8022A624_S2;

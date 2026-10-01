@@ -18,7 +18,7 @@ extern void func_8029A8A8();
 
 #if defined(VERSION_DE)
 #define VALUE_1C8 0x1C4
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_1C8 0x1CC
 #else
 #define VALUE_1C8 0x1C8

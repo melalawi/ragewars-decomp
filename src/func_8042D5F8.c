@@ -5,7 +5,7 @@ void func_8040E958(s32, s32);                            /* extern */
 s32 func_8040ECB0(s32, s32);                        /* extern */
 extern State *D_800E53C0;
 
-#ifdef VERSION_EU_MUL
+#ifdef VERSION_EU_X
 #define ITEM0 0x271
 #define ITEM1 0x270
 #define ITEM2 0x26F

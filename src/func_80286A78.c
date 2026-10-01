@@ -1,33 +1,33 @@
-#include "../splat/types/shared/sceneactorstride.h"
-#include "../splat/types/shared/sceneglobal.h"
-#include "../splat/types/shared/scenefontresources.h"
-#include "../splat/types/shared/sceneactorresources.h"
-#include "../splat/types/shared/sceneresources.h"
-#include "../splat/types/shared/sceneprimaryactors.h"
-#include "../splat/types/shared/sceneactorprefix.h"
-#include "../splat/types/shared/sceneactorkind.h"
-#include "../splat/types/shared/sceneactortables.h"
-#include "../splat/types/shared/func_80286a78_s1.h"
-#include "../splat/types/shared/func_80286a78_s2.h"
-#include "../splat/types/shared/func_80286a78_s3.h"
-#include "../splat/types/shared/func_80286a78_s4.h"
-#include "../splat/types/shared/func_80286a78_s5.h"
-#include "../splat/types/shared/func_80286a78_s6.h"
-#include "../splat/types/shared/func_80286a78_s7.h"
-#include "../splat/types/shared/func_80286a78_s8.h"
-#include "../splat/types/shared/func_80286a78_s9.h"
-#include "../splat/types/shared/func_80286a78_s10.h"
-#include "../splat/types/shared/func_80286a78_s11.h"
-#include "../splat/types/shared/func_80286a78_s12.h"
-#include "../splat/types/shared/func_80286a78_s13.h"
-#include "../splat/types/shared/func_80286a78_s14.h"
-#include "../splat/types/shared/func_80286a78_s15.h"
-#include "../splat/types/shared/func_80286a78_s16.h"
-#include "../splat/types/shared/func_80286a78_s17.h"
-#include "../splat/types/shared/func_80286a78_s18.h"
-#include "../splat/types/shared/func_80286a78_s19.h"
-#include "../splat/types/shared/func_80286a78_s20.h"
-#include "../splat/types/shared/func_80286a78_s21.h"
+#include "../include/shared/sceneactorstride.h"
+#include "../include/shared/sceneglobal.h"
+#include "../include/shared/scenefontresources.h"
+#include "../include/shared/sceneactorresources.h"
+#include "../include/shared/sceneresources.h"
+#include "../include/shared/sceneprimaryactors.h"
+#include "../include/shared/sceneactorprefix.h"
+#include "../include/shared/sceneactorkind.h"
+#include "../include/shared/sceneactortables.h"
+#include "../include/shared/func_80286a78_s1.h"
+#include "../include/shared/func_80286a78_s2.h"
+#include "../include/shared/func_80286a78_s3.h"
+#include "../include/shared/func_80286a78_s4.h"
+#include "../include/shared/func_80286a78_s5.h"
+#include "../include/shared/func_80286a78_s6.h"
+#include "../include/shared/func_80286a78_s7.h"
+#include "../include/shared/func_80286a78_s8.h"
+#include "../include/shared/func_80286a78_s9.h"
+#include "../include/shared/func_80286a78_s10.h"
+#include "../include/shared/func_80286a78_s11.h"
+#include "../include/shared/func_80286a78_s12.h"
+#include "../include/shared/func_80286a78_s13.h"
+#include "../include/shared/func_80286a78_s14.h"
+#include "../include/shared/func_80286a78_s15.h"
+#include "../include/shared/func_80286a78_s16.h"
+#include "../include/shared/func_80286a78_s17.h"
+#include "../include/shared/func_80286a78_s18.h"
+#include "../include/shared/func_80286a78_s19.h"
+#include "../include/shared/func_80286a78_s20.h"
+#include "../include/shared/func_80286a78_s21.h"
 #define NULL ((void *)0)
 typedef Shared_SceneActorStride SceneActorStride;
 typedef Shared_SceneGlobal SceneGlobal;
@@ -123,7 +123,7 @@ typedef s64 M2C_UNK64;
 #define func_8044E7C0 func_8044DCE0
 #define func_8044BFD0 func_8044C650
 #define func_8044ED24 func_8044E244
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define func_8044BA40 func_8044C1F0
 #define func_8044E7C0 func_8044DCE0
 #define func_8044ED24 func_8044F4D4
@@ -226,7 +226,7 @@ M2C_UNK func_8044ED24();                      /* extern */
 #define D_800CA2C4 D_800C5484
 #define D_800D7190 D_800E0FE4
 #define D_8011F080 D_8012AFC0
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_44CD58 D_44D508
 #define D_44D024 D_44D7D4
 #define D_44D408 D_44DBB8

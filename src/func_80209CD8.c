@@ -3,7 +3,7 @@
    unless the session at 0x98 is running and the player's team membership at 0x94 and control
    mode disagree, or it is teamless and active outside session mode 3. */
 #include "basetypes.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Controls {

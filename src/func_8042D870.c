@@ -4,7 +4,7 @@
    the choice word D_80154020[1] reads one it clears it and either enables the prompt's object at
    0xE4 and records the choice at 0x328, when the pending action D_80154020[0] is -1, or disables
    the object, clears 0x328 and hands the pending action to func_80299368 through func_8029A73C.
-   Returns zero. On eu-mul both message ids are renumbered 5 higher. */
+   Returns zero. On eu-x both message ids are renumbered 5 higher. */
 #include "basetypes.h"
 
 struct Screen {
@@ -28,7 +28,7 @@ extern void func_8040E958(void *, s32);
 extern void func_8029A73C();
 extern void func_80299368(s32);
 
-#ifdef VERSION_EU_MUL
+#ifdef VERSION_EU_X
 #define MSG_SHIFT 5
 #else
 #define MSG_SHIFT 0

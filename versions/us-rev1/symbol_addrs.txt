@@ -3232,11 +3232,11 @@ __floatdisf = 0x802C6A00; // ROM 0x0C7600
 D_802C6AB0 = 0x802C6AB0; // ROM 0x0C76B0
 
 // Placed at this cartridge's own address: functions shared with the reference cartridge under its spelling, and the names authored C references here.
-D_800C928C = 0x800C928C; // type:f32
-D_800C9294 = 0x800C9294; // type:f32
-D_800E2AB4 = 0x800E2AB4; // type:s32
-D_8014D930 = 0x8014D930; // type:s64
-D_8014ED10 = 0x8014ED10; // type:u64
+D_800C928C = 0x800C928C; // type:f32 absolute:True
+D_800C9294 = 0x800C9294; // type:f32 absolute:True
+D_800E2AB4 = 0x800E2AB4; // type:s32 absolute:True
+D_8014D930 = 0x8014D930; // type:s64 absolute:True
+D_8014ED10 = 0x8014ED10; // type:u64 absolute:True
 
 // Data in the text stream at the start of a code subsegment: typed here, so the subsegment is
 // counted as data and not as a function (`decomp check data-in-code`). One table, one spelling
@@ -3247,10 +3247,10 @@ D_8044B498 = 0x8044B498; // type:u32 size:0x5A8
 // typed here so each is counted as data and not as a function (`decomp check data-in-code`).
 // Derived from this cartridge's own image and extraction; 1 line(s).
 D_8044BDC8 = 0x8044BDC8; // type:u32 size:0x208 ROM 0x1B9DC8
-D_800C725C = 0x800C725C; // type:u32 derived by the trial of func_80214DD4
-D_800C78BC = 0x800C78BC; // type:u32 derived by the trial of func_80220D20
-gFastRegen = 0x800C78B0; // type:u32 derived by the trial of func_80220D20
-gWorkBufferData = 0x801536B8; // type:u32 derived by the trial of func_804058B0
+D_800C725C = 0x800C725C; // type:u32 derived by the trial of func_80214DD4 absolute:True
+D_800C78BC = 0x800C78BC; // type:u32 derived by the trial of func_80220D20 absolute:True
+gFastRegen = 0x800C78B0; // type:u32 derived by the trial of func_80220D20 absolute:True
+gWorkBufferData = 0x801536B8; // type:u32 derived by the trial of func_804058B0 absolute:True
 func_80202460 = 0x80202460; // placed by decomp --version us-rev1 split functions --apply
 func_8020293C = 0x8020293C; // placed by decomp --version us-rev1 split functions --apply
 func_8025EA3C = 0x8025EA3C; // placed by decomp --version us-rev1 split functions --apply
@@ -3263,19 +3263,27 @@ func_802C201C = 0x802C201C; // placed by decomp --version us-rev1 split function
 func_802C205C = 0x802C205C; // placed by decomp --version us-rev1 split functions --apply
 func_802C2364 = 0x802C2364; // placed by decomp --version us-rev1 split functions --apply
 func_802C3E9C = 0x802C3E9C; // placed by decomp --version us-rev1 split functions --apply
-D_0044FB90 = 0x0044FB90; // type:u32 derived by the trial of func_8043CFD8
-D_44FB94 = 0x0044FB94; // type:u32 derived by the trial of func_8043D124
-D_00450854 = 0x00450854; // type:u32 derived by the trial of func_8043E81C
+D_0044FB90 = 0x0044FB90; // type:u32 derived by the trial of func_8043CFD8 absolute:True
+D_44FB94 = 0x0044FB94; // type:u32 derived by the trial of func_8043D124 absolute:True
+D_00450854 = 0x00450854; // type:u32 derived by the trial of func_8043E81C absolute:True
 func_8026D83C = 0x8026D83C; // placed by split-symbol-correction
-D_800C7C94 = 0x800C7C94; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7C94
-D_800C7C9C = 0x800C7C9C; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7C9C
-D_800C7CA4 = 0x800C7CA4; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7CA4
-D_800C7CAC = 0x800C7CAC; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7CAC
-D_800C8884 = 0x800C8884; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C8884
-D_800C888C = 0x800C888C; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C888C
-D_800C9CBC = 0x800C9CBC; // type:u32 derived by the trial of func_8027ADBC
-D_800C9CC4 = 0x800C9CC4; // type:u32 derived by the trial of func_8027ADBC
-D_800C9CCC = 0x800C9CCC; // type:u32 derived by the trial of func_8027ADBC
-D_800C9CD4 = 0x800C9CD4; // type:u32 derived by the trial of func_8027ADBC
-D_800C9CDC = 0x800C9CDC; // type:u32 derived by the trial of func_8027ADBC
-D_800D15F4 = 0x800D15F4; // type:u32 derived by the trial of func_8021A2D4
+D_800C7C94 = 0x800C7C94; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7C94 absolute:True
+D_800C7C9C = 0x800C7C9C; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7C9C absolute:True
+D_800C7CA4 = 0x800C7CA4; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7CA4 absolute:True
+D_800C7CAC = 0x800C7CAC; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C7CAC absolute:True
+D_800C8884 = 0x800C8884; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C8884 absolute:True
+D_800C888C = 0x800C888C; // type:u32 size:0x4 placed by decomp --version us-rev1 drift place --apply --symbol D_800C888C absolute:True
+D_800C9CBC = 0x800C9CBC; // type:u32 derived by the trial of func_8027ADBC absolute:True
+D_800C9CC4 = 0x800C9CC4; // type:u32 derived by the trial of func_8027ADBC absolute:True
+D_800C9CCC = 0x800C9CCC; // type:u32 derived by the trial of func_8027ADBC absolute:True
+D_800C9CD4 = 0x800C9CD4; // type:u32 derived by the trial of func_8027ADBC absolute:True
+D_800C9CDC = 0x800C9CDC; // type:u32 derived by the trial of func_8027ADBC absolute:True
+D_800D15F4 = 0x800D15F4; // type:u32 derived by the trial of func_8021A2D4 absolute:True
+func_80212664 = 0x80212664;
+func_802138E8 = 0x802138E8;
+func_8023F734 = 0x8023F734;
+func_8025E5C8 = 0x8025E5C8;
+func_80276D14 = 0x80276D14;
+func_802A0468 = 0x802A0468;
+func_802A1324 = 0x802A1324;
+func_802C0384 = 0x802C0384;

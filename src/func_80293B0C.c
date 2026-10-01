@@ -50,7 +50,7 @@ void func_80293B0C(void *arg0) {
     func_80286050((char *)state + 0x3C8);
     func_802394A4((char *)state + 0x255C8);
     func_802AB794((char *)state + 0x1BCF8);
-    /* Only us-rev1 makes this call: us, eu, eu-mul and de go straight on to func_80293378, two
+    /* Only us-rev1 makes this call: us, eu, eu-x and de go straight on to func_80293378, two
        instructions shorter, as each cartridge's own bytes show. */
 #ifdef VERSION_US_REV1
     func_80294F1C();

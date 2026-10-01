@@ -6,9 +6,9 @@
    and on failure sets the screen's modes 5 and 4 with timer 20, else reopens it with timer 0; the
    others pass codes 0x17, 13, 12 and 14 to func_8042EB68. Any handled message then runs
    func_80423370. Returns zero. */
-/* The first message this handles and how many it takes: eu-mul numbers the messages 4 higher, de 4
+/* The first message this handles and how many it takes: eu-x numbers the messages 4 higher, de 4
    lower and takes only 8, as each cartridge's own bytes show; us, us-rev1 and eu share 0x377 and 10. */
-#if defined(VERSION_EU_MUL)
+#if defined(VERSION_EU_X)
 #define FIRST_MESSAGE 0x37B
 #define MESSAGE_COUNT 10
 #elif defined(VERSION_DE)

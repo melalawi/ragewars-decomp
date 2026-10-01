@@ -8,7 +8,7 @@
 #if defined(VERSION_DE)
 #define VALUE_2C2 0x2E4
 #define VALUE_2C3 0x2E5
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_2C2 0x2D5
 #define VALUE_2C3 0x2D4
 #else

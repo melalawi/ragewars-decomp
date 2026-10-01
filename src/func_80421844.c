@@ -3,7 +3,7 @@
 
 #if defined(VERSION_DE)
 #define VV_03B8 0x3B2
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VV_03B8 0x3BC
 #else
 #define VV_03B8 0x3B8

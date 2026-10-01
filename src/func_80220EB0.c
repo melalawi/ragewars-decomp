@@ -1,27 +1,27 @@
-#include "../splat/types/shared/player_types.h"
-#include "../splat/types/shared/quad.h"
-#include "../splat/types/shared/scratch.h"
-#include "../splat/types/shared/placed.h"
-#include "../splat/types/shared/stateinfo.h"
-#include "../splat/types/shared/model.h"
-#include "../splat/types/shared/surface.h"
-#include "../splat/types/shared/pickupdef.h"
-#include "../splat/types/shared/pickup.h"
-#include "../splat/types/shared/world.h"
-#include "../splat/types/shared/charinfo.h"
-#include "../splat/types/shared/floor.h"
-#include "../splat/types/shared/body.h"
-#include "../splat/types/shared/profile.h"
-#include "../splat/types/shared/hud.h"
-#include "../splat/types/shared/shadow.h"
-#include "../splat/types/shared/voice.h"
-#include "../splat/types/shared/effect.h"
-#include "../splat/types/shared/input.h"
-#include "../splat/types/shared/slot.h"
-#include "../splat/types/shared/emitter.h"
-#include "../splat/types/shared/game.h"
-#include "../splat/types/shared/net.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player_types.h"
+#include "../include/shared/quad.h"
+#include "../include/shared/scratch.h"
+#include "../include/shared/placed.h"
+#include "../include/shared/stateinfo.h"
+#include "../include/shared/model.h"
+#include "../include/shared/surface.h"
+#include "../include/shared/pickupdef.h"
+#include "../include/shared/pickup.h"
+#include "../include/shared/world.h"
+#include "../include/shared/charinfo.h"
+#include "../include/shared/floor.h"
+#include "../include/shared/body.h"
+#include "../include/shared/profile.h"
+#include "../include/shared/hud.h"
+#include "../include/shared/shadow.h"
+#include "../include/shared/voice.h"
+#include "../include/shared/effect.h"
+#include "../include/shared/input.h"
+#include "../include/shared/slot.h"
+#include "../include/shared/emitter.h"
+#include "../include/shared/game.h"
+#include "../include/shared/net.h"
+#include "../include/shared/player.h"
 
 
 typedef Shared_Quad Quad;
@@ -63,7 +63,7 @@ extern f32 D_800C2A74;
 extern f32 D_800C2A78;
 #define RW_QUARTER D_800C2A74
 #define RW_THIRD D_800C2A78
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 extern f32 D_800C2AB4;
 extern f32 D_800C2AB8;
 #define RW_QUARTER D_800C2AB4
@@ -97,7 +97,7 @@ extern s32 D_801521D0;
 extern s32 D_801102EC;
 #define RW_INPUT_GATE D_801521D0
 #define RW_MODE D_801102EC
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 extern s32 D_8014C1D0;
 extern s32 D_8010A2EC;
 #define RW_INPUT_GATE D_8014C1D0

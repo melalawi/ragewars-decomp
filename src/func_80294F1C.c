@@ -1,6 +1,6 @@
-#include "../splat/types/shared/menuselection.h"
-#include "../splat/types/shared/menuglobal.h"
-#include "../splat/types/shared/menutextbuffer.h"
+#include "../include/shared/menuselection.h"
+#include "../include/shared/menuglobal.h"
+#include "../include/shared/menutextbuffer.h"
 /* Handles repeated menu navigation inputs and draws the current menu display. */
 /* The values func_80294F1C loads by address:
  * 0x800CA634 = 1.0 (float, D_800CA634 in this cartridge's tables)

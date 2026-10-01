@@ -3,7 +3,7 @@
 
 #if defined(VERSION_DE)
 #define VALUE_13A 0x138
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_13A 0x13E
 #else
 #define VALUE_13A 0x13A

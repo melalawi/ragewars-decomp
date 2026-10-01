@@ -1,7 +1,7 @@
-#include "../splat/types/shared/func_802856b0_s1.h"
-#include "../splat/types/shared/func_802856b0_s2.h"
-#include "../splat/types/shared/pointbits.h"
-#include "../splat/types/shared/pointcopy.h"
+#include "../include/shared/func_802856b0_s1.h"
+#include "../include/shared/func_802856b0_s2.h"
+#include "../include/shared/pointbits.h"
+#include "../include/shared/pointcopy.h"
 /* Computes a clamped influence from linked emitters at a three-dimensional point. */
 #define NULL ((void *)0)
 /*

@@ -4,7 +4,7 @@
 
 #if defined(VERSION_DE)
 #define VALUE_239 0x235
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_239 0x23E
 #else
 #define VALUE_239 0x239

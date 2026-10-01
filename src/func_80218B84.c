@@ -8,7 +8,7 @@
    announces the chosen team with its message and sound, and slides closed, the menu's spin at 0x14
    turning while it is shown. */
 #include "basetypes.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Controls {
@@ -49,7 +49,7 @@ extern s32 D_800E0FF4[];
 extern s32 D_800E1004[];
 extern s32 D_800E1014[];
 extern s32 D_800E1024[];
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 extern s32 D_800DCE6C[];
 extern s32 D_800DCE78[];
 extern s32 D_800DCE84[];
@@ -129,7 +129,7 @@ run:
         case 0:
 #ifdef VERSION_EU
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800E0FF4[((u8 *) &D_80145088)[0x17C1]]);
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800DCE6C[((u8 *) &D_80145088)[0x17C1]]);
 #else
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800D7194);
@@ -139,7 +139,7 @@ run:
         case 1:
 #ifdef VERSION_EU
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800E1004[((u8 *) &D_80145088)[0x17C1]]);
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800DCE78[((u8 *) &D_80145088)[0x17C1]]);
 #else
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800D7198);
@@ -149,7 +149,7 @@ run:
         case 2:
 #ifdef VERSION_EU
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800E1014[((u8 *) &D_80145088)[0x17C1]]);
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800DCE84[((u8 *) &D_80145088)[0x17C1]]);
 #else
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800D719C);
@@ -159,7 +159,7 @@ run:
         case 3:
 #ifdef VERSION_EU
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800E1024[((u8 *) &D_80145088)[0x17C1]]);
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800DCE90[((u8 *) &D_80145088)[0x17C1]]);
 #else
             func_80237E70(&D_80145088, player->views5DC.view5DC_1.view, D_800D71A0);

@@ -2,7 +2,7 @@
 
 #if defined(VERSION_DE)
 #define VALUE_73 0x71
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_73 0x77
 #else
 #define VALUE_73 0x73

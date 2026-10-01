@@ -1,5 +1,5 @@
 #include "basetypes.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct RiderTriple { s32 a, b, c; } RiderTriple;

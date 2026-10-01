@@ -33,7 +33,7 @@ extern struct Cell D_800E51E4[];
 extern struct Cell D_800E51F8[];
 extern struct Cell D_800E5214[];
 extern struct Cell D_800E5240[];
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 extern char *D_800E1DA4[];
 #define DEFAULT_LABEL D_800E1DA4[D_80152789]

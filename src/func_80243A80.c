@@ -1,10 +1,10 @@
-#include "../splat/types/shared/func80243a80actor.h"
-#include "../splat/types/shared/func80243a80global.h"
-#include "../splat/types/shared/func80243a80state.h"
-#include "../splat/types/shared/func80243a80collision.h"
-#include "../splat/types/shared/func80243a80frame.h"
-#include "../splat/types/shared/func80243a80vec3.h"
-#include "../splat/types/shared/func80243a80bits.h"
+#include "../include/shared/func80243a80actor.h"
+#include "../include/shared/func80243a80global.h"
+#include "../include/shared/func80243a80state.h"
+#include "../include/shared/func80243a80collision.h"
+#include "../include/shared/func80243a80frame.h"
+#include "../include/shared/func80243a80vec3.h"
+#include "../include/shared/func80243a80bits.h"
 /* Moves an actor through collision queries and resolves its position and contact state. */
 #define NULL ((void *)0)
 /*
@@ -132,7 +132,7 @@ extern float D_800C8880;
 #elif defined(VERSION_US)
 #define D_800C8880 D_800C36C0
 extern float D_800C36C0;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800C8880 D_800C3A80
 extern float D_800C3A80;
 #elif defined(VERSION_DE)
@@ -145,7 +145,7 @@ extern float D_800C8884;
 #elif defined(VERSION_US)
 #define D_800C8884 D_800C36C4
 extern float D_800C36C4;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800C8884 D_800C3A84
 extern float D_800C3A84;
 #elif defined(VERSION_DE)
@@ -158,7 +158,7 @@ extern float D_800C8888;
 #elif defined(VERSION_US)
 #define D_800C8888 D_800C36C8
 extern float D_800C36C8;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800C8888 D_800C3A88
 extern float D_800C3A88;
 #elif defined(VERSION_DE)
@@ -171,7 +171,7 @@ extern float D_800C8890;
 #elif defined(VERSION_US)
 #define D_800C8890 D_800C36D0
 extern float D_800C36D0;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800C8890 D_800C3A90
 extern float D_800C3A90;
 #elif defined(VERSION_DE)
@@ -184,7 +184,7 @@ extern float D_800C8894;
 #elif defined(VERSION_US)
 #define D_800C8894 D_800C36D4
 extern float D_800C36D4;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800C8894 D_800C3A94
 extern float D_800C3A94;
 #elif defined(VERSION_DE)
@@ -197,7 +197,7 @@ extern float D_800C8898;
 #elif defined(VERSION_US)
 #define D_800C8898 D_800C36D8
 extern float D_800C36D8;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800C8898 D_800C3A98
 extern float D_800C3A98;
 #elif defined(VERSION_DE)
@@ -210,7 +210,7 @@ extern float D_800C888C;
 #elif defined(VERSION_US)
 #define D_800C888C D_800C36CC
 extern float D_800C36CC;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800C888C D_800C3A8C
 extern float D_800C3A8C;
 #elif defined(VERSION_DE)
@@ -223,7 +223,7 @@ extern s32 D_800D0650;
 #elif defined(VERSION_US)
 #define D_800D0650 D_800CB320
 extern s32 D_800CB320;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800D0650 D_800CC9C0
 extern s32 D_800CC9C0;
 #elif defined(VERSION_DE)
@@ -236,7 +236,7 @@ extern s32 D_800D0654;
 #elif defined(VERSION_US)
 #define D_800D0654 D_800CB324
 extern s32 D_800CB324;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800D0654 D_800CC9C4
 extern s32 D_800CC9C4;
 #elif defined(VERSION_DE)
@@ -249,7 +249,7 @@ extern M2C_UNK D_801041D0;
 #elif defined(VERSION_US)
 #define D_801041D0 D_800FE1D0
 extern M2C_UNK D_800FE1D0;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_801041D0 D_8010A1D0
 extern M2C_UNK D_8010A1D0;
 #elif defined(VERSION_DE)

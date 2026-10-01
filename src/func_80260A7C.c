@@ -1,5 +1,5 @@
-#include "../splat/types/shared/func_80260a7c_s1.h"
-#include "../splat/types/shared/encoderange.h"
+#include "../include/shared/func_80260a7c_s1.h"
+#include "../include/shared/encoderange.h"
 /* Quantizes a float into a range's bit width and writes the value into the packed bit words at an address. */
 
 typedef Shared_func_80260A7C_S1 func_80260A7C_S1;

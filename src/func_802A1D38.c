@@ -39,7 +39,7 @@ void func_802A1D38(void) {
     one = 1;
     if (D_800D2BC0 != one) {
         p = &D_800D2BB8;
-#ifdef VERSION_EU_MUL
+#ifdef VERSION_EU_X
         *p = 0x90385;
 #else
         *p = 0x8B245;

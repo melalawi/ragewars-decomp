@@ -1,27 +1,27 @@
-#include "../splat/types/shared/entry190.h"
-#include "../splat/types/shared/func_80227014_s1.h"
-#include "../splat/types/shared/func_80227014_s2.h"
-#include "../splat/types/shared/func_80227014_s3.h"
-#include "../splat/types/shared/func_80227014_s4.h"
-#include "../splat/types/shared/func_80227014_s5.h"
-#include "../splat/types/shared/func_80227014_s6.h"
-#include "../splat/types/shared/func_80227014_s7.h"
-#include "../splat/types/shared/func_80227014_s8.h"
-#include "../splat/types/shared/func_80227014_s9.h"
-#include "../splat/types/shared/func_80227014_s10.h"
-#include "../splat/types/shared/func_80227014_s11.h"
-#include "../splat/types/shared/func_80227014_s12.h"
-#include "../splat/types/shared/func_80227014_s13.h"
-#include "../splat/types/shared/func_80227014_s14.h"
-#include "../splat/types/shared/func_80227014_s15.h"
-#include "../splat/types/shared/func_80227014_s16.h"
-#include "../splat/types/shared/func_80227014_s17.h"
-#include "../splat/types/shared/func_80227014_s18.h"
-#include "../splat/types/shared/func_80227014_s19.h"
-#include "../splat/types/shared/func_80227014_s20.h"
-#include "../splat/types/shared/func_80227014_s21.h"
-#include "../splat/types/shared/func_80227014_s22.h"
-#include "../splat/types/shared/func_80227014_s23.h"
+#include "../include/shared/entry190.h"
+#include "../include/shared/func_80227014_s1.h"
+#include "../include/shared/func_80227014_s2.h"
+#include "../include/shared/func_80227014_s3.h"
+#include "../include/shared/func_80227014_s4.h"
+#include "../include/shared/func_80227014_s5.h"
+#include "../include/shared/func_80227014_s6.h"
+#include "../include/shared/func_80227014_s7.h"
+#include "../include/shared/func_80227014_s8.h"
+#include "../include/shared/func_80227014_s9.h"
+#include "../include/shared/func_80227014_s10.h"
+#include "../include/shared/func_80227014_s11.h"
+#include "../include/shared/func_80227014_s12.h"
+#include "../include/shared/func_80227014_s13.h"
+#include "../include/shared/func_80227014_s14.h"
+#include "../include/shared/func_80227014_s15.h"
+#include "../include/shared/func_80227014_s16.h"
+#include "../include/shared/func_80227014_s17.h"
+#include "../include/shared/func_80227014_s18.h"
+#include "../include/shared/func_80227014_s19.h"
+#include "../include/shared/func_80227014_s20.h"
+#include "../include/shared/func_80227014_s21.h"
+#include "../include/shared/func_80227014_s22.h"
+#include "../include/shared/func_80227014_s23.h"
 /* Updates the battle presentation and character banners for the active world. */
 #define NULL ((void *)0)
 /* The values func_80227014 loads by address:
@@ -79,7 +79,7 @@ extern s32 D_80152848;
 extern s32 D_8015284C;
 #define D_800CE408 D_800C9DA8
 extern s32 D_800C9DA8;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_80146908 D_8014C848
 extern s32 D_8014C848;
 #define D_8014690C D_8014C84C
@@ -102,7 +102,7 @@ extern void *jtbl_800C2AB0[];
 #elif defined(VERSION_EU)
 #define jtbl_800C7C70 jtbl_800C2E20
 extern void *jtbl_800C2E20[];
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define jtbl_800C7C70 jtbl_800C2E60
 extern void *jtbl_800C2E60[];
 #elif defined(VERSION_DE)
@@ -155,7 +155,7 @@ extern f32 D_800C2E54;
 extern f32 D_800C2E58;
 #define D_800C7CAC D_800C2E5C
 extern f32 D_800C2E5C;
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800C7C90 D_800C2E80
 extern f32 D_800C2E80;
 #define D_800C7C94 D_800C2E84

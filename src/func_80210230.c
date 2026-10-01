@@ -2,7 +2,7 @@
    other present player on another team (when team play is on) with health above one unit, along
    with its distance and score, and stores the final count. */
 #include "basetypes.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct TeamInfo {

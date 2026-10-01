@@ -4,7 +4,7 @@
 
 #if defined(VERSION_DE)
 #define VV_8B245 0x8BB01
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VV_8B245 0x90385
 #else
 #define VV_8B245 0x8B245

@@ -9,7 +9,7 @@
    than 10.24, and for mount kind 0x136 sets the rider offset at 0x814 and places the weapon at 0x73C
    along the body heading. */
 #include "basetypes.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 #define ABS(x) ((x) < 0.0f ? -(x) : (x))

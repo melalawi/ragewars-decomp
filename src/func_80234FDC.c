@@ -1,12 +1,12 @@
-#include "../splat/types/shared/func_80234fdc_s1.h"
-#include "../splat/types/shared/func_80234fdc_s2.h"
-#include "../splat/types/shared/func_80234fdc_s5.h"
-#include "../splat/types/shared/func_80234fdc_s4.h"
-#include "../splat/types/shared/func_80234fdc_s6.h"
-#include "../splat/types/shared/func_80234fdc_s3.h"
-#include "../splat/types/shared/func_80234fdc_s7.h"
-#include "../splat/types/shared/func_80234fdc_callback.h"
-#include "../splat/types/shared/func_80234fdc_s8.h"
+#include "../include/shared/func_80234fdc_s1.h"
+#include "../include/shared/func_80234fdc_s2.h"
+#include "../include/shared/func_80234fdc_s5.h"
+#include "../include/shared/func_80234fdc_s4.h"
+#include "../include/shared/func_80234fdc_s6.h"
+#include "../include/shared/func_80234fdc_s3.h"
+#include "../include/shared/func_80234fdc_s7.h"
+#include "../include/shared/func_80234fdc_callback.h"
+#include "../include/shared/func_80234fdc_s8.h"
 /* Updates the view and projection matrices and applies camera effects. */
 #define NULL ((void *)0)
 /*
@@ -138,7 +138,7 @@ typedef s64 M2C_UNK64;
 #elif defined(VERSION_EU)
 #define D_800D05C4 D_800CBF64
 #define func_802BB9D0 func_802B6830
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define D_800D05C4 D_800CC934
 #elif defined(VERSION_DE)
 #define D_800D05C4 D_800CB384

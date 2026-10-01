@@ -13,7 +13,7 @@ extern s32 func_8029AA08(void),func_8043C4E8(void *);
 #define MSG_C 0x273
 #define ARG_VAL 0x13
 #define VALUE_274 0x270
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define MSG_A 0x277
 #define MSG_B 0x278
 #define MSG_C 0x27C

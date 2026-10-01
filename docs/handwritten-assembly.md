@@ -21,7 +21,7 @@ in one column and absent from another is a different split, not a different game
 | `us` | 28 |
 | `us-rev1` | 33 |
 | `eu` | 33 |
-| `eu-mul` | 34 |
+| `eu-x` | 34 |
 | `de` | 32 |
 
 121 distinct intervals across the five splits, 160 interval-and-cartridge pairs in the table below.
@@ -35,7 +35,7 @@ Every count in this section is derived from the table below and is reproduced by
 `.` means the cartridge's split has no such interval. `instruction` is the privileged operation
 the interval was identified from; `words` is how many privileged instruction words it holds.
 
-| Function | `us` | `us-rev1` | `eu` | `eu-mul` | `de` | instruction | words |
+| Function | `us` | `us-rev1` | `eu` | `eu-x` | `de` | instruction | words |
 |---|---|---|---|---|---|---|---|
 | `func_80200400` | yes | yes | yes | yes | yes | `mfc0` | 17 |
 | `func_80200488` | . | yes | . | . | . | `mfc0` | 10 |

@@ -7,7 +7,7 @@
    units at 0x104, and otherwise the turning animations follow the heading change this frame (0xA28
    while the body is falling, with a separate set for the character D_800CED30). */
 #include "basetypes.h"
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct {

@@ -7,7 +7,7 @@
 
 #if defined(VERSION_DE)
 #define VALUE_3CC 0x3C6
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define VALUE_3CC 0x3D0
 #else
 #define VALUE_3CC 0x3CC

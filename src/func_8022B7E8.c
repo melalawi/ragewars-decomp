@@ -3,7 +3,7 @@
 /** Start the actor effect and attach optional source-specific resources; the European cartridges pick
     each resource from a per-language table. */
 
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
 typedef struct {
     char pad0[0x581];
     u8 language;
@@ -57,7 +57,7 @@ void func_8022B7E8(void *arg0, void *arg1) {
     char *source = arg1;
     void *owner;
     void *payload;
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
     Game *game;
     Settings *settings;
 #endif
@@ -74,7 +74,7 @@ void func_8022B7E8(void *arg0, void *arg1) {
         return;
     }
 
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
     game = &D_80145088;
     settings = &game->settings;
 #endif

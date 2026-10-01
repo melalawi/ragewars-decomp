@@ -1,6 +1,6 @@
 #include "basetypes.h"
 
-#ifdef VERSION_EU_MUL
+#ifdef VERSION_EU_X
 #define VV_026D 0x271
 #define VV_026A 0x26E
 #define VV_026C 0x270

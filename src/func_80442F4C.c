@@ -1,4 +1,4 @@
-/* Selects the descriptor for a single masked category bit; on eu and eu-mul the slot is
+/* Selects the descriptor for a single masked category bit; on eu and eu-x the slot is
    additionally offset by nine descriptors per local player, read from the byte after D_80146848. */
 #include "basetypes.h"
 typedef struct { char pad[8]; u32 flags; } Obj;
@@ -18,7 +18,7 @@ void *func_80442F4C(Obj *arg0) {
  case 0x2000: index=8; break;
  default: index=0; break;
  }
-#if defined(VERSION_EU) || defined(VERSION_EU_MUL)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
  index += (&D_80146848)[1] * 9;
 #endif
  return D_800E5E74+index*28;

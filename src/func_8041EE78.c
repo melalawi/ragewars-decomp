@@ -8,7 +8,7 @@ extern Obj *func_8040ECB0(int,int);
 
 #ifdef VERSION_DE
 #define ITEM_TYPE 0x38C
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define ITEM_TYPE 0x396
 #else
 #define ITEM_TYPE 0x392

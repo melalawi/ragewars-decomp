@@ -5,7 +5,7 @@
  * and finishes the entity through func_80245884. */
 #include "basetypes.h"
 
-#include "../splat/types/shared/player.h"
+#include "../include/shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct {

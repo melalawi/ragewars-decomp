@@ -1,8 +1,8 @@
-#include "../splat/types/shared/player_types.h"
-#include "../splat/types/shared/quat.h"
-#include "../splat/types/shared/func_8027adbc_s2.h"
-#include "../splat/types/shared/func_8027adbc_s3.h"
-#include "../splat/types/shared/func_8027adbc_s6.h"
+#include "../include/shared/player_types.h"
+#include "../include/shared/quat.h"
+#include "../include/shared/func_8027adbc_s2.h"
+#include "../include/shared/func_8027adbc_s3.h"
+#include "../include/shared/func_8027adbc_s6.h"
 /* Updates a moving effect using its type, nearby players, and tracked target. */
 #define NULL ((void *)0)
 #if defined(VERSION_US_REV1)
@@ -74,7 +74,7 @@ extern f32 D_800C4EA0;
 #define EFFECT_CONST_9 D_800C4EA0
 extern f32 D_800C4EA4;
 #define EFFECT_CONST_10 D_800C4EA4
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 extern f32 D_800C4EBC;
 #define EFFECT_CONST_0 D_800C4EBC
 extern f32 D_800C4EC0;

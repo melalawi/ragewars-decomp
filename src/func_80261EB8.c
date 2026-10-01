@@ -1,6 +1,6 @@
-#include "../splat/types/shared/func_80261eb8_s1.h"
-#include "../splat/types/shared/func_80261eb8_s2.h"
-#include "../splat/types/shared/func_80261eb8_s3.h"
+#include "../include/shared/func_80261eb8_s1.h"
+#include "../include/shared/func_80261eb8_s2.h"
+#include "../include/shared/func_80261eb8_s3.h"
 /* Selects adjacent animation frames and interpolation weights for a track. */
 #define NULL ((void *)0)
 #if defined(VERSION_US_REV1)
@@ -12,7 +12,7 @@
 #elif defined(VERSION_EU)
 #define TrackUnit D_800C44A8
 #define TrackLastUnit D_800C44D8
-#elif defined(VERSION_EU_MUL)
+#elif defined(VERSION_EU_X)
 #define TrackUnit D_800C44E8
 #define TrackLastUnit D_800C4518
 #elif defined(VERSION_DE)
