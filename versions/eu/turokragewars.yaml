@@ -27,6 +27,7 @@ options:
   generated_asm_macros_directory: asm/eu/include
   undefined_funcs_auto_path: build/eu/undefined_funcs_auto.txt
   undefined_syms_auto_path: build/eu/undefined_syms_auto.txt
+  ld_align_section_vram_end: false
   ld_legacy_generation: true
   create_asm_dependencies: true
   o_as_suffix: false
