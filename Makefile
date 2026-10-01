@@ -1,11 +1,11 @@
 # Turok: Rage Wars matching decompilation.
 # make setup; make extract; make; make clean; make distclean
-# VERSION: de eu-x eu us-rev1 us. COMPARE=0 skips comparison.
+# VERSION: us us-rev1 eu eu-x de. COMPARE=0 skips comparison.
 .DEFAULT_GOAL := all
 .SUFFIXES:
 .DELETE_ON_ERROR:
 .SECONDARY:
-VERSIONS := de eu-x eu us-rev1 us
+VERSIONS := us us-rev1 eu eu-x de
 COMPARE ?= 1
 NON_MATCHING ?= 0
 ifeq ($(filter $(NON_MATCHING),0 1),)
@@ -52,25 +52,25 @@ else
 ifeq ($(filter $(VERSION),$(VERSIONS)),)
 $(error HELD(build): unknown VERSION=$(VERSION))
 endif
-ifeq ($(VERSION),de)
-SPLIT := versions/de/turokragewars.yaml
-SYMBOLS := versions/de/symbol_addrs.txt
-endif
-ifeq ($(VERSION),eu-x)
-SPLIT := versions/eu-x/turokragewars.yaml
-SYMBOLS := versions/eu-x/symbol_addrs.txt
-endif
-ifeq ($(VERSION),eu)
-SPLIT := versions/eu/turokragewars.yaml
-SYMBOLS := versions/eu/symbol_addrs.txt
+ifeq ($(VERSION),us)
+SPLIT := versions/us/turokragewars.yaml
+SYMBOLS := versions/us/symbol_addrs.txt
 endif
 ifeq ($(VERSION),us-rev1)
 SPLIT := versions/us-rev1/turokragewars.yaml
 SYMBOLS := versions/us-rev1/symbol_addrs.txt
 endif
-ifeq ($(VERSION),us)
-SPLIT := versions/us/turokragewars.yaml
-SYMBOLS := versions/us/symbol_addrs.txt
+ifeq ($(VERSION),eu)
+SPLIT := versions/eu/turokragewars.yaml
+SYMBOLS := versions/eu/symbol_addrs.txt
+endif
+ifeq ($(VERSION),eu-x)
+SPLIT := versions/eu-x/turokragewars.yaml
+SYMBOLS := versions/eu-x/symbol_addrs.txt
+endif
+ifeq ($(VERSION),de)
+SPLIT := versions/de/turokragewars.yaml
+SYMBOLS := versions/de/symbol_addrs.txt
 endif
 
 all: $(ROM)

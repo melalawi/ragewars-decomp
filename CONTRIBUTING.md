@@ -5,7 +5,7 @@ named in the Makefile. Supply the compiler files under `tools` and verify them
 against `tools/compiler.sha256`.
 
 Place your own big-endian cartridge dump at `baserom.<version>.z64` in this
-repository. Supported versions: de eu-x eu us-rev1 us.
+repository. Supported versions: us us-rev1 eu eu-x de.
 
 Plain `make` and `make check` build and verify every VERSION. Pass
 `VERSION=<version>` to build just one.
