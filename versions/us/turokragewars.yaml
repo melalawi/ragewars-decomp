@@ -4293,7 +4293,7 @@ segments:
       - [0x1A3290, c, func_8043F290]
       - [0x1A3404, c, func_8043F404]
       - [0x1A369C, asm, func_8043F69C]
-      - [0x1A3FAC, asm, func_8043FFAC]
+      - [0x1A3FAC, c, func_8043FFAC]
       - [0x1A444C, c, func_8044044C]
       - [0x1A4618, c, func_80440618]
       - [0x1A49A8, asm, func_804409A8]

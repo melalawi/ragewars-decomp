@@ -4279,7 +4279,7 @@ segments:
       - [0x1B5FC0, c, func_8043F290]
       - [0x1B6134, c, func_8043F404]
       - [0x1B63CC, asm, func_8043F69C]
-      - [0x1B6D10, asm, func_8043FFAC]
+      - [0x1B6D10, c, func_8043FFAC]
       - [0x1B71C4, c, func_8044044C]
       - [0x1B7390, asm, func_80440618]
       - [0x1B7730, asm, func_804409A8]

@@ -4253,7 +4253,7 @@ segments:
       - [0x1300F0, c, func_8043F290]
       - [0x130264, c, func_8043F404]
       - [0x1304FC, asm, func_804403CC]
-      - [0x130E40, asm, func_8043FFAC]
+      - [0x130E40, c, func_8043FFAC]
       - [0x1312F4, c, func_8044044C]
       - [0x1314C0, asm, func_80440618]
       - [0x131860, asm, func_804409A8]
