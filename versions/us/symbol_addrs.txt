@@ -8236,3 +8236,4 @@ func_804030E0 = 0x804030E0; // type:func size:0x120
 func_804037E8 = 0x804037E8;
 HUD_NAME_FORMAT = 0x800C252C;
 func_80216288 = 0x80216288; // type:func size:0x200
+func_8023CFB0 = 0x8023CFB0;
