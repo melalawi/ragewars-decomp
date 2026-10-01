@@ -1242,7 +1242,7 @@ segments:
       - [0x052B0C, c, func_80251F0C]
       - [0x053050, c, func_80252450]
       - [0x053314, c, func_80252714]
-      - [0x0535E4, asm, func_802529E4]
+      - [0x0535E4, c, func_802529E4]
       - [0x053BFC, c, func_80252FFC]
       - [0x053E94, c, func_80253294]
       - [0x053EA0, c, func_802532A0]

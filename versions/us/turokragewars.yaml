@@ -1232,7 +1232,7 @@ segments:
       - [0x052AFC, c, func_80251F0C]
       - [0x053040, c, func_80252450]
       - [0x053304, c, func_80252714]
-      - [0x0535D4, asm, func_802529E4]
+      - [0x0535D4, c, func_802529E4]
       - [0x053BEC, c, func_80252FFC]
       - [0x053E84, c, func_80253294]
       - [0x053E90, c, func_802532A0]
