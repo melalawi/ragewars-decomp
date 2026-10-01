@@ -1,18 +1,18 @@
 {
   "measures": {
-    "fuzzy_match_percent": 75.363235,
+    "fuzzy_match_percent": 75.76092,
     "total_code": 1089312,
-    "matched_code": 805228,
-    "matched_code_percent": 73.920784,
+    "matched_code": 809560,
+    "matched_code_percent": 74.31847,
     "matched_data_percent": 100.0,
     "total_functions": 4326,
-    "matched_functions": 3773,
-    "matched_functions_percent": 87.21683,
-    "complete_code": 802940,
-    "complete_code_percent": 73.71075,
+    "matched_functions": 3774,
+    "matched_functions_percent": 87.239944,
+    "complete_code": 807272,
+    "complete_code_percent": 74.10843,
     "complete_data_percent": 100.0,
     "total_units": 4302,
-    "complete_units": 3763
+    "complete_units": 3764
   },
   "units": [
     {
@@ -145863,39 +145863,39 @@
     {
       "name": "func_80432488",
       "measures": {
+        "fuzzy_match_percent": 100.0,
         "total_code": "4332",
+        "matched_code": "4332",
+        "matched_code_percent": 100.0,
         "matched_data_percent": 100.0,
         "total_functions": 1,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "4332",
+        "complete_code_percent": 100.0,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "complete_units": 1
       },
       "sections": [
         {
-          "name": ".bss",
-          "fuzzy_match_percent": 100.0,
-          "metadata": {}
-        },
-        {
-          "name": ".data",
-          "fuzzy_match_percent": 100.0,
-          "metadata": {}
-        },
-        {
           "name": ".text",
           "size": "4332",
+          "fuzzy_match_percent": 100.0,
           "metadata": {}
         }
       ],
       "functions": [
         {
-          "name": "func_80432488_auto",
+          "name": "func_80432488",
           "size": "4332",
+          "fuzzy_match_percent": 100.0,
           "metadata": {},
           "address": "0"
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "source_path": "src/func_80432488.c"
       }
     },

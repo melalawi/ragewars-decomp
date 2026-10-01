@@ -1,18 +1,18 @@
 {
   "measures": {
-    "fuzzy_match_percent": 73.396774,
+    "fuzzy_match_percent": 73.39782,
     "total_code": 1115312,
-    "matched_code": 742416,
-    "matched_code_percent": 66.56577,
+    "matched_code": 746748,
+    "matched_code_percent": 66.95418,
     "matched_data_percent": 100.0,
     "total_functions": 4495,
-    "matched_functions": 3650,
-    "matched_functions_percent": 81.20133,
-    "complete_code": 741696,
-    "complete_code_percent": 66.50121,
+    "matched_functions": 3651,
+    "matched_functions_percent": 81.22359,
+    "complete_code": 746028,
+    "complete_code_percent": 66.889626,
     "complete_data_percent": 100.0,
     "total_units": 4417,
-    "complete_units": 3643
+    "complete_units": 3644
   },
   "units": [
     {
@@ -149895,28 +149895,25 @@
     {
       "name": "func_80432488",
       "measures": {
-        "fuzzy_match_percent": 99.73222,
+        "fuzzy_match_percent": 100.0,
         "total_code": "4332",
+        "matched_code": "4332",
+        "matched_code_percent": 100.0,
         "matched_data_percent": 100.0,
         "total_functions": 1,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "4332",
+        "complete_code_percent": 100.0,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "complete_units": 1
       },
       "sections": [
         {
-          "name": ".bss",
-          "fuzzy_match_percent": 100.0,
-          "metadata": {}
-        },
-        {
-          "name": ".data",
-          "fuzzy_match_percent": 100.0,
-          "metadata": {}
-        },
-        {
           "name": ".text",
           "size": "4332",
-          "fuzzy_match_percent": 99.73222,
+          "fuzzy_match_percent": 100.0,
           "metadata": {}
         }
       ],
@@ -149924,13 +149921,13 @@
         {
           "name": "func_80432488",
           "size": "4332",
-          "fuzzy_match_percent": 99.73222,
+          "fuzzy_match_percent": 100.0,
           "metadata": {},
           "address": "0"
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "source_path": "src/func_80432488.c"
       }
     },

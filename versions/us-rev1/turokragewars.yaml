@@ -4089,7 +4089,7 @@ segments:
       - [0x19E5D8, c, func_804305D8]
       - [0x19E8B8, c, func_804308B8]
       - [0x1A0334, c, func_80432334]
-      - [0x1A0488, asm, func_80432488]
+      - [0x1A0488, c, func_80432488]
       - [0x1A1574, c, func_80433574]
       - [0x1A17EC, c, func_804337EC]
       - [0x1A1AF0, c, func_80433AF0]

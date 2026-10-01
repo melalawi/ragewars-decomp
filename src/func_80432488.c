@@ -1,86 +1,7 @@
-#ifdef NON_MATCHING
 /* Updates the selected player's setup panel and its linked controls. */
-typedef signed char s8;
-typedef unsigned char u8;
-typedef signed short s16;
-typedef unsigned short u16;
-typedef signed int s32;
-typedef unsigned int u32;
-typedef signed long long s64;
-typedef unsigned long long u64;
-typedef float f32;
-typedef double f64;
-#define NULL ((void *)0)
+#include "basetypes.h"
+#include "shared/playerpanel.h"
 
-
-#ifndef M2C_MACROS_H
-#define M2C_MACROS_H
-
-/* Unknown types */
-typedef s32 M2C_UNK;
-typedef s8  M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-
-/* Unknown field access, like `*(type_ptr) &expr->unk_offset` */
-
-/* Bitwise (reinterpret) cast */
-#define M2C_BITWISE(type, expr) ((type)(expr))
-
-/* Unaligned reads */
-#define M2C_LWL(expr) (expr)
-#define M2C_FIRST3BYTES(expr) (expr)
-#define M2C_UNALIGNED32(expr) (expr)
-
-/* Unhandled instructions */
-#define M2C_ERROR(desc) (0)
-#define M2C_TRAP_IF(cond) (0)
-#define M2C_BREAK() (0)
-#define M2C_SYNC() (0)
-#define M2C_DCACHE_CLEAN(addr) (0)
-#define M2C_DCACHE_INVALIDATE(addr) (0)
-#define M2C_DCACHE_CLEAN_INVALIDATE(addr) (0)
-#define M2C_DCACHE_BLOCK_SETZERO(addr) (0)
-#define M2C_DCACHE_BLOCK_SETZERO_LOCKED(addr) (0)
-#define M2C_ICACHE_INVALIDATE(addr) (0)
-#define M2C_PREFETCH(addr) (0)
-#define M2C_PREFETCH_STORE(addr) (0)
-
-#define GLUE_F64(a, b) (0.0)
-#define MULT_HI(a, b) (0)
-#define MULTU_HI(a, b) (0)
-#define DMULT_HI(a, b) (0)
-#define DMULTU_HI(a, b) (0)
-#define CLZ(x) (0)
-#define REVERSE_BITS(x) (0)
-#define ROTATE_RIGHT(x, shift) (0)
-#define ARM_RRX(x, carry) (0)
-#define BSWAP32(x) (0)
-#define BSWAP16(x) (0)
-#define BSWAP16X2(x) (0)
-
-/* Carry/overflow bits from partially-implemented instructions */
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-
-/* Memcpy patterns */
-#define M2C_MEMCPY_ALIGNED memcpy
-#define M2C_MEMCPY_UNALIGNED memcpy
-#define M2C_STRUCT_COPY memcpy
-
-/* Sh2 control register loads/stores */
-#define M2C_LOAD_SR() (0)
-#define M2C_LOAD_GBR() (0)
-#define M2C_LOAD_VBR() (0)
-#define M2C_STORE_SR(a)
-#define M2C_STORE_GBR(a)
-#define M2C_STORE_VBR(a)
-
-#define M2C_CMP_STR(a, b) (0)
-#define M2C_TAS_B(a) (0)
-
-#endif
 int func_80264634(int);
 u8 * func_802A125C(u8 *, u8 *);
 void func_802A338C(void);
@@ -100,32 +21,27 @@ void func_80434E08(s32);
 s32 func_80435704(void);
 void func_80435958(s32);
 void func_8043C458(s32 *);
-M2C_UNK func_80433F14();                         /* extern */
+s32 func_80433F14();                         /* extern */
 #if defined(VERSION_US)
 extern int jtbl_800DCA80;
 extern int jtbl_800DCAF8;
 extern s8 D_800DCA78[8];
-#define PANEL_FORMAT D_800DCA78
 #elif defined(VERSION_EU)
 extern int jtbl_800EE450;
 extern int jtbl_800EE4C8;
 extern s8 D_800EE448[8];
-#define PANEL_FORMAT D_800EE448
 #elif defined(VERSION_EU_X)
 extern int jtbl_800E9610;
 extern int jtbl_800E9688;
 extern s8 D_800E9608[8];
-#define PANEL_FORMAT D_800E9608
 #elif defined(VERSION_DE)
 extern int jtbl_800DDDD0;
 extern int jtbl_800DDE48;
 extern s8 D_800DDDC8[8];
-#define PANEL_FORMAT D_800DDDC8
 #else
 extern int jtbl_800E1E00;
 extern int jtbl_800E1E78;
 extern s8 D_800E1DF8[8];
-#define PANEL_FORMAT D_800E1DF8
 #endif
 extern s32 D_800E3510;
 extern s32 D_800E3514;
@@ -187,120 +103,6 @@ extern s32 D_800E3514;
 #define CHECK_2_ID 0x29D
 #define CHECK_DEFAULT_ID 0x29F
 #endif
-typedef struct func_80432488_S1 func_80432488_S1;
-typedef struct func_80432488_S2 func_80432488_S2;
-typedef struct func_80432488_S3 func_80432488_S3;
-typedef struct func_80432488_S4 func_80432488_S4;
-typedef struct func_80432488_S5 func_80432488_S5;
-typedef struct func_80432488_S6 func_80432488_S6;
-typedef struct func_80432488_S7 func_80432488_S7;
-typedef struct func_80432488_S8 func_80432488_S8;
-typedef struct func_80432488_S9 func_80432488_S9;
-typedef struct func_80432488_S10 func_80432488_S10;
-typedef struct func_80432488_S11 func_80432488_S11;
-typedef struct {
-    u32 state;
-    char pad4[0x8];
-    void *panel;
-    void *root;
-    char pad14[0x4];
-    char rosterNames[0x668];
-    char rosterDetails[0xB34 - 0x680];
-    char chars[0x10];
-    s32 valueB44;
-    s32 valueB48;
-    s32 valueB4C;
-    char textB50[0xB68 - 0xB50];
-} PanelRecordView;
-struct func_80432488_S1 {
-    union {
-        struct {
-            void* unk0;
-            void* unk4;
-            s32 unk8;
-            u8 unkC;
-            char padC[0x47];
-            u32 unk54;
-            char pad54[0x2DA0];
-            s32 unk2DF8;
-            s32 unk2DFC;
-            s32 unk2E00;
-        } f;
-        u8 bytes[0x2E04];
-        struct {
-            char pad0[0x58];
-            PanelRecordView players[4];
-        } panelView;
-    } v;
-};
-struct func_80432488_S2 {
-    char pad0[0x34];
-    s32 unk34;
-    void* unk38;
-};
-struct func_80432488_S3 {
-    char unk0[1];
-};
-struct func_80432488_S4 {
-    char pad0[0x64];
-    void* unk64;
-    char pad64[0xADC];
-    s32 unkB44;
-};
-struct func_80432488_S5 {
-    char pad0[0x38];
-    void* unk38;
-};
-struct func_80432488_S6 {
-    char pad0[0x64];
-    void* unk64;
-    char pad64[0xAC8];
-    s32 unkB30;
-};
-struct func_80432488_S7 {
-    char pad0[0x38];
-    void* unk38;
-};
-struct func_80432488_S8 {
-    char pad0[0xBA0];
-    s32 unkBA0;
-    s32 unkBA4;
-};
-struct func_80432488_S9 {
-    char pad0[0x8];
-    func_80432488_S10 * unk8;
-    char pad8[0x4];
-    u8 unk10;
-    char pad10[0x27];
-    void* unk38;
-};
-struct func_80432488_S10 {
-    char pad0[0x38];
-    void* unk38;
-};
-struct func_80432488_S11 {
-    char pad0[0x64];
-    void* unk64;
-    char pad64[0xB1C];
-    s32 unkB84;
-};
-
-typedef struct {
-    char pad0[0x58];
-    u32 state;
-    char pad5C[0x8];
-    void *panel;
-    void *root;
-    char pad6C[0x4];
-    char slot70[0x668];
-    char slot6D8[0x4B4];
-    s8 chars[2];
-    char padB8E[0xE];
-    s32 valueB9C;
-    char padBA0[0x8];
-    char textBA8[1];
-} PlayerPanel;
-
 extern func_80432488_S1 *D_800E54A4;
 
 #if defined(VERSION_DE)
@@ -573,8 +375,9 @@ void func_80432488(s32 arg0) {
     s32 temp_s0_7;
     s32 temp_s0_8;
     s32 temp_s0_9;
-    s32 temp_s1_2;
-    s32 temp_s2; /* FAKEMATCH: share the case-0 text node and offset with both later counters; case-0 local conflicts reserve their target s2. */
+    s32 text_node; /* FAKEMATCH: share the case-0 and character text nodes; the latter conflicts with the s1 control, reserving s2 for both disjoint lifetimes. */
+    s32 case0_offset; /* FAKEMATCH: isolate the case-0 offset from the character and slot counters. */
+    s32 temp_s2; /* FAKEMATCH: share the character and slot counters to retain s2 without outranking the s1 control. */
     s32 temp_v0_15;
     s32 slot_active;
     s32 character_panel_cursor; /* FAKEMATCH: separate the character-control offset live range from formatting. */
@@ -588,8 +391,7 @@ void func_80432488(s32 arg0) {
     s32 case16_offset; /* FAKEMATCH: keep the second roster arm offset in its own local allocation quantity. */
     s32 var_s0_2; /* FAKEMATCH: isolate the shared panel-only tail from the roster and character loops. */
     /* FAKEMATCH: reuse the character offset for both slot labels; the shared s2 counter now excludes s0, so this raises the offset priority safely. */
-    s32 var_s1;
-    s32 var_s1_2;
+    s32 var_s1; /* FAKEMATCH: share the roster indexes, slot flag, and linked control across disjoint arms; their combined priority reserves s1 before the s2 counter. */
     s32 var_v0;
     s32 var_v1_2;
     s8 *temp_s1;
@@ -630,7 +432,6 @@ void func_80432488(s32 arg0) {
     void *var_a0_2;
     void *var_a0_3;
     void *var_a0_4;
-    func_80432488_S9 *var_s1_3;
     func_80432488_S1 *var_v1;
 
     temp_s0 = arg0 * 0xB68;
@@ -647,41 +448,56 @@ void func_80432488(s32 arg0) {
         temp_v0 = func_8040ECB0(D_800E54A4->v.panelView.players[arg0].root, PANEL_ROOT_ID);
         D_800E54A4->v.panelView.players[arg0].panel = temp_v0;
         func_8040E958(temp_v0, 1);
-        temp_s2 = (s32)func_8040ECB0(D_800E54A4->v.panelView.players[arg0].panel, PANEL_TEXT_ID);
-        ((func_80432488_S2 *)temp_s2)->unk38 = D_800E54A4->v.panelView.players[arg0].textB50;
+        text_node = (s32)func_8040ECB0(D_800E54A4->v.panelView.players[arg0].panel, PANEL_TEXT_ID);
+        ((func_80432488_S2 *)text_node)->unk38 = D_800E54A4->v.panelView.players[arg0].textB50;
         temp_v1_2 = D_800E54A4->v.f.unk54;
+        /* FAKEMATCH: keep both lookups in each mode arm until allocation; final tail merging stages the copy source in a1 before the multiply. */
         switch (temp_v1_2) {                        /* switch 2 */
         case 1:                                     /* switch 2 */
         case 7:                                     /* switch 2 */
-            var_a0 = MODE_17_ID;
+            temp_s1 = func_80411DF8(MODE_17_ID);
+            temp_copy_source = func_80411DF8(((func_80432488_S2 *)text_node)->unk34);
             break;
         case 2:                                     /* switch 2 */
-            var_a0 = MODE_2_ID;
+            temp_s1 = func_80411DF8(MODE_2_ID);
+            temp_copy_source = func_80411DF8(((func_80432488_S2 *)text_node)->unk34);
             break;
         case 3:                                     /* switch 2 */
-            var_a0 = MODE_3_ID;
+            temp_s1 = func_80411DF8(MODE_3_ID);
+            temp_copy_source = func_80411DF8(((func_80432488_S2 *)text_node)->unk34);
             break;
         case 4:                                     /* switch 2 */
         case 6:                                     /* switch 2 */
-            var_a0 = MODE_46_ID;
+            temp_s1 = func_80411DF8(MODE_46_ID);
+            temp_copy_source = func_80411DF8(((func_80432488_S2 *)text_node)->unk34);
             break;
         case 5:                                     /* switch 2 */
-            var_a0 = MODE_5_ID;
+            temp_s1 = func_80411DF8(MODE_5_ID);
+            temp_copy_source = func_80411DF8(((func_80432488_S2 *)text_node)->unk34);
             break;
         case 0:                                     /* switch 2 */
         default:                                    /* switch 2 */
-            var_a0 = MODE_DEFAULT_ID;
+            temp_s1 = func_80411DF8(MODE_DEFAULT_ID);
+            temp_copy_source = func_80411DF8(((func_80432488_S2 *)text_node)->unk34);
             break;
         }
-        temp_s1 = func_80411DF8(var_a0);
-        temp_copy_source = func_80411DF8(((func_80432488_S2 *)temp_s2)->unk34);
-        temp_s2 = arg0 * 0xB68;
-        temp_s0_3 = temp_s2 + FIELD_OFFSET(PlayerPanel, state);
+        case0_offset = arg0 * 0xB68;
+        temp_s0_3 = case0_offset + FIELD_OFFSET(PlayerPanel, state);
         func_802A125C(((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_3])->textB50, temp_copy_source);
-        func_8042EB94(((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_3])->textB50, PANEL_FORMAT, temp_s1);
+#if defined(VERSION_US)
+        func_8042EB94(((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_3])->textB50, D_800DCA78, temp_s1);
+#elif defined(VERSION_EU)
+        func_8042EB94(((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_3])->textB50, D_800EE448, temp_s1);
+#elif defined(VERSION_EU_X)
+        func_8042EB94(((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_3])->textB50, D_800E9608, temp_s1);
+#elif defined(VERSION_DE)
+        func_8042EB94(((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_3])->textB50, D_800DDDC8, temp_s1);
+#elif defined(VERSION_US_REV1)
+        func_8042EB94(((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_3])->textB50, D_800E1DF8, temp_s1);
+#endif
         var_v0 = arg0 * 8;
         if (D_800E54A4->v.f.unk54 == 6) {
-            func_8040E958(func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[temp_s2])->panel, MODE_HIDE_ID), 0);
+            func_8040E958(func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[case0_offset])->panel, MODE_HIDE_ID), 0);
             var_v0 = arg0 * 8;
         }
         break;
@@ -781,11 +597,11 @@ case22_selected:
         func_8041B95C(D_800E54A4->v.f.unk4, arg0, func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[case7_offset])->panel, UI_CASE_7_2CC));
         temp_v0_9 = ((void *)&D_800E54A4->v.bytes[case7_offset]);
         var_a0_4 = temp_v0_9->unk64;
-        var_s1_2 = temp_v0_9->unkB44;
+        var_s1 = temp_v0_9->unkB44;
         var_a1_3 = UI_CASE_7_2CB;
         /* FAKEMATCH: keep the case-7 offset local through its own tail; the compiler merges the common code. */
         case7_offset += FIELD_OFFSET(PlayerPanel, state);
-        (((func_80432488_S5 *)(func_8040ECB0(var_a0_4, var_a1_3)))->unk38) = &((PanelRecordView *)&D_800E54A4->v.bytes[case7_offset])->rosterNames[var_s1_2 * 0x190];
+        (((Shared_Label *)(func_8040ECB0(var_a0_4, var_a1_3)))->text) = &((PanelRecordView *)&D_800E54A4->v.bytes[case7_offset])->rosterNames[var_s1 * 0x190];
         goto block_84;
     case 8:                                         /* switch 1 */
         temp_s0_8 = arg0 * 0xB68;
@@ -794,10 +610,10 @@ case22_selected:
         func_8040E958(temp_v0_10, 1);
         func_8041B95C(D_800E54A4->v.f.unk4, arg0, func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[temp_s0_8])->panel, UI_CASE_8_2CF));
         temp_v0_11 = ((void *)&D_800E54A4->v.bytes[temp_s0_8]);
-        temp_s1_2 = temp_v0_11->unkB30;
+        var_s1 = temp_v0_11->unkB30;
         temp_v0_10 = func_8040ECB0(temp_v0_11->unk64, UI_CASE_8_2CB);
         temp_s0_8 += FIELD_OFFSET(PlayerPanel, state);
-        ((func_80432488_S7 *)temp_v0_10)->unk38 = (void *)(temp_s1_2 * 0x46 + (s32)((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_8]) + FIELD_OFFSET(PanelRecordView, rosterDetails));
+        ((Shared_Label *)temp_v0_10)->text = (void *)(var_s1 * 0x46 + (s32)((PanelRecordView *)&D_800E54A4->v.bytes[temp_s0_8]) + FIELD_OFFSET(PanelRecordView, rosterDetails));
         goto block_84;
     case 9:                                         /* switch 1 */
         temp_s0_9 = arg0 * 0xB68;
@@ -805,7 +621,7 @@ case22_selected:
         ((PlayerPanel *)&D_800E54A4->v.bytes[temp_s0_9])->panel = temp_v0_12;
         func_8040E958(temp_v0_12, 1);
         func_8041B95C(D_800E54A4->v.f.unk4, arg0, func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[temp_s0_9])->panel, UI_CASE_9_2C8));
-        ((func_80432488_S5 *)func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[temp_s0_9])->panel, UI_CASE_9_2C7))->unk38 = &D_800E54A4->v.panelView.players[D_800E54A4->v.f.unk2DF8].rosterNames[D_800E54A4->v.f.unk2DFC * 0x190];
+        ((Shared_Label *)func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[temp_s0_9])->panel, UI_CASE_9_2C7))->text = &D_800E54A4->v.panelView.players[D_800E54A4->v.f.unk2DF8].rosterNames[D_800E54A4->v.f.unk2DFC * 0x190];
         goto block_84;
     case 10:                                        /* switch 1 */
         var_s0_2 = arg0 * 0xB68;
@@ -827,8 +643,8 @@ case22_selected:
         ((PlayerPanel *)&D_800E54A4->v.bytes[character_initial_offset])->panel = temp_v0_14;
         func_8040E958(temp_v0_14, 1);
         temp_s2 = 0;
-        var_s1_3 = func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[character_initial_offset])->panel, UI_CASE_12_2F3);
-        func_8041B95C(D_800E54A4->v.f.unk4, arg0, var_s1_3);
+        var_s1 = (s32)func_8040ECB0(((PlayerPanel *)&D_800E54A4->v.bytes[character_initial_offset])->panel, UI_CASE_12_2F3);
+        func_8041B95C(D_800E54A4->v.f.unk4, arg0, (void *)var_s1);
         var_s0 = character_initial_offset; /* FAKEMATCH: hand the local construction offset to the shared loop offset after the calls. */
         first_letter = 0x41;
         D_800E54A4->v.panelView.players[arg0].valueB44 = 0;
@@ -851,12 +667,12 @@ case22_selected:
         D_800E54A4->v.panelView.players[arg0].valueB48 = 2;
         var_a0_5 = FIELD_OFFSET(PanelRecordView, chars);
         do {
-            var_s1_3->unk10 = character_sentinel;
-            temp_s2 = (s32)var_s1_3->unk8; /* FAKEMATCH: reuse the dead s2 loop counter for the linked text node, matching the target node load. */
-            ((func_80432488_S10 *)temp_s2)->unk38 = &((PanelRecordView *)&D_800E54A4->v.bytes[character_panel_cursor])->chars[var_a0_5 - FIELD_OFFSET(PanelRecordView, chars)];
-            var_s1_3 = var_s1_3->unk38;
+            ((func_80432488_S9 *)var_s1)->unk10 = character_sentinel;
+            text_node = (s32)((func_80432488_S9 *)var_s1)->unk8; /* FAKEMATCH: reuse the case-0 text-node temporary; its conflict with var_s1 reserves the target s2. */
+            ((Shared_Label *)text_node)->text = &((PanelRecordView *)&D_800E54A4->v.bytes[character_panel_cursor])->chars[var_a0_5 - FIELD_OFFSET(PanelRecordView, chars)];
+            var_s1 = (s32)((func_80432488_S9 *)var_s1)->unk38;
             var_a0_5 += 2;
-        } while (var_s1_3 != NULL);
+        } while (var_s1 != 0);
         var_v0 = arg0 * 8;
         break;
     case 13:                                        /* switch 1 */
@@ -928,10 +744,10 @@ mode_end:;
         var_a1_3 = UI_CASE_16_2BA;
         temp_v0_20 = ((void *)&D_800E54A4->v.bytes[case16_offset]);
         var_a0_4 = temp_v0_20->unk64;
-        var_s1_2 = temp_v0_20->unkB84;
+        var_s1 = temp_v0_20->unkB84;
 block_61:
         case16_offset += FIELD_OFFSET(PlayerPanel, state);
-        (((func_80432488_S5 *)(func_8040ECB0(var_a0_4, var_a1_3)))->unk38) = &((PanelRecordView *)&D_800E54A4->v.bytes[case16_offset])->rosterNames[var_s1_2 * 0x190];
+        (((Shared_Label *)(func_8040ECB0(var_a0_4, var_a1_3)))->text) = &((PanelRecordView *)&D_800E54A4->v.bytes[case16_offset])->rosterNames[var_s1 * 0x190];
         goto block_84;
     case 21:                                        /* switch 1 */
         temp_s0_15 = arg0 * 0xB68;
@@ -1036,5 +852,3 @@ block_84:
     }
     ((func_80432488_S9 *)D_800E54A4->v.panelView.players[arg0].panel)->unk10 = 0x96;
 }
-
-#endif
