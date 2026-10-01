@@ -1,5 +1,5 @@
 {
-  "as": null,
+  "as": "/usr/bin/mips-linux-gnu-as",
   "asflags": [
     "-march=vr4300",
     "-mabi=32",
@@ -7,7 +7,7 @@
     "--no-pad-sections"
   ],
   "asm": "asm",
-  "assembly_compiler": "gcc-2.8.1-sn64",
+  "assembly_compiler": null,
   "compilers": {
     "gcc-2.8.1-sn64": {
       "as": "tools/gcc-2.8.1-sn64/asn64.exe",

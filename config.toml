@@ -49,7 +49,6 @@ cflags = ["-G0", "-mips3", "-O2", "-mgas", "-meb", "-mcpu=VR4300", "-mhard-float
 "main" = "gcc-2.8.1-sn64"
 
 [build]
-assembly_compiler = "gcc-2.8.1-sn64"
 ld = "/usr/bin/mips-linux-gnu-ld"
 objcopy = "/usr/bin/mips-linux-gnu-objcopy"
 splat = "/mnt/devstorage/AbuCode/.buildtmp/tmp/claude-1000/-mnt-devstorage-Workspaces/16a2299c-8f51-4270-9c1f-009829f453ab/scratchpad/unbake/venv/bin/splat"
