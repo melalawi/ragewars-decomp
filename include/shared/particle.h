@@ -173,15 +173,17 @@ struct Shared_DisplayFrame {
 typedef struct Shared_AnimFrame Shared_AnimFrame;
 struct Shared_AnimFrame {
     u8 kind; /* +0x0: src/func_8027ED40.c */
-    char pad1[0x1];
+    u8 divisor; /* +0x1: src/func_80269A80.c */
     u8 shiftS; /* +0x2: src/func_8027ED40.c */
     u8 shiftT; /* +0x3: src/func_8027ED40.c */
+    u8 lod; /* +0x4: src/func_80269A80.c */
+    u8 format; /* +0x5: src/func_80269A80.c, distinct from kind at +0 */
 };
 
 typedef struct Shared_AnimInfo Shared_AnimInfo;
 struct Shared_AnimInfo {
     s32 count; /* +0x0: src/func_8027ED40.c */
-    s32 unk4; /* +0x4: src/func_8027ED40.c */
+    s32 unk4; /* +0x4: src/func_8027ED40.c; secondary count in func_80269A80 */
     Shared_AnimFrame *frame; /* +0x8: src/func_8027ED40.c */
 };
 

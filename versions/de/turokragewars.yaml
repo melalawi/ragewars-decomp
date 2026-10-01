@@ -1731,7 +1731,7 @@ segments:
       - [0x0698E0, c, func_80268CE0]
       - [0x069E5C, c, func_8026925C]
       - [0x06A52C, c, func_8026992C]
-      - [0x06A680, asm, func_80269A80]
+      - [0x06A680, c, func_80269A80]
       - [0x06B838, c, func_8026AC38]
       - [0x06B98C, asm, func_8026AD8C]
       - [0x06C104, c, func_8026B504]
