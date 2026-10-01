@@ -166,7 +166,6 @@ def symbols_from(paths: list[Path]) -> dict[str, int]:
     return found
 
 
-
 def discovered_symbols(path: Path, committed: dict[str, int]) -> dict[str, int]:
     """Retain Splat's explicit addresses even for labels omitted by compiled C."""
     found = dict(committed)
