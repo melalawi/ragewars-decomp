@@ -1982,7 +1982,7 @@ segments:
       - [0x07F72C, c, func_8027EB00]
       - [0x07F96C, asm, func_8027ED40]
       - [0x080B58, c, func_8027FF2C]
-      - [0x080CC0, asm, func_80280094]
+      - [0x080CC0, c, func_80280094]
       - [0x08269C, c, func_80281A70]
       - [0x0828A0, asm, func_80281C74]
       - [0x082F30, asm, func_80282304]

@@ -1979,7 +1979,7 @@ segments:
       - [0x07F700, c, func_8027EB00]
       - [0x07F940, asm, func_8027ED40]
       - [0x080B2C, c, func_8027FF2C]
-      - [0x080C94, asm, func_80280094]
+      - [0x080C94, c, func_80280094]
       - [0x082670, c, func_80281A70]
       - [0x082874, asm, func_80281C74]
       - [0x082F04, asm, func_80282304]
