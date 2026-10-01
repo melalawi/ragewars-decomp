@@ -65,3 +65,11 @@ sn64_asflags = ["-mips3"]
 "func_802BE100" = ["-fforce-addr"]
 "func_802C6970" = ["-mfp32"]
 "func_804357C4" = ["-fno-strength-reduce"]
+
+# Resident runtime maps preserved from original [rodata] conversion facts.
+[build.resident_mappings]
+"us" = [{ address = 0x800C18F0, start = 0xC24F0, end = 0x101000, table_entry_bias = 0x80000000 }]
+"us-rev1" = [{ address = 0x800C6AB0, start = 0xC76B0, end = 0x101000, table_entry_bias = 0x80000000 }]
+"eu" = [{ address = 0x800C1C60, start = 0xC2860, end = 0xC2DF0, table_entry_bias = 0x80000000 }, { address = 0x800C21F0, start = 0xC2DF0, end = 0xF9000, table_entry_bias = 0x80000000 }]
+"eu-x" = [{ address = 0x800C1CA0, start = 0xC28A0, end = 0xF0000, table_entry_bias = 0x80000000 }]
+"de" = [{ address = 0x800C19C0, start = 0xC25C0, end = 0x101000, table_entry_bias = 0x80000000 }]

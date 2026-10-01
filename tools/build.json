@@ -214,6 +214,54 @@
       "VV_8B245=569925"
     ]
   },
+  "resident_mappings": {
+    "de": [
+      {
+        "address": 2148276672,
+        "end": 1052672,
+        "start": 796096,
+        "table_entry_bias": 2147483648
+      }
+    ],
+    "eu": [
+      {
+        "address": 2148277344,
+        "end": 798192,
+        "start": 796768,
+        "table_entry_bias": 2147483648
+      },
+      {
+        "address": 2148278768,
+        "end": 1019904,
+        "start": 798192,
+        "table_entry_bias": 2147483648
+      }
+    ],
+    "eu-x": [
+      {
+        "address": 2148277408,
+        "end": 983040,
+        "start": 796832,
+        "table_entry_bias": 2147483648
+      }
+    ],
+    "us": [
+      {
+        "address": 2148276464,
+        "end": 1052672,
+        "start": 795888,
+        "table_entry_bias": 2147483648
+      }
+    ],
+    "us-rev1": [
+      {
+        "address": 2148297392,
+        "end": 1052672,
+        "start": 816816,
+        "table_entry_bias": 2147483648
+      }
+    ]
+  },
   "sn64_asflags": [
     "-mips3"
   ],
