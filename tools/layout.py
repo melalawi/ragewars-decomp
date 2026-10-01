@@ -56,7 +56,8 @@ def resident(
     base = bases[0]
     content = bytearray(obj.content(section))
     matches = [
-        row for row in mappings or []
+        row
+        for row in mappings or []
         if row["address"] <= base and base + len(content) <= row["address"] + row["end"] - row["start"]
     ]
     if len(matches) > 1:
