@@ -3032,7 +3032,7 @@ segments:
       - [0x0BB7A0, asm, func_802BF9B0]
       - [0x0BB7F0, c, func_802BFA00]
       - [0x0BBB2C, asm, func_802BFD3C]
-      - [0x0BBB30, asm, func_802BAF2C]
+      - [0x0BBB30, c, func_802BFD40]
       - [0x0BBB38, asm, func_802BFD48]
       - [0x0BBB40, c, func_802BFD50]
       - [0x0BBB64, asm, func_802BAF64]
