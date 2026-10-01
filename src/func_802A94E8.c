@@ -1,9 +1,6 @@
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "unbake_gbi.h"
+#include "basetypes.h"
+#include "n64sdk.h"
 
 #include "basetypes.h"
 
@@ -33,8 +30,7 @@ void func_802A94E8(void) {
             cmd->words.w0 = pipe_sync;
             cmd->words.w1 = 0;
             cmd = D_80110634++;
-            cmd->words.w0 = 0xE3000A01;
-            cmd->words.w1 = 0x00100000;
+            gDPSetCycleType(cmd, G_CYC_2CYCLE);
         }
 
         func_80268CE0(0x1A);
@@ -44,44 +40,32 @@ void func_802A94E8(void) {
         {
         Gfx *cmd;
         cmd = D_80110634++;
-        cmd->words.w0 = 0xD7000002;
-        cmd->words.w1 = 0x80008000;
+        gSPTexture(cmd, 32768, 32768, 0, 0, G_ON);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xE3001001;
-        cmd->words.w1 = 0;
+        gDPSetTextureLUT(cmd, G_TT_NONE);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xE3000C00;
-        cmd->words.w1 = 0;
+        gDPSetTexturePersp(cmd, G_TP_NONE);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xE3001201;
-        cmd->words.w1 = 0x2000;
+        gDPSetTextureFilter(cmd, G_TF_BILERP);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xFD900000;
-        cmd->words.w1 = (u32)texture;
+        gDPSetTextureImage(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)texture);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF5900000;
-        cmd->words.w1 = 0x07000000;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xE6000000;
-        cmd->words.w1 = 0;
+        gDPLoadSync(cmd);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF3000000;
-        cmd->words.w1 = 0x0708F800;
+        gDPLoadBlock(cmd, G_TX_LOADTILE, 0, 0, 143, 2048);
         cmd = D_80110634++;
         cmd->words.w0 = pipe_sync;
         cmd->words.w1 = 0;
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF5800400;
-        cmd->words.w1 = 0;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_4b, 2, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF2000000;
-        cmd->words.w1 = 0x0005C05C;
+        gDPSetTileSize(cmd, G_TX_RENDERTILE, 0, 0, 92, 92);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF5800000;
-        cmd->words.w1 = 0x01000000;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_4b, 0, 0, 1, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF2000000;
-        cmd->words.w1 = 0x0103C03C;
+        gDPSetTileSize(cmd, 1, 0, 0, 60, 60);
         }
 
         func_802ABB2C(0x8C, 0x8C, 0x8C, 0x8C, 0x8C, 0x8C);

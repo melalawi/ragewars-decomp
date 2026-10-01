@@ -1,21 +1,23 @@
+#include "unbake_gbi.h"
 /* Switches the graphics combiner and emits a pipeline sync once per frame. */
 #include "basetypes.h"
-typedef struct {u32 w0,w1;} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 extern int D_800E32C0,D_800E32E4,D_80153F6C;
 extern Gfx *D_80110634;
-static inline void sync(void){Gfx *g; D_800E32E4=1;g=D_80110634++;g->w0=0xE7000000;g->w1=0;}
-#define EMIT(a,b) {Gfx *g=D_80110634++;g->w0=(a);g->w1=(b);}
+static inline void sync(void){Gfx *g; D_800E32E4=1;gDPPipeSync(D_80110634++);}
+
 void func_80416D74(int mode){
  if(mode!=D_800E32C0){
  D_800E32C0=mode;
  if(!D_800E32E4)sync();
- EMIT(0xE3000A01,0);
+ gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
  switch(mode){
- case 1: if(D_80153F6C){EMIT(0xFC12B225,0xFF67DBED);}else{EMIT(0xFC12FE25,0xFFFFFDFE);}break;
- case 2: if(D_80153F6C){EMIT(0xFC12FE25,0xFFFFF7FB);}else{EMIT(0xFC12FE25,0xFFFFFDFE);}break;
- case 3: EMIT(0xFC12FE25,0xFFFFFDFE);break;
- case 4: if(D_80153F6C){EMIT(0xFC121824,0xFF33FFFF);}else{EMIT(0xFC127E24,0xFFFFFDFE);}break;
- case 5: if(D_80153F6C){EMIT(0xFCFFFFFF,0xFFFE793C);}else{EMIT(0xFCFFFFFF,0xFFFE7D3E);}break;
+ case 1: if(D_80153F6C){gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, PRIMITIVE, ENVIRONMENT, TEXEL0, ENVIRONMENT, TEXEL0, 0, ENVIRONMENT, 0, PRIMITIVE, ENVIRONMENT, TEXEL0, ENVIRONMENT);}else{gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);}break;
+ case 2: if(D_80153F6C){gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, PRIMITIVE, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, PRIMITIVE);}else{gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);}break;
+ case 3: gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);break;
+ case 4: if(D_80153F6C){gDPSetCombineLERP(D_80110634++, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0);}else{gDPSetCombineLERP(D_80110634++, TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, TEXEL0, 0, SHADE, 0, 0, 0, 0, 1);}break;
+ case 5: if(D_80153F6C){gDPSetCombineLERP(D_80110634++, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE);}else{gDPSetCombineLERP(D_80110634++, 0, 0, 0, SHADE, 0, 0, 0, 1, 0, 0, 0, SHADE, 0, 0, 0, 1);}break;
  }
  }
 }

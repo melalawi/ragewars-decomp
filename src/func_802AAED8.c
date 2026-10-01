@@ -1,10 +1,7 @@
+#include "unbake_gbi.h"
 /* Appends display-list commands to D_80110634 that load a 4-bit texture block of the given size and draw it as a texture rectangle at a floating-point position, stretched by the given horizontal and vertical scales with the texture steps divided by them. Adapted from func_802AACC0 with the position made floating point, the rectangle corners scaled by D_800CB34C and the scale factors applied to the extent and the texture step. */
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 #include "basetypes.h"
 extern Gfx *D_80110634;
@@ -30,8 +27,8 @@ void func_802AAED8(void *pTexture, f32 XPos, f32 YPos, int TextureWidth, int Tex
     xh = (XPos + TextureWidth * ScaleX) * D_800CB34C;
     yl = YPos * D_800CB34C;
     yh = (YPos + TextureHeight * ScaleY) * D_800CB34C;
-    { { Gfx *g = D_80110634++; g->words.w0 = S(0xfd,24)|S(4,21)|S(2,19); g->words.w1=(u32)pTexture; } { Gfx *g=D_80110634++; g->words.w0=S(0xf5,24)|S(4,21)|S(2,19)|S(256,0); g->words.w1=S(7,24); } { Gfx *g=D_80110634++; g->words.w0=S(0xe6,24); g->words.w1=0; } { Gfx *g=D_80110634++; g->words.w0=S(0xf3,24); g->words.w1=S(7,24)|S12(((((TextureWidth*TextureHeight+3)>>2)-1)<2047?(((TextureWidth*TextureHeight+3)>>2)-1):2047),12)|S12(((1<<11)+(1>(TextureWidth/16)?1:(TextureWidth/16))-1)/(1>(TextureWidth/16)?1:(TextureWidth/16)),0); } { Gfx *g=D_80110634++; g->words.w0=S(0xe7,24); g->words.w1=0; } { Gfx *g=D_80110634++; g->words.w0=S(0xf5,24)|S(4,21)|S9((((TextureWidth>>1)+7)>>3),9)|S(256,0); g->words.w1=0; } { Gfx *g=D_80110634++; g->words.w0=S(0xf2,24); g->words.w1=S12((TextureWidth-1)<<2,12)|S12((TextureHeight-1)<<2,0); } }
-    { Gfx *g=D_80110634++; g->words.w0=S(0xe4,24)|S12(xh,12)|S12(yh,0); g->words.w1=S12(xl,12)|S12(yl,0); { Gfx *g=D_80110634++; g->words.w0=0xE1000000; g->words.w1=0; } { Gfx *g=D_80110634++; g->words.w0=0xF1000000; g->words.w1=S16(dsdx,16)|S16(dtdy,0); } }
+    { gDPSetTextureImage(D_80110634++, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)pTexture); gDPSetTile(D_80110634++, G_IM_FMT_I, G_IM_SIZ_16b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0); gDPLoadSync(D_80110634++); gDPLoadBlock(D_80110634++, G_TX_LOADTILE, 0, 0, (u32)((((((TextureWidth*TextureHeight+3)>>2)-1)<2047?(((TextureWidth*TextureHeight+3)>>2)-1):2047))), (u32)((((1<<11)+(1>(TextureWidth/16)?1:(TextureWidth/16))-1)/(1>(TextureWidth/16)?1:(TextureWidth/16))))); gDPPipeSync(D_80110634++); gDPSetTile(D_80110634++, G_IM_FMT_I, G_IM_SIZ_4b, (u32)(((((TextureWidth>>1)+7)>>3))), 256, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0); gDPSetTileSize(D_80110634++, G_TX_RENDERTILE, 0, 0, (u32)(((TextureWidth-1)<<2)), (u32)(((TextureHeight-1)<<2))); }
+    { Gfx *g=D_80110634++; g->words.w0=S(0xe4,24)|S12(xh,12)|S12(yh,0); g->words.w1=S12(xl,12)|S12(yl,0); gDPHalf1(D_80110634++, 0); gDPHalf2(D_80110634++, (((u32)((dsdx)) & 0xFFFF) << ((16)))|(((u32)((dtdy)) & 0xFFFF) << ((0)))); }
 }
 
 /* Native resident constant storage; absolute access symbols retain their addresses. */

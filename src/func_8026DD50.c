@@ -1,13 +1,10 @@
+#include "unbake_gbi.h"
 #include "basetypes.h"
 
 /* Draws the parts of a model resource whose material has all of bits 0x38 set in its sixth byte, when the frame's command buffer still has 3000 commands free: registers the resource, loads the model matrix (or sets it as segment 1 when asked), sets segment 2 to the given texture base or the model's own, sets the lighting on the first part, and emits each qualifying part's display list when func_80269A80 accepts its material. Adapted from func_8026DA4C with an unused leading argument and the material bit test added. */
 
-typedef struct Gfx {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Frame {
     char pad0[0x114];
@@ -36,24 +33,12 @@ void func_8026DD50(void **resource, s32 unused, s32 matrix, s32 segment, s32 lig
     }
     header = *resource;
     func_80253B5C(0, resource);
-    if (segment != 0) {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDB060004;
-        cmd->words.w1 = matrix;
-    } else {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDA380003;
-        cmd->words.w1 = matrix;
-    }
+    if (segment != 0) gSPSegment(D_80110634++, 1, matrix) else gSPMatrix(D_80110634++, matrix, G_MTX_LOAD);
     base = textures;
     if (base == 0) {
         base = func_8028FD94(header, 0);
     }
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDB060008;
-        cmd->words.w1 = (unsigned int)base;
-    }
+    gSPSegment(D_80110634++, 2, (unsigned int)base);
     parts = func_8028FD94(header, 2);
     count = *(s32 *)parts;
     for (i = 0; i < count; i++) {
@@ -67,8 +52,7 @@ void func_8026DD50(void **resource, s32 unused, s32 matrix, s32 segment, s32 lig
             void *list = func_8028FD94(part, 1);
 
             cmd = D_80110634++;
-            cmd->words.w0 = 0xDE000000;
-            cmd->words.w1 = (unsigned int)list;
+            gSPDisplayList(cmd, (unsigned int)list);
         }
     }
 }

@@ -1,10 +1,9 @@
+#include "unbake_gbi.h"
 /* Switches the texture mode (forced to 14 while D_80153F68 is clear), emitting a full-sync command the first time and a texture-enable command for modes 13 and 14. */
 #include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 extern s32 D_80153F68;
 extern s32 D_800E32D0;
@@ -16,8 +15,7 @@ static inline void beginFrame(void) {
 
     D_800E32E4 = 1;
     g = D_80110634++;
-    g->w0 = 0xE7000000;
-    g->w1 = 0;
+    gDPPipeSync(g);
 }
 
 void func_80419144(s32 mode) {
@@ -29,14 +27,6 @@ void func_80419144(s32 mode) {
         if (D_800E32E4 == 0) {
             beginFrame();
         }
-        if (mode == 13) {
-            Gfx *g = D_80110634++;
-            g->w0 = 0xD7000002;
-            g->w1 = 0x80008000;
-        } else if (mode == 14) {
-            Gfx *g = D_80110634++;
-            g->w0 = 0xD7000000;
-            g->w1 = 0x80008000;
-        }
+        if (mode == 13) gSPTexture(D_80110634++, 32768, 32768, 0, 0, G_ON) else if (mode == 14) gSPTexture(D_80110634++, 32768, 32768, 0, 0, G_OFF);
     }
 }

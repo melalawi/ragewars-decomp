@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 /* Draws the marker over a player that is alive at 0x5E4: loads the player's matrix from its table at
    0x1640 (the first entry while func_802A33AC reports a shared view, otherwise the entry for the current
    view D_800D297C), sets the render and geometry modes, fills the five vertices of a green pyramid in
@@ -5,10 +6,8 @@
    colour and the matrix selection changed. */
 #include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct {
     s16 x;
@@ -21,21 +20,21 @@ typedef struct {
     u8 g;
     u8 b;
     u8 a;
-} Vtx;
+} UnitVtx;
 
 typedef struct {
     s32 m[16];
-} Mtx;
+} UnitMtx;
 
 typedef struct {
     char pad0[0x5E4];
     s32 alive;
     char pad5E8[0x1640 - 0x5E8];
-    Mtx markers[2];
+    UnitMtx markers[2];
 } Player;
 
 extern s32 D_800D297C;
-extern Vtx D_801029F8[];
+extern UnitVtx D_801029F8[];
 extern Gfx *D_80110634;
 extern s32 func_802A33AC(void);
 extern void func_8026D8F8(void);
@@ -47,35 +46,15 @@ void func_80229CFC(Player *player) {
     s32 alpha;
 
     if (player->alive != 0) {
-        if (func_802A33AC() != 0) {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0xDA380003;
-            cmd->w1 = (u32) &player->markers[0];
-        } else {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0xDA380003;
-            cmd->w1 = (u32) &player->markers[D_800D297C];
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0xE7000000;
-            cmd->w1 = 0;
-        }
+        if (func_802A33AC() != 0) gSPMatrix(D_80110634++, (u32) &player->markers[0], G_MTX_LOAD) else gSPMatrix(D_80110634++, (u32) &player->markers[D_800D297C], G_MTX_LOAD);
+        gDPPipeSync(D_80110634++);
         func_8026D8F8();
         func_8026925C(0xE);
         func_80268CE0(0x1C);
         green = 200;
         alpha = 150;
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0xD9F8FB7F;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0xD9FFFFFF;
-            cmd->w1 = 0x200004;
-        }
+        gSPGeometryMode(D_80110634++, G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | 0x80, 0);
+        gSPGeometryMode(D_80110634++, 0, G_SHADE | G_SHADING_SMOOTH);
         D_801029F8[0].x = 0;
         D_801029F8[0].y = 0;
         D_801029F8[0].z = 0;
@@ -126,31 +105,11 @@ void func_80229CFC(Player *player) {
         D_801029F8[4].g = green;
         D_801029F8[4].b = 0;
         D_801029F8[4].a = alpha;
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x0100500A;
-            cmd->w1 = (u32) D_801029F8;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x05000204;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x05000208;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x05000406;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x05000608;
-            cmd->w1 = 0;
-        }
+        gSPVertex(D_80110634++, (u32) D_801029F8, 5, 0);
+        gSP1Triangle(D_80110634++, 0, 1, 2, 0);
+        gSP1Triangle(D_80110634++, 0, 1, 4, 0);
+        gSP1Triangle(D_80110634++, 0, 2, 3, 0);
+        gSP1Triangle(D_80110634++, 0, 3, 4, 0);
     }
 }
 

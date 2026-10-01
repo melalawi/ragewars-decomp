@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 /* Draws one view of the game world: after the per-frame setup (func_802909D0) it runs the world, player,
  * effect, particle, object and translucent passes for the view in order, skipping the player and effect
  * passes in the alternate HUD mode (func_80245788) and running the extra passes only when func_802934DC
@@ -5,12 +6,8 @@
  * depth with a fill-rectangle command. */
 #include "basetypes.h"
 
-typedef struct {
-    struct {
-        u32 w0;
-        u32 w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 extern Gfx *D_80110634;
 extern char D_80145040;
@@ -34,12 +31,7 @@ extern void func_80238D20(char *);
 extern void func_8022A2FC(void *, char *);
 extern void func_8026925C(s32);
 
-#define GFX(a, b)                        \
-    {                                    \
-        Gfx *_g = (Gfx *)(D_80110634++); \
-        _g->words.w0 = (a);              \
-        _g->words.w1 = (u32)(b);         \
-    }
+
 
 typedef struct func_802362D8_S1 func_802362D8_S1;
 struct func_802362D8_S1 {
@@ -53,7 +45,6 @@ struct func_802362D8_S1 {
     f32 unk2A8;
 };
 
-#define _SHIFTL(v, s, w) ((u32)(((u32)(v) & ((0x01 << (w)) - 1)) << (s)))
 
 void func_802362D8(char *view, char *world) {
     f32 right;
@@ -81,21 +72,17 @@ void func_802362D8(char *view, char *world) {
         func_8022A2FC(&D_80145040, view);
     }
     if (D_801462C8 & 0x200) {
-        GFX(0xE7000000, 0);
-        GFX(0xE3000A01, 0);
-        GFX(0xF9000000, -1);
-        GFX(0xEE000000, -1);
-        GFX(0xE2001D00, 4);
+        gDPPipeSync(D_80110634++);
+        gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
+        gDPSetBlendColor(D_80110634++, 255, 255, 255, 255);
+        gDPSetPrimDepth(D_80110634++, 65535, 65535);
+        gDPSetDepthSource(D_80110634++, G_ZS_PRIM);
         func_8026925C(0x16);
         {
             Gfx *_g;
 
             right = ((func_802362D8_S1 *)(view))->unk2A4 + ((func_802362D8_S1 *)(view))->unk29C;
-            _g = (Gfx *)(D_80110634++);
-            _g->words.w0 = _SHIFTL(0xF6, 24, 8) |
-                           _SHIFTL(right, 14, 10) |
-                           _SHIFTL(((func_802362D8_S1 *)(view))->unk2A8 + ((func_802362D8_S1 *)(view))->unk2A0, 2, 10);
-            _g->words.w1 = _SHIFTL(((func_802362D8_S1 *)(view))->unk2A4, 14, 10) | _SHIFTL(((func_802362D8_S1 *)(view))->unk2A8, 2, 10);
+            gDPFillRectangle((Gfx *)(D_80110634++), ((func_802362D8_S1 *)(view))->unk2A4, ((func_802362D8_S1 *)(view))->unk2A8, right, ((func_802362D8_S1 *)(view))->unk2A8 + ((func_802362D8_S1 *)(view))->unk2A0);
         }
     }
 }

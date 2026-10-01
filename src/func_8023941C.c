@@ -1,9 +1,6 @@
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "unbake_gbi.h"
+#include "basetypes.h"
+#include "n64sdk.h"
 
 #include "basetypes.h"
 
@@ -15,9 +12,7 @@ void func_8023941C(u32 arg0) {
     u32 offset;
 
     offset = (D_800D297C << 6) + 0x448;
-    cmd = D_80110634++;
-    cmd->words.w0 = 0xDA380007;
-    cmd->words.w1 = arg0 + offset;
+    gSPMatrix(D_80110634++, arg0 + offset, G_MTX_LOAD | G_MTX_PROJECTION);
 }
 
 /* Native resident constant storage; absolute access symbols retain their addresses. */

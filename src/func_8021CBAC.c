@@ -1,11 +1,8 @@
+#include "unbake_gbi.h"
 #include "basetypes.h"
 
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 extern void *D_800D052C[];
 extern Gfx *D_80110634;
@@ -58,16 +55,8 @@ void func_8021CBAC(void *arg0, void *arg1) {
 
     if ((((func_8021CBAC_S1 *)(arg0))->unk62E != -1) &&
         (((func_8021CBAC_S1 *)(arg0))->unk5EA != 0)) {
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xE3001201;
-            cmd->words.w1 = 0x2000;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xE3000C00;
-            cmd->words.w1 = 0x80000;
-        }
+        gDPSetTextureFilter(D_80110634++, G_TF_BILERP);
+        gDPSetTexturePersp(D_80110634++, G_TP_PERSP);
         func_8026D8F8();
 
         entry = D_800D052C[((func_8021CBAC_S1 *)(arg0))->unk62E];
@@ -81,31 +70,11 @@ void func_8021CBAC(void *arg0, void *arg1) {
         func_80291BF8(&D_8011FAC0, (s32)left, (s32)right, (s32)top,
                       (s32)bottom, ((func_8021CBAC_S2 *)(arg1))->unk120);
 
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xD9FFFFFF;
-            cmd->words.w1 = 0x10000;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xDB040004;
-            cmd->words.w1 = 1;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xDB04000C;
-            cmd->words.w1 = 1;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xDB040014;
-            cmd->words.w1 = 0xFFFF;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xDB04001C;
-            cmd->words.w1 = 0xFFFF;
-        }
+        gSPGeometryMode(D_80110634++, 0, G_FOG);
+        gSPMoveWord(D_80110634++, G_MW_CLIP, 4, 1);
+        gSPMoveWord(D_80110634++, G_MW_CLIP, 12, 1);
+        gSPMoveWord(D_80110634++, G_MW_CLIP, 20, 0xFFFF);
+        gSPMoveWord(D_80110634++, G_MW_CLIP, 28, 0xFFFF);
         func_8026D980();
         func_80249E18(&((func_8021CBAC_S1 *)(arg0))->unk2E8, arg1);
         func_8026D9D0();

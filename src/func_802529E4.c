@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 /* Draws the memory heap and block usage as colored graphics. */
 
 #include "shared/heap_usage_graph.h"
@@ -20,42 +21,18 @@ void func_802529E4(s32 unused, s32 x0, s32 y0, s32 x1, s32 y1)
   u32 flags;
   s32 lum;
   s32 show;
-  {
-    Gfx *_g = D_80110634++;
-    _g->words.w0 = 0xE7000000;
-    _g->words.w1 = 0;
-  }
-  {
-    Gfx *_g = D_80110634++;
-    _g->words.w0 = 0xE3000A01;
-    _g->words.w1 = 0;
-  }
+  gDPPipeSync(D_80110634++);
+  gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
   func_80268CE0(0x19);
   func_8026925C(0x15);
-  {
-    Gfx *_g = D_80110634++;
-    _g->words.w0 = 0xFA000000;
-    _g->words.w1 = 0xA0A0A000;
-  }
+  gDPSetPrimColor(D_80110634++, 0, 0, 160, 160, 160, 0);
   ;
-  {
-    Gfx *_g = D_80110634++;
-    _g->words.w0 = (0xF6000000 | (((x1 + 1) & 0x3FF) << 14)) | (((y1 + 1) & 0x3FF) << 2);
-    _g->words.w1 = (((x0 - 1) & 0x3FF) << 14) | (((y0 - 1) & 0x3FF) << 2);
-  }
+  gDPFillRectangle(D_80110634++, x0 - 1, y0 - 1, x1 + 1, y1 + 1);
   ;
   func_8026925C(0x1B);
-  {
-    Gfx *_g = D_80110634++;
-    _g->words.w0 = 0xFA000000;
-    _g->words.w1 = 0xA0A0A0FF;
-  }
+  gDPSetPrimColor(D_80110634++, 0, 0, 160, 160, 160, 255);
   ;
-  {
-    Gfx *_g = D_80110634++;
-    _g->words.w0 = (0xF6000000 | ((x1 & 0x3FF) << 14)) | ((y1 & 0x3FF) << 2);
-    _g->words.w1 = ((x0 & 0x3FF) << 14) | ((y0 & 0x3FF) << 2);
-  }
+  gDPFillRectangle(D_80110634++, x0, y0, x1, y1);
   ;
   mask = func_802C2020();
   if ((++D_8010515C) != 1)
@@ -76,19 +53,11 @@ void func_802529E4(s32 unused, s32 x0, s32 y0, s32 x1, s32 y1)
     region = region->next;
   }
 
-  {
-    Gfx *_g = D_80110634++;
-    _g->words.w0 = 0xFA000000;
-    _g->words.w1 = 0x646400FF;
-  }
+  gDPSetPrimColor(D_80110634++, 0, 0, 100, 100, 0, 255);
   ;
   top = (y1 - (((((u32) D_80105140.regions) - kseg0) * (y1 - y0)) / total)) - 1;
-  {
-    Gfx *_g = D_80110634++;
-    _g->words.w0 = (0xF6000000 | ((x1 & 0x3FF) << 14)) | (((y1 + 1) & 0x3FF) << 2);
-    /* FAKEMATCH: reuse the color local to preserve the allocator lifetime. */
-    _g->words.w1 = ((x0 & 0x3FF) << 14) | ((top & 0x3FF) << 2);
-  }
+  /* FAKEMATCH: reuse the color local to preserve the allocator lifetime. */
+gDPFillRectangle(D_80110634++, x0, top, x1, y1 + 1);
   ;
   for (pass = 0; pass < 2; pass++)
   {
@@ -143,11 +112,7 @@ void func_802529E4(s32 unused, s32 x0, s32 y0, s32 x1, s32 y1)
         bottom = lum - 1;
         if (top < bottom)
         {
-          {
-            Gfx *_g = D_80110634++;
-            _g->words.w0 = (0xF6000000 | ((x1 & 0x3FF) << 14)) | ((bottom & 0x3FF) << 2);
-            _g->words.w1 = ((x0 & 0x3FF) << 14) | ((top & 0x3FF) << 2);
-          }
+          gDPFillRectangle(D_80110634++, x0, top, x1, bottom);
           ;
         }
         {
@@ -189,11 +154,7 @@ void func_802529E4(s32 unused, s32 x0, s32 y0, s32 x1, s32 y1)
             _g->words.w1 = ((((((r * 3) >> 1) < 0x100) ? ((((r * 3) >> 1) & 0xFF) << 24) : (0xFF << 24)) | ((((g * 3) >> 1) < 0x100) ? ((((g * 3) >> 1) & 0xFF) << 16) : (0xFF << 16))) | (((((s32)b * 3) >> 1) < 0x100) ? (((r = (((s32)b * 3) >> 1)) & 0xFF) << 8) : (0xFF << 8))) | 0xFF;
           }
           ;
-          {
-            Gfx *_g = D_80110634++;
-            _g->words.w0 = (0xF6000000 | ((x1 & 0x3FF) << 14)) | ((bottom & 0x3FF) << 2);
-            _g->words.w1 = (((x0 + 8) & 0x3FF) << 14) | (((bottom - 1) & 0x3FF) << 2);
-          }
+          gDPFillRectangle(D_80110634++, x0 + 8, bottom - 1, x1, bottom);
           ;
         }
       }

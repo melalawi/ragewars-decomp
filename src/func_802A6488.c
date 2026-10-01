@@ -1,9 +1,6 @@
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "unbake_gbi.h"
+#include "basetypes.h"
+#include "n64sdk.h"
 
 #include "basetypes.h"
 
@@ -30,47 +27,33 @@ void func_802A6488(u32 arg0) {
     local.matrix[5] = D_800CB020;
 
     cmd = D_80110634++;
-    cmd->words.w0 = 0xE7000000;
-    cmd->words.w1 = 0;
+    gDPPipeSync(cmd);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xE3000A01;
-    cmd->words.w1 = 0x00100000;
+    gDPSetCycleType(cmd, G_CYC_2CYCLE);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xFD900000;
-    cmd->words.w1 = (u32)&D_800D14B0;
+    gDPSetTextureImage(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)&D_800D14B0);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xF5900000;
-    cmd->words.w1 = 0x07080200;
+    gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xE6000000;
-    cmd->words.w1 = 0;
+    gDPLoadSync(cmd);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xF3000000;
-    cmd->words.w1 = 0x0707F400;
+    gDPLoadBlock(cmd, G_TX_LOADTILE, 0, 0, 127, 1024);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xE7000000;
-    cmd->words.w1 = 0;
+    gDPPipeSync(cmd);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xF5880400;
-    cmd->words.w1 = 0x00080200;
+    gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_8b, 2, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xF2000000;
-    cmd->words.w1 = 0x0003C03C;
+    gDPSetTileSize(cmd, G_TX_RENDERTILE, 0, 0, 60, 60);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xFA00FFFF;
-    cmd->words.w1 = 0xC8000096;
+    gDPSetPrimColor(cmd, 255, 255, 200, 0, 0, 150);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDE000000;
-    cmd->words.w1 = (u32)&D_800D2F18;
+    gSPDisplayList(cmd, (u32)&D_800D2F18);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDA380003;
-    cmd->words.w1 = arg0;
+    gSPMatrix(cmd, arg0, G_MTX_LOAD);
     cmd = D_80110634++;
-    cmd->words.w0 = 0x01004008;
-    cmd->words.w1 = (u32)&D_801469A0;
+    gSPVertex(cmd, (u32)&D_801469A0, 4, 0);
     cmd = D_80110634++;
-    cmd->words.w0 = 0x06000204;
-    cmd->words.w1 = 0x00040600;
+    gSP2Triangles(cmd, 0, 1, 2, 0, 2, 3, 0, 0);
 
     func_8026D8F8();
     func_80296FF8();

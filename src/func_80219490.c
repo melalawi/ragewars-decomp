@@ -1,9 +1,6 @@
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "unbake_gbi.h"
+#include "basetypes.h"
+#include "n64sdk.h"
 
 #include "basetypes.h"
 
@@ -88,11 +85,9 @@ void func_80219490(char *object, char *camera) {
     func_8026E378(1, 0x20);
 
     command = D_80110634++;
-    command->words.w0 = 0xE3000C00;
-    command->words.w1 = 0x00080000;
+    gDPSetTexturePersp(command, G_TP_PERSP);
     command = D_80110634++;
-    command->words.w0 = 0xE3001201;
-    command->words.w1 = 0x2000;
+    gDPSetTextureFilter(command, G_TF_BILERP);
     func_8026D980();
 
     x = ((func_80219490_S2 *)(camera))->unk2A4;

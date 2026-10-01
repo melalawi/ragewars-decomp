@@ -1,10 +1,9 @@
+#include "unbake_gbi.h"
 /* Switches the render mode, emitting a full-sync command the first time and a cycle-type other-mode command for modes 6 and 7. */
 #include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 extern s32 D_800E32C4;
 extern s32 D_800E32E4;
@@ -15,8 +14,7 @@ static inline void beginFrame(void) {
 
     D_800E32E4 = 1;
     g = D_80110634++;
-    g->w0 = 0xE7000000;
-    g->w1 = 0;
+    gDPPipeSync(g);
 }
 
 void func_80419074(s32 mode) {
@@ -28,14 +26,12 @@ void func_80419074(s32 mode) {
         switch (mode) {
         case 6: {
             Gfx *g = D_80110634++;
-            g->w0 = 0xE3000C00;
-            g->w1 = 0x80000;
+            gDPSetTexturePersp(g, G_TP_PERSP);
             break;
         }
         case 7: {
             Gfx *g = D_80110634++;
-            g->w0 = 0xE3000C00;
-            g->w1 = 0;
+            gDPSetTexturePersp(g, G_TP_NONE);
             break;
         }
         }

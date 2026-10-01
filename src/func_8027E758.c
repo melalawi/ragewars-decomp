@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 #include "basetypes.h"
 
 /* Draws an actor's ground shadow: probes the ground under the actor through func_80243A80 into D_801041F0, and when ground is found tilts the shadow model from D_8011FFB0 to the ground normal, scales it by the actor's size shrinking with height above the ground, fades it with height (and with lost health for actors flagged 1), places it on the ground and draws it through func_8026992C between render-mode commands. */
@@ -15,10 +16,8 @@ typedef struct Quat {
     f32 w;
 } Quat;
 
-typedef struct Gfx {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Instance {
     char pad0[8];
@@ -151,19 +150,15 @@ void func_8027E758(Actor *actor) {
     func_802702EC(matrix, model);
     {
         Gfx *cmd = D_80110634++;
-        cmd->w0 = 0xE7000000;
-        cmd->w1 = 0;
+        gDPPipeSync(cmd);
         cmd = D_80110634++;
-        cmd->w0 = 0xE3000A01;
-        cmd->w1 = 0x100000;
+        gDPSetCycleType(cmd, G_CYC_2CYCLE);
     }
     func_8026992C(model, 1, (u32)alpha);
     {
         Gfx *cmd = D_80110634++;
-        cmd->w0 = 0xE7000000;
-        cmd->w1 = 0;
+        gDPPipeSync(cmd);
         cmd = D_80110634++;
-        cmd->w0 = 0xE3000A01;
-        cmd->w1 = 0;
+        gDPSetCycleType(cmd, G_CYC_1CYCLE);
     }
 }

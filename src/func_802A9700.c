@@ -1,9 +1,6 @@
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "unbake_gbi.h"
+#include "basetypes.h"
+#include "n64sdk.h"
 
 #include "basetypes.h"
 
@@ -19,25 +16,18 @@ void func_802A9700(void) {
     if (v0 != 0) {
         D_8014D3D0 = 1;
         cmd = D_80110634++;
-        cmd->words.w0 = 0xFD900000;
-        cmd->words.w1 = (u32) v0;
+        gDPSetTextureImage(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32) v0);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF5900100;
-        cmd->words.w1 = 0x0700C040;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 3, 0, G_TX_WRAP, 4, 0);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xE6000000;
-        cmd->words.w1 = 0;
+        gDPLoadSync(cmd);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF3000000;
-        cmd->words.w1 = 0x0701F800;
+        gDPLoadBlock(cmd, G_TX_LOADTILE, 0, 0, 31, 2048);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xE7000000;
-        cmd->words.w1 = 0;
+        gDPPipeSync(cmd);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF5800300;
-        cmd->words.w1 = 0xC040;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_4b, 1, 256, G_TX_RENDERTILE, 0, G_TX_WRAP, 3, 0, G_TX_WRAP, 4, 0);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xF2000000;
-        cmd->words.w1 = 0x0003C01C;
+        gDPSetTileSize(cmd, G_TX_RENDERTILE, 0, 0, 60, 28);
     }
 }

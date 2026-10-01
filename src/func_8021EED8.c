@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 /* Draws a player's HUD for one frame unless the game state is 8 or 11: ticks the HUD animations,
    draws the health counter and its hurt flash (four corner sprites in an environment colour that
    fades with the flash), the lives or trial counter, the score counter with its animated icon and
@@ -8,25 +9,13 @@
 #include "shared/hudplayer.h"
 #include "shared/settings.h"
 
-typedef struct Gfx {
-    struct {
-        u32 w0;
-        u32 w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
-#define _SHIFTL(v, s, w) ((u32)(((u32)(v) & ((0x01 << (w)) - 1)) << (s)))
 
-#define gDPWord(pkt, a, b)                                                                     \
-    {                                                                                          \
-        Gfx *_g = (Gfx *)(pkt);                                                                \
-        _g->words.w0 = (a);                                                                    \
-        _g->words.w1 = (b);                                                                    \
-    }
 
-#define gDPSetEnvColor(pkt, r, g, b, a)                                                        \
-    gDPWord(pkt, 0xFB000000,                                                                   \
-            _SHIFTL(r, 24, 8) | _SHIFTL(g, 16, 8) | _SHIFTL(b, 8, 8) | _SHIFTL(a, 0, 8))
+
+
 
 extern char HUD_NAME_FORMAT[];
 extern char HUD_LIVES_ANIM;
@@ -204,7 +193,7 @@ void func_8021EED8(Shared_HudPlayer *player, Shared_HudView *view) {
             y = view->x + view->width * 0.5f;
             x = view->y + view->height * 0.5f;
             func_802AA224(0xFA);
-            gDPSetEnvColor(D_80110634++, r, g, b, 0xFA);
+            gDPSetEnvColor(D_80110634++, (r), (g), (b), 250);
             for (k = 0; k < 4; k++) {
                 func_802ABC18(0x208, k, y + scaleX * HUD_FLASH_X[k + 4], x + scaleY * HUD_FLASH_Y[k + 4], sx,
                               scaleY * 1.5f, 1);
@@ -222,7 +211,7 @@ void func_8021EED8(Shared_HudPlayer *player, Shared_HudView *view) {
                 r = 253;
                 g = 0;
                 b = 0;
-                gDPSetEnvColor(D_80110634++, r, g, b, player->flashAlpha);
+                gDPSetEnvColor(D_80110634++, (r), (g), (b), (player->flashAlpha));
                 for (k = 0; k < 4; k++) {
                     func_802ABC18(0x208, k, y + scaleX * HUD_FLASH_X[k + 4], x + scaleY * HUD_FLASH_Y[k + 4], sx,
                                   scaleY * 1.5f, 1);

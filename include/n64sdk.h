@@ -1,3 +1,5 @@
+#ifndef UNBAKE_N64SDK_H
+#define UNBAKE_N64SDK_H
 /* n64sdk.h -- real Nintendo 64 SDK ("Ultra64"/GBI) type declarations.
  *
  * m2c type-context layer used by the repository build: these
@@ -357,3 +359,5 @@ typedef union {
     Gloadtlut      loadtlut;
     s64            force_structure_alignment;
 } Gfx;
+
+#endif

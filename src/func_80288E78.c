@@ -1,13 +1,10 @@
+#include "unbake_gbi.h"
 #include "basetypes.h"
 
 /* Draws a scene through cached display lists: loads the scene if needed (returning if that fails), calls the model's base list, and on first use records two lists in the frame's command stream, one for objects without flag 4 and one for objects with it, each drawn through func_80250458 inside a func_8026D980 pass and preceded by a branch past its end; finally calls the first cached list. */
 
-typedef struct Gfx {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Object {
     char pad0[0xD8];
@@ -44,19 +41,11 @@ void func_80288E78(Scene *scene, void *camera) {
             return;
         }
     }
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDE000000;
-        cmd->words.w1 = (unsigned int)func_8028FD94(scene->model, 2);
-    }
+    gSPDisplayList(D_80110634++, (unsigned int)func_8028FD94(scene->model, 2));
     if (scene->lists[0] == 0) {
         for (pass = 0; pass < 2; pass++) {
             scene->lists[pass] = D_80110634;
-            {
-                Gfx *cmd = D_80110634++;
-                cmd->words.w0 = 0xDE010000;
-                cmd->words.w1 = 0;
-            }
+            gSPBranchList(D_80110634++, 0);
             func_8026D980();
             objects = func_8028FD94(scene->model, 1);
             while (*objects != 0) {
@@ -75,19 +64,9 @@ void func_80288E78(Scene *scene, void *camera) {
                 }
             }
             func_8026D9D0();
-            {
-                Gfx *cmd = D_80110634++;
-                cmd->words.w0 = 0xDF000000;
-                cmd->words.w1 = 0;
-            }
-            branch = scene->lists[pass]++;
-            branch->words.w0 = 0xDE010000;
-            branch->words.w1 = (unsigned int)D_80110634;
+            gSPEndDisplayList(D_80110634++);
+            gSPBranchList(scene->lists[pass]++, (unsigned int)D_80110634);
         }
     }
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDE000000;
-        cmd->words.w1 = (unsigned int)scene->lists[0];
-    }
+    gSPDisplayList(D_80110634++, (unsigned int)scene->lists[0]);
 }

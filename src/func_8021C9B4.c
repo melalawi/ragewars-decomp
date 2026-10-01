@@ -1,11 +1,8 @@
+#include "unbake_gbi.h"
 #include "basetypes.h"
 
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct {
     s32 x;
@@ -92,26 +89,19 @@ void func_8021C9B4(void *arg0, void *arg1) {
                   ((func_8021C9B4_S1 *)(arg0))->unk86C);
 
     cmd = D_80110634++;
-    cmd->words.w0 = 0xE7000000;
-    cmd->words.w1 = 0;
+    gDPPipeSync(cmd);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xE3000A01;
-    cmd->words.w1 = 0x100000;
+    gDPSetCycleType(cmd, G_CYC_2CYCLE);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xD9FFFFFF;
-    cmd->words.w1 = 0x10000;
+    gSPGeometryMode(cmd, 0, G_FOG);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDB040004;
-    cmd->words.w1 = 2;
+    gSPMoveWord(cmd, G_MW_CLIP, 4, 2);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDB04000C;
-    cmd->words.w1 = 2;
+    gSPMoveWord(cmd, G_MW_CLIP, 12, 2);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDB040014;
-    cmd->words.w1 = 0xFFFE;
+    gSPMoveWord(cmd, G_MW_CLIP, 20, 0xFFFE);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDB04001C;
-    cmd->words.w1 = 0xFFFE;
+    gSPMoveWord(cmd, G_MW_CLIP, 28, 0xFFFE);
 
     func_80249E18(arg0, arg1);
     if (((func_8021C9B4_S1 *)(arg0))->unk1210 != 0) {

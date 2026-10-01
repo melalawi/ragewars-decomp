@@ -1,14 +1,9 @@
+#include "unbake_gbi.h"
 /* Draws a filled screen rectangle with nonnegative corners; the volatile bottom-coordinate argument constrains its stack-load scheduling. */
 
 #include "basetypes.h"
-typedef struct Gfx
-{
-  struct 
-  {
-    unsigned int w0;
-    unsigned int w1;
-  } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 typedef struct Color
 {
   unsigned char r;
@@ -23,16 +18,8 @@ void func_80293100(void *unused, Color *color, s32 left, s32 top, s32 right, vol
 {
   if (color->a != 0)
   {
-    {
-      Gfx *cmd = D_80110634++;
-      cmd->words.w0 = 0xE7000000;
-      cmd->words.w1 = 0;
-    }
-    {
-      Gfx *cmd = D_80110634++;
-      cmd->words.w0 = 0xE3000A01;
-      cmd->words.w1 = 0;
-    }
+    gDPPipeSync(D_80110634++);
+    gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
     func_8026925C(0x13);
     func_80268CE0(0x19);
     {

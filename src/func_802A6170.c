@@ -1,10 +1,9 @@
+#include "unbake_gbi.h"
 /* Draws the scene's ten particle lists unless the scene is in state 100: sets the render state and the shared particle texture D_800D14B0 (a 16x16 texture drawn in grey at alpha 200 through D_800D2E60), then for every particle inside the view box ending at D_801031F8 + 4 loads its matrix and draws the shared quad D_801469A0, while particles outside it are unlinked (func_80255E78) and returned to the free list (func_80255CB4); finally restores the render state through func_8026D8F8 and func_80296FF8. */
 #include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct {
     char pad0[0x18];
@@ -58,17 +57,17 @@ void func_802A6170(Scene *scene) {
     if (scene->state == 100) {
         return;
     }
-    { Gfx *g = D_80110634++; g->w0 = 0xE7000000; g->w1 = 0; }
-    { Gfx *g = D_80110634++; g->w0 = 0xE3000A01; g->w1 = 0x100000; }
-    { Gfx *g = D_80110634++; g->w0 = 0xFD900000; g->w1 = (u32)&D_800D14B0; }
-    { Gfx *g = D_80110634++; g->w0 = 0xF5900000; g->w1 = 0x07080200; }
-    { Gfx *g = D_80110634++; g->w0 = 0xE6000000; g->w1 = 0; }
-    { Gfx *g = D_80110634++; g->w0 = 0xF3000000; g->w1 = 0x0707F400; }
-    { Gfx *g = D_80110634++; g->w0 = 0xE7000000; g->w1 = 0; }
-    { Gfx *g = D_80110634++; g->w0 = 0xF5880400; g->w1 = 0x00080200; }
-    { Gfx *g = D_80110634++; g->w0 = 0xF2000000; g->w1 = 0x0003C03C; }
-    { Gfx *g = D_80110634++; g->w0 = 0xFA000000; g->w1 = 0xFFFFFFC8; }
-    { Gfx *g = D_80110634++; g->w0 = 0xDE000000; g->w1 = (u32)&D_800D2E60; }
+    gDPPipeSync(D_80110634++);
+    gDPSetCycleType(D_80110634++, G_CYC_2CYCLE);
+    gDPSetTextureImage(D_80110634++, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)&D_800D14B0);
+    gDPSetTile(D_80110634++, G_IM_FMT_I, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0);
+    gDPLoadSync(D_80110634++);
+    gDPLoadBlock(D_80110634++, G_TX_LOADTILE, 0, 0, 127, 1024);
+    gDPPipeSync(D_80110634++);
+    gDPSetTile(D_80110634++, G_IM_FMT_I, G_IM_SIZ_8b, 2, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0);
+    gDPSetTileSize(D_80110634++, G_TX_RENDERTILE, 0, 0, 60, 60);
+    gDPSetPrimColor(D_80110634++, 0, 0, 255, 255, 255, 200);
+    gSPDisplayList(D_80110634++, (u32)&D_800D2E60);
     for (i = 0; i < 10; i++) {
         max = &((func_802A6170_S1 *)(&D_801031F8))->unk4;
         list = &scene->lists[i];
@@ -85,9 +84,9 @@ void func_802A6170(Scene *scene) {
                 func_80255E78(list, particle);
                 func_80255CB4(&scene->free, particle);
             } else {
-                { Gfx *g = D_80110634++; g->w0 = 0xDA380003; g->w1 = (u32)transform; }
-                { Gfx *g = D_80110634++; g->w0 = 0x01004008; g->w1 = (u32)&D_801469A0; }
-                { Gfx *g = D_80110634++; g->w0 = 0x06000204; g->w1 = 0x00040600; }
+                gSPMatrix(D_80110634++, (u32)transform, G_MTX_LOAD);
+                gSPVertex(D_80110634++, (u32)&D_801469A0, 4, 0);
+                gSP2Triangles(D_80110634++, 0, 1, 2, 0, 2, 3, 0, 0);
             }
             particle = next;
         }

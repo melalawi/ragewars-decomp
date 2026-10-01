@@ -1,12 +1,9 @@
+#include "unbake_gbi.h"
 /* Draws the parts of a model resource that the owner has enabled, when the frame command buffer still has 3000 commands free: each part material's low two bits of byte 6 pick an owner flag at 0x102 (0x100, 0x8 or 0x2, 0x80 or 0x20 by bit 4) that must be set before func_80269A80 accepts the material and its display list is emitted. Adapted from func_8026DA4C with the owner argument and the per-material flag switch added. */
 #include "basetypes.h"
 
-typedef struct Gfx {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Frame {
     char pad0[0x114];
@@ -41,24 +38,12 @@ void func_8026B9EC(void **resource, Owner *owner, s32 matrix, s32 segment, s32 l
     }
     header = *resource;
     func_80253B5C(0, resource);
-    if (segment != 0) {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDB060004;
-        cmd->words.w1 = matrix;
-    } else {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDA380003;
-        cmd->words.w1 = matrix;
-    }
+    if (segment != 0) gSPSegment(D_80110634++, 1, matrix) else gSPMatrix(D_80110634++, matrix, G_MTX_LOAD);
     base = textures;
     if (base == 0) {
         base = func_8028FD94(header, 0);
     }
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDB060008;
-        cmd->words.w1 = (unsigned int)base;
-    }
+    gSPSegment(D_80110634++, 2, (unsigned int)base);
     parts = func_8028FD94(header, 2);
     count = *(s32 *)parts;
     for (i = 0; i < count; i++) {
@@ -102,8 +87,7 @@ void func_8026B9EC(void **resource, Owner *owner, s32 matrix, s32 segment, s32 l
             void *list = func_8028FD94(part, 1);
 
             cmd = D_80110634++;
-            cmd->words.w0 = 0xDE000000;
-            cmd->words.w1 = (unsigned int)list;
+            gSPDisplayList(cmd, (unsigned int)list);
         }
     }
 }

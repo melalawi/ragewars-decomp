@@ -1,8 +1,10 @@
+#include "unbake_gbi.h"
 /* Draws a menu model with screen-scaled translation, animated and fixed rotations, restoring the render-state flag afterward; the unsigned offset-to-pointer cast preserves matrix-address scheduling. */
 #include "basetypes.h"
 typedef struct { f32 x,y,z; } Vec;
 typedef struct { f32 m[16]; } Matrix;
-typedef struct { u32 w0,w1; } Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 typedef struct { s32 unused; Vec scale, position, rotation, speed; s32 model; char matrices[128]; s32 flags; } Item;
 typedef struct { char p0[0x160]; Matrix camera; char p1[0x29C-0x1A0]; f32 width,height; char p2[0x380-0x2A4]; Matrix matrices[2]; } Screen;
 extern Screen D_801450C8[]; extern Gfx *D_80110634;
@@ -26,12 +28,12 @@ void func_804399D0(Item *item) {
  saved=D_800D15D0; D_800D15D0=0;
  if (item->model != -1) {
   func_804171B8(0x33335);
-  {Gfx *g=D_80110634++;g->w0=0xE7000000;g->w1=0;}
-  {Gfx *g=D_80110634++;g->w0=0xE3000A01;g->w1=0x100000;}
-  {Gfx *g=D_80110634++;g->w0=0xE3000C00;g->w1=0x80000;}
-  {Gfx *g=D_80110634++;g->w0=0xE3001201;g->w1=0x2000;}
+  gDPPipeSync(D_80110634++);
+  gDPSetCycleType(D_80110634++, G_CYC_2CYCLE);
+  gDPSetTexturePersp(D_80110634++, G_TP_PERSP);
+  gDPSetTextureFilter(D_80110634++, G_TF_BILERP);
   func_8026D844();
-  {Gfx *g=D_80110634++; char *address=(char *)(u32)(D_800D297C<<6); address+=0x380; address+=(u32)D_801450C8; g->w0=0xDA380007;g->w1=(u32)address;}
+  {Gfx *g=D_80110634++; char *address=(char *)(u32)(D_800D297C<<6); address+=0x380; address+=(u32)D_801450C8; gSPMatrix(g, (u32)address, G_MTX_LOAD | G_MTX_PROJECTION);}
   position=item->position;
   func_80272908(&D_801450C8[0].camera,&position,&transformed);
   func_80272CD0(&matrix,transformed);

@@ -1,13 +1,10 @@
+#include "unbake_gbi.h"
 /* Draws an actor's attached model: when the actor has one, allocates a matrix from the pool D_8011FFB0,
  * fills it with the given transform multiplied by the camera matrix (func_8026F908, func_80272898,
  * func_8026FD0C), loads it into the display list, draws the model through func_8026C6D8 with the
  * actor's per-frame state for the current frame, then reloads the camera's per-frame matrix. */
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 #include "basetypes.h"
 
@@ -56,15 +53,12 @@ void func_8024BA6C(void *actor, Camera *camera, f32 *transform, u8 layer) {
             func_8026F908(mf, transform, (f32 *)(matrices + 0x1E0));
             func_80272898(mf);
             func_8026FD0C(mf, mtx);
-            load = D_80110634++;
-            load->words.w0 = 0xDA380007;
-            load->words.w1 = mtx;
+            gSPMatrix(D_80110634++, mtx, G_MTX_LOAD | G_MTX_PROJECTION);
             func_8026C6D8(layer, camera->style, ((func_8024BA6C_S1 *)(actor))->unkB4, 1,
                           &(&((func_8024BA6C_S1 *)(actor))->unk140)[D_800D297C], 0, ((func_8024BA6C_S1 *)(actor))->unk3);
             restore = D_80110634++;
             offset = (D_800D297C << 6) + 0x380;
-            restore->words.w0 = 0xDA380007;
-            restore->words.w1 = matrices + offset;
+            gSPMatrix(restore, matrices + offset, G_MTX_LOAD | G_MTX_PROJECTION);
         }
     }
 }

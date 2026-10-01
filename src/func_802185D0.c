@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 /* Draws the team selection menu: each listed team icon is placed in the player's viewport, tinted
    with a pulsing shade under the cursor at 0x6C or grey 150 at three quarters alpha otherwise, faded by
    the menu's opening and the options fade D_801462DE and drawn scaled to the viewport and its size,
@@ -6,10 +7,8 @@
    for the title. */
 #include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct {
     f32 x;
@@ -100,12 +99,7 @@ void func_802185D0(Menu *menu, Item *items, s32 count, Player *player) {
                 blue = red;
                 alpha *= 0.75f;
             }
-            {
-                Gfx *cmd = D_80110634++;
-                cmd->w0 = 0xFB000000;
-                cmd->w1 = (red << 24) | ((green & 0xFF) << 16) | ((blue & 0xFF) << 8)
-                    | ((u32) (alpha * fade) & 0xFF);
-            }
+            gDPSetEnvColor(D_80110634++, red, green, blue, alpha * fade);
             func_802ABC18(item->icon, 0, x - width * item->height * scaleX * 0.5f,
                           y - height * item->height * scaleY * 0.5f,
                           scaleX * item->height, scaleY * item->height, 1);

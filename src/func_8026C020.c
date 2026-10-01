@@ -1,6 +1,8 @@
+#include "unbake_gbi.h"
 /* Emits display lists for visible mesh groups, redraws deferred translucent groups and restores changed texture state. */
 #include "basetypes.h"
-typedef struct {struct {u32 w0,w1;} words;} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 typedef struct {u32 flags;char pad4[0x13];u8 alpha;} Material;
 typedef struct Mesh {u32 list,matrix,aux,vertices;u16 scaleS,scaleT;s32 segmented,unused;struct Mesh *next;} Mesh;
 typedef struct Group {char pad0[3];s8 mode;Material *material;Mesh *meshes;char padc[8];struct Group *next;} Group;
@@ -18,18 +20,18 @@ void func_8026C020(void) {
    scaleT=0;scaleS=0;
    do {
     func_8026B504(mesh->matrix,mesh->aux,group->material);
-    if(mesh->segmented){COMMAND(0xDB060004,mesh->matrix);}else{COMMAND(0xDA380003,mesh->matrix);}
-    COMMAND(0xDB060008,mesh->vertices);
+    if(mesh->segmented){gSPSegment(D_80110634++, 1, ((mesh->matrix)));}else{gSPMatrix(D_80110634++, ((mesh->matrix)), G_MTX_LOAD);}
+    gSPSegment(D_80110634++, 2, ((mesh->vertices)));
     if(mesh->scaleS) {
      if(scaleS!=mesh->scaleS || scaleT!=mesh->scaleT) {
       if(group->material->flags&0x2000){COMMAND(0xD7002802,((u32)mesh->scaleS<<16)|mesh->scaleT);}else{COMMAND(0xD7000002,((u32)mesh->scaleS<<16)|mesh->scaleT);}
      }
      scaleS=mesh->scaleS;scaleT=mesh->scaleT;
     }
-    COMMAND(0xDE000000,mesh->list);
+    gSPDisplayList(D_80110634++, ((mesh->list)));
     mesh=mesh->next;
    }while(mesh);
-   if(group->material->flags&0x2000) {COMMAND(0xE3000F00,0);}
+   if(group->material->flags&0x2000) {gDPSetTextureLOD(D_80110634++, G_TL_TILE);}
    if(group->material->flags&0x4000) {
     Group *next=group->next;group->next=deferred;deferred=group;group=next;
    } else group=group->next;
@@ -43,9 +45,9 @@ void func_8026C020(void) {
     COMMAND(0xFA000000,group->material->alpha);
     do {
      func_8026B504(mesh->matrix,mesh->aux,group->material);
-     if(mesh->segmented){COMMAND(0xDB060004,mesh->matrix);}else{COMMAND(0xDA380003,mesh->matrix);}
-     COMMAND(0xDB060008,mesh->vertices);
-     COMMAND(0xDE000000,mesh->list);
+     if(mesh->segmented){gSPSegment(D_80110634++, 1, ((mesh->matrix)));}else{gSPMatrix(D_80110634++, ((mesh->matrix)), G_MTX_LOAD);}
+     gSPSegment(D_80110634++, 2, ((mesh->vertices)));
+     gSPDisplayList(D_80110634++, ((mesh->list)));
      mesh=mesh->next;
     }while(mesh);
    }
@@ -59,18 +61,18 @@ void func_8026C020(void) {
    scaleT=0;scaleS=0;
    do {
     func_8026B504(mesh->matrix,mesh->aux,group->material);
-    if(mesh->segmented){COMMAND(0xDB060004,mesh->matrix);}else{COMMAND(0xDA380003,mesh->matrix);}
-    COMMAND(0xDB060008,mesh->vertices);
+    if(mesh->segmented){gSPSegment(D_80110634++, 1, ((mesh->matrix)));}else{gSPMatrix(D_80110634++, ((mesh->matrix)), G_MTX_LOAD);}
+    gSPSegment(D_80110634++, 2, ((mesh->vertices)));
     if(mesh->scaleS) {
      if(scaleS!=mesh->scaleS || scaleT!=mesh->scaleT) {
       if(group->material->flags&0x2000){COMMAND(0xD7002802,((u32)mesh->scaleS<<16)|mesh->scaleT);}else{COMMAND(0xD7000002,((u32)mesh->scaleS<<16)|mesh->scaleT);}
      }
      scaleS=mesh->scaleS;scaleT=mesh->scaleT;
     }
-    COMMAND(0xDE000000,mesh->list);
+    gSPDisplayList(D_80110634++, ((mesh->list)));
     mesh=mesh->next;
    }while(mesh);
-   if(group->material->flags&0x2000){COMMAND(0xE3000F00,0);}
+   if(group->material->flags&0x2000){gDPSetTextureLOD(D_80110634++, G_TL_TILE);}
   }
   group=group->next;
  }while(group);

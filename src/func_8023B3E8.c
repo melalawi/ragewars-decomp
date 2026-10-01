@@ -1,19 +1,16 @@
+#include "unbake_gbi.h"
 /* Sorts and draws scene translucent objects in two groups around the view depth. */
 #include "basetypes.h"
 
-typedef struct {
-    struct {
-        u32 w0;
-        u32 w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Object {char gap0[4];struct Object *next;char gap8[0x208];f32 depth;} Object;
 typedef struct Scene {char gap0[0x8B4];Object *objects;char gap8B8[12];s32 count;} Scene;
 typedef struct View {char gap0[0x120];s32 hidden;char gap124[8];f32 depth;} View;
 extern Gfx *D_80110634;
 
-#define GFX(a, b)                            {                                            Gfx *_g = (Gfx *)(D_80110634++);         _g->words.w0 = (a);                      _g->words.w1 = (u32)(b);             }
+
 extern char D_80146D20;
 extern void D_23B928();
 extern void D_23B93C();
@@ -33,19 +30,19 @@ void func_8023B3E8(Scene *scene, View *view) {
     if (scene->count == 0 || view->hidden != 0) {
         return;
     }
-    GFX(0xE7000000, 0);
-    GFX(0xDA380003, (u32)&D_80146D20);
-    GFX(0xDB040004, 2);
-    GFX(0xDB04000C, 2);
-    GFX(0xDB040014, 0xFFFE);
-    GFX(0xDB04001C, 0xFFFE);
-    GFX(0xD9FEFFFF, 0);
-    GFX(0xE3000A01, 0);
+    gDPPipeSync(D_80110634++);
+    gSPMatrix(D_80110634++, (u32)(((u32)&D_80146D20)), G_MTX_LOAD);
+    gSPMoveWord(D_80110634++, G_MW_CLIP, 4, (u32)((2)));
+    gSPMoveWord(D_80110634++, G_MW_CLIP, 12, (u32)((2)));
+    gSPMoveWord(D_80110634++, G_MW_CLIP, 20, (u32)((0xFFFE)));
+    gSPMoveWord(D_80110634++, G_MW_CLIP, 28, (u32)((0xFFFE)));
+    gSPGeometryMode(D_80110634++, G_FOG, 0);
+    gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
     func_8026925C(0xD);
-    GFX(0xD9F9FBFF, 0);
-    GFX(0xD9FFFFFF, 0x200004);
-    GFX(0xE3000C00, 0x80000);
-    GFX(0xE3001201, 0x2000);
+    gSPGeometryMode(D_80110634++, G_CULL_BACK | G_LIGHTING | G_TEXTURE_GEN, 0);
+    gSPGeometryMode(D_80110634++, 0, G_SHADE | G_SHADING_SMOOTH);
+    gDPSetTexturePersp(D_80110634++, G_TP_PERSP);
+    gDPSetTextureFilter(D_80110634++, G_TF_BILERP);
     nearCount = 0;
     farCount = 0;
     for (object = scene->objects; object != 0; object = object->next) {

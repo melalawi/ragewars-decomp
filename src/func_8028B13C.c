@@ -1,9 +1,6 @@
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "unbake_gbi.h"
+#include "basetypes.h"
+#include "n64sdk.h"
 
 #include "basetypes.h"
 
@@ -16,17 +13,13 @@ void func_8028B13C(s32 arg0, s32 arg1) {
     Gfx *cmd;
 
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDB040004;
-    cmd->words.w1 = 1;
+    gSPMoveWord(cmd, G_MW_CLIP, 4, 1);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDB04000C;
-    cmd->words.w1 = 1;
+    gSPMoveWord(cmd, G_MW_CLIP, 12, 1);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDB040014;
-    cmd->words.w1 = 0xFFFF;
+    gSPMoveWord(cmd, G_MW_CLIP, 20, 0xFFFF);
     cmd = D_80110634++;
-    cmd->words.w0 = 0xDB04001C;
-    cmd->words.w1 = 0xFFFF;
+    gSPMoveWord(cmd, G_MW_CLIP, 28, 0xFFFF);
     func_8026D980();
     func_80282304(arg0 + 0x1B08, arg1);
     func_8026D9D0();

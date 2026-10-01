@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 /* Draws a sprite with the standard 2D state: resets the render-state cache, selects render mode
    0xC through func_804170B4 and combine mode 5 through func_80416D74, emits the other-mode word
    0xE3000C00 and the texture enable (each only when its cached state changes, preceded by one
@@ -5,12 +6,8 @@
    through func_80415D10 with the same arguments. */
 #include "basetypes.h"
 
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 extern Gfx *D_80110634;
 extern s32 D_800E32E0;
@@ -30,8 +27,7 @@ static inline void sync(void) {
     if (D_800E32E4 == 0) {
         D_800E32E4 = 1;
         cmd = D_80110634++;
-        cmd->words.w0 = 0xE7000000;
-        cmd->words.w1 = 0;
+        gDPPipeSync(cmd);
     }
 }
 

@@ -1,15 +1,12 @@
+#include "unbake_gbi.h"
 /* Draws the current texture D_800E32A4 over the screen rectangle (left, top)-(right, bottom) mapping
    the normalised texture window (u0, v0)-(u1, v1): skips an empty texture or rectangle, scales the
    window by the texture size into 5.10 fixed point to get the start coordinates and per-pixel
    steps, and emits the texture rectangle command with its two half commands. */
 #include "basetypes.h"
 
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct {
     char pad0[4];
@@ -42,14 +39,6 @@ void func_804192F8(s32 left, s32 top, s32 right, s32 bottom, f32 u0, f32 v0, f32
     }
     startS = u0 * scaleU;
     startT = v0 * scaleV;
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xE1000000;
-        cmd->words.w1 = ((startS >> 5) << 16) | ((startT >> 5) & 0xFFFF);
-    }
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xF1000000;
-        cmd->words.w1 = (dsdx << 16) | (dtdy & 0xFFFF);
-    }
+    gDPHalf1(D_80110634++, ((startS >> 5) << 16) | ((startT >> 5) & 0xFFFF));
+    gDPHalf2(D_80110634++, (dsdx << 16) | (dtdy & 0xFFFF));
 }

@@ -1,13 +1,10 @@
+#include "unbake_gbi.h"
 #include "basetypes.h"
 
 /* Sets the lighting for a model: when lighting toward the player is enabled and the model is flagged 0x8000, it aims the static light's direction D_800D1610 from the model's position at the current player and emits one light with it, returning 1; otherwise it emits the given light block, if any, and returns 0. */
 
-typedef struct Gfx {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Vec3f {
     f32 x;
@@ -45,33 +42,16 @@ s32 func_8026B504(void *model, void *lights, s32 *flags) {
             D_800D1610[1] = direction.y * D_800C9758;
             D_800D1610[2] = direction.z * D_800C9758;
             cmd = D_80110634++;
-            cmd->words.w0 = 0xDB020000;
-            cmd->words.w1 = 0x18;
-            light = D_80110634++;
-            light->words.w0 = 0xDC08060A;
-            light->words.w1 = (unsigned int)(D_800D1610 - 8);
-            ambient = D_80110634++;
-            ambient->words.w0 = 0xDC08090A;
-            ambient->words.w1 = (unsigned int)(D_800D1610 - 0x10);
+            gSPMoveWord(cmd, G_MW_NUMLIGHT, 0, 0x18);
+            gSPMoveMem(D_80110634++, G_MV_LIGHT, 48, 16, (unsigned int)(D_800D1610 - 8));
+            gSPMoveMem(D_80110634++, G_MV_LIGHT, 72, 16, (unsigned int)(D_800D1610 - 0x10));
         }
         return 1;
     }
     if (lights != 0) {
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xDB020000;
-            cmd->words.w1 = 0x18;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xDC08060A;
-            cmd->words.w1 = (unsigned int)((char *)lights + 8);
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xDC08090A;
-            cmd->words.w1 = (unsigned int)lights;
-        }
+        gSPMoveWord(D_80110634++, G_MW_NUMLIGHT, 0, 0x18);
+        gSPMoveMem(D_80110634++, G_MV_LIGHT, 48, 16, (unsigned int)((char *)lights + 8));
+        gSPMoveMem(D_80110634++, G_MV_LIGHT, 72, 16, (unsigned int)lights);
     }
     return 0;
 }

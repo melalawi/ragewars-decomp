@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 #include "basetypes.h"
 #include "shared/particle.h"
 
@@ -73,18 +74,8 @@ static inline s32 func_8027ED40_scale(f32 value, f32 div) {
     return (value < 0.0f) ? 0 : (s32)((s32)value / div);
 }
 
-#define SET_ENV_COLOR(r, g, b, a)                                                             \
-    {                                                                                         \
-        Gfx *_g = D_80110634++;                                                               \
-        _g->words.w0 = 0xFB000000;                                                            \
-        _g->words.w1 = (((r) & 0xFF) << 24) | (((g) & 0xFF) << 16) | (((b) & 0xFF) << 8) | ((a) & 0xFF); \
-    }
-#define SET_PRIM_COLOR(r, g, b, a)                                                            \
-    {                                                                                         \
-        Gfx *_g = D_80110634++;                                                               \
-        _g->words.w0 = 0xFA000000;                                                            \
-        _g->words.w1 = (((r) & 0xFF) << 24) | (((g) & 0xFF) << 16) | (((b) & 0xFF) << 8) | ((a) & 0xFF); \
-    }
+
+
 
 #define MIN(a, b) ((a) > (b) ? (b) : (a))
 #define MAX(a, b) ((a) < (b) ? (b) : (a))
@@ -237,22 +228,14 @@ void func_8027ED40(Shared_Particle *particle, Shared_ParticleView *view) {
     if (dist < 0.0f) {
         dist = -dist;
     }
-    if (D_801450B8 == 1) {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDA380003;
-        cmd->words.w1 = (u32)&particle->mtx[D_800D297C];
-    } else {
+    if (D_801450B8 == 1) gSPMatrix(D_80110634++, (u32)&particle->mtx[D_800D297C], G_MTX_LOAD) else {
         mtx = func_80279A30(&D_8011FFB0, 1);
         if (mtx == NULL) {
             func_802536F4(0, model);
             return;
         }
         func_8027DD1C(particle, mtx, view, dist);
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->words.w0 = 0xDA380003;
-            cmd->words.w1 = (u32)mtx;
-        }
+        gSPMatrix(D_80110634++, (u32)mtx, G_MTX_LOAD);
     }
 
     textured = particle->flags & 0x800000;
@@ -329,22 +312,18 @@ void func_8027ED40(Shared_Particle *particle, Shared_ParticleView *view) {
         switch (mode) {
             case 0:
             default:
-                SET_ENV_COLOR(env[0], env[1], env[2], 0xFF);
+                gDPSetEnvColor(D_80110634++, env[0], env[1], env[2], 255);
                 break;
             case 2:
-                SET_ENV_COLOR(env[0], env[0], env[2], 0xFF);
+                gDPSetEnvColor(D_80110634++, env[0], env[0], env[2], 255);
                 break;
             case 1:
-                SET_ENV_COLOR(env[1], env[0], env[2], 0xFF);
+                gDPSetEnvColor(D_80110634++, env[1], env[0], env[2], 255);
                 break;
         }
     }
     alpha = MAX(MIN(alpha, 255), 0);
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0x01004008;
-        cmd->words.w1 = (u32)&D_8011F038;
-    }
+    gSPVertex(D_80110634++, (u32)&D_8011F038, 4, 0);
     if (textured) {
         Gfx *cmd = D_80110634++;
         cmd->words.w0 = 0xD7FF0002;
@@ -354,19 +333,15 @@ void func_8027ED40(Shared_Particle *particle, Shared_ParticleView *view) {
     switch (mode) {
         case 0:
         default:
-            SET_PRIM_COLOR(prim[0], prim[1], prim[2], (u32)particle->alpha);
+            gDPSetPrimColor(D_80110634++, 0, 0, prim[0], prim[1], prim[2], (u32)particle->alpha);
             break;
         case 2:
-            SET_PRIM_COLOR(prim[0], prim[0], prim[2], (u32)particle->alpha);
+            gDPSetPrimColor(D_80110634++, 0, 0, prim[0], prim[0], prim[2], (u32)particle->alpha);
             break;
         case 1:
-            SET_PRIM_COLOR(prim[1], prim[0], prim[2], (u32)particle->alpha);
+            gDPSetPrimColor(D_80110634++, 0, 0, prim[1], prim[0], prim[2], (u32)particle->alpha);
             break;
     }
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0x06000204;
-        cmd->words.w1 = 0x00040600;
-    }
+    gSP2Triangles(D_80110634++, 0, 1, 2, 0, 2, 3, 0, 0);
     func_802536F4(0, model);
 }

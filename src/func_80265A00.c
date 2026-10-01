@@ -1,20 +1,17 @@
+#include "unbake_gbi.h"
 /* Loads the scene's point lights into the display list: with no light in D_8013B1A8 it clears geometry mode bit 0x80, otherwise it sets it and fills eight light slots from the light list, transforming each active light's position into the view, storing its negated view direction, its colour scaled by its intensity, its falloff and a fixed range, marking unused slots off, and emits the light-move command for each slot, then advances the light buffer. The first direction component is truncated into a local before negating. */
 #include "basetypes.h"
 
-typedef struct Gfx {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
-typedef struct Light {
+typedef struct UnitLight {
     s16 dir[3];
     u8 color[4];
     s16 falloff;
     u16 near;
     u16 range;
-} Light;
+} UnitLight;
 
 typedef struct LightData {
     u16 falloff;
@@ -32,7 +29,7 @@ typedef struct LightNode {
 
 extern Gfx *D_80110634;
 extern s32 D_80110560;
-extern Light D_80110160[];
+extern UnitLight D_80110160[];
 extern char D_8013B1A8;
 
 extern LightNode *func_80268CBC(void *);
@@ -50,16 +47,11 @@ void func_80265A00(char *view) {
     node = func_80268CBC(&D_8013B1A8);
     if (node == 0) {
         Gfx *g = D_80110634++;
-        g->words.w0 = 0xD9FFFF7F;
-        g->words.w1 = 0;
+        gSPGeometryMode(g, 0x80, 0);
         D_80110560 += 8;
         return;
     }
-    {
-        Gfx *g = D_80110634++;
-        g->words.w0 = 0xD9FFFFFF;
-        g->words.w1 = 0x80;
-    }
+    gSPGeometryMode(D_80110634++, 0, 0x80);
     for (i = 0; i < 8; i++) {
         if (node != 0 && node->active != 0) {
             data = node->data;

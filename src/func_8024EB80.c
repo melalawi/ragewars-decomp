@@ -1,12 +1,9 @@
+#include "unbake_gbi.h"
 /* Draws a static object through its cached display list, building the cache on first use: emits a branch placeholder, loads the object's model, builds its rotation (the shared D_8013B190 angle for type 8), scale and position raised by its height offset into the current matrix slot, draws the model with its material through func_8026DA4C and func_8024ED80 unless the type is 12, ends the list, patches the placeholder to skip past it and calls the cached list. The display list writes match only as block-scoped initialisers taking D_80110634++. */
 #include "basetypes.h"
 
-typedef struct Gfx {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Vec3f {
     f32 x;
@@ -65,11 +62,7 @@ void func_8024EB80(Object *obj) {
     func_8026D8F8();
     func_80296FF8();
     if (obj->cached != 0) {
-        {
-            Gfx *g = D_80110634++;
-            g->words.w0 = 0xDE000000;
-            g->words.w1 = (unsigned int)obj->cached;
-        }
+        gSPDisplayList(D_80110634++, (unsigned int)obj->cached);
         return;
     }
     resource = func_8024F6DC(obj, obj->model);
@@ -77,11 +70,7 @@ void func_8024EB80(Object *obj) {
         return;
     }
     obj->cached = D_80110634;
-    {
-        Gfx *g = D_80110634++;
-        g->words.w0 = 0xDE010000;
-        g->words.w1 = 0;
-    }
+    gSPBranchList(D_80110634++, 0);
     if (*obj->type == 8) {
         angle = D_8013B190;
     } else {
@@ -97,19 +86,9 @@ void func_8024EB80(Object *obj) {
         func_8026DA4C(resource, obj->matrices[D_800D297C], 0, obj->lights, 0, obj->material);
         func_8024ED80(obj, resource);
     }
-    {
-        Gfx *g = D_80110634++;
-        g->words.w0 = 0xDF000000;
-        g->words.w1 = 0;
-    }
-    branch = obj->cached++;
-    branch->words.w0 = 0xDE010000;
-    branch->words.w1 = (unsigned int)D_80110634;
-    {
-        Gfx *g = D_80110634++;
-        g->words.w0 = 0xDE000000;
-        g->words.w1 = (unsigned int)obj->cached;
-    }
+    gSPEndDisplayList(D_80110634++);
+    gSPBranchList(obj->cached++, (unsigned int)D_80110634);
+    gSPDisplayList(D_80110634++, (unsigned int)obj->cached);
     func_802536F4(0, resource);
 }
 

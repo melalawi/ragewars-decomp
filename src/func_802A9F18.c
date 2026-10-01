@@ -1,10 +1,9 @@
+#include "unbake_gbi.h"
 /* Draws a text string in the current font style D_8013B7B8: when centring, measures it through func_80442460 at the style size scaled by the language-dependent factors for D_8014D3D0, shrinks the scale so it fits 44 pixels inside the screen width D_800E28D0 and shifts x left by half the width; then sets the environment colour from the style with the given alpha and the primitive colour from the style, and draws the string through func_802A98E0, first as a shadow when requested. */
 #include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct {
     char pad0[0xA0];
@@ -97,24 +96,9 @@ void func_802A9F18(s32 text, s32 x, s32 y, s32 alpha, s32 centred, s32 shadow, f
         }
         x -= (s32)(width * 0.5f);
     }
-    {
-        Gfx *g = D_80110634++;
-
-        g->w0 = 0xE7000000;
-        g->w1 = 0;
-    }
-    {
-        Gfx *g = D_80110634++;
-
-        g->w0 = 0xFB000000;
-        g->w1 = SHIFTL(style->envR, 24, 8) | SHIFTL(style->envG, 16, 8) | SHIFTL(style->envB, 8, 8) | SHIFTL(alpha, 0, 8);
-    }
-    {
-        Gfx *g = D_80110634++;
-
-        g->w0 = 0xFA000000;
-        g->w1 = SHIFTL(style->primR, 24, 8) | SHIFTL(style->primG, 16, 8) | SHIFTL(style->primB, 8, 8) | SHIFTL(0xFF, 0, 8);
-    }
+    gDPPipeSync(D_80110634++);
+    gDPSetEnvColor(D_80110634++, (u32)((style->envR)), (u32)((style->envG)), (u32)((style->envB)), (u32)((alpha)));
+    gDPSetPrimColor(D_80110634++, 0, 0, (u32)((style->primR)), (u32)((style->primG)), (u32)((style->primB)), 255);
     fx = x;
     w = style->width * scaleX;
     h = style->height * scaleY;

@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 /* Draws an actor's player model with its status tint: sets the other-mode lighting command and render
    mode 2, gives the model the team colour byte (the match rule D_801468A0's colour at 0x73 when team
    colours apply to the player, else the model's own at 0xE), and by the player's tint mode at 0x1238
@@ -10,10 +11,8 @@
 
 #include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct {
     f32 r;
@@ -82,9 +81,7 @@ void func_80228F94(Actor *actor, s32 arg1, Draw *draw) {
     if (actor != 0) {
         player = actor->player;
         if (player != 0) {
-            gfx = D_80110634++;
-            gfx->w0 = 0xE200001C;
-            gfx->w1 = 0xC4404B50;
+            gDPSetRenderMode(D_80110634++, 0xC4404B50, 0);
             func_80268CE0(2);
             if (D_801468A0->teams != 0 && player->controls->teamColours != 0) {
                 actor->colour = D_801468A0->colour;

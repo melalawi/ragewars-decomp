@@ -1,13 +1,10 @@
+#include "unbake_gbi.h"
 /* Emits a set-color-image display list command for the current frame buffer, then draws image 0x388
  * scaled to fill the screen dimensions over the image's returned width and height, when both are nonzero. */
 #include "basetypes.h"
 
-typedef struct Gfx {
-    struct {
-        u32 w0;
-        u32 w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Frame {
     char pad0[0x110];
@@ -29,9 +26,7 @@ void func_80293FE4(void) {
 
     width = 0;
     height = 0;
-    cmd = D_80110634++;
-    cmd->words.w0 = ((D_800E28D0 - 1) & 0xFFF) | 0xFF100000;
-    cmd->words.w1 = (u32)D_8011FE80->colorImage;
+    gDPSetColorImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, D_800E28D0, (u32)D_8011FE80->colorImage);
     func_802AB940(0x388, 0, &width, &height);
     if ((width != 0) && (height != 0)) {
         func_802AA224(0xFA);

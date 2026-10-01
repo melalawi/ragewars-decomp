@@ -1,3 +1,4 @@
+#include "unbake_gbi.h"
 /* Draws a player's marker when it is enabled at 0x1214: loads the player's matrix for the current view
    D_800D297C from its table at 0x1500, sets the render and geometry modes, fills the eight vertices of
    a red prism in D_80102A58 (alpha 150 on the upper and 100 on the lower corners), emits them with the
@@ -5,10 +6,8 @@
    matrix from the table at 0x1580 when 0x147C is set. */
 #include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct {
     s16 x;
@@ -21,11 +20,11 @@ typedef struct {
     u8 g;
     u8 b;
     u8 a;
-} Vtx;
+} UnitVtx;
 
 typedef struct {
     s32 m[16];
-} Mtx;
+} UnitMtx;
 
 typedef struct {
     char pad0[0x1214];
@@ -33,17 +32,17 @@ typedef struct {
     char pad1218[0x147C - 0x1218];
     s32 second;
     char pad1480[0x1500 - 0x1480];
-    Mtx views[2];
-    Mtx markers[2];
+    UnitMtx views[2];
+    UnitMtx markers[2];
 } Player;
 
 extern s32 D_800D297C;
-extern Vtx D_80102A58[];
+extern UnitVtx D_80102A58[];
 extern Gfx *D_80110634;
 extern void func_8026D8F8(void);
 extern void func_8026925C(s32);
 extern void func_80268CE0(s32);
-extern void func_802A6488(Mtx *, s32, s32, s32);
+extern void func_802A6488(UnitMtx *, s32, s32, s32);
 
 void func_8021C674(Player *player) {
     s32 red;
@@ -51,32 +50,16 @@ void func_8021C674(Player *player) {
     s32 high;
 
     if (player->marker != 0) {
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w1 = (u32) &player->views[D_800D297C];
-            cmd->w0 = 0xDA380003;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0xE7000000;
-            cmd->w1 = 0;
-        }
+        gSPMatrix(D_80110634++, (u32) &player->views[D_800D297C], G_MTX_LOAD);
+        gDPPipeSync(D_80110634++);
         func_8026D8F8();
         func_8026925C(0xE);
         func_80268CE0(0x1C);
         red = 200;
         low = 100;
         high = 150;
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0xD9F8FB7F;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0xD9FFFFFF;
-            cmd->w1 = 0x200004;
-        }
+        gSPGeometryMode(D_80110634++, G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | 0x80, 0);
+        gSPGeometryMode(D_80110634++, 0, G_SHADE | G_SHADING_SMOOTH);
         D_80102A58[0].x = 0;
         D_80102A58[0].y = 1;
         D_80102A58[0].z = 0;
@@ -157,51 +140,15 @@ void func_8021C674(Player *player) {
         D_80102A58[7].g = 0;
         D_80102A58[7].b = 0;
         D_80102A58[7].a = low;
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x01008010;
-            cmd->w1 = (u32) D_80102A58;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x05000208;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x0502080A;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x0502040A;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x05040A0C;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x0504060C;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x05060C0E;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x0506000E;
-            cmd->w1 = 0;
-        }
-        {
-            Gfx *cmd = D_80110634++;
-            cmd->w0 = 0x05000E08;
-            cmd->w1 = 0;
-        }
+        gSPVertex(D_80110634++, (u32) D_80102A58, 8, 0);
+        gSP1Triangle(D_80110634++, 0, 1, 4, 0);
+        gSP1Triangle(D_80110634++, 1, 4, 5, 0);
+        gSP1Triangle(D_80110634++, 1, 2, 5, 0);
+        gSP1Triangle(D_80110634++, 2, 5, 6, 0);
+        gSP1Triangle(D_80110634++, 2, 3, 6, 0);
+        gSP1Triangle(D_80110634++, 3, 6, 7, 0);
+        gSP1Triangle(D_80110634++, 3, 0, 7, 0);
+        gSP1Triangle(D_80110634++, 0, 7, 4, 0);
         if (player->second != 0) {
             func_802A6488(&player->markers[D_800D297C], red, low, high);
         }

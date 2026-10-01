@@ -1,29 +1,18 @@
+#include "unbake_gbi.h"
 /* Draws a menu option's image dimmed unless it is available (option id 0x10FE: sub-index below the
    unlock counts at 0x64D/0x64E of the save data; id 0x1194: flag byte 0x644 + sub-index), setting the
    draw alpha through func_802AA224 once (tracked by D_800E5E70 = 5), emitting a pipe sync, an other-mode
    word and a white or grey environment colour to D_80110634, and drawing it through func_802ABC18. */
 #include "basetypes.h"
 
-typedef struct Gfx {
-    struct {
-        u32 w0;
-        u32 w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
-#define _SHIFTL(v, s, w) ((u32)(((u32)(v) & ((0x01 << (w)) - 1)) << (s)))
 
-#define gDPWord(pkt, a, b)                                                                     \
-    {                                                                                          \
-        Gfx *_g = (Gfx *)(pkt);                                                                \
-        _g->words.w0 = (a);                                                                    \
-        _g->words.w1 = (b);                                                                    \
-    }
 
-#define gDPPipeSync(pkt) gDPWord(pkt, 0xE7000000, 0)
-#define gDPSetEnvColor(pkt, r, g, b, a)                                                        \
-    gDPWord(pkt, 0xFB000000,                                                                   \
-            _SHIFTL(r, 24, 8) | _SHIFTL(g, 16, 8) | _SHIFTL(b, 8, 8) | _SHIFTL(a, 0, 8))
+
+
+
 
 typedef struct {
     char pad0[0x20];
@@ -99,11 +88,11 @@ void func_8043EFD0(Option *option, OptionPos *pos, s32 arg2, Menu *menu)
         func_802AA224((s32)(menu->alpha * (menu->fade * D_800E23A0[0])));
     }
     gDPPipeSync(D_80110634++);
-    gDPWord(D_80110634++, 0xE3000A01, 0x100000);
+    gDPSetCycleType(D_80110634++, G_CYC_2CYCLE);
     if (available) {
-        gDPSetEnvColor(D_80110634++, 255, 255, 255, (s32)(menu->alpha * (menu->fade * D_800E23A0[1])));
+        gDPSetEnvColor(D_80110634++, 255, 255, 255, ((s32)(menu->alpha * (menu->fade * D_800E23A0[1]))));
     } else {
-        gDPSetEnvColor(D_80110634++, 50, 50, 50, (s32)(menu->alpha * (menu->fade * D_800E23A0[2])));
+        gDPSetEnvColor(D_80110634++, 50, 50, 50, ((s32)(menu->alpha * (menu->fade * D_800E23A0[2]))));
     }
     func_802ABC18(option->image, 0, pos->x, pos->y, pos->scaleX, pos->scaleY, 1);
 }

@@ -1,13 +1,10 @@
+#include "unbake_gbi.h"
 #include "basetypes.h"
 
 /* Draws every part of a model resource with the shared material D_8013B348 when the frame's command buffer still has 3000 commands free and func_80269A80 accepts the material: prepares through func_802A11E8, flags the material 0x20 and sets D_800D15E0, sets the render mode, loads the model matrix (or sets it as segment 1), loads an optional two-light block, registers the resource, sets segment 2 to the given texture base or the model's own and emits each part's display list, skipping parts whose material blend bits are all set unless the owner's 0x122C flag 0x400 is set. Adapted from func_8026C978 with the preparation and flag stores added, the blend call removed and the per-part owner test added. */
 
-typedef struct Gfx {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
+#include "basetypes.h"
+#include "n64sdk.h"
 
 typedef struct Frame {
     char pad0[0x114];
@@ -56,30 +53,15 @@ void func_8026CBA4(void **resource, void *owner, s32 matrix, s32 segment, s32 li
     if (func_80269A80(shared, pass) == 0) {
         return;
     }
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xE200001C;
-        cmd->words.w1 = 0x0C184DD8;
-    }
-    if (segment != 0) {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDB060004;
-        cmd->words.w1 = matrix;
-    } else {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDA380003;
-        cmd->words.w1 = matrix;
-    }
+    gDPSetRenderMode(D_80110634++, 0x0C184DD8, 0);
+    if (segment != 0) gSPSegment(D_80110634++, 1, matrix) else gSPMatrix(D_80110634++, matrix, G_MTX_LOAD);
     if (lights != 0) {
         Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDB020000;
-        cmd->words.w1 = 0x18;
+        gSPMoveWord(cmd, G_MW_NUMLIGHT, 0, 0x18);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xDC08060A;
-        cmd->words.w1 = lights + 8;
+        gSPMoveMem(cmd, G_MV_LIGHT, 48, 16, lights + 8);
         cmd = D_80110634++;
-        cmd->words.w0 = 0xDC08090A;
-        cmd->words.w1 = lights;
+        gSPMoveMem(cmd, G_MV_LIGHT, 72, 16, lights);
     }
     func_80253B5C(0, resource);
     header = *resource;
@@ -87,11 +69,7 @@ void func_8026CBA4(void **resource, void *owner, s32 matrix, s32 segment, s32 li
     if (base == 0) {
         base = func_8028FD94(header, 0);
     }
-    {
-        Gfx *cmd = D_80110634++;
-        cmd->words.w0 = 0xDB060008;
-        cmd->words.w1 = (unsigned int)base;
-    }
+    gSPSegment(D_80110634++, 2, (unsigned int)base);
     parts = func_8028FD94(header, 2);
     count = *(s32 *)parts;
     for (i = 0; i < count; i++) {
@@ -102,8 +80,7 @@ void func_8026CBA4(void **resource, void *owner, s32 matrix, s32 segment, s32 li
             void *list = func_8028FD94(part, 1);
 
             cmd = D_80110634++;
-            cmd->words.w0 = 0xDE000000;
-            cmd->words.w1 = (unsigned int)list;
+            gSPDisplayList(cmd, (unsigned int)list);
         }
     }
 }
