@@ -757,7 +757,7 @@ segments:
       - [0x0300A4, c, func_8022F394]
       - [0x0300F8, c, func_8022F3E8]
       - [0x030154, asm, func_8022F444]
-      - [0x0301AC, asm, func_8022F49C]
+      - [0x0301AC, c, func_8022F49C]
       - [0x0301BC, c, func_8022F4AC]
       - [0x0301DC, c, func_8022F4CC]
       - [0x030214, c, func_8022F504]
