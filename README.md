@@ -38,7 +38,7 @@ For detailed instructions please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 AI is used in the decompilation process and every function is verified by compiling it against the original ROM. A match can still be a fakematch or use odd C semantics. I try to mark these in source as they are discovered.
 
-I turned these efforts into a repeatable process with [N64DecompTools](https://github.com/melalawi/n64-decomp-tools). It is built so AI can drive it against any N64 ROM.
+I turned these efforts into a repeatable process with [AbuCakeUnbake64](https://github.com/melalawi/abu-cake-unbake-64). It is built so AI can drive it against any N64 ROM.
 
 ### Personal Thoughts
 
@@ -52,7 +52,7 @@ While recompilations can be a fine short-term way to play a favourite game, I be
 
 ## Dependencies
 
-- [N64DecompTools](https://github.com/melalawi/n64-decomp-tools)
+- [AbuCakeUnbake64](https://github.com/melalawi/abu-cake-unbake-64)
 - [splat](https://github.com/ethteck/splat) version 0.50.0.
 - [m2c](https://github.com/matt-kempster/m2c) at `708d2d2cb2698f091a92492b328f73b24209f72d`.
 - [decomp-permuter](https://github.com/simonlindholm/decomp-permuter) at `059609d4aec73eb0650726772954e1ad575825f8`.
