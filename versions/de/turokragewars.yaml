@@ -1968,7 +1968,7 @@ segments:
       - [0x07B7F4, c, func_8027AC64]
       - [0x07B94C, c, func_8027ADBC]
       - [0x07C028, c, func_8027B498]
-      - [0x07C320, asm, func_8027B720]
+      - [0x07C320, c, func_8027B790]
       - [0x07CE74, c, func_8027C324]
       - [0x07D0F0, c, func_8027C5A0]
       - [0x07D358, c, func_8027C808]

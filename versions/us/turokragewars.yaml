@@ -1973,7 +1973,7 @@ segments:
       - [0x07B7E4, c, func_8027AC64]
       - [0x07B93C, c, func_8027ADBC]
       - [0x07C018, c, func_8027B498]
-      - [0x07C310, asm, func_8027B790]
+      - [0x07C310, c, func_8027B790]
       - [0x07CEA4, c, func_8027C324]
       - [0x07D120, c, func_8027C5A0]
       - [0x07D388, c, func_8027C808]

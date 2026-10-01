@@ -1965,7 +1965,7 @@ segments:
       - [0x07B864, c, func_8027AC64]
       - [0x07B9BC, c, func_8027ADBC]
       - [0x07C098, c, func_8027B498]
-      - [0x07C390, asm, func_8027B790]
+      - [0x07C390, c, func_8027B790]
       - [0x07CF24, c, func_8027C324]
       - [0x07D1A0, c, func_8027C5A0]
       - [0x07D408, c, func_8027C808]
