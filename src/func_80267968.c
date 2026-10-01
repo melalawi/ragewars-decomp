@@ -1,6 +1,6 @@
 /* Spawns a hit effect when the target has a rider: turns the negated hit direction into the victim's frame through func_8022B08C, makes it relative to the victim rider's centre and converts it to a rotation, resolves the hit position on the attacker through func_8024E78C, spawns effect 0xE9 there raised by D_800C9538 (size 3 for kind 5, otherwise 1), and starts effect 3 on the victim's emitter. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct RiderTriple {

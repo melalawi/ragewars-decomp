@@ -5,7 +5,7 @@
    weapon height at 0x740 (from the model's height at 0xF4 or a default) and its side and forward
    offsets at 0x73C and 0x744 along the camera's heading. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Model {

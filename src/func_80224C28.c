@@ -9,7 +9,7 @@
    whenever the step timer at 0x11C4 passes 11.25. Adapted from func_80224F38 with the jump check as
    an inline function and the D_80104418 flags read as an array. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct {

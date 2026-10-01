@@ -1,21 +1,15 @@
-#include "../include/shared/func_80234fdc_s1.h"
-#include "../include/shared/func_80234fdc_s2.h"
-#include "../include/shared/func_80234fdc_s5.h"
-#include "../include/shared/func_80234fdc_s4.h"
-#include "../include/shared/func_80234fdc_s6.h"
-#include "../include/shared/func_80234fdc_s3.h"
-#include "../include/shared/func_80234fdc_s7.h"
-#include "../include/shared/func_80234fdc_callback.h"
-#include "../include/shared/func_80234fdc_s8.h"
+#include "shared/func_80234fdc_s1.h"
+#include "shared/func_80234fdc_s2.h"
+#include "shared/func_80234fdc_s5.h"
+#include "shared/func_80234fdc_s4.h"
+#include "shared/func_80234fdc_s6.h"
+#include "shared/func_80234fdc_s3.h"
+#include "shared/func_80234fdc_s7.h"
+#include "shared/func_80234fdc_callback.h"
+#include "shared/func_80234fdc_s8.h"
 /* Updates the view and projection matrices and applies camera effects. */
 #define NULL ((void *)0)
-/*
- * This header contains macros emitted by m2c in "valid syntax" mode,
- * which can be enabled by passing `--valid-syntax` on the command line.
- *
- * In this mode, unhandled types and expressions are emitted as macros so
- * that the output is compilable without human intervention.
- */
+
 
 #ifndef M2C_MACROS_H
 #define M2C_MACROS_H

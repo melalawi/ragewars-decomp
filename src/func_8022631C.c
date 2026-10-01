@@ -6,7 +6,7 @@
    the object is a carried actor with option 0x200, 0x4600 otherwise) before forgetting it and applying
    the result through func_80219A40. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct View {

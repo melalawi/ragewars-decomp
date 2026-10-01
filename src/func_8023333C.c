@@ -1,5 +1,5 @@
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 
 extern s32 func_80222A80(void *arg0, s16 arg1);
 extern s16 func_8022F95C(void *arg0);

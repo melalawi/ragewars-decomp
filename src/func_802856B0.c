@@ -1,16 +1,10 @@
-#include "../include/shared/func_802856b0_s1.h"
-#include "../include/shared/func_802856b0_s2.h"
-#include "../include/shared/pointbits.h"
-#include "../include/shared/pointcopy.h"
+#include "shared/func_802856b0_s1.h"
+#include "shared/func_802856b0_s2.h"
+#include "shared/pointbits.h"
+#include "shared/pointcopy.h"
 /* Computes a clamped influence from linked emitters at a three-dimensional point. */
 #define NULL ((void *)0)
-/*
- * This header contains macros emitted by m2c in "valid syntax" mode,
- * which can be enabled by passing `--valid-syntax` on the command line.
- *
- * In this mode, unhandled types and expressions are emitted as macros so
- * that the output is compilable without human intervention.
- */
+
 
 #ifndef M2C_MACROS_H
 #define M2C_MACROS_H

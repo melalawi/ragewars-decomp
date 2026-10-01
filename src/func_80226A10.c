@@ -8,7 +8,7 @@
    one (unless the match forbids it), before the match end check func_80228394 and the world updates
    func_80227014 and func_80227E68 run and the frame time is restored. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct View {

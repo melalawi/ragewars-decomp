@@ -1,6 +1,6 @@
-#include "../include/shared/func_80261eb8_s1.h"
-#include "../include/shared/func_80261eb8_s2.h"
-#include "../include/shared/func_80261eb8_s3.h"
+#include "shared/func_80261eb8_s1.h"
+#include "shared/func_80261eb8_s2.h"
+#include "shared/func_80261eb8_s3.h"
 /* Selects adjacent animation frames and interpolation weights for a track. */
 #define NULL ((void *)0)
 #if defined(VERSION_US_REV1)

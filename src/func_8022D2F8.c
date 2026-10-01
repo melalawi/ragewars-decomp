@@ -1,4 +1,4 @@
-#include "../include/shared/gamemode.h"
+#include "shared/gamemode.h"
 /* Resets an actor's motion state, advances its wait timer, and fires action 0x13 or 0x14 once the timer passes its limit or the game mode allows it. */
 #include "basetypes.h"
 #include "actor.h"

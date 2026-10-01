@@ -1,7 +1,7 @@
-#include "../include/shared/func_8043dedc_s1.h"
-#include "../include/shared/func_8043dedc_s2.h"
-#include "../include/shared/func_8043dedc_s3.h"
-#include "../include/shared/func_8043dedc_s4.h"
+#include "shared/func_8043dedc_s1.h"
+#include "shared/func_8043dedc_s2.h"
+#include "shared/func_8043dedc_s3.h"
+#include "shared/func_8043dedc_s4.h"
 /* note: Clears eight status bytes and selects the first available profile. */
 void func_8025E3A4(void);
 unsigned int func_8026439C(void *);

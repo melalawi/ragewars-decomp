@@ -7,7 +7,7 @@
 #define ABS(x) ((x) < 0.0f ? -(x) : (x))
 
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct {

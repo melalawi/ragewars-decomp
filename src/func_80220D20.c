@@ -1,7 +1,7 @@
 /* Regenerates a player's health at 0x5E4 toward the cap from func_8022ABF0: under flag 4 at 0x122C it adds D_800D2988 times gFastRegen's rate and mirrors the result to 0x174 and 0x45C, otherwise, while the flag byte at D_801462E5 is set, the speed at 0x18's 0x24 meets D_800C78B8's threshold, the health is nonzero and the word 0x60F past that flag byte does not hold it back, it adds the speed scaled by D_800C78BC, D_800D2988 and D_800C78C0's rate. */
 
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Body { u8 pad[0x24]; f32 speed; } Body;

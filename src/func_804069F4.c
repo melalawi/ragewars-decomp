@@ -1,5 +1,5 @@
-#include "../include/shared/func_804069f4_s2.h"
-#include "../include/shared/func_804069f4_s1.h"
+#include "shared/func_804069f4_s2.h"
+#include "shared/func_804069f4_s1.h"
 /* Selects a usable Controller Pak, checks its notes and free space, and opens the appropriate prompt. */
 #define NULL ((void *)0)
 #if defined(VERSION_US)

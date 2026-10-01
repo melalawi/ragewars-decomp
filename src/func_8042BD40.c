@@ -1,9 +1,9 @@
-#include "../include/shared/item_func_8042BD40.h"
-#include "../include/shared/screen.h"
-#include "../include/shared/rosterentry.h"
-#include "../include/shared/settings.h"
-#include "../include/shared/profile_func_8042BD40.h"
-#include "../include/shared/profileflag.h"
+#include "shared/item_func_8042BD40.h"
+#include "shared/screen.h"
+#include "shared/rosterentry.h"
+#include "shared/settings.h"
+#include "shared/profile_func_8042BD40.h"
+#include "shared/profileflag.h"
 /* Opens the results screen, records trial rewards, and initializes its controls and labels. */
 #include "basetypes.h"
 

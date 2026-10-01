@@ -1,5 +1,5 @@
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 /* Handles the team option of a menu: unless func_8026439C reports the confirm input, it steps the owner's team byte at 0x80 through func_804425F8 between 1 and 18, applies it with func_8044AD14 and redraws it with func_804422BC, returning zero; on confirm it applies the team, plays the sound D_800E5DFA gives for the player's slot at 0x5E0 and shows the resource D_450698 through func_80442934, returning one. */

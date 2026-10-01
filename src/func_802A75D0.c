@@ -50,7 +50,8 @@ void func_802A75D0(Menu *menu, Input *input) {
     s16 bounce;
     s32 i;
 
-    do {
+    /* FAKEMATCH: preserve the original frame-update instruction scheduling at the function entry. */
+do {
     } while (0);
     menu->frame++;
     if (func_802A8088() == 0) {

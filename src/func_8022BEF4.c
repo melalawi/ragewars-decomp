@@ -5,7 +5,7 @@
    three slot counts at 0x5F4 without going below zero. Written from its own assembly with early
    returns and a clamp-at-zero decrement. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 
 extern s32 D_8013B29C;
 extern s32 D_801462C8;

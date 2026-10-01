@@ -8,7 +8,7 @@
    plays) and, while moving faster than 5.12, plays the tuning's stroke sound and sound 0x2E0 whenever
    the sound timer at 0x11C4 passes 45, restarting it at a random value below 15. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Body {

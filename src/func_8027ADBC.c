@@ -1,8 +1,8 @@
-#include "../include/shared/player_types.h"
-#include "../include/shared/quat.h"
-#include "../include/shared/func_8027adbc_s2.h"
-#include "../include/shared/func_8027adbc_s3.h"
-#include "../include/shared/func_8027adbc_s6.h"
+#include "shared/player_types.h"
+#include "shared/quat.h"
+#include "shared/func_8027adbc_s2.h"
+#include "shared/func_8027adbc_s3.h"
+#include "shared/func_8027adbc_s6.h"
 /* Updates a moving effect using its type, nearby players, and tracked target. */
 #define NULL ((void *)0)
 #if defined(VERSION_US_REV1)

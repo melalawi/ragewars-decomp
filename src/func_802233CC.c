@@ -1,9 +1,9 @@
 /* Updates player forward, strafe and impulse velocities, accumulates movement and plays the impulse sound. */
 extern float D_800D2988[];
 #include "basetypes.h"
-#include "../include/shared/movement.h"
+#include "shared/movement.h"
 typedef struct Vec { f32 x,y,z; } Vec;
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 typedef struct Actor {
  char pad0[0x8];

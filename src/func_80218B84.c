@@ -8,7 +8,7 @@
    announces the chosen team with its message and sound, and slides closed, the menu's spin at 0x14
    turning while it is shown. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Controls {

@@ -48,6 +48,7 @@ s32 func_8042362C(void) {
     func_8041B190(0x1C2);
     list = func_8041AC40(0x1BB, 0x1BC);
     D_800E4514->first_list = list;
+    /* FAKEMATCH: preserve instruction scheduling between the menu-widget store and its initialization call. */
     do {
     } while (0);
     func_8041ADB4(list, D_800D749C);
@@ -57,6 +58,7 @@ s32 func_8042362C(void) {
     func_8041AD90(D_800E4514->first_list, settings[0x1B]);
     list = func_8041AC40(0x1BE, 0x1BF);
     D_800E4514->second_list = list;
+    /* FAKEMATCH: preserve instruction scheduling between the menu-widget store and its initialization call. */
     do {
     } while (0);
     func_8041ADB4(list, D_800D74B4);
@@ -67,8 +69,7 @@ s32 func_8042362C(void) {
     func_8041AD90(D_800E4514->second_list, settings[0x580]);
     slider = func_8041A600(0x1C0, 0x1C1, 0x80);
     D_800E4514->slider = slider;
-    do {
-    } while (0);
+
     func_8041A76C(slider, ((func_8042362C_S1 *)(settings))->unk10);
     func_8041B190(0x1C3);
     func_8041B190(0x1C4);

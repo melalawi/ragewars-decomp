@@ -1,6 +1,6 @@
-#include "../include/shared/entry8.h"
-#include "../include/shared/bigobj.h"
-#include "../include/shared/rec3.h"
+#include "shared/entry8.h"
+#include "shared/bigobj.h"
+#include "shared/rec3.h"
 /* For each of the 8 occupied slots without the pending-remove flag, runs its two release callbacks. */
 #include "basetypes.h"
 

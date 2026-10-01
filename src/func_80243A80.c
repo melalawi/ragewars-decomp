@@ -1,19 +1,13 @@
-#include "../include/shared/func80243a80actor.h"
-#include "../include/shared/func80243a80global.h"
-#include "../include/shared/func80243a80state.h"
-#include "../include/shared/func80243a80collision.h"
-#include "../include/shared/func80243a80frame.h"
-#include "../include/shared/func80243a80vec3.h"
-#include "../include/shared/func80243a80bits.h"
+#include "shared/func80243a80actor.h"
+#include "shared/func80243a80global.h"
+#include "shared/func80243a80state.h"
+#include "shared/func80243a80collision.h"
+#include "shared/func80243a80frame.h"
+#include "shared/func80243a80vec3.h"
+#include "shared/func80243a80bits.h"
 /* Moves an actor through collision queries and resolves its position and contact state. */
 #define NULL ((void *)0)
-/*
- * This header contains macros emitted by m2c in "valid syntax" mode,
- * which can be enabled by passing `--valid-syntax` on the command line.
- *
- * In this mode, unhandled types and expressions are emitted as macros so
- * that the output is compilable without human intervention.
- */
+
 
 #ifndef M2C_MACROS_H
 #define M2C_MACROS_H

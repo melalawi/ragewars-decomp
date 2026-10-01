@@ -4,7 +4,7 @@
    nonzero parameter at 0x86C, and returns 1 with the counter at 0x658 cleared when the handler left
    the state in place, otherwise 0. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct StateInfo {

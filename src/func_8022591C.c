@@ -6,7 +6,7 @@
    multiplayer the view shows the respawn menu, D_45047C when the player has a respawn count at 0x5EA
    or D_450DA8 otherwise. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Controls {

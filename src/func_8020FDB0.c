@@ -1,5 +1,5 @@
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 /* Picks a computer player's next weapon: in state 14 defers to func_802100E0; otherwise gathers the loaded weapons it carries (slot kinds from 0x4C3, with ammunition and allowed by func_8022EAFC), filtering the specials by the record's weapon mode (mode 0 or an unknown mode, reset to 0, skips class-1 weapons and treats kind 6 as 5; modes 0 and 1 skip class-2 weapons; mode 2 allows all), and unless it already holds one of them and should keep it (holding kind 4 in gear 2, func_802831FC reporting a threat, or a 79 percent roll through func_80274544) chooses one at random into 0x770, clearing the brain's switch timer at 0x2E4 when it changes. */

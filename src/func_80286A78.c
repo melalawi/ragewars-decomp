@@ -1,33 +1,33 @@
-#include "../include/shared/sceneactorstride.h"
-#include "../include/shared/sceneglobal.h"
-#include "../include/shared/scenefontresources.h"
-#include "../include/shared/sceneactorresources.h"
-#include "../include/shared/sceneresources.h"
-#include "../include/shared/sceneprimaryactors.h"
-#include "../include/shared/sceneactorprefix.h"
-#include "../include/shared/sceneactorkind.h"
-#include "../include/shared/sceneactortables.h"
-#include "../include/shared/func_80286a78_s1.h"
-#include "../include/shared/func_80286a78_s2.h"
-#include "../include/shared/func_80286a78_s3.h"
-#include "../include/shared/func_80286a78_s4.h"
-#include "../include/shared/func_80286a78_s5.h"
-#include "../include/shared/func_80286a78_s6.h"
-#include "../include/shared/func_80286a78_s7.h"
-#include "../include/shared/func_80286a78_s8.h"
-#include "../include/shared/func_80286a78_s9.h"
-#include "../include/shared/func_80286a78_s10.h"
-#include "../include/shared/func_80286a78_s11.h"
-#include "../include/shared/func_80286a78_s12.h"
-#include "../include/shared/func_80286a78_s13.h"
-#include "../include/shared/func_80286a78_s14.h"
-#include "../include/shared/func_80286a78_s15.h"
-#include "../include/shared/func_80286a78_s16.h"
-#include "../include/shared/func_80286a78_s17.h"
-#include "../include/shared/func_80286a78_s18.h"
-#include "../include/shared/func_80286a78_s19.h"
-#include "../include/shared/func_80286a78_s20.h"
-#include "../include/shared/func_80286a78_s21.h"
+#include "shared/sceneactorstride.h"
+#include "shared/sceneglobal.h"
+#include "shared/scenefontresources.h"
+#include "shared/sceneactorresources.h"
+#include "shared/sceneresources.h"
+#include "shared/sceneprimaryactors.h"
+#include "shared/sceneactorprefix.h"
+#include "shared/sceneactorkind.h"
+#include "shared/sceneactortables.h"
+#include "shared/func_80286a78_s1.h"
+#include "shared/func_80286a78_s2.h"
+#include "shared/func_80286a78_s3.h"
+#include "shared/func_80286a78_s4.h"
+#include "shared/func_80286a78_s5.h"
+#include "shared/func_80286a78_s6.h"
+#include "shared/func_80286a78_s7.h"
+#include "shared/func_80286a78_s8.h"
+#include "shared/func_80286a78_s9.h"
+#include "shared/func_80286a78_s10.h"
+#include "shared/func_80286a78_s11.h"
+#include "shared/func_80286a78_s12.h"
+#include "shared/func_80286a78_s13.h"
+#include "shared/func_80286a78_s14.h"
+#include "shared/func_80286a78_s15.h"
+#include "shared/func_80286a78_s16.h"
+#include "shared/func_80286a78_s17.h"
+#include "shared/func_80286a78_s18.h"
+#include "shared/func_80286a78_s19.h"
+#include "shared/func_80286a78_s20.h"
+#include "shared/func_80286a78_s21.h"
 #define NULL ((void *)0)
 typedef Shared_SceneActorStride SceneActorStride;
 typedef Shared_SceneGlobal SceneGlobal;
@@ -39,13 +39,7 @@ typedef Shared_SceneActorPrefix SceneActorPrefix;
 typedef Shared_SceneActorKind SceneActorKind;
 typedef Shared_SceneActorTables SceneActorTables;
 #define NEXT_SCENE_ACTOR(ptr) ((void *)(((SceneActorStride *)(ptr)) + 1))
-/*
- * This header contains macros emitted by m2c in "valid syntax" mode,
- * which can be enabled by passing `--valid-syntax` on the command line.
- *
- * In this mode, unhandled types and expressions are emitted as macros so
- * that the output is compilable without human intervention.
- */
+
 
 #ifndef M2C_MACROS_H
 #define M2C_MACROS_H

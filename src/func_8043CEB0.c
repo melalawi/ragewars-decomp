@@ -1,4 +1,4 @@
-#include "../include/shared/entry.h"
+#include "shared/entry.h"
 /* Shifts cheat input history left and decrements its counters when a character is deleted. */
 #include "basetypes.h"
 

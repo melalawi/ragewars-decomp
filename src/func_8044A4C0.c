@@ -3,7 +3,7 @@
    respawns (func_8021B1E4, func_8044A17C), and any other is finished with event 0x12 (func_802227D0)
    unless the replay setting holds it back. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 #define SETTING_REPLAY_MENU 2

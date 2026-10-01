@@ -1,11 +1,11 @@
-#include "../include/shared/weaponmetadata.h"
-#include "../include/shared/weaponslot.h"
-#include "../include/shared/weaponworld.h"
-#include "../include/shared/target.h"
-#include "../include/shared/node.h"
-#include "../include/shared/arg0.h"
-#include "../include/shared/func_8020aa40_s1.h"
-#include "../include/shared/func_8020aa40_s2.h"
+#include "shared/weaponmetadata.h"
+#include "shared/weaponslot.h"
+#include "shared/weaponworld.h"
+#include "shared/target.h"
+#include "shared/node.h"
+#include "shared/arg0.h"
+#include "shared/func_8020aa40_s1.h"
+#include "shared/func_8020aa40_s2.h"
 /* Find the nearest world object matching each active target ID, clearing its active flag when no object is close enough. */
 
 f32 func_80272768(void *arg0, void *arg1);

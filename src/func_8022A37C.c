@@ -1,5 +1,5 @@
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 
 extern void func_8023941C(void *arg0);
 extern void func_8021EED8(void *arg0, void *arg1);

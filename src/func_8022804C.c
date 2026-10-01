@@ -3,7 +3,7 @@
    in humanWon whether the human side reached it and ends the match on any other side reaching it
    unless the trial needs the human to reach it. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 #define NO_TEAM 0xFF

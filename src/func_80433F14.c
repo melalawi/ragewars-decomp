@@ -1,7 +1,7 @@
-#include "../include/shared/label.h"
-#include "../include/shared/item.h"
-#include "../include/shared/player_func_80433F14.h"
-#include "../include/shared/block.h"
+#include "shared/label.h"
+#include "shared/item.h"
+#include "shared/player_func_80433F14.h"
+#include "shared/block.h"
 /* Updates the four player control rows, their visibility, and the selected player label. */
 
 #if defined(VERSION_EU_X)

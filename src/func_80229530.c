@@ -4,7 +4,7 @@
    unlimited at 0x1450), and the message "<amount> <type name>" with a plural suffix for more than one
    is built and shown through func_8022B74C. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))

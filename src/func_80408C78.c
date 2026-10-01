@@ -5,7 +5,7 @@
    through func_80442934; otherwise it deletes the chosen note through func_80404858 and shows the
    D_44F7C0 or D_44F82C result prompt. Returns 1. */
 #include "basetypes.h"
-#include "../include/shared/player.h"
+#include "shared/player.h"
 typedef SharedPlayer Player;
 
 typedef struct Profile {

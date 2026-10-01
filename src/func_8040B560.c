@@ -36,6 +36,7 @@ s32 func_8040B560(s32 arg0, Action *arg1) {
         func_804426E4(&D_8014561C, arg1->unk24, arg1->unk1C, arg1->unk20, 0);
     }
     return 1;
+    /* FAKEMATCH: preserve the return-value load before the epilogue register restores. */
     do {
     } while (0);
 }

@@ -1,26 +1,20 @@
-#include "../include/shared/playermenudata.h"
-#include "../include/shared/menubonuscolumn.h"
-#include "../include/shared/menuamountcolumn.h"
-#include "../include/shared/func_802acbcc_s1.h"
-#include "../include/shared/func_802acbcc_s2.h"
-#include "../include/shared/func_802acbcc_s3.h"
-#include "../include/shared/func_802acbcc_s4.h"
-#include "../include/shared/func_802acbcc_s5.h"
-#include "../include/shared/func_802acbcc_s6.h"
-#include "../include/shared/func_802acbcc_s7.h"
-#include "../include/shared/func_802acbcc_s8.h"
-#include "../include/shared/func_802acbcc_s9.h"
-#include "../include/shared/playerlistmenuglobals.h"
-#include "../include/shared/playermenuglobals.h"
-#include "../include/shared/fullplayermenuglobals.h"
+#include "shared/playermenudata.h"
+#include "shared/menubonuscolumn.h"
+#include "shared/menuamountcolumn.h"
+#include "shared/func_802acbcc_s1.h"
+#include "shared/func_802acbcc_s2.h"
+#include "shared/func_802acbcc_s3.h"
+#include "shared/func_802acbcc_s4.h"
+#include "shared/func_802acbcc_s5.h"
+#include "shared/func_802acbcc_s6.h"
+#include "shared/func_802acbcc_s7.h"
+#include "shared/func_802acbcc_s8.h"
+#include "shared/func_802acbcc_s9.h"
+#include "shared/playerlistmenuglobals.h"
+#include "shared/playermenuglobals.h"
+#include "shared/fullplayermenuglobals.h"
 #define NULL ((void *)0)
-/*
- * This header contains macros emitted by m2c in "valid syntax" mode,
- * which can be enabled by passing `--valid-syntax` on the command line.
- *
- * In this mode, unhandled types and expressions are emitted as macros so
- * that the output is compilable without human intervention.
- */
+
 
 #ifndef M2C_MACROS_H
 #define M2C_MACROS_H
