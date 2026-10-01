@@ -1,18 +1,18 @@
 {
   "measures": {
-    "fuzzy_match_percent": 74.052505,
+    "fuzzy_match_percent": 74.09189,
     "total_code": 1109828,
-    "matched_code": 759000,
-    "matched_code_percent": 68.38898,
+    "matched_code": 766044,
+    "matched_code_percent": 69.02367,
     "matched_data_percent": 100.0,
-    "total_functions": 4466,
-    "matched_functions": 3721,
-    "matched_functions_percent": 83.318405,
-    "complete_code": 755288,
-    "complete_code_percent": 68.05451,
+    "total_functions": 4465,
+    "matched_functions": 3722,
+    "matched_functions_percent": 83.35946,
+    "complete_code": 762332,
+    "complete_code_percent": 68.6892,
     "complete_data_percent": 100.0,
     "total_units": 4394,
-    "complete_units": 3708
+    "complete_units": 3709
   },
   "units": [
     {
@@ -16147,46 +16147,39 @@
     {
       "name": "func_8021EED8",
       "measures": {
-        "fuzzy_match_percent": 93.79557,
+        "fuzzy_match_percent": 100.0,
         "total_code": "7044",
+        "matched_code": "7044",
+        "matched_code_percent": 100.0,
         "matched_data_percent": 100.0,
-        "total_functions": 2,
+        "total_functions": 1,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "7044",
+        "complete_code_percent": 100.0,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "complete_units": 1
       },
       "sections": [
         {
-          "name": ".bss",
-          "metadata": {}
-        },
-        {
-          "name": ".data",
-          "metadata": {}
-        },
-        {
           "name": ".text",
           "size": "7044",
-          "fuzzy_match_percent": 93.79557,
+          "fuzzy_match_percent": 100.0,
           "metadata": {}
         }
       ],
       "functions": [
         {
           "name": "func_8021EED8",
-          "size": "7008",
-          "fuzzy_match_percent": 94.2774,
+          "size": "7044",
+          "fuzzy_match_percent": 100.0,
           "metadata": {},
           "address": "0"
-        },
-        {
-          "name": "de_func_80220A5C",
-          "size": "36",
-          "metadata": {},
-          "address": "7008"
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "source_path": "src/func_8021EED8.c"
       }
     },
