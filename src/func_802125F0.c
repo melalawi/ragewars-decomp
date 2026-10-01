@@ -37,3 +37,20 @@ void func_802125F0(void *arg0) {
     r2 = func_80274544();
     ((func_802125F0_S3 *)(inner))->unk2DC = r2 % 2;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800C920C_4 = 1.0f;
+const float unbake_rodata_800C9210_4 = (-2000.0f);
+const float unbake_rodata_800C9214_4 = 2000.0f;
+const float unbake_rodata_800C9218_4 = (-1.0f);
+const float unbake_rodata_800C921C_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4180_4 = 0.00392156886f;
+const float unbake_rodata_800C4184_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C41A0_8 = 4294967296.0;
+const float unbake_rodata_800C41A8_4 = 0.0166666675f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4108_4 = 1.0f;
+#endif

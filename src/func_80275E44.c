@@ -51,3 +51,21 @@ f32 func_80275E44(Node752 *node, f32 x, f32 z) {
             ((point.x - x) * normal.x) + (point.y * normal.y)) /
            normal.y;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C492C_4 = (-14336.0f);
+const float unbake_rodata_800C4930_4 = 0.333333343f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9AEC_4 = (-14336.0f);
+const float unbake_rodata_800C9AF0_4 = 0.333333343f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4CAC_4 = (-14336.0f);
+const float unbake_rodata_800C4CB0_4 = 0.333333343f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4CEC_4 = (-14336.0f);
+const float unbake_rodata_800C4CF0_4 = 0.333333343f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C49FC_4 = (-14336.0f);
+const float unbake_rodata_800C4A00_4 = 0.333333343f;
+#endif

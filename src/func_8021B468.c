@@ -578,3 +578,24 @@ player_mode_7:
         return;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned int unbake_rodata_800C2278_20[] = {0x0021B698U, 0x0021B6A4U, 0x0021B6B0U, 0x0021B6BCU, 0x0021B6C8U, 0x0021B6D4U, 0x0021B6E0U, 0x0021B6ECU};
+const float unbake_rodata_800C2298_4 = 10.2399998f;
+const float unbake_rodata_800C229C_4 = 81.9199982f;
+const float unbake_rodata_800C22A0_4 = 512.0f;
+const float unbake_rodata_800C22A4_4 = 5.11999989f;
+#elif defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800C7438_20[] = {0x0021B698U, 0x0021B6A4U, 0x0021B6B0U, 0x0021B6BCU, 0x0021B6C8U, 0x0021B6D4U, 0x0021B6E0U, 0x0021B6ECU};
+const float unbake_rodata_800C7458_4 = 10.2399998f;
+const float unbake_rodata_800C745C_4 = 81.9199982f;
+const float unbake_rodata_800C7460_4 = 512.0f;
+const float unbake_rodata_800C7464_4 = 5.11999989f;
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800C2348_20[] = {0x0021B6A0U, 0x0021B6ACU, 0x0021B6B8U, 0x0021B6C4U, 0x0021B6D0U, 0x0021B6DCU, 0x0021B6E8U, 0x0021B6F4U};
+const float unbake_rodata_800C2368_4 = 10.2399998f;
+const float unbake_rodata_800C236C_4 = 81.9199982f;
+const float unbake_rodata_800C2370_4 = 512.0f;
+const float unbake_rodata_800C2374_4 = 5.11999989f;
+#endif

@@ -72,3 +72,49 @@ void func_802079B0(void *arg0, void *arg1) {
         func_80206DD4(arg0, arg1);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2C3C_4 = 150.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7D14_4 = 17.0f;
+const float unbake_rodata_800C7D18_4 = 255.0f;
+const float unbake_rodata_800C7D1C_4 = 8.53333378f;
+const float unbake_rodata_800C7D20_4 = 17.0f;
+const float unbake_rodata_800C7D24_4 = 255.0f;
+const float unbake_rodata_800C7D28_4 = 8.53333378f;
+const float unbake_rodata_800C7D2C_4 = 128.0f;
+const float unbake_rodata_800C7D30_4 = 0.425000012f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2DD4_4 = 100.0f;
+const float unbake_rodata_800C2DD8_4 = 80.0f;
+const float unbake_rodata_800C2DDC_4 = 7.5f;
+const float unbake_rodata_800C2DE0_4 = 2.14748365e+09f;
+const float unbake_rodata_800C2DE4_4 = 512.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2DD4_4 = 0.279252708f;
+const float unbake_rodata_800C2DD8_4 = 1.0f;
+const float unbake_rodata_800C2DDC_4 = 0.00999999978f;
+const float unbake_rodata_800C2DE0_4 = 0.0599999987f;
+const float unbake_rodata_800C2DE4_4 = 80.0f;
+const float unbake_rodata_800C2DE8_4 = 0.0174532942f;
+const float unbake_rodata_800C2DEC_4 = 8.0f;
+const float unbake_rodata_800C2DF0_4 = 90.0f;
+const float unbake_rodata_800C2DF4_4 = 0.5f;
+const float unbake_rodata_800C2DF8_4 = 2.5f;
+const float unbake_rodata_800C2DFC_4 = 2.5f;
+const float unbake_rodata_800C2E00_4 = 50.0f;
+const float unbake_rodata_800C2E04_4 = 1.0f;
+const float unbake_rodata_800C2E08_4 = 10.2399998f;
+const float unbake_rodata_800C2E0C_4 = 10.2399998f;
+const float unbake_rodata_800C2E10_4 = 15.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2C24_4 = 17.0f;
+const float unbake_rodata_800C2C28_4 = 255.0f;
+const float unbake_rodata_800C2C2C_4 = 8.53333378f;
+const float unbake_rodata_800C2C30_4 = 17.0f;
+const float unbake_rodata_800C2C34_4 = 255.0f;
+const float unbake_rodata_800C2C38_4 = 8.53333378f;
+const float unbake_rodata_800C2C3C_4 = 128.0f;
+const float unbake_rodata_800C2C40_4 = 0.425000012f;
+#endif

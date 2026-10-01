@@ -33,3 +33,21 @@ void func_8022CDAC(void *arg0, void *arg1) {
     }
     func_8022CE68((s32)arg0, (s32)arg1);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2CBC_4 = 1.5f;
+const float unbake_rodata_800C2CC0_4 = 307.199982f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7E7C_4 = 1.5f;
+const float unbake_rodata_800C7E80_4 = 307.199982f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3030_4 = 1.5f;
+const float unbake_rodata_800C3034_4 = 307.199982f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3070_4 = 1.5f;
+const float unbake_rodata_800C3074_4 = 307.199982f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2D8C_4 = 1.5f;
+const float unbake_rodata_800C2D90_4 = 307.199982f;
+#endif

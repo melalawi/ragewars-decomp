@@ -75,3 +75,11 @@ s32 func_804293B0(s32 arg0) {
     func_80429740();
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D74C0_4[] = {0x80, 0x0D, 0x48, 0x24};
+const unsigned char unbake_rodata_800D74C4_4[] = {0x80, 0x0D, 0x48, 0x28};
+const unsigned char unbake_rodata_800D74C8_4[] = {0x80, 0x0D, 0x48, 0x2C};
+const unsigned char unbake_rodata_800D74CC_4[] = {0x80, 0x0D, 0x48, 0x34};
+#endif

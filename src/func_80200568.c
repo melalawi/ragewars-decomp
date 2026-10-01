@@ -94,3 +94,22 @@ volatile unsigned long long func_80200568(s32 *arg0, s32 arg1) {
     }
     *arg0_2 = arg1;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C194C_4 = 1.0f;
+const float unbake_rodata_800C1950_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6B0C_4 = 1.0f;
+const float unbake_rodata_800C6B10_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C1CBC_4 = 1.0f;
+const float unbake_rodata_800C1CC0_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C1CFC_4 = 1.0f;
+const float unbake_rodata_800C1D00_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1A10_4 = 0.5f;
+const float unbake_rodata_800C1A14_4 = 0.5f;
+const float unbake_rodata_800C1A18_4 = 0.5f;
+#endif

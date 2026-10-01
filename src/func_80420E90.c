@@ -99,3 +99,10 @@ s32 func_80420E90(void *window) {
     func_804212A4();
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800D211C_4[] = {0x80, 0x0C, 0xF4, 0x5C};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D749C_4[] = {0x80, 0x0D, 0x47, 0xDC};
+#endif

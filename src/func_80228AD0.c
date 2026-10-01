@@ -92,3 +92,81 @@ void func_80228AD0(void *arg0, ViewState *arg1) {
                   (s32)(center_y - (scale_y * D_800C7D00[0])),
                   0xFF, 0, 0, scale_x, scale_y);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2B0C_4 = 0.0666666701f;
+const float unbake_rodata_800C2B10_4 = 0.0166666675f;
+const float unbake_rodata_800C2B14_4 = 60.0f;
+const float unbake_rodata_800C2B18_4 = 1.0f;
+const float unbake_rodata_800C2B1C_4 = 30.0f;
+const float unbake_rodata_800C2B20_4 = 0.5f;
+const float unbake_rodata_800C2B24_4 = 0.800000012f;
+const float unbake_rodata_800C2B28_4 = 10.0f;
+const float unbake_rodata_800C2B2C_4 = 0.5f;
+const float unbake_rodata_800C2B30_4 = 20.0f;
+const float unbake_rodata_800C2B34_4 = 0.5f;
+const float unbake_rodata_800C2B38_4 = 7.0f;
+const float unbake_rodata_800C2B3C_4 = 6.0f;
+const float unbake_rodata_800C2B40_4 = 12.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7CCC_4 = 0.0666666701f;
+const float unbake_rodata_800C7CD0_4 = 0.0166666675f;
+const float unbake_rodata_800C7CD4_4 = 60.0f;
+const float unbake_rodata_800C7CD8_4 = 1.0f;
+const float unbake_rodata_800C7CDC_4 = 30.0f;
+const float unbake_rodata_800C7CE0_4 = 0.5f;
+const float unbake_rodata_800C7CE4_4 = 0.800000012f;
+const float unbake_rodata_800C7CE8_4 = 10.0f;
+const float unbake_rodata_800C7CEC_4 = 0.5f;
+const float unbake_rodata_800C7CF0_4 = 20.0f;
+const float unbake_rodata_800C7CF4_4 = 0.5f;
+const float unbake_rodata_800C7CF8_4 = 7.0f;
+const float unbake_rodata_800C7CFC_4 = 6.0f;
+const float unbake_rodata_800C7D00_4 = 12.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2E7C_4 = 0.0666666701f;
+const float unbake_rodata_800C2E80_4 = 0.0166666675f;
+const float unbake_rodata_800C2E84_4 = 60.0f;
+const float unbake_rodata_800C2E88_4 = 1.0f;
+const float unbake_rodata_800C2E8C_4 = 30.0f;
+const float unbake_rodata_800C2E90_4 = 0.5f;
+const float unbake_rodata_800C2E94_4 = 0.800000012f;
+const float unbake_rodata_800C2E98_4 = 10.0f;
+const float unbake_rodata_800C2E9C_4 = 0.5f;
+const float unbake_rodata_800C2EA0_4 = 20.0f;
+const float unbake_rodata_800C2EA4_4 = 0.5f;
+const float unbake_rodata_800C2EA8_4 = 7.0f;
+const float unbake_rodata_800C2EAC_4 = 6.0f;
+const float unbake_rodata_800C2EB0_4 = 12.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2EBC_4 = 0.0666666701f;
+const float unbake_rodata_800C2EC0_4 = 0.0166666675f;
+const float unbake_rodata_800C2EC4_4 = 60.0f;
+const float unbake_rodata_800C2EC8_4 = 1.0f;
+const float unbake_rodata_800C2ECC_4 = 30.0f;
+const float unbake_rodata_800C2ED0_4 = 0.5f;
+const float unbake_rodata_800C2ED4_4 = 0.800000012f;
+const float unbake_rodata_800C2ED8_4 = 10.0f;
+const float unbake_rodata_800C2EDC_4 = 0.5f;
+const float unbake_rodata_800C2EE0_4 = 20.0f;
+const float unbake_rodata_800C2EE4_4 = 0.5f;
+const float unbake_rodata_800C2EE8_4 = 7.0f;
+const float unbake_rodata_800C2EEC_4 = 6.0f;
+const float unbake_rodata_800C2EF0_4 = 12.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2BDC_4 = 0.0666666701f;
+const float unbake_rodata_800C2BE0_4 = 0.0166666675f;
+const float unbake_rodata_800C2BE4_4 = 60.0f;
+const float unbake_rodata_800C2BE8_4 = 1.0f;
+const float unbake_rodata_800C2BEC_4 = 30.0f;
+const float unbake_rodata_800C2BF0_4 = 0.5f;
+const float unbake_rodata_800C2BF4_4 = 0.800000012f;
+const float unbake_rodata_800C2BF8_4 = 10.0f;
+const float unbake_rodata_800C2BFC_4 = 0.5f;
+const float unbake_rodata_800C2C00_4 = 20.0f;
+const float unbake_rodata_800C2C04_4 = 0.5f;
+const float unbake_rodata_800C2C08_4 = 7.0f;
+const float unbake_rodata_800C2C0C_4 = 6.0f;
+const float unbake_rodata_800C2C10_4 = 12.0f;
+#endif

@@ -70,3 +70,31 @@ f32 func_8024E2EC(void *arg0) {
     
     } while (0);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned int unbake_rodata_800C3C70_2C[] = {0x0024E318U, 0x0024E328U, 0x0024E394U, 0x0024E394U, 0x0024E354U, 0x0024E394U, 0x0024E394U, 0x0024E364U, 0x0024E394U, 0x0024E394U, 0x0024E308U};
+const float unbake_rodata_800C3C9C_4 = 256.0f;
+const float unbake_rodata_800C3CA0_4 = 81.9199982f;
+const float unbake_rodata_800C3CA4_4 = 61.4399986f;
+#elif defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800C8E30_2C[] = {0x0024E328U, 0x0024E338U, 0x0024E3A4U, 0x0024E3A4U, 0x0024E364U, 0x0024E3A4U, 0x0024E3A4U, 0x0024E374U, 0x0024E3A4U, 0x0024E3A4U, 0x0024E318U};
+const float unbake_rodata_800C8E5C_4 = 256.0f;
+const float unbake_rodata_800C8E60_4 = 81.9199982f;
+const float unbake_rodata_800C8E64_4 = 61.4399986f;
+#elif defined(VERSION_EU)
+const unsigned int unbake_rodata_800C3FF0_2C[] = {0x0024E348U, 0x0024E358U, 0x0024E3C4U, 0x0024E3C4U, 0x0024E384U, 0x0024E3C4U, 0x0024E3C4U, 0x0024E394U, 0x0024E3C4U, 0x0024E3C4U, 0x0024E338U};
+const float unbake_rodata_800C401C_4 = 256.0f;
+const float unbake_rodata_800C4020_4 = 81.9199982f;
+const float unbake_rodata_800C4024_4 = 61.4399986f;
+#elif defined(VERSION_EU_X)
+const unsigned int unbake_rodata_800C4030_2C[] = {0x0024E378U, 0x0024E388U, 0x0024E3F4U, 0x0024E3F4U, 0x0024E3B4U, 0x0024E3F4U, 0x0024E3F4U, 0x0024E3C4U, 0x0024E3F4U, 0x0024E3F4U, 0x0024E368U};
+const float unbake_rodata_800C405C_4 = 256.0f;
+const float unbake_rodata_800C4060_4 = 81.9199982f;
+const float unbake_rodata_800C4064_4 = 61.4399986f;
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800C3D40_2C[] = {0x0024E338U, 0x0024E348U, 0x0024E3B4U, 0x0024E3B4U, 0x0024E374U, 0x0024E3B4U, 0x0024E3B4U, 0x0024E384U, 0x0024E3B4U, 0x0024E3B4U, 0x0024E328U};
+const float unbake_rodata_800C3D6C_4 = 256.0f;
+const float unbake_rodata_800C3D70_4 = 81.9199982f;
+const float unbake_rodata_800C3D74_4 = 61.4399986f;
+#endif

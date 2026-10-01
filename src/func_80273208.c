@@ -55,3 +55,26 @@ void func_80273208(Mtx *m, Vec3f *direction) {
     m->m03 = m->m13 = m->m23 = m->m30 = m->m31 = m->m32 = 0.0f;
     m->m33 = D_800C99E0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800C45F4_4[] = {0x00, 0x00, 0x00, 0x00};
+const unsigned char unbake_rodata_800C45F8_4[] = {0x3F, 0x80, 0x00, 0x00};
+const unsigned char unbake_rodata_800C45FC_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800C97B4_4[] = {0x00, 0x00, 0x00, 0x00};
+const unsigned char unbake_rodata_800C97B8_4[] = {0x3F, 0x80, 0x00, 0x00};
+const unsigned char unbake_rodata_800C97BC_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800C4974_4[] = {0x00, 0x00, 0x00, 0x00};
+const unsigned char unbake_rodata_800C4978_4[] = {0x3F, 0x80, 0x00, 0x00};
+const unsigned char unbake_rodata_800C497C_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800C49B4_4[] = {0x00, 0x00, 0x00, 0x00};
+const unsigned char unbake_rodata_800C49B8_4[] = {0x3F, 0x80, 0x00, 0x00};
+const unsigned char unbake_rodata_800C49BC_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800C46C4_4[] = {0x00, 0x00, 0x00, 0x00};
+const unsigned char unbake_rodata_800C46C8_4[] = {0x3F, 0x80, 0x00, 0x00};
+const unsigned char unbake_rodata_800C46CC_4[] = {0x00, 0x00, 0x00, 0x00};
+#endif

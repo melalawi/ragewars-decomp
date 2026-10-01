@@ -109,3 +109,31 @@ loop_4:
         } while (var_s1 != NULL);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5D58_4 = 0.00999999978f;
+const float unbake_rodata_800C5D5C_4 = 0.292571425f;
+const float unbake_rodata_800C5D60_4 = 0.00999999978f;
+const float unbake_rodata_800C5D64_4 = 0.292571425f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CAFB8_4 = 0.00999999978f;
+const float unbake_rodata_800CAFBC_4 = 0.292571425f;
+const float unbake_rodata_800CAFC0_4 = 0.00999999978f;
+const float unbake_rodata_800CAFC4_4 = 0.292571425f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C60C8_4 = 0.00999999978f;
+const float unbake_rodata_800C60CC_4 = 0.292571425f;
+const float unbake_rodata_800C60D0_4 = 0.00999999978f;
+const float unbake_rodata_800C60D4_4 = 0.292571425f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C6108_4 = 0.00999999978f;
+const float unbake_rodata_800C610C_4 = 0.292571425f;
+const float unbake_rodata_800C6110_4 = 0.00999999978f;
+const float unbake_rodata_800C6114_4 = 0.292571425f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5E28_4 = 0.00999999978f;
+const float unbake_rodata_800C5E2C_4 = 0.292571425f;
+const float unbake_rodata_800C5E30_4 = 0.00999999978f;
+const float unbake_rodata_800C5E34_4 = 0.292571425f;
+#endif

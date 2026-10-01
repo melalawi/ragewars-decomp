@@ -91,3 +91,16 @@ void func_80238D20(void *arg0) {
         } while (node != 0);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3444_4 = 0.00392156886f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8604_4 = 0.00392156886f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C37C4_4 = 0.00392156886f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3804_4 = 0.00392156886f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3514_4 = 0.00392156886f;
+#endif

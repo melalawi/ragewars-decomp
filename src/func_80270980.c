@@ -42,3 +42,21 @@ void func_80270980(f32 *dst, PackedMatrixWords *src) {
         dst[14] = last;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4704_4 = 1.52587891e-05f;
+const float unbake_rodata_800C4708_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C98C4_4 = 1.52587891e-05f;
+const float unbake_rodata_800C98C8_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4A84_4 = 1.52587891e-05f;
+const float unbake_rodata_800C4A88_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4AC4_4 = 1.52587891e-05f;
+const float unbake_rodata_800C4AC8_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C47D4_4 = 1.52587891e-05f;
+const float unbake_rodata_800C47D8_4 = 1.0f;
+#endif

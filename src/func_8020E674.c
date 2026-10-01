@@ -127,3 +127,26 @@ s32 func_8020E674(Actor *actor, f32 scale, f32 lateral) {
     }
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1D70_4 = 1.0f;
+const float unbake_rodata_800C1D74_4 = 1.33333337f;
+const float unbake_rodata_800C1D78_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6F30_4 = 1.0f;
+const float unbake_rodata_800C6F34_4 = 1.33333337f;
+const float unbake_rodata_800C6F38_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C20E0_4 = 1.0f;
+const float unbake_rodata_800C20E4_4 = 1.33333337f;
+const float unbake_rodata_800C20E8_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2120_4 = 1.0f;
+const float unbake_rodata_800C2124_4 = 1.33333337f;
+const float unbake_rodata_800C2128_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1E40_4 = 1.0f;
+const float unbake_rodata_800C1E44_4 = 1.33333337f;
+const float unbake_rodata_800C1E48_4 = 0.5f;
+#endif

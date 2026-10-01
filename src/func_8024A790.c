@@ -125,3 +125,21 @@ void func_8024A790(Actor *actor, s32 arg1, Params *params) {
     }
     func_802536F4(0, resource);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C39A4_4 = 0.5f;
+const float unbake_rodata_800C39A8_4 = 0.100000001f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8B64_4 = 0.5f;
+const float unbake_rodata_800C8B68_4 = 0.100000001f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3D24_4 = 0.5f;
+const float unbake_rodata_800C3D28_4 = 0.100000001f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3D64_4 = 0.5f;
+const float unbake_rodata_800C3D68_4 = 0.100000001f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3A74_4 = 0.5f;
+const float unbake_rodata_800C3A78_4 = 0.100000001f;
+#endif

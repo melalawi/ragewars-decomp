@@ -105,3 +105,9 @@ void func_80212FE0(Actor *actor)
         }
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800C71D0_4 = 102.399994f;
+const float unbake_rodata_800C71D4_4 = 51.1999969f;
+#endif

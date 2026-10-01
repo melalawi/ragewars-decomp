@@ -47,3 +47,29 @@ s32 func_80216BF4(InstanceHdr *arg0, void *unused, InstanceHdr *target) {
     *arg0 = saved;
     return collisions;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4768_4 = 1.0f;
+const float unbake_rodata_800C476C_4 = (-1.0f);
+const float unbake_rodata_800C4770_4 = 1.57079637f;
+const float unbake_rodata_800C4774_4 = 1.0f;
+const float unbake_rodata_800C4778_4 = (-1.0f);
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9928_4 = 1.0f;
+const float unbake_rodata_800C992C_4 = (-1.0f);
+const float unbake_rodata_800C9930_4 = 1.57079637f;
+const float unbake_rodata_800C9934_4 = 1.0f;
+const float unbake_rodata_800C9938_4 = (-1.0f);
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C45A0_4 = 0.25f;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C4520_8 = 4294967296.0;
+const double unbake_rodata_800C4528_8 = 4294967296.0;
+const double unbake_rodata_800C4530_8 = 4294967296.0;
+const double unbake_rodata_800C4538_8 = 4294967296.0;
+const double unbake_rodata_800C4540_8 = 4294967296.0;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C46A0_4 = 80.0f;
+const float unbake_rodata_800C46A4_4 = 160.0f;
+#endif

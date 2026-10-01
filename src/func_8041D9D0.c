@@ -66,3 +66,16 @@ void func_8041D9D0(void) {
         }
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DE1F4_2[] = {0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E3594_2[] = {0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800EFBB4_2[] = {0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EAD74_2[] = {0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800DF544_2[] = {0x00, 0x00};
+#endif

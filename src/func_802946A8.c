@@ -72,3 +72,8 @@ void func_802946A8(Session *session) {
     func_8044DC48(&D_8011FE88, bank);
     func_8044E178(&D_8011FE88, session->music, 0);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800CA5C4_4 = 1.0f;
+#endif

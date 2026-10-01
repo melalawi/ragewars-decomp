@@ -29,3 +29,10 @@ void func_80254C10(s32 unused, Node80254C10 *node) {
     }
     node->flags |= 0x1000;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800ED1EE_14[] = {0x00, 0xEE, 0x00, 0x00, 0x00, 0xEF, 0x00, 0x00, 0x00, 0xF0, 0x00, 0x00, 0x00, 0xF1, 0x00, 0x00, 0x00, 0xF2, 0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_801002A4_4[] = {0xD2, 0x11, 0xFF, 0x10};
+#endif

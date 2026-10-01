@@ -88,3 +88,16 @@ void func_80416F4C(s32 mode) {
     }
     D_800E32C8 = mode;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800DC0AC_4 = (-100.0f);
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800E142C_4 = (-100.0f);
+#elif defined(VERSION_EU)
+const float unbake_rodata_800EDA7C_4 = (-100.0f);
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800E8C3C_4 = (-100.0f);
+#elif defined(VERSION_DE)
+const float unbake_rodata_800DD3FC_4 = (-100.0f);
+#endif

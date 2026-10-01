@@ -67,3 +67,16 @@ void func_802736B8(void *arg0, f32 arg1) {
     ((func_802736B8_S1 *)(m))->unk28 = cos_v;
     ((func_802736B8_S1 *)(m))->unk14 = cos_v;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4828_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C99E8_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4BA8_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4BE8_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C48F8_4 = 1.0f;
+#endif

@@ -52,3 +52,16 @@ struct Entry *func_8028CB8C(struct Owner *owner, struct Entry *pos) {
     }
     return best;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5220_4 = 3.40282347e+38f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CA3E0_4 = 3.40282347e+38f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C55A0_4 = 3.40282347e+38f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C55E0_4 = 3.40282347e+38f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C52F0_4 = 3.40282347e+38f;
+#endif

@@ -129,3 +129,13 @@ block_25:
         }
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4DCC_4 = 65536.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9F8C_4 = 65536.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4E54_4 = 1.41421354f;
+const float unbake_rodata_800C4E58_4 = 0.5f;
+#endif

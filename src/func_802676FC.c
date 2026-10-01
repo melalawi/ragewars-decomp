@@ -125,3 +125,26 @@ have:
     }
     return scale;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C436C_4 = 1.0f;
+const float unbake_rodata_800C4370_4 = 1.0f;
+const float unbake_rodata_800C4374_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C952C_4 = 1.0f;
+const float unbake_rodata_800C9530_4 = 1.0f;
+const float unbake_rodata_800C9534_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C46EC_4 = 1.0f;
+const float unbake_rodata_800C46F0_4 = 1.0f;
+const float unbake_rodata_800C46F4_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C472C_4 = 1.0f;
+const float unbake_rodata_800C4730_4 = 1.0f;
+const float unbake_rodata_800C4734_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C443C_4 = 1.0f;
+const float unbake_rodata_800C4440_4 = 1.0f;
+const float unbake_rodata_800C4444_4 = 1.0f;
+#endif

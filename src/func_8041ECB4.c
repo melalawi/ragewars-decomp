@@ -19,3 +19,16 @@ s32 func_8041ECB4(s32 row, s32 id) {
     }
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DE47C_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E381C_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800EFE3C_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EAFFC_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800DF7CC_4[] = {0x00, 0x00, 0x00, 0x00};
+#endif

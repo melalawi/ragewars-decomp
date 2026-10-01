@@ -52,3 +52,48 @@ void func_80207D90(void *arg0, void *arg1) {
         func_80214178(arg0, arg1, 0);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2F00_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7FE0_4 = 1.0f;
+const float unbake_rodata_800C7FE4_4 = 1.0f;
+const float unbake_rodata_800C7FE8_4 = 1.79049289f;
+const float unbake_rodata_800C7FEC_4 = 1.0f;
+const float unbake_rodata_800C7FF0_4 = 1.79049289f;
+const float unbake_rodata_800C7FF4_4 = 1.0f;
+const float unbake_rodata_800C7FF8_4 = 1.79049289f;
+const float unbake_rodata_800C7FFC_4 = 1.79049289f;
+const float unbake_rodata_800C8000_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2F6C_4 = 0.00390625f;
+const float unbake_rodata_800C2F70_4 = 0.25f;
+const float unbake_rodata_800C2F74_4 = 256.0f;
+const float unbake_rodata_800C2F78_4 = 0.00390625f;
+const float unbake_rodata_800C2F7C_4 = 0.600000024f;
+const float unbake_rodata_800C2F80_4 = 0.00390625f;
+const float unbake_rodata_800C2F84_4 = 0.800000012f;
+const float unbake_rodata_800C2F88_4 = 256.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2F3C_4 = 75.0f;
+const float unbake_rodata_800C2F40_4 = 15.0f;
+const float unbake_rodata_800C2F44_4 = 75.0f;
+const float unbake_rodata_800C2F48_4 = 7.5f;
+const float unbake_rodata_800C2F4C_4 = 2.14748365e+09f;
+const float unbake_rodata_800C2F50_4 = 0.0666666701f;
+const float unbake_rodata_800C2F54_4 = 1.5f;
+const float unbake_rodata_800C2F58_4 = 15.0f;
+const float unbake_rodata_800C2F5C_4 = 2.14748365e+09f;
+const float unbake_rodata_800C2F60_4 = 2.14748365e+09f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2EF0_4 = 1.0f;
+const float unbake_rodata_800C2EF4_4 = 1.0f;
+const float unbake_rodata_800C2EF8_4 = 1.79049289f;
+const float unbake_rodata_800C2EFC_4 = 1.0f;
+const float unbake_rodata_800C2F00_4 = 1.79049289f;
+const float unbake_rodata_800C2F04_4 = 1.0f;
+const float unbake_rodata_800C2F08_4 = 1.79049289f;
+const float unbake_rodata_800C2F0C_4 = 1.79049289f;
+const float unbake_rodata_800C2F10_4 = 1.0f;
+#endif

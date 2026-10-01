@@ -110,3 +110,54 @@ s32 func_80443650(Item *item, Owner *owner) {
 done:
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800D1E24_4[] = {0x80, 0x0C, 0xE6, 0xBC};
+const unsigned char unbake_rodata_800D1E28_4[] = {0x80, 0x0C, 0xE6, 0xD4};
+const unsigned char unbake_rodata_800D1E2C_4[] = {0x80, 0x0C, 0xE6, 0xE4};
+const unsigned char unbake_rodata_800D1E30_4[] = {0x80, 0x0C, 0xE6, 0xF4};
+const unsigned char unbake_rodata_800D1E34_4[] = {0x80, 0x0C, 0xE7, 0x04};
+const unsigned char unbake_rodata_800D1E38_4[] = {0x80, 0x0C, 0xE7, 0x18};
+const unsigned char unbake_rodata_800D1E3C_4[] = {0x80, 0x0C, 0xE7, 0x2C};
+const unsigned char unbake_rodata_800D1E40_4[] = {0x80, 0x0C, 0xE7, 0x3C};
+const unsigned char unbake_rodata_800D1E44_4[] = {0x80, 0x0C, 0xE7, 0x4C};
+const unsigned char unbake_rodata_800D1E48_4[] = {0x80, 0x0C, 0xE7, 0x60};
+const unsigned char unbake_rodata_800D1E4C_4[] = {0x80, 0x0C, 0xE7, 0x68};
+const unsigned char unbake_rodata_800D1E50_4[] = {0x80, 0x0C, 0xE7, 0x74};
+const unsigned char unbake_rodata_800D1E54_4[] = {0x80, 0x0C, 0xE7, 0xA8};
+const unsigned char unbake_rodata_800D1E58_4[] = {0x80, 0x0C, 0xE7, 0x8C};
+const unsigned char unbake_rodata_800D1E5C_4[] = {0x80, 0x0C, 0xE7, 0x94};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D71A4_4[] = {0x80, 0x0D, 0x3A, 0x3C};
+const unsigned char unbake_rodata_800D71A8_4[] = {0x80, 0x0D, 0x3A, 0x54};
+const unsigned char unbake_rodata_800D71AC_4[] = {0x80, 0x0D, 0x3A, 0x64};
+const unsigned char unbake_rodata_800D71B0_4[] = {0x80, 0x0D, 0x3A, 0x74};
+const unsigned char unbake_rodata_800D71B4_4[] = {0x80, 0x0D, 0x3A, 0x84};
+const unsigned char unbake_rodata_800D71B8_4[] = {0x80, 0x0D, 0x3A, 0x98};
+const unsigned char unbake_rodata_800D71BC_4[] = {0x80, 0x0D, 0x3A, 0xAC};
+const unsigned char unbake_rodata_800D71C0_4[] = {0x80, 0x0D, 0x3A, 0xBC};
+const unsigned char unbake_rodata_800D71C4_4[] = {0x80, 0x0D, 0x3A, 0xCC};
+const unsigned char unbake_rodata_800D71C8_4[] = {0x80, 0x0D, 0x3A, 0xE0};
+const unsigned char unbake_rodata_800D71CC_4[] = {0x80, 0x0D, 0x3A, 0xE8};
+const unsigned char unbake_rodata_800D71D0_4[] = {0x80, 0x0D, 0x3A, 0xF4};
+const unsigned char unbake_rodata_800D71D4_4[] = {0x80, 0x0D, 0x3B, 0x28};
+const unsigned char unbake_rodata_800D71D8_4[] = {0x80, 0x0D, 0x3B, 0x0C};
+const unsigned char unbake_rodata_800D71DC_4[] = {0x80, 0x0D, 0x3B, 0x14};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800D3178_4[] = {0x80, 0x0C, 0xF3, 0x1C};
+const unsigned char unbake_rodata_800D317C_4[] = {0x80, 0x0C, 0xF3, 0x38};
+const unsigned char unbake_rodata_800D3180_4[] = {0x80, 0x0C, 0xF3, 0x48};
+const unsigned char unbake_rodata_800D3184_4[] = {0x80, 0x0C, 0xF3, 0x5C};
+const unsigned char unbake_rodata_800D3188_4[] = {0x80, 0x0C, 0xF3, 0x70};
+const unsigned char unbake_rodata_800D318C_4[] = {0x80, 0x0C, 0xF3, 0x8C};
+const unsigned char unbake_rodata_800D3190_4[] = {0x80, 0x0C, 0xF3, 0xA4};
+const unsigned char unbake_rodata_800D3194_4[] = {0x80, 0x0C, 0xF3, 0xBC};
+const unsigned char unbake_rodata_800D3198_4[] = {0x80, 0x0C, 0xF3, 0xD0};
+const unsigned char unbake_rodata_800D319C_4[] = {0x80, 0x0C, 0xF3, 0xEC};
+const unsigned char unbake_rodata_800D31A0_4[] = {0x80, 0x0C, 0xF4, 0x08};
+const unsigned char unbake_rodata_800D31A4_4[] = {0x80, 0x0C, 0xF4, 0x1C};
+const unsigned char unbake_rodata_800D31A8_4[] = {0x80, 0x0C, 0xF4, 0x30};
+const unsigned char unbake_rodata_800D31AC_4[] = {0x80, 0x0C, 0xF4, 0x3C};
+const unsigned char unbake_rodata_800D31B0_4[] = {0x80, 0x0C, 0xF4, 0x48};
+#endif

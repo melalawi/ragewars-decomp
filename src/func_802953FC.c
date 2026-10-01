@@ -77,3 +77,9 @@ zero:
         return 0;
     } while (0);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800CA638_18[] = {0x0029542CU, 0x0029543CU, 0x0029544CU, 0x00295464U, 0x00295478U, 0x002954C4U};
+const unsigned int unbake_rodata_800CA650_18[] = {0x002954A4U, 0x002954ACU, 0x002954B4U, 0x002954ACU, 0x002954BCU, 0x002954ACU};
+#endif

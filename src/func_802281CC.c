@@ -31,3 +31,17 @@ s32 func_802281CC(Root *root) {
  }
  return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5234_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CA3F4_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C5148_4 = 65536.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C513C_4 = 0.00392156886f;
+const float unbake_rodata_800C5140_4 = 65536.0f;
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800C522C_12[] = {0x4D, 0x75, 0x6C, 0x74, 0x69, 0x20, 0x70, 0x6C, 0x61, 0x79, 0x65, 0x72, 0x20, 0x64, 0x61, 0x74, 0x61, 0x00};
+#endif

@@ -117,3 +117,26 @@ void func_80234DD0(char *camera) {
     ((func_80234DD0_S1 *)(camera))->unk370 = ((func_80234DD0_S2 *)(camera))->unk268 - radius;
     ((func_80234DD0_S1 *)(camera))->unk37C = ((func_80234DD0_S2 *)(camera))->unk268 + radius;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3130_4 = 0.00872664712f;
+const float unbake_rodata_800C3134_4 = 0.5f;
+const float unbake_rodata_800C3138_4 = 1.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C82F0_4 = 0.00872664712f;
+const float unbake_rodata_800C82F4_4 = 0.5f;
+const float unbake_rodata_800C82F8_4 = 1.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C34B0_4 = 0.00872664712f;
+const float unbake_rodata_800C34B4_4 = 0.5f;
+const float unbake_rodata_800C34B8_4 = 1.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C34F0_4 = 0.00872664712f;
+const float unbake_rodata_800C34F4_4 = 0.5f;
+const float unbake_rodata_800C34F8_4 = 1.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3200_4 = 0.00872664712f;
+const float unbake_rodata_800C3204_4 = 0.5f;
+const float unbake_rodata_800C3208_4 = 1.5f;
+#endif

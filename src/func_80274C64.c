@@ -41,3 +41,16 @@ void func_80274C64(void *arg0)
     }
     ((func_80274C64_S1 *)(o))->unk2C = zOut;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C48D0_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9A90_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4C50_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4C90_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C49A0_4 = 1.0f;
+#endif

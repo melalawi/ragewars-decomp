@@ -71,3 +71,42 @@ float func_802BB630(float x)
 
     return D_800CCAA0.f;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C7738_8 = (-0.16666659550427756);
+const double unbake_rodata_800C7740_8 = 0.0083330662460821547;
+const double unbake_rodata_800C7748_8 = (-0.00019809602901937949);
+const double unbake_rodata_800C7750_8 = 2.6057806379680372e-06;
+const double unbake_rodata_800C7758_8 = 0.31830988618379069;
+const double unbake_rodata_800C7760_8 = 3.1415926218032837;
+const double unbake_rodata_800C7768_8 = 3.1786509547056392e-08;
+const float unbake_rodata_800C7770_4 = 0.0f;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800CCA68_8 = (-0.16666659550427756);
+const double unbake_rodata_800CCA70_8 = 0.0083330662460821547;
+const double unbake_rodata_800CCA78_8 = (-0.00019809602901937949);
+const double unbake_rodata_800CCA80_8 = 2.6057806379680372e-06;
+const double unbake_rodata_800CCA88_8 = 0.31830988618379069;
+const double unbake_rodata_800CCA90_8 = 3.1415926218032837;
+const double unbake_rodata_800CCA98_8 = 3.1786509547056392e-08;
+const float unbake_rodata_800CCAA0_4 = 0.0f;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C8408_8 = (-0.16666659550427756);
+const double unbake_rodata_800C8410_8 = 0.0083330662460821547;
+const double unbake_rodata_800C8418_8 = (-0.00019809602901937949);
+const double unbake_rodata_800C8420_8 = 2.6057806379680372e-06;
+const double unbake_rodata_800C8428_8 = 0.31830988618379069;
+const double unbake_rodata_800C8430_8 = 3.1415926218032837;
+const double unbake_rodata_800C8438_8 = 3.1786509547056392e-08;
+const float unbake_rodata_800C8440_4 = 0.0f;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C7818_8 = (-0.16666659550427756);
+const double unbake_rodata_800C7820_8 = 0.0083330662460821547;
+const double unbake_rodata_800C7828_8 = (-0.00019809602901937949);
+const double unbake_rodata_800C7830_8 = 2.6057806379680372e-06;
+const double unbake_rodata_800C7838_8 = 0.31830988618379069;
+const double unbake_rodata_800C7840_8 = 3.1415926218032837;
+const double unbake_rodata_800C7848_8 = 3.1786509547056392e-08;
+const float unbake_rodata_800C7850_4 = 0.0f;
+#endif

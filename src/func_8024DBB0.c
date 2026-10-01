@@ -64,3 +64,16 @@ void func_8024DBB0(void *actor, Vec3Words pos, s32 sound, f32 volume) {
     }
     func_8028FFB0((s32)&D_80131600, 0, sound, velocity, at, request.owner, volume);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3C04_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8DC4_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3F84_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3FC4_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3CD4_4 = 1.0f;
+#endif

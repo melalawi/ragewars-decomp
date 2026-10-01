@@ -86,3 +86,16 @@ void func_8042ACB0(void) {
         func_8042B1B0(D_800E4F60->selection);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DFBC6_2[] = {0x03, 0x2D};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E4F66_2[] = {0x03, 0x2D};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800F1586_2[] = {0x03, 0x2D};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EC766_2[] = {0x03, 0x31};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800E0F16_2[] = {0x03, 0x29};
+#endif

@@ -48,3 +48,16 @@ clamp:
         func_80217074(arg0, f1);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C20F8_4 = 1.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C72B8_4 = 1.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2468_4 = 1.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C24A8_4 = 1.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C21C8_4 = 1.5f;
+#endif

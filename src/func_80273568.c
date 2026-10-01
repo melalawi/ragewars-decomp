@@ -19,3 +19,16 @@ void func_80273568(f32 *arg0, f32 *arg1, f32 sx, f32 sy, f32 sz) {
     arg0[3] = arg0[7] = arg0[11] = 0.0f;
     arg0[15] = *(f32 *) ((char *) &D_800C99E0 + 4);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4824_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C99E4_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4BA4_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4BE4_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C48F4_4 = 1.0f;
+#endif

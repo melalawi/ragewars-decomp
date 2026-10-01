@@ -31,3 +31,20 @@ void func_802131E0(Root802131E0 *arg0) {
     inner->unk320 = -1;
     inner->unk2FC = 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800C93E0_4 = 0.25f;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C4380_8 = 4294967296.0;
+const double unbake_rodata_800C4388_8 = 4294967296.0;
+const double unbake_rodata_800C4390_8 = 4294967296.0;
+const double unbake_rodata_800C4398_8 = 4294967296.0;
+const double unbake_rodata_800C43A0_8 = 4294967296.0;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C4230_8 = 4294967296.0;
+const double unbake_rodata_800C4238_8 = 4294967296.0;
+const double unbake_rodata_800C4240_8 = 4294967296.0;
+const double unbake_rodata_800C4248_8 = 4294967296.0;
+const double unbake_rodata_800C4250_8 = 4294967296.0;
+#endif

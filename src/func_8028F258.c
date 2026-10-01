@@ -92,3 +92,16 @@ void func_8028F258(OSSched *sc)
         func_8028FA40(sc, value1, value2);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5290_4 = 9.99999997e-07f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CA454_4 = 9.99999997e-07f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C5614_4 = 9.99999997e-07f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C5654_4 = 9.99999997e-07f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5364_4 = 9.99999997e-07f;
+#endif

@@ -107,3 +107,10 @@ void func_8043EFD0(Option *option, OptionPos *pos, s32 arg2, Menu *menu)
     }
     func_802ABC18(option->image, 0, pos->x, pos->y, pos->scaleX, pos->scaleY, 1);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800E23A0_4 = 255.0f;
+const float unbake_rodata_800E23A4_4 = 255.0f;
+const float unbake_rodata_800E23A8_4 = 255.0f;
+#endif

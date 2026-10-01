@@ -44,3 +44,21 @@ void func_8022C2A4(void *arg0, char *arg1)
   screenY = ((((func_8022C2A4_S1 *)(arg1))->unk2A8) + ay) - by;
   func_802ABC18(0x1FB, 0, (s16) ((s32) (((((func_8022C2A4_S1 *)(arg1))->unk2A4) + ax) - bx)), (s16) ((s32) screenY), sx, sy, 1);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2C60_4 = 0.5f;
+const float unbake_rodata_800C2C64_4 = 32.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7E20_4 = 0.5f;
+const float unbake_rodata_800C7E24_4 = 32.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2FD4_4 = 0.5f;
+const float unbake_rodata_800C2FD8_4 = 32.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3014_4 = 0.5f;
+const float unbake_rodata_800C3018_4 = 32.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2D30_4 = 0.5f;
+const float unbake_rodata_800C2D34_4 = 32.0f;
+#endif

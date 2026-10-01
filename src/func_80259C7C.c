@@ -116,3 +116,36 @@ void func_80259C7C(View *view, Controller *controller, s32 flags) {
     motion->heading = result;
     angles->heading = func_802B2340(result);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3E3C_4 = 1000.0f;
+const float unbake_rodata_800C3E40_4 = 1000.0f;
+const float unbake_rodata_800C3E44_4 = 1200.0f;
+const float unbake_rodata_800C3E48_4 = 6000.0f;
+const float unbake_rodata_800C3E4C_4 = 0.0166666675f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8FFC_4 = 1000.0f;
+const float unbake_rodata_800C9000_4 = 1000.0f;
+const float unbake_rodata_800C9004_4 = 1200.0f;
+const float unbake_rodata_800C9008_4 = 6000.0f;
+const float unbake_rodata_800C900C_4 = 0.0166666675f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C41BC_4 = 1000.0f;
+const float unbake_rodata_800C41C0_4 = 1000.0f;
+const float unbake_rodata_800C41C4_4 = 1200.0f;
+const float unbake_rodata_800C41C8_4 = 6000.0f;
+const float unbake_rodata_800C41CC_4 = 0.0166666675f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C41FC_4 = 1000.0f;
+const float unbake_rodata_800C4200_4 = 1000.0f;
+const float unbake_rodata_800C4204_4 = 1200.0f;
+const float unbake_rodata_800C4208_4 = 6000.0f;
+const float unbake_rodata_800C420C_4 = 0.0166666675f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3F0C_4 = 1000.0f;
+const float unbake_rodata_800C3F10_4 = 1000.0f;
+const float unbake_rodata_800C3F14_4 = 1200.0f;
+const float unbake_rodata_800C3F18_4 = 6000.0f;
+const float unbake_rodata_800C3F1C_4 = 0.0166666675f;
+#endif

@@ -52,3 +52,24 @@ s32 func_8022ABF0(void *arg0) {
     }
     return value;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C59B4_4 = 0.00100000005f;
+const float unbake_rodata_800C59B8_4 = (-0.00100000005f);
+const float unbake_rodata_800C59BC_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CAC34_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C5784_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C57A4_4 = 30.0f;
+const float unbake_rodata_800C57A8_4 = 675.0f;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C5848_8 = 0.0;
+const double unbake_rodata_800C5850_8 = 4503599627370496.0;
+const double unbake_rodata_800C5858_8 = 1.0;
+const double unbake_rodata_800C5860_8 = 1.0;
+const double unbake_rodata_800C5868_8 = 4503599627370496.0;
+const double unbake_rodata_800C5870_8 = 1.0;
+#endif

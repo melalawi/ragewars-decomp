@@ -23,3 +23,16 @@ f32 func_80239D0C(struct Wave *wave) {
     }
     return 0.0f;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C349C_4 = 0.0174532942f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C865C_4 = 0.0174532942f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C381C_4 = 0.0174532942f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C385C_4 = 0.0174532942f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C356C_4 = 0.0174532942f;
+#endif

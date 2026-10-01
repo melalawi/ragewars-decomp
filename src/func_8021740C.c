@@ -54,3 +54,16 @@ void func_8021740C(void *arg0, s32 unused, void *arg2, void *arg3,
     func_80271FA4(&position, &((func_8021740C_S1 *)(arg2))->unk8, &offset);
     func_8024E78C(arg2, *(Triple *)&position, arg4, arg5, 0, 0);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2118_4 = 51.1999969f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C72D8_4 = 51.1999969f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2488_4 = 51.1999969f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C24C8_4 = 51.1999969f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C21E8_4 = 51.1999969f;
+#endif

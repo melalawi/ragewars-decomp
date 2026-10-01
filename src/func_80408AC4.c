@@ -67,3 +67,32 @@ s32 func_80408AC4(Item *item) {
     }
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800D241C_4[] = {0x80, 0x0D, 0x00, 0x10};
+const unsigned char unbake_rodata_800D2420_4[] = {0x80, 0x0D, 0x00, 0x14};
+const unsigned char unbake_rodata_800D2424_4[] = {0x80, 0x0D, 0x00, 0x18};
+const unsigned char unbake_rodata_800D2428_4[] = {0x80, 0x0D, 0x00, 0x1C};
+const unsigned char unbake_rodata_800D242C_4[] = {0x80, 0x0D, 0x00, 0x20};
+const unsigned char unbake_rodata_800D2430_4[] = {0x80, 0x0D, 0x00, 0x24};
+const unsigned char unbake_rodata_800D2434_4[] = {0x80, 0x0D, 0x00, 0x28};
+const unsigned char unbake_rodata_800D2438_4[] = {0x80, 0x0D, 0x00, 0x2C};
+const unsigned char unbake_rodata_800D243C_4[] = {0x80, 0x0D, 0x00, 0x30};
+const unsigned char unbake_rodata_800D2440_4[] = {0x80, 0x0D, 0x00, 0x34};
+const unsigned char unbake_rodata_800D2444_4[] = {0x80, 0x0D, 0x00, 0x38};
+const unsigned char unbake_rodata_800D2448_4[] = {0x80, 0x0D, 0x00, 0x3C};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D779C_4[] = {0x80, 0x0D, 0x53, 0x90};
+const unsigned char unbake_rodata_800D77A0_4[] = {0x80, 0x0D, 0x53, 0x94};
+const unsigned char unbake_rodata_800D77A4_4[] = {0x80, 0x0D, 0x53, 0x98};
+const unsigned char unbake_rodata_800D77A8_4[] = {0x80, 0x0D, 0x53, 0x9C};
+const unsigned char unbake_rodata_800D77AC_4[] = {0x80, 0x0D, 0x53, 0xA0};
+const unsigned char unbake_rodata_800D77B0_4[] = {0x80, 0x0D, 0x53, 0xA4};
+const unsigned char unbake_rodata_800D77B4_4[] = {0x80, 0x0D, 0x53, 0xA8};
+const unsigned char unbake_rodata_800D77B8_4[] = {0x80, 0x0D, 0x53, 0xAC};
+const unsigned char unbake_rodata_800D77BC_4[] = {0x80, 0x0D, 0x53, 0xB0};
+const unsigned char unbake_rodata_800D77C0_4[] = {0x80, 0x0D, 0x53, 0xB4};
+const unsigned char unbake_rodata_800D77C4_4[] = {0x80, 0x0D, 0x53, 0xB8};
+const unsigned char unbake_rodata_800D77C8_4[] = {0x80, 0x0D, 0x53, 0xBC};
+#endif

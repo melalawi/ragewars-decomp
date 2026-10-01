@@ -55,3 +55,16 @@ void *func_8025DBA0(void *arg0, s32 arg1) {
     }
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3F4C_4 = 0.100000001f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C910C_4 = 0.100000001f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C42CC_4 = 0.100000001f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C430C_4 = 0.100000001f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C401C_4 = 0.100000001f;
+#endif

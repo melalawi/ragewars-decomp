@@ -38,3 +38,21 @@ void func_8025D370(void *arg0, s32 arg1) {
     ((func_8025D370_S3 *)(arg0))->unk24 = (f32) ((func_8025D370_S2 *)(temp_v0))->unk4;
     func_8028FD94(((func_8025D370_S1 *)(*(void **)arg0))->unk2B50, (arg1 * 2) | 1);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C3EE8_8 = 4294967296.0;
+const float unbake_rodata_800C3EF0_4 = 0.00999999978f;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800C90A8_8 = 4294967296.0;
+const float unbake_rodata_800C90B0_4 = 0.00999999978f;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C4268_8 = 4294967296.0;
+const float unbake_rodata_800C4270_4 = 0.00999999978f;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C42A8_8 = 4294967296.0;
+const float unbake_rodata_800C42B0_4 = 0.00999999978f;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C3FB8_8 = 4294967296.0;
+const float unbake_rodata_800C3FC0_4 = 0.00999999978f;
+#endif

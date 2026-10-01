@@ -104,3 +104,36 @@ void func_8020FDB0(Brain *brain, s32 *ammo) {
         brain->switchTimer = 0;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3E08_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800C8FA0_8 = 4294967296.0;
+const float unbake_rodata_800C8FA8_4 = 0.0166666675f;
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800C3CD0_2C[] = {0x43, 0x47, 0x61, 0x6D, 0x65, 0x4F, 0x62, 0x6A, 0x65, 0x63, 0x74, 0x49, 0x6E, 0x73, 0x74, 0x61, 0x6E, 0x63, 0x65, 0x5F, 0x5F, 0x44, 0x72, 0x61, 0x77, 0x3A, 0x20, 0x61, 0x6E, 0x69, 0x6D, 0x20, 0x6F, 0x62, 0x6A, 0x65, 0x63, 0x74, 0x20, 0x69, 0x6E, 0x66, 0x6F, 0x00};
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3C90_4 = 1.0f;
+const float unbake_rodata_800C3C94_4 = 1.5f;
+const float unbake_rodata_800C3C98_4 = 65536.0f;
+const float unbake_rodata_800C3C9C_4 = 3.05185094e-05f;
+const float unbake_rodata_800C3CA0_4 = 2.0f;
+const float unbake_rodata_800C3CA4_4 = 2.14748365e+09f;
+const float unbake_rodata_800C3CA8_4 = 1.0f;
+const float unbake_rodata_800C3CAC_4 = 0.5f;
+const float unbake_rodata_800C3CB0_4 = 0.300000012f;
+const float unbake_rodata_800C3CB4_4 = (-2.0f);
+const float unbake_rodata_800C3CB8_4 = 3.0f;
+const float unbake_rodata_800C3CBC_4 = 0.970000029f;
+const float unbake_rodata_800C3CC0_4 = 0.0299999993f;
+const float unbake_rodata_800C3CC4_4 = 1.52587891e-05f;
+const float unbake_rodata_800C3CC8_4 = 0.5f;
+const float unbake_rodata_800C3CCC_4 = 65536.0f;
+const float unbake_rodata_800C3CD0_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3E30_4 = 2.14748365e+09f;
+const float unbake_rodata_800C3E34_4 = 0.00787401572f;
+const float unbake_rodata_800C3E38_4 = 102.399994f;
+const float unbake_rodata_800C3E3C_4 = 0.5f;
+#endif

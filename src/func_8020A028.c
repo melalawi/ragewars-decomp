@@ -142,3 +142,46 @@ void func_8020A028(void *arg0, void *arg1)
         }
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1C24_4 = 1.0f;
+const float unbake_rodata_800C1C28_4 = 0.300000012f;
+const float unbake_rodata_800C1C2C_4 = 1.0f;
+const float unbake_rodata_800C1C30_4 = 1.0f;
+const float unbake_rodata_800C1C34_4 = 0.261799425f;
+const float unbake_rodata_800C1C38_4 = 1.0f;
+const float unbake_rodata_800C1C3C_4 = 0.52359885f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6DE4_4 = 1.0f;
+const float unbake_rodata_800C6DE8_4 = 0.300000012f;
+const float unbake_rodata_800C6DEC_4 = 1.0f;
+const float unbake_rodata_800C6DF0_4 = 1.0f;
+const float unbake_rodata_800C6DF4_4 = 0.261799425f;
+const float unbake_rodata_800C6DF8_4 = 1.0f;
+const float unbake_rodata_800C6DFC_4 = 0.52359885f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C1F94_4 = 1.0f;
+const float unbake_rodata_800C1F98_4 = 0.300000012f;
+const float unbake_rodata_800C1F9C_4 = 1.0f;
+const float unbake_rodata_800C1FA0_4 = 1.0f;
+const float unbake_rodata_800C1FA4_4 = 0.261799425f;
+const float unbake_rodata_800C1FA8_4 = 1.0f;
+const float unbake_rodata_800C1FAC_4 = 0.52359885f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C1FD4_4 = 1.0f;
+const float unbake_rodata_800C1FD8_4 = 0.300000012f;
+const float unbake_rodata_800C1FDC_4 = 1.0f;
+const float unbake_rodata_800C1FE0_4 = 1.0f;
+const float unbake_rodata_800C1FE4_4 = 0.261799425f;
+const float unbake_rodata_800C1FE8_4 = 1.0f;
+const float unbake_rodata_800C1FEC_4 = 0.52359885f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1CF4_4 = 1.0f;
+const float unbake_rodata_800C1CF8_4 = 0.300000012f;
+const float unbake_rodata_800C1CFC_4 = 1.0f;
+const float unbake_rodata_800C1D00_4 = 1.0f;
+const float unbake_rodata_800C1D04_4 = 0.261799425f;
+const float unbake_rodata_800C1D08_4 = 1.0f;
+const float unbake_rodata_800C1D0C_4 = 0.52359885f;
+#endif

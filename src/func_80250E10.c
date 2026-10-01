@@ -101,3 +101,14 @@ void func_80250E10(s32 unused, s32 arg1) {
     func_802BFD80(temp_s1, arg1, &D_252450, 0, D_801048F8 + 0x800, D_800D2B2C);
     func_802C0840(temp_s1);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D2B2C_4[] = {0x00, 0x00, 0x00, 0x0F};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800CE49C_4[] = {0x00, 0x00, 0x00, 0x0F};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800CEE6C_4[] = {0x00, 0x00, 0x00, 0x0F};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800CD8BC_4[] = {0x00, 0x00, 0x00, 0x0F};
+#endif

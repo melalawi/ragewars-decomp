@@ -46,3 +46,18 @@ int func_8022A67C(char *arg0) {
     s->armed = 0;
     return 1;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned int unbake_rodata_800C54D0_40[] = {0x002974C8U, 0x00297500U, 0x00297554U, 0x00297554U, 0x002974A8U, 0x002974A8U, 0x002974A8U, 0x002974A8U, 0x00297554U, 0x00297554U, 0x00297554U, 0x00297554U, 0x00297554U, 0x00297554U, 0x00297524U, 0x0029753CU};
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800CA800_8 = 1000.0;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C5660_4 = (-0.667424023f);
+const float unbake_rodata_800C5664_4 = 0.953462005f;
+const float unbake_rodata_800C5668_4 = (-0.57207799f);
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C5680_4 = 122.879997f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C54D8_4 = 1.0f;
+#endif

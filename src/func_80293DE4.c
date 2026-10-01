@@ -28,3 +28,16 @@ void func_80293DE4(void *arg0) {
     ((func_80293DE4_S1 *)(arg0))->unk26DC4 = D_800CA5AC;
     func_80299368(0x1D);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C53EC_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CA5AC_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C576C_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C57AC_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C54C0_4 = 1.0f;
+#endif

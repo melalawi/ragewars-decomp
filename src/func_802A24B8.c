@@ -47,3 +47,21 @@ void func_802A24B8(void) {
         D_800D2BDC[2] = D_800D2BDC[0];
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5CB0_4 = (-100000000.0f);
+const float unbake_rodata_800C5CB4_4 = 100000000.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CAF10_4 = (-100000000.0f);
+const float unbake_rodata_800CAF14_4 = 100000000.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C6020_4 = (-100000000.0f);
+const float unbake_rodata_800C6024_4 = 100000000.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C6060_4 = (-100000000.0f);
+const float unbake_rodata_800C6064_4 = 100000000.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5D80_4 = (-100000000.0f);
+const float unbake_rodata_800C5D84_4 = 100000000.0f;
+#endif

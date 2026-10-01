@@ -72,3 +72,10 @@ void func_8042D054(void) {
         func_80439E60(D_800E53C0->view, D_800E53C0->model);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800D21AC_4[] = {0x80, 0x0C, 0xF6, 0x74};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D752C_4[] = {0x80, 0x0D, 0x49, 0xF4};
+#endif

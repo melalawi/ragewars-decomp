@@ -99,3 +99,12 @@ s32 func_80404958(s32 ch, s32 size, void *data, u8 *name, u8 *ext, u8 *code) {
     }
     return result;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800D2388_4[] = {0x80, 0x0C, 0xFF, 0x70};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D7708_4[] = {0x80, 0x0D, 0x52, 0xF0};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800D36DC_4[] = {0x80, 0x0D, 0x19, 0x00};
+#endif

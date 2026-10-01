@@ -30,3 +30,26 @@ f64 func_8029EAA0(f64 arg0, f64 *arg2) {
     *arg2 = integral;
     return arg0 - integral;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C5A78_8 = 4503599627370496.0;
+const double unbake_rodata_800C5A80_8 = 0.0;
+const double unbake_rodata_800C5A88_8 = 1.0;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800CACD8_8 = 4503599627370496.0;
+const double unbake_rodata_800CACE0_8 = 0.0;
+const double unbake_rodata_800CACE8_8 = 1.0;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C5DE8_8 = 4503599627370496.0;
+const double unbake_rodata_800C5DF0_8 = 0.0;
+const double unbake_rodata_800C5DF8_8 = 1.0;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C5E28_8 = 4503599627370496.0;
+const double unbake_rodata_800C5E30_8 = 0.0;
+const double unbake_rodata_800C5E38_8 = 1.0;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C5B48_8 = 4503599627370496.0;
+const double unbake_rodata_800C5B50_8 = 0.0;
+const double unbake_rodata_800C5B58_8 = 1.0;
+#endif

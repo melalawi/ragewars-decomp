@@ -22,3 +22,16 @@ s32 func_8041F1FC(s32 key) {
     }
     return index;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DE6B0_2[] = {0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E3A50_2[] = {0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800F0070_2[] = {0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EB230_2[] = {0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800DFA00_2[] = {0x00, 0x00};
+#endif

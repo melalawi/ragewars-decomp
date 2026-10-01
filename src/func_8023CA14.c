@@ -60,3 +60,27 @@ loop:
     func_802C0510(queue - 0xAB4, entry, one);
     goto loop;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800DC330_4 = 0.0666666701f;
+const float unbake_rodata_800DC334_4 = 0.0166666675f;
+const float unbake_rodata_800DC338_4 = 5.0f;
+const float unbake_rodata_800DC33C_4 = 0.0666666701f;
+const float unbake_rodata_800DC340_4 = 0.0166666675f;
+const float unbake_rodata_800DC344_4 = 10.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800E1560_4 = 0.00333333341f;
+const float unbake_rodata_800E1564_4 = 100.0f;
+const float unbake_rodata_800E1568_4 = 150.0f;
+const float unbake_rodata_800E156C_4 = 2.14748365e+09f;
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800E25B4_10[] = {0x80, 0x0D, 0x0C, 0x38, 0x80, 0x0D, 0x5F, 0xD0, 0x80, 0x0D, 0xAF, 0xC0, 0x80, 0x0D, 0xED, 0x7C};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800DDC1C_C[] = {0x80, 0x0D, 0x13, 0x68, 0x80, 0x0D, 0x60, 0x30, 0x80, 0x0D, 0xAA, 0x8C};
+const unsigned char unbake_rodata_800DDC28_C[] = {0x80, 0x0D, 0x13, 0x80, 0x80, 0x0D, 0x60, 0x50, 0x80, 0x0D, 0xAA, 0xA4};
+#elif defined(VERSION_DE)
+const float unbake_rodata_800DCAF0_4 = 1.0f;
+const float unbake_rodata_800DCAF4_4 = 1.0f;
+const float unbake_rodata_800DCAF8_4 = 6.0f;
+#endif

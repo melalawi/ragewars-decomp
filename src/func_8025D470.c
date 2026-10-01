@@ -151,3 +151,61 @@ block_44:
         break;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3F00_4 = 0.100000001f;
+const float unbake_rodata_800C3F04_4 = 0.00999999978f;
+const float unbake_rodata_800C3F08_4 = 32767.0f;
+const float unbake_rodata_800C3F0C_4 = 0.00999999978f;
+const float unbake_rodata_800C3F10_4 = 0.00999999978f;
+const float unbake_rodata_800C3F14_4 = 0.699999988f;
+const float unbake_rodata_800C3F18_4 = 32767.0f;
+const float unbake_rodata_800C3F1C_4 = 32767.0f;
+const float unbake_rodata_800C3F20_4 = 0.100000001f;
+const float unbake_rodata_800C3F24_4 = 60.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C90C0_4 = 0.100000001f;
+const float unbake_rodata_800C90C4_4 = 0.00999999978f;
+const float unbake_rodata_800C90C8_4 = 32767.0f;
+const float unbake_rodata_800C90CC_4 = 0.00999999978f;
+const float unbake_rodata_800C90D0_4 = 0.00999999978f;
+const float unbake_rodata_800C90D4_4 = 0.699999988f;
+const float unbake_rodata_800C90D8_4 = 32767.0f;
+const float unbake_rodata_800C90DC_4 = 32767.0f;
+const float unbake_rodata_800C90E0_4 = 0.100000001f;
+const float unbake_rodata_800C90E4_4 = 60.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4280_4 = 0.100000001f;
+const float unbake_rodata_800C4284_4 = 0.00999999978f;
+const float unbake_rodata_800C4288_4 = 32767.0f;
+const float unbake_rodata_800C428C_4 = 0.00999999978f;
+const float unbake_rodata_800C4290_4 = 0.00999999978f;
+const float unbake_rodata_800C4294_4 = 0.699999988f;
+const float unbake_rodata_800C4298_4 = 32767.0f;
+const float unbake_rodata_800C429C_4 = 32767.0f;
+const float unbake_rodata_800C42A0_4 = 0.100000001f;
+const float unbake_rodata_800C42A4_4 = 60.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C42C0_4 = 0.100000001f;
+const float unbake_rodata_800C42C4_4 = 0.00999999978f;
+const float unbake_rodata_800C42C8_4 = 32767.0f;
+const float unbake_rodata_800C42CC_4 = 0.00999999978f;
+const float unbake_rodata_800C42D0_4 = 0.00999999978f;
+const float unbake_rodata_800C42D4_4 = 0.699999988f;
+const float unbake_rodata_800C42D8_4 = 32767.0f;
+const float unbake_rodata_800C42DC_4 = 32767.0f;
+const float unbake_rodata_800C42E0_4 = 0.100000001f;
+const float unbake_rodata_800C42E4_4 = 60.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3FD0_4 = 0.100000001f;
+const float unbake_rodata_800C3FD4_4 = 0.00999999978f;
+const float unbake_rodata_800C3FD8_4 = 32767.0f;
+const float unbake_rodata_800C3FDC_4 = 0.00999999978f;
+const float unbake_rodata_800C3FE0_4 = 0.00999999978f;
+const float unbake_rodata_800C3FE4_4 = 0.699999988f;
+const float unbake_rodata_800C3FE8_4 = 32767.0f;
+const float unbake_rodata_800C3FEC_4 = 32767.0f;
+const float unbake_rodata_800C3FF0_4 = 0.100000001f;
+const float unbake_rodata_800C3FF4_4 = 60.0f;
+#endif

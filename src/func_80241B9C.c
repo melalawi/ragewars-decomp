@@ -130,3 +130,16 @@ void func_80241B9C(Actor *actor, Owner *owner, Bounds *bounds, Query *query, Inp
         }
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3688_4 = 0.40959999f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8848_4 = 0.40959999f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3A08_4 = 0.40959999f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3A48_4 = 0.40959999f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3758_4 = 0.40959999f;
+#endif

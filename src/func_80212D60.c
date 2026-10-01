@@ -27,3 +27,23 @@ void func_80212D60(Actor *arg0) {
     func_80209988(brain);
     brain->unk2FC = 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4128_4 = 1.0f;
+const float unbake_rodata_800C412C_4 = 1.0f;
+const double unbake_rodata_800C4130_8 = 4294967296.0;
+const double unbake_rodata_800C4138_8 = 4294967296.0;
+const double unbake_rodata_800C4140_8 = 4294967296.0;
+const double unbake_rodata_800C4148_8 = 4294967296.0;
+const double unbake_rodata_800C4150_8 = 4294967296.0;
+const float unbake_rodata_800C4158_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800C92B8_8 = 4294967296.0;
+const double unbake_rodata_800C92C0_8 = 4294967296.0;
+const double unbake_rodata_800C92C8_8 = 4294967296.0;
+const double unbake_rodata_800C92D0_8 = 4294967296.0;
+const double unbake_rodata_800C92D8_8 = 4294967296.0;
+const float unbake_rodata_800C92E0_4 = 9.58767268e-05f;
+const float unbake_rodata_800C92E4_4 = 9.58767268e-05f;
+#endif

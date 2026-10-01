@@ -140,3 +140,16 @@ void func_8022E280(void *arg0) {
     ((func_8022E280_S1 *)(object))->unk6E8 = ((func_8022E280_S1 *)(object))->unk8;
     ((func_8022E280_S1 *)(object))->unk6F8 = ((func_8022E280_S1 *)(object))->unk8;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2D40_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7F00_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C30B4_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C30F4_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2E10_4 = 1.0f;
+#endif

@@ -72,3 +72,21 @@ s32 func_80275854(Polygon *polygon) {
     }
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4914_4 = 1.0f;
+const float unbake_rodata_800C4918_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9AD4_4 = 1.0f;
+const float unbake_rodata_800C9AD8_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4C94_4 = 1.0f;
+const float unbake_rodata_800C4C98_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4CD4_4 = 1.0f;
+const float unbake_rodata_800C4CD8_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C49E4_4 = 1.0f;
+const float unbake_rodata_800C49E8_4 = 0.5f;
+#endif

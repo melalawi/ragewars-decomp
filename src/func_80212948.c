@@ -81,3 +81,16 @@ void func_80212948(void *arg0)
         ((func_80212948_S3 *)(state))->unkC = -1;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1FF8_4 = 849346.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C71B8_4 = 849346.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2368_4 = 849346.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C23A8_4 = 849346.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C20C8_4 = 849346.5f;
+#endif

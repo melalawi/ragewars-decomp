@@ -47,3 +47,24 @@ SFtype __floatdisf(DItype u)
 
   return (SFtype) (negate ? -f : f);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1940_4 = 0.5f;
+const float unbake_rodata_800C1944_4 = 0.5f;
+const float unbake_rodata_800C1948_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6B00_4 = 0.5f;
+const float unbake_rodata_800C6B04_4 = 0.5f;
+const float unbake_rodata_800C6B08_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C1CB0_4 = 0.5f;
+const float unbake_rodata_800C1CB4_4 = 0.5f;
+const float unbake_rodata_800C1CB8_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C1CF0_4 = 0.5f;
+const float unbake_rodata_800C1CF4_4 = 0.5f;
+const float unbake_rodata_800C1CF8_4 = 0.5f;
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800C19C0_28[] = {0x00201650U, 0x002015B4U, 0x002015BCU, 0x002015E4U, 0x002015F0U, 0x002015FCU, 0x00201604U, 0x00201628U, 0x00201638U, 0x00201648U};
+#endif

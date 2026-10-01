@@ -191,3 +191,16 @@ block_52:
         D_80153CBC = second.word[12];
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DD780_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E2B20_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800EF140_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EA300_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800DEAD0_4[] = {0x00, 0x00, 0x00, 0x00};
+#endif

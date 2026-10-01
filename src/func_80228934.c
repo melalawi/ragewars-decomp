@@ -88,3 +88,18 @@ void func_80228934(void *game, s32 view) {
     }
     func_8026D9D0();
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C52D4_4 = 81.9199982f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CA494_4 = 81.9199982f;
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800C5498_B[] = {0x67, 0x72, 0x61, 0x70, 0x68, 0x69, 0x63, 0x73, 0x65, 0x74, 0x00};
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C51B0_4 = 1.0f;
+const float unbake_rodata_800C51B4_4 = 1.0f;
+const float unbake_rodata_800C51B8_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5304_4 = 1.0f;
+#endif

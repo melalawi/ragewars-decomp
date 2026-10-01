@@ -32,3 +32,21 @@ s32 func_80428FF0(void) {
     func_8042EB68(0x19);
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DF2F8_4[] = {0x00, 0x00, 0x00, 0x02};
+const unsigned char unbake_rodata_800DF2FC_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E4698_4[] = {0x00, 0x00, 0x00, 0x02};
+const unsigned char unbake_rodata_800E469C_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800F0CB8_4[] = {0x00, 0x00, 0x00, 0x02};
+const unsigned char unbake_rodata_800F0CBC_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EBE98_4[] = {0x00, 0x00, 0x00, 0x02};
+const unsigned char unbake_rodata_800EBE9C_4[] = {0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800E0648_4[] = {0x00, 0x00, 0x00, 0x02};
+const unsigned char unbake_rodata_800E064C_4[] = {0x00, 0x00, 0x00, 0x00};
+#endif

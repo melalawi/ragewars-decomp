@@ -63,3 +63,16 @@ static inline f32 decode(u32 *stream, DecodeRange range) {
 f32 func_80260F18(DecodeStream *arg0) {
     return decode(&arg0->bitAddress, arg0->range);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C40C0_8 = 4294967296.0;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800C9280_8 = 4294967296.0;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C4440_8 = 4294967296.0;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C4480_8 = 4294967296.0;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C4190_8 = 4294967296.0;
+#endif

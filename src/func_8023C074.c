@@ -50,3 +50,26 @@ void func_8023C074(Mapping *mapping) {
     }
     mapping->slot = 0xFF;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800DC1D4_4 = 255.0f;
+const float unbake_rodata_800DC1D8_4 = 4.0f;
+const float unbake_rodata_800DC1DC_4 = 210.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800E1450_4 = 1.0f;
+const float unbake_rodata_800E1454_4 = 0.00999999978f;
+const float unbake_rodata_800E1458_4 = 1.20000005f;
+const float unbake_rodata_800E145C_4 = 0.0500000007f;
+const float unbake_rodata_800E1460_4 = 1.0f;
+const float unbake_rodata_800E1464_4 = 0.00999999978f;
+const float unbake_rodata_800E1468_4 = 1.0f;
+const float unbake_rodata_800E146C_4 = 0.00999999978f;
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800E2234_10[] = {0x80, 0x0D, 0x09, 0x98, 0x80, 0x0D, 0x56, 0x28, 0x80, 0x0D, 0xAD, 0x20, 0x80, 0x0D, 0xEA, 0xDC};
+const unsigned char unbake_rodata_800E2244_10[] = {0x80, 0x0D, 0x09, 0xB0, 0x80, 0x0D, 0x56, 0x48, 0x80, 0x0D, 0xAD, 0x38, 0x80, 0x0D, 0xEA, 0xF4};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800DDA9C_C[] = {0x80, 0x0D, 0x10, 0x8C, 0x80, 0x0D, 0x59, 0x44, 0x80, 0x0D, 0xA7, 0x9C};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800D53B6_2[] = {0x01, 0x00};
+#endif

@@ -100,3 +100,16 @@ void func_802911E8(Context *context) {
     func_80293038(context);
     func_8025DE50();
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800CD7D8_8[] = {0x00, 0x00, 0x00, 0x12, 0x00, 0x00, 0x00, 0x16};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D2B38_8[] = {0x00, 0x00, 0x00, 0x12, 0x6E, 0x74, 0x65, 0x64};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800CE4A8_8[] = {0x00, 0x00, 0x00, 0x12, 0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800CEE78_8[] = {0x00, 0x00, 0x00, 0x12, 0x6B, 0x20, 0x25, 0x73};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800CD8C8_8[] = {0x00, 0x00, 0x00, 0x12, 0x3C, 0x02, 0x80, 0x0D};
+#endif

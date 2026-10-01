@@ -87,3 +87,16 @@ option_c:
 done:
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned int unbake_rodata_800DC830_14[] = {0x0042FAB8U, 0x0042FAD8U, 0x0042FAC8U, 0x0042FAD8U, 0x0042FAD8U};
+#elif defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800E1BB0_14[] = {0x0042FAB8U, 0x0042FAD8U, 0x0042FAC8U, 0x0042FAD8U, 0x0042FAD8U};
+#elif defined(VERSION_EU)
+const unsigned int unbake_rodata_800EE200_14[] = {0x00430578U, 0x00430598U, 0x00430588U, 0x00430598U, 0x00430598U};
+#elif defined(VERSION_EU_X)
+const unsigned int unbake_rodata_800E93C0_14[] = {0x004306C8U, 0x004306E8U, 0x004306D8U, 0x004306E8U, 0x004306E8U};
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800DDB80_14[] = {0x0042F8D8U, 0x0042F8F8U, 0x0042F8E8U, 0x0042F8F8U, 0x0042F8F8U};
+#endif

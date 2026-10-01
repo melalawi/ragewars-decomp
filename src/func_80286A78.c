@@ -886,3 +886,16 @@ block_122:
     func_8044B31C(temp_s0_3);
     func_80236864(temp_s0_3);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5104_4 = 3.40282347e+38f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CA2C4_4 = 3.40282347e+38f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C5484_4 = 3.40282347e+38f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C54C4_4 = 3.40282347e+38f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C51D4_4 = 3.40282347e+38f;
+#endif

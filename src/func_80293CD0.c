@@ -54,3 +54,9 @@ void func_80293CD0(void *arg0) {
     func_80294F1C();
     func_80293378(state);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800CA5A4_4 = 30.0f;
+const float unbake_rodata_800CA5A8_4 = 675.0f;
+#endif

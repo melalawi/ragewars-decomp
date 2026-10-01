@@ -144,3 +144,22 @@ s32 func_80244494(char *arg0, Vector3 arg1, Vector3 arg2, s32 arg3) {
     } while (result != 0 && active != 0);
     return count;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800DD140_8 = 4294967296.0;
+const float unbake_rodata_800DD148_4 = 0.0174532942f;
+const float unbake_rodata_800DD14C_4 = 1.0f;
+const float unbake_rodata_800DD150_4 = 50.0f;
+#elif defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800E23F8_24[] = {0x0043F464U, 0x0043F498U, 0x0043F498U, 0x0043F470U, 0x0043F484U, 0x0043F498U, 0x0043F4A8U, 0x0043F4BCU, 0x0043F4D0U};
+#elif defined(VERSION_EU)
+const double unbake_rodata_800ED2B0_8 = 4294967296.0;
+const float unbake_rodata_800ED2B8_4 = 2.14748365e+09f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800E8330_4 = 1.0f;
+const float unbake_rodata_800E8334_4 = 1.0f;
+const float unbake_rodata_800E8338_4 = 6.0f;
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800DD9D8_14[] = {0x00428580U, 0x00428590U, 0x004285A0U, 0x004285B0U, 0x004285C0U};
+#endif

@@ -33,3 +33,17 @@ void func_80427B98(void) {
  func_8041CB48(&((func_80427B98_S1 *)(D_800E4690))->unk20,9,entry->kind+0x38F,0x4B,0x5DC0,scale,D_800E3A58[index].position[0],D_800E3A58[index].distance[0],D_800E3A58[index].light[0]);
  }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DE6BC_10[] = {0x3E, 0x0F, 0x5C, 0x29, 0x3E, 0x0F, 0x5C, 0x29, 0x3E, 0x0F, 0x5C, 0x29, 0x3E, 0x0F, 0x5C, 0x29};
+const unsigned char unbake_rodata_800DE6CC_3[] = {0x43, 0x20, 0x00};
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800E3A5C_4 = 0.140000001f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800F007C_4 = 0.140000001f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800EB23C_4 = 0.140000001f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800DFA0C_4 = 0.140000001f;
+#endif

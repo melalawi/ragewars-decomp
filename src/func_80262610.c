@@ -38,3 +38,16 @@ void func_80262610(void *arg0, f32 arg1) {
     e_term = (f32) *(s16 *) (base + var_v1 * 2) * D_800C9348;
     func_80273F54(arg1 - (f32) temp_f2, b_term, e_term);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4188_4 = 9.58767268e-05f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9348_4 = 9.58767268e-05f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4508_4 = 9.58767268e-05f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4548_4 = 9.58767268e-05f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4258_4 = 9.58767268e-05f;
+#endif

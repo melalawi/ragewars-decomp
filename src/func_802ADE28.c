@@ -121,3 +121,18 @@ s32 func_802ADE28(void *arg0, void *arg1, void *arg2) {
     }
     return 1;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned int unbake_rodata_800C61E8_20[] = {0x002ACDC0U, 0x002ACDD0U, 0x002ACDE0U, 0x002ACDE0U, 0x002ACE2CU, 0x002ACE2CU, 0x002ACE2CU, 0x002ACDF4U};
+const float unbake_rodata_800C6208_4 = 120.0f;
+const float unbake_rodata_800C620C_4 = 120.0f;
+#elif defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800CB448_20[] = {0x002ADE80U, 0x002ADE90U, 0x002ADEA0U, 0x002ADEA0U, 0x002ADEECU, 0x002ADEECU, 0x002ADEECU, 0x002ADEB4U};
+const float unbake_rodata_800CB468_4 = 120.0f;
+const float unbake_rodata_800CB46C_4 = 120.0f;
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800C62B8_20[] = {0x002ACE90U, 0x002ACEA0U, 0x002ACEB0U, 0x002ACEB0U, 0x002ACEFCU, 0x002ACEFCU, 0x002ACEFCU, 0x002ACEC4U};
+const float unbake_rodata_800C62D8_4 = 120.0f;
+const float unbake_rodata_800C62DC_4 = 120.0f;
+#endif

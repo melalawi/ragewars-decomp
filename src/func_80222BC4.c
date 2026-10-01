@@ -85,3 +85,44 @@ s32 func_80222BC4(void *player, s32 slot, s32 amount) {
     }
     return room;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5138_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CA2F8_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4EA8_4 = 0.25f;
+const float unbake_rodata_800C4EAC_4 = 1.41421354f;
+const float unbake_rodata_800C4EB0_4 = 0.5f;
+const float unbake_rodata_800C4EB4_4 = 32.0f;
+const float unbake_rodata_800C4EB8_4 = 6.0f;
+const float unbake_rodata_800C4EBC_4 = 32.0f;
+const float unbake_rodata_800C4EC0_4 = 0.0174532942f;
+const float unbake_rodata_800C4EC4_4 = 0.0666666701f;
+const float unbake_rodata_800C4EC8_4 = 10.2399998f;
+const float unbake_rodata_800C4ECC_4 = 4096.0f;
+const float unbake_rodata_800C4ED0_4 = 400.0f;
+const float unbake_rodata_800C4ED4_4 = 4096.0f;
+const float unbake_rodata_800C4ED8_4 = 400.0f;
+const float unbake_rodata_800C4EDC_4 = 10.2399998f;
+const float unbake_rodata_800C4EE0_4 = 0.5f;
+const float unbake_rodata_800C4EE4_4 = 0.00100000005f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4E68_4 = 30.0f;
+const float unbake_rodata_800C4E6C_4 = (-40.9599991f);
+const float unbake_rodata_800C4E70_4 = 51.1999969f;
+const float unbake_rodata_800C4E74_4 = 5.0f;
+const float unbake_rodata_800C4E78_4 = 0.5f;
+const float unbake_rodata_800C4E7C_4 = 10.0f;
+const float unbake_rodata_800C4E80_4 = 90.0f;
+const float unbake_rodata_800C4E84_4 = 0.100000001f;
+const float unbake_rodata_800C4E88_4 = 5.0f;
+const float unbake_rodata_800C4E8C_4 = 0.300000012f;
+const float unbake_rodata_800C4E90_4 = 1.0f;
+const float unbake_rodata_800C4E94_4 = 30.0f;
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800C4EE0_23[] = {0x43, 0x53, 0x63, 0x65, 0x6E, 0x65, 0x5F, 0x5F, 0x43, 0x6F, 0x6E, 0x73, 0x74, 0x72, 0x75, 0x63, 0x74, 0x4D, 0x61, 0x70, 0x3A, 0x20, 0x6F, 0x62, 0x6A, 0x65, 0x63, 0x74, 0x20, 0x69, 0x6E, 0x64, 0x65, 0x78, 0x00};
+const unsigned char unbake_rodata_800C4F04_28[] = {0x43, 0x53, 0x63, 0x65, 0x6E, 0x65, 0x5F, 0x5F, 0x43, 0x6F, 0x6E, 0x73, 0x74, 0x72, 0x75, 0x63, 0x74, 0x4D, 0x61, 0x70, 0x3A, 0x20, 0x73, 0x69, 0x6D, 0x70, 0x20, 0x6D, 0x6F, 0x64, 0x65, 0x6C, 0x73, 0x20, 0x69, 0x6E, 0x64, 0x65, 0x78, 0x00};
+const unsigned char unbake_rodata_800C4F2C_23[] = {0x43, 0x53, 0x63, 0x65, 0x6E, 0x65, 0x5F, 0x5F, 0x43, 0x6F, 0x6E, 0x73, 0x74, 0x72, 0x75, 0x63, 0x74, 0x4D, 0x61, 0x70, 0x3A, 0x20, 0x73, 0x69, 0x6D, 0x70, 0x6C, 0x65, 0x20, 0x6D, 0x6F, 0x64, 0x65, 0x6C, 0x00};
+#endif

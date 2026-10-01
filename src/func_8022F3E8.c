@@ -32,3 +32,16 @@ is17:
 store:
     obj->slots[index]++;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800D1D58_4[] = {0x80, 0x0C, 0xE4, 0xB4};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D70DC_4[] = {0x80, 0x0D, 0x38, 0x48};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800CC718_18[] = {0x80, 0x0C, 0xC7, 0x00, 0x80, 0x0C, 0xC7, 0x10, 0x80, 0x11, 0x80, 0x60, 0x40, 0x3F, 0x00, 0x00, 0x20, 0x54, 0x55, 0x20, 0x4D, 0x45, 0x20, 0x4D};
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800CC9B8_4 = 0.100000001f;
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800CD600_4[] = {0x00, 0x00, 0x00, 0x01};
+#endif

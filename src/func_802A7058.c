@@ -65,3 +65,26 @@ void func_802A7058(Image *image, Image *texture, Sprite *sprite) {
         sprite->extentY = height;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5DDC_4 = 3.125f;
+const float unbake_rodata_800C5DE0_4 = 32.0f;
+const float unbake_rodata_800C5DE4_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CB03C_4 = 3.125f;
+const float unbake_rodata_800CB040_4 = 32.0f;
+const float unbake_rodata_800CB044_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C614C_4 = 3.125f;
+const float unbake_rodata_800C6150_4 = 32.0f;
+const float unbake_rodata_800C6154_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C618C_4 = 3.125f;
+const float unbake_rodata_800C6190_4 = 32.0f;
+const float unbake_rodata_800C6194_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5EAC_4 = 3.125f;
+const float unbake_rodata_800C5EB0_4 = 32.0f;
+const float unbake_rodata_800C5EB4_4 = 1.0f;
+#endif

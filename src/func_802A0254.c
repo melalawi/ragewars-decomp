@@ -69,3 +69,16 @@ void func_802A0254(volatile Matrix4f *arg0, Vec3f *arg1, f32 arg2) {
     arg0->m[2][1] = tyz - sx;
     arg0->m[2][2] = tzz + cosine_value;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5BFC_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CAE5C_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C5F6C_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C5FAC_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5CCC_4 = 1.0f;
+#endif

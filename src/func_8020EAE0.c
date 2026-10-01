@@ -93,3 +93,33 @@ s32 func_8020EAE0(void *arg0) {
     ((func_8020EAE0_S1 *)(arg0))->unk28 = ((func_8020EAE0_S1 *)(arg0))->unkC;
     return 1;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3A10_4 = 3.40282347e+38f;
+const float unbake_rodata_800C3A14_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800C8B10_2C[] = {0x43, 0x47, 0x61, 0x6D, 0x65, 0x4F, 0x62, 0x6A, 0x65, 0x63, 0x74, 0x49, 0x6E, 0x73, 0x74, 0x61, 0x6E, 0x63, 0x65, 0x5F, 0x5F, 0x44, 0x72, 0x61, 0x77, 0x3A, 0x20, 0x61, 0x6E, 0x69, 0x6D, 0x20, 0x6F, 0x62, 0x6A, 0x65, 0x63, 0x74, 0x20, 0x69, 0x6E, 0x66, 0x6F, 0x00};
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C39E0_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const unsigned int unbake_rodata_800C39E0_18[] = {0x0023F83CU, 0x0023F86CU, 0x0023F898U, 0x0023F8C0U, 0x0023F8ECU, 0x0023F924U};
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C39A0_4 = 1.0f;
+const float unbake_rodata_800C39A4_4 = 1.5f;
+const float unbake_rodata_800C39A8_4 = 65536.0f;
+const float unbake_rodata_800C39AC_4 = 3.05185094e-05f;
+const float unbake_rodata_800C39B0_4 = 2.0f;
+const float unbake_rodata_800C39B4_4 = 2.14748365e+09f;
+const float unbake_rodata_800C39B8_4 = 1.0f;
+const float unbake_rodata_800C39BC_4 = 0.5f;
+const float unbake_rodata_800C39C0_4 = 0.300000012f;
+const float unbake_rodata_800C39C4_4 = (-2.0f);
+const float unbake_rodata_800C39C8_4 = 3.0f;
+const float unbake_rodata_800C39CC_4 = 0.970000029f;
+const float unbake_rodata_800C39D0_4 = 0.0299999993f;
+const float unbake_rodata_800C39D4_4 = 1.52587891e-05f;
+const float unbake_rodata_800C39D8_4 = 0.5f;
+const float unbake_rodata_800C39DC_4 = 65536.0f;
+const float unbake_rodata_800C39E0_4 = 0.5f;
+#endif

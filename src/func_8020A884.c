@@ -47,3 +47,21 @@ void func_8020A884(void *arg0, void *arg1) {
         ((func_8020A884_S1 *)(o))->unk2EC = timer - 1;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1C58_4 = 98.0f;
+const float unbake_rodata_800C1C5C_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6E18_4 = 98.0f;
+const float unbake_rodata_800C6E1C_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C1FC8_4 = 98.0f;
+const float unbake_rodata_800C1FCC_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2008_4 = 98.0f;
+const float unbake_rodata_800C200C_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1D28_4 = 98.0f;
+const float unbake_rodata_800C1D2C_4 = 1.0f;
+#endif

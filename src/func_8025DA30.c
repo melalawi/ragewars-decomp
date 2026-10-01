@@ -61,3 +61,16 @@ s32 func_8025DA30(void *arg0, s32 arg1) {
     ((func_8025DA30_S3 *)(arg0))->unkC = result;
     return result != 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3F38_4 = 0.100000001f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C90F8_4 = 0.100000001f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C42B8_4 = 0.100000001f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C42F8_4 = 0.100000001f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4008_4 = 0.100000001f;
+#endif

@@ -77,3 +77,9 @@ s32 func_80422510(void) {
     SCREEN_WORD(0x20) = -1;
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D74A4_4[] = {0x80, 0x0D, 0x47, 0xE4};
+const unsigned char unbake_rodata_800D74A8_4[] = {0x80, 0x0D, 0x47, 0xE8};
+#endif

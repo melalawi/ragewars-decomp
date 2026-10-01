@@ -46,3 +46,18 @@ converted:
     *(volatile u32 *)0xA4500008 = 1;
     return D_800D9280 / (s32)dacRate;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C7840_8 = 4294967296.0;
+const float unbake_rodata_800C7848_4 = 0.5f;
+const float unbake_rodata_800C784C_4 = 2.14748365e+09f;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800CCB70_8 = 4294967296.0;
+const float unbake_rodata_800CCB78_4 = 0.5f;
+const float unbake_rodata_800CCB7C_4 = 2.14748365e+09f;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C8510_8 = 4294967296.0;
+const float unbake_rodata_800C8518_4 = 0.5f;
+const float unbake_rodata_800C851C_4 = 2.14748365e+09f;
+#endif

@@ -18,3 +18,16 @@ Model *func_804422BC(Widget *widget,int selection,int kind) {
  state->size=state->model.size;
  return &state->model;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800DD1A4_4 = 10240.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800E2524_4 = 10240.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800EEB74_4 = 10240.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800E9D34_4 = 10240.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800DE4F4_4 = 10240.0f;
+#endif

@@ -95,3 +95,16 @@ void func_8022B7E8(void *arg0, void *arg1) {
     func_80237E70(GAME, ((func_8022B7E8_S1 *)(state))->unk5DC, payload);
     func_80237E70(GAME, ((func_8022B7E8_S1 *)(state))->unk5DC, RESOURCE(D_800D71EC));
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2C4C_4 = 105.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7E0C_4 = 105.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2FC0_4 = 105.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3000_4 = 105.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2D1C_4 = 105.0f;
+#endif

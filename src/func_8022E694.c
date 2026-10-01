@@ -50,3 +50,16 @@ void func_8022E694(void *arg0, void *arg1) {
         ((func_8022E694_S3 *)(arg0))->unk6F8 = ((func_8022E694_S4 *)(arg1))->unk8;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2D48_4 = 5120.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7F08_4 = 5120.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C30BC_4 = 5120.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C30FC_4 = 5120.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2E18_4 = 5120.0f;
+#endif

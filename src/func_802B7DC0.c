@@ -25,3 +25,16 @@ s32 func_802B7DC0(s32 val, f32 div) {
     }
     return result;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C7480_8 = 2147483647.0;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800CC7B0_8 = 2147483647.0;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C8150_8 = 2147483647.0;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C8B20_8 = 2147483647.0;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C7560_8 = 2147483647.0;
+#endif

@@ -26,3 +26,22 @@ int func_80245788(void) {
     }
     return var_a0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800DD3A8_4 = 255.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800E2504_4 = 0.5f;
+const float unbake_rodata_800E2508_4 = 0.216216221f;
+const float unbake_rodata_800E250C_4 = 9.0f;
+const float unbake_rodata_800E2510_4 = 13.0f;
+const float unbake_rodata_800E2514_4 = 192.0f;
+const float unbake_rodata_800E2518_4 = 2.14748365e+09f;
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800ED414_5[] = {0x25, 0x30, 0x34, 0x64, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800E8510_16[] = {0x4D, 0x65, 0x6D, 0x70, 0x61, 0x6B, 0x20, 0x72, 0x65, 0x61, 0x64, 0x20, 0x74, 0x65, 0x6D, 0x70, 0x20, 0x64, 0x61, 0x74, 0x61, 0x00};
+const unsigned char unbake_rodata_800E8528_17[] = {0x4D, 0x65, 0x6D, 0x70, 0x61, 0x6B, 0x20, 0x77, 0x72, 0x69, 0x74, 0x65, 0x20, 0x74, 0x65, 0x6D, 0x70, 0x20, 0x64, 0x61, 0x74, 0x61, 0x00};
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800DDB40_14[] = {0x0042E2BCU, 0x0042E300U, 0x0042E35CU, 0x0042E3B4U, 0x0042E32CU};
+#endif

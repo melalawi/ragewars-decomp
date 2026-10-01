@@ -30,3 +30,8 @@ int func_80295B30(void) {
     
     } while (0);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800CA668_18[] = {0x00295B5CU, 0x00295B64U, 0x00295B6CU, 0x00295B64U, 0x00295B74U, 0x00295B64U};
+#endif

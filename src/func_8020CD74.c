@@ -67,3 +67,16 @@ s32 func_8020CD74(s32 **arg0, Instance8020CD74 *arg1, s32 arg2) {
     *arg1 = saved;
     return result == 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1CC4_4 = 61.4399986f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6E84_4 = 61.4399986f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2034_4 = 61.4399986f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2074_4 = 61.4399986f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1D94_4 = 61.4399986f;
+#endif

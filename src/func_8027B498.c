@@ -90,3 +90,10 @@ void func_8027B498(Actor *actor) {
         }
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800FE1F0_8[] = {0x8F, 0xC2, 0x00, 0x48, 0x24, 0x43, 0x00, 0x01};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_801001F0_8[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC0, 0x00};
+#endif

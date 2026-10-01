@@ -58,3 +58,21 @@ void func_802A68A0(void *arg0, void *arg1, s32 arg2) {
         } while (node != 0);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5DC8_4 = 0.00999999978f;
+const float unbake_rodata_800C5DCC_4 = 0.292571425f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CB028_4 = 0.00999999978f;
+const float unbake_rodata_800CB02C_4 = 0.292571425f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C6138_4 = 0.00999999978f;
+const float unbake_rodata_800C613C_4 = 0.292571425f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C6178_4 = 0.00999999978f;
+const float unbake_rodata_800C617C_4 = 0.292571425f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5E98_4 = 0.00999999978f;
+const float unbake_rodata_800C5E9C_4 = 0.292571425f;
+#endif

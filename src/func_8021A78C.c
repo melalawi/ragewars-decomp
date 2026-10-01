@@ -282,3 +282,21 @@ void func_8021A78C(void *arg0) {
     ((func_8021A78C_S1 *)(object))->unk704 = zero;
     ((func_8021A78C_S1 *)(object))->unk16D4 = 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2228_4 = 1.0f;
+const float unbake_rodata_800C222C_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C73E8_4 = 1.0f;
+const float unbake_rodata_800C73EC_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2598_4 = 1.0f;
+const float unbake_rodata_800C259C_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C25D8_4 = 1.0f;
+const float unbake_rodata_800C25DC_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C22F8_4 = 1.0f;
+const float unbake_rodata_800C22FC_4 = 1.0f;
+#endif

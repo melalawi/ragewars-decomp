@@ -116,3 +116,21 @@ done:
         ((func_80228DA0_S2 *)(object))->unk174 = dir;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2B44_4 = 1.0f;
+const float unbake_rodata_800C2B48_4 = 9.99999975e-06f;
+const float unbake_rodata_800C2B4C_4 = 100000000.0f;
+const float unbake_rodata_800C2B50_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7D04_4 = 1.0f;
+const float unbake_rodata_800C7D08_4 = 9.99999975e-06f;
+const float unbake_rodata_800C7D0C_4 = 100000000.0f;
+const float unbake_rodata_800C7D10_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2C14_4 = 1.0f;
+const float unbake_rodata_800C2C18_4 = 9.99999975e-06f;
+const float unbake_rodata_800C2C1C_4 = 100000000.0f;
+const float unbake_rodata_800C2C20_4 = 0.5f;
+#endif

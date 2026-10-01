@@ -49,3 +49,16 @@ s32 func_8026745C(void *arg0, Vec3 *arg1) {
     }
     return result;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4360_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9520_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C46E0_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4720_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4430_4 = 0.5f;
+#endif

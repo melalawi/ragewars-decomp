@@ -62,3 +62,15 @@ s32 func_8020D370(Selection *sel)
     }
     return 1;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800C88A4_4 = 0.0666666701f;
+const float unbake_rodata_800C88A8_4 = 0.0666666701f;
+const float unbake_rodata_800C88AC_4 = (-0.5f);
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C38D0_4 = 0.0666666701f;
+const float unbake_rodata_800C38D4_4 = 15.0f;
+const float unbake_rodata_800C38D8_4 = 1.0f;
+const float unbake_rodata_800C38DC_4 = 0.5f;
+#endif

@@ -12,3 +12,16 @@ void func_8022B5B0(void *arg0) {
         (*(f32 *)((s8 *)(arg0) + (0x12C0))) = func_80274878((*(f32 *)((s8 *)(arg0) + (0x12C0))), (*(f32 *)((s8 *)(&D_800C7E00) + (4))), D_800CF234);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2C44_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7E04_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2FB8_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2FF8_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2D14_4 = 1.0f;
+#endif

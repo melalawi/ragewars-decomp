@@ -90,3 +90,16 @@ void func_802A94E8(void) {
         D_8013B878[1] = 2;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5EE0_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CB140_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C6250_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C6290_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5FB0_4 = 1.0f;
+#endif

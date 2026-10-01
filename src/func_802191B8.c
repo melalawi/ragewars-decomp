@@ -76,3 +76,16 @@ void func_802191B8(volatile char *arg0, void *arg1) {
         ((func_802191B8_S2 *)(arg0))->unk70 = result;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C21F8_4 = 2.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C73B8_4 = 2.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2568_4 = 2.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C25A8_4 = 2.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C22C8_4 = 2.0f;
+#endif

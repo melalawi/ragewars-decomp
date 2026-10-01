@@ -55,3 +55,21 @@ void func_8022E77C(void *actor, Marker **slot, s32 kind, f32 distance) {
     marker->z = pos.z;
     marker->scale = D_800C7F10;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2D4C_4 = 0.5f;
+const float unbake_rodata_800C2D50_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7F0C_4 = 0.5f;
+const float unbake_rodata_800C7F10_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C30C0_4 = 0.5f;
+const float unbake_rodata_800C30C4_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3100_4 = 0.5f;
+const float unbake_rodata_800C3104_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2E1C_4 = 0.5f;
+const float unbake_rodata_800C2E20_4 = 1.0f;
+#endif

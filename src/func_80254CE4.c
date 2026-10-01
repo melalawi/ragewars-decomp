@@ -32,3 +32,10 @@ void func_80254CE4(s32 arg0, s32 arg1)
   }
   D_80105134[arg1] = 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800ED21A_14[] = {0x00, 0xE2, 0x00, 0x00, 0x00, 0xE4, 0x00, 0x00, 0x00, 0xE6, 0x00, 0x00, 0x00, 0xE8, 0x00, 0x00, 0x00, 0xEA, 0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_801002C4_4[] = {0xC7, 0xC0, 0xC0, 0xC0};
+#endif

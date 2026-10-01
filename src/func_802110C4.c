@@ -29,3 +29,21 @@ void func_802110C4(struct Player *player) {
         player->level = D_800C70F4;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1F30_4 = 100.0f;
+const float unbake_rodata_800C1F34_4 = 307.200012f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C70F0_4 = 100.0f;
+const float unbake_rodata_800C70F4_4 = 307.200012f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C22A0_4 = 100.0f;
+const float unbake_rodata_800C22A4_4 = 307.200012f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C22E0_4 = 100.0f;
+const float unbake_rodata_800C22E4_4 = 307.200012f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2000_4 = 100.0f;
+const float unbake_rodata_800C2004_4 = 307.200012f;
+#endif

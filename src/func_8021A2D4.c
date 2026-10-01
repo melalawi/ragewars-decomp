@@ -186,3 +186,31 @@ void func_8021A2D4(Actor *arg0, s32 arg1, RenderContext *arg2)
 }
 
 
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2214_4 = 150.0f;
+const float unbake_rodata_800C2218_4 = 150.0f;
+const float unbake_rodata_800C221C_4 = 70.0f;
+const float unbake_rodata_800C2220_4 = 128.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C73D4_4 = 150.0f;
+const float unbake_rodata_800C73D8_4 = 150.0f;
+const float unbake_rodata_800C73DC_4 = 70.0f;
+const float unbake_rodata_800C73E0_4 = 128.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2584_4 = 150.0f;
+const float unbake_rodata_800C2588_4 = 150.0f;
+const float unbake_rodata_800C258C_4 = 70.0f;
+const float unbake_rodata_800C2590_4 = 128.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C25C4_4 = 150.0f;
+const float unbake_rodata_800C25C8_4 = 150.0f;
+const float unbake_rodata_800C25CC_4 = 70.0f;
+const float unbake_rodata_800C25D0_4 = 128.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C22E4_4 = 150.0f;
+const float unbake_rodata_800C22E8_4 = 150.0f;
+const float unbake_rodata_800C22EC_4 = 70.0f;
+const float unbake_rodata_800C22F0_4 = 128.0f;
+#endif

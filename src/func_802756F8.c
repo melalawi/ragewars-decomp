@@ -50,3 +50,21 @@ Vec4 *func_802756F8(Vec4 *out) {
     *out = result;
     return out;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C490C_4 = 1.0f;
+const float unbake_rodata_800C4910_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9ACC_4 = 1.0f;
+const float unbake_rodata_800C9AD0_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4C8C_4 = 1.0f;
+const float unbake_rodata_800C4C90_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4CCC_4 = 1.0f;
+const float unbake_rodata_800C4CD0_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C49DC_4 = 1.0f;
+const float unbake_rodata_800C49E0_4 = 0.5f;
+#endif

@@ -91,3 +91,16 @@ void func_80298FA0(s32 screenCount, s32 value) {
     func_802992C4(9, &D_40C640, &D_40C648, 1);
     func_802992C4(11, &D_412624, &D_4126B4, 1);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C5598_8 = 1000.0;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800CA7F8_8 = 1000.0;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C5908_8 = 1000.0;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C5948_8 = 1000.0;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C5668_8 = 1000.0;
+#endif

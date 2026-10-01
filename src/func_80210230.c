@@ -86,3 +86,36 @@ s32 func_80210230(TargetList *self) {
     self->count = count;
     return 1;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800C905C_4 = 1.26999998f;
+const float unbake_rodata_800C9060_4 = 2.14748365e+09f;
+const float unbake_rodata_800C9064_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3F54_4 = 1.0f;
+const float unbake_rodata_800C3F58_4 = 0.436332345f;
+const float unbake_rodata_800C3F5C_4 = 0.163624629f;
+const float unbake_rodata_800C3F60_4 = 0.375f;
+const float unbake_rodata_800C3F64_4 = 0.436332345f;
+const float unbake_rodata_800C3F68_4 = 0.163624629f;
+const float unbake_rodata_800C3F6C_4 = 0.375f;
+const float unbake_rodata_800C3F70_4 = 25.0f;
+const float unbake_rodata_800C3F74_4 = 18.75f;
+const float unbake_rodata_800C3F78_4 = 0.75f;
+const float unbake_rodata_800C3F7C_4 = 0.5f;
+const float unbake_rodata_800C3F80_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3F74_4 = 1.0f;
+const float unbake_rodata_800C3F78_4 = 1.0f;
+const float unbake_rodata_800C3F7C_4 = 1.0f;
+const float unbake_rodata_800C3F80_4 = 0.75f;
+const float unbake_rodata_800C3F84_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3F38_4 = 3072.0f;
+const float unbake_rodata_800C3F3C_4 = 0.5f;
+const float unbake_rodata_800C3F40_4 = 0.25f;
+const float unbake_rodata_800C3F44_4 = 0.5f;
+const float unbake_rodata_800C3F48_4 = 1.0f;
+const float unbake_rodata_800C3F4C_4 = 1.0f;
+#endif

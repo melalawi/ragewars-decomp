@@ -43,3 +43,21 @@ void func_8022EC2C(void *object) {
 /** Empty adjacent entry point included in func_8022EC2C's Splat span. */
 void func_8022ECB4(void) {
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2DB8_4 = 1.02400005f;
+const float unbake_rodata_800C2DBC_4 = (-1.02400005f);
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7F78_4 = 1.02400005f;
+const float unbake_rodata_800C7F7C_4 = (-1.02400005f);
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3130_4 = 1.02400005f;
+const float unbake_rodata_800C3134_4 = (-1.02400005f);
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3170_4 = 1.02400005f;
+const float unbake_rodata_800C3174_4 = (-1.02400005f);
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2E88_4 = 1.02400005f;
+const float unbake_rodata_800C2E8C_4 = (-1.02400005f);
+#endif

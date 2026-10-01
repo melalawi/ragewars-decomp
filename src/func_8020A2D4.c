@@ -103,3 +103,26 @@ void func_8020A2D4(void *arg0, void *config) {
         func_8020A95C(arg0, config);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1C40_4 = 1.0f;
+const float unbake_rodata_800C1C44_4 = 1.0f;
+const float unbake_rodata_800C1C48_4 = 94371.8281f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6E00_4 = 1.0f;
+const float unbake_rodata_800C6E04_4 = 1.0f;
+const float unbake_rodata_800C6E08_4 = 94371.8281f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C1FB0_4 = 1.0f;
+const float unbake_rodata_800C1FB4_4 = 1.0f;
+const float unbake_rodata_800C1FB8_4 = 94371.8281f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C1FF0_4 = 1.0f;
+const float unbake_rodata_800C1FF4_4 = 1.0f;
+const float unbake_rodata_800C1FF8_4 = 94371.8281f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1D10_4 = 1.0f;
+const float unbake_rodata_800C1D14_4 = 1.0f;
+const float unbake_rodata_800C1D18_4 = 94371.8281f;
+#endif

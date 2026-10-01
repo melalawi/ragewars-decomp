@@ -63,3 +63,21 @@ void func_8022C480(Player *player) {
     func_802734B8(mtx, pos.x, pos.y + D_800C7E30.eyeHeight, pos.z);
     func_802702EC(mtx, player->views[D_800D297C]);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2C70_4 = 0.0174532942f;
+const float unbake_rodata_800C2C74_4 = 20.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7E30_4 = 0.0174532942f;
+const float unbake_rodata_800C7E34_4 = 20.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2FE4_4 = 0.0174532942f;
+const float unbake_rodata_800C2FE8_4 = 20.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3024_4 = 0.0174532942f;
+const float unbake_rodata_800C3028_4 = 20.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2D40_4 = 0.0174532942f;
+const float unbake_rodata_800C2D44_4 = 20.0f;
+#endif

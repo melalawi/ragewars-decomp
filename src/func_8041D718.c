@@ -74,3 +74,8 @@ void func_8041D718(void) {
     func_802A1C08(D_800E3590->count, D_800E153C, D_80102B00[D_800E3590->index].count);
     item->text = D_800E3590->count;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800FCB17_E[] = {0x00, 0x00, 0x8F, 0xC3, 0x00, 0x20, 0x00, 0x60, 0x10, 0x21, 0x08, 0x00, 0x00, 0x00};
+#endif

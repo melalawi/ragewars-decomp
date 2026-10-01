@@ -63,3 +63,26 @@ s16 func_80259B30(Vec3 *position, void *listener) {
     }
     return pan * D_800C8FF8 + D_800C8FF8;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3E30_4 = 100.0f;
+const float unbake_rodata_800C3E34_4 = 1.0f;
+const float unbake_rodata_800C3E38_4 = 64.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8FF0_4 = 100.0f;
+const float unbake_rodata_800C8FF4_4 = 1.0f;
+const float unbake_rodata_800C8FF8_4 = 64.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C41B0_4 = 100.0f;
+const float unbake_rodata_800C41B4_4 = 1.0f;
+const float unbake_rodata_800C41B8_4 = 64.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C41F0_4 = 100.0f;
+const float unbake_rodata_800C41F4_4 = 1.0f;
+const float unbake_rodata_800C41F8_4 = 64.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3F00_4 = 100.0f;
+const float unbake_rodata_800C3F04_4 = 1.0f;
+const float unbake_rodata_800C3F08_4 = 64.0f;
+#endif

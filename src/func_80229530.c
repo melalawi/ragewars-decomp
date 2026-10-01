@@ -73,3 +73,16 @@ void func_80229530(Player *player, s32 type, s32 amount) {
         func_8022B74C(player, message, 1.0f);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5300_4 = 4.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CA4C0_4 = 4.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C54B8_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800C5400_C[] = {0x6C, 0x65, 0x76, 0x65, 0x6C, 0x20, 0x69, 0x6E, 0x64, 0x65, 0x78, 0x00};
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800C5368_1C[] = {0x0028F710U, 0x0028F6B8U, 0x0028F64CU, 0x0028F710U, 0x0028F710U, 0x0028F6B8U, 0x0028F6B8U};
+#endif

@@ -94,3 +94,12 @@ void func_80231BA0(void *actor, void *arg1) {
         func_80214178(actor, arg1, action);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2EE8_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C80A8_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2FB8_4 = 1.0f;
+#endif

@@ -64,3 +64,12 @@ Vec3f func_80401214(f32 t) {
     }
     return func_80400E50(keys, count, t - start);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_EU)
+const unsigned char unbake_rodata_800EEE50_8[] = {0x80, 0x15, 0xCE, 0xB0, 0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EA010_8[] = {0x80, 0x15, 0x6E, 0xB0, 0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800DE7E0_8[] = {0x80, 0x14, 0xCE, 0xB0, 0x00, 0x00, 0x00, 0x00};
+#endif

@@ -167,3 +167,15 @@ void func_80230390(Actor *actor, Fire *fire) {
         func_80214178(actor, fire, fireMode);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2E18_4 = 1.0f;
+const float unbake_rodata_800C2E1C_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7FD8_4 = 1.0f;
+const float unbake_rodata_800C7FDC_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2EE8_4 = 1.0f;
+const float unbake_rodata_800C2EEC_4 = 1.0f;
+#endif

@@ -39,3 +39,16 @@ void func_80219124(volatile char *arg0) {
         ((func_80219124_S2 *)(arg0))->unk24 = i * scale;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C21F4_4 = 1.57079649f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C73B4_4 = 1.57079649f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2564_4 = 1.57079649f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C25A4_4 = 1.57079649f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C22C4_4 = 1.57079649f;
+#endif

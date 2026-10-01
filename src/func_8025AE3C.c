@@ -132,3 +132,16 @@ void func_8025AE3C(View *view) {
     func_8025A864(view);
     func_8025ABB4(view);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3E98_4 = 0.075000003f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9058_4 = 0.075000003f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4218_4 = 0.075000003f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4258_4 = 0.075000003f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3F68_4 = 0.075000003f;
+#endif

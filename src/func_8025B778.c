@@ -103,3 +103,26 @@ void func_8025B778(s32 *arg0, s32 arg1) {
         off += 0xCC;
     } while (i < 0x11);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3EAC_4 = 0.0111111114f;
+const float unbake_rodata_800C3EB0_4 = 32000.0f;
+const float unbake_rodata_800C3EB4_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C906C_4 = 0.0111111114f;
+const float unbake_rodata_800C9070_4 = 32000.0f;
+const float unbake_rodata_800C9074_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C422C_4 = 0.0111111114f;
+const float unbake_rodata_800C4230_4 = 32000.0f;
+const float unbake_rodata_800C4234_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C426C_4 = 0.0111111114f;
+const float unbake_rodata_800C4270_4 = 32000.0f;
+const float unbake_rodata_800C4274_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3F7C_4 = 0.0111111114f;
+const float unbake_rodata_800C3F80_4 = 32000.0f;
+const float unbake_rodata_800C3F84_4 = 1.0f;
+#endif

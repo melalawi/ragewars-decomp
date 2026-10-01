@@ -43,3 +43,16 @@ void func_802B95DC(void *arg0, s32 arg1) {
     ((func_802B95DC_S1 *)(arg0))->unk2C = 0;
     ((func_802B95DC_S1 *)(arg0))->unk18 = k;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C7500_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CC830_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C81D0_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C8BA0_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C75E0_4 = 1.0f;
+#endif

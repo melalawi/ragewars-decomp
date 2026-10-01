@@ -129,3 +129,8 @@ s32 func_8020F6C0(Brain *brain) {
     brain->aim.z = brain->target->pos.z;
     return 1;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800C7000_4 = 3072.0f;
+#endif

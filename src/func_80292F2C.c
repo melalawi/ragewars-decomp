@@ -14,3 +14,16 @@ void func_80292F2C(void) {
     func_802BFD80((s32)D_8011F650, 0, D_2934F0, 0, (s32)(D_800EBC00 + 0x80), D_800D2B14);
     func_802C0840((s32)D_8011F650);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800CD7B4_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D2B14_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800CE484_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800CEE54_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800CD8A4_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
+#endif

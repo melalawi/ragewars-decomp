@@ -57,3 +57,31 @@ Vec3 *func_80271694(Vec3 *out, Vec3 *in, f32 amount) {
     *out = result;
     return out;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4740_4 = 10000.0f;
+const float unbake_rodata_800C4744_4 = 9.99999975e-05f;
+const float unbake_rodata_800C4748_4 = 1.0f;
+const float unbake_rodata_800C474C_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9900_4 = 10000.0f;
+const float unbake_rodata_800C9904_4 = 9.99999975e-05f;
+const float unbake_rodata_800C9908_4 = 1.0f;
+const float unbake_rodata_800C990C_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4AC0_4 = 10000.0f;
+const float unbake_rodata_800C4AC4_4 = 9.99999975e-05f;
+const float unbake_rodata_800C4AC8_4 = 1.0f;
+const float unbake_rodata_800C4ACC_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4B00_4 = 10000.0f;
+const float unbake_rodata_800C4B04_4 = 9.99999975e-05f;
+const float unbake_rodata_800C4B08_4 = 1.0f;
+const float unbake_rodata_800C4B0C_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4810_4 = 10000.0f;
+const float unbake_rodata_800C4814_4 = 9.99999975e-05f;
+const float unbake_rodata_800C4818_4 = 1.0f;
+const float unbake_rodata_800C481C_4 = 1.0f;
+#endif

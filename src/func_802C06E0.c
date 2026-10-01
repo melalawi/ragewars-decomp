@@ -45,3 +45,8 @@ void func_802C06E0(OSThread *t, s32 pri)
 
     func_802C2040(saveMask);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800D3F18_4[] = {0x80, 0x0D, 0x3F, 0x10};
+#endif

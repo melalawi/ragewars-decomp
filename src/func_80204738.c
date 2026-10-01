@@ -17,3 +17,16 @@ void func_80204738(void *object) {
         ((func_80204738_S1 *)(object))->unk100 = flags;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C19A0_4 = 30.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6B60_4 = 30.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C1D10_4 = 30.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C1D50_4 = 30.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1A70_4 = 30.0f;
+#endif

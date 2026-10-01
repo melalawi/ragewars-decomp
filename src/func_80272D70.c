@@ -40,3 +40,16 @@ void func_80272D70(f32 (*mfThis)[4], f32 Theta, f32 X, f32 Y, f32 Z) {
     mfThis[1][0] = ab - Z;
     mfThis[0][1] = ab + Z;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4808_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C99C8_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4B88_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4BC8_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C48D8_4 = 1.0f;
+#endif

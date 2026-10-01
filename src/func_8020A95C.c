@@ -39,3 +39,16 @@ void func_8020A95C(void *arg0, void *arg1) {
         ((func_8020A95C_S1 *)(o))->unk240 = 1;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1C60_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6E20_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C1FD0_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2010_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1D30_4 = 1.0f;
+#endif

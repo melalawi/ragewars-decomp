@@ -122,3 +122,16 @@ void func_80213ED4(Source *src, Dest *dst) {
         }
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C2060_8 = 4294967296.0;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800C7220_8 = 4294967296.0;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C23D0_8 = 4294967296.0;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C2410_8 = 4294967296.0;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C2130_8 = 4294967296.0;
+#endif

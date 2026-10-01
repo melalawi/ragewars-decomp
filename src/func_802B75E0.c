@@ -53,3 +53,14 @@ s16 func_802B75E0(Pool *pool, void *owner) {
     }
     return -1;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800CC760_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C8100_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C8AD0_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C7510_4 = 1.0f;
+#endif

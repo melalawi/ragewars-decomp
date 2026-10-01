@@ -30,3 +30,16 @@ void func_8022D56C(void *arg0) {
         func_8044A4C0(arg0);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2CF4_4 = 7.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7EB4_4 = 7.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3068_4 = 7.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C30A8_4 = 7.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2DC4_4 = 7.5f;
+#endif

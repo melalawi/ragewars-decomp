@@ -101,3 +101,16 @@ void func_80203278(Player *player, Rider *rider, Result *result) {
         rider->target = 0;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1954_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6B14_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C1CC4_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C1D04_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1A24_4 = 0.5f;
+#endif

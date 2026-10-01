@@ -34,3 +34,26 @@ DFtype func_802C6970(DItype u)
 
   return (negate ? -d : d);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const double unbake_rodata_800C8020_8 = 4294967296.0;
+const double unbake_rodata_800C8028_8 = 65536.0;
+const double unbake_rodata_800C8030_8 = 4294967296.0;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800CD350_8 = 4294967296.0;
+const double unbake_rodata_800CD358_8 = 65536.0;
+const double unbake_rodata_800CD360_8 = 4294967296.0;
+#elif defined(VERSION_EU)
+const double unbake_rodata_800C8CF0_8 = 4294967296.0;
+const double unbake_rodata_800C8CF8_8 = 65536.0;
+const double unbake_rodata_800C8D00_8 = 4294967296.0;
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800C96C0_8 = 4294967296.0;
+const double unbake_rodata_800C96C8_8 = 65536.0;
+const double unbake_rodata_800C96D0_8 = 4294967296.0;
+#elif defined(VERSION_DE)
+const double unbake_rodata_800C8100_8 = 4294967296.0;
+const double unbake_rodata_800C8108_8 = 65536.0;
+const double unbake_rodata_800C8110_8 = 4294967296.0;
+#endif

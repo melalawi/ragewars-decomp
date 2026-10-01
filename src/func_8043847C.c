@@ -105,3 +105,12 @@ void func_8043847C(void) {
         widget->unk2C = (s32) *(s32 *)(&D_800E4200 + (D_800E5830->unk98 * 4));
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DE6B8_4[] = {0x00, 0x00, 0x00, 0x23};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E3A58_4[] = {0x00, 0x00, 0x00, 0x23};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800F0078_4[] = {0x00, 0x00, 0x00, 0x23};
+#endif

@@ -113,3 +113,16 @@ void *func_802A35C0(void *arg0, void *arg1, void *arg2) {
     }
     return temp_s2;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5CF0_4 = 0.00499999989f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CAF50_4 = 0.00499999989f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C6060_4 = 0.00499999989f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C60A0_4 = 0.00499999989f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5DC0_4 = 0.00499999989f;
+#endif

@@ -36,3 +36,21 @@ void func_802683F0(char *arg0, s32 arg1, s32 arg2, Triple arg3, Pair arg6)
         fire(arg0, arg1, arg2, arg3, arg6);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C43A0_4 = 76.7999954f;
+const float unbake_rodata_800C43A4_4 = 76.7999954f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9560_4 = 76.7999954f;
+const float unbake_rodata_800C9564_4 = 76.7999954f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4720_4 = 76.7999954f;
+const float unbake_rodata_800C4724_4 = 76.7999954f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4760_4 = 76.7999954f;
+const float unbake_rodata_800C4764_4 = 76.7999954f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4470_4 = 76.7999954f;
+const float unbake_rodata_800C4474_4 = 76.7999954f;
+#endif

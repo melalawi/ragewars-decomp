@@ -36,3 +36,26 @@ f32 func_8027266C(f32 *arg0) {
 return_zero:
     return zero;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C47E4_4 = (-1.0f);
+const float unbake_rodata_800C47E8_4 = 1.0f;
+const float unbake_rodata_800C47EC_4 = 1.57079637f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C99A4_4 = (-1.0f);
+const float unbake_rodata_800C99A8_4 = 1.0f;
+const float unbake_rodata_800C99AC_4 = 1.57079637f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4B64_4 = (-1.0f);
+const float unbake_rodata_800C4B68_4 = 1.0f;
+const float unbake_rodata_800C4B6C_4 = 1.57079637f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4BA4_4 = (-1.0f);
+const float unbake_rodata_800C4BA8_4 = 1.0f;
+const float unbake_rodata_800C4BAC_4 = 1.57079637f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C48B4_4 = (-1.0f);
+const float unbake_rodata_800C48B8_4 = 1.0f;
+const float unbake_rodata_800C48BC_4 = 1.57079637f;
+#endif

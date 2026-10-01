@@ -45,3 +45,16 @@ Vector3 func_8027230C(Vector3 *arg0, Vector3 *arg1, Vector3 *arg2) {
     result.z = n->z * dot;
     return result;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C47E0_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C99A0_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4B60_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4BA0_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C48B0_4 = 1.0f;
+#endif

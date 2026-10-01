@@ -107,3 +107,16 @@ void func_8026B9EC(void **resource, Owner *owner, s32 matrix, s32 segment, s32 l
         }
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DD504_4[] = {0x00, 0x00, 0x2C, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E28A4_4[] = {0x00, 0x00, 0x2C, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800EEEC4_4[] = {0x00, 0x00, 0x2C, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EA084_4[] = {0x00, 0x00, 0x2C, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800DE854_4[] = {0x00, 0x00, 0x2C, 0x00};
+#endif

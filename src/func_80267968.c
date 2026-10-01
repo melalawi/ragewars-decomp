@@ -70,3 +70,26 @@ void func_80267968(Player *target, Actor *actor, RiderTriple position, Vec3f dir
     point.c = 0;
     func_8028CE70(&D_8011FE88, player->views5E8.view698_37.emitter + 0x140, 3, point, *(&D_800C9538 + 1), D_800C9540);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4378_4 = 12.0f;
+const float unbake_rodata_800C437C_4 = 10.2399998f;
+const float unbake_rodata_800C4380_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9538_4 = 12.0f;
+const float unbake_rodata_800C953C_4 = 10.2399998f;
+const float unbake_rodata_800C9540_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C46F8_4 = 12.0f;
+const float unbake_rodata_800C46FC_4 = 10.2399998f;
+const float unbake_rodata_800C4700_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4738_4 = 12.0f;
+const float unbake_rodata_800C473C_4 = 10.2399998f;
+const float unbake_rodata_800C4740_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4448_4 = 12.0f;
+const float unbake_rodata_800C444C_4 = 10.2399998f;
+const float unbake_rodata_800C4450_4 = 1.0f;
+#endif

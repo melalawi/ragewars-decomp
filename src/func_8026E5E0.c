@@ -216,3 +216,26 @@ void func_8026E5E0(func_8026E5E0_S1 *arg0, s32 arg1, Transform *arg2, func_8026E
         } while (arg1 != -1);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C45E0_4 = 15.0f;
+const float unbake_rodata_800C45E4_4 = 5.0f;
+const float unbake_rodata_800C45E8_4 = 256.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C97A0_4 = 15.0f;
+const float unbake_rodata_800C97A4_4 = 5.0f;
+const float unbake_rodata_800C97A8_4 = 256.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4960_4 = 15.0f;
+const float unbake_rodata_800C4964_4 = 5.0f;
+const float unbake_rodata_800C4968_4 = 256.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C49A0_4 = 15.0f;
+const float unbake_rodata_800C49A4_4 = 5.0f;
+const float unbake_rodata_800C49A8_4 = 256.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C46B0_4 = 15.0f;
+const float unbake_rodata_800C46B4_4 = 5.0f;
+const float unbake_rodata_800C46B8_4 = 256.0f;
+#endif

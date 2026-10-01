@@ -131,3 +131,15 @@ void func_80231F5C(void *actor, void *arg1) {
     ((func_80231F5C_S3 *)(arg1))->unk13C = 1;
     ((func_80231F5C_S3 *)(arg1))->unk124 = 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2EF4_4 = 1.0f;
+const float unbake_rodata_800C2EF8_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C80B4_4 = 1.0f;
+const float unbake_rodata_800C80B8_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2FC4_4 = 1.0f;
+const float unbake_rodata_800C2FC8_4 = 1.0f;
+#endif

@@ -38,3 +38,16 @@ void func_802AA724(void *pTexture, void *pOpacity, float XPos, float YPos, int T
     }
     { Gfx *g=D_80110634++;g->words.w0=0xF1000000;g->words.w1=S16(dsdx,16)|S16(dtdy,0); }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C60E8_4 = 4.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CB348_4 = 4.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C6458_4 = 4.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C6498_4 = 4.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C61B8_4 = 4.0f;
+#endif

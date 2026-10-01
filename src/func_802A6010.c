@@ -61,3 +61,21 @@ Vec4 *func_802A6010(Vec4 *out, u32 bx, u32 by, u32 bz) {
     *out = result;
     return out;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5DB8_4 = 1.0f;
+const float unbake_rodata_800C5DBC_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CB018_4 = 1.0f;
+const float unbake_rodata_800CB01C_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C6128_4 = 1.0f;
+const float unbake_rodata_800C612C_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C6168_4 = 1.0f;
+const float unbake_rodata_800C616C_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5E88_4 = 1.0f;
+const float unbake_rodata_800C5E8C_4 = 0.5f;
+#endif

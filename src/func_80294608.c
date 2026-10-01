@@ -49,3 +49,8 @@ void func_80294608(void *arg0) {
     ((func_80294608_S1 *)(arg0))->unk26DB8 = 0xD;
     D_80154048 = 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800CA5C0_4 = 1.0f;
+#endif

@@ -51,3 +51,12 @@ void func_8042CE54(void)
     func_8042D5F8(0x269);
     func_8042D5F8(0x26E);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DFF82_4[] = {0x02, 0x3E, 0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E5322_4[] = {0x02, 0x3E, 0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800F1942_4[] = {0x02, 0x3E, 0x00, 0x00};
+#endif

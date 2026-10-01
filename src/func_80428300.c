@@ -19,3 +19,16 @@ s32 func_80428300(s32 id) {
     }
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DF2F4_2[] = {0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E4694_2[] = {0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800F0CB4_2[] = {0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800EBE94_2[] = {0x00, 0x00};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800E0644_2[] = {0x00, 0x00};
+#endif

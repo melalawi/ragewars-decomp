@@ -11,3 +11,8 @@ int func_8024E768(void *arg0) {
     }
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800FE204_3[] = {0x27, 0xC2, 0x00};
+#endif

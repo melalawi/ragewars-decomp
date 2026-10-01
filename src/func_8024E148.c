@@ -37,3 +37,16 @@ check_type:
 return_zero:
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned int unbake_rodata_800C3C08_24[] = {0x0024E158U, 0x0024E158U, 0x0024E18CU, 0x0024E18CU, 0x0024E158U, 0x0024E18CU, 0x0024E18CU, 0x0024E158U, 0x0024E158U};
+#elif defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800C8DC8_24[] = {0x0024E168U, 0x0024E168U, 0x0024E19CU, 0x0024E19CU, 0x0024E168U, 0x0024E19CU, 0x0024E19CU, 0x0024E168U, 0x0024E168U};
+#elif defined(VERSION_EU)
+const unsigned int unbake_rodata_800C3F88_24[] = {0x0024E188U, 0x0024E188U, 0x0024E1BCU, 0x0024E1BCU, 0x0024E188U, 0x0024E1BCU, 0x0024E1BCU, 0x0024E188U, 0x0024E188U};
+#elif defined(VERSION_EU_X)
+const unsigned int unbake_rodata_800C3FC8_24[] = {0x0024E1B8U, 0x0024E1B8U, 0x0024E1ECU, 0x0024E1ECU, 0x0024E1B8U, 0x0024E1ECU, 0x0024E1ECU, 0x0024E1B8U, 0x0024E1B8U};
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800C3CD8_24[] = {0x0024E178U, 0x0024E178U, 0x0024E1ACU, 0x0024E1ACU, 0x0024E178U, 0x0024E1ACU, 0x0024E1ACU, 0x0024E178U, 0x0024E178U};
+#endif

@@ -99,3 +99,8 @@ void func_80212E10(Actor *actor)
     func_80211020(bot);
     func_80208AAC(bot);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const float unbake_rodata_800C71C0_4 = 102.399994f;
+#endif

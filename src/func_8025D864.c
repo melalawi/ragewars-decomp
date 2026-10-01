@@ -50,3 +50,21 @@ void func_8025D864(void *arg0, s32 arg1) {
         *(f32 *)(o + 0x40) = k0;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3F28_4 = 1.0f;
+const float unbake_rodata_800C3F2C_4 = 125.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C90E8_4 = 1.0f;
+const float unbake_rodata_800C90EC_4 = 125.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C42A8_4 = 1.0f;
+const float unbake_rodata_800C42AC_4 = 125.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C42E8_4 = 1.0f;
+const float unbake_rodata_800C42EC_4 = 125.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3FF8_4 = 1.0f;
+const float unbake_rodata_800C3FFC_4 = 125.0f;
+#endif

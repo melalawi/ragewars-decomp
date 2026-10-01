@@ -76,3 +76,21 @@ Record *func_8041A300(s32 frameId, s32 itemId) {
     func_8040EE64(frame, result);
     return result;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800DC0F0_4 = 0.333333343f;
+const float unbake_rodata_800DC0F4_4 = 0.0500000007f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800E1470_4 = 0.333333343f;
+const float unbake_rodata_800E1474_4 = 0.0500000007f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800EDAC0_4 = 0.333333343f;
+const float unbake_rodata_800EDAC4_4 = 0.0500000007f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800E8C80_4 = 0.333333343f;
+const float unbake_rodata_800E8C84_4 = 0.0500000007f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800DD440_4 = 0.333333343f;
+const float unbake_rodata_800DD444_4 = 0.0500000007f;
+#endif

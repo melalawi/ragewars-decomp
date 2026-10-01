@@ -46,3 +46,16 @@ s32 func_8024642C(InstanceHdr *arg0, InstanceHdr *arg1) {
 
     return collisions == 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3758_4 = 0.800000012f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8918_4 = 0.800000012f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3AD8_4 = 0.800000012f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3B18_4 = 0.800000012f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3828_4 = 0.800000012f;
+#endif

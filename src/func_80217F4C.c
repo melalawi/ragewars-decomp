@@ -118,3 +118,36 @@ void func_80217F4C(Control *control, void *actor_arg, s32 arg2) {
         ? (control->value14 += D_800D2988 * *(f32 *)((char *)&D_800C7330 + 4))
         : (*(s32 *)(actor + 0x11B4) = 0);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2164_4 = 1.25f;
+const float unbake_rodata_800C2168_4 = 16.0f;
+const float unbake_rodata_800C216C_4 = 1.0f;
+const float unbake_rodata_800C2170_4 = 0.25f;
+const float unbake_rodata_800C2174_4 = 0.52359885f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7324_4 = 1.25f;
+const float unbake_rodata_800C7328_4 = 16.0f;
+const float unbake_rodata_800C732C_4 = 1.0f;
+const float unbake_rodata_800C7330_4 = 0.25f;
+const float unbake_rodata_800C7334_4 = 0.52359885f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C24D4_4 = 1.25f;
+const float unbake_rodata_800C24D8_4 = 16.0f;
+const float unbake_rodata_800C24DC_4 = 1.0f;
+const float unbake_rodata_800C24E0_4 = 0.25f;
+const float unbake_rodata_800C24E4_4 = 0.52359885f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2514_4 = 1.25f;
+const float unbake_rodata_800C2518_4 = 16.0f;
+const float unbake_rodata_800C251C_4 = 1.0f;
+const float unbake_rodata_800C2520_4 = 0.25f;
+const float unbake_rodata_800C2524_4 = 0.52359885f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2234_4 = 1.25f;
+const float unbake_rodata_800C2238_4 = 16.0f;
+const float unbake_rodata_800C223C_4 = 1.0f;
+const float unbake_rodata_800C2240_4 = 0.25f;
+const float unbake_rodata_800C2244_4 = 0.52359885f;
+#endif

@@ -65,3 +65,16 @@ FftTables *func_802C476C(s32 n) {
     tables->size = n;
     return tables;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C7BF0_4 = 6.28318548f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CCF20_4 = 6.28318548f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C88C0_4 = 6.28318548f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C9290_4 = 6.28318548f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C7CD0_4 = 6.28318548f;
+#endif

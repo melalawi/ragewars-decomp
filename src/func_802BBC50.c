@@ -72,3 +72,21 @@ void func_802BBC50(s32 *arg0) {
         inRow += 4;
     } while (i < 4);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C77A0_4 = 1.0f;
+const float unbake_rodata_800C77A4_4 = 65536.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CCAD0_4 = 1.0f;
+const float unbake_rodata_800CCAD4_4 = 65536.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C8470_4 = 1.0f;
+const float unbake_rodata_800C8474_4 = 65536.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C8E40_4 = 1.0f;
+const float unbake_rodata_800C8E44_4 = 65536.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C7880_4 = 1.0f;
+const float unbake_rodata_800C7884_4 = 65536.0f;
+#endif

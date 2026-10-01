@@ -38,3 +38,22 @@ void func_80245690(void) {
         ((func_80245690_S1 *)(record))->unk60 = 0;
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800DD33C_4 = 5.0f;
+const float unbake_rodata_800DD340_4 = 4.0f;
+#elif defined(VERSION_US_REV1)
+const double unbake_rodata_800E24C0_8 = 4294967296.0;
+const float unbake_rodata_800E24C8_4 = 0.0174532942f;
+const float unbake_rodata_800E24CC_4 = 1.0f;
+const float unbake_rodata_800E24D0_4 = 50.0f;
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800ED3F8_4[] = {0x20, 0x20, 0x20, 0x00};
+#elif defined(VERSION_EU_X)
+const double unbake_rodata_800E8470_8 = 4294967296.0;
+const float unbake_rodata_800E8478_4 = 2.14748365e+09f;
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800DDAF0_3[] = {0x25, 0x64, 0x00};
+const unsigned char unbake_rodata_800DDAF4_5[] = {0x25, 0x64, 0x25, 0x25, 0x00};
+#endif

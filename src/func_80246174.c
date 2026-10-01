@@ -50,3 +50,16 @@ void func_80246174(void *arg0) {
     ((func_80246174_S1 *)(arg0))->unk4C = 0;
     ((func_80246174_S1 *)(arg0))->unk48 = k;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3754_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8914_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3AD4_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3B14_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3824_4 = 1.0f;
+#endif

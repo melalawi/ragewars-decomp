@@ -27,3 +27,12 @@ s32 func_8043E924(struct Field *field) {
     }
     return 0;
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800D2A84_4[] = {0x80, 0x0D, 0x18, 0x18};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D7E04_4[] = {0x80, 0x0D, 0x6B, 0x98};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800D3DD8_4[] = {0x80, 0x0D, 0x2A, 0x74};
+#endif

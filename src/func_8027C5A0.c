@@ -110,3 +110,14 @@ void func_8027C5A0(void *arg0) {
         func_80284408(arg0);
     }
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800FE2B8_4[] = {0x00, 0x04, 0x18, 0x80};
+const unsigned char unbake_rodata_800FE2BC_4[] = {0x00, 0x83, 0x20, 0x21};
+const unsigned char unbake_rodata_800FE2C0_4[] = {0x00, 0x04, 0x18, 0xC0};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_801002B8_4[] = {0x11, 0x62, 0xF7, 0xD2};
+const unsigned char unbake_rodata_801002BC_4[] = {0xB2, 0xF7, 0x5D, 0x8A};
+const unsigned char unbake_rodata_801002C0_4[] = {0xD2, 0x8F, 0xF3, 0x2E};
+#endif

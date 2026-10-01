@@ -67,3 +67,16 @@ void func_80260570(void *arg0, s32 arg1, void *arg2) {
                   (char *)base + (((func_80260570_S1 *)(o))->unk10) * 4,
                   (char *)base + (((func_80260570_S1 *)(o))->unk14) * 4);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C409C_4 = 3.05185094e-05f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C925C_4 = 3.05185094e-05f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C441C_4 = 3.05185094e-05f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C445C_4 = 3.05185094e-05f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C416C_4 = 3.05185094e-05f;
+#endif

@@ -29,3 +29,16 @@ void func_802BBD3C(u8 *arg0) {
         arg0 += 0x10;
     } while (r < 4);
 }
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C77A8_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CCAD8_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C8478_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C8E48_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C7888_4 = 1.0f;
+#endif
