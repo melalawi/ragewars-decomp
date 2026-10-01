@@ -4,3 +4,4 @@ asm/
 tools/gcc-2.8.1-sn64/
 __pycache__/
 *.pyc
+/.env
