@@ -1954,7 +1954,7 @@ segments:
       - [0x07A0B0, c, func_80279530]
       - [0x07A0F8, c, func_80279578]
       - [0x07A140, c, func_802795C0]
-      - [0x07A1A0, asm, func_80279620]
+      - [0x07A1A0, c, func_80279620]
       - [0x07A22C, c, func_802796AC]
       - [0x07A2E4, c, func_80279764]
       - [0x07A388, c, func_80279808]
