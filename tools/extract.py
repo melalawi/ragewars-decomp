@@ -326,7 +326,14 @@ def extract(args: argparse.Namespace) -> None:
         config.write_text(text)
         options["base_path"] = str(staging)
         overlay.write_text("options:\n" + "".join(f"  {key}: {json.dumps(value)}\n" for key, value in options.items()))
-        subprocess.run([args.splat, "split", str(config), str(overlay)], check=True)
+        result = subprocess.run(
+            [args.splat, "split", str(config), str(overlay)],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+        )
+        if result.returncode:
+            sys.stderr.write(result.stdout.decode(errors="replace"))
+            raise subprocess.CalledProcessError(result.returncode, result.args)
         script = (staging / "layout.ld").read_text()
         rewritten, graph = inventory(script, staging, args.asm, args.src, compiler)
         rewritten = render_alignment(rewritten, alignments)

@@ -9491,3 +9491,4 @@ func_8044029C = 0x8044029C; // absolute:True
 func_8044ADF0 = 0x8044ADF0; // absolute:True
 func_843C0784 = 0x843C0784; // absolute:True
 func_8B4242CC = 0x8B4242CC; // absolute:True
+func_8022F49C = 0x8022F4AC;
