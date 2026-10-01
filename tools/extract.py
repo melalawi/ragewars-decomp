@@ -14,6 +14,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+from rodata import defer_bss
+
 
 def prepare_build(build: Path) -> None:
     """Publish a standalone build through the numbered generation directory."""
@@ -158,6 +160,17 @@ def unit_ranges(text: str) -> dict[str, dict[str, int]]:
                 "end": end,
                 "address": int(vram[1], 0) + rom_offset - int(start[1], 0),
             }
+    for block in blocks:
+        start = re.search(r"^    start: (\S+)", block, re.M)
+        vram = re.search(r"^    vram: (\S+)", block, re.M)
+        if not start or not vram:
+            continue
+        for offset, name in re.findall(
+            r"^      - \[\s*(0x[\da-fA-F]+|\d+)\s*,\s*\.rodata\s*,\s*([^,\]]+)", block, re.M
+        ):
+            unit = Path(scalar(name)).name
+            if unit in found:
+                found[unit]["rodata_address"] = int(vram[1], 0) + int(offset, 0) - int(start[1], 0)
     return found
 
 
@@ -240,8 +253,6 @@ def inventory(script: str, staging: Path, asm: Path, src: Path, compiler: str) -
         return str(obj)
 
     rewritten = pattern.sub(replace, script)
-    if compiler == "sn64":
-        rewritten = rewritten.replace("(.rodata)", "(.rdata)")
     if not seen:
         raise ValueError("splat linker script names no .s.o, .c.o, or .bin.o objects")
     lines = [f"{kind}_OBJECTS := {' '.join(objects)}" for kind, objects in groups.items()]
@@ -288,7 +299,14 @@ def extract(args: argparse.Namespace) -> None:
     recipe = json.loads(args.recipe.read_text())
     compiler = recipe["compilers"][recipe["assembly_compiler"]]["kind"] if recipe["assembly_compiler"] else "ido"
     digest = hashlib.sha256()
-    for path in (args.baserom, args.split, args.symbols, args.recipe, Path(__file__)):
+    for path in (
+        args.baserom,
+        args.split,
+        args.symbols,
+        args.recipe,
+        Path(__file__),
+        Path(__file__).with_name("rodata.py"),
+    ):
         content = path.read_bytes()
         digest.update(len(content).to_bytes(8, "big"))
         digest.update(content)
@@ -334,7 +352,7 @@ def extract(args: argparse.Namespace) -> None:
         if result.returncode:
             sys.stderr.write(result.stdout.decode(errors="replace"))
             raise subprocess.CalledProcessError(result.returncode, result.args)
-        script = (staging / "layout.ld").read_text()
+        script = defer_bss((staging / "layout.ld").read_text())
         rewritten, graph = inventory(script, staging, args.asm, args.src, compiler)
         rewritten = render_alignment(rewritten, alignments)
         for directory in ("asm", "assets", "include"):

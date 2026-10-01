@@ -10,7 +10,7 @@
   "assembly_compiler": null,
   "compilers": {
     "gcc-2.8.1-sn64": {
-      "as": "tools/gcc-2.8.1-sn64/asn64.exe",
+      "as": "policy:mips_as",
       "cc": "tools/gcc-2.8.1-sn64/cc1",
       "cflags": [
         "-G0",
@@ -24,9 +24,7 @@
         "-mfp64",
         "-mno-fix4300"
       ],
-      "kind": "sn64",
-      "obj_parser": "tools/gcc-2.8.1-sn64/psyq-obj-parser",
-      "wibo": "tools/gcc-2.8.1-sn64/wibo"
+      "kind": "sn64"
     }
   },
   "cpp": "policy:cpp",

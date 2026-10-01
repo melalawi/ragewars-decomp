@@ -5,3 +5,7 @@ tools/gcc-2.8.1-sn64/
 __pycache__/
 *.pyc
 /.env
+*.py[cod]
+/.splat/
+/.unbake/
+/tools/clone-policy.toml
