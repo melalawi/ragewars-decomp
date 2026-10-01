@@ -3,6 +3,7 @@
 
 #include "basetypes.h"
 #include "player_types.h"
+#include "n64sdk.h"
 
 /* Axis-aligned box around a point. */
 typedef struct Shared_Bounds Shared_Bounds;
@@ -159,6 +160,13 @@ struct Shared_ParticleView {
     Matrix viewMtx; /* +0x220: src/func_8027ED40.c */
     char pad260[0x2C8];
     f32 fadeRange; /* +0x528: src/func_8027ED40.c */
+};
+
+/* Per-frame display list state (D_8011FE80). */
+typedef struct Shared_DisplayFrame Shared_DisplayFrame;
+struct Shared_DisplayFrame {
+    char pad0[0x114];
+    Gfx *commands; /* +0x114: src/func_8027ED40.c */
 };
 
 /* Output of func_80296F7C: frame count and the current frame record. */
