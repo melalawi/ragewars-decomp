@@ -1,5 +1,5 @@
 #include "basetypes.h"
-#include "../include/shared/particle.h"
+#include "shared/particle.h"
 
 /* Draws one particle for a view: fades particles hidden behind geometry in or out, blends its colours towards the
  * descriptor's targets (greyscale for views that ask for it), picks the animation frame, builds its matrix (once per

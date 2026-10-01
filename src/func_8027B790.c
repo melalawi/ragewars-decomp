@@ -1,6 +1,6 @@
 #include "basetypes.h"
-#include "../include/shared/player.h"
-#include "../include/shared/particle.h"
+#include "shared/player.h"
+#include "shared/particle.h"
 
 /* Updates a particle for one frame: halves the frame step for particles owned by a slowed object, measures its bounding
  * box, kills it or bounces it off its target when its type's rule says so (the German cartridge has a gentler rule
