@@ -1,16 +1,7 @@
-#ifdef NON_MATCHING
+#include "basetypes.h"
+#include "shared/player_types.h"
+#include "shared/func_8026e5e0.h"
 /* Dispatches enabled bone attachment events and spawns effects at their transformed positions. */
-typedef signed char s8;
-typedef unsigned char u8;
-typedef signed short s16;
-typedef unsigned short u16;
-typedef signed int s32;
-typedef unsigned int u32;
-typedef signed long long s64;
-typedef unsigned long long u64;
-typedef float f32;
-typedef double f64;
-#define NULL ((void *)0)
 /* The values func_8026E5E0 loads by address:
  * 0x800C97A0 = 15.0 (float, D_800C97A0 in this cartridge's tables)
  * 0x800C97A4 = 5.0 (float, D_800C97A4 in this cartridge's tables)
@@ -19,82 +10,29 @@ typedef double f64;
 f32 func_8024BF14(void *);
 void func_8027200C(void *, void *, f32);
 void func_80272908(void *, void *, void *);
-typedef struct { s32 x, y, z; } Triple;
-typedef struct { s32 x, y, z, w; } Quad;
-typedef struct { s32 x, y; } Pair;
 void func_80216288(void *, s32, Triple, ...);
 void func_8024E78C(void *, Triple, Triple *, s32 *, s32, s32);
-void func_80265E30(void *, void *, s32, s32, Triple, Pair);
-void func_80271888(Quad *, Triple *);
-s32 func_80280094(void *, void *, void *, s32, s32, s32, Triple, Quad, Triple, s32, s32, s32);
+void func_80265E30(void *, void *, s32, s32, Triple, Func_8026E5E0_Pair);
+void func_80271888(Func_8026E5E0_Quad *, Triple *);
+s32 func_80280094(void *, void *, void *, s32, s32, s32, Triple, Func_8026E5E0_Quad, Triple, s32, s32, s32);
 extern char D_80121990;
 #if defined(VERSION_US)
-#define D_800C97A0 D_800C45E0
-#define D_800C97A4 D_800C45E4
-#define D_800C97A8 D_800C45E8
+extern f32 D_800C45E0, D_800C45E4, D_800C45E8;
 #elif defined(VERSION_EU)
-#define D_800C97A0 D_800C4960
-#define D_800C97A4 D_800C4964
-#define D_800C97A8 D_800C4968
+extern f32 D_800C4960, D_800C4964, D_800C4968;
 #elif defined(VERSION_EU_X)
-#define D_800C97A0 D_800C49A0
-#define D_800C97A4 D_800C49A4
-#define D_800C97A8 D_800C49A8
+extern f32 D_800C49A0, D_800C49A4, D_800C49A8;
 #elif defined(VERSION_DE)
-#define D_800C97A0 D_800C46B0
-#define D_800C97A4 D_800C46B4
-#define D_800C97A8 D_800C46B8
-#endif
+extern f32 D_800C46B0, D_800C46B4, D_800C46B8;
+#else
 extern f32 D_800C97A0, D_800C97A4, D_800C97A8;
-
-typedef struct func_8026E5E0_S1 func_8026E5E0_S1;
-typedef struct func_8026E5E0_S2 func_8026E5E0_S2;
-typedef struct func_8026E5E0_S3 func_8026E5E0_S3;
-typedef struct func_8026E5E0_S4 func_8026E5E0_S4;
-struct func_8026E5E0_S1 {
-    char pad0[0xC];
-    u32 unkC;
-    u16 bone;
-    u16 reserved;
-};
-struct func_8026E5E0_S2 {
-    u32 unk0;
-    u16 unk4;
-    char pad4[0xE];
-};
-struct func_8026E5E0_S3 {
-    char pad0[0x18];
-    s32* unk18;
-    char pad18[0x188];
-    s8 unk1A4;
-    char pad1A4[0xB];
-    f32 unk1B0;
-    char pad1B0[0x24];
-    func_8026E5E0_S4 * unk1D8;
-    char pad1D8[0x6C];
-    Triple unk248;
-    Triple unk254;
-    Triple unk260;
-    char pad268[0x74];
-    s32 unk2E0;
-};
-typedef struct {
-    s32 stride;
-    u8 pad4[0x6A];
-    u8 bytes[1];
-} AttachmentTable;
-struct func_8026E5E0_S4 {
-    char pad0[0x650];
-    s16 unk650;
-};
-
-typedef struct { f32 elements[4][4]; } Transform;
+#endif
 
 void func_8026E5E0(func_8026E5E0_S1 *arg0, s32 arg1, Transform *arg2, func_8026E5E0_S3 *arg3, AttachmentTable *arg4) {
     Triple pos;
     Triple mapped;
     Triple zero;
-    Quad rotation;
+    Func_8026E5E0_Quad rotation;
     struct { s16 a, b; s8 c, d, e, f; } params;
     s32 room;
     f32 temp_f0;
@@ -110,8 +48,8 @@ void func_8026E5E0(func_8026E5E0_S1 *arg0, s32 arg1, Transform *arg2, func_8026E
 
     arg1 = arg1 - 1;
     if (arg1 != -1) {
-        var_s3 = (void *)&arg0->unkC;
         do {
+            var_s3 = (void *)&arg0->unkC;
             if (var_s3->unk0 & arg3->unk2E0) {
                 temp_a0 = var_s3->unk4;
                 /* FAKEMATCH: index-first notation preserves the table addition operand order. */
@@ -144,7 +82,19 @@ void func_8026E5E0(func_8026E5E0_S1 *arg0, s32 arg1, Transform *arg2, func_8026E
                         zero.x = 0;
                         zero.y = 0;
                         zero.z = 0;
-                        if (arg3->unk1B0 < D_800C97A0) {
+                        if (arg3->unk1B0 <
+#if defined(VERSION_US)
+                            D_800C45E0
+#elif defined(VERSION_EU)
+                            D_800C4960
+#elif defined(VERSION_EU_X)
+                            D_800C49A0
+#elif defined(VERSION_DE)
+                            D_800C46B0
+#else
+                            D_800C97A0
+#endif
+                        ) {
                             func_80280094(&D_80121990, arg3, arg3, 0, 0, 0xE6, zero, rotation, mapped, 0, -1, temp_s0 | 1);
                         }
                         func_80280094(&D_80121990, arg3, arg3, 0, 0, 0x8A, zero, rotation, mapped, 0, -1, temp_s0 | 1);
@@ -233,19 +183,36 @@ void func_8026E5E0(func_8026E5E0_S1 *arg0, s32 arg1, Transform *arg2, func_8026E
                     params.e = 0;
                     params.d = 0;
                     params.c = 0;
+#if defined(VERSION_US)
+                    ratio = D_800C45E4;
+#elif defined(VERSION_EU)
+                    ratio = D_800C4964;
+#elif defined(VERSION_EU_X)
+                    ratio = D_800C49A4;
+#elif defined(VERSION_DE)
+                    ratio = D_800C46B4;
+#else
                     ratio = D_800C97A4;
+#endif
+#if defined(VERSION_US)
+                    scale = D_800C45E8;
+#elif defined(VERSION_EU)
+                    scale = D_800C4968;
+#elif defined(VERSION_EU_X)
+                    scale = D_800C49A8;
+#elif defined(VERSION_DE)
+                    scale = D_800C46B8;
+#else
                     scale = D_800C97A8;
+#endif
                     ratio /= temp_f0;
                     ratio *= scale;
                     params.a = (s16) (s32) ratio;
-                    func_80265E30(arg3, arg3, 3, -1, pos, *(Pair *)&params);
+                    func_80265E30(arg3, arg3, 3, -1, pos, *(Func_8026E5E0_Pair *)&params);
                 }
             }
-            var_s3++;
-            arg1 -= 1;
             arg0++;
+            arg1 -= 1;
         } while (arg1 != -1);
     }
 }
-
-#endif

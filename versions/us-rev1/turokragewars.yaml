@@ -1790,7 +1790,7 @@ segments:
       - [0x06F0F8, c, func_8026E4F8]
       - [0x06F140, c, func_8026E540]
       - [0x06F1DC, asm, func_8026E5DC]
-      - [0x06F1E0, asm, func_8026E5E0]
+      - [0x06F1E0, c, func_8026E5E0]
       - [0x06FA90, c, func_8026EE90]
       - [0x06FBC8, c, func_8026EFC8]
       - [0x06FFD8, c, func_8026F3D8]
