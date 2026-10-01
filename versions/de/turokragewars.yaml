@@ -548,7 +548,7 @@ segments:
       - [0x02B528, c, func_8022A918]
       - [0x02B540, c, func_8022A930]
       - [0x02B55C, c, func_8022A94C]
-      - [0x02B644, asm, func_8022AA34]
+      - [0x02B644, c, func_8022AA34]
       - [0x02B69C, c, func_8022AA8C]
       - [0x02B6D4, c, func_8022AAC4]
       - [0x02B720, c, func_8022AB10]

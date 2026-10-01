@@ -552,7 +552,7 @@ segments:
       - [0x02B768, c, func_8022A918]
       - [0x02B780, c, func_8022A930]
       - [0x02B79C, c, func_8022A94C]
-      - [0x02B884, asm, func_8022AA34]
+      - [0x02B884, c, func_8022AA34]
       - [0x02B8DC, c, func_8022AA8C]
       - [0x02B914, c, func_8022AAC4]
       - [0x02B960, c, func_8022AB10]
