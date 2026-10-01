@@ -1,18 +1,18 @@
 {
   "measures": {
-    "fuzzy_match_percent": 74.70606,
+    "fuzzy_match_percent": 74.71671,
     "total_code": 1089312,
-    "matched_code": 794284,
-    "matched_code_percent": 72.916115,
+    "matched_code": 794400,
+    "matched_code_percent": 72.926765,
     "matched_data_percent": 100.0,
     "total_functions": 4326,
-    "matched_functions": 3769,
-    "matched_functions_percent": 87.12437,
-    "complete_code": 791996,
-    "complete_code_percent": 72.70607,
+    "matched_functions": 3770,
+    "matched_functions_percent": 87.147484,
+    "complete_code": 792112,
+    "complete_code_percent": 72.71673,
     "complete_data_percent": 100.0,
     "total_units": 4302,
-    "complete_units": 3759
+    "complete_units": 3760
   },
   "units": [
     {
@@ -116917,37 +116917,40 @@
     {
       "name": "func_804037E8",
       "measures": {
+        "fuzzy_match_percent": 100.0,
         "total_code": "116",
+        "matched_code": "116",
+        "matched_code_percent": 100.0,
         "matched_data_percent": 100.0,
         "total_functions": 1,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "116",
+        "complete_code_percent": 100.0,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "complete_units": 1
       },
       "sections": [
         {
-          "name": ".bss",
-          "metadata": {}
-        },
-        {
-          "name": ".data",
-          "metadata": {}
-        },
-        {
           "name": ".text",
           "size": "116",
+          "fuzzy_match_percent": 100.0,
           "metadata": {}
         }
       ],
       "functions": [
         {
-          "name": "func_804037E8_auto",
+          "name": "func_804037E8",
           "size": "116",
+          "fuzzy_match_percent": 100.0,
           "metadata": {},
           "address": "0"
         }
       ],
       "metadata": {
-        "complete": false
+        "complete": true,
+        "source_path": "src/func_804037E8.c"
       }
     },
     {

@@ -3181,7 +3181,7 @@ segments:
       - [0x0F3458, c, func_80403458]
       - [0x0F3658, asm, func_80403658]
       - [0x0F37D4, c, func_804037D4]
-      - [0x0F37E8, asm, func_804037E8]
+      - [0x0F37E8, c, func_804037E8]
       - [0x0F385C, c, func_8040385C]
       - [0x0F390C, c, func_8040390C]
       - [0x0F39C4, c, func_804039C4]

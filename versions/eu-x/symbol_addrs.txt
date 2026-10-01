@@ -9742,3 +9742,5 @@ func_80276D10 = 0x80276D10; // absolute:True
 func_80291948 = 0x80291948; // absolute:True
 func_80405DD0 = 0x80405DD0; // absolute:True
 func_8044C1F0 = 0x8044C1F0; // absolute:True
+func_804030E0 = 0x804030E0; // type:func size:0x120
+func_804037E8 = 0x804037E8;
