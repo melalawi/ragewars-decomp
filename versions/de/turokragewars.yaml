@@ -3532,7 +3532,7 @@ segments:
       - [0x17ACCC, asm, func_80414D4C]
       - [0x17BC1C, asm, func_80415C1C]
       - [0x17BC84, data, func_80415C84]
-      - [0x17BC90, asm, func_80415D10]
+      - [0x17BC90, c, func_80415D10]
       - [0x17CCF4, c, func_80416D74]
       - [0x17CECC, c, func_80416F4C]
       - [0x17D034, c, func_804170B4]

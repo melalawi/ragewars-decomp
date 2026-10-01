@@ -3523,7 +3523,7 @@ segments:
       - [0x10510C, asm, func_80414D4C]
       - [0x10605C, asm, func_8041605C]
       - [0x1060C4, asm, func_80415D04]
-      - [0x1060D0, asm, func_80415D10]
+      - [0x1060D0, c, func_80415D10]
       - [0x107134, c, func_80416D74]
       - [0x10730C, c, func_80416F4C]
       - [0x107474, c, func_804170B4]

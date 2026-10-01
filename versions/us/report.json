@@ -1,18 +1,18 @@
 {
   "measures": {
-    "fuzzy_match_percent": 74.20299,
+    "fuzzy_match_percent": 74.58819,
     "total_code": 1089312,
-    "matched_code": 788804,
-    "matched_code_percent": 72.41305,
+    "matched_code": 793000,
+    "matched_code_percent": 72.79825,
     "matched_data_percent": 100.0,
     "total_functions": 4326,
-    "matched_functions": 3767,
-    "matched_functions_percent": 87.07813,
-    "complete_code": 786516,
-    "complete_code_percent": 72.203,
+    "matched_functions": 3768,
+    "matched_functions_percent": 87.10125,
+    "complete_code": 790712,
+    "complete_code_percent": 72.5882,
     "complete_data_percent": 100.0,
     "total_units": 4302,
-    "complete_units": 3757
+    "complete_units": 3758
   },
   "units": [
     {
@@ -130023,37 +130023,39 @@
     {
       "name": "func_80415D10",
       "measures": {
+        "fuzzy_match_percent": 100.0,
         "total_code": "4196",
+        "matched_code": "4196",
+        "matched_code_percent": 100.0,
         "matched_data_percent": 100.0,
         "total_functions": 1,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "4196",
+        "complete_code_percent": 100.0,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "complete_units": 1
       },
       "sections": [
         {
-          "name": ".bss",
-          "metadata": {}
-        },
-        {
-          "name": ".data",
-          "metadata": {}
-        },
-        {
           "name": ".text",
           "size": "4196",
+          "fuzzy_match_percent": 100.0,
           "metadata": {}
         }
       ],
       "functions": [
         {
-          "name": "func_80415D10_auto",
+          "name": "func_80415D10",
           "size": "4196",
+          "fuzzy_match_percent": 100.0,
           "metadata": {},
           "address": "0"
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "source_path": "src/func_80415D10.c"
       }
     },
