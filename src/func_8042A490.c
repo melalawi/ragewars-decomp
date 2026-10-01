@@ -1,16 +1,16 @@
-#ifdef NON_MATCHING
+#include "shared/menu_transition.h"
+#include "basetypes.h"
 /* Advances the menu transition state and updates its visual effects. */
-typedef signed char s8;
-typedef unsigned char u8;
-typedef signed short s16;
-typedef unsigned short u16;
-typedef signed int s32;
-typedef unsigned int u32;
-typedef signed long long s64;
-typedef unsigned long long u64;
-typedef float f32;
-typedef double f64;
-#define NULL ((void *)0)
+
+
+
+
+
+
+
+
+
+
 /* The values func_8042A490 loads by address:
  * 0x800E1AF4 = 0.0033333334 (float, D_800E1AF4 in this cartridge's tables)
  * 0x800E1AF8 = 100.0 (float, D_800E1AF8 in this cartridge's tables)
@@ -34,70 +34,24 @@ void func_8042A994(s32);
 void func_8042B4C4(void);
 void func_8042EB68(s32);
 void func_80299368(s32);
-typedef struct { s32 selection; s32 trigger; } MenuTransitionSignal;
+
 extern MenuTransitionSignal D_80154020;
-typedef struct func_8042A490_S2 func_8042A490_S2;
-typedef struct func_8042A490_S3 func_8042A490_S3;
-typedef struct func_8042A490_S4 func_8042A490_S4;
-typedef struct func_8042A490_S5 func_8042A490_S5;
-typedef struct func_8042A490_S6 func_8042A490_S6;
-typedef struct func_8042A490_S7 func_8042A490_S7;
-typedef struct func_8042A490_S8 func_8042A490_S8;
-typedef struct func_8042A490_S9 func_8042A490_S9;
-struct func_8042A490_S2 {
-    char pad0[0x3CC];
-    void* unk3CC;
-    char pad3CC[0x2];
-    u16 unk3D2;
-    void* unk3D4;
-    char pad3D4[0x2];
-    u16 unk3DA;
-    s32 unk3DC;
-    s32 unk3E0;
-    void* unk3E4;
-    void* unk3E8;
-    void* unk3EC;
-    void* unk3F0;
-    char pad3F0[0x44];
-    s32 unk438;
-    void* unk43C;
-    void* unk440;
-    void* unk444;
-    void* unk448;
-    func_8042A490_S3 * unk44C;
-    char pad44C[0x8];
-    void* unk458;
-    s32 unk45C;
-    s32 unk460;
-};
-struct func_8042A490_S3 {
-    char pad0[0x10];
-    u8 unk10;
-};
-struct func_8042A490_S4 {
-    char pad0[0x14];
-    u16 unk14;
-};
-struct func_8042A490_S5 {
-    char pad0[0x14];
-    u16 unk14;
-};
-struct func_8042A490_S6 {
-    char pad0[0x10];
-    s8 unk10;
-};
-struct func_8042A490_S7 {
-    char pad0[0x14];
-    u16 unk14;
-};
-struct func_8042A490_S8 {
-    char pad0[0x14];
-    u16 unk14;
-};
-struct func_8042A490_S9 {
-    char pad0[0x10];
-    u8 unk10;
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 extern func_8042A490_S2 *D_800E4F60;
 
@@ -180,7 +134,7 @@ block_7:
             var_a1 = 0;
             var_a0_3 = D_800E4F60->unk458;
             D_800E4F60->unk460 = 1;
-            goto block_28;
+            func_8040E958(var_a0_3, var_a1);
         }
         break;
     case 4:
@@ -231,16 +185,12 @@ block_7:
         var_a1 = 1;
         if (D_800E4F60->unk438 == 0) {
             var_a0_3 = D_800E4F60->unk448;
-            goto block_28;
+            func_8040E958(var_a0_3, var_a1);
         }
         break;
     default:
         break;
     }
-    goto block_after_28;
-block_28:
-    func_8040E958(var_a0_3, var_a1);
-block_after_28:
     if (D_800E4F60->unk3DC == 3) {
             temp_a2 = D_800E4F60->unk45C + arg2;
             D_800E4F60->unk45C = temp_a2;
@@ -259,4 +209,3 @@ block_after_28:
         return 0;
 }
 
-#endif

@@ -1,18 +1,18 @@
 {
   "measures": {
-    "fuzzy_match_percent": 76.508446,
+    "fuzzy_match_percent": 76.62171,
     "total_code": 1133620,
-    "matched_code": 833232,
-    "matched_code_percent": 73.50188,
+    "matched_code": 834516,
+    "matched_code_percent": 73.61514,
     "matched_data_percent": 100.0,
     "total_functions": 4635,
-    "matched_functions": 3956,
-    "matched_functions_percent": 85.35059,
-    "complete_code": 833232,
-    "complete_code_percent": 73.50188,
+    "matched_functions": 3957,
+    "matched_functions_percent": 85.37217,
+    "complete_code": 834516,
+    "complete_code_percent": 73.61514,
     "complete_data_percent": 100.0,
     "total_units": 4617,
-    "complete_units": 3956
+    "complete_units": 3957
   },
   "units": [
     {
@@ -152435,37 +152435,39 @@
     {
       "name": "func_8042A490",
       "measures": {
+        "fuzzy_match_percent": 100.0,
         "total_code": "1284",
+        "matched_code": "1284",
+        "matched_code_percent": 100.0,
         "matched_data_percent": 100.0,
         "total_functions": 1,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "1284",
+        "complete_code_percent": 100.0,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "complete_units": 1
       },
       "sections": [
         {
-          "name": ".bss",
-          "metadata": {}
-        },
-        {
-          "name": ".data",
-          "metadata": {}
-        },
-        {
           "name": ".text",
           "size": "1284",
+          "fuzzy_match_percent": 100.0,
           "metadata": {}
         }
       ],
       "functions": [
         {
-          "name": "func_8042A490_auto",
+          "name": "func_8042A490",
           "size": "1284",
+          "fuzzy_match_percent": 100.0,
           "metadata": {},
           "address": "0"
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "source_path": "src/func_8042A490.c"
       }
     },
