@@ -120,7 +120,13 @@ def unit_addresses(text: str) -> dict[str, int]:
             if not in_code or start is None or vram is None:
                 raise ValueError("split code segment requires type, start, vram before subsegments")
             rom, _, name = row.groups()
-            found[Path(scalar(name)).name] = vram + int(rom, 0) - start
+            name = Path(scalar(name)).name
+            if not re.fullmatch(r"[A-Za-z_.$][\w.$]*", name):
+                raise ValueError(f"invalid split unit symbol {name}")
+            address = vram + int(rom, 0) - start
+            if name in found and found[name] != address:
+                raise ValueError(f"conflicting split unit symbol {name}")
+            found[name] = address
     return found
 
 
@@ -336,6 +342,11 @@ def extract(args: argparse.Namespace) -> None:
         symbol_dump = staging / ".splat" / "splat_symbols.csv"
         publish(args.build / "splat_symbols.csv", symbol_dump.read_bytes())
         committed = discovered_symbols(symbol_dump, symbols_from(tables))
+        units = unit_addresses(text)
+        for name, address in units.items():
+            if name in committed and committed[name] != address:
+                raise ValueError(f"split and symbols disagree for {name}")
+            committed[name] = address
         definitions = "".join(f"PROVIDE({name} = 0x{address:08X});\n" for name, address in sorted(committed.items()))
         publish(args.build / "committed_symbols.ld", definitions.encode())
         link_scripts = ["$(BUILD)/committed_symbols.ld"]
@@ -350,7 +361,6 @@ def extract(args: argparse.Namespace) -> None:
             publish(args.build / filename, path.read_bytes())
             link_scripts.append("$(BUILD)/" + filename)
         symbols = symbols_from(tables)
-        units = unit_addresses(text)
         for name, address in units.items():
             if name in symbols and symbols[name] != address:
                 raise ValueError(f"split and symbols disagree for {name}")
