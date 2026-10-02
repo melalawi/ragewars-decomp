@@ -1,3 +1,5 @@
+#include "basetypes.h"
+#include "n64sdk.h"
 #include "shared/gfx.h"
 #include "shared/renderswitches.h"
 /* Clips a textured screen rectangle to the viewport and emits the matching render commands. */
@@ -12,7 +14,7 @@ void func_804170B4(s32);
 void func_804192F8(s32, s32, s32, s32, f32, f32, f32, f32);
 void func_80415D10(f32, f32, f32, f32, u32, u32, u32, u32); /* extern */
 void func_80418224(s32, s32, s32, s32, f32, f32, f32, f32); /* extern */
-typedef Shared_Gfx Gfx;
+
 extern Gfx *D_80110634;
 typedef Shared_RenderSwitches RenderSwitches;
 extern RenderSwitches D_80153F60;
@@ -27,8 +29,8 @@ extern s32 D_800E32E4;
 
 static inline void emit(u32 w0, u32 w1) {
     Gfx *cmd = D_80110634++;
-    cmd->words_w0 = w0;
-    cmd->words_w1 = w1;
+    cmd->words.w0 = w0;
+    cmd->words.w1 = w1;
 }
 
 /* Clips a textured screen region and emits the render commands for its visible area. */

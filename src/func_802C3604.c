@@ -1,88 +1,22 @@
+#include "shared/func_802c31c0.h"
+#include "shared/func_802bae40.h"
+#include "shared/audio_callbacks.h"
+#include "unbake_abi.h"
+#include "shared/acmd.h"
 /* alRaw16Pull, drafted from ultralib src/audio/load.c: DMA raw 16-bit samples into DMEM at 8-byte
    alignment for the requested output count, restarting from the loop start and merging the
    sections in DMEM when the count crosses the loop end, and clearing what runs past the table. */
 #include "basetypes.h"
 
-typedef struct {
-    unsigned int w0;
-    unsigned int w1;
-} Awords;
-
-typedef union {
-    Awords words;
-    long long int force_union_align;
-} Acmd;
-
-#define _SHIFTL(v, s, w) ((unsigned int)(((unsigned int)(v) & ((0x01 << (w)) - 1)) << (s)))
 #define MIN(a, b) (((a) < (b)) ? (a) : (b))
 
-#define aClearBuffer(pkt, d, c)                                         \
-    {                                                                   \
-        Acmd *_a = (Acmd *)pkt;                                         \
-        _a->words.w0 = _SHIFTL(2, 24, 8) | _SHIFTL(d, 0, 24);           \
-        _a->words.w1 = (unsigned int)(c);                               \
-    }
 
-#define aLoadBuffer(pkt, s)                                             \
-    {                                                                   \
-        Acmd *_a = (Acmd *)pkt;                                         \
-        _a->words.w0 = _SHIFTL(4, 24, 8);                               \
-        _a->words.w1 = (unsigned int)(s);                               \
-    }
 
-#define aSetBuffer(pkt, f, i, o, c)                                     \
-    {                                                                   \
-        Acmd *_a = (Acmd *)pkt;                                         \
-        _a->words.w0 = (_SHIFTL(8, 24, 8) | _SHIFTL(f, 16, 8) |         \
-                        _SHIFTL(i, 0, 16));                             \
-        _a->words.w1 = _SHIFTL(o, 16, 16) | _SHIFTL(c, 0, 16);          \
-    }
 
-#define aDMEMMove(pkt, i, o, c)                                         \
-    {                                                                   \
-        Acmd *_a = (Acmd *)pkt;                                         \
-        _a->words.w0 = _SHIFTL(10, 24, 8) | _SHIFTL(i, 0, 24);          \
-        _a->words.w1 = _SHIFTL(o, 16, 16) | _SHIFTL(c, 0, 16);          \
-    }
 
-typedef s32 (*ALDMAproc)(s32 addr, s32 len, void *state);
 
-typedef struct {
-    u32 start;
-    u32 end;
-    u32 count;
-} ALRawLoop;
 
-typedef struct ALWaveTable_s {
-    u8 *base;
-    s32 len;
-    u8 type;
-    u8 flags;
-} ALWaveTable;
 
-typedef struct ALFilter_s {
-    struct ALFilter_s *source;
-    void *handler;
-    void *setParam;
-    s16 inp;
-    s16 outp;
-    s32 type;
-} ALFilter;
-
-typedef struct {
-    ALFilter filter;
-    void *state;
-    void *lstate;
-    ALRawLoop loop;
-    ALWaveTable *table;
-    s32 bookSize;
-    ALDMAproc dma;
-    void *dmaState;
-    s32 sample;
-    s32 lastsam;
-    s32 first;
-    s32 memin;
-} ALLoadFilter;
 
 Acmd *func_802C3604(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, Acmd *p)
 {

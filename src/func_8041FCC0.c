@@ -1,48 +1,16 @@
+#include "shared/func_8041fcc0.h"
+#include "unbake_gbi.h"
 #include "basetypes.h"
-
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
+#include "n64sdk.h"
 
 #define G_SETSCISSOR 0xED
 #define G_SC_NON_INTERLACE 0
-#define _SHIFTL(v, s, w) ((u32)(((u32)(v) & ((1 << (w)) - 1)) << (s)))
 
-#define gDPSetScissor(pkt, mode, ulx, uly, lrx, lry)                       \
-    {                                                                      \
-        Gfx *_g = (Gfx *)(pkt);                                            \
-        _g->w0 = _SHIFTL(G_SETSCISSOR, 24, 8) |                            \
-                 _SHIFTL((s32)((f32)(ulx) * 4.0f), 12, 12) |               \
-                 _SHIFTL((s32)((f32)(uly) * 4.0f), 0, 12);                 \
-        _g->w1 = _SHIFTL(mode, 24, 2) |                                    \
-                 _SHIFTL((s32)((f32)(lrx) * 4.0f), 12, 12) |               \
-                 _SHIFTL((s32)((f32)(lry) * 4.0f), 0, 12);                 \
-    }
 
-struct Viewport {
-    s32 ulx;
-    s32 uly;
-    s32 lrx;
-    s32 lry;
-};
 
-struct Panel {
-    char pad0[8];
-    s32 player;
-    s32 state;
-    char pad10[8];
-    char body[0x4A8];
-    s32 flash;
-    char pad4C4[4];
-};
 
-struct Screen {
-    char pad0[8];
-    struct Panel panels[4];
-    char pad1328[0x10];
-    s32 state;
-};
+
+
 
 extern struct Screen *D_800E42D0;
 extern s32 D_800D15E0;
@@ -68,8 +36,7 @@ s32 func_8041FCC0(void *arg0, void *arg1, s32 event)
         for (i = 0; i < 4; i++) {
             if (D_800E42D0->panels[i].state == 1 || D_800E42D0->panels[i].state == 3) {
                 if (D_800E42D0->panels[i].player != -1) {
-                    gDPSetScissor(D_80110634++, G_SC_NON_INTERLACE, D_800E41C0[i].ulx, D_800E41C0[i].uly,
-                                  D_800E41C0[i].lrx, D_800E41C0[i].lry);
+                    gDPSetScissorFrac(D_80110634++, G_SC_NON_INTERLACE, (s32)((f32)((D_800E41C0[i].ulx)) * 4.0f), (s32)((f32)((D_800E41C0[i].uly)) * 4.0f), (s32)((f32)((D_800E41C0[i].lrx)) * 4.0f), (s32)((f32)((D_800E41C0[i].lry)) * 4.0f));
                     if (D_800E42D0->panels[i].flash > 0) {
                         D_800D15E4[0] = 150.0f;
                         D_800D15E4[1] = 0.0f;
@@ -90,7 +57,7 @@ s32 func_8041FCC0(void *arg0, void *arg1, s32 event)
             }
         }
         D_800D15E0 = 0;
-        gDPSetScissor(D_80110634++, G_SC_NON_INTERLACE, 0, 0, D_800E28D0 - 1, D_800E28D4 - 1);
+        gDPSetScissorFrac(D_80110634++, G_SC_NON_INTERLACE, (s32)((f32)((0)) * 4.0f), (s32)((f32)((0)) * 4.0f), (s32)((f32)((D_800E28D0 - 1)) * 4.0f), (s32)((f32)((D_800E28D4 - 1)) * 4.0f));
         D_800D15E4[0] = 255.0f;
         D_800D15E4[1] = 255.0f;
         D_800D15E4[2] = 255.0f;

@@ -1,53 +1,26 @@
+#include "basetypes.h"
+#include "n64sdk.h"
+#include "shared/player_types.h"
+#include "shared/pose.h"
 /* Selects vertex mode when it differs from D_800E32C8: mode 9 loads an identity model matrix
    through func_8029FB14 and func_804194B0, transforms the point (0, 0, D_800E142C) by the view
    D_80145228, loads four white vertices at that point and marks each vertex's screen position for
    modification. */
-#include "basetypes.h"
-
-typedef struct {
-    struct {
-        unsigned int w0;
-        unsigned int w1;
-    } words;
-} Gfx;
-
-typedef struct {
-    f32 x;
-    f32 y;
-    f32 z;
-} Vec3f;
-
-typedef struct {
-    s16 x;
-    s16 y;
-    s16 z;
-    s16 flag;
-    s16 s;
-    s16 t;
-    u8 r;
-    u8 g;
-    u8 b;
-    u8 a;
-} Vtx;
-
-typedef struct {
-    f32 m[4][4];
-} Mtx;
 
 extern Gfx *D_80110634;
 extern s32 D_800E32C8;
 extern f32 D_800E142C;
 extern char D_80145228;
 
-extern void func_8029FB14(Mtx *m);
-extern void func_804194B0(Mtx *m);
+extern void func_8029FB14(Shared_MtxF *m);
+extern void func_804194B0(Shared_MtxF *m);
 extern void func_80272908(char *view, Vec3f *in, Vec3f *out);
 extern Vtx *func_802A25E4(s32 size);
 
 void func_80416F4C(s32 mode) {
     Vec3f point;
     Vec3f projected;
-    Mtx identity;
+    Shared_MtxF identity;
     Vtx *vertices;
     s32 count;
     s32 i;
@@ -65,15 +38,15 @@ void func_80416F4C(s32 mode) {
         count = 4;
         vertices = func_802A25E4(0x40);
         for (i = 0; i < count; i++) {
-            vertices[i].x = projected.x;
-            vertices[i].y = projected.y;
-            vertices[i].z = projected.z;
-            vertices[i].s = 0;
-            vertices[i].t = 0;
-            vertices[i].r = 0xFF;
-            vertices[i].g = 0xFF;
-            vertices[i].b = 0xFF;
-            vertices[i].a = 0xFF;
+            vertices[i].v.ob[0] = projected.x;
+            vertices[i].v.ob[1] = projected.y;
+            vertices[i].v.ob[2] = projected.z;
+            vertices[i].v.tc[0] = 0;
+            vertices[i].v.tc[1] = 0;
+            vertices[i].v.cn[0] = 0xFF;
+            vertices[i].v.cn[1] = 0xFF;
+            vertices[i].v.cn[2] = 0xFF;
+            vertices[i].v.cn[3] = 0xFF;
         }
         {
             Gfx *cmd = D_80110634++;

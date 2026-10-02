@@ -1,49 +1,20 @@
+#include "shared/func_80217630.h"
+#include "shared/player_types.h"
+#include "basetypes.h"
+#include "n64sdk.h"
 /* Draws a player's weapon menu icons: for each listed item it places the icon inside the player's
    viewport from 0x5DC, sets the environment colour to a pulsing grey for the item under the cursor at
    0x37C or to 200 or 100 by whether func_8022EAFC says the player owns the weapon, fades it by the
    item's alpha, the menu's opening and the options fade D_801462DE, and draws the sprite through
    func_802ABC18 scaled to the viewport and the item's size. */
-#include "basetypes.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
 
-typedef struct {
-    f32 x;
-    f32 y;
-    f32 z;
-} Vec3f;
 
-typedef struct {
-    s32 slot;
-    s32 weapon;
-    Vec3f position;
-    s32 icon;
-    f32 width;
-    f32 height;
-} Item;
 
-typedef struct {
-    s32 active;
-    s32 pad4;
-    f32 open;
-    char padC[0x14 - 0xC];
-    f32 phase;
-    char pad18[0x37C - 0x18];
-    s32 cursor;
-} Menu;
 
-typedef struct {
-    char pad[0x29C];
-    f32 viewport[4];
-} View;
 
-typedef struct {
-    char pad[0x5DC];
-    View *view;
-} Player;
+
+
 
 extern u8 D_801462DE;
 extern f32 D_800C72F0;
@@ -100,9 +71,9 @@ void func_80217630(Menu *menu, Item *items, s32 count, Player *player) {
             }
             {
                 Gfx *cmd = D_80110634++;
-                cmd->w0 = 0xFB000000;
+                cmd->words.w0 = 0xFB000000;
                 greenBits = (green & 0xFF) << 16;
-                cmd->w1 = (red << 24) | greenBits | ((blue & 0xFF) << 8)
+                cmd->words.w1 = (red << 24) | greenBits | ((blue & 0xFF) << 8)
                     | ((u32) (alpha * fade) & 0xFF);
             }
             func_802ABC18(item->icon, 0, x - width * item->height * scaleX * 0.5f,

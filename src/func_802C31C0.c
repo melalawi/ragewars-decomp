@@ -1,3 +1,8 @@
+#include "shared/func_802c31c0.h"
+#include "shared/func_802bae40.h"
+#include "shared/audio_callbacks.h"
+#include "unbake_abi.h"
+#include "shared/acmd.h"
 /* alAdpcmPull, drafted from ultralib src/audio/load.c: load the ADPCM codebook, then decode the
    requested output count through _decodeChunk, restarting from the loop start and merging the
    sections in DMEM when the count crosses the loop end, and clearing what runs past the table.
@@ -5,17 +10,6 @@
    (book, bookSize) where the reference writes K0_TO_PHYS(book). */
 #include "basetypes.h"
 
-typedef struct {
-    unsigned int w0;
-    unsigned int w1;
-} Awords;
-
-typedef union {
-    Awords words;
-    long long int force_union_align;
-} Acmd;
-
-#define _SHIFTL(v, s, w) ((unsigned int)(((unsigned int)(v) & ((0x01 << (w)) - 1)) << (s)))
 #define MIN(a, b) (((a) < (b)) ? (a) : (b))
 #define A_LOOP 0x02
 #define ADPCMFSIZE 16
@@ -23,79 +17,17 @@ typedef union {
 #define LFSAMPLES 4
 #define AL_DECODER_IN 0
 
-#define aClearBuffer(pkt, d, c)                                         \
-    {                                                                   \
-        Acmd *_a = (Acmd *)pkt;                                         \
-        _a->words.w0 = _SHIFTL(2, 24, 8) | _SHIFTL(d, 0, 24);           \
-        _a->words.w1 = (unsigned int)(c);                               \
-    }
 
-#define aDMEMMove(pkt, i, o, c)                                         \
-    {                                                                   \
-        Acmd *_a = (Acmd *)pkt;                                         \
-        _a->words.w0 = _SHIFTL(10, 24, 8) | _SHIFTL(i, 0, 24);          \
-        _a->words.w1 = _SHIFTL(o, 16, 16) | _SHIFTL(c, 0, 16);          \
-    }
 
-#define aLoadADPCM(pkt, c, d)                                           \
-    {                                                                   \
-        Acmd *_a = (Acmd *)pkt;                                         \
-        _a->words.w0 = _SHIFTL(11, 24, 8) | _SHIFTL(c, 0, 24);          \
-        _a->words.w1 = (unsigned int)d;                                 \
-    }
 
-typedef s32 (*ALDMAproc)(s32 addr, s32 len, void *state);
 
-typedef struct {
-    s32 order;
-    s32 npredictors;
-    s16 book[1];
-} ALADPCMBook;
 
-typedef struct {
-    void *loop;
-    ALADPCMBook *book;
-} ALADPCMWaveInfo;
 
-typedef struct {
-    u32 start;
-    u32 end;
-    u32 count;
-} ALRawLoop;
 
-typedef struct ALWaveTable_s {
-    u8 *base;
-    s32 len;
-    u8 type;
-    u8 flags;
-    union {
-        ALADPCMWaveInfo adpcmWave;
-    } waveInfo;
-} ALWaveTable;
 
-typedef struct ALFilter_s {
-    struct ALFilter_s *source;
-    void *handler;
-    void *setParam;
-    s16 inp;
-    s16 outp;
-    s32 type;
-} ALFilter;
 
-typedef struct {
-    ALFilter filter;
-    void *state;
-    void *lstate;
-    ALRawLoop loop;
-    ALWaveTable *table;
-    s32 bookSize;
-    ALDMAproc dma;
-    void *dmaState;
-    s32 sample;
-    s32 lastsam;
-    s32 first;
-    s32 memin;
-} ALLoadFilter;
+
+
 
 extern u32 func_802570E0(s16 *book, s32 size); /* game ADPCM codebook cache */
 extern Acmd *func_802C3D24(Acmd *ptr, ALLoadFilter *f, s32 tsam, s32 nbytes, s16 outp, s16 inp,

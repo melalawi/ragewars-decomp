@@ -1,13 +1,14 @@
+#include "unbake_gbi.h"
+#include "basetypes.h"
+#include "n64sdk.h"
 /* Clips a screen rectangle to the viewport func_802A2898 reports, interpolating the four corner
    colours along each clipped edge, then writes the corners into vertices 0-3 with gSPModifyVertex
    (screen position, colour rotated to RGBA, texture coordinates 0) and draws them as an outline of
    four lines, or as two triangles when D_80153F60.enable is set. */
-#include "basetypes.h"
 #include "shared/cornercolor.h"
 #include "shared/gfx.h"
 #include "shared/renderswitches.h"
 
-typedef Shared_Gfx Gfx;
 typedef Shared_CornerColor CornerColor;
 typedef Shared_RenderSwitches RenderSwitches;
 
@@ -20,14 +21,14 @@ static inline void put_vertex(s32 index, s32 x, s32 y, u32 color) {
     Gfx *g;
 
     g = D_80110634++;
-    g->words_w0 = 0x02180000 | (index * 2);
-    g->words_w1 = (x << 18) | ((y & 0xFFFF) << 2);
+    g->words.w0 = 0x02180000 | (index * 2);
+    g->words.w1 = (x << 18) | ((y & 0xFFFF) << 2);
     g = D_80110634++;
-    g->words_w0 = 0x02100000 | (index * 2);
-    g->words_w1 = (color << 8) | (color >> 24);
+    g->words.w0 = 0x02100000 | (index * 2);
+    g->words.w1 = (color << 8) | (color >> 24);
     g = D_80110634++;
-    g->words_w0 = 0x02140000 | (index * 2);
-    g->words_w1 = 0;
+    g->words.w0 = 0x02140000 | (index * 2);
+    g->words.w1 = 0;
 }
 
 void func_80415D10(f32 x, f32 y, f32 w, f32 h, u32 col0, u32 col1, u32 col2, u32 col3) {
@@ -110,27 +111,23 @@ void func_80415D10(f32 x, f32 y, f32 w, f32 h, u32 col0, u32 col1, u32 col2, u32
     if (D_80153F60.enable == 0) {
         {
             Gfx *g = D_80110634++;
-            g->words_w0 = 0x08000200;
-            g->words_w1 = 0;
+            g->words.w0 = 0x08000200;
+            g->words.w1 = 0;
         }
         {
             Gfx *g = D_80110634++;
-            g->words_w0 = 0x08020400;
-            g->words_w1 = 0;
+            g->words.w0 = 0x08020400;
+            g->words.w1 = 0;
         }
         {
             Gfx *g = D_80110634++;
-            g->words_w0 = 0x08040600;
-            g->words_w1 = 0;
+            g->words.w0 = 0x08040600;
+            g->words.w1 = 0;
         }
         {
             Gfx *g = D_80110634++;
-            g->words_w0 = 0x08060000;
-            g->words_w1 = 0;
+            g->words.w0 = 0x08060000;
+            g->words.w1 = 0;
         }
-    } else {
-        Gfx *g = D_80110634++;
-        g->words_w0 = 0x06000204;
-        g->words_w1 = 0x00040600;
-    }
+    } else gSP2Triangles(D_80110634++, 0, 1, 2, 0, 2, 3, 0, 0);
 }
