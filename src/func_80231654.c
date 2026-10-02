@@ -5,18 +5,16 @@
  * down by 0.5 to 1 while type 1 or up by 0.05 to 2 while type 2 and turns the barrel frame at 0x11F8 (of
  * 8); finally the default action for the player's state starts unless func_802301E4 handled the request
  * or the actor is flagged 0x400. Adapted from func_80231BA0 with the same static fire check. */
-#include "basetypes.h"
+#include "shared/weapon_fire.h"
+#include "shared/menu_language.h"
 
-typedef struct {
-    s16 action;
-    char pad2[0x16];
-} StateInfo;
 
-extern StateInfo D_800CE8DC[];
+
+extern WeaponActionRecord D_800CE8DC[];
 extern char D_80102B00[];
 extern u8 D_801462D5;
 extern s32 D_800D70E8[];
-extern char D_80145040;
+extern char D_80145040[];
 extern char D_80145088;
 extern s32 func_80222A80(void *, s16);
 extern s16 func_8022F95C(void *);
@@ -27,61 +25,31 @@ extern void func_802398F8(void *, void *, s32, s32, f32);
 extern s32 func_802301E4(void *, void *);
 extern void func_80214178(void *, void *, s32);
 
-typedef struct func_80231654_S1 func_80231654_S1;
-typedef struct func_80231654_S2 func_80231654_S2;
-typedef struct func_80231654_S3 func_80231654_S3;
-struct func_80231654_S1 {
-    char pad0[0x5D4];
-    s32 unk5D4;
-    char pad5D4[0x5DC - 0x5D4 - sizeof(s32)];
-    void* unk5DC;
-    char pad5DC[0x62E - 0x5DC - sizeof(void*)];
-    s16 unk62E;
-    char pad62E[0x650 - 0x62E - sizeof(s16)];
-    s16 unk650;
-    char pad650[0x6B0 - 0x650 - sizeof(s16)];
-    s32 unk6B0;
-    char pad6B0[0x770 - 0x6B0 - sizeof(s32)];
-    s16 unk770;
-    char pad770[0x11D8 - 0x770 - sizeof(s16)];
-    f32 unk11D8;
-    char pad11D8[0x11F4 - 0x11D8 - sizeof(f32)];
-    f32 unk11F4;
-    char pad11F4[0x11F8 - 0x11F4 - sizeof(f32)];
-    s32 unk11F8;
-    char pad11F8[0x1450 - 0x11F8 - sizeof(s32)];
-    s32 unk1450;
-};
-struct func_80231654_S2 {
-    char pad0[0x100];
-    s32 unk100;
-    char pad100[0x1D8 - 0x100 - sizeof(s32)];
-    char* unk1D8;
-};
-struct func_80231654_S3 {
-    char pad0[0x13C];
-    s32 unk13C;
-    char pad13C[0x144 - 0x13C - sizeof(s32)];
-    s32 unk144;
-};
-
+#if defined(VERSION_EU)
+extern s32 D_800E0D44[];
+#elif defined(VERSION_EU_X)
+extern s32 D_800DCC68[];
+#endif
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+extern u8 D_80152789;
+#endif
 static inline s32 can_fire(char *player) {
     s32 ammo;
 
-    if (((func_80231654_S1 *)(player))->unk11D8 > 0.0f) {
+    if (((SharedPlayer *)(player))->views5E8.view11D8_147.unk11D8 > 0.0f) {
         return 0;
     }
-    if (((func_80231654_S1 *)(player))->unk1450 != 0) {
+    if (((SharedPlayer *)(player))->views1450.view1450_0.unk1450 != 0) {
         return 1;
     }
     if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F54C(&D_80102B00[((func_80231654_S1 *)(player))->unk5D4 * 0x190], ((func_80231654_S1 *)(player))->unk62E);
+    ammo = func_8022F54C(&D_80102B00[((SharedPlayer *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E);
     if (ammo == 0) {
         func_8025DF54(0xD4D);
-        if (((func_80231654_S1 *)(player))->unk5DC != 0) {
-            func_802398F8(&D_80145088, ((func_80231654_S1 *)(player))->unk5DC, D_800D70E8[0], func_8022A590(&D_80145040, player),
+        if (((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC != 0) {
+            func_802398F8(&D_80145088, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D70E8[0], D_800E0D44, D_800DCC68, D_80152789), func_8022A590(D_80145040, player),
                           1.0f);
         }
     }
@@ -93,55 +61,55 @@ void func_80231654(void *actor, void *arg1) {
     s32 action;
     s32 single;
 
-    player = ((func_80231654_S2 *)(actor))->unk1D8;
-    action = D_800CE8DC[((func_80231654_S1 *)(player))->unk650].action;
-    if (func_80222A80(player, ((func_80231654_S1 *)(player))->unk62E) == 0) {
-        if (((func_80231654_S3 *)(arg1))->unk13C != 2) {
+    player = ((Shared_Actor *)(actor))->entity;
+    action = D_800CE8DC[((SharedPlayer *)(player))->views5E8.view650_15.unk650].action;
+    if (func_80222A80(player, ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E) == 0) {
+        if (((WeaponFireState *)(arg1))->mode != 2) {
             goto idle;
         }
-        ((func_80231654_S3 *)(arg1))->unk13C = 1;
-        if (func_80222A80(player, ((func_80231654_S1 *)(player))->unk62E) == 0) {
+        ((WeaponFireState *)(arg1))->mode = 1;
+        if (func_80222A80(player, ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E) == 0) {
         idle:
-            ((func_80231654_S1 *)(player))->unk770 = func_8022F95C(player);
+            ((SharedPlayer *)(player))->views5E8.view770_91.unk770 = func_8022F95C(player);
             return;
         }
     }
-    if ((((func_80231654_S1 *)(player))->unk6B0 & 0x4000) && can_fire(player) && ((func_80231654_S3 *)(arg1))->unk144 > 0) {
+    if ((((SharedPlayer *)(player))->views5E8.view6B0_46.unk6B0 & 0x4000) && can_fire(player) && ((WeaponFireState *)(arg1))->rounds > 0) {
         single = 1;
-        if (((func_80231654_S3 *)(arg1))->unk13C == single) {
-            ((func_80231654_S3 *)(arg1))->unk13C = 2;
-            if (func_80222A80(player, ((func_80231654_S1 *)(player))->unk62E) == 0) {
+        if (((WeaponFireState *)(arg1))->mode == single) {
+            ((WeaponFireState *)(arg1))->mode = 2;
+            if (func_80222A80(player, ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E) == 0) {
                 func_8025DF54(0xD4D);
-                if (((func_80231654_S1 *)(player))->unk5DC != 0) {
-                    func_802398F8(&D_80145040 + 0x48, ((func_80231654_S1 *)(player))->unk5DC, D_800D70E8[0],
-                                  func_8022A590(&D_80145040, player), 1.0f);
+                if (((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC != 0) {
+                    func_802398F8(D_80145040 + 0x48, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D70E8[0], D_800E0D44, D_800DCC68, (u8)D_80145040[0x1809]),
+                                  func_8022A590(D_80145040, player), 1.0f);
                 }
-                ((func_80231654_S3 *)(arg1))->unk13C = single;
+                ((WeaponFireState *)(arg1))->mode = single;
                 goto spin;
             }
         } else {
-            ((func_80231654_S3 *)(arg1))->unk13C = single;
+            ((WeaponFireState *)(arg1))->mode = single;
         }
-        ((func_80231654_S3 *)(arg1))->unk144 = single;
+        ((WeaponFireState *)(arg1))->rounds = single;
     }
 spin:
-    if (((func_80231654_S3 *)(arg1))->unk13C == 1) {
-        if (((func_80231654_S1 *)(player))->unk11F4 > 1.0f) {
-            ((func_80231654_S1 *)(player))->unk11F4 -= 0.5f;
+    if (((WeaponFireState *)(arg1))->mode == 1) {
+        if (((SharedPlayer *)(player))->views5E8.rapidFireView.spin > 1.0f) {
+            ((SharedPlayer *)(player))->views5E8.rapidFireView.spin -= 0.5f;
         }
-        if (((func_80231654_S1 *)(player))->unk11F4 < 1.0f) {
-            ((func_80231654_S1 *)(player))->unk11F4 = 1.0f;
+        if (((SharedPlayer *)(player))->views5E8.rapidFireView.spin < 1.0f) {
+            ((SharedPlayer *)(player))->views5E8.rapidFireView.spin = 1.0f;
         }
-    } else if (((func_80231654_S3 *)(arg1))->unk13C == 2) {
-        if (((func_80231654_S1 *)(player))->unk11F4 < 2.0f) {
-            ((func_80231654_S1 *)(player))->unk11F4 += 0.05f;
+    } else if (((WeaponFireState *)(arg1))->mode == 2) {
+        if (((SharedPlayer *)(player))->views5E8.rapidFireView.spin < 2.0f) {
+            ((SharedPlayer *)(player))->views5E8.rapidFireView.spin += 0.05f;
         }
-        if (((func_80231654_S1 *)(player))->unk11F4 > 2.0f) {
-            ((func_80231654_S1 *)(player))->unk11F4 = 2.0f;
+        if (((SharedPlayer *)(player))->views5E8.rapidFireView.spin > 2.0f) {
+            ((SharedPlayer *)(player))->views5E8.rapidFireView.spin = 2.0f;
         }
     }
-    ((func_80231654_S1 *)(player))->unk11F8 = (((func_80231654_S1 *)(player))->unk11F8 + (s32)((func_80231654_S1 *)(player))->unk11F4) % 8;
-    if (func_802301E4(actor, arg1) == 0 && !(((func_80231654_S2 *)(actor))->unk100 & 0x400)) {
+    ((SharedPlayer *)(player))->views5E8.rapidFireView.frame = (((SharedPlayer *)(player))->views5E8.rapidFireView.frame + (s32)((SharedPlayer *)(player))->views5E8.rapidFireView.spin) % 8;
+    if (func_802301E4(actor, arg1) == 0 && !(((Shared_Actor *)(actor))->weaponFlags & 0x400)) {
         func_80214178(actor, arg1, action);
     }
 }

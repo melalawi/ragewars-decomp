@@ -8,7 +8,8 @@
 typedef struct Shared_Settings Shared_Settings;
 struct Shared_Settings {
     s32 flags; /* +0x0: src/func_8027ED40.c */
-    char pad4[0x9];
+    s32 selection; /* +0x4: HUD transition selection */
+    char pad8[0x5];
     u8 trialKind; /* +0xD: src/func_8042BD40.c, src/func_8021EED8.c */
     char padE[0x8];
     u8 hudFade; /* +0x16: src/func_8021EED8.c */

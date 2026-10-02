@@ -8,162 +8,101 @@
    and showing the unavailable message when mode 2 cannot be used; finally, unless func_802301E4
    handled the weapon or the actor has flag 0x400, it fires through func_80214178 with the holder's
    state's fire mode from D_800CE8DC. */
-#include "basetypes.h"
+#include "shared/weapon_fire.h"
+#include "shared/menu_language.h"
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+extern u8 D_80152789;
+extern s32 D_800E0D44[], D_800DCC68[];
+#endif
 
-typedef struct {
-    s16 fireMode;
-    char pad2[0x18 - 0x2];
-} StateInfo;
-
-typedef struct {
-    char pad0[0x14];
-    s32 flags;
-} Record;
-
-typedef struct {
-    char pad0[0x5D4];
-    s32 slot;
-    char pad5D8[0x5DC - 0x5D8];
-    void *view;
-    char pad5E0[0x62E - 0x5E0];
-    s16 weapon;
-    char pad630[0x650 - 0x630];
-    s16 state;
-    char pad652[0x6B0 - 0x652];
-    s32 input;
-    char pad6B4[0x770 - 0x6B4];
-    s16 nextWeapon;
-    char pad772[0x7E8 - 0x772];
-    s32 zoomed;
-    char pad7EC[0x11D8 - 0x7EC];
-    f32 stun;
-    char pad11DC[0x1450 - 0x11DC];
-    s32 infinite;
-} Player;
-
-typedef struct {
-    char pad0[0x100];
-    s32 flags;
-    char pad104[0x1D8 - 0x104];
-    Player *holder;
-} Actor;
-
-typedef struct {
-    char pad0[0x13C];
-    s32 mode;
-} Fire;
-
-typedef struct {
-    char pad0[0x190];
-} Profile;
-
-typedef struct {
-    char pad0[0x48];
-    char empty[1];
-} Messages;
-
-extern StateInfo D_800CE8DC[];
-extern Record *D_800D052C[];
+extern WeaponActionRecord D_800CE8DC[];
+extern WeaponDefinition *D_800D052C[];
 extern s32 D_800D70E8[];
 extern f32 D_800C7FD8;
 extern f32 D_800C7FDC;
 extern char D_80102B00[];
-extern Messages D_80145040;
+extern char D_80145040[];
 extern char D_80145088;
 extern u8 D_801462D5;
-extern s32 func_80222A80(Player *, s16);
-extern s16 func_8022F95C(Player *);
+extern s32 func_80222A80(SharedPlayer *, s16);
+extern s16 func_8022F95C(SharedPlayer *);
 extern s32 func_8022F54C(void *, s16);
 extern void func_8025DF54(s32);
 extern s32 func_8022A590(void *, void *);
 extern void func_802398F8(void *, void *, s32, s32, f32);
-extern s32 func_802301E4(Actor *, Fire *);
-extern void func_80214178(Actor *, Fire *, s16);
-
-typedef struct func_80230390_S1 func_80230390_S1;
-struct func_80230390_S1 {
-    char pad0[0x5D4];
-    s32 unk5D4;
-    char pad5D4[0x5DC - 0x5D4 - sizeof(s32)];
-    void* unk5DC;
-    char pad5DC[0x62E - 0x5DC - sizeof(void*)];
-    s16 unk62E;
-    char pad62E[0x11D8 - 0x62E - sizeof(s16)];
-    f32 unk11D8;
-    char pad11D8[0x1450 - 0x11D8 - sizeof(f32)];
-    s32 unk1450;
-};
+extern s32 func_802301E4(Shared_Actor *, WeaponFireState *);
+extern void func_80214178(Shared_Actor *, WeaponFireState *, s16);
 
 static inline s32 can_fire(char *player) {
     s32 ammo;
 
-    if (((func_80230390_S1 *)(player))->unk11D8 > 0.0f) {
+    if (((SharedPlayer *)(player))->views5E8.view11D8_147.unk11D8 > 0.0f) {
         return 0;
     }
-    if (((func_80230390_S1 *)(player))->unk1450 != 0) {
+    if (((SharedPlayer *)(player))->views1450.view1450_0.unk1450 != 0) {
         return 1;
     }
     if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F54C(&D_80102B00[((func_80230390_S1 *)(player))->unk5D4 * 0x190], ((func_80230390_S1 *)(player))->unk62E);
+    ammo = func_8022F54C(&D_80102B00[((SharedPlayer *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E);
     if (ammo == 0) {
         func_8025DF54(0xD4D);
-        if (((func_80230390_S1 *)(player))->unk5DC != 0) {
-            func_802398F8(&D_80145088, ((func_80230390_S1 *)(player))->unk5DC, D_800D70E8[0], func_8022A590(&D_80145040, player),
+        if (((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC != 0) {
+            func_802398F8(&D_80145088, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D70E8[0], D_800E0D44, D_800DCC68, D_80152789), func_8022A590(D_80145040, player),
                           D_800C7FD8);
         }
     }
     return ammo;
 }
 
-void func_80230390(Actor *actor, Fire *fire) {
-    Player *holder;
+void func_80230390(Shared_Actor *actor, WeaponFireState *fire) {
+    SharedPlayer *holder;
     s32 fireMode;
-    Record *record;
+    WeaponDefinition *record;
     s32 ready;
 
-    holder = actor->holder;
-    fireMode = D_800CE8DC[holder->state].fireMode;
-    record = D_800D052C[holder->weapon];
-    if (func_80222A80(holder, holder->weapon) == 0) {
+    holder = (SharedPlayer *)actor->entity;
+    fireMode = D_800CE8DC[holder->views5E8.view650_15.unk650].action;
+    record = D_800D052C[holder->views5E8.view62E_13.unk62E];
+    if (func_80222A80(holder, holder->views5E8.view62E_13.unk62E) == 0) {
         if (fire->mode != 2) {
-            holder->nextWeapon = func_8022F95C(holder);
+            holder->views5E8.view770_91.unk770 = func_8022F95C(holder);
             return;
         }
         fire->mode = 1;
         if (record->flags & 0x20) {
-            holder->zoomed = 0;
+            holder->views5E8.view7E8_106.zoomed = 0;
         }
-        if (func_80222A80(holder, holder->weapon) == 0) {
-            holder->nextWeapon = func_8022F95C(holder);
+        if (func_80222A80(holder, holder->views5E8.view62E_13.unk62E) == 0) {
+            holder->views5E8.view770_91.unk770 = func_8022F95C(holder);
             return;
         }
     }
-    if ((holder->input & 0x4000) && holder->weapon < 0x12) {
+    if ((holder->views5E8.view6B0_46.unk6B0 & 0x4000) && holder->views5E8.view62E_13.unk62E < 0x12) {
         ready = can_fire((char *)holder);
         if (ready != 0) {
             if (fire->mode == 1) {
                 fire->mode = 2;
-                if (func_80222A80(holder, holder->weapon) == 0) {
+                if (func_80222A80(holder, holder->views5E8.view62E_13.unk62E) == 0) {
                     func_8025DF54(0xD4D);
-                    if (holder->view != 0) {
-                        func_802398F8(D_80145040.empty, holder->view, D_800D70E8[0],
-                                      func_8022A590(&D_80145040, holder), D_800C7FDC);
+                    if (holder->views5DC.view5DC_0.unk5DC != 0) {
+                        func_802398F8(D_80145040 + 0x48, holder->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D70E8[0], D_800E0D44, D_800DCC68, (u8)D_80145040[0x1809]),
+                                      func_8022A590(D_80145040, holder), D_800C7FDC);
                     }
                     fire->mode = 1;
                 } else if (record->flags & 0x20) {
-                    holder->zoomed = 1;
+                    holder->views5E8.view7E8_106.zoomed = 1;
                 }
             } else {
                 fire->mode = 1;
                 if (record->flags & 0x20) {
-                    holder->zoomed = 0;
+                    holder->views5E8.view7E8_106.zoomed = 0;
                 }
             }
         }
     }
-    if (func_802301E4(actor, fire) == 0 && !(actor->flags & 0x400)) {
+    if (func_802301E4(actor, fire) == 0 && !(actor->weaponFlags & 0x400)) {
         func_80214178(actor, fire, fireMode);
     }
 }

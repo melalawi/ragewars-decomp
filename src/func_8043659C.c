@@ -12,13 +12,21 @@ extern void func_8040C4A8(s32);
 extern void func_8043C458(s32);
 extern void func_80299368(s32);
 
+#if defined(VERSION_DE)
+enum { MENU_8043659C_984 = 978, MENU_8043659C_985 = 979 };
+#elif defined(VERSION_EU_X)
+enum { MENU_8043659C_984 = 988, MENU_8043659C_985 = 989 };
+#else
+enum { MENU_8043659C_984 = 984, MENU_8043659C_985 = 985 };
+#endif
+
 s32 func_8043659C(void) {
     func_8029A73C();
     switch (func_8029AA08()) {
-    case 0x3D9:
+    case MENU_8043659C_985:
         func_80299368(1);
         return 0;
-    case 0x3D8:
+    case MENU_8043659C_984:
         D_80146894 = 0;
         func_802A338C();
         if (func_8042AEB8() == 0) {

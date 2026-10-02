@@ -1,23 +1,10 @@
 /* Updates a player menu state from controller status, available saves, and the current menu phase. */
 
-#include "basetypes.h"
-struct Player
-{
-  s32 state;
-  s32 unused;
-  s32 saved;
-  char gap[0xB30 - 12];
-  s32 flag;
-  char rest[0xB64 - 0xB34];
-  s32 number;
-};
-struct Block
-{
-  char pad[0x54];
-  s32 phase;
-  struct Player players[4];
-};
-extern struct Block *D_800E54A4;
+#include "shared/pak_menu_controller.h"
+#include "shared/menu_language.h"
+
+
+extern PakMenuController *D_800E54A4;
 extern void *D_800D7700;
 extern s32 func_80404F04(s32);
 extern s32 func_80404BE8(void *, s32, s32 *);
@@ -27,6 +14,14 @@ extern s32 func_80435360(s32);
 extern s32 func_80435AE8(s32);
 extern s32 func_80274544(void);
 extern void func_80432488(s32);
+#if defined(VERSION_EU)
+extern void *D_800E25A4[];
+#elif defined(VERSION_EU_X)
+extern void *D_800DDEB0[];
+#endif
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+extern u8 D_80152789;
+#endif
 void func_804337EC(s32 player)
 {
   s32 random;
@@ -49,14 +44,14 @@ void func_804337EC(s32 player)
       case 0:
         if (D_800E54A4->phase == 6)
       {
-        D_800E54A4->players[player].state = D_800E54A4->players[player].saved;
+        D_800E54A4->players[player].state = D_800E54A4->players[player].next;
       }
       else
-        if (func_80404BE8(D_800D7700, player, &result) == one)
+        if (func_80404BE8(RW_LOCALIZED_TEXT(D_800D7700, D_800E25A4, D_800DDEB0, D_80152789), player, &result) == one)
       {
         if (func_80434814(player, result) == one)
         {
-          D_800E54A4->players[player].state = D_800E54A4->players[player].saved;
+          D_800E54A4->players[player].state = D_800E54A4->players[player].next;
           switch (D_800E54A4->phase)
           {
             case 0:
@@ -79,7 +74,7 @@ void func_804337EC(s32 player)
               D_800E54A4->players[player].state = 25;
             }
             else
-              if ((D_800E54A4->players[player].flag == one) && (func_80435304(player) == (-1)))
+              if ((D_800E54A4->players[player].host == one) && (func_80435304(player) == (-1)))
             {
               D_800E54A4->players[player].state = 24;
             }
@@ -107,7 +102,7 @@ void func_804337EC(s32 player)
           case 7:
             random = func_80274544();
             D_800E54A4->players[player].state = 15;
-            D_800E54A4->players[player].number = (random % 9999999) + 1;
+            D_800E54A4->players[player].profile = (random % 9999999) + 1;
             break;
 
           case 5:
@@ -115,7 +110,7 @@ void func_804337EC(s32 player)
             break;
 
           case 4:
-            D_800E54A4->players[player].state = D_800E54A4->players[player].saved;
+            D_800E54A4->players[player].state = D_800E54A4->players[player].next;
             break;
 
           case 2:

@@ -1,17 +1,13 @@
 /* Animates selection panels, tracks each player's focused character and updates the preview and pulsing highlight. */
-#include "basetypes.h"
+#include "shared/character_selection.h"
 #define CLAMP(v,l,h) ((v)<(l)?(l):(v)>(h)?(h):(v))
-typedef struct {float x,y,z;} Vec3;
-typedef struct {char p[12];short unkC;char pe[2];u8 unk10;char p11[3];short unk14,unk16;} Node;
-typedef struct {int unk0,unk4;Node *unk8;int unkC,unk10,unk14;char p18[0x1310];Node *unk1328;u16 unk132C,unk132E;Node *unk1330;u16 unk1334,unk1336;int unk1338,unk133C,unk1340;Node *unk1344,*unk1348;char p134c[3];u8 unk134F;int unk1350,unk1354;} State;
-extern State *D_800E42D0;
-typedef struct {int pad;float scale[4],distance[4];Vec3 position[4];int light[4];char tail[12];} Row;
-extern Row D_800E3A58[];
+extern CharacterSelectionScreen *D_800E42D0;
+extern CharacterPreviewRow D_800E3A58[];
 extern float D_800E1598[];
-extern void func_8025DF54(),func_80299368(int),func_8029A73C(),func_802A3358(void),func_8040E958(Node *,int),func_80419FA4(int),func_80419FD8(int,int),func_804204A8(int),func_804208C0(int);
+extern void func_8025DF54(),func_80299368(int),func_8029A73C(),func_802A3358(void),func_8040E958(SelectionSprite *,int),func_80419FA4(int),func_80419FD8(int,int),func_804204A8(int),func_804208C0(int);
 extern float func_802BB630(float);
-extern int func_8040EC50(Node *),func_80419FB8(int),func_8041F1FC(int),func_8041F248(short);
-extern Node *func_8041B87C(int,int);
+extern int func_8040EC50(SelectionSprite *),func_80419FB8(int),func_8041F1FC(int),func_8041F248(short);
+extern SelectionSprite *func_8041B87C(int,int);
 extern void func_8041CB48(void *,int,int,int,int,Vec3,Vec3,float,int);
 s32 func_8041F738(s32 arg0,s32 arg1,s32 arg2) {
     Vec3 scale;
@@ -33,16 +29,16 @@ s32 func_8041F738(s32 arg0,s32 arg1,s32 arg2) {
     s32 var_s4;
     s32 empty_slot;
     s32 var_v0;
-    State *temp_a0;
-    Node *temp_a0_2;
-    Node *temp_a0_3;
-    Node *temp_a0_5;
-    Node *temp_a0_6;
-    Node *temp_a0_7;
-    Node *temp_a1;
-    Node *temp_a1_2;
-    Node *temp_v0_3;
-    State *temp_v1_3;
+    CharacterSelectionScreen *temp_a0;
+    SelectionSprite *temp_a0_2;
+    SelectionSprite *temp_a0_3;
+    SelectionSprite *temp_a0_5;
+    SelectionSprite *temp_a0_6;
+    SelectionSprite *temp_a0_7;
+    SelectionSprite *temp_a1;
+    SelectionSprite *temp_a1_2;
+    SelectionSprite *temp_v0_3;
+    CharacterSelectionScreen *temp_v1_3;
 
     temp_v0 = D_800E42D0->unk1338;
     switch (temp_v0) {
@@ -108,28 +104,34 @@ s32 func_8041F738(s32 arg0,s32 arg1,s32 arg2) {
     }
         if (D_800E42D0->unk1338 == 3) {
             var_s3 = 0;
-            empty_slot=0x81;
+            #if defined(VERSION_DE)
+            empty_slot = 127;
+#elif defined(VERSION_EU_X)
+            empty_slot = 133;
+#else
+            empty_slot = 129;
+#endif
             var_s2 = 0;
             var_s4 = 0;
             D_800E42D0->unk1350 = (s32) (D_800E42D0->unk1350 + arg2);
             do {
-                temp_a0 = (State *)((char *)D_800E42D0 + var_s2);
+                temp_a0 = (CharacterSelectionScreen *)((char *)D_800E42D0 + var_s2);
                 if (temp_a0->unk14 == 1) {
                     if (temp_a0->unk8 != 0) {
                         temp_f0 = (func_802BB630((f32) var_s3 + ((f32) D_800E42D0->unk1350 * 0.0033333334f)) * 70.0f) + 170.0f;
-                        temp_a0_2 = ((State *)((char *)D_800E42D0 + var_s2))->unk8;
+                        temp_a0_2 = ((CharacterSelectionScreen *)((char *)D_800E42D0 + var_s2))->unk8;
                         temp_a0_2->unk10=(unsigned int)temp_f0;
                     }
                     temp_v0_3 = func_8041B87C(D_800E42D0->unk4, var_s3);
-                    temp_a0_3 = ((State *)((char *)D_800E42D0 + var_s2))->unk8;
+                    temp_a0_3 = ((CharacterSelectionScreen *)((char *)D_800E42D0 + var_s2))->unk8;
                     if ((temp_a0_3->unk14 != (temp_v0_3->unk14 - 2)) || (temp_a0_3->unk16 != (temp_v0_3->unk16 - 2))) {
                         func_8025DF54(0xE7F);
                         if (func_8040EC50(temp_v0_3) == 0) {
                             temp_a0_4 = temp_v0_3->unkC;
                             if (temp_a0_4 != empty_slot) {
-                                ((State *)((char *)D_800E42D0 + var_s2))->unk10 = (s32) temp_a0_4;
+                                ((CharacterSelectionScreen *)((char *)D_800E42D0 + var_s2))->unk10 = (s32) temp_a0_4;
                                 temp_s0 = func_8041F248(temp_a0_4);
-                                temp_v1 = func_8041F1FC(((State *)((char *)D_800E42D0 + var_s2))->unk10);
+                                temp_v1 = func_8041F1FC(((CharacterSelectionScreen *)((char *)D_800E42D0 + var_s2))->unk10);
                                 temp_a2 = (var_s3 * 4) + temp_v1;
                                 temp_v1_2 = var_s4 + temp_v1;
                                 scale.x = D_800E3A58[temp_v1].scale[var_s3];
@@ -140,13 +142,13 @@ s32 func_8041F738(s32 arg0,s32 arg1,s32 arg2) {
                                 func_804208C0(var_s3);
                             }
                         } else {
-                            ((State *)((char *)D_800E42D0 + var_s2))->unk10 = -1;
+                            ((CharacterSelectionScreen *)((char *)D_800E42D0 + var_s2))->unk10 = -1;
                         }
                         func_804204A8(var_s3);
                     } else if (temp_v0_3->unkC == empty_slot) {
                         func_804208C0(var_s3);
                     }
-                    temp_v1_3 = (State *)((char *)D_800E42D0 + var_s2);
+                    temp_v1_3 = (CharacterSelectionScreen *)((char *)D_800E42D0 + var_s2);
                     temp_v1_3->unk8->unk14 = (s16) ((u16) temp_v0_3->unk14 - 2);
                     temp_v1_3->unk8->unk16 = (s16) ((u16) temp_v0_3->unk16 - 2);
                 }

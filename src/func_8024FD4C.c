@@ -1,58 +1,16 @@
 /* Initialises a placed prop from its record: resets its state and owner, loads its model and caches the squared model radius, builds its rotation from the record's packed quaternion, scale and position into a matrix copied into the object, sets its bounding box either as a fixed cube for flag 0x40 or from the record's six extents through func_802B2350 with a half-unit margin, copies the position, links its path segment and takes the next colour key and colour frame. The fixed cube is written through do-while(0) vector macros, which the stores' order needs, and 102.4 is the cartridge's rounded 0x42CCCCCC. */
-#include "basetypes.h"
+#include "shared/placed_prop.h"
+#if defined(VERSION_DE)
+extern s32 func_8024E914(PlacedProp *);
+#endif
 
-typedef struct Vec3f {
-    f32 x;
-    f32 y;
-    f32 z;
-} Vec3f;
 
-typedef struct Model {
-    char pad0[8];
-    f32 radius;
-    char padC[0x24 - 0xC];
-    u32 radiusSquared;
-} Model;
 
-typedef struct Record {
-    s32 value;
-    Vec3f position;
-    Vec3f scale;
-    char pad1C[0];
-    u16 extents[6];
-    u16 id;
-    u16 segment;
-    u16 model;
-    u8 flags;
-    s8 rotation[4];
-} Record;
 
-typedef struct Prop {
-    u8 state;
-    char pad1[3];
-    u16 id;
-    char pad6[2];
-    Vec3f position;
-    void *segment;
-    Model *model;
-    s32 owner;
-    char pad20[8];
-    char transform[0x40];
-    char matrix[0x40];
-    s32 fieldA8;
-    s32 fieldAC;
-    s32 fieldB0;
-    s32 fieldB4;
-    Vec3f min;
-    Vec3f max;
-    s32 key;
-    s32 fieldD4;
-    u16 flags;
-    u8 colorFrame;
-    char padDB;
-    s32 fieldDC;
-    u8 fade;
-} Prop;
+
+
+
+
 
 #define VEC_SUB_SCALAR(dst, src, value) \
     do {                                \
@@ -73,8 +31,8 @@ extern s32 D_800D2B40;
 extern u8 D_800D297B;
 extern char D_8011FE88;
 
-extern void func_8024DD00(Prop *, Record *, s32, char *);
-extern Model *func_8028CF48(void *, s32);
+extern void func_8024DD00(PlacedProp *, PlacedPropRecord *, s32, char *);
+extern PropGeometry *func_8028CF48(void *, s32);
 extern void func_80274214(f32 *);
 extern void func_802742B4(f32 *, char *);
 extern void func_802734EC(char *, f32, f32, f32);
@@ -95,10 +53,10 @@ static inline s32 func_80250B98(void) {
     return D_800D0910;
 }
 
-void func_8024FD4C(Prop *prop, Record *record, s32 owner, char *segments) {
+void func_8024FD4C(PlacedProp *prop, PlacedPropRecord *record, s32 owner, char *segments) {
     f32 rotation[4];
     char matrix[0x40];
-    Model *model;
+    PropGeometry *model;
 
     func_8024DD00(prop, record, owner, segments);
     prop->state = 0;
@@ -146,4 +104,9 @@ void func_8024FD4C(Prop *prop, Record *record, s32 owner, char *segments) {
     }
     prop->key = func_80250B98() << 10;
     prop->colorFrame = D_800D297B - 1;
+#if defined(VERSION_DE)
+    if ((u32)(func_8024E914(prop) - 9) < 2) {
+        prop->flags |= 0x50;
+    }
+#endif
 }

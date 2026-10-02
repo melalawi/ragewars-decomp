@@ -4,14 +4,16 @@
    the bytes compare equal or deletes the note through func_80404858 and retries, returning the
    write result. */
 #include "basetypes.h"
-
-typedef struct {
-    char pad[0x68];
-} OSPfs;
+#include "shared/pak_file_system.h"
+#include "shared/menu_language.h"
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+extern u8 D_80152789;
+extern u8 *D_800E25C4[], *D_800DDEC8[];
+#endif
 
 extern s32 D_801534F0[];
 extern s32 D_80153500[];
-extern OSPfs D_80153510[];
+extern ControllerPakFileSystem D_80153510[];
 extern u8 D_8010FBB8;
 extern u8 *D_800D7708;
 extern char D_800E0D00[];
@@ -27,7 +29,7 @@ extern void func_80263760(void);
 extern void func_8026456C(void);
 extern void *func_802C2490(void *destination, const void *source, int count);
 extern s32 func_80265464(void *a, void *b, s32 size);
-extern s32 func_80448740(OSPfs *pfs, s32 file_no, s32 flag, s32 offset, s32 size, void *data);
+extern s32 func_80448740(ControllerPakFileSystem *pfs, s32 file_no, s32 flag, s32 offset, s32 size, void *data);
 extern s32 func_804042F0(s32 ch, s32 size, void *data, u8 *game_name, s32 *file_no, u8 *ext_name,
                          u8 *company, u8 *code);
 extern s32 func_80404858(s32 ch, s32 index);
@@ -82,7 +84,7 @@ s32 func_80404958(s32 ch, s32 size, void *data, u8 *name, u8 *ext, u8 *code) {
     handle = func_802533DC(0, blocks, 0x23, D_800E0D18);
     buf = *handle;
     for (tries = 0; tries < 4; tries++) {
-        result = func_804042F0(ch, size, data, name, &file_no, ext, D_800D7708, code);
+        result = func_804042F0(ch, size, data, name, &file_no, ext, RW_LOCALIZED_TEXT(D_800D7708, D_800E25C4, D_800DDEC8, D_80152789), code);
         if (result != 0) {
             break;
         }

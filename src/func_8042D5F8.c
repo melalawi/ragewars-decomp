@@ -1,20 +1,16 @@
 /* Hides the four child items of a selected menu panel. */
-#include "basetypes.h"
-typedef struct {char p[0xE0]; s32 unkE0;} State;
+#include "shared/menu_panel_root.h"
+
 void func_8040E958(s32, s32);                            /* extern */
 s32 func_8040ECB0(s32, s32);                        /* extern */
-extern State *D_800E53C0;
+extern MenuPanelRoot *D_800E53C0;
 
-#ifdef VERSION_EU_X
-#define ITEM0 0x271
-#define ITEM1 0x270
-#define ITEM2 0x26F
-#define ITEM3 0x26E
+#if defined(VERSION_DE)
+enum { ITEM0 = 616, ITEM1 = 615, ITEM2 = 614, ITEM3 = 613 };
+#elif defined(VERSION_EU_X)
+enum { ITEM0 = 625, ITEM1 = 624, ITEM2 = 623, ITEM3 = 622 };
 #else
-#define ITEM0 0x26D
-#define ITEM1 0x26C
-#define ITEM2 0x26B
-#define ITEM3 0x26A
+enum { ITEM0 = 621, ITEM1 = 620, ITEM2 = 619, ITEM3 = 618 };
 #endif
 
 void func_8042D5F8(s32 arg0) {
@@ -22,7 +18,7 @@ void func_8042D5F8(s32 arg0) {
     s32 var_a1;
     s32 var_s0;
 
-    temp_s1 = func_8040ECB0(D_800E53C0->unkE0, arg0 & 0xFFFF);
+    temp_s1 = func_8040ECB0(D_800E53C0->window, arg0 & 0xFFFF);
     var_s0 = 0;
     do {
         switch(var_s0) {

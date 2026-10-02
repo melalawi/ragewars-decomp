@@ -38,6 +38,7 @@ struct SharedPlayer {
             char pad[0x14];
             struct Shared_Model * model; /* +0x14: src/func_80220EB0.c */
         } view14_6;
+        struct { char pad[8]; s32 positionWords[3]; } positionBits;
     } views0;
     union {
         struct {
@@ -1196,6 +1197,8 @@ struct SharedPlayer {
             char pad[0xC38];
             s32 f1220; /* +0x1220: src/func_8044AB34.c */
         } view1220_162;
+        struct { char pad[0xE]; s16 charge; } chargeView;
+        struct { char pad[0x11F4 - 0x5E8]; f32 spin; s32 frame; } rapidFireView;
     } views5E8;
     union {
         struct {
@@ -1340,7 +1343,9 @@ struct SharedPlayer {
             struct Held * held; /* +0x13D8: src/func_8022631C.c */
         } view13D8_1;
     } views13D8;
-    char pad13DC[0x74];
+    char pad13DC[0xC];
+    s32 messageIndex; /* +0x13E8: four-line player message log */
+    char pad13EC[0x64];
     union {
         struct {
             s32 unk1450; /* +0x1450: src/func_80208158.c, src/func_8020FDB0.c, src/func_80220EB0.c, src/func_8022591C.c, src/func_80229530.c, src/func_80230390.c, src/func_8044A37C.c, src/func_8044A4C0.c, src/func_8044AB34.c */

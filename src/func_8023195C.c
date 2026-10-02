@@ -3,20 +3,20 @@
  * a charged shot (sound 0x42E at the player, action 0xB) once charged past 24 or reports the empty weapon;
  * otherwise the default action for the player's state is started unless func_802301E4 handled the request
  * or the actor is flagged 0x400. Adapted from func_80231BA0 with the same static fire check. */
-#include "basetypes.h"
+#include "shared/weapon_fire.h"
+#include "shared/menu_language.h"
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+extern u8 D_80152789;
+extern s32 D_800E0D44[], D_800DCC68[];
+#endif
 
-typedef struct {
-    s16 action;
-    char pad2[0x16];
-} StateInfo;
-
-extern StateInfo D_800CE8DC[];
+extern WeaponActionRecord D_800CE8DC[];
 extern char D_80102B00[];
 extern u8 D_801462D5;
 extern s32 D_800D70E8[];
 extern f32 D_800C80A0;
 extern f32 D_800C80A4;
-extern char D_80145040;
+extern char D_80145040[];
 extern char D_80145088;
 extern s32 func_80222A80(void *, s16);
 extern s16 func_8022F95C(void *);
@@ -28,67 +28,23 @@ extern void func_802398F8(void *, void *, s32, s32, f32);
 extern s32 func_802301E4(void *, void *);
 extern void func_80214178(void *, void *, s32);
 
-typedef struct func_8023195C_S1 func_8023195C_S1;
-typedef struct func_8023195C_S2 func_8023195C_S2;
-typedef struct func_8023195C_S3 func_8023195C_S3;
-struct func_8023195C_S1 {
-    char pad0[0x8];
-    s32 unk8;
-    char pad8[0xC - 0x8 - sizeof(s32)];
-    s32 unkC;
-    char padC[0x10 - 0xC - sizeof(s32)];
-    s32 unk10;
-    char pad10[0x5D4 - 0x10 - sizeof(s32)];
-    s32 unk5D4;
-    char pad5D4[0x5DC - 0x5D4 - sizeof(s32)];
-    void* unk5DC;
-    char pad5DC[0x5E4 - 0x5DC - sizeof(void*)];
-    s32 unk5E4;
-    char pad5E4[0x5F4 - 0x5E4 - sizeof(s32)];
-    s16 unk5F4;
-    char pad5F4[0x62E - 0x5F4 - sizeof(s16)];
-    s16 unk62E;
-    char pad62E[0x650 - 0x62E - sizeof(s16)];
-    s16 unk650;
-    char pad650[0x6AC - 0x650 - sizeof(s16)];
-    s32 unk6AC;
-    char pad6AC[0x6B0 - 0x6AC - sizeof(s32)];
-    s32 unk6B0;
-    char pad6B0[0x770 - 0x6B0 - sizeof(s32)];
-    s16 unk770;
-    char pad770[0x11D8 - 0x770 - sizeof(s16)];
-    f32 unk11D8;
-    char pad11D8[0x1450 - 0x11D8 - sizeof(f32)];
-    s32 unk1450;
-};
-struct func_8023195C_S2 {
-    char pad0[0x100];
-    s32 unk100;
-    char pad100[0x1D8 - 0x100 - sizeof(s32)];
-    char* unk1D8;
-};
-struct func_8023195C_S3 {
-    char pad0[0x13C];
-    s32 unk13C;
-};
-
 static inline s32 can_fire(char *player) {
     s32 ammo;
 
-    if (((func_8023195C_S1 *)(player))->unk11D8 > 0.0f) {
+    if (((SharedPlayer *)(player))->views5E8.view11D8_147.unk11D8 > 0.0f) {
         return 0;
     }
-    if (((func_8023195C_S1 *)(player))->unk1450 != 0) {
+    if (((SharedPlayer *)(player))->views1450.view1450_0.unk1450 != 0) {
         return 1;
     }
     if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F54C(&D_80102B00[((func_8023195C_S1 *)(player))->unk5D4 * 0x190], ((func_8023195C_S1 *)(player))->unk62E);
+    ammo = func_8022F54C(&D_80102B00[((SharedPlayer *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E);
     if (ammo == 0) {
         func_8025DF54(0xD4D);
-        if (((func_8023195C_S1 *)(player))->unk5DC != 0) {
-            func_802398F8(&D_80145088, ((func_8023195C_S1 *)(player))->unk5DC, D_800D70E8[0], func_8022A590(&D_80145040, player),
+        if (((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC != 0) {
+            func_802398F8(&D_80145088, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D70E8[0], D_800E0D44, D_800DCC68, D_80152789), func_8022A590(D_80145040, player),
                           D_800C80A0);
         }
     }
@@ -99,28 +55,28 @@ void func_8023195C(void *actor, void *arg1) {
     char *player;
     s32 action;
 
-    player = ((func_8023195C_S2 *)(actor))->unk1D8;
-    action = D_800CE8DC[((func_8023195C_S1 *)(player))->unk650].action;
-    ((func_8023195C_S3 *)(arg1))->unk13C = 1;
-    if (func_80222A80(player, ((func_8023195C_S1 *)(player))->unk62E) == 0) {
-        ((func_8023195C_S1 *)(player))->unk770 = func_8022F95C(player);
+    player = ((Shared_Actor *)(actor))->entity;
+    action = D_800CE8DC[((SharedPlayer *)(player))->views5E8.view650_15.unk650].action;
+    ((WeaponFireState *)(arg1))->mode = 1;
+    if (func_80222A80(player, ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E) == 0) {
+        ((SharedPlayer *)(player))->views5E8.view770_91.unk770 = func_8022F95C(player);
         return;
     }
-    if ((((func_8023195C_S1 *)(player))->unk6AC & 0x4000) && can_fire(player) && ((func_8023195C_S1 *)(player))->unk5E4 != 0) {
-        if (((func_8023195C_S1 *)(player))->unk5F4 >= 0x19) {
-            func_8025DE74(0x42E, ((func_8023195C_S1 *)(player))->unk8, ((func_8023195C_S1 *)(player))->unkC, ((func_8023195C_S1 *)(player))->unk10, player + 0x8,
+    if ((((SharedPlayer *)(player))->views5E8.view6AC_45.unk6AC & 0x4000) && can_fire(player) && ((SharedPlayer *)(player))->views5E4.view5E4_0.unk5E4 != 0) {
+        if (((SharedPlayer *)(player))->views5E8.view5F4_11.unk5F4[0] >= 0x19) {
+            func_8025DE74(0x42E, ((SharedPlayer *)(player))->views0.positionBits.positionWords[0], ((SharedPlayer *)(player))->views0.positionBits.positionWords[1], ((SharedPlayer *)(player))->views0.positionBits.positionWords[2], player + 0x8,
                           -1);
             func_80214178(actor, arg1, 0xB);
-        } else if (((func_8023195C_S1 *)(player))->unk6B0 & 0x4000) {
+        } else if (((SharedPlayer *)(player))->views5E8.view6B0_46.unk6B0 & 0x4000) {
             func_8025DF54(0xD4D);
-            if (((func_8023195C_S1 *)(player))->unk5DC != 0) {
-                func_802398F8(&D_80145040 + 0x48, ((func_8023195C_S1 *)(player))->unk5DC, D_800D70E8[0],
-                              func_8022A590(&D_80145040, player), D_800C80A4);
+            if (((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC != 0) {
+                func_802398F8(D_80145040 + 0x48, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D70E8[0], D_800E0D44, D_800DCC68, (u8)D_80145040[0x1809]),
+                              func_8022A590(D_80145040, player), D_800C80A4);
             }
         }
         return;
     }
-    if (func_802301E4(actor, arg1) == 0 && !(((func_8023195C_S2 *)(actor))->unk100 & 0x400)) {
+    if (func_802301E4(actor, arg1) == 0 && !(((Shared_Actor *)(actor))->weaponFlags & 0x400)) {
         func_80214178(actor, arg1, action);
     }
 }

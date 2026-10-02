@@ -1,20 +1,24 @@
-#include "basetypes.h"
+#include "shared/results_options_screen.h"
 
 /* Opens the five option windows of screen D_800E4690: for each of options 0 to 4 it picks window
    0x149, 0x14C, 0x14D, 0x14E or 0x14F through jtbl_800E1A20, opens it under the screen's parent at
    0x970, opens its 0x14B child and shows that through func_8040E958. The loop walks the table with
    its own pointer, as the cartridge's strength-reduced dispatch does. */
-struct Screen {
-    char pad0[0x970];
-    void *parent;
-};
-
-extern struct Screen *D_800E4690;
+extern ResultsOptionsScreen *D_800E4690;
 extern void *jtbl_800E1A20[];
 extern void *func_8040ECB0(void *, s32);
 extern void func_8040E958(void *, s32);
 
+#if defined(VERSION_DE)
+enum { RESULTS_OPTION_329 = 327, RESULTS_OPTION_331 = 329, RESULTS_OPTION_332 = 330, RESULTS_OPTION_333 = 331, RESULTS_OPTION_334 = 332, RESULTS_OPTION_335 = 333 };
+#elif defined(VERSION_EU_X)
+enum { RESULTS_OPTION_329 = 333, RESULTS_OPTION_331 = 335, RESULTS_OPTION_332 = 336, RESULTS_OPTION_333 = 337, RESULTS_OPTION_334 = 338, RESULTS_OPTION_335 = 339 };
+#else
+enum { RESULTS_OPTION_329 = 329, RESULTS_OPTION_331 = 331, RESULTS_OPTION_332 = 332, RESULTS_OPTION_333 = 333, RESULTS_OPTION_334 = 334, RESULTS_OPTION_335 = 335 };
+#endif
+
 void func_804288E0(void) {
+    /* FAKEMATCH: retain the recovered table labels and pointer-walking dispatch. */
     static void *labels[0] __attribute__((section(".sdata"))) = {
         &&option_0, &&option_1, &&option_2, &&option_3, &&option_4, &&open
     };
@@ -28,20 +32,20 @@ void func_804288E0(void) {
         }
         goto **entry;
     option_0:
-        id = 0x149;
+        id = RESULTS_OPTION_329;
         goto open;
     option_1:
-        id = 0x14C;
+        id = RESULTS_OPTION_332;
         goto open;
     option_2:
-        id = 0x14D;
+        id = RESULTS_OPTION_333;
         goto open;
     option_3:
-        id = 0x14E;
+        id = RESULTS_OPTION_334;
         goto open;
     option_4:
-        id = 0x14F;
+        id = RESULTS_OPTION_335;
     open:
-        func_8040E958(func_8040ECB0(func_8040ECB0(D_800E4690->parent, id), 0x14B), 1);
+        func_8040E958(func_8040ECB0(func_8040ECB0(D_800E4690->parent, id), RESULTS_OPTION_331), 1);
     }
 }

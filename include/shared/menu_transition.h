@@ -66,4 +66,8 @@ struct func_8042A490_S9 {
     u8 unk10;
 };
 
+typedef struct MenuTransitionTimer { char pad0[0x1C]; s32 timer; } MenuTransitionTimer;
+typedef struct MenuSelectionMessage { void *first; s32 pad4[3]; s32 value; } MenuSelectionMessage;
+typedef struct MatchMenuObjects { char pad0[0x17F0]; s32 transition; } MatchMenuObjects;
+
 #endif

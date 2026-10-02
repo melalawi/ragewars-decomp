@@ -1,33 +1,47 @@
+#include "shared/layered_text.h"
+#include "shared/menu_language.h"
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+extern u8 D_80152789;
+#endif
 /* Measures three text layers, positions their labels, and renders the composite text. */
-typedef struct {
-    int value;
-    short mode, reserved;
-    int flags, fieldC, field10;
-    int *text;
-    int field18, spacing, field20, field24;
-} Text;
-typedef struct { int field0, width, height, rest[7]; } Metrics;
-typedef struct { char pad[0x14]; int x, right, y; } Rect;
-extern void func_8043F69C(Text *, Metrics *);
-extern void func_8044044C(Text *, Rect *, Rect *, int);
-extern void func_8043FFAC(Text *, Rect *, Rect *, int, int, int);
-void func_80440618(Text *source, Rect *position, Rect *bounds, int flags) {
-    Text current;
-    Metrics first, second, third;
+
+
+
+extern void func_8043F69C(LayeredText *, TextLayerMetrics *);
+extern void func_8044044C(LayeredText *, TextLayerRect *, TextLayerRect *, int);
+extern void func_8043FFAC(LayeredText *, TextLayerRect *, TextLayerRect *, int, int, int);
+#if defined(VERSION_EU_X)
+extern void func_804403CC(LayeredText *, TextLayerMetrics *);
+#endif
+void func_80440618(LayeredText *source, TextLayerRect *position, TextLayerRect *bounds, int flags) {
+    LayeredText current;
+    TextLayerMetrics first, second, third;
     int center;
-    Text *draw;
+    LayeredText *draw;
     center = (bounds->x + bounds->right) / 2;
     current = *source;
     current.mode = 0;
+#if defined(VERSION_EU_X)
+    func_804403CC(&current, &first);
+#else
     func_8043F69C(&current, &first);
+#endif
     current = *source;
     current.mode = 1;
     current.text = 0;
+#if defined(VERSION_EU_X)
+    func_804403CC(&current, &second);
+#else
     func_8043F69C(&current, &second);
+#endif
     current = *source;
     current.mode = 1;
     current.text = 0;
+#if defined(VERSION_EU_X)
+    func_804403CC(&current, &third);
+#else
     func_8043F69C(&current, &third);
+#endif
     current = *source;
     current.text = 0;
     position->y += first.height;
@@ -46,5 +60,5 @@ void func_80440618(Text *source, Rect *position, Rect *bounds, int flags) {
         position->x = center - first.width / 2;
     }
     draw = &current;
-    func_8043FFAC(draw, position, bounds, flags, *draw->text, 0);
+    func_8043FFAC(draw, position, bounds, flags, RW_LOCALIZED_TEXT(*draw->text, draw->text, draw->text, D_80152789), 0);
 }

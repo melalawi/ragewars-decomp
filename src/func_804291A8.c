@@ -1,4 +1,5 @@
 #include "basetypes.h"
+#include "shared/menu_transition.h"
 
 /* Handles the menu message func_8029AA08 reports after func_8029A73C. 0x1D9 sends code 3 to
    func_8042EB68 unless func_8029A9A0(0) reports 0x16; then it stops the match objects at D_80145088
@@ -20,13 +21,17 @@ extern void func_8025470C(s32);
 extern void func_8042EB68(s32);
 extern void func_8029A8A8(void);
 
-typedef struct func_804291A8_S1 func_804291A8_S1;
-struct func_804291A8_S1 {
-    char pad0[0x17F0];
-    s32 unk17F0;
-};
+
+#if defined(VERSION_DE)
+enum { MENU_804291A8_473 = 469, MENU_804291A8_474 = 470 };
+#elif defined(VERSION_EU_X)
+enum { MENU_804291A8_473 = 477, MENU_804291A8_474 = 478 };
+#else
+enum { MENU_804291A8_473 = 473, MENU_804291A8_474 = 474 };
+#endif
 
 s32 func_804291A8(void) {
+    /* FAKEMATCH: preserve resident jump-table labels and recovered dispatch schedule. */
     static void *labels[0] __attribute__((section(".sdata"))) = {
         &&send_20, &&send_10, &&send_15, &&send_10_again, &&send_3
     };
@@ -36,7 +41,7 @@ s32 func_804291A8(void) {
 
     func_8029A73C();
     switch (func_8029AA08()) {
-    case 0x1D9:
+    case MENU_804291A8_473:
         if (func_8029A9A0(0) != 0x16) {
             goto send_3;
         }
@@ -48,7 +53,7 @@ s32 func_804291A8(void) {
             func_8025470C(1);
         }
         level = (u8)objects[0x124D];
-        ((func_804291A8_S1 *)(objects))->unk17F0 = 8;
+        ((MatchMenuObjects *)(objects))->transition = 8;
         if (level >= 5) {
             goto send_3;
         }
@@ -68,7 +73,7 @@ s32 func_804291A8(void) {
     send_3:
         code = 3;
         goto send;
-    case 0x1DA:
+    case MENU_804291A8_474:
         if (func_8029A9A0(0) == 11) {
             code = 11;
         } else {

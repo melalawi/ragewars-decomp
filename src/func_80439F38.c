@@ -12,7 +12,16 @@ extern void func_80299368(s32);
 extern void func_8042EB68(s32);
 extern void func_8029A8A8(void);
 
+#if defined(VERSION_DE)
+enum { MENU_80439F38_986 = 980, MENU_80439F38_987 = 981 };
+#elif defined(VERSION_EU_X)
+enum { MENU_80439F38_986 = 990, MENU_80439F38_987 = 991 };
+#else
+enum { MENU_80439F38_986 = 986, MENU_80439F38_987 = 987 };
+#endif
+
 s32 func_80439F38(void) {
+    /* FAKEMATCH: preserve resident jump-table labels and recovered dispatch schedule. */
     static void *labels[0] __attribute__((section(".sdata"))) = {
         &&wait_20, &&wait_15, &&wait_10, &&wait_3
     };
@@ -21,7 +30,7 @@ s32 func_80439F38(void) {
 
     func_8029A73C();
     switch (func_8029AA08()) {
-    case 0x3DA:
+    case MENU_80439F38_986:
         setting = D_801462D5;
         if (setting >= 5) {
             goto wait_3;
@@ -41,7 +50,7 @@ s32 func_80439F38(void) {
     wait:
         func_80299368(time);
         return 0;
-    case 0x3DB:
+    case MENU_80439F38_987:
         func_8042EB68(-1);
         func_8029A8A8();
         return 0;

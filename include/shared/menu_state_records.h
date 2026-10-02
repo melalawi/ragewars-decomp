@@ -4,14 +4,28 @@
 #include "basetypes.h"
 
 typedef struct Record {
+    union {
+        struct {
     u8 name[8];
     s32 time;
     s8 owner;
     s8 player;
-    char padE[0x189 - 0xE];
+    char padE[1];
+    u8 slot; /* +0xF: event-result text selection */
+    char pad10[7];
+    u8 count;
+    char pad18[0x25 - 0x18];
+    u8 rank; /* +0x25: achievement rank */
+    char pad26[0x4A - 0x26];
+    u8 achievementFlags[0x189 - 0x4A];
     u8 setting[5];
     char pad18E[0x190 - 0x18E];
+        };
+        struct { char pad0[0x6C]; s32 wins, kills, deaths; } statistics;
+    };
 } Record;
+
+typedef struct PakDisplayName { char text[0x3C]; char code[70 - 0x3C]; } PakDisplayName;
 
 typedef struct Name {
     u8 flags[2];
