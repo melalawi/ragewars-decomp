@@ -5,55 +5,11 @@
    plays the winner's voice on the twentieth frame, raises the banner blink six frames later, and
    fades the two banner sprites out by 30 per frame before hiding them. Returns zero. */
 #include "basetypes.h"
+#include "n64sdk.h"
+#include "unbake_gbi.h"
+#include "shared/resultscreens.h"
 
-typedef struct {
-    u32 w0;
-    u32 w1;
-} Gfx;
-
-#define G_SETSCISSOR 0xED
-#define G_SC_NON_INTERLACE 0
-#define _SHIFTL(v, s, w) ((u32)(((u32)(v) & ((1 << (w)) - 1)) << (s)))
-
-#define gDPSetScissor(pkt, mode, ulx, uly, lrx, lry)                       \
-    {                                                                      \
-        Gfx *_g = (Gfx *)(pkt);                                            \
-        _g->w0 = _SHIFTL(G_SETSCISSOR, 24, 8) |                            \
-                 _SHIFTL((s32)((f32)(ulx) * 4.0f), 12, 12) |               \
-                 _SHIFTL((s32)((f32)(uly) * 4.0f), 0, 12);                 \
-        _g->w1 = _SHIFTL(mode, 24, 2) |                                    \
-                 _SHIFTL((s32)((f32)(lrx) * 4.0f), 12, 12) |               \
-                 _SHIFTL((s32)((f32)(lry) * 4.0f), 0, 12);                 \
-    }
-
-struct Fill {
-    s32 mode;
-    f32 color[4];
-};
-
-struct Sprite {
-    char pad0[0x10];
-    u8 alpha;
-};
-
-struct Screen {
-    char pad0[0x8];
-    char panels[4][0xC0];
-    char tie[0x3DC - 0x308];
-    s32 state;
-    char pad3E0[0x434 - 0x3E0];
-    s32 winnerSlot;
-    s32 winner;
-    char pad43C[0x450 - 0x43C];
-    struct Sprite *bannerShadow;
-    struct Sprite *banner;
-    char pad458[0x464 - 0x458];
-    s32 frames;
-    s32 blinkDelay;
-    s32 blinking;
-};
-
-extern struct Screen *D_800E4F60;
+extern struct VersusResultsScreen *D_800E4F60;
 extern s32 D_800D15E0;
 extern f32 D_800D15E4[4];
 extern s32 D_800E28D0;
@@ -63,17 +19,18 @@ extern s32 D_80154024;
 
 extern s32 func_8029A958(void);
 extern void func_804399D0(char *);
+extern void func_804397F0_auto(char *);
 extern s32 func_8042B474(s32);
 extern s32 func_8042B398(s32, s32);
 extern void func_804220D8(s32);
-extern void func_8040E958(struct Sprite *, s32);
+extern void func_8040E958(struct MenuBannerSprite *, s32);
 
 s32 func_8042A1D0(void *arg0, void *arg1, s32 event) {
     s32 i;
     s32 alpha;
 
     if (event == 1 && (D_800E4F60->state == 3 || D_800E4F60->state == 8 || D_800E4F60->state == 9)) {
-        ((struct Fill *)&D_800D15E0)->mode = 0;
+        ((struct MenuRenderFill *)&D_800D15E0)->mode = 0;
         D_800D15E0 = 1;
         D_800D15E4[0] = 255.0f;
         D_800D15E4[1] = 255.0f;
@@ -83,11 +40,19 @@ s32 func_8042A1D0(void *arg0, void *arg1, s32 event) {
         D_800D15E4[3] = 210.0f;
         if (func_8029A958() == 0x14 && D_80154024 == 0) {
             for (i = 0; i < 4; i++) {
+#if defined(VERSION_DE)
+                func_804397F0_auto(D_800E4F60->panels[i]);
+#else
                 func_804399D0(D_800E4F60->panels[i]);
+#endif
             }
         }
         if (D_800E4F60->winner == 0) {
+#if defined(VERSION_DE)
+            func_804397F0_auto(D_800E4F60->tie);
+#else
             func_804399D0(D_800E4F60->tie);
+#endif
         }
         D_800D15E0 = 0;
         D_800D15E4[3] = 255.0f;
