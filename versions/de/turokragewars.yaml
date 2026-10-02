@@ -453,7 +453,7 @@ segments:
       - [0x01A080, c, func_80219480]
       - [0x01A090, c, func_80219490]
       - [0x01A288, c, func_80219688]
-      - [0x01A640, asm, func_80219A40]
+      - [0x01A640, c, func_80219A40]
       - [0x01AED4, c, func_8021A2D4]
       - [0x01B38C, c, func_8021A78C]
       - [0x01B5A4, asm, func_8021A9A4]

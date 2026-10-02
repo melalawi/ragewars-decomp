@@ -1,4 +1,3 @@
-#ifdef NON_MATCHING
 /* Selects and records a player's reaction to an interaction. */
 #include "basetypes.h"
 #include "shared/reaction_statistics.h"
@@ -105,7 +104,6 @@ void func_80219A40(ReactionActor *arg0, s32 arg1, ReactionInteraction *arg2) {
     s32 temp_v1_9;
     s32 var_s3;
     s32 var_v0_2;
-    s32 var_v0_3;
     s32 var_v1;
     s32 var_v1_2;
     ReactionSource *temp_a0_2;
@@ -115,11 +113,11 @@ void func_80219A40(ReactionActor *arg0, s32 arg1, ReactionInteraction *arg2) {
     s32 temp_v1;
     u16 temp_v1_4;
     s32 temp_v1_6; /* FAKEMATCH: share the projectile selector and actor score index so the allocator retains v1. */
-    s32 temp_a0_6; /* FAKEMATCH: recycle the score index for the first load to keep the independent update. */
+    s32 temp_a0_6;
     s32 temp_a0_8;
     s32 score_owner_6;
     s32 score_owner_8;
-    volatile s32 *first_score_slot; /* FAKEMATCH: retain the score load at the original first-update site. */
+    volatile s32 *first_score_slot; /* FAKEMATCH: keep the first score address separate through allocation. */
     s32 temp_v1_12;
     u8 temp_v1_3;
     ReactionObjectKind *temp_a0;
@@ -479,10 +477,9 @@ block_88:
 #endif
                                                     var_v1_4 = first_score_slot;
                                                     if (score_owner_6 != temp_a0_6) {
-                                                        do { /* FAKEMATCH: retain the independent score update before its shared store. */
-                                                            temp_a0_6 = *first_score_slot;
-                                                            var_v0_3 = temp_a0_6 + 1;
-                                                            goto block_135;
+                                                        do { /* FAKEMATCH: spell out each score store so cross jumping shares only the store. */
+                                                            *first_score_slot = *first_score_slot + 1;
+                                                            goto reaction_statistics_done;
                                                         } while (0);
                                                     }
                                                 }
@@ -524,18 +521,18 @@ block_124:
                                                 var_v1_4 = &D_801468CC[temp_a0_8];
 #endif
                                                 if (score_owner_8 != temp_a0_8) {
-                                                    var_v0_3 = *var_v1_4 + 1;
+                                                    *var_v1_4 = *var_v1_4 + 1;
                                                 } else {
 block_134:
-                                                    var_v0_3 = *var_v1_4 - 1;
+                                                    *var_v1_4 = *var_v1_4 - 1;
                                                 }
-block_135:
-                                                *var_v1_4 = var_v0_3;
+
                                             }
                                         }
                                     }
                                 }
                             }
+reaction_statistics_done:
                             func_80282A18(&D_80121990, (s32) temp_s1);
                             func_802830A0(&D_80121990, (s32) temp_s1);
                         }
@@ -545,4 +542,3 @@ block_135:
         }
     }
 }
-#endif
