@@ -1,3 +1,4 @@
+/* NON_MATCHING: PAL owner draft has only three reordered words; PAL asm retained. */
 /* Saves the loaded profile record to the Controller Pak from the pak menu: when the pak is
    ready it checks the free space against the record's size and that a note slot is free (showing
    prompt D_44F5EC and returning 0 when either fails), picks an unused extension through
@@ -5,24 +6,13 @@
    blocks D_800E28B0 and D_800E28B4 and, after a write attempt, shows the saved or failed prompt
    with the controller port's label, returning 1. */
 #include "basetypes.h"
-
-typedef struct {
-    char pad0[0x698];
-    char *title;
-} Player;
-
-typedef struct {
-    char pad0[4];
-    s8 channel;
-} Slot;
-
-typedef struct {
-    char pad0[0x14];
-    char *text;
-    char pad18[4];
-    Player *player;
-    Slot *slot;
-} Menu;
+#include "shared/pak_save_menu.h"
+#include "shared/menu_language.h"
+#include "shared/settings.h"
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+extern Shared_Settings D_801462C8;
+extern char *D_800E25A4[], *D_800E25D4[], *D_800DDEB0[], *D_800DDED4[];
+#endif
 
 extern s32 D_8015375C;
 extern s32 D_80153750;
@@ -50,10 +40,10 @@ extern s32 func_80405454(s32 ch, u8 *ext);
 extern s32 func_80404958(s32 ch, s32 size, void *data, char *name, u8 *ext, char *code);
 extern void func_802538A8(s32);
 extern void func_802537D8(s32, void *);
-extern void func_804426E4(char *, char *, Player *, char *, char *);
+extern void func_804426E4(char *, char *, SharedPlayer *, char *, char *);
 
-static inline Player *func_80407290_channel(Menu *menu, s32 *ch) {
-    Player *player;
+static inline SharedPlayer *func_80407290_channel(PakSaveMenu *menu, s32 *ch) {
+    SharedPlayer *player;
 
     if (D_8015375C != 0) {
         *ch = D_800E28C8;
@@ -86,17 +76,20 @@ static inline char *func_80407290_port(s32 port) {
     return label;
 }
 
-s32 func_80407290(void *unused, Menu *menu) {
+s32 func_80407290(void *unused, PakSaveMenu *menu) {
     s32 result;
     s32 prompt;
     s32 written;
-    Player *player;
+    SharedPlayer *player;
     s32 ch;
     u32 needed;
     s32 freeSpace;
     s32 noteCount;
     u8 ext[8];
     char **titles;
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+    Shared_Settings *settings;
+#endif
 
     result = 0;
     prompt = 1;
@@ -113,13 +106,19 @@ s32 func_80407290(void *unused, Menu *menu) {
                     prompt = 0;
                     result = func_80405454(ch, ext);
                     if (result == 0) {
+
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+                        settings = &D_801462C8;
+                        /* FAKEMATCH: preserve the recovered base pointer before resource selection. */
+                        do {} while (0);
+#endif
                         written = 1;
-                        result = func_80404958(ch, 0x18, D_80153738, titles[0], ext, D_800D770C);
+                        result = func_80404958(ch, 0x18, D_80153738, RW_LOCALIZED_TEXT(titles[0], D_800E25A4, D_800DDEB0, settings->language), ext, RW_LOCALIZED_TEXT(D_800D770C, D_800E25D4, D_800DDED4, settings->language));
                     }
                 }
             }
             if (prompt) {
-                func_804426E4(D_8014561C, D_44F5EC, player, player->title, menu->text);
+                func_804426E4(D_8014561C, D_44F5EC, player, player->views5E8.view698_38.title, menu->text);
                 return 0;
             }
         }
@@ -139,9 +138,9 @@ s32 func_80407290(void *unused, Menu *menu) {
     D_800E28BC = 0;
     if (written) {
         if (result == 0) {
-            func_804426E4(D_8014561C, D_44F778, player, player->title, func_80407290_port(ch));
+            func_804426E4(D_8014561C, D_44F778, player, player->views5E8.view698_38.title, func_80407290_port(ch));
         } else {
-            func_804426E4(D_8014561C, D_44F808, player, player->title, func_80407290_port(ch));
+            func_804426E4(D_8014561C, D_44F808, player, player->views5E8.view698_38.title, func_80407290_port(ch));
         }
     }
     return 1;
