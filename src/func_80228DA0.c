@@ -1,3 +1,4 @@
+/* NON_MATCHING: PAL asm rows are retained after match submit refused shared C/.rodata ownership; this draft is exact in all five explicit VERSION trials. */
 /* Bends a moving object toward the players' zoom anchors: for every player in the list from 0x20
    with its effect enabled at 0x5D0 while zoomed in at 0x11FC, it takes the direction from the object
    to the anchor at 0x1200 and, beyond squared distance D_800C7D08, scales it by D_800C7D0C over the
@@ -6,12 +7,11 @@
    with the object's velocity, adding it to the velocity at 0x1C; when any player acted the normalised
    velocity is stored at 0x174. */
 #include "basetypes.h"
-
-typedef struct {
-    f32 x, y, z;
-} Vec3;
+#include "shared/zoomeffect.h"
 
 extern f32 D_800C7D00;
+extern f32 D_800C2EB8;
+extern f32 D_800C2EF8;
 extern f32 D_800C7D08;
 extern f32 D_800C7D0C;
 extern f32 D_800C7D10;
@@ -20,34 +20,6 @@ extern void func_80271FD8(Vec3 *, Vec3 *, Vec3 *);
 extern void func_802720EC(Vec3 *);
 extern void func_8027200C(Vec3 *, Vec3 *, f32);
 extern void func_80271FA4(Vec3 *, Vec3 *, Vec3 *);
-
-typedef struct func_80228DA0_S1 func_80228DA0_S1;
-typedef struct func_80228DA0_S2 func_80228DA0_S2;
-typedef struct func_80228DA0_S3 func_80228DA0_S3;
-struct func_80228DA0_S1 {
-    char pad0[0x20];
-    char* unk20;
-};
-struct func_80228DA0_S2 {
-    char pad0[0x8];
-    Vec3 unk8;
-    char pad8[0x1C - 0x8 - sizeof(Vec3)];
-    Vec3 unk1C;
-    char pad1C[0x174 - 0x1C - sizeof(Vec3)];
-    Vec3 unk174;
-};
-struct func_80228DA0_S3 {
-    char pad0[0x5D0];
-    s32 unk5D0;
-    char pad5D0[0x11FC - 0x5D0 - sizeof(s32)];
-    f32 unk11FC;
-    char pad11FC[0x1200 - 0x11FC - sizeof(f32)];
-    Vec3 unk1200;
-    char pad1200[0x120C - 0x1200 - sizeof(Vec3)];
-    s32 unk120C;
-    char pad120C[0x16E0 - 0x120C - sizeof(s32)];
-    char* unk16E0;
-};
 
 void func_80228DA0(void *game, void *object) {
     Vec3 dir;
@@ -62,26 +34,32 @@ void func_80228DA0(void *game, void *object) {
     f32 align;
     f32 zero;
 
-    player = ((func_80228DA0_S1 *)(game))->unk20;
+    player = ((struct ZoomEffectGame *)(game))->unk20;
     pulled = 0;
     if (player == 0) {
         goto done;
     }
-    velocity = &((func_80228DA0_S2 *)(object))->unk1C;
+    velocity = &((Shared_Particle *)(object))->inst.velocity;
     zero = 0.0f;
+#if defined(VERSION_EU)
+    base = D_800C2EB8;
+#elif defined(VERSION_EU_X)
+    base = D_800C2EF8;
+#else
     base = (&D_800C7D00)[1];
-    for (; player != 0; player = ((func_80228DA0_S3 *)(player))->unk16E0) {
-        if (((func_80228DA0_S3 *)(player))->unk5D0 == 0) {
+#endif
+    for (; player != 0; player = ((struct ZoomEffectPlayer *)(player))->unk16E0) {
+        if (((struct ZoomEffectPlayer *)(player))->unk5D0 == 0) {
             continue;
         }
         zoomed = 0;
-        if (((func_80228DA0_S3 *)(player))->unk11FC > zero) {
+        if (((struct ZoomEffectPlayer *)(player))->unk11FC > zero) {
             zoomed = 1;
         }
         if (!zoomed) {
             continue;
         }
-        func_80271FD8(&dir, &((func_80228DA0_S3 *)(player))->unk1200, &((func_80228DA0_S2 *)(object))->unk8);
+        func_80271FD8(&dir, &((struct ZoomEffectPlayer *)(player))->unk1200, &((Shared_Particle *)(object))->inst.pos);
         dist = dir.x * dir.x + dir.y * dir.y + dir.z * dir.z;
         func_802720EC(&dir);
         pulled = 1;
@@ -90,10 +68,10 @@ void func_80228DA0(void *game, void *object) {
             if (D_800D2988 < base) {
                 strength *= D_800D2988;
             }
-            if (((func_80228DA0_S3 *)(player))->unk120C == 0) {
+            if (((struct ZoomEffectPlayer *)(player))->unk120C == 0) {
                 strength = -strength;
             }
-            heading = ((func_80228DA0_S2 *)(object))->unk1C;
+            heading = ((Shared_Particle *)(object))->inst.velocity;
             func_802720EC(&heading);
             align = dir.x;
             align *= heading.x;
@@ -111,9 +89,9 @@ void func_80228DA0(void *game, void *object) {
     }
 done:
     if (pulled) {
-        dir = ((func_80228DA0_S2 *)(object))->unk1C;
+        dir = ((Shared_Particle *)(object))->inst.velocity;
         func_802720EC(&dir);
-        ((func_80228DA0_S2 *)(object))->unk174 = dir;
+        ((Shared_Particle *)(object))->unk174 = dir;
     }
 }
 

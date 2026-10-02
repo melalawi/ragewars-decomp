@@ -1,19 +1,14 @@
+/* NON_MATCHING: PAL asm rows are retained after match submit refused shared C/.rodata ownership; this draft is exact in all five explicit VERSION trials. */
 #include "basetypes.h"
+#include "shared/body.h"
+#include "shared/menuevents.h"
 
 /* Dispatches event arg1 through this file's 12-byte handler table, whose rows hold an event at D_800E5954, an actor kind at D_800E5958 and a handler at D_800E595C: the first row whose event equals arg1 and whose kind equals the actor's halfword kind at 0xC, or is the wildcard 0x7530, receives all five arguments and its result is returned; with no such row, or an empty table, the result is zero. Adapted from func_802A2B50. */
 
-typedef s32 (*Handler80439938)(void *, s32, s32, s32, s32);
-
-typedef struct { s32 value; char pad[8]; } FieldRow;
-extern FieldRow D_800E5954[];
-extern FieldRow D_800E5958[];
-extern Handler80439938 D_800E595C;
-
-typedef struct func_80439938_S1 func_80439938_S1;
-struct func_80439938_S1 {
-    char pad0[0xC];
-    s16 unkC;
-};
+extern MenuEventField D_800E5954[];
+extern MenuEventField D_800F1F74[];
+extern MenuEventField D_800E5958[];
+extern MenuEventHandler D_800E595C;
 
 s32 func_80439938(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     char *entry;
@@ -27,16 +22,20 @@ s32 func_80439938(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
         entry = (char *)&D_800E595C;
         index = 0;
         do {
+#if defined(VERSION_EU)
+            if (D_800F1F74[index].value == arg1) {
+#else
             if (D_800E5954[index].value == arg1) {
-                actor_kind = ((func_80439938_S1 *)(arg0))->unkC;
+#endif
+                actor_kind = ((Shared_Body *)(arg0))->kind;
                 table_kind = D_800E5958[index].value;
                 if ((table_kind == actor_kind) || (table_kind == wildcard)) {
-                    return (*(Handler80439938 *)entry)(arg0, arg1, arg2, arg3, arg4);
+                    return (*(MenuEventHandler *)entry)(arg0, arg1, arg2, arg3, arg4);
                 }
             }
             entry += 0xC;
             index++;
-        } while (*(Handler80439938 *)entry != 0);
+        } while (*(MenuEventHandler *)entry != 0);
     }
     return 0;
 }
