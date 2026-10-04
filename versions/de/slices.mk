@@ -3837,7 +3837,8 @@ U_func_80294410_de := 0x80294410:0x95010:0x8
 A_func_80294410_de := 0x80294410
 U_func_80294418_de := 0x80294418:0x95018:0x1C
 A_func_80294418_de := 0x80294418
-S_00095034 := 610356 84
+U_func_80294434_de := 0x80294434:0x95034:0x54
+A_func_80294434_de := 0x80294434
 U_func_80294488_de := 0x80294488:0x95088:0x20
 A_func_80294488_de := 0x80294488
 U_func_802944A8_de := 0x802944A8:0x950A8:0x1C
@@ -9502,7 +9503,7 @@ PIECES := \
   $(B)/units/func_802943C4_de.bin \
   $(B)/units/func_80294410_de.bin \
   $(B)/units/func_80294418_de.bin \
-  $(B)/slices/00095034.bin \
+  $(B)/units/func_80294434_de.bin \
   $(B)/units/func_80294488_de.bin \
   $(B)/units/func_802944A8_de.bin \
   $(B)/units/func_802944C4_de.bin \
