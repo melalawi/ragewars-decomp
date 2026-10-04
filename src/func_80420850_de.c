@@ -16,7 +16,7 @@ extern Choice D_800DFA00_de[];
 extern u8 D_800FEB57[][0x190];
 extern s32 func_802744D4_de(void);
 extern s32 func_8040EBD0_de(void *widget);
-extern s32 func_8041F1D8_de(s32 id);
+
 extern s32 func_8041F18C_de(s32 id);
 extern void *func_8040EC30_de(void *parent, s32 id);
 extern void func_8041CAD8_de(void *preview, s32 a1, s32 model, s32 a3, s32 a4, Vec3 scale, Vec3 position, f32 angle, s32 flags);

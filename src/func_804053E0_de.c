@@ -8,7 +8,7 @@
 
 
 
-extern s32 D_8014D260[];
+
 extern struct Record_func_804053E0_de *D_800DE804;
 extern s32 func_804057EC_de(s32);
 

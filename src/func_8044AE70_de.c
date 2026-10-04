@@ -18,7 +18,7 @@ extern char D_8010BBE0[];
 extern s32 D_800CBC1C;
 
 extern u8 D_800CBC12;
-extern s32 D_8010BBF0[];
+
 extern s32 D_8010BC28[];
 extern s32 D_8010B310[];
 extern ControllerProfile D_8010B328[];

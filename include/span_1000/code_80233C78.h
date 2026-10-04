@@ -1,103 +1,62 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80233C78_H
 #define UNBAKE_SPAN_1000_CODE_80233C78_H
 #include "common/types.h"
+#include "gfx.h"
 #include "span_1000/types.h"
 #include "../types.h"
-struct Race;
+struct Entity_func_80233C88_de;
+typedef struct Entity_func_80233C88_de Entity_func_80233C88_de;
+
 struct Race;
 typedef struct Race Race;
 
-/* unbake evidence input: c3RydWN0IFJhY2U7CnR5cGVkZWYgc3RydWN0IFJhY2UgUmFjZTsK */
-
-struct Racer;
 struct Racer;
 typedef struct Racer Racer;
 
-/* unbake evidence input: c3RydWN0IFJhY2VyOwp0eXBlZGVmIHN0cnVjdCBSYWNlciBSYWNlcjsK */
-
-struct State44;
 struct State44;
 typedef struct State44 State44;
 
-/* unbake evidence input: c3RydWN0IFN0YXRlNDQ7CnR5cGVkZWYgc3RydWN0IFN0YXRlNDQgU3RhdGU0NDsK */
+struct ThreeChannels;
+typedef struct ThreeChannels ThreeChannels;
 
-struct UnitVp;
 struct UnitVp;
 typedef struct UnitVp UnitVp;
 
-/* unbake evidence input: c3RydWN0IFVuaXRWcDsKdHlwZWRlZiBzdHJ1Y3QgVW5pdFZwIFVuaXRWcDsK */
-
-struct World_func_80236F1C_de;
 struct World_func_80236F1C_de;
 typedef struct World_func_80236F1C_de World_func_80236F1C_de;
 
-/* unbake evidence input: c3RydWN0IFdvcmxkX2Z1bmNfODAyMzZGMUNfZGU7CnR5cGVkZWYgc3RydWN0IFdvcmxkX2Z1bmNfODAyMzZGMUNfZGUgV29ybGRfZnVuY184MDIzNkYxQ19kZTsK */
-
-struct func_80234DD0_S1;
 struct func_80234DD0_S1;
 typedef struct func_80234DD0_S1 func_80234DD0_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzRERDBfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzRERDBfUzEgZnVuY184MDIzNEREMF9TMTsK */
-
-struct func_80234DD0_S2;
 struct func_80234DD0_S2;
 typedef struct func_80234DD0_S2 func_80234DD0_S2;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzRERDBfUzI7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzRERDBfUzIgZnVuY184MDIzNEREMF9TMjsK */
-
-struct func_80238F14_S1;
 struct func_80238F14_S1;
 typedef struct func_80238F14_S1 func_80238F14_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzhGMTRfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzhGMTRfUzEgZnVuY184MDIzOEYxNF9TMTsK */
-
-struct func_802390C0_S1;
 struct func_802390C0_S1;
 typedef struct func_802390C0_S1 func_802390C0_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkwQzBfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzkwQzBfUzEgZnVuY184MDIzOTBDMF9TMTsK */
-
-struct func_802390E4_S1;
 struct func_802390E4_S1;
 typedef struct func_802390E4_S1 func_802390E4_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkwRTRfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzkwRTRfUzEgZnVuY184MDIzOTBFNF9TMTsK */
-
-struct func_8023912C_S2;
 struct func_8023912C_S2;
 typedef struct func_8023912C_S2 func_8023912C_S2;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkxMkNfUzI7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzkxMkNfUzIgZnVuY184MDIzOTEyQ19TMjsK */
-
-struct func_80239184_S1;
 struct func_80239184_S1;
 typedef struct func_80239184_S1 func_80239184_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkxODRfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzkxODRfUzEgZnVuY184MDIzOTE4NF9TMTsK */
-
-struct func_8023919C_S1;
 struct func_8023919C_S1;
 typedef struct func_8023919C_S1 func_8023919C_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkxOUNfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzkxOUNfUzEgZnVuY184MDIzOTE5Q19TMTsK */
-
-struct func_802392DC_S1;
 struct func_802392DC_S1;
 typedef struct func_802392DC_S1 func_802392DC_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkyRENfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzkyRENfUzEgZnVuY184MDIzOTJEQ19TMTsK */
-
-struct func_80239314_S1;
 struct func_80239314_S1;
 typedef struct func_80239314_S1 func_80239314_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkzMTRfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzkzMTRfUzEgZnVuY184MDIzOTMxNF9TMTsK */
-
-struct func_802393C8_S1;
 struct func_802393C8_S1;
 typedef struct func_802393C8_S1 func_802393C8_S1;
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkzQzhfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyMzkzQzhfUzEgZnVuY184MDIzOTNDOF9TMTsK */
 
 struct Entity_func_80233C88_de;
 struct Entity_func_80233C88_de {
@@ -109,27 +68,11 @@ struct Entity_func_80233C88_de {
     char pad2AC[0x520 - 0x2AC];
     u8 color[4];
 };
-/* unbake evidence input: c3RydWN0IEVudGl0eV9mdW5jXzgwMjMzQzg4X2RlIHsKICAgIGNoYXIgcGFkMFsweDI5Q107CiAgICBmMzIgd2lkdGg7CiAgICBmMzIgaGVpZ2h0OwogICAgZjMyIHg7CiAgICBmMzIgeTsKICAgIGNoYXIgcGFkMkFDWzB4NTIwIC0gMHgyQUNdOwogICAgdTggY29sb3JbNF07Cn07 */
-
-struct ThreeChannels;
-struct ThreeChannels {
-    char pad0[0x520];
-    u8 first;
-    u8 second;
-    u8 third;
-};
-/* unbake evidence input: c3RydWN0IFRocmVlQ2hhbm5lbHMgewogICAgY2hhciBwYWQwWzB4NTIwXTsKICAgIHU4IGZpcnN0OwogICAgdTggc2Vjb25kOwogICAgdTggdGhpcmQ7Cn07 */
-
-struct UnitVp;
 struct UnitVp;
 struct UnitVp {
     s16 vscale[4];
     s16 vtrans[4];
 };
-
-/* unbake evidence input: c3RydWN0IFVuaXRWcDsKc3RydWN0IFVuaXRWcCB7CiAgICBzMTYgdnNjYWxlWzRdOwogICAgczE2IHZ0cmFuc1s0XTsKfTsK */
-
-struct Racer;
 struct Racer;
 struct Racer {
     char pad0[4];
@@ -147,11 +90,6 @@ struct Racer {
     char pad523[0x31];
     char sound[0x40];
 };
-
-/* unbake evidence input: c3RydWN0IFJhY2VyOwpzdHJ1Y3QgUmFjZXIgewogICAgY2hhciBwYWQwWzRdOwogICAgc3RydWN0IFJhY2VyICpuZXh0OwogICAgY2hhciBwYWQ4WzB4MTE4XTsKICAgIHMzMiBlZmZlY3Q7CiAgICB1MTYgcGFkMTI0OwogICAgdTE2IGVmZmVjdEFyZzsKICAgIGNoYXIgcGFkMTI4WzB4MTg4XTsKICAgIFVuaXRWcCB2aWV3cG9ydHNbMl07CiAgICBjaGFyIHBhZDJEMFsweDI1MF07CiAgICB1OCBoaXQ7CiAgICB1OCBib29zdDsKICAgIHU4IHNwaW47CiAgICBjaGFyIHBhZDUyM1sweDMxXTsKICAgIGNoYXIgc291bmRbMHg0MF07Cn07Cg== */
-
-struct Race;
-struct Racer;
 struct Race;
 struct Racer;
 struct Race {
@@ -163,10 +101,6 @@ struct Race {
     char pad34[0xC];
     Racer self;
 };
-
-/* unbake evidence input: c3RydWN0IFJhY2U7CnN0cnVjdCBSYWNlcjsKc3RydWN0IFJhY2UgewogICAgczMyIG11c2ljOwogICAgY2hhciBwYWQ0WzB4MUNdOwogICAgc3RydWN0IFJhY2VyICpyYWNlcnM7CiAgICBjaGFyIHBhZDI0WzB4Q107CiAgICBzMzIgbW9kZTsKICAgIGNoYXIgcGFkMzRbMHhDXTsKICAgIFJhY2VyIHNlbGY7Cn07Cg== */
-
-struct State44;
 struct State44;
 struct State44 {
     s32 unk_0;
@@ -185,19 +119,18 @@ struct State44 {
     f32 unk_3C;
     s32 unk_40;
 };
-
-/* unbake evidence input: c3RydWN0IFN0YXRlNDQ7CnN0cnVjdCBTdGF0ZTQ0IHsKICAgIHMzMiB1bmtfMDsKICAgIHMzMiB1bmtfNDsKICAgIHMzMiB1bmtfODsKICAgIHMzMiB1bmtfQzsKICAgIHMzMiB1bmtfMTA7CiAgICBzMzIgdW5rXzE0OwogICAgczMyIHVua18xODsKICAgIHMzMiB1bmtfMUM7CiAgICB1bmlvbiB7czMyIGk7IGYzMiBmO30gdW5rXzIwOwogICAgVmVjMyB2OwogICAgZjMyIHVua18zMDsKICAgIHMzMiB1bmtfMzQ7CiAgICBmMzIgdW5rXzM4OwogICAgZjMyIHVua18zQzsKICAgIHMzMiB1bmtfNDA7Cn07Cg== */
-
-struct World_func_80236F1C_de;
+struct ThreeChannels;
+struct ThreeChannels {
+    char pad0[0x520];
+    u8 first;
+    u8 second;
+    u8 third;
+};
 struct World_func_80236F1C_de;
 struct World_func_80236F1C_de {
     char pad0[0x12A5];
     u8 replay;
 };
-
-/* unbake evidence input: c3RydWN0IFdvcmxkX2Z1bmNfODAyMzZGMUNfZGU7CnN0cnVjdCBXb3JsZF9mdW5jXzgwMjM2RjFDX2RlIHsKICAgIGNoYXIgcGFkMFsweDEyQTVdOwogICAgdTggcmVwbGF5Owp9Owo= */
-
-struct func_80234DD0_S1;
 struct func_80234DD0_S1;
 struct func_80234DD0_S1 {
     char pad0[0x70];
@@ -227,10 +160,6 @@ struct func_80234DD0_S1 {
     char pad528[0x530 - 0x528 - sizeof(f32)];
     f32 unk530;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzRERDBfUzE7CnN0cnVjdCBmdW5jXzgwMjM0REQwX1MxIHsKICAgIGNoYXIgcGFkMFsweDcwXTsKICAgIGYzMiB1bms3MDsKICAgIGNoYXIgcGFkNzBbMHg3NCAtIDB4NzAgLSBzaXplb2YoZjMyKV07CiAgICBmMzIgdW5rNzQ7CiAgICBjaGFyIHBhZDc0WzB4NzggLSAweDc0IC0gc2l6ZW9mKGYzMildOwogICAgZjMyIHVuazc4OwogICAgY2hhciBwYWQ3OFsweDdDIC0gMHg3OCAtIHNpemVvZihmMzIpXTsKICAgIHMzMiB1bms3QzsKICAgIGNoYXIgcGFkN0NbMHgyNjAgLSAweDdDIC0gc2l6ZW9mKHMzMildOwogICAgZnVuY184MDIzNEREMF9TMV9VMjYwIHVuazI2MDsKICAgIGNoYXIgcGFkMjYwWzB4MzY4IC0gMHgyNjAgLSBzaXplb2YoZnVuY184MDIzNEREMF9TMV9VMjYwKV07CiAgICBmMzIgdW5rMzY4OwogICAgY2hhciBwYWQzNjhbMHgzNkMgLSAweDM2OCAtIHNpemVvZihmMzIpXTsKICAgIGYzMiB1bmszNkM7CiAgICBjaGFyIHBhZDM2Q1sweDM3MCAtIDB4MzZDIC0gc2l6ZW9mKGYzMildOwogICAgZjMyIHVuazM3MDsKICAgIGNoYXIgcGFkMzcwWzB4Mzc0IC0gMHgzNzAgLSBzaXplb2YoZjMyKV07CiAgICBmMzIgdW5rMzc0OwogICAgY2hhciBwYWQzNzRbMHgzNzggLSAweDM3NCAtIHNpemVvZihmMzIpXTsKICAgIGYzMiB1bmszNzg7CiAgICBjaGFyIHBhZDM3OFsweDM3QyAtIDB4Mzc4IC0gc2l6ZW9mKGYzMildOwogICAgZjMyIHVuazM3QzsKICAgIGNoYXIgcGFkMzdDWzB4NTI4IC0gMHgzN0MgLSBzaXplb2YoZjMyKV07CiAgICBmMzIgdW5rNTI4OwogICAgY2hhciBwYWQ1MjhbMHg1MzAgLSAweDUyOCAtIHNpemVvZihmMzIpXTsKICAgIGYzMiB1bms1MzA7Cn07Cg== */
-
-struct func_80234DD0_S2;
 struct func_80234DD0_S2;
 struct func_80234DD0_S2 {
     char pad0[0x264];
@@ -238,10 +167,6 @@ struct func_80234DD0_S2 {
     char pad264[0x268 - 0x264 - sizeof(f32)];
     f32 unk268;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzRERDBfUzI7CnN0cnVjdCBmdW5jXzgwMjM0REQwX1MyIHsKICAgIGNoYXIgcGFkMFsweDI2NF07CiAgICBmMzIgdW5rMjY0OwogICAgY2hhciBwYWQyNjRbMHgyNjggLSAweDI2NCAtIHNpemVvZihmMzIpXTsKICAgIGYzMiB1bmsyNjg7Cn07Cg== */
-
-struct func_80238F14_S1;
 struct func_80238F14_S1;
 struct func_80238F14_S1 {
     char pad0[0x24];
@@ -273,21 +198,12 @@ struct func_80238F14_S1 {
     char pad60[0x64 - 0x60 - sizeof(f32)];
     s32 unk64;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzhGMTRfUzE7CnN0cnVjdCBmdW5jXzgwMjM4RjE0X1MxIHsKICAgIGNoYXIgcGFkMFsweDI0XTsKICAgIHMzMiB1bmsyNDsKICAgIGNoYXIgcGFkMjRbMHgyOCAtIDB4MjQgLSBzaXplb2YoczMyKV07CiAgICBmMzIgdW5rMjg7CiAgICBjaGFyIHBhZDI4WzB4MkMgLSAweDI4IC0gc2l6ZW9mKGYzMildOwogICAgZjMyIHVuazJDOwogICAgY2hhciBwYWQyQ1sweDMwIC0gMHgyQyAtIHNpemVvZihmMzIpXTsKICAgIGYzMiB1bmszMDsKICAgIGNoYXIgcGFkMzBbMHgzNCAtIDB4MzAgLSBzaXplb2YoZjMyKV07CiAgICBmMzIgdW5rMzQ7CiAgICBjaGFyIHBhZDM0WzB4MzggLSAweDM0IC0gc2l6ZW9mKGYzMildOwogICAgZjMyIHVuazM4OwogICAgY2hhciBwYWQzOFsweDNDIC0gMHgzOCAtIHNpemVvZihmMzIpXTsKICAgIGYzMiB1bmszQzsKICAgIGNoYXIgcGFkM0NbMHg0MCAtIDB4M0MgLSBzaXplb2YoZjMyKV07CiAgICBmMzIgdW5rNDA7CiAgICBjaGFyIHBhZDQwWzB4NDQgLSAweDQwIC0gc2l6ZW9mKGYzMildOwogICAgZjMyIHVuazQ0OwogICAgY2hhciBwYWQ0NFsweDQ4IC0gMHg0NCAtIHNpemVvZihmMzIpXTsKICAgIFNoYXJlZF9RdWFkIHVuazQ4OwogICAgY2hhciBwYWQ0OFsweDU4IC0gMHg0OCAtIHNpemVvZihTaGFyZWRfUXVhZCldOwogICAgczMyIHVuazU4OwogICAgY2hhciBwYWQ1OFsweDVDIC0gMHg1OCAtIHNpemVvZihzMzIpXTsKICAgIGYzMiB1bms1QzsKICAgIGNoYXIgcGFkNUNbMHg2MCAtIDB4NUMgLSBzaXplb2YoZjMyKV07CiAgICBmMzIgdW5rNjA7CiAgICBjaGFyIHBhZDYwWzB4NjQgLSAweDYwIC0gc2l6ZW9mKGYzMildOwogICAgczMyIHVuazY0Owp9Owo= */
-
-struct Triple;
-struct func_802390C0_S1;
 struct Triple;
 struct func_802390C0_S1;
 struct func_802390C0_S1 {
     char pad0[0x260];
     struct Triple unk260;
 };
-
-/* unbake evidence input: c3RydWN0IFRyaXBsZTsKc3RydWN0IGZ1bmNfODAyMzkwQzBfUzE7CnN0cnVjdCBmdW5jXzgwMjM5MEMwX1MxIHsKICAgIGNoYXIgcGFkMFsweDI2MF07CiAgICBzdHJ1Y3QgVHJpcGxlIHVuazI2MDsKfTsK */
-
-struct func_802390E4_S1;
 struct func_802390E4_S1;
 struct func_802390E4_S1 {
     char pad0[0x14];
@@ -299,10 +215,6 @@ struct func_802390E4_S1 {
     char pad1C[0x20 - 0x1C - sizeof(s16)];
     s32 unk20;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkwRTRfUzE7CnN0cnVjdCBmdW5jXzgwMjM5MEU0X1MxIHsKICAgIGNoYXIgcGFkMFsweDE0XTsKICAgIHMxNiB1bmsxNDsKICAgIGNoYXIgcGFkMTRbMHgxOCAtIDB4MTQgLSBzaXplb2YoczE2KV07CiAgICBzMzIgdW5rMTg7CiAgICBjaGFyIHBhZDE4WzB4MUMgLSAweDE4IC0gc2l6ZW9mKHMzMildOwogICAgczE2IHVuazFDOwogICAgY2hhciBwYWQxQ1sweDIwIC0gMHgxQyAtIHNpemVvZihzMTYpXTsKICAgIHMzMiB1bmsyMDsKfTsK */
-
-struct func_8023912C_S2;
 struct func_8023912C_S2;
 struct func_8023912C_S2 {
     char pad0[0x88];
@@ -318,10 +230,6 @@ struct func_8023912C_S2 {
     char pad98[0x9C - 0x98 - sizeof(f32)];
     f32 unk9C;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkxMkNfUzI7CnN0cnVjdCBmdW5jXzgwMjM5MTJDX1MyIHsKICAgIGNoYXIgcGFkMFsweDg4XTsKICAgIGYzMiB1bms4ODsKICAgIGNoYXIgcGFkODhbMHg4QyAtIDB4ODggLSBzaXplb2YoZjMyKV07CiAgICBmMzIgdW5rOEM7CiAgICBjaGFyIHBhZDhDWzB4OTAgLSAweDhDIC0gc2l6ZW9mKGYzMildOwogICAgczMyIHVuazkwOwogICAgY2hhciBwYWQ5MFsweDk0IC0gMHg5MCAtIHNpemVvZihzMzIpXTsKICAgIHMzMiB1bms5NDsKICAgIGNoYXIgcGFkOTRbMHg5OCAtIDB4OTQgLSBzaXplb2YoczMyKV07CiAgICBmMzIgdW5rOTg7CiAgICBjaGFyIHBhZDk4WzB4OUMgLSAweDk4IC0gc2l6ZW9mKGYzMildOwogICAgZjMyIHVuazlDOwp9Owo= */
-
-struct func_80239184_S1;
 struct func_80239184_S1;
 struct func_80239184_S1 {
     char pad0[0x548];
@@ -329,10 +237,6 @@ struct func_80239184_S1 {
     char pad548[0x549 - 0x548 - sizeof(signed char)];
     signed char unk549;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkxODRfUzE7CnN0cnVjdCBmdW5jXzgwMjM5MTg0X1MxIHsKICAgIGNoYXIgcGFkMFsweDU0OF07CiAgICBzaWduZWQgY2hhciB1bms1NDg7CiAgICBjaGFyIHBhZDU0OFsweDU0OSAtIDB4NTQ4IC0gc2l6ZW9mKHNpZ25lZCBjaGFyKV07CiAgICBzaWduZWQgY2hhciB1bms1NDk7Cn07Cg== */
-
-struct func_8023919C_S1;
 struct func_8023919C_S1;
 struct func_8023919C_S1 {
     char pad0[0x538];
@@ -356,10 +260,6 @@ struct func_8023919C_S1 {
     char pad550[0x551 - 0x550 - sizeof(s8)];
     s8 unk551;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkxOUNfUzE7CnN0cnVjdCBmdW5jXzgwMjM5MTlDX1MxIHsKICAgIGNoYXIgcGFkMFsweDUzOF07CiAgICBzMzIgdW5rNTM4OwogICAgY2hhciBwYWQ1MzhbMHg1NDQgLSAweDUzOCAtIHNpemVvZihzMzIpXTsKICAgIHMzMiB1bms1NDQ7CiAgICBjaGFyIHBhZDU0NFsweDU0QSAtIDB4NTQ0IC0gc2l6ZW9mKHMzMildOwogICAgczggdW5rNTRBOwogICAgY2hhciBwYWQ1NEFbMHg1NEIgLSAweDU0QSAtIHNpemVvZihzOCldOwogICAgczggdW5rNTRCOwogICAgY2hhciBwYWQ1NEJbMHg1NEMgLSAweDU0QiAtIHNpemVvZihzOCldOwogICAgczggdW5rNTRDOwogICAgY2hhciBwYWQ1NENbMHg1NEQgLSAweDU0QyAtIHNpemVvZihzOCldOwogICAgczggdW5rNTREOwogICAgY2hhciBwYWQ1NERbMHg1NEUgLSAweDU0RCAtIHNpemVvZihzOCldOwogICAgczggdW5rNTRFOwogICAgY2hhciBwYWQ1NEVbMHg1NEYgLSAweDU0RSAtIHNpemVvZihzOCldOwogICAgczggdW5rNTRGOwogICAgY2hhciBwYWQ1NEZbMHg1NTAgLSAweDU0RiAtIHNpemVvZihzOCldOwogICAgczggdW5rNTUwOwogICAgY2hhciBwYWQ1NTBbMHg1NTEgLSAweDU1MCAtIHNpemVvZihzOCldOwogICAgczggdW5rNTUxOwp9Owo= */
-
-struct func_802392DC_S1;
 struct func_802392DC_S1;
 struct func_802392DC_S1 {
     char pad0[0x5DC];
@@ -367,10 +267,6 @@ struct func_802392DC_S1 {
     char pad5DC[0x16E0 - 0x5DC - sizeof(int)];
     void * unk16E0;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkyRENfUzE7CnN0cnVjdCBmdW5jXzgwMjM5MkRDX1MxIHsKICAgIGNoYXIgcGFkMFsweDVEQ107CiAgICBpbnQgdW5rNURDOwogICAgY2hhciBwYWQ1RENbMHgxNkUwIC0gMHg1REMgLSBzaXplb2YoaW50KV07CiAgICB2b2lkICogdW5rMTZFMDsKfTsK */
-
-struct func_80239314_S1;
 struct func_80239314_S1;
 struct func_80239314_S1 {
     char pad0[0xA8];
@@ -390,10 +286,6 @@ struct func_80239314_S1 {
     char padE0[0xE4 - 0xE0 - sizeof(s32)];
     f32 unkE4;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkzMTRfUzE7CnN0cnVjdCBmdW5jXzgwMjM5MzE0X1MxIHsKICAgIGNoYXIgcGFkMFsweEE4XTsKICAgIFZlYzMgdW5rQTg7CiAgICBjaGFyIHBhZEE4WzB4QjQgLSAweEE4IC0gc2l6ZW9mKFZlYzMpXTsKICAgIGYzMiB1bmtCNDsKICAgIGNoYXIgcGFkQjRbMHhCOCAtIDB4QjQgLSBzaXplb2YoZjMyKV07CiAgICBzMzIgdW5rQjg7CiAgICBjaGFyIHBhZEI4WzB4QkMgLSAweEI4IC0gc2l6ZW9mKHMzMildOwogICAgZjMyIHVua0JDOwogICAgY2hhciBwYWRCQ1sweENDIC0gMHhCQyAtIHNpemVvZihmMzIpXTsKICAgIHMzMiB1bmtDQzsKICAgIGNoYXIgcGFkQ0NbMHhEMCAtIDB4Q0MgLSBzaXplb2YoczMyKV07CiAgICBmMzIgdW5rRDA7CiAgICBjaGFyIHBhZEQwWzB4RTAgLSAweEQwIC0gc2l6ZW9mKGYzMildOwogICAgczMyIHVua0UwOwogICAgY2hhciBwYWRFMFsweEU0IC0gMHhFMCAtIHNpemVvZihzMzIpXTsKICAgIGYzMiB1bmtFNDsKfTsK */
-
-struct func_802393C8_S1;
 struct func_802393C8_S1;
 struct func_802393C8_S1 {
     char pad0[0xFC];
@@ -413,13 +305,6 @@ struct func_802393C8_S1 {
     char pad114[0x118 - 0x114 - sizeof(float)];
     int unk118;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyMzkzQzhfUzE7CnN0cnVjdCBmdW5jXzgwMjM5M0M4X1MxIHsKICAgIGNoYXIgcGFkMFsweEZDXTsKICAgIGludCB1bmtGQzsKICAgIGNoYXIgcGFkRkNbMHgxMDAgLSAweEZDIC0gc2l6ZW9mKGludCldOwogICAgaW50IHVuazEwMDsKICAgIGNoYXIgcGFkMTAwWzB4MTA0IC0gMHgxMDAgLSBzaXplb2YoaW50KV07CiAgICBpbnQgdW5rMTA0OwogICAgY2hhciBwYWQxMDRbMHgxMDggLSAweDEwNCAtIHNpemVvZihpbnQpXTsKICAgIGludCB1bmsxMDg7CiAgICBjaGFyIHBhZDEwOFsweDEwQyAtIDB4MTA4IC0gc2l6ZW9mKGludCldOwogICAgaW50IHVuazEwQzsKICAgIGNoYXIgcGFkMTBDWzB4MTEwIC0gMHgxMEMgLSBzaXplb2YoaW50KV07CiAgICBmbG9hdCB1bmsxMTA7CiAgICBjaGFyIHBhZDExMFsweDExNCAtIDB4MTEwIC0gc2l6ZW9mKGZsb2F0KV07CiAgICBmbG9hdCB1bmsxMTQ7CiAgICBjaGFyIHBhZDExNFsweDExOCAtIDB4MTE0IC0gc2l6ZW9mKGZsb2F0KV07CiAgICBpbnQgdW5rMTE4Owp9Owo= */
-
-struct Entity_func_80233C88_de;
-typedef struct Entity_func_80233C88_de Entity_func_80233C88_de;
-struct ThreeChannels;
-typedef struct ThreeChannels ThreeChannels;
 extern void func_8023660C_de(char *camera, f32 a, f32 b, f32 c, f32 d);
 extern void func_8023913C_de(void *arg0);
 extern void func_802391F8_de(void *arg0, s8 *arg1, s8 *arg2, s8 *arg3);

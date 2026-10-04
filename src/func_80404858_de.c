@@ -12,8 +12,8 @@
 
 
 
-extern s32 D_8014D260[];
-extern s32 D_8014D270[];
+
+
 extern OSPfs_func_80403E90_de D_8014D280[];
 extern PakDirectory *D_800DE804;
 extern u8 D_8010BBB8;

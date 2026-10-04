@@ -1,21 +1,15 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802B033C_H
 #define UNBAKE_SPAN_1000_CODE_802B033C_H
+#include "span_1000/types.h"
 #include "../types.h"
-struct ObjectState2;
 struct ObjectState2;
 typedef struct ObjectState2 ObjectState2;
 
-/* unbake evidence input: c3RydWN0IE9iamVjdFN0YXRlMjsKdHlwZWRlZiBzdHJ1Y3QgT2JqZWN0U3RhdGUyIE9iamVjdFN0YXRlMjsK */
-
-struct ObjectState2;
 struct ObjectState2;
 struct ObjectState2 {
     unsigned char padding_0[1];
     u8 unk_1;
 };
-
-/* unbake evidence input: c3RydWN0IE9iamVjdFN0YXRlMjsKc3RydWN0IE9iamVjdFN0YXRlMiB7CiAgICB1bnNpZ25lZCBjaGFyIHBhZGRpbmdfMFsxXTsKICAgIHU4IHVua18xOwp9Owo= */
-
 extern int func_802B0630_eu(void * arg0, int arg1, int arg2);
 extern u32 func_802B091C_us_rev1(u32 arg0, u32 arg1, u32 arg2);
 extern u32 func_802B0D3C_us_rev1(u32 arg0);

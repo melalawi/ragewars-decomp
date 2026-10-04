@@ -4,24 +4,14 @@
 #include "span_1000/types.h"
 #include "../types.h"
 union DoubleBits_8029ECB0;
-union DoubleBits_8029ECB0;
 typedef union DoubleBits_8029ECB0 DoubleBits_8029ECB0;
 
-/* unbake evidence input: dW5pb24gRG91YmxlQml0c184MDI5RUNCMDsKdHlwZWRlZiB1bmlvbiBEb3VibGVCaXRzXzgwMjlFQ0IwIERvdWJsZUJpdHNfODAyOUVDQjA7Cg== */
-
-struct Input_func_8029CAB4_de;
 struct Input_func_8029CAB4_de;
 typedef struct Input_func_8029CAB4_de Input_func_8029CAB4_de;
 
-/* unbake evidence input: c3RydWN0IElucHV0X2Z1bmNfODAyOUNBQjRfZGU7CnR5cGVkZWYgc3RydWN0IElucHV0X2Z1bmNfODAyOUNBQjRfZGUgSW5wdXRfZnVuY184MDI5Q0FCNF9kZTsK */
-
-struct func_8029D984_S2;
 struct func_8029D984_S2;
 typedef struct func_8029D984_S2 func_8029D984_S2;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyOUQ5ODRfUzI7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyOUQ5ODRfUzIgZnVuY184MDI5RDk4NF9TMjsK */
-
-union DoubleBits_8029ECB0;
 union DoubleBits_8029ECB0;
 union DoubleBits_8029ECB0 {
     f64 d;
@@ -30,10 +20,6 @@ union DoubleBits_8029ECB0 {
         u32 lo;
     } w;
 };
-
-/* unbake evidence input: dW5pb24gRG91YmxlQml0c184MDI5RUNCMDsKdW5pb24gRG91YmxlQml0c184MDI5RUNCMCB7CiAgICBmNjQgZDsKICAgIHN0cnVjdCB7CiAgICAgICAgdTMyIGhpOwogICAgICAgIHUzMiBsbzsKICAgIH0gdzsKfTsK */
-
-struct Input_func_8029CAB4_de;
 struct Input_func_8029CAB4_de;
 struct Input_func_8029CAB4_de {
     f32 f00;
@@ -48,10 +34,6 @@ struct Input_func_8029CAB4_de {
     f32 f24;
     f32 f28;
 };
-
-/* unbake evidence input: c3RydWN0IElucHV0X2Z1bmNfODAyOUNBQjRfZGU7CnN0cnVjdCBJbnB1dF9mdW5jXzgwMjlDQUI0X2RlIHsKICAgIGYzMiBmMDA7CiAgICBmMzIgZjA0OwogICAgZjMyIGYwODsKICAgIGYzMiBwYWQwQzsKICAgIGYzMiBwYWQxMDsKICAgIGYzMiBmMTQ7CiAgICBmMzIgcGFkMTg7CiAgICBmMzIgcGFkMUM7CiAgICBmMzIgZjIwOwogICAgZjMyIGYyNDsKICAgIGYzMiBmMjg7Cn07Cg== */
-
-struct func_8029D984_S2;
 struct func_8029D984_S2;
 struct func_8029D984_S2 {
     f32 unk0;
@@ -71,9 +53,6 @@ struct func_8029D984_S2 {
     f32 unk38;
     f32 unk3C;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyOUQ5ODRfUzI7CnN0cnVjdCBmdW5jXzgwMjlEOTg0X1MyIHsKICAgIGYzMiB1bmswOwogICAgZjMyIHVuazQ7CiAgICBmMzIgdW5rODsKICAgIGYzMiB1bmtDOwogICAgZjMyIHVuazEwOwogICAgZjMyIHVuazE0OwogICAgZjMyIHVuazE4OwogICAgZjMyIHVuazFDOwogICAgZjMyIHVuazIwOwogICAgZjMyIHVuazI0OwogICAgZjMyIHVuazI4OwogICAgZjMyIHVuazJDOwogICAgZjMyIHVuazMwOwogICAgZjMyIHVuazM0OwogICAgZjMyIHVuazM4OwogICAgZjMyIHVuazNDOwp9Owo= */
-
 extern void func_8029C984_de(func_8029D984_S2 *arg0, Vec3 *arg1);
 extern void func_8029CAB4_de(Input_func_8029CAB4_de *arg0, Vec3 *arg1);
 extern void func_8029CC70_de(Input_func_8029CAB4_de *arg0, Vec3 *arg1);

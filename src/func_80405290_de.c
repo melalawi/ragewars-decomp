@@ -8,7 +8,7 @@ void func_8026454C_de();                                  /* extern */
 void func_80404018_de(s32);                               /* extern */
 s32 func_80447F30_de(void *);                          /* extern */
 extern s8 D_8010BBB8;
-extern s32 D_8014D260[];
+
 extern char D_8014D280[];
 
 s32 func_80405290_de(s32 arg0) {

@@ -67,7 +67,7 @@ extern void func_80220A80_de(SharedPlayer_func_80226A34_de *, SharedPlayer_func_
 extern s32 func_80245784_de(void);
 
 extern s32 func_8026435C_de(void *);
-extern s32 func_8024576C_de(void);
+
 extern s32 func_802A23B4_de(void);
 extern s32 func_80442A28_de(Menu_func_80226A34_de *);
 extern void func_8025E360_de(void);

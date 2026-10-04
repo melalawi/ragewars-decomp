@@ -1,5 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80200400_H
 #define UNBAKE_SPAN_1000_CODE_80200400_H
+#include "common/types.h"
 #include "../types.h"
 extern void func_80200400_de(void);
 extern void func_80200400_eu(void);

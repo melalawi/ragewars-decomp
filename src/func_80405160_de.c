@@ -2,8 +2,8 @@
 /* For a player slot whose state D_801534F0 is 3, writes its score (the first word of its 0x204-byte
    record in D_800E2854 divided by 256, or 0 when the flag D_80153500 is set) and returns the flag;
    other states return -2. */
-extern int D_8014D260[];
-extern int D_8014D270[];
+
+
 extern int *D_800DE804;
 
 int func_80405160_de(int slot, int *score) {

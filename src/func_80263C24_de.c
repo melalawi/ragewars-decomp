@@ -5,9 +5,9 @@
 
 extern s32 D_8010B310[];
 extern s32 D_8010BC28[];
-extern s32 D_8010BBF0[];
+
 extern s32 func_8026475C_de(s32 port);
-extern s32 func_80264634_de(s32 port);
+
 
 void func_80263C24_de(void)
 {

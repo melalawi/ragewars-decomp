@@ -2,7 +2,7 @@
 #include "types.h"
 
 extern int func_8026475C_de(int arg0);
-extern s32 D_8010BBF0[];
+
 
 s32 func_802645D0_de(s32 arg0) {
     if (func_8026475C_de(arg0) == 0) {

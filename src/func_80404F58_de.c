@@ -3,8 +3,8 @@
 /* Loads a page-aligned resource into the selected device slot and reports the result. */
 
 
-extern s32 D_8014D260[];
-extern s32 D_8014D270[];
+
+
 extern Device D_8014D280[];
 extern s8 D_8010BBB8;
 extern char D_800DCCD0[];

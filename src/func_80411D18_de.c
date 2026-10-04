@@ -3,7 +3,7 @@
 
 
 extern Manager_func_80411D18_de D_8014D990;
-extern void func_80411518_de(int);
+
 
 void func_80411D18_de(void) {
     int i;

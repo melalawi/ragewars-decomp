@@ -5,7 +5,7 @@
 extern f32 D_800C5D80_de;
 extern f32 D_800CD96C[3];
 extern f32 D_800CD978[3];
-extern s32 D_80147060[];
+
 extern s32 D_801470A0;
 
 

@@ -1,13 +1,11 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_804136EC_H
 #define UNBAKE_SPAN_16E000_CODE_804136EC_H
+#include "common/types.h"
+#include "span_16E000/types.h"
 #include "../types.h"
-struct Format;
 struct Format;
 typedef struct Format Format;
 
-/* unbake evidence input: c3RydWN0IEZvcm1hdDsKdHlwZWRlZiBzdHJ1Y3QgRm9ybWF0IEZvcm1hdDsK */
-
-struct Config;
 struct Config;
 struct Config {
     unsigned char type;
@@ -22,17 +20,10 @@ struct Config {
     int f;
     int g;
 };
-
-/* unbake evidence input: c3RydWN0IENvbmZpZzsKc3RydWN0IENvbmZpZyB7CiAgICB1bnNpZ25lZCBjaGFyIHR5cGU7CiAgICB1bnNpZ25lZCBjaGFyIGZsYWdzOwogICAgc2hvcnQgbGFzdDsKICAgIHNob3J0IHg7CiAgICBzaG9ydCB5OwogICAgc2hvcnQgYTsKICAgIHNob3J0IGI7CiAgICBpbnQgZDsKICAgIGludCBlOwogICAgaW50IGY7CiAgICBpbnQgZzsKfTsK */
-
-struct Format;
 struct Format;
 struct Format {
     s32 word[13];
 };
-
-/* unbake evidence input: c3RydWN0IEZvcm1hdDsKc3RydWN0IEZvcm1hdCB7CiAgICBzMzIgd29yZFsxM107Cn07Cg== */
-
 extern s16 func_8041366C_de(s16 *record);
 extern s16 func_80413678_de(s16 *record);
 extern s16 func_80413684_de(s16 *record);

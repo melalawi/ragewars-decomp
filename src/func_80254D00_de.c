@@ -4,7 +4,7 @@
 
 extern void func_80254D44_de(s32 arg0, s32 arg1);
 
-extern s32 D_80100598[];
+
 
 void func_80254D00_de(void) {
     s32 *p = &D_801005A8;

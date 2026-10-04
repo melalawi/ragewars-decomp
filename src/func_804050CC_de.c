@@ -5,8 +5,8 @@
 
 
 
-extern s32 D_8014D260[];
-extern s32 D_8014D270[];
+
+
 extern PakDirectory_func_8040458C_de *D_800DE804;
 
 /* Counts empty Controller Pak note slots on channel ch when the pak is ready and returns its error status, or -2 when not ready. */

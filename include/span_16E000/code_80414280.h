@@ -1,22 +1,17 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_80414280_H
 #define UNBAKE_SPAN_16E000_CODE_80414280_H
+#include "common/types.h"
+#include "gfx.h"
 #include "../types.h"
-struct Texture;
 struct Texture;
 typedef struct Texture Texture;
 
-/* unbake evidence input: c3RydWN0IFRleHR1cmU7CnR5cGVkZWYgc3RydWN0IFRleHR1cmUgVGV4dHVyZTsK */
-
-struct Texture;
 struct Texture;
 struct Texture {
     char pad0[4];
     s16 width;
     s16 height;
 };
-
-/* unbake evidence input: c3RydWN0IFRleHR1cmU7CnN0cnVjdCBUZXh0dXJlIHsKICAgIGNoYXIgcGFkMFs0XTsKICAgIHMxNiB3aWR0aDsKICAgIHMxNiBoZWlnaHQ7Cn07Cg== */
-
 extern void func_80414200_de(void);
 extern void func_80414220_de(void);
 extern void func_80414244_de(void);

@@ -22,7 +22,7 @@ extern u8 D_801462E5;
 extern s32 D_80142834;
 
 
-extern s32 D_800C91E0_de[];
+
 
 extern Gfx * D_8010C574;
 

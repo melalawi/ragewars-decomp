@@ -5,7 +5,7 @@
 
 extern s32 D_8014D3E8;
 extern s32 func_802AE380_us_rev1(u8 *);
-extern s32 func_802BD170_de(s32);
+
 
 extern void func_802BD010_de(u32, u32);
 

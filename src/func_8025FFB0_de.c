@@ -11,7 +11,7 @@ extern s32 D_8010AC78;
 extern s32 D_8010AC80;
 
 extern u32 func_802607B8_de(u32 *arg0, s32 arg1);
-extern f32 func_80260634_de(f32 arg0, s32 arg1);
+
 extern f32 func_80260650_de(f32 arg0, f32 arg1, s32 arg2);
 extern void func_8025FD74_de(Segment8025FFD0 *arg0);
 

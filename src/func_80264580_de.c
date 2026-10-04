@@ -2,7 +2,7 @@
 #include "types.h"
 
 extern int func_8026475C_de(int arg0);
-extern s32 D_8010BBF0[];
+
 
 /** Fetch-and-clear: return the old slot value, then zero it. */
 s32 func_80264580_de(s32 arg0) {

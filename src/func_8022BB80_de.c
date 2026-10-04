@@ -6,7 +6,7 @@
 extern void func_8028B274_de(void *arg0, void *arg1, s32 arg2, s32 arg3);
 extern u8 D_80142208_de[];
 
-extern s32 D_800C91E0_de[];
+
 extern char D_8011BDC8;
 
 

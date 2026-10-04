@@ -24,7 +24,7 @@ extern struct Row D_800E0284_de[];
 extern u8 D_800FEB57[];
 extern struct Resource_func_80419E54_de *func_8040EC30_de(void *, s32);
 extern void func_8040E928_de(struct Resource_func_80419E54_de *, s32);
-extern s32 func_8041F1D8_de(s32);
+
 
 void func_804201A4_de(s32 player) {
     struct Resource_func_80419E54_de *item;

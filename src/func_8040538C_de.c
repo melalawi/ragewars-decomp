@@ -7,7 +7,7 @@
 
 
 
-extern s32 D_8014D260[];
+
 extern struct Record_func_80405338_de *D_800DE804;
 
 s32 func_8040538C_de(s32 index, s32 entry, char **out) {

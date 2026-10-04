@@ -21,7 +21,7 @@ extern void *func_8040EC30_de(void *, int);
 extern void func_8040E8D8_de(void *, int);
 extern void func_8041F18C_de(int);
 extern void func_8041CE10_de(void *, int);
-extern int func_8041F1D8_de(int);
+
 extern void func_80298368_de(int);
 
 void func_80420618_de(int player, int choice) {

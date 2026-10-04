@@ -5,8 +5,8 @@
 extern s32 D_80101140;
 extern s32 D_80101134[];
 
-extern s32 D_801005A0[];
-extern s32 D_80100598[];
+
+
 
 extern s32 D_80101160;
 

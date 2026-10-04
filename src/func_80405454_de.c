@@ -5,7 +5,7 @@
    on error) and marks the letter of every existing note, then writes the first unused letter from
    'A' as the extension, returning 0, or -1 when all 16 letters are taken. */
 
-extern s32 D_8014D260[];
+
 
 extern s32 func_8040458C_de(s32 ch, s32 index, s32 *exists, char *gameName, u8 *ext, s32 *size,
                          char *companyCode, char *gameCode);

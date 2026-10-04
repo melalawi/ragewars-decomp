@@ -1,46 +1,33 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802B7488_H
 #define UNBAKE_SPAN_1000_CODE_802B7488_H
 #include "common/types.h"
+#include "span_1000/types.h"
 #include "../types.h"
 struct ALGlobals_func_802B2650_de;
-struct ALSndPlayer_func_802B2650_de;
-struct ALSndpConfig;
-struct ALSoundState;
-struct ALSynth_func_802B2650_de;
-struct ALGlobals_func_802B2650_de;
-struct ALSndPlayer_func_802B2650_de;
-struct ALSndpConfig;
-struct ALSoundState;
-struct ALSynth_func_802B2650_de;
-#ifndef UNBAKE_FUNC_802B2650_DE_H
-#define UNBAKE_FUNC_802B2650_DE_H
-
-
-struct ALGlobals_func_802B2650_de;
 typedef struct ALGlobals_func_802B2650_de ALGlobals_func_802B2650_de;
+
+struct ALSndPlayer_func_802B2650_de;
 typedef struct ALSndPlayer_func_802B2650_de ALSndPlayer_func_802B2650_de;
+
+struct ALSndpConfig;
 typedef struct ALSndpConfig ALSndpConfig;
+
+struct ALSoundState;
 typedef struct ALSoundState ALSoundState;
+
+struct ALSynth_func_802B2650_de;
 typedef struct ALSynth_func_802B2650_de ALSynth_func_802B2650_de;
 
-struct ALSndPlayer_func_802B2650_de;
-
-struct ALSndpConfig;
-
-struct ALSoundState;
-
 struct ALSynth_func_802B2650_de;
-
-
-
-
-
-
-
-
-
-
-
+struct ALSynth_func_802B2650_de {
+    ALPlayer_s14 *head;
+};
+struct ALGlobals_func_802B2650_de;
+struct ALGlobals_func_802B2650_de {
+    ALSynth_func_802B2650_de drvr;
+};
+struct ALSndPlayer_func_802B2650_de;
+struct ALSynth_func_802B2650_de;
 struct ALSndPlayer_func_802B2650_de {
     ALPlayer_s14 node;
     ALEventQueue evtq;
@@ -53,11 +40,13 @@ struct ALSndPlayer_func_802B2650_de {
     s32 nextDelta;
     s32 curTime;
 };
+struct ALSndpConfig;
 struct ALSndpConfig {
     s32 maxSounds;
     s32 maxEvents;
     ALHeap *heap;
 };
+struct ALSoundState;
 struct ALSoundState {
     ALVoice_s voice;
     void *sound;
@@ -68,15 +57,5 @@ struct ALSoundState {
     u8 pan;
     u8 fxMix;
 };
-struct ALSynth_func_802B2650_de {
-    ALPlayer_s14 *head;
-};
-struct ALGlobals_func_802B2650_de {
-    ALSynth_func_802B2650_de drvr;
-};
-#endif
-
-/* unbake evidence input: c3RydWN0IEFMR2xvYmFsc19mdW5jXzgwMkIyNjUwX2RlOwpzdHJ1Y3QgQUxTbmRQbGF5ZXJfZnVuY184MDJCMjY1MF9kZTsKc3RydWN0IEFMU25kcENvbmZpZzsKc3RydWN0IEFMU291bmRTdGF0ZTsKc3RydWN0IEFMU3ludGhfZnVuY184MDJCMjY1MF9kZTsKI2lmbmRlZiBVTkJBS0VfRlVOQ184MDJCMjY1MF9ERV9ICiNkZWZpbmUgVU5CQUtFX0ZVTkNfODAyQjI2NTBfREVfSAoKCnN0cnVjdCBBTEdsb2JhbHNfZnVuY184MDJCMjY1MF9kZTsKdHlwZWRlZiBzdHJ1Y3QgQUxHbG9iYWxzX2Z1bmNfODAyQjI2NTBfZGUgQUxHbG9iYWxzX2Z1bmNfODAyQjI2NTBfZGU7CnR5cGVkZWYgc3RydWN0IEFMU25kUGxheWVyX2Z1bmNfODAyQjI2NTBfZGUgQUxTbmRQbGF5ZXJfZnVuY184MDJCMjY1MF9kZTsKdHlwZWRlZiBzdHJ1Y3QgQUxTbmRwQ29uZmlnIEFMU25kcENvbmZpZzsKdHlwZWRlZiBzdHJ1Y3QgQUxTb3VuZFN0YXRlIEFMU291bmRTdGF0ZTsKdHlwZWRlZiBzdHJ1Y3QgQUxTeW50aF9mdW5jXzgwMkIyNjUwX2RlIEFMU3ludGhfZnVuY184MDJCMjY1MF9kZTsKCnN0cnVjdCBBTFNuZFBsYXllcl9mdW5jXzgwMkIyNjUwX2RlOwoKc3RydWN0IEFMU25kcENvbmZpZzsKCnN0cnVjdCBBTFNvdW5kU3RhdGU7CgpzdHJ1Y3QgQUxTeW50aF9mdW5jXzgwMkIyNjUwX2RlOwoKCgoKCgoKCgoKCnN0cnVjdCBBTFNuZFBsYXllcl9mdW5jXzgwMkIyNjUwX2RlIHsKICAgIEFMUGxheWVyX3MxNCBub2RlOwogICAgQUxFdmVudFF1ZXVlIGV2dHE7CiAgICBNZXNzYWdlX2Z1bmNfODAyQUYxNTBfZGUgbmV4dEV2ZW50OwogICAgc3RydWN0IEFMU3ludGhfZnVuY184MDJCMjY1MF9kZSAqZHJ2cjsKICAgIHMzMiB0YXJnZXQ7CiAgICB2b2lkICpzbmRTdGF0ZTsKICAgIHMzMiBtYXhTb3VuZHM7CiAgICBzMzIgZnJhbWVUaW1lOwogICAgczMyIG5leHREZWx0YTsKICAgIHMzMiBjdXJUaW1lOwp9OwpzdHJ1Y3QgQUxTbmRwQ29uZmlnIHsKICAgIHMzMiBtYXhTb3VuZHM7CiAgICBzMzIgbWF4RXZlbnRzOwogICAgQUxIZWFwICpoZWFwOwp9OwpzdHJ1Y3QgQUxTb3VuZFN0YXRlIHsKICAgIEFMVm9pY2VfcyB2b2ljZTsKICAgIHZvaWQgKnNvdW5kOwogICAgczE2IHByaW9yaXR5OwogICAgZjMyIHBpdGNoOwogICAgczMyIHN0YXRlOwogICAgczE2IHZvbDsKICAgIHU4IHBhbjsKICAgIHU4IGZ4TWl4Owp9OwpzdHJ1Y3QgQUxTeW50aF9mdW5jXzgwMkIyNjUwX2RlIHsKICAgIEFMUGxheWVyX3MxNCAqaGVhZDsKfTsKc3RydWN0IEFMR2xvYmFsc19mdW5jXzgwMkIyNjUwX2RlIHsKICAgIEFMU3ludGhfZnVuY184MDJCMjY1MF9kZSBkcnZyOwp9OwojZW5kaWYK */
-
 extern void func_802B748C_de(void);
 #endif

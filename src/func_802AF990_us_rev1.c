@@ -26,7 +26,7 @@ extern s32 func_802AEF84_us_rev1(void);
 
 extern void func_802AF33C_us_rev1(void);
 extern void func_802AF424_us_rev1(void);
-extern s32 func_802BD170_de(s32);
+
 
 extern void func_802BD010_de(u32, u32);
 extern void func_802AF0E4_us_rev1(void);

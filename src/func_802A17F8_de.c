@@ -2,7 +2,7 @@
 #include "span_1000/code_802A26F8.h"
 #include "types.h"
 
-extern s32 D_80147060[];
+
 extern s32 D_801470A0;
 
 

@@ -2,16 +2,12 @@
 #define UNBAKE_SPAN_166000_CODE_8043D0F0_H
 #include "../types.h"
 struct Func8043D458Arg;
-struct Func8043D458Arg;
 struct Func8043D458Arg {
     s8 pad0[8];
     s32 flags;
     s8 padC[8];
     s32 *text;
 };
-
-/* unbake evidence input: c3RydWN0IEZ1bmM4MDQzRDQ1OEFyZzsKc3RydWN0IEZ1bmM4MDQzRDQ1OEFyZyB7CiAgICBzOCBwYWQwWzhdOwogICAgczMyIGZsYWdzOwogICAgczggcGFkQ1s4XTsKICAgIHMzMiAqdGV4dDsKfTsK */
-
 extern int func_8043D1DC_de(void);
 extern int func_8043D20C_de(void);
 extern int func_8043D214_de(void);

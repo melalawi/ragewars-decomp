@@ -12,7 +12,7 @@ extern void func_8021AF6C_de(void *);
 extern u8 D_801462E5;
 extern s32 D_80142834;
 
-extern s32 D_800C91E0_de[];
+
 extern char D_8011BDC8;
 
 

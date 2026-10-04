@@ -9,7 +9,7 @@
 
 
 
-extern s32 D_8014D260[];
+
 extern PakDirectory_func_8040458C_de *D_800DE804;
 extern u8 D_800DE80C[];
 

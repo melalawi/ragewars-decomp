@@ -9,7 +9,7 @@ extern u8 D_8014D0A0_de[];
 extern u8 D_8010BC00[];
 extern s32 func_802B7FD8_de(u8 *a0, u8 *a1, s32 a2);
 extern s32 func_80404018_de(s32 a0);
-extern s32 D_8014D260[];
+
 extern void func_8026454C_de(void);
 
 /* Probes the Controller Pak slot for kind and records its state: 2 when the probe succeeds, otherwise 3 or 1 depending on func_80404018_de. */

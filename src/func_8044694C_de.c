@@ -13,7 +13,7 @@
 
 extern s32 func_802B84C0_de(void *queue, int channel, u16 address, u8 *buffer);
 extern s32 func_80448CC4_de(OSPfs_func_80445F80_de *pfs);
-extern u16 func_80448B84_de(u8 *ptr, int length);
+
 
 s32 func_8044694C_de(OSPfs_func_80445F80_de *pfs, u8 page_no, u16 *sum, u8 bank)
 {

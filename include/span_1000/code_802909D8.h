@@ -1,20 +1,15 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802909D8_H
 #define UNBAKE_SPAN_1000_CODE_802909D8_H
+#include "common/types.h"
+#include "gfx.h"
 #include "span_1000/types.h"
 #include "../types.h"
 struct func_802909F4_S1;
-struct func_802909F4_S1;
 typedef struct func_802909F4_S1 func_802909F4_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyOTA5RjRfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyOTA5RjRfUzEgZnVuY184MDI5MDlGNF9TMTsK */
-
-struct func_80290A28_S1;
 struct func_80290A28_S1;
 typedef struct func_80290A28_S1 func_80290A28_S1;
 
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyOTBBMjhfUzE7CnR5cGVkZWYgc3RydWN0IGZ1bmNfODAyOTBBMjhfUzEgZnVuY184MDI5MEEyOF9TMTsK */
-
-struct func_802909F4_S1;
 struct func_802909F4_S1;
 struct func_802909F4_S1 {
     char pad0[0x14];
@@ -24,10 +19,6 @@ struct func_802909F4_S1 {
     char pad18[0x1C - 0x18 - sizeof(s32)];
     s32 unk1C;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyOTA5RjRfUzE7CnN0cnVjdCBmdW5jXzgwMjkwOUY0X1MxIHsKICAgIGNoYXIgcGFkMFsweDE0XTsKICAgIGZ1bmNfODAyNkUxNThfUzFfVTggdW5rMTQ7CiAgICBjaGFyIHBhZDE0WzB4MTggLSAweDE0IC0gc2l6ZW9mKGZ1bmNfODAyNkUxNThfUzFfVTgpXTsKICAgIHMzMiB1bmsxODsKICAgIGNoYXIgcGFkMThbMHgxQyAtIDB4MTggLSBzaXplb2YoczMyKV07CiAgICBzMzIgdW5rMUM7Cn07Cg== */
-
-struct func_80290A28_S1;
 struct func_80290A28_S1;
 struct func_80290A28_S1 {
     char pad0[0x8];
@@ -39,9 +30,6 @@ struct func_80290A28_S1 {
     char pad10[0x20 - 0x10 - sizeof(float)];
     int unk20;
 };
-
-/* unbake evidence input: c3RydWN0IGZ1bmNfODAyOTBBMjhfUzE7CnN0cnVjdCBmdW5jXzgwMjkwQTI4X1MxIHsKICAgIGNoYXIgcGFkMFsweDhdOwogICAgZmxvYXQgdW5rODsKICAgIGNoYXIgcGFkOFsweEMgLSAweDggLSBzaXplb2YoZmxvYXQpXTsKICAgIGZsb2F0IHVua0M7CiAgICBjaGFyIHBhZENbMHgxMCAtIDB4QyAtIHNpemVvZihmbG9hdCldOwogICAgZmxvYXQgdW5rMTA7CiAgICBjaGFyIHBhZDEwWzB4MjAgLSAweDEwIC0gc2l6ZW9mKGZsb2F0KV07CiAgICBpbnQgdW5rMjA7Cn07Cg== */
-
 extern void func_80290A00_de(void *arg0);
 extern void func_80290A0C_de(void);
 extern void func_80290A14_de(void *arg0, void *arg1);

@@ -19,7 +19,7 @@ extern s32 D_800E11C4[];
 extern s32 D_800E11F0_de[];
 extern struct Shape_typemap_165 D_800E0F14_de[];
 
-extern s32 func_8042AF3C_de(void);
+
 extern s32 func_802744D4_de(void);
 extern s32 func_80265650_de(u8 *, s32);
 extern void func_80265688_de(u8 *, s32, s32);

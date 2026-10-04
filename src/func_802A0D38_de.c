@@ -1,4 +1,5 @@
 #include "common/types.h"
+#include "span_1000/code_802A137C.h"
 #include "types.h"
 /* Runs once (guarded by D_800D2B80), tags D_800D2B84 with a marker, and if D_800D2BC0 is not 1 sets up a resource through func_8025305C_de/func_8025637C_de before always calling func_802A1050_de with a fixed set of data addresses. */
 

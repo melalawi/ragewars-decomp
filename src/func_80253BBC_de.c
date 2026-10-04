@@ -9,7 +9,7 @@ extern void func_802BCF50_de(u32 arg0);
 extern void func_802BB2A0_de(s32 arg0, s32 arg1, s32 arg2);
 extern void func_802BB420_de(void *arg0, s32 arg1, s32 arg2);
 
-extern s32 D_80100598[];
+
 
 extern s32 D_80101134[];
 extern s32 D_80101140;

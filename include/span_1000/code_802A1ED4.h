@@ -1,13 +1,10 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802A1ED4_H
 #define UNBAKE_SPAN_1000_CODE_802A1ED4_H
+#include "common/types.h"
 #include "../types.h"
-struct IntegerState14_2;
 struct IntegerState14_2;
 typedef struct IntegerState14_2 IntegerState14_2;
 
-/* unbake evidence input: c3RydWN0IEludGVnZXJTdGF0ZTE0XzI7CnR5cGVkZWYgc3RydWN0IEludGVnZXJTdGF0ZTE0XzIgSW50ZWdlclN0YXRlMTRfMjsK */
-
-struct IntegerState14_2;
 struct IntegerState14_2;
 struct IntegerState14_2 {
     s32 unk_0;
@@ -15,9 +12,6 @@ struct IntegerState14_2 {
     s32 unk_C;
     s32 unk_10;
 };
-
-/* unbake evidence input: c3RydWN0IEludGVnZXJTdGF0ZTE0XzI7CnN0cnVjdCBJbnRlZ2VyU3RhdGUxNF8yIHsKICAgIHMzMiB1bmtfMDsKICAgIHVuc2lnbmVkIGNoYXIgcGFkZGluZ180WzhdOwogICAgczMyIHVua19DOwogICAgczMyIHVua18xMDsKfTsK */
-
 extern void func_802A0F84_de(void);
 extern void func_802A0FA8_de(void);
 extern s32 func_802A0FCC_de(s32 arg0);

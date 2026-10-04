@@ -13,7 +13,7 @@ extern f32 D_8010AC80;
 
 
 extern u32 func_802607B8_de(u32 *, u32);
-extern f32 func_80260634_de(f32 value, s32 bits);
+
 extern f32 func_80260650_de(f32 value, f32 lower, f32 upper);
 extern f32 func_80260B80_de(u32 *stream, s32 bits, f32 base, f32 range);
 
