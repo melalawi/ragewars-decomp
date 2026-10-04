@@ -10,25 +10,7 @@ names_from = "us-rev1"
 versions = [ "de", "eu", "eu-x", "us", "us-rev1",]
 default_compiler = "gcc-2.8.1-sn64"
 
-[workspace]
-id = "f378a6a2-4e55-4f3d-a064-e01ec6ca8943"
-
-[paths]
-roms = "roms"
-build = "build"
-work = "build/work"
-drafts = "build/drafts"
-src = "src"
-include = [ "include",]
-asm = "asm"
-tools = "tools"
-
 [build]
-ld = "policy:mips_ld"
-objcopy = "policy:mips_objcopy"
-splat = "policy:splat"
-as = "policy:mips_as"
-cpp = "policy:cpp"
 asflags = [ "-march=vr4300", "-mabi=32", "-EB", "--no-pad-sections",]
 cppflags = [ "-P", "-undef", "-nostdinc", "-D_LANGUAGE_C", "-DF3DEX_GBI_2", "-D__GNUC__=2",]
 sn64_asflags = [ "-mips3",]
