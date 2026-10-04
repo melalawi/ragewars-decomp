@@ -1,0 +1,17 @@
+#include "common/types.h"
+#include "span_1000/code_8025DB64.h"
+#include "types.h"
+
+
+
+
+extern s32 D_80108080;
+
+extern s32 func_80257DD4_de(void *, s32, Vec3, s32, s32);
+
+s32 func_8025DE54_de(s16 arg0, Vec3 arg1, s32 arg4, s32 arg5) {
+    if (D_801427D0 != 0) {
+        return -1;
+    }
+    return func_80257DD4_de(&D_80108080, arg0, arg1, arg4, arg5);
+}

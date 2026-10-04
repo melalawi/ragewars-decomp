@@ -1,0 +1,13 @@
+#include "common/types.h"
+#include "span_16E000/code_80411FB8.h"
+#include "types.h"
+
+/* A stride of 1180 bytes. The debugger showed the global holding 0x80696F50 and the two observed
+   indices, 0 and 1, returning 0x80696F50 and 0x806973EC, which differ by exactly 1180. */
+
+
+extern Element_func_8041200C_de *D_8014D998;
+
+Element_func_8041200C_de *func_8041200C_de(s32 index) {
+    return &D_8014D998[index];
+}

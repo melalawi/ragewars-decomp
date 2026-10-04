@@ -1,0 +1,68 @@
+#include "span_1000/code_802688AC.h"
+#include "span_1000/types.h"
+#include "abi.h"
+#include "gbi.h"
+#include "types.h"
+
+/* Draws every part of a model resource with the shared material D_80137218 when the frame's command buffer still has 3000 commands free and func_80269A80_de accepts the material: sets the render mode, selects blend 2 through func_80268CE0_de, loads the model matrix (or sets it as segment 1), loads an optional two-light block, registers the resource, sets segment 2 to the given texture base or the model's own and emits each part's display list. Adapted from func_8026DF7C_de with the render mode, blend and light commands added and the per-part lighting call removed. */
+
+#include "types.h"
+#include "n64sdk.h"
+
+
+
+extern Gfx *D_8010C574;
+extern Frame118 *D_8011BDC0;
+extern u32 D_800DE854_de;
+extern char D_80137218;
+extern void func_80253BBC_de(s32 heap, void **resource);
+extern void *func_8028FDB4_de(void *table, s32 index);
+extern s32 func_80269A80_de(void *material, s32 pass);
+extern void func_80268CE0_de(s32 mode);
+
+void func_8026C978_de(void **resource, s32 matrix, s32 segment, s32 lights, void *textures, s32 pass) {
+    void *header;
+    void *base;
+    void **parts;
+    void *part;
+    s32 count;
+    s32 i;
+
+    if (D_800DE854_de - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+        return;
+    }
+    if (func_80269A80_de(&D_80137218, pass) == 0) {
+        return;
+    }
+    gDPSetRenderMode(D_8010C574++, 0x0C184F50, 0);
+    func_80268CE0_de(2);
+    if (segment != 0) { gSPSegment(D_8010C574++, 1, matrix); } else { gSPMatrix(D_8010C574++, matrix, G_MTX_LOAD); }
+    if (lights != 0) {
+        Gfx *cmd = D_8010C574++;
+        gSPMoveWord(cmd, G_MW_NUMLIGHT, 0, 0x18);
+        cmd = D_8010C574++;
+        gSPMoveMem(cmd, G_MV_LIGHT, 48, 16, lights + 8);
+        cmd = D_8010C574++;
+        gSPMoveMem(cmd, G_MV_LIGHT, 72, 16, lights);
+    }
+    func_80253BBC_de(0, resource);
+    header = *resource;
+    base = textures;
+    if (base == 0) {
+        base = func_8028FDB4_de(header, 0);
+    }
+    gSPSegment(D_8010C574++, 2, (unsigned int)base);
+    parts = func_8028FDB4_de(header, 2);
+    count = *(s32 *)parts;
+    for (i = 0; i < count; i++) {
+        part = func_8028FDB4_de(parts, i);
+        func_8028FDB4_de(part, 0);
+        {
+            Gfx *cmd;
+            void *list = func_8028FDB4_de(part, 1);
+
+            cmd = D_8010C574++;
+            gSPDisplayList(cmd, (unsigned int)list);
+        }
+    }
+}

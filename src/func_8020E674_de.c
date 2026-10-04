@@ -1,0 +1,136 @@
+#include "common/types.h"
+#include "span_1000/code_8020D328.h"
+#include "span_1000/types.h"
+#include "span_C76B0/data.h"
+#include "types.h"
+typedef struct World World;
+
+
+
+
+
+
+
+
+
+
+
+
+extern char D_800FFFD0;
+extern World *D_800FFFCC;
+
+extern f32 func_802B6560_de(f32 arg0);
+extern f32 func_802B7130_de(f32 arg0);
+extern s32 func_802444A4_de(InstanceHdr *arg0, Vec3 current, Vec3 desired,
+                          void *collisionInfo);
+
+
+
+
+
+s32 func_8020E674_de(Actor_func_8020E674_de *actor, f32 scale, f32 lateral) {
+    Vec3 current;
+    Vec3 desired;
+    Vec3 delta;
+    Vec3 acceleration;
+    f32 invDuration;
+    f32 total;
+    f32 segment;
+    f32 elapsed;
+    f32 accelScale;
+    f32 accelX;
+    f32 accelY;
+    f32 accelZ;
+    s32 count;
+    s32 i;
+
+    if (actor == 0 || actor->field264 == 0.0f) {
+        return 0;
+    }
+
+    invDuration = D_800C1E40_de / actor->field264;
+    delta.x = (actor->field258 - ((func_8020E674_S1 *)(actor->instance))->unk8.v0) * invDuration;
+    delta.x *= scale * func_802B6560_de(actor->field278);
+    delta.z = (actor->field260 - ((func_8020E674_S1 *)(actor->instance))->unk8.v1.z) * invDuration;
+    delta.z *= scale * func_802B6560_de(actor->field278);
+    delta.y = scale * func_802B7130_de(actor->field278);
+
+    acceleration.x = 0.0f;
+    acceleration.y = lateral;
+    acceleration.z = 0.0f;
+
+    total = (scale * func_802B6560_de(actor->field278)) / actor->field264;
+    if (total == 0.0f) {
+        return 0;
+    }
+    count = (s32)(total * D_800C1E44_de);
+    if (count == 0) {
+        return 0;
+    }
+
+    segment = total / (f32)count;
+    current = ((func_8020E674_S1 *)(actor->instance))->unk8.v1;
+    accelScale = segment * segment * D_800C1E48_de;
+    accelX = acceleration.x * accelScale;
+    accelY = acceleration.y * accelScale;
+    accelZ = acceleration.z * accelScale;
+
+    desired.x = current.x + delta.x * segment + accelX;
+    desired.y = current.y + delta.y * segment + accelY;
+    desired.z = current.z + delta.z * segment + accelZ;
+
+    elapsed = segment;
+
+    if (func_802444A4_de(actor->instance, current, desired, &D_800FFFD0) != 0 &&
+        (unsigned)(D_800FFFCC->state - 7) >= 2) {
+        return 1;
+    }
+
+    i = 0;
+    delta.x += acceleration.x * elapsed;
+    delta.y += acceleration.x * elapsed;
+    delta.z += acceleration.x * elapsed;
+    elapsed += segment;
+
+    while (i < count) {
+        current = desired;
+        desired.x = current.x + delta.x * elapsed + accelX;
+        desired.y = current.y + delta.y * elapsed + accelY;
+        desired.z = current.z + delta.z * elapsed + accelZ;
+
+        if (func_802444A4_de(actor->instance, current, desired, &D_800FFFD0) != 0 &&
+            (unsigned)(D_800FFFCC->state - 7) >= 2) {
+            return 1;
+        }
+
+        delta.x += acceleration.x * elapsed;
+        delta.y += acceleration.x * elapsed;
+        delta.z += acceleration.x * elapsed;
+        elapsed += segment;
+        i++;
+    }
+    return 0;
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1D70_4 = 1.0f;
+const float unbake_rodata_800C1D74_4 = 1.33333337f;
+const float unbake_rodata_800C1D78_4 = 0.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C6F30_4 = 1.0f;
+const float unbake_rodata_800C6F34_4 = 1.33333337f;
+const float unbake_rodata_800C6F38_4 = 0.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C20E0_4 = 1.0f;
+const float unbake_rodata_800C20E4_4 = 1.33333337f;
+const float unbake_rodata_800C20E8_4 = 0.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2120_4 = 1.0f;
+const float unbake_rodata_800C2124_4 = 1.33333337f;
+const float unbake_rodata_800C2128_4 = 0.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C1E40_4 = 1.0f;
+const float unbake_rodata_800C1E44_4 = 1.33333337f;
+const float unbake_rodata_800C1E48_4 = 0.5f;
+#endif

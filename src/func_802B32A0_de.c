@@ -1,0 +1,43 @@
+#include "common/types.h"
+#include "span_1000/code_802B82D0.h"
+#include "types.h"
+
+
+extern void *func_802B3BF8_de(void);
+
+
+
+
+
+
+
+
+
+
+
+void func_802B32A0_de(void *arg0, void *arg1, s8 arg2) {
+    s32 new_var;
+    s32 var_v0;
+    void *Shared_func_802B32A0_de_v0;
+    void *temp_a0;
+    Shared_func_802B32A0_de_FuncPtr fn;
+
+    if ((((ObjectStateC_2 *)(arg1))->unk_8.v0) != 0) {
+        Shared_func_802B32A0_de_v0 = func_802B3BF8_de();
+        if (Shared_func_802B32A0_de_v0 != 0) {
+            new_var = (((struct Shape_typemap_71 *)(arg0))->field_1C) + (((struct IntegerStateDC_2 *) ((ObjectStateC_2 *) arg1)->unk_8.v1)->state);
+            ((ObjectState10_3 *)(Shared_func_802B32A0_de_v0))->unk_8 = 0x10;
+            ((ObjectState10_3 *)(Shared_func_802B32A0_de_v0))->unk_4 = new_var;
+            if (arg2 < 0) {
+                var_v0 = -arg2;
+            } else {
+                var_v0 = (u8) arg2;
+            }
+            ((ObjectState10_3 *)(Shared_func_802B32A0_de_v0))->unk_C = var_v0;
+            ((ObjectState10_3 *)(Shared_func_802B32A0_de_v0))->unk_0 = 0;
+            temp_a0 = ((struct Draw *) ((ObjectStateC_2 *) arg1)->unk_8.v1)->model;
+            fn = ((CallbackStateC_4 *)(temp_a0))->callback;
+            fn(temp_a0, 3, Shared_func_802B32A0_de_v0);
+        }
+    }
+}

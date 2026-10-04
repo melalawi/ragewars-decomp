@@ -1,0 +1,34 @@
+#include "common/types.h"
+#include "span_1000/code_8025DB64.h"
+#include "types.h"
+
+
+
+
+extern s32 D_80108080;
+
+extern s32 func_80258D10_de(void *arg0);
+extern void func_80258D08_de(void *arg0, s32 arg1);
+extern s32 func_80257DD4_de(void *, s32, Vec3, s32, s32);
+
+s32 func_8025DF34_de(s32 arg0) {
+    s32 temp_s0;
+    s32 temp_s1;
+
+    if (D_801427D0 != 0) {
+        return -1;
+    }
+    {
+        Vec3 vec;
+        register f32 zero = 0.0f;
+
+        vec.z = zero;
+        vec.y = zero;
+        vec.x = zero;
+        temp_s1 = func_80258D10_de(&D_80108080);
+        func_80258D08_de(&D_80108080, 1);
+        temp_s0 = func_80257DD4_de(&D_80108080, (s16)arg0, vec, 0, -1);
+        func_80258D08_de(&D_80108080, temp_s1);
+    }
+    return temp_s0;
+}

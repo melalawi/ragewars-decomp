@@ -1,0 +1,36 @@
+#include "common/types.h"
+#include "span_16E000/code_804434BC.h"
+/* When team sync is enabled, copies a player's team flag from its actor (byte 0x8F of the record at
+   0x5D8) into D_801468A0 if it is 1; then resumes the script D_8011FAC0 through func_8044DD50_de in mode
+   1 or else clears the actor's word at 0x5D0; returns 1. Matched through a local pointer to
+   D_801468A0 and the team byte held in a local. */
+
+
+
+
+
+
+
+
+extern Sync D_801427E0;
+
+extern char D_8011BA00[];
+extern void func_8044DD50_de(char *);
+
+int func_80443844_de(int unused, Player_func_80443844_de *player) {
+    Sync *sync = &D_801427E0;
+    int team;
+
+    if (sync->sync != 0) {
+        team = player->actor->info->unk8F;
+        if (team == 1) {
+            sync->team = team;
+        }
+    }
+    if (D_80140FB0 == 1) {
+        func_8044DD50_de(D_8011BA00);
+    } else {
+        player->actor->waiting = 0;
+    }
+    return 1;
+}

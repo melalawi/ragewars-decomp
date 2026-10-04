@@ -1,0 +1,85 @@
+#include "common/types.h"
+#include "span_1000/code_802A6488.h"
+#include "span_C76B0/data.h"
+#include "types.h"
+
+extern s32 D_800CD72C;
+
+
+
+extern void func_80270910_de(f32 *, s32);
+extern void func_8027347C_de(void *arg0, f32 sx, f32 sy, f32 sz);
+extern void func_80272828_de(f32 *arg0);
+extern void func_802732D0_de(char *object, float *output);
+extern void func_802732EC_de(void *arg0, f32 *arg1);
+extern void func_8027027C_de(void *arg0, s32 arg1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void func_802A6174_de(void *arg0, void *arg1) {
+    f32 local[16];
+    f32 scale;
+    void *entry;
+    UnitMtx *dst;
+    UnitMtx *src;
+    u8 *cursor;
+    u8 *dst_cursor;
+    u8 *src_cursor;
+
+    entry = ((func_802A7164_S1 *)(arg1))->unkB0;
+    if (entry != 0) {
+        if (entry == (void *)-1) {
+            cursor = (u8 *)arg1;
+            dst_cursor = cursor + (D_800CD72C << 6) + 0x28;
+            dst = (UnitMtx *)dst_cursor;
+            src_cursor = cursor + ((D_800CD72C ^ 1) << 6) + 0x28;
+            src = (UnitMtx *)src_cursor;
+            *dst = *src;
+            ((func_802A7164_S1 *)(arg1))->unkB0 = 0;
+        } else {
+            func_80270910_de(local, entry + ((D_800CD72C << 6) + 0x60));
+            scale = D_800C5EB8_de;
+            if (((func_80204468_S3 *)(((func_802A68A0_S3 *)(entry))->unk118))->unk14 != 0) {
+                scale = D_800C5EBC_de;
+            }
+            func_8027347C_de(local, scale, scale, scale);
+            func_80272828_de(local);
+            func_802732D0_de((char *)local, &((func_802A7164_S1 *)(arg1))->unk10);
+            if (((func_802A7164_S4 *)(arg0))->unk3C & 4) {
+                func_802732EC_de(local, &((func_802A7164_S1 *)(arg1))->unk1C);
+            } else {
+                func_8027027C_de(local, arg1 + ((D_800CD72C << 6) + 0x28));
+            }
+        }
+        ((func_802A7164_S1 *)(arg1))->unk8 = ((func_80212828_S7 *)(((func_802A7164_S4 *)(arg0))->unk8))->unk8;
+    }
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C5DE8_4 = 0.00999999978f;
+const float unbake_rodata_800C5DEC_4 = 0.292571425f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800CB048_4 = 0.00999999978f;
+const float unbake_rodata_800CB04C_4 = 0.292571425f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C6158_4 = 0.00999999978f;
+const float unbake_rodata_800C615C_4 = 0.292571425f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C6198_4 = 0.00999999978f;
+const float unbake_rodata_800C619C_4 = 0.292571425f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C5EB8_4 = 0.00999999978f;
+const float unbake_rodata_800C5EBC_4 = 0.292571425f;
+#endif

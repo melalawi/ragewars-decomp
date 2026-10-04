@@ -1,0 +1,24 @@
+#include "common/types.h"
+#include "span_16E000/code_8043D904.h"
+#include "types.h"
+
+/** Dispatches to func_80264770_de or func_80264788_de with a byte read from arg0->unk20->unk4, chosen by arg1. */
+
+extern void func_80264770_de(s32 arg);
+extern void func_80264788_de(s32 arg);
+
+
+
+
+
+
+void func_8043DEF8_de(void *arg0, s32 arg1) {
+    s32 val;
+
+    val = ((func_80242278_S1 *)((((func_80228774_S1 *)(arg0))->unk20)))->unk4;
+    if (arg1 != 0) {
+        func_80264770_de(val);
+    } else {
+        func_80264788_de(val);
+    }
+}

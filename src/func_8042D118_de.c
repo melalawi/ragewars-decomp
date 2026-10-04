@@ -1,0 +1,55 @@
+#include "common/types.h"
+#include "span_16E000/code_8042D1BC.h"
+#include "types.h"
+
+
+
+
+
+
+
+
+
+
+
+/* For each of the 8 occupied slots without the pending-remove flag, runs its two release callbacks. */
+
+
+
+
+
+
+
+extern Shared_BigObj *D_800E1370;
+extern Shared_Rec3 D_801422D8[8];
+
+extern void func_804243E0_de(s32 a0, struct Shape_func_802764D4_de_2 *a1);
+extern void func_804259E0_de(s32 a0);
+
+void func_8042D118_de(void)
+{
+  s32 i;
+  Shared_BigObj *obj;
+  int temp_1;
+  Shared_Rec3 *recs;
+  for (i = 0; i < 8; i++)
+  {
+    s32 val;
+    temp_1 = -1;
+    obj = D_800E1370;
+    recs = D_801422D8;
+    val = obj->slot[i];
+    if (val == temp_1)
+    {
+      continue;
+    }
+    if ((recs + val)->flag != 0)
+    {
+      continue;
+    }
+    func_804243E0_de(val, &obj->arr2[val]);
+    recs = D_801422D8;
+    func_804259E0_de(val);
+  }
+
+}

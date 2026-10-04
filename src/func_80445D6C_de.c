@@ -1,0 +1,28 @@
+#include "common/types.h"
+#include "span_16E000/code_80445CE8.h"
+#include "types.h"
+/* Deletes the final character of the selected player's text entry: resets its cursor and, when the entry holds characters, decrements the count and length and clears the character at the new end. */
+
+
+
+
+
+extern char D_80140F80;
+extern TextEntry_func_80445D6C_de D_800E20A0[];
+extern s32 func_8022A5A0_de(void *table, s32 player);
+
+s32 func_80445D6C_de(s32 unused, MenuRules *menu) {
+    s32 i;
+    s32 count;
+
+    i = func_8022A5A0_de(&D_80140F80, menu->locked);
+    count = D_800E20A0[i].count;
+    D_800E20A0[i].cursor = 0;
+    if (count == 0) {
+        return 0;
+    }
+    D_800E20A0[i].count = count - 1;
+    D_800E20A0[i].length--;
+    D_800E20A0[i].text[D_800E20A0[i].length] = 0;
+    return 0;
+}

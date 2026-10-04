@@ -1,0 +1,75 @@
+#include "common/types.h"
+#include "span_1000/code_80210EFC.h"
+#include "span_1000/types.h"
+#include "types.h"
+
+extern f32 D_800C20C8_de;
+
+extern void func_80211020_de(void *);
+extern void func_80212670_de(void *arg0);
+extern s32 func_80209874_de(void *, s32);
+extern f32 func_802726BC_de(f32 *arg0, f32 *arg1);
+extern void func_80208410_de(void *);
+extern void func_80208EB0_de(s32 *);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void func_80212948_de(void *arg0)
+{
+    void *state;
+    s32 old_state;
+
+    state = ((func_80212828_S2 *)(((func_8020A028_S3 *)(arg0))->unk1D8))->unk1454;
+    if (((func_80212948_S3 *)(state))->unk64 == 0) {
+        func_80211020_de(state);
+        return;
+    }
+
+    old_state = ((func_80212948_S3 *)(state))->unkC;
+    if (old_state == -1) {
+        func_80212670_de(state);
+        if (((func_80212948_S3 *)(state))->unkC == old_state ||
+            ((func_80212948_S3 *)(state))->unkC == ((func_80212948_S3 *)(state))->unk4) {
+            func_80209874_de(state, 4);
+            return;
+        }
+    }
+
+    if (D_800C20C8_de < func_802726BC_de(
+            &((func_80212828_S7 *)(((func_8020A028_S3 *)(((func_80212948_S3 *)(state))->unk64))->unk1D8))->unk8,
+            &((func_80212828_S7 *)(*(void **)state))->unk8)) {
+        func_80209874_de(state, ((func_80212948_S3 *)(state))->unk230);
+        return;
+    }
+
+    func_80211020_de(state);
+    func_80208410_de(state);
+    func_80208EB0_de(state);
+    if (((func_80212948_S3 *)(state))->unk4 == ((func_80212948_S3 *)(state))->unkC) {
+        ((func_80212948_S3 *)(state))->unkC = -1;
+    }
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C1FF8_4 = 849346.5f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C71B8_4 = 849346.5f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2368_4 = 849346.5f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C23A8_4 = 849346.5f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C20C8_4 = 849346.5f;
+#endif

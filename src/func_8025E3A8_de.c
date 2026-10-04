@@ -1,0 +1,6 @@
+#include "span_1000/code_8025E35C.h"
+#include "types.h"
+extern s32 D_80108080;
+void func_8025E3A8_de(void) {
+    func_80258D1C_de(&D_80108080, 0);
+}

@@ -1,0 +1,52 @@
+#include "span_1000/code_80232B44.h"
+#include "span_1000/types.h"
+#include "span_C76B0/data.h"
+#include "types.h"
+
+extern s32 func_80222AA4_de(void *arg0, s16 arg1);
+
+
+
+
+
+
+
+
+
+s32 func_80232BD0_de(void *arg0, void *arg1, void *arg2) {
+    s32 temp_v0;
+    void *temp_v1;
+
+    {
+        f32 field = ((func_80232BC0_S1 *)(arg2))->unk11D8;
+        if (D_800C301C_de < field) {
+            return 1;
+        }
+    }
+    if ((((func_80203C40_S1 *)(arg0))->unk100 & 0x300000) && (((func_80232BC0_S1 *)(arg2))->unk1450 != 0)) {
+        temp_v1 = ((func_80232BC0_S1 *)(arg2))->unk1454;
+        temp_v0 = ((func_80230BB8_S3 *)(temp_v1))->unk23C;
+        ((func_80230BB8_S3 *)(temp_v1))->unk23C = 0;
+        return temp_v0 == 0;
+    }
+    if (((func_80232BC0_S1 *)(arg2))->unk6AC & 0x2000) {
+        if (((func_80232BC0_S1 *)(arg2))->unk11B4 != 0) {
+            return 1;
+        }
+        return func_80222AA4_de(arg2, ((func_80232BC0_S1 *)(arg2))->unk62E) == 0;
+    }
+    return 1;
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2F4C_4 = 0.100000001f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C810C_4 = 0.100000001f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C32CC_4 = 0.100000001f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C330C_4 = 0.100000001f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C301C_4 = 0.100000001f;
+#endif

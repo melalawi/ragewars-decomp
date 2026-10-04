@@ -1,0 +1,35 @@
+#include "span_1000/code_802B510C.h"
+#include "span_1000/types.h"
+
+
+
+
+
+
+
+
+
+void func_802B156C_de(List802B663C *arg0, void *arg1) {
+    Node_func_80239AF4_de *node;
+    Node_func_80239AF4_de *prev;
+
+    prev = 0;
+    node = arg0->head;
+    while (node != 0) {
+        if ((void *)&((func_8020C9CC_S1 *)(node))->unk4 == arg1) {
+            if (prev != 0) {
+                prev->next = node->next;
+            } else {
+                arg0->head = node->next;
+            }
+            if (node == arg0->tail) {
+                arg0->tail = prev;
+            }
+            node->next = arg0->free;
+            arg0->free = node;
+            return;
+        }
+        prev = node;
+        node = node->next;
+    }
+}

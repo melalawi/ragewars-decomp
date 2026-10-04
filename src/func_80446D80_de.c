@@ -1,0 +1,41 @@
+#include "common/types.h"
+#include "span_16E000/code_80447140.h"
+#include "types.h"
+/* __osPfsGetStatus, drafted from ultralib src/io/pfsgetstatus.c (2.0I branch): send a status request
+   to one controller through the pak PIF RAM block and turn its reply into a pack-present, new-pack
+   or failure code. */
+
+
+
+extern char D_8014DE80;
+extern void func_80446E58_de(int channel);
+extern void func_80446EE4_de(int channel, Entry_func_8023B9C0_eu *data);
+extern s32 func_802B9CB0_de(s32 direction, void *data);
+extern s32 func_802BB2A0_de(void *queue, void **msg, s32 flag);
+
+s32 func_80446D80_de(void *queue, int channel)
+{
+    s32 ret = 0;
+    void *dummy;
+    Entry_func_8023B9C0_eu data;
+
+    func_80446E58_de(channel);
+
+    ret = func_802B9CB0_de(1, &D_8014DE80);
+    func_802BB2A0_de(queue, &dummy, 1);
+
+    ret = func_802B9CB0_de(0, &D_8014DE80);
+    func_802BB2A0_de(queue, &dummy, 1);
+
+    func_80446EE4_de(channel, &data);
+
+    if (((data.team & 1) != 0) && ((data.team & 2) != 0)) {
+        return 2;
+    } else if ((data.slot != 0) || ((data.team & 1) == 0)) {
+        return 1;
+    } else if ((data.team & 4) != 0) {
+        return 4;
+    }
+
+    return ret;
+}

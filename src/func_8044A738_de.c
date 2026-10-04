@@ -1,0 +1,24 @@
+#include "common/types.h"
+#include "span_16E000/code_80449968.h"
+/* Detaches the object at offset 0xC of an owner: when there is one, finalises it through
+   func_8044A170_de and removes it from the lists at offsets 0xC and 0x20 through func_80255ED8_de and
+   func_80255D14_de. Returns the object. */
+
+
+extern void func_8044A170_de(void *);
+extern void func_80255ED8_de(void *, void *);
+extern void func_80255D14_de(void *, void *);
+
+
+
+
+void *func_8044A738_de(struct Draw *owner) {
+    void *object = owner->model;
+
+    if (object != 0) {
+        func_8044A170_de(object);
+        func_80255ED8_de(&((func_8044B388_S1 *)(owner))->unkC, object);
+        func_80255D14_de(&((func_8044B388_S1 *)(owner))->unk20, object);
+    }
+    return object;
+}

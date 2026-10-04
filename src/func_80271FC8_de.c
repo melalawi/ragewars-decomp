@@ -1,0 +1,17 @@
+#include "span_1000/code_8026E5DC.h"
+#include "span_1000/types.h"
+#include "types.h"
+
+
+
+
+
+
+
+
+/** Lerp a 3-component vector: out = a + t * (b - a). */
+void func_80271FC8_de(void *arg0, f32 t, void *a, void *b) {
+    ((func_8024C864_S1 *)(arg0))->unk0 = ((func_8024C864_S1 *)(a))->unk0 + (t * (((func_8024C864_S1 *)(b))->unk0 - ((func_8024C864_S1 *)(a))->unk0));
+    ((func_8024C864_S1 *)(arg0))->unk4 = ((func_8024C864_S1 *)(a))->unk4 + (t * (((func_8024C864_S1 *)(b))->unk4 - ((func_8024C864_S1 *)(a))->unk4));
+    ((func_8024C864_S1 *)(arg0))->unk8 = ((func_8024C864_S1 *)(a))->unk8 + (t * (((func_8024C864_S1 *)(b))->unk8 - ((func_8024C864_S1 *)(a))->unk8));
+}

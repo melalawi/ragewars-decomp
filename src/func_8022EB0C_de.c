@@ -1,0 +1,88 @@
+#include "span_1000/code_8022E120.h"
+#include "span_1000/types.h"
+#include "types.h"
+
+extern void *D_800CB2EC[];
+extern char D_8011D8D0;
+extern s32 func_80283228_de(void *, s32);
+
+extern void *jtbl_800C2E30[];
+
+
+
+
+
+
+
+
+/** Test whether an actor satisfies the condition selected by an entry type. */
+s32 func_8022EB0C_de(void *arg0, s32 arg1) {
+    void *entry;
+    s16 *condition;
+    char *indexed;
+    s32 offset;
+
+    entry = D_800CB2EC[arg1];
+    {
+        static void *sw_arg1_labels[0] __attribute__((section(".sdata"))) = {
+            &&sw_arg1_1, &&sw_arg1_2, &&sw_arg1_5, &&sw_arg1_6, &&sw_arg1_7, &&sw_arg1_8, &&sw_arg1_9, &&sw_arg1_10, &&sw_arg1_11, &&sw_arg1_13, &&sw_arg1_14, &&sw_arg1_15, &&sw_arg1_3, &&sw_arg1_4, &&sw_arg1_12, &&sw_arg1_0, &&sw_arg1_18, &&sw_arg1_19, &&sw_arg1_20, &&sw_arg1_21, &&sw_arg1_default
+        };
+        s32 sw_arg1_value = arg1;
+        if ((unsigned int)sw_arg1_value > 21) {
+            goto sw_arg1_default;
+        }
+        goto *jtbl_800C2E30[sw_arg1_value];
+    }
+    do {
+    sw_arg1_1:
+    sw_arg1_2:
+    sw_arg1_5:
+    sw_arg1_6:
+    sw_arg1_7:
+    sw_arg1_8:
+    sw_arg1_9:
+    sw_arg1_10:
+    sw_arg1_11:
+    sw_arg1_13:
+    sw_arg1_14:
+    sw_arg1_15:
+        condition = ((WeaponInfo *)(entry))->weaponClass;
+        offset = condition[0] * 2;
+        indexed = arg0;
+        indexed += offset;
+        return ((func_8022EAFC_S2 *)(indexed))->unk5F4 >= condition[3];
+    sw_arg1_3:
+        return ((func_8022EAFC_S3 *)(arg0))->unk5F4 >= 3;
+    sw_arg1_4:
+        return ((func_8022EAFC_S3 *)(arg0))->unk5F4 >= 5;
+    sw_arg1_12:
+        if (((func_8022EAFC_S3 *)(arg0))->unk5F8 == 0) {
+            goto check_external;
+        }
+    sw_arg1_0:
+    sw_arg1_18:
+    sw_arg1_19:
+    sw_arg1_20:
+    sw_arg1_21:
+        return 1;
+    check_external:
+        return func_80283228_de(&D_8011D8D0, (s32)arg0);
+    sw_arg1_default:
+        return 0;
+    
+    } while (0);
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800CBA48_18[] = {0x80, 0x0C, 0xBA, 0x30, 0x80, 0x0C, 0xBA, 0x40, 0x80, 0x10, 0x60, 0x60, 0x40, 0x3F, 0x00, 0x00, 0x42, 0x52, 0x41, 0x4C, 0x5F, 0x42, 0x4F, 0x52};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800D0D14_10[] = {0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01};
+const unsigned char unbake_rodata_800D0D24_18[] = {0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01};
+#elif defined(VERSION_EU)
+const float unbake_rodata_800CAB54_4 = 3.0f;
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800CAB54_18[] = {0x3E, 0x80, 0x00, 0x00, 0x3F, 0x66, 0x66, 0x66, 0x3F, 0x19, 0x99, 0x9A, 0x3E, 0x99, 0x99, 0x9A, 0xBF, 0xC9, 0x0F, 0xDC, 0x3F, 0xC9, 0x0F, 0xDC};
+#elif defined(VERSION_DE)
+const unsigned char unbake_rodata_800CB2EC_5C[] = {0x80, 0x0C, 0xAA, 0xAC, 0x80, 0x0C, 0xAB, 0xCC, 0x80, 0x0C, 0xAC, 0x2C, 0x80, 0x0C, 0xAC, 0x8C, 0x80, 0x0C, 0xAC, 0xEC, 0x80, 0x0C, 0xAD, 0x4C, 0x80, 0x0C, 0xAD, 0xAC, 0x80, 0x0C, 0xAE, 0x0C, 0x80, 0x0C, 0xAE, 0x6C, 0x80, 0x0C, 0xAE, 0xCC, 0x80, 0x0C, 0xAF, 0x2C, 0x80, 0x0C, 0xAF, 0x8C, 0x80, 0x0C, 0xAF, 0xEC, 0x80, 0x0C, 0xB0, 0x4C, 0x80, 0x0C, 0xB0, 0xAC, 0x80, 0x0C, 0xB1, 0x0C, 0x80, 0x0C, 0xAB, 0x0C, 0x80, 0x0C, 0xAB, 0x6C, 0x80, 0x0C, 0xB1, 0x6C, 0x80, 0x0C, 0xB1, 0xCC, 0x80, 0x0C, 0xB2, 0x2C, 0x80, 0x0C, 0xB2, 0x8C, 0x00, 0x00, 0x00, 0x00};
+#endif

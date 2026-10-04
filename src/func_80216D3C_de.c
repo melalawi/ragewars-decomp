@@ -1,0 +1,99 @@
+#include "common/types.h"
+#include "span_1000/code_80214DD4.h"
+#include "span_1000/types.h"
+#include "types.h"
+
+
+
+
+
+
+
+extern f32 D_800CD738;
+extern void func_80214DD4_de(void *, void *, s32, void *);
+extern void func_80215410_de(void *, void *, s32, void *);
+
+
+
+
+
+
+void func_80216D3C_de(Input80216D3C *arg0, void *arg1, Output80216D3C *arg2, s32 arg3, s32 arg4) {
+    Triple first;
+    Triple second;
+    f32 temp_f0;
+    f32 temp_f1;
+
+    temp_f1 = ((func_80216D3C_S1 *)(arg1))->unk7C;
+    if (temp_f1 > 0.0f) {
+        temp_f0 = temp_f1 - D_800CD738;
+        ((func_80216D3C_S1 *)(arg1))->unk7C = temp_f0;
+        if (temp_f0 <= 0.0f) {
+            ((func_80216D3C_S1 *)(arg1))->unk78 = 0;
+            ((func_80216D3C_S1 *)(arg1))->unk7C = 0.0f;
+        }
+    }
+    if (arg3 != 0) {
+        func_80214DD4_de(arg0, arg1, ((func_80216D3C_S1 *)(arg1))->unk88, (u8 *)arg2 + 0x44);
+    } else {
+        Output80216D3C *out = &((func_80216D3C_S2 *)(arg2))->unk44;
+        first = arg0->vec;
+        second.x = 0;
+        second.y = 0;
+        second.z = 0;
+        out->type = 3;
+        out->unk4 = 0;
+        out->unk8 = 0;
+        out->first = first;
+        out->second = second;
+        out->unk24 = 0;
+        second.y = 0;
+        first.y = 0;
+        out->third = first;
+        out->fourth = second;
+        out->unk40 = 0;
+    }
+    if (arg4 != 0) {
+        func_80215410_de(arg0, arg1, ((func_80216D3C_S1 *)(arg1))->unk80, arg2);
+        return;
+    }
+    first = arg0->vec;
+    second.x = 0;
+    second.y = 0;
+    second.z = 0;
+    arg2->type = 3;
+    arg2->unk4 = 0;
+    arg2->unk8 = 0;
+    arg2->first = first;
+    arg2->second = second;
+    arg2->unk24 = 0;
+    second.y = 0;
+    first.y = 0;
+    arg2->third = first;
+    arg2->fourth = second;
+    arg2->unk40 = 0;
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4864_4 = 0.138888896f;
+const float unbake_rodata_800C4868_4 = 0.000174532935f;
+const float unbake_rodata_800C486C_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9A24_4 = 0.138888896f;
+const float unbake_rodata_800C9A28_4 = 0.000174532935f;
+const float unbake_rodata_800C9A2C_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C45CC_4 = 16.0f;
+const float unbake_rodata_800C45D0_4 = 0.00392156886f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C45E0_4 = 0.25f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C46D0_4 = 0.00100000005f;
+const float unbake_rodata_800C46D4_4 = (-1.0f);
+const float unbake_rodata_800C46D8_4 = 1.0f;
+const float unbake_rodata_800C46DC_4 = 0.00100000005f;
+const float unbake_rodata_800C46E0_4 = 1.0f;
+const float unbake_rodata_800C46E4_4 = 1.0f;
+const float unbake_rodata_800C46E8_4 = 1.0f;
+#endif

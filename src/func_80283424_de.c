@@ -1,0 +1,16 @@
+#include "span_1000/code_8027ED40.h"
+#include "types.h"
+typedef s32 M2C_UNK;
+
+
+
+
+
+extern M2C_UNK D_8011ADB0;
+void func_80283424_de(void *arg0) {
+    (((struct ObjectLinks1E8 *) ((s8 *) arg0))->unk_18) = &D_8011ADB0;
+    (((struct ObjectLinks1E8 *) ((s8 *) arg0))->unk_0) = 2;
+    (((struct ObjectLinks1E8 *) ((s8 *) arg0))->unk_5C) = 0;
+    (((struct ObjectLinks1E8 *) ((s8 *) arg0))->unk_1DC) = 0;
+    (((struct ObjectLinks1E8 *) ((s8 *) arg0))->unk_1E4) = 0;
+}

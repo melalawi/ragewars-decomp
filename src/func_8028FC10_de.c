@@ -1,0 +1,46 @@
+#include "span_1000/code_8028DF6C.h"
+#include "span_C76B0/data.h"
+#include "types.h"
+
+
+
+extern s32 func_802BB2A0_de(void *arg0, void *arg1, s32 arg2);
+extern void func_802BB5F0_de(void *arg0, s32 arg1);
+extern void func_8028F954_de(void *arg0, void *arg1);
+extern void func_8028FBD8_de(void *arg0);
+extern s32 func_8028F544_de(void *arg0, s32 *arg1, s32 *arg2, s32 arg3);
+extern void func_8028FA60_de(void *arg0, s32 arg1, s32 arg2);
+
+extern s32 D_800CD704;
+
+extern s32 D_80106248;
+
+
+
+
+void func_8028FC10_de(void *arg0) {
+    Node_func_8028FC10_de *node = 0;
+    s32 value1 = 0;
+    s32 value2 = 0;
+    s32 flags;
+
+    while (func_802BB2A0_de(&((func_8028FBF0_S1 *)(arg0))->unk78, &node, 0) != -1) {
+        if (node->type == 1 && (node->flags & 0x20) && D_800CD704 == 0) {
+            D_800CD704 = 2;
+            func_802BB5F0_de(&D_80106248, D_800CD8B8_de);
+        }
+        func_8028F954_de(arg0, node);
+    }
+
+    if (((func_8028FBF0_S1 *)(arg0))->unk300 != 0 &&
+        ((func_8028FBF0_S1 *)(arg0))->unk2F4 != 0) {
+        func_8028FBD8_de(arg0);
+        return;
+    }
+
+    flags = (((func_8028FBF0_S1 *)(arg0))->unk2F4 == 0) * 2 |
+            (((func_8028FBF0_S1 *)(arg0))->unk2F8 == 0);
+    if (func_8028F544_de(arg0, &value1, &value2, flags) != flags) {
+        func_8028FA60_de(arg0, value1, value2);
+    }
+}

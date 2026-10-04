@@ -1,0 +1,46 @@
+#include "common/types.h"
+#include "span_16E000/code_80425BC0.h"
+#include "types.h"
+/* Marks available inventory entries with their slot indices. */
+#define NULL ((void *)0)
+
+
+
+
+s32 func_8022F4DC_de(void *, s32);                      /* extern */
+extern char D_800FEB00[];
+
+
+
+
+void func_80426090_de(Arg *arg0) {
+    s32 temp_s0;
+    s32 temp_s3;
+    s32 temp_v0;
+    s32 var_s1;
+    State_func_80426090_de *temp_a0;
+
+    func_8024DED0_S2 *var_s2;
+
+    temp_a0 = arg0->unk5D8;
+    if (temp_a0->unk91 != 1) {
+        var_s1 = 0;
+        if (temp_a0->unk78 != 0) {
+            var_s2 = arg0->unk18;
+            temp_s3 = temp_a0->unk7F * 0x190;
+            do {
+                temp_s0 = var_s2->unk4C;
+                if (temp_s0 >= 0x4C3) {
+                    temp_s0 = temp_s0 - 0x4C3;
+                    temp_v0 = func_8022F4DC_de(temp_s3 + D_800FEB00, temp_s0);
+                    if (temp_v0 == 1) {
+                        arg0->slots[temp_s0].available = temp_v0;
+                        arg0->slots[temp_s0].slot = var_s1;
+                    }
+                }
+                var_s1 += 1;
+                var_s2 = &((func_80426270_S1 *)(var_s2))->unk4;
+            } while (var_s1 < 8);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+#include "common/types.h"
+#include "span_1000/code_802BC630.h"
+#include "types.h"
+
+
+
+
+
+extern u8 D_801471DC_de[];
+extern char D_801471E0;
+
+void func_802B7AD8_de(u8 *valid, Entry_func_8023B9C0_eu *data) {
+    u8 *ptr;
+    __OSContRequesFormat readformat;
+    s32 i;
+    u8 mask = 0;
+
+    ptr = (u8 *)&D_801471E0;
+    for (i = 0; i < D_801471DC_de[0]; i++, ptr += sizeof(readformat), data++) {
+        readformat = *(__OSContRequesFormat *)ptr;
+        data->slot = (readformat.rxsize & 0xC0) >> 4;
+        if (data->slot != 0) {
+            continue;
+        }
+        data->id = (readformat.typel << 8) | readformat.typeh;
+        data->team = readformat.status;
+        mask |= 1 << i;
+    }
+    *valid = mask;
+}

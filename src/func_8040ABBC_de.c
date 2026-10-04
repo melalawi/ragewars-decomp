@@ -1,0 +1,11 @@
+#include "span_16E000/code_8040A4BC.h"
+#include "types.h"
+
+/* Stores 9 in the state word D_80153788 and one in D_80153758; func_8040ABA0_de stores 9 and zero. */
+extern s32 D_8014D4F8;
+extern s32 D_8014D4C8;
+
+void func_8040ABBC_de(void) {
+    D_8014D4F8 = 9;
+    D_8014D4C8 = 1;
+}

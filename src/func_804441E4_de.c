@@ -1,0 +1,9 @@
+#include "span_16E000/code_80444260.h"
+#include "types.h"
+
+/* Clears the word held in D_80154100. */
+extern s32 D_8014DE70;
+
+void func_804441E4_de(void) {
+    D_8014DE70 = 0;
+}

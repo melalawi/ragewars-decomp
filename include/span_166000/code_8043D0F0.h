@@ -1,0 +1,28 @@
+#ifndef UNBAKE_SPAN_166000_CODE_8043D0F0_H
+#define UNBAKE_SPAN_166000_CODE_8043D0F0_H
+#include "../types.h"
+struct Func8043D458Arg;
+struct Func8043D458Arg;
+struct Func8043D458Arg {
+    s8 pad0[8];
+    s32 flags;
+    s8 padC[8];
+    s32 *text;
+};
+
+/* unbake evidence input: c3RydWN0IEZ1bmM4MDQzRDQ1OEFyZzsKc3RydWN0IEZ1bmM4MDQzRDQ1OEFyZyB7CiAgICBzOCBwYWQwWzhdOwogICAgczMyIGZsYWdzOwogICAgczggcGFkQ1s4XTsKICAgIHMzMiAqdGV4dDsKfTsK */
+
+extern int func_8043D1DC_de(void);
+extern int func_8043D20C_de(void);
+extern int func_8043D214_de(void);
+extern int func_8043D21C_de(void);
+extern int func_8043D224_de(void);
+extern int func_8043D22C_de(void);
+extern int func_8043D234_de(void);
+extern int func_8043D23C_de(void);
+extern int func_8043D244_de(void);
+extern int func_8043D24C_de(void);
+extern int func_8043D254_de(void);
+extern int func_804433B8_de(void);
+extern void func_80444E28_de(void);
+#endif

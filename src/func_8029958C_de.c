@@ -1,0 +1,15 @@
+#include "span_1000/code_80299FC4.h"
+#include "types.h"
+
+
+
+
+
+extern s32 D_80146E00;
+void func_8029958C_de(s32 arg0) {
+    if (arg0 != 0) {
+        (((struct IntegerState530 *) ((s8 *) D_80146E00))->unk_52C) = (s32) ((((struct IntegerState530 *) ((s8 *) D_80146E00))->unk_52C) | 1);
+        return;
+    }
+    (((struct IntegerState530 *) ((s8 *) D_80146E00))->unk_52C) = (s32) ((((struct IntegerState530 *) ((s8 *) D_80146E00))->unk_52C) & ~1);
+}

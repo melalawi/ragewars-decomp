@@ -1,0 +1,71 @@
+#include "span_16E000/code_8042ED84.h"
+#include "types.h"
+
+/* Labels player p's roster rows: for each of the four 400-byte records of D_800FEB00 whose byte
+   0xE is clear and whose owner byte 0xD is p, when the matching 150-byte status record at 0xD0 of
+   D_80142208_de has byte 0x78 equal to one and byte 0x91 clear, points the text at 0x38 of the next
+   row item (0x2BA, 0x2E5, 0x2E6, then 0x2E7) of the window at 0xC of p's 2920-byte record at 0x58
+   of the block D_800E1454_de points to at that record. Adapted from func_80434B08_de with the copy
+   replaced by the row label. */
+
+#if defined(VERSION_DE)
+#define VALUE_2D6 0x2AC
+#define VALUE_2C2 0x2AA
+#define VALUE_2C6 0x2AB
+#elif defined(VERSION_EU_X)
+#define VALUE_2D6 0x2C7
+#define VALUE_2C2 0x2C2
+#define VALUE_2C6 0x2C6
+#else
+#define VALUE_2D6 0x2E6
+#define VALUE_2C2 0x2BA
+#define VALUE_2C6 0x2E5
+#endif
+
+
+
+
+
+
+
+
+
+
+
+extern struct Block_func_80434C2C_de *D_800E1454_de;
+extern u8 D_800FEB00[];
+extern s8 D_800FEB0D[];
+extern s8 D_800FEB0E[];
+extern struct MatchSetupGlobals D_80142208_de;
+extern struct Item_func_80434C2C_de *func_8040EC30_de(void *, s32);
+
+void func_80434C2C_de(s32 player) {
+    struct MatchSetupGlobals *globals;
+    s32 row;
+    s32 id;
+    s32 i;
+
+    row = 0;
+    globals = &D_80142208_de;
+    for (i = 0; i < 4; i++) {
+        switch (row) {
+        case 0:
+            id = VALUE_2C2;
+            break;
+        case 1:
+            id = VALUE_2C6;
+            break;
+        case 2:
+            id = VALUE_2D6;
+            break;
+        default:
+            id = VALUE_2D6 + 1;
+            break;
+        }
+        if (D_800FEB0E[i * 400] == 0 && D_800FEB0D[i * 400] == player &&
+            globals->status[i].active == 1 && globals->status[i].out == 0) {
+            func_8040EC30_de(D_800E1454_de->players[player].window, id)->text = &D_800FEB00[i * 400];
+            row++;
+        }
+    }
+}

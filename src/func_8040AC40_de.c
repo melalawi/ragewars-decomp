@@ -1,0 +1,10 @@
+#include "span_16E000/code_8040AC98.h"
+#include "types.h"
+
+/* Sets the state word D_80153788 to 0xF; this is one of a run of functions that each store one
+   state number there, and func_8040AAB8_de clears it. */
+extern s32 D_8014D4F8;
+
+void func_8040AC40_de(void) {
+    D_8014D4F8 = 0xF;
+}

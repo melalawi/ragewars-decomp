@@ -1,0 +1,53 @@
+#include "common/types.h"
+#include "span_1000/code_802406DC.h"
+#include "types.h"
+
+/* Sets up one face of a box as a four-corner quad of kind 4, copying points 7, 6, 5 and 4 of the
+   input into corners 3, 2, 1 and 0 and deriving its normal at 0x48 from the edges corner 1 minus
+   corner 0 and corner 2 minus corner 1 through func_80271F68_de, their cross product through
+   func_80272018_de and normalisation through func_8027207C_de. Adapted from func_80240D20_de with the copied points changed. */
+
+
+
+
+extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
+extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
+extern void func_8027207C_de(Vec3 *);
+
+/* The edge vectors belong to this helper; declared in the face function itself, GCC 2.8.1 keeps
+   the second edge's frame address in a saved register and grows the frame. */
+static inline void quad_normal(struct Quad *quad) {
+    Vec3 first;
+    Vec3 second;
+
+    func_80271F68_de(&first, &quad->corner[1], &quad->corner[0]);
+    func_80271F68_de(&second, &quad->corner[2], &quad->corner[1]);
+    func_80272018_de(&quad->normal, &second, &first);
+    func_8027207C_de(&quad->normal);
+}
+
+void func_80240E00_de(struct Quad *quad, Vec3 *points) {
+    quad->kind = 4;
+    quad->corner[3] = points[7];
+    quad->corner[2] = points[6];
+    quad->corner[1] = points[5];
+    quad->corner[0] = points[4];
+    quad_normal(quad);
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned int unbake_rodata_800DCC90_18[] = {0x0043B0D4U, 0x0043B0D4U, 0x0043B0E4U, 0x0043B0E4U, 0x0043B0F4U, 0x0043B27CU};
+#elif defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800E1F08_14[] = {0x004359B8U, 0x004359D8U, 0x004359C8U, 0x004359E8U, 0x004359F8U};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800E4A30_60[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+#elif defined(VERSION_EU_X)
+const unsigned char unbake_rodata_800DF338_C[] = {0x80, 0x0D, 0x2D, 0xC0, 0x80, 0x0D, 0x86, 0xB0, 0x80, 0x0D, 0xC4, 0xE8};
+const unsigned char unbake_rodata_800DF344_C[] = {0x80, 0x0D, 0x2D, 0xD8, 0x80, 0x0D, 0x86, 0xCC, 0x80, 0x0D, 0xC5, 0x00};
+const unsigned char unbake_rodata_800DF350_C[] = {0x80, 0x0D, 0x2D, 0xF0, 0x80, 0x0D, 0x86, 0xE8, 0x80, 0x0D, 0xC5, 0x18};
+const unsigned char unbake_rodata_800DF35C_C[] = {0x80, 0x0D, 0x2E, 0x08, 0x80, 0x0D, 0x87, 0x04, 0x80, 0x0D, 0xC5, 0x30};
+#elif defined(VERSION_DE)
+const float unbake_rodata_800DD490_4 = 10240.0f;
+const float unbake_rodata_800DD494_4 = 0.0174532942f;
+#endif

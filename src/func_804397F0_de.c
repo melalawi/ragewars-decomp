@@ -1,0 +1,104 @@
+#include "common/types.h"
+#include "span_1000/code_8026D4F0.h"
+#include "span_16E000/code_80414280.h"
+#include "span_16E000/code_80439930.h"
+#include "abi.h"
+#if defined(VERSION_DE)
+#define ANGLE_Y_CONSTANT D_800DDF54
+#elif defined(VERSION_EU)
+#define ANGLE_Y_CONSTANT D_800EE5D4
+#elif defined(VERSION_EU_X)
+#define ANGLE_Y_CONSTANT D_800E9794
+#elif defined(VERSION_US)
+#define ANGLE_Y_CONSTANT D_800DCC04
+#else
+#define ANGLE_Y_CONSTANT D_800E1F84
+#endif
+#include "types.h"
+#include "n64sdk.h"
+#include "gbi.h"
+/* Draws a menu model with screen-scaled translation, animated and fixed rotations, restoring the render-state flag afterward; the unsigned offset-to-pointer cast preserves matrix-address scheduling. */
+
+
+
+
+extern MenuModelScreen D_80141008[]; extern Gfx *D_8010C574;
+extern s32 D_800CC380, D_800CD72C, D_800DE880_de;
+extern char D_8011BDC8, D_800CBCA8;
+extern f32 D_800DDF50_de, ANGLE_Y_CONSTANT, D_800DDF58;
+ 
+extern void func_80272898_de(Matrix *,Vec3 *,Vec3 *);
+extern void func_80272C60_de(Matrix *,Vec3);
+extern void func_802737F0_de(Matrix *,f32); extern void func_802739C4_de(Matrix *,f32); extern void func_80273B98_de(Matrix *,f32);
+extern void func_8027347C_de(Matrix *,f32,f32,f32); extern void func_80273D6C_de(Matrix *);
+extern s32 func_802A1934_de(void); extern void func_8027027C_de(Matrix *,void *);
+extern s32 func_8028C198_de(void *,s32);  
+extern void func_8026DF30_de(s32,void *,void *,s32,s32);
+void func_804397F0_de(MenuModelItem *item) {
+ Matrix matrix;
+ Vec3 position, transformed, scale;
+ s32 model;
+ s32 saved;
+ f32 time, ratio;
+ saved=D_800CC380; D_800CC380=0;
+ if (item->model != -1) {
+  func_80417138_de(0x33335);
+  gDPPipeSync(D_8010C574++);
+  gDPSetCycleType(D_8010C574++, G_CYC_2CYCLE);
+  gDPSetTexturePersp(D_8010C574++, G_TP_PERSP);
+  gDPSetTextureFilter(D_8010C574++, G_TF_BILERP);
+  func_8026D844_de();
+  {Gfx *g=D_8010C574++; char *address=(char *)(u32)(D_800CD72C<<6); address+=0x380; address+=(u32)D_80141008; gSPMatrix(g, (u32)address, G_MTX_LOAD | G_MTX_PROJECTION);}
+  position=item->position;
+  func_80272898_de(&D_80141008[0].camera,&position,&transformed);
+  func_80272C60_de(&matrix,transformed);
+  time=func_802A1934_de();
+  if(item->speed.x!=0.0f)func_802737F0_de(&matrix,time*item->speed.x*D_800DDF50_de);
+  if(item->speed.y!=0.0f)func_802739C4_de(&matrix,time*item->speed.y*ANGLE_Y_CONSTANT);
+  if(item->speed.z!=0.0f)func_80273B98_de(&matrix,time*item->speed.z*D_800DDF58);
+  if(item->rotation.x!=0.0f)func_802737F0_de(&matrix,item->rotation.x*(*(&D_800DDF58+1)));
+  if(item->rotation.y!=0.0f)func_802739C4_de(&matrix,item->rotation.y*(*(&D_800DDF58+2)));
+  if(item->rotation.z!=0.0f)func_80273B98_de(&matrix,item->rotation.z*(*(&D_800DDF58+3)));
+  ratio=D_80141008[0].width/(f32)D_800DE880_de;
+  scale.x=item->scale.x*ratio;
+  scale.z=item->scale.z*ratio;
+  scale.y=item->scale.y*(D_80141008[0].height/(f32)*(&D_800DE880_de+1));
+  func_8027347C_de(&matrix,scale.x,scale.y,scale.z);func_80273D6C_de(&matrix);
+  func_8027027C_de(&matrix,(char *)item+((D_800CD72C<<6)+0x38));
+  model=func_8028C198_de(&D_8011BDC8,item->model);func_8026D980_de();
+  func_8026DF30_de(model,(char *)item+((D_800CD72C<<6)+0x38),&D_800CBCA8,0,item->flags);
+  func_8026D9D0_de();
+ }
+ D_800CC380=saved;
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800DCC00_4 = 0.0174532942f;
+const float unbake_rodata_800DCC04_4 = 0.0174532942f;
+const float unbake_rodata_800DCC08_4 = 0.0174532942f;
+const float unbake_rodata_800DCC0C_4 = 0.0174532942f;
+const float unbake_rodata_800DCC10_4 = 0.0174532942f;
+const float unbake_rodata_800DCC14_4 = 0.0174532942f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800E1F80_4 = 0.0174532942f;
+const float unbake_rodata_800E1F84_4 = 0.0174532942f;
+const float unbake_rodata_800E1F88_4 = 0.0174532942f;
+const float unbake_rodata_800E1F8C_4 = 0.0174532942f;
+const float unbake_rodata_800E1F90_4 = 0.0174532942f;
+const float unbake_rodata_800E1F94_4 = 0.0174532942f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800EE5D0_4 = 0.0174532942f;
+const float unbake_rodata_800EE5D4_4 = 0.0174532942f;
+const float unbake_rodata_800EE5D8_4 = 0.0174532942f;
+const float unbake_rodata_800EE5DC_4 = 0.0174532942f;
+const float unbake_rodata_800EE5E0_4 = 0.0174532942f;
+const float unbake_rodata_800EE5E4_4 = 0.0174532942f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800E9790_4 = 0.0174532942f;
+const float unbake_rodata_800E9794_4 = 0.0174532942f;
+const float unbake_rodata_800E9798_4 = 0.0174532942f;
+const float unbake_rodata_800E979C_4 = 0.0174532942f;
+const float unbake_rodata_800E97A0_4 = 0.0174532942f;
+const float unbake_rodata_800E97A4_4 = 0.0174532942f;
+#endif

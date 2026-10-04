@@ -1,0 +1,71 @@
+#include "common/types.h"
+#include "span_1000/code_8022D7A0.h"
+#include "span_C76B0/data.h"
+#include "types.h"
+/* Updates a player's charge effect: cancels the charge and moves its effect to state 3 when the
+   current weapon's entry in D_800D052C has no ammunition, the charge is off, or D_801468F4 is set with
+   the player's controller flag at 0x8F; while the button at 0x5E4 is held and charging it targets
+   D_800C7EF4, then runs the effect through func_80219480_de, eases the level toward the target by half
+   through func_80274870_de and clears a level below D_800C7EF8 once the target is zero. */
+
+extern void *D_800CB2EC[];
+extern s32 D_80142834;
+
+
+extern void func_80219480_de(void *, void *);
+extern void func_80274870_de(f32 *, f32, f32);
+
+
+
+
+
+
+
+
+void func_8022DFA8_de(void *arg0) {
+    f32 target;
+    char *effect;
+    s32 state;
+
+    target = 0.0f;
+    effect = &((ObjectLinks87C *)(arg0))->unk_878;
+    if (((struct Shape_typemap_14 *)(D_800CB2EC[((ObjectLinks87C *)(arg0))->unk_62E]))->field_8 <= 0
+        || ((ObjectLinks87C *)(arg0))->unk_7E8 == 0
+        || (D_80142834 != 0 && ((struct func_8020EA10_S3 *) ((ObjectLinks87C *) arg0)->unk_5D8)->unk8F != 0)) {
+        do {
+            ((ObjectLinks87C *)(arg0))->unk_7E8 = 0;
+            state = ((Shared_Effect *)(effect))->state;
+        } while (0);
+        if (state != 0 && state != 3) {
+            ((Shared_Effect *)(effect))->state = 3;
+        }
+    }
+    if (((ObjectLinks87C *)(arg0))->unk_5E4 != 0 && ((ObjectLinks87C *)(arg0))->unk_7E8 != 0) {
+        target = D_800C2E04_de;
+        ((ObjectLinks87C *)(arg0))->unk_7E8 = 1;
+    }
+    ((ObjectLinks87C *)(arg0))->unk_7F0 = target;
+    func_80219480_de(&((ObjectLinks87C *)(arg0))->unk_878, arg0);
+    func_80274870_de(&((ObjectLinks87C *)(arg0))->unk_7EC, target, 0.5f);
+    if (target == 0.0f && ((ObjectLinks87C *)(arg0))->unk_7EC < D_800C2E08_de) {
+        ((ObjectLinks87C *)(arg0))->unk_7EC = 0.0f;
+    }
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2D34_4 = 0.699999988f;
+const float unbake_rodata_800C2D38_4 = 0.00999999978f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7EF4_4 = 0.699999988f;
+const float unbake_rodata_800C7EF8_4 = 0.00999999978f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C30A8_4 = 0.699999988f;
+const float unbake_rodata_800C30AC_4 = 0.00999999978f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C30E8_4 = 0.699999988f;
+const float unbake_rodata_800C30EC_4 = 0.00999999978f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2E04_4 = 0.699999988f;
+const float unbake_rodata_800C2E08_4 = 0.00999999978f;
+#endif

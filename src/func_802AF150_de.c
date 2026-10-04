@@ -1,0 +1,105 @@
+#include "common/types.h"
+#include "span_1000/code_802B3A80.h"
+#include "types.h"
+
+
+
+extern void func_802AE6BC_de(s32 arg0, Message_func_802AF150_de *arg1);
+extern void func_802AF2E0_de(void *arg0, Message_func_802AF150_de *arg1);
+extern s32 func_802AE9B0_de(s32 arg0, s32 *arg1);
+extern void func_802AFB6C_de(void *arg0, Message_func_802AF150_de *arg1);
+extern s32 func_802B00D4_de(void *, s16 *, s32);
+extern void func_802BAC50_de(void *arg0, void *arg1, s32 arg2);
+extern char D_800C7350_de[];
+extern char D_800C7354_de[];
+
+extern void *jtbl_800C73D0[];
+
+
+
+
+/** Dispatch the current object message and forward any resulting value. */
+void func_802AF150_de(void *arg0) {
+    Message_func_802AF150_de message;
+    Message_func_802AF150_de output;
+    s32 value1;
+    s32 value2;
+    s32 value3;
+    s32 field18;
+    s32 value;
+
+    field18 = ((func_802B4220_S1 *)(arg0))->unk18;
+    if (field18 != 0) {
+        func_802AE6BC_de(field18, &message);
+        {
+        static void *sw_message_labels[0] __attribute__((section(".sdata"))) = {
+            &&sw_message_0, &&sw_message_2, &&sw_message_3, &&sw_message_17, &&sw_message_18, &&sw_message_19, &&sw_message_default
+        };
+        s32 sw_message_value = (s16)((u16)message.type - 1);
+        if ((unsigned int)sw_message_value > 19) {
+            goto sw_message_default;
+        }
+        goto *jtbl_800C73D0[sw_message_value];
+    }
+    do {
+        sw_message_0:
+            func_802AF2E0_de(arg0, &message);
+            if (((func_802B4220_S1 *)(arg0))->unk2C == 1) {
+                field18 = ((func_802B4220_S1 *)(arg0))->unk18;
+                if (field18 != 0 && (func_802AE9B0_de(field18, &value1) & 0xFF)) {
+                    output.type = 0;
+                    value = value1;
+                    goto send_value;
+                }
+            }
+            break;
+        sw_message_2:
+            func_802AFB6C_de(arg0, &message);
+            if (((func_802B4220_S1 *)(arg0))->unk2C == 1) {
+                field18 = ((func_802B4220_S1 *)(arg0))->unk18;
+                if (field18 != 0 && (func_802AE9B0_de(field18, &value2) & 0xFF)) {
+                    output.type = 0;
+                    value = value2;
+                    goto send_value;
+                }
+            }
+            break;
+        sw_message_3:
+            ((func_802B4220_S1 *)(arg0))->unk2C = 2;
+            message.type = 0x10;
+            func_802B00D4_de(&((func_802B4220_S1 *)(arg0))->unk48, &message, 0x7FFFFFFF);
+            break;
+        sw_message_17:
+        sw_message_18:
+        sw_message_19:
+            if (((func_802B4220_S1 *)(arg0))->unk2C == 1) {
+                field18 = ((func_802B4220_S1 *)(arg0))->unk18;
+                if (field18 != 0 && (func_802AE9B0_de(field18, &value3) & 0xFF)) {
+                    output.type = 0;
+                    value = value3;
+send_value:
+                    func_802B00D4_de(&((func_802B4220_S1 *)(arg0))->unk48, &output,
+                                  value * ((func_802B4220_S1 *)(arg0))->unk24);
+                }
+            }
+            break;
+        sw_message_default:
+            func_802BAC50_de(D_800C7350_de, D_800C7354_de, 0x190);
+            break;
+        
+    } while (0);
+    }
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned int unbake_rodata_800C72F0_50[] = {0x002AF0D4U, 0x002AF1E8U, 0x002AF11CU, 0x002AF164U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF1E8U, 0x002AF190U, 0x002AF190U, 0x002AF190U};
+#elif defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800CC620_50[] = {0x002B4274U, 0x002B4388U, 0x002B42BCU, 0x002B4304U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4388U, 0x002B4330U, 0x002B4330U, 0x002B4330U};
+#elif defined(VERSION_EU)
+const unsigned int unbake_rodata_800C7FC0_50[] = {0x002AF444U, 0x002AF558U, 0x002AF48CU, 0x002AF4D4U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF558U, 0x002AF500U, 0x002AF500U, 0x002AF500U};
+#elif defined(VERSION_EU_X)
+const unsigned int unbake_rodata_800C8990_50[] = {0x002AF484U, 0x002AF598U, 0x002AF4CCU, 0x002AF514U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF598U, 0x002AF540U, 0x002AF540U, 0x002AF540U};
+#elif defined(VERSION_DE)
+const unsigned int unbake_rodata_800C73D0_50[] = {0x002AF1A4U, 0x002AF2B8U, 0x002AF1ECU, 0x002AF234U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF2B8U, 0x002AF260U, 0x002AF260U, 0x002AF260U};
+#endif

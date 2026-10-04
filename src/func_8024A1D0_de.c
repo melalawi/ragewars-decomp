@@ -1,0 +1,95 @@
+#include "common/types.h"
+#include "span_1000/code_80245D38.h"
+#include "span_1000/types.h"
+#include "span_C76B0/data.h"
+#include "types.h"
+/* Refreshes the actor's animation from the lookup through func_8024AA18_de and func_8026DA4C_de and, when the lookup's third node carries flag 0x8000, spawns a 0x94 effect at the actor scaled by its size, then clears D_800D15E0. Adapted from func_8024C454_de with its body moved into a static inline helper, the func_8024B8EC_de update calls added before it, the D_800C8B38 scale constants and the trailing D_800D15E0 clear changed. */
+
+
+
+
+
+
+
+
+
+
+
+extern f32 D_800C3A48_de[];
+
+extern char D_8011D8D0;
+extern s32 D_800CD72C;
+extern s32 D_800CC390;
+
+extern void func_8024AA18_de(void *arg0, void *arg1, void *arg2);
+extern void func_8026DA4C_de();
+extern s32 func_8026E340_de(void);
+extern s32 *func_8028FDB4_de(void *value, s32 index);
+extern f32 func_8024D284_de(Actor_func_8024A1D0_de *actor);
+extern void func_802800C0_de(void *system, Actor_func_8024A1D0_de *source, Actor_func_8024A1D0_de *owner,
+                          s32 arg3, s32 arg4, s32 arg5, Vec3 position,
+                          Vector4f rotation, Vec3 position2, s32 arg15,
+                          s32 arg16, s32 arg17);
+extern Effect_func_8024A1D0_de *func_802830B8_de(void *system);
+extern f32 func_8024D398_de(Actor_func_8024A1D0_de *actor);
+
+static inline void func_8024A1C0_spawn(Actor_func_8024A1D0_de *actor, Lookup *lookup) {
+    Vec3 position;
+    Effect_func_8024A1D0_de *effect;
+    f32 scale;
+    s32 *node;
+
+    if (func_8026E340_de() != 0) {
+        node = func_8028FDB4_de(*lookup->value, 2);
+        if ((*node != 0) &&
+            (*func_8028FDB4_de(func_8028FDB4_de(node, 0), 0) & 0x8000)) {
+            position = actor->position0;
+            position.y += func_8024D284_de(actor) * D_800C3A48_de[1];
+            func_802800C0_de(&D_8011D8D0, actor, actor, 0, 0, 0x94,
+                          actor->position1, actor->rotation, position, 0, -1, 0);
+            effect = func_802830B8_de(&D_8011D8D0);
+            if (effect != 0) {
+                scale = D_800C3A50_de;
+                effect->field150 = func_8024D398_de(actor) * scale;
+                effect->field154 = func_8024D284_de(actor) * scale;
+            }
+        }
+    }
+}
+
+
+
+
+void func_8024A1D0_de(Actor_func_8024A1D0_de *actor, void *arg1, Lookup *lookup) {
+    s32 one;
+
+    if (lookup->unk4 != 0) {
+        func_8024AA18_de(actor, arg1, lookup);
+    }
+    if (lookup->unk0 != 0) {
+        one = 1;
+        func_8026DA4C_de((s32)lookup->value, ((func_8024A1C0_S1 *)(actor))->unkB4, one,
+                      (char *)actor + ((((D_800CD72C << one) + D_800CD72C) << 3) + 0x140),
+                      0, ((func_8024A1C0_S1 *)(actor))->unk3);
+        func_8024A1C0_spawn(actor, lookup);
+    }
+    D_800CC390 = 0;
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C397C_4 = 0.5f;
+const float unbake_rodata_800C3980_4 = 0.100000001f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8B3C_4 = 0.5f;
+const float unbake_rodata_800C8B40_4 = 0.100000001f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3CFC_4 = 0.5f;
+const float unbake_rodata_800C3D00_4 = 0.100000001f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3D3C_4 = 0.5f;
+const float unbake_rodata_800C3D40_4 = 0.100000001f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3A4C_4 = 0.5f;
+const float unbake_rodata_800C3A50_4 = 0.100000001f;
+#endif

@@ -1,0 +1,41 @@
+#include "span_1000/code_8022B500.h"
+/* Starts a timer in the first of the object's five 24-byte slots at 0x1248 whose remaining time is not
+   positive: records the kind, target, a zero elapsed value and the tag, sets the duration to rate
+   times D_800C7E00 and the step to target over duration. */
+
+
+
+
+extern float D_800C2D10_de;
+
+void func_8022B550_de(Obj_func_8022B550_de *obj, float target, float rate, int kind, int tag) {
+    int i;
+
+    for (i = 0; i < 5; i++) {
+        Timer *t = &obj->timers[i];
+        if (t->duration <= 0.0f) {
+            t->kind = kind;
+            t->target = target;
+            t->elapsed = 0.0f;
+            t->tag = tag;
+            t->duration = rate * D_800C2D10_de;
+            do {
+                t->step = target / t->duration;
+                return;
+            } while (0);
+        }
+    }
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2C40_4 = 15.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C7E00_4 = 15.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C2FB4_4 = 15.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C2FF4_4 = 15.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C2D10_4 = 15.0f;
+#endif

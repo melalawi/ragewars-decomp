@@ -1,0 +1,36 @@
+#include "span_1000/code_80232B44.h"
+#include "span_C76B0/data.h"
+#include "types.h"
+
+extern f32 func_80274808_de(f32, f32, s32);
+extern s32 func_80214178_de(void *, void *, s32);
+
+extern s32 D_800CA7A0_de;
+
+
+
+
+void func_8023371C_de(void *arg0, void *arg1) {
+    f32 temp_f0;
+    f32 temp_f20;
+
+    temp_f20 = D_800C3078_de;
+    temp_f0 = func_80274808_de(((func_8023370C_S1 *)(arg1))->unk124, temp_f20, D_800CA7A0_de);
+    ((func_8023370C_S1 *)(arg1))->unk124 = temp_f0;
+    if (temp_f20 <= temp_f0) {
+        func_80214178_de(arg0, arg1, 2);
+    }
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C2FA8_4 = 600.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8168_4 = 600.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3328_4 = 600.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3368_4 = 600.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3078_4 = 600.0f;
+#endif

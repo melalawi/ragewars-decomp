@@ -1,0 +1,64 @@
+#include "common/types.h"
+#include "span_1000/code_8024C444.h"
+#include "types.h"
+/* Plays a sound effect for an actor at a position: snaps the position to the nearest registered emitter
+ * in D_8013B364 when there is one, draws a random direction and (except for sound 0xBD7) scales it to a
+ * velocity of 409.6, then starts the sound through func_8028FFD0_de on D_80131600 with the actor's id and
+ * the given volume. */
+
+
+
+
+
+
+
+extern char D_8012D540;
+extern char D_801372A4;
+extern f32 D_800C3CD0_de[];
+extern s32 func_8020CB3C_de(void *, void *);
+extern Triple *func_8020C994_de(void *, s32);
+extern void func_8027207C_de(Vec3 *);
+extern void func_80271F9C_de(void *, void *, f32);
+extern s32 func_8028FFD0_de(s32, s32, s32, Triple, Triple, s32, f32);
+
+
+
+
+void func_8024DBC0_de(void *actor, Triple pos, s32 sound, f32 volume) {
+    Vec3 up;
+    Vec3 dir;
+    Triple velocity;
+    Triple at;
+    SoundRequest request;
+    Triple *emitter;
+
+    emitter = func_8020C994_de(&D_801372A4, func_8020CB3C_de(&D_801372A4, &pos));
+    request.position = pos;
+    at = request.position;
+    request.owner = ((func_80204468_S3 *)(actor))->unk14;
+    if (emitter != 0) {
+        at = *emitter;
+    }
+    up.x = 0.0f;
+    up.y = D_800C3CD0_de[1];
+    up.z = 0.0f;
+    dir.x = dir.y = dir.z = up.x;
+    func_8027207C_de(&dir);
+    if (sound != 0xBD7) {
+        func_80271F9C_de(&velocity, &dir, 409.59998f);
+    }
+    func_8028FFD0_de((s32)&D_8012D540, 0, sound, velocity, at, request.owner, volume);
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C3C04_4 = 1.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8DC4_4 = 1.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3F84_4 = 1.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3FC4_4 = 1.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3CD4_4 = 1.0f;
+#endif

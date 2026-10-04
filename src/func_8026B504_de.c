@@ -1,0 +1,71 @@
+#include "common/types.h"
+#include "span_1000/code_802688AC.h"
+#include "span_C76B0/data.h"
+#include "n64sdk.h"
+#include "gbi.h"
+#include "types.h"
+#include "n64sdk.h"
+
+
+
+/* Sets the lighting for a model: when lighting toward the player is enabled and the model is flagged 0x8000, it aims the static light's direction D_800D1610 from the model's position at the current player and emits one light with it, returning 1; otherwise it emits the given light block, if any, and returns 0. */
+
+
+
+
+extern Gfx *D_8010C574;
+extern s32 D_8010C560;
+
+extern signed char D_800CC3C0[3];
+extern char D_80140F80;
+extern void func_80270700_de(f32 *matrix, void *model);
+extern void func_802732D0_de(f32 *matrix, Vec3 *position);
+extern char *func_8022A414_de(void *players);
+extern void func_80271F68_de(Vec3 *out, void *a, Vec3 *b);
+extern void func_8027207C_de(Vec3 *v);
+
+s32 func_8026B504_de(void *model, void *lights, s32 *flags) {
+    Vec3 direction;
+    Vec3 position;
+    f32 matrix[4][4];
+
+    if (D_8010C560 != 0 && (*flags & 0x8000)) {
+        func_80270700_de((f32 *)matrix, model);
+        func_802732D0_de((f32 *)matrix, &position);
+        func_80271F68_de(&direction, func_8022A414_de(&D_80140F80) + 0x6E8, &position);
+        func_8027207C_de(&direction);
+        {
+            Gfx *cmd;
+            Gfx *light;
+            Gfx *ambient;
+
+            D_800CC3C0[0] = direction.x * D_800C4668_de;
+            D_800CC3C0[1] = direction.y * D_800C4668_de;
+            D_800CC3C0[2] = direction.z * D_800C4668_de;
+            cmd = D_8010C574++;
+            gSPMoveWord(cmd, G_MW_NUMLIGHT, 0, 0x18);
+            gSPMoveMem(D_8010C574++, G_MV_LIGHT, 48, 16, (unsigned int)(D_800CC3C0 - 8));
+            gSPMoveMem(D_8010C574++, G_MV_LIGHT, 72, 16, (unsigned int)(D_800CC3C0 - 0x10));
+        }
+        return 1;
+    }
+    if (lights != 0) {
+        gSPMoveWord(D_8010C574++, G_MW_NUMLIGHT, 0, 0x18);
+        gSPMoveMem(D_8010C574++, G_MV_LIGHT, 48, 16, (unsigned int)((char *)lights + 8));
+        gSPMoveMem(D_8010C574++, G_MV_LIGHT, 72, 16, (unsigned int)lights);
+    }
+    return 0;
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C4598_4 = 127.0f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C9758_4 = 127.0f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C4918_4 = 127.0f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C4958_4 = 127.0f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C4668_4 = 127.0f;
+#endif

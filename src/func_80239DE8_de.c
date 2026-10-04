@@ -1,0 +1,40 @@
+#include "common/types.h"
+#include "span_1000/code_8023940C.h"
+#include "span_C76B0/data.h"
+#include "types.h"
+
+/* Configures a three-channel record: copies a by-value three-word block to offset 8 and a value to
+   0x14, and gives each of the channels at 0x18, 0x2C and 0x40 the same mode word and a level scaled
+   by the pooled constant D_800C8664. */
+
+
+
+
+
+
+
+
+void func_80239DE8_de(struct Record_func_80239DE8_de *record, f32 first, f32 second, f32 third, f32 value, s32 mode,
+                   Triple triple) {
+    record->triple = triple;
+    record->value = value;
+    record->channels[0].mode = mode;
+    record->channels[1].mode = mode;
+    record->channels[2].mode = mode;
+    record->channels[0].level = first * D_800C3574_de;
+    record->channels[1].level = second * D_800C3574_de;
+    record->channels[2].level = third * D_800C3574_de;
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const float unbake_rodata_800C34A4_4 = 0.100000001f;
+#elif defined(VERSION_US_REV1)
+const float unbake_rodata_800C8664_4 = 0.100000001f;
+#elif defined(VERSION_EU)
+const float unbake_rodata_800C3824_4 = 0.100000001f;
+#elif defined(VERSION_EU_X)
+const float unbake_rodata_800C3864_4 = 0.100000001f;
+#elif defined(VERSION_DE)
+const float unbake_rodata_800C3574_4 = 0.100000001f;
+#endif

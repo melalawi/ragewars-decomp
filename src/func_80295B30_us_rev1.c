@@ -1,0 +1,38 @@
+#include "span_1000/code_802953FC.h"
+extern void *D_8014AED0;
+
+extern void *jtbl_800CA668[];
+
+/** Return the mode mask selected by the global record's leading byte. */
+int func_80295B30_us_rev1(void) {
+    {
+        static void *sw_mode_labels[0] __attribute__((section(".sdata"))) = {
+            &&sw_mode_0, &&sw_mode_1, &&sw_mode_3, &&sw_mode_5, &&sw_mode_2, &&sw_mode_4, &&sw_mode_default
+        };
+        int sw_mode_value = *(unsigned char *)D_8014AED0;
+        if ((unsigned int)sw_mode_value > 5) {
+            goto sw_mode_default;
+        }
+        goto *jtbl_800CA668[sw_mode_value];
+    }
+    do {
+    sw_mode_0:
+        return 8;
+    sw_mode_1:
+    sw_mode_3:
+    sw_mode_5:
+        return 4;
+    sw_mode_2:
+        return 0x20;
+    sw_mode_4:
+        return 0x10;
+    sw_mode_default:
+        return 0;
+    
+    } while (0);
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US_REV1)
+const unsigned int unbake_rodata_800CA668_18[] = {0x00295B5CU, 0x00295B64U, 0x00295B6CU, 0x00295B64U, 0x00295B74U, 0x00295B64U};
+#endif

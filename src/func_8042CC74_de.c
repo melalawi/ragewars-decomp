@@ -1,0 +1,70 @@
+#include "span_16E000/code_8042ACB0.h"
+#include "span_16E000/code_8042D1BC.h"
+#include "span_16E000/types.h"
+#include "types.h"
+
+
+
+
+extern func_8042CE54_S1 *D_800E1370;
+
+extern ResourceBank D_800E12D2[];
+
+extern void *func_8040EC30_de(void *arg0, u16 arg1);
+extern void func_8040E8D8_de(void *arg0, s32 arg1);
+
+
+/** Load four banks of ten resources, then activate the two resources used by the set. */
+void func_8042CC74_de(void)
+{
+    s32 bank;
+    s32 offset;
+    void *resource;
+
+    bank = 0;
+    offset = 0;
+    do {
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[0]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[2]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[4]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[6]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[8]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[10]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[12]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[14]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[16]);
+        func_8040E8D8_de(resource, 0);
+        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[18]);
+        func_8040E8D8_de(resource, 0);
+        offset += 0x28;
+        bank++;
+    } while (bank < 4);
+
+#if defined(VERSION_DE)
+    func_8042D418_de(0x264);
+    func_8042D418_de(0x269);
+#elif defined(VERSION_EU_X)
+    func_8042D418_de(0x26D);
+    func_8042D418_de(0x272);
+#else
+    func_8042D418_de(0x269);
+    func_8042D418_de(0x26E);
+#endif
+}
+
+/* Native resident constant storage; absolute access symbols retain their addresses. */
+#if defined(VERSION_US)
+const unsigned char unbake_rodata_800DFF82_4[] = {0x02, 0x3E, 0x00, 0x00};
+#elif defined(VERSION_US_REV1)
+const unsigned char unbake_rodata_800E5322_4[] = {0x02, 0x3E, 0x00, 0x00};
+#elif defined(VERSION_EU)
+const unsigned char unbake_rodata_800F1942_4[] = {0x02, 0x3E, 0x00, 0x00};
+#endif
