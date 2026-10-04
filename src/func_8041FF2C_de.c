@@ -85,12 +85,3 @@ void func_8041FF2C_de(void) {
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800DE6B2_2[] = {0x00, 0x92};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800E3A52_2[] = {0x00, 0x92};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800F0072_2[] = {0x00, 0x92};
-#endif

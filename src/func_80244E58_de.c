@@ -88,24 +88,3 @@ void func_80244E58_de(void) {
         camera->unk2A8 = D_800DE7E0->unk114;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800DD1A8_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800E24AC_4 = 255.0f;
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800ED3E0_12[] = {0x53, 0x69, 0x6E, 0x67, 0x6C, 0x65, 0x20, 0x53, 0x61, 0x76, 0x65, 0x20, 0x42, 0x6C, 0x6F, 0x63, 0x6B, 0x00};
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800E844C_4 = 1.0f;
-const float unbake_rodata_800E8450_4 = 0.5f;
-const float unbake_rodata_800E8454_4 = 0.300000012f;
-const float unbake_rodata_800E8458_4 = 1.0f;
-const float unbake_rodata_800E845C_4 = 1.0f;
-const float unbake_rodata_800E8460_4 = 2.14748365e+09f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800DDA8C_4 = 255.0f;
-const float unbake_rodata_800DDA90_4 = 4.0f;
-const float unbake_rodata_800DDA94_4 = 210.0f;
-const float unbake_rodata_800DDA98_4 = 255.0f;
-#endif

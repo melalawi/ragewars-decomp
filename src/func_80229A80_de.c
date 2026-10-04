@@ -87,28 +87,3 @@ s32 func_80229A80_de(void *game) {
     }
     return leader;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C5304_4 = 16.0f;
-const float unbake_rodata_800C5308_4 = 1.0f;
-const float unbake_rodata_800C530C_4 = 255.0f;
-const float unbake_rodata_800C5310_4 = 256.0f;
-const float unbake_rodata_800C5314_4 = 0.00281690131f;
-const float unbake_rodata_800C5318_4 = 0.00450450461f;
-const float unbake_rodata_800C531C_4 = 0.045045048f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA4C4_4 = 16.0f;
-const float unbake_rodata_800CA4C8_4 = 1.0f;
-const float unbake_rodata_800CA4CC_4 = 255.0f;
-const float unbake_rodata_800CA4D0_4 = 256.0f;
-const float unbake_rodata_800CA4D4_4 = 0.00281690131f;
-const float unbake_rodata_800CA4D8_4 = 0.00450450461f;
-const float unbake_rodata_800CA4DC_4 = 0.045045048f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C54BC_4 = 3000.0f;
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800C54D8_B[] = {0x67, 0x72, 0x61, 0x70, 0x68, 0x69, 0x63, 0x73, 0x65, 0x74, 0x00};
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C5390_4 = 122.879997f;
-#endif

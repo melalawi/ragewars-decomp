@@ -38,10 +38,3 @@ s32 func_804375B0_de(void) {
     func_8041A430_de(D_800E1730->unk0, 2);
     return 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800FCB0F_1[] = {0x00};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800FEB0F_1[] = {0xEB};
-#endif

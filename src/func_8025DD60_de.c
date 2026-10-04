@@ -39,21 +39,3 @@ void func_8025DD60_de(void *arg0) {
     func_802AFF60_de(((func_8025DD80_S1 *)(arg0))->unk14, (s16)(s32)(scaled * D_800C4038_de));
     ((func_8025DD80_S1 *)(arg0))->unk2C = scaled;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3F64_4 = 0.00999999978f;
-const float unbake_rodata_800C3F68_4 = 32767.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C9124_4 = 0.00999999978f;
-const float unbake_rodata_800C9128_4 = 32767.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C42E4_4 = 0.00999999978f;
-const float unbake_rodata_800C42E8_4 = 32767.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4324_4 = 0.00999999978f;
-const float unbake_rodata_800C4328_4 = 32767.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C4034_4 = 0.00999999978f;
-const float unbake_rodata_800C4038_4 = 32767.0f;
-#endif

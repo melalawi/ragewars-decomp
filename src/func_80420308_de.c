@@ -34,16 +34,3 @@ void func_80420308_de(s32 player) {
     func_80420438_de(player);
     func_8040E8D8_de(func_8040EC30_de(D_800E0280->entries[0].window, D_800E0284_de[player].prompt), 0);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800DEF36_4[] = {0x00, 0x92, 0x00, 0x00};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800E42D6_4[] = {0x00, 0x92, 0x00, 0x00};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800F08F6_4[] = {0x00, 0x92, 0x00, 0x00};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800EBAB6_4[] = {0x00, 0x96, 0x00, 0x00};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800E0286_4[] = {0x00, 0x90, 0x00, 0x00};
-#endif

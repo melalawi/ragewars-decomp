@@ -31,16 +31,3 @@ void func_8026F620_de(f32 *out, f32 *left, f32 *right)
     out[3] = out[7] = out[11] = 0.0f;
     out[15] = D_800C46EC_de;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C461C_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C97DC_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C499C_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C49DC_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C46EC_4 = 1.0f;
-#endif

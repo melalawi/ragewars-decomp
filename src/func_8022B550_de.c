@@ -26,16 +26,3 @@ void func_8022B550_de(Obj_func_8022B550_de *obj, float target, float rate, int k
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2C40_4 = 15.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C7E00_4 = 15.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C2FB4_4 = 15.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C2FF4_4 = 15.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2D10_4 = 15.0f;
-#endif

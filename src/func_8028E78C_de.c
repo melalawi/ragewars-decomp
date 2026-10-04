@@ -34,16 +34,3 @@ s32 func_8028E78C_de(void *arg0, Vec3 *arg1) {
     }
     return magnitude <= D_800C533C_de;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C526C_4 = 6553600.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA42C_4 = 6553600.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C55EC_4 = 6553600.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C562C_4 = 6553600.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C533C_4 = 6553600.0f;
-#endif

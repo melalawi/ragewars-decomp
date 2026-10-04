@@ -95,22 +95,3 @@ generic:
         } while (node != 0);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C52C4_4 = 10.2399998f;
-const float unbake_rodata_800C52C8_4 = 1.0f;
-const float unbake_rodata_800C52CC_4 = 81.9199982f;
-const float unbake_rodata_800C52D0_4 = 0.5f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA484_4 = 10.2399998f;
-const float unbake_rodata_800CA488_4 = 1.0f;
-const float unbake_rodata_800CA48C_4 = 81.9199982f;
-const float unbake_rodata_800CA490_4 = 0.5f;
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800C53C0_C[] = {0x6C, 0x65, 0x76, 0x65, 0x6C, 0x20, 0x69, 0x6E, 0x64, 0x65, 0x78, 0x00};
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C518C_4 = 65536.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C52FC_4 = 3.40282347e+38f;
-#endif

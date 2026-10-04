@@ -74,16 +74,3 @@ void func_8040BBB0_de(void) {
         func_802BA700_de(2);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800DD53B_1[] = {0xFF};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800E28DB_1[] = {0xFF};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800EEEFB_1[] = {0xFF};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800EA0BB_1[] = {0xFF};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800DE88B_1[] = {0xFF};
-#endif

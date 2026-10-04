@@ -39,12 +39,3 @@ int func_802327F4_de(Player_func_802327F4_de *player) {
     }
     return result;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2F40_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8100_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3010_4 = 1.0f;
-#endif

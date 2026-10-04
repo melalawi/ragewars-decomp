@@ -73,16 +73,3 @@ void func_80297FA0_de(s32 screenCount, s32 value) {
     func_802982C4_de(9, &D_0040C5C0, &D_0040C5C8, 1);
     func_802982C4_de(11, &D_004125A4, &D_00412634, 1);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C5598_8 = 1000.0;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800CA7F8_8 = 1000.0;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C5908_8 = 1000.0;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C5948_8 = 1000.0;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C5668_8 = 1000.0;
-#endif

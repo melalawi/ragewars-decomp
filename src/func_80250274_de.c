@@ -97,21 +97,3 @@ void func_80250274_de(Owner_func_80250274_de *owner) {
     D_800CC390 = 0;
     D_800CC3A0 = D_800C3E58_de;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3D84_4 = 255.0f;
-const float unbake_rodata_800C3D88_4 = 255.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8F44_4 = 255.0f;
-const float unbake_rodata_800C8F48_4 = 255.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4104_4 = 255.0f;
-const float unbake_rodata_800C4108_4 = 255.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4144_4 = 255.0f;
-const float unbake_rodata_800C4148_4 = 255.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3E54_4 = 255.0f;
-const float unbake_rodata_800C3E58_4 = 255.0f;
-#endif

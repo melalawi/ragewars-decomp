@@ -38,10 +38,3 @@ void func_80434B08_de(s32 player) {
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800FCB0E_1[] = {0xC2};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800FEB0E_1[] = {0xF5};
-#endif

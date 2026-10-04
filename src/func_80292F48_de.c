@@ -16,16 +16,3 @@ void func_80292F48_de(void) {
     func_802BAC90_de((s32)D_8011B590, 0, D_0029350C, 0, (s32)(D_800E7C00 + 0x80), D_800CD8A4_de);
     func_802BB750_de((s32)D_8011B590);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800CD7B4_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800D2B14_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800CE484_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800CEE54_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800CD8A4_8[] = {0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x0A};
-#endif

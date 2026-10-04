@@ -53,22 +53,3 @@ void func_8022A748_de(void *arg0) {
         node = node->next;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned int unbake_rodata_800C5510_40[] = {0x00297890U, 0x002978C8U, 0x0029791CU, 0x0029791CU, 0x00297870U, 0x00297870U, 0x00297870U, 0x00297870U, 0x0029791CU, 0x0029791CU, 0x0029791CU, 0x0029791CU, 0x0029791CU, 0x0029791CU, 0x002978ECU, 0x00297904U};
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800CA810_8 = 1000.0;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C5670_4 = 255.0f;
-const float unbake_rodata_800C5674_4 = 0.17453295f;
-const float unbake_rodata_800C5678_4 = 0.400000006f;
-const float unbake_rodata_800C567C_4 = 0.699999988f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C5684_4 = 10.2399998f;
-const float unbake_rodata_800C5688_4 = 1.0f;
-const float unbake_rodata_800C568C_4 = 81.9199982f;
-const float unbake_rodata_800C5690_4 = 0.5f;
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800C54F0_8[] = {0x74, 0x65, 0x78, 0x74, 0x75, 0x72, 0x65, 0x00};
-#endif

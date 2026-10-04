@@ -35,10 +35,3 @@ case_3:
 done:
     return 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned int unbake_rodata_800DBD18_14[] = {0x0040BBE8U, 0x0040BC18U, 0x0040BC18U, 0x0040BBF8U, 0x0040BC08U};
-#elif defined(VERSION_US_REV1)
-const unsigned int unbake_rodata_800E1098_18[] = {0x0040BBE8U, 0x0040BC18U, 0x0040BC18U, 0x0040BBF8U, 0x0040BC08U, 0x0043C5E4U};
-#endif

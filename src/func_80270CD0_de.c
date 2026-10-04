@@ -75,26 +75,3 @@ void func_80270CD0_de(Vector4f *out, f32 amount, Vector4f *a, Vector4f *b) {
         out->w = (scaleA * a->w) + (scaleB * other->w);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C4710_4 = 0.707106769f;
-const float unbake_rodata_800C4714_4 = 1.0f;
-const float unbake_rodata_800C4718_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C98D0_4 = 0.707106769f;
-const float unbake_rodata_800C98D4_4 = 1.0f;
-const float unbake_rodata_800C98D8_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4A90_4 = 0.707106769f;
-const float unbake_rodata_800C4A94_4 = 1.0f;
-const float unbake_rodata_800C4A98_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4AD0_4 = 0.707106769f;
-const float unbake_rodata_800C4AD4_4 = 1.0f;
-const float unbake_rodata_800C4AD8_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C47E0_4 = 0.707106769f;
-const float unbake_rodata_800C47E4_4 = 1.0f;
-const float unbake_rodata_800C47E8_4 = 1.0f;
-#endif

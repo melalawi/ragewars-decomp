@@ -40,26 +40,3 @@ void func_80293C34_de(void *arg0) {
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C53D8_4 = 15.0f;
-const float unbake_rodata_800C53DC_4 = 1.0f;
-const float unbake_rodata_800C53E0_4 = 60.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA598_4 = 15.0f;
-const float unbake_rodata_800CA59C_4 = 1.0f;
-const float unbake_rodata_800CA5A0_4 = 60.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C5758_4 = 15.0f;
-const float unbake_rodata_800C575C_4 = 1.0f;
-const float unbake_rodata_800C5760_4 = 60.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C5798_4 = 15.0f;
-const float unbake_rodata_800C579C_4 = 1.0f;
-const float unbake_rodata_800C57A0_4 = 60.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C54AC_4 = 15.0f;
-const float unbake_rodata_800C54B0_4 = 1.0f;
-const float unbake_rodata_800C54B4_4 = 60.0f;
-#endif

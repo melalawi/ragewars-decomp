@@ -88,16 +88,3 @@ void func_802285E8_de(char *arg0) {
         actor = ((func_802285C4_S2 *)(actor))->unk16E0;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C52C0_4 = 122.879997f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA480_4 = 122.879997f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C53AC_4 = (-2.0f);
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C5188_4 = 65536.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C52EC_4 = 3.40282347e+38f;
-#endif

@@ -201,31 +201,3 @@ void func_80214DD4_de(Actor_func_80214DD4_de *arg0, Tracker *arg1, s32 boost, Tr
     out->flatDelta = delta;
     out->flatDist = func_802B72B0_de(delta.x * delta.x + delta.y * delta.y + delta.z * delta.z);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C209C_4 = 51.1999969f;
-const float unbake_rodata_800C20A0_4 = 0.899999976f;
-const float unbake_rodata_800C20A4_4 = 102.399994f;
-const float unbake_rodata_800C20A8_4 = 1.5f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C725C_4 = 51.1999969f;
-const float unbake_rodata_800C7260_4 = 0.899999976f;
-const float unbake_rodata_800C7264_4 = 102.399994f;
-const float unbake_rodata_800C7268_4 = 1.5f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C240C_4 = 51.1999969f;
-const float unbake_rodata_800C2410_4 = 0.899999976f;
-const float unbake_rodata_800C2414_4 = 102.399994f;
-const float unbake_rodata_800C2418_4 = 1.5f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C244C_4 = 51.1999969f;
-const float unbake_rodata_800C2450_4 = 0.899999976f;
-const float unbake_rodata_800C2454_4 = 102.399994f;
-const float unbake_rodata_800C2458_4 = 1.5f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C216C_4 = 51.1999969f;
-const float unbake_rodata_800C2170_4 = 0.899999976f;
-const float unbake_rodata_800C2174_4 = 102.399994f;
-const float unbake_rodata_800C2178_4 = 1.5f;
-#endif

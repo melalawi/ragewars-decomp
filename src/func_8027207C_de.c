@@ -20,16 +20,3 @@ void func_8027207C_de(f32 *arg0) {
         arg0[2] = arg0[2] * scale;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C47DC_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C999C_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4B5C_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4B9C_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C48AC_4 = 1.0f;
-#endif

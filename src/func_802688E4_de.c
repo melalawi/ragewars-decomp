@@ -40,16 +40,3 @@ void func_802688E4_de(Actor_func_802688E4_de *arg0, Player *arg1, s32 arg2, Blas
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C43B4_4 = 10.2399998f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C9574_4 = 10.2399998f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4734_4 = 10.2399998f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4774_4 = 10.2399998f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C4484_4 = 10.2399998f;
-#endif

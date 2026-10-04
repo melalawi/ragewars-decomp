@@ -99,16 +99,3 @@ void func_80219490_de(char *object, char *camera) {
     func_8026D914_de(0);
     func_8026E378_de(0, 0x20);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2200_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C73C0_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C2570_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C25B0_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C22D0_4 = 1.0f;
-#endif

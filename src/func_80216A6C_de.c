@@ -49,16 +49,3 @@ s32 func_80216A6C_de(Instance8020CD74 *arg0, void *unused, Instance8020CD74 *tar
     }
     return 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C20FC_4 = 0.800000012f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C72BC_4 = 0.800000012f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C246C_4 = 0.800000012f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C24AC_4 = 0.800000012f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C21CC_4 = 0.800000012f;
-#endif

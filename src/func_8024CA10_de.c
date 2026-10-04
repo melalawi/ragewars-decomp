@@ -46,16 +46,3 @@ void func_8024CA10_de(void *arg0, s32 arg1, void *arg2) {
         ((Vector4f *)(arg2))->w = ((Vector4f *)(a))->w + scale * (((Vector4f *)(base))->w - ((Vector4f *)(a))->w);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3AA8_4 = 3.05185094e-05f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8C68_4 = 3.05185094e-05f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3E28_4 = 3.05185094e-05f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3E68_4 = 3.05185094e-05f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3B78_4 = 3.05185094e-05f;
-#endif

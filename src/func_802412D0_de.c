@@ -30,16 +30,3 @@ s32 func_802412D0_de(void *arg0, void *arg1, void *arg2, f32 *arg3) {
     *arg3 = var_f0;
     return var_v0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3670_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8830_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C39F0_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3A30_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3740_4 = 1.0f;
-#endif

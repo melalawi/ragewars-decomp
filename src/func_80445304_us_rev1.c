@@ -7,8 +7,3 @@ extern void func_80444FA0_us_rev1(void *, void *, void *, s32, s32, s32, s32, f3
 void func_80445304_us_rev1(void *first, void *second, void *third) {
     func_80444FA0_us_rev1(first, second, third, 1, 8, 0xA, 0x7D0, (1.0f));
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US_REV1)
-const float unbake_rodata_800E2800_4 = 1.0f;
-#endif

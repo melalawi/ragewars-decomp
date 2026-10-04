@@ -46,16 +46,3 @@ void *func_802395A4_de(void *arg0, Vec3 *arg1) {
     }
     return bestNode;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3478_4 = 3.40282347e+38f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8638_4 = 3.40282347e+38f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C37F8_4 = 3.40282347e+38f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3838_4 = 3.40282347e+38f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3548_4 = 3.40282347e+38f;
-#endif

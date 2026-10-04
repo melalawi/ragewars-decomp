@@ -12,8 +12,3 @@ unsigned int func_802BAD80_de(void *object) {
     }
     return ((func_80205494_S3 *)(object))->unk14;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800D3F20_4[] = {0x00, 0x00, 0x00, 0x00};
-#endif

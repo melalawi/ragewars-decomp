@@ -29,16 +29,3 @@ f32 func_802746A0_de(f32 arg0, f32 arg1, f32 arg2) {
     }
     return arg0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C4890_4 = 1.5f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C9A50_4 = 1.5f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4C10_4 = 1.5f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4C50_4 = 1.5f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C4960_4 = 1.5f;
-#endif

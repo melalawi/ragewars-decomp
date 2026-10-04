@@ -45,16 +45,3 @@ func_8022FDAC_de
 #endif
 (arg0, arg1);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2F48_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8108_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C32C8_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3308_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3018_4 = 1.0f;
-#endif

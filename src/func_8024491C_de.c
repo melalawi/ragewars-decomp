@@ -102,20 +102,3 @@ s32 func_8024491C_de(char *arg0, Vec3 arg1, Vec3 arg2, s32 arg3,
     } while (result != 0 && active != 0);
     return count;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800DD164_4 = 0.5f;
-const float unbake_rodata_800DD168_4 = 2.14748365e+09f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800E2458_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800ED2F0_4 = (-10000.0f);
-const float unbake_rodata_800ED2F4_4 = (-20000.0f);
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800E835C_4 = 1.0f;
-const float unbake_rodata_800E8360_4 = 1.0f;
-const float unbake_rodata_800E8364_4 = 0.166666672f;
-#elif defined(VERSION_DE)
-const unsigned int unbake_rodata_800DDA10_20[] = {0x00429090U, 0x00429098U, 0x004290A0U, 0x004290A8U, 0x004290A8U, 0x004297A8U, 0x00429754U, 0x004297A8U};
-#endif

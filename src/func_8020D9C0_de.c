@@ -48,16 +48,3 @@ s32 func_8020D9C0_de(Obj_func_8020D9C0_de *obj) {
     obj->result.z = base->z + sum.z;
     return 1;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C1CE8_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C6EA8_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C2058_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C2098_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C1DB8_4 = 1.0f;
-#endif

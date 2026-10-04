@@ -16,16 +16,3 @@ s32 func_80203848_de(s32 arg0, s32 arg1, void *arg2) {
     func_80202CA0_de(arg0, sp10);
     return arg0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C1980_4 = 122.879997f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C6B40_4 = 122.879997f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C1CF0_4 = 122.879997f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C1D30_4 = 122.879997f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C1A4C_4 = 0.5f;
-#endif

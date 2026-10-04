@@ -39,16 +39,3 @@ void func_8024CB4C_de(void *arg0, s32 arg1, void *arg2) {
                   (char *)base + (((ObjectLinks24_2 *)(o))->unk_10) * 4,
                   (char *)base + (((ObjectLinks24_2 *)(o))->unk_14) * 4);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3AAC_4 = 3.05185094e-05f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8C6C_4 = 3.05185094e-05f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3E2C_4 = 3.05185094e-05f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3E6C_4 = 3.05185094e-05f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3B7C_4 = 3.05185094e-05f;
-#endif

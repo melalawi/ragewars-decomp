@@ -37,16 +37,3 @@ void func_80273760_de(void *arg0, f32 arg1) {
     ((func_80272848_S1 *)(m))->unk10 = -sin_v;
     ((func_80272848_S1 *)(m))->unk4 = sin_v;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C4830_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C99F0_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4BB0_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4BF0_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C4900_4 = 1.0f;
-#endif

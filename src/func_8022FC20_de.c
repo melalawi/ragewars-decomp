@@ -83,16 +83,3 @@ void func_8022FC20_de(void *arg0, void *arg1) {
     func_8022BC14_de(actor);
     D_800CD738 = old_delta;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2DC0_4 = 0.25f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C7F80_4 = 0.25f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3140_4 = 0.25f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3180_4 = 0.25f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2E90_4 = 0.25f;
-#endif

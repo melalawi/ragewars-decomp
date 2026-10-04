@@ -54,16 +54,3 @@ void func_80270AAC_de(Vector4f *out, f32 amount, Vector4f *a, Vector4f *b) {
     out->z = (scaleA * a->z) + (scaleB * other->z);
     out->w = (scaleA * a->w) + (scaleB * other->w);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C470C_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C98CC_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4A8C_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4ACC_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C47DC_4 = 1.0f;
-#endif

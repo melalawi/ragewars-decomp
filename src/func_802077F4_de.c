@@ -54,16 +54,3 @@ void func_802077F4_de(void *arg0, void *arg1)
         ((func_80203B60_S1 *)(arg0))->unk100 = ((func_80203B60_S1 *)(arg0))->unk100 & ~0x2000;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C1ACC_4 = 6.28318596f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C6C8C_4 = 6.28318596f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C1E3C_4 = 6.28318596f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C1E7C_4 = 6.28318596f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C1B9C_4 = 6.28318596f;
-#endif

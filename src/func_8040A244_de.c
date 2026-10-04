@@ -35,15 +35,6 @@ s32 func_8040A244_de(struct Field *field) {
     return 0;
 }
 
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800D2410_4[] = {0x80, 0x0D, 0x00, 0x04};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800D7790_4[] = {0x80, 0x0D, 0x53, 0x84};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800D3764_4[] = {0x80, 0x0D, 0x19, 0x98};
-#endif
-
 #endif
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 #include "types.h"
@@ -89,12 +80,5 @@ s32 func_8040A244_de(struct Field *field) {
 done:
     return 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_EU)
-const unsigned char unbake_rodata_800E27E4_10[] = {0x80, 0x0D, 0x0C, 0xD4, 0x80, 0x0D, 0x63, 0x28, 0x80, 0x0D, 0xB0, 0x5C, 0x80, 0x0D, 0xEE, 0x18};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800DE060_C[] = {0x80, 0x0D, 0x16, 0xA4, 0x80, 0x0D, 0x69, 0x94, 0x80, 0x0D, 0xAD, 0xCC};
-#endif
 
 #endif

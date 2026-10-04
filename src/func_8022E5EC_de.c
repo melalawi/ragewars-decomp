@@ -17,16 +17,3 @@ s32 func_8022E5EC_de(void *arg0) {
     }
     return ((func_8022E5DC_S1 *)(arg0))->unk650 == 3 && ((func_8022E5DC_S1 *)(arg0))->unk86C >= 0x7DF && ((func_8022E5DC_S1 *)(arg0))->unk86C < 0x7E4;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800CB314_4 = 0.0199999996f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800D0640_4 = 0.0199999996f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800CA0F8_4 = 34.5599976f;
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800CA98C_14[] = {0x00, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00, 0x10, 0x00, 0x00, 0x00, 0x10, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00};
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C9F84_4 = (-132.0f);
-#endif

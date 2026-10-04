@@ -50,21 +50,3 @@ void func_8024C454_de(Actor_func_8024A1D0_de *actor, Lookup_func_8024C454_de *lo
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3A90_4 = 0.5f;
-const float unbake_rodata_800C3A94_4 = 0.100000001f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8C50_4 = 0.5f;
-const float unbake_rodata_800C8C54_4 = 0.100000001f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3E10_4 = 0.5f;
-const float unbake_rodata_800C3E14_4 = 0.100000001f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3E50_4 = 0.5f;
-const float unbake_rodata_800C3E54_4 = 0.100000001f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3B60_4 = 0.5f;
-const float unbake_rodata_800C3B64_4 = 0.100000001f;
-#endif

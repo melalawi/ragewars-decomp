@@ -24,26 +24,3 @@ f32 func_802B6300_de(ALDelay *d, s32 count)
 
     return d->rsgain * val;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C76F8_4 = 2.0f;
-const float unbake_rodata_800C76FC_4 = 4.0f;
-const float unbake_rodata_800C7700_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CCA28_4 = 2.0f;
-const float unbake_rodata_800CCA2C_4 = 4.0f;
-const float unbake_rodata_800CCA30_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C83C8_4 = 2.0f;
-const float unbake_rodata_800C83CC_4 = 4.0f;
-const float unbake_rodata_800C83D0_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C8D98_4 = 2.0f;
-const float unbake_rodata_800C8D9C_4 = 4.0f;
-const float unbake_rodata_800C8DA0_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C77D8_4 = 2.0f;
-const float unbake_rodata_800C77DC_4 = 4.0f;
-const float unbake_rodata_800C77E0_4 = 1.0f;
-#endif

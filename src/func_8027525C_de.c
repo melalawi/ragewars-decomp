@@ -73,16 +73,3 @@ f32 func_8027525C_de(Node75_func_802750B0_de *node, f32 x, f32 z) {
             ((point.x - x) * normal.x) + (point.y * normal.y)) /
            normal.y;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C48F8_4 = 0.333333343f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C9AB8_4 = 0.333333343f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4C78_4 = 0.333333343f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4CB8_4 = 0.333333343f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C49C8_4 = 0.333333343f;
-#endif

@@ -73,27 +73,3 @@ void func_80216D3C_de(Input80216D3C *arg0, void *arg1, Output80216D3C *arg2, s32
     arg2->fourth = second;
     arg2->unk40 = 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C4864_4 = 0.138888896f;
-const float unbake_rodata_800C4868_4 = 0.000174532935f;
-const float unbake_rodata_800C486C_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C9A24_4 = 0.138888896f;
-const float unbake_rodata_800C9A28_4 = 0.000174532935f;
-const float unbake_rodata_800C9A2C_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C45CC_4 = 16.0f;
-const float unbake_rodata_800C45D0_4 = 0.00392156886f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C45E0_4 = 0.25f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C46D0_4 = 0.00100000005f;
-const float unbake_rodata_800C46D4_4 = (-1.0f);
-const float unbake_rodata_800C46D8_4 = 1.0f;
-const float unbake_rodata_800C46DC_4 = 0.00100000005f;
-const float unbake_rodata_800C46E0_4 = 1.0f;
-const float unbake_rodata_800C46E4_4 = 1.0f;
-const float unbake_rodata_800C46E8_4 = 1.0f;
-#endif

@@ -78,16 +78,3 @@ void func_8023E45C_de(Input *arg0) {
     D_800FFFCC->typeFC = arg0->type;
     D_800FFFCC->field100 = arg0->fieldC0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned int unbake_rodata_800C35D0_24[] = {0x0023E464U, 0x0023E464U, 0x0023E464U, 0x0023E464U, 0x0023E4B8U, 0x0023E618U, 0x0023E518U, 0x0023E560U, 0x0023E5E4U};
-#elif defined(VERSION_US_REV1)
-const unsigned int unbake_rodata_800C8790_24[] = {0x0023E474U, 0x0023E474U, 0x0023E474U, 0x0023E474U, 0x0023E4C8U, 0x0023E628U, 0x0023E528U, 0x0023E570U, 0x0023E5F4U};
-#elif defined(VERSION_EU)
-const unsigned int unbake_rodata_800C3950_24[] = {0x0023E494U, 0x0023E494U, 0x0023E494U, 0x0023E494U, 0x0023E4E8U, 0x0023E648U, 0x0023E548U, 0x0023E590U, 0x0023E614U};
-#elif defined(VERSION_EU_X)
-const unsigned int unbake_rodata_800C3990_24[] = {0x0023E4C4U, 0x0023E4C4U, 0x0023E4C4U, 0x0023E4C4U, 0x0023E518U, 0x0023E678U, 0x0023E578U, 0x0023E5C0U, 0x0023E644U};
-#elif defined(VERSION_DE)
-const unsigned int unbake_rodata_800C36A0_24[] = {0x0023E484U, 0x0023E484U, 0x0023E484U, 0x0023E484U, 0x0023E4D8U, 0x0023E638U, 0x0023E538U, 0x0023E580U, 0x0023E604U};
-#endif

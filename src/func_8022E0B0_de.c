@@ -37,16 +37,3 @@ void func_8022E0B0_de(void *arg0, void *arg1) {
     }
     func_802738C0_de(arg0, amount / (f32)((func_8022E0A0_S2 *)(range))->unk1A);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2D3C_4 = 1.57079649f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C7EFC_4 = 1.57079649f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C30B0_4 = 1.57079649f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C30F0_4 = 1.57079649f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2E0C_4 = 1.57079649f;
-#endif

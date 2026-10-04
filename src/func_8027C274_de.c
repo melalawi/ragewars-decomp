@@ -94,16 +94,3 @@ skip_effects:
         func_80284434_de(arg0);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800FE290_4[] = {0x14, 0x40, 0x00, 0x20};
-const unsigned char unbake_rodata_800FE294_4[] = {0x00, 0x00, 0x00, 0x00};
-const unsigned char unbake_rodata_800FE298_4[] = {0x3C, 0x02, 0x00, 0x00};
-const unsigned char unbake_rodata_800FE29C_4[] = {0x8C, 0x42, 0x00, 0x00};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_80100290_4[] = {0xE1, 0x20, 0xB3, 0xD3};
-const unsigned char unbake_rodata_80100294_4[] = {0x1C, 0xF1, 0xFD, 0x01};
-const unsigned char unbake_rodata_80100298_4[] = {0xC1, 0x1C, 0xF1, 0xFF};
-const unsigned char unbake_rodata_8010029C_4[] = {0x02, 0x25, 0x1C, 0x0F};
-#endif

@@ -90,16 +90,3 @@ hidden:
 done:
     item->frame = frame;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned int unbake_rodata_800DC7C8_14[] = {0x0042D5B0U, 0x0042D5B8U, 0x0042D5C0U, 0x0042D5C8U, 0x0042D5DCU};
-#elif defined(VERSION_US_REV1)
-const unsigned int unbake_rodata_800E1B48_14[] = {0x0042D5B0U, 0x0042D5B8U, 0x0042D5C0U, 0x0042D5C8U, 0x0042D5DCU};
-#elif defined(VERSION_EU)
-const unsigned int unbake_rodata_800EE198_14[] = {0x0042E020U, 0x0042E028U, 0x0042E030U, 0x0042E038U, 0x0042E04CU};
-#elif defined(VERSION_EU_X)
-const unsigned int unbake_rodata_800E9358_14[] = {0x0042E170U, 0x0042E178U, 0x0042E180U, 0x0042E188U, 0x0042E19CU};
-#elif defined(VERSION_DE)
-const unsigned int unbake_rodata_800DDB18_14[] = {0x0042D3D0U, 0x0042D3D8U, 0x0042D3E0U, 0x0042D3E8U, 0x0042D3FCU};
-#endif

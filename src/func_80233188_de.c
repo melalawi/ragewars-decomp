@@ -28,17 +28,3 @@ void func_80233188_de(void *object, Event *event) {
         func_802739C4_de(object, -speed * 2.0f);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800D2A90_4[] = {0x80, 0x0D, 0x18, 0x50};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800D77FC_4[] = {0x80, 0x0D, 0x54, 0x88};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800CEADC_10[] = {0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xD8, 0x00, 0x00, 0x00, 0x00};
-const unsigned char unbake_rodata_800CEAEC_10[] = {0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xEC, 0x00, 0x00, 0x00, 0x00};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800CEC94_4[] = {0x00, 0x00, 0x00, 0x00};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800D31B8_4[] = {0x80, 0x0C, 0xF4, 0x70};
-#endif

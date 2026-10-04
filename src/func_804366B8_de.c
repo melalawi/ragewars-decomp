@@ -24,10 +24,3 @@ void func_804366B8_de(s32 arg0) {
     func_8041A6EC_de(D_800E1640_de->d, D_800FEC8C[arg0 * 0x190]);
     func_8041AD10_de(D_800E1640_de->e, D_800FEC8D[arg0 * 0x190]);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800FCC89_1[] = {0x24};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800FEC89_1[] = {0x20};
-#endif

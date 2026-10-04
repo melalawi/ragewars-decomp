@@ -43,16 +43,3 @@ f32 func_80239678_de(void *arg0, void *arg1) {
     }
     return sum / (f32)divisor;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C3480_8 = 4294967296.0;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800C8640_8 = 4294967296.0;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C3800_8 = 4294967296.0;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C3840_8 = 4294967296.0;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C3550_8 = 4294967296.0;
-#endif

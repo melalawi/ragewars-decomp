@@ -58,31 +58,3 @@ s32 func_80421E9C_de(struct Meter *meter, s32 step) {
     }
     return meter->done;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800DC2B0_4 = 0.255000025f;
-const float unbake_rodata_800DC2B4_4 = 2.14748365e+09f;
-const float unbake_rodata_800DC2B8_4 = 0.255000025f;
-const float unbake_rodata_800DC2BC_4 = 2.14748365e+09f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800E1630_4 = 0.255000025f;
-const float unbake_rodata_800E1634_4 = 2.14748365e+09f;
-const float unbake_rodata_800E1638_4 = 0.255000025f;
-const float unbake_rodata_800E163C_4 = 2.14748365e+09f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800EDC80_4 = 0.255000025f;
-const float unbake_rodata_800EDC84_4 = 2.14748365e+09f;
-const float unbake_rodata_800EDC88_4 = 0.255000025f;
-const float unbake_rodata_800EDC8C_4 = 2.14748365e+09f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800E8E40_4 = 0.255000025f;
-const float unbake_rodata_800E8E44_4 = 2.14748365e+09f;
-const float unbake_rodata_800E8E48_4 = 0.255000025f;
-const float unbake_rodata_800E8E4C_4 = 2.14748365e+09f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800DD600_4 = 0.255000025f;
-const float unbake_rodata_800DD604_4 = 2.14748365e+09f;
-const float unbake_rodata_800DD608_4 = 0.255000025f;
-const float unbake_rodata_800DD60C_4 = 2.14748365e+09f;
-#endif

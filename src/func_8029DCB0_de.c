@@ -27,16 +27,3 @@ normal:
     u.w.hi = (u.w.hi & 0x800FFFFF) | 0x3FE00000;
     return u.d;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C5AF8_8 = 0.0;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800CAD58_8 = 0.0;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C5E68_8 = 0.0;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C5EA8_8 = 0.0;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C5BC8_8 = 0.0;
-#endif

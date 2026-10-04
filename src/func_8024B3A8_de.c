@@ -40,16 +40,3 @@ void func_8024B3A8_de(void *arg0, Input_func_8024B3A8_de *arg1) {
                   resource1, amount, *(Vec3 *)arg1->vec4, arg1->unk26,
                   *(Vec3 *)arg1->vec10, zero, lookup);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3A7C_4 = 9.58767268e-05f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8C3C_4 = 9.58767268e-05f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3DFC_4 = 9.58767268e-05f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3E3C_4 = 9.58767268e-05f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3B4C_4 = 9.58767268e-05f;
-#endif

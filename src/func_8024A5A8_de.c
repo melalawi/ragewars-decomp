@@ -71,21 +71,3 @@ void func_8024A5A8_de(Actor_func_8024A3B0_de *actor, s32 arg1, s32 arg2, Lookup 
     }
     D_800CC390 = 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C398C_4 = 0.5f;
-const float unbake_rodata_800C3990_4 = 0.100000001f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8B4C_4 = 0.5f;
-const float unbake_rodata_800C8B50_4 = 0.100000001f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3D0C_4 = 0.5f;
-const float unbake_rodata_800C3D10_4 = 0.100000001f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3D4C_4 = 0.5f;
-const float unbake_rodata_800C3D50_4 = 0.100000001f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3A5C_4 = 0.5f;
-const float unbake_rodata_800C3A60_4 = 0.100000001f;
-#endif

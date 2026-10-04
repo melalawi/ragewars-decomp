@@ -80,16 +80,3 @@ s32 func_8025CED0_de(Player_func_8025CED0_de *player, s32 group, f32 scale) {
     func_802587A4_de(player->bank);
     return request;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3EE4_4 = 32767.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C90A4_4 = 32767.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4264_4 = 32767.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C42A4_4 = 32767.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3FB4_4 = 32767.0f;
-#endif

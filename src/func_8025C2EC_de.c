@@ -19,21 +19,3 @@ f32 func_8025C2EC_de(u8 arg0, u8 arg1) {
     }
     return first + func_80274564_de(second - first);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3EC4_4 = 0.00999999978f;
-const float unbake_rodata_800C3EC8_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C9084_4 = 0.00999999978f;
-const float unbake_rodata_800C9088_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4244_4 = 0.00999999978f;
-const float unbake_rodata_800C4248_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4284_4 = 0.00999999978f;
-const float unbake_rodata_800C4288_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3F94_4 = 0.00999999978f;
-const float unbake_rodata_800C3F98_4 = 1.0f;
-#endif

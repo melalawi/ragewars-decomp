@@ -22,16 +22,3 @@ void func_8023E690_de(struct Range *range, f32 low, s32 count, f32 high, f32 ext
     }
     range->limit = larger + D_800C36C4_de;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C35F4_4 = 1.02400005f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C87B4_4 = 1.02400005f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3974_4 = 1.02400005f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C39B4_4 = 1.02400005f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C36C4_4 = 1.02400005f;
-#endif

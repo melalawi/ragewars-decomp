@@ -24,21 +24,3 @@ void func_8022404C_de(struct Object *object) {
     }
     func_80274870_de(&((func_80224028_S1 *)(object))->unk740, level, 0.5f);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2878_4 = 0.899999976f;
-const float unbake_rodata_800C287C_4 = 82.9439926f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C7A38_4 = 0.899999976f;
-const float unbake_rodata_800C7A3C_4 = 82.9439926f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C2BE8_4 = 0.899999976f;
-const float unbake_rodata_800C2BEC_4 = 82.9439926f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C2C28_4 = 0.899999976f;
-const float unbake_rodata_800C2C2C_4 = 82.9439926f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2948_4 = 0.899999976f;
-const float unbake_rodata_800C294C_4 = 82.9439926f;
-#endif

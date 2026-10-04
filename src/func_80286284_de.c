@@ -119,16 +119,3 @@ first_pass_done:
     }
     func_8025CB88_de(func_8025CC6C_de());
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned int unbake_rodata_800C5018_14[] = {0x002862F4U, 0x00286304U, 0x002862F4U, 0x00286304U, 0x00286304U};
-#elif defined(VERSION_US_REV1)
-const unsigned int unbake_rodata_800CA1D8_14[] = {0x00286374U, 0x00286384U, 0x00286374U, 0x00286384U, 0x00286384U};
-#elif defined(VERSION_EU)
-const unsigned int unbake_rodata_800C5398_14[] = {0x00286344U, 0x00286354U, 0x00286344U, 0x00286354U, 0x00286354U};
-#elif defined(VERSION_EU_X)
-const unsigned int unbake_rodata_800C53D8_14[] = {0x00286374U, 0x00286384U, 0x00286374U, 0x00286384U, 0x00286384U};
-#elif defined(VERSION_DE)
-const unsigned int unbake_rodata_800C50E8_14[] = {0x002863A4U, 0x002863B4U, 0x002863A4U, 0x002863B4U, 0x002863B4U};
-#endif

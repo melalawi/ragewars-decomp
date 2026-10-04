@@ -30,19 +30,3 @@ void func_802B468C_de(AudioLowPassFilter *lp)
         lp->coefficients.taps[i] = (s16)(fcoef * D_800C75F0_de);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C7508_8 = 6.103515625e-05;
-const double unbake_rodata_800C7510_8 = 16384.0;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800CC838_8 = 6.103515625e-05;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C81D8_8 = 6.103515625e-05;
-const double unbake_rodata_800C81E0_8 = 16384.0;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C8BA8_8 = 6.103515625e-05;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C75E8_8 = 6.103515625e-05;
-const double unbake_rodata_800C75F0_8 = 16384.0;
-#endif

@@ -40,26 +40,3 @@ s32 func_8020EA10_de(void **arg0) {
     }
     return 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C1D80_4 = 0.600000024f;
-const float unbake_rodata_800C1D84_4 = 0.200000003f;
-const float unbake_rodata_800C1D88_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C6F40_4 = 0.600000024f;
-const float unbake_rodata_800C6F44_4 = 0.200000003f;
-const float unbake_rodata_800C6F48_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C20F0_4 = 0.600000024f;
-const float unbake_rodata_800C20F4_4 = 0.200000003f;
-const float unbake_rodata_800C20F8_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C2130_4 = 0.600000024f;
-const float unbake_rodata_800C2134_4 = 0.200000003f;
-const float unbake_rodata_800C2138_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C1E50_4 = 0.600000024f;
-const float unbake_rodata_800C1E54_4 = 0.200000003f;
-const float unbake_rodata_800C1E58_4 = 1.0f;
-#endif

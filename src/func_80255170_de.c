@@ -30,16 +30,3 @@ s32 func_80255170_de(s32 *arg0, void *arg1) {
     func_802BB2A0_de((s32) sp10, (s32) &sp2C, 1);
     return 1;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800CD7C8_4[] = {0x00, 0x00, 0x00, 0x0E};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800D2B28_4[] = {0x00, 0x00, 0x00, 0x0E};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800CE498_4[] = {0x00, 0x00, 0x00, 0x0E};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800CEE68_4[] = {0x00, 0x00, 0x00, 0x0E};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800CD8B8_4[] = {0x00, 0x00, 0x00, 0x0E};
-#endif

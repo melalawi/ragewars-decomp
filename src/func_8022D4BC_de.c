@@ -29,21 +29,3 @@ void func_8022D4BC_de(void *arg0)
   ((struct IntegerState244 *) ((char *) ((ObjectLinks1458_2 *) arg0)->unk_1454))->unk_23C = 0;
   ((struct IntegerState244 *) ((char *) ((ObjectLinks1458_2 *) arg0)->unk_1454))->unk_240 = 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2CEC_4 = 60.0f;
-const float unbake_rodata_800C2CF0_4 = 0.0199999996f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C7EAC_4 = 60.0f;
-const float unbake_rodata_800C7EB0_4 = 0.0199999996f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3060_4 = 60.0f;
-const float unbake_rodata_800C3064_4 = 0.0199999996f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C30A0_4 = 60.0f;
-const float unbake_rodata_800C30A4_4 = 0.0199999996f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2DBC_4 = 60.0f;
-const float unbake_rodata_800C2DC0_4 = 0.0199999996f;
-#endif

@@ -93,26 +93,3 @@ store_c:
     func_80208410_de(actor);
     func_80208AAC_de(actor);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C424C_4 = 16.0f;
-const float unbake_rodata_800C4250_4 = 0.00392156886f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C940C_4 = 16.0f;
-const float unbake_rodata_800C9410_4 = 0.00392156886f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C43CC_4 = 1.0f;
-const float unbake_rodata_800C43D0_4 = (-2000.0f);
-const float unbake_rodata_800C43D4_4 = 2000.0f;
-const float unbake_rodata_800C43D8_4 = (-1.0f);
-const float unbake_rodata_800C43DC_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C43C0_8 = 4294967296.0;
-const double unbake_rodata_800C43C8_8 = 4294967296.0;
-const double unbake_rodata_800C43D0_8 = 4294967296.0;
-const double unbake_rodata_800C43D8_8 = 4294967296.0;
-const double unbake_rodata_800C43E0_8 = 4294967296.0;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C42F0_4 = 0.25f;
-#endif

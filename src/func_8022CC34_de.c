@@ -46,21 +46,3 @@ set_value:
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2CA8_4 = 61.4399986f;
-const float unbake_rodata_800C2CAC_4 = 61.4399986f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C7E68_4 = 61.4399986f;
-const float unbake_rodata_800C7E6C_4 = 61.4399986f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C301C_4 = 61.4399986f;
-const float unbake_rodata_800C3020_4 = 61.4399986f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C305C_4 = 61.4399986f;
-const float unbake_rodata_800C3060_4 = 61.4399986f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2D78_4 = 61.4399986f;
-const float unbake_rodata_800C2D7C_4 = 61.4399986f;
-#endif

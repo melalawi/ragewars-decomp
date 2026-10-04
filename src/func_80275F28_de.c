@@ -49,16 +49,3 @@ Vec3 *func_80275F28_de(Vec3 *out, Node75_func_802750B0_de *node) {
     D_800CD3E0 = (int)node;
     return out;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C4934_4 = (-1.0f);
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C9AF4_4 = (-1.0f);
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4CB4_4 = (-1.0f);
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4CF4_4 = (-1.0f);
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C4A04_4 = (-1.0f);
-#endif

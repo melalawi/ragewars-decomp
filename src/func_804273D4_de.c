@@ -37,16 +37,3 @@ loop:
         goto loop;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800DF6E6_2[] = {0x01, 0xA6};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800E4A86_2[] = {0x01, 0xA6};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800F10A6_2[] = {0x01, 0xA6};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800EC286_2[] = {0x01, 0xAA};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800E0A36_2[] = {0x01, 0xA4};
-#endif

@@ -132,21 +132,3 @@ void func_802472F0_de(void *arg0) {
     }
     func_80253754_de(0, (s32)resource);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3878_4 = (-2.0f);
-const float unbake_rodata_800C387C_4 = 3.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8A38_4 = (-2.0f);
-const float unbake_rodata_800C8A3C_4 = 3.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3BF8_4 = (-2.0f);
-const float unbake_rodata_800C3BFC_4 = 3.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3C38_4 = (-2.0f);
-const float unbake_rodata_800C3C3C_4 = 3.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3948_4 = (-2.0f);
-const float unbake_rodata_800C394C_4 = 3.0f;
-#endif

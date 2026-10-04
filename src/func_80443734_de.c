@@ -38,16 +38,3 @@ void func_80443734_de(func_80239CD0_S1 *arg0, Entry_func_80443734_de *arg1, s32 
     func_802AAC28_de(arg0->unk14, 0, arg1->x - (half * 8), arg1->y + drop,
                   sx * scale, arg1->scaleY * scale, 1);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800DD3F4_4 = 0.5f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800E2774_4 = 0.5f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800EEDC4_4 = 0.5f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800E9F84_4 = 0.5f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800DE744_4 = 0.5f;
-#endif

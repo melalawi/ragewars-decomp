@@ -118,20 +118,3 @@ void func_802AE290_de(ALCSeq_s *seq, ALCSeqMarker *m, u32 ticks)
 
     } while (tempSeq.lastTicks < ticks);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C7210_8 = 4294967296.0;
-const float unbake_rodata_800C7218_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800CC540_8 = 4294967296.0;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C7EE0_8 = 4294967296.0;
-const float unbake_rodata_800C7EE8_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C88B0_8 = 4294967296.0;
-const float unbake_rodata_800C88B8_4 = 1.0f;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C72F0_8 = 4294967296.0;
-const float unbake_rodata_800C72F8_4 = 1.0f;
-#endif

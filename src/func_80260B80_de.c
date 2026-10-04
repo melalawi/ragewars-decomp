@@ -49,16 +49,3 @@ f32 func_80260B80_de(u32 *stream, Func802608ECResult range) {
     *streamPtr += range.value;
     return result;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C40B0_8 = 4294967296.0;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800C9270_8 = 4294967296.0;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C4430_8 = 4294967296.0;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C4470_8 = 4294967296.0;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C4180_8 = 4294967296.0;
-#endif

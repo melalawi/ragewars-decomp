@@ -19,10 +19,3 @@ void func_8041DB30_de(int *cursor) {
         }
     } while (D_800FEB0D[*cursor * 400] < 0);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800FCB0D_1[] = {0x8F};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800FEB0D_1[] = {0xB3};
-#endif

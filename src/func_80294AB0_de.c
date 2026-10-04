@@ -32,14 +32,3 @@ void func_80294AB0_de(void *arg0) {
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800D29D8_4[] = {0x00, 0x29, 0x3D, 0xE4};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800CE368_4[] = {0x00, 0x29, 0x3F, 0x04};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800CED38_4[] = {0x00, 0x29, 0x3F, 0x34};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800CD788_4[] = {0x00, 0x29, 0x3D, 0xF0};
-#endif

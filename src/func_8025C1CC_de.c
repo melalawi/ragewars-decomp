@@ -25,21 +25,3 @@ f32 func_8025C1CC_de(f32 arg0)
   }
   return (&D_800CB8E8)[1 + temp_s16];
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3EBC_4 = 6000.0f;
-const float unbake_rodata_800C3EC0_4 = 0.0166666675f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C907C_4 = 6000.0f;
-const float unbake_rodata_800C9080_4 = 0.0166666675f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C423C_4 = 6000.0f;
-const float unbake_rodata_800C4240_4 = 0.0166666675f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C427C_4 = 6000.0f;
-const float unbake_rodata_800C4280_4 = 0.0166666675f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3F8C_4 = 6000.0f;
-const float unbake_rodata_800C3F90_4 = 0.0166666675f;
-#endif

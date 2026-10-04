@@ -41,16 +41,3 @@ void func_802394BC_de(char *obj, f32 a, f32 b, f32 c, f32 scale, s32 value, Vec3
     k = D_800C3540_de[1];
     set_emitter(node, a * k, b * k, c * k, scale, value, pos);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3474_4 = 0.100000001f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8634_4 = 0.100000001f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C37F4_4 = 0.100000001f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3834_4 = 0.100000001f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3544_4 = 0.100000001f;
-#endif

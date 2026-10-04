@@ -58,16 +58,3 @@ s32 func_8023EA44_de(Ray_func_8023E8D4_de *ray, Polygon_func_8023E8D4_de *poly, 
     }
     return 1;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3604_4 = 10.2399998f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C87C4_4 = 10.2399998f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3984_4 = 10.2399998f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C39C4_4 = 10.2399998f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C36D4_4 = 10.2399998f;
-#endif

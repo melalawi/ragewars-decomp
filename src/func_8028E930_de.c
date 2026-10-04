@@ -108,14 +108,3 @@ event_6:
     func_8028FC10_de(arg0);
     goto loop_1;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US_REV1)
-const float unbake_rodata_800CA440_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C5600_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C5640_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C5350_4 = 1.0f;
-#endif

@@ -43,21 +43,3 @@ void func_802AE5B8_de(RuntimeState_func_802AE5B8_de *state, u32 base) {
     }
     state->scale = D_800C7308_de / (f32)converted;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C7220_8 = 4294967296.0;
-const float unbake_rodata_800C7228_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800CC550_8 = 4294967296.0;
-const float unbake_rodata_800CC558_4 = 1.0f;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C7EF0_8 = 4294967296.0;
-const float unbake_rodata_800C7EF8_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C88C0_8 = 4294967296.0;
-const float unbake_rodata_800C88C8_4 = 1.0f;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C7300_8 = 4294967296.0;
-const float unbake_rodata_800C7308_4 = 1.0f;
-#endif

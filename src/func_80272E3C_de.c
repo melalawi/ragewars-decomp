@@ -34,16 +34,3 @@ void func_80272E3C_de(f32 *m, f32 x, f32 y, f32 z)
   m[10] = bx * by;
   m[15] = D_800C48DC_de;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C480C_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C99CC_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4B8C_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4BCC_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C48DC_4 = 1.0f;
-#endif

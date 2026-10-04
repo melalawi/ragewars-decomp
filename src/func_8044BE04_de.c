@@ -44,16 +44,3 @@ void func_8044BE04_de(Scene_func_8044BE04_de *scene) {
         scene->dir[2] = v[2];
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C5030_4 = 127.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA1F0_4 = 127.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C53B0_4 = 127.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C53F0_4 = 127.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C5100_4 = 127.0f;
-#endif

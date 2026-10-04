@@ -25,16 +25,3 @@ void func_80239DE8_de(struct Record_func_80239DE8_de *record, f32 first, f32 sec
     record->channels[1].level = second * D_800C3574_de;
     record->channels[2].level = third * D_800C3574_de;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C34A4_4 = 0.100000001f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8664_4 = 0.100000001f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3824_4 = 0.100000001f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3864_4 = 0.100000001f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3574_4 = 0.100000001f;
-#endif

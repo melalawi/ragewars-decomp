@@ -49,16 +49,3 @@ s32 func_8028D28C_de(void *arg0, s32 arg1, void *arg2) {
     }
     return (s32)bestIndex;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C5230_4 = (-1.0f);
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA3F0_4 = (-1.0f);
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C55B0_4 = (-1.0f);
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C55F0_4 = (-1.0f);
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C5300_4 = (-1.0f);
-#endif

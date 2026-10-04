@@ -20,16 +20,3 @@ void func_802949FC_de(s32 arg0) {
         D_80142CB4 = (15.0f);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C540C_4 = 15.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA5CC_4 = 15.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C578C_4 = 15.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C57CC_4 = 15.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C54E0_4 = 15.0f;
-#endif

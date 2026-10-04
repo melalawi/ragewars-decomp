@@ -37,16 +37,3 @@ void func_80293A20_de(Session_func_80293A20_de *session, s32 arg1, s32 target) {
         }
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C53CC_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA58C_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C574C_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C578C_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C54A0_4 = 1.0f;
-#endif

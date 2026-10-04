@@ -44,16 +44,3 @@ void func_8028C6D4_de(Owner_func_8028C6D4_de *owner, s32 time, Block24 *out) {
         func_80289970_de(&sample, segment, time, out);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800CBBB4_4[] = {0x00, 0x00, 0x00, 0x00};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800D0EF4_4[] = {0x00, 0x00, 0x00, 0x00};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800CC884_4[] = {0x00, 0x00, 0x00, 0x00};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800CD254_4[] = {0x00, 0x00, 0x00, 0x00};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800CBCA4_4[] = {0x00, 0x00, 0x00, 0x00};
-#endif

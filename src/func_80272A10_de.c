@@ -41,16 +41,3 @@ void func_80272A10_de(void *arg0, void *arg1, Vec3 *arg2) {
         arg2->z = arg2->z * scale;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C47FC_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C99BC_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4B7C_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4BBC_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C48CC_4 = 1.0f;
-#endif

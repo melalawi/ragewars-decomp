@@ -12,16 +12,3 @@ void func_8026D844_de(void) {
     func_80272CB0_de(local, D_800C46AC_de, D_800C46AC_de, D_800C46AC_de);
     func_8026FC9C_de(local, &D_8010C520);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C45DC_4 = 2.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C979C_4 = 2.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C495C_4 = 2.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C499C_4 = 2.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C46AC_4 = 2.0f;
-#endif

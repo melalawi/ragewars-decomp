@@ -69,16 +69,3 @@ void func_8042A990_de(void) {
     D_800E0F10->label->text = D_800E0F10->text;
     func_80245B28_de();
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800D2180_4[] = {0x80, 0x0C, 0xF5, 0x10};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800D7500_4[] = {0x80, 0x0D, 0x48, 0x90};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800E1DA4_10[] = {0x80, 0x0D, 0x01, 0xE0, 0x80, 0x0D, 0x4A, 0x40, 0x80, 0x0D, 0xA3, 0x24, 0x80, 0x0D, 0xE0, 0xFC};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800DD8B0_C[] = {0x80, 0x0D, 0x0B, 0xB0, 0x80, 0x0D, 0x54, 0x48, 0x80, 0x0D, 0xA0, 0x94};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800D34D4_4[] = {0x80, 0x0D, 0x04, 0x50};
-#endif

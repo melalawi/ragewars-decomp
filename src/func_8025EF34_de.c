@@ -60,21 +60,3 @@ void func_8025EF34_de(u32 *stream, Output8025EF54 *out, s32 count) {
     }
     *stream = decode.stream;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C4028_8 = 4294967296.0;
-const double unbake_rodata_800C4030_8 = 4294967296.0;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800C91E8_8 = 4294967296.0;
-const double unbake_rodata_800C91F0_8 = 4294967296.0;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C43A8_8 = 4294967296.0;
-const double unbake_rodata_800C43B0_8 = 4294967296.0;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C43E8_8 = 4294967296.0;
-const double unbake_rodata_800C43F0_8 = 4294967296.0;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C40F8_8 = 4294967296.0;
-const double unbake_rodata_800C4100_8 = 4294967296.0;
-#endif

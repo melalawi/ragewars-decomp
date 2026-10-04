@@ -47,21 +47,3 @@ void func_8022C37C_de(char *arg0, char *arg1) {
 
     func_802AAC28_de(0x201, (s32) w, (s16) (s32) screenX, (s16) (s32) screenY, sx, cz, 1);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2C68_4 = (-50.0f);
-const float unbake_rodata_800C2C6C_4 = 1.5f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C7E28_4 = (-50.0f);
-const float unbake_rodata_800C7E2C_4 = 1.5f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C2FDC_4 = (-50.0f);
-const float unbake_rodata_800C2FE0_4 = 1.5f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C301C_4 = (-50.0f);
-const float unbake_rodata_800C3020_4 = 1.5f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2D38_4 = (-50.0f);
-const float unbake_rodata_800C2D3C_4 = 1.5f;
-#endif

@@ -52,31 +52,3 @@ converted:
     entry = &D_800E1454_de[index];
     func_8040EC30_de(entry->window, VALUE_2C3)->value = alpha;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800DCB78_4 = 0.00333333341f;
-const float unbake_rodata_800DCB7C_4 = 100.0f;
-const float unbake_rodata_800DCB80_4 = 150.0f;
-const float unbake_rodata_800DCB84_4 = 2.14748365e+09f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800E1EF8_4 = 0.00333333341f;
-const float unbake_rodata_800E1EFC_4 = 100.0f;
-const float unbake_rodata_800E1F00_4 = 150.0f;
-const float unbake_rodata_800E1F04_4 = 2.14748365e+09f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800EE548_4 = 0.00333333341f;
-const float unbake_rodata_800EE54C_4 = 100.0f;
-const float unbake_rodata_800EE550_4 = 150.0f;
-const float unbake_rodata_800EE554_4 = 2.14748365e+09f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800E9708_4 = 0.00333333341f;
-const float unbake_rodata_800E970C_4 = 100.0f;
-const float unbake_rodata_800E9710_4 = 150.0f;
-const float unbake_rodata_800E9714_4 = 2.14748365e+09f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800DDEC8_4 = 0.00333333341f;
-const float unbake_rodata_800DDECC_4 = 100.0f;
-const float unbake_rodata_800DDED0_4 = 150.0f;
-const float unbake_rodata_800DDED4_4 = 2.14748365e+09f;
-#endif

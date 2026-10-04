@@ -64,16 +64,3 @@ s32 func_802B5730_de(void *arg0, s32 arg1, s32 arg2) {
 
     return 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned int unbake_rodata_800C7670_24[] = {0x002B5690U, 0x002B56F8U, 0x002B56F8U, 0x002B5698U, 0x002B56F8U, 0x002B56F8U, 0x002B56E4U, 0x002B56ECU, 0x002B56C4U};
-#elif defined(VERSION_US_REV1)
-const unsigned int unbake_rodata_800CC9A0_24[] = {0x002BA830U, 0x002BA898U, 0x002BA898U, 0x002BA838U, 0x002BA898U, 0x002BA898U, 0x002BA884U, 0x002BA88CU, 0x002BA864U};
-#elif defined(VERSION_EU)
-const unsigned int unbake_rodata_800C8340_24[] = {0x002B5A00U, 0x002B5A68U, 0x002B5A68U, 0x002B5A08U, 0x002B5A68U, 0x002B5A68U, 0x002B5A54U, 0x002B5A5CU, 0x002B5A34U};
-#elif defined(VERSION_EU_X)
-const unsigned int unbake_rodata_800C8D10_24[] = {0x002B5A40U, 0x002B5AA8U, 0x002B5AA8U, 0x002B5A48U, 0x002B5AA8U, 0x002B5AA8U, 0x002B5A94U, 0x002B5A9CU, 0x002B5A74U};
-#elif defined(VERSION_DE)
-const unsigned int unbake_rodata_800C7750_24[] = {0x002B5760U, 0x002B57C8U, 0x002B57C8U, 0x002B5768U, 0x002B57C8U, 0x002B57C8U, 0x002B57B4U, 0x002B57BCU, 0x002B5794U};
-#endif

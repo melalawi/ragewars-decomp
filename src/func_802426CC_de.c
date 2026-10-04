@@ -57,16 +57,3 @@ void func_802426CC_de(Actor_func_802426CC_de *actor, void *owner, Input_func_802
     }
     D_800FFFCC = saved_collision;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C3690_4 = 0.40959999f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8850_4 = 0.40959999f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C3A10_4 = 0.40959999f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3A50_4 = 0.40959999f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3760_4 = 0.40959999f;
-#endif

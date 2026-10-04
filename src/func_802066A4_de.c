@@ -25,16 +25,3 @@ void func_802066A4_de(void *arg0, void *arg1) {
         ((func_80204468_S2 *)(arg0))->unk100 &= ~0x100;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C1A10_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C6BD0_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C1D80_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C1DC0_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C1AE0_4 = 1.0f;
-#endif

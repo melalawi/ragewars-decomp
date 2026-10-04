@@ -78,16 +78,3 @@ void func_8043B0CC_de(s32 player) {
     func_8040E928_de(item, 1);
     item->value = 0x96;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800E0646_4[] = {0x00, 0xD1, 0x00, 0x00};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800E59E6_4[] = {0x00, 0xD1, 0x00, 0x00};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800F2006_4[] = {0x00, 0xD1, 0x00, 0x00};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800ED1E6_4[] = {0x00, 0xD5, 0x00, 0x00};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800E1996_4[] = {0x00, 0xCF, 0x00, 0x00};
-#endif

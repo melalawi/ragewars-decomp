@@ -109,21 +109,3 @@ void func_802BA910_de(void)
     *curr = vc;
     *D_800D4414 = **curr;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const double unbake_rodata_800C78F0_8 = 4294967296.0;
-const float unbake_rodata_800C78F8_4 = 2.14748365e+09f;
-#elif defined(VERSION_US_REV1)
-const double unbake_rodata_800CCC20_8 = 4294967296.0;
-const float unbake_rodata_800CCC28_4 = 2.14748365e+09f;
-#elif defined(VERSION_EU)
-const double unbake_rodata_800C85C0_8 = 4294967296.0;
-const float unbake_rodata_800C85C8_4 = 2.14748365e+09f;
-#elif defined(VERSION_EU_X)
-const double unbake_rodata_800C8F90_8 = 4294967296.0;
-const float unbake_rodata_800C8F98_4 = 2.14748365e+09f;
-#elif defined(VERSION_DE)
-const double unbake_rodata_800C79D0_8 = 4294967296.0;
-const float unbake_rodata_800C79D8_4 = 2.14748365e+09f;
-#endif

@@ -52,21 +52,3 @@ void func_8020CA10_de(void *arg0, s32 arg1)
     ((func_8020CA10_S1 *)(arg0))->unk3C = (func_802744D4_de() % 5) + 5;
   }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C1CBC_4 = (-1.0f);
-const float unbake_rodata_800C1CC0_4 = 15.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C6E7C_4 = (-1.0f);
-const float unbake_rodata_800C6E80_4 = 15.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C202C_4 = (-1.0f);
-const float unbake_rodata_800C2030_4 = 15.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C206C_4 = (-1.0f);
-const float unbake_rodata_800C2070_4 = 15.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C1D8C_4 = (-1.0f);
-const float unbake_rodata_800C1D90_4 = 15.0f;
-#endif

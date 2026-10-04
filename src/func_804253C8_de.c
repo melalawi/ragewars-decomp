@@ -269,30 +269,3 @@ char *func_804253C8_de(s32 result) {
         return text;
     } while (0);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800D2190_4[] = {0x80, 0x0C, 0xF5, 0x40};
-const unsigned char unbake_rodata_800D2194_4[] = {0x80, 0x0C, 0xF5, 0x60};
-const unsigned char unbake_rodata_800D2198_4[] = {0x80, 0x0C, 0xF5, 0x94};
-const unsigned char unbake_rodata_800D219C_4[] = {0x80, 0x0C, 0xF5, 0xC4};
-const unsigned char unbake_rodata_800D21A0_4[] = {0x80, 0x0C, 0xF5, 0xF0};
-const unsigned char unbake_rodata_800D21A4_4[] = {0x80, 0x0C, 0xF6, 0x1C};
-const unsigned char unbake_rodata_800D21A8_4[] = {0x80, 0x0C, 0xF6, 0x48};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800D7510_4[] = {0x80, 0x0D, 0x48, 0xC0};
-const unsigned char unbake_rodata_800D7514_4[] = {0x80, 0x0D, 0x48, 0xE0};
-const unsigned char unbake_rodata_800D7518_4[] = {0x80, 0x0D, 0x49, 0x14};
-const unsigned char unbake_rodata_800D751C_4[] = {0x80, 0x0D, 0x49, 0x44};
-const unsigned char unbake_rodata_800D7520_4[] = {0x80, 0x0D, 0x49, 0x70};
-const unsigned char unbake_rodata_800D7524_4[] = {0x80, 0x0D, 0x49, 0x9C};
-const unsigned char unbake_rodata_800D7528_4[] = {0x80, 0x0D, 0x49, 0xC8};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800D34E4_4[] = {0x80, 0x0D, 0x04, 0x80};
-const unsigned char unbake_rodata_800D34E8_4[] = {0x80, 0x0D, 0x04, 0xAC};
-const unsigned char unbake_rodata_800D34EC_4[] = {0x80, 0x0D, 0x04, 0xE0};
-const unsigned char unbake_rodata_800D34F0_4[] = {0x80, 0x0D, 0x05, 0x18};
-const unsigned char unbake_rodata_800D34F4_4[] = {0x80, 0x0D, 0x05, 0x4C};
-const unsigned char unbake_rodata_800D34F8_4[] = {0x80, 0x0D, 0x05, 0x7C};
-const unsigned char unbake_rodata_800D34FC_4[] = {0x80, 0x0D, 0x05, 0xB4};
-#endif

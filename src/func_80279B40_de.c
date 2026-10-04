@@ -77,14 +77,3 @@ void func_80279B40_de(Actor_func_80279B40_de *actor, s32 model, s32 arg2, s32 fl
     func_802800C0_de(&D_8011D8D0, actor, actor->owner, actor->unk130, actor->unk134, model,
                   direction, rotation, point, 0, arg2, flags | (actor->flags & 0x200006));
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800FE2C8_4[] = {0x24, 0x03, 0x00, 0x02};
-const unsigned char unbake_rodata_800FE2CC_4[] = {0xAC, 0x43, 0x00, 0x6C};
-const unsigned char unbake_rodata_800FE2D0_10[] = {0x3C, 0x02, 0x00, 0x00, 0x8C, 0x42, 0x00, 0x00, 0x8F, 0xC3, 0x00, 0x58, 0x00, 0x60, 0x20, 0x21};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_801002C8_4[] = {0x23, 0x2E, 0xEF, 0x41};
-const unsigned char unbake_rodata_801002CC_4[] = {0x0C, 0x0F, 0xC0, 0x14};
-const unsigned char unbake_rodata_801002D0_10[] = {0x20, 0x50, 0xC6, 0xEE, 0x05, 0x00, 0x08, 0xC2, 0x0D, 0xC1, 0x51, 0x70, 0xB3, 0xE0, 0xD1, 0x2E};
-#endif

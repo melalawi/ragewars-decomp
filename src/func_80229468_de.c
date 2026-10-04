@@ -32,24 +32,3 @@ void func_80229468_de(Inventory *arg0, Receiver *arg1) {
   }
  }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C52E0_4 = (-0.667424023f);
-const float unbake_rodata_800C52E4_4 = 0.953462005f;
-const float unbake_rodata_800C52E8_4 = (-0.57207799f);
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CA4A0_4 = (-0.667424023f);
-const float unbake_rodata_800CA4A4_4 = 0.953462005f;
-const float unbake_rodata_800CA4A8_4 = (-0.57207799f);
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C54A4_4 = 3.40282347e+38f;
-const float unbake_rodata_800C54A8_4 = 3.14159274f;
-const float unbake_rodata_800C54AC_4 = 204.799988f;
-const float unbake_rodata_800C54B0_4 = (-3.14159274f);
-const float unbake_rodata_800C54B4_4 = 10430.0596f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C53EC_4 = (-2.0f);
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C5340_4 = 262144.0f;
-#endif

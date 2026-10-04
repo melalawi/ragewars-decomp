@@ -46,26 +46,3 @@ f32 func_8040184C_de(f32 t) {
     u = u * (u * THREE) - 2.0f * u * u * u;
     return key[-1].first * (ONE - u) + key->first * u;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800DB7E4_4 = 47.5f;
-const float unbake_rodata_800DB7E8_4 = 3.0f;
-const float unbake_rodata_800DB7EC_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800E0B64_4 = 47.5f;
-const float unbake_rodata_800E0B68_4 = 3.0f;
-const float unbake_rodata_800E0B6C_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800ED1B4_4 = 47.5f;
-const float unbake_rodata_800ED1B8_4 = 3.0f;
-const float unbake_rodata_800ED1BC_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800E8374_4 = 47.5f;
-const float unbake_rodata_800E8378_4 = 3.0f;
-const float unbake_rodata_800E837C_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800DCB34_4 = 47.5f;
-const float unbake_rodata_800DCB38_4 = 3.0f;
-const float unbake_rodata_800DCB3C_4 = 1.0f;
-#endif

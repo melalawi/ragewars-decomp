@@ -79,16 +79,3 @@ s32 func_80222EA4_de(void *arg0, void *arg1) {
     func_802227F4_de(arg0, arg1, 0xA);
     return 1;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C278C_4 = (-20.4799995f);
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C794C_4 = (-20.4799995f);
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C2AFC_4 = (-20.4799995f);
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C2B3C_4 = (-20.4799995f);
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C285C_4 = (-20.4799995f);
-#endif

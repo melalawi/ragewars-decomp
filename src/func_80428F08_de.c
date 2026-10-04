@@ -39,16 +39,3 @@ s32 func_80428F08_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     }
     return 0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const unsigned char unbake_rodata_800DFA80_4[] = {0x00, 0x00, 0x0E, 0x07};
-#elif defined(VERSION_US_REV1)
-const unsigned char unbake_rodata_800E4E20_4[] = {0x00, 0x00, 0x0E, 0x07};
-#elif defined(VERSION_EU)
-const unsigned char unbake_rodata_800F1440_4[] = {0x00, 0x00, 0x0E, 0x07};
-#elif defined(VERSION_EU_X)
-const unsigned char unbake_rodata_800EC620_4[] = {0x00, 0x00, 0x0E, 0x07};
-#elif defined(VERSION_DE)
-const unsigned char unbake_rodata_800E0DD0_4[] = {0x00, 0x00, 0x0E, 0x07};
-#endif

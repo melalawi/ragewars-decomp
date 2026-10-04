@@ -22,16 +22,3 @@ void func_80232F8C_de(void *obj, Event *event) {
         func_802739C4_de(obj, -v);
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2F70_4 = 1.5f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C8130_4 = 1.5f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C32F0_4 = 1.5f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3330_4 = 1.5f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C3040_4 = 1.5f;
-#endif

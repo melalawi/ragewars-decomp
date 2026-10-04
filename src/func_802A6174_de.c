@@ -65,21 +65,3 @@ void func_802A6174_de(void *arg0, void *arg1) {
         ((func_802A7164_S1 *)(arg1))->unk8 = ((func_80212828_S7 *)(((func_802A7164_S4 *)(arg0))->unk8))->unk8;
     }
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C5DE8_4 = 0.00999999978f;
-const float unbake_rodata_800C5DEC_4 = 0.292571425f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CB048_4 = 0.00999999978f;
-const float unbake_rodata_800CB04C_4 = 0.292571425f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C6158_4 = 0.00999999978f;
-const float unbake_rodata_800C615C_4 = 0.292571425f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C6198_4 = 0.00999999978f;
-const float unbake_rodata_800C619C_4 = 0.292571425f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C5EB8_4 = 0.00999999978f;
-const float unbake_rodata_800C5EBC_4 = 0.292571425f;
-#endif

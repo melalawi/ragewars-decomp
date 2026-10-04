@@ -38,25 +38,3 @@ void func_80203D4C_de(void *unused, void *object, Vec3 *pivot, Vec3 *point) {
     func_80272BCC_de(matrix, &offset, point);
     func_80271F34_de(point, point, pivot);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C1AE8_4 = 50.0f;
-const float unbake_rodata_800C1AEC_4 = 0.261799425f;
-const float unbake_rodata_800C1AF0_4 = 0.261799425f;
-const float unbake_rodata_800C1AF4_4 = 50.0f;
-const float unbake_rodata_800C1AF8_4 = 50.0f;
-const float unbake_rodata_800C1AFC_4 = 50.0f;
-const float unbake_rodata_800C1B00_4 = 50.0f;
-const float unbake_rodata_800C1B04_4 = 100.0f;
-const float unbake_rodata_800C1B08_4 = 30.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C6CA0_4 = 100.0f;
-const float unbake_rodata_800C6CA4_4 = 0.333333343f;
-#elif defined(VERSION_EU)
-const unsigned int unbake_rodata_800C1E28_14[] = {0x0020778CU, 0x00207784U, 0x00207784U, 0x0020777CU, 0x002077DCU};
-#elif defined(VERSION_EU_X)
-const unsigned int unbake_rodata_800C1E68_14[] = {0x0020778CU, 0x00207784U, 0x00207784U, 0x0020777CU, 0x002077DCU};
-#elif defined(VERSION_DE)
-const unsigned int unbake_rodata_800C1B88_14[] = {0x0020776CU, 0x00207764U, 0x00207764U, 0x0020775CU, 0x002077BCU};
-#endif

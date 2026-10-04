@@ -34,21 +34,3 @@ void func_80272828_de(f32 *arg0) {
         var_a0 += 4;
     } while (var_a2 < 4);
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C47F4_4 = 32767.0f;
-const float unbake_rodata_800C47F8_4 = (-32767.0f);
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C99B4_4 = 32767.0f;
-const float unbake_rodata_800C99B8_4 = (-32767.0f);
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C4B74_4 = 32767.0f;
-const float unbake_rodata_800C4B78_4 = (-32767.0f);
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C4BB4_4 = 32767.0f;
-const float unbake_rodata_800C4BB8_4 = (-32767.0f);
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C48C4_4 = 32767.0f;
-const float unbake_rodata_800C48C8_4 = (-32767.0f);
-#endif

@@ -84,15 +84,3 @@ void func_80231D48_de(void *actor, void *arg1) {
     }
     ((WeaponFireState *)(arg1))->mode = 1;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2EEC_4 = 1.0f;
-const float unbake_rodata_800C2EF0_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C80AC_4 = 1.0f;
-const float unbake_rodata_800C80B0_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2FBC_4 = 1.0f;
-const float unbake_rodata_800C2FC0_4 = 1.0f;
-#endif

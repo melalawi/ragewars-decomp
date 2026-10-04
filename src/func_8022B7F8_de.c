@@ -123,16 +123,3 @@ void func_8022B7F8_de(void *arg0, void *arg1) {
 #endif
 #endif
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C2C4C_4 = 105.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800C7E0C_4 = 105.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C2FC0_4 = 105.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C3000_4 = 105.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C2D1C_4 = 105.0f;
-#endif

@@ -68,16 +68,3 @@ void func_802A31E8_de(void *arg0, void *arg1, void *arg2, void *arg3) {
     ((func_80272908_S2 *)(arg3))->unk34 = ((func_802A41D8_S5 *)(arg0))->unk14;
     ((func_80272908_S2 *)(arg3))->unk38 = ((func_802A41D8_S5 *)(arg0))->unk18;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-const float unbake_rodata_800C5D1C_4 = 1.0f;
-#elif defined(VERSION_US_REV1)
-const float unbake_rodata_800CAF7C_4 = 1.0f;
-#elif defined(VERSION_EU)
-const float unbake_rodata_800C608C_4 = 1.0f;
-#elif defined(VERSION_EU_X)
-const float unbake_rodata_800C60CC_4 = 1.0f;
-#elif defined(VERSION_DE)
-const float unbake_rodata_800C5DEC_4 = 1.0f;
-#endif
