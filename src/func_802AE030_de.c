@@ -1,5 +1,6 @@
 #include "span_1000/code_802AE028.h"
 #include "types.h"
+#include "common/draft_fields_func_802AE030_de.h"
 
 
 
@@ -8,7 +9,6 @@
 extern s32 func_802AE500_de(s32, s32);
 extern u32 func_802AEA2C_de(RuntimeState *, u32);
 
-#define AT(t, p, o) (*(t *)((u8 *)(p) + (o)))
 
 s32 func_802AE030_de(RuntimeState *state, u32 index, DecodeResult *result) {
     u8 first;
@@ -55,31 +55,31 @@ s32 func_802AE030_de(RuntimeState *state, u32 index, DecodeResult *result) {
             void *next;
 
             base = (u8 *)state + (index * 4);
-            p = AT(void *, base, 0x18);
-            lead = AT(u8, p, 0);
+            p = ((struct Measured_func_802AE030_de_d0c30e922349 *)(base))->value;
+            lead = ((struct Measured_func_802AE030_de_3cc73d040be0 *)(p))->value;
             p = (u8 *)p + 1;
-            count_byte = AT(u8, p, 0);
+            count_byte = ((struct Measured_func_802AE030_de_3cc73d040be0 *)(p))->value;
             count = count_byte & 0xFF;
             if (count == 0) {
                 next = (u8 *)p + 5;
-                AT(u8, p, 0) = lead;
+                ((struct Measured_func_802AE030_de_3cc73d040be0 *)(p))->value = lead;
             } else {
                 if (count != first_value) {
-                    AT(u8, p, 0) = count_byte - 1;
+                    ((struct Measured_func_802AE030_de_3cc73d040be0 *)(p))->value = count_byte - 1;
                 }
                 p = (u8 *)p + 1;
-                byte0 = AT(u8, p, 0);
+                byte0 = ((struct Measured_func_802AE030_de_3cc73d040be0 *)(p))->value;
                 p = (u8 *)p + 1;
-                byte1 = AT(u8, p, 0);
+                byte1 = ((struct Measured_func_802AE030_de_3cc73d040be0 *)(p))->value;
                 p = (u8 *)p + 1;
-                byte2 = AT(u8, p, 0);
+                byte2 = ((struct Measured_func_802AE030_de_3cc73d040be0 *)(p))->value;
                 p = (u8 *)p + 1;
-                byte3 = AT(u8, p, 0);
+                byte3 = ((struct Measured_func_802AE030_de_3cc73d040be0 *)(p))->value;
                 p = (u8 *)p + 1;
                 next = (u8 *)p - ((byte0 << 24) + (byte1 << 16) +
                                    (byte2 << 8) + byte3);
             }
-            AT(void *, base, 0x18) = next;
+            ((struct Measured_func_802AE030_de_d0c30e922349 *)(base))->value = next;
             state->flagsA8[index] = 0;
             result->type = 0x14;
         }
