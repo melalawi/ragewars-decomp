@@ -29,15 +29,6 @@ void func_8029EAF4_de(s32 arg0) {
     func_802A0748_de(arg0, 0, 0x40);
 }
 
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-
-
-
-
 void func_8029EB14_de(s32 arg0)
 {
   func_802A0748_de(arg0, 0, 0x40);
@@ -144,9 +135,6 @@ extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
 extern void func_802A0748_de(s32, s32, s32);
 extern void func_8029CE3C_de(s32, s32, s32);
 
-
-
-
 void func_8029EDD8_de(s32 arg0, f32 arg1) {
     u8 sp10[0x40];
     f32 sp50;
@@ -176,9 +164,6 @@ void func_8029EDD8_de(s32 arg0, f32 arg1) {
 extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
 extern void func_802A0748_de(s32, s32, s32);
 extern void func_8029CE3C_de(s32, s32, s32);
-
-
-
 
 void func_8029EE78_de(s32 arg0, f32 arg1) {
     u8 sp10[0x40];
@@ -211,9 +196,6 @@ void func_8029EE78_de(s32 arg0, f32 arg1) {
 extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
 extern void func_802A0748_de(s32, s32, s32);
 extern void func_8029CE3C_de(s32, s32, s32);
-
-
-
 
 void func_8029EF18_de(s32 arg0, f32 arg1) {
     u8 sp10[0x40];
