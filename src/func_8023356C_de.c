@@ -1,13 +1,8 @@
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_8023330C.h"
 #include "types.h"
-typedef s32 M2C_UNK;
 
-
-
-
-
-M2C_UNK func_8022AF74_de(void *, M2C_UNK);
+s32 func_8022AF74_de(void *, s32);
 void func_8023356C_de(void *arg0) {
     void *temp_a0;
     temp_a0 = (((struct func_8020A028_S3 *) ((s8 *) arg0))->unk1D8);
