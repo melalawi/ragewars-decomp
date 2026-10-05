@@ -1,13 +1,8 @@
 #include "span_1000/code_802A25C4.h"
 #include "types.h"
-typedef s32 M2C_UNK;
 
-
-
-
-
-M2C_UNK func_80279508_de(s32, s32);
-M2C_UNK func_80279550_de(void *, s32);
+s32 func_80279508_de(s32, s32);
+s32 func_80279550_de(void *, s32);
 s32 func_802A5734_de(void *arg0, s32 arg1) {
     s32 temp_s0;
     temp_s0 = (((struct IntegerState6A94 *) ((s8 *) arg0))->unk_6A90);
