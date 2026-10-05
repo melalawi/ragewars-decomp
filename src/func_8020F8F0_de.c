@@ -5,7 +5,6 @@
 /* Returns 1 when one of the object's ten entries at 0x3C matches its current value at 0x28C and the
    paired flag at 0x6C is set, and 0 otherwise or when the current value is zero. */
 
-
 int func_8020F8F0_de(Obj_func_8020F8F0_de *obj) {
     int i;
 
@@ -19,14 +18,6 @@ int func_8020F8F0_de(Obj_func_8020F8F0_de *obj) {
     }
     return 0;
 }
-
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-
-
 
 s32 func_8020F93C_de(void *arg0)
 {
