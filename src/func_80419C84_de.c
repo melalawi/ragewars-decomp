@@ -1,16 +1,11 @@
+#include "types.h"
 #include "span_16E000/code_804196C0.h"
 #define NULL ((void *)0)
-
 
 #ifndef M2C_MACROS_H
 #define M2C_MACROS_H
 
 /* Unknown types */
-typedef s32 M2C_UNK;
-typedef s8  M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
 
 /* Unknown field access, like `*(type_ptr) &expr->unk_offset` */
 #define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
@@ -72,8 +67,6 @@ typedef s64 M2C_UNK64;
 
 #endif
 s32 func_802744D4_de(void);
-
-
 
 /* Initializes a flicker effect and randomizes each element's intensity. */
 void func_80419C84_de(func_80419D04_S1 *arg0, s32 arg1) {
