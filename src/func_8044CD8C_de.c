@@ -1,10 +1,12 @@
-#include "common/types.h"
-#include "span_16E000/code_8044D024.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8044ACCC.h"
+#include "types.h"
+#include "common/types_8a8189af7b05.h"
+
 /* Loads every still-empty cell of the level's tile grid: for each row and column whose cell
    record has no resource, fetches the cell's block through func_8028FE3C_de and func_8025193C_de,
    binds and spawns each object of its two object lists (0xE8- and 0x1C8-byte records) and
    releases the spawned handles and the block. */
-#include "types.h"
 
 
 
@@ -107,4 +109,22 @@ void func_8044CD8C_de(Level_func_8044CD8C_de *level) {
             func_80253754_de(0, block);
         }
     }
+}
+
+/* Runs func_8044D054_de and func_8044D0F0_de on a large state block, then clears its word at offset
+   0x1B444, sets the word at 0x1B448 to 0x15 and copies D_801462CC into the word at 0x1B44C. */
+
+extern struct Shape_func_8021A2D4_de_2 D_8014220C;
+extern void func_8044D054_de(char *);
+extern void func_8044D0F0_de(char *);
+
+
+
+
+void func_8044CFF8_de(char *state) {
+    func_8044D054_de(state);
+    func_8044D0F0_de(state);
+    ((func_8044DC48_S1 *)(state))->unk1B444 = 0;
+    ((func_8044DC48_S1 *)(state))->unk1B448 = 0x15;
+    ((func_8044DC48_S1 *)(state))->unk1B44C = D_8014220C.field_0;
 }

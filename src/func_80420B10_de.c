@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041F248.h"
+#include "span_16E000/code_8041F1FC.h"
 #include "types.h"
 
 /* Releases the object D_800E42D0 holds through func_802547E4_de, clears D_800E42D0, calls
@@ -13,5 +13,15 @@ s32 func_80420B10_de(void) {
     D_800E0280 = 0;
     func_802A2360_de();
     func_802A23C4_de(2);
+    return 0;
+}
+
+/* Calls func_802A23C4_de with 1 and func_8025DF34_de with 0xE78, and returns zero. */
+extern void func_802A23C4_de(s32);
+extern void func_8025DF34_de(s32);
+
+s32 func_80420B50_de(void) {
+    func_802A23C4_de(1);
+    func_8025DF34_de(0xE78);
     return 0;
 }

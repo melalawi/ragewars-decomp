@@ -1,7 +1,6 @@
-#include "span_1000/code_802BB9D0.h"
-#include "span_1000/code_802BDDB8.h"
+#include "span_1000/code_802B7488.h"
+#include "span_1000/code_802B9BB4.h"
 #include "types.h"
-
 
 extern void func_802B7A20_de(s32 arg0);
 extern s32 func_802B9CB0_de(s32, s32);
@@ -26,4 +25,15 @@ s32 func_802B74B0_de(s32 arg0) {
     *p = 0;
     func_802B9C80_de();
     return result;
+}
+
+typedef s32 M2C_UNK;
+typedef s8 M2C_UNK8;
+typedef s16 M2C_UNK16;
+typedef s32 M2C_UNK32;
+typedef s64 M2C_UNK64;
+M2C_UNK func_802B7AD8_de(M2C_UNK *, s32);
+void func_802B7538_de(s32 arg0) {
+    M2C_UNK sp10;
+    func_802B7AD8_de(&sp10, arg0);
 }

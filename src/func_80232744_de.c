@@ -1,5 +1,5 @@
-#include "span_1000/code_802301E4.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80231F5C.h"
 #include "types.h"
 
 extern void func_8021A9A4_de(void *arg0, s32 arg1);
@@ -9,4 +9,20 @@ extern void func_8021A9A4_de(void *arg0, s32 arg1);
 
 void func_80232744_de(void *arg0, s32 arg1, s32 arg2) {
     func_8021A9A4_de(((func_8020A028_S3 *)(arg0))->unk1D8, arg2);
+}
+
+extern int *D_800CB358_de[];
+
+/** Return the value pointed to by the indexed pointer table entry. */
+int func_80232764_de(int arg0) {
+    return *D_800CB358_de[arg0];
+}
+
+s32 func_80232780_de(s32 arg0) {
+    if (arg0 < 7) {
+        if (arg0 >= 3) {
+            return 1;
+        }
+    }
+    return 0;
 }

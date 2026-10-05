@@ -1,8 +1,8 @@
-#include "common/types.h"
-#include "span_1000/code_8022E120.h"
-#include "span_1000/code_8025E35C.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8022E938.h"
+#include "span_1000/code_8025E280.h"
 #include "types.h"
+#include "common/types_8fd754e1e915.h"
 
 extern f32 func_8027525C_de(void *arg0, s32 arg1, s32 arg2);
 extern f32 func_80275DD4_de(s32, s32, s32);
@@ -33,4 +33,279 @@ void func_8022EA3C_de(void *arg0, void *arg1) {
         }
     }
     func_8025E440_de(0.0f);
+}
+
+/** Perform no work for callers at VRAM 0x8022EAF4. */
+void func_8022EB04_de(void) {
+}
+
+extern void *D_800CB2EC[];
+extern char D_8011D8D0;
+extern s32 func_80283228_de(void *, s32);
+
+extern void *jtbl_800C2E30[];
+
+
+
+
+
+
+
+
+/** Test whether an actor satisfies the condition selected by an entry type. */
+s32 func_8022EB0C_de(void *arg0, s32 arg1) {
+    void *entry;
+    s16 *condition;
+    char *indexed;
+    s32 offset;
+
+    entry = D_800CB2EC[arg1];
+    {
+        static void *sw_arg1_labels[0] __attribute__((section(".sdata"))) = {
+            &&sw_arg1_1, &&sw_arg1_2, &&sw_arg1_5, &&sw_arg1_6, &&sw_arg1_7, &&sw_arg1_8, &&sw_arg1_9, &&sw_arg1_10, &&sw_arg1_11, &&sw_arg1_13, &&sw_arg1_14, &&sw_arg1_15, &&sw_arg1_3, &&sw_arg1_4, &&sw_arg1_12, &&sw_arg1_0, &&sw_arg1_18, &&sw_arg1_19, &&sw_arg1_20, &&sw_arg1_21, &&sw_arg1_default
+        };
+        s32 sw_arg1_value = arg1;
+        if ((unsigned int)sw_arg1_value > 21) {
+            goto sw_arg1_default;
+        }
+        goto *jtbl_800C2E30[sw_arg1_value];
+    }
+    do {
+    sw_arg1_1:
+    sw_arg1_2:
+    sw_arg1_5:
+    sw_arg1_6:
+    sw_arg1_7:
+    sw_arg1_8:
+    sw_arg1_9:
+    sw_arg1_10:
+    sw_arg1_11:
+    sw_arg1_13:
+    sw_arg1_14:
+    sw_arg1_15:
+        condition = ((WeaponInfo *)(entry))->weaponClass;
+        offset = condition[0] * 2;
+        indexed = arg0;
+        indexed += offset;
+        return ((func_8022EAFC_S2 *)(indexed))->unk5F4 >= condition[3];
+    sw_arg1_3:
+        return ((func_8022EAFC_S3 *)(arg0))->unk5F4 >= 3;
+    sw_arg1_4:
+        return ((func_8022EAFC_S3 *)(arg0))->unk5F4 >= 5;
+    sw_arg1_12:
+        if (((func_8022EAFC_S3 *)(arg0))->unk5F8 == 0) {
+            goto check_external;
+        }
+    sw_arg1_0:
+    sw_arg1_18:
+    sw_arg1_19:
+    sw_arg1_20:
+    sw_arg1_21:
+        return 1;
+    check_external:
+        return func_80283228_de(&D_8011D8D0, (s32)arg0);
+    sw_arg1_default:
+        return 0;
+    
+    } while (0);
+}
+
+int func_8022EBC4_de(void) {
+    char pad[0x10];
+    return 0;
+}
+
+extern s32 func_8024E62C_de(void *arg0);
+extern void func_802227F4_de(void *, void *, s32);
+
+
+
+
+s32 func_8022EBD4_de(void *arg0, void *arg1) {
+    if (((func_8022CA04_S3 *)(arg1))->unk20 <= 0.0f && func_8024E62C_de(arg1) != 0) {
+        func_802227F4_de(arg0, arg1, 2);
+        return 1;
+    }
+    return 0;
+}
+
+/** Update the object's state code from identity, mode, and height bounds. */
+
+
+
+
+
+
+
+void func_8022EC3C_de(void *object) {
+    int suppress = 0;
+    float value;
+
+    if (((func_8022EC2C_S1 *)(object))->unk86C == 0x1144) {
+        suppress = ((func_8022EC2C_S1 *)(object))->unk10E == 0;
+    }
+    if (((func_8022EC2C_S1 *)(object))->unkE4 == D_800C922C) {
+        ((func_8022EC2C_S1 *)(object))->unk86C = 0x8A2;
+        return;
+    }
+    if (!suppress) {
+        value = ((func_8022EC2C_S1 *)(object))->unk6C0;
+        if (D_800C2E88_de <= value) {
+            ((func_8022EC2C_S1 *)(object))->unk86C = 0x8A2;
+            return;
+        }
+        if (value <= D_800C2E8C_de) {
+            ((func_8022EC2C_S1 *)(object))->unk86C = 0x8A7;
+            return;
+        }
+        ((func_8022EC2C_S1 *)(object))->unk86C = 0x14;
+    }
+}
+
+/** Empty adjacent entry point included in func_8022EC3C_de's Splat span. */
+void func_8022ECC4_de(void) {
+}
+
+extern s32 D_800C9FE4;
+extern s32 D_800CD6E0_de;
+
+
+
+extern func_8022ECBC_S1 *D_800FE9F0;
+
+extern void func_80449870_de(void *);
+extern void func_802227F4_de(void *, void *, s32);
+
+void func_8022ECCC_de(void) {
+    if (D_800FE9F0->unk5EA == 1) {
+        func_80449870_de((s32)D_800FE9F0);
+    } else {
+        func_802227F4_de(D_800FE9F0, D_800FE9F0, 0x22);
+    }
+    D_800CD6E0_de = 1;
+    D_800C9FE4 = 0;
+}
+
+/** Passes D_80102A48 to func_80449870_de. */
+
+extern void func_80449870_de(void *);
+
+extern s32 D_800FEA48;
+
+void func_8022ED24_de(void) {
+    func_80449870_de(D_800FEA48);
+}
+
+extern s32 D_800C9AEC_de;
+void func_8022ED48_de(Actor_func_8022ED48_de *arg0)
+{
+  s32 temp_v0;
+  temp_v0 = arg0->flags & 0xFF7FFFFF;
+  arg0->flags = temp_v0;
+  arg0->unk_0x001C = 0;
+  arg0->unk_0x0020 = 0;
+  arg0->unk_0x0024 = 0;
+  arg0->unk_0x11D8 = 0.0f;
+  arg0->flags = temp_v0 | 0x01000000;
+  arg0->unk_0x11FC = 0;
+  arg0->flags = temp_v0 | 0x01000000;
+  if (arg0->unk_0x13B4 == (&D_800C9AEC_de))
+  {
+    arg0->unk_0x086C = 0x5E24;
+    return;
+  }
+  arg0->unk_0x086C = 1;
+}
+
+extern void func_80264854_de(s32 a);
+extern void func_80253908_de(s32 a);
+extern void func_80253838_de(void *, void *);
+
+
+
+
+void func_8022EDA4_de(void *arg0) {
+    s32 temp_a1;
+
+    func_80264854_de(0);
+    func_80253908_de(0);
+    temp_a1 = ((func_8022ED94_S1 *)(arg0))->unk0;
+    if (temp_a1 != 0) {
+        func_80253838_de(0, temp_a1);
+        ((func_8022ED94_S1 *)(arg0))->unk0 = 0;
+        ((func_8022ED94_S1 *)(arg0))->unk4 = 0;
+        ((func_8022ED94_S1 *)(arg0))->unk8 = 0;
+    }
+}
+
+/** Preserve the empty hook at VRAM 0x8022EDE4. */
+void func_8022EDF4_de(void) {
+}
+
+extern s32 D_80142850;
+
+extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
+                         s32 arg4, s32 arg5);
+extern void func_80218464_de(void *arg0);
+extern s32 func_80214178_de(void *arg0, void *arg1, s32 arg2);
+extern void func_8021B1E4_de(void *, s32, s32, s32);
+extern void func_80226708_de(void *arg0);
+
+
+
+
+
+
+void func_8022EDFC_de(void *arg0) {
+    s32 mode;
+
+    ((func_8022EDEC_S2 *)(((func_8022EDEC_S1 *)(arg0))->unk5D8))->unk8F = 1;
+    mode = D_80142850;
+    switch (mode) {
+    case 0:
+        func_8025DE54_de(0x18A1,
+                      ((func_8022EDEC_S1 *)(arg0))->unk8,
+                      ((func_8022EDEC_S1 *)(arg0))->unkC,
+                      ((func_8022EDEC_S1 *)(arg0))->unk10,
+                      (s32)((char *)arg0 + 8), -1);
+        break;
+    case 1:
+        func_8025DE54_de(0x1969,
+                      ((func_8022EDEC_S1 *)(arg0))->unk8,
+                      ((func_8022EDEC_S1 *)(arg0))->unkC,
+                      ((func_8022EDEC_S1 *)(arg0))->unk10,
+                      (s32)((char *)arg0 + 8), -1);
+        break;
+    case 2:
+        func_8025DE54_de(0x1905,
+                      ((func_8022EDEC_S1 *)(arg0))->unk8,
+                      ((func_8022EDEC_S1 *)(arg0))->unkC,
+                      ((func_8022EDEC_S1 *)(arg0))->unk10,
+                      (s32)((char *)arg0 + 8), -1);
+        break;
+    }
+    func_80218464_de((char *)arg0 + 0x938);
+    ((func_8022EDEC_S1 *)(arg0))->unk11B4 = 0;
+    func_80214178_de(&((func_8022EDEC_S1 *)(arg0))->unk2E8, &((func_8022EDEC_S1 *)(arg0))->unk458, 1);
+    func_8021B1E4_de(arg0, ((func_8022EDEC_S1 *)(arg0))->unk5EC, 0, 1);
+    func_80226708_de(arg0);
+}
+
+s32 func_8022EF04_de(s32 arg0, s32 arg1) {
+    s32 var_a1;
+    s32 var_v1;
+    s32 space;
+
+    var_v1 = 0;
+    space = 0x20;
+    var_a1 = arg1;
+loop_1:
+    var_a1 -= 1;
+    if (*((u8 *)arg0 + var_a1) == space) {
+        var_v1 += 1;
+        if (var_a1 > 0) {
+            goto loop_1;
+        }
+    }
+    return var_v1;
 }

@@ -1,5 +1,4 @@
-#include "span_16E000/code_8041A0AC.h"
-#include "span_C76B0/data.h"
+#include "span_16E000/code_804196C0.h"
 #include "types.h"
 
 /* Creates a 0x7C-byte fading widget: finds the frame the low half of the first argument names and
@@ -56,4 +55,12 @@ Record_func_8041A280_de *func_8041A280_de(s32 frameId, s32 itemId) {
     func_8041A430_de(result, 1);
     func_8040EDE4_de(frame, result);
     return result;
+}
+
+extern char D_0041A490[];
+extern char D_0041A520[];
+extern void func_802982C4_de(int, void *, void *, int);
+
+void func_8041A400_de(void) {
+    func_802982C4_de(0xB60, D_0041A490, D_0041A520, 3);
 }

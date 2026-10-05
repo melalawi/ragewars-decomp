@@ -1,11 +1,7 @@
-#include "span_1000/code_8026D4F0.h"
-#include "span_1000/types.h"
+#include "span_1000/code_8026AC38.h"
 #include "n64sdk.h"
 #include "gbi.h"
 #include "types.h"
-#include "n64sdk.h"
-
-
 
 /* Draws the parts of a model resource tinted by an RGBA colour through the shared material D_8013B2D8: sets the tint mode D_800D15E0 to 3, clears the material's fog colour and sets its flags, records the colour as floats and its alpha on the material, advances the pass modulo 18, and when the frame's command buffer still has 3000 commands free and func_80269A80_de accepts the material sets the render mode, selects blend 1, registers the resource, loads the matrix (or sets it as segment 1), sets segment 2 to the given texture base or the model's own, sets the lighting on the first part and emits each part whose material blend bits are all set and accepted for the pass, clearing the tint mode afterwards. Adapted from func_8026DD50_de with the tint setup, the render mode and blend commands and the trailing clear added. */
 
@@ -103,3 +99,28 @@ void func_8026D4F0_de(void **resource, s32 unused, s32 matrix, s32 segment, s32 
     }
     D_800CC390 = 0;
 }
+
+extern void func_8026AD8C_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);
+
+void func_8026D7D4_de(s32 arg0, s32 arg1) {
+    func_8026AD8C_de(arg0, arg1, 0, 0);
+}
+
+extern void func_8026AD8C_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);
+
+void func_8026D7F4_de(s32 arg0, s32 arg1) {
+    func_8026AD8C_de(arg0, arg1, 0, 1);
+}
+
+extern void func_8026AD8C_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);
+
+void func_8026D814_de(s32 arg0, s32 arg1) {
+    func_8026AD8C_de(arg0, arg1, 1, 0);
+}
+
+void func_8026D834_de(void) {
+}
+#ifndef VERSION_US_REV1
+void func_8026D83C_de(void) {
+}
+#endif

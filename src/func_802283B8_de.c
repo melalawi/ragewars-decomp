@@ -1,32 +1,10 @@
-#include "span_1000/code_80222E80.h"
+#include "span_1000/code_80225D10.h"
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8026AC38.h"
+#include "span_1000/code_802A8A94.h"
 
 /* Ends a match when its conditions are met, unless a menu or pause is up (func_80245784_de,
    func_80245798_de), the match is locked at 0x1C of the rules D_801468A0 or the game D_8014561C disallows
@@ -145,4 +123,324 @@ void func_802283B8_de(World_func_802283B8_de *world) {
             }
         }
     }
+}
+
+extern f32 D_800CD738;
+extern s32 D_801427BC;
+extern s32 D_801427D4;
+extern s32 func_80245798_de(void);
+extern void *func_8025CC6C_de(void);
+extern s32 func_8025CA24_de(void *, void *);
+extern void func_8024BE3C_de(void *arg0);
+extern void func_80246E44_de(char *);
+
+
+
+
+
+
+
+
+
+
+
+
+void func_802285E8_de(char *arg0) {
+    char *actor;
+
+    if (D_801427BC == 11 || D_801427BC == 8) {
+        return;
+    }
+    actor = ((func_802285C4_S1 *)(arg0))->unk20;
+    while (actor != 0) {
+        if (func_80245798_de() != 0 || ((func_802285C4_S2 *)(actor))->unk5EA == 0) {
+            void *work;
+
+            work = func_8025CC6C_de();
+            func_8025CA24_de(work, ((func_802285C4_S2 *)(actor))->unk11BC.v0);
+            ((func_802285C4_S2 *)(actor))->unk11BC.v1 = 0;
+            work = func_8025CC6C_de();
+            func_8025CA24_de(work, ((func_802285C4_S2 *)(actor))->unk11C0.v0);
+            ((func_802285C4_S2 *)(actor))->unk11C0.v1 = 0;
+        } else if (D_801427D4 == 0) {
+            void *owner = ((func_802285C4_S2 *)(actor))->unk5DC;
+            s32 blocked;
+
+            if (owner == 0) {
+                blocked = 0;
+            } else {
+                blocked = ((func_8021CD70_S4 *)(owner))->unk564 != 0;
+            }
+            if (blocked == 0) {
+                Block *base;
+                s32 old_value;
+                s32 new_value;
+                f32 saved_value;
+
+                base = &((func_802285C4_S2 *)(actor))->unk2E8;
+                old_value = ((Actor_func_802285E8_de *)actor)->value86C;
+                saved_value = D_800CD738;
+                ((Actor_func_802285E8_de *)actor)->flags |= 0x200;
+                base->value = 0x10;
+                base->flags &= 0xFFFDFFFF;
+                func_8024BE3C_de(base);
+                if (((func_802285C4_S2 *)(actor))->unk11D8 <= 0.0f) {
+                    func_80246E44_de((char *)base);
+                }
+                new_value = ((func_802285C4_S2 *)(actor))->unk86C;
+                D_800CD738 = saved_value;
+                if (old_value != new_value) {
+                    ((func_802285C4_S2 *)(actor))->unk10E = 0;
+                }
+                ((func_802285C4_S4 *)(actor))->unk2F0 = ((func_802285C4_S2 *)(actor))->unk8;
+                ((func_802285C4_S4 *)(actor))->unk354 = ((func_802285C4_S2 *)(actor))->unk6C;
+                ((func_802285C4_S4 *)(actor))->unk2FC = ((func_802285C4_S2 *)(actor))->unk14;
+                ((func_802285C4_S4 *)(actor))->unk344 = ((func_802285C4_S2 *)(actor))->unk5C;
+                ((func_802285C4_S4 *)(actor))->unk3E8 &= ~0x200;
+            }
+        }
+        actor = ((func_802285C4_S2 *)(actor))->unk16E0;
+    }
+}
+
+extern char D_800C2BC0_de;
+
+extern void * *func_8025193C_de(s32, s32, s32, s32, s32, s32, void *, void *, s32);
+extern void *func_8028FDB4_de(void *arg0, s32 arg1);
+extern void func_8024B4F4_de(void *arg0, s32 arg1);
+extern void func_8024ADD0_de(void *arg0, Vec3 *arg1, s32 arg2);
+extern void func_80253754_de(s32 arg0, s32 arg1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void func_80228798_de(void *arg0, void *arg1) {
+    void *node;
+
+    node = ((func_80228774_S1 *)(arg0))->unk20;
+    if (node != 0) {
+        do {
+            void *owner;
+
+            owner = ((func_80228774_S2 *)(node))->unk5DC;
+            if (owner != 0) {
+                if (owner == arg1) {
+                    void *actor;
+
+                    actor = &((func_80228774_S2 *)(node))->unk2E8;
+                    if (((func_80207B5C_S2 *)(owner))->unk24 == 0) {
+                        if (((func_80228774_S4 *)(actor))->unk100 & 0x40000) {
+                            void *resource;
+
+                            resource = func_8025193C_de(
+                                0, ((func_80228774_S4 *)(actor))->unkC4,
+                                ((func_80228774_S4 *)(actor))->unkC4,
+                                ((func_80228774_S4 *)(actor))->unkD0,
+                                4, 0, 0, &D_800C2BC0_de, 1);
+                            if (resource != 0) {
+                                void *linked;
+                                void *temp;
+
+                                linked = ((func_80228774_S4 *)(actor))->unk1D8;
+                                func_8024B4F4_de(actor, (s32)func_8028FDB4_de(*(void **)resource, 0));
+                                temp = ((func_80228774_S5 *)(linked))->unk5DC;
+                                if (temp != 0) {
+                                    Vec3 delta;
+
+                                    delta.x = ((func_80228774_S6 *)(temp))->unk128 -
+                                              ((func_80228774_S4 *)(actor))->unk8;
+                                    delta.y = 0.0f;
+                                    delta.z = ((func_80228774_S7 *)(((func_80228774_S5 *)(linked))->unk5DC))->unk130 -
+                                              ((func_80228774_S4 *)(actor))->unk10;
+                                    func_8024ADD0_de(actor, &delta, 1);
+                                }
+                                func_80253754_de(0, (s32)resource);
+                            }
+                        }
+                    } else {
+                        goto generic;
+                    }
+                } else if (owner != 0) {
+generic:
+                    if (((func_80228774_S2 *)(node))->unk100 & 0x40000) {
+                        void *resource;
+
+                        resource = func_8025193C_de(
+                            0, ((func_80228774_S2 *)(node))->unkC4,
+                            ((func_80228774_S2 *)(node))->unkC4,
+                            ((func_80228774_S2 *)(node))->unkD0,
+                            4, 0, 0, &D_800C2BC0_de, 1);
+                        if (resource != 0) {
+                            func_8024B4F4_de(node, (s32)func_8028FDB4_de(*(void **)resource, 0));
+                            func_80253754_de(0, (s32)resource);
+                        }
+                    }
+                }
+            }
+            node = ((func_80228774_S2 *)(node))->unk16E0;
+        } while (node != 0);
+    }
+}
+
+/* Draws the per-player overlays for one view between func_8026D980_de and func_8026D9D0_de: for each player
+   in the list from 0x20 it draws the scope model 0xC84 or 0xC85 (by the zoom mode at 0x120C) at the
+   player's view matrix while zoomed in at 0x11FC, the player's display through func_8022F770_de when it
+   belongs to this view and is enabled at 0x1210, and in team games (0x24 or 0x78 of D_801468A0) a
+   teammate marker through func_80229D28_de for every other player on the viewing player's team. */
+
+
+
+extern s32 D_801427E0[];
+extern char D_8011BDC8;
+extern char D_800CBCA8;
+extern void *func_802392EC_de(s32);
+
+
+extern s32 func_8028B21C_de(char *, s32);
+extern void *func_8028C198_de(char *, s32);
+extern void func_8026DF30_de(void *, void *, char *, s32, s32);
+extern void func_8022F770_de(void *, void *);
+extern void func_80229D28_de(void *);
+
+
+
+
+
+
+
+
+void func_80228958_de(void *game, s32 view) {
+    char *player;
+    s32 *match;
+    s32 team;
+    s32 zoomed;
+    s32 model;
+
+    match = D_801427E0;
+    team = -1;
+    if (match[0x24 / 4] != 0 || match[0x78 / 4] != 0) {
+        team = ((struct Record *) ((struct Owner_func_804441F4_de *) func_802392EC_de(view))->name)->team;
+    }
+    func_8026D980_de();
+    for (player = ((func_802285C4_S1 *)(game))->unk20; player != 0; player = ((ObjectLinks16E4 *)(player))->unk_16E0) {
+        zoomed = 0;
+        if (((ObjectLinks16E4 *)(player))->unk_11FC > 0.0f) {
+            zoomed = 1;
+        }
+        if (zoomed) {
+            if (((ObjectLinks16E4 *)(player))->unk_120C != 0) {
+                model = func_8028B21C_de(&D_8011BDC8, 0xC84);
+            } else {
+                model = func_8028B21C_de(&D_8011BDC8, 0xC85);
+            }
+            if (model != -1) {
+                func_8026DF30_de(func_8028C198_de(&D_8011BDC8, model), player + 0x1600, &D_800CBCA8, 0, -1);
+            }
+        }
+        if (((ObjectLinks16E4 *)(player))->unk_5DC != 0 && ((ObjectLinks16E4 *)(player))->unk_1210 != 0 && ((ObjectLinks16E4 *)(player))->unk_5DC == view) {
+            func_8022F770_de(player + 0x2E8, (char *)player + 0x458);
+        }
+        if ((((Rules *) D_801427E0)->teams != 0 || ((Rules *) D_801427E0)->teamRule != 0)
+            && ((struct Record *) ((ObjectLinks16E4 *) player)->unk_5D8)->team == team && func_802392EC_de(view) != player) {
+            func_80229D28_de(player);
+        }
+    }
+    func_8026D9D0_de();
+}
+
+extern HudGlobals D_8014221E;
+
+extern s32 D_800DE880_de;
+extern s32 D_800CD730;
+extern s32 D_80140FF8;
+extern s32 D_800DE888_de;
+
+
+
+
+
+
+
+extern f32 D_800C2BF8_de[];
+extern f32 D_800C2C00_de[];
+
+
+extern f32 D_800C2C10_de[];
+extern s32 D_800C2BD8_de;
+
+extern s32 func_80245784_de(void);
+extern s32 func_80245798_de(void);
+extern void func_802A9234_de(s32);
+extern void func_802A822C_de(s32, f32, f32, f32, f32, s32, s32, s32);
+
+extern void func_802A8F28_de(void *, s32, s32, s32, s32, s32, f32, f32);
+
+void func_80228AF4_de(void *arg0, ViewState *arg1) {
+    f32 x;
+    f32 y;
+    f32 center_x;
+    f32 center_y;
+    f32 scale_x;
+    f32 scale_y;
+    f32 position;
+    HudGlobals *hud;
+
+    if (func_80245784_de() != 0) {
+        return;
+    }
+    if (func_80245798_de() != 0) {
+        return;
+    }
+    hud = &D_8014221E;
+    func_802A9234_de(hud->fade);
+    if (((HudState *)&hud->state)->timer <= 0.0f) {
+        return;
+    }
+
+    position = ((HudState *)&hud->state)->timer * D_800C2BDC_de;
+    x = (f32)(s32)(position * D_800C2BE0_de);
+    scale_x = arg1->width / (f32)D_800DE880_de;
+    position -= x * ((D_800C7470_Pair *)&D_800C2BE0_de)->second;
+    scale_y = arg1->height / (f32)((struct Shape_func_802764D4_de_2 *)&D_800DE880_de)->field_4;
+    if ((x < D_800C2BE8_de) && (position < D_800C2BEC_de) &&
+        ((D_800CD730 % 15U) < 5U)) {
+        return;
+    }
+
+    if (D_80140FF8 == 1) {
+        if (D_800DE888_de == 0) {
+            center_x = (f32)D_800DE880_de * D_800C2BF0_de;
+            scale_x *= D_800C2BF4_de;
+            center_y = D_800C2BF8_de[0];
+            scale_y *= D_800C2BF4_de;
+        } else {
+            center_y = D_800C2C00_de[0];
+            center_x = (f32)D_800DE880_de * D_800C2BF8_de[1];
+        }
+    } else {
+        center_x = (f32)D_800DE880_de * D_800C2C00_de[1];
+        center_y = (f32)(((struct Shape_func_802764D4_de_2 *)&D_800DE880_de)->field_4 - 10) * D_800C2C00_de[1];
+    }
+
+    func_802A822C_de((s32)x, center_x - (scale_x * D_800C2C08_de),
+                   center_y, scale_x, scale_y, 1, 1, 0);
+    func_802A822C_de((s32)position, center_x + (2.0f * scale_x),
+                   center_y, scale_x, scale_y, 1, 0, 2);
+    func_802A84F8_de();
+    func_802A8F28_de(&D_800C2BD8_de,
+                  (s32)(center_x - (scale_x * ((D_800C7470_Pair *)&D_800C2C08_de)->second)),
+                  (s32)(center_y - (scale_y * D_800C2C10_de[0])),
+                  0xFF, 0, 0, scale_x, scale_y);
 }

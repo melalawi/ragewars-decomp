@@ -1,8 +1,8 @@
-#include "common/types.h"
-#include "span_1000/code_80245D38.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80246E34.h"
 #include "types.h"
-
-
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
 
 extern s32 func_80245798_de(void);
 extern void func_8024D728_de(Vector4f *arg0, void *arg1);
@@ -59,4 +59,199 @@ void func_8024B53C_de(void *arg0) {
                    ((func_8024B52C_S1 *)(arg0))->unkC,
                    ((func_8024B52C_S1 *)(arg0))->unk10);
     func_80273D6C_de(transform);
+}
+
+void func_8024B654_de(void) {
+}
+
+typedef s32 M2C_UNK;
+typedef s8 M2C_UNK8;
+typedef s16 M2C_UNK16;
+typedef s32 M2C_UNK32;
+typedef s64 M2C_UNK64;
+
+
+
+void func_8024B65C_de(void *arg0, unsigned int arg1)
+{
+  ((func_8024B64C_S1 *)(arg0))->unk10A = arg1;
+  ((func_8024B64C_S1 *)(arg0))->unk10E = 0;
+  if ((((func_8024B64C_S1 *)(arg0))->unk108) != arg1)
+  {
+    ((func_8024B64C_S1 *)(arg0))->unk10F = 1;
+  }
+}
+
+void func_8024B67C_de(void *arg0) {
+    (((struct ObjectState110 *) ((s8 *) arg0))->unk_10F) = 1;
+    (((struct ObjectState110 *) ((s8 *) arg0))->unk_104) = 0;
+    (((struct ObjectState110 *) ((s8 *) arg0))->unk_10E) = 0;
+    (((struct ObjectState110 *) ((s8 *) arg0))->unk_100) = (s32) ((((struct ObjectState110 *) ((s8 *) arg0))->unk_100) & ~0x400);
+}
+
+extern s32 func_80246A08_de(void *, s32, s32);
+extern s32 func_8024B6F4_de(void *arg0, s32 arg1, s32 arg2);
+
+s32 func_8024B6A0_de(void *a, s32 c, s32 flag) {
+    s32 temp_v0 = func_80246A08_de(a, c, -1);
+
+    if (temp_v0 != -1) {
+        return func_8024B6F4_de(a, temp_v0, flag);
+    }
+    return 0;
+}
+
+extern void func_8024B65C_de(void *arg0, u32 arg1);
+
+
+
+
+s32 func_8024B6F4_de(void *arg0, s32 arg1, s32 arg2) {
+    if (arg1 < 0 || (arg2 == 0 && (((func_80203C40_S1 *)(arg0))->unk100 & 0x400))) {
+        return 0;
+    }
+    func_8024B65C_de(arg0, (u32) arg1);
+    return 1;
+}
+
+extern void func_8027985C_de(s16 *arg0);
+extern s32 func_80246A08_de(void *arg0, s32 arg1, s32 arg2);
+extern s32 func_80279864_de(s16 *arg0, s16 arg1, s16 arg2);
+extern s16 func_802798A8_de(s16 *arg0, u16 arg1);
+
+s16 func_8024B738_de(void *arg0, s16 *arg1, s32 arg2) {
+    s16 sp10[52];
+    u16 var_a1;
+
+    func_8027985C_de(sp10);
+    var_a1 = *(u16 *) arg1;
+    if (*arg1 != -1) {
+        do {
+            if (func_80246A08_de(arg0, (s32) (s16) var_a1, arg2) != -1) {
+                func_80279864_de(sp10, arg1[0], arg1[1]);
+            }
+            arg1 += 2;
+            var_a1 = *(u16 *) arg1;
+        } while (*arg1 != -1);
+    }
+    return func_802798A8_de(sp10, var_a1);
+}
+
+extern char D_800C39E0_de;
+extern void * *func_8025193C_de(s32, s32, s32, s32, s32, s32, void *, void *, s32);
+extern s32 *func_8024BFD4_de(void *arg0, s8 arg1);
+extern void *func_8028FDB4_de(void *arg0, s32 arg1);
+extern s32 func_802484B0_de(void *arg0, s32 arg1, void *arg2);
+extern void func_80253754_de(s32 arg0, s32 arg1);
+
+
+
+s32 func_8024B7E4_de(void *arg0, s32 arg1)
+{
+  void *resource;
+  s32 *entry;
+  s32 value;
+  s32 result;
+  result = 0;
+  if ((((func_8024B7D4_S1 *)(arg0))->unk100) & 0x40000)
+  {
+    if (resource)
+    {
+      resource = func_8025193C_de(0, ((func_8024B7D4_S1 *)(arg0))->unkC4, ((func_8024B7D4_S1 *)(arg0))->unkC4, ((func_8024B7D4_S1 *)(arg0))->unkD0, 0, 0, 0, (&D_800C39E0_de) + 4, arg1);
+    }
+    else
+    {
+      resource = func_8025193C_de(0, ((func_8024B7D4_S1 *)(arg0))->unkC4, ((func_8024B7D4_S1 *)(arg0))->unkC4, ((func_8024B7D4_S1 *)(arg0))->unkD0, 0, 0, 0, (&D_800C39E0_de) + 4, arg1);
+    }
+    if (resource == 0)
+    {
+      return result;
+    }
+    entry = func_8024BFD4_de(arg0, ((func_8024B7D4_S1 *)(arg0))->unk1);
+    if (entry != 0)
+    {
+      value = *entry;
+      result = func_802484B0_de(arg0, value, func_8028FDB4_de(*((void **) resource), 0));
+      func_80253754_de(0, (s32) entry);
+    }
+    func_80253754_de(0, (s32) resource);
+  }
+  return result;
+}
+
+void func_8024B8C4_de(void *arg0) {
+    s32 temp_a1;
+    temp_a1 = (((struct IntegerState104 *) ((s8 *) arg0))->unk_B4);
+    (((struct IntegerState104 *) ((s8 *) arg0))->unk_B4) = 0;
+    (((struct IntegerState104 *) ((s8 *) arg0))->unk_BC) = 0;
+    (((struct IntegerState104 *) ((s8 *) arg0))->unk_C0) = 0;
+    (((struct IntegerState104 *) ((s8 *) arg0))->unk_100) = (s32) ((((struct IntegerState104 *) ((s8 *) arg0))->unk_100) & ~0x200);
+    (((struct IntegerState104 *) ((s8 *) arg0))->unk_B8) = temp_a1;
+}
+
+extern s32 D_800CD72C;
+extern void func_8024AA18_de(void *arg0, void *arg1, void *arg2);
+extern void func_8024C454_de(void *arg0, void *arg1);
+extern void func_8026DA4C_de();
+
+
+
+
+
+
+void func_8024B8EC_de(void *arg0, void *arg1, void *arg2) {
+    s8 index;
+    s32 one;
+
+    index = ((func_8024B8DC_S1 *)(arg0))->unk1;
+    if (index != -1) {
+        ((func_8024B8DC_S1 *)(arg0))->unk17C = 1 << index;
+        if (((func_8024B8DC_S2 *)(arg2))->unk4 != 0) {
+            func_8024AA18_de(arg0, arg1, arg2);
+        }
+        if (*(s32 *)arg2 != 0) {
+            one = 1;
+            func_8026DA4C_de(((func_8024B8DC_S2 *)(arg2))->unkC,
+                          ((func_8024B8DC_S1 *)(arg0))->unkB4, one,
+                          (char *)arg0
+                              + ((((D_800CD72C << one) + D_800CD72C) << 3)
+                                 + 0x140),
+                          0, ((func_8024B8DC_S1 *)(arg0))->unk3);
+            func_8024C454_de(arg0, arg2);
+        }
+    }
+}
+
+extern s32 D_800CD72C;
+extern void func_8024AA18_de(void *arg0, void *arg1, void *arg2);
+extern void func_8024C454_de(void *arg0, void *arg1);
+extern void func_8026DA4C_de();
+
+
+
+
+
+
+void func_8024B990_de(void *arg0, void *arg1, void *arg2, Block24 *arg3) {
+    s8 index;
+    s32 one;
+
+    ((Object_func_8024B990_de *)arg0)->blocks[D_800CD72C] = *arg3;
+    index = ((func_8024B8DC_S1 *)(arg0))->unk1;
+    if (index != -1) {
+        ((func_8024B8DC_S1 *)(arg0))->unk17C = 1 << index;
+        if (((func_8024B8DC_S2 *)(arg2))->unk4 != 0) {
+            func_8024AA18_de(arg0, arg1, arg2);
+        }
+        if (*(s32 *)arg2 != 0) {
+            one = 1;
+            func_8026DA4C_de(((func_8024B8DC_S2 *)(arg2))->unkC,
+                          ((func_8024B8DC_S1 *)(arg0))->unkB4, one,
+                          (char *)arg0
+                              + ((((D_800CD72C << one) + D_800CD72C) << 3)
+                                 + 0x140),
+                          0, ((func_8024B8DC_S1 *)(arg0))->unk3);
+            func_8024C454_de(arg0, arg2);
+        }
+    }
 }

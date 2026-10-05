@@ -1,8 +1,11 @@
-#include "common/types.h"
-#include "span_1000/code_8021762C.h"
-#include "span_C76B0/data.h"
-/* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80217388.h"
 #include "types.h"
+#include "n64sdk.h"
+#include "gbi.h"
+#include "common/types_1dc8418c21db.h"
+
+/* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 
 extern f32 D_800C9138_de;
 
@@ -36,4 +39,81 @@ void func_8021836C_de(volatile char *arg0) {
         ((func_8021836C_S2 *)(arg0))->unk30 = value;
         ((func_8021836C_S2 *)(arg0))->unk28 = -scaled;
     }
+}
+
+extern Gfx *D_8010C574;
+extern void func_802A9234_de(s32);
+extern void func_80217928_de(s32 arg0, s32 arg1, s32 arg2);
+
+void func_802183E8_de(s32 arg0, s32 arg1, s32 arg2) {
+    Gfx *cmd;
+
+    func_802A9234_de(0xFF);
+    gDPSetTextureFilter(D_8010C574++, G_TF_BILERP);
+    func_80217928_de(arg0, arg1, arg2);
+}
+
+/** Preserve the empty hook at VRAM 0x80218464. */
+void func_80218464_de(void) {
+}
+
+extern f32 D_800CD738;
+
+
+
+
+
+
+
+
+s32 func_8021846C_de(void *arg0, void *arg1) {
+    f32 temp_f1;
+
+    temp_f1 = ((func_8021846C_S1 *)(arg0))->unk4;
+    if (temp_f1 > 0.0f) {
+        ((func_8021846C_S1 *)(arg0))->unk4 = temp_f1 - D_800CD738;
+        return 0;
+    }
+    if (((func_8021846C_S3 *)((((func_8021846C_S2 *)(arg1))->unk698)))->unkB0 & 0x8000) {
+        return 0;
+    }
+    ((func_8021846C_S1 *)(arg0))->unk37C = -1;
+    return 1;
+}
+
+extern void func_80274020_de(f32 *arg0);
+
+
+extern f32 D_800CD738;
+
+f32 func_802184C0_de(f32 arg0, f32 arg1, s32 arg2, f32 arg3) {
+    f32 f0;
+    f32 f1;
+    f32 f2;
+    f32 f3;
+
+    func_80274020_de(&arg0);
+    func_80274020_de(&arg1);
+    if (arg2 > 0) {
+        if (arg1 < arg0) {
+            arg1 += D_800C2250_de;
+        }
+    } else if (arg1 > arg0) {
+        arg1 -= D_800C2254_de;
+    }
+    f3 = arg1 - arg0;
+    f1 = f3 * arg3 * D_800CD738;
+    f2 = f1;
+    if (f1 < 0.0f) {
+        f2 = -f1;
+    }
+    if (f3 < 0.0f) {
+        if (-f3 < f2) {
+            goto clamp;
+        }
+    } else if (f3 < f2) {
+clamp:
+        f1 = f3;
+    }
+    return f1;
 }

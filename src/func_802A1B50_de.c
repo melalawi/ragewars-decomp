@@ -1,8 +1,8 @@
-#include "common/types.h"
-#include "span_1000/code_802A26F8.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802A1264.h"
 #include "types.h"
-
-
 
 extern s32 D_800CD9B0;
 extern s32 D_800CD9B4;
@@ -32,4 +32,37 @@ s32 func_802A1B50_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
         } while (*(Handler802A2B50 *)entry != 0);
     }
     return 0;
+}
+
+extern s32 func_8040E0D4_de(Quad_func_802A1BE0_de *, Quad_func_802A1BE0_de *, void *, Args *);
+extern void func_802A1898_de(u32 *, u32 *, u32 *, u32 *);
+extern void func_8040F488_de(Quad_func_802A1BE0_de *, Quad_func_802A1BE0_de *);
+extern void func_802A1870_de(u32, u32, u32, u32);
+extern void func_8040E7FC_de(void *, Args);
+
+
+
+
+void func_802A1BE0_de(void *arg0, Args args) {
+    Quad_func_802A1BE0_de first;
+    Quad_func_802A1BE0_de basis;
+    Quad_func_802A1BE0_de value;
+    Quad_func_802A1BE0_de transformed;
+    s32 changed;
+
+    changed = 0;
+    if (func_8040E0D4_de(&first, &basis, arg0, &args) != 0) {
+        if ((((func_802A2BE0_S1 *)(arg0))->unk12 & 0x200) != 0) {
+            func_802A1898_de(&value.x, &value.z, &value.y, &value.w);
+            transformed = value;
+            func_8040F488_de(&transformed, &basis);
+            func_802A1870_de(transformed.x, transformed.z,
+                          transformed.y, transformed.w);
+            changed = 1;
+        }
+        func_8040E7FC_de(((func_802A2BE0_S1 *)(arg0))->unk8, args);
+        if (changed != 0) {
+            func_802A1870_de(value.x, value.z, value.y, value.w);
+        }
+    }
 }

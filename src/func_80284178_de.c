@@ -1,9 +1,7 @@
-#include "common/types.h"
-#include "span_1000/code_80283D24.h"
-#include "span_1000/types.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8028308C.h"
 #include "types.h"
-
-
+#include "common/types_1dc8418c21db.h"
 
 extern s32 D_80140FF8[];
 extern s32 D_800CD72C;
@@ -39,4 +37,79 @@ void func_80284178_de(void *arg0) {
                       0, 0.0f);
     }
     ((func_8028414C_S2 *)(arg0))->unk5C |= 0x100000;
+}
+
+/* Spawns a sequence of effects along an object's motion segment. */
+
+
+
+
+
+
+
+
+extern char D_8011D8D0;
+
+extern void func_80271818_de(struct Shape_typemap_165 *, Triple *);
+extern void func_80271F68_de(Triple *, Triple *, Triple *);
+extern void func_80271F9C_de(Triple *, Triple *, f32);
+extern void func_80271F34_de(Triple *, Triple *, Triple *);
+extern s32 func_802800C0_de(void *, void *, void *, s32, s32, s32,
+                         Triple, struct Shape_typemap_165, Triple, s32, s32, s32);
+void func_8028422C_de(TrailActor *actor) {
+        struct Shape_typemap_165 rotation;
+        int temp;
+        Triple delta;
+        Triple step;
+        unsigned int actor_2;
+        Triple position;
+        f32 divisor;
+        s32 i;
+        s8 count;
+        void *system;
+        count = actor->node->state->count;
+        if (count > 0) {
+                position = actor->position;
+                func_80271818_de(&rotation, &position);
+                func_80271F68_de(&delta, &actor->origin, &actor->end);
+                system = &D_8011D8D0;
+                i = 1;
+                temp = i <= count;
+                if (temp) {
+                        divisor = (f32) count + (&D_800C4E88_de)[1];
+                        do {
+    do { func_80271F9C_de(&step, &delta, (f32) i / divisor); func_80271F34_de(&step, &step, &actor->end); actor_2 = actor->model; func_802800C0_de(system, actor, actor->owner, actor->property, actor->type, actor_2, position, rotation, step, 0, -1, 0x20E001); i++; } while (0);
+                        } while (count >= i);
+                }
+        }
+}
+
+extern s32 func_80284434_de(void *arg0);
+extern void *func_8025CC6C_de(void);
+extern void *func_8025C95C_de(void *, s32, void *, void *, s32);
+
+
+
+
+
+
+void func_802843B8_de(void *arg0, s32 arg1) {
+    void *node;
+
+    node = ((func_8028438C_S1 *)(arg0))->unk1DC;
+    if (node != 0) {
+        if (((func_80254930_S1 *)(node))->unkC == arg1 && ((func_80254930_S1 *)(node))->unk8 != -1) {
+            return;
+        }
+        func_80284434_de(arg0);
+    }
+    ((func_8028438C_S1 *)(arg0))->unk1DC =
+        func_8025C95C_de(func_8025CC6C_de(), arg1, &((func_8028438C_S1 *)(arg0))->unk8, &((func_8028438C_S1 *)(arg0))->unk8, -1);
+}
+
+s32 func_80284434_de(void *a) {
+    if ((((struct IntegerState1E0 *) ((s8 *) a))->unk_1DC) != 0) {
+        func_8025CA24_de(func_8025CC6C_de(), (((struct IntegerState1E0 *) ((s8 *) a))->unk_1DC));
+        (((struct IntegerState1E0 *) ((s8 *) a))->unk_1DC) = 0;
+    }
 }

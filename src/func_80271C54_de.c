@@ -1,22 +1,7 @@
-#include "span_1000/code_8026E5DC.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80271B18.h"
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 
 extern f32 D_800C48A8_de;
 
@@ -97,4 +82,39 @@ f32 func_80271C54_de(f32 arg0, f32 arg1) {
         } while (*(&D_800C48A0_de + 1) < var_f0);
     }
     return -var_f0;
+}
+
+/** Component-wise multiply two 3-vectors. */
+void func_80271F00_de(Vec3 *result, Vec3 *left, Vec3 *right) {
+    result->x = left->x * right->x;
+    result->y = left->y * right->y;
+    result->z = left->z * right->z;
+}
+
+/** Add two three-component vectors. */
+void func_80271F34_de(Vec3 *result, Vec3 *left, Vec3 *right) {
+    result->x = left->x + right->x;
+    result->y = left->y + right->y;
+    result->z = left->z + right->z;
+}
+
+/** Subtract the right vector from the left vector. */
+void func_80271F68_de(Vec3 *arg0, Vec3 *arg1, Vec3 *arg2) {
+    arg0->x = arg1->x - arg2->x;
+    arg0->y = arg1->y - arg2->y;
+    arg0->z = arg1->z - arg2->z;
+}
+
+/** Scale a 3-vector (arg1) by a scalar (arg2), store into arg0. */
+void func_80271F9C_de(void *arg0, void *arg1, f32 arg2) {
+    ((func_8024C864_S1 *)(arg0))->unk0 = ((func_8024C864_S1 *)(arg1))->unk0 * arg2;
+    ((func_8024C864_S1 *)(arg0))->unk4 = ((func_8024C864_S1 *)(arg1))->unk4 * arg2;
+    ((func_8024C864_S1 *)(arg0))->unk8 = ((func_8024C864_S1 *)(arg1))->unk8 * arg2;
+}
+
+/** Lerp a 3-component vector: out = a + t * (b - a). */
+void func_80271FC8_de(void *arg0, f32 t, void *a, void *b) {
+    ((func_8024C864_S1 *)(arg0))->unk0 = ((func_8024C864_S1 *)(a))->unk0 + (t * (((func_8024C864_S1 *)(b))->unk0 - ((func_8024C864_S1 *)(a))->unk0));
+    ((func_8024C864_S1 *)(arg0))->unk4 = ((func_8024C864_S1 *)(a))->unk4 + (t * (((func_8024C864_S1 *)(b))->unk4 - ((func_8024C864_S1 *)(a))->unk4));
+    ((func_8024C864_S1 *)(arg0))->unk8 = ((func_8024C864_S1 *)(a))->unk8 + (t * (((func_8024C864_S1 *)(b))->unk8 - ((func_8024C864_S1 *)(a))->unk8));
 }

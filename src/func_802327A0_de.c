@@ -1,4 +1,4 @@
-#include "span_1000/code_802301E4.h"
+#include "span_1000/code_80231F5C.h"
 #include "types.h"
 
 extern void *jtbl_800C2FD8[];
@@ -25,5 +25,14 @@ case_14:
 case_15:
     return 1;
 case_default:
+    return 0;
+}
+
+s32 func_802327D4_de(s32 arg0) {
+    if (arg0 < 0xD) {
+        if (arg0 >= 0xA) {
+            return 1;
+        }
+    }
     return 0;
 }

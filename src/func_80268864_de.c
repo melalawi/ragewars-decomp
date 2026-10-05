@@ -1,6 +1,8 @@
-#include "common/types.h"
-#include "span_1000/code_802675E0.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80268160.h"
 #include "types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
 
 /* Calls func_802172D0_de on an object, its block at offset 0x170 and a stack argument when the pause word is clear, the object exists and its first byte is one. Adapted from func_802688AC_de with the pause-word test, the callee and the extra stack argument changed, and the call wrapped in do-while(0) so the stack argument loads at entry. */
 
@@ -13,5 +15,83 @@ void func_80268864_de(void *unused, u8 *object, s32 third, struct Shape_func_802
         do {
             func_802172D0_de(object, object + 0x170, sixth);
         } while (0);
+    }
+}
+
+/* Calls func_80217388_de on an object and its block at offset 0x170 when the object exists and its
+   first byte is one. The fourth argument is a record passed by value whose first word lands in
+   its home slot. */
+
+
+extern void func_80217388_de(u8 *, u8 *);
+
+void func_802688AC_de(void *unused, u8 *object, s32 third, struct Shape_func_802764D4_de_2 pair) {
+    if (object != 0 && object[0] == 1) {
+        func_80217388_de(object, object + 0x170);
+    }
+}
+
+/* Damages the owner of a live actor (kind 1 with either blast bit of 0x300000 set) that is inside
+   the blast: the radius is arg6 scaled by D_800C9570[1], and when the squared radius still covers
+   the squared distance from the owner's position at 8 to arg1's position at 8, the remaining
+   fraction of the squared radius times arg7 is applied through func_8022B11C_de. */
+
+
+
+
+
+
+
+
+
+
+
+extern f32 D_800C4480_de[];
+extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
+extern void func_8022B11C_de(Owner_func_802688E4_de *, s32);
+
+void func_802688E4_de(Actor_func_802688E4_de *arg0, Player *arg1, s32 arg2, Blast blast) {
+    Vec3 delta;
+    Owner_func_802688E4_de *owner;
+    f32 range;
+    f32 dist;
+
+    if (arg0->kind == 1 && (arg0->flags & 0x300000) != 0) {
+        owner = arg0->owner;
+        if (owner->alive != 0) {
+            range = (f32)blast.radius * D_800C4480_de[1];
+            func_80271F68_de(&delta, &owner->pos, &arg1->pos);
+            dist = delta.x * delta.x + delta.y * delta.y + delta.z * delta.z;
+            range = range * range;
+            if (range < dist) {
+                return;
+            }
+            func_8022B11C_de(owner, (s32)(((range - dist) / range) * (f32)blast.damage) & 0xFFFF);
+        }
+    }
+}
+
+void func_802689BC_de(void *arg0, int arg1, int arg2, int arg3, int arg4, int arg5, unsigned char arg6) {
+    unsigned char *p = &((func_802689BC_S1 *)(&arg3))->unkF;
+    ((func_802689BC_S2 *)(arg0))->unk270 = *p;
+}
+
+/* Calls func_80217388_de on an object and its block at 0x170, sets bit 0x20 in that block's first word, clears flags 0x10000, 0x2000 and 0x100 at offset 0x100, and calls func_80262C88_de when flag 0x80000 remains set. Adapted from func_802790C0_de with the block taken at offset 0x170 of the object, a by-value record added as the fourth argument, and each flag update written as a compound assignment to memory. */
+
+
+extern void func_80217388_de(u8 *, u8 *);
+extern void func_80262C88_de(void *arg0);
+
+
+
+
+void func_802689CC_de(u8 *object, s32 second, s32 third, struct Shape_func_802764D4_de_2 pair) {
+    func_80217388_de(object, (char *)object + 0x170);
+    ((func_802689CC_S1 *)(object))->unk170 |= 0x20;
+    ((func_802689CC_S1 *)(object))->unk100 &= 0xFFFEFFFF;
+    ((func_802689CC_S1 *)(object))->unk100 &= ~0x2000;
+    ((func_802689CC_S1 *)(object))->unk100 &= ~0x100;
+    if (((func_802689CC_S1 *)(object))->unk100 & 0x80000) {
+        func_80262C88_de(object);
     }
 }

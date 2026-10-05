@@ -1,5 +1,9 @@
-#include "span_1000/code_802A776C.h"
+#include "span_1000/code_802A8A94.h"
 #include "types.h"
+#include "abi.h"
+#include "n64sdk.h"
+#include "gbi.h"
+
 /* Draws a signed integer of up to four digits with the font sprite set from func_8028BEAC_de: splits the magnitude into thousands, hundreds, tens and ones, draws a leading minus sign through func_802AAC28_de when negative, then draws at least minDigits digits through func_802AA1AC_de, advancing 13 units per digit (0.7 of that for a one) scaled by the size, laid out right to left when rightAlign is set, and releases the sprite set. */
 
 extern char D_8011BDC8;
@@ -93,4 +97,126 @@ void func_802A822C_de(s32 value, f32 x, f32 y, f32 size, f32 arg4, s32 arg5, s32
     }
 release:
     func_80253754_de(0, sprites);
+}
+
+extern Gfx *D_8010C574;
+extern s32 D_801377B8[2];
+extern s32 D_80147150;
+
+extern s32 func_802AADBC_de(void);
+extern void func_80268CE0_de(s32 arg0);
+extern s32 func_8026925C_de(s32);
+extern void func_802AAB3C_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3,
+                         s32 arg4, s32 arg5);
+
+
+void func_802A84F8_de(void) {
+    s32 texture;
+
+    texture = func_802AADBC_de();
+    if (texture != 0) {
+
+        {
+            Gfx *cmd;
+            cmd = D_8010C574++;
+            gDPPipeSync(cmd);
+            cmd = D_8010C574++;
+            gDPSetCycleType(cmd, G_CYC_2CYCLE);
+        }
+
+        func_80268CE0_de(0x1A);
+        func_8026925C_de(0x15);
+
+        D_80147150 = 0;
+        {
+        Gfx *cmd;
+        cmd = D_8010C574++;
+        gSPTexture(cmd, 32768, 32768, 0, 0, G_ON);
+        cmd = D_8010C574++;
+        gDPSetTextureLUT(cmd, G_TT_NONE);
+        cmd = D_8010C574++;
+        gDPSetTexturePersp(cmd, G_TP_NONE);
+        cmd = D_8010C574++;
+        gDPSetTextureFilter(cmd, G_TF_BILERP);
+        cmd = D_8010C574++;
+        gDPSetTextureImage(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)texture);
+        cmd = D_8010C574++;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
+        cmd = D_8010C574++;
+        gDPLoadSync(cmd);
+        cmd = D_8010C574++;
+        gDPLoadBlock(cmd, G_TX_LOADTILE, 0, 0, 143, 2048);
+        cmd = D_8010C574++;
+        gDPPipeSync(cmd);
+        cmd = D_8010C574++;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_4b, 2, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
+        cmd = D_8010C574++;
+        gDPSetTileSize(cmd, G_TX_RENDERTILE, 0, 0, 92, 92);
+        cmd = D_8010C574++;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_4b, 0, 0, 1, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
+        cmd = D_8010C574++;
+        gDPSetTileSize(cmd, 1, 0, 0, 60, 60);
+        }
+
+        func_802AAB3C_de(0x8C, 0x8C, 0x8C, 0x8C, 0x8C, 0x8C);
+        func_802AAB68_de(D_800C5FB0_de, D_800C5FB0_de);
+        D_801377B8[0] = 2;
+        D_801377B8[1] = 2;
+    }
+}
+
+extern Gfx *D_8010C574;
+extern s32 D_80147150;
+extern s32 func_802AADBC_de(void);
+
+void func_802A8710_de(void) {
+    Gfx *cmd;
+    s32 v0;
+
+    v0 = func_802AADBC_de();
+    if (v0 != 0) {
+        D_80147150 = 1;
+        cmd = D_8010C574++;
+        gDPSetTextureImage(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32) v0);
+        cmd = D_8010C574++;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 3, 0, G_TX_WRAP, 4, 0);
+        cmd = D_8010C574++;
+        gDPLoadSync(cmd);
+        cmd = D_8010C574++;
+        gDPLoadBlock(cmd, G_TX_LOADTILE, 0, 0, 31, 2048);
+        cmd = D_8010C574++;
+        gDPPipeSync(cmd);
+        cmd = D_8010C574++;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_4b, 1, 256, G_TX_RENDERTILE, 0, G_TX_WRAP, 3, 0, G_TX_WRAP, 4, 0);
+        cmd = D_8010C574++;
+        gDPSetTileSize(cmd, G_TX_RENDERTILE, 0, 0, 60, 28);
+    }
+}
+
+extern Gfx *D_8010C574;
+extern s32 D_80147150;
+extern s32 func_802AADBC_de(void);
+
+void func_802A8800_de(void) {
+    Gfx *cmd;
+    s32 v0;
+
+    v0 = func_802AADBC_de();
+    if (v0 != 0) {
+        D_80147150 = 2;
+        cmd = D_8010C574++;
+        gDPSetTextureImage(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32) v0);
+        cmd = D_8010C574++;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_16b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 3, 0, G_TX_WRAP, 4, 0);
+        cmd = D_8010C574++;
+        gDPLoadSync(cmd);
+        cmd = D_8010C574++;
+        gDPLoadBlock(cmd, G_TX_LOADTILE, 0, 0, 31, 2048);
+        cmd = D_8010C574++;
+        gDPPipeSync(cmd);
+        cmd = D_8010C574++;
+        gDPSetTile(cmd, G_IM_FMT_I, G_IM_SIZ_4b, 1, 256, G_TX_RENDERTILE, 0, G_TX_WRAP, 3, 0, G_TX_WRAP, 4, 0);
+        cmd = D_8010C574++;
+        gDPSetTileSize(cmd, G_TX_RENDERTILE, 0, 0, 60, 28);
+    }
 }

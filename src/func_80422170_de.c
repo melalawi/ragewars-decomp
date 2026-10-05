@@ -1,4 +1,4 @@
-#include "span_16E000/code_80421A88.h"
+#include "span_16E000/code_804221A0.h"
 #include "types.h"
 
 /* Sets up the match display: calls func_804221E8_de, starts the objects at D_80145088 and 0x48 bytes
@@ -7,7 +7,7 @@
    reports nothing. */
 extern char D_80140FC8[];
 extern char D_8011BDC8[];
-extern void func_804221E8_de();
+
 extern void func_8044A370_de(void *, s32);
 extern void func_804499B0_de(void *, s32, s32);
 extern s32 func_804030E0_de(s32);
@@ -26,4 +26,16 @@ void func_80422170_de(void) {
     if (func_8025477C_de() == 0) {
         func_8025476C_de(1);
     }
+}
+
+/* Calls func_80245A20_de with 1, func_80245A00_de with the pooled constant D_800E1648 and
+   func_80245A5C_de with 0x43, 0x4F, 0x12 and 0x80. */
+extern void func_80245A20_de(s32);
+extern void func_80245A00_de(f32);
+extern void func_80245A5C_de(s32, s32, s32, s32);
+
+void func_804221E8_de(void) {
+    func_80245A20_de(1);
+    func_80245A00_de((45.0f));
+    func_80245A5C_de(0x43, 0x4F, 0x12, 0x80);
 }

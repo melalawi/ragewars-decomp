@@ -1,6 +1,7 @@
-#include "common/types.h"
-#include "span_16E000/code_804194A8.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804196C0.h"
 #include "types.h"
+
 /* Copies image src into dst when they differ, then fixes dst's pixel rows through func_80419490_de when a paletted image has more than 0x800 bytes of pixels or a true-color image more than 0x1000; returns zero. */
 
 typedef struct Image Image;
@@ -32,4 +33,10 @@ s32 func_80419640_de(Image *dst, Image *src) {
         func_80419490_de(src);
     }
     return 0;
+}
+
+extern int D_800DF2A0;
+
+void func_804196C8_de(int value) {
+    D_800DF2A0 = value;
 }

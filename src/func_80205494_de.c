@@ -1,11 +1,6 @@
-#include "span_1000/code_80204A68.h"
-#include "span_1000/types.h"
-
-
-
-
-
-
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80204E78.h"
 
 /** Clear two flags when the controlling byte and nested flag are set. */
 void func_80205494_de(void *arg0, void *arg1) {
@@ -17,4 +12,13 @@ void func_80205494_de(void *arg0, void *arg1) {
         flags &= ~0x100;
         ((func_80205494_S1 *)(arg0))->unk100 = flags;
     }
+}
+
+typedef struct Owner Owner;
+
+
+
+/** Return the word at offset 0x40 through the pointer stored at offset 0x18. */
+int func_802054D0_de(void *object) {
+    return ((struct Access_s32_40 *) ((Owner *) object)->track)->field;
 }

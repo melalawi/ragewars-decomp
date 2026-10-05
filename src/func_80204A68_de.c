@@ -1,8 +1,8 @@
-#include "common/types.h"
-#include "span_1000/code_80204A68.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80203F04.h"
 #include "types.h"
+
 /* Destroys a breakable object after a hit: when its descriptor has a damage factor at 0x1D, scaled
    by D_800C6B74, and the object is forced at 0xE6, or the hit's team byte at 0xCA matches both ids at
    0x108 and 0x10A and either the hit at 0xCB bypasses an object without flag 0x400 or the scaled count
@@ -55,5 +55,30 @@ void func_80204A68_de(void *arg0, void *arg1) {
         local.field_0 = 0;
         func_80267198_de(arg0, arg0, 7, ((BreakableHitContext *)(arg0))->unk_8, local);
         func_80285DB0_de(&D_8011BDC8, arg0, 0);
+    }
+}
+
+extern char D_800C8380_de;
+extern char D_00204C34;
+
+
+
+
+void func_80204BB4_de(void *arg0, void *arg1) {
+    ((func_80204BB4_S1 *)(arg1))->unk2C = &D_800C8380_de;
+    ((func_80204BB4_S1 *)(arg1))->unk108 = &D_00204C34;
+}
+
+extern s32 func_80285F58_de(void *, void *);
+extern s32 func_80214178_de(void *, void *, s32);
+extern s32 D_8011BDC8;
+
+void func_80204BD0_de(void *arg0, void *arg1) {
+    s32 different = func_80285F58_de(&D_8011BDC8, arg0) != 1;
+
+    if (different == 0) {
+        func_80214178_de(arg0, arg1, 0);
+    } else {
+        func_80214178_de(arg0, arg1, 1);
     }
 }

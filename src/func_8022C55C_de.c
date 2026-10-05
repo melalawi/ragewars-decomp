@@ -1,41 +1,7 @@
-#include "common/types.h"
-#include "span_1000/code_8022C36C.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8022BA90.h"
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 void *func_8022C55C_de(void *arg0, u32 arg1) {
     void *var_v1;
@@ -58,4 +24,58 @@ void *func_8022C55C_de(void *arg0, u32 arg1) {
         }
     }
     return var_v1;
+}
+
+void func_8022C5AC_de(char *object) {
+    char *record = ((func_802285C4_S1 *)(object))->unk20;
+    while (record != 0) {
+        char *nested = ((func_80229A54_S2 *)(record))->unk5D8;
+        if (((func_8022C54C_S3 *)(nested))->unk90 == 1) {
+            ((func_8022C54C_S3 *)(nested))->unk90 = 0;
+        }
+        record = ((func_80229A54_S2 *)(record))->unk16E0;
+    }
+}
+
+extern void func_80226708_de(void *arg0);
+
+
+
+
+
+
+void func_8022C5DC_de(void *object) {
+    char *record = ((func_802285C4_S1 *)(object))->unk20;
+    if (record != 0) {
+        do {
+            ((struct ObjectState90 *) ((func_80229A54_S2 *) record)->unk5D8)->unk_8F = 0;
+            func_80226708_de(record);
+            record = ((func_80229A54_S2 *)(record))->unk16E0;
+        } while (record != 0);
+    }
+}
+
+s32 func_8022C620_de(char *object) {
+    char *record = ((func_802285C4_S1 *)(object))->unk20;
+    s32 count = 0;
+    while (record != 0) {
+        char *nested = ((func_80229A54_S2 *)(record))->unk5D8;
+        if (((func_8022C54C_S3 *)(nested))->unk90 == 0) {
+            count += 1;
+        }
+        record = ((func_80229A54_S2 *)(record))->unk16E0;
+    }
+    return count;
+}
+
+s32 func_8022C650_de(char *object) {
+    char *record = ((func_802285C4_S1 *)(object))->unk20;
+    s32 count = 0;
+    while (record != 0) {
+        if (((func_8022C640_S2 *)(record))->unk5D0 != 0) {
+            count += 1;
+        }
+        record = ((func_8022C640_S2 *)(record))->unk16E0;
+    }
+    return count;
 }

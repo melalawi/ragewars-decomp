@@ -1,5 +1,8 @@
-#include "span_1000/code_8029193C.h"
+#include "span_1000/code_80293A04.h"
 #include "types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
 
 /* Requests a switch of the session into mode 0x14: when the pending 0x1000 flag is set outside modes 0xB and 0xC and a target is given it records that target with phase 2 and clears the flags; otherwise, once func_80245814_de accepts the flags, it saves the current mode, enters mode 0x14 with the given argument at phase 1, and sets the timer when func_80264B6C_de allows. */
 
@@ -34,6 +37,127 @@ void func_80293A20_de(Session_func_80293A20_de *session, s32 arg1, s32 target) {
         session->previousMode = mode;
         if (func_80264B6C_de() != 0) {
             session->timer = (1.0f);
+        }
+    }
+}
+
+/* Calls cleanup functions on a game state and optionally transitions control state when conditions change. */
+
+
+
+extern s32 D_8010B190_de;
+extern s32 D_8014288C;
+
+extern void 
+#if defined(VERSION_EU)
+func_802A2344_eu
+#elif defined(VERSION_EU_X)
+func_802A2374_eu_x
+#elif defined(VERSION_US) || defined(VERSION_US_REV1)
+func_802A2164_us
+#else
+func_802A2224_de
+#endif
+(void);
+extern void func_80298368_de(s32 arg0);
+extern void func_8040C428_de(s32 arg0);
+extern void func_80293790_de(void *arg0, s32 arg1);
+extern void func_80286080_de(void *arg0);
+extern void func_802394B4_de(void *arg0);
+extern void func_802AA7A4_de(void *arg0);
+extern void func_80294F1C_us_rev1(void);
+extern void func_80293394_de(void *arg0);
+
+
+
+
+
+void func_80293B28_de(void *arg0) {
+    void *state;
+    f32 value;
+
+    state = arg0;
+    if (D_8014288C == 1) {
+        value = ((func_80293B0C_S1 *)(state))->unk26DB0.v0;
+        if (D_800C54A4_de < value) {
+            if (D_800C54A8_de < value) {
+                D_8014288C = 0;
+                
+#if defined(VERSION_EU)
+func_802A2344_eu
+#elif defined(VERSION_EU_X)
+func_802A2374_eu_x
+#elif defined(VERSION_US) || defined(VERSION_US_REV1)
+func_802A2164_us
+#else
+func_802A2224_de
+#endif
+();
+                func_80298368_de(2);
+                func_8040C428_de(0);
+                func_80293790_de(state, 1);
+                ((func_80293B0C_S1 *)(state))->unk26DB0.v1 = 0;
+            } else if (D_8010B190_de != 0) {
+                D_8014288C = 0;
+                
+#if defined(VERSION_EU)
+func_802A2344_eu
+#elif defined(VERSION_EU_X)
+func_802A2374_eu_x
+#elif defined(VERSION_US) || defined(VERSION_US_REV1)
+func_802A2164_us
+#else
+func_802A2224_de
+#endif
+();
+                func_80298368_de(2);
+                func_80293790_de(state, 8);
+                ((func_80293B0C_S1 *)(state))->unk26DB0.v1 = 0;
+            }
+        }
+    }
+    func_80286080_de((char *)state + 0x3C8);
+    func_802394B4_de((char *)state + 0x255C8);
+    func_802AA7A4_de((char *)state + 0x1BCF8);
+    /* Only us-rev1 makes this call: us, eu, eu-x and de go straight on to func_80293394_de, two
+       instructions shorter, as each cartridge's own bytes show. */
+#ifdef VERSION_US_REV1
+    func_80294F1C_us_rev1();
+#endif
+    func_80293394_de(state);
+}
+
+extern Vector4f D_801427E0;
+extern f32 D_800CD738;
+
+
+
+
+
+
+
+
+void func_80293C34_de(void *arg0) {
+    f32 t1;
+    f32 t2;
+    f32 t3;
+
+    if (((func_80293C20_S1 *)(arg0))->unk26DD4 == 0) {
+        t1 = D_801427E0.x + D_800CD738;
+        D_801427E0.x = t1;
+        if (D_800C54AC_de <= t1) {
+            t2 = D_801427E0.y + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
+            D_801427E0.x = t1 - D_800C54AC_de;
+            D_801427E0.y = t2;
+            if (D_800C54B4_de <= t2) {
+                t3 = D_801427E0.z + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
+                D_801427E0.y = t2 - D_800C54B4_de;
+                D_801427E0.z = t3;
+                if (D_800C54B4_de <= t3) {
+                    D_801427E0.z = t3 - D_800C54B4_de;
+                    D_801427E0.w = D_801427E0.w + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
+                }
+            }
         }
     }
 }

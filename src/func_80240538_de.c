@@ -1,4 +1,7 @@
-#include "span_1000/code_8023ECAC.h"
+#include "span_1000/code_8023EEF0.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_06e4f7ef1f9e.h"
+
 /** Expand six source floats into the fixed 24-float vertex pattern. */
 void func_80240538_de(float *s, float *d) {
     d[0]=s[0]; d[1]=s[1]; d[2]=s[2]; d[3]=s[3];
@@ -7,4 +10,16 @@ void func_80240538_de(float *s, float *d) {
     d[12]=s[0]; d[13]=s[4]; d[14]=s[2]; d[15]=s[3];
     d[16]=s[4]; d[17]=s[2]; d[18]=s[3]; d[19]=s[4];
     d[20]=s[5]; d[21]=s[0]; d[22]=s[4]; d[23]=s[5];
+}
+
+/** Swap two eight-byte pairs. */
+void func_802405FC_de(struct Shape_func_802764D4_de_2 *left, struct Shape_func_802764D4_de_2 *right) {
+    struct Shape_func_802764D4_de_2 temporary = *left;
+    *left = *right;
+    *right = temporary;
+}
+
+/** Order two records by their scalar at offset four. */
+int func_80240638_de(void *left, void *right) {
+    return ((func_802077F4_S2 *)(left))->unk4 < ((func_802077F4_S2 *)(right))->unk4 ? -1 : 1;
 }

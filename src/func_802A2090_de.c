@@ -1,12 +1,8 @@
-#include "span_1000/code_80299FC4.h"
-#include "span_1000/code_802A26F8.h"
-#include "span_1000/code_802A31F4.h"
-#include "span_16E000/code_8040EBC8.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80297CD0.h"
+#include "span_1000/code_802A1264.h"
+#include "span_1000/code_802A208C.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
-
-
-
 
 extern f32 D_800CD738;
 extern s32 D_800CDA20;
@@ -73,5 +69,22 @@ mode_done:
         if (D_800CDA20 == 1) {
             func_802A2434_de();
         }
+    }
+}
+
+#if defined(VERSION_DE)
+#define func_802A2164_us func_802A2224_de
+#elif defined(VERSION_EU)
+#define func_802A2164_us func_802A2344_eu
+#elif defined(VERSION_EU_X)
+#define func_802A2164_us func_802A2374_eu_x
+#endif
+s32 func_802A2164_us();
+s32 func_8041EA70_de();
+extern s32 D_800CDA28;
+void func_802A21F4_de(void) {
+    if (D_800CDA28 == 0) {
+        func_8041EA70_de();
+        func_802A2164_us();
     }
 }
