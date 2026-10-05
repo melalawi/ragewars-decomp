@@ -1,13 +1,8 @@
 #include "span_1000/code_802A8A94.h"
 #include "types.h"
-typedef s32 M2C_UNK;
 
-
-
-
-
-M2C_UNK func_802AA70C_de(void *, M2C_UNK *);
-extern M2C_UNK D_800CDEC8;
+s32 func_802AA70C_de(void *, s32 *);
+extern s32 D_800CDEC8;
 void func_802AA760_de(void *arg0, s32 arg1, s32 arg2) {
     (((struct IntegerState90 *) ((s8 *) arg0))->unk_88) = arg1;
     (((struct IntegerState90 *) ((s8 *) arg0))->unk_84) = arg2;
