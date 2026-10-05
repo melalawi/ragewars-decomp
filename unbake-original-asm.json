@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "functions": {
+    "func_80200400_de": {
+      "rule": "cop0"
+    }
+  }
+}

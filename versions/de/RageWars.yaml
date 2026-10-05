@@ -44,7 +44,7 @@ segments:
     align: 1
     subalign: 1
     subsegments:
-      - [0x1000, asm, "func_80200400_de"]
+      - [0x1000, hasm, "func_80200400_de"]
       - [0x1100, asm, "func_80200500_de"]
       - [0x1138, asm, "func_80200538_de"]
       - [0x1168, asm, "func_80200568_de"]

@@ -1,18 +1,18 @@
 {
   "measures": {
-    "fuzzy_match_percent": 53.64697,
+    "fuzzy_match_percent": 53.67014,
     "total_code": 1104972,
-    "matched_code": 592772,
-    "matched_code_percent": 53.645885,
+    "matched_code": 593028,
+    "matched_code_percent": 53.669052,
     "matched_data_percent": 100.0,
     "total_functions": 4443,
-    "matched_functions": 3453,
-    "matched_functions_percent": 77.71776,
-    "complete_code": 592772,
-    "complete_code_percent": 53.645885,
+    "matched_functions": 3454,
+    "matched_functions_percent": 77.740265,
+    "complete_code": 593028,
+    "complete_code_percent": 53.669052,
     "complete_data_percent": 100.0,
     "total_units": 4443,
-    "complete_units": 3453
+    "complete_units": 3454
   },
   "units": [
     {
@@ -22,13 +22,22 @@
         "matched_data_percent": 100.0,
         "total_functions": 1,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "256",
+        "matched_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "256",
+        "complete_code_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
           "size": "256",
-          "metadata": {}
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -36,11 +45,16 @@
           "name": "func_80200400_de",
           "size": "256",
           "metadata": {},
-          "address": "0"
+          "address": "0",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
-        "complete": false
+        "complete": true,
+        "source_path": "src/func_80200400_de.s",
+        "progress_categories": [
+          "original_asm"
+        ]
       }
     },
     {
@@ -172786,14 +172800,14 @@
       "name": "Original asm",
       "measures": {
         "total_code": 1104972,
-        "matched_code": 0,
-        "matched_code_percent": 0.0,
-        "complete_code": 0,
-        "complete_code_percent": 0.0,
+        "matched_code": 256,
+        "matched_code_percent": 0.023168009,
+        "complete_code": 256,
+        "complete_code_percent": 0.023168009,
         "total_functions": 4443,
-        "matched_functions": 0,
+        "matched_functions": 1,
         "total_units": 4443,
-        "complete_units": 0
+        "complete_units": 1
       }
     }
   ],
