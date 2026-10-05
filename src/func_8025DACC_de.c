@@ -29,13 +29,7 @@ void func_8025DB44_de(void *arg0) {
     ((func_8025DB64_S1 *)(arg0))->unk38 = 0;
 }
 
-typedef s32 M2C_UNK;
-
-
-
-
-
-M2C_UNK func_802AFF90_de(s32);
+s32 func_802AFF90_de(s32);
 void func_8025DB58_de(s32 a) {
     (((struct IntegerState2C_2 *) ((s8 *) a))->unk_28) = -1;
     func_802AFF90_de((((struct IntegerState2C_2 *) ((s8 *) a))->unk_14));
