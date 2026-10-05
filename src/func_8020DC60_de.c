@@ -1,13 +1,8 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8020D370.h"
 #include "types.h"
-typedef s32 M2C_UNK;
 
-
-
-
-
-M2C_UNK func_80209874_de(void *, s32);
+s32 func_80209874_de(void *, s32);
 s32 func_8020DD04_de(s32);
 void func_8020DC60_de(void *arg0) {
     s32 temp_v0;
