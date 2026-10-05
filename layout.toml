@@ -1389,7 +1389,7 @@ name = "code_8042F988"
 segment = "span_16E000"
 evidence = "inferred"
 members = ["func_8042F7A8_de", "func_8042F91C_de", "func_8042FB48_de", "func_8042FF40_de", "func_80430028_de", "func_80430118_de", "func_804303F8_de", "func_804306D8_de", "func_80432158_de", "func_804322AC_de", "func_80433398_de", "func_80433610_de", "func_80433914_de", "func_80433BCC_de", "func_80433D38_de", "func_80433EA0_de", "func_80434250_de", "func_80434428_de", "func_80434638_de", "func_80434750_de", "func_804347CC_de", "func_8043497C_de", "func_80434B08_de", "func_80434C2C_de"]
-split = ["func_80430028_de", "func_80433BCC_de", "func_80433D38_de", "func_80434750_de", "func_804347CC_de", "func_8043497C_de", "func_80434B08_de", "func_80434C2C_de"]
+split = ["func_80430028_de", "func_80433BCC_de", "func_80433D38_de", "func_80434750_de", "func_804347CC_de", "func_8043497C_de", "func_80434B08_de", "func_80434C2C_de", "func_80432158_de"]
 signals = ["callee", "chain"]
 
 [[group]]
