@@ -34,15 +34,6 @@ extern void func_80255D70_de(void *, s32, s32);
 extern s32 func_80255CB8_de(void *, s32);
 extern s32 func_80255D14_de(void *, s32);
 
-
-
-
-
-
-
-
-
-
 void func_80284758_de(void *arg0, void *arg1)
 {
     void *current;
@@ -80,12 +71,7 @@ s32 func_8028480C_de(s32 arg0) {
     return 0;
 }
 
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-M2C_UNK func_80274564_de();
+s32 func_80274564_de();
 void func_80284870_de(f32 arg0) {
     if (arg0 != 0.0f) {
         func_80274564_de();
