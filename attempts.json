@@ -117,6 +117,19 @@
       "exact": true,
       "minutes": 0.02
     },
+    "func_8022B5C0_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 76,
+      "exact": true,
+      "minutes": 0.02
+    },
     "func_8022D164_de": {
       "attempts": 1,
       "best": {
@@ -192,6 +205,32 @@
         "us-rev1": 100.0
       },
       "bytes": 44,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_80239C9C_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 68,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_8023B8AC_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 76,
       "exact": true,
       "minutes": 0.02
     },
@@ -370,6 +409,19 @@
         "us-rev1": 100.0
       },
       "bytes": 56,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_80250C2C_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 88,
       "exact": true,
       "minutes": 0.02
     },
@@ -931,6 +983,32 @@
       "exact": true,
       "minutes": 0.02
     },
+    "func_802A100C_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 68,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_802A1114_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 68,
+      "exact": true,
+      "minutes": 0.02
+    },
     "func_802A17C4_de": {
       "attempts": 1,
       "best": {
@@ -970,6 +1048,58 @@
       "exact": true,
       "minutes": 0.02
     },
+    "func_802A2320_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 64,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_802A5680_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 68,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_802A5734_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 76,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_802A5780_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 88,
+      "exact": true,
+      "minutes": 0.02
+    },
     "func_802A5A24_de": {
       "attempts": 1,
       "best": {
@@ -1006,6 +1136,45 @@
         "us-rev1": 100.0
       },
       "bytes": 52,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_802B3C3C_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 64,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_802B4454_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 92,
+      "exact": true,
+      "minutes": 0.02
+    },
+    "func_802B44B0_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 92,
       "exact": true,
       "minutes": 0.02
     },
