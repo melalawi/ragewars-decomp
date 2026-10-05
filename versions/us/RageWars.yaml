@@ -212,7 +212,6 @@ segments:
       - [0x8B90, c, "func_80207F90_de"]
       - [0x8BA0, c, "func_80207FA0_de"]
       - [0x8BC4, c, "func_80207FC4_de"]
-      - [0x8BE4, c, "func_80207FE4_de"]
       - [0x8BF8, asm, "func_80207FF8_us"]
       - [0x8C00, data, "retained_8C00"]
       - [0x8D58, c, "func_80208158_de"]

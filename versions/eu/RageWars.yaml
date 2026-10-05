@@ -215,7 +215,6 @@ segments:
       - [0x8BB0, c, "func_80207F90_de"]
       - [0x8BC0, c, "func_80207FA0_de"]
       - [0x8BE4, c, "func_80207FC4_de"]
-      - [0x8C04, c, "func_80207FE4_de"]
       - [0x8C18, asm, "func_80208018_eu"]
       - [0x8C20, c, "func_80208000_de"]
       - [0x8D78, c, "func_80208158_de"]
