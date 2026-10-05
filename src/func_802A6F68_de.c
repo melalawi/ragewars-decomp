@@ -9,9 +9,6 @@
 /* Clears a record: its four 0x38-byte entries through an inline per-entry clear, its two leading
    flag bytes and trailing words, and sets the word at 0xE6 to -5. */
 
-
-
-
 static inline void clear_entry(Entry_func_802A6F68_de *e) {
     e->unk4 = 0;
     e->unk0 = 0;
@@ -33,14 +30,6 @@ void func_802A6F68_de(Record_func_802A6F68_de *rec) {
 }
 
 /* Finds or allocates one of four records and updates its parameters. */
-
-
-
-
-
-
-
-
 
 s32 func_802A6FB8_de(char *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, f32 arg5, s32 arg6, s32 arg7, s32 arg8) {
     s32 var_a1;
@@ -94,14 +83,6 @@ loop_7:
     return 1;
 }
 
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-
-
-
 s32 func_802A7098_de(void *arg0)
 {
   s32 var_a1;
@@ -123,9 +104,6 @@ s32 func_802A7098_de(void *arg0)
 }
 
 /* Moves a menu's cursor at 0xE4 over its four 0x38-byte entries, forward when arg1 is zero and backward otherwise, wrapping around and skipping entries whose word at 0x4 is zero; returns the entry landed on. */
-
-
-
 
 s32 func_802A70D4_de(Menu_func_802A70D4_de *menu, s32 backward) {
     u16 cursor;
@@ -171,8 +149,6 @@ void func_802A7180_de(void *arg0, void *arg1) {
 
 /* Soft-resets the game: checks the "systembootdone" marker (copied from D_800C5F10_de and zero-padded with the memset func_802A001C_de) through func_80293440_de (recording the result in D_801470B0 and re-arming it through func_802934C0_de), and on a cold boot copies the resident code and data back from the cartridge word by word after each PI idle wait, then clears the BSS from D_800E4000 to D_80166000, in both passes skipping the marker, its flag and, when not cold booting, the preserved save, settings and pad regions; finally reinitialises through func_802BAE40_de and func_80292F24_de. */
 
-
-
 extern Marker_func_802A71C0_de D_800C5F10_de;
 extern void func_802A001C_de(char *dst, s32 value, s32 size);
 extern char D_800CDD10;
@@ -185,8 +161,6 @@ extern s32 D_800E4000;
 extern s32 D_80166000;
 extern s32 func_80293440_de(char *marker, char *name);
 extern void func_802934C0_de(char *marker, char *name);
-
-
 
 static inline s32 is_restorable(u32 address) {
     if (address >= (u32)&D_800CDD10 && address < (u32)&D_800CDD10 + 0x10) {
