@@ -1,6 +1,7 @@
 #include "span_1000/code_80254CE4.h"
 #include "types.h"
-#define M2C_FIELD(base, type, offset) (*(type)((char *)(base) + (offset)))
+#include "common/draft_fields_func_80255630_de.h"
+
 
 #define NULL ((void *)0)
 
@@ -22,72 +23,72 @@ s32 func_80255630_de(s8 *arg0, void *arg1, s32 arg2) {
     void *var_a3;
 
     temp_a2 = (arg2 + 0x2F) & ~0xF;
-    temp_v1 = M2C_FIELD(arg0, void **, 8);
+    temp_v1 = ((struct Measured_func_80255630_de_23f0e208adfb *)(arg0))->value;
     if (temp_v1 != NULL) {
         var_a3 = temp_v1;
-        while (M2C_FIELD(var_a3, u32 *, 4) != 0) {
-            temp_v1_2 = M2C_FIELD(var_a3, u32 *, 4);
+        while (((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value != 0) {
+            temp_v1_2 = ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value;
             if (temp_v1_2 >= (u32) arg1) {
                 break;
             }
             var_a3 = (void *) temp_v1_2;
         }
-        temp_v0 = var_a3 + M2C_FIELD(var_a3, s32 *, 0x10);
-        temp_t1 = temp_v0 + M2C_FIELD(var_a3, s32 *, 0x14);
+        temp_v0 = var_a3 + ((struct Measured_func_80255630_de_615f24e2ba64 *)(var_a3))->value;
+        temp_t1 = temp_v0 + ((struct Measured_func_80255630_de_ac82866df9b6 *)(var_a3))->value;
         temp_v1_3 = arg1 - 0x20;
         temp_t0 = temp_v1_3 + temp_a2;
         if ((u32) temp_v1_3 >= (u32) temp_v0) {
             if ((u32) temp_t1 >= (u32) temp_t0) {
                 s32 temp_v0_2 = temp_t1 - temp_t0;
 
-                M2C_FIELD(temp_v1_3, s32 *, 0x10) = temp_a2;
-                M2C_FIELD(temp_v1_3, s32 *, 0x14) = temp_v0_2;
+                ((struct Measured_func_80255630_de_615f24e2ba64 *)(temp_v1_3))->value = temp_a2;
+                ((struct Measured_func_80255630_de_ac82866df9b6 *)(temp_v1_3))->value = temp_v0_2;
                 if (temp_v0_2 != 0) {
-                    M2C_FIELD(arg1, void **, -0x20) = var_a3;
-                    temp_a2_2 = M2C_FIELD(var_a3, u32 *, 4);
-                    M2C_FIELD(temp_v1_3, u32 *, 4) = temp_a2_2;
-                    if (M2C_FIELD(var_a3, u32 *, 4) != 0) {
+                    ((struct Measured_func_80255630_de_971fdd756949 *)(arg1))[-1].value = var_a3;
+                    temp_a2_2 = ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value;
+                    ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(temp_v1_3))->value = temp_a2_2;
+                    if (((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value != 0) {
                         *(void **) temp_a2_2 = temp_v1_3;
                     }
-                    M2C_FIELD(var_a3, u32 *, 4) = (u32) temp_v1_3;
-                    if (M2C_FIELD(arg0, void **, 0xC) == var_a3) {
-                        M2C_FIELD(arg0, void **, 0xC) = temp_v1_3;
+                    ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value = (u32) temp_v1_3;
+                    if (((struct Measured_func_80255630_de_50c502a7d220 *)(arg0))->value == var_a3) {
+                        ((struct Measured_func_80255630_de_50c502a7d220 *)(arg0))->value = temp_v1_3;
                     }
                 } else {
-                    M2C_FIELD(arg1, void **, -0x20) = NULL;
-                    M2C_FIELD(temp_v1_3, u32 *, 4) = 0U;
+                    ((struct Measured_func_80255630_de_971fdd756949 *)(arg1))[-1].value = NULL;
+                    ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(temp_v1_3))->value = 0U;
                 }
-                temp_v0_3 = temp_v1_3 - (var_a3 + M2C_FIELD(var_a3, s32 *, 0x10));
-                M2C_FIELD(var_a3, s32 *, 0x14) = temp_v0_3;
+                temp_v0_3 = temp_v1_3 - (var_a3 + ((struct Measured_func_80255630_de_615f24e2ba64 *)(var_a3))->value);
+                ((struct Measured_func_80255630_de_ac82866df9b6 *)(var_a3))->value = temp_v0_3;
                 if (temp_v0_3 == 0) {
-                    temp_a2_3 = M2C_FIELD(var_a3, void **, 0);
+                    temp_a2_3 = ((struct Measured_func_80255630_de_221ae654351b *)(var_a3))->value;
                     if (temp_a2_3 != NULL) {
-                        M2C_FIELD(temp_a2_3, u32 *, 4) = M2C_FIELD(var_a3, u32 *, 4);
+                        ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(temp_a2_3))->value = ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value;
                     }
-                    temp_a2_4 = M2C_FIELD(var_a3, u32 *, 4);
+                    temp_a2_4 = ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value;
                     if (temp_a2_4 != 0) {
-                        *(void **) temp_a2_4 = M2C_FIELD(var_a3, void **, 0);
+                        *(void **) temp_a2_4 = ((struct Measured_func_80255630_de_221ae654351b *)(var_a3))->value;
                     }
-                    if (M2C_FIELD(arg0, void **, 8) == var_a3) {
-                        M2C_FIELD(arg0, void **, 8) = M2C_FIELD(var_a3, void **, 4);
+                    if (((struct Measured_func_80255630_de_23f0e208adfb *)(arg0))->value == var_a3) {
+                        ((struct Measured_func_80255630_de_23f0e208adfb *)(arg0))->value = ((struct Measured_func_80255630_de_034b69863103 *)(var_a3))->value;
                     }
-                    if (M2C_FIELD(arg0, void **, 0xC) == var_a3) {
-                        var_v0 = M2C_FIELD(var_a3, u32 *, 4);
+                    if (((struct Measured_func_80255630_de_50c502a7d220 *)(arg0))->value == var_a3) {
+                        var_v0 = ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value;
                         if (var_v0 == 0) {
-                            var_v0 = (u32) M2C_FIELD(var_a3, void **, 0);
+                            var_v0 = (u32) ((struct Measured_func_80255630_de_221ae654351b *)(var_a3))->value;
                         }
-                        M2C_FIELD(arg0, void **, 0xC) = (void *) var_v0;
+                        ((struct Measured_func_80255630_de_50c502a7d220 *)(arg0))->value = (void *) var_v0;
                     }
-                    M2C_FIELD(var_a3, void **, 0) = NULL;
-                    M2C_FIELD(var_a3, u32 *, 4) = 0U;
+                    ((struct Measured_func_80255630_de_221ae654351b *)(var_a3))->value = NULL;
+                    ((struct Measured_func_80255630_de_2dd2dd1d01e8 *)(var_a3))->value = 0U;
                 }
-                M2C_FIELD(temp_v1_3, void **, 8) = var_a3;
-                temp_a0 = M2C_FIELD(var_a3, void **, 0xC);
-                M2C_FIELD(temp_v1_3, void **, 0xC) = temp_a0;
-                if (M2C_FIELD(var_a3, void **, 0xC) != NULL) {
-                    M2C_FIELD(temp_a0, void **, 8) = temp_v1_3;
+                ((struct Measured_func_80255630_de_23f0e208adfb *)(temp_v1_3))->value = var_a3;
+                temp_a0 = ((struct Measured_func_80255630_de_50c502a7d220 *)(var_a3))->value;
+                ((struct Measured_func_80255630_de_50c502a7d220 *)(temp_v1_3))->value = temp_a0;
+                if (((struct Measured_func_80255630_de_50c502a7d220 *)(var_a3))->value != NULL) {
+                    ((struct Measured_func_80255630_de_23f0e208adfb *)(temp_a0))->value = temp_v1_3;
                 }
-                M2C_FIELD(var_a3, void **, 0xC) = temp_v1_3;
+                ((struct Measured_func_80255630_de_50c502a7d220 *)(var_a3))->value = temp_v1_3;
                 return (s32) arg1;
             }
         }
