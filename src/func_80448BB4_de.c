@@ -1,4 +1,4 @@
-#include "span_16E000/code_80447140.h"
+#include "span_16E000/code_80447BB0.h"
 #include "types.h"
 
 /* Sums the fourteen halfwords of a 0x1C-byte block into two checksums: the plain sum and the sum

@@ -1,8 +1,8 @@
 #include "common/types_06e4f7ef1f9e.h"
-#include "span_1000/code_80291054.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802646F4.h"
+#include "span_1000/code_80291054.h"
+#include "types.h"
 
 extern func_802077F4_S2 D_800C5494;
 extern int func_80264B6C_de(void);

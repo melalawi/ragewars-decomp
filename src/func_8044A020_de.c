@@ -1,4 +1,4 @@
-#include "span_16E000/code_80449968.h"
+#include "span_16E000/code_80447BB0.h"
 #include "types.h"
 
 /* Sets the byte at offset 0x78 of the object at 0x5D8 of an actor, calls func_80448EF4_de with the

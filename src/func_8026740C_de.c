@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8026565C.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802661FC.h"
 /* Forwards the actor, event value and three-component input with a zero final flag. */
 
 extern void func_80216288_de(void *,int,Triple,int);

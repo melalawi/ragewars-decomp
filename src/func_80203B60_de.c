@@ -1,5 +1,5 @@
-#include "span_1000/code_80203B1C.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_802022E0.h"
 #include "types.h"
 
 extern s32 func_802170A0_de(void *arg0, void *arg1, s32 arg2, s32 arg3, s32 arg4);

@@ -1,5 +1,5 @@
-#include "span_16E000/code_80435010.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 
 /* When slot i of the 12-byte records at offset 0x2DF8 of the table D_800E54A4 points to is set,

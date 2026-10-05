@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80252714.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802536F4.h"
 #include "types.h"
 /* Allocates a four-byte probe from func_8025193C_de to read a count, frees it under the D_8010515C lock, then allocates count*4+15 rounded to eight bytes and stores its first word through arg1, returning the allocation. Adapted from func_802540F4_de with the null checks removed, tag 0x1B and flag 1 passed as the fifth and ninth arguments, and the constant 1 held in a local changed. */
 

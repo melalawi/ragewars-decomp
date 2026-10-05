@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80219480.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802192C0.h"
 #include "types.h"
 #ifndef FUNC_8021A78C_DE
 #define FUNC_8021A78C_DE

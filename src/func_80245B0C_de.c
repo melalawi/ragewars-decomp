@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80245804.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80245980.h"
 #include "types.h"
 
 /* Returns the state object's word at its measured value field. */

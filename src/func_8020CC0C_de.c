@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8020A95C.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8020AF9C.h"
 /** Return the index of the link joining two nodes, accepting reversed links of two-way types, or -1. */
 
 

@@ -1,3 +1,4 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80403BCC.h"
 #include "types.h"
 /* Deletes note index of the Controller Pak on channel ch: refuses with -2 unless the pak state is

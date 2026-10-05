@@ -1,4 +1,4 @@
-#include "span_16E000/code_804288E0.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 
 /* Calls func_8029973C_de and func_804273D4_de, passes the two words after the identifier in the
@@ -11,7 +11,7 @@
 extern struct State_func_80428E10_de *D_800E0640_de;
 extern struct Entry_func_80428E10_de D_800E0644[];
 extern void func_8029973C_de();
-extern void func_804273D4_de();
+
 extern void func_8042E9A0_de(s32, s32);
 extern void func_8042E988_de(s32);
 

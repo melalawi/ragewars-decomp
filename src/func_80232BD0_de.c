@@ -1,6 +1,5 @@
-#include "span_1000/code_80232B44.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80231F5C.h"
 #include "types.h"
 
 extern s32 func_80222AA4_de(void *arg0, s16 arg1);

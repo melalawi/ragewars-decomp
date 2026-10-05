@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80444F9C.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80444EC0.h"
 #include "types.h"
 /* Edits a byte, integer, or float option and propagates it to the active resource records. */
 #define NULL ((void *)0)

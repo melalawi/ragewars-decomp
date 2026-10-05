@@ -1,4 +1,4 @@
-#include "span_1000/code_80274A24.h"
+#include "span_1000/code_8027451C.h"
 /* Builds a look-at view matrix (ultralib guLookAtF) from an eye, a target and an up vector,
    substituting a fallback x component when the up vector is parallel to the view direction.
    Adapted from ultralib gu/lookat.c with single-precision const extern constants, the degenerate check and the 1.0 held in a temporary. */

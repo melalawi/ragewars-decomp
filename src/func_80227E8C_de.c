@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80222E80.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80225D10.h"
 #include "types.h"
 /* Advances an elimination round when rule D_80146918 is on and not paused (func_80245784_de,
    func_80245798_de): counts the players still in, clears D_800F7D10 while one is waiting, then by the

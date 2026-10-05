@@ -1,5 +1,4 @@
-#include "span_1000/code_8023940C.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802393F4.h"
 #include "types.h"
 
 /* Evaluates a wave: kind 1 returns func_802B7130_de of the phase at 0x10 scaled by D_800C865C, times

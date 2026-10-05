@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802BC630.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802B7B80.h"
 #include "types.h"
 /* osMotorInit, drafted from ultralib src/io/motor.c (the branch before 2.0J) with its static
    _MakeMotorData, which this library inlines: _MotorStartData, _motorstartbuf, _MotorStopData and _motorstopbuf are

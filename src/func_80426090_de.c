@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80425BC0.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804251F4.h"
 #include "types.h"
 /* Marks available inventory entries with their slot indices. */
 #define NULL ((void *)0)

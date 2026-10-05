@@ -1,8 +1,8 @@
 #include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80271B18.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
-#include "common/types_1dc8418c21db.h"
 
 extern f32 func_802B72B0_de(f32);
 extern char D_800C48A8_de;

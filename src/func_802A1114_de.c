@@ -1,4 +1,4 @@
-#include "span_1000/code_802A1ED4.h"
+#include "span_1000/code_802A0AC4.h"
 #include "types.h"
 typedef s32 M2C_UNK;
 

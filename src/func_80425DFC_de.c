@@ -1,4 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
+#include "span_16E000/code_804251F4.h"
 #include "types.h"
 /* Starts the ambient track for the current stage D_8015402C (stage 4, 9, 22 and 35 select tracks
    0 to 3): returns -1 when the stage has no track or when func_80265650_de reports the slot busy,

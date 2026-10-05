@@ -1,5 +1,4 @@
-#include "span_1000/code_80210EFC.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802106E0.h"
 #include "types.h"
 
 /* Resets a player's eight pairs of levels at offsets 0x1D0 and 0x1F0 to D_800C70F0, clears the word

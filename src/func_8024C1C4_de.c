@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8024B644.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8024BA6C.h"
 #include "types.h"
 
 /* Spawns the standing effects of an animation for an object: every event whose effect id is 6 or 7 is placed by transforming its local point through the object's matrix at 0x74 and spawned through func_80265E10_de with its parameters. */

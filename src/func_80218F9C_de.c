@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8021762C.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80217388.h"
 /* Lays out the four team choices around the open menu and draws their icons. */
 
 

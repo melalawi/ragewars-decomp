@@ -1,9 +1,9 @@
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8026AC38.h"
 #include "abi.h"
 #include "gbi.h"
 #include "types.h"
 #include "n64sdk.h"
-#include "common/types_8a8189af7b05.h"
 
 /* Draws every part of a model resource with the shared material D_80137218 when the frame's command buffer still has 3000 commands free and func_80269A80_de accepts the material: sets the render mode, selects blend 2 through func_80268CE0_de, loads the model matrix (or sets it as segment 1), loads an optional two-light block, registers the resource, sets segment 2 to the given texture base or the model's own and emits each part's display list. Adapted from func_8026DF7C_de with the render mode, blend and light commands added and the per-part lighting call removed. */
 

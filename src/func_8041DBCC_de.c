@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041DBA0.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8041BEA8.h"
 #include "types.h"
 /* Enables mode 1 through func_802A23C4_de, places the menu model at (17, -10, -50) with uniform scale 0.14, zero rotation and a (0, 5, 0) offset, then issues request 0xE78 through func_8025DF34_de; returns zero. */
 

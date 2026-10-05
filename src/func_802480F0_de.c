@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80245D38.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80246E34.h"
 #include "types.h"
 /* Sways a model part: from the frame count D_800D2978, a per-part phase ((flags & 0x38) * 50, plus 40
  * unless flag 4 is set) and the part's time divided by 113, it reads a 120-step sine table at D_800D0720 to

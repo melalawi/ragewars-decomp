@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041A0AC.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_16E000/code_8041A4B0.h"
 #include "types.h"
 
 /* Stores a mode at offset 0x58 of an object and plays sound 0xE77 for mode 1 or 0xE76 for mode 2

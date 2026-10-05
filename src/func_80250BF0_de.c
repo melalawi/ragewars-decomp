@@ -1,5 +1,5 @@
-#include "span_1000/code_8024F944.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802508E0.h"
 
 
 /** Advance the wrapping counter D_800D0910, resetting to 0x380000 at 0x3FFFFF. */

@@ -1,4 +1,4 @@
-#include "span_1000/code_8020F2A8.h"
+#include "span_1000/code_8020EAE0.h"
 #include "types.h"
 
 /** Return whether arg0 is within the range [0xBC4, 0xBCA). */

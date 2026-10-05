@@ -1,4 +1,4 @@
-#include "span_1000/code_802B510C.h"
+#include "span_1000/code_802B0388.h"
 #include "types.h"
 /* __lookupVoice, drafted from ultralib src/audio/seqplayer.c: walk the sequence player's allocated
    voice list for the voice playing a key on a channel that is not being released. */

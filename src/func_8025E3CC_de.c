@@ -1,4 +1,4 @@
-#include "span_1000/code_8025E35C.h"
+#include "span_1000/code_8025E280.h"
 #include "types.h"
 extern s32 D_80108080;
 void func_8025E3CC_de(void) {

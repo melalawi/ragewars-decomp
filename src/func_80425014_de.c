@@ -1,4 +1,4 @@
-#include "span_16E000/code_804233DC.h"
+#include "span_16E000/code_804251F4.h"
 #include "types.h"
 
 /* Applies event *D_800E4680 to player record D_80102B00[index] once per D_8015402C: when that bit

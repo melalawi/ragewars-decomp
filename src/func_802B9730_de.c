@@ -1,6 +1,6 @@
+#include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_802B8DD0.h"
 #include "types.h"
-#include "common/types_06e4f7ef1f9e.h"
 
 extern PiTransfer802BE820 *D_800D4380[];
 

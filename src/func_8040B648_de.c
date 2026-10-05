@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8040AC98.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8040B45C.h"
 #include "types.h"
 /* Starts the configured action using the actor resource or the shared fallback. */
 #define NULL ((void *)0)

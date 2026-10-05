@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804434BC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80443868.h"
 /* When team sync is enabled, copies a player's team flag from its actor (byte 0x8F of the record at
    0x5D8) into D_801468A0 if it is 1; then resumes the script D_8011FAC0 through func_8044DD50_de in mode
    1 or else clears the actor's word at 0x5D0; returns 1. Matched through a local pointer to

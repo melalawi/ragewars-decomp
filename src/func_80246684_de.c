@@ -1,4 +1,4 @@
-#include "span_1000/code_80245D38.h"
+#include "span_1000/code_80245980.h"
 extern int func_8024E968_de(void *record);
 
 /** Thin wrapper around func_8024E968_de, discarding its result. */

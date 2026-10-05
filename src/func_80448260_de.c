@@ -1,5 +1,5 @@
-#include "span_16E000/code_80447140.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80447BB0.h"
 #include "types.h"
 /* __osRepairPackId, drafted from ultralib src/io/contpfs.c (2.0I branch): probe how many banks the
    controller pak really has, build a fresh id from the damaged one, write it to all four id areas and

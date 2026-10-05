@@ -1,7 +1,7 @@
-#include "span_16E000/code_804379C8.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_16E000/code_804379C8.h"
+#include "types.h"
 
 /* Calls func_8029973C_de with the arguments it was given and returns zero. */
 extern void func_8029973C_de();

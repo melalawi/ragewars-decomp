@@ -1,5 +1,4 @@
-#include "span_1000/code_8025C67C.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8025C544.h"
 #include "types.h"
 /* Starts a random song from a group on a music player: picks one of the group's songs with equal weight, returning -1 when the group has none, records the group and song and takes the next request id, repeats the pick for the queued group, sets the volume to 0x40 and the speed from the given scale, then either stops the current song so it restarts (while starting or playing) or requests a start, and returns the request id. The picker and restart are inline helpers; the pick for the queued group is repeated with its result unused, as in the cartridge. */
 

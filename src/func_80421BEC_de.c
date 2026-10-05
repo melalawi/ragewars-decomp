@@ -1,5 +1,5 @@
-#include "span_16E000/code_80421A88.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80420E90.h"
 #include "types.h"
 /* Advances menu selection timing and dispatches the selected action. */
 

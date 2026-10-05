@@ -1,5 +1,5 @@
-#include "span_1000/code_8028FD24.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8028FC98.h"
 #include "types.h"
 #ifndef FUNC_802908C0_DE
 #define FUNC_802908C0_DE

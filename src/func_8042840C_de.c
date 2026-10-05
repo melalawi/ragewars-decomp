@@ -1,5 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
-#include "span_16E000/code_804288E0.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 /* Rebuilds the weapon menu for the player D_800E0640_de selects: clears it through func_80428700_de, then
    for each of the 0x16 weapon ids (excluding id 0) whose owned flag in D_80142208_de (offset 0x11C,

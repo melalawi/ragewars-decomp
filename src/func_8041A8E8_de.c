@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041A0AC.h"
+#include "span_16E000/code_8041A4B0.h"
 #include "types.h"
 
 /* Scrolls up: moves a scroll bar to the previous item through func_8041A6EC_de unless it is already

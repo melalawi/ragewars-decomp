@@ -1,5 +1,5 @@
-#include "span_16E000/code_80411FB8.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 /* Releases every UI resource slot whose entry is open, whose id is valid and whose retain count is zero, through func_80411AF0_de. */
 

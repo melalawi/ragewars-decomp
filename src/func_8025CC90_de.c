@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8025C67C.h"
-#include "span_1000/code_802C4604.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8025C544.h"
+#include "span_1000/code_802BE0D0.h"
 #include "types.h"
 /* Runs a music player's state machine on its channel: a start request loads the song's header and sequence from the song bank, records its tempo scale and volume, sets the sequence, clears the player queue, starts the sequence through func_802C00B0_de, then sets the channel's sample rate from the sequence rate over 22050, its tempo, priority, channel volume, master volume and plays it; a playing song that has ended is stopped and returns to idle or to the start state when it loops, and a stop request stops the sequencer. The state is unsigned with an empty case 0, and the rate and tempo factors are literals so the resident rodata keeps its order. */
 

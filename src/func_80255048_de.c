@@ -1,4 +1,4 @@
-#include "span_1000/code_8025477C.h"
+#include "span_1000/code_80254CE4.h"
 #include "types.h"
 
 /* Finds an evictable entry of a list: skips entries flagged 0x702 and returns the first one untouched for at least five ticks of D_80105180, remembering the first recently used candidate in *recent when that slot is still empty; returns null when none qualifies. */

@@ -1,6 +1,5 @@
-#include "span_1000/code_8024C444.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8024BA6C.h"
 #include "types.h"
 /* Converts the twelve used entries of a 4x4 float matrix to unsigned integers, splitting each pair into the high and low halfword arrays of a packed matrix and setting the final high word's low bit. Adapted from func_8027027C_de with the per-entry scale multiplies removed, the converted value scoped to each conversion block, and the D_800C8C70 thresholds changed. */
 

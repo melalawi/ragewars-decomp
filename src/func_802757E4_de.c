@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80274A24.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8027451C.h"
 #include "types.h"
 
 /* Returns whether a polygon counts as a wall: without flag 0x2000 it returns its flag 8, and otherwise it takes the polygon's unit normal (recomputed from its edges into D_80115E10 and normalised into D_80115E20 whenever the polygon differs from the last one) and returns whether the normal's upward component is at most D_800C9AD8. */

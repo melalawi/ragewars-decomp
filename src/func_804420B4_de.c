@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043EEC0.h"
+#include "span_16E000/code_8043F69C.h"
 #include "types.h"
 
 /* Forwards its four arguments to func_8043FE3C_de with, as the fifth, a one-character string made

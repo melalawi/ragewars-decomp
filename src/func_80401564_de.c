@@ -1,4 +1,5 @@
-#include "common/types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_80400000.h"
 #include "types.h"
 /* Evaluates the position keyframe track 1 of the current record's resource at time t: holds the

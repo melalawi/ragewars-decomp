@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041F248.h"
+#include "span_16E000/code_8041F1FC.h"
 #include "types.h"
 
 /* Counts how many of the four 0x4C8-byte entries D_800E42D0 points to are in state 1 or 2. */

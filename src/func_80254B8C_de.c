@@ -1,4 +1,4 @@
-#include "span_1000/code_8025477C.h"
+#include "span_1000/code_802536F4.h"
 #include "types.h"
 
 extern char D_801011A0;

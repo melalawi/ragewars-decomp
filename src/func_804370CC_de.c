@@ -1,4 +1,4 @@
-#include "span_16E000/code_80436D48.h"
+#include "span_16E000/code_804366C4.h"
 #include "types.h"
 
 /* Calls func_8029973C_de, then passes -1 to func_8042E988_de when func_802999A0_de reports 0x16 for zero

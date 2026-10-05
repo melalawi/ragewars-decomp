@@ -1,6 +1,7 @@
-#include "common/types.h"
-#include "span_1000/code_80245D38.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80245980.h"
 #include "types.h"
 /* Returns the collisions an object would meet moving to a position, without committing the move: picks the collision set for the object
  * (D_801040D0 for flagged players; otherwise by func_8024DF5C_de and then func_8024DFA0_de or func_8024DEE0_de among

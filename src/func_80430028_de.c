@@ -1,5 +1,5 @@
-#include "span_16E000/code_8042ED84.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 /* Cancels player arg2's pickup when the state at 0x58 of its 2920-byte record is 12 and arg3 asks:
    sets the word at 0xBA0 to 2, clears 0xBA4, drops one from the count at 0xB9C, stamps 0x41 on

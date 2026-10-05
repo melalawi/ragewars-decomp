@@ -1,5 +1,5 @@
-#include "span_1000/code_80242BE0.h"
-#include "span_1000/types.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80243A80.h"
 /** Read the word at offset 0x38 from the globally selected record. */
 extern void *D_800DE7E0;
 

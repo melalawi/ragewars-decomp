@@ -1,6 +1,5 @@
-#include "span_1000/code_80201ACC.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_802022E0.h"
 /** Run the object's update hook, then advance its timer and fire the expiry action when due. */
 
 

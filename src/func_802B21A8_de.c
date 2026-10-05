@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802B6958.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802B243C.h"
 #include "types.h"
 /* alSeqNewMarker, drafted from ultralib src/audio/seq.c: fill a marker with the sequence position
    of the first event at or after the given tick count (the track start for zero), stepping a

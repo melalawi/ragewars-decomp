@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_16E000/code_80410E9C.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 
 /* Calls func_8040F9E0_de when the halfword D_80153C2C is non-zero. */

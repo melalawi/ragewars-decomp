@@ -1,4 +1,4 @@
-#include "span_1000/code_802A6488.h"
+#include "span_1000/code_802A6AC0.h"
 #include "types.h"
 /* Steps a four-item toggle menu: counts frames, and once func_802A7098_de allows input opens the menu on button 0x20 or, on release, closes it after running the selected item's select callback (toggling it when that reports 1, or directly when it has none); each frame it settles every item's bounce animation toward zero, toggles the selected item off when an enabled item's update callback fails, advances the blink counter twice, and then either finishes opening, finishes closing, or moves the selection through func_802A70D4_de on buttons 0x100 and 0x200. Toggling an item starts its bounce at +5 with the current frame and its restore values, or at -5 when switching off. */
 

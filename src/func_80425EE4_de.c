@@ -1,4 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
+#include "span_16E000/code_804251F4.h"
 #include "types.h"
 
 /* Awards player p flag 0x31: when the player's 150-byte record in D_80146398 has its byte at

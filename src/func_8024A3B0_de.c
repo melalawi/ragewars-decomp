@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80245D38.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80246E34.h"
 #include "types.h"
 
 /* Optionally runs func_8024AA18_de, then starts the actor's current block through func_8026B6A0_de and, when the resulting animation node is flagged, spawns an effect at the actor raised by its height and scales it to the actor's size, always clearing D_800D15E0 at the end. */

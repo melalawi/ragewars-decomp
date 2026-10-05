@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80276544.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80275E44.h"
 #include "types.h"
 #ifndef UNBAKE_FUNC_80276510_DE_H
 #define UNBAKE_FUNC_80276510_DE_H

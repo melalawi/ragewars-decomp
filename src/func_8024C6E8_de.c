@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8024C444.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8024BA6C.h"
 #include "types.h"
 /* Applies a blast from a source to a body when an owner is given: the strength comes from the falloff table
  * D_800D06C0 indexed by the source's remaining charges, times 0.5 and 0.3 and the kind (-2 for kind 5);

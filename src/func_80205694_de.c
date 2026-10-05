@@ -1,4 +1,4 @@
-#include "span_1000/code_80204A68.h"
+#include "span_1000/code_80204E78.h"
 #include "types.h"
 
 extern s32 func_80214178_de(void *, void *, s32);

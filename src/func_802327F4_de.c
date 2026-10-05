@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802301E4.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80231F5C.h"
 /** Check whether a human player in mode 1 may select a weapon; when refused play the refusal sound and post a notice. */
 
 

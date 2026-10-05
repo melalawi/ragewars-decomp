@@ -1,5 +1,5 @@
-#include "span_1000/code_8020F2A8.h"
-#include "span_1000/types.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8020FDB0.h"
 extern void func_8020FDB0_de(void *a, int b);
 
 

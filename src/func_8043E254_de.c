@@ -1,5 +1,5 @@
-#include "span_16E000/code_8043D904.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 
 /** Report whether the tutorial-progress flags (at 0x1c, 0x20, 0x28) hold any nonzero bit. */

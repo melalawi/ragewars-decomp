@@ -1,4 +1,4 @@
-#include "span_16E000/code_80410E9C.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 
 /* The debugger showed this global holding 0x80698160, a heap address rather than a static one,

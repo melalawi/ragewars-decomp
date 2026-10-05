@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802BC630.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802B7488.h"
 #include "types.h"
 /* Clears the controller PIF RAM block, sets its status word to execute, and packs one request-status command with the given command byte per controller followed by the end marker (libultra __osPackRequestData). Adapted from func_802B768C_de with the request format and command argument changed, the clearing loop counting up and the status word written through a local pointer to the PIF RAM block. */
 

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ED84.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 
 /* Labels player p's roster rows: for each of the four 400-byte records of D_800FEB00 whose byte

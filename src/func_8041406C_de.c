@@ -1,4 +1,4 @@
-#include "span_16E000/code_804136EC.h"
+#include "span_16E000/code_80413728.h"
 #include "types.h"
 
 /* Stores the halfword D_80153C76 at index D_80153C6C of the halfword array D_80153C70 points to. */

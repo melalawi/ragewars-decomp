@@ -1,4 +1,4 @@
-#include "span_16E000/code_804434BC.h"
+#include "span_16E000/code_80442BC8.h"
 #include "types.h"
 
 /* Stores what func_802AD548_eu returns for D_8013B2BC in D_801540F4 and sets D_801540F0 to 0. */

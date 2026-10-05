@@ -1,6 +1,6 @@
-#include "span_1000/code_8023EEF0.h"
-#include "common/types_1dc8418c21db.h"
 #include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8023EEF0.h"
 
 /** Expand six source floats into the fixed 24-float vertex pattern. */
 void func_80240538_de(float *s, float *d) {

@@ -1,6 +1,5 @@
 #include "span_1000/code_8028DF6C.h"
-#include "span_1000/code_802C224C.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802BD1A8.h"
 #include "types.h"
 
 /* Switches a view to a new current and next scene: stamps the time of a pending next scene, starts the current scene (resetting its timer for mode 2, and stamping its start and, unless flagged 0x10, its first-start time for flag 0x20), clears its flags 0x30, runs its start and update hooks and records it, then when the next scene differs starts its music at its time and records it. */

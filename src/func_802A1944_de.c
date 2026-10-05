@@ -1,5 +1,4 @@
-#include "span_1000/code_802A26F8.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802A1264.h"
 
 
 /** Increment the global counter D_800D2C18. */

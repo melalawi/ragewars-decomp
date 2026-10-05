@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041ADB4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 /* Allocates and zeroes a 0x70-byte overlay node, copies the 0x2C-byte header of the owner's tree root into it, tags it 0x7A51 with kind 0x7D5 and flags 8, links it to its owner and the given value, inserts it under the root through func_8040EDE4_de and records it as the owner's overlay. */
 

@@ -1,8 +1,8 @@
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802508E0.h"
 #include "types.h"
-#include "common/types_06e4f7ef1f9e.h"
 
 extern Queue_func_802517B4_de D_80101140;
 extern s32 D_800C3EA8_de;

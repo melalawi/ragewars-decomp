@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802675E0.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802661FC.h"
 #include "types.h"
 /* Returns how strongly a blast at a position with a radius affects an actor: finds the shield covering the position (the held carrier shield D_801041F0 of the actor for an object target other than the two 0x402/0x404 types, otherwise func_8024B06C_de's shield in D_80110570), reports it, scales by the shield factor unless friendly fire is off for team damage, and when falloff is asked returns zero for an invulnerable player's untouched full hit, zero beyond the radius plus the actor's width, or the scale times one minus the distance to the actor's body over that reach. */
 

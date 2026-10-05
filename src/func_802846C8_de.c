@@ -1,7 +1,7 @@
 #include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8028469C.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
 
 void *func_802846C8_de(void *arg0, s32 arg1, void *arg2) {
     void *record;

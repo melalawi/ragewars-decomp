@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80405454.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Clears a record: the words at offsets 0, 4, 8, 0x18 and 0x1C, and the three-word array at 0xC
    from its last entry down. */

@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802675E0.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80268160.h"
 #include "types.h"
 
 /* Effect callback that fires only near an object's height: when the event's height lies within D_800C9564 below or D_800C9560 above the object's y at 0xC, it forwards the event to func_80266810_de with mode 1 and flags 0x200. */

@@ -1,5 +1,4 @@
-#include "span_1000/code_8025C67C.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8025C544.h"
 #include "types.h"
 
 extern char *func_8028FDB4_de(s32 *, s32);

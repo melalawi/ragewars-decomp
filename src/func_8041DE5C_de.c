@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041DBA0.h"
+#include "span_16E000/code_8041BEA8.h"
 #include "types.h"
 
 /* Calls func_8029973C_de, sets the words at offsets 0xD8 and 0xDC of the object D_800E3590 points to

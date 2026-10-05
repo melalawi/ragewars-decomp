@@ -1,4 +1,5 @@
-#include "span_1000/code_802C0384.h"
+#include "span_1000/code_802BB67C.h"
+#include "span_1000/code_802BBC68.h"
 #include "types.h"
 #if defined(VERSION_DE)
 #define func_802BC850_eu_x func_802BC570_de

@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_16E000/code_804136EC.h"
+#include "span_16E000/code_80413728.h"
 #include "types.h"
 /* Reads the pixel at index as a 0xAARRGGBB colour: stores the index for the current format's fetch
    hook D_80153CD0, then extracts each channel of the fetched value with the format's channel mask

@@ -1,5 +1,5 @@
-#include "span_1000/code_80213ED4.h"
 #include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80213ED4.h"
 #include "types.h"
 
 void func_802172C4_de(void *arg0, void *arg1, Func802172C4Value arg2) {

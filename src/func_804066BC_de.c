@@ -1,5 +1,6 @@
-#include "common/types.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_80405454.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 /* Enters pak menu mode 1: sets the mode flags, clears the owner's 0x01000000 flag and, when a
    message is pending (D_800E28C0), shows the player's message at 0x554 through func_80442574_de;
@@ -15,12 +16,12 @@
 
 
 
-extern s32 D_8014D4C0_de;
-extern s32 D_8014D4DC;
-extern s32 D_8014D4D0;
-extern s32 D_8014D4EC_de;
-extern s32 D_800DE874;
-extern s32 D_8014D4F4;
+
+
+
+
+
+
 extern s32 D_8014D4CC;
 extern s32 D_800DE870;
 extern char D_8014155C[];

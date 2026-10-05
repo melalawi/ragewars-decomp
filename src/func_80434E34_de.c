@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_16E000/code_80435010.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 /* Advances the current player's name-entry character one step forward, defaulting an unset slot to 'A' and wrapping past 'Z' back to a space. */
 

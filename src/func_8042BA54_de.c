@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ACB0.h"
+#include "span_16E000/code_80429C10.h"
 #include "types.h"
 
 /* Calls func_8029973C_de; when the mode word at offset 0x3DC of the object D_800E4F60 points to is 3,

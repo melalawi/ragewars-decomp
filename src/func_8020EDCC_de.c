@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8020D328.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8020EAE0.h"
 /** Reset the float field of each occupied player slot's table entry to the default value. */
 extern char D_801372A4[];
 

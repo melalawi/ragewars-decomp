@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041BC50.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041BEA8.h"
 #include "types.h"
 /* Refreshes each of the four ports through func_80404E28_de and sets field 0x1C of D_800E3518 as soon as one reports status 0, -1, -3 or -4 through func_80404F04_de, clearing it otherwise. */
 

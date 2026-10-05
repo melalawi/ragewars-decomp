@@ -1,8 +1,8 @@
-#include "span_1000/code_8029AC80.h"
+#include "span_1000/code_8029BBA0.h"
 #include "types.h"
 /* Raises x to the power y: 1 for a zero exponent, 0 or infinity for a zero base, exp(y log x) through func_8029AD38_de (log) and an inline exponential scaled by func_8029ABA0_de (ldexp) for a positive base, and for a negative base the same magnitude signed by the parity of an integer exponent, or negated when the exponent's reciprocal is odd, otherwise negative infinity. */
 
-extern f64 func_8029ABA0_de(f64 value, s32 exponent);
+
 extern f64 func_8029AD38_de(f64 value);
 
 static inline f64 exp_inline(f64 x) {

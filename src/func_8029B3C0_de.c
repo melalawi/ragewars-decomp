@@ -1,6 +1,6 @@
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8029BBA0.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
 
 /* Converts an array of three angles into another angle triple via sine/cosine products, clamping and atan2-style calls, and writes it back. Adapted from func_8029B868_de, with the clamped product, branch products, fallback call, and result order changed. */
 

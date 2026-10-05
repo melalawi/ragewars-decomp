@@ -1,11 +1,11 @@
-#include "span_1000/code_80242BE0.h"
-#include "span_1000/code_80245804.h"
+#include "span_1000/code_80243A80.h"
+#include "span_1000/code_80245980.h"
 #include "types.h"
 /* Zeroes the resident game-state block, sets its four persistent-slot markers to -1, then runs the two state-machine resets that depend on it. */
 
 extern s32 *D_800DE7E0;
 
-extern void func_80245A30_de(void);
+
 
 
 void func_80244D70_de(void)

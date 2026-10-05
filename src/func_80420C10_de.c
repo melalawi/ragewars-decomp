@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041F248.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041F1FC.h"
 #include "types.h"
 /* Advances a player panel from its ready state and starts its selection. */
 

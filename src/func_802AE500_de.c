@@ -1,4 +1,4 @@
-#include "span_1000/code_802B323C.h"
+#include "span_1000/code_802AE028.h"
 #include "types.h"
 /* __getTrackByte, drafted from ultralib src/audio/cseq.c: read the next byte of a compressed
    sequence track, following a back-up block (0xFE, offset, length) into the track's earlier data

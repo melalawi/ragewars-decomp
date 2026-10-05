@@ -1,10 +1,10 @@
-#include "span_1000/code_80225D10.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
-#include "common/types_8fd754e1e915.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80225D10.h"
 #include "span_1000/code_8026AC38.h"
 #include "span_1000/code_802A8A94.h"
+#include "types.h"
 
 /* Ends a match when its conditions are met, unless a menu or pause is up (func_80245784_de,
    func_80245798_de), the match is locked at 0x1C of the rules D_801468A0 or the game D_8014561C disallows

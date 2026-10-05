@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80447140.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041C67C.h"
 #include "types.h"
 /* __osPfsGetStatus, drafted from ultralib src/io/pfsgetstatus.c (2.0I branch): send a status request
    to one controller through the pak PIF RAM block and turn its reply into a pack-present, new-pack

@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80203B1C.h"
-#include "span_1000/types.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802022E0.h"
 #include "types.h"
 
 /* Rotates a point about a pivot by an object's orientation: builds the rotation matrix from the

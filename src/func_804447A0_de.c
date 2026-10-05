@@ -1,4 +1,4 @@
-#include "span_16E000/code_80444260.h"
+#include "span_16E000/code_80444030.h"
 #include "types.h"
 
 /* Replaces the option byte D_801462E7 with what func_804423BC_de returns for the second argument, that

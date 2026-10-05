@@ -1,4 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 /* Hides every model named by the sixty-four 12-byte entries of D_800E4A84: for each entry it looks
    up the first and second identifier in the current screen's context at 0x970 through func_8040EC30_de

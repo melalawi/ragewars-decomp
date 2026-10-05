@@ -1,5 +1,5 @@
-#include "span_16E000/code_80408E1C.h"
-#include "span_16E000/types.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 
 /* Saves the settings the object at offset 0x5D8 of an owner holds into the block D_80153738: the

@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802BE0D0.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Builds the decoder's trigonometric tables: for 128 steps it stores the sine and cosine of
    (i * D_800CCF10 + D_800CCF14) * D_800CCF18 in D_801510C0 and D_801512C0 and clears D_801518C0,

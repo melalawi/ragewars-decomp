@@ -1,4 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
+#include "span_16E000/code_804251F4.h"
 #include "types.h"
 /* Counts the enabled entries in a fifty-entry player table. */
 #define NULL ((void *)0)

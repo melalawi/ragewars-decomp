@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040EBC8.h"
+#include "span_16E000/code_8040C780.h"
 #include "types.h"
 
 /* Links a new node into a tree just before a given node, making it the parent's first child when the given node was, and otherwise attaching it after the predecessor that func_8040ECA8_de's search finds from the parent by the given node's id. Adapted from func_8040ECA8_de with the search body kept as a static inline helper and called after the new node's parent, next and child links are set. */

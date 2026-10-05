@@ -1,5 +1,5 @@
-#include "span_1000/code_80293A04.h"
 #include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80293A04.h"
 #include "types.h"
 
 /** Perform no work for callers at VRAM 0x80293DDC. */

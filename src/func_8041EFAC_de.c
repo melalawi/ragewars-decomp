@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041DBA0.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8041DF04.h"
 #include "types.h"
 /* Cycles a menu selection and updates the associated character setting. */
 

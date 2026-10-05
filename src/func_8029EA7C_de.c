@@ -1,8 +1,7 @@
-#include "span_1000/code_8029F3A8.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
-#include "span_1000/code_8029BBA0.h"
+#include "span_1000/code_8029F3A8.h"
+#include "types.h"
 
 void func_8029EA7C_de(void *arg0, int arg1, int arg2, int arg3,
                     float arg4, float arg5, float arg6, float arg7,

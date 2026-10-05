@@ -1,4 +1,4 @@
-#include "span_1000/code_80260D98.h"
+#include "span_1000/code_802609CC.h"
 extern void func_80260138_de(void);
 
 /** Thin wrapper around func_80260138_de. */

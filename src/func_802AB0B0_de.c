@@ -1,6 +1,6 @@
+#include "span_1000/code_802A8A94.h"
 #include "span_1000/code_802AB3FC.h"
 #include "types.h"
-#include "span_1000/code_802A8A94.h"
 
 /* Draws a grid of 4-bit image tiles: the header holds the column and row counts, each tile holds
    its width, height and packed nibble data, and every tile goes to func_802A9CD0_de at the running

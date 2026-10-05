@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040EBC8.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 /* Relocates a loaded widget list and its children from the stored base to base: for widgets
    flagged 0x10 rebases the four resource words, then by widget type clears an out-of-range image

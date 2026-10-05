@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80259014.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8025A3EC.h"
 #include "types.h"
 /* Fades emitter 0x8AC with the listener's distance: optionally resets its level, stores the squared
  * distance to the listener, lowers the level by a step while the distance grows and raises it while it

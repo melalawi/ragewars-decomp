@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_166000/code_80426234.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_166000/code_80426310.h"
 #include "types.h"
 /* Points arg0's unk14 field at the entry of D_44FB94 that D_80154030 selects when it is below 12, else at D_800D7E14, and returns 0. */
 

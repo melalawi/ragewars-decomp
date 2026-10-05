@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8043D54C.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Toggles bit 4 of the option word D_80142208_de and returns zero; the functions after it in this
    run each toggle the next bit. */

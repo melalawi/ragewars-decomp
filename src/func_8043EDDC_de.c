@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8043E9A8.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* When the timer D_801468B0 has run out, calls func_8044DD50_de on D_8011FAC0 and returns one;
    otherwise returns zero. */

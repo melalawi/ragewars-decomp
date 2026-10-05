@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_16E000/code_8041F248.h"
+#include "span_16E000/code_8041F1FC.h"
 /* Confirms a player's character choice and, once no player is still choosing, fills the match roster and starts the game; scheduler lever: the block-scoped match pointer inside the roster loop places the hoisted match address after the loop constants, as the cartridge does. */
 
 

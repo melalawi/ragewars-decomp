@@ -1,7 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802301E4.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8022F3E8.h"
 #include "types.h"
 /* Advances a player's second charging action: when the trigger is released (as in func_802312C8_de) or the
  * cooldown is past D_800C8008, it switches to action 2, runs func_8022AF40_de and func_8022B00C_de, plays sound

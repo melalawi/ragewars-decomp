@@ -1,5 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
-#include "span_16E000/code_804288E0.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 /* Enumerates the eight item identifiers of the record func_8028D474_de finds for a key and registers each nonzero identifier above 0x4C3 through func_8042854C_de, translated by 0x4C3 and numbered in order. */
 

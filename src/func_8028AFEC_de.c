@@ -1,11 +1,11 @@
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8026AC38.h"
 #include "span_1000/code_80286050.h"
 #include "types.h"
-#include "common/types_06e4f7ef1f9e.h"
-#include "span_1000/code_8026AC38.h"
 #include "n64sdk.h"
 #include "gbi.h"
-#include "common/types_8fd754e1e915.h"
-#include "common/types_1dc8418c21db.h"
 
 char *func_8028AFEC_de(void *arg0, s32 arg1) {
     func_8028FDB4_de((((struct ObjectLinks74 *) ((s8 *) arg0))->unk_70), arg1);

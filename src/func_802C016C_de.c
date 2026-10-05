@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802C4604.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802BE0D0.h"
 extern void func_802BF388_de(void *arg0);
 extern void func_802BFAAC_de(void *arg0, void *arg1);
 extern unsigned short D_800D54C2;

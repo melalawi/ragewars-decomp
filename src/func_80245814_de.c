@@ -1,5 +1,4 @@
-#include "span_1000/code_80242BE0.h"
-#include "span_1000/code_80245804.h"
+#include "span_1000/code_80243A80.h"
 #include "types.h"
 s32 func_80245814_de(void) {
     s32 var_v0;

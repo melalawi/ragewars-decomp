@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040AC98.h"
+#include "span_16E000/code_8040A83C.h"
 #include "types.h"
 
 /* Sets the state word D_80153788 to 0xE; this is one of a run of functions that each store one

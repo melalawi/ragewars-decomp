@@ -1,8 +1,8 @@
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80246E34.h"
 #include "types.h"
-#include "common/types_06e4f7ef1f9e.h"
-#include "common/types_1dc8418c21db.h"
 
 extern s32 func_80245798_de(void);
 extern void func_8024D728_de(Vector4f *arg0, void *arg1);

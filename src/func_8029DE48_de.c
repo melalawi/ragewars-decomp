@@ -1,5 +1,4 @@
-#include "span_1000/code_8029D984.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8029EB74.h"
 #include "types.h"
 
 /* Returns the arcsine of a value clamped to [-1, 1] using the polynomial approximation pi/2 - sqrt(1 - x) * p(x) on its magnitude and restoring the sign afterwards. */

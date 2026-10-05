@@ -1,4 +1,4 @@
-#include "span_1000/code_8025AE3C.h"
+#include "span_1000/code_8025A3EC.h"
 #include "types.h"
 /* Stops the selected sound slot and sets its release flag; split unsigned offset-to-pointer casts and a one-pass statement group preserve the separate table and offset schedule. */
 

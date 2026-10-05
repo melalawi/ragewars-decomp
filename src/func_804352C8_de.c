@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435010.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 
 /* Takes a free slot from func_804351E4_de and fills it with two values, marking it set, as
@@ -8,7 +8,7 @@
 
 
 extern struct Table_func_804352C8_de *D_800E1454_de;
-extern s32 func_804351E4_de();
+
 
 s32 func_804352C8_de(s32 first, s32 second) {
     s32 result = 0;

@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8029D984.h"
-#include "span_16E000/code_8041A0AC.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8029BBA0.h"
+#include "span_16E000/code_8041A4B0.h"
 #include "types.h"
 
 /* Marks a menu's state word at offset 0x54 as 2 when func_8029DB58_de's value for the fifth argument

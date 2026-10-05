@@ -1,7 +1,5 @@
-#include "span_1000/code_8020D328.h"
-#include "span_1000/code_8020F2A8.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8020EAE0.h"
 #include "types.h"
 
 extern void *func_8020C994_de(void *, s32);

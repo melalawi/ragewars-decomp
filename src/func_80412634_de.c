@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80411FB8.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 /* Visits every cell of a list's column-by-row grid, computing each cell's rectangle through func_804122CC_de and drawing it through func_8040D2D0_de with the given style. */
 

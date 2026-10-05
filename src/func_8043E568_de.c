@@ -1,4 +1,5 @@
-#include "span_16E000/code_8043E364.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 /* Restarts a round for the player passed in arg1: clears the world timer flag D_800E28C0 via
    func_804097E8_de, cancels the active countdown sound through func_8025E214_de, then reallocates a

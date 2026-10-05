@@ -1,5 +1,5 @@
-#include "span_16E000/code_804194A8.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804196C0.h"
 /* Allocates and initializes an object, attaches its resource and owner value, then registers it with the resource. */
 
 

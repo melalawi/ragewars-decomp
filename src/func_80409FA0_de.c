@@ -1,4 +1,4 @@
-#include "span_16E000/code_80408E1C.h"
+#include "span_16E000/code_80409A88.h"
 #include "types.h"
 /* Searches the sixteen controller-pak notes for the requested name and returns the matching index when requested. */
 #define NULL ((void *)0)

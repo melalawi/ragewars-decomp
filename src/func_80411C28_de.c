@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80410E9C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80411B68.h"
 /* Returns the halfword at offset 0xE of the object held at offset 0x48C of record i in the
    1180-byte record table D_80153C28 points to; func_80411C60_de reads offset 0x10 of the same
    object. */

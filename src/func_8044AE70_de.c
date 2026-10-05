@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80449968.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8044ACCC.h"
 #include "types.h"
 
 /* Resets the controller and profile state for a new session: reinitialises the input buffers and stream through func_80285AC4_de, func_802BAC60_de, func_802BB550_de, func_802B7880_de, func_802BAD80_de and func_802BB420_de, then for slots 3 down to 0 clears the slot's three state words, refreshes its pad through func_80264788_de and counts the profiles func_8044B008_de accepts in D_800D0E52, remembering the lowest accepted slot in D_8010F320; finally checks the profile just below slot 0 with mode 4, marks the session reset and returns the remembered slot. */

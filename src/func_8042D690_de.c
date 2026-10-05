@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042D1BC.h"
+#include "span_16E000/code_8042BD40.h"
 #include "types.h"
 /* Runs one frame of the screen D_800E53C0's confirmation prompt while D_800E28E0 is not positive:
    on the first frame it marks the prompt open at 0x320 and asks func_802991D4_de for message 0x238,

@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80212D78.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80212C90.h"
 #include "types.h"
 
 extern s32 D_801372A4;

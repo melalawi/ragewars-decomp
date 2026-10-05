@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040EBC8.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 
 /* Stores two bytes at offsets 0x2C and 0x2D of a record, a pair set together. */

@@ -1,4 +1,4 @@
-#include "span_1000/code_80245804.h"
+#include "span_1000/code_80245980.h"
 #include "span_16E000/code_80400000.h"
 #include "types.h"
 /* When the entry table is available, loads it through func_8028FE3C_de and func_8025193C_de and finds

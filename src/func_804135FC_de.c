@@ -1,4 +1,4 @@
-#include "span_16E000/code_80411FB8.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 
 /* Returns the first byte of a record; func_80413608_de, which follows it, reads the same byte. */

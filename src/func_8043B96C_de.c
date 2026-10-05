@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_16E000/code_80439930.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8043A0A4.h"
 #include "types.h"
 /* Clears the 22 owned bytes at 0x4C of each of the 4 player records (150 bytes apart) in
    D_80146398; for each active player (byte 0x78 == 1) it looks up the player's model kind (byte

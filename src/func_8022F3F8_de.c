@@ -1,4 +1,4 @@
-#include "span_1000/code_8022F054.h"
+#include "span_1000/code_8022F3E8.h"
 /* Increments the object's byte counter for a slot in the table at 0x18: indices 0 to 10 directly,
    17 and 18 as slots 11 and 12, and other indices are ignored. */
 

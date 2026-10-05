@@ -1,4 +1,4 @@
-#include "span_16E000/code_80410E9C.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 
 /* Clears the 0x2A8-byte block D_801539B0 through func_802A0748_de, sets D_800E2AC0 and clears

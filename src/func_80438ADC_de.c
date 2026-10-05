@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8043847C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804379C8.h"
 #include "types.h"
 
 /* Handles event 1 on the screen D_800E5830: unless func_8043C308_de reports its menu in state 1 it

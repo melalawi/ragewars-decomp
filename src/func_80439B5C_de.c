@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80439930.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8043962C.h"
 #include "types.h"
 /* Initializes the six object parameters and clears its transient state. */
 #define NULL ((void *)0)

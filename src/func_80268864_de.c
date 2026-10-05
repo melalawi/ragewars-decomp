@@ -1,8 +1,8 @@
 #include "common/types_1dc8418c21db.h"
-#include "span_1000/code_80268160.h"
-#include "types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80268160.h"
+#include "types.h"
 
 /* Calls func_802172D0_de on an object, its block at offset 0x170 and a stack argument when the pause word is clear, the object exists and its first byte is one. Adapted from func_802688AC_de with the pause-word test, the callee and the extra stack argument changed, and the call wrapped in do-while(0) so the stack argument loads at entry. */
 

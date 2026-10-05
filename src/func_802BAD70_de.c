@@ -1,5 +1,5 @@
-#include "span_1000/code_802BAC58.h"
 #include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802BAC58.h"
 
 /** Return the global word at D_800D92A4. */
 extern int D_800D5274;

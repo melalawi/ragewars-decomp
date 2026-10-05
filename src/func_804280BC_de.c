@@ -1,4 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 
 /* Formats the name of entry D_800E4690's word at 0xA44 into a local 0x40-byte buffer through

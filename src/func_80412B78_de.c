@@ -1,4 +1,4 @@
-#include "span_16E000/code_80411FB8.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 
 /* When the fourth argument is set, lowers the byte at offset 0x4C of an entry by one while it is

@@ -1,7 +1,7 @@
-#include "span_1000/code_8026E1F8.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8026E1F8.h"
+#include "types.h"
 
 /* Transforms an axis-aligned box by a matrix: starts the new minimum and maximum at the matrix translation and, for every matrix entry, adds the smaller of its products with the old minimum and maximum to the new minimum and the larger to the new maximum. */
 

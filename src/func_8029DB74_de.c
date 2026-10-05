@@ -1,5 +1,4 @@
-#include "span_1000/code_8029D984.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8029EB74.h"
 #include "types.h"
 
 extern f64 func_8029AD38_de(void);

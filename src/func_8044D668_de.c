@@ -1,4 +1,4 @@
-#include "span_16E000/code_8044D024.h"
+#include "span_16E000/code_8044E2B8.h"
 #include "types.h"
 
 /* Spawns the pickups of a level: between func_802458D8_de and func_802458C4_de it passes every item of both item tables whose kind is 1, 2, 4 or 10 to func_8028787C_de. */

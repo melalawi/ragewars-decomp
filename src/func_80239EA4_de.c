@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8023940C.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802393F4.h"
 #include "types.h"
 /* Produces a random shake offset for an object: looks up the object's model entry in D_8011FE88 and
  * zeroes the offset when there is none; otherwise eases the horizontal and vertical shake amplitudes

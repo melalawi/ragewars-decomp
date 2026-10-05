@@ -1,6 +1,5 @@
-#include "span_1000/code_802BD198.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_1000/types.h"
+#include "span_1000/code_802B7B80.h"
+#include "span_1000/code_802B9BB4.h"
 #include "types.h"
 
 

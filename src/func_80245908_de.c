@@ -1,4 +1,4 @@
-#include "span_1000/code_80245804.h"
+#include "span_1000/code_80243A80.h"
 /* Reports whether func_80245798_de accepts the globally selected record and bit 2 of its word at 0x74
    is set. */
 extern int func_80245798_de(void);

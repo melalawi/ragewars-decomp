@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041A0AC.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041A4B0.h"
 #include "types.h"
 
 /* sets the menu's state word at 0x54 to 2 and Walks the item list at offset 8 of a menu and sets the byte at offset 0x10 of every item

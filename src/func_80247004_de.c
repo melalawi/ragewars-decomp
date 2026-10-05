@@ -1,5 +1,4 @@
-#include "span_1000/code_80245D38.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80246E34.h"
 #include "types.h"
 /* Update or blend object rotation when the movement state permits it. */
 #define NULL ((void *)0)

@@ -1,6 +1,6 @@
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802BE0D0.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
 
 s16 func_802BF388_de();
 u32 func_802BFE3C_de(void) {

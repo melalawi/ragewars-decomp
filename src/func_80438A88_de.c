@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043847C.h"
+#include "span_16E000/code_804379C8.h"
 #include "types.h"
 
 /* Resets three words of the object D_800E5830 points to: the words at 0x9C and 0xB0 to -1 and

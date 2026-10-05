@@ -1,4 +1,4 @@
-#include "span_1000/code_802AD4B4.h"
+#include "span_1000/code_802AB3FC.h"
 #include "types.h"
 extern LocalizedEffectContext D_80140FC8;
 extern void func_802391AC_de(void *, s32, s32, s32, s32, s32, s32, s32);

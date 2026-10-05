@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804136EC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80413728.h"
 #include "types.h"
 
 /* Stores a value in D_80153C8C, sets the write position D_80153C84 to row y of column x, the row

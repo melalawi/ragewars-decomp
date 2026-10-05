@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8025E5D0.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8025E568.h"
 #include "types.h"
 /* Converts an amount over a period into a whole rate: returns the constant at D_800C91F8 + 4 for an amount
  * equal to it or a period not above D_800C9200; otherwise the ratio scaled by D_800C9200 + 4 and rounded up

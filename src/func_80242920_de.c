@@ -1,4 +1,4 @@
-#include "span_1000/code_802406DC.h"
+#include "span_1000/code_802412C0.h"
 #include "types.h"
 
 extern s32 func_8023E8D4_de(void *, s32 *, s32);

@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435010.h"
+#include "span_16E000/code_80434F4C.h"
 /* Handles a packed message for a player in D_800E54A4: when the player (low half) is in state 12, the
    message type (high half) is 3 and the argument is 4 or 5, moves the player to phase 2 with a zero
    timer; always returns 0. */

@@ -1,4 +1,4 @@
-#include "span_1000/code_8025477C.h"
+#include "span_1000/code_802536F4.h"
 extern int func_80251328_de(int a, int b, int c);
 
 int func_80254B58_de(int unused, int arg1, int arg2) {

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042D1BC.h"
+#include "span_16E000/code_8042BD40.h"
 #include "types.h"
 
 /* When the fourth argument is one, calls func_8029973C_de, advances the word at 0x20 of the object D_800E5430 holds while func_80264614_de reports one for it and it is below func_80264690_de's limit, formats that word into the object's text at 0x14 through func_802A0C08_de with D_800E1B60, and plays sound 0xE81 through func_8025DF34_de; returns zero.

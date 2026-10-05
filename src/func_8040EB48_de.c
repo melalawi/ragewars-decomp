@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040EBC8.h"
+#include "span_16E000/code_8040C780.h"
 #include "types.h"
 
 /* Returns the union of the flag halfwords at offset 0x12 of every node in a linked list. */

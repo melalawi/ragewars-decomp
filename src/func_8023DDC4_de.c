@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8023CBB0.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8023D370.h"
 #include "types.h"
 /* Tests a ray's horizontal segment against a rectangle (min x/z at 0 and 4, max x/z at 8 and 12): a start
  * point inside gives parameter 0; otherwise the crossing of the x edge facing the start is tried first and

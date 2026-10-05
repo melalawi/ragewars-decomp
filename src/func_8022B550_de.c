@@ -1,4 +1,4 @@
-#include "span_1000/code_8022B500.h"
+#include "span_1000/code_8022AE90.h"
 /* Starts a timer in the first of the object's five 24-byte slots at 0x1248 whose remaining time is not
    positive: records the kind, target, a zero elapsed value and the tag, sets the duration to rate
    times D_800C7E00 and the step to target over duration. */

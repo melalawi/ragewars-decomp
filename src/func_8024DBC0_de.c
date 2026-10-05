@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8024C444.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8024D018.h"
 #include "types.h"
 /* Plays a sound effect for an actor at a position: snaps the position to the nearest registered emitter
  * in D_8013B364 when there is one, draws a random direction and (except for sound 0xBD7) scales it to a

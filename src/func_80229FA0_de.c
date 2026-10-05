@@ -1,7 +1,7 @@
 #include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_1000/code_80225D10.h"
 #include "types.h"
-#include "common/types_8fd754e1e915.h"
 
 /* Scales damage by ownership and player state and suppresses friendly damage when configured. */
 

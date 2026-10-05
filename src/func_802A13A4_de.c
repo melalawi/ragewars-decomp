@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_1000/code_802A1ED4.h"
+#include "span_1000/code_802A1264.h"
 #include "types.h"
 
 extern f32 D_800C5D78_de;

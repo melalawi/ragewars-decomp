@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8040BBC0.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8040C780.h"
 #include "types.h"
 /* Draws a visible widget (flag 8): when func_8040E0D4_de places it, and its draw flags ask for
    clipping (0x200), it narrows the current scissor from func_802A1898_de to the widget's box through

@@ -1,4 +1,0 @@
-#ifndef UNBAKE_SPAN_166000_TYPES_H
-#define UNBAKE_SPAN_166000_TYPES_H
-
-#endif

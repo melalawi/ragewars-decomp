@@ -1,9 +1,9 @@
-#include "common/types.h"
-#include "span_1000/code_80299FC4.h"
-#include "span_1000/code_802A26F8.h"
-#include "span_1000/code_802A31F4.h"
-#include "span_16E000/code_8040EBC8.h"
-#include "span_16E000/code_80414280.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80297CD0.h"
+#include "span_1000/code_802A1264.h"
+#include "span_1000/code_802A208C.h"
+#include "span_16E000/code_8040F1E0.h"
+#include "span_16E000/code_804143D8.h"
 #include "types.h"
 #ifndef SHARED_REWORK2_SELECTION_STATE_H
 #define SHARED_REWORK2_SELECTION_STATE_H
@@ -18,7 +18,7 @@ extern struct Triple D_800CDA20;
 
 
 
-extern void func_802A2394_de(void);
+
 
 
 void func_802A2434_de(void) {

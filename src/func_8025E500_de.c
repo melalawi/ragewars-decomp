@@ -1,6 +1,6 @@
 #include "common/types_1dc8418c21db.h"
-#include "span_1000/code_8025E280.h"
 #include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8025E280.h"
 
 short func_8025E500_de(void *arg0) {
     return ((Request *)(arg0))->type;

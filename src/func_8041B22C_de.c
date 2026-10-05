@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041ADB4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 /* Copies record arg0 unless it already carries tag 0xB61: allocates and zeroes a 0x44-byte record, copies arg0's header and five-word block into it, tags it 0xB61, and registers it through func_8040EEA4_de and func_8040EF84_de. Adapted from func_8041B110_de with the source record passed in and the early return for a record already tagged 0xB61 added. */

@@ -1,5 +1,4 @@
-#include "span_1000/code_802A31F4.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802A208C.h"
 
 
 extern int D_800CDA34_de;

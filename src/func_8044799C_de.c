@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80447140.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80447BB0.h"
 #include "types.h"
 /* Sets the last controller command to the given byte, marks the pak PIF RAM block for execution and packs one request-status command per controller followed by the end marker (libultra __osPfsRequestData). Adapted from func_802B7A20_de with the RAM clearing loop dropped, the command byte also stored to D_8014D4B0, and the pak PIF RAM block D_80154110 used in place of D_8014D470, with the pointer taken before the status word is written. */
 

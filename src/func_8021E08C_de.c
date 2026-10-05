@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80219480.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8021CD70.h"
 #include "types.h"
 /* Draws an icon sprite for a view: icons 0x2DA, 0x2E4, 0x2BC and 0x2EF to 0x2F2 sit at the centre of
    the view's viewport, any other icon is placed at a world point projected through func_80239244_de when

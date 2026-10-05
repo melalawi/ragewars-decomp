@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802BF740.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802BAC58.h"
 extern void *D_800D5270;
 
 

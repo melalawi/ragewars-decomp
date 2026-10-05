@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80232B44.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8023330C.h"
 #include "types.h"
 
 extern void func_8022B190_de(s32);

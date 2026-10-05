@@ -1,4 +1,4 @@
-#include "span_1000/code_80204A68.h"
+#include "span_1000/code_80204E78.h"
 /** Report whether the actor on the given cell is within the scaled trigger distance. */
 
 

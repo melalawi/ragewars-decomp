@@ -1,4 +1,4 @@
-#include "span_1000/code_802A137C.h"
+#include "span_1000/code_802A0AC4.h"
 #include "types.h"
 
 /* Formats its arguments into the shared buffer D_8014D0D0 and writes the text to the stream through func_802A0F50_de in runs, emitting the one-byte D_800CAEF0 before every newline, returning the number of bytes written. */

@@ -1,5 +1,5 @@
-#include "span_1000/code_80233C78.h"
-#include "span_1000/types.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80233920.h"
 #include "types.h"
 /* Posts a text as on-screen messages, one per line: when func_80245784_de reports it, the messages already in
  * the pool's list at 0xE40 are flagged kind 4 and the new ones get kind 1, otherwise kind 2; the text (or

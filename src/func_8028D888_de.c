@@ -1,4 +1,4 @@
-#include "common/types.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8028CCB8.h"
 #include "types.h"
 /* Releases the resource of each of the owner's listed entries through func_80253754_de, then clears the counters at 0x944, 0xC4C and 0x10BC, and moves the entry count to 0x1500 and zeroes it. */

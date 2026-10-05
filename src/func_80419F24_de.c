@@ -1,5 +1,5 @@
-#include "span_16E000/code_804194A8.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804196C0.h"
 #include "types.h"
 
 /* Copies the byte at offset 0x83 of an object into offset 0x10 of the object at 0x78, and clears

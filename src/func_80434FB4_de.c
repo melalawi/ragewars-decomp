@@ -1,5 +1,4 @@
-#include "span_16E000/code_80435010.h"
-#include "span_C76B0/data.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 
 /* Stores its argument in D_800E54A0. */

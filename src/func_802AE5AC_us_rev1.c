@@ -1,6 +1,6 @@
-#include "span_1000/code_802AE2C8.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE254.h"
+#include "span_1000/code_802B8CCC.h"
 #include "types.h"
 /* Writes one byte through the cartridge-domain port at D_B2000000 with the control register D_B200000C and strobe register D_B2000004, waiting for the ready bit of D_B2000015 to set and then clear with D_800D3650 retries each, setting D_8014D3E8 on a timeout and returning 1 on success. Adapted from func_802AE380_us_rev1 with the read of D_B2000001 changed to a write of the argument through D_B2000000 and the strobe at D_B2000004 raised and lowered around the handshake, and the argument copied into a second local for the port write. */
 

@@ -1,5 +1,5 @@
-#include "span_16E000/code_80425BC0.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 
 /* Returns the index of the entry among the 0x24 28-byte entries of D_800E4694 whose identifier

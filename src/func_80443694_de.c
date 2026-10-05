@@ -1,4 +1,4 @@
-#include "span_16E000/code_804434BC.h"
+#include "span_16E000/code_80442BC8.h"
 #include "types.h"
 
 /* Loads the owner at offset 0x1C of the second argument into D_80145040 through func_8022A5A0_de,

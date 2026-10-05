@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8040EBC8.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 
 /* Records the last column and row of a width by height area: stores width - 1 and height - 1 in

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ED84.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 
 /* Copies the records player p owns into p's block record: for each of the four 400-byte records of

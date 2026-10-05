@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ED84.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 
 /* Reorders the four 400-byte player records D_80102B00 by the players' choices: copies all four to

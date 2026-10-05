@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435CF0.h"
+#include "span_16E000/code_80435CE4.h"
 #include "types.h"
 
 /* On event 3 with value 0xD, clears D_80146894 and calls func_802A230C_de and func_8025E384_de. Returns

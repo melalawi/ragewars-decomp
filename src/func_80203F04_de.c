@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80203B1C.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80203F04.h"
 #include "types.h"
 /* Tests whether a viewer can see a target: raises both positions by their heights scaled by one half and casts
    a ray between them through func_802444A4_de into D_80103FD0, returning 1 when nothing or the target itself

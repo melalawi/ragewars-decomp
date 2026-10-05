@@ -1,6 +1,7 @@
-#include "common/types.h"
-#include "span_1000/code_8024F944.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802508E0.h"
 #include "types.h"
 /* Looks up a key in the hash table under the queue lock and, if found, bumps the object's reference count, flags it, stamps it and passes it to func_80255FB8_de, returning the object. Adapted from func_80253F8C_de, with the count/flag updates added and the object returned. */
 

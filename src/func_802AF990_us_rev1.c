@@ -1,6 +1,7 @@
-#include "span_1000/code_802AE2C8.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_1000/code_802C224C.h"
+#include "span_1000/code_802AE254.h"
+#include "span_1000/code_802B8CCC.h"
+#include "span_1000/code_802BCF1C.h"
+#include "span_1000/code_802BD1A8.h"
 #include "types.h"
 
 extern void *jtbl_800CB490[];
@@ -21,7 +22,7 @@ extern void func_802AE260_us_rev1(void);
 
 extern s32 func_802AE380_us_rev1(u8 *);
 extern s32 func_802AE5AC_us_rev1(s32);
-extern s32 func_802AEF84_us_rev1(void);
+
 
 
 extern void func_802AF33C_us_rev1(void);

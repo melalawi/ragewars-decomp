@@ -1,4 +1,4 @@
-#include "span_1000/code_802BF740.h"
+#include "span_1000/code_802BA23C.h"
 #include "acmd.h"
 #include "types.h"
 /* With interrupts disabled, stores a video mode pointer in the next video context, marks the mode updated and copies the mode's control word (libultra osViSetMode). Adapted from func_802BB3D0_de with the body changed to the libultra osViSetMode shape. */

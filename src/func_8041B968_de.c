@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041ADB4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 /* Stores a value into the word at offset 0x6C of an object; func_8041CE18_de uses it to set that word

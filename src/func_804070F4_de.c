@@ -1,5 +1,6 @@
-#include "common/types.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_80405454.h"
+#include "span_16E000/code_80405DC0.h"
 /* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 #include "types.h"
 /* Enters pak menu mode 2: sets the mode flags, shows the D_0044FFA4 prompt when a message is pending (D_800DE870), and otherwise clears the owner's 0x01000000 flag, probes the Controller Pak on the selected channel, falls back to func_80405F48_de when func_80404F04_de reports none, and shows the D_0044EA2C, D_0044ED44 or D_0044E9C0 prompt according to func_80404F3C_de and func_80405598_de. */
@@ -8,12 +9,12 @@
 
 
 
-extern s32 D_8014D4C0_de;
-extern s32 D_8014D4DC;
-extern s32 D_8014D4D0;
-extern s32 D_8014D4EC_de;
-extern s32 D_800DE874;
-extern s32 D_8014D4F4;
+
+
+
+
+
+
 extern s32 D_8014D4CC;
 extern s32 D_800DE870;
 extern char D_8014155C[];

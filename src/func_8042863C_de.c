@@ -1,4 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
+#include "span_16E000/code_804264F0.h"
 /* Finds a menu item identifier in three selection tables, falling back to the first item of the second table. */
 extern int D_800E1AFC_de[],D_800E1AF4_de[],D_800E1B7C[],D_800E1B74[],D_800E1ACC_de[],D_800E1AC4_de[];
 int func_8042863C_de(int id) {

@@ -1,6 +1,5 @@
-#include "span_1000/code_80201ACC.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_802022E0.h"
 #include "types.h"
 /* Installs a weapon record's handler table and routine pointers and, when its owner's id is 0x40C,
    clears its counters and sets its rate to 200 and its range and speed from D_800C6B2C and D_800C6B30. */

@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8020570C.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80206258.h"
 #include "types.h"
 /* Spawns effect kind at an actor's position through func_8028FFD0_de in D_80131600's list: kind 0xBD7
    is skipped while both of D_801468A0's flags at 0x78 and 0x80 are set, and kind 0x1388 is offset by

@@ -1,7 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80232B44.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80231F5C.h"
 /* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 #include "types.h"
 extern s32 D_80140FF8;

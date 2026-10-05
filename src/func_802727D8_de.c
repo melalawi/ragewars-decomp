@@ -1,5 +1,5 @@
-#include "span_1000/code_8027230C.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80271B18.h"
 #include "types.h"
 
 extern f32 D_800C48C0_de;

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8043EEC0.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043F69C.h"
 #include "types.h"
 
 /* Allocates a block sized for the entries of the list the parameters point at through func_8025343C_de, builds it with func_80440DA0_de from the list's own value and three parameters, registers it with func_80255CB8_de and advances the owner's rotating counter below four, returning the block or zero. Adapted from func_804427C4_de with the list read from the parameters at 0x18, a null list returning zero, and the first value read from the list at 0x20 instead of the parameters at 0x14 changed. */

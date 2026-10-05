@@ -1,4 +1,5 @@
-#include "common/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_166000/code_80403E88.h"
 #include "types.h"
 

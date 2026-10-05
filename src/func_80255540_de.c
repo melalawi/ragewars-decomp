@@ -1,4 +1,4 @@
-#include "span_1000/code_8025477C.h"
+#include "span_1000/code_80254CE4.h"
 #include "types.h"
 /* Rounds a value up to a power of two by locating its highest set bit and bumping it unless exactly one bit is set. Adapted from func_80261614_de, with a signed loop counter, an exactly-one-bit test, and 1 << bit returned instead of the bit index. */
 

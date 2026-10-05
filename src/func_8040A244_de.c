@@ -1,5 +1,5 @@
-#include "span_16E000/code_80408E1C.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80409A88.h"
 /* FAKEMATCH: version selection preserves distinct original same-start bodies mapped to this live identity; only one original body is compiled for each owning version. */
 #if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
 #include "types.h"

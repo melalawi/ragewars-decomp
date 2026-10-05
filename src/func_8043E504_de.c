@@ -1,5 +1,5 @@
-#include "span_16E000/code_8043E364.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 /* Forwards arg0->unk20->unk4 to func_80264770_de and clears D_800E28C0. */
 

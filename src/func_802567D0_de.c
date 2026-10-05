@@ -1,4 +1,4 @@
-#include "span_1000/code_80256234.h"
+#include "span_1000/code_80256220.h"
 #include "types.h"
 /* Clears and sizes the 0x8016E000 heap region against the detected RAM size, then initialises the
    five dependent subsystems over it. */

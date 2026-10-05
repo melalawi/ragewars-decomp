@@ -1,5 +1,7 @@
+#include "common/types_8a8189af7b05.h"
+#include "common/unused.h"
 #include "span_16E000/code_80405454.h"
-#include "span_C76B0/data.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 
 
@@ -50,20 +52,20 @@ extern s32 D_0044FB20;
 extern s32 D_8011BE0C;
 extern s32 D_8011BA00;
 extern s32 D_8014155C;
-extern s32 D_80142CA0_de;
-extern s32 D_80142CAC;
-extern s32 D_80146CD4_de;
-extern s32 D_80146CDC;
-extern s32 D_8014D4C0_de;
+
+
+
+
+
 extern s32 D_8014D4CC;
-extern s32 D_8014D4D0;
-extern s32 D_8014D4DC;
-extern s32 D_8014D4EC_de;
-extern s32 D_8014D4F4;
-extern s32 D_800D36D4;
-extern s32 D_800D36D8;
-extern s32 D_800DE874;
-extern s32 D_800DE878;
+
+
+
+
+
+
+
+
 
 
 void func_804069F4_de(Shared_func_804069F4_S1 *arg0) {

@@ -1,4 +1,4 @@
-#include "span_1000/code_80204A68.h"
+#include "span_1000/code_80204E78.h"
 #include "types.h"
 /* Applies a hit to a damageable object: when its descriptor at 0x18 takes the hit (flag 1 for hits
    without bit 0x200, flag 2 for hits with it) it lowers the health at 0x4 by the damage, not below

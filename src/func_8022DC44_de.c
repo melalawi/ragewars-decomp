@@ -1,6 +1,5 @@
-#include "span_1000/code_8022D7A0.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8022D944.h"
 #include "types.h"
 /* Eases a player's crouch depth at 0x718: the target is D_800C7ED0[0] while input bits 0xC0000 are
    held or crouching is forced at 0x71C (which also enters state 4 unless already in it) and zero

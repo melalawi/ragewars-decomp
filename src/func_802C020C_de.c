@@ -1,4 +1,4 @@
-#include "span_1000/code_802C4604.h"
+#include "span_1000/code_802BE0D0.h"
 extern unsigned int D_8014BA48_de;
 
 /** Return the global state word. */

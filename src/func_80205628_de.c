@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80204A68.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80204E78.h"
 #include "types.h"
 
 extern void func_8026DC24_de(void * *, s32, s32, void *, s32, s32);

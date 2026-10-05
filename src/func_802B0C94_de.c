@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802B3A80.h"
-#include "span_1000/code_802B510C.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AFEAC.h"
+#include "span_1000/code_802B0388.h"
 #include "types.h"
 /* __handleMIDIMsg, drafted from ultralib src/audio/seqplayer.c: applies one MIDI channel message
    to the sequence player (note on with voice allocation, envelope and oscillator setup, note off,

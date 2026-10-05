@@ -1,5 +1,4 @@
-#include "span_1000/code_802BF740.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802BA23C.h"
 #include "types.h"
 /* __osViSwapContext, drafted from ultralib src/io/viswapcontext.c (2.0I: vStart straight from the
    field registers). The unsigned-to-float and float-to-unsigned conversions of the y scale use the

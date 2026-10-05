@@ -1,4 +1,4 @@
-#include "span_16E000/code_804288E0.h"
+#include "span_16E000/code_804290E8.h"
 #include "types.h"
 
 /* Calls func_80429654_de with 1 when the fourth argument is zero, and returns zero;

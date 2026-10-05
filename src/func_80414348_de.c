@@ -1,4 +1,4 @@
-#include "span_16E000/code_80414280.h"
+#include "span_16E000/code_80413728.h"
 /* Returns the address of the table D_80153D60. */
 extern char D_8014DAD0[];
 

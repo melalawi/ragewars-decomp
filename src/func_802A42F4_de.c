@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802A31F4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802A25C4.h"
 #include "types.h"
 /* Detaches an entity from linked effects while preserving their transforms and lifetimes; the unsigned offset-to-pointer cast preserves matrix-address scheduling and addition operand order. */
 #define NULL 0

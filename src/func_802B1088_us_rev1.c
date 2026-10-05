@@ -1,7 +1,6 @@
-#include "span_1000/code_802B033C.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE254.h"
+#include "span_1000/code_802B8CCC.h"
 #include "types.h"
 
 /* Sends the 0xC0 command with a 32-bit address over the handshake port after a 0x10/0x11 greeting, then waits for the port to go idle and releases it, returning 0. Adapted from func_802AFFEC_us_rev1 with the command byte 0x81 changed to 0xC0. */

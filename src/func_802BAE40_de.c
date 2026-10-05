@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8023A4CC.h"
-#include "span_1000/code_802BF740.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8023B9A0.h"
+#include "span_1000/code_802BB15C.h"
 #include "types.h"
 /* osInitialize, drafted from ultralib src/os/initialize.c (before 2.0J, _FINALROM): the clock
    rate comes from the ROM header through osPiRawReadIo. */
@@ -28,8 +28,8 @@ func_802BCF20_de
 (void);
 extern void func_802BD220_de(u32 sr);
 extern u32 func_802BD160_de(u32 csr);
-extern s32 func_802BB060_de(u32 devAddr, u32 *data);
-extern s32 func_802BB0F0_de(u32 devAddr, u32 data);
+
+
 extern void func_802BD280_de(void *addr, s32 size);
 extern void func_802BD010_de(void *addr, s32 size);
 

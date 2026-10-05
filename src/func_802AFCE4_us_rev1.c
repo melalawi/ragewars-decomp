@@ -1,7 +1,6 @@
-#include "span_1000/code_802AE2C8.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE254.h"
+#include "span_1000/code_802B8CCC.h"
 #include "types.h"
 /* Sends a 0x80 command followed by two NUL-terminated strings over the handshake port and reads back a big-endian 32-bit word, returning it (zero on failure). Adapted from func_802B0D3C_us_rev1 with the command 0x85 changed to 0x80, the 32-bit argument replaced by the two strings and the read retry loop removed. */
 

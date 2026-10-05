@@ -1,4 +1,4 @@
-#include "span_16E000/code_80408E1C.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 /* Releases the two active resources and clears their associated state. */
 #define NULL ((void *)0)

@@ -1,5 +1,5 @@
-#include "span_1000/code_80278C80.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80277444.h"
 #include "types.h"
 
 /* Clears bits 0x2000 and 0x100 of the flag word at offset 0x100 of an object. */

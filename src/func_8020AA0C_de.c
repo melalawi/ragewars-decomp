@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8020A95C.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80209AE8.h"
 #include "types.h"
 /** Returns the difference between the constant after D_800C6E20 and func_80209AE8_de's result, scaled by D_800C6E28. */
 

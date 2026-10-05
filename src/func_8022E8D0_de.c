@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8022E120.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8022D944.h"
 /* Returns whether the entity registered under an id in D_800D052C has flag 1 (mode 0) or flag 2
    (mode 1) set in its word at 0x14; other modes give 0. The interval also holds the empty function
    func_8022E940_de that follows. */

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041BC50.h"
+#include "span_16E000/code_8041BEA8.h"
 #include "types.h"
 
 /* Calls func_802A2394_de and func_8029973C_de, then func_80298368_de with 2, sets D_8014ADA0 and returns

@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80259014.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802591C0.h"
 #include "types.h"
 /* Starts a copy of a sound table entry when that entry is idle: takes the first node of the free list at
  * 0xD8, copies the 0xCC-byte entry into it, sets its owner value and position, clears its timer and

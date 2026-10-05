@@ -1,4 +1,4 @@
-#include "span_16E000/code_80447140.h"
+#include "span_16E000/code_80447BB0.h"
 #include "types.h"
 
 /* Fills a local 32-byte buffer and passes it with an entry's words at 4 and 8, 0x400 and a zero to

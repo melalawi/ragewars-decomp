@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8042D1BC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8042BD40.h"
 #include "types.h"
 /* Reports why a match ended: time running out on a timed match, the score limit (func_80228070_de),
    the rule set's own target (func_802282EC_de for rule set 0, the Frag Tag limit func_802281F0_de for

@@ -1,9 +1,9 @@
-#include "common/types.h"
-#include "span_1000/code_802A137C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802A0AC4.h"
 #include "types.h"
 /* Runs once (guarded by D_800D2B80), tags D_800D2B84 with a marker, and if D_800D2BC0 is not 1 sets up a resource through func_8025305C_de/func_8025637C_de before always calling func_802A1050_de with a fixed set of data addresses. */
 
-extern s32 D_800CD910_de;
+
 extern s32 D_800CD914_de;
 extern s32 D_800CD950_de;
 extern s32 D_800CD948_de;
@@ -13,7 +13,7 @@ extern s32 D_801011B8;
 
 extern s32 func_8025305C_de(s32 arg0);
 extern s32 func_8025637C_de(s32 *arg0, s32 arg1, s32 arg2, s32 arg3);
-extern void func_802A1050_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5, s32 arg6);
+
 
 extern s32 D_002A1158;
 extern s32 D_002A1188;

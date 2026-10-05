@@ -1,4 +1,4 @@
-#include "common/types.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_80400000.h"
 #include "types.h"
 /* Evaluates a spline built by func_804002D8_de at weight w, returning the position: zero for no nodes, the first or last node's position outside the weight range, and otherwise locates the weight segment, eases the arc length across it with a cubic blend of the neighbouring arc-length spacings, locates the arc-length segment and interpolates the position with the stored second derivatives. */

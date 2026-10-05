@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8024B644.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8024BA6C.h"
 #include "types.h"
 
 /* Moves an actor toward a point given relative to it: the offset is turned by the actor's facing and added to its position (or, for a mirrored actor with a parent, negated in x and z and transformed by the parent's matrix at 0x160), then passed to func_8024E79C_de with both final flags set. */

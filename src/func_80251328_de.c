@@ -1,4 +1,4 @@
-#include "span_1000/code_8024F944.h"
+#include "span_1000/code_802508E0.h"
 #include "types.h"
 /* Reclaims one pool node: finds the first unlocked node (none of flags 0x702) in the D_80104574 list that
  * was last used five or more frames ago, falling back unless keep_recent is set to the first unlocked node

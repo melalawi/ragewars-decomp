@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041DBA0.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041DF04.h"
 #include "types.h"
 /* Steps the selected menu item backwards and updates its display state. */
 

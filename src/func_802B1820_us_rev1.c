@@ -1,9 +1,9 @@
-#include "span_1000/code_802AD504.h"
-#include "types.h"
-#include "span_1000/code_802B8CCC.h"
 #include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AD504.h"
+#include "span_1000/code_802B8CCC.h"
 #include "span_1000/code_802BCF1C.h"
 #include "span_1000/code_802BD1A8.h"
+#include "types.h"
 
 extern s32 func_802AE5AC_us_rev1(s32);
 extern s32 D_8014D3E8;

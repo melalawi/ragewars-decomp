@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80210EFC.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802106E0.h"
 #include "types.h"
 /* Drives combat pursuit, retreat and strafing while refreshing target visibility, routes and fire timing. */
 

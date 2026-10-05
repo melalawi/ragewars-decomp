@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041F248.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041F1FC.h"
 #include "types.h"
 
 /* Cycles player p's choice on the screen D_800E42D0: dims the item for the current choice at 0x18

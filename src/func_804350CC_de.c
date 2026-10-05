@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435010.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 
 /* Marks entry i of the 150-byte records D_80146410 and sets the words at offsets 0x6C and 0x58

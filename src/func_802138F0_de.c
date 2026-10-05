@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80212D78.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80212C90.h"
 #include "types.h"
 /* Sets up a sound voice from its definition: clears the voice's handle at 0xC and state at 0x100 and
    0x102, takes the definition's three bytes at 0x12, 0xE and 0x10 for the output parameters, and the

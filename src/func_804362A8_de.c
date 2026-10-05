@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435CF0.h"
+#include "span_16E000/code_80435CE4.h"
 #include "types.h"
 
 /* Event callback for screen D_800E5558: on event 1 while func_8043C308_de reports the screen in state

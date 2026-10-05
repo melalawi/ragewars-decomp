@@ -1,5 +1,5 @@
-#include "span_16E000/code_8040EBC8.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 /* Expires cached UI resources against the current tick from func_802A1934_de unless the cache is
    locked: releases through func_80411AF0_de the first flagged entry whose unretained resource has an
@@ -24,7 +24,7 @@ extern struct State_func_80410448_de D_8014D720;
 extern s32 func_802A1934_de(void);
 extern void func_80411AF0_de(s32 index);
 extern void func_80419624_de(char *data);
-extern void func_80411518_de(s32 index);
+
 
 void func_80410448_de(void) {
     s32 now;

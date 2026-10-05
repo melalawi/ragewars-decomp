@@ -1,5 +1,5 @@
-#include "span_1000/code_8024F944.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802508E0.h"
 #include "types.h"
 
 extern u8 D_801462E5;

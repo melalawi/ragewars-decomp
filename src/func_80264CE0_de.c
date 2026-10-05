@@ -1,4 +1,4 @@
-#include "span_1000/code_802647BC.h"
+#include "span_1000/code_802646F4.h"
 #include "types.h"
 
 /* Snapshots every actor into the global replay table: copies its 0x70-byte block at 0x5E0, its position, its value at 0x6C and the handle func_8028B350_de finds for its identifier. */

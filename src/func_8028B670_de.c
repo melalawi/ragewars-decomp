@@ -1,6 +1,5 @@
-#include "common/types.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_1000/code_8028B64C.h"
-#include "span_1000/types.h"
 #include "types.h"
 
 extern char *func_8028FDB4_de(s32 *, s32);

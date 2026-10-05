@@ -1,5 +1,5 @@
-#include "span_1000/code_8028FC98.h"
 #include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8028FC98.h"
 #include "types.h"
 
 int func_8028FEB8_de(int *arg0) {

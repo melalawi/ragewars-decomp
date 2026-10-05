@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435010.h"
+#include "span_16E000/code_80434F4C.h"
 /* Releases the first of the four twelve-byte slots at 0x2DF8 of D_800E54A4 whose id and value match
    the arguments, marking its id -1 and its state 2, and returns whether one was found. */
 

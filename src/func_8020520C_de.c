@@ -1,5 +1,5 @@
-#include "span_1000/code_80204E78.h"
 #include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80204E78.h"
 #include "types.h"
 
 extern char D_800C8420_de;

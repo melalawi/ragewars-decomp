@@ -1,5 +1,4 @@
-#include "span_1000/code_8029D984.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8029EB74.h"
 #include "types.h"
 
 /* Returns e raised to a double: 1 for arguments of negligible magnitude, and otherwise splits the argument into k ln 2 plus a remainder r, evaluates the rational approximation 1/2 + p(r)/(q(r) - p(r)) and scales it by two to the power k + 1 through func_8029ABA0_de. */

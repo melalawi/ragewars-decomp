@@ -1,7 +1,7 @@
-#include "span_1000/code_8025A3EC.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8025A3EC.h"
+#include "types.h"
 
 /* Returns whether any of the sixteen occupied slots of a record, other than the one its header marks as local, holds the given value at slot offset 0xA8. */
 

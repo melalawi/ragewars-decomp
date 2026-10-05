@@ -1,4 +1,4 @@
-#include "span_16E000/code_80445CE8.h"
+#include "span_16E000/code_804453C4.h"
 #include "types.h"
 
 /* Compares two strings byte by byte and returns whether the last pair compared is equal. It stops

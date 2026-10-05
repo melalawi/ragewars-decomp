@@ -1,5 +1,5 @@
-#include "span_16E000/code_8040A4BC.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040A83C.h"
 #include "types.h"
 
 /* Clears bit 26 and sets bit 3 of the flag word at offset 0x120 of the object at offset 0xC of a

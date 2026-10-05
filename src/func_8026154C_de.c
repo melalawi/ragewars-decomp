@@ -1,4 +1,4 @@
-#include "span_1000/code_80260D98.h"
+#include "span_1000/code_802609CC.h"
 #include "types.h"
 
 extern f32 D_800C41A8_de[2];

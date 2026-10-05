@@ -1,4 +1,4 @@
-#include "span_1000/code_802A6488.h"
+#include "span_1000/code_802A25C4.h"
 #include "types.h"
 
 extern u32 D_800CD72C;

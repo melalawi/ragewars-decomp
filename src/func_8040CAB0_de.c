@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_16E000/code_8040BBC0.h"
-#include "span_16E000/code_80414280.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8040C780.h"
+#include "span_16E000/code_804143D8.h"
 #include "types.h"
 /* Flushes the queued text sprite batches: when any are queued it selects render mode 0x53333 if
    not already active, saves the clip rectangle and applies the queue's own, then walks the texture

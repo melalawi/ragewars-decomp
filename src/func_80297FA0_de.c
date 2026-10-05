@@ -1,9 +1,8 @@
-#include "common/types.h"
-#include "span_1000/code_80297008.h"
-#include "span_1000/code_8029AC80.h"
-#include "span_16E000/code_8040EBC8.h"
-#include "span_16E000/code_80410E9C.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80297CD0.h"
+#include "span_1000/code_80299DB4.h"
+#include "span_16E000/code_8040F1E0.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 
 /* Initialises the interface system for a number of screens: resets the input state and display, allocates and clears the 0x544-byte interface state in D_8014D080 with its 64 widget slots, its 900-byte object cache and its screen table, records the screen count, a 4000 limit and the frame duration from func_802A18CC_de, resets the focus and paging fields, and registers fonts 9 and 11. */

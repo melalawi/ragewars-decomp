@@ -1,6 +1,6 @@
+#include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_8044ACCC.h"
 #include "types.h"
-#include "common/types_8fd754e1e915.h"
 
 /* Releases the two handles at offsets 0x11BC and 0x11C0 of an object: each goes to func_8025CA24_de
    with what func_8025CC6C_de returns, and each is then cleared. */

@@ -1,5 +1,6 @@
-#include "span_1000/code_8023940C.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802393F4.h"
 #include "types.h"
 /* Posts a text as on-screen messages, one per line: the text (or D_800D7028 when given D_800D7034) is split
  * at newlines and for each non-empty line the oldest message node of the owner's list at 0xF24 is recycled

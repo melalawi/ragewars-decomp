@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8022E120.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8022D944.h"
 #include "types.h"
 
 /* Returns whether the entry func_8028B2F8_de finds in D_8011FE88 for an object's key at 0x14 exists

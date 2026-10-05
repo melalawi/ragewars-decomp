@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040EBC8.h"
+#include "span_16E000/code_8040C780.h"
 #include "types.h"
 /* Swaps two widgets within the widget tree: after walking up from the first widget to the root
    (type 2), it finds each widget's predecessor in its parent's child list, links the other widget

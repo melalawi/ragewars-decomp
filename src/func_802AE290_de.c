@@ -1,5 +1,5 @@
-#include "span_1000/code_802B323C.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE028.h"
 #include "types.h"
 /* alCSeqNewMarker, drafted from ultralib src/audio/cseq.c: fill a compressed-sequence marker
    with the track state of the first event at or after the given tick count, stepping a scratch

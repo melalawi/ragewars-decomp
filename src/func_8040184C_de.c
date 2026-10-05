@@ -1,6 +1,7 @@
-#include "common/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "common/unused.h"
 #include "span_16E000/code_80400000.h"
-#include "span_C76B0/data.h"
 #include "types.h"
 /* Evaluates keyframe track 3 of the current record's resource at time t: before the first key or
    after the last it holds that key's value, otherwise it finds the surrounding keys and blends
@@ -11,7 +12,7 @@
 
 
 extern func_80203E78_S1 *D_800DE7E0;
-extern f32 D_800DCB30[];
+
 
 #define THREE D_800DCB38
 #define ONE (*(&D_800DCB38 + 1))

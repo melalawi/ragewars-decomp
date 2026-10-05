@@ -1,4 +1,4 @@
-#include "span_1000/code_802C0384.h"
+#include "span_1000/code_802BB67C.h"
 void func_802BB870_de(void **arg0, void *arg1) {
     void **a0;
     void *v0;

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802625B8.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802624A0.h"
 #if defined(VERSION_EU)
 #define func_802B2350 func_802AD520_eu
 #else

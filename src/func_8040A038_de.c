@@ -1,4 +1,4 @@
-#include "span_16E000/code_80408E1C.h"
+#include "span_16E000/code_80409A88.h"
 /* Returns the data table for a kind: kinds 1, 2 and 3 have their own, kind 0 and anything else use the
    first. */
 extern char D_00450BF0_de[];

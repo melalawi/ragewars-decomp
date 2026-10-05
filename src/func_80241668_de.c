@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802406DC.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802412C0.h"
 #include "types.h"
 
 /* Tests whether a point lies inside an object's four-sided footprint: for each edge of the corners at 0x18 it checks the side the point falls on in the x-z plane, walking the edges in reverse when the winding value at 0x4C is negative. */

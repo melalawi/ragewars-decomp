@@ -1,4 +1,4 @@
-#include "span_1000/code_80259014.h"
+#include "span_1000/code_802591C0.h"
 /* Returns 1 when the object's owner at 0x102 is set, or when the id is below 256 and at least six of
    its seventeen 0xCC-byte slots at 0x1E64 already carry that id; otherwise 0. */
 

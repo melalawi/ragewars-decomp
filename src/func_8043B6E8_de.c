@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80439930.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8043A0A4.h"
 #include "types.h"
 
 /* Fills player p's column values on the screen D_800E59E0 from what the player owns: unless the

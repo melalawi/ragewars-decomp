@@ -1,8 +1,8 @@
-#include "span_1000/code_8028308C.h"
-#include "types.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8028308C.h"
+#include "types.h"
 
 /** Return arg0, but treat the sentinel value 0xA as 0. */
 s32 func_80283D38_de(s32 arg0) {

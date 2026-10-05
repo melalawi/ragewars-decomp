@@ -1,4 +1,4 @@
-#include "span_1000/code_8026D4F0.h"
+#include "span_1000/code_8026AC38.h"
 
 extern void func_80272CB0_de(void *, float, float, float);
 extern void func_8026FC9C_de(void *, void *);

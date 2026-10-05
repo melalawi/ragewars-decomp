@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040AC98.h"
+#include "span_16E000/code_8040A83C.h"
 #include "types.h"
 
 /* Stores 0 in D_80153768 and 0 in D_80153734. */

@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041F248.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041F1FC.h"
 #include "types.h"
 
 /* Resets player p's choice on the screen D_800E42D0: calls func_8040E8D8_de(1) on the three items in

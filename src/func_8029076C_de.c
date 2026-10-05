@@ -1,5 +1,5 @@
-#include "span_1000/code_8024E6C8.h"
-#include "span_1000/code_8028FD24.h"
+#include "span_1000/code_8024E914.h"
+#include "span_1000/code_8028FC98.h"
 #include "types.h"
 
 extern f32 D_800FF1F8[];

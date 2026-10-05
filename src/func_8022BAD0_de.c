@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8022B500.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8022BA90.h"
 #include "types.h"
 
 extern void *func_8028CFA0_de(void *arg0, s32 arg1, s32 arg2);

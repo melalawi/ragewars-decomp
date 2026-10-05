@@ -1,5 +1,4 @@
-#include "span_1000/code_802BB0DC.h"
-#include "span_1000/types.h"
+#include "span_1000/code_802B53FC.h"
 #include "acmd.h"
 #include "types.h"
 #include "abi.h"

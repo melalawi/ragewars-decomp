@@ -1,5 +1,4 @@
-#include "span_1000/code_8026D4F0.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8026AC38.h"
 
 
 extern int D_800CC364;

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80408E1C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80409A88.h"
 #include "types.h"
 
 /* Points offset 0x14 of a record at D_800D7794 when D_8015375C is set, and returns zero. */

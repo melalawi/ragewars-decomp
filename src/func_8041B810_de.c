@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041ADB4.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 /* Returns the halfword at offset 0xC of the object held in entry i of the pointer array at

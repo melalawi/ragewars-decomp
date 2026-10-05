@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802406DC.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802412C0.h"
 #include "types.h"
 /* Builds the eight world-space corners of an object's collision box: the extents come from the shape at
  * 0x18 + 0x14 (half width and depth, or the radius for a cylinder of kind 1), grown by the optional

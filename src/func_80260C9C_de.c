@@ -1,6 +1,5 @@
-#include "span_1000/code_8025E5D0.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802609CC.h"
 #include "types.h"
 /* Decodes element arg1 of a packed bit-field float array into a float scaled into its range. Adapted from func_802609AC_de, inlined as a helper (with the width held in a local) called with a base plus width-times-index bit address and the record's range. */
 

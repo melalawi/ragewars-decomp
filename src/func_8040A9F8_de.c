@@ -1,5 +1,5 @@
-#include "span_16E000/code_8040A4BC.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040A83C.h"
 #include "types.h"
 
 /* Points a field's text at D_800D7810 when D_80153730 is set, at D_800D7818 when D_80153774 is set instead, and at

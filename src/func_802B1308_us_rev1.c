@@ -1,7 +1,6 @@
-#include "span_1000/code_802B033C.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE254.h"
+#include "span_1000/code_802B8CCC.h"
 #include "types.h"
 /* Sends the 0xC1 command followed by a NUL-terminated string, terminator included, over the handshake port after a 0x10/0x11 greeting, then waits for the port to go idle and releases it, returning 0. Adapted from func_802B1088_us_rev1 with the command byte 0xC0 changed to 0xC1 and the four address bytes changed to a loop over the string bytes. */
 

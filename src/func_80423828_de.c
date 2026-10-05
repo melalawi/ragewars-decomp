@@ -1,5 +1,4 @@
-#include "span_16E000/code_80421A88.h"
-#include "span_16E000/code_804233DC.h"
+#include "span_16E000/code_80423280.h"
 #include "types.h"
 
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de, for its MESSAGE_COUNT messages from

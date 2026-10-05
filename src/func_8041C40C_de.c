@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041BC50.h"
+#include "span_16E000/code_8041BEA8.h"
 /* In one- or no-player mode, counts a tick on the state D_800E3518 and, while it is not paused, once
    more than five ticks have passed runs func_802A2360_de and func_8041C244_de; always returns 0. */
 

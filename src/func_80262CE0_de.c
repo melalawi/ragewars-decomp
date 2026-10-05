@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802625B8.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802624A0.h"
 #include "types.h"
 /* Spawns an effect in a scene when effects are enabled and a count is given: resolves a missing effect id
  * from the variant (func_8028B21C_de, giving up when unknown) and a default variant from the id

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8044D024.h"
+#include "span_16E000/code_8044E2B8.h"
 #include "types.h"
 
 /* Resets a match: calls func_80264854_de with zero, func_80285D30_de on D_8010EC90 and func_8022A880_de on

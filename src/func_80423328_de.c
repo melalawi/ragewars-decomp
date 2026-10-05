@@ -1,4 +1,4 @@
-#include "span_16E000/code_804233DC.h"
+#include "span_16E000/code_80423280.h"
 #if defined(VERSION_EU_X)
 enum { SHORTCUT_RESET = 0x5C, SHORTCUT_SIX = 0x52, SHORTCUT_FIVE = 0x55 };
 #else

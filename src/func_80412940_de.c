@@ -1,4 +1,4 @@
-#include "span_16E000/code_80411FB8.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 
 /* Reads the two words of a selected grid cell into caller outputs, after looking up its entry by identifier. Adapted from matched setter func_80412898_de. */

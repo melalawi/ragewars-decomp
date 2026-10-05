@@ -1,4 +1,4 @@
-#include "span_1000/code_80293E60.h"
+#include "span_1000/code_80293A04.h"
 #include "types.h"
 
 /* Clears D_800D29C8 when func_80293904_de accepts its argument with 4.0 and two fours. */

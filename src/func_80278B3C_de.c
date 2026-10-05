@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80276544.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80277444.h"
 #include "types.h"
 /* Adds packed per-axis byte offsets to each entry of a vertex list. */
 

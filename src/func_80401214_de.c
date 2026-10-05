@@ -1,4 +1,5 @@
-#include "common/types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_80400000.h"
 #include "types.h"
 /* Samples the current record's clip sequence at time t: walks clip list 0 accumulating each

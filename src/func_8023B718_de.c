@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8023A4CC.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8023A284.h"
 #include "types.h"
 /* Updates a rotor: while the control mask bit is held its throttle at 0x208 rises by the descriptor rate up
  * to D_800C86E0, otherwise it falls to zero (returning 1 once idle); the value phase advances, the two wrap

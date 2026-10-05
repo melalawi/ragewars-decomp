@@ -1,4 +1,4 @@
-#include "span_16E000/code_804136EC.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 
 /* Returns the halfword at offset 0x6 of a record. It is one of a run of accessors from

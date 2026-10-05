@@ -1,8 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80208410.h"
-#include "span_1000/code_8020A95C.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80209AE8.h"
 #include "types.h"
 /* Runs a computer player's engagement timer: while the countdown at 0x2E4 is positive it rerolls the
    wait at 0x2E8 as the config's base at 8 plus a random share (scale D_800C6E00) of its spread at 0xC

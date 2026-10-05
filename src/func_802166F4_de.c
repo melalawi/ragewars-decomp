@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80214DD4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80213ED4.h"
 #include "types.h"
 /* Picks a random entry from a table of mask and id records ending in -1: every id whose mask shares
    a bit with flags and that func_80246A08_de finds for the owner is added to a weighted picker with

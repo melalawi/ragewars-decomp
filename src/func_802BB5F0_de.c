@@ -1,4 +1,4 @@
-#include "span_1000/code_802C0384.h"
+#include "span_1000/code_802BB15C.h"
 #include "types.h"
 /* osSetThreadPri, drafted from ultralib src/os/setthreadpri.c (2.0I-L, non-debug). */
 

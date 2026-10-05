@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041A0AC.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_16E000/code_8041A4B0.h"
 #include "types.h"
 /* Scrolls a menu one step in the direction its state word at offset 0x54 records: up through
    func_8041A8E8_de for state 0, down through func_8041A910_de for state 1, and returns zero. */

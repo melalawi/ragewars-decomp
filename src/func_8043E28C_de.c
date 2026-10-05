@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8043D904.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 
 /** Runs func_804423BC_de on a byte in arg1->unk1C->unk5D8[0x83] and writes the result back into that byte. */

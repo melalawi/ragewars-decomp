@@ -1,6 +1,4 @@
-#include "span_1000/code_802B6958.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802B0388.h"
 /* FAKEMATCH: retains inherited numeric field accesses because a verified live shared layout for those accesses is not available; the old access widths and evaluation order are preserved. */
 #include "types.h"
 /* Initialises the index'th sixteen-byte entry of the table at 0x60 of the object: bytes 6, 0xA and

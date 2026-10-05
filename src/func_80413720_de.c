@@ -1,4 +1,4 @@
-#include "span_16E000/code_804136EC.h"
+#include "span_16E000/code_80413728.h"
 
 
 void func_80413720_de(struct Config *out, unsigned char type, short x, short y,

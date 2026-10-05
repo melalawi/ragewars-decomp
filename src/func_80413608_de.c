@@ -1,4 +1,4 @@
-#include "span_16E000/code_80411FB8.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 
 /* The argument is a pointer into 0x8068xxxx whose first byte the debugger read as 0x14, and the

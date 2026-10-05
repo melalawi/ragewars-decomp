@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435CF0.h"
+#include "span_16E000/code_80435CE4.h"
 /* Calls func_802A2164_us and then func_80298368_de with 1. */
 extern void 
 #if defined(VERSION_EU)

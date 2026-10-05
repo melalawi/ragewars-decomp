@@ -1,5 +1,5 @@
-#include "span_16E000/code_8043D904.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 #define NULL ((void *)0)
 /* Finds the first of the four slots in D_8010F328 that func_8026437C_de accepts, writing its index to out and returning it, or writing -1 and returning NULL when none does. */

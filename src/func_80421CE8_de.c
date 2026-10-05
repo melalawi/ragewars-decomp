@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_16E000/code_80421A88.h"
-#include "span_16E000/code_80435010.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80420E90.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de, for messages 0x3A2 to 0x3A7

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_166000/code_80426234.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_166000/code_80426310.h"
 #include "types.h"
 /* Checks the entered code D_800E5CAC against the twelve cheat codes of D_0044FB90 (each stored with
    every character xored with its index): for each one that matches, ors its flags into the cheat word of D_801462C8,

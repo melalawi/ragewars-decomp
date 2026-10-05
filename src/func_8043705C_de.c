@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80436D48.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_804366C4.h"
 #include "types.h"
 
 /* Calls func_8029973C_de; when func_80299A08_de reports 0x1C8, passes the word at offset 0x14 of the

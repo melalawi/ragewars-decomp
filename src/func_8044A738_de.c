@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80449968.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8044ACCC.h"
 /* Detaches the object at offset 0xC of an owner: when there is one, finalises it through
    func_8044A170_de and removes it from the lists at offsets 0xC and 0x20 through func_80255ED8_de and
    func_80255D14_de. Returns the object. */

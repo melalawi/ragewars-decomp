@@ -1,4 +1,4 @@
-#include "span_1000/code_8025E5D0.h"
+#include "span_1000/code_8025E568.h"
 /* Reads a width-bit field starting at a packed bit address, returning it right-aligned. Adapted from func_80260DA8_de, with the bit address and width passed directly instead of computed from a base/width record. */
 
 int func_802606C4_de(int bitAddress, unsigned int width) {

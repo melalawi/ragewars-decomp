@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8028FD24.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8028FC98.h"
 #include "types.h"
 
 typedef s32 M2C_UNK;

@@ -1,4 +1,4 @@
-#include "span_1000/code_802B510C.h"
+#include "span_1000/code_802B0388.h"
 #include "types.h"
 /* __vsVol, drafted from ultralib src/audio/seqplayer.c: combine a voice's tremolo, velocity and
    envelope gain with its sound's sample volume, the player volume and the channel volume. */

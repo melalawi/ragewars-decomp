@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80252714.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802536F4.h"
 #include "types.h"
 /* Under the queue lock, takes the table entry indexed by the current slot, marks the slot empty with -1, and returns that entry. Adapted from func_802539EC_de, with the slot read and cleared instead of set, and the entry returned; the table is indexed through a byte offset so the read stays ahead of the clear. */
 

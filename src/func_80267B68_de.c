@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802675E0.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802661FC.h"
 #include "types.h"
 /* Forwards a position and extent to func_80266810_de with zero flags and priority 0x80, but only when
    the first byte of the given object is 1. Adapted from the matched twin func_80267BC8_de with the object

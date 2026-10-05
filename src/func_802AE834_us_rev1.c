@@ -1,6 +1,6 @@
-#include "span_1000/code_802AE2C8.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE254.h"
+#include "span_1000/code_802B8CCC.h"
 #include "types.h"
 /* Reads count bytes from the cartridge-domain port D_B2000021 into a buffer, waiting for bit 0x40 of D_B2000015 before each byte with D_800D3650 retries, accumulating a rotate-and-add checksum stored through the third argument and returning 1 on success. Adapted from func_802AE380_us_rev1 with the single-byte read changed to a counted loop with a checksum and the strobe registers D_B2000004 and D_B2000008 raised and lowered around it. */
 

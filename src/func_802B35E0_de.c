@@ -1,5 +1,5 @@
-#include "span_1000/code_802B82D0.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802B339C.h"
 #include "types.h"
 #include "audio_callbacks.h"
 /* alSynStartVoiceParams, drafted from ultralib src/audio/synstartvoiceparam.c (2.0I branch, no

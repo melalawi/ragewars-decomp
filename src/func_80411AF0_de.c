@@ -1,5 +1,5 @@
-#include "span_16E000/code_80410E9C.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 /* Releases UI resource slot i once its retain count reaches zero, closing its open entry and clearing the slot id. */
 

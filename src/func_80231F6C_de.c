@@ -1,7 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802301E4.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80231F5C.h"
 #include "types.h"
 /* Handles a player's charged secondary action: refreshes the idle state when the action is not allowed and
  * picks the effect position (the weapon's at 0x128, else the player's); a player flagged 0x4000 that may

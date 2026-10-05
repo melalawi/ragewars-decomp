@@ -1,5 +1,4 @@
-#include "span_1000/code_80245D38.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80245980.h"
 /* Resets an object through func_8024DD10_de, then clears its words from 0x1C to 0x38 and at 0x40, 0x44
    and 0x4C, sets the word at 0x3C to -1 and stores D_800C8914 in the float at 0x48. */
 

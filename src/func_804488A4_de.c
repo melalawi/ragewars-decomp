@@ -1,5 +1,5 @@
-#include "span_16E000/code_80447140.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80447BB0.h"
 #include "types.h"
 /* __osPfsRWInode, drafted from ultralib src/io/contpfs.c (2.0I branch): read or write one bank's
    controller pak inode table, keeping the mirror copy in step and repairing whichever copy fails the

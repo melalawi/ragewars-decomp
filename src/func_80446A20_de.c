@@ -1,5 +1,5 @@
-#include "span_16E000/code_80447140.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041C67C.h"
 #include "types.h"
 /* osPfsFileState, drafted from ultralib src/io/pfsfilestate.c (2.0I branch): read a controller pak
    file's directory entry, count the pages of its chain across banks, and report its size, codes and

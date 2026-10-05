@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8025AE3C.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8025A3EC.h"
 #include "types.h"
 
 extern char D_800C3F78_de;

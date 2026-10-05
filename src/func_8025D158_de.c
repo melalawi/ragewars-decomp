@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8025C67C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8025C544.h"
 #include "types.h"
 
 /* Initialises a resource record with the resource, -1 at 4 and 0xC, zero at 8 and 0x14, 0x40 at 0x18, and at 0x1C the halfword func_802B2510_de returns for func_80258D40_de's result on the stored resource and D_800D0D78. Adapted from func_80205694_de with the two calls replaced by field stores and a nested call pair whose first argument is read back from the record. */

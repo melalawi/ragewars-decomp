@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80245D38.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80246E34.h"
 #include "types.h"
 /* Returns an actor's aim with auto-aim applied: with no assist cone the actor's aiming orientation from
  * func_8024796C_de is returned unchanged; otherwise, of the live entities other than the actor (not flagged 1,

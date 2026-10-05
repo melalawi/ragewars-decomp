@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802B3A80.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE028.h"
 #include "types.h"
 #ifndef FUNC_802AFB6C_DE
 #define FUNC_802AFB6C_DE

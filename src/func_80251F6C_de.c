@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8024F944.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802508E0.h"
 #include "types.h"
 /* Looks a key up in the request hash table under the manager lock: an existing request bumps its
    node's reference count and flags, stamps it and hands the node to func_80255FB8_de; otherwise, unless

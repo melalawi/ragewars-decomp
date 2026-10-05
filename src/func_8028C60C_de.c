@@ -1,9 +1,9 @@
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
-#include "span_1000/code_8028B64C.h"
-#include "types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
-#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8028B64C.h"
+#include "types.h"
 
 extern f32 D_800CD738;
 extern void func_80278C10_de(void *);

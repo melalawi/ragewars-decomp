@@ -1,5 +1,4 @@
-#include "span_16E000/code_8042D1BC.h"
-#include "span_16E000/types.h"
+#include "span_16E000/code_8042BD40.h"
 #include "types.h"
 
 #ifdef VERSION_EU_X

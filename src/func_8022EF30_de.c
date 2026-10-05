@@ -1,4 +1,4 @@
-#include "span_1000/code_8022E120.h"
+#include "span_1000/code_8022E938.h"
 #include "types.h"
 
 extern void func_802A001C_de(s32, s32, s32);

@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8024E914.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 extern char D_8011BDC8;
 extern int func_8028B25C_de(void *arg0, int arg1);

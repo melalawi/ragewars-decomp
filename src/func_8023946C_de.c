@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8023940C.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802393F4.h"
 
 
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);

@@ -1,6 +1,6 @@
-#include "span_16E000/code_8042ED84.h"
-#include "span_16E000/code_80435010.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8042F988.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 /* Steps each channel's fade timer and writes the level its curve currently reaches. */
 

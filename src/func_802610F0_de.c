@@ -1,4 +1,4 @@
-#include "span_1000/code_80260D98.h"
+#include "span_1000/code_802609CC.h"
 #include "types.h"
 
 /* Opens the next entry of a packed file: finds the last filled slot before the 0xDEADBEEF end marker in the offset table, records the following slot's offset as that slot's offset plus the given size, optionally hands the slot's data to func_802BD3A0_de, and returns a pointer to it. */

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8020F2A8.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802106E0.h"
 #include "types.h"
 /* Probes one of a vehicle's eight wheel rays: casts from the vehicle position to its scaled wheel offset
  * through func_8024491C_de and stores the wheel's reach as the XZ distance to whatever was hit (diagonals

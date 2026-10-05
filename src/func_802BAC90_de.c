@@ -1,4 +1,4 @@
-#include "span_1000/code_802BF740.h"
+#include "span_1000/code_802BAC58.h"
 #include "types.h"
 /* osCreateThread, drafted from ultralib src/os/createthread.c (2.0I-J, no thread profile). */
 

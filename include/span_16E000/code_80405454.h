@@ -1,55 +1,8 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_80405454_H
 #define UNBAKE_SPAN_16E000_CODE_80405454_H
-#include "common/types.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
 #include "../types.h"
-struct Menu_func_804066BC_de;
-typedef struct Menu_func_804066BC_de Menu_func_804066BC_de;
-
-struct Menu_func_804085E0_de;
-typedef struct Menu_func_804085E0_de Menu_func_804085E0_de;
-
-struct Menu_func_80408C4C_de;
-typedef struct Menu_func_80408C4C_de Menu_func_80408C4C_de;
-
-struct PakRecord;
-typedef struct PakRecord PakRecord;
-
-struct SharedPlayer_func_80408C4C_de;
-typedef struct SharedPlayer_func_80408C4C_de SharedPlayer_func_80408C4C_de;
-
-struct Shared_func_804069F4_S1;
-typedef struct Shared_func_804069F4_S1 Shared_func_804069F4_S1;
-
-struct func_80405CDC_S1;
-typedef struct func_80405CDC_S1 func_80405CDC_S1;
-
-struct func_80405CDC_S2;
-typedef struct func_80405CDC_S2 func_80405CDC_S2;
-
-struct func_80408C78_S1;
-typedef struct func_80408C78_S1 func_80408C78_S1;
-
-struct Owner_func_804066BC_de;
-struct Owner_func_804066BC_de {
-    char pad0[0x328];
-    s32 flags;
-};
-struct Menu_func_804066BC_de;
-struct Owner_func_804066BC_de;
-struct Menu_func_804066BC_de {
-    char pad0[0xC];
-    struct Owner_func_804066BC_de *owner;
-    char pad10[0xC];
-    func_8024795C_S2 *player;
-    func_80242278_S1 *slot;
-};
-struct Menu_func_804085E0_de;
-struct Menu_func_804085E0_de {
-    char pad0[0x1C];
-    SharedPlayer_func_8022A398_de *player;
-    func_80242278_S1 *slot;
-};
 struct Body;
 struct Character;
 struct Controller;
@@ -73,6 +26,7 @@ struct Shared_Voice;
 struct StateInfo;
 struct TeamInfo;
 struct View;
+/* unbake published declaration: published_09edad85885cead9794dec65 */
 struct SharedPlayer_func_80408C4C_de {
     union {
         struct {
@@ -1494,48 +1448,40 @@ struct SharedPlayer_func_80408C4C_de {
         } view16E0_2;
     } views16E0;
 };
-struct Menu_func_80408C4C_de;
-struct Menu_func_80408C4C_de {
-    char pad0[0x1C];
-    SharedPlayer_func_80408C4C_de *player;
-    func_80242278_S1 *slot;
-    char *prompt;
-};
-struct PakRecord;
-struct PakRecord {
-    u8 present;
-    char pad[7];
-    char pak[0x68];
-};
-struct Record_func_80405CA8_de;
-struct Record_func_80405CA8_de {
-    s32 a;
-    s32 b;
-    s32 c;
-    s32 values[3];
-    s32 d;
-    s32 e;
-};
-struct Shared_func_804069F4_S1;
-struct func_8021846C_S3;
-struct Shared_func_804069F4_S1 {
-    char pad0[0x1C];
-    s32 first;
-    struct func_8021846C_S3 * second;
-};
+
+struct Menu_func_804066BC_de;
+/* unbake published declaration: published_0c5c85ebf4c6dd74ef364e83 */
+typedef struct Menu_func_804066BC_de Menu_func_804066BC_de;
+
+/* unbake published declaration: published_199699f747d1e3013e330c4f */
+extern void func_8040570C_de(u8 *arg0, s8 *arg1, s32 arg2);
+
 struct Shape_typemap_110;
-struct func_80405CDC_S1;
-struct func_80405CDC_S1 {
-    char pad0[0x4];
-    struct Shape_typemap_110 unk4;
-};
-struct Shape_typemap_110;
-struct func_80405CDC_S2;
-struct func_80405CDC_S2 {
-    char pad0[0x8];
-    struct Shape_typemap_110 unk8;
-};
+/* unbake published declaration: published_1b5f97ff367ab59ea76e94a2 */
+extern void func_80405CDC_de(struct Shape_typemap_110 *arg0);
+
 struct func_80408C78_S1;
+/* unbake published declaration: published_226238b70fd2d71f0864c791 */
+typedef struct func_80408C78_S1 func_80408C78_S1;
+
+struct Owner_func_804066BC_de;
+struct Owner_func_804066BC_de {
+    char pad0[0x328];
+    s32 flags;
+};
+struct Menu_func_804066BC_de;
+struct Owner_func_804066BC_de;
+/* unbake published declaration: published_256bdb7728462426e67dc206 */
+struct Menu_func_804066BC_de {
+    char pad0[0xC];
+    struct Owner_func_804066BC_de *owner;
+    char pad10[0xC];
+    func_8024795C_S2 *player;
+    func_80242278_S1 *slot;
+};
+
+struct func_80408C78_S1;
+/* unbake published declaration: published_2d34d8612a6fbf2b153fdb91 */
 struct func_80408C78_S1 {
     u16 unk0;
     char pad0[0x2 - 0x0 - sizeof(u16)];
@@ -1545,9 +1491,87 @@ struct func_80408C78_S1 {
     char pad4[0x6 - 0x4 - sizeof(u16)];
     u16 unk6;
 };
-extern void func_8040570C_de(u8 *arg0, s8 *arg1, s32 arg2);
-extern int func_804058B0_de(struct Record_func_80405CA8_de * arg0);
+
+struct SharedPlayer_func_80408C4C_de;
+/* unbake published declaration: published_f01098f04ef4f28e376b9491 */
+typedef struct SharedPlayer_func_80408C4C_de SharedPlayer_func_80408C4C_de;
+
+struct Menu_func_80408C4C_de;
+/* unbake published declaration: published_30cb921915fb5d1a0714ad37 */
+struct Menu_func_80408C4C_de {
+    char pad0[0x1C];
+    SharedPlayer_func_80408C4C_de *player;
+    func_80242278_S1 *slot;
+    char *prompt;
+};
+
+struct Record_func_80405CA8_de;
+/* unbake published declaration: published_e7d4b54a674edaa2d6e680ba */
+struct Record_func_80405CA8_de {
+    s32 a;
+    s32 b;
+    s32 c;
+    s32 values[3];
+    s32 d;
+    s32 e;
+};
+
+struct Record_func_80405CA8_de;
+/* unbake published declaration: published_337eba4a89239007658e62f4 */
 extern void func_80405CA8_de(struct Record_func_80405CA8_de *record);
-extern void func_80405CDC_de(struct Shape_typemap_110 *arg0);
-extern s32 func_804085E0_de(void *unused, Menu_func_804085E0_de *menu);
+
+struct Shared_func_804069F4_S1;
+struct func_8021846C_S3;
+/* unbake published declaration: published_46f2e6c4afdd79f6aee9fc57 */
+struct Shared_func_804069F4_S1 {
+    char pad0[0x1C];
+    s32 first;
+    struct func_8021846C_S3 * second;
+};
+
+struct func_80405CDC_S1;
+/* unbake published declaration: published_4c9774149328f56d49b2e306 */
+typedef struct func_80405CDC_S1 func_80405CDC_S1;
+
+struct Shape_typemap_110;
+struct func_80405CDC_S2;
+/* unbake published declaration: published_50311e5f9e42759e0952a3c1 */
+struct func_80405CDC_S2 {
+    char pad0[0x8];
+    struct Shape_typemap_110 unk8;
+};
+
+struct func_80405CDC_S2;
+/* unbake published declaration: published_6a77869e725bdc10dd450529 */
+typedef struct func_80405CDC_S2 func_80405CDC_S2;
+
+struct Shape_typemap_110;
+struct func_80405CDC_S1;
+/* unbake published declaration: published_7f2dd38fab0a5597cff2e05a */
+struct func_80405CDC_S1 {
+    char pad0[0x4];
+    struct Shape_typemap_110 unk4;
+};
+
+struct PakRecord;
+/* unbake published declaration: published_7f84f2e3be54bcdd8dc24c1d */
+struct PakRecord {
+    u8 present;
+    char pad[7];
+    char pak[0x68];
+};
+
+struct Shared_func_804069F4_S1;
+/* unbake published declaration: published_cc2f1b9a2db6b3eaa6afb600 */
+typedef struct Shared_func_804069F4_S1 Shared_func_804069F4_S1;
+
+struct Menu_func_80408C4C_de;
+/* unbake published declaration: published_f260e65cd0dff2e5da3ec00f */
+typedef struct Menu_func_80408C4C_de Menu_func_80408C4C_de;
+
+struct PakRecord;
+/* unbake published declaration: published_f4dc0758175a70b0450d8605 */
+typedef struct PakRecord PakRecord;
+
+extern int func_804058B0_de(struct Record_func_80405CA8_de * arg0);
 #endif

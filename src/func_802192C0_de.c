@@ -1,8 +1,8 @@
 #include "common/types_1dc8418c21db.h"
-#include "span_1000/code_802192C0.h"
-#include "types.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802192C0.h"
 #include "span_1000/code_8026AC38.h"
+#include "types.h"
 #include "n64sdk.h"
 #include "gbi.h"
 

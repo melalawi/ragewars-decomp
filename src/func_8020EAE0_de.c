@@ -1,4 +1,4 @@
-#include "span_1000/code_8020D328.h"
+#include "span_1000/code_8020EAE0.h"
 #include "types.h"
 /* Commits a pending selection to the controller D_8013B364: returns at once when nothing is
    requested at 0xC, the request is already active at 0x4, or it continues the committed request at

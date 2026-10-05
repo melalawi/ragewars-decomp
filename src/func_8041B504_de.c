@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041ADB4.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 /* Walks the item list at offset 8 of a menu and sets the byte at offset 0x10 of every item

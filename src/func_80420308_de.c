@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041F248.h"
+#include "span_16E000/code_8041F1FC.h"
 #include "types.h"
 
 /* Activates player p's panel on the screen D_800E42D0: passes p and the frame item id from p's

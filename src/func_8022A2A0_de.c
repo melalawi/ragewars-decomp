@@ -1,6 +1,7 @@
-#include "common/types.h"
-#include "span_1000/code_80228934.h"
-#include "span_1000/code_8026D4F0.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8022A274.h"
+#include "span_1000/code_8026AC38.h"
 #include "types.h"
 
 

@@ -1,5 +1,4 @@
-#include "span_1000/code_8026565C.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802661FC.h"
 #include "types.h"
 
 extern f32 func_8024BEDC_de(void *arg0);

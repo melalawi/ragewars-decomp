@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041BC50.h"
+#include "span_16E000/code_8041BEA8.h"
 #include "types.h"
 
 /* Counts calls in D_800E3510: below four it returns what func_8041BE90_de returns; from the fourth on

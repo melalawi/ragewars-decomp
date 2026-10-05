@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041ADB4.h"
-#include "span_16E000/code_8043847C.h"
+#include "span_16E000/code_8041B020.h"
+#include "span_16E000/code_804379C8.h"
 #include "types.h"
 
 /* Builds a two-slider menu: allocates eight bytes into D_800E58A4 through func_8025305C_de, creates the

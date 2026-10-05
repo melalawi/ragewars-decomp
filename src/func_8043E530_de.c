@@ -1,5 +1,5 @@
-#include "span_16E000/code_8043E364.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 
 /* Returns whether any of the words at offsets 0x28, 0x1C and 0x20 of D_801468A0 is set. */

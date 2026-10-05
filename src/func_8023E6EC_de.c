@@ -1,5 +1,5 @@
-#include "span_1000/code_8023CBB0.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8023D370.h"
 #include "types.h"
 /* Clips a segment against a query: measures the heights of its two ends through func_80241728_de,
    raises the far end by D_800D0640[1] scaled to 10.24, and when the squared flat length plus the

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80274A24.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8027451C.h"
 #include "types.h"
 
 /* Returns the rotation quaternion that tilts the up axis onto a polygon's unit normal (recomputed from its edges into D_80115E10 and normalised into D_80115E20 whenever the polygon differs from the last one, straight up for no polygon), recording the half-angle sine in D_80115DEC and giving the identity when the normal is vertical. Adapted from func_80275688_de with the cached polygon normal of func_802757E4_de replacing func_802750B0_de and the default normals written through their separate cells. */

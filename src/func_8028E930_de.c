@@ -1,8 +1,7 @@
-#include "span_1000/code_8025DB64.h"
+#include "span_1000/code_8025E280.h"
 #include "span_1000/code_8028DF6C.h"
-#include "span_1000/code_802BF740.h"
-#include "span_16E000/code_8040BBC0.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802BA23C.h"
+#include "span_16E000/code_8040B45C.h"
 #include "types.h"
 
 

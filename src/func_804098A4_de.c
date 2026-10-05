@@ -1,4 +1,4 @@
-#include "span_16E000/code_80408E1C.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 
 /* Stores a word at a byte offset beyond 0x60C in the block D_8011FECC points to. */

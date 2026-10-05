@@ -1,8 +1,8 @@
-#include "span_16E000/code_8044ACCC.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8025D948.h"
 #include "span_1000/code_8025E280.h"
+#include "span_16E000/code_8044ACCC.h"
+#include "types.h"
 
 /* Loads a scene's light into the global light D_800D0EE0: copies the ambient and directional colours from the scene's light settings (bytes 0xD and 0xA) into both colour copies and the direction bytes from 0x11, then scales the direction to D_800CA1F0 in length through func_802B72B0_de and func_80271F9C_de and stores it as shorts at 0x1B2B4 of the scene. */
 

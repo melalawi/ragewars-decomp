@@ -1,4 +1,4 @@
-#include "span_1000/code_802953FC.h"
+#include "span_1000/code_80294C64.h"
 #include "types.h"
 
 extern char *func_8028FDB4_de(s32 *, s32);

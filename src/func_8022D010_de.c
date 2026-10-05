@@ -1,6 +1,5 @@
-#include "span_1000/code_8022C36C.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8022C894.h"
 #include "types.h"
 /** Scales the floats at 0x6C0 and 0x6C4 of the first object and the float at 0x20 of the second by D_800C7E90. */
 

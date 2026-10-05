@@ -1,4 +1,4 @@
-#include "span_1000/code_80245804.h"
+#include "span_1000/code_80243A80.h"
 /* Returns the globally selected record's word at 0xAC while its word at 0x38 is non-zero, and 0
    otherwise. */
 extern void *D_800DE7E0;

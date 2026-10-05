@@ -1,7 +1,7 @@
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_8043F69C.h"
 #include "types.h"
-#include "common/types_8fd754e1e915.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Sums the glyph advances that func_8044222C_de returns for each character pair of a string at the given scales, stopping at a newline, the end of the string or a null pointer. */
 

@@ -1,8 +1,8 @@
 #include "common/types_1dc8418c21db.h"
-#include "span_1000/code_8028FC98.h"
-#include "types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8028FC98.h"
+#include "types.h"
 
 void *func_8028FEF0_de(int *arg0, int *arg1) {
     *arg1 = arg0[0] * arg0[1];

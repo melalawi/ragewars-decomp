@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8024E6C8.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8024E130.h"
 #include "types.h"
 
 /* Returns the float at offset 0x20 of the entry func_8028B2F8_de finds in D_8011FE88 for an object's

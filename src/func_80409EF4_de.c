@@ -1,4 +1,4 @@
-#include "span_16E000/code_80408E1C.h"
+#include "span_16E000/code_80409A88.h"
 #include "types.h"
 
 /* Reports a value through the second argument and returns a word: D_800E28C8 and zero when

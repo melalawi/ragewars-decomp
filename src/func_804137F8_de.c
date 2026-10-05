@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804136EC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80413728.h"
 #include "types.h"
 /* Reads the pixel at (x, y) of the current image D_80153D54 as a 0xAARRGGBB colour: seeks to
    x + y * width through the format's seek hook D_80153CD8, fetches through D_80153CD0 and converts

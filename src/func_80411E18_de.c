@@ -1,4 +1,5 @@
-#include "span_16E000/code_80410E9C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 /* Drops one reference to buffer pool entry i and, when none remain, frees its primary and secondary buffers and clears the entry. */
 

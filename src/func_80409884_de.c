@@ -1,4 +1,4 @@
-#include "span_16E000/code_80408E1C.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 
 /* Returns the address of block n, n times 256; block zero is the area 0x610 bytes into the

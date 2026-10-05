@@ -1,4 +1,4 @@
-#include "span_1000/code_802A776C.h"
+#include "span_1000/code_802A8A94.h"
 #include "abi.h"
 #include "gbi.h"
 /* Appends display-list commands to D_8010C574 that load a 4-bit texture block of the given size and draw it as a texture rectangle at the given position. Adapted from func_802A9364_de with the palette block and the second texture block removed and its first block's image pointer taken from the texture argument. */

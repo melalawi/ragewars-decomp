@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8021762C.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80217388.h"
 #include "types.h"
 /* Lays out a player's weapon menu when it is active: for each of the eight slots at 0x1C holding a
    weapon it eases the slot's scale toward its target (1.3 times larger under the cursor at 0x37C),

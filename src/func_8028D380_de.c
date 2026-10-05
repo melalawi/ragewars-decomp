@@ -1,5 +1,5 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8028CCB8.h"
-#include "span_1000/types.h"
 #include "types.h"
 
 extern s32 func_8028FE28_de(s32 *arg0, s32 arg1, s32 arg2);

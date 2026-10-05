@@ -1,4 +1,4 @@
-#include "span_1000/code_802C224C.h"
+#include "span_1000/code_802BE0D0.h"
 #include "acmd.h"
 #include "abi.h"
 /* _decodeChunk, libultra's ADPCM chunk decoder called by alAdpcmPull (func_802C31C0): DMA the next

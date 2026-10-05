@@ -1,6 +1,6 @@
-#include "common/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_80400000.h"
-#include "span_C76B0/data.h"
 #include "types.h"
 /* Returns the initial track vector or the configured fallback when no track is active. */
 #define NULL ((void *)0)

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041A0AC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041A4B0.h"
 #include "types.h"
 
 /* Sets the flag word at offset 0x5C that func_8041A488_de clears. */

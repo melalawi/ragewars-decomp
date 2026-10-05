@@ -1,4 +1,4 @@
-#include "span_1000/code_8026565C.h"
+#include "span_1000/code_80265370.h"
 #include "gbi.h"
 /* Loads the scene's point lights into the display list: with no light in D_801370E8 it clears geometry mode bit 0x80, otherwise it sets it and fills eight light slots from the light list, transforming each active light's position into the view, storing its negated view direction, its colour scaled by its intensity, its falloff and a fixed range, marking unused slots off, and emits the light-move command for each slot, then advances the light buffer. The first direction component is truncated into a local before negating. */
 #include "types.h"

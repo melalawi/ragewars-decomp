@@ -1,6 +1,6 @@
+#include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_8020EAE0.h"
 #include "types.h"
-#include "common/types_06e4f7ef1f9e.h"
 
 /* Returns 1 when one of the object's ten entries at 0x3C matches its current value at 0x28C and the
    paired flag at 0x6C is set, and 0 otherwise or when the current value is zero. */

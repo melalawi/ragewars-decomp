@@ -1,5 +1,5 @@
-#include "span_1000/code_80259014.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802591C0.h"
 #include "types.h"
 /* Starts a sound instance from a description: when the scene's free node list is not empty it takes the
  * first node under the audio lock (func_80258740_de/func_802587A4_de), unlinks it, gives it the next handle, the

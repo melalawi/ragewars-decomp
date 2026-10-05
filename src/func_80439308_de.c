@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8043847C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804379C8.h"
 /* Updates the two menu options and plays their change sounds. */
 
 extern struct Shape_func_802764D4_de_2 *D_800E1854_de;

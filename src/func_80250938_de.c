@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8024F944.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802508E0.h"
 /* Returns the matching resource entry index, or minus one when absent. */
 extern void *func_8028FDB4_de(int,int);
 

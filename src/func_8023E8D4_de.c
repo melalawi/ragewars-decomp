@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8023CBB0.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8023D370.h"
 #include "types.h"
 /* Tests a ray against a polygon: intersects the ray from 0x44 to 0x50 with the polygon's plane through
  * func_802412D0_de and accepts a parameter nearer than the ray's current nearest hit, also allowing a slightly negative

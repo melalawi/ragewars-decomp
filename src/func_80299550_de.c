@@ -1,4 +1,4 @@
-#include "span_1000/code_80299FC4.h"
+#include "span_1000/code_80297CD0.h"
 #include "types.h"
 typedef s32 (*FuncPtr)(s32, s32, s32, s32);
 

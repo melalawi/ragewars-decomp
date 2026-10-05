@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80297008.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80297CD0.h"
 #include "types.h"
 
 /* Returns the object loaded for an identifier in the current context: reuses a cached entry whose context and identifier match and whose object still carries that identifier, and otherwise loads it through func_8040EC30_de, counts the load in D_8014D0A0 with its high-water mark in D_8014D09C, and records it while the cache holds fewer than 75 entries. */

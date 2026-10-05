@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_1000/code_802B6958.h"
+#include "span_1000/code_802B243C.h"
 #include "types.h"
 /* alSeqNextEvent, drafted from ultralib src/audio/seq.c: read the next MIDI file event into an
    ALEvent, decoding tempo and end-of-track meta events and applying running status to channel

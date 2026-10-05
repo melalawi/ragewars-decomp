@@ -1,7 +1,7 @@
-#include "span_16E000/code_8043962C.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_16E000/code_8043962C.h"
+#include "types.h"
 
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de: 0x3DA waits through
    func_80298368_de for a time chosen by setting D_80142215 through jtbl_800DDF70 (20, 15 or 10, and

@@ -1,4 +1,4 @@
-#include "span_16E000/code_80411FB8.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 /* Sets the buffer pool flag, then runs func_804116CC_de on every buffer pool entry, func_80410674_de in mode 2 on every resource slot and func_80410F54_de on every chunk. */
 

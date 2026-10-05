@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80439930.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043A0A4.h"
 #include "types.h"
 
 /* Enters player p's loadout panel on the screen D_800E59E0: marks the entry open, hides the panel

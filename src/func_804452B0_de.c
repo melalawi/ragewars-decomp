@@ -1,4 +1,4 @@
-#include "span_16E000/code_80445CE8.h"
+#include "span_16E000/code_80444EC0.h"
 #include "types.h"
 
 /* Replaces the option byte D_801462E1 with what func_804423BC_de returns for the second argument, that byte, 8, 0, 0xFF and 0, turning 0xF7 into 0xF8, and returns zero. Adapted from func_80445020_de with the option byte D_801462E1 changed. */

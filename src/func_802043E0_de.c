@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80203B1C.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80203F04.h"
 typedef struct Owner Owner;
 /** Run the object's optional update hook, then copy one of two byte pairs into the record header. */
 

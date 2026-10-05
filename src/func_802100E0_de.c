@@ -1,4 +1,4 @@
-#include "span_1000/code_8020F2A8.h"
+#include "span_1000/code_8020FDB0.h"
 #include "types.h"
 
 extern s32 func_802744D4_de(void);

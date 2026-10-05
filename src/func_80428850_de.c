@@ -1,6 +1,5 @@
-#include "span_16E000/code_80425BC0.h"
-#include "span_16E000/code_804288E0.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 
 /* Moves the menu cursor on event 1: when the current slot's successor in the 28-byte slot table
@@ -23,8 +22,8 @@ extern void func_8025DF34_de(s32);
 extern struct Resource_func_80419E54_de *func_8040EC30_de(void *, s32);
 
 
-extern void func_80427B08_de(void);
-extern void func_804279B8_de(void);
+
+
 
 s32 func_80428850_de(void *parent, s32 arg1, s32 arg2, s32 event) {
     s32 next;

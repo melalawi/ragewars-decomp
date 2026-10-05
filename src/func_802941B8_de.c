@@ -1,4 +1,4 @@
-#include "span_1000/code_80293E60.h"
+#include "span_1000/code_80293A04.h"
 #include "types.h"
 extern s32 D_80141128;
 void func_802941B8_de(void) {

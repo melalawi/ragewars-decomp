@@ -1,9 +1,9 @@
-#include "common/types_1dc8418c21db.h"
-#include "span_1000/code_80258820.h"
-#include "types.h"
-#include "common/types_8a8189af7b05.h"
-#include "span_1000/code_8025C544.h"
 #include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80258820.h"
+#include "span_1000/code_8025C544.h"
+#include "types.h"
 
 extern u32 func_802BCF30_de(void);
 extern void func_802BCF50_de(u32);

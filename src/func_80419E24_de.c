@@ -1,4 +1,4 @@
-#include "span_16E000/code_804194A8.h"
+#include "span_16E000/code_804196C0.h"
 extern char D_00419F9C[];
 extern char D_0041A02C[];
 extern void func_802982C4_de(int, void *, void *, int);

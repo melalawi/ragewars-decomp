@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_16E000/code_8042ED84.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 /* Marks a player's record as ready for the next round: clears its pending counters, and on mode 1 advances its tier, gives the newly reached tier its default entry and flags the acquired handle for the notice sent to 0xE74. */
 

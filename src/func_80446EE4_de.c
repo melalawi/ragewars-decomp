@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80447140.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041C67C.h"
 #include "types.h"
 
 /* Decodes the six-byte short controller status reply found one byte per preceding channel into D_80154110 for the given channel, recording its error bits and, without error, its type and status.

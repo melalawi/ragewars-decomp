@@ -1,5 +1,5 @@
-#include "span_16E000/code_804233DC.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80423280.h"
 #include "types.h"
 
 /* Runs the screen D_800E4600 each frame: past stage 1 of D_800E28E0 it only calls func_802A2394_de;

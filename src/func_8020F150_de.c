@@ -1,5 +1,5 @@
-#include "span_1000/code_8020D328.h"
-#include "span_1000/types.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8020EAE0.h"
 #include "types.h"
 /* Selects the nodes of D_8013B364's list whose flagged record matches one of thirty ids: every match
    whose owner at 0x34 is active at 0x294 is selected through func_8020D220_de, and when none was, every

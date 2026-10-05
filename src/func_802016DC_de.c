@@ -1,4 +1,4 @@
-#include "span_1000/code_80200400.h"
+#include "span_1000/code_80200610.h"
 #include "types.h"
 
 /** Return strlen(arg0) + 1 (byte count including the terminating NUL). */

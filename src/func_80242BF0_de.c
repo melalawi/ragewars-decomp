@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80242BE0.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802412C0.h"
 #include "types.h"
 /* Gathers the pieces a ray sweeps through: for each entry of the counted table in D_8011CD20 whose
  * rectangle, grown by the ray's radius, overlaps the ray's rectangle and is hit by it, each visible element

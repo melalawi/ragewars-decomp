@@ -1,4 +1,4 @@
-#include "span_1000/code_802B1EC8.h"
+#include "span_1000/code_802AD504.h"
 #include "types.h"
 
 s32 func_802AD548_eu(s32 arg0) {

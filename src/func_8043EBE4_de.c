@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043E364.h"
+#include "span_16E000/code_8043E9A8.h"
 #include "types.h"
 
 /* Sets the option bytes at 0x1D and 0x1E of D_80142208_de to 1 and 4, clears the first byte of each

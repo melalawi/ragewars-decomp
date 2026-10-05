@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435CF0.h"
+#include "span_16E000/code_804366C4.h"
 #include "types.h"
 
 /* Reads five settings from the objects D_800E5694 holds through func_8041AD04_de and func_8041A6E0_de into slot arg0 of the D_80102C89 table and copies them into the matching bytes of the arg0 entry of D_80146398. Adapted from func_804367A8_de with D_800E5690 changed to D_800E5694 and the object fields moved down by eight bytes. */

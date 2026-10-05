@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8042ED84.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8042F988.h"
 
 /* Relabels the four slot rows of the block D_800E54A4 points to: for each row item (0x28B, 0x28D,
    0x28F, then 0x291) of the block's window it calls func_8040E950_de(0) and points the text at 0x38

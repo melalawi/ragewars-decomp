@@ -1,4 +1,4 @@
-#include "span_16E000/code_804233DC.h"
+#include "span_16E000/code_80423280.h"
 #include "types.h"
 
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de: 0x1C3, 0x1BD, 0x1C2 and
@@ -24,7 +24,7 @@
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
 extern void func_8042E988_de(s32);
-extern void func_8042302C_de(void);
+
 extern void func_802998A8_de(void);
 
 s32 func_80423654_de(void) {

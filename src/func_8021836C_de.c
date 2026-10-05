@@ -1,9 +1,9 @@
 #include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80217388.h"
 #include "types.h"
 #include "n64sdk.h"
 #include "gbi.h"
-#include "common/types_1dc8418c21db.h"
 
 /* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 

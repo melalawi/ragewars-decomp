@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041ADB4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 /* Calls func_8025DF34_de with 0xE74 and sets the byte at 0x10 of every child in the list at 0x8 of arg0 whose halfword at 0xE is not 8 to 100, returning zero. Adapted from func_802A1E5C_de with both stores to 0x5C and 0x48 removed. */

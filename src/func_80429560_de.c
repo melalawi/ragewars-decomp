@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041DBA0.h"
-#include "span_16E000/code_804288E0.h"
+#include "span_16E000/code_8041DF04.h"
+#include "span_16E000/code_804290E8.h"
 #include "types.h"
 /* Synchronizes screen D_800E0EA0's option widgets and player-count widget with the stored option
  * block D_80142208_de and the live player count: pushes the four stored option bytes back into their

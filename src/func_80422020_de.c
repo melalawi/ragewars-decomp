@@ -1,4 +1,4 @@
-#include "span_16E000/code_80421A88.h"
+#include "span_16E000/code_80420E90.h"
 #include "types.h"
 
 /* Tears down the match display: calls func_80245B28_de, stops the objects at D_80140FC8 and 0x48 bytes

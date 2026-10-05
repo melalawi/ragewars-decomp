@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802625B8.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_802624A0.h"
 #include "types.h"
 /* Culls a scene's active effects against the view box: effects whose bounds overlap the box ending at
  * D_801031F8 + 4 are passed to func_8028C934_de and, when idle, drop their counted reference; the others are

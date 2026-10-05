@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80421A88.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_80420E90.h"
 #include "types.h"
 
 /* Switches a timer record to a new mode: when the mode at offset 8 changes it stores the mode,

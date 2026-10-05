@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80445CE8.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804453C4.h"
 #include "types.h"
 /* Deletes the final character of the selected player's text entry: resets its cursor and, when the entry holds characters, decrements the count and length and clears the character at the new end. */
 

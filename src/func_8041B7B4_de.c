@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041ADB4.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 /* Stores a value into entry i of the word array at offset 0x5C of an object; func_8041B7FC_de reads

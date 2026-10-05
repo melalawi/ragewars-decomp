@@ -1,7 +1,7 @@
-#include "span_1000/code_8021CD70.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8021CD70.h"
+#include "types.h"
 
 /* Switches a player to a new state unless option D_801462E5 is on, func_8022C460_de refuses and the
    state is not 0x13 to 0x15: keeps the previous state and timer, clears flag 0x800000, runs the new

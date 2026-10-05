@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_1000/code_8025AE3C.h"
+#include "span_1000/code_8025A3EC.h"
 #include "types.h"
 
 /* Releases every occupied slot of a record, other than the one its header marks as local, whose value at slot offset 0xA8 equals the given value: marks it active, clears its flag and, when its key differs from its owner's, restarts the owner's sound with the slot's sample and invalidates the slot. */

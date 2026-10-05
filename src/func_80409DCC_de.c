@@ -1,6 +1,6 @@
-#include "span_16E000/code_80408E1C.h"
-#include "span_16E000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_80409A88.h"
 #include "types.h"
 
 /* Latches D_80146D60 and D_800E28CC to one the first time bit 12 of the word at offset 0xB0 of the

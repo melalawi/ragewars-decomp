@@ -1,5 +1,5 @@
-#include "span_16E000/code_8043D904.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043DF84.h"
 /* Clears eight player active flags, then marks the first settings slot whose controller profile is active. */
 
 

@@ -1,5 +1,5 @@
-#include "span_16E000/code_8042ACB0.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80429C10.h"
 #include "types.h"
 
 /* Moves the selection of the screen D_800E4F60 on event 1: calls func_8029973C_de and steps the
@@ -17,10 +17,10 @@
 extern struct Screen_func_8042B644_de *D_800E0F10;
 extern void func_8029973C_de();
 extern void func_8025DF34_de(s32);
-extern void func_8042B2E4_de();
+
 extern void *func_8042B294_de(s32);
 extern s32 func_8042B154_de(void *);
-extern void func_8042A990_de();
+
 extern void func_8040E8D8_de(struct Resource_func_80419E54_de *, s32);
 
 s32 func_8042B644_de(void *arg0, void *arg1, void *arg2, s32 event) {

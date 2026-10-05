@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804288E0.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80429C10.h"
 #include "types.h"
 
 /* Refreshes the selection on the screen D_800E4F60: for category 0 to 3 at 0x434 it takes the item

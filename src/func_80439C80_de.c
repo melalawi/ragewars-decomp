@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80439930.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043962C.h"
 #include "types.h"
 
 /* Stores a count in a record and, when it is positive, the handle func_8028B21C_de returns for

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043D904.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 
 extern s32 D_8014DDBC;

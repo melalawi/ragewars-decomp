@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80436D48.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804366C4.h"
 #include "types.h"
 /* Handles menu selection and updates the active menu state. */
 

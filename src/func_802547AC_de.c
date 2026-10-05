@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_1000/code_80252714.h"
+#include "span_1000/code_802536F4.h"
 /** Return the global word at D_80104580. */
 
 

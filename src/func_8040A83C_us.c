@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8040A4BC.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040A83C.h"
 /* Select the status text and right-align its nonblank characters. */
 #include "types.h"
 #define NULL ((void *)0)

@@ -1,4 +1,4 @@
-#include "span_1000/code_802BB0DC.h"
+#include "span_1000/code_802B53FC.h"
 #include "types.h"
 /* _doModFunc, drafted from ultralib src/audio/reverb.c: advance the chorus sawtooth by rsinc per
    sample, wrap it from +RANGE, fold it into a triangle and return it scaled by rsgain. The library

@@ -1,4 +1,4 @@
-#include "common/types.h"
+#include "common/types_1dc8418c21db.h"
 #include "span_166000/code_80403E88.h"
 #if defined(VERSION_DE)
 enum { menu_id_3ac = 0x3A6, menu_id_3b6 = 0x3B0 };

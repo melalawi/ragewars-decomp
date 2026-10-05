@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043D904.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 /* Advances the frame timer D_8015404C by D_800D2988 and, once it reaches
    threshold D_800E2358, clears a flag at D_801468A0+0x24 and reports the

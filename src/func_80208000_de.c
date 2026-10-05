@@ -1,4 +1,4 @@
-#include "span_1000/code_80206DD4.h"
+#include "span_1000/code_80208000.h"
 #include "types.h"
 /* Resets a player controller: marks the active, requested and committed selections empty, sets the
    request kind to 0xB, clears the four link words at 0x14 to -1, resets the stage counters at 0x1BC

@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8022E120.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8022D944.h"
 #include "types.h"
 /* Places a marker in front of an actor: takes the node in *slot or allocates one from pool
    D_8013B1A8, turns the offset (0, 0, distance) into world space by the actor's facing through

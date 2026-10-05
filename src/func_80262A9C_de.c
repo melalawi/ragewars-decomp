@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802625B8.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802624A0.h"
 #include "types.h"
 /* Spawns the effect a description asks for: the spawn of func_80262CE0_de (id resolution, free node, init
  * through func_802466A0_de and start) inlined with the id, variant, count, owner, position, scale, direction

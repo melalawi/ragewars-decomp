@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041DBA0.h"
-#include "span_16E000/code_804288E0.h"
+#include "span_16E000/code_8041DF04.h"
+#include "span_16E000/code_804290E8.h"
 #include "types.h"
 
 /* Refreshes the entry list of screen D_800E4EF0: reads the selection of its cursor at 0x20 through

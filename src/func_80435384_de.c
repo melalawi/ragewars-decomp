@@ -1,10 +1,10 @@
-#include "span_16E000/code_80435010.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 /* Reads two values and reports whether the first reaches the rounded object size when the second is nonzero. */
 
 extern s32 func_80405160_de(void *a0, s32 *a1);
 extern s32 func_804050CC_de(void *a0, s32 *a1);
-extern s32 func_80435424_de(void);
+
 extern s32 func_804057EC_de(s32 a0);
 
 s32 func_80435384_de(void *arg0, s32 *out)

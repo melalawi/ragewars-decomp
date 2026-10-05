@@ -1,5 +1,5 @@
-#include "span_1000/code_802C0384.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802BB15C.h"
 #include "types.h"
 
 extern u32 func_802BCF30_de(void);

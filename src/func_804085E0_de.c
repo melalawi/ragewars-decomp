@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80405454.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 
 
@@ -46,21 +46,21 @@ extern char D_00450C38_de[];
 extern char D_00450C5C_de[];
 extern char D_80140F80[];
 extern char D_8014155C[];
-extern s32 D_80142CA0_de;
-extern s32 D_80142CAC;
-extern s32 D_80146CDC;
+
+
+
 extern s32 D_80146CE0;
 extern s32 D_8014D480;
-extern s32 D_8014D4C0_de;
+
 extern s32 D_8014D4CC;
-extern s32 D_8014D4D0;
-extern s32 D_8014D4EC_de;
-extern s32 D_8014D4F4;
+
+
+
 extern s32 D_800DE860_de;
 extern s32 D_800DE864_de;
 extern s32 D_800DE868;
 extern s32 D_800DE86C;
-extern s32 D_800DE878;
+
 extern SharedPlayer_func_8022A398_de *func_8022A5C0_de(void *profiles, func_80242278_S1 *slot);
 extern void func_80253838_de(s32 heap, s32 block);
 extern void func_80253908_de(s32 heap);

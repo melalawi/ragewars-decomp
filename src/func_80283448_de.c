@@ -1,4 +1,4 @@
-#include "span_1000/code_8027ED40.h"
+#include "span_1000/code_8028308C.h"
 extern char D_8011D8D0;
 extern void func_80284570_de(void *a, void *b);
 extern int func_80284434_de(void *a);

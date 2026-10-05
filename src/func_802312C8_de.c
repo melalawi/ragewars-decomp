@@ -1,7 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802301E4.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8022F3E8.h"
 #include "types.h"
 /* Advances a player's charging action: when the trigger is released (controller latch for a controlled
  * player, otherwise flag 0x2000 with no hold and a disallowed action) or the cooldown is past D_800C2F5C_de, it

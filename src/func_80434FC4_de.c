@@ -1,6 +1,5 @@
-#include "span_16E000/code_80435010.h"
-#include "span_16E000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 
 /* Pulses entry i of the 2920-byte records D_800E54A4 points to: takes the sine of i plus the

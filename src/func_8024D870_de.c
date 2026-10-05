@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8024C444.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8024D018.h"
 #include "types.h"
 /* Returns a player's body lean on the ground: a controlled player on an accepted floor (func_802757E4_de) that
  * is not held (flag 1) nor in states 1 or 2 computes a tilt toward the floor normal from func_80275C94_de by

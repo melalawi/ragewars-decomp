@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802406DC.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8023EEF0.h"
 #include "types.h"
 
 /* Sets up one face of a box as a four-corner quad of kind 4, copying points 2, 1, 5 and 6 of the

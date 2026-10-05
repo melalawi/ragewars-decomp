@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802675E0.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80268160.h"
 #include "types.h"
 
 /* Plays an effect at a position through func_8025DEC0_de unless the global D_80146894 is set, selecting the target from the given object's type and team masks and choosing the scale from the global option flags. Adapted from func_8026730C_de with the null object test and case 2 removed, a team test for case 0, a mask test for case 1, and the scale constants changed. */

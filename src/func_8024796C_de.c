@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80245D38.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80246E34.h"
 #include "types.h"
 /* Returns an actor's aiming orientation: a controlled actor turns a quarter turn about the vertical from its
  * weapon's orientation at 0x140, or from the player's own orientation from func_80226C60_de when unarmed; an

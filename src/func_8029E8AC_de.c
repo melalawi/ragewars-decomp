@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8029F304.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8029EB74.h"
 #include "types.h"
 /* Projects n vectors onto the screen plane: each one with depth above 0.01 becomes (ox + sx * x / z, oy + sy * y / z, z), and any other becomes zero. */
 

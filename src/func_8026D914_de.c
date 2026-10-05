@@ -1,4 +1,4 @@
-#include "span_1000/code_8026D4F0.h"
+#include "span_1000/code_8026AC38.h"
 #include "n64sdk.h"
 #include "gbi.h"
 #include "types.h"

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043E364.h"
+#include "span_16E000/code_8043E9A8.h"
 #include "types.h"
 
 /* Restarts sound: calls func_8025E214_de with -1, records what func_8025E2C4_de returns in D_800E63B0,

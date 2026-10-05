@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435010.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 /* Copies the block's chosen 400-byte record for the place at slot arg0 into D_80102B00[arg0]: when
    the place is claimed (id != -1), copies the owning player's chosen slot into the record and marks

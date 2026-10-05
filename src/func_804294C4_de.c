@@ -1,4 +1,4 @@
-#include "span_16E000/code_804288E0.h"
+#include "span_16E000/code_804290E8.h"
 #include "types.h"
 
 /* Refreshes the option block D_80142208_de from the menu D_800E0EA0 points to: the bytes at 0x24 to

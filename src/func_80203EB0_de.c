@@ -1,4 +1,4 @@
-#include "span_1000/code_80203B1C.h"
+#include "span_1000/code_802022E0.h"
 /* Returns whether a player may act on a target: never on its own linked object or an inactive
    target, always when the team rule D_801468C4 is off, otherwise only across different teams. */
 

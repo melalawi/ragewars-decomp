@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043D904.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 
 /** Count how many of the 4 flagged entries in D_8010B328 also have a nonzero unk148 in the

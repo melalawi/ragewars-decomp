@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80277444.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 extern s8 D_800CD604[];
 extern s32 D_800CD728;

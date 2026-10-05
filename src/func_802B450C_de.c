@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802B4730.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 extern s32 D_002B5570;
 extern s32 D_002B5730;

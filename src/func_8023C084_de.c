@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8023A4CC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8023B9A0.h"
 #include "types.h"
 /* Releases one page of a resource's TLB slot: clears the odd (flag 1) or even page of the slot's entry in
  * D_80103F28 and, when the other page is still in use, remaps the slot with only that page through

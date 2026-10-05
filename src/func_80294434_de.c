@@ -1,5 +1,4 @@
-#include "span_1000/code_80293E60.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80293A04.h"
 
 /* func_80245A00_de: types.abi.declared: reuse existing C; propagated semantic conflicts remain named */
 extern void func_80245A00_de(float arg0);

@@ -1,4 +1,4 @@
-#include "span_16E000/code_80408E1C.h"
+#include "span_16E000/code_80409A88.h"
 #include "types.h"
 /* Finds the next available controller slot with wraparound. */
 #define NULL ((void *)0)

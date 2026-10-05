@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040EBC8.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 /* Releases every loaded slot of the active, referenced entries of the pool at D_80153C20: each
    loaded slot (flag 1) has its data released through func_80419624_de, its flags and owner cleared and
@@ -16,7 +16,7 @@
 extern Pool_func_8040F580_de D_8014D990;
 
 extern void func_80419624_de(char *data);
-extern void func_80411518_de(s32 index);
+
 
 void func_8040F580_de(void) {
     s32 e;

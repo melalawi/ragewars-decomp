@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80285170.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8028567C.h"
 #include "types.h"
 
 /* With interrupts masked, takes the first node of a pool's free list, moves it onto the pool's active list and initialises it with its key, position, two values and owner slot (storing the node there), then binds the two handles named by the key's identifiers, returning the node or null. */

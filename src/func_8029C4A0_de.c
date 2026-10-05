@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8029AC80.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8029BBA0.h"
 #include "types.h"
 /* Clips a polygon of n vertices against the plane a*x + b*y + c*z + d >= 0 (Sutherland-Hodgman): walks each edge from the previous vertex, copies inside vertices to the output, and where an edge crosses the plane emits the intersection point (the edge midpoint when the edge is nearly parallel to the plane), storing the output count and returning whether any intersection was emitted. */
 

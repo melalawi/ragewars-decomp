@@ -1,5 +1,5 @@
-#include "span_1000/code_80297008.h"
-#include "span_1000/code_8029AC80.h"
+#include "span_1000/code_80297CD0.h"
+#include "span_1000/code_80299DB4.h"
 #include "types.h"
 /* Refreshes the selected entry and updates its interface state. */
 #define NULL ((void *)0)

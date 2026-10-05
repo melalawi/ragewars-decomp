@@ -1,5 +1,5 @@
-#include "span_1000/code_802688AC.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80268160.h"
 #include "n64sdk.h"
 #include "gbi.h"
 #include "types.h"

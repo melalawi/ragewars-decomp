@@ -1,5 +1,5 @@
-#include "span_1000/code_8022A8E0.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8022A274.h"
 /** Return the capacity for an item slot: the player's own value, or in mode 1 the base value plus the character's bonus. */
 
 

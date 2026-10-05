@@ -1,5 +1,5 @@
-#include "span_1000/code_8024F944.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8024E914.h"
 #include "types.h"
 /* Draws an owner model with timed descriptor selection and fade setup/reset; a named descriptor-slot reference preserves reload scheduling. */
 

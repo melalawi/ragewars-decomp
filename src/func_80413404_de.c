@@ -1,4 +1,4 @@
-#include "span_16E000/code_80411FB8.h"
+#include "span_16E000/code_80412270.h"
 /* Releases a resource object's buffers through func_802547E4_de (the one at 0x18 when flag 1 is set, the
    one at 0x14 when flag 2 is set and its size at 0x10 is positive) and clears its 32 bytes. */
 

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80421A88.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_16E000/code_804221A0.h"
 #include "types.h"
 
 /* Unless func_8043C308_de reports one for the object D_800E44A0 holds, calls func_802A2360_de and, when

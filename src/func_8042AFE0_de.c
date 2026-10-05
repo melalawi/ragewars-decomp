@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8042ACB0.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80429C10.h"
 extern struct MenuSettings D_80142208_de;
 #include "types.h"
 

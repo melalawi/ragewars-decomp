@@ -1,4 +1,4 @@
-#include "span_16E000/code_80445CE8.h"
+#include "span_16E000/code_804453C4.h"
 #include "types.h"
 
 /* Steps a menu spinner for the entry func_8022A5A0_de finds in D_80145040: advances its repeat timer by D_800D2988, wrapping at D_800E2810, and while the menu is active (state 1) decrements its value above zero when func_80264388_de reports the decrease input, or else increments it below its maximum when func_802643A0_de reports the increase input, restarting the timer on a change. Returns zero. */

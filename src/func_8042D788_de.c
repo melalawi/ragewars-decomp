@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_16E000/code_8042D1BC.h"
-#include "span_16E000/code_80435010.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8042BD40.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 
 /* Handles the answer on the screen D_800E53C0. */

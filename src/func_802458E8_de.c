@@ -1,4 +1,4 @@
-#include "span_1000/code_80245804.h"
+#include "span_1000/code_80243A80.h"
 extern unsigned int D_800DE7E8;
 
 /** Return the current global object word. */

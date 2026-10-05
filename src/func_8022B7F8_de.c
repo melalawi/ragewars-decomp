@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8022B500.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8022AE90.h"
 #include "types.h"
 
 /** Start the actor effect and attach optional source-specific resources; the European cartridges pick

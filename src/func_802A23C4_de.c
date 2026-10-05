@@ -1,4 +1,4 @@
-#include "span_1000/code_802A31F4.h"
+#include "span_1000/code_802A208C.h"
 #include "types.h"
 
 extern s32 D_800CDA2C;

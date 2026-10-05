@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ED84.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 /* Resets the selected player menu record, updates the initiating player state and refreshes the team labels. */
 

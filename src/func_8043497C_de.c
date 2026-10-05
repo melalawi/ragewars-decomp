@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ED84.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 
 /* Places player p's chosen record into a free place: when the flag word for the chosen slot (index

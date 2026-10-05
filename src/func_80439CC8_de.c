@@ -1,4 +1,4 @@
-#include "span_16E000/code_80439930.h"
+#include "span_16E000/code_8043962C.h"
 #include "types.h"
 
 /* Returns the word at offset 0x0 of a record. */

@@ -1,5 +1,5 @@
-#include "span_16E000/code_8042ED84.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8042F988.h"
 /* Returns the first of the four players in D_800E54A4 whose state at 0x58 is 14, provided every player
    is idle (0), finished (17) or in state 14; otherwise, or when none is in state 14, returns -1. */
 

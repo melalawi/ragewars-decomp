@@ -1,4 +1,4 @@
-#include "span_16E000/code_80410E9C.h"
+#include "span_16E000/code_80411B68.h"
 /* Returns the signed byte at offset 0xA of entry j in the 8-byte entries that begin record i of
    the 1180-byte record table D_80153C28 points to. */
 extern char *D_8014D998;

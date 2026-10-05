@@ -1,7 +1,7 @@
-#include "span_1000/code_80254CE4.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80254CE4.h"
+#include "types.h"
 
 extern void func_802BAC60_de(void *arg0, s32 arg1, s32 arg2);
 extern void func_802A001C_de(void *arg0, s32 arg1, s32 arg2);

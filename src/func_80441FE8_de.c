@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043EEC0.h"
+#include "span_16E000/code_8043F69C.h"
 #include "types.h"
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041ADB4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041A4B0.h"
 #include "types.h"
 
 /* Appends to a menu: passes the next free 20-byte entry at offset 0x48, selected by the count at

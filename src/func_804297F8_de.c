@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804288E0.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804290E8.h"
 #include "types.h"
 
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de unless func_8043C308_de reports
@@ -28,7 +28,7 @@ extern struct func_8020F2A8_S3 *D_800E0EA0;
 extern void func_8029973C_de(void);
 extern s32 func_8043C308_de(struct func_8020F2A8_S3 *);
 extern s32 func_80299A08_de(void);
-extern void func_804294C4_de(void);
+
 extern void func_80429654_de(s32);
 extern void func_8042E988_de(s32);
 extern void func_802998A8_de(void);

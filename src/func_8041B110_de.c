@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041ADB4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 /* Allocates and zeroes a 0x44-byte record, copies into it the header and five-word block of the record func_8040EC30_de finds for the low half of the argument, tags it 0xB61, and registers it through func_8040EEA4_de and func_8040EF84_de. Adapted from func_8041A580_de with the record size 0x44, the tag 0xB61 and the linked child and tail fields removed. */

@@ -1,5 +1,4 @@
-#include "span_1000/code_80245804.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80245980.h"
 /* Returns the globally selected record's float at 0xA0 scaled by D_800C88CC. */
 extern void *D_800DE7E0;
 

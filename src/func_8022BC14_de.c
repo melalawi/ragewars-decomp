@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8022B500.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8022BA90.h"
 #include "types.h"
 
 extern void func_8028B274_de(void *arg0, void *arg1, s32 arg2, s32 arg3);

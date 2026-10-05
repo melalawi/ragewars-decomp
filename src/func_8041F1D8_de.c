@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041F248.h"
+#include "span_16E000/code_8041F1FC.h"
 #include "types.h"
 
 /* Returns the second word of the first of the seventeen 0x70-byte slots of D_800E3A50 whose leading word equals the argument, or zero when none does.

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040EBC8.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 
 /* Measures the pixel width of a string of the given length in the given font by summing each character's signed width byte from the font record func_8041200C_de returns, then adding the spacing func_80411C60_de reports once between each pair of characters.

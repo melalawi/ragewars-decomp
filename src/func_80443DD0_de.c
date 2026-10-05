@@ -1,4 +1,4 @@
-#include "span_16E000/code_804434BC.h"
+#include "span_16E000/code_80443868.h"
 #include "types.h"
 /* Updates object display flags and selects the requested resource. */
 

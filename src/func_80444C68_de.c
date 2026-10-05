@@ -1,5 +1,5 @@
-#include "span_16E000/code_80444260.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80444030.h"
 #include "types.h"
 
 /* Counts the timer D_80154100 down by D_800D2988 without passing zero, then sets bit 24 of the flag word at offset 8 of a record unless func_80265350_de reports 0x400000, in which case the bit is cleared, stores what func_8040C3BC_de returns at offset 0x14 and returns zero. Adapted from func_80445590_de with the timer countdown added, func_80265350_de called without arguments and bit 24 instead of bit 23 changed. */

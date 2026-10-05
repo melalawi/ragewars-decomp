@@ -1,4 +1,4 @@
-#include "span_1000/code_80222E80.h"
+#include "span_1000/code_80225D10.h"
 #include "types.h"
 /* Checks accumulated opponent scores and updates the completion flag. */
 

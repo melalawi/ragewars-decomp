@@ -1,10 +1,10 @@
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80256220.h"
 #include "span_1000/code_8025A3EC.h"
 #include "span_1000/code_8025D948.h"
 #include "types.h"
-#include "common/types_06e4f7ef1f9e.h"
 
 extern u8 D_80142221;
 extern f32 D_800C3EE0_de;

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ED84.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 
 /* Receives player p's 0x648-byte packet through func_80404F58_de into the buffer at 0x2E28 of the

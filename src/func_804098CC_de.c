@@ -1,4 +1,4 @@
-#include "span_16E000/code_80408E1C.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 
 /* Frees the block a handle holds through func_80253908_de and func_80253838_de, allocates a new one through func_8025343C_de sized 256 bytes per requested unit or D_8011FECC plus 0x610 when none are requested, stores the block in the handle and its data pointer in the second argument, and zeroes the data with func_802A001C_de. */

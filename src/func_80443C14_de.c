@@ -1,4 +1,4 @@
-#include "span_16E000/code_804434BC.h"
+#include "span_16E000/code_80443868.h"
 /* Marks the attached actor visible, clears its subpart visibility bits, and applies the paused-state flag. */
 
 

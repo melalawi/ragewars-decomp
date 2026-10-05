@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802B6958.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802B243C.h"
 #include "types.h"
 /* alSeqSecToTicks, drafted from ultralib src/audio/seq.c: convert seconds to ticks at the given
    tempo. The library evaluates it in single precision as sec * (division * 1e6f), so the product is

@@ -1,4 +1,5 @@
-#include "span_16E000/code_8043E364.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043E9A8.h"
 #include "types.h"
 /* Restarts a round for the player passed in arg1: clears the world timer flag D_800E28C0 via
    func_804097E8_de, then reallocates a fresh scoreboard entry via func_80442574_de using arg1's fields

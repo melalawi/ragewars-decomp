@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_16E000/code_804136EC.h"
+#include "span_16E000/code_80413728.h"
 #include "types.h"
 
 /* Stores the three bytes D_80153C75, D_80153C76 and D_80153C77 as entry D_80153C6C of the

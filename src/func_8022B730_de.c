@@ -1,5 +1,4 @@
-#include "span_1000/code_8022B500.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8022AE90.h"
 #include "types.h"
 /** Adds the argument scaled by D_800C7E08 to the object's float at 0x11DC and sets bit 0x2000 in its word at 0x122C. */
 

@@ -1,4 +1,4 @@
-#include "span_1000/code_8022F054.h"
+#include "span_1000/code_8022F3E8.h"
 extern void func_80265650_de(int a);
 
 /** Thin wrapper forwarding an offset argument to func_80265650_de. */

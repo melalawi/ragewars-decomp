@@ -1,4 +1,4 @@
-#include "span_1000/code_802647BC.h"
+#include "span_1000/code_802646F4.h"
 #include "types.h"
 
 extern s32 D_8010BC40[3];

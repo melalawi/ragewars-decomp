@@ -1,5 +1,5 @@
-#include "span_1000/code_802406DC.h"
-#include "span_1000/types.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802412C0.h"
 #include "types.h"
 
 s32 func_8023E178_de(void *, void *, f32, s32, f32, s32, s32 *, s32);

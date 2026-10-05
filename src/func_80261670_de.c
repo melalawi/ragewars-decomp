@@ -1,4 +1,4 @@
-#include "span_1000/code_80260D98.h"
+#include "span_1000/code_802609CC.h"
 #include "types.h"
 /* Switches an animation track to its pending clip when asked and the clip differs: keeps a copy of the track, loads the pending clip's resource and, when it is ready, reads its frame count and length, hands the old state to the previous track slot, restarts the track on the new clip and reports the switch; otherwise, or when not switching, it reloads the current clip and reports no switch. */
 

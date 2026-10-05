@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040EBC8.h"
+#include "span_16E000/code_8040C780.h"
 #include "types.h"
 /* Walks a node tree recursively, replacing every reference to one pointer with another in each node's link fields. */
 

@@ -1,4 +1,5 @@
-#include "common/types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_80400000.h"
 #include "types.h"
 /* Returns 1 unless one of the current record's track-2 references names an item, in the first or

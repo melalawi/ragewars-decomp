@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802B510C.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AFEAC.h"
 #include "types.h"
 /* alEvtqPostEvent, drafted from ultralib src/audio/event.c: take an item from the free list, copy
    the event into it and link it into the allocated list at its delta time, adjusting the delta of

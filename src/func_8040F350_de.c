@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8040EBC8.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 
 /* Draws the child at 0x8 of a window with the arguments passed by value after clearing D_800E2AB8 once func_8040E0D4_de resolves the window's rectangle, and when flag 0x200 of the halfword at 0x12 is set it saves the four values func_802A1898_de reports, narrows them by the resolved basis through func_8040F488_de, giving up when it fails, and installs them through func_802A1870_de around the draw, restoring the saved values after it. Adapted from func_8041BA00_de with D_800E2AB8 cleared before the rectangle is resolved, the resolved basis declared first, and a failed func_8040F488_de ending the function. */

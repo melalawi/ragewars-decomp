@@ -1,4 +1,4 @@
-#include "span_1000/code_8024B644.h"
+#include "span_1000/code_8024BA6C.h"
 extern void func_802164A8_de(void *a, void *b);
 
 /** Thin wrapper forwarding arg0 and an offset of it to func_802164A8_de. */

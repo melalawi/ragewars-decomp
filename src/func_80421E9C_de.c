@@ -1,6 +1,5 @@
-#include "span_16E000/code_80421A88.h"
-#include "span_16E000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80420E90.h"
 #include "types.h"
 /* Advances a filling or draining bar by the step and writes its level byte at 0x10 of the bar at
    0xC: while rising it scales the amount for the display and, at or above the wrap point, stores

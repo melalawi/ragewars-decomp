@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804233DC.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_16E000/code_80423280.h"
 #include "types.h"
 
 /* Sets the word at offset 0xC of the object D_800E4514 points to and calls func_802A2360_de, once:

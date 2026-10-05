@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043BD50.h"
+#include "span_16E000/code_8043A0A4.h"
 #include "types.h"
 
 /* Handles an input event for the 0x4D0-byte entry of D_800E59E0 the low half of the third argument

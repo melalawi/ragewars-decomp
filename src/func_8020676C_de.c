@@ -1,5 +1,6 @@
-#include "span_1000/code_8020570C.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80206258.h"
 extern void func_802065C0_de(void *a, void *b, unsigned short c);
 extern void func_802472F0_de(void *arg0);
 extern char D_8011BDC8[];

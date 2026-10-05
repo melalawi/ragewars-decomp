@@ -1,4 +1,4 @@
-#include "span_1000/code_802B8D4C.h"
+#include "span_1000/code_802B4730.h"
 #include "types.h"
 /* _init_lpfilter, drafted from ultralib src/audio/drvrnew.c: derive the low-pass filter's gain and
    its sixteen coefficients from the configured cutoff. This object carries its own copies of the

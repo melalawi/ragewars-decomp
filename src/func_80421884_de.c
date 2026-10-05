@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041F248.h"
+#include "span_16E000/code_80420E90.h"
 #include "types.h"
 
 /* Polls the dialog of screen D_800E4400 through func_8041A470_de: state 3 opens the screen through

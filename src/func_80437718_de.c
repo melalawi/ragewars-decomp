@@ -1,5 +1,5 @@
-#include "span_16E000/code_80436D48.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_804366C4.h"
 #include "types.h"
 
 /* Builds a three-item menu: allocates 0x14 bytes into D_800E5784 through func_8025305C_de, creates the

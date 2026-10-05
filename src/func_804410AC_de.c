@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043EEC0.h"
+#include "span_16E000/code_8043F69C.h"
 #include "types.h"
 
 /* Moves a menu cursor through its entry table in one direction (16 to 19, reading the step byte at that offset of the current entry), wrapping at either end, recording the reverse step on the new entry when its flag allows, until it reaches an entry flagged 0x1800000 whose descriptor word at 0x1C is set. */

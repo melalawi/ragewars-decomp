@@ -1,7 +1,7 @@
-#include "span_1000/code_8022F3E8.h"
-#include "types.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_8022BA90.h"
+#include "span_1000/code_8022F3E8.h"
+#include "types.h"
 
 extern s32 func_8022EB0C_de(void *arg0, s32 arg1);
 

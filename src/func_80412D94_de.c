@@ -1,5 +1,5 @@
-#include "span_16E000/code_80411FB8.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 /* Converts a packed pixel value from format `from` to format `to` of the format table D_800E2B20:
    decodes the value to 0xAARRGGBB with the source format's channel masks and signed shifts, splits

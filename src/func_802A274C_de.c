@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802A31F4.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802A25C4.h"
 #include "types.h"
 /* Interpolates morph vertex positions and shades between two key frames. */
 

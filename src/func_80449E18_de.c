@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802647BC.h"
-#include "span_16E000/code_80449968.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802646F4.h"
+#include "span_16E000/code_80447BB0.h"
 #include "types.h"
 /* Refreshes every instance owned by the holder and clears their pending flag. */
 

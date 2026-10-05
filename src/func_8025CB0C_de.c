@@ -1,5 +1,4 @@
-#include "span_1000/code_8025C67C.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8025C544.h"
 #include "types.h"
 
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5);

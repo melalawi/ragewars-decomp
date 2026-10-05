@@ -1,4 +1,4 @@
-#include "span_1000/code_8027ED40.h"
+#include "span_1000/code_8028308C.h"
 #include "types.h"
 /* Apply resource indices and dispatch the optional object effect. */
 #define NULL ((void *)0)

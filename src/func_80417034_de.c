@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80414280.h"
-#include "span_1BCBB0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_804143D8.h"
 #include "types.h"
 /* Selects render mode 11 or 12 (always 11 while D_80153F60's enable word is clear) when it differs
    from the cached mode D_800E32CC: flushes through func_80418F8C_de and applies the mode word built

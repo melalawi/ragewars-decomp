@@ -1,4 +1,4 @@
-#include "span_1000/code_80232B44.h"
+#include "span_1000/code_80231F5C.h"
 #include "types.h"
 /* Pushes an object by the event source's speed at 0x294 through func_802739C4_de according to the event side: in mode 1 side 1 pushes it negated and side 2 doubled, otherwise side 0 pushes it negated and doubled. */
 

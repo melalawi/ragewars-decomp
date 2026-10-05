@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ACB0.h"
+#include "span_16E000/code_80429C10.h"
 #include "types.h"
 
 /* Returns zero. Nothing in the cartridge image calls it or stores its address as a word, so it is

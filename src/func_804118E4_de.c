@@ -1,4 +1,5 @@
-#include "span_16E000/code_80410E9C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 /* Releases the buffers of the pool at D_80153C40: every entry holding a buffer that is not locked
    (flag 1) unless force is set has its reference count forced to one and dropped, and when it

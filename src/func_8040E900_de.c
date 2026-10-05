@@ -1,4 +1,4 @@
-#include "span_16E000/code_8040BBC0.h"
+#include "span_16E000/code_8040C780.h"
 #include "types.h"
 
 /* Sets or clears bit 1 of the flag halfword at offset 0x12 of a record according to the second

@@ -1,4 +1,4 @@
-#include "span_1000/code_8022B500.h"
+#include "span_1000/code_8022AE90.h"
 #include "types.h"
 
 extern u8 *func_802A025C_de(u8 *, u8 *);

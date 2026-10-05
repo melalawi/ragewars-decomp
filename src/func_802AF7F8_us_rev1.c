@@ -1,6 +1,5 @@
-#include "span_1000/code_802AE2C8.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE254.h"
 #include "types.h"
 /* Reads two big-endian words from the port, passes 0x80100000 and the first word to func_802AE834_us_rev1, and when its output equals the second word stores 1, 0x80100000 and the first word into D_800D3640..D_800D3648 and returns 1. Adapted from func_802AF544_us_rev1, with the read address fixed at 0x80100000 through an addr local, the returned word compared against the second word, and the three global stores added. */
 

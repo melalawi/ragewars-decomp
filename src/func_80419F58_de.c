@@ -1,4 +1,4 @@
-#include "span_16E000/code_804194A8.h"
+#include "span_16E000/code_804196C0.h"
 #include "types.h"
 
 /* Calls func_80419C84_de on an object, marks it busy at offset 0x44 and copies the low byte of the

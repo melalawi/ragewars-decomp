@@ -1,5 +1,4 @@
-#include "span_1000/code_80256234.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80256220.h"
 #include "types.h"
 /* Returns the physical address of a cached copy of a data block: finds the cache entry keyed by the
  * block's address and refreshes the copy (and flushes it from the data cache) when the size changed;

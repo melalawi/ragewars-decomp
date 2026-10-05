@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80442BC8.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Runs the optional callback at offset 0xC of an object's handler table at 0x14, then clears the
    words at offsets 0xB0, 0xB4 and 0xBC of the object at 0x20. */

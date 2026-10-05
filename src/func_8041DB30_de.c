@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041DBA0.h"
+#include "span_16E000/code_8041BEA8.h"
 /* Advances a cursor over four 400-byte entries, wrapping to 0, until it reaches one whose flag byte in
    D_80102B0D is not negative; after six steps without one it sets the cursor to -1. */
 extern signed char D_800FEB0D[];

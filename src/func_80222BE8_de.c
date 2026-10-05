@@ -1,7 +1,7 @@
 #include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_1000/code_8021CD70.h"
 #include "types.h"
-#include "common/types_8fd754e1e915.h"
 
 /* Adds ammunition to a player's weapon slot: computes the slot's cap as func_80222D64_de does (zero for
    no slot, the character's cap unless option D_801462D5 is 1, otherwise D_800CE3E8's cap plus the

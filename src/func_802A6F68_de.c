@@ -1,10 +1,10 @@
-#include "span_1000/code_802A6AC0.h"
-#include "common/types_8fd754e1e915.h"
-#include "types.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_1000/code_80291054.h"
+#include "span_1000/code_802A6AC0.h"
 #include "span_1000/code_802BB15C.h"
+#include "types.h"
 
 /* Clears a record: its four 0x38-byte entries through an inline per-entry clear, its two leading
    flag bytes and trailing words, and sets the word at 0xE6 to -5. */

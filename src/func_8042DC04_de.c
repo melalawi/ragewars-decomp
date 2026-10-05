@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_16E000/code_8042D1BC.h"
+#include "span_16E000/code_8042BD40.h"
 #include "types.h"
 /* Activates the requested player slots and creates any missing players when entering the screen. */
 

@@ -1,4 +1,4 @@
-#include "span_1000/code_8023CBB0.h"
+#include "span_1000/code_8023B9A0.h"
 #include "types.h"
 /* Releases the resource node whose id matches the handle's upper bits: unlinks it from the D_80103F88
  * list, frees each slot it holds through func_8023C084_de and marks the slot unused, then posts the node

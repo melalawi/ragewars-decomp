@@ -1,6 +1,6 @@
-#include "common/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80403BCC.h"
-#include "span_C76B0/data.h"
 #include "types.h"
 /* Saves data as a Controller Pak note on channel ch and verifies it: refuses with -2 unless the pak
    is ready, then up to four times writes the note through func_804042F0_de with the D_800D36DC

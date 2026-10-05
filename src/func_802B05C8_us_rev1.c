@@ -1,7 +1,6 @@
-#include "span_1000/code_802B033C.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE254.h"
+#include "span_1000/code_802B8CCC.h"
 #include "types.h"
 /* Sends a 0x83 write command with a 32-bit address and the arg1*arg2 length over the handshake port, streams arg0 through func_802AEAB4_us_rev1, then polls for the status byte. Adapted from func_802B026C_us_rev1, with the command 0x82 changed to 0x83 and the trailing func_802AE834_us_rev1 read replaced by a func_802AEAB4_us_rev1 write issued before the status poll. */
 

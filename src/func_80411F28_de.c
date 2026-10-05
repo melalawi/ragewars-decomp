@@ -1,4 +1,4 @@
-#include "span_16E000/code_80410E9C.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 
 /* Clears the word held in D_800E2AC0. */

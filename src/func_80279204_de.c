@@ -1,4 +1,4 @@
-#include "span_1000/code_80278C80.h"
+#include "span_1000/code_80279208.h"
 #include "types.h"
 
 /* Updates a table of triggers against masks: for each trigger the world accepts (always in world mode 4, otherwise when func_8028BC0C_de refuses it), a trigger not yet entered whose mask meets the enter mask is marked entered and runs its enter action (the id's action through func_8028C424_de and func_8028C4B4_de, or func_80278F00_de without an id); it then counts as active when its mask meets the require mask, meets the enter mask, passes the paired exclude masks, is not flagged 0x1000 without 0x100 and passes func_80279420_de, and an active trigger runs its fire action once (through func_8028BB1C_de, func_8028BD4C_de, func_8028BDAC_de and func_8028C370_de for an id, or func_80278E7C_de without one). */

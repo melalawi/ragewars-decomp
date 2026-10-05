@@ -1,4 +1,4 @@
-#include "span_1000/code_8026565C.h"
+#include "span_1000/code_80265370.h"
 extern void func_802BD320_de(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
 
 void func_8026593C_de(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {

@@ -1,4 +1,4 @@
-#include "span_1000/code_802BA7E4.h"
+#include "span_1000/code_802B53FC.h"
 #include "types.h"
 
 extern void *jtbl_800C7750[];

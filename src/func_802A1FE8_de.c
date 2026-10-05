@@ -1,4 +1,4 @@
-#include "span_1000/code_802A26F8.h"
+#include "span_1000/code_802A208C.h"
 #include "types.h"
 /* Advances the object's state timer at 0x48 while its state at 0x5C is 0 or 1, and after ten ticks invokes that state's transition, func_802A1D14_de(obj) or func_802A1D7C_de(obj, obj); returns 0. */
 

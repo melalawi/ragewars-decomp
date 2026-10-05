@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043847C.h"
+#include "span_16E000/code_804379C8.h"
 #include "types.h"
 
 /* Runs the sound options screen D_800E58A0 each frame: when its menu reports 4 it calls

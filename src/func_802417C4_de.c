@@ -1,4 +1,4 @@
-#include "span_1000/code_802406DC.h"
+#include "span_1000/code_802412C0.h"
 #include "types.h"
 
 extern f32 func_802B72B0_de(f32);

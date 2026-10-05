@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041BC50.h"
+#include "span_16E000/code_8041BEA8.h"
 /* Calls func_8040E928_de with flag 1 on each of the list's items (count at 0x48, items from 0x4C) and
    returns 0. */
 

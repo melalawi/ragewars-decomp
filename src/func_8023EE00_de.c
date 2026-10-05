@@ -1,4 +1,4 @@
-#include "span_1000/code_8023ECAC.h"
+#include "span_1000/code_8023D370.h"
 #include "types.h"
 /* Points the active table at D_801041F0 and runs the setup routine on the fixed record D_44B4A0. */
 

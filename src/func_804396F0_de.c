@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043847C.h"
+#include "span_16E000/code_8043962C.h"
 #include "types.h"
 
 /* On event 3 with value 0xD, calls func_8029973C_de and func_80298368_de with 3. Returns zero. */

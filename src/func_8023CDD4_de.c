@@ -1,4 +1,4 @@
-#include "span_1000/code_8023CBB0.h"
+#include "span_1000/code_8023B9A0.h"
 #include "types.h"
 
 /* Registers a memory region: rounds its size to whole pages, places it after the last region of the chain at D_80103F88 on an even page at or above 0x800, marks every page of its map as free, and maps it through func_802BB420_de. */

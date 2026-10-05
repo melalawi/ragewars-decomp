@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80274A24.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8027451C.h"
 /* Returns the normalised cross product of a path node's two edge vectors, cached in D_80115E20 for the last node seen, with a default up vector for a null node.
    Adapted from func_802750B0_de with the edge vectors computed through the func_80271F68_de subtract helper, the cross product arguments in forward order, and the cache globals changed. */
 

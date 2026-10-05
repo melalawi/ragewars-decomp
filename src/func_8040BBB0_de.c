@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802BF740.h"
-#include "span_16E000/code_8040BBC0.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802BA23C.h"
+#include "span_16E000/code_8040B45C.h"
 #include "types.h"
 /* Selects the video mode and applies framebuffer and display configuration; the mode-to-word-array cast preserves configuration-store and mode-load scheduling. */
  

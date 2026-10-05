@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80411FB8.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 
 /* Allocates and zeroes a 0x60-byte record, copies the header of the record func_8040EC30_de finds for the low half of the first argument, tags it 0xB, stores four byte arguments and three alternating pairs of the last two, allocates and zeroes a width-by-height table of eight-byte cells at 0x44, and registers the record through func_8040ED38_de.

@@ -1,4 +1,4 @@
-#include "span_1000/code_802BF740.h"
+#include "span_1000/code_802BAC58.h"
 #include "types.h"
 
 extern u32 func_802BCF30_de(void);

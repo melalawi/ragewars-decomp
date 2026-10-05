@@ -1,4 +1,4 @@
-#include "span_16E000/code_804136EC.h"
+#include "span_16E000/code_80413728.h"
 #include "types.h"
 
 /* Returns bit 0 of the flag byte at offset 1 of a record; func_80413704_de returns bit 1. */

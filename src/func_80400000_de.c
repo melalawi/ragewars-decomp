@@ -1,6 +1,6 @@
+#include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_80400000.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
 
 /* Computes the second derivatives of a natural cubic spline through n points (ys over xs) into out: builds the tridiagonal diagonal, interval widths and right-hand side in three scratch arrays from func_8025305C_de, eliminates forward, zeroes out and back-substitutes unless a zero diagonal or width was replaced by one, then frees the arrays through func_802547E4_de. */
 

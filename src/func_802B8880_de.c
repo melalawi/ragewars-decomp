@@ -1,6 +1,5 @@
-#include "span_1000/code_802BD198.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_1000/types.h"
+#include "span_1000/code_802B7B80.h"
+#include "span_1000/code_802B9BB4.h"
 #include "types.h"
 /* Writes a 32-byte block to a controller pak address through the PIF RAM, re-reading the reply up to three times until the data CRC matches, and returns 0, 1 for no pak, 4 for a CRC failure or the pak status error (libultra __osContRamWrite). Adapted from func_802B84C0_de with the read command 2 changed to the write command 3 packed by func_802B8AA0_de, a guard returning 0 for label-area addresses below 7 unless forced, the CRC taken over the caller's buffer with no copy back, and the DMA results assigned to the result as libultra does. */
 

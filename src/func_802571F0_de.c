@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_1000/code_80256234.h"
+#include "span_1000/code_80256220.h"
 #include "types.h"
 /* Returns the physical address of a ROM offset through the 0x300-byte ROM window cache: a cached window
  * covering the offset and length is stamped with the current frame; otherwise a free window node is

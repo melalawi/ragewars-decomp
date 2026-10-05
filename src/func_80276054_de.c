@@ -1,4 +1,4 @@
-#include "span_1000/code_80274A24.h"
+#include "span_1000/code_80275E44.h"
 #include "types.h"
 
 extern void *func_8028B2F8_de(char *arg0, s32 arg1);

@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435CF0.h"
+#include "span_16E000/code_80435CE4.h"
 #include "types.h"
 
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de: 0x3D8 clears D_80146894, calls func_802A2394_de, then calls func_8043C278_de on D_800E5558 when func_8042ACD8_de reports non-zero or else func_8040C428_de with zero and func_80298368_de with 0x14; 0x3D9 calls func_80298368_de with one. Returns zero.

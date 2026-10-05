@@ -1,5 +1,5 @@
-#include "span_1000/code_8024F944.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8024E914.h"
 #include "types.h"
 /* Draws an owner's own model instance unless it is hidden (flag 0x40 at 0xD8): looks up the instance keyed
  * by the descriptor's byte 0xE through func_802507AC_de, loads the owner's model resource, decodes its colour

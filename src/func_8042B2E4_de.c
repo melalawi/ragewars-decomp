@@ -1,5 +1,5 @@
-#include "span_16E000/code_8042ACB0.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80429C10.h"
 #include "types.h"
 
 /* Sets the byte at offset 0x10 of the two objects at offsets 0x454 and 0x450 of the structure D_800E4F60

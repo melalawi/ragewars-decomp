@@ -1,5 +1,4 @@
-#include "span_1000/code_80232B44.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80231F5C.h"
 #include "types.h"
 
 

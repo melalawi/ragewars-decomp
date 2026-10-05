@@ -1,7 +1,7 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8041C67C.h"
-#include "types.h"
 #include "span_16E000/code_80447BB0.h"
+#include "types.h"
 
 /* osPfsAllocateFile, drafted from ultralib src/io/pfsallocatefile.c (2.0I branch): create a
    controller pak file by finding a free directory entry, chaining enough free pages across the

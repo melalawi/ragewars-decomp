@@ -1,4 +1,4 @@
-#include "span_1000/code_8020A95C.h"
+#include "span_1000/code_8020AF9C.h"
 /* Stores an id in the first free (-1) of the object's 64 id slots at 0x38 and flags the node with that
    id in the object's list at 0x24 as active. */
 

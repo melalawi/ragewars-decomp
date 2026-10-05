@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802675E0.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80268160.h"
 #include "types.h"
 
 /* Forwards a position read from an object to func_8028FFD0_de on the global D_80131600 with a zero offset and a zero trailing weight, returning its result. Adapted from func_8028BFD8_de with the base argument, the source vector, the trailing arguments passed as a by-value struct and the return value changed. */

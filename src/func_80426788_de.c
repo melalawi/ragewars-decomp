@@ -1,7 +1,7 @@
-#include "common/types.h"
-#include "span_16E000/code_8041DBA0.h"
-#include "span_16E000/code_80425BC0.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8041DF04.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 
 /* Places the models of the first two active players on the screen D_800E4690: calls

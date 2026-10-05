@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ACB0.h"
+#include "span_16E000/code_8042BD40.h"
 #include "types.h"
 
 /* Calls func_802A2164_us and func_802A2394_de, then func_80298368_de with 0x11. */

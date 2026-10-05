@@ -1,5 +1,4 @@
-#include "span_1000/code_802BC630.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802B7488.h"
 #include "types.h"
 
 extern u64 func_802BADC0_de(void);

@@ -1,5 +1,5 @@
-#include "span_1000/code_80263754.h"
-#include "span_16E000/code_80408E1C.h"
+#include "span_1000/code_802636D0.h"
+#include "span_16E000/code_80409A88.h"
 #include "types.h"
 
 /* Ensures the session is initialised once (calling func_80293268_de and func_80263C24_de and, the first

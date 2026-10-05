@@ -1,4 +1,4 @@
-#include "span_16E000/code_804288E0.h"
+#include "span_16E000/code_804290E8.h"
 #include "types.h"
 
 /* Calls func_8029973C_de and, unless func_8043C308_de reports one for the object D_800E4EF0 holds, calls
@@ -6,7 +6,7 @@
 extern void *D_800E0EA0;
 extern void func_8029973C_de();
 extern s32 func_8043C308_de(void *);
-extern void func_804294C4_de();
+
 extern void func_8042E988_de(s32);
 extern void func_802998A8_de();
 

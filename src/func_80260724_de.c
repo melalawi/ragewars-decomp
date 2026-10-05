@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8025E5D0.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8025E568.h"
 #include "types.h"
 
 void func_80260724_de(u32 arg0, u32 arg1, u32 arg2) {

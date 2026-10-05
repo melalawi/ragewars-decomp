@@ -1,6 +1,6 @@
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8027A0F4.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
 
 extern char D_8011AD70;
 extern char D_8011AF38;

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80276544.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80277444.h"
 #include "types.h"
 /* Sums the size field of the record func_8028FDB4_de returns for each entry of the D_8011FE88 table and returns the total.
    Adapted from func_802AFFC0_de with the loop over the global entry table and the accumulated return changed. */

@@ -1,4 +1,4 @@
-#include "span_16E000/code_80410E9C.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 /* Unloads entry index of the pool at D_80153C20: releases the data of every loaded slot (flag 1) in
    each of the entry's slot ns (the n count comes from the entry's definition) through

@@ -1,4 +1,4 @@
-#include "span_16E000/code_804233DC.h"
+#include "span_16E000/code_80423280.h"
 #include "types.h"
 
 /* On event 3 with value 0xA, calls func_8029973C_de, sets the word at offset 0x18 of the object

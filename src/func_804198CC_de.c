@@ -1,4 +1,4 @@
-#include "span_16E000/code_804194A8.h"
+#include "span_16E000/code_804196C0.h"
 #include "types.h"
 /* Creates a frame animation for widget id of the current screen: finds the widget through
    func_8040EC30_de, allocates and clears a 0x64-byte animation, sets its type fields, widget and

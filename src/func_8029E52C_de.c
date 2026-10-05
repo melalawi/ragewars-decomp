@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8029F304.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8029EB74.h"
 #include "types.h"
 
 /* Scales a three-float vector to the length held at D_800CAE30 + 4, taking the square root through func_802B72B0_de only when the squared length is positive. Adapted from func_8027207C_de with the square root wrapped in an inline helper that returns zero for a non-positive argument, the scaling made unconditional and the constant changed. */

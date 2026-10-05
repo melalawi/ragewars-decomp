@@ -1,5 +1,4 @@
-#include "span_1000/code_80232B44.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_80231F5C.h"
 /* Applies the negated, scaled speed of the event's source (float at 0x294, scaled by D_800C8130) to an
    object through func_802739C4_de when the event side at 0x4 matches the mode: side 2 in mode 1, side 0
    otherwise. */

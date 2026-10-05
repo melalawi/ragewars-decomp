@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_16E000/code_8040EBC8.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 /* Draws a widget's variant image: when func_8040E0D4_de accepts the widget at the position, picks the
    pressed (flag 0x100), highlighted (flag 0x40) or normal image of the widget, and when present

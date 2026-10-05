@@ -1,4 +1,4 @@
-#include "span_1000/code_80242BE0.h"
+#include "span_1000/code_80243A80.h"
 /* Reports whether the globally selected record is active (its word at 0x38 is non-zero) and its
    value at 0x1C lies between the bounds at 0x30 and 0x34. */
 extern void *D_800DE7E0;

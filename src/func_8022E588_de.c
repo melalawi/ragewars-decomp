@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8022E120.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8022D944.h"
 #include "types.h"
 
 extern f32 func_802726F8_de(f32 *a, f32 *b);

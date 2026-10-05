@@ -1,4 +1,4 @@
-#include "span_16E000/code_804194A8.h"
+#include "span_16E000/code_804196C0.h"
 #include "types.h"
 
 /* Tests whether any of the given playback mode bits are set; func_804196D8_de asks it about bit 1

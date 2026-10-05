@@ -1,5 +1,5 @@
-#include "span_16E000/code_8040AC98.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040A83C.h"
 #include "types.h"
 
 /* Latches D_80153768 to one when the record's team value is not -1 and both func_802645D0_de and func_80406178_de accept it, then returns D_80153768. Adapted from func_80409C0C_de with the latch D_80153784 changed to D_80153768. */

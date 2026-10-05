@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80259014.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802591C0.h"
 #include "types.h"
 /* Returns the stereo pan of a sound at a position for a listener: centre (0x40) without a listener, when
  * the sound is horizontally within a small radius or straight ahead; otherwise the horizontal direction

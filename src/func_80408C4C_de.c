@@ -1,6 +1,6 @@
-#include "common/types.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_80405454.h"
-#include "span_16E000/types.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 
 
@@ -46,8 +46,8 @@
 
 
 extern s32 D_8014D4CC;
-extern s32 D_800DE878;
-extern s32 D_8014D4F4;
+
+
 extern s32 D_8014D4A0;
 extern u8 D_8014D4B0_de;
 extern struct { u16 value; } D_8014D4A8_de;

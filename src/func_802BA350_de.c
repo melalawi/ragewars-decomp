@@ -1,5 +1,5 @@
-#include "span_1000/code_802BEDA0.h"
-#include "span_1000/code_802C0384.h"
+#include "span_1000/code_802BA23C.h"
+#include "span_1000/code_802BB67C.h"
 #include "types.h"
 /* osCreateViManager, drafted from ultralib src/io/vimgr.c (2.0I: no __additional_scanline). */
 
@@ -28,7 +28,7 @@ extern void func_802BB550_de(s32 event, OSMesgQueue *mq, OSMesg msg);
 extern s32 func_802BADA0_de(OSThread *t);
 extern void func_802BB5F0_de(OSThread *t, s32 pri);
 extern void func_802BAC90_de(OSThread *t, s32 id, void (*entry)(void *), void *arg, void *sp, s32 pri);
-extern void func_802BA210_de(void);
+
 extern void func_802BB750_de(OSThread *t);
 extern u32 func_802BCF30_de(void);
 extern void func_802BCF50_de(u32 mask);

@@ -1,6 +1,5 @@
-#include "span_1000/code_8022C36C.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8022C894.h"
 #include "types.h"
 /* Runs a player's landing state: sets state 0xD when the value at 0x6C8 is zero or 0xE otherwise,
    applies the movement tables D_800CE88C and D_800CE8A4, picks animation 0x8A2 for the model

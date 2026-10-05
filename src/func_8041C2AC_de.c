@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041BC50.h"
+#include "span_16E000/code_8041BEA8.h"
 #include "types.h"
 
 /* Builds screen state D_800E3518 under a parent window: allocates its 0x2C bytes, keeps the parent,

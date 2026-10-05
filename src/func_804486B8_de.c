@@ -1,5 +1,5 @@
-#include "span_16E000/code_80447140.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80447BB0.h"
 #include "types.h"
 /* __osGetId, drafted from ultralib src/io/contpfs.c (2.0I branch): reread a controller pak's id block
    from bank zero, restore or rebuild it when damaged, and refresh the file system layout and label

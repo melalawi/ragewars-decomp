@@ -1,6 +1,4 @@
-#include "common/types.h"
-#include "span_1000/code_802945CC.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802944E8.h"
 #include "types.h"
 
 extern void func_80293A20_de(s32 arg0, s32 arg1, s32 arg2);

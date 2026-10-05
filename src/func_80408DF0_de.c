@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80408E1C.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_80405DC0.h"
 #include "types.h"
 /* Closes the current pak menu prompt by its kind D_80153788: kind 8 is refused (returns 0); kinds
    9 and 5 release the slot's controller through func_80264248_de and func_802647E8_de; kind 9 then either
@@ -18,14 +18,14 @@
 
 
 extern s32 D_8014D4F8;
-extern s32 D_8014D4D0;
-extern s32 D_8014D4EC_de;
+
+
 extern s32 D_8014D4C8;
 extern s32 D_8014D4CC;
 
 extern s32 D_80146CE0;
 extern s32 D_80137208;
-extern s32 D_800DE878;
+
 extern char D_8011BDC8[];
 extern char D_8011BA00[];
 extern char D_8014155C[];

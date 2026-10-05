@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043EEC0.h"
+#include "span_16E000/code_8043E9A8.h"
 #include "types.h"
 
 /* Calls func_804427C4_de with the third argument, the second argument and the resource D_450C18,

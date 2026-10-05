@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802647BC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802646F4.h"
 #include "types.h"
 /* Advances the replay mode: when replays are possible (func_802934F8_de, D_80140FB0 and the handle table) it
  * cycles the mode 0 -> 1 -> 2 -> 0, snapshots the actors and records the camera target, promoting mode 1

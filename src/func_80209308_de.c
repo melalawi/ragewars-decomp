@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80208410.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80208000.h"
 #include "types.h"
 
 /* Steers a computer player toward a point: measures the heading error to the point through func_80216F44_de plus an offset, wrapped to -pi..pi, and when it exceeds the turn rate in degrees sets the player's steering at 0x69C to full lock beyond 60 degrees or to a half, quarter, eighth or tenth of lock beyond 30, 10 and 4 degrees, in the error's direction; then passes the brain's speed sum (by the player's gear at 0x594) in radians and the turn rate to func_80209910_de and returns the heading error. */

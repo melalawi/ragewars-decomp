@@ -1,5 +1,5 @@
-#include "span_16E000/code_804434BC.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80443868.h"
 #include "types.h"
 /* Advances the actor inactivity timer and reports pending menu state. */
 #define NULL ((void *)0)

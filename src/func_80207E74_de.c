@@ -1,5 +1,5 @@
-#include "span_1000/code_80206DD4.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80207ABC.h"
 extern void func_80214178_de(void *a, void *b, int c);
 
 

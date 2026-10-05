@@ -1,4 +1,4 @@
-#include "span_1000/code_8024F944.h"
+#include "span_1000/code_802508E0.h"
 #include "types.h"
 typedef s32 M2C_UNK;
 typedef s8 M2C_UNK8;

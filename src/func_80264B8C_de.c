@@ -1,4 +1,4 @@
-#include "span_1000/code_802647BC.h"
+#include "span_1000/code_802646F4.h"
 #include "types.h"
 
 /* Restores every actor from the global replay table: copies its 0x70-byte block back to 0x5E0 and, when

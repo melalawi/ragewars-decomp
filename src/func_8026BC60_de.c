@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802688AC.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8026AC38.h"
 #include "types.h"
 
 #define NULL ((void *) 0)

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80279764.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8027A0F4.h"
 #include "n64sdk.h"
 #include "gbi.h"
 #include "types.h"

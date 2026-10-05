@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041DBA0.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041DF04.h"
 #if defined(VERSION_DE)
 enum { MENU_RESOURCE = 0x38c };
 #elif defined(VERSION_EU)

@@ -1,5 +1,4 @@
-#include "span_1000/code_8023940C.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_802393F4.h"
 /** Stores the float argument scaled by D_800C8658 at 0x4 of the object and the int argument at 0x0. */
 
 

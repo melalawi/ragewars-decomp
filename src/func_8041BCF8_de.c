@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041BC50.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 /* Calls func_8029973C_de and, for an event of kind one on a slot with no word at 0x5C whose child at 0x4C has flag 0x10 of its halfword at 0x12 set and a target at 0x30, passes the owner, the slot and the target to func_8041B8DC_de, returning zero. Adapted from func_8041BB3C_de with the child's target read from offset 0x30 instead of 0x34. */

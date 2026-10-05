@@ -1,4 +1,4 @@
-#include "span_16E000/code_80444260.h"
+#include "span_16E000/code_80444EC0.h"
 #include "types.h"
 
 /* Replaces the word at offset 0x10 of the option block D_80142208_de with what func_804423BC_de returns

@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8022D7A0.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8022D944.h"
 #include "types.h"
 /* Updates a player's charge effect: cancels the charge and moves its effect to state 3 when the
    current weapon's entry in D_800D052C has no ammunition, the charge is off, or D_801468F4 is set with

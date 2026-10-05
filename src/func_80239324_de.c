@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80233C78.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80233920.h"
 #include "types.h"
 
 /* Configures an emitter: stores a position vector, a shared value in three channels, a scale, and three rates converted by the constant in D_800C8628. */

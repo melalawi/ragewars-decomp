@@ -1,5 +1,5 @@
-#include "span_16E000/code_8040EBC8.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040F1E0.h"
 #include "types.h"
 /* Tears down the UI resource set: releases eligible entries, closes active
    subsystems, frees each nested chunk allocation and the shared tables, then

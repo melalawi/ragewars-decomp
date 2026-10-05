@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80210EFC.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802106E0.h"
 #include "types.h"
 /* Runs a computer player's chase state: refreshes its view through func_80211020_de and, without a target, returns to roaming (state 2); otherwise re-checks the target's visibility every fourth frame through func_802099B4_de, backs off (state 12) when only it is on the upper layer, switches to close combat (state 7, sub-state 13) within 600 units, re-rolls its strafe pattern through func_802744D4_de when its timer runs out, steers at the target through func_80209308_de and strafes left or right at 0.4 of its speed while func_80210964_de reports room to walk, stopping otherwise, then drives through func_80209E80_de; losing sight of the target or failing to re-route to the target's new node through func_8020D1CC_de also returns it to roaming. */
 

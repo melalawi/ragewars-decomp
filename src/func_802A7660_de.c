@@ -1,5 +1,5 @@
-#include "span_1000/code_802A776C.h"
-#include "span_1000/code_802AB720.h"
+#include "span_1000/code_802A6AC0.h"
+#include "span_1000/code_802A8A94.h"
 #include "types.h"
 /* Draws one of the two gauges of the head-up panel, the first at hud->bars[0] and the second at
    hud->bars[1]: steps the gauge's scripted mover, walks its shown amount toward the gauge's target

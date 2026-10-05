@@ -1,8 +1,8 @@
 #include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_1000/code_80233920.h"
 #include "span_1000/code_80265370.h"
 #include "types.h"
-#include "common/types_8fd754e1e915.h"
 
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern f32 func_802B72B0_de(f32);

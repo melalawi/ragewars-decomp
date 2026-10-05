@@ -1,8 +1,8 @@
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_1000/code_8028DF6C.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8fd754e1e915.h"
-#include "common/types_8a8189af7b05.h"
 
 /* Collects platform actors, records the special actor and selects one of three random states. */
 

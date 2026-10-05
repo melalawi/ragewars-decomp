@@ -1,7 +1,7 @@
-#include "span_1000/code_8023A284.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8023A284.h"
+#include "types.h"
 
 extern f32 D_800C359C_de;
 extern f32 D_800C35A0_de;

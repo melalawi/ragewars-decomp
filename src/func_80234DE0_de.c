@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80233C78.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80233920.h"
 #include "types.h"
 /* Rebuilds a camera's view volume when it is active: the eye and the four far corners at depth 0x528 come
  * either from the field of view 0x530 and aspect 0x70 (a perspective camera, radius the slant distance to

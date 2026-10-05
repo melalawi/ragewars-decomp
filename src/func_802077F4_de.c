@@ -1,6 +1,7 @@
-#include "common/types.h"
-#include "span_1000/code_80206DD4.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80206258.h"
 #include "types.h"
 
 extern char D_800C86A0_de;

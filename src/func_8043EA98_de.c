@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_16E000/code_8043E364.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_16E000/code_8043E9A8.h"
 #include "types.h"
 
 /* Starts a match from the menu: clears byte 0x1D and sets byte 0x1E of D_80142208_de, clears the active byte 0x78 of its eight 150-byte status records, then gives the menu at 0x20 the first of the four 0x224-byte controller profiles of D_8010B328 that func_8026437C_de reports active, marking the settings D_80142242 at 0x78 and recording its index in D_801422C1, before calling func_8025E384_de, resetting D_8011BA00 through func_8044DE7C_de and setting D_8014DDB8. */

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80411FB8.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 
 /* A stride of 1180 bytes. The debugger showed the global holding 0x80696F50 and the two observed

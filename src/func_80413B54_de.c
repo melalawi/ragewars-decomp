@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804136EC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80413728.h"
 #include "types.h"
 /* Writes a 0xAARRGGBB colour to the pixel at (x, y) of the current target image D_80153D58:
    converts the colour to the format's packed value like func_80413CE0_de, then stores it and the

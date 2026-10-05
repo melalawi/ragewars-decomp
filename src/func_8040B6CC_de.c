@@ -1,5 +1,5 @@
-#include "span_16E000/code_8040AC98.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8040B45C.h"
 #include "types.h"
 
 /* Points a field's text at D_800D7990 when the option D_80153760 is set and at D_800D7994 otherwise, and returns

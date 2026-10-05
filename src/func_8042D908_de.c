@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042D1BC.h"
+#include "span_16E000/code_8042BD40.h"
 #include "types.h"
 
 /* When the fourth argument is one, calls func_8029973C_de and, while the position at offset 0xE8 of

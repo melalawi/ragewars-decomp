@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041F248.h"
+#include "span_16E000/code_8041F1FC.h"
 /* Handles a packed message whose high half is type 3 with no extra argument: when the entry named by
    its low half in the 0x4C8-byte table D_800E42D0 is active and has a target, runs func_804201A4_de on it
    and plays sound 0xE7C; always returns 0. */

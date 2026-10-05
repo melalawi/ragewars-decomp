@@ -1,7 +1,8 @@
-#include "common/types.h"
-#include "span_1000/code_8026D4F0.h"
-#include "span_16E000/code_80414280.h"
-#include "span_16E000/code_80439930.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/unused.h"
+#include "span_1000/code_8026AC38.h"
+#include "span_16E000/code_804143D8.h"
+#include "span_16E000/code_8043962C.h"
 #include "abi.h"
 #if defined(VERSION_DE)
 #define ANGLE_Y_CONSTANT D_800DDF54

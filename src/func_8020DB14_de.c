@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8020D328.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8020D370.h"
 /** Find the first of an object's four nodes that starts a type-6 link, record it and return 0; return 1 when none does. */
 
 

@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ED84.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 
 /* Runs the block D_800E54A4 points to on event 1: in phase 3 at 0x4C it counts each player's timer

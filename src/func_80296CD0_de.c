@@ -1,4 +1,4 @@
-#include "span_1000/code_80297008.h"
+#include "span_1000/code_80297CD0.h"
 #include "types.h"
 
 /* Moves the focus of the current screen's selected widget in a direction (5 to 8 following its first, second, third or fourth link) past linked widgets flagged 0x100, and selects the first unflagged one through func_802991D4_de. */

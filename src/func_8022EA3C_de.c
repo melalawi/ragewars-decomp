@@ -1,8 +1,8 @@
 #include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
 #include "span_1000/code_8022E938.h"
 #include "span_1000/code_8025E280.h"
 #include "types.h"
-#include "common/types_8fd754e1e915.h"
 
 extern f32 func_8027525C_de(void *arg0, s32 arg1, s32 arg2);
 extern f32 func_80275DD4_de(s32, s32, s32);

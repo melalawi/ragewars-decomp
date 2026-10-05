@@ -1,9 +1,7 @@
-#include "span_1000/code_8026D4F0.h"
-#include "span_1000/code_802953FC.h"
-#include "span_1000/code_802A26F8.h"
-#include "span_1000/code_802A776C.h"
-#include "span_1000/code_802AB720.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8026AC38.h"
+#include "span_1000/code_80296014.h"
+#include "span_1000/code_802A208C.h"
+#include "span_1000/code_802A8A94.h"
 #include "types.h"
 
 extern int func_802A23B4_de(void);

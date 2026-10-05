@@ -1,4 +1,4 @@
-#include "span_1000/code_80222E80.h"
+#include "span_1000/code_8021CD70.h"
 #include "types.h"
 
 /* Starts the effect at offset 0x740 of an object through func_80274870_de at half intensity, with a

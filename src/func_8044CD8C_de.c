@@ -1,7 +1,7 @@
 #include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_8044ACCC.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
 
 /* Loads every still-empty cell of the level's tile grid: for each row and column whose cell
    record has no resource, fetches the cell's block through func_8028FE3C_de and func_8025193C_de,

@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80254CE4.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Coalesces every block that physically follows a pool's anchor block at 0x10 into its physical
    predecessor: first puts an empty predecessor on the free list (after the next non-empty block, or

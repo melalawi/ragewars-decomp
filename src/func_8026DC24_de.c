@@ -1,5 +1,4 @@
-#include "span_1000/code_802688AC.h"
-#include "span_1000/code_8026D4F0.h"
+#include "span_1000/code_8026AC38.h"
 #include "types.h"
 #define M2C_FIELD(base, type, offset) (*(type)((char *)(base) + (offset)))
 

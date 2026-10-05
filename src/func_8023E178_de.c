@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8023CBB0.h"
-#include "span_C76B0/data.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8023D370.h"
 #include "types.h"
 /* Tests a ray against a vertical cylinder: projects the center onto the ray's horizontal direction from 0x44,
  * finds the entry parameter from the radius, accepts it under the same rules as func_8023E8D4_de, places the

@@ -1,8 +1,8 @@
 #include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80256220.h"
 #include "span_1000/code_802591C0.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
 
 /* Stops every voice playing a sound id while holding the manager's recursive lock at 0x110: tells
  * func_802598B4_de about the id, then for each of the 17 voice records whose sound matches it counts the voice

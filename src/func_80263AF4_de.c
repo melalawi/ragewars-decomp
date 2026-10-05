@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802636D0.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Polls the controller paks when they are enabled: after func_80285C78_de it tries to take the pak lock
  * D_8010FBC0 without blocking and, holding it, refreshes the four pak entries through func_80264104_de and

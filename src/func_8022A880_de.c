@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80228934.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8022A274.h"
 #include "types.h"
 
 extern void func_80285D30_de(s32 *);

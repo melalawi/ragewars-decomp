@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_804453C4.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Flips D_800D2AE0 between zero and one and returns zero. */
 extern s32 D_800D2AE0;

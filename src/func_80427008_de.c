@@ -1,4 +1,4 @@
-#include "span_16E000/code_80425BC0.h"
+#include "span_16E000/code_804264F0.h"
 #include "types.h"
 /* Loads the stage list of the results screen D_800E4690: clears its two 36-bit sets at 0xA74 and
    0xA79, copies into the first the 36 cleared-stage bits that the player record D_80102B00[index at
@@ -15,7 +15,7 @@ extern u8 D_80142215;
 
 extern void func_80265688_de(u8 *, s32, s32);
 extern s32 func_80265650_de(u8 *, s32);
-extern void func_804274B0_de(void);
+
 
 void func_80427008_de(void) {
     s32 i;

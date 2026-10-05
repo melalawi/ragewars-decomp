@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80245D38.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80246E34.h"
 #include "types.h"
 /* Fires the effect events of an object's animation that fall within a frame window: only for the object's
  * own animation at 0x104 or an object flagged 0x4000000; each event whose frame lies in [from, to) is

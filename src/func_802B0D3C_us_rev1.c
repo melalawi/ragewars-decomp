@@ -1,7 +1,6 @@
-#include "span_1000/code_802B033C.h"
-#include "span_1000/code_802BDDB8.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802AE254.h"
+#include "span_1000/code_802B8CCC.h"
 #include "types.h"
 /* Sends a 0x85 command with a 32-bit argument over the handshake port and reads back a big-endian 32-bit word, returning it (zero on failure). Adapted from func_802B091C_us_rev1, with the command 0x84 changed to 0x85 and the second and third argument words dropped. */
 

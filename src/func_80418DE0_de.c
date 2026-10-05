@@ -1,4 +1,4 @@
-#include "span_16E000/code_80414280.h"
+#include "span_16E000/code_804143D8.h"
 #include "gbi.h"
 /* Draws a sprite with the standard 2D state: resets the render-state cache, selects render mode
    0xC through func_80417034_de and combine mode 5 through func_80416CF4_de, emits the other-mode word

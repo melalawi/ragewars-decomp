@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8020570C.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80206258.h"
 extern void func_8028B670_de(void *a, unsigned short b, unsigned short c, int d);
 extern char D_8011BDC8;
 

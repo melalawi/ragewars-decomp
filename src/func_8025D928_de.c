@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8025C67C.h"
-#include "span_C76B0/data.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8025D948.h"
 #include "types.h"
 
 extern void func_802AFF60_de(s32 arg0, s16 arg1);

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041F248.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_80420E90.h"
 #include "types.h"
 
 /* Copies the four checkboxes at 0xC to 0x18 of the screen D_800E03B0_de into the game flags word

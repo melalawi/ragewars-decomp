@@ -1,4 +1,4 @@
-#include "span_16E000/code_8042ACB0.h"
+#include "span_16E000/code_80429C10.h"
 /* Resets the selection screen: maps the menu mode at 0x434 to a category (0 to 2, 1 to 3, 2 to 1,
    otherwise 0), builds the category list through func_8042B1B8_de, hides the forty controls of the
    table D_800E4F64 (and each entry's optional second control), refreshes the list, hides five fixed

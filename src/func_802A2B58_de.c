@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802A31F4.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_802A25C4.h"
 #include "types.h"
 /* Rebuilds one morphing mesh's vertices from its two key frames. The blend weight eases in and out
    of the clock's position in the actor's track, and again of the actor's own position in it while

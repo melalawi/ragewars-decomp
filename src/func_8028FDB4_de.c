@@ -1,6 +1,6 @@
-#include "span_1000/code_8028FC98.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8028FC98.h"
 #include "types.h"
 
 /** Return the byte address named by an indexed word offset from the base. */

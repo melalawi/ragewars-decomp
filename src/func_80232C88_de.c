@@ -1,6 +1,6 @@
-#include "span_1000/code_80232B44.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80231F5C.h"
 #include "types.h"
 
 extern void *D_800CB2EC[];

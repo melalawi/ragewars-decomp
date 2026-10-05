@@ -1,8 +1,8 @@
-#include "span_1000/code_8024E914.h"
-#include "types.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
-#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8024E914.h"
+#include "types.h"
 
 /** Clear the word at object offset 0x1C4. */
 void func_8024F470_de(void *arg0) {

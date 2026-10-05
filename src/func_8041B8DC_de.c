@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041ADB4.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 /* Unless slot index is locked, hides the node in that slot and shows the given node through func_8040E928_de, storing it in that slot or, in shared mode, in all four slots. */
 

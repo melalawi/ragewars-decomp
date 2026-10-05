@@ -1,4 +1,4 @@
-#include "span_1000/code_8020570C.h"
+#include "span_1000/code_80206258.h"
 /** For each of the object's child slots, attach the child to the record and spawn its effect. */
 extern int D_800CD72C;
 extern void *func_8024BFD4_de(void *, int);

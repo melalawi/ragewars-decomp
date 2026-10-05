@@ -1,5 +1,4 @@
-#include "span_16E000/code_80414280.h"
-#include "span_C76B0/data.h"
+#include "span_16E000/code_804143D8.h"
 
 extern void func_80417B20_de(void *, int, int, int, float, int, int, float, float, int);
 

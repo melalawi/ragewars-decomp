@@ -1,5 +1,5 @@
-#include "span_1000/code_80245804.h"
-#include "span_1000/types.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80243A80.h"
 /* Calls func_80401980_de when the globally selected record's word at 0x38 is non-zero. */
 extern void *D_800DE7E0;
 extern void func_80401980_de(void);

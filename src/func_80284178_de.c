@@ -1,7 +1,7 @@
+#include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8028308C.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 extern s32 D_80140FF8[];
 extern s32 D_800CD72C;

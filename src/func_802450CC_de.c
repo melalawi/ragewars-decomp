@@ -1,6 +1,5 @@
-#include "span_1000/code_80242BE0.h"
+#include "span_1000/code_80243A80.h"
 #include "span_16E000/code_80400000.h"
-#include "span_C76B0/data.h"
 #include "types.h"
 /* Advances the current audio cue once per new frame: when func_80244FB4_de has no resource to release, the
  * cue's position steps by the frame time (as func_80245C38_de, stopping the round via func_80244E58_de past its

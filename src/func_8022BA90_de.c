@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8022B500.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8022AE90.h"
 /** Read the global word at VRAM 0x80145048. */
 
 

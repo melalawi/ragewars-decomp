@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8022B500.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8022BA90.h"
 /** Set up a player's starting lives from the game mode and character, then reset its respawn state. */
 
 

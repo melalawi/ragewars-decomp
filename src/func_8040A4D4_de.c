@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8040A4BC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80409A88.h"
 /* Points the output record's table at 0x14 at the variant for the display depth at 0x90 of
    D_800E28BC: 16 and 32 have their own, 8 and anything else use the default; returns 0. */
 

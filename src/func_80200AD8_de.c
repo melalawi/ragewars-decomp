@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80200400.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_80200610.h"
 /* Updates the selected byte in the aligned word addressed by arg0. */
 
 void func_80200AD8_de(s32 arg0, s32 arg1) {

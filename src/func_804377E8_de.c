@@ -1,5 +1,5 @@
-#include "span_166000/code_80426234.h"
-#include "span_16E000/code_8041ADB4.h"
+#include "span_166000/code_80426310.h"
+#include "span_16E000/code_8041B020.h"
 #include "types.h"
 
 #ifdef VERSION_EU_X

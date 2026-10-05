@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8043D904.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043D54C.h"
 #include "types.h"
 
 /* Calls func_8044DD50_de on D_8011FAC0 when D_80145070 is one, otherwise clears the word at offset

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8040AC98.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8040B45C.h"
 #include "types.h"
 /* Confirms the pak menu's channel: picks the team/channel override or the record's own channel byte, marks D_80153784, and if func_80406178_de accepts it opens the pak prompt keyed by the player's storage buffer (or the default buffer if there is no player), otherwise opens the prompt on the default buffer. */
 #define NULL ((void *)0)

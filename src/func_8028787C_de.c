@@ -1,5 +1,5 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80286050.h"
-#include "span_1000/types.h"
 #include "types.h"
 
 /* Spawns an entity through func_80278C10_de when its bit is set in the current level's placement mask and it either names no flag or its flag in the global flag table D_8011FF08 is clear. */

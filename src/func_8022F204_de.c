@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8022E938.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 extern u8 D_800FEB00[];
 extern u8 D_800FEB08[];

@@ -1,4 +1,4 @@
-#include "span_16E000/code_80411FB8.h"
+#include "span_16E000/code_80412270.h"
 #include "types.h"
 /* Copies image src into dst: releases dst's owned pixel data (flag 1) and palette (flag 2, when it
    has entries), clears it and copies src's header, drops a palette pointer without entries, marks

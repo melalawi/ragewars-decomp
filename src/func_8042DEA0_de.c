@@ -1,5 +1,4 @@
-#include "span_16E000/code_8042D1BC.h"
-#include "span_16E000/code_8042ED84.h"
+#include "span_16E000/code_8042E080.h"
 #include "types.h"
 /* Prepares a match: stops the current screen, starts screen 2, resets the eight player status
    records (clearing bytes 0x94 and 0x95 and, for human slots, the team byte 0x92) while counting
@@ -27,7 +26,7 @@ extern void func_8029973C_de(void);
 extern void func_80298368_de(s32);
 extern void func_802A230C_de(void);
 extern s32 func_80425C70_de(s32, s32, s32);
-extern void func_8042E1F0_de(void);
+
 
 
 

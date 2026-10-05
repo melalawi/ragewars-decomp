@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8042ACB0.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_80429C10.h"
 #include "types.h"
 /* Starts the next stage of the current cup D_80154010 unless func_8042AF3C_de reports the cup over:
    draws random stage numbers below the cup's size (5, 7, 17 or 11 stages) until one not yet marked

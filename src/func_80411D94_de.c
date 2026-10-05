@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_16E000/code_80410E9C.h"
+#include "span_16E000/code_80411B68.h"
 #include "types.h"
 
 /* Returns the halfword held in D_80153C2C. */

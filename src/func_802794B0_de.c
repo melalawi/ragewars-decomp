@@ -1,8 +1,8 @@
-#include "span_1000/code_80279208.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80279208.h"
+#include "types.h"
 
 /* Initializes an empty linked-list header by clearing its two links and count. */
 

@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804434BC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80443868.h"
 #include "types.h"
 /* Forwards arg1's word at 0x1C to func_8044972C_de and always reports success. */
 

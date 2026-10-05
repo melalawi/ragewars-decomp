@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_8024C444.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8024D018.h"
 #include "types.h"
 /* Returns the rotation that turns an actor's aim toward a target point: a player's forward axis is its
  * aiming orientation from func_8024796C_de applied to +z, anyone else looks along +z; the target is the

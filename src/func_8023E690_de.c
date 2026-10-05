@@ -1,5 +1,4 @@
-#include "span_1000/code_8023CBB0.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8023D370.h"
 #include "types.h"
 
 /* Stores a range and its parameters in a record: the low bound at 8, a count at 0xC, the high

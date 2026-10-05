@@ -1,4 +1,4 @@
-#include "span_1000/code_802C4604.h"
+#include "span_1000/code_802BE0D0.h"
 extern int D_8014BA48_de;
 
 /** Clear the global word at VRAM 0x80151CD8. */

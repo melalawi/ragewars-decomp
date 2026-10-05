@@ -1,4 +1,4 @@
-#include "span_1000/code_80283D24.h"
+#include "span_1000/code_8028308C.h"
 /* Passes the first non-null handle among entries 0 to count of the object's twenty-byte table at
    0xFC28 to func_80284570_de together with the object. */
 

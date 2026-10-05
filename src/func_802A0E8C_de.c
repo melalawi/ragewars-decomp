@@ -1,4 +1,4 @@
-#include "span_1000/code_802A137C.h"
+#include "span_1000/code_802A0AC4.h"
 typedef void (*FuncPtr)(void);
 
 extern FuncPtr D_800CD924_de;

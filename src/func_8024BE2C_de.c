@@ -1,5 +1,4 @@
-#include "span_1000/code_8024B644.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8024BA6C.h"
 /** Return the global float at D_800C8C44. */
 
 

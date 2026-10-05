@@ -1,5 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_80201ACC.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802022E0.h"
 typedef struct Owner Owner;
 
 

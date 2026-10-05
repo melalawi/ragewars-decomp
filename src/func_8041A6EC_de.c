@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041A0AC.h"
+#include "span_16E000/code_8041A4B0.h"
 #include "types.h"
 
 /* Positions a scroll bar: records the current item at offset 0x50 and stores in the halfword at

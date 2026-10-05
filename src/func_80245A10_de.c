@@ -1,5 +1,5 @@
-#include "span_1000/code_80245804.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_80245980.h"
 /** Clear the word at offset 0x100 in the active object. */
 extern char *D_800DE7E0;
 

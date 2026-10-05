@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_804434BC.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80443868.h"
 #include "types.h"
 /* Pulses the caption intensity on a 512-step triangle wave and redraws the caption sprite centred on the entry, dropped one full line or a short line when the wide-layout flag is clear. */
 #define NULL ((void *)0)

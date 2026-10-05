@@ -1,4 +1,4 @@
-#include "span_1000/code_8022C36C.h"
+#include "span_1000/code_8022C894.h"
 #include "types.h"
 /* Runs a player's grounded movement state: updates it through func_8022404C_de, eases the value at
    0x72C to zero by a quarter, applies the movement tables D_800CE7FC and D_800CE7C0, then leaves for

@@ -1,5 +1,5 @@
-#include "span_1000/code_8022A8E0.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_8022A274.h"
 #include "types.h"
 
 

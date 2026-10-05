@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041BC50.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_16E000/code_8041B020.h"
 /* After func_8029973C_de, forwards an event for a channel to func_802995D4_de with the channel's handler id
    (short at 0xC of the handler at 0x4C) when the channel is not muted (word at 0x5C) and has a handler;
    returns 0. */

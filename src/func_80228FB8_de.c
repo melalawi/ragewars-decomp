@@ -1,10 +1,10 @@
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80225D10.h"
+#include "span_1000/code_802A0888.h"
 #include "n64sdk.h"
 #include "gbi.h"
 #include "types.h"
-#include "span_1000/code_802A0888.h"
 
 /* Draws an actor's player model with its status tint: sets the other-mode lighting command and render
    mode 2, gives the model the team colour byte (the match rule D_801468A0's colour at 0x73 when team

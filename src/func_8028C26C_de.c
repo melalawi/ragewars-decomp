@@ -1,5 +1,5 @@
+#include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_8028B64C.h"
-#include "span_1000/types.h"
 #include "types.h"
 
 extern s32 func_80265550_de(u32 *, s32, u32, s32 *, s32 *);

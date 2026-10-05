@@ -1,4 +1,4 @@
-#include "span_1000/code_80297008.h"
+#include "span_1000/code_80296014.h"
 #include "types.h"
 
 s32 func_80296C30_de(f32 *arg0, f32 *arg1) {

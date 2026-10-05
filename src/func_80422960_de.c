@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_16E000/code_80421A88.h"
+#include "span_16E000/code_804221A0.h"
 #include "types.h"
 /* Event callback for the match setup screen D_800E04C8: on event 1 with the screen in state 1 it
    advances it, and once it reaches state 2 either goes back (choice 0: resets the mode, shows the

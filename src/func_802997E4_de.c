@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80299FC4.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80297CD0.h"
 /* Looks up an id among the 64 twenty-byte entries at 0x1C of the table D_8014D080 and returns the
    entry's override value when set, otherwise its default value, or 0 when the id is absent. */
 

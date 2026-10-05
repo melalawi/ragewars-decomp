@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8024F944.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802508E0.h"
 #include "types.h"
 /* Runs the resource manager thread: waits for messages on its queue D_801047E0 and, under the manager lock, frees the heap for messages 0 and 1, retries or completes a pending load request (flag 8) by unlinking it, draining its node's reference count, releasing an unused node's data and handle, and finishing the request, or otherwise (flag 4) starts it through func_80252774_de. The flag 8 path clears its reference loop with an inner do-while, and each branch unlocks itself. */
 

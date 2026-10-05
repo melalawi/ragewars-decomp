@@ -1,6 +1,8 @@
-#include "common/types.h"
-#include "span_1000/code_8021762C.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_80217388.h"
 #include "types.h"
 /* Runs a player's weapon menu each frame: the menu button (0x8000 of the controller at 0x698) counts
    only while func_8022C460_de allows and the controller is not paused through D_801468F4, which instead

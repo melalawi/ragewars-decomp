@@ -1,4 +1,4 @@
-#include "span_16E000/code_80449968.h"
+#include "span_16E000/code_8044ACCC.h"
 #include "types.h"
 
 /* Resets a 0x1208-byte actor: clears it through func_802A001C_de, initialises its three lists at 0xC,

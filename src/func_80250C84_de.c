@@ -1,5 +1,5 @@
-#include "span_1000/code_8024F944.h"
-#include "span_C76B0/data.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802508E0.h"
 #include "types.h"
 /* Draws a model instance for an owner: looks up the instance through func_802507AC_de, loads the owner's
  * model resource, decodes its colour block when the owner's colour frame at 0xDA differs from the current

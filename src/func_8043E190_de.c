@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8043D904.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8043DF84.h"
 #include "types.h"
 /* Sets arg0's unk14 field to the address of D_800D76C8 and returns 0. */
 

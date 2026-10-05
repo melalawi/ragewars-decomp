@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_8024E6C8.h"
+#include "common/types_8a8189af7b05.h"
+#include "span_1000/code_8024E130.h"
 extern int func_8028B2F8_de(char *arg0, int arg1);
 extern char D_8011BDC8;
 

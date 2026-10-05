@@ -1,5 +1,5 @@
-#include "span_1000/code_8024B644.h"
-#include "span_1000/types.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8024BA6C.h"
 #include "types.h"
 
 extern void **func_8024BFD4_de(void *arg0, s32 arg1);

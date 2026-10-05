@@ -1,7 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_802301E4.h"
-#include "span_1000/types.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "span_1000/code_8022F3E8.h"
 #include "types.h"
 /* Starts a player's secondary action: sets the request type to 1, refreshes the idle state when the current
  * action is not allowed, and when the player is flagged 0x4000, may fire and holds a charge either releases

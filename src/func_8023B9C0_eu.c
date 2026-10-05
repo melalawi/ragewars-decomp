@@ -1,5 +1,5 @@
-#include "span_1000/code_8023A4CC.h"
-#include "span_1000/code_802C224C.h"
+#include "span_1000/code_8023B9A0.h"
+#include "span_1000/code_802BD1A8.h"
 #include "types.h"
 /* Initializes the game state: clears the whole state block and fills its slot and lookup tables
    with 0xFF, resets the 24 player entries and queue slots, sets up the three lists and the stream

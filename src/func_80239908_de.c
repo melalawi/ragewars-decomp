@@ -1,5 +1,5 @@
-#include "span_1000/code_8023940C.h"
-#include "span_1000/types.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_802393F4.h"
 #include "types.h"
 /* Posts a text as on-screen messages for a target: the target's messages still in the pool's list at 0xE40
  * are unlinked and returned to the owner's list at 0xF24, then the text (or D_800D7028 when given D_800D7034)

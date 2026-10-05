@@ -1,4 +1,4 @@
-#include "span_16E000/code_8041DBA0.h"
+#include "span_16E000/code_8041BEA8.h"
 #include "types.h"
 
 /* Releases the object D_800E3590 holds through func_802547E4_de, clears D_800E3590 and returns zero. */

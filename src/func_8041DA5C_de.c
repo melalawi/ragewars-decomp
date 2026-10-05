@@ -1,5 +1,5 @@
-#include "span_16E000/code_8041BC50.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041BEA8.h"
 #include "types.h"
 /* Updates every node of the 50-entry id table: nodes whose unlock bit the current player has set are enabled through func_8040E8D8_de and given the style byte, the rest are disabled. */
 

@@ -1,5 +1,5 @@
-#include "span_1000/code_802945CC.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802944E8.h"
 #include "types.h"
 /* Opens the idle-time prompt when allowed and reports whether the pause input remains active. */
 

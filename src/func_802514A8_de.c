@@ -1,5 +1,5 @@
-#include "span_1000/code_8024F944.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802508E0.h"
 #include "types.h"
 /* Allocates a node from the free pool D_8010513C (as func_80254A28_de does: pops it, resets its fields,
  * stamps the current frame and links it through func_80255CB8_de with the caller's 0xC flags); when the pool

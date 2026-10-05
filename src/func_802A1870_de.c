@@ -1,4 +1,4 @@
-#include "span_1000/code_802A26F8.h"
+#include "span_1000/code_802A1264.h"
 extern unsigned int D_800CD990_de;
 extern unsigned int D_800CD994;
 extern unsigned int D_800CD998;

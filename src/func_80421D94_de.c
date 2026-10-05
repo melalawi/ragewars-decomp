@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80421A88.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_80420E90.h"
 #include "types.h"
 
 /* Calls func_8029973C_de, then sets the word at offset 0x10 of the object D_800E4450 points to to -1 and

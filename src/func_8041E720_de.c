@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_8041DBA0.h"
-#include "span_16E000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041DF04.h"
 #include "types.h"
 /* Scores the three entries (5, 10 or 20 points by kind for each active one, repeating the previous award for other kinds) and returns the first of five ranks whose threshold for the active-entry count reaches the score, 4 when none does, or zero with no active entry. */
 

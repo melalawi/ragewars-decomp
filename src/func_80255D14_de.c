@@ -1,7 +1,7 @@
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80255BEC.h"
 #include "types.h"
-#include "common/types_06e4f7ef1f9e.h"
 
 s32 func_80255D14_de(void *arg0, s32 arg1) {
     s32 temp_v1;

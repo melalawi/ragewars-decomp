@@ -1,5 +1,5 @@
-#include "common/types.h"
-#include "span_16E000/code_80447140.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_16E000/code_8041C67C.h"
 #include "types.h"
 /* __osPfsRequestOneChannel, drafted from the ultralib io pfsgetstatus source (2.0I branch): fill the pak
    PIF RAM block with one skip byte per preceding channel, a status request for the given channel and

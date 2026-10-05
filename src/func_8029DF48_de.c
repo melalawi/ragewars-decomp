@@ -1,5 +1,4 @@
-#include "span_1000/code_8029D984.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8029EB74.h"
 #include "types.h"
 
 /* Returns the arccosine of a value clamped to [-1, 1] as pi/2 minus the arcsine, which is computed by the polynomial approximation pi/2 - sqrt(1 - x) * p(x) on the magnitude with the sign restored. Adapted from func_8029DE48_de with the constants moved to D_800CADB4 through D_800CADD4 and the final subtraction from pi/2 added. */

@@ -1,6 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802A6488.h"
-#include "span_C76B0/data.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802A25C4.h"
 #include "types.h"
 
 extern void func_80272FBC_de(f32 *arg0, f32 *arg1);

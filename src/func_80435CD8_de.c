@@ -1,5 +1,5 @@
-#include "span_16E000/code_80421A88.h"
-#include "span_16E000/code_80435CF0.h"
+#include "span_16E000/code_804221A0.h"
+#include "span_16E000/code_80435CE4.h"
 #if defined(VERSION_EU_X)
 enum { START_MATCH = 0x43, RETURN_MENU = 0x3E, WAIT_SHORT = 0x42, WAIT_LONG = 0x40 };
 #else

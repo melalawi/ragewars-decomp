@@ -1,6 +1,5 @@
-#include "common/types.h"
-#include "span_1000/code_80263754.h"
-#include "span_1000/types.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_802636D0.h"
 #include "types.h"
 /* Reinitializes a present controller pak entry under the pak queue lock, resets its counters and label, retries initialization, and releases the lock; an unsigned pointer local and a queue address relative to the adjacent status byte separate address lifetimes and preserve register scheduling. */
 

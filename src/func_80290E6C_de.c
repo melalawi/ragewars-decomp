@@ -1,7 +1,6 @@
-#include "common/types.h"
-#include "span_1000/code_802909D8.h"
-#include "span_1000/code_802A776C.h"
-#include "span_1000/code_802AB720.h"
+#include "common/types_1dc8418c21db.h"
+#include "span_1000/code_80290980.h"
+#include "span_1000/code_802A8A94.h"
 extern struct MenuSettings D_80142208_de;
 #include "types.h"
 /* Draws the scrolling text lines from the current line index, fading each in with alpha sixteen times its distance below the top edge (capped at 255) and spacing lines ten 222ths of the screen height apart until past the bottom; the top edge is a zero-valued local, which keeps 0.0f in one saved register as the cartridge does. */

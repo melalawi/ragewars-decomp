@@ -1,7 +1,6 @@
-#include "span_1000/code_8026D4F0.h"
-#include "span_1000/code_802953FC.h"
-#include "span_1000/code_802A6488.h"
-#include "span_C76B0/data.h"
+#include "span_1000/code_8026AC38.h"
+#include "span_1000/code_80296014.h"
+#include "span_1000/code_802A25C4.h"
 /* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 #include "abi.h"
 #include "types.h"

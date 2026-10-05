@@ -1,4 +1,4 @@
-#include "span_1000/code_80274A24.h"
+#include "span_1000/code_8027451C.h"
 /* Decodes a packed header into its runtime form: copies the two leading shorts and the word at 0x10,
    and for each of three channels resolves a 16-byte-scaled offset against base and a 32-byte-scaled
    offset against extra, leaving the latter null when it is 0xFFFF. */

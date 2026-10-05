@@ -1,4 +1,4 @@
-#include "span_16E000/code_80435010.h"
+#include "span_16E000/code_80434F4C.h"
 #include "types.h"
 
 /* Returns 0x648, the byte size func_80435384_de passes on to func_804057EC_de for the object it

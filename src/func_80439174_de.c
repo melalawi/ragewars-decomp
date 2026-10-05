@@ -1,4 +1,4 @@
-#include "span_16E000/code_8043847C.h"
+#include "span_16E000/code_804379C8.h"
 #include "types.h"
 
 /* Calls func_8029973C_de, then sets the word at offset 0x14 of the object D_800E58A0 points to to -1 and

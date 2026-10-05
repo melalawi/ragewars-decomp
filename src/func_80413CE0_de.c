@@ -1,5 +1,4 @@
-#include "common/types.h"
-#include "span_16E000/code_804136EC.h"
+#include "span_16E000/code_80413728.h"
 #include "types.h"
 /* Writes a 0xAARRGGBB colour to the pixel at index: splits the colour into channels (forcing alpha
    to 0xFF when the format has no alpha mask), shifts each channel by the format's signed shift

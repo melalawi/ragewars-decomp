@@ -1,7 +1,7 @@
-#include "span_1000/code_8024E130.h"
-#include "common/types_8fd754e1e915.h"
-#include "types.h"
 #include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
+#include "span_1000/code_8024E130.h"
+#include "types.h"
 
 /** Return the constant false result used by callers at VRAM 0x8024E2E4. */
 int func_8024E2F4_de(void) {
