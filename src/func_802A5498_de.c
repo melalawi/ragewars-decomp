@@ -1,7 +1,7 @@
+#include "common/draw_matrix_scratch.h"
 #include "span_1000/code_8026AC38.h"
 #include "span_1000/code_80296014.h"
 #include "span_1000/code_802A25C4.h"
-/* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 #include "abi.h"
 #include "types.h"
 #include "gbi.h"
@@ -15,10 +15,7 @@ extern char D_801428E0;
 
 
 void func_802A5498_de(u32 arg0) {
-    struct {
-        char pad[144];
-        f32 matrix[7];
-    } volatile local;
+    DrawMatrixScratch local;
     Gfx *cmd;
 
     local.matrix[0] = 0.0f;
