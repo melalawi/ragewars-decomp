@@ -1,6 +1,7 @@
 #include "span_1000/code_8026AC38.h"
 #include "types.h"
-#define M2C_FIELD(base, type, offset) (*(type)((char *)(base) + (offset)))
+#include "common/draft_fields_func_8026DC24_de.h"
+
 
 
 extern s32 D_8010C58C;
@@ -48,9 +49,9 @@ block_7:
         temp_v0 += 1;
         *queue_countp = temp_v0;
         temp_v1_2 = temp_v1 + &D_80111718;
-        M2C_FIELD(temp_v1_2, s32 *, 0) = b;
-        M2C_FIELD(temp_v1_2, s32 *, 0xC) = c;
-        M2C_FIELD(temp_v1_2, void **, 4) = d;
-        M2C_FIELD(temp_v1_2, s32 *, 8) = var_s0;
+        ((struct Measured_func_8026DC24_de_d3723d959b3b *)(temp_v1_2))->value = b;
+        ((struct Measured_func_8026DC24_de_067abebdf932 *)(temp_v1_2))->value = c;
+        ((struct Measured_func_8026DC24_de_034b69863103 *)(temp_v1_2))->value = d;
+        ((struct Measured_func_8026DC24_de_258934bd7eea *)(temp_v1_2))->value = var_s0;
     }
 }
