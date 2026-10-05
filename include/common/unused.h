@@ -542,6 +542,9 @@ extern char D_800D3848[];
 /* unbake published declaration: published_219f9880042708d7179ddaba */
 extern char D_800D3768[];
 
+/* unbake published declaration: published_21d592f488746677cf6c62d3 */
+extern unsigned char D_800E2304;
+
 /* unbake published declaration: published_21e08948c5f21c6298e49b4f */
 extern f32 D_800C2C10_de[];
 
@@ -685,6 +688,9 @@ extern u8 D_80142227;
 
 /* unbake published declaration: published_2b308ca14676d382ed3e97ba */
 extern s32 D_00255280;
+
+/* unbake published declaration: published_2b58bb30b7a675a3b3ceafa7 */
+extern unsigned char D_800DDCB8;
 
 /* unbake published declaration: published_2bb016003cfa20e30bcf62d1 */
 extern s32 D_80137208;
