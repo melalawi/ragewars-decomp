@@ -7,7 +7,6 @@ extern s32 D_800CD780;
 extern s32 D_8010B194_de;
 extern s32 D_80142898;
 
-
 void func_802949FC_de(s32 arg0) {
     if (D_800CD780 != 0) {
         func_80293A20_de(arg0, 1, 1);
@@ -20,13 +19,8 @@ void func_802949FC_de(s32 arg0) {
     }
 }
 
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-M2C_UNK func_80290E6C_de(s32);
-M2C_UNK func_80291074_de(s32);
+s32 func_80290E6C_de(s32);
+s32 func_80291074_de(s32);
 void func_80294A74_de(s32 arg0) {
     func_80293B28_de();
     func_80290E6C_de(arg0);
