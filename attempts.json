@@ -131,7 +131,7 @@
       "minutes": 0.02
     },
     "func_8021836C_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -141,10 +141,10 @@
       },
       "bytes": 612,
       "exact": false,
-      "minutes": 2.5
+      "minutes": 10.38
     },
     "func_80218E98_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -154,7 +154,7 @@
       },
       "bytes": 112,
       "exact": false,
-      "minutes": 2.3
+      "minutes": 19.2
     },
     "func_8021CD94_de": {
       "attempts": 1,
@@ -170,7 +170,7 @@
       "minutes": 0.02
     },
     "func_80228FB8_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -179,8 +179,8 @@
         "us-rev1": 100.0
       },
       "bytes": 2140,
-      "exact": false,
-      "minutes": 1.85
+      "exact": true,
+      "minutes": 7.58
     },
     "func_8022A5A0_de": {
       "attempts": 1,
@@ -235,7 +235,7 @@
       "minutes": 0.02
     },
     "func_8022B8E0_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -244,8 +244,8 @@
         "us-rev1": 100.0
       },
       "bytes": 156,
-      "exact": false,
-      "minutes": 2.3
+      "exact": true,
+      "minutes": 19.26
     },
     "func_8022D164_de": {
       "attempts": 1,
@@ -404,7 +404,7 @@
       "minutes": 0.02
     },
     "func_8023C6BC_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -414,7 +414,7 @@
       },
       "bytes": 148,
       "exact": false,
-      "minutes": 2.3
+      "minutes": 19.25
     },
     "func_8023CFD8_eu": {
       "attempts": 48,
@@ -959,7 +959,7 @@
       "minutes": 0.02
     },
     "func_80260A5C_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -968,8 +968,8 @@
         "us-rev1": 100.0
       },
       "bytes": 292,
-      "exact": false,
-      "minutes": 1.67
+      "exact": true,
+      "minutes": 16.75
     },
     "func_802624A8_de": {
       "attempts": 1,
@@ -1515,7 +1515,7 @@
       "minutes": 0.02
     },
     "func_802A5498_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -1524,8 +1524,8 @@
         "us-rev1": 100.0
       },
       "bytes": 488,
-      "exact": false,
-      "minutes": 2.5
+      "exact": true,
+      "minutes": 10.35
     },
     "func_802A5680_de": {
       "attempts": 1,
@@ -1723,7 +1723,7 @@
       "minutes": 0.02
     },
     "func_804070F4_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -1732,8 +1732,8 @@
         "us-rev1": 100.0
       },
       "bytes": 412,
-      "exact": false,
-      "minutes": 2.5
+      "exact": true,
+      "minutes": 10.33
     },
     "func_8040C638_us": {
       "attempts": 15,

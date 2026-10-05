@@ -1,6 +1,5 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8022AE90.h"
-/* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 #include "types.h"
 extern void func_80216488_de(void *arg0, s32 arg1, s32 arg2, f32 arg3, s32 arg4, s32 arg5);
 extern void func_80219A40_de(void *arg0, void *arg1, void *arg2);
@@ -13,7 +12,7 @@ extern s32 D_80142208_de;
 
 
 void func_8022B8E0_de(void *arg0) {
-    volatile Slot sp18;
+    Slot sp18;
     f32 temp_f0;
     f32 temp_f1;
 
