@@ -177,9 +177,9 @@
 extern PakMenuController *D_800E1454_de;
 extern u8 D_800FEB00[];
 extern u8 D_801422D8[];
-extern s32 D_800D36D4;
-extern s32 D_800E25A4[];
-extern u8 D_80152789;
+
+
+
 
 extern void func_8029973C_de(void);
 extern s32 func_8041B810_de(s32, s32);

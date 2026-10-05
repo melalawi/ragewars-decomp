@@ -392,6 +392,9 @@ extern u32 D_80000308;
 /* unbake published declaration: published_168064467caa1d1b1c25719d */
 extern u8 D_800D0EE4[];
 
+/* unbake published declaration: published_168b7662f1f383690c0017f8 */
+extern s32 D_800E25A4[];
+
 /* unbake published declaration: published_16947578c7edcbfcac66edb2 */
 extern s32 D_8014D9DC;
 

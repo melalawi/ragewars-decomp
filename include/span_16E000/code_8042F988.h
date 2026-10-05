@@ -3,13 +3,11 @@
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "../types.h"
-#include "types.h"
 /* unbake published declaration: published_08c282c47e39cff43d22f22a */
 extern int func_80434750_de(void);
 
 struct Name;
 /* unbake published declaration: published_26edcae6190e2382fc68861a */
-struct PakMenuTail;
 struct Name {
     u8 flags[2];
     u8 code[0x14];
@@ -22,11 +20,6 @@ typedef struct PakDisplayName PakDisplayName;
 
 struct PakDisplayName;
 /* unbake published declaration: published_a72761cdc5d97a4720122974 */
-struct PakMenuTail {
-    s32 source;
-    s32 sourceRecord;
-    struct Triple ports[4];
-};
 struct PakDisplayName {
     char text[0x3C];
     char code[70 - 0x3C];
@@ -381,6 +374,13 @@ struct Block_func_8043497C_de {
     struct Triple places[4];
 };
 
-
+struct PakMenuTail;
+struct Triple;
+/* unbake published declaration: published_fecdf1231fb17be6b1cdb9ff */
+struct PakMenuTail {
+    s32 source;
+    s32 sourceRecord;
+    struct Triple ports[4];
+};
 
 #endif
