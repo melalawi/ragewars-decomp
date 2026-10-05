@@ -1,12 +1,7 @@
 #include "span_1000/code_8028308C.h"
 #include "types.h"
-typedef s32 M2C_UNK;
 
-
-
-
-
-extern M2C_UNK D_8011ADB0;
+extern s32 D_8011ADB0;
 void func_80283424_de(void *arg0) {
     (((struct ObjectLinks1E8 *) ((s8 *) arg0))->unk_18) = &D_8011ADB0;
     (((struct ObjectLinks1E8 *) ((s8 *) arg0))->unk_0) = 2;
