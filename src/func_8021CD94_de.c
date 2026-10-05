@@ -3,16 +3,10 @@
 #include "span_1000/code_8021CD70.h"
 #define NULL ((void *)0)
 
-
 #ifndef M2C_MACROS_H
 #define M2C_MACROS_H
 
 /* Unknown types */
-typedef s32 M2C_UNK;
-typedef s8  M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
 
 /* Unknown field access, like `*(type_ptr) &expr->unk_offset` */
 #define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
@@ -74,18 +68,6 @@ typedef s64 M2C_UNK64;
 
 #endif
 s32 func_80216BF4_de(void *, void *, void *);
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Checks whether the player's current weapon can lock onto the target. */
 s32 func_8021CD94_de(func_8021CD70_S1 *arg0, func_8021CD70_S2 *arg1) {
