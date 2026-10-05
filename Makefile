@@ -27,6 +27,7 @@ N64LINK := n64link
 INCLUDES := -Iinclude
 CPPFLAGS := -P -undef -nostdinc -D_LANGUAGE_C -DF3DEX_GBI_2 -D__GNUC__=2
 SN64_ASFLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
+HASM_ASFLAGS := -march=vr4300 -mabi=32 -EB --no-pad-sections
 KIND := sn64
 CC := tools/gcc-2.8.1-sn64/cc1
 CODEGEN := -G0 -mips3 -O2 -mgas -meb -mcpu=VR4300 -mhard-float -mgp32 -mfp64 -mno-fix4300
@@ -122,7 +123,7 @@ setup:
 	@sha256sum --quiet -c tools/compilers.sha256
 
 clean:
-	rm -rf build/cas $(foreach v,$(VERSIONS),build/$v/src build/$v/units build/$v/slices)
+	rm -rf build/cas $(foreach v,$(VERSIONS),build/$v/src build/$v/units build/$v/hasm build/$v/slices)
 
 include $(foreach v,$(VERSIONS),versions/$v/slices.mk)
 include units.mk
@@ -144,6 +145,10 @@ UNIT_BIN = read key < $< && \
   $(addprefix --map ,$($(VER).MAP)) --symbols versions/$(VER)/symbols.ld $(TRIM) && \
   $(LD) -T versions/$(VER)/$(NAME).ld --section-start=.text=$(firstword $(subst :, ,$($(VER).U.$(*F)))) \
   --oformat binary -o $@ $(@D)/$(*F).placed.o
+HASM_BIN = printf '%s\n' '$(VER) $(*F)'; \
+  $(AS) $(HASM_ASFLAGS) -o $(@D)/$(*F).o $< && \
+  $(LD) -T versions/$(VER)/$(NAME).ld --section-start=.text=$(firstword $(subst :, ,$($(VER).U.$(*F)))) \
+  --oformat binary -o $@ $(@D)/$(*F).o
 SLICE = dd if=$($(VER).BASEROM) of=$@ bs=65536 iflag=skip_bytes,count_bytes status=none \
   skip=$(word 1,$($(VER).S.$(*F))) count=$(word 2,$($(VER).S.$(*F)))
 
@@ -152,11 +157,13 @@ build/$1/src/%.key: src/%.c Makefile units.mk | verify build/$1/src build/cas
 	$$(Q)$$(UNIT_KEY)
 build/$1/units/%.bin: build/$1/src/%.key versions/$1/symbols.ld versions/$1/$$(NAME).ld | build/$1/units
 	$$(Q)$$(UNIT_BIN)
-build/$1/slices/%.bin: $$($1.BASEROM) | build/$1/slices
+build/$1/hasm/%.bin: src/%.s versions/$1/symbols.ld versions/$1/$$(NAME).ld | build/$1/hasm
+	$$(Q)$$(HASM_BIN)
+build/$1/slices/%.bin: $$($1.BASEROM) versions/$1/slices.mk | build/$1/slices
 	$$(Q)$$(SLICE)
 build/$1/$$(NAME).z64: $$($1.PIECES)
 	$$(Q)printf '%s\n' '$1 rom'; cat $$($1.PIECES) > $$@
-build/$1/src build/$1/units build/$1/slices:
+build/$1/src build/$1/units build/$1/hasm build/$1/slices:
 	$$(Q)mkdir -p $$@
 endef
 $(foreach v,$(VERSIONS),$(eval $(call VERSION_RULES,$v)))
