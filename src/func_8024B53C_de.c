@@ -17,9 +17,6 @@ extern void func_80273D6C_de(void *);
 
 extern f32 D_80111D2C;
 
-
-
-
 void func_8024B53C_de(void *arg0) {
     Vector4f trig;
     Vector4f product;
@@ -64,14 +61,6 @@ void func_8024B53C_de(void *arg0) {
 void func_8024B654_de(void) {
 }
 
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-
-
-
 void func_8024B65C_de(void *arg0, unsigned int arg1)
 {
   ((func_8024B64C_S1 *)(arg0))->unk10A = arg1;
@@ -102,9 +91,6 @@ s32 func_8024B6A0_de(void *a, s32 c, s32 flag) {
 }
 
 extern void func_8024B65C_de(void *arg0, u32 arg1);
-
-
-
 
 s32 func_8024B6F4_de(void *arg0, s32 arg1, s32 arg2) {
     if (arg1 < 0 || (arg2 == 0 && (((func_80203C40_S1 *)(arg0))->unk100 & 0x400))) {
@@ -143,8 +129,6 @@ extern s32 *func_8024BFD4_de(void *arg0, s8 arg1);
 extern void *func_8028FDB4_de(void *arg0, s32 arg1);
 extern s32 func_802484B0_de(void *arg0, s32 arg1, void *arg2);
 extern void func_80253754_de(s32 arg0, s32 arg1);
-
-
 
 s32 func_8024B7E4_de(void *arg0, s32 arg1)
 {
@@ -194,11 +178,6 @@ extern void func_8024AA18_de(void *arg0, void *arg1, void *arg2);
 extern void func_8024C454_de(void *arg0, void *arg1);
 extern void func_8026DA4C_de();
 
-
-
-
-
-
 void func_8024B8EC_de(void *arg0, void *arg1, void *arg2) {
     s8 index;
     s32 one;
@@ -226,11 +205,6 @@ extern s32 D_800CD72C;
 extern void func_8024AA18_de(void *arg0, void *arg1, void *arg2);
 extern void func_8024C454_de(void *arg0, void *arg1);
 extern void func_8026DA4C_de();
-
-
-
-
-
 
 void func_8024B990_de(void *arg0, void *arg1, void *arg2, Block24 *arg3) {
     s8 index;
