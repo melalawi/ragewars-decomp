@@ -9,21 +9,13 @@ void func_8024F470_de(void *arg0) {
     ((func_8024F460_S1 *)(arg0))->unk1C4 = 0;
 }
 
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-M2C_UNK func_8024D870_de();
+s32 func_8024D870_de();
 s32 func_8024F478_de(s32 arg0) {
     func_8024D870_de();
     return arg0;
 }
 
 extern s32 func_8024F858_de(void *arg0);
-
-
-
 
 extern func_8020CA10_G1 D_800C3DF8_de;
 
@@ -33,14 +25,6 @@ extern f32 D_800CD738;
 
 extern struct Shape_func_8021A2D4_de_2 D_800CD8D0;
 extern GlobalState_func_8024F4A0_de D_801427D4;
-
-
-
-
-
-
-
-
 
 void func_8024F4A0_de(void *arg0) {
     char *o = (char *) arg0;
@@ -78,14 +62,6 @@ void func_8024F4A0_de(void *arg0) {
 
 extern f32 D_800CD738;
 
-
-
-
-
-
-
-
-
 void func_8024F5A0_de(void *arg0) {
     f32 temp_f1;
     f32 threshold;
@@ -109,10 +85,6 @@ void func_8024F5A0_de(void *arg0) {
 /** Stores D_800D2988 times the float at 0x20 of the object at 0x18 in the float at 0x1A4. */
 extern float D_800CD738;
 
-
-
-
-
 void func_8024F618_de(void *arg0) {
     void *p = ((func_8024F608_S1 *)(arg0))->unk18;
     ((func_8024F608_S1 *)(arg0))->unk1A4 = (D_800CD738) * (((func_8022CA04_S3 *)(p))->unk20);
@@ -125,11 +97,7 @@ extern void func_80273448_de(char *object, float x, float y, float z);
 extern void func_80273D6C_de(void *object);
 extern void func_8027027C_de(void *arg0, void *arg1);
 
-
 extern s32 D_800CD72C;
-
-
-
 
 void func_8024F634_de(void *arg0) {
     char *o = (char *) arg0;
@@ -164,10 +132,6 @@ extern char D_0026D7F4;
 extern char D_800C3DA8_de;
 extern char D_800C3DC0_de;
 extern char D_800C3DD4_de;
-
-
-
-
 
 void **func_8024F6EC_de(void *arg0, s32 arg1) {
     void *sp28;
@@ -204,11 +168,6 @@ extern s32 D_8011BDC8;
 extern s32 D_80142208_de;
 extern s32 func_8028B25C_de(void *arg0, s32 arg1);
 
-
-
-
-
-
 s32 func_8024F858_de(void *arg0) {
     void *obj;
     s32 value;
@@ -238,9 +197,6 @@ s32 func_8024F858_de(void *arg0) {
 extern s32 func_802784C0_de(s32 a, s32 b, void *c, s32 d, s32 e, void *f);
 extern void func_80253E64_de(s32 a, s32 **b, s32 c);
 extern s32 D_800CD72C;
-
-
-
 
 void func_8024F8DC_de(void *arg0, s32 **arg1) {
     s32 new_var;
