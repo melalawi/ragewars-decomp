@@ -4,14 +4,6 @@
 #include "span_1000/code_80208000.h"
 #include "types.h"
 
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-
-
-
 void func_80209804_de(s32 arg0)
 {
   s32 var_v0;
@@ -31,7 +23,6 @@ void func_80209804_de(s32 arg0)
 
 /* Pops the front of a four-entry queue at offset 0x14 of a record: shifts the entries down one,
    marks the last empty with -1 and returns whether an entry remains at the front. */
-
 
 s32 func_80209828_de(struct Queue *queue) {
     s32 i;
@@ -122,11 +113,6 @@ extern char D_800FFFD0;
 extern void **D_800FFFCC;
 
 extern s32 func_802444A4_de(void *arg0, Vec3 arg1, Vec3 arg2, void *arg3);
-
-
-
-
-
 
 s32 func_802099B4_de(void **arg0, void *arg1) {
     Vec3 first;
