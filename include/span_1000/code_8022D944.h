@@ -454,6 +454,9 @@ extern float D_800C2DC8_de;
 /* unbake published declaration: published_ca591ca8e36c4622c0478ef7 */
 extern s32 func_8022E640_de(void *arg0);
 
+/* unbake published declaration: published_caad84110b8f5b4999e277b9 */
+extern void func_8022E260_de(void * arg0, int arg1, int arg2);
+
 struct Object126;
 /* unbake published declaration: published_f81820e4a0ce2316450799e9 */
 struct Object126 {
