@@ -10,7 +10,7 @@
         "us-rev1": 100.0
       },
       "bytes": 32,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_8020D1FC_de": {
@@ -23,7 +23,7 @@
         "us-rev1": 100.0
       },
       "bytes": 36,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_8022A5A0_de": {
@@ -36,7 +36,7 @@
         "us-rev1": 100.0
       },
       "bytes": 32,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_8022D164_de": {
@@ -49,7 +49,7 @@
         "us-rev1": 100.0
       },
       "bytes": 36,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_80232C68_de": {
@@ -62,7 +62,7 @@
         "us-rev1": 100.0
       },
       "bytes": 32,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_8023CFD8_eu": {
@@ -84,7 +84,7 @@
         "us-rev1": 100.0
       },
       "bytes": 32,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_8024E900_de": {
@@ -97,7 +97,7 @@
         "us-rev1": 100.0
       },
       "bytes": 36,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_8025E150_de": {
@@ -110,7 +110,7 @@
         "us-rev1": 100.0
       },
       "bytes": 36,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_8025E23C_de": {
@@ -123,7 +123,7 @@
         "us-rev1": 100.0
       },
       "bytes": 36,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_80279178_de": {
@@ -136,7 +136,7 @@
         "us-rev1": 100.0
       },
       "bytes": 32,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_802791B8_de": {
@@ -149,7 +149,7 @@
         "us-rev1": 100.0
       },
       "bytes": 32,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_80285100_eu": {
@@ -161,7 +161,7 @@
         "us-rev1": 100.0
       },
       "bytes": 32,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_80294434_de": {
@@ -187,7 +187,7 @@
         "us-rev1": 100.0
       },
       "bytes": 32,
-      "exact": false,
+      "exact": true,
       "minutes": 0.02
     },
     "func_8040C638_us": {
