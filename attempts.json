@@ -1,13 +1,13 @@
 {
   "functions": {
     "func_8023CFD8_eu": {
-      "attempts": 32,
+      "attempts": 33,
       "best": {
         "eu": 100.0
       },
       "bytes": 16,
       "exact": false,
-      "minutes": 45.52
+      "minutes": 114.84
     },
     "func_80294434_de": {
       "attempts": 1,
