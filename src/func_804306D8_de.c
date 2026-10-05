@@ -4,6 +4,12 @@
 #include "span_16E000/code_8042F988.h"
 #include "types.h"
 
+
+
+
+
+#define PAK_TAIL ((struct PakMenuTail *) ((u8 *) D_800E1454_de + sizeof(PakMenuController)))
+
 /* Steps player arg2's menu state machine at 0x58 of its 0xB68-byte record in the block D_800E1454_de points to
    on the event func_8041B810_de reports: each state accepts its events, moves to the next state (by the game
    mode at 0x54 where it matters), updates the player's name records, and refreshes the player through
@@ -541,7 +547,7 @@ s32 func_804306D8_de(s32 arg0, s32 arg1, s32 arg2) {
             slot = func_80435128_de(p);
             if (slot >= 0) {
                 func_802A0724_de(&PL.records[slot],
-                                 &D_800E1454_de->players[D_800E1454_de->source].records[D_800E1454_de->sourceRecord],
+                                 &D_800E1454_de->players[PAK_TAIL->source].records[PAK_TAIL->sourceRecord],
                                  0x190);
                 PL.record = slot;
                 PL.records[slot].owner = slot;
@@ -580,7 +586,7 @@ s32 func_804306D8_de(s32 arg0, s32 arg1, s32 arg2) {
             switch (sub) {
             case 3:
                 PL.state = 0x11;
-                q = func_80434750_de((u8 *) D_800E1454_de + p * sizeof(Shared_Player_func_80433F14));
+                q = ((int (*)(u8 *)) func_80434750_de)((u8 *) D_800E1454_de + p * sizeof(Shared_Player_func_80433F14));
                 if (q >= 0) {
                     D_800E1454_de->players[q].back = 2;
                     D_800E1454_de->players[q].state = 2;
@@ -593,7 +599,7 @@ s32 func_804306D8_de(s32 arg0, s32 arg1, s32 arg2) {
                 switch (D_800E1454_de->phase) {
                 case 1:
                     PL.state = 0x11;
-                    q = func_80434750_de((u8 *) D_800E1454_de + p * sizeof(Shared_Player_func_80433F14));
+                    q = ((int (*)(u8 *)) func_80434750_de)((u8 *) D_800E1454_de + p * sizeof(Shared_Player_func_80433F14));
                     if (q >= 0) {
                         D_800E1454_de->players[q].back = 2;
                         D_800E1454_de->players[q].state = 2;
@@ -715,7 +721,7 @@ s32 func_804306D8_de(s32 arg0, s32 arg1, s32 arg2) {
         func_804356BC_de(i);
         func_8040E8D8_de(func_8040EC30_de(PL.notes[PL.choice], NODE_16), 1);
         PL.used[PL.choice] = 0;
-        D_800E1454_de->ports[i].active = 0;
+        PAK_TAIL->ports[i].x = 0;
         PL.port = i;
         func_80433BCC_de(p);
         PL.state = 0xD;
