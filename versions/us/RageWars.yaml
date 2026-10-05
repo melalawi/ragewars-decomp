@@ -4986,7 +4986,7 @@ segments:
       - [0x194208, c, "func_80430028_de"]
       - [0x1942F8, asm, "func_80430118_de"]
       - [0x1945D8, asm, "func_804303F8_de"]
-      - [0x1948B8, asm, "func_804306D8_de"]
+      - [0x1948B8, c, "func_804306D8_de"]
       - [0x196334, c, "func_80432158_de"]
       - [0x196488, asm, "func_804322AC_de"]
       - [0x197574, c, "func_80433398_de"]

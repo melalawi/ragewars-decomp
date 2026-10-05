@@ -4,7 +4,7 @@
 #include "common/types_8a8189af7b05.h"
 #include "../types.h"
 /* unbake published declaration: published_08c282c47e39cff43d22f22a */
-extern int func_80434750_de(void);
+extern int func_80434750_de();
 
 struct Name;
 /* unbake published declaration: published_26edcae6190e2382fc68861a */
@@ -70,6 +70,12 @@ struct Shared_Player_func_80433F14;
 /* unbake published declaration: published_938a7734fc1938e8e130b05a */
 typedef struct Shared_Player_func_80433F14 Shared_Player_func_80433F14;
 
+struct Port {
+    s32 active;
+    s32 pad4;
+    s32 pad8;
+};
+
 struct PakMenuController;
 /* unbake published declaration: published_0912bfd6b2d718dc0d995c44 */
 struct PakMenuController {
@@ -78,6 +84,9 @@ struct PakMenuController {
     char pad8[0x54 - 8];
     s32 phase;
     Shared_Player_func_80433F14 players[4];
+    s32 source;
+    s32 sourceRecord;
+    struct Port ports[4];
 };
 
 struct Char;
