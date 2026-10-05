@@ -1,6 +1,6 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802609CC.h"
-#include "acmd.h"
+#include "common/packed_bit_words.h"
 #include "types.h"
 
 
@@ -26,7 +26,7 @@ inline static void write_bits(u32 arg2, u32 arg0, u32 arg1)
   u32 var_a2;
   u32 var_a3;
   u32 var_v1;
-  Awords *words;
+  PackedBitWords *words;
   temp_a1 = (1 << arg1) - 1;
   var_v1 = temp_a1;
   temp_v0 = arg0 & 0x1F;
@@ -47,9 +47,9 @@ inline static void write_bits(u32 arg2, u32 arg0, u32 arg1)
     var_a2 = temp_a2 >> temp_v0_2;
   }
   temp_a0 = (arg0 & 0xF0000000) | (((u32) (arg0 & 0x0FFFFFE0)) >> 3);
-  words = (Awords *) temp_a0;
-  words->w0 = (words->w0 & (~var_v1)) | var_a3;
-  words->w1 = (words->w1 & (~temp_a1)) | var_a2;
+  words = (PackedBitWords *) temp_a0;
+  words->low = (words->low & (~var_v1)) | var_a3;
+  words->high = (words->high & (~temp_a1)) | var_a2;
 }
 
 void func_80260A5C_de(s32 arg0, Func802608ECResult range, f32 arg4)
