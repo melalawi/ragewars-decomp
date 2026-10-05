@@ -16,14 +16,6 @@ void func_8025C524_de(void *arg0, s32 arg1)
   func_802B2E30_de(temp_s0_2, arg1 & 0xFF);
 }
 
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
-
-
-
 void func_8025C578_de(void *arg0)
 {
   s16 *new_var;
@@ -43,9 +35,6 @@ void func_8025C5BC_de(void *arg0) {
 extern void func_802B2F00_de(void *arg0, s16 arg1);
 extern s32 func_802B2620_de(void *arg0);
 extern void func_802B2F60_de(void *arg0);
-
-
-
 
 void func_8025C5DC_de(void *arg0) {
     s32 a0;
@@ -67,11 +56,6 @@ void func_8025C5DC_de(void *arg0) {
 }
 
 void func_802B25D0_de(void *a, short b);
-
-
-
-
-
 
 void func_8025C65C_de(void *arg0) {
     void *base;
