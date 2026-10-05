@@ -5,12 +5,8 @@
 extern s32 D_002B5570;
 extern s32 D_002B5730;
 
-
 void func_802B53E0_de(void *arg0, void *a, void *b, s32 c);
 s32 func_802B0340_de(s32 a, s32 b, s32 c, s32 d, s32 e);
-
-
-
 
 void func_802B450C_de(void *arg0, s32 arg1) {
     s32 result;
@@ -29,14 +25,8 @@ void func_802B450C_de(void *arg0, s32 arg1) {
     ((func_802B95DC_S1 *)(arg0))->unk18 = k;
 }
 
-typedef s32 M2C_UNK;
-
-
-
-
-
-extern M2C_UNK D_002B6380;
-extern M2C_UNK D_002B6480;
+extern s32 D_002B6380;
+extern s32 D_002B6480;
 void func_802B4598_de(void *arg0) {
     func_802B53E0_de(arg0, (s32) &D_002B6380, (s32) &D_002B6480, 3);
     (((struct func_8028DA50_S1 *) ((s8 *) arg0))->unk14) = 0;
