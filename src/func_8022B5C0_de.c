@@ -1,14 +1,9 @@
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_8022AE90.h"
 #include "types.h"
-typedef s32 M2C_UNK;
-
-
-
-
 
 f32 func_80274808_de(f32, f32, s32);
-extern M2C_UNK D_800C2D10_de;
+extern s32 D_800C2D10_de;
 extern s32 D_800C9FF0;
 void func_8022B5C0_de(void *arg0) {
     if ((((struct ObjectState12C4 *) ((s8 *) arg0))->unk_5E4) != 0) {
