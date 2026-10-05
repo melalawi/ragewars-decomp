@@ -360,6 +360,19 @@
       "exact": true,
       "minutes": 0.02
     },
+    "func_80250A9C_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 56,
+      "exact": true,
+      "minutes": 0.02
+    },
     "func_80256E6C_de": {
       "attempts": 1,
       "best": {
