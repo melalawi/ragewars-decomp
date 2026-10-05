@@ -4,16 +4,10 @@
 
 #define NULL ((void *)0)
 
-
 #ifndef M2C_MACROS_H
 #define M2C_MACROS_H
 
 /* Unknown types */
-typedef s32 M2C_UNK;
-typedef s8  M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-typedef s64 M2C_UNK64;
 
 /* Unknown field access, like `*(type_ptr) &expr->unk_offset` */
 #define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
@@ -78,10 +72,6 @@ typedef s64 M2C_UNK64;
  * 0x800CAC34 = 1.0 (float, D_800CAC34 in this cartridge's tables)
  */
 void func_8029BBB0_de(f32, f32 *, f32 *);
-
-
-
-
 
 /* Build a rotation matrix from the three Euler angles in arg1. */
 void func_8029C984_de(func_8029D984_S2 *arg0, Vec3 *arg1) {
@@ -202,15 +192,6 @@ void func_8029CAB4_de(Input_func_8029CAB4_de *arg0, Vec3 *arg1) {
 }
 
 /* Computes an arcsine-style angle from a clamped matrix element by polynomial approximation, then derives the other two Euler angles with atan2-style calls and writes the triple. Adapted from func_8029CAB4_de, with the source element, the zero test, the branch operands, and the stored order changed. */
-
-
-
-
-
-
-
-
-
 
 extern f32 func_802B72B0_de(f32);
 extern f32 func_8029B9FC_de(f32);
