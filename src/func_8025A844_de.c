@@ -1,25 +1,15 @@
 #include "span_1000/code_8025A3EC.h"
+#include "span_1000/code_8025A3EC.h"
 #include "common/unused.h"
 #include "types.h"
 #include "common/types_06e4f7ef1f9e.h"
+#include "packed_float.h"
 
-#if defined(VERSION_EU)
-#define func_802B2350 func_802AD520_eu
-#else
-#define func_802B2350 func_802AD280_de
-#endif
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* Updates a voice pan from its sweep, position or centered fallback and applies it to the owner sound. */
-
-
-
-
-
-
 
 extern s32 func_80258D2C_de(Owner_func_8025A844_de *);
 extern s16 func_80259B10_de(void *, void *);
-extern f32 func_802B2350(s32);
+
 extern void func_802B2F00_de(void *, s16);
 extern void func_802B2E30_de(void *, s32);
 
@@ -48,14 +38,14 @@ void func_8025A844_de(Voice_func_8025A844_de *voice) {
             if (voice->step < 0.0f) {
                 rising = 1;
             }
-            if (rising ? voice->value < func_802B2350(voice->target) : func_802B2350(voice->target) < voice->value) {
+            if (rising ? voice->value < RW_BITS_TO_FLOAT(voice->target) : RW_BITS_TO_FLOAT(voice->target) < voice->value) {
                 voice->value -= voice->step;
                 if (rising) {
-                    if (!(func_802B2350(voice->target) < voice->value)) goto clamp_done;
+                    if (!(RW_BITS_TO_FLOAT(voice->target) < voice->value)) goto clamp_done;
                 } else {
-                    if (!(voice->value < func_802B2350(voice->target))) goto clamp_done;
+                    if (!(voice->value < RW_BITS_TO_FLOAT(voice->target))) goto clamp_done;
                 }
-                voice->value = func_802B2350(voice->target);
+                voice->value = RW_BITS_TO_FLOAT(voice->target);
 clamp_done:
                 ;
             }
@@ -76,20 +66,6 @@ clamp_done:
  * distance to the listener, lowers the level by a step while the distance grows and raises it while it
  * shrinks (clamped to the D_800C9048 range, remembering the distance), and otherwise eases the level one
  * step toward the rest level D_800C9044. */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void func_8025AA2C_de(Emitter *emitter) {
     char *listener;
     f32 dx;
