@@ -5300,7 +5300,7 @@ segments:
       - [0x12DF64, c, "func_8043CF44_de"]
       - [0x12E0A0, asm, "func_8043D080_de"]
       - [0x12E0F4, c, "func_8043D0D4_de"]
-      - [0x12E110, asm, "func_8043D0F0_de"]
+      - [0x12E110, c, "func_8043D0F0_de"]
       - [0x12E1FC, asm, "func_8043D1DC_de"]
       - [0x12E22C, asm, "func_8043D20C_de"]
       - [0x12E234, asm, "func_8043D214_de"]

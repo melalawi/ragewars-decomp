@@ -5146,7 +5146,7 @@ segments:
       - [0x1A1124, c, "func_8043CF44_de"]
       - [0x1A1260, asm, "func_8043D080_de"]
       - [0x1A12B4, c, "func_8043D0D4_de"]
-      - [0x1A12D0, asm, "func_8043D0F0_de"]
+      - [0x1A12D0, c, "func_8043D0F0_de"]
       - [0x1A13BC, asm, "func_8043D1DC_de"]
       - [0x1A13EC, asm, "func_8043D20C_de"]
       - [0x1A13F4, asm, "func_8043D214_de"]
