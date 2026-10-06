@@ -4,8 +4,8 @@ cap = 32
 [[group]]
 name = "code_80200400"
 segment = "span_1000"
-evidence = "inferred"
-members = ["func_80200400_de", "func_80200400_eu", "func_80200400_eu_x", "func_80200400_us", "func_80200400_us_rev1", "func_80200500_de", "func_80200538_de", "func_80200568_de", "func_802005A0_de", "func_802005DC_de"]
+evidence = "proven"
+members = ["func_80200400_de", "func_80200400_eu", "func_80200400_eu_x", "func_80200400_us", "func_80200400_us_rev1", "func_80200500_de", "func_80200568_de", "func_802005A0_de", "func_802005DC_de"]
 only = { "func_80200400_de" = ["de"], "func_80200400_eu" = ["eu"], "func_80200400_eu_x" = ["eu-x"], "func_80200400_us" = ["us"], "func_80200400_us_rev1" = ["us-rev1"] }
 signals = ["cap", "version"]
 

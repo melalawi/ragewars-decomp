@@ -46,7 +46,6 @@ segments:
     subsegments:
       - [0x1000, asm, "func_80200400_eu_x"]
       - [0x1100, c, "func_80200500_de"]
-      - [0x1138, c, "func_80200538_de"]
       - [0x1168, asm, "func_80200568_de"]
       - [0x11A0, asm, "func_802005A0_de"]
       - [0x11DC, asm, "func_802005DC_de"]
