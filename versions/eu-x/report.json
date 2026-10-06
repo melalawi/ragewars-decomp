@@ -1,18 +1,18 @@
 {
   "measures": {
-    "fuzzy_match_percent": 58.891056,
+    "fuzzy_match_percent": 58.918346,
     "total_code": 1114004,
-    "matched_code": 636676,
-    "matched_code_percent": 57.15204,
+    "matched_code": 636980,
+    "matched_code_percent": 57.17933,
     "matched_data_percent": 100.0,
     "total_functions": 3752,
-    "matched_functions": 2791,
-    "matched_functions_percent": 74.38699,
-    "complete_code": 636676,
-    "complete_code_percent": 57.15204,
+    "matched_functions": 2792,
+    "matched_functions_percent": 74.41364,
+    "complete_code": 636980,
+    "complete_code_percent": 57.17933,
     "complete_data_percent": 100.0,
     "total_units": 3752,
-    "complete_units": 2791
+    "complete_units": 2792
   },
   "units": [
     {
@@ -144052,13 +144052,22 @@
         "matched_data_percent": 100.0,
         "total_functions": 1,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "304",
+        "matched_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "304",
+        "complete_code_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
           "size": "304",
-          "metadata": {}
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -144066,11 +144075,16 @@
           "name": "func_8044D804_de",
           "size": "304",
           "metadata": {},
-          "address": "0"
+          "address": "0",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
-        "complete": false
+        "complete": true,
+        "source_path": "src/func_8044D804_de.c",
+        "progress_categories": [
+          "c"
+        ]
       }
     },
     {
@@ -144332,14 +144346,14 @@
       "name": "Matched C",
       "measures": {
         "total_code": 1114004,
-        "matched_code": 636676,
-        "matched_code_percent": 57.15204,
-        "complete_code": 636676,
-        "complete_code_percent": 57.15204,
+        "matched_code": 636980,
+        "matched_code_percent": 57.17933,
+        "complete_code": 636980,
+        "complete_code_percent": 57.17933,
         "total_functions": 3752,
-        "matched_functions": 2791,
+        "matched_functions": 2792,
         "total_units": 3752,
-        "complete_units": 2791
+        "complete_units": 2792
       }
     },
     {

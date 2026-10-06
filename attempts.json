@@ -3112,6 +3112,19 @@
       "bytes": 1492,
       "exact": false,
       "minutes": 0.07
+    },
+    "func_8044D804_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 304,
+      "exact": true,
+      "minutes": 0.03
     }
   },
   "v": 1
