@@ -1,21 +1,14 @@
 #include "span_1000/code_8025A3EC.h"
-#if defined(VERSION_EU)
-#define func_802B2350 func_802AD520_eu
-#else
-#define func_802B2350 func_802AD280_de
-#endif
 #include "span_1000/code_8025A3EC.h"
-/* Ramps a voice pitch toward its target, interpolates the pitch curve and applies its scaled value to the context channel. */
 #include "types.h"
 #include "common/unused.h"
 #include "span_C76B0/data.h"
+#include "packed_float.h"
 
-
-
-
+/* Ramps a voice pitch toward its target, interpolates the pitch curve and applies its scaled value to the context channel. */
 
 extern void func_8025AA2C_de(View_func_8025AB94_de *);
-extern f32 func_802B2350(s32);
+
 extern void func_802B2F00_de(char *, s32);
 extern void func_802B2E80_de(char *, f32);
 
@@ -63,14 +56,14 @@ void func_8025AB94_de(View_func_8025AB94_de *view) {
             if (view->pitchStep < 0.0f) {
                 falling = 1;
             }
-            if (falling ? view->pitch < func_802B2350(angles->target) : func_802B2350(angles->target) < view->pitch) {
+            if (falling ? view->pitch < RW_BITS_TO_FLOAT(angles->target) : RW_BITS_TO_FLOAT(angles->target) < view->pitch) {
                 view->pitch -= view->pitchStep;
                 if (falling) {
-                    if (!(func_802B2350(angles->target) < view->pitch)) goto clamp_done;
+                    if (!(RW_BITS_TO_FLOAT(angles->target) < view->pitch)) goto clamp_done;
                 } else {
-                    if (!(view->pitch < func_802B2350(angles->target))) goto clamp_done;
+                    if (!(view->pitch < RW_BITS_TO_FLOAT(angles->target))) goto clamp_done;
                 }
-                view->pitch = func_802B2350(angles->target);
+                view->pitch = RW_BITS_TO_FLOAT(angles->target);
 clamp_done:;
 
                 position = (view->pitch + D_800C3F60_de) * D_800C3F64_de;
@@ -94,4 +87,3 @@ clamp_done:;
         apply(view->context, view->slot, motion->heading, view);
     }
 }
-
