@@ -4458,7 +4458,7 @@ segments:
       - [0xF8CAC, asm, "func_80408CAC_eu"]
       - [0xF8F30, c, "func_80408C4C_de"]
       - [0xF90D4, c, "func_80408DF0_de"]
-      - [0xF9428, asm, "func_80409144_de"]
+      - [0xF9428, c, "func_80409144_de"]
       - [0xF972C, asm, "func_80409448_de"]
       - [0xF9A28, c, "func_80409744_de"]
       - [0xF9ADC, asm, "func_804097F8_de"]
