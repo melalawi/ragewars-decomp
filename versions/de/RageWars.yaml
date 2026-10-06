@@ -4993,7 +4993,7 @@ segments:
       - [0x18A3E0, asm, "func_804243E0_de"]
       - [0x18AB90, c, "func_80424B90_de"]
       - [0x18AC50, asm, "func_80424C50_de"]
-      - [0x18ADE8, asm, "func_80424DE8_de"]
+      - [0x18ADE8, c, "func_80424DE8_de"]
       - [0x18B014, c, "func_80425014_de"]
       - [0x18B3C8, c, "func_804253C8_de"]
       - [0x18B674, asm, "func_80425674_de"]

@@ -4852,7 +4852,7 @@ segments:
       - [0x19AB80, asm, "func_804243E0_de"]
       - [0x19B330, c, "func_80424B90_de"]
       - [0x19B3F0, asm, "func_80424C50_de"]
-      - [0x19B588, asm, "func_80424DE8_de"]
+      - [0x19B588, c, "func_80424DE8_de"]
       - [0x19B908, c, "func_80425014_de"]
       - [0x19BCBC, c, "func_804253C8_de"]
       - [0x19C1B8, asm, "func_80425674_de"]
