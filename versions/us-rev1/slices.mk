@@ -3381,9 +3381,7 @@ us-rev1.U.func_8044BE04_de := 0x8044CA54:0x1BAA54:0x5D0
 us-rev1.S.001BB024 := 1814564 2488
 us-rev1.U.func_8044CD8C_de := 0x8044D9DC:0x1BB9DC:0x2C8
 us-rev1.U.func_8044D054_de := 0x8044DCA4:0x1BBCA4:0x9C
-us-rev1.U.func_8044D0F0_de := 0x8044DD40:0x1BBD40:0x88
-us-rev1.U.func_8044D178_de := 0x8044DDC8:0x1BBDC8:0x3C
-us-rev1.U.func_8044D1B4_de := 0x8044DE04:0x1BBE04:0x234
+us-rev1.U.func_8044D0F0_de := 0x8044DD40:0x1BBD40:0x2F8
 us-rev1.S.001BC038 := 1818680 320
 us-rev1.U.func_8044D528_de := 0x8044E178:0x1BC178:0x140
 us-rev1.U.func_8044D668_de := 0x8044E2B8:0x1BC2B8:0x12C
@@ -6774,8 +6772,6 @@ us-rev1.PIECES := \
   build/us-rev1/units/func_8044CD8C_de.bin \
   build/us-rev1/units/func_8044D054_de.bin \
   build/us-rev1/units/func_8044D0F0_de.bin \
-  build/us-rev1/units/func_8044D178_de.bin \
-  build/us-rev1/units/func_8044D1B4_de.bin \
   build/us-rev1/slices/001BC038.bin \
   build/us-rev1/units/func_8044D528_de.bin \
   build/us-rev1/units/func_8044D668_de.bin \

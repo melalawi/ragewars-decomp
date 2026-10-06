@@ -5400,8 +5400,6 @@ segments:
       - [0x1C405C, c, "func_8044CD8C_de"]
       - [0x1C4324, c, "func_8044D054_de"]
       - [0x1C43C0, c, "func_8044D0F0_de"]
-      - [0x1C4448, c, "func_8044D178_de"]
-      - [0x1C4484, c, "func_8044D1B4_de"]
       - [0x1C46B8, asm, "func_8044D3E8_de"]
       - [0x1C47F8, c, "func_8044D528_de"]
       - [0x1C4938, c, "func_8044D668_de"]
