@@ -3868,6 +3868,16 @@
       "exact": true,
       "minutes": 0.02
     },
+    "func_80446088_eu": {
+      "attempts": 1,
+      "best": {
+        "eu": 100.0,
+        "eu-x": 100.0
+      },
+      "bytes": 44,
+      "exact": true,
+      "minutes": 0.02
+    },
     "func_804460E4_eu_x": {
       "attempts": 2,
       "best": {
