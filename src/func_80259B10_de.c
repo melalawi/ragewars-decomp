@@ -1,3 +1,4 @@
+#include "span_1000/code_802591C0.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802591C0.h"
@@ -5,15 +6,12 @@
 #include "span_1000/code_8025A3EC.h"
 #include "common/unused.h"
 #include "span_C76B0/data.h"
+#include "packed_float.h"
 
 /* Returns the stereo pan of a sound at a position for a listener: centre (0x40) without a listener, when
  * the sound is horizontally within a small radius or straight ahead; otherwise the horizontal direction
  * in listener space is compared with the forward axis through func_802745D0_de and func_802B7130_de, given the
  * side's sign, and scaled around the centre by D_800C8FF8. */
-
-
-
-
 
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_80272BCC_de(void *, Vec3 *, Vec3 *);
@@ -21,11 +19,6 @@ extern void func_8027207C_de(Vec3 *);
 extern f32 func_802745D0_de(f32);
 extern f32 func_802B7130_de(f32);
 extern float fabsf(float);
-
-
-
-
-
 
 s16 func_80259B10_de(Vec3 *position, void *listener) {
     Vec3 forward;
@@ -59,33 +52,13 @@ s16 func_80259B10_de(Vec3 *position, void *listener) {
     return pan * D_800C3F08_de + D_800C3F08_de;
 }
 
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* Updates a view's heading from its controller: clears its turn rates, takes the base angles from the controller's preset (or the heading from its default yaw), adds the stick turn derived from func_80274A90_de of the two stick axes, nudges it up for flag 0x40 and down for flag 0x80, caps it at the limit, optionally records the heading and the pitch step over the step count and the current pitch, and finally maps the heading through the 60-entry curve table D_800CB8EC with linear interpolation. The turn is truncated to 16 bits into an int, and the next table index is its own s16. */
-
-
-
-
-
-
-
-
-
-
-
 extern struct Bytes12 *func_80258BDC_de(s32, s32);
 extern s16 func_802AD270_de(f32);
-#if defined(VERSION_EU)
-extern f32 func_802AD520_eu(s32);
-#define RW_BITS_TO_FLOAT func_802AD520_eu
-#else
-extern f32 func_802AD280_de(s32);
-#define RW_BITS_TO_FLOAT func_802AD280_de
-#endif
+
 extern s32 func_8025E584_de(Controller_func_80259C5C_de *);
 extern s32 func_8025E590_de(Controller_func_80259C5C_de *);
 extern f32 func_80274A90_de(f32, f32);
-
-#define ABS(x) ((x) < 0.0f ? -(x) : (x))
 
 void func_80259C5C_de(View_func_80259C5C_de *view, Controller_func_80259C5C_de *controller, s32 flags) {
     s16 x;
@@ -114,7 +87,7 @@ void func_80259C5C_de(View_func_80259C5C_de *view, Controller_func_80259C5C_de *
     y = func_8025E590_de(controller);
     fy = y;
     fx = x;
-    turn = (s16)(s32)(fx + ABS(func_80274A90_de(fy, fx)));
+    turn = (s16)(s32)(fx + ((func_80274A90_de(fy, fx)) < 0.0f ? -(func_80274A90_de(fy, fx)) : (func_80274A90_de(fy, fx))));
     angles->heading = func_802AD270_de(RW_BITS_TO_FLOAT(angles->heading) + turn);
     if (flags & 0x40) {
         angles->heading = func_802AD270_de(RW_BITS_TO_FLOAT(angles->heading) + D_800C3F0C_de);
