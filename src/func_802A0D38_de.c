@@ -26,12 +26,24 @@ extern s32 D_002A1230;
 
 
 
+inline static s32 *guard_address(void) {
+    return &D_800CD910_de;
+}
+
+inline static s32 increment_guard(s32 *counter) {
+    s32 current = *counter;
+    s32 previous = current;
+    current++;
+    *counter = current;
+    return previous;
+}
+
 void func_802A0D38_de(void) {
     s32 v0;
     s32 one;
     s32 *p;
 
-    if (D_800CD910_de++ != 0) {
+    if (increment_guard(guard_address()) != 0) {
         return;
     }
     D_800CD914_de = 0x12345678;

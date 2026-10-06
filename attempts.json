@@ -1436,6 +1436,19 @@
       "exact": true,
       "minutes": 0.02
     },
+    "func_802A0D38_de": {
+      "attempts": 9,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 252,
+      "exact": true,
+      "minutes": 18.38
+    },
     "func_802A100C_de": {
       "attempts": 1,
       "best": {
