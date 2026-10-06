@@ -2501,7 +2501,7 @@ segments:
       - [0xBAE40, c, "func_802BA310_de"]
       - [0xBAE78, asm, "func_802BA278_us"]
       - [0xBAE80, c, "func_802BA350_de"]
-      - [0xBAFF0, asm, "func_802BA4C0_de"]
+      - [0xBAFF0, c, "func_802BA4C0_de"]
       - [0xBB170, c, "func_802BA640_de"]
       - [0xBB1D8, data, "rodata/unresolved/802BA5D8"]
       - [0xBB1E0, c, "func_802BA6B0_de"]
