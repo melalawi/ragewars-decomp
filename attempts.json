@@ -3834,6 +3834,15 @@
       "exact": true,
       "minutes": 0.03
     },
+    "func_80437B98_us_rev1": {
+      "attempts": 1,
+      "best": {
+        "us-rev1": 100.0
+      },
+      "bytes": 144,
+      "exact": true,
+      "minutes": 0.02
+    },
     "func_80438618_eu": {
       "attempts": 1,
       "best": {
