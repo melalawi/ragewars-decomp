@@ -4846,7 +4846,7 @@ segments:
       - [0x10D1F0, c, "func_8041CDB0_de"]
       - [0x10D278, data, "func_8041D278_eu_x_padding_10D278"]
       - [0x10D280, asm, "func_8041D280_eu_x"]
-      - [0x10D574, asm, "func_8041D134_de"]
+      - [0x10D574, c, "func_8041D134_de"]
       - [0x10D920, asm, "func_8041D4E0_de"]
       - [0x10DAE8, asm, "func_8041D6A8_de"]
       - [0x10DDA0, c, "func_8041D960_de"]
