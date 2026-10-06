@@ -1,5 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8020EAE0_H
 #define UNBAKE_SPAN_1000_CODE_8020EAE0_H
+#include "common/draft_fields_func_8020F5A4_de.h"
 #include "../types.h"
 struct func_8020F93C_S1;
 /* unbake published declaration: published_05f0862f18f519bde7d3954f */

@@ -1,5 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8026AC38_H
 #define UNBAKE_SPAN_1000_CODE_8026AC38_H
+#include "common/draft_fields_func_8026DC24_de.h"
 #include "gfx.h"
 #include "../types.h"
 struct ObjectState18;

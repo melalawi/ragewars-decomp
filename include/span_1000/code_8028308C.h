@@ -1,5 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8028308C_H
 #define UNBAKE_SPAN_1000_CODE_8028308C_H
+#include "common/draft_fields_func_80283278_de.h"
 #include "common/types_8a8189af7b05.h"
 #include "../types.h"
 struct Obj_func_80283920_de;
