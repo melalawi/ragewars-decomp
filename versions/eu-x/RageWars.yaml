@@ -5401,7 +5401,6 @@ segments:
       - [0x133AB0, c, "func_80442A58_de"]
       - [0x133F3C, asm, "func_80442EC0_de"]
       - [0x13402C, c, "func_80442FB0_de"]
-      - [0x134180, c, "func_80443104_de"]
       - [0x1341A4, asm, "func_80443128_de"]
       - [0x134260, c, "func_804431E4_de"]
       - [0x134434, asm, "func_80444434_eu_x"]

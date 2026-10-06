@@ -5272,7 +5272,6 @@ segments:
       - [0x1B9980, c, "func_80442A58_de"]
       - [0x1B9E0C, asm, "func_80442EC0_de"]
       - [0x1B9EFC, c, "func_80442FB0_de"]
-      - [0x1BA050, c, "func_80443104_de"]
       - [0x1BA074, asm, "func_80443128_de"]
       - [0x1BA130, c, "func_804431E4_de"]
       - [0x1BA304, data, "func_8044334C_de_padding_1BA304"]

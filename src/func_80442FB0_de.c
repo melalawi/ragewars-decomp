@@ -1,7 +1,8 @@
 #include "span_16E000/code_80442BC8.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 #include "common/unused.h"
 #include "types.h"
+
+/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* Writes a numeric menu value through its bound storage callback using the selected scalar type. */
 
 
@@ -21,4 +22,12 @@ void func_80442FB0_de(Item_func_80442FB0_de *item,float value) {
  case 7:*(unsigned short *)storage=(unsigned int)value;return;
  case 8:word=(unsigned int *)storage;*word=(unsigned int)value;return;
  }
+}
+
+/* Calls func_8024B990_de with its three arguments and the table D_800D0EF8 as the fourth. */
+extern char D_800CBCA8[];
+extern void func_8024B990_de(void *, void *, void *, void *);
+
+void func_80443104_de(void *first, void *second, void *third) {
+    func_8024B990_de(first, second, third, D_800CBCA8);
 }
