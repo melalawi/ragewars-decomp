@@ -939,7 +939,7 @@ segment = "span_1000"
 evidence = "inferred"
 members = ["func_802B369C_us", "func_802B36E4_de", "func_802B376C_de", "func_802B3984_eu", "func_802B3D30_us", "func_802B3E00_de", "func_802B3E3C_us", "func_802B3F0C_de", "func_802B40A0_eu", "func_802B41AC_eu", "func_802B39C4_eu_x", "func_802B36F0_de", "func_802B3A4C_eu_x", "func_802B3770_de", "func_802B3A44_de", "func_802B3BF8_de", "func_802B3C24_de", "func_802B3C3C_de", "func_802B3C7C_de", "func_802B3CD0_de", "func_802B3D10_de", "func_802B3DB8_de", "func_802B40E0_eu_x", "func_802B3EDC_de", "func_802B41EC_eu_x", "func_802B3F10_de", "func_802B43A4_de", "func_802B4454_de", "func_802B44B0_de"]
 only = { "func_802B369C_us" = ["us"], "func_802B36E4_de" = ["de"], "func_802B376C_de" = ["de"], "func_802B3984_eu" = ["eu"], "func_802B3D30_us" = ["us"], "func_802B3E00_de" = ["de"], "func_802B3E3C_us" = ["us"], "func_802B3F0C_de" = ["de"], "func_802B40A0_eu" = ["eu"], "func_802B41AC_eu" = ["eu"], "func_802B39C4_eu_x" = ["us-rev1", "eu-x"], "func_802B3A4C_eu_x" = ["us-rev1", "eu-x"], "func_802B40E0_eu_x" = ["us-rev1", "eu-x"], "func_802B41EC_eu_x" = ["us-rev1", "eu-x"] }
-split = ["func_802B3C24_de", "func_802B3C3C_de", "func_802B3C7C_de", "func_802B3CD0_de", "func_802B4454_de", "func_802B44B0_de"]
+split = ["func_802B3C24_de", "func_802B3C3C_de", "func_802B3C7C_de", "func_802B3CD0_de", "func_802B4454_de", "func_802B44B0_de", "func_802B3A44_de", "func_802B3BF8_de"]
 signals = ["callee", "chain", "rodata", "version"]
 
 [[group]]
