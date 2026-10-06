@@ -1,4 +1,5 @@
 #include "span_1000/code_8028308C.h"
+#include "span_1000/code_8028308C.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/unused.h"
 #include "types.h"
@@ -8,20 +9,12 @@ int func_802830B8_de(void *arg0) {
     return ((func_8028308C_S1 *)(arg0))->unkFC68;
 }
 
-/* UNRESOLVED_EFFECT_* operations are missing typed field contracts. */
-
-
-
-
-
 extern void func_80279A00_de(void *arg0);
 extern void func_80284178_de(void *);
 extern void func_802A42F4_de(void *arg0, void *arg1);
 extern void func_80268C7C_de(void *arg0, s32 arg1);
 extern void func_80255ED8_de(void *, s32);
 extern s32 func_80255CB8_de(void *, s32);
-
-
 
 void func_802830CC_de(void *arg0, s32 arg1) {
     s32 *temp_v1_3;
