@@ -1,3 +1,4 @@
+#include "span_16E000/code_8043F69C.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_8043F69C.h"
@@ -5,7 +6,6 @@
 
 /* Returns the address 0x190 bytes into the block at offset 0x20 of an object, or null when the
    object has no block. */
-
 
 char *func_80442214_de(struct func_802285C4_S1 *object) {
     char *result = 0;
@@ -63,8 +63,6 @@ f32 func_8044222C_de(s32 arg0, u8 arg1, f32 arg2, f32 arg3) {
 
 /* Sums the glyph advances that func_8044222C_de returns for each character pair of a string at the given scales, stopping at a newline, the end of the string or a null pointer. */
 
-
-
 f32 func_804422F0_de(u8 *p, f32 sx, f32 sy) {
     f32 total;
     u8 c;
@@ -84,27 +82,22 @@ s32 func_80442384_de(void *first, void *second, void *third) {
     return func_80441EB0_de(third) != 0;
 }
 
-/* Returns zero. Nothing in the cartridge image calls it or stores its address as a word, so it is
-   either reached through a pointer built at run time or never used. */
+/* Returns zero. */
 s32 func_804423A4_de(void) {
     return 0;
 }
 
 /* Returns the word at offset 0x1C of the object that offset 0x14 of a record points to. */
 
-
-
-
 s32 func_804423AC_de(struct Outer *outer) {
     return outer->inner->locked;
 }
 
 /* Adjusts a value from controller input and clamps or wraps it between its limits. */
-#define NULL ((void *)0)
 
-s32 func_8026437C_de(s32);                             /* extern */
-s32 func_80264388_de(s32);                             /* extern */
-s32 func_802643A0_de(s32);                             /* extern */
+s32 func_8026437C_de(s32); /* extern */
+s32 func_80264388_de(s32); /* extern */
+s32 func_802643A0_de(s32); /* extern */
 
 s32 func_804423BC_de(func_8022A404_S1 *menu,s32 value,s32 step,s32 minimum,s32 maximum,s32 wrap) {
  if(func_80264388_de(menu->unk20))value-=step;
@@ -119,8 +112,8 @@ s32 func_804423BC_de(func_8022A404_S1 *menu,s32 value,s32 step,s32 minimum,s32 m
 
 /* Steps a menu value left or right with optional range wrapping. */
 
-s32 func_80264388_de(s32);                             /* extern */
-s32 func_802643A0_de(s32);                             /* extern */
+s32 func_80264388_de(s32); /* extern */
+s32 func_802643A0_de(s32); /* extern */
 
 s32 func_80442488_de(func_8022A404_S1 *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5) {
     s32 temp_s0;
@@ -154,20 +147,12 @@ s32 func_80442488_de(func_8022A404_S1 *arg0, s32 arg1, s32 arg2, s32 arg3, s32 a
 
 extern void func_80255CA0_de(void *, int, int);
 
-
-
-
 void func_80442544_de(void *object) {
     func_80255CA0_de(object, 0x1D0, 0x1D4);
     ((func_8025E5B0_S1 *)(object))->unk14 = 0;
 }
 
 /* Allocates a block sized for the entries of a list through func_8025343C_de, builds it with func_80440DA0_de from a zero and three arguments, registers it with func_80255CB8_de and advances the owner's rotating counter below four, returning the block or zero. Adapted from func_804427C4_de with the list and three values passed as arguments and a zero as the first value changed. */
-
-
-
-
-
 
 extern char D_800DE4E8[];
 extern void **func_8025343C_de(s32, s32, s32, char *);
@@ -204,14 +189,6 @@ void *func_80442574_de(struct func_8025E5B0_S1 *owner, struct List_func_80442574
 }
 
 /* Allocates a block sized for the entries of a list (forty bytes each plus 0x480 for every entry of type three, over a 0x1D8 header) through func_8025343C_de, builds it with func_80440DA0_de from four parameters, registers it with func_80255CB8_de and advances the owner's rotating counter below four, returning the block or zero. */
-
-
-
-
-
-
-
-
 extern char D_800DE4E8[];
 extern void **func_8025343C_de(s32, s32, s32, char *);
 extern void func_80440DA0_de(void *, void **, struct List_func_80442574_de *, s32, s32, s32, s32, struct func_8025E5B0_S1 *);
@@ -251,14 +228,6 @@ void *func_80442690_de(struct func_8025E5B0_S1 *owner, struct Params_func_804426
 }
 
 /* Allocates a block sized for the entries of a list through func_8025343C_de, builds it with func_80440DA0_de from four parameters, registers it with func_80255CB8_de and advances the owner's rotating counter below four, returning the block or zero. Adapted from func_80442690_de with the first parameter read from offset 0x14 instead of 0x18. */
-
-
-
-
-
-
-
-
 extern char D_800DE4E8[];
 extern void **func_8025343C_de(s32, s32, s32, char *);
 extern void func_80440DA0_de(void *, void **, struct List_func_80442574_de *, s32, s32, s32, s32, struct func_8025E5B0_S1 *);
@@ -303,20 +272,6 @@ void *func_804427C4_de(struct func_8025E5B0_S1 *owner, struct Params_func_804427
    the node's optional handler at 0xC of its table at 0x14, clears the three words at 0xB0, 0xB4 and
    0xBC of the state it owns at 0x20, unlinks it with func_80255ED8_de and releases its handle at 0x8
    through func_80253838_de. */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 extern List_func_804428F8_de D_8014155C;
 extern s32 func_80441214_de(Node_func_804428F8_de *, List_func_804428F8_de *);
 extern void func_80255ED8_de(List_func_804428F8_de *, Node_func_804428F8_de *);
