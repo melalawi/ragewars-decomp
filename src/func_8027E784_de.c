@@ -1,30 +1,14 @@
+#include "span_1000/code_8027A0F4.h"
+#include "abi.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8027A0F4.h"
 #include "n64sdk.h"
 #include "gbi.h"
 #include "types.h"
-#include "n64sdk.h"
-
-
+#include "math_helpers.h"
 
 /* Draws an actor's ground shadow: probes the ground under the actor through func_80243A90_de into D_801041F0, and when ground is found tilts the shadow model from D_8011FFB0 to the ground normal, scales it by the actor's size shrinking with height above the ground, fades it with height (and with lost health for actors flagged 1), places it on the ground and draws it through func_8026992C_de between render-mode commands. */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 extern char D_8011BEF0;
 extern char D_80100030;
 extern Ground D_801001F0;
@@ -42,11 +26,6 @@ extern void func_8027347C_de(f32 *, f32, f32, f32);
 extern void func_80273448_de(f32 *, f32, f32, f32);
 extern void func_8027027C_de(f32 *, void *);
 extern void func_8026992C_de(void *model, s32 pass, u8 alpha);
-
-#define MIN(a, b) ((a) > (b) ? (b) : (a))
-#define MAX(a, b) ((a) < (b) ? (b) : (a))
-
-#define MIN_F(a, b) ({ f32 _m = (a); if (!(_m <= (b))) _m = (b); _m; })
 
 void func_8027E784_de(Actor_func_8027E784_de *actor) {
     f32 matrix[16];
@@ -91,14 +70,14 @@ void func_8027E784_de(Actor_func_8027E784_de *actor) {
     func_80274098_de(&rotation, &roll, &tilt);
     floor = ground->height;
     height = actor->instance.position.y - floor;
-    alpha = MAX(MIN(200.0f - height * 0.30517578f, 255.0f), 0.0f);
+    alpha = ((RW_MIN(200.0f - height * 0.30517578f, 255.0f)) < (0.0f) ? (0.0f) : (RW_MIN(200.0f - height * 0.30517578f, 255.0f)));
     size = actor->radius * 7.68f;
     if (actor->def->large != 0) {
         size *= 8.0f;
     }
     size *= actor->def->size->unk18;
     shrink = height * 0.1f;
-    size = MAX(MIN_F(size - shrink, size), 0.0f);
+    size = ((({ f32 _m = (size - shrink); if (!(_m <= (size))) _m = (size); _m; })) < (0.0f) ? (0.0f) : (({ f32 _m = (size - shrink); if (!(_m <= (size))) _m = (size); _m; })));
     if (actor->def->flags & 1) {
         health = actor->health;
         if (0.0f < health) {
