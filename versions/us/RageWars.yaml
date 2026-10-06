@@ -4751,7 +4751,7 @@ segments:
       - [0x184688, c, "func_80420618_de"]
       - [0x1848C0, c, "func_80420850_de"]
       - [0x184B44, c, "func_80420AD4_de"]
-      - [0x184B80, asm, "func_80420B80_us"]
+      - [0x184B80, c, "func_80420B80_us"]
       - [0x184BE8, c, "func_80420B78_de"]
       - [0x184C60, c, "func_80420BF0_de"]
       - [0x184C68, c, "func_80420BF8_de"]
