@@ -5087,7 +5087,7 @@ segments:
       - [0x197178, asm, "func_80429178_us_rev1"]
       - [0x1971A8, asm, "func_80429B28_eu"]
       - [0x1972D4, c, "func_804290F4_de"]
-      - [0x19731C, asm, "func_8042931C_us_rev1"]
+      - [0x19731C, c, "func_8042931C_us_rev1"]
       - [0x1973AC, data, "func_804291D0_de_padding_1973AC"]
       - [0x1973B0, asm, "func_804291D0_de"]
       - [0x1976A4, c, "func_804294C4_de"]
