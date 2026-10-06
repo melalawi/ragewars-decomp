@@ -4,6 +4,7 @@
 #include "common/draft_fields_func_802412D0_de.h"
 #include "common/draft_fields_func_802413C8_de.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 struct Ray180;
 /* unbake published declaration: published_006a37321258c9d98baff2fe */

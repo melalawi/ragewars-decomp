@@ -66,6 +66,9 @@ struct State_func_80428214_de {
     Slot_func_80428214_de slots[4];
 };
 
+/* unbake published declaration: published_26670d5349bc08716bb597a8 */
+extern u8 D_80142215;
+
 struct Screen_func_80427008_de;
 /* unbake published declaration: published_2d1f78b4842425902f29424c */
 struct Screen_func_80427008_de {
@@ -209,6 +212,29 @@ struct func_80428388_S1 {
 
 /* unbake published declaration: published_969e9466dcc883511508c0a3 */
 extern void func_804274B0_de();
+
+struct Item_func_8042B4D4_de;
+struct Screen_func_80426918_de;
+/* unbake published declaration: published_a24e7a249bd689e5c3c943cb */
+struct Screen_func_80426918_de {
+    char pad0[0x978];
+    struct Item_func_8042B4D4_de *left;
+    char pad97C[2];
+    u16 leftSpeed;
+    struct Item_func_8042B4D4_de *right;
+    char pad984[2];
+    u16 rightSpeed;
+    s32 state;
+    s32 timer;
+    void *prompt;
+    void *button;
+    char pad998[0xA48 - 0x998];
+    struct Item_func_8042B4D4_de *pulse;
+    char padA4C[4];
+    struct Item_func_8042B4D4_de *banner;
+    s32 clock;
+    s32 requested;
+};
 
 struct State_func_804280BC_de;
 struct func_8028469C_S2;

@@ -19,15 +19,6 @@ struct Menu_func_8042AAD0_de {
     void *widgetE;
 };
 
-struct Item_func_8042B4D4_de;
-/* unbake published declaration: published_35e14301611e585353a17c53 */
-struct Item_func_8042B4D4_de {
-    char pad[0x10];
-    u8 alpha;
-    char pad11[0x14 - 0x11];
-    s16 x;
-};
-
 struct Menu_func_8042AAD0_de;
 /* unbake published declaration: published_376da950aef692126bdcc731 */
 typedef struct Menu_func_8042AAD0_de Menu_func_8042AAD0_de;

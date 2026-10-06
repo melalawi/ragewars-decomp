@@ -2,7 +2,6 @@
 #include "types.h"
 #include "gfx.h"
 #include "gbi.h"
-#include "common/unused.h"
 #include "abi.h"
 #include "n64sdk.h"
 

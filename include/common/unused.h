@@ -1,13 +1,11 @@
 #ifndef UNBAKE_COMMON_UNUSED_H
 #define UNBAKE_COMMON_UNUSED_H
-#include "audio_callbacks.h"
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "gfx.h"
-#include "span_1000/code_802192C0.h"
 #include "span_1000/code_8021CD70.h"
 #include "span_1000/code_8022A274.h"
 #include "span_1000/code_8023B9A0.h"
@@ -30,6 +28,7 @@
 #include "span_1000/code_802B0388.h"
 #include "span_1000/code_802B243C.h"
 #include "span_1000/code_802B4730.h"
+#include "span_1000/code_802B53FC.h"
 #include "span_1000/code_802B8DD0.h"
 #include "span_1000/code_802B9ED8.h"
 #include "span_1000/code_802BA23C.h"
@@ -45,7 +44,6 @@
 #include "span_16E000/code_804221A0.h"
 #include "span_16E000/code_804251F4.h"
 #include "span_16E000/code_804264F0.h"
-#include "span_16E000/code_80429C10.h"
 #include "span_16E000/code_8042BD40.h"
 #include "span_16E000/code_8043962C.h"
 #include "span_16E000/code_8043E9A8.h"
@@ -94,9 +92,6 @@ extern char D_00450E9C[];
 
 /* unbake published declaration: published_03697927dc9c606d24595d33 */
 extern char D_800D3914[];
-
-/* unbake published declaration: published_037d873cd991d307781a58ff */
-extern char D_0044EB70[];
 
 /* unbake published declaration: published_038c72b56030d052a7f80a6d */
 extern char D_800CE0E0;
@@ -173,6 +168,9 @@ extern char *D_800D3530;
 /* unbake published declaration: published_075f374eeb78d046fadd3304 */
 extern int D_800C32DC_de;
 
+/* unbake published declaration: published_07689ef4016b4243c9794e15 */
+extern int D_800E1264[];
+
 /* unbake published declaration: published_07757dc1a2c61de2b8bda4a9 */
 extern char *D_800E1EB4[];
 
@@ -184,6 +182,9 @@ extern s32 *D_8011BE3C;
 
 /* unbake published declaration: published_07e32daefab3cb4a06792a43 */
 extern s32 D_8014DE60;
+
+/* unbake published declaration: published_084103d12c11f8ce81940a5c */
+extern int D_800E12E4[];
 
 /* unbake published declaration: published_08eb717baa408866e2b1ff82 */
 extern DeviceState *D_800D437C;
@@ -251,6 +252,9 @@ extern char *D_800D35FC_de;
 /* unbake published declaration: published_0de978e8a14237e0298fad61 */
 extern s32 D_801470A0;
 
+/* unbake published declaration: published_0dfac4b7be5607254feaf054 */
+extern double D_800C7840_de;
+
 /* unbake published declaration: published_0e5809aac2e7595218668a4e */
 extern char D_800D3B7C[];
 
@@ -280,6 +284,9 @@ extern char D_800D3918[];
 
 /* unbake published declaration: published_0f419e8b35ff5167046cdb9f */
 extern u8 D_800CBC9C[];
+
+/* unbake published declaration: published_0f6caaa3d77f86baa31464cb */
+extern const f64 D_800C7810_de[5];
 
 /* unbake published declaration: published_0f893be2bd179aa102c0b1f0 */
 extern void *jtbl_800DDF70[];
@@ -350,6 +357,9 @@ extern u32 D_8014DA00;
 /* unbake published declaration: published_13a0a2055af14e66e4b7fe49 */
 extern u64 D_80149B98;
 
+/* unbake published declaration: published_14377825b00fb21d634ea9bb */
+extern int D_800E1254[];
+
 /* unbake published declaration: published_1512d719a5bb69bac5ecc639 */
 extern const f32 D_800C2D94_de;
 
@@ -392,11 +402,11 @@ extern u32 D_80000308;
 /* unbake published declaration: published_168064467caa1d1b1c25719d */
 extern u8 D_800D0EE4[];
 
-/* unbake published declaration: published_168b7662f1f383690c0017f8 */
-extern s32 D_800E25A4[];
-
 /* unbake published declaration: published_16947578c7edcbfcac66edb2 */
 extern s32 D_8014D9DC;
+
+/* unbake published declaration: published_16e8ad599dc96ba0aaca2351 */
+extern int D_800E12D4[];
 
 /* unbake published declaration: published_16eaef0749c762aab3c79be5 */
 extern void *D_80107EA0;
@@ -442,6 +452,9 @@ extern char D_800D3818[];
 
 /* unbake published declaration: published_19852b22b1d75a14941cb2db */
 extern char D_8010C520;
+
+/* unbake published declaration: published_1985ee3cfe6cba71b42b2a5e */
+extern int D_800E1294[];
 
 /* unbake published declaration: published_199d45c6fe83133fcb9bb5b0 */
 extern char D_002079B0;
@@ -587,6 +600,9 @@ extern const f32 D_800C7698_de;
 /* unbake published declaration: published_23af2d5fa6a96bd076128649 */
 extern f32 D_800C2B48_de[];
 
+/* unbake published declaration: published_23c4f2dcf780a83276e8362e */
+extern int D_800E1364[];
+
 /* unbake published declaration: published_23c9a721e54b70fcd6fe387e */
 extern char D_800CBCC0;
 
@@ -632,9 +648,6 @@ extern int D_002B2BBC(void * arg0);
 /* unbake published declaration: published_264e7c50f02136cea1c17985 */
 extern void *jtbl_800DD760[];
 
-/* unbake published declaration: published_26670d5349bc08716bb597a8 */
-extern u8 D_80142215;
-
 /* unbake published declaration: published_2674d88d941898ee0d20a049 */
 extern char *D_8011CA18[];
 
@@ -665,9 +678,6 @@ extern char *D_800E1F94[];
 /* unbake published declaration: published_2989b5e51305822618ef77a2 */
 extern char D_0041A02C[];
 
-/* unbake published declaration: published_29ec5c86374b68c5ce6947c8 */
-extern s32 D_80147150;
-
 /* unbake published declaration: published_29f5d012c04962ebce159b64 */
 extern s8 D_800FEB0C[];
 
@@ -682,9 +692,6 @@ extern char D_800D38F0[];
 
 /* unbake published declaration: published_2ab3299d62df131dc7b523df */
 extern s32 D_8014DD9C;
-
-/* unbake published declaration: published_2ae11f55665cfa199d084591 */
-extern void *jtbl_800C7750[];
 
 /* unbake published declaration: published_2ae1961206520a9dd0f14912 */
 extern u8 D_80142227;
@@ -890,6 +897,9 @@ extern s32 D_800DE88C;
 /* unbake published declaration: published_393cd37ae2feb7457d51f365 */
 extern f32 D_800C49F0_de;
 
+/* unbake published declaration: published_3943aa54f051c80097639dfe */
+extern float D_800C7918_de;
+
 /* unbake published declaration: published_39de7ba6820ecd8dd040eaa4 */
 extern s32 D_800CD6E0_de;
 
@@ -916,6 +926,9 @@ extern s32 D_80107928;
 
 /* unbake published declaration: published_3af38f7572f0b3323885acb5 */
 extern char D_800C8420_de;
+
+/* unbake published declaration: published_3af7f35ad7f50fe0a0ea40c8 */
+extern double D_800C78F8_de;
 
 /* unbake published declaration: published_3b291554db598a8368034586 */
 extern char D_002050A0;
@@ -956,6 +969,12 @@ extern FieldRow D_800E16C0_de[];
 /* unbake published declaration: published_3dc44f3a7780a4352cd32d20 */
 extern FieldRow D_800E1458_de[];
 
+/* unbake published declaration: published_3ded6711cba5956db235df10 */
+extern int D_800E1354[];
+
+/* unbake published declaration: published_3e9d63ef82e6fdd246132120 */
+extern double D_800C7848_de;
+
 /* unbake published declaration: published_3eb2de222bff865243e6255c */
 extern int D_800DEADC[];
 
@@ -968,6 +987,9 @@ extern short D_800CB348_de[];
 /* unbake published declaration: published_3f9f25bd32c8de11f3151f33 */
 extern s16 D_B2000018;
 
+/* unbake published declaration: published_3fe8af0f37ce67a54a6d2815 */
+extern double D_800C7838_de;
+
 /* unbake published declaration: published_40196d70c93216a2e4aeecb6 */
 extern char *D_800E1FB4_eu[];
 
@@ -979,6 +1001,9 @@ extern char D_00419F9C[];
 
 /* unbake published declaration: published_4128b659881aa2753cd69b05 */
 extern Clip D_800F246A[];
+
+/* unbake published declaration: published_4149e7f33f3b232043fb63e3 */
+extern double D_800C7858_de;
 
 /* unbake published declaration: published_416e87b45e291bc40273971e */
 extern const float D_800C74C0_de;
@@ -1070,6 +1095,9 @@ extern char D_800D38E0[];
 /* unbake published declaration: published_46e78d2fbaddfd3d16336425 */
 extern u32 D_80149B08;
 
+/* unbake published declaration: published_4703439efdcf8d802a35aba7 */
+extern double D_800C7908_de;
+
 /* unbake published declaration: published_4756574e5b36aba17f3c9bb7 */
 extern char D_800E611C[];
 
@@ -1093,6 +1121,9 @@ extern const f64 D_800C7730_de;
 
 /* unbake published declaration: published_495243e9bc0bd9667ac18980 */
 extern s32 D_800C87F0;
+
+/* unbake published declaration: published_498239f5a577ed60a32dc3a3 */
+extern u16 D_8014D48C;
 
 /* unbake published declaration: published_49d18d88eef7513e6684fba0 */
 extern char D_800D38FC[];
@@ -1134,11 +1165,11 @@ extern char D_800C4260_de;
 /* unbake published declaration: published_4c2df1cd7c09b2296dd3316e */
 extern char *D_800E1E54[];
 
-/* unbake published declaration: published_4c3b7e35e8f4634d07471ff2 */
-extern u8 D_80152789;
-
 /* unbake published declaration: published_4c43b4fa91cd67e241335916 */
 extern void *jtbl_800DD038[];
+
+/* unbake published declaration: published_4cb0445241ae838f19761fb5 */
+extern float D_800CB430_de;
 
 /* unbake published declaration: published_4cb877dbc177d3e98dd63845 */
 extern char *D_800D3728[];
@@ -1173,6 +1204,9 @@ extern char *D_800E2004_eu[];
 /* unbake published declaration: published_4f4a801bc81b841142cf3d81 */
 extern char *D_800D3760[];
 
+/* unbake published declaration: published_4f60877e2563e2860c2bc960 */
+extern float D_800C7850_de;
+
 /* unbake published declaration: published_4f60f1ba65eb5f4aef0e3cd6 */
 extern u32 D_8014DA10;
 
@@ -1181,6 +1215,9 @@ extern char D_800D3840[];
 
 /* unbake published declaration: published_4fa5027963142e8dbb4c6601 */
 extern f32 D_800C3D90_de;
+
+/* unbake published declaration: published_4fc46d7706dd1665099abf5e */
+extern int D_800E1314[];
 
 /* unbake published declaration: published_4fcaadfaf60bd487f10ce05b */
 extern u8 D_800CBC94[];
@@ -1335,6 +1372,9 @@ extern char *D_800D3540;
 /* unbake published declaration: published_569fda6e4fc8f44baf0ecb5e */
 extern char D_800D3B88[];
 
+/* unbake published declaration: published_56d63bf63629fc9aa5f1ab7c */
+extern float D_800C48F4_de;
+
 /* unbake published declaration: published_56e84c8823120a8934f0aaf9 */
 extern int D_800D3610;
 
@@ -1361,6 +1401,9 @@ extern s32 D_800E0FF4[];
 
 /* unbake published declaration: published_5811b10ee0d6597224cab034 */
 extern Handler802A2B50 D_800DF3B8;
+
+/* unbake published declaration: published_58177ff0b9dcc01a3acfc1ec */
+extern int D_800E1304[];
 
 /* unbake published declaration: published_58241421c1b7706e3482bbd0 */
 extern u8 D_8014B494[];
@@ -1452,6 +1495,9 @@ extern FieldRow D_800E1904[];
 /* unbake published declaration: published_5c3a8e540c228be65cc4fe2c */
 extern s32 D_801471C0;
 
+/* unbake published declaration: published_5c54ff5e84b4c21a0d71d4ea */
+extern char *D_800E1274[];
+
 /* unbake published declaration: published_5c637dbd988c9d5ef3c975f9 */
 extern s32 D_80142868;
 
@@ -1494,6 +1540,9 @@ extern char D_800D396C[];
 /* unbake published declaration: published_6019d6d4a438101f901ee66c */
 extern char D_0028798C[];
 
+/* unbake published declaration: published_60683acfd9ec2b463fbf208d */
+extern int D_800E12A4[];
+
 /* unbake published declaration: published_60821d242936d9f97aa9a50e */
 extern int D_800D3614;
 
@@ -1529,6 +1578,9 @@ extern char D_8012D540;
 
 /* unbake published declaration: published_644d265f2fb273fbca203ae4 */
 extern const f64 D_800C76E8_de;
+
+/* unbake published declaration: published_645046425fd07d9b5c66b877 */
+extern int D_800E1324[];
 
 /* unbake published declaration: published_647f96c66e289535b255a1f0 */
 extern char D_800D3858[];
@@ -1596,6 +1648,9 @@ extern unsigned char D_8010B308[];
 /* unbake published declaration: published_6979c56e759796ebeabd6d42 */
 extern int D_800CD94C_de;
 
+/* unbake published declaration: published_69aefd191838ed8dd767b96e */
+extern int D_800E1344[];
+
 /* unbake published declaration: published_69e870ee93c1d549c671eba4 */
 extern s32 D_8014DCDC;
 
@@ -1619,6 +1674,9 @@ extern s32 D_800E0454;
 
 /* unbake published declaration: published_6b4e574f5bab49385477f166 */
 extern char *D_800D35F8;
+
+/* unbake published declaration: published_6b52cbfc6b3f09fcfcae9fe3 */
+extern double D_800C7860_de;
 
 /* unbake published declaration: published_6b569ad8fc06514ee586dfa0 */
 extern char *D_800D3548;
@@ -1800,6 +1858,9 @@ extern s32 D_8010C570;
 /* unbake published declaration: published_775cab1800aed0aa5472ae50 */
 extern char D_800D37F8[];
 
+/* unbake published declaration: published_775faa43b8c58b84c8db4847 */
+extern Vec3 D_800C19F0;
+
 /* unbake published declaration: published_777ce5e123cc19d8d6f4b81b */
 extern char D_800D3874[];
 
@@ -1846,6 +1907,9 @@ extern void *jtbl_800DD008[];
 /* unbake published declaration: published_7a7bbc23052c6473d0f4ff85 */
 extern f32 D_801427F0;
 
+/* unbake published declaration: published_7aadf5aaafb86ccd3f6cd768 */
+extern float D_800C7744_de;
+
 /* unbake published declaration: published_7adefb8f04fea3d8a44c2314 */
 extern const float D_800C78C8_de;
 
@@ -1857,6 +1921,9 @@ extern char *D_800D34D4_de[];
 
 /* unbake published declaration: published_7b4e0c0bd617da2dd9c6866c */
 extern s32 D_800D5260;
+
+/* unbake published declaration: published_7b4fb7338b2186798e7326d3 */
+extern char D_0044ED20[];
 
 /* unbake published declaration: published_7b5d9a1dbc22ee0519dc118e */
 extern char D_800C5290_de;
@@ -1927,6 +1994,9 @@ extern FieldRow D_800E1738[];
 /* unbake published declaration: published_7fa2ce7e44c806f06de510c2 */
 extern f32 D_800C7588[2];
 
+/* unbake published declaration: published_7fbe3061f3f7578b73b3ffad */
+extern int D_800E12B4[];
+
 /* unbake published declaration: published_7fecef8f7af27899e186d315 */
 extern float D_800EE5D4;
 
@@ -1966,6 +2036,9 @@ extern char *D_800E1E44[];
 
 /* unbake published declaration: published_81e0e1f6b4dc48f86483bfc2 */
 extern char D_0023C934[];
+
+/* unbake published declaration: published_824d6aab2d536a8a5881a121 */
+extern char D_0044EB94[];
 
 /* unbake published declaration: published_82df815583a8dc2ee5f44943 */
 extern unsigned int D_800CD894_de;
@@ -2108,6 +2181,9 @@ extern char D_8014DAD0[];
 /* unbake published declaration: published_8b78fe61595f79f77e39293a */
 extern char *D_800D35D0;
 
+/* unbake published declaration: published_8b85dfad990d83422ca14863 */
+extern int D_800E1384[];
+
 /* unbake published declaration: published_8bc446d8bb409088cf550ae8 */
 extern u8 D_800D4330[];
 
@@ -2202,6 +2278,9 @@ extern char D_800D37F0[];
 /* unbake published declaration: published_9133886099a2bc88a6e39aae */
 extern void *jtbl_800DDEF0[];
 
+/* unbake published declaration: published_913dc9bc1d16adc995cd88a5 */
+extern char D_800DD508_de[];
+
 /* unbake published declaration: published_9174142bf0ca4004f26f1693 */
 extern char D_800D39A0[];
 
@@ -2213,6 +2292,9 @@ extern func_8020CA10_G1 D_800C358C_de;
 
 /* unbake published declaration: published_91f1777da043e326e0546440 */
 extern void *jtbl_800DCF18[];
+
+/* unbake published declaration: published_91f4812071374a7773bf8995 */
+extern int D_800E1284[];
 
 /* unbake published declaration: published_921184f09885ce6df0db09be */
 extern f32 D_800C4480_de[];
@@ -2259,6 +2341,9 @@ extern char D_800D391C[];
 /* unbake published declaration: published_94658daa549cafedcf16fde6 */
 extern char D_800D37E4[];
 
+/* unbake published declaration: published_947dea17bf2e06a5b53f3b19 */
+extern int D_800D3200;
+
 /* unbake published declaration: published_94acd31264a870f112865691 */
 extern s32 D_800E0318;
 
@@ -2273,6 +2358,9 @@ extern char *D_800D35C8;
 
 /* unbake published declaration: published_9500e59b740eba6c142b9989 */
 extern s32 *D_8011FED8;
+
+/* unbake published declaration: published_9512064f34c35160edb04980 */
+extern const f64 D_800C78D0_de[5];
 
 /* unbake published declaration: published_956a543e93155c79d7c65be5 */
 extern char *D_800D3504;
@@ -2332,6 +2420,9 @@ extern s32 D_800CD950_de;
 /* unbake published declaration: published_9815adcf0d54eb6dfe32f99d */
 extern const f64 D_800C76E0_de;
 
+/* unbake published declaration: published_9815fc4fba276f18ad34245d */
+extern float D_800C77D0_de;
+
 /* unbake published declaration: published_984e31a5f59cfd238cfe611d */
 extern char D_800D47B0;
 
@@ -2371,6 +2462,9 @@ extern char D_800D38E8[];
 /* unbake published declaration: published_9b3888d4c54e8d1ab65ba328 */
 extern char D_00450AD0;
 
+/* unbake published declaration: published_9b556a13cde59ce988fdd751 */
+extern float D_800C7914_de;
+
 /* unbake published declaration: published_9bea26c31383f738c2a2df71 */
 extern int D_800C854C;
 
@@ -2407,8 +2501,8 @@ extern OSTask D_80148800;
 /* unbake published declaration: published_9e8d9a365b5060918874d8dd */
 extern char D_800D38A4[];
 
-/* unbake published declaration: published_9e8dec1433beaba1cb3af3a3 */
-extern char D_0044EBDC[];
+/* unbake published declaration: published_9ed1282577de725f050cf4bc */
+extern int D_800E1374_eu[];
 
 /* unbake published declaration: published_9f3e9cb580f76030aadec7b6 */
 extern char D_800D37E8[];
@@ -2572,6 +2666,9 @@ extern char D_800D3988[];
 /* unbake published declaration: published_aa76e3487c7573ebf8f30bb9 */
 extern float D_800DCC04;
 
+/* unbake published declaration: published_aa772ebcceb6d42c623bbdb0 */
+extern float D_800C77D4_de;
+
 /* unbake published declaration: published_aaa2f9cab0c57adf6e7f0fdc */
 extern char **D_800D3E14_de[];
 
@@ -2650,6 +2747,9 @@ extern s32 D_8014AEB4;
 
 /* unbake published declaration: published_af1e2a869e41f9abc43f89c8 */
 extern void *D_8011BE48;
+
+/* unbake published declaration: published_af6c6f8b682fb1f108cf2d2b */
+extern int D_800E12C4[];
 
 /* unbake published declaration: published_af7d20ae73f90b984bb2213f */
 extern CharacterScreenCell D_800E029E[][9];
@@ -2781,6 +2881,9 @@ extern s32 D_002571F0;
 /* unbake published declaration: published_b744745c2f88e678f546708a */
 extern char D_800D38B4[];
 
+/* unbake published declaration: published_b78c9b4bfa7b3cae20f89fa1 */
+extern int D_800E12F4[];
+
 /* unbake published declaration: published_b7b168b1a167a73c957ca350 */
 extern char D_800C4D50_de;
 
@@ -2813,11 +2916,20 @@ struct D_800C7470_Pair;
 /* unbake published declaration: published_ba2d3488c8ac7499fe94af89 */
 extern struct D_800C7470_Pair D_800C27D0_de;
 
+/* unbake published declaration: published_ba5c6e72d9e7f5c6a9adbbd1 */
+extern double D_800C7900_de;
+
+/* unbake published declaration: published_ba86b449171ed92a1cdf50b7 */
+extern char D_800DD50C[];
+
 /* unbake published declaration: published_ba8c101736ea3ab60536dc07 */
 extern Handler802A2B50 D_800E031C;
 
 /* unbake published declaration: published_baabfb1c70c50d50d8648be9 */
 extern char D_800C3DA8_de;
+
+/* unbake published declaration: published_bb3aea9bf2fbc26603e17e60 */
+extern double D_800C7868_de;
 
 /* unbake published declaration: published_bb4c93f7fb3fea5f3ccf1ecf */
 extern char *D_800D3538;
@@ -3075,6 +3187,10 @@ extern char D_176000[];
 /* unbake published declaration: published_cd670bc4082574d6a09ef642 */
 extern char *D_800D3764[];
 
+struct UnitVtx;
+/* unbake published declaration: published_cd95b80d1c354feca52c270f */
+extern struct UnitVtx D_800FE9F8[];
+
 /* unbake published declaration: published_cdb9fb29ec1908d803c4da75 */
 extern char D_8014BA38_de;
 
@@ -3101,6 +3217,9 @@ extern Handler802A2B50 D_800DF318;
 
 /* unbake published declaration: published_cebdabf4f5dffe1e8b41c273 */
 extern char D_800E27D0;
+
+/* unbake published declaration: published_cec2795fea4b506fee61b7af */
+extern float D_800C61BC_de;
 
 /* unbake published declaration: published_ceca2bd59083f8fff6bdc2e3 */
 extern char D_800DE7D4_eu_x[];
@@ -3159,14 +3278,14 @@ extern s32 D_800E065C[];
 /* unbake published declaration: published_d1ac07d8c8f6d59e8d9c3bcc */
 extern char D_800C9558_de;
 
-/* unbake published declaration: published_d1b2aaebfc575b929b88defd */
-extern f32 D_80111D2C;
-
 /* unbake published declaration: published_d27d31e2b3659fd0d8cb52a7 */
 extern char D_800D3B40[];
 
 /* unbake published declaration: published_d2c35ddbecc6defeb6a1e1d7 */
 extern char *D_800D3560;
+
+/* unbake published declaration: published_d2e4d27516b51852771cc933 */
+extern f32 D_800C1A08_de;
 
 /* unbake published declaration: published_d2eb36e13b3453d3b2b70cf7 */
 extern char D_800D3B50[];
@@ -3248,6 +3367,9 @@ extern Shield D_8010C4B0;
 
 /* unbake published declaration: published_d6d625dd48cd8bf6549652fd */
 extern char D_800D3660;
+
+/* unbake published declaration: published_d6e1ae247b8f5959ed829a84 */
+extern float D_800C77CC_de;
 
 /* unbake published declaration: published_d70d23468f78fb4f6e1b2d83 */
 extern s32 D_800CDBE8;
@@ -3645,8 +3767,8 @@ extern char D_800FEB8D[];
 /* unbake published declaration: published_f36a78bf819251dde6fca2b3 */
 extern char D_800D38AC[];
 
-/* unbake published declaration: published_f3bf273158c5557ee856cde0 */
-extern char D_801376F8[];
+/* unbake published declaration: published_f3fd3fb643076756114e5459 */
+extern s32 D_8014D4C4;
 
 /* unbake published declaration: published_f4151aabb80796b05b3faf25 */
 extern s32 D_002A1220;
@@ -3671,6 +3793,9 @@ extern u8 D_800FEB54[];
 
 /* unbake published declaration: published_f514035a1f604a434b509a2b */
 extern FieldRow D_800E1960[];
+
+/* unbake published declaration: published_f530b8501e0ce4364bb4bb20 */
+extern float D_800C7910_de;
 
 /* unbake published declaration: published_f5631e848324ccbc3dbf0a30 */
 extern char *D_800D35CC;
@@ -3734,6 +3859,9 @@ extern s32 D_002B6380;
 
 /* unbake published declaration: published_f9325005ca7b61d2cca33996 */
 extern char *D_800D34FC;
+
+/* unbake published declaration: published_f952c45d7c1c480a533aae02 */
+extern int D_800E1334[];
 
 /* unbake published declaration: published_f9dd0f227b75505f0c6f6b3f */
 extern void *jtbl_800C50E8[];
@@ -3864,9 +3992,6 @@ typedef struct ALADPCMWaveInfo ALADPCMWaveInfo;
 struct ALADPCMloop;
 typedef struct ALADPCMloop ALADPCMloop;
 
-struct ALAuxBus_s;
-typedef struct ALAuxBus_s ALAuxBus_s;
-
 struct ALCSPlayer;
 typedef struct ALCSPlayer ALCSPlayer;
 
@@ -3879,20 +4004,11 @@ typedef struct ALDelay28_2 ALDelay28_2;
 struct ALDelay_func_802B5B94_de;
 typedef struct ALDelay_func_802B5B94_de ALDelay_func_802B5B94_de;
 
-struct ALEnvMixer4C;
-typedef struct ALEnvMixer4C ALEnvMixer4C;
-
 struct ALEnvMixer_s;
 typedef struct ALEnvMixer_s ALEnvMixer_s;
 
 struct ALEvent10_2;
 typedef struct ALEvent10_2 ALEvent10_2;
-
-struct ALFilter_s14_2;
-typedef struct ALFilter_s14_2 ALFilter_s14_2;
-
-struct ALFilter_sC;
-typedef struct ALFilter_sC ALFilter_sC;
 
 struct ALFx2C;
 typedef struct ALFx2C ALFx2C;
@@ -3900,35 +4016,14 @@ typedef struct ALFx2C ALFx2C;
 struct ALFx_func_802B5B94_de;
 typedef struct ALFx_func_802B5B94_de ALFx_func_802B5B94_de;
 
-struct ALGlobals;
-typedef struct ALGlobals ALGlobals;
-
 struct ALGlobals_func_802B5B94_de;
 typedef struct ALGlobals_func_802B5B94_de ALGlobals_func_802B5B94_de;
-
-struct ALLoadFilter;
-typedef struct ALLoadFilter ALLoadFilter;
 
 struct ALLoadFilter48;
 typedef struct ALLoadFilter48 ALLoadFilter48;
 
-struct ALMainBus_s;
-typedef struct ALMainBus_s ALMainBus_s;
-
-struct ALParam_s1C;
-typedef struct ALParam_s1C ALParam_s1C;
-
 struct ALRAWWaveInfo;
 typedef struct ALRAWWaveInfo ALRAWWaveInfo;
-
-struct ALResampler;
-typedef struct ALResampler ALResampler;
-
-struct ALResampler_s;
-typedef struct ALResampler_s ALResampler_s;
-
-struct ALSave;
-typedef struct ALSave ALSave;
 
 struct ALSeqPlayer88;
 typedef struct ALSeqPlayer88 ALSeqPlayer88;
@@ -3950,15 +4045,6 @@ typedef struct ALSoundState_func_802B2780_de ALSoundState_func_802B2780_de;
 
 struct ALSound_s_func_802B2780_de;
 typedef struct ALSound_s_func_802B2780_de ALSound_s_func_802B2780_de;
-
-struct ALSynConfig;
-typedef struct ALSynConfig ALSynConfig;
-
-struct ALSynth;
-typedef struct ALSynth ALSynth;
-
-struct ALSynth4C;
-typedef struct ALSynth4C ALSynth4C;
 
 struct ALWaveTable_s;
 typedef struct ALWaveTable_s ALWaveTable_s;
@@ -4004,9 +4090,6 @@ typedef struct Actor_func_80212D78_eu_x Actor_func_80212D78_eu_x;
 
 struct Actor_func_80214624_de;
 typedef struct Actor_func_80214624_de Actor_func_80214624_de;
-
-struct Actor_func_80245D30_de;
-typedef struct Actor_func_80245D30_de Actor_func_80245D30_de;
 
 struct Actor_func_8024A7A0_de;
 typedef struct Actor_func_8024A7A0_de Actor_func_8024A7A0_de;
@@ -4275,9 +4358,6 @@ typedef struct FloatState1B4 FloatState1B4;
 struct FloatState4C;
 typedef struct FloatState4C FloatState4C;
 
-struct FontStyle;
-typedef struct FontStyle FontStyle;
-
 struct Font_func_80257360_de;
 typedef struct Font_func_80257360_de Font_func_80257360_de;
 
@@ -4446,9 +4526,6 @@ typedef struct MatchSetupRecord MatchSetupRecord;
 struct MatchSetupSprite;
 typedef struct MatchSetupSprite MatchSetupSprite;
 
-struct Material_func_80245D30_de;
-typedef struct Material_func_80245D30_de Material_func_80245D30_de;
-
 struct MenuGameRoot;
 typedef struct MenuGameRoot MenuGameRoot;
 
@@ -4458,20 +4535,11 @@ typedef struct MenuState MenuState;
 struct Menu_func_802185D0_de;
 typedef struct Menu_func_802185D0_de Menu_func_802185D0_de;
 
-struct Menu_func_80409144_de;
-typedef struct Menu_func_80409144_de Menu_func_80409144_de;
-
-struct Menu_func_8041D134_de;
-typedef struct Menu_func_8041D134_de Menu_func_8041D134_de;
-
 struct Menu_func_8041D4E0_de;
 typedef struct Menu_func_8041D4E0_de Menu_func_8041D4E0_de;
 
 struct Menu_func_8043F294_de;
 typedef struct Menu_func_8043F294_de Menu_func_8043F294_de;
-
-struct Messages;
-typedef struct Messages Messages;
 
 struct Mid802131E0;
 typedef struct Mid802131E0 Mid802131E0;
@@ -4490,9 +4558,6 @@ typedef struct Motion Motion;
 
 struct Motion_func_8025AB94_de;
 typedef struct Motion_func_8025AB94_de Motion_func_8025AB94_de;
-
-struct Mover;
-typedef struct Mover Mover;
 
 struct NavigationEndpoint;
 typedef struct NavigationEndpoint NavigationEndpoint;
@@ -4517,9 +4582,6 @@ typedef struct Node_func_8020D364_de Node_func_8020D364_de;
 
 struct Node_func_8028F544_de;
 typedef struct Node_func_8028F544_de Node_func_8028F544_de;
-
-struct Node_func_8041D134_de;
-typedef struct Node_func_8041D134_de Node_func_8041D134_de;
 
 struct Node_func_8041D4E0_de;
 typedef struct Node_func_8041D4E0_de Node_func_8041D4E0_de;
@@ -4677,20 +4739,11 @@ typedef struct OptionsScreen OptionsScreen;
 struct OptionsScrollScreen;
 typedef struct OptionsScrollScreen OptionsScrollScreen;
 
-struct Owner104;
-typedef struct Owner104 Owner104;
-
 struct Owner_func_8025A844_de;
 typedef struct Owner_func_8025A844_de Owner_func_8025A844_de;
 
 struct Owner_func_8044D794_de;
 typedef struct Owner_func_8044D794_de Owner_func_8044D794_de;
-
-struct PVoice_s;
-typedef struct PVoice_s PVoice_s;
-
-struct PakNoteTextEntry;
-typedef struct PakNoteTextEntry PakNoteTextEntry;
 
 struct PakNotesMenu;
 typedef struct PakNotesMenu PakNotesMenu;
@@ -4755,9 +4808,6 @@ typedef struct Plan Plan;
 struct Player1680;
 typedef struct Player1680 Player1680;
 
-struct Player16C0;
-typedef struct Player16C0 Player16C0;
-
 struct PlayerList;
 typedef struct PlayerList PlayerList;
 
@@ -4809,9 +4859,6 @@ typedef struct Player_func_80229814_de Player_func_80229814_de;
 struct Pool_func_802B2510_de;
 typedef struct Pool_func_802B2510_de Pool_func_802B2510_de;
 
-struct ProfileStatisticsScreen;
-typedef struct ProfileStatisticsScreen ProfileStatisticsScreen;
-
 struct QueueEntry;
 typedef struct QueueEntry QueueEntry;
 
@@ -4847,9 +4894,6 @@ typedef struct ResultsHeadingSettings ResultsHeadingSettings;
 
 struct ResultsHeadingStage;
 typedef struct ResultsHeadingStage ResultsHeadingStage;
-
-struct Rider_func_80245D30_de;
-typedef struct Rider_func_80245D30_de Rider_func_80245D30_de;
 
 struct Root802131E0;
 typedef struct Root802131E0 Root802131E0;
@@ -5332,14 +5376,6 @@ struct ALADPCMWaveInfo {
     ALADPCMloop *loop;
     ALADPCMBook *book;
 };
-struct ALAuxBus_s;
-struct ALAuxBus_s {
-    ALFilter_s14 filter;
-    s32 sourceCount;
-    s32 maxSources;
-    ALFilter_s14 **sources;
-    char fx[0x4C - 0x20];
-};
 typedef signed int ( *ALOscInit)(void * *, float *, unsigned char, unsigned char, unsigned char, unsigned char);
 typedef void ( *ALOscStop)(void *);
 typedef signed int ( *ALOscUpdate)(void *, float *);
@@ -5398,19 +5434,6 @@ struct ALDelay_func_802B5B94_de {
     Clip *lp;
     void *rs;
 };
-struct ALEnvMixer4C;
-struct ALEnvMixer4C {
-    char pad[0x4C];
-};
-struct ALFilter_s14_2;
-struct ALFilter_s14_2 {
-    struct ALFilter_s14_2 *source;
-    ALCmdHandler handler;
-    void *setParam;
-    s16 inp;
-    s16 outp;
-    s32 type;
-};
 struct ALEnvMixer_s;
 struct ALEnvMixer_s {
     ALFilter_s14_2 filter;
@@ -5442,12 +5465,6 @@ struct ALEvent10_2 {
         s32 word[3];
     } msg;
 };
-struct ALFilter_sC;
-struct ALFilter_sC {
-    struct ALFilter_sC *source;
-    ALCmdHandler handler;
-    ALSetParam setParam;
-};
 struct ALFx2C;
 struct ALFx2C {
     ALFilter_s14_2 filter;
@@ -5469,36 +5486,9 @@ struct ALFx_func_802B5B94_de {
     u8 section_count;
     void *paramHdl;
 };
-struct ALSynth4C;
-struct ALSynth4C {
-    ALPlayer_s14 *head;
-    Link_func_802596B4_de pFreeList;
-    Link_func_802596B4_de pAllocList;
-    Link_func_802596B4_de pLameList;
-    s32 paramSamples;
-    s32 curSamples;
-    void *dma;
-    void *heap;
-    void *paramList;
-    void *mainBus;
-    void *auxBus;
-    ALFilter_sC *outputFilter;
-    s32 numPVoices;
-    s32 maxAuxBusses;
-    s32 outputRate;
-    s32 maxOutSamples;
-};
-struct ALGlobals;
-struct ALGlobals {
-    ALSynth4C drvr;
-};
 struct ALGlobals_func_802B5B94_de;
 struct ALGlobals_func_802B5B94_de {
     func_8022E694_S1 drvr;
-};
-struct ALLoadFilter;
-struct ALLoadFilter {
-    char pad[0x48];
 };
 struct ALRAWWaveInfo;
 struct ALRAWWaveInfo {
@@ -5529,45 +5519,6 @@ struct ALLoadFilter48 {
     s32 lastsam;
     s32 first;
     s32 memin;
-};
-struct ALMainBus_s;
-struct ALMainBus_s {
-    ALFilter_s14 filter;
-    s32 sourceCount;
-    s32 maxSources;
-    ALFilter_s14 **sources;
-};
-struct ALParam_s1C;
-struct ALParam_s1C {
-    struct ALParam_s1C *next;
-    s32 delta;
-    s16 type;
-    s32 data;
-    s32 moredata;
-    s32 stillmoredata;
-    s32 yetstillmoredata;
-};
-struct ALResampler;
-struct ALResampler {
-    char pad[0x34];
-};
-struct ALResampler_s;
-struct ALResampler_s {
-    ALFilter_s14_2 filter;
-    void *state;
-    f32 ratio;
-    s32 upitch;
-    f32 delta;
-    s32 first;
-    void *ctrlList;
-    void *ctrlTail;
-    s32 motion;
-};
-struct ALSave;
-struct ALSave {
-    ALFilter_s14 filter;
-    s32 dramout;
-    s32 first;
 };
 struct Opaque_ALSeq_s;
 typedef struct Opaque_ALSeq_s Opaque_ALSeq;
@@ -5690,38 +5641,6 @@ union ALSndpEvent_func_802B2780_de {
         u8 mix;
     } fx;
 };
-struct ALSynConfig;
-struct ALSynConfig {
-    s32 maxVVoices;
-    s32 maxPVoices;
-    s32 maxUpdates;
-    s32 maxFXbusses;
-    void *dmaproc;
-    ALHeap *heap;
-    s32 outputRate;
-    u8 fxType;
-    s32 *params;
-};
-typedef void *( *ALDMANew)(void *);
-struct ALSynth;
-struct ALSynth {
-    void *head;
-    Link_func_802596B4_de pFreeList;
-    Link_func_802596B4_de pAllocList;
-    Link_func_802596B4_de pLameList;
-    s32 paramSamples;
-    s32 curSamples;
-    ALDMANew dma;
-    ALHeap *heap;
-    ALParam_s1C *paramList;
-    ALMainBus_s *mainBus;
-    ALAuxBus_s *auxBus;
-    ALFilter_s14 *outputFilter;
-    s32 numPVoices;
-    s32 maxAuxBusses;
-    s32 outputRate;
-    s32 maxOutSamples;
-};
 typedef void ( *SharedCallback10)(void *, void *);
 struct Access_Callback_4;
 struct Access_Callback_4 {
@@ -5812,18 +5731,6 @@ struct Runtime {
     s32 unk788;
     char p78C[8];
     struct Actor_func_80214624_de *unk794;
-};
-struct Actor_func_80245D30_de;
-struct Actor_func_80245D30_de {
-    u8 kind;
-    char pad1[0x1f];
-    f32 vertical;
-    char pad24[4];
-    Vec3 current;
-    char pad34[4];
-    s32 flags;
-    char pad3c[0x30];
-    f32 yaw;
 };
 struct Actor_func_8024A7A0_de;
 struct Actor_func_8024A7A0_de {
@@ -6104,8 +6011,6 @@ struct Channel_func_80430118_de {
     s32 status;
     s32 counter;
 };
-struct Label;
-typedef struct Label Label;
 struct CharacterNextState;
 struct CharacterNextState {
     char a[0x28];
@@ -6687,18 +6592,6 @@ struct FloatState4C;
 struct FloatState4C {
     char pad0[0x48];
     f32 unk_48;
-};
-struct FontStyle;
-struct FontStyle {
-    char pad0[0xA0];
-    s32 envR;
-    s32 envG;
-    s32 envB;
-    s32 primR;
-    s32 primG;
-    s32 primB;
-    f32 width;
-    f32 height;
 };
 struct FrameSequence;
 struct func_80205314_S2;
@@ -7338,17 +7231,6 @@ struct MatchSetupProfile {
     s8 dropped;
     char padF[0x190 - 0xF];
 };
-struct Material_func_80245D30_de;
-struct Material_func_80245D30_de {
-    char pad0[0x52];
-    u16 flags;
-    char pad54[9];
-    u8 strength;
-    char pad5e[1];
-    s8 x;
-    s8 y;
-    s8 z;
-};
 struct MenuGameRoot;
 struct MenuGameRoot {
     u8 prefix[0x48];
@@ -7369,48 +7251,6 @@ struct Menu_func_802185D0_de {
     f32 phase;
     char pad18[0x6C - 0x18];
     s32 cursor;
-};
-struct Menu_func_80409144_de;
-struct Menu_func_80409144_de {
-    char pad0[0x1C];
-    void *player;
-    func_80242278_S1 *slot;
-    char *prompt;
-};
-struct Node_func_8041D134_de;
-struct Node_func_8041D134_de {
-    char pad0[0x10];
-    u8 style;
-    char pad11[0x14 - 0x11];
-    u16 x;
-    u16 y;
-};
-struct Menu_func_8041D134_de;
-struct Node_func_8041D134_de;
-struct Menu_func_8041D134_de {
-    char pad0[4];
-    void *handle;
-    char pad8[0xC8 - 8];
-    struct Node_func_8041D134_de *left;
-    char padCC[2];
-    u16 leftStep;
-    struct Node_func_8041D134_de *right;
-    char padD4[2];
-    u16 rightStep;
-    s32 state;
-    s32 timer;
-    s32 fade;
-    struct Node_func_8041D134_de *groupA;
-    struct Node_func_8041D134_de *cursor;
-    struct Node_func_8041D134_de *focus;
-    char padF0[4];
-    struct Node_func_8041D134_de *groupB;
-    s32 styleStep;
-    s32 styleValue;
-    struct Node_func_8041D134_de *groupC;
-    char pad104[3];
-    u8 alphaStep;
-    s32 clock;
 };
 struct Node_func_8041D4E0_de;
 struct Node_func_8041D4E0_de {
@@ -7490,22 +7330,6 @@ struct Motion_func_8025AB94_de {
     f32 heading;
     char pad18[0x24 - 0x18];
     f32 factor;
-};
-struct Mover;
-struct Mover {
-    s32 active;
-    s32 *script;
-    s32 state;
-    s32 wait;
-    f32 x;
-    f32 y;
-    f32 targetX;
-    f32 targetY;
-    f32 velX;
-    f32 velY;
-    f32 accelX;
-    f32 accelY;
-    f32 rate;
 };
 struct NavigationEndpoint;
 struct NavigationEndpoint {
@@ -8015,11 +7839,6 @@ struct OptionsScrollScreen {
     s32 done;
     s32 full;
 };
-struct Owner104;
-struct Owner104 {
-    char pad0[0x102];
-    unsigned short flags;
-};
 struct Owner_func_8025A844_de;
 struct Owner_func_8025A844_de {
     char pad0[0x84];
@@ -8039,23 +7858,6 @@ struct Owner_func_8044D794_de {
     struct Entry_func_8044D794_de *active;
     char pad11DC[0x10];
     struct Entry_func_8044D794_de *spare;
-};
-struct Opaque_ALVoice_s;
-struct PVoice_s;
-struct PVoice_s {
-    Link_func_802596B4_de node;
-    struct Opaque_ALVoice_s *vvoice;
-    ALFilter_s14 *channelKnob;
-    ALLoadFilter decoder;
-    ALResampler resampler;
-    ALEnvMixer4C envmixer;
-    s32 offset;
-};
-struct PakNoteTextEntry;
-struct PakNoteTextEntry {
-    s32 id;
-    char pad4[0x10];
-    u8 **text;
 };
 struct PakNotesMenuItem;
 struct PakNotesMenuItem {
@@ -8206,13 +8008,6 @@ struct Player1680 {
     func_8023945C_S1 *mount;
     char pad5E0[0x1640 - 0x5E0];
     Mtx views[1];
-};
-struct Player16C0;
-struct Player16C0 {
-    char pad0[0x5E4];
-    s32 alive;
-    char pad5E8[0x1640 - 0x5E8];
-    UnitMtx markers[2];
 };
 struct Player_func_80226950_de;
 struct Player_func_80226950_de {
@@ -8385,17 +8180,6 @@ struct Pool_func_802B2510_de {
     struct Slot_func_802B2510_de *slots;
     s32 count;
 };
-struct ProfileStatisticsScreen;
-struct ProfileStatisticsScreen {
-    void *handle;
-    char pad4[0x10C - 4];
-    s32 index;
-    char kills[0x32];
-    char wins[0x32];
-    char deaths[0x32];
-    char score[0x32];
-    char count[0x32];
-};
 struct QueueEntry;
 struct QueueEntry {
     s16 type;
@@ -8492,13 +8276,6 @@ struct ResultsHeadingStage {
     char pad0[0x24];
     u8 time;
 };
-struct Rider_func_80245D30_de;
-struct Rider_func_80245D30_de {
-    char pad0[0x38];
-    s32 flags;
-    char pad3c[0x30];
-    f32 yaw;
-};
 struct Mid802131E0;
 struct Root802131E0;
 struct Root802131E0 {
@@ -8548,27 +8325,6 @@ struct ScreenState {
     s32 label;
     struct Window_func_80421AE8_de *window;
     s32 state;
-};
-struct Item_func_8042B4D4_de;
-struct Screen_func_80426918_de;
-struct Screen_func_80426918_de {
-    char pad0[0x978];
-    struct Item_func_8042B4D4_de *left;
-    char pad97C[2];
-    u16 leftSpeed;
-    struct Item_func_8042B4D4_de *right;
-    char pad984[2];
-    u16 rightSpeed;
-    s32 state;
-    s32 timer;
-    void *prompt;
-    void *button;
-    char pad998[0xA48 - 0x998];
-    struct Item_func_8042B4D4_de *pulse;
-    char padA4C[4];
-    struct Item_func_8042B4D4_de *banner;
-    s32 clock;
-    s32 requested;
 };
 struct Screen_func_804279B8_de;
 struct Screen_func_804279B8_de {
@@ -22901,6 +22657,8 @@ struct LightSettings;
 typedef struct LightSettings LightSettings;
 struct LinkTable;
 typedef struct LinkTable LinkTable;
+struct Messages;
+typedef struct Messages Messages;
 struct Mode;
 typedef struct Mode Mode;
 struct Obj_func_80421BEC_de;

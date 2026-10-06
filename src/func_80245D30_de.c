@@ -1,7 +1,7 @@
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80245980.h"
 /* Applies material current and turning forces to an actor and adds their horizontal and vertical movement effects. */
 #include "types.h"
-#include "common/unused.h"
 extern f32 D_800CB430_de[],D_800CD738[];
 extern s32 func_8024E62C_de(Actor_func_80245D30_de *);
 extern f32 func_80271AA8_de(Vec3 *);

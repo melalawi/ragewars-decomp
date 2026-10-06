@@ -117,6 +117,10 @@ struct Source_func_8026BC60_de;
 /* unbake published declaration: published_4474d32e613a6fc921bd344a */
 typedef struct Source_func_8026BC60_de Source_func_8026BC60_de;
 
+struct Owner104;
+/* unbake published declaration: published_4d9b38e2a65fbf9716e822cf */
+typedef struct Owner104 Owner104;
+
 /* unbake published declaration: published_53156f512337b6ec135a1f1a */
 extern int D_80137288;
 
@@ -136,6 +140,13 @@ struct Material;
 struct Material {
     u8 pad[6];
     u8 flags;
+};
+
+struct Owner104;
+/* unbake published declaration: published_a06ff17beed598c3be57b10b */
+struct Owner104 {
+    char pad0[0x102];
+    unsigned short flags;
 };
 
 struct Frame118;

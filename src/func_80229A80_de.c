@@ -4,9 +4,7 @@
 #include "span_1000/code_80225D10.h"
 #include "types.h"
 #include "abi.h"
-#include "common/unused.h"
 #include "gfx.h"
-#include "span_1000/code_802192C0.h"
 #include "gbi.h"
 #include "n64sdk.h"
 

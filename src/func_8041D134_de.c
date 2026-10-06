@@ -3,7 +3,6 @@
    visible item groups as each phase's timer runs out, and while idle (state 3) pulses the cursor's
    style from the elapsed time and moves the cursor to the node now under focus. */
 #include "types.h"
-#include "common/unused.h"
 
 
 
@@ -20,7 +19,7 @@ extern void func_80419F24_de(s32 fade);
 extern s32 func_80419F38_de(s32 fade);
 extern void func_80419F58_de(s32 fade, s32 speed);
 extern Node_func_8041D134_de *func_8041B7FC_de(void *handle, s32 arg1);
-extern void func_8041D4E0_de(void);
+
 
 extern void func_8041DA5C_de(s32 style);
 

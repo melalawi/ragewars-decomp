@@ -25,6 +25,9 @@ struct func_802ABC18_S1 {
     s32 unk114;
 };
 
+/* unbake published declaration: published_29ec5c86374b68c5ce6947c8 */
+extern s32 D_80147150;
+
 /* unbake published declaration: published_29efffdc2f1b13e1d9d7e7a7 */
 extern void func_802AAB68_de(float arg0, float arg1);
 
@@ -51,6 +54,10 @@ struct Gfx_func_802AAC28_de {
         unsigned int w1;
     } words;
 };
+
+struct FontStyle;
+/* unbake published declaration: published_403dfb8bfb950a0b1bc1e294 */
+typedef struct FontStyle FontStyle;
 
 struct func_802AB794_S1;
 /* unbake published declaration: published_4614b7a77ce5241c21acd1f3 */
@@ -84,6 +91,28 @@ typedef struct func_802AB8DC_S1 func_802AB8DC_S1;
 /* unbake published declaration: published_6164c6421668b44fe21b6b8d */
 extern float D_800C61B8_de;
 
+struct Mover;
+/* unbake published declaration: published_6ad12e942ca53eb84339781a */
+typedef struct Mover Mover;
+
+struct Mover;
+/* unbake published declaration: published_6d891778fe4f8790dc7558f5 */
+struct Mover {
+    s32 active;
+    s32 *script;
+    s32 state;
+    s32 wait;
+    f32 x;
+    f32 y;
+    f32 targetX;
+    f32 targetY;
+    f32 velX;
+    f32 velY;
+    f32 accelX;
+    f32 accelY;
+    f32 rate;
+};
+
 /* unbake published declaration: published_82e909c0a4a9fadb8a82a29a */
 extern float D_800C61F0_de;
 
@@ -114,6 +143,20 @@ struct func_802AB6C0_S1 {
 
 /* unbake published declaration: published_9342d77da297876aaeb49b20 */
 extern float D_800C5FB0_de;
+
+struct FontStyle;
+/* unbake published declaration: published_98bb369857f576911e36249b */
+struct FontStyle {
+    char pad0[0xA0];
+    s32 envR;
+    s32 envG;
+    s32 envB;
+    s32 primR;
+    s32 primG;
+    s32 primB;
+    f32 width;
+    f32 height;
+};
 
 struct func_802AB794_S1;
 /* unbake published declaration: published_9ea8c34323d920387c3f39e2 */
@@ -152,6 +195,9 @@ typedef struct ObjectLinksC_2 ObjectLinksC_2;
 struct func_802AB78C_S1;
 /* unbake published declaration: published_dc637ea6c94b2dd8eab8faed */
 typedef struct func_802AB78C_S1 func_802AB78C_S1;
+
+/* unbake published declaration: published_f3bf273158c5557ee856cde0 */
+extern char D_801376F8[];
 
 /* unbake published declaration: published_f4a2c404d673266d77942cfc */
 extern void func_802A84F8_de();

@@ -1,5 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802BD1A8_H
 #define UNBAKE_SPAN_1000_CODE_802BD1A8_H
+#include "acmd.h"
 #include "../types.h"
 /* unbake published declaration: published_9a7290e2222f416be16cf4db */
 extern void func_802BE0C0_de(void);

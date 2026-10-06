@@ -2,6 +2,7 @@
 #define UNBAKE_SPAN_1000_CODE_80245980_H
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_02a3cb9d706fb2c161f6539c */
 extern float D_800C37E0_de;
@@ -25,6 +26,15 @@ struct Access_u8_E6;
 struct Access_u8_E6 {
     char pad[0xE6];
     u8 field;
+};
+
+struct Rider_func_80245D30_de;
+/* unbake published declaration: published_0af47863c5bbbe0105145501 */
+struct Rider_func_80245D30_de {
+    char pad0[0x38];
+    s32 flags;
+    char pad3c[0x30];
+    f32 yaw;
 };
 
 /* unbake published declaration: published_0db4bcbf137fb67e28df40e0 */
@@ -144,6 +154,10 @@ typedef struct Access_s8_23A Access_s8_23A;
 /* unbake published declaration: published_3ff62daf2fffb5abc08c53b1 */
 extern float D_800C3828_de;
 
+struct Rider_func_80245D30_de;
+/* unbake published declaration: published_426f9b59eaba188638d8959d */
+typedef struct Rider_func_80245D30_de Rider_func_80245D30_de;
+
 struct Access_s8_1A5;
 /* unbake published declaration: published_43bcc04553ce55d925c2dcff */
 struct Access_s8_1A5 {
@@ -185,6 +199,10 @@ typedef struct Record_func_80245C38_de Record_func_80245C38_de;
 
 /* unbake published declaration: published_5ef6b0998d95a530e02d79d6 */
 extern void func_80245B74_de(int arg0);
+
+struct Actor_func_80245D30_de;
+/* unbake published declaration: published_621748132cfc54dcf371a27b */
+typedef struct Actor_func_80245D30_de Actor_func_80245D30_de;
 
 struct World_func_802466A0_de;
 /* unbake published declaration: published_669b3aee5bb12feea42fec7a */
@@ -304,6 +322,19 @@ struct Access_s8_10F {
 /* unbake published declaration: published_aab31a0667d749139ce52712 */
 extern void func_80245C38_de(void);
 
+struct Material_func_80245D30_de;
+/* unbake published declaration: published_b00c847562280807adfd5fea */
+struct Material_func_80245D30_de {
+    char pad0[0x52];
+    u16 flags;
+    char pad54[9];
+    u8 strength;
+    char pad5e[1];
+    s8 x;
+    s8 y;
+    s8 z;
+};
+
 struct Access_s16_10A;
 /* unbake published declaration: published_b129ac04fef1f054f50a304e */
 struct Access_s16_10A {
@@ -409,6 +440,24 @@ struct Access_s8_23A {
     char pad[0x23A];
     s8 field;
 };
+
+struct Actor_func_80245D30_de;
+/* unbake published declaration: published_d26578a7ea742c4e306e8521 */
+struct Actor_func_80245D30_de {
+    u8 kind;
+    char pad1[0x1f];
+    f32 vertical;
+    char pad24[4];
+    Vec3 current;
+    char pad34[4];
+    s32 flags;
+    char pad3c[0x30];
+    f32 yaw;
+};
+
+struct Material_func_80245D30_de;
+/* unbake published declaration: published_d501a73ae12e781baa7ac604 */
+typedef struct Material_func_80245D30_de Material_func_80245D30_de;
 
 struct func_80245AC8_S1;
 /* unbake published declaration: published_e55465ef2060ea2b00946aaf */

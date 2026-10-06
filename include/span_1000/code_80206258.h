@@ -2,6 +2,7 @@
 #define UNBAKE_SPAN_1000_CODE_80206258_H
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 struct func_802062E0_S1;
 /* unbake published declaration: published_0301178bd9e60a7ebf92aae4 */

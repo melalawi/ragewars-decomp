@@ -4,6 +4,10 @@
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
+struct Label;
+/* unbake published declaration: published_071e2f1d45bdec4a8ab958eb */
+typedef struct Label Label;
+
 struct State_func_8041C40C_de;
 /* unbake published declaration: published_08273769c2fd90ce34054da8 */
 struct State_func_8041C40C_de {
@@ -41,8 +45,15 @@ struct Obj_func_8041CDB0_de {
     Vec3 unk480;
 };
 
+struct ProfileStatisticsScreen;
+/* unbake published declaration: published_317eed37e97172535e206606 */
+typedef struct ProfileStatisticsScreen ProfileStatisticsScreen;
+
 /* unbake published declaration: published_38a059cd0693171835a9e7f2 */
 extern void func_8041D960_de();
+
+/* unbake published declaration: published_3b623652acff665a1fcb4161 */
+extern void func_8041D6A8_de();
 
 struct Object49C;
 /* unbake published declaration: published_3ce97c189eaa8a35c93b2743 */
@@ -68,6 +79,10 @@ extern void func_8041CDDC_de(Obj_func_8041CDDC_de *arg0, Vec3 v);
 struct Menu_func_8041DA5C_de;
 /* unbake published declaration: published_4aea74a399b126083e1269ea */
 typedef struct Menu_func_8041DA5C_de Menu_func_8041DA5C_de;
+
+struct Menu_func_8041D134_de;
+/* unbake published declaration: published_553a59590ee337c0876044af */
+typedef struct Menu_func_8041D134_de Menu_func_8041D134_de;
 
 struct Obj_func_8041CDB0_de;
 /* unbake published declaration: published_59c3ea2741e8bd9e5b53f71e */
@@ -127,11 +142,28 @@ struct Game_func_8041D960_de;
 /* unbake published declaration: published_8601cf4c300bd3bd57b1d9d3 */
 typedef struct Game_func_8041D960_de Game_func_8041D960_de;
 
+struct Node_func_8041D134_de;
+/* unbake published declaration: published_868ac28517fd36d97ebb1bc8 */
+typedef struct Node_func_8041D134_de Node_func_8041D134_de;
+
 struct Menu_func_8041DBCC_de;
 /* unbake published declaration: published_86ad0ccb9776044ba232d9bf */
 struct Menu_func_8041DBCC_de {
     char pad0[8];
     char model[1];
+};
+
+struct ProfileStatisticsScreen;
+/* unbake published declaration: published_92e0119e748ba31157756d0c */
+struct ProfileStatisticsScreen {
+    void *handle;
+    char pad4[0x10C - 4];
+    s32 index;
+    char kills[0x32];
+    char wins[0x32];
+    char deaths[0x32];
+    char score[0x32];
+    char count[0x32];
 };
 
 /* unbake published declaration: published_a3de72094ac45d81601db810 */
@@ -140,6 +172,16 @@ extern void func_8041C19C_de();
 struct State_func_8041C40C_de;
 /* unbake published declaration: published_ac779ee07ad8933245dbcaa7 */
 typedef struct State_func_8041C40C_de State_func_8041C40C_de;
+
+struct Node_func_8041D134_de;
+/* unbake published declaration: published_add903776511fb6736aa4249 */
+struct Node_func_8041D134_de {
+    char pad0[0x10];
+    u8 style;
+    char pad11[0x14 - 0x11];
+    u16 x;
+    u16 y;
+};
 
 struct Label;
 struct Menu_func_8041D960_de;
@@ -191,5 +233,37 @@ struct State_func_8041DDF4_de {
 
 /* unbake published declaration: published_f84563b8c4f5bb3134de663a */
 extern void func_8041CDB0_de(Obj_func_8041CDB0_de *arg0, Vec3 v);
+
+struct Menu_func_8041D134_de;
+struct Node_func_8041D134_de;
+/* unbake published declaration: published_fd732b3e3a790b74ed174ef5 */
+struct Menu_func_8041D134_de {
+    char pad0[4];
+    void *handle;
+    char pad8[0xC8 - 8];
+    struct Node_func_8041D134_de *left;
+    char padCC[2];
+    u16 leftStep;
+    struct Node_func_8041D134_de *right;
+    char padD4[2];
+    u16 rightStep;
+    s32 state;
+    s32 timer;
+    s32 fade;
+    struct Node_func_8041D134_de *groupA;
+    struct Node_func_8041D134_de *cursor;
+    struct Node_func_8041D134_de *focus;
+    char padF0[4];
+    struct Node_func_8041D134_de *groupB;
+    s32 styleStep;
+    s32 styleValue;
+    struct Node_func_8041D134_de *groupC;
+    char pad104[3];
+    u8 alphaStep;
+    s32 clock;
+};
+
+/* unbake published declaration: published_fe96fcbd09660d9f4acd172f */
+extern void func_8041D4E0_de();
 
 #endif

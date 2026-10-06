@@ -1,11 +1,9 @@
 #include "span_16E000/code_80405DC0.h"
-#include "span_C76B0/data.h"
 /* Writes the 11-character rank title for the score D_8014D48C into the end of the item's text:
    the title comes from the band the score falls in (below 50, 150, 300, 500, 800, 1300, 2000,
    3000, 4500, 6500 and 9999 and above), and the text position is the text length from
    func_80441FE8_de minus 11; returns 0. */
 #include "types.h"
-#include "common/unused.h"
 
 
 

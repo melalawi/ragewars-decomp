@@ -1,19 +1,6 @@
 #ifndef UNBAKE_COMMON_TYPES_8A8189AF7B05_H
 #define UNBAKE_COMMON_TYPES_8A8189AF7B05_H
 #include "../types.h"
-struct Vector4f;
-/* unbake published declaration: published_1e4532db7539a6306f2b3fdc */
-typedef struct Vector4f Vector4f;
-
-struct Vector4f;
-/* unbake published declaration: published_1f88bceeb427d07926fd0b66 */
-struct Vector4f {
-    float x;
-    float y;
-    float z;
-    float w;
-};
-
 struct Box;
 /* unbake published declaration: published_22271f56ff1f25f48ba524c3 */
 typedef struct Box Box;

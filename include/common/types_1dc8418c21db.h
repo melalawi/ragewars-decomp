@@ -3,6 +3,7 @@
 #include "audio_callbacks.h"
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_06e4f7ef1f9e.h"
 struct Item_func_8043C9AC_de;
 /* unbake published declaration: published_0000b9574e3dbb500173c4e4 */
 struct Item_func_8043C9AC_de {
@@ -2704,6 +2705,15 @@ union func_80239C2C_S1_UF24;
 /* unbake published declaration: published_805fcf110675d765a05e7d4a */
 typedef union func_80239C2C_S1_UF24 func_80239C2C_S1_UF24;
 
+struct Item_func_8042B4D4_de;
+/* unbake published declaration: published_35e14301611e585353a17c53 */
+struct Item_func_8042B4D4_de {
+    char pad[0x10];
+    u8 alpha;
+    char pad11[0x14 - 0x11];
+    s16 x;
+};
+
 struct func_8022EA2C_S1;
 /* unbake published declaration: published_35ea266e8edec7bc22ec0e80 */
 typedef struct func_8022EA2C_S1 func_8022EA2C_S1;
@@ -3183,6 +3193,13 @@ struct Node75_func_802750B0_de {
     void *next;
 };
 
+struct Label;
+/* unbake published declaration: published_5553c7e52b076d457900d062 */
+struct Label {
+    char pad0[0x38];
+    char *text;
+};
+
 struct func_80228774_S6;
 /* unbake published declaration: published_55643695e0f7db13f6d08ba9 */
 typedef struct func_80228774_S6 func_80228774_S6;
@@ -3205,6 +3222,10 @@ struct Shape {
 struct Shape;
 /* unbake published declaration: published_ad73f029ceee340381d6b8c8 */
 typedef struct Shape Shape;
+
+struct UnitVtx;
+/* unbake published declaration: published_5653f462969607198f7238dd */
+typedef struct UnitVtx UnitVtx;
 
 struct Access_u8_3;
 /* unbake published declaration: published_56b142b7b8c93cfe3a917886 */
@@ -3546,11 +3567,6 @@ struct func_80207B5C_S2 {
     s32 unk24;
 };
 
-struct Label;
-struct Label {
-    char pad0[0x38];
-    char *text;
-};
 struct TextEntry;
 /* unbake published declaration: published_e963675f434d972faa292e38 */
 typedef struct TextEntry TextEntry;
@@ -3630,6 +3646,21 @@ struct func_80255D10_S1 {
     s32 unkC;
     char padC[0x10 - 0xC - sizeof(s32)];
     s32 unk10;
+};
+
+struct UnitVtx;
+/* unbake published declaration: published_d9cd2270ebbe1266485bd7c1 */
+struct UnitVtx {
+    s16 x;
+    s16 y;
+    s16 z;
+    u16 flag;
+    s16 s;
+    s16 t;
+    u8 r;
+    u8 g;
+    u8 b;
+    u8 a;
 };
 
 /* unbake published declaration: published_75d7ba4c4e4a699fa2c757fa */

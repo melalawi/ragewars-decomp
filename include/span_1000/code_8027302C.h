@@ -66,6 +66,9 @@ extern float D_800C48EC_de;
 /* unbake published declaration: published_363dffafd9c41833163f2153 */
 extern void func_80273040_de(f32 *arg0, f32 *arg1);
 
+/* unbake published declaration: published_44ad8aa926fd194f1e0a3439 */
+extern void func_802734F8_de(float * arg0, float * arg1, float sx, float sy, float sz);
+
 struct func_80273B08_S1;
 /* unbake published declaration: published_4a3f073aecfaacf2703a1bf6 */
 typedef struct func_80273B08_S1 func_80273B08_S1;

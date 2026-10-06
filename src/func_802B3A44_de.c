@@ -1,9 +1,9 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802B369C.h"
 #include "abi.h"
 #include "types.h"
 #include "acmd.h"
 #include "abi.h"
-#include "common/unused.h"
 
 extern ALGlobals *D_800D4070; /* alGlobals */
 

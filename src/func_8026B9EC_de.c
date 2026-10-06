@@ -1,11 +1,10 @@
+#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8026AC38.h"
 #include "abi.h"
-#include "common/unused.h"
 #include "gfx.h"
 #include "types.h"
 #include "gbi.h"
 #include "n64sdk.h"
-#include "common/types_8a8189af7b05.h"
 
 /* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* Draws the parts of a model resource that the owner has enabled, when the frame command buffer still has 3000 commands free: each part material's low two bits of byte 6 pick an owner flag at 0x102 (0x100, 0x8 or 0x2, 0x80 or 0x20 by bit 4) that must be set before func_80269A80_de accepts the material and its display list is emitted. Adapted from func_8026DA4C_de with the owner argument and the per-material flag switch added. */

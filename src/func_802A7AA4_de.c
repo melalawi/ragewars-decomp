@@ -1,7 +1,6 @@
 #include "span_1000/code_802A8A94.h"
 /* Steps a scripted screen mover: in state 2 it reads opcodes from its script (1 sets the position, 2 waits a number of frames, 3 moves toward a target at a rate of one over a frame count until within a quarter pixel, 4 and 5 fall vertically or horizontally with a fixed-point acceleration until leaving the screen, 6 or a missing script stops), running each finished step straight into the next opcode. */
 #include "types.h"
-#include "common/unused.h"
 
 
 

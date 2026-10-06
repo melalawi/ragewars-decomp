@@ -1,7 +1,7 @@
+#include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_8043F69C.h"
 #include "types.h"
-#include "common/types_1dc8418c21db.h"
 
 /* Returns the address 0x190 bytes into the block at offset 0x20 of an object, or null when the
    object has no block. */

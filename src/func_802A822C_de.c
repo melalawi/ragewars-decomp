@@ -101,7 +101,7 @@ release:
 
 extern Gfx *D_8010C574;
 extern s32 D_801377B8[2];
-extern s32 D_80147150;
+
 
 extern s32 func_802AADBC_de(void);
 extern void func_80268CE0_de(s32 arg0);
@@ -166,7 +166,7 @@ void func_802A84F8_de(void) {
 }
 
 extern Gfx *D_8010C574;
-extern s32 D_80147150;
+
 extern s32 func_802AADBC_de(void);
 
 void func_802A8710_de(void) {
@@ -194,7 +194,7 @@ void func_802A8710_de(void) {
 }
 
 extern Gfx *D_8010C574;
-extern s32 D_80147150;
+
 extern s32 func_802AADBC_de(void);
 
 void func_802A8800_de(void) {

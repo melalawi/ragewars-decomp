@@ -1,6 +1,6 @@
-#include "span_16E000/code_8043A0A4.h"
-#include "span_16E000/code_8043A0A4.h"
+#include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_8043A0A4.h"
 #include "types.h"
 
 extern struct Screen_func_8043B0CC_de *D_800E1990;

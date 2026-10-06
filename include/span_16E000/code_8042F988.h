@@ -134,6 +134,9 @@ struct Block_func_804347CC_de {
     struct Record_func_804347CC_de saved[4];
 };
 
+/* unbake published declaration: published_168b7662f1f383690c0017f8 */
+extern s32 D_800E25A4[];
+
 struct Shared_Item;
 struct func_8028469C_S2;
 /* unbake published declaration: published_1f6462984d5239635e05b893 */
@@ -202,6 +205,9 @@ struct Player_func_8042F7A8_de {
     s32 timer;
     char pad18[0xB68 - 0x18];
 };
+
+/* unbake published declaration: published_4c3b7e35e8f4634d07471ff2 */
+extern u8 D_80152789;
 
 struct PakMenuController;
 /* unbake published declaration: published_4db0231b0e4126691f89e038 */

@@ -22,6 +22,19 @@ struct func_80203C40_S1 {
     s32 unk100;
 };
 
+struct Vector4f;
+/* unbake published declaration: published_1e4532db7539a6306f2b3fdc */
+typedef struct Vector4f Vector4f;
+
+struct Vector4f;
+/* unbake published declaration: published_1f88bceeb427d07926fd0b66 */
+struct Vector4f {
+    float x;
+    float y;
+    float z;
+    float w;
+};
+
 struct func_8022C6D4_S1;
 /* unbake published declaration: published_06261458ac5eea89c9a820f0 */
 struct func_8022C6D4_S1 {

@@ -5,6 +5,12 @@
 /* unbake published declaration: published_037bb42f8d2e711c61deee17 */
 extern s32 D_80146CD4_de;
 
+/* unbake published declaration: published_037d873cd991d307781a58ff */
+extern char D_0044EB70[];
+
+/* unbake published declaration: published_131eb44885e75635031bdddc */
+extern int D_800D2448;
+
 /* unbake published declaration: published_16edd1a0df14596bb8a669d5 */
 extern void func_80409964_de(void);
 
@@ -41,8 +47,14 @@ extern s32 D_8014D4F4;
 /* unbake published declaration: published_280ab3364157833fd557adfc */
 extern s32 D_8014D4C0_de;
 
+/* unbake published declaration: published_2c6523e9f0c78d3911fede42 */
+extern int D_800D2420;
+
 /* unbake published declaration: published_2c7559387909a77eca0a4045 */
 extern s32 D_80142CA0_de;
+
+/* unbake published declaration: published_2f4edaf7f548fdc5aeb73062 */
+extern int D_800D2424;
 
 struct Menu_func_80408DF0_de;
 struct Player_func_80408DF0_de;
@@ -53,6 +65,14 @@ struct Menu_func_80408DF0_de {
     func_80242278_S1 *slot;
     char *prompt;
 };
+
+struct Menu_func_80409144_de;
+/* unbake published declaration: published_3341ce3053c8b13fd9e44a89 */
+typedef struct Menu_func_80409144_de Menu_func_80409144_de;
+
+struct PakNoteTextEntry;
+/* unbake published declaration: published_446df801f8675613b23e6265 */
+typedef struct PakNoteTextEntry PakNoteTextEntry;
 
 struct Menu_func_804085E0_de;
 /* unbake published declaration: published_5108d43cd54d3dfe5563adb1 */
@@ -65,8 +85,36 @@ struct Menu_func_804085E0_de {
 /* unbake published declaration: published_582bc2b60e287658228d096d */
 extern s32 D_800D36D8;
 
+struct Menu_func_80409144_de;
+/* unbake published declaration: published_66f5903e553061b56e894602 */
+struct Menu_func_80409144_de {
+    char pad0[0x1C];
+    void *player;
+    func_80242278_S1 *slot;
+    char *prompt;
+};
+
+struct Menu_func_80409144_de;
+/* unbake published declaration: published_59b43f6a0b08d6528112a9a2 */
+extern int func_80409144_de(void * owner, struct Menu_func_80409144_de * menu, void * arg);
+
 /* unbake published declaration: published_5a37279248ca97fe36c4f0ee */
 extern void func_804098CC_de(void ***handle, void **data, s32 units);
+
+/* unbake published declaration: published_5b401b1948ecb9b727b318d2 */
+extern int D_800D2428;
+
+/* unbake published declaration: published_6468ce971e8f0b3b05b65e9f */
+extern int D_800D241C;
+
+/* unbake published declaration: published_786822250f09dde6c46a2337 */
+extern int D_800D242C;
+
+/* unbake published declaration: published_7cd48f4eb66d3f2f8e5fa868 */
+extern int D_800D2430;
+
+/* unbake published declaration: published_7dc0f364847134b975acbbee */
+extern int D_800D2438;
 
 /* unbake published declaration: published_7ef83003df28d2e7863fcc50 */
 extern s32 D_8014D4EC_de;
@@ -81,6 +129,9 @@ extern s32 func_804085E0_de(void *unused, Menu_func_804085E0_de *menu);
 /* unbake published declaration: published_8537aa0767fe428d4547b508 */
 extern int D_8014D4D4;
 
+/* unbake published declaration: published_8a24fd2387a959369ca00e6e */
+extern int D_800D2440;
+
 struct Player_func_80408DF0_de;
 /* unbake published declaration: published_8b96e9be3c2a3268c4029126 */
 typedef struct Player_func_80408DF0_de Player_func_80408DF0_de;
@@ -93,6 +144,12 @@ extern s32 D_8014D4DC;
 
 /* unbake published declaration: published_98730fa99f0d03c06912c9b5 */
 extern int D_8014D4FC;
+
+/* unbake published declaration: published_9e8dec1433beaba1cb3af3a3 */
+extern char D_0044EBDC[];
+
+/* unbake published declaration: published_9e8e2126fa16c66e82b0581a */
+extern int D_800D2434;
 
 /* unbake published declaration: published_9f6537b92a0e3437ee1779a8 */
 extern char *func_80409884_de(s32 block);
@@ -130,8 +187,22 @@ struct func_80408E1C_S1 {
     char unk554;
 };
 
+/* unbake published declaration: published_da009a0b79dc935f5baac8d6 */
+extern int D_800D2444;
+
+struct PakNoteTextEntry;
+/* unbake published declaration: published_e4ca32e8888ff1de01ecea0e */
+struct PakNoteTextEntry {
+    s32 id;
+    char pad4[0x10];
+    u8 **text;
+};
+
 /* unbake published declaration: published_e98c824605e3de0102852329 */
 extern s32 D_800D36D4;
+
+/* unbake published declaration: published_f1a10b825ca94110495fd2ff */
+extern int D_800D243C;
 
 /* unbake published declaration: published_f344b6f776b2658c2cbc239b */
 extern s32 D_80142CAC;

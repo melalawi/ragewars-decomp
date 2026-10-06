@@ -1,6 +1,6 @@
 #include "span_1000/code_802A8A94.h"
 #include "types.h"
-extern s32 D_80147150;
+
 extern f32 D_800C6214_de;
 extern f32 D_800C621C_de;
 extern f32 D_800C6224_de;

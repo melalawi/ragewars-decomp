@@ -1,9 +1,7 @@
-#include "span_16E000/code_8042F988.h"
-#include "common/unused.h"
-#include "span_16E000/code_80405DC0.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 #include "common/types_06e4f7ef1f9e.h"
+#include "span_16E000/code_80405DC0.h"
 #include "span_16E000/code_8042F988.h"
+/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 #include "types.h"
 /* Updates a player menu state from controller status, available saves, and the current menu phase. */
 

@@ -1,8 +1,8 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80268160.h"
 #include "types.h"
 #include "gfx.h"
 #include "gbi.h"
-#include "common/types_1dc8418c21db.h"
 #include "n64sdk.h"
 
 /* Selects a cached RDP color-combiner mode and emits the corresponding display-list command. */

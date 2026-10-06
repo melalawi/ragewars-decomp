@@ -132,6 +132,9 @@ typedef struct RegionDesc RegionDesc;
 /* unbake published declaration: published_55f86ef0cb9ceaf4c0d02a7d */
 extern void func_8023CDD4_de(RegionDesc *desc);
 
+/* unbake published declaration: published_565900ad1e66901745c72026 */
+extern void func_8023D010_eu_x(void);
+
 struct Slot_func_8023B9C0_eu;
 /* unbake published declaration: published_5a5d2461ddba0af847a7541c */
 typedef struct Slot_func_8023B9C0_eu Slot_func_8023B9C0_eu;
@@ -338,5 +341,4 @@ struct func_8023C77C_S1 {
 extern void func_8023CFB0_us(void);
 extern void func_8023CFD0_de(void);
 extern void func_8023CFD8_eu(void * arg0);
-extern void func_8023D010_eu_x(void);
 #endif

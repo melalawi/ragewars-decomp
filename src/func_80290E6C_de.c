@@ -12,7 +12,7 @@ extern void func_802AAB3C_de(s32, s32, s32, s32, s32, s32);
 extern void func_802AAB7C_de(char *, f32, f32, f32, f32, s32, s32, s32);
 extern s32 D_8011B9F0;
 
-extern s32 D_80147150;
+
 extern char **D_800D3E14_de[];
 extern s32 D_800DE880_de, D_800DE884_de;
 

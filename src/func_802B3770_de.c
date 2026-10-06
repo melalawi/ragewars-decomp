@@ -1,10 +1,10 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802B369C.h"
 /* alSynNew, drafted from ultralib src/audio/synthesizer.c: builds the synthesizer from its config,
    allocating the save filter, the aux and main busses (with an effect when one is configured),
    every physical voice with its decoder, resampler and envelope mixer chain, and the free list of
    parameter updates. */
 #include "types.h"
-#include "common/unused.h"
 
 extern void *func_802B0340_de(u8 *, s32, ALHeap *, s32, s32);       /* alHeapDBAlloc */
 extern void func_802B4598_de(ALSave *);                             /* alSaveNew */

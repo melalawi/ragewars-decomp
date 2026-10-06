@@ -103,6 +103,9 @@ extern void func_802AF990_us_rev1();
 /* unbake published declaration: published_7cb65110ad250de5c82a0eb9 */
 extern unsigned char D_B2000001;
 
+/* unbake published declaration: published_874683f9fccb11ba6531faa6 */
+extern void func_802B1554_us_rev1(void);
+
 /* unbake published declaration: published_9bb8a89d531a31b14434dac5 */
 extern int D_800D3648;
 
@@ -134,5 +137,4 @@ extern int D_800D3644;
 /* unbake published declaration: published_fe7c54d5d2c6f14d2259b44c */
 extern s32 func_802AF544_us_rev1(void);
 
-extern void func_802B1554_us_rev1(void);
 #endif

@@ -3383,8 +3383,21 @@ struct HudState {
     f32 timer;
 };
 
+struct Player16C0;
+/* unbake published declaration: published_af404818f647c7c7379e8cfd */
+typedef struct Player16C0 Player16C0;
+
 /* unbake published declaration: published_b67da224ec60a56f50e6a95f */
 extern float D_800C2BF4_de;
+
+struct Player16C0;
+/* unbake published declaration: published_b69dc22e3196ffbce0f5e9da */
+struct Player16C0 {
+    char pad0[0x5E4];
+    s32 alive;
+    char pad5E8[0x1640 - 0x5E8];
+    UnitMtx markers[2];
+};
 
 struct ObjectLinks16E4_2;
 /* unbake published declaration: published_b740eacd3c6014bfbac3939d */

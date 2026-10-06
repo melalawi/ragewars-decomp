@@ -1,4 +1,4 @@
-#include "span_16E000/code_80405DC0.h"
+#include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_80405DC0.h"
 /* Confirms the pak menu prompt for state D_8014D4E8: in states 4, 3 and 0 it rechecks the selected
    channel's pak through func_80406178_de (marking the menu busy and showing the menu prompt when that
@@ -8,7 +8,6 @@
    or D_0044ED20); in states 1 and 2 it flags D_80142CAC in the pak manager and shows the menu
    prompt. Returns 1. Written as a plain switch whose jump table the build places. */
 #include "types.h"
-#include "common/unused.h"
 
 
 

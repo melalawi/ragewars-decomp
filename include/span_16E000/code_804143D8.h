@@ -2,6 +2,7 @@
 #define UNBAKE_SPAN_16E000_CODE_804143D8_H
 #include "../types.h"
 #include "gfx.h"
+#include "decomp/argb_color.h"
 struct Texture;
 /* unbake published declaration: published_0046a35fa4ae4fa146339145 */
 typedef struct Texture Texture;

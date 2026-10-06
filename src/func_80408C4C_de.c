@@ -60,8 +60,8 @@ extern s8 D_8014D490;
 extern char D_80140F80;
 extern char D_0044FA6C[];
 extern char D_8014155C[];
-extern char D_0044EB70[];
-extern char D_0044EBDC[];
+
+
 
 extern s32 func_80406178_de(Menu_func_80408C4C_de *menu, s32 ch, s32 mode);
 extern SharedPlayer_func_80408C4C_de *func_8022A5C0_de(char *pool, func_80242278_S1 *slot);

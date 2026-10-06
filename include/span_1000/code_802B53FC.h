@@ -1,6 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802B53FC_H
 #define UNBAKE_SPAN_1000_CODE_802B53FC_H
 #include "acmd.h"
+#include "audio_callbacks.h"
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_046f9b91cdb88c064d3a1184 */
@@ -36,8 +37,40 @@ struct ALResampler_s28 {
     s32 first;
 };
 
+struct ALFilter_s14_2;
+/* unbake published declaration: published_95879db5c6c4cfcc2bc21872 */
+typedef struct ALFilter_s14_2 ALFilter_s14_2;
+
+struct ALFilter_s14_2;
+/* unbake published declaration: published_bb6055776d48a2ec54bad806 */
+struct ALFilter_s14_2 {
+    struct ALFilter_s14_2 *source;
+    ALCmdHandler handler;
+    void *setParam;
+    s16 inp;
+    s16 outp;
+    s32 type;
+};
+
+struct ALResampler_s;
+/* unbake published declaration: published_1da2f148b5ac09b65f6499fc */
+struct ALResampler_s {
+    ALFilter_s14_2 filter;
+    void *state;
+    f32 ratio;
+    s32 upitch;
+    f32 delta;
+    s32 first;
+    void *ctrlList;
+    void *ctrlTail;
+    s32 motion;
+};
+
 /* unbake published declaration: published_277471028a75ceb97cb06e23 */
 extern void *func_802B625C_de(void *arg0, s32 arg1, s32 arg2, void *arg3);
+
+/* unbake published declaration: published_2ae11f55665cfa199d084591 */
+extern void *jtbl_800C7750[];
 
 struct ALResampler_s28;
 /* unbake published declaration: published_f47fd707481b892bd83d8bd8 */
@@ -74,6 +107,10 @@ struct ALDelay {
     void *lp;
     void *rs;
 };
+
+struct ALResampler_s;
+/* unbake published declaration: published_671868ecc935b797d76bcd2a */
+typedef struct ALResampler_s ALResampler_s;
 
 struct IntegerState34;
 /* unbake published declaration: published_7a11fb6c7ed0b94df20b3647 */
@@ -123,6 +160,9 @@ struct func_802BB590_S1;
 /* unbake published declaration: published_a727e5c4ed10fa33e59cae6b */
 typedef struct func_802BB590_S1 func_802BB590_S1;
 
+/* unbake published declaration: published_b0abf2144ad37d04248a34fd */
+extern float D_800C7748_de;
+
 /* unbake published declaration: published_c598833016a54ea3716363cb */
 extern float D_800C7880_de;
 
@@ -169,5 +209,8 @@ struct ALFx {
     u8 section_count;
     void *paramHdl;
 };
+
+/* unbake published declaration: published_eefcfc2bee3410ddf64c4f2b */
+extern float D_800C7740_de;
 
 #endif

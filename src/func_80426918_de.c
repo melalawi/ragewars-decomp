@@ -1,6 +1,5 @@
 #include "span_16E000/code_804264F0.h"
 #include "types.h"
-#include "common/unused.h"
 
 #define CLAMP(value, low, high) ((value) < (low) ? (low) : (value) > (high) ? (high) : (value))
 extern struct Screen_func_80426918_de *D_800E0640_de;

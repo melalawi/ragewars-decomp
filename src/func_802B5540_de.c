@@ -1,10 +1,9 @@
 #include "common/types_1dc8418c21db.h"
+#include "common/unused.h"
 #include "span_1000/code_802B53FC.h"
 #include "types.h"
 #include "abi.h"
 #include "acmd.h"
-#include "common/unused.h"
-#include "span_C76B0/data.h"
 
 s32 func_802B5540_de(Obj_func_802B3EDC_de *arg0, s32 arg1, s32 arg2) {
     int new_var;
@@ -79,7 +78,7 @@ Acmd *func_802B5570_de(void *filter, s16 *outp, s32 outCnt, s32 sampleOffset, Ac
     return ptr;
 }
 
-extern void *jtbl_800C7750[];
+
 
 
 

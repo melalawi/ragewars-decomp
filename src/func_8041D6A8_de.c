@@ -1,6 +1,6 @@
+#include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8041BEA8.h"
 #include "types.h"
-#include "common/unused.h"
 /* Fills the player record screen for the selected record D_800FEB00[index]: shows the record's
    name in item 0x1F3 and its rank text from func_80424DE8_de in item 0x1F2, and formats into the
    screen's text buffers the record's counters at 0x70, 0x6C and 0x74, the value func_80426004_de

@@ -1,6 +1,6 @@
 #include "abi.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80225D10.h"
 #include "span_1000/code_802A0888.h"
 #include "n64sdk.h"

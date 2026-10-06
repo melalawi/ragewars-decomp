@@ -10,7 +10,7 @@ extern char *D_800DF540;
 extern void func_8029973C_de();
 extern void func_8041DB30_de(void *);
 extern void func_8041DA5C_de(s32);
-extern void func_8041D6A8_de();
+
 
 
 s32 func_8041DDF4_de(void *first, void *second, u32 event, s32 value) {

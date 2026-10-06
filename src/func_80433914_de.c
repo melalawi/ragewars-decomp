@@ -38,7 +38,7 @@ enum { PAK_SLOT_RESOURCE_688 = 688, PAK_SLOT_RESOURCE_689 = 689, PAK_SLOT_RESOUR
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 
 
-extern u8 D_80152789;
+
 extern void *D_800E1394[], *D_800DD124[];
 #endif
 extern PakMenuController *D_800E1454_de;

@@ -3,6 +3,7 @@
 #include "../types.h"
 #include "common/draw_matrix_scratch.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "gfx.h"

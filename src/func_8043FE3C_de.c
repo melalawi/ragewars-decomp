@@ -44,7 +44,7 @@ extern u8 D_801462E5;
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
-extern s32 D_80147150;
+
 extern s32 D_800DE880_de;
 extern s32 D_800DE884_de;                          /* unable to generate initializer: unknown type */
 extern s32 D_800E1E20;

@@ -279,10 +279,6 @@ struct func_80219460_S1 {
 /* unbake published declaration: published_511ac70ee31bcbdd6e3e29cd */
 extern float D_800C22B0_us;
 
-struct UnitVtx;
-/* unbake published declaration: published_5653f462969607198f7238dd */
-typedef struct UnitVtx UnitVtx;
-
 /* unbake published declaration: published_5bb2382da4f3c659a3a7275f */
 extern float D_800C22D0_de;
 
@@ -293,21 +289,6 @@ struct Cursor {
     u8 clip;
     s16 frame;
     s16 previous;
-};
-
-struct UnitVtx;
-/* unbake published declaration: published_d9cd2270ebbe1266485bd7c1 */
-struct UnitVtx {
-    s16 x;
-    s16 y;
-    s16 z;
-    u16 flag;
-    s16 s;
-    s16 t;
-    u8 r;
-    u8 g;
-    u8 b;
-    u8 a;
 };
 
 struct func_8021CBAC_S2;

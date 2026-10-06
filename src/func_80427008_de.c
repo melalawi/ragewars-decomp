@@ -11,7 +11,7 @@
 
 extern struct Screen_func_80427008_de *D_800E0640_de;
 extern struct Record_func_80427008_de D_800FEB00[];
-extern u8 D_80142215;
+
 
 extern void func_80265688_de(u8 *, s32, s32);
 extern s32 func_80265650_de(u8 *, s32);
