@@ -2625,7 +2625,6 @@ segments:
       - [0x0BEFB0, c, "func_802BE3B0_eu_x"]
       - [0xBF3F4, c, "func_802BE514_de"]
       - [0xBF984, c, "func_802BEAA4_de"]
-      - [0xBFB14, c, "func_802BEC34_de"]
       - [0xBFC8C, asm, "func_802BF08C_eu_x"]
       - [0xBFC90, asm, "func_802BEDB0_de"]
       - [0xBFE64, asm, "func_802BEF84_de"]

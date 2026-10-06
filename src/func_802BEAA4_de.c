@@ -1,8 +1,11 @@
 #include "span_1000/code_802BE0D0.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 #include "common/unused.h"
-#include "span_1000/code_802BE0D0.h"
 #include "types.h"
+#include "acmd.h"
+#include "abi.h"
+#include "audio_callbacks.h"
+
+/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* alLoadParam, drafted from ultralib src/audio/load.c: set a load filter's wave table, choosing the
    pull handler and loop points by the table's type, or reset its decode state. This cartridge's
    version has no table length rounding and a third wave type (2) handled by func_802C3988; the
@@ -99,4 +102,48 @@ s32 func_802BEAA4_de(void *filter, s32 paramID, void *param)
         default:
             break;
     }
+}
+
+/* _decodeChunk, libultra's ADPCM chunk decoder called by alAdpcmPull (func_802C31C0): DMA the next
+   ADPCM bytes into DMEM aligned down to 8 bytes, set the loop state when looping, and queue the ADPCM
+   decode of tsam samples. */
+
+
+
+#define K0_TO_PHYS(x) ((u32)(x) & 0x1FFFFFFF)
+#define A_LOOP 0x02
+
+
+
+
+
+
+
+
+
+
+
+
+Acmd *func_802BEC34_de(Acmd *ptr, ALLoadFilter48_2 *f, s32 tsam, s32 nbytes, s16 outp, s16 inp, u32 flags)
+{
+    s32 dramAlign, dramLoc;
+
+    if (nbytes > 0) {
+        dramLoc = (f->dma)(f->memin, nbytes, f->dmaState);
+        dramAlign = dramLoc & 0x7;
+        nbytes += dramAlign;
+        aSetBuffer(ptr++, 0, inp, 0, nbytes + 8 - (nbytes & 0x7));
+        aLoadBuffer(ptr++, dramLoc - dramAlign);
+    } else
+        dramAlign = 0;
+
+    if (flags & A_LOOP) {
+        aSetLoop(ptr++, K0_TO_PHYS(f->lstate));
+    }
+
+    aSetBuffer(ptr++, 0, inp + dramAlign, outp, tsam << 1);
+    aADPCMdec(ptr++, flags, K0_TO_PHYS(f->state));
+    f->first = 0;
+
+    return ptr;
 }
