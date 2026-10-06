@@ -4880,7 +4880,7 @@ segments:
       - [0x111D9C, c, "func_80421854_de"]
       - [0x111DCC, c, "func_80421884_de"]
       - [0x111E70, asm, "func_80421E70_eu_x"]
-      - [0x111F00, asm, "func_80421F08_eu"]
+      - [0x111F00, c, "func_80421F08_eu"]
       - [0x111F58, c, "func_80421A58_de"]
       - [0x111FE8, data, "func_80421AE8_de_padding_111FE8"]
       - [0x111FF0, asm, "func_80421AE8_de"]
