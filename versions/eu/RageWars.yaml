@@ -5327,7 +5327,7 @@ segments:
       - [0x1BBFD0, c, "func_80444E30_de"]
       - [0x1BC01C, c, "func_80444E7C_de"]
       - [0x1BC05C, c, "func_8044605C_eu"]
-      - [0x1BC0B4, asm, "func_804460B4_eu"]
+      - [0x1BC0B4, c, "func_804460B4_eu"]
       - [0x1BC0E0, asm, "func_804460E0_eu"]
       - [0x1BC10C, asm, "func_8044610C_eu"]
       - [0x1BC138, asm, "func_80446138_eu"]
