@@ -1285,7 +1285,7 @@ segment = "span_16E000"
 evidence = "proven"
 members = ["func_8041BE28_de", "func_8041BE90_de", "func_8041C164_de", "func_8041C19C_de", "func_8041C244_de", "func_8041C2AC_de", "func_8041C3DC_de", "func_8041C40C_de", "func_8041C46C_de", "func_8041C474_de", "func_8041C494_de", "func_8041C574_de", "func_8041C610_de", "func_8041C7F4_de", "func_8041CAD8_de", "func_8041CDB0_de", "func_8041CEB0_us_rev1", "func_8041D134_de", "func_8041D4E0_de", "func_8041D6A8_de", "func_8041D960_de", "func_8041DA5C_de", "func_8041DB30_de", "func_8041DB9C_de", "func_8041DBCC_de", "func_8041DCC0_de", "func_8041DDF4_de", "func_8041DE5C_de"]
 only = { "func_8041CEB0_us_rev1" = ["us-rev1"] }
-split = ["func_8041C19C_de", "func_8041C244_de", "func_8041C2AC_de", "func_8041C3DC_de", "func_8041C40C_de", "func_8041C46C_de", "func_8041C474_de", "func_8041DA5C_de", "func_8041DB30_de", "func_8041DB9C_de", "func_8041DBCC_de", "func_8041DE5C_de"]
+split = ["func_8041C19C_de", "func_8041C244_de", "func_8041C2AC_de", "func_8041C3DC_de", "func_8041C40C_de", "func_8041C46C_de", "func_8041C474_de", "func_8041DA5C_de", "func_8041DB30_de", "func_8041DB9C_de", "func_8041DBCC_de", "func_8041DE5C_de", "func_8041D960_de"]
 signals = ["callee", "cap", "version"]
 
 [[group]]
