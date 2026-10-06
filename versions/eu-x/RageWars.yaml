@@ -1541,7 +1541,7 @@ segments:
       - [0x73A9C, c, "func_80272E3C_de"]
       - [0x73C04, c, "func_80272FA4_de"]
       - [0x73C1C, c, "func_80272FBC_de"]
-      - [0x74158, asm, "func_802734F8_de"]
+      - [0x74158, c, "func_802734F8_de"]
       - [0x74208, c, "func_802735A8_de"]
       - [0x742A8, c, "func_80273648_de"]
       - [0x74334, c, "func_802736D4_de"]
