@@ -330,7 +330,7 @@ de.S.00027860 := 161888 4652
 de.U.func_80227E8C_de := 0x80227E8C:0x28A8C:0x1E4
 de.S.00028C70 := 167024 384
 de.U.func_802281F0_de := 0x802281F0:0x28DF0:0xFC
-de.S.00028EEC := 167660 204
+de.U.func_802282EC_de := 0x802282EC:0x28EEC:0xCC
 de.U.func_802283B8_de := 0x802283B8:0x28FB8:0xA0C
 de.S.000299C4 := 170436 500
 de.U.func_80228FB8_de := 0x80228FB8:0x29BB8:0x85C
@@ -3673,7 +3673,7 @@ de.PIECES := \
   build/de/units/func_80227E8C_de.bin \
   build/de/slices/00028C70.bin \
   build/de/units/func_802281F0_de.bin \
-  build/de/slices/00028EEC.bin \
+  build/de/units/func_802282EC_de.bin \
   build/de/units/func_802283B8_de.bin \
   build/de/slices/000299C4.bin \
   build/de/units/func_80228FB8_de.bin \
