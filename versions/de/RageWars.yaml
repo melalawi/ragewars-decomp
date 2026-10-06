@@ -5009,7 +5009,7 @@ segments:
       - [0x18C304, data, "func_80426304_de_padding_18C304"]
       - [0x18C310, asm, "func_80426310_de"]
       - [0x18C788, c, "func_80426788_de"]
-      - [0x18C918, asm, "func_80426918_de"]
+      - [0x18C918, c, "func_80426918_de"]
       - [0x18CCE4, c, "func_80426CE4_de"]
       - [0x18D008, c, "func_80427008_de"]
       - [0x18D250, asm, "func_80427250_de"]

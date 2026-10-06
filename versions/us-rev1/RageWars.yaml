@@ -5086,7 +5086,7 @@ segments:
       - [0x1944E4, data, "func_804264E4_us_rev1_padding_1944E4"]
       - [0x1944F0, asm, "func_804264F0_us_rev1"]
       - [0x194968, c, "func_80426788_de"]
-      - [0x194AF8, asm, "func_80426918_de"]
+      - [0x194AF8, c, "func_80426918_de"]
       - [0x194EC4, c, "func_80426CE4_de"]
       - [0x1951E8, c, "func_80427008_de"]
       - [0x195430, asm, "func_80427250_de"]

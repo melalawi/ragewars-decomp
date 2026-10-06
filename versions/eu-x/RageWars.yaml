@@ -4992,7 +4992,7 @@ segments:
       - [0x116F98, data, "func_80426F98_eu_x_padding_116F98"]
       - [0x116FA0, asm, "func_80426FA0_eu_x"]
       - [0x117418, c, "func_80426788_de"]
-      - [0x1175A8, asm, "func_80426918_de"]
+      - [0x1175A8, c, "func_80426918_de"]
       - [0x117974, c, "func_80426CE4_de"]
       - [0x117C98, c, "func_80427008_de"]
       - [0x117EE0, asm, "func_80427250_de"]
