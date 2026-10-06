@@ -4693,7 +4693,7 @@ segments:
       - [0x1921CC, c, "func_8041BD8C_de"]
       - [0x192248, c, "func_8041BE08_de"]
       - [0x192268, c, "func_8041BE28_de"]
-      - [0x1922D0, asm, "func_8041BE90_de"]
+      - [0x1922D0, c, "func_8041BE90_de"]
       - [0x1925B4, c, "func_8041C164_de"]
       - [0x1925EC, c, "func_8041C19C_de"]
       - [0x192694, c, "func_8041C244_de"]

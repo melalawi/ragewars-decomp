@@ -2819,17 +2819,17 @@
       "minutes": 0.02
     },
     "func_8041BE90_de": {
-      "attempts": 3,
+      "attempts": 4,
       "best": {
-        "de": 98.9,
-        "eu": 97.84,
-        "eu-x": 97.84,
-        "us": 98.9,
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
         "us-rev1": 100.0
       },
       "bytes": 724,
-      "exact": false,
-      "minutes": 15.21
+      "exact": true,
+      "minutes": 19.78
     },
     "func_8041D134_de": {
       "attempts": 1,

@@ -4835,7 +4835,7 @@ segments:
       - [0x181D8C, c, "func_8041BD8C_de"]
       - [0x181E08, c, "func_8041BE08_de"]
       - [0x181E28, c, "func_8041BE28_de"]
-      - [0x181E90, asm, "func_8041BE90_de"]
+      - [0x181E90, c, "func_8041BE90_de"]
       - [0x182164, c, "func_8041C164_de"]
       - [0x18219C, c, "func_8041C19C_de"]
       - [0x182244, c, "func_8041C244_de"]
