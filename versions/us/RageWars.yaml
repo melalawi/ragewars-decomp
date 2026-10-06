@@ -4972,7 +4972,7 @@ segments:
       - [0x19312C, data, "rodata/unresolved/8042F12C"]
       - [0x193988, c, "func_8042F7A8_de"]
       - [0x193AFC, asm, "func_8042F91C_de"]
-      - [0x193D28, asm, "func_8042FB48_de"]
+      - [0x193D28, c, "func_8042FB48_de"]
       - [0x194120, c, "func_8042FF40_de"]
       - [0x194208, c, "func_80430028_de"]
       - [0x1942F8, asm, "func_80430118_de"]

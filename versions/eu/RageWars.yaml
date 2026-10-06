@@ -4986,7 +4986,7 @@ segments:
       - [0x1A5BEC, asm, "func_8042FBEC_eu"]
       - [0x1A6448, c, "func_8042F7A8_de"]
       - [0x1A65BC, asm, "func_8042F91C_de"]
-      - [0x1A67E8, asm, "func_8042FB48_de"]
+      - [0x1A67E8, c, "func_8042FB48_de"]
       - [0x1A6BE0, c, "func_8042FF40_de"]
       - [0x1A6CC8, c, "func_80430028_de"]
       - [0x1A6DB8, asm, "func_80430118_de"]
