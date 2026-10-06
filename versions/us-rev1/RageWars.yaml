@@ -2518,7 +2518,7 @@ segments:
       - [0xBF728, asm, "func_802B9D18_eu_x"]
       - [0xBF730, c, "func_802B9A40_de"]
       - [0xBF804, asm, "func_802B9DF4_eu_x"]
-      - [0xBF810, asm, "func_802B9B20_de"]
+      - [0xBF810, c, "func_802B9B20_de"]
       - [0xBF8A4, asm, "func_802B9E94_eu_x"]
       - [0xBF8B0, c, "func_802B9BC0_de"]
       - [0xBF904, c, "func_802B9C14_de"]
