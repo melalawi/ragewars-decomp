@@ -1,13 +1,17 @@
+#include "abi.h"
 #include "common/types_06e4f7ef1f9e.h"
-#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80217388.h"
+#include "common/reset_storage.h"
 #include "types.h"
 #include "n64sdk.h"
 #include "gbi.h"
 
-/* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 
-extern f32 D_800C9138_de;
+extern float D_800C9138_de;
+
+
+
+
 
 
 
@@ -15,29 +19,29 @@ extern f32 D_800C9138_de;
 
 
 /** Reset the object and initialize its thirty-six descending-offset records. */
-void func_8021836C_de(volatile char *arg0) {
+void func_8021836C_de(char *arg0) {
     s32 i;
     s32 minus_one = -1;
     f32 scale = D_800C224C_de;
     f32 value = ((func_802077F4_S2 *)(&D_800C9138_de))->unk4;
 
-    ((func_8021836C_S2 *)(arg0))->unk0 = 0;
-    ((func_8021836C_S2 *)(arg0))->unk4 = 0;
-    ((func_8021836C_S2 *)(arg0))->unk8 = 0;
-    ((func_8021836C_S2 *)(arg0))->unkC = 0;
-    ((func_8021836C_S2 *)(arg0))->unk14 = 0;
-    ((func_8021836C_S2 *)(arg0))->unk37C = minus_one;
-    ((func_8021836C_S2 *)(arg0))->unk380 = 1;
-    ((func_8021836C_S2 *)(arg0))->unk388 = minus_one;
-    ((func_8021836C_S2 *)(arg0))->unk18 = 0;
-    ((func_8021836C_S2 *)(arg0))->unk38C = 0;
-    ((func_8021836C_S2 *)(arg0))->unk390 = minus_one;
+    ((ResetThirtySixStorage *)(arg0))->unk0 = 0;
+    ((ResetThirtySixStorage *)(arg0))->unk4 = 0;
+    ((ResetThirtySixStorage *)(arg0))->unk8 = 0;
+    ((ResetThirtySixStorage *)(arg0))->unkC = 0;
+    ((ResetThirtySixStorage *)(arg0))->unk14 = 0;
+    ((ResetThirtySixStorage *)(arg0))->unk37C = minus_one;
+    ((ResetThirtySixStorage *)(arg0))->unk380 = 1;
+    ((ResetThirtySixStorage *)(arg0))->unk388 = minus_one;
+    ((ResetThirtySixStorage *)(arg0))->unk18 = 0;
+    ((ResetThirtySixStorage *)(arg0))->unk38C = 0;
+    ((ResetThirtySixStorage *)(arg0))->unk390 = minus_one;
 
-    for (i = 0; i < 0x24; i++, arg0 += 0x18) {
+    for (i = 0; i < 0x24; i++, arg0 = (char *)((u32)arg0 + 0x18)) {
         f32 scaled = i * scale;
-        ((func_8021836C_S2 *)(arg0))->unk2C = 0;
-        ((func_8021836C_S2 *)(arg0))->unk30 = value;
-        ((func_8021836C_S2 *)(arg0))->unk28 = -scaled;
+        ((ResetThirtySixStorage *)(arg0))->unk2C = 0;
+        ((ResetThirtySixStorage *)(arg0))->unk30 = value;
+        ((ResetThirtySixStorage *)(arg0))->unk28 = -scaled;
     }
 }
 
@@ -57,7 +61,7 @@ void func_802183E8_de(s32 arg0, s32 arg1, s32 arg2) {
 void func_80218464_de(void) {
 }
 
-extern f32 D_800CD738;
+extern float D_800CD738;
 
 
 
@@ -69,22 +73,22 @@ extern f32 D_800CD738;
 s32 func_8021846C_de(void *arg0, void *arg1) {
     f32 temp_f1;
 
-    temp_f1 = ((func_8021846C_S1 *)(arg0))->unk4;
+    temp_f1 = ((ResetTimerStorage *)(arg0))->unk4;
     if (temp_f1 > 0.0f) {
-        ((func_8021846C_S1 *)(arg0))->unk4 = temp_f1 - D_800CD738;
+        ((ResetTimerStorage *)(arg0))->unk4 = temp_f1 - D_800CD738;
         return 0;
     }
-    if (((func_8021846C_S3 *)((((func_8021846C_S2 *)(arg1))->unk698)))->unkB0 & 0x8000) {
+    if (((ResetFlagsStorage *)((((ResetOwnerStorage *)(arg1))->unk698)))->unkB0 & 0x8000) {
         return 0;
     }
-    ((func_8021846C_S1 *)(arg0))->unk37C = -1;
+    ((ResetTimerStorage *)(arg0))->unk37C = -1;
     return 1;
 }
 
 extern void func_80274020_de(f32 *arg0);
 
 
-extern f32 D_800CD738;
+extern float D_800CD738;
 
 f32 func_802184C0_de(f32 arg0, f32 arg1, s32 arg2, f32 arg3) {
     f32 f0;

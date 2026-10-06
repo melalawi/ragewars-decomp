@@ -218,7 +218,7 @@ struct func_80218E98_S3;
 typedef struct func_80218E98_S3 func_80218E98_S3;
 
 /* unbake published declaration: published_81c9ee01505fc80c3c67823a */
-extern void func_8021836C_de(volatile char *arg0);
+extern void func_8021836C_de( char *arg0);
 
 struct func_8021846C_S2;
 /* unbake published declaration: published_94cf1839f64f71dac21491a2 */
