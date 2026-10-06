@@ -951,7 +951,7 @@ segments:
       - [0x4ADB0, c, "func_8024A1D0_de"]
       - [0x4AF90, c, "func_8024A3B0_de"]
       - [0x4B188, c, "func_8024A5A8_de"]
-      - [0x4B380, asm, "func_8024A7A0_de"]
+      - [0x4B380, c, "func_8024A7A0_de"]
       - [0x4B5F8, c, "func_8024AA18_de"]
       - [0x4B9B0, asm, "func_8024ADD0_de"]
       - [0x4BC4C, c, "func_8024B06C_de"]
