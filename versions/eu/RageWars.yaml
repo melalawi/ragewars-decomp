@@ -1795,7 +1795,6 @@ segments:
       - [0x8FAB0, asm, "func_8028EDA0_de"]
       - [0x8FF88, asm, "func_8028F278_de"]
       - [0x90254, c, "func_8028F544_de"]
-      - [0x90464, c, "func_8028F754_de"]
       - [0x90574, c, "func_8028F864_de"]
       - [0x905CC, c, "func_8028F8BC_de"]
       - [0x9065C, c, "func_8028F94C_de"]
