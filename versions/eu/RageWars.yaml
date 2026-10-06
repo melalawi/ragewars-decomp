@@ -2529,7 +2529,7 @@ segments:
       - [0xBBC60, c, "func_802BADC0_de"]
       - [0xBBCDC, asm, "func_802BB0DC_eu"]
       - [0xBBCE0, c, "func_802BAE40_de"]
-      - [0xBBF00, asm, "func_802BB060_de"]
+      - [0xBBF00, c, "func_802BB060_de"]
       - [0xBBF90, asm, "func_802BB0F0_de"]
       - [0xBBFFC, asm, "func_802BB3FC_eu"]
       - [0xBC000, c, "func_802BB160_de"]

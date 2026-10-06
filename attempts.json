@@ -2734,17 +2734,17 @@
       "minutes": 0.03
     },
     "func_802AF2E0_de": {
-      "attempts": 4,
+      "attempts": 5,
       "best": {
-        "de": 99.09,
-        "eu": 99.09,
-        "eu-x": 99.09,
-        "us": 99.09,
-        "us-rev1": 99.09
+        "de": 99.45,
+        "eu": 99.45,
+        "eu-x": 99.45,
+        "us": 99.45,
+        "us-rev1": 99.45
       },
       "bytes": 2188,
       "exact": false,
-      "minutes": 16.69
+      "minutes": 79.55
     },
     "func_802B2780_de": {
       "attempts": 1,
@@ -3074,17 +3074,17 @@
       "minutes": 0.02
     },
     "func_802BB060_de": {
-      "attempts": 1,
+      "attempts": 3,
       "best": {
-        "de": 88.89,
-        "eu": 94.44,
-        "eu-x": 94.44,
-        "us": 88.89,
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
         "us-rev1": 100.0
       },
       "bytes": 144,
-      "exact": false,
-      "minutes": 0.02
+      "exact": true,
+      "minutes": 26.43
     },
     "func_802BB0F0_de": {
       "attempts": 1,
@@ -3315,6 +3315,19 @@
       "bytes": 252,
       "exact": false,
       "minutes": 0.02
+    },
+    "func_8040B444_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 95.35,
+        "eu-x": 95.35,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 156,
+      "exact": false,
+      "minutes": 0.04
     },
     "func_8040C638_us": {
       "attempts": 15,
@@ -3943,6 +3956,32 @@
       "bytes": 188,
       "exact": true,
       "minutes": 0.03
+    },
+    "func_80443998_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 60.53,
+        "eu-x": 57.89,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 140,
+      "exact": false,
+      "minutes": 0.02
+    },
+    "func_80443AB0_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 60.53,
+        "eu-x": 57.89,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 140,
+      "exact": false,
+      "minutes": 0.02
     },
     "func_80444148_de": {
       "attempts": 1,
