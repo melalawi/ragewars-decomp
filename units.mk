@@ -2074,6 +2074,7 @@ build/%/src/func_8040BBB0_de.i build/%/src/func_8040BBB0_de.key build/%/units/fu
 build/%/src/func_8040BBC0_us.i build/%/src/func_8040BBC0_us.key build/%/units/func_8040BBC0_us.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8040C09C_de.i build/%/src/func_8040C09C_de.key build/%/units/func_8040C09C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8040C5C8_de.i build/%/src/func_8040C5C8_de.key build/%/units/func_8040C5C8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
+build/%/src/func_8040C648_us.i build/%/src/func_8040C648_us.key build/%/units/func_8040C648_us.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8040C948_de.i build/%/src/func_8040C948_de.key build/%/units/func_8040C948_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8040C950_de.i build/%/src/func_8040C950_de.key build/%/units/func_8040C950_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8040CAB0_de.i build/%/src/func_8040CAB0_de.key build/%/units/func_8040CAB0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)

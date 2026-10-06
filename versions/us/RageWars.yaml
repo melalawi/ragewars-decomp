@@ -4412,7 +4412,7 @@ segments:
       - [0x16FE38, asm, "func_8040BDB8_de"]
       - [0x17011C, c, "func_8040C09C_de"]
       - [0x170638, asm, "func_8040C638_us"]
-      - [0x170648, asm, "func_8040C648_us"]
+      - [0x170648, c, "func_8040C648_us"]
       - [0x17077C, data, "func_8040C77C_us_padding_17077C"]
       - [0x170780, asm, "func_8040C780_us"]
       - [0x1709D0, c, "func_8040C950_de"]
