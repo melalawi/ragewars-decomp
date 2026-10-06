@@ -1657,8 +1657,6 @@ segments:
       - [0x83644, asm, "func_80282A44_de"]
       - [0x8388C, c, "func_80282C8C_de"]
       - [0x83CB8, c, "func_802830B8_de"]
-      - [0x83CCC, c, "func_802830CC_de"]
-      - [0x83E28, c, "func_80283228_de"]
       - [0x83E78, c, "func_80283278_de"]
       - [0x83FD0, c, "func_802833D0_de"]
       - [0x83FDC, c, "func_802833DC_de"]
