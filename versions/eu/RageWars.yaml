@@ -1419,7 +1419,7 @@ segments:
       - [0x65D70, asm, "func_802651B0_de"]
       - [0x65F04, asm, "func_80265304_eu"]
       - [0x65F10, c, "func_80265350_de"]
-      - [0x6649C, asm, "func_802658DC_de"]
+      - [0x6649C, c, "func_802658DC_de"]
       - [0x664A4, c, "func_802658E4_de"]
       - [0x664C0, c, "func_80265900_de"]
       - [0x664DC, c, "func_8026591C_de"]

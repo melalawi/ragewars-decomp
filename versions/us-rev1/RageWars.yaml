@@ -1422,7 +1422,7 @@ segments:
       - [0x65DD0, asm, "func_802651B0_de"]
       - [0x65F64, asm, "func_80265334_eu_x"]
       - [0x65F70, c, "func_80265350_de"]
-      - [0x664FC, asm, "func_802658DC_de"]
+      - [0x664FC, c, "func_802658DC_de"]
       - [0x66504, c, "func_802658E4_de"]
       - [0x66520, c, "func_80265900_de"]
       - [0x6653C, c, "func_8026591C_de"]

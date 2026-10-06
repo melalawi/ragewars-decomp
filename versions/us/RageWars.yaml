@@ -1408,7 +1408,7 @@ segments:
       - [0x65D50, asm, "func_802651B0_de"]
       - [0x65EE4, data, "rodata/unresolved/802652E4"]
       - [0x65EF0, c, "func_80265350_de"]
-      - [0x6647C, asm, "func_802658DC_de"]
+      - [0x6647C, c, "func_802658DC_de"]
       - [0x66484, c, "func_802658E4_de"]
       - [0x664A0, c, "func_80265900_de"]
       - [0x664BC, c, "func_8026591C_de"]
