@@ -2416,7 +2416,7 @@ segments:
       - [0xB7354, asm, "func_802B6754_eu"]
       - [0xB7360, c, "func_802B64C0_de"]
       - [0xB73F4, asm, "func_802B67F4_eu"]
-      - [0xB7400, asm, "func_802B6560_de"]
+      - [0xB7400, c, "func_802B6560_de"]
       - [0xB7504, data, "func_802B6664_de_padding_B7504"]
       - [0x0B7510, asm, "func_802B6670_de"]
       - [0xB77A0, asm, "func_802B6900_de"]

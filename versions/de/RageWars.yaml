@@ -2406,7 +2406,7 @@ segments:
       - [0xB70B4, asm, "func_802B64B4_de"]
       - [0xB70C0, c, "func_802B64C0_de"]
       - [0xB7154, asm, "func_802B6554_de"]
-      - [0xB7160, asm, "func_802B6560_de"]
+      - [0xB7160, c, "func_802B6560_de"]
       - [0xB7264, data, "func_802B6664_de_padding_B7264"]
       - [0x0B7270, asm, "func_802B6670_de"]
       - [0xB7500, asm, "func_802B6900_de"]
