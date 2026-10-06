@@ -1473,7 +1473,7 @@ segments:
       - [0x6B90C, asm, "func_8026AD8C_de"]
       - [0x6C084, c, "func_8026B504_de"]
       - [0x6C220, asm, "func_8026B6A0_de"]
-      - [0x6C56C, asm, "func_8026B9EC_de"]
+      - [0x6C56C, c, "func_8026B9EC_de"]
       - [0x6C7E0, c, "func_8026BC60_de"]
       - [0x6CBA0, c, "func_8026C020_de"]
       - [0x6D004, asm, "func_8026C484_de"]
