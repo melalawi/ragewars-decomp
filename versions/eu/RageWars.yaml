@@ -5433,7 +5433,7 @@ segments:
       - [0x1C4938, c, "func_8044D668_de"]
       - [0x1C4A64, asm, "func_8044D794_de"]
       - [0x1C4AD4, c, "func_8044D804_de"]
-      - [0x1C4C04, asm, "func_8044D934_de"]
+      - [0x1C4C04, c, "func_8044D934_de"]
       - [0x1C4D24, asm, "func_8044DA54_de"]
       - [0x1C4E40, asm, "func_8044DB70_de"]
       - [0x1C4F2C, asm, "func_8044EF2C_eu"]
