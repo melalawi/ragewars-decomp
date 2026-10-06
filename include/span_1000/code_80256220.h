@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80256220_H
 #define UNBAKE_SPAN_1000_CODE_80256220_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Chunk_func_80256454_de;
 /* unbake published declaration: published_07b27a6457d5aa8896bf9e24 */
 typedef struct Chunk_func_80256454_de Chunk_func_80256454_de;

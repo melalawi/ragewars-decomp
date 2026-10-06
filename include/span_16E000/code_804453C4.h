@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_804453C4_H
 #define UNBAKE_SPAN_16E000_CODE_804453C4_H
-#include "common/types_8fd754e1e915.h"
 #include "../types.h"
+#include "common/types_8fd754e1e915.h"
 /* unbake published declaration: published_0055ec91f51153da2afe0870 */
 extern float D_800DE7C0;
 

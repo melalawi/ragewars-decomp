@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802B7488_H
 #define UNBAKE_SPAN_1000_CODE_802B7488_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct ContReadFormat;
 /* unbake published declaration: published_02145343262f53a6ab912fb4 */
 typedef struct ContReadFormat ContReadFormat;

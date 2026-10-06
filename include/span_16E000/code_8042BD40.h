@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8042BD40_H
 #define UNBAKE_SPAN_16E000_CODE_8042BD40_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Settings_func_8042D060_de;
 /* unbake published declaration: published_3594388dc02ba545d62828cf */
 struct Settings_func_8042D060_de {

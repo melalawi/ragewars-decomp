@@ -1,7 +1,7 @@
 #ifndef UNBAKE_COMMON_TYPES_06E4F7EF1F9E_H
 #define UNBAKE_COMMON_TYPES_06E4F7EF1F9E_H
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
 /* unbake declaration evidence: evidence_15634c5f0d54764e20fb0b72 */
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 #if defined(VERSION_EU_X)

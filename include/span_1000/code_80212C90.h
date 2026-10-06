@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80212C90_H
 #define UNBAKE_SPAN_1000_CODE_80212C90_H
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
 /* unbake published declaration: published_0c842f1f491f68f4f7a160a3 */
 extern float D_800C2100_de;
 

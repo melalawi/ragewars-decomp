@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8028DF6C_H
 #define UNBAKE_SPAN_1000_CODE_8028DF6C_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 struct View_func_8028FA60_de;
 /* unbake published declaration: published_026e731961a094583ee7a0c5 */
 typedef struct View_func_8028FA60_de View_func_8028FA60_de;

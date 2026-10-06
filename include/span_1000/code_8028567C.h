@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8028567C_H
 #define UNBAKE_SPAN_1000_CODE_8028567C_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_1ba020bada349a96bccff7f8 */
 extern float D_800C4EC8_de;
 

@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80231F5C_H
 #define UNBAKE_SPAN_1000_CODE_80231F5C_H
+#include "../types.h"
 #include "common/draft_fields_func_80232E64_de.h"
 #include "common/types_8a8189af7b05.h"
-#include "../types.h"
 struct Player_func_802327F4_de;
 /* unbake published declaration: published_06ea17d3b76620f434127d12 */
 typedef struct Player_func_802327F4_de Player_func_802327F4_de;

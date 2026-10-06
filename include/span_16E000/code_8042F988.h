@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8042F988_H
 #define UNBAKE_SPAN_16E000_CODE_8042F988_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_08c282c47e39cff43d22f22a */
 extern int func_80434750_de(void);
 

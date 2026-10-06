@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_80400000_H
 #define UNBAKE_SPAN_16E000_CODE_80400000_H
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
 struct Item_func_80403458_de;
 /* unbake published declaration: published_05bb5eaae53a8423a02eb7ee */
 struct Item_func_80403458_de {

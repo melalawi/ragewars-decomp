@@ -1367,3 +1367,11 @@ cflags = [ "-c", "-G0", "-non_shared", "-mips2", "-O2",]
 
 [compilers."ido-7.1"]
 cflags = [ "-c", "-G0", "-non_shared", "-mips2", "-O2",]
+
+[units.func_80218E98_de]
+compiler = "gcc-2.8.1-sn64"
+flags = [ "-fno-strength-reduce",]
+
+[units.func_8021836C_de]
+compiler = "gcc-2.8.1-sn64"
+flags = [ "-fno-strength-reduce",]

@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80277444_H
 #define UNBAKE_SPAN_1000_CODE_80277444_H
-#include "common/types_06e4f7ef1f9e.h"
 #include "../types.h"
+#include "common/types_06e4f7ef1f9e.h"
 /* unbake published declaration: published_077af1a9cbac20a8f4d5880a */
 extern void func_80279158_de(void *arg0);
 

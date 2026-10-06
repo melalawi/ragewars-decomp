@@ -1,9 +1,9 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_804264F0_H
 #define UNBAKE_SPAN_16E000_CODE_804264F0_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
-#include "gfx.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
+#include "gfx.h"
 struct State_func_80428214_de;
 /* unbake published declaration: published_072e26e1f20f7d5e60584028 */
 typedef struct State_func_80428214_de State_func_80428214_de;

@@ -1,7 +1,7 @@
 #ifndef UNBAKE_COMMON_TYPES_8FD754E1E915_H
 #define UNBAKE_COMMON_TYPES_8FD754E1E915_H
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
 struct Player;
 /* unbake published declaration: published_038392ee5aca3bbae9c77df5 */
 struct Player {

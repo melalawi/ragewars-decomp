@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802BBC68_H
 #define UNBAKE_SPAN_1000_CODE_802BBC68_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Func802C1F10Node;
 /* unbake published declaration: published_1d71ee35442764f2b1ed9c8d */
 struct Func802C1F10Node {

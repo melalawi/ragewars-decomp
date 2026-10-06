@@ -1,9 +1,9 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8041F1FC_H
 #define UNBAKE_SPAN_16E000_CODE_8041F1FC_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
-#include "gfx.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
+#include "gfx.h"
 struct Row_func_80420850_de;
 /* unbake published declaration: published_036993707647b67829999063 */
 typedef struct Row_func_80420850_de Row_func_80420850_de;

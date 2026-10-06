@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8041A4B0_H
 #define UNBAKE_SPAN_16E000_CODE_8041A4B0_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct func_8041AA30_S1;
 /* unbake published declaration: published_0cadf267a46757814d80c32b */
 struct func_8041AA30_S1 {

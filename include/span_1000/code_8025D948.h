@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8025D948_H
 #define UNBAKE_SPAN_1000_CODE_8025D948_H
-#include "common/types_06e4f7ef1f9e.h"
 #include "../types.h"
+#include "common/types_06e4f7ef1f9e.h"
 struct State_func_8025DACC_de;
 /* unbake published declaration: published_05bfa63838bbdd70f812d25d */
 struct State_func_8025DACC_de {

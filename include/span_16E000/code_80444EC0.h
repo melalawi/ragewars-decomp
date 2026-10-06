@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_80444EC0_H
 #define UNBAKE_SPAN_16E000_CODE_80444EC0_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_25168ac75dfe83a275e1a77c */
 extern void func_80444E70_de(s16 *record);
 

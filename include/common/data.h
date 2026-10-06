@@ -1,7 +1,7 @@
 #ifndef UNBAKE_COMMON_DATA_H
 #define UNBAKE_COMMON_DATA_H
-#include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 extern struct Quad_func_802A1BE0_de D_80000000[];
 extern int D_80000004;
 extern int D_80000008;

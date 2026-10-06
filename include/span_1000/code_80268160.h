@@ -1,9 +1,9 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80268160_H
 #define UNBAKE_SPAN_1000_CODE_80268160_H
+#include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
 #include "gfx.h"
-#include "../types.h"
 struct RangeNode;
 /* unbake published declaration: published_0e61783fc3cf6252fb94c2ca */
 typedef struct RangeNode RangeNode;

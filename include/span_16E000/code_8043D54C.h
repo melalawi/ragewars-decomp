@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8043D54C_H
 #define UNBAKE_SPAN_16E000_CODE_8043D54C_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Shared_func_8043DEDC_S2;
 /* unbake published declaration: published_46502b30199cfe2182fc51a6 */
 struct Shared_func_8043DEDC_S2 {

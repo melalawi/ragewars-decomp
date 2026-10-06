@@ -1,9 +1,10 @@
 #ifndef UNBAKE_COMMON_UNUSED_H
 #define UNBAKE_COMMON_UNUSED_H
 #include "audio_callbacks.h"
+#include "../types.h"
+#include "common/types_8a8189af7b05.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
 #include "gfx.h"
 #include "span_1000/code_802192C0.h"
@@ -49,7 +50,6 @@
 #include "span_16E000/code_8043962C.h"
 #include "span_16E000/code_8043E9A8.h"
 #include "span_16E000/code_8044ACCC.h"
-#include "../types.h"
 /* unbake published declaration: published_000db7c594272934c5863b86 */
 extern char D_800C93D8_de;
 

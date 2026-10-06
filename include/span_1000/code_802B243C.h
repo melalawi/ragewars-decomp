@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802B243C_H
 #define UNBAKE_SPAN_1000_CODE_802B243C_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct ALEndEvent;
 /* unbake published declaration: published_1d14c643be691ee3464d4c45 */
 struct ALEndEvent {

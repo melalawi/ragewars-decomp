@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8022BA90_H
 #define UNBAKE_SPAN_1000_CODE_8022BA90_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_01b6a34e751592e419a1fc4e */
 extern void *func_8022C454_de(void *arg0);
 

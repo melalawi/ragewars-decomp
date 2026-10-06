@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_80405DC0_H
 #define UNBAKE_SPAN_16E000_CODE_80405DC0_H
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
 /* unbake published declaration: published_037bb42f8d2e711c61deee17 */
 extern s32 D_80146CD4_de;
 

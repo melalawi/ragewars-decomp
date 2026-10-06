@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8026AC38_H
 #define UNBAKE_SPAN_1000_CODE_8026AC38_H
+#include "../types.h"
 #include "common/draft_fields_func_8026DC24_de.h"
 #include "gfx.h"
-#include "../types.h"
 struct ObjectState18;
 /* unbake published declaration: published_05556071161c88ddf76df2f8 */
 typedef struct ObjectState18 ObjectState18;

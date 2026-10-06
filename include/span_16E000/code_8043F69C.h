@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8043F69C_H
 #define UNBAKE_SPAN_16E000_CODE_8043F69C_H
+#include "../types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
-#include "../types.h"
 struct Node_func_804428F8_de;
 /* unbake published declaration: published_043b2f8a47ccf457a567fdbd */
 typedef struct Node_func_804428F8_de Node_func_804428F8_de;

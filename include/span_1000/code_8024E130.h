@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8024E130_H
 #define UNBAKE_SPAN_1000_CODE_8024E130_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct func_8024E560_S2;
 /* unbake published declaration: published_027de9f8cf91f0de84a7332f */
 struct func_8024E560_S2 {

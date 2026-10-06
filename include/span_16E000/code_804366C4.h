@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_804366C4_H
 #define UNBAKE_SPAN_16E000_CODE_804366C4_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Frame_func_804217D4_de;
 struct Menu_func_804241BC_de;
 struct State_func_80437444_de;

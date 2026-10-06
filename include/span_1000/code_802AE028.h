@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802AE028_H
 #define UNBAKE_SPAN_1000_CODE_802AE028_H
+#include "../types.h"
 #include "common/draft_fields_func_802AE030_de.h"
 #include "common/types_1dc8418c21db.h"
-#include "../types.h"
 struct ObjectState10_2;
 /* unbake published declaration: published_04dd50314abc3839e62b3c53 */
 typedef struct ObjectState10_2 ObjectState10_2;

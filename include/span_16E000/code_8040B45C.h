@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8040B45C_H
 #define UNBAKE_SPAN_16E000_CODE_8040B45C_H
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
 /* unbake published declaration: published_0fd6c13740119d2f331992f8 */
 extern void func_8040B7E0_de(void);
 

@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802591C0_H
 #define UNBAKE_SPAN_1000_CODE_802591C0_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 union func_802598D4_S1_UD8;
 /* unbake published declaration: published_001a4f692a4c78f5e298ebc4 */
 typedef union func_802598D4_S1_UD8 func_802598D4_S1_UD8;

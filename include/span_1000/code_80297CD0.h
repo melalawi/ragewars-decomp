@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80297CD0_H
 #define UNBAKE_SPAN_1000_CODE_80297CD0_H
+#include "../types.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
-#include "../types.h"
 /* unbake published declaration: published_0179e056373ea9952b35ab7c */
 typedef signed int ( *func_802995D4_de_Callback)(signed int, signed int, signed int, signed int);
 

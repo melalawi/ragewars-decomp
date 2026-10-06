@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8022C894_H
 #define UNBAKE_SPAN_1000_CODE_8022C894_H
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
 struct IntegerState244;
 /* unbake published declaration: published_01db6ee7393693a3e0c90bfc */
 typedef struct IntegerState244 IntegerState244;

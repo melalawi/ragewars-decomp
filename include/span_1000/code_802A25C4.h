@@ -1,10 +1,11 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802A25C4_H
 #define UNBAKE_SPAN_1000_CODE_802A25C4_H
-#include "common/types_1dc8418c21db.h"
+#include "../types.h"
+#include "common/draw_matrix_scratch.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "gfx.h"
-#include "../types.h"
 struct func_802A6A44_S1;
 /* unbake published declaration: published_000d7f870822fee42834fbed */
 typedef struct func_802A6A44_S1 func_802A6A44_S1;

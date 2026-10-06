@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8040A83C_H
 #define UNBAKE_SPAN_16E000_CODE_8040A83C_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Item_func_8040AA4C_de;
 /* unbake published declaration: published_010f9d1447408715d3823874 */
 typedef struct Item_func_8040AA4C_de Item_func_8040AA4C_de;

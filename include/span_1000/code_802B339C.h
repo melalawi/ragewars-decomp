@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802B339C_H
 #define UNBAKE_SPAN_1000_CODE_802B339C_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct ObjectState10_5;
 /* unbake published declaration: published_2560f979cd7e7237a58c7839 */
 typedef struct ObjectState10_5 ObjectState10_5;

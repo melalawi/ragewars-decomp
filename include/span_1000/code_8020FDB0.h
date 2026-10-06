@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8020FDB0_H
 #define UNBAKE_SPAN_1000_CODE_8020FDB0_H
+#include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
-#include "../types.h"
 struct func_802100E0_S2;
 /* unbake published declaration: published_235b4e17fb5f2b18cd4a2a27 */
 typedef struct func_802100E0_S2 func_802100E0_S2;

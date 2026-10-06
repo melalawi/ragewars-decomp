@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80209AE8_H
 #define UNBAKE_SPAN_1000_CODE_80209AE8_H
-#include "common/types_8fd754e1e915.h"
 #include "../types.h"
+#include "common/types_8fd754e1e915.h"
 struct IntegerState2C;
 /* unbake published declaration: published_00746919f150708bbc552151 */
 struct IntegerState2C {

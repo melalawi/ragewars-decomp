@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8023EEF0_H
 #define UNBAKE_SPAN_1000_CODE_8023EEF0_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_0c1156dcdba08c13c63530cf */
 extern int func_80240638_de(void *left, void *right);
 

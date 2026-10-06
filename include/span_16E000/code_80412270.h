@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_80412270_H
 #define UNBAKE_SPAN_16E000_CODE_80412270_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Record_func_80412710_de;
 /* unbake published declaration: published_025ad358ecf5dd267927bed0 */
 typedef struct Record_func_80412710_de Record_func_80412710_de;

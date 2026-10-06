@@ -1,8 +1,8 @@
 #ifndef UNBAKE_COMMON_TYPES_1DC8418C21DB_H
 #define UNBAKE_COMMON_TYPES_1DC8418C21DB_H
 #include "audio_callbacks.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
 struct Item_func_8043C9AC_de;
 /* unbake published declaration: published_0000b9574e3dbb500173c4e4 */
 struct Item_func_8043C9AC_de {

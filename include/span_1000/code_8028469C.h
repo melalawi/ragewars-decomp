@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8028469C_H
 #define UNBAKE_SPAN_1000_CODE_8028469C_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 struct Obj_func_80284DC4_de;
 /* unbake published declaration: published_01e3bd7c839c01c9308106d3 */
 struct Obj_func_80284DC4_de {

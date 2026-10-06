@@ -1,9 +1,9 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8023B9A0_H
 #define UNBAKE_SPAN_1000_CODE_8023B9A0_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
-#include "common/types_8fd754e1e915.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8fd754e1e915.h"
 /* unbake published declaration: published_05b4379f51eb1f8b9cd3222e */
 extern void func_8023C85C_de(s32 arg0);
 

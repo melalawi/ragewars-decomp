@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8024E914_H
 #define UNBAKE_SPAN_1000_CODE_8024E914_H
+#include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "gfx.h"
-#include "../types.h"
 /* unbake published declaration: published_01d743b79ba7ac1c4e1599d2 */
 extern void func_8024F5A0_de(void *arg0);
 

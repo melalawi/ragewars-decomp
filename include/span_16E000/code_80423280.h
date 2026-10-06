@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_80423280_H
 #define UNBAKE_SPAN_16E000_CODE_80423280_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Rec_func_80424B90_de;
 /* unbake published declaration: published_06803c7b75ac4006055e5a6d */
 typedef struct Rec_func_80424B90_de Rec_func_80424B90_de;

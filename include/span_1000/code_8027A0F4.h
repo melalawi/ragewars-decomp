@@ -1,10 +1,10 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8027A0F4_H
 #define UNBAKE_SPAN_1000_CODE_8027A0F4_H
-#include "common/types_06e4f7ef1f9e.h"
+#include "../types.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_8fd754e1e915.h"
 #include "gfx.h"
-#include "../types.h"
 struct Actor_func_80281A9C_de;
 /* unbake published declaration: published_01c1540c780b0945aeeb4574 */
 typedef struct Actor_func_80281A9C_de Actor_func_80281A9C_de;

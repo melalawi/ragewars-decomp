@@ -1,9 +1,9 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8028CCB8_H
 #define UNBAKE_SPAN_1000_CODE_8028CCB8_H
-#include "common/draft_fields_func_8028D964_de.h"
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/draft_fields_func_8028D964_de.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_0c18f9831939e1c1ce488a40 */
 extern float D_800C52F8_de;
 

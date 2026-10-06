@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802B0388_H
 #define UNBAKE_SPAN_1000_CODE_802B0388_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct ALBank_s;
 /* unbake published declaration: published_00a82b1fdadfbd02634b0e6e */
 typedef struct ALBank_s ALBank_s;

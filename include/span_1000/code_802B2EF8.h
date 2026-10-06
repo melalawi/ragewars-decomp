@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802B2EF8_H
 #define UNBAKE_SPAN_1000_CODE_802B2EF8_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_1b35c161a6dda3b4fab25539 */
 typedef void ( *Shared_func_802B32A0_de_FuncPtr)(void *, signed int, void *);
 

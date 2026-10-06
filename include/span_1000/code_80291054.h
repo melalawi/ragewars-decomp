@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80291054_H
 #define UNBAKE_SPAN_1000_CODE_80291054_H
+#include "../types.h"
 #include "common/types_1dc8418c21db.h"
 #include "gfx.h"
-#include "../types.h"
 struct Display;
 /* unbake published declaration: published_0fd98bf960b45acfd833434e */
 typedef struct Display Display;

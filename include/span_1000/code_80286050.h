@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80286050_H
 #define UNBAKE_SPAN_1000_CODE_80286050_H
+#include "../types.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "gfx.h"
-#include "../types.h"
 struct Scene_func_8028B028_de;
 /* unbake published declaration: published_071d490f65b9ae384b2faaa5 */
 typedef struct Scene_func_8028B028_de Scene_func_8028B028_de;

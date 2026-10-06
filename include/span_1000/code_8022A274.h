@@ -1,8 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8022A274_H
 #define UNBAKE_SPAN_1000_CODE_8022A274_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
 struct Loadout;
 struct Loadout {
     char pad0[0x108];

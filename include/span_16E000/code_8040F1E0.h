@@ -1,7 +1,7 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_8040F1E0_H
 #define UNBAKE_SPAN_16E000_CODE_8040F1E0_H
-#include "common/types_1dc8418c21db.h"
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
 struct Slot_func_80411518_de;
 /* unbake published declaration: published_284fcfe1210e7334d0e1bce9 */
 struct Slot_func_80411518_de {
