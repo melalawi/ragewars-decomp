@@ -5303,7 +5303,7 @@ segments:
       - [0x1A5868, asm, "func_804384B8_eu"]
       - [0x1A58F8, c, "func_80437718_de"]
       - [0x1A5998, c, "func_804377B8_de"]
-      - [0x1A59C8, asm, "func_80438618_eu"]
+      - [0x1A59C8, c, "func_80438618_eu"]
       - [0x1A59F0, c, "func_80437810_de"]
       - [0x1A5AD4, c, "func_804378F4_de"]
       - [0x1A5B10, c, "func_80437930_de"]

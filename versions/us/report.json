@@ -1,6 +1,6 @@
 {
   "measures": {
-    "fuzzy_match_percent": 61.058502,
+    "fuzzy_match_percent": 61.069424,
     "total_code": 1062244,
     "matched_code": 628244,
     "matched_code_percent": 59.143097,
@@ -106,13 +106,15 @@
         "matched_data_percent": 100.0,
         "total_functions": 1,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "fuzzy_match_percent": 57.14
       },
       "sections": [
         {
           "name": ".text",
           "size": "56",
-          "metadata": {}
+          "metadata": {},
+          "fuzzy_match_percent": 57.14
         }
       ],
       "functions": [
@@ -120,7 +122,8 @@
           "name": "func_80200568_de",
           "size": "56",
           "metadata": {},
-          "address": "0"
+          "address": "0",
+          "fuzzy_match_percent": 57.14
         }
       ],
       "metadata": {
@@ -45583,13 +45586,15 @@
         "matched_data_percent": 100.0,
         "total_functions": 1,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "fuzzy_match_percent": 100.0
       },
       "sections": [
         {
           "name": ".text",
           "size": "40",
-          "metadata": {}
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -45597,7 +45602,8 @@
           "name": "func_8025E0F4_de",
           "size": "40",
           "metadata": {},
-          "address": "0"
+          "address": "0",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
@@ -90802,13 +90808,15 @@
         "matched_data_percent": 100.0,
         "total_functions": 1,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "fuzzy_match_percent": 100.0
       },
       "sections": [
         {
           "name": ".text",
           "size": "44",
-          "metadata": {}
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -90816,7 +90824,8 @@
           "name": "func_802BA0D0_de",
           "size": "44",
           "metadata": {},
-          "address": "0"
+          "address": "0",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
