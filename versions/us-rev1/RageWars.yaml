@@ -2247,7 +2247,7 @@ segments:
       - [0xAF434, c, "func_802AE834_us_rev1"]
       - [0xAF6B4, asm, "func_802AEAB4_us_rev1"]
       - [0xAFA48, c, "func_802AEE48_us_rev1"]
-      - [0xAFB84, asm, "func_802AEF84_us_rev1"]
+      - [0xAFB84, c, "func_802AEF84_us_rev1"]
       - [0xAFCE4, c, "func_802AF0E4_us_rev1"]
       - [0xAFDF0, c, "func_802AF1F0_us_rev1"]
       - [0xAFF3C, c, "func_802AF33C_us_rev1"]
