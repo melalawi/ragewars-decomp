@@ -13,15 +13,13 @@ extern void func_802A001C_de(void *, s32, s32);
 extern void func_802558B4_de(void *, void *, s32);
 extern void func_802550F0_de(void *, s32);
 extern void func_80256280_de(void *, s32);
-extern void 
 #if defined(VERSION_EU) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_8023B9C0_eu
+extern void func_8023B9C0_eu(s32, s32);
 #elif defined(VERSION_EU_X)
-func_8023B9F0_eu_x
+extern void func_8023B9F0_eu_x(s32, s32);
 #else
-func_8023B9B0_de
+extern void func_8023B9B0_de(s32, s32);
 #endif
-(s32, s32);
 extern void func_80250E70_de(s32, s32);
 
 void func_802567D0_de(void) {

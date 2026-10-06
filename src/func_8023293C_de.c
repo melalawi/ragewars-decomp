@@ -53,13 +53,11 @@ void func_8023293C_de(void *arg0, void *arg1, void *arg2) {
                   (char *)arg0 + (D_800CD72C * 0x18 + 0x140), 0, result);
 }
 
-extern void 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-func_80232878_eu
+extern void func_80232878_eu(void *arg0, void *arg1);
 #else
-func_8022FDAC_de
+extern void func_8022FDAC_de(void *arg0, void *arg1);
 #endif
-(void *arg0, void *arg1);
 extern char D_0022FC20;
 extern char D_0023293C;
 

@@ -47,17 +47,15 @@ void func_80293A20_de(Session_func_80293A20_de *session, s32 arg1, s32 target) {
 extern s32 D_8010B190_de;
 extern s32 D_8014288C;
 
-extern void 
 #if defined(VERSION_EU)
-func_802A2344_eu
+extern void func_802A2344_eu(void);
 #elif defined(VERSION_EU_X)
-func_802A2374_eu_x
+extern void func_802A2374_eu_x(void);
 #elif defined(VERSION_US) || defined(VERSION_US_REV1)
-func_802A2164_us
+extern void func_802A2164_us(void);
 #else
-func_802A2224_de
+extern void func_802A2224_de(void);
 #endif
-(void);
 extern void func_80298368_de(s32 arg0);
 extern void func_8040C428_de(s32 arg0);
 extern void func_80293790_de(void *arg0, s32 arg1);

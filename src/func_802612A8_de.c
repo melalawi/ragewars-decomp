@@ -5,19 +5,17 @@
 
 
 extern char *func_8028FDB4_de(s32 *, s32);
-extern s32 
 #if defined(VERSION_EU)
-func_8025F094_eu
+extern s32 func_8025F094_eu(void *, void *, s32, s32, s32, s32);
 #elif defined(VERSION_EU_X)
-func_8025F0C4_eu_x
+extern s32 func_8025F0C4_eu_x(void *, void *, s32, s32, s32, s32);
 #elif defined(VERSION_US)
-func_8025F074_us
+extern s32 func_8025F074_us(void *, void *, s32, s32, s32, s32);
 #elif defined(VERSION_US_REV1)
-func_8025F0F4_us_rev1
+extern s32 func_8025F0F4_us_rev1(void *, void *, s32, s32, s32, s32);
 #else
-func_8025F0D4_de
+extern s32 func_8025F0D4_de(void *, void *, s32, s32, s32, s32);
 #endif
-(void *, void *, s32, s32, s32, s32);
 extern f32 D_8010AC80;
 extern s32 D_8010AC78;
 extern s32 D_8010AC74;

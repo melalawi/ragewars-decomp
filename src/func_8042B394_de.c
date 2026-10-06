@@ -6,13 +6,11 @@
 extern void *D_800E0F10;
 extern void func_802547E4_de(void *);
 extern void func_802A2360_de();
-extern void 
 #if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_80422020_de
+extern void func_80422020_de();
 #else
-func_8042201C_de
+extern void func_8042201C_de();
 #endif
-();
 extern void func_80422020_de();
 
 s32 func_8042B394_de(void) {

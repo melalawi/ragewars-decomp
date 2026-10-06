@@ -5,13 +5,11 @@
 extern s32 D_801371FC;
 extern s32 D_8014DE64;
 extern s32 D_8014DE60;
-extern s32 
 #if defined(VERSION_EU) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_802AD548_eu
+extern s32 func_802AD548_eu(s32);
 #else
-func_802AD2A8
+extern s32 func_802AD2A8(s32);
 #endif
-(s32);
 
 void func_804433F8_de(void) {
     D_8014DE64 = 

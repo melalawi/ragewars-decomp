@@ -7,13 +7,11 @@
 
 
 extern struct func_80207B5C_S2 *D_800DE86C;
-extern void 
 #if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_802AD548_eu
+extern void func_802AD548_eu(s32);
 #else
-func_802AD2A8
+extern void func_802AD2A8(s32);
 #endif
-(s32);
 
 s32 func_8040A5E8_de(void) {
     

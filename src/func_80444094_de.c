@@ -9,13 +9,11 @@ func_80444F30_eu
 func_804440F0_de
 #endif
  on the record. */
-extern void 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-func_80444F30_eu
+extern void func_80444F30_eu(u8 *);
 #else
-func_804440F0_de
+extern void func_804440F0_de(u8 *);
 #endif
-(u8 *);
 
 void func_80444094_de(u8 *record, u8 value) {
     record[0x79] = 0x86;

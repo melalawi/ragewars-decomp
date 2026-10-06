@@ -56,13 +56,11 @@ extern u8 D_80152789;
    an object of kind 5, otherwise the word the pointer at offset 0x14 addresses. */
 
 
-extern void *
 #if defined(VERSION_DE) || defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_8043F120_de
+extern void * func_8043F120_de(struct Object_func_80442ADC_de *);
 #else
-func_8043F114_de
+extern void * func_8043F114_de(struct Object_func_80442ADC_de *);
 #endif
-(struct Object_func_80442ADC_de *);
 extern void func_804422F0_de(void *, f32, f32);
 
 void func_80442ADC_de(struct Object_func_80442ADC_de *object, f32 scale) {

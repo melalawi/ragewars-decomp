@@ -26,19 +26,17 @@ extern Vector4f func_8024D870_de(char *);
 extern void func_80262480_de(char *);
 extern void func_8024B65C_de(char *, s32);
 extern void func_802727D8_de(char *);
-extern void 
 #if defined(VERSION_EU)
-func_80213ACC_eu
+extern void func_80213ACC_eu(char *, char *, void *);
 #elif defined(VERSION_EU_X)
-func_80213ACC_eu_x
+extern void func_80213ACC_eu_x(char *, char *, void *);
 #elif defined(VERSION_US)
-func_80213AAC_us
+extern void func_80213AAC_us(char *, char *, void *);
 #elif defined(VERSION_US_REV1)
-func_80213AAC_us_rev1
+extern void func_80213AAC_us_rev1(char *, char *, void *);
 #else
-func_80213AAC_de
+extern void func_80213AAC_de(char *, char *, void *);
 #endif
-(char *, char *, void *);
 extern void func_802193C8_de(char *, s32, char *);
 extern void func_80246BE8_de(char *, s32, s32, s32);
 extern s32 func_80250BF0_de(void);

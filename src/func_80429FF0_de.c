@@ -28,20 +28,16 @@ extern Gfx *D_8010C574;
 extern s32 D_8014DD94;
 
 extern s32 func_80299958_de(void);
-extern void 
 #if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_804397F0_de
+extern void func_804397F0_de(char *);
 #else
-func_804397E8_de
+extern void func_804397E8_de(char *);
 #endif
-(char *);
-extern void 
 #if defined(VERSION_DE)
-func_804397F0_de
+extern void func_804397F0_de(char *);
 #else
-func_804397F0_auto
+extern void func_804397F0_auto(char *);
 #endif
-(char *);
 extern s32 func_8042B294_de(s32);
 extern s32 func_8042B1B8_de(s32, s32);
 extern void func_804220A8_de(s32);

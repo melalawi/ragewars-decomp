@@ -1,13 +1,11 @@
 #include "span_1000/code_802A1264.h"
 #include "types.h"
 
-extern f64 
 #if defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-func_804147F0_eu_x
+extern f64 func_804147F0_eu_x(void);
 #else
-func_804143B0_de
+extern f64 func_804143B0_de(void);
 #endif
-(void);
 
 f64 func_802A18CC_de(void) {
     return 

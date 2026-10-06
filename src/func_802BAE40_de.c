@@ -66,19 +66,15 @@ extern unsigned char D_8000031C[];
 extern s32 D_80000300;
 extern s32 D_800D5250;
 
-extern u32
-
 #if defined(VERSION_DE)
-func_802BCF20_de
+extern u32 func_802BCF20_de(void);
 #elif defined(VERSION_EU)
-func_802BD1C0_eu
+extern u32 func_802BD1C0_eu(void);
 #elif defined(VERSION_US)
-func_802BCE50_us
+extern u32 func_802BCE50_us(void);
 #else
-func_802BD200_eu_x
+extern u32 func_802BD200_eu_x(void);
 #endif
-
-(void);
 extern void func_802BD220_de(u32 sr);
 extern u32 func_802BD160_de(u32 csr);
 

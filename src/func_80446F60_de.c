@@ -128,13 +128,11 @@ extern s32 func_80448BFC_de(OSPfs_func_80445F80_de *pfs);
 extern s32 func_804486B8_de(OSPfs_func_80445F80_de *pfs);
 extern s32 func_804488A4_de(OSPfs_func_80445F80_de *pfs, __OSInode *inode, u8 flag, u8 bank);
 extern s32 func_8044756C_de(OSPfs_func_80445F80_de *pfs, __OSInodeCache *cache);
-extern s32 
 #if defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-func_80448A48_eu_x
+extern s32 func_80448A48_eu_x(OSPfs_func_80445F80_de *pfs, __OSInodeUnit fpage, __OSInodeCache *cache);
 #else
-func_804476B8_de
+extern s32 func_804476B8_de(OSPfs_func_80445F80_de *pfs, __OSInodeUnit fpage, __OSInodeCache *cache);
 #endif
-(OSPfs_func_80445F80_de *pfs, __OSInodeUnit fpage, __OSInodeCache *cache);
 
 s32 func_80447130_de(OSPfs_func_80445F80_de *pfs)
 {

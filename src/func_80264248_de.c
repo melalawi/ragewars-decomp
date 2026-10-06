@@ -16,17 +16,15 @@ extern s32 func_802BAD80_de(void *);
 extern void func_80263740_de(void);
 extern s32 func_80285AC4_de(void *, void *, s32);
 extern s32 func_802B7FD8_de(void *, void *, s32);
-extern u32 
 #if defined(VERSION_EU)
-func_802B7EF0_eu
+extern u32 func_802B7EF0_eu(void *);
 #elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-func_802B7F30_eu_x
+extern u32 func_802B7F30_eu_x(void *);
 #elif defined(VERSION_US)
-func_802B7B80_us
+extern u32 func_802B7B80_us(void *);
 #else
-func_802B7C50_de
+extern u32 func_802B7C50_de(void *);
 #endif
-(void *);
 
 
 

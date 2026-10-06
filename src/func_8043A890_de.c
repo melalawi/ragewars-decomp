@@ -27,20 +27,16 @@ extern Gfx *D_8010C574;
 
 extern void func_8041C7F4_de(struct ResultsPlayerPanel *);
 extern s32 func_80439CC8_de(char *);
-extern void 
 #if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_804397F0_de
+extern void func_804397F0_de(char *);
 #else
-func_804397E8_de
+extern void func_804397E8_de(char *);
 #endif
-(char *);
-extern void 
 #if defined(VERSION_DE)
-func_804397F0_de
+extern void func_804397F0_de(char *);
 #else
-func_804397F0_auto
+extern void func_804397F0_auto(char *);
 #endif
-(char *);
 
 s32 func_8043A890_de(void *arg0, void *arg1, s32 event) {
     s32 i;

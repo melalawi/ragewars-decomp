@@ -6,13 +6,11 @@
 
 extern u8 D_80140F80[],D_800E20AC[];
 extern s32 func_8022A5A0_de(void *,func_80209B64_S4 *);
-extern void func_80442384_de(s32,Entry_func_80445E04_de *,s32),
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-func_80444F30_eu
+extern void func_80442384_de(s32,Entry_func_80445E04_de *,s32), func_80444F30_eu(void *);
 #else
-func_804440F0_de
+extern void func_80442384_de(s32,Entry_func_80445E04_de *,s32), func_804440F0_de(void *);
 #endif
-(void *);
 s32 func_80445E04_de(s32 arg0, Entry_func_80445E04_de *arg1, s32 arg2) {
     s32 temp_v0;
     s32 var_a0;
