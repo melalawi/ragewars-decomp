@@ -776,6 +776,7 @@ segment = "span_1000"
 evidence = "proven"
 members = ["func_8029F3A8_us", "func_8029F468_de", "func_8029F588_eu", "func_8029EA7C_de", "func_8029F254_de", "func_8029F368_de", "func_8029F5B8_eu_x", "func_8029F470_de", "func_8029F5E0_de"]
 only = { "func_8029F3A8_us" = ["us"], "func_8029F468_de" = ["de"], "func_8029F588_eu" = ["eu"], "func_8029F5B8_eu_x" = ["us-rev1", "eu-x"], "func_8029F470_de" = ["us-rev1", "de", "eu-x", "us"] }
+split = ["func_8029F254_de", "func_8029F368_de"]
 signals = ["cap", "version"]
 
 [[group]]
