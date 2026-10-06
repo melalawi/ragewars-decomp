@@ -1,10 +1,9 @@
 #include "span_16E000/code_80442BC8.h"
+#include "span_16E000/code_80442BC8.h"
 #include "common/unused.h"
 #include "types.h"
 
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* Writes a numeric menu value through its bound storage callback using the selected scalar type. */
-
 
 void func_80442FB0_de(Item_func_80442FB0_de *item,float value) {
  float *storage;
