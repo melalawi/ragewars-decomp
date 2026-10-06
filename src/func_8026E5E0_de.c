@@ -1,7 +1,6 @@
 /* Attachment event dispatch. Reference logic/order adapted to current symbols and shared types. */
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
-#include "common/unused.h"
 #include "span_1000/code_8026E1F8.h"
 #include "decomp/attachment_effect_args.h"
 

@@ -2,7 +2,13 @@
 #define UNBAKE_SPAN_1000_CODE_8026E1F8_H
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "gfx.h"
+#include "decomp/attachment_effect_args.h"
+struct func_8026E5E0_S2;
+/* unbake published declaration: published_000a1a9b0b180505202e919a */
+typedef struct func_8026E5E0_S2 func_8026E5E0_S2;
+
 /* unbake published declaration: published_01e965c78db64b3d7a13955d */
 extern float D_800C4758_de;
 
@@ -30,6 +36,10 @@ typedef struct Node8026E4F8 Node8026E4F8;
 
 /* unbake published declaration: published_2c3caa2652f5fcbd6a00a91a */
 extern float D_800C4830_de;
+
+struct func_8026E5E0_S3;
+/* unbake published declaration: published_2ff147184961a8018cf4ff1a */
+typedef struct func_8026E5E0_S3 func_8026E5E0_S3;
 
 /* unbake published declaration: published_307ee0f3b15944f1e7b6fe33 */
 extern float D_800C4730_de;
@@ -69,6 +79,14 @@ extern float D_800C4700_de;
 
 /* unbake published declaration: published_5da377b69efb08706ac25e84 */
 extern float D_800C4720_de;
+
+struct func_8026E5E0_S2;
+/* unbake published declaration: published_65b9171d81e3b23d1f2c6070 */
+struct func_8026E5E0_S2 {
+    u32 unk0;
+    u16 unk4;
+    char pad4[0xE];
+};
 
 /* unbake published declaration: published_66ca15a3296a0e96272259e1 */
 extern unsigned char D_800CC3AB;
@@ -149,6 +167,15 @@ extern float D_800C47A0_de;
 /* unbake published declaration: published_acd91ff2dabe8128baf73e97 */
 extern float D_800C4728_de;
 
+struct func_8026E5E0_S1;
+/* unbake published declaration: published_ae42b61dc4ad70479a3467bb */
+struct func_8026E5E0_S1 {
+    char pad0[0xC];
+    u32 unkC;
+    u16 bone;
+    u16 reserved;
+};
+
 /* unbake published declaration: published_b19077fb4923e8aea1211a7d */
 extern float D_800C4750_de;
 
@@ -166,6 +193,10 @@ extern float D_800C4778_de;
 
 /* unbake published declaration: published_c1a1a89e2bc60becb46e3fba */
 extern void func_8026E390_de(void);
+
+struct func_8026E5E0_S1;
+/* unbake published declaration: published_c6ddb3f6547d3f26ffa87bd4 */
+typedef struct func_8026E5E0_S1 func_8026E5E0_S1;
 
 /* unbake published declaration: published_c7a2a80f317a989027e335c0 */
 extern float D_800C47E8_de;
@@ -207,17 +238,48 @@ extern float D_800C4760_de;
 /* unbake published declaration: published_e7420dfdc11ad6a5dc68aef6 */
 extern float D_800C4748_de;
 
+struct AttachmentTable;
+/* unbake published declaration: published_f03914b11bf29244f2d8f2a3 */
+typedef struct AttachmentTable AttachmentTable;
+
 /* unbake published declaration: published_f04809c801690a059f83094f */
 extern float D_800C4824_de;
 
 /* unbake published declaration: published_f645f558ab85dc9c664452a2 */
 extern float D_800C47D4_de;
 
+struct AttachmentTable;
+/* unbake published declaration: published_f6885118e684accac2690b86 */
+struct AttachmentTable {
+    s32 stride;
+    u8 pad4[0x6A];
+    u8 bytes[1];
+};
+
 /* unbake published declaration: published_f6991a49b07a21da5b872ef8 */
 extern float D_800C4834_de;
 
 /* unbake published declaration: published_f7fa4b5a6849dea8e76b8897 */
 extern float D_800C47B0_de;
+
+struct func_8026E5E0_S3;
+/* unbake published declaration: published_fc70864f30926a20349b5e1e */
+struct func_8026E5E0_S3 {
+    char pad0[0x18];
+    s32 *unk18;
+    char pad18[0x188];
+    s8 unk1A4;
+    char pad1A4[0xB];
+    f32 unk1B0;
+    char pad1B0[0x24];
+    func_8022C6D4_S1 *unk1D8;
+    char pad1D8[0x6C];
+    Triple unk248;
+    Triple unk254;
+    Triple unk260;
+    char pad268[0x74];
+    s32 unk2E0;
+};
 
 /* unbake published declaration: published_fd245ff1c02162c33d474b8b */
 extern float D_800C47B8_de;

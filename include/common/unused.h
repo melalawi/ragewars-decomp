@@ -704,6 +704,9 @@ extern s32 D_800CD70C;
 /* unbake published declaration: published_2bf19531e8e37d43bc87a125 */
 extern s32 D_80149B90;
 
+/* unbake published declaration: published_2c02bad2706674926aa13c71 */
+extern float D_800C4964_eu;
+
 /* unbake published declaration: published_2c067537f97c33fd6af64125 */
 extern u8 D_800D35B0[];
 
@@ -727,6 +730,9 @@ extern void *jtbl_800DD020[];
 
 /* unbake published declaration: published_2e3c182a205eaec500871db9 */
 extern f32 D_800C2C00_de[];
+
+/* unbake published declaration: published_2e44e5cda26a3a6675059778 */
+extern float D_800C4968_eu;
 
 /* unbake published declaration: published_2e5e046e45cac7392c1b3832 */
 extern char D_0044FFEC[];
@@ -1112,6 +1118,9 @@ extern void func_804397F0_auto(char *);
 
 /* unbake published declaration: published_4b1245a89f2fd33500984d76 */
 extern int D_800CDA28;
+
+/* unbake published declaration: published_4b57669c4174e177380b61c5 */
+extern float D_800C4960_eu;
 
 /* unbake published declaration: published_4bc2979fb50044aa15ec75c0 */
 extern char *D_800E1F54_eu[];
@@ -4023,9 +4032,6 @@ typedef struct Arg3 Arg3;
 struct Attachment;
 typedef struct Attachment Attachment;
 
-struct AttachmentTable;
-typedef struct AttachmentTable AttachmentTable;
-
 struct AttackReleaseState;
 typedef struct AttackReleaseState AttackReleaseState;
 
@@ -5268,15 +5274,6 @@ typedef struct func_8025DBA0_S3 func_8025DBA0_S3;
 struct func_8026C484_S2;
 typedef struct func_8026C484_S2 func_8026C484_S2;
 
-struct func_8026E5E0_S1;
-typedef struct func_8026E5E0_S1 func_8026E5E0_S1;
-
-struct func_8026E5E0_S2;
-typedef struct func_8026E5E0_S2 func_8026E5E0_S2;
-
-struct func_8026E5E0_S3;
-typedef struct func_8026E5E0_S3 func_8026E5E0_S3;
-
 struct func_8028C544_S1;
 typedef struct func_8028C544_S1 func_8028C544_S1;
 
@@ -5916,12 +5913,6 @@ struct Attachment {
     Triple offset;
     char pad14[0];
     ResourceManagerState params;
-};
-struct AttachmentTable;
-struct AttachmentTable {
-    s32 stride;
-    u8 pad4[0x6A];
-    u8 bytes[1];
 };
 struct AttackReleaseState;
 struct AttackReleaseState {
@@ -22703,36 +22694,6 @@ struct func_8026C484_S2 {
     s32 unk4;
     s8 * unk8;
     s32 unkC;
-};
-struct func_8026E5E0_S1;
-struct func_8026E5E0_S1 {
-    char pad0[0xC];
-    u32 unkC;
-    u16 bone;
-    u16 reserved;
-};
-struct func_8026E5E0_S2;
-struct func_8026E5E0_S2 {
-    u32 unk0;
-    u16 unk4;
-    char pad4[0xE];
-};
-struct func_8026E5E0_S3;
-struct func_8026E5E0_S3 {
-    char pad0[0x18];
-    s32 *unk18;
-    char pad18[0x188];
-    s8 unk1A4;
-    char pad1A4[0xB];
-    f32 unk1B0;
-    char pad1B0[0x24];
-    func_8022C6D4_S1 *unk1D8;
-    char pad1D8[0x6C];
-    Triple unk248;
-    Triple unk254;
-    Triple unk260;
-    char pad268[0x74];
-    s32 unk2E0;
 };
 struct func_8028C544_S1;
 struct func_8028C544_S1 {
