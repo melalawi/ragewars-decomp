@@ -4543,7 +4543,7 @@ segments:
       - [0xFC4DC, c, "func_8040C09C_de"]
       - [0xFC9F8, asm, "func_8040C9F8_eu_x"]
       - [0xFCB3C, data, "func_8040CB3C_eu_x_padding_FCB3C"]
-      - [0x0FCB40, asm, "func_8040CB40_eu_x"]
+      - [0x0FCB40, c, "func_8040CB40_eu_x"]
       - [0xFCD88, c, "func_8040C948_de"]
       - [0xFCD90, c, "func_8040C950_de"]
       - [0xFCEE4, asm, "func_8040CEE4_eu_x"]

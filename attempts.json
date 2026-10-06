@@ -2501,6 +2501,19 @@
       "exact": true,
       "minutes": 1.89
     },
+    "func_802BDDE0_de": {
+      "attempts": 1,
+      "best": {
+        "de": 57.43,
+        "eu": 57.43,
+        "eu-x": 57.43,
+        "us": 57.43,
+        "us-rev1": 57.43
+      },
+      "bytes": 592,
+      "exact": false,
+      "minutes": 0.03
+    },
     "func_802BE3B0_eu_x": {
       "attempts": 1,
       "best": {
@@ -2648,7 +2661,7 @@
       "minutes": 7.99
     },
     "func_8040CB40_eu_x": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "eu-x": 100.0,
         "us-rev1": 100.0
