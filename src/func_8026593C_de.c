@@ -1,4 +1,5 @@
 #include "span_1000/code_80265370.h"
+#include "span_1000/code_80265370.h"
 #include "types.h"
 #include "gbi.h"
 #include "n64sdk.h"
@@ -11,15 +12,6 @@ void func_8026593C_de(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5
 
 /* Returns the s32 at a byte offset into a resource loaded from the cartridge, then releases it.
    The resource's ROM address is each cartridge's own, because the data before it differs in size. */
-
-#if defined(VERSION_DE)
-#define RESOURCE_ROM 0x28BB00
-#elif defined(VERSION_EU_X)
-#define RESOURCE_ROM 0x290384
-#else
-#define RESOURCE_ROM 0x28B244
-#endif
-
 extern char D_800C4388_de;
 extern void * *func_8025193C_de(s32, s32, s32, s32, s32, s32, void *, void *, s32);
 extern void func_80253754_de(s32, void *);
@@ -28,21 +20,19 @@ s32 func_80265964_de(s32 arg0) {
     void **resource;
     s32 result;
 
-    resource = func_8025193C_de(0, RESOURCE_ROM, RESOURCE_ROM, 0x20, 0x10, 0, 0, &D_800C4388_de, 1);
+#if defined(VERSION_DE)
+    resource = func_8025193C_de(0, 0x28BB00, 0x28BB00, 0x20, 0x10, 0, 0, &D_800C4388_de, 1);
+#elif defined(VERSION_EU_X)
+    resource = func_8025193C_de(0, 0x290384, 0x290384, 0x20, 0x10, 0, 0, &D_800C4388_de, 1);
+#else
+    resource = func_8025193C_de(0, 0x28B244, 0x28B244, 0x20, 0x10, 0, 0, &D_800C4388_de, 1);
+#endif
     result = *(s32 *)((char *)*resource + arg0);
     func_80253754_de(0, resource);
     return result;
 }
 
 /* Loads the scene's point lights into the display list: with no light in D_801370E8 it clears geometry mode bit 0x80, otherwise it sets it and fills eight light slots from the light list, transforming each active light's position into the view, storing its negated view direction, its colour scaled by its intensity, its falloff and a fixed range, marking unused slots off, and emits the light-move command for each slot, then advances the light buffer. The first direction component is truncated into a local before negating. */
-
-
-
-
-
-
-
-
 extern Gfx *D_8010C574;
 extern s32 D_8010C4A0;
 extern UnitLight D_8010C0A0[];
