@@ -4340,25 +4340,15 @@
       "minutes": 31.78
     },
     "func_80444148_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "us": 100.0,
         "us-rev1": 100.0
       },
       "bytes": 52,
-      "exact": false,
-      "fuzzy": {
-        "compiler": "gcc-2.8.1-sn64",
-        "score": 100.0,
-        "source_sha256": "d3070de43422c1d3f614085987ae80247e26b28c5be5b6d6c6938d4ff7e2bfe7",
-        "versions": {
-          "de": 100.0,
-          "us": 100.0,
-          "us-rev1": 100.0
-        }
-      },
-      "minutes": 190.95
+      "exact": true,
+      "minutes": 193.32
     },
     "func_8044417C_de": {
       "attempts": 1,

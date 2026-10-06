@@ -5424,7 +5424,7 @@ segments:
       - [0x1A9EC0, asm, "func_80443EC0_de"]
       - [0x1AA094, c, "func_80444094_de"]
       - [0x1AA0F0, asm, "func_804440F0_de"]
-      - [0x1AA148, asm, "func_80444148_de"]
+      - [0x1AA148, c, "func_80444148_de"]
       - [0x1AA17C, asm, "func_8044417C_de"]
       - [0x1AA1B0, asm, "func_804441B0_de"]
       - [0x1AA1E4, c, "func_804441E4_de"]
