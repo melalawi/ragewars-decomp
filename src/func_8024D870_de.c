@@ -1,19 +1,16 @@
+#include "span_1000/code_8024D018.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8024D018.h"
 #include "types.h"
+#include "math_helpers.h"
+
 /* Returns a player's body lean on the ground: a controlled player on an accepted floor (func_802757E4_de) that
  * is not held (flag 1) nor in states 1 or 2 computes a tilt toward the floor normal from func_80275C94_de by
  * three eighths of its slope (at most 25 degrees), which the body tilt from func_8024D728_de then replaces,
  * and leans along its heading by three quarters of the ground slope ahead from func_80240A98_de (at most 25),
  * blending lean and tilt halfway through func_80270CD0_de; other players take func_8024D728_de's tilt, and
  * objects without a floor or held players get the identity. The sine is kept in D_80115DEC. */
-
-
-
-
-
-
 
 extern f32 D_80111D2C;
 extern s32 func_802757E4_de(s32);
@@ -26,14 +23,6 @@ extern f32 func_802B6560_de(f32);
 extern Vector4f func_8024D728_de(char *);
 extern f32 func_80240A98_de(Probe *, f32, f32, f32, f32);
 extern void func_80270CD0_de(Vector4f *, f32, Vector4f *, Vector4f *);
-
-
-
-
-
-
-#define MIN(a, b) ((a) > (b) ? (b) : (a))
-
 static inline s32 is_held(char *obj) {
     return (*(u8 *)obj != 1) ? 0 : (((func_8024D860_S1 *)(obj))->unk100 & 1);
 }
@@ -70,11 +59,11 @@ Vector4f func_8024D870_de(char *obj) {
                 func_80272018_de(&axis, &up, &normal);
                 func_8027207C_de(&axis);
                 slope = func_802745D0_de(up.x * normal.x + up.y * normal.y + up.z * normal.z);
-                D_80111D2C = func_802B7130_de(MIN(slope, 0.43633235f) * 0.375f);
+                D_80111D2C = func_802B7130_de(RW_MIN(slope, 0.43633235f) * 0.375f);
                 tilt.x = axis.x * D_80111D2C;
                 tilt.y = axis.y * D_80111D2C;
                 tilt.z = axis.z * D_80111D2C;
-                tilt.w = func_802B6560_de(MIN(slope, 0.43633235f) * 0.375f);
+                tilt.w = func_802B6560_de(RW_MIN(slope, 0.43633235f) * 0.375f);
                 tilt = func_8024D728_de(obj);
                 sine = func_802B7130_de(((func_8024D860_S2 *)(self))->unk6C);
                 cosine = func_802B6560_de(((func_8024D860_S2 *)(self))->unk6C);
@@ -84,7 +73,7 @@ Vector4f func_8024D870_de(char *obj) {
                 probe.start.z = ((func_8024D860_S2 *)(self))->unk10;
                 slope = func_80240A98_de(&probe, ((func_8024D860_S1 *)(obj))->unk8, ((func_8024D860_S1 *)(obj))->unk10, ((func_8024D860_S1 *)(obj))->unk8 - sine,
                                       ((func_8024D860_S1 *)(obj))->unk10 - cosine);
-                slope = MIN(slope, 25.0f) * 0.75f;
+                slope = RW_MIN(slope, 25.0f) * 0.75f;
                 half = 0.5f;
                 angle = slope * half;
                 D_80111D2C = func_802B7130_de(angle);
