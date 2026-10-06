@@ -1502,7 +1502,7 @@ segments:
       - [0x6FA50, c, "func_8026EE20_de"]
       - [0x726D8, asm, "func_80271AA8_de"]
       - [0x72884, c, "func_80271C54_de"]
-      - [0x72C48, asm, "func_80272018_de"]
+      - [0x72C48, c, "func_80272018_de"]
       - [0x72CAC, c, "func_8027207C_de"]
       - [0x72ECC, asm, "func_8027229C_de"]
       - [0x7302C, c, "func_802723FC_de"]
