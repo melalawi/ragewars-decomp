@@ -40,7 +40,7 @@
       "minutes": 0.02
     },
     "func_802005DC_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 26.67,
         "eu": 26.67,
@@ -50,7 +50,7 @@
       },
       "bytes": 52,
       "exact": false,
-      "minutes": 35.09
+      "minutes": 54.95
     },
     "func_8020095C_de": {
       "attempts": 7,

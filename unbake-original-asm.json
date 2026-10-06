@@ -3,6 +3,9 @@
   "functions": {
     "func_80200400_de": {
       "rule": "cop0"
+    },
+    "func_8020238C_de": {
+      "rule": "cop0"
     }
   }
 }

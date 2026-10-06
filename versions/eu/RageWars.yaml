@@ -80,7 +80,7 @@ segments:
       - [0x2D98, asm, "func_80202198_de"]
       - [0x2E68, asm, "func_80202268_eu"]
       - [0x2EE0, asm, "func_802022E0_de"]
-      - [0x2F8C, asm, "func_8020238C_de"]
+      - [0x2F8C, hasm, "func_8020238C_de"]
       - [0x2FA8, asm, "func_802023A8_de"]
       - [0x2FC4, asm, "func_802023C4_de"]
       - [0x2FD0, asm, "func_802023D0_de"]
