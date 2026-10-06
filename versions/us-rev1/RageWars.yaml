@@ -5174,7 +5174,7 @@ segments:
       - [0x19BAE8, c, "func_8042D908_de"]
       - [0x19BB38, c, "func_8042D958_de"]
       - [0x19BBC8, data, "func_8042DBC8_us_rev1_padding_19BBC8"]
-      - [0x19BBD0, asm, "func_8042DBD0_us_rev1"]
+      - [0x19BBD0, c, "func_8042DBD0_us_rev1"]
       - [0x19BCA8, c, "func_8042DAC8_de"]
       - [0x19BCD8, c, "func_8042DAF8_de"]
       - [0x19BDE4, c, "func_8042DC04_de"]
