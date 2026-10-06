@@ -3308,6 +3308,19 @@
       "exact": false,
       "minutes": 0.04
     },
+    "func_8040A614_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 148,
+      "exact": true,
+      "minutes": 0.04
+    },
     "func_8040A810_de": {
       "attempts": 1,
       "best": {
