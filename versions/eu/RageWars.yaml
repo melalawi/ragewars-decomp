@@ -4809,7 +4809,7 @@ segments:
       - [0x199B60, c, "func_804232AC_de"]
       - [0x199BDC, c, "func_80423328_de"]
       - [0x199C9C, c, "func_804233E8_de"]
-      - [0x199CE0, asm, "func_80423CE0_eu"]
+      - [0x199CE0, c, "func_80423CE0_eu"]
       - [0x199CE8, asm, "func_80423CE8_eu"]
       - [0x199CF0, c, "func_8042343C_de"]
       - [0x199D80, c, "func_804235E8_de"]
