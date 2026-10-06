@@ -5200,7 +5200,7 @@ segments:
       - [0x19D014, c, "func_8042EE34_de"]
       - [0x19D12C, asm, "func_8042F12C_us_rev1"]
       - [0x19D988, c, "func_8042F7A8_de"]
-      - [0x19DAFC, asm, "func_8042F91C_de"]
+      - [0x19DAFC, c, "func_8042F91C_de"]
       - [0x19DD28, c, "func_8042FB48_de"]
       - [0x19E120, c, "func_8042FF40_de"]
       - [0x19E208, c, "func_80430028_de"]

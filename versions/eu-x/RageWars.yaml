@@ -5105,7 +5105,7 @@ segments:
       - [0x11FC24, c, "func_8042EE34_de"]
       - [0x11FD3C, asm, "func_8042FD3C_eu_x"]
       - [0x120598, c, "func_8042F7A8_de"]
-      - [0x12070C, asm, "func_8042F91C_de"]
+      - [0x12070C, c, "func_8042F91C_de"]
       - [0x120938, c, "func_8042FB48_de"]
       - [0x120D30, c, "func_8042FF40_de"]
       - [0x120E18, c, "func_80430028_de"]
