@@ -1,9 +1,9 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80217388_H
 #define UNBAKE_SPAN_1000_CODE_80217388_H
-#include "common/types_1dc8418c21db.h"
-#include "common/types_8a8189af7b05.h"
-#include "gfx.h"
 #include "../types.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
+#include "gfx.h"
 struct func_80218E98_S3;
 /* unbake published declaration: published_02481b6d783b05cc0d706059 */
 struct func_80218E98_S3 {
@@ -74,7 +74,7 @@ struct Menu {
 extern float D_800C2254_de;
 
 /* unbake published declaration: published_16ebd8b9f03131d6b633c7d3 */
-extern void func_80218E98_de(volatile char *arg0);
+extern void func_80218E98_de( char *arg0);
 
 struct func_8021836C_S2;
 /* unbake published declaration: published_21e33c5fdc1310103118be71 */
