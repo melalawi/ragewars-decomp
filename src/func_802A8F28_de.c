@@ -1,4 +1,5 @@
 #include "span_1000/code_802A8A94.h"
+#include "span_1000/code_802A8A94.h"
 #include "types.h"
 #include "gfx.h"
 #include "gbi.h"
@@ -6,9 +7,6 @@
 #include "n64sdk.h"
 
 /* Draws a text string in the current font style D_801376F8: when centring, measures it through func_804422F0_de at the style size scaled by the language-dependent factors for D_80147150, shrinks the scale so it fits 44 pixels inside the screen width D_800DE880_de and shifts x left by half the width; then sets the environment colour from the style with the given alpha and the primitive colour from the style, and draws the string through func_802A88F0_de, first as a shadow when requested. */
-
-
-
 
 extern s32 D_800DE880_de;
 extern Gfx *D_8010C574;
@@ -102,9 +100,7 @@ void func_802A8F28_de(s32 text, s32 x, s32 y, s32 alpha, s32 centred, s32 shadow
 /* Emits the render-state display-list prologue for a flat colour pass: pipeline sync, one-cycle
    mode, the two combiner/mode presets through func_80268CE0_de and func_8026925C_de, the environment
    colour from the argument with full alpha bits, texture enable and the texture-filter, colour-dither
-   and alpha-dither mode words, the alpha dither chosen by D_800DE888_de. Written with the house
-   Gfx-packet idiom used by func_8021CBD0_de. */
-
+   and alpha-dither mode words, the alpha dither chosen by D_800DE888_de. */
 
 extern Gfx *D_8010C574;
 extern s32 D_800DE888_de;
@@ -128,10 +124,7 @@ void func_802A9234_de(s32 color) {
 }
 
 extern Gfx *D_8010C574;
-#define S(v,s) ((u32)(v) << (s))
-#define S12(v,s) (((u32)(v) & 0xFFF) << (s))
-#define S9(v,s) (((u32)(v) & 0x1FF) << (s))
-#define S16(v,s) (((u32)(v) & 0xFFFF) << (s))
+
 void func_802A9364_de(void *pTexture, void *pOpacity, int XPos, int YPos, int TextureWidth, int TextureHeight) {
     { gDPSetTextureImage(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)pOpacity); gDPSetTile(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_16b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0); gDPLoadSync(D_8010C574++); gDPLoadBlock(D_8010C574++, G_TX_LOADTILE, 0, 0, (u32)((((((TextureWidth*TextureHeight+3)>>2)-1)<2047?(((TextureWidth*TextureHeight+3)>>2)-1):2047))), (u32)((((1<<11)+(1>(TextureWidth/16)?1:(TextureWidth/16))-1)/(1>(TextureWidth/16)?1:(TextureWidth/16))))); gDPPipeSync(D_8010C574++); gDPSetTile(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_4b, (u32)(((((TextureWidth>>1)+7)>>3))), 256, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0); gDPSetTileSize(D_8010C574++, G_TX_RENDERTILE, 0, 0, (u32)(((TextureWidth-1)<<2)), (u32)(((TextureHeight-1)<<2))); }
     { gDPSetTextureImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)pTexture); gDPSetTile(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0); gDPLoadSync(D_8010C574++); gDPLoadBlock(D_8010C574++, G_TX_LOADTILE, 0, 0, (u32)((((TextureWidth*TextureHeight-1)<2047?(TextureWidth*TextureHeight-1):2047))), (u32)((((1<<11)+(1>(TextureWidth*2/8)?1:(TextureWidth*2/8))-1)/(1>(TextureWidth*2/8)?1:(TextureWidth*2/8))))); gDPPipeSync(D_8010C574++); gDPSetTile(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, (u32)((((TextureWidth*2)+7)>>3)), 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0); gDPSetTileSize(D_8010C574++, G_TX_RENDERTILE, 0, 0, (u32)(((TextureWidth-1)<<2)), (u32)(((TextureHeight-1)<<2))); }
@@ -139,8 +132,6 @@ void func_802A9364_de(void *pTexture, void *pOpacity, int XPos, int YPos, int Te
     gDPSetTileSize(D_8010C574++, 1, 0, 0, (u32)(((TextureWidth-1)<<2)), (u32)(((TextureHeight-1)<<2)));
     { Gfx *g=D_8010C574++; gDPTexRect(g, XPos<<2, YPos<<2, (XPos+TextureWidth)<<2, (YPos+TextureHeight)<<2, 0); gDPHalf1(D_8010C574++, 0); gDPHalf2(D_8010C574++, (((u32)((1<<10)) & 0xFFFF) << ((16)))|(((u32)((1<<10)) & 0xFFFF) << ((0)))); }
 }
-
-/* NON_MATCHING: legacy logic/order port; public five-version comparison required. */
 
 extern Gfx *D_8010C574;
 
@@ -168,10 +159,7 @@ void func_802A9734_de(void *pTexture, void *pOpacity, float XPos, float YPos, in
 /* Appends display-list commands to D_8010C574 that load a 4-bit texture block of the given size and draw it as a texture rectangle at the given position. Adapted from func_802A9364_de with the palette block and the second texture block removed and its first block's image pointer taken from the texture argument. */
 
 extern Gfx *D_8010C574;
-#define S(v,s) ((u32)(v) << (s))
-#define S12(v,s) (((u32)(v) & 0xFFF) << (s))
-#define S9(v,s) (((u32)(v) & 0x1FF) << (s))
-#define S16(v,s) (((u32)(v) & 0xFFFF) << (s))
+
 void func_802A9CD0_de(void *pTexture, int XPos, int YPos, int TextureWidth, int TextureHeight) {
     { gDPSetTextureImage(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)pTexture); gDPSetTile(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_16b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0); gDPLoadSync(D_8010C574++); gDPLoadBlock(D_8010C574++, G_TX_LOADTILE, 0, 0, (u32)((((((TextureWidth*TextureHeight+3)>>2)-1)<2047?(((TextureWidth*TextureHeight+3)>>2)-1):2047))), (u32)((((1<<11)+(1>(TextureWidth/16)?1:(TextureWidth/16))-1)/(1>(TextureWidth/16)?1:(TextureWidth/16))))); gDPPipeSync(D_8010C574++); gDPSetTile(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_4b, (u32)(((((TextureWidth>>1)+7)>>3))), 256, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0); gDPSetTileSize(D_8010C574++, G_TX_RENDERTILE, 0, 0, (u32)(((TextureWidth-1)<<2)), (u32)(((TextureHeight-1)<<2))); }
     { Gfx *g=D_8010C574++; gDPTexRect(g, XPos<<2, YPos<<2, (XPos+TextureWidth)<<2, (YPos+TextureHeight)<<2, 0); gDPHalf1(D_8010C574++, 0); gDPHalf2(D_8010C574++, (((u32)((1<<10)) & 0xFFFF) << ((16)))|(((u32)((1<<10)) & 0xFFFF) << ((0)))); }
