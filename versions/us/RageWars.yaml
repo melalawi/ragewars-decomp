@@ -5250,7 +5250,7 @@ segments:
       - [0x1A8204, c, "func_80444094_de"]
       - [0x1A8260, asm, "func_804440F0_de"]
       - [0x1A82B8, c, "func_80444148_de"]
-      - [0x1A8320, asm, "func_804441B0_de"]
+      - [0x1A8320, c, "func_804441B0_de"]
       - [0x1A8354, c, "func_804441E4_de"]
       - [0x1A8364, c, "func_804441F4_de"]
       - [0x1A838C, c, "func_8044421C_de"]
