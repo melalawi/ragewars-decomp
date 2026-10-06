@@ -1424,8 +1424,6 @@ segments:
       - [0x664C0, c, "func_80265900_de"]
       - [0x664DC, c, "func_8026591C_de"]
       - [0x664FC, c, "func_8026593C_de"]
-      - [0x66524, c, "func_80265964_de"]
-      - [0x665A0, c, "func_802659E0_de"]
       - [0x66990, c, "func_80265DD0_de"]
       - [0x669C8, asm, "func_80265DC8_eu"]
       - [0x669D0, asm, "func_80265E10_de"]
