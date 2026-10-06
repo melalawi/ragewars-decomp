@@ -825,7 +825,7 @@ segments:
       - [0x3D9C4, c, "func_8023CDD4_de"]
       - [0x3DA8C, asm, "func_8023CE9C_de"]
       - [0x3DBB8, data, "func_8023D008_eu_x_padding_3DBB8"]
-      - [0x03DBC0, asm, "func_8023D010_eu_x"]
+      - [0x03DBC0, c, "func_8023D010_eu_x"]
       - [0x3DBC8, asm, "func_8023D018_eu_x"]
       - [0x3DBD0, asm, "func_8023CFE0_de"]
       - [0x3DD48, c, "func_8023D158_de"]

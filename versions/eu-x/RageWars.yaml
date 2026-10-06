@@ -825,7 +825,7 @@ segments:
       - [0x3DA14, c, "func_8023CDD4_de"]
       - [0x3DADC, asm, "func_8023CE9C_de"]
       - [0x3DC08, data, "func_8023D008_eu_x_padding_3DC08"]
-      - [0x03DC10, asm, "func_8023D010_eu_x"]
+      - [0x03DC10, c, "func_8023D010_eu_x"]
       - [0x3DC18, asm, "func_8023D018_eu_x"]
       - [0x3DC20, asm, "func_8023CFE0_de"]
       - [0x3DD98, c, "func_8023D158_de"]

@@ -1742,15 +1742,6 @@
       "exact": true,
       "minutes": 18.57
     },
-    "func_802B1554_us_rev1": {
-      "attempts": 1,
-      "best": {
-        "us-rev1": 100.0
-      },
-      "bytes": 8,
-      "exact": true,
-      "minutes": 0.02
-    },
     "func_802B2CF0_de": {
       "attempts": 1,
       "best": {
