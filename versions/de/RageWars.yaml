@@ -81,7 +81,7 @@ segments:
       - [0x2E68, data, "rodata/unresolved/80202268"]
       - [0x2EE0, asm, "func_802022E0_de"]
       - [0x2F8C, hasm, "func_8020238C_de"]
-      - [0x2FA8, asm, "func_802023A8_de"]
+      - [0x2FA8, hasm, "func_802023A8_de"]
       - [0x2FC4, hasm, "func_802023C4_de"]
       - [0x2FD0, hasm, "func_802023D0_de"]
       - [0x2FDC, asm, "func_802023DC_de"]
