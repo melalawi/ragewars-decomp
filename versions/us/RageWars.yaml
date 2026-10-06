@@ -1413,7 +1413,7 @@ segments:
       - [0x664A0, c, "func_80265900_de"]
       - [0x664BC, c, "func_8026591C_de"]
       - [0x664DC, c, "func_8026593C_de"]
-      - [0x66504, asm, "func_80265964_de"]
+      - [0x66504, c, "func_80265964_de"]
       - [0x66580, c, "func_802659E0_de"]
       - [0x66970, c, "func_80265DD0_de"]
       - [0x669A8, data, "rodata/unresolved/80265DA8"]

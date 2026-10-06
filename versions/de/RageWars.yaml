@@ -1415,7 +1415,7 @@ segments:
       - [0x66500, c, "func_80265900_de"]
       - [0x6651C, c, "func_8026591C_de"]
       - [0x6653C, c, "func_8026593C_de"]
-      - [0x66564, asm, "func_80265964_de"]
+      - [0x66564, c, "func_80265964_de"]
       - [0x665E0, c, "func_802659E0_de"]
       - [0x669D0, c, "func_80265DD0_de"]
       - [0x66A08, asm, "func_80265E08_de"]
