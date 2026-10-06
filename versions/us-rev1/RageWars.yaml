@@ -2441,8 +2441,6 @@ segments:
       - [0xBB0CC, data, "func_802B56DC_eu_x_padding_BB0CC"]
       - [0x0BB0D0, asm, "func_802B56E0_eu_x"]
       - [0xBB210, c, "func_802B5540_de"]
-      - [0xBB240, c, "func_802B5570_de"]
-      - [0xBB400, c, "func_802B5730_de"]
       - [0xBB4C0, asm, "func_802B57F0_de"]
       - [0xBB864, asm, "func_802B5B94_de"]
       - [0xBBA40, c, "func_802B5D70_de"]
