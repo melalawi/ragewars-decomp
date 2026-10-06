@@ -5421,7 +5421,7 @@ segments:
       - [0x1A8214, c, "func_80442214_de"]
       - [0x1A8A58, c, "func_80442A58_de"]
       - [0x1A8EC0, asm, "func_80442EC0_de"]
-      - [0x1A8FB0, asm, "func_80442FB0_de"]
+      - [0x1A8FB0, c, "func_80442FB0_de"]
       - [0x1A9104, c, "func_80443104_de"]
       - [0x1A9128, asm, "func_80443128_de"]
       - [0x1A91E4, c, "func_804431E4_de"]
