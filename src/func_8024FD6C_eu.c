@@ -1,38 +1,11 @@
 #include "span_1000/code_8024E914.h"
-#include "common/types_1dc8418c21db.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 #include "span_1000/code_8024E914.h"
+#include "common/types_1dc8418c21db.h"
 #include "types.h"
+#include "packed_float.h"
+
 /* Initialises a placed prop from its record: resets its state and owner, loads its model and caches the squared model radius, builds its rotation from the record's packed quaternion, scale and position into a matrix copied into the object, sets its bounding box either as a fixed cube for flag 0x40 or from the record's six extents through func_802B2350 with a half-unit margin, copies the position, links its path segment and takes the next colour key and colour frame. The fixed cube is written through do-while(0) vector macros, which the stores' order needs, and 102.4 is the cartridge's rounded 0x42CCCCCC. */
-#if defined(VERSION_DE)
-extern s32 func_8024E924_de(PlacedProp *);
-#endif
-
-
-
-
-
-
-
-
-
-#define VEC_SUB_SCALAR(dst, src, value) \
-    do {                                \
-        (dst).x = (src).x - (value);    \
-        (dst).y = (src).y - (value);    \
-        (dst).z = (src).z - (value);    \
-    } while (0)
-
-#define VEC_ADD_SCALAR(dst, src, value) \
-    do {                                \
-        (dst).x = (src).x + (value);    \
-        (dst).y = (src).y + (value);    \
-        (dst).z = (src).z + (value);    \
-    } while (0)
-
-
 extern s32 D_800CD8D0;
-
 
 extern char D_8011BDC8;
 
@@ -43,13 +16,7 @@ extern void func_80274244_de(f32 *, char *);
 extern void func_8027347C_de(char *, f32, f32, f32);
 extern void func_80273448_de(char *, f32, f32, f32);
 extern void func_80273D6C_de(char *);
-#if defined(VERSION_EU)
-extern f32 func_802AD520_eu(s32);
-#define RW_BITS_TO_FLOAT func_802AD520_eu
-#else
-extern f32 func_802AD280_de(s32);
-#define RW_BITS_TO_FLOAT func_802AD280_de
-#endif
+
 extern void func_80272FBC_de(char *, char *);
 extern void func_8027027C_de(char *, char *);
 
@@ -93,8 +60,8 @@ void func_8024FD6C_eu(PlacedProp *prop, PlacedPropRecord *record, s32 owner, cha
     func_80273448_de(matrix, record->position.x, record->position.y, record->position.z);
     func_80273D6C_de(matrix);
     if (prop->flags & 0x40) {
-        VEC_SUB_SCALAR(prop->min, record->position, 102.399994f);
-        VEC_ADD_SCALAR(prop->max, record->position, 102.399994f);
+        do { (prop->min).x = (record->position).x - (102.399994f); (prop->min).y = (record->position).y - (102.399994f); (prop->min).z = (record->position).z - (102.399994f); } while (0);
+        do { (prop->max).x = (record->position).x + (102.399994f); (prop->max).y = (record->position).y + (102.399994f); (prop->max).z = (record->position).z + (102.399994f); } while (0);
         prop->fieldD4 = D_800CD8D0;
     } else {
         prop->min.x = RW_BITS_TO_FLOAT(record->extents[0]) + record->position.x - 0.5f;
@@ -115,9 +82,5 @@ void func_8024FD6C_eu(PlacedProp *prop, PlacedPropRecord *record, s32 owner, cha
     }
     prop->key = func_80250BF0_de() << 10;
     prop->colorFrame = D_800CD72B - 1;
-#if defined(VERSION_DE)
-    if ((u32)(func_8024E924_de(prop) - 9) < 2) {
-        prop->flags |= 0x50;
-    }
-#endif
+
 }
