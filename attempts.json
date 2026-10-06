@@ -1006,17 +1006,17 @@
       "minutes": 0.02
     },
     "func_80259C5C_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
-        "de": 95.38,
-        "eu": 95.38,
-        "eu-x": 95.38,
-        "us": 95.38,
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
         "us-rev1": 100.0
       },
       "bytes": 780,
-      "exact": false,
-      "minutes": 0.03
+      "exact": true,
+      "minutes": 12.46
     },
     "func_8025A844_de": {
       "attempts": 1,
