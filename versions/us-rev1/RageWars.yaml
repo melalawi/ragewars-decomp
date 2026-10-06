@@ -4941,7 +4941,7 @@ segments:
       - [0x18AEB0, asm, "func_8041CEB0_us_rev1"]
       - [0x18B1A4, c, "func_8041D134_de"]
       - [0x18B550, asm, "func_8041D4E0_de"]
-      - [0x18B718, asm, "func_8041D6A8_de"]
+      - [0x18B718, c, "func_8041D6A8_de"]
       - [0x18B9D0, c, "func_8041D960_de"]
       - [0x18BACC, c, "func_8041DA5C_de"]
       - [0x18BBA0, c, "func_8041DB30_de"]

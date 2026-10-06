@@ -1,0 +1,61 @@
+#include "span_16E000/code_8041BEA8.h"
+#include "types.h"
+#include "common/unused.h"
+/* Fills the player record screen for the selected record D_800FEB00[index]: shows the record's
+   name in item 0x1F3 and its rank text from func_80424DE8_de in item 0x1F2, and formats into the
+   screen's text buffers the record's counters at 0x70, 0x6C and 0x74, the value func_80426004_de
+   reports and the byte at 0x17 for items 0x1FD, 0x1F4, 0x1F6, 0x1F9 and 0x1FA, making each item
+   visible through func_8040E8D8_de. */
+
+#if defined(VERSION_DE)
+enum { PROFILE_RESOURCE_498 = 494, PROFILE_RESOURCE_499 = 495, PROFILE_RESOURCE_500 = 496, PROFILE_RESOURCE_502 = 498, PROFILE_RESOURCE_505 = 501, PROFILE_RESOURCE_506 = 502, PROFILE_RESOURCE_509 = 505 };
+#elif defined(VERSION_EU_X)
+enum { PROFILE_RESOURCE_498 = 502, PROFILE_RESOURCE_499 = 503, PROFILE_RESOURCE_500 = 504, PROFILE_RESOURCE_502 = 507, PROFILE_RESOURCE_505 = 509, PROFILE_RESOURCE_506 = 511, PROFILE_RESOURCE_509 = 513 };
+#else
+enum { PROFILE_RESOURCE_498 = 498, PROFILE_RESOURCE_499 = 499, PROFILE_RESOURCE_500 = 500, PROFILE_RESOURCE_502 = 502, PROFILE_RESOURCE_505 = 505, PROFILE_RESOURCE_506 = 506, PROFILE_RESOURCE_509 = 509 };
+#endif
+
+extern ProfileStatisticsScreen *D_800DF540;
+extern Record_func_80433914_de D_800FEB00[];
+extern char D_800DD508_de[];
+extern char D_800DD50C[];
+
+extern Label *func_8040EC30_de(void *, s32);
+extern void func_8040E8D8_de(Label *, s32);
+extern void func_802A0C08_de(char *, char *, s32);
+extern char *func_80424DE8_de(s32);
+extern s32 func_80426004_de(s32);
+
+void func_8041D6A8_de(void) {
+    Label *item;
+    s32 score;
+
+    item = func_8040EC30_de(D_800DF540->handle, PROFILE_RESOURCE_499);
+    func_8040E8D8_de(item, 1);
+    item->text = D_800FEB00[D_800DF540->index].name;
+    item = func_8040EC30_de(D_800DF540->handle, PROFILE_RESOURCE_498);
+    func_8040E8D8_de(item, 1);
+    item->text = func_80424DE8_de(D_800DF540->index);
+    item = func_8040EC30_de(D_800DF540->handle, PROFILE_RESOURCE_509);
+    func_8040E8D8_de(item, 1);
+    func_802A0C08_de(D_800DF540->kills, D_800DD508_de, D_800FEB00[D_800DF540->index].statistics.kills);
+    item->text = D_800DF540->kills;
+    item = func_8040EC30_de(D_800DF540->handle, PROFILE_RESOURCE_500);
+    func_8040E8D8_de(item, 1);
+    func_802A0C08_de(D_800DF540->wins, D_800DD508_de, D_800FEB00[D_800DF540->index].statistics.wins);
+    item->text = D_800DF540->wins;
+    item = func_8040EC30_de(D_800DF540->handle, PROFILE_RESOURCE_502);
+    func_8040E8D8_de(item, 1);
+    func_802A0C08_de(D_800DF540->deaths, D_800DD508_de, D_800FEB00[D_800DF540->index].statistics.deaths);
+    item->text = D_800DF540->deaths;
+    score = func_80426004_de(D_800DF540->index);
+    item = func_8040EC30_de(D_800DF540->handle, PROFILE_RESOURCE_505);
+    func_8040E8D8_de(item, 1);
+    func_802A0C08_de(D_800DF540->score, D_800DD50C, score);
+    item->text = D_800DF540->score;
+    item = func_8040EC30_de(D_800DF540->handle, PROFILE_RESOURCE_506);
+    func_8040E8D8_de(item, 1);
+    func_802A0C08_de(D_800DF540->count, D_800DD50C, D_800FEB00[D_800DF540->index].count);
+    item->text = D_800DF540->count;
+}
+
