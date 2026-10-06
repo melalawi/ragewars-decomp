@@ -1,7 +1,6 @@
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8023B9A0.h"
-/* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 #include "types.h"
 
 
@@ -28,7 +27,7 @@ void func_8023C6BC_de(void) {
     s32 var_a0_2;
     u16 temp_v0;
     s32 *out;
-    volatile s32 *ordered;
+    s32 *ordered;
 
     var_a2 = 0;
     var_a3 = 0x80000000;
@@ -59,8 +58,8 @@ void func_8023C6BC_de(void) {
 
     out = D_800FF24C;
     ordered = out;
-    ordered[0] = var_a0_2;
-    ordered[-3] = var_a2;
-    ordered[-2] = var_a3;
-    out[-1] = D_800FFE20->unkC;
+    *ordered = var_a0_2;
+    ((u32 *)ordered)[-3] = var_a2;
+    ((u32 *)ordered)[-2] = var_a3;
+    __builtin_memcpy(&out[-1], &D_800FFE20->unkC, sizeof(s32));
 }
