@@ -1,3 +1,4 @@
+#include "span_1000/code_8026AC38.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8026AC38.h"
 #include "abi.h"
@@ -6,11 +7,7 @@
 #include "gbi.h"
 #include "n64sdk.h"
 
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* Draws the parts of a model resource that the owner has enabled, when the frame command buffer still has 3000 commands free: each part material's low two bits of byte 6 pick an owner flag at 0x102 (0x100, 0x8 or 0x2, 0x80 or 0x20 by bit 4) that must be set before func_80269A80_de accepts the material and its display list is emitted. Adapted from func_8026DA4C_de with the owner argument and the per-material flag switch added. */
-
-
-
 
 extern Gfx *D_8010C574;
 extern struct Frame118 *D_8011BDC0;
@@ -19,8 +16,6 @@ extern void func_80253BBC_de(s32 heap, void **resource);
 extern void *func_8028FDB4_de(void *table, s32 index);
 extern s32 func_8026B504_de(s32 matrix, s32 lights, void *material);
 extern s32 func_80269A80_de(void *material, s32 pass);
-
-
 
 void func_8026B9EC_de(void **resource, struct Owner104 *owner, s32 matrix, s32 segment, s32 lights, void *textures, s32 pass) {
     void *header;
@@ -91,17 +86,6 @@ void func_8026B9EC_de(void **resource, struct Owner104 *owner, s32 matrix, s32 s
         }
     }
 }
-
-#define NULL ((void *) 0)
-
-
-
-
-
-
-
-
-
 extern u8 D_8010C567;
 extern Node_func_8026BC60_de *D_8010C568;
 extern Node_func_8026BC60_de *D_8010C56C;
@@ -119,9 +103,9 @@ extern void *func_8028FDB4_de(void *, s32);
 
 /* Returns the node keyed key in the tree under n, or the node a new key would hang from. */
 static inline Node_func_8026BC60_de *find_node(Node_func_8026BC60_de *n, u32 key) {
-    Node_func_8026BC60_de *parent = NULL;
+    Node_func_8026BC60_de *parent = ((void *) 0);
 
-    while (n != NULL) {
+    while (n != ((void *) 0)) {
         if (n->key == key) {
             return n;
         }
@@ -164,7 +148,7 @@ void func_8026BC60_de(void) {
             } else {
                 parent = find_node(D_8010C568, key);
             }
-            if (parent != NULL && parent->key == key) {
+            if (parent != ((void *) 0) && parent->key == key) {
                 node = parent;
             } else {
                 if (D_8010C578 == 120) {
@@ -173,17 +157,17 @@ void func_8026BC60_de(void) {
                 node = &D_80110410[D_8010C578++];
                 node->key = key;
                 node->source = source;
-                node->tail = NULL;
-                node->head = NULL;
+                node->tail = ((void *) 0);
+                node->head = ((void *) 0);
                 if (source->flags & 0x700) {
-                    if (parent != NULL) {
+                    if (parent != ((void *) 0)) {
                         if (node->key < parent->key) {
                             parent->left = node;
-                            node->right = NULL;
-                            node->left = NULL;
+                            node->right = ((void *) 0);
+                            node->left = ((void *) 0);
                             node->next = parent;
                             node->prev = parent->prev;
-                            if (parent->prev != NULL) {
+                            if (parent->prev != ((void *) 0)) {
                                 parent->prev->next = node;
                             }
                             parent->prev = node;
@@ -192,10 +176,10 @@ void func_8026BC60_de(void) {
                             }
                         } else {
                             parent->right = node;
-                            node->right = NULL;
-                            node->left = NULL;
+                            node->right = ((void *) 0);
+                            node->left = ((void *) 0);
                             node->next = parent->next;
-                            if (parent->next != NULL) {
+                            if (parent->next != ((void *) 0)) {
                                 parent->next->prev = node;
                             }
                             node->prev = parent;
@@ -204,20 +188,20 @@ void func_8026BC60_de(void) {
                     } else {
                         D_8010C57C = node;
                         D_8010C584 = node;
-                        node->right = NULL;
-                        node->left = NULL;
-                        node->next = NULL;
-                        node->prev = NULL;
+                        node->right = ((void *) 0);
+                        node->left = ((void *) 0);
+                        node->next = ((void *) 0);
+                        node->prev = ((void *) 0);
                     }
                 } else {
-                    if (parent != NULL) {
+                    if (parent != ((void *) 0)) {
                         if (node->key < parent->key) {
                             parent->left = node;
-                            node->right = NULL;
-                            node->left = NULL;
+                            node->right = ((void *) 0);
+                            node->left = ((void *) 0);
                             node->next = parent;
                             node->prev = parent->prev;
-                            if (parent->prev != NULL) {
+                            if (parent->prev != ((void *) 0)) {
                                 parent->prev->next = node;
                             }
                             parent->prev = node;
@@ -226,10 +210,10 @@ void func_8026BC60_de(void) {
                             }
                         } else {
                             parent->right = node;
-                            node->right = NULL;
-                            node->left = NULL;
+                            node->right = ((void *) 0);
+                            node->left = ((void *) 0);
                             node->next = parent->next;
-                            if (parent->next != NULL) {
+                            if (parent->next != ((void *) 0)) {
                                 parent->next->prev = node;
                             }
                             node->prev = parent;
@@ -238,10 +222,10 @@ void func_8026BC60_de(void) {
                     } else {
                         D_8010C568 = node;
                         D_8010C56C = node;
-                        node->right = NULL;
-                        node->left = NULL;
-                        node->next = NULL;
-                        node->prev = NULL;
+                        node->right = ((void *) 0);
+                        node->left = ((void *) 0);
+                        node->next = ((void *) 0);
+                        node->prev = ((void *) 0);
                     }
                 }
             }
@@ -257,8 +241,8 @@ void func_8026BC60_de(void) {
                     item->unk10 = source->unk18;
                     item->unk12 = source->unk1A;
                     item->unk14 = param->field_C;
-                    item->next = NULL;
-                    if (node->tail != NULL) {
+                    item->next = ((void *) 0);
+                    if (node->tail != ((void *) 0)) {
                         node->tail->next = item;
                     } else {
                         node->head = item;
