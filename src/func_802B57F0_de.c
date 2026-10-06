@@ -1,67 +1,32 @@
 #include "span_1000/code_802B53FC.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
+#include "span_1000/code_802B53FC.h"
 #include "abi.h"
 #include "audio_callbacks.h"
 #include "common/unused.h"
-#include "span_1000/code_802B53FC.h"
 #include "types.h"
+
 /* alFxPull, drafted from ultralib src/audio/reverb.c: pull the effect's source, mix the aux left
    and right outputs into the delay line input, run each delay section (load, feed-forward and
    feedback mixes, low-pass, save, gain into the output), advance the delay line input modulo its
    length and move the result into the aux left output. */
 
-
-
-
-
-
 typedef struct ALLowPass_s ALLowPass;
-
-
-
-
-
-/* Resident 'EX' object proven in every holding ROM. */
 #if defined(VERSION_DE)
-#define RW_REVERB_ASSERT_EX D_800C7780
-#elif defined(VERSION_US)
-#define RW_REVERB_ASSERT_EX D_800C76A0
+extern char D_800C7780[];
 #elif defined(VERSION_EU)
-#define RW_REVERB_ASSERT_EX D_800C8370
+extern char D_800C8370[];
 #elif defined(VERSION_EU_X)
-#define RW_REVERB_ASSERT_EX D_800C8D40
+extern char D_800C8D40[];
+#elif defined(VERSION_US)
+extern char D_800C76A0[];
 #else
-#define RW_REVERB_ASSERT_EX D_800CC9D0
+extern char D_800CC9D0[];
 #endif
-extern char RW_REVERB_ASSERT_EX[];
 extern char D_800C7784_de[]; /* "audio/reverb.c" */
 extern void func_802BAC50_de(char *, char *, s32); /* __assert */
 extern Acmd *func_802B5D70_de(struct ALFx *, ALDelay28 *, s32, s32, Acmd *); /* _loadOutputBuffer */
-extern Acmd *func_802B60EC_de(struct ALFx *, s16 *, s32, s32, Acmd *);    /* _loadBuffer */
-extern Acmd *func_802B5F68_de(struct ALFx *, s16 *, s32, s32, Acmd *);    /* _saveBuffer */
-
-#define AL_TEMP_0 0
-#define AL_TEMP_1 320
-#define AL_AUX_L_OUT 1728
-#define AL_AUX_R_OUT 2048
-
-
-
-
-
-
-
-
-
-
-
-#define SWAP(in, out) \
-    {                 \
-        s16 t = out;  \
-        out = in;     \
-        in = t;       \
-    }
-
+extern Acmd *func_802B60EC_de(struct ALFx *, s16 *, s32, s32, Acmd *); /* _loadBuffer */
+extern Acmd *func_802B5F68_de(struct ALFx *, s16 *, s32, s32, Acmd *); /* _saveBuffer */
 Acmd *func_802B57F0_de(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, Acmd *p)
 {
     Acmd *ptr = p;
@@ -72,18 +37,28 @@ Acmd *func_802B57F0_de(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, 
     ALDelay28 *d, *pd;
 
     if (!source)
-        func_802BAC50_de(RW_REVERB_ASSERT_EX, D_800C7784_de, 75);
+#if defined(VERSION_DE)
+        func_802BAC50_de(D_800C7780, D_800C7784_de, 75);
+#elif defined(VERSION_EU)
+        func_802BAC50_de(D_800C8370, D_800C7784_de, 75);
+#elif defined(VERSION_EU_X)
+        func_802BAC50_de(D_800C8D40, D_800C7784_de, 75);
+#elif defined(VERSION_US)
+        func_802BAC50_de(D_800C76A0, D_800C7784_de, 75);
+#else
+        func_802BAC50_de(D_800CC9D0, D_800C7784_de, 75);
+#endif
 
     ptr = (*source->handler)(source, outp, outCount, sampleOffset, p);
 
-    input = AL_AUX_L_OUT;
-    output = AL_AUX_R_OUT;
-    buff1 = AL_TEMP_0;
-    buff2 = AL_TEMP_1;
+    input = 1728;
+    output = 2048;
+    buff1 = 0;
+    buff2 = 320;
 
     aSetBuffer(ptr++, 0, 0, 0, outCount << 1);
-    aMix(ptr++, 0, 0xda83, AL_AUX_L_OUT, input);
-    aMix(ptr++, 0, 0x5a82, AL_AUX_R_OUT, input);
+    aMix(ptr++, 0, 0xda83, 1728, input);
+    aMix(ptr++, 0, 0x5a82, 2048, input);
     ptr = func_802B5F68_de(r, r->input, input, outCount, ptr);
 
     aClearBuffer(ptr++, output, outCount << 1);
@@ -94,7 +69,7 @@ Acmd *func_802B57F0_de(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, 
         out_ptr = &r->input[-d->output];
 
         if (in_ptr == prev_out_ptr) {
-            SWAP(buff1, buff2);
+            { s16 t = buff2; buff2 = buff1; buff1 = t; };
         } else {
             ptr = func_802B60EC_de(r, in_ptr, buff1, outCount, ptr);
         }
@@ -128,7 +103,7 @@ Acmd *func_802B57F0_de(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, 
     if (r->input > &r->base[r->length])
         r->input -= r->length;
 
-    aDMEMMove(ptr++, output, AL_AUX_L_OUT, outCount << 1);
+    aDMEMMove(ptr++, output, 1728, outCount << 1);
 
     return ptr;
 }
