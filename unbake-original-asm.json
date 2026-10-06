@@ -6,6 +6,9 @@
     },
     "func_8020238C_de": {
       "rule": "cop0"
+    },
+    "func_802023C4_de": {
+      "rule": "cop0"
     }
   }
 }
