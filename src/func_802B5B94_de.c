@@ -1,16 +1,15 @@
 #include "span_1000/code_802B53FC.h"
+#include "span_1000/code_802B53FC.h"
 #include "span_C76B0/data.h"
 #include "types.h"
 #include "common/unused.h"
 #include "abi.h"
 
-extern ALGlobals_func_802B5B94_de *D_800D4070;        /* alGlobals */
+extern ALGlobals_func_802B5B94_de *D_800D4070; /* alGlobals */
 
        /* 1/1000 */
-extern const double D_800C77C0_de;      /* 2^32 */
-extern const float D_800C77C8_de;       /* 1/CONVERT */
-
-#define LENGTH (f->delay[s].output - f->delay[s].input)
+extern const double D_800C77C0_de; /* 2^32 */
+extern const float D_800C77C8_de; /* 1/CONVERT */
 
 s32 func_802B5B94_de(void *filter, s32 paramID, void *param)
 {
@@ -40,7 +39,7 @@ s32 func_802B5B94_de(void *filter, s32 paramID, void *param)
             break;
         case 6: {
             f32 fval = (f32)val;
-            s32 length = LENGTH;
+            s32 length = (f->delay[s].output - f->delay[s].input);
             double flength = length;
 
             if (length < 0)

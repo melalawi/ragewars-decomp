@@ -3126,7 +3126,7 @@
       "minutes": 42.06
     },
     "func_802B5B94_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -3136,7 +3136,7 @@
       },
       "bytes": 980,
       "exact": true,
-      "minutes": 0.03
+      "minutes": 42.31
     },
     "func_802B6560_de": {
       "attempts": 1,
