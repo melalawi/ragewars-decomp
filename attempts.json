@@ -1996,6 +1996,19 @@
       "exact": false,
       "minutes": 0.02
     },
+    "func_8027E784_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 936,
+      "exact": false,
+      "minutes": 0.04
+    },
     "func_8027ED6C_de": {
       "attempts": 1,
       "best": {
@@ -2544,7 +2557,7 @@
       },
       "bytes": 276,
       "exact": true,
-      "minutes": 0.02
+      "minutes": 0.03
     },
     "func_802A0724_de": {
       "attempts": 1,

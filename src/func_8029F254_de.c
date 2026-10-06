@@ -1,19 +1,10 @@
 #include "span_1000/code_8029F3A8.h"
 #include "span_1000/code_8029F3A8.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 #include "common/types_1dc8418c21db.h"
 #include "span_C76B0/data.h"
 #include "types.h"
 
-
-
-
-
-
-
 extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
-
-
 
 void func_8029F254_de(struct Matrix_func_80213CF8_de *arg0, Vec3 *arg1, f32 arg2) {
     f32 sine;
@@ -69,4 +60,3 @@ void func_8029F254_de(struct Matrix_func_80213CF8_de *arg0, Vec3 *arg1, f32 arg2
     arg0->m[2][1] = tyz - sx;
     arg0->m[2][2] = tzz + cosine_value;
 }
-
