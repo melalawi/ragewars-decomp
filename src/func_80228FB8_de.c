@@ -1,3 +1,4 @@
+#include "span_1000/code_80225D10.h"
 #include "abi.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
@@ -15,24 +16,6 @@
    through func_8026CBA4_de with 255 less twice that alpha, mode 1 draws only the second pass in fading
    yellow starting at alpha 128, and mode 3 draws through func_8024A3B0_de with an alpha rising with the
    time; the override is switched off afterwards. */
-#define CLAMP0(x) ((x) < 0.0f ? 0.0f : (x))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 extern Gfx *D_8010C574;
 extern Rules_func_80228FB8_de D_801427E0[];
 extern s32 D_800CC390;
@@ -61,12 +44,12 @@ void func_80228FB8_de(Actor_func_80228FB8_de *actor, s32 arg1, Draw *draw) {
 
                 D_800CC390 = 1;
                 colour = &D_800CC394_de;
-                colour->x = CLAMP0(255.0f - player->tintTime * 17.0f);
-                colour->y = CLAMP0(255.0f - player->tintTime * 17.0f);
+                colour->x = ((255.0f - player->tintTime * 17.0f) < 0.0f ? 0.0f : (255.0f - player->tintTime * 17.0f));
+                colour->y = ((255.0f - player->tintTime * 17.0f) < 0.0f ? 0.0f : (255.0f - player->tintTime * 17.0f));
                 colour->z = 0.0f;
-                colour->w = CLAMP0(255.0f - player->tintTime * 8.533334f);
+                colour->w = ((255.0f - player->tintTime * 8.533334f) < 0.0f ? 0.0f : (255.0f - player->tintTime * 8.533334f));
                 func_8024A3B0_de(actor, player, arg1, draw);
-                colour->w = CLAMP0(255.0f - colour->w * 2.0f);
+                colour->w = ((255.0f - colour->w * 2.0f) < 0.0f ? 0.0f : (255.0f - colour->w * 2.0f));
                 func_8026CBA4_de(draw->model, player, actor->animation, 1,
                               &actor->views[D_800CD72C * 0x18], 0, -1);
             } else if (player->tintMode == 1) {
@@ -74,15 +57,15 @@ void func_80228FB8_de(Actor_func_80228FB8_de *actor, s32 arg1, Draw *draw) {
 
                 D_800CC390 = 1;
                 colour = &D_800CC394_de;
-                colour->x = CLAMP0(255.0f - player->tintTime * 17.0f);
-                colour->y = CLAMP0(255.0f - player->tintTime * 17.0f);
+                colour->x = ((255.0f - player->tintTime * 17.0f) < 0.0f ? 0.0f : (255.0f - player->tintTime * 17.0f));
+                colour->y = ((255.0f - player->tintTime * 17.0f) < 0.0f ? 0.0f : (255.0f - player->tintTime * 17.0f));
                 colour->z = 0.0f;
-                colour->w = CLAMP0(128.0f - player->tintTime * 8.533334f);
+                colour->w = ((128.0f - player->tintTime * 8.533334f) < 0.0f ? 0.0f : (128.0f - player->tintTime * 8.533334f));
                 func_8026CBA4_de(draw->model, player, actor->animation, 1,
                               &actor->views[D_800CD72C * 0x18], 0, -1);
             } else if (player->tintMode == 3) {
                 D_800CC390 = 1;
-                D_800CC394_de.w = CLAMP0(player->tintTime * 0.425f);
+                D_800CC394_de.w = ((player->tintTime * 0.425f) < 0.0f ? 0.0f : (player->tintTime * 0.425f));
                 func_8024A3B0_de(actor, player, arg1, draw);
             }
             D_800CC390 = 0;
@@ -100,16 +83,6 @@ extern func_8020CA10_G1 D_800C2C48_de;
 extern func_8020CA10_G1 D_800C2C4C_de;
 
 extern func_8020CA10_G1 D_800CD738;
-
-
-
-
-
-
-
-
-
-
 void func_802292B8_de(void *arg0) {
     Slot sp18;
     f32 temp_f0;
@@ -166,10 +139,8 @@ void func_802292B8_de(void *arg0) {
 }
 
 /* Transfers a randomly selected inventory quantity into an empty recipient slot. */
-#define NULL ((void *)0)
-s32 func_802744D4_de();                             /* extern */
 
-
+s32 func_802744D4_de(); /* extern */
 
 void func_80229468_de(Inventory *arg0, Receiver *arg1) {
  s32 amount;
@@ -203,15 +174,6 @@ void func_80229468_de(Inventory *arg0, Receiver *arg1) {
    multiplayer, otherwise D_800CE3E8 plus the profile's bonus bytes in D_80102B00 unless ammunition is
    unlimited at 0x1450), and the message "<amount> <type name>" with a plural suffix for more than one
    is built and shown through func_8022B75C_de. */
-
-
-#define MIN(a, b) ((a) < (b) ? (a) : (b))
-
-
-
-
-
-
 extern s32 D_800C9198_de[];
 extern Profile_func_80229554_de D_800FEB00[];
 extern u8 D_80142215;
@@ -251,7 +213,7 @@ void func_80229554_de(SharedPlayer_func_80229554_de *player, s32 type, s32 amoun
     char message[32];
 
     if (amount != 0) {
-        player->views5E8.view5F4_12.ammo[type] = MIN(player->views5E8.view5F4_12.ammo[type] + amount, max_ammo(player, type));
+        player->views5E8.view5F4_12.ammo[type] = ((player->views5E8.view5F4_12.ammo[type] + amount) < (max_ammo(player, type)) ? (player->views5E8.view5F4_12.ammo[type] + amount) : (max_ammo(player, type)));
         func_802A066C_de(amount, number);
         func_802A025C_de(message, number);
         func_802A02E8_de(message, D_800C2C50_de);
