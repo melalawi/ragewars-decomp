@@ -1,4 +1,3 @@
-#ifdef NON_MATCHING
 #include "span_16E000/code_80444030.h"
 #include "types.h"
 #include "common/draft_fields_func_8044417C_de.h"
@@ -21,4 +20,3 @@ s32 func_8044417C_de(s32 arg0) {
     } while (temp_v0 != 0);
     return temp_v0;
 }
-#endif /* NON_MATCHING */
