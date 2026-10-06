@@ -5284,7 +5284,7 @@ segments:
       - [0x1A5624, c, "func_80437444_de"]
       - [0x1A5754, c, "func_80437574_de"]
       - [0x1A5790, c, "func_804375B0_de"]
-      - [0x1A5868, asm, "func_804384B8_eu"]
+      - [0x1A5868, c, "func_804384B8_eu"]
       - [0x1A58F8, c, "func_80437718_de"]
       - [0x1A5998, c, "func_804377B8_de"]
       - [0x1A59C8, c, "func_80438618_eu"]

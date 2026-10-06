@@ -5062,7 +5062,7 @@ segments:
       - [0x1AE274, c, "func_80437444_de"]
       - [0x1AE3A4, c, "func_80437574_de"]
       - [0x1AE3E0, c, "func_804375B0_de"]
-      - [0x1AE4B8, asm, "func_804384B8_eu"]
+      - [0x1AE4B8, c, "func_804384B8_eu"]
       - [0x1AE548, c, "func_80437718_de"]
       - [0x1AE5E8, c, "func_804377B8_de"]
       - [0x1AE618, c, "func_80438618_eu"]
