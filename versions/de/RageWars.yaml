@@ -1470,7 +1470,7 @@ segments:
       - [0x6987C, c, "func_80268C7C_de"]
       - [0x698BC, c, "func_80268CBC_de"]
       - [0x698D4, asm, "func_80268CD4_de"]
-      - [0x698E0, asm, "func_80268CE0_de"]
+      - [0x698E0, c, "func_80268CE0_de"]
       - [0x69E5C, c, "func_8026925C_de"]
       - [0x6A52C, asm, "func_8026992C_de"]
       - [0x6A680, asm, "func_80269A80_de"]
