@@ -4694,8 +4694,6 @@ segments:
       - [0x17FE0C, c, "func_8041BD8C_de"]
       - [0x17FE88, c, "func_8041BE08_de"]
       - [0x17FEA8, c, "func_8041BE28_de"]
-      - [0x17FF10, c, "func_8041BE90_de"]
-      - [0x1801E4, c, "func_8041C164_de"]
       - [0x18021C, c, "func_8041C19C_de"]
       - [0x1802C4, c, "func_8041C244_de"]
       - [0x18032C, c, "func_8041C2AC_de"]

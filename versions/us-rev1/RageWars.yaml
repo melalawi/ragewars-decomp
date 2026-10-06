@@ -4911,8 +4911,6 @@ segments:
       - [0x189E0C, c, "func_8041BD8C_de"]
       - [0x189E88, c, "func_8041BE08_de"]
       - [0x189EA8, c, "func_8041BE28_de"]
-      - [0x189F10, c, "func_8041BE90_de"]
-      - [0x18A1E4, c, "func_8041C164_de"]
       - [0x18A21C, c, "func_8041C19C_de"]
       - [0x18A2C4, c, "func_8041C244_de"]
       - [0x18A32C, c, "func_8041C2AC_de"]
