@@ -1,42 +1,19 @@
 #include "span_16E000/code_8042F988.h"
+#include "span_16E000/code_8042F988.h"
 #include "types.h"
 #include "common/unused.h"
-#if defined(VERSION_EU_X)
-#define PAK_TEXT(fixed, eu, eux, language) ((eux)[language])
-#elif defined(VERSION_EU)
-#define PAK_TEXT(fixed, eu, eux, language) ((eu)[language])
-#else
-#define PAK_TEXT(fixed, eu, eux, language) (fixed)
-#endif
-
-
-
-
-
-
-
-
-
-
 
 extern PakState *D_800E1454_de;
 extern char *D_800D3758;
 
-
 extern char D_800DDEC0[];
+
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern char D_800EE534[], D_800EE540[];
-#define PAK_SIZE_FORMAT D_800DDEC0
-#define PAK_EXTENSION_FORMAT D_800EE534
-#define PAK_NUMBER_FORMAT D_800EE540
 #else
 extern char D_800DDEB0_de[];
-#define PAK_SIZE_FORMAT D_800DDEB0_de
-#define PAK_EXTENSION_FORMAT "%d.%s.%s"
-#define PAK_NUMBER_FORMAT D_800DDEC0
+
 #endif
-
-
 extern s32 func_8040458C_de(s32, s32, s32 *, char *, u8 *, s32 *, char *, char *);
 extern s32 func_804057BC_de(char *, s32);
 extern void func_802A025C_de(char *, char *);
@@ -49,21 +26,25 @@ extern void func_804322AC_de(s32, s32);
 extern void func_80434250_de(s32, s32);
 
 /* Builds a player's controller pak note list: each of the sixteen notes gets its name (a default when unnamed), its size and a numbered label with the extension when it has one, or empty entries once the pak cannot be read; then the free and used page counts are formatted into their menu items, and on any read failure the slot is marked failed instead of opening the note menu. */
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
-extern u8 D_80142208_de[];
-#endif
-#if defined(VERSION_EU)
-extern char *D_800E27B4[], *D_800E1394[];
-#elif defined(VERSION_EU_X)
-extern char *D_800DE03C[], *D_800DD124[];
-#endif
 #if defined(VERSION_DE)
 enum { PAK_RESOURCE_2D7 = 750, PAK_RESOURCE_2D8 = 749, PAK_RESOURCE_2DB = 746, PAK_RESOURCE_2DC = 745, PAK_RESOURCE_2DD = 747 };
+#elif defined(VERSION_EU)
+
+extern u8 D_80142208_de[];
+
+extern char *D_800E27B4[], *D_800E1394[];
+enum { PAK_RESOURCE_2D7 = 727, PAK_RESOURCE_2D8 = 728, PAK_RESOURCE_2DB = 731, PAK_RESOURCE_2DC = 732, PAK_RESOURCE_2DD = 733 };
 #elif defined(VERSION_EU_X)
+
+extern u8 D_80142208_de[];
+
+extern char *D_800DE03C[], *D_800DD124[];
+
 enum { PAK_RESOURCE_2D7 = 753, PAK_RESOURCE_2D8 = 751, PAK_RESOURCE_2DB = 754, PAK_RESOURCE_2DC = 755, PAK_RESOURCE_2DD = 756 };
 #else
 enum { PAK_RESOURCE_2D7 = 727, PAK_RESOURCE_2D8 = 728, PAK_RESOURCE_2DB = 731, PAK_RESOURCE_2DC = 732, PAK_RESOURCE_2DD = 733 };
 #endif
+
 void func_80433EA0_de(s32 player)
 {
     char name[0x18];
@@ -79,26 +60,44 @@ void func_80433EA0_de(s32 player)
 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
     GameLocalizationState *settings;
-#endif
 
+#else
+#endif
     failed = 0;
     for (i = 0; i < 16 && failed == 0; i++) {
         note_status = func_8040458C_de(player, i, &status, name, ext, &size, extra1, extra2);
+
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
         settings = (GameLocalizationState *)D_80142208_de;
+
+#else
 #endif
         if (note_status == 0) {
             if (status == 1) {
                 if (func_804057BC_de(name, 16) == 1) {
-                    func_802A025C_de(name, PAK_TEXT(D_800D3758, D_800E27B4, D_800DE03C, settings->language));
+#if defined(VERSION_EU)
+                    func_802A025C_de(name, ((D_800E27B4)[settings->language]));
+#elif defined(VERSION_EU_X)
+                    func_802A025C_de(name, ((D_800DE03C)[settings->language]));
+#else
+                    func_802A025C_de(name, (D_800D3758));
+#endif
                 }
                 func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, name);
                 func_802A0C08_de(D_800E1454_de->slots[player].notes[i].size,
-PAK_SIZE_FORMAT,
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+D_800DDEC0,
+#else
+D_800DDEB0_de,
+#endif
  size);
                 if (ext[0] != 0) {
                     func_802A0C08_de(D_800E1454_de->slots[player].notes[i].label,
-PAK_EXTENSION_FORMAT,
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+D_800EE534,
+#else
+"%d.%s.%s",
+#endif
  i + 1,
                                   D_800E1454_de->slots[player].notes[i].name, ext);
                     continue;
@@ -108,13 +107,27 @@ PAK_EXTENSION_FORMAT,
         } else {
             failed = 1;
         }
-        func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, PAK_TEXT((char *)D_800D3250[0], D_800E1394, D_800DD124, settings->language));
+#if defined(VERSION_EU)
+        func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, ((D_800E1394)[settings->language]));
+#elif defined(VERSION_EU_X)
+        func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, ((D_800DD124)[settings->language]));
+#else
+        func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, ((char *)D_800D3250[0]));
+#endif
         func_802A0C08_de(D_800E1454_de->slots[player].notes[i].size,
-PAK_SIZE_FORMAT,
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+D_800DDEC0,
+#else
+D_800DDEB0_de,
+#endif
  0);
     numbered:
         func_802A0C08_de(D_800E1454_de->slots[player].notes[i].label,
-PAK_NUMBER_FORMAT,
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+D_800EE540,
+#else
+D_800DDEC0,
+#endif
  i + 1,
                       D_800E1454_de->slots[player].notes[i].name);
     }
@@ -122,13 +135,21 @@ PAK_NUMBER_FORMAT,
         item = func_8040EC30_de(D_800E1454_de->slots[player].menu, PAK_RESOURCE_2D8);
         if (func_80405160_de(player, &size) == 0) {
             func_802A0C08_de(D_800E1454_de->slots[player].free,
-PAK_SIZE_FORMAT,
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+D_800DDEC0,
+#else
+D_800DDEB0_de,
+#endif
  size);
             item->text = D_800E1454_de->slots[player].free;
             item = func_8040EC30_de(D_800E1454_de->slots[player].menu, PAK_RESOURCE_2D7);
             size = func_80435424_de();
             func_802A0C08_de(D_800E1454_de->slots[player].used,
-PAK_SIZE_FORMAT,
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+D_800DDEC0,
+#else
+D_800DDEB0_de,
+#endif
  func_804057EC_de(size));
             item->text = D_800E1454_de->slots[player].used;
         } else {
