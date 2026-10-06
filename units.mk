@@ -8,6 +8,12 @@ build/%/src/func_80200500_de.i build/%/src/func_80200500_de.key build/%/units/fu
 build/%/src/func_80200500_de.i build/%/src/func_80200500_de.key build/%/units/func_80200500_de.bin: COMPILER_DEFINES := 
 build/%/src/func_80200500_de.i build/%/src/func_80200500_de.key build/%/units/func_80200500_de.bin: TRIM := 
 build/%/src/func_802005DC_de.i build/%/src/func_802005DC_de.key build/%/units/func_802005DC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -DNON_MATCHING
+build/%/src/func_802005DC_de.i build/%/src/func_802005DC_de.key build/%/units/func_802005DC_de.bin: KIND := sn64
+build/%/src/func_802005DC_de.i build/%/src/func_802005DC_de.key build/%/units/func_802005DC_de.bin: CC := tools/gcc-2.7.2-kmc/cc1
+build/%/src/func_802005DC_de.i build/%/src/func_802005DC_de.key build/%/units/func_802005DC_de.bin: CODEGEN := -G0 -mips3 -mgp32 -mfp32 -O2
+build/%/src/func_802005DC_de.i build/%/src/func_802005DC_de.key build/%/units/func_802005DC_de.bin: COMPILER_INCLUDES := 
+build/%/src/func_802005DC_de.i build/%/src/func_802005DC_de.key build/%/units/func_802005DC_de.bin: COMPILER_DEFINES := 
+build/%/src/func_802005DC_de.i build/%/src/func_802005DC_de.key build/%/units/func_802005DC_de.bin: TRIM := 
 build/%/src/func_80200AD8_de.i build/%/src/func_80200AD8_de.key build/%/units/func_80200AD8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_802016DC_de.i build/%/src/func_802016DC_de.key build/%/units/func_802016DC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80202CA0_de.i build/%/src/func_80202CA0_de.key build/%/units/func_80202CA0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)

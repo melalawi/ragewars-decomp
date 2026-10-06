@@ -5,7 +5,7 @@
 extern s32 D_800F1C80_de;
 
 s32 func_802005DC_de(s32 arg0) {
-    s32 temp_v0;
+    s16 temp_v0;
 
     D_800F1C80_de = 0;
 loop_2:
