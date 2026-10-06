@@ -1027,9 +1027,7 @@ eu.U.func_8025B758_de := 0x8025B718:0x5C318:0xFC
 eu.U.func_8025B854_de := 0x8025B814:0x5C414:0x68
 eu.U.func_8025B8BC_de := 0x8025B87C:0x5C47C:0x64
 eu.S.0005C4E0 := 378080 300
-eu.U.func_8025BA4C_de := 0x8025BA0C:0x5C60C:0x138
-eu.U.func_8025BB84_de := 0x8025BB44:0x5C744:0x17C
-eu.U.func_8025BD00_de := 0x8025BCC0:0x5C8C0:0xAC
+eu.U.func_8025BA4C_de := 0x8025BA0C:0x5C60C:0x360
 eu.U.func_8025BDAC_de := 0x8025BD6C:0x5C96C:0x5C
 eu.U.func_8025BE08_de := 0x8025BDC8:0x5C9C8:0x100
 eu.U.func_8025BF08_de := 0x8025BEC8:0x5CAC8:0x100
@@ -4363,8 +4361,6 @@ eu.PIECES := \
   build/eu/units/func_8025B8BC_de.bin \
   build/eu/slices/0005C4E0.bin \
   build/eu/units/func_8025BA4C_de.bin \
-  build/eu/units/func_8025BB84_de.bin \
-  build/eu/units/func_8025BD00_de.bin \
   build/eu/units/func_8025BDAC_de.bin \
   build/eu/units/func_8025BE08_de.bin \
   build/eu/units/func_8025BF08_de.bin \
