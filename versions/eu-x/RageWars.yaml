@@ -1485,7 +1485,6 @@ segments:
       - [0x698AC, c, "func_80268CBC_de"]
       - [0x698C4, asm, "func_80268CC4_eu_x"]
       - [0x698D0, c, "func_80268CE0_de"]
-      - [0x69E4C, c, "func_8026925C_de"]
       - [0x6A51C, asm, "func_8026992C_de"]
       - [0x6A670, asm, "func_80269A80_de"]
       - [0x6B828, c, "func_8026AC38_de"]
