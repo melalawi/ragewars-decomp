@@ -1,3 +1,4 @@
+#include "span_1000/code_8026E1F8.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
@@ -5,8 +6,6 @@
 #include "types.h"
 
 /* Transforms an axis-aligned box by a matrix: starts the new minimum and maximum at the matrix translation and, for every matrix entry, adds the smaller of its products with the old minimum and maximum to the new minimum and the larger to the new maximum. */
-
-
 
 void func_8026EE20_de(f32 m[4][4], Box_func_8026EE20_de *box, Box_func_8026EE20_de *out) {
     f32 min[3];
@@ -142,10 +141,6 @@ void func_8026EF58_de(f32 *out, f32 *m) {
 
 /* Builds a look-at view matrix from an eye position, a target and an up vector: the forward axis is the normalised direction from the target back to the eye, the right axis the normalised cross product of up and forward, the true up axis their normalised cross product, each written as a matrix column with the negated eye projections as the translation row, falling back to the x axis when forward or right degenerate. */
 
-
-
-
-
 extern void func_80271F68_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern void func_80272018_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern f32 func_802B72B0_de(f32);
@@ -206,24 +201,18 @@ void func_8026F368_de(Matrix_func_80213CF8_de *mtx, Vec3 *eye, Vec3 *target, Vec
     mtx->m[3][3] = 1.0f;
 }
 
-#define AFFINE_CELL(row, column)                                             \
-    out[(row) * 4 + (column)] =                                              \
-        (left[(row) * 4] * right[(column)]) +                                \
-        (left[(row) * 4 + 1] * right[4 + (column)]) +                        \
-        (left[(row) * 4 + 2] * right[8 + (column)])
-
 /** Multiply two affine 4x4 matrices into the output matrix. */
 void func_8026F620_de(f32 *out, f32 *left, f32 *right)
 {
-    AFFINE_CELL(0, 0);
-    AFFINE_CELL(0, 1);
-    AFFINE_CELL(0, 2);
-    AFFINE_CELL(1, 0);
-    AFFINE_CELL(1, 1);
-    AFFINE_CELL(1, 2);
-    AFFINE_CELL(2, 0);
-    AFFINE_CELL(2, 1);
-    AFFINE_CELL(2, 2);
+    out[(0) * 4 + (0)] = (left[(0) * 4] * right[(0)]) + (left[(0) * 4 + 1] * right[4 + (0)]) + (left[(0) * 4 + 2] * right[8 + (0)]);
+    out[(0) * 4 + (1)] = (left[(0) * 4] * right[(1)]) + (left[(0) * 4 + 1] * right[4 + (1)]) + (left[(0) * 4 + 2] * right[8 + (1)]);
+    out[(0) * 4 + (2)] = (left[(0) * 4] * right[(2)]) + (left[(0) * 4 + 1] * right[4 + (2)]) + (left[(0) * 4 + 2] * right[8 + (2)]);
+    out[(1) * 4 + (0)] = (left[(1) * 4] * right[(0)]) + (left[(1) * 4 + 1] * right[4 + (0)]) + (left[(1) * 4 + 2] * right[8 + (0)]);
+    out[(1) * 4 + (1)] = (left[(1) * 4] * right[(1)]) + (left[(1) * 4 + 1] * right[4 + (1)]) + (left[(1) * 4 + 2] * right[8 + (1)]);
+    out[(1) * 4 + (2)] = (left[(1) * 4] * right[(2)]) + (left[(1) * 4 + 1] * right[4 + (2)]) + (left[(1) * 4 + 2] * right[8 + (2)]);
+    out[(2) * 4 + (0)] = (left[(2) * 4] * right[(0)]) + (left[(2) * 4 + 1] * right[4 + (0)]) + (left[(2) * 4 + 2] * right[8 + (0)]);
+    out[(2) * 4 + (1)] = (left[(2) * 4] * right[(1)]) + (left[(2) * 4 + 1] * right[4 + (1)]) + (left[(2) * 4 + 2] * right[8 + (1)]);
+    out[(2) * 4 + (2)] = (left[(2) * 4] * right[(2)]) + (left[(2) * 4 + 1] * right[4 + (2)]) + (left[(2) * 4 + 2] * right[8 + (2)]);
     out[12] = (left[12] * right[0]) + (left[13] * right[4]) +
               (left[14] * right[8]) + right[12];
     out[13] = (left[12] * right[1]) + (left[13] * right[5]) +
@@ -233,33 +222,25 @@ void func_8026F620_de(f32 *out, f32 *left, f32 *right)
     out[3] = out[7] = out[11] = 0.0f;
     out[15] = D_800C46EC_de;
 }
-
-#define MAT4_CELL(row, column)                                                \
-    out[(row) * 4 + (column)] =                                               \
-        (left[(row) * 4] * right[(column)]) +                                 \
-        (left[(row) * 4 + 1] * right[4 + (column)]) +                         \
-        (left[(row) * 4 + 2] * right[8 + (column)]) +                         \
-        (left[(row) * 4 + 3] * right[12 + (column)])
-
 /** Multiply two column-addressed 4x4 matrices into the output matrix. */
 void func_8026F898_de(f32 *out, f32 *left, f32 *right)
 {
-    MAT4_CELL(0, 0);
-    MAT4_CELL(0, 1);
-    MAT4_CELL(0, 2);
-    MAT4_CELL(0, 3);
-    MAT4_CELL(1, 0);
-    MAT4_CELL(1, 1);
-    MAT4_CELL(1, 2);
-    MAT4_CELL(1, 3);
-    MAT4_CELL(2, 0);
-    MAT4_CELL(2, 1);
-    MAT4_CELL(2, 2);
-    MAT4_CELL(2, 3);
-    MAT4_CELL(3, 0);
-    MAT4_CELL(3, 1);
-    MAT4_CELL(3, 2);
-    MAT4_CELL(3, 3);
+    out[(0) * 4 + (0)] = (left[(0) * 4] * right[(0)]) + (left[(0) * 4 + 1] * right[4 + (0)]) + (left[(0) * 4 + 2] * right[8 + (0)]) + (left[(0) * 4 + 3] * right[12 + (0)]);
+    out[(0) * 4 + (1)] = (left[(0) * 4] * right[(1)]) + (left[(0) * 4 + 1] * right[4 + (1)]) + (left[(0) * 4 + 2] * right[8 + (1)]) + (left[(0) * 4 + 3] * right[12 + (1)]);
+    out[(0) * 4 + (2)] = (left[(0) * 4] * right[(2)]) + (left[(0) * 4 + 1] * right[4 + (2)]) + (left[(0) * 4 + 2] * right[8 + (2)]) + (left[(0) * 4 + 3] * right[12 + (2)]);
+    out[(0) * 4 + (3)] = (left[(0) * 4] * right[(3)]) + (left[(0) * 4 + 1] * right[4 + (3)]) + (left[(0) * 4 + 2] * right[8 + (3)]) + (left[(0) * 4 + 3] * right[12 + (3)]);
+    out[(1) * 4 + (0)] = (left[(1) * 4] * right[(0)]) + (left[(1) * 4 + 1] * right[4 + (0)]) + (left[(1) * 4 + 2] * right[8 + (0)]) + (left[(1) * 4 + 3] * right[12 + (0)]);
+    out[(1) * 4 + (1)] = (left[(1) * 4] * right[(1)]) + (left[(1) * 4 + 1] * right[4 + (1)]) + (left[(1) * 4 + 2] * right[8 + (1)]) + (left[(1) * 4 + 3] * right[12 + (1)]);
+    out[(1) * 4 + (2)] = (left[(1) * 4] * right[(2)]) + (left[(1) * 4 + 1] * right[4 + (2)]) + (left[(1) * 4 + 2] * right[8 + (2)]) + (left[(1) * 4 + 3] * right[12 + (2)]);
+    out[(1) * 4 + (3)] = (left[(1) * 4] * right[(3)]) + (left[(1) * 4 + 1] * right[4 + (3)]) + (left[(1) * 4 + 2] * right[8 + (3)]) + (left[(1) * 4 + 3] * right[12 + (3)]);
+    out[(2) * 4 + (0)] = (left[(2) * 4] * right[(0)]) + (left[(2) * 4 + 1] * right[4 + (0)]) + (left[(2) * 4 + 2] * right[8 + (0)]) + (left[(2) * 4 + 3] * right[12 + (0)]);
+    out[(2) * 4 + (1)] = (left[(2) * 4] * right[(1)]) + (left[(2) * 4 + 1] * right[4 + (1)]) + (left[(2) * 4 + 2] * right[8 + (1)]) + (left[(2) * 4 + 3] * right[12 + (1)]);
+    out[(2) * 4 + (2)] = (left[(2) * 4] * right[(2)]) + (left[(2) * 4 + 1] * right[4 + (2)]) + (left[(2) * 4 + 2] * right[8 + (2)]) + (left[(2) * 4 + 3] * right[12 + (2)]);
+    out[(2) * 4 + (3)] = (left[(2) * 4] * right[(3)]) + (left[(2) * 4 + 1] * right[4 + (3)]) + (left[(2) * 4 + 2] * right[8 + (3)]) + (left[(2) * 4 + 3] * right[12 + (3)]);
+    out[(3) * 4 + (0)] = (left[(3) * 4] * right[(0)]) + (left[(3) * 4 + 1] * right[4 + (0)]) + (left[(3) * 4 + 2] * right[8 + (0)]) + (left[(3) * 4 + 3] * right[12 + (0)]);
+    out[(3) * 4 + (1)] = (left[(3) * 4] * right[(1)]) + (left[(3) * 4 + 1] * right[4 + (1)]) + (left[(3) * 4 + 2] * right[8 + (1)]) + (left[(3) * 4 + 3] * right[12 + (1)]);
+    out[(3) * 4 + (2)] = (left[(3) * 4] * right[(2)]) + (left[(3) * 4 + 1] * right[4 + (2)]) + (left[(3) * 4 + 2] * right[8 + (2)]) + (left[(3) * 4 + 3] * right[12 + (2)]);
+    out[(3) * 4 + (3)] = (left[(3) * 4] * right[(3)]) + (left[(3) * 4 + 1] * right[4 + (3)]) + (left[(3) * 4 + 2] * right[8 + (3)]) + (left[(3) * 4 + 3] * right[12 + (3)]);
 }
 
 void func_8026FC9C_de(f32 *src, PackedMatrixWords *dst) {
@@ -268,39 +249,14 @@ void func_8026FC9C_de(f32 *src, PackedMatrixWords *dst) {
     f32 value;
     s32 a;
     s32 b;
-
-#define CONVERT_A(out, input, scale) \
-    value = (input) * (scale); \
-    if (!(*(&(scale) + 1) <= value)) { \
-        (out) = (s32)value; \
-    } else { \
-        (out) = (s32)(value - *(&(scale) + 1)); \
-        (out) |= 0x80000000; \
-    }
-#define CONVERT_B(out, input, scale) \
-    value = (input) * (scale); \
-    if (!(*(&(scale) + 1) <= value)) { \
-        (out) = (s32)value; \
-    } else { \
-        (out) = (s32)(value - *(&(scale) + 1)); \
-        (out) |= 0x80000000; \
-    }
-#define PACK_PAIR(i, scale_a, scale_b) \
-    CONVERT_A(a, src[(i) * 2], scale_a); \
-    CONVERT_B(b, src[(i) * 2 + 1], scale_b); \
-    *upper = (a & 0xFFFF0000) | ((u32)b >> 16); \
-    *lower = (a << 16) | (b & 0xFFFF); \
-    upper++; \
-    lower++
-
-    PACK_PAIR(0, D_800C46F0_de, D_800C46F8_de);
-    PACK_PAIR(1, D_800C4700_de, D_800C4708_de);
-    PACK_PAIR(2, D_800C4710_de, D_800C4718_de);
-    PACK_PAIR(3, D_800C4720_de, D_800C4728_de);
-    PACK_PAIR(4, D_800C4730_de, D_800C4738_de);
-    PACK_PAIR(5, D_800C4740_de, D_800C4748_de);
-    PACK_PAIR(6, D_800C4750_de, D_800C4758_de);
-    PACK_PAIR(7, D_800C4760_de, D_800C4768_de);
+    value = (src[(0) * 2]) * (D_800C46F0_de); if (!(*(&(D_800C46F0_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C46F0_de) + 1)); (a) |= 0x80000000; }; value = (src[(0) * 2 + 1]) * (D_800C46F8_de); if (!(*(&(D_800C46F8_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C46F8_de) + 1)); (b) |= 0x80000000; }; *upper = (a & 0xFFFF0000) | ((u32)b >> 16); *lower = (a << 16) | (b & 0xFFFF); upper++; lower++;
+    value = (src[(1) * 2]) * (D_800C4700_de); if (!(*(&(D_800C4700_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4700_de) + 1)); (a) |= 0x80000000; }; value = (src[(1) * 2 + 1]) * (D_800C4708_de); if (!(*(&(D_800C4708_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4708_de) + 1)); (b) |= 0x80000000; }; *upper = (a & 0xFFFF0000) | ((u32)b >> 16); *lower = (a << 16) | (b & 0xFFFF); upper++; lower++;
+    value = (src[(2) * 2]) * (D_800C4710_de); if (!(*(&(D_800C4710_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4710_de) + 1)); (a) |= 0x80000000; }; value = (src[(2) * 2 + 1]) * (D_800C4718_de); if (!(*(&(D_800C4718_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4718_de) + 1)); (b) |= 0x80000000; }; *upper = (a & 0xFFFF0000) | ((u32)b >> 16); *lower = (a << 16) | (b & 0xFFFF); upper++; lower++;
+    value = (src[(3) * 2]) * (D_800C4720_de); if (!(*(&(D_800C4720_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4720_de) + 1)); (a) |= 0x80000000; }; value = (src[(3) * 2 + 1]) * (D_800C4728_de); if (!(*(&(D_800C4728_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4728_de) + 1)); (b) |= 0x80000000; }; *upper = (a & 0xFFFF0000) | ((u32)b >> 16); *lower = (a << 16) | (b & 0xFFFF); upper++; lower++;
+    value = (src[(4) * 2]) * (D_800C4730_de); if (!(*(&(D_800C4730_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4730_de) + 1)); (a) |= 0x80000000; }; value = (src[(4) * 2 + 1]) * (D_800C4738_de); if (!(*(&(D_800C4738_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4738_de) + 1)); (b) |= 0x80000000; }; *upper = (a & 0xFFFF0000) | ((u32)b >> 16); *lower = (a << 16) | (b & 0xFFFF); upper++; lower++;
+    value = (src[(5) * 2]) * (D_800C4740_de); if (!(*(&(D_800C4740_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4740_de) + 1)); (a) |= 0x80000000; }; value = (src[(5) * 2 + 1]) * (D_800C4748_de); if (!(*(&(D_800C4748_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4748_de) + 1)); (b) |= 0x80000000; }; *upper = (a & 0xFFFF0000) | ((u32)b >> 16); *lower = (a << 16) | (b & 0xFFFF); upper++; lower++;
+    value = (src[(6) * 2]) * (D_800C4750_de); if (!(*(&(D_800C4750_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4750_de) + 1)); (a) |= 0x80000000; }; value = (src[(6) * 2 + 1]) * (D_800C4758_de); if (!(*(&(D_800C4758_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4758_de) + 1)); (b) |= 0x80000000; }; *upper = (a & 0xFFFF0000) | ((u32)b >> 16); *lower = (a << 16) | (b & 0xFFFF); upper++; lower++;
+    value = (src[(7) * 2]) * (D_800C4760_de); if (!(*(&(D_800C4760_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4760_de) + 1)); (a) |= 0x80000000; }; value = (src[(7) * 2 + 1]) * (D_800C4768_de); if (!(*(&(D_800C4768_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4768_de) + 1)); (b) |= 0x80000000; }; *upper = (a & 0xFFFF0000) | ((u32)b >> 16); *lower = (a << 16) | (b & 0xFFFF); upper++; lower++;
 }
 
 void func_8027027C_de(f32 *src, PackedMatrixWords *dst) {
@@ -309,71 +265,53 @@ void func_8027027C_de(f32 *src, PackedMatrixWords *dst) {
     f32 value;
     s32 a;
     s32 b;
-
-#define CONVERT_A(out, input, scale) \
-    value = (input) * (scale); \
-    if (!(*(&(scale) + 1) <= value)) { \
-        (out) = (s32)value; \
-    } else { \
-        (out) = (s32)(value - *(&(scale) + 1)); \
-        (out) |= 0x80000000; \
-    }
-#define CONVERT_B(out, input, scale) \
-    value = (input) * (scale); \
-    if (!(*(&(scale) + 1) <= value)) { \
-        (out) = (s32)value; \
-    } else { \
-        (out) = (s32)(value - *(&(scale) + 1)); \
-        (out) |= 0x80000000; \
-    }
-
-    CONVERT_A(a, src[0], D_800C4770_de);
-    CONVERT_B(b, src[1], D_800C4778_de);
+    value = (src[0]) * (D_800C4770_de); if (!(*(&(D_800C4770_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4770_de) + 1)); (a) |= 0x80000000; };
+    value = (src[1]) * (D_800C4778_de); if (!(*(&(D_800C4778_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4778_de) + 1)); (b) |= 0x80000000; };
     *upper = (a & 0xFFFF0000) | ((u32)b >> 16);
     *lower = (a << 16) | (b & 0xFFFF);
     upper++;
     lower++;
 
-    CONVERT_A(a, src[2], D_800C4780_de);
+    value = (src[2]) * (D_800C4780_de); if (!(*(&(D_800C4780_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4780_de) + 1)); (a) |= 0x80000000; };
     *upper = a & 0xFFFF0000;
     *lower = a << 16;
     upper++;
     lower++;
 
-    CONVERT_A(a, src[4], D_800C4788_de);
-    CONVERT_B(b, src[5], D_800C4790_de);
+    value = (src[4]) * (D_800C4788_de); if (!(*(&(D_800C4788_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4788_de) + 1)); (a) |= 0x80000000; };
+    value = (src[5]) * (D_800C4790_de); if (!(*(&(D_800C4790_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C4790_de) + 1)); (b) |= 0x80000000; };
     *upper = (a & 0xFFFF0000) | ((u32)b >> 16);
     *lower = (a << 16) | (b & 0xFFFF);
     upper++;
     lower++;
 
-    CONVERT_A(a, src[6], D_800C4798_de);
+    value = (src[6]) * (D_800C4798_de); if (!(*(&(D_800C4798_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C4798_de) + 1)); (a) |= 0x80000000; };
     *upper = a & 0xFFFF0000;
     *lower = a << 16;
     upper++;
     lower++;
 
-    CONVERT_A(a, src[8], D_800C47A0_de);
-    CONVERT_B(b, src[9], D_800C47A8_de);
+    value = (src[8]) * (D_800C47A0_de); if (!(*(&(D_800C47A0_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C47A0_de) + 1)); (a) |= 0x80000000; };
+    value = (src[9]) * (D_800C47A8_de); if (!(*(&(D_800C47A8_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C47A8_de) + 1)); (b) |= 0x80000000; };
     *upper = (a & 0xFFFF0000) | ((u32)b >> 16);
     *lower = (a << 16) | (b & 0xFFFF);
     upper++;
     lower++;
 
-    CONVERT_A(a, src[10], D_800C47B0_de);
+    value = (src[10]) * (D_800C47B0_de); if (!(*(&(D_800C47B0_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C47B0_de) + 1)); (a) |= 0x80000000; };
     *upper = a & 0xFFFF0000;
     *lower = a << 16;
     upper++;
     lower++;
 
-    CONVERT_A(a, src[12], D_800C47B8_de);
-    CONVERT_B(b, src[13], D_800C47C0_de);
+    value = (src[12]) * (D_800C47B8_de); if (!(*(&(D_800C47B8_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C47B8_de) + 1)); (a) |= 0x80000000; };
+    value = (src[13]) * (D_800C47C0_de); if (!(*(&(D_800C47C0_de) + 1) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - *(&(D_800C47C0_de) + 1)); (b) |= 0x80000000; };
     *upper = (a & 0xFFFF0000) | ((u32)b >> 16);
     *lower = (a << 16) | (b & 0xFFFF);
     upper++;
     lower++;
 
-    CONVERT_A(a, src[14], D_800C47C8_de);
+    value = (src[14]) * (D_800C47C8_de); if (!(*(&(D_800C47C8_de) + 1) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - *(&(D_800C47C8_de) + 1)); (a) |= 0x80000000; };
     *upper = (a & 0xFFFF0000) | 1;
     *lower = a << 16;
 }
@@ -383,52 +321,29 @@ void func_80270700_de(f32 *dst, PackedMatrixWords *src) {
     u32 lower;
     f32 scale = D_800C47D0_de;
 
-#define UNPACK_PAIR(i) \
-    upper = src->upper[i]; \
-    lower = src->lower[i]; \
-    dst[(i) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; \
-    dst[(i) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale
-
-    UNPACK_PAIR(0);
-    UNPACK_PAIR(1);
-    UNPACK_PAIR(2);
-    UNPACK_PAIR(3);
-    UNPACK_PAIR(4);
-    UNPACK_PAIR(5);
-    UNPACK_PAIR(6);
-    UNPACK_PAIR(7);
+    upper = src->upper[0]; lower = src->lower[0]; dst[(0) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(0) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[1]; lower = src->lower[1]; dst[(1) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(1) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[2]; lower = src->lower[2]; dst[(2) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(2) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[3]; lower = src->lower[3]; dst[(3) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(3) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[4]; lower = src->lower[4]; dst[(4) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(4) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[5]; lower = src->lower[5]; dst[(5) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(5) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[6]; lower = src->lower[6]; dst[(6) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(6) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[7]; lower = src->lower[7]; dst[(7) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(7) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
 }
 
 /* Unpacks a fixed-point 4x4 matrix held as separate integer and fraction halves into floats scaled by D_800C98C4, zeroing the fourth column and setting the last element to D_800C98C8. Adapted from func_80270700_de with the fourth column replaced by zeros and the constant at D_800C98C8, the third-column integer word used unmasked in the first three rows, the scale constant changed, and the last row computed into a local before the corner store. */
-
-
-
-
 
 void func_80270910_de(f32 *dst, PackedMatrixWords *src) {
     u32 upper;
     u32 lower;
     f32 scale = D_800C47D4_de;
-
-#define UNPACK_PAIR(i) \
-    upper = src->upper[i]; \
-    lower = src->lower[i]; \
-    dst[(i) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; \
-    dst[(i) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale
-
-#define UNPACK_LAST(i) \
-    upper = src->upper[i]; \
-    lower = src->lower[i]; \
-    dst[(i) * 2] = (f32)(s32)(upper | (lower >> 16)) * scale; \
-    dst[(i) * 2 + 1] = 0.0f
-
-    UNPACK_PAIR(0);
-    UNPACK_LAST(1);
-    UNPACK_PAIR(2);
-    UNPACK_LAST(3);
-    UNPACK_PAIR(4);
-    UNPACK_LAST(5);
-    UNPACK_PAIR(6);
+    upper = src->upper[0]; lower = src->lower[0]; dst[(0) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(0) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[1]; lower = src->lower[1]; dst[(1) * 2] = (f32)(s32)(upper | (lower >> 16)) * scale; dst[(1) * 2 + 1] = 0.0f;
+    upper = src->upper[2]; lower = src->lower[2]; dst[(2) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(2) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[3]; lower = src->lower[3]; dst[(3) * 2] = (f32)(s32)(upper | (lower >> 16)) * scale; dst[(3) * 2 + 1] = 0.0f;
+    upper = src->upper[4]; lower = src->lower[4]; dst[(4) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(4) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
+    upper = src->upper[5]; lower = src->lower[5]; dst[(5) * 2] = (f32)(s32)(upper | (lower >> 16)) * scale; dst[(5) * 2 + 1] = 0.0f;
+    upper = src->upper[6]; lower = src->lower[6]; dst[(6) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(6) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
     {
         f32 last;
         upper = src->upper[7];
