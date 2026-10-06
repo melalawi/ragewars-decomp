@@ -18,26 +18,3 @@ void func_80443128_de(Object_func_80443128_de *object, void *context, void *look
  func_8024A1D0_de(object,context,lookup);
  D_800CC390=0;
 }
-
-/* Native resident constant storage; absolute access symbols retain their addresses. */
-#if defined(VERSION_US)
-
-
-
-
-
-
-#elif defined(VERSION_US_REV1)
-
-
-
-
-
-
-#elif defined(VERSION_EU)
-
-#elif defined(VERSION_EU_X)
-
-#elif defined(VERSION_DE)
-
-#endif
