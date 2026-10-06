@@ -2059,7 +2059,7 @@ segments:
       - [0xA053C, c, "func_8029E93C_de"]
       - [0xA0644, c, "func_8029EA44_de"]
       - [0xA067C, c, "func_8029EA7C_de"]
-      - [0xA0E54, asm, "func_8029F254_de"]
+      - [0xA0E54, c, "func_8029F254_de"]
       - [0xA0F68, c, "func_8029F368_de"]
       - [0xA1068, asm, "func_8029F5B8_eu_x"]
       - [0xA1070, c, "func_8029F470_de"]

@@ -2041,7 +2041,7 @@ segments:
       - [0x9F65C, c, "func_8029E93C_de"]
       - [0x9F764, c, "func_8029EA44_de"]
       - [0x9F79C, c, "func_8029EA7C_de"]
-      - [0x9FF74, asm, "func_8029F254_de"]
+      - [0x9FF74, c, "func_8029F254_de"]
       - [0xA0088, c, "func_8029F368_de"]
       - [0xA0188, asm, "func_8029F588_eu"]
       - [0xA0190, data, "retained_A0190"]

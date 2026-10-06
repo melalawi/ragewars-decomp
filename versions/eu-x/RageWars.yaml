@@ -2047,7 +2047,7 @@ segments:
       - [0x9F68C, c, "func_8029E93C_de"]
       - [0x9F794, c, "func_8029EA44_de"]
       - [0x9F7CC, c, "func_8029EA7C_de"]
-      - [0x9FFA4, asm, "func_8029F254_de"]
+      - [0x9FFA4, c, "func_8029F254_de"]
       - [0xA00B8, c, "func_8029F368_de"]
       - [0xA01B8, asm, "func_8029F5B8_eu_x"]
       - [0xA01C0, c, "func_8029F470_de"]
