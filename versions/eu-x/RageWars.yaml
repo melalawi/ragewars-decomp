@@ -5453,7 +5453,7 @@ segments:
       - [0x1360F8, asm, "func_804460F8_eu_x"]
       - [0x136100, c, "func_80444E30_de"]
       - [0x13614C, c, "func_80444E7C_de"]
-      - [0x13618C, asm, "func_8044605C_eu"]
+      - [0x13618C, c, "func_8044605C_eu"]
       - [0x1361B8, asm, "func_80446088_eu"]
       - [0x1361E4, asm, "func_804460B4_eu"]
       - [0x136210, asm, "func_804460E0_eu"]
