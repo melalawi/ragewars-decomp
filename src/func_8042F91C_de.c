@@ -1,15 +1,15 @@
 #include "span_16E000/code_8042F988.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
+#include "span_16E000/code_8042F988.h"
 #include "common/unused.h"
 #include "types.h"
-/* Animates the two menu panels through open, close and countdown states and updates the active team menu. */
-#define CLAMP(value, low, high) ((value) < (low) ? (low) : (value) > (high) ? (high) : (value))
+#include "math_helpers.h"
 
+/* Animates the two menu panels through open, close and countdown states and updates the active team menu. */
 
 extern State_func_8042F91C_de *D_800E1454_de;
-UNRESOLVED_CALLABLE_CONTRACT(func_8025DF34_de);
+extern s32 func_8025DF34_de(s32 arg0);
 extern void func_80298368_de(s32);
-UNRESOLVED_CALLABLE_CONTRACT(func_8029973C_de);
+extern void func_8029973C_de(void);
 extern void func_802A2360_de(void);
 extern void func_8040E8D8_de(s32,s32);
 extern void func_80419F24_de(s32);
@@ -39,7 +39,7 @@ s32 func_8042F91C_de(s32 arg0, s32 arg1, s32 arg2) {
             temp_v0_2 = D_800E1454_de->unk50 - 1;
             D_800E1454_de->unk50 = temp_v0_2;
             if (temp_v0_2 <= 0) {
-                func_8025DF34_de(0xE79, temp_a1_2);
+                func_8025DF34_de(0xE79);
                 func_8040E8D8_de(D_800E1454_de->unk28, 1);
                 func_80419F58_de(D_800E1454_de->unk24, 4);
                 D_800E1454_de->unk4C = 4;
@@ -55,7 +55,7 @@ s32 func_8042F91C_de(s32 arg0, s32 arg1, s32 arg2) {
             D_800E1454_de->unk50 = temp_v0_3;
             if (temp_v0_3 <= 0) {
                 D_800E1454_de->unk4C = 3;
-                func_8029973C_de(temp_a0_2, D_800E1454_de);
+                func_8029973C_de();
                 func_80298368_de(D_800E1454_de->unk3470);
                 return 0;
             }
@@ -64,7 +64,7 @@ s32 func_8042F91C_de(s32 arg0, s32 arg1, s32 arg2) {
             func_802A2360_de();
             break;
         case 4:
-            D_800E1454_de->unk50 = CLAMP(D_800E1454_de->unk50 - 1, 0, D_800E1454_de->unk50);
+            D_800E1454_de->unk50 = RW_CLAMP(D_800E1454_de->unk50 - 1, 0, D_800E1454_de->unk50);
             if ((D_800E1454_de->unk50 <= 0) && (func_80419F38_de(D_800E1454_de->unk24) != 0)) {
                 func_80419F24_de(D_800E1454_de->unk24);
                 D_800E1454_de->unk4C = 3;
