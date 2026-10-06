@@ -4438,7 +4438,7 @@ segments:
       - [0xF61EC, asm, "func_80406178_de"]
       - [0xF64A8, asm, "func_80406434_de"]
       - [0xF6730, c, "func_804066BC_de"]
-      - [0xF68CC, asm, "func_80406858_de"]
+      - [0xF68CC, c, "func_80406858_de"]
       - [0xF6A88, asm, "func_80406A88_eu_x"]
       - [0xF7030, asm, "func_80406F7C_de"]
       - [0xF71A8, c, "func_804070F4_de"]
