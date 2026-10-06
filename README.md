@@ -6,7 +6,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 ## Progress
 
-<pre><code>all     [███████████▒░░░░░░░░]  57.97% (~60.41%)  3,203,156 of 5,525,200 bytes</code><br><code>de      [███████████▒░░░░░░░░]  57.49% (~59.92%)  635,264 of 1,104,964 bytes</code><br><code>us      [███████████▒░░░░░░░░]  59.23% (~61.57%)  629,208 of 1,062,244 bytes</code><br><code>us-rev1 [███████████▒░░░░░░░░]  58.42% (~60.86%)  661,276 of 1,131,992 bytes</code><br><code>eu      [███████████▒░░░░░░░░]  57.30% (~59.82%)  637,172 of 1,111,996 bytes</code><br><code>eu-x    [███████████▒░░░░░░░░]  57.47% (~59.92%)  640,236 of 1,114,004 bytes</code></pre>
+<pre><code>all     [███████████▒░░░░░░░░]  57.97% (~60.41%)  3,203,164 of 5,525,200 bytes</code><br><code>de      [███████████▒░░░░░░░░]  57.49% (~59.92%)  635,264 of 1,104,964 bytes</code><br><code>us      [███████████▒░░░░░░░░]  59.23% (~61.57%)  629,208 of 1,062,244 bytes</code><br><code>us-rev1 [███████████▒░░░░░░░░]  58.42% (~60.86%)  661,276 of 1,131,992 bytes</code><br><code>eu      [███████████▒░░░░░░░░]  57.30% (~59.82%)  637,180 of 1,111,996 bytes</code><br><code>eu-x    [███████████▒░░░░░░░░]  57.47% (~59.92%)  640,236 of 1,114,004 bytes</code></pre>
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
@@ -22,7 +22,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
-| <pre><code>bytes     [███████████▒░░░░░░░░]  57.30% (~59.82%)  637,172 of 1,111,996</code><br><code>functions [██████████████░░░░░░]  74.72%  2,793 of 3,738</code></pre> |
+| <pre><code>bytes     [███████████▒░░░░░░░░]  57.30% (~59.82%)  637,180 of 1,111,996</code><br><code>functions [██████████████░░░░░░]  74.75%  2,794 of 3,738</code></pre> |
 
 | eu-x (NUS-NRWX-0, Europe). PAL multi-language release. SHA256 `511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750` |
 |---|
