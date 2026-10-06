@@ -1505,9 +1505,9 @@ signals = ["padding", "version"]
 [[group]]
 name = "code_80444030"
 segment = "span_16E000"
-evidence = "inferred"
-members = ["func_80445074_eu", "func_80444094_de", "func_804440F0_de", "func_80444148_de", "func_8044417C_de", "func_804441B0_de", "func_804441E4_de", "func_804441F4_de", "func_8044421C_de", "func_80444314_de", "func_804443C0_de", "func_80444424_de", "func_80444488_de", "func_804444EC_de", "func_80444548_de", "func_804445AC_de", "func_80444610_de", "func_80444674_de", "func_804446D8_de", "func_8044472C_de", "func_804447A0_de", "func_804447F0_de", "func_8044488C_de", "func_80444920_de", "func_80444988_de", "func_804449EC_de", "func_80444AB8_de", "func_80444B1C_de", "func_80444BE8_de", "func_80444C34_de", "func_80444C68_de", "func_80444CF8_de"]
-only = { "func_80445074_eu" = ["us-rev1", "eu", "eu-x", "us"], "func_804440F0_de" = ["us-rev1", "de", "us"], "func_80444148_de" = ["us-rev1", "de", "us"], "func_8044417C_de" = ["us-rev1", "de", "us"], "func_804441B0_de" = ["us-rev1", "de", "us"] }
+evidence = "proven"
+members = ["func_80445074_eu", "func_80444094_de", "func_804440F0_de", "func_80444148_de", "func_804441B0_de", "func_804441E4_de", "func_804441F4_de", "func_8044421C_de", "func_80444314_de", "func_804443C0_de", "func_80444424_de", "func_80444488_de", "func_804444EC_de", "func_80444548_de", "func_804445AC_de", "func_80444610_de", "func_80444674_de", "func_804446D8_de", "func_8044472C_de", "func_804447A0_de", "func_804447F0_de", "func_8044488C_de", "func_80444920_de", "func_80444988_de", "func_804449EC_de", "func_80444AB8_de", "func_80444B1C_de", "func_80444BE8_de", "func_80444C34_de", "func_80444C68_de", "func_80444CF8_de"]
+only = { "func_80445074_eu" = ["us-rev1", "eu", "eu-x", "us"], "func_804440F0_de" = ["us-rev1", "de", "us"], "func_80444148_de" = ["us-rev1", "de", "us"], "func_804441B0_de" = ["us-rev1", "de", "us"] }
 split = ["func_804441F4_de", "func_8044421C_de", "func_80444314_de", "func_804443C0_de", "func_80444424_de", "func_80444488_de", "func_804444EC_de", "func_80444548_de", "func_804445AC_de", "func_80444610_de", "func_80444674_de", "func_804446D8_de", "func_8044472C_de", "func_804447A0_de", "func_804447F0_de", "func_80444988_de", "func_804449EC_de", "func_80444AB8_de", "func_80444B1C_de", "func_80444BE8_de", "func_80444C34_de", "func_80444C68_de", "func_80444CF8_de"]
 signals = ["callee", "cap", "version"]
 
