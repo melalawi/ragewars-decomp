@@ -3070,6 +3070,16 @@
       "exact": false,
       "minutes": 0.02
     },
+    "func_8040AB6C_eu": {
+      "attempts": 1,
+      "best": {
+        "eu": 77.78,
+        "eu-x": 80.95
+      },
+      "bytes": 252,
+      "exact": false,
+      "minutes": 0.02
+    },
     "func_8040C638_us": {
       "attempts": 15,
       "best": {
@@ -3467,6 +3477,18 @@
       "bytes": 16,
       "exact": false,
       "minutes": 8.41
+    },
+    "func_8043CF84_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0
+      },
+      "bytes": 252,
+      "exact": true,
+      "minutes": 0.02
     },
     "func_8043D25C_de": {
       "attempts": 1,
