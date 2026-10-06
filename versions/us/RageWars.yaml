@@ -1679,7 +1679,7 @@ segments:
       - [0x84BE4, asm, "func_80284090_de"]
       - [0x84CCC, c, "func_80284178_de"]
       - [0x84FCC, asm, "func_80284478_de"]
-      - [0x850C4, asm, "func_80284570_de"]
+      - [0x850C4, c, "func_80284570_de"]
       - [0x851C0, c, "func_8028466C_de"]
       - [0x8521C, c, "func_802846C8_de"]
       - [0x85544, asm, "func_802849F0_de"]
