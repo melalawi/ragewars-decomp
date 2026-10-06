@@ -463,8 +463,6 @@ segments:
       - [0x29BB8, c, "func_80228FB8_de"]
       - [0x2A414, asm, "func_80229814_de"]
       - [0x2A680, c, "func_80229A80_de"]
-      - [0x2A928, c, "func_80229D28_de"]
-      - [0x2ABA0, c, "func_80229FA0_de"]
       - [0x2AEA0, c, "func_8022A2A0_de"]
       - [0x2AF28, c, "func_8022A328_de"]
       - [0x2AF98, c, "func_8022A398_de"]
