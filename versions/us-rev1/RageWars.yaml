@@ -5212,7 +5212,7 @@ segments:
       - [0x1A1AF0, c, "func_80433914_de"]
       - [0x1A1DA8, c, "func_80433BCC_de"]
       - [0x1A1F14, c, "func_80433D38_de"]
-      - [0x1A207C, asm, "func_80433EA0_de"]
+      - [0x1A207C, c, "func_80433EA0_de"]
       - [0x1A242C, c, "func_80434250_de"]
       - [0x1A2604, asm, "func_80434428_de"]
       - [0x1A2814, c, "func_80434638_de"]
