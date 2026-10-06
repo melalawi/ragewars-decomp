@@ -1,35 +1,15 @@
+#include "span_1000/code_802412C0.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802412C0.h"
 #include "types.h"
+
 /* Gathers the pieces a ray sweeps through: for each entry of the counted table in D_8011CD20 whose
  * rectangle, grown by the ray's radius, overlaps the ray's rectangle and is hit by it, each visible element
  * of the entry's resource whose grown box overlaps the ray's box and is hit is recorded with its hit
  * parameter (at most 128). The hits are sorted and, while nearer than the ray's current nearest hit, each
  * is handed to func_80243874_de with a context holding the ray, its look-at matrix and segment spacing. */
-#define MAX(a, b) ((a) > (b) ? (a) : (b))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 extern struct {
     char pad0[0x5AC];
     s32 count;
@@ -72,7 +52,7 @@ void func_80242BF0_de(Ray180 *ray) {
     ctx.end = end;
     ctx.reach = ray->scale * ray->nearest + ray->radius;
     if (ray->spacing != 0.0f) {
-        segments = MAX(2, (s32) (ray->length / ray->spacing) + 1);
+        segments = ((2) > ((s32) (ray->length / ray->spacing) + 1) ? (2) : ((s32) (ray->length / ray->spacing) + 1));
         ctx.segments = segments;
         ctx.step = (ray->length - 2.0f * ray->spacing) / (f32) (segments - 1);
     } else {
