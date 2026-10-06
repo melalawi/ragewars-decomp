@@ -1,48 +1,29 @@
 #include "span_1000/code_802B4730.h"
+#include "span_1000/code_802B4730.h"
 #include "abi.h"
 #include "audio_callbacks.h"
 #include "common/unused.h"
 #include "types.h"
 
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* _pullSubFrame, drafted from ultralib src/audio/env.c: when the envelope mixer is playing, pull
    its source and append the buffer, volume and envelope-mixer commands for one subframe,
    recomputing the ramp targets and rates on the first pull after a change. */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-extern s16 D_800D4210[128];    /* eqpower */
-#if defined(VERSION_US)
-#define RW_AUDIO_ASSERT_EX D_800C7520
-#elif defined(VERSION_DE)
-#define RW_AUDIO_ASSERT_EX D_800C7600
+extern s16 D_800D4210[128]; /* eqpower */
+#if defined(VERSION_DE)
+extern char D_800C7600[]; /* Resident "EX" assertion expression. */
 #elif defined(VERSION_EU)
-#define RW_AUDIO_ASSERT_EX D_800C81F0
+extern char D_800C81F0[]; /* Resident "EX" assertion expression. */
 #elif defined(VERSION_EU_X)
-#define RW_AUDIO_ASSERT_EX D_800C8BC0
+extern char D_800C8BC0[]; /* Resident "EX" assertion expression. */
+#elif defined(VERSION_US)
+extern char D_800C7520[]; /* Resident "EX" assertion expression. */
 #else
-#define RW_AUDIO_ASSERT_EX D_800CC850
+extern char D_800CC850[]; /* Resident "EX" assertion expression. */
 #endif
-extern char RW_AUDIO_ASSERT_EX[]; /* Resident "EX" assertion expression. */
-extern char D_800C7604[];      /* "audio/env.c" */
+extern char D_800C7604[]; /* "audio/env.c" */
 
-extern void func_802BAC50_de(const char *, const char *, s32);          /* __assert */
-extern unsigned int func_802BBBC0_de(void *);                           /* osVirtualToPhysical */
+extern void func_802BAC50_de(const char *, const char *, s32); /* __assert */
+extern unsigned int func_802BBBC0_de(void *); /* osVirtualToPhysical */
   /* _getRate */
 
 Acmd *func_802B4C7C_de(void *filter, s16 *inp, s16 *outp, s32 outCount, s32 sampleOffset, Acmd *p)
@@ -54,7 +35,17 @@ Acmd *func_802B4C7C_de(void *filter, s16 *inp, s16 *outp, s32 outCount, s32 samp
     if (e->motion != 1 || !outCount)
         return ptr;
 
-    ((source) ? ((void)0) : func_802BAC50_de(RW_AUDIO_ASSERT_EX, D_800C7604, 366));
+#if defined(VERSION_DE)
+    ((source) ? ((void)0) : func_802BAC50_de(D_800C7600, D_800C7604, 366));
+#elif defined(VERSION_EU)
+    ((source) ? ((void)0) : func_802BAC50_de(D_800C81F0, D_800C7604, 366));
+#elif defined(VERSION_EU_X)
+    ((source) ? ((void)0) : func_802BAC50_de(D_800C8BC0, D_800C7604, 366));
+#elif defined(VERSION_US)
+    ((source) ? ((void)0) : func_802BAC50_de(D_800C7520, D_800C7604, 366));
+#else
+    ((source) ? ((void)0) : func_802BAC50_de(D_800CC850, D_800C7604, 366));
+#endif
 
     ptr = (*source->handler)(source, inp, outCount, sampleOffset, p);
 
@@ -86,7 +77,6 @@ Acmd *func_802B4C7C_de(void *filter, s16 *inp, s16 *outp, s32 outCount, s32 samp
 }
 
 /* _getRate: approximate per-step volume scaling using the public ultralib log table and repeated squaring. */
-
 
 extern const LogTab D_800C7658_de;
 extern const f32 D_800C7698_de;
@@ -210,21 +200,6 @@ s16 func_802B4F68_de(f64 vol, f64 tgt, s32 count, u16 *ratel)
    mixer, appending an update to the control list, resetting or starting the filter, setting its
    source, and otherwise passing the parameter down to the source. The parameter identifiers are
    the cartridge's own 1, 3, 4 and 9. */
-
-
-
-
-
-
-
-#define AL_FILTER_SET_SOURCE 1
-#define AL_FILTER_ADD_UPDATE 3
-#define AL_FILTER_RESET      4
-#define AL_FILTER_START      9
-
-#define AL_STOPPED 0
-#define AL_PLAYING 1
-
 s32 func_802B51B8_de(void *filter, s32 paramID, void *param)
 {
     ALFilter_s *f = (ALFilter_s *)filter;
@@ -232,7 +207,7 @@ s32 func_802B51B8_de(void *filter, s32 paramID, void *param)
 
     switch (paramID) {
 
-      case (AL_FILTER_ADD_UPDATE):
+      case (3):
           if (e->ctrlTail) {
               e->ctrlTail->next = (ALParam_s *)param;
           } else {
@@ -242,21 +217,21 @@ s32 func_802B51B8_de(void *filter, s32 paramID, void *param)
 
           break;
 
-      case (AL_FILTER_RESET):
+      case (4):
           e->first = 1;
-          e->motion = AL_STOPPED;
+          e->motion = 0;
           e->volume = 1;
           if (f->source)
-              (*f->source->setParam)(f->source, AL_FILTER_RESET, param);
+              (*f->source->setParam)(f->source, 4, param);
           break;
 
-      case (AL_FILTER_START):
-          e->motion = AL_PLAYING;
+      case (9):
+          e->motion = 1;
           if (f->source)
-              (*f->source->setParam)(f->source, AL_FILTER_START, param);
+              (*f->source->setParam)(f->source, 9, param);
           break;
 
-      case (AL_FILTER_SET_SOURCE):
+      case (1):
           f->source = (ALFilter_s *)param;
           break;
 
