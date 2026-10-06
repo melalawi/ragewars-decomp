@@ -2204,7 +2204,7 @@ segments:
       - [0xA9640, asm, "func_802A88F0_de"]
       - [0xA9C78, asm, "func_802A8F28_de"]
       - [0xA9F84, c, "func_802A9234_de"]
-      - [0xAA484, asm, "func_802A9734_de"]
+      - [0xAA484, c, "func_802A9734_de"]
       - [0xAAA20, c, "func_802A9CD0_de"]
       - [0xAAC38, asm, "func_802A9EE8_de"]
       - [0xAAEFC, asm, "func_802AA1AC_de"]
