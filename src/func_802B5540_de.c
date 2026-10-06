@@ -1,3 +1,5 @@
+#include "span_1000/code_802B53FC.h"
+#include "abi.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/unused.h"
 #include "span_1000/code_802B53FC.h"
@@ -29,7 +31,6 @@ s32 func_802B5540_de(Obj_func_802B3EDC_de *arg0, s32 arg1, s32 arg2) {
 extern unsigned int func_802BBBC0_de(void *); /* osVirtualToPhysical */
 
  /* MAX_RATIO, followed by UNITY_PITCH */
-#define UNITY_PITCH D_800C7744_de
 
     /* 1 / UNITY_PITCH */
 
@@ -60,7 +61,7 @@ Acmd *func_802B5570_de(void *filter, s16 *outp, s32 outCnt, s32 sampleOffset, Ac
         if (f->ratio > D_800C7740_de) f->ratio = D_800C7740_de;
 
         ratio = f->ratio;
-        unity = UNITY_PITCH;
+        unity = D_800C7744_de;
         f->ratio = (f32)(s32)(ratio * unity) * D_800C7748_de;
 
         finCount = f->delta + (f->ratio * (f32)outCnt);
@@ -77,11 +78,6 @@ Acmd *func_802B5570_de(void *filter, s16 *outp, s32 outCnt, s32 sampleOffset, Ac
 
     return ptr;
 }
-
-
-
-
-
 
 /** Apply a control message to this node and forward handled messages. */
 s32 func_802B5730_de(void *arg0, s32 arg1, s32 arg2) {
@@ -136,7 +132,7 @@ s32 func_802B5730_de(void *arg0, s32 arg1, s32 arg2) {
             callback(target, arg1, arg2);
         }
         break;
-    
+
     } while (0);
 
     return 0;
