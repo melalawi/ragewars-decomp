@@ -4532,7 +4532,6 @@ segments:
       - [0x174178, asm, "func_80406178_de"]
       - [0x174434, asm, "func_80406434_de"]
       - [0x1746BC, c, "func_804066BC_de"]
-      - [0x174858, c, "func_80406858_de"]
       - [0x1749F4, c, "func_804069F4_de"]
       - [0x174F7C, asm, "func_80406F7C_de"]
       - [0x1750F4, c, "func_804070F4_de"]

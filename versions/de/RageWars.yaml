@@ -4455,7 +4455,6 @@ segments:
       - [0x16C178, asm, "func_80406178_de"]
       - [0x16C434, asm, "func_80406434_de"]
       - [0x16C6BC, c, "func_804066BC_de"]
-      - [0x16C858, c, "func_80406858_de"]
       - [0x16C9F4, c, "func_804069F4_de"]
       - [0x16CF7C, asm, "func_80406F7C_de"]
       - [0x16D0F4, c, "func_804070F4_de"]
