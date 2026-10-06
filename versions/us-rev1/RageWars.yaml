@@ -982,7 +982,6 @@ segments:
       - [0x4CA48, c, "func_8024BE58_de"]
       - [0x4CA70, c, "func_8024BE80_de"]
       - [0x4CACC, c, "func_8024BEDC_de"]
-      - [0x4CB14, c, "func_8024BF24_de"]
       - [0x4CBC4, asm, "func_8024BFD4_de"]
       - [0x4CCE4, c, "func_8024C0D4_us"]
       - [0x4CCF4, c, "func_8024C104_de"]
