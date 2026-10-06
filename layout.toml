@@ -556,6 +556,7 @@ segment = "span_1000"
 evidence = "proven"
 members = ["func_8026E1F8_de", "func_8026E59C_eu", "func_8026E5CC_eu_x", "func_8026E5DC_de", "func_8026E5E0_de", "func_8026EE20_de"]
 only = { "func_8026E59C_eu" = ["eu"], "func_8026E5CC_eu_x" = ["us-rev1", "eu-x"], "func_8026E5DC_de" = ["de"] }
+split = ["func_8026EE20_de"]
 signals = ["cap", "version"]
 
 [[group]]
