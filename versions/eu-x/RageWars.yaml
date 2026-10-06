@@ -274,7 +274,7 @@ segments:
       - [0xDF48, c, "func_8020D328_de"]
       - [0xDF7C, c, "func_8020D35C_de"]
       - [0xDF84, data, "func_8020D364_de_padding_DF84"]
-      - [0x00DF90, asm, "func_8020D370_de"]
+      - [0x00DF90, c, "func_8020D370_de"]
       - [0xE0CC, c, "func_8020D4AC_de"]
       - [0xE304, asm, "func_8020D6E4_de"]
       - [0xE5E0, c, "func_8020D9C0_de"]

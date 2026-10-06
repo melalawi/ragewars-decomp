@@ -176,7 +176,8 @@ us-rev1.U.func_8020D308_de := 0x8020D308:0xDF08:0x10
 us-rev1.U.func_8020D318_de := 0x8020D318:0xDF18:0x10
 us-rev1.U.func_8020D328_de := 0x8020D328:0xDF28:0x34
 us-rev1.U.func_8020D35C_de := 0x8020D35C:0xDF5C:0x8
-us-rev1.S.0000DF64 := 57188 328
+us-rev1.S.0000DF64 := 57188 12
+us-rev1.U.func_8020D370_de := 0x8020D370:0xDF70:0x13C
 us-rev1.U.func_8020D4AC_de := 0x8020D4AC:0xE0AC:0x238
 us-rev1.S.0000E2E4 := 58084 732
 us-rev1.U.func_8020D9C0_de := 0x8020D9C0:0xE5C0:0x154
@@ -3568,6 +3569,7 @@ us-rev1.PIECES := \
   build/us-rev1/units/func_8020D328_de.bin \
   build/us-rev1/units/func_8020D35C_de.bin \
   build/us-rev1/slices/0000DF64.bin \
+  build/us-rev1/units/func_8020D370_de.bin \
   build/us-rev1/units/func_8020D4AC_de.bin \
   build/us-rev1/slices/0000E2E4.bin \
   build/us-rev1/units/func_8020D9C0_de.bin \
