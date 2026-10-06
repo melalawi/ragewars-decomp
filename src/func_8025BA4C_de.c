@@ -1,17 +1,13 @@
+#include "span_1000/code_8025A3EC.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8025A3EC.h"
 #include "types.h"
 #include "common/types_8fd754e1e915.h"
 #include "common/unused.h"
+#include "packed_float.h"
 
 /* Returns whether any of the sixteen occupied slots of a record, other than the one its header marks as local, holds the given value at slot offset 0xA8. */
-
-
-
-
-
-
 
 s32 func_8025BA4C_de(Record_func_8025BA4C_de *record, s32 value) {
     s32 i;
@@ -71,25 +67,11 @@ void func_8025BB5C_de(void *arg0, void *arg1, int arg2) {
 void func_8025BB7C_de(void *arg0, int arg1) {
     ((func_8025BB9C_S1 *)(arg0))->unkA8 = arg1;
 }
-
-#if defined(VERSION_EU)
-#define func_802B2350 func_802AD520_eu
-#else
-#define func_802B2350 func_802AD280_de
-#endif
-
-
-
-
-
-
-
 extern void func_80259C5C_de(void *arg0, void *arg1, s32 arg2);
 extern void func_80259F68_de(void *arg0, void *arg1, s32 arg2);
 extern void *func_80258BF4_de(void *arg0, s32 arg1);
 extern s32 func_80258D2C_de(void *arg0);
 extern s16 func_80259B10_de(void *arg0, s32 arg1);
-extern f32 func_802B2350(s32 arg0);
 
 void func_8025BB84_de(void *arg0, void *arg1, s32 arg2) {
     f32 first;
@@ -104,14 +86,14 @@ void func_8025BB84_de(void *arg0, void *arg1, s32 arg2) {
     if (index != -1) {
         record = func_80258BF4_de(((func_8025BBA4_S1 *)(arg0))->unkB0, index);
         ((func_8025BBA4_S1 *)(arg0))->unk8C = *(Block12 *)record;
-        first = func_802B2350(((func_8025BBA4_S3 *)(arg0))->unk8E);
+        first = RW_BITS_TO_FLOAT(((func_8025BBA4_S3 *)(arg0))->unk8E);
         ((func_8025BBA4_S1 *)(arg0))->unk9C =
-            (first - func_802B2350(((func_8025BBA4_S3 *)(arg0))->unk90)) /
+            (first - RW_BITS_TO_FLOAT(((func_8025BBA4_S3 *)(arg0))->unk90)) /
             ((func_8025BBA4_S3 *)(arg0))->unk92;
         ((func_8025BBA4_S1 *)(arg0))->unk98 =
-            func_802B2350(((func_8025BBA4_S3 *)(arg0))->unk8E);
+            RW_BITS_TO_FLOAT(((func_8025BBA4_S3 *)(arg0))->unk8E);
         ((func_8025BBA4_S1 *)(arg0))->unk28 =
-            (s16)(s32)func_802B2350(((func_8025BBA4_S3 *)(arg0))->unk8E);
+            (s16)(s32)RW_BITS_TO_FLOAT(((func_8025BBA4_S3 *)(arg0))->unk8E);
         ((func_8025BBA4_S1 *)(arg0))->unk88 = 1;
         return;
     }
@@ -134,16 +116,7 @@ store_value:
 
 extern s32 D_800CBAFC;
 
-
 extern void func_8025AE1C_de(void *arg0);
-
-
-
-
-
-
-
-
 void func_8025BD00_de(void **arg0) {
     s32 var_s0;
     s32 var_s2;
