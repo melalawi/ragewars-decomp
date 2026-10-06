@@ -1,6 +1,11 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80293A04.h"
 #include "types.h"
+#include "common/unused.h"
+#include "span_C76B0/data.h"
+#include "common/types_8fd754e1e915.h"
+#include "n64sdk.h"
+#include "gbi.h"
 
 /** Perform no work for callers at VRAM 0x80293DDC. */
 void func_80293DE8_de(void) {
@@ -69,4 +74,65 @@ void func_80293EB8_de(void *arg0) {
     func_8044A370_de(p2, 1);
     ((IntegerState164 *)(p2))->unk_160 = 0;
     func_80296004_de(0);
+}
+
+struct func_80293B0C_S1;
+
+
+
+
+extern s32 D_800CD77C;
+extern u32 func_80265350_de(void);
+extern s32 func_80293904_de(s32 arg0, u32 arg1, s32 arg2, s32 arg3);
+
+void func_80293F44_de(void *arg0) {
+    s32 var_a2;
+    s32 call_result;
+    u32 result;
+
+    result = func_80265350_de();
+    var_a2 = 4;
+    if ((result > 0x400000U) && (D_800CD778_de != 0)) {
+        var_a2 = 3;
+    }
+    if (((func_80293B0C_S1 *)(arg0))->unk26DB0.v0 > D_800C54C4_de) {
+        D_800CD77C = 0;
+    }
+    if (D_800CD77C != 0) {
+        call_result = func_80293904_de((s32)arg0, 0x41400000U, var_a2, -1);
+    } else {
+        call_result = func_80293904_de((s32)arg0, 0x41400000U, var_a2, var_a2);
+    }
+    if (call_result != 0) {
+        D_800CD77C = 0;
+    }
+}
+
+/* Emits a set-color-image display list command for the current frame buffer, then draws image 0x388
+ * scaled to fill the screen dimensions over the image's returned width and height, when both are nonzero. */
+
+
+
+
+extern void func_802A9234_de(s32);
+extern void func_802AA950_de(s32 image, s32 frame, s32 *width, s32 *height);
+extern void func_802AAC28_de(s32 image, s32 frame, s32 x, s32 y, f32 scaleX, f32 scaleY, s32 flags);
+extern Gfx *D_8010C574;
+extern Frame *D_8011BDC0;
+extern s32 D_800DE880_de;
+extern s32 D_800DE884_de;
+
+void func_80293FF0_de(void) {
+    s32 width;
+    s32 height;
+    Gfx *cmd;
+
+    width = 0;
+    height = 0;
+    gDPSetColorImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, D_800DE880_de, (u32)D_8011BDC0->colorImage);
+    func_802AA950_de(0x388, 0, &width, &height);
+    if ((width != 0) && (height != 0)) {
+        func_802A9234_de(0xFA);
+        func_802AAC28_de(0x388, 0, 0, 0, (f32)D_800DE880_de / (f32)width, (f32)D_800DE884_de / (f32)height, 1);
+    }
 }
