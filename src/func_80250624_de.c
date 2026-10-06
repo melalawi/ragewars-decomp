@@ -1,37 +1,30 @@
 #include "span_1000/code_8024E914.h"
+#include "span_1000/code_8024E914.h"
+#include "types.h"
+#include "common/unused.h"
+
 /* Starts the effects attached to an object's model: loads the model resource named by the object's id,
  * finds its attachment table (group 3) and loads it, then for each 0x1C-byte attachment (all of them, or
  * only type 8 when all is clear) transforms its offset by the object's matrix at 0x68 and starts the
  * attachment's effect at that point through func_80265E10_de, releasing both resources afterwards. */
-#include "types.h"
-#include "common/unused.h"
-
-
-
-
-
 
 extern char D_800C3E5C_de;
-/* Resident 'static events' object proven in every holding ROM. */
 #if defined(VERSION_DE)
-#define RW_STATIC_EVENTS_TAG D_800C3E70
-#elif defined(VERSION_US)
-#define RW_STATIC_EVENTS_TAG D_800C3DA0
+extern char D_800C3E70[];
 #elif defined(VERSION_EU)
-#define RW_STATIC_EVENTS_TAG D_800C4120
+extern char D_800C4120[];
 #elif defined(VERSION_EU_X)
-#define RW_STATIC_EVENTS_TAG D_800C4160
+extern char D_800C4160[];
+#elif defined(VERSION_US)
+extern char D_800C3DA0[];
 #else
-#define RW_STATIC_EVENTS_TAG D_800C8F60
+extern char D_800C8F60[];
 #endif
-extern char RW_STATIC_EVENTS_TAG[];
 extern s32 **func_8025193C_de(s32, s32, s32, s32, s32, s32, s32, char *, s32);
 extern s32 func_8028FE3C_de(s32 *, s32, s32, s32 *);
 extern void func_80272898_de(void *, Triple *, Triple *);
 extern void func_80265E10_de(void *, void *, s32, s32, Triple, ResourceManagerState);
 extern void func_80253754_de(s32, s32 **);
-
-
 
 void func_80250624_de(void *object, s32 all) {
     s32 **model;
@@ -51,7 +44,17 @@ void func_80250624_de(void *object, s32 all) {
         return;
     }
     name = func_8028FE3C_de(*model, ((func_802505CC_S1 *)(object))->unk1C, 3, &size);
-    table = func_8025193C_de(0, name, name, size, 0, 0, 0, RW_STATIC_EVENTS_TAG, 0);
+#if defined(VERSION_DE)
+    table = func_8025193C_de(0, name, name, size, 0, 0, 0, D_800C3E70, 0);
+#elif defined(VERSION_EU)
+    table = func_8025193C_de(0, name, name, size, 0, 0, 0, D_800C4120, 0);
+#elif defined(VERSION_EU_X)
+    table = func_8025193C_de(0, name, name, size, 0, 0, 0, D_800C4160, 0);
+#elif defined(VERSION_US)
+    table = func_8025193C_de(0, name, name, size, 0, 0, 0, D_800C3DA0, 0);
+#else
+    table = func_8025193C_de(0, name, name, size, 0, 0, 0, D_800C8F60, 0);
+#endif
     if (table != 0) {
         header = *table;
         count = header[1];
@@ -67,4 +70,3 @@ void func_80250624_de(void *object, s32 all) {
     }
     func_80253754_de(0, model);
 }
-
