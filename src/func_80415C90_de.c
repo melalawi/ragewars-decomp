@@ -1,3 +1,4 @@
+#include "span_16E000/code_804143D8.h"
 #include "types.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_804143D8.h"
@@ -136,7 +137,6 @@ void func_80416CF4_de(int mode){
  }
 }
 
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* Selects vertex mode when it differs from D_800DF278: mode 9 loads an identity model matrix
    through func_8029EB14_de and func_80419430_de, transforms the point (0, 0, D_800DD3FC) by the view
    D_80141168, loads four white vertices at that point and marks each vertex's screen position for
@@ -144,7 +144,6 @@ void func_80416CF4_de(int mode){
 
 extern Gfx *D_8010C574;
 extern s32 D_800DF278;
-
 
 extern char D_80141168;
 
@@ -201,15 +200,10 @@ void func_80416ECC_de(s32 mode) {
    0x500, 0x3000 or 0x5000 and 0x30000 or 0x50000 chosen by the three further switches, through
    func_80417138_de. */
 
-
-
 extern Triple D_8014DCD0;
 extern s32 D_8014DCDC;
 
 extern s32 D_800DF27C;
-
-
-
 
 void func_80417034_de(s32 mode) {
     s32 bits;
