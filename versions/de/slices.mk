@@ -2571,7 +2571,9 @@ de.S.0017A2AC := 1548972 156
 de.U.func_80414348_de := 0x80414348:0x17A348:0x10
 de.S.0017A358 := 1549144 8
 de.U.func_80414360_de := 0x80414360:0x17A360:0x48
-de.S.0017A3A8 := 1549224 11404
+de.S.0017A3A8 := 1549224 10572
+de.U.func_80416CF4_de := 0x80416CF4:0x17CCF4:0x1D8
+de.S.0017CECC := 1560268 360
 de.U.func_80417034_de := 0x80417034:0x17D034:0x104
 de.U.func_80417138_de := 0x80417138:0x17D138:0x244
 de.U.func_8041737C_de := 0x8041737C:0x17D37C:0x178
@@ -5905,6 +5907,8 @@ de.PIECES := \
   build/de/slices/0017A358.bin \
   build/de/units/func_80414360_de.bin \
   build/de/slices/0017A3A8.bin \
+  build/de/units/func_80416CF4_de.bin \
+  build/de/slices/0017CECC.bin \
   build/de/units/func_80417034_de.bin \
   build/de/units/func_80417138_de.bin \
   build/de/units/func_8041737C_de.bin \
