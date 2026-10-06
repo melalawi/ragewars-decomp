@@ -81,6 +81,9 @@ struct func_802AB8DC_S1;
 /* unbake published declaration: published_5f7ff425eeddf5198bfbb655 */
 typedef struct func_802AB8DC_S1 func_802AB8DC_S1;
 
+/* unbake published declaration: published_6164c6421668b44fe21b6b8d */
+extern float D_800C61B8_de;
+
 /* unbake published declaration: published_82e909c0a4a9fadb8a82a29a */
 extern float D_800C61F0_de;
 

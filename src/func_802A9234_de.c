@@ -3,7 +3,6 @@
 #include "gbi.h"
 #include "types.h"
 #include "n64sdk.h"
-#include "span_C76B0/data.h"
 
 /* Emits the render-state display-list prologue for a flat colour pass: pipeline sync, one-cycle
    mode, the two combiner/mode presets through func_80268CE0_de and func_8026925C_de, the environment
