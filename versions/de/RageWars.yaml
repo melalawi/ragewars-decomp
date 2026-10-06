@@ -5475,7 +5475,6 @@ segments:
       - [0x1AAD9C, asm, "func_80444D9C_de"]
       - [0x1AAE28, asm, "func_80444E28_de"]
       - [0x1AAE30, c, "func_80444E30_de"]
-      - [0x1AAE70, c, "func_80444E70_de"]
       - [0x1AAE7C, c, "func_80444E7C_de"]
       - [0x1AAEBC, c, "func_80444EBC_de"]
       - [0x1AAF98, c, "func_80444F98_de"]

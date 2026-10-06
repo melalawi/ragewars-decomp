@@ -16,3 +16,8 @@ s32 func_80444E30_de(void) {
     func_8044DD50_de(D_8011BA00);
     return 1;
 }
+
+/* Stores 4 into the first halfword of a record. */
+void func_80444E70_de(s16 *record) {
+    record[0] = 4;
+}

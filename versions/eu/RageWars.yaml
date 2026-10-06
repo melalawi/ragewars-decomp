@@ -5329,7 +5329,6 @@ segments:
       - [0x1BBFB4, c, "func_80445FB4_eu"]
       - [0x1BBFC8, data, "func_80444E30_de_padding_1BBFC8"]
       - [0x1BBFD0, c, "func_80444E30_de"]
-      - [0x1BC010, c, "func_80444E70_de"]
       - [0x1BC01C, c, "func_80444E7C_de"]
       - [0x1BC05C, asm, "func_8044605C_eu"]
       - [0x1BC088, asm, "func_80446088_eu"]
