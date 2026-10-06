@@ -10,19 +10,17 @@
 
 extern s32 D_800DF450;
 extern s32 D_800DF454;
-extern Handler802A2B50 
 #if defined(VERSION_DE)
-D_800DF458
+extern Handler802A2B50 D_800DF458;
 #elif defined(VERSION_EU)
-D_800EFAC8
+extern Handler802A2B50 D_800EFAC8;
 #elif defined(VERSION_EU_X)
-D_800EAC88
+extern Handler802A2B50 D_800EAC88;
 #elif defined(VERSION_US)
-D_800DE108
+extern Handler802A2B50 D_800DE108;
 #elif defined(VERSION_US_REV1)
-D_800E34A8
+extern Handler802A2B50 D_800E34A8;
 #endif
-;
 
 s32 func_8041B970_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     char *entry;
