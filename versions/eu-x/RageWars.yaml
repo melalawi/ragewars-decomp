@@ -2382,7 +2382,7 @@ segments:
       - [0xB4BF0, asm, "func_802B3D10_de"]
       - [0xB4C98, c, "func_802B3DB8_de"]
       - [0xB4CD4, data, "func_802B40D4_eu_x_padding_B4CD4"]
-      - [0x0B4CE0, asm, "func_802B40E0_eu_x"]
+      - [0x0B4CE0, c, "func_802B40E0_eu_x"]
       - [0xB4DBC, c, "func_802B3EDC_de"]
       - [0xB4DEC, asm, "func_802B41EC_eu_x"]
       - [0xB4DF0, asm, "func_802B3F10_de"]
