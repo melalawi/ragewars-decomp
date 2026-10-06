@@ -4879,7 +4879,7 @@ segments:
       - [0x19F978, c, "func_80428E10_de"]
       - [0x19F9E0, c, "func_80428E78_de"]
       - [0x19FA70, c, "func_80428F08_de"]
-      - [0x19FB00, asm, "func_80429B00_eu"]
+      - [0x19FB00, c, "func_80429B00_eu"]
       - [0x19FB28, asm, "func_80429B28_eu"]
       - [0x19FC54, c, "func_804290F4_de"]
       - [0x19FC9C, asm, "func_80429C9C_eu"]
