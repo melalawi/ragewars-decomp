@@ -1,3 +1,4 @@
+#include "span_1000/code_80225D10.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
@@ -12,16 +13,6 @@
    seven other players (the shorts at 0x3C of its stats at 0x5D8) to the total of its team byte at
    0x92, returning 0 at once for a player without a team (0xFF), then returns the first team 0 to 4
    with the highest total. */
-
-
-
-
-
-
-
-
-
-
 s32 func_80229A80_de(void *game) {
     s32 total0;
     s32 total1;
@@ -97,11 +88,6 @@ s32 func_80229A80_de(void *game) {
 extern s32 D_80142850;
 
 extern void *jtbl_800C2C80[];
-
-
-
-
-
 
 /** Return the animation-table offset selected by the actor state. */
 s32 func_80229C0C_de(void *arg0, s32 arg1) {
@@ -195,26 +181,17 @@ s32 func_80229C0C_de(void *arg0, s32 arg1) {
         sw_state_14:
             offset = 0x76C;
             break;
-    
+
     } while (0);
     }
     return arg1 + offset;
 }
 
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 /* Draws the marker over a player that is alive at 0x5E4: loads the player's matrix from its table at
    0x1640 (the first entry while func_802A23B4_de reports a shared view, otherwise the entry for the current
    view D_800CD72C), sets the render and geometry modes, fills the five vertices of a green pyramid in
    D_800FE9F8 and emits them with its four triangles. Adapted from func_8021C698_de with the pyramid, the
    colour and the matrix selection changed. */
-
-
-
-
-
-
-
-
 extern s32 D_800CD72C;
 extern struct UnitVtx D_800FE9F8[];
 extern Gfx *D_8010C574;
@@ -301,9 +278,6 @@ void func_80229D28_de(Player16C0 *player) {
 
 /* Scales damage by ownership and player state and suppresses friendly damage when configured. */
 
-
-
-
 extern func_80207B5C_S2 D_801427E0;
 extern const f32 D_800C7DB0[],D_800C7DB8[],D_800C7DC0[],D_800C7DC8[],D_800C2CE0_de[];
 void func_80229FA0_de(Obj_func_80229FA0_de *arg0, Damage_func_80229FA0_de *arg1) {
@@ -342,7 +316,7 @@ void func_80229FA0_de(Obj_func_80229FA0_de *arg0, Damage_func_80229FA0_de *arg1)
     if (var_a3 != 0) {
         if (var_a3->unk1450 != 0) {
             temp_v1_2 = var_a3->unk5D8->unk93;
-            switch (temp_v1_2) {                    /* irregular */
+            switch (temp_v1_2) { /* irregular */
             case 2:
                 break;
             default:
@@ -370,11 +344,6 @@ extern void func_8024B8C4_de(void *arg0);
 extern void func_8022BC94_de(void *arg0, s32 arg1);
 extern s32 func_8024B7E4_de(void *arg0, s32 arg1);
 
-
-
-
-
-
 void func_8022A170_de(void *arg0) {
     void *node;
 
@@ -399,17 +368,6 @@ void func_8022A170_de(void *arg0) {
 }
 
 extern s32 func_8024D160_de(void *arg0);
-
-
-
-
-
-
-
-
-
-
-
 void func_8022A1FC_de(void *arg0, void *arg1) {
     void *node;
     int scale;
