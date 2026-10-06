@@ -2576,6 +2576,16 @@
       "exact": false,
       "minutes": 0.02
     },
+    "func_80408AC4_us": {
+      "attempts": 1,
+      "best": {
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 436,
+      "exact": true,
+      "minutes": 0.02
+    },
     "func_80409144_de": {
       "attempts": 1,
       "best": {

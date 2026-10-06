@@ -6,7 +6,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 ## Progress
 
-<pre><code>all     [███████████▒░░░░░░░░]  56.82% (~58.99%)  3,139,176 of 5,525,200 bytes</code><br><code>de      [███████████▒░░░░░░░░]  56.47% (~58.58%)  623,948 of 1,104,964 bytes</code><br><code>us      [███████████▒░░░░░░░░]  58.04% (~60.16%)  616,568 of 1,062,244 bytes</code><br><code>us-rev1 [███████████▒░░░░░░░░]  57.19% (~59.41%)  647,424 of 1,131,992 bytes</code><br><code>eu      [███████████▒░░░░░░░░]  56.17% (~58.35%)  624,604 of 1,111,996 bytes</code><br><code>eu-x    [███████████▒░░░░░░░░]  56.25% (~58.48%)  626,632 of 1,114,004 bytes</code></pre>
+<pre><code>all     [███████████▒░░░░░░░░]  56.83% (~59.01%)  3,140,048 of 5,525,200 bytes</code><br><code>de      [███████████▒░░░░░░░░]  56.47% (~58.58%)  623,948 of 1,104,964 bytes</code><br><code>us      [███████████▒░░░░░░░░]  58.08% (~60.20%)  617,004 of 1,062,244 bytes</code><br><code>us-rev1 [███████████▒░░░░░░░░]  57.23% (~59.45%)  647,860 of 1,131,992 bytes</code><br><code>eu      [███████████▒░░░░░░░░]  56.17% (~58.35%)  624,604 of 1,111,996 bytes</code><br><code>eu-x    [███████████▒░░░░░░░░]  56.25% (~58.48%)  626,632 of 1,114,004 bytes</code></pre>
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
@@ -14,11 +14,11 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | us (NUS-NRWE-0, North America). First NTSC release (black cartridge). SHA256 `0433043aaba2649bdd1fe717c4020550ac663c0362527aa082490f5977a3e46b` |
 |---|
-| <pre><code>bytes     [███████████▒░░░░░░░░]  58.04% (~60.16%)  616,568 of 1,062,244</code><br><code>functions [███████████████░░░░░]  77.65%  2,744 of 3,534</code></pre> |
+| <pre><code>bytes     [███████████▒░░░░░░░░]  58.08% (~60.20%)  617,004 of 1,062,244</code><br><code>functions [███████████████░░░░░]  77.67%  2,745 of 3,534</code></pre> |
 
 | us-rev1 (NUS-NRWE-1, North America). Revised NTSC release (grey cartridge). SHA256 `5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089` |
 |---|
-| <pre><code>bytes     [███████████▒░░░░░░░░]  57.19% (~59.41%)  647,424 of 1,131,992</code><br><code>functions [██████████████░░░░░░]  74.98%  2,826 of 3,769</code></pre> |
+| <pre><code>bytes     [███████████▒░░░░░░░░]  57.23% (~59.45%)  647,860 of 1,131,992</code><br><code>functions [███████████████░░░░░]  75.01%  2,827 of 3,769</code></pre> |
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
