@@ -2270,7 +2270,7 @@ segments:
       - [0xB193C, c, "func_802B0D3C_us_rev1"]
       - [0xB1C88, c, "func_802B1088_us_rev1"]
       - [0xB1F08, c, "func_802B1308_us_rev1"]
-      - [0xB2154, asm, "func_802B1554_us_rev1"]
+      - [0xB2154, c, "func_802B1554_us_rev1"]
       - [0xB215C, c, "func_802B155C_us_rev1"]
       - [0xB2420, c, "func_802B1820_us_rev1"]
       - [0xB2F40, c, "func_802AD270_de"]
