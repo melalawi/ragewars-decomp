@@ -624,7 +624,7 @@ name = "code_8028308C"
 segment = "span_1000"
 evidence = "proven"
 members = ["func_802830B8_de", "func_802830CC_de", "func_80283228_de", "func_80283278_de", "func_802833D0_de", "func_802833DC_de", "func_80283424_de", "func_80283448_de", "func_80283480_de", "func_802835A8_de", "func_802836D0_de", "func_802837F8_de", "func_80283920_de", "func_80283A1C_de", "func_80283C1C_de", "func_80283D38_de", "func_80284090_de", "func_80284178_de", "func_80284478_de", "func_80284570_de", "func_8028466C_de"]
-split = ["func_80283278_de", "func_802833D0_de", "func_802833DC_de", "func_80283424_de", "func_80283448_de", "func_80283480_de", "func_802835A8_de", "func_802836D0_de", "func_802837F8_de", "func_80283920_de", "func_80283A1C_de"]
+split = ["func_80283278_de", "func_802833D0_de", "func_802833DC_de", "func_80283424_de", "func_80283448_de", "func_80283480_de", "func_802835A8_de", "func_802836D0_de", "func_802837F8_de", "func_80283920_de", "func_80283A1C_de", "func_8028466C_de"]
 signals = ["cap"]
 
 [[group]]
