@@ -1952,16 +1952,6 @@
       "exact": true,
       "minutes": 0.02
     },
-    "func_80423594_us": {
-      "attempts": 1,
-      "best": {
-        "us": 100.0,
-        "us-rev1": 100.0
-      },
-      "bytes": 8,
-      "exact": true,
-      "minutes": 0.02
-    },
     "func_80424DE8_de": {
       "attempts": 1,
       "best": {

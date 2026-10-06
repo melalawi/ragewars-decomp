@@ -1701,6 +1701,7 @@ build/%/src/func_802AD264_de.i build/%/src/func_802AD264_de.key build/%/units/fu
 build/%/src/func_802AD270_de.i build/%/src/func_802AD270_de.key build/%/units/func_802AD270_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_802AD280_de.i build/%/src/func_802AD280_de.key build/%/units/func_802AD280_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_802AD548_eu.i build/%/src/func_802AD548_eu.key build/%/units/func_802AD548_eu.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
+build/%/src/func_802AD580_eu_x.i build/%/src/func_802AD580_eu_x.key build/%/units/func_802AD580_eu_x.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_802AE030_de.i build/%/src/func_802AE030_de.key build/%/units/func_802AE030_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_802AE260_us_rev1.i build/%/src/func_802AE260_us_rev1.key build/%/units/func_802AE260_us_rev1.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_802AE290_de.i build/%/src/func_802AE290_de.key build/%/units/func_802AE290_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
