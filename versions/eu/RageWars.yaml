@@ -5015,7 +5015,7 @@ segments:
       - [0x1AC2E0, c, "func_804355B4_de"]
       - [0x1AC314, asm, "func_804355E8_de"]
       - [0x1AC3E8, c, "func_804356BC_de"]
-      - [0x1AC4A8, asm, "func_8043577C_de"]
+      - [0x1AC4A8, c, "func_8043577C_de"]
       - [0x1AC568, c, "func_8043583C_de"]
       - [0x1AC570, c, "func_80435844_de"]
       - [0x1AC5EC, c, "func_804358C0_de"]

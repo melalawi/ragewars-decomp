@@ -2991,7 +2991,7 @@ eu-x.U.func_80435574_de := 0x804363E8:0x1263E8:0x40
 eu-x.U.func_804355B4_de := 0x80436428:0x126428:0x34
 eu-x.S.0012645C := 1205340 212
 eu-x.U.func_804356BC_de := 0x80436530:0x126530:0xC0
-eu-x.S.001265F0 := 1205744 192
+eu-x.U.func_8043577C_de := 0x804365F0:0x1265F0:0xC0
 eu-x.U.func_8043583C_de := 0x804366B0:0x1266B0:0x8
 eu-x.U.func_80435844_de := 0x804366B8:0x1266B8:0x7C
 eu-x.U.func_804358C0_de := 0x80436734:0x126734:0x4C
@@ -6339,7 +6339,7 @@ eu-x.PIECES := \
   build/eu-x/units/func_804355B4_de.bin \
   build/eu-x/slices/0012645C.bin \
   build/eu-x/units/func_804356BC_de.bin \
-  build/eu-x/slices/001265F0.bin \
+  build/eu-x/units/func_8043577C_de.bin \
   build/eu-x/units/func_8043583C_de.bin \
   build/eu-x/units/func_80435844_de.bin \
   build/eu-x/units/func_804358C0_de.bin \
