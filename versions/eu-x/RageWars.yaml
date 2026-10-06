@@ -2377,7 +2377,7 @@ segments:
       - [0xB45D0, c, "func_802B36F0_de"]
       - [0xB464C, asm, "func_802B3A4C_eu_x"]
       - [0xB4650, c, "func_802B3770_de"]
-      - [0xB4924, asm, "func_802B3A44_de"]
+      - [0xB4924, c, "func_802B3A44_de"]
       - [0xB4AD8, c, "func_802B3BF8_de"]
       - [0xB4B04, c, "func_802B3C24_de"]
       - [0xB4B1C, c, "func_802B3C3C_de"]
