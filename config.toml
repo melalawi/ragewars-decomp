@@ -1368,6 +1368,9 @@ cflags = [ "-c", "-G0", "-non_shared", "-mips2", "-O2",]
 [compilers."ido-7.1"]
 cflags = [ "-c", "-G0", "-non_shared", "-mips2", "-O2",]
 
+[units.func_80200500_de]
+compiler = "gcc-2.7.2-kmc"
+
 [units.func_80200538_de]
 compiler = "gcc-2.7.2-kmc"
 
