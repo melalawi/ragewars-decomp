@@ -2010,7 +2010,7 @@ segments:
       - [0x9EB98, c, "func_8029DE48_de"]
       - [0x9EC98, c, "func_8029DF48_de"]
       - [0x9ED9C, c, "func_8029E04C_de"]
-      - [0x9EE54, asm, "func_8029E104_de"]
+      - [0x9EE54, c, "func_8029E104_de"]
       - [0x9EF24, c, "func_8029E1D4_de"]
       - [0x9EFF8, c, "func_8029E2A8_de"]
       - [0x9F00C, c, "func_8029E2BC_de"]

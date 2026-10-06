@@ -1999,7 +1999,7 @@ segments:
       - [0x9E988, c, "func_8029DE48_de"]
       - [0x9EA88, c, "func_8029DF48_de"]
       - [0x9EB8C, c, "func_8029E04C_de"]
-      - [0x9EC44, asm, "func_8029E104_de"]
+      - [0x9EC44, c, "func_8029E104_de"]
       - [0x9ED14, c, "func_8029E1D4_de"]
       - [0x9EDE8, c, "func_8029E2A8_de"]
       - [0x9EDFC, c, "func_8029E2BC_de"]
