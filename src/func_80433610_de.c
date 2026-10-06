@@ -1,14 +1,12 @@
+#include "span_16E000/code_8042F988.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_16E000/code_80405DC0.h"
 #include "span_16E000/code_8042F988.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 #include "types.h"
+
 /* Updates a player menu state from controller status, available saves, and the current menu phase. */
 
-
-
 extern PakMenuController *D_800E1454_de;
-
 
 extern s32 func_80404F04_de(s32);
 extern s32 func_80404BE8_de(void *, s32, s32 *);
@@ -18,17 +16,6 @@ extern s32 func_80435184_de(s32);
 extern s32 func_8043590C_de(s32);
 extern s32 func_802744D4_de(void);
 extern void func_804322AC_de(s32);
-#if defined(VERSION_EU)
-
-
-#elif defined(VERSION_EU_X)
-
-
-#endif
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
-
-
-#endif
 void func_80433610_de(s32 player)
 {
   s32 random;
@@ -54,7 +41,11 @@ void func_80433610_de(s32 player)
         D_800E1454_de->players[player].state = D_800E1454_de->players[player].next;
       }
       else
-        if (func_80404BE8_de(RW_LOCALIZED_TEXT(D_800D36D4, D_800E25A4, D_800E25A4, D_80152789), player, &result) == one)
+#if defined(VERSION_EU) || defined(VERSION_EU_X)
+        if (func_80404BE8_de(((D_800E25A4)[D_80152789]), player, &result) == one)
+#else
+        if (func_80404BE8_de((D_800D36D4), player, &result) == one)
+#endif
       {
         if (func_80434638_de(player, result) == one)
         {
