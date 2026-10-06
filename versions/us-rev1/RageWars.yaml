@@ -1540,8 +1540,6 @@ segments:
       - [0x73AAC, c, "func_80272E3C_de"]
       - [0x73C14, c, "func_80272FA4_de"]
       - [0x73C2C, c, "func_80272FBC_de"]
-      - [0x74168, c, "func_802734F8_de"]
-      - [0x74218, c, "func_802735A8_de"]
       - [0x742B8, c, "func_80273648_de"]
       - [0x74344, c, "func_802736D4_de"]
       - [0x743D0, c, "func_80273760_de"]

@@ -1537,8 +1537,6 @@ segments:
       - [0x73A6C, c, "func_80272E3C_de"]
       - [0x73BD4, c, "func_80272FA4_de"]
       - [0x73BEC, c, "func_80272FBC_de"]
-      - [0x74128, c, "func_802734F8_de"]
-      - [0x741D8, c, "func_802735A8_de"]
       - [0x74278, c, "func_80273648_de"]
       - [0x74304, c, "func_802736D4_de"]
       - [0x74390, c, "func_80273760_de"]
