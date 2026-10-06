@@ -2,8 +2,6 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80271B18.h"
 
-
-
 extern f32 func_802B72B0_de(f32);
 
 static __inline__ Vec3 project(Vec3 *arg0, Vec3 *arg1) {
@@ -38,4 +36,26 @@ Vec3 func_802723FC_de(Vec3 *arg0, Vec3 *arg1) {
     }
 
     return projected;
+}
+
+extern f32 func_802B72B0_de(f32);
+
+s32 func_8027254C_de(f32 *arg0, f32 arg1) {
+    f32 magSq;
+    f32 mag;
+    f32 scale;
+
+    magSq = (arg0[0] * arg0[0]) + (arg0[1] * arg0[1]) + (arg0[2] * arg0[2]);
+    if ((arg1 * arg1) < magSq) {
+        mag = func_802B72B0_de(magSq);
+        if (mag == 0.0f) {
+            return 0;
+        }
+        scale = arg1 / mag;
+        arg0[0] = arg0[0] * scale;
+        arg0[1] = arg0[1] * scale;
+        arg0[2] = arg0[2] * scale;
+        return 1;
+    }
+    return 0;
 }
