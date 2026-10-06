@@ -898,6 +898,7 @@ build/%/src/func_8025B758_de.i build/%/src/func_8025B758_de.key build/%/units/fu
 build/%/src/func_8025B854_de.i build/%/src/func_8025B854_de.key build/%/units/func_8025B854_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8025B8BC_de.i build/%/src/func_8025B8BC_de.key build/%/units/func_8025B8BC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8025BA4C_de.i build/%/src/func_8025BA4C_de.key build/%/units/func_8025BA4C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
+build/%/src/func_8025BB84_de.i build/%/src/func_8025BB84_de.key build/%/units/func_8025BB84_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8025BD00_de.i build/%/src/func_8025BD00_de.key build/%/units/func_8025BD00_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8025BDAC_de.i build/%/src/func_8025BDAC_de.key build/%/units/func_8025BDAC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8025BE08_de.i build/%/src/func_8025BE08_de.key build/%/units/func_8025BE08_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)

@@ -1204,7 +1204,7 @@ segments:
       - [0x5C47C, c, "func_8025B8BC_de"]
       - [0x5C4E0, asm, "func_8025B920_de"]
       - [0x5C60C, c, "func_8025BA4C_de"]
-      - [0x5C744, asm, "func_8025BB84_de"]
+      - [0x5C744, c, "func_8025BB84_de"]
       - [0x5C8C0, c, "func_8025BD00_de"]
       - [0x5C96C, c, "func_8025BDAC_de"]
       - [0x5C9C8, c, "func_8025BE08_de"]
