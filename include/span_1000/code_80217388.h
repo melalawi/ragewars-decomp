@@ -1,35 +1,10 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80217388_H
 #define UNBAKE_SPAN_1000_CODE_80217388_H
 #include "../types.h"
+#include "common/reset_storage.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
 #include "gfx.h"
-struct func_80218E98_S3;
-/* unbake published declaration: published_02481b6d783b05cc0d706059 */
-struct func_80218E98_S3 {
-    volatile s32 unk0;
-    char pad0[0x4 - 0x0 - sizeof(volatile s32)];
-    volatile s32 unk4;
-    char pad4[0x8 - 0x4 - sizeof(volatile s32)];
-    volatile s32 unk8;
-    char pad8[0xC - 0x8 - sizeof(volatile s32)];
-    volatile s32 unkC;
-    char padC[0x14 - 0xC - sizeof(volatile s32)];
-    volatile s32 unk14;
-    char pad14[0x18 - 0x14 - sizeof(volatile s32)];
-    volatile s32 unk18;
-    char pad18[0x24 - 0x18 - sizeof(volatile s32)];
-    volatile f32 unk24;
-    char pad24[0x28 - 0x24 - sizeof(volatile f32)];
-    volatile s32 unk28;
-    char pad28[0x2C - 0x28 - sizeof(volatile s32)];
-    volatile f32 unk2C;
-    char pad2C[0x6C - 0x2C - sizeof(volatile f32)];
-    volatile s32 unk6C;
-    char pad6C[0x70 - 0x6C - sizeof(volatile s32)];
-    volatile s32 unk70;
-};
-
 struct TeamMenu;
 /* unbake published declaration: published_03df77f5a41514aa2b63bc80 */
 typedef struct TeamMenu TeamMenu;
@@ -72,41 +47,6 @@ struct Menu {
 
 /* unbake published declaration: published_0ee82a5a4fc137ab7ad84b9b */
 extern float D_800C2254_de;
-
-/* unbake published declaration: published_16ebd8b9f03131d6b633c7d3 */
-extern void func_80218E98_de( char *arg0);
-
-struct func_8021836C_S2;
-/* unbake published declaration: published_21e33c5fdc1310103118be71 */
-struct func_8021836C_S2 {
-    volatile s32 unk0;
-    char pad0[0x4 - 0x0 - sizeof(volatile s32)];
-    volatile s32 unk4;
-    char pad4[0x8 - 0x4 - sizeof(volatile s32)];
-    volatile s32 unk8;
-    char pad8[0xC - 0x8 - sizeof(volatile s32)];
-    volatile s32 unkC;
-    char padC[0x14 - 0xC - sizeof(volatile s32)];
-    volatile s32 unk14;
-    char pad14[0x18 - 0x14 - sizeof(volatile s32)];
-    volatile s32 unk18;
-    char pad18[0x28 - 0x18 - sizeof(volatile s32)];
-    volatile f32 unk28;
-    char pad28[0x2C - 0x28 - sizeof(volatile f32)];
-    volatile s32 unk2C;
-    char pad2C[0x30 - 0x2C - sizeof(volatile s32)];
-    volatile f32 unk30;
-    char pad30[0x37C - 0x30 - sizeof(volatile f32)];
-    volatile s32 unk37C;
-    char pad37C[0x380 - 0x37C - sizeof(volatile s32)];
-    volatile s32 unk380;
-    char pad380[0x388 - 0x380 - sizeof(volatile s32)];
-    volatile s32 unk388;
-    char pad388[0x38C - 0x388 - sizeof(volatile s32)];
-    volatile s32 unk38C;
-    char pad38C[0x390 - 0x38C - sizeof(volatile s32)];
-    volatile s32 unk390;
-};
 
 struct Item;
 /* unbake published declaration: published_246095d40a80b661ca48bfc3 */
@@ -152,13 +92,6 @@ struct Menu_func_80218F9C_de;
 /* unbake published declaration: published_52241a8b66738b2c72f75d76 */
 typedef struct Menu_func_80218F9C_de Menu_func_80218F9C_de;
 
-struct func_8021846C_S2;
-/* unbake published declaration: published_5e080d6a4e7e0396f7afbca7 */
-struct func_8021846C_S2 {
-    char pad0[0x698];
-    void * unk698;
-};
-
 struct Controller_func_80217B3C_de;
 struct Player_func_80217B3C_de;
 /* unbake published declaration: published_5f5138c35a8282eff177f6db */
@@ -198,10 +131,6 @@ struct func_80218F84_S1 {
     int unk6C;
 };
 
-struct func_8021846C_S1;
-/* unbake published declaration: published_6e830c5ac4134f99eff22301 */
-typedef struct func_8021846C_S1 func_8021846C_S1;
-
 struct Item_func_80218F9C_de;
 /* unbake published declaration: published_70bdef9777bea68b112603ab */
 typedef struct Item_func_80218F9C_de Item_func_80218F9C_de;
@@ -213,16 +142,8 @@ struct func_80217388_S2 {
     s32 unkFC;
 };
 
-struct func_80218E98_S3;
-/* unbake published declaration: published_74cd501cc4bd538b29908167 */
-typedef struct func_80218E98_S3 func_80218E98_S3;
-
-/* unbake published declaration: published_81c9ee01505fc80c3c67823a */
+/* unbake published declaration: published_85dc7d92ef23c11a479fcd86 */
 extern void func_8021836C_de( char *arg0);
-
-struct func_8021846C_S2;
-/* unbake published declaration: published_94cf1839f64f71dac21491a2 */
-typedef struct func_8021846C_S2 func_8021846C_S2;
 
 struct Item;
 /* unbake published declaration: published_991e510a2472e16a45f24678 */
@@ -322,19 +243,6 @@ struct ObjectLinks69C {
     void *unk_5D8;
     unsigned char padding_5DC[188];
     void *unk_698;
-};
-
-struct func_8021836C_S2;
-/* unbake published declaration: published_d10335566a686cac72afd48b */
-typedef struct func_8021836C_S2 func_8021836C_S2;
-
-struct func_8021846C_S1;
-/* unbake published declaration: published_d432c478ad94a9106c63ccca */
-struct func_8021846C_S1 {
-    char pad0[0x4];
-    f32 unk4;
-    char pad4[0x37C - 0x4 - sizeof(f32)];
-    s32 unk37C;
 };
 
 /* unbake published declaration: published_e0f4bdd7f5148d7b92e0e548 */
@@ -1812,6 +1720,9 @@ struct ObjectLinks11B8 {
     char padCC0[0x11B4 - 0xCC0 - sizeof(s32)];
     s32 unk_11B4;
 };
+
+/* unbake published declaration: published_ee3a159db87f2fa1dd340e5a */
+extern void func_80218E98_de( char *arg0);
 
 struct ObjectLinks11B8;
 /* unbake published declaration: published_ee7ed5f5955310bb82b9c33b */

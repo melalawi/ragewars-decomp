@@ -4464,6 +4464,9 @@ typedef struct Menu_func_8041D4E0_de Menu_func_8041D4E0_de;
 struct Menu_func_8043F294_de;
 typedef struct Menu_func_8043F294_de Menu_func_8043F294_de;
 
+struct Messages;
+typedef struct Messages Messages;
+
 struct Mid802131E0;
 typedef struct Mid802131E0 Mid802131E0;
 
@@ -5162,6 +5165,18 @@ typedef struct func_8020CA10_G3 func_8020CA10_G3;
 
 struct func_80210230_S1;
 typedef struct func_80210230_S1 func_80210230_S1;
+
+struct func_8021836C_S2;
+typedef struct func_8021836C_S2 func_8021836C_S2;
+
+struct func_8021846C_S1;
+typedef struct func_8021846C_S1 func_8021846C_S1;
+
+struct func_8021846C_S2;
+typedef struct func_8021846C_S2 func_8021846C_S2;
+
+struct func_80218E98_S3;
+typedef struct func_80218E98_S3 func_80218E98_S3;
 
 struct func_8021C9B4_G6;
 typedef struct func_8021C9B4_G6 func_8021C9B4_G6;
@@ -22377,6 +22392,72 @@ struct func_80210230_S1 {
     char pad0[0x1860];
     func_80207B5C_S2 unk1860;
 };
+struct func_8021836C_S2;
+struct func_8021836C_S2 {
+    volatile s32 unk0;
+    char pad0[0x4 - 0x0 - sizeof(volatile s32)];
+    volatile s32 unk4;
+    char pad4[0x8 - 0x4 - sizeof(volatile s32)];
+    volatile s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(volatile s32)];
+    volatile s32 unkC;
+    char padC[0x14 - 0xC - sizeof(volatile s32)];
+    volatile s32 unk14;
+    char pad14[0x18 - 0x14 - sizeof(volatile s32)];
+    volatile s32 unk18;
+    char pad18[0x28 - 0x18 - sizeof(volatile s32)];
+    volatile f32 unk28;
+    char pad28[0x2C - 0x28 - sizeof(volatile f32)];
+    volatile s32 unk2C;
+    char pad2C[0x30 - 0x2C - sizeof(volatile s32)];
+    volatile f32 unk30;
+    char pad30[0x37C - 0x30 - sizeof(volatile f32)];
+    volatile s32 unk37C;
+    char pad37C[0x380 - 0x37C - sizeof(volatile s32)];
+    volatile s32 unk380;
+    char pad380[0x388 - 0x380 - sizeof(volatile s32)];
+    volatile s32 unk388;
+    char pad388[0x38C - 0x388 - sizeof(volatile s32)];
+    volatile s32 unk38C;
+    char pad38C[0x390 - 0x38C - sizeof(volatile s32)];
+    volatile s32 unk390;
+};
+struct func_8021846C_S1;
+struct func_8021846C_S1 {
+    char pad0[0x4];
+    f32 unk4;
+    char pad4[0x37C - 0x4 - sizeof(f32)];
+    s32 unk37C;
+};
+struct func_8021846C_S2;
+struct func_8021846C_S2 {
+    char pad0[0x698];
+    void * unk698;
+};
+struct func_80218E98_S3;
+struct func_80218E98_S3 {
+    volatile s32 unk0;
+    char pad0[0x4 - 0x0 - sizeof(volatile s32)];
+    volatile s32 unk4;
+    char pad4[0x8 - 0x4 - sizeof(volatile s32)];
+    volatile s32 unk8;
+    char pad8[0xC - 0x8 - sizeof(volatile s32)];
+    volatile s32 unkC;
+    char padC[0x14 - 0xC - sizeof(volatile s32)];
+    volatile s32 unk14;
+    char pad14[0x18 - 0x14 - sizeof(volatile s32)];
+    volatile s32 unk18;
+    char pad18[0x24 - 0x18 - sizeof(volatile s32)];
+    volatile f32 unk24;
+    char pad24[0x28 - 0x24 - sizeof(volatile f32)];
+    volatile s32 unk28;
+    char pad28[0x2C - 0x28 - sizeof(volatile s32)];
+    volatile f32 unk2C;
+    char pad2C[0x6C - 0x2C - sizeof(volatile f32)];
+    volatile s32 unk6C;
+    char pad6C[0x70 - 0x6C - sizeof(volatile s32)];
+    volatile s32 unk70;
+};
 struct func_8021C9B4_G6;
 struct func_8021C9B4_G6 {
     Gfx * unk0;
@@ -22859,8 +22940,6 @@ struct LightSettings;
 typedef struct LightSettings LightSettings;
 struct LinkTable;
 typedef struct LinkTable LinkTable;
-struct Messages;
-typedef struct Messages Messages;
 struct Mode;
 typedef struct Mode Mode;
 struct Obj_func_80421BEC_de;
