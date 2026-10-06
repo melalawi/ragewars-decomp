@@ -520,7 +520,7 @@ signals = ["callee", "cap", "version"]
 name = "code_80265370"
 segment = "span_1000"
 evidence = "proven"
-members = ["func_80265350_de", "func_802658DC_de", "func_802658E4_de", "func_80265900_de", "func_8026591C_de", "func_8026593C_de", "func_80265DC8_eu", "func_80265DD0_de", "func_80265E08_de", "func_80265DF8_eu_x", "func_80265E10_de"]
+members = ["func_80265350_de", "func_80265900_de", "func_8026591C_de", "func_8026593C_de", "func_80265DC8_eu", "func_80265DD0_de", "func_80265E08_de", "func_80265DF8_eu_x", "func_80265E10_de"]
 only = { "func_80265DC8_eu" = ["eu"], "func_80265E08_de" = ["de"], "func_80265DF8_eu_x" = ["us-rev1", "eu-x"] }
 split = ["func_80265900_de", "func_8026591C_de", "func_8026593C_de"]
 signals = ["cap", "version"]

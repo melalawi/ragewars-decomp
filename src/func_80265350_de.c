@@ -311,3 +311,13 @@ int func_80265878_de(u32 arg0) {
     }
     return 0;
 }
+
+void func_802658DC_de(void) {
+}
+
+extern void func_802BD320_de(void);
+
+/** Thin wrapper around func_802BD320_de. */
+void func_802658E4_de(void) {
+    func_802BD320_de();
+}
