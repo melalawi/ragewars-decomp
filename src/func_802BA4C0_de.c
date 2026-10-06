@@ -1,33 +1,14 @@
 #include "span_1000/code_802BA23C.h"
-/* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
+#include "span_1000/code_802BA23C.h"
 #include "common/unused.h"
 #include "types.h"
+
 /* viMgrMain, drafted from ultralib src/io/vimgr.c: the VI manager thread swaps the video context on
    each retrace, posts the client's retrace message every retraceCount retraces, advances the
-   64-bit OS time, and runs timer interrupts. retrace is its static u16. Inside the loop its
-   address comes from an inline helper: GCC 2.8.1 hoists a user variable only when every use is in
-   the block that sets it, but hoists the helper's unnamed temporary after the switch constant,
-   which is the order the -fforce-addr library has. */
+   64-bit OS time, and runs timer interrupts. retrace is its static u16. */
 
 typedef void *OSMesg;
-
-
-
-
-
-
-
-
-
-
-
 extern u16 D_80148840;
-
-
-
-
-
-
 
 extern struct __OSViContext *func_802BA640_de(void);
 
@@ -48,8 +29,7 @@ void func_802BA4C0_de(void *arg)
     struct OSIoMesg *mb;
     s32 first;
     u32 count;
-    /* Each address is taken where it is used, as -fforce-addr compiles these globals, so the
-       loop optimiser hoists it into a saved register. */
+
     u16 *retraceInit;
     u32 *intrCount;
     u32 *baseCounter;
