@@ -1500,7 +1500,7 @@ segments:
       - [0x6ECD8, c, "func_8026E158_de"]
       - [0x6ED78, c, "func_8026E1F8_de"]
       - [0x6F15C, data, "rodata/unresolved/8026E55C"]
-      - [0x6F160, asm, "func_8026E5E0_de"]
+      - [0x6F160, c, "func_8026E5E0_de"]
       - [0x6FA10, c, "func_8026EE20_de"]
       - [0x72698, asm, "func_80271AA8_de"]
       - [0x72844, c, "func_80271C54_de"]

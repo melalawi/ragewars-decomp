@@ -1515,7 +1515,7 @@ segments:
       - [0x6ED58, c, "func_8026E158_de"]
       - [0x6EDF8, c, "func_8026E1F8_de"]
       - [0x6F1DC, asm, "func_8026E5CC_eu_x"]
-      - [0x6F1E0, asm, "func_8026E5E0_de"]
+      - [0x6F1E0, c, "func_8026E5E0_de"]
       - [0x6FA90, c, "func_8026EE20_de"]
       - [0x72718, asm, "func_80271AA8_de"]
       - [0x728C4, c, "func_80271C54_de"]
