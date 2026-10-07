@@ -1,26 +1,11 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80275E44.h"
 #include "types.h"
-#ifndef UNBAKE_FUNC_8027640C_DE_H
-#define UNBAKE_FUNC_8027640C_DE_H
 #include "types.h"
-
-
-
-
-
-
-
-#endif
-
 #include "types.h"
-
-
-
 void func_8027640C_de(f32 *arg0, s32 arg1, Vec3 *arg2)
 {
     s32 i;
-
     i = 0;
     if (arg1 > 0) {
         do {
@@ -32,7 +17,6 @@ void func_8027640C_de(f32 *arg0, s32 arg1, Vec3 *arg2)
                 }
                 arg0[0] = value;
             }
-
             {
                 f32 value = arg2[i].y;
                 f32 bound = arg0[1];
@@ -41,7 +25,6 @@ void func_8027640C_de(f32 *arg0, s32 arg1, Vec3 *arg2)
                 }
                 arg0[1] = value;
             }
-
             {
                 f32 value = arg2[i].z;
                 f32 bound = arg0[2];
@@ -50,7 +33,6 @@ void func_8027640C_de(f32 *arg0, s32 arg1, Vec3 *arg2)
                 }
                 arg0[2] = value;
             }
-
             {
                 f32 value = arg2[i].x;
                 f32 bound = arg0[3];
@@ -59,7 +41,6 @@ void func_8027640C_de(f32 *arg0, s32 arg1, Vec3 *arg2)
                 }
                 arg0[3] = value;
             }
-
             {
                 f32 value = arg2[i].y;
                 f32 bound = arg0[4];
@@ -68,7 +49,6 @@ void func_8027640C_de(f32 *arg0, s32 arg1, Vec3 *arg2)
                 }
                 arg0[4] = value;
             }
-
             {
                 f32 value = arg2[i].z;
                 f32 bound = arg0[5];
@@ -77,7 +57,6 @@ void func_8027640C_de(f32 *arg0, s32 arg1, Vec3 *arg2)
                 }
                 arg0[5] = value;
             }
-
             i += 1;
         } while (i < arg1);
     }

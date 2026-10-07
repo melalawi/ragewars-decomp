@@ -1,20 +1,13 @@
 #include "span_1000/code_80246E34.h"
 #include "types.h"
+#include "stddef.h"
 /* Update or blend object rotation when the movement state permits it. */
-#define NULL ((void *)0)
-
-
-void func_8024D870_de(f32 *, void *);                     /* extern */
-s32 func_8024E29C_de(void *);                          /* extern */
-s32 func_8024E62C_de();                                /* extern */
-void func_80270CD0_de(void *, f32, void *, f32 *);        /* extern */
-void func_80274380_de(void *, f32 *);                     /* extern */
-
+void func_8024D870_de(f32 *, void *); /* extern */
+s32 func_8024E29C_de(void *); /* extern */
+s32 func_8024E62C_de(); /* extern */
+void func_80270CD0_de(void *, f32, void *, f32 *); /* extern */
+void func_80274380_de(void *, f32 *); /* extern */
 extern f32 D_800C3928_de[], D_800C3930_de[], D_800CD738[];
-
-
-
-
 void func_80247004_de(Obj_func_80247004_de *arg0) {
     f32 vec[4];
     f32 var_f0;
@@ -25,7 +18,6 @@ void func_80247004_de(Obj_func_80247004_de *arg0) {
     s32 flags;
     void *temp_a0;
     void *var_a0;
-
     temp_v0 = arg0->unk100;
     flags = temp_v0 & 0x300000;
     if (!(temp_v0 & 1) && (temp_s2 = func_8024E62C_de(), (arg0->unk14 != NULL)) && (func_8024D870_de(vec, arg0), temp_s1 = arg0->unk14->unk2 & 1, (func_8024E29C_de(arg0) != 0))) {

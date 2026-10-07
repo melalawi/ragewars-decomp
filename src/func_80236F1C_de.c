@@ -1,3 +1,4 @@
+#include "abi.h"
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_80233920.h"
 #include "span_1000/code_8026AC38.h"
@@ -5,20 +6,7 @@
 #include "gbi.h"
 #include "types.h"
 #include "n64sdk.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#include "video_dimensions.h"
 extern Gfx *D_8010C574;
 extern Frame *D_8011BDC0;
 extern s32 D_800DE880_de;
@@ -31,7 +19,6 @@ extern World_func_80236F1C_de D_80140F80;
 extern char D_800CBCC0;
 extern char D_800CBCF0_de;
 extern void func_80253BBC_de(s32, s32);
-
 extern void func_80235AE0_de(Racer *);
 extern void func_802362E8_de(Racer *, s32);
 extern void func_80239FD4_de(Racer *, s32);
@@ -42,24 +29,10 @@ extern void func_802372D4_de(Racer *);
 extern s32 func_80245784_de(void);
 extern s32 func_80245798_de(void);
 extern void func_8022A3F8_de(World_func_80236F1C_de *, Racer *);
-
-#define SCREEN_WD D_800DE880_de
-#define SCREEN_HT D_800DE884_de
-
-
-
-
-
-
-
-
-
-
 /* Per-frame race update: clears three per-frame flags of the race's own racer, passes the race's first word to func_80253BBC_de, runs the 30-frame flash timer (restarted while D_80146894 is set or in mode 3) and while it runs clears the screen with a full-screen viewport, scissor and fill before func_8026D8F8_de, then updates every racer in the list until it ends or func_80245784_de or func_80245798_de reports, updates the race's own racer, hands the list to func_8022A3F8_de when the replay flag of D_80145040 is set, and passes the own racer's block at 0x554 to func_804429D4_de. */
 void func_80236F1C_de(Race *race, s32 arg1)
 {
     Racer *racer;
-
     race->self.hit = 0;
     race->self.boost = 0;
     race->self.spin = 0;

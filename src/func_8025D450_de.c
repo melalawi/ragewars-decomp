@@ -1,9 +1,6 @@
 #include "span_1000/code_8025C544.h"
-#if defined(VERSION_EU)
-#define func_802B2350 func_802AD520_eu
-#else
-#define func_802B2350 func_802AD280_de
-#endif
+#include "stddef.h"
+#include "version_calls.h"
 /* Advances streamed music through fade, retry, loading and playback states while updating volume. */
 #include "types.h"
 extern s32 D_800CBB50_de,D_800CBB54;
@@ -12,7 +9,6 @@ extern s32 func_802654E8_de(s32,s32,s32),func_802AEAA0_de(s32);
 extern struct Resource *func_8028FDB4_de(s32,s32);
 extern f32 func_802B2350(u16);
 extern void func_802AE5B8_de(s32,void *),func_802AFE80_de(s32),func_802AFEB0_de(s32,s32),func_802AFEE0_de(s32,s32,s32),func_802AFF30_de(s32,s32),func_802AFF60_de(s32,s16);
-#define NULL ((void *)0)
 static inline f32 fade_rate(Track *track,f32 time,f32 rate) {track->unk30=time;return (f32)track->unk20/(time*rate);}
 void func_8025D450_de(Track *arg0) {
     f32 temp_f0;
@@ -32,9 +28,8 @@ void func_8025D450_de(Track *arg0) {
     struct Resource *temp_v0_4;
     Context_func_8025D450_de *temp_v0_5;
     void *var_v0_2;
-
     temp_v1 = arg0->unk18;
-    switch (temp_v1) {                              /* irregular */
+    switch (temp_v1) { /* irregular */
     case 0x20:
         if (arg0->unk1C & 4) {
             arg0->unk1C = 0;

@@ -1,15 +1,11 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802412C0.h"
 #include "types.h"
+#include "stddef.h"
 /* Tests a point against every edge plane of a polygon. */
-#define NULL ((void *)0)
-
-void func_80271F68_de(f32 *, void *, void *);             /* extern */
-void func_80272018_de(f32 *, void *, f32 *);              
-
-
+void func_80271F68_de(f32 *, void *, void *); /* extern */
+void func_80272018_de(f32 *, void *, f32 *);
 /* extern */
-
 s32 func_802414F4_de(func_80204468_S3 *arg0, void *arg1) {
     f32 sp10[3];
     f32 sp20[3];
@@ -18,7 +14,6 @@ s32 func_802414F4_de(func_80204468_S3 *arg0, void *arg1) {
     void *var_s1;
     s32 var_s0;
     void *var_s2;
-
     temp_v1 = arg0->unk14;
     if (temp_v1 == 1) {
         return 1;

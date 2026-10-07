@@ -1,11 +1,7 @@
 #include "span_1000/code_80254CE4.h"
 #include "types.h"
 #include "common/draft_fields_func_80255630_de.h"
-
-
-#define NULL ((void *)0)
-
-
+#include "stddef.h"
 s32 func_80255630_de(s8 *arg0, void *arg1, s32 arg2) {
     s32 temp_a2;
     s32 temp_v0_3;
@@ -21,7 +17,6 @@ s32 func_80255630_de(s8 *arg0, void *arg1, s32 arg2) {
     void *temp_v1;
     void *temp_v1_3;
     void *var_a3;
-
     temp_a2 = (arg2 + 0x2F) & ~0xF;
     temp_v1 = ((struct Measured_func_80255630_de_23f0e208adfb *)(arg0))->value;
     if (temp_v1 != NULL) {
@@ -40,7 +35,6 @@ s32 func_80255630_de(s8 *arg0, void *arg1, s32 arg2) {
         if ((u32) temp_v1_3 >= (u32) temp_v0) {
             if ((u32) temp_t1 >= (u32) temp_t0) {
                 s32 temp_v0_2 = temp_t1 - temp_t0;
-
                 ((struct Measured_func_80255630_de_615f24e2ba64 *)(temp_v1_3))->value = temp_a2;
                 ((struct Measured_func_80255630_de_ac82866df9b6 *)(temp_v1_3))->value = temp_v0_2;
                 if (temp_v0_2 != 0) {

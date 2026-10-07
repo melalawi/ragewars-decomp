@@ -2,6 +2,7 @@
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_80246E34.h"
 #include "types.h"
+#include "math_helpers.h"
 /* Draws an object's cast shadow: objects without shadow flag 0x10000000 get the blob shadow of
  * func_8024ADD0_de; otherwise, once per frame the shadow model from func_802799C0_de is built for an object above
  * the ground: the light of the current view (direction from its signed bytes, strength from its colour)
@@ -10,9 +11,6 @@
  * is projected along it onto a plane just below the object (0.9 of its height up to 512), grown by 0.003
  * per unit of height, turned by the object's orientation and placed on the ground; the shadow is then
  * submitted through func_8024BA7C_de. */
-
-
-
 extern char D_8011BEF0;
 extern char D_801370E8;
 extern s32 D_800CD72C;
@@ -31,18 +29,6 @@ extern void func_80274244_de(void *, f32 *);
 extern void func_8026F620_de(void *, f32 *, f32 *);
 extern void func_8024BA7C_de(char *, char *, void *, u8);
 extern void func_8024ADD0_de(char *, s32, s32);
-
-#define ABS(x) ((x) < 0.0f ? -(x) : (x))
-
-
-
-
-
-
-
-
-
-
 void func_8024AA18_de(char *obj, s32 unused, char *info) {
     Vec3 dir;
     f32 projection[16];
@@ -55,7 +41,6 @@ void func_8024AA18_de(char *obj, s32 unused, char *info) {
     f32 diff;
     char *light;
     s32 alpha;
-
     if (((func_8024AA08_S1 *)(obj))->unk14 == 0 || func_8024E158_de() == 0 || (((func_8024AA08_S1 *)(obj))->unk100 & 0x200000)) {
         return;
     }
@@ -89,7 +74,7 @@ void func_8024AA18_de(char *obj, s32 unused, char *info) {
             ((func_8024AA08_S1 *)(obj))->unk13A = alpha;
             dir.y = 1.0f;
             func_8027207C_de(&dir);
-            if (ABS(dir.y) < 0.15f) {
+            if (RW_ABS(dir.y) < 0.15f) {
                 if (dir.y >= 0.0f) {
                     dir.y = 0.15f;
                 } else {
