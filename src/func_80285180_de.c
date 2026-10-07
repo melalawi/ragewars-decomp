@@ -1,36 +1,24 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8028469C.h"
 #include "types.h"
-#if defined(VERSION_DE)
-#define func_802B2A10_us_rev1 func_802AD940_de
-#elif defined(VERSION_EU)
-#define func_802B2A10_us_rev1 func_802ADBE0_eu
-#elif defined(VERSION_EU_X)
-#define func_802B2A10_us_rev1 func_802ADC20_eu_x
-#elif defined(VERSION_US)
-#define func_802B2A10_us_rev1 func_802AD870_us
-#endif
-#define NULL ((void *)0)
-
-
-
+#include "stddef.h"
 void func_80253D10_de(s32, void **, void *);
 void * func_80254480_de(s32, void *, s32);
 void * func_80254600_de(s32, s32, s32);
 void * func_802BD3A0_de(void *, const void *, int);
-s32 func_802AD4C0_de();    /* extern */
-s32 func_802B2A10_us_rev1();    
-
-
-
-
-
-
-
-
-
+s32 func_802AD4C0_de(); /* extern */
+#if defined(VERSION_DE)
+s32 func_802AD940_de();
+#elif defined(VERSION_EU)
+s32 func_802ADBE0_eu();
+#elif defined(VERSION_EU_X)
+s32 func_802ADC20_eu_x();
+#elif defined(VERSION_US)
+s32 func_802AD870_us();
+#elif defined(VERSION_US_REV1)
+s32 func_802B2A10_us_rev1();
+#endif
 /* extern */
-
 /* Unpack or copy a resource into an allocated buffer and install it. */
 s32 func_80285180_de(void **arg0, s32 arg1) {
     s32 var_s0;
@@ -39,7 +27,6 @@ s32 func_80285180_de(void **arg0, s32 arg1) {
     func_80285150_S1 *temp_a2;
     func_80285150_S2 *temp_s0;
     func_80285150_S1 *temp_v0;
-
     temp_a2 = *arg0;
     temp_s0 = temp_a2->unk0;
     if ((temp_s0->unk0 & ~0xFF) == 0x524E4300) {
@@ -55,7 +42,17 @@ s32 func_80285180_de(void **arg0, s32 arg1) {
                 func_802AD4C0_de(&temp_s0->unk12, *var_s1, temp_s0->unk8, temp_s0->unk4);
                 break;
             case 2:
+#if defined(VERSION_DE)
+                func_802AD940_de(temp_s0, *var_s1, temp_s0->unk8, temp_s0->unk4);
+#elif defined(VERSION_EU)
+                func_802ADBE0_eu(temp_s0, *var_s1, temp_s0->unk8, temp_s0->unk4);
+#elif defined(VERSION_EU_X)
+                func_802ADC20_eu_x(temp_s0, *var_s1, temp_s0->unk8, temp_s0->unk4);
+#elif defined(VERSION_US)
+                func_802AD870_us(temp_s0, *var_s1, temp_s0->unk8, temp_s0->unk4);
+#elif defined(VERSION_US_REV1)
                 func_802B2A10_us_rev1(temp_s0, *var_s1, temp_s0->unk8, temp_s0->unk4);
+#endif
                 break;
             default:
                 break;

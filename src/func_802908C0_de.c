@@ -1,50 +1,12 @@
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_8028FC98.h"
 #include "types.h"
-#ifndef FUNC_802908C0_DE
-#define FUNC_802908C0_DE
 #include "types.h"
-#ifndef UNBAKE_FUNC_802908C0_DE_H
-#define UNBAKE_FUNC_802908C0_DE_H
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
-
 #include "types.h"
-
-
-#endif
-
-
 #include "types.h"
-
 extern void func_80290950_de(void *arg0, void *arg1);
 extern void func_80246184_de(void *arg0);
-
-
-
-
-
-
-
 void *func_802908C0_de(void *arg0)
 {
   void *new_var;

@@ -1,18 +1,15 @@
 #include "span_1000/code_80297CD0.h"
 #include "span_1000/code_80299DB4.h"
 #include "types.h"
+#include "stddef.h"
 /* Refreshes the selected entry and updates its interface state. */
-#define NULL ((void *)0)
-  
-void func_80297310_de(s32, s32, void *, s32, s32);                 /* extern */
+void func_80297310_de(s32, s32, void *, s32, s32); /* extern */
                                /* extern */
 extern State_func_80297DBC_de *D_80146E00;
-
 void func_80297DBC_de(void) {
     s32 (*temp_v0)(s32);
     s32 temp_s0;
     s32 value, param;
-
     temp_s0 = D_80146E00->unk4;
     temp_v0 = D_80146E00->unk10;
     param = (&D_80146E00->unkC[temp_s0])->unk4;

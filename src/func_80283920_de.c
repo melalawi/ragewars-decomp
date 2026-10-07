@@ -1,23 +1,19 @@
 #include "span_1000/code_8028308C.h"
 #include "types.h"
+#include "stddef.h"
 /* Apply resource indices and dispatch the optional object effect. */
-#define NULL ((void *)0)
-
-
-void func_8025DE54_de(s32, s32, s32, s32, s32, s32);      /* extern */
-s32 func_80268BE0_de(void *, s8);                         /* extern */
-void func_8027DAD0_de(void *, s32, s32);                              /* extern */
-void func_802843B8_de(void *, s32);                       /* extern */
-void func_802A4598_de(void *, void *, s8);                   /* extern */
+void func_8025DE54_de(s32, s32, s32, s32, s32, s32); /* extern */
+s32 func_80268BE0_de(void *, s8); /* extern */
+void func_8027DAD0_de(void *, s32, s32); /* extern */
+void func_802843B8_de(void *, s32); /* extern */
+void func_802A4598_de(void *, void *, s8); /* extern */
 extern char D_801370E8;
 extern char D_801379C0;
-
 void func_80283920_de(Obj_func_80283920_de *arg0, Params_func_80283920_de *arg1) {
     s32 temp_t0;
     s8 temp_a1;
     s8 temp_a2;
     u16 temp_v1;
-
     func_8027DAD0_de(arg0, 0, 0);
     temp_a2 = arg1->unk6;
     if (temp_a2 != -1) {

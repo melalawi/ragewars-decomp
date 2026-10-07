@@ -3,15 +3,12 @@
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_80279208.h"
 #include "types.h"
-
 /* Initializes an empty linked-list header by clearing its two links and count. */
-
 void func_802794B0_de(ListHeader *list) {
     list->head = 0;
     list->tail = 0;
     list->count = 0;
 }
-
 /** Push a node onto the front of a doubly-linked list. */
 void func_802794C0_de(void *arg0, void *arg1) {
     if ((((struct ListHeader *) ((s8 *) arg0))->count) == 0) {
@@ -27,11 +24,9 @@ void func_802794C0_de(void *arg0, void *arg1) {
     }
     (((struct ListHeader *) ((s8 *) arg0))->count) = (((struct ListHeader *) ((s8 *) arg0))->count) + 1;
 }
-
 /** Push a node onto the tail of a doubly-linked list; returns new count. */
 s32 func_80279508_de(void *arg0, void *arg1) {
     s32 count;
-
     if ((((struct ListHeader *) ((s8 *) arg0))->count) == 0) {
         (((struct ListHeader *) ((s8 *) arg0))->head) = arg1;
         (((struct ListHeader *) ((s8 *) arg0))->tail) = arg1;
@@ -47,7 +42,6 @@ s32 func_80279508_de(void *arg0, void *arg1) {
     (((struct ListHeader *) ((s8 *) arg0))->count) = count;
     return count;
 }
-
 int func_80279550_de(List802795C0 *arg0, Link_func_802596B4_de *arg1) {
     if (arg1->prev != 0) {
         arg1->prev->next = arg1->next;
@@ -64,14 +58,12 @@ int func_80279550_de(List802795C0 *arg0, Link_func_802596B4_de *arg1) {
     arg0->count -= 1;
     return arg0->count;
 }
-
 /* Reset a pool list header. */
 static inline void clear_list(ListHeader *list) {
     list->head = 0;
     list->tail = 0;
     list->count = 0;
 }
-
 /* Append a free node and return the new list length. */
 static inline s32 append(ListHeader *list, Link_func_802596B4_de *node) {
     s32 count;
@@ -90,7 +82,6 @@ static inline s32 append(ListHeader *list, Link_func_802596B4_de *node) {
     list->count = count;
     return count;
 }
-
 /* Reset the free and active headers and link every fixed-size pool node. */
 void func_802795B0_de(ListHeader *lists, void *pool, s32 stride, s32 count) {
     s32 remaining;
@@ -101,50 +92,10 @@ void func_802795B0_de(ListHeader *lists, void *pool, s32 stride, s32 count) {
         pool = (char *)pool + stride;
     }
 }
-
-#ifndef FUNC_8027963C_DE
-#define FUNC_8027963C_DE
-#ifndef UNBAKE_FUNC_8027963C_DE_H
-#define UNBAKE_FUNC_8027963C_DE_H
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
-
-
-
-#endif
-
-
-
-
-
-
-
-
-
-
 Link_func_802596B4_de *func_8027963C_de(Lists18 *arg0) {
     Link_func_802596B4_de *node;
     Link_func_802596B4_de *tail;
     List802795C0 *inactive;
-
     node = arg0->active.head;
     if (node != 0) {
         if (node->prev != 0) {
@@ -160,7 +111,6 @@ Link_func_802596B4_de *func_8027963C_de(Lists18 *arg0) {
             arg0->active.tail = node->next;
         }
         arg0->active.count -= 1;
-
         inactive = &arg0->inactive;
         if (inactive->count == 0) {
             inactive->head = node;
@@ -178,49 +128,9 @@ Link_func_802596B4_de *func_8027963C_de(Lists18 *arg0) {
     }
     return node;
 }
-
-#ifndef FUNC_802796F4_DE
-#define FUNC_802796F4_DE
-#ifndef UNBAKE_FUNC_802796F4_DE_H
-#define UNBAKE_FUNC_802796F4_DE_H
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
-
-
-
-#endif
-
-
-
-
-
-
-
-
-
-
 void func_802796F4_de(Lists18 *arg0, Link_func_802596B4_de *arg1) {
     List802795C0 *inactive;
     Link_func_802596B4_de *tail;
-
     inactive = &arg0->inactive;
     if (arg1->prev != 0) {
         arg1->prev->next = arg1->next;
@@ -235,7 +145,6 @@ void func_802796F4_de(Lists18 *arg0, Link_func_802596B4_de *arg1) {
         inactive->tail = arg1->next;
     }
     inactive->count -= 1;
-
     if (arg0->active.count == 0) {
         arg0->active.head = arg1;
         arg0->active.tail = arg1;
@@ -250,16 +159,13 @@ void func_802796F4_de(Lists18 *arg0, Link_func_802596B4_de *arg1) {
     }
     arg0->active.count += 1;
 }
-
 extern s32 func_802744D4_de(void);
-
 s16 func_80279798_de(s16 *arg0) {
     s16 *entry;
     s16 *start;
     s32 random;
     s32 total;
     s32 value;
-
     entry = arg0;
     total = 0;
     start = entry;
@@ -269,7 +175,6 @@ s16 func_80279798_de(s16 *arg0) {
             entry += 2;
         } while (*entry != -1);
     }
-
     random = func_802744D4_de();
     entry = start;
     value = random % total;
@@ -283,12 +188,10 @@ s16 func_80279798_de(s16 *arg0) {
     }
     return *entry;
 }
-
 /** Clear the leading halfword of the supplied object. */
 void func_8027985C_de(short *object) {
     *object = 0;
 }
-
 s32 func_80279864_de(s16 *arg0, s16 arg1, s16 arg2)
 {
   s16 temp_v1;
@@ -304,18 +207,13 @@ s32 func_80279864_de(s16 *arg0, s16 arg1, s16 arg2)
   *arg0 = ((u16) (*arg0)) + 1;
   return 1;
 }
-
 extern s32 func_802744D4_de(void);
-
-
-
 s16 func_802798A8_de(WeightedTable *arg0) {
     s16 *entry;
     s16 *start;
     s32 random;
     s32 total;
     s32 value;
-
     if (arg0->count == 0) {
         return -1;
     }
@@ -329,7 +227,6 @@ s16 func_802798A8_de(WeightedTable *arg0) {
             entry += 2;
         } while (*entry != -1);
     }
-
     random = func_802744D4_de();
     entry = start;
     value = random % total;

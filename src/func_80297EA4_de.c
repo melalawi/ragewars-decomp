@@ -1,16 +1,12 @@
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_80297CD0.h"
 #include "types.h"
+#include "stddef.h"
 /* Dispatches a pending menu event and clears its pending state. */
-#define NULL ((void*)0)
-
-
-
-int func_80297310_de(int, int, s32, int, s32);                 /* extern */
-int func_802995D4_de(s16, int, int, int, s32);                 /* extern */
-int func_80299CC4_de();                                  /* extern */
+int func_80297310_de(int, int, s32, int, s32); /* extern */
+int func_802995D4_de(s16, int, int, int, s32); /* extern */
+int func_80299CC4_de(); /* extern */
 extern State_func_80297EA4_de *D_80146E00;
-
 int func_80297EA4_de(int arg0) {
  int index,event,result; func_8021C9B4_S3 *item; int (*callback)(int,int,int,int);
  index=D_80146E00->unk4;
