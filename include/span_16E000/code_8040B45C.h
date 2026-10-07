@@ -126,4 +126,10 @@ extern void func_8040BBB0_de();
 /* unbake published declaration: published_fb2e4f255263da1164b8dacf */
 extern void func_8040B84C_de(void);
 
+struct Item_func_80441FE8_de;
+struct Record_func_80409BDC_de;
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
+s32 func_8040B444_de(struct Item_func_80441FE8_de *field, struct Record_func_80409BDC_de *holder);
+#endif
+
 #endif

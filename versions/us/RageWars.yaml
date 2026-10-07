@@ -4336,7 +4336,7 @@ segments:
       - [0x16F428, c, "func_8040B3A8_de"]
       - [0x16F444, c, "func_8040B3C4_de"]
       - [0x16F45C, c, "func_8040B3DC_de"]
-      - [0x16F4C4, asm, "func_8040B444_de"]
+      - [0x16F4C4, c, "func_8040B444_de"]
       - [0x16F560, c, "func_8040B4E0_de"]
       - [0x16F60C, c, "func_8040B58C_de"]
       - [0x16F6C8, c, "func_8040B648_de"]
