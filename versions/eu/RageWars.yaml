@@ -563,8 +563,6 @@ segments:
       - [0x2D5E4, c, "func_8022C8EC_de"]
       - [0x2D5F4, c, "func_8022C8FC_de"]
       - [0x2D70C, c, "func_8022CA14_de"]
-      - [0x2D854, c, "func_8022CB5C_de"]
-      - [0x2D92C, c, "func_8022CC34_de"]
       - [0x2DA70, c, "func_8022CD78_de"]
       - [0x2DAB4, c, "func_8022CDBC_de"]
       - [0x2DB70, c, "func_8022CE78_de"]
