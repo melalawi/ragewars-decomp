@@ -536,8 +536,6 @@ segments:
       - [0x2CF7C, c, "func_8022C37C_de"]
       - [0x2D054, c, "func_8022C454_de"]
       - [0x2D060, c, "func_8022C460_de"]
-      - [0x2D090, c, "func_8022C490_de"]
-      - [0x2D15C, c, "func_8022C55C_de"]
       - [0x2D27C, asm, "func_8022C67C_de"]
       - [0x2D2E4, c, "func_8022C6E4_de"]
       - [0x2D4A4, c, "func_8022C8A4_de"]
