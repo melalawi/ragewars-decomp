@@ -3857,20 +3857,7 @@
       "exact": true,
       "minutes": 0.03
     },
-    "func_802A037C_de": {
-      "attempts": 2,
-      "best": {
-        "de": 100.0,
-        "eu": 100.0,
-        "eu-x": 100.0,
-        "us": 100.0,
-        "us-rev1": 100.0
-      },
-      "bytes": 48,
-      "exact": true,
-      "minutes": 0.76
-    },
-    "func_802A03AC_de": {
+    "func_802A01D8_de": {
       "attempts": 1,
       "best": {
         "de": 100.0,
@@ -3879,7 +3866,7 @@
         "us": 100.0,
         "us-rev1": 100.0
       },
-      "bytes": 888,
+      "bytes": 1356,
       "exact": true,
       "minutes": 0.02
     },
