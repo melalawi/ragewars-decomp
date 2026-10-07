@@ -2503,7 +2503,7 @@ segments:
       - [0xBB704, asm, "func_802BAB04_eu"]
       - [0xBB710, c, "func_802BA870_de"]
       - [0xBB754, asm, "func_802BAB54_eu"]
-      - [0xBB760, asm, "func_802BA8C0_de"]
+      - [0xBB760, c, "func_802BA8C0_de"]
       - [0xBB7A4, asm, "func_802BABA4_eu"]
       - [0xBB7B0, c, "func_802BA910_de"]
       - [0xBBAEC, asm, "func_802BAEEC_eu"]

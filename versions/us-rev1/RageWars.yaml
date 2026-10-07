@@ -2545,7 +2545,7 @@ segments:
       - [0xC0554, asm, "func_802BF954_us_rev1"]
       - [0xC0560, c, "func_802BA870_de"]
       - [0xC05A4, asm, "func_802BF9A4_us_rev1"]
-      - [0xC05B0, asm, "func_802BA8C0_de"]
+      - [0xC05B0, c, "func_802BA8C0_de"]
       - [0x0C05F4, data, "func_802BA8C0_de_padding_C05F4"]
       - [0xC05F8, asm, "func_802BABE8_eu_x"]
       - [0xC0600, c, "func_802BA910_de"]

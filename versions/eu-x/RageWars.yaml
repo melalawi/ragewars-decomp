@@ -2508,7 +2508,7 @@ segments:
       - [0xBB744, asm, "func_802BAB44_eu_x"]
       - [0xBB750, c, "func_802BA870_de"]
       - [0xBB794, asm, "func_802BAB94_eu_x"]
-      - [0xBB7A0, asm, "func_802BA8C0_de"]
+      - [0xBB7A0, c, "func_802BA8C0_de"]
       - [0x0BB7E4, data, "func_802BA8C0_de_padding_BB7E4"]
       - [0xBB7E8, asm, "func_802BABE8_eu_x"]
       - [0xBB7F0, c, "func_802BA910_de"]
