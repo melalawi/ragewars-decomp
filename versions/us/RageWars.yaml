@@ -434,7 +434,7 @@ segments:
       - [0x26B20, asm, "func_80225F44_de"]
       - [0x26F1C, c, "func_80226340_de"]
       - [0x272E4, asm, "func_80226708_de"]
-      - [0x2752C, asm, "func_80226950_de"]
+      - [0x2752C, c, "func_80226950_de"]
       - [0x27610, c, "func_80226A34_de"]
       - [0x2783C, asm, "func_80226C60_de"]
       - [0x279AC, asm, "func_80226DD0_de"]
