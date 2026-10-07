@@ -5,10 +5,8 @@
 #include "span_1000/code_802A6AC0.h"
 #include "span_1000/code_802BB15C.h"
 #include "types.h"
-
 /* Clears a record: its four 0x38-byte entries through an inline per-entry clear, its two leading
    flag bytes and trailing words, and sets the word at 0xE6 to -5. */
-
 static inline void clear_entry(Entry_func_802A6F68_de *e) {
     e->unk4 = 0;
     e->unk0 = 0;
@@ -16,7 +14,6 @@ static inline void clear_entry(Entry_func_802A6F68_de *e) {
     e->unk18 = 0;
     e->unk1C = 0;
 }
-
 void func_802A6F68_de(Record_func_802A6F68_de *rec) {
     int i;
     for (i = 0; i < 4; i++) {
@@ -28,16 +25,13 @@ void func_802A6F68_de(Record_func_802A6F68_de *rec) {
     rec->unkE6 = -5;
     rec->unkE8 = 0;
 }
-
 /* Finds or allocates one of four records and updates its parameters. */
-
 s32 func_802A6FB8_de(char *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, f32 arg5, s32 arg6, s32 arg7, s32 arg8) {
     s32 var_a1;
     u32 key;
     char *temp_v1;
     char *var_v1;
     char *var_v1_2;
-
     var_a1 = 0;
     key = arg2 & 0xFFFF;
     var_v1 = arg0;
@@ -46,7 +40,6 @@ loop_1:
         var_a1 += 1;
         var_v1 += 0x38;
         if (var_a1 >= 4) {
-
         } else {
             goto loop_1;
         }
@@ -59,7 +52,6 @@ loop_7:
             var_a1 += 1;
             var_v1_2 += 0x38;
             if (var_a1 >= 4) {
-
             } else {
                 goto loop_7;
             }
@@ -82,7 +74,6 @@ loop_7:
     ((func_802A7FA8_S4 *)(temp_v1))->unk34 = arg8;
     return 1;
 }
-
 s32 func_802A7098_de(void *arg0)
 {
   s32 var_a1;
@@ -102,12 +93,9 @@ s32 func_802A7098_de(void *arg0)
   while (var_a1 >= 0);
   return var_a2 != 0;
 }
-
 /* Moves a menu's cursor at 0xE4 over its four 0x38-byte entries, forward when arg1 is zero and backward otherwise, wrapping around and skipping entries whose word at 0x4 is zero; returns the entry landed on. */
-
 s32 func_802A70D4_de(Menu_func_802A70D4_de *menu, s32 backward) {
     u16 cursor;
-
     if (backward == 0) {
         do {
             menu->cursor++;
@@ -124,7 +112,6 @@ s32 func_802A70D4_de(Menu_func_802A70D4_de *menu, s32 backward) {
     } while (menu->entries[cursor].active == 0);
     return cursor;
 }
-
 void func_802A7168_de(void *arg0) {
     ((func_802A8158_S1 *)(arg0))->unk4 = 0;
     ((func_802A8158_S1 *)(arg0))->unk0 = 0;
@@ -132,7 +119,6 @@ void func_802A7168_de(void *arg0) {
     ((func_802A8158_S1 *)(arg0))->unk18 = 0;
     ((func_802A8158_S1 *)(arg0))->unk1C = 0;
 }
-
 void func_802A7180_de(void *arg0, void *arg1) {
     s32 temp_v0;
     temp_v0 = (((struct ObjectState30_2 *) ((s8 *) arg0))->unk_4) == 0;
@@ -146,9 +132,7 @@ void func_802A7180_de(void *arg0, void *arg1) {
     }
     (((struct ObjectState30_2 *) ((s8 *) arg0))->unk_18) = -5;
 }
-
 /* Soft-resets the game: checks the "systembootdone" marker (copied from D_800C5F10_de and zero-padded with the memset func_802A001C_de) through func_80293440_de (recording the result in D_801470B0 and re-arming it through func_802934C0_de), and on a cold boot copies the resident code and data back from the cartridge word by word after each PI idle wait, then clears the BSS from D_800E4000 to D_80166000, in both passes skipping the marker, its flag and, when not cold booting, the preserved save, settings and pad regions; finally reinitialises through func_802BAE40_de and func_80292F24_de. */
-
 extern Marker_func_802A71C0_de D_800C5F10_de;
 extern void func_802A001C_de(char *dst, s32 value, s32 size);
 extern char D_800CDD10;
@@ -161,7 +145,6 @@ extern s32 D_800E4000;
 extern s32 D_80166000;
 extern s32 func_80293440_de(char *marker, char *name);
 extern void func_802934C0_de(char *marker, char *name);
-
 static inline s32 is_restorable(u32 address) {
     if (address >= (u32)&D_800CDD10 && address < (u32)&D_800CDD10 + 0x10) {
         return 0;
@@ -189,7 +172,6 @@ static inline s32 is_restorable(u32 address) {
     }
     return 1;
 }
-
 s32 func_802A71C0_de(void) {
     u32 *src;
     u32 *dst;
@@ -197,10 +179,8 @@ s32 func_802A71C0_de(void) {
     u32 status;
     u32 *piStatus;
     char name[16];
-
     *(Marker_func_802A71C0_de *)name = D_800C5F10_de;
     func_802A001C_de(&name[15], 0, 1);
-
     if (func_80293440_de(&D_800CDD10, name) == 0) {
         D_801470B0 = 0;
     } else {
@@ -232,14 +212,9 @@ s32 func_802A71C0_de(void) {
     func_80292F24_de();
     return 0;
 }
-
 void func_802A754C_de(void) {
 }
-
 /* Returns whether an address may be modified: never inside the 16-byte block D_800CDD10 or at the guard word D_801470B0, always when that guard word is set, and otherwise only outside the protected blocks D_8010BC40, D_80142208_de, D_800F91F0, D_800F41F0 and D_801427E0; func_802A7654_de that follows is an empty function. */
-
-#define IN_RANGE(a, base, size) ((a) >= (u32)&(base) && (a) < (u32)&(base) + (size))
-
 extern char D_800CDD10;
 extern s32 D_801470B0;
 extern char D_8010BC40;
@@ -247,25 +222,24 @@ extern char D_80142208_de;
 extern char D_800F91F0;
 extern char D_800F41F0;
 extern char D_801427E0;
-
 s32 func_802A7554_de(u32 address) {
     address |= 0x80000000;
-    if (IN_RANGE(address, D_800CDD10, 0x10) || address == (u32)&D_801470B0) {
+    if (((address) >= (u32)&(D_800CDD10) && (address) < (u32)&(D_800CDD10) + (0x10)) || address == (u32)&D_801470B0) {
         return 0;
     }
     if (D_801470B0 != 0) {
         return 1;
     }
-    if (IN_RANGE(address, D_8010BC40, 0x430)) {
+    if (((address) >= (u32)&(D_8010BC40) && (address) < (u32)&(D_8010BC40) + (0x430))) {
         return 0;
     }
-    if (IN_RANGE(address, D_80142208_de, 0x584)) {
+    if (((address) >= (u32)&(D_80142208_de) && (address) < (u32)&(D_80142208_de) + (0x584))) {
         return 0;
     }
-    if (IN_RANGE(address, D_800F91F0, 0x5800)) {
+    if (((address) >= (u32)&(D_800F91F0) && (address) < (u32)&(D_800F91F0) + (0x5800))) {
         return 0;
     }
-    if (IN_RANGE(address, D_800F41F0, 0x5000)) {
+    if (((address) >= (u32)&(D_800F41F0) && (address) < (u32)&(D_800F41F0) + (0x5000))) {
         return 0;
     }
     if (address >= (u32)&D_801427E0 && address <= (u32)&D_801427E0 + 0xB0) {
@@ -273,6 +247,5 @@ s32 func_802A7554_de(u32 address) {
     }
     return 1;
 }
-
 void func_802A7654_de(void) {
 }

@@ -2,15 +2,6 @@
 #include "span_1000/code_802A25C4.h"
 #include "types.h"
 /* Detaches an entity from linked effects while preserving their transforms and lifetimes; the unsigned offset-to-pointer cast preserves matrix-address scheduling and addition operand order. */
-#define NULL 0
-
-
-
-
-
-
-
-
 extern int D_800CD72C;
 extern f32 D_800C5E28_de,D_800C5E2C_de,D_800C5E30_de,D_800C5E34_de;
 extern char D_801379C0;
@@ -30,17 +21,16 @@ void func_802A42F4_de(Root752C *arg0, Entity1DC *arg1) {
     ChildB4 *var_s0;
     Node44 *var_s1;
     struct Shape_typemap_6 *var_v0;
-
     var_s1 = arg0->unk_7528;
-    if (var_s1 != NULL) {
+    if (var_s1 != 0) {
         do {
             temp_v1 = var_s1->unk_3C;
             if (temp_v1 & 8) {
                 var_s0 = var_s1->unk_40;
-                if (var_s0 != NULL) {
+                if (var_s0 != 0) {
 loop_4:
                     if (var_s0->unk_B0 == arg1) {
-                        if (arg1 != NULL) {
+                        if (arg1 != 0) {
                             if (arg1 == (void *)-1) {
                                 ((struct ObjectState68 *) (((char *) var_s0) + (D_800CD72C << 6)))->unk_28=((struct ObjectState68 *) (((char *) var_s0) + ((D_800CD72C ^ 1) << 6)))->unk_28;
                                 var_s0->unk_B0 = 0;
@@ -64,7 +54,7 @@ loop_4:
                         var_s0->unk_B0 = (Entity1DC *)-1;
                     }
                     var_s0 = var_s0->unk_4;
-                    if (var_s0 != NULL) {
+                    if (var_s0 != 0) {
                         goto loop_4;
                     }
                 }
@@ -86,7 +76,7 @@ loop_4:
                 }
                 }
                 temp_v1_3 = var_s1->unk_1C;
-                if (temp_v1_3 != NULL) {
+                if (temp_v1_3 != 0) {
                     if (var_s1->unk_3C & 1) {
                         temp_v0 = temp_v1_3->unk_13B;
                         if (temp_v0 != 0) {
@@ -101,13 +91,13 @@ loop_4:
                         }
                     }
                 }
-                var_s1->unk_1C = NULL;
+                var_s1->unk_1C = 0;
                 temp_f1 = var_s1->unk_8->unk_4;
                 if (var_s1->unk_24 < temp_f1) {
                     var_s1->unk_24 = temp_f1;
                 }
             }
             var_s1 = var_s1->unk_4;
-        } while (var_s1 != NULL);
+        } while (var_s1 != 0);
     }
 }

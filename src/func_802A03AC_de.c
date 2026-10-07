@@ -1,11 +1,10 @@
 #include "span_1000/code_802A0888.h"
 #include "types.h"
-
+#include "stddef.h"
 s32 func_802A03AC_de(u8 *arg0, u8 *arg1, s32 arg2) {
     u8 *var_a0;
     u8 *var_a1;
     u8 temp_v1;
-
     var_a0 = arg0;
     var_a1 = arg1;
     if (arg2 == 0) {
@@ -19,7 +18,6 @@ s32 func_802A03AC_de(u8 *arg0, u8 *arg1, s32 arg2) {
     }
     return *var_a0 - *var_a1;
 }
-
 s32 func_802A03F4_de(u8 *arg0, u8 *arg1)
 {
   s32 c2;
@@ -53,13 +51,10 @@ s32 func_802A03F4_de(u8 *arg0, u8 *arg1)
   }
   return c1 - c2;
 }
-
 /* Returns a pointer to the last occurrence of a character in a string, or 0 when it does not occur
    (strrchr). */
-
 u8 *func_802A0444_de(u8 *s, int c) {
     u8 *start = s;
-
     while (*s++ != 0) {
     }
     s--;
@@ -73,14 +68,10 @@ u8 *func_802A0444_de(u8 *s, int c) {
     }
     return 0;
 }
-
-#define NULL ((void *)0)
-
 /** In-place ASCII-uppercase a NUL-terminated string; NULL-safe. */
 u8 *func_802A0494_de(u8 *arg0) {
     u8 *var_v1;
     u8 temp_a1;
-
     var_v1 = arg0;
     if (arg0 == 0) {
         return 0;
@@ -96,14 +87,10 @@ u8 *func_802A0494_de(u8 *arg0) {
     }
     return arg0;
 }
-
-#define NULL ((void *)0)
-
 /** In-place ASCII-lowercase a NUL-terminated string; NULL-safe. */
 u8 *func_802A04E0_de(u8 *arg0) {
     u8 *var_v1;
     u8 temp_a1;
-
     var_v1 = arg0;
     if (arg0 == 0) {
         return 0;
@@ -119,12 +106,9 @@ u8 *func_802A04E0_de(u8 *arg0) {
     }
     return arg0;
 }
-
 /* Searches a zero-terminated byte string for a pattern and returns the position just past the first match, or zero when there is none. */
-
 u8 *func_802A052C_de(u8 *s, u8 *pattern) {
     u8 *p;
-
     while (*s != 0) {
         while (*s != 0 && *s != *pattern) {
             s++;
@@ -140,7 +124,6 @@ u8 *func_802A052C_de(u8 *s, u8 *pattern) {
     }
     return 0;
 }
-
 /** Convert a lowercase ASCII letter to uppercase. */
 int func_802A05A0_de(int arg0) {
     if ((unsigned int)(arg0 - 'a') < 26) {
@@ -148,7 +131,6 @@ int func_802A05A0_de(int arg0) {
     }
     return arg0;
 }
-
 /** Convert an uppercase ASCII letter to lowercase. */
 int func_802A05B8_de(int arg0) {
     if ((unsigned int)(arg0 - 'A') < 26) {
@@ -156,13 +138,11 @@ int func_802A05B8_de(int arg0) {
     }
     return arg0;
 }
-
 /* Parses a signed decimal integer from a string, skipping leading spaces and one optional sign (atoi). */
 s32 func_802A05D0_de(u8 *s) {
     s32 n;
     s32 c;
     u8 sign;
-
     while (*s == ' ') {
         s++;
     }
@@ -184,7 +164,6 @@ s32 func_802A05D0_de(u8 *s) {
     }
     return n;
 }
-
 /* Formats a signed integer as a NUL-terminated decimal string (K&R itoa with the reverse inlined). */
 void func_802A066C_de(s32 n, char *s) {
     s32 i;
@@ -192,7 +171,6 @@ void func_802A066C_de(s32 n, char *s) {
     s32 sign;
     s32 len;
     char c;
-
     if ((sign = n) < 0) {
         n = -n;
     }

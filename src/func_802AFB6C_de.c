@@ -1,62 +1,13 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802AE028.h"
 #include "types.h"
-#ifndef FUNC_802AFB6C_DE
-#define FUNC_802AFB6C_DE
 #include "types.h"
-#ifndef UNBAKE_FUNC_802AFB6C_DE_H
-#define UNBAKE_FUNC_802AFB6C_DE_H
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
-
 #include "types.h"
-
-
-
-#endif
-
-
 #include "types.h"
-
-
-
-
-
-
 extern void func_802B2450_de(Node_func_802AFD6C_de *arg0);
 extern void func_802B2480_de(Node_func_802AFD6C_de *arg0, Node_func_802AFD6C_de *arg1);
 extern void func_802AFD6C_de(void *arg0, Node_func_802AFD6C_de *arg1);
-
-
-
-
-
-
 void func_802AFB6C_de(void *arg0, ObjectState10_2 *arg1) {
     s32 padding[4];
     s32 total = 0;
@@ -64,7 +15,6 @@ void func_802AFB6C_de(void *arg0, ObjectState10_2 *arg1) {
     s32 scale;
     Node_func_802AFD6C_de *node;
     Node_func_802AFD6C_de *next;
-
     if (arg1->unk_8 == 0xFF) {
         if (arg1->unk_9 != 0x51) {
             return;
@@ -72,14 +22,12 @@ void func_802AFB6C_de(void *arg0, ObjectState10_2 *arg1) {
         scale = ((ObjectState4C *)(arg0))->unk_24;
         func_802AFDFC_de(arg0,
                       (f32)((arg1->unk_B << 16) | (arg1->unk_C << 8) | arg1->unk_D));
-
         node = ((struct ObjectLinks54_2 *) ((char *) arg0))->link;
         while (node != 0) {
             next = ((struct ObjectLinks4_5 *) ((char *) node))->link;
             total += ((func_80254D70_S2 *)(node))->unk8;
             if (node->type == 0x15) {
                 s32 node_total;
-
                 func_802B2450_de(node);
                 if (head != 0) {
                     func_802B2480_de(node, head);
@@ -97,7 +45,6 @@ void func_802AFB6C_de(void *arg0, ObjectState10_2 *arg1) {
             }
             node = next;
         }
-
         node = head;
         while (node != 0) {
             next = node->prev;

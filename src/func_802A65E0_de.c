@@ -1,18 +1,9 @@
 #include "span_1000/code_802A6AC0.h"
 #include "types.h"
+#include "math_helpers.h"
 /* Steps a four-item toggle menu: counts frames, and once func_802A7098_de allows input opens the menu on button 0x20 or, on release, closes it after running the selected item's select callback (toggling it when that reports 1, or directly when it has none); each frame it settles every item's bounce animation toward zero, toggles the selected item off when an enabled item's update callback fails, advances the blink counter twice, and then either finishes opening, finishes closing, or moves the selection through func_802A70D4_de on buttons 0x100 and 0x200. Toggling an item starts its bounce at +5 with the current frame and its restore values, or at -5 when switching off. */
-
-
-
-
-
-
-
-#define ABS(x) ((x) < 0.0f ? -(x) : (x))
-
 extern s32 func_802A7098_de(void);
 extern void func_802A70D4_de(Menu_func_802A65E0_de *menu, s32 direction);
-
 static inline void toggle(Menu_func_802A65E0_de *menu, MenuItem *item) {
     if ((item->on = !item->on) != 0) {
         item->bounce = 5;
@@ -23,11 +14,9 @@ static inline void toggle(Menu_func_802A65E0_de *menu, MenuItem *item) {
         item->bounce = -5;
     }
 }
-
 void func_802A65E0_de(Menu_func_802A65E0_de *menu, Input_func_802A65E0_de *input) {
     s16 bounce;
     s32 i;
-
     /* FAKEMATCH: preserve the original frame-update instruction scheduling at the function entry. */
 do {
     } while (0);
@@ -52,7 +41,7 @@ do {
         }
     }
     for (i = 0; i < 4; i++) {
-        bounce = ABS(menu->items[i].bounce);
+        bounce = RW_ABS(menu->items[i].bounce);
         if (bounce != 0) {
             if (bounce == menu->items[i].bounce) {
                 menu->items[i].bounce--;
