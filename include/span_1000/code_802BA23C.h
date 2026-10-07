@@ -3,7 +3,7 @@
 #include "acmd.h"
 #include "../types.h"
 /* unbake published declaration: published_14ac85407d47a435bfe7dd9d */
-extern void func_802BA210_de();
+extern void func_802BA210_de(void);
 
 struct __OSViScale;
 /* unbake published declaration: published_2141d574c5007fec06210fd9 */

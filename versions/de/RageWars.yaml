@@ -2443,7 +2443,7 @@ segments:
       - [0xBADA4, asm, "func_802BA1A4_de"]
       - [0xBADB0, c, "func_802BA1B0_de"]
       - [0xBAE0C, asm, "func_802BA20C_de"]
-      - [0xBAE10, asm, "func_802BA210_de"]
+      - [0xBAE10, c, "func_802BA210_de"]
       - [0xBAF0C, asm, "func_802BA30C_de"]
       - [0xBAF10, c, "func_802BA310_de"]
       - [0xBAF48, asm, "func_802BA348_de"]

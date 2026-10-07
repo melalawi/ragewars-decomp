@@ -2020,6 +2020,7 @@ build/%/src/func_802BA120_de.i build/%/src/func_802BA120_de.key build/%/units/fu
 build/%/src/func_802BA140_de.i build/%/src/func_802BA140_de.key build/%/units/func_802BA140_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802BA190_de.i build/%/src/func_802BA190_de.key build/%/units/func_802BA190_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802BA1B0_de.i build/%/src/func_802BA1B0_de.key build/%/units/func_802BA1B0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_802BA210_de.i build/%/src/func_802BA210_de.key build/%/units/func_802BA210_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802BA310_de.i build/%/src/func_802BA310_de.key build/%/units/func_802BA310_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802BA350_de.i build/%/src/func_802BA350_de.key build/%/units/func_802BA350_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802BA4C0_de.i build/%/src/func_802BA4C0_de.key build/%/units/func_802BA4C0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
