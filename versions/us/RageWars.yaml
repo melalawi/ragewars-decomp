@@ -5323,7 +5323,7 @@ segments:
       - [0x1B1DCC, asm, "func_8044DDCC_us"]
       - [0x1B1DD0, asm, "func_8044DC60_de"]
       - [0x1B1E24, data, "rodata/unresolved/8044DE24"]
-      - [0x1B1E30, asm, "func_8044DCC0_de"]
+      - [0x1B1E30, c, "func_8044DCC0_de"]
       - [0x1B1EC0, c, "func_8044DD50_de"]
       - [0x1B1F44, c, "func_8044DDD4_de"]
       - [0x1B1FEC, asm, "func_8044DE7C_de"]
