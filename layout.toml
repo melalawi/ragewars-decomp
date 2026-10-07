@@ -166,7 +166,7 @@ signals = ["callee", "cap"]
 name = "code_80225D10"
 segment = "span_1000"
 evidence = "proven"
-members = ["func_80225D34_de", "func_80225F44_de", "func_80226340_de", "func_80226708_de", "func_80226950_de", "func_80226A34_de", "func_80226C60_de", "func_80226DD0_de", "func_80227038_de", "func_80227E8C_de", "func_80228070_de", "func_802281F0_de", "func_802282EC_de", "func_802283B8_de", "func_80228DC4_de", "func_80228E60_eu", "func_80228FB8_de", "func_80229814_de", "func_80229A80_de"]
+members = ["func_80225D34_de", "func_80225F44_de", "func_80226340_de", "func_80226708_de", "func_80226950_de", "func_80226C60_de", "func_80226DD0_de", "func_80227038_de", "func_80227E8C_de", "func_80228070_de", "func_802281F0_de", "func_802282EC_de", "func_802283B8_de", "func_80228DC4_de", "func_80228E60_eu", "func_80228FB8_de", "func_80229814_de", "func_80229A80_de"]
 only = { "func_80228E60_eu" = ["eu", "eu-x"] }
 split = ["func_802282EC_de", "func_802283B8_de"]
 signals = ["callee", "cap", "version"]

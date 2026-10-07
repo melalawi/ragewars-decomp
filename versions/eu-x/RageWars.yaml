@@ -453,7 +453,6 @@ segments:
       - [0x27000, c, "func_80226340_de"]
       - [0x273C8, asm, "func_80226708_de"]
       - [0x27610, c, "func_80226950_de"]
-      - [0x276F4, c, "func_80226A34_de"]
       - [0x27920, asm, "func_80226C60_de"]
       - [0x27A90, asm, "func_80226DD0_de"]
       - [0x27CF8, asm, "func_80227038_de"]
