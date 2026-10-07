@@ -5508,7 +5508,6 @@ segments:
       - [0x13F0B4, data, "func_8044DC60_de_padding_13F0B4"]
       - [0x13F0B8, data, "rodata/unresolved/8044F0B8"]
       - [0x13F0C0, c, "func_8044DCC0_de"]
-      - [0x13F150, c, "func_8044DD50_de"]
       - [0x13F1D4, c, "func_8044DDD4_de"]
       - [0x13F27C, asm, "func_8044DE7C_de"]
       - [0x13F354, data, "rodata/unresolved/8044F354"]

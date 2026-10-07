@@ -5526,7 +5526,6 @@ segments:
       - [0x1B3C60, asm, "func_8044DC60_de"]
       - [0x1B3CB4, asm, "func_8044DCB4_de"]
       - [0x1B3CC0, c, "func_8044DCC0_de"]
-      - [0x1B3D50, c, "func_8044DD50_de"]
       - [0x1B3DD4, c, "func_8044DDD4_de"]
       - [0x1B3E7C, asm, "func_8044DE7C_de"]
       - [0x1B3F54, asm, "func_8044DF54_de"]
