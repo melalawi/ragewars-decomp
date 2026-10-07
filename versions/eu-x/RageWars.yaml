@@ -361,7 +361,7 @@ segments:
       - [0x14510, c, "func_802138F0_de"]
       - [0x146CC, asm, "func_80213ACC_eu_x"]
       - [0x14918, c, "func_80213CF8_de"]
-      - [0x14AF4, asm, "func_80213ED4_de"]
+      - [0x14AF4, c, "func_80213ED4_de"]
       - [0x14D98, asm, "func_80214178_de"]
       - [0x14F30, c, "func_80214310_de"]
       - [0x155E0, asm, "func_802149C0_de"]
