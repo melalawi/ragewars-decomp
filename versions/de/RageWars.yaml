@@ -354,7 +354,7 @@ segments:
       - [0x14AD4, asm, "func_80213ED4_de"]
       - [0x14D78, asm, "func_80214178_de"]
       - [0x14F10, c, "func_80214310_de"]
-      - [0x15224, asm, "func_80214624_de"]
+      - [0x15224, c, "func_80214624_de"]
       - [0x155C0, asm, "func_802149C0_de"]
       - [0x159D4, c, "func_80214DD4_de"]
       - [0x16010, c, "func_80215410_de"]

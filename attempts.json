@@ -3156,19 +3156,6 @@
       "exact": false,
       "minutes": 269.37
     },
-    "func_8028C568_de": {
-      "attempts": 2,
-      "best": {
-        "de": 100.0,
-        "eu": 100.0,
-        "eu-x": 100.0,
-        "us": 100.0,
-        "us-rev1": 100.0
-      },
-      "bytes": 164,
-      "exact": true,
-      "minutes": 0.05
-    },
     "func_8028D474_de": {
       "attempts": 6,
       "best": {
