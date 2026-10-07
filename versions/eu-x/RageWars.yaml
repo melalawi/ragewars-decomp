@@ -1944,7 +1944,7 @@ segments:
       - [0x9A758, c, "func_80299A08_de"]
       - [0x9A798, c, "func_80299A48_de"]
       - [0x9A7AC, c, "func_80299A5C_de"]
-      - [0x9A7D0, asm, "func_80299A80_de"]
+      - [0x9A7D0, c, "func_80299A80_de"]
       - [0x9A88C, c, "func_80299B3C_de"]
       - [0x9A89C, c, "func_80299B4C_de"]
       - [0x9A8B0, c, "func_80299B60_de"]

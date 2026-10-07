@@ -1931,7 +1931,7 @@ segments:
       - [0x9A608, c, "func_80299A08_de"]
       - [0x9A648, c, "func_80299A48_de"]
       - [0x9A65C, c, "func_80299A5C_de"]
-      - [0x9A680, asm, "func_80299A80_de"]
+      - [0x9A680, c, "func_80299A80_de"]
       - [0x9A73C, c, "func_80299B3C_de"]
       - [0x9A74C, c, "func_80299B4C_de"]
       - [0x9A760, c, "func_80299B60_de"]

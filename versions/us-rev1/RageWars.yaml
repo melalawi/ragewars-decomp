@@ -1956,7 +1956,7 @@ segments:
       - [0x9B608, c, "func_80299A08_de"]
       - [0x9B648, c, "func_80299A48_de"]
       - [0x9B65C, c, "func_80299A5C_de"]
-      - [0x9B680, asm, "func_80299A80_de"]
+      - [0x9B680, c, "func_80299A80_de"]
       - [0x9B73C, c, "func_80299B3C_de"]
       - [0x9B74C, c, "func_80299B4C_de"]
       - [0x9B760, c, "func_80299B60_de"]

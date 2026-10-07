@@ -1932,7 +1932,7 @@ segments:
       - [0x9A548, c, "func_80299A08_de"]
       - [0x9A588, c, "func_80299A48_de"]
       - [0x9A59C, c, "func_80299A5C_de"]
-      - [0x9A5C0, asm, "func_80299A80_de"]
+      - [0x9A5C0, c, "func_80299A80_de"]
       - [0x9A67C, c, "func_80299B3C_de"]
       - [0x9A68C, c, "func_80299B4C_de"]
       - [0x9A6A0, c, "func_80299B60_de"]
