@@ -1,25 +1,13 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802BE0D0.h"
 #include "types.h"
-
 /* Builds the decoder's trigonometric tables: for 128 steps it stores the sine and cosine of
    (i * D_800CCF10 + D_800CCF14) * D_800CCF18 in D_801510C0 and D_801512C0 and clears D_801518C0,
    then for 128 steps of i * D_800CCF1C stores sine plus cosine in D_801514C0 and cosine minus sine in
    D_801516C0. */
-
-
-
-#define ANGLE_OFFSET (*(&D_800C7CC0 + 1))
-#define ANGLE_STEP (*(&D_800C7CC8_de + 1))
-
-
-
-
 extern s32 D_8014B630[];
-
 extern f32 func_802B6560_de(f32 angle);
 extern f32 func_802B7130_de(f32 angle);
-
 void func_802BF514_de(void) {
     s16 i;
     f32 angle;
@@ -33,9 +21,8 @@ void func_802BF514_de(void) {
     s32 *zeros;
     f32 *sums;
     f32 *differences;
-
     step = D_800C7CC0;
-    offset = ANGLE_OFFSET;
+    offset = (*(&D_800C7CC0 + 1));
     scale = D_800C7CC8_de;
     i = 0;
     sines = D_8014AE30;
@@ -48,7 +35,7 @@ void func_802BF514_de(void) {
         zeros[i] = 0;
     }
     i = 0;
-    scale = ANGLE_STEP;
+    scale = (*(&D_800C7CC8_de + 1));
     sums = D_8014B230;
     differences = D_8014B430_de;
     for (; i < 128; i++) {
@@ -59,19 +46,12 @@ void func_802BF514_de(void) {
         differences[i] = c - s;
     }
 }
-
 /* Prepares the FFT tables in D_800D9370 for n points: fills the first n / 2 entries of the sine and
    negated cosine tables for angles i * D_800CCF20 / n, fills the order table with 0..n - 1 and
    bit-reverses it with the standard index-swapping walk, records n and returns the tables. */
-
-
-
 extern FftTables D_800D5340;
-
-
 extern f32 func_802B6560_de(f32 angle);
 extern f32 func_802B7130_de(f32 angle);
-
 FftTables *func_802BF67C_de(s32 n) {
     FftTables *tables;
     s32 half;
@@ -85,7 +65,6 @@ FftTables *func_802BF67C_de(s32 n) {
     f32 angle;
     f32 scale;
     f32 count;
-
     half = n >> 1;
     tables = &D_800D5340;
     i = 0;
@@ -121,17 +100,13 @@ FftTables *func_802BF67C_de(s32 n) {
     tables->size = n;
     return tables;
 }
-
 /* Dequantises 256 coefficients: for each of the 16 bands, whose end indices are in D_800D93C8,
    every coefficient is the quantised value at offset 0xA0 of the input divided by the step
    D_800D93E8 selected by the band's scale index and multiplied by the gain D_800CCF24; the
    coefficients past the last band end (D_800D93E6) are cleared. Returns 1. */
-
 extern u16 D_800D5398[];
 extern s16 D_800D53B6;
 extern f32 D_800D53B8[];
-
-
 s32 func_802BF804_de(f32 *out, s16 *in) {
     s16 *scale;
     s16 band;
@@ -141,7 +116,6 @@ s32 func_802BF804_de(f32 *out, s16 *in) {
     u16 *ends;
     f32 *steps;
     f32 gain;
-
     start = 0;
     values = in + 0x50;
     band = 0;

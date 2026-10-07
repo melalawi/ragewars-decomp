@@ -1,32 +1,18 @@
 #include "span_1000/code_802BB67C.h"
 #include "span_1000/code_802BBC68.h"
 #include "types.h"
-#if defined(VERSION_DE)
-#define func_802BC850_eu_x func_802BC570_de
-#elif defined(VERSION_EU)
-#define func_802BC850_eu_x func_802BC810_eu
-#elif defined(VERSION_US)
-#define func_802BC850_eu_x func_802BC4A0
-#endif
-
-
-
-
-
+#include "version_calls.h"
 extern s32 D_800D5268_de;
 extern ThreadNode *D_800D5270;
-
 extern u32 func_802BCF30_de(void);
 extern void func_802BCF50_de(u32 token);
 extern void func_802BC508_de(ThreadNode **queue, ThreadNode *node);
 extern ThreadNode *func_802BC558_de(ThreadNode **queue);
-extern void func_802BC850_eu_x(void);
-extern void func_802BC36C_de(ThreadNode **queue, ThreadNode *node);
 
+extern void func_802BC36C_de(ThreadNode **queue, ThreadNode *node);
 void func_802BB750_de(ThreadNode *arg0) {
     ThreadNode **sentinel;
     u32 token;
-
     token = func_802BCF30_de();
     if (arg0->state == 1) {
         goto state_one;
@@ -37,7 +23,6 @@ void func_802BB750_de(ThreadNode *arg0) {
     arg0->state = 2;
     func_802BC508_de((ThreadNode **)&D_800D5268_de, arg0);
     goto state_done;
-
 state_one:
     if (arg0->queue == 0) {
         goto insert_arg;
