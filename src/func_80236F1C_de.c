@@ -5,8 +5,8 @@
 #include "n64sdk.h"
 #include "gbi.h"
 #include "types.h"
-#include "n64sdk.h"
 #include "video_dimensions.h"
+#include "gfx.h"
 extern Gfx *D_8010C574;
 extern Frame *D_8011BDC0;
 extern s32 D_800DE880_de;
@@ -97,4 +97,151 @@ void func_80236F1C_de(Race *race, s32 arg1)
         }
     }
     func_804429D4_de(race->self.sound);
+}
+
+extern Gfx *D_8010C574;
+extern void func_8026D8F8_de(void);
+
+void func_802372D4_de(Racer *racer) {
+    Entity_func_80233C88_de *entity = (Entity_func_80233C88_de *)racer;
+    f32 x;
+    f32 y;
+    f32 width;
+    f32 height;
+
+    func_8026D8F8_de();
+    x = entity->x;
+    y = entity->y;
+    width = entity->width;
+    height = entity->height;
+    gDPPipeSync(D_8010C574++);
+    gDPSetCycleType(D_8010C574++, G_CYC_1CYCLE);
+    gDPSetCombineLERP(D_8010C574++, 0, 0, 0, PRIMITIVE, 0, 0, 0, PRIMITIVE,
+                     0, 0, 0, PRIMITIVE, 0, 0, 0, PRIMITIVE);
+    gDPSetRenderMode(D_8010C574++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
+    gDPSetPrimColor(D_8010C574++, 0, 0, 0, 0, 0, 0);
+    gDPFillRectangle(D_8010C574++, x, y, (x + width) - 1.0f, y + 2.0f);
+    gDPFillRectangle(D_8010C574++, x, (y + height) - 2.0f,
+                    (x + width) - 1.0f, (y + height) - 1.0f);
+    gDPFillRectangle(D_8010C574++, x, y, x + 2.0f, (y + height) - 1.0f);
+    gDPFillRectangle(D_8010C574++, (x + width) - 2.0f, y,
+                    (x + width) - 1.0f, (y + height) - 1.0f);
+    gDPPipeSync(D_8010C574++);
+    gDPSetCycleType(D_8010C574++, G_CYC_FILL);
+    gDPSetCombineLERP(D_8010C574++, 0, 0, 0, SHADE, 0, 0, 0, SHADE,
+                     0, 0, 0, SHADE, 0, 0, 0, SHADE);
+    gDPSetRenderMode(D_8010C574++, G_RM_NOOP, G_RM_NOOP2);
+    gDPSetFillColor(D_8010C574++, (1 << 16) | 1);
+    gDPFillRectangle(D_8010C574++, x, y, (x + width) - 1.0f, y);
+    gDPFillRectangle(D_8010C574++, x, (y + height) - 1.0f,
+                    (x + width) - 1.0f, (y + height) - 1.0f);
+    gDPFillRectangle(D_8010C574++, x, y, x, (y + height) - 1.0f);
+    gDPFillRectangle(D_8010C574++, (x + width) - 1.0f, y,
+                    x + width, (y + height) - 1.0f);
+}
+
+/* Posts a text as on-screen messages, one per line: when func_80245784_de reports it, the messages already in
+ * the pool's list at 0xE40 are flagged kind 4 and the new ones get kind 1, otherwise kind 2; the text (or
+ * D_800D7028 when given D_800D7034) is split at newlines and for each non-empty line the oldest message node
+ * of the owner's list at 0xF24 is recycled and set up centred horizontally 80 pixels above the bottom of the
+ * screen at unit size. Returns the last message node. */
+
+
+
+
+extern func_80237E70_G1 D_800D2FFC;
+
+extern func_80237E70_G1 D_800D3008;
+
+extern s32 D_800DE880_de;
+extern void func_80239CE0_de(Message *);
+extern void func_80255ED8_de(void *, Message *);
+extern void func_80255D14_de(void *, Message *);
+extern s32 func_80245784_de(void);
+
+
+
+
+
+
+
+
+
+
+
+
+static inline Message *recycle(void *owner, void *pool) {
+    Message *oldest;
+
+    oldest = ((func_80237E70_S1 *)(owner))->unkF24.v0;
+    if (oldest != 0) {
+        func_80239CE0_de(oldest);
+        func_80255ED8_de(&((func_80237E70_S1 *)(owner))->unkF24.v1, oldest);
+        func_80255D14_de(&((func_80237E70_S2 *)(pool))->unkE40.v0, oldest);
+    }
+    return oldest;
+}
+
+static inline Message *post_lines(void *owner, void *pool, u8 *text, s32 kind, f32 size, s32 target) {
+    Message *message;
+    s32 height;
+    u8 *line;
+    u8 *p;
+
+    message = 0;
+    if (pool == 0) {
+        return message;
+    }
+    if (text == D_800D3008.unk0) {
+        text = D_800D2FFC.unk0;
+    }
+    p = text;
+    line = p;
+    while (*p != 0) {
+        p++;
+        if (*p == '\n' || *p == 0) {
+            if (line != p) {
+                message = recycle(owner, pool);
+                if (message != 0) {
+                    message->kind = kind;
+                    message->text = line;
+                    message->timer = 0;
+                    message->alpha = 1.0f;
+                    message->size = size * 15.0f;
+                    message->target = target;
+                    message->pad20 = 0;
+                    message->pad28 = 0;
+                    message->pad2C = 0;
+                    message->scaleX = 1.0f;
+                    message->scaleY = 1.0f;
+                    height = (&D_800DE880_de)[1]; /* FAKEMATCH */
+                    message->x = D_800DE880_de / 2;
+                    message->y = height - 80;
+                }
+                line = p + 1;
+            }
+        }
+    }
+    return message;
+}
+
+Message *func_80237E80_de(void *owner, void *pool, u8 *text) {
+    Message *pending;
+    s32 kind;
+
+    kind = 2;
+    if (pool == 0) {
+        return 0;
+    }
+    if (func_80245784_de() != 0) {
+        pending = ((func_80237E70_S2 *)(pool))->unkE40.v1;
+        if (pending != 0) {
+            kind = 1;
+            do {
+                pending->kind = 4;
+                pending = ((func_80237E70_S4 *)(pending))->unk4;
+            } while (pending != 0);
+        }
+    }
+    return post_lines(owner, pool, text, kind, 1.0f, -1);
 }
