@@ -928,7 +928,7 @@ segments:
       - [0x46760, c, "func_80245B20_de"]
       - [0x46768, c, "func_80245B28_de"]
       - [0x467B4, asm, "func_80245B74_de"]
-      - [0x46800, asm, "func_80245BC0_de"]
+      - [0x46800, c, "func_80245BC0_de"]
       - [0x46878, c, "func_80245C38_de"]
       - [0x46954, c, "func_80245D14_de"]
       - [0x46968, asm, "func_80245D68_eu_x"]

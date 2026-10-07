@@ -143,7 +143,7 @@
       "minutes": 0.02
     },
     "func_80204C34_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -156,7 +156,7 @@
       "minutes": 0.02
     },
     "func_802052C4_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -1498,7 +1498,7 @@
       "minutes": 0.05
     },
     "func_80245BC0_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -6115,7 +6115,7 @@
       "minutes": 0.02
     },
     "func_804220A8_de": {
-      "attempts": 4,
+      "attempts": 5,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -7392,7 +7392,7 @@
       "minutes": 209.53
     },
     "func_80443B3C_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,

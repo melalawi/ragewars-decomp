@@ -911,7 +911,7 @@ segments:
       - [0x46700, c, "func_80245B20_de"]
       - [0x46708, c, "func_80245B28_de"]
       - [0x46754, asm, "func_80245B74_de"]
-      - [0x467A0, asm, "func_80245BC0_de"]
+      - [0x467A0, c, "func_80245BC0_de"]
       - [0x46818, c, "func_80245C38_de"]
       - [0x468F4, c, "func_80245D14_de"]
       - [0x46908, data, "rodata/unresolved/80245D08"]
