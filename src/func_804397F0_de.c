@@ -4,36 +4,35 @@
 #include "span_16E000/code_804143D8.h"
 #include "span_16E000/code_8043962C.h"
 #include "abi.h"
-#if defined(VERSION_DE)
-#define ANGLE_Y_CONSTANT D_800DDF54
-#elif defined(VERSION_EU)
-#define ANGLE_Y_CONSTANT D_800EE5D4
-#elif defined(VERSION_EU_X)
-#define ANGLE_Y_CONSTANT D_800E9794
-#elif defined(VERSION_US)
-#define ANGLE_Y_CONSTANT D_800DCC04
-#else
-#define ANGLE_Y_CONSTANT D_800E1F84
-#endif
 #include "types.h"
 #include "n64sdk.h"
 #include "gbi.h"
 /* Draws a menu model with screen-scaled translation, animated and fixed rotations, restoring the render-state flag afterward; the unsigned offset-to-pointer cast preserves matrix-address scheduling. */
-
-
-
-
 extern MenuModelScreen D_80141008[]; extern Gfx *D_8010C574;
 extern s32 D_800CC380, D_800CD72C, D_800DE880_de;
 extern char D_8011BDC8, D_800CBCA8;
-extern f32 D_800DDF50_de, ANGLE_Y_CONSTANT, D_800DDF58;
- 
+#if defined(VERSION_DE)
+extern float D_800DDF50_de;
+extern float D_800DDF58;
+#elif defined(VERSION_EU)
+extern float D_800DDF50_de;
+extern float D_800DDF58;
+#elif defined(VERSION_EU_X)
+extern float D_800DDF50_de;
+extern float D_800DDF58;
+#elif defined(VERSION_US)
+extern float D_800DDF50_de;
+extern float D_800DDF58;
+#elif defined(VERSION_US_REV1)
+extern float D_800DDF50_de;
+extern float D_800DDF58;
+#endif
 extern void func_80272898_de(Matrix *,Vec3 *,Vec3 *);
 extern void func_80272C60_de(Matrix *,Vec3);
 extern void func_802737F0_de(Matrix *,f32); extern void func_802739C4_de(Matrix *,f32); extern void func_80273B98_de(Matrix *,f32);
 extern void func_8027347C_de(Matrix *,f32,f32,f32); extern void func_80273D6C_de(Matrix *);
 extern s32 func_802A1934_de(void); extern void func_8027027C_de(Matrix *,void *);
-extern s32 func_8028C198_de(void *,s32);  
+extern s32 func_8028C198_de(void *,s32);
 extern void func_8026DF30_de(s32,void *,void *,s32,s32);
 void func_804397F0_de(MenuModelItem *item) {
  Matrix matrix;
@@ -55,7 +54,17 @@ void func_804397F0_de(MenuModelItem *item) {
   func_80272C60_de(&matrix,transformed);
   time=func_802A1934_de();
   if(item->speed.x!=0.0f)func_802737F0_de(&matrix,time*item->speed.x*D_800DDF50_de);
-  if(item->speed.y!=0.0f)func_802739C4_de(&matrix,time*item->speed.y*ANGLE_Y_CONSTANT);
+#if defined(VERSION_DE)
+  if(item->speed.y!=0.0f)func_802739C4_de(&matrix,time*item->speed.y*(0.01745329424738884f));
+#elif defined(VERSION_EU)
+  if(item->speed.y!=0.0f)func_802739C4_de(&matrix,time*item->speed.y*(0.01745329424738884f));
+#elif defined(VERSION_EU_X)
+  if(item->speed.y!=0.0f)func_802739C4_de(&matrix,time*item->speed.y*(0.01745329424738884f));
+#elif defined(VERSION_US)
+  if(item->speed.y!=0.0f)func_802739C4_de(&matrix,time*item->speed.y*(0.01745329424738884f));
+#elif defined(VERSION_US_REV1)
+  if(item->speed.y!=0.0f)func_802739C4_de(&matrix,time*item->speed.y*D_800E1F84);
+#endif
   if(item->speed.z!=0.0f)func_80273B98_de(&matrix,time*item->speed.z*D_800DDF58);
   if(item->rotation.x!=0.0f)func_802737F0_de(&matrix,item->rotation.x*(*(&D_800DDF58+1)));
   if(item->rotation.y!=0.0f)func_802739C4_de(&matrix,item->rotation.y*(*(&D_800DDF58+2)));
