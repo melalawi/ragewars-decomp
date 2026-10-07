@@ -2685,11 +2685,11 @@
     "func_802651B0_de": {
       "attempts": 7,
       "best": {
-        "de": 68.932039,
-        "eu": 69.902913,
-        "eu-x": 69.902913,
-        "us": 69.902913,
-        "us-rev1": 69.902913
+        "de": 69.902913,
+        "eu": 70.873786,
+        "eu-x": 70.873786,
+        "us": 70.873786,
+        "us-rev1": 70.873786
       },
       "bytes": 400,
       "exact": false,
@@ -3519,6 +3519,31 @@
       "bytes": 404,
       "exact": false,
       "minutes": 11.23
+    },
+    "func_802917D8_de": {
+      "attempts": 2,
+      "best": {
+        "de": 60.0,
+        "eu": 60.0,
+        "eu-x": 60.0,
+        "us": 60.0,
+        "us-rev1": 60.0
+      },
+      "bytes": 340,
+      "exact": false,
+      "fuzzy": {
+        "compiler": "gcc-2.8.1-sn64",
+        "score": 60.0,
+        "source_sha256": "9114578a30a9f0508e98fb664e3320223772ae9518242e9ca0573ad06e57ebc8",
+        "versions": {
+          "de": 60.0,
+          "eu": 60.0,
+          "eu-x": 60.0,
+          "us": 60.0,
+          "us-rev1": 60.0
+        }
+      },
+      "minutes": 12.27
     },
     "func_80292F24_de": {
       "attempts": 1,
