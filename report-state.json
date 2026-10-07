@@ -4,7 +4,7 @@
   "source_pins": {
     ".github/workflows/progress.yml": "1f665589f3527e1af781767ef3d3e0945e9b2af1499ef0db9db21b58925fc637",
     ".gitlab-ci.yml": "68df1b5fe4a49cc509f4eb078292153379a93b37d91ce40163a6e4929692a3da",
-    "attempts.json": "33bcd692b19f27f7f7ffc091c35c1a6faa39b52be8c355920bc6360a3f3fda1f",
+    "attempts.json": "75ea78481a7f9dca6697e9183c81e9e667ca22992ca34dcd112de8609aff8694",
     "config.toml": "ea7945703dc495e781f8f52381228011d69d6d35510c422fa61f339d8bbc7c47",
     "include/abi.h": "cff5a56cde9e9c6f6229882328d71b038544f4c8102196347b92ac2df6a84951",
     "include/acmd.h": "522f0c6ad06a44f89de7e93dd9caa51ef62e811027a48ce12dd04a3b79db60ac",
