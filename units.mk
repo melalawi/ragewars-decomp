@@ -2962,3 +2962,4 @@ build/%/src/func_8044D528_de.i build/%/src/func_8044D528_de.key build/%/units/fu
 build/%/src/func_8044D668_de.i build/%/src/func_8044D668_de.key build/%/units/func_8044D668_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8044DCC0_de.i build/%/src/func_8044DCC0_de.key build/%/units/func_8044DCC0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8044DDD4_de.i build/%/src/func_8044DDD4_de.key build/%/units/func_8044DDD4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
+build/%/src/func_8044DE7C_de.i build/%/src/func_8044DE7C_de.key build/%/units/func_8044DE7C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -DNON_MATCHING

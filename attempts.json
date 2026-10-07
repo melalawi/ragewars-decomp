@@ -151,7 +151,7 @@
           "us-rev1": 70.0
         }
       },
-      "minutes": 5.03
+      "minutes": 45.43
     },
     "func_80200F98_de": {
       "attempts": 2,
@@ -7931,7 +7931,7 @@
       "minutes": 12.15
     },
     "func_8044DE7C_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 92.727273,
         "eu": 92.727273,
@@ -7941,7 +7941,19 @@
       },
       "bytes": 216,
       "exact": false,
-      "minutes": 0.09
+      "fuzzy": {
+        "compiler": "gcc-2.8.1-sn64",
+        "score": 92.72727300000001,
+        "source_sha256": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
+        "versions": {
+          "de": 92.727273,
+          "eu": 92.727273,
+          "eu-x": 92.727273,
+          "us": 92.727273,
+          "us-rev1": 92.727273
+        }
+      },
+      "minutes": 9.58
     }
   },
   "v": 1
