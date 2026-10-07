@@ -6,28 +6,28 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 ## Progress
 
-<pre><code>all     [████████████▒░░░░░░░]  60.58% (~60.78%)  3,347,584 of 5,525,468 bytes</code><br><code>de      [███████████▒░░░░░░░░]  59.98% (~60.17%)  662,720 of 1,104,964 bytes</code><br><code>us      [████████████▒░░░░░░░]  61.90% (~62.10%)  657,496 of 1,062,244 bytes</code><br><code>us-rev1 [████████████▒░░░░░░░]  61.22% (~61.41%)  693,104 of 1,132,124 bytes</code><br><code>eu      [███████████▒░░░░░░░░]  59.97% (~60.17%)  666,888 of 1,111,996 bytes</code><br><code>eu-x    [███████████▒░░░░░░░░]  59.90% (~60.09%)  667,376 of 1,114,140 bytes</code></pre>
+<pre><code>all     [████████████▒░░░░░░░]  60.58% (~60.80%)  3,347,584 of 5,525,468 bytes</code><br><code>de      [███████████▒░░░░░░░░]  59.98% (~60.19%)  662,720 of 1,104,964 bytes</code><br><code>us      [████████████▒░░░░░░░]  61.90% (~62.12%)  657,496 of 1,062,244 bytes</code><br><code>us-rev1 [████████████▒░░░░░░░]  61.22% (~61.43%)  693,104 of 1,132,124 bytes</code><br><code>eu      [███████████▒░░░░░░░░]  59.97% (~60.18%)  666,888 of 1,111,996 bytes</code><br><code>eu-x    [███████████▒░░░░░░░░]  59.90% (~60.11%)  667,376 of 1,114,140 bytes</code></pre>
 All versions: 1,332,404 declared data bytes (matching unknown); opaque binary assets excluded.
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
-| <pre><code>bytes     [███████████▒░░░░░░░░]  59.98% (~60.17%)  662,720 of 1,104,964</code><br><code>functions [████████████████░░░░]  80.93%  3,615 of 4,467</code></pre> Retained drafts: 2,932 bytes / 16 functions; declared data: 277,644 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
+| <pre><code>bytes     [███████████▒░░░░░░░░]  59.98% (~60.19%)  662,720 of 1,104,964</code><br><code>functions [████████████████░░░░]  80.93%  3,615 of 4,467</code></pre> Retained drafts: 3,272 bytes / 17 functions; declared data: 277,644 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
 
 | us (NUS-NRWE-0, North America). First NTSC release (black cartridge). SHA256 `0433043aaba2649bdd1fe717c4020550ac663c0362527aa082490f5977a3e46b` |
 |---|
-| <pre><code>bytes     [████████████▒░░░░░░░]  61.90% (~62.10%)  657,496 of 1,062,244</code><br><code>functions [████████████████░░░░]  83.98%  3,555 of 4,233</code></pre> Retained drafts: 2,936 bytes / 16 functions; declared data: 320,748 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
+| <pre><code>bytes     [████████████▒░░░░░░░]  61.90% (~62.12%)  657,496 of 1,062,244</code><br><code>functions [████████████████░░░░]  83.98%  3,555 of 4,233</code></pre> Retained drafts: 3,276 bytes / 17 functions; declared data: 320,748 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
 
 | us-rev1 (NUS-NRWE-1, North America). Revised NTSC release (grey cartridge). SHA256 `5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089` |
 |---|
-| <pre><code>bytes     [████████████▒░░░░░░░]  61.22% (~61.41%)  693,104 of 1,132,124</code><br><code>functions [████████████████░░░░]  81.99%  3,728 of 4,547</code></pre> Retained drafts: 3,016 bytes / 17 functions; declared data: 254,468 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
+| <pre><code>bytes     [████████████▒░░░░░░░]  61.22% (~61.43%)  693,104 of 1,132,124</code><br><code>functions [████████████████░░░░]  81.99%  3,728 of 4,547</code></pre> Retained drafts: 3,356 bytes / 18 functions; declared data: 254,468 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
-| <pre><code>bytes     [███████████▒░░░░░░░░]  59.97% (~60.17%)  666,888 of 1,111,996</code><br><code>functions [████████████████░░░░]  80.64%  3,608 of 4,474</code></pre> Retained drafts: 2,936 bytes / 16 functions; declared data: 275,508 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
+| <pre><code>bytes     [███████████▒░░░░░░░░]  59.97% (~60.18%)  666,888 of 1,111,996</code><br><code>functions [████████████████░░░░]  80.64%  3,608 of 4,474</code></pre> Retained drafts: 3,276 bytes / 17 functions; declared data: 275,508 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
 
 | eu-x (NUS-NRWX-0, Europe). PAL multi-language release. SHA256 `511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750` |
 |---|
-| <pre><code>bytes     [███████████▒░░░░░░░░]  59.90% (~60.09%)  667,376 of 1,114,140</code><br><code>functions [████████████████░░░░]  80.67%  3,611 of 4,476</code></pre> Retained drafts: 3,016 bytes / 17 functions; declared data: 204,036 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
+| <pre><code>bytes     [███████████▒░░░░░░░░]  59.90% (~60.11%)  667,376 of 1,114,140</code><br><code>functions [████████████████░░░░]  80.67%  3,611 of 4,476</code></pre> Retained drafts: 3,356 bytes / 18 functions; declared data: 204,036 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
 
 ## Development & Contributions
 
