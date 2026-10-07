@@ -234,6 +234,7 @@ build/%/src/func_8020ED50_de.i build/%/src/func_8020ED50_de.key build/%/units/fu
 build/%/src/func_8020EDCC_de.i build/%/src/func_8020EDCC_de.key build/%/units/func_8020EDCC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8020EE50_de.i build/%/src/func_8020EE50_de.key build/%/units/func_8020EE50_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8020EEA4_de.i build/%/src/func_8020EEA4_de.key build/%/units/func_8020EEA4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
+build/%/src/func_8020EF80_eu_x.i build/%/src/func_8020EF80_eu_x.key build/%/units/func_8020EF80_eu_x.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8020F150_de.i build/%/src/func_8020F150_de.key build/%/units/func_8020F150_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8020F2A8_de.i build/%/src/func_8020F2A8_de.key build/%/units/func_8020F2A8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8020F388_de.i build/%/src/func_8020F388_de.key build/%/units/func_8020F388_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)

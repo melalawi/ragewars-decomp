@@ -206,7 +206,8 @@ eu-x.U.func_8020ED50_de := 0x8020ED70:0xF970:0x7C
 eu-x.U.func_8020EDCC_de := 0x8020EDEC:0xF9EC:0x84
 eu-x.U.func_8020EE50_de := 0x8020EE70:0xFA70:0x54
 eu-x.U.func_8020EEA4_de := 0x8020EEC4:0xFAC4:0xB0
-eu-x.S.0000FB74 := 64372 508
+eu-x.S.0000FB74 := 64372 12
+eu-x.U.func_8020EF80_eu_x := 0x8020EF80:0xFB80:0x1F0
 eu-x.U.func_8020F150_de := 0x8020F170:0xFD70:0x158
 eu-x.U.func_8020F2A8_de := 0x8020F2C8:0xFEC8:0xE0
 eu-x.U.func_8020F388_de := 0x8020F3A8:0xFFA8:0xBC
@@ -3545,6 +3546,7 @@ eu-x.PIECES := \
   build/eu-x/units/func_8020EE50_de.bin \
   build/eu-x/units/func_8020EEA4_de.bin \
   build/eu-x/slices/0000FB74.bin \
+  build/eu-x/units/func_8020EF80_eu_x.bin \
   build/eu-x/units/func_8020F150_de.bin \
   build/eu-x/units/func_8020F2A8_de.bin \
   build/eu-x/units/func_8020F388_de.bin \
