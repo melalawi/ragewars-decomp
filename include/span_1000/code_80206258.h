@@ -465,4 +465,8 @@ struct func_80206604_G1 {
     u8 unk0;
 };
 
+
+struct Input_func_80207738_de;
+s32 func_80207738_de(void *context, struct Input_func_80207738_de *option);
+
 #endif

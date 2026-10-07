@@ -185,7 +185,7 @@ segments:
       - [0x756C, c, "func_8020694C_de"]
       - [0x7640, asm, "func_80206A20_de"]
       - [0x79F4, c, "func_80206DD4_de"]
-      - [0x8358, asm, "func_80207738_de"]
+      - [0x8358, c, "func_80207738_de"]
       - [0x83EC, c, "func_802077CC_de"]
       - [0x8414, c, "func_802077F4_de"]
       - [0x84B0, c, "func_80207890_de"]
