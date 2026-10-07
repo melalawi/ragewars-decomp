@@ -201,13 +201,13 @@
     "include/span_1000/code_802B369C.h": "26f4ad267f23d684c33f62915a7192c097b28210166a1c3620a0ee58973a8d0f",
     "include/span_1000/code_802B4730.h": "39b67a9b7961c0666e0093d7fd49e1afd768e745d447571644f45b5e594a8b5c",
     "include/span_1000/code_802B53FC.h": "2a85f7515b060999eded9968d0a94a1a549a0d3b9ed24f97ee9cbc9b736ef64c",
-    "include/span_1000/code_802B7058.h": "dfd4205f7423361623dcea77422fcc7ad84b03bb1e0f55cdd7e2ffbce259a314",
+    "include/span_1000/code_802B7058.h": "677b4f468afb66a1e5bd917332a8b51583af15052c5afa77e2ba203182795655",
     "include/span_1000/code_802B7488.h": "747e3f2b2d390cd9f0dcddbe4abfe4515d1bdf1664bf22ec4acb498f99d76112",
     "include/span_1000/code_802B7B80.h": "269015e632c5ae39a9ea96cd54ad1910774bb1b86d237b0367242c84a524fe33",
     "include/span_1000/code_802B8CCC.h": "c6ca81586de85e7ad2d7e91107412987e51f7619386ec065de9e2ccc7be8656a",
-    "include/span_1000/code_802B8DD0.h": "1035bfd25c43242339646fd5f46e3cebe850a3d6d4c7ecd12c697c45e4d6ea74",
-    "include/span_1000/code_802B9BB4.h": "25635c22c6b280689006a3c1577f981bc23e85bfcc7a2bea7bc71e90251c541e",
-    "include/span_1000/code_802B9ED8.h": "6102fec4407362f6b22407a6ced5250f44f4cbf3e3959dd977d956fc9bfef408",
+    "include/span_1000/code_802B8DD0.h": "5b6a1809b4aef5f961533da74e94abb56ba7363c949145f1e6a650c4f42a891c",
+    "include/span_1000/code_802B9BB4.h": "ebc06c9008cf3e2654da7f9258c6804856f104b1e237c4e5a2c128215dff6673",
+    "include/span_1000/code_802B9ED8.h": "886e2a764c6cf4cfd3542167cb141a5f58521caeffe0c7faccf68d45dbfd1fa5",
     "include/span_1000/code_802BA13C.h": "8e88a005121d5ce0df57ba9e90908009b11867ab8bad55f485ae2fb55f8d52ba",
     "include/span_1000/code_802BA23C.h": "637bf880e14a083304f3921abe15883131419724fb9101521278f087883343a8",
     "include/span_1000/code_802BAC58.h": "9fa8c6a41a1f1caeb9f7e9dc418b050999a891159c0f6bbcb0a38e5b1d23b43f",
@@ -2117,6 +2117,7 @@
     "src/func_802B25D0_de.c": "69283c8bc438ba936b86c4dd4fabe1601ff9a9d97c50cbc13e94dba71b5bb1f7",
     "src/func_802B2620_de.c": "b46d19320fd6f1b37703a84791611f3745f33d2f33c63810dbf51b69247633bf",
     "src/func_802B2650_de.c": "2df6d23ba9ee13bf2a6005ef68a568f48d74c8e50c7cffd38bdd8c41d39d8ba6",
+    "src/func_802B2780_de.c": "14d85a2b8385d591e6ddfc9627c25cf5d56670d778fe3f81854221079657254b",
     "src/func_802B2BBC_de.c": "4e09c1df16ae7ade38462471afb98ea64eac00b76593f71569e629ae60a82253",
     "src/func_802B2D80_de.c": "0e3a2b8fb3263affd4cdb82501fcd260668f72656911b9aff60cca7d5abcaa82",
     "src/func_802B2E30_de.c": "319c95efa69aed946b164ee517b84fc4b2feeb6d9a06ce9477a9b48ed857de97",
@@ -2169,6 +2170,7 @@
     "src/func_802B6F9C_de.c": "a29364dc999c32ad80efb239108667727e340baf8cf4974c8c06eaf9cb4c60fb",
     "src/func_802B7130_de.c": "beb514386f4c0565eb106e07beec799d6dba2a5b768ad122768d997cde55c706",
     "src/func_802B72C0_de.c": "e52cfbce277c9a9709b1d9bf42a080083bad2f70218385d2dfa18df6edc328b1",
+    "src/func_802B72E0_de.c": "0904c726bd01c4fdbeff9e3889a52c180ed0cbce5091d383514bfc1d4ed8cd91",
     "src/func_802B7400_de.c": "329ec2532468b8420039f5e89c3aa46e359614c444ede84142b006a7f6e73264",
     "src/func_802B7490_de.c": "743171dae28f561e1504a2ccbb4714221c9ea3a5e82b3cf609658ec85bb608b0",
     "src/func_802B74B0_de.c": "c5d1723d4a22c31b7f63f4d57254bb3bea902bface163583c9238465fbcc3686",
@@ -2197,6 +2199,7 @@
     "src/func_802B8CF0_de.c": "ab2219a11dfffe1341c1911619313fae3e874565b8fc56e36de4b7a3959d9412",
     "src/func_802B8DA0_de.c": "1234f7b252ee705a09e937a95f3d6bbd951c6c464967d8c4537997e3dc4cf185",
     "src/func_802B93B0_de.c": "822b3d46c4a6616a627dbad74643b84d41c8d7eb7cffa0d434276c6d8790b8bd",
+    "src/func_802B9590_de.c": "561fe5da1e13e3b5d2770f4f7fbf54da0654589559de95fa71e5fcc653172047",
     "src/func_802B9730_de.c": "eec07fe1afb4a669ca02d8ae64e87757a324e2cf32fafbb6c8d722fd2c03c429",
     "src/func_802B9950_de.c": "d64ae5306029d6642884812257cc34db6aae8f606562ab0ffc208f29a0559022",
     "src/func_802B99A4_de.c": "91a44256b47129cc790e550bf2c8528d0c2224d07b1adfba6f64ba44cbba984b",
@@ -2206,10 +2209,12 @@
     "src/func_802B9BC0_de.c": "2c085b50b7e8daac205959b78716dcd51082069773fa97e0908dbb4706872ca7",
     "src/func_802B9C14_de.c": "8377dbc054fdfc52b7b230ee339a54961471ae76c61a5e3cc1a97dedcbe41ca8",
     "src/func_802B9C80_de.c": "64f7d8560e9dba4f4a2a9352f8076bbb9e3559b5910e7bb3ae377bf4466b3230",
+    "src/func_802B9CB0_de.c": "6b8b8c6fd45b8e988feeb1597953b13c4590892c255f8290d2e765487f199713",
     "src/func_802B9D70_de.c": "aa2347dc3a26c03568fcae9779af1d801d2a0521d12b444c03370601dace4a6b",
     "src/func_802B9D90_de.c": "ad8ddc0f97fb6792ad3757ec08abc4b7fb09ffb01e7dfc97c9ace811c6fbca3f",
     "src/func_802B9F7C_de.c": "375c5b0b5fe704629720784f3c6eb557b84c513d88be190a06596e67fd37314d",
     "src/func_802B9FB0_de.c": "930c1dc11c08aa3a61700132ae6d9c184c864f519ec8ff5ef8f23f1bb37088f2",
+    "src/func_802B9FD0_de.c": "8cabbcc2d51e49f1023bd317a949077e321dce7c802650d1b5b0752e3ad98c91",
     "src/func_802BA0D0_de.c": "1e46a49e3e61a726650bb3711650fea051309d2900f9d55099b0b6bd916b3c3e",
     "src/func_802BA100_de.c": "de435bfa55d1f48033cfcd20c7a007fd96727249f967755442b5373de44af318",
     "src/func_802BA120_de.c": "340d408e057291f76f949ac93a5fdc4a344eae749a110a9b6ffab0ad40e93432",
@@ -3233,21 +3238,21 @@
     "tools/compilers.sha256": "b28b12299b9e8803d03ffefca0963b4fafa1d1c15ff743b89b12e160a9e47991",
     "tools/report-verifier.zip": "829e6932865a0df53b4771dcae6f4fcd93d1708339f75f9c83081a909e0e96ed",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "versions/de/RageWars.yaml": "e2aba87c85510f4a6af4f2a557eabe4da5a80e29e632c5f7935323dbe95df71e",
+    "versions/de/RageWars.yaml": "563165c27ad8bb51d9e681ce3a5466e13bef958e84299458d39b8404772fa029",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
-    "versions/eu/RageWars.yaml": "193c6bdcd45d94be00fc04b96586a2ef10672b91039b5a76adc756e8dc77e944",
+    "versions/eu/RageWars.yaml": "e0452b787db530d8501d6752cac692b2eefbdb57fa7ba35fcc507de39b9e67d0",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
-    "versions/eu-x/RageWars.yaml": "f2347ac50afc3ffdaf9b87162147ec271ee2093e5a2fca12f803d3780f050975",
+    "versions/eu-x/RageWars.yaml": "9ee07026c5c6f23fefba8d2dd3a4f9f325080faebe4dab0eace34cf6043ca90f",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
-    "versions/us/RageWars.yaml": "469e6adc5faa98db1505b47b945cadcb36a87f21c28af4343e8f623c895c660d",
+    "versions/us/RageWars.yaml": "acbdcd481de9c6adefed1e8adcb3fe624e030321f9ccd31738ccd53e5eace6f4",
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
-    "versions/us-rev1/RageWars.yaml": "c3e5a71f2f087990ce310c17c89b169e55b0f1443dde77bf95c1a70f38ad2b22",
+    "versions/us-rev1/RageWars.yaml": "b2bd3cb9f716aece19e401ccf137f48c9c590e24e4698c1aed0f7aba1706e026",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5",
     "publication-state": "7ee4c1dcd9632f3935a6d979241774e33c600ae89f148322aa88d43d85ef72a8"
   },
   "versions": {
     "us": {
-      "report_sha256": "2069bb15de80d094b81a236fa07b1e99592f8988f65425bb130081f2e96f650f",
+      "report_sha256": "9573041ef9e82b4b711dddeea8bf249d18e2936f30080db996a5493d7acb6110",
       "artifact": "us_report",
       "report_file": "us_report.json",
       "draft_bytes": 6816,
@@ -3456,11 +3461,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.73662171779742,
+      "exact_plus_draft_percent": 62.944107003663945,
       "data_match_state": "unknown"
     },
     "us-rev1": {
-      "report_sha256": "d14410f55da2722d37232b4804d29dcbab4bc2326ff170dce74adc903fe89cf7",
+      "report_sha256": "5b68be97e03645d597f612065a29ff5357eebf63cadb9e107f891f30aeacf453",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6896,
@@ -3677,11 +3682,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.014054997509106,
+      "exact_plus_draft_percent": 62.20873331896506,
       "data_match_state": "unknown"
     },
     "eu": {
-      "report_sha256": "60935d73a41df1d93d874e50e0550296d3ea5b91a037cd2de7cb28d897e9451c",
+      "report_sha256": "035ac3085d389d58e2c59b8447b0c3f0680c9b85c369057afb2740e5c301d46f",
       "artifact": "eu_report",
       "report_file": "eu_report.json",
       "draft_bytes": 6816,
@@ -3890,11 +3895,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.775758186180525,
+      "exact_plus_draft_percent": 60.973960337986824,
       "data_match_state": "unknown"
     },
     "eu-x": {
-      "report_sha256": "52e5f58d4b634906618487233ac45d041a8788fc39683531e6d3f38cc1af6e09",
+      "report_sha256": "8232acbbd6b97eebd892587d9a00153fa3aa8b9bb8bef1d3082c19f4533215c9",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
       "draft_bytes": 6896,
@@ -4111,11 +4116,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.70978512574721,
+      "exact_plus_draft_percent": 60.90760586640817,
       "data_match_state": "unknown"
     },
     "de": {
-      "report_sha256": "5ebb61dd0ff95b2184f112ffdc54f225ce3a01d6fd1008258243b2026d71a6ce",
+      "report_sha256": "70d788f5b5ac42761378bc937d799b6b6d8cab5578931a24887210c6bebadea7",
       "artifact": "de_report",
       "report_file": "de_report.json",
       "draft_bytes": 6812,
@@ -4324,7 +4329,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.77591668144844,
+      "exact_plus_draft_percent": 60.975380193381866,
       "data_match_state": "unknown"
     }
   },
