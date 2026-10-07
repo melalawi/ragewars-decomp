@@ -1,6 +1,6 @@
 {
   "measures": {
-    "fuzzy_match_percent": 70.902534,
+    "fuzzy_match_percent": 71.03809,
     "total_code": 1062244,
     "matched_code": 653436,
     "matched_code_percent": 61.51468,
@@ -397,14 +397,14 @@
         "total_functions": 1,
         "complete_data_percent": 100.0,
         "total_units": 1,
-        "fuzzy_match_percent": 53.333332
+        "fuzzy_match_percent": 70.0
       },
       "sections": [
         {
           "name": ".text",
           "size": "120",
           "metadata": {},
-          "fuzzy_match_percent": 53.333332
+          "fuzzy_match_percent": 70.0
         }
       ],
       "functions": [
@@ -413,7 +413,7 @@
           "size": "120",
           "metadata": {},
           "address": "0",
-          "fuzzy_match_percent": 53.333332
+          "fuzzy_match_percent": 70.0
         }
       ],
       "metadata": {
@@ -106862,13 +106862,15 @@
         "matched_data_percent": 100.0,
         "total_functions": 1,
         "complete_data_percent": 100.0,
-        "total_units": 1
+        "total_units": 1,
+        "fuzzy_match_percent": 37.7551
       },
       "sections": [
         {
           "name": ".text",
           "size": "3920",
-          "metadata": {}
+          "metadata": {},
+          "fuzzy_match_percent": 37.7551
         }
       ],
       "functions": [
@@ -106876,7 +106878,8 @@
           "name": "func_80414CCC_de",
           "size": "3920",
           "metadata": {},
-          "address": "0"
+          "address": "0",
+          "fuzzy_match_percent": 37.7551
         }
       ],
       "metadata": {
@@ -118891,14 +118894,14 @@
         "total_functions": 1,
         "complete_data_percent": 100.0,
         "total_units": 1,
-        "fuzzy_match_percent": 77.41936
+        "fuzzy_match_percent": 29.032257
       },
       "sections": [
         {
           "name": ".text",
           "size": "124",
           "metadata": {},
-          "fuzzy_match_percent": 77.41936
+          "fuzzy_match_percent": 29.032257
         }
       ],
       "functions": [
@@ -118907,7 +118910,7 @@
           "size": "124",
           "metadata": {},
           "address": "0",
-          "fuzzy_match_percent": 77.41936
+          "fuzzy_match_percent": 29.032257
         }
       ],
       "metadata": {
