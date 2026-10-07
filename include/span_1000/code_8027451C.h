@@ -207,4 +207,6 @@ extern f32 func_80274944_de(f32 arg0);
 /* unbake published declaration: published_f85ecd30ea495c145fef2cf8 */
 extern float D_800C4988_de;
 
+extern s32 func_80274D10_de(f32 *arg0, f32 *arg1, f32 *arg2);
+
 #endif

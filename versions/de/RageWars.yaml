@@ -1525,7 +1525,7 @@ segments:
       - [0x7577C, c, "func_80274B7C_de"]
       - [0x757F4, c, "func_80274BF4_de"]
       - [0x7587C, c, "func_80274C7C_de"]
-      - [0x75910, asm, "func_80274D10_de"]
+      - [0x75910, c, "func_80274D10_de"]
       - [0x7598C, c, "func_80274D8C_de"]
       - [0x759FC, c, "func_80274DFC_de"]
       - [0x75CB0, c, "func_802750B0_de"]
