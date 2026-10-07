@@ -1,13 +1,12 @@
 #include "span_16E000/code_80444030.h"
 #include "types.h"
+#include "stddef.h"
 /* Updates the selected menu option in response to the current input state. */
-#define NULL ((void *)0)
-s32 func_8026437C_de(char *);                             /* extern */
-s32 func_80264388_de(char *);                             /* extern */
-s32 func_802643A0_de(char *);                          /* extern */
+s32 func_8026437C_de(char *); /* extern */
+s32 func_80264388_de(char *); /* extern */
+s32 func_802643A0_de(char *); /* extern */
 extern char D_8010B0E0;
 extern u32 D_80142210[];
-
 s32 func_8044421C_de(void) {
  if(func_80264388_de(&D_8010B0E0)) {
  switch(D_80142210[0]) {

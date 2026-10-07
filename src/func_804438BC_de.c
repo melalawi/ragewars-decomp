@@ -1,21 +1,16 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80443868.h"
 #include "types.h"
+#include "stddef.h"
 /* Advances the actor inactivity timer and reports pending menu state. */
-#define NULL ((void *)0)
-
-
-
-s32 func_8022B178_de(void *);                          /* extern */
-void func_8044972C_de(void *);                            /* extern */
+s32 func_8022B178_de(void *); /* extern */
+void func_8044972C_de(void *); /* extern */
 extern State_func_8043E254_de D_801427E0[];
-
 s32 func_804438BC_de(State_func_804438BC_de *arg0) {
     State_func_8043E254_de *state;
     s32 temp_v0;
     s32 var_v0;
     Actor_func_804438BC_de *temp_s0;
-
     temp_s0 = arg0->unk1C;
     if ((temp_s0->unk1450 == 0) && (func_8022B178_de(temp_s0) != 0)) {
         temp_v0 = temp_s0->unk1340 + 1;

@@ -1,24 +1,18 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80444EC0.h"
 #include "types.h"
+#include "stddef.h"
 /* Edits a byte, integer, or float option and propagates it to the active resource records. */
-#define NULL ((void *)0)
- 
-s32 func_8026435C_de(s32);                             /* extern */
-s32 func_8028B2F8_de(char *, s32);                        /* extern */
-void *func_8028FDB4_de(s32, s32);                        /* extern */
-void func_802BD320_de(s32, char *, s32);                     /* extern */
-s32 func_80441FE8_de(void *);                          /* extern */
-s32 func_80442384_de(void *, void *, s32);               /* extern */
-s32 func_804423BC_de(void *, s32, s32, s32, s32, s32);     /* extern */
+s32 func_8026435C_de(s32); /* extern */
+s32 func_8028B2F8_de(char *, s32); /* extern */
+void *func_8028FDB4_de(s32, s32); /* extern */
+void func_802BD320_de(s32, char *, s32); /* extern */
+s32 func_80441FE8_de(void *); /* extern */
+s32 func_80442384_de(void *, void *, s32); /* extern */
+s32 func_804423BC_de(void *, s32, s32, s32, s32, s32); /* extern */
 extern char D_800E27D0;
-
 extern char D_8011BDC8;
 extern s32 D_8011FEF4;
-
-
-
-
 s32 func_80444FA0_us_rev1(OptionEditState *arg0, OptionEditState *arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5, s32 arg6, f32 arg7) {
     s32 temp_a1_2;
     s32 temp_a1_3;
@@ -31,7 +25,6 @@ s32 func_80444FA0_us_rev1(OptionEditState *arg0, OptionEditState *arg1, s32 arg2
     OptionEditState *temp_v0;
     ResourceManagerState *temp_v0_2;
     char *var_a0;
-
     var_s1 = 0;
     if (func_8026435C_de(arg1->unk_20) != 0) {
         return func_80442384_de(arg0, arg1, arg2);
@@ -43,7 +36,7 @@ s32 func_80444FA0_us_rev1(OptionEditState *arg0, OptionEditState *arg1, s32 arg2
             temp_a1_2 = temp_a1->unk_58;
             if (temp_a1_2 != 0) {
                 temp_s0 = func_8028B2F8_de(&D_8011BDC8, temp_a1_2) + arg4;
-                switch (arg3) {                     /* irregular */
+                switch (arg3) { /* irregular */
                 case 0:
                     var_s1 = *temp_s0;
                     var_s1 = func_804423BC_de(arg1, var_s1, arg5, 0, arg6, 1);

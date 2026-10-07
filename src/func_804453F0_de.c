@@ -1,16 +1,12 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80444EC0.h"
 #include "types.h"
+#include "stddef.h"
 /* Cycles a menu selection from directional input while skipping reserved entries. */
-#define NULL ((void *)0)
-
-
-void func_8025E2D4_de(s32);                               /* extern */
+void func_8025E2D4_de(s32); /* extern */
 extern s32 D_800E209C;
-
 s32 func_804453F0_de(s32 arg0, struct Record_func_80409DCC_de *arg1) {
     s32 var_a0;
-
     var_a0 = D_800E209C;
     if (arg1->inner->unkB0 & 0x20202) {
         var_a0 -= 1;

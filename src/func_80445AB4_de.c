@@ -1,16 +1,13 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_804453C4.h"
 #include "types.h"
+#include "stddef.h"
 /* Append one selected character to an eight-character entry buffer. */
-#define NULL ((void *)0)
-
-
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
-extern struct LocalizedInputState D_80140F80;
-#else
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
 extern char D_80140F80;
+#elif defined(VERSION_EU) || defined(VERSION_EU_X)
+extern struct LocalizedInputState D_80140F80;
 #endif
-
 extern Entry_func_80445AB4_de D_800E20A0[];
 extern s32 func_8022A5A0_de(void *,s32);
 s32 func_80445AB4_de(Obj_func_8043CC10_de *arg0, MenuRules *arg1) {
@@ -19,10 +16,10 @@ s32 func_80445AB4_de(Obj_func_8043CC10_de *arg0, MenuRules *arg1) {
  if(D_800E20A0[index].count == 8) return 0;
  {
  D_800E20A0[index].text[D_800E20A0[index].value]=
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
-     *arg0->unk14[D_80140F80.language];
-#else
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
      **arg0->unk14;
+#elif defined(VERSION_EU) || defined(VERSION_EU_X)
+     *arg0->unk14[D_80140F80.language];
 #endif
  value=D_800E20A0[index].value+1;
  count=D_800E20A0[index].count+1;
