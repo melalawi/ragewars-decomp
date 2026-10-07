@@ -4,35 +4,21 @@
 /* Reports why a match ended: time running out on a timed match, the score limit (func_80228070_de),
    the rule set's own target (func_802282EC_de for rule set 0, the Frag Tag limit func_802281F0_de for
    rule set 1), or otherwise whether the last-player-standing check reached its end. */
-
-#define RULE_SET_POINT_TARGET 0
-#define RULE_SET_FRAG_TAG 1
-
 enum MatchEnd {
     MATCH_END_TIME_UP,
     MATCH_END_SCORE_LIMIT,
     MATCH_END_TAG_LIMIT,
     MATCH_END_POINT_TARGET
 };
-
 typedef struct World World;
-
-
-
-
-
-
-
 extern Game_func_8042D060_de D_8014155C;
 extern World D_80140F80;
 extern s32 D_8014DD98;
 extern s32 func_80228070_de(World *world);
 extern s32 func_802281F0_de(World *world);
 extern s32 func_802282EC_de(World *world);
-
 s32 func_8042D060_de(void) {
     Settings_func_8042D060_de *settings;
-
     settings = &D_8014155C.settings;
     if (settings->timeSetting > 0 && D_8014155C.rules.timeLeft == 0.0f) {
         return MATCH_END_TIME_UP;
@@ -41,12 +27,12 @@ s32 func_8042D060_de(void) {
         return MATCH_END_SCORE_LIMIT;
     }
     switch (D_8014DD98) {
-    case RULE_SET_POINT_TARGET:
+    case 0:
         if (func_802282EC_de(&D_80140F80) != 0) {
             return MATCH_END_POINT_TARGET;
         }
         break;
-    case RULE_SET_FRAG_TAG:
+    case 1:
         if (func_802281F0_de(&D_80140F80) != 0) {
             return MATCH_END_TAG_LIMIT;
         }

@@ -1,19 +1,12 @@
 #include "span_16E000/code_80434F4C.h"
 #include "types.h"
+#include "stddef.h"
 /* Checks that every active player on the selected team has the configured value. */
-#define NULL ((void *)0)
   extern State_func_8043590C_de *D_800E1454_de; extern s32 D_800FEB08[]; extern s8 D_800FEB0D[], D_800FEB0E[];
-
-
-
-
-
 s32 func_8043590C_de(s32 arg0) {
     s32 var_a1;
     s32 var_a2;
     s32 var_a3;
-
-
     var_a3 = 1;
     var_a2 = 0;
     var_a1 = 0;
