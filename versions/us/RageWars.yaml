@@ -5157,8 +5157,6 @@ segments:
       - [0x1A2318, c, "func_8043E28C_de"]
       - [0x1A2364, asm, "func_8043E2D8_de"]
       - [0x1A2458, c, "func_8043E3CC_de"]
-      - [0x1A24D0, c, "func_8043E444_de"]
-      - [0x1A24F4, c, "func_8043E468_de"]
       - [0x1A2520, c, "func_8043E494_de"]
       - [0x1A256C, c, "func_8043E4E0_de"]
       - [0x1A2590, c, "func_8043E504_de"]

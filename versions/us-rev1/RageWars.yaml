@@ -5375,8 +5375,6 @@ segments:
       - [0x1AC318, c, "func_8043E28C_de"]
       - [0x1AC364, asm, "func_8043E2D8_de"]
       - [0x1AC458, c, "func_8043E3CC_de"]
-      - [0x1AC4D0, c, "func_8043E444_de"]
-      - [0x1AC4F4, c, "func_8043E468_de"]
       - [0x1AC520, c, "func_8043E494_de"]
       - [0x1AC56C, c, "func_8043E4E0_de"]
       - [0x1AC590, c, "func_8043E504_de"]
