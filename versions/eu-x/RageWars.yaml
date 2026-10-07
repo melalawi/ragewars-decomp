@@ -525,7 +525,6 @@ segments:
       - [0x2C2B4, c, "func_8022B5C0_de"]
       - [0x2C300, asm, "func_8022B60C_de"]
       - [0x2C390, c, "func_8022B69C_de"]
-      - [0x2C424, c, "func_8022B730_de"]
       - [0x2C450, c, "func_8022B75C_de"]
       - [0x2C4EC, c, "func_8022B7F8_de"]
       - [0x2C604, c, "func_8022B8E0_de"]
