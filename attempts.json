@@ -2669,6 +2669,19 @@
       "exact": true,
       "minutes": 0.02
     },
+    "func_80264F60_de": {
+      "attempts": 2,
+      "best": {
+        "de": 49.324324,
+        "eu": 49.324324,
+        "eu-x": 49.324324,
+        "us": 49.324324,
+        "us-rev1": 49.324324
+      },
+      "bytes": 592,
+      "exact": false,
+      "minutes": 17.74
+    },
     "func_802651B0_de": {
       "attempts": 7,
       "best": {
@@ -2680,6 +2693,18 @@
       },
       "bytes": 400,
       "exact": false,
+      "fuzzy": {
+        "compiler": "gcc-2.8.1-sn64",
+        "score": 54.707438777777774,
+        "source_sha256": "c0eca394b6f8fd0dbd2566e6c0071c60d75f655f1ad1cf6bc3b730b62af18d42",
+        "versions": {
+          "de": 53.921569,
+          "eu": 54.901961,
+          "eu-x": 54.901961,
+          "us": 54.901961,
+          "us-rev1": 54.901961
+        }
+      },
       "minutes": 67.52
     },
     "func_8026593C_de": {
@@ -2846,17 +2871,17 @@
       "minutes": 0.03
     },
     "func_80271AA8_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
-        "de": 56.074766,
-        "eu": 56.074766,
-        "eu-x": 56.074766,
-        "us": 56.074766,
-        "us-rev1": 56.074766
+        "de": 56.589147,
+        "eu": 56.589147,
+        "eu-x": 56.589147,
+        "us": 56.589147,
+        "us-rev1": 56.589147
       },
       "bytes": 428,
       "exact": false,
-      "minutes": 5.38
+      "minutes": 60.37
     },
     "func_80272018_de": {
       "attempts": 2,
@@ -2955,6 +2980,19 @@
       "bytes": 152,
       "exact": true,
       "minutes": 0.02
+    },
+    "func_802765B0_de": {
+      "attempts": 2,
+      "best": {
+        "de": 36.97479,
+        "eu": 36.97479,
+        "eu-x": 36.97479,
+        "us": 36.97479,
+        "us-rev1": 36.97479
+      },
+      "bytes": 952,
+      "exact": false,
+      "minutes": 4.2
     },
     "func_80276968_de": {
       "attempts": 1,
@@ -3942,7 +3980,7 @@
       "minutes": 60.47
     },
     "func_8029C288_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 58.955224,
         "eu": 58.955224,
@@ -3952,7 +3990,20 @@
       },
       "bytes": 536,
       "exact": false,
-      "minutes": 0.11
+      "minutes": 58.61
+    },
+    "func_8029C6A8_de": {
+      "attempts": 3,
+      "best": {
+        "de": 71.584699,
+        "eu": 71.584699,
+        "eu-x": 71.584699,
+        "us": 71.584699,
+        "us-rev1": 71.584699
+      },
+      "bytes": 732,
+      "exact": false,
+      "minutes": 23.19
     },
     "func_8029C984_de": {
       "attempts": 1,
