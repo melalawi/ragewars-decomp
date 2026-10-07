@@ -131,5 +131,5 @@ extern s32 func_8043EDDC_de(void);
 /* unbake published declaration: published_f9752afaaea7942ced279af4 */
 extern s32 func_8043ED50_de(void);
 
-extern int func_8043E97C_de(void * arg0);
+extern void func_8043E97C_de(void *arg0);
 #endif

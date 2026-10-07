@@ -5292,7 +5292,7 @@ segments:
       - [0x12F774, asm, "func_8043E7AC_de"]
       - [0x12F80C, asm, "func_8043E830_de"]
       - [0x12F8F8, c, "func_8043E91C_de"]
-      - [0x12F958, asm, "func_8043E97C_de"]
+      - [0x12F958, c, "func_8043E97C_de"]
       - [0x12F984, c, "func_8043E9A8_de"]
       - [0x12F9DC, c, "func_8043EA00_de"]
       - [0x12FA28, c, "func_8043EA4C_de"]

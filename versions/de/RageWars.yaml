@@ -5312,7 +5312,7 @@ segments:
       - [0x1A47AC, asm, "func_8043E7AC_de"]
       - [0x1A4830, asm, "func_8043E830_de"]
       - [0x1A491C, c, "func_8043E91C_de"]
-      - [0x1A497C, asm, "func_8043E97C_de"]
+      - [0x1A497C, c, "func_8043E97C_de"]
       - [0x1A49A8, c, "func_8043E9A8_de"]
       - [0x1A4A00, c, "func_8043EA00_de"]
       - [0x1A4A4C, c, "func_8043EA4C_de"]

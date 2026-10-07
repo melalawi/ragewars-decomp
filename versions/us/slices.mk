@@ -3150,7 +3150,7 @@ us.U.func_8043F37C_eu := 0x8043E65C:0x1A265C:0xEC
 us.U.func_8043E5D0_de := 0x8043E748:0x1A2748:0x1DC
 us.S.001A2924 := 1714468 368
 us.U.func_8043E91C_de := 0x8043EA94:0x1A2A94:0x60
-us.S.001A2AF4 := 1714932 44
+us.U.func_8043E97C_de := 0x8043EAF4:0x1A2AF4:0x2C
 us.U.func_8043E9A8_de := 0x8043EB20:0x1A2B20:0x58
 us.U.func_8043EA00_de := 0x8043EB78:0x1A2B78:0x4C
 us.U.func_8043EA4C_de := 0x8043EBC4:0x1A2BC4:0x4C
@@ -6448,7 +6448,7 @@ us.PIECES := \
   build/us/units/func_8043E5D0_de.bin \
   build/us/slices/001A2924.bin \
   build/us/units/func_8043E91C_de.bin \
-  build/us/slices/001A2AF4.bin \
+  build/us/units/func_8043E97C_de.bin \
   build/us/units/func_8043E9A8_de.bin \
   build/us/units/func_8043EA00_de.bin \
   build/us/units/func_8043EA4C_de.bin \
