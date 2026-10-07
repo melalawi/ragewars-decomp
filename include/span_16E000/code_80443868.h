@@ -181,4 +181,10 @@ struct Sync;
 /* unbake published declaration: published_f968998661ee29752546c953 */
 typedef struct Sync Sync;
 
+struct Item_func_80441FE8_de;
+struct MenuRules;
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
+s32 func_80443998_de(struct Item_func_80441FE8_de *field, struct MenuRules *holder);
+#endif
+
 #endif
