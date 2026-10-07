@@ -50,4 +50,10 @@ typedef struct OptionEditState OptionEditState;
 extern s32 func_80444E7C_de(void);
 
 extern int func_80444E30_de(void);
+
+struct Item_func_80441FE8_de;
+#if defined(VERSION_DE) || defined(VERSION_US_REV1)
+s32 func_804451D0_de(struct Item_func_80441FE8_de *field);
+#endif
+
 #endif

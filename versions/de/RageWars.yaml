@@ -5415,7 +5415,7 @@ segments:
       - [0x1AAF98, c, "func_80444F98_de"]
       - [0x1AB080, asm, "func_80445080_de"]
       - [0x1AB160, c, "func_80445160_de"]
-      - [0x1AB1D0, asm, "func_804451D0_de"]
+      - [0x1AB1D0, c, "func_804451D0_de"]
       - [0x1AB2B0, c, "func_804452B0_de"]
       - [0x1AB310, asm, "func_80445310_de"]
       - [0x1AB3F0, c, "func_804453F0_de"]
