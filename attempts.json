@@ -3528,19 +3528,6 @@
       "exact": false,
       "minutes": 1.51
     },
-    "func_80294614_de": {
-      "attempts": 1,
-      "best": {
-        "de": 100.0,
-        "eu": 100.0,
-        "eu-x": 100.0,
-        "us": 100.0,
-        "us-rev1": 100.0
-      },
-      "bytes": 144,
-      "exact": true,
-      "minutes": 0.12
-    },
     "func_80294938_de": {
       "attempts": 1,
       "best": {
