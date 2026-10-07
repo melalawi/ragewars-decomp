@@ -660,7 +660,7 @@ segments:
       - [0x319A4, c, "func_80230DA4_de"]
       - [0x31BDC, c, "func_80230FDC_de"]
       - [0x31EC8, c, "func_802312C8_de"]
-      - [0x32074, asm, "func_80231474_de"]
+      - [0x32074, c, "func_80231474_de"]
       - [0x32264, c, "func_80231664_de"]
       - [0x3256C, c, "func_8023196C_de"]
       - [0x327B0, asm, "func_80231BB0_de"]
