@@ -4843,7 +4843,7 @@ segments:
       - [0x18C4E0, c, "func_80428300_de"]
       - [0x18C5EC, c, "func_8042840C_de"]
       - [0x18C6A0, c, "func_804284C0_de"]
-      - [0x18C72C, asm, "func_8042854C_de"]
+      - [0x18C72C, c, "func_8042854C_de"]
       - [0x18C81C, c, "func_8042863C_de"]
       - [0x18C8E0, c, "func_80428700_de"]
       - [0x18C998, c, "func_804287B8_de"]

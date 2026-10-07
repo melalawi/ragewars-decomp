@@ -5071,7 +5071,7 @@ segments:
       - [0x1964E0, c, "func_80428300_de"]
       - [0x1965EC, c, "func_8042840C_de"]
       - [0x1966A0, c, "func_804284C0_de"]
-      - [0x19672C, asm, "func_8042854C_de"]
+      - [0x19672C, c, "func_8042854C_de"]
       - [0x19681C, c, "func_8042863C_de"]
       - [0x1968E0, c, "func_80428700_de"]
       - [0x196998, c, "func_804287B8_de"]
