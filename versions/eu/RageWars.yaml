@@ -4753,7 +4753,7 @@ segments:
       - [0x197D1C, c, "func_804217D4_de"]
       - [0x197D9C, c, "func_80421854_de"]
       - [0x197DCC, c, "func_80421884_de"]
-      - [0x197E70, asm, "func_80421E70_eu"]
+      - [0x197E70, c, "func_80421E70_eu"]
       - [0x197F08, c, "func_80421F08_eu"]
       - [0x197F60, c, "func_80421A58_de"]
       - [0x197FF0, asm, "func_80421AE8_de"]
