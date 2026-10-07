@@ -5,7 +5,7 @@ de.MAP := 0x0:0x0:0x1000 0x80200400:0x1000:0xC15C0 0x800C19C0:0xC25C0:0x3EA40 0x
 de.S.00000000 := 0 4096
 de.U.func_80200400_de := 0x80200400:0x1000:0x100
 de.U.func_80200500_de := 0x80200500:0x1100:0x68
-de.S.00001168 := 4456 56
+de.U.func_80200568_de := 0x80200568:0x1168:0x38
 de.U.func_802005A0_de := 0x802005A0:0x11A0:0x3C
 de.S.000011DC := 4572 548
 de.U.func_80200800_de := 0x80200800:0x1400:0x15C
@@ -3352,7 +3352,7 @@ de.PIECES := \
   build/de/slices/00000000.bin \
   build/de/hasm/func_80200400_de.bin \
   build/de/units/func_80200500_de.bin \
-  build/de/slices/00001168.bin \
+  build/de/units/func_80200568_de.bin \
   build/de/units/func_802005A0_de.bin \
   build/de/slices/000011DC.bin \
   build/de/units/func_80200800_de.bin \
