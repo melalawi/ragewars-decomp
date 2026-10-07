@@ -127,7 +127,7 @@ segments:
       - [0x53B0, c, "func_8020478C_de"]
       - [0x53E0, c, "func_802047BC_de"]
       - [0x53FC, c, "func_802047D8_de"]
-      - [0x542C, asm, "func_80204808_de"]
+      - [0x542C, c, "func_80204808_de"]
       - [0x548C, asm, "func_80204868_de"]
       - [0x5688, c, "func_80204A68_de"]
       - [0x5854, c, "func_80204C34_de"]

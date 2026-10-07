@@ -188,4 +188,10 @@ struct func_80204C68_S1;
 /* unbake published declaration: published_f8aee43e8704bde74a9ecf40 */
 typedef struct func_80204C68_S1 func_80204C68_S1;
 
+
+struct Actor_func_8024A1D0_de;
+struct Input_func_80204808_de;
+struct Lookup;
+void func_80204808_de(struct Actor_func_8024A1D0_de *actor, struct Input_func_80204808_de *input, struct Lookup *lookup);
+
 #endif
