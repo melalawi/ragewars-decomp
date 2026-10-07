@@ -720,7 +720,7 @@ segments:
       - [0x36EC8, c, "func_802362E8_de"]
       - [0x37454, asm, "func_80236874_de"]
       - [0x37AFC, c, "func_80236F1C_de"]
-      - [0x37EB4, asm, "func_802372D4_de"]
+      - [0x37EB4, c, "func_802372D4_de"]
       - [0x38A60, c, "func_80237E80_de"]
       - [0x38C30, asm, "func_80238050_de"]
       - [0x38EF4, asm, "func_80238314_de"]
