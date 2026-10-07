@@ -2,8 +2,8 @@
 #define UNBAKE_SPAN_1000_CODE_802BD1A8_H
 #include "acmd.h"
 #include "../types.h"
-/* unbake published declaration: published_9a7290e2222f416be16cf4db */
-extern void func_802BE0C0_de(void);
+/* unbake published declaration: published_b9b7a342292c873f5f39181e */
+void func_802BE0C0_de(void *unused_state, unsigned char unused_code);
 
 struct LldivResult;
 /* unbake published declaration: published_9fc730cc2c3765a7003fd4c5 */
