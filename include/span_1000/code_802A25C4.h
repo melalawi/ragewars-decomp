@@ -7,6 +7,7 @@
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "gfx.h"
+#include "types.h"
 struct func_802A6A44_S1;
 /* unbake published declaration: published_000d7f870822fee42834fbed */
 typedef struct func_802A6A44_S1 func_802A6A44_S1;
@@ -21,6 +22,23 @@ typedef struct Node438C Node438C;
 
 struct Node438C;
 /* unbake published declaration: published_5ba614c53ea2c4f45442887e */
+struct AnimationFrameDefinition;
+typedef struct AnimationFrameDefinition AnimationFrameDefinition;
+typedef struct AnimationFrameState AnimationFrameState;
+
+struct AnimationFrameState;
+
+struct AnimationFrameDefinition {
+    u8 definition_prefix[0x1E];
+    u8 mode;
+};
+struct AnimationFrameState {
+    u8 node_prefix[0x2C];
+    f32 endpoint;
+    f32 frame;
+    u8 state_between_frame_and_cache[4];
+    s32 cached_frame;
+};
 struct Node438C {
     u8 pad0[4];
     struct Node438C *next;
@@ -699,5 +717,9 @@ extern Vector4f *func_802A5020_de(Vector4f *out, u32 bx, u32 by, u32 bz);
 struct func_802A697C_S1;
 /* unbake published declaration: published_fdcb18c30efd3c4dc3a3d6bf */
 typedef struct func_802A697C_S1 func_802A697C_S1;
+
+
+
+
 
 #endif
