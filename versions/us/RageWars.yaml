@@ -130,7 +130,7 @@ segments:
       - [0x5408, asm, "func_80204808_de"]
       - [0x5468, data, "rodata/unresolved/80204868"]
       - [0x5668, c, "func_80204A68_de"]
-      - [0x5834, asm, "func_80204C34_de"]
+      - [0x5834, c, "func_80204C34_de"]
       - [0x5868, c, "func_80204C68_de"]
       - [0x592C, c, "func_80204D2C_de"]
       - [0x59E0, c, "func_80204DE0_de"]
