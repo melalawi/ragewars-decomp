@@ -4934,7 +4934,7 @@ segments:
       - [0x18D1FC, c, "func_8041F18C_de"]
       - [0x18D248, c, "func_8041F1D8_de"]
       - [0x18D298, data, "func_8041F298_us_rev1_padding_18D298"]
-      - [0x18D2A0, asm, "func_8041F2A0_us_rev1"]
+      - [0x18D2A0, c, "func_8041F2A0_us_rev1"]
       - [0x18D738, asm, "func_8041F6C8_de"]
       - [0x18DCC0, c, "func_8041FC50_de"]
       - [0x18DF9C, c, "func_8041FF2C_de"]
