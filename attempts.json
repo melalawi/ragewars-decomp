@@ -143,7 +143,7 @@
       "minutes": 0.02
     },
     "func_80204C34_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -156,7 +156,7 @@
       "minutes": 0.02
     },
     "func_802052C4_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -182,7 +182,7 @@
       "minutes": 0.07
     },
     "func_80206724_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -324,7 +324,7 @@
       "minutes": 0.02
     },
     "func_8020EF80_eu_x": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "eu-x": 100.0,
         "us-rev1": 100.0
@@ -415,7 +415,7 @@
       "minutes": 1.68
     },
     "func_80212D80_eu_x": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "eu-x": 100.0,
         "us-rev1": 100.0
@@ -425,7 +425,7 @@
       "minutes": 0.02
     },
     "func_80212FDC_eu": {
-      "attempts": 3,
+      "attempts": 4,
       "best": {
         "eu": 100.0,
         "eu-x": 100.0,
@@ -436,7 +436,7 @@
       "minutes": 0.06
     },
     "func_802131E0_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -461,7 +461,7 @@
       "minutes": 257.26
     },
     "func_80214624_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -526,7 +526,7 @@
       "minutes": 0.02
     },
     "func_802171FC_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -604,7 +604,7 @@
       "minutes": 40.59
     },
     "func_80219124_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -916,7 +916,7 @@
       "minutes": 10.65
     },
     "func_8022B69C_de": {
-      "attempts": 3,
+      "attempts": 4,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -1524,7 +1524,7 @@
       "minutes": 0.02
     },
     "func_80245B74_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -1537,7 +1537,7 @@
       "minutes": 0.05
     },
     "func_80245BC0_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -2156,7 +2156,7 @@
       "minutes": 10.85
     },
     "func_8025B920_de": {
-      "attempts": 3,
+      "attempts": 4,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -2924,7 +2924,7 @@
       "minutes": 242.4
     },
     "func_8027AD4C_de": {
-      "attempts": 4,
+      "attempts": 5,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -3183,7 +3183,7 @@
       "minutes": 269.37
     },
     "func_8028C568_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -3716,7 +3716,7 @@
       "minutes": 0.02
     },
     "func_80299A80_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -5029,7 +5029,7 @@
       "minutes": 0.02
     },
     "func_802BB8B0_de": {
-      "attempts": 3,
+      "attempts": 4,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -5322,7 +5322,7 @@
       "minutes": 5.24
     },
     "func_80404D84_de": {
-      "attempts": 5,
+      "attempts": 6,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -6014,7 +6014,7 @@
       "minutes": 0.03
     },
     "func_8041F2A0_us_rev1": {
-      "attempts": 4,
+      "attempts": 5,
       "best": {
         "us-rev1": 100.0
       },
@@ -6167,7 +6167,7 @@
       "minutes": 0.02
     },
     "func_804220A8_de": {
-      "attempts": 3,
+      "attempts": 4,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -6513,7 +6513,7 @@
       "minutes": 0.04
     },
     "func_8042AE60_eu": {
-      "attempts": 6,
+      "attempts": 7,
       "best": {
         "eu": 100.0,
         "us": 100.0,
@@ -6968,7 +6968,7 @@
       "minutes": 0.02
     },
     "func_80438614_de": {
-      "attempts": 5,
+      "attempts": 6,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -7248,7 +7248,7 @@
       "minutes": 0.02
     },
     "func_8043E444_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -7457,7 +7457,7 @@
       "minutes": 209.53
     },
     "func_80443B3C_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -7792,7 +7792,7 @@
       "minutes": 0.06
     },
     "func_8044D794_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -7818,7 +7818,7 @@
       "minutes": 3.8
     },
     "func_8044DA54_de": {
-      "attempts": 3,
+      "attempts": 4,
       "best": {
         "de": 100.0,
         "eu": 100.0,
