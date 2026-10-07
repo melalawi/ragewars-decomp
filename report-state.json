@@ -2176,6 +2176,7 @@
     "src/func_802B6560_de.c": "396f492d84241065525a50929138fe4e11ff89f4f7ad8b8cb3a1294bc460ff40",
     "src/func_802B6B80_de.c": "876982f840d101e17f473f5b7347d654b5b885e3dca562a87f758219857b2bdb",
     "src/func_802B6D54_de.c": "66bcaca06899c74485ef24a58121c2c2c143822a5bd7495e8093c103df778b45",
+    "src/func_802B6DF0_de.c": "761348e15107ec5225280abb348fe4d8eed779880588758e25ca272c3a856beb",
     "src/func_802B6F9C_de.c": "a29364dc999c32ad80efb239108667727e340baf8cf4974c8c06eaf9cb4c60fb",
     "src/func_802B7130_de.c": "beb514386f4c0565eb106e07beec799d6dba2a5b768ad122768d997cde55c706",
     "src/func_802B72C0_de.c": "e52cfbce277c9a9709b1d9bf42a080083bad2f70218385d2dfa18df6edc328b1",
@@ -3267,17 +3268,17 @@
     "tools/n64link.version": "503b6a8de93b9c1deeb0b063f2780a2f8e83c0320d1f0fd8daa5685e2f1ab645",
     "tools/report-verifier.zip": "87554f0ca825d93ff0460025e99e960502dba58f6fce299cb842a366bb743fae",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "units.mk": "59611168674d83f55e1d6059651e06aaea7238cd73783707ec0e8a9a596a6e2d",
+    "units.mk": "a8ef642ff40741110dd4c6e3e00a01c0e68d8b84681d6be5c4ec781a1b0f13a6",
     "versions/de/RageWars.ld": "4539793d364805b1a8b6c9e41f571e34f49221b4c0e6d266cb2c1c97247bcefa",
-    "versions/de/RageWars.yaml": "6d328c44ae494cce8c9f1c568361bedd280ba088d1174deff92e3b2c18ada1d5",
+    "versions/de/RageWars.yaml": "5ad5fdedf8244fcd444818f5095ad179b081f59ebf84792319129f36610bd8d0",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
     "versions/de/symbols.ld": "6f58abc0651022371429351e4a4398067da40d6e612034ed00433ba9d326b292",
     "versions/eu/RageWars.ld": "3e5e06b72cd4e448c0f0016f8dced42ab4d9a2d61ce6b8fa869084eaf6ff31e3",
-    "versions/eu/RageWars.yaml": "3fd99f2e39e881221263216bccb22267d285965b622783e2c2dcfe23cbe4acf1",
+    "versions/eu/RageWars.yaml": "cfb0ea9303bb010264e215028281e93b5a9f96127402d3afd5333cb107112e0d",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
     "versions/eu/symbols.ld": "17c8ff962ca05b2e04e4c463220a61d292f3730f9fa2fe51223b2d2551666b11",
     "versions/eu-x/RageWars.ld": "d49c7db54e2082d1513ac260a118aa2aa50f88d6fc567de87934ab2ff929881f",
-    "versions/eu-x/RageWars.yaml": "b4a718c738529a408163592f3d39019b364c29662b0cb981579720b659772531",
+    "versions/eu-x/RageWars.yaml": "205de9cea19a57349665fc4d10967590451af2deb78a9049ef9cead7d42a5d91",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
     "versions/eu-x/symbols.ld": "6b1dc12a0bab625a6526521bfe9b32c5dab7dfed98f9f52924ecc545945fbe89",
     "versions/us/RageWars.ld": "ffb823c7e2b0bb59f940481a10decb3546c291735d9956dabf1fef7d7ed17027",
@@ -3285,7 +3286,7 @@
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
     "versions/us/symbols.ld": "3d5462ac0a4dbb43c65032454e0b2f5ca54f62c52345642dc371eb004cffb78f",
     "versions/us-rev1/RageWars.ld": "e85b05dd473505a7212c6191e955f3f995591b2a528fc2a62866434eac9cac34",
-    "versions/us-rev1/RageWars.yaml": "4106f325dc8c36d8b7aa0f0f9e0440c1acce602cdb8db17a5c4f334116108929",
+    "versions/us-rev1/RageWars.yaml": "6573432fd86134c11867e8004b48012a9d1e9cbef32a5b05c5097f474249de43",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5",
     "versions/us-rev1/symbols.ld": "8837a8444e820c1f871a06a0fbceb3af5bcf2ec314b9c83d565bf85d3502d4a2",
     "native-data-proofs": "68a5ac454b7c243e823ea2f17d35522eeced10ee8c638a3d4b828392baf1e146",
@@ -3524,7 +3525,7 @@
       "opaque_rom_bytes": 7005616
     },
     "us-rev1": {
-      "report_sha256": "71517c1642d852cd7bc63d571fa198495861a2296ec3537a096ff2b75cb98fde",
+      "report_sha256": "204724e86b3534695cb0bbc838b61943b08fb5ddb485255905a1598dab477188",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6896,
@@ -3741,7 +3742,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.748603509862875,
+      "exact_plus_draft_percent": 62.78640855595324,
       "data_match_state": "unmeasured",
       "data_coverage": {
         "state": "unmeasured",
@@ -3763,7 +3764,7 @@
       "opaque_rom_bytes": 7002016
     },
     "eu": {
-      "report_sha256": "3040d8e8801007c54634800c9dfe68d4b2f26ab560aa1caad6702a018e422207",
+      "report_sha256": "19bb41af4459e913840d5da3703d8a38f4589e5382dc7f99992920a8916807df",
       "artifact": "eu_report",
       "report_file": "eu_report.json",
       "draft_bytes": 6816,
@@ -3972,7 +3973,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.23511235651927,
+      "exact_plus_draft_percent": 61.27360170360325,
       "data_match_state": "unmeasured",
       "data_coverage": {
         "state": "unmeasured",
@@ -3994,7 +3995,7 @@
       "opaque_rom_bytes": 7001104
     },
     "eu-x": {
-      "report_sha256": "1ee72b9aaf4a4e5846db3d707165087e958097b7d5e41cf6d1bd545ee4ae013f",
+      "report_sha256": "4dd70acac392432314614c16a4054ab96ba034c0958b2c11f637e5bc2769a91d",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
       "draft_bytes": 6896,
@@ -4211,7 +4212,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.233956235302564,
+      "exact_plus_draft_percent": 61.27237151524943,
       "data_match_state": "unmeasured",
       "data_coverage": {
         "state": "unmeasured",
@@ -4233,7 +4234,7 @@
       "opaque_rom_bytes": 7070432
     },
     "de": {
-      "report_sha256": "3349191823ab33f9b015f2f0a73ac8b6efe49a535b8ac9932805bcbb0282707e",
+      "report_sha256": "e65a011469aad15cc0108a316ae7091b53d5d5f3ef5f13df05da426934ea34d4",
       "artifact": "de_report",
       "report_file": "de_report.json",
       "draft_bytes": 6812,
@@ -4442,7 +4443,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.27005042698224,
+      "exact_plus_draft_percent": 61.30878472058818,
       "data_match_state": "unmeasured",
       "data_coverage": {
         "state": "unmeasured",

@@ -2402,7 +2402,7 @@ segments:
       - [0xBC850, c, "func_802B6B80_de"]
       - [0xBCA24, c, "func_802B6D54_de"]
       - [0xBCABC, data, "func_802B6DEC_de_padding_BCABC"]
-      - [0x0BCAC0, asm, "func_802B6DF0_de"]
+      - [0x0BCAC0, c, "func_802B6DF0_de"]
       - [0xBCC6C, c, "func_802B6F9C_de"]
       - [0xBCDF8, asm, "func_802B7408_eu_x"]
       - [0xBCE00, c, "func_802B7130_de"]
