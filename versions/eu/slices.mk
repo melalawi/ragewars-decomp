@@ -7,8 +7,7 @@ eu.U.func_80200500_de := 0x80200500:0x1100:0x68
 eu.S.00001168 := 4456 56
 eu.U.func_802005A0_de := 0x802005A0:0x11A0:0x3C
 eu.S.000011DC := 4572 548
-eu.U.func_80200800_de := 0x80200800:0x1400:0x40
-eu.U.func_80200840_de := 0x80200840:0x1440:0x40
+eu.U.func_80200800_de := 0x80200800:0x1400:0x80
 eu.S.00001480 := 5248 600
 eu.U.func_80200AD8_de := 0x80200AD8:0x16D8:0x3C
 eu.S.00001714 := 5908 3016
@@ -3351,7 +3350,6 @@ eu.PIECES := \
   build/eu/units/func_802005A0_de.bin \
   build/eu/slices/000011DC.bin \
   build/eu/units/func_80200800_de.bin \
-  build/eu/units/func_80200840_de.bin \
   build/eu/slices/00001480.bin \
   build/eu/units/func_80200AD8_de.bin \
   build/eu/slices/00001714.bin \
