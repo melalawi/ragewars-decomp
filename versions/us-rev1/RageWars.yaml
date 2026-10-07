@@ -897,7 +897,7 @@ segments:
       - [0x43FCC, asm, "func_802433DC_de"]
       - [0x44404, c, "func_80243814_de"]
       - [0x44678, asm, "func_80243AC8_eu_x"]
-      - [0x44680, asm, "func_80243A90_de"]
+      - [0x44680, c, "func_80243A90_de"]
       - [0x45094, c, "func_802444A4_de"]
       - [0x45954, asm, "func_80244DA4_eu_x"]
       - [0x45960, c, "func_80244D70_de"]

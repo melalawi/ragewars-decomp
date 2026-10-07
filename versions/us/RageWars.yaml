@@ -880,7 +880,7 @@ segments:
       - [0x43FBC, asm, "func_802433DC_de"]
       - [0x443F4, c, "func_80243814_de"]
       - [0x44668, asm, "func_80243A68_us"]
-      - [0x44670, asm, "func_80243A90_de"]
+      - [0x44670, c, "func_80243A90_de"]
       - [0x45084, c, "func_802444A4_de"]
       - [0x45944, data, "rodata/unresolved/80244D44"]
       - [0x45950, c, "func_80244D70_de"]
