@@ -39,6 +39,19 @@
       "exact": false,
       "minutes": 0.02
     },
+    "func_802005A0_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 60,
+      "exact": true,
+      "minutes": 0.02
+    },
     "func_802005DC_de": {
       "attempts": 6,
       "best": {

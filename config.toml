@@ -1374,6 +1374,9 @@ compiler = "gcc-2.7.2-kmc"
 [units.func_80200538_de]
 compiler = "gcc-2.7.2-kmc"
 
+[units.func_802005A0_de]
+compiler = "gcc-2.7.2-kmc"
+
 [units.func_802005DC_de]
 compiler = "gcc-2.7.2-kmc"
 
