@@ -78,4 +78,10 @@ struct State_func_804366B8_de {
     void *e;
 };
 
+
+/* Exact localized menu callbacks, bound to current native/consumer receipts. */
+extern s32 func_80437114_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);
+extern s32 func_80436C94_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);
+extern s32 func_80436D4C_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);
+extern s32 func_804371C4_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);
 #endif
