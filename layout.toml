@@ -752,7 +752,7 @@ segment = "span_1000"
 evidence = "proven"
 members = ["func_80299DB4_us", "func_80299E74_de", "func_80299F94_eu", "func_80299FC4_eu_x", "func_80299A48_de", "func_80299A5C_de", "func_80299A80_de", "func_8029AADC_us", "func_80299B3C_de", "func_80299B4C_de", "func_80299B60_de", "func_80299B74_de", "func_8029AB98_de", "func_80299BEC_de", "func_8029ACB8_eu", "func_80299CC4_de", "func_80299CF0_de", "func_80299E64_de", "func_8029AE74_us_rev1", "func_80299E80_de", "func_8029A324_de", "func_8029A558_de", "func_8029A650_de", "func_8029AA24_de", "func_8029AA34_de", "func_8029AA78_de", "func_8029AAAC_de", "func_8029AAD8_de", "func_8029AB24_de", "func_8029ACE8_eu_x"]
 only = { "func_80299DB4_us" = ["us"], "func_80299E74_de" = ["de"], "func_80299F94_eu" = ["eu"], "func_80299FC4_eu_x" = ["eu-x"], "func_8029AADC_us" = ["us"], "func_8029AB98_de" = ["de"], "func_8029ACB8_eu" = ["eu"], "func_8029AE74_us_rev1" = ["us-rev1"], "func_8029ACE8_eu_x" = ["us-rev1", "eu-x"] }
-split = ["func_80299A5C_de", "func_80299B4C_de", "func_80299B60_de", "func_80299B74_de", "func_80299CF0_de", "func_80299E64_de", "func_8029A650_de", "func_8029AA24_de", "func_8029AA34_de", "func_8029AA78_de", "func_8029AAAC_de", "func_8029AAD8_de", "func_8029AB24_de"]
+split = ["func_80299A5C_de", "func_80299B4C_de", "func_80299B60_de", "func_80299B74_de", "func_80299CF0_de", "func_80299E64_de", "func_8029A650_de", "func_8029AA24_de", "func_8029AA34_de", "func_8029AA78_de", "func_8029AAAC_de", "func_8029AAD8_de", "func_8029AB24_de", "func_80299A80_de"]
 signals = ["callee", "cap", "version"]
 
 [[group]]
