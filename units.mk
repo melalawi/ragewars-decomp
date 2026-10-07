@@ -1203,6 +1203,7 @@ build/%/src/func_802744B4_de.i build/%/src/func_802744B4_de.key build/%/units/fu
 build/%/src/func_802744D4_de.i build/%/src/func_802744D4_de.key build/%/units/func_802744D4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_8027451C_de.i build/%/src/func_8027451C_de.key build/%/units/func_8027451C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80274564_de.i build/%/src/func_80274564_de.key build/%/units/func_80274564_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
+build/%/src/func_802745D0_de.i build/%/src/func_802745D0_de.key build/%/units/func_802745D0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_802746A0_de.i build/%/src/func_802746A0_de.key build/%/units/func_802746A0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_802747A0_de.i build/%/src/func_802747A0_de.key build/%/units/func_802747A0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80274808_de.i build/%/src/func_80274808_de.key build/%/units/func_80274808_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
