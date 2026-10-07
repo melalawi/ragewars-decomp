@@ -1,4 +1,5 @@
 #ifdef NON_MATCHING
+#ifdef NON_MATCHING
 #include "span_1000/code_80200610.h"
 #include "types.h"
 
@@ -29,4 +30,5 @@ void func_80200F98_de(s32 address, s32 value, u32 count) {
         count--;
     }
 }
+#endif /* NON_MATCHING */
 #endif /* NON_MATCHING */
