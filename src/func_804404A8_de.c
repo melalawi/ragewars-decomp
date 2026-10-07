@@ -2,31 +2,17 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8043F69C.h"
 #include "types.h"
-
-
-
-
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
-#if defined(VERSION_EU_X)
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) ((eu_x_table)[language])
-#else
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) ((eu_table)[language])
-#endif
-#else
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) (fixed)
-#endif
-#define RW_MENU_TEXT(fixed, eu_table, eu_x_table, settings) RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, (settings)[0x581])
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
+#include "menu_text.h"
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
+#elif defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
 /* Measures three text layers, positions their labels, and renders the composite text. */
-
-
-
 extern void func_8043F52C_de(LayeredText *, TextLayerMetrics *);
 extern void func_804402DC_de(LayeredText *, TextLayerRect *, TextLayerRect *, int);
 extern void func_8043FE3C_de(LayeredText *, TextLayerRect *, TextLayerRect *, int, int, int);
-#if defined(VERSION_EU_X)
+#if defined(VERSION_DE) || defined(VERSION_EU) || defined(VERSION_US) || defined(VERSION_US_REV1)
+#elif defined(VERSION_EU_X)
 extern void func_8043F52C_de(LayeredText *, TextLayerMetrics *);
 #endif
 void func_804404A8_de(LayeredText *source, TextLayerRect *position, TextLayerRect *bounds, int flags) {
@@ -37,27 +23,15 @@ void func_804404A8_de(LayeredText *source, TextLayerRect *position, TextLayerRec
     center = (bounds->x + bounds->right) / 2;
     current = *source;
     current.mode = 0;
-#if defined(VERSION_EU_X)
     func_8043F52C_de(&current, &first);
-#else
-    func_8043F52C_de(&current, &first);
-#endif
     current = *source;
     current.mode = 1;
     current.text = 0;
-#if defined(VERSION_EU_X)
     func_8043F52C_de(&current, &second);
-#else
-    func_8043F52C_de(&current, &second);
-#endif
     current = *source;
     current.mode = 1;
     current.text = 0;
-#if defined(VERSION_EU_X)
     func_8043F52C_de(&current, &third);
-#else
-    func_8043F52C_de(&current, &third);
-#endif
     current = *source;
     current.text = 0;
     position->y += first.height;

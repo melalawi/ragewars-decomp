@@ -1,26 +1,21 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_804379C8.h"
 #include "types.h"
+#include "stddef.h"
 /* Advances a menu selection on its countdown and dispatches the exit action. */
-#define NULL ((void *)0)
-
-
-
-void func_80298368_de(s32);                               /* extern */
-void func_8029973C_de();                                  /* extern */
-void func_802998A8_de(void);                               /* extern */
-s32 func_8041A470_de(void *);                          /* extern */
-extern State_func_80421BEC_de *D_800E1734_de;                     /* const */
-
+void func_80298368_de(s32); /* extern */
+void func_8029973C_de(); /* extern */
+void func_802998A8_de(void); /* extern */
+s32 func_8041A470_de(void *); /* extern */
+extern State_func_80421BEC_de *D_800E1734_de; /* const */
 s32 func_80437810_de(void) {
     s32 temp_a0_2;
     s32 temp_v0;
     s32 temp_v0_2;
     Cell_func_80421BEC_de *temp_a0;
     Cell_func_80421BEC_de *temp_v1;
-
     temp_v0 = func_8041A470_de(D_800E1734_de->unk0);
-    switch (temp_v0) {                              /* irregular */
+    switch (temp_v0) { /* irregular */
     case 3:
         temp_v0_2 = D_800E1734_de->unkC - 1;
         D_800E1734_de->unkC = temp_v0_2;

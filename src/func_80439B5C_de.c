@@ -1,13 +1,10 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_8043962C.h"
 #include "types.h"
+#include "stddef.h"
 /* Initializes the six object parameters and clears its transient state. */
-#define NULL ((void *)0)
-
-
-void func_80439C80_de();                                  /* extern */
-void func_80439CD4_de(void *, s32);                         /* extern */
-
+void func_80439C80_de(); /* extern */
+void func_80439CD4_de(void *, s32); /* extern */
 s32 func_80439B5C_de(State_func_80439B5C_de *arg0, s32 arg1, Triple first, Triple second) {
     arg0->second = second;
     arg0->first = first;

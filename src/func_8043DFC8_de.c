@@ -1,41 +1,18 @@
+#include "types.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8043DF84.h"
 /* Clears eight player active flags, then marks the first settings slot whose controller profile is active. */
-
-
-
-
-
-
-
-#if defined(VERSION_US_REV1)
 extern StatusStep D_80142622[];
-#define PLAYER_STATUS D_80142622
-#elif defined(VERSION_US)
-extern StatusStep D_80142622[];
-#define PLAYER_STATUS D_80142622
-#elif defined(VERSION_EU)
-extern StatusStep D_80142622[];
-#define PLAYER_STATUS D_80142622
-#elif defined(VERSION_EU_X)
-extern StatusStep D_80142622[];
-#define PLAYER_STATUS D_80142622
-#elif defined(VERSION_DE)
-extern StatusStep D_80142622[];
-#define PLAYER_STATUS D_80142622
-#endif
 extern PlayerSettings D_801422D8[];
 extern ControllerProfile D_8010B328[];
 extern s32 func_8026437C_de(ControllerProfile *);
-
 void func_8043DFC8_de(void) {
     StatusStep *status;
     PlayerSettings *settings;
     s32 i;
     s32 active;
-
     i = 7;
-    status = PLAYER_STATUS;
+    status = D_80142622;
     for (; i >= 0; i--) {
         ((StatusView *)status)->active = 0;
         status--;
