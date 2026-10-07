@@ -89,4 +89,10 @@ struct Record_func_80409BDC_de;
 /* unbake published declaration: published_ffd2293097a24092b681d7a4 */
 extern char *func_8040A09C_de(struct Record_func_80409BDC_de *menu);
 
+
+struct Item_func_80441FE8_de;
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
+s32 func_8040A300_de(struct Item_func_80441FE8_de *field, struct Record_func_80409BDC_de *holder);
+#endif
+
 #endif

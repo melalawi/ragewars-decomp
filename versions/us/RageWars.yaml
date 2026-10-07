@@ -4291,7 +4291,7 @@ segments:
       - [0x16E0C8, c, "func_8040A09C_de"]
       - [0x16E1DC, c, "func_8040A1B0_de"]
       - [0x16E270, c, "func_8040A244_de"]
-      - [0x16E32C, asm, "func_8040A300_de"]
+      - [0x16E32C, c, "func_8040A300_de"]
       - [0x16E3A8, c, "func_8040A37C_de"]
       - [0x16E484, c, "func_8040A458_de"]
       - [0x16E4A8, c, "func_8040A47C_de"]

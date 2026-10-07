@@ -4509,7 +4509,7 @@ segments:
       - [0x1780C8, c, "func_8040A09C_de"]
       - [0x1781DC, c, "func_8040A1B0_de"]
       - [0x178270, c, "func_8040A244_de"]
-      - [0x17832C, asm, "func_8040A300_de"]
+      - [0x17832C, c, "func_8040A300_de"]
       - [0x1783A8, c, "func_8040A37C_de"]
       - [0x178484, c, "func_8040A458_de"]
       - [0x1784A8, c, "func_8040A47C_de"]
