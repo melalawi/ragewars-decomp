@@ -417,7 +417,8 @@
         }
       ],
       "metadata": {
-        "complete": false
+        "complete": false,
+        "source_path": "src/func_80200C28_de.c"
       }
     },
     {
