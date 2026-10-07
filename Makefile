@@ -26,7 +26,7 @@ LD := mips-linux-gnu-ld
 N64LINK := n64link
 INCLUDES := -Iinclude
 CPPFLAGS := -P -undef -nostdinc -D_LANGUAGE_C -DF3DEX_GBI_2 -D__GNUC__=2
-PREPROCESS_FLAGS = $(INCLUDES)  $(VERSION_DEFINES) $(CONSUMER)
+PREPROCESS_FLAGS = $(INCLUDES) -D__UNBAKE_STDARG_GCC=1 $(VERSION_DEFINES) $(CONSUMER)
 ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
 HASM_ASFLAGS := -march=vr4300 -mabi=32 -EB --no-pad-sections
 KIND := gnu
