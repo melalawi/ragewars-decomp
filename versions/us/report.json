@@ -1,19 +1,19 @@
 {
   "measures": {
     "total_code": 1062244,
-    "matched_code": 659436,
-    "complete_code": 659436,
+    "matched_code": 659488,
+    "complete_code": 659488,
     "total_data": 320748,
     "matched_data": 0,
     "complete_data": 0,
     "total_functions": 4233,
-    "matched_functions": 3559,
-    "total_units": 5251,
-    "complete_units": 2780,
-    "matched_code_percent": 62.07952,
-    "complete_code_percent": 62.07952,
-    "matched_functions_percent": 84.077484,
-    "fuzzy_match_percent": 62.49244
+    "matched_functions": 3560,
+    "total_units": 5249,
+    "complete_units": 2779,
+    "matched_code_percent": 62.08442,
+    "complete_code_percent": 62.08442,
+    "matched_functions_percent": 84.10111,
+    "fuzzy_match_percent": 62.497334
   },
   "units": [
     {
@@ -11933,14 +11933,21 @@
         "total_code": "52",
         "total_functions": 1,
         "total_units": 1,
-        "fuzzy_match_percent": 0.0
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "52",
+        "complete_code": "52",
+        "matched_code_percent": 100.0,
+        "complete_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
           "size": "52",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -11948,14 +11955,16 @@
           "name": "func_80217290_de",
           "size": "52",
           "metadata": {},
-          "address": "2149675664"
+          "address": "2149675664",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
-          "asm"
-        ]
+          "c"
+        ],
+        "source_path": "src/func_80217290_de.c"
       }
     },
     {
@@ -43388,22 +43397,22 @@
     {
       "name": "func_8025B8BC_de",
       "measures": {
-        "total_code": "100",
-        "total_functions": 1,
+        "total_code": "1264",
+        "total_functions": 9,
         "total_units": 1,
         "fuzzy_match_percent": 100.0,
-        "matched_code": "100",
-        "complete_code": "100",
+        "matched_code": "1264",
+        "complete_code": "1264",
         "matched_code_percent": 100.0,
         "complete_code_percent": 100.0,
-        "matched_functions": 1,
+        "matched_functions": 9,
         "matched_functions_percent": 100.0,
         "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
-          "size": "100",
+          "size": "1264",
           "metadata": {},
           "fuzzy_match_percent": 100.0
         }
@@ -43415,80 +43424,14 @@
           "metadata": {},
           "address": "2149955676",
           "fuzzy_match_percent": 100.0
-        }
-      ],
-      "metadata": {
-        "complete": true,
-        "progress_categories": [
-          "c"
-        ],
-        "source_path": "src/func_8025B8BC_de.c"
-      }
-    },
-    {
-      "name": "func_8025B920_de",
-      "measures": {
-        "total_code": "300",
-        "total_functions": 1,
-        "total_units": 1,
-        "fuzzy_match_percent": 100.0,
-        "matched_code": "300",
-        "complete_code": "300",
-        "matched_code_percent": 100.0,
-        "complete_code_percent": 100.0,
-        "matched_functions": 1,
-        "matched_functions_percent": 100.0,
-        "complete_units": 1
-      },
-      "sections": [
-        {
-          "name": ".text",
-          "size": "300",
-          "metadata": {},
-          "fuzzy_match_percent": 100.0
-        }
-      ],
-      "functions": [
+        },
         {
           "name": "func_8025B920_de",
           "size": "300",
           "metadata": {},
           "address": "2149955776",
           "fuzzy_match_percent": 100.0
-        }
-      ],
-      "metadata": {
-        "complete": true,
-        "progress_categories": [
-          "c"
-        ],
-        "source_path": "src/func_8025B920_de.c"
-      }
-    },
-    {
-      "name": "func_8025BA4C_de",
-      "measures": {
-        "total_code": "864",
-        "total_functions": 7,
-        "total_units": 1,
-        "fuzzy_match_percent": 100.0,
-        "matched_code": "864",
-        "complete_code": "864",
-        "matched_code_percent": 100.0,
-        "complete_code_percent": 100.0,
-        "matched_functions": 7,
-        "matched_functions_percent": 100.0,
-        "complete_units": 1
-      },
-      "sections": [
-        {
-          "name": ".text",
-          "size": "864",
-          "metadata": {},
-          "fuzzy_match_percent": 100.0
-        }
-      ],
-      "functions": [
+        },
         {
           "name": "func_8025BA4C_de",
           "size": "80",
@@ -43544,7 +43487,7 @@
         "progress_categories": [
           "c"
         ],
-        "source_path": "src/func_8025BA4C_de.c"
+        "source_path": "src/func_8025B8BC_de.c"
       }
     },
     {
@@ -175358,16 +175301,16 @@
       "id": "c",
       "name": "Matched C",
       "measures": {
-        "total_code": 659436,
-        "matched_code": 659436,
-        "complete_code": 659436,
+        "total_code": 659488,
+        "matched_code": 659488,
+        "complete_code": 659488,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 3559,
-        "matched_functions": 3559,
-        "total_units": 3559,
-        "complete_units": 3559,
+        "total_functions": 3560,
+        "matched_functions": 3560,
+        "total_units": 3560,
+        "complete_units": 3560,
         "matched_code_percent": 100.0,
         "complete_code_percent": 100.0,
         "matched_functions_percent": 100.0,
@@ -175418,15 +175361,15 @@
       "id": "asm",
       "name": "Assembly",
       "measures": {
-        "total_code": 396584,
+        "total_code": 396532,
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 646,
+        "total_functions": 645,
         "matched_functions": 0,
-        "total_units": 646,
+        "total_units": 645,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,

@@ -373,7 +373,7 @@ segments:
       - [0x17CA0, c, "func_802170A0_de"]
       - [0x17DBC, c, "func_802171BC_de"]
       - [0x17DC8, c, "func_802171C8_de"]
-      - [0x17E90, asm, "func_80217290_de"]
+      - [0x17E90, c, "func_80217290_de"]
       - [0x17EC4, c, "func_802172C4_de"]
       - [0x17F88, c, "func_80217388_de"]
       - [0x1822C, asm, "func_8021762C_de"]

@@ -539,6 +539,7 @@
     "src/func_802170A0_de.c": "cc2772c262cd5d550f309b0de0fa057acade13917e53e2c8b2c093bbdab8c35e",
     "src/func_802171BC_de.c": "dfdb4b43b9749bd0e7f1f3e4cad7ff142a1876856ffc1e7b29f3d512060d3022",
     "src/func_802171C8_de.c": "f3929296b5bcf951d4e7e3227840b805396679be4c83e4e7c2f27c990f227173",
+    "src/func_80217290_de.c": "7a9e0e0e10dc0e75ee2427da46d02c96a3a3464adb49bdc6a04f790d7ea75cb0",
     "src/func_802172C4_de.c": "93aa96f53f1cbfa2b86b1f3af36d4cb1767d9e9f074f072014ac5fd9fd1a666e",
     "src/func_80217388_de.c": "854c293d6514671101538c4b5ea61e5535a160cab650339b9d7fe216671da52c",
     "src/func_80217928_de.c": "eb5ac82087f4cc69526d0acda46f31ccf419c4eab1db76cfb9dd54b79c270e38",
@@ -1202,9 +1203,7 @@
     "src/func_8025B6F8_de.c": "a5f9898966c963201f44b670ee655584832d5455b41a877b6dbe32f57d2aff3d",
     "src/func_8025B758_de.c": "bc3d37e3f9b62075e75c70349c69d0fb2a32ddaa06d454cf18f598274f77250b",
     "src/func_8025B854_de.c": "85e675c49881d5ca6b9767c2de67ff904fbe93d09b8fe040b0de21af4244b754",
-    "src/func_8025B8BC_de.c": "de8205f58a1008441d8f59cf19fa60c397556f2db178b01774badb3944bf35b8",
-    "src/func_8025B920_de.c": "504413646a9260cc2cd916b41ec8d1f2a446785326c1be000ea98ba56769e58c",
-    "src/func_8025BA4C_de.c": "a66da49a4bb6027321c56472341b180941c5fa7187ecca0027e0df06d820e623",
+    "src/func_8025B8BC_de.c": "f633c7e2c648f5f37d82c8c9e3063f0d39b06c3582a018732c3e7034b9ac9063",
     "src/func_8025BDAC_de.c": "72bb70c5bb32016e639956b14fdf0351884ff8a1ccbf76a0a4e635a8f87d7752",
     "src/func_8025BE08_de.c": "f6a8ee8a6f224ecbe26aa86c09f1d5dcd4e879d9d0443cb86d7f96d5155fb008",
     "src/func_8025BF08_de.c": "812593a29de799af849bf57d07617439331993a71c7b0e92949797ef3d30bca6",
@@ -3232,21 +3231,21 @@
     "tools/compilers.sha256": "b28b12299b9e8803d03ffefca0963b4fafa1d1c15ff743b89b12e160a9e47991",
     "tools/report-verifier.zip": "829e6932865a0df53b4771dcae6f4fcd93d1708339f75f9c83081a909e0e96ed",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "versions/de/RageWars.yaml": "6064f29040913e9949bf0ba638a209193fb4f36e26af00abd448b61cc565215c",
+    "versions/de/RageWars.yaml": "90a111f2f4e5d8518fd00f3ffcd08afec962094519d2bd598edbfbbdacac1353",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
-    "versions/eu/RageWars.yaml": "1a65f4dc9991dc2b40943266f0402b6e5794def7c11e88ab5c07f55aa95c002a",
+    "versions/eu/RageWars.yaml": "41152725b402def27562f9bc458b07f5e465e787af703a86f5d3a879a5078e1a",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
-    "versions/eu-x/RageWars.yaml": "e84968815a1833f19caaa4ec2f931ff443dde914a8f447baa4a2eebbda86e242",
+    "versions/eu-x/RageWars.yaml": "bc0385d123f716ad0295aad996f6112ae9a450bd9e0558cf5be4c85c1c3d4414",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
-    "versions/us/RageWars.yaml": "0418a4b43df0763079cb81609eb7ada907c9be84d2ddd63fd9fb8b4d5473a25c",
+    "versions/us/RageWars.yaml": "8e7180036ed555bc8fdd66c69ab6c241b14dbffcf2d823a454309ff19b49fd61",
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
-    "versions/us-rev1/RageWars.yaml": "ac5bec53ce820e220a3410281e92fe7e0f400faaf5a822365f75ccbd1f5e8d1d",
+    "versions/us-rev1/RageWars.yaml": "ca0bd22d1805061639de7ddbd7ccd26948c823db9e3f9ecfd9eaf45b56cb360c",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5",
     "publication-state": "7990bea3d9a1e4c6bcf69d4fb055dfe2b3443423f1ffea0c3ad1a184eae29e1d"
   },
   "versions": {
     "us": {
-      "report_sha256": "2be9193f82878159dc1dcf81b8f1c5d6fc7fe8e7e74666224461f7a2c19bd31d",
+      "report_sha256": "64648994a2ce3aa2401171cd28ba2ff4e08e92c6ad58a3c4b3fb86e402bebe12",
       "artifact": "us_report",
       "report_file": "us_report.json",
       "draft_bytes": 6144,
@@ -3447,11 +3446,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.65792040246873,
+      "exact_plus_draft_percent": 62.66281569959445,
       "data_match_state": "unknown"
     },
     "us-rev1": {
-      "report_sha256": "ee897c875f4e0881d600db861a56e86b7d938759aff59c834c84c074095116d3",
+      "report_sha256": "e0f8da0d8399d49d259f709e9c13b58cf3078f81a71e318e358ab9454a0a5dcd",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6224,
@@ -3660,11 +3659,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.942684723581515,
+      "exact_plus_draft_percent": 61.9472778600224,
       "data_match_state": "unknown"
     },
     "eu": {
-      "report_sha256": "f03c7de6a837c8bf5af67e10df7200923bef1338d38606a0b0cfeb4e21288ab6",
+      "report_sha256": "fb7c98ab38b50bb0ef34ad89b43f70c655765a424e734ee0aab5e9a089fb4e34",
       "artifact": "eu_report",
       "report_file": "eu_report.json",
       "draft_bytes": 6144,
@@ -3865,11 +3864,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.70057805963331,
+      "exact_plus_draft_percent": 60.70525433544725,
       "data_match_state": "unknown"
     },
     "eu-x": {
-      "report_sha256": "1ee6aa2386e8c0866d35cc4792636a08a5120ee48249712b35a768291d0e76ca",
+      "report_sha256": "b483644ce3a28ecd3c8fc8e2703c0f0013a7d5dc7eba51ab0bd7be543b6d517b",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
       "draft_bytes": 6224,
@@ -4078,11 +4077,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.634749672393056,
+      "exact_plus_draft_percent": 60.639416949395944,
       "data_match_state": "unknown"
     },
     "de": {
-      "report_sha256": "cf6d4f8a8a3141154c01c527db4c13ecc8becf84888c6764350ceb7e8d8065b6",
+      "report_sha256": "91ac5b433dd645536512d3f7af2ce70f9927d72c237ff740712bc53921b79126",
       "artifact": "de_report",
       "report_file": "de_report.json",
       "draft_bytes": 6140,
@@ -4283,7 +4282,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.70786016558006,
+      "exact_plus_draft_percent": 60.7125662012518,
       "data_match_state": "unknown"
     }
   },
