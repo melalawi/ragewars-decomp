@@ -1737,7 +1737,7 @@ segments:
       - [0x8CF4C, c, "func_8028C370_de"]
       - [0x8D000, c, "func_8028C424_de"]
       - [0x8D090, c, "func_8028C4B4_de"]
-      - [0x8D144, asm, "func_8028C568_de"]
+      - [0x8D144, c, "func_8028C568_de"]
       - [0x8D1E8, c, "func_8028C60C_de"]
       - [0x8D8B8, asm, "func_8028CCDC_de"]
       - [0x8D944, c, "func_8028CD68_de"]
