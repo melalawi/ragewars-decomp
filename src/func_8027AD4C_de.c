@@ -1,0 +1,304 @@
+#include "span_1000/code_8027A0F4.h"
+#include "shared/func_8027AD4C_de_closed.h"
+
+void func_8027AD4C_de(Shared_Particle *arg0)
+{
+  Vec3 sp10;
+  Vec3 sp20;
+  Vec3 sp30;
+  Vec3 sp40;
+  Vec3 sp50;
+  Vector4f sp60;
+  Vector4f sp70;
+  Vector4f sp80;
+  Matrix sp90;
+  Vec3 spD0;
+
+  Vec3 spE0;
+  Vec3 *nearby_position; 
+  Vec3 *temp_s2_2;
+  f32 temp_f0;
+  f32 temp_f0_10;
+  Vec3 *new_var;
+  f32 temp_f0_11;
+  f32 temp_f0_2;
+  f32 temp_f0_3;
+  f32 temp_f0_4;
+  f32 temp_f0_5;
+  f32 temp_f0_6;
+  f32 temp_f0_7;
+  f32 temp_f0_8;
+  f32 temp_f0_9;
+  f32 temp_f12;
+  f32 temp_f12_2;
+  f32 temp_f12_3;
+  f32 temp_f1;
+  f32 temp_f1_2;
+  f32 temp_f1_3;
+  f32 temp_f1_4;
+  f32 temp_f1_5;
+  f32 temp_f20;
+  f32 nearby_height;
+  f32 nearby_scale;
+  f32 nearby_random_max;
+  f32 tracking_min;
+  f32 tracking_max;
+  f32 temp_f20_2;
+  f32 temp_f20_3;
+  f32 temp_f20_4;
+  f32 var_f2;
+  s32 temp_v1;
+  void *temp_a0;
+  func_8027ADBC_S3 *temp_s0;
+  void *temp_s0_2; 
+  func_8027ADBC_S6 *temp_s0_4;
+  void *temp_s0_5;
+  void *temp_s2; 
+  void *var_a0;
+  func_8027ADBC_S2 *var_s0;
+  temp_v1 = arg0->inst.type;
+  if (temp_v1 == 0x127)
+  {
+    goto block_26;
+  }
+  if (temp_v1 < 0x128)
+  {
+    if (temp_v1 == 46)
+    {
+      goto block_46;
+    }
+    if (temp_v1 < 47)
+    {
+      if (temp_v1 == 11)
+      {
+        goto block_24;
+      }
+      if (temp_v1 == 14)
+      {
+        goto block_26;
+      }
+      goto block_common;
+    }
+    if (temp_v1 >= 97)
+    {
+      goto block_common;
+    }
+    if (temp_v1 >= 95)
+    {
+      goto block_26;
+    }
+    goto block_common;
+  }
+  if (temp_v1 == 0x414)
+  {
+    goto block_540;
+  }
+  if (temp_v1 < 0x415)
+  {
+    if (temp_v1 == 0x129)
+    {
+      goto block_24;
+    }
+    if (temp_v1 == 0x3EC)
+    {
+      goto block_26;
+    }
+    goto block_common;
+  }
+  if (temp_v1 == 0x42D)
+  {
+    goto block_540;
+  }
+  if (temp_v1 == 0x4B4)
+  {
+    goto block_26;
+  }
+  goto block_common;
+  block_46:
+  var_a0 = D_80140FA0;
+
+  if (var_a0 != ((void *) 0))
+  {
+    nearby_position = &sp20;
+    temp_s2 = (void *) (&arg0->inst.velocity.x);
+    do { 
+      nearby_scale = D_800C4BCC_de;
+      nearby_random_max = D_800C4BD0_de;
+    } while (0);
+    var_s0 = var_a0;
+    do
+    {
+      nearby_height = var_s0->unk70;
+      sp20 = var_s0->pos;
+      sp20.y += nearby_height;
+      sp20.y += func_8024D284_de(var_a0) * nearby_scale;
+      func_80271F68_de(&sp10, nearby_position, &arg0->inst.pos);
+      temp_f20 = func_802B72B0_de(((sp10.x * sp10.x) + (sp10.y * sp10.y)) + (sp10.z * sp10.z));
+      if (temp_f20 < D_800C4BD4_de)
+      {
+        temp_f20 = D_800C4BDC_de - (temp_f20 * D_800C4BD8_de);
+        sp10.x *= temp_f20 * func_80274A90_de(nearby_scale, nearby_random_max);
+        sp10.y *= temp_f20 * func_80274A90_de(nearby_scale, nearby_random_max);
+        sp10.z *= temp_f20 * func_80274A90_de(nearby_scale, nearby_random_max);
+        func_80271F68_de(temp_s2, temp_s2, &sp10);
+      }
+      var_a0 = var_s0->unk16E0;
+      var_s0 = var_a0;
+    }
+    while (var_a0 != ((void *) 0));
+  }
+  temp_s0 = arg0->target;
+  temp_f0_2 = func_8024E420_de(temp_s0);
+  sp20 = temp_s0->pos;
+  sp20.y += temp_f0_2;
+  func_80271F68_de(&sp10, &sp20, &arg0->inst.pos);
+  tracking_min = D_800C4BE0_de;
+  tracking_max = D_800C4BE4_de;
+  sp10.x *= func_80274A90_de(tracking_min, tracking_max);
+  sp10.y *= func_80274A90_de(tracking_min, tracking_max);
+  sp10.z *= func_80274A90_de(tracking_min, tracking_max);
+  temp_s0_2 = (void *) (&arg0->inst.velocity.x);
+  func_80271F34_de(temp_s0_2, temp_s0_2, &sp10);
+#if defined(VERSION_EU)
+  func_80272748_de(temp_s0_2, func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12));
+#else
+  func_80272748_de(temp_s0_2, func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12));
+#endif
+  return;
+  block_24:
+  func_8027A084_de(arg0);
+
+  return;
+  block_540:
+  func_8027A4D0_de(arg0);
+
+  return;
+  block_26:
+  func_80228DC4_de(&D_80140F80, arg0);
+
+#if defined(VERSION_EU)
+  temp_f0_3 = func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
+#else
+  temp_f0_3 = func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
+#endif
+  if (temp_f0_3 != 0.0f)
+  {
+    temp_s0_2 = &spD0; 
+    spE0 = arg0->unk174;
+    func_80271F9C_de(temp_s0_2, &spE0, temp_f0_3);
+    temp_s0_2 = (void *) (&arg0->inst.velocity.x);
+    func_80271F34_de(temp_s0_2, temp_s0_2, &spD0);
+    temp_f1 = arg0->inst.velocity.x;
+    temp_f0_4 = arg0->inst.velocity.y;
+    temp_f12 = arg0->inst.velocity.z;
+    temp_f20_2 = func_802B72B0_de(((temp_f1 * temp_f1) + (temp_f0_4 * temp_f0_4)) + (temp_f12 * temp_f12));
+#if defined(VERSION_EU)
+    temp_f0_5 = func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
+#else
+    temp_f0_5 = func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
+#endif
+    if (temp_f0_3 > 0.0f)
+    {
+      if (!(temp_f0_5 < temp_f20_2))
+      {
+        goto after_special_clamp;
+      }
+    }
+    else
+      if (!(temp_f20_2 < temp_f0_5))
+    {
+      goto after_special_clamp;
+    }
+    func_80271F9C_de(temp_s0_2, &spE0, temp_f0_5);
+    after_special_clamp:
+    ;
+
+    ;
+  }
+  func_80279DD0_de(arg0, 1.0f);
+  return;
+  block_common:
+  temp_s0_4 = arg0->target;
+
+  temp_a0 = arg0->desc;
+  if (((temp_s0_4 != ((void *) 0)) && (arg0->desc->flags & 0x40000)) && (((Shared_func_8027ADBC_S4 *)arg0->desc)->unkE != 0))
+  {
+    temp_f0_6 = func_8024E420_de(temp_s0_4);
+    sp20 = temp_s0_4->pos;
+    sp20.y += temp_f0_6;
+    sp20.y += func_8024D284_de(temp_s0_4) * D_800C4BE8_de;
+    func_80271F68_de(&sp40, &sp20, &arg0->inst.pos);
+    func_8027207C_de(&sp40);
+    func_80271818_de(&sp70, &sp40);
+    temp_s2_2 = &arg0->unk174;
+    func_80271818_de(&sp60, temp_s2_2);
+    sp30 = arg0->unk174;
+    func_8027207C_de(&sp30);
+    temp_f1_3 = arg0->inst.velocity.x;
+    temp_f0_7 = arg0->inst.velocity.y;
+    temp_f12_2 = arg0->inst.velocity.z;
+    temp_f20_3 = func_802B72B0_de(((temp_f1_3 * temp_f1_3) + (temp_f0_7 * temp_f0_7)) + (temp_f12_2 * temp_f12_2));
+    temp_f0_8 = func_802745D0_de(((sp30.x * sp40.x) + (sp30.y * sp40.y)) + (sp30.z * sp40.z));
+    temp_f1_4 = ((f32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unkE) * D_800C4BEC_de;
+    var_f2 = D_800C4BF0_de;
+    if (temp_f1_4 < temp_f0_8)
+    {
+      var_f2 = temp_f1_4 / temp_f0_8;
+    }
+    func_80270CD0_de(&sp80, var_f2, &sp60, &sp70);
+    func_80274244_de(&sp80, &sp90);
+    sp50.x = 0;
+    sp50.y = 0;
+    sp50.z = D_800C4BF4_de;
+    new_var = temp_s2_2;
+    func_80272898_de(&sp90, &sp50, new_var);
+    func_80271F9C_de(&arg0->inst.velocity.x, new_var, temp_f20_3);
+  }
+  if (!(arg0->flags & 0x70000))
+  {
+#if defined(VERSION_EU)
+    temp_f0_9 = func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
+#else
+    temp_f0_9 = func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
+#endif
+    if (temp_f0_9 != 0.0f)
+    {
+      temp_s0_2 = &spD0; 
+    spE0 = arg0->unk174;
+      func_80271F9C_de(temp_s0_2, &spE0, temp_f0_9);
+      temp_s0_2 = (void *) (&arg0->inst.velocity.x);
+      func_80271F34_de(temp_s0_2, temp_s0_2, &spD0);
+      temp_f1_5 = arg0->inst.velocity.x;
+      temp_f0_10 = arg0->inst.velocity.y;
+      temp_f12_3 = arg0->inst.velocity.z;
+      temp_f20_4 = func_802B72B0_de(((temp_f1_5 * temp_f1_5) + (temp_f0_10 * temp_f0_10)) + (temp_f12_3 * temp_f12_3));
+#if defined(VERSION_EU)
+      temp_f0_11 = func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
+#else
+      temp_f0_11 = func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
+#endif
+      if (temp_f0_9 > 0.0f)
+      {
+        if (!(temp_f0_11 < temp_f20_4))
+        {
+          goto after_normal_clamp;
+        }
+      }
+      else
+        if (!(temp_f20_4 < temp_f0_11))
+      {
+        goto after_normal_clamp;
+      }
+      func_80271F9C_de(temp_s0_2, &spE0, temp_f0_11);
+      after_normal_clamp:
+      ;
+
+      ;
+    }
+  }
+  if (!(arg0->flags & 0x30000))
+  {
+    func_80279DD0_de(arg0, 1.0f);
+  }
+}
+
