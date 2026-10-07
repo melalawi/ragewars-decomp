@@ -4,25 +4,6 @@
 #include "n64sdk.h"
 #include "gbi.h"
 #include "n64sdk.h"
-
-
-
-
-
-
-
-
-
-
-#define G_SETSCISSOR 0xED
-#define G_SC_NON_INTERLACE 0
-
-
-
-
-
-
-
 extern struct Screen_func_8041FC50_de *D_800E0280;
 extern s32 D_800CC390;
 extern f32 D_800CC394_de[5];
@@ -30,14 +11,11 @@ extern struct Shape_typemap_165 D_800E0170[];
 extern s32 D_800DE880_de;
 extern s32 D_800DE884_de;
 extern Gfx *D_8010C574;
-
 extern void func_8041C7F4_de(void *);
-
 /* Draw callback of the four-player screen D_800E42D0: on draw event 1 in state 3 it clips the display list to each joined or ready player's viewport in D_800E41C0 and draws that panel through func_8041C7F4_de, in the flash fill (mode 3) while the panel's flash counter runs down and in opaque white otherwise, then restores the full-screen clip and the white fill; returns zero. */
 s32 func_8041FC50_de(void *arg0, void *arg1, s32 event)
 {
     s32 i;
-
     if (event == 1 && D_800E0280->state == 3) {
         D_800CC390 = 0;
         D_800CC394_de[0] = 255.0f;
@@ -47,7 +25,7 @@ s32 func_8041FC50_de(void *arg0, void *arg1, s32 event)
         for (i = 0; i < 4; i++) {
             if (D_800E0280->panels[i].state == 1 || D_800E0280->panels[i].state == 3) {
                 if (D_800E0280->panels[i].player != -1) {
-                    gDPSetScissorFrac(D_8010C574++, G_SC_NON_INTERLACE, (s32)((f32)((D_800E0170[i].field_0)) * 4.0f), (s32)((f32)((D_800E0170[i].field_4)) * 4.0f), (s32)((f32)((D_800E0170[i].field_8)) * 4.0f), (s32)((f32)((D_800E0170[i].field_C)) * 4.0f));
+                    gDPSetScissorFrac(D_8010C574++, 0, (s32)((f32)((D_800E0170[i].field_0)) * 4.0f), (s32)((f32)((D_800E0170[i].field_4)) * 4.0f), (s32)((f32)((D_800E0170[i].field_8)) * 4.0f), (s32)((f32)((D_800E0170[i].field_C)) * 4.0f));
                     if (D_800E0280->panels[i].flash > 0) {
                         D_800CC394_de[0] = 150.0f;
                         D_800CC394_de[1] = 0.0f;
@@ -68,7 +46,7 @@ s32 func_8041FC50_de(void *arg0, void *arg1, s32 event)
             }
         }
         D_800CC390 = 0;
-        gDPSetScissorFrac(D_8010C574++, G_SC_NON_INTERLACE, (s32)((f32)((0)) * 4.0f), (s32)((f32)((0)) * 4.0f), (s32)((f32)((D_800DE880_de - 1)) * 4.0f), (s32)((f32)((D_800DE884_de - 1)) * 4.0f));
+        gDPSetScissorFrac(D_8010C574++, 0, (s32)((f32)((0)) * 4.0f), (s32)((f32)((0)) * 4.0f), (s32)((f32)((D_800DE880_de - 1)) * 4.0f), (s32)((f32)((D_800DE884_de - 1)) * 4.0f));
         D_800CC394_de[0] = 255.0f;
         D_800CC394_de[1] = 255.0f;
         D_800CC394_de[2] = 255.0f;

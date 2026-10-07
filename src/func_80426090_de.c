@@ -1,27 +1,17 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_804251F4.h"
 #include "types.h"
+#include "stddef.h"
 /* Marks available inventory entries with their slot indices. */
-#define NULL ((void *)0)
-
-
-
-
-s32 func_8022F4DC_de(void *, s32);                      /* extern */
+s32 func_8022F4DC_de(void *, s32); /* extern */
 extern char D_800FEB00[];
-
-
-
-
 void func_80426090_de(Arg *arg0) {
     s32 temp_s0;
     s32 temp_s3;
     s32 temp_v0;
     s32 var_s1;
     State_func_80426090_de *temp_a0;
-
     func_8024DED0_S2 *var_s2;
-
     temp_a0 = arg0->unk5D8;
     if (temp_a0->unk91 != 1) {
         var_s1 = 0;
