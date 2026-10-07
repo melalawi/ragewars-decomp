@@ -153,6 +153,31 @@
       },
       "minutes": 5.03
     },
+    "func_80200F98_de": {
+      "attempts": 2,
+      "best": {
+        "de": 96.078431,
+        "eu": 96.078431,
+        "eu-x": 96.078431,
+        "us": 96.078431,
+        "us-rev1": 96.078431
+      },
+      "bytes": 204,
+      "exact": false,
+      "fuzzy": {
+        "compiler": "gcc-2.7.2-kmc",
+        "score": 96.07843100000001,
+        "source_sha256": "e8b7d835c0296edd2a957567c6f4cefa4a31c5e79e9094da19dd9654ca401f99",
+        "versions": {
+          "de": 96.078431,
+          "eu": 96.078431,
+          "eu-x": 96.078431,
+          "us": 96.078431,
+          "us-rev1": 96.078431
+        }
+      },
+      "minutes": 5.22
+    },
     "func_80201064_de": {
       "attempts": 4,
       "best": {
@@ -7904,6 +7929,19 @@
       "bytes": 144,
       "exact": true,
       "minutes": 12.15
+    },
+    "func_8044DE7C_de": {
+      "attempts": 1,
+      "best": {
+        "de": 92.727273,
+        "eu": 92.727273,
+        "eu-x": 92.727273,
+        "us": 92.727273,
+        "us-rev1": 92.727273
+      },
+      "bytes": 216,
+      "exact": false,
+      "minutes": 0.09
     }
   },
   "v": 1

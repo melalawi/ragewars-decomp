@@ -1392,6 +1392,9 @@ compiler = "gcc-2.7.2-kmc"
 [units.func_80200CA0_de]
 compiler = "gcc-2.7.2-kmc"
 
+[units.func_80200F98_de]
+compiler = "gcc-2.7.2-kmc"
+
 [units.func_8021836C_de]
 compiler = "gcc-2.8.1-sn64"
 flags = [ "-fno-strength-reduce",]
