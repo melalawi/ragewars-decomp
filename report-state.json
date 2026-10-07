@@ -1,9 +1,10 @@
 {
   "schema": 1,
-  "tool_sha256": "829e6932865a0df53b4771dcae6f4fcd93d1708339f75f9c83081a909e0e96ed",
+  "tool_sha256": "c2d146daf7c8ed696173f706169cbb9e9b488d748a0f82bd80f3452f43c3a725",
   "source_pins": {
-    ".github/workflows/progress.yml": "7d943124dcecc5a91a8aa066b2f30351e5b1309907f098e8943fc12e0ea65894",
-    ".gitlab-ci.yml": "2dcf77318858d3d9f85a2a1a440a6fdf66c58d0b4968374484b7656dc97012dc",
+    ".github/workflows/progress.yml": "1f57b804779d3bf6be71493597032dab1042b9a78b5c08b7a3ecacb55256a48f",
+    ".gitlab-ci.yml": "0c17dab23404849187f305ddfc96a512ceb372e32006a520967be1bc509718e3",
+    "Makefile": "6d524e9c22700ea3ce25fbb4e26d2728c699ffaf4507386e8851edfd98193bfa",
     "config.toml": "ea7945703dc495e781f8f52381228011d69d6d35510c422fa61f339d8bbc7c47",
     "include/abi.h": "cff5a56cde9e9c6f6229882328d71b038544f4c8102196347b92ac2df6a84951",
     "include/acmd.h": "522f0c6ad06a44f89de7e93dd9caa51ef62e811027a48ce12dd04a3b79db60ac",
@@ -288,6 +289,7 @@
     "include/types.h": "1d8918b28b3228c8ddd7ca1fe44e7166231b6d8277087a7070cbca1418554c4e",
     "include/version_calls.h": "22162e5f6738af576b944386529d5ea347439b51dc31da4269ee33728de20e85",
     "include/video_dimensions.h": "bca39488fae138f3bf52b5b98fabddec712b816b45ccb17dd5976c328960e4c0",
+    "layout.toml": "31e4a230fb3f73b39a532c23acc5f0f46249d7ab9d927d4c9cc12f54ea4c2501",
     "src/__cmpdi2.c": "bdd6074e2861640e7cfde7da545b5405a7eeb8585bc75fd0f0e1d6adcc14c6c9",
     "src/func_80200400_de.s": "6f3bce413e0649d07c9dff5572ace4a870f34d3e2a6f52e103155d94db434dca",
     "src/func_80200500_de.c": "3d3102fc2edc19f08f7e0a68eab2c29c52558a8438111e4b802bd6f3060b12a4",
@@ -1716,6 +1718,7 @@
     "src/func_80292FC0_de.c": "4f8111109fa5362087bbab02bec9b03290fec0d393c4b04a65b12fa7356259bf",
     "src/func_80293054_de.c": "cdb1e9f4b593154e6231311d3443a79f53c769609a4e44cda19c5c61ac432bb4",
     "src/func_80293268_de.c": "c625396824c6c3ab4903865a5ae82089abea08b9d7ff66499e5e4ea6da502382",
+    "src/func_80293394_de.c": "06ff10325e54c578fa0a1e3ba3d98d5b17daec15d82baf9d1a03f12691f89a93",
     "src/func_80293440_de.c": "c183c3b8b2ea1d5ed1955fc240234ea8408dea3266f6879fae664d3d0a49ebb3",
     "src/func_80293590_de.c": "d4208edaaf00b08e6b20f92f7ef4085b5e6102a9ffbaf2570167392979eabd75",
     "src/func_80293790_de.c": "d9411831c555c4cde5900be09dfc36856f84e18170432884565f66c365aa1565",
@@ -3241,23 +3244,36 @@
     "src/func_8044DDD4_de.c": "b899ee6137c276ea280f7e1aa3b7409e23ce905f920073f5acacdf91858d36a7",
     "src/func_8044DE7C_de.c": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
     "tools/compilers.sha256": "b28b12299b9e8803d03ffefca0963b4fafa1d1c15ff743b89b12e160a9e47991",
-    "tools/report-verifier.zip": "829e6932865a0df53b4771dcae6f4fcd93d1708339f75f9c83081a909e0e96ed",
+    "tools/n64link.version": "503b6a8de93b9c1deeb0b063f2780a2f8e83c0320d1f0fd8daa5685e2f1ab645",
+    "tools/report-verifier.zip": "c2d146daf7c8ed696173f706169cbb9e9b488d748a0f82bd80f3452f43c3a725",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
+    "units.mk": "2738e5fbf1df7a0a7644b7db9b99f0a91d3ef66bbdd79504715b65b08f921783",
+    "versions/de/RageWars.ld": "4539793d364805b1a8b6c9e41f571e34f49221b4c0e6d266cb2c1c97247bcefa",
     "versions/de/RageWars.yaml": "0e348d042e42c6bb49b9467866a26514aa9cb41111945bf38ed34ce1eb8904e6",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
+    "versions/de/symbols.ld": "9f2efaed68f58953780958818e03b66cee80bdf5e8fb5ed370d0bf9e64d9de38",
+    "versions/eu/RageWars.ld": "3e5e06b72cd4e448c0f0016f8dced42ab4d9a2d61ce6b8fa869084eaf6ff31e3",
     "versions/eu/RageWars.yaml": "9d45cb4dad620701c0b9bdd3337901ec75fc320e2a4f120e1af6203f901cc1c8",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
+    "versions/eu/symbols.ld": "fca064967547ec2db692715cde2c14036b10c5015c2ebeb5917aa7280da06f3e",
+    "versions/eu-x/RageWars.ld": "d49c7db54e2082d1513ac260a118aa2aa50f88d6fc567de87934ab2ff929881f",
     "versions/eu-x/RageWars.yaml": "62fb2d55187754af3ef4be35a13012ce85c90eb55135f4943719ee683be436cc",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
+    "versions/eu-x/symbols.ld": "4b607a72e163c8c9341401ec4a5ca76bc5c42e9ba75d26bd8f2f11c886225f58",
+    "versions/us/RageWars.ld": "ffb823c7e2b0bb59f940481a10decb3546c291735d9956dabf1fef7d7ed17027",
     "versions/us/RageWars.yaml": "81b312938d43f8e255a24bc390b3a5856dc075803afc1d9f8afeb6df95fd55bc",
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
-    "versions/us-rev1/RageWars.yaml": "c01e1058b8814fdb9f641043c523a84b094ad6622010a515aea23ecea65d3518",
+    "versions/us/symbols.ld": "9b768c236306d751f6119e92ea90d14c8c50645390bb4323344367a8365e002d",
+    "versions/us-rev1/RageWars.ld": "e85b05dd473505a7212c6191e955f3f995591b2a528fc2a62866434eac9cac34",
+    "versions/us-rev1/RageWars.yaml": "814b34c73fda193efe3df805024d8c28823d72efef0de4563dd90976cb325e4f",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5",
+    "versions/us-rev1/symbols.ld": "0bf5cd9e700db26eae7a523dc6a9392e27c55e27ffc3c617583e87d5738deffc",
+    "native-data-proofs": "68a5ac454b7c243e823ea2f17d35522eeced10ee8c638a3d4b828392baf1e146",
     "publication-state": "7ee4c1dcd9632f3935a6d979241774e33c600ae89f148322aa88d43d85ef72a8"
   },
   "versions": {
     "us": {
-      "report_sha256": "d4a786a3ad4a272edf74b7c55fabf9a5d22e7e5921b51d9885f502e3ada97a6b",
+      "report_sha256": "39f42015ed3205bdc66a864c4f0e9fbe76bb0af267eacf4225418349a90c63b5",
       "artifact": "us_report",
       "report_file": "us_report.json",
       "draft_bytes": 6816,
@@ -3467,10 +3483,28 @@
         }
       ],
       "exact_plus_draft_percent": 63.0250676868968,
-      "data_match_state": "unknown"
+      "data_match_state": "unmeasured",
+      "data_coverage": {
+        "state": "unmeasured",
+        "declared_bytes": 320748,
+        "verified_bytes": 0,
+        "unmeasured_bytes": 320748,
+        "rom_bytes": 8388608,
+        "evidence_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "proof_event": null,
+        "invalidations": 0,
+        "extents": [],
+        "causes": [
+          {
+            "key": "data.proof.missing",
+            "unmeasured_bytes": 320748
+          }
+        ]
+      },
+      "opaque_rom_bytes": 7005616
     },
     "us-rev1": {
-      "report_sha256": "e13b32818e2104a036b5ea0acb6299aeff2b5920ee8685397847d409361484fc",
+      "report_sha256": "b8a6c244eed6c3c41b2c289b45341837bf127b753b3965d845a8f68d8b2a8aad",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6896,
@@ -3687,11 +3721,29 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.28469672933353,
-      "data_match_state": "unknown"
+      "exact_plus_draft_percent": 62.29988941140723,
+      "data_match_state": "unmeasured",
+      "data_coverage": {
+        "state": "unmeasured",
+        "declared_bytes": 254468,
+        "verified_bytes": 0,
+        "unmeasured_bytes": 254468,
+        "rom_bytes": 8388608,
+        "evidence_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "proof_event": null,
+        "invalidations": 0,
+        "extents": [],
+        "causes": [
+          {
+            "key": "data.proof.missing",
+            "unmeasured_bytes": 254468
+          }
+        ]
+      },
+      "opaque_rom_bytes": 7002016
     },
     "eu": {
-      "report_sha256": "9f148e6762d512df2a2326543250a0b02969ae6b82cf04d413cd1e5906a6c165",
+      "report_sha256": "cf47a2bd6a9e9275c61173678c957f2dc84e53a498b5b3bd348c430add294ee9",
       "artifact": "eu_report",
       "report_file": "eu_report.json",
       "draft_bytes": 6816,
@@ -3901,10 +3953,28 @@
         }
       ],
       "exact_plus_draft_percent": 61.044464188720106,
-      "data_match_state": "unknown"
+      "data_match_state": "unmeasured",
+      "data_coverage": {
+        "state": "unmeasured",
+        "declared_bytes": 275508,
+        "verified_bytes": 0,
+        "unmeasured_bytes": 275508,
+        "rom_bytes": 8388608,
+        "evidence_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "proof_event": null,
+        "invalidations": 0,
+        "extents": [],
+        "causes": [
+          {
+            "key": "data.proof.missing",
+            "unmeasured_bytes": 275508
+          }
+        ]
+      },
+      "opaque_rom_bytes": 7001104
     },
     "eu-x": {
-      "report_sha256": "422399f2a947e52ca19e4b42e98be520a81cd2adf2a396d3029c6e3eeec6b0e6",
+      "report_sha256": "5f3dd3836ce8a7d504f900c13804b2f40a2272af2d178861207c7a972e8093fd",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
       "draft_bytes": 6896,
@@ -4122,10 +4192,28 @@
         }
       ],
       "exact_plus_draft_percent": 60.977974042759435,
-      "data_match_state": "unknown"
+      "data_match_state": "unmeasured",
+      "data_coverage": {
+        "state": "unmeasured",
+        "declared_bytes": 204036,
+        "verified_bytes": 0,
+        "unmeasured_bytes": 204036,
+        "rom_bytes": 8388608,
+        "evidence_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "proof_event": null,
+        "invalidations": 0,
+        "extents": [],
+        "causes": [
+          {
+            "key": "data.proof.missing",
+            "unmeasured_bytes": 204036
+          }
+        ]
+      },
+      "opaque_rom_bytes": 7070432
     },
     "de": {
-      "report_sha256": "e85b4ecb3fa61293529c09a31d89e817ec76883ad86a795ec17096d03a6f0acb",
+      "report_sha256": "03d98745c383e59a2d92a6852f5e16b465ee1e164d9cd49da61aeea95ce0cfc2",
       "artifact": "de_report",
       "report_file": "de_report.json",
       "draft_bytes": 6812,
@@ -4335,8 +4423,26 @@
         }
       ],
       "exact_plus_draft_percent": 61.05321078333774,
-      "data_match_state": "unknown"
+      "data_match_state": "unmeasured",
+      "data_coverage": {
+        "state": "unmeasured",
+        "declared_bytes": 277644,
+        "verified_bytes": 0,
+        "unmeasured_bytes": 277644,
+        "rom_bytes": 8388608,
+        "evidence_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "proof_event": null,
+        "invalidations": 0,
+        "extents": [],
+        "causes": [
+          {
+            "key": "data.proof.missing",
+            "unmeasured_bytes": 277644
+          }
+        ]
+      },
+      "opaque_rom_bytes": 7006000
     }
   },
-  "scope": "Declared split code and data intervals only; opaque top-level binary assets excluded. Data matching is unknown; zero verified data numerator. Fuzzy scalar is the known lower bound; unknown similarity remains null in drafts. Coverage is independent of similarity."
+  "scope": "Declared split code and data intervals only; opaque top-level binary assets excluded. Data credit requires current source-owned final linked extent proof; unmeasured coverage is explicit. BSS is outside ROM-data coverage. Fuzzy scalar is the known lower bound; unknown similarity remains null in drafts. Coverage is independent of similarity."
 }

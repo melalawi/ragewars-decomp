@@ -6,7 +6,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 ## Progress
 
-<pre><code>all     [████████████▒░░░░░░░]  61.05% (~61.49%)  3,373,192 of 5,525,468 bytes</code><br><code>us      [████████████▒░░░░░░░]  62.38% (~62.84%)  662,664 of 1,062,244 bytes</code><br><code>us-rev1 [████████████▒░░░░░░░]  61.68% (~62.10%)  698,244 of 1,132,124 bytes</code><br><code>eu      [████████████▒░░░░░░░]  60.43% (~60.87%)  671,996 of 1,111,996 bytes</code><br><code>eu-mul  [████████████▒░░░░░░░]  60.36% (~60.79%)  672,484 of 1,114,140 bytes</code><br><code>de      [████████████▒░░░░░░░]  60.44% (~60.88%)  667,804 of 1,104,964 bytes</code></pre>
+<pre><code>all     [████████████▒░░░░░░░]  61.05% (~61.49%)  3,373,364 of 5,525,468 bytes</code><br><code>us      [████████████▒░░░░░░░]  62.38% (~62.84%)  662,664 of 1,062,244 bytes</code><br><code>us-rev1 [████████████▒░░░░░░░]  61.69% (~62.12%)  698,416 of 1,132,124 bytes</code><br><code>eu      [████████████▒░░░░░░░]  60.43% (~60.87%)  671,996 of 1,111,996 bytes</code><br><code>eu-mul  [████████████▒░░░░░░░]  60.36% (~60.79%)  672,484 of 1,114,140 bytes</code><br><code>de      [████████████▒░░░░░░░]  60.44% (~60.88%)  667,804 of 1,104,964 bytes</code></pre>
 
 | us (NUS-NRWE-0, North America). First NTSC release (black cartridge). SHA256 `0433043aaba2649bdd1fe717c4020550ac663c0362527aa082490f5977a3e46b` |
 |---|
@@ -14,7 +14,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | us-rev1 (NUS-NRWE-1, North America). Revised NTSC release (grey cartridge). SHA256 `5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089` |
 |---|
-| <pre><code>bytes     [████████████▒░░░░░░░]  61.68% (~62.10%)  698,244 of 1,132,124</code><br><code>functions [████████████████░░░░]  82.36%  3,745 of 4,547</code></pre> |
+| <pre><code>bytes     [████████████▒░░░░░░░]  61.69% (~62.12%)  698,416 of 1,132,124</code><br><code>functions [████████████████░░░░]  82.38%  3,746 of 4,547</code></pre> |
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
