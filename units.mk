@@ -1440,6 +1440,14 @@ build/%/src/func_8028DDA4_de.i build/%/src/func_8028DDA4_de.key build/%/units/fu
 build/%/src/func_8028DE48_de.i build/%/src/func_8028DE48_de.key build/%/units/func_8028DE48_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8028DEEC_de.i build/%/src/func_8028DEEC_de.key build/%/units/func_8028DEEC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8028DF90_de.i build/%/src/func_8028DF90_de.key build/%/units/func_8028DF90_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_8028E108_de.i build/%/src/func_8028E108_de.key build/%/units/func_8028E108_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1 -DNON_MATCHING
+build/%/src/func_8028E108_de.i build/%/src/func_8028E108_de.key build/%/units/func_8028E108_de.bin: KIND := gnu
+build/%/src/func_8028E108_de.i build/%/src/func_8028E108_de.key build/%/units/func_8028E108_de.bin: CC := tools/gcc-2.7.2-kmc/cc1
+build/%/src/func_8028E108_de.i build/%/src/func_8028E108_de.key build/%/units/func_8028E108_de.bin: CODEGEN := -G0 -mips3 -mgp32 -mfp32 -O2
+build/%/src/func_8028E108_de.i build/%/src/func_8028E108_de.key build/%/units/func_8028E108_de.bin: COMPILER_INCLUDES := 
+build/%/src/func_8028E108_de.i build/%/src/func_8028E108_de.key build/%/units/func_8028E108_de.bin: COMPILER_DEFINES := 
+build/%/src/func_8028E108_de.i build/%/src/func_8028E108_de.key build/%/units/func_8028E108_de.bin: ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
+build/%/src/func_8028E108_de.i build/%/src/func_8028E108_de.key build/%/units/func_8028E108_de.bin: TRIM := 
 build/%/src/func_8028E284_de.i build/%/src/func_8028E284_de.key build/%/units/func_8028E284_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8028E930_de.i build/%/src/func_8028E930_de.key build/%/units/func_8028E930_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8028EACC_de.i build/%/src/func_8028EACC_de.key build/%/units/func_8028EACC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1

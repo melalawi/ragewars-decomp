@@ -1411,3 +1411,6 @@ flags = [ "-fno-strength-reduce",]
 [units.func_80218E98_de]
 compiler = "gcc-2.8.1-sn64"
 flags = [ "-fno-strength-reduce",]
+
+[units.func_8028E108_de]
+compiler = "gcc-2.7.2-kmc"
