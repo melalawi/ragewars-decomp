@@ -5514,7 +5514,7 @@ segments:
       - [0x1B74F4, c, "func_804488A4_de"]
       - [0x1B77D4, c, "func_80448B84_de"]
       - [0x1B7804, c, "func_80448BB4_de"]
-      - [0x1B784C, asm, "func_80448BFC_de"]
+      - [0x1B784C, c, "func_80448BFC_de"]
       - [0x1B7914, c, "func_80448CC4_de"]
       - [0x1B7968, asm, "func_80449968_us_rev1"]
       - [0x1B7970, asm, "func_80449970_us_rev1"]

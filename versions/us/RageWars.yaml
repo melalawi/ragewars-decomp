@@ -5259,7 +5259,7 @@ segments:
       - [0x1ACA14, c, "func_804488A4_de"]
       - [0x1ACCF4, c, "func_80448B84_de"]
       - [0x1ACD24, c, "func_80448BB4_de"]
-      - [0x1ACD6C, asm, "func_80448BFC_de"]
+      - [0x1ACD6C, c, "func_80448BFC_de"]
       - [0x1ACE34, c, "func_80448CC4_de"]
       - [0x1ACE88, asm, "func_80448E88_us"]
       - [0x1ACE8C, data, "rodata/unresolved/80448E8C"]

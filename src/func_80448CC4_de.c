@@ -1,19 +1,19 @@
-#include "span_16E000/code_80447BB0.h"
+#include "common/types_1dc8418c21db.h"
 #include "types.h"
 
-/* Fills a local 32-byte buffer and passes it with an entry's words at 4 and 8, 0x400 and a zero to
-   func_802B8880_de. Every byte of the buffer is the entry's byte at offset 0x65: the loop never
-   advances through the entry, as the cartridge's own code does not. */
+/* Select the PFS active bank. Existing PFS consumers supply the canonical
+ * queue/channel/activebank fields at offsets 4, 8 and 0x65. The cartridge
+ * returns the controller write result directly (v0 survives the epilogue). */
+extern u32 func_802B8880_de(void *queue, s32 channel, u16 address,
+                           u8 *buffer, s32 force);
 
-
-extern void func_802B8880_de(s32, s32, s32, u8 *, s32);
-
-void func_80448CC4_de(struct Entry_func_80448CC4_de *entry) {
+s32 func_80448CC4_de(OSPfs_func_80445F80_de *pfs)
+{
     u8 name[32];
     s32 i;
 
     for (i = 0; i < 32; i++) {
-        name[i] = entry->name[0];
+        name[i] = pfs->activebank;
     }
-    func_802B8880_de(entry->first, entry->second, 0x400, name, 0);
+    return func_802B8880_de(pfs->queue, pfs->channel, 0x400, name, 0);
 }
