@@ -2382,7 +2382,7 @@ segments:
       - [0xB8620, c, "func_802B7A20_de"]
       - [0xB86D8, c, "func_802B7AD8_de"]
       - [0xB878C, asm, "func_802B7B8C_de"]
-      - [0xB8790, asm, "func_802B7B90_de"]
+      - [0xB8790, c, "func_802B7B90_de"]
       - [0xB882C, asm, "func_802B7C2C_de"]
       - [0xB8830, c, "func_802B7C30_de"]
       - [0xB8848, asm, "func_802B7C48_de"]
