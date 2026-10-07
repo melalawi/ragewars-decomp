@@ -4,8 +4,8 @@
   "source_pins": {
     ".github/workflows/progress.yml": "ae5a595d712cdc2e4f7fab6e5e82524449d1e7b159ace073bfada2d2eba91ed7",
     ".gitlab-ci.yml": "c01ee4acc3f49f21345279384b9f8ec8af2e526d6d9035ef8b2a373dabedd73c",
-    "attempts.json": "05e108271168b576d53bc22d93360130571faa77745b08099b1a7aa5de299ea3",
-    "config.toml": "b51761f2bc6e301c84fc1fdefce5a8affc6ed4f9d3d684d2c7397ab90eceae32",
+    "attempts.json": "908bc9b4d1fefc8da2f7ade377a97270f1eb00ee65a8067849f35fdb5e41377a",
+    "config.toml": "b9fa03f7d1662af410a6c9ccc0f5b5def1154dc071082a8d3eb40ae79ab6ae61",
     "include/abi.h": "cff5a56cde9e9c6f6229882328d71b038544f4c8102196347b92ac2df6a84951",
     "include/acmd.h": "522f0c6ad06a44f89de7e93dd9caa51ef62e811027a48ce12dd04a3b79db60ac",
     "include/audio_callbacks.h": "15d5c8bdec38dc2bf6412c28a89f3f8a8db2f6060710eb89a171bf46c40b10fe",
@@ -299,6 +299,7 @@
     "src/func_80200D18_de.c": "fefd3719342a7096a0f44389d97573038ec833050f0c0fe673bee11f33e81692",
     "src/func_80200F98_de.c": "776e8f65b64b4897944cc28d508b8e67661f0e6b574a00e30a6c2eaf0bcbf503",
     "src/func_80201064_de.c": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
+    "src/func_802012D8_de.c": "fa5dde333ffc2d72dec15186ccb9c612192154a960e3e24ae388f9b9e454684b",
     "src/func_802016DC_de.c": "1dcf4adcc3f1b9ada19c5c39f4ebd64c9b2fdb762c072d032636fba0fad46bfa",
     "src/func_8020238C_de.s": "79f2309e187222951b8898b44a725381bb2d7f9bd03082d75fd94baee233dd2a",
     "src/func_802023A8_de.s": "c7ae9cccec46bd43fa3b573baf1315b9b23e8b9093d4cdbe687273bf92a73517",
@@ -3227,247 +3228,13 @@
   },
   "versions": {
     "de": {
-      "report_sha256": "6c702bf5e820efb2a1141bd731fa89b581a06155af8556a9bff9a550ba5415a9",
+      "report_sha256": "b2b08a41a8bf75f5fe87452c585d73f86559fd9a2e98de97cf8f4d42f5c305de",
       "artifact": "de_report",
       "report_file": "de_report.json",
-      "draft_bytes": 2132,
-      "draft_functions": 13,
-      "draft_weighted_bytes": 1663.1480498,
-      "unknown_similarity_bytes": 0,
-      "drafts": [
-        {
-          "name": "func_802005DC_de",
-          "source_path": "src/func_802005DC_de.c",
-          "bytes": 52,
-          "score": 28.571429,
-          "source_sha256": "50b9af2bd29b1cdb7208dbd331073c880b21d0ef2184f4bf77572674460781d7",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200C28_de",
-          "source_path": "src/func_80200C28_de.c",
-          "bytes": 120,
-          "score": 70.0,
-          "source_sha256": "96b8e5ad656bd37d48a4d0013f80adc7a9d3f8b9673cb30228ec513da82c056f",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200CA0_de",
-          "source_path": "src/func_80200CA0_de.c",
-          "bytes": 120,
-          "score": 70.0,
-          "source_sha256": "d038719007542d4429e9eaf19ee02cc25e3fef33a026e05bac1d0bd3aedb0194",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200D18_de",
-          "source_path": "src/func_80200D18_de.c",
-          "bytes": 236,
-          "score": 94.915254,
-          "source_sha256": "fefd3719342a7096a0f44389d97573038ec833050f0c0fe673bee11f33e81692",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80200F98_de",
-          "source_path": "src/func_80200F98_de.c",
-          "bytes": 204,
-          "score": 96.078431,
-          "source_sha256": "776e8f65b64b4897944cc28d508b8e67661f0e6b574a00e30a6c2eaf0bcbf503",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80201064_de",
-          "source_path": "src/func_80201064_de.c",
-          "bytes": 116,
-          "score": 96.551724,
-          "source_sha256": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8022F454_de",
-          "source_path": "src/func_8022F454_de.c",
-          "bytes": 104,
-          "score": 65.384615,
-          "source_sha256": "f746b543b2dbc7857847ebc137c50a2011ba9d77315b495d6b8c4bc013416d17",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8029ABA0_de",
-          "source_path": "src/func_8029ABA0_de.c",
-          "bytes": 408,
-          "score": 75.490196,
-          "source_sha256": "5d92e36822d60231bd613cd95c8357130354a7affa2d3f2e0ca1de0e5ac17d91",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8029B278_de",
-          "source_path": "src/func_8029B278_de.c",
-          "bytes": 328,
-          "score": 76.829268,
-          "source_sha256": "c99fa9bb71abfe35e4f021264110d8149b6f57288ab616ea0f8481236ab11e8e",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_802BC508_de",
-          "source_path": "src/func_802BC508_de.c",
-          "bytes": 80,
-          "score": 15.0,
-          "source_sha256": "c0e093b6c3c53f3e1c4fd79d1b423787ef2e517c3a4dc2a643f0caf8fd638674",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_802BC558_de",
-          "source_path": "src/func_802BC558_de.c",
-          "bytes": 24,
-          "score": 50.0,
-          "source_sha256": "b104f016e1c351682354bb402c6ad42f08e9ff611e713990f0685c7b04a109c6",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8042AF3C_de",
-          "source_path": "src/func_8042AF3C_de.c",
-          "bytes": 124,
-          "score": 77.419355,
-          "source_sha256": "faa277f1e85e43f321e707e66c5f635a8ed3975ed4fd6e5e2e3c9e19e687dd1d",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8044DE7C_de",
-          "source_path": "src/func_8044DE7C_de.c",
-          "bytes": 216,
-          "score": 92.727273,
-          "source_sha256": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
-          "compiler": "gcc-2.8.1-sn64"
-        }
-      ],
-      "exact_plus_draft_percent": 60.13155179716262,
-      "data_match_state": "unknown"
-    },
-    "eu": {
-      "report_sha256": "76e23da76d9128fb859723a51a08a495ee5df5e5a736679acb86436394bb4de7",
-      "artifact": "eu_report",
-      "report_file": "eu_report.json",
-      "draft_bytes": 2132,
-      "draft_functions": 13,
-      "draft_weighted_bytes": 1663.1480498,
-      "unknown_similarity_bytes": 0,
-      "drafts": [
-        {
-          "name": "func_802005DC_de",
-          "source_path": "src/func_802005DC_de.c",
-          "bytes": 52,
-          "score": 28.571429,
-          "source_sha256": "50b9af2bd29b1cdb7208dbd331073c880b21d0ef2184f4bf77572674460781d7",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200C28_de",
-          "source_path": "src/func_80200C28_de.c",
-          "bytes": 120,
-          "score": 70.0,
-          "source_sha256": "96b8e5ad656bd37d48a4d0013f80adc7a9d3f8b9673cb30228ec513da82c056f",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200CA0_de",
-          "source_path": "src/func_80200CA0_de.c",
-          "bytes": 120,
-          "score": 70.0,
-          "source_sha256": "d038719007542d4429e9eaf19ee02cc25e3fef33a026e05bac1d0bd3aedb0194",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200D18_de",
-          "source_path": "src/func_80200D18_de.c",
-          "bytes": 236,
-          "score": 94.915254,
-          "source_sha256": "fefd3719342a7096a0f44389d97573038ec833050f0c0fe673bee11f33e81692",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80200F98_de",
-          "source_path": "src/func_80200F98_de.c",
-          "bytes": 204,
-          "score": 96.078431,
-          "source_sha256": "776e8f65b64b4897944cc28d508b8e67661f0e6b574a00e30a6c2eaf0bcbf503",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80201064_de",
-          "source_path": "src/func_80201064_de.c",
-          "bytes": 116,
-          "score": 96.551724,
-          "source_sha256": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8022F454_de",
-          "source_path": "src/func_8022F454_de.c",
-          "bytes": 104,
-          "score": 65.384615,
-          "source_sha256": "f746b543b2dbc7857847ebc137c50a2011ba9d77315b495d6b8c4bc013416d17",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8029ABA0_de",
-          "source_path": "src/func_8029ABA0_de.c",
-          "bytes": 408,
-          "score": 75.490196,
-          "source_sha256": "5d92e36822d60231bd613cd95c8357130354a7affa2d3f2e0ca1de0e5ac17d91",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8029B278_de",
-          "source_path": "src/func_8029B278_de.c",
-          "bytes": 328,
-          "score": 76.829268,
-          "source_sha256": "c99fa9bb71abfe35e4f021264110d8149b6f57288ab616ea0f8481236ab11e8e",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_802BC508_de",
-          "source_path": "src/func_802BC508_de.c",
-          "bytes": 80,
-          "score": 15.0,
-          "source_sha256": "c0e093b6c3c53f3e1c4fd79d1b423787ef2e517c3a4dc2a643f0caf8fd638674",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_802BC558_de",
-          "source_path": "src/func_802BC558_de.c",
-          "bytes": 24,
-          "score": 50.0,
-          "source_sha256": "b104f016e1c351682354bb402c6ad42f08e9ff611e713990f0685c7b04a109c6",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8042AF3C_de",
-          "source_path": "src/func_8042AF3C_de.c",
-          "bytes": 124,
-          "score": 77.419355,
-          "source_sha256": "faa277f1e85e43f321e707e66c5f635a8ed3975ed4fd6e5e2e3c9e19e687dd1d",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8044DE7C_de",
-          "source_path": "src/func_8044DE7C_de.c",
-          "bytes": 216,
-          "score": 92.727273,
-          "source_sha256": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
-          "compiler": "gcc-2.8.1-sn64"
-        }
-      ],
-      "exact_plus_draft_percent": 60.138705534912,
-      "data_match_state": "unknown"
-    },
-    "eu-x": {
-      "report_sha256": "2d599ecfe66e5685123a7712bca6e3e58a88acee08c093e32f8b30c60c4f5450",
-      "artifact": "eu-x_report",
-      "report_file": "eu-x_report.json",
-      "draft_bytes": 2212,
+      "draft_bytes": 2388,
       "draft_functions": 14,
-      "draft_weighted_bytes": 1663.1480498,
-      "unknown_similarity_bytes": 80,
+      "draft_weighted_bytes": 1871.88651252,
+      "unknown_similarity_bytes": 0,
       "drafts": [
         {
           "name": "func_802005DC_de",
@@ -3518,6 +3285,14 @@
           "compiler": "gcc-2.8.1-sn64"
         },
         {
+          "name": "func_802012D8_de",
+          "source_path": "src/func_802012D8_de.c",
+          "bytes": 256,
+          "score": 81.538462,
+          "source_sha256": "fa5dde333ffc2d72dec15186ccb9c612192154a960e3e24ae388f9b9e454684b",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
           "name": "func_8022F454_de",
           "source_path": "src/func_8022F454_de.c",
           "bytes": 104,
@@ -3558,14 +3333,6 @@
           "compiler": "gcc-2.8.1-sn64"
         },
         {
-          "name": "func_804147F0_eu_x",
-          "source_path": "src/func_804147F0_eu_x.c",
-          "bytes": 80,
-          "score": null,
-          "source_sha256": "fc569876ae3283825aed96f0b82ed3421e03b89ea5ee9c3502703d5f1178c415",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
           "name": "func_8042AF3C_de",
           "source_path": "src/func_8042AF3C_de.c",
           "bytes": 124,
@@ -3582,16 +3349,16 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.073958389430416,
+      "exact_plus_draft_percent": 60.15471997277739,
       "data_match_state": "unknown"
     },
     "us": {
-      "report_sha256": "1a9c6e05798f5803a188af26cb45518a49e0d1fdbfa1861d0f71a8d300432665",
+      "report_sha256": "390fecbe763333e477ff2d2c8fb249a48307efc71c9a982e3a215d3d4f9cb4ae",
       "artifact": "us_report",
       "report_file": "us_report.json",
-      "draft_bytes": 2132,
-      "draft_functions": 13,
-      "draft_weighted_bytes": 1663.1480498,
+      "draft_bytes": 2388,
+      "draft_functions": 14,
+      "draft_weighted_bytes": 1871.88651252,
       "unknown_similarity_bytes": 0,
       "drafts": [
         {
@@ -3641,6 +3408,14 @@
           "score": 96.551724,
           "source_sha256": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
           "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802012D8_de",
+          "source_path": "src/func_802012D8_de.c",
+          "bytes": 256,
+          "score": 81.538462,
+          "source_sha256": "fa5dde333ffc2d72dec15186ccb9c612192154a960e3e24ae388f9b9e454684b",
+          "compiler": "gcc-2.7.2-kmc"
         },
         {
           "name": "func_8022F454_de",
@@ -3699,16 +3474,16 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.05805822391089,
+      "exact_plus_draft_percent": 62.082158148222064,
       "data_match_state": "unknown"
     },
     "us-rev1": {
-      "report_sha256": "9bfb8e8799ca9e2680f8ebb006fb4c45672e7510066528082ed914b8a18d1429",
+      "report_sha256": "d16b6807a763ac76b07cbcc16e8dde11c304106abf83f0bb41e13d01658f59d5",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
-      "draft_bytes": 2212,
-      "draft_functions": 14,
-      "draft_weighted_bytes": 1663.1480498,
+      "draft_bytes": 2468,
+      "draft_functions": 15,
+      "draft_weighted_bytes": 1871.88651252,
       "unknown_similarity_bytes": 80,
       "drafts": [
         {
@@ -3758,6 +3533,14 @@
           "score": 96.551724,
           "source_sha256": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
           "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802012D8_de",
+          "source_path": "src/func_802012D8_de.c",
+          "bytes": 256,
+          "score": 81.538462,
+          "source_sha256": "fa5dde333ffc2d72dec15186ccb9c612192154a960e3e24ae388f9b9e454684b",
+          "compiler": "gcc-2.7.2-kmc"
         },
         {
           "name": "func_8022F454_de",
@@ -3824,7 +3607,265 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.37984885047928,
+      "exact_plus_draft_percent": 61.402461214495936,
+      "data_match_state": "unknown"
+    },
+    "eu": {
+      "report_sha256": "0bda2cba0b7fb6c6bcdd4cf744035919d8234e8664467cf663778883adc087f1",
+      "artifact": "eu_report",
+      "report_file": "eu_report.json",
+      "draft_bytes": 2388,
+      "draft_functions": 14,
+      "draft_weighted_bytes": 1871.88651252,
+      "unknown_similarity_bytes": 0,
+      "drafts": [
+        {
+          "name": "func_802005DC_de",
+          "source_path": "src/func_802005DC_de.c",
+          "bytes": 52,
+          "score": 28.571429,
+          "source_sha256": "50b9af2bd29b1cdb7208dbd331073c880b21d0ef2184f4bf77572674460781d7",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200C28_de",
+          "source_path": "src/func_80200C28_de.c",
+          "bytes": 120,
+          "score": 70.0,
+          "source_sha256": "96b8e5ad656bd37d48a4d0013f80adc7a9d3f8b9673cb30228ec513da82c056f",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200CA0_de",
+          "source_path": "src/func_80200CA0_de.c",
+          "bytes": 120,
+          "score": 70.0,
+          "source_sha256": "d038719007542d4429e9eaf19ee02cc25e3fef33a026e05bac1d0bd3aedb0194",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200D18_de",
+          "source_path": "src/func_80200D18_de.c",
+          "bytes": 236,
+          "score": 94.915254,
+          "source_sha256": "fefd3719342a7096a0f44389d97573038ec833050f0c0fe673bee11f33e81692",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80200F98_de",
+          "source_path": "src/func_80200F98_de.c",
+          "bytes": 204,
+          "score": 96.078431,
+          "source_sha256": "776e8f65b64b4897944cc28d508b8e67661f0e6b574a00e30a6c2eaf0bcbf503",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80201064_de",
+          "source_path": "src/func_80201064_de.c",
+          "bytes": 116,
+          "score": 96.551724,
+          "source_sha256": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802012D8_de",
+          "source_path": "src/func_802012D8_de.c",
+          "bytes": 256,
+          "score": 81.538462,
+          "source_sha256": "fa5dde333ffc2d72dec15186ccb9c612192154a960e3e24ae388f9b9e454684b",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_8022F454_de",
+          "source_path": "src/func_8022F454_de.c",
+          "bytes": 104,
+          "score": 65.384615,
+          "source_sha256": "f746b543b2dbc7857847ebc137c50a2011ba9d77315b495d6b8c4bc013416d17",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8029ABA0_de",
+          "source_path": "src/func_8029ABA0_de.c",
+          "bytes": 408,
+          "score": 75.490196,
+          "source_sha256": "5d92e36822d60231bd613cd95c8357130354a7affa2d3f2e0ca1de0e5ac17d91",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8029B278_de",
+          "source_path": "src/func_8029B278_de.c",
+          "bytes": 328,
+          "score": 76.829268,
+          "source_sha256": "c99fa9bb71abfe35e4f021264110d8149b6f57288ab616ea0f8481236ab11e8e",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802BC508_de",
+          "source_path": "src/func_802BC508_de.c",
+          "bytes": 80,
+          "score": 15.0,
+          "source_sha256": "c0e093b6c3c53f3e1c4fd79d1b423787ef2e517c3a4dc2a643f0caf8fd638674",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802BC558_de",
+          "source_path": "src/func_802BC558_de.c",
+          "bytes": 24,
+          "score": 50.0,
+          "source_sha256": "b104f016e1c351682354bb402c6ad42f08e9ff611e713990f0685c7b04a109c6",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8042AF3C_de",
+          "source_path": "src/func_8042AF3C_de.c",
+          "bytes": 124,
+          "score": 77.419355,
+          "source_sha256": "faa277f1e85e43f321e707e66c5f635a8ed3975ed4fd6e5e2e3c9e19e687dd1d",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8044DE7C_de",
+          "source_path": "src/func_8044DE7C_de.c",
+          "bytes": 216,
+          "score": 92.727273,
+          "source_sha256": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
+          "compiler": "gcc-2.8.1-sn64"
+        }
+      ],
+      "exact_plus_draft_percent": 60.161727200457555,
+      "data_match_state": "unknown"
+    },
+    "eu-x": {
+      "report_sha256": "5d4965a679c8658fbada934d7fa290cbfdab58bed37aae65f3cf5ceb7ce5aa7b",
+      "artifact": "eu-x_report",
+      "report_file": "eu-x_report.json",
+      "draft_bytes": 2468,
+      "draft_functions": 15,
+      "draft_weighted_bytes": 1871.88651252,
+      "unknown_similarity_bytes": 80,
+      "drafts": [
+        {
+          "name": "func_802005DC_de",
+          "source_path": "src/func_802005DC_de.c",
+          "bytes": 52,
+          "score": 28.571429,
+          "source_sha256": "50b9af2bd29b1cdb7208dbd331073c880b21d0ef2184f4bf77572674460781d7",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200C28_de",
+          "source_path": "src/func_80200C28_de.c",
+          "bytes": 120,
+          "score": 70.0,
+          "source_sha256": "96b8e5ad656bd37d48a4d0013f80adc7a9d3f8b9673cb30228ec513da82c056f",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200CA0_de",
+          "source_path": "src/func_80200CA0_de.c",
+          "bytes": 120,
+          "score": 70.0,
+          "source_sha256": "d038719007542d4429e9eaf19ee02cc25e3fef33a026e05bac1d0bd3aedb0194",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200D18_de",
+          "source_path": "src/func_80200D18_de.c",
+          "bytes": 236,
+          "score": 94.915254,
+          "source_sha256": "fefd3719342a7096a0f44389d97573038ec833050f0c0fe673bee11f33e81692",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80200F98_de",
+          "source_path": "src/func_80200F98_de.c",
+          "bytes": 204,
+          "score": 96.078431,
+          "source_sha256": "776e8f65b64b4897944cc28d508b8e67661f0e6b574a00e30a6c2eaf0bcbf503",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80201064_de",
+          "source_path": "src/func_80201064_de.c",
+          "bytes": 116,
+          "score": 96.551724,
+          "source_sha256": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802012D8_de",
+          "source_path": "src/func_802012D8_de.c",
+          "bytes": 256,
+          "score": 81.538462,
+          "source_sha256": "fa5dde333ffc2d72dec15186ccb9c612192154a960e3e24ae388f9b9e454684b",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_8022F454_de",
+          "source_path": "src/func_8022F454_de.c",
+          "bytes": 104,
+          "score": 65.384615,
+          "source_sha256": "f746b543b2dbc7857847ebc137c50a2011ba9d77315b495d6b8c4bc013416d17",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8029ABA0_de",
+          "source_path": "src/func_8029ABA0_de.c",
+          "bytes": 408,
+          "score": 75.490196,
+          "source_sha256": "5d92e36822d60231bd613cd95c8357130354a7affa2d3f2e0ca1de0e5ac17d91",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8029B278_de",
+          "source_path": "src/func_8029B278_de.c",
+          "bytes": 328,
+          "score": 76.829268,
+          "source_sha256": "c99fa9bb71abfe35e4f021264110d8149b6f57288ab616ea0f8481236ab11e8e",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802BC508_de",
+          "source_path": "src/func_802BC508_de.c",
+          "bytes": 80,
+          "score": 15.0,
+          "source_sha256": "c0e093b6c3c53f3e1c4fd79d1b423787ef2e517c3a4dc2a643f0caf8fd638674",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802BC558_de",
+          "source_path": "src/func_802BC558_de.c",
+          "bytes": 24,
+          "score": 50.0,
+          "source_sha256": "b104f016e1c351682354bb402c6ad42f08e9ff611e713990f0685c7b04a109c6",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_804147F0_eu_x",
+          "source_path": "src/func_804147F0_eu_x.c",
+          "bytes": 80,
+          "score": null,
+          "source_sha256": "fc569876ae3283825aed96f0b82ed3421e03b89ea5ee9c3502703d5f1178c415",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8042AF3C_de",
+          "source_path": "src/func_8042AF3C_de.c",
+          "bytes": 124,
+          "score": 77.419355,
+          "source_sha256": "faa277f1e85e43f321e707e66c5f635a8ed3975ed4fd6e5e2e3c9e19e687dd1d",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8044DE7C_de",
+          "source_path": "src/func_8044DE7C_de.c",
+          "bytes": 216,
+          "score": 92.727273,
+          "source_sha256": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
+          "compiler": "gcc-2.8.1-sn64"
+        }
+      ],
+      "exact_plus_draft_percent": 60.09693575313695,
       "data_match_state": "unknown"
     }
   },
