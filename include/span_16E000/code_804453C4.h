@@ -155,4 +155,6 @@ struct Entry_func_80445E04_de;
 typedef struct Entry_func_80445E04_de Entry_func_80445E04_de;
 
 extern int func_80446330_us_rev1(void * arg0);
+struct Field;
+extern s32 func_80445310_de(struct Field *field);
 #endif

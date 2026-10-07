@@ -218,4 +218,9 @@ struct Owner_func_804099EC_de;
 /* unbake published declaration: published_ff4eff6336184198f4577f63 */
 extern void func_804099EC_de(struct Owner_func_804099EC_de *owner);
 
+struct PakStatusPakSaveMenu;
+struct PakNotesMenu;
+extern s32 func_80408118_de(struct PakNoteTextEntry *entry, struct PakStatusPakSaveMenu *menu);
+extern s32 func_80407F6C_de(struct PakNoteTextEntry *entry, struct PakNotesMenu *menu);
+extern s32 func_8041C494_de(void);
 #endif

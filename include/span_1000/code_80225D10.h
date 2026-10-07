@@ -5046,4 +5046,6 @@ struct func_80229BE0_S1;
 /* unbake published declaration: published_face534eec2e0698231c8c1f */
 typedef struct func_80229BE0_S1 func_80229BE0_S1;
 
+struct SharedPlayer;
+extern void func_80229814_de(struct SharedPlayer *player, f32 amount);
 #endif

@@ -343,7 +343,7 @@ eu.U.func_802282EC_de := 0x80228388:0x28F88:0xCC
 eu.U.func_802283B8_de := 0x80228454:0x29054:0xA0C
 eu.S.00029A60 := 170592 884
 eu.U.func_80228FB8_de := 0x802291D4:0x29DD4:0x85C
-eu.S.0002A630 := 173616 612
+eu.U.func_80229814_de := 0x80229A30:0x2A630:0x264
 eu.U.func_80229A80_de := 0x80229C94:0x2A894:0x820
 eu.U.func_8022A2A0_de := 0x8022A4B4:0x2B0B4:0x88
 eu.U.func_8022A328_de := 0x8022A53C:0x2B13C:0x70
@@ -2691,7 +2691,7 @@ eu.U.func_8041C3DC_de := 0x8041C82C:0x19282C:0x30
 eu.U.func_8041C40C_de := 0x8041C85C:0x19285C:0x60
 eu.U.func_8041C46C_de := 0x8041C8BC:0x1928BC:0x8
 eu.U.func_8041C474_de := 0x8041C8C4:0x1928C4:0x20
-eu.S.001928E4 := 1648868 216
+eu.U.func_8041C494_de := 0x8041C8E4:0x1928E4:0xD8
 eu.U.func_8041C574_de := 0x8041C9BC:0x1929BC:0x90
 eu.S.00192A4C := 1649228 1956
 eu.U.func_8041CDB0_de := 0x8041D1F0:0x1931F0:0x88
@@ -3064,7 +3064,7 @@ eu.U.func_80438ADC_de := 0x804399B0:0x1AF9B0:0x1A8
 eu.U.func_80438C84_de := 0x80439B58:0x1AFB58:0x110
 eu.S.001AFC68 := 1768552 200
 eu.U.func_80438E5C_de := 0x80439D30:0x1AFD30:0xB0
-eu.S.001AFDE0 := 1768928 208
+eu.U.func_80438F0C_de := 0x80439DE0:0x1AFDE0:0xD0
 eu.U.func_80438FE0_de := 0x80439EB0:0x1AFEB0:0x30
 eu.U.func_80439010_de := 0x80439EE0:0x1AFEE0:0x8
 eu.U.func_80439018_de := 0x80439EE8:0x1AFEE8:0x110
@@ -3681,7 +3681,7 @@ eu.PIECES := \
   build/eu/units/func_802283B8_de.bin \
   build/eu/slices/00029A60.bin \
   build/eu/units/func_80228FB8_de.bin \
-  build/eu/slices/0002A630.bin \
+  build/eu/units/func_80229814_de.bin \
   build/eu/units/func_80229A80_de.bin \
   build/eu/units/func_8022A2A0_de.bin \
   build/eu/units/func_8022A328_de.bin \
@@ -6029,7 +6029,7 @@ eu.PIECES := \
   build/eu/units/func_8041C40C_de.bin \
   build/eu/units/func_8041C46C_de.bin \
   build/eu/units/func_8041C474_de.bin \
-  build/eu/slices/001928E4.bin \
+  build/eu/units/func_8041C494_de.bin \
   build/eu/units/func_8041C574_de.bin \
   build/eu/slices/00192A4C.bin \
   build/eu/units/func_8041CDB0_de.bin \
@@ -6402,7 +6402,7 @@ eu.PIECES := \
   build/eu/units/func_80438C84_de.bin \
   build/eu/slices/001AFC68.bin \
   build/eu/units/func_80438E5C_de.bin \
-  build/eu/slices/001AFDE0.bin \
+  build/eu/units/func_80438F0C_de.bin \
   build/eu/units/func_80438FE0_de.bin \
   build/eu/units/func_80439010_de.bin \
   build/eu/units/func_80439018_de.bin \

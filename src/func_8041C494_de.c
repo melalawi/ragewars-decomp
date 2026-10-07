@@ -1,0 +1,65 @@
+#include "common/types_8a8189af7b05.h"
+#include "span_16E000/code_80405DC0.h"
+#include "types.h"
+#include "common/unused.h"
+
+extern SlotDialog *D_800DF4C8;
+
+/* The slot-error scalar is real external storage in every ROM version. */
+#if defined(VERSION_EU) || defined(VERSION_DE) || defined(VERSION_US)
+#elif defined(VERSION_EU_X)
+extern s32 D_800EACF4;
+#else
+extern s32 D_800E3514;
+#endif
+
+#if defined(VERSION_EU)
+extern s32 D_800EFB34;
+#elif defined(VERSION_DE)
+extern s32 D_800DF4C4;
+#elif defined(VERSION_US)
+extern s32 D_800DE174;
+#else
+#endif
+extern void func_8029973C_de(void);
+extern s32 func_80299A08_de(void);
+extern void func_8040E8D8_de(void *, s32);
+extern void func_8041BE90_de(void);
+extern void func_8041C244_de(void);
+extern void func_80434FB4_de(s32);
+extern void func_80298368_de(s32);
+
+s32 func_8041C494_de(void) {
+    func_8029973C_de();
+    switch (func_80299A08_de()) {
+    case 0x3CB:
+        func_8040E8D8_de((void *)D_800DF4C8->absent, 0);
+        func_8041BE90_de();
+        break;
+    case 0x3CA:
+        func_8041C164_de();
+        break;
+    case 0x3C7:
+        func_8041C244_de();
+        break;
+    case 0x3C6:
+        D_80142CA0_de = 1;
+        D_800DE87C_de = 1;
+        D_80146CD4_de = 0;
+#if defined(VERSION_EU)
+        D_800EFB34 = 1;
+#elif defined(VERSION_EU_X)
+        D_800EACF4 = 1;
+#elif defined(VERSION_DE)
+        D_800DF4C4 = 1;
+#elif defined(VERSION_US)
+        D_800DE174 = 1;
+#else
+        D_800E3514 = 1;
+#endif
+        func_80434FB4_de(6);
+        func_80298368_de(0x13);
+        break;
+    }
+    return 0;
+}

@@ -161,4 +161,6 @@ struct func_802958D8_S1;
 typedef struct func_802958D8_S1 func_802958D8_S1;
 
 extern void func_80294C84_de(void);
+struct Resource_func_80294C8C_de;
+extern void func_80294C8C_de(s32 index, struct Resource_func_80294C8C_de *resource);
 #endif
