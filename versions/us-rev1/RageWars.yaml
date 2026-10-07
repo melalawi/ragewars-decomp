@@ -1147,7 +1147,7 @@ segments:
       - [0x56E20, c, "func_80256280_de"]
       - [0x56F1C, c, "func_8025637C_de"]
       - [0x56FF4, c, "func_80256454_de"]
-      - [0x5711C, asm, "func_8025651C_us_rev1"]
+      - [0x5711C, c, "func_8025651C_us_rev1"]
       - [0x5723C, c, "func_8025661C_de"]
       - [0x57308, data, "func_802566E8_de_padding_57308"]
       - [0x057310, asm, "func_802566E8_de"]
