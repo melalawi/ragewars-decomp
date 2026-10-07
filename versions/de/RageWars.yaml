@@ -147,7 +147,7 @@ segments:
       - [0x5C94, data, "func_80205094_de_padding_5C94"]
       - [0x005CA0, asm, "func_802050A0_de"]
       - [0x5E0C, c, "func_8020520C_de"]
-      - [0x5EC4, asm, "func_802052C4_de"]
+      - [0x5EC4, c, "func_802052C4_de"]
       - [0x5EF8, c, "func_802052F8_de"]
       - [0x5F24, asm, "func_80205324_de"]
       - [0x6094, c, "func_80205494_de"]
