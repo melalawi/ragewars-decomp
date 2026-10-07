@@ -41,6 +41,14 @@ build/%/src/func_80200C28_de.i build/%/src/func_80200C28_de.key build/%/units/fu
 build/%/src/func_80200C28_de.i build/%/src/func_80200C28_de.key build/%/units/func_80200C28_de.bin: COMPILER_DEFINES := 
 build/%/src/func_80200C28_de.i build/%/src/func_80200C28_de.key build/%/units/func_80200C28_de.bin: ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
 build/%/src/func_80200C28_de.i build/%/src/func_80200C28_de.key build/%/units/func_80200C28_de.bin: TRIM := 
+build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -DNON_MATCHING
+build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: KIND := gnu
+build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: CC := tools/gcc-2.7.2-kmc/cc1
+build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: CODEGEN := -G0 -mips3 -mgp32 -mfp32 -O2
+build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: COMPILER_INCLUDES := 
+build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: COMPILER_DEFINES := 
+build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
+build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: TRIM := 
 build/%/src/func_802016DC_de.i build/%/src/func_802016DC_de.key build/%/units/func_802016DC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80202CA0_de.i build/%/src/func_80202CA0_de.key build/%/units/func_80202CA0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80202FDC_de.i build/%/src/func_80202FDC_de.key build/%/units/func_80202FDC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
