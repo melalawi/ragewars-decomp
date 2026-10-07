@@ -1435,6 +1435,7 @@
     "src/func_8026B504_de.c": "e9281e53642e43a645b7907f785900270e5ddfc2f8b4d2ccbc5b7608e2ff2470",
     "src/func_8026B9EC_de.c": "6ebe9a94f49839ff53af83078fb71ba5ceac9de53b0f8039d5db5ccb763f21e9",
     "src/func_8026C020_de.c": "d06fce76ce49f4f1d56ee2c4ebbf8ac67e2adefae442b1005e174c3e179b2855",
+    "src/func_8026C6D8_de.c": "01298128890a41ee3343909341a0aae0ad1b67ebb08ac8d9c282c96fe30b2b94",
     "src/func_8026C978_de.c": "88fdd4a5c0b34e54c4340689ea4b01c3e0d24929cbe194248a9fa9237402b5b9",
     "src/func_8026D4F0_de.c": "37bd94e937e43027b8d87bb954a884ed78106da65b19ef33dbcdbe6a3e8cc45d",
     "src/func_8026D83C_de.c": "85280b85fb95de3588fbda6bf644a201a2b9b65a3e7558b9772f0715084296da",
@@ -3242,16 +3243,16 @@
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
     "versions/us-rev1/RageWars.yaml": "c3e5a71f2f087990ce310c17c89b169e55b0f1443dde77bf95c1a70f38ad2b22",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5",
-    "publication-state": "7990bea3d9a1e4c6bcf69d4fb055dfe2b3443423f1ffea0c3ad1a184eae29e1d"
+    "publication-state": "7ee4c1dcd9632f3935a6d979241774e33c600ae89f148322aa88d43d85ef72a8"
   },
   "versions": {
     "us": {
-      "report_sha256": "d4fe28e7ec5d267a27d06d7253a345ed5d7253fe797850e0fd3c6b57583adb33",
+      "report_sha256": "2069bb15de80d094b81a236fa07b1e99592f8988f65425bb130081f2e96f650f",
       "artifact": "us_report",
       "report_file": "us_report.json",
-      "draft_bytes": 6144,
-      "draft_functions": 24,
-      "draft_weighted_bytes": 4386.1881958,
+      "draft_bytes": 6816,
+      "draft_functions": 25,
+      "draft_weighted_bytes": 4854.18819484,
       "unknown_similarity_bytes": 0,
       "drafts": [
         {
@@ -3359,6 +3360,14 @@
           "compiler": "gcc-2.8.1-sn64"
         },
         {
+          "name": "func_8026C6D8_de",
+          "source_path": "src/func_8026C6D8_de.c",
+          "bytes": 672,
+          "score": 69.642857,
+          "source_sha256": "01298128890a41ee3343909341a0aae0ad1b67ebb08ac8d9c282c96fe30b2b94",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
           "name": "func_80271AA8_de",
           "source_path": "src/func_80271AA8_de.c",
           "bytes": 428,
@@ -3447,16 +3456,16 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.67335941648058,
+      "exact_plus_draft_percent": 62.73662171779742,
       "data_match_state": "unknown"
     },
     "us-rev1": {
-      "report_sha256": "07f4094c1775ff77d024c18b9f2a6f915a2be1be005de5319d716fb9ddda7064",
+      "report_sha256": "d14410f55da2722d37232b4804d29dcbab4bc2326ff170dce74adc903fe89cf7",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
-      "draft_bytes": 6224,
-      "draft_functions": 25,
-      "draft_weighted_bytes": 4386.1881958,
+      "draft_bytes": 6896,
+      "draft_functions": 26,
+      "draft_weighted_bytes": 4854.18819484,
       "unknown_similarity_bytes": 80,
       "drafts": [
         {
@@ -3564,6 +3573,14 @@
           "compiler": "gcc-2.8.1-sn64"
         },
         {
+          "name": "func_8026C6D8_de",
+          "source_path": "src/func_8026C6D8_de.c",
+          "bytes": 672,
+          "score": 69.642857,
+          "source_sha256": "01298128890a41ee3343909341a0aae0ad1b67ebb08ac8d9c282c96fe30b2b94",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
           "name": "func_80271AA8_de",
           "source_path": "src/func_80271AA8_de.c",
           "bytes": 428,
@@ -3660,16 +3677,16 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.954697541965366,
+      "exact_plus_draft_percent": 62.014054997509106,
       "data_match_state": "unknown"
     },
     "eu": {
-      "report_sha256": "a5592cec095e6a8f84690d924cedb7c64c71a6ccafbb1f087982bbccc4eb6329",
+      "report_sha256": "60935d73a41df1d93d874e50e0550296d3ea5b91a037cd2de7cb28d897e9451c",
       "artifact": "eu_report",
       "report_file": "eu_report.json",
-      "draft_bytes": 6144,
-      "draft_functions": 24,
-      "draft_weighted_bytes": 4386.1881958,
+      "draft_bytes": 6816,
+      "draft_functions": 25,
+      "draft_weighted_bytes": 4854.18819484,
       "unknown_similarity_bytes": 0,
       "drafts": [
         {
@@ -3777,6 +3794,14 @@
           "compiler": "gcc-2.8.1-sn64"
         },
         {
+          "name": "func_8026C6D8_de",
+          "source_path": "src/func_8026C6D8_de.c",
+          "bytes": 672,
+          "score": 69.642857,
+          "source_sha256": "01298128890a41ee3343909341a0aae0ad1b67ebb08ac8d9c282c96fe30b2b94",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
           "name": "func_80271AA8_de",
           "source_path": "src/func_80271AA8_de.c",
           "bytes": 428,
@@ -3865,16 +3890,16 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.71532631412343,
+      "exact_plus_draft_percent": 60.775758186180525,
       "data_match_state": "unknown"
     },
     "eu-x": {
-      "report_sha256": "232beac03cf5fd46578ecad4ae748208d9172b44060ba07fe7b08e7b6c847710",
+      "report_sha256": "52e5f58d4b634906618487233ac45d041a8788fc39683531e6d3f38cc1af6e09",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
-      "draft_bytes": 6224,
-      "draft_functions": 25,
-      "draft_weighted_bytes": 4386.1881958,
+      "draft_bytes": 6896,
+      "draft_functions": 26,
+      "draft_weighted_bytes": 4854.18819484,
       "unknown_similarity_bytes": 80,
       "drafts": [
         {
@@ -3982,6 +4007,14 @@
           "compiler": "gcc-2.8.1-sn64"
         },
         {
+          "name": "func_8026C6D8_de",
+          "source_path": "src/func_8026C6D8_de.c",
+          "bytes": 672,
+          "score": 69.642857,
+          "source_sha256": "01298128890a41ee3343909341a0aae0ad1b67ebb08ac8d9c282c96fe30b2b94",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
           "name": "func_80271AA8_de",
           "source_path": "src/func_80271AA8_de.c",
           "bytes": 428,
@@ -4078,16 +4111,16 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.649469546017556,
+      "exact_plus_draft_percent": 60.70978512574721,
       "data_match_state": "unknown"
     },
     "de": {
-      "report_sha256": "2a82ba0db7ac4924ae52cb1175c47558f359911313862a041adcb35a9fe7f9df",
+      "report_sha256": "5ebb61dd0ff95b2184f112ffdc54f225ce3a01d6fd1008258243b2026d71a6ce",
       "artifact": "de_report",
       "report_file": "de_report.json",
-      "draft_bytes": 6140,
-      "draft_functions": 24,
-      "draft_weighted_bytes": 4379.46975236,
+      "draft_bytes": 6812,
+      "draft_functions": 25,
+      "draft_weighted_bytes": 4847.4697514,
       "unknown_similarity_bytes": 0,
       "drafts": [
         {
@@ -4195,6 +4228,14 @@
           "compiler": "gcc-2.8.1-sn64"
         },
         {
+          "name": "func_8026C6D8_de",
+          "source_path": "src/func_8026C6D8_de.c",
+          "bytes": 672,
+          "score": 69.642857,
+          "source_sha256": "01298128890a41ee3343909341a0aae0ad1b67ebb08ac8d9c282c96fe30b2b94",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
           "name": "func_80271AA8_de",
           "source_path": "src/func_80271AA8_de.c",
           "bytes": 428,
@@ -4283,7 +4324,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.71510022045967,
+      "exact_plus_draft_percent": 60.77591668144844,
       "data_match_state": "unknown"
     }
   },
