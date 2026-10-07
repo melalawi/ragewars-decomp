@@ -1367,7 +1367,7 @@ segment = "span_16E000"
 evidence = "inferred"
 members = ["func_80428F08_de", "func_80429178_us_rev1", "func_80429B28_eu", "func_804290F4_de", "func_8042931C_us_rev1", "func_804291D0_de", "func_804294C4_de", "func_80429560_de", "func_80429654_de", "func_804296F4_de", "func_80429724_de", "func_8042972C_de", "func_804297F8_de", "func_804298F8_de", "func_8042994C_de", "func_80429970_de", "func_80429994_de"]
 only = { "func_80429178_us_rev1" = ["us-rev1"], "func_80429B28_eu" = ["us-rev1", "eu"], "func_804290F4_de" = ["us-rev1", "de", "eu", "eu-x"], "func_8042931C_us_rev1" = ["us-rev1"], "func_804291D0_de" = ["us-rev1", "de", "eu", "eu-x"] }
-split = ["func_80429560_de", "func_80429654_de", "func_804296F4_de", "func_80429724_de", "func_804298F8_de", "func_8042994C_de", "func_80429970_de", "func_80429994_de"]
+split = ["func_80429560_de", "func_80429654_de", "func_804296F4_de", "func_80429724_de", "func_804298F8_de", "func_8042994C_de", "func_80429970_de", "func_80429994_de", "func_8042972C_de", "func_804297F8_de"]
 signals = ["callee", "cap", "version"]
 
 [[group]]
