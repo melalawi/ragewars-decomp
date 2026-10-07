@@ -1154,6 +1154,14 @@ build/%/src/func_80264CE0_de.i build/%/src/func_80264CE0_de.key build/%/units/fu
 build/%/src/func_80264DE0_de.i build/%/src/func_80264DE0_de.key build/%/units/func_80264DE0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80264DF0_de.i build/%/src/func_80264DF0_de.key build/%/units/func_80264DF0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80264EE0_de.i build/%/src/func_80264EE0_de.key build/%/units/func_80264EE0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_80264F60_de.i build/%/src/func_80264F60_de.key build/%/units/func_80264F60_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1 -DNON_MATCHING
+build/%/src/func_80264F60_de.i build/%/src/func_80264F60_de.key build/%/units/func_80264F60_de.bin: KIND := gnu
+build/%/src/func_80264F60_de.i build/%/src/func_80264F60_de.key build/%/units/func_80264F60_de.bin: CC := tools/gcc-2.7.2-kmc/cc1
+build/%/src/func_80264F60_de.i build/%/src/func_80264F60_de.key build/%/units/func_80264F60_de.bin: CODEGEN := -G0 -mips3 -mgp32 -mfp32 -O2
+build/%/src/func_80264F60_de.i build/%/src/func_80264F60_de.key build/%/units/func_80264F60_de.bin: COMPILER_INCLUDES := 
+build/%/src/func_80264F60_de.i build/%/src/func_80264F60_de.key build/%/units/func_80264F60_de.bin: COMPILER_DEFINES := 
+build/%/src/func_80264F60_de.i build/%/src/func_80264F60_de.key build/%/units/func_80264F60_de.bin: ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
+build/%/src/func_80264F60_de.i build/%/src/func_80264F60_de.key build/%/units/func_80264F60_de.bin: TRIM := 
 build/%/src/func_802651B0_de.i build/%/src/func_802651B0_de.key build/%/units/func_802651B0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1 -DNON_MATCHING
 build/%/src/func_80265350_de.i build/%/src/func_80265350_de.key build/%/units/func_80265350_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80265900_de.i build/%/src/func_80265900_de.key build/%/units/func_80265900_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
