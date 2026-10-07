@@ -11,29 +11,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
-      - run: mkdir -p out && cp versions/de/report.json out/de_report.json && cp versions/eu/report.json out/eu_report.json && cp versions/eu-x/report.json out/eu-x_report.json && cp versions/us/report.json out/us_report.json && cp versions/us-rev1/report.json out/us-rev1_report.json
+      - name: Verify current source and report semantics
+        run: |
+          set -eu
+          echo 'dde34eb0c9569015b2365c8c51583883deaeadd1fcb799db917d6d0b04b4907c  tools/report-verifier.zip' | sha256sum -c -
+          verifier_dir=$(mktemp -d)
+          python3 -m zipfile -e tools/report-verifier.zip "$verifier_dir"
+          PYTHONPATH="$verifier_dir" python3 -m unbake.report.verify --project . --artifacts out
+      - run: cp versions/de/report.json out/de_report.json && cp versions/eu/report.json out/eu_report.json && cp versions/eu-x/report.json out/eu-x_report.json && cp versions/us/report.json out/us_report.json && cp versions/us-rev1/report.json out/us-rev1_report.json
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: 'de_report'
-          path: 'out/de_report.json'
+          path: |
+            out/de_report.json
+            out/de_report.manifest.json
           if-no-files-found: error
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: 'eu_report'
-          path: 'out/eu_report.json'
+          path: |
+            out/eu_report.json
+            out/eu_report.manifest.json
           if-no-files-found: error
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: 'eu-x_report'
-          path: 'out/eu-x_report.json'
+          path: |
+            out/eu-x_report.json
+            out/eu-x_report.manifest.json
           if-no-files-found: error
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: 'us_report'
-          path: 'out/us_report.json'
+          path: |
+            out/us_report.json
+            out/us_report.manifest.json
           if-no-files-found: error
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: 'us-rev1_report'
-          path: 'out/us-rev1_report.json'
+          path: |
+            out/us-rev1_report.json
+            out/us-rev1_report.manifest.json
           if-no-files-found: error
