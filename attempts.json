@@ -103,6 +103,19 @@
       "exact": false,
       "minutes": 74.35
     },
+    "func_80200B14_de": {
+      "attempts": 1,
+      "best": {
+        "de": 100.0,
+        "eu": 100.0,
+        "eu-x": 100.0,
+        "us": 100.0,
+        "us-rev1": 100.0
+      },
+      "bytes": 276,
+      "exact": true,
+      "minutes": 0.25
+    },
     "func_80200C28_de": {
       "attempts": 3,
       "best": {
