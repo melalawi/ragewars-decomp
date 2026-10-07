@@ -5085,7 +5085,7 @@ segments:
       - [0x197C04, data, "func_80429A24_de_padding_197C04"]
       - [0x197C10, asm, "func_80429A24_de"]
       - [0x1981D0, c, "func_80429FF0_de"]
-      - [0x198490, asm, "func_8042AE60_eu"]
+      - [0x198490, c, "func_8042AE60_eu"]
       - [0x198994, c, "func_8042A7B4_de"]
       - [0x198B70, c, "func_8042A990_de"]
       - [0x198CB0, c, "func_8042AAD0_de"]

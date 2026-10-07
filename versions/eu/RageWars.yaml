@@ -4864,7 +4864,7 @@ segments:
       - [0x1A0550, c, "func_80429994_de"]
       - [0x1A05E0, asm, "func_80429A24_de"]
       - [0x1A0BA0, c, "func_80429FF0_de"]
-      - [0x1A0E60, asm, "func_8042AE60_eu"]
+      - [0x1A0E60, c, "func_8042AE60_eu"]
       - [0x1A1364, c, "func_8042A7B4_de"]
       - [0x1A1540, c, "func_8042A990_de"]
       - [0x1A1690, c, "func_8042AAD0_de"]

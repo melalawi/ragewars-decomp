@@ -4851,7 +4851,7 @@ segments:
       - [0x18DB74, c, "func_80429994_de"]
       - [0x18DC04, data, "rodata/unresolved/80429C04"]
       - [0x18E1D0, c, "func_80429FF0_de"]
-      - [0x18E490, asm, "func_8042AE60_eu"]
+      - [0x18E490, c, "func_8042AE60_eu"]
       - [0x18E994, c, "func_8042A7B4_de"]
       - [0x18EB70, c, "func_8042A990_de"]
       - [0x18ECB0, c, "func_8042AAD0_de"]
