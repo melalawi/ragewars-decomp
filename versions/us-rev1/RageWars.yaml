@@ -1164,7 +1164,7 @@ segments:
       - [0x5A3A4, c, "func_80259784_de"]
       - [0x5A4D4, c, "func_802598B4_de"]
       - [0x5A538, c, "func_80259918_de"]
-      - [0x5A5A8, asm, "func_80259988_de"]
+      - [0x5A5A8, c, "func_80259988_de"]
       - [0x5A60C, c, "func_802599EC_de"]
       - [0x5A6D8, c, "func_80259AB8_de"]
       - [0x5A710, c, "func_80259AF0_de"]
