@@ -4962,7 +4962,7 @@ segments:
       - [0x18ADE8, c, "func_80424DE8_de"]
       - [0x18B014, c, "func_80425014_de"]
       - [0x18B3C8, c, "func_804253C8_de"]
-      - [0x18B674, asm, "func_80425674_de"]
+      - [0x18B674, c, "func_80425674_de"]
       - [0x18B9E0, c, "func_804259E0_de"]
       - [0x18BC70, c, "func_80425C70_de"]
       - [0x18BD14, c, "func_80425D14_de"]

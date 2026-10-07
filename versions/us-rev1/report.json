@@ -2,17 +2,17 @@
   "measures": {
     "fuzzy_match_percent": 70.05129,
     "total_code": 1131992,
-    "matched_code": 671292,
-    "matched_code_percent": 59.301834,
+    "matched_code": 672168,
+    "matched_code_percent": 59.37922,
     "matched_data_percent": 100.0,
     "total_functions": 3735,
-    "matched_functions": 2861,
-    "matched_functions_percent": 76.59973,
-    "complete_code": 671292,
-    "complete_code_percent": 59.301834,
+    "matched_functions": 2862,
+    "matched_functions_percent": 76.6265,
+    "complete_code": 672168,
+    "complete_code_percent": 59.37922,
     "complete_data_percent": 100.0,
     "total_units": 3735,
-    "complete_units": 2861
+    "complete_units": 2862
   },
   "units": [
     {
@@ -123515,7 +123515,14 @@
         "total_functions": 1,
         "complete_data_percent": 100.0,
         "total_units": 1,
-        "fuzzy_match_percent": 100.0
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "876",
+        "matched_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_code": "876",
+        "complete_code_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
@@ -123535,7 +123542,11 @@
         }
       ],
       "metadata": {
-        "complete": false
+        "complete": true,
+        "source_path": "src/func_80425674_de.c",
+        "progress_categories": [
+          "c"
+        ]
       }
     },
     {
@@ -145284,14 +145295,14 @@
       "name": "Matched C",
       "measures": {
         "total_code": 1131992,
-        "matched_code": 671212,
-        "matched_code_percent": 59.294765,
-        "complete_code": 671212,
-        "complete_code_percent": 59.294765,
+        "matched_code": 672088,
+        "matched_code_percent": 59.37215,
+        "complete_code": 672088,
+        "complete_code_percent": 59.37215,
         "total_functions": 3735,
-        "matched_functions": 2857,
+        "matched_functions": 2858,
         "total_units": 3735,
-        "complete_units": 2857
+        "complete_units": 2858
       }
     },
     {

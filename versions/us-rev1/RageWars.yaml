@@ -5039,7 +5039,7 @@ segments:
       - [0x192FC8, c, "func_80424DE8_de"]
       - [0x1931F4, c, "func_80425014_de"]
       - [0x1935A8, c, "func_804253C8_de"]
-      - [0x193854, asm, "func_80425674_de"]
+      - [0x193854, c, "func_80425674_de"]
       - [0x193BC0, c, "func_804259E0_de"]
       - [0x193E50, c, "func_80425C70_de"]
       - [0x193EF4, c, "func_80425D14_de"]
