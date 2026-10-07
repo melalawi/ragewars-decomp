@@ -29,6 +29,14 @@ All versions: 1,332,404 declared data bytes (matching unknown); opaque binary as
 |---|
 | <pre><code>bytes     [███████████▒░░░░░░░░]  59.90% (~60.17%)  667,376 of 1,114,140</code><br><code>functions [████████████████░░░░]  80.67%  3,611 of 4,476</code></pre> Retained drafts: 4,328 bytes / 20 functions; declared data: 204,036 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
 
+| us (NUS-NRWE-0, North America). First NTSC release (black cartridge). SHA256 `0433043aaba2649bdd1fe717c4020550ac663c0362527aa082490f5977a3e46b` |
+|---|
+| <pre><code>bytes     [████████████▒░░░░░░░]  61.88% (~62.08%)  657,356 of 1,062,244</code><br><code>functions [████████████████░░░░]  83.96%  3,554 of 4,233</code></pre> Retained drafts: 2,792 bytes / 15 functions; declared data: 320,748 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
+
+| us-rev1 (NUS-NRWE-1, North America). Revised NTSC release (grey cartridge). SHA256 `5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089` |
+|---|
+| <pre><code>bytes     [████████████▒░░░░░░░]  61.21% (~61.39%)  692,964 of 1,132,124</code><br><code>functions [████████████████░░░░]  81.97%  3,727 of 4,547</code></pre> Retained drafts: 2,872 bytes / 16 functions; declared data: 254,468 bytes (matching unknown). Fuzzy % is known similarity; unknown scores remain unknown. |
+
 ## Development & Contributions
 
 Contributions and corrections are welcome. Run `make check` before opening a pull request.
