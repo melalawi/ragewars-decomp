@@ -2523,7 +2523,6 @@ segments:
       - [0xBC470, c, "func_802BB870_de"]
       - [0xBC4A4, asm, "func_802BB8A4_de"]
       - [0xBC4B0, c, "func_802BB8B0_de"]
-      - [0xBC5F8, c, "func_802BB9F8_de"]
       - [0xBC6AC, asm, "func_802BBAAC_de"]
       - [0xBC7B4, asm, "func_802BBBB4_de"]
       - [0xBC7C0, c, "func_802BBBC0_de"]
