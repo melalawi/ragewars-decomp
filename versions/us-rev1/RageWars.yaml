@@ -2576,7 +2576,7 @@ segments:
       - [0xC1554, asm, "func_802BBB44_eu_x"]
       - [0xC1560, c, "func_802BB870_de"]
       - [0xC1594, asm, "func_802BBB84_eu_x"]
-      - [0xC15A0, asm, "func_802BB8B0_de"]
+      - [0xC15A0, c, "func_802BB8B0_de"]
       - [0xC16E8, c, "func_802BB9F8_de"]
       - [0xC179C, asm, "func_802BBAAC_de"]
       - [0xC18A4, asm, "func_802BBE94_eu_x"]
