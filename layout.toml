@@ -159,7 +159,7 @@ name = "code_8021CD70"
 segment = "span_1000"
 evidence = "proven"
 members = ["func_8021CD94_de", "func_8021CF28_de", "func_8021D408_de", "func_8021D774_de", "func_8021E08C_de", "func_8021E2A0_de", "func_8021E5F8_de", "func_8021EA54_de", "func_8021EEFC_de", "func_80220ED4_de", "func_802227F4_de", "func_80222AA4_de", "func_80222BE8_de", "func_80222FE0_de", "func_802231D4_de", "func_802233F0_de", "func_802238E0_de", "func_80223E34_de", "func_8022404C_de", "func_8022409C_de", "func_80224408_de", "func_8022470C_de", "func_80224C4C_de", "func_80224F5C_de", "func_802251DC_de", "func_80225940_de"]
-split = ["func_802238E0_de", "func_80223E34_de", "func_8022404C_de", "func_8022409C_de", "func_80224408_de", "func_80224F5C_de"]
+split = ["func_802238E0_de", "func_80223E34_de", "func_8022404C_de", "func_8022409C_de", "func_80224408_de", "func_80224F5C_de", "func_8021E2A0_de"]
 signals = ["callee", "cap"]
 
 [[group]]
