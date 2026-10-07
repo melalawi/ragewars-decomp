@@ -655,8 +655,6 @@ segments:
       - [0x31984, c, "func_80230DA4_de"]
       - [0x31BBC, c, "func_80230FDC_de"]
       - [0x31EA8, c, "func_802312C8_de"]
-      - [0x32054, c, "func_80231474_de"]
-      - [0x32244, c, "func_80231664_de"]
       - [0x3254C, c, "func_8023196C_de"]
       - [0x32790, asm, "func_80231BB0_de"]
       - [0x32928, c, "func_80231D48_de"]
