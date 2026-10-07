@@ -163,4 +163,9 @@ struct MenuItem_func_80444314_de;
 /* unbake published declaration: published_fb2959dbf051752e89ddb05e */
 typedef struct MenuItem_func_80444314_de MenuItem_func_80444314_de;
 
+struct Item_func_80441FE8_de;
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
+s32 func_8044488C_de(struct Item_func_80441FE8_de *field);
+#endif
+
 #endif

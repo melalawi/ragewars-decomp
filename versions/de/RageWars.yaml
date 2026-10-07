@@ -5396,7 +5396,7 @@ segments:
       - [0x1AA72C, c, "func_8044472C_de"]
       - [0x1AA7A0, c, "func_804447A0_de"]
       - [0x1AA7F0, c, "func_804447F0_de"]
-      - [0x1AA88C, asm, "func_8044488C_de"]
+      - [0x1AA88C, c, "func_8044488C_de"]
       - [0x1AA920, c, "func_80444920_de"]
       - [0x1AA988, c, "func_80444988_de"]
       - [0x1AA9EC, c, "func_804449EC_de"]
