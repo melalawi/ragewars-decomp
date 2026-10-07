@@ -4966,7 +4966,7 @@ segments:
       - [0x11A360, c, "func_80429654_de"]
       - [0x11A400, c, "func_804296F4_de"]
       - [0x11A430, c, "func_80429724_de"]
-      - [0x11A438, asm, "func_8042972C_de"]
+      - [0x11A438, c, "func_8042972C_de"]
       - [0x11A504, c, "func_804297F8_de"]
       - [0x11A604, c, "func_804298F8_de"]
       - [0x11A658, c, "func_8042994C_de"]

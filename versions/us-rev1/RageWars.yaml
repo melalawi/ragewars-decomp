@@ -5060,7 +5060,7 @@ segments:
       - [0x197834, c, "func_80429654_de"]
       - [0x1978D4, c, "func_804296F4_de"]
       - [0x197904, c, "func_80429724_de"]
-      - [0x19790C, asm, "func_8042972C_de"]
+      - [0x19790C, c, "func_8042972C_de"]
       - [0x1979D8, c, "func_804297F8_de"]
       - [0x197AD8, c, "func_804298F8_de"]
       - [0x197B2C, c, "func_8042994C_de"]

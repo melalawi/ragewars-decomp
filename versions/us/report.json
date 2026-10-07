@@ -1,13 +1,13 @@
 {
   "measures": {
     "total_code": 1062244,
-    "matched_code": 657076,
-    "complete_code": 657076,
+    "matched_code": 657280,
+    "complete_code": 657280,
     "total_data": 320748,
     "matched_data": 0,
     "complete_data": 0,
     "total_functions": 4233,
-    "matched_functions": 3552,
+    "matched_functions": 3553,
     "total_units": 5253,
     "complete_units": 2775,
     "matched_code_percent": 61.85735,
@@ -119126,14 +119126,21 @@
         "total_code": "204",
         "total_functions": 1,
         "total_units": 1,
-        "fuzzy_match_percent": 0.0
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "204",
+        "complete_code": "204",
+        "matched_code_percent": 100.0,
+        "complete_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
           "size": "204",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -119141,14 +119148,16 @@
           "name": "func_8042972C_de",
           "size": "204",
           "metadata": {},
-          "address": "2151848204"
+          "address": "2151848204",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
-          "asm"
-        ]
+          "c"
+        ],
+        "source_path": "src/func_8042972C_de.c"
       }
     },
     {
@@ -175341,16 +175350,16 @@
       "id": "c",
       "name": "Matched C",
       "measures": {
-        "total_code": 657076,
-        "matched_code": 657076,
-        "complete_code": 657076,
+        "total_code": 657280,
+        "matched_code": 657280,
+        "complete_code": 657280,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 3552,
-        "matched_functions": 3552,
-        "total_units": 3552,
-        "complete_units": 3552,
+        "total_functions": 3553,
+        "matched_functions": 3553,
+        "total_units": 3553,
+        "complete_units": 3553,
         "matched_code_percent": 100.0,
         "complete_code_percent": 100.0,
         "matched_functions_percent": 100.0,
