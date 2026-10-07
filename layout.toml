@@ -143,7 +143,7 @@ segment = "span_1000"
 evidence = "proven"
 members = ["func_80217388_de", "func_8021762C_de", "func_8021764C_eu_x", "func_80217630_de", "func_8021764C_eu", "func_80217928_de", "func_80217B3C_de", "func_80217D74_de", "func_80217F4C_de", "func_802181FC_de", "func_8021836C_de", "func_802185D0_de", "func_80218988_de", "func_80218B84_de", "func_80218E98_de", "func_80218F08_de", "func_80218F84_de", "func_80218F9C_de", "func_80219124_de", "func_8021917C_de", "func_802192B4_de", "func_802192B4_us_rev1", "func_80219304_eu", "func_80219304_eu_x"]
 only = { "func_8021762C_de" = ["de"], "func_8021764C_eu_x" = ["us-rev1", "eu-x"], "func_8021764C_eu" = ["eu"], "func_802192B4_de" = ["de"], "func_802192B4_us_rev1" = ["us-rev1"], "func_80219304_eu" = ["eu"], "func_80219304_eu_x" = ["eu-x"] }
-split = ["func_80217B3C_de", "func_80217D74_de", "func_80218E98_de", "func_80218F08_de", "func_80218F84_de", "func_80218F9C_de"]
+split = ["func_80217B3C_de", "func_80217D74_de", "func_80218E98_de", "func_80218F08_de", "func_80218F84_de", "func_80218F9C_de", "func_80219124_de", "func_8021917C_de"]
 signals = ["callee", "cap", "rodata", "version"]
 
 [[group]]
