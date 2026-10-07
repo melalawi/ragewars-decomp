@@ -1,30 +1,9 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80213ED4.h"
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#define MIN(a, b) ((a) < (b) ? (a) : (b))
-
+#include "math_helpers.h"
 extern s32 D_8011CD20;
 extern s32 D_801371D0;
-
-
-
-
-
 extern s32 func_80214624_de(Actor_func_80214DD4_de *arg0, Tracker *arg1, Actor_func_80214DD4_de *target);
 extern Actor_func_80214DD4_de *func_802149C0_de(Actor_func_80214DD4_de *arg0, Tracker *arg1, s32 arg2, s32 arg3);
 extern f32 func_80215868_de(Actor_func_80214DD4_de *arg0, Vec3 pos, Actor_func_80214DD4_de *target, f32 arg3);
@@ -43,12 +22,10 @@ extern void func_8027207C_de(Vec3 *arg0);
 extern f32 func_802B6560_de(f32 angle);
 extern f32 func_802B7130_de(f32 angle);
 extern f32 func_802B72B0_de(f32 value);
-
 /* Places the goal beside kind-7 targets: pushed away from the anchor by both extents. */
 static inline void func_80214DD4_place_beside(Actor_func_80214DD4_de *arg0, Actor_func_80214DD4_de *target, Actor_func_80214DD4_de *anchor, Vec3 *outPos, s32 *outRoom) {
     Vec3 dir;
     Vec3 goal;
-
     if (anchor != 0) {
         func_80271F68_de(&dir, &target->pos, &anchor->pos);
         dir.y = 0.0f;
@@ -62,7 +39,6 @@ static inline void func_80214DD4_place_beside(Actor_func_80214DD4_de *arg0, Acto
     func_80271F34_de(&goal, &target->pos, &dir);
     func_8024E79C_de(target, goal, outPos, outRoom, 0, 0);
 }
-
 /** Picks what the tracker aims at (its target, itself, a slot or home point, or the actor) and
     fills out with the kind, target, reach, goal position and its offset from the actor, both in 3D
     and flattened to the ground plane. The third parameter is reused as the boost flag. */
@@ -80,8 +56,7 @@ void func_80214DD4_de(Actor_func_80214DD4_de *arg0, Tracker *arg1, s32 boost, Tr
     f32 angle;
     f32 reach;
     Location *loc;
-
-    boost = 0;  /* FAKEMATCH: reuses the third parameter as the boost flag; a separate local gives the right code but not the target register numbering. Owner-accepted 2026-09-28; clean draft 395/399. */
+    boost = 0; /* FAKEMATCH: reuses the third parameter as the boost flag; a separate local gives the right code but not the target register numbering. Owner-accepted 2026-09-28; clean draft 395/399. */
     if (*arg0->kind != 1) {
         mode = -1;
     }
@@ -175,7 +150,7 @@ void func_80214DD4_de(Actor_func_80214DD4_de *arg0, Tracker *arg1, s32 boost, Tr
         pos.z -= gap * func_802B6560_de(angle);
     }
     if (mode == 2) {
-        pos.y = MIN(pos.y, func_8024E80C_de(arg0));
+        pos.y = RW_MIN_LT(pos.y, func_8024E80C_de(arg0));
     }
     if (boost) {
         reach = func_8024E464_de(arg0);

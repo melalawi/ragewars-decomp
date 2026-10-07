@@ -2,78 +2,15 @@
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_802192C0.h"
 #include "types.h"
-#ifndef FUNC_8021A78C_DE
-#define FUNC_8021A78C_DE
 #include "types.h"
-#ifndef UNBAKE_FUNC_8021A78C_DE_H
-#define UNBAKE_FUNC_8021A78C_DE_H
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
-
 #include "types.h"
-
-
-
-#endif
-
-
 #include "types.h"
-
-
-
-
-
 extern char D_8010AEB8[];
 extern char D_8010B328[];
-
-
 extern void func_8026367C_de(void *arg0, void *arg1);
 extern f32 func_8022ADBC_de(void *arg0);
 extern void func_802227F4_de(void *, void *, s32);
-
-
-
-
-
-
-
 void func_8021A78C_de(void *arg0) {
     char *object = arg0;
     void *attributes;
@@ -83,7 +20,6 @@ void func_8021A78C_de(void *arg0) {
     f32 tail_value;
     Vec3 *tail_vector;
     s32 type;
-
     if (((ObjectLinks16D8 *)(object))->unk_1450 != 0) {
         attributes = D_8010AEB8;
     } else {
@@ -96,7 +32,6 @@ void func_8021A78C_de(void *arg0) {
         attributes = D_8010B328 + (s32)attributes;
     }
     func_8026367C_de(state, attributes);
-
     ((ObjectLinks16D8 *)(object))->unk_6C0 = 0;
     ((ObjectLinks16D8 *)(object))->unk_6C4 = 0;
     ((ObjectLinks16D8 *)(object))->unk_6C8 = 0;

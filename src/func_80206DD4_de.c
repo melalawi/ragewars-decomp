@@ -2,23 +2,13 @@
 #include "span_1000/code_80206258.h"
 #include "span_1000/code_80265370.h"
 #include "types.h"
-
+#include "stddef.h"
 /* Places a rider along its path for the frame: clamps the throttle to 0..1 (eased through func_80265714_de unless the segment is linear), offsets its base by the segment's rise and circle point, moves the rider there through func_80271FC8_de, adds a bob to its height (one wave or a sum of four detuned waves by the segment's bob mode), applies its shake offsets, turns the actor by the segment's yaw mode (interpolated, constant spin unless held, or constant spin) and, for free segments, snaps the actor to the ground through func_80275DD4_de and func_802761EC_de. */
-
-
-
-
-
-
-
-
-
 extern f32 func_802B7130_de(f32);
 extern f32 func_802B6560_de(f32);
 extern void func_80271FC8_de(Vec3 *, f32, Vec3 *, Vec3 *);
 extern f32 func_80275DD4_de(s32, f32, f32);
 extern void func_802761EC_de(s32, f32);
-
 void func_80206DD4_de(Actor_func_80206DD4_de *actor, Rider_func_80206DD4_de *rider) {
     Vec3 point;
     Segment_func_80206DD4_de *segment;
@@ -27,7 +17,6 @@ void func_80206DD4_de(Actor_func_80206DD4_de *actor, Rider_func_80206DD4_de *rid
     f32 amp;
     Vec3 *base;
     Actor_func_80206DD4_de *owner;
-
     t = rider->throttle;
     segment = (Segment_func_80206DD4_de *)(actor->track + 0x14);
     if (t < 0.0f) {
@@ -79,9 +68,7 @@ void func_80206DD4_de(Actor_func_80206DD4_de *actor, Rider_func_80206DD4_de *rid
         func_802761EC_de(owner->model, func_80275DD4_de(owner->model, owner->x, owner->z) + rider->pos.y - owner->y);
     }
 }
-
 /* Steers an actor along path nodes, blending direction, speed and orientation as it advances waypoints. */
-#define NULL ((void *)0)
 /* The values func_802070D0_de loads by address:
  * 0x800C6C18 = 3.0 (float, D_800C6C18 in this cartridge's tables)
  * 0x800C6C1C = 10.24 (float, unnamed in this cartridge's tables)
@@ -117,20 +104,8 @@ void func_80271F68_de(void *, void *, void *);
 void func_8027207C_de(f32 *);
 float func_802B6560_de(float);
 f32 func_802B72B0_de(f32);
-
-f32 func_80216F44_de(void *, Vec3);           /* extern */
+f32 func_80216F44_de(void *, Vec3); /* extern */
 extern f32 D_800CD738;
-
-
-
-
-
-
-
-
-
-
-
 /* Warning: Gap in callee-saved word stack region.
  * Saved: [0x40, 0x44, 0x48, 0x4c, 0x50, 0x54, 0x58, 0x68, 0x6c], gap at: 0x5c. */
 /* Steers an actor along path nodes, blending direction, speed and orientation as it advances waypoints. */
@@ -163,7 +138,6 @@ void func_802070D0_de(func_802070D0_S3 *arg0, func_802070D0_S1 *arg1) {
     func_802070D0_S2 *temp_s2;
     void *temp_s3;
     func_802070D0_S2 *temp_v0;
-
     temp_s3 = (void *) &arg1->unk94;
     temp_v0 = func_80219408_de(temp_s3);
     initial = temp_v0->pos;
@@ -226,7 +200,6 @@ void func_802070D0_de(func_802070D0_S3 *arg0, func_802070D0_S1 *arg1) {
         func_8027207C_de(&vec1);
         block_17:
         arg1->unk140 = vec1.x;
-
         arg1->unk144 = vec1.y;
         arg1->unk148 = vec1.z;
     }
@@ -296,7 +269,6 @@ void func_802070D0_de(func_802070D0_S3 *arg0, func_802070D0_S1 *arg1) {
         arg1->unk138 = (f32) (temp_f1_8 + (temp_s2->unk2C * 0.017453294f - temp_f1_8) * 0.1f);
     }
 }
-
 /** Perform no operation. */
 void func_80207730_de(void) {
 }

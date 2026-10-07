@@ -6,41 +6,14 @@
 #include "n64sdk.h"
 #include "gbi.h"
 #include "types.h"
-
-#define NULL ((void *)0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#include "math_helpers.h"
+#include "stddef.h"
 /* Draws a player's HUD for one frame unless the game state is 8 or 11: ticks the HUD animations,
    draws the health counter and its hurt flash (four corner sprites in an environment colour that
    fades with the flash), the lives or trial counter, the score counter with its animated icon and
    the ticker of fading player names, the second counter (count rule) or the squad score, the
    power-up icon and status sprite, the zoom gauge, the ammo pips for weapon 12, and finally the
    team and squad overlays. */
-
-
-
-
-
-
-
 extern char D_800C25FC_de[];
 extern char D_800C93D8_de;
 extern char D_800C943C;
@@ -48,10 +21,7 @@ extern char D_800C9468;
 extern char D_800C94A4_de;
 extern f32 D_800C9F64_de[];
 extern f32 D_800C9F74_de[];
-
-
 extern HudStatusShared_Settings D_80142208_de;
-
 extern f32 D_800C9190_de[2];
 extern s32 D_800DE880_de;
 extern s32 D_800DE884_de;
@@ -61,7 +31,6 @@ extern char D_8011BDC8;
 extern char D_8011D8D0;
 extern f32 D_801377B0;
 extern s32 D_80140FF8;
-
 void func_802183E8_de(void *, Shared_HudView *, Shared_HudPlayer *);
 void func_80218F08_de(void *, Shared_HudView *, Shared_HudPlayer *);
 void func_80219490_de(void *, Shared_HudView *);
@@ -75,21 +44,16 @@ s16 **func_8028BEAC_de(void *, s32, s32, s32);
 void func_802A6900_de(void *, Shared_HudPlayer *);
 void func_802A7AA4_de(void *);
 void func_802A822C_de(s32, f32, f32, f32, f32, s32, s32, s32);
-
 void func_802A8F28_de(char *, s32, s32, s32, s32, s32, f32, f32);
 void func_802A9234_de(s32);
 void func_802AA70C_de(void *, void *);
-
 void func_802AAB3C_de(s32, s32, s32, s32, s32, s32);
-
 s32 func_802AAC28_de(s32, s32, s16, s16, f32, f32, s32);
 s32 func_802BD320_de(char *, const char *, ...);
 f32 func_804422F0_de(char *, f32, f32);
-
 static inline HudStatusShared_MatchRules *hudRules(void) {
     return &D_80142208_de.rules;
 }
-
 void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
     char text[16];
     f32 sx;
@@ -130,7 +94,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
     s32 w;
     s32 width;
     s32 level;
-
     if (D_80142208_de.state != 0xB && D_80142208_de.state != 8) {
         func_802A7AA4_de(player->anim0);
         func_802A7AA4_de(player->anim1);
@@ -149,7 +112,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
         func_80218F08_de(player->trails, view, player);
         func_802A6900_de(player->marks, player);
         func_802A9234_de(D_80142208_de.hudFade);
-
         sx = view->width / (f32) D_800DE880_de;
         sy = view->height / (f32) D_800DE884_de;
         if (D_800DE888_de == 0) {
@@ -159,7 +121,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
         }
         scaleX = sx * kx;
         scaleY = sy * ky;
-
         if (hudRules()->hideHud == 0) {
             func_8021EA54_de(player, view);
         }
@@ -169,7 +130,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
         if (hudRules()->hideHud == 0) {
             func_802A822C_de(n, x - scaleX * 3.0f, y - scaleY * 4.0f, scaleX, scaleY, 1, 0, 0);
         }
-
         n = player->health;
         if (n != player->flashHealth) {
             if (n < player->flashHealth) {
@@ -187,7 +147,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
             }
             player->flashHealth = n;
         }
-
         /* The two flash blocks keep the centre's x in y and its y in x. */
         if (player->hurt > 0.0f) {
             flashFade = player->flashAlpha - 12.0f;
@@ -224,7 +183,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
             }
             player->flashState = 0;
         }
-
         if (player->flashState == 2) {
             flashFade2 = player->flashAlpha - 12.0f;
             fade2 = (flashFade2 < 0.0f) ? 0.0f : flashFade2;
@@ -244,7 +202,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 player->flashState = 0;
             }
         }
-
         if (D_800DE888_de == 0) {
             kx = ky = 0.75f;
         } else {
@@ -252,7 +209,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
         }
         scaleX = sx * kx;
         scaleY = sy * ky;
-
         if (D_80142208_de.hudShown == 0) {
             n = player->lives;
             if (player->livesLast != n) {
@@ -280,7 +236,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 func_802AAC28_de(0x203, 0, x + scaleX * 40.0f, y + scaleY * 11.0f, scaleX, scaleY * 1.5f, 1);
             }
         }
-
         if (hudRules()->hideHud == 0 && D_80142208_de.hudShown != 0) {
             if (hudRules()->teams != 0) {
                 if (player->owner->team != 0xFF) {
@@ -405,7 +360,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                     }
                 }
             }
-
             if (hudRules()->countRule != 0) {
                 n = player->owner->count;
                 if (player->countLast != n) {
@@ -493,7 +447,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 }
             }
         }
-
         if (player->fxFlags & 0x10000) {
             level = player->fxTime;
             if (level != player->iconLast) {
@@ -514,7 +467,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 }
             }
         }
-
         if ((player->fxFlags != 0 && player->fxFlags < 0x2000) || player->boost > 0.0f) {
             level = player->fxTime;
             if (level != player->statusLast || player->boost > 0.0f) {
@@ -554,7 +506,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 }
             }
         }
-
         zoom = player->zoom;
         if (zoom < 1.0f) {
             step = (1.0f - D_800C9190_de[1]) * 0.25f;
@@ -588,7 +539,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
             func_802A9234_de(0xFF);
             func_802AAC28_de(0x20A, level, x + scaleX * 10.0f, y - scaleY * 140.0f, scaleX, scaleY, 1);
         }
-
         if (player->weapon == 0xC && player->kind != D_800C922C) {
             ammo = 3 - func_80283228_de(&D_8011D8D0, player);
             if (player->ammo < ammo) {
@@ -601,7 +551,6 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 func_802AAC28_de(0x2F4, 0, x + D_800CAB78_eu[i] * scaleX, y + scaleY * 64.0f, scaleX, scaleY, 1);
             }
         }
-
         if (hudRules()->hideHud == 0) {
             if (player->owner->active == 1 && hudRules()->countRule != 0) {
                 func_8022C1E8_de(player, view);
@@ -612,44 +561,28 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
         }
     }
 }
-
 /* Aims a player's view camera and updates the player: with a view at 0x5DC, camera mode 1 at 0x5D0
    looks from the player's eye (the body position plus the eye offset at 0x73C, raised at least 40.96)
    along the body heading with the player's angles and sway and the aim zoom at 0x7EC, and mode 2 orbits the player at the angle
    D_800C9FA0_de and distance D_800CAB88_eu, which input bits 0x200 and 0x100 turn and 0x800 and 0x400 pull
    in and push out; the camera is set through func_80238F24_de and the view refreshed through
    func_80234FEC_de before the player is updated through func_8021D774_de. */
-#define AT_LEAST(value, low) ((value) < (low) ? (low) : (value))
-
-
-
-
-
-
-
-
-
-
-
-
 extern void func_80238F24_de(void *, s32, f32, f32, f32, f32, f32, f32, f32, f32, Shared_Quad, s32, f32, f32);
 extern void func_80234FEC_de(void *);
 extern void func_8021D774_de(Player_func_80220A80_de *);
 extern f32 func_802B7130_de(f32);
 extern f32 func_802B6560_de(f32);
-
 void func_80220A80_de(Player_func_80220A80_de *player, Body_func_80220A80_de *body) {
     void *view;
     f32 angle;
     f32 x;
-
     view = player->view;
     if (view != 0) {
         if (player->cameraMode == 1) {
             func_80238F24_de(view, 0, body->heading, player->angles[0] + player->sway[0] - player->pitchBase,
                           player->angles[1] + player->sway[1], player->angles[2] + player->sway[2],
                           body->x + player->eye[0], body->y, body->z + player->eye[2],
-                          AT_LEAST(player->eye[1] + player->eyeOffset - player->crouch - player->duck, 40.96f), body->rotation, body->room, player->zoom,
+                          ((player->eye[1] + player->eyeOffset - player->crouch - player->duck) < (40.96f) ? (40.96f) : (player->eye[1] + player->eyeOffset - player->crouch - player->duck)), body->rotation, body->room, player->zoom,
                           3.0f);
         } else if (player->cameraMode == 2) {
             if (player->input & 0x200) {
@@ -671,28 +604,12 @@ void func_80220A80_de(Player_func_80220A80_de *player, Body_func_80220A80_de *bo
     }
     func_8021D774_de(player);
 }
-
 /* Regenerates a player's health at 0x5E4 toward the cap from func_8022AC00_de: under flag 4 at 0x122C it adds D_800D2988 times gFastRegen's rate and mirrors the result to 0x174 and 0x45C, otherwise, while the flag byte at D_801462E5 is set, the speed at 0x18's 0x24 meets D_800C78B8's threshold, the health is nonzero and the word 0x60F past that flag byte does not hold it back, it adds the speed scaled by D_800C78BC, D_800D2988 and D_800C78C0's rate. */
-
-
-
-
-
-
-
-
 extern f32 D_800CD738;
 extern struct D_800C7470_Pair D_800C27C0_de;
-
-
 extern struct D_800C7470_Pair D_800C27D0_de;
-
-
 extern MultiplayerOptions D_801462E5;
 extern s32 func_8022AC00_de(SharedPlayer_func_80220D44_de *p);
-
-#define MIN(a, b) ((a) < (b) ? (a) : (b))
-
 void func_80220D44_de(SharedPlayer_func_80220D44_de *p) {
     f32 f0;
     f32 f20;
@@ -700,7 +617,6 @@ void func_80220D44_de(SharedPlayer_func_80220D44_de *p) {
     s32 cap;
     s32 val;
     MultiplayerOptions *regen;
-
     if ((p->views122C.view122C_1.flags & 4) && p->views5E4.view5E4_2.health > 0) {
         cap = func_8022AC00_de(p);
         f20 = p->views5E4.view5E4_2.health + D_800CD738 * D_800C27C0_de.second;
@@ -720,5 +636,5 @@ void func_80220D44_de(SharedPlayer_func_80220D44_de *p) {
     if (cur == 0.0f) return;
     if (p->views5D8.view5D8_4.ctrl->flag != 0 && ((SessionState *)&regen->session)->paused != 0) return;
     f20 = cur + (s32)(f20 * D_800C27CC_de) * (D_800CD738 * D_800C27D0_de.first);
-    p->views5E4.view5E4_2.health = MIN(f20, func_8022AC00_de(p));
+    p->views5E4.view5E4_2.health = RW_MIN_LT(f20, func_8022AC00_de(p));
 }

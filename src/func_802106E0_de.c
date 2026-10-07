@@ -4,17 +4,6 @@
 /* Probes one of a vehicle's eight wheel rays: casts from the vehicle position to its scaled wheel offset
  * through func_8024491C_de and stores the wheel's reach as the XZ distance to whatever was hit (diagonals
  * scaled by 1/sqrt 2, components tested against the zeroed y), or the full ray length on a miss. */
-
-#define ABS(x, zero) ((x) < (zero) ? -(x) : (x))
-
-
-
-
-
-
-
-
-
 extern Vec3 D_800C88A0_de[8];
 extern Hit_func_802106E0_de *D_800FFFCC;
 extern char D_800FFFD0[];
@@ -23,7 +12,6 @@ extern f32 func_8024D398_de(Vehicle *);
 extern f32 func_8024D284_de(Vehicle *);
 extern f32 func_8024E420_de(Vehicle *);
 extern s32 func_8024491C_de(Vehicle *, Vec3, Vec3, char *, f32, f32, f32, f32);
-
 void func_802106E0_de(Vehicle *vehicle, s32 wheel) {
     Vec3 from;
     Vec3 to;
@@ -31,7 +19,6 @@ void func_802106E0_de(Vehicle *vehicle, s32 wheel) {
     f32 a;
     f32 b;
     f32 c;
-
     from = vehicle->pos;
     to = D_800C88A0_de[wheel];
     to.x *= vehicle->wheels->length;
@@ -51,12 +38,12 @@ void func_802106E0_de(Vehicle *vehicle, s32 wheel) {
         delta.z -= from.z;
         if (delta.x != delta.y) {
             if (delta.z == delta.y) {
-                vehicle->wheels->reach[wheel] = ABS(delta.x, delta.y);
+                vehicle->wheels->reach[wheel] = ((delta.x) < (delta.y) ? -(delta.x) : (delta.x));
             } else {
-                vehicle->wheels->reach[wheel] = (ABS(delta.x, delta.y) + ABS(delta.z, delta.y)) * 0.70710677f;
+                vehicle->wheels->reach[wheel] = (((delta.x) < (delta.y) ? -(delta.x) : (delta.x)) + ((delta.z) < (delta.y) ? -(delta.z) : (delta.z))) * 0.70710677f;
             }
         } else if (delta.z != delta.y) {
-            vehicle->wheels->reach[wheel] = ABS(delta.z, delta.y);
+            vehicle->wheels->reach[wheel] = ((delta.z) < (delta.y) ? -(delta.z) : (delta.z));
         }
     } else {
         vehicle->wheels->reach[wheel] = vehicle->wheels->length;

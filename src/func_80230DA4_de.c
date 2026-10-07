@@ -2,54 +2,7 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8022F3E8.h"
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
-#if defined(VERSION_EU_X)
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) ((eu_x_table)[language])
-#else
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) ((eu_table)[language])
-#endif
-#else
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) (fixed)
-#endif
-#define RW_MENU_TEXT(fixed, eu_table, eu_x_table, settings) RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, (settings)[0x581])
+#include "menu_text.h"
 /* Runs a spinning weapon's barrel for its holder at 0x1D8: unless the weapon is in state 4 the spin
    speed at 0x128 decays, the spin angle at 0x124 advances by twice the speed per frame, and the
    holder's model animation speed at 0x168 follows the spin speed, capped at 1; while the fire input
@@ -59,11 +12,11 @@
    weapon at 0x5F6 it plays the wind-up sound 0x7BC unless already firing, sets the firing flags
    0x18400 and restarts the firing timer at 0x1230 at 25. Written with the fire check as the static
    helper shared with func_80231BB0_de. */
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
+#elif defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 extern s32 D_800E0D44[], D_800DCC68[];
 #endif
-
 extern WeaponActionRecord D_800C9698[];
 extern char D_800FEB00[];
 extern u8 D_80142215;
@@ -79,10 +32,8 @@ extern s32 func_8022A5A0_de(void *, void *);
 extern void func_80239908_de(void *, void *, s32, s32, f32);
 extern f32 func_802747A0_de(f32, f32);
 extern void func_80214178_de(void *, void *, s32);
-
 static inline s32 can_fire(char *player) {
     s32 ammo;
-
     if (((SharedPlayer_func_8022A398_de *)(player))->views5E8.view11D8_147.unk11D8 > 0.0f) {
         return 0;
     }
@@ -102,11 +53,9 @@ static inline s32 can_fire(char *player) {
     }
     return ammo;
 }
-
 void func_80230DA4_de(void *actor, void *weapon) {
     char *player;
     char *model;
-
     player = ((Shared_Actor *)(actor))->entity;
     if (((WeaponFireState *)(weapon))->variant != 4) {
         ((WeaponFireState *)(weapon))->spin = func_802747A0_de(((WeaponFireState *)(weapon))->spin, 0.013613569f);

@@ -4,41 +4,8 @@
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_80213ED4.h"
 #include "types.h"
+#include "stddef.h"
 /* Picks an actor's target (the tracked enemy when the aim point is chosen, else the nearest permitted target from func_802149C0_de), classifies it into one of eight kinds, and fills the target record with the kind, target, height difference, position, direction and distance, both in full and flattened to the horizontal plane. */
-#define NULL ((void *)0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 extern s32 D_8011CD20,D_801371D0;
 extern void *func_802149C0_de(void *,void *,s32,s32), *func_80219408_de(void *);
 extern f32 func_80216F44_de(void *,f32,f32,f32),func_802B72B0_de(f32);
@@ -73,10 +40,6 @@ static inline s32 func_80215410_kind(void *self, void *ctx, void *target) {
     }
     return 0;
 }
-
-
-
-
 void func_80215410_de(void *arg0, void *arg1, s32 unused, void *arg3) {
     Vec3 pos;
     Vec3 delta;
@@ -84,7 +47,6 @@ void func_80215410_de(void *arg0, void *arg1, s32 unused, void *arg3) {
     s32 kind;
     void *target;
     void *point;
-
     if ((((Field_s8_CE *)(arg1))->value == D_8011CD20) && !(((func_80203E78_S1 *)(((func_80205314_S1 *)(arg0))->unk18))->unk4 & 0x400) && (!(((struct Shape_func_8021A2D4_de_2 *)(arg1))->field_0 & 0x80000) || (((func_8020EA10_S1 *)(arg1))->unk78 != 0))) {
         ((Field_void_80 *)(arg1))->value = func_802149C0_de(arg0, arg1, 1, 0);
     }

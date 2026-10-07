@@ -2,53 +2,7 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8022F3E8.h"
 #include "types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
-#if defined(VERSION_EU_X)
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) ((eu_x_table)[language])
-#else
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) ((eu_table)[language])
-#endif
-#else
-#define RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, language) (fixed)
-#endif
-#define RW_MENU_TEXT(fixed, eu_table, eu_x_table, settings) RW_LOCALIZED_TEXT(fixed, eu_table, eu_x_table, (settings)[0x581])
+#include "menu_text.h"
 /* Runs a player's rapid-fire action: when the current action is not allowed a type 2 request drops to type 1
  * and retries once before the idle state is refreshed; a player flagged 0x4000 that may fire with rounds at
  * 0x144 turns a type 1 request into type 2 (reporting the empty weapon and staying type 1 when firing is
@@ -56,9 +10,6 @@
  * down by 0.5 to 1 while type 1 or up by 0.05 to 2 while type 2 and turns the barrel frame at 0x11F8 (of
  * 8); finally the default action for the player's state starts unless func_802301F4_de handled the request
  * or the actor is flagged 0x400. Adapted from func_80231BB0_de with the same static fire check. */
-
-
-
 extern WeaponActionRecord D_800C9698[];
 extern char D_800FEB00[];
 extern u8 D_80142215;
@@ -73,18 +24,16 @@ extern s32 func_8022A5A0_de(void *, void *);
 extern void func_80239908_de(void *, void *, s32, s32, f32);
 extern s32 func_802301F4_de(void *, void *);
 extern void func_80214178_de(void *, void *, s32);
-
-#if defined(VERSION_EU)
+#if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
+#elif defined(VERSION_EU)
 extern s32 D_800E0D44[];
+extern u8 D_80152789;
 #elif defined(VERSION_EU_X)
 extern s32 D_800DCC68[];
-#endif
-#if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
 static inline s32 can_fire(char *player) {
     s32 ammo;
-
     if (((SharedPlayer_func_8022A398_de *)(player))->views5E8.view11D8_147.unk11D8 > 0.0f) {
         return 0;
     }
@@ -104,12 +53,10 @@ static inline s32 can_fire(char *player) {
     }
     return ammo;
 }
-
 void func_80231664_de(void *actor, void *arg1) {
     char *player;
     s32 action;
     s32 single;
-
     player = ((Shared_Actor *)(actor))->entity;
     action = D_800C9698[((SharedPlayer_func_8022A398_de *)(player))->views5E8.view650_15.unk650].action;
     if (func_80222AA4_de(player, ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E) == 0) {
