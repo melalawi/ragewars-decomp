@@ -4301,7 +4301,7 @@ segments:
       - [0x180A04, c, "func_8040A6A8_de"]
       - [0x180B6C, asm, "func_8040AB6C_eu"]
       - [0x180C68, asm, "func_8040AC68_eu"]
-      - [0x180DC0, asm, "func_8040A9A0_de"]
+      - [0x180DC0, c, "func_8040A9A0_de"]
       - [0x180E28, c, "func_8040A9F8_de"]
       - [0x180E7C, c, "func_8040AA4C_de"]
       - [0x180EE8, c, "func_8040AAB8_de"]

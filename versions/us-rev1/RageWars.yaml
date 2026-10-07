@@ -4523,7 +4523,7 @@ segments:
       - [0x1786D4, c, "func_8040A6A8_de"]
       - [0x17883C, c, "func_8040A83C_us"]
       - [0x178928, asm, "func_8040A928_us"]
-      - [0x178A20, asm, "func_8040A9A0_de"]
+      - [0x178A20, c, "func_8040A9A0_de"]
       - [0x178A78, c, "func_8040A9F8_de"]
       - [0x178ACC, c, "func_8040AA4C_de"]
       - [0x178B38, c, "func_8040AAB8_de"]

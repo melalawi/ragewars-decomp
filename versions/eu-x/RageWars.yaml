@@ -4429,7 +4429,7 @@ segments:
       - [0xFAA04, c, "func_8040A6A8_de"]
       - [0xFAB6C, asm, "func_8040AB6C_eu"]
       - [0xFAC68, asm, "func_8040AC68_eu"]
-      - [0xFADC0, asm, "func_8040A9A0_de"]
+      - [0xFADC0, c, "func_8040A9A0_de"]
       - [0xFAE28, c, "func_8040A9F8_de"]
       - [0xFAE7C, c, "func_8040AA4C_de"]
       - [0xFAEE8, c, "func_8040AAB8_de"]
