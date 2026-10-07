@@ -13,7 +13,7 @@ signals = ["cap", "version"]
 name = "code_80200610"
 segment = "span_1000"
 evidence = "proven"
-members = ["func_80200610_de", "func_80200800_de", "func_80200880_de", "func_8020095C_de", "func_80200AD8_de", "func_80200B14_de", "func_80200C28_de", "func_80200CA0_de", "func_80200D18_de", "func_80200E04_de", "func_80200F98_de", "func_80201064_de", "func_802010D8_de", "func_802012D8_de", "func_802013D8_de", "func_802014A4_de", "func_802016DC_de", "func_802016FC_de", "func_802017E8_de", "func_802018A0_de", "func_80201A74_de", "func_80201ACC_de", "func_80201B50_de", "func_80201C80_de", "func_80201DB0_de", "func_80201E94_de", "func_80202018_de", "func_80202198_de", "func_80202268_eu", "func_80202268_eu_x", "func_80202268_us"]
+members = ["func_80200610_de", "func_80200800_de", "func_8020095C_de", "func_80200AD8_de", "func_80200B14_de", "func_80200C28_de", "func_80200CA0_de", "func_80200D18_de", "func_80200E04_de", "func_80200F98_de", "func_80201064_de", "func_802010D8_de", "func_802012D8_de", "func_802013D8_de", "func_802014A4_de", "func_802016DC_de", "func_802016FC_de", "func_802017E8_de", "func_802018A0_de", "func_80201A74_de", "func_80201ACC_de", "func_80201B50_de", "func_80201C80_de", "func_80201DB0_de", "func_80201E94_de", "func_80202018_de", "func_80202198_de", "func_80202268_eu", "func_80202268_eu_x", "func_80202268_us"]
 only = { "func_80202268_eu" = ["eu"], "func_80202268_eu_x" = ["us-rev1", "eu-x"], "func_80202268_us" = ["us"] }
 signals = ["callee", "padding", "version"]
 

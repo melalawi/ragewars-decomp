@@ -32,14 +32,6 @@ build/%/src/func_80200800_de.i build/%/src/func_80200800_de.key build/%/units/fu
 build/%/src/func_80200800_de.i build/%/src/func_80200800_de.key build/%/units/func_80200800_de.bin: COMPILER_DEFINES := 
 build/%/src/func_80200800_de.i build/%/src/func_80200800_de.key build/%/units/func_80200800_de.bin: ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
 build/%/src/func_80200800_de.i build/%/src/func_80200800_de.key build/%/units/func_80200800_de.bin: TRIM := 
-build/%/src/func_80200880_de.i build/%/src/func_80200880_de.key build/%/units/func_80200880_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
-build/%/src/func_80200880_de.i build/%/src/func_80200880_de.key build/%/units/func_80200880_de.bin: KIND := gnu
-build/%/src/func_80200880_de.i build/%/src/func_80200880_de.key build/%/units/func_80200880_de.bin: CC := tools/gcc-2.7.2-kmc/cc1
-build/%/src/func_80200880_de.i build/%/src/func_80200880_de.key build/%/units/func_80200880_de.bin: CODEGEN := -G0 -mips3 -mgp32 -mfp32 -O2
-build/%/src/func_80200880_de.i build/%/src/func_80200880_de.key build/%/units/func_80200880_de.bin: COMPILER_INCLUDES := 
-build/%/src/func_80200880_de.i build/%/src/func_80200880_de.key build/%/units/func_80200880_de.bin: COMPILER_DEFINES := 
-build/%/src/func_80200880_de.i build/%/src/func_80200880_de.key build/%/units/func_80200880_de.bin: ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
-build/%/src/func_80200880_de.i build/%/src/func_80200880_de.key build/%/units/func_80200880_de.bin: TRIM := 
 build/%/src/func_80200AD8_de.i build/%/src/func_80200AD8_de.key build/%/units/func_80200AD8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80200C28_de.i build/%/src/func_80200C28_de.key build/%/units/func_80200C28_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -DNON_MATCHING
 build/%/src/func_80200C28_de.i build/%/src/func_80200C28_de.key build/%/units/func_80200C28_de.bin: KIND := gnu
