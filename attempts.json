@@ -7752,32 +7752,6 @@
       "exact": true,
       "minutes": 0.06
     },
-    "func_8044D794_de": {
-      "attempts": 3,
-      "best": {
-        "de": 100.0,
-        "eu": 100.0,
-        "eu-x": 100.0,
-        "us": 100.0,
-        "us-rev1": 100.0
-      },
-      "bytes": 112,
-      "exact": true,
-      "minutes": 0.03
-    },
-    "func_8044D804_de": {
-      "attempts": 2,
-      "best": {
-        "de": 100.0,
-        "eu": 100.0,
-        "eu-x": 100.0,
-        "us": 100.0,
-        "us-rev1": 100.0
-      },
-      "bytes": 592,
-      "exact": true,
-      "minutes": 3.8
-    },
     "func_8044DC60_de": {
       "attempts": 1,
       "best": {

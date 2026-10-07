@@ -406,7 +406,7 @@ segments:
       - [0x19B58, c, "func_80218F08_de"]
       - [0x19BD4, c, "func_80218F84_de"]
       - [0x19BEC, c, "func_80218F9C_de"]
-      - [0x19D74, asm, "func_80219124_de"]
+      - [0x19D74, c, "func_80219124_de"]
       - [0x19DCC, c, "func_8021917C_de"]
       - [0x19F04, asm, "func_80219304_eu"]
       - [0x19F10, c, "func_802192C0_de"]
