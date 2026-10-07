@@ -539,6 +539,31 @@
       "exact": false,
       "minutes": 1.68
     },
+    "func_80212670_de": {
+      "attempts": 4,
+      "best": {
+        "de": 82.653061,
+        "eu": 82.653061,
+        "eu-x": 82.653061,
+        "us": 82.653061,
+        "us-rev1": 82.653061
+      },
+      "bytes": 388,
+      "exact": false,
+      "fuzzy": {
+        "compiler": "gcc-2.8.1-sn64",
+        "score": 82.653061,
+        "source_sha256": "d69e7ece9a4fee6b9ec32dff09c80ec08d1fbdcc9e6d7d46e1813bacea327057",
+        "versions": {
+          "de": 82.653061,
+          "eu": 82.653061,
+          "eu-x": 82.653061,
+          "us": 82.653061,
+          "us-rev1": 82.653061
+        }
+      },
+      "minutes": 7.7
+    },
     "func_80212D80_eu_x": {
       "attempts": 7,
       "best": {
@@ -675,6 +700,19 @@
       "bytes": 568,
       "exact": true,
       "minutes": 0.02
+    },
+    "func_802181FC_de": {
+      "attempts": 3,
+      "best": {
+        "de": 60.204082,
+        "eu": 60.204082,
+        "eu-x": 60.204082,
+        "us": 60.204082,
+        "us-rev1": 60.204082
+      },
+      "bytes": 368,
+      "exact": false,
+      "minutes": 8.53
     },
     "func_8021836C_de": {
       "attempts": 6,
