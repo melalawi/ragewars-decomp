@@ -1238,7 +1238,7 @@
       "minutes": 261.73
     },
     "func_802453D4_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -2706,7 +2706,7 @@
       "minutes": 4.8
     },
     "func_80286080_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
@@ -3731,7 +3731,7 @@
       "minutes": 0.02
     },
     "func_802B0A90_de": {
-      "attempts": 1,
+      "attempts": 2,
       "best": {
         "de": 100.0,
         "eu": 100.0,
