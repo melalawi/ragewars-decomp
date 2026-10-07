@@ -81,7 +81,9 @@ void func_804066BC_de(Menu_func_804066BC_de *menu) {
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 
 
+extern char *D_800E25A4[];
 extern char *D_800E25B4[];
+extern u8 D_80152789;
 
 
 #else
