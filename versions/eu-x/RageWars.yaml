@@ -5355,7 +5355,7 @@ segments:
       - [0x130010, c, "func_8043F040_de"]
       - [0x1300E4, asm, "func_804400E4_eu_x"]
       - [0x1300F0, asm, "func_8043F120_de"]
-      - [0x130264, asm, "func_8043F294_de"]
+      - [0x130264, c, "func_8043F294_de"]
       - [0x1304FC, asm, "func_8043F52C_de"]
       - [0x130E40, c, "func_8043FE3C_de"]
       - [0x1312F4, asm, "func_804402DC_de"]

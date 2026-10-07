@@ -5376,7 +5376,7 @@ segments:
       - [0x1A5040, c, "func_8043F040_de"]
       - [0x1A5114, asm, "func_8043F114_de"]
       - [0x1A5120, asm, "func_8043F120_de"]
-      - [0x1A5294, asm, "func_8043F294_de"]
+      - [0x1A5294, c, "func_8043F294_de"]
       - [0x1A552C, asm, "func_8043F52C_de"]
       - [0x1A5E3C, c, "func_8043FE3C_de"]
       - [0x1A62DC, asm, "func_804402DC_de"]
