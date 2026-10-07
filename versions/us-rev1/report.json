@@ -9,11 +9,11 @@
     "total_functions": 4547,
     "matched_functions": 3726,
     "total_units": 5520,
-    "complete_units": 2870,
-    "matched_code_percent": 61.184464,
-    "complete_code_percent": 61.184464,
-    "matched_functions_percent": 81.92215,
-    "fuzzy_match_percent": 61.349808
+    "complete_units": 2871,
+    "matched_code_percent": 61.202484,
+    "complete_code_percent": 61.202484,
+    "matched_functions_percent": 81.94414,
+    "fuzzy_match_percent": 61.367825
   },
   "units": [
     {
@@ -184779,15 +184779,15 @@
       "id": "asm",
       "name": "Assembly",
       "measures": {
-        "total_code": 436892,
+        "total_code": 436688,
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 803,
+        "total_functions": 802,
         "matched_functions": 0,
-        "total_units": 803,
+        "total_units": 802,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
