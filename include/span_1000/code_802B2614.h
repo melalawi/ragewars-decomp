@@ -1,3 +1,4 @@
+#include "types.h"
 #ifndef UNBAKE_SPAN_1000_CODE_802B2614_H
 #define UNBAKE_SPAN_1000_CODE_802B2614_H
 #include "../types.h"
@@ -104,5 +105,5 @@ struct Params_func_802B2E80_de;
 /* unbake published declaration: published_f86324d04b445bb9b7abdc74 */
 typedef struct Params_func_802B2E80_de Params_func_802B2E80_de;
 
-extern double func_802B2CF0_de(int arg0, float arg1);
+s32 func_802B2CF0_de(s32 val, f32 div);
 #endif

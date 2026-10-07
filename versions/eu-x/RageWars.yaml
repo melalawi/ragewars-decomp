@@ -2291,7 +2291,7 @@ segments:
       - [0xB3530, c, "func_802B2650_de"]
       - [0xB3660, asm, "func_802B2780_de"]
       - [0xB3A9C, c, "func_802B2BBC_de"]
-      - [0xB3BD0, asm, "func_802B2CF0_de"]
+      - [0xB3BD0, c, "func_802B2CF0_de"]
       - [0x0B3C58, data, "func_802B2CF0_de_padding_B3C58"]
       - [0xB3C5C, asm, "func_802B305C_eu_x"]
       - [0xB3C60, c, "func_802B2D80_de"]
