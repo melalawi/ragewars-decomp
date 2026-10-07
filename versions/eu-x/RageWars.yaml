@@ -1847,7 +1847,7 @@ segments:
       - [0x951FC, c, "func_802944A8_de"]
       - [0x95218, c, "func_802944C4_de"]
       - [0x95248, c, "func_802944F4_de"]
-      - [0x952F0, asm, "func_8029459C_de"]
+      - [0x952F0, c, "func_8029459C_de"]
       - [0x9532C, c, "func_802945D8_de"]
       - [0x953F8, asm, "func_802946A4_de"]
       - [0x954FC, c, "func_802947A8_de"]
