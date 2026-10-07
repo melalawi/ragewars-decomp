@@ -154,7 +154,7 @@
       "minutes": 45.43
     },
     "func_80200D18_de": {
-      "attempts": 6,
+      "attempts": 7,
       "best": {
         "de": 94.915254,
         "eu": 94.915254,
@@ -176,7 +176,7 @@
           "us-rev1": 94.915254
         }
       },
-      "minutes": 28.71
+      "minutes": 30.81
     },
     "func_80200F98_de": {
       "attempts": 1,
