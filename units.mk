@@ -49,6 +49,7 @@ build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/fu
 build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: COMPILER_DEFINES := 
 build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
 build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: TRIM := 
+build/%/src/func_80201064_de.i build/%/src/func_80201064_de.key build/%/units/func_80201064_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -DNON_MATCHING
 build/%/src/func_802016DC_de.i build/%/src/func_802016DC_de.key build/%/units/func_802016DC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80202CA0_de.i build/%/src/func_80202CA0_de.key build/%/units/func_80202CA0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80202FDC_de.i build/%/src/func_80202FDC_de.key build/%/units/func_80202FDC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
