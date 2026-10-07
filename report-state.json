@@ -4,7 +4,7 @@
   "source_pins": {
     ".github/workflows/progress.yml": "ae5a595d712cdc2e4f7fab6e5e82524449d1e7b159ace073bfada2d2eba91ed7",
     ".gitlab-ci.yml": "c01ee4acc3f49f21345279384b9f8ec8af2e526d6d9035ef8b2a373dabedd73c",
-    "attempts.json": "a21880d3c8e0a35b91fb6824eb7a704cc2ad2f255bca947f1d205be9df87e96a",
+    "attempts.json": "093e3a5a11fd44f25afe7fd06b78c22059ddf041c8d68cec33807e401298e34b",
     "config.toml": "b9fa03f7d1662af410a6c9ccc0f5b5def1154dc071082a8d3eb40ae79ab6ae61",
     "include/abi.h": "cff5a56cde9e9c6f6229882328d71b038544f4c8102196347b92ac2df6a84951",
     "include/acmd.h": "522f0c6ad06a44f89de7e93dd9caa51ef62e811027a48ce12dd04a3b79db60ac",
@@ -3148,6 +3148,7 @@
     "src/func_80444C68_de.c": "b17bd6e2333e9fb5282c9bce6a493d03ee27afe0533c757e0900e1b59a54a7c0",
     "src/func_80444CF8_de.c": "60d6dcfc991c596d27112e2a3a7faca8388f71c34f3ecdeffb37ea0596f410c7",
     "src/func_80444D50_de.c": "ed1347154f2162f83f46a3c9dc6835d0377b27cc7abf81251cb58302050e1c36",
+    "src/func_80444D9C_de.c": "bb958901cc30dc3da4e6b8cc4b8d28a1ac2997588a4d85725702fc9ee8cecf18",
     "src/func_80444E30_de.c": "86bdb7a1557abd1b8e43383d408cdd652e162cccba6babf9c7d8e2479822c832",
     "src/func_80444E7C_de.c": "57d23b065d2b598ea7b7f69adb48b5486696aef0886b16262da9501137875f6a",
     "src/func_80444EBC_de.c": "86f32657936eb1ac96fa1afa10e9a724e2af0167c8a5310c1b90cc7adc49f117",
@@ -3219,20 +3220,20 @@
     "tools/compilers.sha256": "b28b12299b9e8803d03ffefca0963b4fafa1d1c15ff743b89b12e160a9e47991",
     "tools/report-verifier.zip": "dde34eb0c9569015b2365c8c51583883deaeadd1fcb799db917d6d0b04b4907c",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "versions/de/RageWars.yaml": "f0135cea71e2b44ae0db2dc7704d641f8b6e5e33361beb0fd7653facd1e2d06b",
+    "versions/de/RageWars.yaml": "08e31f9e1204e0f8e9b8561fecea9d7fc97223de189463eddccfef06ee686fb6",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
     "versions/eu/RageWars.yaml": "9c6479ce5279fdde91f783d9cbf08e5219d8eb0680e2cb533c433014726290ff",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
     "versions/eu-x/RageWars.yaml": "79e160fb30a94eda150a7c8c656f80bc0431506dba06a693b1e3bc42dd88333a",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
-    "versions/us/RageWars.yaml": "ce5fd9616eedb29c52528201c16e34ab550d927a05216af20f780cffe2a6a46c",
+    "versions/us/RageWars.yaml": "0e6e857a22f4f29492326f73e4908e28cce41834f1280d056d44e7459b32a573",
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
-    "versions/us-rev1/RageWars.yaml": "e851896a0e2fc61e3fdb5d74251a139a627af0ecd9660578111902efcb974910",
+    "versions/us-rev1/RageWars.yaml": "8486364c54fcbad22144b9d5cc3db2195e37cc3c8596efc2f09a13fe2ef67421",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5"
   },
   "versions": {
     "de": {
-      "report_sha256": "5eddfbcff7c696725af87b3ac9bf0845c11789ec2e28f56edc5d60c475b4e497",
+      "report_sha256": "6c219d047dadd2eeb792ba20bb34ded02f12da9a3b6c30e6198db1d28e72dbab",
       "artifact": "de_report",
       "report_file": "de_report.json",
       "draft_bytes": 2788,
@@ -3361,11 +3362,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.21626043925413,
+      "exact_plus_draft_percent": 60.22893053529346,
       "data_match_state": "unknown"
     },
     "us": {
-      "report_sha256": "cd3b3538fbd659c48f7277c90af8df5db770b24665f16d4aec8a704d7d694ba5",
+      "report_sha256": "29ab5dbb492e70f08e7cf2ab322f84de8047a73abefe411f8ea3c15f33ef4e60",
       "artifact": "us_report",
       "report_file": "us_report.json",
       "draft_bytes": 2792,
@@ -3494,11 +3495,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.14655013349099,
+      "exact_plus_draft_percent": 62.15972977959866,
       "data_match_state": "unknown"
     },
     "us-rev1": {
-      "report_sha256": "6afec99d0ad37b3d507935aeb43d5937129384aa0bb247f515f8c67e473cb4b6",
+      "report_sha256": "df7d3fe307139df099645f2663e28368155db42f6613176d0bc097abbd44881a",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 2872,
@@ -3635,7 +3636,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.46287862460296,
+      "exact_plus_draft_percent": 61.47524476117457,
       "data_match_state": "unknown"
     },
     "eu": {
