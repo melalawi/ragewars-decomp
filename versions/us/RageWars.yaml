@@ -1215,7 +1215,7 @@ segments:
       - [0x5EAD4, c, "func_8025DF34_de"]
       - [0x5EB88, c, "func_8025DFE8_de"]
       - [0x5EBEC, c, "func_8025E04C_de"]
-      - [0x5EC94, asm, "func_8025E0F4_de"]
+      - [0x5EC94, c, "func_8025E0F4_de"]
       - [0x5ECBC, c, "func_8025E11C_de"]
       - [0x5ECF0, c, "func_8025E150_de"]
       - [0x5ED14, c, "func_8025E174_de"]

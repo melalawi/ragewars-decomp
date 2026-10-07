@@ -538,9 +538,7 @@
     "src/func_80217074_de.c": "898c109e0b1b78b3d92d113a7a4e6b8a4a21e805fd49a39ac5f7b4e5757ae0f6",
     "src/func_802170A0_de.c": "cc2772c262cd5d550f309b0de0fa057acade13917e53e2c8b2c093bbdab8c35e",
     "src/func_802171BC_de.c": "dfdb4b43b9749bd0e7f1f3e4cad7ff142a1876856ffc1e7b29f3d512060d3022",
-    "src/func_802171C8_de.c": "f3929296b5bcf951d4e7e3227840b805396679be4c83e4e7c2f27c990f227173",
-    "src/func_80217290_de.c": "7a9e0e0e10dc0e75ee2427da46d02c96a3a3464adb49bdc6a04f790d7ea75cb0",
-    "src/func_802172C4_de.c": "93aa96f53f1cbfa2b86b1f3af36d4cb1767d9e9f074f072014ac5fd9fd1a666e",
+    "src/func_802171C8_de.c": "feca44f0390a524a4bd8410d621117bd51346a1efd3be45bbfe845e1010c753a",
     "src/func_80217388_de.c": "854c293d6514671101538c4b5ea61e5535a160cab650339b9d7fe216671da52c",
     "src/func_80217928_de.c": "eb5ac82087f4cc69526d0acda46f31ccf419c4eab1db76cfb9dd54b79c270e38",
     "src/func_80217B3C_de.c": "58c8373bc920ddf1b1e73ff1f0ce5500b89d0086b43af55a2c6036aaf0a052ae",
@@ -1247,6 +1245,7 @@
     "src/func_8025DF34_de.c": "51ca30a3ef061f2a5c5f571291cf990b0f64053e3f98d44c9047d028f1567807",
     "src/func_8025DFE8_de.c": "86bdf4a5d9ac302a212ee1028b946a6131ea4ab46ec840dc49dfd355cf095c5d",
     "src/func_8025E04C_de.c": "7058947af841ba307843d6ae27f2dd43c13967ff79929fbfd36f6392fc2a1e97",
+    "src/func_8025E0F4_de.c": "2de821c9015476388a24675fa9c9fad3014029cce2aa27e3ee4898eae929b2f5",
     "src/func_8025E11C_de.c": "bc6773eb1984e13287a607f7eebce670c4a288ea8a7b4cdcac2fc3f584de1483",
     "src/func_8025E150_de.c": "83a417d7d745488b09b91ea1b1910714e1254c96aac22b7b6c75b80a2c175261",
     "src/func_8025E174_de.c": "5c6054467bd91e4a46dd6f551f50f3da5f93c7b325a16d1900f18d8b875e2443",
@@ -3231,21 +3230,21 @@
     "tools/compilers.sha256": "b28b12299b9e8803d03ffefca0963b4fafa1d1c15ff743b89b12e160a9e47991",
     "tools/report-verifier.zip": "829e6932865a0df53b4771dcae6f4fcd93d1708339f75f9c83081a909e0e96ed",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "versions/de/RageWars.yaml": "90a111f2f4e5d8518fd00f3ffcd08afec962094519d2bd598edbfbbdacac1353",
+    "versions/de/RageWars.yaml": "cc1bda988d8a17c4f492f9a416a591235e5b396d7e985e60520c161fe067dca9",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
-    "versions/eu/RageWars.yaml": "41152725b402def27562f9bc458b07f5e465e787af703a86f5d3a879a5078e1a",
+    "versions/eu/RageWars.yaml": "329bc2d682bc4fe1988de3adff1e54ffb83a76072c602d6a0013a474fbe1a1b1",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
-    "versions/eu-x/RageWars.yaml": "bc0385d123f716ad0295aad996f6112ae9a450bd9e0558cf5be4c85c1c3d4414",
+    "versions/eu-x/RageWars.yaml": "206077e8a8158c1aba143de432fda7a385a6c5848e91b57fcb5ff58c86d397ff",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
-    "versions/us/RageWars.yaml": "8e7180036ed555bc8fdd66c69ab6c241b14dbffcf2d823a454309ff19b49fd61",
+    "versions/us/RageWars.yaml": "84e38f3f9baf6634e33058a17997fa217698eb01c03cf93ed4a20fa38cc232af",
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
-    "versions/us-rev1/RageWars.yaml": "ca0bd22d1805061639de7ddbd7ccd26948c823db9e3f9ecfd9eaf45b56cb360c",
+    "versions/us-rev1/RageWars.yaml": "01f190a846357d3cc1ca03cb483fc874a91569781461c3e47be059cc6c41d6c9",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5",
     "publication-state": "7990bea3d9a1e4c6bcf69d4fb055dfe2b3443423f1ffea0c3ad1a184eae29e1d"
   },
   "versions": {
     "us": {
-      "report_sha256": "64648994a2ce3aa2401171cd28ba2ff4e08e92c6ad58a3c4b3fb86e402bebe12",
+      "report_sha256": "5244731626edea11df378a3f1f1363230c12f62981573dcffc5224669d3e0d5f",
       "artifact": "us_report",
       "report_file": "us_report.json",
       "draft_bytes": 6144,
@@ -3446,11 +3445,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.66281569959445,
+      "exact_plus_draft_percent": 62.666581312768066,
       "data_match_state": "unknown"
     },
     "us-rev1": {
-      "report_sha256": "e0f8da0d8399d49d259f709e9c13b58cf3078f81a71e318e358ab9454a0a5dcd",
+      "report_sha256": "16f1f82784b3060d711a0520e9e38ab1266ed0db21e8ab307de92ba5f9195f41",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6224,
@@ -3659,11 +3658,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.9472778600224,
+      "exact_plus_draft_percent": 61.9508110419,
       "data_match_state": "unknown"
     },
     "eu": {
-      "report_sha256": "fb7c98ab38b50bb0ef34ad89b43f70c655765a424e734ee0aab5e9a089fb4e34",
+      "report_sha256": "2efb8b95f8bdd0df0d0c578e80c4b995757feb96b7275de785ddb27c99518151",
       "artifact": "eu_report",
       "report_file": "eu_report.json",
       "draft_bytes": 6144,
@@ -3864,11 +3863,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.70525433544725,
+      "exact_plus_draft_percent": 60.70885147068874,
       "data_match_state": "unknown"
     },
     "eu-x": {
-      "report_sha256": "b483644ce3a28ecd3c8fc8e2703c0f0013a7d5dc7eba51ab0bd7be543b6d517b",
+      "report_sha256": "f9adc789287209fd246a10e6d8adc00a05ddc3d9729bac19e34fb642c4fb48d8",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
       "draft_bytes": 6224,
@@ -4077,11 +4076,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.639416949395944,
+      "exact_plus_draft_percent": 60.643007162475094,
       "data_match_state": "unknown"
     },
     "de": {
-      "report_sha256": "91ac5b433dd645536512d3f7af2ce70f9927d72c237ff740712bc53921b79126",
+      "report_sha256": "4dee6c2057769dda05ee3e7a783dc451fc95913fc729ca62d58b8b09875c5797",
       "artifact": "de_report",
       "report_file": "de_report.json",
       "draft_bytes": 6140,
