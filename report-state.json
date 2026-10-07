@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "tool_sha256": "7ecab63d1e1d68c90b0b552d532de7ec07babb5a0db0eb94e848d0d657b7421c",
+  "tool_sha256": "829e6932865a0df53b4771dcae6f4fcd93d1708339f75f9c83081a909e0e96ed",
   "source_pins": {
-    ".github/workflows/progress.yml": "3982c316ebb197190d40c1f9b25e097b223afbe9ca4cc905f9e6a3c3b7ce7de6",
-    ".gitlab-ci.yml": "c4c8ca9431edb12ba8021cce4e77f22997bac5d32815bc60d242cf7a91bf9e0d",
+    ".github/workflows/progress.yml": "7d943124dcecc5a91a8aa066b2f30351e5b1309907f098e8943fc12e0ea65894",
+    ".gitlab-ci.yml": "2dcf77318858d3d9f85a2a1a440a6fdf66c58d0b4968374484b7656dc97012dc",
     "config.toml": "ea7945703dc495e781f8f52381228011d69d6d35510c422fa61f339d8bbc7c47",
     "include/abi.h": "cff5a56cde9e9c6f6229882328d71b038544f4c8102196347b92ac2df6a84951",
     "include/acmd.h": "522f0c6ad06a44f89de7e93dd9caa51ef62e811027a48ce12dd04a3b79db60ac",
@@ -60,6 +60,7 @@
     "include/shared/func_80245618_de_closed.h": "1d134f17325b6a53f974da6cf8cefc6296e887bfabf977b5b71a702420cc6452",
     "include/shared/func_80245B74_de_closed.h": "a40f0b78edacad0d03edcc93f3fb49ebe14faba0ed24f6c431c7da95ffd06bda",
     "include/shared/func_80245BC0_de_closed.h": "a67d94ba2027582cc6d2fa618f5894ddaeece2bf100e13b880184b737cf6d809",
+    "include/shared/func_8025B920_de_closed.h": "923e799b505ed618e9f802cedc373e7c34cee531f0dd9671a0e4fb7baa4db6d2",
     "include/shared/func_802745D0_de_closed.h": "c9eb0c6607b7b7f738ab7184db7b44f9d11e2086854bad6960611903b370be52",
     "include/shared/func_8027AD4C_de_closed.h": "26e1cf9b6380026445eccbb94a0ed75cee799423a22410efab71bb63e2b51bdf",
     "include/shared/func_80286080_de_closed.h": "1185969d843f989a88f9ad6f408dc26fbe6a42b4168fe9896417a05af4678a39",
@@ -139,7 +140,7 @@
     "include/span_1000/code_80258820.h": "6bd0017891c2b0dcbda5e0031b4f5d10be914328a37f1c59c270764fb520d1c3",
     "include/span_1000/code_802591C0.h": "50ce79a1b7d4f2922e499e3cea717a06a16e00fe2096576c5bb2f338a66f2edc",
     "include/span_1000/code_80259B2C.h": "cf56cd5e8cbc795110c3298d55f31f839a988e00336dadad470e9073c0437806",
-    "include/span_1000/code_8025A3EC.h": "5f3e3e9749c000b8fc78bb2a2dfa5844e861d6dd589169577c056d88eb7ba8ca",
+    "include/span_1000/code_8025A3EC.h": "ecd82be81b6d11699ce0663c4990a55a74b570501a89f4ede8bdfcb5a637ecc8",
     "include/span_1000/code_8025C544.h": "5636013664c23ec39c08c43306d51fed20cf73a220e24523c70b9b61fe42f60f",
     "include/span_1000/code_8025D948.h": "c65c0c37f4b7374b12004e9dcb252dbdbb5c9bf4683084d651d91ff25d8483d1",
     "include/span_1000/code_8025E280.h": "87761c7e9c3604bcd2666e16a8ccb8e65c5740dae206e622f8c4c52467241395",
@@ -1178,7 +1179,7 @@
     "src/func_80256FC0_de.c": "6d16f8f250af08880547f5e483e7e36685a129e9118165d8b14ab8a340ee79a8",
     "src/func_802570C0_de.c": "e60002a180d2b9ded502297b4f08b039abe2952f52ee1342f2a27908156e74c1",
     "src/func_802571F0_de.c": "a5a3f88712c7cd55799d77a953591074648f11bf8ab6bf5af34f25f72fad39dc",
-    "src/func_80257A14_de.c": "e5218fc1f545a295d00297b7bed4f29f734f13d46602b5914cbe4d741373d0e1",
+    "src/func_80257A14_de.c": "cc3785964001c64db3a641425ff7ce0612e6db08019170c64e0446119975ea07",
     "src/func_8025842C_de.c": "4c12d6415cc5109de3ff251df24d1fdf94dad65288b96f4c74e5463e17ba4c81",
     "src/func_80258800_de.c": "ab37c19fa6ffeb80b74e1d22bbb9aa40a6f003a74e6c32b898e774d2867a2ec2",
     "src/func_802591A0_de.c": "d969cc1f62965bae0d3203b2de5f0deffc5bc210855b5af98a65421e6361e411",
@@ -1202,6 +1203,7 @@
     "src/func_8025B758_de.c": "bc3d37e3f9b62075e75c70349c69d0fb2a32ddaa06d454cf18f598274f77250b",
     "src/func_8025B854_de.c": "85e675c49881d5ca6b9767c2de67ff904fbe93d09b8fe040b0de21af4244b754",
     "src/func_8025B8BC_de.c": "de8205f58a1008441d8f59cf19fa60c397556f2db178b01774badb3944bf35b8",
+    "src/func_8025B920_de.c": "504413646a9260cc2cd916b41ec8d1f2a446785326c1be000ea98ba56769e58c",
     "src/func_8025BA4C_de.c": "a66da49a4bb6027321c56472341b180941c5fa7187ecca0027e0df06d820e623",
     "src/func_8025BDAC_de.c": "72bb70c5bb32016e639956b14fdf0351884ff8a1ccbf76a0a4e635a8f87d7752",
     "src/func_8025BE08_de.c": "f6a8ee8a6f224ecbe26aa86c09f1d5dcd4e879d9d0443cb86d7f96d5155fb008",
@@ -3228,228 +3230,23 @@
     "src/func_8044DDD4_de.c": "b899ee6137c276ea280f7e1aa3b7409e23ce905f920073f5acacdf91858d36a7",
     "src/func_8044DE7C_de.c": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
     "tools/compilers.sha256": "b28b12299b9e8803d03ffefca0963b4fafa1d1c15ff743b89b12e160a9e47991",
-    "tools/report-verifier.zip": "7ecab63d1e1d68c90b0b552d532de7ec07babb5a0db0eb94e848d0d657b7421c",
+    "tools/report-verifier.zip": "829e6932865a0df53b4771dcae6f4fcd93d1708339f75f9c83081a909e0e96ed",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "versions/de/RageWars.yaml": "35e330a180d5727377623f3f132f1dfde49109130cf6cd5ee857970673beb171",
+    "versions/de/RageWars.yaml": "6064f29040913e9949bf0ba638a209193fb4f36e26af00abd448b61cc565215c",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
-    "versions/eu/RageWars.yaml": "37ca9cd6e2c17c475627eca7399e7e10f7516b1a264a1c55601530c0c1ee962b",
+    "versions/eu/RageWars.yaml": "1a65f4dc9991dc2b40943266f0402b6e5794def7c11e88ab5c07f55aa95c002a",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
-    "versions/eu-x/RageWars.yaml": "78d5cfd907125ee56892dd96181631a6e3b847be003e894389e4fb9bbb31886c",
+    "versions/eu-x/RageWars.yaml": "e84968815a1833f19caaa4ec2f931ff443dde914a8f447baa4a2eebbda86e242",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
-    "versions/us/RageWars.yaml": "471236d3a4766abfe797f33e27ff5cf86b5c6456964744f085ea982ee5287e11",
+    "versions/us/RageWars.yaml": "0418a4b43df0763079cb81609eb7ada907c9be84d2ddd63fd9fb8b4d5473a25c",
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
-    "versions/us-rev1/RageWars.yaml": "f4e7ca538ec28869288bb0d10d511427ccc8c3fbee75a3b60bd846d8a97fc557",
+    "versions/us-rev1/RageWars.yaml": "ac5bec53ce820e220a3410281e92fe7e0f400faaf5a822365f75ccbd1f5e8d1d",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5",
     "publication-state": "7990bea3d9a1e4c6bcf69d4fb055dfe2b3443423f1ffea0c3ad1a184eae29e1d"
   },
   "versions": {
-    "de": {
-      "report_sha256": "e225f6413ad9925ff7fce1e140f476c312fee7774fb5e60aa7f9ad68daedac85",
-      "artifact": "de_report",
-      "report_file": "de_report.json",
-      "draft_bytes": 6140,
-      "draft_functions": 24,
-      "draft_weighted_bytes": 4379.46975236,
-      "unknown_similarity_bytes": 0,
-      "drafts": [
-        {
-          "name": "func_802005DC_de",
-          "source_path": "src/func_802005DC_de.c",
-          "bytes": 52,
-          "score": 28.571429,
-          "source_sha256": "50b9af2bd29b1cdb7208dbd331073c880b21d0ef2184f4bf77572674460781d7",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200C28_de",
-          "source_path": "src/func_80200C28_de.c",
-          "bytes": 120,
-          "score": 70.0,
-          "source_sha256": "96b8e5ad656bd37d48a4d0013f80adc7a9d3f8b9673cb30228ec513da82c056f",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200CA0_de",
-          "source_path": "src/func_80200CA0_de.c",
-          "bytes": 120,
-          "score": 70.0,
-          "source_sha256": "d038719007542d4429e9eaf19ee02cc25e3fef33a026e05bac1d0bd3aedb0194",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80200D18_de",
-          "source_path": "src/func_80200D18_de.c",
-          "bytes": 236,
-          "score": 94.915254,
-          "source_sha256": "fefd3719342a7096a0f44389d97573038ec833050f0c0fe673bee11f33e81692",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80200F98_de",
-          "source_path": "src/func_80200F98_de.c",
-          "bytes": 204,
-          "score": 96.078431,
-          "source_sha256": "776e8f65b64b4897944cc28d508b8e67661f0e6b574a00e30a6c2eaf0bcbf503",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80201064_de",
-          "source_path": "src/func_80201064_de.c",
-          "bytes": 116,
-          "score": 96.551724,
-          "source_sha256": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_802012D8_de",
-          "source_path": "src/func_802012D8_de.c",
-          "bytes": 256,
-          "score": 81.538462,
-          "source_sha256": "fa5dde333ffc2d72dec15186ccb9c612192154a960e3e24ae388f9b9e454684b",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_80212670_de",
-          "source_path": "src/func_80212670_de.c",
-          "bytes": 388,
-          "score": 82.653061,
-          "source_sha256": "d69e7ece9a4fee6b9ec32dff09c80ec08d1fbdcc9e6d7d46e1813bacea327057",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80222AA4_de",
-          "source_path": "src/func_80222AA4_de.c",
-          "bytes": 324,
-          "score": 60.97561,
-          "source_sha256": "d5cea2808d6c9a405f88559e1d7c12d89edefd4e3af39eb4605c84fd1c2814ed",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80226C60_de",
-          "source_path": "src/func_80226C60_de.c",
-          "bytes": 368,
-          "score": 73.913043,
-          "source_sha256": "6a682a61f704bb09f4ba8015e55624f2c8d3c98eaa13af451045f0827fbbd7aa",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8022F454_de",
-          "source_path": "src/func_8022F454_de.c",
-          "bytes": 104,
-          "score": 65.384615,
-          "source_sha256": "f746b543b2dbc7857847ebc137c50a2011ba9d77315b495d6b8c4bc013416d17",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80264F60_de",
-          "source_path": "src/func_80264F60_de.c",
-          "bytes": 592,
-          "score": 47.297297,
-          "source_sha256": "389d5d3446ad9f05a6e39450e891967746a6d950e8a931c05a1b516554fdde8c",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_802651B0_de",
-          "source_path": "src/func_802651B0_de.c",
-          "bytes": 400,
-          "score": 69.902913,
-          "source_sha256": "ac139742aaa959c88849643055bc62ec532d2bfd0655d08423d5ff51473a57a8",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80271AA8_de",
-          "source_path": "src/func_80271AA8_de.c",
-          "bytes": 428,
-          "score": 47.89916,
-          "source_sha256": "93f037c9f4bc31b3d37fa85ac8cec72b8189f51d7d366552a917d4e45de94298",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8028E108_de",
-          "source_path": "src/func_8028E108_de.c",
-          "bytes": 380,
-          "score": 82.291667,
-          "source_sha256": "c9afd5818be763c69cda63b7896899205c1255fad681a1a78e423c343faf81ef",
-          "compiler": "gcc-2.7.2-kmc"
-        },
-        {
-          "name": "func_802917D8_de",
-          "source_path": "src/func_802917D8_de.c",
-          "bytes": 340,
-          "score": 60.0,
-          "source_sha256": "9114578a30a9f0508e98fb664e3320223772ae9518242e9ca0573ad06e57ebc8",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8029ABA0_de",
-          "source_path": "src/func_8029ABA0_de.c",
-          "bytes": 408,
-          "score": 75.490196,
-          "source_sha256": "5d92e36822d60231bd613cd95c8357130354a7affa2d3f2e0ca1de0e5ac17d91",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8029B278_de",
-          "source_path": "src/func_8029B278_de.c",
-          "bytes": 328,
-          "score": 76.829268,
-          "source_sha256": "c99fa9bb71abfe35e4f021264110d8149b6f57288ab616ea0f8481236ab11e8e",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_802BC508_de",
-          "source_path": "src/func_802BC508_de.c",
-          "bytes": 80,
-          "score": 15.0,
-          "source_sha256": "c0e093b6c3c53f3e1c4fd79d1b423787ef2e517c3a4dc2a643f0caf8fd638674",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_802BC558_de",
-          "source_path": "src/func_802BC558_de.c",
-          "bytes": 24,
-          "score": 50.0,
-          "source_sha256": "b104f016e1c351682354bb402c6ad42f08e9ff611e713990f0685c7b04a109c6",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80426274_de",
-          "source_path": "src/func_80426274_de.c",
-          "bytes": 144,
-          "score": 38.888889,
-          "source_sha256": "059c43912a37845519c6e0554216dac218f79fb4fe9a97684c579b2cae1abbb8",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_80427250_de",
-          "source_path": "src/func_80427250_de.c",
-          "bytes": 388,
-          "score": 97.938144,
-          "source_sha256": "6a728654624ab8c93abca5742ac9fcffc66667049b59893ee3d9dd643776aa23",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8042AF3C_de",
-          "source_path": "src/func_8042AF3C_de.c",
-          "bytes": 124,
-          "score": 77.419355,
-          "source_sha256": "faa277f1e85e43f321e707e66c5f635a8ed3975ed4fd6e5e2e3c9e19e687dd1d",
-          "compiler": "gcc-2.8.1-sn64"
-        },
-        {
-          "name": "func_8044DE7C_de",
-          "source_path": "src/func_8044DE7C_de.c",
-          "bytes": 216,
-          "score": 92.727273,
-          "source_sha256": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
-          "compiler": "gcc-2.8.1-sn64"
-        }
-      ],
-      "exact_plus_draft_percent": 60.680709959781495,
-      "data_match_state": "unknown"
-    },
     "us": {
-      "report_sha256": "8427437144fb07704560f16200c04c4aa69119317b7439c60f257d5bdd0a8434",
+      "report_sha256": "2be9193f82878159dc1dcf81b8f1c5d6fc7fe8e7e74666224461f7a2c19bd31d",
       "artifact": "us_report",
       "report_file": "us_report.json",
       "draft_bytes": 6144,
@@ -3650,11 +3447,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 62.62967830366658,
+      "exact_plus_draft_percent": 62.65792040246873,
       "data_match_state": "unknown"
     },
     "us-rev1": {
-      "report_sha256": "e5b5ddf743fa637a2e083380a800e500dc0c40e357c9b8ca755d96279023019d",
+      "report_sha256": "ee897c875f4e0881d600db861a56e86b7d938759aff59c834c84c074095116d3",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6224,
@@ -3863,11 +3660,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.91618585949949,
+      "exact_plus_draft_percent": 61.942684723581515,
       "data_match_state": "unknown"
     },
     "eu": {
-      "report_sha256": "264a3733842067e0d682e2839cae576530dc7347241e8591ba4878cfdbc0b0f3",
+      "report_sha256": "f03c7de6a837c8bf5af67e10df7200923bef1338d38606a0b0cfeb4e21288ab6",
       "artifact": "eu_report",
       "report_file": "eu_report.json",
       "draft_bytes": 6144,
@@ -4068,11 +3865,11 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.673599545322105,
+      "exact_plus_draft_percent": 60.70057805963331,
       "data_match_state": "unknown"
     },
     "eu-x": {
-      "report_sha256": "19078924868d03b6b208b38547d7ca9f5ed451f35f6ee2835b1e22f1fe619fcf",
+      "report_sha256": "1ee6aa2386e8c0866d35cc4792636a08a5120ee48249712b35a768291d0e76ca",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
       "draft_bytes": 6224,
@@ -4281,7 +4078,212 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 60.60782307429946,
+      "exact_plus_draft_percent": 60.634749672393056,
+      "data_match_state": "unknown"
+    },
+    "de": {
+      "report_sha256": "cf6d4f8a8a3141154c01c527db4c13ecc8becf84888c6764350ceb7e8d8065b6",
+      "artifact": "de_report",
+      "report_file": "de_report.json",
+      "draft_bytes": 6140,
+      "draft_functions": 24,
+      "draft_weighted_bytes": 4379.46975236,
+      "unknown_similarity_bytes": 0,
+      "drafts": [
+        {
+          "name": "func_802005DC_de",
+          "source_path": "src/func_802005DC_de.c",
+          "bytes": 52,
+          "score": 28.571429,
+          "source_sha256": "50b9af2bd29b1cdb7208dbd331073c880b21d0ef2184f4bf77572674460781d7",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200C28_de",
+          "source_path": "src/func_80200C28_de.c",
+          "bytes": 120,
+          "score": 70.0,
+          "source_sha256": "96b8e5ad656bd37d48a4d0013f80adc7a9d3f8b9673cb30228ec513da82c056f",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200CA0_de",
+          "source_path": "src/func_80200CA0_de.c",
+          "bytes": 120,
+          "score": 70.0,
+          "source_sha256": "d038719007542d4429e9eaf19ee02cc25e3fef33a026e05bac1d0bd3aedb0194",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80200D18_de",
+          "source_path": "src/func_80200D18_de.c",
+          "bytes": 236,
+          "score": 94.915254,
+          "source_sha256": "fefd3719342a7096a0f44389d97573038ec833050f0c0fe673bee11f33e81692",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80200F98_de",
+          "source_path": "src/func_80200F98_de.c",
+          "bytes": 204,
+          "score": 96.078431,
+          "source_sha256": "776e8f65b64b4897944cc28d508b8e67661f0e6b574a00e30a6c2eaf0bcbf503",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80201064_de",
+          "source_path": "src/func_80201064_de.c",
+          "bytes": 116,
+          "score": 96.551724,
+          "source_sha256": "83510eac37a9a22a9160f53b82a98d3572b066c5689fc176e63393ed752f8881",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802012D8_de",
+          "source_path": "src/func_802012D8_de.c",
+          "bytes": 256,
+          "score": 81.538462,
+          "source_sha256": "fa5dde333ffc2d72dec15186ccb9c612192154a960e3e24ae388f9b9e454684b",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_80212670_de",
+          "source_path": "src/func_80212670_de.c",
+          "bytes": 388,
+          "score": 82.653061,
+          "source_sha256": "d69e7ece9a4fee6b9ec32dff09c80ec08d1fbdcc9e6d7d46e1813bacea327057",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80222AA4_de",
+          "source_path": "src/func_80222AA4_de.c",
+          "bytes": 324,
+          "score": 60.97561,
+          "source_sha256": "d5cea2808d6c9a405f88559e1d7c12d89edefd4e3af39eb4605c84fd1c2814ed",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80226C60_de",
+          "source_path": "src/func_80226C60_de.c",
+          "bytes": 368,
+          "score": 73.913043,
+          "source_sha256": "6a682a61f704bb09f4ba8015e55624f2c8d3c98eaa13af451045f0827fbbd7aa",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8022F454_de",
+          "source_path": "src/func_8022F454_de.c",
+          "bytes": 104,
+          "score": 65.384615,
+          "source_sha256": "f746b543b2dbc7857847ebc137c50a2011ba9d77315b495d6b8c4bc013416d17",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80264F60_de",
+          "source_path": "src/func_80264F60_de.c",
+          "bytes": 592,
+          "score": 47.297297,
+          "source_sha256": "389d5d3446ad9f05a6e39450e891967746a6d950e8a931c05a1b516554fdde8c",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_802651B0_de",
+          "source_path": "src/func_802651B0_de.c",
+          "bytes": 400,
+          "score": 69.902913,
+          "source_sha256": "ac139742aaa959c88849643055bc62ec532d2bfd0655d08423d5ff51473a57a8",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80271AA8_de",
+          "source_path": "src/func_80271AA8_de.c",
+          "bytes": 428,
+          "score": 47.89916,
+          "source_sha256": "93f037c9f4bc31b3d37fa85ac8cec72b8189f51d7d366552a917d4e45de94298",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8028E108_de",
+          "source_path": "src/func_8028E108_de.c",
+          "bytes": 380,
+          "score": 82.291667,
+          "source_sha256": "c9afd5818be763c69cda63b7896899205c1255fad681a1a78e423c343faf81ef",
+          "compiler": "gcc-2.7.2-kmc"
+        },
+        {
+          "name": "func_802917D8_de",
+          "source_path": "src/func_802917D8_de.c",
+          "bytes": 340,
+          "score": 60.0,
+          "source_sha256": "9114578a30a9f0508e98fb664e3320223772ae9518242e9ca0573ad06e57ebc8",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8029ABA0_de",
+          "source_path": "src/func_8029ABA0_de.c",
+          "bytes": 408,
+          "score": 75.490196,
+          "source_sha256": "5d92e36822d60231bd613cd95c8357130354a7affa2d3f2e0ca1de0e5ac17d91",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8029B278_de",
+          "source_path": "src/func_8029B278_de.c",
+          "bytes": 328,
+          "score": 76.829268,
+          "source_sha256": "c99fa9bb71abfe35e4f021264110d8149b6f57288ab616ea0f8481236ab11e8e",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802BC508_de",
+          "source_path": "src/func_802BC508_de.c",
+          "bytes": 80,
+          "score": 15.0,
+          "source_sha256": "c0e093b6c3c53f3e1c4fd79d1b423787ef2e517c3a4dc2a643f0caf8fd638674",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_802BC558_de",
+          "source_path": "src/func_802BC558_de.c",
+          "bytes": 24,
+          "score": 50.0,
+          "source_sha256": "b104f016e1c351682354bb402c6ad42f08e9ff611e713990f0685c7b04a109c6",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80426274_de",
+          "source_path": "src/func_80426274_de.c",
+          "bytes": 144,
+          "score": 38.888889,
+          "source_sha256": "059c43912a37845519c6e0554216dac218f79fb4fe9a97684c579b2cae1abbb8",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_80427250_de",
+          "source_path": "src/func_80427250_de.c",
+          "bytes": 388,
+          "score": 97.938144,
+          "source_sha256": "6a728654624ab8c93abca5742ac9fcffc66667049b59893ee3d9dd643776aa23",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8042AF3C_de",
+          "source_path": "src/func_8042AF3C_de.c",
+          "bytes": 124,
+          "score": 77.419355,
+          "source_sha256": "faa277f1e85e43f321e707e66c5f635a8ed3975ed4fd6e5e2e3c9e19e687dd1d",
+          "compiler": "gcc-2.8.1-sn64"
+        },
+        {
+          "name": "func_8044DE7C_de",
+          "source_path": "src/func_8044DE7C_de.c",
+          "bytes": 216,
+          "score": 92.727273,
+          "source_sha256": "3e15b2e5c3135e245c995ab32e8c7c874812ab5158df68fffbd0aa3ab8542a91",
+          "compiler": "gcc-2.8.1-sn64"
+        }
+      ],
+      "exact_plus_draft_percent": 60.70786016558006,
       "data_match_state": "unknown"
     }
   },

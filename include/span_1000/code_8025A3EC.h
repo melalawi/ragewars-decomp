@@ -408,8 +408,8 @@ extern void func_8025BD00_de(void **arg0);
 /* unbake published declaration: published_8d0f93ab8a382ebf99ad3dbd */
 extern s32 func_8025B854_de(s32 arg0, s16 arg1);
 
-/* unbake published declaration: published_9258421ed1c94a28ea9bff86 */
-extern void func_8025B920_de(void * arg0, int arg1, int arg2);
+/* unbake published declaration: published_d0bd0971d15b1c0a7365db9c */
+s32 func_8025B920_de(void *record, s16 value, s16 id);
 
 /* unbake published declaration: published_97086d4c5cc8f647432e887c */
 extern void func_8025BB3C_de(s32 a);

@@ -1180,7 +1180,7 @@ segments:
       - [0x5C378, c, "func_8025B758_de"]
       - [0x5C474, c, "func_8025B854_de"]
       - [0x5C4DC, c, "func_8025B8BC_de"]
-      - [0x5C540, asm, "func_8025B920_de"]
+      - [0x5C540, c, "func_8025B920_de"]
       - [0x5C66C, c, "func_8025BA4C_de"]
       - [0x5C9CC, c, "func_8025BDAC_de"]
       - [0x5CA28, c, "func_8025BE08_de"]
