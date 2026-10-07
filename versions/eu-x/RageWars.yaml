@@ -5310,7 +5310,7 @@ segments:
       - [0x12F158, c, "func_8043E28C_de"]
       - [0x12F1A4, asm, "func_8043E2D8_de"]
       - [0x12F2A8, c, "func_8043E3CC_de"]
-      - [0x12F320, asm, "func_8043E444_de"]
+      - [0x12F320, c, "func_8043E444_de"]
       - [0x12F344, c, "func_8043E468_de"]
       - [0x12F370, c, "func_8043E494_de"]
       - [0x12F3BC, c, "func_8043E4E0_de"]

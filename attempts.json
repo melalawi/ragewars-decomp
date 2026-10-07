@@ -7804,19 +7804,6 @@
       "exact": true,
       "minutes": 3.8
     },
-    "func_8044DA54_de": {
-      "attempts": 4,
-      "best": {
-        "de": 100.0,
-        "eu": 100.0,
-        "eu-x": 100.0,
-        "us": 100.0,
-        "us-rev1": 100.0
-      },
-      "bytes": 284,
-      "exact": true,
-      "minutes": 1.07
-    },
     "func_8044DC60_de": {
       "attempts": 1,
       "best": {
