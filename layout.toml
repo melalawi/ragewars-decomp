@@ -615,7 +615,7 @@ signals = ["callee", "cap", "version"]
 name = "code_8027A0F4"
 segment = "span_1000"
 evidence = "proven"
-members = ["func_8027A084_de", "func_8027A4D0_de", "func_8027A948_de", "func_8027ABF4_de", "func_8027AD4C_de", "func_8027B428_de", "func_8027B720_de", "func_8027C274_de", "func_8027C4F0_de", "func_8027C758_de", "func_8027C9CC_de", "func_8027CC20_de", "func_8027CCA0_eu", "func_8027D4A8_de", "func_8027D97C_de", "func_8027DD48_de", "func_8027E784_de", "func_8027EB2C_de", "func_8027ED6C_de", "func_8027FF58_de", "func_802800C0_de", "func_80281A9C_de", "func_80281CA0_de", "func_80282330_de", "func_802827C8_de", "func_80282A44_de", "func_80282C8C_de"]
+members = ["func_8027A084_de", "func_8027A4D0_de", "func_8027A948_de", "func_8027ABF4_de", "func_8027AD4C_de", "func_8027B720_de", "func_8027C274_de", "func_8027C4F0_de", "func_8027C758_de", "func_8027C9CC_de", "func_8027CC20_de", "func_8027CCA0_eu", "func_8027D4A8_de", "func_8027D97C_de", "func_8027DD48_de", "func_8027E784_de", "func_8027EB2C_de", "func_8027ED6C_de", "func_8027FF58_de", "func_802800C0_de", "func_80281A9C_de", "func_80281CA0_de", "func_80282330_de", "func_802827C8_de", "func_80282A44_de", "func_80282C8C_de"]
 only = { "func_8027CC20_de" = ["de"], "func_8027CCA0_eu" = ["us-rev1", "eu", "eu-x", "us"] }
 split = ["func_8027B720_de", "func_8027C274_de", "func_8027C4F0_de", "func_8027C758_de", "func_8027C9CC_de", "func_8027EB2C_de"]
 signals = ["callee", "cap", "version"]
