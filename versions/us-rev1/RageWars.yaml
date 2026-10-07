@@ -2488,7 +2488,7 @@ segments:
       - [0xBFE04, asm, "func_802BF204_us_rev1"]
       - [0xBFE10, c, "func_802BA120_de"]
       - [0xBFE2C, asm, "func_802BA41C_eu_x"]
-      - [0xBFE30, asm, "func_802BA140_de"]
+      - [0xBFE30, c, "func_802BA140_de"]
       - [0xBFE7C, asm, "func_802BA46C_eu_x"]
       - [0xBFE80, c, "func_802BA190_de"]
       - [0xBFE94, asm, "func_802BA484_eu_x"]

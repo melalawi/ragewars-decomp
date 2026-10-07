@@ -6,23 +6,23 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 ## Progress
 
-<pre><code>all     [████████████▒░░░░░░░]  61.28% (~61.72%)  3,386,056 of 5,525,468 bytes</code><br><code>us      [████████████▒░░░░░░░]  62.59% (~63.04%)  664,816 of 1,062,244 bytes</code><br><code>us-rev1 [████████████▒░░░░░░░]  62.10% (~62.52%)  703,000 of 1,132,124 bytes</code><br><code>eu      [████████████▒░░░░░░░]  60.58% (~61.01%)  673,620 of 1,111,996 bytes</code><br><code>eu-mul  [████████████▒░░░░░░░]  60.57% (~61.01%)  674,840 of 1,114,140 bytes</code><br><code>de      [████████████▒░░░░░░░]  60.62% (~61.05%)  669,780 of 1,104,964 bytes</code></pre>
+<pre><code>all     [████████████▒░░░░░░░]  61.29% (~61.73%)  3,386,360 of 5,525,468 bytes</code><br><code>us      [████████████▒░░░░░░░]  62.59% (~63.05%)  664,892 of 1,062,244 bytes</code><br><code>us-rev1 [████████████▒░░░░░░░]  62.10% (~62.53%)  703,076 of 1,132,124 bytes</code><br><code>eu      [████████████▒░░░░░░░]  60.58% (~61.02%)  673,696 of 1,111,996 bytes</code><br><code>eu-mul  [████████████▒░░░░░░░]  60.58% (~61.01%)  674,916 of 1,114,140 bytes</code><br><code>de      [████████████▒░░░░░░░]  60.62% (~61.05%)  669,780 of 1,104,964 bytes</code></pre>
 
 | us (NUS-NRWE-0, North America). First NTSC release (black cartridge). SHA256 `0433043aaba2649bdd1fe717c4020550ac663c0362527aa082490f5977a3e46b` |
 |---|
-| <pre><code>bytes     [████████████▒░░░░░░░]  62.59% (~63.04%)  664,816 of 1,062,244</code><br><code>functions [████████████████░░░░]  84.69%  3,585 of 4,233</code></pre> |
+| <pre><code>bytes     [████████████▒░░░░░░░]  62.59% (~63.05%)  664,892 of 1,062,244</code><br><code>functions [████████████████░░░░]  84.72%  3,586 of 4,233</code></pre> |
 
 | us-rev1 (NUS-NRWE-1, North America). Revised NTSC release (grey cartridge). SHA256 `5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089` |
 |---|
-| <pre><code>bytes     [████████████▒░░░░░░░]  62.10% (~62.52%)  703,000 of 1,132,124</code><br><code>functions [████████████████░░░░]  82.74%  3,762 of 4,547</code></pre> |
+| <pre><code>bytes     [████████████▒░░░░░░░]  62.10% (~62.53%)  703,076 of 1,132,124</code><br><code>functions [████████████████░░░░]  82.76%  3,763 of 4,547</code></pre> |
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
-| <pre><code>bytes     [████████████▒░░░░░░░]  60.58% (~61.01%)  673,620 of 1,111,996</code><br><code>functions [████████████████░░░░]  81.22%  3,634 of 4,474</code></pre> |
+| <pre><code>bytes     [████████████▒░░░░░░░]  60.58% (~61.02%)  673,696 of 1,111,996</code><br><code>functions [████████████████░░░░]  81.25%  3,635 of 4,474</code></pre> |
 
 | eu-mul (NUS-NRWX-0, Europe). PAL multi-language release. SHA256 `511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750` |
 |---|
-| <pre><code>bytes     [████████████▒░░░░░░░]  60.57% (~61.01%)  674,840 of 1,114,140</code><br><code>functions [████████████████░░░░]  81.26%  3,637 of 4,476</code></pre> |
+| <pre><code>bytes     [████████████▒░░░░░░░]  60.58% (~61.01%)  674,916 of 1,114,140</code><br><code>functions [████████████████░░░░]  81.28%  3,638 of 4,476</code></pre> |
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
