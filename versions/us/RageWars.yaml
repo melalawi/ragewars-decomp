@@ -5330,7 +5330,7 @@ segments:
       - [0x1B1558, asm, "func_8044D3E8_de"]
       - [0x1B1698, c, "func_8044D528_de"]
       - [0x1B17D8, c, "func_8044D668_de"]
-      - [0x1B1904, asm, "func_8044D794_de"]
+      - [0x1B1904, c, "func_8044D794_de"]
       - [0x1B1974, c, "func_8044D804_de"]
       - [0x1B1CE0, asm, "func_8044DB70_de"]
       - [0x1B1DCC, asm, "func_8044DDCC_us"]

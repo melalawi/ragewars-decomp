@@ -5582,7 +5582,7 @@ segments:
       - [0x1BC038, asm, "func_8044D3E8_de"]
       - [0x1BC178, c, "func_8044D528_de"]
       - [0x1BC2B8, c, "func_8044D668_de"]
-      - [0x1BC3E4, asm, "func_8044D794_de"]
+      - [0x1BC3E4, c, "func_8044D794_de"]
       - [0x1BC454, c, "func_8044D804_de"]
       - [0x1BC7C0, asm, "func_8044DB70_de"]
       - [0x1BC8AC, data, "rodata/unresolved/8044E8AC"]

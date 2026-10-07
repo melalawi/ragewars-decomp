@@ -5532,7 +5532,7 @@ segments:
       - [0x1B33E8, asm, "func_8044D3E8_de"]
       - [0x1B3528, c, "func_8044D528_de"]
       - [0x1B3668, c, "func_8044D668_de"]
-      - [0x1B3794, asm, "func_8044D794_de"]
+      - [0x1B3794, c, "func_8044D794_de"]
       - [0x1B3804, c, "func_8044D804_de"]
       - [0x1B3B70, asm, "func_8044DB70_de"]
       - [0x1B3C5C, asm, "func_8044DC5C_de"]
