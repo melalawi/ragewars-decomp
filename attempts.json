@@ -6784,6 +6784,31 @@
       "exact": true,
       "minutes": 0.1
     },
+    "func_80427250_de": {
+      "attempts": 5,
+      "best": {
+        "de": 97.938144,
+        "eu": 97.938144,
+        "eu-x": 97.938144,
+        "us": 97.938144,
+        "us-rev1": 97.938144
+      },
+      "bytes": 388,
+      "exact": false,
+      "fuzzy": {
+        "compiler": "gcc-2.8.1-sn64",
+        "score": 97.93814400000001,
+        "source_sha256": "6a728654624ab8c93abca5742ac9fcffc66667049b59893ee3d9dd643776aa23",
+        "versions": {
+          "de": 97.938144,
+          "eu": 97.938144,
+          "eu-x": 97.938144,
+          "us": 97.938144,
+          "us-rev1": 97.938144
+        }
+      },
+      "minutes": 15.15
+    },
     "func_804273D4_de": {
       "attempts": 4,
       "best": {
@@ -7418,7 +7443,7 @@
       "minutes": 0.03
     },
     "func_804389F0_de": {
-      "attempts": 3,
+      "attempts": 4,
       "best": {
         "de": 34.210526,
         "eu": 34.210526,
@@ -7428,7 +7453,7 @@
       },
       "bytes": 152,
       "exact": false,
-      "minutes": 248.09
+      "minutes": 270.69
     },
     "func_80438C84_de": {
       "attempts": 1,
