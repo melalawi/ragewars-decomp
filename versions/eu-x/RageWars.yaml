@@ -5519,7 +5519,7 @@ segments:
       - [0x13EA68, c, "func_8044D668_de"]
       - [0x13EB94, asm, "func_8044D794_de"]
       - [0x13EC04, c, "func_8044D804_de"]
-      - [0x13EE54, asm, "func_8044DA54_de"]
+      - [0x13EE54, c, "func_8044DA54_de"]
       - [0x13EF70, asm, "func_8044DB70_de"]
       - [0x13F05C, data, "rodata/unresolved/8044F05C"]
       - [0x13F060, asm, "func_8044DC60_de"]
