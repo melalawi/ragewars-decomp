@@ -2604,6 +2604,8 @@ segments:
       - [0xC2704, data, "rodata/unresolved/802C1B04"]
       - [0xC2710, c, "__cmpdi2"]
       - [0xC2758, data, "rodata/unresolved/802C1B58"]
+      - [0x0C2760, asm, "func_802C1B60_eu_x"]
+      - [0x0C27E8, data, "rodata/unresolved/802C1B58_0C27E8"]
       - [0xC27F0, asm, "__floatdisf"]
   - name: span_C28A0
     type: code
