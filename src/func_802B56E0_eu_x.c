@@ -1,3 +1,6 @@
+#include "abi.h"
+#include "span_1000/code_802B369C.h"
+#include "audio_callbacks.h"
 #include "span_1000/code_802B4730.h"
 #include "abi.h"
 #include "types.h"
