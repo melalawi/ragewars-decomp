@@ -5275,6 +5275,22 @@
       "exact": false,
       "minutes": 2.4
     },
+    "func_804147F0_eu_x": {
+      "attempts": 1,
+      "best": {},
+      "bytes": 80,
+      "exact": false,
+      "fuzzy": {
+        "compiler": "gcc-2.8.1-sn64",
+        "score": null,
+        "source_sha256": "fc569876ae3283825aed96f0b82ed3421e03b89ea5ee9c3502703d5f1178c415",
+        "versions": {
+          "eu-x": null,
+          "us-rev1": null
+        }
+      },
+      "minutes": 0.5
+    },
     "func_80415C90_de": {
       "attempts": 2,
       "best": {
