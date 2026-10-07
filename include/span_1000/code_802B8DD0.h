@@ -64,4 +64,6 @@ struct OSPiHandle_s_func_802B93B0_de {
 /* unbake published declaration: published_d5eb8459abc124429449418e */
 extern void func_802B99A4_de(void);
 
+struct OSPiHandle_s;
+extern s32 func_802B9590_de(struct OSPiHandle_s *handle, u32 address, u32 *value);
 #endif

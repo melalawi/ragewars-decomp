@@ -15,4 +15,5 @@ extern float D_800C7890_de;
 
 extern void func_802B72BC_de(void);
 extern void func_802B748C_de(void);
+extern s32 func_802B72E0_de(u32 frequency);
 #endif

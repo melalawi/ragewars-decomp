@@ -47,4 +47,5 @@ typedef union OSTask OSTask;
 extern void func_802BA100_de(unsigned int arg0);
 
 extern void func_802BA0FC_de(void);
+extern s32 func_802B9FD0_de(s32 direction, s32 spAddress, s32 dramAddress, s32 size);
 #endif

@@ -2036,7 +2036,7 @@ eu-x.S.000B34F4 := 734452 12
 eu-x.U.func_802B2620_de := 0x802B2900:0xB3500:0x24
 eu-x.S.000B3524 := 734500 12
 eu-x.U.func_802B2650_de := 0x802B2930:0xB3530:0x130
-eu-x.S.000B3660 := 734816 1084
+eu-x.U.func_802B2780_de := 0x802B2A60:0xB3660:0x43C
 eu-x.U.func_802B2BBC_de := 0x802B2E9C:0xB3A9C:0x1BC
 eu-x.S.000B3C58 := 736344 8
 eu-x.U.func_802B2D80_de := 0x802B3060:0xB3C60:0xAC
@@ -2119,7 +2119,9 @@ eu-x.S.000B8008 := 753672 8
 eu-x.U.func_802B7130_de := 0x802B7410:0xB8010:0x17C
 eu-x.S.000B818C := 754060 20
 eu-x.U.func_802B72C0_de := 0x802B75A0:0xB81A0:0x14
-eu-x.S.000B81B4 := 754100 300
+eu-x.S.000B81B4 := 754100 12
+eu-x.U.func_802B72E0_de := 0x802B75C0:0xB81C0:0x118
+eu-x.S.000B82D8 := 754392 8
 eu-x.U.func_802B7400_de := 0x802B76E0:0xB82E0:0x8C
 eu-x.S.000B836C := 754540 4
 eu-x.U.func_802B7490_de := 0x802B7770:0xB8370:0x14
@@ -2155,7 +2157,9 @@ eu-x.S.000B9C7C := 760956 4
 eu-x.U.func_802B8DA0_de := 0x802B9080:0xB9C80:0x28
 eu-x.S.000B9CA8 := 761000 1512
 eu-x.U.func_802B93B0_de := 0x802B9690:0xBA290:0x1D4
-eu-x.S.000BA464 := 762980 428
+eu-x.S.000BA464 := 762980 12
+eu-x.U.func_802B9590_de := 0x802B9870:0xBA470:0x194
+eu-x.S.000BA604 := 763396 12
 eu-x.U.func_802B9730_de := 0x802B9A10:0xBA610:0x214
 eu-x.S.000BA824 := 763940 12
 eu-x.U.func_802B9950_de := 0x802B9C30:0xBA830:0x54
@@ -2169,7 +2173,9 @@ eu-x.S.000BAA94 := 764564 12
 eu-x.U.func_802B9BC0_de := 0x802B9EA0:0xBAAA0:0x54
 eu-x.U.func_802B9C14_de := 0x802B9EF4:0xBAAF4:0x6C
 eu-x.U.func_802B9C80_de := 0x802B9F60:0xBAB60:0x28
-eu-x.S.000BAB88 := 764808 200
+eu-x.S.000BAB88 := 764808 8
+eu-x.U.func_802B9CB0_de := 0x802B9F90:0xBAB90:0xB8
+eu-x.S.000BAC48 := 765000 8
 eu-x.U.func_802B9D70_de := 0x802BA050:0xBAC50:0x18
 eu-x.S.000BAC68 := 765032 8
 eu-x.U.func_802B9D90_de := 0x802BA070:0xBAC70:0xE8
@@ -2177,7 +2183,9 @@ eu-x.S.000BAD58 := 765272 260
 eu-x.U.func_802B9F7C_de := 0x802BA25C:0xBAE5C:0x2C
 eu-x.S.000BAE88 := 765576 8
 eu-x.U.func_802B9FB0_de := 0x802BA290:0xBAE90:0x18
-eu-x.S.000BAEA8 := 765608 264
+eu-x.S.000BAEA8 := 765608 8
+eu-x.U.func_802B9FD0_de := 0x802BA2B0:0xBAEB0:0xFC
+eu-x.S.000BAFAC := 765868 4
 eu-x.U.func_802BA0D0_de := 0x802BA3B0:0xBAFB0:0x2C
 eu-x.S.000BAFDC := 765916 4
 eu-x.U.func_802BA100_de := 0x802BA3E0:0xBAFE0:0x14
@@ -5376,7 +5384,7 @@ eu-x.PIECES := \
   build/eu-x/units/func_802B2620_de.bin \
   build/eu-x/slices/000B3524.bin \
   build/eu-x/units/func_802B2650_de.bin \
-  build/eu-x/slices/000B3660.bin \
+  build/eu-x/units/func_802B2780_de.bin \
   build/eu-x/units/func_802B2BBC_de.bin \
   build/eu-x/slices/000B3C58.bin \
   build/eu-x/units/func_802B2D80_de.bin \
@@ -5460,6 +5468,8 @@ eu-x.PIECES := \
   build/eu-x/slices/000B818C.bin \
   build/eu-x/units/func_802B72C0_de.bin \
   build/eu-x/slices/000B81B4.bin \
+  build/eu-x/units/func_802B72E0_de.bin \
+  build/eu-x/slices/000B82D8.bin \
   build/eu-x/units/func_802B7400_de.bin \
   build/eu-x/slices/000B836C.bin \
   build/eu-x/units/func_802B7490_de.bin \
@@ -5496,6 +5506,8 @@ eu-x.PIECES := \
   build/eu-x/slices/000B9CA8.bin \
   build/eu-x/units/func_802B93B0_de.bin \
   build/eu-x/slices/000BA464.bin \
+  build/eu-x/units/func_802B9590_de.bin \
+  build/eu-x/slices/000BA604.bin \
   build/eu-x/units/func_802B9730_de.bin \
   build/eu-x/slices/000BA824.bin \
   build/eu-x/units/func_802B9950_de.bin \
@@ -5510,6 +5522,8 @@ eu-x.PIECES := \
   build/eu-x/units/func_802B9C14_de.bin \
   build/eu-x/units/func_802B9C80_de.bin \
   build/eu-x/slices/000BAB88.bin \
+  build/eu-x/units/func_802B9CB0_de.bin \
+  build/eu-x/slices/000BAC48.bin \
   build/eu-x/units/func_802B9D70_de.bin \
   build/eu-x/slices/000BAC68.bin \
   build/eu-x/units/func_802B9D90_de.bin \
@@ -5518,6 +5532,8 @@ eu-x.PIECES := \
   build/eu-x/slices/000BAE88.bin \
   build/eu-x/units/func_802B9FB0_de.bin \
   build/eu-x/slices/000BAEA8.bin \
+  build/eu-x/units/func_802B9FD0_de.bin \
+  build/eu-x/slices/000BAFAC.bin \
   build/eu-x/units/func_802BA0D0_de.bin \
   build/eu-x/slices/000BAFDC.bin \
   build/eu-x/units/func_802BA100_de.bin \

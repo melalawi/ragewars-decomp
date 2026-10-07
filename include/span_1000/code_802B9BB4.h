@@ -13,4 +13,5 @@ extern void func_802B9C14_de();
 /* unbake published declaration: published_ef9388cca09c4badc254c388 */
 extern void func_802B9C80_de();
 
+extern s32 func_802B9CB0_de(s32 direction, s32 address);
 #endif
