@@ -13,7 +13,7 @@
     "matched_code_percent": 61.2576,
     "complete_code_percent": 61.2576,
     "matched_functions_percent": 82.01012,
-    "fuzzy_match_percent": 61.54758
+    "fuzzy_match_percent": 61.56569
   },
   "units": [
     {
@@ -56692,14 +56692,14 @@
         "total_code": "428",
         "total_functions": 1,
         "total_units": 1,
-        "fuzzy_match_percent": 0.0
+        "fuzzy_match_percent": 47.89916
       },
       "sections": [
         {
           "name": ".text",
           "size": "428",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 47.89916
         }
       ],
       "functions": [
@@ -56707,14 +56707,16 @@
           "name": "func_80271AA8_de",
           "size": "428",
           "metadata": {},
-          "address": "2150046488"
+          "address": "2150046488",
+          "fuzzy_match_percent": 47.89916
         }
       ],
       "metadata": {
         "complete": false,
         "progress_categories": [
-          "asm"
-        ]
+          "draft"
+        ],
+        "source_path": "src/func_80271AA8_de.c"
       }
     },
     {
@@ -184798,35 +184800,35 @@
       "id": "draft",
       "name": "Retained C draft",
       "measures": {
-        "total_code": 4696,
+        "total_code": 5124,
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 21,
+        "total_functions": 22,
         "matched_functions": 0,
-        "total_units": 21,
+        "total_units": 22,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "fuzzy_match_percent": 69.908966
+        "fuzzy_match_percent": 68.07052
       }
     },
     {
       "id": "asm",
       "name": "Assembly",
       "measures": {
-        "total_code": 433836,
+        "total_code": 433408,
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 793,
+        "total_functions": 792,
         "matched_functions": 0,
-        "total_units": 793,
+        "total_units": 792,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,

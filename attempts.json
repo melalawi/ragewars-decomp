@@ -2908,7 +2908,7 @@
       "minutes": 0.03
     },
     "func_80271AA8_de": {
-      "attempts": 3,
+      "attempts": 5,
       "best": {
         "de": 56.589147,
         "eu": 56.589147,
@@ -2918,7 +2918,19 @@
       },
       "bytes": 428,
       "exact": false,
-      "minutes": 60.37
+      "fuzzy": {
+        "compiler": "gcc-2.8.1-sn64",
+        "score": 47.89916,
+        "source_sha256": "93f037c9f4bc31b3d37fa85ac8cec72b8189f51d7d366552a917d4e45de94298",
+        "versions": {
+          "de": 47.89916,
+          "eu": 47.89916,
+          "eu-x": 47.89916,
+          "us": 47.89916,
+          "us-rev1": 47.89916
+        }
+      },
+      "minutes": 267.51
     },
     "func_80272018_de": {
       "attempts": 2,
