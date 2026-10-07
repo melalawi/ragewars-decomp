@@ -251,4 +251,5 @@ struct ALSave {
     s32 first;
 };
 
+extern s32 func_802B3D10_de(ALSynth4C *drvr, ALPlayer_s14 **client);
 #endif

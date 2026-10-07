@@ -2326,7 +2326,7 @@ segments:
       - [0xB4B1C, c, "func_802B3C3C_de"]
       - [0xB4B5C, c, "func_802B3C7C_de"]
       - [0xB4BB0, c, "func_802B3CD0_de"]
-      - [0xB4BF0, asm, "func_802B3D10_de"]
+      - [0xB4BF0, c, "func_802B3D10_de"]
       - [0xB4C98, c, "func_802B3DB8_de"]
       - [0xB4CD4, data, "func_802B40D4_eu_x_padding_B4CD4"]
       - [0x0B4CE0, c, "func_802B40E0_eu_x"]

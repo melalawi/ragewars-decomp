@@ -7,7 +7,6 @@
 
 extern ALGlobals *D_800D4070; /* alGlobals */
 
-extern s32 func_802B3D10_de(ALSynth4C *, ALPlayer_s14 **); /* __nextSampleTime */
 extern s32 func_802B3DB8_de(ALSynth4C *, s32);         /* _timeToSamplesNoRound */
 extern void func_802B3C7C_de(ALSynth4C *);             /* _collectPVoices */
 
