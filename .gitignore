@@ -21,3 +21,4 @@ baserom.*
 id_rsa*
 credentials.json
 !baserom.sha1
+/.attempts.lock
