@@ -5387,8 +5387,6 @@ segments:
       - [0x1C46B8, asm, "func_8044D3E8_de"]
       - [0x1C47F8, c, "func_8044D528_de"]
       - [0x1C4938, c, "func_8044D668_de"]
-      - [0x1C4A64, c, "func_8044D794_de"]
-      - [0x1C4AD4, c, "func_8044D804_de"]
       - [0x1C4E40, asm, "func_8044DB70_de"]
       - [0x1C4F2C, asm, "func_8044EF2C_eu"]
       - [0x1C4F30, asm, "func_8044DC60_de"]
