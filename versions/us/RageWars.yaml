@@ -506,7 +506,7 @@ segments:
       - [0x2C124, c, "func_8022B550_de"]
       - [0x2C194, c, "func_8022B5C0_de"]
       - [0x2C1E0, asm, "func_8022B60C_de"]
-      - [0x2C270, asm, "func_8022B69C_de"]
+      - [0x2C270, c, "func_8022B69C_de"]
       - [0x2C304, c, "func_8022B730_de"]
       - [0x2C330, c, "func_8022B75C_de"]
       - [0x2C3CC, c, "func_8022B7F8_de"]
