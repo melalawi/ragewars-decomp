@@ -2011,8 +2011,6 @@ segments:
       - [0xA03C8, c, "func_8029F888_de"]
       - [0xA0BF0, asm, "func_802A00B0_de"]
       - [0xA0D18, c, "func_802A01D8_de"]
-      - [0xA0EBC, c, "func_802A037C_de"]
-      - [0xA0EEC, c, "func_802A03AC_de"]
       - [0xA1264, asm, "func_802A0724_de"]
       - [0xA1288, c, "func_802A0748_de"]
       - [0x0A1604, data, "func_802A0AA4_de_padding_A1604"]

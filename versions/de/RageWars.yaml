@@ -2009,8 +2009,6 @@ segments:
       - [0xA0488, c, "func_8029F888_de"]
       - [0xA0CB0, asm, "func_802A00B0_de"]
       - [0xA0DD8, c, "func_802A01D8_de"]
-      - [0xA0F7C, c, "func_802A037C_de"]
-      - [0xA0FAC, c, "func_802A03AC_de"]
       - [0xA1324, asm, "func_802A0724_de"]
       - [0xA1348, c, "func_802A0748_de"]
       - [0xA16C4, asm, "func_802A0AC4_de"]

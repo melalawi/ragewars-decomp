@@ -2016,8 +2016,6 @@ segments:
       - [0xA05A8, c, "func_8029F888_de"]
       - [0xA0DD0, asm, "func_802A00B0_de"]
       - [0xA0EF8, c, "func_802A01D8_de"]
-      - [0xA109C, c, "func_802A037C_de"]
-      - [0xA10CC, c, "func_802A03AC_de"]
       - [0xA1444, asm, "func_802A0724_de"]
       - [0xA1468, c, "func_802A0748_de"]
       - [0x0A17E4, data, "func_802A0AA4_de_padding_A17E4"]

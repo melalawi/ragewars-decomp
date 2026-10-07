@@ -2022,8 +2022,6 @@ segments:
       - [0xA05D8, c, "func_8029F888_de"]
       - [0xA0E00, asm, "func_802A00B0_de"]
       - [0xA0F28, c, "func_802A01D8_de"]
-      - [0xA10CC, c, "func_802A037C_de"]
-      - [0xA10FC, c, "func_802A03AC_de"]
       - [0xA1474, asm, "func_802A0724_de"]
       - [0xA1498, c, "func_802A0748_de"]
       - [0xA1814, asm, "func_802A0C14_eu_x"]

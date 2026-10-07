@@ -784,7 +784,7 @@ signals = ["cap", "version"]
 name = "code_802A0888"
 segment = "span_1000"
 evidence = "proven"
-members = ["func_8029F888_de", "func_802A00B0_de", "func_802A01D8_de", "func_802A037C_de", "func_802A03AC_de", "func_802A0724_de", "func_802A0748_de"]
+members = ["func_8029F888_de", "func_802A00B0_de", "func_802A01D8_de", "func_802A0724_de", "func_802A0748_de"]
 signals = ["callee", "cap"]
 
 [[group]]
