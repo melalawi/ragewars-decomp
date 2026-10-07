@@ -4892,7 +4892,7 @@ segments:
       - [0x187FEC, c, "func_80421FEC_de"]
       - [0x18801C, asm, "func_8042201C_de"]
       - [0x188020, c, "func_80422020_de"]
-      - [0x1880A8, asm, "func_804220A8_de"]
+      - [0x1880A8, c, "func_804220A8_de"]
       - [0x188170, c, "func_80422170_de"]
       - [0x188228, asm, "func_80422228_de"]
       - [0x188278, c, "func_80422278_de"]

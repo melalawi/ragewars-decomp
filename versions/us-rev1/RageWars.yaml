@@ -4969,7 +4969,7 @@ segments:
       - [0x19001C, c, "func_80421FEC_de"]
       - [0x19004C, asm, "func_8042204C_us_rev1"]
       - [0x190050, c, "func_80422020_de"]
-      - [0x1900D8, asm, "func_804220A8_de"]
+      - [0x1900D8, c, "func_804220A8_de"]
       - [0x1901A0, c, "func_80422170_de"]
       - [0x190258, data, "func_80422228_de_padding_190258"]
       - [0x190260, asm, "func_80422228_de"]
