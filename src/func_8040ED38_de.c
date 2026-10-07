@@ -1,11 +1,10 @@
+#include "types.h"
 #include "span_16E000/code_8040C780.h"
+#include "stddef.h"
 /* Recursively replaces a node reference throughout a linked hierarchy and copies the old node links into its replacement. */
-#define NULL ((void *)0)
-
 void func_8040ED38_de(Node_func_8040ED38_de *arg0, Node_func_8040ED38_de *arg1, Node_func_8040ED38_de *arg2, Node_func_8040ED38_de *arg3) {
     Node_func_8040ED38_de *temp_a0;
     Node_func_8040ED38_de *temp_a0_2;
-
     if (arg0 != NULL) {
         temp_a0 = arg0->unk4;
         if (temp_a0 != NULL) {

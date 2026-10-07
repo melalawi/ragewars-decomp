@@ -1,14 +1,11 @@
 #include "span_16E000/code_8040B45C.h"
 #include "types.h"
-
+#include "stddef.h"
 /* Cycles the video mode within the memory budget and chooses dimensions large enough for both active buffers. */
-
-
 extern int D_80000300;
 extern int D_800DE888_de;
 extern int D_800DE88C;
 extern int D_800DE894;
-
 extern Mode_func_8040C09C_de D_800DE8A8[2][5];
 extern int D_800DE880_de;
 extern int D_800DE884_de;
@@ -24,16 +21,12 @@ void func_8040C09C_de(void)
   switch (D_80000300)
   {
     case 0:
-
     case 2:
       region = 1;
       break;
-
     case 1:
       break;
-
   }
-
   mode = (int *) (&D_800DE8A8[region][D_800DE888_de]);
   memory = func_80265350_de();
   budget = 0xF660;
@@ -48,7 +41,6 @@ void func_8040C09C_de(void)
     {
       D_800DE888_de = (D_800DE888_de + 1) % D_800DE8A0[region];
     }
-
   }
   else
   {
@@ -68,35 +60,27 @@ void func_8040C09C_de(void)
   }
   D_800DE884_de = h;
 }
-
 /* Stores its argument in D_800E28D8, which func_8040C474_de returns, and calls func_8040BBB0_de. */
 extern s32 D_800DE888_de;
-
-
 void func_8040C2D4_de(s32 value) {
     D_800DE888_de = value;
     func_8040BBB0_de();
 }
-
 /* Gives D_800E28E0 the value 0x14 when it is still zero. */
 extern s32 D_800DE890;
-
 void func_8040C2F8_de(void) {
     if (D_800DE890 == 0) {
         D_800DE890 = 0x14;
     }
 }
-
 /* Detects the storage configuration and updates the cached selection. */
-#define NULL ((void *)0)
-s32 func_80265350_de();                                /* extern */
+s32 func_80265350_de(); /* extern */
                                   /* extern */
 extern s32 D_800DE888_de;
 extern u8 D_800DE88B;
 extern s32 D_800DE88C;
 extern s32 D_800DE890;
 extern u8 D_80142788;
-
 void func_8040C318_de(void) {
     if (D_800DE888_de == -1) {
         if (func_80265350_de() != 0x400000) {
@@ -111,7 +95,6 @@ void func_8040C318_de(void) {
         D_800DE88C = D_800DE888_de;
     }
 }
-
 /* Returns the palette for the current screen mode D_800E28D8: modes 1, 2 and 3 have their own, mode 0
    and anything else use the first. */
 extern int D_800DE888_de;
@@ -119,7 +102,6 @@ extern int D_800D3610;
 extern int D_800D3614;
 extern int D_800D3618;
 extern int D_800D3620;
-
 int *func_8040C3BC_de(void) {
     switch (D_800DE888_de) {
     case 0:
@@ -133,7 +115,6 @@ int *func_8040C3BC_de(void) {
         return &D_800D3620;
     }
 }
-
 /* Requests a new value when no change is pending: if D_800E28E0 is zero and the value differs from
    D_800E28D8, remembers the old value in D_800E28DC, stores the new one, sets D_800E28E4 and starts
    the 0x14-tick countdown D_800E28E0. */
@@ -141,7 +122,6 @@ extern s32 D_800DE888_de;
 extern s32 D_800DE88C;
 extern s32 D_800DE890;
 extern s32 D_800DE894;
-
 void func_8040C428_de(s32 value) {
     if (D_800DE890 == 0 && value != D_800DE888_de) {
         D_800DE894 = 1;
@@ -150,17 +130,13 @@ void func_8040C428_de(s32 value) {
         D_800DE890 = 0x14;
     }
 }
-
 /* Returns the word held in D_800E28D8. */
 extern s32 D_800DE888_de;
-
 s32 func_8040C474_de(void) {
     return D_800DE888_de;
 }
-
 /* FAKEMATCH: retains inherited numeric field accesses because a verified live shared layout for those accesses is not available; the old access widths and evaluation order are preserved. */
 /* Selects the video mode and resets viewport dimensions on the linked objects. */
-
 extern int D_80000300,D_800CC374;
 extern unsigned short D_800DE9FE[],D_8014D500;
 extern Node_func_8040C484_de D_80141008;

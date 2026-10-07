@@ -1,14 +1,11 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80405454.h"
 #include "types.h"
-
+#include "stddef.h"
 /* Clears a record: the words at offsets 0, 4, 8, 0x18 and 0x1C, and the three-word array at 0xC
    from its last entry down. */
-
-
 void func_80405CA8_de(struct Record_func_80405CA8_de *record) {
     s32 i;
-
     record->a = 0;
     record->b = 0;
     record->c = 0;
@@ -18,17 +15,9 @@ void func_80405CA8_de(struct Record_func_80405CA8_de *record) {
         record->values[i] = 0;
     }
 }
-
 /* Releases object resources and clears their handles. */
-#define NULL ((void *)0)
-
-void func_80253838_de(s32, s32);                            
-
-
-
-
+void func_80253838_de(s32, s32);
 /* extern */
-
 void func_80405CDC_de(struct Shape_typemap_110 *arg0) {
     s32 temp_a1;
     s32 temp_a1_2;
@@ -39,7 +28,6 @@ void func_80405CDC_de(struct Shape_typemap_110 *arg0) {
     s32 var_v1;
     struct Shape_typemap_110 *var_s0;
     struct Shape_typemap_110 *var_v0;
-
     temp_a1 = arg0->field_4;
     if (temp_a1 != 0) {
         func_80253838_de(0, temp_a1);

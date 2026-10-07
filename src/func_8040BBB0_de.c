@@ -2,21 +2,16 @@
 #include "span_1000/code_802BA23C.h"
 #include "span_16E000/code_8040B45C.h"
 #include "types.h"
+#include "stddef.h"
 /* Selects the video mode and applies framebuffer and display configuration; the mode-to-word-array cast preserves configuration-store and mode-load scheduling. */
- 
-#define NULL ((void *)0)
-s32 func_80265350_de();                                /* extern */
+s32 func_80265350_de(); /* extern */
                                  /* extern */
-void func_8040C484_de(s32, s32, s32, s32, s32, s32);      /* extern */
+void func_8040C484_de(s32, s32, s32, s32, s32, s32); /* extern */
 extern s32 D_80000300;
-
 extern s32 D_800CC374;
-
-
 extern s32 D_800DE880_de,D_800DE884_de;
 extern s32 D_800DE888_de;
 extern u8 D_800DE88B;
-
 extern struct Shape_func_8024A5A8_de_2 D_800DE8A8[];
 extern struct Shape_func_8024A5A8_de_2 D_800DE934[];
 extern Rec_func_8024C92C_de D_800DE9C0[];
@@ -24,9 +19,7 @@ extern char D_800E2A14;
 extern char D_800E2A18;
 extern char D_800E2A1C;
 extern char D_800E2A20;
-
 extern u8 D_80142788;
-
 static inline void set_config(int a,int b,int c,int d,int e) {
         D_800DE898 = a;
         D_800CC370 = b;
@@ -45,7 +38,6 @@ void func_8040BBB0_de(void) {
     s32 temp_v0;
     s32 var_v1;
     struct Shape_func_8024A5A8_de_2 *var_s0;
-
     var_s0 = NULL;
     D_80141000 = 2;
     if (D_800DE888_de == -1) {

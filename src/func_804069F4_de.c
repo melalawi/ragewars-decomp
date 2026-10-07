@@ -3,27 +3,8 @@
 #include "span_16E000/code_80405454.h"
 #include "span_16E000/code_80405DC0.h"
 #include "types.h"
-
-
-
-
-
-
-
-
+#include "stddef.h"
 /* Selects a usable Controller Pak, checks its notes and free space, and opens the appropriate prompt. */
-#define NULL ((void *)0)
-#if defined(VERSION_US)
-#define D_0044F6C4 D_0044EBE4
-#define D_0044F70C D_0044EC2C
-#define D_0044FAFC D_0044F01C
-#define D_0044FB20 D_0044F040
-#elif defined(VERSION_DE)
-#define D_0044F6C4 D_0044EA74
-#define D_0044F70C D_0044EABC
-#define D_0044FAFC D_0044EEAC
-#define D_0044FB20 D_0044EED0
-#endif
 s32 func_8026464C_de(void);
 void func_80293268_de(s32);
 void func_80404E28_de(s32);
@@ -37,37 +18,33 @@ u32 func_804057EC_de(u32);
 void func_80405F48_de(void *);
 s32 func_80406858_de(void *, s32, s32 *, s32 *);
 void * func_80442574_de(void *, void *, s32, s32, s32);
-s32 func_802A037C_de();                       /* extern */
-
-
-
-
-
+s32 func_802A037C_de(); /* extern */
 extern s32 D_0044E4F8;
-extern s32 D_0044F6C4;
-extern s32 D_0044F70C;
+#if defined(VERSION_DE)
+extern s32 D_0044EA74;
+extern s32 D_0044EABC;
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
+
+
+#elif defined(VERSION_US)
+extern s32 D_0044EBE4;
+extern s32 D_0044EC2C;
+#endif
 extern s32 D_0044ED44;
-extern s32 D_0044FAFC;
-extern s32 D_0044FB20;
+#if defined(VERSION_DE)
+extern s32 D_0044EEAC;
+extern s32 D_0044EED0;
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
+
+
+#elif defined(VERSION_US)
+extern s32 D_0044F01C;
+extern s32 D_0044F040;
+#endif
 extern s32 D_8011BE0C;
 extern s32 D_8011BA00;
 extern s32 D_8014155C;
-
-
-
-
-
 extern s32 D_8014D4CC;
-
-
-
-
-
-
-
-
-
-
 void func_804069F4_de(Shared_func_804069F4_S1 *arg0) {
     u8 sp18[16];
     s32 sp28;
@@ -98,7 +75,6 @@ void func_804069F4_de(Shared_func_804069F4_S1 *arg0) {
     s32 var_s6;
     u32 temp_a0_3;
     u32 temp_s1_3;
-
     D_8014D4C0_de = 0;
     D_8014D4DC = 1;
     D_8014D4D0 = 0;
@@ -109,7 +85,13 @@ void func_804069F4_de(Shared_func_804069F4_S1 *arg0) {
     if (func_8026464C_de() == 0) {
         D_8014D4F4 = 1;
         D_80146CDC = 0;
+#if defined(VERSION_DE)
+        func_80442574_de(&D_8014155C, &D_0044EABC, arg0->first, (s32) arg0->second, 0);
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
         func_80442574_de(&D_8014155C, &D_0044F70C, arg0->first, (s32) arg0->second, 0);
+#elif defined(VERSION_US)
+        func_80442574_de(&D_8014155C, &D_0044EC2C, arg0->first, (s32) arg0->second, 0);
+#endif
         D_800DE87C_de = 1;
         D_80146CD4_de = 0;
         return;
@@ -152,7 +134,13 @@ block_11:
             if (func_80404F04_de(D_800DE878) == -2) {
                 D_8014D4F4 = 1;
                 D_80146CDC = 0;
+#if defined(VERSION_DE)
+                func_80442574_de(&D_8014155C, &D_0044EA74, arg0->first, (s32) arg0->second, 0);
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
                 func_80442574_de(&D_8014155C, &D_0044F6C4, arg0->first, (s32) arg0->second, 0);
+#elif defined(VERSION_US)
+                func_80442574_de(&D_8014155C, &D_0044EBE4, arg0->first, (s32) arg0->second, 0);
+#endif
                 D_80146CD4_de = 0;
                 D_800DE87C_de = 1;
                 return;
@@ -206,7 +194,13 @@ block_35:
 block_36:
                         D_8014D4F4 = 1;
                         D_80146CDC = 0;
+#if defined(VERSION_DE)
+                        func_80442574_de(&D_8014155C, &D_0044EA74, arg0->first, (s32) arg0->second, 0);
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
                         func_80442574_de(&D_8014155C, &D_0044F6C4, arg0->first, (s32) arg0->second, 0);
+#elif defined(VERSION_US)
+                        func_80442574_de(&D_8014155C, &D_0044EBE4, arg0->first, (s32) arg0->second, 0);
+#endif
                         D_80146CD4_de = 0;
                         D_800DE87C_de = 1;
                         return;
@@ -264,7 +258,13 @@ notes_checked:
                     if (sp38 < (s32) temp_s1_3) {
                         D_8014D4F4 = 1;
                         D_80142CA0_de = 1;
+#if defined(VERSION_DE)
+                        func_80442574_de(&D_8014155C, &D_0044EED0, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
                         func_80442574_de(&D_8014155C, &D_0044FB20, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+#elif defined(VERSION_US)
+                        func_80442574_de(&D_8014155C, &D_0044F040, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+#endif
                         goto prompt_checked;
                     }
                     /* FAKEMATCH: retain the repeated minimum-size test and its target branch. */
@@ -275,7 +275,13 @@ notes_checked:
 block_56:
                     D_8014D4F4 = 1;
                     D_80142CA0_de = 1;
+#if defined(VERSION_DE)
+                    func_80442574_de(&D_8014155C, &D_0044EEAC, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
                     func_80442574_de(&D_8014155C, &D_0044FAFC, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+#elif defined(VERSION_US)
+                    func_80442574_de(&D_8014155C, &D_0044F01C, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+#endif
                 }
 prompt_checked:
                 if (var_s0_4 != 0) {

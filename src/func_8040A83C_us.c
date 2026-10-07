@@ -1,16 +1,13 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8040A83C.h"
+#include "stddef.h"
 /* Select the status text and right-align its nonblank characters. */
 #include "types.h"
-#define NULL ((void *)0)
-
-s32 func_80441FE8_de(void *);                            /* extern */
+s32 func_80441FE8_de(void *); /* extern */
 extern u8 D_8014B494[];
-
 extern s32 D_8014D4E4;
-extern s32 D_800D2478;                 /* const */
-extern s32 D_800D2480;                 /* const */
-
+extern s32 D_800D2478; /* const */
+extern s32 D_800D2480; /* const */
 s32 func_8040A83C_us(struct Object_func_80442064_de *arg0) {
     s8 *temp_s0;
     s8 *temp_s0_2;
@@ -22,7 +19,6 @@ s32 func_8040A83C_us(struct Object_func_80442064_de *arg0) {
     u8 *var_a1;
     u8 *var_s0;
     u8 temp_v0;
-
     var_s1 = 8;
     if (D_8014D4E4 != 0) {
         arg0->source = &D_800D2478;

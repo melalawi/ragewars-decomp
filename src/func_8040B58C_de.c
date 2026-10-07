@@ -1,27 +1,18 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_8040B45C.h"
 #include "types.h"
+#include "stddef.h"
 /* Confirms the pak menu's channel: picks the team/channel override or the record's own channel byte, marks D_80153784, and if func_80406178_de accepts it opens the pak prompt keyed by the player's storage buffer (or the default buffer if there is no player), otherwise opens the prompt on the default buffer. */
-#define NULL ((void *)0)
-
-
-
-
-
-
-
 extern s32 func_80406178_de(Record_func_8040B58C_de *, s32, s32);
 extern void func_80442574_de(void *, void *, func_8024795C_S2 *, void *, s32);
 extern char D_8014155C[];
 extern s32 D_8014D4CC;
 extern s32 D_8014D4F4;
 extern s32 D_800DE878;
-
 s32 func_8040B58C_de(void *arg0, Record_func_8040B58C_de *arg1) {
     void *buffer;
     func_8024795C_S2 *player;
     s32 channel;
-
     if (D_8014D4CC != 0) {
         channel = D_800DE878;
     } else {
