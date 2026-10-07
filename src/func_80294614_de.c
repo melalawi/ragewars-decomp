@@ -1,0 +1,59 @@
+#include "span_1000/code_802944E8.h"
+#include "common/types_06e4f7ef1f9e.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/unused.h"
+#include "span_1000/code_8023A284.h"
+#include "types.h"
+
+extern void func_80293268_de(void *arg0);
+extern void func_8023EE00_de(void);
+extern void func_802954E0_us_rev1(void);
+extern void func_8044D528_de(void *arg0, s32 arg1, s32 arg2);
+
+extern s32 D_8011BDC8;
+extern s32 D_800D2970;
+extern s32 D_800CD730;
+extern f32 D_800CD738;
+
+
+
+
+
+
+
+
+
+
+
+
+struct func_802077F4_S2;
+
+void func_80294614_de(void *arg0) {
+    void *dst;
+    s32 field;
+    f32 f;
+
+    D_80142868 = 0;
+    D_800CD730 = 0;
+    func_80293268_de(arg0);
+    func_8023EE00_de();
+#if defined(VERSION_US_REV1)
+    func_802954E0_us_rev1();
+#endif
+    dst = &D_8011BDC8;
+#if defined(VERSION_US_REV1)
+    f = (1.0f);
+#else
+    f = (1.0f);
+#endif
+    field = ((Shared_Legacy_func_80294608_S1 *)(arg0))->unk26DD8;
+#if defined(VERSION_US_REV1)
+    D_800D2970 = 0;
+#endif
+    D_800CD744_de = f;
+    ((func_802077F4_S2 *)(&D_800CD738))->unk4 = f;
+    D_800CD740_de = f;
+    func_8044D528_de(dst, field, 0);
+    ((Shared_Legacy_func_80294608_S1 *)(arg0))->unk26DB8 = 0xD;
+    D_8014DDB8 = 0;
+}

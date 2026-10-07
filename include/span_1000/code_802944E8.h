@@ -2,11 +2,15 @@
 #define UNBAKE_SPAN_1000_CODE_802944E8_H
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
+#include "types.h"
 /* unbake published declaration: published_0b6fe6430bcac9e5123b716f */
 extern void func_802947A8_de(void);
 
 struct Entry80294AC4;
 /* unbake published declaration: published_bd4e0e317e09035283856470 */
+struct Shared_Legacy_func_80294608_S1;
+typedef struct Shared_Legacy_func_80294608_S1 Shared_Legacy_func_80294608_S1;
+
 struct Entry80294AC4 {
     void (*callback)(void *arg0);
     s32 field4;
@@ -36,6 +40,12 @@ typedef struct Prompt Prompt;
 
 struct Prompt;
 /* unbake published declaration: published_f3927c1c31c788d4f2b588d8 */
+struct Shared_Legacy_func_80294608_S1 {
+    char pad0[0x26DB8];
+    s32 unk26DB8;
+    char pad26DB8[0x1C];
+    s32 unk26DD8;
+};
 struct Prompt {
     char pad[0x88];
     s32 unk88;
@@ -151,4 +161,6 @@ extern void func_80294AC0_us(void);
 extern void func_80294AC8_us(void);
 extern void func_80294AD0_us(void);
 extern void func_80294AD8_us(void);
+
+
 #endif
