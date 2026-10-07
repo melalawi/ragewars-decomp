@@ -4874,7 +4874,6 @@ segments:
       - [0x1124EC, c, "func_80421FEC_de"]
       - [0x11251C, asm, "func_8042251C_eu_x"]
       - [0x112520, c, "func_80422020_de"]
-      - [0x1125A8, c, "func_804220A8_de"]
       - [0x112670, c, "func_80422170_de"]
       - [0x112728, data, "func_80422228_de_padding_112728"]
       - [0x112730, asm, "func_80422228_de"]
