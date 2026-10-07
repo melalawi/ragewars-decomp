@@ -5419,7 +5419,7 @@ segments:
       - [0x1AB2B0, c, "func_804452B0_de"]
       - [0x1AB310, asm, "func_80445310_de"]
       - [0x1AB3F0, c, "func_804453F0_de"]
-      - [0x1AB494, asm, "func_80445494_de"]
+      - [0x1AB494, c, "func_80445494_de"]
       - [0x1AB504, c, "func_80445504_de"]
       - [0x1AB590, c, "func_80445590_de"]
       - [0x1AB60C, c, "func_8044560C_de"]
