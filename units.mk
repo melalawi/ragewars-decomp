@@ -49,6 +49,7 @@ build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/fu
 build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: COMPILER_DEFINES := 
 build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: ASSEMBLER_FLAGS := -march=vr4300 -mabi=32 -EB -G0 --no-pad-sections
 build/%/src/func_80200CA0_de.i build/%/src/func_80200CA0_de.key build/%/units/func_80200CA0_de.bin: TRIM := 
+build/%/src/func_80200D18_de.i build/%/src/func_80200D18_de.key build/%/units/func_80200D18_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -DNON_MATCHING
 build/%/src/func_80200F98_de.i build/%/src/func_80200F98_de.key build/%/units/func_80200F98_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER)
 build/%/src/func_80200F98_de.i build/%/src/func_80200F98_de.key build/%/units/func_80200F98_de.bin: KIND := gnu
 build/%/src/func_80200F98_de.i build/%/src/func_80200F98_de.key build/%/units/func_80200F98_de.bin: CC := tools/gcc-2.7.2-kmc/cc1

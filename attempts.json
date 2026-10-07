@@ -153,6 +153,31 @@
       },
       "minutes": 45.43
     },
+    "func_80200D18_de": {
+      "attempts": 6,
+      "best": {
+        "de": 94.915254,
+        "eu": 94.915254,
+        "eu-x": 94.915254,
+        "us": 94.915254,
+        "us-rev1": 94.915254
+      },
+      "bytes": 236,
+      "exact": false,
+      "fuzzy": {
+        "compiler": "gcc-2.8.1-sn64",
+        "score": 94.91525400000002,
+        "source_sha256": "fefd3719342a7096a0f44389d97573038ec833050f0c0fe673bee11f33e81692",
+        "versions": {
+          "de": 94.915254,
+          "eu": 94.915254,
+          "eu-x": 94.915254,
+          "us": 94.915254,
+          "us-rev1": 94.915254
+        }
+      },
+      "minutes": 28.71
+    },
     "func_80200F98_de": {
       "attempts": 1,
       "best": {
@@ -5909,7 +5934,7 @@
       "minutes": 39.1
     },
     "func_80414CCC_de": {
-      "attempts": 2,
+      "attempts": 3,
       "best": {
         "de": 37.755102,
         "eu": 37.755102,
@@ -5919,7 +5944,7 @@
       },
       "bytes": 3920,
       "exact": false,
-      "minutes": 5.88
+      "minutes": 184.89
     },
     "func_80415C1C_de": {
       "attempts": 1,
@@ -7116,6 +7141,19 @@
       "bytes": 40,
       "exact": true,
       "minutes": 0.03
+    },
+    "func_804389F0_de": {
+      "attempts": 2,
+      "best": {
+        "de": 34.210526,
+        "eu": 34.210526,
+        "eu-x": 34.210526,
+        "us": 34.210526,
+        "us-rev1": 34.210526
+      },
+      "bytes": 152,
+      "exact": false,
+      "minutes": 29.3
     },
     "func_80438C84_de": {
       "attempts": 1,
