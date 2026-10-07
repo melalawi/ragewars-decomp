@@ -132,7 +132,7 @@ include units.mk
 PREPROCESS_gnu = $(CPP) $(CPPFLAGS) $(PREPROCESS_FLAGS) src/$(*F).c -MMD -MP -MT $(@D)/$(*F).i -MF $(@D)/$(*F).d > $(@D)/$(*F).i
 COMPILE_gnu = $(abspath $(CC)) -quiet $(CODEGEN) $(UNIT_CODEGEN) $(*F).i -o $(*F).s && $(N64LINK) asn64 --as $(AS) $(ASSEMBLER_FLAGS) $(*F).s -o $(*F).o
 PREPROCESS_ido = $(abspath $(CC)) $(PREPROCESS_FLAGS) -M src/$(*F).c > $(@D)/$(*F).deps && sed 's|^[^:]*:|$(@D)/$(*F).i:|' $(@D)/$(*F).deps > $(@D)/$(*F).d && rm $(@D)/$(*F).deps && $(abspath $(CC)) $(PREPROCESS_FLAGS) -E src/$(*F).c > $(@D)/$(*F).i
-COMPILE_ido = $(abspath $(CC)) $(CODEGEN) $(UNIT_CODEGEN) -c $(*F).i -o $(*F).o
+COMPILE_ido = $(abspath $(CC)) -Wab,-r4300_mul $(CODEGEN) $(UNIT_CODEGEN) -c $(*F).i -o $(*F).o
 VER = $(word 2,$(subst /, ,$@))
 VERSION_DEFINES = $($(VER).DEFINES)
 TOOLCHAIN := $(firstword $(shell cat tools/compilers.sha256 tools/n64link.version | sha1sum))

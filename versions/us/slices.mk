@@ -2721,7 +2721,7 @@ us.U.func_8041DE5C_de := 0x8041DECC:0x181ECC:0x38
 us.U.func_8041DE94_de := 0x8041DF04:0x181F04:0xB0
 us.S.00181FB4 := 1580980 2012
 us.U.func_8041E720_de := 0x8041E790:0x182790:0xFC
-us.S.0018288C := 1583244 596
+us.U.func_8041E81C_de := 0x8041E88C:0x18288C:0x254
 us.U.func_8041EA70_de := 0x8041EAE0:0x182AE0:0x54
 us.U.func_8041EAC4_de := 0x8041EB34:0x182B34:0x8C
 us.U.func_8041EB50_de := 0x8041EBC0:0x182BC0:0x38
@@ -6025,7 +6025,7 @@ us.PIECES := \
   build/us/units/func_8041DE94_de.bin \
   build/us/slices/00181FB4.bin \
   build/us/units/func_8041E720_de.bin \
-  build/us/slices/0018288C.bin \
+  build/us/units/func_8041E81C_de.bin \
   build/us/units/func_8041EA70_de.bin \
   build/us/units/func_8041EAC4_de.bin \
   build/us/units/func_8041EB50_de.bin \
