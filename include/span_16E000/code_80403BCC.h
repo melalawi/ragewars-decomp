@@ -1,3 +1,4 @@
+#include "types.h"
 #ifndef UNBAKE_SPAN_16E000_CODE_80403BCC_H
 #define UNBAKE_SPAN_16E000_CODE_80403BCC_H
 #include "../types.h"
@@ -152,5 +153,5 @@ extern s32 func_804053E0_de(s32 index, s32 entry, s32 *out);
 extern void func_80404DDC_de(void);
 
 extern int func_804041E8_de(void);
-extern int func_80404D84_de();
+void func_80404D84_de(void);
 #endif
