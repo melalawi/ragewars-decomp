@@ -409,4 +409,7 @@ struct RuntimeState_func_802AE5B8_de;
 /* unbake published declaration: published_ff8517768b467e4a42decd9b */
 typedef struct RuntimeState_func_802AE5B8_de RuntimeState_func_802AE5B8_de;
 
+/* Process one compact-sequence MIDI message; O32/native all-version proof retained. */
+void func_802AF2E0_de(void *object, Message_func_802AF150_de *message);
+
 #endif
