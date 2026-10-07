@@ -934,7 +934,7 @@ segments:
       - [0x47158, c, "func_80246558_de"]
       - [0x47284, c, "func_80246684_de"]
       - [0x472A0, c, "func_802466A0_de"]
-      - [0x47608, asm, "func_80246A08_de"]
+      - [0x47608, c, "func_80246A08_de"]
       - [0x477E8, c, "func_80246BE8_de"]
       - [0x47A44, asm, "func_80246E44_de"]
       - [0x47C04, c, "func_80247004_de"]
