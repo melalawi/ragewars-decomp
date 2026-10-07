@@ -1496,8 +1496,8 @@ signals = ["cap", "version"]
 [[group]]
 name = "code_80443868"
 segment = "span_16E000"
-evidence = "inferred"
-members = ["func_804436F8_de", "func_80443710_de", "func_80443734_de", "func_80443844_de", "func_804438BC_de", "func_80443964_de", "func_80443998_de", "func_80443A24_de", "func_80443AB0_de", "func_80443B3C_de", "func_80443BCC_de", "func_80443BD4_de", "func_80443C14_de", "func_80443CD4_de", "func_80443DD0_de", "func_80444024_us_rev1"]
+evidence = "proven"
+members = ["func_804436F8_de", "func_80443710_de", "func_80443734_de", "func_80443844_de", "func_804438BC_de", "func_80443964_de", "func_80443998_de", "func_80443A24_de", "func_80443AB0_de", "func_80443B3C_de", "func_80443BD4_de", "func_80443C14_de", "func_80443CD4_de", "func_80443DD0_de", "func_80444024_us_rev1"]
 only = { "func_80444024_us_rev1" = ["us-rev1"] }
 split = ["func_80443710_de", "func_80443734_de", "func_80443844_de", "func_804438BC_de", "func_80443964_de", "func_80443BD4_de", "func_80443C14_de", "func_80443CD4_de", "func_80443DD0_de"]
 signals = ["padding", "version"]

@@ -15,3 +15,7 @@ s32 func_80443B3C_de(Shared_DebugWidget *field, Shared_MenuHandle *holder) {
 #endif
     return 0;
 }
+
+/* Does nothing. Nothing in the cartridge image calls it or stores its address as a word. */
+void func_80443BCC_de(void) {
+}

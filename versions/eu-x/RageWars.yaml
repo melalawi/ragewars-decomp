@@ -5372,7 +5372,6 @@ segments:
       - [0x134BA4, asm, "func_80443A24_de"]
       - [0x134C3C, asm, "func_80443AB0_de"]
       - [0x134CD4, c, "func_80443B3C_de"]
-      - [0x134D70, c, "func_80443BCC_de"]
       - [0x134D78, c, "func_80443BD4_de"]
       - [0x134DB8, c, "func_80443C14_de"]
       - [0x134E78, c, "func_80443CD4_de"]

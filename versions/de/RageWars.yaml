@@ -5394,7 +5394,6 @@ segments:
       - [0x1A9A24, asm, "func_80443A24_de"]
       - [0x1A9AB0, asm, "func_80443AB0_de"]
       - [0x1A9B3C, c, "func_80443B3C_de"]
-      - [0x1A9BCC, c, "func_80443BCC_de"]
       - [0x1A9BD4, c, "func_80443BD4_de"]
       - [0x1A9C14, c, "func_80443C14_de"]
       - [0x1A9CD4, c, "func_80443CD4_de"]
