@@ -13,7 +13,7 @@
     "matched_code_percent": 61.22156,
     "complete_code_percent": 61.22156,
     "matched_functions_percent": 81.98812,
-    "fuzzy_match_percent": 61.429462
+    "fuzzy_match_percent": 61.43516
   },
   "units": [
     {
@@ -52940,14 +52940,14 @@
         "total_code": "404",
         "total_functions": 1,
         "total_units": 1,
-        "fuzzy_match_percent": 54.901962
+        "fuzzy_match_percent": 70.87379
       },
       "sections": [
         {
           "name": ".text",
           "size": "404",
           "metadata": {},
-          "fuzzy_match_percent": 54.901962
+          "fuzzy_match_percent": 70.87379
         }
       ],
       "functions": [
@@ -52956,7 +52956,7 @@
           "size": "404",
           "metadata": {},
           "address": "2149994960",
-          "fuzzy_match_percent": 54.901962
+          "fuzzy_match_percent": 70.87379
         }
       ],
       "metadata": {
@@ -184796,7 +184796,7 @@
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "fuzzy_match_percent": 70.133804
+        "fuzzy_match_percent": 72.05651
       }
     },
     {
