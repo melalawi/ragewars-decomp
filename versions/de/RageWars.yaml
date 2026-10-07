@@ -380,8 +380,6 @@ segments:
       - [0x17CA0, c, "func_802170A0_de"]
       - [0x17DBC, c, "func_802171BC_de"]
       - [0x17DC8, c, "func_802171C8_de"]
-      - [0x17DFC, c, "func_802171FC_de"]
-      - [0x17E24, c, "func_80217224_de"]
       - [0x17E90, asm, "func_80217290_de"]
       - [0x17EC4, c, "func_802172C4_de"]
       - [0x17F88, c, "func_80217388_de"]
