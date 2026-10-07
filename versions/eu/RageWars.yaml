@@ -1704,7 +1704,6 @@ segments:
       - [0x86950, c, "func_80285DB0_de"]
       - [0x86AF8, c, "func_80285F58_de"]
       - [0x86C20, c, "func_80286080_de"]
-      - [0x86E24, c, "func_80286284_de"]
       - [0x86FF4, asm, "func_80286454_de"]
       - [0x872C8, asm, "func_80286728_de"]
       - [0x874F0, c, "func_80286950_de"]
