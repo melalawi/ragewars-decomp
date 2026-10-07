@@ -5461,7 +5461,7 @@ segments:
       - [0x1B2DD8, c, "func_80444C68_de"]
       - [0x1B2E68, c, "func_80444CF8_de"]
       - [0x1B2EC0, c, "func_80444D50_de"]
-      - [0x1B2F0C, asm, "func_80444D9C_de"]
+      - [0x1B2F0C, c, "func_80444D9C_de"]
       - [0x1B2F98, data, "func_80444D9C_de_padding_1B2F98"]
       - [0x1B2F9C, asm, "func_80444F9C_us_rev1"]
       - [0x1B2FA0, c, "func_80444FA0_us_rev1"]

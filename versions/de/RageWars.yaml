@@ -5413,7 +5413,7 @@ segments:
       - [0x1AAC68, c, "func_80444C68_de"]
       - [0x1AACF8, c, "func_80444CF8_de"]
       - [0x1AAD50, c, "func_80444D50_de"]
-      - [0x1AAD9C, asm, "func_80444D9C_de"]
+      - [0x1AAD9C, c, "func_80444D9C_de"]
       - [0x1AAE28, asm, "func_80444E28_de"]
       - [0x1AAE30, c, "func_80444E30_de"]
       - [0x1AAE7C, c, "func_80444E7C_de"]
