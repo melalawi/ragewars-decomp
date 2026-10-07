@@ -1,5 +1,6 @@
 #ifndef FUNC_80245BC0_DE_CLOSED_H
 #define FUNC_80245BC0_DE_CLOSED_H
+#include "shared/func_802052C4_de_closed.h"
 #include "shared/func_802453D4_de_closed.h"
 #include "shared/func_804235A8_eu_layout.h"
 #include "types.h"
@@ -25,7 +26,7 @@
 
 
 #include "types.h"
-typedef void (*FuncPtr)(void);
+
 
 extern Shared_MenuContext *D_800DE7E0;
 extern void func_80253838_de(void *, void *);
