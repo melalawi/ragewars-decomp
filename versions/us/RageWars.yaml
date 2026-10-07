@@ -2429,7 +2429,7 @@ segments:
       - [0xBAAF8, asm, "func_802B9EF8_us"]
       - [0xBAB00, asm, "func_802B9FD0_de"]
       - [0xBABFC, asm, "func_802B9FFC_us"]
-      - [0xBAC00, asm, "func_802BA0D0_de"]
+      - [0xBAC00, c, "func_802BA0D0_de"]
       - [0xBAC2C, data, "rodata/unresolved/802BA02C"]
       - [0xBAC30, c, "func_802BA100_de"]
       - [0xBAC44, data, "rodata/unresolved/802BA044"]
