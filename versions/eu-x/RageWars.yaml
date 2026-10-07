@@ -4363,7 +4363,6 @@ segments:
       - [0xF4958, c, "func_80404958_de"]
       - [0xF4BF8, asm, "func_80404BE8_de"]
       - [0xF4D94, c, "func_80404D84_de"]
-      - [0xF4DEC, c, "func_80404DDC_de"]
       - [0xF4E38, c, "func_80404E28_de"]
       - [0xF4F14, c, "func_80404F04_de"]
       - [0xF4F4C, c, "func_80404F3C_de"]

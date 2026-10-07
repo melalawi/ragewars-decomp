@@ -4238,7 +4238,6 @@ segments:
       - [0x168958, c, "func_80404958_de"]
       - [0x168BE8, asm, "func_80404BE8_de"]
       - [0x168D84, c, "func_80404D84_de"]
-      - [0x168DDC, c, "func_80404DDC_de"]
       - [0x168E28, c, "func_80404E28_de"]
       - [0x168F04, c, "func_80404F04_de"]
       - [0x168F3C, c, "func_80404F3C_de"]
