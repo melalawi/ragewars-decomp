@@ -2597,7 +2597,7 @@ segments:
       - [0xC3010, c, "func_802BD320_de"]
       - [0xC3114, asm, "func_802BD704_eu_x"]
       - [0xC3120, asm, "func_802BD430_de"]
-      - [0xC3664, asm, "func_802BD974_de"]
+      - [0xC3664, c, "func_802BD974_de"]
       - [0xC3AD0, asm, "func_802BDDE0_de"]
       - [0xC3D20, c, "func_802BE030_de"]
       - [0xC3DA8, asm, "func_802BE398_eu_x"]

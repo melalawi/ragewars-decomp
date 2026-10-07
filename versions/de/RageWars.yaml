@@ -2546,7 +2546,7 @@ segments:
       - [0xBDF20, c, "func_802BD320_de"]
       - [0xBE024, asm, "func_802BD424_de"]
       - [0xBE030, asm, "func_802BD430_de"]
-      - [0xBE574, asm, "func_802BD974_de"]
+      - [0xBE574, c, "func_802BD974_de"]
       - [0xBE9E0, asm, "func_802BDDE0_de"]
       - [0xBEC30, c, "func_802BE030_de"]
       - [0xBECB8, asm, "func_802BE0B8_de"]

@@ -6,7 +6,7 @@ progress:
   script:
     - |
         set -eu
-        echo 'af9b4fabd76f07ad8bf9d39fe7e8efb1ae5d7f3d98310831a3b029e67f3bcdee  tools/report-verifier.zip' | sha256sum -c -
+        echo '415665729f123b396cdda771ddb2ada2f3040569c98e899d71b95d7b24150558  tools/report-verifier.zip' | sha256sum -c -
         verifier_dir=$(mktemp -d)
         python3 -m zipfile -e tools/report-verifier.zip "$verifier_dir"
         PYTHONPATH="$verifier_dir" python3 -m unbake.report.verify --project . --artifacts out
