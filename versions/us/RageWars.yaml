@@ -1167,8 +1167,6 @@ segments:
       - [0x5C2F8, c, "func_8025B758_de"]
       - [0x5C3F4, c, "func_8025B854_de"]
       - [0x5C45C, c, "func_8025B8BC_de"]
-      - [0x5C4C0, c, "func_8025B920_de"]
-      - [0x5C5EC, c, "func_8025BA4C_de"]
       - [0x5C94C, c, "func_8025BDAC_de"]
       - [0x5C9A8, c, "func_8025BE08_de"]
       - [0x5CAA8, c, "func_8025BF08_de"]
