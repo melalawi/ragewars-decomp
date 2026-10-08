@@ -14,7 +14,7 @@ jobs:
       - name: Verify current source and report semantics
         run: |
           set -eu
-          echo '86bc37e3d63cc1aab2ea75de32301bee9074d8f5a6592ecd16265ba4b9ef03cc  tools/report-verifier.zip' | sha256sum -c -
+          echo '2c2d095418431bd2fe4943a70053e6504a9c45b0cd536518828c4f60727868e6  tools/report-verifier.zip' | sha256sum -c -
           verifier_dir=$(mktemp -d)
           python3 -m zipfile -e tools/report-verifier.zip "$verifier_dir"
           PYTHONPATH="$verifier_dir" python3 -m unbake.report.verify --project . --artifacts out

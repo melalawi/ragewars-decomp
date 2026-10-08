@@ -1,0 +1,6 @@
+#ifndef MENU_SETUP_VERSIONS_H
+#define MENU_SETUP_VERSIONS_H
+#if defined(VERSION_US_REV1)
+#define D_800DF4C4 D_800E3514
+#endif
+#endif
