@@ -412,13 +412,21 @@ struct Shared_ParticleFade {
 struct Shared_ParticleColors;
 struct Shared_ParticleDesc;
 struct Shared_ParticleFade;
+/* The oscillator controller is reached through descriptor byte0x2C.
+ * The ROM reads its signed ramp byte at0x18. */
+struct Shared_ParticleOscillation {
+    char reserved[0x18];
+    s8 ramp;
+};
 struct Shared_ParticleDesc {
     s32 flags;
     char pad4[0x4];
     s8 animMode;
     char pad9[0x7];
     s16 unk10;
-    char pad12[0x22];
+    char pad12[0x1A];
+    struct Shared_ParticleOscillation *oscillation;
+    char pad30[0x4];
     struct Shared_ParticleColors *colors;
     struct Shared_ParticleFade *fade;
 };
@@ -453,7 +461,13 @@ struct Shared_Particle {
     Vec3 rot;
     Vec3 rotSpeed;
     f32 alpha;
-    char pad19C[0x18];
+    /* Two phase/speed/amplitude triples occupy the existing oscillator words. */
+    f32 phaseA;
+    f32 phaseB;
+    f32 phaseSpeedA;
+    f32 phaseSpeedB;
+    f32 amplitudeA;
+    f32 amplitudeB;
     s32 unk1B4;
     char pad1B8[0x1];
     s8 unk1B9;

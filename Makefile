@@ -125,7 +125,7 @@ setup:
 	@sha256sum --quiet -c tools/compilers.sha256
 
 clean:
-	rm -rf build/cas $(foreach v,$(VERSIONS),build/$v/src build/$v/units build/$v/hasm build/$v/data build/$v/slices)
+	rm -rf build/cas $(foreach v,$(VERSIONS),build/$v/src build/$v/units build/$v/hasm build/$v/data build/$v/resources build/$v/slices)
 
 include $(foreach v,$(VERSIONS),versions/$v/slices.mk)
 include units.mk
@@ -166,6 +166,12 @@ DATA_BIN = read key < $< && \
     -o $(@D)/$(*F).elf $(@D)/$(*F).o && \
   $(OBJCOPY) -O binary --only-section=.data $(@D)/$(*F).elf $@ && \
   [ "$$(wc -c < $@)" -eq $$(( $(word 3,$(subst :, ,$($(VER).D.$(*F)))) )) ]
+RESOURCE_NAME = $(basename $(notdir $@))
+RESOURCE_BIN = $(AS) $($(VER).R.$(RESOURCE_NAME).ASFLAGS) -o $(@D)/$(RESOURCE_NAME).o $< && \
+  $(LD) -EB -T versions/$(VER)/resources/$(RESOURCE_NAME).ld \
+    -o $(@D)/$(RESOURCE_NAME).elf $(@D)/$(RESOURCE_NAME).o && \
+  $(OBJCOPY) -O binary --only-section=.resource $(@D)/$(RESOURCE_NAME).elf $@ && \
+  [ "$$(wc -c < $@)" -eq $$(( $(word 3,$(subst :, ,$($(VER).R.$(RESOURCE_NAME)))) )) ]
 SLICE = dd if=$($(VER).BASEROM) of=$@ bs=65536 iflag=skip_bytes,count_bytes status=none \
   skip=$(word 1,$($(VER).S.$(*F))) count=$(word 2,$($(VER).S.$(*F)))
 
@@ -185,7 +191,7 @@ build/$1/slices/%.bin: $$($1.BASEROM) versions/$1/slices.mk | build/$1/slices
 	$$(Q)$$(SLICE)
 build/$1/$$(NAME).z64: $$($1.PIECES)
 	$$(Q)printf '%s\n' '$1 rom'; cat $$($1.PIECES) > $$@
-build/$1/src build/$1/units build/$1/hasm build/$1/data build/$1/slices:
+build/$1/src build/$1/units build/$1/hasm build/$1/data build/$1/resources build/$1/slices:
 	$$(Q)mkdir -p $$@
 endef
 $(foreach v,$(VERSIONS),$(eval $(call VERSION_RULES,$v)))
