@@ -8,7 +8,7 @@
     "complete_data": 0,
     "total_functions": 4547,
     "matched_functions": 3820,
-    "total_units": 5701,
+    "total_units": 5706,
     "complete_units": 2959,
     "matched_code_percent": 66.07439,
     "complete_code_percent": 66.07439,
@@ -180872,9 +180872,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800D0F00_unclaimed_D1BA0_unclaimed_D1E68@D1E68",
+      "name": "data:src/ragewars_particle_draw_depth_us_rev1.c@D1E68",
       "measures": {
-        "total_data": "584",
+        "total_data": "136",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -180884,7 +180884,57 @@
       "sections": [
         {
           "name": "data",
-          "size": "584",
+          "size": "136",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_particle_draw_decal_us_rev1.c@D1EF0",
+      "measures": {
+        "total_data": "136",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "136",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D0F00_unclaimed_D1BA0_unclaimed_D1E68_unclaimed_D1F78@D1F78",
+      "measures": {
+        "total_data": "312",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "312",
           "metadata": {}
         }
       ],
@@ -181872,9 +181922,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800D2E60@D3A60",
+      "name": "data:src/ragewars_particle_state_depth_us_rev1.c@D3A60",
       "measures": {
-        "total_data": "288",
+        "total_data": "96",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -181884,7 +181934,82 @@
       "sections": [
         {
           "name": "data",
-          "size": "288",
+          "size": "96",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_particle_state_decal_us_rev1.c@D3AC0",
+      "measures": {
+        "total_data": "88",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "88",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_particle_state_primitive_us_rev1.c@D3B18",
+      "measures": {
+        "total_data": "96",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "96",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D2E60_unclaimed_D3B78@D3B78",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
           "metadata": {}
         }
       ],
@@ -197473,7 +197598,7 @@
         "complete_data": 0,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 2015,
+        "total_units": 2020,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
