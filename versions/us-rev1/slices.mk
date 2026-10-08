@@ -3509,7 +3509,10 @@ us-rev1.D.rw_pool_802BF67C_CDB20_us_rev1 := 0x800CCF20:0xCDB20:0x4
 us-rev1.D.rw_pool_802BF804_CDB24_us_rev1 := 0x800CCF24:0xCDB24:0x4
 us-rev1.D.rw_pool_802BFAAC_CDB28_us_rev1 := 0x800CCF28:0xCDB28:0x10
 us-rev1.D.rw_pool_802C0044_CDB38_us_rev1 := 0x800CCF38:0xCDB38:0x10
-us-rev1.S.000CDB48 := 842568 2792
+us-rev1.S.000CDB48 := 842568 264
+us-rev1.D.ragewars_u64_quotient_bitwidth_us_rev1 := 0x800CD050:0xCDC50:0x100
+us-rev1.D.ragewars_u64_remainder_bitwidth_us_rev1 := 0x800CD150:0xCDD50:0x100
+us-rev1.S.000CDE50 := 843344 2016
 us-rev1.D.rw_pool_80209DAC_CE630_us_rev1 := 0x800CDA30:0xCE630:0xC
 us-rev1.S.000CE63C := 845372 4
 us-rev1.D.ragewars_actor_mode_dispatch_us_rev1 := 0x800CDA40:0xCE640:0xA0
@@ -9192,6 +9195,9 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_802BFAAC_CDB28_us_rev1.bin \
   build/us-rev1/data/rw_pool_802C0044_CDB38_us_rev1.bin \
   build/us-rev1/slices/000CDB48.bin \
+  build/us-rev1/data/ragewars_u64_quotient_bitwidth_us_rev1.bin \
+  build/us-rev1/data/ragewars_u64_remainder_bitwidth_us_rev1.bin \
+  build/us-rev1/slices/000CDE50.bin \
   build/us-rev1/data/rw_pool_80209DAC_CE630_us_rev1.bin \
   build/us-rev1/slices/000CE63C.bin \
   build/us-rev1/data/ragewars_actor_mode_dispatch_us_rev1.bin \
