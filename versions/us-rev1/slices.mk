@@ -3416,7 +3416,9 @@ us-rev1.S.000D1278 := 856696 1200
 us-rev1.D.rw_pool_8025AA2C_D1728_us_rev1 := 0x800D0B28:0xD1728:0x4
 us-rev1.S.000D172C := 857900 628
 us-rev1.D.rw_pool_8025F434_D19A0_us_rev1 := 0x800D0DA0:0xD19A0:0x4
-us-rev1.S.000D19A4 := 858532 2172
+us-rev1.S.000D19A4 := 858532 412
+us-rev1.D.ragewars_rdp_startup_us_rev1 := 0x800D0F40:0xD1B40:0x60
+us-rev1.S.000D1BA0 := 859040 1664
 us-rev1.D.ragewars_arccos_table_us_rev1 := 0x800D1620:0xD2220:0x1008
 us-rev1.D.rw_pool_802745D0_D3228_us_rev1 := 0x800D2628:0xD3228:0x4
 us-rev1.S.000D322C := 864812 728
@@ -8242,6 +8244,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D172C.bin \
   build/us-rev1/data/rw_pool_8025F434_D19A0_us_rev1.bin \
   build/us-rev1/slices/000D19A4.bin \
+  build/us-rev1/data/ragewars_rdp_startup_us_rev1.bin \
+  build/us-rev1/slices/000D1BA0.bin \
   build/us-rev1/data/ragewars_arccos_table_us_rev1.bin \
   build/us-rev1/data/rw_pool_802745D0_D3228_us_rev1.bin \
   build/us-rev1/slices/000D322C.bin \
