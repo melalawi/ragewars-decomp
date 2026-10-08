@@ -673,7 +673,7 @@ segments:
       - [0x327A0, c, "func_80231BB0_de"]
       - [0x32938, c, "func_80231D48_de"]
       - [0x32B5C, c, "func_80231F6C_de"]
-      - [0x32DB8, asm, "func_802321C8_de"]
+      - [0x32DB8, c, "func_802321C8_de"]
       - [0x32F94, asm, "func_802323A4_de"]
       - [0x331D0, c, "func_802325E0_de"]
       - [0x331EC, c, "func_802325FC_de"]
