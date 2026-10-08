@@ -4603,11 +4603,44 @@ us-rev1.D.ragewars_cup_category_0_arena_controls_us_rev1 := 0x800E51E4:0xE5DE4:0
 us-rev1.D.ragewars_cup_category_1_arena_controls_us_rev1 := 0x800E51F8:0xE5DF8:0x1C
 us-rev1.D.ragewars_cup_category_3_arena_controls_us_rev1 := 0x800E5214:0xE5E14:0x2C
 us-rev1.D.ragewars_cup_category_2_arena_controls_us_rev1 := 0x800E5240:0xE5E40:0x44
-us-rev1.S.000E5E84 := 941700 320
+us-rev1.D.rw_menu_event_handlers_E5E84_us_rev1 := 0x800E5284:0xE5E84:0x9C
+us-rev1.S.000E5F20 := 941856 164
 us-rev1.D.rw_menu_event_handlers_E5FC4_us_rev1 := 0x800E53C4:0xE5FC4:0x6C
 us-rev1.S.000E6030 := 942128 4
 us-rev1.D.rw_menu_event_handlers_E6034_us_rev1 := 0x800E5434:0xE6034:0x60
-us-rev1.S.000E6094 := 942228 2100
+us-rev1.S.000E6094 := 942228 20
+us-rev1.D.rw_menu_event_handlers_E60A8_us_rev1 := 0x800E54A8:0xE60A8:0x24
+us-rev1.S.000E60CC := 942284 12
+us-rev1.D.rw_menu_event_handlers_E60D8_us_rev1 := 0x800E54D8:0xE60D8:0x78
+us-rev1.S.000E6150 := 942416 12
+us-rev1.D.rw_menu_event_handlers_E615C_us_rev1 := 0x800E555C:0xE615C:0x6C
+us-rev1.D.rw_menu_event_handlers_E61C8_us_rev1 := 0x800E55C8:0xE61C8:0x60
+us-rev1.D.rw_menu_event_handlers_E6228_us_rev1 := 0x800E5628:0xE6228:0x60
+us-rev1.S.000E6288 := 942728 16
+us-rev1.D.rw_menu_event_handlers_E6298_us_rev1 := 0x800E5698:0xE6298:0x18
+us-rev1.S.000E62B0 := 942768 12
+us-rev1.D.rw_menu_event_handlers_E62BC_us_rev1 := 0x800E56BC:0xE62BC:0x54
+us-rev1.D.rw_menu_event_handlers_E6310_us_rev1 := 0x800E5710:0xE6310:0x6C
+us-rev1.S.000E637C := 942972 12
+us-rev1.D.rw_menu_event_handlers_E6388_us_rev1 := 0x800E5788:0xE6388:0x54
+us-rev1.S.000E63DC := 943068 88
+us-rev1.D.rw_menu_event_handlers_E6434_us_rev1 := 0x800E5834:0xE6434:0x18
+us-rev1.S.000E644C := 943180 12
+us-rev1.D.rw_menu_event_handlers_E6458_us_rev1 := 0x800E5858:0xE6458:0x3C
+us-rev1.S.000E6494 := 943252 20
+us-rev1.D.rw_menu_event_handlers_E64A8_us_rev1 := 0x800E58A8:0xE64A8:0x18
+us-rev1.S.000E64C0 := 943296 12
+us-rev1.D.rw_menu_event_handlers_E64CC_us_rev1 := 0x800E58CC:0xE64CC:0x30
+us-rev1.D.rw_menu_event_handlers_E64FC_us_rev1 := 0x800E58FC:0xE64FC:0x54
+us-rev1.S.000E6550 := 943440 4
+us-rev1.D.rw_menu_event_handlers_E6554_us_rev1 := 0x800E5954:0xE6554:0x54
+us-rev1.S.000E65A8 := 943528 8
+us-rev1.D.rw_menu_event_handlers_E65B0_us_rev1 := 0x800E59B0:0xE65B0:0x30
+us-rev1.S.000E65E0 := 943584 548
+us-rev1.D.rw_menu_event_handlers_E6804_us_rev1 := 0x800E5C04:0xE6804:0x24
+us-rev1.S.000E6828 := 944168 12
+us-rev1.D.rw_menu_event_handlers_E6834_us_rev1 := 0x800E5C34:0xE6834:0x6C
+us-rev1.S.000E68A0 := 944288 40
 us-rev1.D.ragewars_resident_strings_E68C8_us_rev1 := 0x800E5CC8:0xE68C8:0x14
 us-rev1.S.000E68DC := 944348 4
 us-rev1.D.ragewars_resident_strings_E68E0_us_rev1 := 0x800E5CE0:0xE68E0:0x18
@@ -10390,11 +10423,44 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_cup_category_1_arena_controls_us_rev1.bin \
   build/us-rev1/data/ragewars_cup_category_3_arena_controls_us_rev1.bin \
   build/us-rev1/data/ragewars_cup_category_2_arena_controls_us_rev1.bin \
-  build/us-rev1/slices/000E5E84.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E5E84_us_rev1.bin \
+  build/us-rev1/slices/000E5F20.bin \
   build/us-rev1/data/rw_menu_event_handlers_E5FC4_us_rev1.bin \
   build/us-rev1/slices/000E6030.bin \
   build/us-rev1/data/rw_menu_event_handlers_E6034_us_rev1.bin \
   build/us-rev1/slices/000E6094.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E60A8_us_rev1.bin \
+  build/us-rev1/slices/000E60CC.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E60D8_us_rev1.bin \
+  build/us-rev1/slices/000E6150.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E615C_us_rev1.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E61C8_us_rev1.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6228_us_rev1.bin \
+  build/us-rev1/slices/000E6288.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6298_us_rev1.bin \
+  build/us-rev1/slices/000E62B0.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E62BC_us_rev1.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6310_us_rev1.bin \
+  build/us-rev1/slices/000E637C.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6388_us_rev1.bin \
+  build/us-rev1/slices/000E63DC.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6434_us_rev1.bin \
+  build/us-rev1/slices/000E644C.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6458_us_rev1.bin \
+  build/us-rev1/slices/000E6494.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E64A8_us_rev1.bin \
+  build/us-rev1/slices/000E64C0.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E64CC_us_rev1.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E64FC_us_rev1.bin \
+  build/us-rev1/slices/000E6550.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6554_us_rev1.bin \
+  build/us-rev1/slices/000E65A8.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E65B0_us_rev1.bin \
+  build/us-rev1/slices/000E65E0.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6804_us_rev1.bin \
+  build/us-rev1/slices/000E6828.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6834_us_rev1.bin \
+  build/us-rev1/slices/000E68A0.bin \
   build/us-rev1/data/ragewars_resident_strings_E68C8_us_rev1.bin \
   build/us-rev1/slices/000E68DC.bin \
   build/us-rev1/data/ragewars_resident_strings_E68E0_us_rev1.bin \
