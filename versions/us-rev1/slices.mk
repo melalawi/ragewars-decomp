@@ -4860,7 +4860,10 @@ us-rev1.S.000E409C := 934044 128
 us-rev1.D.ragewars_event_handlers_E411C_us_rev1 := 0x800E351C:0xE411C:0x54
 us-rev1.S.000E4170 := 934256 436
 us-rev1.D.ragewars_event_handlers_E4324_us_rev1 := 0x800E3724:0xE4324:0x6C
-us-rev1.S.000E4390 := 934800 704
+us-rev1.S.000E4390 := 934800 40
+us-rev1.D.rw_reward_score_budgets_us_rev1 := 0x800E37B8:0xE43B8:0x64
+us-rev1.D.rw_reward_item_tiers_us_rev1 := 0x800E381C:0xE441C:0x198
+us-rev1.S.000E45B4 := 935348 156
 us-rev1.D.ragewars_character_preview_keys_00_us_rev1 := 0x800E3A50:0xE4650:0x8
 us-rev1.S.000E4658 := 935512 4
 us-rev1.D.ragewars_character_preview_scales_00_us_rev1 := 0x800E3A5C:0xE465C:0x10
@@ -11074,6 +11077,9 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E4170.bin \
   build/us-rev1/data/ragewars_event_handlers_E4324_us_rev1.bin \
   build/us-rev1/slices/000E4390.bin \
+  build/us-rev1/data/rw_reward_score_budgets_us_rev1.bin \
+  build/us-rev1/data/rw_reward_item_tiers_us_rev1.bin \
+  build/us-rev1/slices/000E45B4.bin \
   build/us-rev1/data/ragewars_character_preview_keys_00_us_rev1.bin \
   build/us-rev1/slices/000E4658.bin \
   build/us-rev1/data/ragewars_character_preview_scales_00_us_rev1.bin \
