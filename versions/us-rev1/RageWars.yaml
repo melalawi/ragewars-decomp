@@ -1826,7 +1826,7 @@ segments:
       - [0x94CEC, c, "func_802940F8_de"]
       - [0x94D20, c, "func_8029412C_de"]
       - [0x94D28, c, "func_80294134_de"]
-      - [0x94D4C, asm, "func_80294158_de"]
+      - [0x94D4C, c, "func_80294158_de"]
       - [0x94DAC, c, "func_802941B8_de"]
       - [0x94DD0, c, "func_802941DC_de"]
       - [0x94DF4, c, "func_80294200_de"]
