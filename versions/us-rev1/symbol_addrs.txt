@@ -10809,3 +10809,8 @@ ragewars_menu_strings_D5EDC_us_rev1 = 0x800d52dc;
 // Verified counter identity in US-rev1 callback8043CB78.
 D_8014DDA0 = 0x80154030;
 func_8043C998_de = 0x8043CB78; // type:func
+
+// US-rev1 spinner state and alpha scale, directly addressed by callback8043CB8C.
+D_800E1C50 = 0x800E5CA0;
+D_800DE24C_de = 0x800E227C;
+func_8043C9AC_de = 0x8043CB8C; // type:func
