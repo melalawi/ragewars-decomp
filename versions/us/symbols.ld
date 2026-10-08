@@ -11229,4 +11229,5 @@ PROVIDE(jtbl_800EE120 = 0x800DC750);
 PROVIDE(jtbl_800EE3A8 = 0x800DC9D8);
 PROVIDE(jtbl_800EE3C8 = 0x800DC9F8);
 PROVIDE(jtbl_800EE3E8 = 0x800DCA18);
+PROVIDE(ragewars_particle_intensity_texture_us_rev1 = 0x800CC170);
 PROVIDE(ragewars_pixel_formats_us_rev1 = 0x800DD780);

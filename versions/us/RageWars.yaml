@@ -3778,6 +3778,7 @@ segments:
       - [0xCC7B8, rodata, "rodata/shared/800CBBB8"]
       - [0xCC7BC, rodata, "rodata/shared/800CBBBC"]
       - [0xCC7C0, data, "rodata/unresolved/800CBBC0"]
+      - [0x0CCD70, data, "src/ragewars_particle_intensity_texture_us_rev1.c"]
       - [0xCCE70, data, "rodata/writable/800CC270"]
       - [0xCCEC0, data, "rodata/unresolved/800CC2C0"]
       - [0xCCED0, data, "rodata/writable/800CC2D0"]

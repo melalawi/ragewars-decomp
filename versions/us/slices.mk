@@ -2269,7 +2269,9 @@ us.U.func_802C020C_de := 0x802C013C:0xC0D3C:0x10
 us.U.func_802C021C_de := 0x802C014C:0xC0D4C:0x10
 us.S.000C0D5C := 789852 5636
 us.U.__cmpdi2 := 0x802C1760:0xC2360:0x48
-us.S.000C23A8 := 795560 114648
+us.S.000C23A8 := 795560 43464
+us.D.ragewars_particle_intensity_texture_us_rev1 := 0x800CC170:0xCCD70:0x100
+us.S.000CCE70 := 839280 70928
 us.D.ragewars_pixel_formats_us_rev1 := 0x800DD780:0xDE380:0x750
 us.S.000DEAD0 := 912080 546096
 us.U.func_80400000_de := 0x80400000:0x164000:0x67C
@@ -5577,6 +5579,8 @@ us.PIECES := \
   build/us/slices/000C0D5C.bin \
   build/us/units/__cmpdi2.bin \
   build/us/slices/000C23A8.bin \
+  build/us/data/ragewars_particle_intensity_texture_us_rev1.bin \
+  build/us/slices/000CCE70.bin \
   build/us/data/ragewars_pixel_formats_us_rev1.bin \
   build/us/slices/000DEAD0.bin \
   build/us/units/func_80400000_de.bin \

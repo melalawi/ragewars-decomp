@@ -4,17 +4,17 @@
     "matched_code": 669004,
     "complete_code": 669004,
     "total_data": 320748,
-    "matched_data": 1872,
-    "complete_data": 1872,
+    "matched_data": 2128,
+    "complete_data": 2128,
     "total_functions": 4233,
     "matched_functions": 3597,
-    "total_units": 5249,
-    "complete_units": 2815,
+    "total_units": 5250,
+    "complete_units": 2816,
     "matched_code_percent": 62.980255,
     "complete_code_percent": 62.980255,
     "matched_functions_percent": 84.9752,
-    "matched_data_percent": 0.58363575,
-    "complete_data_percent": 0.58363575,
+    "matched_data_percent": 0.66344917,
+    "complete_data_percent": 0.66344917,
     "fuzzy_match_percent": 63.40704
   },
   "units": [
@@ -174416,7 +174416,7 @@
     {
       "name": "data:rodata/unresolved/800CBBC0@CC7C0",
       "measures": {
-        "total_data": "1712",
+        "total_data": "1456",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -174427,7 +174427,7 @@
       "sections": [
         {
           "name": "data",
-          "size": "1712",
+          "size": "1456",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -174438,6 +174438,34 @@
         "progress_categories": [
           "data"
         ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_particle_intensity_texture_us_rev1.c@CCD70",
+      "measures": {
+        "total_data": "256",
+        "matched_data": "256",
+        "complete_data": "256",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "256",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_particle_intensity_texture_us_rev1.c"
       }
     },
     {
@@ -186500,17 +186528,17 @@
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 320748,
-        "matched_data": 1872,
-        "complete_data": 1872,
+        "matched_data": 2128,
+        "complete_data": 2128,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 1799,
-        "complete_units": 1,
+        "total_units": 1800,
+        "complete_units": 2,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "matched_data_percent": 0.58363575,
-        "complete_data_percent": 0.58363575,
+        "matched_data_percent": 0.66344917,
+        "complete_data_percent": 0.66344917,
         "fuzzy_match_percent": 0.0
       }
     },
