@@ -9622,6 +9622,7 @@ D_8014155C = 0x8014561C;
 D_801421B4 = 0x80146274;
 D_801421D0 = 0x80146290;
 D_8014220C = 0x801462CC;
+func_8043CCD0_de = 0x8043CEB0; // type:func
 func_8043CC10_de = 0x8043CDF0; // type:func
 func_8043C730_us_rev1 = 0x8043C730; // type:func
 func_8043CC08_de = 0x8043CDE8; // type:func
