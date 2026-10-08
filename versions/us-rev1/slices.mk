@@ -2419,7 +2419,9 @@ us-rev1.S.000D6390 := 877456 12
 us-rev1.D.ragewars_menu_strings_D639C_us_rev1 := 0x800D579C:0xD639C:0x94
 us-rev1.S.000D6430 := 877616 4
 us-rev1.D.ragewars_menu_strings_D6434_us_rev1 := 0x800D5834:0xD6434:0x13A8
-us-rev1.S.000D77DC := 882652 10680
+us-rev1.S.000D77DC := 882652 10532
+us-rev1.D.resident_huffman_dictionaries := 0x800D9500:0xDA100:0x90
+us-rev1.S.000DA190 := 893328 4
 us-rev1.D.huffman_initial_block_ranges := 0x800D9594:0xDA194:0x50
 us-rev1.D.huffman_single_zero_runs := 0x800D95E4:0xDA1E4:0x1B8
 us-rev1.D.huffman_delta_single_zero_run_nodes := 0x800D979C:0xDA39C:0x80C
@@ -6115,6 +6117,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D6430.bin \
   build/us-rev1/data/ragewars_menu_strings_D6434_us_rev1.bin \
   build/us-rev1/slices/000D77DC.bin \
+  build/us-rev1/data/resident_huffman_dictionaries.bin \
+  build/us-rev1/slices/000DA190.bin \
   build/us-rev1/data/huffman_initial_block_ranges.bin \
   build/us-rev1/data/huffman_single_zero_runs.bin \
   build/us-rev1/data/huffman_delta_single_zero_run_nodes.bin \

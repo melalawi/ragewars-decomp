@@ -4011,6 +4011,8 @@ segments:
       - [0xD9F60, data, "rodata/writable/800D9360"]
       - [0xD9F70, data, "rodata/unresolved/800D9370"]
       - [0xDA0E8, data, "rodata/writable/800D94E8"]
+      - [0xDA100, data, "src/resident_huffman_dictionaries.c"]
+      - [0xDA190, data, "rodata/writable/800D94E8_unclaimed_DA190"]
       - [0xDA194, data, "src/huffman_initial_block_ranges.c"]
       - [0xDA1E4, data, "src/huffman_single_zero_runs.c"]
       - [0xDA39C, data, "src/huffman_delta_single_zero_run_nodes.c"]
