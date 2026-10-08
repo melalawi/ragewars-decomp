@@ -270,6 +270,7 @@ build/%/src/func_80210068_de.i build/%/src/func_80210068_de.key build/%/units/fu
 build/%/src/func_80210090_de.i build/%/src/func_80210090_de.key build/%/units/func_80210090_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802100B8_de.i build/%/src/func_802100B8_de.key build/%/units/func_802100B8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802100E0_de.i build/%/src/func_802100E0_de.key build/%/units/func_802100E0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_80210198_eu.i build/%/src/func_80210198_eu.key build/%/units/func_80210198_eu.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802106E0_de.i build/%/src/func_802106E0_de.key build/%/units/func_802106E0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80210E88_de.i build/%/src/func_80210E88_de.key build/%/units/func_80210E88_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80211020_de.i build/%/src/func_80211020_de.key build/%/units/func_80211020_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -554,6 +555,7 @@ build/%/src/func_8022F5E0_de.i build/%/src/func_8022F5E0_de.key build/%/units/fu
 build/%/src/func_8022F96C_de.i build/%/src/func_8022F96C_de.key build/%/units/func_8022F96C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8022FDAC_de.i build/%/src/func_8022FDAC_de.key build/%/units/func_8022FDAC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8022FF04_de.i build/%/src/func_8022FF04_de.key build/%/units/func_8022FF04_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_802301F4_de.i build/%/src/func_802301F4_de.key build/%/units/func_802301F4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80230630_de.i build/%/src/func_80230630_de.key build/%/units/func_80230630_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802307FC_de.i build/%/src/func_802307FC_de.key build/%/units/func_802307FC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80230B04_de.i build/%/src/func_80230B04_de.key build/%/units/func_80230B04_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -570,6 +572,7 @@ build/%/src/func_802325FC_de.i build/%/src/func_802325FC_de.key build/%/units/fu
 build/%/src/func_80232744_de.i build/%/src/func_80232744_de.key build/%/units/func_80232744_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802327A0_de.i build/%/src/func_802327A0_de.key build/%/units/func_802327A0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802327F4_de.i build/%/src/func_802327F4_de.key build/%/units/func_802327F4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_802328D8_de.i build/%/src/func_802328D8_de.key build/%/units/func_802328D8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8023293C_de.i build/%/src/func_8023293C_de.key build/%/units/func_8023293C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80232B64_de.i build/%/src/func_80232B64_de.key build/%/units/func_80232B64_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80232BD0_de.i build/%/src/func_80232BD0_de.key build/%/units/func_80232BD0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -954,6 +957,7 @@ build/%/src/func_80256454_de.i build/%/src/func_80256454_de.key build/%/units/fu
 build/%/src/func_8025651C_us_rev1.i build/%/src/func_8025651C_us_rev1.key build/%/units/func_8025651C_us_rev1.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8025657C_de.i build/%/src/func_8025657C_de.key build/%/units/func_8025657C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8025661C_de.i build/%/src/func_8025661C_de.key build/%/units/func_8025661C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_802566E8_de.i build/%/src/func_802566E8_de.key build/%/units/func_802566E8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802567A4_de.i build/%/src/func_802567A4_de.key build/%/units/func_802567A4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802567D0_de.i build/%/src/func_802567D0_de.key build/%/units/func_802567D0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80256E6C_de.i build/%/src/func_80256E6C_de.key build/%/units/func_80256E6C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -1516,6 +1520,7 @@ build/%/src/func_80293054_de.i build/%/src/func_80293054_de.key build/%/units/fu
 build/%/src/func_80293268_de.i build/%/src/func_80293268_de.key build/%/units/func_80293268_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80293394_de.i build/%/src/func_80293394_de.key build/%/units/func_80293394_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80293440_de.i build/%/src/func_80293440_de.key build/%/units/func_80293440_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_80293534_de.i build/%/src/func_80293534_de.key build/%/units/func_80293534_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80293590_de.i build/%/src/func_80293590_de.key build/%/units/func_80293590_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80293790_de.i build/%/src/func_80293790_de.key build/%/units/func_80293790_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80293998_de.i build/%/src/func_80293998_de.key build/%/units/func_80293998_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -1687,6 +1692,7 @@ build/%/src/func_8029F470_de.i build/%/src/func_8029F470_de.key build/%/units/fu
 build/%/src/func_8029F5E0_de.i build/%/src/func_8029F5E0_de.key build/%/units/func_8029F5E0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8029F888_de.i build/%/src/func_8029F888_de.key build/%/units/func_8029F888_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802A01D8_de.i build/%/src/func_802A01D8_de.key build/%/units/func_802A01D8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_802A0724_de.i build/%/src/func_802A0724_de.key build/%/units/func_802A0724_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802A0748_de.i build/%/src/func_802A0748_de.key build/%/units/func_802A0748_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802A0B20_de.i build/%/src/func_802A0B20_de.key build/%/units/func_802A0B20_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_802A0B8C_de.i build/%/src/func_802A0B8C_de.key build/%/units/func_802A0B8C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -2079,6 +2085,7 @@ build/%/src/func_80400E50_de.i build/%/src/func_80400E50_de.key build/%/units/fu
 build/%/src/func_80401214_de.i build/%/src/func_80401214_de.key build/%/units/func_80401214_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804013BC_de.i build/%/src/func_804013BC_de.key build/%/units/func_804013BC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80401564_de.i build/%/src/func_80401564_de.key build/%/units/func_80401564_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_8040170C_de.i build/%/src/func_8040170C_de.key build/%/units/func_8040170C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8040184C_de.i build/%/src/func_8040184C_de.key build/%/units/func_8040184C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80402FB4_de.i build/%/src/func_80402FB4_de.key build/%/units/func_80402FB4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804030E0_de.i build/%/src/func_804030E0_de.key build/%/units/func_804030E0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -2126,11 +2133,13 @@ build/%/src/func_8040538C_de.i build/%/src/func_8040538C_de.key build/%/units/fu
 build/%/src/func_804053E0_de.i build/%/src/func_804053E0_de.key build/%/units/func_804053E0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80405454_de.i build/%/src/func_80405454_de.key build/%/units/func_80405454_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80405CA8_de.i build/%/src/func_80405CA8_de.key build/%/units/func_80405CA8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_80405F48_de.i build/%/src/func_80405F48_de.key build/%/units/func_80405F48_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804066BC_de.i build/%/src/func_804066BC_de.key build/%/units/func_804066BC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804069F4_de.i build/%/src/func_804069F4_de.key build/%/units/func_804069F4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804070F4_de.i build/%/src/func_804070F4_de.key build/%/units/func_804070F4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80407F6C_de.i build/%/src/func_80407F6C_de.key build/%/units/func_80407F6C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80408118_de.i build/%/src/func_80408118_de.key build/%/units/func_80408118_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_804082FC_de.i build/%/src/func_804082FC_de.key build/%/units/func_804082FC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804085E0_de.i build/%/src/func_804085E0_de.key build/%/units/func_804085E0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80408AC4_us.i build/%/src/func_80408AC4_us.key build/%/units/func_80408AC4_us.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80408C4C_de.i build/%/src/func_80408C4C_de.key build/%/units/func_80408C4C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -2166,6 +2175,7 @@ build/%/src/func_8040A490_de.i build/%/src/func_8040A490_de.key build/%/units/fu
 build/%/src/func_8040A4A0_de.i build/%/src/func_8040A4A0_de.key build/%/units/func_8040A4A0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8040A4D4_de.i build/%/src/func_8040A4D4_de.key build/%/units/func_8040A4D4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8040A530_de.i build/%/src/func_8040A530_de.key build/%/units/func_8040A530_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_8040A58C_de.i build/%/src/func_8040A58C_de.key build/%/units/func_8040A58C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8040A5E8_de.i build/%/src/func_8040A5E8_de.key build/%/units/func_8040A5E8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8040A614_de.i build/%/src/func_8040A614_de.key build/%/units/func_8040A614_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8040A6A8_de.i build/%/src/func_8040A6A8_de.key build/%/units/func_8040A6A8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -2539,6 +2549,7 @@ build/%/src/func_80421884_de.i build/%/src/func_80421884_de.key build/%/units/fu
 build/%/src/func_80421928_de.i build/%/src/func_80421928_de.key build/%/units/func_80421928_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804219E0_de.i build/%/src/func_804219E0_de.key build/%/units/func_804219E0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80421A58_de.i build/%/src/func_80421A58_de.key build/%/units/func_80421A58_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_80421AE8_de.i build/%/src/func_80421AE8_de.key build/%/units/func_80421AE8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80421BBC_de.i build/%/src/func_80421BBC_de.key build/%/units/func_80421BBC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80421BEC_de.i build/%/src/func_80421BEC_de.key build/%/units/func_80421BEC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80421CE8_de.i build/%/src/func_80421CE8_de.key build/%/units/func_80421CE8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -2801,6 +2812,7 @@ build/%/src/func_804370CC_de.i build/%/src/func_804370CC_de.key build/%/units/fu
 build/%/src/func_80437114_de.i build/%/src/func_80437114_de.key build/%/units/func_80437114_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804371C4_de.i build/%/src/func_804371C4_de.key build/%/units/func_804371C4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80437274_de.i build/%/src/func_80437274_de.key build/%/units/func_80437274_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_80437304_de.i build/%/src/func_80437304_de.key build/%/units/func_80437304_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804373E4_de.i build/%/src/func_804373E4_de.key build/%/units/func_804373E4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80437414_de.i build/%/src/func_80437414_de.key build/%/units/func_80437414_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80437444_de.i build/%/src/func_80437444_de.key build/%/units/func_80437444_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -2903,6 +2915,7 @@ build/%/src/func_8043E1C0_de.i build/%/src/func_8043E1C0_de.key build/%/units/fu
 build/%/src/func_8043E1F8_de.i build/%/src/func_8043E1F8_de.key build/%/units/func_8043E1F8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8043E254_de.i build/%/src/func_8043E254_de.key build/%/units/func_8043E254_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8043E28C_de.i build/%/src/func_8043E28C_de.key build/%/units/func_8043E28C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_8043E2D8_de.i build/%/src/func_8043E2D8_de.key build/%/units/func_8043E2D8_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8043E3CC_de.i build/%/src/func_8043E3CC_de.key build/%/units/func_8043E3CC_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8043E494_de.i build/%/src/func_8043E494_de.key build/%/units/func_8043E494_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8043E4E0_de.i build/%/src/func_8043E4E0_de.key build/%/units/func_8043E4E0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
@@ -2970,6 +2983,7 @@ build/%/src/func_804441E4_de.i build/%/src/func_804441E4_de.key build/%/units/fu
 build/%/src/func_804441F4_de.i build/%/src/func_804441F4_de.key build/%/units/func_804441F4_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8044421C_de.i build/%/src/func_8044421C_de.key build/%/units/func_8044421C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80444314_de.i build/%/src/func_80444314_de.key build/%/units/func_80444314_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/func_80444314_eu.i build/%/src/func_80444314_eu.key build/%/units/func_80444314_eu.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_804443C0_de.i build/%/src/func_804443C0_de.key build/%/units/func_804443C0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80444424_de.i build/%/src/func_80444424_de.key build/%/units/func_80444424_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80444488_de.i build/%/src/func_80444488_de.key build/%/units/func_80444488_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
