@@ -1424,3 +1424,7 @@ compiler = "gcc-2.7.2-kmc"
 [units.func_80298368_de]
 compiler = "gcc-2.8.1-sn64"
 flags = [ "-fno-thread-jumps", "-fno-rerun-cse-after-loop", ]
+
+[units.__floatdisf]
+compiler = "gcc-2.8.1-sn64"
+flags = [ "-mfp32", ]

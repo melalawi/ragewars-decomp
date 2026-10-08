@@ -2364,7 +2364,9 @@ us-rev1.U.func_802C020C_de := 0x802C52FC:0xC5EFC:0x10
 us-rev1.U.func_802C021C_de := 0x802C530C:0xC5F0C:0x10
 us-rev1.S.000C5F1C := 810780 5636
 us-rev1.U.__cmpdi2 := 0x802C6920:0xC7520:0x48
-us-rev1.S.000C7568 := 816488 388
+us-rev1.S.000C7568 := 816488 152
+us-rev1.U.__floatdisf := 0x802C6A00:0xC7600:0xB0
+us-rev1.S.000C76B0 := 816816 60
 us-rev1.D.rw_pool_80202CA0_C76EC_us_rev1 := 0x800C6AEC:0xC76EC:0x14
 us-rev1.D.rw_pool_80202E4C_C7700_us_rev1 := 0x800C6B00:0xC7700:0xC
 us-rev1.D.rw_pool_80202FDC_C770C_us_rev1 := 0x800C6B0C:0xC770C:0x8
@@ -8191,6 +8193,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000C5F1C.bin \
   build/us-rev1/units/__cmpdi2.bin \
   build/us-rev1/slices/000C7568.bin \
+  build/us-rev1/units/__floatdisf.bin \
+  build/us-rev1/slices/000C76B0.bin \
   build/us-rev1/data/rw_pool_80202CA0_C76EC_us_rev1.bin \
   build/us-rev1/data/rw_pool_80202E4C_C7700_us_rev1.bin \
   build/us-rev1/data/rw_pool_80202FDC_C770C_us_rev1.bin \

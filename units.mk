@@ -4767,3 +4767,6 @@ build/%/src/rw_viewport_scalar_E466C_us_rev1.i build/%/src/rw_viewport_scalar_E4
 build/%/src/rw_viewport_scalar_E467C_us_rev1.i build/%/src/rw_viewport_scalar_E467C_us_rev1.key build/%/units/rw_viewport_scalar_E467C_us_rev1.bin build/%/data/rw_viewport_scalar_E467C_us_rev1.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/sn64_intelligence_type_records.i build/%/src/sn64_intelligence_type_records.key build/%/units/sn64_intelligence_type_records.bin build/%/data/sn64_intelligence_type_records.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/sn64_runtime_type_records.i build/%/src/sn64_runtime_type_records.key build/%/units/sn64_runtime_type_records.bin build/%/data/sn64_runtime_type_records.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+
+build/%/src/__floatdisf.i build/%/src/__floatdisf.key build/%/units/__floatdisf.bin build/%/data/__floatdisf.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
+build/%/src/__floatdisf.i build/%/src/__floatdisf.key build/%/units/__floatdisf.bin build/%/data/__floatdisf.bin: UNIT_CODEGEN := -mfp32
