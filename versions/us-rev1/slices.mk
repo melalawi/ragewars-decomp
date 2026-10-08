@@ -3494,7 +3494,10 @@ us-rev1.S.000D11D8 := 856536 104
 us-rev1.D.rw_pool_8023D380_D1240_us_rev1 := 0x800D0640:0xD1240:0x4
 us-rev1.S.000D1244 := 856644 44
 us-rev1.D.rw_pool_80245D30_D1270_us_rev1 := 0x800D0670:0xD1270:0x8
-us-rev1.S.000D1278 := 856696 1200
+us-rev1.S.000D1278 := 856696 72
+us-rev1.D.ragewars_blast_falloff_us_rev1 := 0x800D06C0:0xD12C0:0x64
+us-rev1.D.ragewars_model_sway_samples_us_rev1 := 0x800D0724:0xD1324:0x1E0
+us-rev1.S.000D1504 := 857348 548
 us-rev1.D.rw_pool_8025AA2C_D1728_us_rev1 := 0x800D0B28:0xD1728:0x4
 us-rev1.S.000D172C := 857900 628
 us-rev1.D.rw_pool_8025F434_D19A0_us_rev1 := 0x800D0DA0:0xD19A0:0x4
@@ -3508,7 +3511,12 @@ us-rev1.D.ragewars_texture_intensity_mip_us_rev1 := 0x800D11D0:0xD1DD0:0x98
 us-rev1.S.000D1E68 := 859752 952
 us-rev1.D.ragewars_arccos_table_us_rev1 := 0x800D1620:0xD2220:0x1008
 us-rev1.D.rw_pool_802745D0_D3228_us_rev1 := 0x800D2628:0xD3228:0x4
-us-rev1.S.000D322C := 864812 728
+us-rev1.S.000D322C := 864812 28
+us-rev1.D.ragewars_distance_attenuation_us_rev1 := 0x800D2648:0xD3248:0x104
+us-rev1.D.ragewars_cone_attenuation_us_rev1 := 0x800D274C:0xD334C:0x104
+us-rev1.S.000D3450 := 865360 4
+us-rev1.D.ragewars_color_jitter_us_rev1 := 0x800D2854:0xD3454:0x5A
+us-rev1.S.000D34AE := 865454 86
 us-rev1.D.rw_pool_802800C0_D3504_us_rev1 := 0x800D2904:0xD3504:0x4
 us-rev1.S.000D3508 := 865544 96
 us-rev1.D.ragewars_resident_strings_D3568_us_rev1 := 0x800D2968:0xD3568:0xC
@@ -8467,6 +8475,9 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D1244.bin \
   build/us-rev1/data/rw_pool_80245D30_D1270_us_rev1.bin \
   build/us-rev1/slices/000D1278.bin \
+  build/us-rev1/data/ragewars_blast_falloff_us_rev1.bin \
+  build/us-rev1/data/ragewars_model_sway_samples_us_rev1.bin \
+  build/us-rev1/slices/000D1504.bin \
   build/us-rev1/data/rw_pool_8025AA2C_D1728_us_rev1.bin \
   build/us-rev1/slices/000D172C.bin \
   build/us-rev1/data/rw_pool_8025F434_D19A0_us_rev1.bin \
@@ -8481,6 +8492,11 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_arccos_table_us_rev1.bin \
   build/us-rev1/data/rw_pool_802745D0_D3228_us_rev1.bin \
   build/us-rev1/slices/000D322C.bin \
+  build/us-rev1/data/ragewars_distance_attenuation_us_rev1.bin \
+  build/us-rev1/data/ragewars_cone_attenuation_us_rev1.bin \
+  build/us-rev1/slices/000D3450.bin \
+  build/us-rev1/data/ragewars_color_jitter_us_rev1.bin \
+  build/us-rev1/slices/000D34AE.bin \
   build/us-rev1/data/rw_pool_802800C0_D3504_us_rev1.bin \
   build/us-rev1/slices/000D3508.bin \
   build/us-rev1/data/ragewars_resident_strings_D3568_us_rev1.bin \
