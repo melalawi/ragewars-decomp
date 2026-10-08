@@ -2496,7 +2496,10 @@ us-rev1.S.000E6F3C := 945980 4
 us-rev1.D.ragewars_resident_strings_E6F40_us_rev1 := 0x800E6340:0xE6F40:0x18
 us-rev1.S.000E6F58 := 946008 4
 us-rev1.D.ragewars_resident_strings_E6F5C_us_rev1 := 0x800E635C:0xE6F5C:0x18
-us-rev1.S.000E6F74 := 946036 286
+us-rev1.S.000E6F74 := 946036 76
+us-rev1.D.ragewars_spinner_states_us_rev1 := 0x800E63C0:0xE6FC0:0xC0
+us-rev1.D.ragewars_player_name_buffers_us_rev1 := 0x800E6480:0xE7080:0x10
+us-rev1.S.000E7090 := 946320 2
 us-rev1.D.ragewars_debug_stream_us_rev1 := 0x800E6492:0xE7092:0xF7EE
 us-rev1.D.ragewars_debug_continuation_us_rev1 := 0x800F5C80:0xF6880:0x2582
 us-rev1.S.000F8E02 := 1019394 1
@@ -6093,6 +6096,9 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E6F58.bin \
   build/us-rev1/data/ragewars_resident_strings_E6F5C_us_rev1.bin \
   build/us-rev1/slices/000E6F74.bin \
+  build/us-rev1/data/ragewars_spinner_states_us_rev1.bin \
+  build/us-rev1/data/ragewars_player_name_buffers_us_rev1.bin \
+  build/us-rev1/slices/000E7090.bin \
   build/us-rev1/data/ragewars_debug_stream_us_rev1.bin \
   build/us-rev1/data/ragewars_debug_continuation_us_rev1.bin \
   build/us-rev1/slices/000F8E02.bin \
