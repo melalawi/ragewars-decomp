@@ -4485,7 +4485,40 @@ us-rev1.S.000E4390 := 934800 732
 us-rev1.D.rw_viewport_scalar_E466C_us_rev1 := 0x800E3A6C:0xE466C:0x4
 us-rev1.S.000E4670 := 935536 12
 us-rev1.D.rw_viewport_scalar_E467C_us_rev1 := 0x800E3A7C:0xE467C:0x4
-us-rev1.S.000E4680 := 935552 2276
+us-rev1.D.ragewars_character_preview_positions_00_us_rev1 := 0x800E3A80:0xE4680:0x2C
+us-rev1.S.000E46AC := 935596 64
+us-rev1.D.ragewars_character_preview_positions_01_us_rev1 := 0x800E3AEC:0xE46EC:0x30
+us-rev1.S.000E471C := 935708 64
+us-rev1.D.ragewars_character_preview_positions_02_us_rev1 := 0x800E3B5C:0xE475C:0x30
+us-rev1.S.000E478C := 935820 64
+us-rev1.D.ragewars_character_preview_positions_03_us_rev1 := 0x800E3BCC:0xE47CC:0x30
+us-rev1.S.000E47FC := 935932 64
+us-rev1.D.ragewars_character_preview_positions_04_us_rev1 := 0x800E3C3C:0xE483C:0x30
+us-rev1.S.000E486C := 936044 64
+us-rev1.D.ragewars_character_preview_positions_05_us_rev1 := 0x800E3CAC:0xE48AC:0x30
+us-rev1.S.000E48DC := 936156 64
+us-rev1.D.ragewars_character_preview_positions_06_us_rev1 := 0x800E3D1C:0xE491C:0x30
+us-rev1.S.000E494C := 936268 64
+us-rev1.D.ragewars_character_preview_positions_07_us_rev1 := 0x800E3D8C:0xE498C:0x30
+us-rev1.S.000E49BC := 936380 64
+us-rev1.D.ragewars_character_preview_positions_08_us_rev1 := 0x800E3DFC:0xE49FC:0x30
+us-rev1.S.000E4A2C := 936492 64
+us-rev1.D.ragewars_character_preview_positions_09_us_rev1 := 0x800E3E6C:0xE4A6C:0x30
+us-rev1.S.000E4A9C := 936604 64
+us-rev1.D.ragewars_character_preview_positions_10_us_rev1 := 0x800E3EDC:0xE4ADC:0x30
+us-rev1.S.000E4B0C := 936716 64
+us-rev1.D.ragewars_character_preview_positions_11_us_rev1 := 0x800E3F4C:0xE4B4C:0x30
+us-rev1.S.000E4B7C := 936828 64
+us-rev1.D.ragewars_character_preview_positions_12_us_rev1 := 0x800E3FBC:0xE4BBC:0x30
+us-rev1.S.000E4BEC := 936940 64
+us-rev1.D.ragewars_character_preview_positions_13_us_rev1 := 0x800E402C:0xE4C2C:0x30
+us-rev1.S.000E4C5C := 937052 64
+us-rev1.D.ragewars_character_preview_positions_14_us_rev1 := 0x800E409C:0xE4C9C:0x30
+us-rev1.S.000E4CCC := 937164 64
+us-rev1.D.ragewars_character_preview_positions_15_us_rev1 := 0x800E410C:0xE4D0C:0x30
+us-rev1.S.000E4D3C := 937276 64
+us-rev1.D.ragewars_character_preview_positions_16_us_rev1 := 0x800E417C:0xE4D7C:0x30
+us-rev1.S.000E4DAC := 937388 440
 us-rev1.D.ragewars_event_handlers_E4F64_us_rev1 := 0x800E4364:0xE4F64:0x9C
 us-rev1.S.000E5000 := 937984 4
 us-rev1.D.ragewars_event_handlers_E5004_us_rev1 := 0x800E4404:0xE5004:0x48
@@ -10167,7 +10200,40 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_viewport_scalar_E466C_us_rev1.bin \
   build/us-rev1/slices/000E4670.bin \
   build/us-rev1/data/rw_viewport_scalar_E467C_us_rev1.bin \
-  build/us-rev1/slices/000E4680.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_00_us_rev1.bin \
+  build/us-rev1/slices/000E46AC.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_01_us_rev1.bin \
+  build/us-rev1/slices/000E471C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_02_us_rev1.bin \
+  build/us-rev1/slices/000E478C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_03_us_rev1.bin \
+  build/us-rev1/slices/000E47FC.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_04_us_rev1.bin \
+  build/us-rev1/slices/000E486C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_05_us_rev1.bin \
+  build/us-rev1/slices/000E48DC.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_06_us_rev1.bin \
+  build/us-rev1/slices/000E494C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_07_us_rev1.bin \
+  build/us-rev1/slices/000E49BC.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_08_us_rev1.bin \
+  build/us-rev1/slices/000E4A2C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_09_us_rev1.bin \
+  build/us-rev1/slices/000E4A9C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_10_us_rev1.bin \
+  build/us-rev1/slices/000E4B0C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_11_us_rev1.bin \
+  build/us-rev1/slices/000E4B7C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_12_us_rev1.bin \
+  build/us-rev1/slices/000E4BEC.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_13_us_rev1.bin \
+  build/us-rev1/slices/000E4C5C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_14_us_rev1.bin \
+  build/us-rev1/slices/000E4CCC.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_15_us_rev1.bin \
+  build/us-rev1/slices/000E4D3C.bin \
+  build/us-rev1/data/ragewars_character_preview_positions_16_us_rev1.bin \
+  build/us-rev1/slices/000E4DAC.bin \
   build/us-rev1/data/ragewars_event_handlers_E4F64_us_rev1.bin \
   build/us-rev1/slices/000E5000.bin \
   build/us-rev1/data/ragewars_event_handlers_E5004_us_rev1.bin \
