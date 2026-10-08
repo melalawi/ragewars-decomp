@@ -3585,7 +3585,14 @@ us-rev1.S.000D9F25 := 892709 11
 us-rev1.D.rw_text_802BDDE0_D9F30_us_rev1 := 0x800D9330:0xD9F30:0x11
 us-rev1.S.000D9F41 := 892737 3
 us-rev1.D.rw_text_802BDDE0_D9F44_us_rev1 := 0x800D9344:0xD9F44:0x11
-us-rev1.S.000D9F55 := 892757 427
+us-rev1.S.000D9F55 := 892757 43
+us-rev1.D.ragewars_decoder_bit_masks_us_rev1 := 0x800D9380:0xD9F80:0x22
+us-rev1.S.000D9FA2 := 892834 2
+us-rev1.D.ragewars_decoder_sign_bits_us_rev1 := 0x800D93A4:0xD9FA4:0x22
+us-rev1.S.000D9FC6 := 892870 2
+us-rev1.D.ragewars_decoder_band_ends_us_rev1 := 0x800D93C8:0xD9FC8:0x20
+us-rev1.D.ragewars_decoder_quantizer_steps_us_rev1 := 0x800D93E8:0xD9FE8:0x100
+us-rev1.S.000DA0E8 := 893160 24
 us-rev1.D.resident_huffman_dictionaries := 0x800D9500:0xDA100:0x90
 us-rev1.S.000DA190 := 893328 4
 us-rev1.D.huffman_initial_block_ranges := 0x800D9594:0xDA194:0x50
@@ -8599,6 +8606,13 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D9F41.bin \
   build/us-rev1/data/rw_text_802BDDE0_D9F44_us_rev1.bin \
   build/us-rev1/slices/000D9F55.bin \
+  build/us-rev1/data/ragewars_decoder_bit_masks_us_rev1.bin \
+  build/us-rev1/slices/000D9FA2.bin \
+  build/us-rev1/data/ragewars_decoder_sign_bits_us_rev1.bin \
+  build/us-rev1/slices/000D9FC6.bin \
+  build/us-rev1/data/ragewars_decoder_band_ends_us_rev1.bin \
+  build/us-rev1/data/ragewars_decoder_quantizer_steps_us_rev1.bin \
+  build/us-rev1/slices/000DA0E8.bin \
   build/us-rev1/data/resident_huffman_dictionaries.bin \
   build/us-rev1/slices/000DA190.bin \
   build/us-rev1/data/huffman_initial_block_ranges.bin \
