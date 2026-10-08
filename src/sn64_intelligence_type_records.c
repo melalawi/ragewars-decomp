@@ -1,6 +1,5 @@
 #include "sn64_type_records.h"
 
-#if defined(VERSION_US_REV1)
 /* Serialized symbol/type definitions: ROM 0xF8E03..0xFDDF0,
  * resident VMA 0x800F8203. Boundary fields continue in
  * adjacent inventory spans; this object owns only this assigned interval. */
@@ -5257,4 +5256,3 @@ const Sn64IntelligenceTypeRecords sn64_intelligence_type_records = {
     { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(5200U) }, SN64_LE16(0), 15, "CDecom" },
 };
 typedef char sn64_intelligence_type_records_size_check[(sizeof(Sn64IntelligenceTypeRecords) == 20461) ? 1 : -1];
-#endif
