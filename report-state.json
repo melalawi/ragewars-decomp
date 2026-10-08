@@ -1,16 +1,16 @@
 {
   "schema": 1,
-  "tool_sha256": "5c219b8e129eba3034cc7521b3ca2bfa5862d507ce6e797bb3d1fab3616dc770",
+  "tool_sha256": "ad2f3021d618be436117034817bdc85b928e867e67659ec20e486c6f9b9ffbde",
   "source_pins": {
-    ".github/workflows/progress.yml": "ee5a913d1940193a86450606d109c6dfd68317ba8a2a1938e53b9672cf7ca167",
-    ".gitlab-ci.yml": "e0a9f04d9f73941dfde2372609221a672ca392c9c7d92f24b68fdc01c987431d",
+    ".github/workflows/progress.yml": "506b5fa8d4683bf98243304b54d8ff19dce62d6afc2e8923495d2df0a2765688",
+    ".gitlab-ci.yml": "812b4758f94b8d3444d0a5136b8d9103f91c736aaec863f3d96cfe2d6e7f9caf",
     "Makefile": "329bd96fee40df88f6a10e52209056df61d5081aa2cd030f10455f44b2b3bd1c",
     "config.toml": "bc83870d4d90dfa3e6cbdf4558558c73aa8b1b83af89a785448aa4fa10dabb9c",
     "include/abi.h": "cff5a56cde9e9c6f6229882328d71b038544f4c8102196347b92ac2df6a84951",
     "include/acmd.h": "522f0c6ad06a44f89de7e93dd9caa51ef62e811027a48ce12dd04a3b79db60ac",
     "include/audio_callbacks.h": "15d5c8bdec38dc2bf6412c28a89f3f8a8db2f6060710eb89a171bf46c40b10fe",
     "include/audio_events.h": "7606d3cf0992f470a89ac7a56a5f8a4eb9e2270c96df06d15f8aa526fba18933",
-    "include/common/data.h": "fb269828ea2c69b6343c9a8b42eee429cdcade4d2010da76d6674f518813fefc",
+    "include/common/data.h": "c08903b5ddfbd5538b7ca69ec494f1e27f858f6ac2dab882a64c142e40bd3505",
     "include/common/draft_fields_func_80207FE4_de.h": "3084a06cee26a8e8dcc9d972d322aec77b6f9b78f11d0203da00fc1612fa75d2",
     "include/common/draft_fields_func_8020F5A4_de.h": "0cc4d5640ded977fab09c8b746bc6d2fcd9beb08bd0835ad1bfa4eae3b13b0fc",
     "include/common/draft_fields_func_80230B04_de.h": "c2348ec6c27636373a93692464bae8c931c16250c8d1f15f3fee7f43ec184e65",
@@ -56,6 +56,7 @@
     "include/resident_event_handler.h": "b9ea54824219c627381362d0980f5be9e299c89fa84c728083dba455e53539d5",
     "include/resident_huffman.h": "3470c35eba368b8ccba762ba8b5c0566b57980d66d5aa62417378293b6e295aa",
     "include/resident_huffman_dictionary.h": "c8fa96987e0fd55608e2498867cdb1c674316e006b5d25d2f561492cbc8c954c",
+    "include/resident_pickup_descriptors.h": "740df63152796c683a6e8b8b01df37164e0d19ae9acee12adcf48ff9cbef7dbf",
     "include/shared/func_80204C34_de_closed.h": "15991882692aedeed9915fd68aa8bd6291379f16ab2034a440acb874889570e3",
     "include/shared/func_802052C4_de_closed.h": "b96793455260386e1362d542845fa047e41665cdebd689a39d85ba8094a8fe96",
     "include/shared/func_80206724_de_closed.h": "4e743ad09374127288a4d167788bf2a8e78b4295eba1ef86fee3f73a2f3071b3",
@@ -87,7 +88,7 @@
     "include/shared/func_804220A8_de_closed.h": "07fbbde233bd6db20e175326dbad6f713134b89ce5532a6f23f5a05d9a6f4e4c",
     "include/shared/func_804235A8_eu_closed.h": "f0a41c2de856d6af003ec6d3b091f7c2191c8b2c3b53fe313634d72bf8f980f6",
     "include/shared/func_804235A8_eu_layout.h": "781ca8426294ced1fcf658c5379c773ac00e9303aaa280750e1796b159362dc6",
-    "include/shared/func_80425674_de_layout.h": "58b52d01326ae14bc8d9e63a37e6a3821674cb9f98d1bbee9aab6c905e633fdd",
+    "include/shared/func_80425674_de_layout.h": "8c631248d1b55464b03ab528d52ad8db5dda655e9976069e445ec7ef248ab61a",
     "include/shared/func_8042854C_de_closed.h": "786eebc7230f6edf032b84d4d04e834b07ce506fce95eda342ac87b8d87a3bcd",
     "include/shared/func_8042AE60_eu_layout.h": "7bbd974373e7a88af3fcb964b4669da5223db5802c991693cbd420dfe9b6c280",
     "include/shared/func_80438614_de_closed.h": "8e82b0de18474f5b49f3d530004c8552b512b4e108710a64bb074a660ae6ff4e",
@@ -101,13 +102,15 @@
     "include/shared/gameplay_reaction_rules.h": "fb4cba261bff418f1a0b1cfbf66d2d06800be9bf422a11c5a378207971e5fe8c",
     "include/shared/gameplay_reactions.h": "a78c15acab08ed132d20ea59dc4ec6745404f5847a82c63360d9b1e0fc346ff6",
     "include/shared/gameplay_round_rules.h": "302b1e88b0eebf073bc935bbb4c50852dfd92a3dcf5c2faa5b1ee32d82134145",
-    "include/shared/gameplay_transition.h": "5e7f06e43b08c2f0ba548a2ef6d610e894fab6b9598163f4c910c893500ce3a1",
+    "include/shared/gameplay_settings.h": "1c4e475fb8621ad0d5d1965372e3a966b6e5f50d6361d74eb4cb50056e99a587",
+    "include/shared/gameplay_transition.h": "2478590556882154f3a5396ca5166e3ac4d12a9ff15a5b0c50909c076a791c00",
     "include/shared/heap_sorted_list.h": "5f7d56a24696b74514107d2926332d2a44c04766d567b8c0e8c06df327ea89ed",
     "include/shared/legacy_collision_actor.h": "f08bad43d4f483eaead7c7ff6bd9f21e6970695b0a96a1f30f8ca04d66ebceb7",
     "include/shared/particle_attachment.h": "a357e851e02a3fd3235ead8f1de541ba2dc5ae9b734f9a02c898c0bb8ceffc4d",
     "include/shared/rdp_dma_io.h": "b0ebaeb0c953cb97fde043d8bd2366d72fdb2d28928986907f5693aa25e94bb5",
     "include/shared/route_chase_records.h": "2c4c937bd13137292959f6fe52eb314053d33ebdde550766fb55f86f66f03a0d",
     "include/shared/route_relation_grid.h": "46a3007d4e4a62980cd1f12db5d3f32f10c3e93c43a16c3e54ef30ec5303ab54",
+    "include/shared/unsigned_quotient.h": "34c8d1fad3096b44b8fe1648312ca8cc0ad4220289ba8bccd89bfe7b7fd9994b",
     "include/sn64_type_records.h": "c1256b23dcc6e23a22cbcf4f3592ddfe53461878542daf51467ff8e3398b682b",
     "include/span_1000/code_80200400.h": "74840e5efb111bbf63d82d625912ecd88ca3aebb27873237ebf456308f7efe2b",
     "include/span_1000/code_80200610.h": "13b7eb87a0c800fe073fb075c9ed2842a753e91cd8d749a698ef80e2b78e7e2c",
@@ -304,7 +307,7 @@
     "include/span_176000/code_80447FD8.h": "82cd542cecb4f71b17b603d37d93d0c16ab9a780f763d2ad46d16e7e0b8c7580",
     "include/span_176000/data.h": "c98996dba50852e90ff412a71c16ff345bac868edbaf3952c6a7fdef00ec8c2a",
     "include/span_1BCBB0/data.h": "693e60a79e4979247e8c369df32d4420ffae4874ecb135913333bf2bdba7e3c7",
-    "include/span_C76B0/data.h": "8a66c5143b0563873d917ecd9b480cc12d0e7f24e4161100ee842563bf2ca700",
+    "include/span_C76B0/data.h": "fc68eabbb2483ff9ea82e68e043d17ca0b1d625ecdceb3c3c274bd9ca3b2bc3a",
     "include/span_F0000/code_80403E88.h": "1e2a20ded492805fe0eb32934ed0fdde78b14bafe1d7bb4170cb265760d17c46",
     "include/span_F0000/code_804400E4.h": "07c58005feeef2c6ec39090d6dc0730ccfde041bcc2c02d3bc33bb2b26aa32df",
     "include/span_F0000/data.h": "9adf3a7c11f3b126bcb5bc4a8c4ca0a4c182010d8e3b561e99c786ea845ade58",
@@ -314,6 +317,28 @@
     "include/version_calls.h": "22162e5f6738af576b944386529d5ea347439b51dc31da4269ee33728de20e85",
     "include/video_dimensions.h": "bca39488fae138f3bf52b5b98fabddec712b816b45ccb17dd5976c328960e4c0",
     "layout.toml": "31e4a230fb3f73b39a532c23acc5f0f46249d7ab9d927d4c9cc12f54ea4c2501",
+    "resources/rsp/LICENSE.sm64.CC0.txt": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "resources/rsp/README.txt": "edb10ac249b26fa3d215058c4cea8c288975199c12188c31dfd13487c8bfc4de",
+    "resources/rsp/alignment.s": "38eab29823302c0f3567428bbe756db0a8287346925506f04ec326a4e0856bfe",
+    "resources/rsp/audio-native.sh": "ace800fecd09ddec13018f59ee70a49b6a30c75f1a90965bc919be0c458c3932",
+    "resources/rsp/audio.s": "2132841edc0d89c42e4c7b3153fd2e635af18707dda580d766d86ee3f0e3e5de",
+    "resources/rsp/boot-native.sh": "3ed0cc70a3b48bbda1de8bbec9e063abb41a8a42e31b03f13f36a8ec4f15c49a",
+    "resources/rsp/boot.ld": "e2848fae1221503bcde15a25d3179cba190a5e49e4ff874367872e314fa6bcea",
+    "resources/rsp/boot.s": "e2b22ec2a40b56b973a5f1f88ae106cc019ff7e1c065b8a3a1ea480dc85267bd",
+    "resources/rsp/graphics/LICENSE": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "resources/rsp/graphics/PR/R4300.h": "bb8a7702ef8dfe94c389f0c411a4f2346c506ea8766e85c332a44486a97b7b44",
+    "resources/rsp/graphics/PR/gbi.h": "74d8f61eebd436e772b0198bdf855a8c718eb09069925125a4ec6a10ff7422cf",
+    "resources/rsp/graphics/PR/rcp.h": "db21d74c1b4ef4d3eeef7032f5bfd701a10fd68bbcfa5433397421efcb3540fc",
+    "resources/rsp/graphics/PR/sptask.h": "12b0a593a7013076fb60cf7224f0bdf25da554076e8b6f2ffe3999769e737dc5",
+    "resources/rsp/graphics/PR/sptaskoff.h": "fcace45a479d60f2f2ccab3f1662fc67bbfb86882ea87f18701b1b2355e1912c",
+    "resources/rsp/graphics/PR/ultratypes.h": "a3c2e6294b2253acf1e2db15e39eb9a0e58e87008b0f0bb5539c401d81a98240",
+    "resources/rsp/graphics/f3dex2.s": "4b9b4fc77707bc114bae6fc1d99c6facbfd8bfec0577b0cbd4fd5a33f42d53e2",
+    "resources/rsp/graphics/gbi_internal.h": "af7e12dad4a199da390e8cf93f690a189bd85a448b5ed61eb45d3eaa7345cecc",
+    "resources/rsp/graphics/gfxA-native.sh": "39ea8404e789472cec1b2327585563fcbbcd010cc54f5d7c1dd272a549fe5458",
+    "resources/rsp/graphics/gfxB-native.sh": "354106a66753818c0c00bd7c1103d9f58be7a97649556dfcd948f1d3a8b4764a",
+    "resources/rsp/graphics/l3dex2.s": "9f7ede4bed7a9e9935a58e489e00ab4f5f2b72f167e074fef922c5e986b665d4",
+    "resources/rsp/graphics/rsp/rspboot.h": "11c50dddc63608a16eea7e78dbf09512bd073b94f34a97cd1af9a974011cb678",
+    "resources/rsp/rsp_defs.inc": "2432f6005870cc56332a5308e7b85af3ee169fae38341d02591e5eada205ef46",
     "src/__cmpdi2.c": "bdd6074e2861640e7cfde7da545b5405a7eeb8585bc75fd0f0e1d6adcc14c6c9",
     "src/controller_pak_note_label_format_us_rev1.c": "322e9aac4ad27e0f9d4115130f64ff6d7cb6ac198bb8c308b82189f8f2d4b5f4",
     "src/func_80200400_de.s": "6f3bce413e0649d07c9dff5572ace4a870f34d3e2a6f52e103155d94db434dca",
@@ -1051,6 +1076,7 @@
     "src/func_80247BB4_de.c": "6b07892d13450a98235e10975d477727a36cd9dcd8ffae46a42dfa1fcf72ff6c",
     "src/func_80247F18_de.c": "875ae4d4290f0fe2f66fe4d55787782e03a72600a42c0d1a0c4c83fd63b5972b",
     "src/func_802480F0_de.c": "5b4c671f23c399ddf7295aebb8507c16c58a744cfca02b4782f90103dd304d91",
+    "src/func_802484B0_de.c": "c106da5f77e6ea89437d09c229171ceeee7bb130c550e4045252ba1a0502ca56",
     "src/func_8024A1D0_de.c": "86a3b7eea65360dfc1c6cf0e9d51ce64db78c8b2bee25ab478543d9d8ad6ddc6",
     "src/func_8024A3B0_de.c": "61840885bcf690fdac714d2ce0b76cdd780d062b97200f8e957b10bb9eb60174",
     "src/func_8024A5A8_de.c": "e6e6e938fbc1298937696709bec037c072b8939a92bb2749f326ac07e0347bef",
@@ -1488,6 +1514,7 @@
     "src/func_8026B504_de.c": "e9281e53642e43a645b7907f785900270e5ddfc2f8b4d2ccbc5b7608e2ff2470",
     "src/func_8026B9EC_de.c": "6ebe9a94f49839ff53af83078fb71ba5ceac9de53b0f8039d5db5ccb763f21e9",
     "src/func_8026C020_de.c": "d06fce76ce49f4f1d56ee2c4ebbf8ac67e2adefae442b1005e174c3e179b2855",
+    "src/func_8026C484_de.c": "61ddad27189e1fd8fcd6ab91d839999091ef7d861b8bcaa983f480f65dc6571e",
     "src/func_8026C6D8_de.c": "01298128890a41ee3343909341a0aae0ad1b67ebb08ac8d9c282c96fe30b2b94",
     "src/func_8026C978_de.c": "88fdd4a5c0b34e54c4340689ea4b01c3e0d24929cbe194248a9fa9237402b5b9",
     "src/func_8026D4F0_de.c": "37bd94e937e43027b8d87bb954a884ed78106da65b19ef33dbcdbe6a3e8cc45d",
@@ -1634,6 +1661,7 @@
     "src/func_8027E784_de.c": "f62b093e919aedf7aabc79cdd4c590f6626b8a3b1cfb49e87d8a5bdc08039ffd",
     "src/func_8027EB2C_de.c": "fd1aeb3b9a27984e79bdcf0e3a8a8a64d9135111a4a5298add945fa96ed0c17d",
     "src/func_8027FF58_de.c": "c56d664c4ede98f4b168c51aea405d19437927e0826a9c44f02407a97cf14a9b",
+    "src/func_802800C0_de.c": "ac8d83d860449fcdab7c3d496170aae1fa899589dd98aadf2208f8dbf96423a3",
     "src/func_80281A9C_de.c": "4932a77bf6039acef777eb4ef948719e570bfff6f00e410e8fe51301366ae160",
     "src/func_80282C8C_de.c": "fab9506d8b6f7cf18e82b830666f3b658c099b8718095746d8769b2b55740073",
     "src/func_802830B8_de.c": "a542095ccc7d3b53b30d007b4c666f368b151a48372e5e9973885909c89b8965",
@@ -1765,6 +1793,7 @@
     "src/func_80290A50_us_rev1.c": "21de611c3b1bd00f8e851d485c756370b0665d7e1b5c028b8da453017d38a270",
     "src/func_80290C24_de.c": "53141702e5d2a0069d26ddb1ec0b7807ef6b4d703e14ca9b2ef4f15f06ee34ce",
     "src/func_80290E6C_de.c": "12145284537ce03df217751454dfcd023236c5467419daa6bba5bfd8b08994f2",
+    "src/func_80291074_de.c": "dd6bdc55dc182aedd65a723341a81134e8586ec77702831432c01f781afb059e",
     "src/func_802917D8_de.c": "9114578a30a9f0508e98fb664e3320223772ae9518242e9ca0573ad06e57ebc8",
     "src/func_80291BE8_de.c": "e67daa882b13308b9b93c71e99adbae0fd6ca641be55a1668b18c4ea201a0a87",
     "src/func_80292F24_de.c": "3ef4fb438e68120f270e388869dcbe9cbf9323b145c875331fe5cefae4e1abee",
@@ -2110,6 +2139,7 @@
     "src/func_802AEA2C_de.c": "db49fb6d1c15d0d28e79621300240176cee0b2cabba9948ba30bd9919a40cac0",
     "src/func_802AEAA0_de.c": "e86a120508579b3e595acd39d33364b9fecb65142a9a0fdcd167e7af255c7965",
     "src/func_802AEAB0_de.c": "9c21a9d66b4593f9969551033a35705fd550f2c4751ac2b0bb8fce357daa7c06",
+    "src/func_802AEC20_de.c": "31033477534493683979546eda211839dc8cfa8389a0858e3a7b441dc214939b",
     "src/func_802AEE48_us_rev1.c": "c7c1357c7c01b23271ca61223a1399def9846db3957c3c5255b57bc4a614e5a9",
     "src/func_802AEF84_us_rev1.c": "e24d02c21d5e76ab1ac4f41a064d5d884367196d1f828037fcbf78f17f43d0e0",
     "src/func_802AF0E4_us_rev1.c": "fb6d747c81d2470c21cea3c326948a18ed4bb0de3918a1303c50ade21027fe89",
@@ -2140,6 +2170,7 @@
     "src/func_802B0310_de.c": "c67488fd02f3a7e591fe49d72ae6788a666244520700a0f503b2887f0b7c65e5",
     "src/func_802B0340_de.c": "f1cbe9ff561d1930f44d5da4d948135cd91be4b6f493adfb5eb491a5d6d028ab",
     "src/func_802B0390_de.c": "08933e509dda9751a7846c4e7569bf11c9e4f83412ec013f0a8d1ba6aae18103",
+    "src/func_802B0554_de.c": "84f72437dbbf580d2597496f3e8a96f0266fde7114ae0e52e219d6621d724511",
     "src/func_802B05C8_us_rev1.c": "6165e9470b27640aca9a8ba7d1068aeb4438ff21f2593887aeb674c061d9c95f",
     "src/func_802B091C_us_rev1.c": "013279346cc8c85300f73717c409a177d1936c195ccfd2075319cd0795522a5f",
     "src/func_802B0A90_de.c": "0983f973fc242398df8b3b010a5b06042592aa2bc9234fd6849e10d3dbc0fba4",
@@ -2179,6 +2210,7 @@
     "src/func_802B23C4_de.c": "38457836f554bc063f52a5ffe278541bf06ae54e50e97f5be3102496c8e048b1",
     "src/func_802B23F4_de.c": "7401f2e39e251ea494b207525fc4976713926d42fe695f9dcc5b28d233a5379a",
     "src/func_802B2450_de.c": "9428dc25f60ba686a51f87d70a15f9dd9a97a278a02f75571c530437c20db56b",
+    "src/func_802B2510_de.c": "c6071944ae1599dde868de3f4a8445ac075bfdd0ec4e880b1501c548298216f4",
     "src/func_802B25D0_de.c": "69283c8bc438ba936b86c4dd4fabe1601ff9a9d97c50cbc13e94dba71b5bb1f7",
     "src/func_802B2620_de.c": "b46d19320fd6f1b37703a84791611f3745f33d2f33c63810dbf51b69247633bf",
     "src/func_802B2650_de.c": "2df6d23ba9ee13bf2a6005ef68a568f48d74c8e50c7cffd38bdd8c41d39d8ba6",
@@ -2211,6 +2243,7 @@
     "src/func_802B3D10_de.c": "17766a188e61ad0f0351d26983d9630bf6920b2bcdb9268bcb5d0fcd374f840a",
     "src/func_802B3DB8_de.c": "75ac55ffb2e1307e47045723d4759481aafa8704a0e7a4762f828c27455e9361",
     "src/func_802B3EDC_de.c": "36d6abb689bc12f085c803744e8e968e1612d2e938b2377f6aba13497a3854c5",
+    "src/func_802B3F10_de.c": "0a35fa065e327412b08e3c5a1cd513bc8d30f371447f708a9809c6b6a403139f",
     "src/func_802B40E0_eu_x.c": "d71c0124b86a77264e0f7cd1a8b9c69fc2e63da6597a4348004fa02d11cd886a",
     "src/func_802B43A4_de.c": "4ca4df40bd5380f5da0b084e4ed1b632c4b561cfb688da98cc6dc9f861be6596",
     "src/func_802B4454_de.c": "2839e6e01f30b99a828ac4138edf6ba9b0137728d4e356136e301ee5e236c3d1",
@@ -2828,6 +2861,7 @@
     "src/func_80422414_de.c": "492e05fc471fc3f2e75bebe41bacf19258f8c67b049775c3778e240086ec3362",
     "src/func_8042242C_de.c": "2b3bc4c251f4385090eb7e5e17bf1da6af1a49bd96ee8e740776491f93369a8e",
     "src/func_8042244C_de.c": "6ee89df3bfe883c29801d664b4c25bf116564199325ee1c284b4bc1fb0c06045",
+    "src/func_80422728_us_rev1.c": "bd4552a59e9e118ce16eb6ac9cf88e5722a3e075c76c1d85e9f72a1a03594515",
     "src/func_80422960_de.c": "722d2e7bde147565f8a3ed664d63b1a1b20bc67a369374ae757b072a1e706c93",
     "src/func_80422F9C_de.c": "87c3aa4c0fee1c8dabf0703411f6b17017df5e40c9b06f59e538b7f1a790dac2",
     "src/func_80422FC0_de.c": "fd45cb61b6a9e3b46c453d30d9ac3285a2649deba0239f8794d1c61a31527689",
@@ -2851,6 +2885,7 @@
     "src/func_804239B0_de.c": "4f652fdee60e79576b290054ae2cd3d4a12114172ecd7f1aad1343ae59b6215e",
     "src/func_80423B30_eu.c": "b8424bd06bb3ff391d6530e1ece50cb828fb209118e23528f6b35a0a34390afa",
     "src/func_80423CE0_eu.c": "60a44a63737c62d6495b9257279197e7886036e02b75b8dc2d5a72ccd4eb3f62",
+    "src/func_80423F48_de.c": "0eb4b1f22e168b74911af43b8eb1129355301ecead3336b10f4f2aa788616198",
     "src/func_8042418C_de.c": "cf3ea809937953f2b7426b508ff814b4e3e931e71be4a7482d9c31f472edb3a6",
     "src/func_804241BC_de.c": "2c1106637313d4c338fb276c8e3523a91caae448bafaf6a23fbeb082ef478159",
     "src/func_804242D4_de.c": "6048997aa6a0dbfb1f17bbff7583e73bff65da3db5863edb0f4f6c2b5ecc41a3",
@@ -3205,6 +3240,7 @@
     "src/func_8043F040_de.c": "6b11ef648ef3a31e60fe4e710ba408e0e9befde2acc365f0c9e5a499bc7a4a20",
     "src/func_8043F294_de.c": "3d7480d198b015ff7bcaf8238d50c8a3466045f6d0262356099b77b408d1a5ad",
     "src/func_8043F37C_eu.c": "9117e6d050b7337e4a5a50dca236707d480ce01d88b52c5993dde4d35a4d49bf",
+    "src/func_8043F52C_de.c": "a1b4471d270a3f73679aee6d5bb7a7bff4333f8318e6bbbcf9b653255fab51bc",
     "src/func_8043FE3C_de.c": "c9f123a7fa563f1037981deafee95c0d926d4081566b8f31164c8a79570e221f",
     "src/func_804402DC_de.c": "0769d19bd15e0d7011dc770ac056de7dd1814202b4aa2ada4a81e3682c1a1285",
     "src/func_804404A8_de.c": "d3074dce03449bf7a0eec15a93b76d0b04a47849b1737f9c3321058de2bd095c",
@@ -3353,6 +3389,7 @@
     "src/huffman_nine_zero_runs.c": "3795848a2195d315f1a6baf8b219b32d8abd9757e4ed4207c780c3852f6fe188",
     "src/huffman_signed_small_nodes.c": "944da462653c846d98f8e982df50c2270ae02d5a95d2831f40b884d608c13104",
     "src/huffman_single_zero_runs.c": "9257cd04c231ec6db00423915904cab465de3033d3c1b4e34bc8fd8acb6e0eeb",
+    "src/ragewars_ai_boundary_flag_us_rev1.c": "bcb1b0c834d04d7222adf1b6d64d3b2d44f8a985b9e88583fadb200bb720fd26",
     "src/ragewars_arccos_table_us_rev1.c": "d06b50fa47f346264722426ad1548efb8bc148b1ab1d48945be6a2279605dca1",
     "src/ragewars_arena_compatibility_us_rev1.c": "de8fe087130f5dad194644ae763aada830f8c6617a703e3d98dd210b6ca97171",
     "src/ragewars_arena_menu_slots_us_rev1.c": "83413bd0bb4d874b471dc5554a690183b3e3b619787554b7a9a9fe71e6e4e4b3",
@@ -3364,10 +3401,20 @@
     "src/ragewars_audio_effect_D8DF0_us_rev1.c": "ec9c0d541e82def8f7f3d331d798c3c20924e631cbdb0228077ab9c438c34564",
     "src/ragewars_audio_effect_D8E18_us_rev1.c": "4d96dc46a55360b4f84a1619c096ac89eb247239d1892da3af5333e95cf6c454",
     "src/ragewars_audio_equal_power_us_rev1.c": "af39808fb947437ba5b6d69c057205aa68300f3b6c335109c18e70d150dfff0c",
+    "src/ragewars_audio_interface_clock_us_rev1.c": "1ceb727a0fb55dbed468d51fac971be2afb98707726ff6f06499f3aaa8ac98fe",
     "src/ragewars_blast_falloff_us_rev1.c": "974807cd023a7bd435e925b6691dc27028b4ed1bc4317025389165becd6fa5f7",
     "src/ragewars_color_jitter_us_rev1.c": "28b0644b595947f6daf6c20d316cf2a901b144978cd0ed1bb2efb4188acd3695",
     "src/ragewars_cone_attenuation_us_rev1.c": "3d55b5782b711512b0ba665e15e2e1be04cd490ac87f42383cb08fc091c9dff9",
     "src/ragewars_controller_button_remap_us_rev1.c": "38c76939b1a801ade715bfd99ee62c639bb5ed7916ce51a509cc72b4f9ca88c1",
+    "src/ragewars_controller_initialization_us_rev1.c": "0b78421a296535b3c7b63eec75dc2813367950f8dc2ced6023286e2554f02821",
+    "src/ragewars_controller_pak_initialized_us_rev1.c": "20b08ae8c1e1c0eef158e2847a8ff17f0a2a06eb921333422c7211e5f1d457c2",
+    "src/ragewars_credits_label_blank_us_rev1.c": "f50e878ae8438fd7838d9196fe5fbda2c9805f97e158affde60622e1ac6213dd",
+    "src/ragewars_credits_label_producer_us_rev1.c": "dda369dd6a49a8fc09ec9a150ef0200f1cadb98e10ae2d7730a5fef4a71780ba",
+    "src/ragewars_credits_label_team_us_rev1.c": "ed4fa60a1ee758c57f07a17c57b8c209b2ef2c1c3f3653367cf78715c1682ca8",
+    "src/ragewars_credits_label_technicians_us_rev1.c": "2a489e9bdd54104864467e9e7132494699dd03e970d38bde4d9c6c3e7378c383",
+    "src/ragewars_credits_label_testers_us_rev1.c": "d75b0ebdac0d2d0c584ee6000feeca800e1fbaa9955abb0a3d92c82b7f85a000",
+    "src/ragewars_credits_language_table_us_rev1.c": "4be95ec3b031068eca480c202eb66275195184acdb8d2aa422a99cc0f610a3ad",
+    "src/ragewars_credits_lines_us_rev1.c": "63c58e3a237063d81e5918028738234e9cd580e0d83fb53bc3f6372d7aaa69f1",
     "src/ragewars_debug_continuation_us_rev1.c": "507d3fb01819d8d3cca25fbfa3d089d23c9cd1122b4dbc97d2349c7de8bba92e",
     "src/ragewars_debug_stream_us_rev1.c": "524d0c3af90361240f781367f97c1c982dce295deee00a4a11377432a73ec2de",
     "src/ragewars_decoder_band_ends_us_rev1.c": "5c6c746571e237de3dd72b0373d7b9974b58359f8b234fe747b7cf07385d826e",
@@ -3375,6 +3422,7 @@
     "src/ragewars_decoder_quantizer_steps_us_rev1.c": "fcd7ddb99145ecb941ea46ffcb68d5c45b4cef4dae0b0d3b61910c544d73aa8f",
     "src/ragewars_decoder_sign_bits_us_rev1.c": "a57fefda7fddd13e560017e38fad2934953e99821b3b6504bb7a994746550d9d",
     "src/ragewars_distance_attenuation_us_rev1.c": "ac0fd4772c28cbdf548c8e7c6c496abf4ce3c572e9de197965cbafef436854e7",
+    "src/ragewars_effect_callback_flags_us_rev1.c": "ca97327a4e47c0d51ef5682a94f0da16b2981bbcd8a7b1be686714a01346abd5",
     "src/ragewars_effect_id_scales_us_rev1.c": "3398b935ac1ccee5cdc4e60cc58da124717dce7d1a9cb4456bed9fe12b46ff20",
     "src/ragewars_event_handlers_D3820_us_rev1.c": "83458f2612ef031dea280c3c278767527117e32cbec5bbe9196677c2e4178b90",
     "src/ragewars_event_handlers_E36D0_us_rev1.c": "6054638584d38f0519dba0fecd73b11b10118a1acc8ff6ddd1fce1ce2246bdd8",
@@ -3388,12 +3436,20 @@
     "src/ragewars_event_handlers_E5004_us_rev1.c": "7c39790282687dd44b7c648dfde6cf87852ec04e408c8495c701e21def630293",
     "src/ragewars_event_handlers_E5054_us_rev1.c": "0584a87dcf914383fcdc1d491bd0434961a9365f27f8b0956931b3d3cc3b46b8",
     "src/ragewars_event_handlers_E50A4_us_rev1.c": "2b964bb246af313235fced8b44b277a3167b04fcbd7ed619bf5c3f8a34ed4e56",
+    "src/ragewars_font_character_map_primary_us_rev1.c": "4b011dcfe1005ec4560de54180fb94b2985ba0d4440b3fdeb78d9eb8edd7dc04",
+    "src/ragewars_font_character_map_secondary_us_rev1.c": "bf86ce7a6a06ffbb0c0b2f8082b97ce804aa0428aafea86c47fc7549658abb03",
+    "src/ragewars_font_resource_selector_us_rev1.c": "d959af4d986d4a916b3bd01f740ac20cd311df2000c5ae78416c5a5d54fb761e",
     "src/ragewars_interpolated_ratio_curve_us_rev1.c": "d60cc0433f97f23fe51a2bc1f5bead2bdaa354ddc9312e96da563b588818ca9c",
+    "src/ragewars_item_label_slots_us_rev1.c": "93d2ab9018f1ce81d4c79b512d97ed8679d229a1a263c4fdceed3de0e872e5d8",
+    "src/ragewars_keyboard_key_labels_us_rev1.c": "1d53dce02f1ab8eb91a45097f91c0f62e80cc6872b955df7a200871da41a0475",
+    "src/ragewars_match_option_label_slots_us_rev1.c": "63a39a7896305728ec9f496c05901e987060f623efcd0325aca0c2f0b1898d75",
     "src/ragewars_menu_abbreviations_us_rev1.c": "a0a2cc10bc60b674242c8bca57281128f280fb89badee9b039bfda410d029828",
     "src/ragewars_menu_cinema_fade_label_us_rev1.c": "19c1db38213be1b963ca02b86459122f231c9fe1662b95d281a4cfa4ab9c552a",
     "src/ragewars_menu_digit_labels_us_rev1.c": "31ad7bd817b3d49534c9ef9de9c5173903fcc057bdfbf955f997ead052580ebd",
+    "src/ragewars_menu_motion_scripts_us_rev1.c": "8277cea4a5381695d203cba5097d124f575312650a4e1eeca31f07aa69b7f624",
     "src/ragewars_menu_no_label_us_rev1.c": "72cbf91bec7809fd7bc3317aeb4e41a9a641df4c8a52188468db4309a3de654e",
     "src/ragewars_menu_on_label_us_rev1.c": "bcfb767f42ea7b86eba30bf59f2ff5ea3b173b8ec48a1894590f91559455a335",
+    "src/ragewars_menu_sexysteve_token_us_rev1.c": "88a7b8f39965ac4ed9132760f8f15575c1cb210e9b2b04f3654da52ff9a6e127",
     "src/ragewars_menu_strings_D4254_us_rev1.c": "abbd6230faaa1bed0d833d3052817e120e9536cbcc8c2f7de2b51afe5d0df84a",
     "src/ragewars_menu_strings_D4290_us_rev1.c": "b82e8bdbc893d91bf6915d66f6e766f3c214de7ec0372c27aa214daa3fff8400",
     "src/ragewars_menu_strings_D53E4_us_rev1.c": "f075fb06a17e4974cc5f3b67bc85555615992be577d5582b0d2e97891dc508bc",
@@ -3409,12 +3465,24 @@
     "src/ragewars_menu_strings_D639C_us_rev1.c": "756a36d44368714a3583d2cc38c2a19e40a0b55ae727f514f8b1c52b44bd7fd4",
     "src/ragewars_menu_strings_D6434_us_rev1.c": "050f4a4e8cd520e9d7628f855509e301f89ebcb6d451204770eb34d113e033f1",
     "src/ragewars_model_sway_samples_us_rev1.c": "4cf9f5e7bafd5bb7905636d78b13a8d89d5ac3118efcf41a2fe931aba45f9764",
+    "src/ragewars_option_label_slots_us_rev1.c": "fa318026d13fd09f54c09617e7b1baf8a179c9469be18076e0ad06a2c8ceaec8",
     "src/ragewars_particle_draw_decal_us_rev1.c": "86f5a265a5561586597ef6dde1f3ffffa06ec2cec8a8f0c15f792c1ffccb355f",
     "src/ragewars_particle_draw_depth_us_rev1.c": "c112d16b90c6fad271c74cad86123db5ba5ad9ef3949c2dffde3c0d6da1de7ec",
     "src/ragewars_particle_intensity_texture_us_rev1.c": "96e1034a7ad46b955a3f4248b984378bd95579e421fbb930d923674df68375f5",
     "src/ragewars_particle_state_decal_us_rev1.c": "d6fc43df5ba887d792e5f7f5bd0925ecf87bd1467fe08b35d5320589e944ddaf",
     "src/ragewars_particle_state_depth_us_rev1.c": "791067fd994eb52bf4e469f369cf5433308bd7da52e0a35ec8bfa87031bacb96",
     "src/ragewars_particle_state_primitive_us_rev1.c": "89eb3eb800dac108c0f47b21cbf0f837fe7d630cd0427a077f43beb8a5b1e294",
+    "src/ragewars_pi_access_queue_initialized_us_rev1.c": "042fbb9057210786abfa4180b4d37f664e5d935f6fb7066ed8d770cad3274dcf",
+    "src/ragewars_pi_domain_handles_us_rev1.c": "2860c34d101388192e62dd3860d0cff1750ca3867352885f57c9417f48f8c535",
+    "src/ragewars_pi_manager_and_handles_us_rev1.c": "cafebd0a22f0126308cbe9677f2da2fe58f25dc9242550bcec748dec8970173a",
+    "src/ragewars_pickup_ammo_us_rev1.c": "c4693316ee56ddb495b3237a641fb37b8eb7197f9a3a663fb724807be5963b26",
+    "src/ragewars_pickup_health_us_rev1.c": "0ec71fa0300da233ee488834ebf9aaee9fb54892ece0b294173acc6224286fe0",
+    "src/ragewars_pickup_label_directory_us_rev1.c": "c5527cccf095d0b416d10cd5fc05c166ce1bebed5c7a3236381a15129ea71517",
+    "src/ragewars_pickup_life_us_rev1.c": "22ba2ddb92d9ae25e1212e785c03628d0c02013e05a4757ce9588cf26898019b",
+    "src/ragewars_pickup_powerups_us_rev1.c": "7a70b85acc9f6adf0b5855605bca6bc894b29806873e1924fade1ca24ab23384",
+    "src/ragewars_pickup_special_us_rev1.c": "ccf96f438582868e2b79e2a56883f607968e030e923f68d1e94377f77d973b71",
+    "src/ragewars_pickup_targeted_us_rev1.c": "588047818582d3278dd8dffac16f762699794a8fdf315e86a659f973e0a66f56",
+    "src/ragewars_pickup_weapons_us_rev1.c": "d003fdd88157eb8b5cf29e1ef79aeaea462a071fee5c3959cb82b881896ad175",
     "src/ragewars_player_name_buffers_us_rev1.c": "d1598db3b4600d559a8e3d3a5a86a62f5bf56e120dcc9e91f62b59cf42b91bb3",
     "src/ragewars_pow_constants_us_rev1.c": "0b303f2c243a88782670c8d2eb9ec41a515f275901612a18c6ffe573a96a98fa",
     "src/ragewars_rdp_startup_us_rev1.c": "f2445e52cb8bc72155c69968ae813bb2654563ef1d166e873659bd8872a07755",
@@ -3529,6 +3597,11 @@
     "src/ragewars_resident_strings_F8CF8_us_rev1.c": "0de517ea47977c2fc900bfd2e653337a3f9b7772988e7c005b3eaa15811767c8",
     "src/ragewars_resident_strings_F8D88_us_rev1.c": "9ee69567f435b66345715f88519936d593a42979313302f1c8b58dd7f5f3fa02",
     "src/ragewars_resident_strings_FDDF0_us_rev1.c": "e4f3242bbbf4ba37a308d493c84ff76a02beef6f35a3de1f9697bb7a6c736bd8",
+    "src/ragewars_scheduler_current_threads_us_rev1.c": "51ec54059237114e52b063a63086970c39dd5fcfc0e8bee6b81281cb4e21f04f",
+    "src/ragewars_scheduler_exception_queue_us_rev1.c": "e678741387c14e4f616e92edacdf7b99d300f17ece4d985bc160cbe0a18570eb",
+    "src/ragewars_scheduler_interrupt_mask_us_rev1.c": "8b956792d3ebc1292188e624026093229a840eb0f0b5d4b471737881bf9f8b7d",
+    "src/ragewars_scheduler_queue_seed_us_rev1.c": "ebd24c20a8d4e08ba857ff5656c24e1f400a779769878bcac16b7236d9d2824e",
+    "src/ragewars_si_access_queue_initialized_us_rev1.c": "f3410b1a1ffcddf8f19f2f50c848e4efb1d5c5b61ee97de465948234a46f13cc",
     "src/ragewars_spinner_states_us_rev1.c": "e39278bf898eeb1ee548bd9c9df6d72f42d3a02426c9df8277e03f43230d5913",
     "src/ragewars_texture_intensity_mip_us_rev1.c": "18a99e0032f1e924f83095741003a90f592395fff8e7426169f55d73efc2ea5e",
     "src/ragewars_texture_rgba16_detail_us_rev1.c": "49b8ec178d373fa73fa220158b412fbe9700ca26c940e1c9b9cea54701ec8f99",
@@ -3536,6 +3609,7 @@
     "src/ragewars_texture_rgba16_mip_us_rev1.c": "2b5b0ea464cf1070972e42e4926f41368510e5d9399fe39bfb891b9f9f8425ba",
     "src/ragewars_texture_rgba16_sharpen_us_rev1.c": "3f988a53da34278b976c08e4e1bfb16ca56f58e95a7198128fdcabd9420fc404",
     "src/ragewars_tlb_snapshot_us_rev1.c": "294b3093465ef4edbd54eb70cbbd4a6703d806056423e054cc0bb3694a5f022a",
+    "src/ragewars_transform_workspaces_us_rev1.c": "58d4ed00e986200eadaddf4465f9d9476dcdf28d223fb329b072cc3af5c173f1",
     "src/ragewars_vi_context_selectors_us_rev1.c": "5460f28f683ac4b4e97ed75ed78bc72a907809049d6f2d2b7c9b42c168bd5626",
     "src/ragewars_vi_contexts_us_rev1.c": "3ffbb4171695fb666651679c6f012ca5b465338e8181826143a8617a55a5f7b5",
     "src/ragewars_vi_manager_us_rev1.c": "1374b4d4c9908fc3ac387410678c929581a2f6fb95cb7c4a044c451ad55b5066",
@@ -4399,6 +4473,27 @@
     "src/rw_pool_8044D3E8_CAFEC_us_rev1.c": "804721596070b04b56fb7017a144995c88ce84fb5b2f9d53c5b6b2c794cb550a",
     "src/rw_pool_8044DB70_CB080_us_rev1.c": "b82b08f276061ae2cf9c31e2c16cff90398f9419f048f40a471d0dd492c41d8d",
     "src/rw_pool_8044DC60_CB0A0_us_rev1.c": "c0f996fdf5548cefc4e9460c7dfc942922f83fc577af946d4d31a32733c7e503",
+    "src/rw_pool_cells_80269A80_CA2F4_us_rev1.c": "6cd4222ae9bdf1b62430da0af0cb963f26b1fdf10be651a6bf33af07fc14b477",
+    "src/rw_pool_cells_80269A80_CA324_us_rev1.c": "879b5a0e0f40f079b35300101674583a888c86f68d2f20ecc11b542e0a59faaa",
+    "src/rw_pool_cells_8027DD48_CA958_us_rev1.c": "bb9efb201920e51feb18a32389819a741f54bd8bdab400085dfd710f45348581",
+    "src/rw_pool_cells_8027ED6C_CAA68_us_rev1.c": "f62eee4fcae601a8c8c11a05620230cd38525e7aaa4930114ec9045a85879b4b",
+    "src/rw_pool_cells_802800C0_CAAF4_us_rev1.c": "7fe071a2ca5b0f340c531c85edc566045dd1dbde0f6160c232635ad80844afa4",
+    "src/rw_pool_cells_80297A34_CB3B0_us_rev1.c": "d61e67b25ef5d9375029a5b2bc51a1b649a887428f9274df15518461b0ee246e",
+    "src/rw_pool_cells_802A4A60_CBBC8_us_rev1.c": "5fa5998387274b6d705fb104d70600f2a7006eb48bbf5c00a51cba5cafb91562",
+    "src/rw_pool_cells_802A8F28_CBF28_us_rev1.c": "9869637e09991f5a9b4dfb04921d5a2d2554fc38e53069aca71df6ab91958996",
+    "src/rw_pool_cells_8041F6C8_E2194_us_rev1.c": "cef90d86add94595f1b1125d047e05fd44e1c083d0200ea7d9d6c455ec6d9f91",
+    "src/rw_pool_cells_8041F6C8_E2198_us_rev1.c": "8ca7bf2e0a79fd0d1a9bf1eef96d4b3188085e4f9cb8b6c6bf735d69def6effd",
+    "src/rw_pool_cells_8041F6C8_E21A0_us_rev1.c": "c37114cb84a85dac73e68e2d305a12e4010137cb0edeca3cf0465927c827fcf2",
+    "src/rw_pool_cells_80426918_E25D4_us_rev1.c": "bd82a46b3bbcfab5f9f5009ddf48d2d5ee9dac53985e56a7b5edbc0ca1743c58",
+    "src/rw_pool_cells_80426918_E25D8_us_rev1.c": "ea133b823ddd7733322960aee695b605c04d5d699928d9404bad1940e3c60db2",
+    "src/rw_pool_cells_8042AE60_E26F4_us_rev1.c": "5b40cb7bd26bb9de4eed7006109d8b8bb6befa84ce42b6083975a37eb9978602",
+    "src/rw_pool_cells_8042AE60_E26F8_us_rev1.c": "5f5eea1c803c81622a3eb6b1566edbaf80bc3d0f9d874bef4e802ab686f920ba",
+    "src/rw_pool_cells_8042AE60_E2700_us_rev1.c": "0546de28a1998b23c347e5e034416ef7a1dc6e86d57349ad62fed4c38f83d1d3",
+    "src/rw_pool_cells_8042AE60_E2708_us_rev1.c": "73448986a0fe0dd52ba3d96e2bd15da0be8ab1c878e1e6813544f9e1b314f3fb",
+    "src/rw_pool_cells_8043F294_E3020_us_rev1.c": "ecb393c6b976c7f60cab3883345bf2be8cd42c8b5eeeaf5783861f9553ddb599",
+    "src/rw_pool_cells_8043F52C_E3078_us_rev1.c": "a0becd47e8d1b386063654b38b1e1d74dd66c020d71a9f1dead45b3224d3f8e5",
+    "src/rw_pool_cells_8044222C_E32A8_us_rev1.c": "dedfec657ca34448e0a9a0570271394bbe6adddf0622989fca9669e6daaf2a4c",
+    "src/rw_pool_cells_8044D934_CAFF4_us_rev1.c": "58f8540ed87d03304cce28310142197a73805f227a0832fa477966e6545d87a7",
     "src/rw_tail_80206A20_C77F4_us_rev1.c": "0453f87f8000983b5ab9a03785447bb33de72da6f8721303840b88853b3025d8",
     "src/rw_tail_8020DDF4_eu_C7ACC_us_rev1.c": "ca42bd2d00bd41e6af62584ce52553e212fb99b8984cd8f541c60bad3eaca5bc",
     "src/rw_tail_8021B468_C8058_us_rev1.c": "b05c56e87405548d9a90a724e27e13a1b0e867ece2d939699d1d4cf4bd6b2b10",
@@ -4538,35 +4633,35 @@
     "src/sn64_runtime_type_records.c": "edf6c27e555a271e89fc9237658be773c685db8bd92cc6f734d439a5e7ff84d7",
     "tools/compilers.sha256": "b28b12299b9e8803d03ffefca0963b4fafa1d1c15ff743b89b12e160a9e47991",
     "tools/n64link.version": "503b6a8de93b9c1deeb0b063f2780a2f8e83c0320d1f0fd8daa5685e2f1ab645",
-    "tools/report-verifier.zip": "5c219b8e129eba3034cc7521b3ca2bfa5862d507ce6e797bb3d1fab3616dc770",
+    "tools/report-verifier.zip": "ad2f3021d618be436117034817bdc85b928e867e67659ec20e486c6f9b9ffbde",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "units.mk": "a084de04b447628b1dcd6a36ce9e31c31ceff46cc03d4e7d1bb821c65871a48e",
+    "units.mk": "6c8748295afacec7645f878ec6923ee7466bb0df620797d4b751109f10ffe489",
     "versions/de/RageWars.ld": "4539793d364805b1a8b6c9e41f571e34f49221b4c0e6d266cb2c1c97247bcefa",
     "versions/de/RageWars.yaml": "877af76ace523959ef9c25bb6e80dec6d723ab6f602db4c081a0ae160c5a7935",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
-    "versions/de/symbols.ld": "202246e909139746f9ee6589be782ea7c542731d1874444ecdba94d6608f0d0b",
+    "versions/de/symbols.ld": "54345db6d7a458662bc2b1063c2a7a180fabd6eb2d61a1ad909ee6692a113a8d",
     "versions/eu/RageWars.ld": "3e5e06b72cd4e448c0f0016f8dced42ab4d9a2d61ce6b8fa869084eaf6ff31e3",
     "versions/eu/RageWars.yaml": "e5df9028ac1a9bf440f52040447b70e0c29eb0f8c0259572061bc36d19923e2a",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
-    "versions/eu/symbols.ld": "357eccffd25d86f4cf9d0aa51109b5f71fc8d5b62da729aa20a437ef38e09670",
+    "versions/eu/symbols.ld": "304c151fd906b4ac621592be40b3217115e5f95a3d16692c488df770c8fb0d56",
     "versions/eu-x/RageWars.ld": "d49c7db54e2082d1513ac260a118aa2aa50f88d6fc567de87934ab2ff929881f",
     "versions/eu-x/RageWars.yaml": "01a42fd93423c421544dbcff2a7ba99f687662eb2c7486d7bbc94881af025041",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
-    "versions/eu-x/symbols.ld": "714d5814914e7038c4bda3f660703ed412bdf3d4fc6c9dfce364642b2f821880",
+    "versions/eu-x/symbols.ld": "c8b05dd240e703e0c9447ee4ea57681b73258adfbd450875ec6bd376de0c2096",
     "versions/us/RageWars.ld": "ffb823c7e2b0bb59f940481a10decb3546c291735d9956dabf1fef7d7ed17027",
     "versions/us/RageWars.yaml": "498c8a6d7676541ef4b37904361ef5faee2f3b24f6061d5ef73ef0a1cd1ef806",
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
-    "versions/us/symbols.ld": "a36ec774232663484d72fddc2e68e77555e518fcd85cc1affa558b2b8aaba313",
+    "versions/us/symbols.ld": "cb6902ddba2b6c232fdf796f1d6e0616041cf0fb3f3bc20730c49c722a300de3",
     "versions/us-rev1/RageWars.ld": "e85b05dd473505a7212c6191e955f3f995591b2a528fc2a62866434eac9cac34",
-    "versions/us-rev1/RageWars.yaml": "4719923b12c06884357d6162d4d48fd2ee90488e8d34a338299244bd0f6c04ea",
-    "versions/us-rev1/symbol_addrs.txt": "639bcddb5bf15ffc613a7a85a4771c590de533e29bb91b0863b1e07492f64429",
-    "versions/us-rev1/symbols.ld": "6e980e5cfce8fce06a744514ec1ceb2e804b1f125199ee572289fac562e7f44a",
-    "native-data-proofs": "68a5ac454b7c243e823ea2f17d35522eeced10ee8c638a3d4b828392baf1e146",
+    "versions/us-rev1/RageWars.yaml": "3e0fd8366b5006144efd3729a002148de684b6757a3cb2ab39b409a29f0c0745",
+    "versions/us-rev1/symbol_addrs.txt": "97757285bc96ecb1a3d3e50a1237e97de05d860538177d539379743f3ce0511f",
+    "versions/us-rev1/symbols.ld": "c16e82061c19e0c1c35c8dd69450ab27cb33c4f662591ef9b233bb5b52ba448d",
+    "native-data-proofs": "ced7f781b39a1ed442c56f99c491f171860bc3892cc63e34c3089f5bff3ac0ed",
     "publication-state": "2302c7e0d703d0d50d26972cfc5f7bdf923a357c0c56646a92d3e65f49c5beac"
   },
   "versions": {
     "us": {
-      "report_sha256": "ab4f45dc125410aeb7a83d4efedc31d18d57d69c5df38c4f144d4b2e7415a3d4",
+      "report_sha256": "90937217f2e407af4f5d0812398538932f99c64f4255ab5fe485129c9d52e958",
       "artifact": "us_report",
       "report_file": "us_report.json",
       "draft_bytes": 6816,
@@ -4797,7 +4892,7 @@
       "opaque_rom_bytes": 7005616
     },
     "us-rev1": {
-      "report_sha256": "1f255767df4548a250afc6acc3da57d8b92d3483437491a656ded0ec4c5ee7bb",
+      "report_sha256": "9707f1df316df83851e7409978995ba918ff87402dedbc95ab18b2f780eac16f",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6896,
@@ -5014,7 +5109,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 66.71248025834626,
+      "exact_plus_draft_percent": 68.68540901880006,
       "data_match_state": "unmeasured",
       "data_coverage": {
         "state": "unmeasured",
@@ -5022,13 +5117,504 @@
         "verified_bytes": 0,
         "unmeasured_bytes": 254468,
         "rom_bytes": 8388608,
-        "evidence_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-        "proof_event": null,
-        "invalidations": 0,
+        "evidence_identity": "cbc3294e78e9de05d90649050478cbf2cf81a103e3e0ed29480e9b89a9201782",
+        "proof_event": [
+          "d0636f28050b465c9c44002031929866",
+          "e922b6c2bc174bb4b4e8e663481c73d6",
+          "ef53bb9ce522412493ddabc13bf600f1",
+          "6fc49789243a4ce5880ea5747fcf657c",
+          "5fe82b2fa64141418705a2013184b173",
+          "7cca23346fcb47c49afb23e01f6f500e",
+          "85ff96aedc114f419d013928e59c6f3f",
+          "9be2c3ebb8e34ad6be4d3f082fad30f4",
+          "043132745f0a4fafaebb98b33c6071cd",
+          "4e96bfea39d343e7952d32d48b0eb72a",
+          "a7db0ad03e2a40a0acc59f02f814972f",
+          "06cf8131a3114d3b95d9f0895e577ef4",
+          "286ce88f4fde475e8a8a3a252c5670d7",
+          "cbe1d36a062b467a8f97c5e024927c12",
+          "7a937d1a52e74da29fd4d6bcdc6b5cd3",
+          "5a524662b97b451f94f93ec363294b87",
+          "4326feb459704bd583ef73bbda9802c1",
+          "a3f45a674da84f2d9386901e648075e5",
+          "ab01524cc9004002af0d275727e2a277",
+          "207f0966b3f84e6cac9a14fef89a52d4",
+          "6cbf608c62624d27883f6eff6a8364fd",
+          "11d609800b7f47928ee455ee450e7bd5",
+          "68335fabcb754b0a995cb2428af3bbee",
+          "304020355d064dcda089dbe7227eccc1",
+          "c70201d3a60b4e2e961de34e6202300d",
+          "949d6ae96be7463e9bb41e57e761c5e1",
+          "99d6463bdae447a1ba3ebd4fc910c1cb",
+          "6a700fee14494004812fc4d7fb2eb7ff",
+          "2cae5a0bde3e4676a3a64b3f35110fbb",
+          "44e9dde73a5a4f9f92d769a8e71747a2",
+          "35ae74569b26497fbcd0f049048803cd",
+          "a4a7b01b142f42758e3a3a93809ccab9",
+          "3d26dbf5ca014d83ab1e3bba7e3d070a",
+          "f11d310cf395430187195fb307c3b75f",
+          "7c0a96d7678b4fc0b06e7568d1b38909",
+          "0a51d0c63679407cb578f8a576439908",
+          "140697eb9a3b432fa0e1b233cad7412b",
+          "1b8ef95bcac24852b96530735dc2fcc2",
+          "76418c74702740a4b283df835c315a8c",
+          "151a57fa884e4f45af0075e21077eb5f",
+          "e384d0ba98d24dcb855a131aa236e4e3",
+          "cfcc843a91e94b729fab4618cfb419f4",
+          "d4085fd3cefa4a68b8c870a9b86102c4",
+          "676c8680916c4be3a43675959172e2ec",
+          "7b4add3cecce4619a96e6c17c2f1766a",
+          "ba4ac9b4c96c404c9fb39850f73c3a4d",
+          "33c279e60fd642639e849ff80e3f343e",
+          "caa9b1e1da96422395548f28380050d6",
+          "52481c06b5c847039cf3b2a03801aa2a",
+          "5dff3ccd531b403396722bd700ffd255",
+          "f1026cc553bb4ef4a05a8242fd20f39f",
+          "3c1786c521594266a286c9ee765b8cf7",
+          "fec0f80af58145aabb3cadb7d13235eb",
+          "1762a91fd45147f38499c78e89133261",
+          "e8b9fd32f11d4630a6a9485e4690cc21",
+          "e06173abf88a4432ab4270fbdb3b7c34",
+          "8a747c18ae4b46d7b4314a5111e61511",
+          "b321b05d1f3246528d9f0ce51bb18bc9",
+          "010c06eeb92a41a1894d6ebf55b3049c",
+          "c1cb7e54ee774d7299c765b5155f1b64",
+          "e160806b02e54932b64331b123f90d9b",
+          "11af5d31dd354d29978edb310e74f0d5",
+          "bbd1d1e05c724f83932d11f57fc51d1d",
+          "2a2c4e5ab4b54474898e192a659e5e38",
+          "c85cb692e06f454dadb711edd68f659c",
+          "b2bb01630e4949849428d5d8061f1d4f",
+          "c81cceadca1a4c098948de2e01fc81c4",
+          "cb84071439d74f118d0e6e2fc2e3fbef",
+          "fba868b9e817409fa9537f1d6e06723e",
+          "24745f2cf96743e9868794aad35dcbcd",
+          "2804b63e7f65406d9bd8ce6a562d47d1",
+          "cbfb640866b940aaabe7731a3fe65046",
+          "bfabe08f887d438fa1aed7f40214b54d",
+          "7877946b45b44b5c96cd31cb6a891f3b",
+          "cb2bda0ab1b149f590b9200daca75de1",
+          "f37bd3ad433d4c61a81adfddb543b1f3",
+          "0553bb88ba7946c8960259978adce3fe",
+          "d71203be3c734df385da4db6929674af",
+          "df4cd80d711642dbb1c7c872d58c30e9",
+          "097b44d1b3bd437ea7dec464623d13aa",
+          "a4a7f10c84244717946c208cbce96073",
+          "4eb668d84df84754801455c54e3551f4",
+          "af82e99dfa6e4f5e8e92c4fd9321f9fe",
+          "6217ad05a07942e281752a86c31eef51",
+          "95d50dfd3e4c4d43bee4f3996fa7a178",
+          "f827332a10d84a199b2a6e92dc5e4a59",
+          "614a4581c9ee4a65b80a2575f8c2c589",
+          "96e9259ebab24aa3ba0a4a9ce5f9b200",
+          "aa2806427de848f282bac130537d776b",
+          "29b3526142f149adb77d9cc82763d878",
+          "42e446f07ade4f7ea733d56ca828c63e",
+          "04f251375efe4c8ca53e4de6465143c2",
+          "030bbf1cfb1f452f9dd6435f42dfdf76",
+          "868eea3dd3bc48caa75863eede82d7f7",
+          "e864956ef74e42ca866d3dc0b6d89749",
+          "acbbdfa8a0014fd1b5b2511b8ada3461",
+          "2a1295c5955c4129a51a1dfbce149118",
+          "42178a475b1340b5a146c0522ad9334b"
+        ],
+        "invalidations": 98,
         "extents": [],
         "causes": [
           {
-            "key": "data.proof.missing",
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.dependencies.changed",
+            "unmeasured_bytes": 254468
+          },
+          {
+            "key": "data.coverage.unmeasured",
             "unmeasured_bytes": 254468
           }
         ]
@@ -5036,7 +5622,7 @@
       "opaque_rom_bytes": 7002016
     },
     "eu": {
-      "report_sha256": "44bf03b705e8856c154e640cb0e27089193c287494d2b81839e092061a7eb71d",
+      "report_sha256": "81cb8ff5ff54984411b82fbc5218ac3e19ac31c99e860f868e83498f6602b34b",
       "artifact": "eu_report",
       "report_file": "eu_report.json",
       "draft_bytes": 6816,
@@ -5267,7 +5853,7 @@
       "opaque_rom_bytes": 7001104
     },
     "eu-x": {
-      "report_sha256": "0eab136b94759ede6956822fcb3bb7ee0a64bc38889a3e66187733987c610bf0",
+      "report_sha256": "33dda0c09e1cb6dbbf1ba89a64c4ebf54ff94b0be011dd576ebbd36bb52580ba",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
       "draft_bytes": 6896,
@@ -5506,7 +6092,7 @@
       "opaque_rom_bytes": 7070432
     },
     "de": {
-      "report_sha256": "d5c6ee0a83a05c9ccdd10f5ba1c2c5d4ad7bdf5b4a34adfe184c0236fc40e2c5",
+      "report_sha256": "83e9540036b409407d250c42b7a21bf32e0e720907938b3f93395e973dec78cf",
       "artifact": "de_report",
       "report_file": "de_report.json",
       "draft_bytes": 6812,
