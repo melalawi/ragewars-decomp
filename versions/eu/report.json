@@ -1,21 +1,21 @@
 {
   "measures": {
     "total_code": 1111996,
-    "matched_code": 676976,
-    "complete_code": 676976,
+    "matched_code": 677000,
+    "complete_code": 677000,
     "total_data": 275508,
     "matched_data": 0,
     "complete_data": 0,
     "total_functions": 4474,
-    "matched_functions": 3641,
+    "matched_functions": 3642,
     "total_units": 5303,
-    "complete_units": 2838,
-    "matched_code_percent": 60.879356,
-    "complete_code_percent": 60.879356,
-    "matched_functions_percent": 81.38132,
+    "complete_units": 2839,
+    "matched_code_percent": 60.881516,
+    "complete_code_percent": 60.881516,
+    "matched_functions_percent": 81.40366,
     "matched_data_percent": 0.0,
     "complete_data_percent": 0.0,
-    "fuzzy_match_percent": 61.287045
+    "fuzzy_match_percent": 61.289204
   },
   "units": [
     {
@@ -11130,14 +11130,21 @@
         "total_code": "24",
         "total_functions": 1,
         "total_units": 1,
-        "fuzzy_match_percent": 0.0
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "24",
+        "complete_code": "24",
+        "matched_code_percent": 100.0,
+        "complete_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
           "size": "24",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -11145,14 +11152,16 @@
           "name": "func_80212FDC_eu",
           "size": "24",
           "metadata": {},
-          "address": "2149658588"
+          "address": "2149658588",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
-          "asm"
-        ]
+          "c"
+        ],
+        "source_path": "src/func_80212FDC_eu.c"
       }
     },
     {
@@ -189105,16 +189114,16 @@
       "id": "c",
       "name": "Matched C",
       "measures": {
-        "total_code": 676976,
-        "matched_code": 676976,
-        "complete_code": 676976,
+        "total_code": 677000,
+        "matched_code": 677000,
+        "complete_code": 677000,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 3641,
-        "matched_functions": 3641,
-        "total_units": 3641,
-        "complete_units": 3641,
+        "total_functions": 3642,
+        "matched_functions": 3642,
+        "total_units": 3642,
+        "complete_units": 3642,
         "matched_code_percent": 100.0,
         "complete_code_percent": 100.0,
         "matched_functions_percent": 100.0,
@@ -189171,15 +189180,15 @@
       "id": "asm",
       "name": "Assembly",
       "measures": {
-        "total_code": 428124,
+        "total_code": 428100,
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 804,
+        "total_functions": 803,
         "matched_functions": 0,
-        "total_units": 804,
+        "total_units": 803,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
