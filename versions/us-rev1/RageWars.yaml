@@ -1566,7 +1566,7 @@ segments:
       - [0x77144, c, "func_802764D4_de"]
       - [0x77180, c, "func_80276510_de"]
       - [0x77218, asm, "func_80276608_eu_x"]
-      - [0x77220, asm, "func_802765B0_de"]
+      - [0x77220, c, "func_802765B0_de"]
       - [0x775D8, c, "func_80276968_de"]
       - [0x77914, asm, "func_80276D04_eu_x"]
       - [0x77920, asm, "func_80276CB0_de"]
