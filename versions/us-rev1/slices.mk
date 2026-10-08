@@ -4062,7 +4062,12 @@ us-rev1.S.000D34AE := 865454 86
 us-rev1.D.rw_pool_802800C0_D3504_us_rev1 := 0x800D2904:0xD3504:0x4
 us-rev1.S.000D3508 := 865544 96
 us-rev1.D.ragewars_resident_strings_D3568_us_rev1 := 0x800D2968:0xD3568:0xC
-us-rev1.S.000D3574 := 865652 516
+us-rev1.S.000D3574 := 865652 100
+us-rev1.D.ragewars_mode_lifecycle_handlers_D35D8_us_rev1 := 0x800D29D8:0xD35D8:0x24
+us-rev1.D.ragewars_mode_lifecycle_handlers_D35FC_us_rev1 := 0x800D29FC:0xD35FC:0x8
+us-rev1.S.000D3604 := 865796 4
+us-rev1.D.ragewars_mode_lifecycle_handlers_D3608_us_rev1 := 0x800D2A08:0xD3608:0xCC
+us-rev1.S.000D36D4 := 866004 164
 us-rev1.D.ragewars_resident_strings_D3778_us_rev1 := 0x800D2B78:0xD3778:0xC
 us-rev1.S.000D3784 := 866180 140
 us-rev1.D.rw_pool_802A18CC_D3810_us_rev1 := 0x800D2C10:0xD3810:0x8
@@ -9740,6 +9745,11 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D3508.bin \
   build/us-rev1/data/ragewars_resident_strings_D3568_us_rev1.bin \
   build/us-rev1/slices/000D3574.bin \
+  build/us-rev1/data/ragewars_mode_lifecycle_handlers_D35D8_us_rev1.bin \
+  build/us-rev1/data/ragewars_mode_lifecycle_handlers_D35FC_us_rev1.bin \
+  build/us-rev1/slices/000D3604.bin \
+  build/us-rev1/data/ragewars_mode_lifecycle_handlers_D3608_us_rev1.bin \
+  build/us-rev1/slices/000D36D4.bin \
   build/us-rev1/data/ragewars_resident_strings_D3778_us_rev1.bin \
   build/us-rev1/slices/000D3784.bin \
   build/us-rev1/data/rw_pool_802A18CC_D3810_us_rev1.bin \
