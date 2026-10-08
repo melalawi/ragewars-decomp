@@ -7,7 +7,7 @@
 
 
 
-void func_8024E79C_de(void *arg0, Triple t, void *arg4, s32 *arg5) {
+void func_8024E79C_de(void *arg0, Triple t, void *arg4, s32 *arg5, s32 arg6, s32 arg7) {
     char unused[0x150];
     *(Triple *)arg4 = t;
     *arg5 = ((func_80204468_S3 *)(arg0))->unk14;

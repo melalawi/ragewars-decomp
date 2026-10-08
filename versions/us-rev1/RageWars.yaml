@@ -413,7 +413,7 @@ segments:
       - [0x1B5A4, asm, "func_8021A9A4_de"]
       - [0x1BB6C, asm, "func_8021AF6C_de"]
       - [0x1BDE4, asm, "func_8021B1E4_de"]
-      - [0x1C068, asm, "func_8021B468_de"]
+      - [0x1C068, c, "func_8021B468_de"]
       - [0x1CBBC, asm, "func_8021BFC4_de"]
       - [0x1D040, asm, "func_8021C45C_de"]
       - [0x1D274, c, "func_8021C698_de"]
