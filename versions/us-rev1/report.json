@@ -4,17 +4,17 @@
     "matched_code": 770708,
     "complete_code": 770708,
     "total_data": 254468,
-    "matched_data": 0,
-    "complete_data": 0,
+    "matched_data": 748,
+    "complete_data": 748,
     "total_functions": 4547,
     "matched_functions": 3833,
-    "total_units": 5771,
-    "complete_units": 2972,
+    "total_units": 5773,
+    "complete_units": 2973,
     "matched_code_percent": 68.07629,
     "complete_code_percent": 68.07629,
     "matched_functions_percent": 84.29734,
-    "matched_data_percent": 0.0,
-    "complete_data_percent": 0.0,
+    "matched_data_percent": 0.2939466,
+    "complete_data_percent": 0.2939466,
     "fuzzy_match_percent": 68.47673
   },
   "units": [
@@ -176949,7 +176949,7 @@
       }
     },
     {
-      "name": "rodata:rodata/func_802A8F28_de/800CB310@CBF30",
+      "name": "rodata:src/rw_pool_cells_802A8F28_CBF30_us_rev1.c@CBF30",
       "measures": {
         "total_data": "4",
         "matched_data": "0",
@@ -186780,27 +186780,28 @@
       "name": "data:src/ragewars_item_label_slots_us_rev1.c@D7E0C",
       "measures": {
         "total_data": "748",
-        "matched_data": "0",
-        "complete_data": "0",
-        "matched_data_percent": 0.0,
-        "complete_data_percent": 0.0,
+        "matched_data": "748",
+        "complete_data": "748",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
         "total_units": 1,
-        "complete_units": 0
+        "complete_units": 1
       },
       "sections": [
         {
           "name": "data",
           "size": "748",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
           "data"
-        ]
+        ],
+        "source_path": "src/ragewars_item_label_slots_us_rev1.c"
       }
     },
     {
@@ -195670,7 +195671,7 @@
     {
       "name": "rodata:rodata/func_8043C4F4_us_rev1/800E2248@E2E48",
       "measures": {
-        "total_data": "108",
+        "total_data": "44",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -195681,7 +195682,61 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "108",
+          "size": "44",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_pool_cells_8043C4F4_E2E74_us_rev1.c@E2E74",
+      "measures": {
+        "total_data": "20",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "20",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:rodata/func_8043C4F4_us_rev1/800E2248@E2E88",
+      "measures": {
+        "total_data": "44",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "44",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -203514,17 +203569,17 @@
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 254468,
-        "matched_data": 0,
-        "complete_data": 0,
+        "matched_data": 748,
+        "complete_data": 748,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 2085,
-        "complete_units": 0,
+        "total_units": 2087,
+        "complete_units": 1,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "matched_data_percent": 0.0,
-        "complete_data_percent": 0.0,
+        "matched_data_percent": 0.2939466,
+        "complete_data_percent": 0.2939466,
         "fuzzy_match_percent": 0.0
       }
     },
