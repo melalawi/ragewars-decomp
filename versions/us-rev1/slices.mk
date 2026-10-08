@@ -3551,7 +3551,10 @@ us-rev1.S.000D388C := 866444 468
 us-rev1.D.ragewars_particle_state_depth_us_rev1 := 0x800D2E60:0xD3A60:0x60
 us-rev1.D.ragewars_particle_state_decal_us_rev1 := 0x800D2EC0:0xD3AC0:0x58
 us-rev1.D.ragewars_particle_state_primitive_us_rev1 := 0x800D2F18:0xD3B18:0x60
-us-rev1.S.000D3B78 := 867192 600
+us-rev1.S.000D3B78 := 867192 28
+us-rev1.D.ragewars_font_character_map_primary_us_rev1 := 0x800D2F94:0xD3B94:0xEC
+us-rev1.D.ragewars_font_character_map_secondary_us_rev1 := 0x800D3080:0xD3C80:0xEC
+us-rev1.S.000D3D6C := 867692 100
 us-rev1.D.ragewars_pickup_powerups_us_rev1 := 0x800D31D0:0xD3DD0:0x60
 us-rev1.D.ragewars_pickup_weapons_us_rev1 := 0x800D3230:0xD3E30:0x78
 us-rev1.D.ragewars_pickup_health_us_rev1 := 0x800D32A8:0xD3EA8:0xC0
@@ -8611,6 +8614,9 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_particle_state_decal_us_rev1.bin \
   build/us-rev1/data/ragewars_particle_state_primitive_us_rev1.bin \
   build/us-rev1/slices/000D3B78.bin \
+  build/us-rev1/data/ragewars_font_character_map_primary_us_rev1.bin \
+  build/us-rev1/data/ragewars_font_character_map_secondary_us_rev1.bin \
+  build/us-rev1/slices/000D3D6C.bin \
   build/us-rev1/data/ragewars_pickup_powerups_us_rev1.bin \
   build/us-rev1/data/ragewars_pickup_weapons_us_rev1.bin \
   build/us-rev1/data/ragewars_pickup_health_us_rev1.bin \
