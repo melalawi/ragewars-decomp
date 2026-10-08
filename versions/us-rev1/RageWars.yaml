@@ -324,7 +324,7 @@ segments:
       - [0x11C20, c, "func_80211020_de"]
       - [0x11CC4, c, "func_802110C4_de"]
       - [0x11D1C, data, "func_8021113C_eu_padding_11D1C"]
-      - [0x011D20, asm, "func_8021113C_eu"]
+      - [0x011D20, c, "func_8021113C_eu"]
       - [0x12070, c, "func_80211490_eu"]
       - [0x1267C, c, "func_80211A9C_eu"]
       - [0x12C88, c, "func_802120A8_eu"]

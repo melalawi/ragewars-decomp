@@ -12,7 +12,7 @@ extern f32 D_800C20C0_de[];
 extern s32 func_8020CCE8_de(EntryList8020CCE8 *, s32, s32 *, s32 *);
 extern void *func_8020C9B0_de(void *, s32);
 extern void *func_8020C994_de(void *, s32);
-extern unsigned char func_8020D1CC_de(void *, s32, s32);
+#include "shared/route_relation_grid.h"
 extern f32 func_802726BC_de(f32 *, f32 *);
 
 /* Choose the farthest reachable neighbor linked by kinds 1, 2 or 7
@@ -48,7 +48,7 @@ void func_80212670_de(void *object)
         link = func_8020C9B0_de(table, links[i]);
         if ((link->type >= 1 && link->type <= 2) || link->type == 7) {
             point = func_8020C994_de(table, neighbors[i]);
-            if (func_8020D1CC_de(table, actor_node, neighbors[i])) {
+            if ((u8)func_8020D1CC_de(table, actor_node, neighbors[i])) {
                 distance = func_802726BC_de(&position.x, point);
                 if (farthest < distance) {
                     farthest = distance;
