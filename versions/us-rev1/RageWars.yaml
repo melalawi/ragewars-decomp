@@ -3700,7 +3700,7 @@ segments:
       - [0xCBF0C, data, "rodata/unresolved/800CB30C"]
       - [0xCBF10, rodata, "rodata/func_802A8F28_de/800CB310"]
       - [0xCBF2C, rodata, "src/rw_pool_cells_802A8F28_CBF28_us_rev1.c"]
-      - [0xCBF30, rodata, "rodata/func_802A8F28_de/800CB310"]
+      - [0xCBF30, rodata, "src/rw_pool_cells_802A8F28_CBF30_us_rev1.c"]
       - [0xCBF34, rodata, "src/rw_tail_802A8F28_CBF34_us_rev1.c"]
       - [0xCBF48, rodata, "src/rw_pool_802A9734_CBF48_us_rev1.c"]
       - [0xCBF4C, rodata, "src/rw_pool_802A9EE8_CBF4C_us_rev1.c"]
