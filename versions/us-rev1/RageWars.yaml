@@ -5711,6 +5711,8 @@ segments:
       - [0x1AB260, asm, "func_8043D080_de"]
       - [0x1AB2B4, c, "func_8043D0D4_de"]
       - [0x1AB3BC, asm, "func_8043D3BC_us_rev1"]
+      - [0x1AB458, c, "func_8043D278_de"]
+      - [0x1AB4E0, asm, "func_8043D4E0_us_rev1"]
       - [0x1AB54C, c, "func_8043D36C_de"]
       - [0x1ABCBC, asm, "func_8043DADC_de"]
       - [0x1ABCE4, c, "func_8043DB04_de"]
