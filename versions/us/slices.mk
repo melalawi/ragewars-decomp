@@ -2269,15 +2269,43 @@ us.U.func_802C020C_de := 0x802C013C:0xC0D3C:0x10
 us.U.func_802C021C_de := 0x802C014C:0xC0D4C:0x10
 us.S.000C0D5C := 789852 5636
 us.U.__cmpdi2 := 0x802C1760:0xC2360:0x48
-us.S.000C23A8 := 795560 25976
+us.S.000C23A8 := 795560 13296
+us.D.rw_pool_cells_8027DD48_CA958_us_rev1 := 0x800C4B98:0xC5798:0x40
+us.S.000C57D8 := 808920 208
+us.D.rw_pool_cells_8027ED6C_CAA68_us_rev1 := 0x800C4CA8:0xC58A8:0x40
+us.S.000C58E8 := 809192 12344
 us.D.ragewars_u64_quotient_bitwidth_us_rev1 := 0x800C7D20:0xC8920:0x100
-us.S.000C8A20 := 821792 4336
+us.D.ragewars_u64_remainder_bitwidth_us_rev1 := 0x800C7E20:0xC8A20:0x100
+us.S.000C8B20 := 822048 2032
+us.D.ragewars_actor_mode_dispatch_us_rev1 := 0x800C8710:0xC9310:0xA0
+us.S.000C93B0 := 824240 1888
 us.D.ragewars_actor_primary_mask_events_us_rev1 := 0x800C8F10:0xC9B10:0x100
-us.S.000C9C10 := 826384 12640
+us.S.000C9C10 := 826384 1116
+us.D.ragewars_movement_tuning_CF39C_us_rev1 := 0x800C946C:0xCA06C:0x20
+us.S.000CA08C := 827532 4
+us.D.ragewars_movement_tuning_CF3C0_us_rev1 := 0x800C9490:0xCA090:0x20
+us.S.000CA0B0 := 827568 76
+us.D.ragewars_movement_tuning_CF42C_us_rev1 := 0x800C94FC:0xCA0FC:0x20
+us.S.000CA11C := 827676 4
+us.D.ragewars_movement_tuning_CF450_us_rev1 := 0x800C9520:0xCA120:0x20
+us.S.000CA140 := 827712 9920
+us.D.ragewars_rdp_startup_us_rev1 := 0x800CBC00:0xCC800:0x60
+us.S.000CC860 := 837728 712
+us.D.ragewars_particle_draw_depth_us_rev1 := 0x800CBF28:0xCCB28:0x88
+us.D.ragewars_particle_draw_decal_us_rev1 := 0x800CBFB0:0xCCBB0:0x88
+us.S.000CCC38 := 838712 312
 us.D.ragewars_particle_intensity_texture_us_rev1 := 0x800CC170:0xCCD70:0x100
-us.S.000CCE70 := 839280 70928
+us.S.000CCE70 := 839280 6288
+us.D.ragewars_particle_state_depth_us_rev1 := 0x800CDB00:0xCE700:0x60
+us.S.000CE760 := 845664 88
+us.D.ragewars_particle_state_primitive_us_rev1 := 0x800CDBB8:0xCE7B8:0x60
+us.S.000CE818 := 845848 20488
+us.D.ragewars_tlb_snapshot_us_rev1 := 0x800D2C20:0xD3820:0xF8
+us.S.000D3918 := 866584 43624
 us.D.ragewars_pixel_formats_us_rev1 := 0x800DD780:0xDE380:0x750
-us.S.000DEAD0 := 912080 546096
+us.S.000DEAD0 := 912080 2064
+us.D.ragewars_character_preview_positions_00_us_rev1 := 0x800DE6E0:0xDF2E0:0x2C
+us.S.000DF30C := 914188 543988
 us.U.func_80400000_de := 0x80400000:0x164000:0x67C
 us.S.0016467C := 1459836 2004
 us.U.func_80400E50_de := 0x80400E50:0x164E50:0x3C4
@@ -5583,14 +5611,42 @@ us.PIECES := \
   build/us/slices/000C0D5C.bin \
   build/us/units/__cmpdi2.bin \
   build/us/slices/000C23A8.bin \
+  build/us/data/rw_pool_cells_8027DD48_CA958_us_rev1.bin \
+  build/us/slices/000C57D8.bin \
+  build/us/data/rw_pool_cells_8027ED6C_CAA68_us_rev1.bin \
+  build/us/slices/000C58E8.bin \
   build/us/data/ragewars_u64_quotient_bitwidth_us_rev1.bin \
-  build/us/slices/000C8A20.bin \
+  build/us/data/ragewars_u64_remainder_bitwidth_us_rev1.bin \
+  build/us/slices/000C8B20.bin \
+  build/us/data/ragewars_actor_mode_dispatch_us_rev1.bin \
+  build/us/slices/000C93B0.bin \
   build/us/data/ragewars_actor_primary_mask_events_us_rev1.bin \
   build/us/slices/000C9C10.bin \
+  build/us/data/ragewars_movement_tuning_CF39C_us_rev1.bin \
+  build/us/slices/000CA08C.bin \
+  build/us/data/ragewars_movement_tuning_CF3C0_us_rev1.bin \
+  build/us/slices/000CA0B0.bin \
+  build/us/data/ragewars_movement_tuning_CF42C_us_rev1.bin \
+  build/us/slices/000CA11C.bin \
+  build/us/data/ragewars_movement_tuning_CF450_us_rev1.bin \
+  build/us/slices/000CA140.bin \
+  build/us/data/ragewars_rdp_startup_us_rev1.bin \
+  build/us/slices/000CC860.bin \
+  build/us/data/ragewars_particle_draw_depth_us_rev1.bin \
+  build/us/data/ragewars_particle_draw_decal_us_rev1.bin \
+  build/us/slices/000CCC38.bin \
   build/us/data/ragewars_particle_intensity_texture_us_rev1.bin \
   build/us/slices/000CCE70.bin \
+  build/us/data/ragewars_particle_state_depth_us_rev1.bin \
+  build/us/slices/000CE760.bin \
+  build/us/data/ragewars_particle_state_primitive_us_rev1.bin \
+  build/us/slices/000CE818.bin \
+  build/us/data/ragewars_tlb_snapshot_us_rev1.bin \
+  build/us/slices/000D3918.bin \
   build/us/data/ragewars_pixel_formats_us_rev1.bin \
   build/us/slices/000DEAD0.bin \
+  build/us/data/ragewars_character_preview_positions_00_us_rev1.bin \
+  build/us/slices/000DF30C.bin \
   build/us/units/func_80400000_de.bin \
   build/us/slices/0016467C.bin \
   build/us/units/func_80400E50_de.bin \

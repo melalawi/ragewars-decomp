@@ -4,17 +4,17 @@
     "matched_code": 669004,
     "complete_code": 669004,
     "total_data": 320748,
-    "matched_data": 2640,
-    "complete_data": 2640,
+    "matched_data": 4164,
+    "complete_data": 4164,
     "total_functions": 4233,
     "matched_functions": 3597,
-    "total_units": 5254,
-    "complete_units": 2818,
+    "total_units": 5276,
+    "complete_units": 2833,
     "matched_code_percent": 62.980255,
     "complete_code_percent": 62.980255,
     "matched_functions_percent": 84.9752,
-    "matched_data_percent": 0.82307607,
-    "complete_data_percent": 0.82307607,
+    "matched_data_percent": 1.2982154,
+    "complete_data_percent": 1.2982154,
     "fuzzy_match_percent": 63.40704
   },
   "units": [
@@ -160941,30 +160941,31 @@
       }
     },
     {
-      "name": "rodata:rodata/func_8027DD48_de/800C4B98@C5798",
+      "name": "data:src/rw_pool_cells_8027DD48_CA958_us_rev1.c@C5798",
       "measures": {
         "total_data": "64",
-        "matched_data": "0",
-        "complete_data": "0",
-        "matched_data_percent": 0.0,
-        "complete_data_percent": 0.0,
+        "matched_data": "64",
+        "complete_data": "64",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
         "total_units": 1,
-        "complete_units": 0
+        "complete_units": 1
       },
       "sections": [
         {
-          "name": "rodata",
+          "name": "data",
           "size": "64",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
           "data"
-        ]
+        ],
+        "source_path": "src/rw_pool_cells_8027DD48_CA958_us_rev1.c"
       }
     },
     {
@@ -161184,30 +161185,31 @@
       }
     },
     {
-      "name": "rodata:rodata/func_8027ED6C_de/800C4CA8@C58A8",
+      "name": "data:src/rw_pool_cells_8027ED6C_CAA68_us_rev1.c@C58A8",
       "measures": {
         "total_data": "64",
-        "matched_data": "0",
-        "complete_data": "0",
-        "matched_data_percent": 0.0,
-        "complete_data_percent": 0.0,
+        "matched_data": "64",
+        "complete_data": "64",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
         "total_units": 1,
-        "complete_units": 0
+        "complete_units": 1
       },
       "sections": [
         {
-          "name": "rodata",
+          "name": "data",
           "size": "64",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
           "data"
-        ]
+        ],
+        "source_path": "src/rw_pool_cells_8027ED6C_CAA68_us_rev1.c"
       }
     },
     {
@@ -172714,9 +172716,37 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800C7C18_0C8A20@C8A20",
+      "name": "data:src/ragewars_u64_remainder_bitwidth_us_rev1.c@C8A20",
       "measures": {
-        "total_data": "544",
+        "total_data": "256",
+        "matched_data": "256",
+        "complete_data": "256",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "256",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_u64_remainder_bitwidth_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800C7C18_0C8A20_0C8B20@C8B20",
+      "measures": {
+        "total_data": "288",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -172727,7 +172757,7 @@
       "sections": [
         {
           "name": "data",
-          "size": "544",
+          "size": "288",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -172932,7 +172962,7 @@
     {
       "name": "data:rodata/unresolved/800C870C@C930C",
       "measures": {
-        "total_data": "2052",
+        "total_data": "4",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -172943,7 +172973,62 @@
       "sections": [
         {
           "name": "data",
-          "size": "2052",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_actor_mode_dispatch_us_rev1.c@C9310",
+      "measures": {
+        "total_data": "160",
+        "matched_data": "160",
+        "complete_data": "160",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "160",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_actor_mode_dispatch_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800C870C_0C93B0@C93B0",
+      "measures": {
+        "total_data": "1888",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "1888",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -173284,7 +173369,7 @@
     {
       "name": "data:rodata/unresolved/800C942C@CA02C",
       "measures": {
-        "total_data": "2648",
+        "total_data": "64",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -173295,7 +173380,227 @@
       "sections": [
         {
           "name": "data",
-          "size": "2648",
+          "size": "64",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_movement_tuning_CF39C_us_rev1.c@CA06C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_movement_tuning_CF39C_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800C942C_0CA08C@CA08C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_movement_tuning_CF3C0_us_rev1.c@CA090",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_movement_tuning_CF3C0_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800C942C_0CA08C_0CA0B0@CA0B0",
+      "measures": {
+        "total_data": "76",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "76",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_movement_tuning_CF42C_us_rev1.c@CA0FC",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_movement_tuning_CF42C_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800C942C_0CA08C_0CA0B0_0CA11C@CA11C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_movement_tuning_CF450_us_rev1.c@CA120",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_movement_tuning_CF450_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800C942C_0CA08C_0CA0B0_0CA11C_0CA140@CA140",
+      "measures": {
+        "total_data": "2372",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "2372",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -174526,7 +174831,7 @@
     {
       "name": "data:rodata/unresolved/800CBBC0@CC7C0",
       "measures": {
-        "total_data": "1456",
+        "total_data": "64",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -174537,7 +174842,145 @@
       "sections": [
         {
           "name": "data",
-          "size": "1456",
+          "size": "64",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_rdp_startup_us_rev1.c@CC800",
+      "measures": {
+        "total_data": "96",
+        "matched_data": "96",
+        "complete_data": "96",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "96",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_rdp_startup_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800CBBC0_0CC860@CC860",
+      "measures": {
+        "total_data": "712",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "712",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_particle_draw_depth_us_rev1.c@CCB28",
+      "measures": {
+        "total_data": "136",
+        "matched_data": "136",
+        "complete_data": "136",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "136",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_particle_draw_depth_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_particle_draw_decal_us_rev1.c@CCBB0",
+      "measures": {
+        "total_data": "136",
+        "matched_data": "136",
+        "complete_data": "136",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "136",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_particle_draw_decal_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800CBBC0_0CCBB0_0CCC38@CCC38",
+      "measures": {
+        "total_data": "312",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "312",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -175362,9 +175805,37 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800CDB00@CE700",
+      "name": "data:src/ragewars_particle_state_depth_us_rev1.c@CE700",
       "measures": {
-        "total_data": "288",
+        "total_data": "96",
+        "matched_data": "96",
+        "complete_data": "96",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "96",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_particle_state_depth_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800CDB00_0CE760@CE760",
+      "measures": {
+        "total_data": "88",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -175375,7 +175846,62 @@
       "sections": [
         {
           "name": "data",
-          "size": "288",
+          "size": "88",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_particle_state_primitive_us_rev1.c@CE7B8",
+      "measures": {
+        "total_data": "96",
+        "matched_data": "96",
+        "complete_data": "96",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "96",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_particle_state_primitive_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800CDB00_0CE760_0CE818@CE818",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -175551,9 +176077,37 @@
       }
     },
     {
-      "name": "data:rodata/writable/800D2C20@D3820",
+      "name": "data:src/ragewars_tlb_snapshot_us_rev1.c@D3820",
       "measures": {
-        "total_data": "256",
+        "total_data": "248",
+        "matched_data": "248",
+        "complete_data": "248",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "248",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_tlb_snapshot_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/writable/800D2C20_0D3918@D3918",
+      "measures": {
+        "total_data": "8",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -175564,7 +176118,7 @@
       "sections": [
         {
           "name": "data",
-          "size": "256",
+          "size": "8",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -182574,7 +183128,7 @@
     {
       "name": "data:rodata/unresolved/800DE6DF@DF2DF",
       "measures": {
-        "total_data": "2129",
+        "total_data": "1",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -182585,7 +183139,62 @@
       "sections": [
         {
           "name": "data",
-          "size": "2129",
+          "size": "1",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_00_us_rev1.c@DF2E0",
+      "measures": {
+        "total_data": "44",
+        "matched_data": "44",
+        "complete_data": "44",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "44",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_00_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800DE6DF_0DF30C@DF30C",
+      "measures": {
+        "total_data": "2084",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "2084",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -186638,17 +187247,17 @@
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 320748,
-        "matched_data": 2640,
-        "complete_data": 2640,
+        "matched_data": 4164,
+        "complete_data": 4164,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 1804,
-        "complete_units": 4,
+        "total_units": 1826,
+        "complete_units": 19,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "matched_data_percent": 0.82307607,
-        "complete_data_percent": 0.82307607,
+        "matched_data_percent": 1.2982154,
+        "complete_data_percent": 1.2982154,
         "fuzzy_match_percent": 0.0
       }
     },
