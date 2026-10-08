@@ -4529,10 +4529,14 @@ segments:
       - [0xE4194, data, "rodata/unresolved/800E3594"]
       - [0xE45C0, data, "rodata/writable/800E39C0"]
       - [0xE45C4, data, "rodata/unresolved/800E39C4"]
-      - [0xE466C, rodata, "rodata/func_804279B8_de/800E3A6C"]
-      - [0xE466F, data, "rodata/unresolved/800E3A6F"]
-      - [0xE467C, rodata, "rodata/func_804279B8_de/800E3A7C"]
-      - [0xE467F, data, "rodata/unresolved/800E3A7F"]
+
+      - [0xE466C, rodata, "src/rw_viewport_scalar_E466C_us_rev1.c"]
+
+      - [0xE4670, data, "rodata/unresolved/800E3A6F_remaining_E4670"]
+
+      - [0xE467C, rodata, "src/rw_viewport_scalar_E467C_us_rev1.c"]
+
+      - [0xE4680, data, "rodata/unresolved/800E3A7F_remaining_E4680"]
       - [0xE4ED0, data, "rodata/writable/800E42D0"]
       - [0xE4ED6, data, "rodata/unresolved/800E42D6"]
       - [0xE5000, data, "rodata/writable/800E4400"]

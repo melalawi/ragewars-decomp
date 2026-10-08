@@ -3831,7 +3831,11 @@ us-rev1.S.000E3FFC := 933884 4
 us-rev1.D.ragewars_event_handlers_E4000_us_rev1 := 0x800E3400:0xE4000:0x54
 us-rev1.S.000E4054 := 933972 12
 us-rev1.D.ragewars_event_handlers_E4060_us_rev1 := 0x800E3460:0xE4060:0x3C
-us-rev1.S.000E409C := 934044 4600
+us-rev1.S.000E409C := 934044 1488
+us-rev1.D.rw_viewport_scalar_E466C_us_rev1 := 0x800E3A6C:0xE466C:0x4
+us-rev1.S.000E4670 := 935536 12
+us-rev1.D.rw_viewport_scalar_E467C_us_rev1 := 0x800E3A7C:0xE467C:0x4
+us-rev1.S.000E4680 := 935552 3092
 us-rev1.D.ragewars_arena_menu_slots_us_rev1 := 0x800E4694:0xE5294:0x3F0
 us-rev1.D.ragewars_arena_compatibility_us_rev1 := 0x800E4A84:0xE5684:0x300
 us-rev1.S.000E5984 := 940420 3908
@@ -8820,6 +8824,10 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E4054.bin \
   build/us-rev1/data/ragewars_event_handlers_E4060_us_rev1.bin \
   build/us-rev1/slices/000E409C.bin \
+  build/us-rev1/data/rw_viewport_scalar_E466C_us_rev1.bin \
+  build/us-rev1/slices/000E4670.bin \
+  build/us-rev1/data/rw_viewport_scalar_E467C_us_rev1.bin \
+  build/us-rev1/slices/000E4680.bin \
   build/us-rev1/data/ragewars_arena_menu_slots_us_rev1.bin \
   build/us-rev1/data/ragewars_arena_compatibility_us_rev1.bin \
   build/us-rev1/slices/000E5984.bin \
