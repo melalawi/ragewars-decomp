@@ -10748,3 +10748,11 @@ ragewars_menu_strings_D5428_us_rev1 = 0x800d4828; // Actual source-owned label g
 // unbake linker alias: __udivdi3 = 0x802C5E90;
 
 ragewars_menu_strings_D5FC0_us_rev1 = 0x800d53c0; // Actual source-owned pak note labels; linked native ELF
+
+func_8044BFD0 = 0x8044BFD0; // type:func
+
+func_8044C050 = 0x8044C050; // type:func
+
+func_8044EBB0 = 0x8044EBB0; // type:func
+
+func_8044ED24 = 0x8044ED24; // type:func
