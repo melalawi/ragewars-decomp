@@ -4025,7 +4025,23 @@ segments:
       - [0xDBC6C, data, "src/huffman_nine_zero_runs.c"]
       - [0xDCBE4, data, "src/huffman_delta_nine_zero_runs_nodes.c"]
       - [0xDD430, data, "src/huffman_signed_small_nodes.c"]
-      - [0xDD834, data, "rodata/unresolved/800DCC34"]
+  - name: rsp_alignment
+    type: resource
+    start: 0xDD834
+    vram: 0x800DCC34
+    execution_vram: 0x800DCC34
+    resource_section: .rsp.alignment
+    resource_asflags: "-EB"
+    subsegments:
+      - [0xDD834, resource, "resources/rsp/alignment.s"]
+  - name: span_DD83C
+    type: code
+    start: 0xDD83C
+    vram: 0x800DCC3C
+    align: 1
+    subalign: 1
+    subsegments:
+      - [0xDD83C, data, "rodata/unresolved/800DCC3C"]
   - name: rsp_boot
     type: resource
     start: 0xDD840
@@ -4035,14 +4051,75 @@ segments:
     resource_asflags: "-EB -mips1"
     subsegments:
       - [0xDD840, resource, "resources/rsp/boot.s"]
-  - name: span_DD910
-    type: code
+  - name: rsp_graphics_f3dex2_code
+    type: resource
     start: 0xDD910
     vram: 0x800DCD10
+    execution_vram: 0x1080
+    resource_assembler: armips
+    resource_output: code
+    resource_cppflags: "-P -Iresources/rsp/graphics/PR -Iresources/rsp/graphics/rsp -Iresources/rsp/graphics -D_LANGUAGE_ASSEMBLY -DF3DEX_GBI_2 -DCFG_NoN=1 -DCFG_OLD_TRI_WRITE=1 -DBUG_CLIPPING_FAIL_WHEN_SUM_ZERO=1 -DBUG_FAIL_IF_CARRY_SET_AT_INIT=1"
+    resource_asflags: "-strequ ID_STR 'RSP Gfx ucode F3DEX.NoN   fifo 2.05  Yoshitaka Yasumoto 1998 Nintendo.'"
+    subsegments:
+      - [0xDD910, resource, "resources/rsp/graphics/f3dex2.s"]
+  - name: rsp_graphics_l3dex2_code
+    type: resource
+    start: 0xDECA0
+    vram: 0x800DE0A0
+    execution_vram: 0x1080
+    resource_assembler: armips
+    resource_output: code
+    resource_cppflags: "-P -Iresources/rsp/graphics/PR -Iresources/rsp/graphics/rsp -Iresources/rsp/graphics -D_LANGUAGE_ASSEMBLY -DF3DEX_GBI_2 -DCFG_NoN=0 -DCFG_OLD_TRI_WRITE=1 -DBUG_CLIPPING_FAIL_WHEN_SUM_ZERO=1 -DBUG_FAIL_IF_CARRY_SET_AT_INIT=1"
+    resource_asflags: "-strequ ID_STR 'RSP Gfx ucode L3DEX       fifo 2.05  Yoshitaka Yasumoto 1998 Nintendo.'"
+    subsegments:
+      - [0xDECA0, resource, "resources/rsp/graphics/l3dex2.s"]
+  - name: rsp_audio_code
+    type: resource
+    start: 0xDFE30
+    vram: 0x800DF230
+    execution_vram: 0x4001080
+    resource_assembler: armips
+    resource_output: code
+    subsegments:
+      - [0xDFE30, resource, "resources/rsp/audio.s"]
+  - name: rsp_graphics_f3dex2_data
+    type: resource
+    start: 0xE0C50
+    vram: 0x800E0050
+    execution_vram: 0x0
+    resource_assembler: armips
+    resource_output: data
+    resource_cppflags: "-P -Iresources/rsp/graphics/PR -Iresources/rsp/graphics/rsp -Iresources/rsp/graphics -D_LANGUAGE_ASSEMBLY -DF3DEX_GBI_2 -DCFG_NoN=1 -DCFG_OLD_TRI_WRITE=1 -DBUG_CLIPPING_FAIL_WHEN_SUM_ZERO=1 -DBUG_FAIL_IF_CARRY_SET_AT_INIT=1"
+    resource_asflags: "-strequ ID_STR 'RSP Gfx ucode F3DEX.NoN   fifo 2.05  Yoshitaka Yasumoto 1998 Nintendo.'"
+    subsegments:
+      - [0xE0C50, resource, "resources/rsp/graphics/f3dex2.s"]
+  - name: rsp_graphics_l3dex2_data
+    type: resource
+    start: 0xE1070
+    vram: 0x800E0470
+    execution_vram: 0x0
+    resource_assembler: armips
+    resource_output: data
+    resource_cppflags: "-P -Iresources/rsp/graphics/PR -Iresources/rsp/graphics/rsp -Iresources/rsp/graphics -D_LANGUAGE_ASSEMBLY -DF3DEX_GBI_2 -DCFG_NoN=0 -DCFG_OLD_TRI_WRITE=1 -DBUG_CLIPPING_FAIL_WHEN_SUM_ZERO=1 -DBUG_FAIL_IF_CARRY_SET_AT_INIT=1"
+    resource_asflags: "-strequ ID_STR 'RSP Gfx ucode L3DEX       fifo 2.05  Yoshitaka Yasumoto 1998 Nintendo.'"
+    subsegments:
+      - [0xE1070, resource, "resources/rsp/graphics/l3dex2.s"]
+  - name: rsp_audio_data
+    type: resource
+    start: 0xE1460
+    vram: 0x800E0860
+    execution_vram: 0x0
+    resource_assembler: armips
+    resource_output: data
+    subsegments:
+      - [0xE1460, resource, "resources/rsp/audio.s"]
+  - name: span_E1720
+    type: code
+    start: 0xE1720
+    vram: 0x800E0B20
     align: 1
     subalign: 1
     subsegments:
-      - [0xDD910, data, "rodata/unresolved/800DCD10"]
       - [0xE1720, rodata, "rodata/func_80400000_de/800E0B20"]
       - [0xE172C, rodata, "rodata/shared/800E0B2C"]
       - [0xE173D, data, "rodata/unresolved/800E0B3D"]

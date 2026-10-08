@@ -25,6 +25,7 @@ AS := mips-linux-gnu-as
 LD := mips-linux-gnu-ld
 N64LINK := n64link
 OBJCOPY := mips-linux-gnu-objcopy
+ARMIPS := armips
 INCLUDES := -Iinclude
 CPPFLAGS := -P -undef -nostdinc -D_LANGUAGE_C -DF3DEX_GBI_2 -D__GNUC__=2
 PREPROCESS_FLAGS = $(INCLUDES) -D__UNBAKE_STDARG_GCC=1 $(VERSION_DEFINES) $(CONSUMER)
