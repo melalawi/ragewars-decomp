@@ -3556,7 +3556,9 @@ us-rev1.S.000D388C := 866444 468
 us-rev1.D.ragewars_particle_state_depth_us_rev1 := 0x800D2E60:0xD3A60:0x60
 us-rev1.D.ragewars_particle_state_decal_us_rev1 := 0x800D2EC0:0xD3AC0:0x58
 us-rev1.D.ragewars_particle_state_primitive_us_rev1 := 0x800D2F18:0xD3B18:0x60
-us-rev1.S.000D3B78 := 867192 28
+us-rev1.D.ragewars_menu_sexysteve_token_us_rev1 := 0x800D2F78:0xD3B78:0x14
+us-rev1.S.000D3B8C := 867212 4
+us-rev1.D.ragewars_font_resource_selector_us_rev1 := 0x800D2F90:0xD3B90:0x4
 us-rev1.D.ragewars_font_character_map_primary_us_rev1 := 0x800D2F94:0xD3B94:0xEC
 us-rev1.D.ragewars_font_character_map_secondary_us_rev1 := 0x800D3080:0xD3C80:0xEC
 us-rev1.D.ragewars_menu_motion_scripts_us_rev1 := 0x800D316C:0xD3D6C:0x5C
@@ -8635,7 +8637,9 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_particle_state_depth_us_rev1.bin \
   build/us-rev1/data/ragewars_particle_state_decal_us_rev1.bin \
   build/us-rev1/data/ragewars_particle_state_primitive_us_rev1.bin \
-  build/us-rev1/slices/000D3B78.bin \
+  build/us-rev1/data/ragewars_menu_sexysteve_token_us_rev1.bin \
+  build/us-rev1/slices/000D3B8C.bin \
+  build/us-rev1/data/ragewars_font_resource_selector_us_rev1.bin \
   build/us-rev1/data/ragewars_font_character_map_primary_us_rev1.bin \
   build/us-rev1/data/ragewars_font_character_map_secondary_us_rev1.bin \
   build/us-rev1/data/ragewars_menu_motion_scripts_us_rev1.bin \
