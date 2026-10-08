@@ -3619,7 +3619,383 @@ us-rev1.S.000CF470 := 849008 2
 us-rev1.D.ragewars_movement_sound_CF450_us_rev1 := 0x800CE872:0xCF472:0x2
 us-rev1.D.ragewars_view_tuning_CF474_us_rev1 := 0x800CE874:0xCF474:0x18
 us-rev1.D.ragewars_view_tuning_CF48C_us_rev1 := 0x800CE88C:0xCF48C:0x18
-us-rev1.S.000CF4A4 := 849060 2320
+us-rev1.S.000CF4A4 := 849060 36
+us-rev1.D.rw_player_state_normal_callbacks_00_us_rev1 := 0x800CE8C8:0xCF4C8:0x8
+us-rev1.S.000CF4D0 := 849104 4
+us-rev1.D.rw_player_state_normal_timing_00_us_rev1 := 0x800CE8D4:0xCF4D4:0x8
+us-rev1.S.000CF4DC := 849116 4
+us-rev1.D.rw_player_state_normal_callbacks_01_us_rev1 := 0x800CE8E0:0xCF4E0:0x8
+us-rev1.S.000CF4E8 := 849128 4
+us-rev1.D.rw_player_state_normal_timing_01_us_rev1 := 0x800CE8EC:0xCF4EC:0x8
+us-rev1.S.000CF4F4 := 849140 4
+us-rev1.D.rw_player_state_normal_callbacks_02_us_rev1 := 0x800CE8F8:0xCF4F8:0x8
+us-rev1.S.000CF500 := 849152 4
+us-rev1.D.rw_player_state_normal_timing_02_us_rev1 := 0x800CE904:0xCF504:0x8
+us-rev1.S.000CF50C := 849164 4
+us-rev1.D.rw_player_state_normal_callbacks_03_us_rev1 := 0x800CE910:0xCF510:0x8
+us-rev1.S.000CF518 := 849176 4
+us-rev1.D.rw_player_state_normal_timing_03_us_rev1 := 0x800CE91C:0xCF51C:0x8
+us-rev1.S.000CF524 := 849188 4
+us-rev1.D.rw_player_state_normal_callbacks_04_us_rev1 := 0x800CE928:0xCF528:0x8
+us-rev1.S.000CF530 := 849200 4
+us-rev1.D.rw_player_state_normal_timing_04_us_rev1 := 0x800CE934:0xCF534:0x8
+us-rev1.S.000CF53C := 849212 4
+us-rev1.D.rw_player_state_normal_callbacks_05_us_rev1 := 0x800CE940:0xCF540:0x8
+us-rev1.S.000CF548 := 849224 4
+us-rev1.D.rw_player_state_normal_timing_05_us_rev1 := 0x800CE94C:0xCF54C:0x8
+us-rev1.S.000CF554 := 849236 4
+us-rev1.D.rw_player_state_normal_callbacks_06_us_rev1 := 0x800CE958:0xCF558:0x8
+us-rev1.S.000CF560 := 849248 4
+us-rev1.D.rw_player_state_normal_timing_06_us_rev1 := 0x800CE964:0xCF564:0x8
+us-rev1.S.000CF56C := 849260 4
+us-rev1.D.rw_player_state_normal_callbacks_07_us_rev1 := 0x800CE970:0xCF570:0x8
+us-rev1.S.000CF578 := 849272 4
+us-rev1.D.rw_player_state_normal_timing_07_us_rev1 := 0x800CE97C:0xCF57C:0x8
+us-rev1.S.000CF584 := 849284 4
+us-rev1.D.rw_player_state_normal_callbacks_08_us_rev1 := 0x800CE988:0xCF588:0x8
+us-rev1.S.000CF590 := 849296 4
+us-rev1.D.rw_player_state_normal_timing_08_us_rev1 := 0x800CE994:0xCF594:0x8
+us-rev1.S.000CF59C := 849308 4
+us-rev1.D.rw_player_state_normal_callbacks_09_us_rev1 := 0x800CE9A0:0xCF5A0:0x8
+us-rev1.S.000CF5A8 := 849320 4
+us-rev1.D.rw_player_state_normal_timing_09_us_rev1 := 0x800CE9AC:0xCF5AC:0x8
+us-rev1.S.000CF5B4 := 849332 4
+us-rev1.D.rw_player_state_normal_callbacks_10_us_rev1 := 0x800CE9B8:0xCF5B8:0x8
+us-rev1.S.000CF5C0 := 849344 4
+us-rev1.D.rw_player_state_normal_timing_10_us_rev1 := 0x800CE9C4:0xCF5C4:0x8
+us-rev1.S.000CF5CC := 849356 4
+us-rev1.D.rw_player_state_normal_callbacks_11_us_rev1 := 0x800CE9D0:0xCF5D0:0x8
+us-rev1.S.000CF5D8 := 849368 4
+us-rev1.D.rw_player_state_normal_timing_11_us_rev1 := 0x800CE9DC:0xCF5DC:0x8
+us-rev1.S.000CF5E4 := 849380 4
+us-rev1.D.rw_player_state_normal_callbacks_12_us_rev1 := 0x800CE9E8:0xCF5E8:0x8
+us-rev1.S.000CF5F0 := 849392 4
+us-rev1.D.rw_player_state_normal_timing_12_us_rev1 := 0x800CE9F4:0xCF5F4:0x8
+us-rev1.S.000CF5FC := 849404 4
+us-rev1.D.rw_player_state_normal_callbacks_13_us_rev1 := 0x800CEA00:0xCF600:0x8
+us-rev1.S.000CF608 := 849416 4
+us-rev1.D.rw_player_state_normal_timing_13_us_rev1 := 0x800CEA0C:0xCF60C:0x8
+us-rev1.S.000CF614 := 849428 4
+us-rev1.D.rw_player_state_normal_callbacks_14_us_rev1 := 0x800CEA18:0xCF618:0x8
+us-rev1.S.000CF620 := 849440 4
+us-rev1.D.rw_player_state_normal_timing_14_us_rev1 := 0x800CEA24:0xCF624:0x8
+us-rev1.S.000CF62C := 849452 4
+us-rev1.D.rw_player_state_normal_callbacks_15_us_rev1 := 0x800CEA30:0xCF630:0x8
+us-rev1.S.000CF638 := 849464 4
+us-rev1.D.rw_player_state_normal_timing_15_us_rev1 := 0x800CEA3C:0xCF63C:0x8
+us-rev1.S.000CF644 := 849476 4
+us-rev1.D.rw_player_state_normal_callbacks_16_us_rev1 := 0x800CEA48:0xCF648:0x8
+us-rev1.S.000CF650 := 849488 4
+us-rev1.D.rw_player_state_normal_timing_16_us_rev1 := 0x800CEA54:0xCF654:0x8
+us-rev1.S.000CF65C := 849500 4
+us-rev1.D.rw_player_state_normal_callbacks_17_us_rev1 := 0x800CEA60:0xCF660:0x8
+us-rev1.S.000CF668 := 849512 4
+us-rev1.D.rw_player_state_normal_timing_17_us_rev1 := 0x800CEA6C:0xCF66C:0x8
+us-rev1.S.000CF674 := 849524 4
+us-rev1.D.rw_player_state_normal_callbacks_18_us_rev1 := 0x800CEA78:0xCF678:0x8
+us-rev1.S.000CF680 := 849536 4
+us-rev1.D.rw_player_state_normal_timing_18_us_rev1 := 0x800CEA84:0xCF684:0x8
+us-rev1.S.000CF68C := 849548 4
+us-rev1.D.rw_player_state_normal_callbacks_19_us_rev1 := 0x800CEA90:0xCF690:0x8
+us-rev1.S.000CF698 := 849560 4
+us-rev1.D.rw_player_state_normal_timing_19_us_rev1 := 0x800CEA9C:0xCF69C:0x8
+us-rev1.S.000CF6A4 := 849572 4
+us-rev1.D.rw_player_state_normal_callbacks_20_us_rev1 := 0x800CEAA8:0xCF6A8:0x8
+us-rev1.S.000CF6B0 := 849584 4
+us-rev1.D.rw_player_state_normal_timing_20_us_rev1 := 0x800CEAB4:0xCF6B4:0x8
+us-rev1.S.000CF6BC := 849596 4
+us-rev1.D.rw_player_state_normal_callbacks_21_us_rev1 := 0x800CEAC0:0xCF6C0:0x8
+us-rev1.S.000CF6C8 := 849608 4
+us-rev1.D.rw_player_state_normal_timing_21_us_rev1 := 0x800CEACC:0xCF6CC:0x8
+us-rev1.S.000CF6D4 := 849620 4
+us-rev1.D.rw_player_state_normal_callbacks_22_us_rev1 := 0x800CEAD8:0xCF6D8:0x8
+us-rev1.S.000CF6E0 := 849632 4
+us-rev1.D.rw_player_state_normal_timing_22_us_rev1 := 0x800CEAE4:0xCF6E4:0x8
+us-rev1.S.000CF6EC := 849644 4
+us-rev1.D.rw_player_state_normal_callbacks_23_us_rev1 := 0x800CEAF0:0xCF6F0:0x8
+us-rev1.S.000CF6F8 := 849656 4
+us-rev1.D.rw_player_state_normal_timing_23_us_rev1 := 0x800CEAFC:0xCF6FC:0x8
+us-rev1.S.000CF704 := 849668 4
+us-rev1.D.rw_player_state_normal_callbacks_24_us_rev1 := 0x800CEB08:0xCF708:0x8
+us-rev1.S.000CF710 := 849680 4
+us-rev1.D.rw_player_state_normal_timing_24_us_rev1 := 0x800CEB14:0xCF714:0x8
+us-rev1.S.000CF71C := 849692 4
+us-rev1.D.rw_player_state_normal_callbacks_25_us_rev1 := 0x800CEB20:0xCF720:0x8
+us-rev1.S.000CF728 := 849704 4
+us-rev1.D.rw_player_state_normal_timing_25_us_rev1 := 0x800CEB2C:0xCF72C:0x8
+us-rev1.S.000CF734 := 849716 4
+us-rev1.D.rw_player_state_normal_callbacks_26_us_rev1 := 0x800CEB38:0xCF738:0x8
+us-rev1.S.000CF740 := 849728 4
+us-rev1.D.rw_player_state_normal_timing_26_us_rev1 := 0x800CEB44:0xCF744:0x8
+us-rev1.S.000CF74C := 849740 4
+us-rev1.D.rw_player_state_normal_callbacks_27_us_rev1 := 0x800CEB50:0xCF750:0x8
+us-rev1.S.000CF758 := 849752 4
+us-rev1.D.rw_player_state_normal_timing_27_us_rev1 := 0x800CEB5C:0xCF75C:0x8
+us-rev1.S.000CF764 := 849764 4
+us-rev1.D.rw_player_state_normal_callbacks_28_us_rev1 := 0x800CEB68:0xCF768:0x8
+us-rev1.S.000CF770 := 849776 4
+us-rev1.D.rw_player_state_normal_timing_28_us_rev1 := 0x800CEB74:0xCF774:0x8
+us-rev1.S.000CF77C := 849788 4
+us-rev1.D.rw_player_state_normal_callbacks_29_us_rev1 := 0x800CEB80:0xCF780:0x8
+us-rev1.S.000CF788 := 849800 4
+us-rev1.D.rw_player_state_normal_timing_29_us_rev1 := 0x800CEB8C:0xCF78C:0x8
+us-rev1.S.000CF794 := 849812 4
+us-rev1.D.rw_player_state_normal_callbacks_30_us_rev1 := 0x800CEB98:0xCF798:0x8
+us-rev1.S.000CF7A0 := 849824 4
+us-rev1.D.rw_player_state_normal_timing_30_us_rev1 := 0x800CEBA4:0xCF7A4:0x8
+us-rev1.S.000CF7AC := 849836 4
+us-rev1.D.rw_player_state_normal_callbacks_31_us_rev1 := 0x800CEBB0:0xCF7B0:0x8
+us-rev1.S.000CF7B8 := 849848 4
+us-rev1.D.rw_player_state_normal_timing_31_us_rev1 := 0x800CEBBC:0xCF7BC:0x8
+us-rev1.S.000CF7C4 := 849860 4
+us-rev1.D.rw_player_state_normal_callbacks_32_us_rev1 := 0x800CEBC8:0xCF7C8:0x8
+us-rev1.S.000CF7D0 := 849872 4
+us-rev1.D.rw_player_state_normal_timing_32_us_rev1 := 0x800CEBD4:0xCF7D4:0x8
+us-rev1.S.000CF7DC := 849884 4
+us-rev1.D.rw_player_state_normal_callbacks_33_us_rev1 := 0x800CEBE0:0xCF7E0:0x8
+us-rev1.S.000CF7E8 := 849896 4
+us-rev1.D.rw_player_state_normal_timing_33_us_rev1 := 0x800CEBEC:0xCF7EC:0x8
+us-rev1.S.000CF7F4 := 849908 4
+us-rev1.D.rw_player_state_normal_callbacks_34_us_rev1 := 0x800CEBF8:0xCF7F8:0x8
+us-rev1.S.000CF800 := 849920 4
+us-rev1.D.rw_player_state_normal_timing_34_us_rev1 := 0x800CEC04:0xCF804:0x8
+us-rev1.S.000CF80C := 849932 4
+us-rev1.D.rw_player_state_normal_callbacks_35_us_rev1 := 0x800CEC10:0xCF810:0x8
+us-rev1.S.000CF818 := 849944 4
+us-rev1.D.rw_player_state_normal_timing_35_us_rev1 := 0x800CEC1C:0xCF81C:0x8
+us-rev1.S.000CF824 := 849956 4
+us-rev1.D.rw_player_state_normal_callbacks_36_us_rev1 := 0x800CEC28:0xCF828:0x8
+us-rev1.S.000CF830 := 849968 4
+us-rev1.D.rw_player_state_normal_timing_36_us_rev1 := 0x800CEC34:0xCF834:0x8
+us-rev1.S.000CF83C := 849980 4
+us-rev1.D.rw_player_state_normal_callbacks_37_us_rev1 := 0x800CEC40:0xCF840:0x8
+us-rev1.S.000CF848 := 849992 4
+us-rev1.D.rw_player_state_normal_timing_37_us_rev1 := 0x800CEC4C:0xCF84C:0x8
+us-rev1.S.000CF854 := 850004 4
+us-rev1.D.rw_player_state_normal_callbacks_38_us_rev1 := 0x800CEC58:0xCF858:0x8
+us-rev1.S.000CF860 := 850016 4
+us-rev1.D.rw_player_state_normal_timing_38_us_rev1 := 0x800CEC64:0xCF864:0x8
+us-rev1.S.000CF86C := 850028 4
+us-rev1.D.rw_player_state_normal_callbacks_39_us_rev1 := 0x800CEC70:0xCF870:0x8
+us-rev1.S.000CF878 := 850040 4
+us-rev1.D.rw_player_state_normal_timing_39_us_rev1 := 0x800CEC7C:0xCF87C:0x8
+us-rev1.S.000CF884 := 850052 4
+us-rev1.D.rw_player_state_normal_callbacks_40_us_rev1 := 0x800CEC88:0xCF888:0x8
+us-rev1.S.000CF890 := 850064 4
+us-rev1.D.rw_player_state_normal_timing_40_us_rev1 := 0x800CEC94:0xCF894:0x8
+us-rev1.S.000CF89C := 850076 4
+us-rev1.D.rw_player_state_normal_callbacks_41_us_rev1 := 0x800CECA0:0xCF8A0:0x8
+us-rev1.S.000CF8A8 := 850088 4
+us-rev1.D.rw_player_state_normal_timing_41_us_rev1 := 0x800CECAC:0xCF8AC:0x8
+us-rev1.S.000CF8B4 := 850100 4
+us-rev1.D.rw_player_state_normal_callbacks_42_us_rev1 := 0x800CECB8:0xCF8B8:0x8
+us-rev1.S.000CF8C0 := 850112 4
+us-rev1.D.rw_player_state_normal_timing_42_us_rev1 := 0x800CECC4:0xCF8C4:0x8
+us-rev1.S.000CF8CC := 850124 4
+us-rev1.D.rw_player_state_normal_callbacks_43_us_rev1 := 0x800CECD0:0xCF8D0:0x8
+us-rev1.S.000CF8D8 := 850136 4
+us-rev1.D.rw_player_state_normal_timing_43_us_rev1 := 0x800CECDC:0xCF8DC:0x8
+us-rev1.S.000CF8E4 := 850148 4
+us-rev1.D.rw_player_state_normal_callbacks_44_us_rev1 := 0x800CECE8:0xCF8E8:0x8
+us-rev1.S.000CF8F0 := 850160 4
+us-rev1.D.rw_player_state_normal_timing_44_us_rev1 := 0x800CECF4:0xCF8F4:0x8
+us-rev1.S.000CF8FC := 850172 4
+us-rev1.D.rw_player_state_normal_callbacks_45_us_rev1 := 0x800CED00:0xCF900:0x8
+us-rev1.S.000CF908 := 850184 4
+us-rev1.D.rw_player_state_normal_timing_45_us_rev1 := 0x800CED0C:0xCF90C:0x8
+us-rev1.S.000CF914 := 850196 4
+us-rev1.D.rw_player_state_normal_callbacks_46_us_rev1 := 0x800CED18:0xCF918:0x8
+us-rev1.S.000CF920 := 850208 4
+us-rev1.D.rw_player_state_normal_timing_46_us_rev1 := 0x800CED24:0xCF924:0x8
+us-rev1.S.000CF92C := 850220 4
+us-rev1.D.rw_player_state_special_callbacks_00_us_rev1 := 0x800CED30:0xCF930:0x8
+us-rev1.S.000CF938 := 850232 4
+us-rev1.D.rw_player_state_special_timing_00_us_rev1 := 0x800CED3C:0xCF93C:0x8
+us-rev1.S.000CF944 := 850244 4
+us-rev1.D.rw_player_state_special_callbacks_01_us_rev1 := 0x800CED48:0xCF948:0x8
+us-rev1.S.000CF950 := 850256 4
+us-rev1.D.rw_player_state_special_timing_01_us_rev1 := 0x800CED54:0xCF954:0x8
+us-rev1.S.000CF95C := 850268 4
+us-rev1.D.rw_player_state_special_callbacks_02_us_rev1 := 0x800CED60:0xCF960:0x8
+us-rev1.S.000CF968 := 850280 4
+us-rev1.D.rw_player_state_special_timing_02_us_rev1 := 0x800CED6C:0xCF96C:0x8
+us-rev1.S.000CF974 := 850292 4
+us-rev1.D.rw_player_state_special_callbacks_03_us_rev1 := 0x800CED78:0xCF978:0x8
+us-rev1.S.000CF980 := 850304 4
+us-rev1.D.rw_player_state_special_timing_03_us_rev1 := 0x800CED84:0xCF984:0x8
+us-rev1.S.000CF98C := 850316 4
+us-rev1.D.rw_player_state_special_callbacks_04_us_rev1 := 0x800CED90:0xCF990:0x8
+us-rev1.S.000CF998 := 850328 4
+us-rev1.D.rw_player_state_special_timing_04_us_rev1 := 0x800CED9C:0xCF99C:0x8
+us-rev1.S.000CF9A4 := 850340 4
+us-rev1.D.rw_player_state_special_callbacks_05_us_rev1 := 0x800CEDA8:0xCF9A8:0x8
+us-rev1.S.000CF9B0 := 850352 4
+us-rev1.D.rw_player_state_special_timing_05_us_rev1 := 0x800CEDB4:0xCF9B4:0x8
+us-rev1.S.000CF9BC := 850364 4
+us-rev1.D.rw_player_state_special_callbacks_06_us_rev1 := 0x800CEDC0:0xCF9C0:0x8
+us-rev1.S.000CF9C8 := 850376 4
+us-rev1.D.rw_player_state_special_timing_06_us_rev1 := 0x800CEDCC:0xCF9CC:0x8
+us-rev1.S.000CF9D4 := 850388 4
+us-rev1.D.rw_player_state_special_callbacks_07_us_rev1 := 0x800CEDD8:0xCF9D8:0x8
+us-rev1.S.000CF9E0 := 850400 4
+us-rev1.D.rw_player_state_special_timing_07_us_rev1 := 0x800CEDE4:0xCF9E4:0x8
+us-rev1.S.000CF9EC := 850412 4
+us-rev1.D.rw_player_state_special_callbacks_08_us_rev1 := 0x800CEDF0:0xCF9F0:0x8
+us-rev1.S.000CF9F8 := 850424 4
+us-rev1.D.rw_player_state_special_timing_08_us_rev1 := 0x800CEDFC:0xCF9FC:0x8
+us-rev1.S.000CFA04 := 850436 4
+us-rev1.D.rw_player_state_special_callbacks_09_us_rev1 := 0x800CEE08:0xCFA08:0x8
+us-rev1.S.000CFA10 := 850448 4
+us-rev1.D.rw_player_state_special_timing_09_us_rev1 := 0x800CEE14:0xCFA14:0x8
+us-rev1.S.000CFA1C := 850460 4
+us-rev1.D.rw_player_state_special_callbacks_10_us_rev1 := 0x800CEE20:0xCFA20:0x8
+us-rev1.S.000CFA28 := 850472 4
+us-rev1.D.rw_player_state_special_timing_10_us_rev1 := 0x800CEE2C:0xCFA2C:0x8
+us-rev1.S.000CFA34 := 850484 4
+us-rev1.D.rw_player_state_special_callbacks_11_us_rev1 := 0x800CEE38:0xCFA38:0x8
+us-rev1.S.000CFA40 := 850496 4
+us-rev1.D.rw_player_state_special_timing_11_us_rev1 := 0x800CEE44:0xCFA44:0x8
+us-rev1.S.000CFA4C := 850508 4
+us-rev1.D.rw_player_state_special_callbacks_12_us_rev1 := 0x800CEE50:0xCFA50:0x8
+us-rev1.S.000CFA58 := 850520 4
+us-rev1.D.rw_player_state_special_timing_12_us_rev1 := 0x800CEE5C:0xCFA5C:0x8
+us-rev1.S.000CFA64 := 850532 4
+us-rev1.D.rw_player_state_special_callbacks_13_us_rev1 := 0x800CEE68:0xCFA68:0x8
+us-rev1.S.000CFA70 := 850544 4
+us-rev1.D.rw_player_state_special_timing_13_us_rev1 := 0x800CEE74:0xCFA74:0x8
+us-rev1.S.000CFA7C := 850556 4
+us-rev1.D.rw_player_state_special_callbacks_14_us_rev1 := 0x800CEE80:0xCFA80:0x8
+us-rev1.S.000CFA88 := 850568 4
+us-rev1.D.rw_player_state_special_timing_14_us_rev1 := 0x800CEE8C:0xCFA8C:0x8
+us-rev1.S.000CFA94 := 850580 4
+us-rev1.D.rw_player_state_special_callbacks_15_us_rev1 := 0x800CEE98:0xCFA98:0x8
+us-rev1.S.000CFAA0 := 850592 4
+us-rev1.D.rw_player_state_special_timing_15_us_rev1 := 0x800CEEA4:0xCFAA4:0x8
+us-rev1.S.000CFAAC := 850604 4
+us-rev1.D.rw_player_state_special_callbacks_16_us_rev1 := 0x800CEEB0:0xCFAB0:0x8
+us-rev1.S.000CFAB8 := 850616 4
+us-rev1.D.rw_player_state_special_timing_16_us_rev1 := 0x800CEEBC:0xCFABC:0x8
+us-rev1.S.000CFAC4 := 850628 4
+us-rev1.D.rw_player_state_special_callbacks_17_us_rev1 := 0x800CEEC8:0xCFAC8:0x8
+us-rev1.S.000CFAD0 := 850640 4
+us-rev1.D.rw_player_state_special_timing_17_us_rev1 := 0x800CEED4:0xCFAD4:0x8
+us-rev1.S.000CFADC := 850652 4
+us-rev1.D.rw_player_state_special_callbacks_18_us_rev1 := 0x800CEEE0:0xCFAE0:0x8
+us-rev1.S.000CFAE8 := 850664 4
+us-rev1.D.rw_player_state_special_timing_18_us_rev1 := 0x800CEEEC:0xCFAEC:0x8
+us-rev1.S.000CFAF4 := 850676 4
+us-rev1.D.rw_player_state_special_callbacks_19_us_rev1 := 0x800CEEF8:0xCFAF8:0x8
+us-rev1.S.000CFB00 := 850688 4
+us-rev1.D.rw_player_state_special_timing_19_us_rev1 := 0x800CEF04:0xCFB04:0x8
+us-rev1.S.000CFB0C := 850700 4
+us-rev1.D.rw_player_state_special_callbacks_20_us_rev1 := 0x800CEF10:0xCFB10:0x8
+us-rev1.S.000CFB18 := 850712 4
+us-rev1.D.rw_player_state_special_timing_20_us_rev1 := 0x800CEF1C:0xCFB1C:0x8
+us-rev1.S.000CFB24 := 850724 4
+us-rev1.D.rw_player_state_special_callbacks_21_us_rev1 := 0x800CEF28:0xCFB28:0x8
+us-rev1.S.000CFB30 := 850736 4
+us-rev1.D.rw_player_state_special_timing_21_us_rev1 := 0x800CEF34:0xCFB34:0x8
+us-rev1.S.000CFB3C := 850748 4
+us-rev1.D.rw_player_state_special_callbacks_22_us_rev1 := 0x800CEF40:0xCFB40:0x8
+us-rev1.S.000CFB48 := 850760 4
+us-rev1.D.rw_player_state_special_timing_22_us_rev1 := 0x800CEF4C:0xCFB4C:0x8
+us-rev1.S.000CFB54 := 850772 4
+us-rev1.D.rw_player_state_special_callbacks_23_us_rev1 := 0x800CEF58:0xCFB58:0x8
+us-rev1.S.000CFB60 := 850784 4
+us-rev1.D.rw_player_state_special_timing_23_us_rev1 := 0x800CEF64:0xCFB64:0x8
+us-rev1.S.000CFB6C := 850796 4
+us-rev1.D.rw_player_state_special_callbacks_24_us_rev1 := 0x800CEF70:0xCFB70:0x8
+us-rev1.S.000CFB78 := 850808 4
+us-rev1.D.rw_player_state_special_timing_24_us_rev1 := 0x800CEF7C:0xCFB7C:0x8
+us-rev1.S.000CFB84 := 850820 4
+us-rev1.D.rw_player_state_special_callbacks_25_us_rev1 := 0x800CEF88:0xCFB88:0x8
+us-rev1.S.000CFB90 := 850832 4
+us-rev1.D.rw_player_state_special_timing_25_us_rev1 := 0x800CEF94:0xCFB94:0x8
+us-rev1.S.000CFB9C := 850844 4
+us-rev1.D.rw_player_state_special_callbacks_26_us_rev1 := 0x800CEFA0:0xCFBA0:0x8
+us-rev1.S.000CFBA8 := 850856 4
+us-rev1.D.rw_player_state_special_timing_26_us_rev1 := 0x800CEFAC:0xCFBAC:0x8
+us-rev1.S.000CFBB4 := 850868 4
+us-rev1.D.rw_player_state_special_callbacks_27_us_rev1 := 0x800CEFB8:0xCFBB8:0x8
+us-rev1.S.000CFBC0 := 850880 4
+us-rev1.D.rw_player_state_special_timing_27_us_rev1 := 0x800CEFC4:0xCFBC4:0x8
+us-rev1.S.000CFBCC := 850892 4
+us-rev1.D.rw_player_state_special_callbacks_28_us_rev1 := 0x800CEFD0:0xCFBD0:0x8
+us-rev1.S.000CFBD8 := 850904 4
+us-rev1.D.rw_player_state_special_timing_28_us_rev1 := 0x800CEFDC:0xCFBDC:0x8
+us-rev1.S.000CFBE4 := 850916 4
+us-rev1.D.rw_player_state_special_callbacks_29_us_rev1 := 0x800CEFE8:0xCFBE8:0x8
+us-rev1.S.000CFBF0 := 850928 4
+us-rev1.D.rw_player_state_special_timing_29_us_rev1 := 0x800CEFF4:0xCFBF4:0x8
+us-rev1.S.000CFBFC := 850940 4
+us-rev1.D.rw_player_state_special_callbacks_30_us_rev1 := 0x800CF000:0xCFC00:0x8
+us-rev1.S.000CFC08 := 850952 4
+us-rev1.D.rw_player_state_special_timing_30_us_rev1 := 0x800CF00C:0xCFC0C:0x8
+us-rev1.S.000CFC14 := 850964 4
+us-rev1.D.rw_player_state_special_callbacks_31_us_rev1 := 0x800CF018:0xCFC18:0x8
+us-rev1.S.000CFC20 := 850976 4
+us-rev1.D.rw_player_state_special_timing_31_us_rev1 := 0x800CF024:0xCFC24:0x8
+us-rev1.S.000CFC2C := 850988 4
+us-rev1.D.rw_player_state_special_callbacks_32_us_rev1 := 0x800CF030:0xCFC30:0x8
+us-rev1.S.000CFC38 := 851000 4
+us-rev1.D.rw_player_state_special_timing_32_us_rev1 := 0x800CF03C:0xCFC3C:0x8
+us-rev1.S.000CFC44 := 851012 4
+us-rev1.D.rw_player_state_special_callbacks_33_us_rev1 := 0x800CF048:0xCFC48:0x8
+us-rev1.S.000CFC50 := 851024 4
+us-rev1.D.rw_player_state_special_timing_33_us_rev1 := 0x800CF054:0xCFC54:0x8
+us-rev1.S.000CFC5C := 851036 4
+us-rev1.D.rw_player_state_special_callbacks_34_us_rev1 := 0x800CF060:0xCFC60:0x8
+us-rev1.S.000CFC68 := 851048 4
+us-rev1.D.rw_player_state_special_timing_34_us_rev1 := 0x800CF06C:0xCFC6C:0x8
+us-rev1.S.000CFC74 := 851060 4
+us-rev1.D.rw_player_state_special_callbacks_35_us_rev1 := 0x800CF078:0xCFC78:0x8
+us-rev1.S.000CFC80 := 851072 4
+us-rev1.D.rw_player_state_special_timing_35_us_rev1 := 0x800CF084:0xCFC84:0x8
+us-rev1.S.000CFC8C := 851084 4
+us-rev1.D.rw_player_state_special_callbacks_36_us_rev1 := 0x800CF090:0xCFC90:0x8
+us-rev1.S.000CFC98 := 851096 4
+us-rev1.D.rw_player_state_special_timing_36_us_rev1 := 0x800CF09C:0xCFC9C:0x8
+us-rev1.S.000CFCA4 := 851108 4
+us-rev1.D.rw_player_state_special_callbacks_37_us_rev1 := 0x800CF0A8:0xCFCA8:0x8
+us-rev1.S.000CFCB0 := 851120 4
+us-rev1.D.rw_player_state_special_timing_37_us_rev1 := 0x800CF0B4:0xCFCB4:0x8
+us-rev1.S.000CFCBC := 851132 4
+us-rev1.D.rw_player_state_special_callbacks_38_us_rev1 := 0x800CF0C0:0xCFCC0:0x8
+us-rev1.S.000CFCC8 := 851144 4
+us-rev1.D.rw_player_state_special_timing_38_us_rev1 := 0x800CF0CC:0xCFCCC:0x8
+us-rev1.S.000CFCD4 := 851156 4
+us-rev1.D.rw_player_state_special_callbacks_39_us_rev1 := 0x800CF0D8:0xCFCD8:0x8
+us-rev1.S.000CFCE0 := 851168 4
+us-rev1.D.rw_player_state_special_timing_39_us_rev1 := 0x800CF0E4:0xCFCE4:0x8
+us-rev1.S.000CFCEC := 851180 4
+us-rev1.D.rw_player_state_special_callbacks_40_us_rev1 := 0x800CF0F0:0xCFCF0:0x8
+us-rev1.S.000CFCF8 := 851192 4
+us-rev1.D.rw_player_state_special_timing_40_us_rev1 := 0x800CF0FC:0xCFCFC:0x8
+us-rev1.S.000CFD04 := 851204 4
+us-rev1.D.rw_player_state_special_callbacks_41_us_rev1 := 0x800CF108:0xCFD08:0x8
+us-rev1.S.000CFD10 := 851216 4
+us-rev1.D.rw_player_state_special_timing_41_us_rev1 := 0x800CF114:0xCFD14:0x8
+us-rev1.S.000CFD1C := 851228 4
+us-rev1.D.rw_player_state_special_callbacks_42_us_rev1 := 0x800CF120:0xCFD20:0x8
+us-rev1.S.000CFD28 := 851240 4
+us-rev1.D.rw_player_state_special_timing_42_us_rev1 := 0x800CF12C:0xCFD2C:0x8
+us-rev1.S.000CFD34 := 851252 4
+us-rev1.D.rw_player_state_special_callbacks_43_us_rev1 := 0x800CF138:0xCFD38:0x8
+us-rev1.S.000CFD40 := 851264 4
+us-rev1.D.rw_player_state_special_timing_43_us_rev1 := 0x800CF144:0xCFD44:0x8
+us-rev1.S.000CFD4C := 851276 4
+us-rev1.D.rw_player_state_special_callbacks_44_us_rev1 := 0x800CF150:0xCFD50:0x8
+us-rev1.S.000CFD58 := 851288 4
+us-rev1.D.rw_player_state_special_timing_44_us_rev1 := 0x800CF15C:0xCFD5C:0x8
+us-rev1.S.000CFD64 := 851300 4
+us-rev1.D.rw_player_state_special_callbacks_45_us_rev1 := 0x800CF168:0xCFD68:0x8
+us-rev1.S.000CFD70 := 851312 4
+us-rev1.D.rw_player_state_special_timing_45_us_rev1 := 0x800CF174:0xCFD74:0x8
+us-rev1.S.000CFD7C := 851324 4
+us-rev1.D.rw_player_state_special_callbacks_46_us_rev1 := 0x800CF180:0xCFD80:0x8
+us-rev1.S.000CFD88 := 851336 4
+us-rev1.D.rw_player_state_special_timing_46_us_rev1 := 0x800CF18C:0xCFD8C:0x8
+us-rev1.S.000CFD94 := 851348 32
 us-rev1.D.rw_text_8021D408_CFDB4_us_rev1 := 0x800CF1B4:0xCFDB4:0x4
 us-rev1.D.rw_pool_8021EEFC_CFDB8_us_rev1 := 0x800CF1B8:0xCFDB8:0x4
 us-rev1.S.000CFDBC := 851388 12
@@ -9448,6 +9824,382 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_view_tuning_CF474_us_rev1.bin \
   build/us-rev1/data/ragewars_view_tuning_CF48C_us_rev1.bin \
   build/us-rev1/slices/000CF4A4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_00_us_rev1.bin \
+  build/us-rev1/slices/000CF4D0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_00_us_rev1.bin \
+  build/us-rev1/slices/000CF4DC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_01_us_rev1.bin \
+  build/us-rev1/slices/000CF4E8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_01_us_rev1.bin \
+  build/us-rev1/slices/000CF4F4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_02_us_rev1.bin \
+  build/us-rev1/slices/000CF500.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_02_us_rev1.bin \
+  build/us-rev1/slices/000CF50C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_03_us_rev1.bin \
+  build/us-rev1/slices/000CF518.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_03_us_rev1.bin \
+  build/us-rev1/slices/000CF524.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_04_us_rev1.bin \
+  build/us-rev1/slices/000CF530.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_04_us_rev1.bin \
+  build/us-rev1/slices/000CF53C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_05_us_rev1.bin \
+  build/us-rev1/slices/000CF548.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_05_us_rev1.bin \
+  build/us-rev1/slices/000CF554.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_06_us_rev1.bin \
+  build/us-rev1/slices/000CF560.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_06_us_rev1.bin \
+  build/us-rev1/slices/000CF56C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_07_us_rev1.bin \
+  build/us-rev1/slices/000CF578.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_07_us_rev1.bin \
+  build/us-rev1/slices/000CF584.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_08_us_rev1.bin \
+  build/us-rev1/slices/000CF590.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_08_us_rev1.bin \
+  build/us-rev1/slices/000CF59C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_09_us_rev1.bin \
+  build/us-rev1/slices/000CF5A8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_09_us_rev1.bin \
+  build/us-rev1/slices/000CF5B4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_10_us_rev1.bin \
+  build/us-rev1/slices/000CF5C0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_10_us_rev1.bin \
+  build/us-rev1/slices/000CF5CC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_11_us_rev1.bin \
+  build/us-rev1/slices/000CF5D8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_11_us_rev1.bin \
+  build/us-rev1/slices/000CF5E4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_12_us_rev1.bin \
+  build/us-rev1/slices/000CF5F0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_12_us_rev1.bin \
+  build/us-rev1/slices/000CF5FC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_13_us_rev1.bin \
+  build/us-rev1/slices/000CF608.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_13_us_rev1.bin \
+  build/us-rev1/slices/000CF614.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_14_us_rev1.bin \
+  build/us-rev1/slices/000CF620.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_14_us_rev1.bin \
+  build/us-rev1/slices/000CF62C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_15_us_rev1.bin \
+  build/us-rev1/slices/000CF638.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_15_us_rev1.bin \
+  build/us-rev1/slices/000CF644.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_16_us_rev1.bin \
+  build/us-rev1/slices/000CF650.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_16_us_rev1.bin \
+  build/us-rev1/slices/000CF65C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_17_us_rev1.bin \
+  build/us-rev1/slices/000CF668.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_17_us_rev1.bin \
+  build/us-rev1/slices/000CF674.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_18_us_rev1.bin \
+  build/us-rev1/slices/000CF680.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_18_us_rev1.bin \
+  build/us-rev1/slices/000CF68C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_19_us_rev1.bin \
+  build/us-rev1/slices/000CF698.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_19_us_rev1.bin \
+  build/us-rev1/slices/000CF6A4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_20_us_rev1.bin \
+  build/us-rev1/slices/000CF6B0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_20_us_rev1.bin \
+  build/us-rev1/slices/000CF6BC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_21_us_rev1.bin \
+  build/us-rev1/slices/000CF6C8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_21_us_rev1.bin \
+  build/us-rev1/slices/000CF6D4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_22_us_rev1.bin \
+  build/us-rev1/slices/000CF6E0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_22_us_rev1.bin \
+  build/us-rev1/slices/000CF6EC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_23_us_rev1.bin \
+  build/us-rev1/slices/000CF6F8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_23_us_rev1.bin \
+  build/us-rev1/slices/000CF704.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_24_us_rev1.bin \
+  build/us-rev1/slices/000CF710.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_24_us_rev1.bin \
+  build/us-rev1/slices/000CF71C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_25_us_rev1.bin \
+  build/us-rev1/slices/000CF728.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_25_us_rev1.bin \
+  build/us-rev1/slices/000CF734.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_26_us_rev1.bin \
+  build/us-rev1/slices/000CF740.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_26_us_rev1.bin \
+  build/us-rev1/slices/000CF74C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_27_us_rev1.bin \
+  build/us-rev1/slices/000CF758.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_27_us_rev1.bin \
+  build/us-rev1/slices/000CF764.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_28_us_rev1.bin \
+  build/us-rev1/slices/000CF770.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_28_us_rev1.bin \
+  build/us-rev1/slices/000CF77C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_29_us_rev1.bin \
+  build/us-rev1/slices/000CF788.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_29_us_rev1.bin \
+  build/us-rev1/slices/000CF794.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_30_us_rev1.bin \
+  build/us-rev1/slices/000CF7A0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_30_us_rev1.bin \
+  build/us-rev1/slices/000CF7AC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_31_us_rev1.bin \
+  build/us-rev1/slices/000CF7B8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_31_us_rev1.bin \
+  build/us-rev1/slices/000CF7C4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_32_us_rev1.bin \
+  build/us-rev1/slices/000CF7D0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_32_us_rev1.bin \
+  build/us-rev1/slices/000CF7DC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_33_us_rev1.bin \
+  build/us-rev1/slices/000CF7E8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_33_us_rev1.bin \
+  build/us-rev1/slices/000CF7F4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_34_us_rev1.bin \
+  build/us-rev1/slices/000CF800.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_34_us_rev1.bin \
+  build/us-rev1/slices/000CF80C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_35_us_rev1.bin \
+  build/us-rev1/slices/000CF818.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_35_us_rev1.bin \
+  build/us-rev1/slices/000CF824.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_36_us_rev1.bin \
+  build/us-rev1/slices/000CF830.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_36_us_rev1.bin \
+  build/us-rev1/slices/000CF83C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_37_us_rev1.bin \
+  build/us-rev1/slices/000CF848.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_37_us_rev1.bin \
+  build/us-rev1/slices/000CF854.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_38_us_rev1.bin \
+  build/us-rev1/slices/000CF860.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_38_us_rev1.bin \
+  build/us-rev1/slices/000CF86C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_39_us_rev1.bin \
+  build/us-rev1/slices/000CF878.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_39_us_rev1.bin \
+  build/us-rev1/slices/000CF884.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_40_us_rev1.bin \
+  build/us-rev1/slices/000CF890.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_40_us_rev1.bin \
+  build/us-rev1/slices/000CF89C.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_41_us_rev1.bin \
+  build/us-rev1/slices/000CF8A8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_41_us_rev1.bin \
+  build/us-rev1/slices/000CF8B4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_42_us_rev1.bin \
+  build/us-rev1/slices/000CF8C0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_42_us_rev1.bin \
+  build/us-rev1/slices/000CF8CC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_43_us_rev1.bin \
+  build/us-rev1/slices/000CF8D8.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_43_us_rev1.bin \
+  build/us-rev1/slices/000CF8E4.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_44_us_rev1.bin \
+  build/us-rev1/slices/000CF8F0.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_44_us_rev1.bin \
+  build/us-rev1/slices/000CF8FC.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_45_us_rev1.bin \
+  build/us-rev1/slices/000CF908.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_45_us_rev1.bin \
+  build/us-rev1/slices/000CF914.bin \
+  build/us-rev1/data/rw_player_state_normal_callbacks_46_us_rev1.bin \
+  build/us-rev1/slices/000CF920.bin \
+  build/us-rev1/data/rw_player_state_normal_timing_46_us_rev1.bin \
+  build/us-rev1/slices/000CF92C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_00_us_rev1.bin \
+  build/us-rev1/slices/000CF938.bin \
+  build/us-rev1/data/rw_player_state_special_timing_00_us_rev1.bin \
+  build/us-rev1/slices/000CF944.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_01_us_rev1.bin \
+  build/us-rev1/slices/000CF950.bin \
+  build/us-rev1/data/rw_player_state_special_timing_01_us_rev1.bin \
+  build/us-rev1/slices/000CF95C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_02_us_rev1.bin \
+  build/us-rev1/slices/000CF968.bin \
+  build/us-rev1/data/rw_player_state_special_timing_02_us_rev1.bin \
+  build/us-rev1/slices/000CF974.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_03_us_rev1.bin \
+  build/us-rev1/slices/000CF980.bin \
+  build/us-rev1/data/rw_player_state_special_timing_03_us_rev1.bin \
+  build/us-rev1/slices/000CF98C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_04_us_rev1.bin \
+  build/us-rev1/slices/000CF998.bin \
+  build/us-rev1/data/rw_player_state_special_timing_04_us_rev1.bin \
+  build/us-rev1/slices/000CF9A4.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_05_us_rev1.bin \
+  build/us-rev1/slices/000CF9B0.bin \
+  build/us-rev1/data/rw_player_state_special_timing_05_us_rev1.bin \
+  build/us-rev1/slices/000CF9BC.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_06_us_rev1.bin \
+  build/us-rev1/slices/000CF9C8.bin \
+  build/us-rev1/data/rw_player_state_special_timing_06_us_rev1.bin \
+  build/us-rev1/slices/000CF9D4.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_07_us_rev1.bin \
+  build/us-rev1/slices/000CF9E0.bin \
+  build/us-rev1/data/rw_player_state_special_timing_07_us_rev1.bin \
+  build/us-rev1/slices/000CF9EC.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_08_us_rev1.bin \
+  build/us-rev1/slices/000CF9F8.bin \
+  build/us-rev1/data/rw_player_state_special_timing_08_us_rev1.bin \
+  build/us-rev1/slices/000CFA04.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_09_us_rev1.bin \
+  build/us-rev1/slices/000CFA10.bin \
+  build/us-rev1/data/rw_player_state_special_timing_09_us_rev1.bin \
+  build/us-rev1/slices/000CFA1C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_10_us_rev1.bin \
+  build/us-rev1/slices/000CFA28.bin \
+  build/us-rev1/data/rw_player_state_special_timing_10_us_rev1.bin \
+  build/us-rev1/slices/000CFA34.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_11_us_rev1.bin \
+  build/us-rev1/slices/000CFA40.bin \
+  build/us-rev1/data/rw_player_state_special_timing_11_us_rev1.bin \
+  build/us-rev1/slices/000CFA4C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_12_us_rev1.bin \
+  build/us-rev1/slices/000CFA58.bin \
+  build/us-rev1/data/rw_player_state_special_timing_12_us_rev1.bin \
+  build/us-rev1/slices/000CFA64.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_13_us_rev1.bin \
+  build/us-rev1/slices/000CFA70.bin \
+  build/us-rev1/data/rw_player_state_special_timing_13_us_rev1.bin \
+  build/us-rev1/slices/000CFA7C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_14_us_rev1.bin \
+  build/us-rev1/slices/000CFA88.bin \
+  build/us-rev1/data/rw_player_state_special_timing_14_us_rev1.bin \
+  build/us-rev1/slices/000CFA94.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_15_us_rev1.bin \
+  build/us-rev1/slices/000CFAA0.bin \
+  build/us-rev1/data/rw_player_state_special_timing_15_us_rev1.bin \
+  build/us-rev1/slices/000CFAAC.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_16_us_rev1.bin \
+  build/us-rev1/slices/000CFAB8.bin \
+  build/us-rev1/data/rw_player_state_special_timing_16_us_rev1.bin \
+  build/us-rev1/slices/000CFAC4.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_17_us_rev1.bin \
+  build/us-rev1/slices/000CFAD0.bin \
+  build/us-rev1/data/rw_player_state_special_timing_17_us_rev1.bin \
+  build/us-rev1/slices/000CFADC.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_18_us_rev1.bin \
+  build/us-rev1/slices/000CFAE8.bin \
+  build/us-rev1/data/rw_player_state_special_timing_18_us_rev1.bin \
+  build/us-rev1/slices/000CFAF4.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_19_us_rev1.bin \
+  build/us-rev1/slices/000CFB00.bin \
+  build/us-rev1/data/rw_player_state_special_timing_19_us_rev1.bin \
+  build/us-rev1/slices/000CFB0C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_20_us_rev1.bin \
+  build/us-rev1/slices/000CFB18.bin \
+  build/us-rev1/data/rw_player_state_special_timing_20_us_rev1.bin \
+  build/us-rev1/slices/000CFB24.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_21_us_rev1.bin \
+  build/us-rev1/slices/000CFB30.bin \
+  build/us-rev1/data/rw_player_state_special_timing_21_us_rev1.bin \
+  build/us-rev1/slices/000CFB3C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_22_us_rev1.bin \
+  build/us-rev1/slices/000CFB48.bin \
+  build/us-rev1/data/rw_player_state_special_timing_22_us_rev1.bin \
+  build/us-rev1/slices/000CFB54.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_23_us_rev1.bin \
+  build/us-rev1/slices/000CFB60.bin \
+  build/us-rev1/data/rw_player_state_special_timing_23_us_rev1.bin \
+  build/us-rev1/slices/000CFB6C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_24_us_rev1.bin \
+  build/us-rev1/slices/000CFB78.bin \
+  build/us-rev1/data/rw_player_state_special_timing_24_us_rev1.bin \
+  build/us-rev1/slices/000CFB84.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_25_us_rev1.bin \
+  build/us-rev1/slices/000CFB90.bin \
+  build/us-rev1/data/rw_player_state_special_timing_25_us_rev1.bin \
+  build/us-rev1/slices/000CFB9C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_26_us_rev1.bin \
+  build/us-rev1/slices/000CFBA8.bin \
+  build/us-rev1/data/rw_player_state_special_timing_26_us_rev1.bin \
+  build/us-rev1/slices/000CFBB4.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_27_us_rev1.bin \
+  build/us-rev1/slices/000CFBC0.bin \
+  build/us-rev1/data/rw_player_state_special_timing_27_us_rev1.bin \
+  build/us-rev1/slices/000CFBCC.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_28_us_rev1.bin \
+  build/us-rev1/slices/000CFBD8.bin \
+  build/us-rev1/data/rw_player_state_special_timing_28_us_rev1.bin \
+  build/us-rev1/slices/000CFBE4.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_29_us_rev1.bin \
+  build/us-rev1/slices/000CFBF0.bin \
+  build/us-rev1/data/rw_player_state_special_timing_29_us_rev1.bin \
+  build/us-rev1/slices/000CFBFC.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_30_us_rev1.bin \
+  build/us-rev1/slices/000CFC08.bin \
+  build/us-rev1/data/rw_player_state_special_timing_30_us_rev1.bin \
+  build/us-rev1/slices/000CFC14.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_31_us_rev1.bin \
+  build/us-rev1/slices/000CFC20.bin \
+  build/us-rev1/data/rw_player_state_special_timing_31_us_rev1.bin \
+  build/us-rev1/slices/000CFC2C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_32_us_rev1.bin \
+  build/us-rev1/slices/000CFC38.bin \
+  build/us-rev1/data/rw_player_state_special_timing_32_us_rev1.bin \
+  build/us-rev1/slices/000CFC44.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_33_us_rev1.bin \
+  build/us-rev1/slices/000CFC50.bin \
+  build/us-rev1/data/rw_player_state_special_timing_33_us_rev1.bin \
+  build/us-rev1/slices/000CFC5C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_34_us_rev1.bin \
+  build/us-rev1/slices/000CFC68.bin \
+  build/us-rev1/data/rw_player_state_special_timing_34_us_rev1.bin \
+  build/us-rev1/slices/000CFC74.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_35_us_rev1.bin \
+  build/us-rev1/slices/000CFC80.bin \
+  build/us-rev1/data/rw_player_state_special_timing_35_us_rev1.bin \
+  build/us-rev1/slices/000CFC8C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_36_us_rev1.bin \
+  build/us-rev1/slices/000CFC98.bin \
+  build/us-rev1/data/rw_player_state_special_timing_36_us_rev1.bin \
+  build/us-rev1/slices/000CFCA4.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_37_us_rev1.bin \
+  build/us-rev1/slices/000CFCB0.bin \
+  build/us-rev1/data/rw_player_state_special_timing_37_us_rev1.bin \
+  build/us-rev1/slices/000CFCBC.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_38_us_rev1.bin \
+  build/us-rev1/slices/000CFCC8.bin \
+  build/us-rev1/data/rw_player_state_special_timing_38_us_rev1.bin \
+  build/us-rev1/slices/000CFCD4.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_39_us_rev1.bin \
+  build/us-rev1/slices/000CFCE0.bin \
+  build/us-rev1/data/rw_player_state_special_timing_39_us_rev1.bin \
+  build/us-rev1/slices/000CFCEC.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_40_us_rev1.bin \
+  build/us-rev1/slices/000CFCF8.bin \
+  build/us-rev1/data/rw_player_state_special_timing_40_us_rev1.bin \
+  build/us-rev1/slices/000CFD04.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_41_us_rev1.bin \
+  build/us-rev1/slices/000CFD10.bin \
+  build/us-rev1/data/rw_player_state_special_timing_41_us_rev1.bin \
+  build/us-rev1/slices/000CFD1C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_42_us_rev1.bin \
+  build/us-rev1/slices/000CFD28.bin \
+  build/us-rev1/data/rw_player_state_special_timing_42_us_rev1.bin \
+  build/us-rev1/slices/000CFD34.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_43_us_rev1.bin \
+  build/us-rev1/slices/000CFD40.bin \
+  build/us-rev1/data/rw_player_state_special_timing_43_us_rev1.bin \
+  build/us-rev1/slices/000CFD4C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_44_us_rev1.bin \
+  build/us-rev1/slices/000CFD58.bin \
+  build/us-rev1/data/rw_player_state_special_timing_44_us_rev1.bin \
+  build/us-rev1/slices/000CFD64.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_45_us_rev1.bin \
+  build/us-rev1/slices/000CFD70.bin \
+  build/us-rev1/data/rw_player_state_special_timing_45_us_rev1.bin \
+  build/us-rev1/slices/000CFD7C.bin \
+  build/us-rev1/data/rw_player_state_special_callbacks_46_us_rev1.bin \
+  build/us-rev1/slices/000CFD88.bin \
+  build/us-rev1/data/rw_player_state_special_timing_46_us_rev1.bin \
+  build/us-rev1/slices/000CFD94.bin \
   build/us-rev1/data/rw_text_8021D408_CFDB4_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021EEFC_CFDB8_us_rev1.bin \
   build/us-rev1/slices/000CFDBC.bin \
