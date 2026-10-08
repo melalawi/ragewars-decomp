@@ -4480,6 +4480,8 @@ segments:
       - [0xE2E18, rodata, "rodata/func_8043C4F4_us_rev1/800E2218"]
       - [0xE2E44, data, "rodata/unresolved/800E2244"]
       - [0xE2E48, rodata, "rodata/func_8043C4F4_us_rev1/800E2248"]
+      - [0xE2E74, rodata, "src/rw_pool_cells_8043C4F4_E2E74_us_rev1.c"]
+      - [0xE2E88, rodata, "rodata/func_8043C4F4_us_rev1/800E2248"]
       - [0xE2EB4, data, "rodata/unresolved/800E22B4"]
       - [0xE2EB8, rodata, "rodata/func_8043C4F4_us_rev1/800E22B8"]
       - [0xE2EE4, data, "rodata/unresolved/800E22E4"]
