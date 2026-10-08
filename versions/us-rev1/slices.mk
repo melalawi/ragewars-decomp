@@ -3515,7 +3515,79 @@ us-rev1.S.000CE63C := 845372 4
 us-rev1.D.ragewars_actor_mode_dispatch_us_rev1 := 0x800CDA40:0xCE640:0xA0
 us-rev1.S.000CE6E0 := 845536 16
 us-rev1.D.ragewars_actor_radial_directions_us_rev1 := 0x800CDAF0:0xCE6F0:0x60
-us-rev1.S.000CE750 := 845648 1776
+us-rev1.S.000CE750 := 845648 80
+us-rev1.D.ragewars_actor_handler_run_CE7A0_us_rev1 := 0x800CDBA0:0xCE7A0:0x8
+us-rev1.S.000CE7A8 := 845736 4
+us-rev1.D.ragewars_actor_handler_run_CE7AC_us_rev1 := 0x800CDBAC:0xCE7AC:0x8
+us-rev1.S.000CE7B4 := 845748 60
+us-rev1.D.ragewars_actor_handler_run_CE7F0_us_rev1 := 0x800CDBF0:0xCE7F0:0xC
+us-rev1.S.000CE7FC := 845820 4
+us-rev1.D.ragewars_actor_handler_run_CE800_us_rev1 := 0x800CDC00:0xCE800:0x4
+us-rev1.S.000CE804 := 845828 4
+us-rev1.D.ragewars_actor_handler_run_CE808_us_rev1 := 0x800CDC08:0xCE808:0x8
+us-rev1.S.000CE810 := 845840 48
+us-rev1.D.ragewars_actor_handler_run_CE840_us_rev1 := 0x800CDC40:0xCE840:0x8
+us-rev1.S.000CE848 := 845896 4
+us-rev1.D.ragewars_actor_handler_run_CE84C_us_rev1 := 0x800CDC4C:0xCE84C:0x8
+us-rev1.S.000CE854 := 845908 60
+us-rev1.D.ragewars_actor_handler_run_CE890_us_rev1 := 0x800CDC90:0xCE890:0x8
+us-rev1.S.000CE898 := 845976 4
+us-rev1.D.ragewars_actor_handler_run_CE89C_us_rev1 := 0x800CDC9C:0xCE89C:0xC
+us-rev1.S.000CE8A8 := 845992 4
+us-rev1.D.ragewars_actor_handler_run_CE8AC_us_rev1 := 0x800CDCAC:0xCE8AC:0x8
+us-rev1.S.000CE8B4 := 846004 44
+us-rev1.D.ragewars_actor_handler_run_CE8E0_us_rev1 := 0x800CDCE0:0xCE8E0:0x8
+us-rev1.S.000CE8E8 := 846056 4
+us-rev1.D.ragewars_actor_handler_run_CE8EC_us_rev1 := 0x800CDCEC:0xCE8EC:0xC
+us-rev1.S.000CE8F8 := 846072 4
+us-rev1.D.ragewars_actor_handler_run_CE8FC_us_rev1 := 0x800CDCFC:0xCE8FC:0x8
+us-rev1.S.000CE904 := 846084 44
+us-rev1.D.ragewars_actor_handler_run_CE930_us_rev1 := 0x800CDD30:0xCE930:0x8
+us-rev1.S.000CE938 := 846136 4
+us-rev1.D.ragewars_actor_handler_run_CE93C_us_rev1 := 0x800CDD3C:0xCE93C:0x8
+us-rev1.S.000CE944 := 846148 4
+us-rev1.D.ragewars_actor_handler_run_CE948_us_rev1 := 0x800CDD48:0xCE948:0x8
+us-rev1.S.000CE950 := 846160 48
+us-rev1.D.ragewars_actor_handler_run_CE980_us_rev1 := 0x800CDD80:0xCE980:0x8
+us-rev1.S.000CE988 := 846216 4
+us-rev1.D.ragewars_actor_handler_run_CE98C_us_rev1 := 0x800CDD8C:0xCE98C:0x4
+us-rev1.S.000CE990 := 846224 4
+us-rev1.D.ragewars_actor_handler_run_CE994_us_rev1 := 0x800CDD94:0xCE994:0x8
+us-rev1.S.000CE99C := 846236 52
+us-rev1.D.ragewars_actor_handler_run_CE9D0_us_rev1 := 0x800CDDD0:0xCE9D0:0x8
+us-rev1.S.000CE9D8 := 846296 4
+us-rev1.D.ragewars_actor_handler_run_CE9DC_us_rev1 := 0x800CDDDC:0xCE9DC:0x4
+us-rev1.S.000CE9E0 := 846304 4
+us-rev1.D.ragewars_actor_handler_run_CE9E4_us_rev1 := 0x800CDDE4:0xCE9E4:0x8
+us-rev1.S.000CE9EC := 846316 52
+us-rev1.D.ragewars_actor_handler_run_CEA20_us_rev1 := 0x800CDE20:0xCEA20:0xC
+us-rev1.S.000CEA2C := 846380 4
+us-rev1.D.ragewars_actor_handler_run_CEA30_us_rev1 := 0x800CDE30:0xCEA30:0x4
+us-rev1.S.000CEA34 := 846388 4
+us-rev1.D.ragewars_actor_handler_run_CEA38_us_rev1 := 0x800CDE38:0xCEA38:0x8
+us-rev1.S.000CEA40 := 846400 48
+us-rev1.D.ragewars_actor_handler_run_CEA70_us_rev1 := 0x800CDE70:0xCEA70:0xC
+us-rev1.S.000CEA7C := 846460 4
+us-rev1.D.ragewars_actor_handler_run_CEA80_us_rev1 := 0x800CDE80:0xCEA80:0x8
+us-rev1.S.000CEA88 := 846472 4
+us-rev1.D.ragewars_actor_handler_run_CEA8C_us_rev1 := 0x800CDE8C:0xCEA8C:0x4
+us-rev1.S.000CEA90 := 846480 48
+us-rev1.D.ragewars_actor_handler_run_CEAC0_us_rev1 := 0x800CDEC0:0xCEAC0:0xC
+us-rev1.S.000CEACC := 846540 4
+us-rev1.D.ragewars_actor_handler_run_CEAD0_us_rev1 := 0x800CDED0:0xCEAD0:0x4
+us-rev1.S.000CEAD4 := 846548 4
+us-rev1.D.ragewars_actor_handler_run_CEAD8_us_rev1 := 0x800CDED8:0xCEAD8:0x4
+us-rev1.S.000CEADC := 846556 52
+us-rev1.D.ragewars_actor_handler_run_CEB10_us_rev1 := 0x800CDF10:0xCEB10:0x10
+us-rev1.S.000CEB20 := 846624 64
+us-rev1.D.ragewars_actor_handler_run_CEB60_us_rev1 := 0x800CDF60:0xCEB60:0x8
+us-rev1.S.000CEB68 := 846696 72
+us-rev1.D.ragewars_actor_handler_run_CEBB0_us_rev1 := 0x800CDFB0:0xCEBB0:0x8
+us-rev1.S.000CEBB8 := 846776 4
+us-rev1.D.ragewars_actor_handler_run_CEBBC_us_rev1 := 0x800CDFBC:0xCEBBC:0x4
+us-rev1.S.000CEBC0 := 846784 4
+us-rev1.D.ragewars_actor_handler_run_CEBC4_us_rev1 := 0x800CDFC4:0xCEBC4:0x8
+us-rev1.S.000CEBCC := 846796 628
 us-rev1.D.ragewars_actor_primary_mask_events_us_rev1 := 0x800CE240:0xCEE40:0x100
 us-rev1.D.ragewars_actor_primary_mask_end_us_rev1 := 0x800CE340:0xCEF40:0x4
 us-rev1.S.000CEF44 := 847684 4
@@ -9121,6 +9193,78 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CE6E0.bin \
   build/us-rev1/data/ragewars_actor_radial_directions_us_rev1.bin \
   build/us-rev1/slices/000CE750.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE7A0_us_rev1.bin \
+  build/us-rev1/slices/000CE7A8.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE7AC_us_rev1.bin \
+  build/us-rev1/slices/000CE7B4.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE7F0_us_rev1.bin \
+  build/us-rev1/slices/000CE7FC.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE800_us_rev1.bin \
+  build/us-rev1/slices/000CE804.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE808_us_rev1.bin \
+  build/us-rev1/slices/000CE810.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE840_us_rev1.bin \
+  build/us-rev1/slices/000CE848.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE84C_us_rev1.bin \
+  build/us-rev1/slices/000CE854.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE890_us_rev1.bin \
+  build/us-rev1/slices/000CE898.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE89C_us_rev1.bin \
+  build/us-rev1/slices/000CE8A8.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE8AC_us_rev1.bin \
+  build/us-rev1/slices/000CE8B4.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE8E0_us_rev1.bin \
+  build/us-rev1/slices/000CE8E8.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE8EC_us_rev1.bin \
+  build/us-rev1/slices/000CE8F8.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE8FC_us_rev1.bin \
+  build/us-rev1/slices/000CE904.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE930_us_rev1.bin \
+  build/us-rev1/slices/000CE938.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE93C_us_rev1.bin \
+  build/us-rev1/slices/000CE944.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE948_us_rev1.bin \
+  build/us-rev1/slices/000CE950.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE980_us_rev1.bin \
+  build/us-rev1/slices/000CE988.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE98C_us_rev1.bin \
+  build/us-rev1/slices/000CE990.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE994_us_rev1.bin \
+  build/us-rev1/slices/000CE99C.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE9D0_us_rev1.bin \
+  build/us-rev1/slices/000CE9D8.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE9DC_us_rev1.bin \
+  build/us-rev1/slices/000CE9E0.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CE9E4_us_rev1.bin \
+  build/us-rev1/slices/000CE9EC.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEA20_us_rev1.bin \
+  build/us-rev1/slices/000CEA2C.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEA30_us_rev1.bin \
+  build/us-rev1/slices/000CEA34.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEA38_us_rev1.bin \
+  build/us-rev1/slices/000CEA40.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEA70_us_rev1.bin \
+  build/us-rev1/slices/000CEA7C.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEA80_us_rev1.bin \
+  build/us-rev1/slices/000CEA88.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEA8C_us_rev1.bin \
+  build/us-rev1/slices/000CEA90.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEAC0_us_rev1.bin \
+  build/us-rev1/slices/000CEACC.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEAD0_us_rev1.bin \
+  build/us-rev1/slices/000CEAD4.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEAD8_us_rev1.bin \
+  build/us-rev1/slices/000CEADC.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEB10_us_rev1.bin \
+  build/us-rev1/slices/000CEB20.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEB60_us_rev1.bin \
+  build/us-rev1/slices/000CEB68.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEBB0_us_rev1.bin \
+  build/us-rev1/slices/000CEBB8.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEBBC_us_rev1.bin \
+  build/us-rev1/slices/000CEBC0.bin \
+  build/us-rev1/data/ragewars_actor_handler_run_CEBC4_us_rev1.bin \
+  build/us-rev1/slices/000CEBCC.bin \
   build/us-rev1/data/ragewars_actor_primary_mask_events_us_rev1.bin \
   build/us-rev1/data/ragewars_actor_primary_mask_end_us_rev1.bin \
   build/us-rev1/slices/000CEF44.bin \
