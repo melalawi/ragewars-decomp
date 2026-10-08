@@ -4,17 +4,17 @@
     "matched_code": 669004,
     "complete_code": 669004,
     "total_data": 320748,
-    "matched_data": 2384,
-    "complete_data": 2384,
+    "matched_data": 2640,
+    "complete_data": 2640,
     "total_functions": 4233,
     "matched_functions": 3597,
-    "total_units": 5252,
-    "complete_units": 2817,
+    "total_units": 5254,
+    "complete_units": 2818,
     "matched_code_percent": 62.980255,
     "complete_code_percent": 62.980255,
     "matched_functions_percent": 84.9752,
-    "matched_data_percent": 0.74326265,
-    "complete_data_percent": 0.74326265,
+    "matched_data_percent": 0.82307607,
+    "complete_data_percent": 0.82307607,
     "fuzzy_match_percent": 63.40704
   },
   "units": [
@@ -172661,7 +172661,7 @@
     {
       "name": "data:rodata/unresolved/800C7C18@C8818",
       "measures": {
-        "total_data": "1064",
+        "total_data": "264",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -172672,7 +172672,62 @@
       "sections": [
         {
           "name": "data",
-          "size": "1064",
+          "size": "264",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_u64_quotient_bitwidth_us_rev1.c@C8920",
+      "measures": {
+        "total_data": "256",
+        "matched_data": "256",
+        "complete_data": "256",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "256",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_u64_quotient_bitwidth_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800C7C18_0C8A20@C8A20",
+      "measures": {
+        "total_data": "544",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "544",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -186583,17 +186638,17 @@
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 320748,
-        "matched_data": 2384,
-        "complete_data": 2384,
+        "matched_data": 2640,
+        "complete_data": 2640,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 1802,
-        "complete_units": 3,
+        "total_units": 1804,
+        "complete_units": 4,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "matched_data_percent": 0.74326265,
-        "complete_data_percent": 0.74326265,
+        "matched_data_percent": 0.82307607,
+        "complete_data_percent": 0.82307607,
         "fuzzy_match_percent": 0.0
       }
     },

@@ -3713,6 +3713,8 @@ segments:
       - [0xC87F8, rodata, "rodata/func_802BFAAC_de/800C7BF8"]
       - [0xC8808, rodata, "rodata/func_802C0044_de/800C7C08"]
       - [0xC8818, data, "rodata/unresolved/800C7C18"]
+      - [0x0C8920, data, "src/ragewars_u64_quotient_bitwidth_us_rev1.c"]
+      - [0x0C8A20, data, "rodata/unresolved/800C7C18_0C8A20"]
       - [0xC8C40, rodata, "rodata/__floatdisf/800C8040"]
       - [0xC8C58, data, "rodata/unresolved/800C8058"]
       - [0xC8C64, data, "rodata/writable/800C8064"]

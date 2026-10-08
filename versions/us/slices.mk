@@ -2269,7 +2269,9 @@ us.U.func_802C020C_de := 0x802C013C:0xC0D3C:0x10
 us.U.func_802C021C_de := 0x802C014C:0xC0D4C:0x10
 us.S.000C0D5C := 789852 5636
 us.U.__cmpdi2 := 0x802C1760:0xC2360:0x48
-us.S.000C23A8 := 795560 30568
+us.S.000C23A8 := 795560 25976
+us.D.ragewars_u64_quotient_bitwidth_us_rev1 := 0x800C7D20:0xC8920:0x100
+us.S.000C8A20 := 821792 4336
 us.D.ragewars_actor_primary_mask_events_us_rev1 := 0x800C8F10:0xC9B10:0x100
 us.S.000C9C10 := 826384 12640
 us.D.ragewars_particle_intensity_texture_us_rev1 := 0x800CC170:0xCCD70:0x100
@@ -5581,6 +5583,8 @@ us.PIECES := \
   build/us/slices/000C0D5C.bin \
   build/us/units/__cmpdi2.bin \
   build/us/slices/000C23A8.bin \
+  build/us/data/ragewars_u64_quotient_bitwidth_us_rev1.bin \
+  build/us/slices/000C8A20.bin \
   build/us/data/ragewars_actor_primary_mask_events_us_rev1.bin \
   build/us/slices/000C9C10.bin \
   build/us/data/ragewars_particle_intensity_texture_us_rev1.bin \

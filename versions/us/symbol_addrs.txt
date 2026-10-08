@@ -9995,3 +9995,4 @@ D_800C9F74_de = 0x800C9E88;
 ragewars_pixel_formats_us_rev1 = 0x800DD780;
 ragewars_particle_intensity_texture_us_rev1 = 0x800CC170;
 ragewars_actor_primary_mask_events_us_rev1 = 0x800C8F10;
+ragewars_u64_quotient_bitwidth_us_rev1 = 0x800C7D20;
