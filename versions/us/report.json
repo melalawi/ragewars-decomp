@@ -4,17 +4,17 @@
     "matched_code": 669004,
     "complete_code": 669004,
     "total_data": 320748,
-    "matched_data": 2128,
-    "complete_data": 2128,
+    "matched_data": 2384,
+    "complete_data": 2384,
     "total_functions": 4233,
     "matched_functions": 3597,
-    "total_units": 5250,
-    "complete_units": 2816,
+    "total_units": 5252,
+    "complete_units": 2817,
     "matched_code_percent": 62.980255,
     "complete_code_percent": 62.980255,
     "matched_functions_percent": 84.9752,
-    "matched_data_percent": 0.66344917,
-    "complete_data_percent": 0.66344917,
+    "matched_data_percent": 0.74326265,
+    "complete_data_percent": 0.74326265,
     "fuzzy_match_percent": 63.40704
   },
   "units": [
@@ -172877,7 +172877,7 @@
     {
       "name": "data:rodata/unresolved/800C870C@C930C",
       "measures": {
-        "total_data": "2384",
+        "total_data": "2052",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -172888,7 +172888,62 @@
       "sections": [
         {
           "name": "data",
-          "size": "2384",
+          "size": "2052",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_actor_primary_mask_events_us_rev1.c@C9B10",
+      "measures": {
+        "total_data": "256",
+        "matched_data": "256",
+        "complete_data": "256",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "256",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_actor_primary_mask_events_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800C870C_0C9C10@C9C10",
+      "measures": {
+        "total_data": "76",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "76",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -186528,17 +186583,17 @@
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 320748,
-        "matched_data": 2128,
-        "complete_data": 2128,
+        "matched_data": 2384,
+        "complete_data": 2384,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 1800,
-        "complete_units": 2,
+        "total_units": 1802,
+        "complete_units": 3,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "matched_data_percent": 0.66344917,
-        "complete_data_percent": 0.66344917,
+        "matched_data_percent": 0.74326265,
+        "complete_data_percent": 0.74326265,
         "fuzzy_match_percent": 0.0
       }
     },
