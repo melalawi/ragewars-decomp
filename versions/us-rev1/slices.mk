@@ -4603,7 +4603,11 @@ us-rev1.D.ragewars_cup_category_0_arena_controls_us_rev1 := 0x800E51E4:0xE5DE4:0
 us-rev1.D.ragewars_cup_category_1_arena_controls_us_rev1 := 0x800E51F8:0xE5DF8:0x1C
 us-rev1.D.ragewars_cup_category_3_arena_controls_us_rev1 := 0x800E5214:0xE5E14:0x2C
 us-rev1.D.ragewars_cup_category_2_arena_controls_us_rev1 := 0x800E5240:0xE5E40:0x44
-us-rev1.S.000E5E84 := 941700 2628
+us-rev1.S.000E5E84 := 941700 320
+us-rev1.D.rw_menu_event_handlers_E5FC4_us_rev1 := 0x800E53C4:0xE5FC4:0x6C
+us-rev1.S.000E6030 := 942128 4
+us-rev1.D.rw_menu_event_handlers_E6034_us_rev1 := 0x800E5434:0xE6034:0x60
+us-rev1.S.000E6094 := 942228 2100
 us-rev1.D.ragewars_resident_strings_E68C8_us_rev1 := 0x800E5CC8:0xE68C8:0x14
 us-rev1.S.000E68DC := 944348 4
 us-rev1.D.ragewars_resident_strings_E68E0_us_rev1 := 0x800E5CE0:0xE68E0:0x18
@@ -10387,6 +10391,10 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_cup_category_3_arena_controls_us_rev1.bin \
   build/us-rev1/data/ragewars_cup_category_2_arena_controls_us_rev1.bin \
   build/us-rev1/slices/000E5E84.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E5FC4_us_rev1.bin \
+  build/us-rev1/slices/000E6030.bin \
+  build/us-rev1/data/rw_menu_event_handlers_E6034_us_rev1.bin \
+  build/us-rev1/slices/000E6094.bin \
   build/us-rev1/data/ragewars_resident_strings_E68C8_us_rev1.bin \
   build/us-rev1/slices/000E68DC.bin \
   build/us-rev1/data/ragewars_resident_strings_E68E0_us_rev1.bin \
