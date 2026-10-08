@@ -2336,7 +2336,20 @@ us-rev1.U.func_802C020C_de := 0x802C52FC:0xC5EFC:0x10
 us-rev1.U.func_802C021C_de := 0x802C530C:0xC5F0C:0x10
 us-rev1.S.000C5F1C := 810780 5636
 us-rev1.U.__cmpdi2 := 0x802C6920:0xC7520:0x48
-us-rev1.S.000C7568 := 816488 682648
+us-rev1.S.000C7568 := 816488 76844
+us-rev1.D.huffman_initial_block_ranges := 0x800D9594:0xDA194:0x50
+us-rev1.D.huffman_single_zero_runs := 0x800D95E4:0xDA1E4:0x1B8
+us-rev1.D.huffman_delta_single_zero_run_nodes := 0x800D979C:0xDA39C:0x80C
+us-rev1.D.huffman_five_zero_runs := 0x800D9FA8:0xDABA8:0x898
+us-rev1.D.huffman_delta_five_zero_runs_nodes := 0x800DA840:0xDB440:0x82C
+us-rev1.D.huffman_nine_zero_runs := 0x800DB06C:0xDBC6C:0xF78
+us-rev1.D.huffman_delta_nine_zero_runs_nodes := 0x800DBFE4:0xDCBE4:0x84C
+us-rev1.D.huffman_signed_small_nodes := 0x800DC830:0xDD430:0x404
+us-rev1.S.000DD834 := 907316 112079
+us-rev1.D.sn64_intelligence_type_records := 0x800F8203:0xF8E03:0x4FED
+us-rev1.S.000FDDF0 := 1039856 24
+us-rev1.D.sn64_runtime_type_records := 0x800FD208:0xFDE08:0x31F8
+us-rev1.S.00101000 := 1052672 446464
 us-rev1.U.func_80400000_de := 0x80400000:0x16E000:0x67C
 us-rev1.S.0016E67C := 1500796 2004
 us-rev1.U.func_80400E50_de := 0x80400E50:0x16EE50:0x3C4
@@ -5766,6 +5779,19 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000C5F1C.bin \
   build/us-rev1/units/__cmpdi2.bin \
   build/us-rev1/slices/000C7568.bin \
+  build/us-rev1/data/huffman_initial_block_ranges.bin \
+  build/us-rev1/data/huffman_single_zero_runs.bin \
+  build/us-rev1/data/huffman_delta_single_zero_run_nodes.bin \
+  build/us-rev1/data/huffman_five_zero_runs.bin \
+  build/us-rev1/data/huffman_delta_five_zero_runs_nodes.bin \
+  build/us-rev1/data/huffman_nine_zero_runs.bin \
+  build/us-rev1/data/huffman_delta_nine_zero_runs_nodes.bin \
+  build/us-rev1/data/huffman_signed_small_nodes.bin \
+  build/us-rev1/slices/000DD834.bin \
+  build/us-rev1/data/sn64_intelligence_type_records.bin \
+  build/us-rev1/slices/000FDDF0.bin \
+  build/us-rev1/data/sn64_runtime_type_records.bin \
+  build/us-rev1/slices/00101000.bin \
   build/us-rev1/units/func_80400000_de.bin \
   build/us-rev1/slices/0016E67C.bin \
   build/us-rev1/units/func_80400E50_de.bin \

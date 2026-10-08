@@ -3961,7 +3961,15 @@ segments:
       - [0xD9F60, data, "rodata/writable/800D9360"]
       - [0xD9F70, data, "rodata/unresolved/800D9370"]
       - [0xDA0E8, data, "rodata/writable/800D94E8"]
-      - [0xDA194, data, "rodata/unresolved/800D9594"]
+      - [0xDA194, data, "src/huffman_initial_block_ranges.c"]
+      - [0xDA1E4, data, "src/huffman_single_zero_runs.c"]
+      - [0xDA39C, data, "src/huffman_delta_single_zero_run_nodes.c"]
+      - [0xDABA8, data, "src/huffman_five_zero_runs.c"]
+      - [0xDB440, data, "src/huffman_delta_five_zero_runs_nodes.c"]
+      - [0xDBC6C, data, "src/huffman_nine_zero_runs.c"]
+      - [0xDCBE4, data, "src/huffman_delta_nine_zero_runs_nodes.c"]
+      - [0xDD430, data, "src/huffman_signed_small_nodes.c"]
+      - [0xDD834, data, "rodata/unresolved/800DCC34"]
       - [0xE1720, rodata, "rodata/func_80400000_de/800E0B20"]
       - [0xE172C, rodata, "rodata/shared/800E0B2C"]
       - [0xE173D, data, "rodata/unresolved/800E0B3D"]
@@ -4384,9 +4392,9 @@ segments:
       - [0xF8904, data, "rodata/writable/800F7D04"]
       - [0xF891A, data, "rodata/unresolved/800F7D1A"]
       - [0xF8DF0, rodata, "rodata/shared/800F81F0"]
-      - [0xF8E03, data, "rodata/unresolved/800F8203"]
+      - [0xF8E03, data, "src/sn64_intelligence_type_records.c"]
       - [0xFDDF0, rodata, "rodata/shared/800FD1F0"]
-      - [0xFDE08, data, "rodata/unresolved/800FD208"]
+      - [0xFDE08, data, "src/sn64_runtime_type_records.c"]
   - name: "retained_101000"
     type: bin
     start: 0x101000

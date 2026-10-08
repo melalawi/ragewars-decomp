@@ -24,6 +24,7 @@ CPP := cpp
 AS := mips-linux-gnu-as
 LD := mips-linux-gnu-ld
 N64LINK := n64link
+OBJCOPY := mips-linux-gnu-objcopy
 INCLUDES := -Iinclude
 CPPFLAGS := -P -undef -nostdinc -D_LANGUAGE_C -DF3DEX_GBI_2 -D__GNUC__=2
 PREPROCESS_FLAGS = $(INCLUDES) -D__UNBAKE_STDARG_GCC=1 $(VERSION_DEFINES) $(CONSUMER)
@@ -124,7 +125,7 @@ setup:
 	@sha256sum --quiet -c tools/compilers.sha256
 
 clean:
-	rm -rf build/cas $(foreach v,$(VERSIONS),build/$v/src build/$v/units build/$v/hasm build/$v/slices)
+	rm -rf build/cas $(foreach v,$(VERSIONS),build/$v/src build/$v/units build/$v/hasm build/$v/data build/$v/slices)
 
 include $(foreach v,$(VERSIONS),versions/$v/slices.mk)
 include units.mk
@@ -154,6 +155,17 @@ HASM_BIN = printf '%s\n' '$(VER) $(*F)'; \
   $(N64LINK) place $(@D)/$(*F).o -o $(@D)/$(*F).placed.o --rom $($(VER).BASEROM) --text $($(VER).U.$(*F)) \
   $(addprefix --map ,$($(VER).MAP)) --symbols versions/$(VER)/symbols.ld --trim && \
   $(LINK_BIN)
+DATA_BIN = read key < $< && \
+  cp build/cas/$$key.o $(@D)/$(*F).o && \
+  $(OBJCOPY) --set-section-flags .rdata=alloc,load,readonly,data,contents \
+    --set-section-flags .rodata=alloc,load,readonly,data,contents \
+    --set-section-flags .data=alloc,load,data,contents \
+    --set-section-flags .sdata=alloc,load,data,contents $(@D)/$(*F).o && \
+  $(LD) -EB -T versions/$(VER)/$(NAME).data.ld \
+    --section-start=.data=$(firstword $(subst :, ,$($(VER).D.$(*F)))) \
+    -o $(@D)/$(*F).elf $(@D)/$(*F).o && \
+  $(OBJCOPY) -O binary --only-section=.data $(@D)/$(*F).elf $@ && \
+  [ "$$(wc -c < $@)" -eq $$(( $(word 3,$(subst :, ,$($(VER).D.$(*F)))) )) ]
 SLICE = dd if=$($(VER).BASEROM) of=$@ bs=65536 iflag=skip_bytes,count_bytes status=none \
   skip=$(word 1,$($(VER).S.$(*F))) count=$(word 2,$($(VER).S.$(*F)))
 
@@ -166,11 +178,13 @@ build/$1/units/%.bin: build/$1/src/%.key versions/$1/symbols.ld versions/$1/$$(N
 	$$(Q)$$(UNIT_BIN)
 build/$1/hasm/%.bin: src/%.s Makefile versions/$1/symbols.ld versions/$1/$$(NAME).ld | build/$1/hasm
 	$$(Q)$$(HASM_BIN)
+build/$1/data/%.bin: build/$1/src/%.key versions/$1/symbols.ld versions/$1/$$(NAME).data.ld | build/$1/data
+	$$(Q)$$(DATA_BIN)
 build/$1/slices/%.bin: $$($1.BASEROM) versions/$1/slices.mk | build/$1/slices
 	$$(Q)$$(SLICE)
 build/$1/$$(NAME).z64: $$($1.PIECES)
 	$$(Q)printf '%s\n' '$1 rom'; cat $$($1.PIECES) > $$@
-build/$1/src build/$1/units build/$1/hasm build/$1/slices:
+build/$1/src build/$1/units build/$1/hasm build/$1/data build/$1/slices:
 	$$(Q)mkdir -p $$@
 endef
 $(foreach v,$(VERSIONS),$(eval $(call VERSION_RULES,$v)))
