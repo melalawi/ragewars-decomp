@@ -10854,3 +10854,5 @@ ragewars_menu_strings_D5EF4_us_rev1 = 0x800d52f4;
 ragewars_menu_strings_D5F74_us_rev1 = 0x800d5374;
 
 ragewars_pak_ok_label_us_rev1 = 0x800d551c;
+
+D_800D7070 = 0x800d7070;

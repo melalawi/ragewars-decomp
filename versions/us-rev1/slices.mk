@@ -3542,49 +3542,159 @@ us-rev1.S.000CFDCC := 851404 96
 us-rev1.D.rw_pool_80225F44_CFE2C_us_rev1 := 0x800CF22C:0xCFE2C:0x4
 us-rev1.S.000CFE30 := 851504 908
 us-rev1.D.rw_pool_802312C8_D01BC_us_rev1 := 0x800CF5BC:0xD01BC:0x4
-us-rev1.S.000D01C0 := 852416 1892
+us-rev1.S.000D01C0 := 852416 1836
+us-rev1.D.ragewars_weapon_presentation_D08EC_us_rev1 := 0x800CFCEC:0xD08EC:0x8
+us-rev1.D.ragewars_weapon_availability_D08EC_us_rev1 := 0x800CFCF4:0xD08F4:0x2
+us-rev1.S.000D08F6 := 854262 14
+us-rev1.D.ragewars_weapon_impulse_scale_D08EC_us_rev1 := 0x800CFD04:0xD0904:0x4
+us-rev1.S.000D0908 := 854280 28
 us-rev1.D.ragewars_weapon_view_offset_D08EC_us_rev1 := 0x800CFD24:0xD0924:0xC
-us-rev1.S.000D0930 := 854320 84
+us-rev1.S.000D0930 := 854320 28
+us-rev1.D.ragewars_weapon_presentation_D094C_us_rev1 := 0x800CFD4C:0xD094C:0x8
+us-rev1.D.ragewars_weapon_availability_D094C_us_rev1 := 0x800CFD54:0xD0954:0x2
+us-rev1.S.000D0956 := 854358 14
+us-rev1.D.ragewars_weapon_impulse_scale_D094C_us_rev1 := 0x800CFD64:0xD0964:0x4
+us-rev1.S.000D0968 := 854376 28
 us-rev1.D.ragewars_weapon_view_offset_D094C_us_rev1 := 0x800CFD84:0xD0984:0xC
-us-rev1.S.000D0990 := 854416 84
+us-rev1.S.000D0990 := 854416 28
+us-rev1.D.ragewars_weapon_presentation_D09AC_us_rev1 := 0x800CFDAC:0xD09AC:0x8
+us-rev1.D.ragewars_weapon_availability_D09AC_us_rev1 := 0x800CFDB4:0xD09B4:0x2
+us-rev1.S.000D09B6 := 854454 14
+us-rev1.D.ragewars_weapon_impulse_scale_D09AC_us_rev1 := 0x800CFDC4:0xD09C4:0x4
+us-rev1.S.000D09C8 := 854472 28
 us-rev1.D.ragewars_weapon_view_offset_D09AC_us_rev1 := 0x800CFDE4:0xD09E4:0xC
-us-rev1.S.000D09F0 := 854512 84
+us-rev1.S.000D09F0 := 854512 28
+us-rev1.D.ragewars_weapon_presentation_D0A0C_us_rev1 := 0x800CFE0C:0xD0A0C:0x8
+us-rev1.D.ragewars_weapon_availability_D0A0C_us_rev1 := 0x800CFE14:0xD0A14:0x2
+us-rev1.S.000D0A16 := 854550 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0A0C_us_rev1 := 0x800CFE24:0xD0A24:0x4
+us-rev1.S.000D0A28 := 854568 28
 us-rev1.D.ragewars_weapon_view_offset_D0A0C_us_rev1 := 0x800CFE44:0xD0A44:0xC
-us-rev1.S.000D0A50 := 854608 84
+us-rev1.S.000D0A50 := 854608 28
+us-rev1.D.ragewars_weapon_presentation_D0A6C_us_rev1 := 0x800CFE6C:0xD0A6C:0x8
+us-rev1.D.ragewars_weapon_availability_D0A6C_us_rev1 := 0x800CFE74:0xD0A74:0x2
+us-rev1.S.000D0A76 := 854646 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0A6C_us_rev1 := 0x800CFE84:0xD0A84:0x4
+us-rev1.S.000D0A88 := 854664 28
 us-rev1.D.ragewars_weapon_view_offset_D0A6C_us_rev1 := 0x800CFEA4:0xD0AA4:0xC
-us-rev1.S.000D0AB0 := 854704 84
+us-rev1.S.000D0AB0 := 854704 28
+us-rev1.D.ragewars_weapon_presentation_D0ACC_us_rev1 := 0x800CFECC:0xD0ACC:0x8
+us-rev1.D.ragewars_weapon_availability_D0ACC_us_rev1 := 0x800CFED4:0xD0AD4:0x2
+us-rev1.S.000D0AD6 := 854742 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0ACC_us_rev1 := 0x800CFEE4:0xD0AE4:0x4
+us-rev1.S.000D0AE8 := 854760 28
 us-rev1.D.ragewars_weapon_view_offset_D0ACC_us_rev1 := 0x800CFF04:0xD0B04:0xC
-us-rev1.S.000D0B10 := 854800 84
+us-rev1.S.000D0B10 := 854800 28
+us-rev1.D.ragewars_weapon_presentation_D0B2C_us_rev1 := 0x800CFF2C:0xD0B2C:0x8
+us-rev1.D.ragewars_weapon_availability_D0B2C_us_rev1 := 0x800CFF34:0xD0B34:0x2
+us-rev1.S.000D0B36 := 854838 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0B2C_us_rev1 := 0x800CFF44:0xD0B44:0x4
+us-rev1.S.000D0B48 := 854856 28
 us-rev1.D.ragewars_weapon_view_offset_D0B2C_us_rev1 := 0x800CFF64:0xD0B64:0xC
-us-rev1.S.000D0B70 := 854896 84
+us-rev1.S.000D0B70 := 854896 28
+us-rev1.D.ragewars_weapon_presentation_D0B8C_us_rev1 := 0x800CFF8C:0xD0B8C:0x8
+us-rev1.D.ragewars_weapon_availability_D0B8C_us_rev1 := 0x800CFF94:0xD0B94:0x2
+us-rev1.S.000D0B96 := 854934 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0B8C_us_rev1 := 0x800CFFA4:0xD0BA4:0x4
+us-rev1.S.000D0BA8 := 854952 28
 us-rev1.D.ragewars_weapon_view_offset_D0B8C_us_rev1 := 0x800CFFC4:0xD0BC4:0xC
-us-rev1.S.000D0BD0 := 854992 84
+us-rev1.S.000D0BD0 := 854992 28
+us-rev1.D.ragewars_weapon_presentation_D0BEC_us_rev1 := 0x800CFFEC:0xD0BEC:0x8
+us-rev1.D.ragewars_weapon_availability_D0BEC_us_rev1 := 0x800CFFF4:0xD0BF4:0x2
+us-rev1.S.000D0BF6 := 855030 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0BEC_us_rev1 := 0x800D0004:0xD0C04:0x4
+us-rev1.S.000D0C08 := 855048 28
 us-rev1.D.ragewars_weapon_view_offset_D0BEC_us_rev1 := 0x800D0024:0xD0C24:0xC
-us-rev1.S.000D0C30 := 855088 84
+us-rev1.S.000D0C30 := 855088 28
+us-rev1.D.ragewars_weapon_presentation_D0C4C_us_rev1 := 0x800D004C:0xD0C4C:0x8
+us-rev1.D.ragewars_weapon_availability_D0C4C_us_rev1 := 0x800D0054:0xD0C54:0x2
+us-rev1.S.000D0C56 := 855126 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0C4C_us_rev1 := 0x800D0064:0xD0C64:0x4
+us-rev1.S.000D0C68 := 855144 28
 us-rev1.D.ragewars_weapon_view_offset_D0C4C_us_rev1 := 0x800D0084:0xD0C84:0xC
-us-rev1.S.000D0C90 := 855184 84
+us-rev1.S.000D0C90 := 855184 28
+us-rev1.D.ragewars_weapon_presentation_D0CAC_us_rev1 := 0x800D00AC:0xD0CAC:0x8
+us-rev1.D.ragewars_weapon_availability_D0CAC_us_rev1 := 0x800D00B4:0xD0CB4:0x2
+us-rev1.S.000D0CB6 := 855222 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0CAC_us_rev1 := 0x800D00C4:0xD0CC4:0x4
+us-rev1.S.000D0CC8 := 855240 28
 us-rev1.D.ragewars_weapon_view_offset_D0CAC_us_rev1 := 0x800D00E4:0xD0CE4:0xC
-us-rev1.S.000D0CF0 := 855280 84
+us-rev1.S.000D0CF0 := 855280 28
+us-rev1.D.ragewars_weapon_presentation_D0D0C_us_rev1 := 0x800D010C:0xD0D0C:0x8
+us-rev1.D.ragewars_weapon_availability_D0D0C_us_rev1 := 0x800D0114:0xD0D14:0x2
+us-rev1.S.000D0D16 := 855318 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0D0C_us_rev1 := 0x800D0124:0xD0D24:0x4
+us-rev1.S.000D0D28 := 855336 28
 us-rev1.D.ragewars_weapon_view_offset_D0D0C_us_rev1 := 0x800D0144:0xD0D44:0xC
-us-rev1.S.000D0D50 := 855376 84
+us-rev1.S.000D0D50 := 855376 28
+us-rev1.D.ragewars_weapon_presentation_D0D6C_us_rev1 := 0x800D016C:0xD0D6C:0x8
+us-rev1.D.ragewars_weapon_availability_D0D6C_us_rev1 := 0x800D0174:0xD0D74:0x2
+us-rev1.S.000D0D76 := 855414 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0D6C_us_rev1 := 0x800D0184:0xD0D84:0x4
+us-rev1.S.000D0D88 := 855432 28
 us-rev1.D.ragewars_weapon_view_offset_D0D6C_us_rev1 := 0x800D01A4:0xD0DA4:0xC
-us-rev1.S.000D0DB0 := 855472 84
+us-rev1.S.000D0DB0 := 855472 28
+us-rev1.D.ragewars_weapon_presentation_D0DCC_us_rev1 := 0x800D01CC:0xD0DCC:0x8
+us-rev1.D.ragewars_weapon_availability_D0DCC_us_rev1 := 0x800D01D4:0xD0DD4:0x2
+us-rev1.S.000D0DD6 := 855510 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0DCC_us_rev1 := 0x800D01E4:0xD0DE4:0x4
+us-rev1.S.000D0DE8 := 855528 28
 us-rev1.D.ragewars_weapon_view_offset_D0DCC_us_rev1 := 0x800D0204:0xD0E04:0xC
-us-rev1.S.000D0E10 := 855568 84
+us-rev1.S.000D0E10 := 855568 28
+us-rev1.D.ragewars_weapon_presentation_D0E2C_us_rev1 := 0x800D022C:0xD0E2C:0x8
+us-rev1.D.ragewars_weapon_availability_D0E2C_us_rev1 := 0x800D0234:0xD0E34:0x2
+us-rev1.S.000D0E36 := 855606 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0E2C_us_rev1 := 0x800D0244:0xD0E44:0x4
+us-rev1.S.000D0E48 := 855624 28
 us-rev1.D.ragewars_weapon_view_offset_D0E2C_us_rev1 := 0x800D0264:0xD0E64:0xC
-us-rev1.S.000D0E70 := 855664 84
+us-rev1.S.000D0E70 := 855664 28
+us-rev1.D.ragewars_weapon_presentation_D0E8C_us_rev1 := 0x800D028C:0xD0E8C:0x8
+us-rev1.D.ragewars_weapon_availability_D0E8C_us_rev1 := 0x800D0294:0xD0E94:0x2
+us-rev1.S.000D0E96 := 855702 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0E8C_us_rev1 := 0x800D02A4:0xD0EA4:0x4
+us-rev1.S.000D0EA8 := 855720 28
 us-rev1.D.ragewars_weapon_view_offset_D0E8C_us_rev1 := 0x800D02C4:0xD0EC4:0xC
-us-rev1.S.000D0ED0 := 855760 84
+us-rev1.S.000D0ED0 := 855760 28
+us-rev1.D.ragewars_weapon_presentation_D0EEC_us_rev1 := 0x800D02EC:0xD0EEC:0x8
+us-rev1.D.ragewars_weapon_availability_D0EEC_us_rev1 := 0x800D02F4:0xD0EF4:0x2
+us-rev1.S.000D0EF6 := 855798 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0EEC_us_rev1 := 0x800D0304:0xD0F04:0x4
+us-rev1.S.000D0F08 := 855816 28
 us-rev1.D.ragewars_weapon_view_offset_D0EEC_us_rev1 := 0x800D0324:0xD0F24:0xC
-us-rev1.S.000D0F30 := 855856 84
+us-rev1.S.000D0F30 := 855856 28
+us-rev1.D.ragewars_weapon_presentation_D0F4C_us_rev1 := 0x800D034C:0xD0F4C:0x8
+us-rev1.D.ragewars_weapon_availability_D0F4C_us_rev1 := 0x800D0354:0xD0F54:0x2
+us-rev1.S.000D0F56 := 855894 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0F4C_us_rev1 := 0x800D0364:0xD0F64:0x4
+us-rev1.S.000D0F68 := 855912 28
 us-rev1.D.ragewars_weapon_view_offset_D0F4C_us_rev1 := 0x800D0384:0xD0F84:0xC
-us-rev1.S.000D0F90 := 855952 84
+us-rev1.S.000D0F90 := 855952 28
+us-rev1.D.ragewars_weapon_presentation_D0FAC_us_rev1 := 0x800D03AC:0xD0FAC:0x8
+us-rev1.D.ragewars_weapon_availability_D0FAC_us_rev1 := 0x800D03B4:0xD0FB4:0x2
+us-rev1.S.000D0FB6 := 855990 14
+us-rev1.D.ragewars_weapon_impulse_scale_D0FAC_us_rev1 := 0x800D03C4:0xD0FC4:0x4
+us-rev1.S.000D0FC8 := 856008 28
 us-rev1.D.ragewars_weapon_view_offset_D0FAC_us_rev1 := 0x800D03E4:0xD0FE4:0xC
-us-rev1.S.000D0FF0 := 856048 84
+us-rev1.S.000D0FF0 := 856048 28
+us-rev1.D.ragewars_weapon_presentation_D100C_us_rev1 := 0x800D040C:0xD100C:0x8
+us-rev1.D.ragewars_weapon_availability_D100C_us_rev1 := 0x800D0414:0xD1014:0x2
+us-rev1.S.000D1016 := 856086 14
+us-rev1.D.ragewars_weapon_impulse_scale_D100C_us_rev1 := 0x800D0424:0xD1024:0x4
+us-rev1.S.000D1028 := 856104 28
 us-rev1.D.ragewars_weapon_view_offset_D100C_us_rev1 := 0x800D0444:0xD1044:0xC
-us-rev1.S.000D1050 := 856144 84
+us-rev1.S.000D1050 := 856144 28
+us-rev1.D.ragewars_weapon_presentation_D106C_us_rev1 := 0x800D046C:0xD106C:0x8
+us-rev1.D.ragewars_weapon_availability_D106C_us_rev1 := 0x800D0474:0xD1074:0x2
+us-rev1.S.000D1076 := 856182 14
+us-rev1.D.ragewars_weapon_impulse_scale_D106C_us_rev1 := 0x800D0484:0xD1084:0x4
+us-rev1.S.000D1088 := 856200 28
 us-rev1.D.ragewars_weapon_view_offset_D106C_us_rev1 := 0x800D04A4:0xD10A4:0xC
-us-rev1.S.000D10B0 := 856240 84
+us-rev1.S.000D10B0 := 856240 28
+us-rev1.D.ragewars_weapon_presentation_D10CC_us_rev1 := 0x800D04CC:0xD10CC:0x8
+us-rev1.D.ragewars_weapon_availability_D10CC_us_rev1 := 0x800D04D4:0xD10D4:0x2
+us-rev1.S.000D10D6 := 856278 14
+us-rev1.D.ragewars_weapon_impulse_scale_D10CC_us_rev1 := 0x800D04E4:0xD10E4:0x4
+us-rev1.S.000D10E8 := 856296 28
 us-rev1.D.ragewars_weapon_view_offset_D10CC_us_rev1 := 0x800D0504:0xD1104:0xC
 us-rev1.S.000D1110 := 856336 28
 us-rev1.D.ragewars_weapon_resource_directory_us_rev1 := 0x800D052C:0xD112C:0x58
@@ -8790,48 +8900,158 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CFE30.bin \
   build/us-rev1/data/rw_pool_802312C8_D01BC_us_rev1.bin \
   build/us-rev1/slices/000D01C0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D08EC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D08EC_us_rev1.bin \
+  build/us-rev1/slices/000D08F6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D08EC_us_rev1.bin \
+  build/us-rev1/slices/000D0908.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D08EC_us_rev1.bin \
   build/us-rev1/slices/000D0930.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D094C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D094C_us_rev1.bin \
+  build/us-rev1/slices/000D0956.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D094C_us_rev1.bin \
+  build/us-rev1/slices/000D0968.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D094C_us_rev1.bin \
   build/us-rev1/slices/000D0990.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D09AC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D09AC_us_rev1.bin \
+  build/us-rev1/slices/000D09B6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D09AC_us_rev1.bin \
+  build/us-rev1/slices/000D09C8.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D09AC_us_rev1.bin \
   build/us-rev1/slices/000D09F0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0A0C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0A0C_us_rev1.bin \
+  build/us-rev1/slices/000D0A16.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0A0C_us_rev1.bin \
+  build/us-rev1/slices/000D0A28.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0A0C_us_rev1.bin \
   build/us-rev1/slices/000D0A50.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0A6C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0A6C_us_rev1.bin \
+  build/us-rev1/slices/000D0A76.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0A6C_us_rev1.bin \
+  build/us-rev1/slices/000D0A88.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0A6C_us_rev1.bin \
   build/us-rev1/slices/000D0AB0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0ACC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0ACC_us_rev1.bin \
+  build/us-rev1/slices/000D0AD6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0ACC_us_rev1.bin \
+  build/us-rev1/slices/000D0AE8.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0ACC_us_rev1.bin \
   build/us-rev1/slices/000D0B10.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0B2C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0B2C_us_rev1.bin \
+  build/us-rev1/slices/000D0B36.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0B2C_us_rev1.bin \
+  build/us-rev1/slices/000D0B48.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0B2C_us_rev1.bin \
   build/us-rev1/slices/000D0B70.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0B8C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0B8C_us_rev1.bin \
+  build/us-rev1/slices/000D0B96.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0B8C_us_rev1.bin \
+  build/us-rev1/slices/000D0BA8.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0B8C_us_rev1.bin \
   build/us-rev1/slices/000D0BD0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0BEC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0BEC_us_rev1.bin \
+  build/us-rev1/slices/000D0BF6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0BEC_us_rev1.bin \
+  build/us-rev1/slices/000D0C08.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0BEC_us_rev1.bin \
   build/us-rev1/slices/000D0C30.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0C4C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0C4C_us_rev1.bin \
+  build/us-rev1/slices/000D0C56.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0C4C_us_rev1.bin \
+  build/us-rev1/slices/000D0C68.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0C4C_us_rev1.bin \
   build/us-rev1/slices/000D0C90.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0CAC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0CAC_us_rev1.bin \
+  build/us-rev1/slices/000D0CB6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0CAC_us_rev1.bin \
+  build/us-rev1/slices/000D0CC8.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0CAC_us_rev1.bin \
   build/us-rev1/slices/000D0CF0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0D0C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0D0C_us_rev1.bin \
+  build/us-rev1/slices/000D0D16.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0D0C_us_rev1.bin \
+  build/us-rev1/slices/000D0D28.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0D0C_us_rev1.bin \
   build/us-rev1/slices/000D0D50.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0D6C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0D6C_us_rev1.bin \
+  build/us-rev1/slices/000D0D76.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0D6C_us_rev1.bin \
+  build/us-rev1/slices/000D0D88.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0D6C_us_rev1.bin \
   build/us-rev1/slices/000D0DB0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0DCC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0DCC_us_rev1.bin \
+  build/us-rev1/slices/000D0DD6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0DCC_us_rev1.bin \
+  build/us-rev1/slices/000D0DE8.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0DCC_us_rev1.bin \
   build/us-rev1/slices/000D0E10.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0E2C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0E2C_us_rev1.bin \
+  build/us-rev1/slices/000D0E36.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0E2C_us_rev1.bin \
+  build/us-rev1/slices/000D0E48.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0E2C_us_rev1.bin \
   build/us-rev1/slices/000D0E70.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0E8C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0E8C_us_rev1.bin \
+  build/us-rev1/slices/000D0E96.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0E8C_us_rev1.bin \
+  build/us-rev1/slices/000D0EA8.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0E8C_us_rev1.bin \
   build/us-rev1/slices/000D0ED0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0EEC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0EEC_us_rev1.bin \
+  build/us-rev1/slices/000D0EF6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0EEC_us_rev1.bin \
+  build/us-rev1/slices/000D0F08.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0EEC_us_rev1.bin \
   build/us-rev1/slices/000D0F30.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0F4C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0F4C_us_rev1.bin \
+  build/us-rev1/slices/000D0F56.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0F4C_us_rev1.bin \
+  build/us-rev1/slices/000D0F68.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0F4C_us_rev1.bin \
   build/us-rev1/slices/000D0F90.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D0FAC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D0FAC_us_rev1.bin \
+  build/us-rev1/slices/000D0FB6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D0FAC_us_rev1.bin \
+  build/us-rev1/slices/000D0FC8.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D0FAC_us_rev1.bin \
   build/us-rev1/slices/000D0FF0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D100C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D100C_us_rev1.bin \
+  build/us-rev1/slices/000D1016.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D100C_us_rev1.bin \
+  build/us-rev1/slices/000D1028.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D100C_us_rev1.bin \
   build/us-rev1/slices/000D1050.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D106C_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D106C_us_rev1.bin \
+  build/us-rev1/slices/000D1076.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D106C_us_rev1.bin \
+  build/us-rev1/slices/000D1088.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D106C_us_rev1.bin \
   build/us-rev1/slices/000D10B0.bin \
+  build/us-rev1/data/ragewars_weapon_presentation_D10CC_us_rev1.bin \
+  build/us-rev1/data/ragewars_weapon_availability_D10CC_us_rev1.bin \
+  build/us-rev1/slices/000D10D6.bin \
+  build/us-rev1/data/ragewars_weapon_impulse_scale_D10CC_us_rev1.bin \
+  build/us-rev1/slices/000D10E8.bin \
   build/us-rev1/data/ragewars_weapon_view_offset_D10CC_us_rev1.bin \
   build/us-rev1/slices/000D1110.bin \
   build/us-rev1/data/ragewars_weapon_resource_directory_us_rev1.bin \
