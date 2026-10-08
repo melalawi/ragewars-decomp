@@ -3513,7 +3513,9 @@ us-rev1.S.000CDB48 := 842568 2792
 us-rev1.D.rw_pool_80209DAC_CE630_us_rev1 := 0x800CDA30:0xCE630:0xC
 us-rev1.S.000CE63C := 845372 4
 us-rev1.D.ragewars_actor_mode_dispatch_us_rev1 := 0x800CDA40:0xCE640:0xA0
-us-rev1.S.000CE6E0 := 845536 3192
+us-rev1.S.000CE6E0 := 845536 16
+us-rev1.D.ragewars_actor_radial_directions_us_rev1 := 0x800CDAF0:0xCE6F0:0x60
+us-rev1.S.000CE750 := 845648 3080
 us-rev1.D.rw_pool_80225F44_CF358_us_rev1 := 0x800CE758:0xCF358:0x4
 us-rev1.S.000CF35C := 848732 64
 us-rev1.D.ragewars_movement_tuning_CF39C_us_rev1 := 0x800CE79C:0xCF39C:0x20
@@ -9111,6 +9113,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CE63C.bin \
   build/us-rev1/data/ragewars_actor_mode_dispatch_us_rev1.bin \
   build/us-rev1/slices/000CE6E0.bin \
+  build/us-rev1/data/ragewars_actor_radial_directions_us_rev1.bin \
+  build/us-rev1/slices/000CE750.bin \
   build/us-rev1/data/rw_pool_80225F44_CF358_us_rev1.bin \
   build/us-rev1/slices/000CF35C.bin \
   build/us-rev1/data/ragewars_movement_tuning_CF39C_us_rev1.bin \

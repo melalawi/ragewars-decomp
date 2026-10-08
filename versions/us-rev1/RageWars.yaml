@@ -3902,6 +3902,8 @@ segments:
       - [0xCE63C, data, "rodata/unresolved/800CDA3C"]
       - [0xCE640, data, "src/ragewars_actor_mode_dispatch_us_rev1.c"]
       - [0xCE6E0, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0"]
+      - [0xCE6F0, data, "src/ragewars_actor_radial_directions_us_rev1.c"]
+      - [0xCE750, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750"]
       - [0xCEF8C, rodata, "rodata/shared/800CE38C"]
       - [0xCEF90, data, "rodata/unresolved/800CE390"]
       - [0xCEFCC, rodata, "rodata/shared/800CE3CC"]
