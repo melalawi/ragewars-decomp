@@ -4080,9 +4080,140 @@ us-rev1.S.000CFDBC := 851388 12
 us-rev1.D.rw_hud_flash_offset_CFDC8_us_rev1 := 0x800CF1C8:0xCFDC8:0x4
 us-rev1.S.000CFDCC := 851404 96
 us-rev1.D.rw_pool_80225F44_CFE2C_us_rev1 := 0x800CF22C:0xCFE2C:0x4
-us-rev1.S.000CFE30 := 851504 908
+us-rev1.S.000CFE30 := 851504 136
+us-rev1.D.rw_weapon_state_entry_CFEB8_us_rev1 := 0x800CF2B8:0xCFEB8:0x8
+us-rev1.S.000CFEC0 := 851648 8
+us-rev1.D.rw_weapon_state_resource_animation_CFEC8_us_rev1 := 0x800CF2C8:0xCFEC8:0x10
+us-rev1.D.rw_weapon_state_entry_CFED8_us_rev1 := 0x800CF2D8:0xCFED8:0x8
+us-rev1.S.000CFEE0 := 851680 8
+us-rev1.D.rw_weapon_state_resource_animation_CFEE8_us_rev1 := 0x800CF2E8:0xCFEE8:0x10
+us-rev1.D.rw_weapon_state_entry_CFEF8_us_rev1 := 0x800CF2F8:0xCFEF8:0x8
+us-rev1.S.000CFF00 := 851712 8
+us-rev1.D.rw_weapon_state_resource_animation_CFF08_us_rev1 := 0x800CF308:0xCFF08:0x10
+us-rev1.D.rw_weapon_state_entry_CFF18_us_rev1 := 0x800CF318:0xCFF18:0x8
+us-rev1.S.000CFF20 := 851744 8
+us-rev1.D.rw_weapon_state_resource_animation_CFF28_us_rev1 := 0x800CF328:0xCFF28:0x10
+us-rev1.D.rw_weapon_state_entry_CFF38_us_rev1 := 0x800CF338:0xCFF38:0x8
+us-rev1.S.000CFF40 := 851776 12
+us-rev1.D.rw_weapon_state_animation_CFF4C_us_rev1 := 0x800CF34C:0xCFF4C:0xC
+us-rev1.D.rw_weapon_state_entry_CFF58_us_rev1 := 0x800CF358:0xCFF58:0x8
+us-rev1.S.000CFF60 := 851808 12
+us-rev1.D.rw_weapon_state_animation_CFF6C_us_rev1 := 0x800CF36C:0xCFF6C:0xC
+us-rev1.D.rw_weapon_state_entry_CFF78_us_rev1 := 0x800CF378:0xCFF78:0x8
+us-rev1.S.000CFF80 := 851840 8
+us-rev1.D.rw_weapon_state_resource_animation_CFF88_us_rev1 := 0x800CF388:0xCFF88:0x10
+us-rev1.D.rw_weapon_state_end_CFF98_us_rev1 := 0x800CF398:0xCFF98:0x4
+us-rev1.S.000CFF9C := 851868 60
+us-rev1.D.rw_weapon_state_entry_CFFD8_us_rev1 := 0x800CF3D8:0xCFFD8:0x8
+us-rev1.S.000CFFE0 := 851936 8
+us-rev1.D.rw_weapon_state_resource_animation_CFFE8_us_rev1 := 0x800CF3E8:0xCFFE8:0x10
+us-rev1.D.rw_weapon_state_entry_CFFF8_us_rev1 := 0x800CF3F8:0xCFFF8:0x8
+us-rev1.S.000D0000 := 851968 8
+us-rev1.D.rw_weapon_state_resource_animation_D0008_us_rev1 := 0x800CF408:0xD0008:0x10
+us-rev1.D.rw_weapon_state_entry_D0018_us_rev1 := 0x800CF418:0xD0018:0x8
+us-rev1.S.000D0020 := 852000 8
+us-rev1.D.rw_weapon_state_resource_animation_D0028_us_rev1 := 0x800CF428:0xD0028:0x10
+us-rev1.D.rw_weapon_state_end_D0038_us_rev1 := 0x800CF438:0xD0038:0x4
+us-rev1.S.000D003C := 852028 256
+us-rev1.D.rw_weapon_state_entry_D013C_us_rev1 := 0x800CF53C:0xD013C:0x8
+us-rev1.S.000D0144 := 852292 8
+us-rev1.D.rw_weapon_state_resource_animation_D014C_us_rev1 := 0x800CF54C:0xD014C:0x10
+us-rev1.D.rw_weapon_state_entry_D015C_us_rev1 := 0x800CF55C:0xD015C:0x8
+us-rev1.S.000D0164 := 852324 8
+us-rev1.D.rw_weapon_state_resource_animation_D016C_us_rev1 := 0x800CF56C:0xD016C:0x10
+us-rev1.D.rw_weapon_state_entry_D017C_us_rev1 := 0x800CF57C:0xD017C:0x8
+us-rev1.S.000D0184 := 852356 8
+us-rev1.D.rw_weapon_state_resource_animation_D018C_us_rev1 := 0x800CF58C:0xD018C:0x10
+us-rev1.D.rw_weapon_state_end_D019C_us_rev1 := 0x800CF59C:0xD019C:0x4
+us-rev1.S.000D01A0 := 852384 28
 us-rev1.D.rw_pool_802312C8_D01BC_us_rev1 := 0x800CF5BC:0xD01BC:0x4
-us-rev1.S.000D01C0 := 852416 1356
+us-rev1.S.000D01C0 := 852416 32
+us-rev1.D.rw_weapon_state_entry_D01E0_us_rev1 := 0x800CF5E0:0xD01E0:0x8
+us-rev1.S.000D01E8 := 852456 8
+us-rev1.D.rw_weapon_state_resource_animation_D01F0_us_rev1 := 0x800CF5F0:0xD01F0:0x10
+us-rev1.D.rw_weapon_state_entry_D0200_us_rev1 := 0x800CF600:0xD0200:0x8
+us-rev1.S.000D0208 := 852488 8
+us-rev1.D.rw_weapon_state_resource_animation_D0210_us_rev1 := 0x800CF610:0xD0210:0x10
+us-rev1.D.rw_weapon_state_entry_D0220_us_rev1 := 0x800CF620:0xD0220:0x8
+us-rev1.S.000D0228 := 852520 8
+us-rev1.D.rw_weapon_state_resource_animation_D0230_us_rev1 := 0x800CF630:0xD0230:0x10
+us-rev1.D.rw_weapon_state_end_D0240_us_rev1 := 0x800CF640:0xD0240:0x4
+us-rev1.S.000D0244 := 852548 60
+us-rev1.D.rw_weapon_state_entry_D0280_us_rev1 := 0x800CF680:0xD0280:0x8
+us-rev1.S.000D0288 := 852616 8
+us-rev1.D.rw_weapon_state_resource_animation_D0290_us_rev1 := 0x800CF690:0xD0290:0x10
+us-rev1.D.rw_weapon_state_entry_D02A0_us_rev1 := 0x800CF6A0:0xD02A0:0x8
+us-rev1.S.000D02A8 := 852648 8
+us-rev1.D.rw_weapon_state_resource_animation_D02B0_us_rev1 := 0x800CF6B0:0xD02B0:0x10
+us-rev1.D.rw_weapon_state_end_D02C0_us_rev1 := 0x800CF6C0:0xD02C0:0x4
+us-rev1.S.000D02C4 := 852676 60
+us-rev1.D.rw_weapon_state_entry_D0300_us_rev1 := 0x800CF700:0xD0300:0x8
+us-rev1.S.000D0308 := 852744 12
+us-rev1.D.rw_weapon_state_animation_D0314_us_rev1 := 0x800CF714:0xD0314:0xC
+us-rev1.D.rw_weapon_state_end_D0320_us_rev1 := 0x800CF720:0xD0320:0x4
+us-rev1.S.000D0324 := 852772 60
+us-rev1.D.rw_weapon_state_entry_D0360_us_rev1 := 0x800CF760:0xD0360:0x8
+us-rev1.S.000D0368 := 852840 8
+us-rev1.D.rw_weapon_state_resource_animation_D0370_us_rev1 := 0x800CF770:0xD0370:0x10
+us-rev1.D.rw_weapon_state_entry_D0380_us_rev1 := 0x800CF780:0xD0380:0x8
+us-rev1.S.000D0388 := 852872 8
+us-rev1.D.rw_weapon_state_resource_animation_D0390_us_rev1 := 0x800CF790:0xD0390:0x10
+us-rev1.D.rw_weapon_state_entry_D03A0_us_rev1 := 0x800CF7A0:0xD03A0:0x8
+us-rev1.S.000D03A8 := 852904 8
+us-rev1.D.rw_weapon_state_resource_animation_D03B0_us_rev1 := 0x800CF7B0:0xD03B0:0x10
+us-rev1.D.rw_weapon_state_end_D03C0_us_rev1 := 0x800CF7C0:0xD03C0:0x4
+us-rev1.S.000D03C4 := 852932 60
+us-rev1.D.rw_weapon_state_entry_D0400_us_rev1 := 0x800CF800:0xD0400:0x8
+us-rev1.S.000D0408 := 853000 8
+us-rev1.D.rw_weapon_state_resource_animation_D0410_us_rev1 := 0x800CF810:0xD0410:0x10
+us-rev1.D.rw_weapon_state_entry_D0420_us_rev1 := 0x800CF820:0xD0420:0x8
+us-rev1.S.000D0428 := 853032 8
+us-rev1.D.rw_weapon_state_resource_animation_D0430_us_rev1 := 0x800CF830:0xD0430:0x10
+us-rev1.D.rw_weapon_state_end_D0440_us_rev1 := 0x800CF840:0xD0440:0x4
+us-rev1.S.000D0444 := 853060 60
+us-rev1.D.rw_weapon_state_entry_D0480_us_rev1 := 0x800CF880:0xD0480:0x8
+us-rev1.S.000D0488 := 853128 8
+us-rev1.D.rw_weapon_state_resource_animation_D0490_us_rev1 := 0x800CF890:0xD0490:0x10
+us-rev1.D.rw_weapon_state_entry_D04A0_us_rev1 := 0x800CF8A0:0xD04A0:0x8
+us-rev1.S.000D04A8 := 853160 8
+us-rev1.D.rw_weapon_state_resource_animation_D04B0_us_rev1 := 0x800CF8B0:0xD04B0:0x10
+us-rev1.D.rw_weapon_state_end_D04C0_us_rev1 := 0x800CF8C0:0xD04C0:0x4
+us-rev1.S.000D04C4 := 853188 60
+us-rev1.D.rw_weapon_state_entry_D0500_us_rev1 := 0x800CF900:0xD0500:0x8
+us-rev1.S.000D0508 := 853256 8
+us-rev1.D.rw_weapon_state_resource_animation_D0510_us_rev1 := 0x800CF910:0xD0510:0x10
+us-rev1.D.rw_weapon_state_entry_D0520_us_rev1 := 0x800CF920:0xD0520:0x8
+us-rev1.S.000D0528 := 853288 8
+us-rev1.D.rw_weapon_state_resource_animation_D0530_us_rev1 := 0x800CF930:0xD0530:0x10
+us-rev1.D.rw_weapon_state_entry_D0540_us_rev1 := 0x800CF940:0xD0540:0x8
+us-rev1.S.000D0548 := 853320 8
+us-rev1.D.rw_weapon_state_resource_animation_D0550_us_rev1 := 0x800CF950:0xD0550:0x10
+us-rev1.D.rw_weapon_state_end_D0560_us_rev1 := 0x800CF960:0xD0560:0x4
+us-rev1.S.000D0564 := 853348 60
+us-rev1.D.rw_weapon_state_entry_D05A0_us_rev1 := 0x800CF9A0:0xD05A0:0x8
+us-rev1.S.000D05A8 := 853416 8
+us-rev1.D.rw_weapon_state_resource_animation_D05B0_us_rev1 := 0x800CF9B0:0xD05B0:0x10
+us-rev1.D.rw_weapon_state_end_D05C0_us_rev1 := 0x800CF9C0:0xD05C0:0x4
+us-rev1.S.000D05C4 := 853444 64
+us-rev1.D.rw_weapon_state_entry_D0604_us_rev1 := 0x800CFA04:0xD0604:0x8
+us-rev1.S.000D060C := 853516 8
+us-rev1.D.rw_weapon_state_resource_animation_D0614_us_rev1 := 0x800CFA14:0xD0614:0x10
+us-rev1.D.rw_weapon_state_entry_D0624_us_rev1 := 0x800CFA24:0xD0624:0x8
+us-rev1.S.000D062C := 853548 8
+us-rev1.D.rw_weapon_state_resource_animation_D0634_us_rev1 := 0x800CFA34:0xD0634:0x10
+us-rev1.D.rw_weapon_state_entry_D0644_us_rev1 := 0x800CFA44:0xD0644:0x8
+us-rev1.S.000D064C := 853580 8
+us-rev1.D.rw_weapon_state_resource_animation_D0654_us_rev1 := 0x800CFA54:0xD0654:0x10
+us-rev1.D.rw_weapon_state_end_D0664_us_rev1 := 0x800CFA64:0xD0664:0x4
+us-rev1.S.000D0668 := 853608 60
+us-rev1.D.rw_weapon_state_entry_D06A4_us_rev1 := 0x800CFAA4:0xD06A4:0x8
+us-rev1.S.000D06AC := 853676 8
+us-rev1.D.rw_weapon_state_resource_animation_D06B4_us_rev1 := 0x800CFAB4:0xD06B4:0x10
+us-rev1.D.rw_weapon_state_entry_D06C4_us_rev1 := 0x800CFAC4:0xD06C4:0x8
+us-rev1.S.000D06CC := 853708 8
+us-rev1.D.rw_weapon_state_resource_animation_D06D4_us_rev1 := 0x800CFAD4:0xD06D4:0x10
+us-rev1.D.rw_weapon_state_end_D06E4_us_rev1 := 0x800CFAE4:0xD06E4:0x4
+us-rev1.S.000D06E8 := 853736 36
 us-rev1.D.ragewars_weapon_requirement_kind_D070C_us_rev1 := 0x800CFB0C:0xD070C:0x2
 us-rev1.S.000D070E := 853774 2
 us-rev1.D.ragewars_weapon_requirement_item_id_D070C_us_rev1 := 0x800CFB10:0xD0710:0x2
@@ -10380,8 +10511,139 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CFDCC.bin \
   build/us-rev1/data/rw_pool_80225F44_CFE2C_us_rev1.bin \
   build/us-rev1/slices/000CFE30.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFEB8_us_rev1.bin \
+  build/us-rev1/slices/000CFEC0.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_CFEC8_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFED8_us_rev1.bin \
+  build/us-rev1/slices/000CFEE0.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_CFEE8_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFEF8_us_rev1.bin \
+  build/us-rev1/slices/000CFF00.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_CFF08_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFF18_us_rev1.bin \
+  build/us-rev1/slices/000CFF20.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_CFF28_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFF38_us_rev1.bin \
+  build/us-rev1/slices/000CFF40.bin \
+  build/us-rev1/data/rw_weapon_state_animation_CFF4C_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFF58_us_rev1.bin \
+  build/us-rev1/slices/000CFF60.bin \
+  build/us-rev1/data/rw_weapon_state_animation_CFF6C_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFF78_us_rev1.bin \
+  build/us-rev1/slices/000CFF80.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_CFF88_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_CFF98_us_rev1.bin \
+  build/us-rev1/slices/000CFF9C.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFFD8_us_rev1.bin \
+  build/us-rev1/slices/000CFFE0.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_CFFE8_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_CFFF8_us_rev1.bin \
+  build/us-rev1/slices/000D0000.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0008_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0018_us_rev1.bin \
+  build/us-rev1/slices/000D0020.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0028_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D0038_us_rev1.bin \
+  build/us-rev1/slices/000D003C.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D013C_us_rev1.bin \
+  build/us-rev1/slices/000D0144.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D014C_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D015C_us_rev1.bin \
+  build/us-rev1/slices/000D0164.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D016C_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D017C_us_rev1.bin \
+  build/us-rev1/slices/000D0184.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D018C_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D019C_us_rev1.bin \
+  build/us-rev1/slices/000D01A0.bin \
   build/us-rev1/data/rw_pool_802312C8_D01BC_us_rev1.bin \
   build/us-rev1/slices/000D01C0.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D01E0_us_rev1.bin \
+  build/us-rev1/slices/000D01E8.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D01F0_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0200_us_rev1.bin \
+  build/us-rev1/slices/000D0208.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0210_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0220_us_rev1.bin \
+  build/us-rev1/slices/000D0228.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0230_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D0240_us_rev1.bin \
+  build/us-rev1/slices/000D0244.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0280_us_rev1.bin \
+  build/us-rev1/slices/000D0288.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0290_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D02A0_us_rev1.bin \
+  build/us-rev1/slices/000D02A8.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D02B0_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D02C0_us_rev1.bin \
+  build/us-rev1/slices/000D02C4.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0300_us_rev1.bin \
+  build/us-rev1/slices/000D0308.bin \
+  build/us-rev1/data/rw_weapon_state_animation_D0314_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D0320_us_rev1.bin \
+  build/us-rev1/slices/000D0324.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0360_us_rev1.bin \
+  build/us-rev1/slices/000D0368.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0370_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0380_us_rev1.bin \
+  build/us-rev1/slices/000D0388.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0390_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D03A0_us_rev1.bin \
+  build/us-rev1/slices/000D03A8.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D03B0_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D03C0_us_rev1.bin \
+  build/us-rev1/slices/000D03C4.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0400_us_rev1.bin \
+  build/us-rev1/slices/000D0408.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0410_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0420_us_rev1.bin \
+  build/us-rev1/slices/000D0428.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0430_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D0440_us_rev1.bin \
+  build/us-rev1/slices/000D0444.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0480_us_rev1.bin \
+  build/us-rev1/slices/000D0488.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0490_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D04A0_us_rev1.bin \
+  build/us-rev1/slices/000D04A8.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D04B0_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D04C0_us_rev1.bin \
+  build/us-rev1/slices/000D04C4.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0500_us_rev1.bin \
+  build/us-rev1/slices/000D0508.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0510_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0520_us_rev1.bin \
+  build/us-rev1/slices/000D0528.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0530_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0540_us_rev1.bin \
+  build/us-rev1/slices/000D0548.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0550_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D0560_us_rev1.bin \
+  build/us-rev1/slices/000D0564.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D05A0_us_rev1.bin \
+  build/us-rev1/slices/000D05A8.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D05B0_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D05C0_us_rev1.bin \
+  build/us-rev1/slices/000D05C4.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0604_us_rev1.bin \
+  build/us-rev1/slices/000D060C.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0614_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0624_us_rev1.bin \
+  build/us-rev1/slices/000D062C.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0634_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D0644_us_rev1.bin \
+  build/us-rev1/slices/000D064C.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D0654_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D0664_us_rev1.bin \
+  build/us-rev1/slices/000D0668.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D06A4_us_rev1.bin \
+  build/us-rev1/slices/000D06AC.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D06B4_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_entry_D06C4_us_rev1.bin \
+  build/us-rev1/slices/000D06CC.bin \
+  build/us-rev1/data/rw_weapon_state_resource_animation_D06D4_us_rev1.bin \
+  build/us-rev1/data/rw_weapon_state_end_D06E4_us_rev1.bin \
+  build/us-rev1/slices/000D06E8.bin \
   build/us-rev1/data/ragewars_weapon_requirement_kind_D070C_us_rev1.bin \
   build/us-rev1/slices/000D070E.bin \
   build/us-rev1/data/ragewars_weapon_requirement_item_id_D070C_us_rev1.bin \
