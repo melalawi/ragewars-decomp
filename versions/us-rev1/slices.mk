@@ -3529,7 +3529,9 @@ us-rev1.D.ragewars_texture_rgba16_sharpen_us_rev1 := 0x800D1138:0xD1D38:0x98
 us-rev1.D.ragewars_texture_intensity_mip_us_rev1 := 0x800D11D0:0xD1DD0:0x98
 us-rev1.D.ragewars_particle_draw_depth_us_rev1 := 0x800D1268:0xD1E68:0x88
 us-rev1.D.ragewars_particle_draw_decal_us_rev1 := 0x800D12F0:0xD1EF0:0x88
-us-rev1.S.000D1F78 := 860024 312
+us-rev1.S.000D1F78 := 860024 8
+us-rev1.D.ragewars_effect_callback_flags_us_rev1 := 0x800D1380:0xD1F80:0x128
+us-rev1.S.000D20A8 := 860328 8
 us-rev1.D.ragewars_particle_intensity_texture_us_rev1 := 0x800D14B0:0xD20B0:0x100
 us-rev1.S.000D21B0 := 860592 112
 us-rev1.D.ragewars_arccos_table_us_rev1 := 0x800D1620:0xD2220:0x1008
@@ -8606,6 +8608,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_particle_draw_depth_us_rev1.bin \
   build/us-rev1/data/ragewars_particle_draw_decal_us_rev1.bin \
   build/us-rev1/slices/000D1F78.bin \
+  build/us-rev1/data/ragewars_effect_callback_flags_us_rev1.bin \
+  build/us-rev1/slices/000D20A8.bin \
   build/us-rev1/data/ragewars_particle_intensity_texture_us_rev1.bin \
   build/us-rev1/slices/000D21B0.bin \
   build/us-rev1/data/ragewars_arccos_table_us_rev1.bin \
