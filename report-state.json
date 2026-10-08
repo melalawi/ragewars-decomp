@@ -4696,7 +4696,7 @@
     "versions/us-rev1/RageWars.yaml": "6dc369fb55389345581692e25e1efa6c146220583916d8d9338fe848f982a073",
     "versions/us-rev1/symbol_addrs.txt": "9c23791b448122d8ab5a8912f6e61daf010141b864b0fce64964cd238ac71b2a",
     "versions/us-rev1/symbols.ld": "afdd24d77fa792eabb3ed23f35321dc24549a855f540c8c4b46b9c51fd107658",
-    "native-data-proofs": "6110cc19461b1537829f213d443d83079b346c9de1acc28d853910374e9eb2e2",
+    "native-data-proofs": "014fb218fcd42c7c81c33899e33162ccfc2ba76e444bf5fc751b21e20e6c2149",
     "publication-state": "2302c7e0d703d0d50d26972cfc5f7bdf923a357c0c56646a92d3e65f49c5beac"
   },
   "versions": {
@@ -4932,7 +4932,7 @@
       "opaque_rom_bytes": 7005616
     },
     "us-rev1": {
-      "report_sha256": "2d11f6f19abc02dc73ffaba460dd9ec734cce787f5b4987126057eb5f5723162",
+      "report_sha256": "68b24178c648ab729aaa93dfe6b6627868ed8b0ef7778af0df01d86cf55e6441",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6896,
@@ -5154,10 +5154,10 @@
       "data_coverage": {
         "state": "partial",
         "declared_bytes": 254468,
-        "verified_bytes": 1775,
-        "unmeasured_bytes": 252693,
+        "verified_bytes": 89714,
+        "unmeasured_bytes": 164754,
         "rom_bytes": 8388608,
-        "evidence_identity": "4805bca1bda3f1c415bbecea1f9ccaef03d7c0e9fa2655cc876eca18815c546e",
+        "evidence_identity": "76ad4d1ca8b345fa050d1885c3606f8683a5dee5c2fdc7cbc7f11af7aefb3cca",
         "proof_event": [
           "d0636f28050b465c9c44002031929866",
           "e922b6c2bc174bb4b4e8e663481c73d6",
@@ -5375,8 +5375,890 @@
           "a98ca42210754a44964ccbeb1364b4d0",
           "3192f52944de48a6a4154afa8c7d2329"
         ],
-        "invalidations": 100,
+        "invalidations": 2,
         "extents": [
+          {
+            "start": 819024,
+            "end": 819036,
+            "source": "src/ragewars_resident_strings_C7F50_us_rev1.c",
+            "bytes_sha256": "7c4468ac784d0f59bc34ad97cd72765442266f4317c18a6a2368a2c49995ac2c",
+            "symbol": "ragewars_resident_strings_C7F50_us_rev1",
+            "proof": "06deb5e952d61aab8edbd2a2cad0fe85ae6c55d888cd80d7ed90fcaf32fa9f58",
+            "kind": "data"
+          },
+          {
+            "start": 821424,
+            "end": 821448,
+            "source": "src/ragewars_resident_strings_C88B0_us_rev1.c",
+            "bytes_sha256": "2f6479d209d7eff199ea7d3ffb29ca59f4cb223ea83ba9dca9943e4dac236a58",
+            "symbol": "ragewars_resident_strings_C88B0_us_rev1",
+            "proof": "dc99029e56a621d697ea9f34fa8980e225ed913ebae6286bf67fcb5471114e0d",
+            "kind": "data"
+          },
+          {
+            "start": 824660,
+            "end": 824716,
+            "source": "src/ragewars_resident_strings_C9554_us_rev1.c",
+            "bytes_sha256": "1a4ca20be28d96b762784576c6a60e1a235c29eccc41dfcb8e2d801c662a829c",
+            "symbol": "ragewars_resident_strings_C9554_us_rev1",
+            "proof": "b7226a7ae315c559a64624605842d51a6eb0aeec78fafdabc86e4060144eec04",
+            "kind": "data"
+          },
+          {
+            "start": 825044,
+            "end": 825104,
+            "source": "src/ragewars_resident_strings_C96D4_us_rev1.c",
+            "bytes_sha256": "71e315fc3c0e6c4464646c656f82da77a63e435b65e4753b3294479b5ec05c30",
+            "symbol": "ragewars_resident_strings_C96D4_us_rev1",
+            "proof": "9197a9c66e746f38fdae85c3b5a7b8b887c1dc4621faddf2cf99a732559e75fa",
+            "kind": "data"
+          },
+          {
+            "start": 825104,
+            "end": 825148,
+            "source": "src/ragewars_resident_strings_C9710_us_rev1.c",
+            "bytes_sha256": "07d659dbe5caf1fff8e3b4f353db317f8ffcafa87dc9dc855a0cc973ec0ef515",
+            "symbol": "ragewars_resident_strings_C9710_us_rev1",
+            "proof": "1893fa43355005da32579dcb9aa7f32e1da014438d98343f3915c9009e252c9c",
+            "kind": "data"
+          },
+          {
+            "start": 830040,
+            "end": 830056,
+            "source": "src/ragewars_resident_strings_CAA58_us_rev1.c",
+            "bytes_sha256": "b09f8cafa095e5175c7b22e184c0dc68ee93af13d4d551de8414d4db126ddbd3",
+            "symbol": "ragewars_resident_strings_CAA58_us_rev1",
+            "proof": "4ab615ac0c7c8e2ad8b0a30ef57aa5f5fa6417645727a582e45893d7270c5099",
+            "kind": "data"
+          },
+          {
+            "start": 830452,
+            "end": 830492,
+            "source": "src/ragewars_resident_strings_CABF4_us_rev1.c",
+            "bytes_sha256": "5641ae8399baa3e09d95bcfd2ebd317c6c2f94cca3caa01b7af27ccf86aea097",
+            "symbol": "ragewars_resident_strings_CABF4_us_rev1",
+            "proof": "65f8ea54a3c6cdfc7e8c178c342a15aed8abd434a738e7654e77ddfd15476d54",
+            "kind": "data"
+          },
+          {
+            "start": 830528,
+            "end": 830544,
+            "source": "src/ragewars_resident_strings_CAC40_us_rev1.c",
+            "bytes_sha256": "a43eb1c7b7bf38f138d3e144cad2efaf61b9567fe88e6351966d07f267adaa10",
+            "symbol": "ragewars_resident_strings_CAC40_us_rev1",
+            "proof": "31f926f12aa0d445a67b5863f3dbc3c970bde710e93a7f7952e2e9f366cb6f72",
+            "kind": "data"
+          },
+          {
+            "start": 830744,
+            "end": 830760,
+            "source": "src/ragewars_resident_strings_CAD18_us_rev1.c",
+            "bytes_sha256": "68379571d7a946152d8edbcafc40edc0894cf840beebde69f8ebf7c0a275b14b",
+            "symbol": "ragewars_resident_strings_CAD18_us_rev1",
+            "proof": "e95e62001e2a38bbd2818b91a3ea9647c20fa7ab785a5aaa140b22c923f1bac3",
+            "kind": "data"
+          },
+          {
+            "start": 830976,
+            "end": 830988,
+            "source": "src/ragewars_resident_strings_CAE00_us_rev1.c",
+            "bytes_sha256": "604c253706e39654da65dcc098dcf7cb5f2ae4bddba8c82b19318d255973acf2",
+            "symbol": "ragewars_resident_strings_CAE00_us_rev1",
+            "proof": "19bd1616a4d3307522e632d75c75f7291c6d3e19c720056ad784c6fc952ed3b1",
+            "kind": "data"
+          },
+          {
+            "start": 831000,
+            "end": 831032,
+            "source": "src/ragewars_resident_strings_CAE18_us_rev1.c",
+            "bytes_sha256": "f4822a1c23801a9dc2c5bc92210c334e846d42beba0e6fe7a614cd41dbac68d2",
+            "symbol": "ragewars_resident_strings_CAE18_us_rev1",
+            "proof": "1c591df5fcabcdcbffcecf45039c993db373998631926844aa1c3375b3499a6f",
+            "kind": "data"
+          },
+          {
+            "start": 831064,
+            "end": 831076,
+            "source": "src/ragewars_resident_strings_CAE58_us_rev1.c",
+            "bytes_sha256": "70a2b5fe7edd3483a236647ff03ea1ab6233ef316493dacd544422413edbc890",
+            "symbol": "ragewars_resident_strings_CAE58_us_rev1",
+            "proof": "9070e88b5084d15339bbdfeb7102feffac834a15e4944adee918704b1f928d44",
+            "kind": "data"
+          },
+          {
+            "start": 831088,
+            "end": 831120,
+            "source": "src/ragewars_resident_strings_CAE70_us_rev1.c",
+            "bytes_sha256": "ca66ca9cbf09de86f9734a0d87742c4fb59752c47fcdda61c3c1e396a26c5e52",
+            "symbol": "ragewars_resident_strings_CAE70_us_rev1",
+            "proof": "62dc514a94ac2ff966bb79746355c670b1a5e2169c7bee6e51648305d1250d28",
+            "kind": "data"
+          },
+          {
+            "start": 831952,
+            "end": 831968,
+            "source": "src/ragewars_resident_strings_CB1D0_us_rev1.c",
+            "bytes_sha256": "8d1f019071c6dee3054d6371683715ac5027de2f7e5c475e8f79aea656cda507",
+            "symbol": "ragewars_resident_strings_CB1D0_us_rev1",
+            "proof": "e0470f79fedd66f063d7c00b065de38b2516932c1985c1725e3b2ef2854488cd",
+            "kind": "data"
+          },
+          {
+            "start": 832032,
+            "end": 832052,
+            "source": "src/ragewars_resident_strings_CB220_us_rev1.c",
+            "bytes_sha256": "0542a34b2e67e21f5d4abb50ee55a57bbc188b998fcb91b5101e914ad79d0ca1",
+            "symbol": "ragewars_resident_strings_CB220_us_rev1",
+            "proof": "a1e85b89ac2af4d5cb7221cfadcc13010f2cf849af33711642790e880c4c4181",
+            "kind": "data"
+          },
+          {
+            "start": 835920,
+            "end": 835936,
+            "source": "src/ragewars_resident_strings_CC150_us_rev1.c",
+            "bytes_sha256": "4551954f30999eb420d3a6f3271776fe11ed23a0c2bec1773a8b0247760841be",
+            "symbol": "ragewars_resident_strings_CC150_us_rev1",
+            "proof": "2745bb243f8e989446d6d0b337c8c749a8caeac7bea89a49b8f9145df0dc4276",
+            "kind": "data"
+          },
+          {
+            "start": 835940,
+            "end": 837196,
+            "source": "src/ragewars_resident_strings_CC164_us_rev1.c",
+            "bytes_sha256": "0483cebb6c5964941ab35aae0586c2b19a0c83d2027e1db2e9e53e5c28e2eb3e",
+            "symbol": "ragewars_resident_strings_CC164_us_rev1",
+            "proof": "d86702d0a7068190f099971e3a4d427403f355f26c52ac0f3a98c2f97f315b7b",
+            "kind": "data"
+          },
+          {
+            "start": 837208,
+            "end": 837784,
+            "source": "src/ragewars_resident_strings_CC658_us_rev1.c",
+            "bytes_sha256": "37d338a902dbcad15e36003e46f2930b1fc7315b1b5dd0603fe0b6dcd59d147b",
+            "symbol": "ragewars_resident_strings_CC658_us_rev1",
+            "proof": "1f5bc3bec3132b39448898eb99ab370067bfae30ea6b5e7f61f5f41f9471b9b5",
+            "kind": "data"
+          },
+          {
+            "start": 837796,
+            "end": 838848,
+            "source": "src/ragewars_resident_strings_CC8A4_us_rev1.c",
+            "bytes_sha256": "702ff4a65156b5fc3eec63cf90e153647d8366b890f1e4cbf26ea2b811ff7de4",
+            "symbol": "ragewars_resident_strings_CC8A4_us_rev1",
+            "proof": "cb26ff8eebdac90e3f8aa35357bc72424b3087042abda40914b2b44a6f459640",
+            "kind": "data"
+          },
+          {
+            "start": 838892,
+            "end": 839944,
+            "source": "src/ragewars_resident_strings_CCCEC_us_rev1.c",
+            "bytes_sha256": "5951d4e8d68e6701be0728feb59963abb5a3b267cc59a2c08a28d41e5a1b6553",
+            "symbol": "ragewars_resident_strings_CCCEC_us_rev1",
+            "proof": "eba53034002be3345cae505c1bc0ccec9c41761a49fe3a2c56ac485976e38276",
+            "kind": "data"
+          },
+          {
+            "start": 840644,
+            "end": 840664,
+            "source": "src/ragewars_resident_strings_CD3C4_us_rev1.c",
+            "bytes_sha256": "ec150226ab3eec1d1f4c8d11ddbd3861d6a60ec299dfdd028bdd259dc183cf7f",
+            "symbol": "ragewars_resident_strings_CD3C4_us_rev1",
+            "proof": "be734ec34b4d7e492a0a58268c7e2585fc8c6deea89c089ccbba171726c1af7e",
+            "kind": "data"
+          },
+          {
+            "start": 840788,
+            "end": 840800,
+            "source": "src/ragewars_resident_strings_CD454_us_rev1.c",
+            "bytes_sha256": "1e2635f128fd3d369820d4c64c8532576838cbf0f85c0ae9e709fa3c6e240f6d",
+            "symbol": "ragewars_resident_strings_CD454_us_rev1",
+            "proof": "0df7d2f9443fa0c6a7c7cce437d64764b743bc51dacc45aa1b44fc5d8c5cf205",
+            "kind": "data"
+          },
+          {
+            "start": 841636,
+            "end": 841652,
+            "source": "src/ragewars_resident_strings_CD7A4_us_rev1.c",
+            "bytes_sha256": "0163cad3f443e291b5e40e56fea07279547ef897ed469b02b07237b8ebdd91e4",
+            "symbol": "ragewars_resident_strings_CD7A4_us_rev1",
+            "proof": "6ee2e128ef9442d57f2ca986639f685fef10f4bd2004622fc5594f2a9a5ca0be",
+            "kind": "data"
+          },
+          {
+            "start": 841812,
+            "end": 841828,
+            "source": "src/ragewars_resident_strings_CD854_us_rev1.c",
+            "bytes_sha256": "c0737ea9b8030ec57486f454552ba7f88c5992d26a7d244ff30c473cb4d8fc20",
+            "symbol": "ragewars_resident_strings_CD854_us_rev1",
+            "proof": "1874588f6975372a757e0429d608602350f8a2f90fbe3cb68d94a05877255ee0",
+            "kind": "data"
+          },
+          {
+            "start": 858944,
+            "end": 859040,
+            "source": "src/ragewars_rdp_startup_us_rev1.c",
+            "bytes_sha256": "0279308d58375b62198d5ab56fc8f6891e7a2d221f450a67a9218d564165be65",
+            "symbol": "D_800CBCF0_de",
+            "proof": "f69c072097c7d8f631266e590c4cfacc90b234f27d4dc415f2c8ca4a746240bc",
+            "kind": "data"
+          },
+          {
+            "start": 859040,
+            "end": 859168,
+            "source": "src/ragewars_texture_rgba16_mip_us_rev1.c",
+            "bytes_sha256": "0f29afd4a4c4485dd4ecb75ad005cd8df812e89e8b4bfc186edd6b317a2bda19",
+            "symbol": "ragewars_texture_rgba16_mip_us_rev1",
+            "proof": "346e1c9d7ebaffffeaac29be5743021dbfd58c4f7f322e9ef8aa7ec60c961c77",
+            "kind": "data"
+          },
+          {
+            "start": 859168,
+            "end": 859296,
+            "source": "src/ragewars_texture_rgba16_mip_clamp_us_rev1.c",
+            "bytes_sha256": "3273a84dfcb9ce16545f4779904c0b287f69c37acb01602289aab5555cc2155f",
+            "symbol": "ragewars_texture_rgba16_mip_clamp_us_rev1",
+            "proof": "075a9d80f56ad2cd03f613326241399b460c62cf2a9b9a44f86f1c3af68c653c",
+            "kind": "data"
+          },
+          {
+            "start": 859296,
+            "end": 859448,
+            "source": "src/ragewars_texture_rgba16_detail_us_rev1.c",
+            "bytes_sha256": "a60436c5ae0c1201650bc67c8539ebdbbad63e35c4a020c0ae5a9b0138838123",
+            "symbol": "ragewars_texture_rgba16_detail_us_rev1",
+            "proof": "ed38cbe3c77f34e59c1812c5eb6ea6bc05541f344b3fdd4ab2f526110a33db69",
+            "kind": "data"
+          },
+          {
+            "start": 859448,
+            "end": 859600,
+            "source": "src/ragewars_texture_rgba16_sharpen_us_rev1.c",
+            "bytes_sha256": "bab4b7f7f92ac5890c87ac2151a8879d89b9f4621ec23706830320708a445726",
+            "symbol": "ragewars_texture_rgba16_sharpen_us_rev1",
+            "proof": "79cca43996518755972613f5efc2cb9d16c8af4516357e0cafe5e4e0609e6436",
+            "kind": "data"
+          },
+          {
+            "start": 859600,
+            "end": 859752,
+            "source": "src/ragewars_texture_intensity_mip_us_rev1.c",
+            "bytes_sha256": "c12c3480b8b06cd3e494c4f71392db1b4773ea8937d847e4bc2f55debc03cfa3",
+            "symbol": "ragewars_texture_intensity_mip_us_rev1",
+            "proof": "65a360bdbe41a05e286c8511538b133f92aaf54aee4528b1332759004220160e",
+            "kind": "data"
+          },
+          {
+            "start": 859752,
+            "end": 859888,
+            "source": "src/ragewars_particle_draw_depth_us_rev1.c",
+            "bytes_sha256": "5a92324b9f963308f2d0922ff07d924a243fd6e75c2664cbb764b0b4d824065f",
+            "symbol": "D_800CC018_de",
+            "proof": "e97f1c45a02899bc6184819c548cd9c6995373b7c177e1fb8ca1948fcef374e0",
+            "kind": "data"
+          },
+          {
+            "start": 859888,
+            "end": 860024,
+            "source": "src/ragewars_particle_draw_decal_us_rev1.c",
+            "bytes_sha256": "eea0a7b4174878e0cb5bd23b719d2b3e958a53c4676232e9c1763fa1bebba7b1",
+            "symbol": "D_800CC0A0",
+            "proof": "72d709fd6219fa2df72e9b376ceb5a456ff70efdee745363b58c8da0337c117a",
+            "kind": "data"
+          },
+          {
+            "start": 860336,
+            "end": 860592,
+            "source": "src/ragewars_particle_intensity_texture_us_rev1.c",
+            "bytes_sha256": "115e66e006fb9b743e1200c8ac5887d333bb2616364541475cb97911e5521bb0",
+            "symbol": "D_800CC260",
+            "proof": "4647d4cb42416172ece3bdca45ec0a88db18fa4125256190b1c7c1d0be9720ed",
+            "kind": "data"
+          },
+          {
+            "start": 860704,
+            "end": 864808,
+            "source": "src/ragewars_arccos_table_us_rev1.c",
+            "bytes_sha256": "8d55cf217d16709bae7c36c3c69c92bdde2b305365b2d7c0ffdd551ba34dd3e6",
+            "symbol": "ragewars_arccos_table_us_rev1",
+            "proof": "d9c771b6d9cc9643aa95b54389dbe15f573d21e0118291f30be10a1456fc8652",
+            "kind": "data"
+          },
+          {
+            "start": 865640,
+            "end": 865652,
+            "source": "src/ragewars_resident_strings_D3568_us_rev1.c",
+            "bytes_sha256": "0c95e70d5848a6cb13de09386b063a82075edc80ed3e71d532447eab4cfb198b",
+            "symbol": "ragewars_resident_strings_D3568_us_rev1",
+            "proof": "e63bf912e7041a958fa36f97d496b1a12e3ffe05048c611ad9332bc81dd7b13d",
+            "kind": "data"
+          },
+          {
+            "start": 866168,
+            "end": 866180,
+            "source": "src/ragewars_resident_strings_D3778_us_rev1.c",
+            "bytes_sha256": "ee3c02479809361928a65eb7759e4ab1c839734d12347ad8379eb3ea8e8bd1aa",
+            "symbol": "ragewars_resident_strings_D3778_us_rev1",
+            "proof": "bee541fd1fe7395ea54a21f619583b505dc38d1ccbe94139da0d94b81e0d9b0e",
+            "kind": "data"
+          },
+          {
+            "start": 866912,
+            "end": 867008,
+            "source": "src/ragewars_particle_state_depth_us_rev1.c",
+            "bytes_sha256": "3a625546ce4d7f81e14ce1b27b25d8b1618b5c5f29b8f744346f137b7dae9713",
+            "symbol": "D_800CDBF0_de",
+            "proof": "f3d2dcf3d3511558e56c2fc77db265716bb3eec0a40618277570c978d61d0a3c",
+            "kind": "data"
+          },
+          {
+            "start": 867008,
+            "end": 867096,
+            "source": "src/ragewars_particle_state_decal_us_rev1.c",
+            "bytes_sha256": "7a7a5daf5e30f08d7708e2a0cc77a1c313bea4ed7bd4569b3f02ba9ea26a718d",
+            "symbol": "ragewars_particle_state_decal_us_rev1",
+            "proof": "4689decacefe83d7fb91a37672af299dd9f680b924922105f42aa252a0f393b1",
+            "kind": "data"
+          },
+          {
+            "start": 867096,
+            "end": 867192,
+            "source": "src/ragewars_particle_state_primitive_us_rev1.c",
+            "bytes_sha256": "b1af073a7a3bf6bc0f8131e7439ed743c532c0af5769415e2f908fef2f050f4b",
+            "symbol": "D_800CDCA8",
+            "proof": "a064872c02f291546588fcb2ed7bd3664afa8e9929ee0c11456bc26b6ee7a3b7",
+            "kind": "data"
+          },
+          {
+            "start": 867220,
+            "end": 867456,
+            "source": "src/ragewars_font_character_map_primary_us_rev1.c",
+            "bytes_sha256": "70bfc9c496af2574e5123872f0685d2f42f014a7d5f7d0004e965f66c6573686",
+            "symbol": "D_800D2F94",
+            "proof": "a49bf2c8952bcca4506de0dc990e9e0b5a2f96ef4a6983b8548e1c1136434ab3",
+            "kind": "data"
+          },
+          {
+            "start": 867456,
+            "end": 867692,
+            "source": "src/ragewars_font_character_map_secondary_us_rev1.c",
+            "bytes_sha256": "70bfc9c496af2574e5123872f0685d2f42f014a7d5f7d0004e965f66c6573686",
+            "symbol": "D_800D3080",
+            "proof": "7a4e864c2cfcaf6948635e3d38d92433f8d97fedf1f718592f0564bdfd29c7f7",
+            "kind": "data"
+          },
+          {
+            "start": 868948,
+            "end": 868968,
+            "source": "src/ragewars_menu_strings_D4254_us_rev1.c",
+            "bytes_sha256": "bd0cc0b22d801677692744324e81f5bffb1ff1b1c767f0ec1a04ea4fbc20d7e4",
+            "symbol": "ragewars_menu_strings_D4254_us_rev1",
+            "proof": "7d6f85e9598b38f864ea40d7de303e512e41afaf84d4257410c2a0740e8dff6b",
+            "kind": "data"
+          },
+          {
+            "start": 869008,
+            "end": 873440,
+            "source": "src/ragewars_menu_strings_D4290_us_rev1.c",
+            "bytes_sha256": "3e24e45bada9529ef3555e761cf8e009d28de6d1c9417722adf31f3ac8cfbbd0",
+            "symbol": "ragewars_menu_strings_D4290_us_rev1",
+            "proof": "e35c9495d88dbf0e250efbabf43be43194ece65f5b5e5b7161e2a1f160d3851b",
+            "kind": "data"
+          },
+          {
+            "start": 873444,
+            "end": 873508,
+            "source": "src/ragewars_menu_strings_D53E4_us_rev1.c",
+            "bytes_sha256": "fd8e000c8421da96db6e41d1f27f7d2e28b1a127d984e98fa12b8a230e5b5cd2",
+            "symbol": "ragewars_menu_strings_D53E4_us_rev1",
+            "proof": "2220843b55d83b58bb0d85d44163787d1c4f4daad7f1faeccc5adc4c0dba28c9",
+            "kind": "data"
+          },
+          {
+            "start": 873512,
+            "end": 873608,
+            "source": "src/ragewars_menu_strings_D5428_us_rev1.c",
+            "bytes_sha256": "46f02324772d51e662152c1f145c8cbff3420fbcb77657f4de20384fed598b4d",
+            "symbol": "ragewars_menu_strings_D5428_us_rev1",
+            "proof": "8a2416e254cc83c945a61e8ee942ec77a6d80b2c94242317d0ea3a15b09f3418",
+            "kind": "data"
+          },
+          {
+            "start": 873616,
+            "end": 875936,
+            "source": "src/ragewars_menu_strings_D5490_us_rev1.c",
+            "bytes_sha256": "9df9113f237c2c2968f3eb67bf6b5d56933ac49e383d64a7bba43d07358315f1",
+            "symbol": "ragewars_menu_strings_D5490_us_rev1",
+            "proof": "c4de5fcdc36e527fb72a31a9d2c4cc156303dcfdb765242563036aba662afb24",
+            "kind": "data"
+          },
+          {
+            "start": 876024,
+            "end": 876248,
+            "source": "src/ragewars_menu_strings_D5DF8_us_rev1.c",
+            "bytes_sha256": "3106efd9ba52403e665119f2ac131155d579841ca5e424814c0fc10744239698",
+            "symbol": "ragewars_menu_strings_D5DF8_us_rev1",
+            "proof": "e2daf9494a4169917e2cfce765c95747000b5311461d0c052a341d7fdb89a4e4",
+            "kind": "data"
+          },
+          {
+            "start": 876252,
+            "end": 876272,
+            "source": "src/ragewars_menu_strings_D5EDC_us_rev1.c",
+            "bytes_sha256": "4a99e80af033a78bbc6339e0ad5a6e52b57e4918aa05e13c81a782bc98835e79",
+            "symbol": "ragewars_menu_strings_D5EDC_us_rev1",
+            "proof": "f4b03365208ebe4084061958b3f38f4e01672f0d638b32f1a0fefb9e5229ddaa",
+            "kind": "data"
+          },
+          {
+            "start": 876276,
+            "end": 876284,
+            "source": "src/ragewars_menu_strings_D5EF4_us_rev1.c",
+            "bytes_sha256": "202f39ecc72893f2b293c5cfe5f025df0d06dd5eed7d2b05b7247b19eaca7638",
+            "symbol": "ragewars_menu_strings_D5EF4_us_rev1",
+            "proof": "9239c515a253c3610838c9bafd41e28b3f47a17d82e0f8629fa357d15a71acb3",
+            "kind": "data"
+          },
+          {
+            "start": 876404,
+            "end": 876416,
+            "source": "src/ragewars_menu_strings_D5F74_us_rev1.c",
+            "bytes_sha256": "4e9eaa29b093000c5c9645df4f3b7361757f5280479f9fe75cba3a15ecf36e61",
+            "symbol": "ragewars_menu_strings_D5F74_us_rev1",
+            "proof": "225276155a2c4d564fc8894893243516a7df99c493418cc30d9eff9fe37b4a75",
+            "kind": "data"
+          },
+          {
+            "start": 876480,
+            "end": 876828,
+            "source": "src/ragewars_menu_strings_D5FC0_us_rev1.c",
+            "bytes_sha256": "a4354f14e1f8f06b21b3d4eb472d06d3c5f26b7a773d4dd8082a8c501e706179",
+            "symbol": "ragewars_menu_strings_D5FC0_us_rev1",
+            "proof": "3cafa5268d880e88ac6a99686ed8523804884380ae14a60fededc9f006e18c1d",
+            "kind": "data"
+          },
+          {
+            "start": 877320,
+            "end": 877360,
+            "source": "src/ragewars_menu_strings_D6308_us_rev1.c",
+            "bytes_sha256": "0c21d0024b5f3c3718195ee5314efb2007d4726c51eccdae9b970bfb3cd4fc83",
+            "symbol": "ragewars_menu_strings_D6308_us_rev1",
+            "proof": "7a27dcff9c6db00430c2f910e0dcf531546ba344443573ca62cce92b2586da9a",
+            "kind": "data"
+          },
+          {
+            "start": 877400,
+            "end": 877456,
+            "source": "src/ragewars_menu_strings_D6358_us_rev1.c",
+            "bytes_sha256": "42847978443b6ce86042d83bb3e117cad1d26b31052f159065ce753c73d985a3",
+            "symbol": "ragewars_menu_strings_D6358_us_rev1",
+            "proof": "1a4c163a0e038a134f9394bf8731fff24e564d535a13f6d19a14734626c74998",
+            "kind": "data"
+          },
+          {
+            "start": 877468,
+            "end": 877616,
+            "source": "src/ragewars_menu_strings_D639C_us_rev1.c",
+            "bytes_sha256": "7190b82f3a581198e8a5d268cd15fea3c23cd2f515a8c5341f42918b1d726492",
+            "symbol": "ragewars_menu_strings_D639C_us_rev1",
+            "proof": "9e5cca21da1fb39d750872515bf14693e45f6089d77b157df08015866bbd2f8b",
+            "kind": "data"
+          },
+          {
+            "start": 877620,
+            "end": 882652,
+            "source": "src/ragewars_menu_strings_D6434_us_rev1.c",
+            "bytes_sha256": "f185c32f0aa18f0d6883bf93d833f61c516881c40241445037284c5b0fd8a00c",
+            "symbol": "ragewars_menu_strings_D6434_us_rev1",
+            "proof": "ec12194de9af3fa0c771a6537d93f2f92960c09a67da2648d48aee926ccb6456",
+            "kind": "data"
+          },
+          {
+            "start": 887712,
+            "end": 887960,
+            "source": "src/ragewars_tlb_snapshot_us_rev1.c",
+            "bytes_sha256": "b3ab6982980fddf460a2f47adb428475ce9afa89092fd034499d017a35993f05",
+            "symbol": "D_800D3F70",
+            "proof": "08ad2eb754a416ffecd308d2ff2ffab6b15ec62c215262646c9e7aa4100038ef",
+            "kind": "data"
+          },
+          {
+            "start": 888688,
+            "end": 888692,
+            "source": "src/ragewars_controller_initialization_us_rev1.c",
+            "bytes_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "symbol": "D_800D4340",
+            "proof": "1d46019c5415122ef33d3fe778a9de7ecd1c455e6739dda51a41e2da1f72b3f7",
+            "kind": "data"
+          },
+          {
+            "start": 892552,
+            "end": 892556,
+            "source": "src/ragewars_scheduler_interrupt_mask_us_rev1.c",
+            "bytes_sha256": "2327975fb1a72a1647de38166b140c439ad11393442e27ae84bda69b756e56e5",
+            "symbol": "D_800D5258",
+            "proof": "6d5234f495314c660730a8afd65a0a365c312beccb8a41b5e1825a7fe2eecc26",
+            "kind": "data"
+          },
+          {
+            "start": 892592,
+            "end": 892596,
+            "source": "src/ragewars_scheduler_exception_queue_us_rev1.c",
+            "bytes_sha256": "793096203f21810f0fe59cd62f88d5f2c15814ec2efa7ccbe753ad065e83beee",
+            "symbol": "D_800D5280",
+            "proof": "2ff71cff4b2a71bd6f83998c307295ced06d94ee306b968c50acf7a1a16c3537",
+            "kind": "data"
+          },
+          {
+            "start": 892784,
+            "end": 892796,
+            "source": "src/ragewars_transform_workspaces_us_rev1.c",
+            "bytes_sha256": "d70424abb73aa1fc7188714161a7fba03c23b6e494126746af46d62256e5d3a9",
+            "symbol": "D_800D5340",
+            "proof": "3571b7a06985e03434110be134617a2272c7c3b8b5c45956c2a5ff7a4a7fd173",
+            "kind": "data"
+          },
+          {
+            "start": 923888,
+            "end": 923904,
+            "source": "src/ragewars_resident_strings_E18F0_us_rev1.c",
+            "bytes_sha256": "f4b715eb6d67a517c16a9babb91a1bda3fdb30fe3f085eb259c824090e61ca61",
+            "symbol": "ragewars_resident_strings_E18F0_us_rev1",
+            "proof": "6b047a2758559f3fc704e0341698bd8e06ab0128d4035faa008cbd96fc170113",
+            "kind": "data"
+          },
+          {
+            "start": 928484,
+            "end": 928493,
+            "source": "src/controller_pak_note_label_format_us_rev1.c",
+            "bytes_sha256": "61fb751f0e85a71113f774ac4dcae4cf0f7233cb86bc927c66c158afd16370ff",
+            "symbol": "controller_pak_note_label_format",
+            "proof": "9b7f87a9bbafcca76c343a6e29c583761e94be8b0d9f07d2778ef7b28d981e9e",
+            "kind": "data"
+          },
+          {
+            "start": 929040,
+            "end": 929084,
+            "source": "src/ragewars_resident_strings_E2D10_us_rev1.c",
+            "bytes_sha256": "9f3e45a0f904512e5f1568f57b0cfa8eda0f0c033d206a50efc14def70c73499",
+            "symbol": "ragewars_resident_strings_E2D10_us_rev1",
+            "proof": "d88670f63e96eb0ad010bcb2ae03e4314fba6c782925d32243f0a2256db8cd2d",
+            "kind": "data"
+          },
+          {
+            "start": 929116,
+            "end": 929160,
+            "source": "src/ragewars_resident_strings_E2D5C_us_rev1.c",
+            "bytes_sha256": "adc6a31fd128a7749a2c6d8b6ceaea425bc90983906196a35592655878bc0bda",
+            "symbol": "ragewars_resident_strings_E2D5C_us_rev1",
+            "proof": "9bd4d56c913c9acbea5de60d9adc480c5e9033153779d1cc665c346ffd8a685c",
+            "kind": "data"
+          },
+          {
+            "start": 944328,
+            "end": 944348,
+            "source": "src/ragewars_resident_strings_E68C8_us_rev1.c",
+            "bytes_sha256": "dc02e79eb0e5f9aef4365608829b691dc505cc85822e4b43c7c38c62e268dfa6",
+            "symbol": "ragewars_resident_strings_E68C8_us_rev1",
+            "proof": "e15ec6049392b168adfbe6bddfee3d2ebab3bdf5dc6e4e2967d24f5318757b68",
+            "kind": "data"
+          },
+          {
+            "start": 944352,
+            "end": 944376,
+            "source": "src/ragewars_resident_strings_E68E0_us_rev1.c",
+            "bytes_sha256": "6681f05edd13684f4e5452e2d447b110c164cde4cfcb0f367db1e0d04a269457",
+            "symbol": "ragewars_resident_strings_E68E0_us_rev1",
+            "proof": "8a7b0af808a5fc5429419f8caa64ac6f685810d8a2766797054185faff1682c9",
+            "kind": "data"
+          },
+          {
+            "start": 945212,
+            "end": 945240,
+            "source": "src/ragewars_resident_strings_E6C3C_us_rev1.c",
+            "bytes_sha256": "f66581afd2daf5f1510d055e3db70749ea8407e1633524c503efb6fc7438d71b",
+            "symbol": "ragewars_resident_strings_E6C3C_us_rev1",
+            "proof": "41ea1f2f75923dc7852c92c4a6928458dc8335fa5620731c39c924ce321dd6ff",
+            "kind": "data"
+          },
+          {
+            "start": 945244,
+            "end": 945268,
+            "source": "src/ragewars_resident_strings_E6C5C_us_rev1.c",
+            "bytes_sha256": "f0be86b36115ff5984a4d60c4963a9e98344354fb87129bf045277b84e4284c6",
+            "symbol": "ragewars_resident_strings_E6C5C_us_rev1",
+            "proof": "deb1ad5d14a1aaf9cca6913f7134c3230aaa7c0ddf6917f493fb9a106c83cef3",
+            "kind": "data"
+          },
+          {
+            "start": 945272,
+            "end": 945296,
+            "source": "src/ragewars_resident_strings_E6C78_us_rev1.c",
+            "bytes_sha256": "2264919fb7aa0e7044827b33d7cc2866e808d182b04b1ab8ab6d7ce621786c5f",
+            "symbol": "ragewars_resident_strings_E6C78_us_rev1",
+            "proof": "5332013d4f732b159a051a65400b43cfa2859d0fa89d16e720193e0f0bd9748c",
+            "kind": "data"
+          },
+          {
+            "start": 945300,
+            "end": 945324,
+            "source": "src/ragewars_resident_strings_E6C94_us_rev1.c",
+            "bytes_sha256": "8580d7b194453c82db032facf9f1263ef473b7104135fb9b78d9334a74bf66e0",
+            "symbol": "ragewars_resident_strings_E6C94_us_rev1",
+            "proof": "1408feadf5df715fc76f49b12a364ea53024b5fe69881cc38cb7c00a433a727c",
+            "kind": "data"
+          },
+          {
+            "start": 945328,
+            "end": 945352,
+            "source": "src/ragewars_resident_strings_E6CB0_us_rev1.c",
+            "bytes_sha256": "77f9b69905ae7b3bdcd571e52f1da751e60c9ff02c73fe799638e9e48e8e081d",
+            "symbol": "ragewars_resident_strings_E6CB0_us_rev1",
+            "proof": "5b19f9817551afb3e4be21776869b5d257aa47f45f4d66ecfb2ae125400d15c3",
+            "kind": "data"
+          },
+          {
+            "start": 945356,
+            "end": 945380,
+            "source": "src/ragewars_resident_strings_E6CCC_us_rev1.c",
+            "bytes_sha256": "4bed1a78bc5a3ea680773c672ccdf1a304814d811081e192b049a8967dfacd72",
+            "symbol": "ragewars_resident_strings_E6CCC_us_rev1",
+            "proof": "963b9e0ff98a7d91e13dc08d7084abf1d2a97572231f80723ad846dff4179068",
+            "kind": "data"
+          },
+          {
+            "start": 945384,
+            "end": 945408,
+            "source": "src/ragewars_resident_strings_E6CE8_us_rev1.c",
+            "bytes_sha256": "2d6351da7e9b5580317341a1f27128f7cb920ac37f2b97b39d0c8e6f80fe02b3",
+            "symbol": "ragewars_resident_strings_E6CE8_us_rev1",
+            "proof": "df2000f94ffaf0febb3ef00b3aa474fabebb344cc99d98e9b74dcc113b030a18",
+            "kind": "data"
+          },
+          {
+            "start": 945412,
+            "end": 945436,
+            "source": "src/ragewars_resident_strings_E6D04_us_rev1.c",
+            "bytes_sha256": "15c3a3050113dae9ff6019ca5056fd3cb70cf09694d90730f35d36361dd62130",
+            "symbol": "ragewars_resident_strings_E6D04_us_rev1",
+            "proof": "85929e481a30bf5122f43b0e02777d4dc4cdcf17589be9967bb98e1ce3821b92",
+            "kind": "data"
+          },
+          {
+            "start": 945440,
+            "end": 945452,
+            "source": "src/ragewars_resident_strings_E6D20_us_rev1.c",
+            "bytes_sha256": "e239838fae9b5212fd8b1cdf5aa23f0b4a18cd732027ae15e1ec9d236d555ad7",
+            "symbol": "ragewars_resident_strings_E6D20_us_rev1",
+            "proof": "b61faf81ee3eb8205e07149a3d5ee2058529d622c4bb664829ef04d7e222ef3f",
+            "kind": "data"
+          },
+          {
+            "start": 945456,
+            "end": 945468,
+            "source": "src/ragewars_resident_strings_E6D30_us_rev1.c",
+            "bytes_sha256": "9adaa681c7eebe968a88078f062b48b72277836b551e6bdd2c1324b9f8bcf89e",
+            "symbol": "ragewars_resident_strings_E6D30_us_rev1",
+            "proof": "51a82942f6855c835905cf17710701fe7e6edc2349d01ad8241e1fd3d5f0c287",
+            "kind": "data"
+          },
+          {
+            "start": 945472,
+            "end": 945496,
+            "source": "src/ragewars_resident_strings_E6D40_us_rev1.c",
+            "bytes_sha256": "f3dda7fc2a01988d21ef8f72e76240b16518b0e7497fd08fe5a82b7b77abe2f3",
+            "symbol": "ragewars_resident_strings_E6D40_us_rev1",
+            "proof": "99dbdd935176f962ad73237f0aa29b4a0544455aca8435eeac8b748c96f53d44",
+            "kind": "data"
+          },
+          {
+            "start": 945500,
+            "end": 945524,
+            "source": "src/ragewars_resident_strings_E6D5C_us_rev1.c",
+            "bytes_sha256": "ec8d8e58920c5ca65f51617aa31203b0e4f48a3bb994a23da7e6fc633773a72e",
+            "symbol": "ragewars_resident_strings_E6D5C_us_rev1",
+            "proof": "e4b8bd1df8f2cca06e95063a4cb41b2775059b6788013136989b322bf3c3cc9c",
+            "kind": "data"
+          },
+          {
+            "start": 945528,
+            "end": 945552,
+            "source": "src/ragewars_resident_strings_E6D78_us_rev1.c",
+            "bytes_sha256": "e4b6f10d4a79610823e0e665b0fc5b76e4646c28b3bdb403371a02c4a5b6de89",
+            "symbol": "ragewars_resident_strings_E6D78_us_rev1",
+            "proof": "83f9713d2da41393523587f121ab0161b8cb10a0dbfa613e874b76c4178af28e",
+            "kind": "data"
+          },
+          {
+            "start": 945556,
+            "end": 945580,
+            "source": "src/ragewars_resident_strings_E6D94_us_rev1.c",
+            "bytes_sha256": "f7179a5f7fd3b55c90f2de39a2232b3690f602eddccfaf6d46211a1ca47698ce",
+            "symbol": "ragewars_resident_strings_E6D94_us_rev1",
+            "proof": "dc19c04f2fa38c28dc9d2426b2518d606ee3b16019d1475982c0c5323da05d97",
+            "kind": "data"
+          },
+          {
+            "start": 945680,
+            "end": 945700,
+            "source": "src/ragewars_resident_strings_E6E10_us_rev1.c",
+            "bytes_sha256": "4cbfcd21f1decf717d5c21e248450d955f17ecfa08af39d728f45cb8efd9db36",
+            "symbol": "ragewars_resident_strings_E6E10_us_rev1",
+            "proof": "32b8696a9aff1e8c662d9ba6a723bcb5cf54a80c86288b8520deed196688500e",
+            "kind": "data"
+          },
+          {
+            "start": 945728,
+            "end": 945748,
+            "source": "src/ragewars_resident_strings_E6E40_us_rev1.c",
+            "bytes_sha256": "6692feca27323042c6a7611a5039c04bc7526ac6f1d453ac9c1cdf5654d06779",
+            "symbol": "ragewars_resident_strings_E6E40_us_rev1",
+            "proof": "98b15fd205ed02726fe6d2c5cb2333916345fff67f199eb0c90398487b57440f",
+            "kind": "data"
+          },
+          {
+            "start": 945772,
+            "end": 945788,
+            "source": "src/ragewars_resident_strings_E6E6C_us_rev1.c",
+            "bytes_sha256": "77abd2ac7c2c7c8512899f66d5755f67188028b66666cf5c965bd45e5a9b8013",
+            "symbol": "ragewars_resident_strings_E6E6C_us_rev1",
+            "proof": "68ea83970f405b23df3e4ee2386e34174cd5336b51af35642a84ec0e9fd8e297",
+            "kind": "data"
+          },
+          {
+            "start": 945792,
+            "end": 945808,
+            "source": "src/ragewars_resident_strings_E6E80_us_rev1.c",
+            "bytes_sha256": "6e34398ab49c34ea168a7d341c901f72abab543f1c228b8dfd1e8fa44ee18827",
+            "symbol": "ragewars_resident_strings_E6E80_us_rev1",
+            "proof": "c5a6a499e11d8a0ffbf9266c6111baaeff2e240a2122e858035dfdd9d745572e",
+            "kind": "data"
+          },
+          {
+            "start": 945832,
+            "end": 945848,
+            "source": "src/ragewars_resident_strings_E6EA8_us_rev1.c",
+            "bytes_sha256": "6d921ee0fabacda6efb92efbce3ab8089b6eb0202f02a5cf913c115f7a1144b9",
+            "symbol": "ragewars_resident_strings_E6EA8_us_rev1",
+            "proof": "95185c1fc76cbb4f16b2056286a0ca1e5a3f3db6b3c103694d723c8c6092f5cf",
+            "kind": "data"
+          },
+          {
+            "start": 945852,
+            "end": 945868,
+            "source": "src/ragewars_resident_strings_E6EBC_us_rev1.c",
+            "bytes_sha256": "48f127ce90d031f16abe9e36c4e9070b2bcd3e44bf5586320bfa9c7c4717f6a4",
+            "symbol": "ragewars_resident_strings_E6EBC_us_rev1",
+            "proof": "5301c5da25796f27e69051ed60b2026926aab558ec1a34aeee30aaf9e5a376f1",
+            "kind": "data"
+          },
+          {
+            "start": 945872,
+            "end": 945884,
+            "source": "src/ragewars_resident_strings_E6ED0_us_rev1.c",
+            "bytes_sha256": "7572d12790bb5c10f6ec91a2c72e2f8b6224b529fb9cbc34051a513ac90cc505",
+            "symbol": "ragewars_resident_strings_E6ED0_us_rev1",
+            "proof": "42613565264374f7bcdb47f18bcd78ccc7f8f13c449173412d4c8dc5ec21ac57",
+            "kind": "data"
+          },
+          {
+            "start": 945888,
+            "end": 945904,
+            "source": "src/ragewars_resident_strings_E6EE0_us_rev1.c",
+            "bytes_sha256": "959ee516a0fd468a0847e5f389f7c132c2e92052160c3603ead0eed3b78ba1fb",
+            "symbol": "ragewars_resident_strings_E6EE0_us_rev1",
+            "proof": "edf13673aeeee6230b49f7f245dd3a4b62b30a64a09519195c12b12b483e4998",
+            "kind": "data"
+          },
+          {
+            "start": 945908,
+            "end": 945924,
+            "source": "src/ragewars_resident_strings_E6EF4_us_rev1.c",
+            "bytes_sha256": "2070d2d1908152a0c442b2351aecabdc9704b0c57ef2466a524c7960dbc3f605",
+            "symbol": "ragewars_resident_strings_E6EF4_us_rev1",
+            "proof": "a997e88e7179af155149c86f48cef17acc10d7705bc8eefdbd4b47b17fdf4765",
+            "kind": "data"
+          },
+          {
+            "start": 945956,
+            "end": 945980,
+            "source": "src/ragewars_resident_strings_E6F24_us_rev1.c",
+            "bytes_sha256": "0d74fe0f5767291a149d597806874b0fbfb0809476aa24104258fd311dd4b4b5",
+            "symbol": "ragewars_resident_strings_E6F24_us_rev1",
+            "proof": "e4b133f3af3a8bd670c24d8e2ae0e2b05daa7bc76295a838a6c3ca0c563c23dc",
+            "kind": "data"
+          },
+          {
+            "start": 945984,
+            "end": 946008,
+            "source": "src/ragewars_resident_strings_E6F40_us_rev1.c",
+            "bytes_sha256": "db45263e492bbca8ea7d5dd3036e4576ec58ceac444793a517409d61c44db87e",
+            "symbol": "ragewars_resident_strings_E6F40_us_rev1",
+            "proof": "590402e87a00956e02c4754d9fbb0461089f3f50f32bb9ded1674dd5321e3cde",
+            "kind": "data"
+          },
+          {
+            "start": 946012,
+            "end": 946036,
+            "source": "src/ragewars_resident_strings_E6F5C_us_rev1.c",
+            "bytes_sha256": "e3ce9ab3829c8807ae952599af2a3172399e7214585d05521401ef254bda4854",
+            "symbol": "ragewars_resident_strings_E6F5C_us_rev1",
+            "proof": "b54abf1df8bca0314e7bc06288e28f1eb428cdd7a16824065ffe8be9f0c9410b",
+            "kind": "data"
+          },
+          {
+            "start": 946322,
+            "end": 1009792,
+            "source": "src/ragewars_debug_stream_us_rev1.c",
+            "bytes_sha256": "354a5cafcc3a2d5fad45d374d00f5dd2d9b10f6482c3a5099eb995641090f185",
+            "symbol": "ragewars_debug_stream_us_rev1",
+            "proof": "0036fe8197911105e1cb96b958e801fd65208b3ef5a6167e71f5ff21e215ce66",
+            "kind": "data"
+          },
+          {
+            "start": 1039856,
+            "end": 1039880,
+            "source": "src/ragewars_resident_strings_FDDF0_us_rev1.c",
+            "bytes_sha256": "583bf714ab771581a3d5b91ccbe92db60d742d343833c574a5bd1357bba80e85",
+            "symbol": "ragewars_resident_strings_FDDF0_us_rev1",
+            "proof": "5e86943961f8b5b5c6d98367981f349abea2030cc0a0e5f24c2cd810f7295d0a",
+            "kind": "data"
+          },
+          {
+            "start": 888752,
+            "end": 888760,
+            "source": "src/ragewars_pi_domain_handles_us_rev1.c",
+            "bytes_sha256": "cdb25ad0ee0f62b417e7587d8ed61c81c0494ec398f1f9f3d07b8cb98d4a5f2e",
+            "symbol": "D_800D4380",
+            "proof": "0a8f83c1145fdd537f6bd7514ef4354845df1b476a8c69cba87333c85e3ca8d7",
+            "kind": "data"
+          },
+          {
+            "start": 888768,
+            "end": 888772,
+            "source": "src/ragewars_pi_access_queue_initialized_us_rev1.c",
+            "bytes_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "symbol": "D_800D4390",
+            "proof": "895d0d1f53c73a9498c4e428b1cb9ddaca781a90cf3c09366f328b790f54529c",
+            "kind": "data"
+          },
+          {
+            "start": 888784,
+            "end": 888788,
+            "source": "src/ragewars_si_access_queue_initialized_us_rev1.c",
+            "bytes_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "symbol": "D_800D43A0",
+            "proof": "6f74af61946956996d82951300ee6073916554524ca011c5c7545c3a7ebe13de",
+            "kind": "data"
+          },
+          {
+            "start": 892544,
+            "end": 892548,
+            "source": "src/ragewars_audio_interface_clock_us_rev1.c",
+            "bytes_sha256": "32dfac3b68c9d3f2a07544a30dc6fe4fb80f0588e08cadc9c23eb975f0bf3678",
+            "symbol": "D_800D5250",
+            "proof": "f1b8ea575c129546f3623ddbd4f880e487c61262fb1c1f0a07d3315cd5a1b146",
+            "kind": "data"
+          },
           {
             "start": 820800,
             "end": 820813,
@@ -6774,400 +7656,8 @@
             "unmeasured_bytes": 254468
           },
           {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
-            "key": "data.dependencies.changed",
-            "unmeasured_bytes": 254468
-          },
-          {
             "key": "data.coverage.unmeasured",
-            "unmeasured_bytes": 252693
+            "unmeasured_bytes": 164754
           }
         ]
       },
