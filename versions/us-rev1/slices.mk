@@ -3521,7 +3521,9 @@ us-rev1.S.000CFDCC := 851404 96
 us-rev1.D.rw_pool_80225F44_CFE2C_us_rev1 := 0x800CF22C:0xCFE2C:0x4
 us-rev1.S.000CFE30 := 851504 908
 us-rev1.D.rw_pool_802312C8_D01BC_us_rev1 := 0x800CF5BC:0xD01BC:0x4
-us-rev1.S.000D01C0 := 852416 4104
+us-rev1.S.000D01C0 := 852416 3948
+us-rev1.D.ragewars_weapon_resource_directory_us_rev1 := 0x800D052C:0xD112C:0x58
+us-rev1.S.000D1184 := 856452 68
 us-rev1.D.rw_constants_80236874_D11C8_us_rev1 := 0x800D05C8:0xD11C8:0x10
 us-rev1.S.000D11D8 := 856536 104
 us-rev1.D.rw_pool_8023D380_D1240_us_rev1 := 0x800D0640:0xD1240:0x4
@@ -8665,6 +8667,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CFE30.bin \
   build/us-rev1/data/rw_pool_802312C8_D01BC_us_rev1.bin \
   build/us-rev1/slices/000D01C0.bin \
+  build/us-rev1/data/ragewars_weapon_resource_directory_us_rev1.bin \
+  build/us-rev1/slices/000D1184.bin \
   build/us-rev1/data/rw_constants_80236874_D11C8_us_rev1.bin \
   build/us-rev1/slices/000D11D8.bin \
   build/us-rev1/data/rw_pool_8023D380_D1240_us_rev1.bin \
