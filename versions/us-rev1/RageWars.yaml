@@ -5736,7 +5736,6 @@ segments:
       - [0xE34A0, data, "rodata/writable/800E28A0"]
       - [0xE34A4, data, "rodata/unresolved/800E28A4"]
       - [0xE34B0, data, "rodata/writable/800E28B0"]
-      - [0xE34DB, data, "rodata/unresolved/800E28DB"]
       - [0xE34DC, data, "rodata/writable/800E28DC"]
       - [0xE34F0, data, "rodata/unresolved/800E28F0"]
       - [0xE36B0, data, "rodata/writable/800E2AB0"]
