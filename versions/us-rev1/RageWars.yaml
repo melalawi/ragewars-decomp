@@ -5138,80 +5138,213 @@ segments:
       - [0xE4390, data, "rodata/unresolved/800E3594_unclaimed_E4390"]
       - [0xE45C0, data, "rodata/writable/800E39C0"]
       - [0xE45C4, data, "rodata/unresolved/800E39C4"]
+      - [0xE4650, data, "src/ragewars_character_preview_keys_00_us_rev1.c"]
+      - [0xE4658, data, "rodata/unresolved/800E39C4_unclaimed_E4658"]
+      - [0xE465C, data, "src/ragewars_character_preview_scales_00_us_rev1.c"]
 
       - [0xE466C, rodata, "src/rw_viewport_scalar_E466C_us_rev1.c"]
 
-      - [0xE4670, data, "rodata/unresolved/800E3A6F_remaining_E4670"]
+      - [0xE4670, data, "src/ragewars_character_preview_distance_tail_00_us_rev1.c"]
 
       - [0xE467C, rodata, "src/rw_viewport_scalar_E467C_us_rev1.c"]
 
       - [0xE4680, data, "src/ragewars_character_preview_positions_00_us_rev1.c"]
 
-      - [0xE46AC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E46AC"]
+      - [0xE46AC, data, "src/ragewars_character_preview_lights_00_us_rev1.c"]
+
+      - [0xE46BC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E46AC_unclaimed_E46BC"]
+
+      - [0xE46C0, data, "src/ragewars_character_preview_keys_01_us_rev1.c"]
+
+      - [0xE46C8, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E46AC_unclaimed_E46C8"]
+
+      - [0xE46CC, data, "src/ragewars_character_preview_scale_distance_01_us_rev1.c"]
 
       - [0xE46EC, data, "src/ragewars_character_preview_positions_01_us_rev1.c"]
 
-      - [0xE471C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E471C"]
+      - [0xE471C, data, "src/ragewars_character_preview_lights_01_us_rev1.c"]
+
+      - [0xE472C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E471C_unclaimed_E472C"]
+
+      - [0xE4730, data, "src/ragewars_character_preview_keys_02_us_rev1.c"]
+
+      - [0xE4738, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E471C_unclaimed_E4738"]
+
+      - [0xE473C, data, "src/ragewars_character_preview_scale_distance_02_us_rev1.c"]
 
       - [0xE475C, data, "src/ragewars_character_preview_positions_02_us_rev1.c"]
 
-      - [0xE478C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E478C"]
+      - [0xE478C, data, "src/ragewars_character_preview_lights_02_us_rev1.c"]
+
+      - [0xE479C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E478C_unclaimed_E479C"]
+
+      - [0xE47A0, data, "src/ragewars_character_preview_keys_03_us_rev1.c"]
+
+      - [0xE47A8, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E478C_unclaimed_E47A8"]
+
+      - [0xE47AC, data, "src/ragewars_character_preview_scale_distance_03_us_rev1.c"]
 
       - [0xE47CC, data, "src/ragewars_character_preview_positions_03_us_rev1.c"]
 
-      - [0xE47FC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E47FC"]
+      - [0xE47FC, data, "src/ragewars_character_preview_lights_03_us_rev1.c"]
+
+      - [0xE480C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E47FC_unclaimed_E480C"]
+
+      - [0xE4810, data, "src/ragewars_character_preview_keys_04_us_rev1.c"]
+
+      - [0xE4818, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E47FC_unclaimed_E4818"]
+
+      - [0xE481C, data, "src/ragewars_character_preview_scale_distance_04_us_rev1.c"]
 
       - [0xE483C, data, "src/ragewars_character_preview_positions_04_us_rev1.c"]
 
-      - [0xE486C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E486C"]
+      - [0xE486C, data, "src/ragewars_character_preview_lights_04_us_rev1.c"]
+
+      - [0xE487C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E486C_unclaimed_E487C"]
+
+      - [0xE4880, data, "src/ragewars_character_preview_keys_05_us_rev1.c"]
+
+      - [0xE4888, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E486C_unclaimed_E4888"]
+
+      - [0xE488C, data, "src/ragewars_character_preview_scale_distance_05_us_rev1.c"]
 
       - [0xE48AC, data, "src/ragewars_character_preview_positions_05_us_rev1.c"]
 
-      - [0xE48DC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E48DC"]
+      - [0xE48DC, data, "src/ragewars_character_preview_lights_05_us_rev1.c"]
+
+      - [0xE48EC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E48DC_unclaimed_E48EC"]
+
+      - [0xE48F0, data, "src/ragewars_character_preview_keys_06_us_rev1.c"]
+
+      - [0xE48F8, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E48DC_unclaimed_E48F8"]
+
+      - [0xE48FC, data, "src/ragewars_character_preview_scale_distance_06_us_rev1.c"]
 
       - [0xE491C, data, "src/ragewars_character_preview_positions_06_us_rev1.c"]
 
-      - [0xE494C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E494C"]
+      - [0xE494C, data, "src/ragewars_character_preview_lights_06_us_rev1.c"]
+
+      - [0xE495C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E494C_unclaimed_E495C"]
+
+      - [0xE4960, data, "src/ragewars_character_preview_keys_07_us_rev1.c"]
+
+      - [0xE4968, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E494C_unclaimed_E4968"]
+
+      - [0xE496C, data, "src/ragewars_character_preview_scale_distance_07_us_rev1.c"]
 
       - [0xE498C, data, "src/ragewars_character_preview_positions_07_us_rev1.c"]
 
-      - [0xE49BC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E49BC"]
+      - [0xE49BC, data, "src/ragewars_character_preview_lights_07_us_rev1.c"]
+
+      - [0xE49CC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E49BC_unclaimed_E49CC"]
+
+      - [0xE49D0, data, "src/ragewars_character_preview_keys_08_us_rev1.c"]
+
+      - [0xE49D8, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E49BC_unclaimed_E49D8"]
+
+      - [0xE49DC, data, "src/ragewars_character_preview_scale_distance_08_us_rev1.c"]
 
       - [0xE49FC, data, "src/ragewars_character_preview_positions_08_us_rev1.c"]
 
-      - [0xE4A2C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A2C"]
+      - [0xE4A2C, data, "src/ragewars_character_preview_lights_08_us_rev1.c"]
+
+      - [0xE4A3C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A2C_unclaimed_E4A3C"]
+
+      - [0xE4A40, data, "src/ragewars_character_preview_keys_09_us_rev1.c"]
+
+      - [0xE4A48, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A2C_unclaimed_E4A48"]
+
+      - [0xE4A4C, data, "src/ragewars_character_preview_scale_distance_09_us_rev1.c"]
 
       - [0xE4A6C, data, "src/ragewars_character_preview_positions_09_us_rev1.c"]
 
-      - [0xE4A9C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A9C"]
+      - [0xE4A9C, data, "src/ragewars_character_preview_lights_09_us_rev1.c"]
+
+      - [0xE4AAC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A9C_unclaimed_E4AAC"]
+
+      - [0xE4AB0, data, "src/ragewars_character_preview_keys_10_us_rev1.c"]
+
+      - [0xE4AB8, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A9C_unclaimed_E4AB8"]
+
+      - [0xE4ABC, data, "src/ragewars_character_preview_scale_distance_10_us_rev1.c"]
 
       - [0xE4ADC, data, "src/ragewars_character_preview_positions_10_us_rev1.c"]
 
-      - [0xE4B0C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B0C"]
+      - [0xE4B0C, data, "src/ragewars_character_preview_lights_10_us_rev1.c"]
+
+      - [0xE4B1C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B0C_unclaimed_E4B1C"]
+
+      - [0xE4B20, data, "src/ragewars_character_preview_keys_11_us_rev1.c"]
+
+      - [0xE4B28, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B0C_unclaimed_E4B28"]
+
+      - [0xE4B2C, data, "src/ragewars_character_preview_scale_distance_11_us_rev1.c"]
 
       - [0xE4B4C, data, "src/ragewars_character_preview_positions_11_us_rev1.c"]
 
-      - [0xE4B7C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B7C"]
+      - [0xE4B7C, data, "src/ragewars_character_preview_lights_11_us_rev1.c"]
+
+      - [0xE4B8C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B7C_unclaimed_E4B8C"]
+
+      - [0xE4B90, data, "src/ragewars_character_preview_keys_12_us_rev1.c"]
+
+      - [0xE4B98, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B7C_unclaimed_E4B98"]
+
+      - [0xE4B9C, data, "src/ragewars_character_preview_scale_distance_12_us_rev1.c"]
 
       - [0xE4BBC, data, "src/ragewars_character_preview_positions_12_us_rev1.c"]
 
-      - [0xE4BEC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4BEC"]
+      - [0xE4BEC, data, "src/ragewars_character_preview_lights_12_us_rev1.c"]
+
+      - [0xE4BFC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4BEC_unclaimed_E4BFC"]
+
+      - [0xE4C00, data, "src/ragewars_character_preview_keys_13_us_rev1.c"]
+
+      - [0xE4C08, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4BEC_unclaimed_E4C08"]
+
+      - [0xE4C0C, data, "src/ragewars_character_preview_scale_distance_13_us_rev1.c"]
 
       - [0xE4C2C, data, "src/ragewars_character_preview_positions_13_us_rev1.c"]
 
-      - [0xE4C5C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4C5C"]
+      - [0xE4C5C, data, "src/ragewars_character_preview_lights_13_us_rev1.c"]
+
+      - [0xE4C6C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4C5C_unclaimed_E4C6C"]
+
+      - [0xE4C70, data, "src/ragewars_character_preview_keys_14_us_rev1.c"]
+
+      - [0xE4C78, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4C5C_unclaimed_E4C78"]
+
+      - [0xE4C7C, data, "src/ragewars_character_preview_scale_distance_14_us_rev1.c"]
 
       - [0xE4C9C, data, "src/ragewars_character_preview_positions_14_us_rev1.c"]
 
-      - [0xE4CCC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4CCC"]
+      - [0xE4CCC, data, "src/ragewars_character_preview_lights_14_us_rev1.c"]
+
+      - [0xE4CDC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4CCC_unclaimed_E4CDC"]
+
+      - [0xE4CE0, data, "src/ragewars_character_preview_keys_15_us_rev1.c"]
+
+      - [0xE4CE8, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4CCC_unclaimed_E4CE8"]
+
+      - [0xE4CEC, data, "src/ragewars_character_preview_scale_distance_15_us_rev1.c"]
 
       - [0xE4D0C, data, "src/ragewars_character_preview_positions_15_us_rev1.c"]
 
-      - [0xE4D3C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4D3C"]
+      - [0xE4D3C, data, "src/ragewars_character_preview_lights_15_us_rev1.c"]
+
+      - [0xE4D4C, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4D3C_unclaimed_E4D4C"]
+
+      - [0xE4D50, data, "src/ragewars_character_preview_keys_16_us_rev1.c"]
+
+      - [0xE4D58, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4D3C_unclaimed_E4D58"]
+
+      - [0xE4D5C, data, "src/ragewars_character_preview_scale_distance_16_us_rev1.c"]
 
       - [0xE4D7C, data, "src/ragewars_character_preview_positions_16_us_rev1.c"]
 
-      - [0xE4DAC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4DAC"]
+      - [0xE4DAC, data, "src/ragewars_character_preview_lights_16_us_rev1.c"]
+
+      - [0xE4DBC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4DAC_unclaimed_E4DBC"]
       - [0xE4ED0, data, "rodata/writable/800E42D0"]
       - [0xE4ED6, data, "rodata/unresolved/800E42D6"]
       - [0xE4F64, data, "src/ragewars_event_handlers_E4F64_us_rev1.c"]
