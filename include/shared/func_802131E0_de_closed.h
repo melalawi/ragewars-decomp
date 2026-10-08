@@ -3,7 +3,7 @@
 #include "common/unused.h"
 #include "types.h"
 
-extern void func_80209988_de(void *arg0);
+#include "span_1000/code_80208000.h"
 
 /** Resets a target's state block and re-registers it through func_80209988_de. */
 

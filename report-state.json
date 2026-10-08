@@ -51,7 +51,7 @@
     "include/shared/func_802052C4_de_closed.h": "b96793455260386e1362d542845fa047e41665cdebd689a39d85ba8094a8fe96",
     "include/shared/func_80206724_de_closed.h": "4e743ad09374127288a4d167788bf2a8e78b4295eba1ef86fee3f73a2f3071b3",
     "include/shared/func_8020EF80_eu_x_closed.h": "55d16ef4e748d44034b0c51bfe49f09a0494ea15bdff6b3a2e1393e909a2a0ff",
-    "include/shared/func_802131E0_de_closed.h": "a71b882586be7357489e78587474f15e604880c65b456a95f8d802d5832a3b71",
+    "include/shared/func_802131E0_de_closed.h": "49a379759eb77327e610ced7174f0993f3d91b9279350ae944a117cdb4101986",
     "include/shared/func_80214624_de_closed.h": "80a81cdffae0502179a0edc180b0251c11227db0ffd295a29c5bf2d758f98e86",
     "include/shared/func_802171FC_de_closed.h": "cf00e73fb18f22bdb2f7073364b9e3fdfa3fc2cbdc8db4f79c8e670b66b1c1f0",
     "include/shared/func_80219124_de_closed.h": "780ede8ed68023bb46d0482e4b3f02352ad7a5109abc4fc9a37ededca880d235",
@@ -96,14 +96,14 @@
     "include/span_1000/code_80204E78.h": "4b34ab76b29b8a1fa34ab00baf685e29758a4da388b7fa27b97221c3861a92fb",
     "include/span_1000/code_80206258.h": "19ced69d1243dce1657230d90f771d98c55c9e5cf2c9a24d5e26e3b4561a3e69",
     "include/span_1000/code_80207ABC.h": "0ea964194373897e86e82b98db0d378ab3e7f8b634517324719346ec80007f9b",
-    "include/span_1000/code_80208000.h": "5a3c33eca6970c9ab40767bc4be1ceb1a60e775155c4681e7699123938e16f3d",
+    "include/span_1000/code_80208000.h": "4947c44cd5f433c55adab3a37c6fade570b80b41f66a92f714a74a3239a34aab",
     "include/span_1000/code_80209AE8.h": "e6b087a39d7689d7902fdf10d7d79b30ad52d8a6f62f510518df474307de3ef6",
     "include/span_1000/code_8020AF9C.h": "ca6eb2d0bb4f84f9cee1d562944986d91352a694bf884909af242954064942ec",
     "include/span_1000/code_8020D370.h": "e3c97ae2e66c7a4c5c941c55b7acf879d211c07a7189606f8129142f3630007c",
     "include/span_1000/code_8020EAE0.h": "9cb3e20ae254fbaf1efab04584f26fae93898e7486e90d060d0c0c925204ff70",
     "include/span_1000/code_8020FDB0.h": "eb186e21c7dc4d5a88e9d4868b3a2d15dd80c15d8adb27d840e1b7eb85e2c6ee",
     "include/span_1000/code_802106E0.h": "74be9b869f1f37257b7da99902c4f87f317fc6680c85b5cb61d7417d4e760b39",
-    "include/span_1000/code_80212C90.h": "c26fba472594e8594685c71ec31ffecbe73e0771467875f1a8d83c9731b06285",
+    "include/span_1000/code_80212C90.h": "f2037ac163ca46c579ded63b81da041868bf1303e8a540c41cfdb760b0a9f222",
     "include/span_1000/code_80213ED4.h": "de67246f60d416eb53743056b19b168ccb72c076a2033adc6ba3602ab71c5ce6",
     "include/span_1000/code_80217388.h": "88717be4c47c00474ad6f980c25eee9f94f949474f1a4209b146e28f1e098970",
     "include/span_1000/code_802192C0.h": "5e1ef0c8e8d1d21d27931be137982c32b9e3ff31ed20027843a9de7c3e3c1554",
@@ -515,6 +515,7 @@
     "src/func_80212BD0_de.c": "415426cfc88114bddfcf1dec3bba9008880a587742b04bd62ede987127fc196f",
     "src/func_80212C04_de.c": "f90c0371d4ddebaa477df5e159b2026221c49b7831103c38ce883c680aae2b51",
     "src/func_80212C90_de.c": "2c86076f5e626bfde569125a283ba9d32c4f0b56a757639f6d32a0f277d66bcd",
+    "src/func_80212D80_eu_x.c": "cad88e626fbd74eb5f4a04be09b7dfa776ca986f1868720b24f1a4652202b23b",
     "src/func_80212D94_de.c": "f3696d5a2c5e3ef6d5c01980efe146435743a1a25ef5c41e5f01e0e3f363e140",
     "src/func_802131AC_de.c": "136517a0822275459844a775c1ba381e9a9ac68d79dea84e415a375d8c7889fb",
     "src/func_802131E0_de.c": "3ed49a51d1f828ed35da856f7ab39dc0ac6599ef0f133d80e626d55a7905e17d",
@@ -3280,7 +3281,7 @@
     "tools/n64link.version": "503b6a8de93b9c1deeb0b063f2780a2f8e83c0320d1f0fd8daa5685e2f1ab645",
     "tools/report-verifier.zip": "098b137ecd8bfea0d5f9de78842f48e76346fdeb71b8e8894b31ce61e25fca39",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "units.mk": "1a95c9d02270a61d08260732e7ce6aca16e7a5ae66d1b98ba2a45bfcf72a1017",
+    "units.mk": "4438ac01f501eada091f15b3656766c33204b5ed210f03f84de1d0092622c4e4",
     "versions/de/RageWars.ld": "4539793d364805b1a8b6c9e41f571e34f49221b4c0e6d266cb2c1c97247bcefa",
     "versions/de/RageWars.yaml": "877af76ace523959ef9c25bb6e80dec6d723ab6f602db4c081a0ae160c5a7935",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
@@ -3290,7 +3291,7 @@
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
     "versions/eu/symbols.ld": "c8b588b64ae6fc143d0c693929c546e88be5be2fec9c64cc7e8f64bcc15efee1",
     "versions/eu-x/RageWars.ld": "d49c7db54e2082d1513ac260a118aa2aa50f88d6fc567de87934ab2ff929881f",
-    "versions/eu-x/RageWars.yaml": "741620a8d78e20d55fe6a6bfef7c5e8277e1645a2f6af022f8d76a1ea374f17d",
+    "versions/eu-x/RageWars.yaml": "01a42fd93423c421544dbcff2a7ba99f687662eb2c7486d7bbc94881af025041",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
     "versions/eu-x/symbols.ld": "d7f35dd57ae92df894af4e422f57cb5c629ea6edc1e7a1f540e18c46847b89de",
     "versions/us/RageWars.ld": "ffb823c7e2b0bb59f940481a10decb3546c291735d9956dabf1fef7d7ed17027",
@@ -3298,7 +3299,7 @@
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
     "versions/us/symbols.ld": "a0b1f8190cd13bb63f596203ef6c033b0cdf453b8ffd44257db36d6ba5a0f9c8",
     "versions/us-rev1/RageWars.ld": "e85b05dd473505a7212c6191e955f3f995591b2a528fc2a62866434eac9cac34",
-    "versions/us-rev1/RageWars.yaml": "c067b225cdc65b60b2a96613d669819d7a5cf11b5cd952636152ad59ded629d8",
+    "versions/us-rev1/RageWars.yaml": "9cb7ea4ff1384f9d5d0afac6ea612d577894ea58367dd450f2bbc89900afc47d",
     "versions/us-rev1/symbol_addrs.txt": "cbc824fc55464bcfd697e44ab94740b4c7345689e7e6856fb3ea62db44bfc9c5",
     "versions/us-rev1/symbols.ld": "1d529a072ec50544a89e73f629b4ece75b2cabf91611784ce65d3c7741b2a04d",
     "native-data-proofs": "68a5ac454b7c243e823ea2f17d35522eeced10ee8c638a3d4b828392baf1e146",
@@ -3537,7 +3538,7 @@
       "opaque_rom_bytes": 7005616
     },
     "us-rev1": {
-      "report_sha256": "0fc1d6718989b92130738a7eb2fa7df4952d8e45085c16fdf16cc1a4a1035e0f",
+      "report_sha256": "d7e1f42dc8ca8e28c4dca404f1aedd0bc6d18f274f2d11f10a96bee6fd46e643",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6896,
@@ -3754,7 +3755,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 63.16198578954249,
+      "exact_plus_draft_percent": 63.16657892598337,
       "data_match_state": "unmeasured",
       "data_coverage": {
         "state": "unmeasured",
@@ -4007,7 +4008,7 @@
       "opaque_rom_bytes": 7001104
     },
     "eu-x": {
-      "report_sha256": "94135205553cc052e9791277f5bea100e915d761ae4546eeea55c99d5eab829b",
+      "report_sha256": "c0017e5f0bb05e32779a12ed3caaa5dcc518e72bbc17878378b64225fff29c0e",
       "artifact": "eu-x_report",
       "report_file": "eu-x_report.json",
       "draft_bytes": 6896,
@@ -4224,7 +4225,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 61.49065647046152,
+      "exact_plus_draft_percent": 61.49532374746441,
       "data_match_state": "unmeasured",
       "data_coverage": {
         "state": "unmeasured",

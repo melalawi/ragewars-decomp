@@ -342,7 +342,7 @@ segments:
       - [0x13824, c, "func_80212C04_de"]
       - [0x138B0, c, "func_80212C90_de"]
       - [0x13978, data, "func_80212D78_eu_x_padding_13978"]
-      - [0x013980, asm, "func_80212D80_eu_x"]
+      - [0x013980, c, "func_80212D80_eu_x"]
       - [0x139B4, c, "func_80212D94_de"]
       - [0x13A24, data, "func_80212E24_eu_x_padding_13A24"]
       - [0x013A30, asm, "func_80212E30_eu_x"]
