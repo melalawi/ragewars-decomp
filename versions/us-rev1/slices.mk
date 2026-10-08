@@ -3970,7 +3970,9 @@ us-rev1.D.ragewars_event_handlers_E50A4_us_rev1 := 0x800E44A4:0xE50A4:0x60
 us-rev1.S.000E5104 := 938244 400
 us-rev1.D.ragewars_arena_menu_slots_us_rev1 := 0x800E4694:0xE5294:0x3F0
 us-rev1.D.ragewars_arena_compatibility_us_rev1 := 0x800E4A84:0xE5684:0x300
-us-rev1.S.000E5984 := 940420 3908
+us-rev1.S.000E5984 := 940420 480
+us-rev1.D.ragewars_catalogue_arena_records_us_rev1 := 0x800E4F64:0xE5B64:0x280
+us-rev1.S.000E5DE4 := 941540 2788
 us-rev1.D.ragewars_resident_strings_E68C8_us_rev1 := 0x800E5CC8:0xE68C8:0x14
 us-rev1.S.000E68DC := 944348 4
 us-rev1.D.ragewars_resident_strings_E68E0_us_rev1 := 0x800E5CE0:0xE68E0:0x18
@@ -9100,6 +9102,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_arena_menu_slots_us_rev1.bin \
   build/us-rev1/data/ragewars_arena_compatibility_us_rev1.bin \
   build/us-rev1/slices/000E5984.bin \
+  build/us-rev1/data/ragewars_catalogue_arena_records_us_rev1.bin \
+  build/us-rev1/slices/000E5DE4.bin \
   build/us-rev1/data/ragewars_resident_strings_E68C8_us_rev1.bin \
   build/us-rev1/slices/000E68DC.bin \
   build/us-rev1/data/ragewars_resident_strings_E68E0_us_rev1.bin \
