@@ -5272,29 +5272,29 @@
     "versions/de/RageWars.ld": "4539793d364805b1a8b6c9e41f571e34f49221b4c0e6d266cb2c1c97247bcefa",
     "versions/de/RageWars.yaml": "877af76ace523959ef9c25bb6e80dec6d723ab6f602db4c081a0ae160c5a7935",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
-    "versions/de/symbols.ld": "a306faf26343b0e6e887ef7013d230ce1dcb906dfe2960e9b1c62e03bae1f98c",
+    "versions/de/symbols.ld": "b202ae80af556a57f52468c79c3c6d4959e8124bc0e36600a44e59aeb6df0933",
     "versions/eu/RageWars.ld": "3e5e06b72cd4e448c0f0016f8dced42ab4d9a2d61ce6b8fa869084eaf6ff31e3",
     "versions/eu/RageWars.yaml": "146f3ffe4aac9130a1d9a140e3816263fa9dbb0c2cd3f76f99954ef4b7f6b9f5",
     "versions/eu/symbol_addrs.txt": "90c2c6bfacd4bc1be099802257cc72252786b471ba574f72ad7235563ab01d97",
-    "versions/eu/symbols.ld": "3a82258654fc92a8d3ca1a777e85b5580f001914a6378464c70fb4b85f721eea",
+    "versions/eu/symbols.ld": "595d66bf6e526f8ef77778673ba70fc220c2ae98c94dc0c6b35a6807b24523b4",
     "versions/eu-x/RageWars.ld": "d49c7db54e2082d1513ac260a118aa2aa50f88d6fc567de87934ab2ff929881f",
     "versions/eu-x/RageWars.yaml": "95eb48f18f7ec62a8ced0368ad42450a5f98bc75d7dd2e622f1a5875da048217",
     "versions/eu-x/symbol_addrs.txt": "d8c1ee154b99250453803dd647a9038688a3351d902494bb8d49684da45a4b72",
-    "versions/eu-x/symbols.ld": "0d61941346d7286499e7b79dd26300a370e97c158945ed6a433a83831b437e07",
+    "versions/eu-x/symbols.ld": "bc4ef08ffbfa54ec2d48df15544c330b4f99e81f820f84a121efbe33a1c11418",
     "versions/us/RageWars.ld": "ffb823c7e2b0bb59f940481a10decb3546c291735d9956dabf1fef7d7ed17027",
-    "versions/us/RageWars.yaml": "498c8a6d7676541ef4b37904361ef5faee2f3b24f6061d5ef73ef0a1cd1ef806",
-    "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
-    "versions/us/symbols.ld": "28cd1843f6636bf62133fabb294a40b50a6e3aca062e1dbd94a838095d8d1ed6",
+    "versions/us/RageWars.yaml": "b203054002f8e850c3d71f390ea1bcebc2e3e69247ce1d0c61d4700ffe933a8f",
+    "versions/us/symbol_addrs.txt": "3a6d57dc38b9f0171315a8e880a4cbbd1ac00dbb2057ad777a3938127b50f5b1",
+    "versions/us/symbols.ld": "8666123ac62f3efa7aaf6d961164cc80eba7872503b71995d1e8f329635fa957",
     "versions/us-rev1/RageWars.ld": "e85b05dd473505a7212c6191e955f3f995591b2a528fc2a62866434eac9cac34",
     "versions/us-rev1/RageWars.yaml": "abf94a650ac31cdcfd3124d212e7519940b442c176bd0b1facb29c770de00fb7",
     "versions/us-rev1/symbol_addrs.txt": "b4698ffb0bbefc6c2708deb50e298e8009f96b11ab2fb56a40166dbe1dcf6f1a",
     "versions/us-rev1/symbols.ld": "5049a04a032bcb76353048d43df02313074d36e8c1d442c7b54062cf94f228da",
-    "native-data-proofs": "1fa56f77833eb3419161c7e5a4f0d3cb5c6c240c8739bfa75e74ae1574dcf1af",
+    "native-data-proofs": "dffc4a5c2329d13711536bb4e32006cff3d55ee805581774ee5a1b7102bbcfd8",
     "publication-state": "2302c7e0d703d0d50d26972cfc5f7bdf923a357c0c56646a92d3e65f49c5beac"
   },
   "versions": {
     "us": {
-      "report_sha256": "90937217f2e407af4f5d0812398538932f99c64f4255ab5fe485129c9d52e958",
+      "report_sha256": "a87c660776d71c5117b91f877616de6c2e3558424718b2a8e4500a48c8172f50",
       "artifact": "us_report",
       "report_file": "us_report.json",
       "draft_bytes": 6816,
@@ -5504,21 +5504,63 @@
         }
       ],
       "exact_plus_draft_percent": 63.621917374915746,
-      "data_match_state": "unmeasured",
+      "data_match_state": "partial",
       "data_coverage": {
-        "state": "unmeasured",
+        "state": "partial",
         "declared_bytes": 320748,
-        "verified_bytes": 0,
-        "unmeasured_bytes": 320748,
+        "verified_bytes": 2640,
+        "unmeasured_bytes": 318108,
         "rom_bytes": 8388608,
-        "evidence_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-        "proof_event": null,
+        "evidence_identity": "eb27894f2d3dc44b33884db6a3d2c8815aa65ff6d2da71e772abb217bfb73755",
+        "proof_event": [
+          "4cc783d76cc546e5bebfe07faab53098",
+          "ed4fb8d3685c4198a4f76b14fef48c8b",
+          "ef73520e19ce452195789cf3161dbb3e",
+          "cc5ab5a3fd9f44a4b1ae0a3a241f332c"
+        ],
         "invalidations": 0,
-        "extents": [],
+        "extents": [
+          {
+            "start": 910208,
+            "end": 912080,
+            "source": "src/ragewars_pixel_formats_us_rev1.c",
+            "bytes_sha256": "658628541c7d10b25977e291d61e60cc24c10e43d2b168ca88ecce9ec42222b8",
+            "symbol": "D_800DEAD0",
+            "proof": "6e3d0eea7010ff52207f7cdf77dbf0f49744ef658e98224f0504ce9ae4e28607",
+            "kind": "data"
+          },
+          {
+            "start": 839024,
+            "end": 839280,
+            "source": "src/ragewars_particle_intensity_texture_us_rev1.c",
+            "bytes_sha256": "115e66e006fb9b743e1200c8ac5887d333bb2616364541475cb97911e5521bb0",
+            "symbol": "D_800CC260",
+            "proof": "2d1deb4d3bd99f55c31873fe125d6fcd0eb7fa1ddce3d04d7391fa4bae67c920",
+            "kind": "data"
+          },
+          {
+            "start": 826128,
+            "end": 826384,
+            "source": "src/ragewars_actor_primary_mask_events_us_rev1.c",
+            "bytes_sha256": "231508f8dfe874eff9bf9eb73d3a79ba3d931e3a0ee1e3e165f9782e7d4a3d38",
+            "symbol": "D_800C8FF0_de",
+            "proof": "442e648a3ec9ea9bcb6ea218f60f66db875854cdab0613d8477ca69dbfc917cd",
+            "kind": "data"
+          },
+          {
+            "start": 821536,
+            "end": 821792,
+            "source": "src/ragewars_u64_quotient_bitwidth_us_rev1.c",
+            "bytes_sha256": "14a5d850c255623f9472e3c650abce0c78d32f0276b315b3a276a0462d97a1ac",
+            "symbol": "D_800C7E00_de",
+            "proof": "7196b555d278b6bdbc6088020f4033351258651437a1a9bbd1bded3b1601684c",
+            "kind": "data"
+          }
+        ],
         "causes": [
           {
-            "key": "data.proof.missing",
-            "unmeasured_bytes": 320748
+            "key": "data.coverage.unmeasured",
+            "unmeasured_bytes": 318108
           }
         ]
       },
