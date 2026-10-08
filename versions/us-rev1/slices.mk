@@ -3629,7 +3629,8 @@ us-rev1.S.000D8260 := 885344 1080
 us-rev1.D.ragewars_option_label_slots_us_rev1 := 0x800D7A98:0xD8698:0x380
 us-rev1.S.000D8A18 := 887320 40
 us-rev1.D.ragewars_credits_language_table_us_rev1 := 0x800D7E40:0xD8A40:0x4
-us-rev1.S.000D8A44 := 887364 348
+us-rev1.D.ragewars_keyboard_key_labels_us_rev1 := 0x800D7E44:0xD8A44:0x140
+us-rev1.S.000D8B84 := 887684 28
 us-rev1.D.ragewars_tlb_snapshot_us_rev1 := 0x800D7FA0:0xD8BA0:0xF8
 us-rev1.S.000D8C98 := 887960 24
 us-rev1.D.ragewars_audio_effect_D8CB0_us_rev1 := 0x800D80B0:0xD8CB0:0x68
@@ -8758,7 +8759,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_option_label_slots_us_rev1.bin \
   build/us-rev1/slices/000D8A18.bin \
   build/us-rev1/data/ragewars_credits_language_table_us_rev1.bin \
-  build/us-rev1/slices/000D8A44.bin \
+  build/us-rev1/data/ragewars_keyboard_key_labels_us_rev1.bin \
+  build/us-rev1/slices/000D8B84.bin \
   build/us-rev1/data/ragewars_tlb_snapshot_us_rev1.bin \
   build/us-rev1/slices/000D8C98.bin \
   build/us-rev1/data/ragewars_audio_effect_D8CB0_us_rev1.bin \
