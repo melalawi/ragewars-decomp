@@ -4312,7 +4312,7 @@ segments:
       - [0xE2AA8, rodata, "rodata/func_80433610_de/800E1EA8"]
       - [0xE2AE0, rodata, "rodata/func_80433EA0_de/800E1EE0"]
       - [0xE2AE3, data, "rodata/unresolved/800E1EE3"]
-      - [0xE2AE4, rodata, "rodata/func_80433EA0_de/800E1EE4"]
+      - [0xE2AE4, rodata, "src/controller_pak_note_label_format_us_rev1.c"]
       - [0xE2AED, data, "rodata/unresolved/800E1EED"]
       - [0xE2AF0, rodata, "src/rw_text_80433EA0_E2AF0_us_rev1.c"]
       - [0xE2AF6, data, "rodata/unresolved/800E1EF6"]
