@@ -3594,7 +3594,13 @@ us-rev1.S.000D3784 := 866180 140
 us-rev1.D.rw_pool_802A18CC_D3810_us_rev1 := 0x800D2C10:0xD3810:0x8
 us-rev1.S.000D3818 := 866328 8
 us-rev1.D.ragewars_event_handlers_D3820_us_rev1 := 0x800D2C20:0xD3820:0x6C
-us-rev1.S.000D388C := 866444 468
+us-rev1.S.000D388C := 866444 4
+us-rev1.D.ragewars_session_state_D3890_us_rev1 := 0x800D2C90:0xD3890:0x4
+us-rev1.D.ragewars_session_state_D3894_us_rev1 := 0x800D2C94:0xD3894:0x4
+us-rev1.D.ragewars_session_state_D3898_us_rev1 := 0x800D2C98:0xD3898:0x4
+us-rev1.D.ragewars_session_state_D389C_us_rev1 := 0x800D2C9C:0xD389C:0x4
+us-rev1.D.ragewars_session_state_D38A0_us_rev1 := 0x800D2CA0:0xD38A0:0x8
+us-rev1.S.000D38A8 := 866472 440
 us-rev1.D.ragewars_particle_state_depth_us_rev1 := 0x800D2E60:0xD3A60:0x60
 us-rev1.D.ragewars_particle_state_decal_us_rev1 := 0x800D2EC0:0xD3AC0:0x58
 us-rev1.D.ragewars_particle_state_primitive_us_rev1 := 0x800D2F18:0xD3B18:0x60
@@ -8792,6 +8798,12 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D3818.bin \
   build/us-rev1/data/ragewars_event_handlers_D3820_us_rev1.bin \
   build/us-rev1/slices/000D388C.bin \
+  build/us-rev1/data/ragewars_session_state_D3890_us_rev1.bin \
+  build/us-rev1/data/ragewars_session_state_D3894_us_rev1.bin \
+  build/us-rev1/data/ragewars_session_state_D3898_us_rev1.bin \
+  build/us-rev1/data/ragewars_session_state_D389C_us_rev1.bin \
+  build/us-rev1/data/ragewars_session_state_D38A0_us_rev1.bin \
+  build/us-rev1/slices/000D38A8.bin \
   build/us-rev1/data/ragewars_particle_state_depth_us_rev1.bin \
   build/us-rev1/data/ragewars_particle_state_decal_us_rev1.bin \
   build/us-rev1/data/ragewars_particle_state_primitive_us_rev1.bin \
