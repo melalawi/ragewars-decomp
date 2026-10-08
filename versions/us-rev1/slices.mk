@@ -3418,7 +3418,12 @@ us-rev1.S.000D172C := 857900 628
 us-rev1.D.rw_pool_8025F434_D19A0_us_rev1 := 0x800D0DA0:0xD19A0:0x4
 us-rev1.S.000D19A4 := 858532 412
 us-rev1.D.ragewars_rdp_startup_us_rev1 := 0x800D0F40:0xD1B40:0x60
-us-rev1.S.000D1BA0 := 859040 1664
+us-rev1.D.ragewars_texture_rgba16_mip_us_rev1 := 0x800D0FA0:0xD1BA0:0x80
+us-rev1.D.ragewars_texture_rgba16_mip_clamp_us_rev1 := 0x800D1020:0xD1C20:0x80
+us-rev1.D.ragewars_texture_rgba16_detail_us_rev1 := 0x800D10A0:0xD1CA0:0x98
+us-rev1.D.ragewars_texture_rgba16_sharpen_us_rev1 := 0x800D1138:0xD1D38:0x98
+us-rev1.D.ragewars_texture_intensity_mip_us_rev1 := 0x800D11D0:0xD1DD0:0x98
+us-rev1.S.000D1E68 := 859752 952
 us-rev1.D.ragewars_arccos_table_us_rev1 := 0x800D1620:0xD2220:0x1008
 us-rev1.D.rw_pool_802745D0_D3228_us_rev1 := 0x800D2628:0xD3228:0x4
 us-rev1.S.000D322C := 864812 728
@@ -8247,7 +8252,12 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_8025F434_D19A0_us_rev1.bin \
   build/us-rev1/slices/000D19A4.bin \
   build/us-rev1/data/ragewars_rdp_startup_us_rev1.bin \
-  build/us-rev1/slices/000D1BA0.bin \
+  build/us-rev1/data/ragewars_texture_rgba16_mip_us_rev1.bin \
+  build/us-rev1/data/ragewars_texture_rgba16_mip_clamp_us_rev1.bin \
+  build/us-rev1/data/ragewars_texture_rgba16_detail_us_rev1.bin \
+  build/us-rev1/data/ragewars_texture_rgba16_sharpen_us_rev1.bin \
+  build/us-rev1/data/ragewars_texture_intensity_mip_us_rev1.bin \
+  build/us-rev1/slices/000D1E68.bin \
   build/us-rev1/data/ragewars_arccos_table_us_rev1.bin \
   build/us-rev1/data/rw_pool_802745D0_D3228_us_rev1.bin \
   build/us-rev1/slices/000D322C.bin \
