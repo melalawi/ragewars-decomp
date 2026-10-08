@@ -3368,15 +3368,19 @@ us-rev1.S.000CC078 := 835704 8
 us-rev1.D.rw_text_802AEF84_us_rev1_CC080_us_rev1 := 0x800CB480:0xCC080:0xA
 us-rev1.S.000CC08A := 835722 198
 us-rev1.D.ragewars_resident_strings_CC150_us_rev1 := 0x800CB550:0xCC150:0x10
-us-rev1.S.000CC160 := 835936 4
+us-rev1.D.ragewars_credits_label_blank_us_rev1 := 0x800CB560:0xCC160:0x1
+us-rev1.S.000CC161 := 835937 3
 us-rev1.D.ragewars_resident_strings_CC164_us_rev1 := 0x800CB564:0xCC164:0x4E8
-us-rev1.S.000CC64C := 837196 12
+us-rev1.D.ragewars_credits_label_technicians_us_rev1 := 0x800CBA4C:0xCC64C:0xC
 us-rev1.D.ragewars_resident_strings_CC658_us_rev1 := 0x800CBA58:0xCC658:0x240
-us-rev1.S.000CC898 := 837784 12
+us-rev1.D.ragewars_credits_label_producer_us_rev1 := 0x800CBC98:0xCC898:0x9
+us-rev1.S.000CC8A1 := 837793 3
 us-rev1.D.ragewars_resident_strings_CC8A4_us_rev1 := 0x800CBCA4:0xCC8A4:0x41C
-us-rev1.S.000CCCC0 := 838848 44
+us-rev1.D.ragewars_credits_label_testers_us_rev1 := 0x800CC0C0:0xCCCC0:0x2B
+us-rev1.S.000CCCEB := 838891 1
 us-rev1.D.ragewars_resident_strings_CCCEC_us_rev1 := 0x800CC0EC:0xCCCEC:0x41C
-us-rev1.S.000CD108 := 839944 64
+us-rev1.D.ragewars_credits_label_team_us_rev1 := 0x800CC508:0xCD108:0x2A
+us-rev1.S.000CD132 := 839986 22
 us-rev1.D.rw_pool_802AE290_CD148_us_rev1 := 0x800CC548:0xCD148:0x4
 us-rev1.S.000CD14C := 840012 4
 us-rev1.D.rw_pool_802AE5B8_CD150_us_rev1 := 0x800CC550:0xCD150:0xC
@@ -8470,15 +8474,19 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_text_802AEF84_us_rev1_CC080_us_rev1.bin \
   build/us-rev1/slices/000CC08A.bin \
   build/us-rev1/data/ragewars_resident_strings_CC150_us_rev1.bin \
-  build/us-rev1/slices/000CC160.bin \
+  build/us-rev1/data/ragewars_credits_label_blank_us_rev1.bin \
+  build/us-rev1/slices/000CC161.bin \
   build/us-rev1/data/ragewars_resident_strings_CC164_us_rev1.bin \
-  build/us-rev1/slices/000CC64C.bin \
+  build/us-rev1/data/ragewars_credits_label_technicians_us_rev1.bin \
   build/us-rev1/data/ragewars_resident_strings_CC658_us_rev1.bin \
-  build/us-rev1/slices/000CC898.bin \
+  build/us-rev1/data/ragewars_credits_label_producer_us_rev1.bin \
+  build/us-rev1/slices/000CC8A1.bin \
   build/us-rev1/data/ragewars_resident_strings_CC8A4_us_rev1.bin \
-  build/us-rev1/slices/000CCCC0.bin \
+  build/us-rev1/data/ragewars_credits_label_testers_us_rev1.bin \
+  build/us-rev1/slices/000CCCEB.bin \
   build/us-rev1/data/ragewars_resident_strings_CCCEC_us_rev1.bin \
-  build/us-rev1/slices/000CD108.bin \
+  build/us-rev1/data/ragewars_credits_label_team_us_rev1.bin \
+  build/us-rev1/slices/000CD132.bin \
   build/us-rev1/data/rw_pool_802AE290_CD148_us_rev1.bin \
   build/us-rev1/slices/000CD14C.bin \
   build/us-rev1/data/rw_pool_802AE5B8_CD150_us_rev1.bin \
