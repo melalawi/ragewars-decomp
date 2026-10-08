@@ -346,7 +346,7 @@ segments:
       - [0x139B4, c, "func_80212D94_de"]
       - [0x13A24, data, "func_80212E24_eu_x_padding_13A24"]
       - [0x013A30, asm, "func_80212E30_eu_x"]
-      - [0x13BDC, asm, "func_80212FDC_eu"]
+      - [0x13BDC, c, "func_80212FDC_eu"]
       - [0x13BF4, data, "func_80212FBC_de_padding_13BF4"]
       - [0x013C00, asm, "func_80212FBC_de"]
       - [0x13DCC, c, "func_802131AC_de"]

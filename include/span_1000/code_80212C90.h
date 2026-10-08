@@ -317,6 +317,6 @@ typedef struct func_802136EC_S3 func_802136EC_S3;
 extern int func_80212D60_de(void * arg0);
 extern int func_80212D80_eu(void * arg0);
 extern void func_80212D80_eu_x(struct Actor_func_80212D78_eu_x *arg0);
-extern int func_80212FDC_eu(void * arg0);
+extern void func_80212FDC_eu(void * arg0);
 void func_802131E0_de(Root802131E0 *arg0);
 #endif

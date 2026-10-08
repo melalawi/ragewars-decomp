@@ -19,7 +19,10 @@ typedef struct RouteChaseBot {
     RouteChaseThing *target;
     u8 pad6C[0x50];
     s32 targetId;
-    u8 padC0[0x178];
+    u8 padC0[0x160];
+    s32 resetWord220;
+    s32 resetWord224;
+    u8 pad228[0x10];
     s32 arrived;
 } RouteChaseBot;
 typedef struct RouteChasePlayer {
