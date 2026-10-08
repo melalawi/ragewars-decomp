@@ -5094,7 +5094,51 @@ us-rev1.S.000E3424 := 930852 36
 us-rev1.D.rw_constants_8040170C_E3448_us_rev1 := 0x800E2848:0xE3448:0x4
 us-rev1.S.000E344C := 930892 16
 us-rev1.D.rw_controller_pak_filename_alphabet_us_rev1 := 0x800E285C:0xE345C:0x42
-us-rev1.S.000E349E := 930974 562
+us-rev1.S.000E349E := 930974 50
+us-rev1.D.rw_video_buffer_width_E34D0_us_rev1 := 0x800E28D0:0xE34D0:0x4
+us-rev1.D.rw_video_buffer_height_E34D4_us_rev1 := 0x800E28D4:0xE34D4:0x4
+us-rev1.D.rw_video_selected_mode_E34D8_us_rev1 := 0x800E28D8:0xE34D8:0x4
+us-rev1.D.rw_video_previous_mode_E34DC_us_rev1 := 0x800E28DC:0xE34DC:0x4
+us-rev1.S.000E34E0 := 931040 16
+us-rev1.D.rw_video_mode_counts_E34F0_us_rev1 := 0x800E28F0:0xE34F0:0x8
+us-rev1.D.rw_video_arguments_r0_m0_E34F8_us_rev1 := 0x800E28F8:0xE34F8:0x18
+us-rev1.S.000E3510 := 931088 4
+us-rev1.D.rw_video_arguments_r0_m1_E3514_us_rev1 := 0x800E2914:0xE3514:0x18
+us-rev1.S.000E352C := 931116 4
+us-rev1.D.rw_video_arguments_r0_m2_E3530_us_rev1 := 0x800E2930:0xE3530:0x18
+us-rev1.S.000E3548 := 931144 60
+us-rev1.D.rw_video_arguments_r1_m0_E3584_us_rev1 := 0x800E2984:0xE3584:0x18
+us-rev1.S.000E359C := 931228 4
+us-rev1.D.rw_video_arguments_r1_m1_E35A0_us_rev1 := 0x800E29A0:0xE35A0:0x18
+us-rev1.S.000E35B8 := 931256 4
+us-rev1.D.rw_video_arguments_r1_m2_E35BC_us_rev1 := 0x800E29BC:0xE35BC:0x18
+us-rev1.S.000E35D4 := 931284 60
+us-rev1.D.rw_video_configurations_E3610_us_rev1 := 0x800E2A10:0xE3610:0x3C
+us-rev1.S.000E364C := 931404 2
+us-rev1.D.rw_video_vi_mode_r0_f0_E364E_us_rev1 := 0x800E2A4E:0xE364E:0x2
+us-rev1.S.000E3650 := 931408 6
+us-rev1.D.rw_video_vi_mode_r0_f2_E3656_us_rev1 := 0x800E2A56:0xE3656:0x2
+us-rev1.S.000E3658 := 931416 10
+us-rev1.D.rw_video_vi_mode_r0_f5_E3662_us_rev1 := 0x800E2A62:0xE3662:0x2
+us-rev1.S.000E3664 := 931428 6
+us-rev1.D.rw_video_vi_mode_r0_f7_E366A_us_rev1 := 0x800E2A6A:0xE366A:0x2
+us-rev1.S.000E366C := 931436 2
+us-rev1.D.rw_video_vi_mode_r1_f0_E366E_us_rev1 := 0x800E2A6E:0xE366E:0x2
+us-rev1.S.000E3670 := 931440 6
+us-rev1.D.rw_video_vi_mode_r1_f2_E3676_us_rev1 := 0x800E2A76:0xE3676:0x2
+us-rev1.S.000E3678 := 931448 10
+us-rev1.D.rw_video_vi_mode_r1_f5_E3682_us_rev1 := 0x800E2A82:0xE3682:0x2
+us-rev1.S.000E3684 := 931460 6
+us-rev1.D.rw_video_vi_mode_r1_f7_E368A_us_rev1 := 0x800E2A8A:0xE368A:0x2
+us-rev1.S.000E368C := 931468 2
+us-rev1.D.rw_video_vi_mode_r2_f0_E368E_us_rev1 := 0x800E2A8E:0xE368E:0x2
+us-rev1.S.000E3690 := 931472 6
+us-rev1.D.rw_video_vi_mode_r2_f2_E3696_us_rev1 := 0x800E2A96:0xE3696:0x2
+us-rev1.S.000E3698 := 931480 10
+us-rev1.D.rw_video_vi_mode_r2_f5_E36A2_us_rev1 := 0x800E2AA2:0xE36A2:0x2
+us-rev1.S.000E36A4 := 931492 6
+us-rev1.D.rw_video_vi_mode_r2_f7_E36AA_us_rev1 := 0x800E2AAA:0xE36AA:0x2
+us-rev1.S.000E36AC := 931500 36
 us-rev1.D.ragewars_event_handlers_E36D0_us_rev1 := 0x800E2AD0:0xE36D0:0x48
 us-rev1.S.000E3718 := 931608 8
 us-rev1.D.ragewars_pixel_formats_us_rev1 := 0x800E2B20:0xE3720:0x750
@@ -11570,6 +11614,50 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E344C.bin \
   build/us-rev1/data/rw_controller_pak_filename_alphabet_us_rev1.bin \
   build/us-rev1/slices/000E349E.bin \
+  build/us-rev1/data/rw_video_buffer_width_E34D0_us_rev1.bin \
+  build/us-rev1/data/rw_video_buffer_height_E34D4_us_rev1.bin \
+  build/us-rev1/data/rw_video_selected_mode_E34D8_us_rev1.bin \
+  build/us-rev1/data/rw_video_previous_mode_E34DC_us_rev1.bin \
+  build/us-rev1/slices/000E34E0.bin \
+  build/us-rev1/data/rw_video_mode_counts_E34F0_us_rev1.bin \
+  build/us-rev1/data/rw_video_arguments_r0_m0_E34F8_us_rev1.bin \
+  build/us-rev1/slices/000E3510.bin \
+  build/us-rev1/data/rw_video_arguments_r0_m1_E3514_us_rev1.bin \
+  build/us-rev1/slices/000E352C.bin \
+  build/us-rev1/data/rw_video_arguments_r0_m2_E3530_us_rev1.bin \
+  build/us-rev1/slices/000E3548.bin \
+  build/us-rev1/data/rw_video_arguments_r1_m0_E3584_us_rev1.bin \
+  build/us-rev1/slices/000E359C.bin \
+  build/us-rev1/data/rw_video_arguments_r1_m1_E35A0_us_rev1.bin \
+  build/us-rev1/slices/000E35B8.bin \
+  build/us-rev1/data/rw_video_arguments_r1_m2_E35BC_us_rev1.bin \
+  build/us-rev1/slices/000E35D4.bin \
+  build/us-rev1/data/rw_video_configurations_E3610_us_rev1.bin \
+  build/us-rev1/slices/000E364C.bin \
+  build/us-rev1/data/rw_video_vi_mode_r0_f0_E364E_us_rev1.bin \
+  build/us-rev1/slices/000E3650.bin \
+  build/us-rev1/data/rw_video_vi_mode_r0_f2_E3656_us_rev1.bin \
+  build/us-rev1/slices/000E3658.bin \
+  build/us-rev1/data/rw_video_vi_mode_r0_f5_E3662_us_rev1.bin \
+  build/us-rev1/slices/000E3664.bin \
+  build/us-rev1/data/rw_video_vi_mode_r0_f7_E366A_us_rev1.bin \
+  build/us-rev1/slices/000E366C.bin \
+  build/us-rev1/data/rw_video_vi_mode_r1_f0_E366E_us_rev1.bin \
+  build/us-rev1/slices/000E3670.bin \
+  build/us-rev1/data/rw_video_vi_mode_r1_f2_E3676_us_rev1.bin \
+  build/us-rev1/slices/000E3678.bin \
+  build/us-rev1/data/rw_video_vi_mode_r1_f5_E3682_us_rev1.bin \
+  build/us-rev1/slices/000E3684.bin \
+  build/us-rev1/data/rw_video_vi_mode_r1_f7_E368A_us_rev1.bin \
+  build/us-rev1/slices/000E368C.bin \
+  build/us-rev1/data/rw_video_vi_mode_r2_f0_E368E_us_rev1.bin \
+  build/us-rev1/slices/000E3690.bin \
+  build/us-rev1/data/rw_video_vi_mode_r2_f2_E3696_us_rev1.bin \
+  build/us-rev1/slices/000E3698.bin \
+  build/us-rev1/data/rw_video_vi_mode_r2_f5_E36A2_us_rev1.bin \
+  build/us-rev1/slices/000E36A4.bin \
+  build/us-rev1/data/rw_video_vi_mode_r2_f7_E36AA_us_rev1.bin \
+  build/us-rev1/slices/000E36AC.bin \
   build/us-rev1/data/ragewars_event_handlers_E36D0_us_rev1.bin \
   build/us-rev1/slices/000E3718.bin \
   build/us-rev1/data/ragewars_pixel_formats_us_rev1.bin \
