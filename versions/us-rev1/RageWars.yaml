@@ -1109,7 +1109,7 @@ segments:
       - [0x559D0, c, "func_80254E30_de"]
       - [0x55A28, c, "func_80254E88_de"]
       - [0x55A70, c, "func_80254ED0_de"]
-      - [0x55B3C, asm, "func_80254F9C_de"]
+      - [0x55B3C, c, "func_80254F9C_de"]
       - [0x55BE8, c, "func_80255048_de"]
       - [0x55C90, c, "func_802550F0_de"]
       - [0x55E20, asm, "func_80255270_eu_x"]
