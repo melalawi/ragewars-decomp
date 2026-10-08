@@ -1626,7 +1626,7 @@ segments:
       - [0x7E91C, asm, "func_8027DD48_de"]
       - [0x7F358, c, "func_8027E784_de"]
       - [0x7F700, c, "func_8027EB2C_de"]
-      - [0x7F940, asm, "func_8027ED6C_de"]
+      - [0x7F940, c, "func_8027ED6C_de"]
       - [0x80B2C, c, "func_8027FF58_de"]
       - [0x80C94, c, "func_802800C0_de"]
       - [0x82670, c, "func_80281A9C_de"]

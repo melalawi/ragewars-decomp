@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "tool_sha256": "d2427a6220fdb0cde10a4928b868648dc6693516e4e9b62f1b610b701a4cf008",
+  "tool_sha256": "e711fc618fef1a21387368ea5f98e2fd9c4a0c51f663a7ed8184c1557ec54156",
   "source_pins": {
-    ".github/workflows/progress.yml": "8b247a8d25ca2656073e421b4ccbccdbddeb1094664abd305643fa44a185fb0f",
-    ".gitlab-ci.yml": "75beea04bac1098d17c076c2fe1c9d7ddacee02a97dd4c411c6cbeea248f0d3b",
+    ".github/workflows/progress.yml": "85ac7d3af9f8f834c03b8d7dc047e9179419e37d2165ca1b057bd42ec09a714b",
+    ".gitlab-ci.yml": "44020cd2cf20eb61dab14eed202b553663cbaad9536a8d9a925622f373ce7aa4",
     "Makefile": "329bd96fee40df88f6a10e52209056df61d5081aa2cd030f10455f44b2b3bd1c",
     "config.toml": "113565dc23152dd001e4eb029352685e5ac5777dec3f2cee7e2c6ef3c25d29e0",
     "include/abi.h": "cff5a56cde9e9c6f6229882328d71b038544f4c8102196347b92ac2df6a84951",
@@ -1698,6 +1698,7 @@
     "src/func_8027D97C_de.c": "7718106f76142e508cbb006a910847934cb8e3c2c5a7f8aea6b2aa50629afdad",
     "src/func_8027E784_de.c": "f62b093e919aedf7aabc79cdd4c590f6626b8a3b1cfb49e87d8a5bdc08039ffd",
     "src/func_8027EB2C_de.c": "fd1aeb3b9a27984e79bdcf0e3a8a8a64d9135111a4a5298add945fa96ed0c17d",
+    "src/func_8027ED6C_de.c": "9bbde4177ddf1331337516fea6a388916d4f7e17eccb2bab7d3a087a238a7190",
     "src/func_8027FF58_de.c": "c56d664c4ede98f4b168c51aea405d19437927e0826a9c44f02407a97cf14a9b",
     "src/func_802800C0_de.c": "ac8d83d860449fcdab7c3d496170aae1fa899589dd98aadf2208f8dbf96423a3",
     "src/func_80281A9C_de.c": "4932a77bf6039acef777eb4ef948719e570bfff6f00e410e8fe51301366ae160",
@@ -4801,9 +4802,9 @@
     "src/sn64_runtime_type_records.c": "edf6c27e555a271e89fc9237658be773c685db8bd92cc6f734d439a5e7ff84d7",
     "tools/compilers.sha256": "b28b12299b9e8803d03ffefca0963b4fafa1d1c15ff743b89b12e160a9e47991",
     "tools/n64link.version": "503b6a8de93b9c1deeb0b063f2780a2f8e83c0320d1f0fd8daa5685e2f1ab645",
-    "tools/report-verifier.zip": "d2427a6220fdb0cde10a4928b868648dc6693516e4e9b62f1b610b701a4cf008",
+    "tools/report-verifier.zip": "e711fc618fef1a21387368ea5f98e2fd9c4a0c51f663a7ed8184c1557ec54156",
     "unbake-original-asm.json": "7db83ae39bf320b5b574f29cd2b58996ce67b85c6bbfb232e15f4c1fb6d14602",
-    "units.mk": "92c83872e0f41637977f5770d878e4f01c98629ea21c73f626e1369aeedfef48",
+    "units.mk": "accd77c5ad332dee48d2a34d336f4ee78d5b1ff26f1e1499340317ad82164ad3",
     "versions/de/RageWars.ld": "4539793d364805b1a8b6c9e41f571e34f49221b4c0e6d266cb2c1c97247bcefa",
     "versions/de/RageWars.yaml": "877af76ace523959ef9c25bb6e80dec6d723ab6f602db4c081a0ae160c5a7935",
     "versions/de/symbol_addrs.txt": "7733aaac491ae2a9931b889b9bf053bd2551db2b7980cba6281ddfbc3a880857",
@@ -4821,7 +4822,7 @@
     "versions/us/symbol_addrs.txt": "62b0804e79e93f9de7dcd765a820727a99e259cacc4d7bfcf3878e51c5a673cb",
     "versions/us/symbols.ld": "28cd1843f6636bf62133fabb294a40b50a6e3aca062e1dbd94a838095d8d1ed6",
     "versions/us-rev1/RageWars.ld": "e85b05dd473505a7212c6191e955f3f995591b2a528fc2a62866434eac9cac34",
-    "versions/us-rev1/RageWars.yaml": "d399973707125fe1767f14c431e4eaa97c16b0d833bfd7c7227313a53722e326",
+    "versions/us-rev1/RageWars.yaml": "79c230c5e4abe64438f120609713cec052fb95e7addad5ed9d5b5ef9ed55d51e",
     "versions/us-rev1/symbol_addrs.txt": "a562a344666c3e386cbc63b7a6a1316a66c5c5dae275294f3643a763907f3c1d",
     "versions/us-rev1/symbols.ld": "8c6dbac4f8506dab05fb95abc63eb91d4bf9d2bbc68e765be33539dcf2b6f1d0",
     "native-data-proofs": "072be46e467b3dc3ce62a353819be75c423bb263f26f4e495c8033247fa9b78c",
@@ -5060,7 +5061,7 @@
       "opaque_rom_bytes": 7005616
     },
     "us-rev1": {
-      "report_sha256": "65e7eea18ddb8c8ccb1b3d96f542efe3b078f8c9c6918e516d8620d126453e32",
+      "report_sha256": "40c5bc0f1f9b4697169c2159fb6527b96de662e396721c7e5d4ef8131eb29b85",
       "artifact": "us-rev1_report",
       "report_file": "us-rev1_report.json",
       "draft_bytes": 6896,
@@ -5277,7 +5278,7 @@
           "compiler": "gcc-2.8.1-sn64"
         }
       ],
-      "exact_plus_draft_percent": 69.97643367687638,
+      "exact_plus_draft_percent": 70.3816896382375,
       "data_match_state": "partial",
       "data_coverage": {
         "state": "partial",
