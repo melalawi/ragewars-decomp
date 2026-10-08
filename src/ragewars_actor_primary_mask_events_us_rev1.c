@@ -1,0 +1,38 @@
+/* func_802170A0_de walks mask/event pairs with stride eight, tests each
+ * mask, then passes the signed event ID to func_8024DBC0_de. The terminating
+ * mask is emitted separately; its unused neighboring word stays raw. */
+struct ActorMaskEvent { unsigned int mask; int event_id; };
+struct ActorMaskEvent D_800C8FF0_de[32] = {
+    {1U << 0, 1701},
+    {1U << 1, 1702},
+    {1U << 2, 1703},
+    {1U << 3, 1704},
+    {1U << 4, 1705},
+    {1U << 5, 1706},
+    {1U << 6, 2200},
+    {1U << 7, 2200},
+    {1U << 8, 2200},
+    {1U << 9, 2200},
+    {1U << 10, 2200},
+    {1U << 11, 2200},
+    {1U << 12, 2200},
+    {1U << 13, 2200},
+    {1U << 14, 2200},
+    {1U << 15, 2200},
+    {1U << 16, 2200},
+    {1U << 17, 2200},
+    {1U << 18, 2200},
+    {1U << 19, 2200},
+    {1U << 20, 2200},
+    {1U << 21, 2200},
+    {1U << 22, 2200},
+    {1U << 23, 2200},
+    {1U << 24, 2200},
+    {1U << 25, 2200},
+    {1U << 26, 2200},
+    {1U << 27, 2200},
+    {1U << 28, 2200},
+    {1U << 29, 2200},
+    {1U << 30, 2200},
+    {1U << 31, 2200},
+};
