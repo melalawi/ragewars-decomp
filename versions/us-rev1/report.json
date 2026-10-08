@@ -8,7 +8,7 @@
     "complete_data": 0,
     "total_functions": 4547,
     "matched_functions": 3822,
-    "total_units": 5706,
+    "total_units": 5709,
     "complete_units": 2961,
     "matched_code_percent": 66.10336,
     "complete_code_percent": 66.10336,
@@ -180267,7 +180267,7 @@
     {
       "name": "data:rodata/unresolved/800D0964_unclaimed_D162C@D162C",
       "measures": {
-        "total_data": "252",
+        "total_data": "4",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -180277,7 +180277,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "252",
+          "size": "4",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_effect_id_scales_us_rev1.c@D1630",
+      "measures": {
+        "total_data": "248",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "248",
           "metadata": {}
         }
       ],
@@ -180315,7 +180340,7 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800D0B2C@D172C",
+      "name": "data:src/ragewars_interpolated_ratio_curve_us_rev1.c@D172C",
       "measures": {
         "total_data": "484",
         "matched_data": "0",
@@ -180492,7 +180517,7 @@
     {
       "name": "data:rodata/unresolved/800D0DA4@D19A4",
       "measures": {
-        "total_data": "172",
+        "total_data": "12",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -180502,7 +180527,57 @@
       "sections": [
         {
           "name": "data",
-          "size": "172",
+          "size": "12",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_controller_button_remap_us_rev1.c@D19B0",
+      "measures": {
+        "total_data": "152",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "152",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D0DA4_unclaimed_D1A48@D1A48",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
           "metadata": {}
         }
       ],
@@ -197616,7 +197691,7 @@
         "complete_data": 0,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 2020,
+        "total_units": 2023,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
