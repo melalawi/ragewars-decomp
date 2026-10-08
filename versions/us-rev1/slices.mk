@@ -3671,13 +3671,53 @@ us-rev1.S.000CEBB8 := 846776 4
 us-rev1.D.ragewars_actor_handler_run_CEBBC_us_rev1 := 0x800CDFBC:0xCEBBC:0x4
 us-rev1.S.000CEBC0 := 846784 4
 us-rev1.D.ragewars_actor_handler_run_CEBC4_us_rev1 := 0x800CDFC4:0xCEBC4:0x8
-us-rev1.S.000CEBCC := 846796 628
+us-rev1.S.000CEBCC := 846796 148
+us-rev1.D.rw_controller_state_dispatch_CEC60_us_rev1 := 0x800CE060:0xCEC60:0xC
+us-rev1.S.000CEC6C := 846956 20
+us-rev1.D.rw_controller_state_dispatch_CEC80_us_rev1 := 0x800CE080:0xCEC80:0xC
+us-rev1.S.000CEC8C := 846988 20
+us-rev1.D.rw_controller_state_dispatch_CECA0_us_rev1 := 0x800CE0A0:0xCECA0:0xC
+us-rev1.S.000CECAC := 847020 20
+us-rev1.D.rw_controller_state_dispatch_CECC0_us_rev1 := 0x800CE0C0:0xCECC0:0xC
+us-rev1.S.000CECCC := 847052 20
+us-rev1.D.rw_controller_state_dispatch_CECE0_us_rev1 := 0x800CE0E0:0xCECE0:0xC
+us-rev1.S.000CECEC := 847084 20
+us-rev1.D.rw_controller_state_dispatch_CED00_us_rev1 := 0x800CE100:0xCED00:0xC
+us-rev1.S.000CED0C := 847116 20
+us-rev1.D.rw_controller_state_dispatch_CED20_us_rev1 := 0x800CE120:0xCED20:0xC
+us-rev1.S.000CED2C := 847148 20
+us-rev1.D.rw_controller_state_dispatch_CED40_us_rev1 := 0x800CE140:0xCED40:0xC
+us-rev1.S.000CED4C := 847180 20
+us-rev1.D.rw_controller_state_dispatch_CED60_us_rev1 := 0x800CE160:0xCED60:0xC
+us-rev1.S.000CED6C := 847212 20
+us-rev1.D.rw_controller_state_dispatch_CED80_us_rev1 := 0x800CE180:0xCED80:0xC
+us-rev1.S.000CED8C := 847244 20
+us-rev1.D.rw_controller_state_dispatch_CEDA0_us_rev1 := 0x800CE1A0:0xCEDA0:0xC
+us-rev1.S.000CEDAC := 847276 20
+us-rev1.D.rw_controller_state_dispatch_CEDC0_us_rev1 := 0x800CE1C0:0xCEDC0:0xC
+us-rev1.S.000CEDCC := 847308 20
+us-rev1.D.rw_controller_state_dispatch_CEDE0_us_rev1 := 0x800CE1E0:0xCEDE0:0xC
+us-rev1.S.000CEDEC := 847340 20
+us-rev1.D.rw_controller_state_id_CEE00_us_rev1 := 0x800CE200:0xCEE00:0x4
+us-rev1.S.000CEE04 := 847364 4
+us-rev1.D.rw_controller_state_update_CEE08_us_rev1 := 0x800CE208:0xCEE08:0x4
+us-rev1.S.000CEE0C := 847372 20
+us-rev1.D.rw_controller_state_end_CEE20_us_rev1 := 0x800CE220:0xCEE20:0x4
+us-rev1.S.000CEE24 := 847396 28
 us-rev1.D.ragewars_actor_primary_mask_events_us_rev1 := 0x800CE240:0xCEE40:0x100
 us-rev1.D.ragewars_actor_primary_mask_end_us_rev1 := 0x800CE340:0xCEF40:0x4
 us-rev1.S.000CEF44 := 847684 4
 us-rev1.D.ragewars_actor_secondary_mask_events_us_rev1 := 0x800CE348:0xCEF48:0x8
 us-rev1.D.ragewars_actor_secondary_mask_end_us_rev1 := 0x800CE350:0xCEF50:0x4
-us-rev1.S.000CEF54 := 847700 1028
+us-rev1.S.000CEF54 := 847700 712
+us-rev1.D.rw_hud_lives_motion_script_us_rev1 := 0x800CE61C:0xCF21C:0x14
+us-rev1.S.000CF230 := 848432 80
+us-rev1.D.rw_hud_score_motion_script_us_rev1 := 0x800CE680:0xCF280:0x1C
+us-rev1.S.000CF29C := 848540 16
+us-rev1.D.rw_hud_count_motion_script_us_rev1 := 0x800CE6AC:0xCF2AC:0x2C
+us-rev1.S.000CF2D8 := 848600 16
+us-rev1.D.rw_hud_squad_motion_script_us_rev1 := 0x800CE6E8:0xCF2E8:0x2C
+us-rev1.S.000CF314 := 848660 68
 us-rev1.D.rw_pool_80225F44_CF358_us_rev1 := 0x800CE758:0xCF358:0x4
 us-rev1.S.000CF35C := 848732 64
 us-rev1.D.ragewars_movement_tuning_CF39C_us_rev1 := 0x800CE79C:0xCF39C:0x20
@@ -5052,7 +5092,9 @@ us-rev1.D.rw_pool_80445964_E3410_us_rev1 := 0x800E2810:0xE3410:0x4
 us-rev1.D.rw_pool_80445BC0_E3414_us_rev1 := 0x800E2814:0xE3414:0x10
 us-rev1.S.000E3424 := 930852 36
 us-rev1.D.rw_constants_8040170C_E3448_us_rev1 := 0x800E2848:0xE3448:0x4
-us-rev1.S.000E344C := 930892 644
+us-rev1.S.000E344C := 930892 16
+us-rev1.D.rw_controller_pak_filename_alphabet_us_rev1 := 0x800E285C:0xE345C:0x42
+us-rev1.S.000E349E := 930974 562
 us-rev1.D.ragewars_event_handlers_E36D0_us_rev1 := 0x800E2AD0:0xE36D0:0x48
 us-rev1.S.000E3718 := 931608 8
 us-rev1.D.ragewars_pixel_formats_us_rev1 := 0x800E2B20:0xE3720:0x750
@@ -5176,7 +5218,9 @@ us-rev1.S.000E4D58 := 937304 4
 us-rev1.D.ragewars_character_preview_scale_distance_16_us_rev1 := 0x800E415C:0xE4D5C:0x20
 us-rev1.D.ragewars_character_preview_positions_16_us_rev1 := 0x800E417C:0xE4D7C:0x30
 us-rev1.D.ragewars_character_preview_lights_16_us_rev1 := 0x800E41AC:0xE4DAC:0x10
-us-rev1.S.000E4DBC := 937404 424
+us-rev1.S.000E4DBC := 937404 4
+us-rev1.D.rw_menu_player_scissor_rects_us_rev1 := 0x800E41C0:0xE4DC0:0x40
+us-rev1.S.000E4E00 := 937472 356
 us-rev1.D.ragewars_event_handlers_E4F64_us_rev1 := 0x800E4364:0xE4F64:0x9C
 us-rev1.S.000E5000 := 937984 4
 us-rev1.D.ragewars_event_handlers_E5004_us_rev1 := 0x800E4404:0xE5004:0x48
@@ -5186,13 +5230,15 @@ us-rev1.S.000E509C := 938140 8
 us-rev1.D.ragewars_event_handlers_E50A4_us_rev1 := 0x800E44A4:0xE50A4:0x60
 us-rev1.S.000E5104 := 938244 24
 us-rev1.D.rw_menu_event_handlers_E511C_us_rev1 := 0x800E451C:0xE511C:0xC
-us-rev1.S.000E5128 := 938280 12
+us-rev1.D.rw_menu_event_match_E5128_us_rev1 := 0x800E4528:0xE5128:0x8
+us-rev1.S.000E5130 := 938288 4
 us-rev1.D.rw_menu_event_handlers_E5134_us_rev1 := 0x800E4534:0xE5134:0x30
 us-rev1.D.rw_menu_event_handlers_E5164_us_rev1 := 0x800E4564:0xE5164:0x48
 us-rev1.D.rw_menu_event_handlers_E51AC_us_rev1 := 0x800E45AC:0xE51AC:0x54
 us-rev1.S.000E5200 := 938496 4
 us-rev1.D.rw_menu_event_handlers_E5204_us_rev1 := 0x800E4604:0xE5204:0xC
-us-rev1.S.000E5210 := 938512 12
+us-rev1.D.rw_menu_event_match_E5210_us_rev1 := 0x800E4610:0xE5210:0x8
+us-rev1.S.000E5218 := 938520 4
 us-rev1.D.rw_menu_event_handlers_E521C_us_rev1 := 0x800E461C:0xE521C:0x3C
 us-rev1.S.000E5258 := 938584 60
 us-rev1.D.ragewars_arena_menu_slots_us_rev1 := 0x800E4694:0xE5294:0x3F0
@@ -5240,7 +5286,10 @@ us-rev1.S.000E6550 := 943440 4
 us-rev1.D.rw_menu_event_handlers_E6554_us_rev1 := 0x800E5954:0xE6554:0x54
 us-rev1.S.000E65A8 := 943528 8
 us-rev1.D.rw_menu_event_handlers_E65B0_us_rev1 := 0x800E59B0:0xE65B0:0x30
-us-rev1.S.000E65E0 := 943584 548
+us-rev1.S.000E65E0 := 943584 308
+us-rev1.D.rw_loadout_equipment_items_us_rev1 := 0x800E5B14:0xE6714:0x30
+us-rev1.D.rw_loadout_weapons_items_us_rev1 := 0x800E5B44:0xE6744:0x80
+us-rev1.D.rw_loadout_abilities_items_us_rev1 := 0x800E5BC4:0xE67C4:0x40
 us-rev1.D.rw_menu_event_handlers_E6804_us_rev1 := 0x800E5C04:0xE6804:0x24
 us-rev1.S.000E6828 := 944168 12
 us-rev1.D.rw_menu_event_handlers_E6834_us_rev1 := 0x800E5C34:0xE6834:0x6C
@@ -5248,7 +5297,9 @@ us-rev1.S.000E68A0 := 944288 40
 us-rev1.D.ragewars_resident_strings_E68C8_us_rev1 := 0x800E5CC8:0xE68C8:0x14
 us-rev1.S.000E68DC := 944348 4
 us-rev1.D.ragewars_resident_strings_E68E0_us_rev1 := 0x800E5CE0:0xE68E0:0x18
-us-rev1.S.000E68F8 := 944376 836
+us-rev1.S.000E68F8 := 944376 380
+us-rev1.D.rw_menu_font_presets_us_rev1 := 0x800E5E74:0xE6A74:0xFC
+us-rev1.S.000E6B70 := 945008 204
 us-rev1.D.ragewars_resident_strings_E6C3C_us_rev1 := 0x800E603C:0xE6C3C:0x1C
 us-rev1.S.000E6C58 := 945240 4
 us-rev1.D.ragewars_resident_strings_E6C5C_us_rev1 := 0x800E605C:0xE6C5C:0x18
@@ -10102,12 +10153,52 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CEBC0.bin \
   build/us-rev1/data/ragewars_actor_handler_run_CEBC4_us_rev1.bin \
   build/us-rev1/slices/000CEBCC.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CEC60_us_rev1.bin \
+  build/us-rev1/slices/000CEC6C.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CEC80_us_rev1.bin \
+  build/us-rev1/slices/000CEC8C.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CECA0_us_rev1.bin \
+  build/us-rev1/slices/000CECAC.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CECC0_us_rev1.bin \
+  build/us-rev1/slices/000CECCC.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CECE0_us_rev1.bin \
+  build/us-rev1/slices/000CECEC.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CED00_us_rev1.bin \
+  build/us-rev1/slices/000CED0C.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CED20_us_rev1.bin \
+  build/us-rev1/slices/000CED2C.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CED40_us_rev1.bin \
+  build/us-rev1/slices/000CED4C.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CED60_us_rev1.bin \
+  build/us-rev1/slices/000CED6C.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CED80_us_rev1.bin \
+  build/us-rev1/slices/000CED8C.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CEDA0_us_rev1.bin \
+  build/us-rev1/slices/000CEDAC.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CEDC0_us_rev1.bin \
+  build/us-rev1/slices/000CEDCC.bin \
+  build/us-rev1/data/rw_controller_state_dispatch_CEDE0_us_rev1.bin \
+  build/us-rev1/slices/000CEDEC.bin \
+  build/us-rev1/data/rw_controller_state_id_CEE00_us_rev1.bin \
+  build/us-rev1/slices/000CEE04.bin \
+  build/us-rev1/data/rw_controller_state_update_CEE08_us_rev1.bin \
+  build/us-rev1/slices/000CEE0C.bin \
+  build/us-rev1/data/rw_controller_state_end_CEE20_us_rev1.bin \
+  build/us-rev1/slices/000CEE24.bin \
   build/us-rev1/data/ragewars_actor_primary_mask_events_us_rev1.bin \
   build/us-rev1/data/ragewars_actor_primary_mask_end_us_rev1.bin \
   build/us-rev1/slices/000CEF44.bin \
   build/us-rev1/data/ragewars_actor_secondary_mask_events_us_rev1.bin \
   build/us-rev1/data/ragewars_actor_secondary_mask_end_us_rev1.bin \
   build/us-rev1/slices/000CEF54.bin \
+  build/us-rev1/data/rw_hud_lives_motion_script_us_rev1.bin \
+  build/us-rev1/slices/000CF230.bin \
+  build/us-rev1/data/rw_hud_score_motion_script_us_rev1.bin \
+  build/us-rev1/slices/000CF29C.bin \
+  build/us-rev1/data/rw_hud_count_motion_script_us_rev1.bin \
+  build/us-rev1/slices/000CF2D8.bin \
+  build/us-rev1/data/rw_hud_squad_motion_script_us_rev1.bin \
+  build/us-rev1/slices/000CF314.bin \
   build/us-rev1/data/rw_pool_80225F44_CF358_us_rev1.bin \
   build/us-rev1/slices/000CF35C.bin \
   build/us-rev1/data/ragewars_movement_tuning_CF39C_us_rev1.bin \
@@ -11477,6 +11568,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E3424.bin \
   build/us-rev1/data/rw_constants_8040170C_E3448_us_rev1.bin \
   build/us-rev1/slices/000E344C.bin \
+  build/us-rev1/data/rw_controller_pak_filename_alphabet_us_rev1.bin \
+  build/us-rev1/slices/000E349E.bin \
   build/us-rev1/data/ragewars_event_handlers_E36D0_us_rev1.bin \
   build/us-rev1/slices/000E3718.bin \
   build/us-rev1/data/ragewars_pixel_formats_us_rev1.bin \
@@ -11601,6 +11694,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_character_preview_positions_16_us_rev1.bin \
   build/us-rev1/data/ragewars_character_preview_lights_16_us_rev1.bin \
   build/us-rev1/slices/000E4DBC.bin \
+  build/us-rev1/data/rw_menu_player_scissor_rects_us_rev1.bin \
+  build/us-rev1/slices/000E4E00.bin \
   build/us-rev1/data/ragewars_event_handlers_E4F64_us_rev1.bin \
   build/us-rev1/slices/000E5000.bin \
   build/us-rev1/data/ragewars_event_handlers_E5004_us_rev1.bin \
@@ -11610,13 +11705,15 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_event_handlers_E50A4_us_rev1.bin \
   build/us-rev1/slices/000E5104.bin \
   build/us-rev1/data/rw_menu_event_handlers_E511C_us_rev1.bin \
-  build/us-rev1/slices/000E5128.bin \
+  build/us-rev1/data/rw_menu_event_match_E5128_us_rev1.bin \
+  build/us-rev1/slices/000E5130.bin \
   build/us-rev1/data/rw_menu_event_handlers_E5134_us_rev1.bin \
   build/us-rev1/data/rw_menu_event_handlers_E5164_us_rev1.bin \
   build/us-rev1/data/rw_menu_event_handlers_E51AC_us_rev1.bin \
   build/us-rev1/slices/000E5200.bin \
   build/us-rev1/data/rw_menu_event_handlers_E5204_us_rev1.bin \
-  build/us-rev1/slices/000E5210.bin \
+  build/us-rev1/data/rw_menu_event_match_E5210_us_rev1.bin \
+  build/us-rev1/slices/000E5218.bin \
   build/us-rev1/data/rw_menu_event_handlers_E521C_us_rev1.bin \
   build/us-rev1/slices/000E5258.bin \
   build/us-rev1/data/ragewars_arena_menu_slots_us_rev1.bin \
@@ -11665,6 +11762,9 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E65A8.bin \
   build/us-rev1/data/rw_menu_event_handlers_E65B0_us_rev1.bin \
   build/us-rev1/slices/000E65E0.bin \
+  build/us-rev1/data/rw_loadout_equipment_items_us_rev1.bin \
+  build/us-rev1/data/rw_loadout_weapons_items_us_rev1.bin \
+  build/us-rev1/data/rw_loadout_abilities_items_us_rev1.bin \
   build/us-rev1/data/rw_menu_event_handlers_E6804_us_rev1.bin \
   build/us-rev1/slices/000E6828.bin \
   build/us-rev1/data/rw_menu_event_handlers_E6834_us_rev1.bin \
@@ -11673,6 +11773,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E68DC.bin \
   build/us-rev1/data/ragewars_resident_strings_E68E0_us_rev1.bin \
   build/us-rev1/slices/000E68F8.bin \
+  build/us-rev1/data/rw_menu_font_presets_us_rev1.bin \
+  build/us-rev1/slices/000E6B70.bin \
   build/us-rev1/data/ragewars_resident_strings_E6C3C_us_rev1.bin \
   build/us-rev1/slices/000E6C58.bin \
   build/us-rev1/data/ragewars_resident_strings_E6C5C_us_rev1.bin \
