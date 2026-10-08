@@ -2425,7 +2425,11 @@ us-rev1.S.000D6390 := 877456 12
 us-rev1.D.ragewars_menu_strings_D639C_us_rev1 := 0x800D579C:0xD639C:0x94
 us-rev1.S.000D6430 := 877616 4
 us-rev1.D.ragewars_menu_strings_D6434_us_rev1 := 0x800D5834:0xD6434:0x13A8
-us-rev1.S.000D77DC := 882652 10532
+us-rev1.S.000D77DC := 882652 6260
+us-rev1.D.ragewars_vi_manager_us_rev1 := 0x800D8450:0xD9050:0x1C
+us-rev1.S.000D906C := 888940 4
+us-rev1.D.ragewars_vi_modes_us_rev1 := 0x800D8470:0xD9070:0xE10
+us-rev1.S.000D9E80 := 892544 640
 us-rev1.D.resident_huffman_dictionaries := 0x800D9500:0xDA100:0x90
 us-rev1.S.000DA190 := 893328 4
 us-rev1.D.huffman_initial_block_ranges := 0x800D9594:0xDA194:0x50
@@ -6030,6 +6034,10 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D6430.bin \
   build/us-rev1/data/ragewars_menu_strings_D6434_us_rev1.bin \
   build/us-rev1/slices/000D77DC.bin \
+  build/us-rev1/data/ragewars_vi_manager_us_rev1.bin \
+  build/us-rev1/slices/000D906C.bin \
+  build/us-rev1/data/ragewars_vi_modes_us_rev1.bin \
+  build/us-rev1/slices/000D9E80.bin \
   build/us-rev1/data/resident_huffman_dictionaries.bin \
   build/us-rev1/slices/000DA190.bin \
   build/us-rev1/data/huffman_initial_block_ranges.bin \
