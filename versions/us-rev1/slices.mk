@@ -3630,9 +3630,12 @@ us-rev1.D.ragewars_audio_effect_D8DC8_us_rev1 := 0x800D81C8:0xD8DC8:0x28
 us-rev1.D.ragewars_audio_effect_D8DF0_us_rev1 := 0x800D81F0:0xD8DF0:0x28
 us-rev1.D.ragewars_audio_effect_D8E18_us_rev1 := 0x800D8218:0xD8E18:0x28
 us-rev1.D.ragewars_audio_equal_power_us_rev1 := 0x800D8240:0xD8E40:0x100
-us-rev1.S.000D8F40 := 888640 48
+us-rev1.S.000D8F40 := 888640 32
+us-rev1.D.ragewars_ai_boundary_flag_us_rev1 := 0x800D8360:0xD8F60:0x1
+us-rev1.S.000D8F61 := 888673 15
 us-rev1.D.ragewars_controller_initialization_us_rev1 := 0x800D8370:0xD8F70:0x4
-us-rev1.S.000D8F74 := 888692 28
+us-rev1.S.000D8F74 := 888692 12
+us-rev1.D.ragewars_controller_pak_initialized_us_rev1 := 0x800D8380:0xD8F80:0x10
 us-rev1.D.ragewars_pi_manager_and_handles_us_rev1 := 0x800D8390:0xD8F90:0x20
 us-rev1.D.ragewars_pi_domain_handles_us_rev1 := 0x800D83B0:0xD8FB0:0x8
 us-rev1.S.000D8FB8 := 888760 8
@@ -8738,8 +8741,11 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_audio_effect_D8E18_us_rev1.bin \
   build/us-rev1/data/ragewars_audio_equal_power_us_rev1.bin \
   build/us-rev1/slices/000D8F40.bin \
+  build/us-rev1/data/ragewars_ai_boundary_flag_us_rev1.bin \
+  build/us-rev1/slices/000D8F61.bin \
   build/us-rev1/data/ragewars_controller_initialization_us_rev1.bin \
   build/us-rev1/slices/000D8F74.bin \
+  build/us-rev1/data/ragewars_controller_pak_initialized_us_rev1.bin \
   build/us-rev1/data/ragewars_pi_manager_and_handles_us_rev1.bin \
   build/us-rev1/data/ragewars_pi_domain_handles_us_rev1.bin \
   build/us-rev1/slices/000D8FB8.bin \
