@@ -1912,7 +1912,7 @@ segments:
       - [0x99BA0, c, "func_80297FA0_de"]
       - [0x99D70, c, "func_80298170_de"]
       - [0x99EC4, c, "func_802982C4_de"]
-      - [0x99F68, asm, "func_80298368_de"]
+      - [0x99F68, c, "func_80298368_de"]
       - [0x9AACC, c, "func_80298ECC_de"]
       - [0x9ABE8, c, "func_80298FE8_de"]
       - [0x9ADD4, c, "func_802991D4_de"]
