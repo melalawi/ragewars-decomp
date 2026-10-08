@@ -1263,7 +1263,7 @@ segments:
       - [0x5FB54, c, "func_8025EF34_de"]
       - [0x5FCF4, asm, "func_8025F0F4_us_rev1"]
       - [0x60054, c, "func_8025F434_de"]
-      - [0x6018C, asm, "func_8025F56C_de"]
+      - [0x6018C, c, "func_8025F56C_de"]
       - [0x60994, c, "func_8025FD74_de"]
       - [0x60BD0, c, "func_8025FFB0_de"]
       - [0x60D58, c, "func_80260138_de"]
