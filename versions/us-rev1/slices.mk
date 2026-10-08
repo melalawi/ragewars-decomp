@@ -3630,14 +3630,20 @@ us-rev1.S.000D8F40 := 888640 48
 us-rev1.D.ragewars_controller_initialization_us_rev1 := 0x800D8370:0xD8F70:0x4
 us-rev1.S.000D8F74 := 888692 28
 us-rev1.D.ragewars_pi_manager_and_handles_us_rev1 := 0x800D8390:0xD8F90:0x20
-us-rev1.S.000D8FB0 := 888752 48
+us-rev1.D.ragewars_pi_domain_handles_us_rev1 := 0x800D83B0:0xD8FB0:0x8
+us-rev1.S.000D8FB8 := 888760 8
+us-rev1.D.ragewars_pi_access_queue_initialized_us_rev1 := 0x800D83C0:0xD8FC0:0x4
+us-rev1.S.000D8FC4 := 888772 12
+us-rev1.D.ragewars_si_access_queue_initialized_us_rev1 := 0x800D83D0:0xD8FD0:0x4
+us-rev1.S.000D8FD4 := 888788 12
 us-rev1.D.ragewars_vi_contexts_us_rev1 := 0x800D83E0:0xD8FE0:0x60
 us-rev1.D.ragewars_vi_context_selectors_us_rev1 := 0x800D8440:0xD9040:0x8
 us-rev1.S.000D9048 := 888904 8
 us-rev1.D.ragewars_vi_manager_us_rev1 := 0x800D8450:0xD9050:0x1C
 us-rev1.S.000D906C := 888940 4
 us-rev1.D.ragewars_vi_modes_us_rev1 := 0x800D8470:0xD9070:0xE10
-us-rev1.S.000D9E80 := 892544 8
+us-rev1.D.ragewars_audio_interface_clock_us_rev1 := 0x800D9280:0xD9E80:0x4
+us-rev1.S.000D9E84 := 892548 4
 us-rev1.D.ragewars_scheduler_interrupt_mask_us_rev1 := 0x800D9288:0xD9E88:0x4
 us-rev1.S.000D9E8C := 892556 4
 us-rev1.D.ragewars_scheduler_queue_seed_us_rev1 := 0x800D9290:0xD9E90:0x10
@@ -8724,14 +8730,20 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_controller_initialization_us_rev1.bin \
   build/us-rev1/slices/000D8F74.bin \
   build/us-rev1/data/ragewars_pi_manager_and_handles_us_rev1.bin \
-  build/us-rev1/slices/000D8FB0.bin \
+  build/us-rev1/data/ragewars_pi_domain_handles_us_rev1.bin \
+  build/us-rev1/slices/000D8FB8.bin \
+  build/us-rev1/data/ragewars_pi_access_queue_initialized_us_rev1.bin \
+  build/us-rev1/slices/000D8FC4.bin \
+  build/us-rev1/data/ragewars_si_access_queue_initialized_us_rev1.bin \
+  build/us-rev1/slices/000D8FD4.bin \
   build/us-rev1/data/ragewars_vi_contexts_us_rev1.bin \
   build/us-rev1/data/ragewars_vi_context_selectors_us_rev1.bin \
   build/us-rev1/slices/000D9048.bin \
   build/us-rev1/data/ragewars_vi_manager_us_rev1.bin \
   build/us-rev1/slices/000D906C.bin \
   build/us-rev1/data/ragewars_vi_modes_us_rev1.bin \
-  build/us-rev1/slices/000D9E80.bin \
+  build/us-rev1/data/ragewars_audio_interface_clock_us_rev1.bin \
+  build/us-rev1/slices/000D9E84.bin \
   build/us-rev1/data/ragewars_scheduler_interrupt_mask_us_rev1.bin \
   build/us-rev1/slices/000D9E8C.bin \
   build/us-rev1/data/ragewars_scheduler_queue_seed_us_rev1.bin \
