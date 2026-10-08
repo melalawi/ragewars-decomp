@@ -3484,7 +3484,9 @@ us-rev1.D.rw_pool_80225F44_CF358_us_rev1 := 0x800CE758:0xCF358:0x4
 us-rev1.S.000CF35C := 848732 2648
 us-rev1.D.rw_text_8021D408_CFDB4_us_rev1 := 0x800CF1B4:0xCFDB4:0x4
 us-rev1.D.rw_pool_8021EEFC_CFDB8_us_rev1 := 0x800CF1B8:0xCFDB8:0x4
-us-rev1.S.000CFDBC := 851388 112
+us-rev1.S.000CFDBC := 851388 12
+us-rev1.D.rw_hud_flash_offset_CFDC8_us_rev1 := 0x800CF1C8:0xCFDC8:0x4
+us-rev1.S.000CFDCC := 851404 96
 us-rev1.D.rw_pool_80225F44_CFE2C_us_rev1 := 0x800CF22C:0xCFE2C:0x4
 us-rev1.S.000CFE30 := 851504 908
 us-rev1.D.rw_pool_802312C8_D01BC_us_rev1 := 0x800CF5BC:0xD01BC:0x4
@@ -8465,6 +8467,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_text_8021D408_CFDB4_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021EEFC_CFDB8_us_rev1.bin \
   build/us-rev1/slices/000CFDBC.bin \
+  build/us-rev1/data/rw_hud_flash_offset_CFDC8_us_rev1.bin \
+  build/us-rev1/slices/000CFDCC.bin \
   build/us-rev1/data/rw_pool_80225F44_CFE2C_us_rev1.bin \
   build/us-rev1/slices/000CFE30.bin \
   build/us-rev1/data/rw_pool_802312C8_D01BC_us_rev1.bin \
