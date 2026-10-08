@@ -2337,7 +2337,88 @@ us-rev1.U.func_802C020C_de := 0x802C52FC:0xC5EFC:0x10
 us-rev1.U.func_802C021C_de := 0x802C530C:0xC5F0C:0x10
 us-rev1.S.000C5F1C := 810780 5636
 us-rev1.U.__cmpdi2 := 0x802C6920:0xC7520:0x48
-us-rev1.S.000C7568 := 816488 76844
+us-rev1.S.000C7568 := 816488 2536
+us-rev1.D.ragewars_resident_strings_C7F50_us_rev1 := 0x800C7350:0xC7F50:0xC
+us-rev1.S.000C7F5C := 819036 2388
+us-rev1.D.ragewars_resident_strings_C88B0_us_rev1 := 0x800C7CB0:0xC88B0:0x18
+us-rev1.S.000C88C8 := 821448 3212
+us-rev1.D.ragewars_resident_strings_C9554_us_rev1 := 0x800C8954:0xC9554:0x38
+us-rev1.S.000C958C := 824716 328
+us-rev1.D.ragewars_resident_strings_C96D4_us_rev1 := 0x800C8AD4:0xC96D4:0x3C
+us-rev1.D.ragewars_resident_strings_C9710_us_rev1 := 0x800C8B10:0xC9710:0x2C
+us-rev1.S.000C973C := 825148 4892
+us-rev1.D.ragewars_resident_strings_CAA58_us_rev1 := 0x800C9E58:0xCAA58:0x10
+us-rev1.S.000CAA68 := 830056 396
+us-rev1.D.ragewars_resident_strings_CABF4_us_rev1 := 0x800C9FF4:0xCABF4:0x28
+us-rev1.S.000CAC1C := 830492 36
+us-rev1.D.ragewars_resident_strings_CAC40_us_rev1 := 0x800CA040:0xCAC40:0x10
+us-rev1.S.000CAC50 := 830544 200
+us-rev1.D.ragewars_resident_strings_CAD18_us_rev1 := 0x800CA118:0xCAD18:0x10
+us-rev1.S.000CAD28 := 830760 216
+us-rev1.D.ragewars_resident_strings_CAE00_us_rev1 := 0x800CA200:0xCAE00:0xC
+us-rev1.S.000CAE0C := 830988 12
+us-rev1.D.ragewars_resident_strings_CAE18_us_rev1 := 0x800CA218:0xCAE18:0x20
+us-rev1.S.000CAE38 := 831032 32
+us-rev1.D.ragewars_resident_strings_CAE58_us_rev1 := 0x800CA258:0xCAE58:0xC
+us-rev1.S.000CAE64 := 831076 12
+us-rev1.D.ragewars_resident_strings_CAE70_us_rev1 := 0x800CA270:0xCAE70:0x20
+us-rev1.S.000CAE90 := 831120 832
+us-rev1.D.ragewars_resident_strings_CB1D0_us_rev1 := 0x800CA5D0:0xCB1D0:0x10
+us-rev1.S.000CB1E0 := 831968 64
+us-rev1.D.ragewars_resident_strings_CB220_us_rev1 := 0x800CA620:0xCB220:0x14
+us-rev1.S.000CB234 := 832052 3868
+us-rev1.D.ragewars_resident_strings_CC150_us_rev1 := 0x800CB550:0xCC150:0x10
+us-rev1.S.000CC160 := 835936 4
+us-rev1.D.ragewars_resident_strings_CC164_us_rev1 := 0x800CB564:0xCC164:0x4E8
+us-rev1.S.000CC64C := 837196 12
+us-rev1.D.ragewars_resident_strings_CC658_us_rev1 := 0x800CBA58:0xCC658:0x240
+us-rev1.S.000CC898 := 837784 12
+us-rev1.D.ragewars_resident_strings_CC8A4_us_rev1 := 0x800CBCA4:0xCC8A4:0x41C
+us-rev1.S.000CCCC0 := 838848 44
+us-rev1.D.ragewars_resident_strings_CCCEC_us_rev1 := 0x800CC0EC:0xCCCEC:0x41C
+us-rev1.S.000CD108 := 839944 700
+us-rev1.D.ragewars_resident_strings_CD3C4_us_rev1 := 0x800CC7C4:0xCD3C4:0x14
+us-rev1.S.000CD3D8 := 840664 124
+us-rev1.D.ragewars_resident_strings_CD454_us_rev1 := 0x800CC854:0xCD454:0xC
+us-rev1.S.000CD460 := 840800 836
+us-rev1.D.ragewars_resident_strings_CD7A4_us_rev1 := 0x800CCBA4:0xCD7A4:0x10
+us-rev1.S.000CD7B4 := 841652 160
+us-rev1.D.ragewars_resident_strings_CD854_us_rev1 := 0x800CCC54:0xCD854:0x10
+us-rev1.S.000CD864 := 841828 18876
+us-rev1.D.ragewars_arccos_table_us_rev1 := 0x800D1620:0xD2220:0x1008
+us-rev1.S.000D3228 := 864808 832
+us-rev1.D.ragewars_resident_strings_D3568_us_rev1 := 0x800D2968:0xD3568:0xC
+us-rev1.S.000D3574 := 865652 516
+us-rev1.D.ragewars_resident_strings_D3778_us_rev1 := 0x800D2B78:0xD3778:0xC
+us-rev1.S.000D3784 := 866180 2768
+us-rev1.D.ragewars_menu_strings_D4254_us_rev1 := 0x800D3654:0xD4254:0x14
+us-rev1.S.000D4268 := 868968 40
+us-rev1.D.ragewars_menu_strings_D4290_us_rev1 := 0x800D3690:0xD4290:0x1150
+us-rev1.S.000D53E0 := 873440 4
+us-rev1.D.ragewars_menu_strings_D53E4_us_rev1 := 0x800D47E4:0xD53E4:0x40
+us-rev1.S.000D5424 := 873508 4
+us-rev1.D.ragewars_menu_strings_D5428_us_rev1 := 0x800D4828:0xD5428:0x60
+us-rev1.S.000D5488 := 873608 8
+us-rev1.D.ragewars_menu_strings_D5490_us_rev1 := 0x800D4890:0xD5490:0x910
+us-rev1.S.000D5DA0 := 875936 88
+us-rev1.D.ragewars_menu_strings_D5DF8_us_rev1 := 0x800D51F8:0xD5DF8:0xE0
+us-rev1.S.000D5ED8 := 876248 4
+us-rev1.D.ragewars_menu_strings_D5EDC_us_rev1 := 0x800D52DC:0xD5EDC:0x14
+us-rev1.S.000D5EF0 := 876272 4
+us-rev1.D.ragewars_menu_strings_D5EF4_us_rev1 := 0x800D52F4:0xD5EF4:0x8
+us-rev1.S.000D5EFC := 876284 120
+us-rev1.D.ragewars_menu_strings_D5F74_us_rev1 := 0x800D5374:0xD5F74:0xC
+us-rev1.S.000D5F80 := 876416 64
+us-rev1.D.ragewars_menu_strings_D5FC0_us_rev1 := 0x800D53C0:0xD5FC0:0x15C
+us-rev1.S.000D611C := 876828 492
+us-rev1.D.ragewars_menu_strings_D6308_us_rev1 := 0x800D5708:0xD6308:0x28
+us-rev1.S.000D6330 := 877360 40
+us-rev1.D.ragewars_menu_strings_D6358_us_rev1 := 0x800D5758:0xD6358:0x38
+us-rev1.S.000D6390 := 877456 12
+us-rev1.D.ragewars_menu_strings_D639C_us_rev1 := 0x800D579C:0xD639C:0x94
+us-rev1.S.000D6430 := 877616 4
+us-rev1.D.ragewars_menu_strings_D6434_us_rev1 := 0x800D5834:0xD6434:0x13A8
+us-rev1.S.000D77DC := 882652 10680
 us-rev1.D.huffman_initial_block_ranges := 0x800D9594:0xDA194:0x50
 us-rev1.D.huffman_single_zero_runs := 0x800D95E4:0xDA1E4:0x1B8
 us-rev1.D.huffman_delta_single_zero_run_nodes := 0x800D979C:0xDA39C:0x80C
@@ -2346,9 +2427,179 @@ us-rev1.D.huffman_delta_five_zero_runs_nodes := 0x800DA840:0xDB440:0x82C
 us-rev1.D.huffman_nine_zero_runs := 0x800DB06C:0xDBC6C:0xF78
 us-rev1.D.huffman_delta_nine_zero_runs_nodes := 0x800DBFE4:0xDCBE4:0x84C
 us-rev1.D.huffman_signed_small_nodes := 0x800DC830:0xDD430:0x404
-us-rev1.S.000DD834 := 907316 112079
+us-rev1.S.000DD834 := 907316 16572
+us-rev1.D.ragewars_resident_strings_E18F0_us_rev1 := 0x800E0CF0:0xE18F0:0x10
+us-rev1.S.000E1900 := 923904 5136
+us-rev1.D.ragewars_resident_strings_E2D10_us_rev1 := 0x800E2110:0xE2D10:0x2C
+us-rev1.S.000E2D3C := 929084 32
+us-rev1.D.ragewars_resident_strings_E2D5C_us_rev1 := 0x800E215C:0xE2D5C:0x2C
+us-rev1.S.000E2D88 := 929160 15168
+us-rev1.D.ragewars_resident_strings_E68C8_us_rev1 := 0x800E5CC8:0xE68C8:0x14
+us-rev1.S.000E68DC := 944348 4
+us-rev1.D.ragewars_resident_strings_E68E0_us_rev1 := 0x800E5CE0:0xE68E0:0x18
+us-rev1.S.000E68F8 := 944376 836
+us-rev1.D.ragewars_resident_strings_E6C3C_us_rev1 := 0x800E603C:0xE6C3C:0x1C
+us-rev1.S.000E6C58 := 945240 4
+us-rev1.D.ragewars_resident_strings_E6C5C_us_rev1 := 0x800E605C:0xE6C5C:0x18
+us-rev1.S.000E6C74 := 945268 4
+us-rev1.D.ragewars_resident_strings_E6C78_us_rev1 := 0x800E6078:0xE6C78:0x18
+us-rev1.S.000E6C90 := 945296 4
+us-rev1.D.ragewars_resident_strings_E6C94_us_rev1 := 0x800E6094:0xE6C94:0x18
+us-rev1.S.000E6CAC := 945324 4
+us-rev1.D.ragewars_resident_strings_E6CB0_us_rev1 := 0x800E60B0:0xE6CB0:0x18
+us-rev1.S.000E6CC8 := 945352 4
+us-rev1.D.ragewars_resident_strings_E6CCC_us_rev1 := 0x800E60CC:0xE6CCC:0x18
+us-rev1.S.000E6CE4 := 945380 4
+us-rev1.D.ragewars_resident_strings_E6CE8_us_rev1 := 0x800E60E8:0xE6CE8:0x18
+us-rev1.S.000E6D00 := 945408 4
+us-rev1.D.ragewars_resident_strings_E6D04_us_rev1 := 0x800E6104:0xE6D04:0x18
+us-rev1.S.000E6D1C := 945436 4
+us-rev1.D.ragewars_resident_strings_E6D20_us_rev1 := 0x800E6120:0xE6D20:0xC
+us-rev1.S.000E6D2C := 945452 4
+us-rev1.D.ragewars_resident_strings_E6D30_us_rev1 := 0x800E6130:0xE6D30:0xC
+us-rev1.S.000E6D3C := 945468 4
+us-rev1.D.ragewars_resident_strings_E6D40_us_rev1 := 0x800E6140:0xE6D40:0x18
+us-rev1.S.000E6D58 := 945496 4
+us-rev1.D.ragewars_resident_strings_E6D5C_us_rev1 := 0x800E615C:0xE6D5C:0x18
+us-rev1.S.000E6D74 := 945524 4
+us-rev1.D.ragewars_resident_strings_E6D78_us_rev1 := 0x800E6178:0xE6D78:0x18
+us-rev1.S.000E6D90 := 945552 4
+us-rev1.D.ragewars_resident_strings_E6D94_us_rev1 := 0x800E6194:0xE6D94:0x18
+us-rev1.S.000E6DAC := 945580 100
+us-rev1.D.ragewars_resident_strings_E6E10_us_rev1 := 0x800E6210:0xE6E10:0x14
+us-rev1.S.000E6E24 := 945700 28
+us-rev1.D.ragewars_resident_strings_E6E40_us_rev1 := 0x800E6240:0xE6E40:0x14
+us-rev1.S.000E6E54 := 945748 24
+us-rev1.D.ragewars_resident_strings_E6E6C_us_rev1 := 0x800E626C:0xE6E6C:0x10
+us-rev1.S.000E6E7C := 945788 4
+us-rev1.D.ragewars_resident_strings_E6E80_us_rev1 := 0x800E6280:0xE6E80:0x10
+us-rev1.S.000E6E90 := 945808 24
+us-rev1.D.ragewars_resident_strings_E6EA8_us_rev1 := 0x800E62A8:0xE6EA8:0x10
+us-rev1.S.000E6EB8 := 945848 4
+us-rev1.D.ragewars_resident_strings_E6EBC_us_rev1 := 0x800E62BC:0xE6EBC:0x10
+us-rev1.S.000E6ECC := 945868 4
+us-rev1.D.ragewars_resident_strings_E6ED0_us_rev1 := 0x800E62D0:0xE6ED0:0xC
+us-rev1.S.000E6EDC := 945884 4
+us-rev1.D.ragewars_resident_strings_E6EE0_us_rev1 := 0x800E62E0:0xE6EE0:0x10
+us-rev1.S.000E6EF0 := 945904 4
+us-rev1.D.ragewars_resident_strings_E6EF4_us_rev1 := 0x800E62F4:0xE6EF4:0x10
+us-rev1.S.000E6F04 := 945924 32
+us-rev1.D.ragewars_resident_strings_E6F24_us_rev1 := 0x800E6324:0xE6F24:0x18
+us-rev1.S.000E6F3C := 945980 4
+us-rev1.D.ragewars_resident_strings_E6F40_us_rev1 := 0x800E6340:0xE6F40:0x18
+us-rev1.S.000E6F58 := 946008 4
+us-rev1.D.ragewars_resident_strings_E6F5C_us_rev1 := 0x800E635C:0xE6F5C:0x18
+us-rev1.S.000E6F74 := 946036 286
+us-rev1.D.ragewars_debug_stream_us_rev1 := 0x800E6492:0xE7092:0xF7EE
+us-rev1.S.000F6880 := 1009792 340
+us-rev1.D.ragewars_resident_strings_F69D4_us_rev1 := 0x800F5DD4:0xF69D4:0x14
+us-rev1.S.000F69E8 := 1010152 140
+us-rev1.D.ragewars_resident_strings_F6A74_us_rev1 := 0x800F5E74:0xF6A74:0x14
+us-rev1.S.000F6A88 := 1010312 404
+us-rev1.D.ragewars_resident_strings_F6C1C_us_rev1 := 0x800F601C:0xF6C1C:0xC
+us-rev1.S.000F6C28 := 1010728 80
+us-rev1.D.ragewars_resident_strings_F6C78_us_rev1 := 0x800F6078:0xF6C78:0x14
+us-rev1.S.000F6C8C := 1010828 12
+us-rev1.D.ragewars_resident_strings_F6C98_us_rev1 := 0x800F6098:0xF6C98:0xC
+us-rev1.S.000F6CA4 := 1010852 280
+us-rev1.D.ragewars_resident_strings_F6DBC_us_rev1 := 0x800F61BC:0xF6DBC:0xC
+us-rev1.S.000F6DC8 := 1011144 208
+us-rev1.D.ragewars_resident_strings_F6E98_us_rev1 := 0x800F6298:0xF6E98:0xC
+us-rev1.S.000F6EA4 := 1011364 44
+us-rev1.D.ragewars_resident_strings_F6ED0_us_rev1 := 0x800F62D0:0xF6ED0:0x18
+us-rev1.S.000F6EE8 := 1011432 68
+us-rev1.D.ragewars_resident_strings_F6F2C_us_rev1 := 0x800F632C:0xF6F2C:0x10
+us-rev1.S.000F6F3C := 1011516 424
+us-rev1.D.ragewars_resident_strings_F70E4_us_rev1 := 0x800F64E4:0xF70E4:0x20
+us-rev1.S.000F7104 := 1011972 12
+us-rev1.D.ragewars_resident_strings_F7110_us_rev1 := 0x800F6510:0xF7110:0xC
+us-rev1.S.000F711C := 1011996 548
+us-rev1.D.ragewars_resident_strings_F7340_us_rev1 := 0x800F6740:0xF7340:0x18
+us-rev1.S.000F7358 := 1012568 192
+us-rev1.D.ragewars_resident_strings_F7418_us_rev1 := 0x800F6818:0xF7418:0x14
+us-rev1.S.000F742C := 1012780 324
+us-rev1.D.ragewars_resident_strings_F7570_us_rev1 := 0x800F6970:0xF7570:0x14
+us-rev1.S.000F7584 := 1013124 72
+us-rev1.D.ragewars_resident_strings_F75CC_us_rev1 := 0x800F69CC:0xF75CC:0x20
+us-rev1.S.000F75EC := 1013228 128
+us-rev1.D.ragewars_resident_strings_F766C_us_rev1 := 0x800F6A6C:0xF766C:0x14
+us-rev1.S.000F7680 := 1013376 264
+us-rev1.D.ragewars_resident_strings_F7788_us_rev1 := 0x800F6B88:0xF7788:0x1C
+us-rev1.S.000F77A4 := 1013668 320
+us-rev1.D.ragewars_resident_strings_F78E4_us_rev1 := 0x800F6CE4:0xF78E4:0x10
+us-rev1.S.000F78F4 := 1014004 36
+us-rev1.D.ragewars_resident_strings_F7918_us_rev1 := 0x800F6D18:0xF7918:0x10
+us-rev1.S.000F7928 := 1014056 12
+us-rev1.D.ragewars_resident_strings_F7934_us_rev1 := 0x800F6D34:0xF7934:0x10
+us-rev1.S.000F7944 := 1014084 356
+us-rev1.D.ragewars_resident_strings_F7AA8_us_rev1 := 0x800F6EA8:0xF7AA8:0x18
+us-rev1.S.000F7AC0 := 1014464 152
+us-rev1.D.ragewars_resident_strings_F7B58_us_rev1 := 0x800F6F58:0xF7B58:0x14
+us-rev1.S.000F7B6C := 1014636 12
+us-rev1.D.ragewars_resident_strings_F7B78_us_rev1 := 0x800F6F78:0xF7B78:0x1C
+us-rev1.S.000F7B94 := 1014676 44
+us-rev1.D.ragewars_resident_strings_F7BC0_us_rev1 := 0x800F6FC0:0xF7BC0:0x14
+us-rev1.S.000F7BD4 := 1014740 212
+us-rev1.D.ragewars_resident_strings_F7CA8_us_rev1 := 0x800F70A8:0xF7CA8:0x20
+us-rev1.S.000F7CC8 := 1014984 44
+us-rev1.D.ragewars_resident_strings_F7CF4_us_rev1 := 0x800F70F4:0xF7CF4:0x14
+us-rev1.S.000F7D08 := 1015048 12
+us-rev1.D.ragewars_resident_strings_F7D14_us_rev1 := 0x800F7114:0xF7D14:0x10
+us-rev1.S.000F7D24 := 1015076 952
+us-rev1.D.ragewars_resident_strings_F80DC_us_rev1 := 0x800F74DC:0xF80DC:0x14
+us-rev1.S.000F80F0 := 1016048 40
+us-rev1.D.ragewars_resident_strings_F8118_us_rev1 := 0x800F7518:0xF8118:0xC
+us-rev1.S.000F8124 := 1016100 232
+us-rev1.D.ragewars_resident_strings_F820C_us_rev1 := 0x800F760C:0xF820C:0x10
+us-rev1.S.000F821C := 1016348 12
+us-rev1.D.ragewars_resident_strings_F8228_us_rev1 := 0x800F7628:0xF8228:0x18
+us-rev1.S.000F8240 := 1016384 72
+us-rev1.D.ragewars_resident_strings_F8288_us_rev1 := 0x800F7688:0xF8288:0x1C
+us-rev1.S.000F82A4 := 1016484 356
+us-rev1.D.ragewars_resident_strings_F8408_us_rev1 := 0x800F7808:0xF8408:0x14
+us-rev1.S.000F841C := 1016860 104
+us-rev1.D.ragewars_resident_strings_F8484_us_rev1 := 0x800F7884:0xF8484:0x14
+us-rev1.S.000F8498 := 1016984 12
+us-rev1.D.ragewars_resident_strings_F84A4_us_rev1 := 0x800F78A4:0xF84A4:0x14
+us-rev1.S.000F84B8 := 1017016 40
+us-rev1.D.ragewars_resident_strings_F84E0_us_rev1 := 0x800F78E0:0xF84E0:0x18
+us-rev1.S.000F84F8 := 1017080 12
+us-rev1.D.ragewars_resident_strings_F8504_us_rev1 := 0x800F7904:0xF8504:0x14
+us-rev1.S.000F8518 := 1017112 12
+us-rev1.D.ragewars_resident_strings_F8524_us_rev1 := 0x800F7924:0xF8524:0x18
+us-rev1.S.000F853C := 1017148 432
+us-rev1.D.ragewars_resident_strings_F86EC_us_rev1 := 0x800F7AEC:0xF86EC:0x20
+us-rev1.S.000F870C := 1017612 424
+us-rev1.D.ragewars_resident_strings_F88B4_us_rev1 := 0x800F7CB4:0xF88B4:0x18
+us-rev1.S.000F88CC := 1018060 240
+us-rev1.D.ragewars_resident_strings_F89BC_us_rev1 := 0x800F7DBC:0xF89BC:0xC
+us-rev1.S.000F89C8 := 1018312 12
+us-rev1.D.ragewars_resident_strings_F89D4_us_rev1 := 0x800F7DD4:0xF89D4:0xC
+us-rev1.S.000F89E0 := 1018336 12
+us-rev1.D.ragewars_resident_strings_F89EC_us_rev1 := 0x800F7DEC:0xF89EC:0xC
+us-rev1.S.000F89F8 := 1018360 12
+us-rev1.D.ragewars_resident_strings_F8A04_us_rev1 := 0x800F7E04:0xF8A04:0x10
+us-rev1.S.000F8A14 := 1018388 40
+us-rev1.D.ragewars_resident_strings_F8A3C_us_rev1 := 0x800F7E3C:0xF8A3C:0x10
+us-rev1.S.000F8A4C := 1018444 36
+us-rev1.D.ragewars_resident_strings_F8A70_us_rev1 := 0x800F7E70:0xF8A70:0x10
+us-rev1.S.000F8A80 := 1018496 12
+us-rev1.D.ragewars_resident_strings_F8A8C_us_rev1 := 0x800F7E8C:0xF8A8C:0x14
+us-rev1.S.000F8AA0 := 1018528 216
+us-rev1.D.ragewars_resident_strings_F8B78_us_rev1 := 0x800F7F78:0xF8B78:0x18
+us-rev1.S.000F8B90 := 1018768 44
+us-rev1.D.ragewars_resident_strings_F8BBC_us_rev1 := 0x800F7FBC:0xF8BBC:0xC
+us-rev1.S.000F8BC8 := 1018824 52
+us-rev1.D.ragewars_resident_strings_F8BFC_us_rev1 := 0x800F7FFC:0xF8BFC:0x10
+us-rev1.S.000F8C0C := 1018892 12
+us-rev1.D.ragewars_resident_strings_F8C18_us_rev1 := 0x800F8018:0xF8C18:0x10
+us-rev1.S.000F8C28 := 1018920 208
+us-rev1.D.ragewars_resident_strings_F8CF8_us_rev1 := 0x800F80F8:0xF8CF8:0x10
+us-rev1.S.000F8D08 := 1019144 128
+us-rev1.D.ragewars_resident_strings_F8D88_us_rev1 := 0x800F8188:0xF8D88:0x14
+us-rev1.S.000F8D9C := 1019292 103
 us-rev1.D.sn64_intelligence_type_records := 0x800F8203:0xF8E03:0x4FED
-us-rev1.S.000FDDF0 := 1039856 24
+us-rev1.D.ragewars_resident_strings_FDDF0_us_rev1 := 0x800FD1F0:0xFDDF0:0x18
 us-rev1.D.sn64_runtime_type_records := 0x800FD208:0xFDE08:0x31F8
 us-rev1.S.00101000 := 1052672 446464
 us-rev1.U.func_80400000_de := 0x80400000:0x16E000:0x67C
@@ -5781,6 +6032,87 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000C5F1C.bin \
   build/us-rev1/units/__cmpdi2.bin \
   build/us-rev1/slices/000C7568.bin \
+  build/us-rev1/data/ragewars_resident_strings_C7F50_us_rev1.bin \
+  build/us-rev1/slices/000C7F5C.bin \
+  build/us-rev1/data/ragewars_resident_strings_C88B0_us_rev1.bin \
+  build/us-rev1/slices/000C88C8.bin \
+  build/us-rev1/data/ragewars_resident_strings_C9554_us_rev1.bin \
+  build/us-rev1/slices/000C958C.bin \
+  build/us-rev1/data/ragewars_resident_strings_C96D4_us_rev1.bin \
+  build/us-rev1/data/ragewars_resident_strings_C9710_us_rev1.bin \
+  build/us-rev1/slices/000C973C.bin \
+  build/us-rev1/data/ragewars_resident_strings_CAA58_us_rev1.bin \
+  build/us-rev1/slices/000CAA68.bin \
+  build/us-rev1/data/ragewars_resident_strings_CABF4_us_rev1.bin \
+  build/us-rev1/slices/000CAC1C.bin \
+  build/us-rev1/data/ragewars_resident_strings_CAC40_us_rev1.bin \
+  build/us-rev1/slices/000CAC50.bin \
+  build/us-rev1/data/ragewars_resident_strings_CAD18_us_rev1.bin \
+  build/us-rev1/slices/000CAD28.bin \
+  build/us-rev1/data/ragewars_resident_strings_CAE00_us_rev1.bin \
+  build/us-rev1/slices/000CAE0C.bin \
+  build/us-rev1/data/ragewars_resident_strings_CAE18_us_rev1.bin \
+  build/us-rev1/slices/000CAE38.bin \
+  build/us-rev1/data/ragewars_resident_strings_CAE58_us_rev1.bin \
+  build/us-rev1/slices/000CAE64.bin \
+  build/us-rev1/data/ragewars_resident_strings_CAE70_us_rev1.bin \
+  build/us-rev1/slices/000CAE90.bin \
+  build/us-rev1/data/ragewars_resident_strings_CB1D0_us_rev1.bin \
+  build/us-rev1/slices/000CB1E0.bin \
+  build/us-rev1/data/ragewars_resident_strings_CB220_us_rev1.bin \
+  build/us-rev1/slices/000CB234.bin \
+  build/us-rev1/data/ragewars_resident_strings_CC150_us_rev1.bin \
+  build/us-rev1/slices/000CC160.bin \
+  build/us-rev1/data/ragewars_resident_strings_CC164_us_rev1.bin \
+  build/us-rev1/slices/000CC64C.bin \
+  build/us-rev1/data/ragewars_resident_strings_CC658_us_rev1.bin \
+  build/us-rev1/slices/000CC898.bin \
+  build/us-rev1/data/ragewars_resident_strings_CC8A4_us_rev1.bin \
+  build/us-rev1/slices/000CCCC0.bin \
+  build/us-rev1/data/ragewars_resident_strings_CCCEC_us_rev1.bin \
+  build/us-rev1/slices/000CD108.bin \
+  build/us-rev1/data/ragewars_resident_strings_CD3C4_us_rev1.bin \
+  build/us-rev1/slices/000CD3D8.bin \
+  build/us-rev1/data/ragewars_resident_strings_CD454_us_rev1.bin \
+  build/us-rev1/slices/000CD460.bin \
+  build/us-rev1/data/ragewars_resident_strings_CD7A4_us_rev1.bin \
+  build/us-rev1/slices/000CD7B4.bin \
+  build/us-rev1/data/ragewars_resident_strings_CD854_us_rev1.bin \
+  build/us-rev1/slices/000CD864.bin \
+  build/us-rev1/data/ragewars_arccos_table_us_rev1.bin \
+  build/us-rev1/slices/000D3228.bin \
+  build/us-rev1/data/ragewars_resident_strings_D3568_us_rev1.bin \
+  build/us-rev1/slices/000D3574.bin \
+  build/us-rev1/data/ragewars_resident_strings_D3778_us_rev1.bin \
+  build/us-rev1/slices/000D3784.bin \
+  build/us-rev1/data/ragewars_menu_strings_D4254_us_rev1.bin \
+  build/us-rev1/slices/000D4268.bin \
+  build/us-rev1/data/ragewars_menu_strings_D4290_us_rev1.bin \
+  build/us-rev1/slices/000D53E0.bin \
+  build/us-rev1/data/ragewars_menu_strings_D53E4_us_rev1.bin \
+  build/us-rev1/slices/000D5424.bin \
+  build/us-rev1/data/ragewars_menu_strings_D5428_us_rev1.bin \
+  build/us-rev1/slices/000D5488.bin \
+  build/us-rev1/data/ragewars_menu_strings_D5490_us_rev1.bin \
+  build/us-rev1/slices/000D5DA0.bin \
+  build/us-rev1/data/ragewars_menu_strings_D5DF8_us_rev1.bin \
+  build/us-rev1/slices/000D5ED8.bin \
+  build/us-rev1/data/ragewars_menu_strings_D5EDC_us_rev1.bin \
+  build/us-rev1/slices/000D5EF0.bin \
+  build/us-rev1/data/ragewars_menu_strings_D5EF4_us_rev1.bin \
+  build/us-rev1/slices/000D5EFC.bin \
+  build/us-rev1/data/ragewars_menu_strings_D5F74_us_rev1.bin \
+  build/us-rev1/slices/000D5F80.bin \
+  build/us-rev1/data/ragewars_menu_strings_D5FC0_us_rev1.bin \
+  build/us-rev1/slices/000D611C.bin \
+  build/us-rev1/data/ragewars_menu_strings_D6308_us_rev1.bin \
+  build/us-rev1/slices/000D6330.bin \
+  build/us-rev1/data/ragewars_menu_strings_D6358_us_rev1.bin \
+  build/us-rev1/slices/000D6390.bin \
+  build/us-rev1/data/ragewars_menu_strings_D639C_us_rev1.bin \
+  build/us-rev1/slices/000D6430.bin \
+  build/us-rev1/data/ragewars_menu_strings_D6434_us_rev1.bin \
+  build/us-rev1/slices/000D77DC.bin \
   build/us-rev1/data/huffman_initial_block_ranges.bin \
   build/us-rev1/data/huffman_single_zero_runs.bin \
   build/us-rev1/data/huffman_delta_single_zero_run_nodes.bin \
@@ -5790,8 +6122,178 @@ us-rev1.PIECES := \
   build/us-rev1/data/huffman_delta_nine_zero_runs_nodes.bin \
   build/us-rev1/data/huffman_signed_small_nodes.bin \
   build/us-rev1/slices/000DD834.bin \
+  build/us-rev1/data/ragewars_resident_strings_E18F0_us_rev1.bin \
+  build/us-rev1/slices/000E1900.bin \
+  build/us-rev1/data/ragewars_resident_strings_E2D10_us_rev1.bin \
+  build/us-rev1/slices/000E2D3C.bin \
+  build/us-rev1/data/ragewars_resident_strings_E2D5C_us_rev1.bin \
+  build/us-rev1/slices/000E2D88.bin \
+  build/us-rev1/data/ragewars_resident_strings_E68C8_us_rev1.bin \
+  build/us-rev1/slices/000E68DC.bin \
+  build/us-rev1/data/ragewars_resident_strings_E68E0_us_rev1.bin \
+  build/us-rev1/slices/000E68F8.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6C3C_us_rev1.bin \
+  build/us-rev1/slices/000E6C58.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6C5C_us_rev1.bin \
+  build/us-rev1/slices/000E6C74.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6C78_us_rev1.bin \
+  build/us-rev1/slices/000E6C90.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6C94_us_rev1.bin \
+  build/us-rev1/slices/000E6CAC.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6CB0_us_rev1.bin \
+  build/us-rev1/slices/000E6CC8.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6CCC_us_rev1.bin \
+  build/us-rev1/slices/000E6CE4.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6CE8_us_rev1.bin \
+  build/us-rev1/slices/000E6D00.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6D04_us_rev1.bin \
+  build/us-rev1/slices/000E6D1C.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6D20_us_rev1.bin \
+  build/us-rev1/slices/000E6D2C.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6D30_us_rev1.bin \
+  build/us-rev1/slices/000E6D3C.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6D40_us_rev1.bin \
+  build/us-rev1/slices/000E6D58.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6D5C_us_rev1.bin \
+  build/us-rev1/slices/000E6D74.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6D78_us_rev1.bin \
+  build/us-rev1/slices/000E6D90.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6D94_us_rev1.bin \
+  build/us-rev1/slices/000E6DAC.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6E10_us_rev1.bin \
+  build/us-rev1/slices/000E6E24.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6E40_us_rev1.bin \
+  build/us-rev1/slices/000E6E54.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6E6C_us_rev1.bin \
+  build/us-rev1/slices/000E6E7C.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6E80_us_rev1.bin \
+  build/us-rev1/slices/000E6E90.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6EA8_us_rev1.bin \
+  build/us-rev1/slices/000E6EB8.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6EBC_us_rev1.bin \
+  build/us-rev1/slices/000E6ECC.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6ED0_us_rev1.bin \
+  build/us-rev1/slices/000E6EDC.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6EE0_us_rev1.bin \
+  build/us-rev1/slices/000E6EF0.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6EF4_us_rev1.bin \
+  build/us-rev1/slices/000E6F04.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6F24_us_rev1.bin \
+  build/us-rev1/slices/000E6F3C.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6F40_us_rev1.bin \
+  build/us-rev1/slices/000E6F58.bin \
+  build/us-rev1/data/ragewars_resident_strings_E6F5C_us_rev1.bin \
+  build/us-rev1/slices/000E6F74.bin \
+  build/us-rev1/data/ragewars_debug_stream_us_rev1.bin \
+  build/us-rev1/slices/000F6880.bin \
+  build/us-rev1/data/ragewars_resident_strings_F69D4_us_rev1.bin \
+  build/us-rev1/slices/000F69E8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F6A74_us_rev1.bin \
+  build/us-rev1/slices/000F6A88.bin \
+  build/us-rev1/data/ragewars_resident_strings_F6C1C_us_rev1.bin \
+  build/us-rev1/slices/000F6C28.bin \
+  build/us-rev1/data/ragewars_resident_strings_F6C78_us_rev1.bin \
+  build/us-rev1/slices/000F6C8C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F6C98_us_rev1.bin \
+  build/us-rev1/slices/000F6CA4.bin \
+  build/us-rev1/data/ragewars_resident_strings_F6DBC_us_rev1.bin \
+  build/us-rev1/slices/000F6DC8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F6E98_us_rev1.bin \
+  build/us-rev1/slices/000F6EA4.bin \
+  build/us-rev1/data/ragewars_resident_strings_F6ED0_us_rev1.bin \
+  build/us-rev1/slices/000F6EE8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F6F2C_us_rev1.bin \
+  build/us-rev1/slices/000F6F3C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F70E4_us_rev1.bin \
+  build/us-rev1/slices/000F7104.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7110_us_rev1.bin \
+  build/us-rev1/slices/000F711C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7340_us_rev1.bin \
+  build/us-rev1/slices/000F7358.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7418_us_rev1.bin \
+  build/us-rev1/slices/000F742C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7570_us_rev1.bin \
+  build/us-rev1/slices/000F7584.bin \
+  build/us-rev1/data/ragewars_resident_strings_F75CC_us_rev1.bin \
+  build/us-rev1/slices/000F75EC.bin \
+  build/us-rev1/data/ragewars_resident_strings_F766C_us_rev1.bin \
+  build/us-rev1/slices/000F7680.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7788_us_rev1.bin \
+  build/us-rev1/slices/000F77A4.bin \
+  build/us-rev1/data/ragewars_resident_strings_F78E4_us_rev1.bin \
+  build/us-rev1/slices/000F78F4.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7918_us_rev1.bin \
+  build/us-rev1/slices/000F7928.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7934_us_rev1.bin \
+  build/us-rev1/slices/000F7944.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7AA8_us_rev1.bin \
+  build/us-rev1/slices/000F7AC0.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7B58_us_rev1.bin \
+  build/us-rev1/slices/000F7B6C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7B78_us_rev1.bin \
+  build/us-rev1/slices/000F7B94.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7BC0_us_rev1.bin \
+  build/us-rev1/slices/000F7BD4.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7CA8_us_rev1.bin \
+  build/us-rev1/slices/000F7CC8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7CF4_us_rev1.bin \
+  build/us-rev1/slices/000F7D08.bin \
+  build/us-rev1/data/ragewars_resident_strings_F7D14_us_rev1.bin \
+  build/us-rev1/slices/000F7D24.bin \
+  build/us-rev1/data/ragewars_resident_strings_F80DC_us_rev1.bin \
+  build/us-rev1/slices/000F80F0.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8118_us_rev1.bin \
+  build/us-rev1/slices/000F8124.bin \
+  build/us-rev1/data/ragewars_resident_strings_F820C_us_rev1.bin \
+  build/us-rev1/slices/000F821C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8228_us_rev1.bin \
+  build/us-rev1/slices/000F8240.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8288_us_rev1.bin \
+  build/us-rev1/slices/000F82A4.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8408_us_rev1.bin \
+  build/us-rev1/slices/000F841C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8484_us_rev1.bin \
+  build/us-rev1/slices/000F8498.bin \
+  build/us-rev1/data/ragewars_resident_strings_F84A4_us_rev1.bin \
+  build/us-rev1/slices/000F84B8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F84E0_us_rev1.bin \
+  build/us-rev1/slices/000F84F8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8504_us_rev1.bin \
+  build/us-rev1/slices/000F8518.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8524_us_rev1.bin \
+  build/us-rev1/slices/000F853C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F86EC_us_rev1.bin \
+  build/us-rev1/slices/000F870C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F88B4_us_rev1.bin \
+  build/us-rev1/slices/000F88CC.bin \
+  build/us-rev1/data/ragewars_resident_strings_F89BC_us_rev1.bin \
+  build/us-rev1/slices/000F89C8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F89D4_us_rev1.bin \
+  build/us-rev1/slices/000F89E0.bin \
+  build/us-rev1/data/ragewars_resident_strings_F89EC_us_rev1.bin \
+  build/us-rev1/slices/000F89F8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8A04_us_rev1.bin \
+  build/us-rev1/slices/000F8A14.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8A3C_us_rev1.bin \
+  build/us-rev1/slices/000F8A4C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8A70_us_rev1.bin \
+  build/us-rev1/slices/000F8A80.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8A8C_us_rev1.bin \
+  build/us-rev1/slices/000F8AA0.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8B78_us_rev1.bin \
+  build/us-rev1/slices/000F8B90.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8BBC_us_rev1.bin \
+  build/us-rev1/slices/000F8BC8.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8BFC_us_rev1.bin \
+  build/us-rev1/slices/000F8C0C.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8C18_us_rev1.bin \
+  build/us-rev1/slices/000F8C28.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8CF8_us_rev1.bin \
+  build/us-rev1/slices/000F8D08.bin \
+  build/us-rev1/data/ragewars_resident_strings_F8D88_us_rev1.bin \
+  build/us-rev1/slices/000F8D9C.bin \
   build/us-rev1/data/sn64_intelligence_type_records.bin \
-  build/us-rev1/slices/000FDDF0.bin \
+  build/us-rev1/data/ragewars_resident_strings_FDDF0_us_rev1.bin \
   build/us-rev1/data/sn64_runtime_type_records.bin \
   build/us-rev1/slices/00101000.bin \
   build/us-rev1/units/func_80400000_de.bin \
