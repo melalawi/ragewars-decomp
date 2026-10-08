@@ -5024,7 +5024,10 @@ us-rev1.U.func_8044D668_de := 0x8044E2B8:0x1BC2B8:0x508
 us-rev1.S.001BC7C0 := 1820608 336
 us-rev1.U.func_8044DCC0_de := 0x8044E910:0x1BC910:0x114
 us-rev1.U.func_8044DDD4_de := 0x8044EA24:0x1BCA24:0xA8
-us-rev1.S.001BCACC := 1821388 6567220
+us-rev1.S.001BCACC := 1821388 1224
+us-rev1.D.resident_menu_pak_options := 0x8015414C:0x1BCF94:0x1EB4
+us-rev1.D.resident_menu_inventory_settings := 0x80156000:0x1BEE48:0x1A18
+us-rev1.S.001C0860 := 1837152 6551456
 us-rev1.PIECES := \
   build/us-rev1/slices/00000000.bin \
   build/us-rev1/units/func_80200500_de.bin \
@@ -10042,7 +10045,10 @@ us-rev1.PIECES := \
   build/us-rev1/slices/001BC7C0.bin \
   build/us-rev1/units/func_8044DCC0_de.bin \
   build/us-rev1/units/func_8044DDD4_de.bin \
-  build/us-rev1/slices/001BCACC.bin
+  build/us-rev1/slices/001BCACC.bin \
+  build/us-rev1/data/resident_menu_pak_options.bin \
+  build/us-rev1/data/resident_menu_inventory_settings.bin \
+  build/us-rev1/slices/001C0860.bin
 build/us-rev1/resources/rsp_graphics_f3dex2_code.bin build/us-rev1/resources/rsp_graphics_f3dex2_data.bin &: resources/rsp/graphics/f3dex2.s resources/rsp/graphics/PR/R4300.h resources/rsp/graphics/PR/gbi.h resources/rsp/graphics/PR/rcp.h resources/rsp/graphics/PR/sptask.h resources/rsp/graphics/PR/sptaskoff.h resources/rsp/graphics/PR/ultratypes.h resources/rsp/graphics/gbi_internal.h resources/rsp/graphics/rsp/rspboot.h resources/rsp/rsp_defs.inc Makefile versions/us-rev1/slices.mk | build/us-rev1/resources
 	$(Q)$(CPP) -P -Iresources/rsp/graphics/PR -Iresources/rsp/graphics/rsp -Iresources/rsp/graphics -D_LANGUAGE_ASSEMBLY -DF3DEX_GBI_2 -DCFG_NoN=1 -DCFG_OLD_TRI_WRITE=1 -DBUG_CLIPPING_FAIL_WHEN_SUM_ZERO=1 -DBUG_FAIL_IF_CARRY_SET_AT_INIT=1 resources/rsp/graphics/f3dex2.s > build/us-rev1/resources/rsp_graphics_f3dex2.S && $(ARMIPS) build/us-rev1/resources/rsp_graphics_f3dex2.S -strequ CODE_FILE build/us-rev1/resources/rsp_graphics_f3dex2_code.bin.tmp -strequ DATA_FILE build/us-rev1/resources/rsp_graphics_f3dex2_data.bin.tmp -strequ ID_STR 'RSP Gfx ucode F3DEX.NoN   fifo 2.05  Yoshitaka Yasumoto 1998 Nintendo.' && [ "$$(wc -c < build/us-rev1/resources/rsp_graphics_f3dex2_code.bin.tmp)" -eq 5008 ] && [ "$$(wc -c < build/us-rev1/resources/rsp_graphics_f3dex2_data.bin.tmp)" -eq 1056 ] && mv build/us-rev1/resources/rsp_graphics_f3dex2_code.bin.tmp build/us-rev1/resources/rsp_graphics_f3dex2_code.bin && mv build/us-rev1/resources/rsp_graphics_f3dex2_data.bin.tmp build/us-rev1/resources/rsp_graphics_f3dex2_data.bin
 build/us-rev1/resources/rsp_graphics_l3dex2_code.bin build/us-rev1/resources/rsp_graphics_l3dex2_data.bin &: resources/rsp/graphics/l3dex2.s resources/rsp/graphics/PR/R4300.h resources/rsp/graphics/PR/gbi.h resources/rsp/graphics/PR/rcp.h resources/rsp/graphics/PR/sptask.h resources/rsp/graphics/PR/sptaskoff.h resources/rsp/graphics/PR/ultratypes.h resources/rsp/graphics/gbi_internal.h resources/rsp/graphics/rsp/rspboot.h resources/rsp/rsp_defs.inc Makefile versions/us-rev1/slices.mk | build/us-rev1/resources
