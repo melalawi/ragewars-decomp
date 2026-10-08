@@ -772,7 +772,7 @@ extern int D_80111D40;
 extern char D_800E62F0[];
 
 /* unbake published declaration: published_305a11badabd07fe0808bde1 */
-extern char D_80100584;
+extern struct Shared_HeapSortedList D_80100584;
 
 /* unbake published declaration: published_305e88c03b1c3924a8695f86 */
 extern char *D_800E1E74[];
