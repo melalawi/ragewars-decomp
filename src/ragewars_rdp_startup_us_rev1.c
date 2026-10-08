@@ -1,6 +1,5 @@
 #include "types.h"
 #include "n64sdk.h"
-#define F3DEX_GBI_2
 #include "gbi.h"
 
 /* RDP startup state, used by the renderer through D_800CBCF0_de.
