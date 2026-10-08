@@ -1650,7 +1650,8 @@ extern float D_800C4DF4_de;
 extern float D_800C4DF8_de;
 extern float D_800C4DFC_de;
 extern float D_800C4E00_de;
-extern float D_800C4E04_de;
+/* Immutable ROM turn-angle scale (0x40C90FDB), used by the effect spawner. */
+extern const float D_800C4E04_de;
 extern float D_800C4E08_de;
 extern float D_800C4E0C_de;
 extern float D_800C4E2C_de;

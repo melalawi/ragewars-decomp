@@ -170,10 +170,12 @@ extern int D_800EFFD4[];
 extern int D_800FEAE0[];
 extern int D_800FF140_de[];
 extern int D_800FF238;
-extern int D_80100090;
+/* Effect render defaults, copied as the complete 0x1C-byte record. */
+extern struct EffectRender D_80100090;
 extern int D_80100204;
 extern unsigned char D_80100207;
-extern int D_801002E0;
+/* Effect direction vector: ROM callers copy the three words at +0/+4/+8. */
+extern Vec3 D_801002E0;
 extern int D_801002EC;
 extern int D_801002F0;
 extern int D_801011A8;
