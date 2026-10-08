@@ -2375,7 +2375,8 @@ us-rev1.D.rw_pool_80206080_C77C0_us_rev1 := 0x800C6BC0:0xC77C0:0x4
 us-rev1.S.000C77C4 := 817092 4
 us-rev1.D.rw_pool_80206080_C77C8_us_rev1 := 0x800C6BC8:0xC77C8:0x8
 us-rev1.D.rw_pool_802066A4_C77D0_us_rev1 := 0x800C6BD0:0xC77D0:0x4
-us-rev1.S.000C77D4 := 817108 44
+us-rev1.S.000C77D4 := 817108 32
+us-rev1.D.rw_tail_80206A20_C77F4_us_rev1 := 0x800C6BF4:0xC77F4:0xC
 us-rev1.D.rw_pool_80206DD4_C7800_us_rev1 := 0x800C6C00:0xC7800:0x18
 us-rev1.D.rw_pool_802070D0_C7818_us_rev1 := 0x800C6C18:0xC7818:0x60
 us-rev1.S.000C7878 := 817272 20
@@ -2419,7 +2420,8 @@ us-rev1.S.000C7A94 := 817812 12
 us-rev1.D.rw_pool_8020D4AC_C7AA0_us_rev1 := 0x800C6EA0:0xC7AA0:0x4
 us-rev1.D.rw_pool_8020D6E4_C7AA4_us_rev1 := 0x800C6EA4:0xC7AA4:0x4
 us-rev1.D.rw_pool_8020D9C0_C7AA8_us_rev1 := 0x800C6EA8:0xC7AA8:0x4
-us-rev1.S.000C7AAC := 817836 132
+us-rev1.S.000C7AAC := 817836 32
+us-rev1.D.rw_tail_8020DDF4_eu_C7ACC_us_rev1 := 0x800C6ECC:0xC7ACC:0x64
 us-rev1.D.rw_pool_8020E674_C7B30_us_rev1 := 0x800C6F30:0xC7B30:0xC
 us-rev1.S.000C7B3C := 817980 4
 us-rev1.D.rw_pool_8020EA10_C7B40_us_rev1 := 0x800C6F40:0xC7B40:0xC
@@ -2506,7 +2508,8 @@ us-rev1.D.rw_constants_804491E8_C7FFC_us_rev1 := 0x800C73FC:0xC7FFC:0xC
 us-rev1.D.rw_pool_8021A9A4_C8008_us_rev1 := 0x800C7408:0xC8008:0x20
 us-rev1.D.rw_pool_8044952C_C8028_us_rev1 := 0x800C7428:0xC8028:0x8
 us-rev1.D.rw_pool_8021B1E4_C8030_us_rev1 := 0x800C7430:0xC8030:0x4
-us-rev1.S.000C8034 := 819252 52
+us-rev1.S.000C8034 := 819252 36
+us-rev1.D.rw_tail_8021B468_C8058_us_rev1 := 0x800C7458:0xC8058:0x10
 us-rev1.D.rw_pool_8021BFC4_C8068_us_rev1 := 0x800C7468:0xC8068:0xC
 us-rev1.D.rw_pool_8021C9D8_C8074_us_rev1 := 0x800C7474:0xC8074:0x4
 us-rev1.D.rw_pool_8021CF28_C8078_us_rev1 := 0x800C7478:0xC8078:0x1C
@@ -2514,7 +2517,8 @@ us-rev1.D.rw_pool_8021D408_C8094_us_rev1 := 0x800C7494:0xC8094:0x10
 us-rev1.D.rw_pool_8021D774_C80A4_us_rev1 := 0x800C74A4:0xC80A4:0x20
 us-rev1.D.rw_pool_8021E08C_C80C4_us_rev1 := 0x800C74C4:0xC80C4:0xC
 us-rev1.D.rw_pool_8021E2A0_C80D0_us_rev1 := 0x800C74D0:0xC80D0:0x14
-us-rev1.S.000C80E4 := 819428 424
+us-rev1.S.000C80E4 := 819428 408
+us-rev1.D.rw_tail_8021E2A0_C827C_us_rev1 := 0x800C767C:0xC827C:0x10
 us-rev1.D.rw_pool_8021E5F8_C828C_us_rev1 := 0x800C768C:0xC828C:0x28
 us-rev1.D.rw_pool_8021EA54_C82B4_us_rev1 := 0x800C76B4:0xC82B4:0x38
 us-rev1.D.rw_formats_8021EEFC_C82EC_us_rev1 := 0x800C76EC:0xC82EC:0x3
@@ -2547,7 +2551,8 @@ us-rev1.D.rw_pool_80226548_C883C_us_rev1 := 0x800C7C3C:0xC883C:0x1C
 us-rev1.D.rw_text_80226950_C8858_us_rev1 := 0x800C7C58:0xC8858:0x8
 us-rev1.D.rw_pool_80226C60_C8860_us_rev1 := 0x800C7C60:0xC8860:0x4
 us-rev1.D.rw_pool_80226DD0_C8864_us_rev1 := 0x800C7C64:0xC8864:0x8
-us-rev1.S.000C886C := 821356 68
+us-rev1.S.000C886C := 821356 36
+us-rev1.D.rw_tail_80227038_C8890_us_rev1 := 0x800C7C90:0xC8890:0x20
 us-rev1.D.ragewars_resident_strings_C88B0_us_rev1 := 0x800C7CB0:0xC88B0:0x18
 us-rev1.S.000C88C8 := 821448 4
 us-rev1.D.rw_pool_80228AF4_C88CC_us_rev1 := 0x800C7CCC:0xC88CC:0x38
@@ -2698,7 +2703,8 @@ us-rev1.D.rw_pool_8023C1F0_C9300_us_rev1 := 0x800C8700:0xC9300:0x10
 us-rev1.D.rw_pool_8023CFE0_C9310_us_rev1 := 0x800C8710:0xC9310:0x10
 us-rev1.D.rw_pool_8023D158_C9320_us_rev1 := 0x800C8720:0xC9320:0x4
 us-rev1.D.rw_pool_8023D380_C9324_us_rev1 := 0x800C8724:0xC9324:0x18
-us-rev1.S.000C933C := 824124 68
+us-rev1.S.000C933C := 824124 36
+us-rev1.D.rw_tail_8023D380_C9360_us_rev1 := 0x800C8760:0xC9360:0x20
 us-rev1.D.rw_pool_8023DF70_C9380_us_rev1 := 0x800C8780:0xC9380:0x4
 us-rev1.D.rw_pool_8023E178_C9384_us_rev1 := 0x800C8784:0xC9384:0x8
 us-rev1.S.000C938C := 824204 40
@@ -2790,12 +2796,17 @@ us-rev1.D.rw_pool_8024CA10_C9868_us_rev1 := 0x800C8C68:0xC9868:0x4
 us-rev1.D.rw_pool_8024CB4C_C986C_us_rev1 := 0x800C8C6C:0xC986C:0x4
 us-rev1.D.rw_pool_8024CC30_C9870_us_rev1 := 0x800C8C70:0xC9870:0x30
 us-rev1.D.rw_pool_8024D028_C98A0_us_rev1 := 0x800C8CA0:0xC98A0:0x4
-us-rev1.S.000C98A4 := 825508 208
+us-rev1.S.000C98A4 := 825508 128
+us-rev1.D.rw_tail_8024D284_C9924_us_rev1 := 0x800C8D24:0xC9924:0x8
+us-rev1.S.000C992C := 825644 64
+us-rev1.D.rw_tail_8024D398_C996C_us_rev1 := 0x800C8D6C:0xC996C:0x8
 us-rev1.D.rw_pool_8024D4AC_C9974_us_rev1 := 0x800C8D74:0xC9974:0x14
 us-rev1.D.rw_pool_8024D728_C9988_us_rev1 := 0x800C8D88:0xC9988:0xC
 us-rev1.D.rw_constants_8024D870_C9994_us_rev1 := 0x800C8D94:0xC9994:0x30
 us-rev1.D.rw_pool_8024DBC0_C99C4_us_rev1 := 0x800C8DC4:0xC99C4:0x4
-us-rev1.S.000C99C8 := 825800 168
+us-rev1.S.000C99C8 := 825800 148
+us-rev1.D.rw_tail_8024E2FC_C9A5C_us_rev1 := 0x800C8E5C:0xC9A5C:0xC
+us-rev1.S.000C9A68 := 825960 8
 us-rev1.D.rw_pool_8024E990_C9A70_us_rev1 := 0x800C8E70:0xC9A70:0x10
 us-rev1.D.rw_pool_8024ED90_C9A80_us_rev1 := 0x800C8E80:0xC9A80:0xC
 us-rev1.D.rw_pool_8024EF28_C9A8C_us_rev1 := 0x800C8E8C:0xC9A8C:0x10
@@ -2933,7 +2944,8 @@ us-rev1.D.rw_pool_80268A40_CA180_us_rev1 := 0x800C9580:0xCA180:0x8
 us-rev1.D.rw_pool_8044B0E0_CA188_us_rev1 := 0x800C9588:0xCA188:0x4
 us-rev1.S.000CA18C := 827788 296
 us-rev1.D.rw_pool_80269A80_CA2B4_us_rev1 := 0x800C96B4:0xCA2B4:0x20
-us-rev1.S.000CA2D4 := 828116 132
+us-rev1.S.000CA2D4 := 828116 128
+us-rev1.D.rw_tail_80269A80_CA354_us_rev1 := 0x800C9754:0xCA354:0x4
 us-rev1.D.rw_pool_8026B504_CA358_us_rev1 := 0x800C9758:0xCA358:0x4
 us-rev1.D.rw_text_8026C484_CA35C_us_rev1 := 0x800C975C:0xCA35C:0x12
 us-rev1.S.000CA36E := 828270 2
@@ -3032,14 +3044,20 @@ us-rev1.D.rw_pool_8027A948_CA898_us_rev1 := 0x800C9C98:0xCA898:0x20
 us-rev1.D.rw_pool_8027ABF4_CA8B8_us_rev1 := 0x800C9CB8:0xCA8B8:0x4
 us-rev1.D.rw_pool_8027AD4C_CA8BC_us_rev1 := 0x800C9CBC:0xCA8BC:0x2C
 us-rev1.D.rw_pool_8027B720_CA8E8_us_rev1 := 0x800C9CE8:0xCA8E8:0x40
-us-rev1.S.000CA928 := 829736 216
+us-rev1.S.000CA928 := 829736 44
+us-rev1.D.rw_tail_8027D97C_CA954_us_rev1 := 0x800C9D54:0xCA954:0x4
+us-rev1.S.000CA958 := 829784 108
+us-rev1.D.rw_tail_8027DD48_CA9C4_us_rev1 := 0x800C9DC4:0xCA9C4:0x3C
 us-rev1.D.rw_pool_8027E784_CAA00_us_rev1 := 0x800C9E00:0xCAA00:0x28
 us-rev1.D.rw_text_8027EB2C_CAA28_us_rev1 := 0x800C9E28:0xCAA28:0x17
 us-rev1.S.000CAA3F := 830015 1
 us-rev1.D.rw_text_8027EB2C_CAA40_us_rev1 := 0x800C9E40:0xCAA40:0x17
 us-rev1.S.000CAA57 := 830039 1
 us-rev1.D.ragewars_resident_strings_CAA58_us_rev1 := 0x800C9E58:0xCAA58:0x10
-us-rev1.S.000CAA68 := 830056 200
+us-rev1.S.000CAA68 := 830056 88
+us-rev1.D.rw_tail_8027ED6C_CAAC0_us_rev1 := 0x800C9EC0:0xCAAC0:0x34
+us-rev1.S.000CAAF4 := 830196 40
+us-rev1.D.rw_tail_802800C0_CAB1C_us_rev1 := 0x800C9F1C:0xCAB1C:0x14
 us-rev1.D.rw_pool_80281A9C_CAB30_us_rev1 := 0x800C9F30:0xCAB30:0xC
 us-rev1.D.rw_pool_80281CA0_CAB3C_us_rev1 := 0x800C9F3C:0xCAB3C:0x8
 us-rev1.D.rw_pool_80282330_CAB44_us_rev1 := 0x800C9F44:0xCAB44:0x8
@@ -3287,10 +3305,20 @@ us-rev1.D.rw_text_802A71C0_CBCA0_us_rev1 := 0x800CB0A0:0xCBCA0:0xF
 us-rev1.S.000CBCAF := 834735 1
 us-rev1.D.rw_pool_802A7660_CBCB0_us_rev1 := 0x800CB0B0:0xCBCB0:0x28
 us-rev1.D.rw_pool_802A7AA4_CBCD8_us_rev1 := 0x800CB0D8:0xCBCD8:0xC
-us-rev1.S.000CBCE4 := 834788 64
+us-rev1.S.000CBCE4 := 834788 60
+us-rev1.D.rw_tail_802A7AA4_CBD20_us_rev1 := 0x800CB120:0xCBD20:0x4
 us-rev1.D.rw_pool_802A822C_CBD24_us_rev1 := 0x800CB124:0xCBD24:0x1C
 us-rev1.D.rw_pool_802A84F8_CBD40_us_rev1 := 0x800CB140:0xCBD40:0x4
-us-rev1.S.000CBD44 := 834884 516
+us-rev1.S.000CBD44 := 834884 96
+us-rev1.D.rw_tail_802A88F0_CBDA4_us_rev1 := 0x800CB1A4:0xCBDA4:0x18
+us-rev1.S.000CBDBC := 835004 32
+us-rev1.D.rw_tail_802A88F0_CBDDC_us_rev1 := 0x800CB1DC:0xCBDDC:0x18
+us-rev1.S.000CBDF4 := 835060 192
+us-rev1.D.rw_tail_802A88F0_CBEB4_us_rev1 := 0x800CB2B4:0xCBEB4:0x20
+us-rev1.S.000CBED4 := 835284 32
+us-rev1.D.rw_tail_802A8F28_CBEF4_us_rev1 := 0x800CB2F4:0xCBEF4:0x18
+us-rev1.S.000CBF0C := 835340 40
+us-rev1.D.rw_tail_802A8F28_CBF34_us_rev1 := 0x800CB334:0xCBF34:0x14
 us-rev1.D.rw_pool_802A9734_CBF48_us_rev1 := 0x800CB348:0xCBF48:0x4
 us-rev1.D.rw_pool_802A9EE8_CBF4C_us_rev1 := 0x800CB34C:0xCBF4C:0x4
 us-rev1.D.rw_pool_802AA1AC_CBF50_us_rev1 := 0x800CB350:0xCBF50:0x4
@@ -3299,7 +3327,8 @@ us-rev1.D.rw_pool_802AA1AC_CBF58_us_rev1 := 0x800CB358:0xCBF58:0x14
 us-rev1.S.000CBF6C := 835436 4
 us-rev1.D.rw_pool_802AA1AC_CBF70_us_rev1 := 0x800CB370:0xCBF70:0x10
 us-rev1.D.rw_pool_802AA7A4_CBF80_us_rev1 := 0x800CB380:0xCBF80:0x4
-us-rev1.S.000CBF84 := 835460 56
+us-rev1.S.000CBF84 := 835460 32
+us-rev1.D.rw_tail_802AA864_CBFA4_us_rev1 := 0x800CB3A4:0xCBFA4:0x18
 us-rev1.D.rw_constants_802AAEE4_CBFBC_us_rev1 := 0x800CB3BC:0xCBFBC:0x14
 us-rev1.D.rw_pool_802AB1B0_CBFD0_us_rev1 := 0x800CB3D0:0xCBFD0:0x4
 us-rev1.S.000CBFD4 := 835540 4
@@ -3307,7 +3336,8 @@ us-rev1.D.rw_pool_802AB1B0_CBFD8_us_rev1 := 0x800CB3D8:0xCBFD8:0x10
 us-rev1.D.rw_pool_802AB3A8_CBFE8_us_rev1 := 0x800CB3E8:0xCBFE8:0x4
 us-rev1.S.000CBFEC := 835564 4
 us-rev1.D.rw_pool_802ABBDC_CBFF0_us_rev1 := 0x800CB3F0:0xCBFF0:0x54
-us-rev1.S.000CC044 := 835652 44
+us-rev1.S.000CC044 := 835652 36
+us-rev1.D.rw_tail_802ACE38_CC068_us_rev1 := 0x800CB468:0xCC068:0x8
 us-rev1.D.rw_pool_802AD1B4_CC070_us_rev1 := 0x800CB470:0xCC070:0x8
 us-rev1.S.000CC078 := 835704 8
 us-rev1.D.rw_text_802AEF84_us_rev1_CC080_us_rev1 := 0x800CB480:0xCC080:0xA
@@ -3350,7 +3380,8 @@ us-rev1.D.rw_pool_802B20D4_CD338_us_rev1 := 0x800CC738:0xCD338:0xC
 us-rev1.D.rw_constants_802B2120_CD344_us_rev1 := 0x800CC744:0xCD344:0x10
 us-rev1.S.000CD354 := 840532 12
 us-rev1.D.rw_pool_802B2510_CD360_us_rev1 := 0x800CC760:0xCD360:0x4
-us-rev1.S.000CD364 := 840548 52
+us-rev1.S.000CD364 := 840548 48
+us-rev1.D.rw_tail_802B2780_CD394_us_rev1 := 0x800CC794:0xCD394:0x4
 us-rev1.D.rw_formats_802B2CF0_CD398_us_rev1 := 0x800CC798:0xCD398:0x3
 us-rev1.S.000CD39B := 840603 1
 us-rev1.D.rw_text_802B2CF0_CD39C_us_rev1 := 0x800CC79C:0xCD39C:0x12
@@ -3362,7 +3393,9 @@ us-rev1.S.000CD3C3 := 840643 1
 us-rev1.D.ragewars_resident_strings_CD3C4_us_rev1 := 0x800CC7C4:0xCD3C4:0x14
 us-rev1.D.rw_pool_802B3CD0_CD3D8_us_rev1 := 0x800CC7D8:0xCD3D8:0x8
 us-rev1.D.rw_pool_802B3DB8_CD3E0_us_rev1 := 0x800CC7E0:0xCD3E0:0x8
-us-rev1.S.000CD3E8 := 840680 48
+us-rev1.S.000CD3E8 := 840680 32
+us-rev1.D.rw_tail_802B3F10_CD408_us_rev1 := 0x800CC808:0xCD408:0xC
+us-rev1.S.000CD414 := 840724 4
 us-rev1.D.rw_pool_802B3F10_CD418_us_rev1 := 0x800CC818:0xCD418:0x18
 us-rev1.D.rw_pool_802B450C_CD430_us_rev1 := 0x800CC830:0xCD430:0x4
 us-rev1.S.000CD434 := 840756 4
@@ -3381,7 +3414,9 @@ us-rev1.S.000CD59C := 841116 52
 us-rev1.D.rw_formats_802B57F0_CD5D0_us_rev1 := 0x800CC9D0:0xCD5D0:0x3
 us-rev1.S.000CD5D3 := 841171 1
 us-rev1.D.rw_text_802B57F0_CD5D4_us_rev1 := 0x800CC9D4:0xCD5D4:0xF
-us-rev1.S.000CD5E3 := 841187 45
+us-rev1.S.000CD5E3 := 841187 37
+us-rev1.D.rw_tail_802B5B94_CD608_us_rev1 := 0x800CCA08:0xCD608:0x4
+us-rev1.S.000CD60C := 841228 4
 us-rev1.D.rw_pool_802B5B94_CD610_us_rev1 := 0x800CCA10:0xCD610:0xC
 us-rev1.D.rw_pool_802B5D70_CD61C_us_rev1 := 0x800CCA1C:0xCD61C:0xC
 us-rev1.D.rw_pool_802B6300_CD628_us_rev1 := 0x800CCA28:0xCD628:0xC
@@ -3638,7 +3673,9 @@ us-rev1.D.rw_text_8041C610_E20A4_us_rev1 := 0x800E14A4:0xE20A4:0x11
 us-rev1.S.000E20B5 := 925877 3
 us-rev1.D.rw_pool_8041C7F4_E20B8_us_rev1 := 0x800E14B8:0xE20B8:0x8
 us-rev1.D.rw_pool_8041CAD8_E20C0_us_rev1 := 0x800E14C0:0xE20C0:0x8
-us-rev1.S.000E20C8 := 925896 112
+us-rev1.S.000E20C8 := 925896 36
+us-rev1.D.rw_tail_8041D134_E20EC_us_rev1 := 0x800E14EC:0xE20EC:0x10
+us-rev1.S.000E20FC := 925948 60
 us-rev1.D.rw_text_8041D6A8_E2138_us_rev1 := 0x800E1538:0xE2138:0x7
 us-rev1.S.000E213F := 926015 1
 us-rev1.D.rw_pool_8041DBCC_E2140_us_rev1 := 0x800E1540:0xE2140:0x14
@@ -3653,13 +3690,16 @@ us-rev1.D.rw_pool_804220A8_E2240_us_rev1 := 0x800E1640:0xE2240:0x8
 us-rev1.D.rw_pool_804221E8_E2248_us_rev1 := 0x800E1648:0xE2248:0x4
 us-rev1.S.000E224C := 926284 100
 us-rev1.D.rw_pool_804243E0_E22B0_us_rev1 := 0x800E16B0:0xE22B0:0x18
-us-rev1.S.000E22C8 := 926408 796
+us-rev1.S.000E22C8 := 926408 792
+us-rev1.D.rw_tail_80426918_E25E0_us_rev1 := 0x800E19E0:0xE25E0:0x4
 us-rev1.D.rw_pool_80426CE4_E25E4_us_rev1 := 0x800E19E4:0xE25E4:0x8
 us-rev1.D.rw_formats_80427B08_E25EC_us_rev1 := 0x800E19EC:0xE25EC:0x1B
 us-rev1.S.000E2607 := 927239 153
 us-rev1.D.rw_pool_80429A24_E26A0_us_rev1 := 0x800E1AA0:0xE26A0:0x1C
 us-rev1.D.rw_pool_80429FF0_E26BC_us_rev1 := 0x800E1ABC:0xE26BC:0x10
-us-rev1.S.000E26CC := 927436 84
+us-rev1.S.000E26CC := 927436 68
+us-rev1.D.rw_tail_8042AE60_eu_E2710_us_rev1 := 0x800E1B10:0xE2710:0x4
+us-rev1.S.000E2714 := 927508 12
 us-rev1.D.rw_formats_8042C018_E2720_us_rev1 := 0x800E1B20:0xE2720:0x3
 us-rev1.S.000E2723 := 927523 1
 us-rev1.D.rw_text_8042C018_E2724_us_rev1 := 0x800E1B24:0xE2724:0x5
@@ -3722,7 +3762,8 @@ us-rev1.S.000E2FBE := 929726 2
 us-rev1.D.rw_formats_8043F120_E2FC0_us_rev1 := 0x800E23C0:0xE2FC0:0x3
 us-rev1.S.000E2FC3 := 929731 45
 us-rev1.D.rw_pool_8043F120_E2FF0_us_rev1 := 0x800E23F0:0xE2FF0:0x8
-us-rev1.S.000E2FF8 := 929784 96
+us-rev1.S.000E2FF8 := 929784 84
+us-rev1.D.rw_tail_8043F294_E304C_us_rev1 := 0x800E244C:0xE304C:0xC
 us-rev1.D.rw_pool_8043F52C_E3058_us_rev1 := 0x800E2458:0xE3058:0x4
 us-rev1.S.000E305C := 929884 52
 us-rev1.D.rw_constants_8043FE3C_E3090_us_rev1 := 0x800E2490:0xE3090:0x1C
@@ -3742,7 +3783,8 @@ us-rev1.S.000E312C := 930092 400
 us-rev1.D.rw_constants_80442BA8_E32BC_us_rev1 := 0x800E26BC:0xE32BC:0x8
 us-rev1.S.000E32C4 := 930500 44
 us-rev1.D.rw_pool_80442EC0_E32F0_us_rev1 := 0x800E26F0:0xE32F0:0x8
-us-rev1.S.000E32F8 := 930552 48
+us-rev1.S.000E32F8 := 930552 36
+us-rev1.D.rw_tail_80442FB0_E331C_us_rev1 := 0x800E271C:0xE331C:0xC
 us-rev1.D.rw_pool_80443128_E3328_us_rev1 := 0x800E2728:0xE3328:0x4
 us-rev1.S.000E332C := 930604 72
 us-rev1.D.rw_constants_80443734_E3374_us_rev1 := 0x800E2774:0xE3374:0x4
@@ -3767,11 +3809,7 @@ us-rev1.D.rw_pool_80445964_E3410_us_rev1 := 0x800E2810:0xE3410:0x4
 us-rev1.D.rw_pool_80445BC0_E3414_us_rev1 := 0x800E2814:0xE3414:0x10
 us-rev1.S.000E3424 := 930852 36
 us-rev1.D.rw_constants_8040170C_E3448_us_rev1 := 0x800E2848:0xE3448:0x4
-us-rev1.S.000E344C := 930892 4640
-us-rev1.D.rw_formats_804279B8_E466C_us_rev1 := 0x800E3A6C:0xE466C:0x3
-us-rev1.S.000E466F := 935535 13
-us-rev1.D.rw_formats_804279B8_E467C_us_rev1 := 0x800E3A7C:0xE467C:0x3
-us-rev1.S.000E467F := 935551 3093
+us-rev1.S.000E344C := 930892 7752
 us-rev1.D.ragewars_arena_menu_slots_us_rev1 := 0x800E4694:0xE5294:0x3F0
 us-rev1.D.ragewars_arena_compatibility_us_rev1 := 0x800E4A84:0xE5684:0x300
 us-rev1.S.000E5984 := 940420 3908
@@ -7310,6 +7348,7 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_80206080_C77C8_us_rev1.bin \
   build/us-rev1/data/rw_pool_802066A4_C77D0_us_rev1.bin \
   build/us-rev1/slices/000C77D4.bin \
+  build/us-rev1/data/rw_tail_80206A20_C77F4_us_rev1.bin \
   build/us-rev1/data/rw_pool_80206DD4_C7800_us_rev1.bin \
   build/us-rev1/data/rw_pool_802070D0_C7818_us_rev1.bin \
   build/us-rev1/slices/000C7878.bin \
@@ -7354,6 +7393,7 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_8020D6E4_C7AA4_us_rev1.bin \
   build/us-rev1/data/rw_pool_8020D9C0_C7AA8_us_rev1.bin \
   build/us-rev1/slices/000C7AAC.bin \
+  build/us-rev1/data/rw_tail_8020DDF4_eu_C7ACC_us_rev1.bin \
   build/us-rev1/data/rw_pool_8020E674_C7B30_us_rev1.bin \
   build/us-rev1/slices/000C7B3C.bin \
   build/us-rev1/data/rw_pool_8020EA10_C7B40_us_rev1.bin \
@@ -7441,6 +7481,7 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_8044952C_C8028_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021B1E4_C8030_us_rev1.bin \
   build/us-rev1/slices/000C8034.bin \
+  build/us-rev1/data/rw_tail_8021B468_C8058_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021BFC4_C8068_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021C9D8_C8074_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021CF28_C8078_us_rev1.bin \
@@ -7449,6 +7490,7 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_8021E08C_C80C4_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021E2A0_C80D0_us_rev1.bin \
   build/us-rev1/slices/000C80E4.bin \
+  build/us-rev1/data/rw_tail_8021E2A0_C827C_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021E5F8_C828C_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021EA54_C82B4_us_rev1.bin \
   build/us-rev1/data/rw_formats_8021EEFC_C82EC_us_rev1.bin \
@@ -7482,6 +7524,7 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_80226C60_C8860_us_rev1.bin \
   build/us-rev1/data/rw_pool_80226DD0_C8864_us_rev1.bin \
   build/us-rev1/slices/000C886C.bin \
+  build/us-rev1/data/rw_tail_80227038_C8890_us_rev1.bin \
   build/us-rev1/data/ragewars_resident_strings_C88B0_us_rev1.bin \
   build/us-rev1/slices/000C88C8.bin \
   build/us-rev1/data/rw_pool_80228AF4_C88CC_us_rev1.bin \
@@ -7633,6 +7676,7 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_8023D158_C9320_us_rev1.bin \
   build/us-rev1/data/rw_pool_8023D380_C9324_us_rev1.bin \
   build/us-rev1/slices/000C933C.bin \
+  build/us-rev1/data/rw_tail_8023D380_C9360_us_rev1.bin \
   build/us-rev1/data/rw_pool_8023DF70_C9380_us_rev1.bin \
   build/us-rev1/data/rw_pool_8023E178_C9384_us_rev1.bin \
   build/us-rev1/slices/000C938C.bin \
@@ -7725,11 +7769,16 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_8024CC30_C9870_us_rev1.bin \
   build/us-rev1/data/rw_pool_8024D028_C98A0_us_rev1.bin \
   build/us-rev1/slices/000C98A4.bin \
+  build/us-rev1/data/rw_tail_8024D284_C9924_us_rev1.bin \
+  build/us-rev1/slices/000C992C.bin \
+  build/us-rev1/data/rw_tail_8024D398_C996C_us_rev1.bin \
   build/us-rev1/data/rw_pool_8024D4AC_C9974_us_rev1.bin \
   build/us-rev1/data/rw_pool_8024D728_C9988_us_rev1.bin \
   build/us-rev1/data/rw_constants_8024D870_C9994_us_rev1.bin \
   build/us-rev1/data/rw_pool_8024DBC0_C99C4_us_rev1.bin \
   build/us-rev1/slices/000C99C8.bin \
+  build/us-rev1/data/rw_tail_8024E2FC_C9A5C_us_rev1.bin \
+  build/us-rev1/slices/000C9A68.bin \
   build/us-rev1/data/rw_pool_8024E990_C9A70_us_rev1.bin \
   build/us-rev1/data/rw_pool_8024ED90_C9A80_us_rev1.bin \
   build/us-rev1/data/rw_pool_8024EF28_C9A8C_us_rev1.bin \
@@ -7868,6 +7917,7 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CA18C.bin \
   build/us-rev1/data/rw_pool_80269A80_CA2B4_us_rev1.bin \
   build/us-rev1/slices/000CA2D4.bin \
+  build/us-rev1/data/rw_tail_80269A80_CA354_us_rev1.bin \
   build/us-rev1/data/rw_pool_8026B504_CA358_us_rev1.bin \
   build/us-rev1/data/rw_text_8026C484_CA35C_us_rev1.bin \
   build/us-rev1/slices/000CA36E.bin \
@@ -7967,6 +8017,9 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_8027AD4C_CA8BC_us_rev1.bin \
   build/us-rev1/data/rw_pool_8027B720_CA8E8_us_rev1.bin \
   build/us-rev1/slices/000CA928.bin \
+  build/us-rev1/data/rw_tail_8027D97C_CA954_us_rev1.bin \
+  build/us-rev1/slices/000CA958.bin \
+  build/us-rev1/data/rw_tail_8027DD48_CA9C4_us_rev1.bin \
   build/us-rev1/data/rw_pool_8027E784_CAA00_us_rev1.bin \
   build/us-rev1/data/rw_text_8027EB2C_CAA28_us_rev1.bin \
   build/us-rev1/slices/000CAA3F.bin \
@@ -7974,6 +8027,9 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CAA57.bin \
   build/us-rev1/data/ragewars_resident_strings_CAA58_us_rev1.bin \
   build/us-rev1/slices/000CAA68.bin \
+  build/us-rev1/data/rw_tail_8027ED6C_CAAC0_us_rev1.bin \
+  build/us-rev1/slices/000CAAF4.bin \
+  build/us-rev1/data/rw_tail_802800C0_CAB1C_us_rev1.bin \
   build/us-rev1/data/rw_pool_80281A9C_CAB30_us_rev1.bin \
   build/us-rev1/data/rw_pool_80281CA0_CAB3C_us_rev1.bin \
   build/us-rev1/data/rw_pool_80282330_CAB44_us_rev1.bin \
@@ -8222,9 +8278,19 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_802A7660_CBCB0_us_rev1.bin \
   build/us-rev1/data/rw_pool_802A7AA4_CBCD8_us_rev1.bin \
   build/us-rev1/slices/000CBCE4.bin \
+  build/us-rev1/data/rw_tail_802A7AA4_CBD20_us_rev1.bin \
   build/us-rev1/data/rw_pool_802A822C_CBD24_us_rev1.bin \
   build/us-rev1/data/rw_pool_802A84F8_CBD40_us_rev1.bin \
   build/us-rev1/slices/000CBD44.bin \
+  build/us-rev1/data/rw_tail_802A88F0_CBDA4_us_rev1.bin \
+  build/us-rev1/slices/000CBDBC.bin \
+  build/us-rev1/data/rw_tail_802A88F0_CBDDC_us_rev1.bin \
+  build/us-rev1/slices/000CBDF4.bin \
+  build/us-rev1/data/rw_tail_802A88F0_CBEB4_us_rev1.bin \
+  build/us-rev1/slices/000CBED4.bin \
+  build/us-rev1/data/rw_tail_802A8F28_CBEF4_us_rev1.bin \
+  build/us-rev1/slices/000CBF0C.bin \
+  build/us-rev1/data/rw_tail_802A8F28_CBF34_us_rev1.bin \
   build/us-rev1/data/rw_pool_802A9734_CBF48_us_rev1.bin \
   build/us-rev1/data/rw_pool_802A9EE8_CBF4C_us_rev1.bin \
   build/us-rev1/data/rw_pool_802AA1AC_CBF50_us_rev1.bin \
@@ -8234,6 +8300,7 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_802AA1AC_CBF70_us_rev1.bin \
   build/us-rev1/data/rw_pool_802AA7A4_CBF80_us_rev1.bin \
   build/us-rev1/slices/000CBF84.bin \
+  build/us-rev1/data/rw_tail_802AA864_CBFA4_us_rev1.bin \
   build/us-rev1/data/rw_constants_802AAEE4_CBFBC_us_rev1.bin \
   build/us-rev1/data/rw_pool_802AB1B0_CBFD0_us_rev1.bin \
   build/us-rev1/slices/000CBFD4.bin \
@@ -8242,6 +8309,7 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CBFEC.bin \
   build/us-rev1/data/rw_pool_802ABBDC_CBFF0_us_rev1.bin \
   build/us-rev1/slices/000CC044.bin \
+  build/us-rev1/data/rw_tail_802ACE38_CC068_us_rev1.bin \
   build/us-rev1/data/rw_pool_802AD1B4_CC070_us_rev1.bin \
   build/us-rev1/slices/000CC078.bin \
   build/us-rev1/data/rw_text_802AEF84_us_rev1_CC080_us_rev1.bin \
@@ -8285,6 +8353,7 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CD354.bin \
   build/us-rev1/data/rw_pool_802B2510_CD360_us_rev1.bin \
   build/us-rev1/slices/000CD364.bin \
+  build/us-rev1/data/rw_tail_802B2780_CD394_us_rev1.bin \
   build/us-rev1/data/rw_formats_802B2CF0_CD398_us_rev1.bin \
   build/us-rev1/slices/000CD39B.bin \
   build/us-rev1/data/rw_text_802B2CF0_CD39C_us_rev1.bin \
@@ -8297,6 +8366,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_802B3CD0_CD3D8_us_rev1.bin \
   build/us-rev1/data/rw_pool_802B3DB8_CD3E0_us_rev1.bin \
   build/us-rev1/slices/000CD3E8.bin \
+  build/us-rev1/data/rw_tail_802B3F10_CD408_us_rev1.bin \
+  build/us-rev1/slices/000CD414.bin \
   build/us-rev1/data/rw_pool_802B3F10_CD418_us_rev1.bin \
   build/us-rev1/data/rw_pool_802B450C_CD430_us_rev1.bin \
   build/us-rev1/slices/000CD434.bin \
@@ -8316,6 +8387,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CD5D3.bin \
   build/us-rev1/data/rw_text_802B57F0_CD5D4_us_rev1.bin \
   build/us-rev1/slices/000CD5E3.bin \
+  build/us-rev1/data/rw_tail_802B5B94_CD608_us_rev1.bin \
+  build/us-rev1/slices/000CD60C.bin \
   build/us-rev1/data/rw_pool_802B5B94_CD610_us_rev1.bin \
   build/us-rev1/data/rw_pool_802B5D70_CD61C_us_rev1.bin \
   build/us-rev1/data/rw_pool_802B6300_CD628_us_rev1.bin \
@@ -8567,6 +8640,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_pool_8041C7F4_E20B8_us_rev1.bin \
   build/us-rev1/data/rw_pool_8041CAD8_E20C0_us_rev1.bin \
   build/us-rev1/slices/000E20C8.bin \
+  build/us-rev1/data/rw_tail_8041D134_E20EC_us_rev1.bin \
+  build/us-rev1/slices/000E20FC.bin \
   build/us-rev1/data/rw_text_8041D6A8_E2138_us_rev1.bin \
   build/us-rev1/slices/000E213F.bin \
   build/us-rev1/data/rw_pool_8041DBCC_E2140_us_rev1.bin \
@@ -8582,12 +8657,15 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E224C.bin \
   build/us-rev1/data/rw_pool_804243E0_E22B0_us_rev1.bin \
   build/us-rev1/slices/000E22C8.bin \
+  build/us-rev1/data/rw_tail_80426918_E25E0_us_rev1.bin \
   build/us-rev1/data/rw_pool_80426CE4_E25E4_us_rev1.bin \
   build/us-rev1/data/rw_formats_80427B08_E25EC_us_rev1.bin \
   build/us-rev1/slices/000E2607.bin \
   build/us-rev1/data/rw_pool_80429A24_E26A0_us_rev1.bin \
   build/us-rev1/data/rw_pool_80429FF0_E26BC_us_rev1.bin \
   build/us-rev1/slices/000E26CC.bin \
+  build/us-rev1/data/rw_tail_8042AE60_eu_E2710_us_rev1.bin \
+  build/us-rev1/slices/000E2714.bin \
   build/us-rev1/data/rw_formats_8042C018_E2720_us_rev1.bin \
   build/us-rev1/slices/000E2723.bin \
   build/us-rev1/data/rw_text_8042C018_E2724_us_rev1.bin \
@@ -8651,6 +8729,7 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E2FC3.bin \
   build/us-rev1/data/rw_pool_8043F120_E2FF0_us_rev1.bin \
   build/us-rev1/slices/000E2FF8.bin \
+  build/us-rev1/data/rw_tail_8043F294_E304C_us_rev1.bin \
   build/us-rev1/data/rw_pool_8043F52C_E3058_us_rev1.bin \
   build/us-rev1/slices/000E305C.bin \
   build/us-rev1/data/rw_constants_8043FE3C_E3090_us_rev1.bin \
@@ -8671,6 +8750,7 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E32C4.bin \
   build/us-rev1/data/rw_pool_80442EC0_E32F0_us_rev1.bin \
   build/us-rev1/slices/000E32F8.bin \
+  build/us-rev1/data/rw_tail_80442FB0_E331C_us_rev1.bin \
   build/us-rev1/data/rw_pool_80443128_E3328_us_rev1.bin \
   build/us-rev1/slices/000E332C.bin \
   build/us-rev1/data/rw_constants_80443734_E3374_us_rev1.bin \
@@ -8696,10 +8776,6 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E3424.bin \
   build/us-rev1/data/rw_constants_8040170C_E3448_us_rev1.bin \
   build/us-rev1/slices/000E344C.bin \
-  build/us-rev1/data/rw_formats_804279B8_E466C_us_rev1.bin \
-  build/us-rev1/slices/000E466F.bin \
-  build/us-rev1/data/rw_formats_804279B8_E467C_us_rev1.bin \
-  build/us-rev1/slices/000E467F.bin \
   build/us-rev1/data/ragewars_arena_menu_slots_us_rev1.bin \
   build/us-rev1/data/ragewars_arena_compatibility_us_rev1.bin \
   build/us-rev1/slices/000E5984.bin \
