@@ -37,6 +37,8 @@ struct Shared_Game {
     s32 split;
     u32 unknown674[3];
     s32 humanWon;
+    /* origin/legacy shared/game.h retains the complete 0xCAC-byte game record. */
+    u8 reserved684[0xCAC - 0x684];
 };
 
 
