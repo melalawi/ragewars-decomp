@@ -3549,7 +3549,15 @@ us-rev1.S.000D388C := 866444 468
 us-rev1.D.ragewars_particle_state_depth_us_rev1 := 0x800D2E60:0xD3A60:0x60
 us-rev1.D.ragewars_particle_state_decal_us_rev1 := 0x800D2EC0:0xD3AC0:0x58
 us-rev1.D.ragewars_particle_state_primitive_us_rev1 := 0x800D2F18:0xD3B18:0x60
-us-rev1.S.000D3B78 := 867192 1756
+us-rev1.S.000D3B78 := 867192 600
+us-rev1.D.ragewars_pickup_powerups_us_rev1 := 0x800D31D0:0xD3DD0:0x60
+us-rev1.D.ragewars_pickup_weapons_us_rev1 := 0x800D3230:0xD3E30:0x78
+us-rev1.D.ragewars_pickup_health_us_rev1 := 0x800D32A8:0xD3EA8:0xC0
+us-rev1.D.ragewars_pickup_life_us_rev1 := 0x800D3368:0xD3F68:0x28
+us-rev1.D.ragewars_pickup_special_us_rev1 := 0x800D3390:0xD3F90:0x30
+us-rev1.D.ragewars_pickup_targeted_us_rev1 := 0x800D33C0:0xD3FC0:0x100
+us-rev1.D.ragewars_pickup_ammo_us_rev1 := 0x800D34C0:0xD40C0:0x180
+us-rev1.S.000D4240 := 868928 20
 us-rev1.D.ragewars_menu_strings_D4254_us_rev1 := 0x800D3654:0xD4254:0x14
 us-rev1.S.000D4268 := 868968 40
 us-rev1.D.ragewars_menu_strings_D4290_us_rev1 := 0x800D3690:0xD4290:0x1150
@@ -3580,7 +3588,9 @@ us-rev1.D.ragewars_menu_strings_D6434_us_rev1 := 0x800D5834:0xD6434:0x13A8
 us-rev1.D.ragewars_menu_digit_labels_us_rev1 := 0x800D6BDC:0xD77DC:0x2C
 us-rev1.S.000D7808 := 882696 1068
 us-rev1.D.ragewars_menu_cinema_fade_label_us_rev1 := 0x800D7034:0xD7C34:0x24
-us-rev1.S.000D7C58 := 883800 3912
+us-rev1.S.000D7C58 := 883800 24
+us-rev1.D.ragewars_pickup_label_directory_us_rev1 := 0x800D7070:0xD7C70:0x19C
+us-rev1.S.000D7E0C := 884236 3476
 us-rev1.D.ragewars_tlb_snapshot_us_rev1 := 0x800D7FA0:0xD8BA0:0xF8
 us-rev1.S.000D8C98 := 887960 24
 us-rev1.D.ragewars_audio_effect_D8CB0_us_rev1 := 0x800D80B0:0xD8CB0:0x68
@@ -8595,6 +8605,14 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_particle_state_decal_us_rev1.bin \
   build/us-rev1/data/ragewars_particle_state_primitive_us_rev1.bin \
   build/us-rev1/slices/000D3B78.bin \
+  build/us-rev1/data/ragewars_pickup_powerups_us_rev1.bin \
+  build/us-rev1/data/ragewars_pickup_weapons_us_rev1.bin \
+  build/us-rev1/data/ragewars_pickup_health_us_rev1.bin \
+  build/us-rev1/data/ragewars_pickup_life_us_rev1.bin \
+  build/us-rev1/data/ragewars_pickup_special_us_rev1.bin \
+  build/us-rev1/data/ragewars_pickup_targeted_us_rev1.bin \
+  build/us-rev1/data/ragewars_pickup_ammo_us_rev1.bin \
+  build/us-rev1/slices/000D4240.bin \
   build/us-rev1/data/ragewars_menu_strings_D4254_us_rev1.bin \
   build/us-rev1/slices/000D4268.bin \
   build/us-rev1/data/ragewars_menu_strings_D4290_us_rev1.bin \
@@ -8626,6 +8644,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D7808.bin \
   build/us-rev1/data/ragewars_menu_cinema_fade_label_us_rev1.bin \
   build/us-rev1/slices/000D7C58.bin \
+  build/us-rev1/data/ragewars_pickup_label_directory_us_rev1.bin \
+  build/us-rev1/slices/000D7E0C.bin \
   build/us-rev1/data/ragewars_tlb_snapshot_us_rev1.bin \
   build/us-rev1/slices/000D8C98.bin \
   build/us-rev1/data/ragewars_audio_effect_D8CB0_us_rev1.bin \
