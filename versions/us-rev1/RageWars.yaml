@@ -5725,7 +5725,7 @@ segments:
       - [0x1AD284, asm, "func_8043F284_us_rev1"]
       - [0x1AD290, asm, "func_8043F120_de"]
       - [0x1AD404, c, "func_8043F294_de"]
-      - [0x1AD69C, asm, "func_8043F52C_de"]
+      - [0x1AD69C, c, "func_8043F52C_de"]
       - [0x1ADFAC, c, "func_8043FE3C_de"]
       - [0x1AE44C, c, "func_804402DC_de"]
       - [0x1AE618, c, "func_804404A8_de"]
