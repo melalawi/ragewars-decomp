@@ -1,42 +1,25 @@
-#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80297CD0.h"
 #include "types.h"
 
-extern s32 D_80146E00;
+extern WidgetTable_func_802982C4_de *D_80146E00;
 
-
-
-void func_80299778_de(s32 arg0, s32 arg1, s32 arg2)
+void func_80299778_de(s32 id, s32 mode, MenuElementHandler handler)
 {
-    s32 index;
-    s32 count;
-    Rec_func_8024C92C_de *ptr;
+    s32 index = -1;
+    s32 i;
+    struct MenuHandlerEntry *entry = &D_80146E00->handlers[0];
 
-    index = -1;
-    count = 0;
-    ptr = D_80146E00 + 0x1C;
-loop:
-    if (ptr->x != arg0) {
-        goto not_found;
-    }
-    index = count;
-    goto found;
-not_found:
-    count += 1;
-    ptr += 1;
-    if (count < 0x40) {
-        if (ptr) {
-            goto loop;
-        } else {
-            goto loop;
+    for (i = 0; i < 64; i++, entry++) {
+        if (entry->id == id) {
+            index = i;
+            break;
         }
     }
-found:
-    ptr = &((Rec_func_8024C92C_de *)(D_80146E00 + 0x1C))[index];
-    if (arg1 == 1) {
-        ptr->y = arg2;
-        ptr->z = 0;
+    entry = &D_80146E00->handlers[index];
+    if (mode == 1) {
+        entry->default_handler = handler;
+        entry->override_handler = 0;
         return;
     }
-    ptr->z = arg2;
+    entry->override_handler = handler;
 }

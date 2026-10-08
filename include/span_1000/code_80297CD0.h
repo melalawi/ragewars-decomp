@@ -24,12 +24,19 @@ struct State_func_80297EA4_de;
 /* unbake published declaration: published_09c4de972d2a3db28a77d613 */
 typedef struct State_func_80297EA4_de State_func_80297EA4_de;
 
+typedef s32 (*MenuElementHandler)(void *element, s32 event, s32 arg2, s32 arg3, s32 arg4);
+
 struct Element;
 /* unbake published declaration: published_0a639495095b5bad30ce37a2 */
 struct Element {
     char pad0[0xC];
     s16 id;
     u16 kind;
+    u16 field10;
+    u16 flags;
+    u8 unobserved14[0x3C - 0x14];
+    s32 linked_id;
+    MenuElementHandler handler;
 };
 
 struct Ui_func_80297FA0_de;
@@ -98,15 +105,27 @@ struct State_func_80297EA4_de {
 /* unbake published declaration: published_30a3874416a1bce4b6844b09 */
 extern void func_80298ECC_de();
 
+/* Draw providers use several existing aggregate declarations. Registration
+ * stores these functions; this type does not prescribe a call signature. */
+typedef void (*MenuDrawHandler)();
+
+struct MenuHandlerEntry {
+    s32 id;
+    MenuElementHandler default_handler;
+    MenuElementHandler override_handler;
+    MenuDrawHandler draw_handler;
+    s32 flags;
+};
+
 struct WidgetTable_func_802982C4_de;
 /* unbake published declaration: published_393c16ac7ddf82564194d1c5 */
 struct WidgetTable_func_802982C4_de {
     u8 pad0[0x1C];
-    Rec_func_8024C92C_de handlers[64];
+    struct MenuHandlerEntry handlers[64];
 };
 
 /* unbake published declaration: published_398f496c9387fdef10485897 */
-extern void func_80299778_de(s32 arg0, s32 arg1, s32 arg2);
+extern void func_80299778_de(s32 id, s32 mode, MenuElementHandler handler);
 
 /* unbake published declaration: published_435ee34e56734fa03bad10c6 */
 extern void func_80297FA0_de(s32 screenCount, s32 value);
@@ -117,7 +136,7 @@ extern int D_80146E18;
 struct Entry_func_80298170_de;
 struct Entry_func_80298170_de {
     s32 id;
-    func_8021C9B4_S3 *object;
+    struct Element *object;
     s32 context;
 };
 struct Cache_func_80298170_de;
@@ -276,6 +295,9 @@ struct WidgetTable_func_802982C4_de;
 /* unbake published declaration: published_bb9a7c51ab3c1922326384f8 */
 typedef struct WidgetTable_func_802982C4_de WidgetTable_func_802982C4_de;
 
+extern void func_802982C4_de(s32 id, MenuElementHandler event_handler, MenuDrawHandler draw_handler, s32 flags);
+extern MenuElementHandler func_802997E4_de(s32 kind);
+
 struct Args_func_80298FE8_de;
 /* unbake published declaration: published_bbf98d14358e4a913e02d040 */
 struct Args_func_80298FE8_de {
@@ -394,5 +416,48 @@ typedef struct func_8029A8E0_S1 func_8029A8E0_S1;
 struct func_8029A7E4_S1;
 /* unbake published declaration: published_faf4aa5965bc6bba692ab017 */
 typedef struct func_8029A7E4_S1 func_8029A7E4_S1;
+
+/* Callable low-address aliases of the native code providers. The cartridge
+ * registers these entry addresses, not overlay file ranges or data objects. */
+/* D_002A1B50: func_802A1B50_de */
+extern s32 D_002A1B50(void *, s32, s32, s32, s32);
+/* D_002A1BE0: func_802A1BE0_de */
+extern void D_002A1BE0();
+/* D_0040C5C0: second return stub in func_8040C5B8_de (+8) */
+extern s32 D_0040C5C0(void *, s32, s32, s32, s32);
+/* D_0040C5C8: func_8040C5C8_de */
+extern void D_0040C5C8();
+/* D_004125A4: func_804125A4_de */
+extern s32 D_004125A4(void *, s32, s32, s32, s32);
+/* D_00412634: func_80412634_de */
+extern void D_00412634();
+/* D_00419A4C: func_80419A4C_de */
+extern s32 D_00419A4C(void *, s32, s32, s32, s32);
+/* D_00419ADC: func_80419ADC_de */
+extern void D_00419ADC();
+/* D_00419F9C: func_80419F9C_de */
+extern s32 D_00419F9C(void *, s32, s32, s32, s32);
+/* D_0041A02C: func_8041A02C_de */
+extern void D_0041A02C();
+/* D_0041A490: func_8041A490_de */
+extern s32 D_0041A490(void *, s32, s32, s32, s32);
+/* D_0041A520: func_8041A520_de */
+extern void D_0041A520();
+/* D_0041A724: func_8041A724_de */
+extern s32 D_0041A724(void *, s32, s32, s32, s32);
+/* D_0041A7B4: func_8041A7B4_de */
+extern void D_0041A7B4();
+/* D_0041AD7C: func_8041AD7C_de */
+extern s32 D_0041AD7C(void *, s32, s32, s32, s32);
+/* D_0041AE0C: func_8041AE0C_de */
+extern void D_0041AE0C();
+/* D_0041B340: func_8041B340_de */
+extern s32 D_0041B340(void *, s32, s32, s32, s32);
+/* D_0041B3D0: func_8041B3D0_de */
+extern void D_0041B3D0();
+/* D_0041B970: func_8041B970_de */
+extern s32 D_0041B970(void *, s32, s32, s32, s32);
+/* D_0041BA00: func_8041BA00_de */
+extern void D_0041BA00();
 
 #endif

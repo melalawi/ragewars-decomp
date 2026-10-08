@@ -1,3 +1,4 @@
+#include "span_1000/code_80297CD0.h"
 #include "span_16E000/code_8040C780.h"
 #include "types.h"
 /* Hit-tests a widget tree at point (px, py): unless a hit is already recorded it searches the
@@ -10,7 +11,7 @@
 
 
 
-extern s32 func_802997E4_de(u16 selector);
+
 
 void func_8040E984_de(Widget_func_8040E984_de **hit, Widget_func_8040E984_de *node, DrawArgs_func_8040E67C_de args, s32 px, s32 py) {
     if (*hit != 0) {

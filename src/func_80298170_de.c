@@ -13,19 +13,19 @@ extern s32 func_80299958_de(void);
 extern void *func_80411DCC_de(s32 handle);
 extern struct Tree *func_8040EC30_de(struct Tree *context, u16 id);
 
-func_8021C9B4_S3 *func_80298170_de(s32 id) {
-    func_8021C9B4_S3 *object;
+Element *func_80298170_de(s32 id) {
+    Element *object;
     s32 context;
     s32 i;
 
     context = (s32)func_80411DCC_de(func_80299958_de());
     for (i = 0; i < ((Cache_func_80298170_de *)D_80146E00)->count; i++) {
         if (((Cache_func_80298170_de *)D_80146E00)->entries[i].context == context && ((Cache_func_80298170_de *)D_80146E00)->entries[i].id == id
-            && ((Cache_func_80298170_de *)D_80146E00)->entries[i].object != 0 && ((Cache_func_80298170_de *)D_80146E00)->entries[i].object->unkC == id) {
+            && ((Cache_func_80298170_de *)D_80146E00)->entries[i].object != 0 && ((Cache_func_80298170_de *)D_80146E00)->entries[i].object->id == id) {
             return ((Cache_func_80298170_de *)D_80146E00)->entries[i].object;
         }
     }
-    object = (func_8021C9B4_S3 *)func_8040EC30_de((struct Tree *)context, id & 0xFFFF);
+    object = (Element *)func_8040EC30_de((struct Tree *)context, id & 0xFFFF);
     D_80146E20++;
     if (D_80146E1C < D_80146E20) {
         D_80146E1C = D_80146E20;

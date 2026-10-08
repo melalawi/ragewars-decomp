@@ -1,27 +1,24 @@
-#include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80297CD0.h"
-/* Looks up an id among the 64 twenty-byte entries at 0x1C of the table D_8014D080 and returns the
-   entry's override value when set, otherwise its default value, or 0 when the id is absent. */
+#include "types.h"
 
+extern WidgetTable_func_802982C4_de *D_80146E00;
 
+/* The twenty-byte table owns callable values at +4 and +8. The override
+ * takes precedence; an absent identifier yields no handler. */
+MenuElementHandler func_802997E4_de(s32 id)
+{
+    s32 i;
+    s32 *key;
+    struct MenuHandlerEntry *entry;
 
-
-
-extern func_8029A7E4_S1 *D_80146E00;
-
-int func_802997E4_de(int id) {
-    int i;
-    int *key;
-    Rec_func_8024C92C_de *entry;
-
-    key = &D_80146E00->unk1C;
-    entry = &D_80146E00->unk20;
+    key = &D_80146E00->handlers[0].id;
+    entry = &D_80146E00->handlers[0];
     for (i = 0; i < 64; i++) {
         if (*key == id) {
-            if (entry->y != 0) {
-                return entry->y;
+            if (entry->override_handler != 0) {
+                return entry->override_handler;
             }
-            return entry->x;
+            return entry->default_handler;
         }
         entry++;
         key += 5;

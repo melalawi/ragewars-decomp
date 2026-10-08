@@ -18,10 +18,6 @@ extern s32 D_80146E04;
 extern s32 D_80146E14;
 
 
-extern char D_0040C5C0;
-extern char D_0040C5C8;
-extern char D_004125A4;
-extern char D_00412634;
 extern void func_802A1918_de(s32 *width, s32 *height);
 
 
@@ -29,7 +25,6 @@ extern void func_802A1918_de(s32 *width, s32 *height);
 extern void *func_8025305C_de(s32 size);
 extern void func_802A0748_de(void *buffer, s32 value, s32 size);
 extern f64 func_802A18CC_de(void);
-extern void func_802982C4_de(s32 font, void *start, void *end, s32 arg3);
 
 void func_80297FA0_de(s32 screenCount, s32 value) {
     s32 i;
@@ -69,6 +64,6 @@ void func_80297FA0_de(s32 screenCount, s32 value) {
     D_80146E00->field534 = 0;
     D_80146E00->field538 = 0;
     D_80146E00->paging = 1;
-    func_802982C4_de(9, &D_0040C5C0, &D_0040C5C8, 1);
-    func_802982C4_de(11, &D_004125A4, &D_00412634, 1);
+    func_802982C4_de(9, D_0040C5C0, D_0040C5C8, 1);
+    func_802982C4_de(11, D_004125A4, D_00412634, 1);
 }
