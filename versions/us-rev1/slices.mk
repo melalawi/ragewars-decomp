@@ -2375,7 +2375,9 @@ us-rev1.S.000CAE90 := 831120 832
 us-rev1.D.ragewars_resident_strings_CB1D0_us_rev1 := 0x800CA5D0:0xCB1D0:0x10
 us-rev1.S.000CB1E0 := 831968 64
 us-rev1.D.ragewars_resident_strings_CB220_us_rev1 := 0x800CA620:0xCB220:0x14
-us-rev1.S.000CB234 := 832052 3868
+us-rev1.S.000CB234 := 832052 668
+us-rev1.D.ragewars_pow_constants_us_rev1 := 0x800CA8D0:0xCB4D0:0x108
+us-rev1.S.000CB5D8 := 832984 2936
 us-rev1.D.ragewars_resident_strings_CC150_us_rev1 := 0x800CB550:0xCC150:0x10
 us-rev1.S.000CC160 := 835936 4
 us-rev1.D.ragewars_resident_strings_CC164_us_rev1 := 0x800CB564:0xCC164:0x4E8
@@ -5998,6 +6000,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CB1E0.bin \
   build/us-rev1/data/ragewars_resident_strings_CB220_us_rev1.bin \
   build/us-rev1/slices/000CB234.bin \
+  build/us-rev1/data/ragewars_pow_constants_us_rev1.bin \
+  build/us-rev1/slices/000CB5D8.bin \
   build/us-rev1/data/ragewars_resident_strings_CC150_us_rev1.bin \
   build/us-rev1/slices/000CC160.bin \
   build/us-rev1/data/ragewars_resident_strings_CC164_us_rev1.bin \

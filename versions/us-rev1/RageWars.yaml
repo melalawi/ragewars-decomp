@@ -3555,7 +3555,7 @@ segments:
       - [0xCB444, data, "rodata/unresolved/800CA844"]
       - [0xCB450, rodata, "rodata/func_8029ABA0_de/800CA850"]
       - [0xCB468, rodata, "rodata/func_8029AD38_de/800CA868"]
-      - [0xCB4D0, rodata, "rodata/func_8029AEA4_de/800CA8D0"]
+      - [0xCB4D0, rodata, "src/ragewars_pow_constants_us_rev1.c"]
       - [0xCB5D8, rodata, "rodata/func_8029B278_de/800CA9D8"]
       - [0xCB608, rodata, "rodata/func_8029B3C0_de/800CAA08"]
       - [0xCB618, rodata, "rodata/func_8029B54C_de/800CAA18"]
