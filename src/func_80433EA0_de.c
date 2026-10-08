@@ -45,6 +45,10 @@ enum { PAK_RESOURCE_2D7 = 753, PAK_RESOURCE_2D8 = 751, PAK_RESOURCE_2DB = 754, P
 enum { PAK_RESOURCE_2D7 = 727, PAK_RESOURCE_2D8 = 728, PAK_RESOURCE_2DB = 731, PAK_RESOURCE_2DC = 732, PAK_RESOURCE_2DD = 733 };
 #endif
 
+#if !defined(VERSION_EU) && !defined(VERSION_EU_X)
+static const char controller_pak_note_label_format[] = "%d.%s.%s";
+#endif
+
 void func_80433EA0_de(s32 player)
 {
     char name[0x18];
@@ -96,7 +100,7 @@ D_800DDEB0_de,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 D_800EE534,
 #else
-"%d.%s.%s",
+controller_pak_note_label_format,
 #endif
  i + 1,
                                   D_800E1454_de->slots[player].notes[i].name, ext);
