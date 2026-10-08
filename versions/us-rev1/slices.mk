@@ -3504,7 +3504,9 @@ us-rev1.D.rw_pool_80245D30_D1270_us_rev1 := 0x800D0670:0xD1270:0x8
 us-rev1.S.000D1278 := 856696 72
 us-rev1.D.ragewars_blast_falloff_us_rev1 := 0x800D06C0:0xD12C0:0x64
 us-rev1.D.ragewars_model_sway_samples_us_rev1 := 0x800D0724:0xD1324:0x1E0
-us-rev1.S.000D1504 := 857348 548
+us-rev1.S.000D1504 := 857348 96
+us-rev1.D.ragewars_audio_effect_D1564_us_rev1 := 0x800D0964:0xD1564:0xC8
+us-rev1.S.000D162C := 857644 252
 us-rev1.D.rw_pool_8025AA2C_D1728_us_rev1 := 0x800D0B28:0xD1728:0x4
 us-rev1.S.000D172C := 857900 628
 us-rev1.D.rw_pool_8025F434_D19A0_us_rev1 := 0x800D0DA0:0xD19A0:0x4
@@ -8532,6 +8534,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_blast_falloff_us_rev1.bin \
   build/us-rev1/data/ragewars_model_sway_samples_us_rev1.bin \
   build/us-rev1/slices/000D1504.bin \
+  build/us-rev1/data/ragewars_audio_effect_D1564_us_rev1.bin \
+  build/us-rev1/slices/000D162C.bin \
   build/us-rev1/data/rw_pool_8025AA2C_D1728_us_rev1.bin \
   build/us-rev1/slices/000D172C.bin \
   build/us-rev1/data/rw_pool_8025F434_D19A0_us_rev1.bin \
