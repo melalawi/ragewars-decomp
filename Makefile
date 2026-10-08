@@ -156,7 +156,8 @@ HASM_BIN = printf '%s\n' '$(VER) $(*F)'; \
   $(N64LINK) place $(@D)/$(*F).o -o $(@D)/$(*F).placed.o --rom $($(VER).BASEROM) --text $($(VER).U.$(*F)) \
   $(addprefix --map ,$($(VER).MAP)) --symbols versions/$(VER)/symbols.ld --trim && \
   $(LINK_BIN)
-DATA_BIN = read key < $< && \
+DATA_BIN = $(if $($(VER).D.$(*F).SECTION),$(MIXED_DATA_BIN),$(PLAIN_DATA_BIN))
+PLAIN_DATA_BIN = read key < $< && \
   cp build/cas/$$key.o $(@D)/$(*F).o && \
   $(OBJCOPY) --set-section-flags .rdata=alloc,load,readonly,data,contents \
     --set-section-flags .rodata=alloc,load,readonly,data,contents \
@@ -167,6 +168,17 @@ DATA_BIN = read key < $< && \
     -o $(@D)/$(*F).elf $(@D)/$(*F).o && \
   $(OBJCOPY) -O binary --only-section=.data $(@D)/$(*F).elf $@ && \
   [ "$$(wc -c < $@)" -eq $$(( $(word 3,$(subst :, ,$($(VER).D.$(*F)))) )) ]
+MIXED_TOOL = PYTHONPATH=tools/report-verifier.zip python3 -m unbake.objects.mixed
+MIXED_ARGS = --section $($(VER).D.$(*F).SECTION) --offset $($(VER).D.$(*F).OFFSET) \
+  --size $(word 3,$(subst :, ,$($(VER).D.$(*F)))) --bias $($(VER).D.$(*F).BIAS) \
+  --function $(*F) --text $(firstword $(subst :, ,$($(VER).U.$(*F))))
+MIXED_DATA_BIN = read key < build/$(VER)/src/$(*F).key && \
+  $(MIXED_TOOL) prepare --original build/cas/$$key.o --placed build/$(VER)/units/$(*F).placed.o \
+    --output $(@D)/$(*F).o $(MIXED_ARGS) && \
+  $(OBJCOPY) --set-section-flags $($(VER).D.$(*F).SECTION)=alloc,load,readonly,data,contents $(@D)/$(*F).o && \
+  $(LD) -EB -T versions/$(VER)/data/$(*F).ld -o $(@D)/$(*F).elf $(@D)/$(*F).o && \
+  $(MIXED_TOOL) extract --original build/cas/$$key.o --final $(@D)/$(*F).elf \
+    --code build/$(VER)/units/$(*F).bin --output $@ $(MIXED_ARGS)
 RESOURCE_NAME = $(basename $(notdir $@))
 RESOURCE_BIN = $(AS) $($(VER).R.$(RESOURCE_NAME).ASFLAGS) -o $(@D)/$(RESOURCE_NAME).o $< && \
   $(LD) -EB -T versions/$(VER)/resources/$(RESOURCE_NAME).ld \
