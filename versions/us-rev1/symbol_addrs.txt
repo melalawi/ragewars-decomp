@@ -10746,3 +10746,5 @@ ragewars_menu_strings_D5428_us_rev1 = 0x800d4828; // Actual source-owned label g
 
 // Proven O32 unsigned quotient; runtime-quotient-contract ROM SHA c8aca0aa3be85d28c2c5da32d5c79b92c9ef31de34bec362f9750e511e536630.
 // unbake linker alias: __udivdi3 = 0x802C5E90;
+
+ragewars_menu_strings_D5FC0_us_rev1 = 0x800d53c0; // Actual source-owned pak note labels; linked native ELF
