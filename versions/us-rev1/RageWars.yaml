@@ -4531,6 +4531,7 @@ segments:
       - [0xE3128, rodata, "src/rw_pool_8044222C_E3128_us_rev1.c"]
       - [0xE312C, data, "rodata/unresolved/800E252C"]
       - [0xE3130, rodata, "rodata/func_8044222C_de/800E2530"]
+      - [0xE32A8, rodata, "src/rw_pool_cells_8044222C_E32A8_us_rev1.c"]
       - [0xE32BC, rodata, "src/rw_constants_80442BA8_E32BC_us_rev1.c"]
       - [0xE32C4, data, "rodata/unresolved/800E26C4"]
       - [0xE32C8, rodata, "rodata/func_80442EC0_de/800E26C8"]
