@@ -3616,7 +3616,8 @@ us-rev1.D.ragewars_menu_strings_D639C_us_rev1 := 0x800D579C:0xD639C:0x94
 us-rev1.S.000D6430 := 877616 4
 us-rev1.D.ragewars_menu_strings_D6434_us_rev1 := 0x800D5834:0xD6434:0x13A8
 us-rev1.D.ragewars_menu_digit_labels_us_rev1 := 0x800D6BDC:0xD77DC:0x2C
-us-rev1.S.000D7808 := 882696 1068
+us-rev1.D.ragewars_credits_lines_us_rev1 := 0x800D6C08:0xD7808:0x420
+us-rev1.S.000D7C28 := 883752 12
 us-rev1.D.ragewars_menu_cinema_fade_label_us_rev1 := 0x800D7034:0xD7C34:0x24
 us-rev1.S.000D7C58 := 883800 24
 us-rev1.D.ragewars_pickup_label_directory_us_rev1 := 0x800D7070:0xD7C70:0x19C
@@ -8728,7 +8729,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D6430.bin \
   build/us-rev1/data/ragewars_menu_strings_D6434_us_rev1.bin \
   build/us-rev1/data/ragewars_menu_digit_labels_us_rev1.bin \
-  build/us-rev1/slices/000D7808.bin \
+  build/us-rev1/data/ragewars_credits_lines_us_rev1.bin \
+  build/us-rev1/slices/000D7C28.bin \
   build/us-rev1/data/ragewars_menu_cinema_fade_label_us_rev1.bin \
   build/us-rev1/slices/000D7C58.bin \
   build/us-rev1/data/ragewars_pickup_label_directory_us_rev1.bin \
