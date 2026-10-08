@@ -3821,7 +3821,17 @@ us-rev1.D.rw_pool_80445964_E3410_us_rev1 := 0x800E2810:0xE3410:0x4
 us-rev1.D.rw_pool_80445BC0_E3414_us_rev1 := 0x800E2814:0xE3414:0x10
 us-rev1.S.000E3424 := 930852 36
 us-rev1.D.rw_constants_8040170C_E3448_us_rev1 := 0x800E2848:0xE3448:0x4
-us-rev1.S.000E344C := 930892 7752
+us-rev1.S.000E344C := 930892 644
+us-rev1.D.ragewars_event_handlers_E36D0_us_rev1 := 0x800E2AD0:0xE36D0:0x48
+us-rev1.S.000E3718 := 931608 2024
+us-rev1.D.ragewars_event_handlers_E3F00_us_rev1 := 0x800E3300:0xE3F00:0x24
+us-rev1.S.000E3F24 := 933668 108
+us-rev1.D.ragewars_event_handlers_E3F90_us_rev1 := 0x800E3390:0xE3F90:0x6C
+us-rev1.S.000E3FFC := 933884 4
+us-rev1.D.ragewars_event_handlers_E4000_us_rev1 := 0x800E3400:0xE4000:0x54
+us-rev1.S.000E4054 := 933972 12
+us-rev1.D.ragewars_event_handlers_E4060_us_rev1 := 0x800E3460:0xE4060:0x3C
+us-rev1.S.000E409C := 934044 4600
 us-rev1.D.ragewars_arena_menu_slots_us_rev1 := 0x800E4694:0xE5294:0x3F0
 us-rev1.D.ragewars_arena_compatibility_us_rev1 := 0x800E4A84:0xE5684:0x300
 us-rev1.S.000E5984 := 940420 3908
@@ -8800,6 +8810,16 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E3424.bin \
   build/us-rev1/data/rw_constants_8040170C_E3448_us_rev1.bin \
   build/us-rev1/slices/000E344C.bin \
+  build/us-rev1/data/ragewars_event_handlers_E36D0_us_rev1.bin \
+  build/us-rev1/slices/000E3718.bin \
+  build/us-rev1/data/ragewars_event_handlers_E3F00_us_rev1.bin \
+  build/us-rev1/slices/000E3F24.bin \
+  build/us-rev1/data/ragewars_event_handlers_E3F90_us_rev1.bin \
+  build/us-rev1/slices/000E3FFC.bin \
+  build/us-rev1/data/ragewars_event_handlers_E4000_us_rev1.bin \
+  build/us-rev1/slices/000E4054.bin \
+  build/us-rev1/data/ragewars_event_handlers_E4060_us_rev1.bin \
+  build/us-rev1/slices/000E409C.bin \
   build/us-rev1/data/ragewars_arena_menu_slots_us_rev1.bin \
   build/us-rev1/data/ragewars_arena_compatibility_us_rev1.bin \
   build/us-rev1/slices/000E5984.bin \
