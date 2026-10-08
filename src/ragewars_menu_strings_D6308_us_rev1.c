@@ -1,4 +1,3 @@
-#if defined(VERSION_US_REV1)
 /* Resident player, weapon, pickup and menu labels. String slots include
  * their NUL terminator and original word alignment padding. */
 struct MenuStrings_D6308 {
@@ -16,4 +15,3 @@ const struct MenuStrings_D6308 ragewars_menu_strings_D6308_us_rev1 = {
     "go back"
 };
 typedef char menu_strings_size_D6308[(sizeof(struct MenuStrings_D6308) == 40) ? 1 : -1];
-#endif

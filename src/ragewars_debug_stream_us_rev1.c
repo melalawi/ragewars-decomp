@@ -1,6 +1,5 @@
 #include "psyq_debug_records.h"
 
-#if defined(VERSION_US_REV1)
 /* Resident SN/PsyQ debug stream: COFF definitions, function frames,
  * block boundaries and source-line deltas. Values are serialized debugger
  * offsets/enum values, not native runtime pointer objects.
@@ -29885,4 +29884,3 @@ const struct RageWarsDebugStream ragewars_debug_stream_us_rev1 = {
     }
 };
 typedef char debug_stream_extent_size[(sizeof(struct RageWarsDebugStream) == 63470) ? 1 : -1];
-#endif
