@@ -10734,3 +10734,4 @@ ragewars_credits_label_producer_us_rev1 = 0x800cbc98; // Actual source-owned DAT
 ragewars_resident_strings_CC658_us_rev1 = 0x800cba58; // Actual source-owned DATA global; linked ELF at ROM0xcc658
 ragewars_credits_label_technicians_us_rev1 = 0x800cba4c; // Actual source-owned DATA global; linked ELF at ROM0xcc64c
 ragewars_resident_strings_CC164_us_rev1 = 0x800cb564; // Actual source-owned DATA global; linked ELF at ROM0xcc164
+ragewars_credits_lines_us_rev1 = 0x800D6C08; // Actual source-owned credits directory; linked native ELF at ROM0xD7808
