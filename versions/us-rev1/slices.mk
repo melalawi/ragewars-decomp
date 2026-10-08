@@ -3510,7 +3510,13 @@ us-rev1.D.ragewars_menu_strings_D6434_us_rev1 := 0x800D5834:0xD6434:0x13A8
 us-rev1.D.ragewars_menu_digit_labels_us_rev1 := 0x800D6BDC:0xD77DC:0x2C
 us-rev1.S.000D7808 := 882696 1068
 us-rev1.D.ragewars_menu_cinema_fade_label_us_rev1 := 0x800D7034:0xD7C34:0x24
-us-rev1.S.000D7C58 := 883800 4584
+us-rev1.S.000D7C58 := 883800 4184
+us-rev1.D.ragewars_audio_effect_D8CB0_us_rev1 := 0x800D80B0:0xD8CB0:0x68
+us-rev1.D.ragewars_audio_effect_D8D18_us_rev1 := 0x800D8118:0xD8D18:0x88
+us-rev1.D.ragewars_audio_effect_D8DA0_us_rev1 := 0x800D81A0:0xD8DA0:0x28
+us-rev1.D.ragewars_audio_effect_D8DC8_us_rev1 := 0x800D81C8:0xD8DC8:0x28
+us-rev1.D.ragewars_audio_effect_D8DF0_us_rev1 := 0x800D81F0:0xD8DF0:0x28
+us-rev1.D.ragewars_audio_effect_D8E18_us_rev1 := 0x800D8218:0xD8E18:0x28
 us-rev1.D.ragewars_audio_equal_power_us_rev1 := 0x800D8240:0xD8E40:0x100
 us-rev1.S.000D8F40 := 888640 160
 us-rev1.D.ragewars_vi_contexts_us_rev1 := 0x800D83E0:0xD8FE0:0x60
@@ -8437,6 +8443,12 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D7808.bin \
   build/us-rev1/data/ragewars_menu_cinema_fade_label_us_rev1.bin \
   build/us-rev1/slices/000D7C58.bin \
+  build/us-rev1/data/ragewars_audio_effect_D8CB0_us_rev1.bin \
+  build/us-rev1/data/ragewars_audio_effect_D8D18_us_rev1.bin \
+  build/us-rev1/data/ragewars_audio_effect_D8DA0_us_rev1.bin \
+  build/us-rev1/data/ragewars_audio_effect_D8DC8_us_rev1.bin \
+  build/us-rev1/data/ragewars_audio_effect_D8DF0_us_rev1.bin \
+  build/us-rev1/data/ragewars_audio_effect_D8E18_us_rev1.bin \
   build/us-rev1/data/ragewars_audio_equal_power_us_rev1.bin \
   build/us-rev1/slices/000D8F40.bin \
   build/us-rev1/data/ragewars_vi_contexts_us_rev1.bin \
