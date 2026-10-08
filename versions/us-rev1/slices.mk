@@ -3607,16 +3607,25 @@ us-rev1.D.ragewars_audio_effect_D8DC8_us_rev1 := 0x800D81C8:0xD8DC8:0x28
 us-rev1.D.ragewars_audio_effect_D8DF0_us_rev1 := 0x800D81F0:0xD8DF0:0x28
 us-rev1.D.ragewars_audio_effect_D8E18_us_rev1 := 0x800D8218:0xD8E18:0x28
 us-rev1.D.ragewars_audio_equal_power_us_rev1 := 0x800D8240:0xD8E40:0x100
-us-rev1.S.000D8F40 := 888640 160
+us-rev1.S.000D8F40 := 888640 48
+us-rev1.D.ragewars_controller_initialization_us_rev1 := 0x800D8370:0xD8F70:0x4
+us-rev1.S.000D8F74 := 888692 28
+us-rev1.D.ragewars_pi_manager_and_handles_us_rev1 := 0x800D8390:0xD8F90:0x20
+us-rev1.S.000D8FB0 := 888752 48
 us-rev1.D.ragewars_vi_contexts_us_rev1 := 0x800D83E0:0xD8FE0:0x60
 us-rev1.D.ragewars_vi_context_selectors_us_rev1 := 0x800D8440:0xD9040:0x8
 us-rev1.S.000D9048 := 888904 8
 us-rev1.D.ragewars_vi_manager_us_rev1 := 0x800D8450:0xD9050:0x1C
 us-rev1.S.000D906C := 888940 4
 us-rev1.D.ragewars_vi_modes_us_rev1 := 0x800D8470:0xD9070:0xE10
-us-rev1.S.000D9E80 := 892544 16
+us-rev1.S.000D9E80 := 892544 8
+us-rev1.D.ragewars_scheduler_interrupt_mask_us_rev1 := 0x800D9288:0xD9E88:0x4
+us-rev1.S.000D9E8C := 892556 4
 us-rev1.D.ragewars_scheduler_queue_seed_us_rev1 := 0x800D9290:0xD9E90:0x10
-us-rev1.S.000D9EA0 := 892576 64
+us-rev1.D.ragewars_scheduler_current_threads_us_rev1 := 0x800D92A0:0xD9EA0:0x8
+us-rev1.S.000D9EA8 := 892584 8
+us-rev1.D.ragewars_scheduler_exception_queue_us_rev1 := 0x800D92B0:0xD9EB0:0x4
+us-rev1.S.000D9EB4 := 892596 44
 us-rev1.D.rw_text_802BD430_D9EE0_us_rev1 := 0x800D92E0:0xD9EE0:0x21
 us-rev1.S.000D9F01 := 892673 3
 us-rev1.D.rw_text_802BD430_D9F04_us_rev1 := 0x800D9304:0xD9F04:0x21
@@ -3624,7 +3633,9 @@ us-rev1.S.000D9F25 := 892709 11
 us-rev1.D.rw_text_802BDDE0_D9F30_us_rev1 := 0x800D9330:0xD9F30:0x11
 us-rev1.S.000D9F41 := 892737 3
 us-rev1.D.rw_text_802BDDE0_D9F44_us_rev1 := 0x800D9344:0xD9F44:0x11
-us-rev1.S.000D9F55 := 892757 43
+us-rev1.S.000D9F55 := 892757 27
+us-rev1.D.ragewars_transform_workspaces_us_rev1 := 0x800D9370:0xD9F70:0xC
+us-rev1.S.000D9F7C := 892796 4
 us-rev1.D.ragewars_decoder_bit_masks_us_rev1 := 0x800D9380:0xD9F80:0x22
 us-rev1.S.000D9FA2 := 892834 2
 us-rev1.D.ragewars_decoder_sign_bits_us_rev1 := 0x800D93A4:0xD9FA4:0x22
@@ -8672,6 +8683,10 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_audio_effect_D8E18_us_rev1.bin \
   build/us-rev1/data/ragewars_audio_equal_power_us_rev1.bin \
   build/us-rev1/slices/000D8F40.bin \
+  build/us-rev1/data/ragewars_controller_initialization_us_rev1.bin \
+  build/us-rev1/slices/000D8F74.bin \
+  build/us-rev1/data/ragewars_pi_manager_and_handles_us_rev1.bin \
+  build/us-rev1/slices/000D8FB0.bin \
   build/us-rev1/data/ragewars_vi_contexts_us_rev1.bin \
   build/us-rev1/data/ragewars_vi_context_selectors_us_rev1.bin \
   build/us-rev1/slices/000D9048.bin \
@@ -8679,8 +8694,13 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D906C.bin \
   build/us-rev1/data/ragewars_vi_modes_us_rev1.bin \
   build/us-rev1/slices/000D9E80.bin \
+  build/us-rev1/data/ragewars_scheduler_interrupt_mask_us_rev1.bin \
+  build/us-rev1/slices/000D9E8C.bin \
   build/us-rev1/data/ragewars_scheduler_queue_seed_us_rev1.bin \
-  build/us-rev1/slices/000D9EA0.bin \
+  build/us-rev1/data/ragewars_scheduler_current_threads_us_rev1.bin \
+  build/us-rev1/slices/000D9EA8.bin \
+  build/us-rev1/data/ragewars_scheduler_exception_queue_us_rev1.bin \
+  build/us-rev1/slices/000D9EB4.bin \
   build/us-rev1/data/rw_text_802BD430_D9EE0_us_rev1.bin \
   build/us-rev1/slices/000D9F01.bin \
   build/us-rev1/data/rw_text_802BD430_D9F04_us_rev1.bin \
@@ -8689,6 +8709,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D9F41.bin \
   build/us-rev1/data/rw_text_802BDDE0_D9F44_us_rev1.bin \
   build/us-rev1/slices/000D9F55.bin \
+  build/us-rev1/data/ragewars_transform_workspaces_us_rev1.bin \
+  build/us-rev1/slices/000D9F7C.bin \
   build/us-rev1/data/ragewars_decoder_bit_masks_us_rev1.bin \
   build/us-rev1/slices/000D9FA2.bin \
   build/us-rev1/data/ragewars_decoder_sign_bits_us_rev1.bin \
