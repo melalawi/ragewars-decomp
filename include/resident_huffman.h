@@ -27,4 +27,14 @@ typedef struct ResidentHuffmanZeroRun {
     int sentinel0;
     int sentinel1;
 } ResidentHuffmanZeroRun;
+/* The pointed-to 36-byte dictionaries are imported from the preceding
+ * resident extent. No definition of that separately owned storage is here. */
+typedef struct ResidentHuffmanDictionary ResidentHuffmanDictionary;
+typedef struct ResidentHuffmanBlockRange {
+    int enabled;
+    int first_sample;
+    int sample_count;
+    int bit_cursor;
+    const ResidentHuffmanDictionary *dictionary;
+} ResidentHuffmanBlockRange;
 #endif

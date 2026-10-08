@@ -10441,3 +10441,9 @@ D_800E27D0 = 0x800E27D0;
 D_8011FEF4 = 0x8011FEF4;
 func_802C6970_us_rev1 = 0x802C6970;
 func_80439F10_us_rev1 = 0x80439F10;
+
+// Imported resident Huffman dictionaries referenced by owned block ranges.
+huffman_signed7_single_dictionary = 0x800D9500;
+huffman_signed7_five_dictionary = 0x800D9524;
+huffman_signed7_nine_dictionary = 0x800D9548;
+huffman_signed6_dictionary = 0x800D956C;
