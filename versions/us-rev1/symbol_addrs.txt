@@ -10852,3 +10852,5 @@ func_8043C9AC_de = 0x8043CB8C; // type:func
 ragewars_menu_strings_D5EF4_us_rev1 = 0x800d52f4;
 
 ragewars_menu_strings_D5F74_us_rev1 = 0x800d5374;
+
+ragewars_pak_ok_label_us_rev1 = 0x800d551c;

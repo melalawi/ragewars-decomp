@@ -11620,6 +11620,7 @@ PROVIDE(ragewars_menu_strings_D5F74_us_rev1 = 0x800D5374);
 PROVIDE(ragewars_menu_strings_D5FC0_us_rev1 = 0x800D53C0);
 PROVIDE(ragewars_menu_strings_D639C_us_rev1 = 0x800D579C);
 PROVIDE(ragewars_menu_strings_D6434_us_rev1 = 0x800D5834);
+PROVIDE(ragewars_pak_ok_label_us_rev1 = 0x800D551C);
 PROVIDE(ragewars_resident_strings_CC164_us_rev1 = 0x800CB564);
 PROVIDE(ragewars_resident_strings_CC658_us_rev1 = 0x800CBA58);
 PROVIDE(ragewars_resident_strings_CC8A4_us_rev1 = 0x800CBCA4);
