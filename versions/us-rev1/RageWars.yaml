@@ -1117,7 +1117,7 @@ segments:
       - [0x55F54, c, "func_802553B4_de"]
       - [0x56028, c, "func_80255488_de"]
       - [0x560E0, c, "func_80255540_de"]
-      - [0x5612C, asm, "func_8025558C_de"]
+      - [0x5612C, c, "func_8025558C_de"]
       - [0x561C8, asm, "func_802555C8_us_rev1"]
       - [0x561D0, c, "func_80255630_de"]
       - [0x56320, c, "func_80255780_de"]
