@@ -3609,7 +3609,9 @@ us-rev1.S.000D9048 := 888904 8
 us-rev1.D.ragewars_vi_manager_us_rev1 := 0x800D8450:0xD9050:0x1C
 us-rev1.S.000D906C := 888940 4
 us-rev1.D.ragewars_vi_modes_us_rev1 := 0x800D8470:0xD9070:0xE10
-us-rev1.S.000D9E80 := 892544 96
+us-rev1.S.000D9E80 := 892544 16
+us-rev1.D.ragewars_scheduler_queue_seed_us_rev1 := 0x800D9290:0xD9E90:0x10
+us-rev1.S.000D9EA0 := 892576 64
 us-rev1.D.rw_text_802BD430_D9EE0_us_rev1 := 0x800D92E0:0xD9EE0:0x21
 us-rev1.S.000D9F01 := 892673 3
 us-rev1.D.rw_text_802BD430_D9F04_us_rev1 := 0x800D9304:0xD9F04:0x21
@@ -8667,6 +8669,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D906C.bin \
   build/us-rev1/data/ragewars_vi_modes_us_rev1.bin \
   build/us-rev1/slices/000D9E80.bin \
+  build/us-rev1/data/ragewars_scheduler_queue_seed_us_rev1.bin \
+  build/us-rev1/slices/000D9EA0.bin \
   build/us-rev1/data/rw_text_802BD430_D9EE0_us_rev1.bin \
   build/us-rev1/slices/000D9F01.bin \
   build/us-rev1/data/rw_text_802BD430_D9F04_us_rev1.bin \
