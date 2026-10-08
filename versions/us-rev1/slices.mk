@@ -3517,7 +3517,9 @@ us-rev1.D.ragewars_texture_rgba16_mip_clamp_us_rev1 := 0x800D1020:0xD1C20:0x80
 us-rev1.D.ragewars_texture_rgba16_detail_us_rev1 := 0x800D10A0:0xD1CA0:0x98
 us-rev1.D.ragewars_texture_rgba16_sharpen_us_rev1 := 0x800D1138:0xD1D38:0x98
 us-rev1.D.ragewars_texture_intensity_mip_us_rev1 := 0x800D11D0:0xD1DD0:0x98
-us-rev1.S.000D1E68 := 859752 952
+us-rev1.S.000D1E68 := 859752 584
+us-rev1.D.ragewars_particle_intensity_texture_us_rev1 := 0x800D14B0:0xD20B0:0x100
+us-rev1.S.000D21B0 := 860592 112
 us-rev1.D.ragewars_arccos_table_us_rev1 := 0x800D1620:0xD2220:0x1008
 us-rev1.D.rw_pool_802745D0_D3228_us_rev1 := 0x800D2628:0xD3228:0x4
 us-rev1.S.000D322C := 864812 28
@@ -8547,6 +8549,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_texture_rgba16_sharpen_us_rev1.bin \
   build/us-rev1/data/ragewars_texture_intensity_mip_us_rev1.bin \
   build/us-rev1/slices/000D1E68.bin \
+  build/us-rev1/data/ragewars_particle_intensity_texture_us_rev1.bin \
+  build/us-rev1/slices/000D21B0.bin \
   build/us-rev1/data/ragewars_arccos_table_us_rev1.bin \
   build/us-rev1/data/rw_pool_802745D0_D3228_us_rev1.bin \
   build/us-rev1/slices/000D322C.bin \
