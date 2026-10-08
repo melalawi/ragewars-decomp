@@ -3611,7 +3611,8 @@ us-rev1.S.000D5EFC := 876284 120
 us-rev1.D.ragewars_menu_strings_D5F74_us_rev1 := 0x800D5374:0xD5F74:0xC
 us-rev1.S.000D5F80 := 876416 64
 us-rev1.D.ragewars_menu_strings_D5FC0_us_rev1 := 0x800D53C0:0xD5FC0:0x15C
-us-rev1.S.000D611C := 876828 492
+us-rev1.D.ragewars_pak_ok_label_us_rev1 := 0x800D551C:0xD611C:0x3
+us-rev1.S.000D611F := 876831 489
 us-rev1.D.ragewars_menu_strings_D6308_us_rev1 := 0x800D5708:0xD6308:0x28
 us-rev1.S.000D6330 := 877360 40
 us-rev1.D.ragewars_menu_strings_D6358_us_rev1 := 0x800D5758:0xD6358:0x38
@@ -8775,7 +8776,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_menu_strings_D5F74_us_rev1.bin \
   build/us-rev1/slices/000D5F80.bin \
   build/us-rev1/data/ragewars_menu_strings_D5FC0_us_rev1.bin \
-  build/us-rev1/slices/000D611C.bin \
+  build/us-rev1/data/ragewars_pak_ok_label_us_rev1.bin \
+  build/us-rev1/slices/000D611F.bin \
   build/us-rev1/data/ragewars_menu_strings_D6308_us_rev1.bin \
   build/us-rev1/slices/000D6330.bin \
   build/us-rev1/data/ragewars_menu_strings_D6358_us_rev1.bin \
