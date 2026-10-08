@@ -14,4 +14,17 @@ enum ResidentHuffmanSymbol {
     HUFFMAN_END_BLOCK = 0x0B00
 };
 #define HUFFMAN_ZERO_RUN(index) (HUFFMAN_ZERO_RUN_BASE + (index))
+/* Zero-run templates selected by control symbols 0x0A00 + index.
+ * The decoder reads decoded_count at 0x1A0 and signed values at
+ * 0xA2 + 4*i. Unused storage is explicitly separated from those fields;
+ * the initialized template emits decoded_count zero coefficients. */
+typedef struct ResidentHuffmanZeroRun {
+    char description[16];
+    unsigned int reserved_header[36];
+    ResidentHuffmanNode coefficient_slots[64];
+    int decoded_count;
+    unsigned int reserved_tail[3];
+    int sentinel0;
+    int sentinel1;
+} ResidentHuffmanZeroRun;
 #endif
