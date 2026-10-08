@@ -3071,7 +3071,8 @@ us-rev1.S.000CAA3F := 830015 1
 us-rev1.D.rw_text_8027EB2C_CAA40_us_rev1 := 0x800C9E40:0xCAA40:0x17
 us-rev1.S.000CAA57 := 830039 1
 us-rev1.D.ragewars_resident_strings_CAA58_us_rev1 := 0x800C9E58:0xCAA58:0x10
-us-rev1.S.000CAA68 := 830056 88
+us-rev1.D.rw_pool_cells_8027ED6C_CAA68_us_rev1 := 0x800C9E68:0xCAA68:0x40
+us-rev1.S.000CAAA8 := 830120 24
 us-rev1.D.rw_tail_8027ED6C_CAAC0_us_rev1 := 0x800C9EC0:0xCAAC0:0x34
 us-rev1.S.000CAAF4 := 830196 40
 us-rev1.D.rw_tail_802800C0_CAB1C_us_rev1 := 0x800C9F1C:0xCAB1C:0x14
@@ -8157,7 +8158,8 @@ us-rev1.PIECES := \
   build/us-rev1/data/rw_text_8027EB2C_CAA40_us_rev1.bin \
   build/us-rev1/slices/000CAA57.bin \
   build/us-rev1/data/ragewars_resident_strings_CAA58_us_rev1.bin \
-  build/us-rev1/slices/000CAA68.bin \
+  build/us-rev1/data/rw_pool_cells_8027ED6C_CAA68_us_rev1.bin \
+  build/us-rev1/slices/000CAAA8.bin \
   build/us-rev1/data/rw_tail_8027ED6C_CAAC0_us_rev1.bin \
   build/us-rev1/slices/000CAAF4.bin \
   build/us-rev1/data/rw_tail_802800C0_CAB1C_us_rev1.bin \
