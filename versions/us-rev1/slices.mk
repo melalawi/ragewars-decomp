@@ -3522,14 +3522,18 @@ us-rev1.D.ragewars_movement_sound_CF39C_us_rev1 := 0x800CE7BE:0xCF3BE:0x2
 us-rev1.D.ragewars_movement_tuning_CF3C0_us_rev1 := 0x800CE7C0:0xCF3C0:0x20
 us-rev1.S.000CF3E0 := 848864 2
 us-rev1.D.ragewars_movement_sound_CF3C0_us_rev1 := 0x800CE7E2:0xCF3E2:0x2
-us-rev1.S.000CF3E4 := 848868 72
+us-rev1.D.ragewars_view_tuning_CF3E4_us_rev1 := 0x800CE7E4:0xCF3E4:0x18
+us-rev1.D.ragewars_view_tuning_CF3FC_us_rev1 := 0x800CE7FC:0xCF3FC:0x18
+us-rev1.S.000CF414 := 848916 24
 us-rev1.D.ragewars_movement_tuning_CF42C_us_rev1 := 0x800CE82C:0xCF42C:0x20
 us-rev1.S.000CF44C := 848972 2
 us-rev1.D.ragewars_movement_sound_CF42C_us_rev1 := 0x800CE84E:0xCF44E:0x2
 us-rev1.D.ragewars_movement_tuning_CF450_us_rev1 := 0x800CE850:0xCF450:0x20
 us-rev1.S.000CF470 := 849008 2
 us-rev1.D.ragewars_movement_sound_CF450_us_rev1 := 0x800CE872:0xCF472:0x2
-us-rev1.S.000CF474 := 849012 2368
+us-rev1.D.ragewars_view_tuning_CF474_us_rev1 := 0x800CE874:0xCF474:0x18
+us-rev1.D.ragewars_view_tuning_CF48C_us_rev1 := 0x800CE88C:0xCF48C:0x18
+us-rev1.S.000CF4A4 := 849060 2320
 us-rev1.D.rw_text_8021D408_CFDB4_us_rev1 := 0x800CF1B4:0xCFDB4:0x4
 us-rev1.D.rw_pool_8021EEFC_CFDB8_us_rev1 := 0x800CF1B8:0xCFDB8:0x4
 us-rev1.S.000CFDBC := 851388 12
@@ -8715,14 +8719,18 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_movement_tuning_CF3C0_us_rev1.bin \
   build/us-rev1/slices/000CF3E0.bin \
   build/us-rev1/data/ragewars_movement_sound_CF3C0_us_rev1.bin \
-  build/us-rev1/slices/000CF3E4.bin \
+  build/us-rev1/data/ragewars_view_tuning_CF3E4_us_rev1.bin \
+  build/us-rev1/data/ragewars_view_tuning_CF3FC_us_rev1.bin \
+  build/us-rev1/slices/000CF414.bin \
   build/us-rev1/data/ragewars_movement_tuning_CF42C_us_rev1.bin \
   build/us-rev1/slices/000CF44C.bin \
   build/us-rev1/data/ragewars_movement_sound_CF42C_us_rev1.bin \
   build/us-rev1/data/ragewars_movement_tuning_CF450_us_rev1.bin \
   build/us-rev1/slices/000CF470.bin \
   build/us-rev1/data/ragewars_movement_sound_CF450_us_rev1.bin \
-  build/us-rev1/slices/000CF474.bin \
+  build/us-rev1/data/ragewars_view_tuning_CF474_us_rev1.bin \
+  build/us-rev1/data/ragewars_view_tuning_CF48C_us_rev1.bin \
+  build/us-rev1/slices/000CF4A4.bin \
   build/us-rev1/data/rw_text_8021D408_CFDB4_us_rev1.bin \
   build/us-rev1/data/rw_pool_8021EEFC_CFDB8_us_rev1.bin \
   build/us-rev1/slices/000CFDBC.bin \
