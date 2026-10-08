@@ -10804,3 +10804,5 @@ D_800CBE6C = 0x800d04cc;
 ragewars_menu_strings_D5DF8_us_rev1 = 0x800d51f8;
 
 ragewars_menu_strings_D639C_us_rev1 = 0x800d579c;
+
+ragewars_menu_strings_D5EDC_us_rev1 = 0x800d52dc;

@@ -3630,7 +3630,9 @@ us-rev1.S.000D80F8 := 884984 8
 us-rev1.D.ragewars_match_option_label_slots_us_rev1 := 0x800D7500:0xD8100:0x160
 us-rev1.S.000D8260 := 885344 88
 us-rev1.D.ragewars_inventory_label_slots_us_rev1 := 0x800D76B8:0xD82B8:0x44
-us-rev1.S.000D82FC := 885500 208
+us-rev1.S.000D82FC := 885500 4
+us-rev1.D.ragewars_pak_game_title_slots_us_rev1 := 0x800D7700:0xD8300:0x8
+us-rev1.S.000D8308 := 885512 196
 us-rev1.D.ragewars_pak_note_label_slots_us_rev1 := 0x800D77CC:0xD83CC:0x58
 us-rev1.S.000D8424 := 885796 584
 us-rev1.D.ragewars_confirmation_label_slots_us_rev1 := 0x800D7A6C:0xD866C:0x28
@@ -8782,6 +8784,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000D8260.bin \
   build/us-rev1/data/ragewars_inventory_label_slots_us_rev1.bin \
   build/us-rev1/slices/000D82FC.bin \
+  build/us-rev1/data/ragewars_pak_game_title_slots_us_rev1.bin \
+  build/us-rev1/slices/000D8308.bin \
   build/us-rev1/data/ragewars_pak_note_label_slots_us_rev1.bin \
   build/us-rev1/slices/000D8424.bin \
   build/us-rev1/data/ragewars_confirmation_label_slots_us_rev1.bin \
