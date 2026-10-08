@@ -3516,7 +3516,84 @@ us-rev1.D.ragewars_u64_combined_bitwidth_us_rev1 := 0x800CCF50:0xCDB50:0x100
 us-rev1.D.ragewars_u64_quotient_bitwidth_us_rev1 := 0x800CD050:0xCDC50:0x100
 us-rev1.D.ragewars_u64_remainder_bitwidth_us_rev1 := 0x800CD150:0xCDD50:0x100
 us-rev1.D.rw_u64_remainder_normalization_width_us_rev1 := 0x800CD250:0xCDE50:0x100
-us-rev1.S.000CDF50 := 843600 1760
+us-rev1.S.000CDF50 := 843600 144
+us-rev1.D.rw_actor_state_entry_CDFE0_us_rev1 := 0x800CD3E0:0xCDFE0:0xC
+us-rev1.S.000CDFEC := 843756 8
+us-rev1.D.rw_actor_state_animation_CDFF4_us_rev1 := 0x800CD3F4:0xCDFF4:0xC
+us-rev1.D.rw_actor_state_entry_CE000_us_rev1 := 0x800CD400:0xCE000:0xC
+us-rev1.S.000CE00C := 843788 8
+us-rev1.D.rw_actor_state_animation_CE014_us_rev1 := 0x800CD414:0xCE014:0xC
+us-rev1.D.rw_actor_state_entry_CE020_us_rev1 := 0x800CD420:0xCE020:0xC
+us-rev1.S.000CE02C := 843820 8
+us-rev1.D.rw_actor_state_animation_CE034_us_rev1 := 0x800CD434:0xCE034:0xC
+us-rev1.D.rw_actor_state_entry_CE040_us_rev1 := 0x800CD440:0xCE040:0xC
+us-rev1.S.000CE04C := 843852 8
+us-rev1.D.rw_actor_state_animation_CE054_us_rev1 := 0x800CD454:0xCE054:0xC
+us-rev1.D.rw_actor_state_entry_CE060_us_rev1 := 0x800CD460:0xCE060:0xC
+us-rev1.S.000CE06C := 843884 8
+us-rev1.D.rw_actor_state_animation_CE074_us_rev1 := 0x800CD474:0xCE074:0xC
+us-rev1.D.rw_actor_state_end_CE080_us_rev1 := 0x800CD480:0xCE080:0x4
+us-rev1.S.000CE084 := 843908 96
+us-rev1.D.rw_actor_state_entry_CE0E4_us_rev1 := 0x800CD4E4:0xCE0E4:0xC
+us-rev1.S.000CE0F0 := 844016 8
+us-rev1.D.rw_actor_state_animation_CE0F8_us_rev1 := 0x800CD4F8:0xCE0F8:0xC
+us-rev1.D.rw_actor_state_entry_CE104_us_rev1 := 0x800CD504:0xCE104:0x8
+us-rev1.S.000CE10C := 844044 12
+us-rev1.D.rw_actor_state_animation_CE118_us_rev1 := 0x800CD518:0xCE118:0xC
+us-rev1.D.rw_actor_state_entry_CE124_us_rev1 := 0x800CD524:0xCE124:0xC
+us-rev1.S.000CE130 := 844080 8
+us-rev1.D.rw_actor_state_animation_CE138_us_rev1 := 0x800CD538:0xCE138:0xC
+us-rev1.D.rw_actor_state_end_CE144_us_rev1 := 0x800CD544:0xCE144:0x4
+us-rev1.S.000CE148 := 844104 168
+us-rev1.D.rw_actor_state_entry_CE1F0_us_rev1 := 0x800CD5F0:0xCE1F0:0x8
+us-rev1.S.000CE1F8 := 844280 12
+us-rev1.D.rw_actor_state_animation_CE204_us_rev1 := 0x800CD604:0xCE204:0xC
+us-rev1.D.rw_actor_state_entry_CE210_us_rev1 := 0x800CD610:0xCE210:0xC
+us-rev1.S.000CE21C := 844316 8
+us-rev1.D.rw_actor_state_animation_CE224_us_rev1 := 0x800CD624:0xCE224:0xC
+us-rev1.D.rw_actor_state_end_CE230_us_rev1 := 0x800CD630:0xCE230:0x4
+us-rev1.S.000CE234 := 844340 92
+us-rev1.D.rw_actor_state_entry_CE290_us_rev1 := 0x800CD690:0xCE290:0xC
+us-rev1.S.000CE29C := 844444 8
+us-rev1.D.rw_actor_state_animation_CE2A4_us_rev1 := 0x800CD6A4:0xCE2A4:0xC
+us-rev1.D.rw_actor_state_entry_CE2B0_us_rev1 := 0x800CD6B0:0xCE2B0:0x4
+us-rev1.S.000CE2B4 := 844468 16
+us-rev1.D.rw_actor_state_animation_CE2C4_us_rev1 := 0x800CD6C4:0xCE2C4:0xC
+us-rev1.D.rw_actor_state_entry_CE2D0_us_rev1 := 0x800CD6D0:0xCE2D0:0x4
+us-rev1.S.000CE2D4 := 844500 16
+us-rev1.D.rw_actor_state_animation_CE2E4_us_rev1 := 0x800CD6E4:0xCE2E4:0xC
+us-rev1.D.rw_actor_state_end_CE2F0_us_rev1 := 0x800CD6F0:0xCE2F0:0x4
+us-rev1.S.000CE2F4 := 844532 200
+us-rev1.D.rw_actor_state_entry_CE3BC_us_rev1 := 0x800CD7BC:0xCE3BC:0xC
+us-rev1.S.000CE3C8 := 844744 8
+us-rev1.D.rw_actor_state_animation_CE3D0_us_rev1 := 0x800CD7D0:0xCE3D0:0xC
+us-rev1.D.rw_actor_state_entry_CE3DC_us_rev1 := 0x800CD7DC:0xCE3DC:0x4
+us-rev1.S.000CE3E0 := 844768 16
+us-rev1.D.rw_actor_state_animation_CE3F0_us_rev1 := 0x800CD7F0:0xCE3F0:0xC
+us-rev1.D.rw_actor_state_end_CE3FC_us_rev1 := 0x800CD7FC:0xCE3FC:0x4
+us-rev1.S.000CE400 := 844800 96
+us-rev1.D.rw_actor_state_entry_CE460_us_rev1 := 0x800CD860:0xCE460:0xC
+us-rev1.S.000CE46C := 844908 8
+us-rev1.D.rw_actor_state_animation_CE474_us_rev1 := 0x800CD874:0xCE474:0xC
+us-rev1.D.rw_actor_state_end_CE480_us_rev1 := 0x800CD880:0xCE480:0x4
+us-rev1.S.000CE484 := 844932 140
+us-rev1.D.rw_actor_state_entry_CE510_us_rev1 := 0x800CD910:0xCE510:0xC
+us-rev1.S.000CE51C := 845084 8
+us-rev1.D.rw_actor_state_animation_CE524_us_rev1 := 0x800CD924:0xCE524:0xC
+us-rev1.D.rw_actor_state_entry_CE530_us_rev1 := 0x800CD930:0xCE530:0xC
+us-rev1.S.000CE53C := 845116 8
+us-rev1.D.rw_actor_state_animation_CE544_us_rev1 := 0x800CD944:0xCE544:0xC
+us-rev1.D.rw_actor_state_entry_CE550_us_rev1 := 0x800CD950:0xCE550:0xC
+us-rev1.S.000CE55C := 845148 8
+us-rev1.D.rw_actor_state_animation_CE564_us_rev1 := 0x800CD964:0xCE564:0xC
+us-rev1.D.rw_actor_state_entry_CE570_us_rev1 := 0x800CD970:0xCE570:0xC
+us-rev1.S.000CE57C := 845180 8
+us-rev1.D.rw_actor_state_animation_CE584_us_rev1 := 0x800CD984:0xCE584:0xC
+us-rev1.D.rw_actor_state_entry_CE590_us_rev1 := 0x800CD990:0xCE590:0xC
+us-rev1.S.000CE59C := 845212 8
+us-rev1.D.rw_actor_state_animation_CE5A4_us_rev1 := 0x800CD9A4:0xCE5A4:0xC
+us-rev1.D.rw_actor_state_end_CE5B0_us_rev1 := 0x800CD9B0:0xCE5B0:0x4
+us-rev1.S.000CE5B4 := 845236 124
 us-rev1.D.rw_pool_80209DAC_CE630_us_rev1 := 0x800CDA30:0xCE630:0xC
 us-rev1.S.000CE63C := 845372 4
 us-rev1.D.ragewars_actor_mode_dispatch_us_rev1 := 0x800CDA40:0xCE640:0xA0
@@ -9739,6 +9816,83 @@ us-rev1.PIECES := \
   build/us-rev1/data/ragewars_u64_remainder_bitwidth_us_rev1.bin \
   build/us-rev1/data/rw_u64_remainder_normalization_width_us_rev1.bin \
   build/us-rev1/slices/000CDF50.bin \
+  build/us-rev1/data/rw_actor_state_entry_CDFE0_us_rev1.bin \
+  build/us-rev1/slices/000CDFEC.bin \
+  build/us-rev1/data/rw_actor_state_animation_CDFF4_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE000_us_rev1.bin \
+  build/us-rev1/slices/000CE00C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE014_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE020_us_rev1.bin \
+  build/us-rev1/slices/000CE02C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE034_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE040_us_rev1.bin \
+  build/us-rev1/slices/000CE04C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE054_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE060_us_rev1.bin \
+  build/us-rev1/slices/000CE06C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE074_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_end_CE080_us_rev1.bin \
+  build/us-rev1/slices/000CE084.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE0E4_us_rev1.bin \
+  build/us-rev1/slices/000CE0F0.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE0F8_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE104_us_rev1.bin \
+  build/us-rev1/slices/000CE10C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE118_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE124_us_rev1.bin \
+  build/us-rev1/slices/000CE130.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE138_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_end_CE144_us_rev1.bin \
+  build/us-rev1/slices/000CE148.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE1F0_us_rev1.bin \
+  build/us-rev1/slices/000CE1F8.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE204_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE210_us_rev1.bin \
+  build/us-rev1/slices/000CE21C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE224_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_end_CE230_us_rev1.bin \
+  build/us-rev1/slices/000CE234.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE290_us_rev1.bin \
+  build/us-rev1/slices/000CE29C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE2A4_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE2B0_us_rev1.bin \
+  build/us-rev1/slices/000CE2B4.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE2C4_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE2D0_us_rev1.bin \
+  build/us-rev1/slices/000CE2D4.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE2E4_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_end_CE2F0_us_rev1.bin \
+  build/us-rev1/slices/000CE2F4.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE3BC_us_rev1.bin \
+  build/us-rev1/slices/000CE3C8.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE3D0_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE3DC_us_rev1.bin \
+  build/us-rev1/slices/000CE3E0.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE3F0_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_end_CE3FC_us_rev1.bin \
+  build/us-rev1/slices/000CE400.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE460_us_rev1.bin \
+  build/us-rev1/slices/000CE46C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE474_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_end_CE480_us_rev1.bin \
+  build/us-rev1/slices/000CE484.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE510_us_rev1.bin \
+  build/us-rev1/slices/000CE51C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE524_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE530_us_rev1.bin \
+  build/us-rev1/slices/000CE53C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE544_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE550_us_rev1.bin \
+  build/us-rev1/slices/000CE55C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE564_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE570_us_rev1.bin \
+  build/us-rev1/slices/000CE57C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE584_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_entry_CE590_us_rev1.bin \
+  build/us-rev1/slices/000CE59C.bin \
+  build/us-rev1/data/rw_actor_state_animation_CE5A4_us_rev1.bin \
+  build/us-rev1/data/rw_actor_state_end_CE5B0_us_rev1.bin \
+  build/us-rev1/slices/000CE5B4.bin \
   build/us-rev1/data/rw_pool_80209DAC_CE630_us_rev1.bin \
   build/us-rev1/slices/000CE63C.bin \
   build/us-rev1/data/ragewars_actor_mode_dispatch_us_rev1.bin \
