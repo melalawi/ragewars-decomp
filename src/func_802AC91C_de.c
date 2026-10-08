@@ -1,3 +1,4 @@
+#include "span_1000/code_80233920.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802AB3FC.h"
 #include "types.h"
@@ -173,7 +174,6 @@ extern char D_80140FC8;
 extern u8 D_80152789;
 #endif
 extern void func_80222BE8_de(void *, s16, s16);
-extern void func_802391AC_de(void *, s32, s32, s32, s32, s32, s32, s32);
 extern void func_80237E80_de(void *, void *, void *);
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
                          s32 arg4, s32 arg5);
@@ -222,7 +222,6 @@ extern char D_80140FC8;
 extern u8 D_80152789;
 #endif
 extern s32 func_8022AC00_de(void *arg0);
-extern void func_802391AC_de(void *, s32, s32, s32, s32, s32, s32, s32);
 extern void func_80237E80_de(void *, void *, void *);
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
                          s32 arg4, s32 arg5);
@@ -284,7 +283,6 @@ extern char D_80140FC8;
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
-extern void func_802391AC_de(void *, s32, s32, s32, s32, s32, s32, s32);
 extern void func_80237E80_de(void *, void *, void *);
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
                          s32 arg4, s32 arg5);

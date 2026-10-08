@@ -1,3 +1,4 @@
+#include "span_1000/code_80233920.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80225D10.h"
@@ -22,7 +23,6 @@
 extern f32 D_800CD738;
 extern char D_80140FC8;
 extern f32 func_80274564_de(f32);
-extern void func_802391AC_de(View_func_80226340_de *, s32, s32, s32, s32, s32, s32, s32);
 extern void func_802394BC_de(char *, f32, f32, f32, f32, s32, Triple);
 extern void func_802227F4_de(SharedPlayer_func_80226340_de *, SharedPlayer_func_80226340_de *, s32);
 extern void func_80216488_de(Slot *, Held *, s32, f32, s32, s32);

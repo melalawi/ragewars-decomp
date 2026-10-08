@@ -1,10 +1,10 @@
+#include "span_1000/code_80233920.h"
 #include "span_1000/code_802AB3FC.h"
 #include "types.h"
 
 
 
 extern f32 func_80274564_de(f32 arg0);
-extern void func_802391AC_de(void *, s32, s32, s32, s32, s32, s32, s32);
 
 
 

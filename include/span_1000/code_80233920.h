@@ -457,4 +457,6 @@ struct func_802393C8_S1 {
 /* unbake published declaration: published_f6c2e3322959b0434214179c */
 extern float D_800C3524_de;
 
+extern void func_802391AC_de(void *view, s32 red, s32 green, s32 blue, s32 mode, s32 alpha, s32 duration, s32 delay);
+
 #endif
