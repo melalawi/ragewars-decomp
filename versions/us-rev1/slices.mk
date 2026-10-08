@@ -3340,7 +3340,9 @@ us-rev1.S.000CBDF4 := 835060 192
 us-rev1.D.rw_tail_802A88F0_CBEB4_us_rev1 := 0x800CB2B4:0xCBEB4:0x20
 us-rev1.S.000CBED4 := 835284 32
 us-rev1.D.rw_tail_802A8F28_CBEF4_us_rev1 := 0x800CB2F4:0xCBEF4:0x18
-us-rev1.S.000CBF0C := 835340 40
+us-rev1.S.000CBF0C := 835340 32
+us-rev1.D.rw_pool_cells_802A8F28_CBF28_us_rev1 := 0x800CB32C:0xCBF2C:0x4
+us-rev1.S.000CBF30 := 835376 4
 us-rev1.D.rw_tail_802A8F28_CBF34_us_rev1 := 0x800CB334:0xCBF34:0x14
 us-rev1.D.rw_pool_802A9734_CBF48_us_rev1 := 0x800CB348:0xCBF48:0x4
 us-rev1.D.rw_pool_802A9EE8_CBF4C_us_rev1 := 0x800CB34C:0xCBF4C:0x4
@@ -8433,6 +8435,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CBED4.bin \
   build/us-rev1/data/rw_tail_802A8F28_CBEF4_us_rev1.bin \
   build/us-rev1/slices/000CBF0C.bin \
+  build/us-rev1/data/rw_pool_cells_802A8F28_CBF28_us_rev1.bin \
+  build/us-rev1/slices/000CBF30.bin \
   build/us-rev1/data/rw_tail_802A8F28_CBF34_us_rev1.bin \
   build/us-rev1/data/rw_pool_802A9734_CBF48_us_rev1.bin \
   build/us-rev1/data/rw_pool_802A9EE8_CBF4C_us_rev1.bin \
