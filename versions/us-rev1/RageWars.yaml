@@ -1061,7 +1061,7 @@ segments:
       - [0x51D4C, c, "func_802511AC_de"]
       - [0x51EC8, c, "func_80251328_de"]
       - [0x52048, c, "func_802514A8_de"]
-      - [0x52190, asm, "func_802515F0_de"]
+      - [0x52190, c, "func_802515F0_de"]
       - [0x52354, c, "func_802517B4_de"]
       - [0x524DC, asm, "func_8025193C_de"]
       - [0x52B0C, c, "func_80251F6C_de"]
