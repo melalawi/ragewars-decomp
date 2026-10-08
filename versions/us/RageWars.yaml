@@ -4059,6 +4059,8 @@ segments:
       - [0xDE150, data, "rodata/unresolved/800DD550"]
       - [0xDE310, data, "rodata/writable/800DD710"]
       - [0xDE330, data, "rodata/unresolved/800DD730"]
+      - [0x0DE380, data, "src/ragewars_pixel_formats_us_rev1.c"]
+      - [0x0DEAD0, data, "rodata/unresolved/800DD730_0DEAD0"]
       - [0xDEAE0, data, "rodata/writable/800DDEE0"]
       - [0xDEB01, data, "rodata/unresolved/800DDF01"]
       - [0xDEB04, data, "rodata/writable/800DDF04"]

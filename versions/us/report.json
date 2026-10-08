@@ -4,17 +4,17 @@
     "matched_code": 669004,
     "complete_code": 669004,
     "total_data": 320748,
-    "matched_data": 0,
-    "complete_data": 0,
+    "matched_data": 1872,
+    "complete_data": 1872,
     "total_functions": 4233,
     "matched_functions": 3597,
-    "total_units": 5247,
-    "complete_units": 2814,
+    "total_units": 5249,
+    "complete_units": 2815,
     "matched_code_percent": 62.980255,
     "complete_code_percent": 62.980255,
     "matched_functions_percent": 84.9752,
-    "matched_data_percent": 0.0,
-    "complete_data_percent": 0.0,
+    "matched_data_percent": 0.58363575,
+    "complete_data_percent": 0.58363575,
     "fuzzy_match_percent": 63.40704
   },
   "units": [
@@ -182003,7 +182003,7 @@
     {
       "name": "data:rodata/unresolved/800DD730@DE330",
       "measures": {
-        "total_data": "1968",
+        "total_data": "80",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -182014,7 +182014,62 @@
       "sections": [
         {
           "name": "data",
-          "size": "1968",
+          "size": "80",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_pixel_formats_us_rev1.c@DE380",
+      "measures": {
+        "total_data": "1872",
+        "matched_data": "1872",
+        "complete_data": "1872",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "1872",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_pixel_formats_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800DD730_0DEAD0@DEAD0",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -186445,17 +186500,17 @@
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 320748,
-        "matched_data": 0,
-        "complete_data": 0,
+        "matched_data": 1872,
+        "complete_data": 1872,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 1797,
-        "complete_units": 0,
+        "total_units": 1799,
+        "complete_units": 1,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "matched_data_percent": 0.0,
-        "complete_data_percent": 0.0,
+        "matched_data_percent": 0.58363575,
+        "complete_data_percent": 0.58363575,
         "fuzzy_match_percent": 0.0
       }
     },
