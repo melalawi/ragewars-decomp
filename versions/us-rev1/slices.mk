@@ -3511,7 +3511,9 @@ us-rev1.D.rw_pool_802BFAAC_CDB28_us_rev1 := 0x800CCF28:0xCDB28:0x10
 us-rev1.D.rw_pool_802C0044_CDB38_us_rev1 := 0x800CCF38:0xCDB38:0x10
 us-rev1.S.000CDB48 := 842568 2792
 us-rev1.D.rw_pool_80209DAC_CE630_us_rev1 := 0x800CDA30:0xCE630:0xC
-us-rev1.S.000CE63C := 845372 3356
+us-rev1.S.000CE63C := 845372 4
+us-rev1.D.ragewars_actor_mode_dispatch_us_rev1 := 0x800CDA40:0xCE640:0xA0
+us-rev1.S.000CE6E0 := 845536 3192
 us-rev1.D.rw_pool_80225F44_CF358_us_rev1 := 0x800CE758:0xCF358:0x4
 us-rev1.S.000CF35C := 848732 2648
 us-rev1.D.rw_text_8021D408_CFDB4_us_rev1 := 0x800CF1B4:0xCFDB4:0x4
@@ -8689,6 +8691,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000CDB48.bin \
   build/us-rev1/data/rw_pool_80209DAC_CE630_us_rev1.bin \
   build/us-rev1/slices/000CE63C.bin \
+  build/us-rev1/data/ragewars_actor_mode_dispatch_us_rev1.bin \
+  build/us-rev1/slices/000CE6E0.bin \
   build/us-rev1/data/rw_pool_80225F44_CF358_us_rev1.bin \
   build/us-rev1/slices/000CF35C.bin \
   build/us-rev1/data/rw_text_8021D408_CFDB4_us_rev1.bin \
