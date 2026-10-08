@@ -1,4 +1,3 @@
-#if defined(VERSION_US_REV1)
 #include "shared/gameplay_movement.h"
 extern s32 D_8014155C;
 #include "common/data.h"
@@ -897,5 +896,3 @@ void func_80220ED4_de(SharedPlayer *player)
     }
   }
 }
-
-#endif
