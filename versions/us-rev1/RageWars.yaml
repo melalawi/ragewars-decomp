@@ -4024,6 +4024,23 @@ segments:
       - [0xDCBE4, data, "src/huffman_delta_nine_zero_runs_nodes.c"]
       - [0xDD430, data, "src/huffman_signed_small_nodes.c"]
       - [0xDD834, data, "rodata/unresolved/800DCC34"]
+  - name: rsp_boot
+    type: resource
+    start: 0xDD840
+    vram: 0x800DCC40
+    execution_vram: 0x04001000
+    resource_section: .rsp.boot
+    resource_asflags: "-EB -mips1"
+    subsegments:
+      - [0xDD840, resource, "resources/rsp/boot.s"]
+  - name: span_DD910
+    type: code
+    start: 0xDD910
+    vram: 0x800DCD10
+    align: 1
+    subalign: 1
+    subsegments:
+      - [0xDD910, data, "rodata/unresolved/800DCD10"]
       - [0xE1720, rodata, "rodata/func_80400000_de/800E0B20"]
       - [0xE172C, rodata, "rodata/shared/800E0B2C"]
       - [0xE173D, data, "rodata/unresolved/800E0B3D"]
