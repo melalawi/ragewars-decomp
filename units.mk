@@ -330,6 +330,7 @@ build/%/src/func_80217B3C_de.i build/%/src/func_80217B3C_de.key build/%/units/fu
 build/%/src/func_80217D74_de.i build/%/src/func_80217D74_de.key build/%/units/func_80217D74_de.bin build/%/data/func_80217D74_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8021836C_de.i build/%/src/func_8021836C_de.key build/%/units/func_8021836C_de.bin build/%/data/func_8021836C_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_8021836C_de.i build/%/src/func_8021836C_de.key build/%/units/func_8021836C_de.bin build/%/data/func_8021836C_de.bin: UNIT_CODEGEN := -fno-strength-reduce
+build/%/src/func_802185D0_de.i build/%/src/func_802185D0_de.key build/%/units/func_802185D0_de.bin build/%/data/func_802185D0_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80218B84_de.i build/%/src/func_80218B84_de.key build/%/units/func_80218B84_de.bin build/%/data/func_80218B84_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80218E98_de.i build/%/src/func_80218E98_de.key build/%/units/func_80218E98_de.bin build/%/data/func_80218E98_de.bin: PREPROCESS_FLAGS = -Iinclude $(VERSION_DEFINES) $(CONSUMER) -D__UNBAKE_STDARG_GCC=1
 build/%/src/func_80218E98_de.i build/%/src/func_80218E98_de.key build/%/units/func_80218E98_de.bin build/%/data/func_80218E98_de.bin: UNIT_CODEGEN := -fno-strength-reduce
