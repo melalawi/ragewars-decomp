@@ -4467,7 +4467,9 @@ us-rev1.S.000E3424 := 930852 36
 us-rev1.D.rw_constants_8040170C_E3448_us_rev1 := 0x800E2848:0xE3448:0x4
 us-rev1.S.000E344C := 930892 644
 us-rev1.D.ragewars_event_handlers_E36D0_us_rev1 := 0x800E2AD0:0xE36D0:0x48
-us-rev1.S.000E3718 := 931608 2024
+us-rev1.S.000E3718 := 931608 8
+us-rev1.D.ragewars_pixel_formats_us_rev1 := 0x800E2B20:0xE3720:0x750
+us-rev1.S.000E3E70 := 933488 144
 us-rev1.D.ragewars_event_handlers_E3F00_us_rev1 := 0x800E3300:0xE3F00:0x24
 us-rev1.S.000E3F24 := 933668 108
 us-rev1.D.ragewars_event_handlers_E3F90_us_rev1 := 0x800E3390:0xE3F90:0x6C
@@ -10148,6 +10150,8 @@ us-rev1.PIECES := \
   build/us-rev1/slices/000E344C.bin \
   build/us-rev1/data/ragewars_event_handlers_E36D0_us_rev1.bin \
   build/us-rev1/slices/000E3718.bin \
+  build/us-rev1/data/ragewars_pixel_formats_us_rev1.bin \
+  build/us-rev1/slices/000E3E70.bin \
   build/us-rev1/data/ragewars_event_handlers_E3F00_us_rev1.bin \
   build/us-rev1/slices/000E3F24.bin \
   build/us-rev1/data/ragewars_event_handlers_E3F90_us_rev1.bin \
