@@ -191,7 +191,9 @@ extern void func_8027E784_de(Actor_func_8027E784_de *actor);
 struct Shared_ParticleTarget;
 /* unbake published declaration: published_5879124f3c29ad5ae941e338 */
 struct Shared_ParticleTarget {
-    char pad0[0x100];
+    char pad0[0xB4];
+    struct UnitMtx *drawMatrices;
+    char padB8[0x48];
     s32 flags;
     char pad104[0x6C];
     s32 unk170;
@@ -437,7 +439,7 @@ struct Shared_ParticleTarget;
 /* unbake published declaration: published_b1656c38df628e0dea184522 */
 struct Shared_Particle {
     Shared_ParticleInstance inst;
-    char pad50[0xC];
+    Vec3 attachmentPosition;
     s32 flags;
     Matrix mtx[2];
     char padE0[0x38];
