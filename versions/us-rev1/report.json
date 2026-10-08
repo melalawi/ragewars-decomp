@@ -4,17 +4,17 @@
     "matched_code": 793524,
     "complete_code": 793524,
     "total_data": 254468,
-    "matched_data": 92225,
-    "complete_data": 92225,
+    "matched_data": 96905,
+    "complete_data": 96905,
     "total_functions": 4566,
     "matched_functions": 3858,
-    "total_units": 6312,
-    "complete_units": 3450,
+    "total_units": 6422,
+    "complete_units": 3528,
     "matched_code_percent": 70.09161,
     "complete_code_percent": 70.09161,
     "matched_functions_percent": 84.49409,
-    "matched_data_percent": 36.24228,
-    "complete_data_percent": 36.24228,
+    "matched_data_percent": 38.08141,
+    "complete_data_percent": 38.08141,
     "fuzzy_match_percent": 70.49206
   },
   "units": [
@@ -183021,7 +183021,7 @@
     {
       "name": "data:rodata/unresolved/800CCF48@CDB48",
       "measures": {
-        "total_data": "1064",
+        "total_data": "8",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -183032,7 +183032,118 @@
       "sections": [
         {
           "name": "data",
-          "size": "1064",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_u64_combined_bitwidth_us_rev1.c@CDB50",
+      "measures": {
+        "total_data": "256",
+        "matched_data": "256",
+        "complete_data": "256",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "256",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_u64_combined_bitwidth_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_u64_quotient_bitwidth_us_rev1.c@CDC50",
+      "measures": {
+        "total_data": "256",
+        "matched_data": "256",
+        "complete_data": "256",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "256",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_u64_quotient_bitwidth_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_u64_remainder_bitwidth_us_rev1.c@CDD50",
+      "measures": {
+        "total_data": "256",
+        "matched_data": "256",
+        "complete_data": "256",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "256",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_u64_remainder_bitwidth_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800CCF48_unclaimed_CDE50@CDE50",
+      "measures": {
+        "total_data": "288",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "288",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -199537,9 +199648,65 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800D29D8@D35D8",
+      "name": "data:src/ragewars_mode_lifecycle_handlers_D35D8_us_rev1.c@D35D8",
       "measures": {
-        "total_data": "252",
+        "total_data": "36",
+        "matched_data": "36",
+        "complete_data": "36",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "36",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_mode_lifecycle_handlers_D35D8_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_mode_lifecycle_handlers_D35FC_us_rev1.c@D35FC",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_mode_lifecycle_handlers_D35FC_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D29D8_unclaimed_D3604@D3604",
+      "measures": {
+        "total_data": "4",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -199550,7 +199717,7 @@
       "sections": [
         {
           "name": "data",
-          "size": "252",
+          "size": "4",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -199561,6 +199728,34 @@
         "progress_categories": [
           "data"
         ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_mode_lifecycle_handlers_D3608_us_rev1.c@D3608",
+      "measures": {
+        "total_data": "204",
+        "matched_data": "204",
+        "complete_data": "204",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "204",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_mode_lifecycle_handlers_D3608_us_rev1.c"
       }
     },
     {
@@ -210828,24 +211023,24 @@
       "name": "rodata:src/rw_pool_cells_8043C4F4_E2E74_us_rev1.c@E2E74",
       "measures": {
         "total_data": "20",
-        "matched_data": "12",
-        "complete_data": "12",
-        "matched_data_percent": 60.0,
-        "complete_data_percent": 60.0,
+        "matched_data": "20",
+        "complete_data": "20",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
         "total_units": 1,
-        "complete_units": 0
+        "complete_units": 1
       },
       "sections": [
         {
           "name": "rodata",
           "size": "20",
           "metadata": {},
-          "fuzzy_match_percent": 60.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
           "data"
         ],
@@ -211832,27 +212027,28 @@
       "name": "rodata:src/rw_pool_cells_8043F52C_E3078_us_rev1.c@E3078",
       "measures": {
         "total_data": "24",
-        "matched_data": "0",
-        "complete_data": "0",
-        "matched_data_percent": 0.0,
-        "complete_data_percent": 0.0,
+        "matched_data": "24",
+        "complete_data": "24",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
         "total_units": 1,
-        "complete_units": 0
+        "complete_units": 1
       },
       "sections": [
         {
           "name": "rodata",
           "size": "24",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
           "data"
-        ]
+        ],
+        "source_path": "src/rw_pool_cells_8043F52C_E3078_us_rev1.c"
       }
     },
     {
@@ -213886,7 +214082,7 @@
     {
       "name": "data:rodata/unresolved/800E2AD0_unclaimed_E3718@E3718",
       "measures": {
-        "total_data": "1896",
+        "total_data": "8",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -213897,7 +214093,62 @@
       "sections": [
         {
           "name": "data",
-          "size": "1896",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_pixel_formats_us_rev1.c@E3720",
+      "measures": {
+        "total_data": "1872",
+        "matched_data": "1872",
+        "complete_data": "1872",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "1872",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_pixel_formats_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E2AD0_unclaimed_E3718_unclaimed_E3E70@E3E70",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -214426,7 +214677,7 @@
     {
       "name": "data:rodata/unresolved/800E39C4@E45C4",
       "measures": {
-        "total_data": "168",
+        "total_data": "140",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -214437,7 +214688,7 @@
       "sections": [
         {
           "name": "data",
-          "size": "168",
+          "size": "140",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -214448,6 +214699,89 @@
         "progress_categories": [
           "data"
         ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_00_us_rev1.c@E4650",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_00_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E39C4_unclaimed_E4658@E4658",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scales_00_us_rev1.c@E465C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scales_00_us_rev1.c"
       }
     },
     {
@@ -214478,30 +214812,31 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E3A6F_remaining_E4670@E4670",
+      "name": "data:src/ragewars_character_preview_distance_tail_00_us_rev1.c@E4670",
       "measures": {
         "total_data": "12",
-        "matched_data": "0",
-        "complete_data": "0",
-        "matched_data_percent": 0.0,
-        "complete_data_percent": 0.0,
+        "matched_data": "12",
+        "complete_data": "12",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
         "total_units": 1,
-        "complete_units": 0
+        "complete_units": 1
       },
       "sections": [
         {
           "name": "data",
           "size": "12",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
           "data"
-        ]
+        ],
+        "source_path": "src/ragewars_character_preview_distance_tail_00_us_rev1.c"
       }
     },
     {
@@ -214532,9 +214867,65 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680@E4680",
+      "name": "data:src/ragewars_character_preview_positions_00_us_rev1.c@E4680",
       "measures": {
-        "total_data": "2128",
+        "total_data": "44",
+        "matched_data": "44",
+        "complete_data": "44",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "44",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_00_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_00_us_rev1.c@E46AC",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_00_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E46AC_unclaimed_E46BC@E46BC",
+      "measures": {
+        "total_data": "4",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -214545,7 +214936,2663 @@
       "sections": [
         {
           "name": "data",
-          "size": "2128",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_01_us_rev1.c@E46C0",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_01_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E46AC_unclaimed_E46C8@E46C8",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_01_us_rev1.c@E46CC",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_01_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_01_us_rev1.c@E46EC",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_01_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_01_us_rev1.c@E471C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_01_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E471C_unclaimed_E472C@E472C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_02_us_rev1.c@E4730",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_02_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E471C_unclaimed_E4738@E4738",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_02_us_rev1.c@E473C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_02_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_02_us_rev1.c@E475C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_02_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_02_us_rev1.c@E478C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_02_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E478C_unclaimed_E479C@E479C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_03_us_rev1.c@E47A0",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_03_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E478C_unclaimed_E47A8@E47A8",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_03_us_rev1.c@E47AC",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_03_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_03_us_rev1.c@E47CC",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_03_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_03_us_rev1.c@E47FC",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_03_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E47FC_unclaimed_E480C@E480C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_04_us_rev1.c@E4810",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_04_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E47FC_unclaimed_E4818@E4818",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_04_us_rev1.c@E481C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_04_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_04_us_rev1.c@E483C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_04_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_04_us_rev1.c@E486C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_04_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E486C_unclaimed_E487C@E487C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_05_us_rev1.c@E4880",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_05_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E486C_unclaimed_E4888@E4888",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_05_us_rev1.c@E488C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_05_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_05_us_rev1.c@E48AC",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_05_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_05_us_rev1.c@E48DC",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_05_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E48DC_unclaimed_E48EC@E48EC",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_06_us_rev1.c@E48F0",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_06_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E48DC_unclaimed_E48F8@E48F8",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_06_us_rev1.c@E48FC",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_06_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_06_us_rev1.c@E491C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_06_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_06_us_rev1.c@E494C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_06_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E494C_unclaimed_E495C@E495C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_07_us_rev1.c@E4960",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_07_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E494C_unclaimed_E4968@E4968",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_07_us_rev1.c@E496C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_07_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_07_us_rev1.c@E498C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_07_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_07_us_rev1.c@E49BC",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_07_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E49BC_unclaimed_E49CC@E49CC",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_08_us_rev1.c@E49D0",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_08_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E49BC_unclaimed_E49D8@E49D8",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_08_us_rev1.c@E49DC",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_08_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_08_us_rev1.c@E49FC",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_08_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_08_us_rev1.c@E4A2C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_08_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A2C_unclaimed_E4A3C@E4A3C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_09_us_rev1.c@E4A40",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_09_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A2C_unclaimed_E4A48@E4A48",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_09_us_rev1.c@E4A4C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_09_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_09_us_rev1.c@E4A6C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_09_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_09_us_rev1.c@E4A9C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_09_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A9C_unclaimed_E4AAC@E4AAC",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_10_us_rev1.c@E4AB0",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_10_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4A9C_unclaimed_E4AB8@E4AB8",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_10_us_rev1.c@E4ABC",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_10_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_10_us_rev1.c@E4ADC",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_10_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_10_us_rev1.c@E4B0C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_10_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B0C_unclaimed_E4B1C@E4B1C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_11_us_rev1.c@E4B20",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_11_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B0C_unclaimed_E4B28@E4B28",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_11_us_rev1.c@E4B2C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_11_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_11_us_rev1.c@E4B4C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_11_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_11_us_rev1.c@E4B7C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_11_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B7C_unclaimed_E4B8C@E4B8C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_12_us_rev1.c@E4B90",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_12_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4B7C_unclaimed_E4B98@E4B98",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_12_us_rev1.c@E4B9C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_12_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_12_us_rev1.c@E4BBC",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_12_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_12_us_rev1.c@E4BEC",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_12_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4BEC_unclaimed_E4BFC@E4BFC",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_13_us_rev1.c@E4C00",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_13_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4BEC_unclaimed_E4C08@E4C08",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_13_us_rev1.c@E4C0C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_13_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_13_us_rev1.c@E4C2C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_13_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_13_us_rev1.c@E4C5C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_13_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4C5C_unclaimed_E4C6C@E4C6C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_14_us_rev1.c@E4C70",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_14_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4C5C_unclaimed_E4C78@E4C78",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_14_us_rev1.c@E4C7C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_14_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_14_us_rev1.c@E4C9C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_14_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_14_us_rev1.c@E4CCC",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_14_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4CCC_unclaimed_E4CDC@E4CDC",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_15_us_rev1.c@E4CE0",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_15_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4CCC_unclaimed_E4CE8@E4CE8",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_15_us_rev1.c@E4CEC",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_15_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_15_us_rev1.c@E4D0C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_15_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_15_us_rev1.c@E4D3C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_15_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4D3C_unclaimed_E4D4C@E4D4C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_keys_16_us_rev1.c@E4D50",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "8",
+        "complete_data": "8",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_keys_16_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4D3C_unclaimed_E4D58@E4D58",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {},
+          "fuzzy_match_percent": 0.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_scale_distance_16_us_rev1.c@E4D5C",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "32",
+        "complete_data": "32",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_scale_distance_16_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_positions_16_us_rev1.c@E4D7C",
+      "measures": {
+        "total_data": "48",
+        "matched_data": "48",
+        "complete_data": "48",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "48",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_positions_16_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:src/ragewars_character_preview_lights_16_us_rev1.c@E4DAC",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "16",
+        "complete_data": "16",
+        "matched_data_percent": 100.0,
+        "complete_data_percent": 100.0,
+        "total_units": 1,
+        "complete_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "16",
+          "metadata": {},
+          "fuzzy_match_percent": 100.0
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": true,
+        "progress_categories": [
+          "data"
+        ],
+        "source_path": "src/ragewars_character_preview_lights_16_us_rev1.c"
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4DAC_unclaimed_E4DBC@E4DBC",
+      "measures": {
+        "total_data": "276",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1,
+        "complete_units": 0
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "276",
           "metadata": {},
           "fuzzy_match_percent": 0.0
         }
@@ -218876,17 +221923,17 @@
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 254468,
-        "matched_data": 92225,
-        "complete_data": 92225,
+        "matched_data": 96905,
+        "complete_data": 96905,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 2607,
-        "complete_units": 453,
+        "total_units": 2717,
+        "complete_units": 531,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
         "matched_functions_percent": 0.0,
-        "matched_data_percent": 36.24228,
-        "complete_data_percent": 36.24228,
+        "matched_data_percent": 38.08141,
+        "complete_data_percent": 38.08141,
         "fuzzy_match_percent": 0.0
       }
     },
