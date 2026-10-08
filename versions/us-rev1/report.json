@@ -1,21 +1,21 @@
 {
   "measures": {
     "total_code": 1132124,
-    "matched_code": 739184,
-    "complete_code": 739184,
+    "matched_code": 747592,
+    "complete_code": 747592,
     "total_data": 254468,
     "matched_data": 0,
     "complete_data": 0,
     "total_functions": 4547,
-    "matched_functions": 3816,
-    "total_units": 5640,
-    "complete_units": 2955,
-    "matched_code_percent": 65.29179,
-    "complete_code_percent": 65.29179,
-    "matched_functions_percent": 83.92347,
+    "matched_functions": 3819,
+    "total_units": 5699,
+    "complete_units": 2958,
+    "matched_code_percent": 66.03446,
+    "complete_code_percent": 66.03446,
+    "matched_functions_percent": 83.98944,
     "matched_data_percent": 0.0,
     "complete_data_percent": 0.0,
-    "fuzzy_match_percent": 65.69223
+    "fuzzy_match_percent": 66.434906
   },
   "units": [
     {
@@ -13796,14 +13796,21 @@
         "total_code": "2900",
         "total_functions": 1,
         "total_units": 1,
-        "fuzzy_match_percent": 0.0
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "2900",
+        "complete_code": "2900",
+        "matched_code_percent": 100.0,
+        "complete_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
           "size": "2900",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -13811,14 +13818,16 @@
           "name": "func_8021B468_de",
           "size": "2900",
           "metadata": {},
-          "address": "2149692520"
+          "address": "2149692520",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
-          "asm"
-        ]
+          "c"
+        ],
+        "source_path": "src/func_8021B468_de.c"
       }
     },
     {
@@ -26021,14 +26030,21 @@
         "total_code": "2804",
         "total_functions": 1,
         "total_units": 1,
-        "fuzzy_match_percent": 0.0
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "2804",
+        "complete_code": "2804",
+        "matched_code_percent": 100.0,
+        "complete_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
           "size": "2804",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -26036,14 +26052,16 @@
           "name": "func_80234FEC_de",
           "size": "2804",
           "metadata": {},
-          "address": "2149797852"
+          "address": "2149797852",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
-          "asm"
-        ]
+          "c"
+        ],
+        "source_path": "src/func_80234FEC_de.c"
       }
     },
     {
@@ -85218,14 +85236,21 @@
         "total_code": "2704",
         "total_functions": 1,
         "total_units": 1,
-        "fuzzy_match_percent": 0.0
+        "fuzzy_match_percent": 100.0,
+        "matched_code": "2704",
+        "complete_code": "2704",
+        "matched_code_percent": 100.0,
+        "complete_code_percent": 100.0,
+        "matched_functions": 1,
+        "matched_functions_percent": 100.0,
+        "complete_units": 1
       },
       "sections": [
         {
           "name": ".text",
           "size": "2704",
           "metadata": {},
-          "fuzzy_match_percent": 0.0
+          "fuzzy_match_percent": 100.0
         }
       ],
       "functions": [
@@ -85233,14 +85258,16 @@
           "name": "func_802ABBDC_de",
           "size": "2704",
           "metadata": {},
-          "address": "2150288332"
+          "address": "2150288332",
+          "fuzzy_match_percent": 100.0
         }
       ],
       "metadata": {
-        "complete": false,
+        "complete": true,
         "progress_categories": [
-          "asm"
-        ]
+          "c"
+        ],
+        "source_path": "src/func_802ABBDC_de.c"
       }
     },
     {
@@ -148663,7 +148690,7 @@
     {
       "name": "rodata:rodata/func_80206A20_de/800C6BE0@C77E0",
       "measures": {
-        "total_data": "32",
+        "total_data": "20",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -148673,7 +148700,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "32",
+          "size": "20",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_80206A20_C77F4_us_rev1.c@C77F4",
+      "measures": {
+        "total_data": "12",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "12",
           "metadata": {}
         }
       ],
@@ -149813,7 +149865,7 @@
     {
       "name": "rodata:rodata/func_8020DDF4_eu/800C6EB0@C7AB0",
       "measures": {
-        "total_data": "128",
+        "total_data": "28",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -149823,7 +149875,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "128",
+          "size": "28",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8020DDF4_eu_C7ACC_us_rev1.c@C7ACC",
+      "measures": {
+        "total_data": "100",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "100",
           "metadata": {}
         }
       ],
@@ -152063,7 +152140,7 @@
     {
       "name": "rodata:rodata/func_8021B468_de/800C7438@C8038",
       "measures": {
-        "total_data": "48",
+        "total_data": "32",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -152073,7 +152150,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "48",
+          "size": "32",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8021B468_C8058_us_rev1.c@C8058",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "16",
           "metadata": {}
         }
       ],
@@ -152288,7 +152390,7 @@
     {
       "name": "rodata:rodata/func_8021E2A0_de/800C74E8@C80E8",
       "measures": {
-        "total_data": "420",
+        "total_data": "404",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -152298,7 +152400,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "420",
+          "size": "404",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8021E2A0_C827C_us_rev1.c@C827C",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "16",
           "metadata": {}
         }
       ],
@@ -153138,7 +153265,7 @@
     {
       "name": "rodata:rodata/func_80227038_de/800C7C70@C8870",
       "measures": {
-        "total_data": "64",
+        "total_data": "32",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -153148,7 +153275,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "64",
+          "size": "32",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_80227038_C8890_us_rev1.c@C8890",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "32",
           "metadata": {}
         }
       ],
@@ -157088,7 +157240,7 @@
     {
       "name": "rodata:rodata/func_8023D380_de/800C8740@C9340",
       "measures": {
-        "total_data": "64",
+        "total_data": "32",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -157098,7 +157250,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "64",
+          "size": "32",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8023D380_C9360_us_rev1.c@C9360",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "32",
           "metadata": {}
         }
       ],
@@ -159513,7 +159690,7 @@
     {
       "name": "rodata:rodata/func_8024D284_de/800C8CE8@C98E8",
       "measures": {
-        "total_data": "68",
+        "total_data": "60",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -159523,7 +159700,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "68",
+          "size": "60",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8024D284_C9924_us_rev1.c@C9924",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "8",
           "metadata": {}
         }
       ],
@@ -159563,7 +159765,7 @@
     {
       "name": "rodata:rodata/func_8024D398_de/800C8D30@C9930",
       "measures": {
-        "total_data": "68",
+        "total_data": "60",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -159573,7 +159775,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "68",
+          "size": "60",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8024D398_C996C_us_rev1.c@C996C",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "8",
           "metadata": {}
         }
       ],
@@ -159738,7 +159965,7 @@
     {
       "name": "rodata:rodata/func_8024E2FC_de/800C8E30@C9A30",
       "measures": {
-        "total_data": "56",
+        "total_data": "44",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -159748,7 +159975,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "56",
+          "size": "44",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8024E2FC_C9A5C_us_rev1.c@C9A5C",
+      "measures": {
+        "total_data": "12",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "12",
           "metadata": {}
         }
       ],
@@ -163538,7 +163790,7 @@
     {
       "name": "rodata:rodata/func_80269A80_de/800C96D8@CA2D8",
       "measures": {
-        "total_data": "128",
+        "total_data": "124",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -163548,7 +163800,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "128",
+          "size": "124",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_80269A80_CA354_us_rev1.c@CA354",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -166013,7 +166290,7 @@
     {
       "name": "rodata:rodata/func_8027D97C_de/800C9D28@CA928",
       "measures": {
-        "total_data": "48",
+        "total_data": "44",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -166023,7 +166300,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "48",
+          "size": "44",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8027D97C_CA954_us_rev1.c@CA954",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -166038,7 +166340,7 @@
     {
       "name": "rodata:rodata/func_8027DD48_de/800C9D58@CA958",
       "measures": {
-        "total_data": "168",
+        "total_data": "108",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -166048,7 +166350,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "168",
+          "size": "108",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8027DD48_CA9C4_us_rev1.c@CA9C4",
+      "measures": {
+        "total_data": "60",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "60",
           "metadata": {}
         }
       ],
@@ -166213,7 +166540,7 @@
     {
       "name": "rodata:rodata/func_8027ED6C_de/800C9E68@CAA68",
       "measures": {
-        "total_data": "140",
+        "total_data": "88",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -166223,7 +166550,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "140",
+          "size": "88",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8027ED6C_CAAC0_us_rev1.c@CAAC0",
+      "measures": {
+        "total_data": "52",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "52",
           "metadata": {}
         }
       ],
@@ -166238,7 +166590,7 @@
     {
       "name": "rodata:rodata/func_802800C0_de/800C9EF4@CAAF4",
       "measures": {
-        "total_data": "60",
+        "total_data": "40",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -166248,7 +166600,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "60",
+          "size": "40",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802800C0_CAB1C_us_rev1.c@CAB1C",
+      "measures": {
+        "total_data": "20",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "20",
           "metadata": {}
         }
       ],
@@ -173163,7 +173540,7 @@
     {
       "name": "rodata:rodata/func_802A7AA4_de/800CB108@CBD08",
       "measures": {
-        "total_data": "28",
+        "total_data": "24",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -173173,7 +173550,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "28",
+          "size": "24",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802A7AA4_CBD20_us_rev1.c@CBD20",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -173363,7 +173765,7 @@
     {
       "name": "rodata:rodata/func_802A88F0_de/800CB188@CBD88",
       "measures": {
-        "total_data": "52",
+        "total_data": "28",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -173373,7 +173775,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "52",
+          "size": "28",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802A88F0_CBDA4_us_rev1.c@CBDA4",
+      "measures": {
+        "total_data": "24",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "24",
           "metadata": {}
         }
       ],
@@ -173413,7 +173840,7 @@
     {
       "name": "rodata:rodata/func_802A88F0_de/800CB1C0@CBDC0",
       "measures": {
-        "total_data": "52",
+        "total_data": "28",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -173423,7 +173850,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "52",
+          "size": "28",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802A88F0_CBDDC_us_rev1.c@CBDDC",
+      "measures": {
+        "total_data": "24",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "24",
           "metadata": {}
         }
       ],
@@ -173713,7 +174165,7 @@
     {
       "name": "rodata:rodata/func_802A88F0_de/800CB298@CBE98",
       "measures": {
-        "total_data": "60",
+        "total_data": "28",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -173723,7 +174175,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "60",
+          "size": "28",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802A88F0_CBEB4_us_rev1.c@CBEB4",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "32",
           "metadata": {}
         }
       ],
@@ -173763,7 +174240,7 @@
     {
       "name": "rodata:rodata/func_802A8F28_de/800CB2D8@CBED8",
       "measures": {
-        "total_data": "52",
+        "total_data": "28",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -173773,7 +174250,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "52",
+          "size": "28",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802A8F28_CBEF4_us_rev1.c@CBEF4",
+      "measures": {
+        "total_data": "24",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "24",
           "metadata": {}
         }
       ],
@@ -173813,7 +174315,7 @@
     {
       "name": "rodata:rodata/func_802A8F28_de/800CB310@CBF10",
       "measures": {
-        "total_data": "56",
+        "total_data": "36",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -173823,7 +174325,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "56",
+          "size": "36",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802A8F28_CBF34_us_rev1.c@CBF34",
+      "measures": {
+        "total_data": "20",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "20",
           "metadata": {}
         }
       ],
@@ -174063,7 +174590,7 @@
     {
       "name": "rodata:rodata/func_802AA864_de/800CB388@CBF88",
       "measures": {
-        "total_data": "52",
+        "total_data": "28",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -174073,7 +174600,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "52",
+          "size": "28",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802AA864_CBFA4_us_rev1.c@CBFA4",
+      "measures": {
+        "total_data": "24",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "24",
           "metadata": {}
         }
       ],
@@ -174288,7 +174840,7 @@
     {
       "name": "rodata:rodata/func_802ACE38_de/800CB448@CC048",
       "measures": {
-        "total_data": "40",
+        "total_data": "32",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -174298,7 +174850,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "40",
+          "size": "32",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802ACE38_CC068_us_rev1.c@CC068",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "8",
           "metadata": {}
         }
       ],
@@ -175713,7 +176290,7 @@
     {
       "name": "rodata:rodata/func_802B2780_de/800CC770@CD370",
       "measures": {
-        "total_data": "40",
+        "total_data": "36",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -175723,7 +176300,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "40",
+          "size": "36",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802B2780_CD394_us_rev1.c@CD394",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -176038,7 +176640,7 @@
     {
       "name": "rodata:rodata/func_802B3F10_de/800CC7F0@CD3F0",
       "measures": {
-        "total_data": "36",
+        "total_data": "24",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -176048,7 +176650,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "36",
+          "size": "24",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802B3F10_CD408_us_rev1.c@CD408",
+      "measures": {
+        "total_data": "12",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "12",
           "metadata": {}
         }
       ],
@@ -176713,7 +177340,7 @@
     {
       "name": "rodata:rodata/func_802B5B94_de/800CC9E8@CD5E8",
       "measures": {
-        "total_data": "36",
+        "total_data": "32",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -176723,7 +177350,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "36",
+          "size": "32",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_802B5B94_CD608_us_rev1.c@CD608",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -178911,7 +179563,7 @@
       }
     },
     {
-      "name": "rodata:rodata/func_8021EEFC_de/800CF1C8@CFDC8",
+      "name": "rodata:src/rw_hud_flash_offset_CFDC8_us_rev1.c@CFDC8",
       "measures": {
         "total_data": "4",
         "matched_data": "0",
@@ -179461,9 +180113,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800D06C0@D12C0",
+      "name": "data:src/ragewars_blast_falloff_us_rev1.c@D12C0",
       "measures": {
-        "total_data": "592",
+        "total_data": "100",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -179473,7 +180125,57 @@
       "sections": [
         {
           "name": "data",
-          "size": "592",
+          "size": "100",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_model_sway_samples_us_rev1.c@D1324",
+      "measures": {
+        "total_data": "480",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "480",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D06C0_unclaimed_D1504@D1504",
+      "measures": {
+        "total_data": "12",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "12",
           "metadata": {}
         }
       ],
@@ -180336,9 +181038,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800D2648@D3248",
+      "name": "data:src/ragewars_distance_attenuation_us_rev1.c@D3248",
       "measures": {
-        "total_data": "700",
+        "total_data": "260",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -180348,7 +181050,107 @@
       "sections": [
         {
           "name": "data",
-          "size": "700",
+          "size": "260",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_cone_attenuation_us_rev1.c@D334C",
+      "measures": {
+        "total_data": "260",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "260",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D2648_unclaimed_D3450@D3450",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_color_jitter_us_rev1.c@D3454",
+      "measures": {
+        "total_data": "90",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "90",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D2648_unclaimed_D34AE@D34AE",
+      "measures": {
+        "total_data": "86",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "86",
           "metadata": {}
         }
       ],
@@ -180886,9 +181688,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800D2C20@D3820",
+      "name": "data:src/ragewars_event_handlers_D3820_us_rev1.c@D3820",
       "measures": {
-        "total_data": "112",
+        "total_data": "108",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -180898,7 +181700,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "112",
+          "size": "108",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D2C20_unclaimed_D388C@D388C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -181936,9 +182763,9 @@
       }
     },
     {
-      "name": "data:rodata/writable/800D7FA0@D8BA0",
+      "name": "data:src/ragewars_tlb_snapshot_us_rev1.c@D8BA0",
       "measures": {
-        "total_data": "256",
+        "total_data": "248",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -181948,7 +182775,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "256",
+          "size": "248",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/writable/800D7FA0_unclaimed_D8C98@D8C98",
+      "measures": {
+        "total_data": "8",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "8",
           "metadata": {}
         }
       ],
@@ -182788,7 +183640,7 @@
     {
       "name": "data:rodata/unresolved/800D9370@D9F70",
       "measures": {
-        "total_data": "376",
+        "total_data": "16",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -182798,7 +183650,157 @@
       "sections": [
         {
           "name": "data",
-          "size": "376",
+          "size": "16",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_decoder_bit_masks_us_rev1.c@D9F80",
+      "measures": {
+        "total_data": "34",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "34",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D9370_unclaimed_D9FA2@D9FA2",
+      "measures": {
+        "total_data": "2",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "2",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_decoder_sign_bits_us_rev1.c@D9FA4",
+      "measures": {
+        "total_data": "34",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "34",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800D9370_unclaimed_D9FC6@D9FC6",
+      "measures": {
+        "total_data": "2",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "2",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_decoder_band_ends_us_rev1.c@D9FC8",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_decoder_quantizer_steps_us_rev1.c@D9FE8",
+      "measures": {
+        "total_data": "256",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "256",
           "metadata": {}
         }
       ],
@@ -186088,7 +187090,7 @@
     {
       "name": "rodata:rodata/func_8041D134_de/800E14D0@E20D0",
       "measures": {
-        "total_data": "44",
+        "total_data": "28",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -186098,7 +187100,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "44",
+          "size": "28",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8041D134_E20EC_us_rev1.c@E20EC",
+      "measures": {
+        "total_data": "16",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "16",
           "metadata": {}
         }
       ],
@@ -186863,7 +187890,7 @@
     {
       "name": "rodata:rodata/func_80426918_de/800E19B0@E25B0",
       "measures": {
-        "total_data": "52",
+        "total_data": "48",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -186873,7 +187900,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "52",
+          "size": "48",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_80426918_E25E0_us_rev1.c@E25E0",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -187238,7 +188290,7 @@
     {
       "name": "rodata:rodata/func_8042AE60_eu/800E1AD0@E26D0",
       "measures": {
-        "total_data": "68",
+        "total_data": "64",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -187248,7 +188300,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "68",
+          "size": "64",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8042AE60_eu_E2710_us_rev1.c@E2710",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -189888,7 +190965,7 @@
     {
       "name": "rodata:rodata/func_8043F294_de/800E2420@E3020",
       "measures": {
-        "total_data": "56",
+        "total_data": "44",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -189898,7 +190975,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "56",
+          "size": "44",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_8043F294_E304C_us_rev1.c@E304C",
+      "measures": {
+        "total_data": "12",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "12",
           "metadata": {}
         }
       ],
@@ -190513,7 +191615,7 @@
     {
       "name": "rodata:rodata/func_80442FB0_de/800E26F8@E32F8",
       "measures": {
-        "total_data": "48",
+        "total_data": "36",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -190523,7 +191625,32 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "48",
+          "size": "36",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "rodata:src/rw_tail_80442FB0_E331C_us_rev1.c@E331C",
+      "measures": {
+        "total_data": "12",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "rodata",
+          "size": "12",
           "metadata": {}
         }
       ],
@@ -191786,9 +192913,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E2AD0@E36D0",
+      "name": "data:src/ragewars_event_handlers_E36D0_us_rev1.c@E36D0",
       "measures": {
-        "total_data": "1968",
+        "total_data": "72",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -191798,7 +192925,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "1968",
+          "size": "72",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E2AD0_unclaimed_E3718@E3718",
+      "measures": {
+        "total_data": "1896",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "1896",
           "metadata": {}
         }
       ],
@@ -191886,9 +193038,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E3300@E3F00",
+      "name": "data:src/ragewars_event_handlers_E3F00_us_rev1.c@E3F00",
       "measures": {
-        "total_data": "528",
+        "total_data": "36",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -191898,7 +193050,182 @@
       "sections": [
         {
           "name": "data",
-          "size": "528",
+          "size": "36",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3300_unclaimed_E3F24@E3F24",
+      "measures": {
+        "total_data": "108",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "108",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_event_handlers_E3F90_us_rev1.c@E3F90",
+      "measures": {
+        "total_data": "108",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "108",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3300_unclaimed_E3FFC@E3FFC",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_event_handlers_E4000_us_rev1.c@E4000",
+      "measures": {
+        "total_data": "84",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "84",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3300_unclaimed_E4054@E4054",
+      "measures": {
+        "total_data": "12",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "12",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_event_handlers_E4060_us_rev1.c@E4060",
+      "measures": {
+        "total_data": "60",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "60",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3300_unclaimed_E409C@E409C",
+      "measures": {
+        "total_data": "116",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "116",
           "metadata": {}
         }
       ],
@@ -191936,9 +193263,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E351C@E411C",
+      "name": "data:src/ragewars_event_handlers_E411C_us_rev1.c@E411C",
       "measures": {
-        "total_data": "116",
+        "total_data": "84",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -191948,7 +193275,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "116",
+          "size": "84",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E351C_unclaimed_E4170@E4170",
+      "measures": {
+        "total_data": "32",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "32",
           "metadata": {}
         }
       ],
@@ -191988,7 +193340,7 @@
     {
       "name": "data:rodata/unresolved/800E3594@E4194",
       "measures": {
-        "total_data": "1068",
+        "total_data": "400",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -191998,7 +193350,57 @@
       "sections": [
         {
           "name": "data",
-          "size": "1068",
+          "size": "400",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_event_handlers_E4324_us_rev1.c@E4324",
+      "measures": {
+        "total_data": "108",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "108",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E3594_unclaimed_E4390@E4390",
+      "measures": {
+        "total_data": "560",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "560",
           "metadata": {}
         }
       ],
@@ -192061,9 +193463,9 @@
       }
     },
     {
-      "name": "rodata:src/rw_formats_804279B8_E466C_us_rev1.c@E466C",
+      "name": "rodata:src/rw_viewport_scalar_E466C_us_rev1.c@E466C",
       "measures": {
-        "total_data": "3",
+        "total_data": "4",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -192073,7 +193475,7 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "3",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -192086,9 +193488,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E3A6F@E466F",
+      "name": "data:rodata/unresolved/800E3A6F_remaining_E4670@E4670",
       "measures": {
-        "total_data": "13",
+        "total_data": "12",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -192098,7 +193500,7 @@
       "sections": [
         {
           "name": "data",
-          "size": "13",
+          "size": "12",
           "metadata": {}
         }
       ],
@@ -192111,9 +193513,9 @@
       }
     },
     {
-      "name": "rodata:src/rw_formats_804279B8_E467C_us_rev1.c@E467C",
+      "name": "rodata:src/rw_viewport_scalar_E467C_us_rev1.c@E467C",
       "measures": {
-        "total_data": "3",
+        "total_data": "4",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -192123,7 +193525,7 @@
       "sections": [
         {
           "name": "rodata",
-          "size": "3",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -192136,9 +193538,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E3A7F@E467F",
+      "name": "data:rodata/unresolved/800E3A7F_remaining_E4680@E4680",
       "measures": {
-        "total_data": "2129",
+        "total_data": "2128",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -192148,7 +193550,7 @@
       "sections": [
         {
           "name": "data",
-          "size": "2129",
+          "size": "2128",
           "metadata": {}
         }
       ],
@@ -192188,7 +193590,7 @@
     {
       "name": "data:rodata/unresolved/800E42D6@E4ED6",
       "measures": {
-        "total_data": "298",
+        "total_data": "142",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -192198,7 +193600,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "298",
+          "size": "142",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:src/ragewars_event_handlers_E4F64_us_rev1.c@E4F64",
+      "measures": {
+        "total_data": "156",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "156",
           "metadata": {}
         }
       ],
@@ -192236,9 +193663,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E4404@E5004",
+      "name": "data:src/ragewars_event_handlers_E5004_us_rev1.c@E5004",
       "measures": {
-        "total_data": "76",
+        "total_data": "72",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -192248,7 +193675,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "76",
+          "size": "72",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E4404_unclaimed_E504C@E504C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -192286,9 +193738,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E4454@E5054",
+      "name": "data:src/ragewars_event_handlers_E5054_us_rev1.c@E5054",
       "measures": {
-        "total_data": "76",
+        "total_data": "72",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -192298,7 +193750,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "76",
+          "size": "72",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E4454_unclaimed_E509C@E509C",
+      "measures": {
+        "total_data": "4",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "4",
           "metadata": {}
         }
       ],
@@ -192336,9 +193813,9 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/800E44A4@E50A4",
+      "name": "data:src/ragewars_event_handlers_E50A4_us_rev1.c@E50A4",
       "measures": {
-        "total_data": "108",
+        "total_data": "96",
         "matched_data": "0",
         "complete_data": "0",
         "matched_data_percent": 0.0,
@@ -192348,7 +193825,32 @@
       "sections": [
         {
           "name": "data",
-          "size": "108",
+          "size": "96",
+          "metadata": {}
+        }
+      ],
+      "functions": [],
+      "metadata": {
+        "complete": false,
+        "progress_categories": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "data:rodata/unresolved/800E44A4_unclaimed_E5104@E5104",
+      "measures": {
+        "total_data": "12",
+        "matched_data": "0",
+        "complete_data": "0",
+        "matched_data_percent": 0.0,
+        "complete_data_percent": 0.0,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": "data",
+          "size": "12",
           "metadata": {}
         }
       ],
@@ -195761,7 +197263,7 @@
       }
     },
     {
-      "name": "data:rodata/writable/8015414C@1BCF94",
+      "name": "data:src/resident_menu_pak_options.c@1BCF94",
       "measures": {
         "total_data": "7860",
         "matched_data": "0",
@@ -195786,7 +197288,7 @@
       }
     },
     {
-      "name": "data:rodata/unresolved/80156000@1BEE48",
+      "name": "data:src/resident_menu_inventory_settings.c@1BEE48",
       "measures": {
         "total_data": "6680",
         "matched_data": "0",
@@ -195816,16 +197318,16 @@
       "id": "c",
       "name": "Matched C",
       "measures": {
-        "total_code": 739184,
-        "matched_code": 739184,
-        "complete_code": 739184,
+        "total_code": 747592,
+        "matched_code": 747592,
+        "complete_code": 747592,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 3816,
-        "matched_functions": 3816,
-        "total_units": 3816,
-        "complete_units": 3816,
+        "total_functions": 3819,
+        "matched_functions": 3819,
+        "total_units": 3819,
+        "complete_units": 3819,
         "matched_code_percent": 100.0,
         "complete_code_percent": 100.0,
         "matched_functions_percent": 100.0,
@@ -195882,15 +197384,15 @@
       "id": "asm",
       "name": "Assembly",
       "measures": {
-        "total_code": 385964,
+        "total_code": 377556,
         "matched_code": 0,
         "complete_code": 0,
         "total_data": 0,
         "matched_data": 0,
         "complete_data": 0,
-        "total_functions": 701,
+        "total_functions": 698,
         "matched_functions": 0,
-        "total_units": 701,
+        "total_units": 698,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
@@ -195912,7 +197414,7 @@
         "complete_data": 0,
         "total_functions": 0,
         "matched_functions": 0,
-        "total_units": 1954,
+        "total_units": 2013,
         "complete_units": 0,
         "matched_code_percent": 0.0,
         "complete_code_percent": 0.0,
