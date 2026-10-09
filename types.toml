@@ -36,6 +36,7 @@ schema = 1
 "func_80200500_de" = { evidence = "authored", signature = "int func_80200500_de()" }
 "func_80200538_de" = { evidence = "authored", signature = "void func_80200538_de(int arg0, int arg1)" }
 "func_80200568_de" = { evidence = "authored", signature = "void func_80200568_de(s32 address, s32 value)" }
+"func_802005A0_de" = { evidence = "authored", signature = "s32 func_802005A0_de(s32 arg0)" }
 "func_802005DC_de" = { evidence = "authored", signature = "int func_802005DC_de(int arg0)" }
 "func_80200800_de" = { evidence = "authored", signature = "int func_80200800_de(int arg0)" }
 "func_80200840_de" = { evidence = "authored", signature = "int func_80200840_de(int arg0)" }
@@ -166,10 +167,11 @@ schema = 1
 "func_80212D80_eu" = { evidence = "authored", signature = "int func_80212D80_eu(void * arg0)" }
 "func_80212D80_eu_x" = { evidence = "authored", signature = "void func_80212D80_eu_x(struct Actor_func_80212D78_eu_x *arg0)" }
 "func_80212D94_de" = { evidence = "authored", signature = "void func_80212D94_de(void *arg0)" }
-"func_80212FDC_eu" = { evidence = "authored", signature = "void func_80212FDC_eu(void * arg0)" }
+"func_80212FDC_eu" = { evidence = "authored", signature = "void func_80212FDC_eu(void *object)" }
 "func_802131AC_de" = { evidence = "authored", signature = "void func_802131AC_de(void *arg0)" }
 "func_802131E0_de" = { evidence = "authored", signature = "void func_802131E0_de(Root802131E0 *arg0)" }
 "func_8021321C_de" = { evidence = "authored", signature = "void func_8021321C_de(void *arg0)" }
+"func_80213340_de" = { evidence = "authored", signature = "void func_80213340_de(void *arg0)" }
 "func_80213500_de" = { evidence = "authored", signature = "void func_80213500_de(void *arg0)" }
 "func_802136EC_de" = { evidence = "authored", signature = "void func_802136EC_de(void *arg0)" }
 "func_80213810_de" = { evidence = "authored", signature = "void func_80213810_de(void *arg0)" }
@@ -201,11 +203,13 @@ schema = 1
 "func_80218F84_de" = { evidence = "declared", signature = "void func_80218F84_de(TeamMenu *)" }
 "func_8021917C_de" = { evidence = "declared", signature = "s32 func_8021917C_de(TeamMenu *, SharedPlayer_func_80218B84_de *)" }
 "func_80219408_de" = { evidence = "authored", signature = "ApproachLocation *func_80219408_de(void *)" }
+"func_8021A9A4_de" = { evidence = "authored", signature = "void func_8021A9A4_de(void *arg0, s32 arg1)" }
 "func_8021CF28_de" = { evidence = "declared", signature = "void func_8021CF28_de(Shared_Quad *, void *, void **, Shared_Quad *)" }
 "func_8021D774_de" = { evidence = "declared", signature = "void func_8021D774_de(Player_func_80220A80_de *)" }
 "func_8021E08C_de" = { evidence = "authored", signature = "void func_8021E08C_de(void *, Vec3 *, s32, f32, f32, f32)" }
 "func_8021E5F8_de" = { evidence = "declared", signature = "void func_8021E5F8_de(void *, void *)" }
 "func_80220ED4_de" = { evidence = "declared", signature = "void func_80220ED4_de(SharedPlayer_func_80226A34_de *)" }
+"func_80222AA4_de" = { evidence = "authored", signature = "s32 func_80222AA4_de(void *, s16)" }
 "func_80222BE8_de" = { evidence = "declared", signature = "void func_80222BE8_de(void *, s16, s16)" }
 "func_80222FE0_de" = { evidence = "declared", signature = "void func_80222FE0_de(void *, void *, s32 *)" }
 "func_80223E34_de" = { evidence = "declared", signature = "void func_80223E34_de(SharedPlayer_func_80224408_de *, Body_func_80224408_de *)" }
@@ -249,6 +253,7 @@ schema = 1
 "func_8022AAD4_de" = { evidence = "declared", signature = "s32 func_8022AAD4_de(void *, s32)" }
 "func_8022AE28_de" = { evidence = "authored", signature = "int func_8022AE28_de(void *arg0, void *arg1)" }
 "func_8022AF40_de" = { evidence = "declared", signature = "void func_8022AF40_de(void *)" }
+"func_8022B00C_de" = { evidence = "authored", signature = "void func_8022B00C_de(void *arg0)" }
 "func_8022B040_de" = { evidence = "declared", signature = "void func_8022B040_de(s32, Effect_func_802800C0_de *)" }
 "func_8022B09C_de" = { evidence = "declared", signature = "void func_8022B09C_de(SharedPlayer_func_80267958_de *, Vec3 *)" }
 "func_8022B11C_de" = { evidence = "declared", signature = "void func_8022B11C_de(Owner_func_802688E4_de *, s32)" }
@@ -281,6 +286,7 @@ schema = 1
 "func_8022C8F4_de" = { evidence = "authored", signature = "void func_8022C8F4_de(void)" }
 "func_8022C8FC_de" = { evidence = "declared", signature = "void func_8022C8FC_de(void *, void *)" }
 "func_8022CA14_de" = { evidence = "declared", signature = "void func_8022CA14_de(void *, void *)" }
+"func_8022CC34_de" = { evidence = "authored", signature = "void func_8022CC34_de(void *arg0, void *arg1)" }
 "func_8022CD78_de" = { evidence = "authored", signature = "void func_8022CD78_de(void *arg0, void *arg1)" }
 "func_8022CDBC_de" = { evidence = "declared", signature = "void func_8022CDBC_de(void *, void *)" }
 "func_8022CF18_de" = { evidence = "authored", signature = "void func_8022CF18_de(void)" }
@@ -511,15 +517,18 @@ schema = 1
 "func_80245908_de" = { evidence = "authored", signature = "int func_80245908_de()" }
 "func_80245990_de" = { evidence = "authored", signature = "void func_80245990_de(void *arg0)" }
 "func_802459A0_de" = { evidence = "authored", signature = "f32 func_802459A0_de()" }
+"func_80245A00_de" = { evidence = "authored", signature = "void func_80245A00_de(float arg0)" }
 "func_80245A10_de" = { evidence = "authored", signature = "void func_80245A10_de()" }
+"func_80245A20_de" = { evidence = "authored", signature = "void func_80245A20_de(int arg0)" }
 "func_80245A30_de" = { evidence = "authored", signature = "void func_80245A30_de()" }
+"func_80245A5C_de" = { evidence = "authored", signature = "void func_80245A5C_de(int arg0, int arg1, int arg2, int arg3)" }
 "func_80245AC8_de" = { evidence = "authored", signature = "void func_80245AC8_de()" }
 "func_80245AD8_de" = { evidence = "authored", signature = "float func_80245AD8_de()" }
 "func_80245AF8_de" = { evidence = "authored", signature = "unsigned int func_80245AF8_de()" }
 "func_80245B0C_de" = { evidence = "declared", signature = "s32 func_80245B0C_de(void)" }
 "func_80245B20_de" = { evidence = "authored", signature = "void func_80245B20_de(void)" }
 "func_80245B28_de" = { evidence = "authored", signature = "void func_80245B28_de()" }
-"func_80245B74_de" = { evidence = "authored", signature = "void func_80245B74_de(int arg0)" }
+"func_80245B74_de" = { evidence = "authored", signature = "void func_80245B74_de(s32 unused)" }
 "func_80245BC0_de" = { evidence = "authored", signature = "void func_80245BC0_de()" }
 "func_80245C38_de" = { evidence = "authored", signature = "void func_80245C38_de(void)" }
 "func_80245D30_de" = { evidence = "declared", signature = "void func_80245D30_de(void *, void *, void *, s32)" }
@@ -529,6 +538,7 @@ schema = 1
 "func_8024B06C_de" = { evidence = "declared", signature = "s32 func_8024B06C_de(Actor_func_802676EC_de *, Vec3, Shield *)" }
 "func_8024B654_de" = { evidence = "authored", signature = "void func_8024B654_de(void)" }
 "func_8024B67C_de" = { evidence = "authored", signature = "void func_8024B67C_de(void *arg0)" }
+"func_8024B6F4_de" = { evidence = "authored", signature = "s32 func_8024B6F4_de(void *arg0, s32 arg1, s32 arg2)" }
 "func_8024BA7C_de" = { evidence = "declared", signature = "void func_8024BA7C_de(char *, char *, void *, u8)" }
 "func_8024BD08_de" = { evidence = "authored", signature = "s32 func_8024BD08_de(void *arg0)" }
 "func_8024BE2C_de" = { evidence = "authored", signature = "float func_8024BE2C_de(void)" }
@@ -574,6 +584,7 @@ schema = 1
 "func_80250E14_de" = { evidence = "authored", signature = "s8 func_80250E14_de(void *arg0)" }
 "func_80250E70_de" = { evidence = "declared", signature = "void func_80250E70_de(s32, s32)" }
 "func_802511AC_de" = { evidence = "declared", signature = "void func_802511AC_de(s32)" }
+"func_80251328_de" = { evidence = "authored", signature = "s32 func_80251328_de(s32 unused0, s32 unused1, s32 keep_recent)" }
 "func_802515F0_de" = { evidence = "declared", signature = "void func_802515F0_de(s32, s32)" }
 "func_802517B4_de" = { evidence = "authored", signature = "void *func_802517B4_de(s32 arg0, s32 arg1)" }
 "func_802524B0_de" = { evidence = "authored", signature = "void func_802524B0_de(void *arg)" }
@@ -594,7 +605,9 @@ schema = 1
 "func_80254990_de" = { evidence = "declared", signature = "void func_80254990_de(void *, void *)" }
 "func_80254A28_de" = { evidence = "authored", signature = "void *func_80254A28_de(s32 unused0, s32 arg1)" }
 "func_80254B58_de" = { evidence = "declared", signature = "s32 func_80254B58_de(s32, s32, s32)" }
+"func_80254B8C_de" = { evidence = "authored", signature = "s32 func_80254B8C_de(s32 arg0, u32 arg1, s32 arg2, u32 arg3)" }
 "func_80254D00_de" = { evidence = "authored", signature = "void func_80254D00_de(void)" }
+"func_80254D44_de" = { evidence = "authored", signature = "void func_80254D44_de(s32, s32)" }
 "func_80254DA4_de" = { evidence = "declared", signature = "void func_80254DA4_de(void *, Node80253610 *)" }
 "func_80254ED0_de" = { evidence = "declared", signature = "Request_func_80251F6C_de * func_80254ED0_de(s32, s32)" }
 "func_80254F9C_de" = { evidence = "declared", signature = "void func_80254F9C_de(s32, Request_func_802524B0_de *)" }
@@ -681,13 +694,16 @@ schema = 1
 "func_8025DF34_de" = { evidence = "authored", signature = "s32 func_8025DF34_de(s32)" }
 "func_8025E04C_de" = { evidence = "authored", signature = "int func_8025E04C_de(int arg0)" }
 "func_8025E0F4_de" = { evidence = "authored", signature = "int func_8025E0F4_de(int arg0)" }
+"func_8025E11C_de" = { evidence = "authored", signature = "void func_8025E11C_de(s32 arg0)" }
 "func_8025E150_de" = { evidence = "authored", signature = "void func_8025E150_de(void)" }
 "func_8025E174_de" = { evidence = "authored", signature = "void func_8025E174_de(s32 arg0)" }
 "func_8025E19C_de" = { evidence = "authored", signature = "void func_8025E19C_de(s32 arg0)" }
 "func_8025E1C4_de" = { evidence = "declared", signature = "void func_8025E1C4_de(s32)" }
 "func_8025E1EC_de" = { evidence = "authored", signature = "void func_8025E1EC_de(s32 arg0)" }
+"func_8025E214_de" = { evidence = "authored", signature = "void func_8025E214_de(s32 arg0)" }
 "func_8025E23C_de" = { evidence = "authored", signature = "void func_8025E23C_de()" }
 "func_8025E29C_de" = { evidence = "declared", signature = "void func_8025E29C_de(s32)" }
+"func_8025E2D4_de" = { evidence = "authored", signature = "void func_8025E2D4_de(s32 a)" }
 "func_8025E318_de" = { evidence = "authored", signature = "void func_8025E318_de()" }
 "func_8025E33C_de" = { evidence = "authored", signature = "void func_8025E33C_de()" }
 "func_8025E360_de" = { evidence = "authored", signature = "void func_8025E360_de()" }
@@ -757,11 +773,12 @@ schema = 1
 "func_80264104_de" = { evidence = "declared", signature = "void func_80264104_de(void *)" }
 "func_8026435C_de" = { evidence = "declared", signature = "s32 func_8026435C_de(void *)" }
 "func_8026436C_de" = { evidence = "authored", signature = "int func_8026436C_de(void *arg0)" }
-"func_80264388_de" = { evidence = "authored", signature = "s32 func_80264388_de(s32)" }
-"func_802643A0_de" = { evidence = "authored", signature = "s32 func_802643A0_de(s32)" }
+"func_80264388_de" = { evidence = "authored", signature = "int func_80264388_de(void *object)" }
+"func_802643A0_de" = { evidence = "authored", signature = "int func_802643A0_de(void *object)" }
 "func_802643E8_de" = { evidence = "authored", signature = "int func_802643E8_de(void *arg0)" }
 "func_802643F8_de" = { evidence = "authored", signature = "int func_802643F8_de(void *arg0)" }
 "func_80264404_de" = { evidence = "authored", signature = "void func_80264404_de()" }
+"func_802644FC_de" = { evidence = "authored", signature = "s32 func_802644FC_de(s32 arg0)" }
 "func_8026454C_de" = { evidence = "authored", signature = "void func_8026454C_de()" }
 "func_802645D0_de" = { evidence = "declared", signature = "s32 func_802645D0_de(s32)" }
 "func_80264614_de" = { evidence = "declared", signature = "s32 func_80264614_de(s32)" }
@@ -769,8 +786,10 @@ schema = 1
 "func_80264690_de" = { evidence = "authored", signature = "int func_80264690_de()" }
 "func_802646D4_de" = { evidence = "authored", signature = "s32 func_802646D4_de(s32 arg0)" }
 "func_80264728_de" = { evidence = "declared", signature = "s32 func_80264728_de(void)" }
+"func_8026475C_de" = { evidence = "authored", signature = "int func_8026475C_de(int arg0)" }
 "func_8026479C_de" = { evidence = "authored", signature = "void func_8026479C_de()" }
 "func_8026480C_de" = { evidence = "authored", signature = "void func_8026480C_de()" }
+"func_80264854_de" = { evidence = "authored", signature = "void func_80264854_de(s32 a)" }
 "func_802648C8_de" = { evidence = "declared", signature = "void func_802648C8_de(void)" }
 "func_8026495C_de" = { evidence = "authored", signature = "void func_8026495C_de()" }
 "func_802649FC_de" = { evidence = "authored", signature = "void func_802649FC_de()" }
@@ -825,6 +844,7 @@ schema = 1
 "func_802689BC_de" = { evidence = "authored", signature = "void func_802689BC_de(void *arg0, int arg1, int arg2, int arg3, int arg4, int arg5, unsigned char arg6)" }
 "func_80268A40_de" = { evidence = "declared", signature = "void func_80268A40_de(void *, Vec3, Vec3 *, f32 *)" }
 "func_80268BE0_de" = { evidence = "declared", signature = "s32 func_80268BE0_de(void *, s32)" }
+"func_80268C7C_de" = { evidence = "authored", signature = "void func_80268C7C_de(void *a, s32 b)" }
 "func_80268CBC_de" = { evidence = "declared", signature = "LightNode * func_80268CBC_de(void *)" }
 "func_8026AC38_de" = { evidence = "declared", signature = "void func_8026AC38_de(void)" }
 "func_8026BC60_de" = { evidence = "authored", signature = "void func_8026BC60_de()" }
@@ -876,6 +896,7 @@ schema = 1
 "func_80273E64_de" = { evidence = "authored", signature = "void func_80273E64_de(f32 *dst, f32 *src)" }
 "func_80273EE4_de" = { evidence = "declared", signature = "f32 func_80273EE4_de(f32, f32, f32)" }
 "func_80273F94_de" = { evidence = "authored", signature = "f32 func_80273F94_de(f32 arg0, f32 arg1)" }
+"func_80274020_de" = { evidence = "authored", signature = "void func_80274020_de(f32 *value)" }
 "func_802741A4_de" = { evidence = "authored", signature = "void func_802741A4_de(f32 *arg0)" }
 "func_80274244_de" = { evidence = "authored", signature = "void func_80274244_de(f32 *, f32 *)" }
 "func_80274318_de" = { evidence = "authored", signature = "void func_80274318_de(void *arg0, f32 t, void *a, void *b)" }
@@ -884,11 +905,14 @@ schema = 1
 "func_802744B4_de" = { evidence = "authored", signature = "void func_802744B4_de(void)" }
 "func_802744D4_de" = { evidence = "declared", signature = "s32 func_802744D4_de(void)" }
 "func_8027451C_de" = { evidence = "authored", signature = "s32 func_8027451C_de()" }
-"func_802745D0_de" = { evidence = "authored", signature = "f32 func_802745D0_de(f32)" }
+"func_80274564_de" = { evidence = "authored", signature = "f32 func_80274564_de(f32 arg0)" }
+"func_802745D0_de" = { evidence = "authored", signature = "f32 func_802745D0_de(f32 arg0)" }
+"func_802746A0_de" = { evidence = "authored", signature = "f32 func_802746A0_de(f32 arg0, f32 arg1, f32 arg2)" }
+"func_802747A0_de" = { evidence = "authored", signature = "f32 func_802747A0_de(f32 arg0, f32 arg1)" }
 "func_802748F4_de" = { evidence = "authored", signature = "s32 func_802748F4_de(s32 arg0, s32 arg1, s32 arg2)" }
 "func_80274944_de" = { evidence = "authored", signature = "f32 func_80274944_de(f32 arg0)" }
 "func_802749B4_de" = { evidence = "authored", signature = "f32 func_802749B4_de(f32 arg0, f32 arg1)" }
-"func_80274A90_de" = { evidence = "authored", signature = "f32 func_80274A90_de(f32, f32)" }
+"func_80274A90_de" = { evidence = "authored", signature = "f32 func_80274A90_de(f32 arg0, f32 arg1)" }
 "func_80274B7C_de" = { evidence = "authored", signature = "void func_80274B7C_de(void *arg0, void *arg1, void *arg2)" }
 "func_80274BF4_de" = { evidence = "authored", signature = "void func_80274BF4_de(void *arg0)" }
 "func_80274C7C_de" = { evidence = "authored", signature = "void func_80274C7C_de(void *arg0)" }
@@ -930,7 +954,7 @@ schema = 1
 "func_802794B0_de" = { evidence = "authored", signature = "void func_802794B0_de(ListHeader *list)" }
 "func_802795B0_de" = { evidence = "authored", signature = "void func_802795B0_de(ListHeader *lists, void *pool, s32 stride, s32 count)" }
 "func_80279798_de" = { evidence = "authored", signature = "s16 func_80279798_de(s16 *arg0)" }
-"func_80279990_de" = { evidence = "authored", signature = "void func_80279990_de(void *)" }
+"func_80279990_de" = { evidence = "authored", signature = "void func_80279990_de(void *arg0)" }
 "func_80279DD0_de" = { evidence = "authored", signature = "void func_80279DD0_de(void *, f32)" }
 "func_8027A084_de" = { evidence = "authored", signature = "void func_8027A084_de(void *)" }
 "func_8027A4D0_de" = { evidence = "authored", signature = "void func_8027A4D0_de(void *)" }
@@ -943,7 +967,9 @@ schema = 1
 "func_80283BA0_de" = { evidence = "authored", signature = "void func_80283BA0_de(void *arg0, s32 arg1)" }
 "func_80283BCC_de" = { evidence = "authored", signature = "void func_80283BCC_de(void *arg0)" }
 "func_80283D38_de" = { evidence = "authored", signature = "s32 func_80283D38_de(s32 arg0)" }
+"func_80284068_de" = { evidence = "authored", signature = "int func_80284068_de(void *arg0)" }
 "func_80284090_de" = { evidence = "authored", signature = "float func_80284090_de(void * arg0, float arg1, void * arg2)" }
+"func_80284434_de" = { evidence = "authored", signature = "s32 func_80284434_de(void *a)" }
 "func_8028480C_de" = { evidence = "authored", signature = "s32 func_8028480C_de(s32 arg0)" }
 "func_80284870_de" = { evidence = "authored", signature = "void func_80284870_de(f32 arg0)" }
 "func_8028489C_de" = { evidence = "authored", signature = "float func_8028489C_de(void *arg0)" }
@@ -959,8 +985,10 @@ schema = 1
 "func_8028597C_de" = { evidence = "authored", signature = "s32 func_8028597C_de(s32 arg0)" }
 "func_802859D0_de" = { evidence = "authored", signature = "f32 func_802859D0_de(f32 *arg0, u32 arg1, u32 arg2, u32 arg3)" }
 "func_80285B64_de" = { evidence = "declared", signature = "void func_80285B64_de(s32,void *,Triple,f32,f32,s32)" }
+"func_80285C78_de" = { evidence = "authored", signature = "void func_80285C78_de(void *arg0)" }
 "func_80286284_de" = { evidence = "authored", signature = "void func_80286284_de(void *)" }
 "func_80286454_de" = { evidence = "declared", signature = "void func_80286454_de(char *, char *)" }
+"func_80286728_de" = { evidence = "authored", signature = "s32 func_80286728_de(void *, void *)" }
 "func_80286950_de" = { evidence = "declared", signature = "void func_80286950_de()" }
 "func_80286AA8_de" = { evidence = "authored", signature = "void func_80286AA8_de(void *, s32, s32)" }
 "func_8028787C_de" = { evidence = "declared", signature = "void func_8028787C_de(Level *, Item_func_8044D668_de *)" }
@@ -970,6 +998,8 @@ schema = 1
 "func_8028A27C_de" = { evidence = "declared", signature = "void func_8028A27C_de(void *, void *, Vec3 *, Vec3 *)" }
 "func_8028A698_de" = { evidence = "authored", signature = "void func_8028A698_de(void *)" }
 "func_8028A948_de" = { evidence = "declared", signature = "void func_8028A948_de()" }
+"func_8028B274_de" = { evidence = "authored", signature = "void func_8028B274_de(struct Bank_func_8028B274_de *, struct Object_func_8028B274_de *, s32, s32)" }
+"func_8028B394_de" = { evidence = "authored", signature = "s32 func_8028B394_de(void *arg0, s32 arg1)" }
 "func_8028B4C8_de" = { evidence = "authored", signature = "void func_8028B4C8_de(void)" }
 "func_8028B4D0_de" = { evidence = "authored", signature = "void func_8028B4D0_de(void *arg0, s32 arg1, s32 arg2)" }
 "func_8028B5C0_de" = { evidence = "authored", signature = "s32 func_8028B5C0_de(void *arg0, s32 arg1)" }
@@ -1000,9 +1030,14 @@ schema = 1
 "func_8028E284_de" = { evidence = "authored", signature = "void func_8028E284_de(Scene_func_8028E284_de *scene)" }
 "func_8028E6FC_de" = { evidence = "authored", signature = "s32 func_8028E6FC_de(void *arg0)" }
 "func_8028E770_de" = { evidence = "authored", signature = "void *func_8028E770_de(void *object, int index)" }
+"func_8028EDA0_de" = { evidence = "authored", signature = "void func_8028EDA0_de(void *arg0)" }
+"func_8028F544_de" = { evidence = "authored", signature = "s32 func_8028F544_de(struct Ctx_func_8028F544_de *, struct Node_func_8028F544_de **, struct Node_func_8028F544_de **, s32)" }
 "func_8028F8BC_de" = { evidence = "authored", signature = "void func_8028F8BC_de(void *arg0, void *arg1)" }
 "func_8028F94C_de" = { evidence = "authored", signature = "void *func_8028F94C_de(void *object)" }
+"func_8028F954_de" = { evidence = "authored", signature = "void func_8028F954_de(void *arg0, void *arg1)" }
 "func_8028F9AC_de" = { evidence = "authored", signature = "void *func_8028F9AC_de(void *arg0)" }
+"func_8028FA60_de" = { evidence = "authored", signature = "void func_8028FA60_de(struct View_func_8028FA60_de *, struct Scene_func_8028FA60_de *, struct Scene_func_8028FA60_de *)" }
+"func_8028FBD8_de" = { evidence = "authored", signature = "void func_8028FBD8_de(void *arg0)" }
 "func_8028FD44_de" = { evidence = "authored", signature = "int func_8028FD44_de(int arg0)" }
 "func_8028FDB4_de" = { evidence = "authored", signature = "void *func_8028FDB4_de(void *, s32)" }
 "func_8028FE6C_de" = { evidence = "authored", signature = "s32 func_8028FE6C_de(s32 arg0, s32 arg1, s32 *arg2)" }
@@ -1033,8 +1068,11 @@ schema = 1
 "func_80290BC0_eu_x" = { evidence = "authored", signature = "void func_80290BC0_eu_x(void)" }
 "func_802917D8_de" = { evidence = "authored", signature = "float func_802917D8_de()" }
 "func_80292F24_de" = { evidence = "authored", signature = "void func_80292F24_de()" }
+"func_80293440_de" = { evidence = "authored", signature = "int func_80293440_de(u8 *a, u8 *b)" }
 "func_802934F8_de" = { evidence = "authored", signature = "int func_802934F8_de()" }
 "func_80293534_de" = { evidence = "authored", signature = "void func_80293534_de(void)" }
+"func_80293824_de" = { evidence = "authored", signature = "void func_80293824_de(void *object, int value)" }
+"func_80293998_de" = { evidence = "authored", signature = "void func_80293998_de(s32 arg0, s32 arg1)" }
 "func_80293CE4_de" = { evidence = "authored", signature = "void func_80293CE4_de()" }
 "func_80293DE8_de" = { evidence = "authored", signature = "void func_80293DE8_de()" }
 "func_80293DF0_de" = { evidence = "authored", signature = "void func_80293DF0_de(void *arg0)" }
@@ -1107,7 +1145,9 @@ schema = 1
 "func_802969B0_de" = { evidence = "authored", signature = "f32 func_802969B0_de(f32 *a, f32 *b)" }
 "func_80296C30_de" = { evidence = "authored", signature = "s32 func_80296C30_de(f32 *arg0, f32 *arg1)" }
 "func_80296CD0_de" = { evidence = "authored", signature = "void func_80296CD0_de(s32 direction)" }
+"func_80296E3C_de" = { evidence = "authored", signature = "s32 func_80296E3C_de(s32 id, s32 event, s32, s32, s32)" }
 "func_8029764C_de" = { evidence = "declared", signature = "void func_8029764C_de(s32, s32, s32, void *, s32)" }
+"func_80297A34_de" = { evidence = "authored", signature = "s32 func_80297A34_de(s32 event, s32, s32, s32)" }
 "func_80297DBC_de" = { evidence = "authored", signature = "void func_80297DBC_de()" }
 "func_80297FA0_de" = { evidence = "authored", signature = "void func_80297FA0_de(s32 screenCount, s32 value)" }
 "func_802982C4_de" = { evidence = "authored", signature = "void func_802982C4_de(s32 id, MenuElementHandler event_handler, MenuDrawHandler draw_handler, s32 flags)" }
@@ -1139,12 +1179,15 @@ schema = 1
 "func_8029B54C_de" = { evidence = "authored", signature = "void func_8029B54C_de(Vec3 *arg0)" }
 "func_8029B6E0_de" = { evidence = "authored", signature = "void func_8029B6E0_de(Vec3 *arg0)" }
 "func_8029B868_de" = { evidence = "authored", signature = "void func_8029B868_de(f32 *arg0)" }
+"func_8029B9FC_de" = { evidence = "authored", signature = "f32 func_8029B9FC_de(f32 arg0)" }
+"func_8029BBB0_de" = { evidence = "authored", signature = "void func_8029BBB0_de(f32 angle, f32 *sinOut, f32 *cosOut)" }
 "func_8029BDEC_de" = { evidence = "authored", signature = "f64 func_8029BDEC_de(f64 x)" }
+"func_8029C044_de" = { evidence = "authored", signature = "f32 func_8029C044_de(f32 y, f32 x)" }
 "func_8029C4A0_de" = { evidence = "authored", signature = "s32 func_8029C4A0_de(Vec3 *out, s32 *outCount, Vec3 *in, s32 n, f32 a, f32 b, f32 c, f32 d)" }
 "func_8029C984_de" = { evidence = "authored", signature = "void func_8029C984_de(func_8029D984_S2 *arg0, Vec3 *arg1)" }
 "func_8029CAB4_de" = { evidence = "authored", signature = "void func_8029CAB4_de(Input_func_8029CAB4_de *arg0, Vec3 *arg1)" }
 "func_8029CC70_de" = { evidence = "authored", signature = "void func_8029CC70_de(Input_func_8029CAB4_de *arg0, Vec3 *arg1)" }
-"func_8029CE3C_de" = { evidence = "authored", signature = "void func_8029CE3C_de(int arg0, int arg1, int arg2)" }
+"func_8029CE3C_de" = { evidence = "authored", signature = "void func_8029CE3C_de(s32 arg0, s32 arg1, s32 arg2)" }
 "func_8029D000_de" = { evidence = "authored", signature = "void func_8029D000_de(Plane_func_802965B0_de *m)" }
 "func_8029D248_de" = { evidence = "authored", signature = "s32 func_8029D248_de(f32 *out, f32 *input)" }
 "func_8029D7E8_auto" = { evidence = "authored", signature = "void func_8029D7E8_auto(void)" }
@@ -1160,8 +1203,10 @@ schema = 1
 "func_8029DB74_de" = { evidence = "authored", signature = "f64 func_8029DB74_de(void)" }
 "func_8029DB9C_de" = { evidence = "authored", signature = "f64 func_8029DB9C_de(f64 x)" }
 "func_8029DCB0_de" = { evidence = "authored", signature = "f64 func_8029DCB0_de(f64 arg0, s32 *arg1)" }
+"func_8029DD18_de" = { evidence = "authored", signature = "void func_8029DD18_de(f32 arg0)" }
 "func_8029DD3C_de" = { evidence = "authored", signature = "f32 func_8029DD3C_de(f32 arg0)" }
 "func_8029DD78_de" = { evidence = "authored", signature = "f32 func_8029DD78_de(f32 arg0)" }
+"func_8029DE48_de" = { evidence = "authored", signature = "f32 func_8029DE48_de(f32 x)" }
 "func_8029DF48_de" = { evidence = "authored", signature = "f32 func_8029DF48_de(f32 x)" }
 "func_8029E04C_de" = { evidence = "authored", signature = "f32 func_8029E04C_de(f32 arg0)" }
 "func_8029E1D4_de" = { evidence = "authored", signature = "f32 func_8029E1D4_de(f32 a, f32 b)" }
@@ -1262,6 +1307,7 @@ schema = 1
 "func_802A2394_de" = { evidence = "authored", signature = "void func_802A2394_de(void)" }
 "func_802A23A4_de" = { evidence = "declared", signature = "s32 func_802A23A4_de(void)" }
 "func_802A23B4_de" = { evidence = "authored", signature = "s32 func_802A23B4_de(void)" }
+"func_802A23C4_de" = { evidence = "authored", signature = "void func_802A23C4_de(s32 arg0)" }
 "func_802A2400_de" = { evidence = "declared", signature = "void func_802A2400_de(f32)" }
 "func_802A2418_de" = { evidence = "declared", signature = "void func_802A2418_de(s32)" }
 "func_802A2434_de" = { evidence = "authored", signature = "void func_802A2434_de()" }
@@ -1299,6 +1345,7 @@ schema = 1
 "func_802A84F8_de" = { evidence = "authored", signature = "void func_802A84F8_de(void)" }
 "func_802A8710_de" = { evidence = "authored", signature = "void func_802A8710_de()" }
 "func_802A8800_de" = { evidence = "authored", signature = "void func_802A8800_de()" }
+"func_802A88F0_de" = { evidence = "authored", signature = "void func_802A88F0_de(s32 text, f32 x, f32 y, f32 width, f32 height, s32 shadow, s32 alpha, s32 language)" }
 "func_802A8F28_de" = { evidence = "authored", signature = "void func_802A8F28_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5, f32 arg6, f32 arg7)" }
 "func_802A9234_de" = { evidence = "authored", signature = "void func_802A9234_de(s32)" }
 "func_802AA730_de" = { evidence = "declared", signature = "s32 func_802AA730_de()" }
@@ -1306,8 +1353,10 @@ schema = 1
 "func_802AA794_de" = { evidence = "declared", signature = "void func_802AA794_de(char *, s32)" }
 "func_802AA79C_de" = { evidence = "declared", signature = "void func_802AA79C_de(char *, s32)" }
 "func_802AA864_de" = { evidence = "authored", signature = "f32 func_802AA864_de()" }
+"func_802AA950_de" = { evidence = "authored", signature = "void func_802AA950_de(s32 arg0, s32 arg1, s32 *arg2, s32 *arg3)" }
 "func_802AA9F4_de" = { evidence = "authored", signature = "void func_802AA9F4_de()" }
-"func_802AAB68_de" = { evidence = "authored", signature = "void func_802AAB68_de(f32 arg0, f32 arg1)" }
+"func_802AAB3C_de" = { evidence = "authored", signature = "void func_802AAB3C_de(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)" }
+"func_802AAB68_de" = { evidence = "authored", signature = "void func_802AAB68_de(float arg0, float arg1)" }
 "func_802AAB7C_de" = { evidence = "declared", signature = "void func_802AAB7C_de(char *, f32, f32, f32, f32, s32, s32, s32)" }
 "func_802AADBC_de" = { evidence = "declared", signature = "s32 func_802AADBC_de(void)" }
 "func_802AADCC_de" = { evidence = "authored", signature = "void func_802AADCC_de(u16 *grid, s16 x0, s32 y)" }
@@ -1357,7 +1406,11 @@ schema = 1
 "func_802AFD00_de" = { evidence = "authored", signature = "void func_802AFD00_de(void *arg0)" }
 "func_802AFDFC_de" = { evidence = "authored", signature = "void func_802AFDFC_de(void *arg0, f32 arg1)" }
 "func_802AFE30_de" = { evidence = "authored", signature = "f32 func_802AFE30_de(s32 arg0)" }
+"func_802AFEB0_de" = { evidence = "authored", signature = "void func_802AFEB0_de(s32 arg0, s32 arg1)" }
+"func_802AFF30_de" = { evidence = "authored", signature = "void func_802AFF30_de(s32 arg0, s32 arg1)" }
+"func_802AFF60_de" = { evidence = "authored", signature = "void func_802AFF60_de(s32 arg0, s16 arg1)" }
 "func_802B00D4_de" = { evidence = "authored", signature = "void func_802B00D4_de(ALEventQueue *, Message_func_802AF150_de *, ALMicroTime)" }
+"func_802B0310_de" = { evidence = "authored", signature = "void func_802B0310_de(unsigned char *source, unsigned char *destination, int count)" }
 "func_802B0390_de" = { evidence = "authored", signature = "void func_802B0390_de(void *arg0, s32 arg1, s32 arg2)" }
 "func_802B05C8_us_rev1" = { evidence = "authored", signature = "int func_802B05C8_us_rev1(void * arg0, int arg1, int arg2, int arg3)" }
 "func_802B0630_eu" = { evidence = "authored", signature = "int func_802B0630_eu(void * arg0, int arg1, int arg2)" }
@@ -1444,7 +1497,9 @@ schema = 1
 "func_802B6300_de" = { evidence = "authored", signature = "f32 func_802B6300_de(ALDelay *d, s32 count)" }
 "func_802B6480_de" = { evidence = "declared", signature = "s32 func_802B6480_de(void *, s32, void *)" }
 "func_802B64C0_de" = { evidence = "declared", signature = "void * func_802B64C0_de(ALSynth *, s16, ALSynConfig *, ALHeap *)" }
+"func_802B6560_de" = { evidence = "authored", signature = "float func_802B6560_de(float x)" }
 "func_802B6D54_de" = { evidence = "authored", signature = "void func_802B6D54_de(f32 *arg0, s32 *arg1)" }
+"func_802B7130_de" = { evidence = "authored", signature = "float func_802B7130_de(float x)" }
 "func_802B72B0_de" = { evidence = "authored", signature = "f32 func_802B72B0_de(f32)" }
 "func_802B72BC_de" = { evidence = "authored", signature = "void func_802B72BC_de(void)" }
 "func_802B72C0_de" = { evidence = "authored", signature = "unsigned int func_802B72C0_de()" }
@@ -1457,8 +1512,11 @@ schema = 1
 "func_802B768C_de" = { evidence = "authored", signature = "void func_802B768C_de()" }
 "func_802B784C_de" = { evidence = "authored", signature = "void func_802B784C_de()" }
 "func_802B7880_de" = { evidence = "declared", signature = "void func_802B7880_de(char *, char *, char *)" }
+"func_802B7B80_us" = { evidence = "authored", signature = "u32 func_802B7B80_us(struct Triple *)" }
 "func_802B7C30_de" = { evidence = "authored", signature = "int func_802B7C30_de()" }
-"func_802B7EF0_eu" = { evidence = "authored", signature = "unsigned int func_802B7EF0_eu(void * arg0)" }
+"func_802B7C50_de" = { evidence = "authored", signature = "u32 func_802B7C50_de(struct Triple *)" }
+"func_802B7EF0_eu" = { evidence = "authored", signature = "unsigned int func_802B7EF0_eu(void *arg0)" }
+"func_802B7F30_eu_x" = { evidence = "authored", signature = "u32 func_802B7F30_eu_x(struct Triple *)" }
 "func_802B80B4_eu" = { evidence = "authored", signature = "unsigned int func_802B80B4_eu(void *arg0)" }
 "func_802B8C88_de" = { evidence = "authored", signature = "u32 func_802B8C88_de(void *arg0)" }
 "func_802B8DA0_de" = { evidence = "declared", signature = "Queue * func_802B8DA0_de(void)" }
@@ -1486,6 +1544,7 @@ schema = 1
 "func_802BA640_de" = { evidence = "declared", signature = "struct __OSViContext * func_802BA640_de(void)" }
 "func_802BA700_de" = { evidence = "authored", signature = "void func_802BA700_de(s32 arg0)" }
 "func_802BA870_de" = { evidence = "authored", signature = "void func_802BA870_de(f32 arg0)" }
+"func_802BA8C0_de" = { evidence = "authored", signature = "void func_802BA8C0_de(s32 arg0)" }
 "func_802BA910_de" = { evidence = "authored", signature = "void func_802BA910_de()" }
 "func_802BAC50_de" = { evidence = "authored", signature = "void func_802BAC50_de(char *, char *, s32)" }
 "func_802BAD68_de" = { evidence = "authored", signature = "void func_802BAD68_de(void)" }
