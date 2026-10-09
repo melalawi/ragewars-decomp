@@ -142,6 +142,7 @@ D_ub_800ED2E8 = 0x800DCC68; // allow_duplicated:true
 D_ub_800E10D0 = 0x800DD0A0; // allow_duplicated:true
 D_ub_800ED720 = 0x800DD0A0; // allow_duplicated:true
 D_ub_800E10D4 = 0x800DD0A4;
+D_ub_800ED724 = 0x800DD0A4;
 D_ub_800E10DC = 0x800DD0AC; // allow_duplicated:true
 D_ub_800ED72C = 0x800DD0AC; // allow_duplicated:true
 D_ub_800E1118 = 0x800DD0E8; // allow_duplicated:true
