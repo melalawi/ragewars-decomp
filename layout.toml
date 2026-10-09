@@ -36306,6 +36306,11 @@ path = "src/fuzzy/rodata.writable.800DDF04.c"
 scores = {us = 0.8695652173913043}
 
 [[fuzzy]]
+member = "rodata/writable/800DF254"
+path = "src/fuzzy/rodata.writable.800DF254.c"
+scores = {de = 0.8695652173913043}
+
+[[fuzzy]]
 member = "rodata/writable/800E0CF8"
 path = "src/fuzzy/rodata.writable.800E0CF8.c"
 scores = {eu-x = 0.9534883720930233}
