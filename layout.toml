@@ -33266,9 +33266,8 @@ omit = []
 path = "src/func_8043C688_de.c"
 kind = "c"
 group = "code_80426310"
-members = ["func_8043C688_de", "rodata/func_8043C688_de/800DE1B8", "rodata/func_8043C688_de/800DE1E8", "rodata/func_8043C688_de/800DE218", "rodata/func_8043C688_de/800E99F8", "rodata/func_8043C688_de/800E9A28", "rodata/func_8043C688_de/800E9A58", "rodata/unresolved/800DCE68", "rodata/unresolved/800DE1E4", "rodata/unresolved/800DE214", "rodata/unresolved/800E9A24", "rodata/unresolved/800E9A54", "rodata/unresolved/800EE838"]
+members = ["func_8043C688_de", "rodata/func_8043C4F4_us_rev1/800E21E8", "rodata/func_8043C4F4_us_rev1/800E2218", "rodata/func_8043C4F4_us_rev1/800E2248", "rodata/func_8043C688_de/800DE1B8", "rodata/func_8043C688_de/800DE1E8", "rodata/func_8043C688_de/800DE218", "rodata/func_8043C688_de/800E99F8", "rodata/func_8043C688_de/800E9A28", "rodata/func_8043C688_de/800E9A58", "rodata/unresolved/800DCE68", "rodata/unresolved/800DE1E4", "rodata/unresolved/800DE214", "rodata/unresolved/800E2214", "rodata/unresolved/800E2244", "rodata/unresolved/800E9A24", "rodata/unresolved/800E9A54", "rodata/unresolved/800EE838"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["us-rev1"]
 
 [unit.options]
 add = []
@@ -33278,6 +33277,8 @@ omit = []
 "us:rodata/unresolved/800DCE68" = ".rodata"
 "de:rodata/unresolved/800DE1E4" = ".rodata"
 "de:rodata/unresolved/800DE214" = ".rodata"
+"us-rev1:rodata/unresolved/800E2214" = ".rodata"
+"us-rev1:rodata/unresolved/800E2244" = ".rodata"
 "eu-x:rodata/unresolved/800E9A24" = ".rodata"
 "eu-x:rodata/unresolved/800E9A54" = ".rodata"
 "eu:rodata/unresolved/800EE838" = ".rodata"
@@ -33386,9 +33387,8 @@ omit = []
 path = "src/func_8043CF44_de.c"
 kind = "c"
 group = "code_80426310"
-members = ["func_8043CF44_de", "rodata/func_8043CF84_de/800DE258", "rodata/func_8043CF84_de/800E9A98", "rodata/unresolved/800DCF08", "rodata/unresolved/800EE8D8"]
+members = ["func_8043CF44_de", "rodata/func_8043C4F4_us_rev1/800E2288", "rodata/func_8043CF84_de/800DE258", "rodata/func_8043CF84_de/800E9A98", "rodata/unresolved/800DCF08", "rodata/unresolved/800EE8D8"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["us-rev1"]
 
 [unit.options]
 add = []
