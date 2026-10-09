@@ -4169,7 +4169,7 @@ segments:
       - [0xEFAFC, data, "rodata/writable/800EEEFC"]
       - [0xEFB10, data, "rodata/unresolved/800EEF10"]
       - [0xEFCD0, data, "rodata/writable/800EF0D0"]
-      - [0xEFCF0, data, "rodata/unresolved/800EF0F0"]
+      - [0xEFCF0, .data, "rodata/unresolved/800EF0F0"]
       - [0xF04A0, data, "rodata/writable/800EF8A0"]
       - [0xF04C1, data, "rodata/unresolved/800EF8C1"]
       - [0xF04C4, data, "rodata/writable/800EF8C4"]
