@@ -18,19 +18,20 @@ extern f32 D_800C3308_de, D_800C330C_de, D_800C3310_de, D_800C3314_de, D_800C331
 
 void func_8023660C_de(char *camera, f32 a, f32 b, f32 c, f32 d) {
     {
+        f32 step = D_800C32F0_de;
         f32 value = ((func_80219490_S2 *)(camera))->unk29C;
 
         if (func_80264B6C_de() != 0) {
             value = a;
         }
         if (value < a) {
-            value += D_800C32F0_de;
+            value += step;
             D_80103220[1] = D_800C32F4_de;
             if (a < value) {
                 value = a;
             }
         } else if (a < value) {
-            value -= D_800C32F0_de;
+            value -= step;
             D_80103220[1] = D_800C32F8_de;
             if (value < a) {
                 value = a;
@@ -39,19 +40,20 @@ void func_8023660C_de(char *camera, f32 a, f32 b, f32 c, f32 d) {
         ((func_80219490_S2 *)(camera))->unk29C = value;
     }
     {
+        f32 step = D_800C32FC_de;
         f32 value = ((func_80219490_S2 *)(camera))->unk2A0;
 
         if (func_80264B6C_de() != 0) {
             value = b;
         }
         if (value < b) {
-            value += D_800C32FC_de;
+            value += step;
             D_80103220[1] = D_800C3300_de;
             if (b < value) {
                 value = b;
             }
         } else if (b < value) {
-            value -= D_800C32FC_de;
+            value -= step;
             D_80103220[1] = D_800C3304_de;
             if (value < b) {
                 value = b;
@@ -60,19 +62,20 @@ void func_8023660C_de(char *camera, f32 a, f32 b, f32 c, f32 d) {
         ((func_80219490_S2 *)(camera))->unk2A0 = value;
     }
     {
+        f32 step = D_800C3308_de;
         f32 value = ((func_80219490_S2 *)(camera))->unk2A4;
 
         if (func_80264B6C_de() != 0) {
             value = c;
         }
         if (value < c) {
-            value += D_800C3308_de;
+            value += step;
             D_80103220[1] = D_800C330C_de;
             if (c < value) {
                 value = c;
             }
         } else if (c < value) {
-            value -= D_800C3308_de;
+            value -= step;
             D_80103220[1] = D_800C3310_de;
             if (value < c) {
                 value = c;
@@ -81,19 +84,20 @@ void func_8023660C_de(char *camera, f32 a, f32 b, f32 c, f32 d) {
         ((func_80219490_S2 *)(camera))->unk2A4 = value;
     }
     {
+        f32 step = D_800C3314_de;
         f32 value = ((func_80219490_S2 *)(camera))->unk2A8;
 
         if (func_80264B6C_de() != 0) {
             value = d;
         }
         if (value < d) {
-            value += D_800C3314_de;
+            value += step;
             D_80103220[1] = D_800C3318_de;
             if (d < value) {
                 value = d;
             }
         } else if (d < value) {
-            value -= D_800C3314_de;
+            value -= step;
             D_80103220[1] = D_800C331C_de;
             if (value < d) {
                 value = d;
