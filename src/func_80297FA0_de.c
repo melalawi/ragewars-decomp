@@ -11,7 +11,7 @@
 
 
 
-extern Ui_func_80297FA0_de *D_80146E00;
+extern Ui_func_80297FA0_de *D_8014D080;
 extern s32 D_80146E04;
 
 
@@ -36,13 +36,13 @@ void func_80297FA0_de(s32 screenCount, s32 value) {
     func_8040F534_de(D_80146E08, D_80146E0C);
     func_8029AA78_de();
     D_80146E04 = 0;
-    D_80146E00 = func_8025305C_de(0x544);
-    func_802A0748_de(D_80146E00, 0, 0x544);
-    D_80146E00->value = value;
-    D_80146E00->limit = 4000;
+    D_8014D080 = func_8025305C_de(0x544);
+    func_802A0748_de(D_8014D080, 0, 0x544);
+    D_8014D080->value = value;
+    D_8014D080->limit = 4000;
     {
-        Rec_func_8024C92C_de *slot = D_80146E00->slots;
-        s32 *ids = &D_80146E00->slots[0].x;
+        Rec_func_8024C92C_de *slot = D_8014D080->slots;
+        s32 *ids = &D_8014D080->slots[0].x;
         for (i = 0; i < 64; slot++, i++, ids += 5) {
             slot->z = 0;
             *ids = -1;
@@ -50,20 +50,20 @@ void func_80297FA0_de(s32 screenCount, s32 value) {
             slot->pad0 = 0;
         }
     }
-    D_80146E00->cache = func_8025305C_de(0x384);
-    func_802A0748_de(D_80146E00->cache, 0, 0x384);
-    D_80146E00->cacheCount = 0;
+    D_8014D080->cache = func_8025305C_de(0x384);
+    func_802A0748_de(D_8014D080->cache, 0, 0x384);
+    D_8014D080->cacheCount = 0;
     frames = func_802A18CC_de() * D_800C5668_de;
-    D_80146E00->screenCount = screenCount;
-    D_80146E00->frames = frames;
-    D_80146E00->screens = func_8025305C_de(screenCount * 28);
-    func_802A0748_de(D_80146E00->screens, 0, screenCount * 28);
+    D_8014D080->screenCount = screenCount;
+    D_8014D080->frames = frames;
+    D_8014D080->screens = func_8025305C_de(screenCount * 28);
+    func_802A0748_de(D_8014D080->screens, 0, screenCount * 28);
     D_80146E14 = 0;
-    D_80146E00->current = -1;
-    D_80146E00->focus = -1;
-    D_80146E00->field534 = 0;
-    D_80146E00->field538 = 0;
-    D_80146E00->paging = 1;
+    D_8014D080->current = -1;
+    D_8014D080->focus = -1;
+    D_8014D080->field534 = 0;
+    D_8014D080->field538 = 0;
+    D_8014D080->paging = 1;
     func_802982C4_de(9, D_0040C5C0, D_0040C5C8, 1);
     func_802982C4_de(11, D_004125A4, D_00412634, 1);
 }

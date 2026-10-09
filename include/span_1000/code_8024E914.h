@@ -339,7 +339,7 @@ struct Object_func_8024EB90_de;
 typedef struct Object_func_8024EB90_de Object_func_8024EB90_de;
 
 /* unbake published declaration: published_bf4e4ae864cc3955fc2dee74 */
-extern int D_801370D0;
+extern int D_8013B190;
 
 struct Actor_func_8024ED90_de;
 /* unbake published declaration: published_c24a53b99f47bfcd8eab2be1 */

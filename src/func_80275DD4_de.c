@@ -12,7 +12,7 @@
 
 
 extern int D_800CD3E8;
-extern int D_80111D50;
+extern int D_80115E10;
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
 
@@ -22,7 +22,7 @@ static inline void cross_edges(Node75 *node) {
 
     func_80271F68_de(&a, node->cur, node->prev);
     func_80271F68_de(&b, node->next, node->cur);
-    func_80272018_de((Vec3 *)&D_80111D50, &a, &b);
+    func_80272018_de((Vec3 *)&D_80115E10, &a, &b);
 }
 
 f32 func_80275DD4_de(Node75 *node, f32 x, f32 z) {
@@ -35,7 +35,7 @@ f32 func_80275DD4_de(Node75 *node, f32 x, f32 z) {
     if ((int)node != D_800CD3E8) {
         cross_edges(node);
     }
-    normal = *(Vec3 *)&D_80111D50;
+    normal = *(Vec3 *)&D_80115E10;
     D_800CD3E8 = (int)node;
     if (normal.y == 0.0f) {
         return (node->prev->y + node->cur->y + node->next->y) * D_800C4A00_de;

@@ -10,7 +10,7 @@
 
 
 
-extern f32 D_80111D2C;
+extern f32 D_80115DEC;
 extern f32 func_802B7130_de(f32);
 extern f32 func_802B6560_de(f32);
 extern void func_80274098_de(Vector4f *, Vector4f *, Vector4f *);
@@ -41,18 +41,18 @@ Vector4f func_8024796C_de(char *actor) {
         weapon = ((func_8024795C_S2 *)(player))->unk5DC;
         if (weapon != 0) {
             angle = 1.5707964f;
-            D_80111D2C = func_802B7130_de(angle);
+            D_80115DEC = func_802B7130_de(angle);
             yaw.x = 0.0f;
-            yaw.y = D_80111D2C;
+            yaw.y = D_80115DEC;
             yaw.z = 0.0f;
             yaw.w = func_802B6560_de(angle);
             func_80274098_de(&result, &yaw, &((func_8024795C_S3 *)(weapon))->unk140);
         } else {
             angle = 1.5707964f;
             func_80226C60_de(player, &own);
-            D_80111D2C = func_802B7130_de(angle);
+            D_80115DEC = func_802B7130_de(angle);
             yaw.x = 0.0f;
-            yaw.y = D_80111D2C;
+            yaw.y = D_80115DEC;
             yaw.z = 0.0f;
             yaw.w = func_802B6560_de(angle);
             func_80274098_de(&result, &yaw, &own);
@@ -63,14 +63,14 @@ Vector4f func_8024796C_de(char *actor) {
         pitch.y = 0.0f;
         pitch.z = 0.0f;
         angle = ((func_8024795C_S1 *)(actor))->unk294 * 0.5f;
-        D_80111D2C = sine;
+        D_80115DEC = sine;
         pitch.w = func_802B6560_de(angle);
         sine = func_802B7130_de((((func_8024795C_S1 *)(actor))->unk6C + 3.1415927f) * 0.5f);
         yaw.x = 0.0f;
         yaw.y = sine;
         yaw.z = 0.0f;
         angle = (((func_8024795C_S1 *)(actor))->unk6C + 3.1415927f) * 0.5f;
-        D_80111D2C = sine;
+        D_80115DEC = sine;
         yaw.w = func_802B6560_de(angle);
         func_80274098_de(&both, &pitch, &yaw);
         func_80203848_de(&base, actor, (char *)actor + 0x170);
@@ -81,7 +81,7 @@ Vector4f func_8024796C_de(char *actor) {
         yaw.y = sine;
         yaw.z = 0.0f;
         angle = (((func_8024795C_S1 *)(actor))->unk6C + 3.1415927f) * 0.5f;
-        D_80111D2C = sine;
+        D_80115DEC = sine;
         yaw.w = func_802B6560_de(angle);
         func_80274098_de(&result, &yaw, &((func_8024795C_S1 *)(actor))->unk5C);
     }

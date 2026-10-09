@@ -14,7 +14,7 @@
 
 
 
-extern char D_8011BDC8;
+extern char D_8011FE88;
 extern Clip *func_8028D218_de(char *, s32);
 
 void func_802192C0_de(Cursor *cursor) {
@@ -22,7 +22,7 @@ void func_802192C0_de(Cursor *cursor) {
     s32 frames;
     s32 state;
 
-    clip = func_8028D218_de(&D_8011BDC8, cursor->clip);
+    clip = func_8028D218_de(&D_8011FE88, cursor->clip);
     frames = clip->frames;
     state = cursor->state;
     cursor->previous = cursor->frame;
@@ -64,33 +64,33 @@ void func_802192C0_de(Cursor *cursor) {
 }
 
 extern s16 func_8028D28C_de(char *arg0);
-extern char D_8011BDC8;
+extern char D_8011FE88;
 
 void func_802193C8_de(Struct802193C8 *arg0, s8 arg1) {
     arg0->field0 = 1;
     arg0->field1 = arg1;
-    arg0->field2 = func_8028D28C_de(&D_8011BDC8);
+    arg0->field2 = func_8028D28C_de(&D_8011FE88);
     arg0->field4 = 0;
 }
 
 extern void *func_8028D244_de(char *a, unsigned char b, short c);
-extern char D_8011BDC8;
+extern char D_8011FE88;
 
 
 
 
 void *func_80219408_de(void *arg0) {
-    func_8028D244_de(&D_8011BDC8, ((func_80219408_S1 *)(arg0))->unk1, ((func_80219408_S1 *)(arg0))->unk2);
+    func_8028D244_de(&D_8011FE88, ((func_80219408_S1 *)(arg0))->unk1, ((func_80219408_S1 *)(arg0))->unk2);
 }
 
 extern void *func_8028D244_de(char *a, unsigned char b, short c);
-extern char D_8011BDC8;
+extern char D_8011FE88;
 
 
 
 
 void func_80219434_de(void *arg0) {
-    func_8028D244_de(&D_8011BDC8, ((func_80219434_S1 *)(arg0))->unk1, ((func_80219434_S1 *)(arg0))->unk4);
+    func_8028D244_de(&D_8011FE88, ((func_80219434_S1 *)(arg0))->unk1, ((func_80219434_S1 *)(arg0))->unk4);
 }
 
 /** Initialize the compact state record to its default values. */
@@ -106,12 +106,12 @@ void func_80219480_de(void) {
     char pad[0x10];
 }
 
-extern Gfx *D_8010C574;
-extern s32 D_8011BA00;
-extern s32 D_800DE888_de;
+extern Gfx *D_80110634;
+extern s32 D_8011FAC0;
+extern s32 D_800E28D8;
 
 extern s32 D_800C94E8_de;
-extern s32 D_800CD72C;
+extern s32 D_800D297C;
 extern char D_800CBC90;
 
 
@@ -125,7 +125,7 @@ extern void func_80273A98_de(void *arg0, f32 arg1);
 extern void func_802738C0_de(void *arg0, f32 arg1);
 extern void func_80273448_de(char *object, f32 x, f32 y, f32 z);
 extern void func_80273D6C_de(void *object);
-extern void func_80272FBC_de(f32 *arg0, f32 *arg1);
+extern void func_8027302C(f32 *arg0, f32 *arg1);
 extern void func_802735A8_de(void *arg0, s32 arg1, f32 arg2, f32 arg3);
 extern void func_8027027C_de(void *arg0, void *arg1);
 extern void func_80272898_de(void *arg0, void *arg1, void *arg2);
@@ -156,9 +156,9 @@ void func_80219490_de(char *object, char *camera) {
     func_8026D914_de(0xC0);
     func_8026E378_de(1, 0x20);
 
-    command = D_8010C574++;
+    command = D_80110634++;
     gDPSetTexturePersp(command, G_TP_PERSP);
-    command = D_8010C574++;
+    command = D_80110634++;
     gDPSetTextureFilter(command, G_TF_BILERP);
     func_8026D980_de();
 
@@ -166,7 +166,7 @@ void func_80219490_de(char *object, char *camera) {
     y = ((func_80219490_S2 *)(camera))->unk2A8;
     z = ((func_80219490_S2 *)(camera))->unk2A0 + y;
     w = ((func_80219490_S2 *)(camera))->unk29C + x;
-    func_80291BE8_de(&D_8011BA00, (s32)x, (s32)w, (s32)y, (s32)z, 0);
+    func_80291BE8_de(&D_8011FAC0, (s32)x, (s32)w, (s32)y, (s32)z, 0);
 
     func_80272CB0_de(first, ((func_80219490_S1 *)(object))->unk90,
                    ((func_80219490_S1 *)(object))->unk94, ((func_80219490_S1 *)(object))->unk98);
@@ -177,17 +177,17 @@ void func_80219490_de(char *object, char *camera) {
     func_80273D6C_de(first);
 
     matrix = (char *)second;
-    func_80272FBC_de(second, first);
-    if (D_800DE888_de == 2) {
+    func_8027302C(second, first);
+    if (D_800E28D8 == 2) {
         func_802735A8_de(matrix, D_800C94E8_de, D_800C22D0_de, D_800C22D0_de);
     }
     {
-        s32 offset = (D_800CD72C << 6) + 0x10;
+        s32 offset = (D_800D297C << 6) + 0x10;
         func_8027027C_de(matrix, object + offset);
     }
     func_80272898_de(first, object + 0xA8, output);
     {
-        s32 offset = (D_800CD72C << 6) + 0x10;
+        s32 offset = (D_800D297C << 6) + 0x10;
         func_8026DF30_de(((func_80219490_S1 *)(object))->unk8, (s32)(object + offset),
                        (s32)&D_800CBC90, 0, -1);
     }

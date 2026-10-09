@@ -3,7 +3,7 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 /* unbake published declaration: published_037bb42f8d2e711c61deee17 */
-extern s32 D_80146CD4_de;
+extern s32 D_8014AD94;
 
 /* unbake published declaration: published_037d873cd991d307781a58ff */
 extern char D_0044EB70[];
@@ -22,7 +22,7 @@ typedef struct Menu_func_80408DF0_de Menu_func_80408DF0_de;
 extern void func_804097E8_de();
 
 /* unbake published declaration: published_1ba69c48057d670f4611bf6c */
-extern s32 D_8014D4D0;
+extern s32 D_80153760;
 
 /* unbake published declaration: published_1c6a98ff27b676a32db1310f */
 extern void func_804098A4_de(s32 offset, s32 value);
@@ -42,7 +42,7 @@ struct Player_func_80408DF0_de {
 };
 
 /* unbake published declaration: published_26ba6700333832d790d23e6d */
-extern s32 D_8014D4F4;
+extern s32 D_80153784;
 
 /* unbake published declaration: published_280ab3364157833fd557adfc */
 extern s32 D_8014D4C0_de;
@@ -51,7 +51,7 @@ extern s32 D_8014D4C0_de;
 extern int D_800D2420;
 
 /* unbake published declaration: published_2c7559387909a77eca0a4045 */
-extern s32 D_80142CA0_de;
+extern s32 D_80146D60;
 
 /* unbake published declaration: published_2f4edaf7f548fdc5aeb73062 */
 extern int D_800D2424;
@@ -137,7 +137,7 @@ struct Player_func_80408DF0_de;
 typedef struct Player_func_80408DF0_de Player_func_80408DF0_de;
 
 /* unbake published declaration: published_8df5573275e99e54d0d7b7e8 */
-extern s32 D_80146CDC;
+extern s32 D_8014AD9C;
 
 /* unbake published declaration: published_94aed7180b2587e661bb2990 */
 extern s32 D_8014D4DC;
@@ -155,7 +155,7 @@ extern int D_800D2434;
 extern char *func_80409884_de(s32 block);
 
 /* unbake published declaration: published_a25e61e35a2d70748857c7ea */
-extern s32 D_800DE878;
+extern s32 D_800E28C8;
 
 struct IntegerState610;
 /* unbake published declaration: published_a4270a4326ba99f53cc05b78 */

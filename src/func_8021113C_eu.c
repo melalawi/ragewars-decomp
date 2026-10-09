@@ -2,8 +2,8 @@
 #include "span_1000/code_80208000.h"
 #include "types.h"
 
-extern s32 D_800CD72C;
-extern char D_801372A4[];
+extern s32 D_800D297C;
+extern char D_8013B364[];
 extern void func_80211020_de(void *);
 extern s32 func_802099B4_de(void **, void *);
 extern s32 func_80209874_de(void *, s32);
@@ -64,7 +64,7 @@ void func_8021113C_eu(CloseAttackActor *actor) {
             if (pattern == 0) {
                 dir = func_80210EFC_de((brain->player->yaw - 3.1415927f) - 1.5707964f);
                 player = brain->player;
-                if ((player->slot % 2) == D_800CD72C) {
+                if ((player->slot % 2) == D_800D297C) {
                     func_80210964_de(player, dir);
                 }
                 if (!(brain->walk[dir] < 100.0f)) {
@@ -75,7 +75,7 @@ void func_8021113C_eu(CloseAttackActor *actor) {
             } else if (pattern == 1) {
                 dir = func_80210EFC_de((brain->player->yaw - 3.1415927f) + 1.5707964f);
                 player = brain->player;
-                if ((player->slot % 2) == D_800CD72C) {
+                if ((player->slot % 2) == D_800D297C) {
                     func_80210964_de(player, dir);
                 }
                 if (brain->walk[dir] < 100.0f) {
@@ -97,7 +97,7 @@ halt:
         }
         if (route != brain->node) {
             brain->node = route;
-            if (func_8020D1CC_de(D_801372A4, brain->route, route) == 0) {
+            if (func_8020D1CC_de(D_8013B364, brain->route, route) == 0) {
                 func_80209874_de(brain, 1);
             }
         }

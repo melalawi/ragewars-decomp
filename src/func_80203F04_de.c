@@ -12,8 +12,8 @@
 
 
 
-extern Player **D_800FFFCC;
-extern char D_800FFFD0[];
+extern Player **D_80103FCC;
+extern char D_80103FD0[];
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern f32 func_8024D284_de(Player *);
 extern s32 func_802444A4_de(Player *, Vec3, Vec3, char *);
@@ -33,8 +33,8 @@ s32 func_80203F04_de(Player *player, Rider_func_80203F04_de *rider, Player *othe
     from.y += func_8024D284_de(player) * lift;
     to = other->pos;
     to.y += func_8024D284_de(other) * lift;
-    blocked = func_802444A4_de(player, from, to, D_800FFFD0);
-    if (blocked != 0 && *D_800FFFCC != other) {
+    blocked = func_802444A4_de(player, from, to, D_80103FD0);
+    if (blocked != 0 && *D_80103FCC != other) {
         return 0;
     }
     return 1;

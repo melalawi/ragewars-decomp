@@ -7,21 +7,21 @@
 
 
 
-extern u8 D_80142223;
-extern char D_800D35D8[];
-extern char D_800D35DC[];
-extern char D_800D35E0[];
+extern u8 D_801462E3;
+extern char D_800D7604[];
+extern char D_800D7608[];
+extern char D_800D760C[];
 
 s32 func_8044472C_de(struct Field_func_8040A4A0_de *field) {
-    switch (D_80142223) {
+    switch (D_801462E3) {
     case 0:
-        field->text = D_800D35D8;
+        field->text = D_800D7604;
         break;
     case 1:
-        field->text = D_800D35DC;
+        field->text = D_800D7608;
         break;
     case 2:
-        field->text = D_800D35E0;
+        field->text = D_800D760C;
         break;
     default:
         return 0;

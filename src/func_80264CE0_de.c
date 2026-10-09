@@ -13,9 +13,9 @@
 
 
 
-extern ActorList D_80140F80;
+extern ActorList D_80145040;
 extern Snapshot_func_80264CE0_de D_8010BC40;
-extern char D_8011BDC8;
+extern char D_8011FE88;
 extern s32 func_8028B350_de(void *table, s32 id);
 
 void func_80264CE0_de(void) {
@@ -24,14 +24,14 @@ void func_80264CE0_de(void) {
     Snapshot_func_80264CE0_de *snapshot;
     ActorList *list;
 
-    list = &D_80140F80;
+    list = &D_80145040;
     snapshot = &D_8010BC40;
     for (i = 0; i < list->count; i++) {
         actor = &list->actors[i];
         snapshot->blocks[i] = actor->block;
         snapshot->positions[i] = actor->position;
         snapshot->values[i] = actor->field6C;
-        snapshot->handles[i] = func_8028B350_de(&D_8011BDC8, actor->id);
-        list = &D_80140F80;
+        snapshot->handles[i] = func_8028B350_de(&D_8011FE88, actor->id);
+        list = &D_80145040;
     }
 }

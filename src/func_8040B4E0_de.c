@@ -5,11 +5,11 @@
 
 
 
-extern s32 D_8014D4CC;
-extern s32 D_8014D4F4;
-extern s32 D_800DE878;
+extern s32 D_8015375C;
+extern s32 D_80153784;
+extern s32 D_800E28C8;
 extern char D_0044EE88;
-extern char D_8014155C;
+extern char D_8014561C;
 extern s32 func_80406178_de(Action_func_8040B4E0_de *action, s32 channel, s32 arg2);
 extern void func_80442574_de(void *dst, void *text, void *arg2, void *arg3, void *arg4);
 
@@ -17,16 +17,16 @@ extern void func_80442574_de(void *dst, void *text, void *arg2, void *arg3, void
 s32 func_8040B4E0_de(s32 arg0, Action_func_8040B4E0_de *arg1) {
     s32 channel;
 
-    if (D_8014D4CC != 0) {
-        channel = D_800DE878;
+    if (D_8015375C != 0) {
+        channel = D_800E28C8;
     } else {
         channel = arg1->unk20->unk4;
     }
     if (func_80406178_de(arg1, channel, 1) == 0) {
-        func_80442574_de(&D_8014155C, &D_0044EE88, arg1->unk1C, arg1->unk20, arg1->unk24);
+        func_80442574_de(&D_8014561C, &D_0044EE88, arg1->unk1C, arg1->unk20, arg1->unk24);
     } else {
-        D_8014D4F4 = 1;
-        func_80442574_de(&D_8014155C, arg1->unk24, arg1->unk1C, arg1->unk20, 0);
+        D_80153784 = 1;
+        func_80442574_de(&D_8014561C, arg1->unk24, arg1->unk1C, arg1->unk20, 0);
     }
     return 1;
     /* FAKEMATCH: preserve the return-value load before the epilogue register restores. */

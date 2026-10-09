@@ -34,7 +34,7 @@
 
 
 /* Updates player forward, strafe and impulse velocities, accumulates movement and plays the impulse sound. */
-extern float D_800CD738[];
+extern float D_800D2988[];
 
 
 
@@ -76,7 +76,7 @@ void func_802233F0_de(SharedPlayer_func_802233F0_de *arg0, func_802165F8_S1 *arg
             var_s4 = 1;
             if (!(temp_f1 <= 0.0f)) {
                 var_s4 = 0;
-                arg0->views5E8.view6DC_60.unk6DC = (f32) (temp_f1 - D_800CD738[0]);
+                arg0->views5E8.view6DC_60.unk6DC = (f32) (temp_f1 - D_800D2988[0]);
             }
             temp_f0=arg0->views5E8.view6C0_51.unk6C0; temp_f1_2=arg2->unk4;
             if (temp_f0 < 0.0f ? temp_f1_2 < -temp_f0 : temp_f1_2 < temp_f0) {

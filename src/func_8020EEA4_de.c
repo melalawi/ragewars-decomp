@@ -5,7 +5,7 @@
 extern void *func_8020C994_de(void *, s32);
 
 
-extern s32 D_801372A4;
+extern s32 D_8013B364;
 
 
 
@@ -22,7 +22,7 @@ void func_8020EEA4_de(void) {
     f32 addVal;
     u16 field0E;
 
-    base = &D_801372A4;
+    base = &D_8013B364;
     node = ((func_8020D0CC_S1 *)(base))->unk24;
     if (node != 0) {
         addVal = D_800C1EE4_de;

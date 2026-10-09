@@ -16,13 +16,13 @@ extern s32 D_800E0D44[], D_800DCC68[];
 
 #else
 #endif
-extern WeaponActionRecord D_800C9698[];
-extern MatchRewardsRecord D_800FEB00[];
+extern WeaponActionRecord D_800CE8DC[];
+extern MatchRewardsRecord D_80102B00[];
 
 extern s32 D_800D30BC;
 
-extern s32 D_80140F80;
-extern char D_80140FC8;
+extern s32 D_80145040;
+extern char D_80145088;
 extern s32 func_80222AA4_de(void *, s16);
 extern s16 func_8022F96C_de(void *);
 extern s32 func_8022F55C_de(void *, s16);
@@ -41,19 +41,19 @@ static inline s32 can_fire(char *player) {
     if (((SharedPlayer *)(player))->views1450.view1450_0.unk1450 != 0) {
         return 1;
     }
-    if (D_80142215 != 1) {
+    if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F55C_de(&D_800FEB00[((SharedPlayer *)(player))->views1C.view5D4_45.unk5D4], ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E);
+    ammo = func_8022F55C_de(&D_80102B00[((SharedPlayer *)(player))->views1C.view5D4_45.unk5D4], ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E);
     if (ammo == 0) {
         func_8025DF34_de(0xD4D);
         if (((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC != 0) {
 #if defined(VERSION_EU)
-            func_80239908_de(&D_80140FC8, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, ((D_800E0D44)[D_80152789]), func_8022A5A0_de(&D_80140F80, player),
+            func_80239908_de(&D_80145088, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, ((D_800E0D44)[D_80152789]), func_8022A5A0_de(&D_80145040, player),
 #elif defined(VERSION_EU_X)
-            func_80239908_de(&D_80140FC8, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, ((D_800DCC68)[D_80152789]), func_8022A5A0_de(&D_80140F80, player),
+            func_80239908_de(&D_80145088, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, ((D_800DCC68)[D_80152789]), func_8022A5A0_de(&D_80145040, player),
 #else
-            func_80239908_de(&D_80140FC8, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, (D_800D30BC), func_8022A5A0_de(&D_80140F80, player),
+            func_80239908_de(&D_80145088, ((SharedPlayer *)(player))->views5DC.view5DC_0.unk5DC, (D_800D30BC), func_8022A5A0_de(&D_80145040, player),
 #endif
                           D_800C2FB8_de);
         }
@@ -66,7 +66,7 @@ void func_80231BB0_de(void *actor, void *arg1) {
     s32 action;
 
     player = ((Shared_Actor *)(actor))->entity;
-    action = D_800C9698[((SharedPlayer *)(player))->views5E8.view650_15.unk650].action;
+    action = D_800CE8DC[((SharedPlayer *)(player))->views5E8.view650_15.unk650].action;
     if (func_80222AA4_de(player, ((SharedPlayer *)(player))->views5E8.view62E_13.unk62E) == 0) {
         ((SharedPlayer *)(player))->views5E8.view770_91.unk770 = func_8022F96C_de(player);
         return;

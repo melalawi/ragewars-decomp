@@ -54,7 +54,7 @@ void func_80243874_de(void *arg0) {
     }
 }
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern void *func_8028B2F8_de(void *, u16 *);
 extern void func_80240CAC_de(QueryE0 *arg0);
 extern s32 func_8023E8D4_de(ActorB0 *, QueryE0 *, s32);
@@ -77,7 +77,7 @@ void func_80243920_de(ActorB0 *actor) {
     data = actor->data;
     flags = actor->flags;
     if (data != 0) {
-        resource = func_8028B2F8_de(&D_8011BDC8, (u16 *)data);
+        resource = func_8028B2F8_de(&D_8011FE88, (u16 *)data);
         if (resource != 0) {
           if ((*flags & 8) != 0) {
            if ((*flags & 0x100000) == 0) {

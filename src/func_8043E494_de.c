@@ -11,16 +11,16 @@
 
 
 
-extern char D_800D365C;
-extern char D_800D3660;
+extern char D_800D7688;
+extern char D_800D768C;
 
 s32 func_8043E494_de(func_80254D70_S1 *arg0, Menu_func_8043E494_de *menu) {
     switch (menu->owner->record->mode) {
     case 0:
-        arg0->unk14 = &D_800D365C;
+        arg0->unk14 = &D_800D7688;
         break;
     case 1:
-        arg0->unk14 = &D_800D3660;
+        arg0->unk14 = &D_800D768C;
         break;
     }
     return 0;

@@ -116,17 +116,17 @@ void func_8029FB74_de(char *base, char *max) {
 
     lo = max - base;
     do {
-        mid = i = base + D_80146E40 * ((unsigned)(lo / D_80146E40) >> 1);
-        if (lo >= D_80146E48) {
-            j = (D_80146E4C((jj = base), i) > 0 ? jj : i);
-            if (D_80146E4C(j, (tmp = max - D_80146E40)) > 0) {
+        mid = i = base + D_8014D0C0 * ((unsigned)(lo / D_8014D0C0) >> 1);
+        if (lo >= D_8014D0C8) {
+            j = (D_8014D0CC((jj = base), i) > 0 ? jj : i);
+            if (D_8014D0CC(j, (tmp = max - D_8014D0C0)) > 0) {
                 j = (j == jj ? i : jj);
-                if (D_80146E4C(j, tmp) < 0) {
+                if (D_8014D0CC(j, tmp) < 0) {
                     j = tmp;
                 }
             }
             if (j != i) {
-                ii = D_80146E40;
+                ii = D_8014D0C0;
                 do {
                     c = *i;
                     *i++ = *j;
@@ -134,21 +134,21 @@ void func_8029FB74_de(char *base, char *max) {
                 } while (--ii);
             }
         }
-        for (i = base, j = max - D_80146E40;;) {
-            while (i < mid && D_80146E4C(i, mid) <= 0) {
-                i += D_80146E40;
+        for (i = base, j = max - D_8014D0C0;;) {
+            while (i < mid && D_8014D0CC(i, mid) <= 0) {
+                i += D_8014D0C0;
             }
             while (j > mid) {
-                if (D_80146E4C(mid, j) <= 0) {
-                    j -= D_80146E40;
+                if (D_8014D0CC(mid, j) <= 0) {
+                    j -= D_8014D0C0;
                     continue;
                 }
-                tmp = i + D_80146E40;
+                tmp = i + D_8014D0C0;
                 if (i == mid) {
                     mid = jj = j;
                 } else {
                     jj = j;
-                    j -= D_80146E40;
+                    j -= D_8014D0C0;
                 }
                 goto swap;
             }
@@ -157,10 +157,10 @@ void func_8029FB74_de(char *base, char *max) {
             } else {
                 jj = mid;
                 tmp = mid = i;
-                j -= D_80146E40;
+                j -= D_8014D0C0;
             }
 swap:
-            ii = D_80146E40;
+            ii = D_8014D0C0;
             do {
                 c = *i;
                 *i++ = *jj;
@@ -168,20 +168,20 @@ swap:
             } while (--ii);
             i = tmp;
         }
-        i = (j = mid) + D_80146E40;
+        i = (j = mid) + D_8014D0C0;
         if ((lo = j - base) <= (hi = max - i)) {
-            if (lo >= D_80146E44) {
+            if (lo >= D_8014D0C4) {
                 func_8029FB74_de(base, j);
             }
             base = i;
             lo = hi;
         } else {
-            if (hi >= D_80146E44) {
+            if (hi >= D_8014D0C4) {
                 func_8029FB74_de(i, max);
             }
             max = j;
         }
-    } while (lo >= D_80146E44);
+    } while (lo >= D_8014D0C4);
 }
 
 /* Sorts n elements of the given size with a comparator (qsort): records the element size, the four- and six-element thresholds and the comparator in D_8014D0C0 to D_8014D0CC, quick-sorts arrays of four or more through func_8029FB74_de, swaps the smallest of the first elements into place as a sentinel, and finishes with an insertion sort that shifts bytes. Written from the BSD qsort driver structure. */
@@ -204,36 +204,36 @@ void func_8029FE38_de(char *base, s32 n, s32 size, s32 (*compare)(char *a, char 
     if (n <= 1) {
         return;
     }
-    D_80146E44 = size * 4;
-    D_80146E48 = size * 6;
-    D_80146E40 = size;
-    D_80146E4C = compare;
+    D_8014D0C4 = size * 4;
+    D_8014D0C8 = size * 6;
+    D_8014D0C0 = size;
+    D_8014D0CC = compare;
     max = base + n * size;
     if (n >= 4) {
         func_8029FB74_de(base, max);
-        hi = base + D_80146E44;
+        hi = base + D_8014D0C4;
     } else {
         hi = max;
     }
-    for (j = lo = base; (lo += D_80146E40) < hi;) {
-        if (D_80146E4C(j, lo) > 0) {
+    for (j = lo = base; (lo += D_8014D0C0) < hi;) {
+        if (D_8014D0CC(j, lo) > 0) {
             j = lo;
         }
     }
     if (j != base) {
-        for (i = base, hi = base + D_80146E40; i < hi;) {
+        for (i = base, hi = base + D_8014D0C0; i < hi;) {
             c = *j;
             *j++ = *i;
             *i++ = c;
         }
     }
-    for (min = base; (hi = min += D_80146E40) < max;) {
-        while (D_80146E4C(hi -= D_80146E40, min) > 0) {
+    for (min = base; (hi = min += D_8014D0C0) < max;) {
+        while (D_8014D0CC(hi -= D_8014D0C0, min) > 0) {
         }
-        if ((hi += D_80146E40) != min) {
-            for (lo = min + D_80146E40; --lo >= min;) {
+        if ((hi += D_8014D0C0) != min) {
+            for (lo = min + D_8014D0C0; --lo >= min;) {
                 c = *lo;
-                for (i = j = lo; (j -= D_80146E40) >= hi; i = j) {
+                for (i = j = lo; (j -= D_8014D0C0) >= hi; i = j) {
                     *i = *j;
                 }
                 *i = c;

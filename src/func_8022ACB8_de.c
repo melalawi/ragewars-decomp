@@ -7,9 +7,9 @@
 
 
 
-extern unsigned char D_80142215;
-extern int D_800C9198_de[];
-extern Profile_func_80229554_de D_800FEB00[];
+extern unsigned char D_801462D5;
+extern int D_800CE3E8[];
+extern Profile_func_80229554_de D_80102B00[];
 
 int func_8022ACB8_de(Player_func_8022ACB8_de *player, int slot) {
     int value;
@@ -17,17 +17,17 @@ int func_8022ACB8_de(Player_func_8022ACB8_de *player, int slot) {
     if (slot == -1) {
         return 0;
     }
-    if (D_80142215 != 1) {
+    if (D_801462D5 != 1) {
         value = player->loadout->capacity[slot];
     } else {
-        value = D_800C9198_de[slot];
+        value = D_800CE3E8[slot];
         if (player->isBot == 0) {
             if (slot == 0) {
-                value += D_800FEB00[player->character].bonus0;
+                value += D_80102B00[player->character].bonus0;
             } else if (slot == 1) {
-                value += D_800FEB00[player->character].bonus1;
+                value += D_80102B00[player->character].bonus1;
             } else if (slot == 2) {
-                value += D_800FEB00[player->character].bonus2;
+                value += D_80102B00[player->character].bonus2;
             }
         }
     }

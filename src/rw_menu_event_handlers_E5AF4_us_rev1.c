@@ -11,7 +11,7 @@ extern s32 func_8042994C_de(void *, s32, s32, s32, s32);
 
 /* func_80429994_de: event, actor kind, callback; stride12; five
  * o32 arguments and signed result. Unresolved callback rows excluded. */
-ResidentEventHandlerEntry D_800E0EA4[9] = {
+ResidentEventHandlerEntry D_800E4EF4[9] = {
     {3590, 21, (ResidentEventHandler)((char *)func_804291D0_de - 0x80000000U)},
     {3587, 21, (ResidentEventHandler)((char *)func_804296F4_de - 0x80000000U)},
     {3594, 21, (ResidentEventHandler)((char *)func_80429724_de - 0x80000000U)},

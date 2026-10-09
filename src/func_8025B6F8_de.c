@@ -3,12 +3,12 @@
    stores the two arguments at 0xB0 and 0x0, clears the halfword at 0x38 and the words at 0x14, 0x58,
    0x5C, 0xA4, 0xAC, 0xBC and 0xC0, sets the word at 0xC4 to 1 and writes D_800C9068 into the floats
    at 0x2C, 0x34 and 0xB8. */
-extern float D_800C3F78_de;
+extern float D_800C9068;
 
 
 
 void func_8025B6F8_de(void *arg0, int arg1, int arg2) {
-    float k = D_800C3F78_de;
+    float k = D_800C9068;
 
     ((func_8025B718_S1 *)(arg0))->unkC = -1;
     ((func_8025B718_S1 *)(arg0))->unk8 = -1;

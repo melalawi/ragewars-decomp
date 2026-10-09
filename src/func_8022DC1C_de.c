@@ -12,7 +12,7 @@
 
 s32 func_8022DC1C_de(void *arg0) {
     f32 field = ((func_8022DC0C_S1 *)(arg0))->unk718;
-    f32 konst = ((func_802077F4_S2 *)(&D_800C2DD8_de))->unk4;
+    f32 konst = ((func_802077F4_S2 *)(&D_800C7EC8))->unk4;
     s32 result = 1;
     if (!(konst < field)) {
         result = 0;

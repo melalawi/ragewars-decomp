@@ -1,5 +1,5 @@
 /* Pak note actions, difficulty, statistics and note-list text slots.
- * resident_menu_pak_options consumes D_800D37A0 and neighboring slots
+ * resident_menu_pak_options consumes D_800D77CC and neighboring slots
  * through 80442064, which dereferences the text-pointer field.
  * Targets are real string members of the retained label producer. */
 struct MenuStrings_D5FC0;

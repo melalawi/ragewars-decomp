@@ -6,7 +6,7 @@
 
 /* Animates the two menu panels through open, close and countdown states and updates the active team menu. */
 
-extern State_func_8042F91C_de *D_800E1454_de;
+extern State_func_8042F91C_de *D_800E54A4;
 extern s32 func_8025DF34_de(s32 arg0);
 extern void func_80298368_de(s32);
 extern void func_8029973C_de(void);
@@ -28,35 +28,35 @@ s32 func_8042F91C_de(s32 arg0, s32 arg1, s32 arg2) {
     Field_u16_14 *temp_a1;
     Field_u16_14 *temp_a1_2;
 
-    if (D_800DE890 < 2) {
-        temp_v0 = D_800E1454_de->unk4C;
+    if (D_800E28E0 < 2) {
+        temp_v0 = D_800E54A4->unk4C;
         switch (temp_v0) {
         case 1:
-            temp_a1 = D_800E1454_de->unk3C;
-            temp_a1->value = (u16) (temp_a1->value + D_800E1454_de->unk42);
-            temp_a1_2 = D_800E1454_de->unk44;
-            temp_a1_2->value = (u16) (temp_a1_2->value - D_800E1454_de->unk4A);
-            temp_v0_2 = D_800E1454_de->unk50 - 1;
-            D_800E1454_de->unk50 = temp_v0_2;
+            temp_a1 = D_800E54A4->unk3C;
+            temp_a1->value = (u16) (temp_a1->value + D_800E54A4->unk42);
+            temp_a1_2 = D_800E54A4->unk44;
+            temp_a1_2->value = (u16) (temp_a1_2->value - D_800E54A4->unk4A);
+            temp_v0_2 = D_800E54A4->unk50 - 1;
+            D_800E54A4->unk50 = temp_v0_2;
             if (temp_v0_2 <= 0) {
                 func_8025DF34_de(0xE79);
-                func_8040E8D8_de(D_800E1454_de->unk28, 1);
-                func_80419F58_de(D_800E1454_de->unk24, 4);
-                D_800E1454_de->unk4C = 4;
-                D_800E1454_de->unk50 = 4;
+                func_8040E8D8_de(D_800E54A4->unk28, 1);
+                func_80419F58_de(D_800E54A4->unk24, 4);
+                D_800E54A4->unk4C = 4;
+                D_800E54A4->unk50 = 4;
             }
             break;
         case 2:
-            temp_a0 = D_800E1454_de->unk3C;
-            temp_a0->value = (u16) (temp_a0->value - D_800E1454_de->unk42);
-            temp_a0_2 = D_800E1454_de->unk44;
-            temp_a0_2->value = (u16) (temp_a0_2->value + D_800E1454_de->unk4A);
-            temp_v0_3 = D_800E1454_de->unk50 - 1;
-            D_800E1454_de->unk50 = temp_v0_3;
+            temp_a0 = D_800E54A4->unk3C;
+            temp_a0->value = (u16) (temp_a0->value - D_800E54A4->unk42);
+            temp_a0_2 = D_800E54A4->unk44;
+            temp_a0_2->value = (u16) (temp_a0_2->value + D_800E54A4->unk4A);
+            temp_v0_3 = D_800E54A4->unk50 - 1;
+            D_800E54A4->unk50 = temp_v0_3;
             if (temp_v0_3 <= 0) {
-                D_800E1454_de->unk4C = 3;
+                D_800E54A4->unk4C = 3;
                 func_8029973C_de();
-                func_80298368_de(D_800E1454_de->unk3470);
+                func_80298368_de(D_800E54A4->unk3470);
                 return 0;
             }
             break;
@@ -64,20 +64,20 @@ s32 func_8042F91C_de(s32 arg0, s32 arg1, s32 arg2) {
             func_802A2360_de();
             break;
         case 4:
-            D_800E1454_de->unk50 = RW_CLAMP(D_800E1454_de->unk50 - 1, 0, D_800E1454_de->unk50);
-            if ((D_800E1454_de->unk50 <= 0) && (func_80419F38_de(D_800E1454_de->unk24) != 0)) {
-                func_80419F24_de(D_800E1454_de->unk24);
-                D_800E1454_de->unk4C = 3;
+            D_800E54A4->unk50 = RW_CLAMP(D_800E54A4->unk50 - 1, 0, D_800E54A4->unk50);
+            if ((D_800E54A4->unk50 <= 0) && (func_80419F38_de(D_800E54A4->unk24) != 0)) {
+                func_80419F24_de(D_800E54A4->unk24);
+                D_800E54A4->unk4C = 3;
             }
             break;
         case 5:
             func_8025DF34_de(0xE78);
-            D_800E1454_de->unk4C = 2;
-            D_800E1454_de->unk50 = 4;
-            func_8040E8D8_de(D_800E1454_de->unk28, 0);
+            D_800E54A4->unk4C = 2;
+            D_800E54A4->unk50 = 4;
+            func_8040E8D8_de(D_800E54A4->unk28, 0);
             break;
         }
-        if (D_800E1454_de->unk4C == 3) func_80433398_de(arg2);
+        if (D_800E54A4->unk4C == 3) func_80433398_de(arg2);
     }
     return 0;
 }

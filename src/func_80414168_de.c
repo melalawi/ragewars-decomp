@@ -3,20 +3,20 @@
 
 /* Reads nibble D_80153C78 of the packed array D_80153C7C points to, the low nibble for odd indices
    and the high one for even, into both D_80153C80 and D_80153C60. */
-extern s32 D_8014D9E8;
-extern u8 *D_8014D9EC;
-extern s32 D_8014D9F0;
-extern s32 D_8014D9D0;
+extern s32 D_80153C78;
+extern u8 *D_80153C7C;
+extern s32 D_80153C80;
+extern s32 D_80153C60;
 
 void func_80414168_de(void) {
-    s32 index = D_8014D9E8;
+    s32 index = D_80153C78;
     s32 value;
 
     if (index & 1) {
-        value = D_8014D9EC[index >> 1] & 0xF;
+        value = D_80153C7C[index >> 1] & 0xF;
     } else {
-        value = D_8014D9EC[index >> 1] >> 4;
+        value = D_80153C7C[index >> 1] >> 4;
     }
-    D_8014D9F0 = value;
-    D_8014D9D0 = value;
+    D_80153C80 = value;
+    D_80153C60 = value;
 }

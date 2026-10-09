@@ -7,7 +7,7 @@
 
 extern f32 D_800C1D90_de;
 
-extern struct {s32 *unk0;} D_801372A4;
+extern struct {s32 *unk0;} D_8013B364;
 extern s32 func_802744D4_de(void);
 
 
@@ -25,7 +25,7 @@ void func_8020CA10_de(void *arg0, s32 arg1)
   ((func_8020CA10_S1 *)(arg0))->unk8 = -1;
   ((func_8020CA10_S1 *)(arg0))->unkC = 0;
   ((func_8020CA10_S1 *)(arg0))->unk10 = 0;
-  base = D_801372A4.unk0;
+  base = D_8013B364.unk0;
   new_var = (char *)base + ((arg1 * (*base)) + 8);
   entry = new_var;
   flags = ((func_8020CA10_S2 *)(entry))->unkC;

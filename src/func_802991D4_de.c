@@ -10,7 +10,7 @@
 
 
 
-extern Menu_func_802991D4_de *D_80146E00;
+extern Menu_func_802991D4_de *D_8014D080;
 extern Element *func_80298170_de(s32 id);
 extern MenuElementHandler func_802997E4_de(s32 kind);
 extern s32 func_80411DF0_de(s32 id);
@@ -29,28 +29,28 @@ static inline s32 send_event(s32 value, s32 arg1, s32 arg2, s32 arg3, s32 arg4) 
     s32 result;
 
     if (func_80411DF0_de(value) != 0) {
-        if (value != D_80146E00->entries[D_80146E00->current].owner) {
+        if (value != D_8014D080->entries[D_8014D080->current].owner) {
             return 0;
         }
     }
-    manager = D_80146E00;
+    manager = D_8014D080;
     locked = manager->locked;
     index = manager->current;
     minusOne = -1;
     if ((value == locked) || (index == minusOne)) {
         return 0;
     }
-    if (D_80146E00->callback != 0) {
-        saved = D_80146E00->handled;
-        D_80146E00->handled = 0;
-        result = D_80146E00->callback(arg1, arg2, arg3, arg4);
-        if (D_80146E00->handled == 1) {
-            D_80146E00->handled = saved;
+    if (D_8014D080->callback != 0) {
+        saved = D_8014D080->handled;
+        D_8014D080->handled = 0;
+        result = D_8014D080->callback(arg1, arg2, arg3, arg4);
+        if (D_8014D080->handled == 1) {
+            D_8014D080->handled = saved;
             return result;
         }
-        D_80146E00->handled = saved;
+        D_8014D080->handled = saved;
     }
-    if (value == ((func_8021C9B4_S3 *)(D_80146E00->entries[D_80146E00->current].primary))->unkC) {
+    if (value == ((func_8021C9B4_S3 *)(D_8014D080->entries[D_8014D080->current].primary))->unkC) {
         result = func_80297A34_de(arg1, arg2, arg3, arg4);
     } else {
         result = func_80296E3C_de(value, arg1, arg2, arg3, arg4);
@@ -64,10 +64,10 @@ void func_802991D4_de(s32 id) {
     if (func_802997E4_de(func_80298170_de(id)->kind) == 0) {
         return;
     }
-    previous = D_80146E00->entries[D_80146E00->current].focus;
+    previous = D_8014D080->entries[D_8014D080->current].focus;
     if (previous != 0) {
         send_event(previous->id, 0x10,0,0,0);
     }
-    D_80146E00->entries[D_80146E00->current].focus = func_80298170_de(id);
+    D_8014D080->entries[D_8014D080->current].focus = func_80298170_de(id);
     send_event(id, 0xF,0,0,0);
 }

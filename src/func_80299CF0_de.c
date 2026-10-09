@@ -6,7 +6,7 @@
 
 
 
-extern s32 D_80146E00;
+extern s32 D_8014D080;
 extern s32 func_80299958_de(void);
 extern s32 func_802995D4_de(s32, s32, s32, s32, s32);
 
@@ -18,7 +18,7 @@ void func_80299CF0_de(Node_func_80299CF0_de *node, s32 arg1, s32 arg2, s32 arg3,
     s32 *value;
 
     if (node != 0) {
-        context = D_80146E00;
+        context = D_8014D080;
         saved = context->unk520;
         context->unk520 = 0;
         value = &context->unk520;

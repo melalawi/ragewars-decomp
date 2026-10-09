@@ -11,7 +11,7 @@ extern Acmd *func_802BEC34_de(Acmd *ptr, ALLoadFilter48_2 *f, s32 tsam, s32 nbyt
                             s16 outp, s16 inp, u32 flags);
 /* Decode ADPCM samples, restarting loops and clearing exhausted input.
  * The decode helper uses the existing table-opaque view of this same filter. */
-Acmd *func_802BE3B0_eu_x(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, Acmd *p)
+Acmd *func_802C31C0(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, Acmd *p)
 {
     Acmd *ptr = p;
     s16 inp;

@@ -18,7 +18,7 @@ extern void func_80255F70_de(void *);
 extern void func_80255D70_de(void *, s32, s32);
 
 extern s32 D_80100568[];
-extern s32 D_801011A0[3];
+extern s32 D_801051A0[3];
 
 
 
@@ -43,7 +43,7 @@ void func_802515F0_de(s32 unused, s32 arg1) {
     }
 
     pool = D_80100568;
-    arena_end = &D_801011A0[2];
+    arena_end = &D_801051A0[2];
     arena = arena_end - 2;
     do {
         node = (Node80254C10 *)pool[0];

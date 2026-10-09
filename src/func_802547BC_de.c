@@ -3,5 +3,5 @@
 
 
 int func_802547BC_de(void) {
-    return D_80100580;
+    return D_80104580;
 }

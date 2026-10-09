@@ -9,7 +9,7 @@
 
 
 extern Triple D_801002B8;
-extern Triple D_801002C8;
+extern Triple D_801042C8;
 extern char D_8011D8D0;
 
 extern void func_80265E10_de(void *, void *, s32, s32, Triple, struct Shape_func_802764D4_de_2);
@@ -41,7 +41,7 @@ void func_8027C4F0_de(void *arg0) {
     void *temp_v0_2;
     void *temp_v1;
 
-    switch (D_801002C4) {
+    switch (D_801042C4) {
     case 1:
     default:
         var_a0 = 1;
@@ -67,7 +67,7 @@ void func_8027C4F0_de(void *arg0) {
     }
     if (temp_s2 != 0xFFFF) {
         if ((*((func_8027C5A0_S1 *)(arg0))->unk118.v1 & 0x10) != 0) {
-            position = D_801002C8;
+            position = D_801042C8;
         } else {
             position = ((func_8027C5A0_S1 *)(arg0))->unk1C;
         }

@@ -4,7 +4,7 @@
 /* __osViSwapContext, drafted from ultralib src/io/viswapcontext.c (2.0I: vStart straight from the
    field registers). The unsigned-to-float and float-to-unsigned conversions of the y scale use the
    cartridge's 2^32 and 2^31 constants, so both are written out. */
-extern __OSViContext_func_802BA910_de *D_800D4410;
+extern __OSViContext_func_802BA910_de *D_800D8440;
 extern __OSViContext_func_802BA910_de *D_800D4414;
  /* 2^32 */
  /* 2^31 */
@@ -79,7 +79,7 @@ void func_802BA910_de(void)
     IO_WRITE(0xA4400030, vc->x.scale);
     IO_WRITE(0xA4400034, vc->y.scale);
     IO_WRITE(0xA4400000, vc->control);
-    curr = &D_800D4410;
+    curr = &D_800D8440;
     D_800D4414 = *curr;
     *curr = vc;
     *D_800D4414 = **curr;

@@ -7,7 +7,7 @@
 
 
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern char D_801379C0;
 
 extern void func_80285DB0_de(void *, void *, s32);
@@ -25,7 +25,7 @@ void func_80204C68_de(void *arg0, void *arg1) {
     s32 *flag;
 
     local.field_0 = 0;
-    flag = &D_8011BDC8;
+    flag = &D_8011FE88;
     func_80285DB0_de(flag, arg0, 1);
     func_80278D78_de(arg0, 0x4000, arg0);
     ((func_80204C68_S1 *)(arg1))->unk64 = 0;

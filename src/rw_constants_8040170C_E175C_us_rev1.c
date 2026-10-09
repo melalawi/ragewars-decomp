@@ -4,7 +4,7 @@
  */
 struct rw_constants_8040170C_E175C_us_rev1_layout {
     float D_800E0B5C;
-    float D_800DCB30;
+    float D_800E0B60;
 } __attribute__((packed));
 
 const struct rw_constants_8040170C_E175C_us_rev1_layout rw_constants_8040170C_E175C_us_rev1 = {

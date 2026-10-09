@@ -30,7 +30,7 @@ s32 func_80404F58_de(s32 slot, s32 arg1, s32 arg2, s32 length)
   size = (length + 0xFF) & (~0xFF);
   one = 1;
   zero = 0;
-  if (D_8014D260[slot] != 3)
+  if (D_801534F0[slot] != 3)
   {
     return -2;
   }
@@ -42,7 +42,7 @@ s32 func_80404F58_de(s32 slot, s32 arg1, s32 arg2, s32 length)
   addr = *buf;
   func_802644FC_de(1);
   func_80263740_de();
-  result = D_8014D270[slot];
+  result = D_80153500[slot];
   D_8010BBB8 = 2;
   if (result == 0)
   {

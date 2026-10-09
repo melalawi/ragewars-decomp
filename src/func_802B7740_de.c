@@ -10,8 +10,8 @@ extern void func_802B7A20_de(s32 arg0);
 extern void func_802B7AD8_de(s32 *arg0, s32 arg1);
 
 
-extern u8 D_80147220;
-extern char D_801471E0;
+extern u8 D_8014D4B0;
+extern char D_8014D470;
 
 s32 func_802B7740_de(s32 arg0, s32 arg1) {
     s32 output;
@@ -20,13 +20,13 @@ s32 func_802B7740_de(s32 arg0, s32 arg1) {
     s32 sentinel;
 
     func_802B9C14_de();
-    state = &D_80147220;
+    state = &D_8014D4B0;
     sentinel = 0xFF;
     if (*state != sentinel) {
         char *data;
 
         func_802B784C_de();
-        data = &D_801471E0;
+        data = &D_8014D470;
         func_802B9CB0_de(1, data);
         func_802BB2A0_de(arg0, 0, 1);
         func_802B9CB0_de(0, data);
@@ -36,7 +36,7 @@ s32 func_802B7740_de(s32 arg0, s32 arg1) {
         func_802BB2A0_de(arg0, 0, 1);
         *state = sentinel;
     }
-    result = func_802B9CB0_de(0, &D_801471E0);
+    result = func_802B9CB0_de(0, &D_8014D470);
     func_802BB2A0_de(arg0, 0, 1);
     func_802B7AD8_de(&output, arg1);
     func_802B9C80_de();

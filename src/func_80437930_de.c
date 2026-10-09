@@ -8,8 +8,8 @@
    D_800E5784 points to to 7 and clears five bytes at D_80102B7E through func_802A001C_de, for 0x3D1 it
    sets that word to -1; then it calls func_8041A430_de on the block's first word with 2. Returns
    zero. */
-extern MenuSelectionMessage *D_800E1734_de;
-extern char D_800FEB7E[];
+extern MenuSelectionMessage *D_800E5784;
+extern char D_80102B7E[];
 extern void func_8029973C_de();
 extern s32 func_80299A08_de();
 extern void func_802A001C_de(void *, s32, s32);
@@ -30,14 +30,14 @@ s32 func_80437930_de(void) {
     choice = func_80299A08_de();
     switch (choice) {
     case MENU_80437B10_977:
-        D_800E1734_de->value = -1;
+        D_800E5784->value = -1;
         break;
     case MENU_80437B10_976:
-        D_800E1734_de->value = 7;
-        func_802A001C_de(D_800FEB7E, 0, 5);
+        D_800E5784->value = 7;
+        func_802A001C_de(D_80102B7E, 0, 5);
         break;
     }
-    func_8041A430_de(D_800E1734_de->first, 2);
+    func_8041A430_de(D_800E5784->first, 2);
     return 0;
 }
 

@@ -4,7 +4,7 @@
 #include "span_16E000/code_8044ACCC.h"
 #include "types.h"
 #include "stddef.h"
-/* Loads a scene's light into the global light D_800D0EE0: copies the ambient and directional colours from the scene's light settings (bytes 0xD and 0xA) into both colour copies and the direction bytes from 0x11, then scales the direction to D_800CA1F0 in length through func_802B72B0_de and func_80271F9C_de and stores it as shorts at 0x1B2B4 of the scene. */
+/* Loads a scene's light into the global light D_800CBC90: copies the ambient and directional colours from the scene's light settings (bytes 0xD and 0xA) into both colour copies and the direction bytes from 0x11, then scales the direction to D_800CA1F0 in length through func_802B72B0_de and func_80271F9C_de and stores it as shorts at 0x1B2B4 of the scene. */
 extern u8 D_800CBC90[];
 extern u8 D_800CBC94[];
 extern u8 D_800CBC9C[];
@@ -32,7 +32,7 @@ void func_8044BE04_de(Scene_func_8044BE04_de *scene) {
     v[2] = scene->light->dir[2];
     length = func_802B72B0_de(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
     if (length != 0.0f) {
-        func_80271F9C_de(v, v, D_800C5100_de / length);
+        func_80271F9C_de(v, v, D_800CA1F0 / length);
         scene->dir[0] = v[0];
         scene->dir[1] = v[1];
         scene->dir[2] = v[2];
@@ -46,7 +46,7 @@ void func_8025CBEC_de(void *);
 s32 * func_8025CC6C_de(void);
 void func_8028D59C_de(void *);
 void func_8044A07C_de(void *);
-extern s32 D_80140F80;
+extern s32 D_80145040;
 /* Shut down the subsystem, free its owned resources, and unlink its list. */
 void func_8044BF90_de(func_8044CBE0_S1 *arg0) {
     s32 temp_v0;
@@ -56,7 +56,7 @@ void func_8044BF90_de(func_8044CBE0_S1 *arg0) {
     void *temp_s0;
     void *temp_s1;
     func_8020D0CC_S2 *var_a1;
-    temp_v0 = func_8022A414_de(&D_80140F80);
+    temp_v0 = func_8022A414_de(&D_80145040);
     if (temp_v0 != 0) {
         func_8044A07C_de((void *) temp_v0);
     }

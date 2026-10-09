@@ -22,10 +22,10 @@
 
 
 
-extern Manager D_801007E0;
+extern Manager D_801047E0;
 extern s32 D_80100570;
 
-extern s32 D_80101180;
+extern s32 D_80105180;
 extern s32 D_80101190;
 extern s32 D_80101194;
 extern s32 D_80106248;
@@ -50,7 +50,7 @@ static inline void addref(Node_func_80251F6C_de *node) {
 }
 
 static inline void stamp(Node_func_80251F6C_de *node) {
-    node->stamp = D_80101180;
+    node->stamp = D_80105180;
     func_80255FB8_de(&D_80100570, node);
 }
 
@@ -62,12 +62,12 @@ static inline void unref(Node_func_80251F6C_de *node) {
 
 static inline void acquire(void) {
     u32 token = func_802BCF30_de();
-    s32 counter = D_8010115C + 1;
+    s32 counter = D_8010515C + 1;
 
-    D_8010115C = counter;
+    D_8010515C = counter;
     if (counter != 1) {
         func_802BCF50_de(token);
-        func_802BB2A0_de(D_801007E0.lock, 0, 1);
+        func_802BB2A0_de(D_801047E0.lock, 0, 1);
     } else {
         func_802BCF50_de(token);
     }
@@ -75,12 +75,12 @@ static inline void acquire(void) {
 
 static inline void release(void) {
     u32 token = func_802BCF30_de();
-    s32 counter = D_8010115C - 1;
+    s32 counter = D_8010515C - 1;
 
-    D_8010115C = counter;
+    D_8010515C = counter;
     if (counter != 0) {
         func_802BCF50_de(token);
-        func_802BB420_de(D_801007E0.lock, 0, 1);
+        func_802BB420_de(D_801047E0.lock, 0, 1);
     } else {
         func_802BCF50_de(token);
     }
@@ -131,8 +131,8 @@ done:
         return found->node;
     }
 
-    async |= D_801007E0.mask;
-    scan = *(Request_func_80251F6C_de **)D_801007E0.active;
+    async |= D_801047E0.mask;
+    scan = *(Request_func_80251F6C_de **)D_801047E0.active;
     while (scan != 0) {
         if (scan->key == key) {
             busy = 1;
@@ -158,8 +158,8 @@ done:
                 addref(second);
             }
 
-            func_80255ED8_de(D_801007E0.pending, found);
-            func_80255D14_de(D_801007E0.active, found);
+            func_80255ED8_de(D_801047E0.pending, found);
+            func_80255D14_de(D_801047E0.active, found);
             release();
 
             if (async != 0) {
@@ -174,7 +174,7 @@ done:
                 return 0;
             }
 
-            if (func_802551FC_de(&D_80106248, found, &D_801007E0) == 0) {
+            if (func_802551FC_de(&D_80106248, found, &D_801047E0) == 0) {
                 acquire();
                 if (first != 0) {
                     unref(first);
@@ -182,8 +182,8 @@ done:
                 if (second != 0) {
                     unref(second);
                 }
-                func_80255ED8_de(D_801007E0.active, found);
-                func_80255CB8_de(D_801007E0.pending, found);
+                func_80255ED8_de(D_801047E0.active, found);
+                func_80255CB8_de(D_801047E0.pending, found);
                 func_80254E88_de(0, found);
                 release();
             }

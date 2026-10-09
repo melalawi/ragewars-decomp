@@ -21,7 +21,7 @@
 
 extern s32 D_8014D570;
 extern Batch_func_8040CF8C_de D_8014D590[];
-extern s32 D_800DEA68;
+extern s32 D_800E2AB8;
 
 
 extern s32 func_8040E0D4_de(struct Shape_typemap_165 *area, struct Shape_typemap_165 *box, Widget_func_8040CD50_de *widget, DrawArgs *args);
@@ -76,10 +76,10 @@ void func_8040CD50_de(Widget_func_8040CD50_de *widget, DrawArgs args) {
     }
     texture = func_80410674_de(widget->image, 1);
     color = (args.alpha << 24) | 0xFFFFFF;
-    if (D_800DEA6C != 0x53333 || D_800DEA68 == 0) {
+    if (D_800DEA6C != 0x53333 || D_800E2AB8 == 0) {
         D_800DEA6C = 0x53333;
         func_80417138_de(0x53333);
-        D_800DEA68 = 1;
+        D_800E2AB8 = 1;
     }
     func_804174F4_de(texture);
     func_80418DA0_de(area.field_0, area.field_8, 0.0f, area.field_4 - area.field_0 + 1, area.field_C - area.field_8 + 1, color);

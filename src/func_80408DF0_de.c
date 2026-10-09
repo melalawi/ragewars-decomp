@@ -17,18 +17,18 @@
 
 
 
-extern s32 D_8014D4F8;
+extern s32 D_80153788;
 
 
-extern s32 D_8014D4C8;
-extern s32 D_8014D4CC;
+extern s32 D_80153758;
+extern s32 D_8015375C;
 
-extern s32 D_80146CE0;
-extern s32 D_80137208;
+extern s32 D_8014ADA0;
+extern s32 D_8013B2C8;
 
-extern char D_8011BDC8[];
-extern char D_8011BA00[];
-extern char D_8014155C[];
+extern char D_8011FE88[];
+extern char D_8011FAC0[];
+extern char D_8014561C[];
 extern char D_0044E48C[];
 extern char D_0044E4B0[];
 extern char D_0044E4D4[];
@@ -52,54 +52,54 @@ s32 func_80408DF0_de(void *owner, Menu_func_80408DF0_de *menu) {
     s32 status;
     s32 connected;
 
-    if (D_8014D4F8 == 8) {
+    if (D_80153788 == 8) {
         return 0;
     }
-    if (D_8014D4F8 == 9 || D_8014D4F8 == 5) {
+    if (D_80153788 == 9 || D_80153788 == 5) {
         func_80264248_de(menu->slot);
         func_802647E8_de(menu->slot, 1);
     }
-    if (D_8014D4F8 == 9) {
-        if (D_8014D4D0 != 0 && D_8014D4EC_de == 0 && D_8014D4C8 == 0) {
-            if (D_8014D4CC != 0) {
-                ch = D_800DE878;
+    if (D_80153788 == 9) {
+        if (D_80153760 != 0 && D_8014D4EC_de == 0 && D_80153758 == 0) {
+            if (D_8015375C != 0) {
+                ch = D_800E28C8;
             } else {
                 ch = menu->slot->unk4;
             }
             func_80264788_de(ch);
-            func_8044D528_de(D_8011BDC8, menu->player->menu, 2);
+            func_8044D528_de(D_8011FE88, menu->player->menu, 2);
             return 1;
         }
-        func_8044DDD4_de(D_8011BA00);
+        func_8044DDD4_de(D_8011FAC0);
         return 1;
     }
-    if (D_8014D4CC != 0) {
-        ch = D_800DE878;
+    if (D_8015375C != 0) {
+        ch = D_800E28C8;
     } else {
         ch = menu->slot->unk4;
     }
-    if (D_8014D4F8 == 5) {
+    if (D_80153788 == 5) {
         func_80264788_de(ch);
-        func_8044D528_de(D_8011BDC8, D_80137208, 2);
+        func_8044D528_de(D_8011FE88, D_8013B2C8, 2);
     }
-    if (D_8014D4CC != 0 && D_8014D4F8 == 6) {
-        D_80146CE0 = 1;
+    if (D_8015375C != 0 && D_80153788 == 6) {
+        D_8014ADA0 = 1;
     }
-    if (D_8014D4F8 == 4 && D_8014D4D0 != 0 && D_8014D4EC_de == 0) {
+    if (D_80153788 == 4 && D_80153760 != 0 && D_8014D4EC_de == 0) {
         func_80404E28_de(ch);
         status = func_80404F04_de(ch);
         connected = func_80264580_de(ch);
         if ((status == 0 || connected != 0) && status != -2 && menu->prompt == (char *)1) {
-            func_80442574_de(D_8014155C, D_0044E4B0, menu->player, menu->slot, 0);
+            func_80442574_de(D_8014561C, D_0044E4B0, menu->player, menu->slot, 0);
         } else {
-            func_80442574_de(D_8014155C, D_0044FFA4, menu->player, menu->slot, 0);
+            func_80442574_de(D_8014561C, D_0044FFA4, menu->player, menu->slot, 0);
         }
-    } else if (D_8014D4F8 == 3 && D_8014D4D4 != 0) {
+    } else if (D_80153788 == 3 && D_8014D4D4 != 0) {
         func_80404E28_de(ch);
         status = func_80404F04_de(ch);
         connected = func_80264580_de(ch);
         if ((status == 0 || connected != 0) && status != -2 && menu->prompt == (char *)1) {
-            func_80442574_de(D_8014155C, D_0044E4D4, menu->player, menu->slot, 0);
+            func_80442574_de(D_8014561C, D_0044E4D4, menu->player, menu->slot, 0);
         }
     } else {
         if (menu->prompt == (char *)1) {
@@ -107,7 +107,7 @@ s32 func_80408DF0_de(void *owner, Menu_func_80408DF0_de *menu) {
         }
         if (menu->prompt != 0) {
             func_80442574_de(menu->prompt != D_0044E48C && menu->player != 0 ?
-                              &((func_80408E1C_S1 *)(menu->player->messages))->unk554 : D_8014155C,
+                              &((func_80408E1C_S1 *)(menu->player->messages))->unk554 : D_8014561C,
                           menu->prompt, menu->player, menu->slot, ch);
         }
     }

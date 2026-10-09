@@ -73,7 +73,7 @@ extern void *D_800E1394[], *D_800DD124[];
 enum { PAK_SLOT_RESOURCE_688 = 688, PAK_SLOT_RESOURCE_689 = 689, PAK_SLOT_RESOURCE_690 = 690, PAK_SLOT_RESOURCE_691 = 691, PAK_SLOT_RESOURCE_692 = 692, PAK_SLOT_RESOURCE_694 = 694 };
 
 #endif
-extern PakMenuController *D_800E1454_de;
+extern PakMenuController *D_800E54A4;
 extern void *D_800D3250[];
 extern void func_8040E8D8_de(MenuWidget *,s32),func_8040E950_de(MenuWidget *,s32),func_8041B8DC_de(s32,s32,MenuWidget *);
 extern MenuWidget *func_8040EC30_de(MenuWidget *,s32),*func_8041B7FC_de(s32,s32);
@@ -81,26 +81,26 @@ extern s32 func_8040EBD0_de(MenuWidget *),func_804358C0_de(s32,s8);
 void func_80433914_de(s32 player) {
  s32 i;
  MenuWidget *label,*value;
- D_800E1454_de->players[player].chosen=0;
- D_800E1454_de->players[player].nodes[0]=func_8040EC30_de(D_800E1454_de->players[player].menuWidget,PAK_SLOT_RESOURCE_694);
- D_800E1454_de->players[player].nodes[1]=func_8040EC30_de(D_800E1454_de->players[player].menuWidget,PAK_SLOT_RESOURCE_691);
- D_800E1454_de->players[player].nodes[2]=func_8040EC30_de(D_800E1454_de->players[player].menuWidget,PAK_SLOT_RESOURCE_688);
- D_800E1454_de->players[player].nodes[3]=func_8040EC30_de(D_800E1454_de->players[player].menuWidget,PAK_SLOT_RESOURCE_692);
+ D_800E54A4->players[player].chosen=0;
+ D_800E54A4->players[player].nodes[0]=func_8040EC30_de(D_800E54A4->players[player].menuWidget,PAK_SLOT_RESOURCE_694);
+ D_800E54A4->players[player].nodes[1]=func_8040EC30_de(D_800E54A4->players[player].menuWidget,PAK_SLOT_RESOURCE_691);
+ D_800E54A4->players[player].nodes[2]=func_8040EC30_de(D_800E54A4->players[player].menuWidget,PAK_SLOT_RESOURCE_688);
+ D_800E54A4->players[player].nodes[3]=func_8040EC30_de(D_800E54A4->players[player].menuWidget,PAK_SLOT_RESOURCE_692);
  for(i=0;i<4;i++) {
-  D_800E1454_de->players[player].used[i]=2;
-  D_800E1454_de->players[player].nodes[i]->alpha=255;
-  label=func_8040EC30_de(D_800E1454_de->players[player].nodes[i],PAK_SLOT_RESOURCE_689);
-  func_8040E950_de(D_800E1454_de->players[player].nodes[i],0);
-  value=func_8040EC30_de(D_800E1454_de->players[player].nodes[i],PAK_SLOT_RESOURCE_690);
-  if(D_800E1454_de->players[player].records[i].player!=-1) {
-   value->text=D_800E1454_de->players[player].records[i].name;
-   D_800E1454_de->players[player].used[i]=1;
-   if(D_800E1454_de->phase==1) {
-    func_8040E8D8_de(func_8040EC30_de(D_800E1454_de->players[player].nodes[i],PAK_SLOT_RESOURCE_689),0);
-    if(func_804358C0_de(D_800E1454_de->players[player].profile,D_800E1454_de->players[player].records[i].owner)!=-1) {
-     D_800E1454_de->players[player].used[i]=0;
-     func_8040E950_de(D_800E1454_de->players[player].nodes[i],1);
-     func_8040E8D8_de(func_8040EC30_de(D_800E1454_de->players[player].nodes[i],PAK_SLOT_RESOURCE_689),1);
+  D_800E54A4->players[player].used[i]=2;
+  D_800E54A4->players[player].nodes[i]->alpha=255;
+  label=func_8040EC30_de(D_800E54A4->players[player].nodes[i],PAK_SLOT_RESOURCE_689);
+  func_8040E950_de(D_800E54A4->players[player].nodes[i],0);
+  value=func_8040EC30_de(D_800E54A4->players[player].nodes[i],PAK_SLOT_RESOURCE_690);
+  if(D_800E54A4->players[player].records[i].player!=-1) {
+   value->text=D_800E54A4->players[player].records[i].name;
+   D_800E54A4->players[player].used[i]=1;
+   if(D_800E54A4->phase==1) {
+    func_8040E8D8_de(func_8040EC30_de(D_800E54A4->players[player].nodes[i],PAK_SLOT_RESOURCE_689),0);
+    if(func_804358C0_de(D_800E54A4->players[player].profile,D_800E54A4->players[player].records[i].owner)!=-1) {
+     D_800E54A4->players[player].used[i]=0;
+     func_8040E950_de(D_800E54A4->players[player].nodes[i],1);
+     func_8040E8D8_de(func_8040EC30_de(D_800E54A4->players[player].nodes[i],PAK_SLOT_RESOURCE_689),1);
     }
    }
 #if defined(VERSION_EU)
@@ -111,7 +111,7 @@ void func_80433914_de(s32 player) {
   } else {value->text=(D_800D3250[0]);func_8040E8D8_de(label,0);}
 #endif
  }
- label=func_8041B7FC_de(D_800E1454_de->root,player);
+ label=func_8041B7FC_de(D_800E54A4->root,player);
  while(func_8040EBD0_de(label))label=label->next;
- func_8041B8DC_de(D_800E1454_de->root,player,label);
+ func_8041B8DC_de(D_800E54A4->root,player,label);
 }

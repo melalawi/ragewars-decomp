@@ -8,7 +8,7 @@
 #define D_800C626C D_800C650C_eu
 #define D_800C6270_de D_800C6274_de
 #define D_800C6274_de D_800C6514
-#define D_800C6278_de D_800C6280_de
+#define D_800C6278_de D_800CB410
 #define D_800C627C_de D_800C651C_eu
 #define D_800CB410 D_800C6520_eu
 #define D_800CB414 D_800C628C_de
@@ -46,7 +46,7 @@
 #define D_800C626C D_800C650C_eu
 #define D_800C6270_de D_800C6274_de
 #define D_800C6274_de D_800C6514
-#define D_800C6278_de D_800C6280_de
+#define D_800C6278_de D_800CB410
 #define D_800C627C_de D_800C651C_eu
 #define D_800CB410 D_800C6520_eu
 #define D_800CB414 D_800C628C_de

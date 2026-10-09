@@ -3,7 +3,7 @@
 #include "types.h"
 #include "common/unused.h"
 
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 
 extern s32 func_80265878_de(StateCallback);
 extern s32 func_80265784_de(u32);
@@ -74,7 +74,7 @@ void func_80213ED4_de(Source110 *src, Dest *dst) {
         } else {
             factor = dst->scale * dst->entry_scale;
         }
-        D_800CD738 *= factor;
+        D_800D2988 *= factor;
         func_8024B6F4_de(src, dst->state_result, (dst->entry_flags >> 5) & 1);
         if ((dst->state_result != -1) && (src->previous_state != dst->state_result)) {
             dst->count = 0;

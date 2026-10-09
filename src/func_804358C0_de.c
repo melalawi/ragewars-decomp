@@ -5,13 +5,13 @@
    equals the second argument and whose first word equals the first, or -1 when none does. */
 
 
-extern struct Record_func_804358C0_de D_800FEB08[];
+extern struct Record_func_804358C0_de D_80102B08[];
 
 s32 func_804358C0_de(s32 id, s32 kind) {
     s32 i;
 
     for (i = 0; i < 4; i++) {
-        if (D_800FEB08[i].kind == kind && D_800FEB08[i].id == id) {
+        if (D_80102B08[i].kind == kind && D_80102B08[i].id == id) {
             return i;
         }
     }

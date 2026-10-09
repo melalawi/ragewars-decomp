@@ -15,9 +15,9 @@
 
 
 extern void *func_802AC950_de(s32);
-extern u8 D_80142215;
-extern s32 D_800C9198_de[];
-extern Profile D_800FEB14[];
+extern u8 D_801462D5;
+extern s32 D_800CE3E8[];
+extern Profile D_80102B14[];
 
 
 
@@ -32,17 +32,17 @@ s32 func_80222BE8_de(void *player, s32 slot, s32 amount) {
     count = (s16 *) (&((func_80222BC4_S1 *)(player))->unk5F4 + slot * 2);
     if (slot == -1) {
         cap = 0;
-    } else if (D_80142215 != 1) {
+    } else if (D_801462D5 != 1) {
         cap = (((func_80222BC4_S1 *)(player))->unk18)->caps[slot];
     } else {
-        cap = D_800C9198_de[slot];
+        cap = D_800CE3E8[slot];
         if (((func_80222BC4_S1 *)(player))->unk1450 == 0) {
             if (slot == 0) {
-                cap += D_800FEB14[((func_80222BC4_S1 *)(player))->unk5D4].bonus0;
+                cap += D_80102B14[((func_80222BC4_S1 *)(player))->unk5D4].bonus0;
             } else if (slot == 1) {
-                cap += D_800FEB14[((func_80222BC4_S1 *)(player))->unk5D4].bonus1;
+                cap += D_80102B14[((func_80222BC4_S1 *)(player))->unk5D4].bonus1;
             } else if (slot == 2) {
-                cap += D_800FEB14[((func_80222BC4_S1 *)(player))->unk5D4].bonus2;
+                cap += D_80102B14[((func_80222BC4_S1 *)(player))->unk5D4].bonus2;
             }
         }
     }
@@ -82,9 +82,9 @@ s32 func_80222BE8_de(void *player, s32 slot, s32 amount) {
 
 
 extern void *func_802AC950_de(s32);
-extern u8 D_80142215;
-extern s32 D_800C9198_de[];
-extern Profile D_800FEB14[];
+extern u8 D_801462D5;
+extern s32 D_800CE3E8[];
+extern Profile D_80102B14[];
 
 
 
@@ -107,17 +107,17 @@ s32 func_80222D64_de(void *arg0, s32 arg1) {
     if (slot == -1) {
         cap = 0;
     } else {
-        if (D_80142215 != 1) {
+        if (D_801462D5 != 1) {
             base = (((func_80222D40_S2 *)(arg0))->unk18)->caps[slot];
         } else {
-            base = D_800C9198_de[slot];
+            base = D_800CE3E8[slot];
             if (((func_80222D40_S2 *)(arg0))->unk1450 == 0) {
                 if (slot == 0) {
-                    base += D_800FEB14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus0;
+                    base += D_80102B14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus0;
                 } else if (slot == 1) {
-                    base += D_800FEB14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus1;
+                    base += D_80102B14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus1;
                 } else if (slot == 2) {
-                    base += D_800FEB14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus2;
+                    base += D_80102B14[((func_80222D40_S2 *)(arg0))->unk5D4].bonus2;
                 }
             }
         }
@@ -132,7 +132,7 @@ s32 func_80222D64_de(void *arg0, s32 arg1) {
    without 0x3, on the ground or descending no faster than D_800C7948[1] and not already down, it
    enters state 0xA. Returns whether a state was entered. */
 
-extern f32 D_800C2858_de[];
+extern f32 D_800C7948[];
 extern s32 func_802227F4_de(void *, void *, s32);
 
 
@@ -183,7 +183,7 @@ s32 func_80222EA4_de(void *arg0, void *arg1) {
     if (!(((func_80222E80_S1 *)(arg1))->unk20 <= 0.0f)) {
         return 0;
     }
-    if (!(D_800C2858_de[1] < ((func_80222E80_S1 *)(arg1))->unk20)) {
+    if (!(D_800C7948[1] < ((func_80222E80_S1 *)(arg1))->unk20)) {
         return 0;
     }
     state = ((func_80222E80_S2 *)(arg0))->unk650;

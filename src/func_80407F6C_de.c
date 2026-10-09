@@ -2,7 +2,7 @@
 #include "types.h"
 #include "common/unused.h"
 
-extern s32 D_8014D4CC;
+extern s32 D_8015375C;
 
 extern char *D_800D3758;
 extern char *D_800D375C;
@@ -32,11 +32,11 @@ s32 func_80407F6C_de(PakNoteTextEntry *entry, PakNotesMenu *menu) {
 
     c = ' ';
     index = entry->id - 3;
-    if (D_8014D4F4 != 0) {
+    if (D_80153784 != 0) {
         return 0;
     }
-    if (D_8014D4CC != 0) {
-        ch = D_800DE878;
+    if (D_8015375C != 0) {
+        ch = D_800E28C8;
     } else {
         ch = menu->owner->unk4;
     }

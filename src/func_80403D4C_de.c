@@ -6,9 +6,9 @@
    D_800E2830 points to: first with zero, then with the argument, and returns the second word of the third lookup, with 2. */
 
 
-extern struct Field_void_4 *D_800DE7E0;
+extern struct Field_void_4 *D_800E2830;
 extern void *func_8028FDB4_de(void *, s32);
 
 s32 func_80403D4C_de(s32 key) {
-    return ((s32 *) func_8028FDB4_de(func_8028FDB4_de(func_8028FDB4_de(D_800DE7E0->value, 0), key), 2))[1];
+    return ((s32 *) func_8028FDB4_de(func_8028FDB4_de(func_8028FDB4_de(D_800E2830->value, 0), key), 2))[1];
 }

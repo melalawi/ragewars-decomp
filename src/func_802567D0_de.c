@@ -4,7 +4,7 @@
    five dependent subsystems over it. */
 
 extern u8 D_80166000[];
-extern u8 D_801011A0[];
+extern u8 D_801051A0[];
 extern u8 D_80106248[];
 extern u8 D_801011B8[];
 
@@ -35,7 +35,7 @@ void func_802567D0_de(void) {
 
     size = heapEnd - (s32)heapStart;
     func_802A001C_de(heapStart, 0, size);
-    func_802558B4_de(D_801011A0, heapStart, size);
+    func_802558B4_de(D_801051A0, heapStart, size);
     func_802550F0_de(D_80106248, 3);
     func_80256280_de(D_801011B8, 4);
     

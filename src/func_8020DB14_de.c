@@ -8,14 +8,14 @@
 
 
 
-extern func_80205628_S3 D_801372A4;
+extern func_80205628_S3 D_8013B364;
 extern Link *func_8020C9B0_de(func_80205628_S3 *, int);
 
 int func_8020DB14_de(Obj_func_8020DB14_de *obj) {
     int j;
     int i;
     Link *link;
-    func_80205628_S3 *graph = &D_801372A4;
+    func_80205628_S3 *graph = &D_8013B364;
 
     obj->node = -1;
     obj->pending = 0;

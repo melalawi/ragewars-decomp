@@ -7,28 +7,28 @@
 
 
 
-extern s32 D_8014D4F4;
-extern s32 D_8014D4CC;
-extern s32 D_800DE878;
+extern s32 D_80153784;
+extern s32 D_8015375C;
+extern s32 D_800E28C8;
 extern s32 func_802645D0_de(s32);
 extern s32 func_80406178_de(struct Record_func_80409BDC_de *, s32, s32);
 
 static inline s32 func_80409BDC_de(struct Record_func_80409BDC_de *record) {
-    if (D_8014D4CC != 0) {
-        return D_800DE878;
+    if (D_8015375C != 0) {
+        return D_800E28C8;
     }
     return record->inner->unk4;
 }
 
 s32 func_80409C0C_de(struct Record_func_80409BDC_de *record) {
-    if (D_8014D4F4 == 0) {
+    if (D_80153784 == 0) {
         if (func_80409BDC_de(record) != -1) {
             if (func_802645D0_de(func_80409BDC_de(record)) != 0) {
                 if (func_80406178_de(record, func_80409BDC_de(record), 0) != 0) {
-                    D_8014D4F4 = 1;
+                    D_80153784 = 1;
                 }
             }
         }
     }
-    return D_8014D4F4;
+    return D_80153784;
 }

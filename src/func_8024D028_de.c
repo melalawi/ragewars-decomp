@@ -39,7 +39,7 @@ void func_8024D028_de(f32 *m, f32 *q, f32 *t)
     m[3] = 0.0f;
     m[7] = 0.0f;
     m[11] = 0.0f;
-    m[15] = D_800C3BB0_de;
+    m[15] = D_800C8CA0;
 }
 
 extern int func_802784C0_de(int a, int b, void *c, int d, int e, void *f);

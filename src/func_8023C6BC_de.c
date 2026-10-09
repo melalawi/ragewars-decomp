@@ -5,7 +5,7 @@
 
 
 extern u32 D_800FFB5C;
-extern Node_func_80239AF4_de D_800FFF88;
+extern Node_func_80239AF4_de D_80103F88;
 
 
 
@@ -46,9 +46,9 @@ void func_8023C6BC_de(void) {
         var_a0 += 0x10;
     } while (var_a1 < 0x18);
 
-    var_v1 = &D_800FFF88;
+    var_v1 = &D_80103F88;
     var_a0_2 = 0;
-    if (&D_800FFF88 != 0) {
+    if (&D_80103F88 != 0) {
         do {
             temp_v0 = ((func_8020676C_S1 *)(var_v1))->unk6;
             var_v1 = var_v1->next;

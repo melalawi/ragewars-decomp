@@ -6,7 +6,7 @@
    calls func_8041A430_de on the object's first word with 2, returning zero. */
 
 
-extern struct State_func_804232AC_de *D_800E1640_de;
+extern struct State_func_804232AC_de *D_800E5690;
 extern void func_8029973C_de();
 extern void func_8041A430_de(void *, s32);
 
@@ -14,7 +14,7 @@ s32 func_80436C58_de(void) {
     struct State_func_804232AC_de *state;
 
     func_8029973C_de();
-    state = D_800E1640_de;
+    state = D_800E5690;
     state->value = -1;
     func_8041A430_de(state->menu, 2);
     return 0;

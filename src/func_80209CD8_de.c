@@ -41,8 +41,8 @@
 
 
 
-extern Session D_801427E0;
-extern s32 D_80142878;
+extern Session D_801468A0;
+extern s32 D_80146938;
 extern void func_8044972C_de(SharedPlayer_func_80209CD8_de *);
 
 void func_80209CD8_de(SharedPlayer_func_80209CD8_de **arg0) {
@@ -51,7 +51,7 @@ void func_80209CD8_de(SharedPlayer_func_80209CD8_de **arg0) {
     Session *session;
     s8 mode;
 
-    if (D_80142878 != 0) {
+    if (D_80146938 != 0) {
         mode = (*arg0)->views5D8.view5D8_2.controls->mode;
         if (mode == 0xC || mode == 0xF) {
             limit = 0x384;
@@ -62,7 +62,7 @@ void func_80209CD8_de(SharedPlayer_func_80209CD8_de **arg0) {
         limit = 0x1E;
     }
     if (limit < (*arg0)->views1340.view1340_2.timer) {
-        session = &D_801427E0;
+        session = &D_801468A0;
         do {
             (*arg0)->views1340.view1340_2.timer = 0;
         } while (0);

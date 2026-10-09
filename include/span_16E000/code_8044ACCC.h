@@ -350,7 +350,7 @@ struct Record_func_8044B0E0_de {
 };
 
 /* unbake published declaration: published_a8cd9df325b9249a05caebaa */
-extern float D_800C5100_de;
+extern float D_800CA1F0;
 
 struct ObjA;
 /* unbake published declaration: published_a9390afccb50143e4577ceab */
@@ -429,7 +429,7 @@ struct Object_func_8044D220_de;
 typedef struct Object_func_8044D220_de Object_func_8044D220_de;
 
 /* unbake published declaration: published_cc47fe67a6f2024256f55403 */
-extern short D_8010B320;
+extern short D_8010F320;
 
 struct State_func_8044D528_de;
 /* unbake published declaration: published_cd6af7fbd41b171e29f57d14 */

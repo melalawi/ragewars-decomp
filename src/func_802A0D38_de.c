@@ -4,8 +4,8 @@
 /* Runs once (guarded by D_800D2B80), tags D_800D2B84 with a marker, and if D_800D2BC0 is not 1 sets up a resource through func_8025305C_de/func_8025637C_de before always calling func_802A1050_de with a fixed set of data addresses. */
 
 
-extern s32 D_800CD914_de;
-extern s32 D_800CD950_de;
+extern s32 D_800D2B84;
+extern s32 D_800D2BC0;
 extern s32 D_800CD948_de;
 extern s32 D_800CD940_de;
 extern s32 D_800CD94C_de;
@@ -27,7 +27,7 @@ extern s32 D_002A1230;
 
 
 inline static s32 *guard_address(void) {
-    return &D_800CD910_de;
+    return &D_800D2B80;
 }
 
 inline static s32 increment_guard(s32 *counter) {
@@ -46,9 +46,9 @@ void func_802A0D38_de(void) {
     if (increment_guard(guard_address()) != 0) {
         return;
     }
-    D_800CD914_de = 0x12345678;
+    D_800D2B84 = 0x12345678;
     one = 1;
-    if (D_800CD950_de != one) {
+    if (D_800D2BC0 != one) {
         p = &D_800CD948_de;
 #if defined(VERSION_DE)
         *p = 0x8BB01;

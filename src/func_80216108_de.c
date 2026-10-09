@@ -4,7 +4,7 @@
 
 
 
-extern AudioStateA4 D_801427E0;
+extern AudioStateA4 D_801468A0;
 extern s32 func_8024E924_de(void *arg0);
 
 
@@ -44,7 +44,7 @@ s32 func_80216108_de(void *arg0)
                 if ((((ObjectLinks1230 *)(actor))->unk_122C & 0x18400) != 0) {
                     return 9;
                 }
-                audio = &D_801427E0;
+                audio = &D_801468A0;
                 if (audio->field98 != 0 &&
                     ((struct func_80229BE0_S2 *) ((ObjectLinks1230 *) actor)->unk_5D8)->unk80 == 0xB &&
                     audio->fieldA0 > 0) {

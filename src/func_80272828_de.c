@@ -1,7 +1,7 @@
 #include "span_1000/code_80271B18.h"
 #include "types.h"
 
-extern f32 D_800C48C0_de[2];
+extern f32 D_800C99B0[2];
 extern f32 D_800C48C8_de;
 
 void func_80272828_de(f32 *arg0) {
@@ -13,7 +13,7 @@ void func_80272828_de(f32 *arg0) {
     f32 maxVal;
     f32 minVal;
 
-    maxVal = D_800C48C0_de[1];
+    maxVal = D_800C99B0[1];
     minVal = D_800C48C8_de;
     var_a0 = arg0;
     var_a2 = 0;

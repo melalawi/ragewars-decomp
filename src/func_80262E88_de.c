@@ -8,7 +8,7 @@
 
 
 
-extern f32 D_800FF1F8;
+extern f32 D_801031F8;
 extern void func_8028C934_de(s32, Effect_func_80262E88_de *);
 extern void func_80255ED8_de(void *, Effect_func_80262E88_de *);
 extern void func_80255D14_de(void *, Effect_func_80262E88_de *);
@@ -37,7 +37,7 @@ void func_80262E88_de(void *scene, s32 arg1) {
         return;
     }
     do {
-        max = &((func_802077F4_S2 *)(&D_800FF1F8))->unk4;
+        max = &((func_802077F4_S2 *)(&D_801031F8))->unk4;
     next_effect:
         next = effect->next;
         if (overlaps(effect, max)) {

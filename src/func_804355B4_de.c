@@ -6,14 +6,14 @@
    offset 0x58. */
 
 
-extern struct Player_func_80434750_de *D_800E1454_de;
+extern struct Player_func_80434750_de *D_800E54A4;
 
 s32 func_804355B4_de(void) {
     s32 count = 0;
     s32 i;
 
     for (i = 0; i < 4; i++) {
-        if (D_800E1454_de[i].state != 0) {
+        if (D_800E54A4[i].state != 0) {
             count++;
         }
     }

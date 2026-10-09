@@ -6,7 +6,7 @@
    func_8042E988_de and calls func_802998A8_de; 0x369 does the same with page reset func_80429654_de(0)
    and code 0x17 when func_802A1B18_de reports the screen's list at 0x34 non-empty; 0x36A always does
    it with func_8041E5F8_de and code 0x19, then calls func_802A2394_de. Returns zero. */
-extern struct func_8020F2A8_S3 *D_800E0EA0;
+extern struct func_8020F2A8_S3 *D_800E4EF0;
 extern void func_8029973C_de(void);
 extern s32 func_8043C308_de(struct func_8020F2A8_S3 *);
 extern s32 func_80299A08_de(void);
@@ -18,7 +18,7 @@ extern void func_8041E5F8_de(void);
 extern void func_802A2394_de(void);
 s32 func_804297F8_de(void) {
     func_8029973C_de();
-    if (func_8043C308_de(D_800E0EA0) == 1) {
+    if (func_8043C308_de(D_800E4EF0) == 1) {
         return 0;
     }
     switch (func_80299A08_de()) {
@@ -40,7 +40,7 @@ s32 func_804297F8_de(void) {
 #elif defined(VERSION_EU_X)
     case 0x36D:
 #endif
-        if (func_802A1B18_de(D_800E0EA0->unk34) > 0) {
+        if (func_802A1B18_de(D_800E4EF0->unk34) > 0) {
             func_804294C4_de();
             func_80429654_de(0);
             func_8042E988_de(0x17);

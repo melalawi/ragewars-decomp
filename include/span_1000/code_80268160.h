@@ -94,10 +94,10 @@ struct func_80268C1C_S2;
 typedef struct func_80268C1C_S2 func_80268C1C_S2;
 
 /* unbake published declaration: published_917cc74c71427489d9cbeeb9 */
-extern float D_800C4474_de;
+extern float D_800C9564;
 
 /* unbake published declaration: published_9281aa36e4667c2ed3cf6a7e */
-extern float D_800C4470_de;
+extern float D_800C9560;
 
 /* unbake published declaration: published_942453373d0fc9d0593f585f */
 extern float D_800C446C_de;

@@ -16,7 +16,7 @@
 
 
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern void func_80267198_de(void *, void *, s32, Triple, struct Shape_typemap_13);
 extern void func_80285DB0_de(void *, void *, s32);
 
@@ -36,7 +36,7 @@ void func_80204A68_de(void *arg0, void *arg1) {
     if (factor == -1) {
         return;
     }
-    scale = factor * D_800C1A84_de;
+    scale = factor * D_800C6B74;
     if (((BreakableHitContext *)(arg0))->unk_E6 == 1) {
         destroy = 1;
     } else {
@@ -54,7 +54,7 @@ void func_80204A68_de(void *arg0, void *arg1) {
     if (destroy) {
         local.field_0 = 0;
         func_80267198_de(arg0, arg0, 7, ((BreakableHitContext *)(arg0))->unk_8, local);
-        func_80285DB0_de(&D_8011BDC8, arg0, 0);
+        func_80285DB0_de(&D_8011FE88, arg0, 0);
     }
 }
 
@@ -71,10 +71,10 @@ void func_80204BB4_de(void *arg0, void *arg1) {
 
 extern s32 func_80285F58_de(void *, void *);
 extern s32 func_80214178_de(void *, void *, s32);
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 
 void func_80204BD0_de(void *arg0, void *arg1) {
-    s32 different = func_80285F58_de(&D_8011BDC8, arg0) != 1;
+    s32 different = func_80285F58_de(&D_8011FE88, arg0) != 1;
 
     if (different == 0) {
         func_80214178_de(arg0, arg1, 0);

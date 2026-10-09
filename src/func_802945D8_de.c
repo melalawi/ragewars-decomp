@@ -19,10 +19,10 @@ extern void func_8023EE00_de(void);
 extern void func_802954E0_us_rev1(void);
 extern void func_8044D528_de(void *arg0, s32 arg1, s32 arg2);
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern s32 D_800D2970;
 extern s32 D_800CD730;
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 
 
 
@@ -49,7 +49,7 @@ void func_80294614_de(void *arg0) {
 #if defined(VERSION_US_REV1)
     func_802954E0_us_rev1();
 #endif
-    dst = &D_8011BDC8;
+    dst = &D_8011FE88;
 #if defined(VERSION_US_REV1)
     f = (1.0f);
 #else
@@ -60,9 +60,9 @@ void func_80294614_de(void *arg0) {
     D_800D2970 = 0;
 #endif
     D_800CD744_de = f;
-    ((func_802077F4_S2 *)(&D_800CD738))->unk4 = f;
+    ((func_802077F4_S2 *)(&D_800D2988))->unk4 = f;
     D_800CD740_de = f;
     func_8044D528_de(dst, field, 0);
     ((Shared_Legacy_func_80294608_S1 *)(arg0))->unk26DB8 = 0xD;
-    D_8014DDB8 = 0;
+    D_80154048 = 0;
 }

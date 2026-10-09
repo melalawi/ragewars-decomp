@@ -54,17 +54,17 @@ s32 func_80448EF4_de(void *, s8, s32);         /* extern */
 void func_8044972C_de(void *);
 void func_8044A07C_de(void *);
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern s32 D_8011D8D0;
 
 
-extern s32 D_801372A4;
-extern struct Shared_GlobalPlayers D_80140F80;
-extern s32 D_80140FC8;
+extern s32 D_8013B364;
+extern struct Shared_GlobalPlayers D_80145040;
+extern s32 D_80145088;
 extern u8 D_801462E5;
-extern s32 D_801422D8;
+extern s32 D_80146398;
 
-extern struct Shared_GlobalRuntimeState D_80140FA0;
+extern struct Shared_GlobalRuntimeState D_80145060;
 
 
 
@@ -155,14 +155,14 @@ void func_8021B468_de(struct Shared_ActorView *arg0, void *arg1, s32 arg2, s32 a
     ((struct Shared_ActorView *)arg0)->stun = 0;
     ((struct Shared_ActorView *)arg0)->field11FC = 0;
     func_80283278_de(&D_8011D8D0, (s32)arg0);
-    flow = &D_80140FA0.flow;
+    flow = &D_80145060.flow;
     if ((flow->active != 0)
 
         && (var_s3 = 0, (((struct Shared_ActorView *)arg0)->controls->mode == 0xE))) {
         flow->count = (s32) (flow->count + 1);
-        playersGlobal = &D_80140F80;
+        playersGlobal = &D_80145040;
         if (playersGlobal->count > 0) {
-            settingsBase = (s8 *)&D_801422D8;
+            settingsBase = (s8 *)&D_80146398;
             var_s1 = (struct Shared_PlayerSettingsRecord *)settingsBase;
             var_s4 = 0;
 settings_loop:
@@ -194,7 +194,7 @@ block_13:
                 if (var_s3 < loopLimit) goto settings_loop;
             } while (0);
         }
-        if (D_8014287C < 3) {
+        if (D_8014693C < 3) {
             ((struct Shared_ActorView *)arg0)->special = 0;
             func_802227F4_de(arg0, arg1, 0x2E);
             return;
@@ -234,7 +234,7 @@ case 7:
                     var_s1_2 = ((struct Shared_ActorView *)arg0)->projectileIndex + 0xBE7;
                     break;
                 }
-                func_8028B21C_de(&D_8011BDC8, var_s1_2);
+                func_8028B21C_de(&D_8011FE88, var_s1_2);
                 temp_v1_2 = ((struct Shared_ActorView *)arg0)->projectiles[((struct Shared_ActorView *)arg0)->projectileIndex];
                 if (temp_v1_2 != 0) {
                     ((struct Shared_ProjectileView *)temp_v1_2)->flags = (u16) (((struct Shared_ProjectileView *)temp_v1_2)->flags | 1);
@@ -242,14 +242,14 @@ case 7:
                     if (((struct Shared_ProjectileView *)temp_a1)->flags & 8) {
                         func_80290548_de(temp_a1);
                     } else {
-                        func_8028B898_de(&D_8011BDC8, temp_a1, 1);
+                        func_8028B898_de(&D_8011FE88, temp_a1, 1);
                         func_80278E04_de(((struct Shared_ProjectileView *)((struct Shared_ActorView *)arg0)->projectiles[((struct Shared_ActorView *)arg0)->projectileIndex])->source, 0x400, arg0);
                     }
                 }
                 temp_v1_3 = ((struct Shared_ActorView *)arg0)->kind;
-                if (temp_v1_3 == D_800C9224_de[0]) {
+                if (temp_v1_3 == D_800CE474[0]) {
                     var_s3_2 = 0;
-                } else if (temp_v1_3 == D_800C9224_de[1]) {
+                } else if (temp_v1_3 == D_800CE474[1]) {
                     var_s3_2 = 0;
                 } else {
                     switch (func_802A01E8_de() % 3) {            /* switch 2; irregular */
@@ -269,7 +269,7 @@ case 7:
                         }
                         if (var_a0 != 0) {
                             var_s3_2 = 1;
-                            temp_v0_4 = &((struct Shared__struct_D_800D34C0_0x18 *)&D_800CE1E0_de)[((struct Shared_ActorView *)arg0)->projectileBase + ((struct Shared_ActorView *)arg0)->projectileIndex];
+                            temp_v0_4 = &((struct Shared__struct_D_800D34C0_0x18 *)&D_800D34C0)[((struct Shared_ActorView *)arg0)->projectileBase + ((struct Shared_ActorView *)arg0)->projectileIndex];
                             temp_v0_4->unkC = (s16) var_a0;
                             temp_v0_4->unkE = 0;
                             temp_v0_4->unk10 = 0;
@@ -291,7 +291,7 @@ case 7:
                         }
                         if (var_a0_2 != 0) {
                             var_s3_2 = 1;
-                            temp_v0_7 = &((struct Shared__struct_D_800D34C0_0x18 *)&D_800CE1E0_de)[((struct Shared_ActorView *)arg0)->projectileBase + ((struct Shared_ActorView *)arg0)->projectileIndex];
+                            temp_v0_7 = &((struct Shared__struct_D_800D34C0_0x18 *)&D_800D34C0)[((struct Shared_ActorView *)arg0)->projectileBase + ((struct Shared_ActorView *)arg0)->projectileIndex];
                             temp_v0_7->unkE = (s16) var_a0_2;
                             temp_v0_7->unkC = 0;
                             temp_v0_7->unk10 = 0;
@@ -313,7 +313,7 @@ case 7:
                         }
                         if (var_a0_3 != 0) {
                             var_s3_2 = 1;
-                            temp_v0_10 = &((struct Shared__struct_D_800D34C0_0x18 *)&D_800CE1E0_de)[((struct Shared_ActorView *)arg0)->projectileBase + ((struct Shared_ActorView *)arg0)->projectileIndex];
+                            temp_v0_10 = &((struct Shared__struct_D_800D34C0_0x18 *)&D_800D34C0)[((struct Shared_ActorView *)arg0)->projectileBase + ((struct Shared_ActorView *)arg0)->projectileIndex];
                             temp_v0_10->unk10 = (s16) var_a0_3;
                             temp_v0_10->unkC = 0;
                             temp_v0_10->unkE = 0;
@@ -322,7 +322,7 @@ case 7:
                     }
                 }
                 if (var_s3_2 != 0) {
-                    temp_s0_5 = func_8020C994_de(&D_801372A4, func_8020CB3C_de(&D_801372A4, &arg0->position.vector));
+                    temp_s0_5 = func_8020C994_de(&D_8013B364, func_8020CB3C_de(&D_8013B364, &arg0->position.vector));
                     func_8024E79C_de(arg0, arg0->position.words, &spawnPosition, &sp90, 0, 0);
                     if (temp_s0_5 != 0) {
                         spawnPosition = *(Vec3 *)temp_s0_5;
@@ -330,7 +330,7 @@ case 7:
                     spawnVector.x = 0;
                     spawnVector.y = 0.0f;
                     spawnVector.z = 0;
-                    temp_v0_11 = func_8028FFD0_de(&D_8012D540, 0, var_s1_2, spawnVector, spawnPosition, 0, 0);
+                    temp_v0_11 = func_8028FFD0_de(&D_80131600, 0, var_s1_2, spawnVector, spawnPosition, 0, 0);
                     if (temp_v0_11 != 0) {
                         spawnPosition.y += D_800C2608_eu.spawn;
                         ((struct Shared_ActorView *)arg0)->projectiles[((struct Shared_ActorView *)arg0)->projectileIndex] = (void *)temp_v0_11;
@@ -340,18 +340,18 @@ case 7:
                 }
                 ((struct Shared_ActorView *)arg0)->projectileIndex = (s32) (((struct Shared_ActorView *)arg0)->projectileIndex == 0);
             }
-            if ((((struct Shared_ActorView *)arg0)->controls->transientFlag != 0) && (laterFlow = &D_80140FA0.flow, laterFlow->transition != 0)) {
+            if ((((struct Shared_ActorView *)arg0)->controls->transientFlag != 0) && (laterFlow = &D_80145060.flow, laterFlow->transition != 0)) {
                 if (D_800F3D08 != 0) {
                     func_80214178_de(D_800F3D08, ((struct Shared_SpecialObjectView *)D_800F3D08)->segment, 1);
                     ((struct Shared_SpecialObjectView *)D_800F3D08)->reset = 0;
                     laterFlow->reset = 0;
                     func_8025DF34_de(0x2D0);
-                    var_s0 = D_80140FA0.actorList;
+                    var_s0 = D_80145060.actorList;
                     if (var_s0 != 0) {
                         do {
                             temp_a1_2 = ((struct Shared_ActorView *)var_s0)->message;
                             if (temp_a1_2 != 0) {
-                                func_80237E80_de(&D_80140FC8, temp_a1_2, D_800D1D60);
+                                func_80237E80_de(&D_80145088, temp_a1_2, D_800D1D60);
                             }
                             var_s0 = ((struct Shared_ActorView *)var_s0)->next;
                         } while (var_s0 != 0);
@@ -360,7 +360,7 @@ case 7:
                 ((struct Shared_ActorView *)arg0)->controls->transientFlag = 0U;
                 ((struct Shared_ActorView *)arg0)->controls->resetFlag = 0;
             }
-            var_s0_2 = D_80140FA0.actorList;
+            var_s0_2 = D_80145060.actorList;
             if (var_s0_2 != 0) {
                 do {
                     if ((var_s0_2 != arg0) && (((struct Shared_ActorView *)var_s0_2)->parent == arg0)) {
@@ -368,7 +368,7 @@ case 7:
                         ((struct Shared_ActorView *)var_s0_2)->pending = 0;
                         ((struct Shared_ActorView *)var_s0_2)->parent = 0;
                         if (temp_a1_3 != 0) {
-                            func_80239770_de(&D_80140FC8, temp_a1_3, D_800D31B8, 1.0f);
+                            func_80239770_de(&D_80145088, temp_a1_3, D_800D31B8, 1.0f);
                         }
                     }
                     var_s0_2 = ((struct Shared_ActorView *)var_s0_2)->next;

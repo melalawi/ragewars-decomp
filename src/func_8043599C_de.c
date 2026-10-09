@@ -7,10 +7,10 @@
 
 
 
-extern struct Table_func_804352C8_de *D_800E1454_de;
+extern struct Table_func_804352C8_de *D_800E54A4;
 
 void func_8043599C_de(s32 first, s32 second, s32 index) {
-    D_800E1454_de->slots[index].x = first;
-    D_800E1454_de->slots[index].y = second;
-    D_800E1454_de->slots[index].z = 1;
+    D_800E54A4->slots[index].x = first;
+    D_800E54A4->slots[index].y = second;
+    D_800E54A4->slots[index].z = 1;
 }

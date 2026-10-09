@@ -8,7 +8,7 @@ extern s32 func_802301F4_de(void *, void *);
 extern s32 func_80214178_de(void *, void *, s32);
 
 
-extern WeaponActionRecord D_800C9698[];
+extern WeaponActionRecord D_800CE8DC[];
 
 
 
@@ -25,7 +25,7 @@ void func_80232FF8_de(void *arg0, void *arg1) {
 
     temp_s0 = ((func_80232FE8_S1 *)(o))->unk1D8;
     idx = ((func_80232FE8_S2 *)(temp_s0))->unk650;
-    temp_s3 = D_800C9698[idx].action;
+    temp_s3 = D_800CE8DC[idx].action;
 
     if (func_80222AA4_de(temp_s0, ((func_80232FE8_S2 *)(temp_s0))->unk62E) == 0) {
         ((func_80232FE8_S2 *)(temp_s0))->unk770 = func_8022F96C_de(temp_s0);

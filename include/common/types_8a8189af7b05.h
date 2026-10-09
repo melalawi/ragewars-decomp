@@ -1925,7 +1925,7 @@ struct Shape_typemap_3 {
 };
 
 /* unbake published declaration: published_e52f766d0c1a39c2d2a258be */
-extern int D_800DE87C_de;
+extern int D_800E28CC;
 
 struct Profile_func_80408C4C_de;
 /* unbake published declaration: published_f04d099af63dc965ac291eaf */

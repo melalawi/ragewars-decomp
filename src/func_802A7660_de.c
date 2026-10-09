@@ -15,9 +15,9 @@
 
 
 extern Frame_func_802A7660_de *D_80140FE8_de;
-extern s32 D_800DE880_de;
-extern s32 D_800DE884_de;
-extern u8 D_8014221E;
+extern s32 D_800E28D0;
+extern s32 D_800E28D4;
+extern u8 D_801462DE;
 
 extern s32 func_80245798_de(void);
 extern s32 func_802934F8_de(void);
@@ -57,7 +57,7 @@ void func_802A7660_de(Hud *hud, s32 which) {
         return;
     }
     wide = func_8040C474_de() == 0 ? 0.75f : 1.0f;
-    scale = D_80140FE8_de->height / (f32) D_800DE884_de;
+    scale = D_80140FE8_de->height / (f32) D_800E28D4;
     scale = scale * wide;
     switch (which) {
     case 1:
@@ -101,8 +101,8 @@ void func_802A7660_de(Hud *hud, s32 which) {
     }
     left = x + 0x50;
     inset = x - 0x70;
-    right = inset + D_800DE880_de;
-    fade = &D_8014221E;
+    right = inset + D_800E28D0;
+    fade = &D_801462DE;
     func_802AAA54_de(left, (s32) ((f32) y + scale * 9.0f),
                   left + ((right - left) * bar->fill) / 100,
                   (s32) ((f32) y + scale * 15.0f), red, green, blue,
@@ -111,7 +111,7 @@ void func_802A7660_de(Hud *hud, s32 which) {
     if (which == 1) {
         shift = scale * 27.0f;
         func_802AAC28_de(0x202, 0, (s16) (x + 0x46), (s16) (s32) (bar->y + shift), 1.0f, scale * 1.5f, which);
-        func_802AAC28_de(0x203, 0, (s16) (D_800DE880_de + x - 0x6D), (s16) (s32) (bar->y + shift), 1.0f, scale * 1.5f, which);
+        func_802AAC28_de(0x203, 0, (s16) (D_800E28D0 + x - 0x6D), (s16) (s32) (bar->y + shift), 1.0f, scale * 1.5f, which);
         func_802A84F8_de();
         func_802AAB68_de(0.4f, scale * 0.4f);
         func_802AAB3C_de(0xFF, 0xFF, 0xFF, 0xC8, 0xC8, 0xC8);

@@ -4,7 +4,7 @@
 
 
 
-extern char D_8011BDC8[];
+extern char D_8011FE88[];
 
 extern Record_func_804284C0_de *func_8028D474_de(void *table, s32 key);
 extern void func_8042854C_de(s32 slot, s32 item, s32 arg2);
@@ -16,7 +16,7 @@ void func_804284C0_de(s32 key) {
     s32 item;
 
     func_80428700_de();
-    record = func_8028D474_de(D_8011BDC8, key);
+    record = func_8028D474_de(D_8011FE88, key);
     count = 0;
     for (i = 0; i < 8; i++) {
         item = record->items[i];

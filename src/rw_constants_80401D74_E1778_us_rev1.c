@@ -9,14 +9,14 @@ struct rw_constants_80401D74_E1778_us_rev1_layout {
     float value_C;
     float D_800DCB58;
     float D_800DCB5C;
-    float D_800DCB60_de;
+    float D_800E0B90;
     float value_1C;
     float D_800DCB68;
     float value_24;
     float D_800DCB70_de;
     float value_2C;
     float D_800DCB78_de;
-    float D_800DCB7C_de;
+    float D_800E0BAC;
     float D_800DCB80_de;
     float value_3C;
     float D_800DCB88;
@@ -26,7 +26,7 @@ struct rw_constants_80401D74_E1778_us_rev1_layout {
     float D_800DCB98;
     float value_54;
     float D_800DCBA0;
-    float D_800DCBA4;
+    float D_800E0BD4;
     float D_800DCBA8;
     float D_800DCBAC;
     float D_800DCBB0;

@@ -11,7 +11,7 @@
 
 
 
-extern PakDirectory_func_8040458C_de *D_800DE804;
+extern PakDirectory_func_8040458C_de *D_800E2854;
 extern u8 D_800DE80C[];
 
 extern void *func_802BD3A0_de(void *destination, const void *source, int count);
@@ -48,18 +48,18 @@ static inline void func_8040458C_decode(u8 *dst, u8 *src, s32 n) {
 
 s32 func_8040458C_de(s32 ch, s32 index, s32 *exists, u8 *name, u8 *ext, s32 *size, u8 *company,
                   u8 *code) {
-    if (D_8014D260[ch] != 3) {
+    if (D_801534F0[ch] != 3) {
         return -2;
     }
-    if (D_800DE804[ch].notes[index].file_size == 0) {
+    if (D_800E2854[ch].notes[index].file_size == 0) {
         *exists = 0;
     } else {
         *exists = 1;
-    *size = D_800DE804[ch].notes[index].file_size >> 8;
-    func_802BD3A0_de(company, &D_800DE804[ch].notes[index].company_code, 2);
-    func_802BD3A0_de(code, &D_800DE804[ch].notes[index].game_code, 4);
-    func_8040458C_decode(name, D_800DE804[ch].notes[index].game_name, 17);
-    func_8040458C_decode(ext, D_800DE804[ch].notes[index].ext_name, 4);
+    *size = D_800E2854[ch].notes[index].file_size >> 8;
+    func_802BD3A0_de(company, &D_800E2854[ch].notes[index].company_code, 2);
+    func_802BD3A0_de(code, &D_800E2854[ch].notes[index].game_code, 4);
+    func_8040458C_decode(name, D_800E2854[ch].notes[index].game_name, 17);
+    func_8040458C_decode(ext, D_800E2854[ch].notes[index].ext_name, 4);
     code[4] = 0;
     company[2] = 0;
     }

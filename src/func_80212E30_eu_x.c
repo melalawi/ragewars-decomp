@@ -3,10 +3,10 @@
 #include "span_C76B0/data.h"
 #include "common/unused.h"
 #include "types.h"
-/* Runs a computer player's patrol step: starts its route at 0x224 on the first route of D_8011BDC8,
+/* Runs a computer player's patrol step: starts its route at 0x224 on the first route of D_8011FE88,
    or random roaming (-2) when there are none; once within D_800C23B0_eu_x of its goal node it advances the
    route position at 0x228 (wrapping at the route length) and drops the goal; a dropped goal is then
-   taken from the route through func_8028D244_de and func_8020CB3C_de, or a random node of D_801372A4 when
+   taken from the route through func_8028D244_de and func_8020CB3C_de, or a random node of D_8013B364 when
    roaming; finally runs func_80208410_de, func_80211020_de and func_80208AAC_de. */
 
 
@@ -21,8 +21,8 @@
 
 
 
-extern PatrolRouteSet D_8011BDC8;
-extern RoutePatrolNodes D_801372A4;
+extern PatrolRouteSet D_8011FE88;
+extern RoutePatrolNodes D_8013B364;
 
 
 
@@ -40,12 +40,12 @@ extern void func_80208AAC_de(PatrolBot *bot);
 void func_80212E30_eu_x(PatrolActor *actor)
 {
     PatrolBot *bot = actor->player->bot;
-    RoutePatrolNodes *nodes = &D_801372A4;
+    RoutePatrolNodes *nodes = &D_8013B364;
     void *pos;
     Clip *route;
 
     if (bot->route == -1) {
-        PatrolRouteSet *routes = &D_8011BDC8;
+        PatrolRouteSet *routes = &D_8011FE88;
 
         if (*routes->routeCount > 0) {
             bot->route = 0;
@@ -61,7 +61,7 @@ void func_80212E30_eu_x(PatrolActor *actor)
         pos = func_8020993C_de(bot);
         if (func_802726F8_de(pos, func_8020C994_de(nodes, bot->goal)) < D_800C23B0_eu_x) {
             if (bot->route >= 0) {
-                route = func_8028D218_de(&D_8011BDC8, bot->route);
+                route = func_8028D218_de(&D_8011FE88, bot->route);
                 bot->routePos++;
                 if (bot->routePos == route->frames) {
                     bot->routePos = 0;
@@ -74,7 +74,7 @@ void func_80212E30_eu_x(PatrolActor *actor)
         if (bot->route == -2) {
             bot->goal = func_802744D4_de() % nodes->count;
         } else {
-            bot->goal = func_8020CB3C_de(nodes, func_8028D244_de(&D_8011BDC8, bot->route, bot->routePos));
+            bot->goal = func_8020CB3C_de(nodes, func_8028D244_de(&D_8011FE88, bot->route, bot->routePos));
         }
     }
     func_80208410_de(bot);

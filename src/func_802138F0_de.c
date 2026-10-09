@@ -5,7 +5,7 @@
    0x102, takes the definition's three bytes at 0x12, 0xE and 0x10 for the output parameters, and the
    pitch from its word at 0x18 read unsigned for kinds 1 and 4 (with the two level bytes at 0x41 and 0x40
    for kind 1, D_800C2100_de otherwise) or signed short for kind 7; for kinds 1 and 4 the audio mode
-   D_80142210 8 scales the pitch by D_800C2118_de with a floor of (&D_800C2118_de)[1] and no second level,
+   D_801462D0 8 scales the pitch by D_800C2118_de with a floor of (&D_800C2118_de)[1] and no second level,
    and mode 0x20 scales it by D_800C2120_de with second level D_800C2124_de; the pitch is stored shifted up 8
    bits at 0x4 and 0x8 and the levels at 0x10 and 0xCC. */
 
@@ -16,7 +16,7 @@
 
 
 
-extern s32 D_80142210;
+extern s32 D_801462D0;
 
 
 
@@ -72,7 +72,7 @@ void func_802138F0_de(void *voice, void *def, ResourceManagerState unused, s32 a
             break;
         }
         if (*(s32 *) def == 1 || *(s32 *) def == 4) {
-            switch (D_80142210) {
+            switch (D_801462D0) {
             case 8:
                 scaled = pitch * D_800C2118_de;
                 level2 = 0.0f;

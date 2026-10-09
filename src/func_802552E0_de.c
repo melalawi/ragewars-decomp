@@ -10,7 +10,7 @@ extern u32 D_800CB6F4;
 extern s32 D_80101190;
 extern Slot_func_802552E0_de *D_80101194;
 extern s32 D_80101198;
-extern char D_801011A0;
+extern char D_801051A0;
 extern Slot_func_802552E0_de *func_80255920_de(void *, s32);
 
 void func_802552E0_de(s32 capacity)
@@ -36,7 +36,7 @@ void func_802552E0_de(s32 capacity)
     D_800CB6F0 = half;
     D_80101190 = D_800CB6F4 - 2;
     D_80101198 = D_800CB6F4 - 1;
-    D_80101194 = func_80255920_de(&D_801011A0, half << 5);
+    D_80101194 = func_80255920_de(&D_801051A0, half << 5);
     for (n = 0; n < D_800CB6F4; n++) {
         D_80101194[n].value = 0;
         D_80101194[n].key = 0;

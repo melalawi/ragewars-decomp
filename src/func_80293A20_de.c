@@ -44,7 +44,7 @@ void func_80293A20_de(Session_func_80293A20_de *session, s32 arg1, s32 target) {
 
 
 
-extern s32 D_8010B190_de;
+extern s32 D_8010F190;
 extern s32 D_8014288C;
 
 #if defined(VERSION_EU)
@@ -94,7 +94,7 @@ func_802A2224_de
                 func_8040C428_de(0);
                 func_80293790_de(state, 1);
                 ((func_80293B0C_S1 *)(state))->unk26DB0.v1 = 0;
-            } else if (D_8010B190_de != 0) {
+            } else if (D_8010F190 != 0) {
                 D_8014288C = 0;
                 
 #if defined(VERSION_EU)
@@ -124,8 +124,8 @@ func_802A2224_de
     func_80293394_de(state);
 }
 
-extern Vector4f D_801427E0;
-extern f32 D_800CD738;
+extern Vector4f D_801468A0;
+extern f32 D_800D2988;
 
 
 
@@ -140,19 +140,19 @@ void func_80293C34_de(void *arg0) {
     f32 t3;
 
     if (((func_80293C20_S1 *)(arg0))->unk26DD4 == 0) {
-        t1 = D_801427E0.x + D_800CD738;
-        D_801427E0.x = t1;
+        t1 = D_801468A0.x + D_800D2988;
+        D_801468A0.x = t1;
         if (D_800C54AC_de <= t1) {
-            t2 = D_801427E0.y + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
-            D_801427E0.x = t1 - D_800C54AC_de;
-            D_801427E0.y = t2;
+            t2 = D_801468A0.y + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
+            D_801468A0.x = t1 - D_800C54AC_de;
+            D_801468A0.y = t2;
             if (D_800C54B4_de <= t2) {
-                t3 = D_801427E0.z + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
-                D_801427E0.y = t2 - D_800C54B4_de;
-                D_801427E0.z = t3;
+                t3 = D_801468A0.z + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
+                D_801468A0.y = t2 - D_800C54B4_de;
+                D_801468A0.z = t3;
                 if (D_800C54B4_de <= t3) {
-                    D_801427E0.z = t3 - D_800C54B4_de;
-                    D_801427E0.w = D_801427E0.w + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
+                    D_801468A0.z = t3 - D_800C54B4_de;
+                    D_801468A0.w = D_801468A0.w + ((func_802077F4_S2 *)(&D_800C54AC_de))->unk4;
                 }
             }
         }

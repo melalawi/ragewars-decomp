@@ -5,8 +5,8 @@
 /* Sets the word at offset 0xB4 of the object D_800E2830 points to. */
 
 
-extern struct Shared_Effect *D_800DE7E0;
+extern struct Shared_Effect *D_800E2830;
 
 void func_804037D4_de(void) {
-    D_800DE7E0->state = 1;
+    D_800E2830->state = 1;
 }

@@ -10,23 +10,23 @@
 #include "common/unused.h"
 #include "n64sdk.h"
 
-extern Gfx *D_8010C574;
-extern Triple D_8014DCD0;
+extern Gfx *D_80110634;
+extern Triple D_80153F60;
 extern void func_802A1898_de(s32 *, s32 *, s32 *, s32 *);
 
 /* Clips a screen rectangle to the viewport func_802A1898_de reports, interpolating the four corner
    colours along each clipped edge, then writes the corners into vertices 0-3 with gSPModifyVertex
    (screen position, colour rotated to RGBA, texture coordinates 0) and draws them as an outline of
-   four lines, or as two triangles when D_8014DCD0.y is set. */
+   four lines, or as two triangles when D_80153F60.y is set. */
 /* Sets vertex index's screen position, colour and texture coordinates. */
 static inline void put_vertex(s32 index, s32 x, s32 y, u32 color) {
     Gfx *g;
 
-    g = D_8010C574++;
+    g = D_80110634++;
     gSPModifyVertex(g, index, G_MWO_POINT_XYSCREEN, (x << 18) | ((y & 0xFFFF) << 2));
-    g = D_8010C574++;
+    g = D_80110634++;
     gSPModifyVertex(g, index, G_MWO_POINT_RGBA, (color << 8) | (color >> 24));
-    g = D_8010C574++;
+    g = D_80110634++;
     gSPModifyVertex(g, index, G_MWO_POINT_ST, 0);
 }
 
@@ -107,32 +107,32 @@ void func_80415C90_de(f32 x, f32 y, f32 w, f32 h, u32 col0, u32 col1, u32 col2, 
     put_vertex(1, x, bottom, col2);
     put_vertex(2, right, bottom, col3);
     put_vertex(3, right, y, col1);
-    if (D_8014DCD0.y == 0) {
-        gSPLine3D(D_8010C574++, 0, 1, 0);
-        gSPLine3D(D_8010C574++, 1, 2, 0);
-        gSPLine3D(D_8010C574++, 2, 3, 0);
-        gSPLine3D(D_8010C574++, 3, 0, 0);
+    if (D_80153F60.y == 0) {
+        gSPLine3D(D_80110634++, 0, 1, 0);
+        gSPLine3D(D_80110634++, 1, 2, 0);
+        gSPLine3D(D_80110634++, 2, 3, 0);
+        gSPLine3D(D_80110634++, 3, 0, 0);
     } else {
-        gSP2Triangles(D_8010C574++, 0, 1, 2, 0, 2, 3, 0, 0);
+        gSP2Triangles(D_80110634++, 0, 1, 2, 0, 2, 3, 0, 0);
     }
 }
 
 /* Switches the graphics combiner and emits a pipeline sync once per frame. */
-extern int D_800DF270,D_800DF294,D_8014DCDC;
-extern Gfx *D_8010C574;
-static inline void sync(void){D_800DF294=1;gDPPipeSync(D_8010C574++);}
+extern int D_800DF270,D_800E32E4,D_8014DCDC;
+extern Gfx *D_80110634;
+static inline void sync(void){D_800E32E4=1;gDPPipeSync(D_80110634++);}
 
 void func_80416CF4_de(int mode){
  if(mode!=D_800DF270){
  D_800DF270=mode;
- if(!D_800DF294)sync();
- gDPSetCycleType(D_8010C574++, G_CYC_1CYCLE);
+ if(!D_800E32E4)sync();
+ gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
  switch(mode){
- case 1: if(D_8014DCDC){gDPSetCombineLERP(D_8010C574++, TEXEL0, 0, ENVIRONMENT, 0, PRIMITIVE, ENVIRONMENT, TEXEL0, ENVIRONMENT, TEXEL0, 0, ENVIRONMENT, 0, PRIMITIVE, ENVIRONMENT, TEXEL0, ENVIRONMENT);}else{gDPSetCombineLERP(D_8010C574++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);}break;
- case 2: if(D_8014DCDC){gDPSetCombineLERP(D_8010C574++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, PRIMITIVE, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, PRIMITIVE);}else{gDPSetCombineLERP(D_8010C574++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);}break;
- case 3: gDPSetCombineLERP(D_8010C574++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);break;
- case 4: if(D_8014DCDC){gDPSetCombineLERP(D_8010C574++, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0);}else{gDPSetCombineLERP(D_8010C574++, TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, TEXEL0, 0, SHADE, 0, 0, 0, 0, 1);}break;
- case 5: if(D_8014DCDC){gDPSetCombineLERP(D_8010C574++, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE);}else{gDPSetCombineLERP(D_8010C574++, 0, 0, 0, SHADE, 0, 0, 0, 1, 0, 0, 0, SHADE, 0, 0, 0, 1);}break;
+ case 1: if(D_8014DCDC){gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, PRIMITIVE, ENVIRONMENT, TEXEL0, ENVIRONMENT, TEXEL0, 0, ENVIRONMENT, 0, PRIMITIVE, ENVIRONMENT, TEXEL0, ENVIRONMENT);}else{gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);}break;
+ case 2: if(D_8014DCDC){gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, PRIMITIVE, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, PRIMITIVE);}else{gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);}break;
+ case 3: gDPSetCombineLERP(D_80110634++, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1);break;
+ case 4: if(D_8014DCDC){gDPSetCombineLERP(D_80110634++, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, SHADE, 0);}else{gDPSetCombineLERP(D_80110634++, TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, TEXEL0, 0, SHADE, 0, 0, 0, 0, 1);}break;
+ case 5: if(D_8014DCDC){gDPSetCombineLERP(D_80110634++, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE);}else{gDPSetCombineLERP(D_80110634++, 0, 0, 0, SHADE, 0, 0, 0, 1, 0, 0, 0, SHADE, 0, 0, 0, 1);}break;
  }
  }
 }
@@ -142,7 +142,7 @@ void func_80416CF4_de(int mode){
    D_80141168, loads four white vertices at that point and marks each vertex's screen position for
    modification. */
 
-extern Gfx *D_8010C574;
+extern Gfx *D_80110634;
 extern s32 D_800DF278;
 
 extern char D_80141168;
@@ -183,11 +183,11 @@ void func_80416ECC_de(s32 mode) {
             vertices[i].v.cn[3] = 0xFF;
         }
         {
-            Gfx *cmd = D_8010C574++;
+            Gfx *cmd = D_80110634++;
             gSPVertex(cmd, (u32)vertices, count, 0);
         }
         for (i = 0; i < count; i++) {
-            Gfx *cmd = D_8010C574++;
+            Gfx *cmd = D_80110634++;
             gSPModifyVertex(cmd, i, G_MWO_POINT_ZSCREEN, 0);
         }
     }
@@ -200,30 +200,30 @@ void func_80416ECC_de(s32 mode) {
    0x500, 0x3000 or 0x5000 and 0x30000 or 0x50000 chosen by the three further switches, through
    func_80417138_de. */
 
-extern Triple D_8014DCD0;
+extern Triple D_80153F60;
 extern s32 D_8014DCDC;
 
-extern s32 D_800DF27C;
+extern s32 D_800E32CC;
 
 void func_80417034_de(s32 mode) {
     s32 bits;
 
-    if (D_8014DCD0.y == 0) {
+    if (D_80153F60.y == 0) {
         mode = 11;
     }
-    if (mode == D_800DF27C) {
+    if (mode == D_800E32CC) {
         return;
     }
-    D_800DF27C = mode;
+    D_800E32CC = mode;
     if (mode == 11) {
         func_80418F8C_de();
-        bits = D_8014DCD0.x ? 0x55 : 0x53;
-        bits |= D_8014DCD0.z ? 0x300 : 0x500;
+        bits = D_80153F60.x ? 0x55 : 0x53;
+        bits |= D_80153F60.z ? 0x300 : 0x500;
         func_80417138_de(bits | (D_8014DCDC ? 0x3000 : 0x5000) | (D_8014DCE0 ? 0x30000 : 0x50000));
     } else if (mode == 12) {
         func_80418F8C_de();
-        bits = D_8014DCD0.x ? 0x35 : 0x33;
-        bits |= D_8014DCD0.z ? 0x300 : 0x500;
+        bits = D_80153F60.x ? 0x35 : 0x33;
+        bits |= D_80153F60.z ? 0x300 : 0x500;
         func_80417138_de(bits | (D_8014DCDC ? 0x3000 : 0x5000) | (D_8014DCE0 ? 0x30000 : 0x50000));
     }
 }

@@ -2,8 +2,8 @@
 #include "types.h"
 
 /* Returns one less than the word D_8011FEFC points to. */
-extern s32 *D_8011BE3C;
+extern s32 *D_8011FEFC;
 
 s32 func_80403BCC_de(void) {
-    return *D_8011BE3C - 1;
+    return *D_8011FEFC - 1;
 }

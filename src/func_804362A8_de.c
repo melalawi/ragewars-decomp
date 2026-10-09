@@ -8,9 +8,9 @@
    of D_8011FE88, restarts func_8025476C_de when func_8025477C_de reports it idle, and calls
    func_8025E384_de and func_8042DEA0_de. Returns zero. */
 
-extern void *D_800E1508;
-extern char D_80140FC8[];
-extern char D_8011BDC8[];
+extern void *D_800E5558;
+extern char D_80145088[];
+extern char D_8011FE88[];
 extern s32 func_8043C308_de(void *);
 extern void func_8043C080_de(void *);
 extern void func_8043C2A4_de(void *);
@@ -29,20 +29,20 @@ extern void func_8042DEA0_de(void);
 s32 func_804362A8_de(s32 arg0, s32 arg1, s32 event) {
     s32 *pause;
     if (event == 1) {
-        if (func_8043C308_de(D_800E1508) != 1) {
+        if (func_8043C308_de(D_800E5558) != 1) {
             return 0;
         }
-        func_8043C080_de(D_800E1508);
-        func_8043C2A4_de(D_800E1508);
-        if (func_8043C308_de(D_800E1508) != 2) {
+        func_8043C080_de(D_800E5558);
+        func_8043C2A4_de(D_800E5558);
+        if (func_8043C308_de(D_800E5558) != 2) {
             return 0;
         }
         func_8029973C_de();
-        pause = &((func_80436488_S1 *)D_80140FC8)->unk180C;
+        pause = &((func_80436488_S1 *)D_80145088)->unk180C;
         *pause = 0;
         func_8044A370_de((char *)pause - 0x180C, 0);
         func_804499B0_de((char *)pause - 0x1854, 0, 0);
-        func_80286AA8_de(D_8011BDC8, 0x24, 0);
+        func_80286AA8_de(D_8011FE88, 0x24, 0);
         if (func_8025477C_de() == 0) {
             func_8025476C_de(1);
         }

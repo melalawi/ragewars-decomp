@@ -6,7 +6,7 @@
    fresh scoreboard entry via func_80442574_de using arg1's fields at 0x1C and 0x20, and always
    reports success. */
 
-extern s32 D_8014155C;
+extern s32 D_8014561C;
 extern s32 D_0044E468;
 
 void func_804097E8_de(void);
@@ -21,6 +21,6 @@ s32 func_8043E568_de(void *arg0, Arg1Struct *arg1) {
     val1C = arg1->unk1C;
     func_804097E8_de();
     func_8025E214_de(-1);
-    func_80442574_de(&D_8014155C, &D_0044E468, val1C, arg1->unk20, 0);
+    func_80442574_de(&D_8014561C, &D_0044E468, val1C, arg1->unk20, 0);
     return 1;
 }

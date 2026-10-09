@@ -9,9 +9,9 @@
    the result its saved register ahead of the key pointer, as the cartridge has it. */
 
 
-extern struct Player_func_80425014_de D_800FEB00[];
-extern s32 D_8014DD9C;
-extern u8 *D_800E0630;
+extern struct Player_func_80425014_de D_80102B00[];
+extern s32 D_8015402C;
+extern u8 *D_800E4680;
 extern void *jtbl_800DD760[];
 extern s32 func_80265650_de(u8 *, s32);
 extern void func_80265688_de(u8 *, s32, s32);
@@ -33,15 +33,15 @@ s32 func_80425014_de(s32 index) {
         &&effect_32, &&effect_33, &&effect_34, &&effect_35, &&unknown, &&done
     };
     s32 result = -1;
-    struct Player_func_80425014_de *player = &D_800FEB00[index];
-    s32 *key = &D_8014DD9C;
+    struct Player_func_80425014_de *player = &D_80102B00[index];
+    s32 *key = &D_8015402C;
     u32 code;
 
     if (func_80265650_de(player->flags[player->slot], *key) != 0) {
         goto done;
     }
     func_80265688_de(player->flags[player->slot], *key, 1);
-    code = *D_800E0630;
+    code = *D_800E4680;
     result = code + 5000;
     do {
         if (code >= 58) {

@@ -5,17 +5,17 @@
    func_8022E940_de that follows. */
 
 
-extern func_80204468_S3 *D_800CB2EC[];
+extern func_80204468_S3 *D_800D052C[];
 
 int func_8022E8D0_de(short id, int mode) {
     switch (mode) {
     case 0:
-        if (!(D_800CB2EC[id]->unk14 & 1)) {
+        if (!(D_800D052C[id]->unk14 & 1)) {
             break;
         }
         return 1;
     case 1:
-        if (D_800CB2EC[id]->unk14 & 2) {
+        if (D_800D052C[id]->unk14 & 2) {
             return 1;
         }
         break;

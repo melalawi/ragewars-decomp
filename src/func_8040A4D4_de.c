@@ -6,13 +6,13 @@
 
 
 
-extern Display_func_8040A4D4_de *D_800DE86C;
+extern Display_func_8040A4D4_de *D_800E28BC;
 extern int D_800D37A8;
 extern int D_800D37AC;
 extern int D_800D37B0;
 
 int func_8040A4D4_de(func_80254D70_S1 *out) {
-    switch (D_800DE86C->depth) {
+    switch (D_800E28BC->depth) {
     case 8:
     default:
         out->unk14 = &D_800D37A8;

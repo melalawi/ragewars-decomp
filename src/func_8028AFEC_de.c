@@ -25,7 +25,7 @@ void *func_8028B00C_de(void *object, int index) {
 
 
 
-extern Gfx *D_8010C574;
+extern Gfx *D_80110634;
 
 
 extern void func_80249E28_de(func_80203C40_S1 *object, void *camera);
@@ -39,10 +39,10 @@ void func_8028B028_de(Scene_func_8028B028_de *scene, void *camera) {
 
     func_8026D980_de();
     count = scene->count;
-    gSPMoveWord(D_8010C574++, G_MW_CLIP, 4, 5);
-    gSPMoveWord(D_8010C574++, G_MW_CLIP, 12, 5);
-    gSPMoveWord(D_8010C574++, G_MW_CLIP, 20, 0xFFFB);
-    gSPMoveWord(D_8010C574++, G_MW_CLIP, 28, 0xFFFB);
+    gSPMoveWord(D_80110634++, G_MW_CLIP, 4, 5);
+    gSPMoveWord(D_80110634++, G_MW_CLIP, 12, 5);
+    gSPMoveWord(D_80110634++, G_MW_CLIP, 20, 0xFFFB);
+    gSPMoveWord(D_80110634++, G_MW_CLIP, 28, 0xFFFB);
     objects = scene->objects;
     for (i = 0; i < count; i++) {
         object = objects[i];
@@ -59,7 +59,7 @@ void func_8028B028_de(Scene_func_8028B028_de *scene, void *camera) {
     func_8026D9D0_de();
 }
 
-extern Gfx *D_8010C574;
+extern Gfx *D_80110634;
 
 extern void func_80282330_de(s32 arg0, s32 arg1);
 
@@ -67,13 +67,13 @@ extern void func_80282330_de(s32 arg0, s32 arg1);
 void func_8028B160_de(s32 arg0, s32 arg1) {
     Gfx *cmd;
 
-    cmd = D_8010C574++;
+    cmd = D_80110634++;
     gSPMoveWord(cmd, G_MW_CLIP, 4, 1);
-    cmd = D_8010C574++;
+    cmd = D_80110634++;
     gSPMoveWord(cmd, G_MW_CLIP, 12, 1);
-    cmd = D_8010C574++;
+    cmd = D_80110634++;
     gSPMoveWord(cmd, G_MW_CLIP, 20, 0xFFFF);
-    cmd = D_8010C574++;
+    cmd = D_80110634++;
     gSPMoveWord(cmd, G_MW_CLIP, 28, 0xFFFF);
     func_8026D980_de();
     func_80282330_de(arg0 + 0x1B08, arg1);

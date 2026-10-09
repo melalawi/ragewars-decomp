@@ -336,7 +336,7 @@ void func_80270700_de(f32 *dst, PackedMatrixWords *src) {
 void func_80270910_de(f32 *dst, PackedMatrixWords *src) {
     u32 upper;
     u32 lower;
-    f32 scale = D_800C47D4_de;
+    f32 scale = D_800C98C4;
     upper = src->upper[0]; lower = src->lower[0]; dst[(0) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(0) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
     upper = src->upper[1]; lower = src->lower[1]; dst[(1) * 2] = (f32)(s32)(upper | (lower >> 16)) * scale; dst[(1) * 2 + 1] = 0.0f;
     upper = src->upper[2]; lower = src->lower[2]; dst[(2) * 2] = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale; dst[(2) * 2 + 1] = (f32)(s32)((upper << 16) | (lower & 0xFFFF)) * scale;
@@ -349,7 +349,7 @@ void func_80270910_de(f32 *dst, PackedMatrixWords *src) {
         upper = src->upper[7];
         lower = src->lower[7];
         last = (f32)(s32)((upper & 0xFFFF0000) | (lower >> 16)) * scale;
-        dst[15] = D_800C47D8_de;
+        dst[15] = D_800C98C8;
         dst[14] = last;
     }
 }
@@ -390,8 +390,8 @@ void func_80270AAC_de(Vector4f *out, f32 amount, Vector4f *a, Vector4f *b) {
         return;
     }
 
-    inverseSine = *(&D_800C47D8_de + 1) / sine;
-    scaleA = func_802B7130_de((*(&D_800C47D8_de + 1) - amount) * angle) * inverseSine;
+    inverseSine = *(&D_800C98C8 + 1) / sine;
+    scaleA = func_802B7130_de((*(&D_800C98C8 + 1) - amount) * angle) * inverseSine;
     scaleB = func_802B7130_de(amount * angle) * inverseSine;
     if (dot < negativeDot) {
         other = &negative;
@@ -652,7 +652,7 @@ Vec3 *func_80271624_de(Vec3 *out, Vec3 *in, f32 amount) {
     return out;
 }
 
-extern f32 D_80111D2C;
+extern f32 D_80115DEC;
 
 extern f32 func_802B72B0_de(f32);
 extern f32 func_802745D0_de(f32);
@@ -703,7 +703,7 @@ pole:
             halfAngle = 0.0f;
             scale = func_802B7130_de(halfAngle);
             result.z = normalized.z * scale;
-            D_80111D2C = scale;
+            D_80115DEC = scale;
             result.x = halfAngle;
             result.y = halfAngle;
             result.w = func_802B6560_de(halfAngle);
@@ -738,7 +738,7 @@ general:
             result.x = axis.x * scale;
             result.y = axis.y * scale;
             result.z = axis.z * scale;
-            D_80111D2C = scale;
+            D_80115DEC = scale;
             result.w = func_802B6560_de(halfAngle);
         }
         }

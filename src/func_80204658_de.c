@@ -7,7 +7,7 @@
 extern void func_80285DB0_de(void *, void *, s32);
 extern void func_80278D78_de(void *arg0, s32 arg1, void *arg2);
 extern void func_802A5D38_de(void *, s32);
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern s32 D_800C8270_de;
 extern char D_801379C0;
 
@@ -25,7 +25,7 @@ void func_80204658_de(void *arg0) {
     s32 *pFlag;
 
     temp_s1 = ((func_80204468_S2 *)(arg0))->unk18;
-    pFlag = &D_8011BDC8;
+    pFlag = &D_8011FE88;
     func_80285DB0_de(pFlag, arg0, 1);
     if (D_800C8270_de == 0) {
         func_80278D78_de(arg0, 0x80000, arg0);

@@ -10,10 +10,10 @@
 
 
 extern s32 D_800DE7E8;
-extern s32 *D_8011BE3C;
+extern s32 *D_8011FEFC;
 extern s32 D_8011BDFC;
-extern Record_func_804030E0_de *D_800DE7E0;
-extern char D_800DCAFC;
+extern Record_func_804030E0_de *D_800E2830;
+extern char D_800E0B2C;
 
 extern s32 func_8028FE3C_de(s32 *, s32, s32, s32 *);
 extern s32 **func_8025193C_de(s32, s32, s32, s32, s32, s32, s32, char *, s32);
@@ -31,22 +31,22 @@ void func_80403200_de(char *name) {
     Entry_func_80403200_de *entries;
 
     if (D_800DE7E8 != 0) {
-        loaded = func_8028FE3C_de(D_8011BE3C, D_8011BDFC, 0, &size);
+        loaded = func_8028FE3C_de(D_8011FEFC, D_8011BDFC, 0, &size);
         if (loaded == 0) {
             table = 0;
         } else {
-            table = func_8025193C_de(0, loaded, loaded, size, 0x33, 0, 0, &D_800DCAFC, 1);
+            table = func_8025193C_de(0, loaded, loaded, size, 0x33, 0, 0, &D_800E0B2C, 1);
         }
         i = 0;
         entries = (Entry_func_80403200_de *)(*table + 2);
-        n = *D_8011BE3C - 1;
+        n = *D_8011FEFC - 1;
         for (; i < n; i++) {
             if (func_80293440_de(name, entries[i].name) == 0) {
-                D_800DE7E0->key = entries[i].id8;
+                D_800E2830->key = entries[i].id8;
                 id = entries[i].id0;
-                D_800DE7E0->index = i;
-                D_800DE7E0->pending = 1;
-                D_800DE7E0->id = id;
+                D_800E2830->index = i;
+                D_800E2830->pending = 1;
+                D_800E2830->id = id;
                 break;
             }
         }

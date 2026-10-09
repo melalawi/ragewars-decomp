@@ -9,7 +9,7 @@ typedef struct {
     s32 protect;
 } StunProtectionRules;
 
-extern StunProtectionRules D_801427E0[];
+extern StunProtectionRules D_801468A0[];
 extern void func_80214178_de(char *, char *, s32);
 extern void func_802227F4_de(SharedPlayer *, SharedPlayer *, s32);
 extern f32 func_80274564_de(f32);
@@ -19,7 +19,7 @@ void func_80229814_de(SharedPlayer *player, f32 amount) {
     f32 stun;
 
     if (amount != 0.0f && !(75.0f <= player->views5E8.view11D8_149.stun) && !(player->views5E8.view670_31.shield > 0.0f)
-        && !(D_801427E0->rule != 0 && player->views5D8.view5D8_2.controls->mode == 0xB && D_801427E0->protect > 0)
+        && !(D_801468A0->rule != 0 && player->views5D8.view5D8_2.controls->mode == 0xB && D_801468A0->protect > 0)
         && !(player->views122C.view122C_2.options & 0x8000)) {
         stun = player->views5E8.view11D8_149.stun + amount * 15.0f;
         if (75.0f < stun) {

@@ -33,17 +33,17 @@ s32 func_8021BFC4_de();
 
 
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern s32 D_8011D8D0;
-extern s8 D_801372A4;
-extern s32 D_80140F80;
-extern s32 D_80142208_de;
-extern s32 D_801427E0;
+extern s8 D_8013B364;
+extern s32 D_80145040;
+extern s32 D_801462C8;
+extern s32 D_801468A0;
 
  
 extern s32 D_8014280C[]; 
 
-extern s32 D_80142834;
+extern s32 D_801468F4;
 
 
 
@@ -108,7 +108,7 @@ void func_80219A40_de(struct Shared_ReactionActor *arg0, void *arg1, struct Shar
 
     var_s2 = 0;
     var_s3 = -1;
-    if ((func_80245798_de() == 0) && (func_80245784_de() == 0) && !(D_80142208_de & 1)) {
+    if ((func_80245798_de() == 0) && (func_80245784_de() == 0) && !(D_801462C8 & 1)) {
         temp_s1 = arg0->unk1D8;
         temp_a1 = temp_s1->unk14;
         temp_s6 = temp_s1->unk5E4 > 0;
@@ -117,7 +117,7 @@ void func_80219A40_de(struct Shared_ReactionActor *arg0, void *arg1, struct Shar
         }
         
         while (temp_a1 != 0) {
-            temp_v0 = func_8028B2F8_de(&D_8011BDC8, temp_a1);
+            temp_v0 = func_8028B2F8_de(&D_8011FE88, temp_a1);
             var_v1 = 0;
             if (temp_v0 == 0) {
                 break;
@@ -309,15 +309,15 @@ block_88:
                         temp_v1_7 = (void *)temp_s1->unk5D8;
                         if (temp_v1_7->counted == 0) {
                             temp_v1_7->counted = 1U;
-                            temp_s5 = func_8022A5A0_de(&D_80140F80, (u32) var_s2);
+                            temp_s5 = func_8022A5A0_de(&D_80145040, (u32) var_s2);
                             temp_a0_4 = (void *)temp_s1->unk5D8;
-                            if ((temp_a0_4->unk8F == 1) && ((((struct Shared_ReactionMatchState *)(&D_80140F80))->unk18B4) != 0)) {
+                            if ((temp_a0_4->unk8F == 1) && ((((struct Shared_ReactionMatchState *)(&D_80145040))->unk18B4) != 0)) {
                                 temp_a0_4->kills_special[temp_s5]++;
                             } else {
                                 temp_s1->unk5D8->kills_normal[temp_s5]++;
                             }
-                            temp_s3 = func_8022A5A0_de(&D_80140F80, (u32) temp_s1);
-                            if ((temp_s1->unk5D8->unk8F == 1) && ((((struct Shared_ReactionMatchState *)(&D_80140F80))->unk18B4) != 0)) {
+                            temp_s3 = func_8022A5A0_de(&D_80145040, (u32) temp_s1);
+                            if ((temp_s1->unk5D8->unk8F == 1) && ((((struct Shared_ReactionMatchState *)(&D_80145040))->unk18B4) != 0)) {
                                 var_s2->unk5D8->deaths_special[temp_s3]++;
                             } else {
                                 var_s2->unk5D8->deaths_normal[temp_s3]++;
@@ -345,7 +345,7 @@ block_88:
                                 temp_v1_11 = (void *)temp_s1->unk5D8;
                                 temp_v0_5 = temp_v1_11->score - 1;
                                 temp_v1_11->score = (u16) temp_v0_5;
-                                temp_v0_5 = D_80142804;
+                                temp_v0_5 = D_801468C4;
                                 if (temp_v0_5 != 0) {
                                     temp_v1_12 = temp_s1->unk5D8->unk92;
                                     
@@ -353,8 +353,8 @@ block_88:
                                         if (temp_v1_12 < 5) {
                                             var_v1_4 = &D_8014280C[temp_v1_12];
 
-                                            if (D_80142858 == 0) {
-                                                if (D_80142834 != 0) {
+                                            if (D_80146918 == 0) {
+                                                if (D_801468F4 != 0) {
 
                                                 } else {
                                                     goto block_134;
@@ -366,19 +366,19 @@ block_88:
                             } else {
                                 temp_v1_13 = (void *)temp_s1->unk5D8;
                                 temp_v1_13->deaths_other = (u16) (temp_v1_13->deaths_other + 1);
-                                temp_v0_6 = func_8020CFE0_de(&D_801372A4, temp_s1->unk1454->unk4);
+                                temp_v0_6 = func_8020CFE0_de(&D_8013B364, temp_s1->unk1454->unk4);
                                 temp_v0_6->unk38 = (s32) (temp_v0_6->unk38 + 1);
-                                temp_v0_6 = func_8020CFE0_de(&D_801372A4, var_s2->unk1454->unk4);
+                                temp_v0_6 = func_8020CFE0_de(&D_8013B364, var_s2->unk1454->unk4);
                                 temp_v0_6->unk3C = (s32) (temp_v0_6->unk3C + 1);
                                 if (temp_s1->unk5D8->unk8F == 1) {
-                                    if ((((struct Shared_MatchRules *)(&D_801427E0))->countRule) != 0) {
+                                    if ((((struct Shared_MatchRules *)(&D_801468A0))->countRule) != 0) {
                                         temp_v1_14 = (void *)var_s2->unk5D8;
                                         var_s2->unk12C4 = temp_s1;
                                         temp_v1_14->special_kills = (u16) (temp_v1_14->special_kills + 1);
                                         temp_v1_15 = (void *)var_s2->unk5D8;
                                         temp_v0_5 = temp_v1_15->score + 1;
                                         temp_v1_15->score = (u16) temp_v0_5;
-                                        temp_v0_5 = D_80142804;
+                                        temp_v0_5 = D_801468C4;
                                         if (temp_v0_5 != 0) {
                                             temp_a0_6 = var_s2->unk5D8->unk92;
                                             score_owner_6 = temp_s1->unk5D8->unk92;
@@ -397,14 +397,14 @@ block_88:
                                                 }
                                             }
                                         }
-                                    } else if ((((struct Shared_MatchRules *)(&D_801427E0))->squads) != 0) {
+                                    } else if ((((struct Shared_MatchRules *)(&D_801468A0))->squads) != 0) {
                                         var_s2->unk12C8 = temp_s1;
                                     } else {
                                         goto block_124;
                                     }
                                 } else {
 block_124:
-                                    if (D_80142804 != 0) {
+                                    if (D_801468C4 != 0) {
                                         temp_a0_7 = (void *)var_s2->unk5D8;
                                         if (temp_a0_7->unk92 == temp_s1->unk5D8->unk92) {
                                             temp_a0_7->score = (u16) (temp_a0_7->score - 1);
@@ -415,7 +415,7 @@ block_124:
                                         temp_v1_16 = (void *)var_s2->unk5D8;
                                         temp_v1_16->score = (u16) (temp_v1_16->score + 1);
                                     }
-                                    if (D_80142804 != 0) {
+                                    if (D_801468C4 != 0) {
                                         temp_a0_8 = var_s2->unk5D8->unk92;
                                         score_owner_8 = temp_s1->unk5D8->unk92;
                                         

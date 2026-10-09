@@ -5,14 +5,14 @@
    of entry i of the 2920-byte records D_800E54A4 points to to 2. */
 
 
-extern u8 D_80142350[];
-extern struct Entry_func_804350CC_de *D_800E1454_de;
+extern u8 D_80146410[];
+extern struct Entry_func_804350CC_de *D_800E54A4;
 
 void func_804350CC_de(s32 index) {
     struct Entry_func_804350CC_de *entry;
 
-    D_80142350[index * 150] = 1;
-    entry = &D_800E1454_de[index];
+    D_80146410[index * 150] = 1;
+    entry = &D_800E54A4[index];
     entry->second = 2;
     entry->first = 2;
 }

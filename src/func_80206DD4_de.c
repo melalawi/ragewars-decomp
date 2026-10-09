@@ -105,7 +105,7 @@ void func_8027207C_de(f32 *);
 float func_802B6560_de(float);
 f32 func_802B72B0_de(f32);
 f32 func_80216F44_de(void *, Vec3); /* extern */
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 /* Warning: Gap in callee-saved word stack region.
  * Saved: [0x40, 0x44, 0x48, 0x4c, 0x50, 0x54, 0x58, 0x68, 0x6c], gap at: 0x5c. */
 /* Steers an actor along path nodes, blending direction, speed and orientation as it advances waypoints. */
@@ -219,7 +219,7 @@ void func_802070D0_de(func_802070D0_S3 *arg0, func_802070D0_S1 *arg1) {
             temp_f1_5 = arg1->unk16C;
             var_f3 = 0.0f;
             if (temp_f1_5 > 0.0f) {
-                temp_f0_2 = temp_f1_5 - D_800CD738;
+                temp_f0_2 = temp_f1_5 - D_800D2988;
                 arg1->unk16C = temp_f0_2;
                 if (temp_f0_2 <= 0.0f) {
                     arg1->unk16C = 0.0f;
@@ -235,10 +235,10 @@ void func_802070D0_de(func_802070D0_S3 *arg0, func_802070D0_S1 *arg1) {
         var_f3 = 0.0f;
     }
     arg1->unk168 = var_f3;
-    arg1->unk54 = (f32) (arg0->unk8.v1 + vec1.x * var_f3 * D_800CD738);
-    arg1->unk58 = (f32) (arg0->unkC + vec1.y * var_f3 * D_800CD738);
+    arg1->unk54 = (f32) (arg0->unk8.v1 + vec1.x * var_f3 * D_800D2988);
+    arg1->unk58 = (f32) (arg0->unkC + vec1.y * var_f3 * D_800D2988);
     temp_f1_5 = vec1.z;
-    arg1->unk5C = (f32) (arg0->unk10 + temp_f1_5 * var_f3 * D_800CD738);
+    arg1->unk5C = (f32) (arg0->unk10 + temp_f1_5 * var_f3 * D_800D2988);
     if (temp_s2->unk14.half & 8) {
         if ((temp_s2->unk14.word & 0x420000) == 0x420000) {
             temp_f2_5 = arg1->unk160;

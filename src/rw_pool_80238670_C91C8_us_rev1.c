@@ -3,7 +3,7 @@
  */
 const float D_800C34D8_de = 0.25f;
 const float D_800C34DC_de = 1.0f;
-const float D_800C34E0_de = 0.400000006f;
+const float D_800C85D0 = 0.400000006f;
 const float D_800C34E4_de = -1.0f;
 const float D_800C34E8_de = 1.0f;
 const float D_800C34EC_de = -1.0f;

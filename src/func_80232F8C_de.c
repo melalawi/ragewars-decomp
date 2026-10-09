@@ -11,7 +11,7 @@ extern int D_80140FF8;
 extern void func_802739C4_de(void *, float);
 
 void func_80232F8C_de(void *obj, Event *event) {
-    float v = event->source->speed * D_800C3040_de;
+    float v = event->source->speed * D_800C8130;
 
     if (D_80140FF8 == 1) {
         if (event->side == 2) {

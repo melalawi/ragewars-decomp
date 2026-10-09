@@ -18,9 +18,9 @@
 
 
 
-extern Gfx *D_8010C574;
+extern Gfx *D_80110634;
 
-extern s32 D_800CD72C;
+extern s32 D_800D297C;
 
 
 
@@ -44,17 +44,17 @@ void func_8024EB90_de(Object_func_8024EB90_de *obj) {
     func_8026D8F8_de();
     func_80295FF4_de();
     if (obj->cached != 0) {
-        gSPDisplayList(D_8010C574++, (unsigned int)obj->cached);
+        gSPDisplayList(D_80110634++, (unsigned int)obj->cached);
         return;
     }
     resource = func_8024F6EC_de(obj, obj->model);
     if (resource == 0) {
         return;
     }
-    obj->cached = D_8010C574;
-    gSPBranchList(D_8010C574++, 0);
+    obj->cached = D_80110634;
+    gSPBranchList(D_80110634++, 0);
     if (*obj->type == 8) {
-        angle = D_801370D0;
+        angle = D_8013B190;
     } else {
         angle = obj->angle;
     }
@@ -63,13 +63,13 @@ void func_8024EB90_de(Object_func_8024EB90_de *obj) {
     func_8027254C_de(&obj->position, 20000.0f);
     func_80273448_de(&matrix, obj->position.x, obj->position.y + obj->height, obj->position.z);
     func_80273D6C_de(&matrix);
-    func_8027027C_de(&matrix, obj->matrices[D_800CD72C]);
+    func_8027027C_de(&matrix, obj->matrices[D_800D297C]);
     if (*obj->type != 12) {
-        func_8026DA4C_de(resource, obj->matrices[D_800CD72C], 0, obj->lights, 0, obj->material);
+        func_8026DA4C_de(resource, obj->matrices[D_800D297C], 0, obj->lights, 0, obj->material);
         func_8024ED90_de(obj, resource);
     }
-    gSPEndDisplayList(D_8010C574++);
-    gSPBranchList(obj->cached++, (unsigned int)D_8010C574);
-    gSPDisplayList(D_8010C574++, (unsigned int)obj->cached);
+    gSPEndDisplayList(D_80110634++);
+    gSPBranchList(obj->cached++, (unsigned int)D_80110634);
+    gSPDisplayList(D_80110634++, (unsigned int)obj->cached);
     func_80253754_de(0, resource);
 }

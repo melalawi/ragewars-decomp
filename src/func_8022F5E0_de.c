@@ -9,7 +9,7 @@
 
 
 
-extern void *D_800CB2EC[];
+extern void *D_800D052C[];
 
 
 
@@ -42,7 +42,7 @@ void func_8022F5E0_de(char *arg0) {
     char *orientation;
 
     object = ((ObjectLinks1DC *)(arg0))->unk_1D8;
-    sp70 = ((struct ObjectState44 *) D_800CB2EC[((ObjectState630 *) object)->unk_62E])->unk_38;
+    sp70 = ((struct ObjectState44 *) D_800D052C[((ObjectState630 *) object)->unk_62E])->unk_38;
     if (D_800CA040_de != 0) {
         sp70.x = -sp70.x;
     }

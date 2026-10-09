@@ -12,10 +12,10 @@ extern u8 D_80152789;
 extern char D_800ED41C[];
 #else
 #endif
-/* Takes D_800DE878 when D_8014D4CC is set and otherwise the signed byte at offset 4 of the second argument's record at 0x20, then shows D_800D394C in a field when D_8014D4A4 is set and otherwise points the field at D_800D3958 and formats one more than that value into it with D_800DCD9C two bytes before the length func_80441FE8_de reports, returning zero.
-   Adapted from func_8040A300_de with the value source chosen by D_8014D4CC, the text chosen by D_8014D4A4, the offset two bytes, and the texts and format changed. */
+/* Takes D_800E28C8 when D_8015375C is set and otherwise the signed byte at offset 4 of the second argument's record at 0x20, then shows D_800D394C in a field when D_80153734 is set and otherwise points the field at D_800D3958 and formats one more than that value into it with D_800DCD9C two bytes before the length func_80441FE8_de reports, returning zero.
+   Adapted from func_8040A300_de with the value source chosen by D_8015375C, the text chosen by D_80153734, the offset two bytes, and the texts and format changed. */
 
-extern s32 D_8014D4CC;
+extern s32 D_8015375C;
 
 extern u8 *D_800D394C[];
 
@@ -33,12 +33,12 @@ s32 func_8040B444_de(Item_func_80441FE8_de *field, struct Record_func_80409BDC_d
 
 #else
 #endif
-    if (D_8014D4CC != 0) {
-        value = D_800DE878;
+    if (D_8015375C != 0) {
+        value = D_800E28C8;
     } else {
         value = holder->inner->unk4;
     }
-    if (D_8014D4A4 != 0) {
+    if (D_80153734 != 0) {
         field->text = D_800D394C;
     } else {
 

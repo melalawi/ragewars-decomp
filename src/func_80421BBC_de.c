@@ -2,11 +2,11 @@
 #include "types.h"
 
 /* Releases the object D_800E4450 holds through func_802547E4_de, clears D_800E4450 and returns zero. */
-extern void *D_800E0400;
+extern void *D_800E4450;
 extern void func_802547E4_de(void *);
 
 s32 func_80421BBC_de(void) {
-    func_802547E4_de(D_800E0400);
-    D_800E0400 = 0;
+    func_802547E4_de(D_800E4450);
+    D_800E4450 = 0;
     return 0;
 }

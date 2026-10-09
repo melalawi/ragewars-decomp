@@ -12,8 +12,8 @@
 
 
 
-extern char D_8012D540;
-extern char D_801372A4;
+extern char D_80131600;
+extern char D_8013B364;
 extern f32 D_800C3CD0_de[];
 extern s32 func_8020CB3C_de(void *, void *);
 extern Triple *func_8020C994_de(void *, s32);
@@ -32,7 +32,7 @@ void func_8024DBC0_de(void *actor, Triple pos, s32 sound, f32 volume) {
     SoundRequest request;
     Triple *emitter;
 
-    emitter = func_8020C994_de(&D_801372A4, func_8020CB3C_de(&D_801372A4, &pos));
+    emitter = func_8020C994_de(&D_8013B364, func_8020CB3C_de(&D_8013B364, &pos));
     request.position = pos;
     at = request.position;
     request.owner = ((func_80204468_S3 *)(actor))->unk14;
@@ -47,5 +47,5 @@ void func_8024DBC0_de(void *actor, Triple pos, s32 sound, f32 volume) {
     if (sound != 0xBD7) {
         func_80271F9C_de(&velocity, &dir, 409.59998f);
     }
-    func_8028FFD0_de((s32)&D_8012D540, 0, sound, velocity, at, request.owner, volume);
+    func_8028FFD0_de((s32)&D_80131600, 0, sound, velocity, at, request.owner, volume);
 }

@@ -6,9 +6,9 @@
 
 /* Returns the object loaded for an identifier in the current context: reuses a cached entry whose context and identifier match and whose object still carries that identifier, and otherwise loads it through func_8040EC30_de, counts the load in D_8014D0A0 with its high-water mark in D_8014D09C, and records it while the cache holds fewer than 75 entries. */
 
-extern s32 D_80146E00;
+extern s32 D_8014D080;
 
-extern s32 D_80146E20;
+extern s32 D_8014D0A0;
 extern s32 func_80299958_de(void);
 extern void *func_80411DCC_de(s32 handle);
 extern struct Tree *func_8040EC30_de(struct Tree *context, u16 id);
@@ -19,22 +19,22 @@ Element *func_80298170_de(s32 id) {
     s32 i;
 
     context = (s32)func_80411DCC_de(func_80299958_de());
-    for (i = 0; i < ((Cache_func_80298170_de *)D_80146E00)->count; i++) {
-        if (((Cache_func_80298170_de *)D_80146E00)->entries[i].context == context && ((Cache_func_80298170_de *)D_80146E00)->entries[i].id == id
-            && ((Cache_func_80298170_de *)D_80146E00)->entries[i].object != 0 && ((Cache_func_80298170_de *)D_80146E00)->entries[i].object->id == id) {
-            return ((Cache_func_80298170_de *)D_80146E00)->entries[i].object;
+    for (i = 0; i < ((Cache_func_80298170_de *)D_8014D080)->count; i++) {
+        if (((Cache_func_80298170_de *)D_8014D080)->entries[i].context == context && ((Cache_func_80298170_de *)D_8014D080)->entries[i].id == id
+            && ((Cache_func_80298170_de *)D_8014D080)->entries[i].object != 0 && ((Cache_func_80298170_de *)D_8014D080)->entries[i].object->id == id) {
+            return ((Cache_func_80298170_de *)D_8014D080)->entries[i].object;
         }
     }
     object = (Element *)func_8040EC30_de((struct Tree *)context, id & 0xFFFF);
-    D_80146E20++;
-    if (D_80146E1C < D_80146E20) {
-        D_80146E1C = D_80146E20;
+    D_8014D0A0++;
+    if (D_8014D09C < D_8014D0A0) {
+        D_8014D09C = D_8014D0A0;
     }
-    if (((Cache_func_80298170_de *)D_80146E00)->count < 75) {
-        ((Cache_func_80298170_de *)D_80146E00)->entries[((Cache_func_80298170_de *)D_80146E00)->count].id = id;
-        ((Cache_func_80298170_de *)D_80146E00)->entries[((Cache_func_80298170_de *)D_80146E00)->count].object = object;
-        ((Cache_func_80298170_de *)D_80146E00)->entries[((Cache_func_80298170_de *)D_80146E00)->count].context = context;
-        ((Cache_func_80298170_de *)D_80146E00)->count++;
+    if (((Cache_func_80298170_de *)D_8014D080)->count < 75) {
+        ((Cache_func_80298170_de *)D_8014D080)->entries[((Cache_func_80298170_de *)D_8014D080)->count].id = id;
+        ((Cache_func_80298170_de *)D_8014D080)->entries[((Cache_func_80298170_de *)D_8014D080)->count].object = object;
+        ((Cache_func_80298170_de *)D_8014D080)->entries[((Cache_func_80298170_de *)D_8014D080)->count].context = context;
+        ((Cache_func_80298170_de *)D_8014D080)->count++;
     }
     return object;
 }

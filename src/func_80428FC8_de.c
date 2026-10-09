@@ -11,8 +11,8 @@
    it idle, sets the word at 0x17F0 of the objects to 8 and sends 20, 10, 15 or 10 by the byte at
    0x124D through jtbl_800E1A40, or 3 for any other value. 0x1DA sends 11 when func_802999A0_de(0)
    reports 11 and -1 otherwise. Either then calls func_802998A8_de. Returns zero. */
-extern char D_80140FC8[];
-extern char D_8011BDC8[];
+extern char D_80145088[];
+extern char D_8011FE88[];
 extern void *jtbl_800EE090[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
@@ -49,10 +49,10 @@ s32 func_80428FC8_de(void) {
         if (func_802999A0_de(0) != 0x16) {
             goto send_3;
         }
-        objects = D_80140FC8;
+        objects = D_80145088;
         func_8044A370_de(objects, 0);
         func_804499B0_de(objects - 0x48, 0, 0);
-        func_80286AA8_de(D_8011BDC8, 0, 0);
+        func_80286AA8_de(D_8011FE88, 0, 0);
         if (func_8025477C_de() == 0) {
             func_8025476C_de(1);
         }

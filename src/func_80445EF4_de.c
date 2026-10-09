@@ -4,10 +4,10 @@
 
 
 
-extern State_func_80445EF4_de D_801427E0;
+extern State_func_80445EF4_de D_801468A0;
 
 s32 func_80445EF4_de(void) {
-    State_func_80445EF4_de *s = &D_801427E0;
+    State_func_80445EF4_de *s = &D_801468A0;
     s32 ret;
 
     ret = 0;

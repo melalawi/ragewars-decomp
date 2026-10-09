@@ -12,7 +12,7 @@ typedef struct func_802A1A48_S1 func_802A1A48_S1;
 extern s32 func_802A05D0_de(u8 *s);
 
 /* unbake published declaration: published_38cd7ee1d0c57d2b1e1163f1 */
-extern int D_80146E44;
+extern int D_8014D0C4;
 
 /* unbake published declaration: published_5d68c7fb82cda2fef46a6bbf */
 extern void func_8029FB74_de(char *base, char *max);
@@ -30,7 +30,7 @@ extern void func_802A01D8_de(int arg0);
 extern int func_802A05B8_de(int arg0);
 
 /* unbake published declaration: published_857268e71c6a53bc935d593e */
-extern int D_80146E48;
+extern int D_8014D0C8;
 
 struct func_802A1A48_S1;
 /* unbake published declaration: published_8acd77fdf6941f55df5278a1 */
@@ -46,7 +46,7 @@ extern u8 *func_802A07DC_de(u8 *arg0, s32 arg1, s32 arg2);
 extern void func_8029FE38_de(char *base, s32 n, s32 size, s32 (*compare)(char *a, char *b));
 
 /* unbake published declaration: published_92dc42f35ce660ee7b07ad66 */
-extern int D_80146E40;
+extern int D_8014D0C0;
 
 /* unbake published declaration: published_a2f642df866c397dcd6f9535 */
 extern void func_802A0960_de(u8 *arg0, u8 *arg1, u8 *arg2, u8 *arg3, u8 *arg4);
@@ -55,7 +55,7 @@ extern void func_802A0960_de(u8 *arg0, u8 *arg1, u8 *arg2, u8 *arg3, u8 *arg4);
 extern u32 func_802A08B8_de(u8 *arg0, u32 arg1, u32 arg2);
 
 /* unbake published declaration: published_b7e2b6b06bb3c82d9134b53c */
-extern signed int ( *D_80146E4C)(char *, char *);
+extern signed int ( *D_8014D0CC)(char *, char *);
 
 /* unbake published declaration: published_c97425f50e40ac6ae9747c0c */
 extern u8 *func_802A0324_de(u8 *destination, u8 *source, s32 count);

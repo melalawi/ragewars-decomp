@@ -7,13 +7,13 @@
 
 
 
-extern CheatCode D_0044EF40[];
-extern u8 D_800E1C5C[];
+extern CheatCode D_0044FB90[];
+extern u8 D_800E5CAC[];
 
 
-extern struct Shape_func_802764D4_de_2 D_80142208_de;
+extern struct Shape_func_802764D4_de_2 D_801462C8;
 
-extern s32 D_8014DDA0;
+extern s32 D_80154030;
 
 extern s32 func_802BD400_de(u8 *);
 extern void func_8025DF34_de(s32);
@@ -27,16 +27,16 @@ s32 func_8043CDF8_de(void)
     struct Shape_func_802764D4_de_2 *settings;
     u8 *code;
 
-    D_8014DDA0 = -1;
+    D_80154030 = -1;
     for (i = 0; i < 12; i++) {
-        code = D_0044EF40[i].code;
+        code = D_0044FB90[i].code;
         j = 0;
-        if (func_802BD400_de(code) != func_802BD400_de(D_800E1C5C)) {
+        if (func_802BD400_de(code) != func_802BD400_de(D_800E5CAC)) {
             match = 0;
         } else {
             for (;;) {
                 if (j < func_802BD400_de(code)) {
-                    if ((code[j] ^ j) != D_800E1C5C[j]) {
+                    if ((code[j] ^ j) != D_800E5CAC[j]) {
                         match = 0;
                         break;
                     }
@@ -48,15 +48,15 @@ s32 func_8043CDF8_de(void)
             }
         }
         if (match) {
-            D_80142208_de.field_4 |= D_0044EF40[i].flags;
-            settings = &D_80142208_de;
+            D_801462C8.field_4 |= D_0044FB90[i].flags;
+            settings = &D_801462C8;
             do {
-                D_80137214 = settings->field_4;
+                D_8013B2D4 = settings->field_4;
             } while (0);
-            hasSound = D_0044EF40[i].sound != 0;
-            D_8014DDA0 = i;
+            hasSound = D_0044FB90[i].sound != 0;
+            D_80154030 = i;
             if (hasSound) {
-                func_8025DF34_de((s16)D_0044EF40[i].sound);
+                func_8025DF34_de((s16)D_0044FB90[i].sound);
             }
         }
     }

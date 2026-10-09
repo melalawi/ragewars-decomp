@@ -5,8 +5,8 @@
  * through func_8024491C_de and stores the wheel's reach as the XZ distance to whatever was hit (diagonals
  * scaled by 1/sqrt 2, components tested against the zeroed y), or the full ray length on a miss. */
 extern Vec3 D_800C88A0_de[8];
-extern Hit_func_802106E0_de *D_800FFFCC;
-extern char D_800FFFD0[];
+extern Hit_func_802106E0_de *D_80103FCC;
+extern char D_80103FD0[];
 extern f32 func_8024E464_de(Vehicle *);
 extern f32 func_8024D398_de(Vehicle *);
 extern f32 func_8024D284_de(Vehicle *);
@@ -31,8 +31,8 @@ void func_802106E0_de(Vehicle *vehicle, s32 wheel) {
     a = func_8024E464_de(vehicle);
     b = func_8024D398_de(vehicle);
     c = func_8024D284_de(vehicle);
-    if (func_8024491C_de(vehicle, from, to, D_800FFFD0, a, b, c, func_8024E420_de(vehicle))) {
-        delta = D_800FFFCC->pos;
+    if (func_8024491C_de(vehicle, from, to, D_80103FD0, a, b, c, func_8024E420_de(vehicle))) {
+        delta = D_80103FCC->pos;
         delta.x -= from.x;
         delta.y = 0.0f;
         delta.z -= from.z;

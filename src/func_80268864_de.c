@@ -7,11 +7,11 @@
 /* Calls func_802172D0_de on an object, its block at offset 0x170 and a stack argument when the pause word is clear, the object exists and its first byte is one. Adapted from func_802688AC_de with the pause-word test, the callee and the extra stack argument changed, and the call wrapped in do-while(0) so the stack argument loads at entry. */
 
 
-extern s32 D_801427D4;
+extern s32 D_80146894;
 extern void func_802172D0_de(u8 *, u8 *, s32);
 
 void func_80268864_de(void *unused, u8 *object, s32 third, struct Shape_func_802764D4_de_2 pair, s32 fifth, s32 sixth) {
-    if (D_801427D4 == 0 && object != 0 && object[0] == 1) {
+    if (D_80146894 == 0 && object != 0 && object[0] == 1) {
         do {
             func_802172D0_de(object, object + 0x170, sixth);
         } while (0);
@@ -46,7 +46,7 @@ void func_802688AC_de(void *unused, u8 *object, s32 third, struct Shape_func_802
 
 
 
-extern f32 D_800C4480_de[];
+extern f32 D_800C9570[];
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_8022B11C_de(Owner_func_802688E4_de *, s32);
 
@@ -59,7 +59,7 @@ void func_802688E4_de(Actor_func_802688E4_de *arg0, Player *arg1, s32 arg2, Blas
     if (arg0->kind == 1 && (arg0->flags & 0x300000) != 0) {
         owner = arg0->owner;
         if (owner->alive != 0) {
-            range = (f32)blast.radius * D_800C4480_de[1];
+            range = (f32)blast.radius * D_800C9570[1];
             func_80271F68_de(&delta, &owner->pos, &arg1->pos);
             dist = delta.x * delta.x + delta.y * delta.y + delta.z * delta.z;
             range = range * range;

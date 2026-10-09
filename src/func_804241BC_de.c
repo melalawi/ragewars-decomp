@@ -17,8 +17,8 @@
 
 
 
-extern s32 D_800DE890;
-extern struct State_func_804241BC_de *D_800E05B0_de;
+extern s32 D_800E28E0;
+extern struct State_func_804241BC_de *D_800E4600;
 extern void func_802A2394_de();
 extern void func_802A2360_de();
 extern s32 func_8041A470_de(struct Menu_func_804241BC_de *);
@@ -29,31 +29,31 @@ extern void func_80298368_de(s32);
 s32 func_804241BC_de(void) {
     s32 result;
 
-    if (D_800DE890 >= 2) {
+    if (D_800E28E0 >= 2) {
         func_802A2394_de();
         return 0;
     }
     func_802A2360_de();
-    if (D_800E05B0_de->opening > 0) {
-        if (--D_800E05B0_de->opening == 0) {
-            func_8041A47C_de(D_800E05B0_de->menu);
+    if (D_800E4600->opening > 0) {
+        if (--D_800E4600->opening == 0) {
+            func_8041A47C_de(D_800E4600->menu);
             return 0;
         }
         return 0;
     }
-    switch (result = func_8041A470_de(D_800E05B0_de->menu)) {
+    switch (result = func_8041A470_de(D_800E4600->menu)) {
     case 3:
-        if (--D_800E05B0_de->delay <= 0) {
-            D_800E05B0_de->list->unk16--;
-            if (D_800E05B0_de->list->unk16 + D_800E05B0_de->list->unk1A < 0) {
-                D_800E05B0_de->list->unk16 = D_800E05B0_de->menu->list->unk1A;
+        if (--D_800E4600->delay <= 0) {
+            D_800E4600->list->unk16--;
+            if (D_800E4600->list->unk16 + D_800E4600->list->unk1A < 0) {
+                D_800E4600->list->unk16 = D_800E4600->menu->list->unk1A;
             }
-            D_800E05B0_de->delay = result;
+            D_800E4600->delay = result;
         }
         break;
     case 4:
         func_8029973C_de();
-        func_80298368_de(D_800E05B0_de->target);
+        func_80298368_de(D_800E4600->target);
         break;
     default:
         return 0;

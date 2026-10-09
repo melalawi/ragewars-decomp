@@ -5,7 +5,7 @@
 #include "types.h"
 s32 func_80441FE8_de(void *); /* extern */
 extern u8 D_8014B494[];
-extern s32 D_8014D4E4;
+extern s32 D_80153774;
 extern s32 D_800D2478; /* const */
 extern s32 D_800D2480; /* const */
 s32 func_8040A83C_us(struct Object_func_80442064_de *arg0) {
@@ -20,7 +20,7 @@ s32 func_8040A83C_us(struct Object_func_80442064_de *arg0) {
     u8 *var_s0;
     u8 temp_v0;
     var_s1 = 8;
-    if (D_8014D4E4 != 0) {
+    if (D_80153774 != 0) {
         arg0->source = &D_800D2478;
     } else {
         arg0->source = &D_800D2480;

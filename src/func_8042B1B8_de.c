@@ -5,11 +5,11 @@
 
 
 
-extern Record_func_8042B1B8_de D_800E0F14_de[];
-extern s32 D_800E1194[];
-extern s32 D_800E11A8_de[];
-extern s32 D_800E11C4[];
-extern s32 D_800E11F0_de[];
+extern Record_func_8042B1B8_de D_800E4F64[];
+extern s32 D_800E51E4[];
+extern s32 D_800E51F8[];
+extern s32 D_800E5214[];
+extern s32 D_800E5240[];
 
 s32 func_8042B1B8_de(s32 arg0, s32 arg1) {
     s32 result = 0;
@@ -23,16 +23,16 @@ s32 func_8042B1B8_de(s32 arg0, s32 arg1) {
     }
     switch (arg0) {
     case 0:
-        table = D_800E1194;
+        table = D_800E51E4;
         break;
     case 1:
-        table = D_800E11A8_de;
+        table = D_800E51F8;
         break;
     case 3:
-        table = D_800E11C4;
+        table = D_800E5214;
         break;
     case 2:
-        table = D_800E11F0_de;
+        table = D_800E5240;
         break;
     default:
         return 0;
@@ -41,9 +41,9 @@ s32 func_8042B1B8_de(s32 arg0, s32 arg1) {
     found = 0;
     i = 0;
     do {
-        if (key == D_800E0F14_de[i].key) {
+        if (key == D_800E4F64[i].key) {
             found = 1;
-            result = D_800E0F14_de[i].value;
+            result = D_800E4F64[i].value;
         }
         i++;
     } while ((i < 0x28) && (found == 0));

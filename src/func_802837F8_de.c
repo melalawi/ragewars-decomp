@@ -6,7 +6,7 @@
 
 
 
-extern Vec3 D_801002C8;
+extern Vec3 D_801042C8;
 extern Triple D_801002B8;
 extern char D_8011D8D0;
 
@@ -22,7 +22,7 @@ void func_802837F8_de(void *arg0, s32 arg1) {
     Vec3 position;
 
     if (*((func_802836A4_S1 *)(arg0))->unk118 & 0x10) {
-        position = D_801002C8;
+        position = D_801042C8;
     } else {
         position = ((func_802836A4_S1 *)(arg0))->unk1C;
     }

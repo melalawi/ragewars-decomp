@@ -12,12 +12,12 @@
    cannot be used, and any other state resets to mode 1; finally, unless func_802301F4_de handled the
    weapon or the actor has flag 0x400, it fires through func_80214178_de with the holder's state's fire
    mode from D_800CE8DC. */
-extern WeaponActionRecord D_800C9698[];
-extern char D_800FEB00[];
-extern u8 D_80142215;
+extern WeaponActionRecord D_800CE8DC[];
+extern char D_80102B00[];
+extern u8 D_801462D5;
 extern s32 D_800D30BC[];
-extern char D_80140F80[];
-extern char D_80140FC8;
+extern char D_80145040[];
+extern char D_80145088;
 extern s32 func_80222AA4_de(void *, s16);
 extern s16 func_8022F96C_de(void *);
 extern s32 func_8022F55C_de(void *, s16);
@@ -42,14 +42,14 @@ static inline s32 can_fire(char *player) {
     if (((SharedPlayer_func_8022A398_de *)(player))->views1450.view1450_0.unk1450 != 0) {
         return 1;
     }
-    if (D_80142215 != 1) {
+    if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F55C_de(&D_800FEB00[((SharedPlayer_func_8022A398_de *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E);
+    ammo = func_8022F55C_de(&D_80102B00[((SharedPlayer_func_8022A398_de *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E);
     if (ammo == 0) {
         func_8025DF34_de(0xD4D);
         if (((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC != 0) {
-            func_80239908_de(&D_80140FC8, ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC[0], D_800E0D44, D_800DCC68, D_80152789), func_8022A5A0_de(D_80140F80, player),
+            func_80239908_de(&D_80145088, ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC[0], D_800E0D44, D_800DCC68, D_80152789), func_8022A5A0_de(D_80145040, player),
                           1.0f);
         }
     }
@@ -59,7 +59,7 @@ void func_80230FDC_de(void *actor, void *arg1) {
     char *player;
     s32 action;
     player = ((Shared_Actor *)(actor))->entity;
-    action = D_800C9698[((SharedPlayer_func_8022A398_de *)(player))->views5E8.view650_15.unk650].action;
+    action = D_800CE8DC[((SharedPlayer_func_8022A398_de *)(player))->views5E8.view650_15.unk650].action;
     if (func_80222AA4_de(player, ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E) == 0) {
         if (((WeaponFireState *)(arg1))->mode != 2) {
             ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view770_91.unk770 = func_8022F96C_de(player);
@@ -77,8 +77,8 @@ void func_80230FDC_de(void *actor, void *arg1) {
             if (func_80222AA4_de(player, ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E) == 0) {
                 func_8025DF34_de(0xD4D);
                 if (((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC != 0) {
-                    func_80239908_de((D_80140F80 + 0x48), ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC[0], D_800E0D44, D_800DCC68, (u8)D_80140F80[0x1809]),
-                                  func_8022A5A0_de(D_80140F80, player), 1.0f);
+                    func_80239908_de((D_80145040 + 0x48), ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC[0], D_800E0D44, D_800DCC68, (u8)D_80145040[0x1809]),
+                                  func_8022A5A0_de(D_80145040, player), 1.0f);
                 }
                 ((WeaponFireState *)(arg1))->mode = 1;
             }

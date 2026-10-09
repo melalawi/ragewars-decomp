@@ -15,10 +15,10 @@ typedef s32 (*MenuEventHandler)(void *, s32, s32, s32, s32);
 
 /* Dispatches event arg1 through this file's 12-byte handler table, whose rows hold an event at D_800E5954, an actor kind at D_800E5958 and a handler at D_800E595C: the first row whose event equals arg1 and whose kind equals the actor's halfword kind at 0xC, or is the wildcard 0x7530, receives all five arguments and its result is returned; with no such row, or an empty table, the result is zero. Adapted from func_802A1B50_de. */
 
-extern FieldRow D_800E1904[];
+extern FieldRow D_800E5954[];
 extern FieldRow D_800F1F74[];
-extern FieldRow D_800E1908[];
-extern MenuEventHandler D_800E190C;
+extern FieldRow D_800E5958[];
+extern MenuEventHandler D_800E595C;
 
 s32 func_80439758_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     char *entry;
@@ -27,18 +27,18 @@ s32 func_80439758_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     s32 actor_kind;
     s32 table_kind;
 
-    if (D_800E190C != 0) {
+    if (D_800E595C != 0) {
         wildcard = 0x7530;
-        entry = (char *)&D_800E190C;
+        entry = (char *)&D_800E595C;
         index = 0;
         do {
 #if defined(VERSION_EU)
             if (D_800F1F74[index].value == arg1) {
 #else
-            if (D_800E1904[index].value == arg1) {
+            if (D_800E5954[index].value == arg1) {
 #endif
                 actor_kind = ((Shared_Body *)(arg0))->kind;
-                table_kind = D_800E1908[index].value;
+                table_kind = D_800E5958[index].value;
                 if ((table_kind == actor_kind) || (table_kind == wildcard)) {
                     return (*(MenuEventHandler *)entry)(arg0, arg1, arg2, arg3, arg4);
                 }

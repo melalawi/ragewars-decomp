@@ -120,7 +120,7 @@ struct func_8022E280_S1;
 typedef struct func_8022E280_S1 func_8022E280_S1;
 
 /* unbake published declaration: published_5bf372502d9b1e8f49169ee6 */
-extern float D_800C2E08_de;
+extern float D_800C7EF8;
 
 /* unbake published declaration: published_5ca721359f7934cbd9f5c6b0 */
 extern u8 func_8022E758_de(s32 arg0, s32 arg1);
@@ -130,7 +130,7 @@ struct Actor126;
 typedef struct Actor126 Actor126;
 
 /* unbake published declaration: published_603cf4905db7e8d66427c5c2 */
-extern float D_800C2DD0_de;
+extern float D_800C7EC0;
 
 struct func_8022D960_S3;
 /* unbake published declaration: published_619f146f723d9ca85d01f708 */
@@ -161,7 +161,7 @@ typedef struct func_8022E0A0_S2 func_8022E0A0_S2;
 extern void func_8022DA84_de(void *arg0);
 
 /* unbake published declaration: published_6f385c9ac85296de17e4ccf8 */
-extern float D_800C2E20_de;
+extern float D_800C7F10;
 
 struct func_8022E0A0_S4;
 /* unbake published declaration: published_76f3def6054f5b9e5fccbd7b */
@@ -334,7 +334,7 @@ typedef struct func_8022D960_S3 func_8022D960_S3;
 extern void func_8022E940_de(void);
 
 /* unbake published declaration: published_9b60a162c1141c168b4f15b4 */
-extern float D_800C2DF0_de;
+extern float D_800C7EE0;
 
 /* unbake published declaration: published_a2637c19db2f1e6549dd5d49 */
 extern void func_8022DA04_de(void *arg0);
@@ -498,7 +498,7 @@ struct func_80204468_S3;
 extern s32 func_8022E130_de(struct func_80204468_S3 *object);
 
 /* unbake published declaration: published_de1cddb2abad2fe21366f4af */
-extern float D_800C2DD8_de;
+extern float D_800C7EC8;
 
 struct func_8022DE48_S4;
 /* unbake published declaration: published_de556c1928ed744da94cd039 */
@@ -548,7 +548,7 @@ typedef struct func_8022E0A0_S1 func_8022E0A0_S1;
 extern void func_8022DD94_de(void *arg0);
 
 /* unbake published declaration: published_f428593997a24e7840b1e3ec */
-extern float D_800C2E04_de;
+extern float D_800C7EF4;
 
 struct func_8022D9F4_S1;
 /* unbake published declaration: published_f69a0e65609be75ddc32a4b9 */

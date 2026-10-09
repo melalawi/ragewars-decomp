@@ -6,9 +6,9 @@
    D_800E2830 points to, asked with zero. */
 
 
-extern struct Field_void_4 *D_800DE7E0;
+extern struct Field_void_4 *D_800E2830;
 extern s32 *func_8028FDB4_de(void *, s32);
 
 s32 func_80403A64_de(void) {
-    return *func_8028FDB4_de(D_800DE7E0->value, 0);
+    return *func_8028FDB4_de(D_800E2830->value, 0);
 }

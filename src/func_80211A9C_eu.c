@@ -11,8 +11,8 @@
 
 
 
-extern s32 D_800CD72C;
-extern char D_801372A4[];
+extern s32 D_800D297C;
+extern char D_8013B364[];
 
 extern void func_80211020_de(CloseAttackBrain *);
 extern s32 func_802099B4_de(CloseAttackBrain *, CloseAttackActor *);
@@ -43,7 +43,7 @@ void func_80211A9C_eu(CloseAttackActor *actor) {
     brain = actor->self->brain;
     func_80211020_de(brain);
     player = brain->target;
-    routes = D_801372A4;
+    routes = D_8013B364;
     if (player != 0) {
         if (!(brain->frames & 3)) {
             brain->visible = func_802099B4_de(brain, player);
@@ -90,7 +90,7 @@ void func_80211A9C_eu(CloseAttackActor *actor) {
 fwd:
                 dir = func_80210EFC_de(brain->player->yaw - 3.1415927f);
                 player = brain->player;
-                if ((player->slot % 2) == D_800CD72C) {
+                if ((player->slot % 2) == D_800D297C) {
                     func_80210964_de(player, dir);
                 }
                 if (!(brain->walk[dir] < 100.0f)) {
@@ -112,7 +112,7 @@ back_test:
 back:
                     dir = func_80210EFC_de(brain->player->yaw);
                     player = brain->player;
-                    if ((player->slot % 2) == D_800CD72C) {
+                    if ((player->slot % 2) == D_800D297C) {
                         func_80210964_de(player, dir);
                     }
                     if (!(brain->walk[dir] < 100.0f)) {
@@ -129,7 +129,7 @@ stop:
             if (pattern == 0) {
                 dir = func_80210EFC_de((brain->player->yaw - 3.1415927f) - 1.5707964f);
                 player = brain->player;
-                if ((player->slot % 2) == D_800CD72C) {
+                if ((player->slot % 2) == D_800D297C) {
                     func_80210964_de(player, dir);
                 }
                 if (!(brain->walk[dir] < 100.0f)) {
@@ -140,7 +140,7 @@ stop:
             } else if (pattern == 1) {
                 dir = func_80210EFC_de((brain->player->yaw - 3.1415927f) + 1.5707964f);
                 player = brain->player;
-                if ((player->slot % 2) == D_800CD72C) {
+                if ((player->slot % 2) == D_800D297C) {
                     func_80210964_de(player, dir);
                 }
                 if (brain->walk[dir] < 100.0f) {

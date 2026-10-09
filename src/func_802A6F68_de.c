@@ -138,7 +138,7 @@ extern void func_802A001C_de(char *dst, s32 value, s32 size);
 extern char D_800CDD10;
 extern s32 D_801470B0;
 extern char D_8010BC40;
-extern char D_80142208_de;
+extern char D_801462C8;
 extern char D_800F91F0;
 extern char D_800F41F0;
 extern s32 D_800E4000;
@@ -158,7 +158,7 @@ static inline s32 is_restorable(u32 address) {
     if (address >= (u32)&D_8010BC40 && address < (u32)&D_8010BC40 + 0x430) {
         return 0;
     }
-    if (address >= (u32)&D_80142208_de && address < (u32)&D_80142208_de + 0x584) {
+    if (address >= (u32)&D_801462C8 && address < (u32)&D_801462C8 + 0x584) {
         return 0;
     }
     if (address >= (u32)&D_800F91F0 && address < (u32)&D_800F91F0 + 0x5800) {
@@ -167,7 +167,7 @@ static inline s32 is_restorable(u32 address) {
     if (address >= (u32)&D_800F41F0 && address < (u32)&D_800F41F0 + 0x5000) {
         return 0;
     }
-    if (address >= (u32)&D_80142208_de + 0x5D8 && address <= (u32)&D_80142208_de + 0x688) {
+    if (address >= (u32)&D_801462C8 + 0x5D8 && address <= (u32)&D_801462C8 + 0x688) {
         return 0;
     }
     return 1;
@@ -214,14 +214,14 @@ s32 func_802A71C0_de(void) {
 }
 void func_802A754C_de(void) {
 }
-/* Returns whether an address may be modified: never inside the 16-byte block D_800CDD10 or at the guard word D_801470B0, always when that guard word is set, and otherwise only outside the protected blocks D_8010BC40, D_80142208_de, D_800F91F0, D_800F41F0 and D_801427E0; func_802A7654_de that follows is an empty function. */
+/* Returns whether an address may be modified: never inside the 16-byte block D_800CDD10 or at the guard word D_801470B0, always when that guard word is set, and otherwise only outside the protected blocks D_8010BC40, D_801462C8, D_800F91F0, D_800F41F0 and D_801468A0; func_802A7654_de that follows is an empty function. */
 extern char D_800CDD10;
 extern s32 D_801470B0;
 extern char D_8010BC40;
-extern char D_80142208_de;
+extern char D_801462C8;
 extern char D_800F91F0;
 extern char D_800F41F0;
-extern char D_801427E0;
+extern char D_801468A0;
 s32 func_802A7554_de(u32 address) {
     address |= 0x80000000;
     if (((address) >= (u32)&(D_800CDD10) && (address) < (u32)&(D_800CDD10) + (0x10)) || address == (u32)&D_801470B0) {
@@ -233,7 +233,7 @@ s32 func_802A7554_de(u32 address) {
     if (((address) >= (u32)&(D_8010BC40) && (address) < (u32)&(D_8010BC40) + (0x430))) {
         return 0;
     }
-    if (((address) >= (u32)&(D_80142208_de) && (address) < (u32)&(D_80142208_de) + (0x584))) {
+    if (((address) >= (u32)&(D_801462C8) && (address) < (u32)&(D_801462C8) + (0x584))) {
         return 0;
     }
     if (((address) >= (u32)&(D_800F91F0) && (address) < (u32)&(D_800F91F0) + (0x5800))) {
@@ -242,7 +242,7 @@ s32 func_802A7554_de(u32 address) {
     if (((address) >= (u32)&(D_800F41F0) && (address) < (u32)&(D_800F41F0) + (0x5000))) {
         return 0;
     }
-    if (address >= (u32)&D_801427E0 && address <= (u32)&D_801427E0 + 0xB0) {
+    if (address >= (u32)&D_801468A0 && address <= (u32)&D_801468A0 + 0xB0) {
         return 0;
     }
     return 1;

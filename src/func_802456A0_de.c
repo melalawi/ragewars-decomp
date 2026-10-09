@@ -6,7 +6,7 @@ extern int func_80245784_de(void);
 extern void func_80245B74_de(s32 arg0);
 extern void func_80245BC0_de(void);
 extern void func_80253838_de(void *, void *);
-extern void *D_800DE7E0;
+extern void *D_800E2830;
 
 
 
@@ -18,11 +18,11 @@ void func_802456A0_de(void) {
 
         func_80245B74_de(1);
         func_80245BC0_de();
-        temp_a1 = *(s32 *)D_800DE7E0;
+        temp_a1 = *(s32 *)D_800E2830;
         if (temp_a1 != 0) {
             func_80253838_de(0, temp_a1);
         }
-        record = D_800DE7E0;
+        record = D_800E2830;
         ((func_80245690_S1 *)(record))->unk0 = 0;
         ((func_80245690_S1 *)(record))->unk4 = 0;
         ((func_80245690_S1 *)(record))->unk38 = 0;

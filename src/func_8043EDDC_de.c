@@ -4,13 +4,13 @@
 
 /* When the timer D_801468B0 has run out, calls func_8044DD50_de on D_8011FAC0 and returns one;
    otherwise returns zero. */
-extern f32 D_801427F0;
-extern char D_8011BA00[];
+extern f32 D_801468B0;
+extern char D_8011FAC0[];
 extern void func_8044DD50_de(void *);
 
 s32 func_8043EDDC_de(void) {
-    if (D_801427F0 <= 0.0f) {
-        func_8044DD50_de(D_8011BA00);
+    if (D_801468B0 <= 0.0f) {
+        func_8044DD50_de(D_8011FAC0);
         return 1;
     }
     return 0;
@@ -20,12 +20,12 @@ s32 func_8043EDDC_de(void) {
    zero. */
 
 
-extern struct Field_f32_10 D_801427E0;
-extern f32 D_800CD738;
+extern struct Field_f32_10 D_801468A0;
+extern f32 D_800D2988;
 
 s32 func_8043EE24_de(void) {
-    struct Field_f32_10 *state = &D_801427E0;
-    f32 timer = state->value - D_800CD738;
+    struct Field_f32_10 *state = &D_801468A0;
+    f32 timer = state->value - D_800D2988;
 
     state->value = timer;
     if (timer < 0.0f) {

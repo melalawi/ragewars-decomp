@@ -24,9 +24,9 @@
 
 
 
-extern s32 D_8014D4CC;
-extern s32 D_800DE870;
-extern char D_8014155C[];
+extern s32 D_8015375C;
+extern s32 D_800E28C0;
+extern char D_8014561C[];
 extern char D_0044FB50[];
 extern char D_0044EA2C[];
 extern char D_0044ED44[];
@@ -45,15 +45,15 @@ void func_804066BC_de(Menu_func_804066BC_de *menu) {
 
     D_8014D4C0_de = 0;
     D_8014D4DC = 0;
-    D_8014D4D0 = 1;
+    D_80153760 = 1;
     D_8014D4EC_de = 1;
     D_800DE874 = 1;
-    D_8014D4F4 = 0;
-    D_8014D4CC = 0;
+    D_80153784 = 0;
+    D_8015375C = 0;
     menu->owner->flags &= ~0x01000000;
     ch = menu->slot->unk4;
-    if (D_800DE870 != 0) {
-        D_8014D4F4 = 1;
+    if (D_800E28C0 != 0) {
+        D_80153784 = 1;
         func_80442574_de(menu->player->unk5DC + 0x554, D_0044FB50, menu->player, menu->slot, 0);
         return;
     }
@@ -62,13 +62,13 @@ void func_804066BC_de(Menu_func_804066BC_de *menu) {
         func_80405F48_de(menu);
         return;
     }
-    D_8014D4F4 = 1;
+    D_80153784 = 1;
     if (func_80404F3C_de(ch) != 0) {
-        func_80442574_de(D_8014155C, D_0044EA2C, menu->player, menu->slot, D_0044FB50);
+        func_80442574_de(D_8014561C, D_0044EA2C, menu->player, menu->slot, D_0044FB50);
     } else if (func_80405598_de(ch) != 0) {
-        func_80442574_de(D_8014155C, D_0044ED44, menu->player, menu->slot, D_0044E468);
+        func_80442574_de(D_8014561C, D_0044ED44, menu->player, menu->slot, D_0044E468);
     } else {
-        func_80442574_de(D_8014155C, D_0044E9C0, menu->player, menu->slot, D_0044FB50);
+        func_80442574_de(D_8014561C, D_0044E9C0, menu->player, menu->slot, D_0044FB50);
     }
 }
 
@@ -94,7 +94,7 @@ extern u8 D_80152789;
 #endif
 
 
-extern s32 D_8011BE0C;
+extern s32 D_8011FECC;
 
 extern s32 func_80405338_de(s32 ch, s32 index, u8 **state);
 extern void func_80405648_de(u8 *state, u8 *name, s32 size);
@@ -151,11 +151,11 @@ check:
         *bestScore = 123;
         return 1;
     }
-    result = func_80405160_de(D_800DE878, &freeSpace);
+    result = func_80405160_de(D_800E28C8, &freeSpace);
     if (result == 0) {
-        result = func_804050CC_de(D_800DE878, &noteCount);
+        result = func_804050CC_de(D_800E28C8, &noteCount);
         if (result == 0) {
-            need = func_804057EC_de(D_8011BE0C + 0x610);
+            need = func_804057EC_de(D_8011FECC + 0x610);
             if (noteCount == 0 || freeSpace < need) {
                 if (*bestScore < need) {
                     *bestScore = need;

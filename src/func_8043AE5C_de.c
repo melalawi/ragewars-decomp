@@ -3,10 +3,10 @@
 #include "span_16E000/code_8043A0A4.h"
 #include "types.h"
 
-extern struct Screen_func_8043B0CC_de *D_800E1990;
-extern struct Shape_typemap_165 D_800E1AF4_de[];
-extern HudStatusShared_Settings D_80142208_de;
-extern Record_func_80433914_de D_800FEB00[];
+extern struct Screen_func_8043B0CC_de *D_800E59E0;
+extern struct Shape_typemap_165 D_800E5B44[];
+extern HudStatusShared_Settings D_801462C8;
+extern Record_func_80433914_de D_80102B00[];
 extern s32 func_8022F4DC_de(s32 record, s32 item);
 extern void func_8043B49C_de(s32 player, s32 category, s32 choice);
 
@@ -20,11 +20,11 @@ void func_8043AE5C_de(s32 player, s32 step) {
     s32 valid;
     s32 i;
 
-    if (D_800E1990->entries[player].mode == 2) {
+    if (D_800E59E0->entries[player].mode == 2) {
         count = 0;
         low = 0;
         high = 0;
-        category = D_800E1990->entries[player].column;
+        category = D_800E59E0->entries[player].column;
         switch (category) {
         case 0:
         case 1:
@@ -46,7 +46,7 @@ void func_8043AE5C_de(s32 player, s32 step) {
         case 5:
             return;
         }
-        value = D_800E1990->entries[player].values[category];
+        value = D_800E59E0->entries[player].values[category];
         value += step;
         do {
             if (value >= count) {
@@ -60,20 +60,20 @@ void func_8043AE5C_de(s32 player, s32 step) {
                 if (valid != 1) {
                     break;
                 }
-                if (D_800E1990->entries[player].values[i] == value) {
+                if (D_800E59E0->entries[player].values[i] == value) {
                     value += step;
                     valid = 0;
                 }
             }
             if (valid == 1 && (category == 2 || category == 3) &&
-                D_800E1AF4_de[value].field_8 == 15 &&
-                !(D_80142208_de.flags & 0x10000000) &&
-                !func_8022F4DC_de((s32)&D_800FEB00[player], 15)) {
+                D_800E5B44[value].field_8 == 15 &&
+                !(D_801462C8.flags & 0x10000000) &&
+                !func_8022F4DC_de((s32)&D_80102B00[player], 15)) {
                 value += step;
                 valid = 0;
             }
         } while (!valid);
         func_8043B49C_de(player, category, value);
-        D_800E1990->entries[player].values[category] = value;
+        D_800E59E0->entries[player].values[category] = value;
     }
 }

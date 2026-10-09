@@ -53,7 +53,7 @@ struct func_80258D44_S1 {
 };
 
 /* unbake published declaration: published_2ab654ceb32ee278688eacb9 */
-extern float D_800C3EF0_de;
+extern float D_800C8FE0;
 
 struct func_80258D3C_S1;
 /* unbake published declaration: published_33ddb2c321cc387f0e8cadfd */
@@ -294,6 +294,6 @@ struct func_80258A9C_S1 {
 };
 
 /* unbake published declaration: published_ff8a246cca12595013e88ed8 */
-extern float D_800C3EF4_de;
+extern float D_800C8FE4;
 
 #endif

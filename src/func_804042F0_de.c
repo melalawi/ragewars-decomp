@@ -55,12 +55,12 @@ s32 func_804042F0_de(s32 ch, s32 size, void *data, u8 *game_name, s32 *file_no, 
     OSPfs_func_80403E90_de *pfs;
     s32 offset;
 
-    if (D_8014D260[ch] != 3) {
+    if (D_801534F0[ch] != 3) {
         return -2;
     }
     func_802644FC_de(1);
     func_80263740_de();
-    result = D_8014D270[ch];
+    result = D_80153500[ch];
     D_8010BBB8 = 2;
     if (result == 0) {
         func_804042F0_encode(ext, ext_name, 4);

@@ -11,9 +11,9 @@ extern s32 func_802301F4_de(void *, void *);
 extern s32 func_80214178_de(void *, void *, s32);
 
 
-extern WeaponActionRecord D_800C9698[];
+extern WeaponActionRecord D_800CE8DC[];
 extern char D_8011D8D0;
-extern s32 D_80142834;
+extern s32 D_801468F4;
 
 
 
@@ -27,11 +27,11 @@ void func_80233438_de(void *arg0, void *arg1) {
 
     actor = ((func_80232FE8_S1 *)(arg0))->unk1D8;
     idx = ((ObjectLinks11DC *)(actor))->unk_650;
-    value = D_800C9698[idx].action;
+    value = D_800CE8DC[idx].action;
 
     if (((ObjectLinks11DC *)(actor))->unk_11D8 <= 0.0f) {
         if ((((struct func_8020EA10_S3 *) ((ObjectLinks11DC *) actor)->unk_5D8)->unk8F == 0 ||
-             D_80142834 == 0) &&
+             D_801468F4 == 0) &&
             (((ObjectLinks11DC *)(actor))->unk_6AC & 0x4000)) {
             func_8022B190_de(actor);
         }

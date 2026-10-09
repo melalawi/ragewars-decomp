@@ -12,7 +12,7 @@ extern s32 func_8041B0C0_de(void *, s32, s32, s32, s32);
  * ROM stores callbacks with their KSEG0 bias removed; retain that
  * encoding through symbolic callback relocations.
  * ROM E4000..E4054. */
-ResidentEventHandlerEntry D_800DF3B0[7] = {
+ResidentEventHandlerEntry D_800E3400[7] = {
     {3591, 30000, (ResidentEventHandler)((char *)func_8041AF40_de - 0x80000000U)},
     {15, 30000, (ResidentEventHandler)((char *)func_8041AF70_de - 0x80000000U)},
     {16, 30000, (ResidentEventHandler)((char *)func_8041AFA0_de - 0x80000000U)},

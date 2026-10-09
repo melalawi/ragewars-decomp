@@ -7,7 +7,7 @@
 
 
 
-extern Menu_func_8041DBCC_de *D_800DF540;
+extern Menu_func_8041DBCC_de *D_800E3590;
 extern void func_802A23C4_de(s32 mode);
 extern void func_80439B5C_de(char *model, s32 arg1, Vec3 scale, Vec3 position);
 extern void func_80439BE0_de(char *model, Vec3 rotation);
@@ -33,9 +33,9 @@ s32 func_8041DBCC_de(void) {
     position.x = 17.0f;
     position.y = -10.0f;
     position.z = -50.0f;
-    func_80439B5C_de(D_800DF540->model, 0, scale, position);
-    func_80439BE0_de(D_800DF540->model, rotation);
-    func_80439C30_de(D_800DF540->model, offset);
+    func_80439B5C_de(D_800E3590->model, 0, scale, position);
+    func_80439BE0_de(D_800E3590->model, rotation);
+    func_80439C30_de(D_800E3590->model, offset);
     func_8025DF34_de(0xE78);
     return 0;
 }

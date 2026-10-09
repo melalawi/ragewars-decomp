@@ -3,7 +3,7 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 /* unbake published declaration: published_11285859b1a0bf203f660253 */
-extern float D_800CBAD0;
+extern float D_800D0D10;
 
 struct Record_func_8025B758_de;
 /* unbake published declaration: published_483934e4e37f04a047815963 */
@@ -212,7 +212,7 @@ struct Obj_func_8025BDAC_de {
 extern f32 func_8025C2EC_de(u8 arg0, u8 arg1);
 
 /* unbake published declaration: published_4f8b815da50fb612ba3d4e90 */
-extern float D_800C3F54_de;
+extern float D_800C9044;
 
 struct Record_func_8025BA4C_de;
 /* unbake published declaration: published_50ff856006d28b9744556670 */
@@ -528,7 +528,7 @@ struct View_func_8025AE1C_de;
 typedef struct View_func_8025AE1C_de View_func_8025AE1C_de;
 
 /* unbake published declaration: published_f82a5270e2a1c8b58680cf67 */
-extern float D_800C3F58_de;
+extern float D_800C9048;
 
 struct Emitter;
 /* unbake published declaration: published_f94db4f00780b69e713d726e */

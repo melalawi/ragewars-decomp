@@ -3,10 +3,10 @@
 
 
 
-extern s8 D_800FEB0D[][400];
+extern s8 D_80102B0D[][400];
 extern s32 D_800FEB6C[][100];
 extern s32 D_800FEB74[][100];
-extern Rec_func_80424B90_de D_801422D8[];
+extern Rec_func_80424B90_de D_80146398[];
 
 /* Adds the current record's deltas to both running totals of each player still in play, capping each at 99999. */
 void func_80424B90_de(void) {
@@ -15,8 +15,8 @@ void func_80424B90_de(void) {
     Rec_func_80424B90_de *rec;
 
     for (i = 0; i < 4; i++) {
-        if (D_800FEB0D[i][0] >= 0) {
-            rec = &D_801422D8[i];
+        if (D_80102B0D[i][0] >= 0) {
+            rec = &D_80146398[i];
             v = D_800FEB6C[i][0] + rec->unk4;
             if (v > 99999) {
                 D_800FEB6C[i][0] = 99999;

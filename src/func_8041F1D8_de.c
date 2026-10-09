@@ -6,7 +6,7 @@
 
 
 
-extern struct Slot_func_8041F1D8_de D_800DFA00_de[];
+extern struct Slot_func_8041F1D8_de D_800E3A50[];
 
 s32 func_8041F1D8_de(s32 key) {
     s32 value = 0;
@@ -14,9 +14,9 @@ s32 func_8041F1D8_de(s32 key) {
     s32 i;
 
     for (i = 0; i < 17 && !found; i++) {
-        if (D_800DFA00_de[i].key == key) {
+        if (D_800E3A50[i].key == key) {
             found = 1;
-            value = D_800DFA00_de[i].value;
+            value = D_800E3A50[i].value;
         }
     }
     return value;

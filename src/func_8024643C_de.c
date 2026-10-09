@@ -12,7 +12,7 @@ typedef struct CollisionInfo CollisionInfo;
 
 
 
-extern char D_800FFFD0;
+extern char D_80103FD0;
 extern f32 func_8024D284_de(Instance8020CD74 *);
 extern s32 func_80243A90_de(Instance8020CD74 *, Vec3, CollisionInfo *);
 
@@ -32,7 +32,7 @@ s32 func_8024643C_de(Instance8020CD74 *arg0, Instance8020CD74 *arg1) {
     ((func_80216BF4_S1 *)(arg0))->unkC += func_8024D284_de(arg0) * scale;
     desired = ((Player *)(arg1))->pos;
     desired.y += func_8024D284_de(arg1) * scale;
-    collisions = func_80243A90_de(arg0, desired, &D_800FFFD0);
+    collisions = func_80243A90_de(arg0, desired, &D_80103FD0);
     *arg0 = saved;
 
     return collisions == 0;

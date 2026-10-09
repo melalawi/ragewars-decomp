@@ -21,9 +21,9 @@ extern u8 D_80152789;
 
 
 
-extern struct func_80204468_S3 *D_800DF970;
-extern struct TextEntry D_800DF7CC[][17];
-extern struct Request_func_8041E100_de D_8014DCF0[];
+extern struct func_80204468_S3 *D_800E39C0;
+extern struct TextEntry D_800E381C[][17];
+extern struct Request_func_8041E100_de D_80153F80[];
 extern void func_8029973C_de();
 extern s32 func_802999A0_de(s32);
 extern s32 func_8041EC44_de(s32, s32);
@@ -43,8 +43,8 @@ s32 func_8041E100_de(void *arg0, void *arg1, void *arg2, s32 event) {
     if (func_802999A0_de(0) == 0x16) {
         return 0;
     }
-    variant = D_8014DCF0[D_800DF970->unk14].variant;
-    model = func_8041EC44_de(variant, D_8014DCF0[D_800DF970->unk14].id);
+    variant = D_80153F80[D_800E39C0->unk14].variant;
+    model = func_8041EC44_de(variant, D_80153F80[D_800E39C0->unk14].id);
     do {
         variant--;
         if (variant < 0) {
@@ -54,19 +54,19 @@ s32 func_8041E100_de(void *arg0, void *arg1, void *arg2, s32 event) {
                 model = 16;
             }
         }
-        id = D_800DF7CC[variant][model].id;
+        id = D_800E381C[variant][model].id;
     } while (id == -1);
-    D_8014DCF0[D_800DF970->unk14].variant = variant;
-    D_8014DCF0[D_800DF970->unk14].id = id;
-    func_802A025C_de(D_8014DCF0[D_800DF970->unk14].name, 
+    D_80153F80[D_800E39C0->unk14].variant = variant;
+    D_80153F80[D_800E39C0->unk14].id = id;
+    func_802A025C_de(D_80153F80[D_800E39C0->unk14].name, 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-        D_800DF7CC[variant][id].text[D_80152789]
+        D_800E381C[variant][id].text[D_80152789]
 #else
-        *D_800DF7CC[variant][id].text
+        *D_800E381C[variant][id].text
 #endif
     );
-    D_8014DCF0[D_800DF970->unk14].variantC = variant;
-    func_8041E408_de(D_800DF970->unk14);
+    D_80153F80[D_800E39C0->unk14].variantC = variant;
+    func_8041E408_de(D_800E39C0->unk14);
     func_8025DF34_de(0xE81);
     return 0;
 }
@@ -89,9 +89,9 @@ extern u8 D_80152789;
 
 
 
-extern struct func_80204468_S3 *D_800DF970;
-extern struct TextEntry D_800DF7CC[][17];
-extern struct Request_func_8041E100_de D_8014DCF0[];
+extern struct func_80204468_S3 *D_800E39C0;
+extern struct TextEntry D_800E381C[][17];
+extern struct Request_func_8041E100_de D_80153F80[];
 extern void func_8029973C_de();
 extern s32 func_802999A0_de(s32);
 extern s32 func_8041EC44_de(s32, s32);
@@ -111,8 +111,8 @@ s32 func_8041E280_de(void *arg0, void *arg1, void *arg2, s32 event) {
     if (func_802999A0_de(0) == 0x16) {
         return 0;
     }
-    variant = D_8014DCF0[D_800DF970->unk14].variant;
-    model = func_8041EC44_de(variant, D_8014DCF0[D_800DF970->unk14].id);
+    variant = D_80153F80[D_800E39C0->unk14].variant;
+    model = func_8041EC44_de(variant, D_80153F80[D_800E39C0->unk14].id);
     do {
         variant++;
         if (variant >= 3) {
@@ -122,19 +122,19 @@ s32 func_8041E280_de(void *arg0, void *arg1, void *arg2, s32 event) {
                 model = 0;
             }
         }
-        id = D_800DF7CC[variant][model].id;
+        id = D_800E381C[variant][model].id;
     } while (id == -1);
-    D_8014DCF0[D_800DF970->unk14].variant = variant;
-    D_8014DCF0[D_800DF970->unk14].id = id;
-    func_802A025C_de(D_8014DCF0[D_800DF970->unk14].name, 
+    D_80153F80[D_800E39C0->unk14].variant = variant;
+    D_80153F80[D_800E39C0->unk14].id = id;
+    func_802A025C_de(D_80153F80[D_800E39C0->unk14].name, 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-        D_800DF7CC[variant][id].text[D_80152789]
+        D_800E381C[variant][id].text[D_80152789]
 #else
-        *D_800DF7CC[variant][id].text
+        *D_800E381C[variant][id].text
 #endif
     );
-    D_8014DCF0[D_800DF970->unk14].variantC = variant;
-    id = D_800DF970->unk14;
+    D_80153F80[D_800E39C0->unk14].variantC = variant;
+    id = D_800E39C0->unk14;
     func_8041E408_de(id);
     func_8025DF34_de(0xE81);
     return 0;

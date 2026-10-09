@@ -10,10 +10,10 @@
 
 
 
-extern func_80237E70_G1 D_800D2FFC;
+extern func_80237E70_G1 D_800D7028;
 
-extern func_80237E70_G1 D_800D3008;
-extern s32 D_800DE880_de;
+extern func_80237E70_G1 D_800D7034;
+extern s32 D_800E28D0;
 extern void func_80239CE0_de(Message *);
 extern void func_80255ED8_de(void *, Message *);
 extern void func_80255D14_de(void *, Message *);
@@ -52,8 +52,8 @@ static inline Message *post_lines(void *owner, void *pool, u8 *text, s32 kind, f
     if (pool == 0) {
         return message;
     }
-    if (text == D_800D3008.unk0) {
-        text = D_800D2FFC.unk0;
+    if (text == D_800D7034.unk0) {
+        text = D_800D7028.unk0;
     }
     p = text;
     line = p;
@@ -73,8 +73,8 @@ static inline Message *post_lines(void *owner, void *pool, u8 *text, s32 kind, f
                     message->pad2C = 0;
                     message->scaleX = 1.0f;
                     message->scaleY = 1.0f;
-                    height = (&D_800DE880_de)[1]; /* FAKEMATCH */
-                    message->x = D_800DE880_de / 2;
+                    height = (&D_800E28D0)[1]; /* FAKEMATCH */
+                    message->x = D_800E28D0 / 2;
                     message->y = height - 80;
                     message->size = size * 15.0f;
                 }

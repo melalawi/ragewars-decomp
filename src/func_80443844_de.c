@@ -12,13 +12,13 @@
 
 
 
-extern Sync D_801427E0;
+extern Sync D_801468A0;
 
-extern char D_8011BA00[];
+extern char D_8011FAC0[];
 extern void func_8044DD50_de(char *);
 
 int func_80443844_de(int unused, Player_func_80443844_de *player) {
-    Sync *sync = &D_801427E0;
+    Sync *sync = &D_801468A0;
     int team;
 
     if (sync->sync != 0) {
@@ -27,8 +27,8 @@ int func_80443844_de(int unused, Player_func_80443844_de *player) {
             sync->team = team;
         }
     }
-    if (D_80140FB0 == 1) {
-        func_8044DD50_de(D_8011BA00);
+    if (D_80145070 == 1) {
+        func_8044DD50_de(D_8011FAC0);
     } else {
         player->actor->waiting = 0;
     }

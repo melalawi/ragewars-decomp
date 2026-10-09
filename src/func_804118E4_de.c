@@ -10,25 +10,25 @@
 
 
 
-extern BufferPool D_8014D9B0;
-extern s32 D_800DEA74;
+extern BufferPool D_80153C40;
+extern s32 D_800E2AC4;
 
 extern void func_802547E4_de(void *buffer);
 
 void func_804118E4_de(s32 force) {
     s32 i;
 
-    for (i = 0; i < D_8014D9B0.count; i++) {
-        if (D_8014D9B0.primary[i].unk8 != 0 && (!(D_8014D9B0.flags[i] & 1) || force != 0)) {
-            D_8014D9B0.refs[i] = 1;
-            D_8014D9B0.refs[i]--;
-            if (D_8014D9B0.primary[i].unk8 != 0 && D_8014D9B0.refs[i] == 0) {
-                func_802547E4_de(D_8014D9B0.primary[i].unk8);
-                if (D_800DEA74 != 0 && D_8014D9B0.secondary != 0 &&
-                    D_8014D9B0.secondary[i].unk8 != 0) {
-                    func_802547E4_de(D_8014D9B0.secondary[i].unk8);
+    for (i = 0; i < D_80153C40.count; i++) {
+        if (D_80153C40.primary[i].unk8 != 0 && (!(D_80153C40.flags[i] & 1) || force != 0)) {
+            D_80153C40.refs[i] = 1;
+            D_80153C40.refs[i]--;
+            if (D_80153C40.primary[i].unk8 != 0 && D_80153C40.refs[i] == 0) {
+                func_802547E4_de(D_80153C40.primary[i].unk8);
+                if (D_800E2AC4 != 0 && D_80153C40.secondary != 0 &&
+                    D_80153C40.secondary[i].unk8 != 0) {
+                    func_802547E4_de(D_80153C40.secondary[i].unk8);
                 }
-                D_8014D9B0.primary[i].unk8 = 0;
+                D_80153C40.primary[i].unk8 = 0;
             }
         }
     }

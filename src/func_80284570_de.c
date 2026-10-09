@@ -28,7 +28,7 @@ void func_80284570_de(EffectSystem *arg0, Effect_func_802800C0_de *arg1) {
             }
             temp_a1 = arg1->unk138;
             if (temp_a1 != 0) {
-                func_80268C7C_de(&D_801370E8, temp_a1);
+                func_80268C7C_de(&D_8013B1A8, temp_a1);
                 arg1->unk138 = 0;
             }
             temp_v1 = arg1->refCount;

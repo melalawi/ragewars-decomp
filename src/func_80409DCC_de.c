@@ -9,13 +9,13 @@
 
 
 
-extern s32 D_80142CA0_de;
+extern s32 D_80146D60;
 
 
 s32 func_80409DCC_de(struct Record_func_80409DCC_de *record) {
-    if ((record->inner->unkB0 & 0x1000) && D_800DE87C_de == 0) {
-        D_80142CA0_de = 1;
-        D_800DE87C_de = 1;
+    if ((record->inner->unkB0 & 0x1000) && D_800E28CC == 0) {
+        D_80146D60 = 1;
+        D_800E28CC = 1;
     }
-    return D_80142CA0_de;
+    return D_80146D60;
 }

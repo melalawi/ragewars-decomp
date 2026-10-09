@@ -69,7 +69,7 @@ typedef struct func_8020A028_S2 func_8020A028_S2;
 extern float D_800C1C98_de;
 
 /* unbake published declaration: published_246136fd468e6ebfe4525c80 */
-extern float D_800C1D30_de;
+extern float D_800C6E20;
 
 struct Shared_WeaponSlot;
 /* unbake published declaration: published_25cb38c64fb82e850eea5330 */
@@ -311,7 +311,7 @@ struct func_8020A028_S2 {
 };
 
 /* unbake published declaration: published_850cd676717dfa7c2e61f09d */
-extern float D_800C1D14_de;
+extern float D_800C6E04;
 
 struct func_8020A6D8_S1;
 /* unbake published declaration: published_8988209ce8efd60996a4804c */
@@ -335,7 +335,7 @@ struct func_80209DAC_S3 {
 extern float D_800C1D20_de;
 
 /* unbake published declaration: published_8e3ef30916c09808d68dcdff */
-extern float D_800C1D10_de;
+extern float D_800C6E00;
 
 /* unbake published declaration: published_8ff7b39eeff9201fd98ade56 */
 extern float D_800C1C9C_de;
@@ -419,7 +419,7 @@ struct Controls;
 typedef struct Controls Controls;
 
 /* unbake published declaration: published_c612abff1e4c9f216e301a74 */
-extern float D_800C1D38_de;
+extern float D_800C6E28;
 
 struct func_8020A95C_S2;
 /* unbake published declaration: published_ca6542cd84eed5afd84cc316 */
@@ -500,7 +500,7 @@ typedef struct func_80209BE0_S3 func_80209BE0_S3;
 extern void func_8020A2D4_de(void *arg0, void *config);
 
 /* unbake published declaration: published_ea816cf7c1e1e90a946772bd */
-extern float D_800C1D18_de;
+extern float D_800C6E08;
 
 struct func_8020A884_S2;
 /* unbake published declaration: published_eb2cc2dad52f4a771ecd065f */

@@ -9,8 +9,8 @@
 
 
 
-extern s32 D_8011BDC8;
-extern u8 D_801422D8[];
+extern s32 D_8011FE88;
+extern u8 D_80146398[];
 extern struct Model *func_8028CFA0_de(void *, s32, s32);
 extern void func_8043B6E8_de(s32);
 
@@ -23,7 +23,7 @@ void func_8043B96C_de(void) {
     u8 *entry;
 
     for (player = 0; player < 4; player++) {
-        record = &D_801422D8[player * 150];
+        record = &D_80146398[player * 150];
         i = 0x15;
         entry = record + 0x15;
         do {
@@ -32,7 +32,7 @@ void func_8043B96C_de(void) {
             entry -= 1;
         } while (i >= 0);
         if (record[0x78] == 1) {
-            model = func_8028CFA0_de(&D_8011BDC8, 0xB, (s8) record[0x80]);
+            model = func_8028CFA0_de(&D_8011FE88, 0xB, (s8) record[0x80]);
             for (i = 0; i < 8; i++) {
                 id = model->slots[i];
                 if (id >= 0x4C3) {

@@ -12,7 +12,7 @@
 
 
 
-extern Gfx *D_8010C574;
+extern Gfx *D_80110634;
 extern Texture *D_800DF254;
 
 void func_80419278_de(s32 left, s32 top, s32 right, s32 bottom, f32 u0, f32 v0, f32 u1, f32 v1) {
@@ -31,11 +31,11 @@ void func_80419278_de(s32 left, s32 top, s32 right, s32 bottom, f32 u0, f32 v0, 
     scaleV = D_800DF254->height << 10;
     dtdy = (s32)((v1 - v0) * scaleV) / (bottom - top + 1);
     {
-        Gfx *cmd = D_8010C574++;
+        Gfx *cmd = D_80110634++;
         gDPTexRect(cmd, left * 4, top * 4, (right + 1) * 4, (bottom + 1) * 4, 0);
     }
     startS = u0 * scaleU;
     startT = v0 * scaleV;
-    gDPHalf1(D_8010C574++, ((startS >> 5) << 16) | ((startT >> 5) & 0xFFFF));
-    gDPHalf2(D_8010C574++, (dsdx << 16) | (dtdy & 0xFFFF));
+    gDPHalf1(D_80110634++, ((startS >> 5) << 16) | ((startT >> 5) & 0xFFFF));
+    gDPHalf2(D_80110634++, (dsdx << 16) | (dtdy & 0xFFFF));
 }

@@ -7,8 +7,8 @@
 /* Uses the fixed option text while the mode flag is set. Otherwise formats
  * one more than the holder's signed option byte into the editable text,
  * one byte before the length returned by the item text helper. */
-extern s32 D_8014D4CC;
-extern u8 *D_800D3DE8[];
+extern s32 D_8015375C;
+extern u8 *D_800D7E14[];
 extern char D_800DCD7C[];
 extern s32 func_80441FE8_de(Item_func_80441FE8_de *);
 extern void func_802658E4_de(char *, char *, s32);
@@ -17,8 +17,8 @@ extern void func_802658E4_de(char *, char *, s32);
 s32 func_8040A300_de(Item_func_80441FE8_de *field, struct Record_func_80409BDC_de *holder) {
     char *text;
     s32 value;
-    if (D_8014D4CC != 0) {
-        field->text = D_800D3DE8;
+    if (D_8015375C != 0) {
+        field->text = D_800D7E14;
     } else {
         value = holder->inner->unk4;
         field->text = (u8 **)&D_800D36E4;

@@ -15,7 +15,7 @@
 
 
 extern Queue_func_8025CC90_de D_80108064[];
-extern func_80203E78_S1 *D_800CBB38;
+extern func_80203E78_S1 *D_800D0D78;
 
 extern void func_80258740_de(Bank *);
 extern void func_802587A4_de(Bank *);
@@ -69,7 +69,7 @@ void func_8025CC90_de(Player_func_8025CC90_de *player) {
             player->volume = header->volume;
             sequence = func_8028FDB4_de(player->bank->songs, index | 1);
             ((void **)D_80108064)[-1] = sequence;
-            D_800CBB38->unk4 = func_802C00B0_de(sequence, 0x5622, &rate);
+            D_800D0D78->unk4 = func_802C00B0_de(sequence, 0x5622, &rate);
             player->state = 3;
             func_802B2F00_de(channel, player->id);
             func_802B2E80_de(channel, rate * 4.5351473e-05f);

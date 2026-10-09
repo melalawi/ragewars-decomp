@@ -3,7 +3,7 @@
 #include "span_1000/code_802A6AC0.h"
 #include "types.h"
 
-extern s32 D_800CD72C;
+extern s32 D_800D297C;
 
 
 
@@ -41,14 +41,14 @@ void func_802A6174_de(void *arg0, void *arg1) {
     if (entry != 0) {
         if (entry == (void *)-1) {
             cursor = (u8 *)arg1;
-            dst_cursor = cursor + (D_800CD72C << 6) + 0x28;
+            dst_cursor = cursor + (D_800D297C << 6) + 0x28;
             dst = (UnitMtx *)dst_cursor;
-            src_cursor = cursor + ((D_800CD72C ^ 1) << 6) + 0x28;
+            src_cursor = cursor + ((D_800D297C ^ 1) << 6) + 0x28;
             src = (UnitMtx *)src_cursor;
             *dst = *src;
             ((func_802A7164_S1 *)(arg1))->unkB0 = 0;
         } else {
-            func_80270910_de(local, entry + ((D_800CD72C << 6) + 0x60));
+            func_80270910_de(local, entry + ((D_800D297C << 6) + 0x60));
             scale = D_800C5EB8_de;
             if (((func_80204468_S3 *)(((func_802A68A0_S3 *)(entry))->unk118))->unk14 != 0) {
                 scale = D_800C5EBC_de;
@@ -59,7 +59,7 @@ void func_802A6174_de(void *arg0, void *arg1) {
             if (((func_802A7164_S4 *)(arg0))->unk3C & 4) {
                 func_802732EC_de(local, &((func_802A7164_S1 *)(arg1))->unk1C);
             } else {
-                func_8027027C_de(local, arg1 + ((D_800CD72C << 6) + 0x28));
+                func_8027027C_de(local, arg1 + ((D_800D297C << 6) + 0x28));
             }
         }
         ((func_802A7164_S1 *)(arg1))->unk8 = ((func_80212828_S7 *)(((func_802A7164_S4 *)(arg0))->unk8))->unk8;

@@ -10,21 +10,21 @@
 
 
 
-extern struct Saved D_8014D4A8_de;
+extern struct Saved D_80153738;
 
 void func_804099EC_de(struct Owner_func_804099EC_de *owner) {
     struct Profile_func_80408C4C_de *settings = owner->settings;
     s32 i;
 
-    D_8014D4A8_de.flag = settings->flags;
-    D_8014D4A8_de.values[0] = settings->words[0];
-    D_8014D4A8_de.values[1] = settings->words[1];
-    D_8014D4A8_de.values[2] = settings->words[2];
-    D_8014D4A8_de.values[3] = settings->words[3];
-    D_8014D4A8_de.pad[0] = 0;
-    D_8014D4A8_de.pad[1] = 0;
-    D_8014D4A8_de.pad[2] = 0;
+    D_80153738.flag = settings->flags;
+    D_80153738.values[0] = settings->words[0];
+    D_80153738.values[1] = settings->words[1];
+    D_80153738.values[2] = settings->words[2];
+    D_80153738.values[3] = settings->words[3];
+    D_80153738.pad[0] = 0;
+    D_80153738.pad[1] = 0;
+    D_80153738.pad[2] = 0;
     for (i = 0; i < 8; i++) {
-        D_8014D4A8_de.bytes[i] = settings->name[i];
+        D_80153738.bytes[i] = settings->name[i];
     }
 }

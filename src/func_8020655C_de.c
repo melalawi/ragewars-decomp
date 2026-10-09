@@ -3,7 +3,7 @@
 #include "types.h"
 
 
-extern char D_80140F80;
+extern char D_80145040;
 extern void *func_8022A8F0_de(void *arg0);
 
 
@@ -20,7 +20,7 @@ s32 func_8020655C_de(s32 arg0) {
             }
             node = ((func_8020655C_S1 *)(node))->unk2EC;
         }
-        return func_8022A8F0_de(&D_80140F80) == 0;
+        return func_8022A8F0_de(&D_80145040) == 0;
     }
     return 1;
 }

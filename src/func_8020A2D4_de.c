@@ -40,7 +40,7 @@ void func_8020A2D4_de(void *arg0, void *config) {
     f32 scale;
 
     if (((ObjectLinks2EC *)(arg0))->unk_2E4 > 0) {
-        scale = D_800C1D10_de;
+        scale = D_800C6E00;
         ((ObjectLinks2EC *)(arg0))->unk_2E8 = ((IntegerState2C *)(config))->unk_8;
         ((ObjectLinks2EC *)(arg0))->unk_2E8 =
             (f32) ((ObjectLinks2EC *)(arg0))->unk_2E8
@@ -58,7 +58,7 @@ void func_8020A2D4_de(void *arg0, void *config) {
             return;
         }
         ((ObjectLinks2EC *)(arg0))->unk_2E4 = -1;
-        scale = D_800C1D14_de;
+        scale = D_800C6E04;
         ((ObjectLinks2EC *)(arg0))->unk_2E8 = ((IntegerState2C *)(config))->unk_24;
         ((ObjectLinks2EC *)(arg0))->unk_2E8 =
             (f32) ((ObjectLinks2EC *)(arg0))->unk_2E8
@@ -68,7 +68,7 @@ void func_8020A2D4_de(void *arg0, void *config) {
     ((ObjectLinks2EC *)(arg0))->unk_2E8 -= 1;
     target = ((struct func_8028FFB0_S3 *) ((ObjectLinks2EC *) arg0)->unk_64)->unk1D8;
     func_80284FF4_de(&D_8011D8D0, *(void **) arg0, &pos);
-    range = D_800C1D18_de;
+    range = D_800C6E08;
     pos.y = ((func_80216BF4_S1 *)(target))->unkC;
     if (func_802726BC_de(&pos, &((Player *)(target))->pos) < range) {
         ((ObjectLinks2EC *)(arg0))->unk_2E8 = 0;

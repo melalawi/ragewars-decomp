@@ -67,7 +67,7 @@ struct State_func_80428214_de {
 };
 
 /* unbake published declaration: published_26670d5349bc08716bb597a8 */
-extern u8 D_80142215;
+extern u8 D_801462D5;
 
 struct Screen_func_80427008_de;
 /* unbake published declaration: published_2d1f78b4842425902f29424c */

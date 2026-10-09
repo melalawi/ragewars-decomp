@@ -11,8 +11,8 @@
 
 
 
-extern struct Globals_func_80427D70_de D_80142208_de;
-extern struct Screen_func_80427D70_de *D_800E0640_de;
+extern struct Globals_func_80427D70_de D_801462C8;
+extern struct Screen_func_80427D70_de *D_800E4690;
 extern s8 D_80142358[];
 extern struct Table_func_80427D70_de *func_80425C70_de(void *, s32, s32);
 extern s32 func_80265650_de(u8 *, s32);
@@ -26,11 +26,11 @@ void func_80427D70_de(void *arg0) {
     s32 value;
     s32 i;
 
-    category=(unsigned int)&D_80142208_de;
+    category=(unsigned int)&D_801462C8;
     globals=(struct Globals_func_80427D70_de *)category;
     switch (globals->mode) {
     case 1:
-        kind = globals->status[D_800E0640_de->player].kind;
+        kind = globals->status[D_800E4690->player].kind;
         category = 0;
         break;
     case 2:
@@ -46,7 +46,7 @@ void func_80427D70_de(void *arg0) {
         kind = 0;
         break;
     default:
-        kind = D_80142358[D_800E0640_de->player * 150];
+        kind = D_80142358[D_800E4690->player * 150];
         table = func_80425C70_de(arg0,0,kind);
         goto selected;
         break;
@@ -55,15 +55,15 @@ void func_80427D70_de(void *arg0) {
 selected:
     if ((value = table->first) > 0) {
         
-        if (func_80265650_de(D_800E0640_de->owned, value-1) == 0) {
-            func_80265688_de(D_800E0640_de->unlocked, value-1, 1);
+        if (func_80265650_de(D_800E4690->owned, value-1) == 0) {
+            func_80265688_de(D_800E4690->unlocked, value-1, 1);
         }
     }
     for (i = 0; i < 3; i++) {
         if ((value = table->items[i]) > 0) {
             
-            if (func_80265650_de(D_800E0640_de->owned, value-1) == 0) {
-                func_80265688_de(D_800E0640_de->unlocked, value-1, 1);
+            if (func_80265650_de(D_800E4690->owned, value-1) == 0) {
+                func_80265688_de(D_800E4690->unlocked, value-1, 1);
             }
         }
     }

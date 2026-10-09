@@ -15,11 +15,11 @@
 
 
 
-extern struct Screen_func_8043B6E8_de *D_800E1990;
-extern u8 D_801422D8[];
-extern struct Shape_typemap_165 D_800E1B74[];
-extern struct Shape_typemap_165 D_800E1AC4_de[];
-extern struct Shape_typemap_165 D_800E1AF4_de[];
+extern struct Screen_func_8043B6E8_de *D_800E59E0;
+extern u8 D_80146398[];
+extern struct Shape_typemap_165 D_800E5BC4[];
+extern struct Shape_typemap_165 D_800E5B14[];
+extern struct Shape_typemap_165 D_800E5B44[];
 
 void func_8043B6E8_de(s32 player) {
     struct Shape_typemap_165 *source;
@@ -29,25 +29,25 @@ void func_8043B6E8_de(s32 player) {
     s32 slot;
     s32 i;
 
-    if (D_800E1990->entries[player].mode == 0) {
+    if (D_800E59E0->entries[player].mode == 0) {
         return;
     }
-    record = &D_801422D8[player * 150];
+    record = &D_80146398[player * 150];
     for (column = 0; column < 8; column++) {
-        if (D_800E1990->entries[player].mode == 1) {
+        if (D_800E59E0->entries[player].mode == 1) {
             switch (column) {
             case 1:
-                source = D_800E1B74;
+                source = D_800E5BC4;
                 count = 4;
                 slot = 0;
                 break;
             case 4:
-                source = D_800E1AC4_de;
+                source = D_800E5B14;
                 count = 3;
                 slot = 2;
                 break;
             case 5:
-                source = D_800E1AF4_de;
+                source = D_800E5B44;
                 count = 8;
                 slot = 1;
                 break;
@@ -57,17 +57,17 @@ void func_8043B6E8_de(s32 player) {
         } else {
             switch (column) {
             case 1:
-                source = D_800E1B74;
+                source = D_800E5BC4;
                 count = 4;
                 slot = 0;
                 break;
             case 4:
-                source = D_800E1AC4_de;
+                source = D_800E5B14;
                 count = 3;
                 slot = 4;
                 break;
             case 5:
-                source = D_800E1AF4_de;
+                source = D_800E5B44;
                 count = 8;
                 slot = 2;
                 break;
@@ -77,7 +77,7 @@ void func_8043B6E8_de(s32 player) {
         }
         for (i = 0; i < count; i++) {
             if ((record + source[i].field_8)[0x4C] == 1) {
-                D_800E1990->entries[player].values[slot++] = i;
+                D_800E59E0->entries[player].values[slot++] = i;
             }
         }
     }

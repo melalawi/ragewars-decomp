@@ -20,7 +20,7 @@ void func_80239DE8_de(struct Record_func_80239DE8_de *record, f32 first, f32 sec
     record->channels[0].mode = mode;
     record->channels[1].mode = mode;
     record->channels[2].mode = mode;
-    record->channels[0].level = first * D_800C3574_de;
-    record->channels[1].level = second * D_800C3574_de;
-    record->channels[2].level = third * D_800C3574_de;
+    record->channels[0].level = first * D_800C8664;
+    record->channels[1].level = second * D_800C8664;
+    record->channels[2].level = third * D_800C8664;
 }

@@ -8,8 +8,8 @@
 extern u8 D_800CBC10;
 extern s32 D_800CBC1C;
 extern s8 D_8010BBB8;
-extern char D_8010BBC0;
-extern char D_8010BC00;
+extern char D_8010FBC0;
+extern char D_8010FC00;
 extern s32 func_802BB2A0_de(void *, void *, s32);
 extern s32 func_802BB420_de(void *, void *, s32);
 extern s32 func_802BAD80_de(void *);
@@ -36,7 +36,7 @@ void func_80264248_de(Shape *arg0) {
     char *o=(char *)address;
 
     if (D_800CBC10 != 0 && *(s32 *)address != 0) {
-        if (func_802BB2A0_de(&D_8010BBC0, 0, 1) == 0) {
+        if (func_802BB2A0_de(&D_8010FBC0, 0, 1) == 0) {
             D_800CBC1C = func_802BAD80_de(0);
         }
         func_80263740_de();
@@ -45,7 +45,7 @@ void func_80264248_de(Shape *arg0) {
         ((func_80264268_S1 *)(o))->unkD0 = 0;
         ((func_80264268_S1 *)(o))->unkD4 = 0;
         func_80285AC4_de(o + 0x140, o + 0x16C, 3);
-        func_802B7FD8_de(&D_8010BC00, o + 0xD8, arg0->enabled);
+        func_802B7FD8_de(&D_8010FC00, o + 0xD8, arg0->enabled);
         
 #if defined(VERSION_EU)
 func_802B7EF0_eu
@@ -68,7 +68,7 @@ func_802B7B80_us
 func_802B7C50_de
 #endif
 ((char *)o + 0xD8);
-        if (func_802B7FD8_de(&D_8010BC00, o + 0xD8, arg0->enabled) == 0) {
+        if (func_802B7FD8_de(&D_8010FC00, o + 0xD8, arg0->enabled) == 0) {
             ((func_80264268_S1 *)(o))->unkC8 = 1;
         }
         D_8010BBB8 = 2;

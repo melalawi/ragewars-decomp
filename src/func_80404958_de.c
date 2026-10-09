@@ -42,7 +42,7 @@ static inline s32 func_80404958_read(s32 ch, s32 file_no, void *dst, s32 size) {
     void *buf;
 
     blocks = (size + 0xFF) & ~0xFF;
-    if (D_8014D260[ch] != 3) {
+    if (D_801534F0[ch] != 3) {
         return -2;
     }
     if (func_8025477C_de() == 0) {
@@ -52,7 +52,7 @@ static inline s32 func_80404958_read(s32 ch, s32 file_no, void *dst, s32 size) {
     buf = *handle;
     func_802644FC_de(1);
     func_80263740_de();
-    result = D_8014D270[ch];
+    result = D_80153500[ch];
     D_8010BBB8 = 2;
     if (result == 0) {
         if ((result = func_80447AF0_de(&D_8014D280[ch], file_no, 0, 0, blocks, buf)) != 0) {
@@ -79,7 +79,7 @@ s32 func_80404958_de(s32 ch, s32 size, void *data, u8 *name, u8 *ext, u8 *code) 
     s32 tries;
 
     blocks = (size + 0xFF) & ~0xFF;
-    if (D_8014D260[ch] != 3) {
+    if (D_801534F0[ch] != 3) {
         return -2;
     }
     handle = func_8025343C_de(0, blocks, 0x23, D_800DCCE8_de);

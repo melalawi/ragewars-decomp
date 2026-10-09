@@ -4,11 +4,11 @@
 
 
 
-extern func_802457D0_S1 *D_800DE7E0;
+extern func_802457D0_S1 *D_800E2830;
 
 s32 func_802457E0_de(void) {
-    if (D_800DE7E0->unk38 != 0) {
-        if (D_800DE7E0->unk1C > D_800DE7E0->unk34) {
+    if (D_800E2830->unk38 != 0) {
+        if (D_800E2830->unk1C > D_800E2830->unk34) {
             return 1;
         }
         return 0;

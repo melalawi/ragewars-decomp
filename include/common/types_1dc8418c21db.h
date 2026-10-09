@@ -864,7 +864,7 @@ struct func_80207B5C_S2;
 typedef struct func_80207B5C_S2 func_80207B5C_S2;
 
 /* unbake published declaration: published_24f68c327f52e802770c4b47 */
-extern int D_8010115C;
+extern int D_8010515C;
 
 struct Player_func_804356BC_de;
 /* unbake published declaration: published_bc2cc2d266fcdd8cb192b4b0 */
@@ -989,7 +989,7 @@ struct Field_s32_2E0;
 typedef struct Field_s32_2E0 Field_s32_2E0;
 
 /* unbake published declaration: published_2b9f5a9f73a212e4b16be6e4 */
-extern int D_8014287C;
+extern int D_8014693C;
 
 struct func_8028DA50_S1;
 /* unbake published declaration: published_2bb5518843eebf76cc756ef2 */
@@ -2804,7 +2804,7 @@ struct func_80207F90_S1 {
 };
 
 /* unbake published declaration: published_4044050f960d35044af6d1df */
-extern int D_80140F88;
+extern int D_80145048;
 
 struct func_802A2E5C_S2;
 /* unbake published declaration: published_4087c6f8ae324af8ffd0f478 */
@@ -3664,7 +3664,7 @@ struct UnitVtx {
 };
 
 /* unbake published declaration: published_75d7ba4c4e4a699fa2c757fa */
-extern int D_800CB6D0;
+extern int D_800D0910;
 
 struct func_80250DBC_S2;
 /* unbake published declaration: published_75d83d6a7673b3ff8b74b764 */
@@ -3696,7 +3696,7 @@ struct func_80264874_S1 {
 };
 
 /* unbake published declaration: published_78818960804290f7946a2b5e */
-extern unsigned char D_800CD72B;
+extern unsigned char D_800D297B;
 
 struct Instance8020CD74;
 /* unbake published declaration: published_79de00ac1f7d845d7b716705 */
@@ -4335,7 +4335,7 @@ struct func_8025CA44_S1 {
 };
 
 /* unbake published declaration: published_a5f18dd6ce967cceec610246 */
-extern int D_8014D260[];
+extern int D_801534F0[];
 
 struct HashNode;
 /* unbake published declaration: published_a69a794c2f0c47a1a6257b12 */
@@ -4888,7 +4888,7 @@ struct Table;
 typedef struct Table Table;
 
 /* unbake published declaration: published_d309d4bdc9e361884e9a47f2 */
-extern int D_8014D270[];
+extern int D_80153500[];
 
 struct func_8029A838_S1;
 /* unbake published declaration: published_d34d772a66aee81e1bbc3dac */
@@ -5306,7 +5306,7 @@ struct func_802428C0_S1 {
 };
 
 /* unbake published declaration: published_fe8c36e10b95641da3a6268c */
-extern int D_80140FB0;
+extern int D_80145070;
 
 struct PlayerRecord;
 /* unbake published declaration: published_ff0a79f54e2818908ae59912 */

@@ -9,7 +9,7 @@
 
 
 extern Group18 *D_8010C56C,*D_8010C584;
-extern Gfx *D_8010C574;
+extern Gfx *D_80110634;
 extern s32 func_80269A80_de(Material18 *,s8);
 extern void func_8026B504_de(u32,u32,Material18 *),func_8026AC38_de(void);
 void func_8026C020_de(void) {
@@ -21,18 +21,18 @@ void func_8026C020_de(void) {
    scaleT=0;scaleS=0;
    do {
     func_8026B504_de(mesh->matrix,mesh->aux,group->material);
-    if(mesh->segmented){gSPSegment(D_8010C574++, 1, ((mesh->matrix)));}else{gSPMatrix(D_8010C574++, ((mesh->matrix)), G_MTX_LOAD);}
-    gSPSegment(D_8010C574++, 2, ((mesh->vertices)));
+    if(mesh->segmented){gSPSegment(D_80110634++, 1, ((mesh->matrix)));}else{gSPMatrix(D_80110634++, ((mesh->matrix)), G_MTX_LOAD);}
+    gSPSegment(D_80110634++, 2, ((mesh->vertices)));
     if(mesh->scaleS) {
      if(scaleS!=mesh->scaleS || scaleT!=mesh->scaleT) {
-      if(group->material->flags&0x2000){gSPTexture(D_8010C574++, mesh->scaleS, mesh->scaleT, 5, 0, 1);}else{gSPTexture(D_8010C574++, mesh->scaleS, mesh->scaleT, 0, 0, 1);}
+      if(group->material->flags&0x2000){gSPTexture(D_80110634++, mesh->scaleS, mesh->scaleT, 5, 0, 1);}else{gSPTexture(D_80110634++, mesh->scaleS, mesh->scaleT, 0, 0, 1);}
      }
      scaleS=mesh->scaleS;scaleT=mesh->scaleT;
     }
-    gSPDisplayList(D_8010C574++, ((mesh->list)));
+    gSPDisplayList(D_80110634++, ((mesh->list)));
     mesh=mesh->next;
    }while(mesh);
-   if(group->material->flags&0x2000) {gDPSetTextureLOD(D_8010C574++, G_TL_TILE);}
+   if(group->material->flags&0x2000) {gDPSetTextureLOD(D_80110634++, G_TL_TILE);}
    if(group->material->flags&0x4000) {
     Group18 *next=group->next;group->next=deferred;deferred=group;group=next;
    } else group=group->next;
@@ -43,12 +43,12 @@ void func_8026C020_de(void) {
   do {
    mesh=group->meshes;
    if(mesh) {
-    gDPSetPrimColor(D_8010C574++, 0, 0, 0, 0, 0, group->material->alpha);
+    gDPSetPrimColor(D_80110634++, 0, 0, 0, 0, 0, group->material->alpha);
     do {
      func_8026B504_de(mesh->matrix,mesh->aux,group->material);
-     if(mesh->segmented){gSPSegment(D_8010C574++, 1, ((mesh->matrix)));}else{gSPMatrix(D_8010C574++, ((mesh->matrix)), G_MTX_LOAD);}
-     gSPSegment(D_8010C574++, 2, ((mesh->vertices)));
-     gSPDisplayList(D_8010C574++, ((mesh->list)));
+     if(mesh->segmented){gSPSegment(D_80110634++, 1, ((mesh->matrix)));}else{gSPMatrix(D_80110634++, ((mesh->matrix)), G_MTX_LOAD);}
+     gSPSegment(D_80110634++, 2, ((mesh->vertices)));
+     gSPDisplayList(D_80110634++, ((mesh->list)));
      mesh=mesh->next;
     }while(mesh);
    }
@@ -62,18 +62,18 @@ void func_8026C020_de(void) {
    scaleT=0;scaleS=0;
    do {
     func_8026B504_de(mesh->matrix,mesh->aux,group->material);
-    if(mesh->segmented){gSPSegment(D_8010C574++, 1, ((mesh->matrix)));}else{gSPMatrix(D_8010C574++, ((mesh->matrix)), G_MTX_LOAD);}
-    gSPSegment(D_8010C574++, 2, ((mesh->vertices)));
+    if(mesh->segmented){gSPSegment(D_80110634++, 1, ((mesh->matrix)));}else{gSPMatrix(D_80110634++, ((mesh->matrix)), G_MTX_LOAD);}
+    gSPSegment(D_80110634++, 2, ((mesh->vertices)));
     if(mesh->scaleS) {
      if(scaleS!=mesh->scaleS || scaleT!=mesh->scaleT) {
-      if(group->material->flags&0x2000){gSPTexture(D_8010C574++, mesh->scaleS, mesh->scaleT, 5, 0, 1);}else{gSPTexture(D_8010C574++, mesh->scaleS, mesh->scaleT, 0, 0, 1);}
+      if(group->material->flags&0x2000){gSPTexture(D_80110634++, mesh->scaleS, mesh->scaleT, 5, 0, 1);}else{gSPTexture(D_80110634++, mesh->scaleS, mesh->scaleT, 0, 0, 1);}
      }
      scaleS=mesh->scaleS;scaleT=mesh->scaleT;
     }
-    gSPDisplayList(D_8010C574++, ((mesh->list)));
+    gSPDisplayList(D_80110634++, ((mesh->list)));
     mesh=mesh->next;
    }while(mesh);
-   if(group->material->flags&0x2000){gDPSetTextureLOD(D_8010C574++, G_TL_TILE);}
+   if(group->material->flags&0x2000){gDPSetTextureLOD(D_80110634++, G_TL_TILE);}
   }
   group=group->next;
  }while(group);

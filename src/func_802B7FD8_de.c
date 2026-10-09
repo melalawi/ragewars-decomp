@@ -5,11 +5,11 @@
    _MakeMotorData, which this library inlines: _MotorStartData, _motorstartbuf, _MotorStopData and _motorstopbuf are
    D_8014D4C0, D_8014D5C0, D_8014D5E0 and D_8014D6E0, and __osMotorinitialized is D_800D8380. */
 typedef struct OSMesgQueue OSMesgQueue;
-extern OSPifRam D_80147230[4];
-extern u8 D_80147330[32];
-extern OSPifRam D_80147350[4];
-extern u8 D_80147450[32];
-extern u32 D_800D4350[4];
+extern OSPifRam D_8014D4C0[4];
+extern u8 D_8014D5C0[32];
+extern OSPifRam D_8014D5E0[4];
+extern u8 D_8014D6E0[32];
+extern u32 D_800D8380[4];
 extern s32 func_802B84C0_de(OSMesgQueue *mq, int channel, u16 address, u8 *buffer);
 extern s32 func_802B8880_de(OSMesgQueue *mq, int channel, u16 address, u8 *buffer, int force);
 extern u8 func_802B8C40_de(u16 address);
@@ -91,18 +91,18 @@ s32 func_802B7FD8_de(OSMesgQueue *mq, OSPfs *pfs, int channel)
     if (temp[31] != 0x80) {
         return 11;
     }
-    if (!D_800D4350[channel]) {
-        for (i = 0; i < ((s32)(sizeof(D_80147330) / sizeof(D_80147330[0]))); i++) {
+    if (!D_800D8380[channel]) {
+        for (i = 0; i < ((s32)(sizeof(D_8014D5C0) / sizeof(D_8014D5C0[0]))); i++) {
             /* Each buffer address is taken where it is used, as -fforce-addr compiles it, so the
                loop optimiser hoists it into a register in this order. */
-            startbuf = D_80147330;
+            startbuf = D_8014D5C0;
             startbuf[i] = 1;
-            stopbuf = D_80147450;
+            stopbuf = D_8014D6E0;
             stopbuf[i] = 0;
         }
-        _MakeMotorData(channel, 0x600, D_80147330, &D_80147230[channel]);
-        _MakeMotorData(channel, 0x600, D_80147450, &D_80147350[channel]);
-        D_800D4350[channel] = 1;
+        _MakeMotorData(channel, 0x600, D_8014D5C0, &D_8014D4C0[channel]);
+        _MakeMotorData(channel, 0x600, D_8014D6E0, &D_8014D5E0[channel]);
+        D_800D8380[channel] = 1;
     }
     return 0;
 }

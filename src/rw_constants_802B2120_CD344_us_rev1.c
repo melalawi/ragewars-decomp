@@ -4,8 +4,8 @@
  */
 struct rw_constants_802B2120_CD344_us_rev1_layout {
     float D_800C74F4_de;
-    double D_800C74F8_de;
-    float D_800C7500_de;
+    double D_800CC748;
+    float D_800CC750;
 } __attribute__((packed));
 
 const struct rw_constants_802B2120_CD344_us_rev1_layout rw_constants_802B2120_CD344_us_rev1 = {

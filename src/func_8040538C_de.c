@@ -9,12 +9,12 @@
 
 
 
-extern struct Record_func_80405338_de *D_800DE804;
+extern struct Record_func_80405338_de *D_800E2854;
 
 s32 func_8040538C_de(s32 index, s32 entry, char **out) {
-    if (D_8014D260[index] != 3) {
+    if (D_801534F0[index] != 3) {
         return -2;
     }
-    *out = D_800DE804[index].entries[entry].data + 0xA;
+    *out = D_800E2854[index].entries[entry].data + 0xA;
     return 0;
 }

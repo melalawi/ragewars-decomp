@@ -47,9 +47,9 @@
 
 
 
-extern char D_800C95A0;
-extern char D_800C95B8;
-extern char D_800C9AEC_de;
+extern char D_800CE7E4;
+extern char D_800CE7FC;
+extern char D_800CED30;
 extern void func_80223E34_de(SharedPlayer_func_80224408_de *, Body_func_80224408_de *);
 extern void func_802231D4_de(SharedPlayer_func_80224408_de *, Body_func_80224408_de *, char *);
 extern void func_802227F4_de(SharedPlayer_func_80224408_de *, Body_func_80224408_de *, s32);
@@ -72,9 +72,9 @@ void func_80224408_de(SharedPlayer_func_80224408_de *player, Body_func_80224408_
     heading = body->heading;
     crouching = 5.12f < player->views5E8.view718_70.crouch;
     if (crouching) {
-        func_802231D4_de(player, body, &D_800C95B8);
+        func_802231D4_de(player, body, &D_800CE7FC);
     } else {
-        func_802231D4_de(player, body, &D_800C95A0);
+        func_802231D4_de(player, body, &D_800CE7E4);
     }
     heading = body->heading - heading;
     if (try_jump(player, body)) {
@@ -94,7 +94,7 @@ void func_80224408_de(SharedPlayer_func_80224408_de *player, Body_func_80224408_
         animate = 0;
     }
     if (animate) {
-        if (player->views1C.viewE4_7.kind == D_800C922C) {
+        if (player->views1C.viewE4_7.kind == D_800CE47C) {
             if (player->views5E8.view86C_127.animation == 1 && 12.0f <= player->views1C.view104_11.idleTime) {
                 player->views5E8.view86C_127.animation = 2;
             } else if (player->views5E8.view86C_127.animation == 2 && 21.0f <= player->views1C.view104_11.idleTime) {
@@ -102,7 +102,7 @@ void func_80224408_de(SharedPlayer_func_80224408_de *player, Body_func_80224408_
             } else if ((u32) (player->views5E8.view86C_127.animation - 1) >= 2) {
                 player->views5E8.view86C_127.animation = 1;
             }
-        } else if (player->views13B4.view13B4_3.character == &D_800C9AEC_de) {
+        } else if (player->views13B4.view13B4_3.character == &D_800CED30) {
             if (body->flags & 0xC0000) {
                 player->views5E8.view86C_127.animation = 0xA28;
             } else if (0.017453294f < heading) {

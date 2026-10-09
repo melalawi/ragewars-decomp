@@ -10,7 +10,7 @@
 
 
 
-extern s32 D_800DE880_de;
+extern s32 D_800E28D0;
 extern u8 D_801462E5;
 extern void func_80239244_de(View *, Vec3 *, f32 *, f32 *);
 extern void func_802AAC28_de(s32, s32, s16, s16, f32, f32, s32);
@@ -30,13 +30,13 @@ void func_8021E08C_de(View *view, Vec3 *point, s32 icon, f32 frame, f32 scale, f
             return;
         }
         func_80239244_de(view, point, &x, &y);
-        if (x < -64.0f || (f32) (D_800DE880_de + 0x40) < x || y < -64.0f
-            || (f32) (*(&D_800DE880_de + 1) + 0x40) < y) {
+        if (x < -64.0f || (f32) (D_800E28D0 + 0x40) < x || y < -64.0f
+            || (f32) (*(&D_800E28D0 + 1) + 0x40) < y) {
             return;
         }
         if (D_801462E5 != 0) {
-            x = view->viewport[2] + x / D_800DE880_de * view->viewport[0];
-            y = view->viewport[3] + y / *(&D_800DE880_de + 1) * view->viewport[1];
+            x = view->viewport[2] + x / D_800E28D0 * view->viewport[0];
+            y = view->viewport[3] + y / *(&D_800E28D0 + 1) * view->viewport[1];
         }
     }
     offset = scale * size - 1.0f;

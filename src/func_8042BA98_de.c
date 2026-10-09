@@ -5,11 +5,11 @@
    returns zero. */
 
 
-extern struct State_func_8042BA98_de *D_800E0F10;
+extern struct State_func_8042BA98_de *D_800E4F60;
 
 
 s32 func_8042BA98_de(void) {
-    if (D_800E0F10->mode == 3) {
+    if (D_800E4F60->mode == 3) {
         func_8042AAD0_de();
         return 0;
     }

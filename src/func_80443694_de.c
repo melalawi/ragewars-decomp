@@ -8,7 +8,7 @@
 
 
 
-extern char D_80140F80[];
+extern char D_80145040[];
 extern char D_0044E48C[];
 extern void func_8022A5A0_de(void *, struct Owner_func_80443694_de *);
 extern void func_804097E8_de();
@@ -17,8 +17,8 @@ extern void func_80442574_de(void *, void *, struct Owner_func_80443694_de *, s3
 s32 func_80443694_de(void *unused, struct Holder_func_80443694_de *holder) {
     struct Owner_func_80443694_de *owner = holder->owner;
 
-    func_8022A5A0_de(D_80140F80, owner);
+    func_8022A5A0_de(D_80145040, owner);
     func_804097E8_de();
-    func_80442574_de(D_80140F80 + 0x5DC, D_0044E48C, owner, owner->value, 0);
+    func_80442574_de(D_80145040 + 0x5DC, D_0044E48C, owner, owner->value, 0);
     return 1;
 }

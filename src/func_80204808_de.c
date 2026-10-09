@@ -12,16 +12,16 @@ struct Input_func_80204808_de {
 };
 extern f32 D_800C1A74_de;
 extern f32 D_800C1A78_de;
-extern s32 D_800CC390;
-extern f32 D_800CC3A0;
+extern s32 D_800D15E0;
+extern f32 D_800D15F0;
 extern void func_8024A1D0_de(Actor_func_8024A1D0_de *, void *, Lookup *);
 
 void func_80204808_de(Actor_func_8024A1D0_de *actor, struct Input_func_80204808_de *input, Lookup *lookup) {
     f32 remaining = D_800C1A78_de - input->strength * D_800C1A74_de;
-    D_800CC390 = 1;
+    D_800D15E0 = 1;
     if (remaining < 0.0f) {
         remaining = 0.0f;
     }
-    D_800CC3A0 = remaining;
+    D_800D15F0 = remaining;
     func_8024A1D0_de(actor, input, lookup);
 }

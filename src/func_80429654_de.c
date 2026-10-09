@@ -9,7 +9,7 @@
    selection through func_8041E81C_de. */
 
 
-extern struct Screen_func_80429654_de *D_800E0EA0;
+extern struct Screen_func_80429654_de *D_800E4EF0;
 extern s32 func_8041AD04_de(s32);
 extern s32 func_802A1B18_de(s32);
 extern void func_8041EA70_de(void);
@@ -20,8 +20,8 @@ void func_80429654_de(s32 force) {
     s32 selection;
     s32 count;
 
-    selection = func_8041AD04_de(D_800E0EA0->cursor);
-    count = func_802A1B18_de(D_800E0EA0->list);
+    selection = func_8041AD04_de(D_800E4EF0->cursor);
+    count = func_802A1B18_de(D_800E4EF0->list);
     if (count <= 0) {
         func_8041EA70_de();
         return;

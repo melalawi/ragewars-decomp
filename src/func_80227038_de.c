@@ -62,15 +62,15 @@ extern f32 D_800C2BB4_de;
 extern f32 D_800C2BB8_de;
 extern f32 D_800C2BBC_de;
 extern s32 D_800C91B8_de;
-extern s32 D_800DE880_de;
-extern s32 D_800DE884_de;
+extern s32 D_800E28D0;
+extern s32 D_800E28D4;
 
 
 
 
-extern u8 D_8014221E;
-extern func_80227014_S1 D_801427E0;
-extern u8 D_80142215;
+extern u8 D_801462DE;
+extern func_80227014_S1 D_801468A0;
+extern u8 D_801462D5;
 
 
 
@@ -150,25 +150,25 @@ void func_80227038_de(s8 *arg0) {
     func_80227014_S19 *temp_v1_3;
     func_80227014_S22 *temp_v1_4;
 
-    if ((func_80245784_de() == 0) && (func_80245798_de() == 0) && ((initial_rules = &D_801427E0)->unk54 != 0)) {
+    if ((func_80245784_de() == 0) && (func_80245798_de() == 0) && ((initial_rules = &D_801468A0)->unk54 != 0)) {
         if ((func_802281F0_de(arg0) != 0) && (initial_rules->unk1C == 0)) {
             func_8022A748_de(arg0);
             return;
         }
         temp_v0 = func_8022C620_de(arg0);
         if (temp_v0 > 0) {
-            state = D_80142854;
+            state = D_80146914;
             switch (state) {
             case 0:
             default:
                 func_8022C5AC_de(arg0);
                 func_8022C5DC_de(arg0);
-                D_80142854 = 1;
+                D_80146914 = 1;
                 return;
             case 1:
                 func_8022C5DC_de(arg0);
                 if (temp_v0 > 0) {
-                    temp_s1 = (select_rules = &D_801427E0)->unk64;
+                    temp_s1 = (select_rules = &D_801468A0)->unk64;
                     if (temp_s1 == 3) {
                         temp_v0_2 = func_802744D4_de();
                         temp_v0_3 = temp_v0_2 / temp_v0;
@@ -201,7 +201,7 @@ void func_80227038_de(s8 *arg0) {
                 goto state_end;
             case 2:
                 if (temp_v0 > 0) {
-                    (case2_rules = &D_801427E0)->unk74 = 5;
+                    (case2_rules = &D_801468A0)->unk74 = 5;
                     case2_rules->unk68 = 0xE1;
                     case2_rules->unk5C = (s32) case2_rules->unk60;
                 }
@@ -219,13 +219,13 @@ void func_80227038_de(s8 *arg0) {
                             if (temp_v1->unk90 == 0) {
                                 temp_s1_2 = temp_v0_5->unk5DC;
                                 if ((temp_s1_2 != 0) && (temp_s1_2->unk564 == 0)) {
-                                    func_802A9234_de((s32) D_8014221E);
+                                    func_802A9234_de((s32) D_801462DE);
                                     temp_f2 = temp_s1_2->unk29C;
                                     temp_f3 = temp_s1_2->unk2A0;
                                     scaled5x = temp_f2 * banner_half;
                                     scaled5y = temp_f3 * banner_half;
-                                    temp_f2_2 = temp_f2 / (f32) D_800DE880_de;
-                                    temp_f3_2 = temp_f3 / (f32) D_800DE884_de;
+                                    temp_f2_2 = temp_f2 / (f32) D_800E28D0;
+                                    temp_f3_2 = temp_f3 / (f32) D_800E28D4;
                                     func_802AAC28_de(0x1FB, 0, (s16) (s32) ((temp_s1_2->unk2A4 + scaled5x) - (temp_f2_2 * banner_size)), (s16) (s32) ((temp_s1_2->unk2A8 + scaled5y) - (temp_f3_2 * banner_size)), temp_f2_2, temp_f3_2, 1);
                                 }
                                 temp_v0_5->unk5D8->unk8F = 1;
@@ -247,7 +247,7 @@ void func_80227038_de(s8 *arg0) {
                                 func_80226708_de(temp_v0_5);
                                 temp_v0_5->unk5E4 = (s32) D_8014284C;
                             } else {
-                                if ((D_80142878 != 0) && (temp_v1->unk94 != 0)) {
+                                if ((D_80146938 != 0) && (temp_v1->unk94 != 0)) {
                                     temp_v1_2 = temp_v1->unk80;
                                     if (temp_v1_2 == 11) {
                                     var_a0 = 0x19000;
@@ -263,7 +263,7 @@ void func_80227038_de(s8 *arg0) {
                                 } else {
                                     var_a0 = temp_v0_5->unk18->unk18 << 8;
                                 }
-                                if ((D_80142215 == 1) && (temp_v0_5->unk1450 == 0)) {
+                                if ((D_801462D5 == 1) && (temp_v0_5->unk1450 == 0)) {
                                     var_a0 += D_800FEB10[temp_v0_5->unk5D4].value;
                                 }
                                 temp_v0_5->unk5E4 = var_a0;
@@ -274,10 +274,10 @@ void func_80227038_de(s8 *arg0) {
                     } while (temp_v0 >= (s32) var_s2);
                 }
                 func_8022C5AC_de(arg0);
-                D_80142854 = 6;
+                D_80146914 = 6;
                 return;
             case 3:
-                case3_entry = &D_801427E0;
+                case3_entry = &D_801468A0;
                 if (temp_v0 == 0) {
 
                 }
@@ -288,15 +288,15 @@ void func_80227038_de(s8 *arg0) {
                 temp_v0_6 = func_8022C55C_de(arg0, (u32) ((s32) case3_entry->unk5C % temp_v0));
                 temp_s1_3 = temp_v0_6->unk5DC;
                 if ((temp_s1_3 != 0) && (temp_s1_3->unk564 == 0)) {
-                    func_802A9234_de((s32) D_8014221E);
+                    func_802A9234_de((s32) D_801462DE);
                     temp_f3_3 = temp_s1_3->unk29C;
                     temp_f2_3 = temp_s1_3->unk2A0;
                     scaled_x = temp_f3_3 * D_800C2BA8_de;
                     scaled_y = temp_f2_3 * D_800C2BA8_de;
-                    temp_f2_4 = temp_f2_3 / (f32) D_800DE884_de;
-                    func_802AAC28_de(0x1FB, 0, (s16) (s32) ((temp_s1_3->unk2A4 + scaled_x) - ((temp_f3_3 / (f32) D_800DE880_de) * D_800C2BAC_de)), (s16) (s32) ((temp_s1_3->unk2A8 + scaled_y) - (temp_f2_4 * D_800C2BAC_de)), (temp_f3_3 / (f32) D_800DE880_de), temp_f2_4, 1);
+                    temp_f2_4 = temp_f2_3 / (f32) D_800E28D4;
+                    func_802AAC28_de(0x1FB, 0, (s16) (s32) ((temp_s1_3->unk2A4 + scaled_x) - ((temp_f3_3 / (f32) D_800E28D0) * D_800C2BAC_de)), (s16) (s32) ((temp_s1_3->unk2A8 + scaled_y) - (temp_f2_4 * D_800C2BAC_de)), (temp_f3_3 / (f32) D_800E28D0), temp_f2_4, 1);
                 }
-                rules = &D_801427E0;
+                rules = &D_801468A0;
                 temp_a0 = rules->unk5C + 1;
                 rules->unk5C = temp_a0;
                 if (temp_a0 >= (((5 - temp_v0) * 0x14) - rules->unk60)) {
@@ -323,12 +323,12 @@ void func_80227038_de(s8 *arg0) {
                 var_s2 = 0;
                 if (temp_v0 >= 0) {
                     temp_a1 = temp_v0_6->unk5D8;
-                    case3_loop = &D_801427E0;
+                    case3_loop = &D_801468A0;
                     do {
                         if (temp_a1->unk8F != 0) {
                             temp_v0_6->unk5E4 = (s32) case3_loop->unk6C;
                         } else {
-                            temp_v0_2 = D_80142878;
+                            temp_v0_2 = D_80146938;
                             if ((temp_v0_2 != 0) && (temp_a1->unk94 != 0)) {
                                 temp_v0_2 = temp_a1->unk80;
                                 if (temp_v0_2 == 11) {
@@ -345,7 +345,7 @@ void func_80227038_de(s8 *arg0) {
                             } else {
                                 var_a0 = temp_v0_6->unk18->unk18 << 8;
                             }
-                            temp_v0_2 = D_80142215;
+                            temp_v0_2 = D_801462D5;
                             if ((temp_v0_2 == 1) && (temp_v0_6->unk1450 == 0)) {
                                 var_a0 += D_800FEB10[temp_v0_6->unk5D4].value;
                             }
@@ -358,7 +358,7 @@ void func_80227038_de(s8 *arg0) {
                 }
                 goto state_end;
             case 4:
-                case4_entry = &D_801427E0;
+                case4_entry = &D_801468A0;
                 if (temp_v0 == 0) {
 
                 }
@@ -369,15 +369,15 @@ void func_80227038_de(s8 *arg0) {
                 temp_v0_8 = func_8022C55C_de(arg0, (u32) ((s32) case4_entry->unk5C % temp_v0));
                 temp_s1_4 = temp_v0_8->unk5DC;
                 if ((temp_s1_4 != 0) && (temp_s1_4->unk564 == 0)) {
-                    func_802A9234_de((s32) D_8014221E);
+                    func_802A9234_de((s32) D_801462DE);
                     temp_f3_4 = temp_s1_4->unk29C;
                     temp_f2_5 = temp_s1_4->unk2A0;
                     scaled_x4 = temp_f3_4 * D_800C2BB0_de;
                     scaled_y4 = temp_f2_5 * D_800C2BB0_de;
-                    temp_f2_6 = temp_f2_5 / (f32) D_800DE884_de;
-                    func_802AAC28_de(0x1FB, 0, (s16) (s32) ((temp_s1_4->unk2A4 + scaled_x4) - ((temp_f3_4 / (f32) D_800DE880_de) * D_800C2BB4_de)), (s16) (s32) ((temp_s1_4->unk2A8 + scaled_y4) - (temp_f2_6 * D_800C2BB4_de)), (temp_f3_4 / (f32) D_800DE880_de), temp_f2_6, 1);
+                    temp_f2_6 = temp_f2_5 / (f32) D_800E28D4;
+                    func_802AAC28_de(0x1FB, 0, (s16) (s32) ((temp_s1_4->unk2A4 + scaled_x4) - ((temp_f3_4 / (f32) D_800E28D0) * D_800C2BB4_de)), (s16) (s32) ((temp_s1_4->unk2A8 + scaled_y4) - (temp_f2_6 * D_800C2BB4_de)), (temp_f3_4 / (f32) D_800E28D0), temp_f2_6, 1);
                 }
-                rules = &D_801427E0;
+                rules = &D_801468A0;
                 temp_a0_2 = rules->unk5C + 1;
                 rules->unk5C = temp_a0_2;
                 if (temp_a0_2 >= (((5 - temp_v0) * 0x14) - rules->unk60)) {
@@ -404,12 +404,12 @@ void func_80227038_de(s8 *arg0) {
                 var_s2 = 0;
                 if (temp_v0 >= 0) {
                     temp_a1_2 = temp_v0_8->unk5D8;
-                    case4_loop = &D_801427E0;
+                    case4_loop = &D_801468A0;
                     do {
                         if (temp_a1_2->unk8F != 0) {
                             temp_v0_8->unk5E4 = (s32) case4_loop->unk6C;
                         } else {
-                            temp_v0_2 = D_80142878;
+                            temp_v0_2 = D_80146938;
                             if ((temp_v0_2 != 0) && (temp_a1_2->unk94 != 0)) {
                                 temp_v0_2 = temp_a1_2->unk80;
                                 if (temp_v0_2 == 11) {
@@ -426,7 +426,7 @@ void func_80227038_de(s8 *arg0) {
                             } else {
                                 var_a0 = temp_v0_8->unk18->unk18 << 8;
                             }
-                            temp_v0_2 = D_80142215;
+                            temp_v0_2 = D_801462D5;
                             if ((temp_v0_2 == 1) && (temp_v0_8->unk1450 == 0)) {
                                 var_a0 += D_800FEB10[temp_v0_8->unk5D4].value;
                             }
@@ -439,7 +439,7 @@ void func_80227038_de(s8 *arg0) {
                 }
                 goto state_end;
             case 6:
-                case6_entry = &D_801427E0;
+                case6_entry = &D_801468A0;
                 temp_v0_10 = case6_entry->unk68 - 1;
                 case6_entry->unk68 = temp_v0_10;
                 if (temp_v0_10 <= 0) {
@@ -457,13 +457,13 @@ void func_80227038_de(s8 *arg0) {
                             if (temp_v1_3->unk8F == 0) {
                                 temp_s1_5 = temp_v0_11->unk5DC;
                                 if ((temp_s1_5 != 0) && (temp_s1_5->unk564 == 0)) {
-                                    func_802A9234_de((s32) D_8014221E);
+                                    func_802A9234_de((s32) D_801462DE);
                                     temp_f2_7 = temp_s1_5->unk29C;
                                     temp_f3_5 = temp_s1_5->unk2A0;
                                     scaled6x = temp_f2_7 * banner_half;
                                     scaled6y = temp_f3_5 * banner_half;
-                                    temp_f2_8 = temp_f2_7 / (f32) D_800DE880_de;
-                                    temp_f3_6 = temp_f3_5 / (f32) D_800DE884_de;
+                                    temp_f2_8 = temp_f2_7 / (f32) D_800E28D0;
+                                    temp_f3_6 = temp_f3_5 / (f32) D_800E28D4;
                                     func_802AAC28_de(0x1FB, 0, (s16) (s32) ((temp_s1_5->unk2A4 + scaled6x) - (temp_f2_8 * banner_size)), (s16) (s32) ((temp_s1_5->unk2A8 + scaled6y) - (temp_f3_6 * banner_size)), temp_f2_8, temp_f3_6, 1);
                                 }
                                 temp_v0_11->unk5D8->unk8F = 1U;
@@ -490,11 +490,11 @@ void func_80227038_de(s8 *arg0) {
                             }
                             temp_v1_4 = temp_v0_11->unk5D8;
                             if (temp_v1_4->unk8F != 0) {
-                                case6_active_rules = &D_801427E0;
+                                case6_active_rules = &D_801468A0;
                                 temp_v0_11->unk5E4 = (s32) case6_active_rules->unk6C;
                                 temp_v0_11->unk174 = (s32) case6_active_rules->unk6C;
                             } else {
-                                if ((D_80142878 != 0) && (temp_v1_4->unk94 != 0)) {
+                                if ((D_80146938 != 0) && (temp_v1_4->unk94 != 0)) {
                                     temp_v1_5 = temp_v1_4->unk80;
                                     if (temp_v1_5 == 11) {
                                     var_a0 = 0x19000;
@@ -510,7 +510,7 @@ void func_80227038_de(s8 *arg0) {
                                 } else {
                                     var_a0 = temp_v0_11->unk18->unk18 << 8;
                                 }
-                                if ((D_80142215 == 1) && (temp_v0_11->unk1450 == 0)) {
+                                if ((D_801462D5 == 1) && (temp_v0_11->unk1450 == 0)) {
                                     var_a0 += D_800FEB10[temp_v0_11->unk5D4].value;
                                 }
                                 temp_v0_11->unk5E4 = var_a0;
@@ -519,7 +519,7 @@ void func_80227038_de(s8 *arg0) {
                         }
                         var_s2 += 1;
                     } while ((s32) var_s2 < 8);
-                    D_80142854 = 7;
+                    D_80146914 = 7;
                     return;
                 }
                 goto state_end;

@@ -4,7 +4,7 @@
 #include "common/unused.h"
 
 typedef struct { Vec3 pos; s32 unkC; } ApproachLocation;
-extern s32 D_801371D0;
+extern s32 D_8013B290;
 extern f32 D_800C2160_de[],D_800C215C_de;
 extern f32 func_80216F44_de(Actor_func_80214624_de *,Vec3);
 extern f32 func_8024D398_de(Actor_func_80214624_de *);

@@ -23,8 +23,8 @@ void func_80253754_de(void *arg0, Node80253610 *arg1) {
 
     temp_s0 = arg1;
     temp_a0 = func_802BCF30_de();
-    temp_v1 = D_8010115C + 1;
-    D_8010115C = temp_v1;
+    temp_v1 = D_8010515C + 1;
+    D_8010515C = temp_v1;
     if (temp_v1 != 1) {
         func_802BCF50_de(temp_a0);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -36,8 +36,8 @@ void func_80253754_de(void *arg0, Node80253610 *arg1) {
         temp_s0->flags &= ~0x100;
     }
     temp_v0 = func_802BCF30_de();
-    temp_v1_2 = D_8010115C - 1;
-    D_8010115C = temp_v1_2;
+    temp_v1_2 = D_8010515C - 1;
+    D_8010515C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802BCF50_de(temp_v0);
         func_802BB420_de(&D_80101140, 0, 1);

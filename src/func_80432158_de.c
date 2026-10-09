@@ -16,7 +16,7 @@
 
 
 
-extern struct Block_func_80432158_de *D_800E1454_de;
+extern struct Block_func_80432158_de *D_800E54A4;
 extern void func_8029973C_de();
 extern void func_8043577C_de(s32);
 extern s32 func_804355B4_de();
@@ -26,11 +26,11 @@ extern void func_804322AC_de(s32);
 
 s32 func_80432158_de(void *arg0, void *arg1, u16 player) {
     func_8029973C_de();
-    if (D_800E1454_de->phase == 7) {
+    if (D_800E54A4->phase == 7) {
         func_8043577C_de(3);
         return 0;
     }
-    switch (D_800E1454_de->players[player].state) {
+    switch (D_800E54A4->players[player].state) {
     case 0:
         if (func_804355B4_de() > 0) {
             return 0;
@@ -40,18 +40,18 @@ s32 func_80432158_de(void *arg0, void *arg1, u16 player) {
         return 0;
     case 0xC:
         func_8029973C_de();
-        D_800E1454_de->players[player].name[D_800E1454_de->players[player].cursor].c = ' ';
+        D_800E54A4->players[player].name[D_800E54A4->players[player].cursor].c = ' ';
         break;
     case 0x16:
         func_8029973C_de();
         func_80433BCC_de(-1);
-        D_800E1454_de->players[player].state = 0xD;
+        D_800E54A4->players[player].state = 0xD;
         func_804322AC_de(player);
         break;
     case 0x1B:
         func_8029973C_de();
         func_80433D38_de(-1);
-        D_800E1454_de->players[player].state = 0xD;
+        D_800E54A4->players[player].state = 0xD;
         func_804322AC_de(player);
         break;
     default:

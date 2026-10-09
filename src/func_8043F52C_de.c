@@ -11,8 +11,8 @@ u8 *func_8043F290(void *);
 f32 func_804422F0_de(u8 *, f32, f32);
 char * func_80442A58_de(char *);
 extern u8 D_801462E5;
-extern s32 D_800DE884_de;
-extern s32 D_800DE880_de; /* unable to generate initializer: unknown type */
+extern s32 D_800E28D4;
+extern s32 D_800E28D0; /* unable to generate initializer: unknown type */
 
 extern f32 D_800DE448;
 extern f32 D_800E247C;
@@ -151,21 +151,21 @@ void func_8043F52C_de(TextBoundsText *arg0, TextBoundsMetrics *arg1) {
         }
         (((TextBoundsState *)(arg1))->unk_4.v0) = (s32) var_f0;
         if (arg0->flags & 0x08000000) {
-            arg1->height = (s32) ((f32) D_800DE884_de * D_800DE448);
-        } else if ((temp_s1->kind == 2) && (D_800DE884_de >= 0xDF)) {
+            arg1->height = (s32) ((f32) D_800E28D4 * D_800DE448);
+        } else if ((temp_s1->kind == 2) && (D_800E28D4 >= 0xDF)) {
 #if defined(VERSION_EU)
-            arg1->height = (s32) ((temp_s1->height + D_800E247C) * (f32) D_800DE884_de * D_800EEAD0);
+            arg1->height = (s32) ((temp_s1->height + D_800E247C) * (f32) D_800E28D4 * D_800EEAD0);
 #else
-            arg1->height = (s32) ((temp_s1->height + D_800E247C) * (f32) D_800DE884_de * D_800DE450_de);
+            arg1->height = (s32) ((temp_s1->height + D_800E247C) * (f32) D_800E28D4 * D_800DE450_de);
 #endif
         } else {
 #if defined(VERSION_EU)
-            arg1->height = (s32) (temp_s1->height * (f32) D_800DE884_de * D_800EEAD0);
+            arg1->height = (s32) (temp_s1->height * (f32) D_800E28D4 * D_800EEAD0);
 #else
-            arg1->height = (s32) (temp_s1->height * (f32) D_800DE884_de * D_800DE450_de);
+            arg1->height = (s32) (temp_s1->height * (f32) D_800E28D4 * D_800DE450_de);
 #endif
         }
-        (((TextBoundsState *)(arg1))->unk_4.v0) = (s32) (((((TextBoundsState *)(arg1))->unk_4.v0) * D_800DE880_de) / 284);
+        (((TextBoundsState *)(arg1))->unk_4.v0) = (s32) (((((TextBoundsState *)(arg1))->unk_4.v0) * D_800E28D0) / 284);
         break;
     case 4:
         var_a0_2 = 0;
@@ -190,7 +190,7 @@ void func_8043F52C_de(TextBoundsText *arg0, TextBoundsMetrics *arg1) {
 #endif
 
         (((TextBoundsState *)(arg1))->unk_4.v0) = (s32) temp_s1->width;
-        (((TextBoundsState *)(arg1))->unk_8) = (s32) (temp_s1->height * (f32) D_800DE884_de * D_800E2484);
+        (((TextBoundsState *)(arg1))->unk_8) = (s32) (temp_s1->height * (f32) D_800E28D4 * D_800E2484);
         break;
     case 1:
         if (((func_802934F8_de() != 0) && ((((TextBoundsContext *)(arg0))->unk_8) & 0x40000000)) || ((D_801462E5 != 0) && ((((TextBoundsContext *)(arg0))->unk_8) < 0) && (func_80265350_de() == 0x400000))) {
@@ -204,11 +204,11 @@ void func_8043F52C_de(TextBoundsText *arg0, TextBoundsMetrics *arg1) {
             var_f0_4 = temp_v0->unk_2A0 / temp_f2;
         } else {
 #if defined(VERSION_EU)
-            var_f3 = (f32) D_800DE880_de * D_800EEAD8;
+            var_f3 = (f32) D_800E28D0 * D_800EEAD8;
 #else
-            var_f3 = (f32) D_800DE880_de * D_800DE458;
+            var_f3 = (f32) D_800E28D0 * D_800DE458;
 #endif
-            var_f0_4 = (f32) D_800DE884_de * D_800E248C;
+            var_f0_4 = (f32) D_800E28D4 * D_800E248C;
         }
         (((TextBoundsState *)(arg1))->unk_C) = var_f3;
         (((TextBoundsState *)(arg1))->unk_10) = var_f0_4;
@@ -237,8 +237,8 @@ void func_8043F52C_de(TextBoundsText *arg0, TextBoundsMetrics *arg1) {
         break;
     case 3:
         temp_v0_2 = (TextBoundsRecord23 *)(((TextBoundsContext *)(arg0))->unk_14);
-        (((TextBoundsState *)(arg1))->unk_4.v0) = (s32) (((f32) temp_v0_2->unk_24 * temp_v0->unk_29C) / (f32) D_800DE880_de);
-        (((TextBoundsState *)(arg1))->unk_8) = (s32) (((f32) temp_v0_2->unk_28 * temp_v0->unk_2A0) / (f32) D_800DE884_de);
+        (((TextBoundsState *)(arg1))->unk_4.v0) = (s32) (((f32) temp_v0_2->unk_24 * temp_v0->unk_29C) / (f32) D_800E28D0);
+        (((TextBoundsState *)(arg1))->unk_8) = (s32) (((f32) temp_v0_2->unk_28 * temp_v0->unk_2A0) / (f32) D_800E28D4);
         break;
     default:
         (((TextBoundsState *)(arg1))->unk_4.v0) = 1;
@@ -246,7 +246,7 @@ void func_8043F52C_de(TextBoundsText *arg0, TextBoundsMetrics *arg1) {
         break;
     }
     temp_a0 = (((TextBoundsContext *)(arg0))->unk_8);
-    temp_f1 = (f32) (((((TextBoundsContext *)(arg0))->unk_C) * D_800DE880_de) / 284);
+    temp_f1 = (f32) (((((TextBoundsContext *)(arg0))->unk_C) * D_800E28D0) / 284);
     if (!(temp_a0 & 0x8000)) {
         if (temp_a0 & 0x4000) {
             (((TextBoundsState *)(arg1))->unk_14) = (s32) ((f32) (((TextBoundsState *)(arg1))->unk_18) + temp_f1);
@@ -256,7 +256,7 @@ void func_8043F52C_de(TextBoundsText *arg0, TextBoundsMetrics *arg1) {
     }
     (((TextBoundsState *)(arg1))->unk_18) = (s32) ((f32) (((TextBoundsState *)(arg1))->unk_14) + ((f32) (((TextBoundsState *)(arg1))->unk_4.v0) * (((TextBoundsState *)(arg1))->unk_C)));
     temp_a0_2 = (((TextBoundsContext *)(arg0))->unk_8);
-    temp_f1_2 = (f32) (((((TextBoundsContext *)(arg0))->unk_E) * D_800DE884_de) / 222);
+    temp_f1_2 = (f32) (((((TextBoundsContext *)(arg0))->unk_E) * D_800E28D4) / 222);
     if (!(temp_a0_2 & 0x20000)) {
         if (temp_a0_2 & 0x10000) {
             (((TextBoundsState *)(arg1))->unk_1C) = (s32) ((f32) (((TextBoundsState *)(arg1))->unk_20) + temp_f1_2);

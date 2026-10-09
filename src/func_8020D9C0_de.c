@@ -7,7 +7,7 @@
 
 
 
-extern s32 D_801372A4;
+extern s32 D_8013B364;
 
 extern void *func_8020CFE0_de(char *, s32);
 extern void *func_8020C994_de(void *, s32);
@@ -25,7 +25,7 @@ s32 func_8020D9C0_de(Obj_func_8020D9C0_de *obj) {
     void *global;
 
     sum.x = sum.y = sum.z = 0.0f;
-    global = &D_801372A4;
+    global = &D_8013B364;
     for (i = 0; i < obj->count; i++) {
         sum.x += obj->points[i].x;
         sum.y += obj->points[i].y;

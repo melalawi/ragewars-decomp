@@ -12,22 +12,22 @@
 
 
 
-extern struct Record_func_8043E494_de D_80142242;
-extern char *D_800D35B8;
-extern char *D_800D35B4;
+extern struct Record_func_8043E494_de D_80146302;
+extern char *D_800D75E4;
+extern char *D_800D75E0;
 
 s32 func_80444424_de(struct Field *field, struct Menu_func_8043E494_de *holder) {
-    struct Record_func_8043E494_de *settings = &D_80142242;
+    struct Record_func_8043E494_de *settings = &D_80146302;
 
     if (holder->owner != 0 && holder->owner->record != 0) {
         settings = holder->owner->record;
     }
     switch (settings->mode) {
     case 0:
-        field->text = &D_800D35B4;
+        field->text = &D_800D75E0;
         break;
     case 1:
-        field->text = &D_800D35B8;
+        field->text = &D_800D75E4;
         break;
     }
     return 0;

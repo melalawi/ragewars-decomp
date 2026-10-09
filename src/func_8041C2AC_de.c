@@ -5,10 +5,10 @@
    0x14 and 0x18, resets through func_8040C428_de(0) and func_802A2394_de, sets D_800E28C8 to -1 and
    D_80146D70 to 0, releases the resources of D_8011FAC0 and of its block at 0x3C8, clears the
    word at 0x1C and returns zero. */
-extern struct Screen_func_8041C2AC_de *D_800DF4C8;
-extern s32 D_800DE878;
-extern s32 D_80142CB0;
-extern char D_8011BA00[];
+extern struct Screen_func_8041C2AC_de *D_800E3518;
+extern s32 D_800E28C8;
+extern s32 D_80146D70;
+extern char D_8011FAC0[];
 extern struct Screen_func_8041C2AC_de *func_8025305C_de(s32);
 extern void *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(void *, s32);
@@ -19,8 +19,8 @@ extern void func_80286AA8_de(void *, s32, s32);
 s32 func_8041C2AC_de(void *parent) {
     void *window;
     char *resources;
-    D_800DF4C8 = func_8025305C_de(0x2C);
-    D_800DF4C8->parent = parent;
+    D_800E3518 = func_8025305C_de(0x2C);
+    D_800E3518->parent = parent;
 #if defined(VERSION_DE)
     window = func_8040EC30_de(parent, 0x3BE);
 #elif defined(VERSION_EU) || defined(VERSION_US) || defined(VERSION_US_REV1)
@@ -28,7 +28,7 @@ s32 func_8041C2AC_de(void *parent) {
 #elif defined(VERSION_EU_X)
     window = func_8040EC30_de(parent, 0x3CC);
 #endif
-    D_800DF4C8->windows[0] = window;
+    D_800E3518->windows[0] = window;
     func_8040E8D8_de(window, 1);
 #if defined(VERSION_DE)
     window = func_8040EC30_de(parent, 0x3C3);
@@ -37,7 +37,7 @@ s32 func_8041C2AC_de(void *parent) {
 #elif defined(VERSION_EU_X)
     window = func_8040EC30_de(parent, 0x3CD);
 #endif
-    D_800DF4C8->windows[1] = window;
+    D_800E3518->windows[1] = window;
     func_8040E8D8_de(window, 0);
 #if defined(VERSION_DE)
     window = func_8040EC30_de(parent, 0x3BD);
@@ -46,7 +46,7 @@ s32 func_8041C2AC_de(void *parent) {
 #elif defined(VERSION_EU_X)
     window = func_8040EC30_de(parent, 0x3C6);
 #endif
-    D_800DF4C8->windows[2] = window;
+    D_800E3518->windows[2] = window;
     func_8040E8D8_de(window, 0);
 #if defined(VERSION_DE)
     window = func_8040EC30_de(parent, 0x3BF);
@@ -55,17 +55,17 @@ s32 func_8041C2AC_de(void *parent) {
 #elif defined(VERSION_EU_X)
     window = func_8040EC30_de(parent, 0x3C8);
 #endif
-    D_800DF4C8->windows[3] = window;
+    D_800E3518->windows[3] = window;
     func_8040E8D8_de(window, 0);
-    D_800DF4C8->selection = 0;
-    D_800DF4C8->scroll = 0;
+    D_800E3518->selection = 0;
+    D_800E3518->scroll = 0;
     func_8040C428_de(0);
     func_802A2394_de();
-    D_800DE878 = -1;
-    D_80142CB0 = 0;
-    resources = D_8011BA00;
+    D_800E28C8 = -1;
+    D_80146D70 = 0;
+    resources = D_8011FAC0;
     func_80293334_de(resources, 0, 0);
     func_80286AA8_de(resources + 0x3C8, 0, 0);
-    D_800DF4C8->state = 0;
+    D_800E3518->state = 0;
     return 0;
 }

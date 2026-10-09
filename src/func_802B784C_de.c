@@ -2,7 +2,7 @@
 #include "span_1000/code_802B7488.h"
 #include "types.h"
 
-extern char D_801471E0;
+extern char D_8014D470;
 
 
 
@@ -12,7 +12,7 @@ void func_802B784C_de(void) {
     u8 *var_v1;
     s32 val;
 
-    var_v1 = &D_801471E0;
+    var_v1 = &D_8014D470;
     ((func_8023EBEC_S1 *)(var_v1))->unk3C = 1;
     val = 0xFD;
     var_v0 = 3;

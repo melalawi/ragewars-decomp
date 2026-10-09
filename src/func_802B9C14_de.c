@@ -8,24 +8,24 @@ typedef void *OSMesg;
    when D_800D83D0 says it does not exist yet. Adapted from func_802B99A4_de with the queue, its buffer and its flag changed. */
 
 
-extern s32 D_800D43A0[];
-extern Slot D_801487E8;
-extern OSMesg D_801487E0;
+extern s32 D_800D83D0[];
+extern Slot D_8014EA78;
+extern OSMesg D_8014EA70;
 extern void func_802BAC60_de(Slot *, OSMesg *, s32);
 extern s32 func_802BB420_de(Slot *, OSMesg, s32);
 extern s32 func_802BB2A0_de(Slot *, OSMesg *, s32);
 
 static inline void create_access_queue(void) {
-    D_800D43A0[0] = 1;
-    func_802BAC60_de(&D_801487E8, &D_801487E0, 1);
-    func_802BB420_de(&D_801487E8, 0, 0);
+    D_800D83D0[0] = 1;
+    func_802BAC60_de(&D_8014EA78, &D_8014EA70, 1);
+    func_802BB420_de(&D_8014EA78, 0, 0);
 }
 
 void func_802B9C14_de(void) {
     OSMesg token;
 
-    if (!D_800D43A0[0]) {
+    if (!D_800D83D0[0]) {
         create_access_queue();
     }
-    func_802BB2A0_de(&D_801487E8, &token, 1);
+    func_802BB2A0_de(&D_8014EA78, &token, 1);
 }

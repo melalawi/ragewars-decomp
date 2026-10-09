@@ -11,7 +11,7 @@
 
 
 void func_8022D010_de(void *arg0, void *arg1) {
-    ((func_8022C894_S1 *)(arg0))->unk6C0 = ((func_8022C894_S1 *)(arg0))->unk6C0 * (D_800C2DA0_de);
-    ((func_8022C894_S1 *)(arg0))->unk6C4 = ((func_8022C894_S1 *)(arg0))->unk6C4 * (D_800C2DA0_de);
-    ((func_8022CA04_S3 *)(arg1))->unk20 = ((func_8022CA04_S3 *)(arg1))->unk20 * (D_800C2DA0_de);
+    ((func_8022C894_S1 *)(arg0))->unk6C0 = ((func_8022C894_S1 *)(arg0))->unk6C0 * (D_800C7E90);
+    ((func_8022C894_S1 *)(arg0))->unk6C4 = ((func_8022C894_S1 *)(arg0))->unk6C4 * (D_800C7E90);
+    ((func_8022CA04_S3 *)(arg1))->unk20 = ((func_8022CA04_S3 *)(arg1))->unk20 * (D_800C7E90);
 }

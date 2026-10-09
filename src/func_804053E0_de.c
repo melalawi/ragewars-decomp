@@ -10,13 +10,13 @@
 
 
 
-extern struct Record_func_804053E0_de *D_800DE804;
+extern struct Record_func_804053E0_de *D_800E2854;
 extern s32 func_804057EC_de(s32);
 
 s32 func_804053E0_de(s32 index, s32 entry, s32 *out) {
-    if (D_8014D260[index] != 3) {
+    if (D_801534F0[index] != 3) {
         return -2;
     }
-    *out = func_804057EC_de(D_800DE804[index].entries[entry].size);
+    *out = func_804057EC_de(D_800E2854[index].entries[entry].size);
     return 0;
 }

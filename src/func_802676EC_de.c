@@ -21,8 +21,8 @@
 
 
 extern u8 D_801462E5;
-extern Carrier D_801001F0;
-extern Shield D_8010C4B0;
+extern Carrier D_801041F0;
+extern Shield D_80110570;
 
 extern s32 func_8024B06C_de(Actor_func_802676EC_de *, Vec3, Shield *);
 extern f32 func_8024D284_de(Actor_func_802676EC_de *);
@@ -57,13 +57,13 @@ f32 func_802676EC_de(Actor_func_802676EC_de *self, Target *target, Vec3 position
         if (target->type == 0x404 || target->type == 0x402) {
             special = 1;
         }
-        if (target->kind == 2 && D_801001F0.owner == self && D_801001F0.slot != -1 && !special) {
-            shield = &D_801001F0.shield;
+        if (target->kind == 2 && D_801041F0.owner == self && D_801041F0.slot != -1 && !special) {
+            shield = &D_801041F0.shield;
             falloff = 0;
             goto have;
         }
     }
-    shield = func_8024B06C_de(self, position, &D_8010C4B0) ? &D_8010C4B0 : 0;
+    shield = func_8024B06C_de(self, position, &D_80110570) ? &D_80110570 : 0;
 have:
     *found = shield;
     if (shielded && shield != 0) {

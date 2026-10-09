@@ -14,8 +14,8 @@
 
 
 
-extern Record_func_80403458_de *D_800DE7E0;
-extern Tables_func_80403458_de D_8011BDC8;
+extern Record_func_80403458_de *D_800E2830;
+extern Tables_func_80403458_de D_8011FE88;
 
 extern s32 func_80245784_de(void);
 extern s32 *func_8028FDB4_de(s32 resource, s32 index);
@@ -34,25 +34,25 @@ void func_80403458_de(void) {
     s32 hit;
     Tables_func_80403458_de *tables;
 
-    time = D_800DE7E0->time;
+    time = D_800E2830->time;
     late = 0;
     if (func_80245784_de() == 0) {
         return;
     }
-    if (D_800DE7E0->active == 0) {
+    if (D_800E2830->active == 0) {
         return;
     }
-    track = func_8028FDB4_de(D_800DE7E0->resource, 2);
+    track = func_8028FDB4_de(D_800E2830->resource, 2);
     n = track[1];
     entry = (Entry_func_80403458_de *)(track + 2);
     if (n == 0) {
         return;
     }
-    if (D_800DE7E0->endTime <= time) {
+    if (D_800E2830->endTime <= time) {
         late = 1;
     }
     for (i = 0; i < n; i++) {
-        tables = &D_8011BDC8;
+        tables = &D_8011FE88;
         if (entry[i].time <= -10000.0f) {
             continue;
         }
@@ -87,12 +87,12 @@ void func_80403458_de(void) {
         }
         if (hit) {
             func_80402FB4_de(0, item);
-            D_800DE7E0->pending = 0;
+            D_800E2830->pending = 0;
         } else {
             func_80278E7C_de(item);
         }
         entry[i].time = -20000.0f;
         item->flags = (item->flags | 1) & 0xEF;
-        func_8028BB1C_de(&D_8011BDC8, item, 0);
+        func_8028BB1C_de(&D_8011FE88, item, 0);
     }
 }

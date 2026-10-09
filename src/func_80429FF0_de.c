@@ -19,22 +19,22 @@
    plays the winner's voice on the twentieth frame, raises the banner blink six frames later, and
    fades the two banner sprites out by 30 per frame before hiding them. Returns zero. */
 
-extern struct VersusResultsScreen *D_800E0F10;
-extern s32 D_800CC390;
-extern f32 D_800CC394_de[4];
-extern s32 D_800DE880_de;
-extern s32 D_800DE884_de;
-extern Gfx *D_8010C574;
-extern s32 D_8014DD94;
+extern struct VersusResultsScreen *D_800E4F60;
+extern s32 D_800D15E0;
+extern f32 D_800D15E4[4];
+extern s32 D_800E28D0;
+extern s32 D_800E28D4;
+extern Gfx *D_80110634;
+extern s32 D_80154024;
 
 extern s32 func_80299958_de(void);
 #if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-extern void func_804397F0_de(char *);
+extern void func_804399D0(char *);
 #else
 extern void func_804397E8_de(char *);
 #endif
 #if defined(VERSION_DE)
-extern void func_804397F0_de(char *);
+extern void func_804399D0(char *);
 #else
 extern void func_804397F0_auto(char *);
 #endif
@@ -47,82 +47,82 @@ s32 func_80429FF0_de(void *arg0, void *arg1, s32 event) {
     s32 i;
     s32 alpha;
 
-    if (event == 1 && (D_800E0F10->state == 3 || D_800E0F10->state == 8 || D_800E0F10->state == 9)) {
-        ((struct MenuRenderFill *)&D_800CC390)->mode = 0;
-        D_800CC390 = 1;
-        D_800CC394_de[0] = 255.0f;
-        D_800CC394_de[1] = 255.0f;
-        D_800CC394_de[2] = 255.0f;
-        D_800CC394_de[3] = 255.0f;
-        gDPSetScissor(D_8010C574++, G_SC_NON_INTERLACE, 0, 0, D_800DE880_de - 1, D_800DE884_de - 1);
-        D_800CC394_de[3] = 210.0f;
-        if (func_80299958_de() == 0x14 && D_8014DD94 == 0) {
+    if (event == 1 && (D_800E4F60->state == 3 || D_800E4F60->state == 8 || D_800E4F60->state == 9)) {
+        ((struct MenuRenderFill *)&D_800D15E0)->mode = 0;
+        D_800D15E0 = 1;
+        D_800D15E4[0] = 255.0f;
+        D_800D15E4[1] = 255.0f;
+        D_800D15E4[2] = 255.0f;
+        D_800D15E4[3] = 255.0f;
+        gDPSetScissor(D_80110634++, G_SC_NON_INTERLACE, 0, 0, D_800E28D0 - 1, D_800E28D4 - 1);
+        D_800D15E4[3] = 210.0f;
+        if (func_80299958_de() == 0x14 && D_80154024 == 0) {
             for (i = 0; i < 4; i++) {
 #if defined(VERSION_DE)
                 
 #if defined(VERSION_DE)
-func_804397F0_de
+func_804399D0
 #else
 func_804397F0_auto
 #endif
-(D_800E0F10->panels[i]);
+(D_800E4F60->panels[i]);
 #else
                 
 #if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_804397F0_de
+func_804399D0
 #else
 func_804397E8_de
 #endif
-(D_800E0F10->panels[i]);
+(D_800E4F60->panels[i]);
 #endif
             }
         }
-        if (D_800E0F10->winner == 0) {
+        if (D_800E4F60->winner == 0) {
 #if defined(VERSION_DE)
             
 #if defined(VERSION_DE)
-func_804397F0_de
+func_804399D0
 #else
 func_804397F0_auto
 #endif
-(D_800E0F10->tie);
+(D_800E4F60->tie);
 #else
             
 #if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_804397F0_de
+func_804399D0
 #else
 func_804397E8_de
 #endif
-(D_800E0F10->tie);
+(D_800E4F60->tie);
 #endif
         }
-        D_800CC390 = 0;
-        D_800CC394_de[3] = 255.0f;
+        D_800D15E0 = 0;
+        D_800D15E4[3] = 255.0f;
     }
     if (event == 0 && func_80299958_de() != 0x19) {
-        if (D_800E0F10->frames < 20) {
-            if (++D_800E0F10->frames == 20 && D_800E0F10->winner > 0) {
-                func_804220A8_de(func_8042B1B8_de(func_8042B294_de(D_800E0F10->winnerSlot), D_800E0F10->winner) + 0x259);
-                D_800E0F10->blinkDelay = 0;
+        if (D_800E4F60->frames < 20) {
+            if (++D_800E4F60->frames == 20 && D_800E4F60->winner > 0) {
+                func_804220A8_de(func_8042B1B8_de(func_8042B294_de(D_800E4F60->winnerSlot), D_800E4F60->winner) + 0x259);
+                D_800E4F60->blinkDelay = 0;
             }
         }
-        if (D_800E0F10->blinkDelay != -1) {
-            if (++D_800E0F10->blinkDelay >= 6) {
-                D_800E0F10->blinking = 1;
-                D_800E0F10->blinkDelay = -1;
+        if (D_800E4F60->blinkDelay != -1) {
+            if (++D_800E4F60->blinkDelay >= 6) {
+                D_800E4F60->blinking = 1;
+                D_800E4F60->blinkDelay = -1;
             }
         }
-        if (D_800E0F10->blinking == 1) {
-            alpha = D_800E0F10->banner->value;
+        if (D_800E4F60->blinking == 1) {
+            alpha = D_800E4F60->banner->value;
             alpha -= 30;
             if (alpha <= 0) {
-                D_800E0F10->blinking = 0;
-                func_8040E8D8_de(D_800E0F10->bannerShadow, 0);
-                func_8040E8D8_de(D_800E0F10->banner, 0);
+                D_800E4F60->blinking = 0;
+                func_8040E8D8_de(D_800E4F60->bannerShadow, 0);
+                func_8040E8D8_de(D_800E4F60->banner, 0);
                 alpha = 0xFF;
             }
-            D_800E0F10->banner->value = alpha;
-            D_800E0F10->bannerShadow->value = alpha;
+            D_800E4F60->banner->value = alpha;
+            D_800E4F60->bannerShadow->value = alpha;
         }
     }
     return 0;

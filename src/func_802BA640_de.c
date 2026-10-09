@@ -2,10 +2,10 @@
 #include "types.h"
 
 /** Returns D_800D8440. */
-extern void *D_800D4410;
+extern void *D_800D8440;
 
 void *func_802BA640_de(void) {
-    return D_800D4410;
+    return D_800D8440;
 }
 
 extern void *D_800D4414;

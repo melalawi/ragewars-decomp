@@ -12,22 +12,22 @@
 
 
 
-extern struct Settings_func_80444548_de D_80142242;
-extern char *D_800D35C8;
-extern char *D_800D35CC;
+extern struct Settings_func_80444548_de D_80146302;
+extern char *D_800D75F4;
+extern char *D_800D75F8;
 
 s32 func_804445AC_de(struct Field *field, struct Holder_func_80444548_de *holder) {
-    struct Settings_func_80444548_de *settings = &D_80142242;
+    struct Settings_func_80444548_de *settings = &D_80146302;
 
     if (holder->owner != 0 && holder->owner->settings != 0) {
         settings = holder->owner->settings;
     }
     switch (settings->value) {
     case 0:
-        field->text = &D_800D35CC;
+        field->text = &D_800D75F8;
         break;
     case 1:
-        field->text = &D_800D35C8;
+        field->text = &D_800D75F4;
         break;
     }
     return 0;

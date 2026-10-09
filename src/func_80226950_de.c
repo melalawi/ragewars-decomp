@@ -54,10 +54,10 @@ void func_80226950_de(PlayerList *list, int count) {
 
 
 
-extern f32 D_800CD738;
-extern Menu_func_80226A34_de D_8014155C;
-extern Game D_801427BC;
-extern s32 D_801427D4;
+extern f32 D_800D2988;
+extern Menu_func_80226A34_de D_8014561C;
+extern Game D_8014687C;
+extern s32 D_80146894;
 extern void func_802631B0_de(char *, SharedPlayer_func_80226A34_de *);
 extern void func_8022C490_de(SharedPlayer_func_80226A34_de *);
 extern void func_80220ED4_de(SharedPlayer_func_80226A34_de *);
@@ -81,20 +81,20 @@ void func_80226A34_de(World_func_80226A34_de *world) {
     SharedPlayer_func_80226A34_de *player;
     Rules *rules;
 
-    if (D_801427BC.state != 0xB && D_801427BC.state != 8) {
-        frameTime = D_800CD738;
+    if (D_8014687C.state != 0xB && D_8014687C.state != 8) {
+        frameTime = D_800D2988;
         world->spin += 5;
         if (world->spin >= 360) {
             world->spin = 0;
         }
-        rules = &D_801427BC.rules;
+        rules = &D_8014687C.rules;
         for (player = world->players; player != 0; player = player->views16E0.view16E0_2.next) {
             func_802631B0_de(player->views5E8.view688_33.body, player);
-            D_800CD738 = frameTime;
+            D_800D2988 = frameTime;
             if (rules->teams != 0 || rules->teamRule != 0) {
                 func_8022C490_de(player);
             }
-            if (D_801427D4 == 0) {
+            if (D_80146894 == 0) {
                 func_80220ED4_de(player);
             }
             func_80220A80_de(player, player);
@@ -105,10 +105,10 @@ void func_80226A34_de(World_func_80226A34_de *world) {
             } else if (func_8026435C_de(player->views5E8.view698_36.controller) != 0) {
                 if (func_80245784_de() != 0 || func_8024576C_de() != 0) {
                     func_8024570C_de();
-                } else if (func_802A23B4_de() == 0 && func_80442A28_de(&D_8014155C) == 0 && player->views5E4.view5E4_3.alive != 0
+                } else if (func_802A23B4_de() == 0 && func_80442A28_de(&D_8014561C) == 0 && player->views5E4.view5E4_3.alive != 0
                            && player->views5DC.view5DC_2.view != 0 && player->views5DC.view5DC_2.view->unk564 == 0
-                           && ((&D_8014155C.rules)->locked == 0 || D_8014155C.allowed == 0)) {
-                    D_8014155C.open = 1;
+                           && ((&D_8014561C.rules)->locked == 0 || D_8014561C.allowed == 0)) {
+                    D_8014561C.open = 1;
                     func_8025E360_de();
                     func_8025E3A8_de();
                     func_80218464_de(player->views5E8.view938_130.strokes);
@@ -121,6 +121,6 @@ void func_80226A34_de(World_func_80226A34_de *world) {
         func_802283B8_de(world);
         func_80227038_de(world);
         func_80227E8C_de(world);
-        D_800CD738 = frameTime;
+        D_800D2988 = frameTime;
     }
 }
