@@ -117,82 +117,57 @@ s32 func_80229C0C_de(void *arg0, s32 arg1) {
         offset = 0x3E8;
     } else {
         state = ((func_80229BE0_S1 *)(arg0))->unk5D8;
-        {
-        s32 sw_state_value = ((func_80229BE0_S2 *)(state))->unk80;
-        if ((unsigned int)sw_state_value > 16) {
-            goto sw_state_invalid;
-        }
-        switch (sw_state_value) {
-        case 0: goto sw_state_invalid;
-        case 1: goto sw_state_1;
-        case 2: goto sw_state_2;
-        case 3: goto sw_state_3;
-        case 4: goto sw_state_4;
-        case 5: goto sw_state_5;
-        case 6: goto sw_state_6;
-        case 7: goto sw_state_7;
-        case 8: goto sw_state_8;
-        case 9: goto sw_state_9;
-        case 10: goto sw_state_10;
-        case 11: goto sw_state_11;
-        case 12: goto sw_state_12;
-        case 13: goto sw_state_13;
-        case 14: goto sw_state_14;
-        case 15: goto sw_state_9;
-        case 16: goto sw_state_13;
-        }
-    }
-    do {
-        sw_state_invalid:
+        switch (((func_80229BE0_S2 *)(state))->unk80) {
+        default:
             ((func_80229BE0_S2 *)(state))->unk80 = 0;
+        case 0:
             offset = 0;
             break;
-        sw_state_1:
+        case 1:
             offset = 0x44C;
             break;
-        sw_state_2:
+        case 2:
             offset = 0xC8;
             break;
-        sw_state_3:
+        case 3:
             offset = 0x12C;
             break;
-        sw_state_4:
+        case 4:
             offset = 0x4B0;
             break;
-        sw_state_5:
+        case 5:
             offset = 0x64;
             break;
-        sw_state_6:
+        case 6:
             offset = 0x258;
             break;
-        sw_state_7:
+        case 7:
             offset = 0x384;
             break;
-        sw_state_8:
+        case 8:
             offset = 0x320;
             break;
-        sw_state_9:
-        sw_state_15:
+        case 9:
+        case 15:
             offset = 0x2BC;
             break;
-        sw_state_10:
+        case 10:
             offset = 0x1F4;
             break;
-        sw_state_11:
+        case 11:
             offset = 0x640;
             break;
-        sw_state_12:
+        case 12:
             offset = 0x6A4;
             break;
-        sw_state_13:
-        sw_state_16:
+        case 13:
+        case 16:
             offset = 0x708;
             break;
-        sw_state_14:
+        case 14:
             offset = 0x76C;
             break;
-
-    } while (0);
+        }
     }
     return arg1 + offset;
 }
@@ -289,7 +264,7 @@ void func_80229D28_de(Player16C0 *player) {
 /* Scales damage by ownership and player state and suppresses friendly damage when configured. */
 
 extern func_80207B5C_S2 D_801468A0;
-extern const f32 D_800C7DB0[],D_800C7DB8[],D_800C7DC0[],D_800C7DC8[],D_800C2CE0_de[];
+extern f32 D_800C2CC4_de, D_800C7DB8, D_800C2CCC_de, D_800C7DC0, D_800C2CD4_de, D_800C7DC8, D_800C2CDC_de, D_800C2CE0_de;
 void func_80229FA0_de(Obj_func_80229FA0_de *arg0, Damage_func_80229FA0_de *arg1) {
     f32 var_f0;
     f32 var_f1;
@@ -310,7 +285,7 @@ void func_80229FA0_de(Obj_func_80229FA0_de *arg0, Damage_func_80229FA0_de *arg1)
                     if (temp_a2_2->unk100 & 0x300000) {
                         var_a3 = temp_a2_2;
                         if (var_a3 == arg0) {
-                            arg1->unk4 = (s32) ((f32) arg1->unk4 * 0.00390625f * 0.25f * 256.0f);
+                            arg1->unk4 = (s32) ((f32) arg1->unk4 * D_800C2CC4_de * D_800C7DB8 * D_800C2CCC_de);
                         }
                     } else if (temp_a2_2->unkE4 == 0x40C) {
                         var_a3 = temp_a2_2->unk1D8;
@@ -333,10 +308,14 @@ void func_80229FA0_de(Obj_func_80229FA0_de *arg0, Damage_func_80229FA0_de *arg1)
                 var_a3->unk5D8->unk93 = 0U;
                 /* fallthrough */
             case 0:
-                var_f1=(f32)arg1->unk4*0.00390625f; var_f1*= 0.6000000238418579f; arg1->unk4=(s32)(var_f1*256.0f);
+                var_f1 = (f32) arg1->unk4 * D_800C7DC0;
+                var_f1 *= D_800C2CD4_de;
+                arg1->unk4 = (s32) (var_f1 * D_800C2CE0_de);
                 break;
             case 1:
-                var_f1=(f32)arg1->unk4*0.00390625f; var_f1*= 0.800000011920929f; arg1->unk4=(s32)(var_f1*256.0f);
+                var_f1 = (f32) arg1->unk4 * D_800C7DC8;
+                var_f1 *= D_800C2CDC_de;
+                arg1->unk4 = (s32) (var_f1 * D_800C2CE0_de);
                 break;
             }
         }

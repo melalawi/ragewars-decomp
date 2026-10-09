@@ -12,9 +12,9 @@ extern s16 D_800D4210[128]; /* eqpower */
 #if defined(VERSION_DE)
 extern char D_800C7600[]; /* Resident "EX" assertion expression. */
 #elif defined(VERSION_EU)
-extern char D_800C81F0[]; /* Resident "EX" assertion expression. */
+extern const double D_800C81F0; /* Resident "EX" assertion expression. */
 #elif defined(VERSION_EU_X)
-extern char D_800C8BC0[]; /* Resident "EX" assertion expression. */
+extern const float D_800C8BC0; /* Resident "EX" assertion expression. */
 #elif defined(VERSION_US)
 extern char D_800C7520[]; /* Resident "EX" assertion expression. */
 #else
@@ -38,9 +38,9 @@ Acmd *func_802B4C7C_de(void *filter, s16 *inp, s16 *outp, s32 outCount, s32 samp
 #if defined(VERSION_DE)
     ((source) ? ((void)0) : func_802BAC50_de(D_800C7600, D_800C7604, 366));
 #elif defined(VERSION_EU)
-    ((source) ? ((void)0) : func_802BAC50_de(D_800C81F0, D_800C7604, 366));
+    ((source) ? ((void)0) : func_802BAC50_de(&D_800C81F0, D_800C7604, 366));
 #elif defined(VERSION_EU_X)
-    ((source) ? ((void)0) : func_802BAC50_de(D_800C8BC0, D_800C7604, 366));
+    ((source) ? ((void)0) : func_802BAC50_de(&D_800C8BC0, D_800C7604, 366));
 #elif defined(VERSION_US)
     ((source) ? ((void)0) : func_802BAC50_de(D_800C7520, D_800C7604, 366));
 #else

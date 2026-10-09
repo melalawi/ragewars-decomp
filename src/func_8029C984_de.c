@@ -8,6 +8,7 @@
  * 0x800CAC34 = 1.0 (float, D_800CAC34 in this cartridge's tables)
  */
 void func_8029BBB0_de(f32, f32 *, f32 *);
+extern f32 D_800CAC34, D_800C5AF4, D_800C5AF8_de, D_800C5AFC;
 /* Build a rotation matrix from the three Euler angles in arg1. */
 void func_8029C984_de(func_8029D984_S2 *arg0, Vec3 *arg1) {
     f32 sp10;
@@ -57,7 +58,7 @@ void func_8029C984_de(func_8029D984_S2 *arg0, Vec3 *arg1) {
     arg0->unk14 = p6;
     arg0->unkC = arg0->unk1C = arg0->unk2C = arg0->unk30 = arg0->unk34 = arg0->unk38 = 0.0f;
     arg0->unk28 = p8;
-    arg0->unk3C = 1.0f;
+    arg0->unk3C = D_800CAC34;
     arg0->unk0 = p2 + p9;
     arg0->unk10 = p10 - p3;
     arg0->unk8 = p11 - p7;
@@ -244,10 +245,19 @@ static inline f32 safe_sqrt(f32 x) {
     return func_802B72B0_de(x);
 }
 
-static inline void normalize(Vec3 *v) {
+static inline void normalize_x(Vec3 *v) {
     f32 scale;
 
-    scale = 1.0f / safe_sqrt(v->x * v->x + v->y * v->y + v->z * v->z);
+    scale = D_800C5AF4 / safe_sqrt(v->x * v->x + v->y * v->y + v->z * v->z);
+    v->x *= scale;
+    v->y *= scale;
+    v->z *= scale;
+}
+
+static inline void normalize_y(Vec3 *v) {
+    f32 scale;
+
+    scale = D_800C5AF8_de / safe_sqrt(v->x * v->x + v->y * v->y + v->z * v->z);
     v->x *= scale;
     v->y *= scale;
     v->z *= scale;
@@ -273,8 +283,8 @@ void func_8029D000_de(Plane_func_802965B0_de *m) {
     y.x = m[1].normal.x;
     y.y = m[1].normal.y;
     y.z = m[1].normal.z;
-    normalize(&x);
-    normalize(&y);
+    normalize_x(&x);
+    normalize_y(&y);
     z = cross(&x, &y);
     y = cross(&z, &x);
     {
@@ -339,7 +349,7 @@ s32 func_8029D248_de(f32 *out, f32 *input)
     absoluteDeterminant = -determinant;
   }
   result = 1;
-  if (!(absoluteDeterminant < (9.999999747378752e-05f)))
+  if (!(absoluteDeterminant < D_800C5AFC))
   {
     affineOne = D_800C5B00_de;
     reciprocal = affineOne / determinant;

@@ -4,16 +4,6 @@
 #include "span_1000/code_802BD1A8.h"
 #include "types.h"
 
-extern void *jtbl_800CB490[];
-
-
-
-
-
-
-
-
-
 extern u8 D_8014D3E2;
 extern s32 D_8014D3E8;
 extern s16 D_B2000008;
@@ -23,11 +13,8 @@ extern void func_802AE260_us_rev1(void);
 extern s32 func_802AE380_us_rev1(u8 *);
 extern s32 func_802AE5AC_us_rev1(s32);
 
-
-
 extern void func_802AF33C_us_rev1(void);
 extern void func_802AF424_us_rev1(void);
-
 
 extern void func_802BD010_de(u32, u32);
 extern void func_802AF0E4_us_rev1(void);
@@ -66,28 +53,17 @@ void func_802AF990_us_rev1(void) {
         if (func_802AE380_us_rev1(command) == 0) {
             continue;
         }
-        {
-        static void *sw_command_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_command_0x20, &&sw_command_0x43, &&sw_command_0x47, &&sw_command_0x44, &&sw_command_0x45, &&sw_command_0x46, &&sw_command_0x22, &&sw_command_0x40, &&sw_command_0x41, &&sw_command_0x42, &&sw_command_0x18, &&sw_command_0x23, &&sw_command_default
-        };
-        s32 command_value = state.command;
-        s32 sw_command_value = command_value - 24;
-        if ((unsigned int)sw_command_value > 47) {
-            goto sw_command_default;
-        }
-        goto *jtbl_800CB490[sw_command_value];
-    }
-    do {
-        sw_command_0x20:
+        switch (state.command) {
+        case 0x20:
             func_802AEF84_us_rev1();
             break;
-        sw_command_0x43:
+        case 0x43:
             func_802AF544_us_rev1();
             break;
-        sw_command_0x47:
+        case 0x47:
             func_802AF6A0_us_rev1();
             break;
-        sw_command_0x44:
+        case 0x44:
             func_802AE380_us_rev1(address);
             if (D_8014D3E8 != 0) break;
             word = state.address.byte << 8;
@@ -105,13 +81,13 @@ void func_802AF990_us_rev1(void) {
             state.address.word = word;
             func_802AE5AC_us_rev1(*(u8 *)word);
             break;
-        sw_command_0x45:
+        case 0x45:
             func_802AF33C_us_rev1();
             break;
-        sw_command_0x46:
+        case 0x46:
             func_802AF424_us_rev1();
             break;
-        sw_command_0x22:
+        case 0x22:
             func_802AE380_us_rev1(callback);
             if (D_8014D3E8 != 0) break;
             word = state.callback.byte << 8;
@@ -134,7 +110,7 @@ void func_802AF990_us_rev1(void) {
                 ((void (*)(void))word)();
             }
             break;
-        sw_command_0x40:
+        case 0x40:
             func_802AE380_us_rev1(output);
             if (D_8014D3E8 != 0) break;
             word = state.output.byte << 8;
@@ -155,20 +131,18 @@ void func_802AF990_us_rev1(void) {
                 *(u8 *)state.output.word = state.output.value;
             }
             break;
-        sw_command_0x41:
+        case 0x41:
             func_802AF0E4_us_rev1();
             break;
-        sw_command_0x42:
+        case 0x42:
             func_802AF1F0_us_rev1();
             break;
-        sw_command_0x18:
+        case 0x18:
             func_802AF7F8_us_rev1();
             break;
-        sw_command_0x23:
+        case 0x23:
             func_802AEE48_us_rev1();
             break;
-        
-    sw_command_default:;
-    } while (0);
+        }
     }
 }

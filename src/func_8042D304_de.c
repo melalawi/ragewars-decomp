@@ -62,31 +62,26 @@ void func_8042D304_de(s32 player, s32 kind, unsigned short group) {
     func_8040E8D8_de(item, 1);
     item->alpha = 0x96;
     rank = record[0x92];
-    if (rank >= 5) {
-        goto hidden;
-    }
     switch (rank) {
-        case 0: goto rank_0;
-        case 1: goto rank_1;
-        case 2: goto rank_2;
-        case 3: goto rank_4;
-        case 4: goto done;
-        }
-rank_0:
-    frame = 0x63;
-    goto done;
-rank_1:
-    frame = 0x62;
-    goto done;
-rank_2:
-    frame = 0x61;
-    goto done;
-rank_4:
-    frame = 0x5F;
-    goto done;
-hidden:
-    func_8040E8D8_de(item, 0);
-    frame = 0x60;
-done:
+    case 0:
+        frame = 0x63;
+        break;
+    case 1:
+        frame = 0x62;
+        break;
+    case 2:
+        frame = 0x61;
+        break;
+    case 3:
+        frame = 0x5F;
+        break;
+    case 4:
+        frame = 0x60;
+        break;
+    default:
+        func_8040E8D8_de(item, 0);
+        frame = 0x60;
+        break;
+    }
     item->frame = frame;
 }

@@ -8,7 +8,6 @@
    0x970, opens its 0x14B child and shows that through func_8040E8D8_de. The loop walks the table with
    its own pointer, as the cartridge's strength-reduced dispatch does. */
 extern ResultsOptionsScreen *D_800E4690;
-extern void *jtbl_800DD9F0[];
 extern void *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(void *, s32);
 
@@ -21,34 +20,27 @@ enum { RESULTS_OPTION_329 = 329, RESULTS_OPTION_331 = 331, RESULTS_OPTION_332 = 
 #endif
 
 void func_80428700_de(void) {
-    /* FAKEMATCH: retain the recovered table labels and pointer-walking dispatch. */
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&option_0, &&option_1, &&option_2, &&option_3, &&option_4, &&open
-    };
     s32 id = 0;
     s32 option;
-    void **entry;
 
-    for (option = 0, entry = jtbl_800DD9F0; option < 5; entry++, option++) {
-        if ((u32)option >= 5) {
-            goto open;
+    for (option = 0; option < 5; option++) {
+        switch (option) {
+        case 0:
+            id = RESULTS_OPTION_329;
+            break;
+        case 1:
+            id = RESULTS_OPTION_332;
+            break;
+        case 2:
+            id = RESULTS_OPTION_333;
+            break;
+        case 3:
+            id = RESULTS_OPTION_334;
+            break;
+        case 4:
+            id = RESULTS_OPTION_335;
+            break;
         }
-        goto **entry;
-    option_0:
-        id = RESULTS_OPTION_329;
-        goto open;
-    option_1:
-        id = RESULTS_OPTION_332;
-        goto open;
-    option_2:
-        id = RESULTS_OPTION_333;
-        goto open;
-    option_3:
-        id = RESULTS_OPTION_334;
-        goto open;
-    option_4:
-        id = RESULTS_OPTION_335;
-    open:
         func_8040E8D8_de(func_8040EC30_de(func_8040EC30_de(D_800E4690->parent, id), RESULTS_OPTION_331), 1);
     }
 }

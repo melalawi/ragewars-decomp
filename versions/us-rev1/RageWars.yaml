@@ -719,6 +719,7 @@ segments:
       - [0x35BDC, c, "func_80234FEC_de"]
       - [0x366D0, asm, "func_80235AE0_de"]
       - [0x36ED8, c, "func_802362E8_de"]
+      - [0x371FC, asm, "func_8023660C_de"]
       - [0x37464, asm, "func_80236874_de"]
       - [0x37B0C, c, "func_80236F1C_de"]
       - [0x38C40, asm, "func_80238050_de"]

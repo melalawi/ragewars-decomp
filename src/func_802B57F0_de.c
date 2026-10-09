@@ -12,13 +12,13 @@
 
 typedef struct ALLowPass_s ALLowPass;
 #if defined(VERSION_DE)
-extern char D_800C7780[];
+extern const float D_800C7780;
 #elif defined(VERSION_EU)
-extern char D_800C8370[];
+extern const float D_800C8370;
 #elif defined(VERSION_EU_X)
 extern char D_800C8D40[];
 #elif defined(VERSION_US)
-extern char D_800C76A0[];
+extern const float D_800C76A0;
 #else
 extern char D_800CC9D0[];
 #endif
@@ -38,13 +38,13 @@ Acmd *func_802B57F0_de(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, 
 
     if (!source)
 #if defined(VERSION_DE)
-        func_802BAC50_de(D_800C7780, D_800C7784_de, 75);
+        func_802BAC50_de(&D_800C7780, D_800C7784_de, 75);
 #elif defined(VERSION_EU)
-        func_802BAC50_de(D_800C8370, D_800C7784_de, 75);
+        func_802BAC50_de(&D_800C8370, D_800C7784_de, 75);
 #elif defined(VERSION_EU_X)
         func_802BAC50_de(D_800C8D40, D_800C7784_de, 75);
 #elif defined(VERSION_US)
-        func_802BAC50_de(D_800C76A0, D_800C7784_de, 75);
+        func_802BAC50_de(&D_800C76A0, D_800C7784_de, 75);
 #else
         func_802BAC50_de(D_800CC9D0, D_800C7784_de, 75);
 #endif

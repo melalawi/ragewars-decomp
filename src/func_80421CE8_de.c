@@ -25,12 +25,21 @@ s32 func_80421CE8_de(void) {
         return 0;
     }
     switch (message) {
+#if defined(VERSION_EU_X)
+        case 0: goto cancel;
+        case 1: goto option_0;
+        case 2: goto option_3;
+        case 3: goto option_4;
+        case 4: goto option_2;
+        case 5: goto option_1;
+#else
         case 0: goto option_4;
         case 1: goto option_3;
         case 2: goto option_0;
         case 3: goto option_1;
         case 4: goto cancel;
         case 5: goto option_2;
+#endif
         }
 option_0:
     option = 0;

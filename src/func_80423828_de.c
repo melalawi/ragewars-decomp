@@ -41,6 +41,7 @@ s32 func_80423828_de(void) {
         goto other;
     }
     switch (message) {
+#if defined(VERSION_DE)
         case 0: goto reopen;
         case 1: goto retry;
         case 2: goto code_14;
@@ -49,6 +50,18 @@ s32 func_80423828_de(void) {
         case 5: goto other;
         case 6: goto code_13;
         case 7: goto code_12;
+#else
+        case 0: goto code_13;
+        case 1: goto other;
+        case 2: goto other;
+        case 3: goto other;
+        case 4: goto other;
+        case 5: goto code_12;
+        case 6: goto reopen;
+        case 7: goto retry;
+        case 8: goto code_14;
+        case 9: goto code_17;
+#endif
         }
 reopen:
     func_802A2394_de();
