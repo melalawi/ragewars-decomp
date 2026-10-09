@@ -3843,7 +3843,7 @@ segments:
       - [0xD28D7, data, "rodata/unresolved/800D1CD7"]
       - [0x0D3820, data, "src/ragewars_tlb_snapshot_us_rev1.c"]
       - [0x0D3918, data, "rodata/writable/800D2C20_0D3918"]
-      - [0xD3920, data, "rodata/unresolved/800D2D20"]
+      - [0xD3920, .data, "rodata/unresolved/800D2D20"]
       - [0xD3C2C, data, "rodata/writable/800D302C"]
       - [0xD3C30, data, "rodata/unresolved/800D3030"]
       - [0xD3C40, data, "rodata/writable/800D3040"]
