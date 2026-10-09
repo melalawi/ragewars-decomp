@@ -13,7 +13,7 @@ extern struct StateFlags D_800E51F8[];
 extern struct StateFlags D_800E5214[];
 extern struct StateFlags D_800E5240[];
 #if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
-extern char *D_800D34D4_de;
+extern char *D_800D34D4_de[];
 #elif defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 extern char *D_800E1DA4[];
@@ -48,7 +48,7 @@ void func_8042A990_de(void) {
     D_800E4F60->item = func_8040EC30_de(D_800E4F60->window, table[D_800E4F60->selection].flags);
     if (D_800E4F60->selection == 0) {
 #if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
-        func_802A025C_de(D_800E4F60->text, D_800D34D4_de);
+        func_802A025C_de(D_800E4F60->text, D_800D34D4_de[0]);
 #elif defined(VERSION_EU) || defined(VERSION_EU_X)
         func_802A025C_de(D_800E4F60->text, D_800E1DA4[D_80152789]);
 #endif

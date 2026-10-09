@@ -3674,7 +3674,6 @@ extern char D_800D3834[];
 /* unbake published declaration: published_ed1bdaf9ab509a3db8a7e28a */
 
 /* unbake published declaration: published_ed4c98b9d22c318da231157f */
-extern char *D_800D34D4_de;
 
 /* unbake published declaration: published_ed7283ce6021563f6661f567 */
 extern Link_func_8023CC08_de *D_800FFE24;
