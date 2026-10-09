@@ -24,8 +24,8 @@ name = "code_802022E0"
 segment = "span_1000"
 members = ["func_802022E0_de", "func_8020238C_de", "func_802023A8_de", "func_802023C4_de", "func_802023D0_de", "func_802023DC_de", "func_80202460_de", "func_80202838_de", "func_80202994_de", "func_80202C98_eu_x", "func_80202CA0_de", "func_80202E4C_de", "func_80202FDC_de", "func_80203278_de", "func_802034A4_de", "func_80203848_de", "func_8020388C_de", "func_80203908_de", "func_802039F8_de", "func_80203A94_de", "func_80203AB0_de", "func_80203AD8_de", "func_80203B1C_de", "func_80203B60_de", "func_80203C08_de", "func_80203C40_de", "func_80203C84_de", "func_80203CFC_de", "func_80203D4C_de", "func_80203DF0_de", "func_80203E78_de", "func_80203EB0_de"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+signals = ["callee", "version"]
+subsystem = "sdk"
 sdk = false
 
 [[group]]
@@ -79,7 +79,7 @@ segment = "span_1000"
 members = ["func_80209AE8_de", "func_80209B64_de", "func_80209BE0_de", "func_80209C5C_de", "func_80209CD8_de", "func_80209DAC_de", "func_80209E80_de", "func_8020A028_de", "func_8020A2D4_de", "func_8020A458_de", "func_8020A604_de", "func_8020A6D8_de", "func_8020A7B0_de", "func_8020A884_de", "func_8020A95C_de", "func_8020AA0C_de", "func_8020AA40_de", "func_8020ABF0_de"]
 evidence = "inferred"
 signals = ["callee", "cap"]
-subsystem = "unknown"
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -88,16 +88,16 @@ segment = "span_1000"
 members = ["func_8020AF9C_de", "func_8020B95C_de", "func_8020BC50_de", "func_8020BE7C_de", "func_8020C078_de", "func_8020C2E8_de", "func_8020C5A0_de", "func_8020C994_de", "func_8020C9B0_de", "func_8020C9CC_de", "func_8020CA10_de", "func_8020CB3C_de", "func_8020CC0C_de", "func_8020CCE8_de", "func_8020CD74_de", "func_8020CFE0_de", "func_8020D014_de", "func_8020D070_de", "func_8020D0CC_de", "func_8020D114_de", "func_8020D1CC_de", "func_8020D1FC_de", "func_8020D220_de", "func_8020D280_de", "func_8020D28C_de", "func_8020D2FC_de", "func_8020D308_de", "func_8020D318_de", "func_8020D328_de", "func_8020D35C_de"]
 evidence = "inferred"
 signals = ["callee", "cap", "rodata"]
-subsystem = "unknown"
+subsystem = "math"
 sdk = false
 
 [[group]]
 name = "code_8020D370"
 segment = "span_1000"
-members = ["func_8020D370_de", "func_8020D4AC_de", "func_8020D6E4_de", "func_8020D9C0_de", "func_8020DB14_de", "func_8020DC04_us", "func_8020DC24_eu_x", "func_8020DC10_de", "func_8020DC24_eu", "func_8020DC60_de", "func_8020DCA0_de", "func_8020DD04_de", "func_8020DDF4_eu", "func_8020E674_de", "func_8020EA04_us", "func_8020EA24_eu_x", "func_8020EA10_de", "func_8020EA24_eu", "func_8020EAB4_de"]
+members = ["func_8020D370_de", "func_8020D4AC_de", "func_8020D6E4_de", "func_8020D9C0_de", "func_8020DB14_de", "func_8020DC04_us", "func_8020DC24_eu", "func_8020DC24_eu_x", "func_8020DC10_de", "func_8020DC60_de", "func_8020DCA0_de", "func_8020DD04_de", "func_8020DDF4_eu", "func_8020E674_de", "func_8020EA04_us", "func_8020EA24_eu", "func_8020EA24_eu_x", "func_8020EA10_de", "func_8020EAB4_de"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+signals = ["callee", "version"]
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -112,10 +112,10 @@ sdk = false
 [[group]]
 name = "code_8020FDB0"
 segment = "span_1000"
-members = ["func_8020FDB0_de", "func_80210018_de", "func_80210040_de", "func_80210068_de", "func_80210090_de", "func_802100B8_de", "func_802100E0_de", "func_80210198_eu", "func_80210248_eu", "func_8021035C_de", "func_802106DC_de", "func_802106FC_eu_x", "func_802106FC_eu"]
+members = ["func_8020FDB0_de", "func_80210018_de", "func_80210040_de", "func_80210068_de", "func_80210090_de", "func_802100B8_de", "func_802100E0_de", "func_80210198_eu", "func_80210248_eu", "func_8021035C_de", "func_802106FC_eu", "func_802106DC_de", "func_802106FC_eu_x"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+signals = ["callee", "version"]
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -186,8 +186,8 @@ name = "code_8022A274"
 segment = "span_1000"
 members = ["func_8022A2A0_de", "func_8022A328_de", "func_8022A398_de", "func_8022A3F8_de", "func_8022A414_de", "func_8022A420_de", "func_8022A480_de", "func_8022A504_de", "func_8022A5A0_de", "func_8022A5C0_de", "func_8022A5F4_de", "func_8022A634_de", "func_8022A68C_de", "func_8022A748_de", "func_8022A83C_de", "func_8022A880_de", "func_8022A8C8_de", "func_8022A8F0_de", "func_8022A928_de", "func_8022A940_de", "func_8022A95C_de", "func_8022AA44_de", "func_8022AA9C_de", "func_8022AAD4_de", "func_8022AB20_de", "func_8022AB9C_de", "func_8022AC00_de", "func_8022ACB8_de", "func_8022ADB0_de", "func_8022ADBC_de", "func_8022ADF0_de", "func_8022AE28_de"]
 evidence = "inferred"
-signals = ["cap"]
-subsystem = "unknown"
+signals = []
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -231,8 +231,8 @@ name = "code_8022D944"
 segment = "span_1000"
 members = ["func_8022D954_de", "func_8022D970_de", "func_8022DA04_de", "func_8022DA30_de", "func_8022DA84_de", "func_8022DAB0_de", "func_8022DB04_de", "func_8022DBC4_de", "func_8022DBE4_de", "func_8022DC00_de", "func_8022DC14_de", "func_8022DC1C_de", "func_8022DC44_de", "func_8022DD94_de", "func_8022DE58_de", "func_8022DFA8_de", "func_8022E0B0_de", "func_8022E130_de", "func_8022E17C_de", "func_8022E260_de", "func_8022E290_de", "func_8022E3C4_de", "func_8022E43C_de", "func_8022E588_de", "func_8022E5EC_de", "func_8022E640_de", "func_8022E694_de", "func_8022E6A4_de", "func_8022E758_de", "func_8022E78C_de", "func_8022E890_de", "func_8022E8D0_de"]
 evidence = "inferred"
-signals = ["cap"]
-subsystem = "unknown"
+signals = []
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -265,10 +265,10 @@ sdk = false
 [[group]]
 name = "code_8023330C"
 segment = "span_1000"
-members = ["func_8023331C_de", "func_80233344_de", "func_8023334C_de", "func_80233438_de", "func_80233544_de", "func_8023356C_de", "func_80233598_de", "func_802335EC_de", "func_8023371C_de", "func_8023378C_de", "func_802337A8_us", "func_80233808_eu_x", "func_802337D0_de", "func_802337C8_de", "func_802337D8_eu"]
+members = ["func_8023331C_de", "func_80233344_de", "func_8023334C_de", "func_80233438_de", "func_80233544_de", "func_8023356C_de", "func_80233598_de", "func_802335EC_de", "func_8023371C_de", "func_8023378C_de", "func_802337A8_us", "func_802337D8_eu", "func_802337C8_de", "func_80233808_eu_x", "func_802337D0_de"]
 evidence = "inferred"
-signals = ["cap", "version"]
-subsystem = "unknown"
+signals = ["version"]
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -285,8 +285,8 @@ name = "code_802393F4"
 segment = "span_1000"
 members = ["func_80239404_de", "func_8023940C_de", "func_8023941C_de", "func_8023942C_de", "func_8023946C_de", "func_802394B4_de", "func_802394BC_de", "func_802395A4_de", "func_80239678_de", "func_80239740_de", "func_80239770_de", "func_80239908_de", "func_80239AF4_de", "func_80239B64_de", "func_80239C20_de", "func_80239C3C_de", "func_80239C9C_de", "func_80239CE0_de", "func_80239CEC_de", "func_80239D00_de", "func_80239D1C_de", "func_80239D90_de", "func_80239DE8_de", "func_80239E48_de", "func_80239EA4_de", "func_80239FCC_de", "func_80239FD4_de", "func_80239FDC_de", "func_8023A114_de", "func_8023A190_de", "func_8023A1F4_de", "func_8023A24C_de"]
 evidence = "inferred"
-signals = ["cap"]
-subsystem = "unknown"
+signals = []
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -299,21 +299,30 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_8023B9A0"
+name = "code_8023B9B4"
 segment = "span_1000"
-members = ["func_8023B9C0_eu", "func_8023B9A4_de", "func_8023B9B0_de", "func_8023B9B4_eu", "func_8023B9F0_eu_x", "func_8023BC74_de", "func_8023BD34_de", "func_8023C084_de", "func_8023C1F0_de", "func_8023C6BC_de", "func_8023C750_de", "func_8023C78C_de", "func_8023C85C_de", "func_8023C8D4_de", "func_8023C924_de", "func_8023CB60_de", "func_8023CB90_de", "func_8023CBC0_de", "func_8023CC08_de", "func_8023CCD4_de", "func_8023CDD4_de", "func_8023CE9C_de", "func_8023CFB0_us", "func_8023D010_eu_x", "func_8023D018_eu_x", "func_8023CFD0_de", "func_8023CFE0_de", "func_8023CFD8_de", "func_8023CFD8_eu", "func_8023CFE8_eu", "func_8023D158_de"]
+members = ["func_8023B9B4_eu", "func_8023B9A4_de", "func_8023B9B0_de"]
+evidence = "inferred"
+signals = ["version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_8023B9F0"
+segment = "span_1000"
+members = ["func_8023B9F0_eu_x", "func_8023B9C0_eu", "func_8023BC74_de", "func_8023BD34_de", "func_8023C084_de", "func_8023C1F0_de", "func_8023C6BC_de", "func_8023C750_de", "func_8023C78C_de", "func_8023C85C_de", "func_8023C8D4_de", "func_8023C924_de", "func_8023CB60_de", "func_8023CB90_de", "func_8023CBC0_de", "func_8023CC08_de", "func_8023CCD4_de", "func_8023CDD4_de", "func_8023CE9C_de", "func_8023CFB0_us", "func_8023CFD8_eu", "func_8023CFE8_eu", "func_8023CFD0_de", "func_8023CFD8_de", "func_8023D010_eu_x", "func_8023D018_eu_x", "func_8023CFE0_de", "func_8023D158_de"]
 evidence = "inferred"
 signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+subsystem = "math"
 sdk = false
 
 [[group]]
 name = "code_8023D370"
 segment = "span_1000"
-members = ["func_8023D380_de", "func_8023DAA0_de", "func_8023DDC4_de", "func_8023DF70_de", "func_8023E178_de", "func_8023E45C_de", "func_8023E690_de", "func_8023E6D0_de", "func_8023E6EC_de", "func_8023E838_de", "func_8023E854_de", "func_8023E864_de", "func_8023E8B4_de", "func_8023E8D4_de", "func_8023EA44_de", "func_8023EBD4_de", "func_8023EBFC_de", "func_8023EC54_de", "func_8023ECBC_de", "func_8023ED64_de", "func_8023EDD8_us", "func_8023EE38_eu_x", "func_8023EE00_de", "func_8023EDF8_de", "func_8023EE08_eu", "func_8023EE34_de", "func_8023EE60_de", "func_8023EEFC_de", "func_8023EF0C_eu"]
+members = ["func_8023D380_de", "func_8023DAA0_de", "func_8023DDC4_de", "func_8023DF70_de", "func_8023E178_de", "func_8023E45C_de", "func_8023E690_de", "func_8023E6D0_de", "func_8023E6EC_de", "func_8023E838_de", "func_8023E854_de", "func_8023E864_de", "func_8023E8B4_de", "func_8023E8D4_de", "func_8023EA44_de", "func_8023EBD4_de", "func_8023EBFC_de", "func_8023EC54_de", "func_8023ECBC_de", "func_8023ED64_de", "func_8023EDD8_us", "func_8023EE08_eu", "func_8023EDF8_de", "func_8023EE38_eu_x", "func_8023EE00_de", "func_8023EE34_de", "func_8023EE60_de", "func_8023EF0C_eu", "func_8023EEFC_de"]
 evidence = "inferred"
-signals = ["callee", "cap", "rodata", "version"]
-subsystem = "unknown"
+signals = ["callee", "rodata", "version"]
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -346,10 +355,10 @@ sdk = false
 [[group]]
 name = "code_80245980"
 segment = "span_1000"
-members = ["func_80245990_de", "func_802459A0_de", "func_80245A00_de", "func_80245A10_de", "func_80245A20_de", "func_80245A30_de", "func_80245A5C_de", "func_80245A78_de", "func_80245AC8_de", "func_80245AD8_de", "func_80245AF8_de", "func_80245B0C_de", "func_80245B20_de", "func_80245B28_de", "func_80245B74_de", "func_80245BC0_de", "func_80245C38_de", "func_80245D14_de", "func_80245D68_eu_x", "func_80245D30_de", "func_80245D28_de", "func_80245D38_eu", "func_80246184_de", "func_802461E8_de", "func_802462E8_de", "func_8024643C_de", "func_80246558_de", "func_80246684_de", "func_802466A0_de", "func_80246A08_de", "func_80246BE8_de"]
+members = ["func_80245990_de", "func_802459A0_de", "func_80245A00_de", "func_80245A10_de", "func_80245A20_de", "func_80245A30_de", "func_80245A5C_de", "func_80245A78_de", "func_80245AC8_de", "func_80245AD8_de", "func_80245AF8_de", "func_80245B0C_de", "func_80245B20_de", "func_80245B28_de", "func_80245B74_de", "func_80245BC0_de", "func_80245C38_de", "func_80245D14_de", "func_80245D38_eu", "func_80245D28_de", "func_80245D68_eu_x", "func_80245D30_de", "func_80246184_de", "func_802461E8_de", "func_802462E8_de", "func_8024643C_de", "func_80246558_de", "func_80246684_de", "func_802466A0_de", "func_80246A08_de", "func_80246BE8_de"]
 evidence = "inferred"
-signals = ["cap", "version"]
-subsystem = "unknown"
+signals = ["version"]
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -411,7 +420,7 @@ name = "code_802536F4"
 segment = "span_1000"
 members = ["func_80253754_de", "func_80253838_de", "func_80253908_de", "func_802539EC_de", "func_80253AD4_de", "func_80253BBC_de", "func_80253CEC_de", "func_80253D10_de", "func_80253E64_de", "func_80253F8C_de", "func_802540F4_de", "func_80254284_de", "func_80254408_de", "func_80254480_de", "func_80254600_de", "func_8025476C_de", "func_8025477C_de", "func_8025478C_de", "func_8025479C_de", "func_802547AC_de", "func_802547BC_de", "func_802547CC_de", "func_802547DC_de", "func_802547E4_de", "func_802548B8_de", "func_80254990_de", "func_80254A28_de", "func_80254AD0_de", "func_80254B58_de", "func_80254B8C_de", "func_80254C70_de", "func_80254D00_de"]
 evidence = "inferred"
-signals = ["cap"]
+signals = ["rodata"]
 subsystem = "unknown"
 sdk = false
 
@@ -457,6 +466,15 @@ segment = "span_1000"
 members = ["func_802591A0_de", "func_80259218_eu", "func_80259200_de", "func_80259258_de", "func_80259248_eu_x", "func_80259260_de", "func_80259440_de", "func_8025966C_de", "func_80259694_de", "func_802596B4_de", "func_80259784_de", "func_802598B4_de", "func_80259918_de", "func_80259AAC_us", "func_80259ACC_eu", "func_80259AB8_de", "func_80259B0C_de", "func_80259AF0_de", "func_80259B10_de", "func_80259F68_de"]
 evidence = "proven"
 signals = ["cap", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_80259B2C"
+segment = "span_1000"
+members = ["func_8041F5EC_eu"]
+evidence = "inferred"
+signals = []
 subsystem = "unknown"
 sdk = false
 
@@ -537,7 +555,7 @@ name = "code_802646F4"
 segment = "span_1000"
 members = ["func_802646D4_de", "func_80264728_de", "func_8026475C_de", "func_80264770_de", "func_80264788_de", "func_8026479C_de", "func_802647C4_de", "func_802647E8_de", "func_8026480C_de", "func_80264854_de", "func_802648C8_de", "func_8026495C_de", "func_802649FC_de", "func_80264A0C_de", "func_80264A20_de", "func_80264B44_de", "func_80264B5C_de", "func_80264B6C_de", "func_80264B7C_de", "func_80264B8C_de", "func_80264CB8_de", "func_80264CE0_de", "func_80264DE0_de", "func_80264DF0_de", "func_80264EE0_de", "func_80264F5C_de", "func_80264F4C_eu_x", "func_80264F60_de", "func_802651B0_de", "func_80265304_eu", "func_80265340_de", "func_80265334_eu_x"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
+signals = ["callee", "version"]
 subsystem = "unknown"
 sdk = false
 
@@ -670,10 +688,10 @@ sdk = false
 [[group]]
 name = "code_8028567C"
 segment = "span_1000"
-members = ["func_8028567C_eu", "func_802856AC_eu_x", "func_802856E0_de", "func_802856DC_de", "func_802858B0_de", "func_80285960_de", "func_80285974_de", "func_8028597C_de", "func_802859D0_de", "func_80285AC4_de", "func_80285B64_de", "func_80285C78_de", "func_80285CFC_us", "func_80285D30_de", "func_80285D4C_eu", "func_80285D7C_eu_x", "func_80285DB0_de", "func_80285DAC_de", "func_80285F58_de"]
+members = ["func_8028567C_eu", "func_802856DC_de", "func_802856AC_eu_x", "func_802856E0_de", "func_802858B0_de", "func_80285960_de", "func_80285974_de", "func_8028597C_de", "func_802859D0_de", "func_80285AC4_de", "func_80285B64_de", "func_80285C78_de", "func_80285D30_de", "func_80285CFC_us", "func_80285D4C_eu", "func_80285DAC_de", "func_80285D7C_eu_x", "func_80285DB0_de", "func_80285F58_de"]
 evidence = "inferred"
-signals = ["cap", "version"]
-subsystem = "unknown"
+signals = ["version"]
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -699,7 +717,7 @@ name = "code_8028CCB8"
 segment = "span_1000"
 members = ["func_8028CCDC_de", "func_8028CD68_de", "func_8028CDF0_de", "func_8028CE78_de", "func_8028CE94_de", "func_8028CF6C_de", "func_8028CFA0_de", "func_8028D050_de", "func_8028D108_de", "func_8028D218_de", "func_8028D244_de", "func_8028D28C_de", "func_8028D380_de", "func_8028D474_de", "func_8028D59C_de", "func_8028D61C_de", "func_8028D644_de", "func_8028D64C_de", "func_8028D67C_de", "func_8028D74C_de", "func_8028D7C4_de", "func_8028D888_de", "func_8028D90C_de", "func_8028D964_de", "func_8028DA74_de", "func_8028DAB4_de", "func_8028DB3C_de", "func_8028DC3C_de", "func_8028DD00_de", "func_8028DDA4_de", "func_8028DE48_de", "func_8028DEEC_de"]
 evidence = "inferred"
-signals = ["cap"]
+signals = []
 subsystem = "unknown"
 sdk = false
 
@@ -780,8 +798,8 @@ name = "code_80297CD0"
 segment = "span_1000"
 members = ["func_80296CD0_de", "func_80296E3C_de", "func_80297310_de", "func_8029764C_de", "func_80297A34_de", "func_80297DBC_de", "func_80297EA4_de", "func_80297FA0_de", "func_80298170_de", "func_802982C4_de", "func_80298368_de", "func_80298ECC_de", "func_80298FE8_de", "func_802991D4_de", "func_80299468_de", "func_80299550_de", "func_8029958C_de", "func_802995C4_de", "func_802995D4_de", "func_8029973C_de", "func_80299750_de", "func_80299778_de", "func_802997E4_de", "func_80299838_de", "func_80299874_de", "func_802998A8_de", "func_802998E0_de", "func_80299958_de", "func_802999A0_de", "func_802999E0_de", "func_802999F4_de", "func_80299A08_de"]
 evidence = "inferred"
-signals = ["callee", "cap"]
-subsystem = "unknown"
+signals = ["callee"]
+subsystem = "gameplay"
 sdk = false
 
 [[group]]
@@ -807,8 +825,8 @@ name = "code_8029EB74"
 segment = "span_1000"
 members = ["func_8029DB74_de", "func_8029DB9C_de", "func_8029DCB0_de", "func_8029DD18_de", "func_8029DD3C_de", "func_8029DD78_de", "func_8029DE48_de", "func_8029DF48_de", "func_8029E04C_de", "func_8029E104_de", "func_8029E1D4_de", "func_8029E2A8_de", "func_8029E2BC_de", "func_8029E2CC_de", "func_8029E2E8_de", "func_8029E304_de", "func_8029E338_de", "func_8029E36C_de", "func_8029E398_de", "func_8029E3C0_de", "func_8029E428_de", "func_8029E458_de", "func_8029E4DC_de", "func_8029E52C_de", "func_8029E5C0_de", "func_8029E654_de", "func_8029E6E8_de", "func_8029E77C_de", "func_8029E810_de", "func_8029E8AC_de", "func_8029E93C_de", "func_8029EA44_de"]
 evidence = "inferred"
-signals = ["cap"]
-subsystem = "unknown"
+signals = []
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -830,11 +848,11 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802A0AC4"
+name = "code_802A0BE8"
 segment = "span_1000"
-members = ["func_802A0AC4_de", "func_802A0BE8_eu", "func_802A0C14_eu_x", "func_802A0B20_de", "func_802A0B8C_de", "func_802A0C08_de", "func_802A0C38_de", "func_802A0D38_de", "func_802A0E34_de", "func_802A0E8C_de", "func_802A0EB0_de", "func_802A0ED4_de", "func_802A0F50_de", "func_802A0F58_de", "func_802A0F60_de", "func_802A0F84_de", "func_802A0FA8_de", "func_802A0FCC_de", "func_802A1004_de", "func_802A100C_de", "func_802A1050_de", "func_802A109C_de", "func_802A1114_de", "func_802A1158_de", "func_802A1188_de", "func_802A1198_de", "func_802A11EC_de", "func_802A11F4_de", "func_802A1220_de", "func_802A1230_de", "func_802A124C_de", "func_802A13B4_eu_x"]
+members = ["func_802A0BE8_eu", "func_802A0AC4_de", "func_802A0C14_eu_x", "func_802A0B20_de", "func_802A0B8C_de", "func_802A0C08_de", "func_802A0C38_de", "func_802A0D38_de", "func_802A0E34_de", "func_802A0E8C_de", "func_802A0EB0_de", "func_802A0ED4_de", "func_802A0F50_de", "func_802A0F58_de", "func_802A0F60_de", "func_802A0F84_de", "func_802A0FA8_de", "func_802A0FCC_de", "func_802A1004_de", "func_802A100C_de", "func_802A1050_de", "func_802A109C_de", "func_802A1114_de", "func_802A1158_de", "func_802A1188_de", "func_802A1198_de", "func_802A11EC_de", "func_802A11F4_de", "func_802A1220_de", "func_802A1230_de", "func_802A124C_de"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
+signals = ["callee", "version"]
 subsystem = "unknown"
 sdk = false
 
@@ -853,6 +871,15 @@ segment = "span_1000"
 members = ["func_802A208C_de", "func_802A21AC_eu", "func_802A2224_de", "func_802A2344_eu", "func_802A2374_eu_x", "func_802A1D14_de", "func_802A1D7C_de", "func_802A1DE4_de", "func_802A1E20_de", "func_802A1E5C_de", "func_802A1EC0_de", "func_802A1F3C_de", "func_802A1FB8_de", "func_802A1FE8_de", "func_802A206C_de", "func_802A308C_us_rev1", "func_802A2090_de", "func_802A2164_us", "func_802A230C_de", "func_802A2320_de", "func_802A2360_de", "func_802A2394_de", "func_802A23A4_de", "func_802A23B4_de", "func_802A23C4_de", "func_802A23F0_de", "func_802A2400_de", "func_802A2418_de", "func_802A2434_de", "func_802A2480_de", "func_802A271C_eu_x"]
 evidence = "proven"
 signals = ["callee", "cap", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_802A2264"
+segment = "span_1000"
+members = ["func_802A13B4_eu_x"]
+evidence = "inferred"
+signals = []
 subsystem = "unknown"
 sdk = false
 
@@ -893,15 +920,6 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802AE254"
-segment = "span_1000"
-members = ["func_802AD264_de", "func_802AE25C_us_rev1", "func_802AE260_us_rev1", "func_802AE380_us_rev1", "func_802AE5AC_us_rev1", "func_802AE834_us_rev1", "func_802AEAB4_us_rev1", "func_802AEE48_us_rev1", "func_802AEF84_us_rev1", "func_802AF0E4_us_rev1", "func_802AF1F0_us_rev1", "func_802AF33C_us_rev1", "func_802AF424_us_rev1", "func_802AF544_us_rev1", "func_802AF6A0_us_rev1", "func_802AF7F8_us_rev1", "func_802AF990_us_rev1", "func_802AFCE4_us_rev1", "func_802AFFEC_us_rev1", "func_802B026C_us_rev1", "func_802B05C8_us_rev1", "func_802B091C_us_rev1", "func_802B0D3C_us_rev1", "func_802B1088_us_rev1", "func_802B1308_us_rev1"]
-evidence = "proven"
-signals = ["callee", "cap", "version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
 name = "code_802AD504"
 segment = "span_1000"
 members = ["func_802AD504_eu", "func_802AD520_eu", "func_802AD544_eu_x", "func_802B1820_us_rev1", "func_802AD270_de", "func_802AD548_eu"]
@@ -911,20 +929,20 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802AD1D0"
+name = "code_802AD608"
 segment = "span_1000"
-members = ["func_802AD1D0_us", "func_802AD298_de", "func_802AD368_de", "func_802AD4B4_de", "func_802AD608_eu", "func_802AD754_eu", "func_802AD870_us", "func_802AD938_de", "func_802AD940_de", "func_802ADBDC_eu", "func_802ADBE0_eu", "func_802ADC20_eu_x", "func_802AD280_de", "func_802AD580_eu_x", "func_802AD648_eu_x", "func_802AD370_de", "func_802AD3F0_de", "func_802AD42C_de", "func_802AD794_eu_x", "func_802AD4C0_de", "func_802AD530_de", "func_802AD69C_de", "func_802AD740_de", "func_802AD768_de", "func_802AD7A0_de", "func_802AD8F4_de", "func_802ADC1C_eu_x", "func_802B2A10_us_rev1"]
+members = ["func_802AD608_eu", "func_802AD648_eu_x", "func_802AD370_de", "func_802AD3F0_de", "func_802AD42C_de", "func_802AD754_eu", "func_802AD4B4_de", "func_802AD794_eu_x", "func_802AD4C0_de", "func_802AD530_de", "func_802AD69C_de", "func_802AD740_de", "func_802AD768_de", "func_802AD7A0_de", "func_802AD8F4_de", "func_802AD870_us", "func_802ADBDC_eu", "func_802ADBE0_eu", "func_802AD938_de", "func_802AD940_de", "func_802ADC1C_eu_x", "func_802ADC20_eu_x", "func_802B2A10_us_rev1", "func_802AD9EC_de", "func_802AE2C8_eu", "func_802AE028_de"]
 evidence = "inferred"
 signals = ["callee", "chain", "rodata", "version"]
-subsystem = "unknown"
+subsystem = "sdk"
 sdk = false
 
 [[group]]
-name = "code_802AE028"
+name = "code_802AE254"
 segment = "span_1000"
-members = ["func_802AE028_de", "func_802AE2C8_eu", "func_802AEAAC_de", "func_802AED4C_eu", "func_802AFD5C_us", "func_802AFE2C_de", "func_802B00CC_eu", "func_802AD9EC_de", "func_802AE308_eu_x", "func_802AE030_de", "func_802AE290_de", "func_802AE500_de", "func_802AE5B8_de", "func_802AE6BC_de", "func_802AE7B0_de", "func_802AE7BC_de", "func_802AE824_de", "func_802AE8C8_de", "func_802AE93C_de", "func_802AE9B0_de", "func_802AEA2C_de", "func_802AEAA0_de", "func_802AED8C_eu_x", "func_802AEAB0_de", "func_802AEC20_de", "func_802AF150_de", "func_802AF2E0_de", "func_802AFB6C_de", "func_802AFD00_de", "func_802AFD6C_de", "func_802AFDFC_de", "func_802B010C_eu_x"]
-evidence = "inferred"
-signals = ["callee", "cap", "rodata", "version"]
+members = ["func_802AD264_de", "func_802AE25C_us_rev1", "func_802AE260_us_rev1", "func_802AE380_us_rev1", "func_802AE5AC_us_rev1", "func_802AE834_us_rev1", "func_802AEAB4_us_rev1", "func_802AEE48_us_rev1", "func_802AEF84_us_rev1", "func_802AF0E4_us_rev1", "func_802AF1F0_us_rev1", "func_802AF33C_us_rev1", "func_802AF424_us_rev1", "func_802AF544_us_rev1", "func_802AF6A0_us_rev1", "func_802AF7F8_us_rev1", "func_802AF990_us_rev1", "func_802AFCE4_us_rev1", "func_802AFFEC_us_rev1", "func_802B026C_us_rev1", "func_802B05C8_us_rev1", "func_802B091C_us_rev1", "func_802B0D3C_us_rev1", "func_802B1088_us_rev1", "func_802B1308_us_rev1"]
+evidence = "proven"
+signals = ["callee", "cap", "version"]
 subsystem = "unknown"
 sdk = false
 
@@ -938,11 +956,20 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802B0388"
+name = "code_802B0628"
 segment = "span_1000"
-members = ["func_802B0388_de", "func_802B0628_eu", "func_802B0630_eu", "func_802B0390_de", "func_802B03D0_de", "func_802B0554_de", "func_802B0A90_de", "func_802B0C94_de", "func_802B151C_de", "func_802B156C_de", "func_802B15D0_de", "func_802B1680_de", "func_802B16E0_de", "func_802B1814_de", "func_802B1888_de", "func_802B18A4_de", "func_802B18E4_de", "func_802B1990_de", "func_802B1A40_de", "func_802B1AC0_de", "func_802B1B14_de", "func_802B1C34_de", "func_802B1D24_de", "func_802B1DEC_de", "func_802B1E50_de"]
+members = ["func_802B0628_eu", "func_802B0630_eu", "func_802B0388_de"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
+signals = ["version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_802B2350"
+segment = "span_1000"
+members = ["func_802AD280_de", "func_802AD1D0_us", "func_802AD298_de", "func_802AD368_de", "func_802AD580_eu_x"]
+evidence = "inferred"
+signals = ["version"]
 subsystem = "unknown"
 sdk = false
 
@@ -974,20 +1001,20 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802B339C"
+name = "code_802B30F8"
 segment = "span_1000"
-members = ["func_802B339C_us", "func_802B346C_de", "func_802B3478_de", "func_802B3504_us", "func_802B3538_de", "func_802B35D4_de", "func_802B3614_us", "func_802B370C_eu", "func_802B3718_eu", "func_802B3758_eu_x", "func_802B37D8_eu", "func_802B3874_eu", "func_802B374C_eu_x", "func_802B3470_de", "func_802B8548_us_rev1", "func_802B3480_de", "func_802B3818_eu_x", "func_802B3540_de", "func_802B38B4_eu_x", "func_802B35E0_de"]
+members = ["func_802AE308_eu_x", "func_802AE030_de", "func_802AE290_de", "func_802AE500_de", "func_802AE5B8_de", "func_802AE6BC_de", "func_802AE7B0_de", "func_802AE7BC_de", "func_802AE824_de", "func_802AE8C8_de", "func_802AE93C_de", "func_802AE9B0_de", "func_802AEA2C_de", "func_802AEAA0_de", "func_802AED4C_eu", "func_802AEAAC_de", "func_802AED8C_eu_x", "func_802AEAB0_de", "func_802AEC20_de", "func_802AF150_de", "func_802AF2E0_de", "func_802AFB6C_de", "func_802AFD00_de", "func_802AFD6C_de", "func_802AFDFC_de", "func_802AFD5C_us", "func_802B00CC_eu", "func_802AFE2C_de", "func_802B010C_eu_x"]
 evidence = "inferred"
-signals = ["callee", "chain", "version"]
-subsystem = "unknown"
+signals = ["callee", "rodata", "version"]
+subsystem = "math"
 sdk = false
 
 [[group]]
-name = "code_802B369C"
+name = "code_802B339C"
 segment = "span_1000"
-members = ["func_802B369C_us", "func_802B36E4_de", "func_802B376C_de", "func_802B3984_eu", "func_802B3D30_us", "func_802B3E00_de", "func_802B3E3C_us", "func_802B3F0C_de", "func_802B40A0_eu", "func_802B41AC_eu", "func_802B39C4_eu_x", "func_802B36F0_de", "func_802B3A4C_eu_x", "func_802B3770_de", "func_802B3A44_de", "func_802B3BF8_de", "func_802B3C24_de", "func_802B3C3C_de", "func_802B3C7C_de", "func_802B3CD0_de", "func_802B3D10_de", "func_802B3DB8_de", "func_802B40E0_eu_x", "func_802B3EDC_de", "func_802B41EC_eu_x", "func_802B3F10_de", "func_802B43A4_de", "func_802B4454_de", "func_802B44B0_de"]
+members = ["func_802B339C_us", "func_802B370C_eu", "func_802B346C_de", "func_802B374C_eu_x", "func_802B3470_de", "func_802B3758_eu_x", "func_802B3718_eu", "func_802B3478_de", "func_802B8548_us_rev1", "func_802B3480_de", "func_802B37D8_eu", "func_802B3538_de", "func_802B3818_eu_x", "func_802B3540_de", "func_802B3504_us", "func_802B3874_eu", "func_802B35D4_de", "func_802B38B4_eu_x"]
 evidence = "inferred"
-signals = ["callee", "chain", "rodata", "version"]
+signals = ["version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1010,11 +1037,11 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802B7058"
+name = "code_802B5460"
 segment = "span_1000"
-members = ["func_802B7058_us", "func_802B7128_de", "func_802B71EC_us", "func_802B72AC_de", "func_802B72BC_de", "func_802B72D4_de", "func_802B73C8_eu", "func_802B73F8_de", "func_802B748C_de", "func_802B754C_eu", "func_802B755C_eu", "func_802B7574_eu", "func_802B7698_eu", "func_802B772C_eu", "func_802B7744_eu", "func_802B74A4_de", "func_802B6D54_de", "func_802B6DF0_de", "func_802B6F9C_de", "func_802B7408_eu_x", "func_802B7130_de", "func_802B758C_eu_x", "func_802B72B0_de", "func_802B759C_eu_x", "func_802B72C0_de", "func_802B75B4_eu_x", "func_802B72E0_de", "func_802B76D8_eu_x", "func_802B7400_de", "func_802B776C_eu_x", "func_802B7490_de", "func_802B7784_eu_x"]
+members = ["func_802B0390_de", "func_802B03D0_de", "func_802B0554_de", "func_802B0A90_de", "func_802B0C94_de", "func_802B151C_de", "func_802B156C_de", "func_802B15D0_de", "func_802B1680_de", "func_802B16E0_de", "func_802B1814_de", "func_802B1888_de", "func_802B18A4_de", "func_802B18E4_de", "func_802B1990_de", "func_802B1A40_de", "func_802B1AC0_de", "func_802B1B14_de", "func_802B1C34_de", "func_802B1D24_de", "func_802B1DEC_de", "func_802B1E50_de"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
+signals = ["callee", "rodata", "version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1037,12 +1064,12 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802B8CCC"
+name = "code_802B86B0"
 segment = "span_1000"
-members = ["func_802B8CCC_us", "func_802B8CE8_de", "func_802B8D9C_de", "func_802B8F88_eu", "func_802B8FC8_eu_x", "func_802B903C_eu", "func_802B907C_eu_x", "func_802B8CF0_de", "func_802BDE6C_us_rev1", "func_802B8DA0_de", "func_802BDE98_us_rev1", "func_802BDEA0_us_rev1"]
+members = ["func_802B35E0_de", "func_802B3614_us", "func_802B3984_eu", "func_802B36E4_de", "func_802B39C4_eu_x", "func_802B36F0_de", "func_802B369C_us", "func_802B376C_de", "func_802B3A4C_eu_x", "func_802B3770_de", "func_802B3A44_de", "func_802B3BF8_de", "func_802B3C24_de", "func_802B3C3C_de", "func_802B3C7C_de", "func_802B3CD0_de", "func_802B3D10_de", "func_802B3DB8_de", "func_802B3D30_us", "func_802B40A0_eu", "func_802B3E00_de", "func_802B40E0_eu_x", "func_802B3EDC_de", "func_802B3E3C_us", "func_802B41AC_eu", "func_802B3F0C_de", "func_802B41EC_eu_x", "func_802B3F10_de", "func_802B43A4_de", "func_802B4454_de", "func_802B44B0_de"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+signals = ["callee", "version"]
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -1055,30 +1082,30 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802B9BB4"
+name = "code_802B8FC8"
 segment = "span_1000"
-members = ["func_802B9BB4_de", "func_802B9BD8_us", "func_802B9CA8_de", "func_802B9CB8_us", "func_802B9D68_de", "func_802B9D88_de", "func_802B9E54_eu", "func_802B9F48_eu", "func_802B9F88_eu_x", "func_802BA008_eu", "func_802BA028_eu", "func_802BA048_eu_x", "func_802B9E94_eu_x", "func_802B9BC0_de", "func_802B9C14_de", "func_802B9C80_de", "func_802BED98_us_rev1", "func_802B9CB0_de", "func_802BEE58_us_rev1", "func_802B9D70_de", "func_802BA068_eu_x"]
+members = ["func_802B8FC8_eu_x", "func_802B8F88_eu", "func_802B8CE8_de"]
 evidence = "inferred"
-signals = ["cap", "version"]
+signals = ["version"]
 subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802B9ED8"
+name = "code_802B9E54"
 segment = "span_1000"
-members = ["func_802B9ED8_us", "func_802B9EF8_us", "func_802B9FA8_de", "func_802B9FC8_de", "func_802B9FFC_us", "func_802BA0CC_de", "func_802BA0F0_de", "func_802BA0FC_de", "func_802BA114_de", "func_802BA248_eu", "func_802BA268_eu", "func_802BA288_eu_x", "func_802BA36C_eu", "func_802BA39C_eu", "func_802BA3B4_eu", "func_802BA3DC_eu", "func_802BA3F4_eu_x", "func_802B9D90_de", "func_802B9E78_de", "func_802B9F7C_de", "func_802BF098_us_rev1", "func_802B9FB0_de", "func_802BA2A8_eu_x", "func_802B9FD0_de", "func_802BA3AC_eu_x", "func_802BA0D0_de", "func_802BA3DC_eu_x", "func_802BA100_de", "func_802BF204_us_rev1", "func_802BA120_de", "func_802BA41C_eu_x"]
+members = ["func_802B9E54_eu", "func_802B9BB4_de", "func_802B9E94_eu_x", "func_802B9BC0_de", "func_802B9C14_de", "func_802B9C80_de", "func_802B9BD8_us", "func_802B9F88_eu_x", "func_802B9F48_eu", "func_802B9CA8_de", "func_802BED98_us_rev1", "func_802B9CB0_de", "func_802BA048_eu_x", "func_802BA008_eu", "func_802B9D68_de", "func_802BEE58_us_rev1", "func_802B9D70_de", "func_802B9CB8_us", "func_802BA028_eu", "func_802B9D88_de", "func_802BA068_eu_x"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+signals = ["cap", "version"]
+subsystem = "sdk"
 sdk = false
 
 [[group]]
 name = "code_802BA13C"
 segment = "span_1000"
-members = ["func_802BA13C_de", "func_802BA180_de", "func_802BA18C_de", "func_802BA1A4_de", "func_802BA20C_de", "func_802BA42C_eu", "func_802BA444_eu", "func_802BA4AC_eu", "func_802BA140_de", "func_802BA46C_eu_x", "func_802BA190_de", "func_802BA484_eu_x", "func_802BA1B0_de", "func_802BA4EC_eu_x"]
+members = ["func_802BA13C_de", "func_802BA41C_eu_x", "func_802BA140_de", "func_802BA42C_eu", "func_802BA180_de", "func_802BA18C_de", "func_802BA46C_eu_x", "func_802BA190_de", "func_802BA444_eu", "func_802BA1A4_de", "func_802BA484_eu_x", "func_802BA1B0_de", "func_802BA4AC_eu", "func_802BA20C_de", "func_802BA4EC_eu_x"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+signals = ["callee", "version"]
+subsystem = "sdk"
 sdk = false
 
 [[group]]
@@ -1109,6 +1136,15 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "code_802BB584"
+segment = "span_1000"
+members = ["func_802B74A4_de"]
+evidence = "inferred"
+signals = []
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "code_802BB67C"
 segment = "span_1000"
 members = ["func_802BB67C_us", "func_802BB74C_de", "func_802BB864_de", "func_802BB8A4_de", "func_802BB9EC_eu", "func_802BBAE4_us", "func_802BBB04_eu", "func_802BBB44_eu", "func_802BBBB4_de", "func_802BB6C0_de", "func_802BBA2C_eu_x", "func_802BB750_de", "func_802BBB44_eu_x", "func_802BB870_de", "func_802BBB84_eu_x", "func_802BB8B0_de", "func_802BBAAC_de", "func_802BBE94_eu_x", "func_802BBBC0_de"]
@@ -1127,12 +1163,12 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_802BCF1C"
+name = "code_802BBE24"
 segment = "span_1000"
-members = ["func_802BCF1C_de", "func_802BCF20_de", "func_802BCF2C_de", "func_802BCF6C_de", "func_802BD008_de", "func_802BD078_de", "func_802BD08C_us", "func_802BD148_us", "func_802BD14C_de", "func_802BD1CC_eu", "func_802BD20C_eu", "func_802BD218_de", "func_802BD2A8_eu", "func_802BD318_eu", "func_802BD3E8_eu", "func_802BD3FC_eu", "func_802BD4B8_eu", "func_802BCF30_de", "func_802BCF50_de", "func_802BD24C_eu_x", "func_802BCF70_de", "func_802BD2E8_eu_x", "func_802BD010_de", "func_802BD358_eu_x", "func_802BD080_de", "func_802BD428_eu_x", "func_802BD150_de", "func_802BD43C_eu_x", "func_802BD160_de", "func_802BD170_de", "func_802BD4F8_eu_x", "func_802BD220_de"]
+members = ["func_802B6D54_de", "func_802B6DF0_de", "func_802B6F9C_de", "func_802B7058_us", "func_802B73C8_eu", "func_802B7128_de", "func_802B7408_eu_x", "func_802B7130_de", "func_802B754C_eu", "func_802B72AC_de", "func_802B758C_eu_x", "func_802B72B0_de", "func_802B71EC_us", "func_802B755C_eu", "func_802B72BC_de", "func_802B759C_eu_x", "func_802B72C0_de", "func_802B7574_eu", "func_802B72D4_de", "func_802B75B4_eu_x", "func_802B72E0_de", "func_802B7698_eu", "func_802B73F8_de", "func_802B76D8_eu_x", "func_802B7400_de", "func_802B772C_eu", "func_802B748C_de", "func_802B776C_eu_x", "func_802B7490_de", "func_802B7744_eu", "func_802B7784_eu_x"]
 evidence = "inferred"
-signals = ["cap", "version"]
-subsystem = "unknown"
+signals = ["callee", "version"]
+subsystem = "sdk"
 sdk = false
 
 [[group]]
@@ -1145,6 +1181,33 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "code_802BD1CC"
+segment = "span_1000"
+members = ["func_802BD1CC_eu", "func_802BCF1C_de", "func_802BCF20_de", "func_802BCF2C_de"]
+evidence = "inferred"
+signals = ["version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_802BDDC0"
+segment = "span_1000"
+members = ["func_802B8CF0_de", "func_802B8CCC_us", "func_802B907C_eu_x", "func_802B903C_eu", "func_802B8D9C_de", "func_802BDE6C_us_rev1", "func_802B8DA0_de"]
+evidence = "inferred"
+signals = ["callee", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_802BDE98"
+segment = "span_1000"
+members = ["func_802BDE98_us_rev1", "func_802BDEA0_us_rev1"]
+evidence = "inferred"
+signals = ["version"]
+subsystem = "sdk"
+sdk = false
+
+[[group]]
 name = "code_802BE0D0"
 segment = "span_1000"
 members = ["func_802BE0D0_de", "func_802BE368_eu", "func_802BEDAC_de", "func_802BF04C_eu", "func_802C015C_us", "func_802C022C_de", "func_802C04CC_eu", "func_802BE514_de", "func_802BEAA4_de", "func_802BF08C_eu_x", "func_802BEDB0_de", "func_802BEF84_de", "func_802BF388_de", "func_802BF514_de", "func_802BF928_de", "func_802BFAAC_de", "func_802BFE3C_de", "func_802C00B0_de", "func_802C016C_de", "func_802C020C_de", "func_802C021C_de", "func_802C050C_eu_x", "func_802C0230_de"]
@@ -1154,66 +1217,30 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_80259B2C"
+name = "code_802BEE80"
 segment = "span_1000"
-members = ["func_8041F5EC_eu", "func_802C074C_us", "func_802C081C_de", "func_802C0ABC_eu", "func_802C0D98_de", "func_802C1038_eu", "func_802C1324_de", "func_802C15C4_eu", "func_802C1824_de", "func_802C1878_de", "func_802C1908_de", "func_802C1AC4_eu", "func_802C1BA8_eu", "func_802C0AFC_eu_x", "func_802C0820_de", "func_802C1078_eu_x", "func_802C0DA0_de", "func_802C1330_de", "__cmpdi2", "__floatdisf"]
+members = ["func_802B9D90_de", "func_802B9E78_de", "func_802B9F7C_de", "func_802B9ED8_us", "func_802BA288_eu_x", "func_802BA248_eu", "func_802B9FA8_de", "func_802BF098_us_rev1", "func_802B9FB0_de", "func_802B9EF8_us", "func_802BA268_eu", "func_802B9FC8_de", "func_802BA2A8_eu_x", "func_802B9FD0_de", "func_802B9FFC_us", "func_802BA36C_eu", "func_802BA0CC_de", "func_802BA3AC_eu_x", "func_802BA0D0_de", "func_802BA39C_eu", "func_802BA0F0_de", "func_802BA0FC_de", "func_802BA3DC_eu_x", "func_802BA100_de", "func_802BA3F4_eu_x", "func_802BA3B4_eu", "func_802BA114_de", "func_802BF204_us_rev1", "func_802BA120_de", "func_802BA3DC_eu"]
 evidence = "inferred"
-signals = ["version"]
-subsystem = "unknown"
+signals = ["callee", "cap", "version"]
+subsystem = "sdk"
 sdk = false
 
 [[group]]
-name = "code_802C1B60"
+name = "code_802C074C"
 segment = "span_1000"
-members = ["func_802C1B60_eu_x", "func_802C6970_us_rev1"]
+members = ["func_802C074C_us", "func_802C0ABC_eu", "func_802C081C_de", "func_802C0AFC_eu_x", "func_802C0820_de", "func_802C1038_eu", "func_802C0D98_de", "func_802C1078_eu_x", "func_802C0DA0_de", "func_802C15C4_eu", "func_802C1324_de", "func_802C1330_de", "func_802C1AC4_eu", "func_802C1824_de", "__cmpdi2", "func_802C1B60_eu_x", "func_802C1878_de", "func_802C1BA8_eu", "func_802C1908_de", "func_802C6970_us_rev1", "__floatdisf"]
 evidence = "inferred"
 signals = ["version"]
 subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_80405DB4"
-segment = "span_164000"
-members = ["func_80405DB4_us", "func_8040C638_us", "func_8040C648_us", "func_8040C780_us", "func_804143D8_us", "func_80419B90_us", "func_8041CEB0_us", "func_8041DFC0_us", "func_8041F118_us", "func_8041F2A0_us", "func_80420B80_us", "func_8042204C_us", "func_80435C54_us", "func_80435CE4_us", "func_80436634_us", "func_804396BC_us", "func_804399C8_us", "func_80439F10_us", "func_8043C4F4_us", "func_8043C72C_us", "func_80443528_us", "func_80444024_us", "func_80446B8C_us", "func_80446DCC_us", "func_80447C5C_us", "func_80448094_us", "func_804483C4_us", "func_80448E88_us", "func_80448E90_us", "func_8044DDCC_us"]
+name = "code_802C2020"
+segment = "span_1000"
+members = ["func_802BCF30_de", "func_802BCF50_de", "func_802BD20C_eu", "func_802BCF6C_de", "func_802BD24C_eu_x", "func_802BCF70_de", "func_802BD2A8_eu", "func_802BD008_de", "func_802BD2E8_eu_x", "func_802BD010_de", "func_802BD318_eu", "func_802BD078_de", "func_802BD358_eu_x", "func_802BD080_de", "func_802BD3E8_eu", "func_802BD14C_de", "func_802BD428_eu_x", "func_802BD150_de", "func_802BD08C_us", "func_802BD3FC_eu", "func_802BD43C_eu_x", "func_802BD160_de", "func_802BD170_de", "func_802BD148_us", "func_802BD4B8_eu", "func_802BD218_de", "func_802BD4F8_eu_x", "func_802BD220_de"]
 evidence = "inferred"
 signals = ["version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_80403E88"
-segment = "span_166000"
-members = ["func_80403E88_de", "func_80408AC4_de", "func_8040A810_de", "func_8040A8D0_de", "func_8040BB40_de", "func_8040BBAC_de", "func_8040C5B8_de", "func_8040C5C8_de", "func_8040C6FC_de", "func_80414358_de", "func_804143A8_de", "func_804143B0_de", "func_804143FC_de", "func_80415C84_de", "func_80419428_de", "func_80419B0C_de", "func_8041C604_de", "func_8041CE40_de", "func_8041DF50_de", "func_8041F0A8_de", "func_8041F138_de", "func_8041F230_de", "func_80421928_de", "func_804219E0_de", "func_8042201C_de", "func_804224E0_de", "func_80422B94_de", "func_804230D4_de", "func_80423274_de", "func_8042342C_de", "func_804243D8_de"]
-evidence = "proven"
-signals = ["cap", "version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_80426310"
-segment = "span_166000"
-members = ["func_80426310_de", "func_80428FA0_de", "func_80428FC8_de", "func_8042913C_de", "func_8042A2B0_de", "func_8042D9F0_de", "func_8042EF4C_de", "func_80435B08_de", "func_80437688_de", "func_804377E8_de", "func_804379B8_de", "func_80437A48_de", "func_804394E0_de", "func_804397E8_de", "func_80439D30_de", "func_8043C314_de", "func_8043C324_de", "func_8043C54C_de", "func_8043C688_de", "func_8043C998_de", "func_8043C9AC_de", "func_8043CB30_de", "func_8043CC08_de", "func_8043CC10_de", "func_8043CCD0_de", "func_8043CD64_de", "func_8043CDF8_de", "func_8043CF44_de", "func_8043D080_de", "func_8043D0D4_de"]
-evidence = "proven"
-signals = ["cap", "version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_8043D1DC"
-segment = "span_166000"
-members = ["func_8043D1DC_de", "func_8043D20C_de", "func_8043D214_de", "func_8043D21C_de", "func_8043D224_de", "func_8043D22C_de", "func_8043D234_de", "func_8043D23C_de", "func_8043D244_de", "func_8043D24C_de", "func_8043D254_de", "func_8043D278_de", "func_8043D300_de", "func_8043DB50_de", "func_8043DCA4_de", "func_8043EDA4_de", "func_8043F114_de", "func_804433B8_de", "func_80443EB4_de", "func_80443EC0_de", "func_80444E28_de", "func_804456E0_de", "func_80445F2C_de", "func_80445F74_de", "func_80446A1C_de", "func_80446D78_de", "func_804476B8_de", "func_80447818_de", "func_80447AEC_de", "func_80447F24_de"]
-evidence = "proven"
-signals = ["cap", "version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_80448254"
-segment = "span_166000"
-members = ["func_80448254_de", "func_80448C84_de", "func_80448D18_de", "func_80448D20_de", "func_8044AE64_de", "func_8044B0D8_de", "func_8044DC5C_de", "func_8044DCB4_de", "func_8044DF54_de"]
-evidence = "inferred"
-signals = ["callee", "version"]
-subsystem = "unknown"
+subsystem = "sdk"
 sdk = false
 
 [[group]]
@@ -1235,6 +1262,15 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "code_80403E88"
+segment = "span_F0000"
+members = ["func_80403E88_eu_x", "func_80405DC4_eu_x", "func_80406A88_eu_x", "func_8041BA1C_eu_x", "func_8041D280_eu_x", "func_8041E3A0_eu_x", "func_8041F6E0_eu_x", "func_80421E70_eu_x", "func_8042251C_eu_x", "func_804229DC_eu_x", "func_804235E0_eu_x", "func_80423B68_eu_x", "func_80423D24_eu_x", "func_80423DB0_eu_x", "func_80424CC8_eu_x", "func_80426FA0_eu_x", "func_80429C50_eu_x", "func_80429C78_eu_x", "func_80429DEC_eu_x", "func_8042AFB0_eu_x", "func_8042E788_eu_x", "func_8042E790_eu_x", "func_8042FD3C_eu_x", "func_8043697C_eu_x", "func_804385E8_eu_x", "func_80438918_eu_x", "func_804389B0_eu_x", "func_8043A4E0_eu_x", "func_8043AD2C_eu_x", "func_8043D324_eu_x", "func_8043D55C_eu_x", "func_8043EB6C_eu_x"]
+evidence = "inferred"
+signals = ["cap", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "code_80405454"
 segment = "span_16E000"
 members = ["func_80405454_de", "func_804058B0_de", "func_80405CA8_de", "func_80405DB4_us_rev1"]
@@ -1244,11 +1280,29 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "code_80405DB4"
+segment = "span_164000"
+members = ["func_80405DB4_us", "func_8040C638_us", "func_8040C648_us", "func_8040C780_us", "func_804143D8_us", "func_80419B90_us", "func_8041CEB0_us", "func_8041DFC0_us", "func_8041F118_us", "func_8041F2A0_us", "func_80420B80_us", "func_8042204C_us", "func_80435C54_us", "func_80435CE4_us", "func_80436634_us", "func_804396BC_us", "func_804399C8_us", "func_80439F10_us", "func_8043C4F4_us", "func_8043C72C_us", "func_80443528_us", "func_80444024_us", "func_80446B8C_us", "func_80446DCC_us", "func_80447C5C_us", "func_80448094_us", "func_804483C4_us", "func_80448E88_us", "func_80448E90_us", "func_8044DDCC_us"]
+evidence = "inferred"
+signals = ["version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "code_80405DC0"
 segment = "span_16E000"
 members = ["func_80405DC0_de", "func_80405F48_de", "func_80406178_de", "func_80406434_de", "func_804066BC_de", "func_804069F4_de", "func_80406F7C_de", "func_804070F4_de", "func_80407290_de", "func_80407578_de", "func_80407748_de", "func_80407F6C_de", "func_80408118_de", "func_804082FC_de", "func_804085E0_de", "func_80408870_de", "func_80408AC4_us", "func_80408C4C_de", "func_80408DF0_de", "func_80409144_de", "func_80409448_de", "func_80409744_de", "func_804097F8_de", "func_80409884_de", "func_804098A4_de", "func_804098B8_de", "func_804098CC_de", "func_80409964_de", "func_804099EC_de"]
 evidence = "proven"
 signals = ["callee", "cap", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_80405DC4"
+segment = "span_176000"
+members = ["func_80405DC4_eu", "func_80406A88_eu", "func_80408CAC_eu", "func_8040AB6C_eu", "func_8040AC68_eu", "func_8040BF80_eu", "func_8040BFEC_eu", "func_8040C9F8_eu", "func_8040CEE4_eu", "func_80414798_eu", "func_804147E8_eu", "func_8041483C_eu", "func_804160C4_eu", "func_80419868_eu", "func_80419F50_eu", "func_8041BA1C_eu", "func_8041CA4C_eu", "func_8041D280_eu", "func_8041E3A0_eu", "func_8041F55C_eu", "func_8041F6E0_eu", "func_8042251C_eu", "func_804229E0_eu", "func_80422C58_eu", "func_80422E34_eu", "func_80423CE0_eu", "func_80424B78_eu", "func_80426E48_eu", "func_80429B00_eu", "func_80429C9C_eu", "func_8042E638_eu"]
+evidence = "proven"
+signals = ["cap", "version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1266,7 +1320,7 @@ name = "code_8040A83C"
 segment = "span_16E000"
 members = ["func_8040A83C_us", "func_8040A928_us", "func_8040A9A0_de", "func_8040A9F8_de", "func_8040AA4C_de", "func_8040AAB8_de", "func_8040AAC8_de", "func_8040AADC_de", "func_8040AAF0_de", "func_8040AB04_de", "func_8040AB18_de", "func_8040AB2C_de", "func_8040AB40_de", "func_8040AB54_de", "func_8040ABA0_de", "func_8040ABBC_de", "func_8040ABDC_de", "func_8040ABF0_de", "func_8040AC04_de", "func_8040AC18_de", "func_8040AC2C_de", "func_8040AC40_de", "func_8040AC54_de", "func_8040ACA0_de", "func_8040ADCC_de", "func_8040AEF8_de", "func_8040B024_de", "func_8040B150_de", "func_8040B27C_de", "func_8040B2C8_de", "func_8040B3A8_de", "func_8040B3C4_de"]
 evidence = "inferred"
-signals = ["cap"]
+signals = ["version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1285,7 +1339,7 @@ segment = "span_16E000"
 members = ["func_8040CB40_eu_x", "func_8040C948_de", "func_8040C950_de", "func_8040CEE4_eu_x", "func_8040CAB0_de", "func_8040CD50_de", "func_8040CF8C_de", "func_8040D2D0_de", "func_8040DB04_de", "func_8040E0D4_de", "func_8040E67C_de", "func_8040E7FC_de", "func_8040E894_de", "func_8040E8D8_de", "func_8040E900_de", "func_8040E928_de", "func_8040E950_de", "func_8040E978_de", "func_8040E984_de", "func_8040EB48_de", "func_8040EB68_de", "func_8040EB8C_de", "func_8040EBAC_de", "func_8040EBD0_de", "func_8040EBF4_de", "func_8040EC30_de", "func_8040ECA8_de", "func_8040ED38_de", "func_8040EDE4_de", "func_8040EEA4_de", "func_8040EF84_de", "func_8040F044_de"]
 evidence = "inferred"
 signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -1293,7 +1347,7 @@ name = "code_8040F1E0"
 segment = "span_16E000"
 members = ["func_8040F160_de", "func_8040F1FC_de", "func_8040F208_de", "func_8040F210_de", "func_8040F218_de", "func_8040F230_de", "func_8040F350_de", "func_8040F488_de", "func_8040F534_de", "func_8040F568_de", "func_8040F570_de", "func_8040F580_de", "func_8040F6DC_de", "func_8040F9E0_de", "func_8040FB94_de", "func_804101BC_de", "func_80410448_de", "func_80410674_de", "func_80410B14_de", "func_80410E1C_de", "func_80410F54_de", "func_80411518_de", "func_804116CC_de", "func_804118E4_de", "func_80411A3C_de", "func_80411A44_de", "func_80411A54_de", "func_80411A64_de", "func_80411A74_de", "func_80411A84_de", "func_80411AA8_de", "func_80411ACC_de"]
 evidence = "inferred"
-signals = ["callee", "cap"]
+signals = ["callee", "cap", "rodata"]
 subsystem = "unknown"
 sdk = false
 
@@ -1320,7 +1374,7 @@ name = "code_80413728"
 segment = "span_16E000"
 members = ["func_804136A8_de", "func_804136B4_de", "func_804136C0_de", "func_804136CC_de", "func_804136D8_de", "func_80413704_de", "func_80413714_de", "func_80413720_de", "func_8041379C_de", "func_804137F8_de", "func_80413994_de", "func_804139E0_de", "func_80413B54_de", "func_80413C94_de", "func_80413CE0_de", "func_80413E08_de", "func_80413EE0_de", "func_80413FCC_de", "func_80413FF8_de", "func_80414024_de", "func_8041406C_de", "func_80414094_de", "func_804140BC_de", "func_80414138_de", "func_80414168_de", "func_804141C0_de", "func_804141E0_de", "func_80414200_de", "func_80414220_de", "func_80414244_de", "func_804142AC_de", "func_80414348_de"]
 evidence = "inferred"
-signals = ["cap"]
+signals = []
 subsystem = "unknown"
 sdk = false
 
@@ -1356,7 +1410,7 @@ name = "code_8041B020"
 segment = "span_16E000"
 members = ["func_8041AFA0_de", "func_8041AFF8_de", "func_8041B05C_de", "func_8041B0C0_de", "func_8041B0E0_de", "func_8041B110_de", "func_8041B22C_de", "func_8041B340_de", "func_8041B3D0_de", "func_8041B504_de", "func_8041B534_de", "func_8041B564_de", "func_8041B5BC_de", "func_8041B5E0_de", "func_8041B610_de", "func_8041B6E8_de", "func_8041B7B4_de", "func_8041B7C4_de", "func_8041B7FC_de", "func_8041B810_de", "func_8041B828_de", "func_8041B8DC_de", "func_8041B968_de", "func_8041B970_de", "func_8041BA00_de", "func_8041BB34_de", "func_8041BB3C_de", "func_8041BBD0_de", "func_8041BC64_de", "func_8041BCF8_de", "func_8041BD8C_de", "func_8041BE08_de"]
 evidence = "inferred"
-signals = ["cap"]
+signals = []
 subsystem = "unknown"
 sdk = false
 
@@ -1364,6 +1418,15 @@ sdk = false
 name = "code_8041BEA8"
 segment = "span_16E000"
 members = ["func_8041BE28_de", "func_8041C19C_de", "func_8041C244_de", "func_8041C2AC_de", "func_8041C3DC_de", "func_8041C40C_de", "func_8041C46C_de", "func_8041C474_de", "func_8041C494_de", "func_8041C574_de", "func_8041C610_de", "func_8041C7F4_de", "func_8041CAD8_de", "func_8041CDB0_de", "func_8041CEB0_us_rev1", "func_8041D134_de", "func_8041D4E0_de", "func_8041D6A8_de", "func_8041D960_de", "func_8041DA5C_de", "func_8041DB30_de", "func_8041DB9C_de", "func_8041DBCC_de", "func_8041DCC0_de", "func_8041DDF4_de", "func_8041DE5C_de"]
+evidence = "proven"
+signals = ["callee", "cap", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_8041C67C"
+segment = "span_16E000"
+members = ["func_80446C5C_de", "func_80445F80_de", "func_80447DAC_eu_x", "func_80446A20_de", "func_80447FEC_eu_x", "func_80446C60_de", "func_80448108_eu_x", "func_80446D80_de", "func_80446E58_de", "func_80446EE4_de"]
 evidence = "proven"
 signals = ["callee", "cap", "version"]
 subsystem = "unknown"
@@ -1424,12 +1487,21 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "code_80426310"
+segment = "span_166000"
+members = ["func_80426310_de", "func_80428FA0_de", "func_80428FC8_de", "func_8042913C_de", "func_8042A2B0_de", "func_8042D9F0_de", "func_8042EF4C_de", "func_80435B08_de", "func_80437688_de", "func_804377E8_de", "func_804379B8_de", "func_80437A48_de", "func_804394E0_de", "func_804397E8_de", "func_80439D30_de", "func_8043C314_de", "func_8043C324_de", "func_8043C54C_de", "func_8043C688_de", "func_8043C998_de", "func_8043C9AC_de", "func_8043CB30_de", "func_8043CC08_de", "func_8043CC10_de", "func_8043CCD0_de", "func_8043CD64_de", "func_8043CDF8_de", "func_8043CF44_de", "func_8043D080_de", "func_8043D0D4_de"]
+evidence = "proven"
+signals = ["cap", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "code_804264F0"
 segment = "span_16E000"
 members = ["func_804264F0_us_rev1", "func_80426788_de", "func_80426918_de", "func_80426CE4_de", "func_80427008_de", "func_80427250_de", "func_804273D4_de", "func_804274B0_de", "func_804279B8_de", "func_80427B08_de", "func_80427D70_de", "func_80427F10_de", "func_804280BC_de", "func_80428120_de", "func_80428158_de", "func_804281A8_de", "func_80428214_de", "func_80428300_de", "func_8042840C_de", "func_804284C0_de", "func_8042854C_de", "func_8042863C_de", "func_80428700_de", "func_804287B8_de", "func_804287F8_de", "func_80428850_de", "func_804289B4_de", "func_80428B18_de", "func_80428C7C_de", "func_80428DE0_de", "func_80428E10_de", "func_80428E78_de"]
 evidence = "inferred"
 signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -1447,7 +1519,7 @@ segment = "span_16E000"
 members = ["func_80429A24_de", "func_80429FF0_de", "func_8042AE60_eu", "func_8042A7B4_de", "func_8042A990_de", "func_8042AAD0_de", "func_8042ACD8_de", "func_8042AF28_de", "func_8042AF3C_de", "func_8042AFB8_de", "func_8042AFC0_de", "func_8042AFD0_de", "func_8042AFE0_de", "func_8042B080_de", "func_8042B0A4_de", "func_8042B154_de", "func_8042B1B8_de", "func_8042B294_de", "func_8042B2DC_de", "func_8042B2E4_de", "func_8042B350_de", "func_8042B394_de", "func_8042B3D4_de", "func_8042B3DC_de", "func_8042B4D4_de", "func_8042B644_de", "func_8042B78C_de", "func_8042B904_de", "func_8042BA54_de", "func_8042BA98_de", "func_8042BAD0_de"]
 evidence = "inferred"
 signals = ["callee", "cap", "version"]
-subsystem = "unknown"
+subsystem = "math"
 sdk = false
 
 [[group]]
@@ -1455,7 +1527,7 @@ name = "code_8042BD40"
 segment = "span_16E000"
 members = ["func_8042BB60_de", "func_8042C018_de", "func_8042C6CC_de", "func_8042CC74_de", "func_8042CE74_de", "func_8042CFB0_de", "func_8042CFDC_de", "func_8042D034_de", "func_8042D060_de", "func_8042D118_de", "func_8042D1C8_de", "func_8042D28C_de", "func_8042D304_de", "func_8042D418_de", "func_8042D4CC_de", "func_8042D4FC_de", "func_8042D690_de", "func_8042D788_de", "func_8042D8A4_de", "func_8042D8C4_de", "func_8042D908_de", "func_8042D958_de", "func_8042DBD0_us_rev1", "func_8042DAC8_de", "func_8042DAF8_de", "func_8042DC04_de", "func_8042DCC4_de", "func_8042DD00_de", "func_8042DDA8_de", "func_8042DE10_de"]
 evidence = "inferred"
-signals = ["callee", "cap", "version"]
+signals = ["callee", "rodata", "version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1474,6 +1546,15 @@ segment = "span_16E000"
 members = ["func_8042F7A8_de", "func_8042F91C_de", "func_8042FB48_de", "func_8042FF40_de", "func_80430028_de", "func_80430118_de", "func_804303F8_de", "func_804306D8_de", "func_80432158_de", "func_804322AC_de", "func_80433398_de", "func_80433610_de", "func_80433914_de", "func_80433BCC_de", "func_80433D38_de", "func_80433EA0_de", "func_80434250_de", "func_80434428_de", "func_80434638_de", "func_80434750_de", "func_804347CC_de", "func_8043497C_de", "func_80434B08_de", "func_80434C2C_de"]
 evidence = "inferred"
 signals = ["callee", "chain"]
+subsystem = "math"
+sdk = false
+
+[[group]]
+name = "code_8042FBEC"
+segment = "span_176000"
+members = ["func_8042FBEC_eu", "func_80436834_eu", "func_8043768C_eu", "func_804387E8_eu", "func_80438878_eu", "func_8043A3AC_eu", "func_8043A6B8_eu", "func_8043ABFC_eu", "func_8043D1F4_eu", "func_8043D42C_eu", "func_8043E9D0_eu", "func_8043FC50_eu", "func_8043FCFC_eu", "func_8043FFB4_eu", "func_80444308_eu", "func_80444F28_eu", "func_80444F30_eu", "func_80444F9C_eu", "func_80444FE4_eu", "func_8044502C_eu", "func_80445F60_eu", "func_80445FB4_eu", "func_8044605C_eu", "func_80446138_eu", "func_80446920_eu", "func_804471D4_eu", "func_80447C7C_eu", "func_80447EBC_eu"]
+evidence = "proven"
+signals = ["cap", "version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1491,7 +1572,7 @@ name = "code_80435CE4"
 segment = "span_16E000"
 members = ["func_80435CE4_us_rev1", "func_80435B10_de", "func_80435B34_de", "func_80435C00_de", "func_80435C40_de", "func_80435C60_de", "func_80435C68_de", "func_80435C70_de", "func_80435CB8_de", "func_80435CD8_de", "func_80435D90_de", "func_80435E20_de", "func_80435EBC_de", "func_80435EF4_de", "func_80435F14_de", "func_8043601C_de", "func_80436024_de", "func_80436044_de", "func_8043612C_de", "func_804361BC_de", "func_80436250_de", "func_80436288_de", "func_804362A8_de", "func_80436394_de", "func_8043639C_de", "func_804363BC_de", "func_80436454_de"]
 evidence = "inferred"
-signals = ["cap", "version"]
+signals = ["version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1532,6 +1613,24 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "code_8043C72C"
+segment = "span_16E000"
+members = ["func_8043C72C_us_rev1_fragment"]
+evidence = "inferred"
+signals = []
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_8043D1DC"
+segment = "span_166000"
+members = ["func_8043D1DC_de", "func_8043D20C_de", "func_8043D214_de", "func_8043D21C_de", "func_8043D224_de", "func_8043D22C_de", "func_8043D234_de", "func_8043D23C_de", "func_8043D244_de", "func_8043D24C_de", "func_8043D254_de", "func_8043D278_de", "func_8043D300_de", "func_8043DB50_de", "func_8043DCA4_de", "func_8043EDA4_de", "func_8043F114_de", "func_804433B8_de", "func_80443EB4_de", "func_80443EC0_de", "func_80444E28_de", "func_804456E0_de", "func_80445F2C_de", "func_80445F74_de", "func_80446A1C_de", "func_80446D78_de", "func_804476B8_de", "func_80447818_de", "func_80447AEC_de", "func_80447F24_de"]
+evidence = "proven"
+signals = ["cap", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "code_8043D54C"
 segment = "span_16E000"
 members = ["func_8043D36C_de", "func_8043DADC_de", "func_8043DB04_de", "func_8043DD2C_us_rev1", "func_8043DE50_de"]
@@ -1564,6 +1663,15 @@ segment = "span_16E000"
 members = ["func_8043F52C_de", "func_8043FE3C_de", "func_804402DC_de", "func_804404A8_de", "func_80440838_de", "func_80440DA0_de", "func_804410AC_de", "func_80441214_de", "func_804415F4_de", "func_80441BE0_de", "func_80441EB0_de", "func_80441FE8_de", "func_80442064_de", "func_8044208C_de", "func_804420B4_de", "func_804420E4_de", "func_8044214C_de", "func_80442214_de"]
 evidence = "proven"
 signals = ["callee", "cap"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_804400E4"
+segment = "span_F0000"
+members = ["func_804400E4_eu_x", "func_80444434_eu_x", "func_8044505C_eu_x", "func_804460E4_eu_x", "func_804460F8_eu_x", "func_80446A50_eu_x", "func_804495E4_eu_x", "func_8044A0A8_eu_x", "func_8044A0B0_eu_x", "func_8044B568_eu_x", "func_8044C264_eu_x"]
+evidence = "inferred"
+signals = ["version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1613,20 +1721,29 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
-name = "code_8041C67C"
-segment = "span_16E000"
-members = ["func_80446C5C_de", "func_80445F80_de", "func_80447DAC_eu_x", "func_80446A20_de", "func_80447FEC_eu_x", "func_80446C60_de", "func_80448108_eu_x", "func_80446D80_de", "func_80446E58_de", "func_80446EE4_de"]
-evidence = "proven"
-signals = ["callee", "cap", "version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
 name = "code_80447BB0"
 segment = "span_16E000"
 members = ["func_80446F60_de", "func_80448A48_eu_x", "func_8044799C_de", "func_80447A38_de", "func_80448E7C_eu_x", "func_80447AF0_de", "func_804492B4_eu_x", "func_80447F30_de", "func_80448EA4_us_rev1", "func_80448260_de", "func_80448548_de", "func_804486B8_de", "func_804488A4_de", "func_80448B84_de", "func_80448BB4_de", "func_80448BFC_de", "func_80448CC4_de", "func_80449968_us_rev1", "func_80449970_us_rev1", "func_80448EF4_de", "func_804491E8_de", "func_8044952C_de", "func_8044972C_de", "func_80449870_de", "func_804499B0_de", "func_80449DB0_de", "func_80449E18_de", "func_80449EE4_de", "func_8044A020_de"]
 evidence = "proven"
 signals = ["callee", "cap", "rodata", "version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_80447FD8"
+segment = "span_176000"
+members = ["func_80447FD8_eu", "func_80449184_eu", "func_804494B4_eu", "func_80449F78_eu", "func_80449F80_eu", "func_8044B43C_eu", "func_8044C134_eu", "func_8044C3A8_eu", "func_8044EF2C_eu", "func_8044EF84_eu", "func_8044F224_eu"]
+evidence = "inferred"
+signals = ["version"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
+name = "code_80448254"
+segment = "span_166000"
+members = ["func_80448254_de", "func_80448C84_de", "func_80448D18_de", "func_80448D20_de", "func_8044AE64_de", "func_8044B0D8_de", "func_8044DC5C_de", "func_8044DCB4_de", "func_8044DF54_de"]
+evidence = "inferred"
+signals = ["callee", "version"]
 subsystem = "unknown"
 sdk = false
 
@@ -1645,51 +1762,6 @@ segment = "span_16E000"
 members = ["func_8044D668_de", "func_8044DB70_de", "func_8044DC60_de", "func_8044DCC0_de", "func_8044DDD4_de", "func_8044DE7C_de"]
 evidence = "proven"
 signals = []
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_80405DC4"
-segment = "span_176000"
-members = ["func_80405DC4_eu", "func_80406A88_eu", "func_80408CAC_eu", "func_8040AB6C_eu", "func_8040AC68_eu", "func_8040BF80_eu", "func_8040BFEC_eu", "func_8040C9F8_eu", "func_8040CEE4_eu", "func_80414798_eu", "func_804147E8_eu", "func_8041483C_eu", "func_804160C4_eu", "func_80419868_eu", "func_80419F50_eu", "func_8041BA1C_eu", "func_8041CA4C_eu", "func_8041D280_eu", "func_8041E3A0_eu", "func_8041F55C_eu", "func_8041F6E0_eu", "func_8042251C_eu", "func_804229E0_eu", "func_80422C58_eu", "func_80422E34_eu", "func_80423CE0_eu", "func_80424B78_eu", "func_80426E48_eu", "func_80429B00_eu", "func_80429C9C_eu", "func_8042E638_eu"]
-evidence = "proven"
-signals = ["cap", "version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_8042FBEC"
-segment = "span_176000"
-members = ["func_8042FBEC_eu", "func_80436834_eu", "func_8043768C_eu", "func_804387E8_eu", "func_80438878_eu", "func_8043A3AC_eu", "func_8043A6B8_eu", "func_8043ABFC_eu", "func_8043D1F4_eu", "func_8043D42C_eu", "func_8043E9D0_eu", "func_8043FC50_eu", "func_8043FCFC_eu", "func_8043FFB4_eu", "func_80444308_eu", "func_80444F28_eu", "func_80444F30_eu", "func_80444F9C_eu", "func_80444FE4_eu", "func_8044502C_eu", "func_80445F60_eu", "func_80445FB4_eu", "func_8044605C_eu", "func_80446138_eu", "func_80446920_eu", "func_804471D4_eu", "func_80447C7C_eu", "func_80447EBC_eu"]
-evidence = "proven"
-signals = ["cap", "version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_80447FD8"
-segment = "span_176000"
-members = ["func_80447FD8_eu", "func_80449184_eu", "func_804494B4_eu", "func_80449F78_eu", "func_80449F80_eu", "func_8044B43C_eu", "func_8044C134_eu", "func_8044C3A8_eu", "func_8044EF2C_eu", "func_8044EF84_eu", "func_8044F224_eu"]
-evidence = "inferred"
-signals = ["version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_80403E88"
-segment = "span_F0000"
-members = ["func_80403E88_eu_x", "func_80405DC4_eu_x", "func_80406A88_eu_x", "func_8041BA1C_eu_x", "func_8041D280_eu_x", "func_8041E3A0_eu_x", "func_8041F6E0_eu_x", "func_80421E70_eu_x", "func_8042251C_eu_x", "func_804229DC_eu_x", "func_804235E0_eu_x", "func_80423B68_eu_x", "func_80423D24_eu_x", "func_80423DB0_eu_x", "func_80424CC8_eu_x", "func_80426FA0_eu_x", "func_80429C50_eu_x", "func_80429C78_eu_x", "func_80429DEC_eu_x", "func_8042AFB0_eu_x", "func_8042E788_eu_x", "func_8042E790_eu_x", "func_8042FD3C_eu_x", "func_8043697C_eu_x", "func_804385E8_eu_x", "func_80438918_eu_x", "func_804389B0_eu_x", "func_8043A4E0_eu_x", "func_8043AD2C_eu_x", "func_8043D324_eu_x", "func_8043D55C_eu_x", "func_8043EB6C_eu_x"]
-evidence = "inferred"
-signals = ["cap", "version"]
-subsystem = "unknown"
-sdk = false
-
-[[group]]
-name = "code_804400E4"
-segment = "span_F0000"
-members = ["func_804400E4_eu_x", "func_80444434_eu_x", "func_8044505C_eu_x", "func_804460E4_eu_x", "func_804460F8_eu_x", "func_80446A50_eu_x", "func_804495E4_eu_x", "func_8044A0A8_eu_x", "func_8044A0B0_eu_x", "func_8044B568_eu_x", "func_8044C264_eu_x"]
-evidence = "inferred"
-signals = ["version"]
 subsystem = "unknown"
 sdk = false
 
