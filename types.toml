@@ -6476,7 +6476,8 @@ schema = 1
 "rodata/unresolved/800C2EF4" = { declaration = "extern u8 rodata/unresolved/800C2EF4[0x8];", evidence = "splat", section = ".data", size = 8 }
 "rodata/unresolved/800C2F04" = { declaration = "extern u8 rodata/unresolved/800C2F04[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C2F08" = { declaration = "extern u8 rodata/unresolved/800C2F08[0x38];", evidence = "splat", section = ".data", size = 56 }
-"rodata/unresolved/800C2F24" = { declaration = "extern u8 rodata/unresolved/800C2F24[0x48];", evidence = "splat", section = ".data", size = 72 }
+"rodata/unresolved/800C2F24" = { declaration = "extern u8 rodata/unresolved/800C2F24[0x4];", evidence = "splat", section = ".data", size = 4 }
+"rodata/unresolved/800C2F28" = { declaration = "extern u8 rodata/unresolved/800C2F28[0x44];", evidence = "splat", section = ".data", size = 68 }
 "rodata/unresolved/800C2F34" = { declaration = "extern u8 rodata/unresolved/800C2F34[0x8];", evidence = "splat", section = ".data", size = 8 }
 "rodata/unresolved/800C2F64" = { declaration = "extern u8 rodata/unresolved/800C2F64[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C2FAC" = { declaration = "extern u8 rodata/unresolved/800C2FAC[0x4];", evidence = "splat", section = ".data", size = 4 }
@@ -8629,7 +8630,8 @@ schema = 1
 "rodata/unresolved/800DC290" = { declaration = "extern u8 rodata/unresolved/800DC290[0x18];", evidence = "splat", section = ".data", size = 24 }
 "rodata/unresolved/800DC2A8" = { declaration = "extern u8 rodata/unresolved/800DC2A8[0x8];", evidence = "splat", section = ".data", size = 8 }
 "rodata/unresolved/800DC2C4" = { declaration = "extern u8 rodata/unresolved/800DC2C4[0x4];", evidence = "splat", section = ".rodata", size = 4 }
-"rodata/unresolved/800DC2CC" = { declaration = "extern u8 rodata/unresolved/800DC2CC[0x44];", evidence = "splat", section = ".data", size = 68 }
+"rodata/unresolved/800DC2CC" = { declaration = "extern u8 rodata/unresolved/800DC2CC[0x1C];", evidence = "splat", section = ".data", size = 28 }
+"rodata/unresolved/800DC2E8" = { declaration = "extern u8 rodata/unresolved/800DC2E8[0x28];", evidence = "splat", section = ".data", size = 40 }
 "rodata/unresolved/800DC310" = { declaration = "extern u8 rodata/unresolved/800DC310[0x20];", evidence = "splat", section = ".data", size = 32 }
 "rodata/unresolved/800DC348" = { declaration = "extern u8 rodata/unresolved/800DC348[0xC8];", evidence = "splat", section = ".data", size = 200 }
 "rodata/unresolved/800DC410" = { declaration = "extern u8 rodata/unresolved/800DC410[0xE8];", evidence = "splat", section = ".data", size = 232 }
@@ -8639,7 +8641,9 @@ schema = 1
 "rodata/unresolved/800DC62C" = { declaration = "extern u8 rodata/unresolved/800DC62C[0x40];", evidence = "splat", section = ".data", size = 64 }
 "rodata/unresolved/800DC687" = { declaration = "extern u8 rodata/unresolved/800DC687[0x1];", evidence = "splat", section = ".data", size = 1 }
 "rodata/unresolved/800DC688" = { declaration = "extern u8 rodata/unresolved/800DC688[0x14];", evidence = "splat", section = ".data", size = 20 }
-"rodata/unresolved/800DC69C" = { declaration = "extern u8 rodata/unresolved/800DC69C[0x44];", evidence = "splat", section = ".data", size = 68 }
+"rodata/unresolved/800DC69C" = { declaration = "extern u8 rodata/unresolved/800DC69C[0x4];", evidence = "splat", section = ".data", size = 4 }
+"rodata/unresolved/800DC6A0" = { declaration = "extern u8 rodata/unresolved/800DC6A0[0x14];", evidence = "splat", section = ".data", size = 20 }
+"rodata/unresolved/800DC6B4" = { declaration = "extern u8 rodata/unresolved/800DC6B4[0x2C];", evidence = "splat", section = ".data", size = 44 }
 "rodata/unresolved/800DC6E0" = { declaration = "extern u8 rodata/unresolved/800DC6E0[0x38];", evidence = "splat", section = ".data", size = 56 }
 "rodata/unresolved/800DC718" = { declaration = "extern u8 rodata/unresolved/800DC718[0x24];", evidence = "splat", section = ".data", size = 36 }
 "rodata/unresolved/800DC74C" = { declaration = "extern u8 rodata/unresolved/800DC74C[0x4];", evidence = "splat", section = ".data", size = 4 }
@@ -8647,7 +8651,9 @@ schema = 1
 "rodata/unresolved/800DC794" = { declaration = "extern u8 rodata/unresolved/800DC794[0xC];", evidence = "splat", section = ".data", size = 12 }
 "rodata/unresolved/800DC7A3" = { declaration = "extern u8 rodata/unresolved/800DC7A3[0x1];", evidence = "splat", section = ".data", size = 1 }
 "rodata/unresolved/800DC7A9" = { declaration = "extern u8 rodata/unresolved/800DC7A9[0x3];", evidence = "splat", section = ".data", size = 3 }
-"rodata/unresolved/800DC7C4" = { declaration = "extern u8 rodata/unresolved/800DC7C4[0x1C];", evidence = "splat", section = ".data", size = 28 }
+"rodata/unresolved/800DC7C4" = { declaration = "extern u8 rodata/unresolved/800DC7C4[0x4];", evidence = "splat", section = ".data", size = 4 }
+"rodata/unresolved/800DC7C8" = { declaration = "extern u8 rodata/unresolved/800DC7C8[0x14];", evidence = "splat", section = ".data", size = 20 }
+"rodata/unresolved/800DC7DC" = { declaration = "extern u8 rodata/unresolved/800DC7DC[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800DC7E3" = { declaration = "extern u8 rodata/unresolved/800DC7E3[0x21];", evidence = "splat", section = ".data", size = 33 }
 "rodata/unresolved/800DC810" = { declaration = "extern u8 rodata/unresolved/800DC810[0x20];", evidence = "splat", section = ".data", size = 32 }
 "rodata/unresolved/800DC830" = { declaration = "extern u8 rodata/unresolved/800DC830[0x14];", evidence = "splat", section = ".data", size = 20 }
@@ -8769,7 +8775,9 @@ schema = 1
 "rodata/unresolved/800DD930" = { declaration = "extern u8 rodata/unresolved/800DD930[0x4C];", evidence = "splat", section = ".data", size = 76 }
 "rodata/unresolved/800DD97C" = { declaration = "extern u8 rodata/unresolved/800DD97C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800DD9D7" = { declaration = "extern u8 rodata/unresolved/800DD9D7[0x1];", evidence = "splat", section = ".data", size = 1 }
-"rodata/unresolved/800DD9EC" = { declaration = "extern u8 rodata/unresolved/800DD9EC[0x44];", evidence = "splat", section = ".data", size = 68 }
+"rodata/unresolved/800DD9EC" = { declaration = "extern u8 rodata/unresolved/800DD9EC[0x4];", evidence = "splat", section = ".data", size = 4 }
+"rodata/unresolved/800DD9F0" = { declaration = "extern u8 rodata/unresolved/800DD9F0[0x14];", evidence = "splat", section = ".data", size = 20 }
+"rodata/unresolved/800DDA04" = { declaration = "extern u8 rodata/unresolved/800DDA04[0x2C];", evidence = "splat", section = ".data", size = 44 }
 "rodata/unresolved/800DDA68" = { declaration = "extern u8 rodata/unresolved/800DDA68[0x8];", evidence = "splat", section = ".data", size = 8 }
 "rodata/unresolved/800DDA9C" = { declaration = "extern u8 rodata/unresolved/800DDA9C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800DDAE4" = { declaration = "extern u8 rodata/unresolved/800DDAE4[0xC];", evidence = "splat", section = ".data", size = 12 }
@@ -9212,7 +9220,8 @@ schema = 1
 "rodata/unresolved/800E8D4F" = { declaration = "extern u8 rodata/unresolved/800E8D4F[0x1];", evidence = "splat", section = ".data", size = 1 }
 "rodata/unresolved/800E8D84" = { declaration = "extern u8 rodata/unresolved/800E8D84[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800E8DCC" = { declaration = "extern u8 rodata/unresolved/800E8DCC[0x4];", evidence = "splat", section = ".data", size = 4 }
-"rodata/unresolved/800E8E20" = { declaration = "extern u8 rodata/unresolved/800E8E20[0x20];", evidence = "splat", section = ".data", size = 32 }
+"rodata/unresolved/800E8E20" = { declaration = "extern u8 rodata/unresolved/800E8E20[0x18];", evidence = "splat", section = ".data", size = 24 }
+"rodata/unresolved/800E8E38" = { declaration = "extern u8 rodata/unresolved/800E8E38[0x8];", evidence = "splat", section = ".data", size = 8 }
 "rodata/unresolved/800E8E54" = { declaration = "extern u8 rodata/unresolved/800E8E54[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/unresolved/800E8E5C" = { declaration = "extern u8 rodata/unresolved/800E8E5C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800E8E74" = { declaration = "extern u8 rodata/unresolved/800E8E74[0x4];", evidence = "splat", section = ".data", size = 4 }
@@ -9381,7 +9390,8 @@ schema = 1
 "rodata/unresolved/800EDC94" = { declaration = "extern u8 rodata/unresolved/800EDC94[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/unresolved/800EDC9C" = { declaration = "extern u8 rodata/unresolved/800EDC9C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800EDCA0" = { declaration = "extern u8 rodata/unresolved/800EDCA0[0x14];", evidence = "splat", section = ".data", size = 20 }
-"rodata/unresolved/800EDCB4" = { declaration = "extern u8 rodata/unresolved/800EDCB4[0x2C];", evidence = "splat", section = ".data", size = 44 }
+"rodata/unresolved/800EDCB4" = { declaration = "extern u8 rodata/unresolved/800EDCB4[0x4];", evidence = "splat", section = ".data", size = 4 }
+"rodata/unresolved/800EDCB8" = { declaration = "extern u8 rodata/unresolved/800EDCB8[0x28];", evidence = "splat", section = ".data", size = 40 }
 "rodata/unresolved/800EDCE0" = { declaration = "extern u8 rodata/unresolved/800EDCE0[0x20];", evidence = "splat", section = ".data", size = 32 }
 "rodata/unresolved/800EDD18" = { declaration = "extern u8 rodata/unresolved/800EDD18[0xC8];", evidence = "splat", section = ".data", size = 200 }
 "rodata/unresolved/800EDDE0" = { declaration = "extern u8 rodata/unresolved/800EDDE0[0xE8];", evidence = "splat", section = ".data", size = 232 }
@@ -9392,7 +9402,9 @@ schema = 1
 "rodata/unresolved/800EE000" = { declaration = "extern u8 rodata/unresolved/800EE000[0x24];", evidence = "splat", section = ".data", size = 36 }
 "rodata/unresolved/800EE057" = { declaration = "extern u8 rodata/unresolved/800EE057[0x1];", evidence = "splat", section = ".data", size = 1 }
 "rodata/unresolved/800EE058" = { declaration = "extern u8 rodata/unresolved/800EE058[0x14];", evidence = "splat", section = ".data", size = 20 }
-"rodata/unresolved/800EE06C" = { declaration = "extern u8 rodata/unresolved/800EE06C[0x44];", evidence = "splat", section = ".data", size = 68 }
+"rodata/unresolved/800EE06C" = { declaration = "extern u8 rodata/unresolved/800EE06C[0x4];", evidence = "splat", section = ".data", size = 4 }
+"rodata/unresolved/800EE070" = { declaration = "extern u8 rodata/unresolved/800EE070[0x14];", evidence = "splat", section = ".data", size = 20 }
+"rodata/unresolved/800EE084" = { declaration = "extern u8 rodata/unresolved/800EE084[0x2C];", evidence = "splat", section = ".data", size = 44 }
 "rodata/unresolved/800EE0B0" = { declaration = "extern u8 rodata/unresolved/800EE0B0[0x38];", evidence = "splat", section = ".data", size = 56 }
 "rodata/unresolved/800EE0E8" = { declaration = "extern u8 rodata/unresolved/800EE0E8[0x8];", evidence = "splat", section = ".data", size = 8 }
 "rodata/unresolved/800EE11C" = { declaration = "extern u8 rodata/unresolved/800EE11C[0x4];", evidence = "splat", section = ".data", size = 4 }
@@ -9400,7 +9412,9 @@ schema = 1
 "rodata/unresolved/800EE164" = { declaration = "extern u8 rodata/unresolved/800EE164[0xC];", evidence = "splat", section = ".data", size = 12 }
 "rodata/unresolved/800EE173" = { declaration = "extern u8 rodata/unresolved/800EE173[0x1];", evidence = "splat", section = ".data", size = 1 }
 "rodata/unresolved/800EE179" = { declaration = "extern u8 rodata/unresolved/800EE179[0x3];", evidence = "splat", section = ".data", size = 3 }
-"rodata/unresolved/800EE194" = { declaration = "extern u8 rodata/unresolved/800EE194[0x1C];", evidence = "splat", section = ".data", size = 28 }
+"rodata/unresolved/800EE194" = { declaration = "extern u8 rodata/unresolved/800EE194[0x4];", evidence = "splat", section = ".data", size = 4 }
+"rodata/unresolved/800EE198" = { declaration = "extern u8 rodata/unresolved/800EE198[0x14];", evidence = "splat", section = ".data", size = 20 }
+"rodata/unresolved/800EE1AC" = { declaration = "extern u8 rodata/unresolved/800EE1AC[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800EE1B3" = { declaration = "extern u8 rodata/unresolved/800EE1B3[0x21];", evidence = "splat", section = ".data", size = 33 }
 "rodata/unresolved/800EE1E0" = { declaration = "extern u8 rodata/unresolved/800EE1E0[0x20];", evidence = "splat", section = ".data", size = 32 }
 "rodata/unresolved/800EE200" = { declaration = "extern u8 rodata/unresolved/800EE200[0x14];", evidence = "splat", section = ".data", size = 20 }
