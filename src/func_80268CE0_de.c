@@ -59,7 +59,6 @@ void func_80268CE0_de(u32 mode) {
  }
 }
 
-extern void *jtbl_800C4548_de[];
 
 extern s32 D_800CC364;
 
@@ -75,13 +74,42 @@ s32 func_8026925C_de(s32 arg0) {
     D_800CC364 = arg0;
 
     {
-        static void *sw_mode_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_mode_0, &&sw_mode_1, &&sw_mode_2, &&sw_mode_3, &&sw_mode_4, &&sw_mode_5, &&sw_mode_6, &&sw_mode_7, &&sw_mode_8, &&sw_mode_9, &&sw_mode_10, &&sw_mode_11, &&sw_mode_12, &&sw_mode_13, &&sw_mode_14, &&sw_mode_15, &&sw_mode_16, &&sw_mode_17, &&sw_mode_18, &&sw_mode_19, &&sw_mode_20, &&sw_mode_21, &&sw_mode_22, &&sw_mode_23, &&sw_mode_24, &&sw_mode_25, &&sw_mode_26, &&sw_mode_27, &&sw_mode_28, &&sw_mode_29, &&sw_mode_30, &&sw_mode_default
-        };
         if ((u32)arg0 > 30) {
             goto sw_mode_default;
         }
-        goto *jtbl_800C4548_de[arg0];
+        switch (arg0) {
+        case 0: goto sw_mode_0;
+        case 1: goto sw_mode_1;
+        case 2: goto sw_mode_2;
+        case 3: goto sw_mode_3;
+        case 4: goto sw_mode_4;
+        case 5: goto sw_mode_5;
+        case 6: goto sw_mode_6;
+        case 7: goto sw_mode_7;
+        case 8: goto sw_mode_8;
+        case 9: goto sw_mode_9;
+        case 10: goto sw_mode_10;
+        case 11: goto sw_mode_11;
+        case 12: goto sw_mode_12;
+        case 13: goto sw_mode_13;
+        case 14: goto sw_mode_14;
+        case 15: goto sw_mode_15;
+        case 16: goto sw_mode_16;
+        case 17: goto sw_mode_17;
+        case 18: goto sw_mode_18;
+        case 19: goto sw_mode_19;
+        case 20: goto sw_mode_20;
+        case 21: goto sw_mode_21;
+        case 22: goto sw_mode_22;
+        case 23: goto sw_mode_23;
+        case 24: goto sw_mode_24;
+        case 25: goto sw_mode_25;
+        case 26: goto sw_mode_26;
+        case 27: goto sw_mode_27;
+        case 28: goto sw_mode_28;
+        case 29: goto sw_mode_29;
+        case 30: goto sw_mode_30;
+        }
     }
     switch (arg0) {
     case 0: sw_mode_0: {

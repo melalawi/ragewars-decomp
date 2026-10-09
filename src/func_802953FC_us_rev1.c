@@ -7,8 +7,6 @@ extern s32 D_8014AED0;
 extern s32 D_8014AED4;
 extern s32 D_8014AED8;
 
-extern void *jtbl_800CA638[];
-extern void *jtbl_800CA650[];
 
 
 
@@ -20,17 +18,19 @@ s32 func_802953FC_us_rev1(s32 arg0) {
     }
 
     {
-        static void *sw_outer_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_outer_0x101, &&sw_outer_0x102, &&sw_outer_0x103,
-            &&sw_outer_0x104, &&sw_outer_0x105, &&sw_outer_0x106,
-            &&sw_outer_default
-        };
         s32 sw_outer_value = arg0;
         sw_outer_value -= (257);
         if ((unsigned int)sw_outer_value > 5) {
             goto sw_outer_default;
         }
-        goto *jtbl_800CA638[sw_outer_value];
+        switch (sw_outer_value) {
+        case 0: goto sw_outer_0x101;
+        case 1: goto sw_outer_0x102;
+        case 2: goto sw_outer_0x103;
+        case 3: goto sw_outer_0x104;
+        case 4: goto sw_outer_0x105;
+        case 5: goto sw_outer_0x106;
+        }
     }
     do {
     sw_outer_0x101:
@@ -43,15 +43,18 @@ s32 func_802953FC_us_rev1(s32 arg0) {
         return 1 << ((func_802953FC_S1 *)(D_8014AED0))->unk3;
     sw_outer_0x105:
         {
-        static void *sw_inner_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_inner_0, &&sw_inner_1, &&sw_inner_3, &&sw_inner_5,
-            &&sw_inner_2, &&sw_inner_4
-        };
         s32 sw_inner_value = *(u8 *)D_8014AED0;
         if ((unsigned int)sw_inner_value > 5) {
             goto zero;
         }
-        goto *jtbl_800CA650[sw_inner_value];
+        switch (sw_inner_value) {
+        case 0: goto sw_inner_0;
+        case 1: goto sw_inner_1;
+        case 2: goto sw_inner_2;
+        case 3: goto sw_inner_1;
+        case 4: goto sw_inner_4;
+        case 5: goto sw_inner_1;
+        }
     }
     do {
         sw_inner_0:

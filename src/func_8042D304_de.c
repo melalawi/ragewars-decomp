@@ -8,13 +8,9 @@
    higher rank also gets. */
 extern struct func_8042CE54_S1 *D_800E53C0;
 extern u8 D_80146398[];
-extern void *jtbl_800DDB18[];
 extern void *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(struct Item_func_8042D304_de *, s32);
 void func_8042D304_de(s32 player, s32 kind, unsigned short group) {
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&rank_0, &&rank_1, &&rank_2, &&rank_4, &&hidden
-    };
     struct Item_func_8042D304_de *item;
     void *parent;
     u8 *record;
@@ -69,7 +65,13 @@ void func_8042D304_de(s32 player, s32 kind, unsigned short group) {
     if (rank >= 5) {
         goto hidden;
     }
-    goto *jtbl_800DDB18[rank];
+    switch (rank) {
+        case 0: goto rank_0;
+        case 1: goto rank_1;
+        case 2: goto rank_2;
+        case 3: goto rank_4;
+        case 4: goto done;
+        }
 rank_0:
     frame = 0x63;
     goto done;

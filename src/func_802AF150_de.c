@@ -13,7 +13,6 @@ extern void func_802BAC50_de(void *arg0, void *arg1, s32 arg2);
 extern char D_800C7350_de[];
 extern char D_800C7354_de[];
 
-extern void *jtbl_800C73D0[];
 
 
 
@@ -32,14 +31,32 @@ void func_802AF150_de(void *arg0) {
     if (field18 != 0) {
         func_802AE6BC_de(field18, &message);
         {
-        static void *sw_message_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_message_0, &&sw_message_2, &&sw_message_3, &&sw_message_17, &&sw_message_18, &&sw_message_19, &&sw_message_default
-        };
         s32 sw_message_value = (s16)((u16)message.type - 1);
         if ((unsigned int)sw_message_value > 19) {
             goto sw_message_default;
         }
-        goto *jtbl_800C73D0[sw_message_value];
+        switch (sw_message_value) {
+        case 0: goto sw_message_0;
+        case 1: goto sw_message_default;
+        case 2: goto sw_message_2;
+        case 3: goto sw_message_3;
+        case 4: goto sw_message_default;
+        case 5: goto sw_message_default;
+        case 6: goto sw_message_default;
+        case 7: goto sw_message_default;
+        case 8: goto sw_message_default;
+        case 9: goto sw_message_default;
+        case 10: goto sw_message_default;
+        case 11: goto sw_message_default;
+        case 12: goto sw_message_default;
+        case 13: goto sw_message_default;
+        case 14: goto sw_message_default;
+        case 15: goto sw_message_default;
+        case 16: goto sw_message_default;
+        case 17: goto sw_message_17;
+        case 18: goto sw_message_17;
+        case 19: goto sw_message_17;
+        }
     }
     do {
         sw_message_0:

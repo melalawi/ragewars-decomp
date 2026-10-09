@@ -87,7 +87,6 @@ s32 func_80229A80_de(void *game) {
 
 extern s32 D_80142850;
 
-extern void *jtbl_800C2C80[];
 
 /** Return the animation-table offset selected by the actor state. */
 s32 func_80229C0C_de(void *arg0, s32 arg1) {
@@ -119,18 +118,29 @@ s32 func_80229C0C_de(void *arg0, s32 arg1) {
     } else {
         state = ((func_80229BE0_S1 *)(arg0))->unk5D8;
         {
-        static void *sw_state_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_state_1, &&sw_state_2, &&sw_state_3,
-            &&sw_state_4, &&sw_state_5, &&sw_state_6, &&sw_state_7,
-            &&sw_state_8, &&sw_state_9, &&sw_state_15, &&sw_state_10,
-            &&sw_state_11, &&sw_state_12, &&sw_state_13,
-            &&sw_state_16, &&sw_state_14
-        };
         s32 sw_state_value = ((func_80229BE0_S2 *)(state))->unk80;
         if ((unsigned int)sw_state_value > 16) {
             goto sw_state_invalid;
         }
-        goto *jtbl_800C2C80[sw_state_value];
+        switch (sw_state_value) {
+        case 0: goto sw_state_invalid;
+        case 1: goto sw_state_1;
+        case 2: goto sw_state_2;
+        case 3: goto sw_state_3;
+        case 4: goto sw_state_4;
+        case 5: goto sw_state_5;
+        case 6: goto sw_state_6;
+        case 7: goto sw_state_7;
+        case 8: goto sw_state_8;
+        case 9: goto sw_state_9;
+        case 10: goto sw_state_10;
+        case 11: goto sw_state_11;
+        case 12: goto sw_state_12;
+        case 13: goto sw_state_13;
+        case 14: goto sw_state_14;
+        case 15: goto sw_state_9;
+        case 16: goto sw_state_13;
+        }
     }
     do {
         sw_state_invalid:

@@ -13,7 +13,6 @@
    reports 11 and -1 otherwise. Either then calls func_802998A8_de. Returns zero. */
 extern char D_80145088[];
 extern char D_8011FE88[];
-extern void *jtbl_800EE090[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
 extern s32 func_802999A0_de(s32);
@@ -36,9 +35,6 @@ enum { MENU_804291A8_473 = 473, MENU_804291A8_474 = 474 };
 
 s32 func_80428FC8_de(void) {
     /* FAKEMATCH: preserve resident jump-table labels and recovered dispatch schedule. */
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&send_20, &&send_10, &&send_15, &&send_10_again, &&send_3
-    };
     char *objects;
     s32 code;
     u32 level;
@@ -61,7 +57,13 @@ s32 func_80428FC8_de(void) {
         if (level >= 5) {
             goto send_3;
         }
-        goto *jtbl_800EE090[level];
+        switch (level) {
+        case 0: goto send_20;
+        case 1: goto send_10;
+        case 2: goto send_15;
+        case 3: goto send_10_again;
+        case 4: goto send_10_again;
+        }
     send_20:
         code = 20;
         goto send;

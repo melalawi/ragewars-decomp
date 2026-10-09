@@ -43,7 +43,6 @@ extern void *D_800D052C[];
 extern char D_8011D8D0;
 extern s32 func_80283228_de(void *, s32);
 
-extern void *jtbl_800C2E30[];
 
 
 
@@ -61,14 +60,34 @@ s32 func_8022EB0C_de(void *arg0, s32 arg1) {
 
     entry = D_800D052C[arg1];
     {
-        static void *sw_arg1_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_arg1_1, &&sw_arg1_2, &&sw_arg1_5, &&sw_arg1_6, &&sw_arg1_7, &&sw_arg1_8, &&sw_arg1_9, &&sw_arg1_10, &&sw_arg1_11, &&sw_arg1_13, &&sw_arg1_14, &&sw_arg1_15, &&sw_arg1_3, &&sw_arg1_4, &&sw_arg1_12, &&sw_arg1_0, &&sw_arg1_18, &&sw_arg1_19, &&sw_arg1_20, &&sw_arg1_21, &&sw_arg1_default
-        };
         s32 sw_arg1_value = arg1;
         if ((unsigned int)sw_arg1_value > 21) {
             goto sw_arg1_default;
         }
-        goto *jtbl_800C2E30[sw_arg1_value];
+        switch (sw_arg1_value) {
+        case 0: goto sw_arg1_0;
+        case 1: goto sw_arg1_1;
+        case 2: goto sw_arg1_1;
+        case 3: goto sw_arg1_3;
+        case 4: goto sw_arg1_4;
+        case 5: goto sw_arg1_1;
+        case 6: goto sw_arg1_1;
+        case 7: goto sw_arg1_1;
+        case 8: goto sw_arg1_1;
+        case 9: goto sw_arg1_1;
+        case 10: goto sw_arg1_1;
+        case 11: goto sw_arg1_1;
+        case 12: goto sw_arg1_12;
+        case 13: goto sw_arg1_1;
+        case 14: goto sw_arg1_1;
+        case 15: goto sw_arg1_1;
+        case 16: goto sw_arg1_default;
+        case 17: goto sw_arg1_default;
+        case 18: goto sw_arg1_0;
+        case 19: goto sw_arg1_0;
+        case 20: goto sw_arg1_0;
+        case 21: goto sw_arg1_0;
+        }
     }
     do {
     sw_arg1_1:
