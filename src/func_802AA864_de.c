@@ -1,6 +1,8 @@
 #include "span_1000/code_802A8A94.h"
 #include "types.h"
 
+extern f32 D_800CB3A8;
+extern f32 D_800CB3B0;
 extern f32 D_800C6214_de;
 extern f32 D_800C621C_de;
 extern f32 D_800C6224_de;
@@ -28,12 +30,12 @@ f32 func_802AA864_de(void) {
     sw_mode_0:
         return D_800C6214_de;
     sw_mode_1:
-        return (12.0f);
+        return D_800CB3A8;
     sw_mode_2:
     sw_mode_6:
         return D_800C621C_de;
     sw_mode_3:
-        return (6.0f);
+        return D_800CB3B0;
     sw_mode_4:
     sw_mode_5:
         return D_800C6224_de;
