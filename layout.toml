@@ -7394,7 +7394,6 @@ kind = "c"
 group = "code_80231F5C"
 members = ["func_802328D8_de"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["eu", "eu-x"]
 
 [unit.options]
 add = []
@@ -17832,7 +17831,6 @@ kind = "c"
 group = "code_80291054"
 members = ["func_80293534_de"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["de", "eu", "eu-x", "us"]
 
 [unit.options]
 add = []
@@ -20276,7 +20274,6 @@ kind = "c"
 group = "code_802A1264"
 members = ["func_802A1B24_de"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["de", "eu", "eu-x", "us"]
 
 [unit.options]
 add = []
@@ -21251,6 +21248,7 @@ kind = "c"
 group = "code_802AB3FC"
 members = ["func_802ABBDC_de"]
 toolchain = "gcc-2.8.1-sn64"
+withheld = ["eu", "eu-x"]
 
 [unit.options]
 add = []
@@ -23874,7 +23872,7 @@ kind = "c"
 group = "code_802BB67C"
 members = ["func_802BB750_de"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["us"]
+withheld = ["de", "eu", "us"]
 
 [unit.options]
 add = []
@@ -23953,7 +23951,7 @@ kind = "c"
 group = "code_802BBC68"
 members = ["func_802BCE20_de"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["us"]
+withheld = ["de", "eu", "us"]
 
 [unit.options]
 add = []
@@ -33521,7 +33519,7 @@ kind = "c"
 group = "code_8043DF84"
 members = ["func_8043E2D8_de"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["de", "eu", "eu-x", "us"]
+withheld = ["eu", "eu-x"]
 
 [unit.options]
 add = []
@@ -35146,7 +35144,7 @@ kind = "c"
 group = "code_80447BB0"
 members = ["func_8044952C_de"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["de", "eu", "eu-x", "us"]
+withheld = ["us"]
 
 [unit.options]
 add = []
