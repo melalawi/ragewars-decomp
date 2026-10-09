@@ -35372,6 +35372,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/rodata.writable.800CE4E0.c"
+kind = "data"
+group = "code_802A0888"
+members = ["rodata/writable/800CE4E0"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/rodata.writable.800CE600.c"
 kind = "data"
 group = "code_802A208C"
