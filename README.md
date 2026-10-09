@@ -7,7 +7,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 ## Progress
 
 <!-- progress -->
-<pre><code>all      [███████████▒░░░░░░░░]  56.35% (~56.87%)  3,864,097 of 6,857,872 bytes</code><br><code>de       [██████████▒░░░░░░░░░]  54.74% (~55.25%)  756,801 of 1,382,608 bytes</code><br><code>eu       [███████████▒░░░░░░░░]  58.39% (~58.91%)  810,208 of 1,387,504 bytes</code><br><code>eu-x     [███████████▒░░░░░░░░]  57.24% (~57.78%)  754,496 of 1,318,176 bytes</code><br><code>us       [██████████▒░░░░░░░░░]  53.81% (~54.36%)  744,185 of 1,382,992 bytes</code><br><code>us-rev1  [███████████▒░░░░░░░░]  57.58% (~58.09%)  798,407 of 1,386,592 bytes</code></pre>
+<pre><code>all      [███████████▒░░░░░░░░]  56.35% (~56.87%)  3,864,177 of 6,857,872 bytes</code><br><code>de       [██████████▒░░░░░░░░░]  54.74% (~55.25%)  756,801 of 1,382,608 bytes</code><br><code>eu       [███████████▒░░░░░░░░]  58.40% (~58.92%)  810,288 of 1,387,504 bytes</code><br><code>eu-x     [███████████▒░░░░░░░░]  57.24% (~57.78%)  754,496 of 1,318,176 bytes</code><br><code>us       [██████████▒░░░░░░░░░]  53.81% (~54.36%)  744,185 of 1,382,992 bytes</code><br><code>us-rev1  [███████████▒░░░░░░░░]  57.58% (~58.09%)  798,407 of 1,386,592 bytes</code></pre>
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
@@ -15,7 +15,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
-| <pre><code>code      [█████████████▒░░░░░░]  66.39% (~67.01%)  738,292 of 1,111,996</code><br><code>data      [█████▒░░░░░░░░░░░░░░]  26.10% (~26.23%)  71,916 of 275,508</code><br><code>functions [███████████████░░░░░]  78.27%  2,874 of 3,672</code></pre> |
+| <pre><code>code      [█████████████▒░░░░░░]  66.39% (~67.01%)  738,292 of 1,111,996</code><br><code>data      [█████▒░░░░░░░░░░░░░░]  26.13% (~26.26%)  71,996 of 275,508</code><br><code>functions [███████████████░░░░░]  78.27%  2,874 of 3,672</code></pre> |
 
 | eu-x (NUS-NRWX-0, Europe). PAL multi-language release. SHA256 `511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750` |
 |---|
