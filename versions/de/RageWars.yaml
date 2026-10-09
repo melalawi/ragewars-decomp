@@ -3224,7 +3224,7 @@ segments:
       - [0xC5410, rodata, "rodata/func_80271624_de/800C4810"]
       - [0xC5420, rodata, "rodata/func_80271818_de/800C4820"]
       - [0xC5438, rodata, "rodata/func_80271AA8_de/800C4838"]
-      - [0xC544C, rodata, "rodata/func_80271C54_de/800C484C"]
+      - [0xC544C, .rodata, "rodata/func_80271C54_de/800C484C"]
       - [0xC54AC, rodata, "rodata/func_8027207C_de/800C48AC"]
       - [0xC54B0, rodata, "rodata/func_8027229C_de/800C48B0"]
       - [0xC54B4, rodata, "rodata/func_802725FC_de/800C48B4"]
