@@ -113,4 +113,7 @@ typedef struct MenuModelScreen MenuModelScreen;
 /* unbake published declaration: published_ea30534b164852ed307703db */
 extern s32 func_80439758_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4);
 
+typedef s32 (*MenuEventHandler)(void *, s32, s32, s32, s32);
+extern MenuEventHandler D_800E595C;
+
 #endif

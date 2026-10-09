@@ -2,23 +2,17 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_8043962C.h"
 #include "types.h"
+#include "common/unused.h"
 
 
 
 
 
-typedef s32 (*MenuEventHandler)(void *, s32, s32, s32, s32);
 
 
-
-/* NON_MATCHING: PAL asm rows are retained after match submit refused shared C/.rodata ownership; this draft is exact in all five explicit VERSION trials. */
 
 /* Dispatches event arg1 through this file's 12-byte handler table, whose rows hold an event at D_800E5954, an actor kind at D_800E5958 and a handler at D_800E595C: the first row whose event equals arg1 and whose kind equals the actor's halfword kind at 0xC, or is the wildcard 0x7530, receives all five arguments and its result is returned; with no such row, or an empty table, the result is zero. Adapted from func_802A1B50_de. */
 
-extern FieldRow D_800E5954[];
-extern FieldRow D_800F1F74[];
-extern FieldRow D_800E5958[];
-extern MenuEventHandler D_800E595C;
 
 s32 func_80439758_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     char *entry;
