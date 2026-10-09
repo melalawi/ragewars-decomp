@@ -4,8 +4,6 @@
 #include "types.h"
 #include "video_dimensions.h"
 
-extern f32 D_800CA560[];
-
 extern s32 D_800E28D0;
 extern s32 D_800E28D4;
 
@@ -24,7 +22,7 @@ void func_80293394_de(void *arg0) {
     alpha = 0xFF;
     if (!(value < 0)) {
         alpha = 0;
-        if (!(D_800CA560[1] < value)) {
+        if (!((&D_800CA560)[1] < value)) {
             alpha = 0xFF;
             if (!(value < 0)) {
                 alpha = ~(s32)(value * D_800C547C);

@@ -135,7 +135,6 @@ void func_8028C60C_de(void *arg0) {
 
 
 
-extern Block24 D_800CBC90;
 
 extern struct Shape_func_802764D4_de_2 *func_8028FDB4_de(void *table, s32 index);
 extern void func_802897B4_de(Owner_func_8028C6D4_de *owner, s32 time, Sample *sample, s32 *segment);
@@ -157,7 +156,7 @@ void func_8028C6D4_de(Owner_func_8028C6D4_de *owner, s32 time, Block24 *out) {
     s32 segment;
 
     if (!has_active(owner) || D_800D2850 == 0) {
-        *out = D_800CBC90;
+        *out = *(Block24 *)D_800CBC90;
     } else {
         func_802897B4_de(owner, time, &sample, &segment);
         func_80289970_de(&sample, segment, time, out);
