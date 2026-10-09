@@ -1,6 +1,7 @@
 name: "Turok: Rage Wars"
 sha1: 037fb397cee2669048ed6b762a64698de4a4d88a
 options:
+  create_c_files: False
   platform: n64
   compiler: KMC
   ld_dependencies: True
