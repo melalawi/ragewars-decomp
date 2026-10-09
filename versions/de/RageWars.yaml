@@ -4178,6 +4178,7 @@ segments:
       - [0xDF028, rodata, "rodata/func_8043F52C_de/800DE428"]
       - [0xDF02C, data, "rodata/unresolved/800DE42C"]
       - [0xDF030, rodata, "rodata/func_8043F52C_de/800DE430"]
+      - [0xDF048, rodata, "rodata/unresolved/800DE448"]
       - [0xDF060, rodata, "rodata/func_8043FE3C_de/800DE460"]
       - [0xDF07C, rodata, "rodata/func_804402DC_de/800DE47C"]
       - [0xDF080, rodata, "rodata/func_80440838_de/800DE480"]

@@ -4042,6 +4042,7 @@ segments:
       - [0xEEF10, data, "rodata/unresolved/800EE310"]
       - [0xEF048, rodata, "rodata/func_804322AC_de/800EE448"]
       - [0xEF04F, data, "rodata/unresolved/800EE44F"]
+      - [0xEF050, data, "rodata/unresolved/800EE450"]
       - [0xEF0E8, rodata, "rodata/func_80433398_de/800EE4E8"]
       - [0xEF0F8, data, "rodata/unresolved/800EE4F8"]
       - [0xEF130, rodata, "rodata/func_80433EA0_de/800EE530"]
