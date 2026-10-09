@@ -3971,7 +3971,7 @@ segments:
       - [0xDDCCD, data, "rodata/unresolved/800DD0CD"]
       - [0xDDCD0, rodata, "rodata/func_804142AC_de/800DD0D0"]
       - [0xDDCD8, data, "rodata/unresolved/800DD0D8"]
-      - [0xDDCE8, rodata, "rodata/func_80414400_de/800DD0E8"]
+      - [0xDDCE8, .rodata, "rodata/func_80414400_de/800DD0E8"]
       - [0xDDDC8, rodata, "rodata/func_80414CCC_de/800DD1C8"]
       - [0xDDDD9, data, "rodata/unresolved/800DD1D9"]
       - [0xDDDDC, rodata, "rodata/func_80414CCC_de/800DD1DC"]
