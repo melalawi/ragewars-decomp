@@ -35206,3 +35206,8 @@ scores = {de = 0.7647058823529411, eu = 0.7647058823529411, eu-x = 0.76470588235
 member = "func_8029B278_de"
 path = "src/fuzzy/func_8029B278_de.c"
 scores = {de = 1.0, eu = 1.0, eu-x = 1.0, us = 1.0, us-rev1 = 1.0}
+
+[[fuzzy]]
+member = "func_802BC558_de"
+path = "src/fuzzy/func_802BC558_de.c"
+scores = {de = 0.5, eu = 0.5, eu-x = 0.5, us = 0.5, us-rev1 = 0.5}
