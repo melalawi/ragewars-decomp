@@ -35151,6 +35151,17 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
+[[unit]]
+path = "src/rodata.func_8021111C_de.800C2010.c"
+kind = "data"
+group = "code_802106E0"
+members = ["rodata/func_8021111C_de/800C2010"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
 [[fuzzy]]
 member = "func_802005DC_de"
 path = "src/fuzzy/func_802005DC_de.c"
