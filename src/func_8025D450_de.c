@@ -8,7 +8,7 @@ extern f32 D_800C3FD0_de,D_800C3FD8_de,D_800C3FE0_de,D_800C3FE4,D_800C3FE8_de,D_
 extern s32 func_802654E8_de(s32,s32,s32),func_802AEAA0_de(s32);
 extern struct Resource *func_8028FDB4_de(s32,s32);
 extern f32 func_802B2350(u16);
-extern void func_802AE5B8_de(s32,void *),func_802AFE80_de(s32),func_802AFEB0_de(s32,s32),func_802AFEE0_de(s32,s32,s32),func_802AFF30_de(s32,s32),func_802AFF60_de(s32,s16);
+extern void func_802AE5B8_de(s32, void *); extern void func_802AFE80_de(s32); extern void func_802AFEE0_de(s32, s32, s32);
 static inline f32 fade_rate(Track *track,f32 time,f32 rate) {track->unk30=time;return (f32)track->unk20/(time*rate);}
 void func_8025D450_de(Track *arg0) {
     f32 temp_f0;

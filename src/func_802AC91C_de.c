@@ -177,7 +177,7 @@ extern void func_80222BE8_de(void *, s16, s16);
 extern void func_80237E80_de(void *, void *, void *);
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
                          s32 arg4, s32 arg5);
-extern void func_8025E11C_de(s32 arg0);
+
 
 /** Apply an effect descriptor's optional setup, resource, sound, and callback. */
 s32 func_802ACB18_de(void *arg0, void *arg1) {
@@ -225,7 +225,7 @@ extern s32 func_8022AC00_de(void *arg0);
 extern void func_80237E80_de(void *, void *, void *);
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
                          s32 arg4, s32 arg5);
-extern void func_8025E11C_de(s32 arg0);
+
 
 /** Advance a timed effect and apply its optional resource, sound, and callback. */
 s32 func_802ACC04_de(void *arg0, void *arg1) {
@@ -286,7 +286,7 @@ extern u8 D_80152789;
 extern void func_80237E80_de(void *, void *, void *);
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
                          s32 arg4, s32 arg5);
-extern void func_8025E11C_de(s32 arg0);
+
 
 
 

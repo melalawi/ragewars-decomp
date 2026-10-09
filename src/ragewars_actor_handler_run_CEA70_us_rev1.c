@@ -5,7 +5,7 @@
  * target is an exact current function symbol. Missing neighbors stay raw. */
 typedef int (*ActorSequenceHandler)(void *actor);
 extern int func_8020EAE0_de(void *actor);
-extern int func_8020F2A8_de(void *actor);
+
 extern int func_80210248_eu(void *actor);
 ActorSequenceHandler ragewars_actor_handler_run_CEA70_us_rev1[3] = {
     (ActorSequenceHandler)((char *)func_8020F2A8_de - 0x80000000U),

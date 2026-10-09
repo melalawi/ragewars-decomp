@@ -24,13 +24,13 @@ extern s32 D_800D30BC;
 extern f32 D_800D2988;
 extern char D_80145040[];
 extern char D_80145088;
-extern s32 func_80222AA4_de(void *, s16);
+
 extern s16 func_8022F96C_de(void *);
 extern s32 func_8022F55C_de(void *, s16);
 extern s32 func_8025DF34_de(s32);
 extern s32 func_8022A5A0_de(void *, void *);
 extern void func_80239908_de(void *, void *, s32, s32, f32);
-extern f32 func_802747A0_de(f32, f32);
+
 extern void func_80214178_de(void *, void *, s32);
 static inline s32 can_fire(char *player) {
     s32 ammo;

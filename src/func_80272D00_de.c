@@ -1,8 +1,8 @@
 #include "span_1000/code_80271B18.h"
 #include "types.h"
 
-extern f32 func_802B7130_de(f32 arg0);
-extern f32 func_802B6560_de(f32 arg0);
+
+
 
 
 void func_80272D00_de(f32 (*mfThis)[4], f32 Theta, f32 X, f32 Y, f32 Z) {

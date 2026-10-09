@@ -6,10 +6,10 @@
 
 extern s32 func_802BB2A0_de(void *arg0, void *arg1, s32 arg2);
 extern void func_802BB5F0_de(void *arg0, s32 arg1);
-extern void func_8028F954_de(void *arg0, void *arg1);
-extern void func_8028FBD8_de(void *arg0);
-extern s32 func_8028F544_de(void *arg0, s32 *arg1, s32 *arg2, s32 arg3);
-extern void func_8028FA60_de(void *arg0, s32 arg1, s32 arg2);
+
+
+
+
 
 extern s32 D_800CD704;
 
@@ -40,7 +40,7 @@ void func_8028FC10_de(void *arg0) {
 
     flags = (((func_8028FBF0_S1 *)(arg0))->unk2F4 == 0) * 2 |
             (((func_8028FBF0_S1 *)(arg0))->unk2F8 == 0);
-    if (func_8028F544_de(arg0, &value1, &value2, flags) != flags) {
-        func_8028FA60_de(arg0, value1, value2);
+    if (((s32 (*)(void *, s32 *, s32 *, s32))func_8028F544_de)(arg0, &value1, &value2, flags) != flags) {
+        ((void (*)(void *, s32, s32))func_8028FA60_de)(arg0, value1, value2);
     }
 }

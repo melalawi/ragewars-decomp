@@ -66,7 +66,7 @@ extern void func_80419F24_de(void *);
 
 extern void func_8042E988_de(s32);
 
-extern f32 func_802B6560_de(f32);
+
 
 s32 func_80426918_de(void *arg0, void *arg1, s32 delta) {
     s32 clock;

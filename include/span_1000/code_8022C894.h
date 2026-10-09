@@ -503,7 +503,7 @@ struct func_8022D154_S1 {
 };
 
 /* unbake published declaration: published_5bd197530d6ae0445e7c7689 */
-extern void func_8022CF38_de(void *arg0, void *arg1);
+
 
 struct func_8022D154_S2;
 /* unbake published declaration: published_635df75687f9749abb46a86f */
@@ -539,7 +539,7 @@ struct func_8022CA04_S2 {
 };
 
 /* unbake published declaration: published_8126c7dd61ab41a3bd6a91de */
-extern void func_8022CD78_de(void *arg0, void *arg1);
+
 
 struct IntegerState244;
 /* unbake published declaration: published_823343f5bae4f86b7f368c15 */
@@ -658,7 +658,7 @@ struct func_8022D49C_S1 {
 };
 
 /* unbake published declaration: published_d68749b79335905eae3e5922 */
-extern void func_8022D188_de(void *unused, void *object);
+
 
 /* unbake published declaration: published_d962fd9a3bd7654805edfc28 */
 extern void func_8022D1A0_de(void);
@@ -724,7 +724,7 @@ struct FloatState6C8 {
 };
 
 /* unbake published declaration: published_ef4f9690e8db591b16e4ad01 */
-extern void func_8022D010_de(void *arg0, void *arg1);
+
 
 struct func_8022D204_S1;
 /* unbake published declaration: published_f1f747f0ebaaa15a61c96a2b */
@@ -757,7 +757,7 @@ struct func_8022CF28_S1 {
 };
 
 /* unbake published declaration: published_f5b88279d630f993076db8ea */
-extern void func_8022D164_de(void *arg0, void *arg1);
+
 
 struct func_8022CF28_S1;
 /* unbake published declaration: published_f87948017e10570b96356667 */

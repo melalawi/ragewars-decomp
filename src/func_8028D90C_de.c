@@ -4,9 +4,9 @@
 extern f32 D_800C5338_de;
 extern s32 D_800E28D8;
 
-extern void func_80245A20_de(s32 arg0);
-extern void func_80245A00_de(f32 arg0);
-extern void func_80245A5C_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);
+
+
+
 
 void func_8028D90C_de(void) {
     s32 var_a0;

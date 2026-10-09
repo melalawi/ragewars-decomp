@@ -50,12 +50,12 @@ extern Tuning D_800CE850;
 extern char D_800CE874;
 extern f32 D_800D2988;
 extern void func_802231D4_de(SharedPlayer_func_80224F5C_de *, Body_func_80224F5C_de *, char *);
-extern f32 func_802B7130_de(f32);
+
 extern void func_802238E0_de(SharedPlayer_func_80224F5C_de *, Body_func_80224F5C_de *, Tuning *);
 extern void func_80218464_de(char *);
 extern s32 func_8025DE54_de(s16, s32, s32, s32, s32, s32);
 extern void func_802227F4_de(SharedPlayer_func_80224F5C_de *, Body_func_80224F5C_de *, s32);
-extern f32 func_80274564_de(f32);
+
 
 void func_80224F5C_de(SharedPlayer_func_80224F5C_de *player, Body_func_80224F5C_de *body) {
     s32 idle;

@@ -1,7 +1,7 @@
 #include "span_1000/code_802A8A94.h"
 #include "types.h"
 
-extern void func_802A88F0_de(s32 arg0, f32 arg1, f32 arg2, f32 arg3, f32 arg4, s32 arg5, s32 arg6, s32 arg7);
+
 
 void func_802AAB7C_de(s32 arg0, f32 arg1, f32 arg2, f32 arg3, f32 arg4, s32 arg5, s32 arg6, s32 arg7) {
     if (arg5 != 0) {

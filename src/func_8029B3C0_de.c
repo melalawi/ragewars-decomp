@@ -7,10 +7,10 @@
 
 
 
-extern void func_8029BBB0_de(f32, f32 *, f32 *);
-extern f32 func_8029DE48_de(f32);
-extern f32 func_8029DD18_de(f32);
-extern f32 func_8029C044_de(f32, f32);
+
+
+
+
 
 void func_8029B3C0_de(f32 *arg0) {
     f32 sp10;
@@ -35,7 +35,7 @@ void func_8029B3C0_de(f32 *arg0) {
         test = (-1.0f);
     }
     angle = func_8029DE48_de(-test);
-    test = func_8029DD18_de(angle);
+    test = ((f32 (*)(f32))func_8029DD18_de)(angle);
     if (((9.9999997473787516e-05f) < test) || (test < (-9.9999997473787516e-05f))) {
         f32 product = sp14 * sp24;
         f32 cross = sp10 * sp20;
@@ -61,10 +61,10 @@ void func_8029B3C0_de(f32 *arg0) {
 
 
 
-extern void func_8029BBB0_de(f32 value, f32 *out0, f32 *out1);
-extern f32 func_8029DE48_de(f32 value);
-extern f32 func_8029DD18_de(f32 value);
-extern f32 func_8029C044_de(f32 x, f32 y);
+
+
+
+
 
 void func_8029B54C_de(Vec3 *arg0) {
     f32 sp10;
@@ -92,7 +92,7 @@ void func_8029B54C_de(Vec3 *arg0) {
     }
 
     angle = func_8029DE48_de(clamped);
-    test = func_8029DD18_de(angle);
+    test = ((f32 (*)(f32))func_8029DD18_de)(angle);
     if (((9.9999997473787516e-05f) < test) || (test < (-9.9999997473787516e-05f))) {
         f32 saved18 = sp18;
         f32 product = saved18 * sp20;
@@ -114,10 +114,10 @@ void func_8029B54C_de(Vec3 *arg0) {
     arg0->z = angle;
 }
 
-extern void func_8029BBB0_de(f32 value, f32 *out0, f32 *out1);
-extern f32 func_8029DE48_de(f32 value);
-extern f32 func_8029DD18_de(f32 value);
-extern f32 func_8029C044_de(f32 x, f32 y);
+
+
+
+
 
 void func_8029B6E0_de(Vec3 *arg0) {
     f32 sp10;
@@ -145,7 +145,7 @@ void func_8029B6E0_de(Vec3 *arg0) {
     }
 
     angle = func_8029DE48_de(-clamped);
-    test = func_8029DD18_de(angle);
+    test = ((f32 (*)(f32))func_8029DD18_de)(angle);
     if (((9.9999997473787516e-05f) < test) || (test < (-9.9999997473787516e-05f))) {
         f32 product = sp18 * sp20;
         f32 saved10 = sp10;
@@ -166,10 +166,10 @@ void func_8029B6E0_de(Vec3 *arg0) {
     arg0->z = outZ;
 }
 
-extern void func_8029BBB0_de(f32, f32 *, f32 *);
-extern f32 func_8029DE48_de(f32);
-extern f32 func_8029DD18_de(f32);
-extern f32 func_8029C044_de(f32, f32);
+
+
+
+
 
 void func_8029B868_de(f32 *arg0) {
     f32 sp10;
@@ -194,7 +194,7 @@ void func_8029B868_de(f32 *arg0) {
         test = (-1.0f);
     }
     angle = func_8029DE48_de(-test);
-    test = func_8029DD18_de(angle);
+    test = ((f32 (*)(f32))func_8029DD18_de)(angle);
     if (((9.9999997473787516e-05f) < test) || (test < (-9.9999997473787516e-05f))) {
         f32 product = sp1C * sp24;
         f32 cross = sp18 * sp20;

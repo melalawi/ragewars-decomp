@@ -106,8 +106,8 @@ extern s32 D_801377B8[2];
 extern s32 func_802AADBC_de(void);
 extern void func_80268CE0_de(s32 arg0);
 extern s32 func_8026925C_de(s32);
-extern void func_802AAB3C_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3,
-                         s32 arg4, s32 arg5);
+
+
 
 
 void func_802A84F8_de(void) {

@@ -2,7 +2,7 @@
 #include "span_1000/code_80231F5C.h"
 #include "types.h"
 
-extern s32 func_80222AA4_de(void *arg0, s16 arg1);
+
 extern s16 func_8022F96C_de(void *arg0);
 extern s32 func_802301F4_de(void *, void *);
 extern s32 func_80214178_de(void *, void *, s32);

@@ -74,7 +74,7 @@ extern void func_80246E44_de(char *);
 extern s32 func_802934F8_de(void);
 extern void func_80226A34_de(void *arg0);
 extern s32 func_8022A68C_de(void *arg0);
-extern void func_8025E2D4_de(s32 arg0);
+
 
 
 extern void *func_8025CC6C_de(void);

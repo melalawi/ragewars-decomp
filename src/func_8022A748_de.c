@@ -11,7 +11,7 @@
 extern GlobalState D_801468A0;
 
 extern struct Shape_func_8021A2D4_de_2 D_801427FC;
-extern void func_80264854_de(s32 arg0);
+
 extern void func_802227F4_de(Node_func_8022A748_de *arg0, Node_func_8022A748_de *arg1, s32 arg2);
 
 

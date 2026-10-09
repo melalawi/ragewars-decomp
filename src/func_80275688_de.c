@@ -13,9 +13,9 @@ extern void func_802750B0_de(Vec3 *);
 extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_80271F9C_de(Vec3 *, Vec3 *, float);
 extern f32 func_802B72B0_de(f32);
-extern float func_802745D0_de(float);
-extern float func_802B7130_de(float);
-extern float func_802B6560_de(float);
+
+
+
 
 Vector4f *func_80275688_de(Vector4f *out) {
     Vec3 a;

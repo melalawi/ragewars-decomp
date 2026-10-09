@@ -9,7 +9,7 @@ struct func_802A1A48_S1;
 typedef struct func_802A1A48_S1 func_802A1A48_S1;
 
 /* unbake published declaration: published_334677721963d1e61e6fb3c5 */
-extern s32 func_802A05D0_de(u8 *s);
+
 
 /* unbake published declaration: published_38cd7ee1d0c57d2b1e1163f1 */
 extern int D_8014D0C4;

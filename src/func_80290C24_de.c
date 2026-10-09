@@ -12,7 +12,7 @@ extern Frame *D_8011BDC0;
 extern s32 D_800E28D0;
 extern s32 D_800E28D4;
 extern void func_80291BE8_de(s32 arg0, s32 ulx, s32 lrx, s32 uly, s32 lry, s32 interlaced);
-extern void func_802AA950_de(s32 image, s32 frame, s32 *width, s32 *height);
+
 extern void func_802A9234_de(s32 alpha);
 extern void func_802AAC28_de(s32 image, s32 frame, s32 x, s32 y, f32 scaleX, f32 scaleY, s32 flags);
 void func_80290C24_de(s32 arg0) {

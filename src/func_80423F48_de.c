@@ -31,7 +31,7 @@ extern Record_func_80433914_de D_80102B00[];
 
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
-extern void func_8022F204_de(s32);
+
 extern void func_8022EF30_de(char *);
 extern void func_80434FB4_de(s32);
 extern void func_8022F5A4_de(char *, s32);

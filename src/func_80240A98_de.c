@@ -3,7 +3,7 @@
 #include "types.h"
 #include "math_helpers.h"
 /* Computes the signed incline between two horizontal points projected onto a plane. */
-extern f32 func_802B72B0_de(f32),func_802745D0_de(f32);
+extern f32 func_802B72B0_de(f32);
 extern f32 D_800C8820;
 extern f32 D_800C8828;
 static inline f32 height(Plane *p,f32 x,f32 z) {

@@ -11,7 +11,7 @@
    pull handler and loop points by the table's type, or reset its decode state. This cartridge's
    version has no table length rounding and a third wave type (2) handled by func_802C3988; the
    handlers are addressed by the cartridge at 0x002Cxxxx (D_002BE0D0, D_002BE514, D_002BE898). */
-extern void func_802B0310_de(void *, void *, s32); /* alCopy */
+ /* alCopy */
 
  /* alAdpcmPull */
 extern char D_002BE514; /* alRaw16Pull */
@@ -36,7 +36,7 @@ s32 func_802BEAA4_de(void *filter, s32 paramID, void *param)
                         a->loop.start = a->table->waveInfo.adpcmWave.loop->start;
                         a->loop.end = a->table->waveInfo.adpcmWave.loop->end;
                         a->loop.count = a->table->waveInfo.adpcmWave.loop->count;
-                        func_802B0310_de(a->table->waveInfo.adpcmWave.loop->state,
+                        ((void (*)(void *, void *, s32))func_802B0310_de)(a->table->waveInfo.adpcmWave.loop->state,
                                       a->lstate, sizeof(ADPCM_STATE));
                     } else {
                         a->loop.start = a->loop.end = a->loop.count = 0;

@@ -15,12 +15,12 @@
 
 extern s32 func_802BB2A0_de(void *, void *, s32);
 extern void func_802BB5F0_de(void *, s32);
-extern void func_8028F954_de(void *, void *);
-extern void func_802BA8C0_de(s32);
-extern void func_8028EDA0_de(void *);
-extern void func_8028FBD8_de(void *);
-extern s32 func_8028F544_de(void *, s32 *, s32 *, s32);
-extern void func_8028FA60_de(void *, s32, s32);
+
+
+
+
+
+
 extern s32 func_802BB420_de(Queue_func_802517B4_de *, s32, s32);
 
 
@@ -80,7 +80,7 @@ void func_8028EACC_de(OSSched *sc) {
     if (sc->doAudio != 0 && sc->curRSPTask != 0) func_8028FBD8_de(sc);
     else {
         flags = (sc->curRSPTask == 0) * 2 | (sc->curRDPTask == 0);
-        if (func_8028F544_de(sc, &value1, &value2, flags) != flags) func_8028FA60_de(sc, value1, value2);
+        if (((s32 (*)(void *, s32 *, s32 *, s32))func_8028F544_de)(sc, &value1, &value2, flags) != flags) ((void (*)(void *, s32, s32))func_8028FA60_de)(sc, value1, value2);
     }
     work = sc->clientList;
     while (work != 0) {

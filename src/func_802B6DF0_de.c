@@ -2,8 +2,8 @@
 
 extern void func_802B6C6C_de(u8 *mf);          /* guMtxIdentF */
 extern void func_802B6CBC_de(f32 *mf, s32 *m);  /* guMtxF2L */
-extern f32 func_802B6560_de(f32);                     /* cosf */
-extern f32 func_802B7130_de(f32);                     /* sinf */
+                     /* cosf */
+                     /* sinf */
 extern f32 D_800C78A0_de; /* pi/180 */
 extern f32 D_800C78A4_de; /* half */
 extern f32 D_800C78A8_de; /* -1 */

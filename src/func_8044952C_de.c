@@ -83,7 +83,7 @@ extern void func_802647E8_de(void *, int);
 extern void func_80226708_de(struct RespawnPlayer *);
 extern void func_8021A78C_de(struct RespawnPlayer *);
 extern int func_802934F8_de(void);
-extern void func_8025E11C_de(int);
+
 extern void func_8021AF6C_de(struct RespawnPlayer *);
 extern void func_80208000_de(void *);
 extern void func_80217388_de(struct RespawnCarried *, struct RespawnFlags *);

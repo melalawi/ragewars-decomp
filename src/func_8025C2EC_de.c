@@ -3,7 +3,7 @@
 
 extern f32 D_800C3F90_de[];
 extern f32 D_800C3F98_de;
-extern f32 func_80274564_de(f32 arg0);
+
 
 f32 func_8025C2EC_de(u8 arg0, u8 arg1) {
     f32 first;

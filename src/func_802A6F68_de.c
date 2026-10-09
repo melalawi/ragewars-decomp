@@ -143,7 +143,7 @@ extern char D_800F91F0;
 extern char D_800F41F0;
 extern s32 D_800E4000;
 extern s32 D_80166000;
-extern s32 func_80293440_de(char *marker, char *name);
+
 extern void func_802934C0_de(char *marker, char *name);
 static inline s32 is_restorable(u32 address) {
     if (address >= (u32)&D_800CDD10 && address < (u32)&D_800CDD10 + 0x10) {
@@ -181,7 +181,7 @@ s32 func_802A71C0_de(void) {
     char name[16];
     *(Marker_func_802A71C0_de *)name = D_800C5F10_de;
     func_802A001C_de(&name[15], 0, 1);
-    if (func_80293440_de(&D_800CDD10, name) == 0) {
+    if (((s32 (*)(char *, char *))func_80293440_de)(&D_800CDD10, name) == 0) {
         D_801470B0 = 0;
     } else {
         D_801470B0 = 1;

@@ -46,7 +46,7 @@ s32 func_8044DCC0_de(void) {
 extern struct State_func_8044DD50_de D_801468A0;
 extern char D_8010EC90[];
 extern char D_80145040[];
-extern void func_80264854_de(s32);
+
 extern void func_80285D30_de(void *);
 extern void func_8022A880_de(void *);
 

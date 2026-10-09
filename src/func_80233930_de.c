@@ -7,8 +7,8 @@
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern f32 func_802B72B0_de(f32);
 
-extern f32 func_802B7130_de(f32);
-extern f32 func_80274A90_de(f32, f32);
+
+
 
 void func_80233930_de(Effect33920 *arg0, u32 x, u32 y, u32 z, Vec3 *out) {
     f32 distance;

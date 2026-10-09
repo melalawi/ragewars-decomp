@@ -4,7 +4,7 @@
 
 
 
-extern f32 func_80274A90_de(f32 arg0, f32 arg1);
+
 
 
 

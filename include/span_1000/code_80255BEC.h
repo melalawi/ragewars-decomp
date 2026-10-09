@@ -41,7 +41,7 @@ typedef struct func_80255BEC_S2 func_80255BEC_S2;
 extern void func_80255F94_de(void *arg0);
 
 /* unbake published declaration: published_7faa7483c171e4920b76690f */
-extern void func_80255F70_de(void *arg0);
+
 
 struct func_80256130_S1;
 /* unbake published declaration: published_8375207b3ef61fefdc567a64 */

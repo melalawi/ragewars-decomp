@@ -96,7 +96,7 @@ void func_802174E4_de(void *arg0, void *unused1, Output80216D3C *arg2) {
 
 extern f32 D_800C21EC_de;
 
-extern f32 func_80274A90_de(f32, f32);
+
 extern void func_8024DBC0_de(void *, s32, s32, s32, s32, f32);
 
 

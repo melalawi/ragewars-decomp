@@ -20,20 +20,20 @@ void func_802736D4_de(void *, f32);
 void func_802738C0_de(void *, f32);
 void func_80273A98_de(void *, f32);
 void func_80274244_de(f32 *, f32 *);
-f32 func_802745D0_de(f32);
+
 void func_80274870_de(f32 *, f32, f32);
 f32 func_80275DD4_de(void *, f32, f32);
 int func_802A23B4_de(void);
 int func_802A23F0_de(void);
-float func_802B6560_de(float);
+
 void func_802B6F9C_de(float *, u16 *, float, float, float, float, float);
-float func_802B7130_de(float);
+
 f32 func_802B72B0_de(f32);
 void func_804428F8_de(void *);
 s32 func_802343C8_de();                        /* extern */
 void func_802349C0_de(void *);                        /* extern */
 s32 func_8023AFF0_de();                  /* extern */
-void *func_80286728_de();               /* extern */
+               /* extern */
 s32 func_802B6900_de(f32 *, f32, f32, f32, f32, f32, f32, f32, f32, f32); /* extern */
 extern s32 D_8011FE88;
 extern void *D_80145060;
@@ -320,7 +320,7 @@ actor_found:
     func_8023AFF0_de(&arg0->unk570, arg0);
     func_804428F8_de(arg0->unk554);
     if (func_80245798_de() != 0) {
-        arg0->unk58 = func_80286728_de(&D_8011FE88, &arg0->unk38);
+        arg0->unk58 = ((void *(*)())func_80286728_de)(&D_8011FE88, &arg0->unk38);
     }
     captured_state = D_800CD8D0;
     arg0->unk64 = captured_state;

@@ -9,6 +9,7 @@ extern s32 D_8014561C;
 #include "common/types_8a8189af7b05.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "types.h"
+#include "span_1000/code_8026AC38.h"
 
 extern f32 D_800D2988;
 
@@ -61,7 +62,7 @@ extern s32 func_80246A08_de(void *, s32, s32);
 extern void func_80246E44_de(void *);
 extern void func_80247004_de(void *);
 extern s32 func_8024B6A0_de(void *, s32, s32);
-extern s32 func_8024B6F4_de(void *, s32, s32);
+
 extern f32 func_8024D284_de(void *);
 extern f32 func_8024D398_de(void *);
 extern f32 func_8024E420_de(void *);
@@ -71,16 +72,16 @@ extern struct Shared_Surface *func_8024E7DC_de(void *);
 extern void func_8025476C_de(s32);
 extern s32 func_8025DE54_de(s16, Vec3, s32, s32);
 extern void func_8025E418_de(s32);
-extern void func_8025E440_de(f32);
-extern f32 func_80274564_de(f32);
+
+
 extern void func_80274870_de(f32 *, f32, f32);
 extern f32 func_8027525C_de(struct Shared_Model *, f32, f32);
 extern f32 func_80275DD4_de(struct Shared_Model *, f32, f32);
 extern void func_80278D78_de(void *, s32, void *);
 extern void func_80278E04_de(struct Shared_Model *, s32, void *);
 extern void func_8028A27C_de(void *, void *, Vec3 *, Vec3 *);
-extern void func_8028B274_de(void *, void *, s32, s32);
-extern s32 func_8029DB58_de(s32);
+
+
 extern void func_802A65E0_de(void *, void *);
 extern void func_802ACA54_de(void *, void *);
 extern f32 func_802B72B0_de(f32);
@@ -641,7 +642,7 @@ void func_80220ED4_de(SharedPlayer *player)
         player->views0.view3_2.team = player->views5D8.view5D8_9.profile->team;
       }
     }
-    func_8028B274_de(&D_8011FE88, player, sound, player->views5E8.view86C_125.unk86C);
+    ((void (*)(void *, void *, s32, s32))func_8028B274_de)(&D_8011FE88, player, sound, player->views5E8.view86C_125.unk86C);
     if (player->views5E8.view870_157.unk870 != player->views5E8.view86C_125.unk86C)
     {
       if ((func_8024B6A0_de(actor, player->views5E8.view86C_125.unk86C, 0) == 0) && (func_80245798_de() != 0))
@@ -774,7 +775,7 @@ void func_80220ED4_de(SharedPlayer *player)
       offset = 23;
     }
   }
-  func_8028B274_de(&D_8011FE88, &player->views1C.view2E8_37.emitter, D_800D052C[player->views5E8.view62E_17.character]->sound + offset, player->views1C.view484_44.voice->bank);
+  ((void (*)(void *, void *, s32, s32))func_8028B274_de)(&D_8011FE88, &player->views1C.view2E8_37.emitter, D_800D052C[player->views5E8.view62E_17.character]->sound + offset, player->views1C.view484_44.voice->bank);
   if (!(player->views1C.view100_8.unk100 & 0x400))
   {
     player->views5E8.view870_157.unk870 = player->views5E8.view86C_125.unk86C;

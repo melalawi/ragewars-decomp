@@ -19,7 +19,7 @@ extern s32 func_802800C0_de(void *, void *, void *, s32, s32, s32,
 extern s32 func_8025DE54_de(s16, s32, s32, s32, s32, s32);
 extern void func_80271F9C_de(void *, void *, s32);
 extern void func_80284570_de(void *, void *);
-extern s32 func_80284434_de(void *);
+
 
 
 

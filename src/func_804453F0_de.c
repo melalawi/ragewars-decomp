@@ -3,7 +3,7 @@
 #include "types.h"
 #include "stddef.h"
 /* Cycles a menu selection from directional input while skipping reserved entries. */
-void func_8025E2D4_de(s32); /* extern */
+ /* extern */
 extern s32 D_800E63B8;
 s32 func_804453F0_de(s32 arg0, struct Record_func_80409DCC_de *arg1) {
     s32 var_a0;

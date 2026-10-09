@@ -1,7 +1,7 @@
 #include "types.h"
 #include "span_1000/code_80200610.h"
 
-extern s32 func_802005A0_de(s32 address);
+
 
 void func_80200B14_de(s32 source, s32 destination, u32 count) {
     while (count != 0 && (source & 3) != 0) {

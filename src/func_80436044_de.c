@@ -15,7 +15,7 @@ extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
 extern void func_80298368_de(s32);
 extern s32 func_8025E2C4_de(void);
-extern void func_8025E2D4_de(s32);
+
 extern void func_802A2394_de(void);
 extern void func_8043C278_de(MenuRules *);
 

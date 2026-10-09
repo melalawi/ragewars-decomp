@@ -5,7 +5,7 @@
 extern struct Shape_func_802764D4_de_2 *D_800E58A4;
 extern unsigned char D_801462E1[];
 extern int func_8041A6E0_de(int);
-extern void func_8025DF34_de(int),func_8025E2D4_de(int);
+extern void func_8025DF34_de(int);
 extern int func_8025E2C4_de(void);
 int func_80439308_de(void) {
  int value;

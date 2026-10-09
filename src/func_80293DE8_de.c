@@ -47,7 +47,7 @@ void func_80293E9C_de(void) {
     func_80293CE4_de();
 }
 
-extern void func_8025E2D4_de(s32 a);
+
 extern void func_80293334_de(void *arg0, void *arg1, void *arg2);
 extern void func_80286AA8_de(void *arg0, void *arg1, void *arg2);
 extern void func_8044A370_de(void *arg0, s32 arg1);
@@ -115,7 +115,7 @@ void func_80293F44_de(void *arg0) {
 
 
 extern void func_802A9234_de(s32);
-extern void func_802AA950_de(s32 image, s32 frame, s32 *width, s32 *height);
+
 extern void func_802AAC28_de(s32 image, s32 frame, s32 x, s32 y, f32 scaleX, f32 scaleY, s32 flags);
 extern Gfx *D_80110634;
 extern Frame *D_8011BDC0;

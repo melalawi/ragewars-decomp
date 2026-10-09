@@ -2,7 +2,7 @@
 #include "types.h"
 
 
-extern f32 func_8029B9FC_de(f32 arg0);
+
 
 f32 func_8029DD3C_de(f32 arg0) {
     f32 r1 = func_8029B9FC_de(arg0);

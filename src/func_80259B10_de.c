@@ -16,8 +16,8 @@
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_80272BCC_de(void *, Vec3 *, Vec3 *);
 extern void func_8027207C_de(Vec3 *);
-extern f32 func_802745D0_de(f32);
-extern f32 func_802B7130_de(f32);
+
+
 extern float fabsf(float);
 
 s16 func_80259B10_de(Vec3 *position, void *listener) {
@@ -58,7 +58,7 @@ extern s16 func_802AD270_de(f32);
 
 extern s32 func_8025E584_de(Controller_func_80259C5C_de *);
 extern s32 func_8025E590_de(Controller_func_80259C5C_de *);
-extern f32 func_80274A90_de(f32, f32);
+
 
 void func_80259C5C_de(View_func_80259C5C_de *view, Controller_func_80259C5C_de *controller, s32 flags) {
     s16 x;

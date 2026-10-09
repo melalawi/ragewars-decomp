@@ -2,7 +2,7 @@
 #include "span_1000/code_802636D0.h"
 #include "types.h"
 
-extern int func_8026475C_de(int arg0);
+
 
 
 /** Fetch-and-clear: return the old slot value, then zero it. */

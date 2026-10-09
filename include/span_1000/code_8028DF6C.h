@@ -460,4 +460,11 @@ struct IntegerState14 {
     s32 unk_10;
 };
 
+
+struct Ctx_func_8028F544_de;
+struct Node_func_8028F544_de;
+struct Scene_func_8028FA60_de;
+struct View_func_8028FA60_de;
+extern s32 func_8028F544_de(struct Ctx_func_8028F544_de *, struct Node_func_8028F544_de **, struct Node_func_8028F544_de **, s32);
+extern void func_8028FA60_de(struct View_func_8028FA60_de *, struct Scene_func_8028FA60_de *, struct Scene_func_8028FA60_de *);
 #endif

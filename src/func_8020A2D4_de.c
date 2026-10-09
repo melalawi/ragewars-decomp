@@ -17,7 +17,7 @@
 
 
 extern char D_8011D8D0;
-extern f32 func_80274564_de(f32);
+
 extern s32 func_80283228_de(char *, void *);
 extern void func_80284FF4_de(char *, void *, Vec3 *);
 extern f32 func_802726BC_de(Vec3 *, Vec3 *);

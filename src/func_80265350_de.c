@@ -237,7 +237,7 @@ void func_802656DC_de(s32 arg0, s32 arg1)
   *temp_a1_2 ^= new_var;
 }
 
-extern f32 func_802B6560_de(f32 arg0);
+
 
 
 

@@ -6,7 +6,7 @@ struct func_8025E544_S1;
 typedef struct func_8025E544_S1 func_8025E544_S1;
 
 /* unbake published declaration: published_133332f3c2eb8fcdc8f1c4b5 */
-extern void func_8025E440_de(f32 arg0);
+
 
 /* unbake published declaration: published_312034ca09466867c82f0a95 */
 extern int func_8025E56C_de(void *object);

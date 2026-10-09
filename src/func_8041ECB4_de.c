@@ -4,7 +4,7 @@
 /* Advances the join screen's pulse timer by delta and sets byte 0x10 of node 0x392 under the edited request's root to 150 plus 100 times the sine of the timer over 300; returns zero. */
 extern struct Screen_func_8041ECB4_de *D_800E39C0;
 extern Resource_func_80419E54_de *func_8040EC30_de(void *root, s32 id);
-extern f32 func_802B6560_de(f32 angle);
+
 s32 func_8041ECB4_de(void *arg0, void *arg1, s32 delta) {
     Resource_func_80419E54_de *node;
     D_800E39C0->timer += delta;

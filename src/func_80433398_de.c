@@ -6,7 +6,7 @@
 
 
 extern Blk *D_800E54A4;
-extern f32 func_802B6560_de(f32);
+
 extern Resource_func_80419E54_de *func_8041B7FC_de(s32, s32);
 extern void func_80434E34_de(s32);
 extern void func_80434EF4_de(s32);

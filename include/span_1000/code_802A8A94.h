@@ -29,7 +29,7 @@ struct func_802ABC18_S1 {
 extern s32 D_80147150;
 
 /* unbake published declaration: published_29efffdc2f1b13e1d9d7e7a7 */
-extern void func_802AAB68_de(float arg0, float arg1);
+
 
 /* unbake published declaration: published_2ae9518ff23c3306ba78c9cf */
 extern f32 func_802AA864_de();

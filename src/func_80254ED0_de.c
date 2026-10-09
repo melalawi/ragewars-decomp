@@ -5,7 +5,7 @@
 /* Obtains a free node, marks it active and moves it to the active list, retrying while processing permits. */
 extern func_8022BC04_S3 *D_801010F8;
 extern char D_8010110C;
-extern s32 func_80251328_de(s32,s32,s32);
+
 extern void func_80255CB8_de(void *,func_8022BC04_S3 *);
 extern void func_80255ED8_de(func_8022BC04_S3 **,func_8022BC04_S3 *);
 static inline func_8022BC04_S3 *take(s32 active) {

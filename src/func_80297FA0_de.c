@@ -18,7 +18,7 @@ extern s32 D_80146E04;
 extern s32 D_80146E14;
 
 
-extern void func_802A1918_de(s32 *width, s32 *height);
+
 
 
 

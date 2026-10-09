@@ -18,7 +18,7 @@ extern void func_8024796C_de(Vector4f *, Actor_func_80214310_de *);
 extern void func_80274244_de(Vector4f *, Matrix *);
 extern void func_80272898_de(Matrix *, Vec3 *, Vec3 *);
 extern void func_8027207C_de(Vec3 *);
-extern f32 func_802745D0_de(f32);
+
 s32 func_80214310_de(Actor_func_80214310_de *viewer, Actor_func_80214310_de *target, f32 range, f32 across, f32 up)
 {
   Vec3 from;

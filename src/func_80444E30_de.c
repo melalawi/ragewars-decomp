@@ -4,7 +4,7 @@
 /* Calls func_8025E2D4_de with -1, func_8025E384_de, func_8025E33C_de and func_8044DD50_de on D_8011FAC0, and
    returns one. */
 extern char D_8011FAC0[];
-extern void func_8025E2D4_de(s32);
+
 extern void func_8025E384_de();
 extern void func_8025E33C_de();
 extern void func_8044DD50_de(void *);

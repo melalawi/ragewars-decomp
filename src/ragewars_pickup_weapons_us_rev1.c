@@ -1,6 +1,6 @@
 #include "resident_pickup_descriptors.h"
 
-extern s32 func_802ACB18_de(void *, void *);
+
 
 /* 6 descriptors traversed by 802AB400/802AB6EC at stride 20.
  * Callbacks retain the cartridge encoding with the KSEG0 bias removed.

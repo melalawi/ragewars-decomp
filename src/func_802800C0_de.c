@@ -63,7 +63,7 @@ extern s32 func_80268BE0_de(void *, s32);
 extern void func_802843B8_de(Effect_func_802800C0_de *, s32);
 extern void func_8025DE54_de(s16, Vec3, s32, s32);
 extern void func_802765B0_de(s8, u8, u8, u8, u8 *, u8 *, u8 *);
-extern void func_80276968_de(u8, u8, u8, u8, u8 *, u8 *, u8 *);
+
 extern void func_80276B44_de(u8, u8, u8, u8, u8 *, u8 *, u8 *);
 
 static inline s32 effect_spawn_random_count(s32 range) {

@@ -6,7 +6,7 @@
 /* Text metric records reuse current canonical TextBounds declarations. */
 u32 func_80265350_de(void);
 int func_802934F8_de(void);
-void func_802AA950_de(s32, s32, s32 *, s32 *);
+
 u8 *func_8043F290(void *);
 f32 func_804422F0_de(u8 *, f32, f32);
 char * func_80442A58_de(char *);

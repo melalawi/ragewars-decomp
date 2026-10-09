@@ -23,7 +23,7 @@
 extern struct Screen_func_80426788_de *D_800E4690;
 extern struct Status D_80146398[];
 extern struct Row_func_80426788_de D_800E3A58[];
-extern void func_802A23C4_de(s32);
+
 extern void func_802A2394_de();
 
 extern void func_8041CAD8_de(void *, s32, s32, s32, s32, Vec3, Vec3, f32, s32);

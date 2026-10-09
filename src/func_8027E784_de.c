@@ -17,8 +17,8 @@ extern Gfx *D_80110634;
 extern void *func_802799C0_de(void *, s32);
 extern s32 func_80243A90_de(Instance_func_8027E784_de *, Vec3, void *);
 extern void func_80271818_de(Vector4f *, Vec3 *);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
 extern void func_80274098_de(Vector4f *out, Vector4f *a, Vector4f *b);
 extern s32 func_8027254C_de(Vec3 *, f32);
 extern void func_80274244_de(Vector4f *, f32 *);

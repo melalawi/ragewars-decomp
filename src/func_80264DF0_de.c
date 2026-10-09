@@ -2,7 +2,7 @@
 #include "span_1000/code_802646F4.h"
 #include "types.h"
 
-extern f32 func_80274A90_de(f32 arg0, f32 arg1);
+
 extern f32 D_80142C38[2];
 
 extern func_8020CA10_G1 D_800C4310_de;

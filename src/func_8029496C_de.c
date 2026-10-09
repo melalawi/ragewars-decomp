@@ -18,7 +18,7 @@ extern s32 D_801462C8;
 
 extern int func_8022A414_de(void *arg0);
 extern void func_8028D90C_de(void);
-extern void func_80293998_de(s32 arg0, s32 arg1);
+
 
 /* Initializes the game state for a new game phase with arg0 and updates the game state flag. */
 void func_8029496C_de(s32 arg0) {

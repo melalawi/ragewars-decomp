@@ -1,7 +1,7 @@
 #include "span_1000/code_8025A3EC.h"
 #include "types.h"
 
-extern f32 func_80274A90_de(f32 arg0, f32 arg1);
+
 
 s16 func_8025C25C_de(s16 arg0, s16 arg1) {
     f32 temp_f20;

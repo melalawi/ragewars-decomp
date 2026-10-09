@@ -6,7 +6,7 @@
 
 
 extern f32 D_800D2988;
-extern f32 func_80274A90_de(f32 low, f32 high);
+
 
 void func_802A4A60_de(Animator *a) {
     s32 next;

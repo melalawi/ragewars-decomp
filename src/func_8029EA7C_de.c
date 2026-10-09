@@ -123,7 +123,7 @@ void func_8029ED54_de(Mtx3x4_8029FD54 *arg0) {
 }
 
 extern void func_8029C6A8_de(void *);
-extern void func_8029CE3C_de(s32, s32, s32);
+
 
 void func_8029EDA0_de(s32 arg0) {
     char buf[0x40];
@@ -131,9 +131,9 @@ void func_8029EDA0_de(s32 arg0) {
     func_8029CE3C_de(arg0, buf, arg0);
 }
 
-extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
+
 extern void func_802A0748_de(s32, s32, s32);
-extern void func_8029CE3C_de(s32, s32, s32);
+
 
 void func_8029EDD8_de(s32 arg0, f32 arg1) {
     u8 sp10[0x40];
@@ -161,9 +161,9 @@ void func_8029EDD8_de(s32 arg0, f32 arg1) {
     }
 }
 
-extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
+
 extern void func_802A0748_de(s32, s32, s32);
-extern void func_8029CE3C_de(s32, s32, s32);
+
 
 void func_8029EE78_de(s32 arg0, f32 arg1) {
     u8 sp10[0x40];
@@ -193,9 +193,9 @@ void func_8029EE78_de(s32 arg0, f32 arg1) {
     }
 }
 
-extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
+
 extern void func_802A0748_de(s32, s32, s32);
-extern void func_8029CE3C_de(s32, s32, s32);
+
 
 void func_8029EF18_de(s32 arg0, f32 arg1) {
     u8 sp10[0x40];
@@ -304,7 +304,7 @@ void func_8029F118_de(float *arg0, float *arg1, float *arg2, float *arg3) {
     arg3[2] = arg0[10];
 }
 
-extern void func_8029CE3C_de(s32, s32, s32);
+
 
 /** Thin wrapper forwarding arg0 twice (as first and third args) to func_8029CE3C_de. */
 void func_8029F164_de(int arg0, int arg1) {

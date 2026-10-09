@@ -96,10 +96,10 @@ extern s32 func_8025BA4C_de(void *, s32);
 extern f32 func_8025C10C_de(Vec3 *, void *);
 extern s32 func_8025BDAC_de(void *, s32, s32);
 extern s32 func_80259260_de(void *, Item57BD4 *, Vec3 *, s32, s32);
-extern s32 func_8025B920_de(void *, s16, s16);
+
 extern void *func_8025B1C8_de(void *, Item57BD4 *, s32, s32);
 extern void func_8025BB5C_de(void *, Vec3 *, s32);
-extern void func_8025BB7C_de(void *, s32);
+
 extern void func_8025BB84_de(void *, Item57BD4 *, s32);
 extern void func_802577F4_de(void *, void *, s32, Vec3 *);
 extern u32 func_802BCF30_de(void);

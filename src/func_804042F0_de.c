@@ -16,7 +16,7 @@ extern OSPfs_func_80403E90_de D_8014D280[];
 extern u8 D_8010BBB8;
 extern u8 D_800DE80C[];
 
-extern void func_802644FC_de(s32);
+
 extern void func_80263740_de(void);
 extern void func_8026454C_de(void);
 extern s32 func_802A05A0_de(s32 c);
@@ -58,7 +58,7 @@ s32 func_804042F0_de(s32 ch, s32 size, void *data, u8 *game_name, s32 *file_no, 
     if (D_801534F0[ch] != 3) {
         return -2;
     }
-    func_802644FC_de(1);
+    ((void (*)(s32))func_802644FC_de)(1);
     func_80263740_de();
     result = D_80153500[ch];
     D_8010BBB8 = 2;

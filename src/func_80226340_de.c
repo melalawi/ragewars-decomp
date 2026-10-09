@@ -22,7 +22,7 @@
 
 extern f32 D_800D2988;
 extern char D_80145088;
-extern f32 func_80274564_de(f32);
+
 extern void func_802394BC_de(char *, f32, f32, f32, f32, s32, Triple);
 extern void func_802227F4_de(SharedPlayer_func_80226340_de *, SharedPlayer_func_80226340_de *, s32);
 extern void func_80216488_de(Slot *, Held *, s32, f32, s32, s32);
@@ -78,7 +78,7 @@ extern f32 func_802726F8_de(f32 *, f32 *);
 extern s32 func_802444A4_de(void *, Vec3, Vec3, void *);
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern f32 func_80271AA8_de(Vec3 *);
-extern void func_80274020_de(f32 *);
+
 extern void func_80274870_de(f32 *, f32, f32);
 
 

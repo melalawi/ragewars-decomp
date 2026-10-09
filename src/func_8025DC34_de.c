@@ -2,7 +2,7 @@
 #include "types.h"
 
 
-extern void func_802AFF60_de(s32 arg0, s16 arg1);
+
 
 
 

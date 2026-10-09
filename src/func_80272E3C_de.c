@@ -2,8 +2,8 @@
 #include "types.h"
 
 
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
 void func_80272E3C_de(f32 *m, f32 x, f32 y, f32 z)
 {
   f32 zero;

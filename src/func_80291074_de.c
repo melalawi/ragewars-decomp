@@ -14,7 +14,7 @@ extern s32 D_800E28D0[];
 
 extern int func_8022A414_de(void *arg0);
 extern void func_802947C8_de(void *arg0, s32 arg1);
-extern void func_80293824_de(void *arg0, s32 arg1);
+
 
 void func_80291074_de(void *arg0) {
     f32 temp_f0;

@@ -2,8 +2,8 @@
 #include "span_1000/code_8027302C.h"
 #include "types.h"
 
-extern f32 func_802B7130_de(f32 arg0);
-extern f32 func_802B6560_de(f32 arg0);
+
+
 extern f32 D_800C48F8_de;
 
 

@@ -24,7 +24,7 @@ extern u8 *D_800D30BC;
 
 extern char D_80145040[];
 extern char D_80145088;
-extern s32 func_80222AA4_de(void *, s16);
+
 extern s32 func_8022F96C_de(void *);
 extern s32 func_8022F55C_de(s32, s32);
 extern s32 func_8025DF34_de(s32);

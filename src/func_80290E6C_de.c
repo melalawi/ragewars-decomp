@@ -7,7 +7,7 @@ extern struct MenuSettings D_801462C8;
 
 
 
-extern void func_802AAB3C_de(s32, s32, s32, s32, s32, s32);
+
 
 extern void func_802AAB7C_de(char *, f32, f32, f32, f32, s32, s32, s32);
 extern s32 D_8011B9F0;

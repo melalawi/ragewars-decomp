@@ -6,7 +6,7 @@
    and stores the unsigned result as the alpha byte at 0x10 of items 0x2C2 and 0x2C3 of the
    entry's window. */
 extern struct Entry_func_80434FC4_de *D_800E54A4;
-extern float func_802B6560_de(float);
+
 extern struct Resource_func_80419E54_de *func_8040EC30_de(void *, s32);
 void func_80434FC4_de(s32 index) {
     float f;

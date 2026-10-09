@@ -2,7 +2,7 @@
 #include "types.h"
 
 extern f32 func_802B72B0_de(f32);
-extern f32 func_8029C044_de(f32 arg0, f32 arg1);
+
 
 void func_8029E810_de(f32 *arg0, f32 *arg1, f32 *arg2) {
     f32 magnitude_squared;

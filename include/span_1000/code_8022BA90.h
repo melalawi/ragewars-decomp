@@ -174,7 +174,7 @@ struct func_8022C7E8_S1 {
 extern float D_800C2D38_de;
 
 /* unbake published declaration: published_a9b47d4d9767e18aa81bb8c3 */
-extern void func_8022C894_de(void *arg0, void *arg1);
+
 
 struct func_8022BAC0_S1;
 /* unbake published declaration: published_abbddd9887365d14598fb8e9 */

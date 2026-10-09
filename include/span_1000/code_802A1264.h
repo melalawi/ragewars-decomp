@@ -70,7 +70,7 @@ extern void func_802A18FC_de();
 extern void func_802A16F8_de(s32 arg0);
 
 /* unbake published declaration: published_e3369ff0018e8d6cfb1f852b */
-extern void func_802A1918_de(int *arg0, int *arg1);
+
 
 /* unbake published declaration: published_e9b0d4d071c07c59a3e21b8e */
 extern void func_802A17C4_de();

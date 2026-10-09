@@ -36,7 +36,7 @@ int func_802934F8_de(void);
 
 
 void func_802A8F28_de(s32, s32, s32, s32, s32, s32, f32, f32);
-void func_802AAB3C_de(int, int, int, int, int, int);
+
 
 void func_80441BE0_de();
 

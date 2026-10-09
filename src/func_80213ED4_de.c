@@ -9,7 +9,7 @@ extern s32 func_80265878_de(StateCallback);
 extern s32 func_80265784_de(u32);
 extern void *func_8024B738_de(void *, void *, s32);
 extern s32 func_80246A08_de(void *, s32, s32);
-extern s32 func_8024B6F4_de(void *, s32, s32);
+
 
 void func_80213ED4_de(Source110 *src, Dest *dst) {
     StateEntry *entry;

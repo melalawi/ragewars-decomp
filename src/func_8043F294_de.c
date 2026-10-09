@@ -45,10 +45,10 @@ s32 func_8043F294_de(Menu_func_8043F294_de *arg0, Shared_MenuInput *arg1) {
         var_f20 = (float)*(unsigned int *)temp_v1;
         break;
     }
-    if (func_80264388_de(arg1->buttons) != 0) {
+    if (((s32 (*)(s32))func_80264388_de)(arg1->buttons) != 0) {
         var_f20 -= temp_s0->unk10;
         if (var_f20 < temp_s0->unk8) var_f20 = temp_s0->unk8;
-    } else if (func_802643A0_de(arg1->buttons) != 0) {
+    } else if (((s32 (*)(s32))func_802643A0_de)(arg1->buttons) != 0) {
         var_f20 += temp_s0->unk10;
         if (var_f20 > temp_s0->unkC) var_f20 = temp_s0->unkC;
     }

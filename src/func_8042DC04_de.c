@@ -11,7 +11,7 @@ extern Slot_func_8042DC04_de D_80146398[];
 extern s8 D_80102B0D[];
 extern void func_8029973C_de(void);
 extern void func_8041A430_de(int, int);
-extern void func_8022F204_de(int);
+
 
 int func_8042DC04_de(void) {
     int i;

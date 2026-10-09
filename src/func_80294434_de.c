@@ -1,11 +1,11 @@
 #include "span_1000/code_80293A04.h"
 
 /* func_80245A00_de: types.abi.declared: reuse existing C; propagated semantic conflicts remain named */
-extern void func_80245A00_de(float arg0);
+
 /* func_8028D90C_de: types.declaration: solved callee prototype */
 extern void func_8028D90C_de(void);
 /* func_80293998_de: types.abi.declared: reuse existing C; propagated semantic conflicts remain named */
-extern void func_80293998_de(s32 arg0, s32 arg1);
+
 
                                                   /* size = 0x18 */
 

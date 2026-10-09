@@ -8,8 +8,8 @@
 
 extern Entry80294AC4 D_800CD788[];
 
-extern void func_8025E214_de(s32 arg0);
-extern void func_80264854_de(s32 arg0);
+
+
 
 
 

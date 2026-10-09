@@ -35,7 +35,7 @@ extern void func_802A025C_de(char *, char *);
 extern void func_8040C428_de(s32);
 extern s32 func_8025E2C4_de(void);
 extern s32 func_802744D4_de(void);
-extern void func_8025E2D4_de(s32);
+
 
 void func_8042DEA0_de(void) {
     u8 *settings;

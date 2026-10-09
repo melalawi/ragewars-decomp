@@ -27,8 +27,8 @@ void func_80282A44_de(void *, s32);
 void func_802830CC_de(void *, s32);
 void * func_8028B2F8_de(void *, u16 *);
 s32 func_802A01E8_de(void);
-float func_802B6560_de(float);
-float func_802B7130_de(float);
+
+
 s32 func_8021BFC4_de();
 
 

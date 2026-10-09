@@ -68,7 +68,7 @@ struct func_8020F444_S3;
 typedef struct func_8020F444_S3 func_8020F444_S3;
 
 /* unbake published declaration: published_1200409ce4996aa5da883b6c */
-extern s32 func_8020F444_de(void *arg0);
+
 
 /* unbake published declaration: published_120cd997fc60799c06981bec */
 extern float D_800C1EE4_de;
@@ -231,7 +231,7 @@ struct Func8020ED50Arg;
 typedef struct Func8020ED50Arg Func8020ED50Arg;
 
 /* unbake published declaration: published_98737a6202b7debdbb223b2d */
-extern s32 func_8020F2A8_de(void *arg0);
+
 
 struct func_8020F2A8_S1;
 /* unbake published declaration: published_98df532cc89fc143b0347ce3 */
@@ -273,7 +273,7 @@ typedef struct Obj_func_8020F8F0_de Obj_func_8020F8F0_de;
 extern float D_800C1EE0_de;
 
 /* unbake published declaration: published_b8340c0ea1af745761b2bf4f */
-extern s32 func_8020F388_de(void *arg0);
+
 
 struct func_8020F984_S2;
 /* unbake published declaration: published_b88852b06289f30d08398a2b */

@@ -2,8 +2,8 @@
 #include "span_1000/code_80277444.h"
 #include "types.h"
 
-extern void func_8025E11C_de(s32 arg0);
-extern void func_8025E2D4_de(s32 arg0);
+
+
 
 
 

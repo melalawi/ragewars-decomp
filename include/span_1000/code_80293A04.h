@@ -138,7 +138,7 @@ extern float D_800C54A8_de;
 extern float D_800C54B4_de;
 
 /* unbake published declaration: published_eaadd9a05aa532b9cd3f0cca */
-extern void func_80293DF0_de(void *arg0);
+
 
 /* unbake published declaration: published_f20752ead5a0208dcf203489 */
 extern void func_80294200_de(void);

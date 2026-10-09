@@ -15,7 +15,7 @@ extern void func_80286AA8_de(void *, s32, s32);
 extern s32 func_8025477C_de();
 extern void func_8025476C_de(s32);
 extern void func_80245A10_de();
-extern void func_80245A20_de(s32);
+
 extern void func_80245A30_de();
 
 void func_80422020_de(void) {

@@ -11,7 +11,7 @@ extern char D_8011FE88;
 
 extern void func_8024DD10_de(PlacedProp *, PlacedPropRecord *, s32, char *);
 extern PropGeometry *func_8028CF6C_de(void *, s32);
-extern void func_802741A4_de(f32 *);
+
 extern void func_80274244_de(f32 *, char *);
 extern void func_8027347C_de(char *, f32, f32, f32);
 extern void func_80273448_de(char *, f32, f32, f32);

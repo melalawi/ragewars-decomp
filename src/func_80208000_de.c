@@ -10,7 +10,7 @@ extern char D_800CE040;
 extern void func_8020986C_de(void *, char *, s32);
 extern void func_80209874_de(void *, s32);
 extern void func_802110C4_de(void *);
-extern void func_80209988_de(void *);
+
 extern void func_8020999C_de(void *);
 
 void func_80208000_de(s32 *arg0) {

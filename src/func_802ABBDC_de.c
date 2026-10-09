@@ -229,9 +229,9 @@ struct Shared_FullPlayerMenuGlobals {
  */
 void func_8022F3F8_de(void *, int);
 void * func_80237E80_de(void *, void *, u8 *);
-void func_8025E11C_de(s32);
+
 int func_8025E2C4_de(void);
-void func_8025E2D4_de(s32);
+
 s32 func_802A01E8_de(void);
 s32 func_804030E0_de(s32);
 s32 func_8025DE54_de(s16, Vec3, s32, s32);

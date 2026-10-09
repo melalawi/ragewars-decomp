@@ -47,7 +47,7 @@ void func_802A822C_de(s32, f32, f32, f32, f32, s32, s32, s32);
 void func_802A8F28_de(char *, s32, s32, s32, s32, s32, f32, f32);
 void func_802A9234_de(s32);
 void func_802AA70C_de(void *, void *);
-void func_802AAB3C_de(s32, s32, s32, s32, s32, s32);
+
 s32 func_802AAC28_de(s32, s32, s16, s16, f32, f32, s32);
 s32 func_802BD320_de(char *, const char *, ...);
 f32 func_804422F0_de(char *, f32, f32);
@@ -570,8 +570,8 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
 extern void func_80238F24_de(void *, s32, f32, f32, f32, f32, f32, f32, f32, f32, Shared_Quad, s32, f32, f32);
 extern void func_80234FEC_de(void *);
 extern void func_8021D774_de(Player_func_80220A80_de *);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
 void func_80220A80_de(Player_func_80220A80_de *player, Body_func_80220A80_de *body) {
     void *view;
     f32 angle;

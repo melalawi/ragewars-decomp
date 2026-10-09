@@ -85,7 +85,7 @@ void func_802AB35C_de(int unused, unsigned char *pairs, int count, unsigned char
     }
 }
 
-extern void func_802AAB3C_de(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
+
 
 void func_802AB3A8_de(void) {
     char pad[256];

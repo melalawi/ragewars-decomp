@@ -13,8 +13,8 @@
 extern const f32 D_800C3200_de[];
 extern const f32 D_800C3208_de;
 extern u8 D_801462E5;
-extern f32 func_802B6560_de(f32);
-extern f32 func_802B7130_de(f32);
+
+
 extern f32 func_802B72B0_de(f32);
 extern void func_80272944_de(void *, Vec3 *, Vec3 *, s32);
 extern void func_802965B0_de(void *, Vec3 *, Vec3 *, Vec3 *, Vec3 *, Vec3 *);

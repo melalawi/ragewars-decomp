@@ -7,10 +7,10 @@ extern f32 D_800C4030_de[];
 
 
 extern void func_802AE5B8_de(s32 arg0, s32 arg1);
-extern void func_802AFF30_de(s32 arg0, s32 arg1);
-extern void func_802AFEB0_de(s32 arg0, s32 arg1);
+
+
 extern void func_802AFEE0_de(s32 arg0, s32 arg1, s8 arg2);
-extern void func_802AFF60_de(s32 arg0, s16 arg1);
+
 
 
 

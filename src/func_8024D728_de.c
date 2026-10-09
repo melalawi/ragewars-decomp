@@ -16,9 +16,9 @@ extern f32 D_80115DEC;
 
 extern void func_80272018_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern void func_8027207C_de(Vec3 *arg0);
-extern f32 func_802745D0_de(f32 arg0);
-extern f32 func_802B7130_de(f32 arg0);
-extern f32 func_802B6560_de(f32 arg0);
+
+
+
 
 Vector4f *func_8024D728_de(Vector4f *out, Input_func_8024D728_de *input) {
     Vec3 source;

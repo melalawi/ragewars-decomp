@@ -56,7 +56,7 @@ extern f32 D_800D2988;
 extern void func_80274870_de(f32 *, f32, f32);
 extern void func_802231D4_de(SharedPlayer_func_80224C4C_de *, Body_func_80224C4C_de *, char *);
 extern void func_802233F0_de(SharedPlayer_func_80224C4C_de *, Body_func_80224C4C_de *, Tuning *);
-extern f32 func_802B7130_de(f32);
+
 extern void func_80218464_de(char *);
 extern s32 func_8025DE54_de(s16, s32, s32, s32, s32, s32);
 extern void func_802227F4_de(SharedPlayer_func_80224C4C_de *, Body_func_80224C4C_de *, s32);

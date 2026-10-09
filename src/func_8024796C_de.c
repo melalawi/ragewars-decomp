@@ -11,8 +11,8 @@
 
 
 extern f32 D_80115DEC;
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
 extern void func_80274098_de(Vector4f *, Vector4f *, Vector4f *);
 extern void func_80226C60_de(void *, Vector4f *);
 extern void func_80203848_de(Vector4f *, void *, void *);

@@ -181,4 +181,8 @@ struct ObjectState18 {
 /* unbake published declaration: published_ec0805fdce95d38ddaca3d83 */
 extern void func_8026D834_de(void);
 
+
+struct Bank_func_8028B274_de;
+struct Object_func_8028B274_de;
+extern void func_8028B274_de(struct Bank_func_8028B274_de *, struct Object_func_8028B274_de *, s32, s32);
 #endif

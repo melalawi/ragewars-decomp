@@ -11,7 +11,7 @@ extern char D_801468A0[];
 extern s32 D_800C9684;
 
 extern void func_80255CA0_de(void *, s32, s32);
-extern void func_80264854_de(s32);
+
 extern void func_80253908_de(s32);
 extern void func_80253838_de(s32, void *);
 extern void func_80226950_de(ObjectPool *, s32);

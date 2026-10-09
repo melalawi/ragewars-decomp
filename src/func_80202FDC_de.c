@@ -14,8 +14,8 @@ typedef struct Owner Owner;
 
 
 extern f32 func_802B72B0_de(f32);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
 extern f32 func_80274808_de(f32, f32, f32);
 extern void func_80271F68_de(Vec3 *, char *, Vec3 *);
 extern void func_802736D4_de(f32 *, f32);

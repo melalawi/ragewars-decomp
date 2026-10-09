@@ -4,7 +4,7 @@
 extern char D_801051A0;
 extern s32 func_80255A34_de(void *arg0, s32 arg1);
 extern s32 func_80255920_de(void *, s32);
-extern s32 func_80251328_de(s32, s32, s32);
+
 s32 func_80254B8C_de(s32 arg0, u32 arg1, s32 arg2, u32 arg3)
 {
   s32 result;

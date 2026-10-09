@@ -61,7 +61,7 @@ struct func_80277198_S1 {
 };
 
 /* unbake published declaration: published_6f9aee7a19358cc4aa0ba866 */
-extern void func_80276968_de(u8 amount, u8 r, u8 g, u8 b, u8 *outR, u8 *outG, u8 *outB);
+
 
 struct func_80277198_S1;
 /* unbake published declaration: published_7ed08498d4369d7500a784f0 */

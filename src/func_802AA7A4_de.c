@@ -11,7 +11,7 @@ extern int func_802A23B4_de(void);
 
 
 
-extern void func_802AAB3C_de(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
+
 extern void func_802A9234_de(s32);
 extern void func_802A7660_de(void *arg0, int arg1);
 

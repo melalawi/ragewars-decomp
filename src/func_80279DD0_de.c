@@ -11,7 +11,7 @@
 extern f32 D_800D2988;
 extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_80271F9C_de(void *, void *, f32);
-extern f32 func_802B7130_de(f32);
+
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_80271F34_de(Vec3 *, Vec3 *, Vec3 *);
 

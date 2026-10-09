@@ -37,7 +37,7 @@ struct Buf16c;
 typedef struct Buf16c Buf16c;
 
 /* unbake published declaration: published_80ba2022e9cb523906e0c932 */
-extern f32 func_802AFE30_de(s32 arg0);
+
 
 struct func_802B52B0_S1;
 /* unbake published declaration: published_8a454ae9bcf1f70ba5596dc5 */

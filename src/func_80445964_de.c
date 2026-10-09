@@ -11,8 +11,8 @@ extern Spinner D_800E63C0[];
 extern f32 D_800D2988;
 
 extern s32 func_8022A5A0_de(char *, s32);
-extern s32 func_80264388_de(s32);
-extern s32 func_802643A0_de(s32);
+
+
 
 s32 func_80445964_de(void *unused, Menu_func_80445964_de *menu) {
     s32 i;
@@ -25,10 +25,10 @@ s32 func_80445964_de(void *unused, Menu_func_80445964_de *menu) {
         D_800E63C0[i].timer = t - (15.0f);
     }
     if (menu->state == 1) {
-        if (func_80264388_de(menu->input) != 0 && D_800E63C0[i].value > 0) {
+        if (((s32 (*)(s32))func_80264388_de)(menu->input) != 0 && D_800E63C0[i].value > 0) {
             D_800E63C0[i].value--;
             D_800E63C0[i].timer = 0.0f;
-        } else if (func_802643A0_de(menu->input) != 0) {
+        } else if (((s32 (*)(s32))func_802643A0_de)(menu->input) != 0) {
             if (D_800E63C0[i].value < D_800E63C0[i].max) {
                 D_800E63C0[i].value++;
                 D_800E63C0[i].timer = 0.0f;

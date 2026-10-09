@@ -9,7 +9,7 @@ extern s32 D_800E28E0;
 extern Pulse *D_800E5950;
 
 extern void func_802A2360_de(void);
-extern f32 func_802B6560_de(f32);
+
 
 /* Advances a sine-driven pulse phase and writes the resulting display intensity byte. */
 s32 func_80439628_de(s32 arg0, s32 arg1, s32 arg2) {

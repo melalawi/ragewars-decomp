@@ -6,7 +6,7 @@
  * explicitly by 80293790. These entries use exact current function symbols
  * and retain the original KSEG0-bias-free callback relocations. */
 typedef void (*ModeLifecycleHandler)(void *object);
-extern void func_80293DF0_de(void *object);
+
 extern void func_80293E6C_de(void *object);
 extern void func_80293E9C_de(void *object);
 extern void func_80293EB8_de(void *object);

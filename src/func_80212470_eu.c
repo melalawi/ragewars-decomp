@@ -4,7 +4,7 @@
 #include "types.h"
 
 extern s32 func_802744D4_de(void);
-extern void func_80209988_de(void *object);
+
 
 
 
@@ -35,7 +35,7 @@ void func_80212470_eu(void *arg0) {
 }
 
 extern s32 func_802744D4_de(void);
-extern void func_80209988_de(void *object);
+
 
 void func_80212544_eu(void *arg0) {
     void *level1 = ((Shared_Actor *)arg0)->entity;

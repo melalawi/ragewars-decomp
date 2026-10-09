@@ -12,9 +12,9 @@ extern f32 D_80115DEC;
 extern void func_80272018_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern f32 func_802B72B0_de(f32);
 extern void func_80271F9C_de(Vec3 *out, Vec3 *in, f32 scale);
-extern f32 func_802745D0_de(f32 arg0);
-extern f32 func_802B7130_de(f32 arg0);
-extern f32 func_802B6560_de(f32 arg0);
+
+
+
 
 Vector4f *func_802A5020_de(Vector4f *out, u32 bx, u32 by, u32 bz) {
     Vec3 axis;

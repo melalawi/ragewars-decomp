@@ -25,7 +25,7 @@ extern void func_80253908_de(s32);
 extern void func_80253838_de(s32, void *);
 extern s32 func_8025477C_de(void);
 extern void func_8025476C_de(s32);
-extern void func_802644FC_de(s32);
+
 extern void func_80263740_de(void);
 extern void func_8026454C_de(void);
 extern void *func_802BD3A0_de(void *destination, const void *source, int count);
@@ -50,7 +50,7 @@ static inline s32 func_80404958_read(s32 ch, s32 file_no, void *dst, s32 size) {
     }
     handle = func_8025343C_de(0, blocks, 0x23, D_800DCCD0);
     buf = *handle;
-    func_802644FC_de(1);
+    ((void (*)(s32))func_802644FC_de)(1);
     func_80263740_de();
     result = D_80153500[ch];
     D_8010BBB8 = 2;

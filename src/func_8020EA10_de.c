@@ -7,7 +7,7 @@
 
 extern void *func_8022A83C_de(char *);
 extern f32 func_80209B64_de(void *arg0);
-extern f32 func_80274A90_de(f32 arg0, f32 arg1);
+
 extern s32 D_801468A0;
 
 

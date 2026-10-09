@@ -5,7 +5,7 @@
    func_802A23C4_de with 2 and func_8026495C_de, and returns zero. */
 extern void *D_800E5550;
 extern void func_802547E4_de(void *);
-extern void func_802A23C4_de(s32);
+
 extern void func_8026495C_de();
 
 s32 func_80435C00_de(void) {

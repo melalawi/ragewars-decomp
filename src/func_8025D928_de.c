@@ -2,7 +2,7 @@
 #include "span_1000/code_8025D948.h"
 #include "types.h"
 
-extern void func_802AFF60_de(s32 arg0, s16 arg1);
+
 extern void func_802AFF90_de(s32 arg0);
 
 

@@ -2,7 +2,7 @@
 #include "span_1000/code_8029EB74.h"
 #include "types.h"
 
-extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
+
 
 
 

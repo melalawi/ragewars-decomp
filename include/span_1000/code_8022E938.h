@@ -588,7 +588,7 @@ struct func_8022EF20_S2 {
 extern float D_800C2E8C_de;
 
 /* unbake published declaration: published_e01efee01a3fcfa933678f0b */
-extern void func_8022F204_de(s32 arg0);
+
 
 struct Obj_func_8022F3A4_de;
 /* unbake published declaration: published_e154c21546a6d5d021c31146 */

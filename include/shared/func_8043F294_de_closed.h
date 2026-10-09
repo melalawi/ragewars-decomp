@@ -18,8 +18,8 @@ typedef struct Shared_MenuInput {
 #include "common/unused.h"
 #include "types.h"
 
-s32 func_80264388_de(s32);                             
-s32 func_802643A0_de(s32);                             
+                             
+                             
 
 
 #endif

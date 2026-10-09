@@ -12,7 +12,7 @@ s32 func_80283D38_de(s32 arg0) {
     return arg0;
 }
 
-extern s32 func_80284068_de(void *arg0);
+
 
 
 
@@ -72,7 +72,7 @@ void func_80283D50_de(void *arg0) {
     }
 }
 
-extern s32 func_80284068_de(void *arg0);
+
 
 
 
@@ -134,7 +134,7 @@ void func_80283E58_de(void *arg0) {
     }
 }
 
-extern s32 func_80284068_de(void *arg0);
+
 
 
 

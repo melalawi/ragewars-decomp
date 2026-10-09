@@ -3,7 +3,7 @@
 #include "types.h"
 
 extern void func_80264788_de(s32 arg0);
-extern void func_80293824_de(void *arg0, s32 arg1);
+
 extern s32 D_8011FAC0;
 extern s32 D_80154048;
 

@@ -12,7 +12,7 @@ extern Pool D_8010513C;
 extern void **D_80100564;
 
 extern s32 func_80255CB8_de(void *arg0, s32 arg1);
-extern s32 func_80251328_de(s32, s32, s32);
+
 
 
 

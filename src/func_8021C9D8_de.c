@@ -6,6 +6,7 @@
 #include "gbi.h"
 #include "types.h"
 #include "n64sdk.h"
+#include "span_1000/code_8026AC38.h"
 
 
 
@@ -29,7 +30,7 @@ extern Gfx * D_80110634;
 
 extern f32 func_8024D284_de(void *arg0);
 extern void func_8028C6D4_de(void *arg0, void *arg1, void *arg2);
-extern void func_8028B274_de(void *arg0, void *arg1, s32 arg2, s32 arg3);
+
 extern void func_80249E28_de(void *arg0, void *arg1);
 extern void func_8021C698_de(void *arg0, void *arg1);
 
@@ -64,7 +65,7 @@ void func_8021C9D8_de(void *arg0, void *arg1) {
                 ((func_8021C9B4_S2 *)(((func_8021C9B4_S1 *)(arg0))->unk5D8))->unk81;
         }
     }
-    func_8028B274_de(&D_8011FE88, arg0, value,
+    ((void (*)(void *, void *, s32, s32))func_8028B274_de)(&D_8011FE88, arg0, value,
                   ((func_8021C9B4_S1 *)(arg0))->unk86C);
 
     cmd = D_80110634++;

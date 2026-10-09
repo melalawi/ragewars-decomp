@@ -7,7 +7,7 @@
 extern void *D_800E42D0;
 extern void func_802547E4_de(void *);
 extern void func_802A2360_de();
-extern void func_802A23C4_de(s32);
+
 
 s32 func_80420B80_us(void) {
     func_802547E4_de(D_800E42D0);
@@ -18,7 +18,7 @@ s32 func_80420B80_us(void) {
 }
 
 /* Calls func_802A23C4_de with 1 and func_8025DF34_de with 0xE78, and returns zero. */
-extern void func_802A23C4_de(s32);
+
 extern void func_8025DF34_de(s32);
 
 s32 func_80420B50_de(void) {

@@ -16,7 +16,7 @@ extern void func_8042201C_de(void);
 #endif
 extern void func_80422020_de(void);
 extern void func_8042DEA0_de(void);
-extern void func_80264854_de(s32);
+
 
 s32 func_804222A8_de(s32 arg0, s32 arg1, s32 event) {
     if (event == 1) {

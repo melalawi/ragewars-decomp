@@ -13,7 +13,7 @@
 
 extern s32 D_8013B364;
 
-extern void func_80213340_de(void *);
+
 extern s32 func_802744D4_de(void);
 extern void *func_8020C994_de(void *, s32);
 extern void func_80211020_de(void *);
@@ -99,10 +99,10 @@ store_c:
 extern s32 D_8013B364;
 
 
-extern void func_80213340_de(void *arg0);
+
 extern s32 func_802744D4_de(void);
 extern void *func_8020C994_de(void *, s32);
-extern void func_80209988_de(void *arg0);
+
 
 
 

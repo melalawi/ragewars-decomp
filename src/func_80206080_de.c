@@ -5,7 +5,7 @@
 #include "types.h"
 extern s32 D_801462C8;
 
-extern f32 func_80274A90_de(f32, f32);
+
 
 
 

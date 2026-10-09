@@ -37,8 +37,8 @@ void func_80274870_de(f32 *, f32, f32);
 f32 func_8027525C_de(void *, f32, f32);
 f32 func_80275DD4_de(void *, f32, f32);
 void * func_8028C050_de(void *, void *);
-float func_802B6560_de(float);
-float func_802B7130_de(float);
+
+
 s32 func_8023CFE0_de();                     /* extern */
 s32 func_8023D380_de();                         /* extern */
 extern Func80243A80Global *D_80103FCC;

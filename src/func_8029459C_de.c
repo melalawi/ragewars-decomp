@@ -3,7 +3,7 @@
 
 /* Resets the menu viewport and selects the row identified by the owner's current index. */
 extern void func_8028D90C_de(void);
-extern void func_80293998_de(s32, s32);
+
 
 void func_8029459C_de(int arg0) {
     func_8028D90C_de();

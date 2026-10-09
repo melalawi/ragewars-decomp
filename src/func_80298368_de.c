@@ -57,9 +57,9 @@ void func_804116CC_de(s32);
 void *func_80411DCC_de(s32);
 s32 func_80411DF0_de(s32);
 void func_80411E18_de(s32);
-s32 func_80296E3C_de(s32, s32, s32, s32, s32);
+
 s32 func_80297310_de(s32, s32, s32, s32, s32);
-s32 func_80297A34_de(s32, s32, s32, s32); 
+ 
 
 extern Shared_MenuManager *D_8014D080;
 

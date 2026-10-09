@@ -44,7 +44,7 @@ void func_8022C5DC_de(void *);
 s32 func_8022C620_de(char *);
 int func_80245784_de(void);
 int func_80245798_de(void);
-void func_8025E2D4_de(s32);
+
 s32 func_802744D4_de(void);
 void func_802A9234_de(s32);
 s32 func_802AAC28_de(s32, s32, s16, s16, f32, f32, s32);

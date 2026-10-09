@@ -50,13 +50,13 @@ struct func_802ADA44_S1 {
 };
 
 /* unbake published declaration: published_2fe923455b1ad2e836073ee9 */
-extern s32 func_802ACD28_de(void *arg0, void *arg1);
+
 
 /* unbake published declaration: published_3191936727c880535f53cfff */
 extern s32 func_802AD1B4_de(void *arg0);
 
 /* unbake published declaration: published_349dc2c648c197ba8e7ff589 */
-extern s32 func_802ACB18_de(void *arg0, void *arg1);
+
 
 struct Actor_func_802AB400_de;
 /* unbake published declaration: published_387aebd12f354d95b77fb1b9 */
@@ -187,7 +187,7 @@ struct func_802AE1A4_S2;
 typedef struct func_802AE1A4_S2 func_802AE1A4_S2;
 
 /* unbake published declaration: published_a582f609e04d6f0786e3d054 */
-extern s32 func_802ACFB0_de(void *arg0, void *arg1);
+
 
 /* unbake published declaration: published_acfad39b96ec0caedaff4ee8 */
 extern void func_802AB3A8_de(void);

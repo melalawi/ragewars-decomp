@@ -5,7 +5,7 @@ extern LocalizedEffectContext D_80145088;
 extern void func_80237E80_de(void *, void *, void *);
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,
                          s32 arg4, s32 arg5);
-extern void func_8025E11C_de(s32 arg0);
+
 
 /** Apply optional resource, sound, and callback effects for an actor. */
 void func_802AD0E4_de(void *arg0, void *resource, s32 sound, s32 callback) {

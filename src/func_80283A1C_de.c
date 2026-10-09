@@ -9,7 +9,7 @@ extern char D_8013B1A8;
 
 extern void func_80284178_de(void);
 extern void func_802A42F4_de(void *arg0, void *arg1);
-extern void func_80268C7C_de(void *arg0, s32 arg1);
+
 
 void func_80283A1C_de(void *arg0) {
     s32 temp;

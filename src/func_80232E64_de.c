@@ -11,7 +11,7 @@ extern f32 D_800C3030_de[];
 extern f32 D_800D2988;
 
 extern s32 func_802301F4_de(void *, void *);
-extern void func_8022B00C_de(void *arg0);
+
 
 
 void func_80232E64_de(void *arg0, void *arg1) {

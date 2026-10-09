@@ -4,8 +4,8 @@
 #include "types.h"
 #include "stddef.h"
 /* Places a rider along its path for the frame: clamps the throttle to 0..1 (eased through func_80265714_de unless the segment is linear), offsets its base by the segment's rise and circle point, moves the rider there through func_80271FC8_de, adds a bob to its height (one wave or a sum of four detuned waves by the segment's bob mode), applies its shake offsets, turns the actor by the segment's yaw mode (interpolated, constant spin unless held, or constant spin) and, for free segments, snaps the actor to the ground through func_80275DD4_de and func_802761EC_de. */
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
 extern void func_80271FC8_de(Vec3 *, f32, Vec3 *, Vec3 *);
 extern f32 func_80275DD4_de(s32, f32, f32);
 extern void func_802761EC_de(s32, f32);
@@ -102,7 +102,7 @@ void * func_80219408_de(void *);
 void *func_80219434_de(void *);
 void func_80271F68_de(void *, void *, void *);
 void func_8027207C_de(f32 *);
-float func_802B6560_de(float);
+
 f32 func_802B72B0_de(f32);
 f32 func_80216F44_de(void *, Vec3); /* extern */
 extern f32 D_800D2988;

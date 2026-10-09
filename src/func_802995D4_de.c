@@ -10,8 +10,8 @@
 
 extern Manager_func_802995D4_de *D_8014D080;
 extern s32 func_80411DF0_de(s32 value);
-extern s32 func_80297A34_de(s32, s32, s32, s32);
-extern s32 func_80296E3C_de(s32, s32, s32, s32, s32);
+
+
 
 
 

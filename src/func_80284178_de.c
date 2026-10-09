@@ -84,7 +84,7 @@ void func_8028422C_de(TrailActor *actor) {
         }
 }
 
-extern s32 func_80284434_de(void *arg0);
+
 extern void *func_8025CC6C_de(void);
 extern void *func_8025C95C_de(void *, s32, void *, void *, s32);
 

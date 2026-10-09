@@ -16,7 +16,7 @@ extern s8 D_80145040;
 
 extern int func_8022A414_de(void *arg0);
 extern void func_8028D90C_de(void);
-extern void func_80293998_de(s32 arg0, s32 arg1);
+
 
 /* Initializes the game state for a new game phase with arg0 as the phase identifier. */
 void func_80294848_de(s32 arg0) {

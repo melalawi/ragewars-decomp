@@ -62,11 +62,11 @@ extern char D_8011FAC0[];
 extern char D_8011FE88[];
 
 extern s32 func_8026437C_de(s32 buttons);
-extern s32 func_80264388_de(s32 buttons);
-extern s32 func_802643A0_de(s32 buttons);
+
+
 extern void func_80293284_de(void *menu, s32 target);
 extern s32 func_802934F8_de(void);
-extern void func_80293824_de(void *menu, s32 id);
+
 extern void func_8043DE50_de(Shared_MenuInput *pad);
 extern void func_8044D528_de(void *menu, s32 target, s32 arg2);
 
@@ -189,9 +189,9 @@ s32 func_8043C688_de(s32 arg0, Shared_MenuInput *pad) {
         return 1;
     }
 
-    if (func_80264388_de(pad->buttons) != 0) {
+    if (((s32 (*)(s32))func_80264388_de)(pad->buttons) != 0) {
         D_80154034 = findUnlocked(D_80154034, -1);
-    } else if (func_802643A0_de(pad->buttons) != 0) {
+    } else if (((s32 (*)(s32))func_802643A0_de)(pad->buttons) != 0) {
         D_80154034 = findUnlocked(D_80154034, 1);
     }
     return 0;

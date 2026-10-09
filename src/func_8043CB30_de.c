@@ -11,8 +11,8 @@ extern Triple_func_802683E0_de D_800E5CA0;
 extern f32 D_800D2988;
 extern f32 D_800E2280[];
 
-extern s32 func_80264388_de(s32);
-extern s32 func_802643A0_de(s32);
+
+
 
 s32 func_8043CB30_de(void *unused, Menu_func_8043CB30_de *menu) {
     f32 t;
@@ -23,10 +23,10 @@ s32 func_8043CB30_de(void *unused, Menu_func_8043CB30_de *menu) {
         D_800E5CA0.y = t - D_800E2280[1];
     }
     if (menu->state == 2) {
-        if (func_80264388_de(menu->input) != 0 && D_800E5CA0.x > 0) {
+        if (((s32 (*)(s32))func_80264388_de)(menu->input) != 0 && D_800E5CA0.x > 0) {
             D_800E5CA0.x--;
             D_800E5CA0.y = 0.0f;
-        } else if (func_802643A0_de(menu->input) != 0) {
+        } else if (((s32 (*)(s32))func_802643A0_de)(menu->input) != 0) {
             if (D_800E5CA0.x < D_800E5CA0.z) {
                 D_800E5CA0.x++;
                 D_800E5CA0.y = 0.0f;

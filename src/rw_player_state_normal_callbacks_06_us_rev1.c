@@ -1,6 +1,6 @@
 #include "rw_player_state_fields.h"
 
-extern void func_8022CC34_de(void *, void *);
+
 
 /* Original normal state6: symbolic entry and update callbacks. */
 RwPlayerStateCallbacks rw_player_state_normal_callbacks_06_us_rev1 = {

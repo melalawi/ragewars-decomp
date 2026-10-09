@@ -118,7 +118,7 @@ typedef struct ObjectLinks4_5 ObjectLinks4_5;
 extern double D_800C7300_de;
 
 /* unbake published declaration: published_52eccffa7460d74f7002c807 */
-extern void func_802AF150_de(void *arg0);
+
 
 struct ALCMidiHdr;
 /* unbake published declaration: published_531220a59f14b8f3a8458263 */
@@ -259,7 +259,7 @@ struct DecodeResult {
 };
 
 /* unbake published declaration: published_a32ece83066792b62eb0903b */
-extern void func_802AFD00_de(void *arg0);
+
 
 struct ObjectLinks54_2;
 /* unbake published declaration: published_a5a068b86cef295fcbf79d08 */
@@ -290,7 +290,7 @@ struct ALCSeq_s {
 };
 
 /* unbake published declaration: published_b4a076dd2634a0deeff7d38d */
-extern void func_802AFDFC_de(void *arg0, f32 arg1);
+
 
 struct ValueSet;
 /* unbake published declaration: published_bc5615ff3d4b2554c3acee3e */

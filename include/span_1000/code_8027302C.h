@@ -109,7 +109,7 @@ struct func_80273CD8_S1;
 typedef struct func_80273CD8_S1 func_80273CD8_S1;
 
 /* unbake published declaration: published_889e9834d6d8fa06b6dfad5e */
-extern void func_802741A4_de(f32 *arg0);
+
 
 struct func_80273208_S1;
 /* unbake published declaration: published_8cf5babaa0b3d2fc2c96e38f */

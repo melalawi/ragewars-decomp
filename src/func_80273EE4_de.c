@@ -3,7 +3,7 @@
 
 extern f32 D_800C99F8;
 
-extern void func_80274020_de(f32 *);
+
 
 f32 func_80273EE4_de(f32 fraction, f32 first, f32 second) {
     f32 var_f3;

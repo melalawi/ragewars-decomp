@@ -39,7 +39,7 @@ extern void *func_8040EC30_de(void *, u16);
 extern void func_8040E8D8_de(MenuWidget *, s32);
 extern void *func_80419E54_de(s32, s32);
 extern void func_802A2394_de(void);
-extern void func_802A23C4_de(s32);
+
 
 
 

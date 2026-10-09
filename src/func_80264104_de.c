@@ -2,6 +2,7 @@
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_802636D0.h"
 #include "types.h"
+#include "span_1000/code_802B7B80.h"
 
 
 
@@ -13,7 +14,7 @@ extern s32 D_8010EC90;
 extern s32 D_80146894;
 
 extern void func_80285D30_de(s32 *);
-extern void func_80285C78_de(void *arg0);
+
 extern f32 func_802856E0_de(void *arg0, s32 arg1, s32 arg2, s32 arg3);
 #if defined(VERSION_EU)
 extern unsigned int func_802B80B4_eu(void *arg0);
@@ -25,13 +26,13 @@ extern unsigned int func_802B7D44_us(void *arg0);
 extern unsigned int func_802B7E14_de(void *arg0);
 #endif
 #if defined(VERSION_EU)
-extern unsigned int func_802B7EF0_eu(void *arg0);
+
 #elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-extern unsigned int func_802B7F30_eu_x(void *arg0);
+
 #elif defined(VERSION_US)
-extern unsigned int func_802B7B80_us(void *arg0);
+
 #else
-extern unsigned int func_802B7C50_de(void *arg0);
+
 #endif
 
 void func_80264104_de(Obj80264124 *arg0) {
@@ -81,11 +82,23 @@ func_802B7E14_de
 #if defined(VERSION_EU)
 func_802B7EF0_eu
 #elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
+#if defined(VERSION_EU) || defined(VERSION_US)
 func_802B7F30_eu_x
+#elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
+((unsigned int (*)(void *))func_802B7F30_eu_x)
+#endif
 #elif defined(VERSION_US)
+#if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
 func_802B7B80_us
+#elif defined(VERSION_US)
+((unsigned int (*)(void *))func_802B7B80_us)
+#endif
 #else
+#if defined(VERSION_DE)
+((unsigned int (*)(void *))func_802B7C50_de)
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
 func_802B7C50_de
+#endif
 #endif
 ((void *)arg0->status);
         }

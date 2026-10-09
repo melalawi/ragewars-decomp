@@ -8,9 +8,9 @@
    cosine func_802745D0_de and negates it when the point lies on the other side, or returns zero when the
    point is at the actor. Scheduler lever, disclosed: the sine read sits in a do-while(0) block. */
 extern f32 func_802B72B0_de(f32);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
-extern f32 func_802745D0_de(f32);
+
+
+
 f32 func_80216F44_de(void *actor, Vec3 point) {
     f32 dx;
     f32 dz;

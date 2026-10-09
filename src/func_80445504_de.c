@@ -11,7 +11,7 @@ extern s32 D_800E63B8;
 extern char D_00451094[];
 extern void func_8025E3A8_de();
 extern s32 func_8025E2C4_de();
-extern void func_8025E2D4_de(s32);
+
 extern void func_8025E384_de();
 extern void func_8025E29C_de(s32);
 extern void func_802649FC_de();

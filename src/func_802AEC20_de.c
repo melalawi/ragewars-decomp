@@ -4,11 +4,11 @@
 #include "span_1000/code_802AE028.h"
 #include "types.h"
 
-extern void func_802AF150_de(void *);
+
 extern void func_802AF2E0_de(void *, Message_func_802AF150_de *);
 extern void func_802AFB6C_de(void *, ObjectState10_2 *);
-extern void func_802AFD00_de(void *);
-extern void func_802AFDFC_de(void *, f32);
+
+
 extern void func_802B00D4_de(ALEventQueue *, Message_func_802AF150_de *, s32);
 extern s32 func_802B003C_de(void *, s16 *);
 extern void func_802B0258_de(void *, s16);
@@ -16,11 +16,11 @@ extern void func_802B36F0_de(void *, void *);
 extern void func_802B3200_de(void *, void *);
 extern void func_802B3480_de(void *, void *, s16, s32);
 extern void func_802B33E0_de(void *, void *, f32);
-extern void func_802B1C34_de(void *, void *);
+
 extern void func_802B156C_de(List802B663C *, void *);
 extern s16 func_802B1814_de(ALVoiceState_s_func_802B1814_de *, ALSeqPlayer_func_802B1814_de *);
 extern s32 func_802B1888_de(void *, s32);
-extern s32 func_802B15D0_de(void *, s32, s32);
+
 extern void func_802B1B14_de(void *, void *, s32);
 extern void func_802B18E4_de(void *, void *);
 extern void func_802BAC50_de(void *, void *, s32);

@@ -8,7 +8,7 @@
 extern char D_800CE8DC;
 extern AudioState D_801468A0;
 
-extern s32 func_80222AA4_de(void *arg0, s16 arg1);
+
 extern s16 func_8022F96C_de(void *arg0);
 extern void func_8022B9C4_de(void *arg0);
 extern s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3,

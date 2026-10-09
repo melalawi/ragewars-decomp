@@ -11,7 +11,7 @@ struct func_8029D984_S2;
 typedef struct func_8029D984_S2 func_8029D984_S2;
 
 /* unbake published declaration: published_060bf5b17b425a07fa69bea1 */
-extern void func_8029CE3C_de(int arg0, int arg1, int arg2);
+
 
 struct func_8029D984_S2;
 /* unbake published declaration: published_e42d90620e6c1f9977e6fb24 */
@@ -223,7 +223,7 @@ extern double D_800C5900_de;
 extern float D_800C58A0_de;
 
 /* unbake published declaration: published_e82969cb945a15fd2aa3cf41 */
-extern s32 func_8029DB58_de(s32 arg0);
+
 
 /* unbake published declaration: published_eb3536f3bd178963b19fc774 */
 extern float D_800C5878_de;

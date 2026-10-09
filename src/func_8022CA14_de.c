@@ -84,7 +84,7 @@ void func_8022CA14_de(void *arg0, void *arg1) {
 /* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
 
 extern void func_802227F4_de(void *, void *, s32);
-extern void func_8022CC34_de(void *arg0, void *arg1);
+
 
 
 

@@ -7,7 +7,7 @@ extern s32 *D_800E5550;
 extern u8 D_801462D5;
 extern s32 D_80146894;
 extern s32 *func_8025305C_de(s32);
-extern void func_8025E214_de(s32),func_802648C8_de(void),func_802A2360_de(void),func_8040E950_de(s32,s32);
+extern void func_802648C8_de(void); extern void func_802A2360_de(void); extern void func_8040E950_de(s32, s32);
 extern s32 func_8040C474_de(void),func_8040EC30_de(void *,s32),func_8042AF28_de(void);
 #if defined(VERSION_DE) || defined(VERSION_EU) || defined(VERSION_US) || defined(VERSION_US_REV1)
 enum { MENU_80435D14_62 = 62 };

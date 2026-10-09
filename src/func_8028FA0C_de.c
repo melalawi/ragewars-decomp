@@ -2,7 +2,7 @@
 #include "span_1000/code_8028DF6C.h"
 #include "types.h"
 
-extern void func_802BA8C0_de(s32 arg0);
+
 
 
 

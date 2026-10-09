@@ -18,7 +18,7 @@
 extern ActorList D_80145040;
 extern Snapshot D_8010BC40;
 extern char D_8011FE88;
-extern s32 func_8028B394_de(void *table, s32 handle);
+
 
 void func_80264B8C_de(void) {
     s32 i;

@@ -2,7 +2,7 @@
 #include "types.h"
 
 extern f32 func_802B72B0_de(f32);
-extern f32 func_802745D0_de(f32 arg0);
+
 
 f32 func_802417C4_de(f32 *arg0) {
     f32 magnitude;

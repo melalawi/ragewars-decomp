@@ -28,7 +28,7 @@ extern void func_804356BC_de(s32);
 extern void func_8043577C_de(s32);
 extern void *func_8040EC30_de(s32, s32);
 extern void func_8040E8D8_de(void *, s32);
-extern s32 func_802A05D0_de(u8 *);
+
 extern s32 func_80404858_de(s32, s32);
 
 extern s32 func_804358C0_de(s32, s32);
@@ -38,7 +38,7 @@ extern void func_80433610_de(s32);
 extern void func_802A0724_de(void *, void *, s32);
 extern void func_80433BCC_de(s32);
 
-extern void func_8022F204_de(s32);
+
 extern s32 func_80405290_de(s32);
 
 s32 func_804306D8_de(s32 arg0, s32 arg1, s32 arg2) {

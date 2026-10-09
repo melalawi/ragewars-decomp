@@ -9,7 +9,7 @@ extern char D_8013B1A8;
 extern void func_80279A00_de(void *arg0);
 extern void func_80284178_de(void *);
 extern void func_802A42F4_de(void *arg0, void *arg1);
-extern void func_80268C7C_de(void *arg0, s32 arg1);
+
 extern void func_80255ED8_de(void *, s32);
 extern s32 func_80255CB8_de(void *, s32);
 

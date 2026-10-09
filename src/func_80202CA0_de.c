@@ -15,10 +15,10 @@ extern f32 D_800C1A08_de;
 
 
 extern void func_8027207C_de(Vec3 *);
-extern f32 func_802745D0_de(f32);
+
 extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
 
 Vector4f func_80202CA0_de(Vec3 *dir) {
     Vector4f q;

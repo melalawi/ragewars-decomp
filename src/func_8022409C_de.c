@@ -40,13 +40,13 @@ extern char D_80145088;
 extern char D_800C2950_de;
 
 extern void func_80274870_de(f32 *, f32, f32);
-extern f32 func_802746A0_de(f32, f32, f32);
-extern f32 func_802747A0_de(f32, f32);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
+
+
 extern void func_80271F9C_de(Vec3 *, Vec3 *, f32);
 extern void func_80271F34_de(Vec3 *, Vec3 *, Vec3 *);
-extern s32 func_80286728_de(void *, void *);
+
 extern void func_802227F4_de(void *, void *, s32);
 extern void func_80237E80_de(void *, void *, void *);
 

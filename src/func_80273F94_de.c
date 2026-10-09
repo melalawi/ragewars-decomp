@@ -4,7 +4,7 @@
 
 extern f32 D_800C4918_de[];
 
-extern void func_80274020_de(f32 *);
+
 
 f32 func_80273F94_de(f32 arg0, f32 arg1) {
     f32 var_f3;

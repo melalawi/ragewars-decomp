@@ -46,7 +46,7 @@ typedef struct Block40 Block40;
 extern unsigned int func_802B80B4_eu(void *arg0);
 
 /* unbake published declaration: published_b91a736f7d55c3858520961b */
-extern unsigned int func_802B7EF0_eu(void * arg0);
+
 
 struct __OSContRamReadFormat;
 /* unbake published declaration: published_ca5d307e2535af31862e2878 */
@@ -56,4 +56,9 @@ struct OSPfs;
 /* unbake published declaration: published_d956fa81bfabadfa7028fd20 */
 typedef struct OSPfs OSPfs;
 
+
+struct Triple;
+extern u32 func_802B7B80_us(struct Triple *);
+extern u32 func_802B7C50_de(struct Triple *);
+extern u32 func_802B7F30_eu_x(struct Triple *);
 #endif

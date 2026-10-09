@@ -4,7 +4,7 @@
 #include "stddef.h"
 /* Refreshes a controller slot and resolves its pending device state. */
 void func_80263740_de(); /* extern */
-void func_802644FC_de(s32); /* extern */
+ /* extern */
 void func_8026454C_de(); /* extern */
 void func_80404018_de(s32); /* extern */
 s32 func_80447F30_de(void *); /* extern */
@@ -17,7 +17,7 @@ s32 func_804051D4_de(s32 arg0) {
     if (D_801534F0[arg0] != 3) {
         return -2;
     }
-    func_802644FC_de(1);
+    ((void (*)(s32))func_802644FC_de)(1);
     func_80263740_de();
     var_s0 = D_80153500[arg0];
     D_8010BBB8 = 2;

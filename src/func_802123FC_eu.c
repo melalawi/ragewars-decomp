@@ -3,7 +3,7 @@
 #include "span_1000/code_802106E0.h"
 #include "types.h"
 extern s32 func_802744D4_de(void);
-extern void func_80209988_de(void *object);
+
 
 
 

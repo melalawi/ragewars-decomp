@@ -9,7 +9,7 @@ extern u8 D_801462E5[];
 extern u8 D_80142226;
 extern f32 D_800C1AC8_de;
 
-extern f32 func_80274A90_de(f32 lo, f32 hi);
+
 extern void func_80214178_de(Actor_func_80205F18_de *actor, Action *action, s32 arg2);
 /* Starts an eligible actor action with a random delay and descriptor duration, applies its flags and callback, then clears the pending flag when required. */
 void func_80205F18_de(Actor_func_80205F18_de *actor, Action *action) {

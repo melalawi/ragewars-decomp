@@ -7,8 +7,8 @@
 
 
 
-extern f32 func_802B7130_de(f32);
-extern f32 func_80274A90_de(f32, f32);
+
+
 
 f32 func_80239D1C_de(struct Wave *wave) {
     switch (wave->kind) {

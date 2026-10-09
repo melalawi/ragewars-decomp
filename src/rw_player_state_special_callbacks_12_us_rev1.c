@@ -1,6 +1,6 @@
 #include "rw_player_state_fields.h"
 
-extern void func_8022CF38_de(void *, void *);
+
 extern void func_80224F5C_de(void *, void *);
 
 /* Original special state12: symbolic entry and update callbacks. */

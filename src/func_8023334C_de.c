@@ -31,7 +31,7 @@
 
 
 
-extern s32 func_80222AA4_de(void *arg0, s16 arg1);
+
 extern s16 func_8022F96C_de(void *arg0);
 extern s32 func_8022B184_de(void *arg0);
 extern void func_8022B984_de(void *arg0);

@@ -68,8 +68,8 @@ void func_8027207C_de(f32 *);
 void func_80272748_de(void *, f32);
 void func_80272898_de(void *, void *, void *);
 void func_80274244_de(f32 *, f32 *);
-f32 func_802745D0_de(f32);
-f32 func_80274A90_de(f32, f32);
+
+
 void func_80279DD0_de(void *, f32);
 #if defined(VERSION_EU)
 float func_802AD520_eu(int);

@@ -3,7 +3,7 @@
 #include "span_1000/code_80209AE8.h"
 #include "types.h"
 
-extern f32 func_80274564_de(f32 arg0);
+
 extern f32 func_80216F44_de(s32 a0, s32 a1, s32 a2, s32 a3);
 
 

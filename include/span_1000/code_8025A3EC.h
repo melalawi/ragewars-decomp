@@ -63,7 +63,7 @@ struct Slot_func_8025B5F0_de;
 typedef struct Slot_func_8025B5F0_de Slot_func_8025B5F0_de;
 
 /* unbake published declaration: published_18b89677f5b374a4b67b54d1 */
-extern void func_8025BB7C_de(void *arg0, int arg1);
+
 
 struct Slot_func_8025BA4C_de;
 /* unbake published declaration: published_8968b083a2e70141897ba1df */
@@ -409,7 +409,7 @@ extern void func_8025BD00_de(void **arg0);
 extern s32 func_8025B854_de(s32 arg0, s16 arg1);
 
 /* unbake published declaration: published_d0bd0971d15b1c0a7365db9c */
-s32 func_8025B920_de(void *record, s16 value, s16 id);
+
 
 /* unbake published declaration: published_97086d4c5cc8f647432e887c */
 extern void func_8025BB3C_de(s32 a);

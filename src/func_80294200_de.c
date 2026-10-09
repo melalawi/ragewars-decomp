@@ -14,7 +14,7 @@
 
 
 extern void func_802A9234_de(s32);
-extern void func_802AA950_de(s32 image, s32 frame, s32 *width, s32 *height);
+
 extern void func_802AAC28_de(s32 image, s32 frame, s32 x, s32 y, f32 scaleX, f32 scaleY, s32 flags);
 extern Gfx *D_80110634;
 extern Frame *D_8011BDC0;

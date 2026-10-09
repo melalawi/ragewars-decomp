@@ -6,7 +6,7 @@ extern s32 D_80140FF8;
 extern void *D_800D052C[];
 
 
-extern void func_8021A9A4_de(void *arg0, s32 arg1);
+
 extern void func_8022AEA0_de(void *arg0, s32 arg1);
 extern void func_8022AF74_de(void *arg0, s32 arg1);
 

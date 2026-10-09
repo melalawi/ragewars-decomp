@@ -5,8 +5,8 @@
 
 extern s32 func_80245798_de(void);
 extern void func_8024D728_de(Vector4f *arg0, void *arg1);
-extern f32 func_802B7130_de(f32 arg0);
-extern f32 func_802B6560_de(f32 arg0);
+
+
 extern void func_80274098_de(Vector4f *arg0, Vector4f *arg1, Vector4f *arg2);
 extern void func_80274244_de(void *, void *);
 extern void func_8027347C_de(void *arg0, f32 sx, f32 sy, f32 sz);
@@ -78,7 +78,7 @@ void func_8024B67C_de(void *arg0) {
 }
 
 extern s32 func_80246A08_de(void *, s32, s32);
-extern s32 func_8024B6F4_de(void *arg0, s32 arg1, s32 arg2);
+
 
 s32 func_8024B6A0_de(void *a, s32 c, s32 flag) {
     s32 temp_v0 = func_80246A08_de(a, c, -1);

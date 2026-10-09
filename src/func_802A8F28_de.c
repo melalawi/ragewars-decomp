@@ -11,7 +11,7 @@
 extern s32 D_800E28D0;
 extern Gfx *D_80110634;
 extern f32 func_804422F0_de(s32 text, f32 size, f32 spacing);
-extern void func_802A88F0_de(s32 text, f32 x, f32 y, f32 width, f32 height, s32 shadow, s32 alpha, s32 language);
+
 
 void func_802A8F28_de(s32 text, s32 x, s32 y, s32 alpha, s32 centred, s32 shadow, f32 scaleX, f32 scaleY) {
     FontStyle *style;

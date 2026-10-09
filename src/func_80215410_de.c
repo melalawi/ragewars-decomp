@@ -9,7 +9,7 @@
 extern s32 D_8011CD20,D_8013B290;
 extern void *func_802149C0_de(void *,void *,s32,s32), *func_80219408_de(void *);
 extern f32 func_80216F44_de(void *,f32,f32,f32),func_802B72B0_de(f32);
-extern void func_80271F68_de(Vec3 *,Vec3 *,Vec3 *),func_80274020_de(f32 *);
+extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 static inline s32 func_80215410_kind(void *self, void *ctx, void *target) {
     if (((func_80203E78_S1 *)(ctx))->unk4 == 0) {
         return 6;

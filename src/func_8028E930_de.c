@@ -9,11 +9,11 @@
 extern void func_802BB2A0_de(s32, s32, s32);
 extern void func_802BB420_de(void *arg0, void *arg1, s32 arg2);
 extern void func_8028EACC_de(void *arg0);
-extern void func_8028EDA0_de(void *arg0);
+
 extern void func_8028F278_de(void *arg0);
 extern void func_8028FC10_de(void *arg0);
 
-extern void func_8025E214_de(s32 arg0);
+
 extern void *func_8025CC6C_de(void);
 extern void func_8025CBEC_de(void *arg0);
 

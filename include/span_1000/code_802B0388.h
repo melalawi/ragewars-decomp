@@ -83,7 +83,7 @@ struct func_802B6BE4_S2 {
 };
 
 /* unbake published declaration: published_1aa599da8a0a684269cfab5e */
-extern s32 func_802B15D0_de(void *arg0, s32 arg1, s32 arg2);
+
 
 struct func_802B6D04_S1;
 /* unbake published declaration: published_1af99d31fadad63c252f5471 */
@@ -668,7 +668,7 @@ struct func_802B69B4_S2;
 typedef struct func_802B69B4_S2 func_802B69B4_S2;
 
 /* unbake published declaration: published_d4d5108953f7e655e2381b62 */
-extern void func_802B1C34_de(void *arg0, void *arg1);
+
 
 struct func_802B6D04_S4;
 /* unbake published declaration: published_dc87814b81d2a3e3f98da4ce */

@@ -29,7 +29,7 @@ extern void func_802A9234_de(u8 alpha);
 extern void func_802AAC28_de(s32 image, s32 frame, s16 x, s16 y, f32 scaleX, f32 scaleY, s32 which);
 
 
-extern void func_802AAB3C_de(s32 r0, s32 g0, s32 b0, s32 r1, s32 g1, s32 b1);
+
 extern void func_802A8F28_de(s32 label, s32 x, s32 y, u8 alpha, s32 pad0, s32 pad1, f32 scaleX, f32 scaleY);
 
 void func_802A7660_de(Hud *hud, s32 which) {

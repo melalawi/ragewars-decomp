@@ -71,10 +71,10 @@ s32 func_8028480C_de(s32 arg0) {
     return 0;
 }
 
-s32 func_80274564_de();
+
 void func_80284870_de(f32 arg0) {
     if (arg0 != 0.0f) {
-        func_80274564_de();
+        ((s32 (*)())func_80274564_de)();
     }
 }
 

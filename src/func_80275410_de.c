@@ -25,9 +25,9 @@ extern void func_80272018_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern void func_8027207C_de(Vec3 *v);
 extern void func_80271F9C_de(Vec3 *out, Vec3 *in, f32 scale);
 extern f32 func_802B72B0_de(f32);
-extern f32 func_802745D0_de(f32);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
+
 
 static inline void edge(Vec3 *out, Vec3 *a, Vec3 *b) {
     func_80271F68_de(out, a, b);

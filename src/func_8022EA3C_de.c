@@ -236,7 +236,7 @@ void func_8022ED48_de(Actor_func_8022ED48_de *arg0)
   arg0->unk_0x086C = 1;
 }
 
-extern void func_80264854_de(s32 a);
+
 extern void func_80253908_de(s32 a);
 extern void func_80253838_de(void *, void *);
 

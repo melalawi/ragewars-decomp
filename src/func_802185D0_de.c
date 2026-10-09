@@ -28,12 +28,12 @@ extern Gfx *D_80110634;
 extern s32 D_800E28D0;
 extern s32 D_800E28D4;
 extern char D_800C2260_de[]; /* "Select Team" */
-extern void func_802AA950_de(s32, s32, s32 *, s32 *);
-extern f32 func_802B6560_de(f32);
+
+
 extern void func_802AAC28_de(s32, s32, s16, s16, f32, f32, s32);
 extern void func_802A84F8_de(void);
-extern void func_802AAB68_de(f32, f32);
-extern void func_802AAB3C_de(s32, s32, s32, s32, s32, s32);
+
+
 extern void func_802A8F28_de(char *, s32, s32, s32, s32, s32, f32, f32);
 
 void func_802185D0_de(struct TeamMenu *menu, Item_func_80218F9C_de *items, s32 count, WeaponMenuPlayer *player) {

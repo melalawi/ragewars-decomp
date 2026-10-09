@@ -14,7 +14,7 @@ extern u32 func_802BCF30_de(void);
 extern void func_802BCF50_de(u32);
 extern void func_802BB2A0_de(s32, s32, s32);
 extern struct Shape_typemap_165 *func_802514A8_de(s32, u32);
-extern s32 func_80254B8C_de(s32, s32, s32, u32);
+
 extern void func_80254C70_de(s32, struct Shape_typemap_165 *);
 extern void func_80254AD0_de(s32, struct Shape_typemap_165 *);
 extern s32 func_802BB420_de(Queue_func_802517B4_de *, s32, s32);
@@ -45,7 +45,7 @@ struct Shape_typemap_165 *func_80254480_de(s32 arg0, void *arg1, s32 arg2) {
     if (node != 0) {
         node->field_8++;
         node->field_C |= 0x100;
-        result = func_80254B8C_de(0, arg2, (flags >> 5) & 1, flags);
+        result = ((s32 (*)(s32, s32, s32, u32))func_80254B8C_de)(0, arg2, (flags >> 5) & 1, flags);
         node->field_0 = result;
         if (result != 0) {
             node->field_4 = arg2;

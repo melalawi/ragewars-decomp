@@ -15,7 +15,7 @@ extern char D_8010F328[];
 extern u8 D_8010BBB8;
 extern char D_8010FBC0;
 extern char D_8010FC00;
-extern void func_80285C78_de(void *);
+
 extern s32 func_802BB2A0_de(void *, void *, s32);
 extern s32 func_802BB420_de(void *, void *, s32);
 extern s32 func_802BAD80_de(void *);
@@ -66,7 +66,7 @@ void func_80263AF4_de(void) {
 extern s32 D_8010B310[];
 extern s32 D_8010BC28[];
 
-extern s32 func_8026475C_de(s32 port);
+
 
 
 void func_80263C24_de(void)

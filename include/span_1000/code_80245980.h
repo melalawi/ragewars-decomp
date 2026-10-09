@@ -198,7 +198,7 @@ struct Record_func_80245C38_de;
 typedef struct Record_func_80245C38_de Record_func_80245C38_de;
 
 /* unbake published declaration: published_5ef6b0998d95a530e02d79d6 */
-extern void func_80245B74_de(int arg0);
+
 
 struct Actor_func_80245D30_de;
 /* unbake published declaration: published_621748132cfc54dcf371a27b */

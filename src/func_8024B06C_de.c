@@ -144,7 +144,7 @@ extern s32 D_8011FE88;
 extern f32 D_800C3B48_de[];
 
 extern void *func_8028CF6C_de(void *, s32);
-extern s32 func_8028B394_de(void *, s32);
+
 extern s32 func_80285F58_de(void *, void *);
 extern void func_802466A0_de(void *, u16, u16, s32, void *, s32, s32, f32,
                           Vec3, u8, Vec3, Vec3, s32);

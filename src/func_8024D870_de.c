@@ -17,9 +17,9 @@ extern s32 func_802757E4_de(s32);
 extern void func_80275C94_de(Vec3 *, s32);
 extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_8027207C_de(Vec3 *);
-extern f32 func_802745D0_de(f32);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
+
 extern Vector4f func_8024D728_de(char *);
 extern f32 func_80240A98_de(Probe *, f32, f32, f32, f32);
 extern void func_80270CD0_de(Vector4f *, f32, Vector4f *, Vector4f *);

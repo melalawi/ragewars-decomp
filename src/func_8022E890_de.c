@@ -2,7 +2,7 @@
 #include "types.h"
 
 extern char D_8013B1A8;
-extern void func_80268C7C_de(void *a, s32 b);
+
 
 void func_8022E890_de(void *unused0, s32 *arg1) {
     s32 temp;

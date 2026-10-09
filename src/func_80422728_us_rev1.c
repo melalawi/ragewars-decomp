@@ -71,9 +71,9 @@ extern s32 D_80154020[2];
 
 extern Shared_OptionsScreen *func_8025305C_de(s32);
 extern s32 func_8025E2C4_de(void);
-extern void func_8025E2D4_de(s32);
+
 extern void func_8025E384_de(void);
-extern void func_8025E214_de(s32);
+
 extern MenuWidget *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(void *, s32);
 extern void func_8040E950_de(MenuWidget *, s32);

@@ -354,8 +354,8 @@ void func_80270910_de(f32 *dst, PackedMatrixWords *src) {
     }
 }
 
-extern f32 func_802745D0_de(f32 value);
-extern f32 func_802B7130_de(f32 value);
+
+
 
 void func_80270AAC_de(Vector4f *out, f32 amount, Vector4f *a, Vector4f *b) {
     Vector4f negative;
@@ -403,8 +403,8 @@ void func_80270AAC_de(Vector4f *out, f32 amount, Vector4f *a, Vector4f *b) {
     out->w = (scaleA * a->w) + (scaleB * other->w);
 }
 
-extern f32 func_802745D0_de(f32 value);
-extern f32 func_802B7130_de(f32 value);
+
+
 extern f32 func_802B72B0_de(f32);
 
 void func_80270CD0_de(Vector4f *out, f32 amount, Vector4f *a, Vector4f *b) {
@@ -655,9 +655,9 @@ Vec3 *func_80271624_de(Vec3 *out, Vec3 *in, f32 amount) {
 extern f32 D_80115DEC;
 
 extern f32 func_802B72B0_de(f32);
-extern f32 func_802745D0_de(f32);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
+
 
 Vector4f func_80271818_de(Vec3 *input) {
     Vector4f result;

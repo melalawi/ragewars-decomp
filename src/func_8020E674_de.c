@@ -18,8 +18,8 @@ typedef struct World World;
 extern char D_80103FD0;
 extern World *D_80103FCC;
 
-extern f32 func_802B6560_de(f32 arg0);
-extern f32 func_802B7130_de(f32 arg0);
+
+
 extern s32 func_802444A4_de(InstanceHdr *arg0, Vec3 current, Vec3 desired,
                           void *collisionInfo);
 

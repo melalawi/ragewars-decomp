@@ -16,7 +16,7 @@
 extern s32 func_802BD170_de(s32);                  /* osSetIntMask */
 extern void func_802B2450_de(Link_func_802596B4_de *);            /* alUnlink */
 extern void func_802B2480_de(Link_func_802596B4_de *, Link_func_802596B4_de *);  /* alLink */
-extern void func_802B0310_de(void *, void *, s32); /* alCopy */
+ /* alCopy */
 
 void func_802B00D4_de(ALEventQueue *evtq, Message_func_802AF150_de *evt, s32 delta)
 {
@@ -35,7 +35,7 @@ void func_802B00D4_de(ALEventQueue *evtq, Message_func_802AF150_de *evt, s32 del
     }
 
     func_802B2450_de((Link_func_802596B4_de *)item);
-    func_802B0310_de(evt, &item->evt, sizeof(*evt));
+    ((void (*)(void *, void *, s32))func_802B0310_de)(evt, &item->evt, sizeof(*evt));
 
     if (delta == 0x7FFFFFFF)
         postAtEnd = -1;

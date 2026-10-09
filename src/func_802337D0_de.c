@@ -3,7 +3,7 @@
 
 
 
-extern f32 func_802747A0_de(f32 value, f32 step);
+
 
 
 

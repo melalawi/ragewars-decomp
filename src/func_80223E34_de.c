@@ -43,9 +43,9 @@
 
 
 extern void func_80274870_de(f32 *, f32, f32);
-extern f32 func_802747A0_de(f32, f32);
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
+
 
 void func_80223E34_de(SharedPlayer_func_80223E34_de *player, func_80203908_S4 *camera) {
     f32 step;

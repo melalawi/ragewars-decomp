@@ -8,7 +8,7 @@
 
 
 extern Menu_func_8041DBCC_de *D_800E3590;
-extern void func_802A23C4_de(s32 mode);
+
 extern void func_80439B5C_de(char *model, s32 arg1, Vec3 scale, Vec3 position);
 extern void func_80439BE0_de(char *model, Vec3 rotation);
 extern void func_80439C30_de(char *model, Vec3 offset);

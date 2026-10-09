@@ -6,8 +6,8 @@
    then for 128 steps of i * D_800CCF1C stores sine plus cosine in D_801514C0 and cosine minus sine in
    D_801516C0. */
 extern s32 D_801518C0[];
-extern f32 func_802B6560_de(f32 angle);
-extern f32 func_802B7130_de(f32 angle);
+
+
 void func_802BF514_de(void) {
     s16 i;
     f32 angle;
@@ -50,8 +50,8 @@ void func_802BF514_de(void) {
    negated cosine tables for angles i * D_800CCF20 / n, fills the order table with 0..n - 1 and
    bit-reverses it with the standard index-swapping walk, records n and returns the tables. */
 extern FftTables D_800D9370;
-extern f32 func_802B6560_de(f32 angle);
-extern f32 func_802B7130_de(f32 angle);
+
+
 FftTables *func_802BF67C_de(s32 n) {
     FftTables *tables;
     s32 half;

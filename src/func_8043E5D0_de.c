@@ -81,7 +81,7 @@ extern Extra D_800E2358;
 extern f32 D_00450854[];
 
 extern s32 func_804423BC_de(struct Shape_typemap_114 *, s32, s32, s32, s32, s32);
-extern s32 func_802643A0_de(s32);
+
 extern s32 func_8026437C_de(s32);
 
 s32 func_8043E6A4_de(void *arg0, struct Shape_typemap_114 *obj)
@@ -89,7 +89,7 @@ s32 func_8043E6A4_de(void *arg0, struct Shape_typemap_114 *obj)
     f32 scale;
 
     D_800E1DF8_de = func_804423BC_de(obj, D_800E1DF8_de, 1, 0, 15, 0);
-    if (func_802643A0_de(obj->field_20) != 0 || func_8026437C_de(obj->field_20) != 0) {
+    if (((s32 (*)(s32))func_802643A0_de)(obj->field_20) != 0 || func_8026437C_de(obj->field_20) != 0) {
         func_804423BC_de(obj, D_800E1DF8_de, 1, 0, 15, 0);
     }
     scale = D_00450854[D_800E1DF8_de] + D_800E2358.scale;

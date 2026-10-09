@@ -2,7 +2,7 @@
 #include "span_16E000/code_80403BCC.h"
 #include "types.h"
 
-extern void func_802644FC_de(s32 a0);
+
 extern void func_80263740_de(void);
 extern u8 D_8010BBB8;
 extern u8 D_8010FBE3[];
@@ -19,7 +19,7 @@ void func_80404E28_de(s32 kind)
     u8 *cur;
     s32 ready;
 
-    func_802644FC_de(1);
+    ((void (*)(s32))func_802644FC_de)(1);
     func_80263740_de();
     D_8010BBB8 = 2;
 

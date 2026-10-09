@@ -4,7 +4,7 @@
 
 
 
-extern f32 func_80274564_de(f32 arg0);
+
 
 
 

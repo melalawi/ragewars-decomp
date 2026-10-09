@@ -8,7 +8,7 @@ extern void *func_802B16E0_de(void *, s32, s32, s32);
 extern void *func_802B151C_de(void *, u8, u8, u8);
 extern ALVoiceState_s *func_802B1680_de(ALSeqPlayer *, u8, u8);
 extern s32 func_802B3000_de(ALSynth_func_802B3000_de *, ALVoice_s_func_802B3000_de *, ALVoiceConfig_s *);
-extern f32 func_802AFE30_de(s32);
+
 extern s32 func_802B18A4_de(void *, void *);
 extern s16 func_802B1814_de(ALVoiceState_s_func_802B1814_de *, ALSeqPlayer_func_802B1814_de *);
 extern s32 func_802B1888_de(void *, s32);

@@ -6,10 +6,10 @@
    returns what func_80442384_de gives for the three arguments. */
 extern s32 D_800E63B4;
 extern s32 D_800E63B0;
-extern void func_8025E214_de(s32);
+
 extern void func_8025E29C_de(s32);
 extern void func_8025E360_de();
-extern void func_8025E2D4_de(s32);
+
 extern void func_80264A0C_de();
 extern s32 func_80442384_de(void *, void *, void *);
 

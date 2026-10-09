@@ -12,7 +12,7 @@ typedef struct {
 extern StunProtectionRules D_801468A0[];
 extern void func_80214178_de(char *, char *, s32);
 extern void func_802227F4_de(SharedPlayer *, SharedPlayer *, s32);
-extern f32 func_80274564_de(f32);
+
 extern void func_802391AC_de(View_func_80229814_de *, s32, s32, s32, s32, s32, s32, s32);
 
 void func_80229814_de(SharedPlayer *player, f32 amount) {

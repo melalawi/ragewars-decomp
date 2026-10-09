@@ -3,7 +3,7 @@
 #include "types.h"
 
 extern s32 func_802301F4_de(void);
-extern void func_8022B00C_de(void *arg0);
+
 
 
 

@@ -15,7 +15,7 @@ extern void func_80253908_de(s32);
 extern void func_8025476C_de(s32);
 extern s32 func_8025477C_de(void);
 extern void func_80263740_de(void);
-extern void func_802644FC_de(s32);
+
 extern void func_8026454C_de(void);
 extern void func_802BD3A0_de(s32, s32, s32);
 extern s32 func_80447AF0_de(Device *, s32, s32, s32, s32, s32);
@@ -40,7 +40,7 @@ s32 func_80404F58_de(s32 slot, s32 arg1, s32 arg2, s32 length)
   }
   buf = func_8025343C_de(0, size, 0x23, D_800DCCD0);
   addr = *buf;
-  func_802644FC_de(1);
+  ((void (*)(s32))func_802644FC_de)(1);
   func_80263740_de();
   result = D_80153500[slot];
   D_8010BBB8 = 2;

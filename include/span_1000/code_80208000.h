@@ -3,7 +3,7 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
-extern void func_80209988_de(void *arg0);
+
 /* unbake published declaration: published_04dd38a472522fb98a3eb4e5 */
 extern float D_800C1C88_de;
 

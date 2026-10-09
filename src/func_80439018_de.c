@@ -19,7 +19,7 @@ extern void func_80298368_de(s32);
 extern void func_802998A8_de();
 extern void func_8025DF34_de(s32);
 extern s32 func_8025E2C4_de(s32);
-extern void func_8025E2D4_de(s32);
+
 
 s32 func_80439018_de(void) {
     u8 *options;

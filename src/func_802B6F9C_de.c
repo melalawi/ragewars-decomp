@@ -9,8 +9,8 @@ extern const float D_800C78BC_de; /* 0.5 */
 extern const float D_800CCB10; /* -1, followed by 2 */
 extern const float D_800CCB18; /* 2 * 65536, followed by 2^31 */
 extern void func_802B6C6C_de(float mf[4][4]);
-extern float func_802B6560_de(float x);
-extern float func_802B7130_de(float x);
+
+
 void func_802B6F9C_de(float mf[4][4], u16 *perspNorm, float fovy, float aspect, float near, float far, float scale)
 {
     float cot;

@@ -4,7 +4,7 @@
 #include "span_C76B0/data.h"
 #include "types.h"
 
-extern void func_8029BBB0_de(f32 arg0, f32 *arg1, f32 *arg2);
+
 
 void func_8029F254_de(struct Matrix_func_80213CF8_de *arg0, Vec3 *arg1, f32 arg2) {
     f32 sine;

@@ -2,7 +2,7 @@
 #include "span_1000/code_802536F4.h"
 #include "types.h"
 
-extern void func_80254D44_de(s32 arg0, s32 arg1);
+
 
 
 

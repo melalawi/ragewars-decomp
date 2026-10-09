@@ -19,8 +19,8 @@ extern void func_80271F34_de(Vec3 *result, Vec3 *left, Vec3 *right);
 extern void func_80271F68_de(Vec3 *result, Vec3 *left, Vec3 *right);
 extern void func_80271F9C_de(Vec3 *result, Vec3 *vec, f32 scale);
 extern void func_8027207C_de(Vec3 *arg0);
-extern f32 func_802B6560_de(f32 angle);
-extern f32 func_802B7130_de(f32 angle);
+
+
 extern f32 func_802B72B0_de(f32 value);
 /* Places the goal beside kind-7 targets: pushed away from the anchor by both extents. */
 static inline void func_80214DD4_place_beside(Actor_func_80214DD4_de *arg0, Actor_func_80214DD4_de *target, Actor_func_80214DD4_de *anchor, Vec3 *outPos, s32 *outRoom) {

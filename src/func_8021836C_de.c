@@ -85,7 +85,7 @@ s32 func_8021846C_de(void *arg0, void *arg1) {
     return 1;
 }
 
-extern void func_80274020_de(f32 *arg0);
+
 
 
 extern float D_800D2988;

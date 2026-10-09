@@ -10,7 +10,7 @@ extern s32 D_80101134[];
 
 extern s32 D_80101160;
 
-extern void func_80254D44_de(s32, s32);
+
 extern u32 func_802BCF30_de(void);
 extern void func_802BCF50_de(u32);
 extern s32 func_802BB420_de(void *, s32, s32);

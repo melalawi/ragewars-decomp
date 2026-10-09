@@ -26,7 +26,7 @@
 s32 func_8025DF34_de(s32);
 void func_8029973C_de(void);
 void func_802A2360_de(void);
-float func_802B6560_de(float);
+
 void func_8040E8D8_de(void *, int);
 void * func_8040EC30_de(void *, unsigned short);
 void func_80419F24_de(void *);

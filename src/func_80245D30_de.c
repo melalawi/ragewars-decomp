@@ -5,7 +5,7 @@
 extern f32 D_800CB430_de[],D_800D2988[];
 extern s32 func_8024E62C_de(Actor_func_80245D30_de *);
 extern f32 func_80271AA8_de(Vec3 *);
-extern void func_80271F9C_de(Vec3 *,Vec3 *,f32),func_80271FC8_de(Vec3 *,f32,Vec3 *,Vec3 *),func_80274020_de(f32 *);
+extern void func_80271F9C_de(Vec3 *, Vec3 *, f32); extern void func_80271FC8_de(Vec3 *, f32, Vec3 *, Vec3 *);
 static inline s32 currentEnabled(Actor_func_80245D30_de *actor) {
     if (actor->flags & 0x3000) return 1;
     if (actor->flags & 0x4000) return func_8024E62C_de(actor);

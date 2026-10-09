@@ -1,6 +1,7 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802636D0.h"
 #include "types.h"
+#include "span_1000/code_802B7B80.h"
 /* Reinitializes a present controller pak entry under the pak queue lock, resets its counters and label, retries initialization, and releases the lock; an unsigned pointer local and a queue address relative to the adjacent status byte separate address lifetimes and preserve register scheduling. */
 
 
@@ -17,13 +18,13 @@ extern void func_80263740_de(void);
 extern s32 func_80285AC4_de(void *, void *, s32);
 extern s32 func_802B7FD8_de(void *, void *, s32);
 #if defined(VERSION_EU)
-extern u32 func_802B7EF0_eu(void *);
+
 #elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-extern u32 func_802B7F30_eu_x(void *);
+
 #elif defined(VERSION_US)
-extern u32 func_802B7B80_us(void *);
+
 #else
-extern u32 func_802B7C50_de(void *);
+
 #endif
 
 
@@ -50,22 +51,46 @@ void func_80264248_de(Shape *arg0) {
 #if defined(VERSION_EU)
 func_802B7EF0_eu
 #elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
+#if defined(VERSION_EU) || defined(VERSION_US)
 func_802B7F30_eu_x
+#elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
+((u32 (*)(void *))func_802B7F30_eu_x)
+#endif
 #elif defined(VERSION_US)
+#if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
 func_802B7B80_us
+#elif defined(VERSION_US)
+((u32 (*)(void *))func_802B7B80_us)
+#endif
 #else
+#if defined(VERSION_DE)
+((u32 (*)(void *))func_802B7C50_de)
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
 func_802B7C50_de
+#endif
 #endif
 ((char *)o + 0xD8);
         
 #if defined(VERSION_EU)
 func_802B7EF0_eu
 #elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
+#if defined(VERSION_EU) || defined(VERSION_US)
 func_802B7F30_eu_x
+#elif defined(VERSION_EU_X) || defined(VERSION_US_REV1)
+((u32 (*)(void *))func_802B7F30_eu_x)
+#endif
 #elif defined(VERSION_US)
+#if defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
 func_802B7B80_us
+#elif defined(VERSION_US)
+((u32 (*)(void *))func_802B7B80_us)
+#endif
 #else
+#if defined(VERSION_DE)
+((u32 (*)(void *))func_802B7C50_de)
+#elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
 func_802B7C50_de
+#endif
 #endif
 ((char *)o + 0xD8);
         if (func_802B7FD8_de(&D_8010FC00, o + 0xD8, arg0->enabled) == 0) {

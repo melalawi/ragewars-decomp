@@ -104,11 +104,11 @@ extern void *func_802A001C_de(void *, s32, u32);
 extern s32 func_8025DE54_de(s16, Vec3, s32, s32);
 extern void func_8022B550_de(void *, f32, f32, void *, s32);
 extern void func_8028CE94_de(void *, void *, s32, Triple, f32, f32);
-extern s32 func_80284068_de(void *);
+
 extern void func_80265E10_de(void *, void *, s32, s32, Triple, struct Shape_func_802764D4_de_2);
 extern void func_80279B40_de(void *, s32, s8, s32);
 extern void func_80284570_de(void *, void *);
-extern s32 func_80284434_de(void *);
+
 
 
 

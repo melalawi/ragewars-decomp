@@ -19,7 +19,7 @@ extern s32 func_8028FE3C_de(s32 *, s32, s32, s32 *);
 extern s32 **func_8025193C_de(s32, s32, s32, s32, s32, s32, s32, char *, s32);
 extern void func_80253754_de(s32, s32 **);
 
-extern s32 func_80293440_de(char *a, char *b);
+
 
 void func_80403200_de(char *name) {
     s32 size;
@@ -41,7 +41,7 @@ void func_80403200_de(char *name) {
         entries = (Entry_func_80403200_de *)(*table + 2);
         n = *D_8011FEFC - 1;
         for (; i < n; i++) {
-            if (func_80293440_de(name, entries[i].name) == 0) {
+            if (((s32 (*)(char *, char *))func_80293440_de)(name, entries[i].name) == 0) {
                 D_800E2830->key = entries[i].id8;
                 id = entries[i].id0;
                 D_800E2830->index = i;

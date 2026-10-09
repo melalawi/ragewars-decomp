@@ -14,12 +14,12 @@ extern s32 D_800CA2D8_de;
 extern f32 D_800D2988;
 extern s32 D_80140FF8;
 extern void func_80214178_de(void *, void *, s32);
-extern s32 func_80222AA4_de(void *, s16);
+
 extern void func_8022AF40_de(void *);
-extern void func_8022B00C_de(void *);
+
 extern s32 func_8025DE54_de(s16, s32, s32, s32, s32 *, s32);
 extern void func_80274870_de(f32 *, f32, f32);
-extern void func_8021A9A4_de(void *, s32);
+
 
 
 

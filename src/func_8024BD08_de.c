@@ -7,8 +7,8 @@
 
 
 
-extern f32 func_802B7130_de(f32 angle);
-extern f32 func_802B6560_de(f32 angle);
+
+
 extern Vec3 *func_80275BC8_de(Vec3 *out, Node75 *node);
 
 

@@ -30,7 +30,7 @@
 
 
 
-extern f32 func_802B6560_de(f32 turn);
+
 extern s32 func_8026E340_de(void);
 extern void func_80271F9C_de(f32 *out, Key *key, void *frame);
 

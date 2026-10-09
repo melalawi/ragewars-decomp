@@ -41,7 +41,7 @@ extern float D_800D2988[];
 
 extern s32 func_80245784_de(void);
 extern void func_8025DE54_de(s16,Vec3,s32,s32),func_80271F34_de(Vec3 *,Vec3 *,Vec3 *),func_80271F9C_de(Vec3 *,Vec3 *,f32),func_80272748_de(Vec3 *,f32);
-extern f32 func_802746A0_de(f32,f32,f32),func_802747A0_de(f32,f32),func_802B6560_de(f32),func_802B7130_de(f32);
+
 void func_802233F0_de(SharedPlayer_func_802233F0_de *arg0, func_802165F8_S1 *arg1, SharedMovement *arg2) {
     Vec3 motion;
     f32 temp_f0;

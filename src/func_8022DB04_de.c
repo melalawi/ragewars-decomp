@@ -8,8 +8,8 @@
 
 
 
-extern f32 func_802B7130_de(f32);
-extern f32 func_802B6560_de(f32);
+
+
 
 void func_8022DB04_de(Actor126 *actor, Object126 *arg1) {
     Object126 *object;

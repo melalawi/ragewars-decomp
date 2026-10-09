@@ -14,7 +14,7 @@ typedef struct Actor_func_80212D78_eu_x Actor_func_80212D78_eu_x;
 /* Real controller-table callbacks take an actor in a0. Native callers
  * additionally set a1 to zero; extern declarations retain actual arity. */
 typedef void (*ControllerCallback)(void *, void *);
-extern void func_80212FDC_eu(void *object);
+
 extern void func_80212E30_eu_x(PatrolActor *actor);
 typedef struct ControllerDispatchPrefix { s32 id; ControllerCallback enter, update; } ControllerDispatchPrefix;
 ControllerDispatchPrefix rw_controller_state_dispatch_CEC60_us_rev1 = {0, (ControllerCallback)((char *)func_80212FDC_eu - 0x80000000U), (ControllerCallback)((char *)func_80212E30_eu_x - 0x80000000U)};

@@ -13,7 +13,7 @@ extern Menu_func_8041D134_de *D_800E3590;
 extern void func_8025DF34_de(s32 sound);
 extern void func_8029973C_de(void);
 extern void func_802998A8_de(void);
-extern f32 func_802B6560_de(f32 t);
+
 extern void func_8040E8D8_de(Node_func_8041D134_de *node, s32 enabled);
 extern void func_80419F24_de(s32 fade);
 extern s32 func_80419F38_de(s32 fade);

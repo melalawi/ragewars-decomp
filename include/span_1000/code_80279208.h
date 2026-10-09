@@ -143,7 +143,7 @@ struct ObjectStateC4 {
 };
 
 /* unbake published declaration: published_d227a9003d7a139cf7bf59f8 */
-extern void func_80279990_de(void *arg0);
+
 
 /* unbake published declaration: published_d4132126e601549167ec27d1 */
 extern void func_802791B8_de(void *arg0);

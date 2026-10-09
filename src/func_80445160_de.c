@@ -3,7 +3,7 @@
 #include "stddef.h"
 /* Adjusts the volume in steps of eight and starts a sound preview when no preview is playing. */
 extern s32 func_8025E2C4_de(void),func_804423BC_de(void *,s32,s32,s32,s32,s32);
-extern void func_8025E2D4_de(s32);
+
 extern u8 D_801462E0[];
 s32 func_80445160_de(void *unused, void *arg1) {
     s32 var_a1;
