@@ -35745,6 +35745,17 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
+[[unit]]
+path = "src/rodata.writable.800FF1B0.c"
+kind = "data"
+group = "code_8022F3E8"
+members = ["rodata/writable/800FF1B0"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
 [[fuzzy]]
 member = "func_802005DC_de"
 path = "src/fuzzy/func_802005DC_de.c"
