@@ -2458,9 +2458,6 @@ withheld = ["eu-x"]
 add = []
 omit = []
 
-[unit.classes]
-"eu-x:rodata/unresolved/800C1D34" = "none"
-
 [[unit]]
 path = "src/func_8020520C_de.c"
 kind = "c"
@@ -2868,10 +2865,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C1AB8" = ".rodata"
-"eu:rodata/unresolved/800C1E28" = ".rodata"
-
 [[unit]]
 path = "src/func_802077CC_de.c"
 kind = "c"
@@ -3234,10 +3227,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C1C00" = ".rodata"
-"eu:rodata/unresolved/800C1F70" = ".rodata"
 
 [[unit]]
 path = "src/func_8020A028_de.c"
@@ -4353,13 +4342,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C2070" = ".rodata"
-"de:rodata/unresolved/800C2140" = ".rodata"
-"eu:rodata/unresolved/800C23E0" = ".rodata"
-"eu-x:rodata/unresolved/800C2420" = ".rodata"
-"us-rev1:rodata/unresolved/800C7230" = ".rodata"
-
 [[unit]]
 path = "src/func_80214DD4_de.c"
 kind = "c"
@@ -4768,9 +4750,6 @@ withheld = ["de", "eu", "eu-x"]
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C2278" = ".rodata"
-
 [[unit]]
 path = "src/func_8021C698_de.c"
 kind = "c"
@@ -4847,15 +4826,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C2324" = ".rodata"
-"de:rodata/unresolved/800C23F4" = ".rodata"
-"eu:rodata/unresolved/800C2694" = ".rodata"
-"eu-x:rodata/unresolved/800C26D4" = ".rodata"
-"de:rodata/unresolved/800C74E4" = "none"
-"us:rodata/unresolved/800C74E4" = "none"
-"us-rev1:rodata/unresolved/800C74E4" = ".rodata"
 
 [[unit]]
 path = "src/func_8021EEFC_de.c"
@@ -5033,10 +5003,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C2AB0" = ".rodata"
-"eu:rodata/unresolved/800C2E20" = ".rodata"
-
 [[unit]]
 path = "src/func_80227E8C_de.c"
 kind = "c"
@@ -5114,10 +5080,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C2BB0" = ".rodata"
-"eu:rodata/unresolved/800C2F28" = ".rodata"
 
 [[unit]]
 path = "src/func_8022A2A0_de.c"
@@ -7055,13 +7017,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C2D60" = ".rodata"
-"de:rodata/unresolved/800C2E30" = ".rodata"
-"eu:rodata/unresolved/800C30D8" = ".rodata"
-"eu-x:rodata/unresolved/800C3118" = ".rodata"
-"us-rev1:rodata/unresolved/800C7F20" = ".rodata"
-
 [[unit]]
 path = "src/func_8022EF30_de.c"
 kind = "c"
@@ -7392,10 +7347,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C2F08" = ".rodata"
-"eu:rodata/unresolved/800C3288" = ".rodata"
 
 [[unit]]
 path = "src/func_802327F4_de.c"
@@ -8584,10 +8535,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C35D0" = ".rodata"
-"eu:rodata/unresolved/800C3950" = ".rodata"
 
 [[unit]]
 path = "src/func_8023E690_de.c"
@@ -10503,10 +10450,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C3C08" = ".rodata"
-"eu:rodata/unresolved/800C3F88" = ".rodata"
-
 [[unit]]
 path = "src/func_8024E2F4_de.c"
 kind = "c"
@@ -10517,10 +10460,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C3C70" = ".rodata"
-"eu:rodata/unresolved/800C3FF0" = ".rodata"
 
 [[unit]]
 path = "src/func_8024E544_de.c"
@@ -12437,9 +12376,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"eu-x:rodata/unresolved/800C42B4" = "none"
-
 [[unit]]
 path = "src/func_8025DACC_de.c"
 kind = "c"
@@ -12925,15 +12861,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C408C" = ".rodata"
-"de:rodata/unresolved/800C415C" = ".rodata"
-"us:rodata/unresolved/800C415C" = "none"
-"eu:rodata/unresolved/800C440C" = ".rodata"
-"eu:rodata/unresolved/800C444C" = "none"
-"eu-x:rodata/unresolved/800C444C" = ".rodata"
-"us-rev1:rodata/unresolved/800C924C" = ".rodata"
-
 [[unit]]
 path = "src/func_8026049C_de.c"
 kind = "c"
@@ -13297,10 +13224,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"de:rodata/unresolved/800C40CC" = "none"
-"eu-x:rodata/unresolved/800C444C" = "none"
-
 [[unit]]
 path = "src/func_8026140C_de.c"
 kind = "c"
@@ -13378,19 +13301,6 @@ withheld = ["de", "eu", "eu-x", "us", "us-rev1"]
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C3FCC" = ".rodata"
-"us:rodata/unresolved/800C3FFC" = ".rodata"
-"de:rodata/unresolved/800C409C" = ".rodata"
-"de:rodata/unresolved/800C40CC" = ".rodata"
-"us:rodata/unresolved/800C40CC" = "none"
-"eu:rodata/unresolved/800C434C" = ".rodata"
-"eu:rodata/unresolved/800C437C" = ".rodata"
-"eu-x:rodata/unresolved/800C438C" = ".rodata"
-"eu-x:rodata/unresolved/800C43BC" = ".rodata"
-"us-rev1:rodata/unresolved/800C918C" = ".rodata"
-"us-rev1:rodata/unresolved/800C91BC" = ".rodata"
 
 [[unit]]
 path = "src/func_80262480_de.c"
@@ -14623,13 +14533,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C43D0" = ".rodata"
-"us:rodata/unresolved/800C4478" = ".rodata"
-"eu:rodata/unresolved/800C4750" = ".rodata"
-"de:rodata/unresolved/800C47F8" = "none"
-"eu:rodata/unresolved/800C47F8" = ".rodata"
 
 [[unit]]
 path = "src/func_8026AC38_de.c"
@@ -16248,10 +16151,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C4B68" = ".rodata"
-"eu:rodata/unresolved/800C4EE8" = ".rodata"
-
 [[unit]]
 path = "src/func_8027E784_de.c"
 kind = "c"
@@ -16285,11 +16184,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C4CE8" = ".rodata"
-"eu:rodata/unresolved/800C5068" = ".rodata"
-"us:src/rw_pool_cells_8027ED6C_CAA68_us_rev1.c" = ".rodata"
-
 [[unit]]
 path = "src/func_8027FF58_de.c"
 kind = "c"
@@ -16311,10 +16205,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C4D40" = ".rodata"
-"eu:rodata/unresolved/800C50C0" = ".rodata"
 
 [[unit]]
 path = "src/func_80281A9C_de.c"
@@ -16744,10 +16634,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C5018" = ".rodata"
-"eu:rodata/unresolved/800C5398" = ".rodata"
 
 [[unit]]
 path = "src/func_80286950_de.c"
@@ -17233,13 +17119,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800CD648" = ".rodata"
-"de:rodata/unresolved/800CD738" = ".rodata"
-"eu:rodata/unresolved/800CE318" = ".rodata"
-"eu-x:rodata/unresolved/800CECE8" = ".rodata"
-"us-rev1:rodata/unresolved/800D2988" = ".rodata"
-
 [[unit]]
 path = "src/func_8028D74C_de.c"
 kind = "c"
@@ -17437,10 +17316,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C5298" = ".rodata"
-"eu:rodata/unresolved/800C5618" = ".rodata"
 
 [[unit]]
 path = "src/func_8028F864_de.c"
@@ -19425,9 +19300,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"eu:rodata/unresolved/800C5F0C" = "none"
-
 [[unit]]
 path = "src/func_8029E04C_de.c"
 kind = "c"
@@ -20649,10 +20521,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C5D40" = ".rodata"
-"eu:rodata/unresolved/800C60B0" = ".rodata"
-
 [[unit]]
 path = "src/func_802A4A60_de.c"
 kind = "c"
@@ -20663,10 +20531,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C5D70" = ".rodata"
-"eu:rodata/unresolved/800C60E0" = ".rodata"
 
 [[unit]]
 path = "src/func_802A5020_de.c"
@@ -21020,18 +20884,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C5E84" = ".rodata"
-"de:rodata/unresolved/800C5F54" = ".rodata"
-"de:rodata/unresolved/800C5F74" = ".rodata"
-"de:rodata/unresolved/800C61F4" = "none"
-"eu:rodata/unresolved/800C61F4" = ".rodata"
-"eu-x:rodata/unresolved/800C6234" = ".rodata"
-"eu:rodata/unresolved/800C6254" = "none"
-"eu-x:rodata/unresolved/800C6254" = ".rodata"
-"us-rev1:rodata/unresolved/800CB0E4" = ".rodata"
-"us-rev1:rodata/unresolved/800CB104" = ".rodata"
-
 [[unit]]
 path = "src/func_802A822C_de.c"
 kind = "c"
@@ -21053,16 +20905,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C6078" = ".rodata"
-"eu:rodata/unresolved/800C60AC" = "none"
-"us:rodata/unresolved/800C60AC" = ".rodata"
-"de:rodata/unresolved/800C617C" = ".rodata"
-"eu:rodata/unresolved/800C63E8" = ".rodata"
-"eu:rodata/unresolved/800C641C" = ".rodata"
-"eu-x:rodata/unresolved/800C645C" = ".rodata"
-"us-rev1:rodata/unresolved/800CB30C" = ".rodata"
 
 [[unit]]
 path = "src/func_802AA6D0_de.c"
@@ -21151,10 +20993,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C6128" = ".rodata"
-"eu:rodata/unresolved/800C6498" = ".rodata"
 
 [[unit]]
 path = "src/func_802AA8EC_de.c"
@@ -21276,13 +21114,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C6174" = ".rodata"
-"de:rodata/unresolved/800C6244" = ".rodata"
-"eu:rodata/unresolved/800C64E4" = ".rodata"
-"eu-x:rodata/unresolved/800C6524" = ".rodata"
-"us-rev1:rodata/unresolved/800CB3D4" = ".rodata"
 
 [[unit]]
 path = "src/func_802AB400_de.c"
@@ -21626,13 +21457,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C728C" = ".rodata"
-"de:rodata/unresolved/800C736C" = ".rodata"
-"eu:rodata/unresolved/800C7F5C" = ".rodata"
-"eu-x:rodata/unresolved/800C892C" = ".rodata"
-"us-rev1:rodata/unresolved/800CC5BC" = ".rodata"
-
 [[unit]]
 path = "src/func_802AEE48_us_rev1.c"
 kind = "c"
@@ -21676,10 +21500,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C72F0" = ".rodata"
-"eu:rodata/unresolved/800C7FC0" = ".rodata"
 
 [[unit]]
 path = "src/func_802AF1F0_us_rev1.c"
@@ -21977,13 +21797,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C737C" = ".rodata"
-"de:rodata/unresolved/800C745C" = ".rodata"
-"eu:rodata/unresolved/800C804C" = ".rodata"
-"eu-x:rodata/unresolved/800C8A1C" = ".rodata"
-"us-rev1:rodata/unresolved/800CC6AC" = ".rodata"
 
 [[unit]]
 path = "src/func_802B05C8_us_rev1.c"
@@ -22469,10 +22282,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C7440" = ".rodata"
-"eu:rodata/unresolved/800C8110" = ".rodata"
-
 [[unit]]
 path = "src/func_802B2BBC_de.c"
 kind = "c"
@@ -22792,10 +22601,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C74C0" = ".rodata"
-"eu:rodata/unresolved/800C8190" = ".rodata"
-
 [[unit]]
 path = "src/func_802B40E0_eu_x.c"
 kind = "c"
@@ -22896,10 +22701,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C7670" = ".rodata"
-"eu:rodata/unresolved/800C8340" = ".rodata"
-
 [[unit]]
 path = "src/func_802B56E0_eu_x.c"
 kind = "c"
@@ -22932,10 +22733,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C76B8" = ".rodata"
-"eu:rodata/unresolved/800C8388" = ".rodata"
 
 [[unit]]
 path = "src/func_802B5F68_de.c"
@@ -24040,10 +23837,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800C7A38" = ".rodata"
-"eu:rodata/unresolved/800C8708" = ".rodata"
-
 [[unit]]
 path = "src/func_802BDEA0_us_rev1.c"
 kind = "c"
@@ -24906,10 +24699,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DBA58" = ".rodata"
-"eu:rodata/unresolved/800ED428" = ".rodata"
-
 [[unit]]
 path = "src/func_80409744_de.c"
 kind = "c"
@@ -25529,10 +25318,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DBAC8" = ".rodata"
-"eu:rodata/unresolved/800ED498" = ".rodata"
-
 [[unit]]
 path = "src/func_8040ACA0_de.c"
 kind = "c"
@@ -25543,10 +25328,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DBB08" = ".rodata"
-"eu:rodata/unresolved/800ED4D8" = ".rodata"
 
 [[unit]]
 path = "src/func_8040ADCC_de.c"
@@ -25559,10 +25340,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DBB48" = ".rodata"
-"eu:rodata/unresolved/800ED518" = ".rodata"
-
 [[unit]]
 path = "src/func_8040AEF8_de.c"
 kind = "c"
@@ -25573,10 +25350,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DBB88" = ".rodata"
-"eu:rodata/unresolved/800ED558" = ".rodata"
 
 [[unit]]
 path = "src/func_8040B024_de.c"
@@ -25589,10 +25362,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DBBC8" = ".rodata"
-"eu:rodata/unresolved/800ED598" = ".rodata"
-
 [[unit]]
 path = "src/func_8040B150_de.c"
 kind = "c"
@@ -25604,10 +25373,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DBC08" = ".rodata"
-"eu:rodata/unresolved/800ED5D8" = ".rodata"
-
 [[unit]]
 path = "src/func_8040B27C_de.c"
 kind = "c"
@@ -25618,10 +25383,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DBC48" = ".rodata"
-"eu:rodata/unresolved/800ED618" = ".rodata"
 
 [[unit]]
 path = "src/func_8040B2C8_de.c"
@@ -25800,10 +25561,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DBC88" = ".rodata"
-"eu:rodata/unresolved/800ED658" = ".rodata"
-
 [[unit]]
 path = "src/func_8040B8E4_de.c"
 kind = "c"
@@ -25814,10 +25571,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DBCA0" = ".rodata"
-"eu:rodata/unresolved/800ED670" = ".rodata"
 
 [[unit]]
 path = "src/func_8040B960_de.c"
@@ -25830,10 +25583,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DBCB8" = ".rodata"
-"eu:rodata/unresolved/800ED688" = ".rodata"
-
 [[unit]]
 path = "src/func_8040B9DC_de.c"
 kind = "c"
@@ -25844,10 +25593,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DBCD0" = ".rodata"
-"eu:rodata/unresolved/800ED6A0" = ".rodata"
 
 [[unit]]
 path = "src/func_8040BA58_de.c"
@@ -25860,10 +25605,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DBCE8" = ".rodata"
-"eu:rodata/unresolved/800ED6B8" = ".rodata"
-
 [[unit]]
 path = "src/func_8040BAD4_de.c"
 kind = "c"
@@ -25874,10 +25615,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DBD00" = ".rodata"
-"eu:rodata/unresolved/800ED6D0" = ".rodata"
 
 [[unit]]
 path = "src/func_8040BBB0_de.c"
@@ -25900,11 +25637,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DBD18" = ".rodata"
-"us-rev1:rodata/unresolved/800E1098" = ".rodata"
-"eu-x:rodata/unresolved/800E88A8" = ".rodata"
 
 [[unit]]
 path = "src/func_8040C09C_de.c"
@@ -27512,10 +27244,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC098" = ".rodata"
-"eu:rodata/unresolved/800EDA68" = ".rodata"
-
 [[unit]]
 path = "src/func_80417138_de.c"
 kind = "c"
@@ -28783,10 +28511,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC150" = ".rodata"
-"eu:rodata/unresolved/800EDB20" = ".rodata"
-
 [[unit]]
 path = "src/func_8041D6A8_de.c"
 kind = "c"
@@ -29350,10 +29074,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC240" = ".rodata"
-"eu:rodata/unresolved/800EDC10" = ".rodata"
-
 [[unit]]
 path = "src/func_8042177C_de.c"
 kind = "c"
@@ -29475,12 +29195,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DC290" = ".rodata"
-"us-rev1:rodata/unresolved/800E1610" = ".rodata"
-"eu-x:rodata/unresolved/800E8E20" = ".rodata"
-"eu:rodata/unresolved/800EDC60" = ".rodata"
 
 [[unit]]
 path = "src/func_80421D94_de.c"
@@ -29812,9 +29526,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"eu:rodata/unresolved/800EDCA0" = ".rodata"
-
 [[unit]]
 path = "src/func_804235E8_de.c"
 kind = "c"
@@ -29892,11 +29603,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC2E8" = ".rodata"
-"de:rodata/unresolved/800DD638" = ".rodata"
-"eu:rodata/unresolved/800EDCB8" = ".rodata"
-
 [[unit]]
 path = "src/func_80423990_de.c"
 kind = "c"
@@ -29952,10 +29658,6 @@ withheld = ["eu-x"]
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DC310" = ".rodata"
-"eu:rodata/unresolved/800EDCE0" = ".rodata"
 
 [[unit]]
 path = "src/func_8042418C_de.c"
@@ -30034,10 +29736,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC348" = ".rodata"
-"eu:rodata/unresolved/800EDD18" = ".rodata"
-
 [[unit]]
 path = "src/func_80425014_de.c"
 kind = "c"
@@ -30048,10 +29746,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DC410" = ".rodata"
-"eu:rodata/unresolved/800EDDE0" = ".rodata"
 
 [[unit]]
 path = "src/func_804253C8_de.c"
@@ -30064,10 +29758,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC4F8" = ".rodata"
-"eu:rodata/unresolved/800EDEC8" = ".rodata"
-
 [[unit]]
 path = "src/func_80425674_de.c"
 kind = "c"
@@ -30078,11 +29768,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DC5E0" = ".rodata"
-"de:rodata/unresolved/800DD930" = ".rodata"
-"eu:rodata/unresolved/800EDFB0" = ".rodata"
 
 [[unit]]
 path = "src/func_804259E0_de.c"
@@ -30193,9 +29878,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"eu:rodata/unresolved/800EE000" = ".rodata"
 
 [[unit]]
 path = "src/func_80426CE4_de.c"
@@ -30352,10 +30034,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC688" = ".rodata"
-"eu:rodata/unresolved/800EE058" = ".rodata"
-
 [[unit]]
 path = "src/func_8042863C_de.c"
 kind = "c"
@@ -30377,11 +30055,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DC6A0" = ".rodata"
-"de:rodata/unresolved/800DD9F0" = ".rodata"
-"eu:rodata/unresolved/800EE070" = ".rodata"
 
 [[unit]]
 path = "src/func_804287B8_de.c"
@@ -30604,10 +30277,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC6E0" = ".rodata"
-"eu:rodata/unresolved/800EE0B0" = ".rodata"
-
 [[unit]]
 path = "src/func_804297F8_de.c"
 kind = "c"
@@ -30751,10 +30420,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DC750" = ".rodata"
-"eu:rodata/unresolved/800EE120" = ".rodata"
 
 [[unit]]
 path = "src/func_8042AF28_de.c"
@@ -31108,10 +30773,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC7C8" = ".rodata"
-"eu:rodata/unresolved/800EE198" = ".rodata"
-
 [[unit]]
 path = "src/func_8042D418_de.c"
 kind = "c"
@@ -31343,10 +31004,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC830" = ".rodata"
-"eu:rodata/unresolved/800EE200" = ".rodata"
-
 [[unit]]
 path = "src/func_8042F91C_de.c"
 kind = "c"
@@ -31358,10 +31015,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC848" = ".rodata"
-"eu:rodata/unresolved/800EE218" = ".rodata"
-
 [[unit]]
 path = "src/func_8042FB48_de.c"
 kind = "c"
@@ -31372,10 +31025,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DC860" = ".rodata"
-"eu:rodata/unresolved/800EE230" = ".rodata"
 
 [[unit]]
 path = "src/func_8042FF40_de.c"
@@ -31410,13 +31059,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DC940" = ".rodata"
-"de:rodata/unresolved/800DDD04" = ".rodata"
-"us-rev1:rodata/unresolved/800E1D34" = ".rodata"
-"eu-x:rodata/unresolved/800E9544" = ".rodata"
-"eu:rodata/unresolved/800EE310" = ".rodata"
-
 [[unit]]
 path = "src/func_80432158_de.c"
 kind = "c"
@@ -31439,10 +31081,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DCA80" = ".rodata"
-"eu:rodata/unresolved/800EE450" = ".rodata"
-
 [[unit]]
 path = "src/func_80433398_de.c"
 kind = "c"
@@ -31464,10 +31102,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DCB28" = ".rodata"
-"eu:rodata/unresolved/800EE4F8" = ".rodata"
 
 [[unit]]
 path = "src/func_80433914_de.c"
@@ -31832,11 +31466,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DCB88" = ".rodata"
-"de:rodata/unresolved/800DDED8" = ".rodata"
-"eu:rodata/unresolved/800EE558" = ".rodata"
-
 [[unit]]
 path = "src/func_8043583C_de.c"
 kind = "c"
@@ -32122,10 +31751,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DCBA0" = ".rodata"
-"eu:rodata/unresolved/800EE570" = ".rodata"
 
 [[unit]]
 path = "src/func_8043612C_de.c"
@@ -33086,10 +32711,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DCC20" = ".rodata"
-"eu:rodata/unresolved/800EE5F0" = ".rodata"
-
 [[unit]]
 path = "src/func_80439F10_us_rev1.c"
 kind = "c"
@@ -33133,10 +32754,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DCC90" = ".rodata"
-"eu:rodata/unresolved/800EE660" = ".rodata"
 
 [[unit]]
 path = "src/func_8043B0CC_de.c"
@@ -33314,16 +32931,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DCE68" = ".rodata"
-"de:rodata/unresolved/800DE1E4" = ".rodata"
-"de:rodata/unresolved/800DE214" = ".rodata"
-"us-rev1:rodata/unresolved/800E2214" = ".rodata"
-"us-rev1:rodata/unresolved/800E2244" = ".rodata"
-"eu-x:rodata/unresolved/800E9A24" = ".rodata"
-"eu-x:rodata/unresolved/800E9A54" = ".rodata"
-"eu:rodata/unresolved/800EE838" = ".rodata"
-
 [[unit]]
 path = "src/func_8043C730_us_rev1.c"
 kind = "c"
@@ -33434,10 +33041,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DCF08" = ".rodata"
-"eu:rodata/unresolved/800EE8D8" = ".rodata"
-
 [[unit]]
 path = "src/func_8043D080_de.c"
 kind = "c"
@@ -33459,10 +33062,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DCF38" = ".rodata"
-"eu:rodata/unresolved/800EE908" = ".rodata"
 
 [[unit]]
 path = "src/func_8043D25C_de.c"
@@ -33508,9 +33107,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us-rev1:rodata/unresolved/800E22E8" = ".rodata"
 
 [[unit]]
 path = "src/func_8043D43C_us_rev1.c"
@@ -33997,15 +33593,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DD078" = ".rodata"
-"us:rodata/unresolved/800DD0A8" = ".rodata"
-"de:rodata/unresolved/800DE3EC" = ".rodata"
-"us-rev1:rodata/unresolved/800E241C" = ".rodata"
-"eu-x:rodata/unresolved/800E9C2C" = ".rodata"
-"eu:rodata/unresolved/800EEA48" = ".rodata"
-"eu:rodata/unresolved/800EEA78" = ".rodata"
-
 [[unit]]
 path = "src/func_8043F37C_eu.c"
 kind = "c"
@@ -34028,9 +33615,6 @@ withheld = ["eu", "eu-x"]
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DD0E0" = ".rodata"
 
 [[unit]]
 path = "src/func_8043FE3C_de.c"
@@ -34164,13 +33748,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DD1AC" = ".rodata"
-"de:rodata/unresolved/800DE4FC" = ".rodata"
-"us-rev1:rodata/unresolved/800E252C" = ".rodata"
-"eu-x:rodata/unresolved/800E9D3C" = ".rodata"
-"eu:rodata/unresolved/800EEB7C" = ".rodata"
-
 [[unit]]
 path = "src/func_80442A58_de.c"
 kind = "c"
@@ -34193,13 +33770,6 @@ toolchain = "gcc-2.8.1-sn64"
 add = []
 omit = []
 
-[unit.classes]
-"us:rodata/unresolved/800DD348" = ".rodata"
-"de:rodata/unresolved/800DE6BC" = ".rodata"
-"us-rev1:rodata/unresolved/800E26EC" = ".rodata"
-"eu-x:rodata/unresolved/800E9EFC" = ".rodata"
-"eu:rodata/unresolved/800EED18" = ".rodata"
-
 [[unit]]
 path = "src/func_80442FB0_de.c"
 kind = "c"
@@ -34210,10 +33780,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800DD378" = ".rodata"
-"eu:rodata/unresolved/800EED48" = ".rodata"
 
 [[unit]]
 path = "src/func_80443128_de.c"
@@ -35566,10 +35132,6 @@ toolchain = "gcc-2.8.1-sn64"
 [unit.options]
 add = []
 omit = []
-
-[unit.classes]
-"us:rodata/unresolved/800C5238" = ".rodata"
-"eu:rodata/unresolved/800C55B8" = ".rodata"
 
 [[unit]]
 path = "src/func_8044DCC0_de.c"
