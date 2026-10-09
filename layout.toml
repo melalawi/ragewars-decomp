@@ -35185,6 +35185,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/rodata.unresolved.800D4420.c"
+kind = "data"
+group = "code_802BA23C"
+members = ["rodata/unresolved/800D4420"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/rodata.unresolved.800F2A90.c"
 kind = "data"
 group = "code_804453C4"
