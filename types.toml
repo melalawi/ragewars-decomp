@@ -2000,7 +2000,7 @@ schema = 1
 "func_8042D060_de" = { evidence = "authored", signature = "s32 func_8042D060_de()" }
 "func_8042D118_de" = { evidence = "authored", signature = "void func_8042D118_de()" }
 "func_8042D1C8_de" = { evidence = "authored", signature = "void func_8042D1C8_de()" }
-"func_8042D28C_de" = { evidence = "declared", signature = "void func_8042D28C_de()" }
+"func_8042D28C_de" = { evidence = "landed", signature = "void func_8042D28C_de(void)" }
 "func_8042D418_de" = { evidence = "authored", signature = "void func_8042D418_de(s32 arg0)" }
 "func_8042D4CC_de" = { evidence = "declared", signature = "s32 func_8042D4CC_de(void *, s32, s32, s32, s32)" }
 "func_8042D4FC_de" = { evidence = "declared", signature = "s32 func_8042D4FC_de(void *, s32, s32, s32, s32)" }

@@ -1,5 +1,4 @@
 #include "common/unused.h"
-/* NON_MATCHING: PAL asm rows are retained after match submit refused shared C/.rodata ownership; this draft is exact in all five explicit VERSION trials. */
 #include "types.h"
 
 /* When the object D_800E53C0 points to has a target at 0x32C and its word at 0x328 set, runs
