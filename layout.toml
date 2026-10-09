@@ -30025,7 +30025,6 @@ kind = "c"
 group = "code_804251F4"
 members = ["func_804253C8_de", "rodata/func_804253C8_de/800DD848", "rodata/func_804253C8_de/800E1878", "rodata/func_804253C8_de/800E9088", "rodata/unresolved/800DC4F8", "rodata/unresolved/800EDEC8"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["eu"]
 
 [unit.options]
 add = []
