@@ -21130,13 +21130,16 @@ omit = []
 path = "src/func_802AA864_de.c"
 kind = "c"
 group = "code_802A8A94"
-members = ["func_802AA864_de"]
+members = ["func_802AA864_de", "rodata/func_802AA864_de/800C61F8", "rodata/func_802AA864_de/800C64D8", "rodata/func_802AA864_de/800CB388", "rodata/unresolved/800C6128", "rodata/unresolved/800C6498"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["de", "eu", "eu-x", "us", "us-rev1"]
 
 [unit.options]
 add = []
 omit = []
+
+[unit.classes]
+"us:rodata/unresolved/800C6128" = ".rodata"
+"eu:rodata/unresolved/800C6498" = ".rodata"
 
 [[unit]]
 path = "src/func_802AA8EC_de.c"

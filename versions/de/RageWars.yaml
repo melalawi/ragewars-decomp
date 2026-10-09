@@ -3628,6 +3628,7 @@ segments:
       - [0xC6DF0, rodata, "rodata/func_802AA7A4_de/800C61F0"]
       - [0xC6DF4, data, "rodata/unresolved/800C61F4"]
       - [0xC6DF8, rodata, "rodata/func_802AA864_de/800C61F8"]
+      - [0xC6E14, rodata, "rodata/unresolved/800C6214"]
       - [0xC6E2C, rodata, "rodata/func_802AAEE4_de/800C622C"]
       - [0xC6E40, rodata, "rodata/func_802AB1B0_de/800C6240"]
       - [0xC6E44, data, "rodata/unresolved/800C6244"]

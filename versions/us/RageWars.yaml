@@ -3603,6 +3603,7 @@ segments:
       - [0xC6D10, rodata, "rodata/func_802AA1AC_de/800C6110"]
       - [0xC6D20, rodata, "rodata/func_802AA7A4_de/800C6120"]
       - [0xC6D24, data, "rodata/unresolved/800C6124"]
+      - [0xC6D28, data, "rodata/unresolved/800C6128"]
       - [0xC6D44, rodata, "rodata/func_802AA864_de/800C6144"]
       - [0xC6D5C, rodata, "rodata/func_802AAEE4_de/800C615C"]
       - [0xC6D70, rodata, "rodata/func_802AB1B0_de/800C6170"]
