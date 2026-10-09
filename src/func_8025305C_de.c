@@ -33,8 +33,8 @@ Record *func_8025305C_de(s32 size) {
 
     allocation_size = size + 0x10;
     token = func_802BCF30_de();
-    counter = D_8010515C + 1;
-    D_8010515C = counter;
+    counter = D_8010115C + 1;
+    D_8010115C = counter;
     if (counter != 1) {
         func_802BCF50_de(token);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -43,8 +43,8 @@ Record *func_8025305C_de(s32 size) {
     }
     node = func_802548B8_de(0, allocation_size, 0x33U, &D_800C3EA8_de);
     token2 = func_802BCF30_de();
-    counter2 = D_8010515C - 1;
-    D_8010515C = counter2;
+    counter2 = D_8010115C - 1;
+    D_8010115C = counter2;
     if (counter2 != 0) {
         func_802BCF50_de(token2);
         func_802BB420_de(&D_80101140, 0, 1);
@@ -55,8 +55,8 @@ Record *func_8025305C_de(s32 size) {
     }
     if (current == 0) {
         token3 = func_802BCF30_de();
-        counter3 = D_8010515C + 1;
-        D_8010515C = counter3;
+        counter3 = D_8010115C + 1;
+        D_8010115C = counter3;
         if (counter3 != 1) {
             func_802BCF50_de(token3);
             func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -68,8 +68,8 @@ Record *func_8025305C_de(s32 size) {
         } while (func_80254B58_de(0, 0, 0) != 0);
         func_802515F0_de(0, 1);
         token4 = func_802BCF30_de();
-        counter4 = D_8010515C - 1;
-        D_8010515C = counter4;
+        counter4 = D_8010115C - 1;
+        D_8010115C = counter4;
         if (counter4 != 0) {
             func_802BCF50_de(token4);
             func_802BB420_de(&D_80101140, 0, 1);
@@ -77,8 +77,8 @@ Record *func_8025305C_de(s32 size) {
             func_802BCF50_de(token4);
         }
         token3 = func_802BCF30_de();
-        counter3 = D_8010515C + 1;
-        D_8010515C = counter3;
+        counter3 = D_8010115C + 1;
+        D_8010115C = counter3;
         if (counter3 != 1) {
             func_802BCF50_de(token3);
             func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -87,8 +87,8 @@ Record *func_8025305C_de(s32 size) {
         }
         node = func_802548B8_de(0, allocation_size, 0x33U, &D_800C3EA8_de);
         token2 = func_802BCF30_de();
-        counter2 = D_8010515C - 1;
-        D_8010515C = counter2;
+        counter2 = D_8010115C - 1;
+        D_8010115C = counter2;
         if (counter2 != 0) {
             func_802BCF50_de(token2);
             func_802BB420_de(&D_80101140, 0, 1);

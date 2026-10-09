@@ -40,9 +40,9 @@
 
 
 extern u8 D_801462E5;
-extern u8 D_801462D5;
-extern char D_80102B00[];
-extern Course *D_800E4680;
+extern u8 D_80142215;
+extern char D_800FEB00[];
+extern Course *D_800E0630;
 extern s32 D_801371D4;
 
 extern s32 func_8022F454_de(char *, s32);
@@ -52,13 +52,13 @@ extern void func_8021B1E4_de(SharedPlayer_func_8044972C_de *, s32, s32, s32);
 void func_8044972C_de(SharedPlayer_func_8044972C_de *player) {
     s32 scale;
 
-    scale = (D_80145048 >= 2) * 2;
+    scale = (D_80140F88 >= 2) * 2;
     if (D_801462E5 != 0) {
-        if (D_801462D5 == 1 && player->views1450.view1450_1.computer == 0) {
-            player->views133C.view133C_1.laps = ((u8)func_8022F454_de(D_80102B00 + player->views1C.view5D4_46.slot * 0x190, player->views5D8.view5D8_1.record->unk80) >> 1) + 1;
+        if (D_80142215 == 1 && player->views1450.view1450_1.computer == 0) {
+            player->views133C.view133C_1.laps = ((u8)func_8022F454_de(D_800FEB00 + player->views1C.view5D4_46.slot * 0x190, player->views5D8.view5D8_1.record->unk80) >> 1) + 1;
         }
-        if (D_801462D5 == 4 && player->views1450.view1450_1.computer == 0 && D_800E4680 != 0) {
-            player->views133C.view133C_1.laps = D_800E4680->laps;
+        if (D_80142215 == 4 && player->views1450.view1450_1.computer == 0 && D_800E0630 != 0) {
+            player->views133C.view133C_1.laps = D_800E0630->laps;
         }
         player->views5E8.view5EA_4.runType = 1;
     } else {

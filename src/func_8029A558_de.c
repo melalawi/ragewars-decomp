@@ -5,7 +5,7 @@
 
 
 
-extern Callback *D_8014D0B0;
+extern Callback *D_80146E30;
 extern s32 func_80299958_de(void);
 extern void func_802995D4_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4);
 extern void func_80299E80_de(Event_func_8029A558_de *arg0);
@@ -14,7 +14,7 @@ extern void func_8029A324_de(Event_func_8029A558_de *arg0);
 void func_8029A558_de(Event_func_8029A558_de *arg0) {
     s32 temp_s0;
 
-    if (D_8014D0B0->callback != 0 && D_8014D0B0->callback() == 1) {
+    if (D_80146E30->callback != 0 && D_80146E30->callback() == 1) {
         return;
     }
 

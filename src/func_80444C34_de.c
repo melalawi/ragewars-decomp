@@ -9,10 +9,10 @@
 
 
 
-extern struct Settings_func_80444BE8_de D_80146302;
+extern struct Settings_func_80444BE8_de D_80142242;
 
 s32 func_80444C34_de(void *unused, struct Holder_func_80444BE8_de *holder) {
-    struct Settings_func_80444BE8_de *settings = &D_80146302;
+    struct Settings_func_80444BE8_de *settings = &D_80142242;
 
     if (holder->owner != 0) {
         settings = holder->owner->settings;

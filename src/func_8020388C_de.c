@@ -14,7 +14,7 @@ extern void D_00203E78();
 extern void D_00202E4C();
 extern void D_00203DF0();
 
-extern f32 D_800C6B30;
+extern f32 D_800C1A40_de;
 
 void func_8020388C_de(struct Owner_func_8020388C_de *owner, struct Record_func_8020388C_de *record)
 {
@@ -29,7 +29,7 @@ void func_8020388C_de(struct Owner_func_8020388C_de *owner, struct Record_func_8
         record->fourth = D_00203DF0;
         record->rate = 0xC8;
         record->c = 0;
-        record->range = D_800C6B2C;
-        record->speed = D_800C6B30;
+        record->range = D_800C1A3C_de;
+        record->speed = D_800C1A40_de;
     }
 }

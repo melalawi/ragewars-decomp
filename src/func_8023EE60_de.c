@@ -8,7 +8,7 @@
 
 
 
-extern Reusable *D_80103FCC;
+extern Reusable *D_800FFFCC;
 
 
 
@@ -22,13 +22,13 @@ void func_8023EE60_de(Entry_func_8023EE60_de *arg0)
         do {
             Dst *dst = e->dst;
 
-            D_80103FCC->unk0 = 0;
-            D_80103FCC->unk14 = counter;
-            D_80103FCC->unk88 = 0;
-            D_80103FCC->unk9C = 0;
-            D_80103FCC->unkB0 = 0;
-            D_80103FCC->unkB4 = 0;
-            D_80103FCC->unkC4 = 0;
+            D_800FFFCC->unk0 = 0;
+            D_800FFFCC->unk14 = counter;
+            D_800FFFCC->unk88 = 0;
+            D_800FFFCC->unk9C = 0;
+            D_800FFFCC->unkB0 = 0;
+            D_800FFFCC->unkB4 = 0;
+            D_800FFFCC->unkC4 = 0;
 
             dst->unk0 = e->val0;
             dst->unk4 = e->flag0;

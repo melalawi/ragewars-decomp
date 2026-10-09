@@ -394,7 +394,7 @@ f64 func_8029BDEC_de(f64 x) {
 
 /* Returns the angle of the vector (x, y) in radians, atan2(y, x): both components within 1e-6 of zero are snapped to zero, the axes return exact multiples of pi/2, and otherwise the arctangent of |y/x| comes from the (t - 1)/(t + 1) series around pi/4, negated for a negative ratio and offset by the quadrant's term from D_800D2B60. */
 
-extern f32 D_800D2B60[4];
+extern f32 D_800CD8F0_de[4];
 
 f32 func_8029C044_de(f32 y, f32 x) {
     s32 quadrant;
@@ -438,7 +438,7 @@ f32 func_8029C044_de(f32 y, f32 x) {
         magnitude = -ratio;
     }
     if (magnitude < 1e-6f) {
-        return D_800D2B60[quadrant];
+        return D_800CD8F0_de[quadrant];
     }
     magnitude = ratio;
     if (ratio < 0.0f) {
@@ -452,5 +452,5 @@ f32 func_8029C044_de(f32 y, f32 x) {
     if (ratio < 0.0f) {
         angle = -angle;
     }
-    return angle + D_800D2B60[quadrant];
+    return angle + D_800CD8F0_de[quadrant];
 }

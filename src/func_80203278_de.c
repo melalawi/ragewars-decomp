@@ -42,10 +42,10 @@
 
 
 
-extern SharedPlayer *D_80145060;
-extern s32 D_801468C4;
-extern SharedPlayer **D_80103FCC;
-extern char D_80103FD0[];
+extern SharedPlayer *D_80140FA0;
+extern s32 D_80142804;
+extern SharedPlayer **D_800FFFCC;
+extern char D_800FFFD0[];
 
 extern f32 func_802726BC_de(Vec3 *, Vec3 *);
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
@@ -69,7 +69,7 @@ void func_80203278_de(SharedPlayer *player, Rider_func_80203278_de *rider, Resul
     nearest = 0.0f;
     best = 0;
     segment = (Segment_func_80203278_de *)(player->views18.view18_1.track + 0x14);
-    other = D_80145060;
+    other = D_80140FA0;
     if (other != 0) {
         lift = (0.5f);
         do {
@@ -78,7 +78,7 @@ void func_80203278_de(SharedPlayer *player, Rider_func_80203278_de *rider, Resul
                 enemy = 0;
                 if (player->views1C.view1D8_23.self != other && other->views5E4.view5E4_1.active != 0) {
                     enemy = 1;
-                    if (D_801468C4 != 0) {
+                    if (D_80142804 != 0) {
                         enemy = player->views1C.view1D8_23.self->views5D8.view5D8_1.record->team != other->views5D8.view5D8_1.record->team;
                     }
                 }
@@ -91,10 +91,10 @@ void func_80203278_de(SharedPlayer *player, Rider_func_80203278_de *rider, Resul
                     from.y += func_8024D284_de(player) * lift;
                     to = other->views0.view8_3.pos;
                     to.y += func_8024D284_de(other) * lift;
-                    blocked = func_802444A4_de(player, from, to, D_80103FD0);
+                    blocked = func_802444A4_de(player, from, to, D_800FFFD0);
                     valid = 1;
                     if (blocked != 0) {
-                        valid = *D_80103FCC == other;
+                        valid = *D_800FFFCC == other;
                     }
                     if (valid && (best == 0 || distance < nearest)) {
                         best = other;

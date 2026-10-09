@@ -5,7 +5,7 @@
 
 
 extern char D_801379C0;
-extern char D_8013B1A8;
+extern char D_801370E8;
 
 extern void func_80279A00_de(void *arg0);
 extern void func_80284178_de(void *);
@@ -62,7 +62,7 @@ void func_8027FF58_de(void *arg0) {
                     }
                     temp_a1 = ((Node_func_8027FF58_de *)temp_s0)->resource;
                     if (temp_a1 != 0) {
-                        func_80268C7C_de(&D_8013B1A8, temp_a1);
+                        func_80268C7C_de(&D_801370E8, temp_a1);
                         *(volatile s32 *)&((Node_func_8027FF58_de *)temp_s0)->resource = 0;
                     }
                     temp_v1_2 = ((Node_func_8027FF58_de *)temp_s0)->counter;

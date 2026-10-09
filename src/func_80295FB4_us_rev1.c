@@ -11,7 +11,7 @@ extern void func_802955EC_us_rev1(s32 resource, s32 **data);
 extern void func_802956AC_us_rev1(s32 resource, s32 **data);
 extern s32 D_800CD890;
 extern Gfx D_800D0FA0[], D_800D1020[], D_800D10A0[], D_800D1138[], D_800D11D0[];
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern s32 D_8014D070, D_8014D074, D_8014D078, D_8014D07C;
 
 
@@ -65,41 +65,41 @@ void func_80295FB4_us_rev1(s32 *output, void **resource, s32 frame, s32 secondar
         switch (info[0]) {
         case 0:
             if (changed) {
-                {      gDPSetTextureImage(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, texture);      gDPSetTile(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPLoadSync(D_80110634++);      gDPLoadBlock(D_80110634++, G_TX_LOADTILE, 0, 0, (((((1 << info[2]) * (1 << info[3]) + (1)) >> (1)) - 1) < 2047 ? ((((1 << info[2]) * (1 << info[3]) + (1)) >> (1)) - 1) : 2047), (((1 << G_TX_DXT_FRAC) + (1 > ((1) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (1)) / 8)) ? 1 : ((1) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (1)) / 8))) - 1) / (1 > ((1) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (1)) / 8)) ? 1 : ((1) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (1)) / 8)))));      gDPPipeSync(D_80110634++);      gDPSetTile(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_8b, ((1 << info[2]) + 7) >> 3, 0, G_TX_RENDERTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPSetTileSize(D_80110634++, G_TX_RENDERTILE, 0, 0, ((1 << info[2]) - 1) << 2, ((1 << info[3]) - 1) << 2); };
-                gDPSetTextureLUT(D_80110634++, G_TT_RGBA16);
+                {      gDPSetTextureImage(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, texture);      gDPSetTile(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPLoadSync(D_8010C574++);      gDPLoadBlock(D_8010C574++, G_TX_LOADTILE, 0, 0, (((((1 << info[2]) * (1 << info[3]) + (1)) >> (1)) - 1) < 2047 ? ((((1 << info[2]) * (1 << info[3]) + (1)) >> (1)) - 1) : 2047), (((1 << G_TX_DXT_FRAC) + (1 > ((1) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (1)) / 8)) ? 1 : ((1) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (1)) / 8))) - 1) / (1 > ((1) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (1)) / 8)) ? 1 : ((1) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (1)) / 8)))));      gDPPipeSync(D_8010C574++);      gDPSetTile(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_8b, ((1 << info[2]) + 7) >> 3, 0, G_TX_RENDERTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPSetTileSize(D_8010C574++, G_TX_RENDERTILE, 0, 0, ((1 << info[2]) - 1) << 2, ((1 << info[3]) - 1) << 2); };
+                gDPSetTextureLUT(D_8010C574++, G_TT_RGBA16);
             }
             if (paletteChanged) {
-                     gDPSetTextureImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, palette);      gDPTileSync(D_80110634++);      gDPSetTile(D_80110634++, 0, 0, 0, 256, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0);      gDPLoadSync(D_80110634++);      gDPLoadTLUTCmd(D_80110634++, G_TX_LOADTILE, 255);      gDPPipeSync(D_80110634++);
+                     gDPSetTextureImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, palette);      gDPTileSync(D_8010C574++);      gDPSetTile(D_8010C574++, 0, 0, 0, 256, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0);      gDPLoadSync(D_8010C574++);      gDPLoadTLUTCmd(D_8010C574++, G_TX_LOADTILE, 255);      gDPPipeSync(D_8010C574++);
             }
             break;
         case 1:
             if (changed) {
-                {      gDPSetTextureImage(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, texture);      gDPSetTile(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPLoadSync(D_80110634++);      gDPLoadBlock(D_80110634++, G_TX_LOADTILE, 0, 0, (((((1 << info[2]) * (1 << info[3]) + (3)) >> (2)) - 1) < 2047 ? ((((1 << info[2]) * (1 << info[3]) + (3)) >> (2)) - 1) : 2047), (((1 << G_TX_DXT_FRAC) + (1 > ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)) ? 1 : ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8))) - 1) / (1 > ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)) ? 1 : ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)))));      gDPPipeSync(D_80110634++);      gDPSetTile(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_4b, (((1 << info[2]) >> 1) + 7) >> 3, 0, G_TX_RENDERTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPSetTileSize(D_80110634++, G_TX_RENDERTILE, 0, 0, ((1 << info[2]) - 1) << 2, ((1 << info[3]) - 1) << 2); };
-                gDPSetTextureLUT(D_80110634++, G_TT_RGBA16);
+                {      gDPSetTextureImage(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, texture);      gDPSetTile(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPLoadSync(D_8010C574++);      gDPLoadBlock(D_8010C574++, G_TX_LOADTILE, 0, 0, (((((1 << info[2]) * (1 << info[3]) + (3)) >> (2)) - 1) < 2047 ? ((((1 << info[2]) * (1 << info[3]) + (3)) >> (2)) - 1) : 2047), (((1 << G_TX_DXT_FRAC) + (1 > ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)) ? 1 : ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8))) - 1) / (1 > ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)) ? 1 : ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)))));      gDPPipeSync(D_8010C574++);      gDPSetTile(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_4b, (((1 << info[2]) >> 1) + 7) >> 3, 0, G_TX_RENDERTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPSetTileSize(D_8010C574++, G_TX_RENDERTILE, 0, 0, ((1 << info[2]) - 1) << 2, ((1 << info[3]) - 1) << 2); };
+                gDPSetTextureLUT(D_8010C574++, G_TT_RGBA16);
             }
             if (paletteChanged) {
-                     gDPSetTextureImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, palette);      gDPTileSync(D_80110634++);      gDPSetTile(D_80110634++, 0, 0, 0, 256, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0);      gDPLoadSync(D_80110634++);      gDPLoadTLUTCmd(D_80110634++, G_TX_LOADTILE, 15);      gDPPipeSync(D_80110634++);
+                     gDPSetTextureImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, palette);      gDPTileSync(D_8010C574++);      gDPSetTile(D_8010C574++, 0, 0, 0, 256, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0);      gDPLoadSync(D_8010C574++);      gDPLoadTLUTCmd(D_8010C574++, G_TX_LOADTILE, 15);      gDPPipeSync(D_8010C574++);
             }
             break;
         case 3:
             if (changed) {
-                {      gDPSetTextureImage(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, texture);      gDPSetTile(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPLoadSync(D_80110634++);      gDPLoadBlock(D_80110634++, G_TX_LOADTILE, 0, 0, (((((1 << info[2]) * (1 << info[3]) + (3)) >> (2)) - 1) < 2047 ? ((((1 << info[2]) * (1 << info[3]) + (3)) >> (2)) - 1) : 2047), (((1 << G_TX_DXT_FRAC) + (1 > ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)) ? 1 : ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8))) - 1) / (1 > ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)) ? 1 : ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)))));      gDPPipeSync(D_80110634++);      gDPSetTile(D_80110634++, G_IM_FMT_CI, G_IM_SIZ_4b, (((1 << info[2]) >> 1) + 7) >> 3, 0, G_TX_RENDERTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPSetTileSize(D_80110634++, G_TX_RENDERTILE, 0, 0, ((1 << info[2]) - 1) << 2, ((1 << info[3]) - 1) << 2); };
-                gDPSetTextureLUT(D_80110634++, G_TT_IA16);
+                {      gDPSetTextureImage(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, texture);      gDPSetTile(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPLoadSync(D_8010C574++);      gDPLoadBlock(D_8010C574++, G_TX_LOADTILE, 0, 0, (((((1 << info[2]) * (1 << info[3]) + (3)) >> (2)) - 1) < 2047 ? ((((1 << info[2]) * (1 << info[3]) + (3)) >> (2)) - 1) : 2047), (((1 << G_TX_DXT_FRAC) + (1 > ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)) ? 1 : ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8))) - 1) / (1 > ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)) ? 1 : ((0) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (0)) / 8)))));      gDPPipeSync(D_8010C574++);      gDPSetTile(D_8010C574++, G_IM_FMT_CI, G_IM_SIZ_4b, (((1 << info[2]) >> 1) + 7) >> 3, 0, G_TX_RENDERTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPSetTileSize(D_8010C574++, G_TX_RENDERTILE, 0, 0, ((1 << info[2]) - 1) << 2, ((1 << info[3]) - 1) << 2); };
+                gDPSetTextureLUT(D_8010C574++, G_TT_IA16);
             }
             if (paletteChanged) {
-                     gDPSetTextureImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, palette);      gDPTileSync(D_80110634++);      gDPSetTile(D_80110634++, 0, 0, 0, 256, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0);      gDPLoadSync(D_80110634++);      gDPLoadTLUTCmd(D_80110634++, G_TX_LOADTILE, 15);      gDPPipeSync(D_80110634++);
+                     gDPSetTextureImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, palette);      gDPTileSync(D_8010C574++);      gDPSetTile(D_8010C574++, 0, 0, 0, 256, G_TX_LOADTILE, 0, 0, 0, 0, 0, 0, 0);      gDPLoadSync(D_8010C574++);      gDPLoadTLUTCmd(D_8010C574++, G_TX_LOADTILE, 15);      gDPPipeSync(D_8010C574++);
             }
             break;
         case 2:
             if (changed) {
-                {      gDPSetTextureImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_32b, 1, texture);      gDPSetTile(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_32b, 0, 0, G_TX_LOADTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPLoadSync(D_80110634++);      gDPLoadBlock(D_80110634++, G_TX_LOADTILE, 0, 0, (((((1 << info[2]) * (1 << info[3]) + (0)) >> (0)) - 1) < 2047 ? ((((1 << info[2]) * (1 << info[3]) + (0)) >> (0)) - 1) : 2047), (((1 << G_TX_DXT_FRAC) + (1 > ((4) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (4)) / 8)) ? 1 : ((4) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (4)) / 8))) - 1) / (1 > ((4) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (4)) / 8)) ? 1 : ((4) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (4)) / 8)))));      gDPPipeSync(D_80110634++);      gDPSetTile(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_32b, ((2 << info[2]) + 7) >> 3, 0, G_TX_RENDERTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPSetTileSize(D_80110634++, G_TX_RENDERTILE, 0, 0, ((1 << info[2]) - 1) << 2, ((1 << info[3]) - 1) << 2); };
-                gDPSetTextureLUT(D_80110634++, G_TT_NONE);
+                {      gDPSetTextureImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_32b, 1, texture);      gDPSetTile(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_32b, 0, 0, G_TX_LOADTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPLoadSync(D_8010C574++);      gDPLoadBlock(D_8010C574++, G_TX_LOADTILE, 0, 0, (((((1 << info[2]) * (1 << info[3]) + (0)) >> (0)) - 1) < 2047 ? ((((1 << info[2]) * (1 << info[3]) + (0)) >> (0)) - 1) : 2047), (((1 << G_TX_DXT_FRAC) + (1 > ((4) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (4)) / 8)) ? 1 : ((4) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (4)) / 8))) - 1) / (1 > ((4) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (4)) / 8)) ? 1 : ((4) == 0 ? ((1 << info[2]) / 16) : (((1 << info[2]) * (4)) / 8)))));      gDPPipeSync(D_8010C574++);      gDPSetTile(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_32b, ((2 << info[2]) + 7) >> 3, 0, G_TX_RENDERTILE, 0, wrapT, maskT, mode, wrapS, maskS, mode);      gDPSetTileSize(D_8010C574++, G_TX_RENDERTILE, 0, 0, ((1 << info[2]) - 1) << 2, ((1 << info[3]) - 1) << 2); };
+                gDPSetTextureLUT(D_8010C574++, G_TT_NONE);
             }
             break;
         case 4:
             if (changed) {
-                gDPPipeSync(D_80110634++);
-                gDPSetTextureImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, texture);
+                gDPPipeSync(D_8010C574++);
+                gDPSetTextureImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, texture);
                 switch (info[5]) {
                 case 2:
                 default:
@@ -109,34 +109,34 @@ void func_80295FB4_us_rev1(s32 *output, void **resource, s32 frame, s32 secondar
                     list = D_800D1138;
                     break;
                 case 1:
-                    gDPSetTextureDetail(D_80110634++, G_TD_SHARPEN);
+                    gDPSetTextureDetail(D_8010C574++, G_TD_SHARPEN);
                     list = D_800D0FA0;
                     if (wrapS & 1) list = D_800D1020;
                     break;
                 case 0:
-                    gDPSetTextureDetail(D_80110634++, G_TD_CLAMP);
+                    gDPSetTextureDetail(D_8010C574++, G_TD_CLAMP);
                     list = D_800D0FA0;
                     if (wrapS & 1) list = D_800D1020;
                     break;
                 }
-                gSPDisplayList(D_80110634++, list);
+                gSPDisplayList(D_8010C574++, list);
             }
             break;
         case 5:
             if (changed) {
-                gDPPipeSync(D_80110634++);
-                gDPSetTextureImage(D_80110634++, G_IM_FMT_I, G_IM_SIZ_16b, 1, texture);
-                gSPDisplayList(D_80110634++, D_800D11D0);
+                gDPPipeSync(D_8010C574++);
+                gDPSetTextureImage(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_16b, 1, texture);
+                gSPDisplayList(D_8010C574++, D_800D11D0);
             }
             break;
         }
     } else {
-        gDPPipeSync(D_80110634++);
+        gDPPipeSync(D_8010C574++);
     }
     switch (info[0]) {
     case 4: level = 5; tile = 0; break;
     case 5: level = 6; tile = 0; break;
     default: level = 0; tile = 0; break;
     }
-    gSPTexture(D_80110634++, scaleS, scaleT, level, tile, G_ON);
+    gSPTexture(D_8010C574++, scaleS, scaleT, level, tile, G_ON);
 }

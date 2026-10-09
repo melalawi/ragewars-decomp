@@ -14,7 +14,7 @@ extern Queue_func_802517B4_de D_80101140;
 
 
 
-extern struct Shape_func_8021A2D4_de_2 D_80105180;
+extern struct Shape_func_8021A2D4_de_2 D_80101180;
 
 extern struct Shape_func_8021A2D4_de_2 D_80101190;
 
@@ -40,8 +40,8 @@ void *func_802517B4_de(s32 arg0, s32 arg1) {
     void *object;
 
     temp_a0 = func_802BCF30_de();
-    temp_v1 = D_8010515C + 1;
-    D_8010515C = temp_v1;
+    temp_v1 = D_8010115C + 1;
+    D_8010115C = temp_v1;
     if (temp_v1 != 1) {
         func_802BCF50_de(temp_a0);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -81,13 +81,13 @@ found:
         object = *(void **)value;
         ((func_8020A028_S4 *)(object))->unk8 += 1;
         ((func_8020A028_S4 *)(object))->unkC |= 0x100;
-        ((func_8020A028_S4 *)(object))->unk10 = D_80105180.field_0;
+        ((func_8020A028_S4 *)(object))->unk10 = D_80101180.field_0;
         func_80255FB8_de(&D_80100570, object);
     }
 
     temp_v0 = func_802BCF30_de();
-    temp_v1_2 = D_8010515C - 1;
-    D_8010515C = temp_v1_2;
+    temp_v1_2 = D_8010115C - 1;
+    D_8010115C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802BCF50_de(temp_v0);
         func_802BB420_de(&D_80101140, 0, 1);

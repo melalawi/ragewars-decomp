@@ -9,7 +9,7 @@ void func_80246184_de(void *arg0) {
     float k;
 
     func_8024DD10_de(arg0);
-    k = D_800C8914;
+    k = D_800C3824_de;
     ((func_80246174_S1 *)(arg0))->unk1C = 0;
     ((func_80246174_S1 *)(arg0))->unk20 = 0;
     ((func_80246174_S1 *)(arg0))->unk24 = 0;

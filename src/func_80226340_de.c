@@ -20,8 +20,8 @@
 
 
 
-extern f32 D_800D2988;
-extern char D_80145088;
+extern f32 D_800CD738;
+extern char D_80140FC8;
 extern f32 func_80274564_de(f32);
 extern void func_802394BC_de(char *, f32, f32, f32, f32, s32, Triple);
 extern void func_802227F4_de(SharedPlayer_func_80226340_de *, SharedPlayer_func_80226340_de *, s32);
@@ -40,9 +40,9 @@ void func_80226340_de(SharedPlayer_func_80226340_de *player) {
         alpha = func_80274564_de(7.5f);
         level = (u32) alpha;
         func_802391AC_de(view, 0xFF, 0xFF, 0, 0, (u8) level, 3, 7);
-        func_802394BC_de(&D_80145088, 0.0f, 204.79999f, 0.0f, 512.0f, 0, view->position);
+        func_802394BC_de(&D_80140FC8, 0.0f, 204.79999f, 0.0f, 512.0f, 0, view->position);
     }
-    player->views1C.view1D4_21.holdTime -= D_800D2988;
+    player->views1C.view1D4_21.holdTime -= D_800CD738;
     if (player->views1C.view1D4_21.holdTime <= 0.0f || player->views5E4.view5E4_4.holding == 0) {
         owner = 0;
         if (player->views13D8.view13D8_1.held->type == 1 && (player->views13D8.view13D8_1.held->flags & 0x300000)) {
@@ -60,7 +60,7 @@ void func_80226340_de(SharedPlayer_func_80226340_de *player) {
     }
 }
 
-extern char D_800CE7E4;
+extern char D_800C95A0;
 extern f32 D_800C2B48_de[];
 
 
@@ -68,8 +68,8 @@ extern f32 D_800C2B48_de[];
 
 
 
-extern void **D_80103FCC;
-extern char D_80103FD0;
+extern void **D_800FFFCC;
+extern char D_800FFFD0;
 
 
 extern void func_802231D4_de(void *, void *, void *);
@@ -99,7 +99,7 @@ void func_80226548_de(void *arg0, void *arg1) {
     f32 *position;
     f32 temp_f1;
 
-    func_802231D4_de(arg0, arg1, &D_800CE7E4);
+    func_802231D4_de(arg0, arg1, &D_800C95A0);
     if (((func_80226524_S1 *)(arg0))->unk1210 != 0) {
         func_8021CF28_de(&sp20, arg0, &sp50, &sp30);
         if (sp50 != 0) {
@@ -107,8 +107,8 @@ void func_80226548_de(void *arg0, void *arg1) {
             if (!(D_800C2B48_de[1] < func_802726F8_de(position, &((func_8020E674_S1 *)(sp50))->unk8.v0))) {
                 if (func_802444A4_de(arg0, ((func_80226524_S1 *)(arg0))->unk8.v1,
                                      ((func_8020E674_S1 *)(sp50))->unk8.v1,
-                                     &D_80103FD0) == 0 ||
-                    *D_80103FCC == sp50) {
+                                     &D_800FFFD0) == 0 ||
+                    *D_800FFFCC == sp50) {
                     func_80271F68_de(&sp40, &((func_8020E674_S1 *)(sp50))->unk8.v1, (Vec3 *)position);
                     sp54 = func_80271AA8_de(&sp40);
                     func_80274020_de(&sp54);

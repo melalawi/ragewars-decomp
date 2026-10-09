@@ -10,7 +10,7 @@ s32 func_8020EF80_eu_x(PickupGoalObj8020EF60 *arg0) {
     s32 *key; 
 
     if (arg0->unk_68 == 0) {
-        base = &D_8013B364;
+        base = &D_801372A4;
         for (count = 29; count >= 0; count--) {
             buffer[count] = 0;
         }

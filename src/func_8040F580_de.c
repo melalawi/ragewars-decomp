@@ -13,7 +13,7 @@
 
 
 
-extern Pool_func_8040F580_de D_80153C20;
+extern Pool_func_8040F580_de D_8014D990;
 
 extern void func_80419624_de(char *data);
 
@@ -24,22 +24,22 @@ void func_8040F580_de(void) {
     s32 i;
     Slot_func_8040F580_de *slot;
 
-    for (e = 0; e < D_80153C20.count; e++) {
-        if (D_80153C20.entries[e].refCount != 0 && D_80153C20.entries[e].active != 0) {
-            for (n = 0; n < D_80153C20.entries[e].def->unkE; n++) {
-                slot = D_80153C20.entries[e].pages[n];
+    for (e = 0; e < D_8014D990.count; e++) {
+        if (D_8014D990.entries[e].refCount != 0 && D_8014D990.entries[e].active != 0) {
+            for (n = 0; n < D_8014D990.entries[e].def->unkE; n++) {
+                slot = D_8014D990.entries[e].pages[n];
                 for (i = 0; i < 0x60; i++) {
                     if (slot[i].flags & 1) {
                         func_80419624_de(slot[i].data);
                         slot[i].flags = 0;
                         slot[i].owner = 0;
-                        D_80153C20.entries[e].refCount--;
+                        D_8014D990.entries[e].refCount--;
                     }
                 }
             }
-            if (D_80153C20.entries[e].refCount == 0) {
+            if (D_8014D990.entries[e].refCount == 0) {
                 func_80411518_de(e);
-                D_80153C20.entries[e].active = 0;
+                D_8014D990.entries[e].active = 0;
             }
         }
     }

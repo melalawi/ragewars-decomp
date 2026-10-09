@@ -9,10 +9,10 @@
 
 
 
-extern Manager_func_802524B0_de D_801047E0;
+extern Manager_func_802524B0_de D_801007E0;
 
 extern char D_80106248;
-extern char D_801051A0;
+extern char D_801011A0;
 
 extern void func_802BB2A0_de(void *, void *, s32);
 extern s32 func_802BB420_de(void *, s32, s32);
@@ -30,12 +30,12 @@ extern void func_80252774_de(s32, Request_func_802524B0_de *, s32);
 
 static inline void lock(void) {
     u32 token = func_802BCF30_de();
-    s32 counter = D_8010515C + 1;
+    s32 counter = D_8010115C + 1;
 
-    D_8010515C = counter;
+    D_8010115C = counter;
     if (counter != 1) {
         func_802BCF50_de(token);
-        func_802BB2A0_de(D_801047E0.lock, 0, 1);
+        func_802BB2A0_de(D_801007E0.lock, 0, 1);
     } else {
         func_802BCF50_de(token);
     }
@@ -43,12 +43,12 @@ static inline void lock(void) {
 
 static inline void unlock(void) {
     u32 token = func_802BCF30_de();
-    s32 counter = D_8010515C - 1;
+    s32 counter = D_8010115C - 1;
 
-    D_8010515C = counter;
+    D_8010115C = counter;
     if (counter != 0) {
         func_802BCF50_de(token);
-        func_802BB420_de(D_801047E0.lock, 0, 1);
+        func_802BB420_de(D_801007E0.lock, 0, 1);
     } else {
         func_802BCF50_de(token);
     }
@@ -60,7 +60,7 @@ void func_802524B0_de(void *arg) {
     s32 flags;
 
     for (;;) {
-        func_802BB2A0_de(&D_801047E0, &request, 1);
+        func_802BB2A0_de(&D_801007E0, &request, 1);
         if ((u32)request < 2) {
             lock();
             func_80254F9C_de(0, request);
@@ -70,10 +70,10 @@ void func_802524B0_de(void *arg) {
             flags = request->flags;
             if (flags & 8) {
                 request->flags = flags & ~8;
-                if (func_802551FC_de(&D_80106248, request, &D_801047E0) == 0) {
+                if (func_802551FC_de(&D_80106248, request, &D_801007E0) == 0) {
                     lock();
-                    func_80255ED8_de(D_801047E0.active, request);
-                    func_80255CB8_de(D_801047E0.pending, request);
+                    func_80255ED8_de(D_801007E0.active, request);
+                    func_80255CB8_de(D_801007E0.pending, request);
                     node = request->node;
                     node->flags &= ~2;
                     while (node->count != 0) {
@@ -83,7 +83,7 @@ void func_802524B0_de(void *arg) {
                     }
                     if (!(node->flags & 0x702)) {
                         func_80254DD0_de(0, node);
-                        func_80255B2C_de(&D_801051A0, node->data);
+                        func_80255B2C_de(&D_801011A0, node->data);
                         func_80254AD0_de(0, node);
                     }
                     func_80254E88_de(0, request);

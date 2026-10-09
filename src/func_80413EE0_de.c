@@ -5,7 +5,7 @@
 
 
 
-extern PixelFormat D_800E2B20[];
+extern PixelFormat D_800DEAD0[];
 
 static inline u32 decode(u32 value, PixelFormat *format) {
     u32 r;
@@ -37,5 +37,5 @@ static inline u32 decode(u32 value, PixelFormat *format) {
 }
 
 u32 func_80413EE0_de(u32 value, s32 format) {
-    return decode(value, &D_800E2B20[format]);
+    return decode(value, &D_800DEAD0[format]);
 }

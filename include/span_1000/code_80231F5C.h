@@ -276,14 +276,14 @@ extern void func_80232E38_de(void *arg0);
 extern void func_802330AC_de(void *arg0, void *arg1);
 
 /* unbake published declaration: published_cc83f24c759b82850f4aca4e */
-extern float D_800C8100;
+extern float D_800C3010_de;
 
 struct func_8023292C_S1;
 /* unbake published declaration: published_daea86442eeb93eaa6573bc1 */
 typedef struct func_8023292C_S1 func_8023292C_S1;
 
 /* unbake published declaration: published_dd7ef6e462b0a4484ca4f089 */
-extern float D_800C8130;
+extern float D_800C3040_de;
 
 struct ObjectState140;
 /* unbake published declaration: published_ded5e0792b7e89b84a147ce4 */

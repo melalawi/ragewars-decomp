@@ -7,20 +7,20 @@
    or func_802998A8_de. Returns zero. */
 
 
-extern struct State_func_804232AC_de *D_800E5690;
+extern struct State_func_804232AC_de *D_800E1640_de;
 extern s32 func_8041A470_de(void *);
 extern void func_8029973C_de();
 extern void func_80298368_de(s32);
 extern void func_802998A8_de();
 
 s32 func_80436B70_de(void) {
-    switch (func_8041A470_de(D_800E5690->menu)) {
+    switch (func_8041A470_de(D_800E1640_de->menu)) {
     case 3:
         break;
     case 4:
         func_8029973C_de();
-        if (D_800E5690->value != -1) {
-            func_80298368_de(D_800E5690->value);
+        if (D_800E1640_de->value != -1) {
+            func_80298368_de(D_800E1640_de->value);
         } else {
             func_802998A8_de();
         }

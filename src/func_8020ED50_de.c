@@ -3,7 +3,7 @@
 
 
 
-extern s32 D_8013B364;
+extern s32 D_801372A4;
 
 extern s32 func_8020D1CC_de(void *arg0, s32 arg1, s32 arg2);
 extern s32 func_8020BC50_de(void *arg0, s32 arg1, s32 arg2, void *arg3);
@@ -11,7 +11,7 @@ extern s32 func_8020BC50_de(void *arg0, s32 arg1, s32 arg2, void *arg3);
 s32 func_8020ED50_de(Func8020ED50Arg *arg0) {
     s32 *base;
 
-    base = &D_8013B364;
+    base = &D_801372A4;
     if (base != 0) {
         if (arg0->field10 == -1) {
             return 1;

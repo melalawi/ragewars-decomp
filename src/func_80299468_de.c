@@ -8,7 +8,7 @@
 
 
 
-extern Manager_func_80299468_de *D_8014D080;
+extern Manager_func_80299468_de *D_80146E00;
 
 extern void func_802547E4_de(void *arg0);
 
@@ -20,25 +20,25 @@ void func_80299468_de(void) {
     s32 lowIndex;
     s32 one;
 
-    manager = D_8014D080;
+    manager = D_80146E00;
     lowIndex = manager->lowIndex;
     if (manager->index >= lowIndex) {
         one = 1;
         do {
             manager->field530 = one;
             func_80298ECC_de();
-            manager = D_8014D080;
+            manager = D_80146E00;
         } while (manager->index >= lowIndex);
     }
-    if (D_8014D080->callback != 0) {
-        D_8014D080->callback(0xE05, 0, 0, 0);
+    if (D_80146E00->callback != 0) {
+        D_80146E00->callback(0xE05, 0, 0, 0);
     }
-    if (D_8014D080->field53C != 0) {
-        func_802547E4_de(D_8014D080->field53C);
+    if (D_80146E00->field53C != 0) {
+        func_802547E4_de(D_80146E00->field53C);
     }
-    func_802547E4_de(D_8014D080->entries);
-    func_802547E4_de(D_8014D080);
-    D_8014D080 = 0;
+    func_802547E4_de(D_80146E00->entries);
+    func_802547E4_de(D_80146E00);
+    D_80146E00 = 0;
     func_8029AAAC_de();
     func_8040F568_de();
     func_80411F28_de();

@@ -13,8 +13,8 @@
 
 
 
-extern struct Block_func_8042F7A8_de *D_800E54A4;
-extern u8 D_801462D5;
+extern struct Block_func_8042F7A8_de *D_800E1454_de;
+extern u8 D_80142215;
 extern void *jtbl_800DDB80[];
 extern void func_802A2394_de();
 extern void func_802A2360_de();
@@ -38,10 +38,10 @@ s32 func_8042F7A8_de(void *arg0, void *arg1, s32 event) {
     if (event != 1) {
         return 0;
     }
-    if (D_800E54A4->phase4C == 3) {
+    if (D_800E1454_de->phase4C == 3) {
         for (i = 0; i < 4; i++) {
-            if (D_800E54A4->players[i].timer > 0 && --D_800E54A4->players[i].timer == 0) {
-                D_800E54A4->players[i].timer = -1;
+            if (D_800E1454_de->players[i].timer > 0 && --D_800E1454_de->players[i].timer == 0) {
+                D_800E1454_de->players[i].timer = -1;
                 func_802A2394_de();
                 func_80404E28_de(i);
                 func_80433610_de(i);
@@ -49,19 +49,19 @@ s32 func_8042F7A8_de(void *arg0, void *arg1, s32 event) {
             }
         }
     }
-    if (func_8043C308_de(D_800E54A4->menu) != 1) {
+    if (func_8043C308_de(D_800E1454_de->menu) != 1) {
         return 0;
     }
-    func_8043C080_de(D_800E54A4->menu);
-    func_8043C2A4_de(D_800E54A4->menu);
-    if (func_8043C308_de(D_800E54A4->menu) != 2) {
+    func_8043C080_de(D_800E1454_de->menu);
+    func_8043C2A4_de(D_800E1454_de->menu);
+    if (func_8043C308_de(D_800E1454_de->menu) != 2) {
         return 0;
     }
-    if (D_800E54A4->phase54 != 5) {
+    if (D_800E1454_de->phase54 != 5) {
         return 0;
     }
     func_8029973C_de();
-    option = D_801462D5;
+    option = D_80142215;
     if (option >= 5) {
         goto done;
     }

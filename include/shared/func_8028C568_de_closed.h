@@ -11,13 +11,13 @@ extern void func_80278C10_de(void *);
 #if defined(VERSION_EU)
 extern f32 func_802AD520_eu(s32);
 #else
-extern f32 func_802B2350(s32);
+extern f32 func_802AD280_de(s32);
 #endif
 static inline f32 recordValue(s32 id) {
 #if defined(VERSION_EU)
     return func_802AD520_eu(id);
 #else
-    return func_802B2350(id);
+    return func_802AD280_de(id);
 #endif
 }
 

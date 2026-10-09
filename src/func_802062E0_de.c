@@ -14,12 +14,12 @@
 
 
 
-extern char D_80131600;
+extern char D_8012D540;
 
 
-extern Settings D_801468A0;
-extern u8 D_801462D5;
-extern u8 *D_800E4680;
+extern Settings D_801427E0;
+extern u8 D_80142215;
+extern u8 *D_800E0630;
 extern func_80204EA8_S1 *func_8028FFD0_de(char *, void *, s32, Triple, Triple, s32, s32);
 extern void func_80216288_de(func_80204EA8_S1 *, s32, Triple, s32);
 
@@ -35,18 +35,18 @@ void func_802062E0_de(void *actor, void *owner, Params params, s32 kind) {
     Settings *settings;
 
     if (kind == 0xBD7) {
-        settings = &D_801468A0;
+        settings = &D_801427E0;
         if (settings->flag78 != 0 && settings->flag80 != 0) {
             return;
         }
     }
-    if (kind == 0x1388 && D_801462D5 == 1) {
-        kind = *D_800E4680 + 0x1388;
+    if (kind == 0x1388 && D_80142215 == 1) {
+        kind = *D_800E0630 + 0x1388;
         if (kind == 0x1388) {
             return;
         }
     }
-    node = func_8028FFD0_de(&D_80131600, &((func_802062E0_S1 *)(owner))->unk124, kind,
+    node = func_8028FFD0_de(&D_8012D540, &((func_802062E0_S1 *)(owner))->unk124, kind,
                          ((func_802062E0_S2 *)(actor))->unk1C, params.v, params.w, 0);
     if (node != 0) {
         ((func_802062E0_S3 *)(node))->unk1A0 = 0;

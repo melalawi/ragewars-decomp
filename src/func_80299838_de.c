@@ -2,7 +2,7 @@
 #include "span_1000/code_80297CD0.h"
 #include "types.h"
 
-extern s32 D_8014D080;
+extern s32 D_80146E00;
 
 
 
@@ -11,7 +11,7 @@ s32 func_80299838_de(s32 arg0)
   s32 count;
   void *ptr;
   count = 0;
-  ptr = D_8014D080 + 0x1C;
+  ptr = D_80146E00 + 0x1C;
   loop:
   if ((((func_8029A838_S1 *)(ptr))->unk0) != arg0)
   {

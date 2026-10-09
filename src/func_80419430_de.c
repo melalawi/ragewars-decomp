@@ -3,14 +3,14 @@
 
 extern void *func_802A15E4_de(int);
 extern void func_802B6CBC_de(void *, void *);
-extern struct Command *D_80110634;
+extern struct Command *D_8010C574;
 
 void func_80419430_de(void *source) {
     void *allocation = func_802A15E4_de(0x40);
     struct Command *command;
 
     func_802B6CBC_de(source, allocation);
-    command = D_80110634++;
+    command = D_8010C574++;
     command->words[0] = 0xDA380003;
     command->words[1] = (unsigned)allocation;
 }
@@ -22,7 +22,7 @@ void func_80419430_de(void *source) {
 
 
 
-extern s32 D_800E32F0;
+extern s32 D_800DF2A0;
 
 extern s32 func_80413608_de(void);
 extern void func_802A0724_de(s32 *dst, s32 *src, s32 size);
@@ -36,7 +36,7 @@ void func_80419490_de(Image_func_80419490_de *image) {
     s32 first;
     s32 second;
 
-    if (D_800E32F0 == 0 || image->width == 0 || image->height == 0) {
+    if (D_800DF2A0 == 0 || image->width == 0 || image->height == 0) {
         return;
     }
     switch (func_80413608_de()) {

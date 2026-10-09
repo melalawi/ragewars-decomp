@@ -2,7 +2,7 @@
 #include "span_1000/code_80245980.h"
 /* Applies material current and turning forces to an actor and adds their horizontal and vertical movement effects. */
 #include "types.h"
-extern f32 D_800CB430_de[],D_800D2988[];
+extern f32 D_800CB430_de[],D_800CD738[];
 extern s32 func_8024E62C_de(Actor_func_80245D30_de *);
 extern f32 func_80271AA8_de(Vec3 *);
 extern void func_80271F9C_de(Vec3 *,Vec3 *,f32),func_80271FC8_de(Vec3 *,f32,Vec3 *,Vec3 *),func_80274020_de(f32 *);
@@ -88,10 +88,10 @@ void func_80245D30_de(Actor_func_80245D30_de *arg0, Material_func_80245D30_de *a
                 }
                 targetAngle=sp34; oldAngle=sp30;
                 if (oldAngle < targetAngle) {
-                    sp30=oldAngle+((f32)arg1->strength*D_800CB430_de[1]*D_800D2988[0]*0.017453294f);
+                    sp30=oldAngle+((f32)arg1->strength*D_800CB430_de[1]*D_800CD738[0]*0.017453294f);
                     if (targetAngle<sp30) sp30=targetAngle;
                 } else {
-                    sp30=oldAngle-((f32)arg1->strength*D_800CB430_de[1]*D_800D2988[0]*0.017453294f);
+                    sp30=oldAngle-((f32)arg1->strength*D_800CB430_de[1]*D_800CD738[0]*0.017453294f);
                     if (sp30<targetAngle) sp30=targetAngle;
                 }
                 func_80274020_de(&sp30);
@@ -103,7 +103,7 @@ void func_80245D30_de(Actor_func_80245D30_de *arg0, Material_func_80245D30_de *a
         v10.y = 0.0f;
         v10.z = 0.0f;
     }
-    var_f0_2 = (f32) arg1->strength * D_800CB430_de[0] * D_800D2988[0];
+    var_f0_2 = (f32) arg1->strength * D_800CB430_de[0] * D_800CD738[0];
     var_f0_2 = ((var_f0_2 < 0.0f ? 0.0f : var_f0_2) > 1.0f ? 1.0f : (var_f0_2 < 0.0f ? 0.0f : var_f0_2));
     var_a0=&arg0->current;
     func_80271FC8_de(var_a0, var_f0_2, var_a0, &v10);

@@ -41,10 +41,10 @@ union SharedVectorBits { Triple words; Vec3 vector; };
 #include "span_C76B0/data.h"
 #include "span_1000/code_80243A80.h"
 
-extern Shared_MenuContext *D_800E2830;
-extern s32 D_800E28D0;
+extern Shared_MenuContext *D_800DE7E0;
+extern s32 D_800DE880_de;
 
-extern s32 D_800E28D4;
+extern s32 D_800DE884_de;
 extern s32 D_801377B8[2];
 void func_802A84F8_de(void);
 void func_802AAB68_de(f32 arg0, f32 arg1);

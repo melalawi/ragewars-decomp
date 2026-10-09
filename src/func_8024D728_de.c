@@ -12,7 +12,7 @@
 
 
 
-extern f32 D_80115DEC;
+extern f32 D_80111D2C;
 
 extern void func_80272018_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern void func_8027207C_de(Vec3 *arg0);
@@ -62,7 +62,7 @@ source_ready:
     result.x = axis.x * scale;
     result.y = axis.y * scale;
     result.z = axis.z * scale;
-    D_80115DEC = scale;
+    D_80111D2C = scale;
     result.w = func_802B6560_de(angle);
 
     *out = result;

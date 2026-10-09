@@ -10,8 +10,8 @@
    disables 0x3B1 from a total of 10, 0x3B4 from 6, 0x3AD from 12 and 0x3AF from 14. Written from
    the assembly. */
 
-extern NumberPadScreen *D_800E4400;
-extern s8 D_80102B0D[];
+extern NumberPadScreen *D_800E03B0_de;
+extern s8 D_800FEB0D[];
 extern s32 func_80426004_de(s32);
 extern void *func_8040EC30_de(void *, s32);
 extern void func_8040E950_de(void *, s32);
@@ -30,27 +30,27 @@ void func_80421234_de(void) {
 
     total = 0;
     for (i = 0; i < 4; i++) {
-        if (D_80102B0D[i * 400] >= 0) {
+        if (D_800FEB0D[i * 400] >= 0) {
             total += func_80426004_de(i);
         }
     }
-    if (D_800E4400->full == 1) {
+    if (D_800E03B0_de->full == 1) {
         total = 40;
     }
-    func_8040E950_de(func_8040EC30_de(D_800E4400->window, MENU_804212A4_948), 1);
-    func_8040E950_de(func_8040EC30_de(D_800E4400->window, MENU_804212A4_945), 1);
-    func_8040E950_de(func_8040EC30_de(D_800E4400->window, MENU_804212A4_941), 1);
-    func_8040E950_de(func_8040EC30_de(D_800E4400->window, MENU_804212A4_943), 1);
+    func_8040E950_de(func_8040EC30_de(D_800E03B0_de->window, MENU_804212A4_948), 1);
+    func_8040E950_de(func_8040EC30_de(D_800E03B0_de->window, MENU_804212A4_945), 1);
+    func_8040E950_de(func_8040EC30_de(D_800E03B0_de->window, MENU_804212A4_941), 1);
+    func_8040E950_de(func_8040EC30_de(D_800E03B0_de->window, MENU_804212A4_943), 1);
     if (total >= 10) {
-        func_8040E950_de(func_8040EC30_de(D_800E4400->window, MENU_804212A4_945), 0);
+        func_8040E950_de(func_8040EC30_de(D_800E03B0_de->window, MENU_804212A4_945), 0);
     }
     if (total >= 6) {
-        func_8040E950_de(func_8040EC30_de(D_800E4400->window, MENU_804212A4_948), 0);
+        func_8040E950_de(func_8040EC30_de(D_800E03B0_de->window, MENU_804212A4_948), 0);
     }
     if (total >= 12) {
-        func_8040E950_de(func_8040EC30_de(D_800E4400->window, MENU_804212A4_941), 0);
+        func_8040E950_de(func_8040EC30_de(D_800E03B0_de->window, MENU_804212A4_941), 0);
     }
     if (total >= 14) {
-        func_8040E950_de(func_8040EC30_de(D_800E4400->window, MENU_804212A4_943), 0);
+        func_8040E950_de(func_8040EC30_de(D_800E03B0_de->window, MENU_804212A4_943), 0);
     }
 }

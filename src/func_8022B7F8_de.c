@@ -10,7 +10,7 @@
 
 
 
-extern Game_func_8022B7F8_de D_80145088;
+extern Game_func_8022B7F8_de D_80140FC8;
 extern void *D_800D31B4_de[];
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern void *D_800E1144[];
@@ -23,7 +23,7 @@ extern void *D_800E1154[];
 extern void *D_800D31C0[];
 #endif
 #else
-extern char D_80145088;
+extern char D_80140FC8;
 extern void *D_800D31B4_de;
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern void *D_800E1144;
@@ -71,13 +71,13 @@ void func_8022B7F8_de(void *arg0, void *arg1) {
     }
 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-    game = &D_80145088;
+    game = &D_80140FC8;
     settings = &game->settings;
 #endif
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
     func_80237E80_de(game, owner, D_800D31B4_de[settings->language]);
 #else
-    func_80237E80_de(&D_80145088, owner, D_800D31B4_de);
+    func_80237E80_de(&D_80140FC8, owner, D_800D31B4_de);
 #endif
     if (source == 0) {
         return;
@@ -107,19 +107,19 @@ void func_8022B7F8_de(void *arg0, void *arg1) {
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
     func_80237E80_de(game, ((func_8022B7E8_S1 *)(state))->unk5DC, payload);
 #else
-    func_80237E80_de(&D_80145088, ((func_8022B7E8_S1 *)(state))->unk5DC, payload);
+    func_80237E80_de(&D_80140FC8, ((func_8022B7E8_S1 *)(state))->unk5DC, payload);
 #endif
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
     func_80237E80_de(game, ((func_8022B7E8_S1 *)(state))->unk5DC, D_800E1154[settings->language]);
 #else
-    func_80237E80_de(&D_80145088, ((func_8022B7E8_S1 *)(state))->unk5DC, D_800E1154);
+    func_80237E80_de(&D_80140FC8, ((func_8022B7E8_S1 *)(state))->unk5DC, D_800E1154);
 #endif
 #else
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
     func_80237E80_de(game, ((func_8022B7E8_S1 *)(state))->unk5DC, D_800D31C0[settings->language]);
 #else
-    func_80237E80_de(&D_80145088, ((func_8022B7E8_S1 *)(state))->unk5DC, D_800D31C0);
+    func_80237E80_de(&D_80140FC8, ((func_8022B7E8_S1 *)(state))->unk5DC, D_800D31C0);
 #endif
 #endif
 }

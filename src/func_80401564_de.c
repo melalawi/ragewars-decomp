@@ -13,7 +13,7 @@
 
 
 
-extern func_80203E78_S1 *D_800E2830;
+extern func_80203E78_S1 *D_800DE7E0;
 
 extern s32 *func_8028FDB4_de(s32 resource, s32 index);
 extern void func_80271F9C_de(Vec3 *out, Vec3 *in, f32 scale);
@@ -28,7 +28,7 @@ Vec3 func_80401564_de(f32 t) {
     Vec3 a;
     Vec3 b;
 
-    track = func_8028FDB4_de(D_800E2830->unk4, 1);
+    track = func_8028FDB4_de(D_800DE7E0->unk4, 1);
     count = track[1];
     key = (Key_func_80401564_de *)(track + 2);
     if (count == 0) {

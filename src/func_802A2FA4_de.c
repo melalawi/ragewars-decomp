@@ -7,7 +7,7 @@
 
 
 
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 
 
 
@@ -30,12 +30,12 @@ s32 func_802A2FA4_de(s32 arg0, State_func_802A2FA4_de *state) {
     f32 value;
     f32 updated;
 
-    saved_step = D_800D2988;
+    saved_step = D_800CD738;
     if (state->flags & 2) {
-        D_800D2988 = saved_step * D_800CD740_de;
+        D_800CD738 = saved_step * D_800CD740_de;
     }
     if (state->flags & 1) {
-        D_800D2988 *= ((D_800C7470_Pair *)&D_800D2988)->second;
+        D_800CD738 *= ((D_800C7470_Pair *)&D_800CD738)->second;
     }
     if (state->flags & 8) {
         state->retries++;
@@ -45,9 +45,9 @@ s32 func_802A2FA4_de(s32 arg0, State_func_802A2FA4_de *state) {
     }
 
     if (state->count_up >= 0.0f) {
-        state->total += D_800D2988;
+        state->total += D_800CD738;
     }
-    state->timer -= D_800D2988;
+    state->timer -= D_800CD738;
     if (state->timer < 0.0f) {
         state->timer = 0.0f;
     }
@@ -70,7 +70,7 @@ s32 func_802A2FA4_de(s32 arg0, State_func_802A2FA4_de *state) {
                     func_802A5780_de(arg0, state, node);
                 }
             } else {
-                updated = value - D_800D2988;
+                updated = value - D_800CD738;
                 node->value = updated;
                 if (updated < zero) {
                     node->value = zero;
@@ -84,7 +84,7 @@ s32 func_802A2FA4_de(s32 arg0, State_func_802A2FA4_de *state) {
         !(((func_80207F90_S1 *)(state->object))->unk100 & 0x200)) {
         func_802A5FF0_de(state);
     }
-    D_800D2988 = saved_step;
+    D_800CD738 = saved_step;
 
     if (state->active == 0) {
         if (state->timer != 0.0f) {

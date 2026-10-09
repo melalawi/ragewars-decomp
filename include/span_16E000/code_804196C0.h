@@ -60,7 +60,7 @@ struct Object_func_80419F58_de {
 };
 
 /* unbake published declaration: published_137f6ced39d1425f5bcc049e */
-extern float D_800E1470;
+extern float D_800DD440_de;
 
 struct FrameSequence_func_804199DC_de;
 /* unbake published declaration: published_15eebe4e0389b029a05a1151 */
@@ -83,7 +83,7 @@ extern void func_8041A400_de();
 extern s32 func_80419F9C_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4);
 
 /* unbake published declaration: published_2841aaefce60f88bceda7422 */
-extern float D_800E1474;
+extern float D_800DD444_de;
 
 struct Animation;
 /* unbake published declaration: published_297e9dc51cb52156c45a661d */

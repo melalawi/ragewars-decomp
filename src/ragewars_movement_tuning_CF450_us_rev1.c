@@ -10,6 +10,6 @@ struct PlayerMovementTuning {
     float vertical_limit;
     float vertical_impulse;
 };
-struct PlayerMovementTuning D_800CE850 = {
+struct PlayerMovementTuning D_800C960C = {
     2.0480001f, 15.3599997f, 1.02400005f, 20.4799995f, 1.53600001f, 20.4799995f, 153.599991f, 102.399994f
 };

@@ -54,7 +54,7 @@ struct Texture {
 extern void func_80419608_de();
 
 /* unbake published declaration: published_6308e39fc7f32eced2bd68e1 */
-extern int D_80153F68;
+extern int D_8014DCD8;
 
 /* unbake published declaration: published_658fcbb01a1ea5da261d23a4 */
 extern float D_800DD410_de;

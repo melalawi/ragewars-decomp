@@ -88,9 +88,9 @@ int func_8020993C_de(void *arg0) {
 
 s32 func_802726F8_de(f32 *, f32 *);
 extern f32 *func_8020C994_de(void *, s32);
-extern s32 D_8013B364;
+extern s32 D_801372A4;
 void func_80209948_de(struct TargetPositionRef *arg0, s32 arg1) {
-    func_802726F8_de(arg0->target->position, func_8020C994_de(&D_8013B364, arg1));
+    func_802726F8_de(arg0->target->position, func_8020C994_de(&D_801372A4, arg1));
 }
 
 /** Reset three state words and set the final state to one. */
@@ -109,8 +109,8 @@ void func_8020999C_de(void *arg0) {
     ((func_8020999C_S1 *)(arg0))->unk310 = 0;
 }
 
-extern char D_80103FD0;
-extern void **D_80103FCC;
+extern char D_800FFFD0;
+extern void **D_800FFFCC;
 
 extern s32 func_802444A4_de(void *arg0, Vec3 arg1, Vec3 arg2, void *arg3);
 
@@ -126,8 +126,8 @@ s32 func_802099B4_de(void **arg0, void *arg1) {
     second = ((Player *)(arg1))->pos;
     first.y += D_800C1C8C_de;
     second.y += D_800C1C8C_de;
-    if (func_802444A4_de(*arg0, first, second, &D_80103FD0) != 0) {
-        return *D_80103FCC == arg1;
+    if (func_802444A4_de(*arg0, first, second, &D_800FFFD0) != 0) {
+        return *D_800FFFCC == arg1;
     }
     return 1;
 }

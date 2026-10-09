@@ -5,6 +5,6 @@
 
 
 void func_80239D00_de(void *arg0, float arg1, int arg2) {
-    ((func_80239CF0_S1 *)(arg0))->unk4 = arg1 * (D_800C8658);
+    ((func_80239CF0_S1 *)(arg0))->unk4 = arg1 * (D_800C3568_de);
     ((func_80239CF0_S1 *)(arg0))->unk0 = arg2;
 }

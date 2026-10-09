@@ -13,7 +13,7 @@
 
 
 
-extern Pool_func_80411518_de D_80153C20;
+extern Pool_func_80411518_de D_8014D990;
 
 extern void func_80419624_de(char *data);
 extern void func_802547E4_de(void *buffer);
@@ -23,8 +23,8 @@ void func_80411518_de(s32 index) {
     s32 i;
     Slot_func_80411518_de *slot;
 
-    for (n = 0; n < D_80153C20.entries[index].def->unkE; n++) {
-        slot = D_80153C20.entries[index].ns[n];
+    for (n = 0; n < D_8014D990.entries[index].def->unkE; n++) {
+        slot = D_8014D990.entries[index].ns[n];
         for (i = 0; i < 0x60; i++) {
             if (slot[i].flags & 1) {
                 func_80419624_de(slot[i].data);
@@ -32,12 +32,12 @@ void func_80411518_de(s32 index) {
             }
         }
     }
-    if (D_80153C20.entries[index].buffers[0] != 0) {
-        func_802547E4_de(D_80153C20.entries[index].buffers[0]);
-        D_80153C20.entries[index].buffers[0] = 0;
+    if (D_8014D990.entries[index].buffers[0] != 0) {
+        func_802547E4_de(D_8014D990.entries[index].buffers[0]);
+        D_8014D990.entries[index].buffers[0] = 0;
         for (n = 0; n < 0x60; n++) {
-            D_80153C20.entries[index].buffers[n] = 0;
+            D_8014D990.entries[index].buffers[n] = 0;
         }
     }
-    D_80153C20.entries[index].active = 0;
+    D_8014D990.entries[index].active = 0;
 }

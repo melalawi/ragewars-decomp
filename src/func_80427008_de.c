@@ -9,8 +9,8 @@
 
 
 
-extern struct Screen_func_80427008_de *D_800E4690;
-extern struct Record_func_80427008_de D_80102B00[];
+extern struct Screen_func_80427008_de *D_800E0640_de;
+extern struct Record_func_80427008_de D_800FEB00[];
 
 
 extern void func_80265688_de(u8 *, s32, s32);
@@ -22,36 +22,36 @@ void func_80427008_de(void) {
 
     i = 0;
     do {
-        func_80265688_de(D_800E4690->shown, i, 0);
-        func_80265688_de(D_800E4690->marked, i, 0);
+        func_80265688_de(D_800E0640_de->shown, i, 0);
+        func_80265688_de(D_800E0640_de->marked, i, 0);
         i++;
     } while (i < 36);
-    switch (D_801462D5) {
+    switch (D_80142215) {
     case 1:
         i = 0;
         do {
-            func_80265688_de(D_800E4690->shown, i, func_80265650_de(D_80102B00[D_800E4690->record].single, i));
+            func_80265688_de(D_800E0640_de->shown, i, func_80265650_de(D_800FEB00[D_800E0640_de->record].single, i));
             i++;
         } while (i < 36);
         break;
     case 2:
         i = 0;
         do {
-            func_80265688_de(D_800E4690->shown, i, func_80265650_de(D_80102B00[D_800E4690->record].versus, i));
+            func_80265688_de(D_800E0640_de->shown, i, func_80265650_de(D_800FEB00[D_800E0640_de->record].versus, i));
             i++;
         } while (i < 36);
         break;
     case 3:
         i = 0;
         do {
-            func_80265688_de(D_800E4690->shown, i, func_80265650_de(D_80102B00[D_800E4690->record].three, i));
+            func_80265688_de(D_800E0640_de->shown, i, func_80265650_de(D_800FEB00[D_800E0640_de->record].three, i));
             i++;
         } while (i < 36);
         break;
     case 4:
         i = 0;
         do {
-            func_80265688_de(D_800E4690->shown, i, func_80265650_de(D_80102B00[D_800E4690->record].four, i));
+            func_80265688_de(D_800E0640_de->shown, i, func_80265650_de(D_800FEB00[D_800E0640_de->record].four, i));
             i++;
         } while (i < 36);
         break;

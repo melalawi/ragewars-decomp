@@ -1,6 +1,6 @@
 #include "span_16E000/code_80400000.h"
 extern int D_800DE7E8;
-extern unsigned char *D_80145060;
+extern unsigned char *D_80140FA0;
 extern void func_804030E0_de(int);
 static inline int test_bit(unsigned char *bits, int index) {
     int offset = index >> 3;
@@ -19,7 +19,7 @@ static inline void set_bit(unsigned char *bits, int index) {
     *bits |= mask << index;
 }
 void func_804037E8_de(int event) {
-    unsigned char *bits = D_80145060;
+    unsigned char *bits = D_80140FA0;
     int index;
     if (D_800DE7E8 != 0) {
         index = event - 0x259;

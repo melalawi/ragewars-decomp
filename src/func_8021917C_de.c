@@ -9,7 +9,7 @@ s32 func_8021917C_de(void *arg0, void *arg1) {
     }
     return 0;
 }
-extern s32 D_801468C4;
+extern s32 D_80142804;
 extern void func_80219124_de(void *arg0, s32 arg1, void *arg2);
 extern s32 func_80218988_de(void *arg0);
 void func_802191B8_de(char *arg0, void *arg1) {
@@ -21,7 +21,7 @@ void func_802191B8_de(char *arg0, void *arg1) {
     flags = ((struct func_8021846C_S3 *) ((ObjectLinks11BC *) arg1)->unk_698)->unkB0 & 0x8000;
     state = *(s32 *)arg0;
     if ((state == 0) || (state == 3)) {
-        if ((D_801468C4 != 0) &&
+        if ((D_80142804 != 0) &&
             (((struct Record *) ((ObjectLinks11BC *) arg1)->unk_5D8)->team == 0xFF)) {
             func_80219124_de((void *)arg0, flags, arg1);
             *(s32 *)arg0 = 1;

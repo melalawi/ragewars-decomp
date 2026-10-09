@@ -8,8 +8,8 @@
 extern f32 func_802AD520_eu(s32);
 #define RW_BITS_TO_FLOAT func_802AD520_eu
 #else
-extern f32 func_802B2350(s32);
-#define RW_BITS_TO_FLOAT func_802B2350
+extern f32 func_802AD280_de(s32);
+#define RW_BITS_TO_FLOAT func_802AD280_de
 #endif
 
 #endif

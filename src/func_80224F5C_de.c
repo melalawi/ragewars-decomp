@@ -46,9 +46,9 @@
 
 
 
-extern Tuning D_800CE850;
-extern char D_800CE874;
-extern f32 D_800D2988;
+extern Tuning D_800C960C;
+extern char D_800C9630_de;
+extern f32 D_800CD738;
 extern void func_802231D4_de(SharedPlayer_func_80224F5C_de *, Body_func_80224F5C_de *, char *);
 extern f32 func_802B7130_de(f32);
 extern void func_802238E0_de(SharedPlayer_func_80224F5C_de *, Body_func_80224F5C_de *, Tuning *);
@@ -65,11 +65,11 @@ void func_80224F5C_de(SharedPlayer_func_80224F5C_de *player, Body_func_80224F5C_
     } else {
         player->views5E8.view650_18.mode = 0xC;
     }
-    func_802231D4_de(player, body, &D_800CE874);
+    func_802231D4_de(player, body, &D_800C9630_de);
     player->views5E8.view730_79.sway[0] = 2.0f * func_802B7130_de(player->views5E8.view658_24.swimTime * 0.06981318f) * 0.017453294f;
     player->views5E8.view730_79.sway[1] = 2.0f * func_802B7130_de(player->views5E8.view658_24.swimTime * 0.08726647496f) * 0.017453294f;
     player->views5E8.view730_79.sway[2] = 2.0f * func_802B7130_de(player->views5E8.view658_24.swimTime * 0.10471976548f) * 0.017453294f;
-    func_802238E0_de(player, body, &D_800CE850);
+    func_802238E0_de(player, body, &D_800C960C);
     if (!(body->flags & 0x1000) && 2.0f < player->views5E8.view658_24.swimTime) {
         func_80218464_de(player->views5E8.view938_129.strokes);
         body->stroke = 0;
@@ -85,7 +85,7 @@ void func_80224F5C_de(SharedPlayer_func_80224F5C_de *player, Body_func_80224F5C_
     if (player->views5E8.view86C_127.animation == 0x1144) {
         idle = player->views1C.view10E_13.idle == 0;
     }
-    if (player->views1C.viewE4_7.kind == D_800CE47C) {
+    if (player->views1C.viewE4_7.kind == D_800C922C) {
         player->views5E8.view86C_127.animation = 0x8A2;
     } else if (!idle) {
         if (1.024f <= player->views5E8.view6C0_52.climb) {
@@ -96,10 +96,10 @@ void func_80224F5C_de(SharedPlayer_func_80224F5C_de *player, Body_func_80224F5C_
             player->views5E8.view86C_127.animation = 0x14;
         }
     }
-    player->views5E8.view11C4_144.soundTime += D_800D2988;
+    player->views5E8.view11C4_144.soundTime += D_800CD738;
     if (5.12f < player->views5E8.view6C8_57.speed && 45.0f < player->views5E8.view11C4_144.soundTime) {
         player->views5E8.view11C4_144.soundTime = func_80274564_de(15.0f);
-        func_8025DE54_de(D_800CE850.strokeSound, body->x, body->y, body->z, 0, -1);
+        func_8025DE54_de(D_800C960C.strokeSound, body->x, body->y, body->z, 0, -1);
         func_8025DE54_de(0x2E0, body->x, body->y, body->z, 0, -1);
     }
 }

@@ -2,7 +2,7 @@
 #include "span_1000/code_802AB3FC.h"
 #include "types.h"
 
-extern char D_800D34C0;
+extern char D_800CE1E0_de;
 
 
 
@@ -11,7 +11,7 @@ void *func_802AD0B0_de(s32 arg0) {
     char *v1;
     s32 i;
 
-    v1 = &D_800D34C0;
+    v1 = &D_800CE1E0_de;
     i = 0xF;
     do {
         i -= 1;

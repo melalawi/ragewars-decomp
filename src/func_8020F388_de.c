@@ -2,7 +2,7 @@
 #include "span_1000/code_8020EAE0.h"
 #include "types.h"
 
-extern s32 D_8013B364;
+extern s32 D_801372A4;
 
 extern void func_8020D014_de(void *arg0);
 extern void func_8020D1FC_de(s32);
@@ -23,7 +23,7 @@ s32 func_8020F388_de(void *arg0) {
     s32 value;
     s32 current;
 
-    global = &D_8013B364;
+    global = &D_801372A4;
     func_8020D014_de(global);
     func_8020D1FC_de((s32)global);
     count = 29;

@@ -489,7 +489,7 @@ extern void func_8022D49C_de(void);
 extern float D_800C2DB8_de;
 
 /* unbake published declaration: published_48d8cae4d4b9969dff41f338 */
-extern float D_800C7E9C;
+extern float D_800C2DAC_de;
 
 struct func_8022D49C_S1;
 /* unbake published declaration: published_4b3b8b236245b738535c169d */
@@ -514,13 +514,13 @@ struct func_8022D154_S1;
 typedef struct func_8022D154_S1 func_8022D154_S1;
 
 /* unbake published declaration: published_65f9b5dba4f6e26a34c12d37 */
-extern float D_800C7E90;
+extern float D_800C2DA0_de;
 
 /* unbake published declaration: published_6ac2955a15a1f10ed1ab4319 */
 extern float D_800C2D88_de;
 
 /* unbake published declaration: published_6d2a5d95fae2c81794a732a2 */
-extern float D_800C7E94;
+extern float D_800C2DA4_de;
 
 /* unbake published declaration: published_708d9ab9ca2af2ba8022e7b4 */
 extern float D_800C2D8C_de;
@@ -691,7 +691,7 @@ struct func_8022CF28_S2;
 typedef struct func_8022CF28_S2 func_8022CF28_S2;
 
 /* unbake published declaration: published_e51a5c6dacd5cd662dbc9c75 */
-extern float D_800C7E98;
+extern float D_800C2DA8_de;
 
 struct func_8022C8EC_S1;
 /* unbake published declaration: published_ebcb9263b272cace90c0ba19 */

@@ -10,7 +10,7 @@ typedef struct CollisionInfo CollisionInfo;
 
 
 extern CollisionInfo D_80100030;
-extern Instance8020CD74 *D_801041F0;
+extern Instance8020CD74 *D_801001F0;
 extern f32 func_8024D284_de(Instance8020CD74 *arg0);
 extern s32 func_802444A4_de(Instance8020CD74 *arg0, Vec3 current, Vec3 desired, CollisionInfo *arg3);
 
@@ -35,7 +35,7 @@ s32 func_80216BF4_de(Instance8020CD74 *arg0, void *unused, Instance8020CD74 *tar
     desired.y += ((Actor_func_80214310_de *)(target))->eye;
 
     collisions = func_802444A4_de(arg0, ((Player *)(arg0))->pos, desired, &D_80100030);
-    if (D_801041F0 == target)
+    if (D_801001F0 == target)
         collisions = 0;
 
     *arg0 = saved;

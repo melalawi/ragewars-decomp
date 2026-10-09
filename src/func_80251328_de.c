@@ -8,12 +8,12 @@
 
 
 
-extern Node_func_80251328_de *D_80104574;
+extern Node_func_80251328_de *D_80100574;
 extern Node_func_80251328_de *D_80100568;
 extern Node_func_80251328_de **D_80100564;
-extern s32 D_8010513C;
-extern s32 D_80105180;
-extern char D_801051A0;
+extern s32 D_8010113C;
+extern s32 D_80101180;
+extern char D_801011A0;
 extern char D_80100570;
 extern char D_80100584;
 extern void func_80254DD0_de(void *, Node_func_80251328_de *);
@@ -23,9 +23,9 @@ extern void func_80255ED8_de(void *, Node_func_80251328_de *);
 static inline Node_func_80251328_de *find_stale(Node_func_80251328_de **recent) {
     Node_func_80251328_de *node;
 
-    for (node = D_80104574; node != 0; node = node->next) {
+    for (node = D_80100574; node != 0; node = node->next) {
         if (!(node->flags & 0x702)) {
-            if ((u32)(D_80105180 - node->lastUsed) >= 5) {
+            if ((u32)(D_80101180 - node->lastUsed) >= 5) {
                 return node;
             }
             *recent = node;
@@ -33,7 +33,7 @@ static inline Node_func_80251328_de *find_stale(Node_func_80251328_de **recent) 
         }
     }
     for (; node != 0; node = node->next) {
-        if (!(node->flags & 0x702) && (u32)(D_80105180 - node->lastUsed) >= 5) {
+        if (!(node->flags & 0x702) && (u32)(D_80101180 - node->lastUsed) >= 5) {
             return node;
         }
     }
@@ -54,7 +54,7 @@ s32 func_80251328_de(s32 unused0, s32 unused1, s32 keep_recent) {
     }
     if (node != 0) {
         func_80254DD0_de(0, node);
-        result = func_80255B2C_de(&D_801051A0, node->resource);
+        result = func_80255B2C_de(&D_801011A0, node->resource);
         func_80255ED8_de(&D_80100570, node);
         if (node->flags & 0x1000) {
             func_80255ED8_de(&D_80100584, node);
@@ -65,8 +65,8 @@ s32 func_80251328_de(s32 unused0, s32 unused1, s32 keep_recent) {
         } else {
             node->flags = 0;
         }
-        *(Node_func_80251328_de **)(D_8010513C * 4 + (char *)D_80100564) = node;
-        D_8010513C++;
+        *(Node_func_80251328_de **)(D_8010113C * 4 + (char *)D_80100564) = node;
+        D_8010113C++;
         return result;
     }
     return 0;

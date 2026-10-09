@@ -8,7 +8,7 @@
 
 
 
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_80271F9C_de(void *, void *, f32);
 extern f32 func_802B7130_de(f32);
@@ -48,14 +48,14 @@ void func_80279DD0_de(void *arg0, f32 arg1) {
         sp10.y = D_800C4B44_de;
         func_80272018_de(&sp20, &sp10, (Vec3 *)&sp30);
         func_80271F9C_de(&sp40, &sp20, func_802B7130_de(((Shared_Particle *)arg0)->phaseA) * ((Shared_Particle *)arg0)->amplitudeA * var_f20);
-        temp_f12 = ((Shared_Particle *)arg0)->phaseA + (((Shared_Particle *)arg0)->phaseSpeedA * var_f20 * D_800D2988);
+        temp_f12 = ((Shared_Particle *)arg0)->phaseA + (((Shared_Particle *)arg0)->phaseSpeedA * var_f20 * D_800CD738);
         ((Shared_Particle *)arg0)->phaseA = temp_f12;
         func_80271F9C_de(&sp50, &sp20, func_802B7130_de(temp_f12) * ((Shared_Particle *)arg0)->amplitudeA * var_f20);
         temp_s0 = &((Shared_Particle *)arg0)->inst.velocity;
         func_80271F68_de(temp_s0, temp_s0, &sp40);
         func_80271F34_de((Vec3 *) temp_s0, (Vec3 *) temp_s0, (Vec3 *) &sp50);
     } else {
-        ((Shared_Particle *)arg0)->phaseA = (f32) (((Shared_Particle *)arg0)->phaseA + (((Shared_Particle *)arg0)->phaseSpeedA * var_f20 * D_800D2988));
+        ((Shared_Particle *)arg0)->phaseA = (f32) (((Shared_Particle *)arg0)->phaseA + (((Shared_Particle *)arg0)->phaseSpeedA * var_f20 * D_800CD738));
     }
     if (((Shared_Particle *)arg0)->amplitudeB > 0.0f) {
         sp10.x = 0.0f;
@@ -64,13 +64,13 @@ void func_80279DD0_de(void *arg0, f32 arg1) {
         func_80272018_de(&sp60, &sp10, (Vec3 *)&sp30);
         func_80272018_de(&sp20, &sp60, (Vec3 *)&sp30);
         func_80271F9C_de(&sp40, &sp20, func_802B7130_de(((Shared_Particle *)arg0)->phaseB) * ((Shared_Particle *)arg0)->amplitudeB * var_f20);
-        temp_f12_2 = ((Shared_Particle *)arg0)->phaseB + (((Shared_Particle *)arg0)->phaseSpeedB * var_f20 * D_800D2988);
+        temp_f12_2 = ((Shared_Particle *)arg0)->phaseB + (((Shared_Particle *)arg0)->phaseSpeedB * var_f20 * D_800CD738);
         ((Shared_Particle *)arg0)->phaseB = temp_f12_2;
         func_80271F9C_de(&sp50, &sp20, func_802B7130_de(temp_f12_2) * ((Shared_Particle *)arg0)->amplitudeB * var_f20);
         func_80271F68_de(&((Shared_Particle *)arg0)->inst.velocity, &((Shared_Particle *)arg0)->inst.velocity, &sp40);
         func_80271F34_de(&((Shared_Particle *)arg0)->inst.velocity, &((Shared_Particle *)arg0)->inst.velocity, &sp50);
         return;
     }
-    ((Shared_Particle *)arg0)->phaseB = (f32) (((Shared_Particle *)arg0)->phaseB + (((Shared_Particle *)arg0)->phaseSpeedB * var_f20 * D_800D2988));
+    ((Shared_Particle *)arg0)->phaseB = (f32) (((Shared_Particle *)arg0)->phaseB + (((Shared_Particle *)arg0)->phaseSpeedB * var_f20 * D_800CD738));
 }
 

@@ -41,7 +41,7 @@
 
 
 
-extern WeaponInfo *D_800D052C[];
+extern WeaponInfo *D_800CB2EC[];
 extern char D_8011D8D0[];
 
 extern void func_802100E0_de(Brain_func_8020FDB0_de *);
@@ -83,14 +83,14 @@ void func_8020FDB0_de(Brain_func_8020FDB0_de *brain, s32 *ammo) {
                 brain->player->views5D8.view5D8_1.record->unk93 = 0;
                 break;
             }
-            if (*D_800D052C[weapon]->weaponClass == 1) {
+            if (*D_800CB2EC[weapon]->weaponClass == 1) {
                 continue;
             }
             if (weapon == 6) {
                 weapon = 5;
             }
         second:
-            if (*D_800D052C[weapon]->weaponClass == 2) {
+            if (*D_800CB2EC[weapon]->weaponClass == 2) {
                 continue;
             }
         }

@@ -39,7 +39,7 @@ void func_8022EA3C_de(void *arg0, void *arg1) {
 void func_8022EB04_de(void) {
 }
 
-extern void *D_800D052C[];
+extern void *D_800CB2EC[];
 extern char D_8011D8D0;
 extern s32 func_80283228_de(void *, s32);
 
@@ -59,7 +59,7 @@ s32 func_8022EB0C_de(void *arg0, s32 arg1) {
     char *indexed;
     s32 offset;
 
-    entry = D_800D052C[arg1];
+    entry = D_800CB2EC[arg1];
     {
         static void *sw_arg1_labels[0] __attribute__((section(".sdata"))) = {
             &&sw_arg1_1, &&sw_arg1_2, &&sw_arg1_5, &&sw_arg1_6, &&sw_arg1_7, &&sw_arg1_8, &&sw_arg1_9, &&sw_arg1_10, &&sw_arg1_11, &&sw_arg1_13, &&sw_arg1_14, &&sw_arg1_15, &&sw_arg1_3, &&sw_arg1_4, &&sw_arg1_12, &&sw_arg1_0, &&sw_arg1_18, &&sw_arg1_19, &&sw_arg1_20, &&sw_arg1_21, &&sw_arg1_default
@@ -144,7 +144,7 @@ void func_8022EC3C_de(void *object) {
     if (((func_8022EC2C_S1 *)(object))->unk86C == 0x1144) {
         suppress = ((func_8022EC2C_S1 *)(object))->unk10E == 0;
     }
-    if (((func_8022EC2C_S1 *)(object))->unkE4 == D_800CE47C) {
+    if (((func_8022EC2C_S1 *)(object))->unkE4 == D_800C922C) {
         ((func_8022EC2C_S1 *)(object))->unk86C = 0x8A2;
         return;
     }
@@ -190,13 +190,13 @@ void func_8022ECCC_de(void) {
 
 extern void func_80449870_de(void *);
 
-extern s32 D_80102A48;
+extern s32 D_800FEA48;
 
 void func_8022ED24_de(void) {
-    func_80449870_de(D_80102A48);
+    func_80449870_de(D_800FEA48);
 }
 
-extern s32 D_800CED30;
+extern s32 D_800C9AEC_de;
 void func_8022ED48_de(Actor_func_8022ED48_de *arg0)
 {
   s32 temp_v0;
@@ -209,7 +209,7 @@ void func_8022ED48_de(Actor_func_8022ED48_de *arg0)
   arg0->flags = temp_v0 | 0x01000000;
   arg0->unk_0x11FC = 0;
   arg0->flags = temp_v0 | 0x01000000;
-  if (arg0->unk_0x13B4 == (&D_800CED30))
+  if (arg0->unk_0x13B4 == (&D_800C9AEC_de))
   {
     arg0->unk_0x086C = 0x5E24;
     return;

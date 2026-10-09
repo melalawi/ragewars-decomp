@@ -3,8 +3,8 @@
 
 
 
-extern char D_8010EEB8[];
-extern char D_8010F328[];
+extern char D_8010AEB8[];
+extern char D_8010B328[];
 extern f32 D_800C2E10_de;
 extern void func_8026367C_de(void *arg0, void *arg1);
 extern f32 func_8022ADBC_de(void *arg0);
@@ -20,7 +20,7 @@ void func_8022E290_de(void *arg0) {
     f32 zero;
 
     if (((func_8022E280_S1 *)(object))->unk1450 != 0) {
-        attributes = D_8010EEB8;
+        attributes = D_8010AEB8;
     } else {
         s32 index = ((func_8022E280_S1 *)(object))->unk5D4;
         attributes = (void *)(index << 4);
@@ -28,7 +28,7 @@ void func_8022E290_de(void *arg0) {
         attributes = (void *)((s32)attributes << 3);
         attributes = (char *)attributes + index;
         attributes = (void *)((s32)attributes << 2);
-        attributes = D_8010F328 + (s32)attributes;
+        attributes = D_8010B328 + (s32)attributes;
     }
     func_8026367C_de(state, attributes);
 

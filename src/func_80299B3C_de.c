@@ -3,7 +3,7 @@
 
 
 
-extern func_80204468_S3 *D_8014D080;
+extern func_80204468_S3 *D_80146E00;
 void func_80299B3C_de(int arg0) {
-    D_8014D080->unk14 = arg0;
+    D_80146E00->unk14 = arg0;
 }

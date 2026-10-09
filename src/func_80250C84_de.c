@@ -11,7 +11,7 @@
 
 
 extern s32 D_800CD3F0;
-extern s32 D_800D15E0;
+extern s32 D_800CC390;
 
 extern char D_00250C2C;
 extern char D_800C3E40_de;
@@ -43,14 +43,14 @@ void func_80250C84_de(Owner_func_80250C84_de *owner, s32 unused, s32 arg2, s32 k
             char *object = (char *)header + header[1];
             char *colors = (char *)header + header[2];
 
-            if (owner->colorFrame != D_800D297B) {
+            if (owner->colorFrame != D_800CD72B) {
                 func_8027892C_de(object, colors);
             }
             data = object;
         } else {
             data = (char *)(header + 2);
         }
-        if (D_800D15E0 != 0) {
+        if (D_800CC390 != 0) {
             func_8026DA4C_de(instance, owner->transform, 0, 0, data, arg2);
         } else {
             func_8026DC24_de(instance, owner->transform, 0, 0, data, arg2);
@@ -58,5 +58,5 @@ void func_80250C84_de(Owner_func_80250C84_de *owner, s32 unused, s32 arg2, s32 k
         func_80253754_de(0, resource);
     }
     func_80253754_de(0, instance);
-    owner->colorFrame = D_800D297B;
+    owner->colorFrame = D_800CD72B;
 }

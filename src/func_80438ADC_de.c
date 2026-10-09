@@ -14,14 +14,14 @@
 
 
 
-extern struct MenuRules *D_800E5830;
-extern s32 D_80146948;
-extern s32 D_8015402C;
-extern u8 D_801462D5;
-extern s32 D_80146918;
-extern s32 D_801468F4;
-extern char D_80145088[];
-extern char D_8011FE88[];
+extern struct MenuRules *D_800E17E0;
+extern s32 D_80142888;
+extern s32 D_8014DD9C;
+extern u8 D_80142215;
+extern s32 D_80142858;
+extern s32 D_80142834;
+extern char D_80140FC8[];
+extern char D_8011BDC8[];
 extern s32 func_8043C308_de(struct MenuRules *);
 extern void func_8043C080_de(struct MenuRules *);
 extern void func_8043C2A4_de(struct MenuRules *);
@@ -45,30 +45,30 @@ s32 func_80438ADC_de(void *window, void *arg1, s32 event) {
     if (event != 1) {
         return 0;
     }
-    state = func_8043C308_de(D_800E5830);
+    state = func_8043C308_de(D_800E17E0);
     if (state == event) {
-        func_8043C080_de(D_800E5830);
-        func_8043C2A4_de(D_800E5830);
-        if (func_8043C308_de(D_800E5830) != 2) {
+        func_8043C080_de(D_800E17E0);
+        func_8043C2A4_de(D_800E17E0);
+        if (func_8043C308_de(D_800E17E0) != 2) {
             return 0;
         }
-        if (D_800E5830->locked != 0) {
-            if (D_800E5830->locked != state) {
+        if (D_800E17E0->locked != 0) {
+            if (D_800E17E0->locked != state) {
                 return 0;
             }
             func_8040C428_de(0);
             func_8040E8D8_de(window, 1);
-            object = D_80145088;
+            object = D_80140FC8;
             func_8044A370_de(object, 0);
             func_804499B0_de(object - 0x48, 0, 0);
-            func_80286AA8_de(D_8011FE88, 0, 0);
+            func_80286AA8_de(D_8011BDC8, 0, 0);
             ((MatchMenuObjects *)(object))->transition = 8;
         } else {
             func_8029973C_de();
-            D_80146918 = 0;
-            D_801468F4 = 0;
-            if (D_80146948 == state && D_8015402C >= 35) {
-                switch (D_801462D5) {
+            D_80142858 = 0;
+            D_80142834 = 0;
+            if (D_80142888 == state && D_8014DD9C >= 35) {
+                switch (D_80142215) {
                 case 4:
                     next = 3;
                     break;

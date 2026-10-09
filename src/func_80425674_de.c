@@ -2,8 +2,8 @@
 #include "shared/func_80425674_de_layout.h"
 #include "common/unused.h"
 
-extern Shared_Game D_801462C8;
-extern MatchRewardsRecord D_80102B00[];
+extern Shared_Game D_80142208_de;
+extern MatchRewardsRecord D_800FEB00[];
 
 extern s32 func_8022F5C4_de(char *, s32);
 extern void func_8022F5A4_de(char *, s32);
@@ -13,10 +13,10 @@ s32 func_80425674_de(s32 p) {
     Shared_Game *settings;
     s32 given;
 
-    record = (char *)&D_80102B00[p];
-    settings = &D_801462C8;
+    record = (char *)&D_800FEB00[p];
+    settings = &D_80142208_de;
     given = -1;
-    if (settings->controllerMode == 1 && settings->humanWon == 1 && D_8015402C >= 0x23) {
+    if (settings->controllerMode == 1 && settings->humanWon == 1 && D_8014DD9C >= 0x23) {
         switch (settings->slots[p].kind) {
         case 0:
             if (func_8022F5C4_de(record, 0x11) == 0) {

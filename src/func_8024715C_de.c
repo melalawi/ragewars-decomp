@@ -12,7 +12,7 @@ typedef struct CollisionInfo CollisionInfo;
 
 
 extern CollisionInfo D_801003D8;
-extern func_80237E70_G1 D_801041F0;
+extern func_80237E70_G1 D_801001F0;
 extern s32 func_80243A90_de(void *arg0, Vec3 arg1, CollisionInfo *arg2);
 extern void func_80278E04_de(s32 arg0, s32 arg1, void *arg2);
 extern void func_80278D78_de(void *arg0, s32 arg1, void *arg2);
@@ -54,9 +54,9 @@ void func_8024715C_de(char *arg0, Vec3 *arg1) {
             func_80278E04_de((s32)((ObjectLinks23C *)(arg0))->unk_14, 0x40, arg0);
         }
         if (collided != 0 && !(((ObjectLinks23C *)(arg0))->unk_100 & 0x300000) &&
-                *((ObjectLinks23C *)(arg0))->unk_18 == 1 && D_801041F0.unk0 != 0 &&
-                *D_801041F0.unk0 == 1) {
-            func_80278D78_de(D_801041F0.unk0, 0x20, arg0);
+                *((ObjectLinks23C *)(arg0))->unk_18 == 1 && D_801001F0.unk0 != 0 &&
+                *D_801001F0.unk0 == 1) {
+            func_80278D78_de(D_801001F0.unk0, 0x20, arg0);
         }
         callback = ((struct CallbackState288 *) ((char *) arg0))->callback;
         if (callback != 0) {

@@ -6,10 +6,10 @@
 int func_80250BF0_de(void) {
     int temp_v0;
 
-    temp_v0 = D_800D0910 + 1;
-    D_800D0910 = temp_v0;
+    temp_v0 = D_800CB6D0 + 1;
+    D_800CB6D0 = temp_v0;
     if (temp_v0 == 0x3FFFFF) {
-        D_800D0910 = 0x380000;
+        D_800CB6D0 = 0x380000;
     }
-    return D_800D0910;
+    return D_800CB6D0;
 }

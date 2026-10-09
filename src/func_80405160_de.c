@@ -5,16 +5,16 @@
    other states return -2. */
 
 
-extern int *D_800E2854;
+extern int *D_800DE804;
 
 int func_80405160_de(int slot, int *score) {
-    if (D_801534F0[slot] != 3) {
+    if (D_8014D260[slot] != 3) {
         return -2;
     }
-    if (D_80153500[slot] == 0) {
-        *score = D_800E2854[slot * 0x81] / 256;
+    if (D_8014D270[slot] == 0) {
+        *score = D_800DE804[slot * 0x81] / 256;
     } else {
         *score = 0;
     }
-    return D_80153500[slot];
+    return D_8014D270[slot];
 }

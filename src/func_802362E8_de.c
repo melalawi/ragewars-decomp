@@ -12,10 +12,10 @@
  * depth with a fill-rectangle command. */
 
 
-extern Gfx *D_80110634;
-extern char D_80145040;
+extern Gfx *D_8010C574;
+extern char D_80140F80;
 extern char D_801379C0;
-extern s32 D_801462C8;
+extern s32 D_80142208_de;
 
 extern void func_80289084_de(char *, char *);
 extern s32 func_80245798_de(void);
@@ -46,10 +46,10 @@ void func_802362E8_de(char *view, char *world) {
     func_802909F0_de();
     func_80289084_de(world, view);
     if (func_80245798_de() == 0) {
-        func_80228798_de(&D_80145040, view);
+        func_80228798_de(&D_80140F80, view);
     }
     if (func_802934F8_de() != 0) {
-        func_8022A2A0_de(&D_80145040, view);
+        func_8022A2A0_de(&D_80140F80, view);
     }
     func_8028B028_de(world, view);
     func_802A5180_de(&D_801379C0, view);
@@ -57,26 +57,26 @@ void func_802362E8_de(char *view, char *world) {
         func_802905F4_de(world + 0x11778, view);
     }
     func_80286454_de(world, view);
-    func_80228958_de(&D_80145040, view);
+    func_80228958_de(&D_80140F80, view);
     func_8023B3F8_de(view + 0x570, view);
     func_8028B160_de(world, view);
     func_802A478C_de(&D_801379C0, view);
     func_80238D30_de(view);
     if (func_80245798_de() == 0 && func_802934F8_de() != 0) {
-        func_8022A328_de(&D_80145040, view);
+        func_8022A328_de(&D_80140F80, view);
     }
-    if (D_801462C8 & 0x200) {
-        gDPPipeSync(D_80110634++);
-        gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
-        gDPSetBlendColor(D_80110634++, 255, 255, 255, 255);
-        gDPSetPrimDepth(D_80110634++, 65535, 65535);
-        gDPSetDepthSource(D_80110634++, G_ZS_PRIM);
+    if (D_80142208_de & 0x200) {
+        gDPPipeSync(D_8010C574++);
+        gDPSetCycleType(D_8010C574++, G_CYC_1CYCLE);
+        gDPSetBlendColor(D_8010C574++, 255, 255, 255, 255);
+        gDPSetPrimDepth(D_8010C574++, 65535, 65535);
+        gDPSetDepthSource(D_8010C574++, G_ZS_PRIM);
         func_8026925C_de(0x16);
         {
             Gfx *_g;
 
             right = ((func_80219490_S2 *)(view))->unk2A4 + ((func_80219490_S2 *)(view))->unk29C;
-            gDPFillRectangle((Gfx *)(D_80110634++), ((func_80219490_S2 *)(view))->unk2A4, ((func_80219490_S2 *)(view))->unk2A8, right, ((func_80219490_S2 *)(view))->unk2A8 + ((func_80219490_S2 *)(view))->unk2A0);
+            gDPFillRectangle((Gfx *)(D_8010C574++), ((func_80219490_S2 *)(view))->unk2A4, ((func_80219490_S2 *)(view))->unk2A8, right, ((func_80219490_S2 *)(view))->unk2A8 + ((func_80219490_S2 *)(view))->unk2A0);
         }
     }
 }
@@ -86,7 +86,7 @@ void func_802362E8_de(char *view, char *world) {
  * D_80103220[1] whenever a value moves. Adapted from func_8023A294_de as a static helper.
  */
 
-extern f32 D_80103220[];
+extern f32 D_800FF220[];
 extern s32 func_80264B6C_de(void);
 
 static inline f32 approach(f32 value, f32 target, f32 step) {
@@ -95,13 +95,13 @@ static inline f32 approach(f32 value, f32 target, f32 step) {
     }
     if (value < target) {
         value += step;
-        D_80103220[1] = 30.0f;
+        D_800FF220[1] = 30.0f;
         if (target < value) {
             value = target;
         }
     } else if (target < value) {
         value -= step;
-        D_80103220[1] = 30.0f;
+        D_800FF220[1] = 30.0f;
         if (value < target) {
             value = target;
         }

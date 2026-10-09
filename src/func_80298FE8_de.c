@@ -14,11 +14,11 @@
 
 
 
-extern Manager_func_80298FE8_de *D_8014D080;
+extern Manager_func_80298FE8_de *D_80146E00;
 extern s32 D_80146E04;
 
 
-extern s32 D_8014D0A0;
+extern s32 D_80146E20;
 
 extern f64 func_802A18CC_de(void);
 extern void func_8029764C_de(s32, s32, s32, void *, s32);
@@ -37,15 +37,15 @@ void func_80298FE8_de(void) {
     s32 offset;
     s32 now;
 
-    args.word0 = D_8014D080->field534;
-    args.word4 = D_8014D080->field538;
+    args.word0 = D_80146E00->field534;
+    args.word4 = D_80146E00->field538;
     args.byte14 = 0xFF;
     args.word8 = 0;
     args.wordC = D_800C5678_de;
     args.word10 = D_800C5678_de;
-    args.word18 = D_8014D080->field534;
+    args.word18 = D_80146E00->field534;
     D_80146E04 = 0;
-    args.word20 = D_8014D080->field538;
+    args.word20 = D_80146E00->field538;
     args.word1C = D_80146E08 - 1;
     args.word24 = D_80146E0C - 1;
 
@@ -57,20 +57,20 @@ void func_80298FE8_de(void) {
     D_800CD8E0 = now;
     func_8029764C_de(0, 0xE0A, 0, &args, delta);
 
-    index = D_8014D080->lowIndex;
-    if (D_8014D080->index >= index) {
+    index = D_80146E00->lowIndex;
+    if (D_80146E00->index >= index) {
         offset = index * 0x1C;
         do {
             index++;
             func_802A18F4_de();
-            func_8040E67C_de(*(void **)(offset + (s32)D_8014D080->entries), args);
+            func_8040E67C_de(*(void **)(offset + (s32)D_80146E00->entries), args);
             func_8040E894_de();
             func_802A18FC_de();
             func_8040E0D4_de(&first, &basis,
-                          *(void **)(offset + (s32)D_8014D080->entries), &args);
+                          *(void **)(offset + (s32)D_80146E00->entries), &args);
             offset += 0x1C;
-        } while (D_8014D080->index >= index);
+        } while (D_80146E00->index >= index);
     }
     func_8029764C_de(0, 0xE0A, 1, 0, delta);
-    D_8014D0A0 = 0;
+    D_80146E20 = 0;
 }

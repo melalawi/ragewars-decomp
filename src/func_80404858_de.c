@@ -16,7 +16,7 @@
 
 
 extern OSPfs_func_80403E90_de D_8014D280[];
-extern PakDirectory *D_800E2854;
+extern PakDirectory *D_800DE804;
 extern u8 D_8010BBB8;
 
 extern void func_802644FC_de(s32);
@@ -28,18 +28,18 @@ extern void func_80404018_de(s32 ch);
 s32 func_80404858_de(s32 ch, s32 index) {
     s32 result;
 
-    if (D_801534F0[ch] != 3) {
+    if (D_8014D260[ch] != 3) {
         return -2;
     }
     func_802644FC_de(1);
     func_80263740_de();
-    result = D_80153500[ch];
+    result = D_8014D270[ch];
     D_8010BBB8 = 2;
     if (result == 0) {
-        result = func_80446580_de(&D_8014D280[ch], D_800E2854[ch].notes[index].company_code,
-                               D_800E2854[ch].notes[index].game_code,
-                               D_800E2854[ch].notes[index].game_name,
-                               D_800E2854[ch].notes[index].ext_name);
+        result = func_80446580_de(&D_8014D280[ch], D_800DE804[ch].notes[index].company_code,
+                               D_800DE804[ch].notes[index].game_code,
+                               D_800DE804[ch].notes[index].game_name,
+                               D_800DE804[ch].notes[index].ext_name);
         if (result != 0) {
             result = -1;
         }

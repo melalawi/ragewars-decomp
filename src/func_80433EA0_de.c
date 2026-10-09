@@ -3,7 +3,7 @@
 #include "types.h"
 #include "common/unused.h"
 
-extern PakState *D_800E54A4;
+extern PakState *D_800E1454_de;
 extern char *D_800D3758;
 
 extern char D_800DDEC0[];
@@ -30,13 +30,13 @@ extern void func_80434250_de(s32, s32);
 enum { PAK_RESOURCE_2D7 = 750, PAK_RESOURCE_2D8 = 749, PAK_RESOURCE_2DB = 746, PAK_RESOURCE_2DC = 745, PAK_RESOURCE_2DD = 747 };
 #elif defined(VERSION_EU)
 
-extern u8 D_801462C8[];
+extern u8 D_80142208_de[];
 
 extern char *D_800E27B4[], *D_800E1394[];
 enum { PAK_RESOURCE_2D7 = 727, PAK_RESOURCE_2D8 = 728, PAK_RESOURCE_2DB = 731, PAK_RESOURCE_2DC = 732, PAK_RESOURCE_2DD = 733 };
 #elif defined(VERSION_EU_X)
 
-extern u8 D_801462C8[];
+extern u8 D_80142208_de[];
 
 extern char *D_800DE03C[], *D_800DD124[];
 
@@ -72,7 +72,7 @@ void func_80433EA0_de(s32 player)
         note_status = func_8040458C_de(player, i, &status, name, ext, &size, extra1, extra2);
 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-        settings = (GameLocalizationState *)D_801462C8;
+        settings = (GameLocalizationState *)D_80142208_de;
 
 #else
 #endif
@@ -87,8 +87,8 @@ void func_80433EA0_de(s32 player)
                     func_802A025C_de(name, (D_800D3758));
 #endif
                 }
-                func_802A025C_de(D_800E54A4->slots[player].notes[i].name, name);
-                func_802A0C08_de(D_800E54A4->slots[player].notes[i].size,
+                func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, name);
+                func_802A0C08_de(D_800E1454_de->slots[player].notes[i].size,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 D_800DDEC0,
 #else
@@ -96,14 +96,14 @@ D_800DDEB0_de,
 #endif
  size);
                 if (ext[0] != 0) {
-                    func_802A0C08_de(D_800E54A4->slots[player].notes[i].label,
+                    func_802A0C08_de(D_800E1454_de->slots[player].notes[i].label,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 D_800EE534,
 #else
 controller_pak_note_label_format,
 #endif
  i + 1,
-                                  D_800E54A4->slots[player].notes[i].name, ext);
+                                  D_800E1454_de->slots[player].notes[i].name, ext);
                     continue;
                 }
                 goto numbered;
@@ -112,13 +112,13 @@ controller_pak_note_label_format,
             failed = 1;
         }
 #if defined(VERSION_EU)
-        func_802A025C_de(D_800E54A4->slots[player].notes[i].name, ((D_800E1394)[settings->language]));
+        func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, ((D_800E1394)[settings->language]));
 #elif defined(VERSION_EU_X)
-        func_802A025C_de(D_800E54A4->slots[player].notes[i].name, ((D_800DD124)[settings->language]));
+        func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, ((D_800DD124)[settings->language]));
 #else
-        func_802A025C_de(D_800E54A4->slots[player].notes[i].name, ((char *)D_800D3250[0]));
+        func_802A025C_de(D_800E1454_de->slots[player].notes[i].name, ((char *)D_800D3250[0]));
 #endif
-        func_802A0C08_de(D_800E54A4->slots[player].notes[i].size,
+        func_802A0C08_de(D_800E1454_de->slots[player].notes[i].size,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 D_800DDEC0,
 #else
@@ -126,49 +126,49 @@ D_800DDEB0_de,
 #endif
  0);
     numbered:
-        func_802A0C08_de(D_800E54A4->slots[player].notes[i].label,
+        func_802A0C08_de(D_800E1454_de->slots[player].notes[i].label,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 D_800EE540,
 #else
 D_800DDEC0,
 #endif
  i + 1,
-                      D_800E54A4->slots[player].notes[i].name);
+                      D_800E1454_de->slots[player].notes[i].name);
     }
     if (failed == 0) {
-        item = func_8040EC30_de(D_800E54A4->slots[player].menu, PAK_RESOURCE_2D8);
+        item = func_8040EC30_de(D_800E1454_de->slots[player].menu, PAK_RESOURCE_2D8);
         if (func_80405160_de(player, &size) == 0) {
-            func_802A0C08_de(D_800E54A4->slots[player].free,
+            func_802A0C08_de(D_800E1454_de->slots[player].free,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 D_800DDEC0,
 #else
 D_800DDEB0_de,
 #endif
  size);
-            item->text = D_800E54A4->slots[player].free;
-            item = func_8040EC30_de(D_800E54A4->slots[player].menu, PAK_RESOURCE_2D7);
+            item->text = D_800E1454_de->slots[player].free;
+            item = func_8040EC30_de(D_800E1454_de->slots[player].menu, PAK_RESOURCE_2D7);
             size = func_80435424_de();
-            func_802A0C08_de(D_800E54A4->slots[player].used,
+            func_802A0C08_de(D_800E1454_de->slots[player].used,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 D_800DDEC0,
 #else
 D_800DDEB0_de,
 #endif
  func_804057EC_de(size));
-            item->text = D_800E54A4->slots[player].used;
+            item->text = D_800E1454_de->slots[player].used;
         } else {
             failed = 1;
         }
     }
     if (failed == 1) {
-        D_800E54A4->slots[player].state = failed;
+        D_800E1454_de->slots[player].state = failed;
         func_804322AC_de(player, PAK_RESOURCE_2DB);
         return;
     }
-    D_800E54A4->slots[player].cursor = -1;
-    D_800E54A4->slots[player].scroll = 0;
-    D_800E54A4->slots[player].items[0] = func_8040EC30_de(D_800E54A4->slots[player].menu, PAK_RESOURCE_2DB);
-    D_800E54A4->slots[player].items[1] = func_8040EC30_de(D_800E54A4->slots[player].menu, PAK_RESOURCE_2DC);
-    D_800E54A4->slots[player].items[2] = func_8040EC30_de(D_800E54A4->slots[player].menu, PAK_RESOURCE_2DD);
+    D_800E1454_de->slots[player].cursor = -1;
+    D_800E1454_de->slots[player].scroll = 0;
+    D_800E1454_de->slots[player].items[0] = func_8040EC30_de(D_800E1454_de->slots[player].menu, PAK_RESOURCE_2DB);
+    D_800E1454_de->slots[player].items[1] = func_8040EC30_de(D_800E1454_de->slots[player].menu, PAK_RESOURCE_2DC);
+    D_800E1454_de->slots[player].items[2] = func_8040EC30_de(D_800E1454_de->slots[player].menu, PAK_RESOURCE_2DD);
     func_80434250_de(player, 1);
 }

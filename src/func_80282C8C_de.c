@@ -11,7 +11,7 @@
 
 
 
-extern Record_func_80282C8C_de *D_800D052C[];
+extern Record_func_80282C8C_de *D_800CB2EC[];
 
 s32 func_80282C8C_de(func_8022BC04_S2 *obj) {
     s32 i;
@@ -20,11 +20,11 @@ s32 func_80282C8C_de(func_8022BC04_S2 *obj) {
 
     for (i = 0; i < 22; i++) {
         for (j = 0; j < 3; j++) {
-            entry = D_800D052C[i]->first[j];
+            entry = D_800CB2EC[i]->first[j];
             if (entry != 0 && entry->id == obj->unk4 && entry->kind == 1) {
                 return 1;
             }
-            entry = D_800D052C[i]->second[j];
+            entry = D_800CB2EC[i]->second[j];
             if (entry != 0 && entry->id == obj->unk4 && entry->kind == 1) {
                 return 1;
             }
@@ -41,7 +41,7 @@ s32 func_80282C8C_de(func_8022BC04_S2 *obj) {
 
 
 
-extern Record_func_80282C8C_de *D_800D052C[];
+extern Record_func_80282C8C_de *D_800CB2EC[];
 
 s32 func_80282D38_de(func_8022BC04_S2 *obj) {
     s32 i;
@@ -51,11 +51,11 @@ s32 func_80282D38_de(func_8022BC04_S2 *obj) {
     if (obj->unk4 == 0x427) return 1;
     for (i = 0; i < 22; i++) {
         for (j = 0; j < 3; j++) {
-            entry = D_800D052C[i]->first[j];
+            entry = D_800CB2EC[i]->first[j];
             if (entry != 0 && entry->id == obj->unk4 && entry->kind == 0) {
                 return 1;
             }
-            entry = D_800D052C[i]->second[j];
+            entry = D_800CB2EC[i]->second[j];
             if (entry != 0 && entry->id == obj->unk4 && entry->kind == 0) {
                 return 1;
             }
@@ -72,7 +72,7 @@ s32 func_80282D38_de(func_8022BC04_S2 *obj) {
 
 
 
-extern Record_func_80282C8C_de *D_800D052C[];
+extern Record_func_80282C8C_de *D_800CB2EC[];
 
 s32 func_80282DEC_de(func_8022BC04_S2 *obj) {
     s32 i;
@@ -81,11 +81,11 @@ s32 func_80282DEC_de(func_8022BC04_S2 *obj) {
 
     for (i = 0; i < 22; i++) {
         for (j = 0; j < 3; j++) {
-            entry = D_800D052C[i]->first[j];
+            entry = D_800CB2EC[i]->first[j];
             if (entry != 0 && entry->id == obj->unk4 && entry->kind == 2) {
                 return 1;
             }
-            entry = D_800D052C[i]->second[j];
+            entry = D_800CB2EC[i]->second[j];
             if (entry != 0 && entry->id == obj->unk4 && entry->kind == 2) {
                 return 1;
             }
@@ -94,7 +94,7 @@ s32 func_80282DEC_de(func_8022BC04_S2 *obj) {
     return 0;
 }
 
-extern s32 D_8011FE88;
+extern s32 D_8011BDC8;
 extern char D_8011D8D0;
 extern f32 D_800C4E58_de[];
 
@@ -142,7 +142,7 @@ void func_80282E98_de(void *arg0, void *arg1) {
                       (s32)&((func_80282E6C_S2 *)arg1)->unk8, -1);
         func_8022B550_de(arg1, 30.0f, 3.0f,
                      ((func_80282E6C_S1 *)(arg0))->unk12C, 0);
-        func_8028CE94_de(&D_8011FE88,
+        func_8028CE94_de(&D_8011BDC8,
                       &((func_80282E6C_S3 *)(((func_80282E6C_S2 *)(arg1))->unk698))->unk140,
                       0x14, scratch, D_800C4E58_de[1], D_800C4E60_de);
         ((func_80282E6C_S2 *)(arg1))->unk11EC = (&D_800C4E60_de)[1];
@@ -176,7 +176,7 @@ void func_80282E98_de(void *arg0, void *arg1) {
     func_80284434_de(arg0);
 }
 
-extern u8 D_801462E3;
+extern u8 D_80142223;
 
 
 
@@ -188,7 +188,7 @@ void func_80283064_de(void *arg0, s32 *arg1) {
     if ((*(((func_80283038_S1 *)((arg0)))->unk118)) & 0x02000000) {
         if ((((func_80283038_S1 *)((arg0)))->unk5C) & 2) {
             result = 2;
-        } else if (D_801462E3 == 2) {
+        } else if (D_80142223 == 2) {
             result = 1;
         }
     }

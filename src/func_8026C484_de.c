@@ -10,9 +10,9 @@ int func_8028FE28_de(int *, int, int);
 s32 func_8028FE3C_de(s32, s32, s32, s32 *);
 s32 **func_8025193C_de(); /* extern */
 
-extern s32 **D_8011064C;
+extern s32 **D_8010C58C;
 
-extern func_8026C484_S2 D_801157D8[];
+extern func_8026C484_S2 D_80111718[];
 extern s32 D_800C466C_de;                          /* unable to generate initializer: unknown type */
 extern s32 D_800C4680_de;                          /* unable to generate initializer: unknown type */
 extern s32 D_800C4694_de;                          
@@ -40,7 +40,7 @@ void func_8026C484_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5
                         temp_v0_4 = func_8025193C_de(0, temp_s0, temp_s0, sp2C, 0, 0, &D_0026D7F4, &D_800C4694_de, arg5);
                         if (temp_v0_4 != 0) {
                                 temp_s1_2 = func_8028FDB4_de(*temp_v0_4, 0);
-                                if (D_8011064C != temp_v0_4 || D_8010C564 != arg4 || D_80110640 == 0x20) {
+                                if (D_8010C58C != temp_v0_4 || D_8010C564 != arg4 || D_8010C580 == 0x20) {
                                         func_8026BC60_de();
                                         if (D_80111310 != 0x100) {
                                                 func_80253670_de(0, temp_v0_4);
@@ -50,12 +50,12 @@ void func_8026C484_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5
                                         }
                                 } else {
                                         block_11:
-                                        D_8011064C = temp_v0_4;
+                                        D_8010C58C = temp_v0_4;
 
                                         D_8010C564 = arg4;
-                                        temp_v1 = D_80110640;
-                                        temp_v1_2 = &D_801157D8[temp_v1++];
-                                        D_80110640 = temp_v1;
+                                        temp_v1 = D_8010C580;
+                                        temp_v1_2 = &D_80111718[temp_v1++];
+                                        D_8010C580 = temp_v1;
                                         temp_v1_2->unk0 = arg1;
                                         temp_v1_2->unkC = 0;
                                         temp_v1_2->unk4 = arg2;

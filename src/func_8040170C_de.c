@@ -68,7 +68,7 @@ union SharedVectorBits { Triple words; Vec3 vector; };
 #include "common/unused.h"
 #include "span_16E000/code_80400000.h"
 
-extern Shared_MenuContext *D_800E2830;
+extern Shared_MenuContext *D_800DE7E0;
 extern f32 D_800E2848;
 extern struct SharedTrackConstants D_800DCB28;
 
@@ -81,7 +81,7 @@ f32 func_8040170C_de(f32 t) {
     f32 u;
     f32 v;
 
-    track = func_8028FDB4_de(D_800E2830->resource, 1);
+    track = func_8028FDB4_de(D_800DE7E0->resource, 1);
     count = track[1];
     key = (Key_func_8040170C_de *)(track + 2);
     if (count == 0) {
@@ -97,10 +97,10 @@ f32 func_8040170C_de(f32 t) {
         u = (t - key[-1].time) / (key->time - key[-1].time);
         v = key[-1].value * (D_800DCB28.unit - u) + key->value * u;
     }
-    v *= 2.0f * D_800E2848 + D_800E0B60[0];
+    v *= 2.0f * D_800E2848 + D_800DCB30[0];
     v -= D_800E2848;
-    if (D_800E0B60[0] < v) {
-        v = D_800E0B60[0];
+    if (D_800DCB30[0] < v) {
+        v = D_800DCB30[0];
     }
     if (v < 0.0f) {
         v = 0.0f;

@@ -11,21 +11,21 @@
 
 
 
-extern struct Settings_func_80444BE8_de D_80146302;
-extern char D_800D7634[];
-extern char D_800D7638[];
+extern struct Settings_func_80444BE8_de D_80142242;
+extern char D_800D3608[];
+extern char D_800D360C[];
 
 s32 func_80444BE8_de(struct Field_func_8040A4A0_de *field, struct Holder_func_80444BE8_de *holder) {
     s32 result = 0;
-    struct Settings_func_80444BE8_de *settings = &D_80146302;
+    struct Settings_func_80444BE8_de *settings = &D_80142242;
 
     if (holder->owner != 0) {
         settings = holder->owner->settings;
     }
     if (settings->flag == 1) {
-        field->text = D_800D7634;
+        field->text = D_800D3608;
     } else {
-        field->text = D_800D7638;
+        field->text = D_800D360C;
     }
     return result;
 }

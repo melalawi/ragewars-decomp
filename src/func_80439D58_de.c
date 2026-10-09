@@ -4,10 +4,10 @@
 #include "types.h"
 
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de: 0x3DA waits through
-   func_80298368_de for a time chosen by setting D_801462D5 through jtbl_800DDF70 (20, 15 or 10, and
+   func_80298368_de for a time chosen by setting D_80142215 through jtbl_800DDF70 (20, 15 or 10, and
    3 for any other setting); 0x3DB sends code -1 to func_8042E988_de and calls func_802998A8_de.
    Returns zero. */
-extern u8 D_801462D5;
+extern u8 D_80142215;
 extern void *jtbl_800DDF70[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
@@ -34,7 +34,7 @@ s32 func_80439D58_de(void) {
     func_8029973C_de();
     switch (func_80299A08_de()) {
     case MENU_80439F38_986:
-        setting = D_801462D5;
+        setting = D_80142215;
         if (setting >= 5) {
             goto wait_3;
         }
@@ -78,9 +78,9 @@ s32 func_80439E04_de(void) {
 typedef s32 (*Handler8043A014)(void *, s32, s32, s32, s32);
 
 
-extern FieldRow D_800E59B0[];
-extern FieldRow D_800E59B4[];
-extern Handler8043A014 D_800E59B8;
+extern FieldRow D_800E1960[];
+extern FieldRow D_800E1964[];
+extern Handler8043A014 D_800E1968;
 
 
 
@@ -92,14 +92,14 @@ s32 func_80439E34_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     s32 actor_kind;
     s32 table_kind;
 
-    if (D_800E59B8 != 0) {
+    if (D_800E1968 != 0) {
         wildcard = 0x7530;
-        entry = (char *)&D_800E59B8;
+        entry = (char *)&D_800E1968;
         index = 0;
         do {
-            if (D_800E59B0[index].value == arg1) {
+            if (D_800E1960[index].value == arg1) {
                 actor_kind = ((func_8021C9B4_S3 *)(arg0))->unkC;
-                table_kind = D_800E59B4[index].value;
+                table_kind = D_800E1964[index].value;
                 if ((table_kind == actor_kind) || (table_kind == wildcard)) {
                     return (*(Handler8043A014 *)entry)(arg0, arg1, arg2, arg3, arg4);
                 }

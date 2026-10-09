@@ -32,17 +32,17 @@ f32 func_8025F434_de(f32 amount, f32 period) {
     f32 rate;
 
     rate = 0.0f;
-    if (amount == ((func_802077F4_S2 *)(&D_800C91F8))->unk4) {
-        return ((func_802077F4_S2 *)(&D_800C91F8))->unk4;
+    if (amount == ((func_802077F4_S2 *)(&D_800C4108_de))->unk4) {
+        return ((func_802077F4_S2 *)(&D_800C4108_de))->unk4;
     }
-    if (period <= D_800C9200) {
-        return ((func_802077F4_S2 *)(&D_800C91F8))->unk4;
+    if (period <= D_800C4110_de) {
+        return ((func_802077F4_S2 *)(&D_800C4108_de))->unk4;
     }
-    rate = round_up(amount / period * ((func_802077F4_S2 *)(&D_800C9200))->unk4, rate);
+    rate = round_up(amount / period * ((func_802077F4_S2 *)(&D_800C4110_de))->unk4, rate);
     if (rate < (90.0f)) {
         return rate;
     }
-    rate = round_up(amount / period * D_800C9208, 0.0f);
+    rate = round_up(amount / period * D_800C4118_de, 0.0f);
     if (rate < (90.0f)) {
         return rate;
     }

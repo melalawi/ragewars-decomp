@@ -9,14 +9,14 @@
 /* Appends one pipe synchronisation to the display list D_80110634 points into the first time it
    is called after func_804191E8_de clears the flag D_800E32E4. */
 
-extern s32 D_800E32E4;
-extern Gfx *D_80110634;
+extern s32 D_800DF294;
+extern Gfx *D_8010C574;
 
 void func_804191A4_de(void) {
     Gfx *gfx;
 
-    if (D_800E32E4 == 0) {
-        D_800E32E4 = 1;
-        gDPPipeSync(D_80110634++);
+    if (D_800DF294 == 0) {
+        D_800DF294 = 1;
+        gDPPipeSync(D_8010C574++);
     }
 }

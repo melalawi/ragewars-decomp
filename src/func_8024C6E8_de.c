@@ -14,7 +14,7 @@
 
 
 
-extern void func_8027302C(f32 *, Body_func_8024C6E8_de *);
+extern void func_80272FBC_de(f32 *, Body_func_8024C6E8_de *);
 extern void func_80271F9C_de(Vec3 *, Vec3 *, f32);
 extern void func_80273448_de(void *, f32, f32, f32);
 extern void func_80272D00_de(f32 *, f32, f32, f32, f32);
@@ -36,14 +36,14 @@ void func_8024C6E8_de(s32 unused, Source_func_8024C6E8_de *source, Body_func_802
     velocity.y = body->velocity.y;
     velocity.z = body->velocity.z;
     position = source->position;
-    strength = D_800D06C0[25 - source->charges] * 0.5f;
+    strength = D_800CB480_de[25 - source->charges] * 0.5f;
     strength *= 0.3f;
     if (kind == 5) {
         strength *= -2.0f;
     } else {
         strength *= kind;
     }
-    func_8027302C(transform, body);
+    func_80272FBC_de(transform, body);
     reverse = -1.0f;
     func_80271F9C_de(&velocity, &velocity, reverse);
     func_80273448_de(transform, velocity.x, velocity.y, velocity.z);

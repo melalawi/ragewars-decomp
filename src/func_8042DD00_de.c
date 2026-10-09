@@ -6,8 +6,8 @@
 
 
 
-extern struct Object_func_8042DD00_de *D_800E5430;
-extern char D_800E1B60[];
+extern struct Object_func_8042DD00_de *D_800E13E0_de;
+extern char D_800DDB30[];
 extern void func_8029973C_de();
 extern s32 func_80264614_de(s32);
 extern s32 func_80264690_de();
@@ -21,13 +21,13 @@ s32 func_8042DD00_de(void *a0, void *a1, void *a2, s32 press) {
         return 0;
     }
     func_8029973C_de();
-    if (func_80264614_de(D_800E5430->value) == press) {
-        object = D_800E5430;
+    if (func_80264614_de(D_800E13E0_de->value) == press) {
+        object = D_800E13E0_de;
         if (object->value < func_80264690_de()) {
-            D_800E5430->value++;
+            D_800E13E0_de->value++;
         }
     }
-    func_802A0C08_de(D_800E5430->text, D_800E1B60, D_800E5430->value);
+    func_802A0C08_de(D_800E13E0_de->text, D_800DDB30, D_800E13E0_de->value);
     func_8025DF34_de(0xE81);
     return 0;
 }

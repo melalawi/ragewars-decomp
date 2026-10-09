@@ -1,5 +1,5 @@
 #include "shared/gameplay_movement.h"
-extern s32 D_8014561C;
+extern s32 D_8014155C;
 #include "common/data.h"
 #include "common/types_8fd754e1e915.h"
 #include "common/unused.h"
@@ -10,23 +10,23 @@ extern s32 D_8014561C;
 #include "common/types_06e4f7ef1f9e.h"
 #include "types.h"
 
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 
-extern struct Shared_World D_8011FE88;
-extern char D_8013B364;
-extern struct Shared_Game D_801462C8;
-extern struct Shared_Net D_801468A0;
+extern struct Shared_World D_8011BDC8;
+extern char D_801372A4;
+extern struct Shared_Game D_80142208_de;
+extern struct Shared_Net D_801427E0;
 extern u8 D_801462E5;
 
-extern s32 D_801468F4;
+extern s32 D_80142834;
 
 extern s32 D_80140FF8;
-extern u8 *D_801041F0;
+extern u8 *D_801001F0;
 
-extern struct Shared_Floor *D_80103FCC;
-extern struct Shared_CharInfo *D_800D052C[];
+extern struct Shared_Floor *D_800FFFCC;
+extern struct Shared_CharInfo *D_800CB2EC[];
 
-extern struct Shared_StateInfo D_800CED30[];
+extern struct Shared_StateInfo D_800C9AEC_de[];
 extern struct Shared_StateInfo D_800C9684[];
 extern void func_80208158_de(s32);
 extern void func_8020AF9C_de(void *, void *);
@@ -148,20 +148,20 @@ void func_80220ED4_de(SharedPlayer *player)
   u16 next770u;
   linkFlags = 0;
   soundFlags = 0;
-  scale = D_800D2988;
+  scale = D_800CD738;
   if (player->views122C.view122C_4.fxFlags & 0x2000)
   {
-    D_800D2988 = scale * D_800C27D4_de;
+    D_800CD738 = scale * D_800C27D4_de;
   }
   else
     if (player->views122C.view122C_4.fxFlags & 0x80)
   {
-    D_800D2988 = scale * D_800C27D8_de;
+    D_800CD738 = scale * D_800C27D8_de;
   }
   else
     if (player->views5E8.view11E0_186.unk11E0 > 0.0f)
   {
-    D_800D2988 = scale * player->views5E8.view11E0_186.unk11E0;
+    D_800CD738 = scale * player->views5E8.view11E0_186.unk11E0;
   }
   human = player->views1C.view5D0_43.unk5D0 == 2;
   actor = player;
@@ -169,12 +169,12 @@ void func_80220ED4_de(SharedPlayer *player)
   {
     human = 1;
   }
-  game = &D_801462C8;
+  game = &D_80142208_de;
   if (game->local != 0)
   {
     human = 1;
   }
-  func_8020AF9C_de(&D_8013B364, player);
+  func_8020AF9C_de(&D_801372A4, player);
   if (player->views1450.view1450_0.unk1450 != 0)
   {
     func_80208158_de(player->views1454.view1454_0.unk1454);
@@ -206,7 +206,7 @@ void func_80220ED4_de(SharedPlayer *player)
     }
     if ((((D_801462E5 == 0) && (!((player->views5E8.viewCB8_163.unkCB8 != 0) && (player->views5E8.view938_162.unk938 != 0)))) && (!((D_801421D0 != 0) && (player->views5E8.view688_43.input.held & 0x20)))) && (player->views5E8.view688_43.input.pressed & 0x200))
     {
-      slotInfo = D_800D052C[player->views5E8.view770_113.weapon];
+      slotInfo = D_800CB2EC[player->views5E8.view770_113.weapon];
       next770 = slotInfo->viewsC.viewC_0.next_s;
       next770u = slotInfo->viewsC.viewC_1.next_u;
       if (next770 != (-1))
@@ -231,19 +231,19 @@ void func_80220ED4_de(SharedPlayer *player)
   {
     func_80213CF8_de(actor, &actor->views1C.view170_23.unk170);
   }
-  net = &D_801468A0;
+  net = &D_801427E0;
   if (((net->linked != 0) && (net->host == 0)) && (player->views5D8.view5D8_9.profile->remote == 1))
   {
     linkFlags |= 0x2000;
     soundFlags |= 0x400000;
   }
-  if ((D_80146918 != 0) && (player->views5D8.view5D8_9.profile->remote == 1))
+  if ((D_80142858 != 0) && (player->views5D8.view5D8_9.profile->remote == 1))
   {
     linkFlags |= 0x2000;
   }
   if (player->views5E8.view704_67.unk704 > 0.0f)
   {
-    f32 left = player->views5E8.view704_67.unk704 - D_800D2988;
+    f32 left = player->views5E8.view704_67.unk704 - D_800CD738;
     if (left < 0.0f)
     {
       left = 0.0f;
@@ -252,7 +252,7 @@ void func_80220ED4_de(SharedPlayer *player)
   }
   if (player->views5E8.view670_30.unk670 > 0.0f)
   {
-    f32 left = player->views5E8.view670_30.unk670 - D_800D2988;
+    f32 left = player->views5E8.view670_30.unk670 - D_800CD738;
     if (left < 0.0f)
     {
       left = 0.0f;
@@ -260,7 +260,7 @@ void func_80220ED4_de(SharedPlayer *player)
     player->views5E8.view670_30.unk670 = left;
   }
   saved = player->views5E8.view688_43.input;
-  for (remaining = D_800D2988; remaining > 0.0f;)
+  for (remaining = D_800CD738; remaining > 0.0f;)
   {
     remaining = 0.0f;
     player->views5E8.view654_25.prevState = (u16) player->views5E8.view650_16.state;
@@ -286,13 +286,13 @@ void func_80220ED4_de(SharedPlayer *player)
       ;
       ;
     }
-    player->views5E8.view66C_29.unk66C = D_800D2988 * player->views5E8.view784_117.unk784;
+    player->views5E8.view66C_29.unk66C = D_800CD738 * player->views5E8.view784_117.unk784;
     func_8022C080_de(player, actor);
     player->views5E8.view6C8_57.speed = func_802B72B0_de((player->views5E8.view6C0_64.velX * player->views5E8.view6C0_64.velX) + (player->views5E8.view6C4_67.velZ * player->views5E8.view6C4_67.velZ));
     player->views5E8.view75C_89.unk75C += player->views5E8.view6C8_57.speed * 0.021000001579523087f;
     player->views5E8.view758_87.unk758 += player->views5E8.view6C8_57.speed * 0.00010000000474974513f;
     player->views5E8.view6E8_79.unk6E8 = actor->views0.view8_3.pos;
-    player->views5E8.view658_31.stateTime += D_800D2988;
+    player->views5E8.view658_31.stateTime += D_800CD738;
     ground = func_8024E62C_de(actor);
     if (((ground != 0) && (player->views5E8.view6D0_71.onGround == 0)) && (player->views5E8.view6CC_70.lastVelY < (-51.19999694824219f)))
     {
@@ -302,7 +302,7 @@ void func_80220ED4_de(SharedPlayer *player)
     player->views5E8.view6CC_70.lastVelY = actor->views1C.view20_2.velY;
     if (((ground == 0) && (player->views5E8.view650_16.state != 15)) && (!(actor->views1C.view38_2.unk38 & 0x2000)))
     {
-      player->views5E8.view6E4_77.airTime += D_800D2988;
+      player->views5E8.view6E4_77.airTime += D_800CD738;
     }
     else
     {
@@ -322,7 +322,7 @@ void func_80220ED4_de(SharedPlayer *player)
         player->views5E8.view728_73.unk728 = 0.0f;
       }
       target = 0.0f;
-      if (((D_800D052C[player->views5E8.view62E_17.character]->ammo <= 0) || (player->views5E8.view7E8_105.unk7E8 == 0)) || ((D_801468F4 != 0) && (player->views5D8.view5D8_9.profile->remote != 0)))
+      if (((D_800CB2EC[player->views5E8.view62E_17.character]->ammo <= 0) || (player->views5E8.view7E8_105.unk7E8 == 0)) || ((D_80142834 != 0) && (player->views5D8.view5D8_9.profile->remote != 0)))
       {
         effect = &player->views5E8.view878_158.effect;
         player->views5E8.view7E8_105.unk7E8 = 0;
@@ -365,7 +365,7 @@ void func_80220ED4_de(SharedPlayer *player)
       }
       if (material->flags & 0x80000)
       {
-        player->views5E8.view854_147.unk854 -= D_800D2988;
+        player->views5E8.view854_147.unk854 -= D_800CD738;
         if (player->views5E8.view854_147.unk854 <= 0.0f)
         {
           if (player->views5E4.view5E4_2.health > 0)
@@ -465,7 +465,7 @@ void func_80220ED4_de(SharedPlayer *player)
       scratch.views0.view0_1.to.z = actor->views0.view8_3.pos.z;
       if (func_8024491C_de(actor, actor->views0.view8_3.pos, scratch.views0.view0_1.to, &D_801000F0, f22, f21, f20, f0) != 0)
       {
-        floor = D_80103FCC->y - actor->views0.view8_3.pos.y;
+        floor = D_800FFFCC->y - actor->views0.view8_3.pos.y;
         player->views5E8.view6E8_79.unk6E8.y -= rise - floor;
         rise = floor;
       }
@@ -474,7 +474,7 @@ void func_80220ED4_de(SharedPlayer *player)
     func_8022BD94_de(player, actor, material);
     if (player->views5E8.view678_40.unk678 > 0.0f)
     {
-      player->views5E8.view678_40.unk678 -= D_800D2988;
+      player->views5E8.view678_40.unk678 -= D_800CD738;
       if (player->views5E8.view678_40.unk678 < 0.0f)
       {
         player->views5E8.view678_40.unk678 = 0.0f;
@@ -509,12 +509,12 @@ void func_80220ED4_de(SharedPlayer *player)
         player->views5E8.view854_147.unk854 = after->timer;
       }
     }
-    func_8028A27C_de(&D_8011FE88, actor, &prev, &actor->views0.view8_3.pos);
+    func_8028A27C_de(&D_8011BDC8, actor, &prev, &actor->views0.view8_3.pos);
     if (hit != 0)
     {
-      if ((D_801041F0 != 0) && ((*D_801041F0) == 1))
+      if ((D_801001F0 != 0) && ((*D_801001F0) == 1))
       {
-        func_80278D78_de(D_801041F0, soundFlags | 2, actor);
+        func_80278D78_de(D_801001F0, soundFlags | 2, actor);
       }
       if (D_8010028C != 0)
       {
@@ -533,9 +533,9 @@ void func_80220ED4_de(SharedPlayer *player)
         player->views5E8.view6C0_64.velX *= 0.001f;
       }
     }
-    if ((D_801041F0 != 0) && ((*D_801041F0) == 3))
+    if ((D_801001F0 != 0) && ((*D_801001F0) == 3))
     {
-      func_802ACA54_de(player, D_801041F0);
+      func_802ACA54_de(player, D_801001F0);
     }
     if ((before != 0) && (after != 0))
     {
@@ -550,10 +550,10 @@ void func_80220ED4_de(SharedPlayer *player)
       {
         player->views5E8.view5EC_5.unk5EC = after->item;
         player->views5E8.view5F0_9.unk5F0 = after->item;
-        D_8013B2C8 = after->item;
+        D_80137208 = after->item;
       }
     }
-    world = &D_8011FE88;
+    world = &D_8011BDC8;
     for (i = 0; i < world->count; i++)
     {
       entry = world->objects[i];
@@ -566,7 +566,7 @@ void func_80220ED4_de(SharedPlayer *player)
           diff.z = player->views0.view8_3.pos.z - entry->pos.z;
           if (((f32) ((s32) func_802B72B0_de(((diff.x * diff.x) + (diff.y * diff.y)) + (diff.z * diff.z)))) < def->radius)
           {
-            if (func_8044D220_de(&D_8011FE88, -1, def->item, &found, 1) != 0)
+            if (func_8044D220_de(&D_8011BDC8, -1, def->item, &found, 1) != 0)
             {
               world->offset.x = player->views0.view8_3.pos.x - found.pos.x;
               world->offset.y = player->views0.view8_3.pos.y - found.pos.y;
@@ -593,7 +593,7 @@ void func_80220ED4_de(SharedPlayer *player)
   player->views5E8.view688_43.input = saved;
   {
     f32 fade = player->views5E8.view11E0_186.unk11E0;
-    D_800D2988 = scale;
+    D_800CD738 = scale;
     if (fade != 0.0f)
     {
       f32 left = fade - (scale * 0.042857144f);
@@ -631,17 +631,17 @@ void func_80220ED4_de(SharedPlayer *player)
     sound = 102;
     if (D_801462E5 != 0)
     {
-      if ((D_801468F4 != 0) && (player->views5D8.view5D8_9.profile->remote != 0))
+      if ((D_80142834 != 0) && (player->views5D8.view5D8_9.profile->remote != 0))
       {
-        sound = D_800CE47C;
+        sound = D_800C922C;
       }
       else
       {
-        sound = D_800CE430[player->views18.view18_5.body->kind];
+        sound = D_800C91E0_de[player->views18.view18_5.body->kind];
         player->views0.view3_2.team = player->views5D8.view5D8_9.profile->team;
       }
     }
-    func_8028B274_de(&D_8011FE88, player, sound, player->views5E8.view86C_125.unk86C);
+    func_8028B274_de(&D_8011BDC8, player, sound, player->views5E8.view86C_125.unk86C);
     if (player->views5E8.view870_157.unk870 != player->views5E8.view86C_125.unk86C)
     {
       if ((func_8024B6A0_de(actor, player->views5E8.view86C_125.unk86C, 0) == 0) && (func_80245798_de() != 0))
@@ -688,13 +688,13 @@ void func_80220ED4_de(SharedPlayer *player)
   player->views1C.view2E8_37.emitter.unk6C = player->views1C.view6C_9.yaw;
   player->views1C.view2E8_37.emitter.unk5C = player->views1C.view5C_6.unk5C;
   player->views5E8.view774_115.unk774 = player->views0.view8_3.pos;
-  if ((D_801462C8.flags & 8) || ((D_801462C8.split != 0) && (player->views5D8.view5D8_9.profile->counts != 0)))
+  if ((D_80142208_de.flags & 8) || ((D_80142208_de.split != 0) && (player->views5D8.view5D8_9.profile->counts != 0)))
   {
     player->views5E8.view5F4_13.ammo[0] = func_8022ACB8_de(player, 0, 0);
     player->views5E8.view5F4_13.ammo[1] = func_8022ACB8_de(player, 1, 0);
     player->views5E8.view5F4_13.ammo[2] = func_8022ACB8_de(player, 2, 0);
   }
-  if (D_801462C8.flags & 4)
+  if (D_80142208_de.flags & 4)
   {
     for (slot = 21; slot >= 0; slot--)
     {
@@ -728,7 +728,7 @@ void func_80220ED4_de(SharedPlayer *player)
   func_80218B84_de(&player->views5E8.viewCCC_164.unkCCC, player, &player->views1C.view458_40.unk458);
   if (player->views5E8.view62E_17.character == 0)
   {
-    player->views13B4.view13B4_5.states = D_800CED30;
+    player->views13B4.view13B4_5.states = D_800C9AEC_de;
   }
   else
   {
@@ -737,7 +737,7 @@ void func_80220ED4_de(SharedPlayer *player)
   func_802A65E0_de(&player->views5E8.viewD40_165.unkD40, player);
   if (player->views5E8.view11D8_147.unk11D8 > 0.0f)
   {
-    player->views5E8.view11D8_147.unk11D8 -= D_800D2988;
+    player->views5E8.view11D8_147.unk11D8 -= D_800CD738;
     if (player->views5E8.view11D8_147.unk11D8 <= 0.0f)
     {
       player->views1C.view100_8.unk100 |= 0x1000000;
@@ -754,7 +754,7 @@ void func_80220ED4_de(SharedPlayer *player)
   }
   if (player->views5E8.view11EC_189.unk11EC > 0.0f)
   {
-    f32 left = player->views5E8.view11EC_189.unk11EC - D_800D2988;
+    f32 left = player->views5E8.view11EC_189.unk11EC - D_800CD738;
     if (!(left >= 0.0f))
     {
       left = 0.0f;
@@ -774,7 +774,7 @@ void func_80220ED4_de(SharedPlayer *player)
       offset = 23;
     }
   }
-  func_8028B274_de(&D_8011FE88, &player->views1C.view2E8_37.emitter, D_800D052C[player->views5E8.view62E_17.character]->sound + offset, player->views1C.view484_44.voice->bank);
+  func_8028B274_de(&D_8011BDC8, &player->views1C.view2E8_37.emitter, D_800CB2EC[player->views5E8.view62E_17.character]->sound + offset, player->views1C.view484_44.voice->bank);
   if (!(player->views1C.view100_8.unk100 & 0x400))
   {
     player->views5E8.view870_157.unk870 = player->views5E8.view86C_125.unk86C;
@@ -795,7 +795,7 @@ void func_80220ED4_de(SharedPlayer *player)
   }
   if ((!(player->views122C.view122C_4.fxFlags & 0x10020)) && (player->views122C.view122C_4.fxFlags != 0))
   {
-    player->fxTime -= D_800D2988;
+    player->fxTime -= D_800CD738;
     if (player->fxTime <= 0.0f)
     {
       player->unk1240 = 0.0f;
@@ -851,7 +851,7 @@ void func_80220ED4_de(SharedPlayer *player)
     }
     if (player->fxStage == 0)
     {
-      player->fxTime += D_800D2988;
+      player->fxTime += D_800CD738;
       if ((player->fxTime > 15.0f) || (player->fxTime < 0.0f))
       {
         player->fxSpeed = -player->fxSpeed;
@@ -866,7 +866,7 @@ void func_80220ED4_de(SharedPlayer *player)
     else
       if (player->fxStage == 1)
     {
-      player->fxTime += D_800D2988;
+      player->fxTime += D_800CD738;
       if (player->fxTime > 75.0f)
       {
         player->fxStage = 2;
@@ -876,7 +876,7 @@ void func_80220ED4_de(SharedPlayer *player)
     else
       if (player->fxStage == 2)
     {
-      player->fxTime += D_800D2988;
+      player->fxTime += D_800CD738;
       if (player->fxTime >= 150.0f)
       {
         player->fxStage = 3;

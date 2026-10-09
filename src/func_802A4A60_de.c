@@ -5,7 +5,7 @@
 /* Animator exists in common/unused.h; active owning contract is pending. */
 
 
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 extern f32 func_80274A90_de(f32 low, f32 high);
 
 void func_802A4A60_de(Animator *a) {
@@ -25,13 +25,13 @@ void func_802A4A60_de(Animator *a) {
         }
         break;
     case 1:
-        a->time -= D_800D2988;
+        a->time -= D_800CD738;
         if (a->time < 0.0f) {
             next = 1;
         }
         break;
     case 4:
-        a->time += D_800D2988;
+        a->time += D_800CD738;
         if (a->valueDuration <= a->time) {
             a->time = a->valueDuration;
             next = 1;
@@ -41,7 +41,7 @@ void func_802A4A60_de(Animator *a) {
         a->value = op0 * a->valueFrom + op1 * a->valueTo;
         break;
     case 6:
-        a->time += D_800D2988;
+        a->time += D_800CD738;
         if (a->colourDuration <= a->time) {
             a->time = a->colourDuration;
             next = 1;

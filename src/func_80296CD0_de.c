@@ -9,7 +9,7 @@
 
 
 
-extern Ui *D_8014D080;
+extern Ui *D_80146E00;
 extern void func_802991D4_de(s32 id, Widget **links, s32 direction);
 
 void func_80296CD0_de(s32 direction) {
@@ -17,7 +17,7 @@ void func_80296CD0_de(s32 direction) {
     Widget **links;
     s32 id;
 
-    widget = D_8014D080->screens[D_8014D080->current].focus;
+    widget = D_80146E00->screens[D_80146E00->current].focus;
     id = -1;
     links = widget->links;
     if (widget == 0 || !(widget->flags & 0x10)) {

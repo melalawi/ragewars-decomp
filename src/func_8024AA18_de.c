@@ -11,11 +11,11 @@
  * is projected along it onto a plane just below the object (0.9 of its height up to 512), grown by 0.003
  * per unit of height, turned by the object's orientation and placed on the ground; the shadow is then
  * submitted through func_8024BA7C_de. */
-extern char D_8011FFB0;
-extern char D_8013B1A8;
-extern s32 D_800D297C;
-extern s32 D_800D15E0;
-extern f32 D_800D15F0;
+extern char D_8011BEF0;
+extern char D_801370E8;
+extern s32 D_800CD72C;
+extern s32 D_800CC390;
+extern f32 D_800CC3A0;
 extern s32 func_8024E158_de(void);
 extern f32 func_8024E650_de(char *, s32);
 extern void *func_802799C0_de(void *, s32);
@@ -52,10 +52,10 @@ void func_8024AA18_de(char *obj, s32 unused, char *info) {
             }
             diff = ((func_8024AA08_S1 *)(obj))->unkC - ground;
             height = (512.0f < diff) ? 512.0f : diff;
-            if ((((func_8024AA08_S1 *)(obj))->unkBC = func_802799C0_de(&D_8011FFB0, 1)) == 0) {
+            if ((((func_8024AA08_S1 *)(obj))->unkBC = func_802799C0_de(&D_8011BEF0, 1)) == 0) {
                 return;
             }
-            light = obj + (D_800D297C * 0x18 + 0x140);
+            light = obj + (D_800CD72C * 0x18 + 0x140);
             dir.x = ((func_8024AA08_S2 *)(light))->unk10 * 0.007874016f;
             dir.y = ((func_8024AA08_S2 *)(light))->unk11 * 0.007874016f;
             dir.z = ((func_8024AA08_S2 *)(light))->unk12 * 0.007874016f;
@@ -63,13 +63,13 @@ void func_8024AA18_de(char *obj, s32 unused, char *info) {
                                          (f32)((func_8024AA08_S2 *)(light))->unk9 * (f32)((func_8024AA08_S2 *)(light))->unk9 +
                                          (f32)((func_8024AA08_S2 *)(light))->unk9 * (f32)((func_8024AA08_S2 *)(light))->unk9) *
                        -0.00090497744f;
-            func_80268A40_de(&D_8013B1A8, ((Player *)(obj))->pos, &dir, &strength);
+            func_80268A40_de(&D_801370E8, ((Player *)(obj))->pos, &dir, &strength);
             if (strength < -1.0f) {
                 strength = -1.0f;
             }
             alpha = strength * 56.0f + 128.0f;
-            if (D_800D15E0 == 1) {
-                alpha = alpha * D_800D15F0 * 0.003921569f;
+            if (D_800CC390 == 1) {
+                alpha = alpha * D_800CC3A0 * 0.003921569f;
             }
             ((func_8024AA08_S1 *)(obj))->unk13A = alpha;
             dir.y = 1.0f;

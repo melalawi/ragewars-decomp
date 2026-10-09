@@ -58,7 +58,7 @@ extern void func_8040E8D8_de(s32,s32);
 extern void func_8041C244_de(void);
 extern void func_80434FB4_de(s32);
 extern Label *func_8040EC30_de(s32,s32);
-extern s32 D_800D36D4, D_800E28CC, D_800DF4C0,D_8010F190,D_80146D60,D_8014AD94;
+extern s32 D_800D36D4, D_800DE87C_de, D_800DF4C0,D_8010B190_de,D_80142CA0_de,D_80146CD4_de;
 
 #if defined(VERSION_DE)
 extern char D_800DD450[];
@@ -80,7 +80,7 @@ extern char D_800DD450[];
 extern s32 D_800E3514;
 
 #endif
-extern SlotDialog *D_800E3518;
+extern SlotDialog *D_800DF4C8;
 void func_8041BE90_de(void) {
     s32 sp10;
     u32 sp14;
@@ -92,15 +92,15 @@ void func_8041BE90_de(void) {
     Label *temp_s0;
 
     func_802991D4_de(SLOT_RESOURCE_962);
-    func_8040E8D8_de(D_800E3518->absent, 0);
+    func_8040E8D8_de(D_800DF4C8->absent, 0);
     var_s2 = 0;
-    func_8040E8D8_de(D_800E3518->unavailable, 0);
+    func_8040E8D8_de(D_800DF4C8->unavailable, 0);
     var_s1 = 1;
-    func_8040E8D8_de(D_800E3518->prompt, 0);
+    func_8040E8D8_de(D_800DF4C8->prompt, 0);
     temp_v0 = func_80264614_de(0);
     if (temp_v0 == 1) {
         func_8041C19C_de();
-        if (D_800E3518->ready == 1) {
+        if (D_800DF4C8->ready == 1) {
             func_80404E28_de(D_800DF4C0);
             temp_v0_2 = func_80404F04_de(D_800DF4C0);
             switch (temp_v0_2) { /* irregular */
@@ -122,25 +122,25 @@ void func_8041BE90_de(void) {
         }
     }
     if (temp_v0 == 0) {
-        D_800E3518->state = 1;
-        D_800E3518->elapsed = 0;
-        func_8040E8D8_de(D_800E3518->main, 0);
-        func_8040E8D8_de(D_800E3518->unavailable, 1);
+        D_800DF4C8->state = 1;
+        D_800DF4C8->elapsed = 0;
+        func_8040E8D8_de(D_800DF4C8->main, 0);
+        func_8040E8D8_de(D_800DF4C8->unavailable, 1);
         goto block_25;
     }
-    if (D_800E3518->ready == 0) {
-        D_800E3518->state = 2;
-        D_800E3518->elapsed = 0;
-        func_8040E8D8_de(D_800E3518->main, 0);
-        func_8040E8D8_de(D_800E3518->absent, 1);
+    if (D_800DF4C8->ready == 0) {
+        D_800DF4C8->state = 2;
+        D_800DF4C8->elapsed = 0;
+        func_8040E8D8_de(D_800DF4C8->main, 0);
+        func_8040E8D8_de(D_800DF4C8->absent, 1);
         var_a0 = SLOT_RESOURCE_971;
         goto block_24;
     }
-    if ((var_s2 == 1) || (D_8010F190 & 0x1000)) {
+    if ((var_s2 == 1) || (D_8010B190_de & 0x1000)) {
         func_8029973C_de();
-        D_80146D60 = 1;
-        D_800E28CC = 1;
-        D_8014AD94 = 0;
+        D_80142CA0_de = 1;
+        D_800DE87C_de = 1;
+        D_80146CD4_de = 0;
         if (var_s2 == 0) {
 #if defined(VERSION_DE)
             D_800DF4C4 = 0;
@@ -174,17 +174,17 @@ void func_8041BE90_de(void) {
         func_8041C244_de();
         return;
     }
-    temp_s0 = func_8040EC30_de(D_800E3518->root, SLOT_RESOURCE_968);
+    temp_s0 = func_8040EC30_de(D_800DF4C8->root, SLOT_RESOURCE_968);
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-    func_802A0C08_de(D_800E3518->text, D_800EDAD0, D_800DF4C0 + 1);
+    func_802A0C08_de(D_800DF4C8->text, D_800EDAD0, D_800DF4C0 + 1);
 #else
-    func_802A0C08_de(D_800E3518->text, D_800DD450, D_800DF4C0 + 1);
+    func_802A0C08_de(D_800DF4C8->text, D_800DD450, D_800DF4C0 + 1);
 #endif
-    temp_s0->text = D_800E3518->text;
-    D_800E3518->state = 3;
-    D_800E3518->elapsed = 0;
-    func_8040E8D8_de(D_800E3518->main, 0);
-    func_8040E8D8_de(D_800E3518->prompt, 1);
+    temp_s0->text = D_800DF4C8->text;
+    D_800DF4C8->state = 3;
+    D_800DF4C8->elapsed = 0;
+    func_8040E8D8_de(D_800DF4C8->main, 0);
+    func_8040E8D8_de(D_800DF4C8->prompt, 1);
     var_a0 = SLOT_RESOURCE_966;
 block_24:
     func_802991D4_de(var_a0);
@@ -194,7 +194,7 @@ block_25:
 
 /* Calls func_802A2394_de and func_8029973C_de, then func_80298368_de with 2, sets D_8014ADA0 and returns
    one. */
-extern s32 D_8014ADA0;
+extern s32 D_80146CE0;
 extern void func_802A2394_de();
 extern void func_8029973C_de();
 extern void func_80298368_de(s32);
@@ -203,6 +203,6 @@ s32 func_8041C164_de(void) {
     func_802A2394_de();
     func_8029973C_de();
     func_80298368_de(2);
-    D_8014ADA0 = 1;
+    D_80146CE0 = 1;
     return 1;
 }

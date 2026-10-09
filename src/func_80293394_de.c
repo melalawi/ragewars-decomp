@@ -6,8 +6,8 @@
 
 extern f32 D_800CA560[];
 
-extern s32 D_800E28D0;
-extern s32 D_800E28D4;
+extern s32 D_800DE880_de;
+extern s32 D_800DE884_de;
 
 extern void func_8029311C_de(void *arg0, s8 *arg1, s32 arg2, s32 arg3,
                           s32 arg4, s32 arg5);

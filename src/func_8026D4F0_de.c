@@ -10,7 +10,7 @@
 
 
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern Frame118 *D_8011BDC0;
 #if defined(VERSION_DE)
 extern u32 D_800DE854;
@@ -23,9 +23,9 @@ extern u32 D_800DD504;
 #elif defined(VERSION_US_REV1)
 extern u32 D_800E28A4;
 #endif
-extern ObjectState18 D_8013B2D8;
-extern s32 D_800D15E0;
-extern f32 D_800D15E4[4];
+extern ObjectState18 D_80137218;
+extern s32 D_800CC390;
+extern f32 D_800CC394_de[4];
 extern void func_80253BBC_de(s32 heap, void **resource);
 extern void *func_8028FDB4_de(void *table, s32 index);
 extern s32 func_8026B504_de(s32 matrix, s32 lights, void *material);
@@ -43,13 +43,13 @@ void func_8026D4F0_de(void **resource, s32 unused, s32 matrix, s32 segment, s32 
     ObjectState18 *shared;
     f32 *tint;
 
-    shared = &D_8013B2D8;
-    D_800D15E0 = 3;
+    shared = &D_80137218;
+    D_800CC390 = 3;
     shared->fog[0] = 0;
     shared->fog[1] = 0;
     shared->fog[2] = 0;
     shared->flags |= 0x1402;
-    tint = D_800D15E4;
+    tint = D_800CC394_de;
     tint[0] = r;
     tint[1] = g;
     tint[2] = b;
@@ -57,29 +57,29 @@ void func_8026D4F0_de(void **resource, s32 unused, s32 matrix, s32 segment, s32 
     shared->fog[3] = a;
     pass = (pass + 1) % 18;
 #if defined(VERSION_DE)
-    if (D_800DE854 - ((u32)D_80110634 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+    if (D_800DE854 - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
 #elif defined(VERSION_EU)
-    if (D_800EEEC4 - ((u32)D_80110634 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+    if (D_800EEEC4 - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
 #elif defined(VERSION_EU_X)
-    if (D_800EA084 - ((u32)D_80110634 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+    if (D_800EA084 - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
 #elif defined(VERSION_US)
-    if (D_800DD504 - ((u32)D_80110634 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+    if (D_800DD504 - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
 #elif defined(VERSION_US_REV1)
-    if (D_800E28A4 - ((u32)D_80110634 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+    if (D_800E28A4 - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
 #endif
         return;
     }
     if (func_80269A80_de(shared, pass) != 0) {
-        gDPSetRenderMode(D_80110634++, 0x0C184DD8, 0);
+        gDPSetRenderMode(D_8010C574++, 0x0C184DD8, 0);
         func_80268CE0_de(1);
         header = *resource;
         func_80253BBC_de(0, resource);
-        if (segment != 0) gSPSegment(D_80110634++, 1, matrix) else gSPMatrix(D_80110634++, matrix, G_MTX_LOAD);
+        if (segment != 0) gSPSegment(D_8010C574++, 1, matrix) else gSPMatrix(D_8010C574++, matrix, G_MTX_LOAD);
         base = textures;
         if (base == 0) {
             base = func_8028FDB4_de(header, 0);
         }
-        gSPSegment(D_80110634++, 2, (unsigned int)base);
+        gSPSegment(D_8010C574++, 2, (unsigned int)base);
         parts = func_8028FDB4_de(header, 2);
         count = *(s32 *)parts;
         for (i = 0; i < count; i++) {
@@ -92,12 +92,12 @@ void func_8026D4F0_de(void **resource, s32 unused, s32 matrix, s32 segment, s32 
                 Gfx *cmd;
                 void *list = func_8028FDB4_de(part, 1);
 
-                cmd = D_80110634++;
+                cmd = D_8010C574++;
                 gSPDisplayList(cmd, (unsigned int)list);
             }
         }
     }
-    D_800D15E0 = 0;
+    D_800CC390 = 0;
 }
 
 extern void func_8026AD8C_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3);

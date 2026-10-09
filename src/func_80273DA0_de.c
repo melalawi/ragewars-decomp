@@ -3,7 +3,7 @@
 
 /* Expands a 4x4 transform into an affine 4x4 matrix with its second and third rows swapped, a zero last column and the pooled corner D_800C99F0[1]. */
 
-extern const f32 D_800C99F0[];
+extern const f32 D_800C4900_de[];
 
 void func_80273DA0_de(f32 *dst, f32 *src) {
     dst[0] = src[0];
@@ -19,5 +19,5 @@ void func_80273DA0_de(f32 *dst, f32 *src) {
     dst[13] = src[13];
     dst[14] = src[14];
     dst[3] = dst[7] = dst[11] = 0.0f;
-    dst[15] = D_800C99F0[1];
+    dst[15] = D_800C4900_de[1];
 }

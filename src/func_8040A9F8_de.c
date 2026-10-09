@@ -6,19 +6,19 @@
    D_800D7814 otherwise. Returns zero. */
 
 
-extern s32 D_80153730;
-extern s32 D_80153774;
-extern char D_800D7810[];
-extern char D_800D7818[];
-extern char D_800D7814[];
+extern s32 D_8014D4A0;
+extern s32 D_8014D4E4;
+extern char D_800D37E4[];
+extern char D_800D37EC[];
+extern char D_800D37E8[];
 
 s32 func_8040A9F8_de(struct Field_func_8040A4A0_de *field) {
-    if (D_80153730 != 0) {
-        field->text = D_800D7810;
-    } else if (D_80153774 != 0) {
-        field->text = D_800D7818;
+    if (D_8014D4A0 != 0) {
+        field->text = D_800D37E4;
+    } else if (D_8014D4E4 != 0) {
+        field->text = D_800D37EC;
     } else {
-        field->text = D_800D7814;
+        field->text = D_800D37E8;
     }
     return 0;
 }

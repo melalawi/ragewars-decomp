@@ -3,7 +3,7 @@
 
 
 
-extern func_80245A10_S1 *D_800E2830;
+extern func_80245A10_S1 *D_800DE7E0;
 void func_80245A20_de(int arg0) {
-    D_800E2830->unk104 = arg0;
+    D_800DE7E0->unk104 = arg0;
 }

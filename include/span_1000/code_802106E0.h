@@ -370,10 +370,10 @@ struct func_80212450_S3;
 typedef struct func_80212450_S3 func_80212450_S3;
 
 /* unbake published declaration: published_e25fcc5f08d0c88c7e3de28a */
-extern float D_800C70F4;
+extern float D_800C2004_de;
 
 /* unbake published declaration: published_e53564183ff9c7bd7e5b4b10 */
-extern float D_800C70F0;
+extern float D_800C2000_de;
 
 struct func_80212828_S5;
 /* unbake published declaration: published_f2894711801a466a86ad8cc3 */

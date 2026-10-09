@@ -4,7 +4,7 @@
 
 
 extern char D_801379C0;
-extern char D_8013B1A8;
+extern char D_801370E8;
 
 extern void func_80279A00_de(void *arg0);
 extern void func_80284178_de(void *);
@@ -41,7 +41,7 @@ void func_80283278_de(void *arg0, s32 arg1) {
                     }
                     temp_a1 = ((struct Measured_func_80283278_de_7a14ca935931 *)(var_s0))->value;
                     if (temp_a1 != 0) {
-                        func_80268C7C_de(&D_8013B1A8, temp_a1);
+                        func_80268C7C_de(&D_801370E8, temp_a1);
                         ((struct Measured_func_80283278_de_7a14ca935931 *)(var_s0))->value = 0;
                     }
                     temp_v1_3 = ((struct Measured_func_80283278_de_e5800f736d95 *)(var_s0))->value;

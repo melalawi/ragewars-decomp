@@ -7,7 +7,7 @@
 
 
 extern Vec3 D_801002A8;
-extern Vec3 D_801042C8;
+extern Vec3 D_801002C8;
 extern char D_8011D8D0;
 
 extern void func_80271818_de(Vector4f *, Vec3 *);
@@ -22,7 +22,7 @@ void func_802835A8_de(void *arg0, s32 arg1) {
     Vec3 position;
 
     if ((*((func_8028357C_S1 *)(arg0))->unk118 & 0x10) != 0) {
-        position = D_801042C8;
+        position = D_801002C8;
     } else {
         position = ((func_8028357C_S1 *)(arg0))->unk1C;
     }

@@ -7,9 +7,9 @@
 
 
 
-extern u8 D_8014D46C;
-extern u8 D_8014D4B0;
-extern OSPifRam D_80154110;
+extern u8 D_801471DC_de;
+extern u8 D_80147220;
+extern OSPifRam D_8014DE80;
 
 void func_8044799C_de(u8 cmd) {
     u8 *ptr;
@@ -17,9 +17,9 @@ void func_8044799C_de(u8 cmd) {
     s32 i;
     u8 *count;
 
-    D_8014D4B0 = cmd;
-    ptr = (u8 *)&D_80154110;
-    D_80154110.pifstatus = 1;
+    D_80147220 = cmd;
+    ptr = (u8 *)&D_8014DE80;
+    D_8014DE80.pifstatus = 1;
     requestformat.dummy = 0xFF;
     requestformat.txsize = 1;
     requestformat.rxsize = 3;
@@ -29,7 +29,7 @@ void func_8044799C_de(u8 cmd) {
     requestformat.status = 0xFF;
     requestformat.dummy1 = 0xFF;
 
-    count = &D_8014D46C;
+    count = &D_801471DC_de;
     for (i = 0; i < *count; i++) {
         *(__OSContRequesFormat *)ptr = requestformat;
         ptr += sizeof(requestformat);

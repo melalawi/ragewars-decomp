@@ -2,7 +2,7 @@
  * control IDs (secondary -1 means absent); 8042B1B8 and 8042ACD8
  * return the arena index at offset 12. The category at offset 8 matches
  * membership of the four cup lists, including each category's sentinel.
- * Retained original label: D_800E4F64; current VMA 800E4F64. */
+ * Retained original label: D_800E0F14_de; current VMA 800E4F64. */
 struct CatalogueArenaRecord {
     int primary_control;
     int secondary_control;

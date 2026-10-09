@@ -157,7 +157,7 @@ struct func_80435898_S1 {
 };
 
 /* unbake published declaration: published_7a842c8351efc7762360e956 */
-extern int D_800E54A0;
+extern int D_800E1450_de;
 
 struct Entry_func_80435128_de;
 /* unbake published declaration: published_7b556071b5a3a5ac656c4d1a */
@@ -278,7 +278,7 @@ struct func_80435898_S1;
 typedef struct func_80435898_S1 func_80435898_S1;
 
 /* unbake published declaration: published_e04c760d8757021e8e609310 */
-extern float D_800E1EF8;
+extern float D_800DDEC8_de;
 
 struct Player_func_80435A10_de;
 /* unbake published declaration: published_ea41211f0cba38f9c2589052 */

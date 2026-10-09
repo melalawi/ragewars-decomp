@@ -11,15 +11,15 @@
 
 
 
-extern struct Table_func_804352C8_de *D_800E54A4;
-extern struct PlayerRecord D_80102B00[];
+extern struct Table_func_804352C8_de *D_800E1454_de;
+extern struct PlayerRecord D_800FEB00[];
 extern void func_8022EF30_de(struct PlayerRecord *);
 extern void func_80433BCC_de(s32);
 
 void func_80435844_de(s32 index) {
-    if (D_800E54A4->slots[index].z == 1) {
-        func_8022EF30_de(&D_80102B00[index]);
-        D_800E54A4->slots[index].z = 2;
+    if (D_800E1454_de->slots[index].z == 1) {
+        func_8022EF30_de(&D_800FEB00[index]);
+        D_800E1454_de->slots[index].z = 2;
         func_80433BCC_de(-1);
     }
 }

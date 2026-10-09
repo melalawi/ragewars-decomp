@@ -11,7 +11,7 @@ typedef struct LevelSelectOwner {
     LevelSelectDescriptor *descriptor;
 } LevelSelectOwner;
 extern s32 D_80154034;
-extern s32 D_801462CC;
+extern s32 D_8014220C;
 extern u8 D_801462E5;
 
 static inline s32 levelBit(s32 level) {
@@ -61,7 +61,7 @@ static inline s32 firstUnlocked(void) {
     s32 level = 0;
     s32 i;
     for (i = 0; i < 11; i++) {
-        if (D_801462CC & levelBit(level)) {
+        if (D_8014220C & levelBit(level)) {
             return level;
         }
         level++;

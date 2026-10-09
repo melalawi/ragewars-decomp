@@ -10,20 +10,20 @@ extern char D_800ED404_eu[];
 
 #else
 #endif
-/* Formats the three floats at offsets 0xC, 0x10 and 0x14 of the structure D_800E28BC points to,
+/* Formats the three floats at offsets 0xC, 0x10 and 0x14 of the structure D_800DE86C points to,
    truncated to integers, into a field's text with the format D_800DCD84, nine bytes before the
    length func_80441FE8_de reports. Returns zero. */
 struct State_func_8040A614_de;
 
-extern struct State_func_8040A614_de *D_800E28BC;
+extern struct State_func_8040A614_de *D_800DE86C;
 extern char D_800DCD84[];
 extern s32 func_80441FE8_de(struct Field *);
 extern void func_8026591C_de(char *, char *, s32, s32, s32);
 
 s32 func_8040A614_de(struct Field *field) {
-    s32 x = D_800E28BC->x;
-    s32 y = D_800E28BC->y;
-    s32 z = D_800E28BC->z;
+    s32 x = D_800DE86C->x;
+    s32 y = D_800DE86C->y;
+    s32 z = D_800DE86C->z;
     char *text =
 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)

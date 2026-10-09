@@ -13,11 +13,11 @@ void func_802110C4_de(struct Player_func_802110C4_de *player) {
 
     if (player != 0 && player->active != 0) {
         for (i = 0; i < 8; i++) {
-            player->first[i] = D_800C70F0;
-            player->second[i] = D_800C70F0;
+            player->first[i] = D_800C2000_de;
+            player->second[i] = D_800C2000_de;
         }
         player->timer = 0;
         player->ready = 1;
-        player->level = D_800C70F4;
+        player->level = D_800C2004_de;
     }
 }

@@ -3,10 +3,10 @@
 #include "span_16E000/code_80434F4C.h"
 #include "types.h"
 /* Handles the answer on the screen D_800E53C0. */
-extern struct MenuRules *D_800E53C0;
-extern s32 D_80146894;
-extern s32 D_80146918;
-extern s32 D_801468F4;
+extern struct MenuRules *D_800E1370;
+extern s32 D_801427D4;
+extern s32 D_80142858;
+extern s32 D_80142834;
 extern void func_8029973C_de();
 extern s32 func_8043C308_de(struct MenuRules *);
 extern s32 func_80299A08_de();
@@ -17,10 +17,10 @@ extern void func_80298368_de(s32);
 s32 func_8042D788_de(void) {
     s32 *paused;
     func_8029973C_de();
-    if (func_8043C308_de(D_800E53C0) == 1) {
+    if (func_8043C308_de(D_800E1370) == 1) {
         return 0;
     }
-    paused = &D_80146894;
+    paused = &D_801427D4;
     *paused = 0;
     switch (func_80299A08_de()) {
 #if defined(VERSION_DE)
@@ -31,11 +31,11 @@ s32 func_8042D788_de(void) {
     case 0x23E - 2:
 #endif
         if (((u8 *)paused)[-0x5BF] == 0) {
-            func_8043C278_de(D_800E53C0);
-            D_800E53C0->locked = 0;
+            func_8043C278_de(D_800E1370);
+            D_800E1370->locked = 0;
         } else {
-            D_80146918 = 0;
-            D_801468F4 = 0;
+            D_80142858 = 0;
+            D_80142834 = 0;
             func_80298368_de(0xF);
         }
         break;

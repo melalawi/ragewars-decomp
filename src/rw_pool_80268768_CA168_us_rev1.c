@@ -3,4 +3,4 @@
  */
 const float D_800C4478_de = 1.0f;
 const float D_800C447C = 2.5f;
-const float D_800C9570 = 0.349999994f;
+const float D_800C4480_de = 0.349999994f;

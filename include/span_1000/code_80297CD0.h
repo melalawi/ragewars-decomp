@@ -358,7 +358,7 @@ struct State_func_80297DBC_de;
 typedef struct State_func_80297DBC_de State_func_80297DBC_de;
 
 /* unbake published declaration: published_c5bbd2230248a43cba767665 */
-extern int D_8014D09C;
+extern int D_80146E1C;
 
 /* unbake published declaration: published_cb3ed8b7ac36ecc746080895 */
 extern void func_80299874_de(s32 arg0, s32 arg1);

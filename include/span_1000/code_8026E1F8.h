@@ -66,7 +66,7 @@ extern float D_800C4738_de;
 extern float D_800C47E0_de;
 
 /* unbake published declaration: published_528bda01f2f3e4f945cd0b40 */
-extern float D_800C98C8;
+extern float D_800C47D8_de;
 
 /* unbake published declaration: published_52ee53956a7ff1534ae72a4a */
 extern void func_8026E428_de(void);
@@ -246,7 +246,7 @@ typedef struct AttachmentTable AttachmentTable;
 extern float D_800C4824_de;
 
 /* unbake published declaration: published_f645f558ab85dc9c664452a2 */
-extern float D_800C98C4;
+extern float D_800C47D4_de;
 
 struct AttachmentTable;
 /* unbake published declaration: published_f6885118e684accac2690b86 */

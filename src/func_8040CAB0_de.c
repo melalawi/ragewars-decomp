@@ -21,7 +21,7 @@ extern s32 D_8014D584;
 extern s32 D_8014D588;
 extern s32 D_8014D58C;
 extern Batch D_8014D590[];
-extern s32 D_800E2AB8;
+extern s32 D_800DEA68;
 
 
 extern s32 D_8014D714;
@@ -54,10 +54,10 @@ void func_8040CAB0_de(void) {
     }
     first = 0x60;
     last = 0;
-    if (D_800DEA6C != 0x53333 || D_800E2AB8 == 0) {
+    if (D_800DEA6C != 0x53333 || D_800DEA68 == 0) {
         D_800DEA6C = 0x53333;
         func_80417138_de(0x53333);
-        D_800E2AB8 = 1;
+        D_800DEA68 = 1;
     }
     func_802A1898_de(&clip.field_0, &clip.field_8, &clip.field_4, &clip.field_C);
     func_802A1870_de(D_8014D580, D_8014D588, D_8014D584, D_8014D58C);

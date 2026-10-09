@@ -155,7 +155,7 @@ union func_80259A0C_S1_UD8;
 typedef union func_80259A0C_S1_UD8 func_80259A0C_S1_UD8;
 
 /* unbake published declaration: published_3e1e343800b6c8fe55e6f2c4 */
-extern float D_800C8FF8;
+extern float D_800C3F08_de;
 
 struct Node_func_80259918_de;
 /* unbake published declaration: published_62db4dc3a5e8f969523b2f96 */

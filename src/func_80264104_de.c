@@ -8,9 +8,9 @@
 
 
 
-extern s32 D_8010EC90;
+extern s32 D_8010AC90;
 
-extern s32 D_80146894;
+extern s32 D_801427D4;
 
 extern void func_80285D30_de(s32 *);
 extern void func_80285C78_de(void *arg0);
@@ -47,7 +47,7 @@ void func_80264104_de(Obj80264124 *arg0) {
         if (arg0->state == 0) {
             goto reset;
         }
-        global = &D_80146894;
+        global = &D_801427D4;
         if ((*global != 0) || (D_801371DC != 0) || (global[-6] != 13)) {
 reset:
             arg0->amount = 0.0f;
@@ -55,7 +55,7 @@ reset:
         } else {
             object = arg0->object;
             func_80285C78_de(object);
-            first = func_802856E0_de(&D_8010EC90, arg0->x, arg0->y, arg0->z);
+            first = func_802856E0_de(&D_8010AC90, arg0->x, arg0->y, arg0->z);
             arg0->amount = first + func_802856E0_de(object, zero.x, zero.y, zero.z);
         }
         if (arg0->active != 0) {

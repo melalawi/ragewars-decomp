@@ -14,12 +14,12 @@
 
 
 
-extern u8 D_801462C8[];
-extern struct Match_func_8042DEA0_de D_801468A0;
-extern struct Record_func_8042DEA0_de D_80102B00[];
-extern s32 D_800E4680;
-extern s32 D_8015402C;
-extern s32 D_80146948;
+extern u8 D_80142208_de[];
+extern struct Match_func_8042DEA0_de D_801427E0;
+extern struct Record_func_8042DEA0_de D_800FEB00[];
+extern s32 D_800E0630;
+extern s32 D_8014DD9C;
+extern s32 D_80142888;
 extern s32 D_8014DD98;
 
 extern void func_8029973C_de(void);
@@ -50,7 +50,7 @@ void func_8042DEA0_de(void) {
     func_80298368_de(2);
     func_802A230C_de();
     humans = 0;
-    settings = D_801462C8;
+    settings = D_80142208_de;
     for (i = 0; i < 8; i++) {
         status = (struct Status_func_8042DEA0_de *)(settings + 0xD0 + i * 0x96);
         status->lives = 0;
@@ -62,10 +62,10 @@ void func_8042DEA0_de(void) {
             humans++;
         }
     }
-    match = &D_801468A0;
+    match = &D_801427E0;
     match->deaths = 0;
     match->kills = 0;
-    D_800E4680 = 0;
+    D_800E0630 = 0;
     if (settings[0xD] != 0) {
         first = 0;
         while (((struct Status_func_8042DEA0_de *)(settings + 0xD0 + first * 0x96))->joined == 0) {
@@ -74,19 +74,19 @@ void func_8042DEA0_de(void) {
         status = (struct Status_func_8042DEA0_de *)(settings + 0xD0 + first * 0x96);
         switch (settings[0xD]) {
         case 1:
-            D_800E4680 = func_80425C70_de(D_8015402C, 0, status->kind);
+            D_800E0630 = func_80425C70_de(D_8014DD9C, 0, status->kind);
             break;
         case 2:
-            D_800E4680 = func_80425C70_de(D_8015402C, 1, 0);
+            D_800E0630 = func_80425C70_de(D_8014DD9C, 1, 0);
             break;
         case 3:
-            D_800E4680 = func_80425C70_de(D_8015402C, 3, 0);
+            D_800E0630 = func_80425C70_de(D_8014DD9C, 3, 0);
             break;
         case 4:
-            D_800E4680 = func_80425C70_de(D_8015402C, 2, 0);
+            D_800E0630 = func_80425C70_de(D_8014DD9C, 2, 0);
             break;
         }
-        D_80146948 = 0;
+        D_80142888 = 0;
         func_8042E1F0_de();
     }
     switch (D_8014DD98) {
@@ -106,20 +106,20 @@ void func_8042DEA0_de(void) {
     for (i = 0; i < 4; i++) {
         status = (struct Status_func_8042DEA0_de *)(settings + 0xD0 + i * 0x96);
         if (status->joined == 1 && status->computer == 0) {
-            func_802A025C_de(status->name, D_80102B00[i].name);
+            func_802A025C_de(status->name, D_800FEB00[i].name);
             if (settings[0xD] != 0) {
                 status->team = 0;
             } else {
                 status->team = 0xFF;
             }
-            status->unk7B = D_80102B00[i].profile[0];
-            status->unk7D = D_80102B00[i].profile[1];
-            status->unk79 = D_80102B00[i].profile[2];
-            status->unk7A = D_80102B00[i].profile[3];
-            status->unk82 = D_80102B00[i].profile[4];
+            status->unk7B = D_800FEB00[i].profile[0];
+            status->unk7D = D_800FEB00[i].profile[1];
+            status->unk79 = D_800FEB00[i].profile[2];
+            status->unk7A = D_800FEB00[i].profile[3];
+            status->unk82 = D_800FEB00[i].profile[4];
         }
     }
-    config = D_801462C8;
+    config = D_80142208_de;
     if (config[0x580] == 2 && humans >= 2) {
         func_8040C428_de(1);
     } else {

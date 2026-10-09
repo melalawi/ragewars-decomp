@@ -38,7 +38,7 @@
 
 
 
-extern Clip D_800E5DFA[];
+extern Clip D_800F246A[];
 extern char D_0044FA6C[];
 
 extern s32 func_8026437C_de(s32);
@@ -54,7 +54,7 @@ s32 func_8043F37C_eu(void *arg0, Menu_func_8043F37C_eu *menu, void *arg2) {
 
     if (func_8026437C_de(menu->input) != 0) {
         func_8044A0C4_de(player, settings->unk80);
-        func_8025DF34_de(D_800E5DFA[player->views5DC.view5E0_10.slot].mode);
+        func_8025DF34_de(D_800F246A[player->views5DC.view5E0_10.slot].mode);
         func_804427C4_de(arg2, menu, D_0044FA6C);
         return 1;
     }

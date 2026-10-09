@@ -3,7 +3,7 @@
 #include "span_1000/code_80204E78.h"
 /* FAKEMATCH: retains inherited numeric field accesses because a verified live shared layout for those accesses is not available; the old access widths and evaluation order are preserved. */
 #include "types.h"
-extern s32 D_801462C8;
+extern s32 D_80142208_de;
 
 extern f32 func_80274A90_de(f32, f32);
 
@@ -29,7 +29,7 @@ void func_80206080_de(void *arg0, void *arg1) {
     base = &((func_80206080_S2 *)(base))->unk14;
     result = func_80274A90_de(((func_80206080_S2 *)(base))->unkC, ((func_80206080_S2 *)(base))->unk10);
     ((func_80207BB8_S4 *)(arg1))->unk64 = result;
-    ctx = (char *) &D_801462C8;
+    ctx = (char *) &D_80142208_de;
     if (((ObjectState1E_2 *)(ctx))->unk_1D != 0) {
         count = *(s32 *) (ctx - 0x1258);
         if ((u32) count >= 3) {

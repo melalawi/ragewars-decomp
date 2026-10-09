@@ -19,12 +19,12 @@ s32 func_804453E0_us_rev1(struct Field_func_8040A4A0_de *field) {
     return 0;
 }
 
-/* Keeps an option field and the remembered byte D_800CBC90[index] in step, giving a field still at -1 the remembered value and otherwise remembering the field low byte, then mirrors it into D_800CBC94[index] and formats it into the field text with D_800E27D8 three bytes before the length func_80441FE8_de reports, returning zero. Adapted from func_80445824_us_rev1 with the fixed byte slots replaced by the tables D_800CBC90 and D_800CBC94 indexed by the second argument. */
+/* Keeps an option field and the remembered byte D_800D0EE0[index] in step, giving a field still at -1 the remembered value and otherwise remembering the field low byte, then mirrors it into D_800D0EE4[index] and formats it into the field text with D_800E27D8 three bytes before the length func_80441FE8_de reports, returning zero. Adapted from func_80445824_us_rev1 with the fixed byte slots replaced by the tables D_800D0EE0 and D_800D0EE4 indexed by the second argument. */
 
 
 
-extern u8 D_800CBC90[];
-extern u8 D_800CBC94[];
+extern u8 D_800D0EE0[];
+extern u8 D_800D0EE4[];
 extern char D_800E27D8[];
 extern s32 func_80441FE8_de(struct Field_func_80445414_us_rev1 *);
 extern void func_802BD320_de(char *, char *, s32);
@@ -33,23 +33,23 @@ s32 func_80445414_us_rev1(struct Field_func_80445414_us_rev1 *field, s32 index) 
     char *text = *field->text;
 
     if (field->value == -1) {
-        field->value = D_800CBC90[index];
+        field->value = D_800D0EE0[index];
     } else {
-        D_800CBC90[index] = ((u8 *) &field->value)[3];
+        D_800D0EE0[index] = ((u8 *) &field->value)[3];
     }
-    D_800CBC94[index] = D_800CBC90[index];
+    D_800D0EE4[index] = D_800D0EE0[index];
     func_802BD320_de(text + (func_80441FE8_de(field) - 3), D_800E27D8, field->value);
     return 0;
 }
 
-/* Keeps an option field and the remembered byte D_800CBC90[0] in step: a field still at -1 takes the
+/* Keeps an option field and the remembered byte D_800D0EE0[0] in step: a field still at -1 takes the
    remembered value, otherwise the field's low byte is remembered; the value is mirrored into
-   D_800CBC94[0] and formatted into the field's text with D_800E27D8, three bytes before the length
+   D_800D0EE4[0] and formatted into the field's text with D_800E27D8, three bytes before the length
    func_80441FE8_de reports. Returns zero. */
 
 
-extern u8 D_800CBC90[];
-extern u8 D_800CBC94[];
+extern u8 D_800D0EE0[];
+extern u8 D_800D0EE4[];
 extern char D_800E27D8[];
 extern s32 func_80441FE8_de(struct Field_func_80445414_us_rev1 *);
 extern void func_802BD320_de(char *, char *, s32);
@@ -58,23 +58,23 @@ s32 func_804454B4_us_rev1(struct Field_func_80445414_us_rev1 *field) {
     char *text = *field->text;
 
     if (field->value == -1) {
-        field->value = D_800CBC90[0];
+        field->value = D_800D0EE0[0];
     } else {
-        D_800CBC90[0] = ((u8 *) &field->value)[3];
+        D_800D0EE0[0] = ((u8 *) &field->value)[3];
     }
-    D_800CBC94[0] = D_800CBC90[0];
+    D_800D0EE4[0] = D_800D0EE0[0];
     func_802BD320_de(text + (func_80441FE8_de(field) - 3), D_800E27D8, field->value);
     return 0;
 }
 
-/* Keeps an option field and the remembered byte D_800CBC90[1] in step: a field still at -1 takes the
+/* Keeps an option field and the remembered byte D_800D0EE0[1] in step: a field still at -1 takes the
    remembered value, otherwise the field's low byte is remembered; the value is mirrored into
-   D_800CBC94[1] and formatted into the field's text with D_800E27D8, three bytes before the length
+   D_800D0EE4[1] and formatted into the field's text with D_800E27D8, three bytes before the length
    func_80441FE8_de reports. Returns zero. */
 
 
-extern u8 D_800CBC90[];
-extern u8 D_800CBC94[];
+extern u8 D_800D0EE0[];
+extern u8 D_800D0EE4[];
 extern char D_800E27D8[];
 extern s32 func_80441FE8_de(struct Field_func_80445414_us_rev1 *);
 extern void func_802BD320_de(char *, char *, s32);
@@ -83,23 +83,23 @@ s32 func_80445544_us_rev1(struct Field_func_80445414_us_rev1 *field) {
     char *text = *field->text;
 
     if (field->value == -1) {
-        field->value = D_800CBC90[1];
+        field->value = D_800D0EE0[1];
     } else {
-        D_800CBC90[1] = ((u8 *) &field->value)[3];
+        D_800D0EE0[1] = ((u8 *) &field->value)[3];
     }
-    D_800CBC94[1] = D_800CBC90[1];
+    D_800D0EE4[1] = D_800D0EE0[1];
     func_802BD320_de(text + (func_80441FE8_de(field) - 3), D_800E27D8, field->value);
     return 0;
 }
 
-/* Keeps an option field and the remembered byte D_800CBC90[2] in step: a field still at -1 takes the
+/* Keeps an option field and the remembered byte D_800D0EE0[2] in step: a field still at -1 takes the
    remembered value, otherwise the field's low byte is remembered; the value is mirrored into
-   D_800CBC94[2] and formatted into the field's text with D_800E27D8, three bytes before the length
+   D_800D0EE4[2] and formatted into the field's text with D_800E27D8, three bytes before the length
    func_80441FE8_de reports. Returns zero. */
 
 
-extern u8 D_800CBC90[];
-extern u8 D_800CBC94[];
+extern u8 D_800D0EE0[];
+extern u8 D_800D0EE4[];
 extern char D_800E27D8[];
 extern s32 func_80441FE8_de(struct Field_func_80445414_us_rev1 *);
 extern void func_802BD320_de(char *, char *, s32);
@@ -108,21 +108,21 @@ s32 func_804455D4_us_rev1(struct Field_func_80445414_us_rev1 *field) {
     char *text = *field->text;
 
     if (field->value == -1) {
-        field->value = D_800CBC90[2];
+        field->value = D_800D0EE0[2];
     } else {
-        D_800CBC90[2] = ((u8 *) &field->value)[3];
+        D_800D0EE0[2] = ((u8 *) &field->value)[3];
     }
-    D_800CBC94[2] = D_800CBC90[2];
+    D_800D0EE4[2] = D_800D0EE0[2];
     func_802BD320_de(text + (func_80441FE8_de(field) - 3), D_800E27D8, field->value);
     return 0;
 }
 
-/* Keeps an option field and the remembered byte D_800D0EE8[index] in step, giving a field still at -1 the remembered value and otherwise remembering the field low byte, then mirrors it into D_800CBC9C[index] and formats it into the field text with D_800E27D8 three bytes before the length func_80441FE8_de reports, returning zero. Adapted from func_80445824_us_rev1 with the fixed byte slots replaced by the tables D_800D0EE8 and D_800CBC9C indexed by the second argument. */
+/* Keeps an option field and the remembered byte D_800D0EE8[index] in step, giving a field still at -1 the remembered value and otherwise remembering the field low byte, then mirrors it into D_800D0EEC[index] and formats it into the field text with D_800E27D8 three bytes before the length func_80441FE8_de reports, returning zero. Adapted from func_80445824_us_rev1 with the fixed byte slots replaced by the tables D_800D0EE8 and D_800D0EEC indexed by the second argument. */
 
 
 
 extern u8 D_800D0EE8[];
-extern u8 D_800CBC9C[];
+extern u8 D_800D0EEC[];
 extern char D_800E27D8[];
 extern s32 func_80441FE8_de(struct Field_func_80445414_us_rev1 *);
 extern void func_802BD320_de(char *, char *, s32);
@@ -135,19 +135,19 @@ s32 func_80445664_us_rev1(struct Field_func_80445414_us_rev1 *field, s32 index) 
     } else {
         D_800D0EE8[index] = ((u8 *) &field->value)[3];
     }
-    D_800CBC9C[index] = D_800D0EE8[index];
+    D_800D0EEC[index] = D_800D0EE8[index];
     func_802BD320_de(text + (func_80441FE8_de(field) - 3), D_800E27D8, field->value);
     return 0;
 }
 
 /* Keeps an option field and the remembered byte D_800D0EE8[0] in step: a field still at -1 takes the
    remembered value, otherwise the field's low byte is remembered; the value is mirrored into
-   D_800CBC9C[0] and formatted into the field's text with D_800E27D8, three bytes before the length
+   D_800D0EEC[0] and formatted into the field's text with D_800E27D8, three bytes before the length
    func_80441FE8_de reports. Returns zero. */
 
 
 extern u8 D_800D0EE8[];
-extern u8 D_800CBC9C[];
+extern u8 D_800D0EEC[];
 extern char D_800E27D8[];
 extern s32 func_80441FE8_de(struct Field_func_80445414_us_rev1 *);
 extern void func_802BD320_de(char *, char *, s32);
@@ -160,19 +160,19 @@ s32 func_80445704_us_rev1(struct Field_func_80445414_us_rev1 *field) {
     } else {
         D_800D0EE8[0] = ((u8 *) &field->value)[3];
     }
-    D_800CBC9C[0] = D_800D0EE8[0];
+    D_800D0EEC[0] = D_800D0EE8[0];
     func_802BD320_de(text + (func_80441FE8_de(field) - 3), D_800E27D8, field->value);
     return 0;
 }
 
 /* Keeps an option field and the remembered byte D_800D0EE8[1] in step: a field still at -1 takes the
    remembered value, otherwise the field's low byte is remembered; the value is mirrored into
-   D_800CBC9C[1] and formatted into the field's text with D_800E27D8, three bytes before the length
+   D_800D0EEC[1] and formatted into the field's text with D_800E27D8, three bytes before the length
    func_80441FE8_de reports. Returns zero. */
 
 
 extern u8 D_800D0EE8[];
-extern u8 D_800CBC9C[];
+extern u8 D_800D0EEC[];
 extern char D_800E27D8[];
 extern s32 func_80441FE8_de(struct Field_func_80445414_us_rev1 *);
 extern void func_802BD320_de(char *, char *, s32);
@@ -185,7 +185,7 @@ s32 func_80445794_us_rev1(struct Field_func_80445414_us_rev1 *field) {
     } else {
         D_800D0EE8[1] = ((u8 *) &field->value)[3];
     }
-    D_800CBC9C[1] = D_800D0EE8[1];
+    D_800D0EEC[1] = D_800D0EE8[1];
     func_802BD320_de(text + (func_80441FE8_de(field) - 3), D_800E27D8, field->value);
     return 0;
 }

@@ -5,7 +5,7 @@
 #include "types.h"
 
 extern s32 func_80214178_de(void *, void *, s32);
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 
 
 
@@ -34,7 +34,7 @@ void func_80207D90_de(void *arg0, void *arg1) {
         var_v1 = 0;
     }
     if (var_v1 != 0) {
-        ((func_80207BB8_S4 *)(arg1))->unk64 = ((func_80207BB8_S4 *)(arg1))->unk64 - (D_800D2988 / ((func_80207BB8_S3 *)(temp_a3))->unk38);
+        ((func_80207BB8_S4 *)(arg1))->unk64 = ((func_80207BB8_S4 *)(arg1))->unk64 - (D_800CD738 / ((func_80207BB8_S3 *)(temp_a3))->unk38);
     }
     if (((func_80207BB8_S4 *)(arg1))->unk64 <= 0.0f) {
         func_80214178_de(arg0, arg1, 0);

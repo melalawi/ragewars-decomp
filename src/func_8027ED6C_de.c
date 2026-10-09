@@ -40,16 +40,16 @@ struct Shared_AnimInfo;
  * frame for a shared camera, per view otherwise), selects the texture and render mode, works out its alpha from life,
  * fade-in, fade-out and distance from the view, and emits the colour and draw commands. */
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern struct Frame118 *D_8011BDC0;
-extern u32 D_800E28A4;
-extern f32 D_800D2988;
-extern s32 D_800D297C;
+extern u32 D_800DE854_de;
+extern f32 D_800CD738;
+extern s32 D_800CD72C;
 extern char D_80100030;
 extern s32 D_80140FF8;
 extern struct Shared_ParticleView *D_80140FE8_de;
 
-extern s32 D_801462C8;
+extern s32 D_80142208_de;
 
 extern char D_8011AF78;
 
@@ -96,7 +96,7 @@ static inline s32 func_8027ED6C_de_mode(Shared_Particle *particle) {
     if (particle->desc->flags & 0x2000000) {
         if (particle->flags & 2) {
             mode = 2;
-        } else if (D_801462E3 == 2) {
+        } else if (D_80142223 == 2) {
             mode = 1;
         }
     }
@@ -137,7 +137,7 @@ void func_8027ED6C_de(Shared_Particle *particle, struct Shared_ParticleView *vie
     u8 *envFrom;
     u8 *primFrom;
 
-    if (D_800E28A4 - ((u32)D_80110634 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+    if (D_800DE854_de - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
         return;
     }
     if (particle->time < 0.0f) {
@@ -154,10 +154,10 @@ void func_8027ED6C_de(Shared_Particle *particle, struct Shared_ParticleView *vie
         }
         hit = func_8027ED6C_de_occluded(particle, view);
         if (!hit) {
-            fade = particle->opacity + D_800D2988 * 128.0f;
+            fade = particle->opacity + D_800CD738 * 128.0f;
             alpha = (fade > 255.0f) ? 255 : (s32)fade;
         } else {
-            fade = particle->opacity - D_800D2988 * 128.0f;
+            fade = particle->opacity - D_800CD738 * 128.0f;
             alpha = (fade < 0.0f) ? 0 : (s32)fade;
         }
         particle->opacity = alpha;
@@ -245,9 +245,9 @@ void func_8027ED6C_de(Shared_Particle *particle, struct Shared_ParticleView *vie
             if (depth < 0.0f) {
                 depth = -depth;
             }
-            func_8027DD48_de(particle, &particle->mtx[D_800D297C], camera, depth);
+            func_8027DD48_de(particle, &particle->mtx[D_800CD72C], camera, depth);
         } else {
-            func_8027DD48_de(particle, &particle->mtx[D_800D297C], 0, 0.0f);
+            func_8027DD48_de(particle, &particle->mtx[D_800CD72C], 0, 0.0f);
         }
         particle->unk14E = frame;
         particle->flags |= 0x100000;
@@ -258,15 +258,15 @@ void func_8027ED6C_de(Shared_Particle *particle, struct Shared_ParticleView *vie
         dist = -dist;
     }
     if (D_80140FF8 == 1) {
-        gSPMatrix(D_80110634++, (u32)&particle->mtx[D_800D297C], G_MTX_LOAD);
+        gSPMatrix(D_8010C574++, (u32)&particle->mtx[D_800CD72C], G_MTX_LOAD);
     } else {
-        mtx = func_802799C0_de(&D_8011FFB0, 1);
+        mtx = func_802799C0_de(&D_8011BEF0, 1);
         if (mtx == 0) {
             func_80253754_de(0, model);
             return;
         }
         func_8027DD48_de(particle, mtx, view, dist);
-        gSPMatrix(D_80110634++, (u32)mtx, G_MTX_LOAD);
+        gSPMatrix(D_8010C574++, (u32)mtx, G_MTX_LOAD);
     }
 
     textured = particle->flags & 0x800000;
@@ -289,14 +289,14 @@ void func_8027ED6C_de(Shared_Particle *particle, struct Shared_ParticleView *vie
     if (textured) {
         func_8026925C_de(0xF);
         {
-            gSPTextureL(D_80110634++, shiftS, shiftT, 0, 0xFF, 0, G_ON);
+            gSPTextureL(D_8010C574++, shiftS, shiftT, 0, 0xFF, 0, G_ON);
         }
     } else if ((desc->flags & 0x400) && desc->fade->unkE != 4) {
         func_8026925C_de(0xF);
     } else if (desc->flags & 0x4000) {
-        func_8026925C_de(!(D_801462C8 & 0x200) ? 0xD : 0x11);
+        func_8026925C_de(!(D_80142208_de & 0x200) ? 0xD : 0x11);
     } else {
-        func_8026925C_de((D_801462C8 & 0x200) ? 0x12 : 0x13);
+        func_8026925C_de((D_80142208_de & 0x200) ? 0x12 : 0x13);
     }
 
     alpha = 0xFF;
@@ -337,34 +337,34 @@ void func_8027ED6C_de(Shared_Particle *particle, struct Shared_ParticleView *vie
         switch (mode) {
             case 0:
             default:
-                gDPSetEnvColor(D_80110634++, env[0], env[1], env[2], 255);
+                gDPSetEnvColor(D_8010C574++, env[0], env[1], env[2], 255);
                 break;
             case 2:
-                gDPSetEnvColor(D_80110634++, env[0], env[0], env[2], 255);
+                gDPSetEnvColor(D_8010C574++, env[0], env[0], env[2], 255);
                 break;
             case 1:
-                gDPSetEnvColor(D_80110634++, env[1], env[0], env[2], 255);
+                gDPSetEnvColor(D_8010C574++, env[1], env[0], env[2], 255);
                 break;
         }
     }
     alpha = (alpha > 255 ? 255 : alpha) < 0 ? 0 : (alpha > 255 ? 255 : alpha);
-    gSPVertex(D_80110634++, (u32)&D_8011AF78, 4, 0);
+    gSPVertex(D_8010C574++, (u32)&D_8011AF78, 4, 0);
     if (textured) {
-        gSPTextureL(D_80110634++, shiftS, shiftT, 0, 0xFF, 0, G_ON);
+        gSPTextureL(D_8010C574++, shiftS, shiftT, 0, 0xFF, 0, G_ON);
         }
     particle->alpha = (alpha * particle->opacity) >> 8;
     switch (mode) {
         case 0:
         default:
-            gDPSetPrimColor(D_80110634++, 0, 0, prim[0], prim[1], prim[2], (u32)particle->alpha);
+            gDPSetPrimColor(D_8010C574++, 0, 0, prim[0], prim[1], prim[2], (u32)particle->alpha);
             break;
         case 2:
-            gDPSetPrimColor(D_80110634++, 0, 0, prim[0], prim[0], prim[2], (u32)particle->alpha);
+            gDPSetPrimColor(D_8010C574++, 0, 0, prim[0], prim[0], prim[2], (u32)particle->alpha);
             break;
         case 1:
-            gDPSetPrimColor(D_80110634++, 0, 0, prim[1], prim[0], prim[2], (u32)particle->alpha);
+            gDPSetPrimColor(D_8010C574++, 0, 0, prim[1], prim[0], prim[2], (u32)particle->alpha);
             break;
     }
-    gSP2Triangles(D_80110634++, 0, 1, 2, 0, 2, 3, 0, 0);
+    gSP2Triangles(D_8010C574++, 0, 1, 2, 0, 2, 3, 0, 0);
     func_80253754_de(0, model);
 }

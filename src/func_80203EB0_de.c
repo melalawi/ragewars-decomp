@@ -5,11 +5,11 @@
 
 
 
-extern int D_801468C4;
+extern int D_80142804;
 int func_80203EB0_de(Actor *self, int unused, Actor *target) {
     Actor *linked = self->linked;
     if (linked == target || target->active == 0) {
         return 0;
     }
-    if (D_801468C4 != 0) { if (linked->info->team == target->info->team) { return 0; } } return 1;
+    if (D_80142804 != 0) { if (linked->info->team == target->info->team) { return 0; } } return 1;
 }

@@ -5,5 +5,5 @@
 
 
 void func_80434FB4_de(s32 value) {
-    D_800E54A0 = value;
+    D_800E1450_de = value;
 }

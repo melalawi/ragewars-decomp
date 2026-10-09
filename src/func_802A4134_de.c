@@ -61,7 +61,7 @@ s32 func_802A4134_de(AnimationFrameState *state,
 }
 
 /* Detaches an entity from linked effects while preserving their transforms and lifetimes; the unsigned offset-to-pointer cast preserves matrix-address scheduling and addition operand order. */
-extern int D_800D297C;
+extern int D_800CD72C;
 extern f32 D_800C5E28_de,D_800C5E2C_de,D_800C5E30_de,D_800C5E34_de;
 extern char D_801379C0;
 extern void func_8027027C_de(void *,void *),func_80270910_de(void *,void *),func_80272828_de(void *),func_802732D0_de(void *,void *),func_802732EC_de(void *,void *),func_8027347C_de(void *,f32,f32,f32),func_802A25D0_de(void *,Node44 *,void *);
@@ -91,10 +91,10 @@ loop_4:
                     if (var_s0->unk_B0 == arg1) {
                         if (arg1 != 0) {
                             if (arg1 == (void *)-1) {
-                                ((struct ObjectState68 *) (((char *) var_s0) + (D_800D297C << 6)))->unk_28=((struct ObjectState68 *) (((char *) var_s0) + ((D_800D297C ^ 1) << 6)))->unk_28;
+                                ((struct ObjectState68 *) (((char *) var_s0) + (D_800CD72C << 6)))->unk_28=((struct ObjectState68 *) (((char *) var_s0) + ((D_800CD72C ^ 1) << 6)))->unk_28;
                                 var_s0->unk_B0 = 0;
                             } else {
-                                func_80270910_de(&sp10, (char *)arg1 + ((D_800D297C << 6) + 0x60));
+                                func_80270910_de(&sp10, (char *)arg1 + ((D_800CD72C << 6) + 0x60));
                                 var_f0 = D_800C5E28_de;
                                 if (arg1->unk_118->unk14 != 0) {
                                     var_f0 = D_800C5E2C_de;
@@ -105,7 +105,7 @@ loop_4:
                                 if (var_s1->unk_3C & 4) {
                                     func_802732EC_de(&sp10, var_s0->rot);
                                 } else {
-                                    func_8027027C_de(&sp10, (char *)var_s0 + ((D_800D297C << 6) + 0x28));
+                                    func_8027027C_de(&sp10, (char *)var_s0 + ((D_800CD72C << 6) + 0x28));
                                 }
                             }
                             var_s0->unk_8 = (f32) var_s1->unk_8->unk_8;
@@ -119,7 +119,7 @@ loop_4:
                 }
             } else if (var_s1->unk_1C == arg1) {
                 if (temp_v1 & 2) {
-                    unsigned int offset = D_800D297C << 6;
+                    unsigned int offset = D_800CD72C << 6;
                     char *matrix = (char *)offset;
                     matrix += (unsigned int)arg1;
                     matrix += 0x60;

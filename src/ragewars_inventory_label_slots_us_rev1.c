@@ -1,5 +1,5 @@
 /* Gameplay score, pause and inventory text-pointer slots.
- * resident_menu_inventory_settings passes D_800D76CC slot addresses
+ * resident_menu_inventory_settings passes D_800D36A0 slot addresses
  * to 80442064, which dereferences the text pointer before drawing.
  * Targets are retained character members of the label producer. */
 struct MenuStrings_D5DF8;

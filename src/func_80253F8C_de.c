@@ -9,7 +9,7 @@
 extern s32 D_80100570;
 extern Queue_func_802517B4_de D_80101140;
 
-extern s32 D_80105180;
+extern s32 D_80101180;
 extern s32 D_80101190;
 extern s32 D_80101194;
 
@@ -32,8 +32,8 @@ void func_80253F8C_de(s32 arg0, s32 arg1) {
     void **out;
 
     temp_a0 = func_802BCF30_de();
-    temp_v1 = D_8010515C + 1;
-    D_8010515C = temp_v1;
+    temp_v1 = D_8010115C + 1;
+    D_8010115C = temp_v1;
     if (temp_v1 != 1) {
         func_802BCF50_de(temp_a0);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -70,13 +70,13 @@ found:
 
     if (value != 0) {
         void *object = *(void **)value;
-        ((func_8022BC04_S3 *)(object))->unk10 = D_80105180;
+        ((func_8022BC04_S3 *)(object))->unk10 = D_80101180;
         func_80255FB8_de(&D_80100570, object);
     }
 
     temp_v0 = func_802BCF30_de();
-    temp_v1_2 = D_8010515C - 1;
-    D_8010515C = temp_v1_2;
+    temp_v1_2 = D_8010115C - 1;
+    D_8010115C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802BCF50_de(temp_v0);
         func_802BB420_de(&D_80101140, 0, 1);

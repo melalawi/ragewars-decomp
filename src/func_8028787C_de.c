@@ -8,7 +8,7 @@
 
 
 
-extern void *D_8011FF08;
+extern void *D_8011BE48;
 extern void *func_8028FDB4_de(void *table, s32 index);
 extern s32 func_8028FDF8_de(void *table, s32 index);
 extern void func_80278C10_de(Entity *entity);
@@ -32,7 +32,7 @@ void func_8028787C_de(World_func_8028787C_de *world, Entity *entity) {
     if (bits[index / 8] & bit) {
         if (entity->flag != 0) {
             flag = entity->flag;
-            flags = func_8028FDB4_de(D_8011FF08, 1);
+            flags = func_8028FDB4_de(D_8011BE48, 1);
             func_8028FDB4_de(flags, 0);
             if (((unsigned char *)func_8028FDB4_de(flags, 1))[flag] != 0) {
                 return;

@@ -15,7 +15,7 @@ struct SharedTrackObject;
 
 
 extern s32 func_804030E0_de(s32);
-extern Shared_MenuContext *D_800E2830;
+extern Shared_MenuContext *D_800DE7E0;
 
 
 #endif

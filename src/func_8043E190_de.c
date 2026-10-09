@@ -5,9 +5,9 @@
 
 
 
-extern char D_800D76C8;
+extern char D_800D369C;
 
 s32 func_8043E190_de(func_80254D70_S1 *arg0) {
-    arg0->unk14 = &D_800D76C8;
+    arg0->unk14 = &D_800D369C;
     return 0;
 }

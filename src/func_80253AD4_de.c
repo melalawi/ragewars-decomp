@@ -21,8 +21,8 @@ s32 func_80253AD4_de(void) {
     s32 result;
 
     temp_a0 = func_802BCF30_de();
-    temp_v1 = D_8010515C + 1;
-    D_8010515C = temp_v1;
+    temp_v1 = D_8010115C + 1;
+    D_8010115C = temp_v1;
     if (temp_v1 != 1) {
         func_802BCF50_de(temp_a0);
         func_802BB2A0_de((s32)((char *)&D_801005A8 + 0xB98), 0, 1);
@@ -33,8 +33,8 @@ s32 func_80253AD4_de(void) {
     result = *(s32 *)((char *)D_80100598 + (*base << 2));
     *base = -1;
     temp_v0 = func_802BCF30_de();
-    temp_v1_2 = D_8010515C - 1;
-    D_8010515C = temp_v1_2;
+    temp_v1_2 = D_8010115C - 1;
+    D_8010115C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802BCF50_de(temp_v0);
         func_802BB420_de((char *)base + 0xB98, 0, 1);

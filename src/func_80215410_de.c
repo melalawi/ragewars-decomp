@@ -6,7 +6,7 @@
 #include "types.h"
 #include "stddef.h"
 /* Picks an actor's target (the tracked enemy when the aim point is chosen, else the nearest permitted target from func_802149C0_de), classifies it into one of eight kinds, and fills the target record with the kind, target, height difference, position, direction and distance, both in full and flattened to the horizontal plane. */
-extern s32 D_8011CD20,D_8013B290;
+extern s32 D_8011CD20,D_801371D0;
 extern void *func_802149C0_de(void *,void *,s32,s32), *func_80219408_de(void *);
 extern f32 func_80216F44_de(void *,f32,f32,f32),func_802B72B0_de(f32);
 extern void func_80271F68_de(Vec3 *,Vec3 *,Vec3 *),func_80274020_de(f32 *);
@@ -29,7 +29,7 @@ static inline s32 func_80215410_kind(void *self, void *ctx, void *target) {
     if (((struct Owner_func_8020388C_de *)(target))->id == 0x64F) {
         return 7;
     }
-    if (D_8013B290 == 0) {
+    if (D_801371D0 == 0) {
         if ((((func_80203C40_S1 *)(target))->unk100 & 0x300000) && ((Field_void_794 *)(((func_8020A028_S3 *)(target))->unk1D8))->value == self
             && ((Field_s32_788 *)(((func_8020A028_S3 *)(target))->unk1D8))->value == 2) {
             return 1;

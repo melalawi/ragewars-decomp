@@ -97,7 +97,7 @@ void func_8028E390_de(void *arg0, void *table, u8 *remap) {
 
 
 
-extern u8 D_800D2910[];
+extern u8 D_800CD6C0[];
 extern s32 func_80285180_de(void *resource, s32 flags);
 extern void func_802AA8EC_de(void *table, s32 index, void **out, u8 *tag);
 
@@ -124,7 +124,7 @@ void func_8028E4A4_de(void *arg0, void **resource) {
         return;
     }
     table = *resource;
-    remap = D_800D2910;
+    remap = D_800CD6C0;
     do {
         for (i = 0; i < 256; i++) {
             end = -1;
@@ -170,7 +170,7 @@ void func_8028E4A4_de(void *arg0, void **resource) {
 
 
 
-extern u8 D_800D2920[];
+extern u8 D_800CD6D0[];
 extern s32 func_80285180_de(void *resource, s32 flags);
 extern void func_802AA8EC_de(void *table, s32 index, void **out, u8 *tag);
 
@@ -197,7 +197,7 @@ void func_8028E5D0_de(void *arg0, void **resource) {
         return;
     }
     table = *resource;
-    remap = D_800D2920;
+    remap = D_800CD6D0;
     do {
         for (i = 0; i < 256; i++) {
             end = -1;

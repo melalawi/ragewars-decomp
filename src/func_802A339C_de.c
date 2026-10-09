@@ -5,7 +5,7 @@
 
 
 
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 extern void func_80272CB0_de(void *, s32, s32, s32);
 extern void func_802727D8_de(void *);
 extern void func_802A31E8_de(Node438C *, Node438C *, void *, void *);
@@ -71,7 +71,7 @@ no_pair:
             matrix[14] = first->z;
         }
 apply:
-        func_8027027C_de(matrix, (s32)((u8 *)first + ((D_800D297C << 6) + 0x28)));
+        func_8027027C_de(matrix, (s32)((u8 *)first + ((D_800CD72C << 6) + 0x28)));
         first = next;
         next = first->next;
     }
@@ -79,5 +79,5 @@ apply:
     matrix[12] = first->x;
     matrix[13] = first->y;
     matrix[14] = first->z;
-    func_8027027C_de(matrix, (s32)((u8 *)first + ((D_800D297C << 6) + 0x28)));
+    func_8027027C_de(matrix, (s32)((u8 *)first + ((D_800CD72C << 6) + 0x28)));
 }

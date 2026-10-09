@@ -25,8 +25,8 @@ enum { MENU_RESOURCE = 0x13b };
 
 
 
-extern struct State_func_80437444_de *D_800E5780;
-extern u8 D_80102B00[];
+extern struct State_func_80437444_de *D_800E1730;
+extern u8 D_800FEB00[];
 extern s32 func_8041A470_de(struct Menu_func_804241BC_de *);
 extern s32 func_80265650_de(u8 *, s32);
 extern void func_802991D4_de(s32);
@@ -37,29 +37,29 @@ s32 func_80437444_de(void) {
     s32 result;
     s32 target;
 
-    switch (result = func_8041A470_de(D_800E5780->menu)) {
+    switch (result = func_8041A470_de(D_800E1730->menu)) {
     case 1:
-        if (D_800E5780->seen != 0) {
+        if (D_800E1730->seen != 0) {
             return 0;
         }
-        D_800E5780->seen = result;
-        if (func_80265650_de(D_80102B00 + 0x7E, 0) != 0) {
+        D_800E1730->seen = result;
+        if (func_80265650_de(D_800FEB00 + 0x7E, 0) != 0) {
             return 0;
         }
         func_802991D4_de(MENU_RESOURCE);
         return 0;
     case 3:
-        if (--D_800E5780->delay <= 0) {
-            D_800E5780->list->unk16--;
-            if (D_800E5780->list->unk16 + D_800E5780->list->unk1A < 0) {
-                D_800E5780->list->unk16 = D_800E5780->menu->list->unk1A;
+        if (--D_800E1730->delay <= 0) {
+            D_800E1730->list->unk16--;
+            if (D_800E1730->list->unk16 + D_800E1730->list->unk1A < 0) {
+                D_800E1730->list->unk16 = D_800E1730->menu->list->unk1A;
             }
-            D_800E5780->delay = result;
+            D_800E1730->delay = result;
         }
         break;
     case 4:
         func_8029973C_de();
-        target = D_800E5780->target;
+        target = D_800E1730->target;
         if (target == -1) {
             target = 3;
         }

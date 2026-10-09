@@ -18,7 +18,7 @@ struct func_8024B8DC_S1 {
 };
 
 /* unbake published declaration: published_058c5443865a92a8a910dd62 */
-extern float D_800C8B48;
+extern float D_800C3A58_de;
 
 struct ObjectLinks180_2;
 /* unbake published declaration: published_05aa9e3cadbc1f34b40c7ff7 */
@@ -83,7 +83,7 @@ struct ObjectState110 {
 };
 
 /* unbake published declaration: published_27ba8e6ca29074807ef89c06 */
-extern int D_800D06BC;
+extern int D_800CB47C;
 
 struct SineTable;
 /* unbake published declaration: published_27db1cc24607baf09a1cccc7 */
@@ -341,7 +341,7 @@ struct SineTable;
 typedef struct SineTable SineTable;
 
 /* unbake published declaration: published_8b1d8ee524fb60f47fe96637 */
-extern float D_800C8B50;
+extern float D_800C3A60_de;
 
 struct func_8024795C_S1;
 /* unbake published declaration: published_8c992521774d682cdbe2ad24 */

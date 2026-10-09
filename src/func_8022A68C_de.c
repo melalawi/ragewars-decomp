@@ -36,7 +36,7 @@ extern int func_80245784_de(void);
 
 
 
-extern State_func_8022A68C_de D_801468A0;
+extern State_func_8022A68C_de D_801427E0;
 
 
 
@@ -52,7 +52,7 @@ int func_8022A68C_de(char *arg0) {
     if (func_80245798_de() != 0 || func_80245784_de() != 0 || D_801371DC != 0) {
         return 0;
     }
-    t = &D_801468A0;
+    t = &D_801427E0;
     if (t->active != 0 || t->armed == 0) {
         return 0;
     }
@@ -65,7 +65,7 @@ int func_8022A68C_de(char *arg0) {
     if (count <= 0) {
         return 0;
     }
-    s = &D_801468A0;
+    s = &D_801427E0;
     s->active = 1;
     s->armed = 0;
     return 1;

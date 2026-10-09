@@ -8,8 +8,8 @@
 
 
 
-extern struct State_func_80428E10_de *D_800E4690;
-extern struct Entry_func_80428E10_de D_800E4694[];
+extern struct State_func_80428E10_de *D_800E0640_de;
+extern struct Entry_func_80428E10_de D_800E0644[];
 extern void func_8029973C_de();
 
 extern void func_8042E9A0_de(s32, s32);
@@ -20,8 +20,8 @@ s32 func_80428E10_de(void) {
 
     func_8029973C_de();
     func_804273D4_de();
-    selection = D_800E4690->selection;
-    func_8042E9A0_de(D_800E4694[selection].first, D_800E4694[selection].second);
+    selection = D_800E0640_de->selection;
+    func_8042E9A0_de(D_800E0644[selection].first, D_800E0644[selection].second);
     func_8042E988_de(0x19);
     return 0;
 }

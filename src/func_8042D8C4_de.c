@@ -6,7 +6,7 @@
    the object D_800E53C0 points to is positive, decrements it and calls func_8042C018_de. Returns zero. */
 
 
-extern struct State_func_8042D8C4_de *D_800E53C0;
+extern struct State_func_8042D8C4_de *D_800E1370;
 extern void func_8029973C_de();
 extern void func_8042C018_de();
 
@@ -15,7 +15,7 @@ s32 func_8042D8C4_de(void *first, void *second, void *third, s32 fourth) {
 
     if (fourth == 1) {
         func_8029973C_de();
-        state = D_800E53C0;
+        state = D_800E1370;
         if (state->count > 0) {
             state->count--;
             func_8042C018_de();

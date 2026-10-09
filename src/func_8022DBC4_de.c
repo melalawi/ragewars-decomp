@@ -9,6 +9,6 @@
 
 
 f32 func_8022DBC4_de(f32 arg0) {
-    f32 temp = ((func_802077F4_S2 *)(&D_800C7EC0))->unk4 - arg0;
-    return ((func_802077F4_S2 *)(&D_800C7EC0))->unk4 - (temp * temp * temp);
+    f32 temp = ((func_802077F4_S2 *)(&D_800C2DD0_de))->unk4 - arg0;
+    return ((func_802077F4_S2 *)(&D_800C2DD0_de))->unk4 - (temp * temp * temp);
 }

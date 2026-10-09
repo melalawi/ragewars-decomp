@@ -1575,7 +1575,7 @@ struct func_80205314_S1 {
 };
 
 /* unbake published declaration: published_458d8cd18563e836751fbb0d */
-extern int D_800CE47C;
+extern int D_800C922C;
 
 struct func_80229A54_S2;
 /* unbake published declaration: published_4b5b21f928fc805642982cde */
@@ -1826,7 +1826,7 @@ struct func_8022C884_S1 {
 extern int D_801371DC;
 
 /* unbake published declaration: published_cb91fd939f7e0ef99c7fc438 */
-extern int D_800CE430[];
+extern int D_800C91E0_de[];
 
 struct func_8022A404_S1;
 /* unbake published declaration: published_cf8cc049dea9915d8b543590 */

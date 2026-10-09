@@ -10,8 +10,8 @@
 extern void func_802231D4_de(void *, void *, void *);
 extern void func_802238E0_de(void *, void *, void *);
 extern s32 func_802227F4_de(void *, void *, s32);
-extern char D_800CE88C;
-extern char D_800CE8A4;
+extern char D_800C9648;
+extern char D_800C9660;
 
 
 
@@ -33,25 +33,25 @@ void func_8022D040_de(void *arg0, void *arg1) {
     } else {
         ((func_8022D030_S1 *)(player))->unk650 = 0xE;
     }
-    func_802231D4_de(player, arg1, &D_800CE88C);
-    func_802238E0_de(player, arg1, &D_800CE8A4);
+    func_802231D4_de(player, arg1, &D_800C9648);
+    func_802238E0_de(player, arg1, &D_800C9660);
     busy = 0;
     if (((func_8022D030_S1 *)(player))->unk86C == 0x1144) {
         busy = ((func_8022D030_S1 *)(player))->unk10E == 0;
     }
-    if (((func_8022D030_S1 *)(player))->unkE4 == D_800CE47C) {
+    if (((func_8022D030_S1 *)(player))->unkE4 == D_800C922C) {
         ((func_8022D030_S1 *)(player))->unk86C = 0x8A2;
     } else if (!busy) {
         x = ((func_8022D030_S1 *)(player))->unk6C0;
-        if (D_800C7E94 <= x) {
+        if (D_800C2DA4_de <= x) {
             ((func_8022D030_S1 *)(player))->unk86C = 0x8A2;
-        } else if (x <= D_800C7E98) {
+        } else if (x <= D_800C2DA8_de) {
             ((func_8022D030_S1 *)(player))->unk86C = 0x8A7;
         } else {
             ((func_8022D030_S1 *)(player))->unk86C = 0x14;
         }
     }
-    if (!(((func_8020D1FC_S1 *)(arg1))->unk38 & 0x20000) && ((func_8022D030_S1 *)(player))->unk658 > D_800C7E9C) {
+    if (!(((func_8020D1FC_S1 *)(arg1))->unk38 & 0x20000) && ((func_8022D030_S1 *)(player))->unk658 > D_800C2DAC_de) {
         func_802227F4_de(player, arg1, 3);
     }
 }

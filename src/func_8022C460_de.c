@@ -19,7 +19,7 @@ extern const struct D_800C7470_Pair D_800C2D40_de;
 
 
 extern int D_80140FC0;
-extern int D_800D297C;
+extern int D_800CD72C;
 extern void func_80226DD0_de(Player1680 *, Matrix *);
 extern void func_802732D0_de(Matrix *, Vec3 *);
 extern void func_802727D8_de(Matrix *);
@@ -50,7 +50,7 @@ void func_8022C490_de(Player1680 *player) {
     func_802727D8_de(&mtx);
     func_802736D4_de(&mtx, getYaw());
     func_80273448_de(&mtx, pos.x, pos.y + D_800C2D40_de.second, pos.z);
-    func_8027027C_de(&mtx, &player->views[D_800D297C]);
+    func_8027027C_de(&mtx, &player->views[D_800CD72C]);
 }
 
 void *func_8022C55C_de(void *arg0, u32 arg1) {

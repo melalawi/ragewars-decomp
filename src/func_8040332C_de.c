@@ -14,8 +14,8 @@
 
 
 
-extern func_80203E78_S1 *D_800E2830;
-extern Tables D_8011FE88;
+extern func_80203E78_S1 *D_800DE7E0;
+extern Tables D_8011BDC8;
 
 extern s32 *func_8028FDB4_de(s32 resource, s32 index);
 
@@ -30,11 +30,11 @@ s32 func_8040332C_de(void) {
     Tables *tables;
 
     found = 0;
-    track = func_8028FDB4_de(D_800E2830->unk4, 2);
+    track = func_8028FDB4_de(D_800DE7E0->unk4, 2);
     n = track[1];
     refs = (Triple *)(track + 2);
     for (i = 0; i < n; i++) {
-        tables = &D_8011FE88;
+        tables = &D_8011BDC8;
         if (refs[i].y == 0) {
             item = &tables->items[0][refs[i].z];
         } else {

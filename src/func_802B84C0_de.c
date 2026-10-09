@@ -4,8 +4,8 @@
 
 
 
-extern u8 D_8014D4B0;
-extern u8 D_80154110[];
+extern u8 D_80147220;
+extern u8 D_8014DE80[];
 
 
 extern void func_802B86F0_de(s32 arg0, s32 arg1);
@@ -22,17 +22,17 @@ u32 func_802B84C0_de(s32 arg0, s32 arg1, u16 arg2, u8 *arg3) {
     s32 retries;
     u32 result;
 
-    source = D_80154110;
+    source = D_8014DE80;
     retries = 2;
     func_802B9C14_de();
-    D_8014D4B0 = 2;
+    D_80147220 = 2;
     func_802B86F0_de(arg1, arg2 & 0xFFFF);
-    func_802B9CB0_de(1, D_80154110);
+    func_802B9CB0_de(1, D_8014DE80);
     func_802BB2A0_de(arg0, 0, 1);
     do {
-        func_802B9CB0_de(0, D_80154110);
+        func_802B9CB0_de(0, D_8014DE80);
         func_802BB2A0_de(arg0, 0, 1);
-        source = D_80154110;
+        source = D_8014DE80;
         if (arg1 != 0) {
             i = 0;
             if (arg1 > 0) {

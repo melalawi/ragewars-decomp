@@ -10,11 +10,11 @@
 
 
 
-extern struct Record_func_8043E494_de D_80146302;
+extern struct Record_func_8043E494_de D_80142242;
 extern s32 func_804423BC_de(void *, s32, s32, s32, s32, s32);
 
 s32 func_804443C0_de(void *first, struct Menu_func_8043E494_de *holder) {
-    struct Record_func_8043E494_de *settings = &D_80146302;
+    struct Record_func_8043E494_de *settings = &D_80142242;
 
     if (holder->owner != 0 && holder->owner->record != 0) {
         settings = holder->owner->record;

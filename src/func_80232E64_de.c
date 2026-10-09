@@ -8,7 +8,7 @@
 extern f32 D_800C3030_de[];
 
 
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 
 extern s32 func_802301F4_de(void *, void *);
 extern void func_8022B00C_de(void *arg0);
@@ -21,7 +21,7 @@ void func_80232E64_de(void *arg0, void *arg1) {
     void *temp_v0;
 
     temp_s1 = ((struct Measured_func_80232E64_de_254bde2b70a7 *)(arg0))->value;
-    ((struct Measured_func_80232E64_de_63e464e681dd *)(arg1))->value += (((struct Measured_func_80232E64_de_1121ff480e8c *)(arg1))->value * D_800D2988) * 2.0f;
+    ((struct Measured_func_80232E64_de_63e464e681dd *)(arg1))->value += (((struct Measured_func_80232E64_de_1121ff480e8c *)(arg1))->value * D_800CD738) * 2.0f;
     temp_f1 = ((struct Measured_func_80232E64_de_1121ff480e8c *)(arg1))->value;
     temp_v0 = ((struct Measured_func_80232E64_de_e14799a7bd20 *)(temp_s1))->value;
     if (!(temp_f1 < 0.0f

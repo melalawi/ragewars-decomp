@@ -3,10 +3,10 @@
 
 extern void func_8028D90C_de(void);
 extern void func_80402FB4_de(s32, s32);
-extern s32 D_8011FE88;
+extern s32 D_8011BDC8;
 
 void func_80278FB4_de(s32 arg0, s32 arg1, s32 arg2) {
-    if (D_8011FE88 == 4) {
+    if (D_8011BDC8 == 4) {
         func_8028D90C_de();
         func_80402FB4_de(arg0, arg2);
     }

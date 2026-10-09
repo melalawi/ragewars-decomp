@@ -89,13 +89,13 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
     },
     {
         {1, 0, 0x90000000U, 0, 0, {0, 0, 255, 1}, 0x00000385U, {&rw_menu_paged_func_804402DC_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x08000801U, 0, 8, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D77CC, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A4A0_de}, {0}, 0, 0},
+        {0, 0, 0x08000801U, 0, 8, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D37A0, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A4A0_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 20, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A5E8_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 5, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D37B0, 0xCU), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A614_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 10, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A4D4_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 0, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D37B0, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A530_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 0, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D37B0, 0x8U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A58C_de}, {0}, 0, 0},
-        {0, 0, 0x00010041U, 0, 20, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D7810, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A6A8_de}, {0}, 0, 0},
+        {0, 0, 0x00010041U, 0, 20, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D37E4, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A6A8_de}, {0}, 0, 0},
         {0, 0, 0x00010040U, 125, 10, {0, 1, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3A58, 0xCU), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_80408870_de}, 0, 0},
         {0, 0, 0x00024040U, 10, 0, {255, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3A58, 0x10U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8040A6DC_de}, 0, 0}
     },
@@ -105,12 +105,12 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
     },
     {
         {1, 0, 0x90000000U, 0, 0, {0, 0, 255, 1}, 0x00000385U, {&rw_menu_paged_func_804402DC_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x08000021U, 0, 8, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D77EC, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A7BC_de}, {0}, 0, 0},
+        {0, 0, 0x08000021U, 0, 8, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D37C0, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A7BC_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 50, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A83C_us}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 2, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2480, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A928_us}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 2, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2480, 0x8U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A9A0_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 2, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2480, 0xCU), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_80408AC4_us}, {0}, 0, 0},
-        {0, 0, 0x00010041U, 0, 16, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D7810, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A9F8_de}, {0}, 0, 0},
+        {0, 0, 0x00010041U, 0, 16, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D37E4, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040A9F8_de}, {0}, 0, 0},
         {0, 0, 0x00010040U, 125, 10, {0, 1, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3A58, 0xCU), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_80408C4C_de}, 0, 0},
         {0, 0, 0x00024040U, 10, 0, {255, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3A58, 0x10U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8040AA4C_de}, 0, 0}
     },
@@ -127,7 +127,7 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
         {0, 0, 0x00010041U, 0, 5, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040AEF8_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 5, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040B024_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 5, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040B150_de}, {0}, 0, 0},
-        {0, 0, 0x00010041U, 0, 25, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D7824, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040B27C_de}, {&rw_menu_paged_func_80408DF0_de}, 0, 0}
+        {0, 0, 0x00010041U, 0, 25, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D37F8, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040B27C_de}, {&rw_menu_paged_func_80408DF0_de}, 0, 0}
     },
     {
         {((u32)&D_0044E468 + 0x414U), 8, 0, {&rw_menu_paged_func_8040AAB8_de}, {0}, {&rw_menu_paged_func_804415F4_de}, {0}, 7, 0, 0, 0, 0},
@@ -169,8 +169,8 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
         {0, 0, 0x00010041U, 0, 4, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040B960_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 4, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040B9DC_de}, {0}, 0, 0},
         {0, 0, 0x00010041U, 0, 4, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040BA58_de}, {0}, 0, 0},
-        {0, 0, 0x00012001U, 0, 35, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D7A08, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040BAD4_de}, {&rw_menu_paged_func_80409144_de}, 0, 0},
-        {0, 0, 0x00012001U, 0, 5, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D7A0C, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040BBC0_us}, {&rw_menu_paged_func_80409448_de}, 0, 0}
+        {0, 0, 0x00012001U, 0, 35, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D39DC, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040BAD4_de}, {&rw_menu_paged_func_80409144_de}, 0, 0},
+        {0, 0, 0x00012001U, 0, 5, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800DE7D4_eu_x, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8040BBC0_us}, {&rw_menu_paged_func_80409448_de}, 0, 0}
     },
     {
         {((u32)&D_0044E468 + 0x900U), 8, 0, {&rw_menu_paged_func_8040B7E0_de}, {0}, {&rw_menu_paged_func_804415F4_de}, {&rw_menu_paged_func_8040B700_de}, 7, 0, 0, 0, 0},
@@ -191,13 +191,13 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
         {RW_MENU_RESIDENT_ADDRESS(D_800DE048_de, 0xDCU), RW_MENU_RESIDENT_ADDRESS(D_800D3A9C, 0x34U), 0x00001000U, 1},
         {RW_MENU_RESIDENT_ADDRESS(D_800DE048_de, 0xD0U), RW_MENU_RESIDENT_ADDRESS(D_800D3A9C, 0x3CU), 0x00004000U, 1},
         {RW_MENU_RESIDENT_ADDRESS(D_800DE048_de, 0xC4U), RW_MENU_RESIDENT_ADDRESS(D_800D3A9C, 0x40U), 0x00008000U, 1},
-        {RW_MENU_RESIDENT_ADDRESS(D_800DE048_de, 0xACU), RW_MENU_RESIDENT_ADDRESS(D_800E5C08, 0xD4U), 0xFFFFFFFFU, 1},
-        {RW_MENU_RESIDENT_ADDRESS(D_800DE048_de, 0x98U), RW_MENU_RESIDENT_ADDRESS(D_800E5C08, 0xF0U), 0x0400C7E0U, 1}
+        {RW_MENU_RESIDENT_ADDRESS(D_800DE048_de, 0xACU), RW_MENU_RESIDENT_ADDRESS(D_800E1BB8, 0xD4U), 0xFFFFFFFFU, 1},
+        {RW_MENU_RESIDENT_ADDRESS(D_800DE048_de, 0x98U), RW_MENU_RESIDENT_ADDRESS(D_800E1BB8, 0xF0U), 0x0400C7E0U, 1}
     },
     {
         {1, 0, 0x50000000U, 0, 0, {0, 0, 255, 1}, 0x00000385U, {&rw_menu_paged_func_804402DC_de}, {0}, {0}, 0, 0},
         {0, 0, 0x08000021U, 0, 8, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D3A58, 0x20U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00210041U, 0, 20, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800E5C08, 0xBCU), {&rw_menu_paged_func_8043C4F4_us_rev1_offset_698}, {&rw_menu_paged_func_8043C4F4_us_rev1_offset_81C}, {&rw_menu_paged_func_8043C4F4_us_rev1_offset_8F4}, 0, 0},
+        {0, 0, 0x00210041U, 0, 20, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800E1BB8, 0xBCU), {&rw_menu_paged_func_8043C4F4_us_rev1_offset_698}, {&rw_menu_paged_func_8043C4F4_us_rev1_offset_81C}, {&rw_menu_paged_func_8043C4F4_us_rev1_offset_8F4}, 0, 0},
         {0, 0, 0x00010050U, 80, 20, {6, 1, 255, 7}, RW_MENU_RESIDENT_ADDRESS(D_800D3E14_de, 0x8U), {&rw_menu_paged_func_8044208C_de}, {0}, {&rw_menu_paged_func_8043C4F4_us_rev1_offset_8FC}, 0, 0},
         {0, 0, 0x00024050U, 8, 0, {255, 1, 254, 7}, RW_MENU_RESIDENT_ADDRESS(D_800D3E14_de, 0x10U), {&rw_menu_paged_func_8044208C_de}, {0}, {&rw_menu_paged_func_8043C4F4_us_rev1_offset_8FC}, 0, 0},
         {0, 0, 0x00024050U, 8, 0, {255, 1, 253, 7}, RW_MENU_RESIDENT_ADDRESS(D_800D3E14_de, 0x18U), {&rw_menu_paged_func_8044208C_de}, {0}, {&rw_menu_paged_func_8043C4F4_us_rev1_offset_8FC}, 0, 0},
@@ -267,14 +267,14 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
         {((u32)&D_0044E468 + 0x1358U), 3, 0, {0}, {0}, {&rw_menu_paged_func_804415F4_de}, {0}, 1, 0, 0, 0, 0}
     },
     {
-        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0xCU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x10U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x14U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x18U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x1CU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x20U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x24U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00010041U, 0, 5, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x8U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E1F8_de}, 0, 0}
+        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0xCU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x10U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x14U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x18U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x1CU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x20U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x00011001U, 0, 0, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x24U), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x00010041U, 0, 5, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x8U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E1F8_de}, 0, 0}
     },
     {
         {((u32)&D_0044E468 + 0x13E8U), 8, 0, {0}, {0}, {&rw_menu_paged_func_804415F4_de}, {&rw_menu_paged_func_8043E1C0_de}, 7, 0, 0, 0, ((u32)&D_0044E468 + 0x15E0U)}
@@ -283,8 +283,8 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
         {0, 0, 0x00011001U, 0, 0, {0, 0, 255, 2}, RW_MENU_RESIDENT_ADDRESS(D_800D3628, 0x14U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E418_de}, 0, 0},
         {0, 0, 0x00010101U, 0, 8, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D3628, 0x18U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8043E444_de}, {0}, 0, 0},
         {0, 0, 0x00411001U, 0, 8, {0, 0, 254, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0x4U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8043E2D8_de}, {&rw_menu_paged_func_8043E28C_de}, 0, 0},
-        {0, 0, 0x00411001U, 0, 2, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D7688, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8043E494_de}, {&rw_menu_paged_func_8043E3CC_de}, 0, 0},
-        {0, 0, 0x00010041U, 0, 5, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x8U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E468_de}, 0, 0}
+        {0, 0, 0x00411001U, 0, 2, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D365C, 0x0U), {&rw_menu_paged_func_80442064_de}, {&rw_menu_paged_func_8043E494_de}, {&rw_menu_paged_func_8043E3CC_de}, 0, 0},
+        {0, 0, 0x00010041U, 0, 5, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x8U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E468_de}, 0, 0}
     },
     {
         {((u32)&D_0044E468 + 0x152CU), 5, 0, {0}, {0}, {&rw_menu_paged_func_804415F4_de}, {&rw_menu_paged_func_8043E254_de}, 4, 0, 0, 0, ((u32)&D_0044E468 + 0x16A0U)}
@@ -308,9 +308,9 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
     },
     {
         {1, 0, 0x30000000U, 0, 0, {0, 0, 255, 1}, 0x00000387U, {&rw_menu_paged_func_804402DC_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00010081U, 0, 0, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x2CU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x00010101U, 0, 12, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x30U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E610_de}, 0, 0},
-        {0, 0, 0x00010101U, 0, 0, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D768C, 0x34U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E658_de}, 0, 0}
+        {0, 0, 0x00010081U, 0, 0, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x2CU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x00010101U, 0, 12, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x30U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E610_de}, 0, 0},
+        {0, 0, 0x00010101U, 0, 0, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D3660, 0x34U), {&rw_menu_paged_func_80442064_de}, {0}, {&rw_menu_paged_func_8043E658_de}, 0, 0}
     },
     {
         {((u32)&D_0044E468 + 0x16E8U), 4, 0, {0}, {0}, {&rw_menu_paged_func_804415F4_de}, {&rw_menu_paged_func_8043E5D8_de}, 2, 0, 0, 0, 0}
@@ -381,7 +381,7 @@ const struct resident_menu_pak_options resident_menu_pak_options = {
     {2, 0},
     {
         {1, 0, 0x50000000U, 0, 0, {0, 0, 255, 1}, 0x00000385U, {&rw_menu_paged_func_804402DC_de}, {0}, {0}, 0, 0},
-        {0, 0, 0x08000801U, 0, 8, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D76CC, 0x2CU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
+        {0, 0, 0x08000801U, 0, 8, {0, 0, 255, 1}, RW_MENU_RESIDENT_ADDRESS(D_800D36A0, 0x2CU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0},
         {0, 0, 0x00010080U, 35, 22, {0, 0, 0, 0}, RW_MENU_RESIDENT_ADDRESS(D_800D2A90, 0xCU), {&rw_menu_paged_func_80442064_de}, {0}, {0}, 0, 0}
     },
     {1, 0, 0x00024010U, 3, 0},

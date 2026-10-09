@@ -16,10 +16,10 @@
 extern void func_802A9234_de(s32);
 extern void func_802AA950_de(s32 image, s32 frame, s32 *width, s32 *height);
 extern void func_802AAC28_de(s32 image, s32 frame, s32 x, s32 y, f32 scaleX, f32 scaleY, s32 flags);
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern Frame *D_8011BDC0;
-extern s32 D_800E28D0;
-extern s32 D_800E28D4;
+extern s32 D_800DE880_de;
+extern s32 D_800DE884_de;
 extern s32 D_800CC380;
 
 void func_80294200_de(void) {
@@ -30,10 +30,10 @@ void func_80294200_de(void) {
     D_800CC380 = 0;
     width = 0;
     height = 0;
-    gDPSetColorImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, D_800E28D0, (u32)D_8011BDC0->colorImage);
+    gDPSetColorImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, D_800DE880_de, (u32)D_8011BDC0->colorImage);
     func_802AA950_de(0x389, 0, &width, &height);
     if ((width != 0) && (height != 0)) {
         func_802A9234_de(0xFA);
-        func_802AAC28_de(0x389, 0, 0, 0, (f32)D_800E28D0 / (f32)width, (f32)D_800E28D4 / (f32)height, 1);
+        func_802AAC28_de(0x389, 0, 0, 0, (f32)D_800DE880_de / (f32)width, (f32)D_800DE884_de / (f32)height, 1);
     }
 }

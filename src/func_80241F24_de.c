@@ -21,7 +21,7 @@ extern f32 func_80241728_de(Query_func_80241BAC_de *, f32, f32);
 extern s32 func_8024491C_de(Input_func_80241BAC_de *, Vec3, Vec3, void *, f32, f32, f32, f32);
 extern s32 func_8023E178_de(Actor_func_80241BAC_de *, void *, f32, s32, f32, s32, Query_func_80241BAC_de *, s32);
 extern void func_80271F34_de(Vec3 *, Vec3 *, Vec3 *);
-extern void *D_80103FCC;
+extern void *D_800FFFCC;
 extern char D_801000F0;
 extern f32 D_800C3758_de[];
 
@@ -54,8 +54,8 @@ void func_80241F24_de(Actor_func_80241BAC_de *actor, Owner_func_80241BAC_de *own
         query->word0 = 3;
         func_80240D20_de(query, bounds);
         if (func_8023EA44_de(actor, query, owner_data, height, 0)) {
-            saved_collision = D_80103FCC;
-            D_80103FCC = collision;
+            saved_collision = D_800FFFCC;
+            D_800FFFCC = collision;
             hit_y = func_80241728_de(query, input->x, input->z);
             input->owner = owner;
             extent0 = func_8024E464_de(input);
@@ -81,7 +81,7 @@ void func_80241F24_de(Actor_func_80241BAC_de *actor, Owner_func_80241BAC_de *own
                 }
                 input->flags38 = (input->flags38 & ~3) | 2;
             }
-            D_80103FCC = saved_collision;
+            D_800FFFCC = saved_collision;
         }
     }
     if (actor->move_y < 0.0f) {

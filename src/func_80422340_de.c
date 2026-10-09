@@ -8,8 +8,8 @@
    zero. */
 
 
-extern struct func_8022A404_S1 *D_800E44A0;
-extern u8 D_801462D5;
+extern struct func_8022A404_S1 *D_800E0450;
+extern u8 D_80142215;
 extern s32 func_8043C308_de(struct func_8022A404_S1 *);
 extern void func_802A2360_de();
 extern void func_802A2394_de();
@@ -20,18 +20,18 @@ extern void func_8043C278_de(struct func_8022A404_S1 *);
 s32 func_80422340_de(void) {
     s32 one = 1;
 
-    if (func_8043C308_de(D_800E44A0) == one) {
+    if (func_8043C308_de(D_800E0450) == one) {
         return 0;
     }
     func_802A2360_de();
-    if (D_800E44A0->unk20 != one) {
+    if (D_800E0450->unk20 != one) {
         return 0;
     }
     func_802A2394_de();
-    if (D_801462D5 == 0) {
+    if (D_80142215 == 0) {
         func_80245B28_de();
         func_8042B2E4_de();
     }
-    func_8043C278_de(D_800E44A0);
+    func_8043C278_de(D_800E0450);
     return 0;
 }

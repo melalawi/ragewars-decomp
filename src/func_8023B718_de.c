@@ -16,7 +16,7 @@
 
 
 
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 
 
 
@@ -34,9 +34,9 @@ s32 func_8023B718_de(Rotor *rotor, s32 mask, f32 fallback, s32 boosting, f32 boo
 
     descriptor = rotor->descriptor;
     if (rotor->mask & mask) {
-        throttle = rotor->throttle + descriptor->throttleRate * D_800D2988;
-        if (D_800C86E0 < throttle) {
-            throttle = D_800C86E0;
+        throttle = rotor->throttle + descriptor->throttleRate * D_800CD738;
+        if (D_800C35F0_de < throttle) {
+            throttle = D_800C35F0_de;
         }
         rotor->throttle = throttle;
     } else {
@@ -45,21 +45,21 @@ s32 func_8023B718_de(Rotor *rotor, s32 mask, f32 fallback, s32 boosting, f32 boo
         if (value == zero) {
             return 1;
         }
-        lowered = value - descriptor->throttleRate * D_800D2988;
+        lowered = value - descriptor->throttleRate * D_800CD738;
         if (lowered < zero) {
             lowered = zero;
         }
         rotor->throttle = lowered;
     }
-    rotor->phase += D_800D2988 * descriptor->phaseRate * rotor->phaseScale;
-    value = D_800D2988 * D_800CD744_de * descriptor->spinRate;
+    rotor->phase += D_800CD738 * descriptor->phaseRate * rotor->phaseScale;
+    value = D_800CD738 * D_800CD744_de * descriptor->spinRate;
     angle = rotor->angleA + value * D_800C35F4_de;
-    wrap = D_800C86E8;
+    wrap = D_800C35F8_de;
     rotor->angleA = angle;
     if (wrap < angle) {
         rotor->angleA = angle - wrap;
     }
-    angle = rotor->angleB + value * ((func_802077F4_S2 *)(&D_800C86E8))->unk4;
+    angle = rotor->angleB + value * ((func_802077F4_S2 *)(&D_800C35F8_de))->unk4;
     rotor->angleB = angle;
     if (wrap < angle) {
         rotor->angleB = angle - wrap;

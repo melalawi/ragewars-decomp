@@ -60,7 +60,7 @@ extern void func_802A1114_de(void);
 extern void func_802A0E34_de();
 
 /* unbake published declaration: published_f5b76014aa584a83bb431226 */
-extern int D_800D2B80;
+extern int D_800CD910_de;
 
 /* unbake published declaration: published_fc939ec17f3d3796a5cd4769 */
 extern void func_802A0FA8_de(void);

@@ -6,7 +6,7 @@
 
 
 
-extern struct Entry_func_804101BC_de *D_80153C10;
+extern struct Entry_func_804101BC_de *D_8014D980;
 extern struct Resource_func_804101BC_de *D_8014D988;
 extern void func_80419624_de(s32);
 
@@ -18,9 +18,9 @@ void func_80411AF0_de(s32 i) {
         if (resource->retained > 0) {
             resource->retained--;
         } else {
-            if (D_80153C10[i].flags & 1) {
-                func_80419624_de(D_80153C10[i].unused);
-                D_80153C10[i].flags &= ~1;
+            if (D_8014D980[i].flags & 1) {
+                func_80419624_de(D_8014D980[i].unused);
+                D_8014D980[i].flags &= ~1;
             }
             D_8014D988[i].id = 0;
         }

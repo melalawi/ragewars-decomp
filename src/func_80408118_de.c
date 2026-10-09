@@ -3,14 +3,14 @@
 #include "types.h"
 #include "common/unused.h"
 
-extern s32 D_8015375C;
+extern s32 D_8014D4CC;
 
-extern s32 D_8011FECC;
+extern s32 D_8011BE0C;
 extern Digits D_800DCD78;
 extern char D_800E0DA4[];
 extern u8 *D_800D3754;
 extern u8 *D_800D376C;
-extern u8 *D_800D7E14;
+extern u8 *D_800D3DE8;
 
 extern s32 func_80405160_de(s32 ch, s32 *freeSpace);
 extern s32 func_804057EC_de(s32 size);
@@ -28,8 +28,8 @@ s32 func_80408118_de(PakNoteTextEntry *entry, PakStatusPakSaveMenu *menu) {
     char *format;
     Digits *buffer;
 
-    if (D_8015375C != 0) {
-        ch = D_800E28C8;
+    if (D_8014D4CC != 0) {
+        ch = D_800DE878;
     } else {
         ch = menu->slot->unk4;
     }
@@ -38,7 +38,7 @@ s32 func_80408118_de(PakNoteTextEntry *entry, PakStatusPakSaveMenu *menu) {
     if (D_8014D4C0_de != 0) {
         entry->text = &D_800D3754;
         if (func_80405160_de(ch, &freeSpace) == 0) {
-            if (D_8014D4EC_de) need=func_804057EC_de(0x18); else need=space_required(D_8011FECC);
+            if (D_8014D4EC_de) need=func_804057EC_de(0x18); else need=space_required(D_8011BE0C);
             text = *entry->text;
             func_802658E4_de(&digits, D_800E0DA4, freeSpace);
             text += 14;
@@ -51,15 +51,15 @@ s32 func_80408118_de(PakNoteTextEntry *entry, PakStatusPakSaveMenu *menu) {
             *text = digits.c[1];
             text[1] = digits.c[2];
         }
-    } else if (D_8015375C != 0) {
+    } else if (D_8014D4CC != 0) {
         header = &D_800D376C;
         goto fill;
-    } else if (D_80153760 != 0) {
+    } else if (D_8014D4D0 != 0) {
         header = &D_800D3754;
     fill:
         entry->text = header;
         result = func_80405160_de(ch, &freeSpace);
-        need = func_804057EC_de(D_8011FECC + 0x610);
+        need = func_804057EC_de(D_8011BE0C + 0x610);
         text = *entry->text;
         if (result == 0) {
             text += 14;
@@ -75,7 +75,7 @@ s32 func_80408118_de(PakNoteTextEntry *entry, PakStatusPakSaveMenu *menu) {
             text[1] = digits.c[2];
         }
     } else {
-        entry->text = &D_800D7E14;
+        entry->text = &D_800D3DE8;
     }
     return 0;
 }

@@ -156,7 +156,7 @@ void func_80258A7C_de(void *arg0, s32 arg1, Vec3 arg2, s32 arg3, s32 arg4, f32 a
     ((func_80258A9C_S1 *)(arg0))->unk2BBC = D_800C3EE0_de[1];
 }
 
-extern char D_80145088;
+extern char D_80140FC8;
 
 extern s32 func_802934F8_de(void);
 extern void *func_802395A4_de(s32 *arg0, Vec3 *arg1);
@@ -183,7 +183,7 @@ void func_80258AE0_de(void *arg0) {
             zero.y = value;
             zero.x = value;
         }
-        result = func_802395A4_de(&D_80145088, &zero);
+        result = func_802395A4_de(&D_80140FC8, &zero);
         vec = &((func_8023945C_S1 *)(result))->unk128;
         if ((((func_80258B00_S1 *)(arg0))->unk104 & 3) == 0) {
             func_80257DD4_de(arg0, ((func_80258B00_S1 *)(arg0))->unk134, *vec, 0, -1);
@@ -393,7 +393,7 @@ void func_80258E40_de(int arg0) {
 
 void func_80258E5C_de(Obj_func_80258E5C_de *obj, float value) {
     float v;
-    float max = D_800C8FE0;
+    float max = D_800C3EF0_de;
     if (value > max || !(value < 0.0f)) {
         v = value;
         if (v > max) {
@@ -402,7 +402,7 @@ void func_80258E5C_de(Obj_func_80258E5C_de *obj, float value) {
     } else {
         v = 0.0f;
     }
-    obj->level = v * D_800C8FE4;
+    obj->level = v * D_800C3EF4_de;
 }
 
 extern void func_8025DB34_de(int a);

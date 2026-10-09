@@ -9,11 +9,11 @@
 
 
 
-extern struct Settings_func_80444488_de D_80146302;
+extern struct Settings_func_80444488_de D_80142242;
 extern s32 func_804423BC_de(void *, s32, s32, s32, s32, s32);
 
 s32 func_80444488_de(void *first, struct Holder_func_80444488_de *holder) {
-    struct Settings_func_80444488_de *settings = &D_80146302;
+    struct Settings_func_80444488_de *settings = &D_80142242;
 
     if (holder->owner != 0 && holder->owner->settings != 0) {
         settings = holder->owner->settings;

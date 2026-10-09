@@ -15,9 +15,9 @@ extern char D_800EED80[];
    format D_800DE700 four bytes before the length func_80441FE8_de reports. Returns zero. */
 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-extern struct LocalizedInputState D_80145040;
+extern struct LocalizedInputState D_80140F80;
 #else
-extern char D_80145040[];
+extern char D_80140F80[];
 #endif
 
 extern s16 D_801422DA[];
@@ -29,10 +29,10 @@ extern void func_802658E4_de(char *, char *, s32);
 s32 func_80443AB0_de(Item_func_80441FE8_de *field, struct MenuRules *holder) {
 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
-    struct LocalizedInputState *players = &D_80145040;
+    struct LocalizedInputState *players = &D_80140F80;
     s32 player = func_8022A5A0_de(players, holder->locked);
 #else
-    s32 player = func_8022A5A0_de(D_80145040, holder->locked);
+    s32 player = func_8022A5A0_de(D_80140F80, holder->locked);
 #endif
 
     s32 value = D_801422DA[player * 75];

@@ -41,10 +41,10 @@ extern s32 D_0044EED0;
 extern s32 D_0044F01C;
 extern s32 D_0044F040;
 #endif
-extern s32 D_8011FECC;
-extern s32 D_8011FAC0;
-extern s32 D_8014561C;
-extern s32 D_8015375C;
+extern s32 D_8011BE0C;
+extern s32 D_8011BA00;
+extern s32 D_8014155C;
+extern s32 D_8014D4CC;
 void func_804069F4_de(Shared_func_804069F4_S1 *arg0) {
     u8 sp18[16];
     s32 sp28;
@@ -77,27 +77,27 @@ void func_804069F4_de(Shared_func_804069F4_S1 *arg0) {
     u32 temp_s1_3;
     D_8014D4C0_de = 0;
     D_8014D4DC = 1;
-    D_80153760 = 0;
+    D_8014D4D0 = 0;
     D_8014D4EC_de = 0;
     D_800DE874 = 0;
-    D_80153784 = 0;
-    D_8015375C = 1;
+    D_8014D4F4 = 0;
+    D_8014D4CC = 1;
     if (func_8026464C_de() == 0) {
-        D_80153784 = 1;
-        D_8014AD9C = 0;
+        D_8014D4F4 = 1;
+        D_80146CDC = 0;
 #if defined(VERSION_DE)
-        func_80442574_de(&D_8014561C, &D_0044EABC, arg0->first, (s32) arg0->second, 0);
+        func_80442574_de(&D_8014155C, &D_0044EABC, arg0->first, (s32) arg0->second, 0);
 #elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-        func_80442574_de(&D_8014561C, &D_0044F70C, arg0->first, (s32) arg0->second, 0);
+        func_80442574_de(&D_8014155C, &D_0044F70C, arg0->first, (s32) arg0->second, 0);
 #elif defined(VERSION_US)
-        func_80442574_de(&D_8014561C, &D_0044EC2C, arg0->first, (s32) arg0->second, 0);
+        func_80442574_de(&D_8014155C, &D_0044EC2C, arg0->first, (s32) arg0->second, 0);
 #endif
-        D_800E28CC = 1;
-        D_8014AD94 = 0;
+        D_800DE87C_de = 1;
+        D_80146CD4_de = 0;
         return;
     }
     var_s0 = 0;
-    if (D_800E28C8 == -1) {
+    if (D_800DE878 == -1) {
         var_s1 = 0;
         do {
         func_80404E28_de(var_s0);
@@ -114,35 +114,35 @@ void func_804069F4_de(Shared_func_804069F4_S1 *arg0) {
         if (var_s1 == 4) {
             var_s0 = -1;
         }
-        D_800E28C8 = var_s0;
+        D_800DE878 = var_s0;
         if (var_s0 != -1) {
             goto block_11;
         }
         goto block_35;
     }
 block_11:
-    if (func_80405598_de(D_800E28C8) == 0) {
-        func_80293268_de((s32) &D_8011FAC0);
-        if ((arg0->second->unkB0 & 0x1000) && (D_800E28CC == 0)) {
-            D_80146D60 = 1;
-            D_800E28CC = 1;
+    if (func_80405598_de(D_800DE878) == 0) {
+        func_80293268_de((s32) &D_8011BA00);
+        if ((arg0->second->unkB0 & 0x1000) && (D_800DE87C_de == 0)) {
+            D_80142CA0_de = 1;
+            D_800DE87C_de = 1;
         }
         var_s0 = 1;
-        D_800E28CC = var_s0;
-        if ((D_80142CAC != 0) || (var_s3 = 0, (D_80146D60 != 0))) {
-            func_80404E28_de(D_800E28C8);
-            if (func_80404F04_de(D_800E28C8) == -2) {
-                D_80153784 = 1;
-                D_8014AD9C = 0;
+        D_800DE87C_de = var_s0;
+        if ((D_80142CAC != 0) || (var_s3 = 0, (D_80142CA0_de != 0))) {
+            func_80404E28_de(D_800DE878);
+            if (func_80404F04_de(D_800DE878) == -2) {
+                D_8014D4F4 = 1;
+                D_80146CDC = 0;
 #if defined(VERSION_DE)
-                func_80442574_de(&D_8014561C, &D_0044EA74, arg0->first, (s32) arg0->second, 0);
+                func_80442574_de(&D_8014155C, &D_0044EA74, arg0->first, (s32) arg0->second, 0);
 #elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-                func_80442574_de(&D_8014561C, &D_0044F6C4, arg0->first, (s32) arg0->second, 0);
+                func_80442574_de(&D_8014155C, &D_0044F6C4, arg0->first, (s32) arg0->second, 0);
 #elif defined(VERSION_US)
-                func_80442574_de(&D_8014561C, &D_0044EBE4, arg0->first, (s32) arg0->second, 0);
+                func_80442574_de(&D_8014155C, &D_0044EBE4, arg0->first, (s32) arg0->second, 0);
 #endif
-                D_8014AD94 = 0;
-                D_800E28CC = 1;
+                D_80146CD4_de = 0;
+                D_800DE87C_de = 1;
                 return;
             }
             goto block_60;
@@ -155,13 +155,13 @@ block_11:
         var_s2 = var_s3;
         sp2C = -1;
         var_s5 = -1;
-        sp28 = D_800E28C8;
+        sp28 = D_800DE878;
         var_s6 = -2;
 loop_20:
-        if ((D_800E28C8 == var_s5) || (var_s3 = func_80406858_de(arg0, D_800E28C8, &sp28, &sp2C), var_s0_2 = 0, (var_s3 == 0))) {
+        if ((D_800DE878 == var_s5) || (var_s3 = func_80406858_de(arg0, D_800DE878, &sp28, &sp2C), var_s0_2 = 0, (var_s3 == 0))) {
             var_s0_3 = 0;
-            if (D_800E28C8 != var_s5) {
-                var_s0_3 = D_800E28C8 + 1;
+            if (D_800DE878 != var_s5) {
+                var_s0_3 = D_800DE878 + 1;
                 if (var_s0_3 >= 4) {
                     var_s0_3 = 0;
                 }
@@ -182,27 +182,27 @@ loop_26:
             if (var_s1_2 == 4) {
                 var_s0_3 = -1;
             }
-            D_800E28C8 = var_s0_3;
+            D_800DE878 = var_s0_3;
             var_s2 += 1;
             if (var_s2 >= 4) {
                 var_s0_2 = 0;
                 if (var_s3 == 0) {
-                    D_800E28C8 = sp28;
+                    D_800DE878 = sp28;
                     func_80404E28_de(sp28);
-                    if (func_80404F04_de(D_800E28C8) == -2) {
+                    if (func_80404F04_de(D_800DE878) == -2) {
 block_35:
 block_36:
-                        D_80153784 = 1;
-                        D_8014AD9C = 0;
+                        D_8014D4F4 = 1;
+                        D_80146CDC = 0;
 #if defined(VERSION_DE)
-                        func_80442574_de(&D_8014561C, &D_0044EA74, arg0->first, (s32) arg0->second, 0);
+                        func_80442574_de(&D_8014155C, &D_0044EA74, arg0->first, (s32) arg0->second, 0);
 #elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-                        func_80442574_de(&D_8014561C, &D_0044F6C4, arg0->first, (s32) arg0->second, 0);
+                        func_80442574_de(&D_8014155C, &D_0044F6C4, arg0->first, (s32) arg0->second, 0);
 #elif defined(VERSION_US)
-                        func_80442574_de(&D_8014561C, &D_0044EBE4, arg0->first, (s32) arg0->second, 0);
+                        func_80442574_de(&D_8014155C, &D_0044EBE4, arg0->first, (s32) arg0->second, 0);
 #endif
-                        D_8014AD94 = 0;
-                        D_800E28CC = 1;
+                        D_80146CD4_de = 0;
+                        D_800DE87C_de = 1;
                         return;
                     }
                 }
@@ -220,7 +220,7 @@ second_note_found:
         goto notes_checked;
 block_39:
         temp_s2 = D_800D36D4;
-        temp_s1 = D_800E28C8;
+        temp_s1 = D_800DE878;
         temp_a0 = temp_s1;
 loop_40:
         func_80405338_de(temp_a0, var_s0_2, &sp30);
@@ -236,7 +236,7 @@ loop_40:
 second_note_search:
         var_s0_4 = 0;
         var_s2 = D_800D36D8;
-        temp_s1_2 = D_800E28C8;
+        temp_s1_2 = D_800DE878;
         temp_a0_2 = temp_s1_2;
 loop_44:
         func_80405338_de(temp_a0_2, var_s0_4, &sp34);
@@ -251,19 +251,19 @@ loop_44:
         regpart_var_s2 = 0;
 notes_checked:
         if ((var_s3_2 == 0) && (regpart_var_s2 == 0)) {
-            if ((func_80405160_de(D_800E28C8, &sp38) == 0) && (var_s0_4 = func_804050CC_de(D_800E28C8, &sp3C), (var_s0_4 == 0))) {
-                temp_s1_3 = func_804057EC_de(D_8011FECC + 0x610);
+            if ((func_80405160_de(D_800DE878, &sp38) == 0) && (var_s0_4 = func_804050CC_de(D_800DE878, &sp3C), (var_s0_4 == 0))) {
+                temp_s1_3 = func_804057EC_de(D_8011BE0C + 0x610);
                 temp_a0_3 = func_804057EC_de(0x18U);
                 if ((sp3C != 0) && (sp38 >= (s32) temp_a0_3)) {
                     if (sp38 < (s32) temp_s1_3) {
-                        D_80153784 = 1;
-                        D_80146D60 = 1;
+                        D_8014D4F4 = 1;
+                        D_80142CA0_de = 1;
 #if defined(VERSION_DE)
-                        func_80442574_de(&D_8014561C, &D_0044EED0, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+                        func_80442574_de(&D_8014155C, &D_0044EED0, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
 #elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-                        func_80442574_de(&D_8014561C, &D_0044FB20, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+                        func_80442574_de(&D_8014155C, &D_0044FB20, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
 #elif defined(VERSION_US)
-                        func_80442574_de(&D_8014561C, &D_0044F040, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+                        func_80442574_de(&D_8014155C, &D_0044F040, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
 #endif
                         goto prompt_checked;
                     }
@@ -273,14 +273,14 @@ notes_checked:
                     }
                 } else {
 block_56:
-                    D_80153784 = 1;
-                    D_80146D60 = 1;
+                    D_8014D4F4 = 1;
+                    D_80142CA0_de = 1;
 #if defined(VERSION_DE)
-                    func_80442574_de(&D_8014561C, &D_0044EEAC, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+                    func_80442574_de(&D_8014155C, &D_0044EEAC, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
 #elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US_REV1)
-                    func_80442574_de(&D_8014561C, &D_0044FAFC, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+                    func_80442574_de(&D_8014155C, &D_0044FAFC, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
 #elif defined(VERSION_US)
-                    func_80442574_de(&D_8014561C, &D_0044F01C, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+                    func_80442574_de(&D_8014155C, &D_0044F01C, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
 #endif
                 }
 prompt_checked:
@@ -294,13 +294,13 @@ prompt_checked:
         goto block_60;
     }
 block_59:
-    D_80153784 = 1;
-    D_80146D60 = 1;
-    func_80442574_de(&D_8014561C, &D_0044ED44, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
+    D_8014D4F4 = 1;
+    D_80142CA0_de = 1;
+    func_80442574_de(&D_8014155C, &D_0044ED44, arg0->first, (s32) arg0->second, (s32) &D_0044E4F8);
 block_60:
-    if (D_80153784 == 0) {
+    if (D_8014D4F4 == 0) {
         func_80405F48_de(arg0);
     }
-    D_8014AD94 = 0;
-    D_800E28CC = 1;
+    D_80146CD4_de = 0;
+    D_800DE87C_de = 1;
 }

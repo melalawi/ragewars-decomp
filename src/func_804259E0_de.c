@@ -4,7 +4,7 @@
    achievement flags func_80265650_de reports set: every two achievements from 2 raise one more weapon
    to level 2 and, from 28, one more of twelve to level 3, in a fixed weapon order. */
 
-extern u8 D_80102B00[];
+extern u8 D_800FEB00[];
 
 extern s32 func_80265650_de(u8 *, s32);
 
@@ -15,7 +15,7 @@ static inline s32 count_achievements(s32 index) {
     count = 0;
     i = 0;
     do {
-        if (func_80265650_de(D_80102B00 + index * 400 + 0x4A, i) == 1) {
+        if (func_80265650_de(D_800FEB00 + index * 400 + 0x4A, i) == 1) {
             count++;
         }
         i++;
@@ -27,7 +27,7 @@ void func_804259E0_de(s32 index) {
     u8 *record;
     s32 count;
 
-    record = D_80102B00 + index * 400;
+    record = D_800FEB00 + index * 400;
     count = count_achievements(index);
     if (count >= 2) {
         record[0x57] = 2;

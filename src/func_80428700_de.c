@@ -3,11 +3,11 @@
 
 
 
-/* Opens the five option windows of screen D_800E4690: for each of options 0 to 4 it picks window
+/* Opens the five option windows of screen D_800E0640_de: for each of options 0 to 4 it picks window
    0x149, 0x14C, 0x14D, 0x14E or 0x14F through jtbl_800DD9F0, opens it under the screen's parent at
    0x970, opens its 0x14B child and shows that through func_8040E8D8_de. The loop walks the table with
    its own pointer, as the cartridge's strength-reduced dispatch does. */
-extern ResultsOptionsScreen *D_800E4690;
+extern ResultsOptionsScreen *D_800E0640_de;
 extern void *jtbl_800DD9F0[];
 extern void *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(void *, s32);
@@ -49,6 +49,6 @@ void func_80428700_de(void) {
     option_4:
         id = RESULTS_OPTION_335;
     open:
-        func_8040E8D8_de(func_8040EC30_de(func_8040EC30_de(D_800E4690->parent, id), RESULTS_OPTION_331), 1);
+        func_8040E8D8_de(func_8040EC30_de(func_8040EC30_de(D_800E0640_de->parent, id), RESULTS_OPTION_331), 1);
     }
 }

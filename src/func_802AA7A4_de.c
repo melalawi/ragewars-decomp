@@ -15,7 +15,7 @@ extern void func_802AAB3C_de(int arg0, int arg1, int arg2, int arg3, int arg4, i
 extern void func_802A9234_de(s32);
 extern void func_802A7660_de(void *arg0, int arg1);
 
-extern u8 D_801462DE;
+extern u8 D_8014221E;
 
 
 
@@ -33,7 +33,7 @@ void func_802AA7A4_de(void *arg0) {
     func_802A8710_de();
     func_802AAB68_de(D_800C61F0_de, D_800C61F0_de);
     func_802AAB3C_de(0xFF, 0xFF, 0xFF, 0xC8, 0xC8, 0xC8);
-    func_802A9234_de(D_801462DE);
+    func_802A9234_de(D_8014221E);
     if (((func_802AB794_S1 *)(arg0))->unk40 != 0) {
         func_802A7660_de(arg0, 1);
     }

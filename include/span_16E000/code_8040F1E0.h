@@ -104,7 +104,7 @@ extern int func_8040F570_de(struct Field_u16_14 *a, struct Field_u16_14 *b);
 extern void func_8040F568_de();
 
 /* unbake published declaration: published_24813cee607d8d53543fa21a */
-extern int D_80153C08;
+extern int D_8014D978;
 
 /* unbake published declaration: published_2a348020c429d089dd627a8b */
 extern s32 func_8040F160_de(s32 font, u8 *text, s32 length);

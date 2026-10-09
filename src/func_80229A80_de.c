@@ -91,7 +91,7 @@ extern void *jtbl_800C2C80[];
 
 /** Return the animation-table offset selected by the actor state. */
 s32 func_80229C0C_de(void *arg0, s32 arg1) {
-    s32 *types = &D_800CE47C;
+    s32 *types = &D_800C922C;
     u16 type = ((func_80229BE0_S1 *)(arg0))->unkE4;
     char *state;
     s32 offset;
@@ -189,12 +189,12 @@ s32 func_80229C0C_de(void *arg0, s32 arg1) {
 
 /* Draws the marker over a player that is alive at 0x5E4: loads the player's matrix from its table at
    0x1640 (the first entry while func_802A23B4_de reports a shared view, otherwise the entry for the current
-   view D_800D297C), sets the render and geometry modes, fills the five vertices of a green pyramid in
+   view D_800CD72C), sets the render and geometry modes, fills the five vertices of a green pyramid in
    D_800FE9F8 and emits them with its four triangles. Adapted from func_8021C698_de with the pyramid, the
    colour and the matrix selection changed. */
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 extern struct UnitVtx D_800FE9F8[];
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern s32 func_802A23B4_de(void);
 extern void func_8026D8F8_de(void);
 extern void func_8026925C_de(s32);
@@ -206,18 +206,18 @@ void func_80229D28_de(Player16C0 *player) {
 
     if (player->alive != 0) {
         if (func_802A23B4_de() != 0) {
-            gSPMatrix(D_80110634++, (u32) &player->markers[0], G_MTX_LOAD);
+            gSPMatrix(D_8010C574++, (u32) &player->markers[0], G_MTX_LOAD);
         } else {
-            gSPMatrix(D_80110634++, (u32) &player->markers[D_800D297C], G_MTX_LOAD);
+            gSPMatrix(D_8010C574++, (u32) &player->markers[D_800CD72C], G_MTX_LOAD);
         }
-        gDPPipeSync(D_80110634++);
+        gDPPipeSync(D_8010C574++);
         func_8026D8F8_de();
         func_8026925C_de(0xE);
         func_80268CE0_de(0x1C);
         green = 200;
         alpha = 150;
-        gSPGeometryMode(D_80110634++, G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | 0x80, 0);
-        gSPGeometryMode(D_80110634++, 0, G_SHADE | G_SHADING_SMOOTH);
+        gSPGeometryMode(D_8010C574++, G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | 0x80, 0);
+        gSPGeometryMode(D_8010C574++, 0, G_SHADE | G_SHADING_SMOOTH);
         D_800FE9F8[0].x = 0;
         D_800FE9F8[0].y = 0;
         D_800FE9F8[0].z = 0;
@@ -268,17 +268,17 @@ void func_80229D28_de(Player16C0 *player) {
         D_800FE9F8[4].g = green;
         D_800FE9F8[4].b = 0;
         D_800FE9F8[4].a = alpha;
-        gSPVertex(D_80110634++, (u32) D_800FE9F8, 5, 0);
-        gSP1Triangle(D_80110634++, 0, 1, 2, 0);
-        gSP1Triangle(D_80110634++, 0, 1, 4, 0);
-        gSP1Triangle(D_80110634++, 0, 2, 3, 0);
-        gSP1Triangle(D_80110634++, 0, 3, 4, 0);
+        gSPVertex(D_8010C574++, (u32) D_800FE9F8, 5, 0);
+        gSP1Triangle(D_8010C574++, 0, 1, 2, 0);
+        gSP1Triangle(D_8010C574++, 0, 1, 4, 0);
+        gSP1Triangle(D_8010C574++, 0, 2, 3, 0);
+        gSP1Triangle(D_8010C574++, 0, 3, 4, 0);
     }
 }
 
 /* Scales damage by ownership and player state and suppresses friendly damage when configured. */
 
-extern func_80207B5C_S2 D_801468A0;
+extern func_80207B5C_S2 D_801427E0;
 extern const f32 D_800C7DB0[],D_800C7DB8[],D_800C7DC0[],D_800C7DC8[],D_800C2CE0_de[];
 void func_80229FA0_de(Obj_func_80229FA0_de *arg0, Damage_func_80229FA0_de *arg1) {
     f32 var_f0;
@@ -330,14 +330,14 @@ void func_80229FA0_de(Obj_func_80229FA0_de *arg0, Damage_func_80229FA0_de *arg1)
                 break;
             }
         }
-        { func_80207B5C_S2 *state=&D_801468A0;
+        { func_80207B5C_S2 *state=&D_801427E0;
         if ((state->unk24 != 0) && (((unsigned char *)state)[-0x5B0] == 0) && ((var_a3->unk1450 == 0) || (arg0->unk1450 == 0)) && (arg0->unk5D8->unk92 == var_a3->unk5D8->unk92)) {
             arg1->unk4 = 0;
         }}
     }
 }
 
-extern u8 D_801462C8[];
+extern u8 D_80142208_de[];
 
 extern void func_80253BBC_de(s32 arg0, void *arg1);
 extern void func_8024B8C4_de(void *arg0);
@@ -353,7 +353,7 @@ void func_8022A170_de(void *arg0) {
 
     node = ((func_80228774_S1 *)(arg0))->unk20;
     if (node != 0) {
-        u8 *base = D_801462C8;
+        u8 *base = D_80142208_de;
 
         do {
             func_8024B8C4_de(node);

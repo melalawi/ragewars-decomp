@@ -5,10 +5,10 @@
 
 
 
-extern char D_80146302[];
+extern char D_80142242[];
 
 char *func_804441F4_de(struct Actor_func_804441F4_de *actor) {
-    char *name = D_80146302;
+    char *name = D_80142242;
 
     if (actor->owner != 0 && actor->owner->name != 0) {
         name = actor->owner->name;

@@ -7,7 +7,7 @@
 
 
 
-extern s32 D_80105180[];
+extern s32 D_80101180[];
 
 Entry_func_80255048_de *func_80255048_de(s32 unused, EntryList *list, Entry_func_80255048_de **recent)
 {
@@ -16,7 +16,7 @@ Entry_func_80255048_de *func_80255048_de(s32 unused, EntryList *list, Entry_func
     if (*recent == 0) {
         for (; e != 0; e = e->next) {
             if (!(e->flags & 0x702)) {
-                if ((u32)(D_80105180[0] - e->stamp) >= 5) {
+                if ((u32)(D_80101180[0] - e->stamp) >= 5) {
                     return e;
                 }
                 *recent = e;
@@ -25,7 +25,7 @@ Entry_func_80255048_de *func_80255048_de(s32 unused, EntryList *list, Entry_func
         }
     }
     for (; e != 0; e = e->next) {
-        if (!(e->flags & 0x702) && (u32)(D_80105180[0] - e->stamp) >= 5) {
+        if (!(e->flags & 0x702) && (u32)(D_80101180[0] - e->stamp) >= 5) {
             return e;
         }
     }

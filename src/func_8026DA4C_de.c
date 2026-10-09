@@ -10,9 +10,9 @@
 
 
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern Frame118 *D_8011BDC0;
-extern u32 D_800E28A4;
+extern u32 D_800DE854_de;
 extern void func_80253BBC_de(s32 heap, void **resource);
 extern void *func_8028FDB4_de(void *table, s32 index);
 extern s32 func_8026B504_de(s32 matrix, s32 lights, void *material);
@@ -27,17 +27,17 @@ void func_8026DA4C_de(void **resource, s32 matrix, s32 segment, s32 lights, void
     s32 count;
     s32 i;
 
-    if (D_800E28A4 - ((u32)D_80110634 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+    if (D_800DE854_de - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
         return;
     }
     header = *resource;
     func_80253BBC_de(0, resource);
-    if (segment != 0) { gSPSegment(D_80110634++, 1, matrix); } else { gSPMatrix(D_80110634++, matrix, G_MTX_LOAD); }
+    if (segment != 0) { gSPSegment(D_8010C574++, 1, matrix); } else { gSPMatrix(D_8010C574++, matrix, G_MTX_LOAD); }
     base = textures;
     if (base == 0) {
         base = func_8028FDB4_de(header, 0);
     }
-    gSPSegment(D_80110634++, 2, (unsigned int)base);
+    gSPSegment(D_8010C574++, 2, (unsigned int)base);
     parts = func_8028FDB4_de(header, 2);
     count = *(s32 *)parts;
     for (i = 0; i < count; i++) {
@@ -50,7 +50,7 @@ void func_8026DA4C_de(void **resource, s32 matrix, s32 segment, s32 lights, void
             Gfx *cmd;
             void *list = func_8028FDB4_de(part, 1);
 
-            cmd = D_80110634++;
+            cmd = D_8010C574++;
             gSPDisplayList(cmd, (unsigned int)list);
         }
     }

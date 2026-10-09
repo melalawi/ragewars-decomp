@@ -7,9 +7,9 @@
 
 
 
-extern func_8022BECC_S2 *D_80153D58;
-extern s32 D_80153C6C;
-extern u32 D_80153C74;
+extern func_8022BECC_S2 *D_8014DAC8;
+extern s32 D_8014D9DC;
+extern u32 D_8014D9E4;
 extern u32 D_8014DA10;
 extern u32 D_8014DA14;
 extern u32 D_8014DA18;
@@ -18,7 +18,7 @@ extern u32 D_8014DA1C;
 
 
 
-extern void (*D_80153CD4)(void);
+extern void (*D_8014DA44)(void);
 
 void func_80413B54_de(s32 x, s32 y, u32 color) {
     u32 r;
@@ -53,7 +53,7 @@ void func_80413B54_de(s32 x, s32 y, u32 color) {
     } else {
         a = (a << D_8014DA3C) & D_8014DA1C;
     }
-    D_80153C74 = r | g | b | a;
-    D_80153C6C = x + y * D_80153D58->unk8;
-    D_80153CD4();
+    D_8014D9E4 = r | g | b | a;
+    D_8014D9DC = x + y * D_8014DAC8->unk8;
+    D_8014DA44();
 }

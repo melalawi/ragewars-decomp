@@ -1,7 +1,7 @@
 /* Writable pointer slots for resident option labels. All targets are
  * actual character-array members in source-backed label producers.
  * 804451D0 selects these slots as field->text; 8040A300 selects the final
- * space-label slot through D_800D7E14. Adjacent non-label values stay raw. */
+ * space-label slot through D_800D3DE8. Adjacent non-label values stay raw. */
 struct MenuStrings_D6434;
 extern const struct MenuStrings_D6434 ragewars_menu_strings_D6434_us_rev1;
 extern const char ragewars_menu_digit_labels_us_rev1[11][4];

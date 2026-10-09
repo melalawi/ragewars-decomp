@@ -17,7 +17,7 @@
 
 
 
-extern func_80205628_S3 D_8013B364;
+extern func_80205628_S3 D_801372A4;
 
 extern Link *func_8020C9B0_de(func_80205628_S3 *, s32);
 extern Vec3 *func_8020C994_de(func_80205628_S3 *, s32);
@@ -37,7 +37,7 @@ s32 func_8020D4AC_de(Selection_func_8020D4AC_de *sel) {
     node = 0;
     i = 0;
     stage = 0;
-    route = &D_8013B364;
+    route = &D_801372A4;
     for (; i < route->unkC; i++) {
         link = func_8020C9B0_de(route, i);
         if (link->from == sel->id && link->type == 6) {

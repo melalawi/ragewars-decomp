@@ -3,7 +3,7 @@
 #include "types.h"
 #include "common/unused.h"
 
-extern SlotDialog *D_800E3518;
+extern SlotDialog *D_800DF4C8;
 
 /* The slot-error scalar is real external storage in every ROM version. */
 #if defined(VERSION_EU) || defined(VERSION_DE) || defined(VERSION_US)
@@ -33,7 +33,7 @@ s32 func_8041C494_de(void) {
     func_8029973C_de();
     switch (func_80299A08_de()) {
     case 0x3CB:
-        func_8040E8D8_de((void *)D_800E3518->absent, 0);
+        func_8040E8D8_de((void *)D_800DF4C8->absent, 0);
         func_8041BE90_de();
         break;
     case 0x3CA:
@@ -43,9 +43,9 @@ s32 func_8041C494_de(void) {
         func_8041C244_de();
         break;
     case 0x3C6:
-        D_80146D60 = 1;
-        D_800E28CC = 1;
-        D_8014AD94 = 0;
+        D_80142CA0_de = 1;
+        D_800DE87C_de = 1;
+        D_80146CD4_de = 0;
 #if defined(VERSION_EU)
         D_800EFB34 = 1;
 #elif defined(VERSION_EU_X)

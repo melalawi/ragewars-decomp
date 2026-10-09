@@ -13,13 +13,13 @@ extern u8 D_80152789;
 
 
 
-extern struct MenuRules *D_800E28BC;
-extern char D_800E0DA4[];
+extern struct MenuRules *D_800DE86C;
+extern char D_800DCD74[];
 extern s32 func_80441FE8_de(struct Field *);
 extern void func_802658E4_de(char *, char *, s32);
 
 s32 func_8040A530_de(struct Field *field) {
-    s32 value = D_800E28BC->locked >> 8;
+    s32 value = D_800DE86C->locked >> 8;
     char *text =
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
         field->text[D_80152789];
@@ -27,6 +27,6 @@ s32 func_8040A530_de(struct Field *field) {
         *field->text;
 #endif
 
-    func_802658E4_de(text + (func_80441FE8_de(field) - 3), D_800E0DA4, value);
+    func_802658E4_de(text + (func_80441FE8_de(field) - 3), D_800DCD74, value);
     return 0;
 }

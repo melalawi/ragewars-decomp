@@ -6,7 +6,7 @@
 
 
 
-extern f32 D_800C8630[];
+extern f32 D_800C3540_de[];
 extern void func_80255ED8_de(void *list, void *node);
 extern void func_80255CB8_de(void *list, void *node);
 
@@ -38,6 +38,6 @@ void func_802394BC_de(char *obj, f32 a, f32 b, f32 c, f32 scale, s32 value, Vec3
     } else {
         node = ((func_802394AC_S2 *)(obj))->unk11F0;
     }
-    k = D_800C8630[1];
+    k = D_800C3540_de[1];
     set_emitter(node, a * k, b * k, c * k, scale, value, pos);
 }

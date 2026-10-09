@@ -13,12 +13,12 @@
 
 
 
-extern World_func_802466A0_de D_8011FE88;
+extern World_func_802466A0_de D_8011BDC8;
 extern char *D_80140F84;
 
 extern void *D_800CB440_de[];
 extern char D_800CA8C4_de;
-extern Block24 D_800D0EF8;
+extern Block24 D_800CBCA8;
 extern void D_0024A7A0();
 extern s32 func_8028B21C_de(void *, s32);
 extern void func_80246184_de(char *);
@@ -54,7 +54,7 @@ static inline void *body_setup(char *obj) {
         return 0;
     }
     if (kind == 11) {
-        for (i = 0; i < D_80145048; i++) {
+        for (i = 0; i < D_80140F88; i++) {
             player = D_80140F84 + i * 0x16E8;
             if (player == obj) {
                 return 0;
@@ -76,7 +76,7 @@ void func_802466A0_de(char *obj, s32 model, s32 kind, s32 unused, u32 *info, s32
     struct Header { char unknown[0x100]; s32 flags; };
     ((struct Header *)obj)->flags &= ~0x40000;
     if (model == -1) {
-        model = func_8028B21C_de(&D_8011FE88, kind);
+        model = func_8028B21C_de(&D_8011BDC8, kind);
         if (model == -1) {
             return;
         }
@@ -135,7 +135,7 @@ func_80213AAC_de
     if (effect != -1) {
         func_802193C8_de(obj + 0x204, effect, (char *)obj + 0x8);
     }
-    world = &D_8011FE88;
+    world = &D_8011BDC8;
     func_80246BE8_de(obj, world->gravity, world->radius, lean);
     if (delay != 0) {
         ((func_80246690_S1 *)(obj))->unk104 = delay;
@@ -144,7 +144,7 @@ func_80213AAC_de
     ((func_80246690_S1 *)(obj))->unk2E4 = func_80250BF0_de() << 10;
     if (((func_80246690_S1 *)(obj))->unk100 & 8) {
         ((func_80246690_S1 *)(obj))->unk27C = D_0024A7A0;
-        ((func_80246690_S1 *)(obj))->unk140 = D_800D0EF8;
-        ((func_80246690_S1 *)(obj))->unk158 = D_800D0EF8;
+        ((func_80246690_S1 *)(obj))->unk140 = D_800CBCA8;
+        ((func_80246690_S1 *)(obj))->unk158 = D_800CBCA8;
     }
 }

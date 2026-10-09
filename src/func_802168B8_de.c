@@ -7,7 +7,7 @@ extern f32 func_80215868_de(void *arg0, f32 arg1, f32 arg2, f32 arg3,
                         void *arg4, f32 arg5);
 extern void func_80217074_de(void *arg0, f32 arg1);
 
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 
 void func_802168B8_de(void *arg0, s32 arg1, Vec3_func_802168B8_de *arg2, f32 arg3) {
     f32 f0;
@@ -27,7 +27,7 @@ void func_802168B8_de(void *arg0, s32 arg1, Vec3_func_802168B8_de *arg2, f32 arg
                 f1 = f0;
             }
         }
-        f1 = f1 * D_800D2988;
+        f1 = f1 * D_800CD738;
         f2 = f1;
         if (f1 < 0.0f) {
             f2 = -f1;

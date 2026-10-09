@@ -9,12 +9,12 @@
 
 
 
-extern char D_8011FAC0[];
+extern char D_8011BA00[];
 extern void func_8044DD50_de(void *);
 
 s32 func_8043DB04_de(void *unused, struct Holder *holder) {
-    if (D_80145070 == 1) {
-        func_8044DD50_de(D_8011FAC0);
+    if (D_80140FB0 == 1) {
+        func_8044DD50_de(D_8011BA00);
     } else {
         holder->owner->value = 0;
     }

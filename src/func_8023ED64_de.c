@@ -21,7 +21,7 @@ s32 func_8023ED64_de(void *arg0, void *arg1) {
         if ((u32) (((func_8023ED54_S1 *)(arg1))->unk0 - 5) < 2) {
             return 0;
         }
-        if ((temp_f2 * ((func_8023ED54_S2 *)(arg0))->unk80) < -(D_800D0648 * D_800C36D8_de)) {
+        if ((temp_f2 * ((func_8023ED54_S2 *)(arg0))->unk80) < -(D_800CB408_de * D_800C36D8_de)) {
             return 0;
         }
     }

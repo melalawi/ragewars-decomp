@@ -14,10 +14,10 @@ struct Shared_WidgetIdE { u8 pad0[0xE]; u16 id; };
 
 
 
-extern struct WidgetTable *D_8014D080;
+extern struct WidgetTable *D_80146E00;
 
 static inline WidgetCallback func_8029AA80_find(s32 id) {
-    struct WidgetHandler *h = D_8014D080->handlers;
+    struct WidgetHandler *h = D_80146E00->handlers;
     s32 i;
 
     for (i = 0; i < 64; i++, h++) {

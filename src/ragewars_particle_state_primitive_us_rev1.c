@@ -5,7 +5,7 @@
 
 /* Particle render-state lists using the shared runtime vertices.
  * ROM D3B18..D3B78. */
-extern UnitVtx D_801469A0[4];
+extern UnitVtx D_801428E0[4];
 
 Gfx D_800CDCA8[12] = {
     gsDPSetTextureLUT(G_TT_NONE),
@@ -19,6 +19,6 @@ Gfx D_800CDCA8[12] = {
     gsSPMoveWord(G_MW_CLIP, G_MWO_CLIP_RNY, FRUSTRATIO_1),
     gsSPMoveWord(G_MW_CLIP, G_MWO_CLIP_RPX, 0xFFFF),
     gsSPMoveWord(G_MW_CLIP, G_MWO_CLIP_RPY, 0xFFFF),
-    gsSPVertex(D_801469A0, 4, 0),
+    gsSPVertex(D_801428E0, 4, 0),
     gsSPEndDisplayList()
 };

@@ -2,13 +2,13 @@
 #include "types.h"
 
 extern void *func_8028B2F8_de(char *arg0, s32 arg1);
-extern char D_8011FE88;
+extern char D_8011BDC8;
 
 
 
 
 u8 func_80276054_de(s32 arg0) {
-    void *temp = func_8028B2F8_de(&D_8011FE88, arg0);
+    void *temp = func_8028B2F8_de(&D_8011BDC8, arg0);
     if (temp == 0) {
         return 0;
     }

@@ -3,7 +3,7 @@
 #include "../types.h"
 #include "common/types_8fd754e1e915.h"
 /* unbake published declaration: published_0055ec91f51153da2afe0870 */
-extern float D_800E2810;
+extern float D_800DE7C0;
 
 struct Menu_func_80445964_de;
 /* unbake published declaration: published_02d3f7a7f968682d0a09aff9 */

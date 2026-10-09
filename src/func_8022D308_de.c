@@ -13,10 +13,10 @@
 
 
 extern void func_802227F4_de(Actor_func_8022D290_de *, Actor_func_8022D290_de *, s32);
-extern s32 D_800CED30;
+extern s32 D_800C9AEC_de;
 extern f32 D_800C2DB0_de[];
-extern Shared_GameMode D_801468A0;
-extern f32 D_800D2988;
+extern Shared_GameMode D_801427E0;
+extern f32 D_800CD738;
 
 void func_8022D308_de(Actor_func_8022D290_de *arg0) {
     f32 wait;
@@ -30,20 +30,20 @@ void func_8022D308_de(Actor_func_8022D290_de *arg0) {
     arg0->unk_0x11D8 = 0.0f;
     arg0->unk_0x11FC = 0;
     arg0->flags |= 0x01000000;
-    if (arg0->unk_0x13B4 == &D_800CED30) {
+    if (arg0->unk_0x13B4 == &D_800C9AEC_de) {
         arg0->unk_0x086C = 0x5E24;
     } else {
         arg0->unk_0x086C = 1;
     }
     D_800C7EA0_1 = D_800C2DB0_de[1];
-    wait = *(f32 *) &arg0->unk_0x0860 + D_800D2988;
+    wait = *(f32 *) &arg0->unk_0x0860 + D_800CD738;
     *(f32 *) &arg0->unk_0x0860 = wait;
     if (wait > D_800C7EA0_1) {
         goto fire;
     }
-    if ((mode = &D_801468A0)->unk28 != 0 && mode->unk1C != 0) {
+    if ((mode = &D_801427E0)->unk28 != 0 && mode->unk1C != 0) {
         fire:
-        if ((mode = &D_801468A0)->unk28 != 0 && 0 == mode->unk1C) {
+        if ((mode = &D_801427E0)->unk28 != 0 && 0 == mode->unk1C) {
             func_802227F4_de(arg0, arg0, 0x14);
         } else {
             func_802227F4_de(arg0, arg0, 0x13);

@@ -9,13 +9,13 @@
 
 
 
-extern func_8042B4C4_S1 *D_800E4F60;
+extern func_8042B4C4_S1 *D_800E0F10;
 extern void func_8040E8D8_de(struct Resource_func_80419E54_de *, s32);
 
 void func_8042B2E4_de(void) {
-    (D_800E4F60->unk454)->value = 0xFF;
-    (D_800E4F60->unk450)->value = 0xFF;
-    func_8040E8D8_de(D_800E4F60->unk450, 1);
-    func_8040E8D8_de(D_800E4F60->unk454, 1);
-    D_800E4F60->unk46C = 0;
+    (D_800E0F10->unk454)->value = 0xFF;
+    (D_800E0F10->unk450)->value = 0xFF;
+    func_8040E8D8_de(D_800E0F10->unk450, 1);
+    func_8040E8D8_de(D_800E0F10->unk454, 1);
+    D_800E0F10->unk46C = 0;
 }

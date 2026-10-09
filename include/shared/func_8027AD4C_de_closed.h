@@ -74,14 +74,14 @@ void func_80279DD0_de(void *, f32);
 #if defined(VERSION_EU)
 float func_802AD520_eu(int);
 #else
-float func_802B2350(int);
+float func_802AD280_de(int);
 #endif
 f32 func_802B72B0_de(f32);
 void func_80271818_de(void *, f32 *);            /* extern */
 void func_8027A084_de(void *);                      /* extern */
 void func_8027A4D0_de(void *);                      /* extern */
-extern s32 D_80145040;
-extern void *D_80145060;
+extern s32 D_80140F80;
+extern void *D_80140FA0;
 
 
 #endif

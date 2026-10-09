@@ -2,10 +2,10 @@
 #include "types.h"
 
 /* Stores 0 in D_80153768 and 0 in D_80153734. */
-extern s32 D_80153768;
-extern s32 D_80153734;
+extern s32 D_8014D4D8;
+extern s32 D_8014D4A4;
 
 void func_8040B3C4_de(void) {
-    D_80153768 = 0;
-    D_80153734 = 0;
+    D_8014D4D8 = 0;
+    D_8014D4A4 = 0;
 }

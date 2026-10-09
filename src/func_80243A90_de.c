@@ -41,8 +41,8 @@ float func_802B6560_de(float);
 float func_802B7130_de(float);
 s32 func_8023CFE0_de();                     /* extern */
 s32 func_8023D380_de();                         /* extern */
-extern Func80243A80Global *D_80103FCC;
-extern s32 D_80103FD0;
+extern Func80243A80Global *D_800FFFCC;
+extern s32 D_800FFFD0;
 extern Func80243A80State D_801000F0;
 extern s32 D_80100170;
 
@@ -94,7 +94,7 @@ s32 func_80243A90_de(Func80243A80Actor *arg0, Func80243A80Vec3 pos, u32 *arg4) {
     f32 savedY; 
 
     func_8023EBD4_de(&frame.sp18);
-    __builtin_memcpy(&D_80103FCC->x, &arg0->room, 12);
+    __builtin_memcpy(&D_800FFFCC->x, &arg0->room, 12);
     arg0->flags = (u32) (arg0->flags & ~0x18);
     frame.sp18 = arg0;
     var_a1 = 0;
@@ -136,7 +136,7 @@ s32 func_80243A90_de(Func80243A80Actor *arg0, Func80243A80Vec3 pos, u32 *arg4) {
             var_v1_2 = D_800CB414_de;
         }
         D_800CB414_de = var_v1_2;
-        if ((arg4 != &D_80100338) && (arg4 != &D_801001D0) && (arg4 != &D_80103FD0) && (arg4 != &D_80100170)) {
+        if ((arg4 != &D_80100338) && (arg4 != &D_801001D0) && (arg4 != &D_800FFFD0) && (arg4 != &D_80100170)) {
             arg0->attached = 0;
             frame.sp54 &= ~0x7B;
         }

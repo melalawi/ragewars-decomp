@@ -19,8 +19,8 @@
 
 
 
-extern struct Screen_func_804201A4_de *D_800E42D0;
-extern struct Row D_800E42D4[];
+extern struct Screen_func_804201A4_de *D_800E0280;
+extern struct Row D_800E0284_de[];
 extern u8 D_800FEB57[];
 extern struct Resource_func_80419E54_de *func_8040EC30_de(void *, s32);
 extern void func_8040E928_de(struct Resource_func_80419E54_de *, s32);
@@ -31,17 +31,17 @@ void func_804201A4_de(s32 player) {
     s32 choice;
     s32 count;
 
-    choice = D_800E42D0->entries[player].choice;
-    item = func_8040EC30_de(D_800E42D0->entries[0].window, D_800E42D4[player].cells[choice].flags);
+    choice = D_800E0280->entries[player].choice;
+    item = func_8040EC30_de(D_800E0280->entries[0].window, D_800E0284_de[player].cells[choice].flags);
     func_8040E928_de(item, 0);
     item->value = 0x50;
-    count = D_800FEB57[func_8041F1D8_de(D_800E42D0->entries[player].kind) + player * 400];
+    count = D_800FEB57[func_8041F1D8_de(D_800E0280->entries[player].kind) + player * 400];
     if (count <= 0) {
         count = 1;
     }
     choice = (choice + 1) % count;
-    item = func_8040EC30_de(D_800E42D0->entries[0].window, D_800E42D4[player].cells[choice].flags);
+    item = func_8040EC30_de(D_800E0280->entries[0].window, D_800E0284_de[player].cells[choice].flags);
     func_8040E928_de(item, 1);
     item->value = 0x96;
-    D_800E42D0->entries[player].choice = choice;
+    D_800E0280->entries[player].choice = choice;
 }

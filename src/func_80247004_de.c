@@ -7,7 +7,7 @@ s32 func_8024E29C_de(void *); /* extern */
 s32 func_8024E62C_de(); /* extern */
 void func_80270CD0_de(void *, f32, void *, f32 *); /* extern */
 void func_80274380_de(void *, f32 *); /* extern */
-extern f32 D_800C3928_de[], D_800C3930_de[], D_800D2988[];
+extern f32 D_800C3928_de[], D_800C3930_de[], D_800CD738[];
 void func_80247004_de(Obj_func_80247004_de *arg0) {
     f32 vec[4];
     f32 var_f0;
@@ -31,9 +31,9 @@ void func_80247004_de(Obj_func_80247004_de *arg0) {
             }
         } else {
             if ((temp_s2 != 0) && !(arg0->unk100 & 0x1000)) {
-                var_f0 = D_800D2988[0]; var_f1 = D_800C3928_de[0];
+                var_f0 = D_800CD738[0]; var_f1 = D_800C3928_de[0];
             } else {
-                var_f0 = D_800D2988[0]; var_f1 = D_800C3928_de[1];
+                var_f0 = D_800CD738[0]; var_f1 = D_800C3928_de[1];
             }
             var_f0 = var_f0 * var_f1;
             temp_a0 = &((func_80246FF4_S1 *)(arg0))->unk5C;

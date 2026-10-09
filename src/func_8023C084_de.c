@@ -10,7 +10,7 @@
 
 
 
-extern Entry_func_8023B9C0_eu D_80103F28[];
+extern Entry_func_8023B9C0_eu D_800FFF28[];
 extern char D_8014E000;
 extern void func_802AD370_de(s32, s32, s32, s32, s32, s32);
 extern void func_802AD3F0_de(s32);
@@ -22,23 +22,23 @@ void func_8023C084_de(Mapping *mapping) {
         return;
     }
     if (mapping->flags & 1) {
-        D_80103F28[mapping->slot].slot = 0xFF;
+        D_800FFF28[mapping->slot].slot = 0xFF;
         slot = mapping->slot;
-        if (D_80103F28[slot].team == 0xFF) {
+        if (D_800FFF28[slot].team == 0xFF) {
             goto unmap;
         }
-        func_802AD370_de(slot, 0, D_80103F28[slot].id << 12,
-                      ((s32)&D_8014E000 & 0x3FFFFFF) + (D_80103F28[slot].team << 12), -1, 7);
+        func_802AD370_de(slot, 0, D_800FFF28[slot].id << 12,
+                      ((s32)&D_8014E000 & 0x3FFFFFF) + (D_800FFF28[slot].team << 12), -1, 7);
     } else {
-        D_80103F28[mapping->slot].team = 0xFF;
+        D_800FFF28[mapping->slot].team = 0xFF;
         slot = mapping->slot;
-        if (D_80103F28[slot].slot == 0xFF) {
+        if (D_800FFF28[slot].slot == 0xFF) {
         unmap:
             func_802AD3F0_de(slot);
-            D_80103F28[mapping->slot].id = 0xFFFF;
+            D_800FFF28[mapping->slot].id = 0xFFFF;
         } else {
-            func_802AD370_de(slot, 0, D_80103F28[slot].id << 12, -1,
-                          ((s32)&D_8014E000 & 0x3FFFFFF) + (D_80103F28[slot].slot << 12), 7);
+            func_802AD370_de(slot, 0, D_800FFF28[slot].id << 12, -1,
+                          ((s32)&D_8014E000 & 0x3FFFFFF) + (D_800FFF28[slot].slot << 12), 7);
         }
     }
     mapping->slot = 0xFF;

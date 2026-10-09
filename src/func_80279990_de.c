@@ -2,12 +2,12 @@
 #include "span_1000/code_80279208.h"
 #include "types.h"
 
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 
 void func_80279990_de(void *arg0) {
     s32 *p = (s32 *)arg0;
     p[2] = p[1];
-    p[3] = p[0] + ((p[1] * D_800D297C) << 6);
+    p[3] = p[0] + ((p[1] * D_800CD72C) << 6);
 }
 
 s32 func_802799C0_de(void *arg0, s32 arg1) {

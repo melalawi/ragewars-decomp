@@ -1,4 +1,4 @@
-/* Numeric constants loaded by func_804399D0.
+/* Numeric constants loaded by func_804397F0_de.
  * US rev1 ROM 0xe2b80-0xe2b98; original .float/.double directives.
  */
 const float D_800DDF50_de = 0.01745329425f;

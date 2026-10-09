@@ -5,7 +5,7 @@
 /* Steps each channel's fade timer and writes the level its curve currently reaches. */
 
 
-extern Blk *D_800E54A4;
+extern Blk *D_800E1454_de;
 extern f32 func_802B6560_de(f32);
 extern Resource_func_80419E54_de *func_8041B7FC_de(s32, s32);
 extern void func_80434E34_de(s32);
@@ -29,18 +29,18 @@ void func_80433398_de(s32 arg0) {
 
     var_s1 = 0;
     do {
-        temp_a0 = (Blk *)((char *)D_800E54A4 + (var_s1 * 0xB68));
+        temp_a0 = (Blk *)((char *)D_800E1454_de + (var_s1 * 0xB68));
         temp_v1 = temp_a0->unk58;
         switch (temp_v1) {
         case 0:
             func_80434FC4_de(var_s1);
             break;
         case 0xC:
-            temp_s0 = func_8041B7FC_de(D_800E54A4->unk4, var_s1);
-            temp_v0_4 = (Blk *)((char *)D_800E54A4 + (var_s1 * 4));
+            temp_s0 = func_8041B7FC_de(D_800E1454_de->unk4, var_s1);
+            temp_v0_4 = (Blk *)((char *)D_800E1454_de + (var_s1 * 4));
             temp_f0 = (func_802B6560_de((f32)var_s1 + ((f32)temp_v0_4->unk2C * 0.005f)) * 100.0f) + 150.0f;
             temp_s0->value = temp_f0;
-            temp_a0_2 = (Blk *)((char *)D_800E54A4 + (var_s1 * 0xB68));
+            temp_a0_2 = (Blk *)((char *)D_800E1454_de + (var_s1 * 0xB68));
             temp_v1_2 = temp_a0_2->unkBA0;
             switch (temp_v1_2) {
             case 0:
@@ -63,13 +63,13 @@ void func_80433398_de(s32 arg0) {
             break;
         case 4:
             temp_idx = ((temp_a0->unkB30 - temp_a0->unkB34) * 4) + (var_s1 * 0xB68);
-            temp_s0 = ((Blk *)((char *)D_800E54A4 + temp_idx))->unkB38;
-            temp_v0_5 = (Blk *)((char *)D_800E54A4 + (var_s1 * 4));
+            temp_s0 = ((Blk *)((char *)D_800E1454_de + temp_idx))->unkB38;
+            temp_v0_5 = (Blk *)((char *)D_800E1454_de + (var_s1 * 4));
             temp_f0 = (func_802B6560_de((f32)var_s1 + ((f32)temp_v0_5->unk2C * 0.005f)) * 100.0f) + 150.0f;
             temp_s0->value = temp_f0;
             break;
         }
-        temp_v0_3 = (Blk *)((char *)D_800E54A4 + (var_s1 * 4));
+        temp_v0_3 = (Blk *)((char *)D_800E1454_de + (var_s1 * 4));
         temp_v0_3->unk2C = temp_v0_3->unk2C + arg0;
         var_s1 += 1;
     } while (var_s1 < 4);

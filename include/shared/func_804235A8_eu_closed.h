@@ -19,12 +19,12 @@ void func_804499B0_de(void *, s32, s32);
 void func_8044A370_de(void *, s32);
 void func_80286AA8_de(void *, s32, s32);
 void func_80298368_de(s32);
-extern char D_8011FE88;
-extern Shared_MenuReply D_80154020;
-extern Shared_MenuData D_80145040;
-extern Shared_MenuContext *D_800E2830;
+extern char D_8011BDC8;
+extern Shared_MenuReply D_8014DD90;
+extern Shared_MenuData D_80140F80;
+extern Shared_MenuContext *D_800DE7E0;
 
-extern Shared_OptionsScreen *D_800E4518;
+extern Shared_OptionsScreen *D_800E04C8;
 
 /* Advances the menu transition and dispatches the selected level once its animations finish. */
 

@@ -2,7 +2,7 @@
 #include "types.h"
 
 extern f32 func_8040184C_de(f32 arg0);
-extern void *D_800E2830;
+extern void *D_800DE7E0;
 
 
 
@@ -10,7 +10,7 @@ extern void *D_800E2830;
 
 
 f32 func_802459A0_de(void) {
-    void *record = D_800E2830;
+    void *record = D_800DE7E0;
     f32 temp_f1;
 
     if (((func_80245990_S1 *)(record))->unk38 == 0) {

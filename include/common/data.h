@@ -222,7 +222,7 @@ extern int D_8014D564;
 extern int D_8014D924;
 extern int D_8014D940;
 extern int D_8014D970;
-extern int D_80154034;
+extern int D_8014DDA4;
 extern struct Triple D_80150008;
 extern struct ResourceManagerState D_8015000C;
 extern int D_80150010;

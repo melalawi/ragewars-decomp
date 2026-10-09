@@ -20,8 +20,8 @@
 
 
 
-extern Shared_BigObj *D_800E53C0;
-extern Shared_Rec3 D_80146398[8];
+extern Shared_BigObj *D_800E1370;
+extern Shared_Rec3 D_801422D8[8];
 
 extern void func_804243E0_de(s32 a0, struct Shape_func_802764D4_de_2 *a1);
 extern void func_804259E0_de(s32 a0);
@@ -36,8 +36,8 @@ void func_8042D118_de(void)
   {
     s32 val;
     temp_1 = -1;
-    obj = D_800E53C0;
-    recs = D_80146398;
+    obj = D_800E1370;
+    recs = D_801422D8;
     val = obj->slot[i];
     if (val == temp_1)
     {
@@ -48,7 +48,7 @@ void func_8042D118_de(void)
       continue;
     }
     func_804243E0_de(val, &obj->arr2[val]);
-    recs = D_80146398;
+    recs = D_801422D8;
     func_804259E0_de(val);
   }
 

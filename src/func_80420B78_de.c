@@ -4,7 +4,7 @@
    and plays sound 0xE7C; always returns 0. */
 
 
-extern Entry_func_80420B78_de *D_800E42D0;
+extern Entry_func_80420B78_de *D_800E0280;
 extern void func_804201A4_de(int, Entry_func_80420B78_de *);
 extern void func_8025DF34_de(int);
 
@@ -13,7 +13,7 @@ int func_80420B78_de(int unused0, int unused1, unsigned int message, int extra) 
     Entry_func_80420B78_de *e;
 
     if ((message >> 16) == 3 && extra == 0) {
-        e = &D_800E42D0[index];
+        e = &D_800E0280[index];
         if (e->active == 1 && e->target != -1) {
             func_804201A4_de(index, e);
             func_8025DF34_de(0xE7C);

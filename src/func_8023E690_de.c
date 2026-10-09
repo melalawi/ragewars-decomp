@@ -19,5 +19,5 @@ void func_8023E690_de(struct Range *range, f32 low, s32 count, f32 high, f32 ext
     if (!(low <= high)) {
         larger = low;
     }
-    range->limit = larger + D_800C87B4;
+    range->limit = larger + D_800C36C4_de;
 }

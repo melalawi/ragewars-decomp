@@ -58,12 +58,12 @@ s32 func_804451D0_de(struct Item_func_80441FE8_de *field);
 
 
 #if defined(VERSION_DE) || defined(VERSION_US_REV1)
-s32 func_80445ECC(struct Item_func_80441FE8_de *field);
+s32 func_80445494_de(struct Item_func_80441FE8_de *field);
 #endif
 
 
 #if defined(VERSION_DE) || defined(VERSION_US_REV1)
-s32 func_80445AB8(struct Item_func_80441FE8_de *field);
+s32 func_80445080_de(struct Item_func_80441FE8_de *field);
 #endif
 
 #endif

@@ -1026,7 +1026,7 @@ schema = 1
 "func_802AD1B4_de" = { evidence = "authored", signature = "s32 func_802AD1B4_de(void *arg0)" }
 "func_802AD1D0_us" = { evidence = "authored", signature = "void func_802AD1D0_us(void)" }
 "func_802AD264_de" = { evidence = "authored", signature = "int func_802AD264_de(void)" }
-"func_802B2350" = { evidence = "authored", signature = "f32 func_802B2350(s32)" }
+"func_802AD280_de" = { evidence = "authored", signature = "f32 func_802AD280_de(s32)" }
 "func_802AD3F0_de" = { evidence = "authored", signature = "void func_802AD3F0_de(int arg0)" }
 "func_802AD42C_de" = { evidence = "authored", signature = "int func_802AD42C_de(void)" }
 "func_802AD520_eu" = { evidence = "authored", signature = "f32 func_802AD520_eu(s32)" }
@@ -1189,7 +1189,7 @@ schema = 1
 "func_802BDEA0_us_rev1" = { evidence = "authored", signature = "unsigned int func_802BDEA0_us_rev1()" }
 "func_802BE0C0_de" = { evidence = "authored", signature = "void func_802BE0C0_de(void *unused_state, unsigned char unused_code)" }
 "func_802BE514_de" = { evidence = "authored", signature = "Acmd *func_802BE514_de(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, Acmd *p)" }
-"func_802C3988" = { evidence = "authored", signature = "Acmd *func_802C3988(void *filter, s16 *outp, s32 byteCount, s32 sampleOffset, Acmd *p)" }
+"func_802BE898_de" = { evidence = "authored", signature = "Acmd *func_802BE898_de(void *filter, s16 *outp, s32 byteCount, s32 sampleOffset, Acmd *p)" }
 "func_802BEC34_de" = { evidence = "authored", signature = "Acmd *func_802BEC34_de(Acmd *ptr, ALLoadFilter48_2 *f, s32 tsam, s32 nbytes, s16 outp, s16 inp, u32 flags)" }
 "func_802BF514_de" = { evidence = "authored", signature = "void func_802BF514_de()" }
 "func_802BF67C_de" = { evidence = "authored", signature = "FftTables *func_802BF67C_de(s32 n)" }
@@ -1655,10 +1655,10 @@ schema = 1
 "func_80444E70_de" = { evidence = "authored", signature = "void func_80444E70_de(s16 *record)" }
 "func_80444E7C_de" = { evidence = "authored", signature = "s32 func_80444E7C_de(void)" }
 "func_80444EB4_de" = { evidence = "authored", signature = "s32 func_80444EB4_de(void)" }
-"func_80445AB8" = { evidence = "authored", signature = "s32 func_80445AB8(struct Item_func_80441FE8_de *field)" }
+"func_80445080_de" = { evidence = "authored", signature = "s32 func_80445080_de(struct Item_func_80441FE8_de *field)" }
 "func_804451D0_de" = { evidence = "authored", signature = "s32 func_804451D0_de(struct Item_func_80441FE8_de *field)" }
 "func_80445310_de" = { evidence = "authored", signature = "s32 func_80445310_de(struct Field *field)" }
-"func_80445ECC" = { evidence = "authored", signature = "s32 func_80445ECC(struct Item_func_80441FE8_de *field)" }
+"func_80445494_de" = { evidence = "authored", signature = "s32 func_80445494_de(struct Item_func_80441FE8_de *field)" }
 "func_8044560C_de" = { evidence = "authored", signature = "void func_8044560C_de(Player_func_8044560C_de *player)" }
 "func_8044569C_de" = { evidence = "authored", signature = "void func_8044569C_de(void)" }
 "func_804456B8_de" = { evidence = "authored", signature = "void func_804456B8_de(void)" }
@@ -2426,8 +2426,8 @@ schema = 1
 "rodata/func_8022ADF0_de/800C2D08" = { declaration = "extern u8 rodata/func_8022ADF0_de/800C2D08[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_8022ADF0_de/800C2FB0" = { declaration = "extern u8 rodata/func_8022ADF0_de/800C2FB0[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_8022ADF0_de/800C2FF0" = { declaration = "extern u8 rodata/func_8022ADF0_de/800C2FF0[0x4];", evidence = "splat", section = ".rodata", size = 4 }
-"rodata/func_8022B1A8/800C2C3C" = { declaration = "extern u8 rodata/func_8022B1A8/800C2C3C[0x4];", evidence = "splat", section = ".rodata", size = 4 }
-"rodata/func_8022B1A8/800C2D0C" = { declaration = "extern u8 rodata/func_8022B1A8/800C2D0C[0x4];", evidence = "splat", section = ".rodata", size = 4 }
+"rodata/func_8022B1B8_de/800C2C3C" = { declaration = "extern u8 rodata/func_8022B1B8_de/800C2C3C[0x4];", evidence = "splat", section = ".rodata", size = 4 }
+"rodata/func_8022B1B8_de/800C2D0C" = { declaration = "extern u8 rodata/func_8022B1B8_de/800C2D0C[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_8022B550_de/800C2C40" = { declaration = "extern u8 rodata/func_8022B550_de/800C2C40[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_8022B550_de/800C2D10" = { declaration = "extern u8 rodata/func_8022B550_de/800C2D10[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_8022B550_de/800C2FB4" = { declaration = "extern u8 rodata/func_8022B550_de/800C2FB4[0x4];", evidence = "splat", section = ".rodata", size = 4 }
@@ -4859,10 +4859,10 @@ schema = 1
 "rodata/func_802AB3A8_de/800C6258" = { declaration = "extern u8 rodata/func_802AB3A8_de/800C6258[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_802AB3A8_de/800C64F8" = { declaration = "extern u8 rodata/func_802AB3A8_de/800C64F8[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_802AB3A8_de/800C6538" = { declaration = "extern u8 rodata/func_802AB3A8_de/800C6538[0x4];", evidence = "splat", section = ".rodata", size = 4 }
-"rodata/func_802ACBCC/800C6190" = { declaration = "extern u8 rodata/func_802ACBCC/800C6190[0x54];", evidence = "splat", section = ".rodata", size = 84 }
-"rodata/func_802ACBCC/800C6260" = { declaration = "extern u8 rodata/func_802ACBCC/800C6260[0x54];", evidence = "splat", section = ".rodata", size = 84 }
-"rodata/func_802ACBCC/800C6500" = { declaration = "extern u8 rodata/func_802ACBCC/800C6500[0x54];", evidence = "splat", section = ".rodata", size = 84 }
-"rodata/func_802ACBCC/800C6540" = { declaration = "extern u8 rodata/func_802ACBCC/800C6540[0x54];", evidence = "splat", section = ".rodata", size = 84 }
+"rodata/func_802ABBDC_de/800C6190" = { declaration = "extern u8 rodata/func_802ABBDC_de/800C6190[0x54];", evidence = "splat", section = ".rodata", size = 84 }
+"rodata/func_802ABBDC_de/800C6260" = { declaration = "extern u8 rodata/func_802ABBDC_de/800C6260[0x54];", evidence = "splat", section = ".rodata", size = 84 }
+"rodata/func_802ABBDC_de/800C6500" = { declaration = "extern u8 rodata/func_802ABBDC_de/800C6500[0x54];", evidence = "splat", section = ".rodata", size = 84 }
+"rodata/func_802ABBDC_de/800C6540" = { declaration = "extern u8 rodata/func_802ABBDC_de/800C6540[0x54];", evidence = "splat", section = ".rodata", size = 84 }
 "rodata/func_802ACB58_eu/800C6578" = { declaration = "extern u8 rodata/func_802ACB58_eu/800C6578[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "rodata/func_802ACB98_eu_x/800C6598" = { declaration = "extern u8 rodata/func_802ACB98_eu_x/800C6598[0x28];", evidence = "splat", section = ".rodata", size = 40 }
 "rodata/func_802ACE38_de/800C6208" = { declaration = "extern u8 rodata/func_802ACE38_de/800C6208[0x8];", evidence = "splat", section = ".rodata", size = 8 }
@@ -5688,10 +5688,10 @@ schema = 1
 "rodata/func_80439628_de/800DDF40" = { declaration = "extern u8 rodata/func_80439628_de/800DDF40[0x10];", evidence = "splat", section = ".rodata", size = 16 }
 "rodata/func_80439628_de/800E9780" = { declaration = "extern u8 rodata/func_80439628_de/800E9780[0x10];", evidence = "splat", section = ".rodata", size = 16 }
 "rodata/func_80439628_de/800EE5C0" = { declaration = "extern u8 rodata/func_80439628_de/800EE5C0[0x10];", evidence = "splat", section = ".rodata", size = 16 }
-"rodata/func_804399D0/800DCC00" = { declaration = "extern u8 rodata/func_804399D0/800DCC00[0x18];", evidence = "splat", section = ".rodata", size = 24 }
-"rodata/func_804399D0/800DDF50" = { declaration = "extern u8 rodata/func_804399D0/800DDF50[0x18];", evidence = "splat", section = ".rodata", size = 24 }
-"rodata/func_804399D0/800E9790" = { declaration = "extern u8 rodata/func_804399D0/800E9790[0x18];", evidence = "splat", section = ".rodata", size = 24 }
-"rodata/func_804399D0/800EE5D0" = { declaration = "extern u8 rodata/func_804399D0/800EE5D0[0x18];", evidence = "splat", section = ".rodata", size = 24 }
+"rodata/func_804397F0_de/800DCC00" = { declaration = "extern u8 rodata/func_804397F0_de/800DCC00[0x18];", evidence = "splat", section = ".rodata", size = 24 }
+"rodata/func_804397F0_de/800DDF50" = { declaration = "extern u8 rodata/func_804397F0_de/800DDF50[0x18];", evidence = "splat", section = ".rodata", size = 24 }
+"rodata/func_804397F0_de/800E9790" = { declaration = "extern u8 rodata/func_804397F0_de/800E9790[0x18];", evidence = "splat", section = ".rodata", size = 24 }
+"rodata/func_804397F0_de/800EE5D0" = { declaration = "extern u8 rodata/func_804397F0_de/800EE5D0[0x18];", evidence = "splat", section = ".rodata", size = 24 }
 "rodata/func_80439D58_de/800DDF70" = { declaration = "extern u8 rodata/func_80439D58_de/800DDF70[0x14];", evidence = "splat", section = ".rodata", size = 20 }
 "rodata/func_80439D58_de/800E1FA0" = { declaration = "extern u8 rodata/func_80439D58_de/800E1FA0[0x14];", evidence = "splat", section = ".rodata", size = 20 }
 "rodata/func_80439D58_de/800E97B0" = { declaration = "extern u8 rodata/func_80439D58_de/800E97B0[0x14];", evidence = "splat", section = ".rodata", size = 20 }
@@ -5784,25 +5784,25 @@ schema = 1
 "rodata/func_8043EE5C_de/800DE370" = { declaration = "extern u8 rodata/func_8043EE5C_de/800DE370[0xC];", evidence = "splat", section = ".rodata", size = 12 }
 "rodata/func_8043EE5C_de/800E9BB0" = { declaration = "extern u8 rodata/func_8043EE5C_de/800E9BB0[0xC];", evidence = "splat", section = ".rodata", size = 12 }
 "rodata/func_8043EE5C_de/800EE9F0" = { declaration = "extern u8 rodata/func_8043EE5C_de/800EE9F0[0xC];", evidence = "splat", section = ".rodata", size = 12 }
-"rodata/func_8043F290/800DD030" = { declaration = "extern u8 rodata/func_8043F290/800DD030[0x6];", evidence = "splat", section = ".rodata", size = 6 }
-"rodata/func_8043F290/800DD038" = { declaration = "extern u8 rodata/func_8043F290/800DD038[0x6];", evidence = "splat", section = ".rodata", size = 6 }
-"rodata/func_8043F290/800DD040" = { declaration = "extern u8 rodata/func_8043F290/800DD040[0x3];", evidence = "splat", section = ".rodata", size = 3 }
-"rodata/func_8043F290/800DD070" = { declaration = "extern u8 rodata/func_8043F290/800DD070[0x8];", evidence = "splat", section = ".rodata", size = 8 }
-"rodata/func_8043F290/800DE380" = { declaration = "extern u8 rodata/func_8043F290/800DE380[0x6];", evidence = "splat", section = ".rodata", size = 6 }
-"rodata/func_8043F290/800DE388" = { declaration = "extern u8 rodata/func_8043F290/800DE388[0x6];", evidence = "splat", section = ".rodata", size = 6 }
-"rodata/func_8043F290/800DE390" = { declaration = "extern u8 rodata/func_8043F290/800DE390[0x3];", evidence = "splat", section = ".rodata", size = 3 }
-"rodata/func_8043F290/800DE398" = { declaration = "extern u8 rodata/func_8043F290/800DE398[0x24];", evidence = "splat", section = ".rodata", size = 36 }
-"rodata/func_8043F290/800DE3C0" = { declaration = "extern u8 rodata/func_8043F290/800DE3C0[0x8];", evidence = "splat", section = ".rodata", size = 8 }
-"rodata/func_8043F290/800E23C8" = { declaration = "extern u8 rodata/func_8043F290/800E23C8[0x24];", evidence = "splat", section = ".rodata", size = 36 }
-"rodata/func_8043F290/800E9BC0" = { declaration = "extern u8 rodata/func_8043F290/800E9BC0[0x6];", evidence = "splat", section = ".rodata", size = 6 }
-"rodata/func_8043F290/800E9BC8" = { declaration = "extern u8 rodata/func_8043F290/800E9BC8[0x6];", evidence = "splat", section = ".rodata", size = 6 }
-"rodata/func_8043F290/800E9BD0" = { declaration = "extern u8 rodata/func_8043F290/800E9BD0[0x3];", evidence = "splat", section = ".rodata", size = 3 }
-"rodata/func_8043F290/800E9BD8" = { declaration = "extern u8 rodata/func_8043F290/800E9BD8[0x24];", evidence = "splat", section = ".rodata", size = 36 }
-"rodata/func_8043F290/800E9C00" = { declaration = "extern u8 rodata/func_8043F290/800E9C00[0x8];", evidence = "splat", section = ".rodata", size = 8 }
-"rodata/func_8043F290/800EEA00" = { declaration = "extern u8 rodata/func_8043F290/800EEA00[0x6];", evidence = "splat", section = ".rodata", size = 6 }
-"rodata/func_8043F290/800EEA08" = { declaration = "extern u8 rodata/func_8043F290/800EEA08[0x6];", evidence = "splat", section = ".rodata", size = 6 }
-"rodata/func_8043F290/800EEA10" = { declaration = "extern u8 rodata/func_8043F290/800EEA10[0x3];", evidence = "splat", section = ".rodata", size = 3 }
-"rodata/func_8043F290/800EEA40" = { declaration = "extern u8 rodata/func_8043F290/800EEA40[0x8];", evidence = "splat", section = ".rodata", size = 8 }
+"rodata/func_8043F120_de/800DD030" = { declaration = "extern u8 rodata/func_8043F120_de/800DD030[0x6];", evidence = "splat", section = ".rodata", size = 6 }
+"rodata/func_8043F120_de/800DD038" = { declaration = "extern u8 rodata/func_8043F120_de/800DD038[0x6];", evidence = "splat", section = ".rodata", size = 6 }
+"rodata/func_8043F120_de/800DD040" = { declaration = "extern u8 rodata/func_8043F120_de/800DD040[0x3];", evidence = "splat", section = ".rodata", size = 3 }
+"rodata/func_8043F120_de/800DD070" = { declaration = "extern u8 rodata/func_8043F120_de/800DD070[0x8];", evidence = "splat", section = ".rodata", size = 8 }
+"rodata/func_8043F120_de/800DE380" = { declaration = "extern u8 rodata/func_8043F120_de/800DE380[0x6];", evidence = "splat", section = ".rodata", size = 6 }
+"rodata/func_8043F120_de/800DE388" = { declaration = "extern u8 rodata/func_8043F120_de/800DE388[0x6];", evidence = "splat", section = ".rodata", size = 6 }
+"rodata/func_8043F120_de/800DE390" = { declaration = "extern u8 rodata/func_8043F120_de/800DE390[0x3];", evidence = "splat", section = ".rodata", size = 3 }
+"rodata/func_8043F120_de/800DE398" = { declaration = "extern u8 rodata/func_8043F120_de/800DE398[0x24];", evidence = "splat", section = ".rodata", size = 36 }
+"rodata/func_8043F120_de/800DE3C0" = { declaration = "extern u8 rodata/func_8043F120_de/800DE3C0[0x8];", evidence = "splat", section = ".rodata", size = 8 }
+"rodata/func_8043F120_de/800E23C8" = { declaration = "extern u8 rodata/func_8043F120_de/800E23C8[0x24];", evidence = "splat", section = ".rodata", size = 36 }
+"rodata/func_8043F120_de/800E9BC0" = { declaration = "extern u8 rodata/func_8043F120_de/800E9BC0[0x6];", evidence = "splat", section = ".rodata", size = 6 }
+"rodata/func_8043F120_de/800E9BC8" = { declaration = "extern u8 rodata/func_8043F120_de/800E9BC8[0x6];", evidence = "splat", section = ".rodata", size = 6 }
+"rodata/func_8043F120_de/800E9BD0" = { declaration = "extern u8 rodata/func_8043F120_de/800E9BD0[0x3];", evidence = "splat", section = ".rodata", size = 3 }
+"rodata/func_8043F120_de/800E9BD8" = { declaration = "extern u8 rodata/func_8043F120_de/800E9BD8[0x24];", evidence = "splat", section = ".rodata", size = 36 }
+"rodata/func_8043F120_de/800E9C00" = { declaration = "extern u8 rodata/func_8043F120_de/800E9C00[0x8];", evidence = "splat", section = ".rodata", size = 8 }
+"rodata/func_8043F120_de/800EEA00" = { declaration = "extern u8 rodata/func_8043F120_de/800EEA00[0x6];", evidence = "splat", section = ".rodata", size = 6 }
+"rodata/func_8043F120_de/800EEA08" = { declaration = "extern u8 rodata/func_8043F120_de/800EEA08[0x6];", evidence = "splat", section = ".rodata", size = 6 }
+"rodata/func_8043F120_de/800EEA10" = { declaration = "extern u8 rodata/func_8043F120_de/800EEA10[0x3];", evidence = "splat", section = ".rodata", size = 3 }
+"rodata/func_8043F120_de/800EEA40" = { declaration = "extern u8 rodata/func_8043F120_de/800EEA40[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "rodata/func_8043F294_de/800DD0A0" = { declaration = "extern u8 rodata/func_8043F294_de/800DD0A0[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "rodata/func_8043F294_de/800DD0CC" = { declaration = "extern u8 rodata/func_8043F294_de/800DD0CC[0xC];", evidence = "splat", section = ".rodata", size = 12 }
 "rodata/func_8043F294_de/800DE3C8" = { declaration = "extern u8 rodata/func_8043F294_de/800DE3C8[0x24];", evidence = "splat", section = ".rodata", size = 36 }
@@ -5911,9 +5911,9 @@ schema = 1
 "rodata/func_80445074_eu/800DD418" = { declaration = "extern u8 rodata/func_80445074_eu/800DD418[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_80445074_eu/800E9FC8" = { declaration = "extern u8 rodata/func_80445074_eu/800E9FC8[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_80445074_eu/800EEE08" = { declaration = "extern u8 rodata/func_80445074_eu/800EEE08[0x4];", evidence = "splat", section = ".rodata", size = 4 }
-"rodata/func_80445ECC/800DE7B0" = { declaration = "extern u8 rodata/func_80445ECC/800DE7B0[0x4];", evidence = "splat", section = ".rodata", size = 4 }
-"rodata/func_80445ECC/800E9FE0" = { declaration = "extern u8 rodata/func_80445ECC/800E9FE0[0x4];", evidence = "splat", section = ".rodata", size = 4 }
-"rodata/func_80445ECC/800EEE20" = { declaration = "extern u8 rodata/func_80445ECC/800EEE20[0x4];", evidence = "splat", section = ".rodata", size = 4 }
+"rodata/func_80445494_de/800DE7B0" = { declaration = "extern u8 rodata/func_80445494_de/800DE7B0[0x4];", evidence = "splat", section = ".rodata", size = 4 }
+"rodata/func_80445494_de/800E9FE0" = { declaration = "extern u8 rodata/func_80445494_de/800E9FE0[0x4];", evidence = "splat", section = ".rodata", size = 4 }
+"rodata/func_80445494_de/800EEE20" = { declaration = "extern u8 rodata/func_80445494_de/800EEE20[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_80445964_de/800DE7C0" = { declaration = "extern u8 rodata/func_80445964_de/800DE7C0[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_80445964_de/800E9FF0" = { declaration = "extern u8 rodata/func_80445964_de/800E9FF0[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_80445964_de/800EEE30" = { declaration = "extern u8 rodata/func_80445964_de/800EEE30[0x4];", evidence = "splat", section = ".rodata", size = 4 }
@@ -10039,7 +10039,7 @@ schema = 1
 "src/ragewars_menu_on_label_us_rev1.c" = { declaration = "extern u8 src/ragewars_menu_on_label_us_rev1.c[0x4];", evidence = "splat", section = ".data", size = 4 }
 "src/ragewars_menu_sexysteve_token_us_rev1.c" = { declaration = "extern u8 src/ragewars_menu_sexysteve_token_us_rev1.c[0x14];", evidence = "splat", section = ".data", size = 20 }
 "src/ragewars_menu_strings_D4254_us_rev1.c" = { declaration = "extern u8 src/ragewars_menu_strings_D4254_us_rev1.c[0x14];", evidence = "splat", section = ".data", size = 20 }
-"src/D_800D3690.c" = { declaration = "extern u8 src/D_800D3690.c[0x1150];", evidence = "splat", section = ".data", size = 4432 }
+"src/ragewars_menu_strings_D4290_us_rev1.c" = { declaration = "extern u8 src/ragewars_menu_strings_D4290_us_rev1.c[0x1150];", evidence = "splat", section = ".data", size = 4432 }
 "src/ragewars_menu_strings_D53E4_us_rev1.c" = { declaration = "extern u8 src/ragewars_menu_strings_D53E4_us_rev1.c[0x40];", evidence = "splat", section = ".data", size = 64 }
 "src/ragewars_menu_strings_D5428_us_rev1.c" = { declaration = "extern u8 src/ragewars_menu_strings_D5428_us_rev1.c[0x60];", evidence = "splat", section = ".data", size = 96 }
 "src/ragewars_menu_strings_D5490_us_rev1.c" = { declaration = "extern u8 src/ragewars_menu_strings_D5490_us_rev1.c[0x910];", evidence = "splat", section = ".data", size = 2320 }

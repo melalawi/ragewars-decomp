@@ -4,8 +4,8 @@
 /* Copies record i of the 52-byte table D_800E2B20 into the destination. */
 
 
-extern struct Format D_800E2B20[];
+extern struct Format D_800DEAD0[];
 
 void func_8041379C_de(s32 index, struct Format *out) {
-    *out = D_800E2B20[index];
+    *out = D_800DEAD0[index];
 }

@@ -60,16 +60,16 @@ s32 *func_8026E27C_de(void **arg0, s32 arg1, s32 *arg2) {
     return out;
 }
 
-extern int D_80110620;
+extern int D_8010C560;
 void func_8026E330_de(int arg0) {
-    D_80110620 = arg0;
+    D_8010C560 = arg0;
 }
 
 /** Return the global word at D_80110620. */
-extern int D_80110620;
+extern int D_8010C560;
 
 int func_8026E340_de(void) {
-    return D_80110620;
+    return D_8010C560;
 }
 
 /** Store four bytes in the global color-like value. */
@@ -93,7 +93,7 @@ void func_8026E378_de(int arg0, int arg1) {
     D_800CC3AD = (unsigned char)arg1;
 }
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern char D_E0470;
 extern char D_DE0A0;
 extern char D_800CBCC0;
@@ -102,19 +102,19 @@ extern char D_800CBCF0_de;
 void func_8026E390_de(void) {
     Gfx *cmd;
 
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gDPFullSync(cmd);
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gDPHalf1(cmd, (u32) &D_E0470);
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gLoadUcode(cmd, &D_DE0A0, 0x800);
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gSPDisplayList(cmd, (u32) &D_800CBCC0);
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gSPDisplayList(cmd, (u32) &D_800CBCF0_de);
 }
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern char D_E0050;
 extern char D_DCD10;
 extern char D_800CBCC0;
@@ -123,15 +123,15 @@ extern char D_800CBCF0_de;
 void func_8026E428_de(void) {
     Gfx *cmd;
 
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gDPFullSync(cmd);
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gDPHalf1(cmd, (u32) &D_E0050);
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gLoadUcode(cmd, &D_DCD10, 0x800);
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gSPDisplayList(cmd, (u32) &D_800CBCC0);
-    cmd = D_80110634++;
+    cmd = D_8010C574++;
     gSPDisplayList(cmd, (u32) &D_800CBCF0_de);
 }
 

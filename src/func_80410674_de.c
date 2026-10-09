@@ -10,10 +10,10 @@
 
 
 
-extern FileState D_801539B0;
+extern FileState D_8014D720;
 extern FileHeader D_8014D724;
-extern Entry_func_80410674_de *D_80153C10;
-extern s32 *D_80153C14;
+extern Entry_func_80410674_de *D_8014D980;
+extern s32 *D_8014D984;
 extern Usage *D_8014D988;
 extern char D_800DD0B0;
 extern void *func_8025305C_de(s32 size);
@@ -57,13 +57,13 @@ s32 func_80410674_de(s32 index, s32 mode) {
     s32 format;
     Entry_func_80410674_de *entry;
 
-    if (D_80153C10[index].unk4 & 1) {
+    if (D_8014D980[index].unk4 & 1) {
         touch(index, mode);
-        return D_80153C10[index].unk0;
+        return D_8014D980[index].unk0;
     }
     palette = 0;
     paletteBytes = 0;
-    id = D_80153C10[index].unk0;
+    id = D_8014D980[index].unk0;
     stride = 0;
     func_802A18CC_de();
     ((FileState *)((char *)&D_8014D724 - 4))->unk0 = func_802A0E8C_de(&D_8014D724, &D_800DD0B0);
@@ -80,23 +80,23 @@ s32 func_80410674_de(s32 index, s32 mode) {
     texture = id;
     size = stride * entry->unkC * entry->unk8 / 8;
     pixels = func_8025305C_de(size);
-    func_802A0F60_de(D_801539B0.unk0, D_801539B0.unk248 + entry->unk14, 0);
-    func_802A0ED4_de(pixels, size, 1, D_801539B0.unk0);
+    func_802A0F60_de(D_8014D720.unk0, D_8014D720.unk248 + entry->unk14, 0);
+    func_802A0ED4_de(pixels, size, 1, D_8014D720.unk0);
     if (entry->unkE > 0) {
         paletteBytes = entry->unkE * 2;
         palette = func_8025305C_de(paletteBytes);
-        func_802A0F60_de(D_801539B0.unk0, D_801539B0.unk248 + entry->unk18, 0);
-        func_802A0ED4_de(palette, paletteBytes, 1, D_801539B0.unk0);
+        func_802A0F60_de(D_8014D720.unk0, D_8014D720.unk248 + entry->unk18, 0);
+        func_802A0ED4_de(palette, paletteBytes, 1, D_8014D720.unk0);
         for (i = 0; i < entry->unkE; i++) {
             if (!(palette[i] & 1)) {
                 transparent = 1;
-                D_80153C14[index] = palette[i];
+                D_8014D984[index] = palette[i];
                 break;
             }
         }
         if (i == entry->unkE) {
             transparent = 0;
-            D_80153C14[index] = 0xFF000000;
+            D_8014D984[index] = 0xFF000000;
         }
     }
     format = -1;
@@ -122,10 +122,10 @@ s32 func_80410674_de(s32 index, s32 mode) {
     func_80413720_de(id, format, entry->unkA, entry->unkC, stride, entry->unkC, 1, size, pixels, 1, paletteBytes,
                   palette, entry->unkE);
     func_80419640_de(texture, id);
-    D_80153C10[index].unk4 |= 1;
-    func_802A0EB0_de(D_801539B0.unk0);
-    D_801539B0.unk0 = 0;
+    D_8014D980[index].unk4 |= 1;
+    func_802A0EB0_de(D_8014D720.unk0);
+    D_8014D720.unk0 = 0;
     func_802A18CC_de();
     touch(index, mode);
-    return D_80153C10[index].unk0;
+    return D_8014D980[index].unk0;
 }

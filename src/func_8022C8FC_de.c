@@ -11,9 +11,9 @@ extern void func_80274870_de(f32 *, f32, f32);
 extern void func_802231D4_de(void *, void *, void *);
 extern void func_802233F0_de(void *, void *, void *);
 extern s32 func_802227F4_de(void *, void *, s32);
-extern char D_800CE7FC;
-extern char D_800CE7C0;
-extern s32 D_800CED30;
+extern char D_800C95B8;
+extern char D_800C957C_de;
+extern s32 D_800C9AEC_de;
 
 
 
@@ -26,11 +26,11 @@ void func_8022C8FC_de(void *arg0, void *arg1) {
     func_8022404C_de(arg0, arg1);
     zero = 0.0f;
     func_80274870_de(&((func_8022C8EC_S1 *)(arg0))->unk72C, zero, 0.25f);
-    func_802231D4_de(arg0, arg1, &D_800CE7FC);
-    func_802233F0_de(arg0, arg1, &D_800CE7C0);
+    func_802231D4_de(arg0, arg1, &D_800C95B8);
+    func_802233F0_de(arg0, arg1, &D_800C957C_de);
     if (!(((func_8022C8EC_S1 *)(arg0))->unk6AC & 0x10)) {
         func_802227F4_de(arg0, arg1, 2);
-        if (((func_8022C8EC_S1 *)(arg0))->unk13B4 == &D_800CED30) {
+        if (((func_8022C8EC_S1 *)(arg0))->unk13B4 == &D_800C9AEC_de) {
             ((func_8022C8EC_S1 *)(arg0))->unk86C = 0x5E24;
         } else {
             ((func_8022C8EC_S1 *)(arg0))->unk86C = 1;

@@ -9,11 +9,11 @@
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_8021CD70.h"
 
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 
 extern u8 D_801462E5;
 
-extern s32 D_801468F4;
+extern s32 D_80142834;
 extern s32 func_802A23B4_de(void);
 extern void func_802A9234_de(s32);
 extern void func_8021E08C_de(void *, Vec3 *, s32, f32, f32, f32);

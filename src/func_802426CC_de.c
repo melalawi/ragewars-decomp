@@ -13,7 +13,7 @@ extern f32 func_8024D284_de(Input_func_802426CC_de *);
 extern f32 func_8024E420_de(void *);
 extern f32 func_80241728_de(Query_func_80241BAC_de *, f32, f32);
 extern s32 func_8024491C_de(Input_func_802426CC_de *, Vec3, Vec3, void *, f32, f32, f32, f32);
-extern void *D_80103FCC;
+extern void *D_800FFFCC;
 extern char D_801000F0;
 
 
@@ -27,8 +27,8 @@ void func_802426CC_de(Actor_func_802426CC_de *actor, void *owner, Input_func_802
     f32 extent3;
     void *saved_collision;
 
-    saved_collision = D_80103FCC;
-    D_80103FCC = collision;
+    saved_collision = D_800FFFCC;
+    D_800FFFCC = collision;
     hit_y = func_80241728_de(query, input->x, input->z);
     input->owner = owner;
     extent0 = func_8024E464_de(input);
@@ -54,5 +54,5 @@ void func_802426CC_de(Actor_func_802426CC_de *actor, void *owner, Input_func_802
         }
         input->flags38 = (input->flags38 & ~3) | 2;
     }
-    D_80103FCC = saved_collision;
+    D_800FFFCC = saved_collision;
 }

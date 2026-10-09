@@ -6,7 +6,7 @@ extern void *func_8025CC6C_de(void);
 extern s32 func_8025CA24_de(void *, void *);
 extern void *func_8025C95C_de(void *, s32, void *, void *, s32);
 
-extern s32 D_80146894;
+extern s32 D_801427D4;
 
 
 
@@ -15,7 +15,7 @@ void func_8022AF74_de(void *arg0, s32 arg1) {
     s32 field5DC;
     void *var_s1;
 
-    if (D_801371DC == 0 && D_80146894 == 0) {
+    if (D_801371DC == 0 && D_801427D4 == 0) {
         field5DC = ((func_8022AF64_S1 *)(arg0))->unk5DC;
         if (field5DC != 0) {
             var_s1 = (void *)(field5DC + 0x128);

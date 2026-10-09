@@ -63,7 +63,7 @@ struct func_8025DB64_S1 {
 };
 
 /* unbake published declaration: published_3f59049cda5e9177dddfa01f */
-extern float D_800C9108;
+extern float D_800C4018_de;
 
 /* unbake published declaration: published_43819862a3325b80872dc252 */
 extern float D_800C4000_de;

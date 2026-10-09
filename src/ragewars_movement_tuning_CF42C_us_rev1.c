@@ -10,6 +10,6 @@ struct PlayerMovementTuning {
     float impulse_speed;
     float impulse_decay;
 };
-struct PlayerMovementTuning D_800CE82C = {
+struct PlayerMovementTuning D_800C95E8 = {
     7.67999983f, 23.039999f, 5.75999975f, 7.67999983f, 26.8800011f, 5.75999975f, 10.2399998f, 0.768000007f
 };

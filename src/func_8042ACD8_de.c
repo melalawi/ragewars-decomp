@@ -12,12 +12,12 @@
 
 
 
-extern struct Cup D_80154010;
-extern s32 D_800E51E4[];
-extern s32 D_800E51F8[];
-extern s32 D_800E5214[];
-extern s32 D_800E5240[];
-extern struct Shape_typemap_165 D_800E4F64[];
+extern struct Cup D_8014DD80;
+extern s32 D_800E1194[];
+extern s32 D_800E11A8_de[];
+extern s32 D_800E11C4[];
+extern s32 D_800E11F0_de[];
+extern struct Shape_typemap_165 D_800E0F14_de[];
 
 
 extern s32 func_802744D4_de(void);
@@ -52,16 +52,16 @@ static inline s32 stage_arena(s32 cup, s32 stage) {
     }
     switch (cup) {
     case 0:
-        table = D_800E51E4;
+        table = D_800E1194;
         break;
     case 1:
-        table = D_800E51F8;
+        table = D_800E11A8_de;
         break;
     case 3:
-        table = D_800E5214;
+        table = D_800E11C4;
         break;
     case 2:
-        table = D_800E5240;
+        table = D_800E11F0_de;
         break;
     default:
         return 0;
@@ -70,9 +70,9 @@ static inline s32 stage_arena(s32 cup, s32 stage) {
     found = 0;
     i = 0;
     do {
-        if (id == D_800E4F64[i].field_0) {
+        if (id == D_800E0F14_de[i].field_0) {
             found = 1;
-            value = D_800E4F64[i].field_C;
+            value = D_800E0F14_de[i].field_C;
         }
         i++;
     } while (i < 40 && !found);
@@ -92,20 +92,20 @@ s32 func_8042ACD8_de(void) {
         stage = 0;
         draws = 0;
         found = 0;
-        size = cup_stages(D_80154010.index) - 1;
+        size = cup_stages(D_8014DD80.index) - 1;
         while (!found) {
             stage = func_802744D4_de() % size + 1;
-            if (func_80265650_de(D_80154010.played, stage) == 0) {
+            if (func_80265650_de(D_8014DD80.played, stage) == 0) {
                 found = 1;
-                func_80265688_de(D_80154010.played, stage, found);
+                func_80265688_de(D_8014DD80.played, stage, found);
             }
             draws++;
             if (draws >= 15001) {
                 found = 1;
             }
         }
-        D_80154010.stages++;
-        func_8042E9A0_de(D_80154010.index, stage_arena(D_80154010.index, stage));
+        D_8014DD80.stages++;
+        func_8042E9A0_de(D_8014DD80.index, stage_arena(D_8014DD80.index, stage));
     }
     return started;
 }

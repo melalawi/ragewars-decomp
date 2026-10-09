@@ -7,7 +7,7 @@
 
 
 extern Triple D_801002A8;
-extern Triple D_801042C8;
+extern Triple D_801002C8;
 extern char D_8011D8D0;
 
 extern s32 func_80276088_de(s32);
@@ -59,7 +59,7 @@ void func_8027C9CC_de(void *arg0) {
     }
     if (temp_s2 != 0xFFFF) {
         if ((*((func_8027C808_S1 *)(arg0))->unk118.v1 & 0x10) != 0) {
-            position = D_801042C8;
+            position = D_801002C8;
         } else {
             position = ((func_8027C808_S1 *)(arg0))->unk1C;
         }

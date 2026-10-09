@@ -134,7 +134,7 @@ s32 func_80214624_de(Actor_func_80214624_de *arg0, Plan *arg1, Actor_func_802146
             else if(arg2->unkE4==0x64F) var_s1=7;
             else {
                 var_s1=0;
-                if(!D_8013B290) {
+                if(!D_801371D0) {
                     if((!(arg2->unk100&0x300000) || arg2->unk1D8->unk794!=arg0 || (var_s1=1,arg2->unk1D8->unk788!=2)) && (!(arg0->unk2E0&2) || (var_s1=1,arg0->unkE4==0xCA))) var_s1=0;
                 }
             }

@@ -2,8 +2,8 @@
 #include "types.h"
 
 /* Returns the halfword held in D_80153C40. */
-extern s16 D_80153C40;
+extern s16 D_8014D9B0;
 
 s16 func_80411A44_de(void) {
-    return D_80153C40;
+    return D_8014D9B0;
 }

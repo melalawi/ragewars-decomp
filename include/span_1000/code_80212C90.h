@@ -221,7 +221,7 @@ struct func_80213CF8_S1;
 typedef struct func_80213CF8_S1 func_80213CF8_S1;
 
 /* unbake published declaration: published_add60784093fc36ceb4207a4 */
-extern int D_8013B368;
+extern int D_801372A8;
 
 /* unbake published declaration: published_b81712b8b01a0973dc8883e9 */
 extern float D_800C2120_de;

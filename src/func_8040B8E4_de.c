@@ -6,9 +6,9 @@
    jtbl_800E1020 for states 0 to 4, and D_800D799C for any other state. Returns zero. */
 
 
-extern u32 D_80153778;
+extern u32 D_8014D4E8;
 extern void *jtbl_800DCFF0_de[];
-extern char D_800D799C[];
+extern char D_800D3970[];
 extern char D_800D3984[];
 extern char D_800D3998[];
 extern char D_800D39AC[];
@@ -18,14 +18,14 @@ s32 func_8040B8E4_de(struct Field_func_8040A4A0_de *field) {
     static void *labels[0] __attribute__((section(".sdata"))) = {
         &&case_1, &&case_2, &&case_3, &&case_4
     };
-    u32 state = D_80153778;
+    u32 state = D_8014D4E8;
 
     if (state >= 5) {
         goto state_other;
     }
     goto *jtbl_800DCFF0_de[state];
 state_other:
-    field->text = D_800D799C;
+    field->text = D_800D3970;
     goto done;
 case_1:
     field->text = D_800D3984;

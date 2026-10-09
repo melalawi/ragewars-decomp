@@ -27,8 +27,8 @@ struct PlayerRankInner;
 
 
 
-extern Shared_MenuData D_80145040;
-extern s16 D_80146398[];
+extern Shared_MenuData D_80140F80;
+extern s16 D_801422D8[];
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern char D_800EED80[];
 #else

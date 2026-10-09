@@ -56,13 +56,13 @@ struct func_802604CC_S1 {
 extern f32 func_8025F434_de(f32 amount, f32 period);
 
 /* unbake published declaration: published_3ce980fa18ae30cdcc733ec6 */
-extern float D_800C9208;
+extern float D_800C4118_de;
 
 /* unbake published declaration: published_5524166dab3742327c73e6a5 */
 extern float D_800C4168_de;
 
 /* unbake published declaration: published_636473c1d76e24946114f8c4 */
-extern float D_800C91F8;
+extern float D_800C4108_de;
 
 /* unbake published declaration: published_67184d930d4ac38742479298 */
 extern float func_80260634_de(float value, int bits);
@@ -118,7 +118,7 @@ extern unsigned int func_802606A4_de(unsigned int arg0);
 extern double D_800C40F8_de;
 
 /* unbake published declaration: published_99e6bc882a4e9698aedf8ca5 */
-extern float D_800C9200;
+extern float D_800C4110_de;
 
 /* unbake published declaration: published_a36f884bdaf244f05a761365 */
 extern double D_800C4100_de;

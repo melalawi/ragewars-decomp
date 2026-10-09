@@ -6,9 +6,9 @@
 
 
 
-extern char D_80145040[];
-extern Spinner D_800E63C0[];
-extern f32 D_800D2988;
+extern char D_80140F80[];
+extern Spinner D_800E20A0[];
+extern f32 D_800CD738;
 
 extern s32 func_8022A5A0_de(char *, s32);
 extern s32 func_80264388_de(s32);
@@ -18,20 +18,20 @@ s32 func_80445964_de(void *unused, Menu_func_80445964_de *menu) {
     s32 i;
     f32 t;
 
-    i = func_8022A5A0_de(D_80145040, menu->id);
-    t = D_800E63C0[i].timer + D_800D2988;
-    D_800E63C0[i].timer = t;
+    i = func_8022A5A0_de(D_80140F80, menu->id);
+    t = D_800E20A0[i].timer + D_800CD738;
+    D_800E20A0[i].timer = t;
     if (t >= (15.0f)) {
-        D_800E63C0[i].timer = t - (15.0f);
+        D_800E20A0[i].timer = t - (15.0f);
     }
     if (menu->state == 1) {
-        if (func_80264388_de(menu->input) != 0 && D_800E63C0[i].value > 0) {
-            D_800E63C0[i].value--;
-            D_800E63C0[i].timer = 0.0f;
+        if (func_80264388_de(menu->input) != 0 && D_800E20A0[i].value > 0) {
+            D_800E20A0[i].value--;
+            D_800E20A0[i].timer = 0.0f;
         } else if (func_802643A0_de(menu->input) != 0) {
-            if (D_800E63C0[i].value < D_800E63C0[i].max) {
-                D_800E63C0[i].value++;
-                D_800E63C0[i].timer = 0.0f;
+            if (D_800E20A0[i].value < D_800E20A0[i].max) {
+                D_800E20A0[i].value++;
+                D_800E20A0[i].timer = 0.0f;
             }
         }
     }

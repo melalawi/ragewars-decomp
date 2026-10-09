@@ -13,7 +13,7 @@
 
 
 
-extern func_80203E78_S1 *D_800E2830;
+extern func_80203E78_S1 *D_800DE7E0;
 
 extern s32 *func_8028FDB4_de(s32 *node, s32 index);
 extern Vec3 func_80400E50_de(Key_func_80401214_de *keys, s32 count, f32 t);
@@ -33,9 +33,9 @@ Vec3 func_80401214_de(f32 t) {
     idx = 0;
     i = 0;
     end = start;
-    while (i < *func_8028FDB4_de((s32 *)D_800E2830->unk4, 0)) {
+    while (i < *func_8028FDB4_de((s32 *)D_800DE7E0->unk4, 0)) {
         idx = i;
-        clip = func_8028FDB4_de(func_8028FDB4_de(func_8028FDB4_de((s32 *)D_800E2830->unk4, 0), idx), 0);
+        clip = func_8028FDB4_de(func_8028FDB4_de(func_8028FDB4_de((s32 *)D_800DE7E0->unk4, 0), idx), 0);
         count = clip[1];
         keys = (Key_func_80401214_de *)(clip + 2);
         start = end;
@@ -43,7 +43,7 @@ Vec3 func_80401214_de(f32 t) {
         if (idx == 0 && t <= start) {
             break;
         }
-        if (idx == *func_8028FDB4_de((s32 *)D_800E2830->unk4, 0) - 1 && end < t) {
+        if (idx == *func_8028FDB4_de((s32 *)D_800DE7E0->unk4, 0) - 1 && end < t) {
             break;
         }
         i = idx + 1;
@@ -51,7 +51,7 @@ Vec3 func_80401214_de(f32 t) {
             break;
         }
     }
-    if (*func_8028FDB4_de(func_8028FDB4_de(func_8028FDB4_de((s32 *)D_800E2830->unk4, 0), idx), 2) != 0) {
+    if (*func_8028FDB4_de(func_8028FDB4_de(func_8028FDB4_de((s32 *)D_800DE7E0->unk4, 0), idx), 2) != 0) {
         t = start;
     }
     return func_80400E50_de(keys, count, t - start);

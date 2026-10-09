@@ -3,8 +3,8 @@
 
 /* Sets the state word D_80153788 to 0xD; this is one of a run of functions that each store one
    state number there, and func_8040AAB8_de clears it. */
-extern s32 D_80153788;
+extern s32 D_8014D4F8;
 
 void func_8040AC18_de(void) {
-    D_80153788 = 0xD;
+    D_8014D4F8 = 0xD;
 }

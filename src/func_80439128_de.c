@@ -3,7 +3,7 @@
 #include "span_16E000/code_804379C8.h"
 /* Calls func_8029973C_de; when func_80299A08_de reports 0x73, sets the word at offset 0x14 of the object
    D_800E58A0 points to to -1 and calls func_8041A430_de on its first word with 2. Returns zero. */
-extern struct State_func_80439128_de *D_800E58A0;
+extern struct State_func_80439128_de *D_800E1850;
 
 
 s32 func_80439128_de(void) {
@@ -16,7 +16,7 @@ s32 func_80439128_de(void) {
 #elif defined(VERSION_EU_X)
     if (func_80299A08_de() == 0x77) {
 #endif
-        state = D_800E58A0;
+        state = D_800E1850;
         state->value = -1;
         func_8041A430_de((s32)state->first, 2);
     }

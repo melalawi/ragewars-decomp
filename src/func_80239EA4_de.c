@@ -9,7 +9,7 @@
 
 
 
-extern char D_8011FE88;
+extern char D_8011BDC8;
 
 
 
@@ -40,7 +40,7 @@ void func_80239EA4_de(void *arg0, Vec3 *out) {
 
     targetY = 0.0f;
     targetX = targetY;
-    entry = func_8028B2F8_de(&D_8011FE88, ((func_80239E94_S1 *)(o))->unk58);
+    entry = func_8028B2F8_de(&D_8011BDC8, ((func_80239E94_S1 *)(o))->unk58);
     if (entry == 0) {
         out->x = targetY;
         out->y = targetY;
@@ -48,8 +48,8 @@ void func_80239EA4_de(void *arg0, Vec3 *out) {
         return;
     }
     if (((func_8022E694_S1 *)(entry))->unk44 & 0x10000) {
-        targetX = D_800C8668;
-        targetY = ((D_800C7470_Pair *)&D_800C8668)->second;
+        targetX = D_800C3578_de;
+        targetY = ((D_800C7470_Pair *)&D_800C3578_de)->second;
     }
     value = ((func_80239E94_S1 *)(o))->unkF4 + (targetX - ((func_80239E94_S1 *)(o))->unkF4) * D_800C3580_de.unk0;
     scale = D_800C3584_de.unk0;

@@ -6,7 +6,7 @@
    through jtbl_800E1610: five pick option 0, 1, 3, 4 or 2, pass it to func_80434FB4_de and set the
    result word at offset 0x10 of the screen D_800E4450 to 0x13; the sixth sets it to -1. Both then
    close the screen's first word through func_8041A430_de with 2. Returns zero. */
-extern struct func_8029A838_S1 *D_800E4450;
+extern struct func_8029A838_S1 *D_800E0400;
 extern void *jtbl_800DD5E0[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
@@ -45,12 +45,12 @@ option_2:
     option = 2;
 choose:
     func_80434FB4_de(option);
-    D_800E4450->unk10 = 0x13;
+    D_800E0400->unk10 = 0x13;
     goto close;
 cancel:
-    D_800E4450->unk10 = -1;
+    D_800E0400->unk10 = -1;
 close:
-    func_8041A430_de(D_800E4450->unk0, 2);
+    func_8041A430_de(D_800E0400->unk0, 2);
 done:
     return 0;
 }

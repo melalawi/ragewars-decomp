@@ -36,7 +36,7 @@ struct Menu_func_8043CB30_de {
 };
 
 /* unbake published declaration: published_5ffdf711b75c765db39c516e */
-extern int D_8013B2D4;
+extern int D_80137214;
 
 /* unbake published declaration: published_6a0130c97292a1caf0cab696 */
 extern void func_8043C998_de(void);
@@ -55,7 +55,7 @@ struct Entry_func_8043CF44_de;
 typedef struct Entry_func_8043CF44_de Entry_func_8043CF44_de;
 
 /* unbake published declaration: published_7ab038f089eac417ee7406a9 */
-extern float D_800E227C;
+extern float D_800DE24C_de;
 
 struct Entry_func_8043CC10_de;
 /* unbake published declaration: published_7bd7736211760c9a9c7e6487 */

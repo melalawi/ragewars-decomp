@@ -7,7 +7,7 @@ extern void func_802231D4_de(s32, s32, void *);
 extern void func_802233F0_de(s32 arg0, s32 arg1, void *arg2);
 extern s32 func_8024E62C_de(void *arg0);
 extern void func_802227F4_de(void *, void *, s32);
-extern char D_800CE7E4;
+extern char D_800C95A0;
 extern char D_800C9558_de;
 
 
@@ -15,7 +15,7 @@ extern char D_800C9558_de;
 
 void func_8022CE78_de(s32 arg0, s32 arg1) {
     func_80274870_de(arg0 + 0x72C, 0.0f, 0.25f);
-    func_802231D4_de(arg0, arg1, &D_800CE7E4);
+    func_802231D4_de(arg0, arg1, &D_800C95A0);
     func_802233F0_de(arg0, arg1, &D_800C9558_de);
     if (((func_8022CA04_S3 *)(arg1))->unk20 <= 0.0f) {
         if (func_8024E62C_de((void *) arg1) != 0) {

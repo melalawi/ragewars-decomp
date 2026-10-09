@@ -5,9 +5,9 @@
 
 /* Particle render-state lists using the shared runtime vertices.
  * ROM D3A60..D3AC0. */
-extern UnitVtx D_801469A0[4];
+extern UnitVtx D_801428E0[4];
 
-Gfx D_800D2E60[12] = {
+Gfx D_800CDBF0_de[12] = {
     gsDPSetTextureLUT(G_TT_NONE),
     gsSPTexture(0x8000, 0x8000, 0, G_TX_RENDERTILE, G_ON),
     gsSPGeometryMode(G_CULL_BACK | G_LIGHTING | G_TEXTURE_GEN, 0),
@@ -19,6 +19,6 @@ Gfx D_800D2E60[12] = {
     gsSPMoveWord(G_MW_CLIP, G_MWO_CLIP_RNY, FRUSTRATIO_1),
     gsSPMoveWord(G_MW_CLIP, G_MWO_CLIP_RPX, 0xFFFF),
     gsSPMoveWord(G_MW_CLIP, G_MWO_CLIP_RPY, 0xFFFF),
-    gsSPVertex(D_801469A0, 4, 0),
+    gsSPVertex(D_801428E0, 4, 0),
     gsSPEndDisplayList()
 };

@@ -7,8 +7,8 @@ void func_8024CC30_de(f32 *src, PackedMatrixWords *dst) {
     u32 *lower = dst->lower;
     s32 a;
     s32 b;
-    { f32 value = (src[0]); if (!((D_800C8C70) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - (D_800C8C70)); (a) |= 0x80000000; } };
-    { f32 value = (src[1]); if (!((*(&D_800C8C70 + 1)) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - (*(&D_800C8C70 + 1))); (b) |= 0x80000000; } };
+    { f32 value = (src[0]); if (!((D_800C3B80) <= value)) { (a) = (s32)value; } else { (a) = (s32)(value - (D_800C3B80)); (a) |= 0x80000000; } };
+    { f32 value = (src[1]); if (!((*(&D_800C3B80 + 1)) <= value)) { (b) = (s32)value; } else { (b) = (s32)(value - (*(&D_800C3B80 + 1))); (b) |= 0x80000000; } };
     *upper = (a & 0xFFFF0000) | ((u32)b >> 16);
     *lower = (a << 16) | (b & 0xFFFF);
     upper++;

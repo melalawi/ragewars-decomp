@@ -6,7 +6,7 @@
    2 through func_80209874_de, zeroes the tracking values from 0x23C to 0x260, runs the resets
    func_802110C4_de, func_80209988_de and func_8020999C_de, and clears the remaining state words. */
 
-extern char D_800CE040;
+extern char D_800C8DF0_de;
 extern void func_8020986C_de(void *, char *, s32);
 extern void func_80209874_de(void *, s32);
 extern void func_802110C4_de(void *);
@@ -46,7 +46,7 @@ void func_80208000_de(s32 *arg0) {
         arg0[37 + i] = 0;
     }
     arg0[0x238 / 4] = 0;
-    func_8020986C_de(arg0, &D_800CE040, none);
+    func_8020986C_de(arg0, &D_800C8DF0_de, none);
     func_80209874_de(arg0, 2);
     ((f32 *) arg0)[0x244 / 4] = 0.0f;
     arg0[0x23C / 4] = 0;

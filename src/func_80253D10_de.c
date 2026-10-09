@@ -15,7 +15,7 @@ extern void func_80254AD0_de(s32 arg0, void *arg1);
 
 extern s32 D_80101140;
 
-extern char D_801051A0;
+extern char D_801011A0;
 
 void func_80253D10_de(s32 unused, struct Shape_typemap_165 **arg1, struct Shape_typemap_165 *arg2) {
     s32 counter;
@@ -26,8 +26,8 @@ void func_80253D10_de(s32 unused, struct Shape_typemap_165 **arg1, struct Shape_
     u32 token2;
 
     token = func_802BCF30_de();
-    counter = D_8010515C + 1;
-    D_8010515C = counter;
+    counter = D_8010115C + 1;
+    D_8010115C = counter;
     if (counter != 1) {
         func_802BCF50_de(token);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -50,14 +50,14 @@ void func_80253D10_de(s32 unused, struct Shape_typemap_165 **arg1, struct Shape_
     }
     if (!(node->field_C & 0x702)) {
         func_80254DD0_de(0, node);
-        func_80255B2C_de(&D_801051A0, node->field_0);
+        func_80255B2C_de(&D_801011A0, node->field_0);
         func_80254AD0_de(0, node);
     }
     *arg1 = arg2;
 
     token2 = func_802BCF30_de();
-    counter2 = D_8010515C - 1;
-    D_8010515C = counter2;
+    counter2 = D_8010115C - 1;
+    D_8010115C = counter2;
     if (counter2 != 0) {
         func_802BCF50_de(token2);
         func_802BB420_de(&D_80101140, 0, 1);

@@ -204,7 +204,7 @@ struct Shared_FullPlayerMenuGlobals {
     Shared_PlayerMenuGlobals tail; /* +0x4: src/func_802ACBCC.c */
 };
 
-/* The values func_802ACBCC loads by address:
+/* The values func_802ABBDC_de loads by address:
  * 0x800CB3F0 = 105.0 (float, D_800C6260 in this cartridge's tables)
  * 0x800CB3F4 = 195.0 (float, D_800C6264 in this cartridge's tables)
  * 0x800CB3F8 = 300.0 (float, D_800CB3F8 in this cartridge's tables)
@@ -236,7 +236,7 @@ s32 func_802A01E8_de(void);
 s32 func_804030E0_de(s32);
 s32 func_8025DE54_de(s16, Vec3, s32, s32);
 typedef Shared_PlayerMenuData PlayerMenuData;
-extern PlayerMenuData D_80102B00[];
+extern PlayerMenuData D_800FEB00[];
 typedef Shared_MenuBonusColumn MenuBonusColumn;
 
 extern MenuBonusColumn D_800FEB15[];
@@ -244,10 +244,10 @@ extern MenuBonusColumn D_800FEB16[];
 extern MenuBonusColumn D_800FEB17[];
 typedef Shared_MenuAmountColumn MenuAmountColumn;
 extern MenuAmountColumn D_800FEB10[];
-extern MenuBonusColumn D_80102B14[];
+extern MenuBonusColumn D_800FEB14[];
 extern Shared_FullPlayerMenuGlobals D_80140F84;
 
-extern s32 D_80145088;
+extern s32 D_80140FC8;
 
 extern s32 D_800C91B8_de;
 extern f32 D_800C6260;
@@ -317,7 +317,7 @@ typedef Shared_FullPlayerMenuGlobals FullPlayerMenuGlobals;
 
 /* Handles player menu commands and updates selection and game mode state. */
 
-s32 func_802ACBCC(func_802ACBCC_S1 *arg0, func_802ACBCC_S2 *arg1) {
+s32 func_802ABBDC_de(func_802ACBCC_S1 *arg0, func_802ACBCC_S2 *arg1) {
     f32 temp_f20;
     f32 loopBonus; 
     f32 old_unk11E4;
@@ -429,7 +429,7 @@ loop_37:
                     if (temp_s0 != arg0) {
                         temp_a1 = temp_s0->unk5DC;
                         if (temp_a1 != 0) {
-                            func_80237E80_de(&D_80145088, temp_a1, D_800D30AC[MENU_LANGUAGE]);
+                            func_80237E80_de(&D_80140FC8, temp_a1, D_800D30AC[MENU_LANGUAGE]);
                         }
                     }
                     temp_s0 = temp_s0->unk16E0;
@@ -452,7 +452,7 @@ case_BD8:
                     arg0->unk11E4 = temp_f20;
                     arg0->unk13E0 = 0;
                     if (temp_a1_2 != 0) {
-                        func_80237E80_de(&D_80145088, temp_a1_2, D_800D31B8[MENU_LANGUAGE]);
+                        func_80237E80_de(&D_80140FC8, temp_a1_2, D_800D31B8[MENU_LANGUAGE]);
                     }
                 } else {
                     temp_fp = arg0->unk122C & 0x6000;
@@ -482,7 +482,7 @@ case_BD8:
                                 }
                                 temp_a1_3 = temp_s0->unk5DC;
                                 if (temp_a1_3 != 0) {
-                                    func_80237E80_de(&D_80145088, temp_a1_3, D_800D3128[MENU_LANGUAGE]);
+                                    func_80237E80_de(&D_80140FC8, temp_a1_3, D_800D3128[MENU_LANGUAGE]);
                                 }
                             } while (++var_s1 < D_80140F84.tail.count);
                         }
@@ -492,7 +492,7 @@ case_BD8:
                         func_8025E11C_de(0x164);
                         temp_a1_4 = arg0->unk5DC;
                         if (temp_a1_4 != 0) {
-                            func_80237E80_de(&D_80145088, temp_a1_4, D_800D312C[MENU_LANGUAGE]);
+                            func_80237E80_de(&D_80140FC8, temp_a1_4, D_800D312C[MENU_LANGUAGE]);
                         }
                         temp_alpha = D_800C626C;
                         temp_duration = arg0->unk1230;
@@ -505,7 +505,7 @@ case_BD8:
                         if (temp_a1_11 != 0) {
                             var_a2 = D_800D3130[MENU_LANGUAGE];
 block_119:
-                            func_80237E80_de(&D_80145088, temp_a1_11, var_a2);
+                            func_80237E80_de(&D_80140FC8, temp_a1_11, var_a2);
                         }
                         break;
                     case 0x8:                       /* switch 3 */
@@ -513,7 +513,7 @@ block_119:
                         func_8025E11C_de(0x165);
                         temp_a1_5 = arg0->unk5DC;
                         if (temp_a1_5 != 0) {
-                            func_80237E80_de(&D_80145088, temp_a1_5, D_800D3134[MENU_LANGUAGE]);
+                            func_80237E80_de(&D_80140FC8, temp_a1_5, D_800D3134[MENU_LANGUAGE]);
                         }
                         temp_alpha = D_800C6278_de;
                         temp_duration = arg0->unk1230;
@@ -526,7 +526,7 @@ block_114:
                         func_8025E11C_de(0x160);
                         temp_a1_6 = arg0->unk5DC;
                         if (temp_a1_6 != 0) {
-                            func_80237E80_de(&D_80145088, temp_a1_6, D_800D3138[MENU_LANGUAGE]);
+                            func_80237E80_de(&D_80140FC8, temp_a1_6, D_800D3138[MENU_LANGUAGE]);
                         }
                         temp_alpha = D_800CB410;
                         temp_duration = arg0->unk1230;
@@ -574,7 +574,7 @@ block_114:
                         func_8025E11C_de(0x16A);
                         temp_a1_7 = arg0->unk5DC;
                         if (temp_a1_7 != 0) {
-                            func_80237E80_de(&D_80145088, temp_a1_7, D_800D3150[MENU_LANGUAGE]);
+                            func_80237E80_de(&D_80140FC8, temp_a1_7, D_800D3150[MENU_LANGUAGE]);
                         }
                         temp_alpha = D_800C6298;
                         temp_duration = arg0->unk1230;
@@ -585,7 +585,7 @@ block_114:
                         func_8025E11C_de(0x163);
                         temp_a1_8 = arg0->unk5DC;
                         if (temp_a1_8 != 0) {
-                            func_80237E80_de(&D_80145088, temp_a1_8, D_800D3154[MENU_LANGUAGE]);
+                            func_80237E80_de(&D_80140FC8, temp_a1_8, D_800D3154[MENU_LANGUAGE]);
                         }
                         temp_alpha = D_800C62A0;
                         temp_duration = arg0->unk1230;
@@ -598,7 +598,7 @@ block_114:
                         func_8025E11C_de(0x168);
                         temp_a1_9 = arg0->unk5DC;
                         if (temp_a1_9 != 0) {
-                            func_80237E80_de(&D_80145088, temp_a1_9, D_800D3158[MENU_LANGUAGE]);
+                            func_80237E80_de(&D_80140FC8, temp_a1_9, D_800D3158[MENU_LANGUAGE]);
                         }
                         temp_alpha = D_800C62A8;
                         temp_duration = arg0->unk1230;
@@ -609,7 +609,7 @@ block_114:
                         func_8025E11C_de(0x15F);
                         temp_a1_10 = arg0->unk5DC;
                         if (temp_a1_10 != 0) {
-                            func_80237E80_de(&D_80145088, temp_a1_10, D_800D315C[MENU_LANGUAGE]);
+                            func_80237E80_de(&D_80140FC8, temp_a1_10, D_800D315C[MENU_LANGUAGE]);
                         }
                         temp_alpha = D_800C62B0;
                         temp_duration = arg0->unk1230;
@@ -627,7 +627,7 @@ block_116:
 block_default:
                     temp_a1_11 = arg0->unk5DC;
                     if (temp_a1_11 != 0) {
-                        func_80237E80_de(&D_80145088, temp_a1_11, D_800D3160[MENU_LANGUAGE]);
+                        func_80237E80_de(&D_80140FC8, temp_a1_11, D_800D3160[MENU_LANGUAGE]);
                     }
 block_after_alpha:
                     arg0->unk122C = (s32) (arg0->unk122C | temp_fp);
@@ -636,7 +636,7 @@ block_after_alpha:
 case_1398:
                 temp_v0_2 = arg0->unk5D4 * 0x190;
                 var_s4 = 1;
-                D_80102B14[arg0->unk5D4].value += 0xA;
+                D_800FEB14[arg0->unk5D4].value += 0xA;
                 arg0->unk5F8 = (u16) (arg0->unk5F8 + 0xA);
                 func_804030E0_de(0x1F5);
                 goto command_done;
@@ -662,10 +662,10 @@ case_13C1:
             func_804030E0_de(0x1F8);
             goto command_done;
 case_1389:
-                func_8022F3F8_de(&D_80102B00[arg0->unk5D4], (s32) arg0->unk18->unkC);
+                func_8022F3F8_de(&D_800FEB00[arg0->unk5D4], (s32) arg0->unk18->unkC);
 block_126:
                 var_s4 = 1;
-                func_8022F3F8_de(&D_80102B00[arg0->unk5D4], (s32) arg0->unk18->unkC);
+                func_8022F3F8_de(&D_800FEB00[arg0->unk5D4], (s32) arg0->unk18->unkC);
                 func_804030E0_de(0x1F4);
                 goto command_done;
 case_13BD:
@@ -687,7 +687,7 @@ command_done:
         if (arg0->unk5DC != 0) {
             func_802391AC_de(arg0->unk5DC, 0x80, 0x32, 0x32, 0x4B, 0, 0, 2);
             if (temp_s0_2 != 0) {
-                func_80237E80_de(&D_80145088, arg0->unk5DC, *temp_s0_2);
+                func_80237E80_de(&D_80140FC8, arg0->unk5DC, *temp_s0_2);
             }
         }
         if (temp_s1 != 0) {

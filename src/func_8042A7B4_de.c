@@ -15,12 +15,12 @@
 
 
 
-extern struct func_80284AF4_G2 *D_800E4F60;
-extern struct Icon D_800E4F64[];
-extern s32 D_800E51E4[];
-extern s32 D_800E51F8[];
-extern s32 D_800E5214[];
-extern s32 D_800E5240[];
+extern struct func_80284AF4_G2 *D_800E0F10;
+extern struct Icon D_800E0F14_de[];
+extern s32 D_800E1194[];
+extern s32 D_800E11A8_de[];
+extern s32 D_800E11C4[];
+extern s32 D_800E11F0_de[];
 extern void *func_8042B294_de(s32);
 extern s32 func_8042B154_de(void *);
 extern struct Resource_func_80419E54_de *func_8040EC30_de(void *, s32);
@@ -41,19 +41,19 @@ void func_8042A7B4_de(s32 alpha) {
     for (category = 0; category < 4; category++) {
         switch (category) {
         case 3:
-            table = D_800E51E4;
+            table = D_800E1194;
             list = 3;
             break;
         case 2:
-            table = D_800E51F8;
+            table = D_800E11A8_de;
             list = 2;
             break;
         case 0:
-            table = D_800E5240;
+            table = D_800E11F0_de;
             list = 0;
             break;
         case 1:
-            table = D_800E5214;
+            table = D_800E11C4;
             list = 1;
             break;
         default:
@@ -65,12 +65,12 @@ void func_8042A7B4_de(s32 alpha) {
                 found = 0;
                 j = 0;
             scan:
-                if (table[i] == D_800E4F64[j].key) {
-                    item = func_8040EC30_de(D_800E4F60->unk0, (u16)D_800E4F64[j].key);
+                if (table[i] == D_800E0F14_de[j].key) {
+                    item = func_8040EC30_de(D_800E0F10->unk0, (u16)D_800E0F14_de[j].key);
                     func_8040E8D8_de(item, visible);
                     item->value = alpha;
-                    if (D_800E4F64[j].other != -1) {
-                        item = func_8040EC30_de(D_800E4F60->unk0, (u16)D_800E4F64[j].other);
+                    if (D_800E0F14_de[j].other != -1) {
+                        item = func_8040EC30_de(D_800E0F10->unk0, (u16)D_800E0F14_de[j].other);
                         func_8040E8D8_de(item, visible);
                         item->value = alpha;
                     }

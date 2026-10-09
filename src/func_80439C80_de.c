@@ -6,14 +6,14 @@
    D_8011FE88 and that count at offset 0x34; otherwise the handle is -1. Returns the handle. */
 
 
-extern char D_8011FE88[];
+extern char D_8011BDC8[];
 extern s32 func_8028B21C_de(void *, s32);
 
 s32 func_80439C80_de(struct Record_func_80439C80_de *record, s32 count) {
     record->count = count;
     record->handle = -1;
     if (count > 0) {
-        record->handle = func_8028B21C_de(D_8011FE88, count);
+        record->handle = func_8028B21C_de(D_8011BDC8, count);
     }
     return record->handle;
 }

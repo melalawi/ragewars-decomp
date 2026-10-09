@@ -8,10 +8,10 @@
 
 
 
-extern s32 D_801468F4;
+extern s32 D_80142834;
 
 void func_80443BD4_de(struct Record_func_8040AB54_de *record) {
-    if (D_801468F4 != 0) {
+    if (D_80142834 != 0) {
         record->target->flags |= 0x01000000;
     } else {
         record->target->flags &= ~0x01000000;

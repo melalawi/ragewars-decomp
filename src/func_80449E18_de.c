@@ -5,7 +5,7 @@
 /* Refreshes every instance owned by the holder and clears their pending flag. */
 
 
-extern s32 D_8011FE88;
+extern s32 D_8011BDC8;
 void func_80220A80_de(Node_func_80449E18_de *, Node_func_80449E18_de *);                 /* extern */
 void func_80245864_de(s32);                            /* extern */
 s32 func_80264B6C_de(void);                            /* extern */
@@ -30,7 +30,7 @@ void func_80449E18_de(Node_func_80449E18_de *arg0) {
     if (var_s0 != 0) {
         do {
             func_804491E8_de(var_s0);
-            temp_v0 = func_80286728_de(&D_8011FE88, &var_s0->unk8);
+            temp_v0 = func_80286728_de(&D_8011BDC8, &var_s0->unk8);
             var_s0->unk2FC = temp_v0;
             var_s0->unk14 = temp_v0;
             func_80220A80_de(var_s0, var_s0);

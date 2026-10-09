@@ -2,7 +2,7 @@
 #include "span_1000/code_802536F4.h"
 #include "types.h"
 
-extern char D_801051A0;
+extern char D_801011A0;
 
 extern void func_80254DD0_de(void *arg0, void *arg1);
 extern void func_80255B2C_de(void *arg0, s32 arg1);
@@ -28,7 +28,7 @@ void func_80254990_de(void *unused, void *arg1) {
     }
     if (!(((func_80254930_S1 *)(arg1))->unkC & 0x702)) {
         func_80254DD0_de(0, arg1);
-        func_80255B2C_de(&D_801051A0, *(s32 *) arg1);
+        func_80255B2C_de(&D_801011A0, *(s32 *) arg1);
         func_80254AD0_de(0, arg1);
     }
 }

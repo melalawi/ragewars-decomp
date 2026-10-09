@@ -31,10 +31,10 @@ f32 func_8025C368_de(char *source, char *listener)
     dz = a->z - b->z;
     dz *= dz;
     d = dx + dy + dz;
-    if (d >= D_800D0D10) {
+    if (d >= D_800CBAD0) {
         t = 0.0f;
     } else {
-        t = D_800C3F98_de[1] - d / D_800D0D10;
+        t = D_800C3F98_de[1] - d / D_800CBAD0;
     }
     switch (((func_8025C388_S1 *)(source))->unk44) {
     case 2:

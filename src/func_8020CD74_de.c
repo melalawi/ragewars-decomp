@@ -12,10 +12,10 @@
 
 
 extern f32 D_800C1D90_de[];
-extern CollisionInfo8020CD74 D_80103FF0;
-extern CollisionInfo8020CD74 D_80104050;
-extern CollisionInfo8020CD74 D_80104070;
-extern CollisionInfo8020CD74 D_801040D0;
+extern CollisionInfo8020CD74 D_800FFFF0;
+extern CollisionInfo8020CD74 D_80100050;
+extern CollisionInfo8020CD74 D_80100070;
+extern CollisionInfo8020CD74 D_801000D0;
 
 extern s32 func_8024DEE0_de(void *);
 extern s32 func_8024DF5C_de(void *);
@@ -40,19 +40,19 @@ s32 func_8020CD74_de(s32 **arg0, Instance8020CD74 *arg1, s32 arg2) {
     position.y += D_800C1D90_de[1];
 
     if ((*(u8 *)arg1 == 1) && (((func_80203C40_S1 *)(arg1))->unk100 & 0x300000)) {
-        collision = D_801040D0;
+        collision = D_801000D0;
     } else {
         first_test = func_8024DEE0_de(arg1);
         if (func_8024DF5C_de(arg1) == 0) {
             if (first_test != 0) {
-                collision = D_80104050;
+                collision = D_80100050;
             } else {
-                collision = D_801040D0;
+                collision = D_801000D0;
             }
         } else if (func_8024DFA0_de(arg1) == 0) {
-            collision = D_80104070;
+            collision = D_80100070;
         } else {
-            collision = D_80103FF0;
+            collision = D_800FFFF0;
         }
     }
     collision.w[0] = 0x4000;

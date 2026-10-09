@@ -4,7 +4,7 @@
 
 
 
-extern f32 D_800C8628;
+extern f32 D_800C3538_de;
 
 
 
@@ -16,7 +16,7 @@ void func_8023913C_de(void *arg0) {
         f32 f0 = D_800C352C_de;
         f32 f1 = D_800C3530_de;
         f32 f2 = ((func_802077F4_S2 *)(&D_800C3530_de))->unk4;
-        f32 f3 = D_800C8628;
+        f32 f3 = D_800C3538_de;
 
         ((func_8023912C_S2 *)(arg0))->unk90 = 0;
         ((func_8023912C_S2 *)(arg0))->unk94 = 0;

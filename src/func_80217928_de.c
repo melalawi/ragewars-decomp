@@ -21,7 +21,7 @@
 
 
 extern f32 D_800C9138_de;
-extern func_8020676C_S1 *D_800D052C[];
+extern func_8020676C_S1 *D_800CB2EC[];
 extern f32 func_80274808_de(f32, f32, f32);
 extern void func_802727D8_de(Matrix *);
 extern void func_80273C68_de(Matrix *, f32);
@@ -74,7 +74,7 @@ void func_80217928_de(Menu *menu, s32 arg1, s32 arg2) {
                     item->slot = i;
                     item->weapon = menu->slots[i].weapon;
                     item->position = position;
-                    item->icon = D_800D052C[weapon]->unk6;
+                    item->icon = D_800CB2EC[weapon]->unk6;
                     item->width = size;
                     item->height = size;
                 }

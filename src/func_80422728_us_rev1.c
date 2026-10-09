@@ -51,14 +51,14 @@ struct Shared_MenuData {
 #include "types.h"
 #include "shared/func_80425674_de_layout.h"
 
-/* Builds options screen state D_800E4518 for menu node arg0: allocates its 0x6C bytes, sets up the two
+/* Builds options screen state D_800E04C8 for menu node arg0: allocates its 0x6C bytes, sets up the two
    sliding tabs 0x381/0x388 (centring each by a quarter of its width), the header sprites, the two text
    lists 0x375 and 0x378 and the 0x80-step slider 0x37A like func_804234CC_de, shows the pak and rumble
    markers according to the settings' controller mode, registers the remaining resources, resets the
    cursor state and returns zero. */
 
-extern Shared_OptionsScreen *D_800E4518;
-extern Shared_Game D_801462C8;
+extern Shared_OptionsScreen *D_800E04C8;
+extern Shared_Game D_80142208_de;
 
 extern char *D_800D2124;
 extern char *D_800D2128;
@@ -66,8 +66,8 @@ extern char *D_800D2128;
 extern char *D_800D2134[3];
 extern char *D_800D2138;
 extern char *D_800D213C;
-extern s32 D_80146894;
-extern s32 D_80154020[2];
+extern s32 D_801427D4;
+extern s32 D_8014DD90[2];
 
 extern Shared_OptionsScreen *func_8025305C_de(s32);
 extern s32 func_8025E2C4_de(void);
@@ -105,58 +105,58 @@ s32 func_80422728_us_rev1(void *node) {
     s32 i;
     s32 rem;
 
-    D_800E4518 = func_8025305C_de(0x6C);
-    D_800E4518->sound = func_8025E2C4_de();
+    D_800E04C8 = func_8025305C_de(0x6C);
+    D_800E04C8->sound = func_8025E2C4_de();
     func_8025E2D4_de(0x34);
     func_8025E384_de();
     func_8025E214_de(-1);
-    D_800E4518->page = 1;
-    D_800E4518->pages = 4;
-    D_800E4518->leftTab = func_8040EC30_de(node, 0x381);
-    D_800E4518->leftTab->x -= D_800E4518->leftTab->width;
-    D_800E4518->leftStep = D_800E4518->leftTab->width / 4;
-    rem = D_800E4518->leftTab->width - D_800E4518->leftStep * 4;
-    D_800E4518->leftTab->x += rem;
-    D_800E4518->rightTab = func_8040EC30_de(node, 0x388);
-    D_800E4518->rightTab->x += D_800E4518->rightTab->width;
-    D_800E4518->rightStep = D_800E4518->rightTab->width / 4;
-    rem = D_800E4518->rightTab->width - D_800E4518->rightStep * 4;
-    D_800E4518->rightTab->x -= rem;
-    D_800E4518->title = func_80419E54_de(0x373, 0x6E);
+    D_800E04C8->page = 1;
+    D_800E04C8->pages = 4;
+    D_800E04C8->leftTab = func_8040EC30_de(node, 0x381);
+    D_800E04C8->leftTab->x -= D_800E04C8->leftTab->width;
+    D_800E04C8->leftStep = D_800E04C8->leftTab->width / 4;
+    rem = D_800E04C8->leftTab->width - D_800E04C8->leftStep * 4;
+    D_800E04C8->leftTab->x += rem;
+    D_800E04C8->rightTab = func_8040EC30_de(node, 0x388);
+    D_800E04C8->rightTab->x += D_800E04C8->rightTab->width;
+    D_800E04C8->rightStep = D_800E04C8->rightTab->width / 4;
+    rem = D_800E04C8->rightTab->width - D_800E04C8->rightStep * 4;
+    D_800E04C8->rightTab->x -= rem;
+    D_800E04C8->title = func_80419E54_de(0x373, 0x6E);
     marker = func_8040EC30_de(node, 0x372);
-    D_800E4518->marker = marker;
+    D_800E04C8->marker = marker;
     func_8040E8D8_de(marker, 0);
     func_8040EC30_de(node, 0x386)->alpha = 0x6E;
     header = func_8040EC30_de(node, 0x387);
-    D_800E4518->header = header;
+    D_800E04C8->header = header;
     header->alpha = 0x8C;
-    D_800E4518->footer = func_8040EC30_de(node, 0x370);
+    D_800E04C8->footer = func_8040EC30_de(node, 0x370);
     rumble = func_8040EC30_de(node, 0x384);
-    D_800E4518->rumbleIcon = rumble;
+    D_800E04C8->rumbleIcon = rumble;
     func_8040E8D8_de(rumble, 1);
     func_8040EC30_de(node, 0x385)->alpha = 0x6E;
     pak = func_8040EC30_de(node, 0x374);
-    D_800E4518->pakIcon = pak;
+    D_800E04C8->pakIcon = pak;
     func_8040E8D8_de(pak, 0);
     func_8041B110_de(0x377);
     func_8041B110_de(0x37C);
     firstListHandle = func_8041ABC0_de(0x375, 0x376);
-    D_800E4518->firstList = firstListHandle;
+    D_800E04C8->firstList = firstListHandle;
     func_8041AD34_de(firstListHandle, D_800D3470_de[0]);
-    func_8041AD34_de(D_800E4518->firstList, D_800D2124);
-    func_8041AD34_de(D_800E4518->firstList, D_800D2128);
-    settings = &D_801462C8;
-    func_8041AD10_de(D_800E4518->firstList, settings->firstListMode);
+    func_8041AD34_de(D_800E04C8->firstList, D_800D2124);
+    func_8041AD34_de(D_800E04C8->firstList, D_800D2128);
+    settings = &D_80142208_de;
+    func_8041AD10_de(D_800E04C8->firstList, settings->firstListMode);
     secondListHandle = func_8041ABC0_de(0x378, 0x379);
-    D_800E4518->secondList = secondListHandle;
+    D_800E04C8->secondList = secondListHandle;
     func_8041AD34_de(secondListHandle, D_800D2134[0]);
     if (func_80265350_de() != 0x400000) {
-        func_8041AD34_de(D_800E4518->secondList, D_800D2138);
-        func_8041AD34_de(D_800E4518->secondList, D_800D213C);
+        func_8041AD34_de(D_800E04C8->secondList, D_800D2138);
+        func_8041AD34_de(D_800E04C8->secondList, D_800D213C);
     }
-    func_8041AD10_de(D_800E4518->secondList, settings->slots[7].secondListMode);
+    func_8041AD10_de(D_800E04C8->secondList, settings->slots[7].secondListMode);
     slider = func_8041A580_de(0x37A, 0x37B, 0x80);
-    D_800E4518->slider = slider;
+    D_800E04C8->slider = slider;
 
     func_8041A6EC_de(slider, settings->buttons);
     switch (settings->controllerMode) {
@@ -185,19 +185,19 @@ s32 func_80422728_us_rev1(void *node) {
     func_8041B110_de(0x37D);
     func_8041B110_de(0x37E);
     func_8041B110_de(0x37F);
-    D_800E4518->state = 0;
+    D_800E04C8->state = 0;
     func_802A2394_de();
-    func_8043C210_de(D_800E4518, 0x67, 0, 0, 0);
-    func_8043C278_de(D_800E4518);
-    D_800E4518->cursor = 0;
-    D_800E4518->selection = -1;
+    func_8043C210_de(D_800E04C8, 0x67, 0, 0, 0);
+    func_8043C278_de(D_800E04C8);
+    D_800E04C8->cursor = 0;
+    D_800E04C8->selection = -1;
     func_8040E8D8_de(node, 0);
-    D_80146894 = 1;
-    D_80154020[1] = 0;
-    D_80154020[0] = -1;
+    D_801427D4 = 1;
+    D_8014DD90[1] = 0;
+    D_8014DD90[0] = -1;
     func_804221E8_de();
     prompt = func_8040EC30_de(node, 0x371);
-    D_800E4518->prompt = prompt;
+    D_800E04C8->prompt = prompt;
     func_8040E8D8_de(prompt, 1);
     return 0;
 }

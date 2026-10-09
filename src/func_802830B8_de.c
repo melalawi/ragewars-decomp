@@ -39,7 +39,7 @@ void func_802830CC_de(void *arg0, s32 arg1) {
                     }
                     temp_a1 = ((Effect_func_802800C0_de *)var_s0)->unk138;
                     if (temp_a1 != 0) {
-                        func_80268C7C_de(&D_8013B1A8, temp_a1);
+                        func_80268C7C_de(&D_801370E8, temp_a1);
                         ((Effect_func_802800C0_de *)var_s0)->unk138 = 0;
                     }
                     temp_v1_3 = ((Effect_func_802800C0_de *)var_s0)->refCount;

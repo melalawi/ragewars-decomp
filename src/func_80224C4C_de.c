@@ -49,10 +49,10 @@
 
 
 
-extern char D_800CE7E4;
-extern Tuning D_800CE82C;
-extern s32 D_80104418[];
-extern f32 D_800D2988;
+extern char D_800C95A0;
+extern Tuning D_800C95E8;
+extern s32 D_80100418[];
+extern f32 D_800CD738;
 extern void func_80274870_de(f32 *, f32, f32);
 extern void func_802231D4_de(SharedPlayer_func_80224C4C_de *, Body_func_80224C4C_de *, char *);
 extern void func_802233F0_de(SharedPlayer_func_80224C4C_de *, Body_func_80224C4C_de *, Tuning *);
@@ -79,8 +79,8 @@ void func_80224C4C_de(SharedPlayer_func_80224C4C_de *player, Body_func_80224C4C_
         player->views5E8.view650_18.mode = 0xA;
     }
     func_80274870_de(&player->views5E8.view72C_76.kickRoll, 0.0f, 0.25f);
-    func_802231D4_de(player, body, &D_800CE7E4);
-    func_802233F0_de(player, body, &D_800CE82C);
+    func_802231D4_de(player, body, &D_800C95A0);
+    func_802233F0_de(player, body, &D_800C95E8);
     if (!(body->flags & 0x2000)) {
         func_80218464_de(player->views5E8.view938_129.strokes);
         func_802227F4_de(player, body, 3);
@@ -88,9 +88,9 @@ void func_80224C4C_de(SharedPlayer_func_80224C4C_de *player, Body_func_80224C4C_
     }
     if (player->views5E8.view724_72.pitch * 57.295776f < -40.0f && player->views5E8.view6A8_44.lift > 0.0f) {
         player->views5E8.view6EC_65.height -= 10.24f;
-        D_80104418[0] |= 0x100000;
+        D_80100418[0] |= 0x100000;
     } else {
-        D_80104418[0] &= ~0x100000;
+        D_80100418[0] &= ~0x100000;
     }
     player->views5E8.view730_79.sway[0] = func_802B7130_de(player->views5E8.view658_24.swimTime * 0.06981318f) * 0.043633237f;
     player->views5E8.view730_79.sway[1] = func_802B7130_de(player->views5E8.view658_24.swimTime * 0.08726647496f) * 0.043633237f;
@@ -100,7 +100,7 @@ void func_80224C4C_de(SharedPlayer_func_80224C4C_de *player, Body_func_80224C4C_
         if (player->views5E8.view86C_127.animation == 0x1144) {
             idle = player->views1C.view10E_13.idle == 0;
         }
-        if (player->views1C.viewE4_7.kind == D_800CE47C) {
+        if (player->views1C.viewE4_7.kind == D_800C922C) {
             player->views5E8.view86C_127.animation = 0x8A2;
         } else if (!idle) {
             if (1.024f <= player->views5E8.view6C0_52.climb) {
@@ -111,10 +111,10 @@ void func_80224C4C_de(SharedPlayer_func_80224C4C_de *player, Body_func_80224C4C_
                 player->views5E8.view86C_127.animation = 0x14;
             }
         }
-        player->views5E8.view11C4_144.soundTime += D_800D2988;
+        player->views5E8.view11C4_144.soundTime += D_800CD738;
         if (5.12f < player->views5E8.view6C8_57.speed && 11.25f < player->views5E8.view11C4_144.soundTime) {
             player->views5E8.view11C4_144.soundTime = 0.0f;
-            func_8025DE54_de(D_800CE82C.strokeSound, body->x, body->y, body->z, 0, -1);
+            func_8025DE54_de(D_800C95E8.strokeSound, body->x, body->y, body->z, 0, -1);
         }
     }
 }

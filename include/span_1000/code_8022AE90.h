@@ -266,7 +266,7 @@ struct func_8022B08C_S1;
 typedef struct func_8022B08C_S1 func_8022B08C_S1;
 
 /* unbake published declaration: published_bedad43fada45affa9cd8970 */
-extern float D_800C7E08;
+extern float D_800C2D18_de;
 
 struct func_8022B974_S1;
 /* unbake published declaration: published_c49bbf96eb94fa3c94a8bdd4 */

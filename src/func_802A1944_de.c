@@ -3,5 +3,5 @@
 
 /** Increment the global counter D_800D2C18. */
 void func_802A1944_de(void) {
-    D_800D2C18 += 1;
+    D_800CD9A8 += 1;
 }

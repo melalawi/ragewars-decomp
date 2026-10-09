@@ -5,7 +5,7 @@
 /* Pulses the caption intensity on a 512-step triangle wave and redraws the caption sprite centred on the entry, dropped one full line or a short line when the wide-layout flag is clear. */
 extern void func_802A9234_de(s32);
 extern void func_802AAC28_de(s32, s32, s16, s16, f32, f32, s32);
-extern s32 D_800E28D8;
+extern s32 D_800DE888_de;
 extern f32 D_800DE740;
 void func_80443734_de(func_80239CD0_S1 *arg0, Entry_func_80443734_de *arg1, s32 arg2, Style_func_8043C9AC_de *arg3) {
     s32 phase;
@@ -23,7 +23,7 @@ void func_80443734_de(func_80239CD0_S1 *arg0, Entry_func_80443734_de *arg1, s32 
     func_802A9234_de(amount);
     drop = 0x50;
     half = arg1->width >> 1;
-    if (D_800E28D8 == 0) {
+    if (D_800DE888_de == 0) {
         drop = 0x2D;
     }
     sx = arg1->scaleX;

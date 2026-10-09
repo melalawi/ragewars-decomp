@@ -2,7 +2,7 @@
 #include "span_16E000/code_80405454.h"
 #include "span_16E000/code_80405DC0.h"
 #include "types.h"
-/* Enters pak menu mode 2: sets the mode flags, shows the D_0044FFA4 prompt when a message is pending (D_800E28C0), and otherwise clears the owner's 0x01000000 flag, probes the Controller Pak on the selected channel, falls back to func_80405F48_de when func_80404F04_de reports none, and shows the D_0044EA2C, D_0044ED44 or D_0044E9C0 prompt according to func_80404F3C_de and func_80405598_de. */
+/* Enters pak menu mode 2: sets the mode flags, shows the D_0044FFA4 prompt when a message is pending (D_800DE870), and otherwise clears the owner's 0x01000000 flag, probes the Controller Pak on the selected channel, falls back to func_80405F48_de when func_80404F04_de reports none, and shows the D_0044EA2C, D_0044ED44 or D_0044E9C0 prompt according to func_80404F3C_de and func_80405598_de. */
 
 
 
@@ -14,9 +14,9 @@
 
 
 
-extern s32 D_8015375C;
-extern s32 D_800E28C0;
-extern char D_8014561C[];
+extern s32 D_8014D4CC;
+extern s32 D_800DE870;
+extern char D_8014155C[];
 extern char D_0044FFA4[];
 extern unsigned char D_0044E4B0[];
 extern char D_0044EA2C[];
@@ -38,15 +38,15 @@ void func_804070F4_de(Menu_func_804066BC_de *menu)
   D_800DE874 = 2;
   D_8014D4C0_de = 0;
   D_8014D4DC = 0;
-  D_80153760 = new_var;
+  D_8014D4D0 = new_var;
   D_8014D4EC_de = 0;
-  D_80153784 = 0;
-  D_8015375C = 0;
+  D_8014D4F4 = 0;
+  D_8014D4CC = 0;
   ch = menu->slot->unk4;
-  if (D_800E28C0 != 0)
+  if (D_800DE870 != 0)
   {
-    D_80153784 = 1;
-    func_80442574_de(D_8014561C, D_0044FFA4, menu->player, menu->slot, 0);
+    D_8014D4F4 = 1;
+    func_80442574_de(D_8014155C, D_0044FFA4, menu->player, menu->slot, 0);
     return;
   }
   menu->owner->flags &= ~0x01000000;
@@ -57,22 +57,22 @@ void func_804070F4_de(Menu_func_804066BC_de *menu)
     func_80405F48_de(menu);
     return;
   }
-  D_80153784 = 1;
+  D_8014D4F4 = 1;
   if (func_80404F3C_de(ch) != new_var)
   {
     new_var2 = D_0044EA2C;
-    func_80442574_de(D_8014561C, new_var2, menu->player, menu->slot, (char *) 1);
+    func_80442574_de(D_8014155C, new_var2, menu->player, menu->slot, (char *) 1);
   }
   else
   {
     new_var3 = menu;
     if (func_80405598_de(ch) != 0)
     {
-      func_80442574_de(D_8014561C, D_0044ED44, new_var3->player, menu->slot, D_0044E4B0);
+      func_80442574_de(D_8014155C, D_0044ED44, new_var3->player, menu->slot, D_0044E4B0);
     }
     else
     {
-      func_80442574_de(D_8014561C, D_0044E9C0, new_var3->player, new_var3->slot, D_0044FFA4);
+      func_80442574_de(D_8014155C, D_0044E9C0, new_var3->player, new_var3->slot, D_0044FFA4);
     }
   }
 }

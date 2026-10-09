@@ -28,7 +28,7 @@
 #include "types.h"
 
 
-extern Shared_MenuContext *D_800E2830;
+extern Shared_MenuContext *D_800DE7E0;
 extern void func_80253838_de(void *, void *);
 
 

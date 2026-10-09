@@ -15,7 +15,7 @@
 
 extern char *D_8011CA18[];
 
-extern f32 D_80115DEC;
+extern f32 D_80111D2C;
 extern Vector4f func_8024796C_de(char *);
 extern void func_80274244_de(Vector4f *, f32 *);
 extern void func_80272898_de(f32 *, Vec3 *, Vec3 *);
@@ -91,10 +91,10 @@ Vector4f func_80247BB4_de(char *actor, Vec3 point, Vector4f *assist, f32 cone) {
         angle = func_802745D0_de(bestDot);
         angle *= func_802B72B0_de(func_802B72B0_de(1.0f - angle / (cone * 0.008726647f)));
         angle *= 0.5f;
-        D_80115DEC = func_802B7130_de(angle);
-        turn.x = axis.x * D_80115DEC;
-        turn.y = axis.y * D_80115DEC;
-        turn.z = axis.z * D_80115DEC;
+        D_80111D2C = func_802B7130_de(angle);
+        turn.x = axis.x * D_80111D2C;
+        turn.y = axis.y * D_80111D2C;
+        turn.z = axis.z * D_80111D2C;
         turn.w = func_802B6560_de(angle);
         func_80274098_de(&result, &base, &turn);
         if (assist != 0) {

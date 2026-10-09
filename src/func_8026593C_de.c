@@ -32,11 +32,11 @@ s32 func_80265964_de(s32 arg0) {
     return result;
 }
 
-/* Loads the scene's point lights into the display list: with no light in D_8013B1A8 it clears geometry mode bit 0x80, otherwise it sets it and fills eight light slots from the light list, transforming each active light's position into the view, storing its negated view direction, its colour scaled by its intensity, its falloff and a fixed range, marking unused slots off, and emits the light-move command for each slot, then advances the light buffer. The first direction component is truncated into a local before negating. */
-extern Gfx *D_80110634;
+/* Loads the scene's point lights into the display list: with no light in D_801370E8 it clears geometry mode bit 0x80, otherwise it sets it and fills eight light slots from the light list, transforming each active light's position into the view, storing its negated view direction, its colour scaled by its intensity, its falloff and a fixed range, marking unused slots off, and emits the light-move command for each slot, then advances the light buffer. The first direction component is truncated into a local before negating. */
+extern Gfx *D_8010C574;
 extern s32 D_8010C4A0;
 extern UnitLight D_8010C0A0[];
-extern char D_8013B1A8;
+extern char D_801370E8;
 
 extern LightNode *func_80268CBC_de(void *);
 extern LightNode *func_80268CC8_de(void *, LightNode *);
@@ -50,14 +50,14 @@ void func_802659E0_de(char *view) {
     s32 i;
     s32 x;
 
-    node = func_80268CBC_de(&D_8013B1A8);
+    node = func_80268CBC_de(&D_801370E8);
     if (node == 0) {
-        Gfx *g = D_80110634++;
+        Gfx *g = D_8010C574++;
         gSPGeometryMode(g, 0x80, 0);
         D_8010C4A0 += 8;
         return;
     }
-    gSPGeometryMode(D_80110634++, 0, 0x80);
+    gSPGeometryMode(D_8010C574++, 0, 0x80);
     for (i = 0; i < 8; i++) {
         if (node != 0 && node->active != 0) {
             data = node->data;
@@ -80,10 +80,10 @@ void func_802659E0_de(char *view) {
             D_8010C0A0[i + D_8010C4A0].falloff = -0x8000;
         }
         if (node != 0) {
-            node = func_80268CC8_de(&D_8013B1A8, node);
+            node = func_80268CC8_de(&D_801370E8, node);
         }
         {
-            Gfx *g = D_80110634++;
+            Gfx *g = D_8010C574++;
             gSPMoveMem(g, 10, ((i + 1) * 2 + 10) * 8, 16, &D_8010C0A0[i + D_8010C4A0]);
         }
     }

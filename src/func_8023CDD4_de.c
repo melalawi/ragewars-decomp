@@ -7,7 +7,7 @@
 
 
 
-extern Region D_80103F88;
+extern Region D_800FFF88;
 extern void func_802BB420_de(void *mapping, s32 address, s32 mode);
 
 void func_8023CDD4_de(RegionDesc *desc)
@@ -24,7 +24,7 @@ void func_8023CDD4_de(RegionDesc *desc)
 
     start = 0;
     pages = (desc->size + 0xFFF) / 0x1000;
-    p = &D_80103F88;
+    p = &D_800FFF88;
     prev = 0;
     r = desc->region;
     r->map = r->data;

@@ -7,16 +7,16 @@
    func_8040C474_de, or at x 0x69 in mode 2. Returns zero. */
 
 
-extern void *D_800E5558;
+extern void *D_800E1508;
 extern void *func_8025305C_de(s32);
 extern void func_802A2360_de(void);
 extern void func_8043C210_de(void *, s32, s32, s32, s32);
 extern s32 func_8040C474_de(void);
 
 s32 func_804361BC_de(struct Pair14 *window) {
-    D_800E5558 = func_8025305C_de(0x1C);
+    D_800E1508 = func_8025305C_de(0x1C);
     func_802A2360_de();
-    func_8043C210_de(D_800E5558, 0x67, 0, 0, 0);
+    func_8043C210_de(D_800E1508, 0x67, 0, 0, 0);
     if (func_8040C474_de() == 1) {
         window->first = 0x62;
         window->second = 0x45;

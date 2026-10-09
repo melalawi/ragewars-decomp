@@ -6,11 +6,11 @@
    nothing happens when the word is already set. Returns zero. */
 
 
-extern struct func_80205628_S3 *D_800E4514;
+extern struct func_80205628_S3 *D_800E04C4;
 extern void func_802A2360_de();
 
 s32 func_80423620_de(void) {
-    struct func_80205628_S3 *state = D_800E4514;
+    struct func_80205628_S3 *state = D_800E04C4;
 
     if (state->unkC == 0) {
         state->unkC = 1;

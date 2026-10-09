@@ -25,7 +25,7 @@ void func_802683E0_de(char *arg0, s32 arg1, s32 arg2, Triple_func_802683E0_de ar
 {
     f32 d = ((func_80216BF4_S1 *)(arg0))->unkC - arg3.y;
 
-    if (d < 0.0f ? -d <= D_800C9560 : d <= D_800C9564) {
+    if (d < 0.0f ? -d <= D_800C4470_de : d <= D_800C4474_de) {
         fire(arg0, arg1, arg2, arg3, arg6);
     }
 }

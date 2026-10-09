@@ -2,7 +2,7 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80423280.h"
 /* Count achievements, store the rank, and select its version-specific title. */
-extern Record_func_80433914_de D_80102B00[];
+extern Record_func_80433914_de D_800FEB00[];
 extern s32 func_80265650_de(s32 bits, s32 index);
 #if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
 extern char *D_800D3200[];
@@ -44,7 +44,7 @@ char *func_80424DE8_de(s32 index) {
     count = 0;
     i = 0;
     do {
-        if (func_80265650_de((s32)D_80102B00[index].achievementFlags, i) == 1) {
+        if (func_80265650_de((s32)D_800FEB00[index].achievementFlags, i) == 1) {
             count++;
         }
         i++;
@@ -242,6 +242,6 @@ char *func_80424DE8_de(s32 index) {
 #endif
         break;
     }
-    D_80102B00[index].rank = rank;
+    D_800FEB00[index].rank = rank;
     return text;
 }

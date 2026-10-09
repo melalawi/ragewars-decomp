@@ -7,7 +7,7 @@
 
 
 
-extern PixelFormat D_800E2B20[];
+extern PixelFormat D_800DEAD0[];
 
 static inline u32 decode(u32 value, PixelFormat *format) {
     u32 r;
@@ -72,5 +72,5 @@ static inline u32 encode(u32 color, PixelFormat *format) {
 }
 
 u32 func_80412D94_de(u32 value, s32 from, s32 to) {
-    return encode(decode(value, &D_800E2B20[from]), &D_800E2B20[to]);
+    return encode(decode(value, &D_800DEAD0[from]), &D_800DEAD0[to]);
 }

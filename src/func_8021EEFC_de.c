@@ -21,13 +21,13 @@ extern char D_800C9468;
 extern char D_800C94A4_de;
 extern f32 D_800C9F64_de[];
 extern f32 D_800C9F74_de[];
-extern HudStatusShared_Settings D_801462C8;
+extern HudStatusShared_Settings D_80142208_de;
 extern f32 D_800C9190_de[2];
-extern s32 D_800E28D0;
-extern s32 D_800E28D4;
-extern s32 D_800E28D8;
-extern Gfx *D_80110634;
-extern char D_8011FE88;
+extern s32 D_800DE880_de;
+extern s32 D_800DE884_de;
+extern s32 D_800DE888_de;
+extern Gfx *D_8010C574;
+extern char D_8011BDC8;
 extern char D_8011D8D0;
 extern f32 D_801377B0;
 extern s32 D_80140FF8;
@@ -52,7 +52,7 @@ s32 func_802AAC28_de(s32, s32, s16, s16, f32, f32, s32);
 s32 func_802BD320_de(char *, const char *, ...);
 f32 func_804422F0_de(char *, f32, f32);
 static inline HudStatusShared_MatchRules *hudRules(void) {
-    return &D_801462C8.rules;
+    return &D_80142208_de.rules;
 }
 void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
     char text[16];
@@ -94,7 +94,7 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
     s32 w;
     s32 width;
     s32 level;
-    if (D_801462C8.state != 0xB && D_801462C8.state != 8) {
+    if (D_80142208_de.state != 0xB && D_80142208_de.state != 8) {
         func_802A7AA4_de(player->anim0);
         func_802A7AA4_de(player->anim1);
         func_802A7AA4_de(player->anim2);
@@ -111,10 +111,10 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
         func_802183E8_de(player->strokes, view, player);
         func_80218F08_de(player->trails, view, player);
         func_802A6900_de(player->marks, player);
-        func_802A9234_de(D_801462C8.hudFade);
-        sx = view->width / (f32) D_800E28D0;
-        sy = view->height / (f32) D_800E28D4;
-        if (D_800E28D8 == 0) {
+        func_802A9234_de(D_80142208_de.hudFade);
+        sx = view->width / (f32) D_800DE880_de;
+        sy = view->height / (f32) D_800DE884_de;
+        if (D_800DE888_de == 0) {
             kx = ky = 1.0f;
         } else {
             kx = ky = 1.5f;
@@ -176,7 +176,7 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
             y = view->x + view->width * 0.5f;
             x = view->y + view->height * 0.5f;
             func_802A9234_de(0xFA);
-            gDPSetEnvColor(D_80110634++, (r), (g), (b), 250);
+            gDPSetEnvColor(D_8010C574++, (r), (g), (b), 250);
             for (k = 0; k < 4; k++) {
                 func_802AAC28_de(0x208, k, y + scaleX * D_800C9F64_de[k + 4], x + scaleY * D_800C9F74_de[k + 4], sx,
                               scaleY * 1.5f, 1);
@@ -193,7 +193,7 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 r = 253;
                 g = 0;
                 b = 0;
-                gDPSetEnvColor(D_80110634++, (r), (g), (b), (player->flashAlpha));
+                gDPSetEnvColor(D_8010C574++, (r), (g), (b), (player->flashAlpha));
                 for (k = 0; k < 4; k++) {
                     func_802AAC28_de(0x208, k, y + scaleX * D_800C9F64_de[k + 4], x + scaleY * D_800C9F74_de[k + 4], sx,
                                   scaleY * 1.5f, 1);
@@ -202,14 +202,14 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 player->flashState = 0;
             }
         }
-        if (D_800E28D8 == 0) {
+        if (D_800DE888_de == 0) {
             kx = ky = 0.75f;
         } else {
             kx = ky = 1.0f;
         }
         scaleX = sx * kx;
         scaleY = sy * ky;
-        if (D_801462C8.hudShown == 0) {
+        if (D_80142208_de.hudShown == 0) {
             n = player->lives;
             if (player->livesLast != n) {
                 func_802AA70C_de(&player->livesAnim, &D_800C93D8_de);
@@ -222,7 +222,7 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 func_802AAC28_de(0x1F6, 0, x, y, sx, sy, 1);
                 func_802A822C_de(player->lives, x + sx * 30.0f, y + sy * 24.0f, sx, sy, 1, 0, 0);
             }
-        } else if ((D_801462C8.trialKind == 1 || D_801462C8.trialKind == 4) && player->hideLives == 0) {
+        } else if ((D_80142208_de.trialKind == 1 || D_80142208_de.trialKind == 4) && player->hideLives == 0) {
             n = player->lifeCount - 1;
             if (n < 0) {
                 n = 0;
@@ -232,11 +232,11 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
             func_802A9234_de(player->alpha);
             func_802A822C_de(n, x, y + scaleY * 22.0f, scaleX, scaleY, 1, 0, 0);
             func_802AAC28_de(0x1F6, 0, x + scaleX * 20.0f, y + scaleY * 16.0f, scaleX, scaleY * 1.5f, 1);
-            if (D_801462C8.rules.markers != 0) {
+            if (D_80142208_de.rules.markers != 0) {
                 func_802AAC28_de(0x203, 0, x + scaleX * 40.0f, y + scaleY * 11.0f, scaleX, scaleY * 1.5f, 1);
             }
         }
-        if (hudRules()->hideHud == 0 && D_801462C8.hudShown != 0) {
+        if (hudRules()->hideHud == 0 && D_80142208_de.hudShown != 0) {
             if (hudRules()->teams != 0) {
                 if (player->owner->team != 0xFF) {
                     score = hudRules()->teamScores[player->owner->team];
@@ -261,10 +261,10 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
             player->alpha = 255.0f;
             if (player->scoreAnim != 0 && player->scoreState != 0) {
                 frames = 1;
-                if (D_801462C8.rules.teams != 0) {
-                    res = func_8028BEAC_de(&D_8011FE88, 0x204, 0, 1);
+                if (D_80142208_de.rules.teams != 0) {
+                    res = func_8028BEAC_de(&D_8011BDC8, 0x204, 0, 1);
                 } else {
-                    res = func_8028BEAC_de(&D_8011FE88, 0x1FA, 0, 1);
+                    res = func_8028BEAC_de(&D_8011BDC8, 0x1FA, 0, 1);
                 }
                 if (res != NULL) {
                     frames = (*res != NULL) ? **res : 1;
@@ -315,11 +315,11 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                     }
                     func_802A84F8_de();
                     func_802AAB68_de(1.0f, 1.0f);
-                    if (D_801462C8.rules.markers == 0) {
+                    if (D_80142208_de.rules.markers == 0) {
                         /* Names scroll right to left, each fading out from 0xFF in steps of 6. */
                         for (i = player->nameHead; i >= player->nameTail; i--) {
                             if (player->names[i] != NULL) {
-                                if (D_800E28D8 == 0 && D_80140FF8 == 1) {
+                                if (D_800DE888_de == 0 && D_80140FF8 == 1) {
                                     nameZoom = 0.75f;
                                     indent = 0xF;
                                 } else {
@@ -375,7 +375,7 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 player->countAnim = 1;
                 if (player->countState != 0) {
                     n = 1;
-                    res = func_8028BEAC_de(&D_8011FE88, 0x1FD, 0, 1);
+                    res = func_8028BEAC_de(&D_8011BDC8, 0x1FD, 0, 1);
                     if (res != NULL) {
                         if (*res != NULL) {
                             n = **res;
@@ -420,7 +420,7 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
                 player->squadAnim = 1;
                 if (player->squadState != 0) {
                     frames = 1;
-                    res = func_8028BEAC_de(&D_8011FE88, 0x201, 0, 1);
+                    res = func_8028BEAC_de(&D_8011BDC8, 0x201, 0, 1);
                     if (res != NULL) {
                         if (*res != NULL) {
                             frames = **res;
@@ -539,7 +539,7 @@ void func_8021EEFC_de(Shared_HudPlayer *player, Shared_HudView *view) {
             func_802A9234_de(0xFF);
             func_802AAC28_de(0x20A, level, x + scaleX * 10.0f, y - scaleY * 140.0f, scaleX, scaleY, 1);
         }
-        if (player->weapon == 0xC && player->kind != D_800CE47C) {
+        if (player->weapon == 0xC && player->kind != D_800C922C) {
             ammo = 3 - func_80283228_de(&D_8011D8D0, player);
             if (player->ammo < ammo) {
                 ammo = player->ammo;
@@ -605,9 +605,9 @@ void func_80220A80_de(Player_func_80220A80_de *player, Body_func_80220A80_de *bo
     func_8021D774_de(player);
 }
 /* Regenerates a player's health at 0x5E4 toward the cap from func_8022AC00_de: under flag 4 at 0x122C it adds D_800D2988 times gFastRegen's rate and mirrors the result to 0x174 and 0x45C, otherwise, while the flag byte at D_801462E5 is set, the speed at 0x18's 0x24 meets D_800C78B8's threshold, the health is nonzero and the word 0x60F past that flag byte does not hold it back, it adds the speed scaled by D_800C78BC, D_800D2988 and D_800C78C0's rate. */
-extern f32 D_800D2988;
+extern f32 D_800CD738;
 extern struct D_800C7470_Pair D_800C27C0_de;
-extern struct D_800C7470_Pair D_800C78C0;
+extern struct D_800C7470_Pair D_800C27D0_de;
 extern MultiplayerOptions D_801462E5;
 extern s32 func_8022AC00_de(SharedPlayer_func_80220D44_de *p);
 void func_80220D44_de(SharedPlayer_func_80220D44_de *p) {
@@ -619,7 +619,7 @@ void func_80220D44_de(SharedPlayer_func_80220D44_de *p) {
     MultiplayerOptions *regen;
     if ((p->views122C.view122C_1.flags & 4) && p->views5E4.view5E4_2.health > 0) {
         cap = func_8022AC00_de(p);
-        f20 = p->views5E4.view5E4_2.health + D_800D2988 * D_800C27C0_de.second;
+        f20 = p->views5E4.view5E4_2.health + D_800CD738 * D_800C27C0_de.second;
         f0 = cap;
         if (!(f0 <= f20)) {
             f0 = f20;
@@ -631,10 +631,10 @@ void func_80220D44_de(SharedPlayer_func_80220D44_de *p) {
     regen = &D_801462E5;
     f20 = p->views18.view18_3.body->speed;
     if (regen->enabled == 0) return;
-    if (f20 < D_800C78B8) return;
+    if (f20 < D_800C27C8_de) return;
     cur = p->views5E4.view5E4_2.health;
     if (cur == 0.0f) return;
     if (p->views5D8.view5D8_4.ctrl->flag != 0 && ((SessionState *)&regen->session)->paused != 0) return;
-    f20 = cur + (s32)(f20 * D_800C78BC) * (D_800D2988 * D_800C78C0.first);
+    f20 = cur + (s32)(f20 * D_800C27CC_de) * (D_800CD738 * D_800C27D0_de.first);
     p->views5E4.view5E4_2.health = RW_MIN_LT(f20, func_8022AC00_de(p));
 }

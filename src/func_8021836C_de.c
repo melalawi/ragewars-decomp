@@ -45,7 +45,7 @@ void func_8021836C_de(char *arg0) {
     }
 }
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern void func_802A9234_de(s32);
 extern void func_80217928_de(s32 arg0, s32 arg1, s32 arg2);
 
@@ -53,7 +53,7 @@ void func_802183E8_de(s32 arg0, s32 arg1, s32 arg2) {
     Gfx *cmd;
 
     func_802A9234_de(0xFF);
-    gDPSetTextureFilter(D_80110634++, G_TF_BILERP);
+    gDPSetTextureFilter(D_8010C574++, G_TF_BILERP);
     func_80217928_de(arg0, arg1, arg2);
 }
 
@@ -61,7 +61,7 @@ void func_802183E8_de(s32 arg0, s32 arg1, s32 arg2) {
 void func_80218464_de(void) {
 }
 
-extern float D_800D2988;
+extern float D_800CD738;
 
 
 
@@ -75,7 +75,7 @@ s32 func_8021846C_de(void *arg0, void *arg1) {
 
     temp_f1 = ((ResetTimerStorage *)(arg0))->unk4;
     if (temp_f1 > 0.0f) {
-        ((ResetTimerStorage *)(arg0))->unk4 = temp_f1 - D_800D2988;
+        ((ResetTimerStorage *)(arg0))->unk4 = temp_f1 - D_800CD738;
         return 0;
     }
     if (((ResetFlagsStorage *)((((ResetOwnerStorage *)(arg1))->unk698)))->unkB0 & 0x8000) {
@@ -88,7 +88,7 @@ s32 func_8021846C_de(void *arg0, void *arg1) {
 extern void func_80274020_de(f32 *arg0);
 
 
-extern float D_800D2988;
+extern float D_800CD738;
 
 f32 func_802184C0_de(f32 arg0, f32 arg1, s32 arg2, f32 arg3) {
     f32 f0;
@@ -106,7 +106,7 @@ f32 func_802184C0_de(f32 arg0, f32 arg1, s32 arg2, f32 arg3) {
         arg1 -= D_800C2254_de;
     }
     f3 = arg1 - arg0;
-    f1 = f3 * arg3 * D_800D2988;
+    f1 = f3 * arg3 * D_800CD738;
     f2 = f1;
     if (f1 < 0.0f) {
         f2 = -f1;

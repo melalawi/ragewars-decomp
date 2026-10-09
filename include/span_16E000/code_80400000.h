@@ -272,7 +272,7 @@ struct State_func_804039C4_de {
 };
 
 /* unbake published declaration: published_dc5c82153b2a70f58d98ad3c */
-extern f32 D_800E0B60[];
+extern f32 D_800DCB30[];
 
 struct Record_func_80402FB4_de;
 /* unbake published declaration: published_fb09ffa8961d4097a8da2716 */

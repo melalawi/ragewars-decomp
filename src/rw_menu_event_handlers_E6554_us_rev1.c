@@ -11,7 +11,7 @@ extern s32 func_804396F0_de(void *, s32, s32, s32, s32);
  * at stride12 with five o32 arguments and a signed result. Callback
  * relocations omit KSEG0 bias. This object is the complete table.
  * Unnamed callback entry rows remain in original extraction. */
-ResidentEventHandlerEntry D_800E5954[7] = {
+ResidentEventHandlerEntry D_800E1904[7] = {
     {3592, 24, (ResidentEventHandler)((char *)func_80439628_de - 0x80000000U)},
     {3590, 24, (ResidentEventHandler)((char *)func_804396C0_us_rev1 - 0x80000000U)},
     {3587, 24, (ResidentEventHandler)((char *)func_804395F8_de - 0x80000000U)},

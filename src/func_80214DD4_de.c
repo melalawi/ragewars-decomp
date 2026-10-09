@@ -3,7 +3,7 @@
 #include "types.h"
 #include "math_helpers.h"
 extern s32 D_8011CD20;
-extern s32 D_8013B290;
+extern s32 D_801371D0;
 extern s32 func_80214624_de(Actor_func_80214DD4_de *arg0, Tracker *arg1, Actor_func_80214DD4_de *target);
 extern Actor_func_80214DD4_de *func_802149C0_de(Actor_func_80214DD4_de *arg0, Tracker *arg1, s32 arg2, s32 arg3);
 extern f32 func_80215868_de(Actor_func_80214DD4_de *arg0, Vec3 pos, Actor_func_80214DD4_de *target, f32 arg3);
@@ -83,7 +83,7 @@ void func_80214DD4_de(Actor_func_80214DD4_de *arg0, Tracker *arg1, s32 boost, Tr
             kind = 5;
         } else if (target->id == 0x64F) {
             kind = 7;
-        } else if (D_8013B290 != 0) {
+        } else if (D_801371D0 != 0) {
             kind = 0;
         } else if (((target->flags100 & 0x300000) && target->controller->owner == arg0 &&
                     target->controller->state == 2) ||

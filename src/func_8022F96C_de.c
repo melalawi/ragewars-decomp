@@ -133,9 +133,9 @@ extern s32 func_80214178_de(void *, void *, s32);
 
 
 
-extern WeaponActionRecord D_800CE8DC[];
-extern void *D_800D052C[];
-extern f32 D_800D2988;
+extern WeaponActionRecord D_800C9698[];
+extern void *D_800CB2EC[];
+extern f32 D_800CD738;
 
 
 
@@ -157,31 +157,31 @@ void func_8022FC20_de(void *arg0, void *arg1) {
 
     actor = ((ObjectLinks1DC_2 *)(arg0))->unk_1D8;
     index = ((ObjectState1230 *)(actor))->unk_650;
-    value = D_800CE8DC[index].action;
+    value = D_800C9698[index].action;
 
     if (0.0f < ((ObjectState1230 *)(actor))->unk_11D8) {
         return;
     }
 
-    old_delta = D_800D2988;
+    old_delta = D_800CD738;
     scaled_delta = old_delta * D_800C2E90_de;
     if (actor != 0 && (((ObjectState1230 *)(actor))->unk_122C & 0x2000)) {
-        D_800D2988 = scaled_delta;
+        D_800CD738 = scaled_delta;
     } else {
-        D_800D2988 = old_delta;
+        D_800CD738 = old_delta;
     }
 
     timer = ((ObjectLinks14C *)(arg1))->unk_148;
     zero = 0.0f;
     if (zero < timer) {
-        ((ObjectLinks14C *)(arg1))->unk_148 = timer - D_800D2988;
+        ((ObjectLinks14C *)(arg1))->unk_148 = timer - D_800CD738;
         ((ObjectLinks1DC_2 *)(arg0))->unk_1 = 0;
     } else {
         ((ObjectLinks1DC_2 *)(arg0))->unk_1 = 0;
     }
 
     if (zero < ((ObjectLinks14C *)(arg1))->unk_130) {
-        ((ObjectLinks14C *)(arg1))->unk_130 -= D_800D2988;
+        ((ObjectLinks14C *)(arg1))->unk_130 -= D_800CD738;
     }
 
     if (value == 1) {
@@ -200,10 +200,10 @@ void func_8022FC20_de(void *arg0, void *arg1) {
         }
     }
 
-    callback = ((struct CallbackState60 *) ((char *) D_800D052C[((ObjectState1230 *) actor)->unk_62E]))->callback;
+    callback = ((struct CallbackState60 *) ((char *) D_800CB2EC[((ObjectState1230 *) actor)->unk_62E]))->callback;
     if (callback != 0) {
         callback(arg0, arg1);
     }
     func_8022BC14_de(actor);
-    D_800D2988 = old_delta;
+    D_800CD738 = old_delta;
 }

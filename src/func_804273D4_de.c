@@ -55,7 +55,7 @@
    and disables the object with func_8040E8D8_de, and does the same for the third identifier unless it
    is -1. The identifiers are passed as their low halfword, and the loop walks a manual byte offset
    so the table address is not hoisted. */
-extern struct Pair D_800E4A84[];
+extern struct Pair D_800E0A34[];
 void func_804273D4_de(void) {
     s32 missing;
     s32 offset;
@@ -64,10 +64,10 @@ void func_804273D4_de(void) {
     missing = -1;
     offset = i;
 loop:
-    func_8040E8D8_de(func_8040EC30_de(D_800E4690->root, ((struct Pair *)((u8 *)D_800E4A84 + (offset)))->a & 0xFFFF), 0);
-    func_8040E8D8_de(func_8040EC30_de(D_800E4690->root, ((struct Pair *)((u8 *)D_800E4A84 + (offset)))->b & 0xFFFF), 0);
-    if (((struct Pair *)((u8 *)D_800E4A84 + (offset)))->c.id != missing) {
-        func_8040E8D8_de(func_8040EC30_de(D_800E4690->root, ((struct Pair *)((u8 *)D_800E4A84 + (offset)))->c.half.low), 0);
+    func_8040E8D8_de(func_8040EC30_de(D_800E0640_de->root, ((struct Pair *)((u8 *)D_800E0A34 + (offset)))->a & 0xFFFF), 0);
+    func_8040E8D8_de(func_8040EC30_de(D_800E0640_de->root, ((struct Pair *)((u8 *)D_800E0A34 + (offset)))->b & 0xFFFF), 0);
+    if (((struct Pair *)((u8 *)D_800E0A34 + (offset)))->c.id != missing) {
+        func_8040E8D8_de(func_8040EC30_de(D_800E0640_de->root, ((struct Pair *)((u8 *)D_800E0A34 + (offset)))->c.half.low), 0);
     }
     i += 1;
     offset += 0xC;

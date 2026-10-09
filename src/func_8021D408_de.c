@@ -1,5 +1,5 @@
 #include "types.h"
-/* Builds a player's aiming marker matrices for the current view D_800D297C and turns the marker on at
+/* Builds a player's aiming marker matrices for the current view D_800CD72C and turns the marker on at
    0x1214: a beam from the eye (the view position at 0x128, or func_8022B144_de without a view) toward the
    target point, pitched straight up or down when nearly vertical, is stored in the table at 0x1480; the
    laser from the weapon muzzle at 0x260 to the aim point at 0x1464 (lowered by the view's height above
@@ -18,7 +18,7 @@ static inline f32 aimAbs(f32 value) { return value < 0.0f ? -value : value; }
 
 
 extern f32 D_800C9F70_de;
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 extern void func_8022B144_de(SharedPlayer_func_8021D408_de *, Vec3 *);
 extern void func_80271F68_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_8027207C_de(Vec3 *);
@@ -69,7 +69,7 @@ void func_8021D408_de(SharedPlayer_func_8021D408_de *player, Vec3 *target, Vec3 
     func_80273448_de(&matrix, eye);
     func_802733B4_de(&matrix, 0.0f, 0.0f, D_800C9F70_de);
     func_8027347C_de(&matrix, 0.05f, 1.0f, D_800C9F70_de - func_802726F8_de(&eye, &to));
-    func_8027027C_de(&matrix, &player->views1480.view1480_1.beams[D_800D297C]);
+    func_8027027C_de(&matrix, &player->views1480.view1480_1.beams[D_800CD72C]);
 
     aim = player->views1464.view1464_1.aim;
     if (player->views5DC.view5DC_2.view != 0) {
@@ -85,7 +85,7 @@ void func_8021D408_de(SharedPlayer_func_8021D408_de *player, Vec3 *target, Vec3 
     func_80273448_de(&matrix, player->views1C.view260_26.muzzle);
     scale = 1.0f;
     func_8027347C_de(&matrix, scale, scale, -func_802726F8_de(&origin, &player->views1464.view1464_1.aim));
-    func_8027027C_de(&matrix, &player->views1500.view1500_1.lasers[D_800D297C]);
+    func_8027027C_de(&matrix, &player->views1500.view1500_1.lasers[D_800CD72C]);
 
     if (normal != 0) {
         lift = *normal;
@@ -97,7 +97,7 @@ void func_8021D408_de(SharedPlayer_func_8021D408_de *player, Vec3 *target, Vec3 
         func_80271F34_de(&eye, &eye, &lift);
         func_80273448_de(&matrix, to);
         func_8027347C_de(&matrix, 1.536f, scale, 1.536f);
-        func_8027027C_de(&matrix, &player->views1580.view1580_1.dots[D_800D297C]);
+        func_8027027C_de(&matrix, &player->views1580.view1580_1.dots[D_800CD72C]);
     }
     player->views5E8.view1214_155.marker = 1;
 }

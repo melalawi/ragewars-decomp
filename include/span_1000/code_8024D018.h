@@ -57,7 +57,7 @@ struct func_8024DD48_S1;
 typedef struct func_8024DD48_S1 func_8024DD48_S1;
 
 /* unbake published declaration: published_825516c39e2d609ef8336e49 */
-extern float D_800C8CA0;
+extern float D_800C3BB0_de;
 
 struct func_8024DEF8_S1;
 /* unbake published declaration: published_8f04c81cb273b94b6e9ad999 */

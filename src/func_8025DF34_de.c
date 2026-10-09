@@ -6,7 +6,7 @@
 
 
 
-extern s32 D_8010C080;
+extern s32 D_80108080;
 
 extern s32 func_80258D10_de(void *arg0);
 extern void func_80258D08_de(void *arg0, s32 arg1);
@@ -26,10 +26,10 @@ s32 func_8025DF34_de(s32 arg0) {
         vec.z = zero;
         vec.y = zero;
         vec.x = zero;
-        temp_s1 = func_80258D10_de(&D_8010C080);
-        func_80258D08_de(&D_8010C080, 1);
-        temp_s0 = func_80257DD4_de(&D_8010C080, (s16)arg0, vec, 0, -1);
-        func_80258D08_de(&D_8010C080, temp_s1);
+        temp_s1 = func_80258D10_de(&D_80108080);
+        func_80258D08_de(&D_80108080, 1);
+        temp_s0 = func_80257DD4_de(&D_80108080, (s16)arg0, vec, 0, -1);
+        func_80258D08_de(&D_80108080, temp_s1);
     }
     return temp_s0;
 }

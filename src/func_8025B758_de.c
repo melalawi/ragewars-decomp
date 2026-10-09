@@ -2,7 +2,7 @@
 #include "span_1000/code_8025A3EC.h"
 #include "types.h"
 
-extern char D_800C9068;
+extern char D_800C3F78_de;
 
 
 extern s16 D_80107FA0[];
@@ -28,7 +28,7 @@ void func_8025B758_de(s32 *arg0, s32 arg1) {
     s32 one;
 
     i = 0;
-    k1 = ((func_802077F4_S2 *)(&D_800C9068))->unk4;
+    k1 = ((func_802077F4_S2 *)(&D_800C3F78_de))->unk4;
     k2 = D_800C3F80_de;
     *arg0 = arg1;
     do {

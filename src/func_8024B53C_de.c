@@ -14,7 +14,7 @@ extern s32 func_8027254C_de(f32 *arg0, f32 arg1);
 extern void func_80273448_de(char *, f32, f32, f32);
 extern void func_80273D6C_de(void *);
 
-extern f32 D_80115DEC;
+extern f32 D_80111D2C;
 
 void func_8024B53C_de(void *arg0) {
     Vector4f trig;
@@ -40,7 +40,7 @@ void func_8024B53C_de(void *arg0) {
     trig.y = sine;
     trig.z = 0.0f;
     angle = ((func_8024B52C_S1 *)(arg0))->unk6C * scale;
-    D_80115DEC = sine;
+    D_80111D2C = sine;
     trig.w = func_802B6560_de(angle);
 
     product_ptr = &product;
@@ -172,7 +172,7 @@ void func_8024B8C4_de(void *arg0) {
     (((struct IntegerState104 *) ((s8 *) arg0))->unk_B8) = temp_a1;
 }
 
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 extern void func_8024AA18_de(void *arg0, void *arg1, void *arg2);
 extern void func_8024C454_de(void *arg0, void *arg1);
 extern void func_8026DA4C_de();
@@ -192,7 +192,7 @@ void func_8024B8EC_de(void *arg0, void *arg1, void *arg2) {
             func_8026DA4C_de(((func_8024B8DC_S2 *)(arg2))->unkC,
                           ((func_8024B8DC_S1 *)(arg0))->unkB4, one,
                           (char *)arg0
-                              + ((((D_800D297C << one) + D_800D297C) << 3)
+                              + ((((D_800CD72C << one) + D_800CD72C) << 3)
                                  + 0x140),
                           0, ((func_8024B8DC_S1 *)(arg0))->unk3);
             func_8024C454_de(arg0, arg2);
@@ -200,7 +200,7 @@ void func_8024B8EC_de(void *arg0, void *arg1, void *arg2) {
     }
 }
 
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 extern void func_8024AA18_de(void *arg0, void *arg1, void *arg2);
 extern void func_8024C454_de(void *arg0, void *arg1);
 extern void func_8026DA4C_de();
@@ -209,7 +209,7 @@ void func_8024B990_de(void *arg0, void *arg1, void *arg2, Block24 *arg3) {
     s8 index;
     s32 one;
 
-    ((Object_func_8024B990_de *)arg0)->blocks[D_800D297C] = *arg3;
+    ((Object_func_8024B990_de *)arg0)->blocks[D_800CD72C] = *arg3;
     index = ((func_8024B8DC_S1 *)(arg0))->unk1;
     if (index != -1) {
         ((func_8024B8DC_S1 *)(arg0))->unk17C = 1 << index;
@@ -221,7 +221,7 @@ void func_8024B990_de(void *arg0, void *arg1, void *arg2, Block24 *arg3) {
             func_8026DA4C_de(((func_8024B8DC_S2 *)(arg2))->unkC,
                           ((func_8024B8DC_S1 *)(arg0))->unkB4, one,
                           (char *)arg0
-                              + ((((D_800D297C << one) + D_800D297C) << 3)
+                              + ((((D_800CD72C << one) + D_800CD72C) << 3)
                                  + 0x140),
                           0, ((func_8024B8DC_S1 *)(arg0))->unk3);
             func_8024C454_de(arg0, arg2);

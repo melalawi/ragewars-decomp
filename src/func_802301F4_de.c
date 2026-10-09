@@ -9,7 +9,7 @@
 #include "common/types_1dc8418c21db.h"
 /* func_802301E4_S* are unresolved canonical player/actor/control/attack types. */
 
-extern Record_func_80433914_de D_80102B00[];
+extern Record_func_80433914_de D_800FEB00[];
 
 
 extern s32 D_800D30BC;
@@ -17,8 +17,8 @@ extern s32 D_800D30BC;
 
 
 
-extern char D_80145040;
-extern char D_80145088;
+extern char D_80140F80;
+extern char D_80140FC8;
 extern s32 func_80230058_de(void *, void *);
 extern s32 func_8022F55C_de(void *, s16);
 extern s32 func_8025DF34_de(s32);
@@ -82,14 +82,14 @@ static inline s32 can_fire(char *player) {
     if (((AttackTriggerPlayer *)(player))->unk1450 != 0) {
         return 1;
     }
-    if (D_801462D5 != 1) {
+    if (D_80142215 != 1) {
         return 1;
     }
-    ammo = func_8022F55C_de(&D_80102B00[((AttackTriggerPlayer *)(player))->unk5D4], ((AttackTriggerPlayer *)(player))->unk62E);
+    ammo = func_8022F55C_de(&D_800FEB00[((AttackTriggerPlayer *)(player))->unk5D4], ((AttackTriggerPlayer *)(player))->unk62E);
     if (ammo == 0) {
         func_8025DF34_de(0xD4D);
         if (((AttackTriggerPlayer *)(player))->unk5DC != 0) {
-            func_80239908_de(&D_80145088, ((AttackTriggerPlayer *)(player))->unk5DC, D_800D30BC, func_8022A5A0_de(&D_80145040, player),
+            func_80239908_de(&D_80140FC8, ((AttackTriggerPlayer *)(player))->unk5DC, D_800D30BC, func_8022A5A0_de(&D_80140F80, player),
                           D_800C2EE4_de);
         }
     }

@@ -8,7 +8,7 @@
 
 extern float D_800C49D8_de[];
 
-extern float D_80115DEC;
+extern float D_80111D2C;
 extern void func_802750B0_de(Vec3 *);
 extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
 extern void func_80271F9C_de(Vec3 *, Vec3 *, float);
@@ -47,7 +47,7 @@ Vector4f *func_80275688_de(Vector4f *out) {
         result.x = axis.x * scale;
         result.y = axis.y * scale;
         result.z = axis.z * scale;
-        D_80115DEC = scale;
+        D_80111D2C = scale;
         result.w = func_802B6560_de(angle);
     }
     *out = result;

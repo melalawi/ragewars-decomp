@@ -8,9 +8,9 @@
 
 
 
-extern void *D_800D052C[];
-extern Gfx *D_80110634;
-extern s32 D_8011FAC0;
+extern void *D_800CB2EC[];
+extern Gfx *D_8010C574;
+extern s32 D_8011BA00;
 
 
 
@@ -38,11 +38,11 @@ void func_8021CBD0_de(void *arg0, void *arg1) {
 
     if ((((func_8021CBAC_S1 *)(arg0))->unk62E != -1) &&
         (((func_8021CBAC_S1 *)(arg0))->unk5EA != 0)) {
-        gDPSetTextureFilter(D_80110634++, G_TF_BILERP);
-        gDPSetTexturePersp(D_80110634++, G_TP_PERSP);
+        gDPSetTextureFilter(D_8010C574++, G_TF_BILERP);
+        gDPSetTexturePersp(D_8010C574++, G_TP_PERSP);
         func_8026D8F8_de();
 
-        entry = D_800D052C[((func_8021CBAC_S1 *)(arg0))->unk62E];
+        entry = D_800CB2EC[((func_8021CBAC_S1 *)(arg0))->unk62E];
         rect = &((func_8021CBAC_S2 *)(arg1))->unk29C;
         x = rect[0];
         y = rect[1];
@@ -50,14 +50,14 @@ void func_8021CBD0_de(void *arg0, void *arg1) {
         right = ((func_8021CBAC_S3 *)(entry))->unk4C * x + rect[2];
         top = ((func_8021CBAC_S3 *)(entry))->unk48 * y + rect[3];
         bottom = ((func_8021CBAC_S3 *)(entry))->unk50 * y + rect[3];
-        func_80291BE8_de(&D_8011FAC0, (s32)left, (s32)right, (s32)top,
+        func_80291BE8_de(&D_8011BA00, (s32)left, (s32)right, (s32)top,
                       (s32)bottom, ((func_8021CBAC_S2 *)(arg1))->unk120);
 
-        gSPGeometryMode(D_80110634++, 0, G_FOG);
-        gSPMoveWord(D_80110634++, G_MW_CLIP, 4, 1);
-        gSPMoveWord(D_80110634++, G_MW_CLIP, 12, 1);
-        gSPMoveWord(D_80110634++, G_MW_CLIP, 20, 0xFFFF);
-        gSPMoveWord(D_80110634++, G_MW_CLIP, 28, 0xFFFF);
+        gSPGeometryMode(D_8010C574++, 0, G_FOG);
+        gSPMoveWord(D_8010C574++, G_MW_CLIP, 4, 1);
+        gSPMoveWord(D_8010C574++, G_MW_CLIP, 12, 1);
+        gSPMoveWord(D_8010C574++, G_MW_CLIP, 20, 0xFFFF);
+        gSPMoveWord(D_8010C574++, G_MW_CLIP, 28, 0xFFFF);
         func_8026D980_de();
         func_80249E28_de(&((func_8021CBAC_S1 *)(arg0))->unk2E8, arg1);
         func_8026D9D0_de();

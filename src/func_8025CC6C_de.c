@@ -1,11 +1,11 @@
 #include "span_1000/code_8025C544.h"
 #include "types.h"
 
-extern s32 D_8011F260;
+extern s32 D_8011B1A0;
 
 /** Return the address of the global state word at D_8011F260. */
 s32 *func_8025CC6C_de(void) {
-    return &D_8011F260;
+    return &D_8011B1A0;
 }
 
 /** Deliberately perform no work. */

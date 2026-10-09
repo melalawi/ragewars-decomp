@@ -4,8 +4,8 @@
 extern s32 func_8028B21C_de(void *arg0, s32 arg1);
 extern s32 func_8028C198_de(void *arg0, s32 arg1);
 extern void func_8026DF30_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4);
-extern s32 D_8011FE88;
-extern char D_800D0EF8;
+extern s32 D_8011BDC8;
+extern char D_800CBCA8;
 
 
 
@@ -14,12 +14,12 @@ void func_8022B484_de(char *arg0) {
     s32 index;
 
     if (((func_8022B474_S1 *)(arg0))->unk120C != 0) {
-        index = func_8028B21C_de(&D_8011FE88, 0xC84);
+        index = func_8028B21C_de(&D_8011BDC8, 0xC84);
     } else {
-        index = func_8028B21C_de(&D_8011FE88, 0xC85);
+        index = func_8028B21C_de(&D_8011BDC8, 0xC85);
     }
     if (index != -1) {
-        func_8026DF30_de(func_8028C198_de(&D_8011FE88, index),
-                      (s32)((char *)arg0 + 0x1600), (s32)&D_800D0EF8, 0, -1);
+        func_8026DF30_de(func_8028C198_de(&D_8011BDC8, index),
+                      (s32)((char *)arg0 + 0x1600), (s32)&D_800CBCA8, 0, -1);
     }
 }

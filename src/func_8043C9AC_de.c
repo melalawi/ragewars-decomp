@@ -12,9 +12,9 @@
 
 
 
-extern Triple_func_802683E0_de D_800E5CA0;
+extern Triple_func_802683E0_de D_800E1C50;
 
-extern s32 D_800E28D0;
+extern s32 D_800DE880_de;
 extern s32 D_800E1E20;
 
 extern func_802077F4_S2 *func_80442DDC_de(void *, s32);
@@ -29,11 +29,11 @@ void func_8043C9AC_de(void *menu, Item_func_8043C9AC_de *item, void *arg2, Style
     s32 x;
     unsigned int bits;
 
-    if (D_800E5CA0.y <= (6.0f)) {
-        width = func_80442DDC_de(menu, 0)->unk4 * (f32)D_800E28D0 * (0.0035211266949772835f);
-        x = (f32)item->x + (f32)D_800E5CA0.x * width;
+    if (D_800E1C50.y <= (6.0f)) {
+        width = func_80442DDC_de(menu, 0)->unk4 * (f32)D_800DE880_de * (0.0035211266949772835f);
+        x = (f32)item->x + (f32)D_800E1C50.x * width;
         D_800E1E20 = -1;
-        alpha = style->alpha * (style->fade * D_800E227C);
+        alpha = style->alpha * (style->fade * D_800DE24C_de);
         func_802AA9F4_de();
         func_802A7DE4_de(x, item->y, (f32)x + width, item->y + 2, 0, 0, 0xFF, 0xFF, 0xFF,
                       (u8)(bits = !((2147483648.0f) <= alpha) ? (s32)alpha : (bits = (s32)(alpha - (2147483648.0f))) | 0x80000000));

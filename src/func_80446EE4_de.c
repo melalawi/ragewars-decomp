@@ -9,14 +9,14 @@
 
 
 
-extern char D_80154110;
+extern char D_8014DE80;
 
 void func_80446EE4_de(s32 channel, Entry_func_8023B9C0_eu *data) {
     u8 *ptr;
     __OSContRequesFormatShort requestformat;
     s32 i;
 
-    ptr = (u8 *)&D_80154110;
+    ptr = (u8 *)&D_8014DE80;
     for (i = 0; i < channel; i++) {
         ptr++;
     }

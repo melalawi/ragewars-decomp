@@ -3,8 +3,8 @@
 #include "span_16E000/code_8043DF84.h"
 /* Clears eight player active flags, then marks the first settings slot whose controller profile is active. */
 extern StatusStep D_80142622[];
-extern PlayerSettings D_80146398[];
-extern ControllerProfile D_8010F328[];
+extern PlayerSettings D_801422D8[];
+extern ControllerProfile D_8010B328[];
 extern s32 func_8026437C_de(ControllerProfile *);
 void func_8043DFC8_de(void) {
     StatusStep *status;
@@ -19,9 +19,9 @@ void func_8043DFC8_de(void) {
     }
     i = 0;
     active = 1;
-    settings = D_80146398;
+    settings = D_801422D8;
     for (; i < 4; i++) {
-        if (func_8026437C_de(&D_8010F328[i]) != 0) {
+        if (func_8026437C_de(&D_8010B328[i]) != 0) {
             settings[i].active = active;
             settings[i].selected = i;
             break;

@@ -9,8 +9,8 @@
 
 
 
-extern u8 D_8014D4B0;
-extern OSPifRam D_80154110;
+extern u8 D_80147220;
+extern OSPifRam D_8014DE80;
 
 void func_80446E58_de(int channel)
 {
@@ -19,9 +19,9 @@ void func_80446E58_de(int channel)
     __OSContRequesFormatShort requestformat;
     int i;
 
-    D_8014D4B0 = 0;
-    base = (u8 *)&D_80154110;
-    D_80154110.pifstatus = 1;
+    D_80147220 = 0;
+    base = (u8 *)&D_8014DE80;
+    D_8014DE80.pifstatus = 1;
     ptr = base;
 
     requestformat.txsize = 1;

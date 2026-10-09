@@ -5,7 +5,7 @@
 
 
 
-extern s32 D_8011FE88;
+extern s32 D_8011BDC8;
 extern void *func_8028CE78_de(void *object, int index);
 extern void func_80264DE0_de(unsigned int *record, unsigned int value);
 
@@ -25,7 +25,7 @@ void func_802858B0_de(void *arg0, void *arg1, Triple arg2,
         *arg7 = arg0;
     }
     func_80264DE0_de(&((func_80285880_S1 *)(arg0))->unk20,
-                  (unsigned int)func_8028CE78_de(&D_8011FE88, *(s16 *)arg1));
+                  (unsigned int)func_8028CE78_de(&D_8011BDC8, *(s16 *)arg1));
     func_80264DE0_de(&((func_80285880_S1 *)(arg0))->unk2C,
-                  (unsigned int)func_8028CE78_de(&D_8011FE88, ((func_8025E52C_S1 *)(arg1))->unk2));
+                  (unsigned int)func_8028CE78_de(&D_8011BDC8, ((func_8025E52C_S1 *)(arg1))->unk2));
 }

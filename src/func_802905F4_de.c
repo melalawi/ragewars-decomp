@@ -6,9 +6,9 @@
 
 
 
-extern s32 D_800D15E0;
+extern s32 D_800CC390;
 
-extern f32 D_800D15F0;
+extern f32 D_800CC3A0;
 
 
 
@@ -44,13 +44,13 @@ void func_802905F4_de(char *arg0, char *arg1) {
                 (((func_802905D4_S2 *)(arg1))->unk354 < ((func_802905D4_S3 *)(entry))->unk18C) &&
                 (func_80296B74_de(arg1 + 0x2F0, &((func_802905D4_S3 *)entry)->unk17C) != 0)) {
                 value = ((func_802905D4_S3 *)(entry))->unk1C8;
-                D_800D15E0 = 0;
+                D_800CC390 = 0;
                 if ((value > zero) && (value <= upper)) {
-                    D_800D15E0 = 1;
-                    D_800D15F0 = value * scale;
+                    D_800CC390 = 1;
+                    D_800CC3A0 = value * scale;
                 }
                 func_8024EB90_de(entry);
-                D_800D15E0 = 0;
+                D_800CC390 = 0;
             }
             entry = ((func_802905D4_S3 *)(entry))->unk1DC;
         } while (entry != 0);

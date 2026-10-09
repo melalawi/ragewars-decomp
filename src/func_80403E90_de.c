@@ -12,7 +12,7 @@
 
 
 extern OSPfs_func_80403E90_de D_8014D280[];
-extern PakDirectory *D_800E2854;
+extern PakDirectory *D_800DE804;
 
 extern s32 func_80446A20_de(OSPfs_func_80403E90_de *pfs, s32 file_no, NoteState *state);
 extern s32 func_80446C60_de(OSPfs_func_80403E90_de *pfs, s32 *free);
@@ -22,24 +22,24 @@ s32 func_80403E90_de(s32 ch) {
     s32 result;
     s32 free;
 
-    if (D_800E2854 != 0) {
+    if (D_800DE804 != 0) {
         for (i = 0; i < 16; i++) {
-            result = func_80446A20_de(&D_8014D280[ch], i, &D_800E2854[ch].notes[i]);
+            result = func_80446A20_de(&D_8014D280[ch], i, &D_800DE804[ch].notes[i]);
             if (result != 0 && result != 5) {
-                result = func_80446A20_de(&D_8014D280[ch], i, &D_800E2854[ch].notes[i]);
+                result = func_80446A20_de(&D_8014D280[ch], i, &D_800DE804[ch].notes[i]);
             }
             if (result == 5) {
-                D_800E2854[ch].notes[i].file_size = 0;
-                D_800E2854[ch].notes[i].game_code = 0;
-                D_800E2854[ch].notes[i].company_code = 0;
-                D_800E2854[ch].notes[i].ext_name[0] = 0;
-                D_800E2854[ch].notes[i].game_name[0] = 0;
+                D_800DE804[ch].notes[i].file_size = 0;
+                D_800DE804[ch].notes[i].game_code = 0;
+                D_800DE804[ch].notes[i].company_code = 0;
+                D_800DE804[ch].notes[i].ext_name[0] = 0;
+                D_800DE804[ch].notes[i].game_name[0] = 0;
             }
         }
     }
     result = func_80446C60_de(&D_8014D280[ch], &free);
     if (result == 0) {
-        D_800E2854[ch].free = free;
+        D_800DE804[ch].free = free;
     }
     return result;
 }

@@ -4,7 +4,7 @@
 
 extern f32 func_802B7130_de(f32 arg0);
 extern f32 func_802B6560_de(f32 arg0);
-extern f32 D_800C99F0;
+extern f32 D_800C4900_de;
 
 
 
@@ -18,7 +18,7 @@ void func_80273760_de(void *arg0, f32 arg1) {
 
     sin_v = func_802B7130_de(arg1);
     zero = (f32) 0;
-    one = D_800C99F0;
+    one = D_800C4900_de;
     ((func_80272848_S1 *)(m))->unk8 = zero;
     ((func_80272848_S1 *)(m))->unk20 = zero;
     ((func_80272848_S1 *)(m))->unk18 = zero;

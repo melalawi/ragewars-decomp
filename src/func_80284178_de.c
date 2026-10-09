@@ -4,7 +4,7 @@
 #include "types.h"
 
 extern s32 D_80140FF8[];
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 
 extern void func_80272898_de(void *, void *, Vec3 *);
 extern void func_8027DD48_de(void *, s32, s32, f32);
@@ -29,11 +29,11 @@ void func_80284178_de(void *arg0) {
             amount = -amount;
         }
         func_8027DD48_de(arg0,
-                      (s32)((char *)arg0 + ((D_800D297C << 6) + 0x60)),
+                      (s32)((char *)arg0 + ((D_800CD72C << 6) + 0x60)),
                       (s32)arg1, amount);
     } else {
         func_8027DD48_de(arg0,
-                      (s32)((char *)arg0 + ((D_800D297C << 6) + 0x60)),
+                      (s32)((char *)arg0 + ((D_800CD72C << 6) + 0x60)),
                       0, 0.0f);
     }
     ((func_8028414C_S2 *)(arg0))->unk5C |= 0x100000;

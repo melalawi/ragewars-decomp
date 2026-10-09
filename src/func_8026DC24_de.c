@@ -4,12 +4,12 @@
 
 
 
-extern s32 D_8011064C;
+extern s32 D_8010C58C;
 extern s32 D_8010C564;
-extern s32 D_80110640;
+extern s32 D_8010C580;
 extern s32 D_80111310;
 extern s32 D_80111318[];
-extern char D_801157D8;
+extern char D_80111718;
 extern void *func_8028FDB4_de(void *, s32);
 
 extern void func_80253670_de(s32, s32);
@@ -29,7 +29,7 @@ void func_8026DC24_de(void **a, s32 b, s32 c, void *d, s32 e, s32 f) {
     if (var_s0 == 0) {
         var_s0 = (s32)func_8028FDB4_de(temp_a0, 0);
     }
-    if ((D_8011064C != (s32)a) || (D_8010C564 != f) || (D_80110640 == 0x20)) {
+    if ((D_8010C58C != (s32)a) || (D_8010C564 != f) || (D_8010C580 == 0x20)) {
         func_8026BC60_de();
         if (D_80111310 != 0x100) {
             func_80253670_de(0, (s32)a);
@@ -41,14 +41,14 @@ void func_8026DC24_de(void **a, s32 b, s32 c, void *d, s32 e, s32 f) {
         }
     } else {
 block_7:
-        D_8011064C = (s32)a;
+        D_8010C58C = (s32)a;
         D_8010C564 = f;
-        queue_countp = &D_80110640;
+        queue_countp = &D_8010C580;
         temp_v0 = *queue_countp;
         temp_v1 = temp_v0 * 0x10;
         temp_v0 += 1;
         *queue_countp = temp_v0;
-        temp_v1_2 = temp_v1 + &D_801157D8;
+        temp_v1_2 = temp_v1 + &D_80111718;
         ((struct Measured_func_8026DC24_de_d3723d959b3b *)(temp_v1_2))->value = b;
         ((struct Measured_func_8026DC24_de_067abebdf932 *)(temp_v1_2))->value = c;
         ((struct Measured_func_8026DC24_de_034b69863103 *)(temp_v1_2))->value = d;

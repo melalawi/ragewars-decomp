@@ -7,7 +7,7 @@
 
 
 
-extern struct Table_func_804352C8_de *D_800E54A4;
+extern struct Table_func_804352C8_de *D_800E1454_de;
 
 
 s32 func_804352C8_de(s32 first, s32 second) {
@@ -18,9 +18,9 @@ s32 func_804352C8_de(s32 first, s32 second) {
     if (index >= 0) {
         taken = 1;
         result = taken;
-        D_800E54A4->slots[index].x = first;
-        D_800E54A4->slots[index].y = second;
-        D_800E54A4->slots[index].z = result;
+        D_800E1454_de->slots[index].x = first;
+        D_800E1454_de->slots[index].y = second;
+        D_800E1454_de->slots[index].z = result;
     }
     taken = result;
     return taken;

@@ -93,26 +93,26 @@ void func_8025AA2C_de(Emitter *emitter) {
         emitter->level += (0.0035000001080334187f);
     } else {
         current = emitter->level;
-        if (D_800C9044 < current) {
+        if (D_800C3F54_de < current) {
             level = current - (0.0035000001080334187f);
-            if (level < D_800C9044) {
-                level = D_800C9044;
+            if (level < D_800C3F54_de) {
+                level = D_800C3F54_de;
             }
             emitter->level = level;
-        } else if (current < D_800C9044) {
+        } else if (current < D_800C3F54_de) {
             level = current + (0.0035000001080334187f);
-            if (D_800C9044 < level) {
-                level = D_800C9044;
+            if (D_800C3F54_de < level) {
+                level = D_800C3F54_de;
             }
             emitter->level = level;
         }
         return;
     }
     level = emitter->level;
-    if (D_800C9048 < level) {
-        emitter->level = D_800C9048;
-    } else if (level < ((func_802077F4_S2 *)(&D_800C9048))->unk4) {
-        emitter->level = ((func_802077F4_S2 *)(&D_800C9048))->unk4;
+    if (D_800C3F58_de < level) {
+        emitter->level = D_800C3F58_de;
+    } else if (level < ((func_802077F4_S2 *)(&D_800C3F58_de))->unk4) {
+        emitter->level = ((func_802077F4_S2 *)(&D_800C3F58_de))->unk4;
     }
     emitter->lastDistance = emitter->distance;
 }

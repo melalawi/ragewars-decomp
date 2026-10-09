@@ -12,7 +12,7 @@
 
 
 
-extern char D_80145088;
+extern char D_80140FC8;
 
 
 extern s32 func_802395A4_de(void *, Triple *);
@@ -39,7 +39,7 @@ void func_8025AE1C_de(View_func_8025AE1C_de *view) {
     Slots *slots;
     s32 playing;
 
-    view->context->result = func_802395A4_de(&D_80145088, &view->position);
+    view->context->result = func_802395A4_de(&D_80140FC8, &view->position);
     playing = func_802B2620_de(selectChannel(view->context, view->slot));
     if (view->time <= D_800C3F68_de || ((view->flags & 4) && view->finished == 0)) {
         view->done = 1;

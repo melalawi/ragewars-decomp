@@ -5,7 +5,7 @@
  * 80413EE0 decodes them. 80412D94 converts between descriptors.
  * 80413608/80413634 read bit-depth metadata with stride52, and
  * 8041379C copies all13 words. The following event record stays raw. */
-ResidentPixelFormat D_800E2B20[36] = {
+ResidentPixelFormat D_800DEAD0[36] = {
     {0, 0, 0, 0, 0, {0x0U, 0x0U, 0x0U, 0x0U}, {-8, -8, -8, -8}},
     {1, 0, 16, 16, 16, {0xF800U, 0x7E0U, 0x1FU, 0x0U}, {8, 3, -3, -8}},
     {2, 0, 16, 16, 16, {0xF00U, 0xF0U, 0xFU, 0xF000U}, {4, 0, -4, 8}},

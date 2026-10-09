@@ -13,7 +13,7 @@ extern f32 func_80274A90_de(f32, f32);
 f32 func_80239D1C_de(struct Wave *wave) {
     switch (wave->kind) {
     case 1:
-        return func_802B7130_de(wave->phase * D_800C865C) * wave->amplitude;
+        return func_802B7130_de(wave->phase * D_800C356C_de) * wave->amplitude;
     case 0:
         return func_80274A90_de(-wave->amplitude, wave->amplitude);
     }

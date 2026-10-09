@@ -28,8 +28,8 @@ struct Shape_typemap_165 *func_80254600_de(s32 arg0, s32 arg1, s32 arg2) {
     u32 token2;
 
     token = func_802BCF30_de();
-    counter = D_8010515C + 1;
-    D_8010515C = counter;
+    counter = D_8010115C + 1;
+    D_8010115C = counter;
     if (counter != 1) {
         func_802BCF50_de(token);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -56,8 +56,8 @@ struct Shape_typemap_165 *func_80254600_de(s32 arg0, s32 arg1, s32 arg2) {
         }
     }
     token2 = func_802BCF30_de();
-    counter2 = D_8010515C - 1;
-    D_8010515C = counter2;
+    counter2 = D_8010115C - 1;
+    D_8010115C = counter2;
     if (counter2 != 0) {
         func_802BCF50_de(token2);
         func_802BB420_de(&D_80101140, 0, 1);

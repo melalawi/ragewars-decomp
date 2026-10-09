@@ -3,7 +3,7 @@
 #include "span_1000/code_8022A274.h"
 #include "types.h"
 
-extern char D_801468A0[];
+extern char D_801427E0[];
 
 
 
@@ -13,7 +13,7 @@ extern char D_801468A0[];
 
 
 void *func_8022A420_de(void *arg0) {
-    char *base = D_801468A0;
+    char *base = D_801427E0;
     void *record;
 
     if (((IntegerState6C *)(base))->unk_54 != 0 && ((IntegerState6C *)(base))->unk_68 != 0) {

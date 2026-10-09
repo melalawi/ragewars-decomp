@@ -30,7 +30,7 @@ enum { PAK_LIST_FIELD = 726 };
    70-byte name entries at 0x658 from the scroll position, and points item PAK_LIST_FIELD of the player's
    window at 0xC at the code at 0x3C of the entry under the cursor. */
 
-extern PakMenuController *D_800E54A4;
+extern PakMenuController *D_800E1454_de;
 extern MenuWidget *func_8040EC30_de(void *, s32);
 
 void func_80434250_de(s32 player, s32 direction) {
@@ -38,29 +38,29 @@ void func_80434250_de(s32 player, s32 direction) {
     s32 cursor;
 
     if (direction == 1) {
-        if (D_800E54A4->players[player].slot < 15) {
-            D_800E54A4->players[player].slot++;
-            if (D_800E54A4->players[player].slot >= D_800E54A4->players[player].scroll + 3) {
-                if (D_800E54A4->players[player].scroll + 3 < 15) {
-                    D_800E54A4->players[player].scroll++;
+        if (D_800E1454_de->players[player].slot < 15) {
+            D_800E1454_de->players[player].slot++;
+            if (D_800E1454_de->players[player].slot >= D_800E1454_de->players[player].scroll + 3) {
+                if (D_800E1454_de->players[player].scroll + 3 < 15) {
+                    D_800E1454_de->players[player].scroll++;
                 } else {
-                    D_800E54A4->players[player].scroll = 13;
+                    D_800E1454_de->players[player].scroll = 13;
                 }
             }
         }
-    } else if (D_800E54A4->players[player].slot > 0) {
-        D_800E54A4->players[player].slot--;
-        if (D_800E54A4->players[player].scroll > 0 &&
-            D_800E54A4->players[player].slot - D_800E54A4->players[player].scroll < 0) {
-            D_800E54A4->players[player].scroll--;
+    } else if (D_800E1454_de->players[player].slot > 0) {
+        D_800E1454_de->players[player].slot--;
+        if (D_800E1454_de->players[player].scroll > 0 &&
+            D_800E1454_de->players[player].slot - D_800E1454_de->players[player].scroll < 0) {
+            D_800E1454_de->players[player].scroll--;
         }
     }
     for (i = 0; i < 3; i++) {
-        D_800E54A4->players[player].labels[i]->alpha = 0xFF;
-        D_800E54A4->players[player].labels[i]->text =
-            D_800E54A4->players[player].displayNames[D_800E54A4->players[player].scroll + i].text;
+        D_800E1454_de->players[player].labels[i]->alpha = 0xFF;
+        D_800E1454_de->players[player].labels[i]->text =
+            D_800E1454_de->players[player].displayNames[D_800E1454_de->players[player].scroll + i].text;
     }
-    cursor = D_800E54A4->players[player].slot;
-    func_8040EC30_de(D_800E54A4->players[player].menuWidget, PAK_LIST_FIELD)->text =
-        D_800E54A4->players[player].displayNames[cursor].code;
+    cursor = D_800E1454_de->players[player].slot;
+    func_8040EC30_de(D_800E1454_de->players[player].menuWidget, PAK_LIST_FIELD)->text =
+        D_800E1454_de->players[player].displayNames[cursor].code;
 }

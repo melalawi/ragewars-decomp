@@ -13,10 +13,10 @@
 
 
 
-extern char D_80103FF0;
-extern char D_80104050;
-extern char D_80104070;
-extern char D_801040D0;
+extern char D_800FFFF0;
+extern char D_80100050;
+extern char D_80100070;
+extern char D_801000D0;
 extern s32 func_8024DEE0_de(Instance8020CD74 *);
 extern s32 func_8024DF5C_de(Instance8020CD74 *);
 extern s32 func_8024DFA0_de(Instance8020CD74 *);
@@ -32,18 +32,18 @@ s32 func_802462E8_de(Instance8020CD74 *arg0, Vec3 position, char **out) {
     s32 collisions;
 
     if (*(u8 *)arg0 == 1 && (((func_80203C40_S1 *)(arg0))->unk100 & 0x300000) != 0) {
-        set = &D_801040D0;
+        set = &D_801000D0;
     } else {
         grounded = func_8024DEE0_de(arg0);
         if (func_8024DF5C_de(arg0) == 0) {
-            set = &D_801040D0;
+            set = &D_801000D0;
             if (grounded != 0) {
-                set = &D_80104050;
+                set = &D_80100050;
             }
         } else if (func_8024DFA0_de(arg0) == 0) {
-            set = &D_80104070;
+            set = &D_80100070;
         } else {
-            set = &D_80103FF0;
+            set = &D_800FFFF0;
         }
     }
     if (out != 0) {

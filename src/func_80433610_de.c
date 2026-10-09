@@ -6,7 +6,7 @@
 
 /* Updates a player menu state from controller status, available saves, and the current menu phase. */
 
-extern PakMenuController *D_800E54A4;
+extern PakMenuController *D_800E1454_de;
 
 extern s32 func_80404F04_de(s32);
 extern s32 func_80404BE8_de(void *, s32, s32 *);
@@ -32,13 +32,13 @@ void func_80433610_de(s32 player)
       case -3:
 
       case -1:
-        D_800E54A4->players[player].state = 3;
+        D_800E1454_de->players[player].state = 3;
         break;
 
       case 0:
-        if (D_800E54A4->phase == 6)
+        if (D_800E1454_de->phase == 6)
       {
-        D_800E54A4->players[player].state = D_800E54A4->players[player].next;
+        D_800E1454_de->players[player].state = D_800E1454_de->players[player].next;
       }
       else
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
@@ -49,39 +49,39 @@ void func_80433610_de(s32 player)
       {
         if (func_80434638_de(player, result) == one)
         {
-          D_800E54A4->players[player].state = D_800E54A4->players[player].next;
-          switch (D_800E54A4->phase)
+          D_800E1454_de->players[player].state = D_800E1454_de->players[player].next;
+          switch (D_800E1454_de->phase)
           {
             case 0:
               if (func_80435128_de(player) == (-1))
             {
-              D_800E54A4->players[player].state = 24;
+              D_800E1454_de->players[player].state = 24;
             }
               break;
 
             case 7:
               if (func_80435184_de(player) == one)
             {
-              D_800E54A4->players[player].state = 15;
+              D_800E1454_de->players[player].state = 15;
             }
               break;
 
             case 2:
               if (func_80435184_de(player) == one)
             {
-              D_800E54A4->players[player].state = 25;
+              D_800E1454_de->players[player].state = 25;
             }
             else
-              if ((D_800E54A4->players[player].host == one) && (func_80435128_de(player) == (-1)))
+              if ((D_800E1454_de->players[player].host == one) && (func_80435128_de(player) == (-1)))
             {
-              D_800E54A4->players[player].state = 24;
+              D_800E1454_de->players[player].state = 24;
             }
               break;
 
             case 5:
               if (func_8043590C_de(player) == 0)
             {
-              D_800E54A4->players[player].state = 21;
+              D_800E1454_de->players[player].state = 21;
             }
               break;
 
@@ -91,7 +91,7 @@ void func_80433610_de(s32 player)
       }
       else
       {
-        switch (D_800E54A4->phase)
+        switch (D_800E1454_de->phase)
         {
           case 0:
 
@@ -99,22 +99,22 @@ void func_80433610_de(s32 player)
 
           case 7:
             random = func_802744D4_de();
-            D_800E54A4->players[player].state = 15;
-            D_800E54A4->players[player].profile = (random % 9999999) + 1;
+            D_800E1454_de->players[player].state = 15;
+            D_800E1454_de->players[player].profile = (random % 9999999) + 1;
             break;
 
           case 5:
-            D_800E54A4->players[player].state = 21;
+            D_800E1454_de->players[player].state = 21;
             break;
 
           case 4:
-            D_800E54A4->players[player].state = D_800E54A4->players[player].next;
+            D_800E1454_de->players[player].state = D_800E1454_de->players[player].next;
             break;
 
           case 2:
 
           case 3:
-            D_800E54A4->players[player].state = 25;
+            D_800E1454_de->players[player].state = 25;
             break;
 
         }
@@ -127,7 +127,7 @@ void func_80433610_de(s32 player)
       case -2:
 
       default:
-        D_800E54A4->players[player].state = one;
+        D_800E1454_de->players[player].state = one;
         break;
 
     }

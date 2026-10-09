@@ -4,8 +4,8 @@
 
 
 
-extern s32 D_800E28D0;
-extern s32 D_800E28D4;
+extern s32 D_800DE880_de;
+extern s32 D_800DE884_de;
 
 void func_802A7AA4_de(Mover *m) {
     s32 next;
@@ -14,8 +14,8 @@ void func_802A7AA4_de(Mover *m) {
     s32 bottom;
     s32 right;
 
-    bottom = D_800E28D4 + 0x60;
-    right = D_800E28D0 + 0x60;
+    bottom = D_800DE884_de + 0x60;
+    right = D_800DE880_de + 0x60;
     do {
         next = 0;
         switch (m->state) {

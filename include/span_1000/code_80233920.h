@@ -282,7 +282,7 @@ struct Race {
 extern float D_800C3098_de;
 
 /* unbake published declaration: published_952831d3803075d407c78a37 */
-extern float D_800C8610;
+extern float D_800C3520_de;
 
 struct func_8023912C_S2;
 /* unbake published declaration: published_9683d9cee3c5dc9a53874f92 */

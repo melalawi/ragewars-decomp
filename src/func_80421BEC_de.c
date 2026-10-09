@@ -10,8 +10,8 @@ void func_8029973C_de();                                  /* extern */
 void func_802A2360_de();                                  /* extern */
 void func_802A2394_de();                                  /* extern */
 s32 func_8041A470_de(void *);                          /* extern */
-extern s32 D_800E28E0;                          
-extern State_func_80421BEC_de *D_800E4450;                     
+extern s32 D_800DE890;                          
+extern State_func_80421BEC_de *D_800E0400;                     
 
 s32 func_80421BEC_de(void) {
     s32 temp_v0;
@@ -20,30 +20,30 @@ s32 func_80421BEC_de(void) {
     Cell_func_80421BEC_de *temp_a0;
     Cell_func_80421BEC_de *temp_v1;
 
-    if (D_800E28E0 >= 2) {
+    if (D_800DE890 >= 2) {
         func_802A2394_de();
         return 0;
     }
     func_802A2360_de();
-    temp_v0 = func_8041A470_de(D_800E4450->unk0);
+    temp_v0 = func_8041A470_de(D_800E0400->unk0);
     switch (temp_v0) {                              /* irregular */
     case 3:
-        temp_v0_2 = D_800E4450->unkC - 1;
-        D_800E4450->unkC = temp_v0_2;
+        temp_v0_2 = D_800E0400->unkC - 1;
+        D_800E0400->unkC = temp_v0_2;
         if (temp_v0_2 <= 0) {
-            temp_v1 = D_800E4450->unk8;
+            temp_v1 = D_800E0400->unk8;
             temp_v1->unk16 = (u16) (temp_v1->unk16 - 1);
-            temp_a0 = D_800E4450->unk8;
+            temp_a0 = D_800E0400->unk8;
             if (((s16) temp_a0->unk16 + temp_a0->unk1A) < 0) {
-                temp_a0->unk16 = (u16) D_800E4450->unk0->unk44->unk1A;
+                temp_a0->unk16 = (u16) D_800E0400->unk0->unk44->unk1A;
             }
-            D_800E4450->unkC = temp_v0;
+            D_800E0400->unkC = temp_v0;
         }
 block_12:
         return 0;
     case 4:
         func_8029973C_de();
-        var_a0 = D_800E4450->unk10;
+        var_a0 = D_800E0400->unk10;
         if (var_a0 == -1) {
             var_a0 = 3;
         }

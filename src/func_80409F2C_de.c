@@ -8,15 +8,15 @@
 
 
 
-extern s32 D_8015375C;
-extern s32 D_800E28C8;
+extern s32 D_8014D4CC;
+extern s32 D_800DE878;
 extern void func_80404E28_de(s32);
 
 void func_80409F2C_de(struct Record_func_80409BDC_de *record) {
     s32 value;
 
-    if (D_8015375C != 0) {
-        value = D_800E28C8;
+    if (D_8014D4CC != 0) {
+        value = D_800DE878;
     } else {
         value = record->inner->unk4;
     }

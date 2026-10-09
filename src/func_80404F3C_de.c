@@ -6,5 +6,5 @@
 
 
 s32 func_80404F3C_de(s32 index) {
-    return D_801534F0[index] == 2;
+    return D_8014D260[index] == 2;
 }

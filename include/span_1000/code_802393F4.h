@@ -27,7 +27,7 @@ struct func_80239FCC_S1 {
 };
 
 /* unbake published declaration: published_0f4d03f295911fb967a3161f */
-extern float D_800C8664;
+extern float D_800C3574_de;
 
 struct func_80239668_S2;
 /* unbake published declaration: published_17c6d8dd1906bc196312de45 */
@@ -45,7 +45,7 @@ struct func_80239594_S1 {
 };
 
 /* unbake published declaration: published_292403bbf32bdc0b6c961e94 */
-extern float D_800C8658;
+extern float D_800C3568_de;
 
 /* unbake published declaration: published_2be8fb22855bf6ba9647e306 */
 extern float D_800C3598_de;
@@ -297,7 +297,7 @@ struct func_8023A180_S1 {
 };
 
 /* unbake published declaration: published_c7ba6f8916c1c528d17550a2 */
-extern float D_800C865C;
+extern float D_800C356C_de;
 
 struct func_8023A104_S1;
 /* unbake published declaration: published_c8d4d4ac6278dab5398ce6eb */
@@ -324,7 +324,7 @@ struct func_80239AE4_S1 {
 };
 
 /* unbake published declaration: published_d5b04d9f9d0fa12b4453b9ef */
-extern float D_800C8668;
+extern float D_800C3578_de;
 
 /* unbake published declaration: published_d6f3698707d25bc9a1740c2b */
 extern void func_8023A114_de(void *arg0, s32 arg1);

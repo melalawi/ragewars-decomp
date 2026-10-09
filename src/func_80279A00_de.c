@@ -75,10 +75,10 @@ reset_state:
 
 
 
-extern Vec3 D_801042C8;
+extern Vec3 D_801002C8;
 extern char D_8011D8D0;
-extern void *D_80103FCC;
-extern char D_801041F0;
+extern void *D_800FFFCC;
+extern char D_801001F0;
 extern void func_80271818_de(Vector4f *, Vec3 *);
 extern void func_80273760_de(f32 *matrix, s32 angle);
 extern void func_80272898_de(void *matrix, Vec3 *in, Vec3 *out);
@@ -113,7 +113,7 @@ void func_80279B40_de(Actor_func_80279B40_de *actor, s32 model, s32 arg2, s32 fl
     void *parent;
 
     if (actor->def->unk0 & 0x10) {
-        direction = D_801042C8;
+        direction = D_801002C8;
     } else {
         direction = actor->facing;
     }
@@ -133,9 +133,9 @@ void func_80279B40_de(Actor_func_80279B40_de *actor, s32 model, s32 arg2, s32 fl
             carried = turned;
         }
         func_80271F34_de(&moved, &carried, &actor->position);
-        D_80103FCC = scratch;
+        D_800FFFCC = scratch;
         point = moved;
-        D_80103FCC = &D_801041F0;
+        D_800FFFCC = &D_801001F0;
     }
     func_802800C0_de(&D_8011D8D0, actor, actor->owner, actor->unk130, actor->unk134, model,
                   direction, rotation, point, 0, arg2, flags | (actor->flags & 0x200006));

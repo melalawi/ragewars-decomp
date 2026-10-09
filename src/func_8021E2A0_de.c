@@ -6,11 +6,11 @@ void func_8021E2A0_de(SharedPlayer *player, void *view) {
     s32 show;
     f32 scale;
 
-    player->views5E8.view7BC_102.timer += D_800D2988;
+    player->views5E8.view7BC_102.timer += D_800CD738;
     if (player->views5E8.view788_94.icons == 0) {
         return;
     }
-    if (player->views5D8.view5D8_9.profile->remote == 1 && D_801468F4 != 0) {
+    if (player->views5D8.view5D8_9.profile->remote == 1 && D_80142834 != 0) {
         return;
     }
     if (player->views5E8.view650_17.action == 0x27) {
@@ -24,7 +24,7 @@ void func_8021E2A0_de(SharedPlayer *player, void *view) {
     }
     if (player->views5E8.view798_96.carried == 0x2DA) {
         if (player->views1C.view594_40.mode == 1) {
-            if (player->views1C.viewE4_7.kind != D_800CE474[0] && player->views1C.viewE4_7.kind != D_800CE474[1]) {
+            if (player->views1C.viewE4_7.kind != D_800C9224_de[0] && player->views1C.viewE4_7.kind != D_800C9224_de[1]) {
                 player->views5E8.view798_96.carried = 0x2EF;
                 if ((u8) player->views1C.view48C_35.state - 2U < 2) {
                     player->views5E8.view7BC_102.timer = 0.0f;
@@ -34,7 +34,7 @@ void func_8021E2A0_de(SharedPlayer *player, void *view) {
                     player->views5E8.view7BC_102.timer = 1.0f;
                 }
             }
-        } else if (player->views1C.viewE4_7.kind != D_800CE474[0] && player->views1C.viewE4_7.kind != D_800CE474[1]) {
+        } else if (player->views1C.viewE4_7.kind != D_800C9224_de[0] && player->views1C.viewE4_7.kind != D_800C9224_de[1]) {
             player->views5E8.view798_96.carried = 0x2F1;
             if (player->views5E8.view62E_14.weapon == 9 && player->views1C.view5A0_42.charge > 0.0f) {
                 player->views5E8.view7BC_102.timer = 1.0f;

@@ -5,7 +5,7 @@
 
 
 
-extern f32 D_800CC740;
+extern f32 D_800C74F0_de;
 
 f32 func_802B20D4_de(Obj_func_802B20D4_de *arg0, s32 arg1, s32 arg2) {
     f64 v;
@@ -16,5 +16,5 @@ f32 func_802B20D4_de(Obj_func_802B20D4_de *arg0, s32 arg1, s32 arg2) {
     if (arg2 < 0) {
         v = v + D_800C74E8_de;
     }
-    return (new_var * (f32)v) / ((f32)arg0->field18 * D_800CC740);
+    return (new_var * (f32)v) / ((f32)arg0->field18 * D_800C74F0_de);
 }

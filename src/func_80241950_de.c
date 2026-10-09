@@ -14,7 +14,7 @@
 
 
 
-extern f32 D_80115DEC;
+extern f32 D_80111D2C;
 extern f32 func_8024D398_de(s32);
 extern f32 func_8024D284_de(s32);
 extern f32 func_8024E420_de(s32);
@@ -115,7 +115,7 @@ void func_80241950_de(char *obj, Vec3 *corners, char *floor, s32 attachment) {
     yaw.y = sine;
     yaw.z = 0.0f;
     angle = ((func_80241940_S1 *)(obj))->unk6C * 0.5f;
-    D_80115DEC = sine;
+    D_80111D2C = sine;
     yaw.w = func_802B6560_de(angle);
     func_80274098_de(&orient, &yaw, &((func_80241940_S1 *)(obj))->unk5C);
     func_80274244_de(&orient, turn);

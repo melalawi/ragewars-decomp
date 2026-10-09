@@ -11,7 +11,7 @@
    unless the player is in state 0xF, holds input bits 0x3000 or the bot is busy at 0x314, rerolls an
    expired timer to 15 times 3 to 9 frames, and runs func_80211020_de, func_80208410_de and func_80208AAC_de. */
 
-extern s32 D_8013B364;
+extern s32 D_801372A4;
 
 extern void func_80213340_de(void *);
 extern s32 func_802744D4_de(void);
@@ -43,13 +43,13 @@ void func_80213500_de(void *arg0) {
     s32 state;
 
     if (((func_80213500_S3 *)(actor))->unk4 == ((func_80213500_S3 *)(actor))->unk22C
-        || !(((func_80213500_S3 *)(actor))->unk22C < D_8013B368)) {
+        || !(((func_80213500_S3 *)(actor))->unk22C < D_801372A8)) {
         void *data = ((func_80209B64_S4 *)(*(void **) actor))->unk5D8;
         if (((Record_func_80208158_de *)(data))->display && ((Record_func_80208158_de *)(data))->kind == 12) {
             func_80213340_de(actor);
         } else {
-            s32 global_count = D_8013B368;
-            s32 *table = &D_8013B364;
+            s32 global_count = D_801372A8;
+            s32 *table = &D_801372A4;
             s32 tries = 0;
             s32 candidate;
 
@@ -96,7 +96,7 @@ store_c:
     func_80208AAC_de(actor);
 }
 
-extern s32 D_8013B364;
+extern s32 D_801372A4;
 
 
 extern void func_80213340_de(void *arg0);
@@ -127,8 +127,8 @@ void func_802136EC_de(void *arg0)
         if (((Record_func_80208158_de *)(data))->display && ((Record_func_80208158_de *)(data))->kind == 12) {
             func_80213340_de(actor);
         } else {
-            s32 global_count = D_8013B368;
-            s32 *table = &D_8013B364;
+            s32 global_count = D_801372A8;
+            s32 *table = &D_801372A4;
             s32 tries = 0;
             s32 candidate;
 
@@ -162,7 +162,7 @@ store_c:
     ((func_802136EC_S3 *)(actor))->unk320 = -1;
 }
 
-extern s32 D_8013B364;
+extern s32 D_801372A4;
 
 extern void *func_8020C994_de(void *, s32);
 extern s32 func_802744D4_de(void);
@@ -174,7 +174,7 @@ extern s32 func_802744D4_de(void);
 
 void func_80213810_de(void *arg0)
 {
-    s32 *table = &D_8013B364;
+    s32 *table = &D_801372A4;
     s32 tries = 0;
     s32 candidate;
 

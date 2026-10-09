@@ -47,7 +47,7 @@ struct func_8024C91C_S1;
 typedef struct func_8024C91C_S1 func_8024C91C_S1;
 
 /* unbake published declaration: published_2a60f800118b75f5de9427e2 */
-extern float D_800D06C0[];
+extern float D_800CB480_de[];
 
 struct Node75;
 struct func_8024BCF8_S1;
@@ -201,10 +201,10 @@ struct func_8024C33C_S1;
 typedef struct func_8024C33C_S1 func_8024C33C_S1;
 
 /* unbake published declaration: published_8411ae89dfca34171e68c571 */
-extern float D_800C8C44;
+extern float D_800C3B54_de;
 
 /* unbake published declaration: published_875474ca0c8c5c7c40d05687 */
-extern float D_800C8C70;
+extern float D_800C3B80;
 
 struct func_8024BA6C_S1;
 /* unbake published declaration: published_881f2deb0a47c22e79503112 */

@@ -10,11 +10,11 @@
  * nearby players react to it, and when it moves or falls probes the ground through func_80243A90_de, orients itself to the
  * surface it hit and runs the collision responses its descriptor allows. D_800D2988 (the frame step) is restored on
  * every exit after the early time check. */
-extern f32 D_800D2988;
-extern Shared_CollisionResult *D_80103FCC;
-extern Shared_CollisionResult D_801041F0;
+extern f32 D_800CD738;
+extern Shared_CollisionResult *D_800FFFCC;
+extern Shared_CollisionResult D_801001F0;
 extern char D_8011D8D0;
-extern SharedPlayer_func_8022A398_de *D_80145060;
+extern SharedPlayer_func_8022A398_de *D_80140FA0;
 s32 func_80243A90_de(Shared_Particle *particle, Vec3 pos, s32 *flags);
 f32 func_8024D284_de(SharedPlayer_func_8022A398_de *player);
 void func_80271F68_de(Vec3 *normal, Vec3 *pos, void *surface);
@@ -66,13 +66,13 @@ void func_8027B720_de(Shared_Particle *particle) {
     s32 done;
     s8 fade;
     owner = particle->owner;
-    savedStep = D_800D2988;
+    savedStep = D_800CD738;
     if (particle->time < 0.0f) {
         return;
     }
     if (owner != NULL && owner->kind == 1 && (owner->flags & 0x300000) && owner->state != NULL &&
         (owner->state->flags & 0x2000)) {
-        D_800D2988 = savedStep * 0.25f;
+        D_800CD738 = savedStep * 0.25f;
     }
     extent = particle->size.z;
     scaled = particle->size.y * extent;
@@ -93,7 +93,7 @@ void func_8027B720_de(Shared_Particle *particle) {
     if (particle->flags & 0x20000) {
         particle->time = 0.0f;
         particle->life = particle->unk148 * 32.0f;
-        half = particle->unk1D1 - D_800D2988 * 6.0f;
+        half = particle->unk1D1 - D_800CD738 * 6.0f;
         fade = (half < 0.0f) ? 0 : (s32)half;
         particle->unk1D1 = fade;
     }
@@ -206,7 +206,7 @@ void func_8027B720_de(Shared_Particle *particle) {
         }
     }
     if (particle->flags & 0x40000) {
-        if (func_80243A90_de(particle, particle->inst.pos, &particle->unk1B4) && D_801041F0.unkB4 != 0) {
+        if (func_80243A90_de(particle, particle->inst.pos, &particle->unk1B4) && D_801001F0.unkB4 != 0) {
             particle->unk1D0 = -3;
         }
         if (particle->inst.unk38 & 0x1000) {
@@ -216,40 +216,40 @@ void func_8027B720_de(Shared_Particle *particle) {
         }
     }
     particle->prevPos = particle->inst.pos;
-    particle->frame += D_800D2988 * particle->unk148 * (D_800CD740_de * 0.06666667f);
+    particle->frame += D_800CD738 * particle->unk148 * (D_800CD740_de * 0.06666667f);
     if (particle->desc->flags & 0x1000) {
-        step = D_800D2988 * 10.24f;
+        step = D_800CD738 * 10.24f;
         particle->size.x += step * particle->growth.x;
         particle->size.y += step * particle->growth.y;
-        particle->size.z += D_800D2988 * particle->growth.z;
+        particle->size.z += D_800CD738 * particle->growth.z;
         particle->size.x = (particle->size.x > 4096.0f) ? 4096.0f : particle->size.x;
         particle->size.y = (particle->size.y > 4096.0f) ? 4096.0f : particle->size.y;
         particle->size.z = (particle->size.z > 400.0f) ? 400.0f : particle->size.z;
     } else {
         grow = RW_MIN(particle->size.x * particle->growth.x, 4096.0f);
-        particle->size.x += (grow - particle->size.x) * D_800D2988;
+        particle->size.x += (grow - particle->size.x) * D_800CD738;
         grow = RW_MIN(particle->size.y * particle->growth.y, 4096.0f);
-        particle->size.y += (grow - particle->size.y) * D_800D2988;
+        particle->size.y += (grow - particle->size.y) * D_800CD738;
         grow = RW_MIN(particle->size.z * particle->growth.z, 400.0f);
-        particle->size.z += (grow - particle->size.z) * D_800D2988;
+        particle->size.z += (grow - particle->size.z) * D_800CD738;
         if (particle->size.x < 0.0f || particle->size.y < 0.0f || particle->size.z < 0.0f) {
             func_80283F60_de(particle);
             func_80284570_de(&D_8011D8D0, particle);
             func_80284434_de(particle);
-            D_800D2988 = savedStep;
+            D_800CD738 = savedStep;
             return;
         }
     }
-    particle->rot.x += particle->rotSpeed.x * D_800D2988;
-    particle->rot.y += particle->rotSpeed.y * D_800D2988;
-    particle->rot.z += particle->rotSpeed.z * D_800D2988;
-    D_80103FCC->unkD8 = particle->inst.velocity;
+    particle->rot.x += particle->rotSpeed.x * D_800CD738;
+    particle->rot.y += particle->rotSpeed.y * D_800CD738;
+    particle->rot.z += particle->rotSpeed.z * D_800CD738;
+    D_800FFFCC->unkD8 = particle->inst.velocity;
     func_80283E58_de(particle);
     range = particle->desc->unk10;
     if (!(range <= 0.0f)) {
         range *= 10.24f;
         range *= range;
-        for (player = D_80145060; player != NULL;) {
+        for (player = D_80140FA0; player != NULL;) {
             done = 0;
             if (func_8027B790_distance(particle, player) < range) {
                 func_80282E98_de(particle, player);
@@ -269,7 +269,7 @@ void func_8027B720_de(Shared_Particle *particle) {
         particle->inst.velocity.x * particle->inst.velocity.x + particle->inst.velocity.y * particle->inst.velocity.y +
                 particle->inst.velocity.z * particle->inst.velocity.z <
             0.001f) {
-        D_800D2988 = savedStep;
+        D_800CD738 = savedStep;
         return;
     }
     if (!(particle->flags & 0x72000)) {
@@ -279,32 +279,32 @@ void func_8027B720_de(Shared_Particle *particle) {
         } else {
             particle->flags &= ~4;
         }
-        if (particle->inst.type == 0x68 && D_801041F0.unk0 != NULL) {
-            particle->target = (Shared_ParticleTarget *)D_801041F0.unk0;
+        if (particle->inst.type == 0x68 && D_801001F0.unk0 != NULL) {
+            particle->target = (Shared_ParticleTarget *)D_801001F0.unk0;
         }
         if (die) {
-            if (D_801041F0.unk0 != NULL) {
-                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801041F0.unk8);
-            } else if (D_801041F0.unk88 != 0) {
-                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801041F0.unk90);
-            } else if (D_801041F0.unk9C != 0) {
-                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801041F0.unkA0);
-            } else if (D_801041F0.unkB4 != 0) {
-                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801041F0.unkB8);
+            if (D_801001F0.unk0 != NULL) {
+                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801001F0.unk8);
+            } else if (D_801001F0.unk88 != 0) {
+                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801001F0.unk90);
+            } else if (D_801001F0.unk9C != 0) {
+                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801001F0.unkA0);
+            } else if (D_801001F0.unkB4 != 0) {
+                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801001F0.unkB8);
                 if (particle->unk1D0 == -7) {
                     particle->unk1D0 = -3;
                 }
-            } else if (D_801041F0.unkC4 != 0) {
-                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801041F0.unkC8);
+            } else if (D_801001F0.unkC4 != 0) {
+                func_80271F68_de(&particle->unk174, &particle->inst.pos, D_801001F0.unkC8);
             }
             func_8027207C_de(&particle->unk174);
         }
         func_8027B428_de(particle);
-        if (D_801041F0.unkC4 != 0) {
+        if (D_801001F0.unkC4 != 0) {
             func_8027C4F0_de(particle);
         }
         if (particle->flags & 0x100) {
-            if (D_801041F0.unk9C != 0) {
+            if (D_801001F0.unk9C != 0) {
                 if (!(particle->desc->flags & 0x10000000)) {
                     func_8027C274_de(particle);
                 }
@@ -313,8 +313,8 @@ void func_8027B720_de(Shared_Particle *particle) {
                 }
             }
             if (particle->flags & 0x100) {
-                if (D_801041F0.unk0 != NULL) {
-                    if ((particle->unk1B4 & 0x4000) && *D_801041F0.unk0 == 0) {
+                if (D_801001F0.unk0 != NULL) {
+                    if ((particle->unk1B4 & 0x4000) && *D_801001F0.unk0 == 0) {
                         func_8027D4A8_de(particle);
                     } else {
 #if defined(VERSION_DE)
@@ -327,8 +327,8 @@ void func_8027B720_de(Shared_Particle *particle) {
                         particle->unk1B9 = 1;
                     }
                 }
-                if ((particle->flags & 0x100) && D_801041F0.unkB0 != 0 && !(particle->desc->flags & 0x20000000)) {
-                    if (D_801041F0.unkB0 == 1) {
+                if ((particle->flags & 0x100) && D_801001F0.unkB0 != 0 && !(particle->desc->flags & 0x20000000)) {
+                    if (D_801001F0.unkB0 == 1) {
                         func_8027C758_de(particle);
                     } else {
                         func_8027C9CC_de(particle);
@@ -340,5 +340,5 @@ void func_8027B720_de(Shared_Particle *particle) {
     if ((particle->flags & 0x8100) == 0x100) {
         func_8028422C_de(particle);
     }
-    D_800D2988 = savedStep;
+    D_800CD738 = savedStep;
 }

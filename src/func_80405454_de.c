@@ -22,7 +22,7 @@ s32 func_80405454_de(s32 ch, u8 *ext) {
     s32 i;
 
     used = 0;
-    if (D_801534F0[ch] != 3) {
+    if (D_8014D260[ch] != 3) {
         return -2;
     }
     for (i = 0; i < 16; i++) {
@@ -52,10 +52,10 @@ s32 func_80405454_de(s32 ch, u8 *ext) {
 
 
 s32 func_80405598_de(s32 index) {
-    if (D_801534F0[index] != 3) {
+    if (D_8014D260[index] != 3) {
         return 0;
     }
-    return D_80153500[index] == -4;
+    return D_8014D270[index] == -4;
 }
 
 /* Marks the given controller port's 0x70-byte pak record in D_80153330 present when the port's D_8010FBE3 status byte is clear and func_802B7FD8_de initialises the pak block at offset 8 of the record through D_8010FC00 without error, clearing the mark otherwise, and returns the mark.
@@ -63,17 +63,17 @@ s32 func_80405598_de(s32 index) {
 
 
 
-extern u8 D_8010FBE3[];
-extern char D_8010FC00[];
-extern PakRecord D_80153330[];
+extern u8 D_8010BBE3[];
+extern char D_8010BC00[];
+extern PakRecord D_8014D0A0_de[];
 extern s32 func_802B7FD8_de(void *queue, void *pak, s32 channel);
 
 s32 func_804055D4_de(s32 channel) {
-    PakRecord *record = &D_80153330[channel];
+    PakRecord *record = &D_8014D0A0_de[channel];
     s32 result;
 
-    if (D_8010FBE3[channel * 4] == 0) {
-        record->present = func_802B7FD8_de(D_8010FC00, record->pak, channel) == 0;
+    if (D_8010BBE3[channel * 4] == 0) {
+        record->present = func_802B7FD8_de(D_8010BC00, record->pak, channel) == 0;
         result = record->present;
     } else {
         record->present = 0;
@@ -197,8 +197,8 @@ u32 func_804057F8_de(u8 *arg0, u32 arg1, u32 arg2) {
 }
 
 /* Returns the word held in D_800E2850. */
-extern s32 D_800E2850;
+extern s32 D_800DE800;
 
 s32 func_804058A0_de(void) {
-    return D_800E2850;
+    return D_800DE800;
 }

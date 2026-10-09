@@ -44,6 +44,6 @@ void func_8022B69C_de(void *arg0, f32 arg1, void *arg2) {
 
 
 void func_8022B730_de(void *arg0, f32 arg1) {
-    ((func_8022B720_S1 *)(arg0))->unk11DC = ((func_8022B720_S1 *)(arg0))->unk11DC + arg1 * D_800C7E08;
+    ((func_8022B720_S1 *)(arg0))->unk11DC = ((func_8022B720_S1 *)(arg0))->unk11DC + arg1 * D_800C2D18_de;
     ((func_8022B720_S1 *)(arg0))->unk122C = ((func_8022B720_S1 *)(arg0))->unk122C | 0x2000;
 }

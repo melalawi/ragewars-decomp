@@ -33,7 +33,7 @@ extern int D_8014DA24;
 extern void func_80413FF8_de(void);
 
 /* unbake published declaration: published_26b5f408c2a94d8dae5ea441 */
-extern int D_80153C8C;
+extern int D_8014D9FC;
 
 /* unbake published declaration: published_29792fa1a5d886b048bc5c29 */
 extern s32 func_804136B4_de(s32 *record);
@@ -66,7 +66,7 @@ extern void func_80414024_de(void);
 extern void func_804141C0_de(void);
 
 /* unbake published declaration: published_753fb73d9dbb1c31810ced04 */
-extern unsigned char D_80153C75;
+extern unsigned char D_8014D9E5;
 
 /* unbake published declaration: published_8e855040b141c6661a424a94 */
 extern void func_80413FCC_de(void);
@@ -100,7 +100,7 @@ extern void func_804140BC_de(void);
 extern void func_80414220_de(void);
 
 /* unbake published declaration: published_d43abf56a8f6c75fa39fc2af */
-extern unsigned char D_80153C77;
+extern unsigned char D_8014D9E7;
 
 /* unbake published declaration: published_e67fc2d7ad1bd03c2b88f92b */
 extern void func_80414094_de(void);

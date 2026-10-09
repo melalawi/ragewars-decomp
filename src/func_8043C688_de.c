@@ -54,12 +54,12 @@ struct Shared_Game {
 
 #include "types.h"
 
-extern Shared_Game D_801462C8;
-extern s32 D_801462CC;
+extern Shared_Game D_80142208_de;
+extern s32 D_8014220C;
 
 extern s32 D_80154034;
-extern char D_8011FAC0[];
-extern char D_8011FE88[];
+extern char D_8011BA00[];
+extern char D_8011BDC8[];
 
 extern s32 func_8026437C_de(s32 buttons);
 extern s32 func_80264388_de(s32 buttons);
@@ -122,7 +122,7 @@ static inline s32 findUnlocked(s32 level, s32 step) {
         } else if (level < 0) {
             level = 10;
         }
-        if (D_801462CC & levelBit(level)) {
+        if (D_8014220C & levelBit(level)) {
             return level;
         }
     }
@@ -174,18 +174,18 @@ s32 func_8043C688_de(s32 arg0, Shared_MenuInput *pad) {
         if (target == 8000) {
             D_80142226 = 1;
             func_8043DE50_de(pad);
-            func_80293824_de(D_8011FAC0, 0x11);
+            func_80293824_de(D_8011BA00, 0x11);
             return 1;
         }
         if (func_802934F8_de() != 0) {
-            func_8044D528_de(D_8011FE88, target, 2);
+            func_8044D528_de(D_8011BDC8, target, 2);
             return 0;
         }
-        rules = &D_801462C8;
+        rules = &D_80142208_de;
         rules->local = 0;
         rules->mode1E = 1;
         func_8043DE50_de(pad);
-        func_80293284_de(D_8011FAC0, target);
+        func_80293284_de(D_8011BA00, target);
         return 1;
     }
 

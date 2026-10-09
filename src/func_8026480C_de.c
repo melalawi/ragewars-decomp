@@ -2,14 +2,14 @@
 #include "types.h"
 
 extern void func_80264248_de(void *arg0);
-extern s32 D_8010F328;
+extern s32 D_8010B328;
 
 void func_8026480C_de(void) {
     u8 *var_s0;
     s32 var_s1;
 
     var_s1 = 0;
-    var_s0 = (u8 *)&D_8010F328;
+    var_s0 = (u8 *)&D_8010B328;
     do {
         func_80264248_de(var_s0);
         var_s1 += 1;

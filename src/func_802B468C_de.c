@@ -5,8 +5,8 @@
    1/16384 and 16384.0 double constants, at D_800CC838 and D_800CC840, distinct from the copies the
    inlined body in alFxNew uses. */
 
-extern const f64 D_800CC838; /* 1.0 / 16384 */
-extern const f64 D_800CC840; /* 16384.0 */
+extern const f64 D_800C75E8_de; /* 1.0 / 16384 */
+extern const f64 D_800C75F0_de; /* 16384.0 */
 
 void func_802B468C_de(AudioLowPassFilter *lp)
 {
@@ -23,10 +23,10 @@ void func_802B468C_de(AudioLowPassFilter *lp)
         lp->coefficients.taps[i] = 0;
 
     lp->coefficients.taps[i++] = fc;
-    fcoef = ffc = (f64)fc * D_800CC838;
+    fcoef = ffc = (f64)fc * D_800C75E8_de;
 
     for (; i < 16; i++) {
         fcoef *= ffc;
-        lp->coefficients.taps[i] = (s16)(fcoef * D_800CC840);
+        lp->coefficients.taps[i] = (s16)(fcoef * D_800C75F0_de);
     }
 }

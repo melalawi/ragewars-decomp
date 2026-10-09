@@ -19,7 +19,7 @@ struct Actor_func_802238E0_de {
 };
 
 /* unbake published declaration: published_0c42f0526add5e10203c059e */
-extern float D_800C78BC;
+extern float D_800C27CC_de;
 
 struct MultiplayerOptions;
 /* unbake published declaration: published_0c61ae7dbe540847c707518f */
@@ -7571,7 +7571,7 @@ extern float D_800C2998_de;
 extern float D_800C2980_de;
 
 /* unbake published declaration: published_778debeceed21482d457ff73 */
-extern float D_800C78B8;
+extern float D_800C27C8_de;
 
 struct func_80222BC4_S1;
 /* unbake published declaration: published_7a398be59b752e7ced2dc15e */

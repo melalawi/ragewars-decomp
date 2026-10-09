@@ -91,7 +91,7 @@ void func_802476C8_de(char *obj, void *anim, f32 from, f32 to) {
             }
             if (fire != 0) {
                 func_80265E10_de(obj, obj, events[i].effect, -1, pos, events[i].params);
-                D_800D06BC++;
+                D_800CB47C++;
             }
         }
     }

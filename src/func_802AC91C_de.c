@@ -3,7 +3,7 @@
 #include "span_1000/code_802AB3FC.h"
 #include "types.h"
 
-extern char D_800D31D0;
+extern char D_800CDEF0;
 
 
 
@@ -12,7 +12,7 @@ void *func_802AC91C_de(s32 arg0) {
     char *v1;
     s32 i;
 
-    v1 = &D_800D31D0;
+    v1 = &D_800CDEF0;
     i = 3;
     do {
         i -= 1;
@@ -25,7 +25,7 @@ void *func_802AC91C_de(s32 arg0) {
     return 0;
 }
 
-extern char D_800D3230;
+extern char D_800CDF50;
 
 
 
@@ -34,7 +34,7 @@ void *func_802AC950_de(s32 arg0) {
     char *v1;
     s32 i;
 
-    v1 = &D_800D3230;
+    v1 = &D_800CDF50;
     i = 5;
     do {
         i -= 1;
@@ -47,7 +47,7 @@ void *func_802AC950_de(s32 arg0) {
     return 0;
 }
 
-extern char D_800D32A8;
+extern char D_800CDFC8_de;
 
 
 
@@ -56,7 +56,7 @@ void *func_802AC984_de(s32 arg0) {
     char *v1;
     s32 i;
 
-    v1 = &D_800D32A8;
+    v1 = &D_800CDFC8_de;
     i = 7;
     do {
         i -= 1;
@@ -69,7 +69,7 @@ void *func_802AC984_de(s32 arg0) {
     return 0;
 }
 
-extern char D_800D3368;
+extern char D_800CE088;
 
 
 
@@ -78,7 +78,7 @@ void *func_802AC9B8_de(s32 arg0) {
     char *v1;
     s32 i;
 
-    v1 = &D_800D3368;
+    v1 = &D_800CE088;
     i = 1;
     do {
         i -= 1;
@@ -91,7 +91,7 @@ void *func_802AC9B8_de(s32 arg0) {
     return 0;
 }
 
-extern char D_800D33C0;
+extern char D_800CE0E0;
 
 
 
@@ -100,7 +100,7 @@ void *func_802AC9EC_de(s32 arg0) {
     char *v1;
     s32 i;
 
-    v1 = &D_800D33C0;
+    v1 = &D_800CE0E0;
     i = 0xF;
     do {
         i -= 1;
@@ -113,7 +113,7 @@ void *func_802AC9EC_de(s32 arg0) {
     return 0;
 }
 
-extern char D_800D3390;
+extern char D_800CE0B0;
 
 
 
@@ -122,7 +122,7 @@ void *func_802ACA20_de(s32 arg0) {
     char *v1;
     s32 i;
 
-    v1 = &D_800D3390;
+    v1 = &D_800CE0B0;
     i = 2;
     do {
         i -= 1;
@@ -140,7 +140,7 @@ extern s32 func_802AB6EC_de(void *arg0, void *arg1, s32 arg2);
 extern void func_80290548_de(void *arg0);
 extern void func_8028B898_de(void *arg0, void *arg1, s32 arg2);
 extern void func_80278E04_de(s32 arg0, s32 arg1, void *arg2);
-extern char D_8011FE88[];
+extern char D_8011BDC8[];
 
 
 
@@ -163,13 +163,13 @@ block_4:
                 func_80290548_de(arg1);
                 return;
             }
-            func_8028B898_de(D_8011FE88, arg1, 1);
+            func_8028B898_de(D_8011BDC8, arg1, 1);
             func_80278E04_de(((func_802ADA44_S1 *)(arg1))->unk14, 0x400, arg0);
         }
     }
 }
 
-extern char D_80145088;
+extern char D_80140FC8;
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
@@ -196,7 +196,7 @@ s32 func_802ACB18_de(void *arg0, void *arg1) {
         func_802391AC_de(((func_802ADB08_S2 *)(arg0))->unk5DC,
                       0x80, 0x32, 0x32, 0x4B, 0, 0, 2);
         if (resource != 0) {
-            func_80237E80_de(&D_80145088,
+            func_80237E80_de(&D_80140FC8,
                           ((func_802ADB08_S2 *)(arg0))->unk5DC,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
                           ((void **)resource)[D_80152789]);
@@ -217,7 +217,7 @@ s32 func_802ACB18_de(void *arg0, void *arg1) {
     return 1;
 }
 
-extern char D_80145088;
+extern char D_80140FC8;
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
@@ -257,7 +257,7 @@ s32 func_802ACC04_de(void *arg0, void *arg1) {
             func_802391AC_de(((func_802ADBF4_S1 *)(arg0))->unk5DC,
                           0x80, 0x32, 0x32, 0x4B, 0, 0, 2);
             if (resource != 0) {
-                func_80237E80_de(&D_80145088,
+                func_80237E80_de(&D_80140FC8,
                               ((func_802ADBF4_S1 *)(arg0))->unk5DC,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
                           ((void **)resource)[D_80152789]);
@@ -279,7 +279,7 @@ s32 func_802ACC04_de(void *arg0, void *arg1) {
     return result;
 }
 
-extern char D_80145088;
+extern char D_80140FC8;
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
@@ -315,7 +315,7 @@ s32 func_802ACD28_de(void *arg0, void *arg1) {
         func_802391AC_de(((func_802ADD18_S1 *)(arg0))->unk5DC,
                       0x80, 0x32, 0x32, 0x4B, 0, 0, 2);
         if (resource != 0) {
-            func_80237E80_de(&D_80145088,
+            func_80237E80_de(&D_80140FC8,
                           ((func_802ADD18_S1 *)(arg0))->unk5DC,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
                           ((void **)resource)[D_80152789]);

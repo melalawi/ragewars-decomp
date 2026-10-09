@@ -23,8 +23,8 @@
  * 0x800E2490 = 1.25 (float, D_800E2490 in this cartridge's tables)
  * 0x800E2494 = 0.9 (float, unnamed in this cartridge's tables)
  * 0x800E2498 = 0.25 (float, D_800E2498 in this cartridge's tables)
- * 0x800E28D0 = 4.48e-43 (float, D_800E28D0 in this cartridge's tables; not a literal: a variable, its value in the image, since D_800E28D0: `sw` at %lo(D_800E28D0) in func_8040BBB0_de.s)
- * 0x800E28D4 = 3.36e-43 (float, D_800E28D4 in this cartridge's tables)
+ * 0x800E28D0 = 4.48e-43 (float, D_800DE880_de in this cartridge's tables; not a literal: a variable, its value in the image, since D_800DE880_de: `sw` at %lo(D_800DE880_de) in func_8040BBB0_de.s)
+ * 0x800E28D4 = 3.36e-43 (float, D_800DE884_de in this cartridge's tables)
  * 0x800E249C = 0.0035211267 (float, D_800E249C in this cartridge's tables)
  * 0x800E24A0 = 0.0045045046 (float, D_800E24A0 in this cartridge's tables)
  * 0x800E24A4 = 255.0 (float, D_800E24A4 in this cartridge's tables)
@@ -45,8 +45,8 @@ extern u8 D_801462E5;
 extern u8 D_80152789;
 #endif
 
-extern s32 D_800E28D0;
-extern s32 D_800E28D4;                          /* unable to generate initializer: unknown type */
+extern s32 D_800DE880_de;
+extern s32 D_800DE884_de;                          /* unable to generate initializer: unknown type */
 extern s32 D_800E1E20;
                           
 
@@ -176,7 +176,7 @@ block_5:
         (s32)((f32)temp_s1->unk1A * var_f1) > 0xFF ? 0xFF : (s32)((f32)temp_s1->unk1A * var_f1));
     D_801377B8.field_0 = (s32) temp_s1->unk14;
     D_801377B8.field_4 = (s32) temp_s1->unk14;
-    func_802AAB68_de(temp_s1->unkC * (f32) (D_800E28D0) * 0.0035211267f, temp_s1->unk10 * (f32) (D_800E28D4) * 0.0045045046f);
+    func_802AAB68_de(temp_s1->unkC * (f32) (D_800DE880_de) * 0.0035211267f, temp_s1->unk10 * (f32) (D_800DE884_de) * 0.0045045046f);
     if (var_s5 != 0) {
         var_s5 = temp_s1->unk14;
     }

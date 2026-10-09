@@ -13,7 +13,7 @@
 
 
 
-extern char D_8011FE88;
+extern char D_8011BDC8;
 extern s32 func_802BCF30_de(void);
 extern void func_802BCF50_de(s32 mask);
 extern void func_80255ED8_de(Pool_func_80285B64_de *pool, Node_func_80285B64_de *node);
@@ -22,7 +22,7 @@ extern s32 func_8028CE78_de(void *table, s32 id);
 extern void func_80264DE0_de(void *slot, s32 handle);
 
 static inline void bind(Node_func_80285B64_de *node, s32 offset, s32 id) {
-    func_80264DE0_de((char *)node + offset, func_8028CE78_de(&D_8011FE88, id));
+    func_80264DE0_de((char *)node + offset, func_8028CE78_de(&D_8011BDC8, id));
 }
 
 static inline void init(Node_func_80285B64_de *node, Clip *key, Vec3 position, f32 value0, f32 value1, Node_func_80285B64_de **owner) {

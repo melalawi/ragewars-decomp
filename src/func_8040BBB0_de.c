@@ -9,9 +9,9 @@ s32 func_80265350_de(); /* extern */
 void func_8040C484_de(s32, s32, s32, s32, s32, s32); /* extern */
 extern s32 D_80000300;
 extern s32 D_800CC374;
-extern s32 D_800E28D0,D_800E28D4;
-extern s32 D_800E28D8;
-extern u8 D_800E28DB;
+extern s32 D_800DE880_de,D_800DE884_de;
+extern s32 D_800DE888_de;
+extern u8 D_800DE88B;
 extern struct Shape_func_8024A5A8_de_2 D_800DE8A8[];
 extern struct Shape_func_8024A5A8_de_2 D_800DE934[];
 extern Rec_func_8024C92C_de D_800DE9C0[];
@@ -19,7 +19,7 @@ extern char D_800E2A14;
 extern char D_800E2A18;
 extern char D_800E2A1C;
 extern char D_800E2A20;
-extern u8 D_80146848;
+extern u8 D_80142788;
 static inline void set_config(int a,int b,int c,int d,int e) {
         D_800DE898 = a;
         D_800CC370 = b;
@@ -28,8 +28,8 @@ static inline void set_config(int a,int b,int c,int d,int e) {
         D_800CC37C = e;
 }
 static inline void set_mode(s32 *var_s0) {
-        D_800E28D0 = (s32) var_s0[0];
-        D_800E28D4 = (s32) var_s0[1];
+        D_800DE880_de = (s32) var_s0[0];
+        D_800DE884_de = (s32) var_s0[1];
         func_8040C484_de(var_s0[0], var_s0[1], var_s0[2], var_s0[3], var_s0[4], var_s0[5]);
 }
 void func_8040BBB0_de(void) {
@@ -40,20 +40,20 @@ void func_8040BBB0_de(void) {
     struct Shape_func_8024A5A8_de_2 *var_s0;
     var_s0 = NULL;
     D_80141000 = 2;
-    if (D_800E28D8 == -1) {
+    if (D_800DE888_de == -1) {
         if (func_80265350_de() != 0x400000) {
-            D_800E28D8 = 1;
+            D_800DE888_de = 1;
         } else {
-            D_800E28D8 = 0;
+            D_800DE888_de = 0;
         }
-        D_80146848 = D_800E28DB;
+        D_80142788 = D_800DE88B;
     }
     switch(D_80000300) {
-    case 1: var_s0=&D_800DE8A8[D_800E28D8];break;
-    case 0:case 2:var_s0=&D_800DE934[D_800E28D8];break;
+    case 1: var_s0=&D_800DE8A8[D_800DE888_de];break;
+    case 0:case 2:var_s0=&D_800DE934[D_800DE888_de];break;
     }
     if (var_s0 != NULL) {
-        Rec_func_8024C92C_de config=D_800DE9C0[D_800E28D8];
+        Rec_func_8024C92C_de config=D_800DE9C0[D_800DE888_de];
         set_config(config.x,config.y,config.z,config.pad0,config.pad1);
         set_mode((s32 *)var_s0);
         var_a0 = 0x80;

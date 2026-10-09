@@ -3,7 +3,7 @@
 /** Run the object's update hook, then advance its timer and fire the expiry action when due. */
 
 
-extern float D_800D2988;
+extern float D_800CD738;
 
 extern void func_80214178_de(void *, void *, int);
 
@@ -17,7 +17,7 @@ void func_802039F8_de(char *arg0, Obj *arg1) {
         arg1->hook->fn(arg0, arg1);
     }
     if (((struct Owner_func_8020388C_de *)(arg0))->id == 0x40C) {
-        arg1->timer += D_800D2988;
+        arg1->timer += D_800CD738;
         if (D_800C1A48_de < arg1->timer || arg1->count <= 0) {
             func_80214178_de(arg0, arg1, 0x40);
         }

@@ -3,10 +3,10 @@
 
 /* Marks the pair ending at D_80154024 as set by storing one there, and stores its argument in the
    word before it; func_8042E9A0_de fills the pair ending at D_8015402C. */
-extern s32 D_80154024;
+extern s32 D_8014DD94;
 
 void func_8042E988_de(s32 value) {
-    s32 *pair = &D_80154024;
+    s32 *pair = &D_8014DD94;
 
     pair[0] = 1;
     pair[-1] = value;
@@ -14,10 +14,10 @@ void func_8042E988_de(s32 value) {
 
 /* Stores a pair of words: the second argument in D_8015402C and the first in the word before
    it; func_8042E988_de does the same for the pair ending at D_80154024. */
-extern s32 D_8015402C;
+extern s32 D_8014DD9C;
 
 void func_8042E9A0_de(s32 first, s32 second) {
-    s32 *pair = &D_8015402C;
+    s32 *pair = &D_8014DD9C;
 
     pair[0] = second;
     pair[-1] = first;
@@ -88,63 +88,63 @@ void func_8042E9B4_de(char *text, char *find, char *replacement) {
 /* Applies the selected rule settings and refreshes the menu state. */
 
 
-extern Settings_func_8042EB10_de D_801462C8;
-extern Active *D_800E4680;
-extern char D_8011FAC0[];
+extern Settings_func_8042EB10_de D_80142208_de;
+extern Active *D_800E0630;
+extern char D_8011BA00[];
 extern void func_8042ED70_de(f32,s32,s32,s32,s32,s32,s32);
 extern s32 func_8042EE34_de(void);
 extern void func_8044DE7C_de(void *,s32);
 void func_8042EB10_de(void) {
- Settings_func_8042EB10_de *g=&D_801462C8;
- if(g->trialKind != 0) func_8042ED70_de((f32)D_800E4680->time,0,D_800E4680->score,D_800E4680->other,1,0,0);
+ Settings_func_8042EB10_de *g=&D_80142208_de;
+ if(g->trialKind != 0) func_8042ED70_de((f32)D_800E0630->time,0,D_800E0630->score,D_800E0630->other,1,0,0);
  else func_8042ED70_de((f32)g->time,0,g->score,g->other,1,0,0);
- func_8044DE7C_de(D_8011FAC0,func_8042EE34_de());
+ func_8044DE7C_de(D_8011BA00,func_8042EE34_de());
 }
 
 /* Applies the selected rule settings and refreshes the menu state. */
 
 
-extern Settings_func_8042EB10_de D_801462C8;
-extern Active *D_800E4680;
-extern char D_8011FAC0[];
+extern Settings_func_8042EB10_de D_80142208_de;
+extern Active *D_800E0630;
+extern char D_8011BA00[];
 extern void func_8042ED70_de(f32,s32,s32,s32,s32,s32,s32);
 extern s32 func_8042EE34_de(void);
 extern void func_8044DE7C_de(void *,s32);
 void func_8042EBA4_de(void) {
- Settings_func_8042EB10_de *g=&D_801462C8;
- if(g->trialKind != 0) func_8042ED70_de((f32)D_800E4680->time,0,D_800E4680->score,D_800E4680->other,0,1,1);
+ Settings_func_8042EB10_de *g=&D_80142208_de;
+ if(g->trialKind != 0) func_8042ED70_de((f32)D_800E0630->time,0,D_800E0630->score,D_800E0630->other,0,1,1);
  else func_8042ED70_de((f32)g->time,0,g->score,g->other,0,1,1);
- func_8044DE7C_de(D_8011FAC0,func_8042EE34_de());
+ func_8044DE7C_de(D_8011BA00,func_8042EE34_de());
 }
 
 /* Applies the selected rule settings and refreshes the menu state. */
 
 
-extern Settings_func_8042EB10_de D_801462C8;
-extern Active *D_800E4680;
-extern char D_8011FAC0[];
+extern Settings_func_8042EB10_de D_80142208_de;
+extern Active *D_800E0630;
+extern char D_8011BA00[];
 extern void func_8042ED70_de(f32,s32,s32,s32,s32,s32,s32);
 extern s32 func_8042EE34_de(void);
 extern void func_8044DE7C_de(void *,s32);
 void func_8042EC38_de(void) {
- Settings_func_8042EB10_de *g=&D_801462C8;
- if(g->trialKind != 0) func_8042ED70_de((f32)D_800E4680->time,D_800E4680->limit,D_800E4680->score,D_800E4680->other,0,1,0);
- else func_8042ED70_de((f32)g->time,D_801462C8.limit,g->score,g->other,0,1,0);
- func_8044DE7C_de(D_8011FAC0,func_8042EE34_de());
+ Settings_func_8042EB10_de *g=&D_80142208_de;
+ if(g->trialKind != 0) func_8042ED70_de((f32)D_800E0630->time,D_800E0630->limit,D_800E0630->score,D_800E0630->other,0,1,0);
+ else func_8042ED70_de((f32)g->time,D_80142208_de.limit,g->score,g->other,0,1,0);
+ func_8044DE7C_de(D_8011BA00,func_8042EE34_de());
 }
 
 /* Applies the selected rule settings and refreshes the menu state. */
 
 
-extern Settings_func_8042EB10_de D_801462C8;
-extern Active *D_800E4680;
-extern char D_8011FAC0[];
+extern Settings_func_8042EB10_de D_80142208_de;
+extern Active *D_800E0630;
+extern char D_8011BA00[];
 extern void func_8042ED70_de(f32,s32,s32,s32,s32,s32,s32);
 extern s32 func_8042EE34_de(void);
 extern void func_8044DE7C_de(void *,s32);
 void func_8042ECD8_de(void) {
- Settings_func_8042EB10_de *g=&D_801462C8;
- if(g->trialKind != 0) func_8042ED70_de((f32)D_800E4680->time,D_800E4680->score,D_800E4680->score,D_800E4680->other,0,0,0);
- else func_8042ED70_de((f32)g->time,D_801462C8.limit,g->score,g->other,0,0,0);
- func_8044DE7C_de(D_8011FAC0,func_8042EE34_de());
+ Settings_func_8042EB10_de *g=&D_80142208_de;
+ if(g->trialKind != 0) func_8042ED70_de((f32)D_800E0630->time,D_800E0630->score,D_800E0630->score,D_800E0630->other,0,0,0);
+ else func_8042ED70_de((f32)g->time,D_80142208_de.limit,g->score,g->other,0,0,0);
+ func_8044DE7C_de(D_8011BA00,func_8042EE34_de());
 }

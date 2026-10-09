@@ -11,7 +11,7 @@ extern f32 func_80274564_de(f32 arg0);
 
 
 void func_8020A95C_de(void *arg0, void *arg1) {
-    f32 k = D_800C6E20;
+    f32 k = D_800C1D30_de;
     u8 *o = (u8 *) arg0;
     u8 *i = (u8 *) arg1;
 

@@ -39,7 +39,7 @@ extern int D_80147060[];
 extern void func_802A14B8_de(void);
 
 /* unbake published declaration: published_992f4c07a9ee6d92b31e0f5a */
-extern int D_800D2C18;
+extern int D_800CD9A8;
 
 struct Record_func_802A1990_de;
 /* unbake published declaration: published_9db043ed7355f1b8ba7b3136 */

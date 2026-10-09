@@ -8,7 +8,7 @@ void func_80409744_de(void) {
     s32 var_s0;
     s32 var_s1;
     s32 unavailable;
-    if (D_800E28C8 == -1) {
+    if (D_800DE878 == -1) {
         var_s0 = 0;
         var_s1 = 0;
     unavailable = -2;
@@ -27,15 +27,15 @@ loop_2:
         if (var_s1 == 4) {
             var_s0 = -1;
         }
-        D_800E28C8 = var_s0;
+        D_800DE878 = var_s0;
     }
 }
 /* Returns whether D_800E28C8 holds anything other than -1. */
 s32 func_804097D4_de(void) {
-    return D_800E28C8 != -1;
+    return D_800DE878 != -1;
 }
 /* Clears the word held in D_800E28C0. */
-extern s32 D_800E28C0;
+extern s32 D_800DE870;
 void func_804097E8_de(void) {
-    D_800E28C0 = 0;
+    D_800DE870 = 0;
 }

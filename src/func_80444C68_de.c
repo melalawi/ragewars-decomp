@@ -5,15 +5,15 @@
 /* Counts the timer D_80154100 down by D_800D2988 without passing zero, then sets bit 24 of the flag word at offset 8 of a record unless func_80265350_de reports 0x400000, in which case the bit is cleared, stores what func_8040C3BC_de returns at offset 0x14 and returns zero. Adapted from func_80445590_de with the timer countdown added, func_80265350_de called without arguments and bit 24 instead of bit 23 changed. */
 
 
-extern f32 D_80154100;
-extern f32 D_800D2988;
+extern f32 D_8014DE70;
+extern f32 D_800CD738;
 extern s32 func_80265350_de(void);
 extern s32 func_8040C3BC_de();
 
 s32 func_80444C68_de(struct Record_func_80444C68_de *record) {
-    D_80154100 -= D_800D2988;
-    if (D_80154100 <= 0.0f) {
-        D_80154100 = 0.0f;
+    D_8014DE70 -= D_800CD738;
+    if (D_8014DE70 <= 0.0f) {
+        D_8014DE70 = 0.0f;
     }
     if (func_80265350_de() != 0x400000) {
         record->flags |= 0x1000000;

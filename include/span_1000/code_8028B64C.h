@@ -113,7 +113,7 @@ struct Owner_func_8028C6D4_de {
 };
 
 /* unbake published declaration: published_3048a84de36e630c385c5ddd */
-extern int D_800D2850;
+extern int D_800CD600;
 
 struct func_8028C248_S2;
 /* unbake published declaration: published_30bdab8296cf0ea545c8bf34 */

@@ -100,14 +100,14 @@ extern unsigned char D_80106248[];
 extern unsigned char D_8011AFC0[];
 
 
-extern unsigned char D_8011FE88[];
+extern unsigned char D_8011BDC8[];
 
 
-extern struct Shared_SceneGlobal D_80145040;
+extern struct Shared_SceneGlobal D_80140F80;
 extern struct Shared_SceneResources D_801376F8;
-extern void *D_80145060;
+extern void *D_80140FA0;
 extern u8 D_801462E5;
-extern unsigned char D_801468A0[];
+extern unsigned char D_801427E0[];
 
 
 
@@ -282,16 +282,16 @@ void func_80286AA8_de(void *arg0, s32 arg1, s32 arg2) {
     func_8044EBB0(&D_801376F8.actors);
     func_8023EE00_de();
     func_8044B0E0_de(&((struct Shared_func_80286A78_S1 *)arg0)->address1B320);
-    func_8025C8D8_de(&D_8011F260, &D_8011AFC0, 0xF);
+    func_8025C8D8_de(&D_8011B1A0, &D_8011AFC0, 0xF);
     func_8044ED24(&D_801376F8);
     do {
-        var_s1_4 = func_8022A5F4_de(&D_80145040, var_s2);
+        var_s1_4 = func_8022A5F4_de(&D_80140F80, var_s2);
         if (var_s1_4 != 0) {
             temp_v1 = var_s1_4->unk5D8;
             if ((((struct Shared_func_80286A78_S3 *)temp_v1)->unk78 == 1) && (((struct Shared_func_80286A78_S3 *)temp_v1)->unk91 == 1)) {
                 func_80208000_de(var_s1_4->unk1454);
             }
-            if ((((struct Shared_func_80286A78_S4 *)(&D_801468A0))->unk98) != 0) {
+            if ((((struct Shared_func_80286A78_S4 *)(&D_801427E0))->unk98) != 0) {
                 temp_a2 = var_s1_4->unk5D8;
                 temp_v0_3 = (((struct Shared_func_80286A78_S5 *)(temp_a2))->unk94);
                 if (temp_v0_3 != 0) {
@@ -551,7 +551,7 @@ loop_89:
         temp_v1_7 = ((struct Shared_SceneActorPrefix *)var_s2_3)[-1].definition;
         temp_v0_20 = temp_v1_7->unk0;
         if (temp_v0_20 == actor_type3) {
-            if (func_8028B25C_de(&D_8011FE88, temp_v1_7->unk28) != actor_kind_bd7) {
+            if (func_8028B25C_de(&D_8011BDC8, temp_v1_7->unk28) != actor_kind_bd7) {
                 goto block_108;
             }
             D_800F3CD0.primary.kindBd7 = scene_actor_ptr;
@@ -659,7 +659,7 @@ block_122:
             var_s0_4 += sizeof(struct Shared_SceneActorStride);
         } while (var_s1_3 < temp_s4);
     }
-    var_s1_4 = D_80145060;
+    var_s1_4 = D_80140FA0;
     if (var_s1_4 != 0) {
         
         temp_v0_2 = var_s1_4;
@@ -695,8 +695,8 @@ block_122:
     func_8020AA40_de(temp_v0_2);
     func_8020ABF0_de(temp_v0_2);
     (((struct Shared_func_80286A78_S1 *)(arg0))->unk0) = 4;
-    func_80449E18_de(&D_80145040);
-    temp_s0_3 = &D_80145040.address48;
+    func_80449E18_de(&D_80140F80);
+    temp_s0_3 = &D_80140F80.address48;
     func_8044A6CC_de(temp_s0_3);
     func_80236874_de(temp_s0_3);
 }

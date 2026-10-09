@@ -8,22 +8,22 @@
 
 
 
-extern u32 D_80154030;
+extern u32 D_8014DDA0;
 extern Entry_func_8043CF44_de D_0044EF44[];
-extern char D_800D7E14;
+extern char D_800D3DE8;
 
 s32 func_8043CF44_de(func_80254D70_S1 *arg0) {
-    if (D_80154030 < 12) {
-        arg0->unk14 = D_0044EF44[D_80154030].ptr;
+    if (D_8014DDA0 < 12) {
+        arg0->unk14 = D_0044EF44[D_8014DDA0].ptr;
     } else {
-        arg0->unk14 = &D_800D7E14;
+        arg0->unk14 = &D_800D3DE8;
     }
     return 0;
 }
 
-/* Steps index through the eleven entries (wrapping 10 to 0 and below 0 to 10), before the test when mode is 0 and after it otherwise, until one whose flag bit is set in D_801462CC; returns that index, or -1 after eleven tries. */
+/* Steps index through the eleven entries (wrapping 10 to 0 and below 0 to 10), before the test when mode is 0 and after it otherwise, until one whose flag bit is set in D_8014220C; returns that index, or -1 after eleven tries. */
 
-extern s32 D_801462CC;
+extern s32 D_8014220C;
 
 s32 func_8043CF84_de(s32 index, s32 step, s32 mode) {
     s32 i;
@@ -75,7 +75,7 @@ s32 func_8043CF84_de(s32 index, s32 step, s32 mode) {
             mask = 0x4000000;
             break;
         }
-        flags = &D_801462CC;
+        flags = &D_8014220C;
         if (*flags & mask) {
             return index;
         }

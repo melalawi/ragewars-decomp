@@ -1,7 +1,7 @@
 #include "span_1000/code_8027302C.h"
 #include "types.h"
 
-extern f32 D_800C99F8;
+extern f32 D_800C4908_de;
 
 extern void func_80274020_de(f32 *);
 
@@ -12,7 +12,7 @@ f32 func_80273EE4_de(f32 fraction, f32 first, f32 second) {
     func_80274020_de(&first);
     func_80274020_de(&second);
     if (first > second) {
-        var_f3 = second + *(&D_800C99F8 + 1);
+        var_f3 = second + *(&D_800C4908_de + 1);
         if ((var_f3 - first) < (first - second)) {
             second = var_f3;
         }

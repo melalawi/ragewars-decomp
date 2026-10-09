@@ -9,7 +9,7 @@ struct rw_constants_8029E1D4_CBA14_us_rev1_layout {
     double D_800C5C90_de;
     float D_800C5C98_de;
     float D_800C5C9C;
-    float D_800CAE30;
+    float D_800C5CA0_de;
 } __attribute__((packed));
 
 const struct rw_constants_8029E1D4_CBA14_us_rev1_layout rw_constants_8029E1D4_CBA14_us_rev1 = {

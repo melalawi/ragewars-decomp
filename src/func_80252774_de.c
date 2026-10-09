@@ -11,11 +11,11 @@
 
 
 extern char D_80101120;
-extern char D_801051A0;
+extern char D_801011A0;
 extern s32 D_80100570;
 extern struct { Node_func_80252774_de **value; } D_80100564;
 extern Node_func_80252774_de *D_80100568;
-extern struct { s32 value; } D_8010513C;
+extern struct { s32 value; } D_8010113C;
 extern u32 D_80101190;
 extern HashNode_func_80252774_de *D_80101194;
 
@@ -55,7 +55,7 @@ static inline void release(s32 node) {
         *(&D_80100570 - 2) = 0;
     }
     ((Node_func_80252774_de *)node)->flags = 0;
-    D_80100564.value[D_8010513C.value] = (Node_func_80252774_de *)node;
+    D_80100564.value[D_8010113C.value] = (Node_func_80252774_de *)node;
     *(&D_80100570 + 0x2F3) += 1;
 }
 
@@ -72,12 +72,12 @@ Request_func_80252774_de *func_80252774_de(s32 unused, Request_func_80252774_de 
                 func_80255488_de(existing->key);
                 existing->node->owner = 0;
                 if (!(existing->node->flags & 0x702)) {
-                    func_80255B2C_de(&D_801051A0, existing->node->data);
+                    func_80255B2C_de(&D_801011A0, existing->node->data);
                     release((s32)existing->node);
                 }
                 func_80254E88_de(0, existing);
             } else {
-                func_80255B2C_de(&D_801051A0, request->node->data);
+                func_80255B2C_de(&D_801011A0, request->node->data);
                 release((s32)request->node);
                 func_80254E88_de(0, request);
                 return existing;

@@ -14,7 +14,7 @@ struct Query;
 
 
 
-extern f32 D_800D0640[];
+extern f32 D_800CB400_de[];
 extern f32 func_80241728_de(struct Query *, f32, f32);
 extern f32 func_802B72B0_de(f32);
 extern void func_80271F9C_de(void *, void *, f32);
@@ -34,7 +34,7 @@ void func_8023E6EC_de(Segment_func_8023E6EC_de *arg0, struct Query *arg1) {
     void *node;
 
     start = func_80241728_de(arg1, arg0->x0, arg0->y0);
-    span = (func_80241728_de(arg1, arg0->x1, arg0->y1) + (D_800D0640[1] * 10.24f)) - start;
+    span = (func_80241728_de(arg1, arg0->x1, arg0->y1) + (D_800CB400_de[1] * 10.24f)) - start;
     dx = arg0->x1 - arg0->x0;
     dy = arg0->y1 - arg0->y0;
     flat = (dx * dx) + (dy * dy);

@@ -3,9 +3,9 @@
 
 
 
-extern func_8029A9E0_S1 *D_8014D080;
+extern func_8029A9E0_S1 *D_80146E00;
 
 /** Return one greater than the current object's word at offset four. */
 unsigned int func_802999E0_de(void) {
-    return D_8014D080->unk4 + 1;
+    return D_80146E00->unk4 + 1;
 }

@@ -14,7 +14,7 @@
 
 
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern void func_80253908_de(s32 heap);
 extern void func_80288938_de(Scene_func_80288EA8_de *scene);
 extern void *func_8028FDB4_de(void *table, s32 index);
@@ -35,11 +35,11 @@ void func_80288EA8_de(Scene_func_80288EA8_de *scene, void *camera) {
             return;
         }
     }
-    gSPDisplayList(D_80110634++, (unsigned int)func_8028FDB4_de(scene->model, 2));
+    gSPDisplayList(D_8010C574++, (unsigned int)func_8028FDB4_de(scene->model, 2));
     if (scene->lists[0] == 0) {
         for (pass = 0; pass < 2; pass++) {
-            scene->lists[pass] = D_80110634;
-            gSPBranchList(D_80110634++, 0);
+            scene->lists[pass] = D_8010C574;
+            gSPBranchList(D_8010C574++, 0);
             func_8026D980_de();
             objects = func_8028FDB4_de(scene->model, 1);
             while (*objects != 0) {
@@ -58,9 +58,9 @@ void func_80288EA8_de(Scene_func_80288EA8_de *scene, void *camera) {
                 }
             }
             func_8026D9D0_de();
-            gSPEndDisplayList(D_80110634++);
-            gSPBranchList(scene->lists[pass]++, (unsigned int)D_80110634);
+            gSPEndDisplayList(D_8010C574++);
+            gSPBranchList(scene->lists[pass]++, (unsigned int)D_8010C574);
         }
     }
-    gSPDisplayList(D_80110634++, (unsigned int)scene->lists[0]);
+    gSPDisplayList(D_8010C574++, (unsigned int)scene->lists[0]);
 }

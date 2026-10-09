@@ -2,8 +2,8 @@
 #include "types.h"
 
 /* Clears the word held in D_80154100. */
-extern s32 D_80154100;
+extern s32 D_8014DE70;
 
 void func_804441E4_de(void) {
-    D_80154100 = 0;
+    D_8014DE70 = 0;
 }

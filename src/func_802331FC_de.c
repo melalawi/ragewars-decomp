@@ -4,7 +4,7 @@
 #include "types.h"
 
 extern struct Shape_func_8020AF9C_de_2 D_80140FF8;
-extern void *D_800D052C[];
+extern void *D_800CB2EC[];
 extern f32 D_800C3048_de[2];
 
 extern void func_802227F4_de(void *, void *, s32);
@@ -47,7 +47,7 @@ void func_802331FC_de(void *arg0, void *arg1) {
         temp_a0 = ((func_8020A028_S3 *)(arg0))->unk1D8;
         index = ((func_80232C78_S2 *)(temp_a0))->unk62E;
         ((ObjectState140 *)(arg1))->unk_130 =
-            ((func_80232C78_S4 *)(D_800D052C[index]))->unk18 *
+            ((func_80232C78_S4 *)(D_800CB2EC[index]))->unk18 *
             D_800C3048_de[1];
         if ((((func_80232C78_S2 *)(temp_a0))->unk62E == 8) &&
             (((func_80232C78_S2 *)(temp_a0))->unk11C0 == 0)) {

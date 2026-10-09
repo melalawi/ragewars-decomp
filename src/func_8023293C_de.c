@@ -2,7 +2,7 @@
 #include "span_1000/code_80231F5C.h"
 #include "types.h"
 
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 extern u8 D_801462E5;
 
 extern s32 func_80442A28_de(void *arg0);
@@ -50,7 +50,7 @@ void func_8023293C_de(void *arg0, void *arg1, void *arg2) {
     }
     func_8026DA4C_de(((func_80205628_S3 *)(arg2))->unkC,
                   ((func_8023292C_S1 *)(arg0))->unkB4, 1,
-                  (char *)arg0 + (D_800D297C * 0x18 + 0x140), 0, result);
+                  (char *)arg0 + (D_800CD72C * 0x18 + 0x140), 0, result);
 }
 
 #if defined(VERSION_EU) || defined(VERSION_EU_X)

@@ -26,8 +26,8 @@ void func_8022DB04_de(Actor126 *actor, Object126 *arg1) {
         angle = D_800C2DCC_de;
         sine = func_802B7130_de(object_angle + angle);
         cosine = func_802B6560_de(object->angle + angle);
-        sine *= D_800C7EC0;
-        cosine *= D_800C7EC0;
+        sine *= D_800C2DD0_de;
+        cosine *= D_800C2DD0_de;
         object->x += sine;
         object->y += cosine;
         object->angle += actor->offset728;

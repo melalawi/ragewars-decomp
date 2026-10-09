@@ -94,11 +94,11 @@ typedef struct func_8041F2A0_Config func_8041F2A0_Config;
 
 
 
-extern SelectionScreenState *D_800E42D0;
-extern func_8041F2A0_Layout D_800E42D4[];
+extern SelectionScreenState *D_800E0280;
+extern func_8041F2A0_Layout D_800E0284_de[];
 
 
-extern func_8041F2A0_Config D_80146398[];
+extern func_8041F2A0_Config D_801422D8[];
 extern SelectionScreenState *func_8025305C_de(s32);
 extern s32 func_8041B610_de(s32, s32);
 extern void func_8041B6E8_de(s32, s32, s32);

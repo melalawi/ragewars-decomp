@@ -3,7 +3,7 @@
 #include "span_1000/code_8022D944.h"
 #include "types.h"
 
-extern void *D_800D052C[];
+extern void *D_800CB2EC[];
 extern s32 D_80140FF8;
 
 
@@ -20,7 +20,7 @@ s32 func_8022E3C4_de(void *arg0, s32 arg1, s32 arg2) {
     void *item;
     s32 i;
 
-    resource = D_800D052C[arg1];
+    resource = D_800CB2EC[arg1];
     if (((func_8022E3B4_S1 *)(arg0))->unk1450 != 0) {
         entry = &((func_8022E3B4_S2 *)(resource))->unk2C;
         goto scan_setup;

@@ -26,7 +26,7 @@
 
 extern s32 D_800CD8D0[];
 
-extern char D_8011FE88;
+extern char D_8011BDC8;
 
 extern void func_8024DD10_de(PlacedProp *, Record_func_8024F960_eu *, s32, char *);
 extern PropGeometry *func_8028CF6C_de(void *, s32);
@@ -34,18 +34,18 @@ extern void func_802736D4_de(char *, f32);
 extern void func_8027347C_de(char *, f32, f32, f32);
 extern void func_80273448_de(char *, f32, f32, f32);
 extern void func_80273D6C_de(char *);
-extern void func_8027302C(char *, char *);
+extern void func_80272FBC_de(char *, char *);
 extern void func_8027027C_de(char *, char *);
 
 static inline s32 func_80250BF0_de(void) {
     s32 next;
 
-    next = D_800D0910 + 1;
-    D_800D0910 = next;
+    next = D_800CB6D0 + 1;
+    D_800CB6D0 = next;
     if (next == 0x3FFFFF) {
-        D_800D0910 = 0x380000;
+        D_800CB6D0 = 0x380000;
     }
-    return D_800D0910;
+    return D_800CB6D0;
 }
 
 void func_8024F960_eu(PlacedProp *prop, Record_func_8024F960_eu *record, s32 owner, char *segments, f32 spacing) {
@@ -65,7 +65,7 @@ void func_8024F960_eu(PlacedProp *prop, Record_func_8024F960_eu *record, s32 own
     prop->fieldB0 = 0;
     prop->fieldB4 = 0;
     turn = 0.0f;
-    prop->model = func_8028CF6C_de(&D_8011FE88, record->model);
+    prop->model = func_8028CF6C_de(&D_8011BDC8, record->model);
     prop->fade = 16;
     prop->fieldDC = 0;
     model = prop->model;
@@ -117,7 +117,7 @@ void func_8024F960_eu(PlacedProp *prop, Record_func_8024F960_eu *record, s32 own
         prop->max.z = position.z + record->extents[5] * 10.23999977f + 0.5f;
         prop->fieldD4 = record->value;
     }
-    func_8027302C(prop->matrix, matrix);
+    func_80272FBC_de(prop->matrix, matrix);
     func_8027027C_de(matrix, prop->transform);
     prop->position = position;
     if (record->segment == 0xFFFF) {
@@ -126,5 +126,5 @@ void func_8024F960_eu(PlacedProp *prop, Record_func_8024F960_eu *record, s32 own
         prop->segment = segments + record->segment * 32;
     }
     prop->key = func_80250BF0_de() << 10;
-    prop->colorFrame = D_800D297B - 1;
+    prop->colorFrame = D_800CD72B - 1;
 }

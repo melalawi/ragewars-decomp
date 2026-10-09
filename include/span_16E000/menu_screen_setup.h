@@ -46,10 +46,10 @@ typedef struct SetupScreen {
     s32 unk468;
     s32 unk46C;
 } SetupScreen;
-extern SetupScreen *D_800E4F60;
-extern ListScreenRecord D_80146398[];
+extern SetupScreen *D_800E0F10;
+extern ListScreenRecord D_801422D8[];
 /* The prior selection and pending-state words are one real two-word array. */
-extern s32 D_80154020[2];
+extern s32 D_8014DD90[2];
 /* Actual loads in the US-rev1 constructor; not guessed constants. */
 extern f32 D_800E1AA0, D_800E1AA4, D_800E1AA8, D_800E1AAC;
 extern f32 D_800E1AB0, D_800E1AB4, D_800E1AB8;

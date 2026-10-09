@@ -3,20 +3,20 @@
 
 
 
-extern u32 D_801462D0;
-extern s32 D_80146878;
+extern u32 D_80142210;
+extern s32 D_801427B8;
 extern u8 D_800D35A8[];
 extern u8 D_800D35AC[];
 extern u8 D_800D35B0[];
 
 /* Sets bit 24 of the item's flags when D_80146878 is 8 (clears it otherwise) and points the item at the text table for the configuration D_801462D0 (8, 0x10 or 0x20); returns 0. */
 s32 func_80444314_de(MenuItem_func_80444314_de *item) {
-    if (D_80146878 == 8) {
+    if (D_801427B8 == 8) {
         item->flags |= 0x01000000;
     } else {
         item->flags &= ~0x01000000;
     }
-    switch (D_801462D0) {
+    switch (D_80142210) {
     case 8:
         item->table = D_800D35A8;
         break;

@@ -7,9 +7,9 @@
 
 
 
-extern s32 D_80110620;
-extern Gfx *D_80110634;
+extern s32 D_8010C560;
+extern Gfx *D_8010C574;
 
 void func_8026D914_de(s32 arg0) {
-    if (D_80110620 == 0) gDPSetColorDither(D_80110634++, arg0) else gDPSetColorDither(D_80110634++, G_CD_NOISE);
+    if (D_8010C560 == 0) gDPSetColorDither(D_8010C574++, arg0) else gDPSetColorDither(D_8010C574++, G_CD_NOISE);
 }

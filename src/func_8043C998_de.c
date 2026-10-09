@@ -2,8 +2,8 @@
 #include "types.h"
 /* Resets D_80154030 to -1. */
 
-extern s32 D_80154030;
+extern s32 D_8014DDA0;
 
 void func_8043C998_de(void) {
-    D_80154030 = -1;
+    D_8014DDA0 = -1;
 }

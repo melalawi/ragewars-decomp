@@ -15,10 +15,10 @@ extern char D_00450C14_de[];
 extern char D_00450C38_de[];
 extern char D_00450C5C_de[];
 extern s32 D_8014D4C0_de;
-extern s32 D_8015375C;
-extern s32 D_80153760;
+extern s32 D_8014D4CC;
+extern s32 D_8014D4D0;
 extern s32 D_8014D4EC_de;
-extern s32 D_800E28C8;
+extern s32 D_800DE878;
 
 char *func_8040A09C_de(struct Record_func_80409BDC_de *menu) {
     s32 channel[2]; /* FAKEMATCH: unused second slot keeps channel in the frame */
@@ -30,8 +30,8 @@ char *func_8040A09C_de(struct Record_func_80409BDC_de *menu) {
         if (D_8014D4EC_de == 0) {
             return text;
         }
-        if (D_8015375C != 0) {
-            channel[0] = D_800E28C8;
+        if (D_8014D4CC != 0) {
+            channel[0] = D_800DE878;
         } else {
             channel[0] = menu->inner->unk4;
         }
@@ -51,12 +51,12 @@ char *func_8040A09C_de(struct Record_func_80409BDC_de *menu) {
             break;
         }
         text = prompt;
-    } else if (D_80153760 != 0) {
+    } else if (D_8014D4D0 != 0) {
         text = D_0044FFA4;
         if (D_8014D4EC_de != 0) {
             text = D_0044FB50;
         }
-    } else if (D_8015375C != 0) {
+    } else if (D_8014D4CC != 0) {
         text = D_0044E4F8;
     }
     return text;

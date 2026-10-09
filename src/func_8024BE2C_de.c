@@ -3,5 +3,5 @@
 
 
 float func_8024BE2C_de(void) {
-    return D_800C8C44;
+    return D_800C3B54_de;
 }

@@ -8,7 +8,7 @@
 
 
 
-extern Menu_func_8041D134_de *D_800E3590;
+extern Menu_func_8041D134_de *D_800DF540;
 
 extern void func_8025DF34_de(s32 sound);
 extern void func_8029973C_de(void);
@@ -26,75 +26,75 @@ extern void func_8041DA5C_de(s32 style);
 s32 func_8041D134_de(s32 arg0, s32 arg1, s32 arg2) {
     Node_func_8041D134_de *node;
 
-    switch (D_800E3590->state) {
+    switch (D_800DF540->state) {
     case 1:
-        D_800E3590->left->x += D_800E3590->leftStep;
-        D_800E3590->right->x -= D_800E3590->rightStep;
-        if (--D_800E3590->timer <= 0) {
+        D_800DF540->left->x += D_800DF540->leftStep;
+        D_800DF540->right->x -= D_800DF540->rightStep;
+        if (--D_800DF540->timer <= 0) {
             func_8025DF34_de(0xE79);
-            func_8040E8D8_de(D_800E3590->groupA, 1);
-            func_80419F58_de(D_800E3590->fade, 4);
-            D_800E3590->state = 4;
-            D_800E3590->timer = 4;
+            func_8040E8D8_de(D_800DF540->groupA, 1);
+            func_80419F58_de(D_800DF540->fade, 4);
+            D_800DF540->state = 4;
+            D_800DF540->timer = 4;
         }
         break;
     case 2:
-        D_800E3590->left->x -= D_800E3590->leftStep;
-        D_800E3590->right->x += D_800E3590->rightStep;
-        if (--D_800E3590->timer <= 0) {
-            D_800E3590->state = 3;
+        D_800DF540->left->x -= D_800DF540->leftStep;
+        D_800DF540->right->x += D_800DF540->rightStep;
+        if (--D_800DF540->timer <= 0) {
+            D_800DF540->state = 3;
             func_8029973C_de();
             func_802998A8_de();
             return 0;
         }
         break;
     case 4:
-        if (func_80419F38_de(D_800E3590->fade) != 0) {
-            func_80419F24_de(D_800E3590->fade);
-            D_800E3590->state = 6;
-            D_800E3590->timer = 4;
-            func_8040E8D8_de(D_800E3590->groupB, 1);
-            func_8040E8D8_de(D_800E3590->groupC, 1);
+        if (func_80419F38_de(D_800DF540->fade) != 0) {
+            func_80419F24_de(D_800DF540->fade);
+            D_800DF540->state = 6;
+            D_800DF540->timer = 4;
+            func_8040E8D8_de(D_800DF540->groupB, 1);
+            func_8040E8D8_de(D_800DF540->groupC, 1);
         }
         break;
     case 5:
         func_8025DF34_de(0xE78);
-        D_800E3590->state = 2;
-        D_800E3590->timer = 4;
-        func_8040E8D8_de(D_800E3590->groupB, 0);
-        func_8040E8D8_de(D_800E3590->groupC, 0);
-        func_8040E8D8_de(D_800E3590->groupA, 0);
+        D_800DF540->state = 2;
+        D_800DF540->timer = 4;
+        func_8040E8D8_de(D_800DF540->groupB, 0);
+        func_8040E8D8_de(D_800DF540->groupC, 0);
+        func_8040E8D8_de(D_800DF540->groupA, 0);
         break;
     case 6:
-        D_800E3590->styleValue += D_800E3590->styleStep;
-        D_800E3590->groupC->style += D_800E3590->alphaStep;
-        func_8041DA5C_de(D_800E3590->styleValue);
-        if (--D_800E3590->timer <= 0) {
-            D_800E3590->groupC->style = 100;
+        D_800DF540->styleValue += D_800DF540->styleStep;
+        D_800DF540->groupC->style += D_800DF540->alphaStep;
+        func_8041DA5C_de(D_800DF540->styleValue);
+        if (--D_800DF540->timer <= 0) {
+            D_800DF540->groupC->style = 100;
             func_8041DA5C_de(0x6E);
-            D_800E3590->state = 3;
-            func_8040E8D8_de(D_800E3590->cursor, 1);
+            D_800DF540->state = 3;
+            func_8040E8D8_de(D_800DF540->cursor, 1);
         }
         break;
     case 7:
         break;
     }
 
-    if (D_800E3590->state == 3) {
-        D_800E3590->clock += arg2;
-        D_800E3590->cursor->style = func_802B6560_de((f32) D_800E3590->clock * 0.0033333334f) * 30.0f + 220.0f;
-        node = func_8041B7FC_de(D_800E3590->handle, 0);
-        if (node != D_800E3590->focus) {
+    if (D_800DF540->state == 3) {
+        D_800DF540->clock += arg2;
+        D_800DF540->cursor->style = func_802B6560_de((f32) D_800DF540->clock * 0.0033333334f) * 30.0f + 220.0f;
+        node = func_8041B7FC_de(D_800DF540->handle, 0);
+        if (node != D_800DF540->focus) {
             func_8025DF34_de(0xE7E);
-            if (D_800E3590->focus != 0) {
-                D_800E3590->focus->style = 0x6E;
+            if (D_800DF540->focus != 0) {
+                D_800DF540->focus->style = 0x6E;
             }
-            D_800E3590->focus = node;
+            D_800DF540->focus = node;
             node->style = 0xE1;
             func_8041D960_de();
             func_8041D4E0_de();
-            D_800E3590->cursor->x = node->x - 2;
-            D_800E3590->cursor->y = node->y;
+            D_800DF540->cursor->x = node->x - 2;
+            D_800DF540->cursor->y = node->y;
         }
     }
     return 0;

@@ -10,14 +10,14 @@
 
 
 
-extern char D_8011FE88[];
+extern char D_8011BDC8[];
 extern struct func_8022CA04_S3 *func_8028B2F8_de(void *, struct StateFlags *);
 
 f32 func_8024E80C_de(struct Object_func_8024E80C_de *object) {
     struct func_8022CA04_S3 *entry;
 
     if (object->key != 0 && (object->key->flags & 1)) {
-        entry = func_8028B2F8_de(D_8011FE88, object->key);
+        entry = func_8028B2F8_de(D_8011BDC8, object->key);
         if (entry != 0) {
             return entry->unk20;
         }

@@ -7,7 +7,7 @@
  * when negative; a transform is built from the actor's orientation, scaled flat by the shadow size,
  * positioned at the ground under the actor, stored as the actor's per-frame matrix and submitted through
  * func_8026992C_de. */
-extern s32 D_800D297C;
+extern s32 D_800CD72C;
 extern f32 func_8024E2FC_de(void *);
 extern void func_8024D870_de(f32 *, void *);
 extern void func_8027254C_de(Vec3 *, f32);
@@ -38,6 +38,6 @@ void func_8024EF28_de(void *actor) {
     func_80274244_de(rotation, matrix);
     func_8027347C_de(matrix, size, 1.0f, size);
     func_80273448_de(matrix, position.x, position.y, position.z);
-    func_8027027C_de(matrix, (char *)actor + ((D_800D297C << 6) + 0xE8));
-    func_8026992C_de((char *)actor + ((D_800D297C << 6) + 0xE8), 1, 0x96);
+    func_8027027C_de(matrix, (char *)actor + ((D_800CD72C << 6) + 0xE8));
+    func_8026992C_de((char *)actor + ((D_800CD72C << 6) + 0xE8), 1, 0x96);
 }

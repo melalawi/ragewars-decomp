@@ -9,9 +9,9 @@
 
 /* Draws the parts of a model resource that the owner has enabled, when the frame command buffer still has 3000 commands free: each part material's low two bits of byte 6 pick an owner flag at 0x102 (0x100, 0x8 or 0x2, 0x80 or 0x20 by bit 4) that must be set before func_80269A80_de accepts the material and its display list is emitted. Adapted from func_8026DA4C_de with the owner argument and the per-material flag switch added. */
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern struct Frame118 *D_8011BDC0;
-extern u32 D_800E28A4;
+extern u32 D_800DE854_de;
 extern void func_80253BBC_de(s32 heap, void **resource);
 extern void *func_8028FDB4_de(void *table, s32 index);
 extern s32 func_8026B504_de(s32 matrix, s32 lights, void *material);
@@ -27,18 +27,18 @@ void func_8026B9EC_de(void **resource, struct Owner104 *owner, s32 matrix, s32 s
     s32 i;
     s32 visible;
 
-    if (D_800E28A4 - ((u32)D_80110634 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
+    if (D_800DE854_de - ((u32)D_8010C574 - (u32)D_8011BDC0->commands) / sizeof(Gfx) < 3000) {
         return;
     }
     header = *resource;
     func_80253BBC_de(0, resource);
-    if (segment != 0) { gSPSegment(D_80110634++, 1, matrix); }
-    else { gSPMatrix(D_80110634++, matrix, G_MTX_LOAD); }
+    if (segment != 0) { gSPSegment(D_8010C574++, 1, matrix); }
+    else { gSPMatrix(D_8010C574++, matrix, G_MTX_LOAD); }
     base = textures;
     if (base == 0) {
         base = func_8028FDB4_de(header, 0);
     }
-    gSPSegment(D_80110634++, 2, (unsigned int)base);
+    gSPSegment(D_8010C574++, 2, (unsigned int)base);
     parts = func_8028FDB4_de(header, 2);
     count = *(s32 *)parts;
     for (i = 0; i < count; i++) {
@@ -81,7 +81,7 @@ void func_8026B9EC_de(void **resource, struct Owner104 *owner, s32 matrix, s32 s
             Gfx *cmd;
             void *list = func_8028FDB4_de(part, 1);
 
-            cmd = D_80110634++;
+            cmd = D_8010C574++;
             gSPDisplayList(cmd, (unsigned int)list);
         }
     }
@@ -92,12 +92,12 @@ extern Node_func_8026BC60_de *D_8010C56C;
 extern s32 D_8010C570;
 extern s32 D_8010C578;
 extern Node_func_8026BC60_de *D_8010C57C;
-extern s32 D_80110640;
+extern s32 D_8010C580;
 extern Node_func_8026BC60_de *D_8010C584;
-extern void **D_8011064C;
+extern void **D_8010C58C;
 extern Item_func_8026BC60_de D_8010C590[];
-extern Node_func_8026BC60_de D_801144D0[];
-extern struct Shape_typemap_165 D_801157D8[];
+extern Node_func_8026BC60_de D_80110410[];
+extern struct Shape_typemap_165 D_80111718[];
 
 extern void *func_8028FDB4_de(void *, s32);
 
@@ -136,8 +136,8 @@ void func_8026BC60_de(void) {
     Item_func_8026BC60_de *item;
     struct Shape_typemap_165 *param;
 
-    if (D_80110640 != 0) {
-        list = func_8028FDB4_de(*D_8011064C, 2);
+    if (D_8010C580 != 0) {
+        list = func_8028FDB4_de(*D_8010C58C, 2);
         count = *list;
         for (i = 0; i < count; i++) {
             entry = func_8028FDB4_de(list, i);
@@ -154,7 +154,7 @@ void func_8026BC60_de(void) {
                 if (D_8010C578 == 120) {
                     break;
                 }
-                node = &D_801144D0[D_8010C578++];
+                node = &D_80110410[D_8010C578++];
                 node->key = key;
                 node->source = source;
                 node->tail = ((void *) 0);
@@ -230,8 +230,8 @@ void func_8026BC60_de(void) {
                 }
             }
             data = func_8028FDB4_de(entry, 1);
-            for (j = 0; j < D_80110640; j++) {
-                param = &D_801157D8[j];
+            for (j = 0; j < D_8010C580; j++) {
+                param = &D_80111718[j];
                 if (D_8010C570 != 500) {
                     item = &D_8010C590[D_8010C570++];
                     item->data = data;
@@ -251,6 +251,6 @@ void func_8026BC60_de(void) {
                 }
             }
         }
-        D_80110640 = 0;
+        D_8010C580 = 0;
     }
 }

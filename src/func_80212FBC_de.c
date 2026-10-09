@@ -20,7 +20,7 @@
 
 
 
-extern RouteChaseGraph D_8013B364;
+extern RouteChaseGraph D_801372A4;
 
 
 
@@ -37,7 +37,7 @@ void func_80212FBC_de(RouteChaseActor *actor)
 {
     s32 path[64];
     RouteChaseBot *bot = actor->player->bot;
-    RouteChaseGraph *graph = &D_8013B364;
+    RouteChaseGraph *graph = &D_801372A4;
     f32 dist;
     s32 i;
     s32 len;

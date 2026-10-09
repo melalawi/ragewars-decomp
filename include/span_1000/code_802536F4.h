@@ -32,7 +32,7 @@ struct func_8025398C_S1;
 typedef struct func_8025398C_S1 func_8025398C_S1;
 
 /* unbake published declaration: published_86494b235ad356c68f5a1a91 */
-extern int D_80104580;
+extern int D_80100580;
 
 struct NodePair80253E04;
 /* unbake published declaration: published_98c6ccc5639b322ef6a88261 */

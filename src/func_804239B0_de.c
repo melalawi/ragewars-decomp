@@ -8,9 +8,9 @@
 typedef s32 (*Handler80423B88)(void *, s32, s32, s32, s32);
 
 
-extern FieldRow D_800E45AC[];
-extern FieldRow D_800E45B0[];
-extern Handler80423B88 D_800E45B4;
+extern FieldRow D_800E055C_de[];
+extern FieldRow D_800E0560_de[];
+extern Handler80423B88 D_800E0564_de;
 
 
 
@@ -22,14 +22,14 @@ s32 func_804239B0_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     s32 actor_kind;
     s32 table_kind;
 
-    if (D_800E45B4 != 0) {
+    if (D_800E0564_de != 0) {
         wildcard = 0x7530;
-        entry = (char *)&D_800E45B4;
+        entry = (char *)&D_800E0564_de;
         index = 0;
         do {
-            if (D_800E45AC[index].value == arg1) {
+            if (D_800E055C_de[index].value == arg1) {
                 actor_kind = ((func_8021C9B4_S3 *)(arg0))->unkC;
-                table_kind = D_800E45B0[index].value;
+                table_kind = D_800E0560_de[index].value;
                 if ((table_kind == actor_kind) || (table_kind == wildcard)) {
                     return (*(Handler80423B88 *)entry)(arg0, arg1, arg2, arg3, arg4);
                 }

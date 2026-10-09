@@ -14,8 +14,8 @@
 
 
 
-extern char D_80145040;
-extern f32 D_80115DEC;
+extern char D_80140F80;
+extern f32 D_80111D2C;
 extern Vector4f func_8024796C_de(char *);
 extern void func_80274244_de(Vector4f *, f32 *);
 extern void func_80272898_de(f32 *, Vec3 *, Vec3 *);
@@ -64,7 +64,7 @@ Vector4f func_8024D4AC_de(char *actor, Vec3 point) {
         forward.z = 1.0f;
     }
     if (target == 0) {
-        found = func_8022A480_de(&D_80145040, point);
+        found = func_8022A480_de(&D_80140F80, point);
         if (found != 0) {
             target = found;
         }
@@ -86,7 +86,7 @@ Vector4f func_8024D4AC_de(char *actor, Vec3 point) {
     turn.x = axis.x * scale;
     turn.y = axis.y * scale;
     turn.z = axis.z * scale;
-    D_80115DEC = scale;
+    D_80111D2C = scale;
     turn.w = func_802B6560_de(angle);
     if (actor != 0 && *(u8 *)actor == 1) {
         func_80274098_de(&result, &aim, &turn);

@@ -6,7 +6,7 @@
 
 
 
-extern float D_800C7E00;
+extern float D_800C2D10_de;
 
 void func_8022B550_de(Obj_func_8022B550_de *obj, float target, float rate, int kind, int tag) {
     int i;
@@ -18,7 +18,7 @@ void func_8022B550_de(Obj_func_8022B550_de *obj, float target, float rate, int k
             t->target = target;
             t->elapsed = 0.0f;
             t->tag = tag;
-            t->duration = rate * D_800C7E00;
+            t->duration = rate * D_800C2D10_de;
             do {
                 t->step = target / t->duration;
                 return;

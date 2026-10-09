@@ -3,7 +3,7 @@
 #include "span_1000/code_8028469C.h"
 #include "types.h"
 
-extern func_80284AF4_G2 D_80145060;
+extern func_80284AF4_G2 D_80140FA0;
 
 extern f32 func_8024D284_de(void *arg0);
 extern f32 func_802726BC_de(f32 *arg0, f32 *arg1);
@@ -32,7 +32,7 @@ void func_80284B20_de(void *arg0) {
         return;
     }
     radius_sq *= D_800C4E90_de;
-    node = D_80145060.unk0;
+    node = D_80140FA0.unk0;
     radius_sq *= radius_sq;
     if (node == 0) {
         return;

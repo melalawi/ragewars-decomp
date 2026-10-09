@@ -13,8 +13,8 @@ void func_802727D8_de(void *);                            /* extern */
 void func_80442544_de(void *);                    /* extern */
 
 
-extern s32 D_800E28D0, D_800E28D4;
-extern struct Shape_func_802764D4_de_2 D_80103220;
+extern s32 D_800DE880_de, D_800DE884_de;
+extern struct Shape_func_802764D4_de_2 D_800FF220;
 
 
 
@@ -48,8 +48,8 @@ void func_8044A170_de(State_func_8044A170_de *arg0) {
     arg0->unk140 = zero;
     arg0->unk14C = temp_f21;
     func_802727D8_de(((void *)&((func_8044ADC0_S1 *)(arg0))->unk1A0));
-    arg0->unk29C = (f32) D_800E28D0;
-    arg0->unk2A0 = (f32) D_800E28D4;
+    arg0->unk29C = (f32) D_800DE880_de;
+    arg0->unk2A0 = (f32) D_800DE884_de;
     arg0->unk518 = -1;
     arg0->unk2A4 = zero;
     arg0->unk2A8 = zero;
@@ -99,7 +99,7 @@ void func_8044A170_de(State_func_8044A170_de *arg0) {
     var_a1 = 0;
     var_v1 = arg0;
 
-    temp_a0 = D_800E28D0 * 2;
+    temp_a0 = D_800DE880_de * 2;
     do {
         record = (State_func_8044A170_de *)&((ClipStride *)arg0)[var_a1];
         record->unk2B0 = temp_a0;
@@ -121,7 +121,7 @@ void func_8044A170_de(State_func_8044A170_de *arg0) {
     arg0->unk120 = 0;
     arg0->unk124 = 0x32;
     arg0->unk126 = 0;
-    D_80103220.field_4 = 0;
+    D_800FF220.field_4 = 0;
     func_80255CA0_de(((void *)&((func_8044ADC0_S1 *)(arg0))->unkE40), 0, 4);
     func_80239C20_de(arg0);
 }

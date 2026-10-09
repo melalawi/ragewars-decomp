@@ -12,11 +12,11 @@
 
 
 
-extern Gfx *D_80110634;
+extern Gfx *D_8010C574;
 extern Frame *D_8011BDC0;
-extern s32 D_800E28D0;
-extern s32 D_800E28D8;
-extern void *D_801536E8;
+extern s32 D_800DE880_de;
+extern s32 D_800DE888_de;
+extern void *D_8014D458;
 extern void func_8026925C_de(s32 mode);
 
 
@@ -31,38 +31,38 @@ extern void func_8026925C_de(s32 mode);
 void func_80291BE8_de(s32 unused, s32 ulx, s32 lrx, s32 uly, s32 lry, s32 interlaced) {
     s32 y;
 
-    gDPPipeSync(D_80110634++);
+    gDPPipeSync(D_8010C574++);
     func_8026925C_de(0x14);
-    gDPSetColorImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, D_800E28D0, (u32)((D_801536E8)));
-    gDPPipeSync(D_80110634++);
-    gDPSetCycleType(D_80110634++, G_CYC_FILL);
+    gDPSetColorImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, D_800DE880_de, (u32)((D_8014D458)));
+    gDPPipeSync(D_8010C574++);
+    gDPSetCycleType(D_8010C574++, G_CYC_FILL);
     if (!interlaced) {
-        gDPSetFillColor(D_80110634++, ((0xFFFCFFFC)));
-        gDPFillRectangle(D_80110634++, (ulx), (uly), (lrx), (lry));
-    } else if (D_800E28D8 == 0) {
-        gDPSetFillColor(D_80110634++, ((0xFFFCFFFC)));
+        gDPSetFillColor(D_8010C574++, ((0xFFFCFFFC)));
+        gDPFillRectangle(D_8010C574++, (ulx), (uly), (lrx), (lry));
+    } else if (D_800DE888_de == 0) {
+        gDPSetFillColor(D_8010C574++, ((0xFFFCFFFC)));
         for (y = uly; y < lry; y += 2) {
-            gDPFillRectangle(D_80110634++, (ulx), (y), (lrx), (y));
+            gDPFillRectangle(D_8010C574++, (ulx), (y), (lrx), (y));
         }
-        gDPSetFillColor(D_80110634++, ((0)));
+        gDPSetFillColor(D_8010C574++, ((0)));
         for (y = uly + 1; y < lry; y += 2) {
-            gDPFillRectangle(D_80110634++, (ulx), (y), (lrx), (y));
+            gDPFillRectangle(D_8010C574++, (ulx), (y), (lrx), (y));
         }
     } else {
-        gDPSetFillColor(D_80110634++, ((0xFFFCFFFC)));
+        gDPSetFillColor(D_8010C574++, ((0xFFFCFFFC)));
         for (y = uly; y < lry; y++) {
             if ((y & 3) < 2) {
-                gDPFillRectangle(D_80110634++, (ulx), (y), (lrx), (y));
+                gDPFillRectangle(D_8010C574++, (ulx), (y), (lrx), (y));
             }
         }
-        gDPSetFillColor(D_80110634++, ((0)));
+        gDPSetFillColor(D_8010C574++, ((0)));
         for (y = uly; y < lry; y++) {
             if ((y & 3) >= 2) {
-                gDPFillRectangle(D_80110634++, (ulx), (y), (lrx), (y));
+                gDPFillRectangle(D_8010C574++, (ulx), (y), (lrx), (y));
             }
         }
     }
-    gDPSetColorImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, D_800E28D0, (u32)((D_8011BDC0->colorImage)));
-    gDPPipeSync(D_80110634++);
-    gDPSetCycleType(D_80110634++, G_CYC_2CYCLE);
+    gDPSetColorImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, D_800DE880_de, (u32)((D_8011BDC0->colorImage)));
+    gDPPipeSync(D_8010C574++);
+    gDPSetCycleType(D_8010C574++, G_CYC_2CYCLE);
 }

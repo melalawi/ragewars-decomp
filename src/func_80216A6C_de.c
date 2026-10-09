@@ -11,7 +11,7 @@ typedef struct CollisionInfo CollisionInfo;
 
 
 
-extern CollisionInfo D_80103FD0;
+extern CollisionInfo D_800FFFD0;
 extern StateFlags *D_8010028C;
 extern StateFlags *D_801002A4;
 extern f32 func_8024D284_de(Instance8020CD74 *);
@@ -38,7 +38,7 @@ s32 func_80216A6C_de(Instance8020CD74 *arg0, void *unused, Instance8020CD74 *tar
     desired.y += func_8024D284_de(target) * scale;
     desired.y += ((Actor_func_80214310_de *)(target))->eye;
 
-    func_802444A4_de(arg0, ((Player *)(arg0))->pos, desired, &D_80103FD0);
+    func_802444A4_de(arg0, ((Player *)(arg0))->pos, desired, &D_800FFFD0);
     *arg0 = saved;
 
     if (D_8010028C != 0 && (D_8010028C->flags & 2)) {

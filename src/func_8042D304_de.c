@@ -6,8 +6,8 @@
    the player's 150-byte record in D_80146398, the cartridge's jump table jtbl_800E1B48 sending
    ranks 0 to 4 to frame 0x63, 0x62, 0x61 or 0x5F or to hiding it again with frame 0x60, which any
    higher rank also gets. */
-extern struct func_8042CE54_S1 *D_800E53C0;
-extern u8 D_80146398[];
+extern struct func_8042CE54_S1 *D_800E1370;
+extern u8 D_801422D8[];
 extern void *jtbl_800DDB18[];
 extern void *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(struct Item_func_8042D304_de *, s32);
@@ -21,8 +21,8 @@ void func_8042D304_de(s32 player, s32 kind, unsigned short group) {
     u32 rank;
     s32 id;
     s32 frame;
-    record = &D_80146398[player * 150];
-    parent = func_8040EC30_de(D_800E53C0->unkE0, group);
+    record = &D_801422D8[player * 150];
+    parent = func_8040EC30_de(D_800E1370->unkE0, group);
     switch (kind) {
     case 0:
     default:

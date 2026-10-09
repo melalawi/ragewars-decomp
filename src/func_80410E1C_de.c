@@ -10,27 +10,27 @@
 
 
 
-extern Pool_func_80410E1C_de D_80153C0C;
+extern Pool_func_80410E1C_de D_8014D97C;
 
 extern void func_80419624_de(void *data);
 
 void func_80410E1C_de(s32 mode) {
     s32 i;
 
-    for (i = 0; i < D_80153C0C.count; i++) {
+    for (i = 0; i < D_8014D97C.count; i++) {
         if (mode == 1) {
-            D_80153C0C.timers[i].delay = 0;
-            D_80153C0C.timers[i].owner = 0;
+            D_8014D97C.timers[i].delay = 0;
+            D_8014D97C.timers[i].owner = 0;
         }
-        if (D_80153C0C.timers[i].owner != -1) {
-            if (D_80153C0C.timers[i].delay > 0) {
-                D_80153C0C.timers[i].delay--;
+        if (D_8014D97C.timers[i].owner != -1) {
+            if (D_8014D97C.timers[i].delay > 0) {
+                D_8014D97C.timers[i].delay--;
             } else {
-                if (D_80153C0C.resources[i].flags & 1) {
-                    func_80419624_de(D_80153C0C.resources[i].data);
-                    D_80153C0C.resources[i].flags &= ~1;
+                if (D_8014D97C.resources[i].flags & 1) {
+                    func_80419624_de(D_8014D97C.resources[i].data);
+                    D_8014D97C.resources[i].flags &= ~1;
                 }
-                D_80153C0C.timers[i].owner = 0;
+                D_8014D97C.timers[i].owner = 0;
             }
         }
     }

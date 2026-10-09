@@ -11,8 +11,8 @@
 
 
 
-extern char D_8013B1A8;
-extern f32 D_800C7F08[];
+extern char D_801370E8;
+extern f32 D_800C2E18_de[];
 
 extern Marker *func_80268C1C_de(char *, s32);
 extern void func_8024BC94_de(Vec3 *, void *, Vec3);
@@ -29,7 +29,7 @@ void func_8022E78C_de(void *actor, Marker **slot, s32 kind, f32 distance) {
 
     marker = *slot;
     if (marker == 0) {
-        marker = func_80268C1C_de(&D_8013B1A8, kind);
+        marker = func_80268C1C_de(&D_801370E8, kind);
         if (marker == 0) {
             return;
         }
@@ -42,7 +42,7 @@ void func_8022E78C_de(void *actor, Marker **slot, s32 kind, f32 distance) {
     func_80271F34_de(&pos, &pos, &((Player *)(actor))->pos);
     marker->active = 1;
     marker->x = pos.x;
-    marker->y = pos.y + func_8024D284_de(actor) * D_800C7F08[1];
+    marker->y = pos.y + func_8024D284_de(actor) * D_800C2E18_de[1];
     marker->z = pos.z;
-    marker->scale = D_800C7F10;
+    marker->scale = D_800C2E20_de;
 }

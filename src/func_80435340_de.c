@@ -4,7 +4,7 @@
 
 
 
-extern Base *D_800E54A4;
+extern Base *D_800E1454_de;
 
 int func_80435340_de(void) {
     int result;
@@ -12,7 +12,7 @@ int func_80435340_de(void) {
 
     result = 1;
     for (i = 0; i < 4 && result == 1; i++) {
-        if (D_800E54A4->slots[i].z != -1) {
+        if (D_800E1454_de->slots[i].z != -1) {
             result = 0;
         }
     }

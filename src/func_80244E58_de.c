@@ -18,21 +18,21 @@
 
 
 
-extern func_80244E48_S1 *D_800E2830;
+extern func_80244E48_S1 *D_800DE7E0;
 
 
-extern Group D_80145060;
+extern Group D_80140FA0;
 
 extern struct { func_80219490_S2 *unk0; } D_80140FE8_de;
-extern char D_8010EC90;
-extern char D_8011FE88;
+extern char D_8010AC90;
+extern char D_8011BDC8;
 
 extern struct Shape_func_8021A2D4_de_2 D_801371D4;
 
 extern struct Shape_func_8021A2D4_de_2 D_801371E4;
 extern char D_801371E8;
 
-extern struct Shape_func_8021A2D4_de_2 D_8013B2BC;
+extern struct Shape_func_8021A2D4_de_2 D_801371FC;
 extern void func_8022E290_de(void *);
 extern void func_80239B64_de(void *);
 extern void func_80285D30_de(void *);
@@ -49,12 +49,12 @@ void func_80244E58_de(void) {
     s32 found;
     char *table;
 
-    target = D_800E2830->unkD8;
-    if (D_800E2830->unk40 != 0) {
+    target = D_800DE7E0->unkD8;
+    if (D_800DE7E0->unk40 != 0) {
         return;
     }
-    if (D_800E2830->unk54 != 0) {
-        group = &D_80145060;
+    if (D_800DE7E0->unk54 != 0) {
+        group = &D_80140FA0;
         player = group->lead;
         if (player != 0) {
             func_8022E290_de(player);
@@ -63,29 +63,29 @@ void func_80244E58_de(void) {
             ((func_80244E48_S2 *)(player))->unk590 = 0;
         }
         func_80239B64_de(group->members);
-        func_80285D30_de(&D_8010EC90);
+        func_80285D30_de(&D_8010AC90);
     }
     if (target != -1) {
-        table = &D_8011FE88;
+        table = &D_8011BDC8;
         if (D_801371D4.field_0 != target) {
             origin.w[0] = 0;
             origin.w[1] = 0;
             origin.w[2] = 0;
             found = func_8044D3E8_de(table, &origin, target, &D_801371E8);
-            D_8013B2BC.field_0 = found;
+            D_801371FC.field_0 = found;
             D_801371E4.field_0 = found != 0;
             func_80286AA8_de(table, target, found != 0);
         }
     }
-    D_800E2830->unk5C = func_8040332C_de();
-    D_800E2830->unk50 = 1;
-    D_800E2830->unkD8 = -1;
-    D_800E2830->unk40 = 1;
+    D_800DE7E0->unk5C = func_8040332C_de();
+    D_800DE7E0->unk50 = 1;
+    D_800DE7E0->unkD8 = -1;
+    D_800DE7E0->unk40 = 1;
     camera = D_80140FE8_de.unk0;
     if (camera != 0) {
-        camera->unk29C = D_800E2830->unk108;
-        camera->unk2A0 = D_800E2830->unk10C;
-        camera->unk2A4 = D_800E2830->unk110;
-        camera->unk2A8 = D_800E2830->unk114;
+        camera->unk29C = D_800DE7E0->unk108;
+        camera->unk2A0 = D_800DE7E0->unk10C;
+        camera->unk2A4 = D_800DE7E0->unk110;
+        camera->unk2A8 = D_800DE7E0->unk114;
     }
 }

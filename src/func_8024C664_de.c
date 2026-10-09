@@ -6,7 +6,7 @@
 
 extern char D_800CA8C4_de[];
 extern void *D_800CB440_de[];
-extern ObjectList D_80145040;
+extern ObjectList D_80140F80;
 
 
 
@@ -25,7 +25,7 @@ void *func_8024C664_de(char *arg0)
         return 0;
     }
     if (type == 11) {
-        list = &D_80145040;
+        list = &D_80140F80;
         count = list->count;
         i = 0;
         if (count > 0) {

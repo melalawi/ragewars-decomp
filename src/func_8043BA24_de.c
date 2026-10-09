@@ -5,14 +5,14 @@
    0x4B0 equal to one. */
 
 
-extern struct Entry_func_8043BA24_de *D_800E59E0;
+extern struct Entry_func_8043BA24_de *D_800E1990;
 
 s32 func_8043BA24_de(void) {
     s32 count = 0;
     s32 i;
 
     for (i = 0; i < 4; i++) {
-        if (D_800E59E0[i].state == 1) {
+        if (D_800E1990[i].state == 1) {
             count++;
         }
     }

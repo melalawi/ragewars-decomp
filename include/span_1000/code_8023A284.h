@@ -11,7 +11,7 @@ struct Descriptor_func_8023B718_de;
 typedef struct Descriptor_func_8023B718_de Descriptor_func_8023B718_de;
 
 /* unbake published declaration: published_28f21988c3440cbb59d385c0 */
-extern float D_800C86E8;
+extern float D_800C35F8_de;
 
 struct View_func_8023B3F8_de;
 /* unbake published declaration: published_2e2c1cfebf9086da8e0e991d */
@@ -114,7 +114,7 @@ struct Scene;
 typedef struct Scene Scene;
 
 /* unbake published declaration: published_abb9d5333cedc5b2a611956e */
-extern float D_800C86E0;
+extern float D_800C35F0_de;
 
 struct Effect;
 /* unbake published declaration: published_b2879a00679df81abd4c7fff */

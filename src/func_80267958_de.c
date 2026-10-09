@@ -44,7 +44,7 @@
 
 extern f32 D_800C4450_de;
 extern char D_8011D8D0;
-extern char D_8011FE88;
+extern char D_8011BDC8;
 
 extern void func_8022B09C_de(SharedPlayer_func_80267958_de *, Vec3 *);
 extern void func_80271818_de(struct Shape_typemap_165 *, Vec3 *);
@@ -74,7 +74,7 @@ void func_80267958_de(SharedPlayer_func_80267958_de *target, Actor_func_80267958
     func_80271818_de(&rotation, &v);
     func_8024E79C_de(actor, position, &point, &unused, 0, 1);
     point = position;
-    ((Vec3 *)&point)->y += D_800C9538;
+    ((Vec3 *)&point)->y += D_800C4448_de;
     zero.x = 0;
     zero.y = 0;
     zero.z = 0;
@@ -82,5 +82,5 @@ void func_80267958_de(SharedPlayer_func_80267958_de *target, Actor_func_80267958
     point.x = 0;
     point.y = 0;
     point.z = 0;
-    func_8028CE94_de(&D_8011FE88, player->views5E8.view698_37.emitter + 0x140, 3, point, *(&D_800C9538 + 1), D_800C4450_de);
+    func_8028CE94_de(&D_8011BDC8, player->views5E8.view698_37.emitter + 0x140, 3, point, *(&D_800C4448_de + 1), D_800C4450_de);
 }

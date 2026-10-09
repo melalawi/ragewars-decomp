@@ -26,7 +26,7 @@ extern struct WeaponInfo D_800CBDAC;
 extern struct WeaponInfo D_800CBE0C;
 extern struct WeaponInfo D_800CBE6C;
 
-struct WeaponInfo *D_800D052C[22] = {
+struct WeaponInfo *D_800CB2EC[22] = {
     &D_800CB68C,
     &D_800CB7AC,
     &D_800CB80C,

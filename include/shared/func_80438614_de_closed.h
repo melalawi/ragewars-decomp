@@ -7,7 +7,7 @@
 
 
 
-extern ModelPreviewScreen *D_800E5830;
+extern ModelPreviewScreen *D_800E17E0;
 
 extern MenuWidget *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(MenuWidget *,s32);

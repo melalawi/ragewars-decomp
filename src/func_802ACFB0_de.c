@@ -2,7 +2,7 @@
 #include "span_1000/code_802AB3FC.h"
 #include "types.h"
 
-extern char D_80145088;
+extern char D_80140FC8;
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern u8 D_80152789;
 #endif
@@ -34,7 +34,7 @@ s32 func_802ACFB0_de(void *arg0, void *arg1) {
         func_802391AC_de(((func_802ADB08_S2 *)(arg0))->unk5DC,
                       0x80, 0x32, 0x32, 0x4B, 0, 0, 2);
         if (resource != 0) {
-            func_80237E80_de(&D_80145088,
+            func_80237E80_de(&D_80140FC8,
                           ((func_802ADB08_S2 *)(arg0))->unk5DC,
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
                           ((void **)resource)[D_80152789]);

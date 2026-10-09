@@ -22,8 +22,8 @@ void func_802539EC_de(s32 unused, s32 arg1) {
     u32 temp_v0;
 
     temp_a0 = func_802BCF30_de();
-    temp_v1 = D_8010515C + 1;
-    D_8010515C = temp_v1;
+    temp_v1 = D_8010115C + 1;
+    D_8010115C = temp_v1;
     if (temp_v1 != 1) {
         func_802BCF50_de(temp_a0);
         func_802BB2A0_de((s32)((char *)&D_801005A8 + 0xB98), 0, 1);
@@ -34,8 +34,8 @@ void func_802539EC_de(s32 unused, s32 arg1) {
     *base = arg1;
     D_80100598[arg1] = 1;
     temp_v0 = func_802BCF30_de();
-    temp_v1_2 = D_8010515C - 1;
-    D_8010515C = temp_v1_2;
+    temp_v1_2 = D_8010115C - 1;
+    D_8010115C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802BCF50_de(temp_v0);
         func_802BB420_de(&((func_8025398C_S1 *)(base))->unkB98, 0, 1);

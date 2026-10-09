@@ -5,14 +5,14 @@
    sets it to 5 and the word at 0x3E0 to 4. Returns zero. */
 
 
-extern struct State_func_8042BA54_de *D_800E4F60;
+extern struct State_func_8042BA54_de *D_800E0F10;
 extern void func_8029973C_de();
 
 s32 func_8042BA54_de(void) {
     struct State_func_8042BA54_de *state;
 
     func_8029973C_de();
-    state = D_800E4F60;
+    state = D_800E0F10;
     if (state->mode == 3) {
         state->mode = 5;
         state->next = 4;

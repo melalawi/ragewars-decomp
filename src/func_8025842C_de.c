@@ -6,10 +6,10 @@
 #include "span_1000/code_8025D948.h"
 #include "types.h"
 
-extern u8 D_801462E1;
+extern u8 D_80142221;
 extern f32 D_800C3EE0_de;
 
-extern char D_80145088;
+extern char D_80140FC8;
 
 extern u32 func_802BCF30_de(void);
 extern void func_802BCF50_de(u32);
@@ -35,7 +35,7 @@ extern s32 func_80257DD4_de(void *, s32, Vec3, s32, s32);
 
 s32 func_8025842C_de(void *arg0) {
     char *object = arg0;
-    u8 *bytes = &D_801462E1;
+    u8 *bytes = &D_80142221;
     char *queue;
     u32 mask;
     s32 count;
@@ -87,7 +87,7 @@ s32 func_8025842C_de(void *arg0) {
         zero.z = 0.0f;
         zero.y = 0.0f;
         zero.x = 0.0f;
-        result = func_802395A4_de(&D_80145088, &zero);
+        result = func_802395A4_de(&D_80140FC8, &zero);
         vec = &((func_8023945C_S1 *)(result))->unk128;
         if ((((func_8025844C_S1 *)(object))->unk104 & 3) == 0) {
             func_80257DD4_de(object, ((func_8025844C_S1 *)(object))->unk134, *vec, 0, -1);
