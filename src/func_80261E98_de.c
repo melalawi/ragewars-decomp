@@ -1,9 +1,7 @@
 #include "common/unused.h"
 #include "span_1000/code_8028469C.h"
-#include "span_C76B0/data.h"
 #include "span_1000/code_802609CC.h"
 
-int func_802532F4_de(void *);
 void *func_8028FDB4_de(int *, int);
 typedef struct Shared_func_80261EB8_S1 func_80261EB8_S1;
 typedef struct Shared_func_80261EB8_S2 func_80261EB8_S2;
@@ -11,7 +9,12 @@ typedef struct func_8028469C_S3 func_80261EB8_S3;
 
 /* Warning: Gap in callee-saved word stack region.
  * Saved: [0x10, 0x14, 0x18, 0x1c, 0x20, 0x24, 0x30, 0x34, 0x38, 0x3c], gap at: 0x28. */
+/* FAKEMATCH: these existing scale identities also supply the two-word shared
+ * ROM pool prefix. Their definitions preserve the resident data layout. */
+const f32 D_800C41F8_de = 1.0f;
+const f32 D_800C41FC_de = 1.0f;
 void func_80261E98_de(func_80261EB8_S1 *arg0, func_80261EB8_S2 *arg1) {
+    extern const f32 D_800C41FC_de;
     f32 unit;
     f32 temp_f1;
     f32 temp_f1_2;
@@ -54,10 +57,13 @@ void func_80261E98_de(func_80261EB8_S1 *arg0, func_80261EB8_S2 *arg1) {
         arg1->unk4 = &((func_80261EB8_S3 *)func_8028FDB4_de(temp_s0, 2))->unk8;
         arg1->unk8 = func_8028FDB4_de(temp_v0, 1);
         
-        unit = 1.0f;
         {
-            
-            extern void *func_8028FDB4_de(int *, int) ;
+            extern const f32 D_800C41F8_de;
+            /* FAKEMATCH: SN64 const-call metadata lets the scheduler delay the
+             * scale load past this lookup. The callee reads an offset table, so
+             * the attribute is stronger than the actual C contract. */
+            extern void *func_8028FDB4_de(int *, int) __attribute__((const));
+            unit = D_800C41F8_de;
             arg1->unkC = func_8028FDB4_de(temp_v0, 2);
         }
         if (temp_f20 >= 0.0f) {
