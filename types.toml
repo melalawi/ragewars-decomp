@@ -1679,9 +1679,12 @@ schema = 1
 
 [global]
 "func_80439F0C_us_rev1_prefix" = { declaration = "extern u8 func_80439F0C_us_rev1_prefix[0x4];", evidence = "splat", section = ".data", size = 4 }
+"resources/rsp/800E0860" = { declaration = "extern u8 resources/rsp/800E0860[0x2C0];", evidence = "splat", section = ".data", size = 704 }
 "resources/rsp/alignment.s" = { declaration = "extern u8 resources/rsp/alignment.s[0x8];", evidence = "splat", section = ".data", size = 8 }
 "resources/rsp/audio.s" = { declaration = "extern u8 resources/rsp/audio.s[0xE20];", evidence = "splat", section = ".data", size = 3616 }
 "resources/rsp/boot.s" = { declaration = "extern u8 resources/rsp/boot.s[0xD0];", evidence = "splat", section = ".data", size = 208 }
+"resources/rsp/graphics/800E0050" = { declaration = "extern u8 resources/rsp/graphics/800E0050[0x420];", evidence = "splat", section = ".data", size = 1056 }
+"resources/rsp/graphics/800E0470" = { declaration = "extern u8 resources/rsp/graphics/800E0470[0x3F0];", evidence = "splat", section = ".data", size = 1008 }
 "resources/rsp/graphics/f3dex2.s" = { declaration = "extern u8 resources/rsp/graphics/f3dex2.s[0x1390];", evidence = "splat", section = ".data", size = 5008 }
 "resources/rsp/graphics/l3dex2.s" = { declaration = "extern u8 resources/rsp/graphics/l3dex2.s[0x1190];", evidence = "splat", section = ".data", size = 4496 }
 "retained_0" = { declaration = "extern u8 retained_0[0x1000];", evidence = "splat", section = ".data", size = 4096 }
@@ -3686,6 +3689,8 @@ schema = 1
 "rodata/func_80269A80_de/800C48E4" = { declaration = "extern u8 rodata/func_80269A80_de/800C48E4[0x14];", evidence = "splat", section = ".rodata", size = 20 }
 "rodata/func_80269A80_de/800C4914" = { declaration = "extern u8 rodata/func_80269A80_de/800C4914[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_80269A80_de/800C96D8" = { declaration = "extern u8 rodata/func_80269A80_de/800C96D8[0x1C];", evidence = "splat", section = ".rodata", size = 28 }
+"rodata/func_80269A80_de/800C9708" = { declaration = "extern u8 rodata/func_80269A80_de/800C9708[0x1C];", evidence = "splat", section = ".rodata", size = 28 }
+"rodata/func_80269A80_de/800C9738" = { declaration = "extern u8 rodata/func_80269A80_de/800C9738[0x1C];", evidence = "splat", section = ".rodata", size = 28 }
 "rodata/func_8026B504_de/800C4598" = { declaration = "extern u8 rodata/func_8026B504_de/800C4598[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_8026B504_de/800C4668" = { declaration = "extern u8 rodata/func_8026B504_de/800C4668[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_8026B504_de/800C4918" = { declaration = "extern u8 rodata/func_8026B504_de/800C4918[0x4];", evidence = "splat", section = ".rodata", size = 4 }
@@ -5728,6 +5733,7 @@ schema = 1
 "rodata/func_8043C4F4_us_rev1/800E21E8" = { declaration = "extern u8 rodata/func_8043C4F4_us_rev1/800E21E8[0x2C];", evidence = "splat", section = ".rodata", size = 44 }
 "rodata/func_8043C4F4_us_rev1/800E2218" = { declaration = "extern u8 rodata/func_8043C4F4_us_rev1/800E2218[0x2C];", evidence = "splat", section = ".rodata", size = 44 }
 "rodata/func_8043C4F4_us_rev1/800E2248" = { declaration = "extern u8 rodata/func_8043C4F4_us_rev1/800E2248[0x2C];", evidence = "splat", section = ".rodata", size = 44 }
+"rodata/func_8043C4F4_us_rev1/800E2288" = { declaration = "extern u8 rodata/func_8043C4F4_us_rev1/800E2288[0x2C];", evidence = "splat", section = ".rodata", size = 44 }
 "rodata/func_8043C4F4_us_rev1/800E22B8" = { declaration = "extern u8 rodata/func_8043C4F4_us_rev1/800E22B8[0x2C];", evidence = "splat", section = ".rodata", size = 44 }
 "rodata/func_8043C54C_de/800DE188" = { declaration = "extern u8 rodata/func_8043C54C_de/800DE188[0x2C];", evidence = "splat", section = ".rodata", size = 44 }
 "rodata/func_8043C688_de/800DE1B8" = { declaration = "extern u8 rodata/func_8043C688_de/800DE1B8[0x2C];", evidence = "splat", section = ".rodata", size = 44 }
