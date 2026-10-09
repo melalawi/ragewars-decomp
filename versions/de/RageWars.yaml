@@ -3193,7 +3193,7 @@ segments:
       - [0xC50A0, rodata, "rodata/func_80268CE0_de/800C9590"]
       - [0xC51C4, rodata, "rodata/func_80269A80_de/800C45C4"]
       - [0xC51E4, data, "rodata/unresolved/800C45E4"]
-      - [0xC51E8, rodata, "rodata/func_80269A80_de/800C45E8"]
+      - [0xC51E8, .rodata, "rodata/func_80269A80_de/800C45E8"]
       - [0xC5268, rodata, "rodata/func_8026B504_de/800C4668"]
       - [0xC526C, rodata, "rodata/func_8026C484_de/800C466C"]
       - [0xC527E, data, "rodata/unresolved/800C467E"]
