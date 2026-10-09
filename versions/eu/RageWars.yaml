@@ -3488,7 +3488,7 @@ segments:
       - [0xC6528, rodata, "rodata/func_80299B60_de/800C5928"]
       - [0xC652C, data, "rodata/unresolved/800C592C"]
       - [0xC6560, rodata, "rodata/func_8029ABA0_de/800C5960"]
-      - [0xC6578, rodata, "rodata/func_8029AD38_de/800C5978"]
+      - [0xC6578, .rodata, "rodata/func_8029AD38_de/800C5978"]
       - [0xC65E0, rodata, "rodata/func_8029AEA4_de/800CA8D0"]
       - [0xC66E8, rodata, "rodata/func_8029B278_de/800C5AE8"]
       - [0xC6718, rodata, "rodata/func_8029B3C0_de/800CAA08"]
