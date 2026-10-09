@@ -3828,7 +3828,7 @@ segments:
       - [0xCE4B0, rodata, "rodata/func_802A18CC_de/800D2C10"]
       - [0xCE4B8, data, "rodata/writable/800CD8B8"]
       - [0xCE4C0, data, "rodata/unresolved/800CD8C0"]
-      - [0xCE530, data, "rodata/writable/800CD930"]
+      - [0xCE530, .data, "rodata/writable/800CD930"]
       - [0xCE6E0, data, "rodata/unresolved/800CDAE0"]
       - [0xCE6F8, data, "rodata/writable/800CDAF8"]
       - [0x0CE700, data, "src/ragewars_particle_state_depth_us_rev1.c"]
