@@ -35152,6 +35152,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/ragewars_arccos_table_us_rev1.c"
+kind = "data"
+group = "code_802412C0"
+members = ["src/ragewars_arccos_table_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/ragewars_debug_continuation_us_rev1.c"
 kind = "data"
 group = "code_80200400"
