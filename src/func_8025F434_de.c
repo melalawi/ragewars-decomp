@@ -10,6 +10,8 @@
 
 
 
+extern f32 D_800D0DA0;
+
 static inline f32 round_up(f32 x, f32 floor) {
     s32 i;
 
@@ -39,11 +41,11 @@ f32 func_8025F434_de(f32 amount, f32 period) {
         return ((func_802077F4_S2 *)(&D_800C91F8))->unk4;
     }
     rate = round_up(amount / period * ((func_802077F4_S2 *)(&D_800C9200))->unk4, rate);
-    if (rate < (90.0f)) {
+    if (rate < D_800D0DA0) {
         return rate;
     }
     rate = round_up(amount / period * D_800C9208, 0.0f);
-    if (rate < (90.0f)) {
+    if (rate < D_800D0DA0) {
         return rate;
     }
     return amount;

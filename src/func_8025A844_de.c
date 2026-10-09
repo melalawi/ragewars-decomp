@@ -88,19 +88,19 @@ void func_8025AA2C_de(Emitter *emitter) {
     distance = dx * dx + dy * dy + dz * dz;
     emitter->distance = distance;
     if (emitter->lastDistance < distance) {
-        emitter->level -= (0.0035000001080334187f);
+        emitter->level -= D_800CB8E8;
     } else if (distance < emitter->lastDistance) {
-        emitter->level += (0.0035000001080334187f);
+        emitter->level += D_800CB8E8;
     } else {
         current = emitter->level;
         if (D_800C9044 < current) {
-            level = current - (0.0035000001080334187f);
+            level = current - D_800CB8E8;
             if (level < D_800C9044) {
                 level = D_800C9044;
             }
             emitter->level = level;
         } else if (current < D_800C9044) {
-            level = current + (0.0035000001080334187f);
+            level = current + D_800CB8E8;
             if (D_800C9044 < level) {
                 level = D_800C9044;
             }

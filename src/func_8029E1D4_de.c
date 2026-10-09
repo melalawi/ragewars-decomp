@@ -4,6 +4,8 @@
 
 
 
+extern f32 D_800C5C84;
+extern f32 D_800C5C8C;
 extern f32 D_800C5C98_de[2];
 extern f64 func_8029B278_de(f64 arg0, f64 arg1);
 inline static f32 wrap(f32 arg0)
@@ -16,7 +18,7 @@ inline static f32 wrap(f32 arg0)
   new_var2 = value;
   if (1)
   {
-    if (((long long) (D_800C5C88_de < new_var2)) || (new_var2 < (-25.13274383544922f)))
+    if (((long long) (D_800C5C88_de < new_var2)) || (new_var2 < D_800C5C8C))
     {
       value = (f32) func_8029B278_de((f64) value, D_800C5C90_de);
     }
@@ -54,7 +56,7 @@ static inline f32 centered(f32 x)
   f32 new_var;
   float new_var3;
   f32 new_var2;
-  new_var = (3.1415927410125732f);
+  new_var = D_800C5C84;
   new_var2 = x + new_var;
   {
     new_var3 = new_var2;
