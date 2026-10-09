@@ -31310,13 +31310,16 @@ omit = []
 path = "src/func_804322AC_de.c"
 kind = "c"
 group = "code_8042F988"
-members = ["func_804322AC_de", "rodata/func_804322AC_de/800DDDD0", "rodata/func_804322AC_de/800E1E00", "rodata/func_804322AC_de/800E9610"]
+members = ["func_804322AC_de", "rodata/func_804322AC_de/800DDDD0", "rodata/func_804322AC_de/800E1E00", "rodata/func_804322AC_de/800E9610", "rodata/unresolved/800DCA80", "rodata/unresolved/800EE450"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["eu", "us"]
 
 [unit.options]
 add = []
 omit = []
+
+[unit.classes]
+"us:rodata/unresolved/800DCA80" = ".rodata"
+"eu:rodata/unresolved/800EE450" = ".rodata"
 
 [[unit]]
 path = "src/func_80433398_de.c"
@@ -33893,13 +33896,16 @@ omit = []
 path = "src/func_8043F52C_de.c"
 kind = "c"
 group = "code_8043F69C"
-members = ["func_8043F52C_de", "rodata/func_8043F52C_de/800E2460"]
+members = ["func_8043F52C_de", "rodata/func_8043F52C_de/800DE430", "rodata/func_8043F52C_de/800E2460", "rodata/unresolved/800DD0E0"]
 toolchain = "gcc-2.8.1-sn64"
-withheld = ["de", "eu", "eu-x", "us"]
+withheld = ["eu", "eu-x"]
 
 [unit.options]
 add = []
 omit = []
+
+[unit.classes]
+"us:rodata/unresolved/800DD0E0" = ".rodata"
 
 [[unit]]
 path = "src/func_8043FE3C_de.c"
