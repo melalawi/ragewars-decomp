@@ -3837,7 +3837,7 @@ segments:
       - [0x0CE818, data, "rodata/unresolved/800CDB00_0CE760_0CE818"]
       - [0xCE820, data, "rodata/writable/800CDC20"]
       - [0xCE82A, data, "rodata/unresolved/800CDC2A"]
-      - [0xCE830, data, "rodata/writable/800CDC30"]
+      - [0xCE830, .data, "rodata/writable/800CDC30"]
       - [0xCEA2C, data, "rodata/unresolved/800CDE2C"]
       - [0xD28B4, rodata, "rodata/shared/800D1CB4"]
       - [0xD28D7, data, "rodata/unresolved/800D1CD7"]
