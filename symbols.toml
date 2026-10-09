@@ -39098,7 +39098,7 @@ eu-x = 0x800DDA3C
 [symbol.D_800E1FC4]
 kind = "data"
 de = 0x800DDF94
-eu = 0x800EE614
+eu = 0x800E1FC4
 eu-x = 0x800E97D4
 us = 0x800DCC44
 us-rev1 = 0x800E1FC4
