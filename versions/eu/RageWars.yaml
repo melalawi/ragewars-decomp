@@ -4227,7 +4227,7 @@ segments:
       - [0xF30B8, data, "rodata/writable/800F24B8"]
       - [0xF30E4, data, "rodata/unresolved/800F24E4"]
       - [0xF3680, data, "rodata/writable/800F2A80"]
-      - [0xF3690, data, "rodata/unresolved/800F2A90"]
+      - [0xF3690, .data, "rodata/unresolved/800F2A90"]
   - name: "retained_101000"
     type: bin
     start: 0x101000
