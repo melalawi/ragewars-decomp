@@ -2,8 +2,6 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_804251F4.h"
 
-/* NON_MATCHING: owner fuzzy candidate; PAL assembly rows remain active. */
-
 /* Returns the message text for an event result from func_80425014_de: for results 5001 to 5057 the
    text pointer jtbl_800DD848 selects for the result, where result 5002 picks between two texts by
    bit 0 of func_8022F454_de for the first player's current slot; zero for any other result. The
