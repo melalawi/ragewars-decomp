@@ -3780,6 +3780,7 @@ us-rev1 = 0x800C6E60
 
 [symbol.D_800C1D70_eu_x]
 kind = "data"
+eu = 0x800C1D30
 eu-x = 0x800C1D70
 us-rev1 = 0x800C6B80
 
@@ -3793,6 +3794,7 @@ us-rev1 = 0x800C6E64
 
 [symbol.D_800C1D74_eu_x]
 kind = "data"
+eu = 0x800C1D34
 eu-x = 0x800C1D74
 us-rev1 = 0x800C6B84
 

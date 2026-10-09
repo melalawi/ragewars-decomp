@@ -4079,6 +4079,8 @@ segments:
       - [0xDE5D7, data, "rodata/unresolved/800DD9D7"]
       - [0xDE5D8, rodata, "rodata/func_8042854C_de/800DD9D8"]
       - [0xDE5EC, data, "rodata/unresolved/800DD9EC"]
+      - [0xDE5F0, data, "rodata/unresolved/800DD9F0"]
+      - [0xDE604, data, "rodata/unresolved/800DDA04"]
       - [0xDE630, rodata, "rodata/func_8042972C_de/800DDA30"]
       - [0xDE668, data, "rodata/unresolved/800DDA68"]
       - [0xDE670, rodata, "rodata/func_80429A24_de/800DDA70"]
