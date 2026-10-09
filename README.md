@@ -7,7 +7,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 ## Progress
 
 <!-- progress -->
-<pre><code>all      [███████████▒░░░░░░░░]  56.34% (~56.87%)  3,863,853 of 6,857,872 bytes</code><br><code>de       [██████████▒░░░░░░░░░]  54.73% (~55.24%)  756,721 of 1,382,608 bytes</code><br><code>eu       [███████████▒░░░░░░░░]  58.39% (~58.91%)  810,208 of 1,387,504 bytes</code><br><code>eu-x     [███████████▒░░░░░░░░]  57.24% (~57.78%)  754,496 of 1,318,176 bytes</code><br><code>us       [██████████▒░░░░░░░░░]  53.80% (~54.36%)  744,105 of 1,382,992 bytes</code><br><code>us-rev1  [███████████▒░░░░░░░░]  57.57% (~58.08%)  798,323 of 1,386,592 bytes</code></pre>
+<pre><code>all      [███████████▒░░░░░░░░]  56.34% (~56.87%)  3,863,937 of 6,857,872 bytes</code><br><code>de       [██████████▒░░░░░░░░░]  54.73% (~55.24%)  756,721 of 1,382,608 bytes</code><br><code>eu       [███████████▒░░░░░░░░]  58.39% (~58.91%)  810,208 of 1,387,504 bytes</code><br><code>eu-x     [███████████▒░░░░░░░░]  57.24% (~57.78%)  754,496 of 1,318,176 bytes</code><br><code>us       [██████████▒░░░░░░░░░]  53.80% (~54.36%)  744,105 of 1,382,992 bytes</code><br><code>us-rev1  [███████████▒░░░░░░░░]  57.58% (~58.09%)  798,407 of 1,386,592 bytes</code></pre>
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
@@ -27,7 +27,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | us-rev1 (NUS-NRWE-1, North America). Revised NTSC release (grey cartridge). SHA256 `5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089` |
 |---|
-| <pre><code>code      [█████████████▒░░░░░░]  68.27% (~68.87%)  772,908 of 1,132,124</code><br><code>data      [█▒░░░░░░░░░░░░░░░░░░]   9.99% (~10.07%)  25,415 of 254,468</code><br><code>functions [███████████████░░░░░]  79.74%  2,955 of 3,706</code></pre> |
+| <pre><code>code      [█████████████▒░░░░░░]  68.27% (~68.87%)  772,908 of 1,132,124</code><br><code>data      [██▒░░░░░░░░░░░░░░░░░]  10.02% (~10.10%)  25,499 of 254,468</code><br><code>functions [███████████████░░░░░]  79.74%  2,955 of 3,706</code></pre> |
 <!-- /progress -->
 
 ## Development & Contributions
