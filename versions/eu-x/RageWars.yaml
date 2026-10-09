@@ -2682,7 +2682,7 @@ segments:
       - [0xC2D3C, data, "rodata/unresolved/800C213C"]
       - [0xC2D40, rodata, "rodata/func_8020EC14_de/800C2140"]
       - [0xC2D44, data, "rodata/unresolved/800C2144"]
-      - [0xC2D48, rodata, "rodata/func_8020EC14_de/800C2148"]
+      - [0xC2D48, .rodata, "rodata/func_8020EC14_de/800C2148"]
       - [0xC2DBC, rodata, "rodata/func_8020EDCC_de/800C21BC"]
       - [0xC2DC0, rodata, "rodata/func_8020EE50_de/800C21C0"]
       - [0xC2DC4, rodata, "rodata/func_8020EEA4_de/800C21C4"]
