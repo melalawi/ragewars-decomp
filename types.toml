@@ -111,6 +111,7 @@ schema = 1
 "func_8020AF9C_de" = { evidence = "declared", signature = "void func_8020AF9C_de(void *, void *)" }
 "func_8020CA10_de" = { evidence = "authored", signature = "void func_8020CA10_de(void *arg0, s32 arg1)" }
 "func_8020CC0C_de" = { evidence = "declared", signature = "s32 func_8020CC0C_de(s32 *, s32, s32)" }
+"func_8020CCE8_de" = { evidence = "declared", signature = "s32 func_8020CCE8_de(EntryList8020CCE8 *, s32, s32 *, s32 *)" }
 "func_8020CFE0_de" = { evidence = "authored", signature = "Shared_PickupGoalNode *func_8020CFE0_de(PickupGoalNodeList *list, u32 key)" }
 "func_8020D014_de" = { evidence = "authored", signature = "void func_8020D014_de(PickupGoalNodeList *list)" }
 "func_8020D0CC_de" = { evidence = "authored", signature = "void func_8020D0CC_de(PickupGoalNodeList *list, s32 key)" }
@@ -1939,6 +1940,7 @@ schema = 1
 "func_804279B8_de" = { evidence = "authored", signature = "void func_804279B8_de()" }
 "func_80427B08_de" = { evidence = "authored", signature = "void func_80427B08_de()" }
 "func_804280BC_de" = { evidence = "authored", signature = "void func_804280BC_de()" }
+"func_80428158_de" = { evidence = "declared", signature = "s32 func_80428158_de(s32, s32)" }
 "func_804281A8_de" = { evidence = "authored", signature = "void func_804281A8_de()" }
 "func_80428214_de" = { evidence = "authored", signature = "void func_80428214_de()" }
 "func_80428300_de" = { evidence = "authored", signature = "void func_80428300_de()" }
@@ -3921,15 +3923,8 @@ schema = 1
 "rodata/func_8026193C_de/800C4478" = { declaration = "extern u8 rodata/func_8026193C_de/800C4478[0x30];", evidence = "splat", section = ".rodata", size = 48 }
 "rodata/func_8026193C_de/800C44AC" = { declaration = "extern u8 rodata/func_8026193C_de/800C44AC[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "rodata/func_8026193C_de/800C44B8" = { declaration = "extern u8 rodata/func_8026193C_de/800C44B8[0x30];", evidence = "splat", section = ".rodata", size = 48 }
-"rodata/func_80261E98_de/800C4128" = { declaration = "extern u8 rodata/func_80261E98_de/800C4128[0x34];", evidence = "splat", section = ".rodata", size = 52 }
-"rodata/func_80261E98_de/800C4160" = { declaration = "extern u8 rodata/func_80261E98_de/800C4160[0x28];", evidence = "splat", section = ".rodata", size = 40 }
-"rodata/func_80261E98_de/800C41F8" = { declaration = "extern u8 rodata/func_80261E98_de/800C41F8[0x34];", evidence = "splat", section = ".rodata", size = 52 }
-"rodata/func_80261E98_de/800C4230" = { declaration = "extern u8 rodata/func_80261E98_de/800C4230[0x28];", evidence = "splat", section = ".rodata", size = 40 }
-"rodata/func_80261E98_de/800C44A8" = { declaration = "extern u8 rodata/func_80261E98_de/800C44A8[0x34];", evidence = "splat", section = ".rodata", size = 52 }
-"rodata/func_80261E98_de/800C44E0" = { declaration = "extern u8 rodata/func_80261E98_de/800C44E0[0x28];", evidence = "splat", section = ".rodata", size = 40 }
-"rodata/func_80261E98_de/800C44E8" = { declaration = "extern u8 rodata/func_80261E98_de/800C44E8[0x34];", evidence = "splat", section = ".rodata", size = 52 }
-"rodata/func_80261E98_de/800C4520" = { declaration = "extern u8 rodata/func_80261E98_de/800C4520[0x28];", evidence = "splat", section = ".rodata", size = 40 }
 "rodata/func_80261E98_de/800C9188" = { declaration = "extern u8 rodata/func_80261E98_de/800C9188[0x60];", evidence = "splat", section = ".rodata", size = 96 }
+"rodata/func_80261E98_de/800C92E8" = { declaration = "extern u8 rodata/func_80261E98_de/800C92E8[0x60];", evidence = "splat", section = ".rodata", size = 96 }
 "rodata/func_802625F0_de/800C4188" = { declaration = "extern u8 rodata/func_802625F0_de/800C4188[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_802625F0_de/800C4258" = { declaration = "extern u8 rodata/func_802625F0_de/800C4258[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_802625F0_de/800C4508" = { declaration = "extern u8 rodata/func_802625F0_de/800C4508[0x4];", evidence = "splat", section = ".rodata", size = 4 }
@@ -6639,7 +6634,6 @@ schema = 1
 "rodata/unresolved/800C4142" = { declaration = "extern u8 rodata/unresolved/800C4142[0x2];", evidence = "splat", section = ".data", size = 2 }
 "rodata/unresolved/800C414F" = { declaration = "extern u8 rodata/unresolved/800C414F[0x1];", evidence = "splat", section = ".data", size = 1 }
 "rodata/unresolved/800C4157" = { declaration = "extern u8 rodata/unresolved/800C4157[0x1];", evidence = "splat", section = ".data", size = 1 }
-"rodata/unresolved/800C415C" = { declaration = "extern u8 rodata/unresolved/800C415C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C415E" = { declaration = "extern u8 rodata/unresolved/800C415E[0x2];", evidence = "splat", section = ".data", size = 2 }
 "rodata/unresolved/800C416C" = { declaration = "extern u8 rodata/unresolved/800C416C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C416E" = { declaration = "extern u8 rodata/unresolved/800C416E[0x2];", evidence = "splat", section = ".data", size = 2 }
@@ -6659,7 +6653,6 @@ schema = 1
 "rodata/unresolved/800C41C4" = { declaration = "extern u8 rodata/unresolved/800C41C4[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C41EC" = { declaration = "extern u8 rodata/unresolved/800C41EC[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C421C" = { declaration = "extern u8 rodata/unresolved/800C421C[0x4];", evidence = "splat", section = ".data", size = 4 }
-"rodata/unresolved/800C422C" = { declaration = "extern u8 rodata/unresolved/800C422C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C423C" = { declaration = "extern u8 rodata/unresolved/800C423C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C4254" = { declaration = "extern u8 rodata/unresolved/800C4254[0x64];", evidence = "splat", section = ".data", size = 100 }
 "rodata/unresolved/800C425C" = { declaration = "extern u8 rodata/unresolved/800C425C[0x4];", evidence = "splat", section = ".data", size = 4 }
@@ -6691,10 +6684,8 @@ schema = 1
 "rodata/unresolved/800C449C" = { declaration = "extern u8 rodata/unresolved/800C449C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C44AA" = { declaration = "extern u8 rodata/unresolved/800C44AA[0x2];", evidence = "splat", section = ".data", size = 2 }
 "rodata/unresolved/800C44B4" = { declaration = "extern u8 rodata/unresolved/800C44B4[0x4];", evidence = "splat", section = ".data", size = 4 }
-"rodata/unresolved/800C44DC" = { declaration = "extern u8 rodata/unresolved/800C44DC[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C450C" = { declaration = "extern u8 rodata/unresolved/800C450C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C4514" = { declaration = "extern u8 rodata/unresolved/800C4514[0x20];", evidence = "splat", section = ".data", size = 32 }
-"rodata/unresolved/800C451C" = { declaration = "extern u8 rodata/unresolved/800C451C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C4522" = { declaration = "extern u8 rodata/unresolved/800C4522[0x2];", evidence = "splat", section = ".data", size = 2 }
 "rodata/unresolved/800C4535" = { declaration = "extern u8 rodata/unresolved/800C4535[0xB];", evidence = "splat", section = ".data", size = 11 }
 "rodata/unresolved/800C4548" = { declaration = "extern u8 rodata/unresolved/800C4548[0x1C];", evidence = "splat", section = ".data", size = 28 }
@@ -7422,7 +7413,6 @@ schema = 1
 "rodata/unresolved/800C92AA" = { declaration = "extern u8 rodata/unresolved/800C92AA[0x2];", evidence = "splat", section = ".data", size = 2 }
 "rodata/unresolved/800C92B4" = { declaration = "extern u8 rodata/unresolved/800C92B4[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C92B8" = { declaration = "extern u8 rodata/unresolved/800C92B8[0x428];", evidence = "splat", section = ".data", size = 1064 }
-"rodata/unresolved/800C931C" = { declaration = "extern u8 rodata/unresolved/800C931C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C934C" = { declaration = "extern u8 rodata/unresolved/800C934C[0x4];", evidence = "splat", section = ".data", size = 4 }
 "rodata/unresolved/800C9362" = { declaration = "extern u8 rodata/unresolved/800C9362[0x2];", evidence = "splat", section = ".data", size = 2 }
 "rodata/unresolved/800C9375" = { declaration = "extern u8 rodata/unresolved/800C9375[0xB];", evidence = "splat", section = ".data", size = 11 }
@@ -11060,8 +11050,6 @@ schema = 1
 "src/rw_pool_8026154C_C9E98_us_rev1.c" = { declaration = "extern u8 src/rw_pool_8026154C_C9E98_us_rev1.c[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "src/rw_pool_8026193C_C9EAC_us_rev1.c" = { declaration = "extern u8 src/rw_pool_8026193C_C9EAC_us_rev1.c[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "src/rw_pool_8026193C_C9EB8_us_rev1.c" = { declaration = "extern u8 src/rw_pool_8026193C_C9EB8_us_rev1.c[0x30];", evidence = "splat", section = ".rodata", size = 48 }
-"src/rw_pool_80261E98_C9EE8_us_rev1.c" = { declaration = "extern u8 src/rw_pool_80261E98_C9EE8_us_rev1.c[0x34];", evidence = "splat", section = ".rodata", size = 52 }
-"src/rw_pool_80261E98_C9F20_us_rev1.c" = { declaration = "extern u8 src/rw_pool_80261E98_C9F20_us_rev1.c[0x28];", evidence = "splat", section = ".rodata", size = 40 }
 "src/rw_pool_802625F0_C9F48_us_rev1.c" = { declaration = "extern u8 src/rw_pool_802625F0_C9F48_us_rev1.c[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "src/rw_pool_802631B0_C9F80_us_rev1.c" = { declaration = "extern u8 src/rw_pool_802631B0_C9F80_us_rev1.c[0x5C];", evidence = "splat", section = ".rodata", size = 92 }
 "src/rw_pool_80263740_C9FE0_us_rev1.c" = { declaration = "extern u8 src/rw_pool_80263740_C9FE0_us_rev1.c[0x4];", evidence = "splat", section = ".rodata", size = 4 }
