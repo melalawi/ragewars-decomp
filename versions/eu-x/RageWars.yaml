@@ -3350,7 +3350,7 @@ segments:
       - [0xC5DC4, data, "rodata/unresolved/800C51C4"]
       - [0xC5DD0, rodata, "rodata/func_8044B600_de/800C51D0"]
       - [0xC5DF3, data, "rodata/unresolved/800C51F3"]
-      - [0xC5DF4, rodata, "rodata/func_8044B600_de/800C51F4"]
+      - [0xC5DF4, .rodata, "rodata/func_8044B600_de/800C51F4"]
       - [0xC5E3F, data, "rodata/unresolved/800C523F"]
       - [0xC5E40, rodata, "rodata/func_8044B7C0_de/800C5240"]
       - [0xC5E5D, data, "rodata/unresolved/800C525D"]
