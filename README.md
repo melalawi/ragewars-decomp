@@ -7,7 +7,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 ## Progress
 
 <!-- progress -->
-<pre><code>all      [███████████▒░░░░░░░░]  55.78% (~56.18%)  3,825,231 of 6,857,872 bytes</code><br><code>de       [██████████▒░░░░░░░░░]  53.95% (~54.34%)  745,969 of 1,382,608 bytes</code><br><code>eu       [███████████▒░░░░░░░░]  57.99% (~58.37%)  804,548 of 1,387,504 bytes</code><br><code>eu-x     [███████████▒░░░░░░░░]  56.88% (~57.29%)  749,808 of 1,318,176 bytes</code><br><code>us       [██████████▒░░░░░░░░░]  53.57% (~54.00%)  740,821 of 1,382,992 bytes</code><br><code>us-rev1  [███████████▒░░░░░░░░]  56.55% (~56.94%)  784,085 of 1,386,592 bytes</code></pre>
+<pre><code>all      [███████████▒░░░░░░░░]  55.79% (~56.19%)  3,825,739 of 6,857,872 bytes</code><br><code>de       [██████████▒░░░░░░░░░]  53.95% (~54.34%)  745,969 of 1,382,608 bytes</code><br><code>eu       [███████████▒░░░░░░░░]  58.02% (~58.41%)  805,056 of 1,387,504 bytes</code><br><code>eu-x     [███████████▒░░░░░░░░]  56.88% (~57.29%)  749,808 of 1,318,176 bytes</code><br><code>us       [██████████▒░░░░░░░░░]  53.57% (~54.00%)  740,821 of 1,382,992 bytes</code><br><code>us-rev1  [███████████▒░░░░░░░░]  56.55% (~56.94%)  784,085 of 1,386,592 bytes</code></pre>
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
@@ -15,7 +15,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
-| <pre><code>bytes     [███████████▒░░░░░░░░]  57.99% (~58.37%)  804,548 of 1,387,504</code><br><code>functions [███████████████░░░░░]  78.27%  2,874 of 3,672</code></pre> |
+| <pre><code>bytes     [███████████▒░░░░░░░░]  58.02% (~58.41%)  805,056 of 1,387,504</code><br><code>functions [███████████████░░░░░]  78.27%  2,874 of 3,672</code></pre> |
 
 | eu-x (NUS-NRWX-0, Europe). PAL multi-language release. SHA256 `511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750` |
 |---|

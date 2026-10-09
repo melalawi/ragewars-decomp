@@ -3843,7 +3843,7 @@ segments:
       - [0xCF3D0, data, "rodata/unresolved/800CE7D0"]
       - [0xCF4F0, data, "rodata/writable/800CE8F0"]
       - [0xCF4FA, data, "rodata/unresolved/800CE8FA"]
-      - [0xCF500, data, "rodata/writable/800CE900"]
+      - [0xCF500, .data, "rodata/writable/800CE900"]
       - [0xCF6FC, data, "rodata/unresolved/800CEAFC"]
       - [0xE16E0, rodata, "rodata/shared/800E0AE0"]
       - [0xE1703, data, "rodata/unresolved/800E0B03"]
