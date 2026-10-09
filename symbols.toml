@@ -60,7 +60,9 @@ us-rev1 = 0x002022BC
 
 [symbol.D_00202460_eu_x]
 kind = "data"
+eu = 0x00202460
 eu-x = 0x00202460
+us = 0x00202460
 us-rev1 = 0x00202460
 
 [symbol.D_00202E4C]
@@ -241,7 +243,9 @@ us-rev1 = 0x0023B968
 
 [symbol.D_0023C934]
 kind = "data"
+de = 0x0023C924
 eu = 0x0023C934
+eu-x = 0x0023C964
 us = 0x0023C904
 us-rev1 = 0x0023C914
 
@@ -571,6 +575,7 @@ us-rev1 = 0x002B3CF0
 [symbol.D_002B0554]
 kind = "data"
 de = 0x002B0554
+eu = 0x002B07F4
 eu-x = 0x002B0834
 us-rev1 = 0x002B5624
 
@@ -690,20 +695,24 @@ us-rev1 = 0x002BB550
 kind = "data"
 de = 0x002B9010
 eu = 0x002B92B0
+us-rev1 = 0x002BE100
 
 [symbol.D_002B93B0]
 kind = "data"
 de = 0x002B93B0
 eu = 0x002B9650
+us-rev1 = 0x002BE4A0
 
 [symbol.D_002B9A40]
 kind = "data"
 de = 0x002B9A40
 eu = 0x002B9CE0
+us-rev1 = 0x002BEB30
 
 [symbol.D_002BA4C0]
 kind = "data"
 de = 0x002BA4C0
+eu = 0x002BA760
 eu-x = 0x002BA7A0
 us = 0x002BA3F0
 us-rev1 = 0x002BF5B0
@@ -1038,134 +1047,263 @@ us-rev1 = 0x0041BA80
 
 [symbol.D_0041C5EC]
 kind = "data"
+de = 0x0041C574
+eu = 0x0041C9BC
+eu-x = 0x0041C9BC
+us = 0x0041C5EC
 us-rev1 = 0x0041C5EC
 
 [symbol.D_0041DF24]
 kind = "data"
+de = 0x0041DEB4
+eu = 0x0041E304
+eu-x = 0x0041E304
+us = 0x0041DF24
 us-rev1 = 0x0041DF24
 
 [symbol.D_0041F118]
 kind = "data"
+de = 0x0041F0A8
+eu = 0x0041F55C
+eu-x = 0x0041F55C
+us = 0x0041F118
 us-rev1 = 0x0041F118
 
 [symbol.D_00420E00]
 kind = "data"
+de = 0x00420D90
+eu = 0x00421240
+eu-x = 0x00421240
+us = 0x00420E00
 us-rev1 = 0x00420E00
 
 [symbol.D_00421A88]
 kind = "data"
+de = 0x00421A58
+eu = 0x00421F60
+eu-x = 0x00421F58
+us = 0x00421A88
 us-rev1 = 0x00421A88
 
 [symbol.D_00421E00]
 kind = "data"
+de = 0x00421DD0
+eu = 0x004222D0
+eu-x = 0x004222D0
+us = 0x00421E00
 us-rev1 = 0x00421E00
 
 [symbol.D_0042247C]
 kind = "data"
+de = 0x0042244C
+eu = 0x0042294C
+eu-x = 0x0042294C
+us = 0x0042247C
 us-rev1 = 0x0042247C
 
 [symbol.D_0042359C]
 kind = "data"
+de = 0x0042343C
+eu = 0x00423CF0
+eu-x = 0x00423E44
+us = 0x0042359C
 us-rev1 = 0x0042359C
 
 [symbol.D_00423930]
 kind = "data"
+de = 0x00423758
+eu = 0x00423EF0
+eu-x = 0x00424044
+us = 0x00423930
 us-rev1 = 0x00423930
 
 [symbol.D_00423B88]
 kind = "data"
+de = 0x004239B0
+eu = 0x00424148
+eu-x = 0x0042429C
+us = 0x00423B88
 us-rev1 = 0x00423B88
 
 [symbol.D_00424528]
 kind = "data"
+de = 0x00424348
+eu = 0x00424AE8
+eu-x = 0x00424C38
+us = 0x00424528
 us-rev1 = 0x00424528
 
 [symbol.D_00429058]
 kind = "data"
+de = 0x00428E78
+eu = 0x004299E0
+eu-x = 0x00429B30
+us = 0x00429058
 us-rev1 = 0x00429058
 
 [symbol.D_004290E8]
 kind = "data"
+de = 0x00428F08
+eu = 0x00429A70
+eu-x = 0x00429BC0
+us = 0x004290E8
 us-rev1 = 0x004290E8
 
 [symbol.D_0042931C]
 kind = "data"
+de = 0x0042913C
+eu = 0x00429C9C
+eu-x = 0x00429DEC
+us = 0x0042931C
 us-rev1 = 0x0042931C
 
 [symbol.D_00429B74]
 kind = "data"
+de = 0x00429994
+eu = 0x0042A550
+eu-x = 0x0042A6A0
+us = 0x00429B74
 us-rev1 = 0x00429B74
 
 [symbol.D_0042BCB0]
 kind = "data"
+de = 0x0042BAD0
+eu = 0x0042C6A0
+eu-x = 0x0042C7F0
+us = 0x0042BCB0
 us-rev1 = 0x0042BCB0
 
 [symbol.D_0042DB38]
 kind = "data"
+de = 0x0042D958
+eu = 0x0042E5A8
+eu-x = 0x0042E6F8
+us = 0x0042DB38
 us-rev1 = 0x0042DB38
 
 [symbol.D_0042DFF0]
 kind = "data"
+de = 0x0042DE10
+eu = 0x0042EA60
+eu-x = 0x0042EBB0
+us = 0x0042DFF0
 us-rev1 = 0x0042DFF0
 
 [symbol.D_00435C54]
 kind = "data"
+de = 0x00435A78
+eu = 0x004367A4
+eu-x = 0x004368EC
+us = 0x00435C54
 us-rev1 = 0x00435C54
 
 [symbol.D_00435F70]
 kind = "data"
+de = 0x00435D90
+eu = 0x00436AC0
+eu-x = 0x00436BF8
+us = 0x00435F70
 us-rev1 = 0x00435F70
 
 [symbol.D_0043630C]
 kind = "data"
+de = 0x0043612C
+eu = 0x00436E5C
+eu-x = 0x00436F94
+us = 0x0043630C
 us-rev1 = 0x0043630C
 
 [symbol.D_00436634]
 kind = "data"
+de = 0x00436454
+eu = 0x00437184
+eu-x = 0x004372BC
+us = 0x00436634
 us-rev1 = 0x00436634
 
 [symbol.D_00436FE4]
 kind = "data"
+de = 0x00436E04
+eu = 0x00437DA4
+eu-x = 0x00437ED4
+us = 0x00436FE4
 us-rev1 = 0x00436FE4
 
 [symbol.D_00437454]
 kind = "data"
+de = 0x00437274
+eu = 0x004380AC
+eu-x = 0x004381DC
+us = 0x00437454
 us-rev1 = 0x00437454
 
 [symbol.D_00437868]
 kind = "data"
+de = 0x00437688
+eu = 0x004384B8
+eu-x = 0x004385E8
+us = 0x00437868
 us-rev1 = 0x00437868
 
 [symbol.D_00437B98]
 kind = "data"
+de = 0x004379B8
+eu = 0x004387E8
+eu-x = 0x00438918
+us = 0x00437B98
 us-rev1 = 0x00437B98
 
 [symbol.D_0043905C]
 kind = "data"
+de = 0x00438E7C
+eu = 0x00439D50
+eu-x = 0x00439E80
+us = 0x0043905C
 us-rev1 = 0x0043905C
 
 [symbol.D_00439390]
 kind = "data"
+de = 0x004391B0
+eu = 0x0043A080
+eu-x = 0x0043A1B0
+us = 0x00439390
 us-rev1 = 0x00439390
 
 [symbol.D_0043962C]
 kind = "data"
+de = 0x0043944C
+eu = 0x0043A31C
+eu-x = 0x0043A44C
+us = 0x0043962C
 us-rev1 = 0x0043962C
 
 [symbol.D_00439938]
 kind = "data"
+de = 0x00439758
+eu = 0x0043A628
+eu-x = 0x0043A758
+us = 0x00439938
 us-rev1 = 0x00439938
 
 [symbol.D_0043A014]
 kind = "data"
+de = 0x00439E34
+eu = 0x0043AD04
+eu-x = 0x0043AE34
+us = 0x0043A014
 us-rev1 = 0x0043A014
 
 [symbol.D_0043C1D0]
 kind = "data"
+de = 0x0043BFF0
+eu = 0x0043CED0
+eu-x = 0x0043D000
+us = 0x0043C1D0
 us-rev1 = 0x0043C1D0
 
 [symbol.D_0043C500]
 kind = "data"
+eu = 0x0043D200
 us = 0x0043C500
 us-rev1 = 0x0043C500
 
@@ -1497,6 +1635,7 @@ de = 0x0044EF48
 eu = 0x00450218
 eu-x = 0x00450348
 us = 0x0044F0B8
+us-rev1 = 0x0044FB98
 
 [symbol.D_0044EF4C]
 kind = "data"
@@ -1504,6 +1643,7 @@ de = 0x0044EF4C
 eu = 0x0045021C
 eu-x = 0x0045034C
 us = 0x0044F0BC
+us-rev1 = 0x0044FB9C
 
 [symbol.D_0044EF4E]
 kind = "data"
@@ -1511,6 +1651,7 @@ de = 0x0044EF4E
 eu = 0x0045021E
 eu-x = 0x0045034E
 us = 0x0044F0BE
+us-rev1 = 0x0044FB9E
 
 [symbol.D_0044F01C]
 kind = "data"
@@ -1630,6 +1771,8 @@ us-rev1 = 0x0044FB90
 [symbol.D_0044FC04]
 kind = "data"
 de = 0x0044FC04
+eu = 0x00450EB0
+eu-x = 0x00450FE0
 us = 0x0044FD50
 us-rev1 = 0x00450830
 
@@ -1667,6 +1810,8 @@ us-rev1 = 0x00450AD4
 [symbol.D_0044FF80]
 kind = "data"
 de = 0x0044FF80
+eu = 0x0045122C
+eu-x = 0x0045135C
 us = 0x004500CC
 us-rev1 = 0x00450BAC
 
@@ -1794,11 +1939,6 @@ eu-x = 0x004522C4
 us = 0x00451010
 us-rev1 = 0x00451AF0
 
-[symbol.D_00450EB0]
-kind = "data"
-eu = 0x00450EB0
-eu-x = 0x00450FE0
-
 [symbol.D_00450ED0]
 kind = "data"
 eu = 0x00450ED0
@@ -1818,11 +1958,6 @@ eu = 0x00452394
 eu-x = 0x004524C4
 us = 0x00451214
 us-rev1 = 0x00451F58
-
-[symbol.D_0045122C]
-kind = "data"
-eu = 0x0045122C
-eu-x = 0x0045135C
 
 [symbol.D_004518A4]
 kind = "data"
@@ -1871,7 +2006,9 @@ us-rev1 = 0x0000F641
 
 [symbol.D_176000]
 kind = "data"
+de = 0x00166000
 eu = 0x00176000
+eu-x = 0x000F0000
 us = 0x00164000
 us-rev1 = 0x0016E000
 
@@ -2381,7 +2518,9 @@ us-rev1 = 0x00049794
 
 [symbol.D_52BF0]
 kind = "data"
+de = 0x000518D0
 eu = 0x00052BF0
+eu-x = 0x00052D20
 us = 0x00051A50
 us-rev1 = 0x00052860
 
@@ -3478,11 +3617,6 @@ eu = 0x800C1FAC
 eu-x = 0x800C1FEC
 us = 0x800C1C3C
 us-rev1 = 0x800C6DFC
-
-[symbol.D_800C1D0C_eu]
-kind = "data"
-eu = 0x800C1D0C
-eu-x = 0x800C1D4C
 
 [symbol.D_800C1D1C_de]
 kind = "data"
@@ -5123,6 +5257,8 @@ us-rev1 = 0x800C7460
 [symbol.D_800C22A4_de]
 kind = "data"
 de = 0x800C22A4
+eu = 0x800C2544
+eu-x = 0x800C2584
 us = 0x800C21D4
 us-rev1 = 0x800C7394
 
@@ -5860,6 +5996,8 @@ us-rev1 = 0x800C74A0
 
 [symbol.D_800C23B0_eu_x]
 kind = "data"
+de = 0x800C20D0
+eu = 0x800C2370
 eu-x = 0x800C23B0
 us-rev1 = 0x800C71C0
 
@@ -5990,11 +6128,6 @@ eu = 0x800C2690
 eu-x = 0x800C26D0
 us = 0x800C2320
 us-rev1 = 0x800C74E0
-
-[symbol.D_800C2544_eu]
-kind = "data"
-eu = 0x800C2544
-eu-x = 0x800C2584
 
 [symbol.D_800C258C_de]
 kind = "data"
@@ -9274,51 +9407,6 @@ eu-x = 0x800C2F3C
 us = 0x800C2B88
 us-rev1 = 0x800C7D48
 
-[symbol.D_800C2C5C_de]
-kind = "data"
-de = 0x800C2C5C
-eu-x = 0x800C2F40
-
-[symbol.D_800C2C60_de]
-kind = "data"
-de = 0x800C2C60
-eu-x = 0x800C2F44
-
-[symbol.D_800C2C64_de]
-kind = "data"
-de = 0x800C2C64
-eu-x = 0x800C2F48
-
-[symbol.D_800C2C68_de]
-kind = "data"
-de = 0x800C2C68
-eu-x = 0x800C2F4C
-
-[symbol.D_800C2C6C_de]
-kind = "data"
-de = 0x800C2C6C
-eu-x = 0x800C2F50
-
-[symbol.D_800C2C70_de]
-kind = "data"
-de = 0x800C2C70
-eu-x = 0x800C2F54
-
-[symbol.D_800C2C74_de]
-kind = "data"
-de = 0x800C2C74
-eu-x = 0x800C2F58
-
-[symbol.D_800C2C78_de]
-kind = "data"
-de = 0x800C2C78
-eu-x = 0x800C2F5C
-
-[symbol.D_800C2C7C_de]
-kind = "data"
-de = 0x800C2C7C
-eu-x = 0x800C2F60
-
 [symbol.D_800C2CC4_de]
 kind = "data"
 de = 0x800C2CC4
@@ -9994,7 +10082,9 @@ us-rev1 = 0x800C7FF0
 
 [symbol.D_800C2F00_eu]
 kind = "data"
+de = 0x800C2C5C
 eu = 0x800C2F00
+eu-x = 0x800C2F40
 us = 0x800C2B8C
 us-rev1 = 0x800C7D4C
 
@@ -10006,7 +10096,9 @@ us-rev1 = 0x800C7FF4
 
 [symbol.D_800C2F04_eu]
 kind = "data"
+de = 0x800C2C60
 eu = 0x800C2F04
+eu-x = 0x800C2F44
 us = 0x800C2B90
 us-rev1 = 0x800C7D50
 
@@ -10018,7 +10110,9 @@ us-rev1 = 0x800C7FF8
 
 [symbol.D_800C2F08_eu]
 kind = "data"
+de = 0x800C2C64
 eu = 0x800C2F08
+eu-x = 0x800C2F48
 us = 0x800C2B94
 us-rev1 = 0x800C7D54
 
@@ -10030,7 +10124,9 @@ us-rev1 = 0x800C7FFC
 
 [symbol.D_800C2F0C_eu]
 kind = "data"
+de = 0x800C2C68
 eu = 0x800C2F0C
+eu-x = 0x800C2F4C
 us = 0x800C2B98
 us-rev1 = 0x800C7D58
 
@@ -10042,7 +10138,9 @@ us-rev1 = 0x800C8000
 
 [symbol.D_800C2F10_eu]
 kind = "data"
+de = 0x800C2C6C
 eu = 0x800C2F10
+eu-x = 0x800C2F50
 us = 0x800C2B9C
 us-rev1 = 0x800C7D5C
 
@@ -10056,13 +10154,17 @@ us-rev1 = 0x800C8004
 
 [symbol.D_800C2F14_eu]
 kind = "data"
+de = 0x800C2C70
 eu = 0x800C2F14
+eu-x = 0x800C2F54
 us = 0x800C2BA0
 us-rev1 = 0x800C7D60
 
 [symbol.D_800C2F18_eu]
 kind = "data"
+de = 0x800C2C74
 eu = 0x800C2F18
+eu-x = 0x800C2F58
 us = 0x800C2BA4
 us-rev1 = 0x800C7D64
 
@@ -10076,7 +10178,9 @@ us-rev1 = 0x800C800C
 
 [symbol.D_800C2F1C_eu]
 kind = "data"
+de = 0x800C2C78
 eu = 0x800C2F1C
+eu-x = 0x800C2F5C
 us = 0x800C2BA8
 us-rev1 = 0x800C7D68
 
@@ -10090,7 +10194,9 @@ us-rev1 = 0x800C8010
 
 [symbol.D_800C2F20_eu]
 kind = "data"
+de = 0x800C2C7C
 eu = 0x800C2F20
+eu-x = 0x800C2F60
 us = 0x800C2BAC
 us-rev1 = 0x800C7D6C
 
@@ -11669,11 +11775,6 @@ eu = 0x800C3570
 eu-x = 0x800C35B0
 us = 0x800C31F0
 us-rev1 = 0x800C83B0
-
-[symbol.D_800C32C0_eu]
-kind = "data"
-eu = 0x800C32C0
-eu-x = 0x800C3300
 
 [symbol.D_800C32C4_de]
 kind = "data"
@@ -21393,6 +21494,7 @@ us-rev1 = 0x800CA430
 [symbol.D_800C5350_de]
 kind = "data"
 de = 0x800C5350
+eu = 0x800C5600
 eu-x = 0x800C5640
 us-rev1 = 0x800CA440
 
@@ -25312,6 +25414,7 @@ us-rev1 = 0x800CB1F0
 
 [symbol.D_800C6080_eu_x]
 kind = "data"
+eu = 0x800C6040
 eu-x = 0x800C6080
 us = 0x800C5CD0
 us-rev1 = 0x800CAF30
@@ -25889,6 +25992,8 @@ us-rev1 = 0x800C6B30
 
 [symbol.D_800C6B40]
 kind = "data"
+de = 0x800C1A50
+us = 0x800C1980
 us-rev1 = 0x800C6B40
 
 [symbol.D_800C6B74]
@@ -26093,6 +26198,10 @@ us-rev1 = 0x800C70F4
 
 [symbol.D_800C7218]
 kind = "data"
+de = 0x800C2128
+eu = 0x800C23C8
+eu-x = 0x800C2408
+us = 0x800C2058
 us-rev1 = 0x800C7218
 
 [symbol.D_800C72F0_de]
@@ -26209,6 +26318,10 @@ us-rev1 = 0x800CC5B8
 
 [symbol.D_800C73E4]
 kind = "data"
+de = 0x800C22F4
+eu = 0x800C2594
+eu-x = 0x800C25D4
+us = 0x800C2224
 us-rev1 = 0x800C73E4
 
 [symbol.D_800C73FC]
@@ -27478,6 +27591,8 @@ us-rev1 = 0x800C8008
 [symbol.D_800C8100]
 kind = "data"
 de = 0x800C3010
+eu = 0x800C32C0
+eu-x = 0x800C3300
 us = 0x800C2F40
 us-rev1 = 0x800C8100
 
@@ -27485,16 +27600,19 @@ us-rev1 = 0x800C8100
 kind = "data"
 de = 0x800C8100
 eu = 0x800C8CF0
+us-rev1 = 0x800CD350
 
 [symbol.D_800C8108_de]
 kind = "data"
 de = 0x800C8108
 eu = 0x800C8CF8
+us-rev1 = 0x800CD358
 
 [symbol.D_800C8110_de]
 kind = "data"
 de = 0x800C8110
 eu = 0x800C8D00
+us-rev1 = 0x800CD360
 
 [symbol.D_800C8120_de]
 kind = "data"
@@ -27858,6 +27976,10 @@ us-rev1 = 0x800C88CC
 
 [symbol.D_800C88F0]
 kind = "data"
+de = 0x800C7D00
+eu = 0x800C88F0
+eu-x = 0x800C92C0
+us = 0x800C7C20
 us-rev1 = 0x800CCF50
 
 [symbol.D_800C8914]
@@ -27926,6 +28048,10 @@ us-rev1 = 0x800C8CA0
 
 [symbol.D_800C8D28]
 kind = "data"
+de = 0x800C3C38
+eu = 0x800C3EE8
+eu-x = 0x800C3F28
+us = 0x800C3B68
 us-rev1 = 0x800C8D28
 
 [symbol.D_800C8D40]
@@ -27934,6 +28060,10 @@ us-rev1 = 0x800C8D40
 
 [symbol.D_800C8DB0]
 kind = "data"
+de = 0x800C3CC0
+eu = 0x800C3F70
+eu-x = 0x800C3FB0
+us = 0x800C3BF0
 us-rev1 = 0x800C8DB0
 
 [symbol.D_800C8DB0_de]
@@ -27946,24 +28076,40 @@ us-rev1 = 0x800CE000
 
 [symbol.D_800C8DB0_eu_x]
 kind = "data"
+de = 0x800C77F0
+eu = 0x800C83E0
 eu-x = 0x800C8DB0
 us-rev1 = 0x800CCA40
 
 [symbol.D_800C8DB4_eu_x]
 kind = "data"
+de = 0x800C77F4
+eu = 0x800C83E4
 eu-x = 0x800C8DB4
 us-rev1 = 0x800CCA44
 
 [symbol.D_800C8ED0]
 kind = "data"
+de = 0x800C3DE0
+eu = 0x800C4090
+eu-x = 0x800C40D0
+us = 0x800C3D10
 us-rev1 = 0x800C8ED0
 
 [symbol.D_800C8F60]
 kind = "data"
+de = 0x800C3E70
+eu = 0x800C4120
+eu-x = 0x800C4160
+us = 0x800C3DA0
 us-rev1 = 0x800C8F60
 
 [symbol.D_800C8F70]
 kind = "data"
+de = 0x800C3E80
+eu = 0x800C4130
+eu-x = 0x800C4170
+us = 0x800C3DB0
 us-rev1 = 0x800C8F70
 
 [symbol.D_800C8FA0]
@@ -28456,6 +28602,10 @@ us-rev1 = 0x800C9AD8
 
 [symbol.D_800C9D88]
 kind = "data"
+de = 0x800C4C98
+eu = 0x800C4F48
+eu-x = 0x800C4F88
+us = 0x800C4BC8
 us-rev1 = 0x800C9D88
 
 [symbol.D_800C9F64_de]
@@ -28612,14 +28762,18 @@ us-rev1 = 0x800CA3E0
 
 [symbol.D_800CA4B0]
 kind = "data"
+de = 0x800C53C0
 us-rev1 = 0x800CA4B0
 
 [symbol.D_800CA4B4]
 kind = "data"
+de = 0x800C53C4
 us-rev1 = 0x800CA4B4
 
 [symbol.D_800CA4B8]
 kind = "data"
+de = 0x800C53C8
+eu = 0x800E0B44
 us-rev1 = 0x800CA4B8
 
 [symbol.D_800CA510]
@@ -28731,10 +28885,18 @@ us-rev1 = 0x800CAEF0
 
 [symbol.D_800CAF20]
 kind = "data"
+de = 0x800C5D90
+eu = 0x800C6030
+eu-x = 0x800C6070
+us = 0x800C5CC0
 us-rev1 = 0x800CAF20
 
 [symbol.D_800CB2B8]
 kind = "data"
+de = 0x800C6128
+eu = 0x800C63C8
+eu-x = 0x800C6408
+us = 0x800C6058
 us-rev1 = 0x800CB2B8
 
 [symbol.D_800CB328]
@@ -28743,10 +28905,14 @@ us-rev1 = 0x800CB328
 
 [symbol.D_800CB32C]
 kind = "data"
+eu = 0x800C643C
+us = 0x800C60CC
 us-rev1 = 0x800CB32C
 
 [symbol.D_800CB330]
 kind = "data"
+eu = 0x800C6440
+us = 0x800C60D0
 us-rev1 = 0x800CB330
 
 [symbol.D_800CB348_de]
@@ -28759,6 +28925,10 @@ us-rev1 = 0x800D0588
 
 [symbol.D_800CB358]
 kind = "data"
+de = 0x800C61C8
+eu = 0x800C6468
+eu-x = 0x800C64A8
+us = 0x800C60F8
 us-rev1 = 0x800CB358
 
 [symbol.D_800CB358_de]
@@ -28819,10 +28989,18 @@ us-rev1 = 0x800D05E0
 
 [symbol.D_800CB3A8]
 kind = "data"
+de = 0x800C6218
+eu = 0x800C64B8
+eu-x = 0x800C64F8
+us = 0x800C6148
 us-rev1 = 0x800CB3A8
 
 [symbol.D_800CB3B0]
 kind = "data"
+de = 0x800C6220
+eu = 0x800C64C0
+eu-x = 0x800C6500
+us = 0x800C6150
 us-rev1 = 0x800CB3B0
 
 [symbol.D_800CB3F8]
@@ -29301,13 +29479,6 @@ eu-x = 0x800CD244
 us = 0x800CBBA4
 us-rev1 = 0x800D0EE4
 
-[symbol.D_800CBC9A]
-kind = "data"
-de = 0x800CBC9A
-eu = 0x800CC87A
-eu-x = 0x800CD24A
-us = 0x800CBBAA
-
 [symbol.D_800CBC9C]
 kind = "data"
 de = 0x800CBC9C
@@ -29622,10 +29793,18 @@ us-rev1 = 0x800CC750
 
 [symbol.D_800CC810]
 kind = "data"
+de = 0x800C75C0
+eu = 0x800C81B0
+eu-x = 0x800C8B80
+us = 0x800C74E0
 us-rev1 = 0x800CC810
 
 [symbol.D_800CC820]
 kind = "data"
+de = 0x800C75D0
+eu = 0x800C81C0
+eu-x = 0x800C8B90
+us = 0x800C74F0
 us-rev1 = 0x800CC820
 
 [symbol.D_800CC838]
@@ -29646,18 +29825,34 @@ us-rev1 = 0x800CC840
 
 [symbol.D_800CC850]
 kind = "data"
+de = 0x800C7600
+eu = 0x800C81F0
+eu-x = 0x800C8BC0
+us = 0x800C7520
 us-rev1 = 0x800CC850
 
 [symbol.D_800CC8F8]
 kind = "data"
+de = 0x800C76A8
+eu = 0x800C8298
+eu-x = 0x800C8C68
+us = 0x800C75C8
 us-rev1 = 0x800CC8F8
 
 [symbol.D_800CC908]
 kind = "data"
+de = 0x800C76B8
+eu = 0x800C82A8
+eu-x = 0x800C8C78
+us = 0x800C75D8
 us-rev1 = 0x800CC908
 
 [symbol.D_800CC9D0]
 kind = "data"
+de = 0x800C7780
+eu = 0x800C8370
+eu-x = 0x800C8D40
+us = 0x800C76A0
 us-rev1 = 0x800CC9D0
 
 [symbol.D_800CCA68]
@@ -29694,6 +29889,10 @@ us-rev1 = 0x800CCB28
 
 [symbol.D_800CCC30]
 kind = "data"
+de = 0x800C79E0
+eu = 0x800C85D0
+eu-x = 0x800C8FA0
+us = 0x800C7900
 us-rev1 = 0x800CCC30
 
 [symbol.D_800CCF10]
@@ -29883,12 +30082,14 @@ us-rev1 = 0x800D2954
 [symbol.D_800CD708]
 kind = "data"
 de = 0x800CD708
+eu = 0x800CE2E8
 eu-x = 0x800CECB8
 us-rev1 = 0x800D2958
 
 [symbol.D_800CD70C]
 kind = "data"
 de = 0x800CD70C
+eu = 0x800CE2EC
 eu-x = 0x800CECBC
 us-rev1 = 0x800D295C
 
@@ -30604,6 +30805,9 @@ us-rev1 = 0x800CED30
 
 [symbol.D_800CF198]
 kind = "data"
+de = 0x800C9F54
+eu = 0x800CAB38
+eu-x = 0x800CB508
 us-rev1 = 0x800CF198
 
 [symbol.D_800CF1C8]
@@ -30620,6 +30824,10 @@ us-rev1 = 0x800D052C
 
 [symbol.D_800D05D0]
 kind = "data"
+de = 0x800CB390
+eu = 0x800CBF70
+eu-x = 0x800CC940
+us = 0x800CB2A0
 us-rev1 = 0x800D05D0
 
 [symbol.D_800D0640]
@@ -30712,6 +30920,10 @@ us-rev1 = 0x800D0EE8
 
 [symbol.D_800D0EEA]
 kind = "data"
+de = 0x800CBC9A
+eu = 0x800CC87A
+eu-x = 0x800CD24A
+us = 0x800CBBAA
 us-rev1 = 0x800D0EEA
 
 [symbol.D_800D0EEE]
@@ -30803,16 +31015,22 @@ us-rev1 = 0x800D74A8
 
 [symbol.D_800D2134]
 kind = "data"
+eu = 0x800E1C74
+eu-x = 0x800DD7CC
 us = 0x800D2134
 us-rev1 = 0x800D74B4
 
 [symbol.D_800D2138]
 kind = "data"
+eu = 0x800E1C84
+eu-x = 0x800DD7D8
 us = 0x800D2138
 us-rev1 = 0x800D74B8
 
 [symbol.D_800D213C]
 kind = "data"
+eu = 0x800E1C94
+eu-x = 0x800DD7E4
 us = 0x800D213C
 us-rev1 = 0x800D74BC
 
@@ -32066,18 +32284,24 @@ us-rev1 = 0x800D7614
 [symbol.D_800D35EC]
 kind = "data"
 de = 0x800D35EC
+eu = 0x800E2204
+eu-x = 0x800DDBF8
 us = 0x800D2298
 us-rev1 = 0x800D7618
 
 [symbol.D_800D35F0]
 kind = "data"
 de = 0x800D35F0
+eu = 0x800E2214
+eu-x = 0x800DDC04
 us = 0x800D229C
 us-rev1 = 0x800D761C
 
 [symbol.D_800D35F4]
 kind = "data"
 de = 0x800D35F4
+eu = 0x800E2224
+eu-x = 0x800DDC10
 us = 0x800D22A0
 us-rev1 = 0x800D7620
 
@@ -33174,36 +33398,48 @@ us-rev1 = 0x800D7A00
 [symbol.D_800D3A40]
 kind = "data"
 de = 0x800D3A40
+eu = 0x800E3354
+eu-x = 0x800DE8F4
 us = 0x800D26EC
 us-rev1 = 0x800D7A6C
 
 [symbol.D_800D3A44]
 kind = "data"
 de = 0x800D3A44
+eu = 0x800E3364
+eu-x = 0x800DE900
 us = 0x800D26F0
 us-rev1 = 0x800D7A70
 
 [symbol.D_800D3A48]
 kind = "data"
 de = 0x800D3A48
+eu = 0x800E3374
+eu-x = 0x800DE90C
 us = 0x800D26F4
 us-rev1 = 0x800D7A74
 
 [symbol.D_800D3A54]
 kind = "data"
 de = 0x800D3A54
+eu = 0x800E33A4
+eu-x = 0x800DE930
 us = 0x800D2700
 us-rev1 = 0x800D7A80
 
 [symbol.D_800D3A58]
 kind = "data"
 de = 0x800D3A58
+eu = 0x800E33B4
+eu-x = 0x800DE93C
 us = 0x800D2704
 us-rev1 = 0x800D7A84
 
 [symbol.D_800D3A9C]
 kind = "data"
 de = 0x800D3A9C
+eu = 0x800E34C4
+eu-x = 0x800DEA08
 us = 0x800D2748
 us-rev1 = 0x800D7AC8
 
@@ -33579,81 +33815,97 @@ us-rev1 = 0x800D7C7C
 kind = "data"
 de = 0x800D3D14
 us = 0x800D29C0
+us-rev1 = 0x800D7D40
 
 [symbol.D_800D3D18]
 kind = "data"
 de = 0x800D3D18
 us = 0x800D29C4
+us-rev1 = 0x800D7D44
 
 [symbol.D_800D3D1C]
 kind = "data"
 de = 0x800D3D1C
 us = 0x800D29C8
+us-rev1 = 0x800D7D48
 
 [symbol.D_800D3D20]
 kind = "data"
 de = 0x800D3D20
 us = 0x800D29CC
+us-rev1 = 0x800D7D4C
 
 [symbol.D_800D3D24]
 kind = "data"
 de = 0x800D3D24
 us = 0x800D29D0
+us-rev1 = 0x800D7D50
 
 [symbol.D_800D3D28]
 kind = "data"
 de = 0x800D3D28
 us = 0x800D29D4
+us-rev1 = 0x800D7D54
 
 [symbol.D_800D3D2C]
 kind = "data"
 de = 0x800D3D2C
 us = 0x800D29D8
+us-rev1 = 0x800D7D58
 
 [symbol.D_800D3D30]
 kind = "data"
 de = 0x800D3D30
 us = 0x800D29DC
+us-rev1 = 0x800D7D5C
 
 [symbol.D_800D3D34]
 kind = "data"
 de = 0x800D3D34
 us = 0x800D29E0
+us-rev1 = 0x800D7D60
 
 [symbol.D_800D3D38]
 kind = "data"
 de = 0x800D3D38
 us = 0x800D29E4
+us-rev1 = 0x800D7D64
 
 [symbol.D_800D3D3C]
 kind = "data"
 de = 0x800D3D3C
 us = 0x800D29E8
+us-rev1 = 0x800D7D68
 
 [symbol.D_800D3D40]
 kind = "data"
 de = 0x800D3D40
 us = 0x800D29EC
+us-rev1 = 0x800D7D6C
 
 [symbol.D_800D3D44]
 kind = "data"
 de = 0x800D3D44
 us = 0x800D29F0
+us-rev1 = 0x800D7D70
 
 [symbol.D_800D3D48]
 kind = "data"
 de = 0x800D3D48
 us = 0x800D29F4
+us-rev1 = 0x800D7D74
 
 [symbol.D_800D3D4C]
 kind = "data"
 de = 0x800D3D4C
 us = 0x800D29F8
+us-rev1 = 0x800D7D78
 
 [symbol.D_800D3D50]
 kind = "data"
 de = 0x800D3D50
 us = 0x800D29FC
+us-rev1 = 0x800D7D7C
 
 [symbol.D_800D3D8C]
 kind = "data"
@@ -33678,11 +33930,15 @@ us-rev1 = 0x800D7DC4
 [symbol.D_800D3DB0]
 kind = "data"
 de = 0x800D3DB0
+eu = 0x800E4114
+eu-x = 0x800DF344
 us-rev1 = 0x800D7DDC
 
 [symbol.D_800D3DB4]
 kind = "data"
 de = 0x800D3DB4
+eu = 0x800E4124
+eu-x = 0x800DF350
 us-rev1 = 0x800D7DE0
 
 [symbol.D_800D3DBC]
@@ -33700,12 +33956,16 @@ us-rev1 = 0x800D7DEC
 [symbol.D_800D3DD8]
 kind = "data"
 de = 0x800D3DD8
+eu = 0x800E41B4
+eu-x = 0x800DF3BC
 us = 0x800D2A84
 us-rev1 = 0x800D7E04
 
 [symbol.D_800D3DDC]
 kind = "data"
 de = 0x800D3DDC
+eu = 0x800E41C4
+eu-x = 0x800DF3C8
 us = 0x800D2A88
 us-rev1 = 0x800D7E08
 
@@ -33720,12 +33980,16 @@ us-rev1 = 0x800D7E40
 [symbol.D_800D3F58]
 kind = "data"
 de = 0x800D3F58
+eu = 0x800C1D0C
+eu-x = 0x800C1D4C
 us = 0x800D2C04
 us-rev1 = 0x800D7F84
 
 [symbol.D_800D3F5C]
 kind = "data"
 de = 0x800D3F5C
+eu = 0x800E45D8
+eu-x = 0x800DF7A0
 us = 0x800D2C08
 us-rev1 = 0x800D7F88
 
@@ -33852,6 +34116,7 @@ us-rev1 = 0x800D8444
 [symbol.D_800D4420]
 kind = "data"
 de = 0x800D4420
+eu = 0x800E4AA0
 eu-x = 0x800DFC60
 us = 0x800D30D0
 us-rev1 = 0x800D8450
@@ -33891,6 +34156,7 @@ us-rev1 = 0x800D8560
 [symbol.D_800D47B0]
 kind = "data"
 de = 0x800D47B0
+eu = 0x800E4E30
 eu-x = 0x800DFFF0
 us-rev1 = 0x800D87E0
 
@@ -34180,6 +34446,8 @@ us-rev1 = 0x800D7638
 
 [symbol.D_800D7670]
 kind = "data"
+de = 0x800D3644
+us = 0x800D22F0
 us-rev1 = 0x800D7670
 
 [symbol.D_800D7688]
@@ -34440,6 +34708,8 @@ us-rev1 = 0x800D7A08
 
 [symbol.D_800D7A0C]
 kind = "data"
+de = 0x800D39E0
+eu = 0x800E31D4
 eu-x = 0x800DE7D4
 us = 0x800D268C
 us-rev1 = 0x800D7A0C
@@ -34463,31 +34733,43 @@ us-rev1 = 0x800D7BE8
 [symbol.D_800D7DC8]
 kind = "data"
 de = 0x800D3D9C
+eu = 0x800E40C4
+eu-x = 0x800DF308
 us-rev1 = 0x800D7DC8
 
 [symbol.D_800D7DCC]
 kind = "data"
 de = 0x800D3DA0
+eu = 0x800E40D4
+eu-x = 0x800DF314
 us-rev1 = 0x800D7DCC
 
 [symbol.D_800D7DD0]
 kind = "data"
 de = 0x800D3DA4
+eu = 0x800E40E4
+eu-x = 0x800DF320
 us-rev1 = 0x800D7DD0
 
 [symbol.D_800D7DD4]
 kind = "data"
 de = 0x800D3DA8
+eu = 0x800E40F4
+eu-x = 0x800DF32C
 us-rev1 = 0x800D7DD4
 
 [symbol.D_800D7DD8]
 kind = "data"
 de = 0x800D3DAC
+eu = 0x800E4104
+eu-x = 0x800DF338
 us-rev1 = 0x800D7DD8
 
 [symbol.D_800D7DE4]
 kind = "data"
 de = 0x800D3DB8
+eu = 0x800E4134
+eu-x = 0x800DF35C
 us-rev1 = 0x800D7DE4
 
 [symbol.D_800D7E14]
@@ -36444,20 +36726,6 @@ us-rev1 = 0x800DE108
 kind = "data"
 us-rev1 = 0x800DE174
 
-[symbol.D_800DE244]
-kind = "data"
-de = 0x800DE244
-eu = 0x800EE8C4
-eu-x = 0x800E9A84
-us = 0x800DCEF4
-
-[symbol.D_800DE248]
-kind = "data"
-de = 0x800DE248
-eu = 0x800EE8C8
-eu-x = 0x800E9A88
-us = 0x800DCEF8
-
 [symbol.D_800DE2F0]
 kind = "data"
 de = 0x800DE2F0
@@ -36467,6 +36735,8 @@ us-rev1 = 0x800E2320
 [symbol.D_800DE2F8]
 kind = "data"
 de = 0x800DE2F8
+eu = 0x800EE978
+eu-x = 0x800E9B38
 us = 0x800DCFA8
 us-rev1 = 0x800E2328
 
@@ -36513,18 +36783,10 @@ us-rev1 = 0x800E2364
 [symbol.D_800DE338]
 kind = "data"
 de = 0x800DE338
+eu = 0x800EE9B8
+eu-x = 0x800E9B78
 us = 0x800DCFE8
 us-rev1 = 0x800E2368
-
-[symbol.D_800DE370]
-kind = "data"
-de = 0x800DE370
-eu-x = 0x800E9BB0
-
-[symbol.D_800DE378_de]
-kind = "data"
-de = 0x800DE378
-eu-x = 0x800E9BB8
 
 [symbol.D_800DE380]
 kind = "data"
@@ -36897,6 +37159,8 @@ us-rev1 = 0x800E2770
 [symbol.D_800DE750_de]
 kind = "data"
 de = 0x800DE750
+eu = 0x800EEDD0
+eu-x = 0x800E9F90
 us = 0x800DD400
 us-rev1 = 0x800E2780
 
@@ -36921,6 +37185,8 @@ us-rev1 = 0x800E27F0
 
 [symbol.D_800DE7BC]
 kind = "data"
+de = 0x800D39D8
+eu = 0x800E31B4
 eu-x = 0x800DE7BC
 us = 0x800D2684
 us-rev1 = 0x800D7A04
@@ -37901,10 +38167,18 @@ eu-x = 0x800DCF44
 
 [symbol.D_800E1118]
 kind = "data"
+de = 0x800DD0E8
+eu = 0x800ED768
+eu-x = 0x800E8928
+us = 0x800DBD98
 us-rev1 = 0x800E1118
 
 [symbol.D_800E1130]
 kind = "data"
+de = 0x800DD100
+eu = 0x800ED780
+eu-x = 0x800E8940
+us = 0x800DBDB0
 us-rev1 = 0x800E1130
 
 [symbol.D_800E1134]
@@ -37920,6 +38194,10 @@ us-rev1 = 0x800E1144
 
 [symbol.D_800E1148]
 kind = "data"
+de = 0x800DD118
+eu = 0x800ED798
+eu-x = 0x800E8958
+us = 0x800DBDC8
 us-rev1 = 0x800E1148
 
 [symbol.D_800E1154]
@@ -37930,6 +38208,10 @@ us-rev1 = 0x800E1154
 
 [symbol.D_800E11F0]
 kind = "data"
+de = 0x800DD1C0
+eu = 0x800ED840
+eu-x = 0x800E8A00
+us = 0x800DBE70
 us-rev1 = 0x800E11F0
 
 [symbol.D_800E1254]
@@ -38142,14 +38424,23 @@ us-rev1 = 0x800E1400
 
 [symbol.D_800E1454]
 kind = "data"
+de = 0x800DD424
+eu = 0x800EDAA4
+eu-x = 0x800E8C64
 us-rev1 = 0x800E1454
 
 [symbol.D_800E1460]
 kind = "data"
+de = 0x800DD430
+eu = 0x800EDAB0
+eu-x = 0x800E8C70
 us-rev1 = 0x800E1460
 
 [symbol.D_800E146C]
 kind = "data"
+de = 0x800DD43C
+eu = 0x800EDABC
+eu-x = 0x800E8C7C
 us-rev1 = 0x800E146C
 
 [symbol.D_800E1470]
@@ -38175,6 +38466,10 @@ eu-x = 0x800DD280
 
 [symbol.D_800E1570]
 kind = "data"
+de = 0x800DD540
+eu = 0x800EDBC0
+eu-x = 0x800E8D80
+us = 0x800DC1F0
 us-rev1 = 0x800E1570
 
 [symbol.D_800E15A4]
@@ -38196,6 +38491,10 @@ eu-x = 0x800DD340
 
 [symbol.D_800E16B0]
 kind = "data"
+de = 0x800DD680
+eu = 0x800EDD00
+eu-x = 0x800E8EC0
+us = 0x800DC330
 us-rev1 = 0x800E16B0
 
 [symbol.D_800E1724]
@@ -38365,6 +38664,9 @@ us-rev1 = 0x800E5A2E
 
 [symbol.D_800E19E8]
 kind = "data"
+de = 0x800DD9B8
+eu = 0x800EE038
+eu-x = 0x800E91F8
 us-rev1 = 0x800E19E8
 
 [symbol.D_800E1AA0]
@@ -38402,6 +38704,10 @@ us-rev1 = 0x800E1AB8
 
 [symbol.D_800E1AC0]
 kind = "data"
+de = 0x800DDA90
+eu = 0x800EE110
+eu-x = 0x800E92D0
+us = 0x800DC740
 us-rev1 = 0x800E1AC0
 
 [symbol.D_800E1ACC_de]
@@ -38462,21 +38768,7 @@ de = 0x800E1C54
 eu = 0x800F22C4
 eu-x = 0x800ED4A4
 us = 0x800E0904
-
-[symbol.D_800E1C74]
-kind = "data"
-eu = 0x800E1C74
-eu-x = 0x800DD7CC
-
-[symbol.D_800E1C84]
-kind = "data"
-eu = 0x800E1C84
-eu-x = 0x800DD7D8
-
-[symbol.D_800E1C94]
-kind = "data"
-eu = 0x800E1C94
-eu-x = 0x800DD7E4
+us-rev1 = 0x800E5CA4
 
 [symbol.D_800E1CC0]
 kind = "data"
@@ -38628,6 +38920,10 @@ us-rev1 = 0x800E1E94
 
 [symbol.D_800E1EA4]
 kind = "data"
+de = 0x800DDE74
+eu = 0x800EE4F4
+eu-x = 0x800E96B4
+us = 0x800DCB24
 us-rev1 = 0x800E1EA4
 
 [symbol.D_800E1EA4_eu]
@@ -38655,7 +38951,9 @@ us-rev1 = 0x800E1ED4
 
 [symbol.D_800E1EE4]
 kind = "data"
+de = 0x800DDEB4
 eu = 0x800E1EE4
+us = 0x800DCB64
 us-rev1 = 0x800E1EE4
 
 [symbol.D_800E1EE4_eu]
@@ -38747,6 +39045,7 @@ us-rev1 = 0x800E5F87
 
 [symbol.D_800E1F40]
 kind = "data"
+de = 0x800DDF10
 us-rev1 = 0x800E1F40
 
 [symbol.D_800E1F44_eu]
@@ -38756,10 +39055,18 @@ eu-x = 0x800DD9E8
 
 [symbol.D_800E1F48]
 kind = "data"
+de = 0x800DDF18
+eu = 0x800EE598
+eu-x = 0x800E9758
+us = 0x800DCBC8
 us-rev1 = 0x800E1F48
 
 [symbol.D_800E1F54]
 kind = "data"
+de = 0x800DDF24
+eu = 0x800EE5A4
+eu-x = 0x800E9764
+us = 0x800DCBD4
 us-rev1 = 0x800E1F54
 
 [symbol.D_800E1F54_eu]
@@ -38779,6 +39086,10 @@ eu-x = 0x800DDA0C
 
 [symbol.D_800E1F84]
 kind = "data"
+de = 0x800DDF54
+eu = 0x800EE5D4
+eu-x = 0x800E9794
+us = 0x800DCC04
 us-rev1 = 0x800E1F84
 
 [symbol.D_800E1F84_eu]
@@ -38788,7 +39099,10 @@ eu-x = 0x800DDA18
 
 [symbol.D_800E1F94]
 kind = "data"
+de = 0x800DDF64
 eu = 0x800E1F94
+eu-x = 0x800E97A4
+us = 0x800DCC14
 us-rev1 = 0x800E1F94
 
 [symbol.D_800E1F94_eu]
@@ -38820,11 +39134,18 @@ eu-x = 0x800DDA48
 
 [symbol.D_800E1FD0]
 kind = "data"
+de = 0x800DDFA0
+eu = 0x800EE620
+eu-x = 0x800E97E0
+us = 0x800DCC50
 us-rev1 = 0x800E1FD0
 
 [symbol.D_800E1FD4]
 kind = "data"
+de = 0x800DDFA4
 eu = 0x800E1FD4
+eu-x = 0x800E97E4
+us = 0x800DCC54
 us-rev1 = 0x800E1FD4
 
 [symbol.D_800E1FD4_eu]
@@ -38865,6 +39186,10 @@ eu-x = 0x800DDAA8
 
 [symbol.D_800E2064]
 kind = "data"
+de = 0x800DE034
+eu = 0x800EE6B4
+eu-x = 0x800E9874
+us = 0x800DCCE4
 us-rev1 = 0x800E2064
 
 [symbol.D_800E2064_eu]
@@ -38908,21 +39233,6 @@ eu = 0x800F2A9C
 eu-x = 0x800EDC7C
 us-rev1 = 0x800E63CC
 
-[symbol.D_800E2204]
-kind = "data"
-eu = 0x800E2204
-eu-x = 0x800DDBF8
-
-[symbol.D_800E2214_eu]
-kind = "data"
-eu = 0x800E2214
-eu-x = 0x800DDC04
-
-[symbol.D_800E2224]
-kind = "data"
-eu = 0x800E2224
-eu-x = 0x800DDC10
-
 [symbol.D_800E2244]
 kind = "data"
 eu = 0x800E2244
@@ -38935,10 +39245,18 @@ us-rev1 = 0x800E2264
 
 [symbol.D_800E2274]
 kind = "data"
+de = 0x800DE244
+eu = 0x800EE8C4
+eu-x = 0x800E9A84
+us = 0x800DCEF4
 us-rev1 = 0x800E2274
 
 [symbol.D_800E2278]
 kind = "data"
+de = 0x800DE248
+eu = 0x800EE8C8
+eu-x = 0x800E9A88
+us = 0x800DCEF8
 us-rev1 = 0x800E2278
 
 [symbol.D_800E227C]
@@ -38982,14 +39300,23 @@ us-rev1 = 0x800E2358
 
 [symbol.D_800E2390]
 kind = "data"
+de = 0x800DE360
+eu = 0x800EE9E0
+eu-x = 0x800E9BA0
 us-rev1 = 0x800E2390
 
 [symbol.D_800E23A0]
 kind = "data"
+de = 0x800DE370
+eu = 0x800EE9F0
+eu-x = 0x800E9BB0
 us-rev1 = 0x800E23A0
 
 [symbol.D_800E23A8]
 kind = "data"
+de = 0x800DE378
+eu = 0x800EE9F8
+eu-x = 0x800E9BB8
 us-rev1 = 0x800E23A8
 
 [symbol.D_800E247C]
@@ -39012,6 +39339,8 @@ us-rev1 = 0x800E2490
 
 [symbol.D_800E2498]
 kind = "data"
+de = 0x800DE468
+us = 0x800DD118
 us-rev1 = 0x800E2498
 
 [symbol.D_800E249C]
@@ -39088,6 +39417,10 @@ us-rev1 = 0x800E2774
 
 [symbol.D_800E2798]
 kind = "data"
+de = 0x800DE768
+eu = 0x800EEE08
+eu-x = 0x800E9FC8
+us = 0x800DD418
 us-rev1 = 0x800E2798
 
 [symbol.D_800E27B4]
@@ -39171,6 +39504,9 @@ us-rev1 = 0x800E2810
 
 [symbol.D_800E2814]
 kind = "data"
+de = 0x800DE7C4
+eu = 0x800EEE34
+eu-x = 0x800E9FF4
 us-rev1 = 0x800E2814
 
 [symbol.D_800E2814_eu]
@@ -39600,11 +39936,6 @@ eu-x = 0x800EAB18
 us = 0x800DDF98
 us-rev1 = 0x800E3338
 
-[symbol.D_800E3354]
-kind = "data"
-eu = 0x800E3354
-eu-x = 0x800DE8F4
-
 [symbol.D_800E3360]
 kind = "data"
 de = 0x800DF310
@@ -39621,11 +39952,6 @@ eu-x = 0x800EAB44
 us = 0x800DDFC4
 us-rev1 = 0x800E3364
 
-[symbol.D_800E3364_eu]
-kind = "data"
-eu = 0x800E3364
-eu-x = 0x800DE900
-
 [symbol.D_800E3368]
 kind = "data"
 de = 0x800DF318
@@ -39633,11 +39959,6 @@ eu = 0x800EF988
 eu-x = 0x800EAB48
 us = 0x800DDFC8
 us-rev1 = 0x800E3368
-
-[symbol.D_800E3374]
-kind = "data"
-eu = 0x800E3374
-eu-x = 0x800DE90C
 
 [symbol.D_800E3390]
 kind = "data"
@@ -39662,16 +39983,6 @@ eu = 0x800EF9B8
 eu-x = 0x800EAB78
 us = 0x800DDFF8
 us-rev1 = 0x800E3398
-
-[symbol.D_800E33A4]
-kind = "data"
-eu = 0x800E33A4
-eu-x = 0x800DE930
-
-[symbol.D_800E33B4]
-kind = "data"
-eu = 0x800E33B4
-eu-x = 0x800DE93C
 
 [symbol.D_800E3400]
 kind = "data"
@@ -39739,15 +40050,18 @@ us-rev1 = 0x800E34A4
 
 [symbol.D_800E34A8]
 kind = "data"
+de = 0x800DF458
+eu = 0x800EFAC8
+eu-x = 0x800EAC88
+us = 0x800DE108
 us-rev1 = 0x800E34A8
-
-[symbol.D_800E34C4]
-kind = "data"
-eu = 0x800E34C4
-eu-x = 0x800DEA08
 
 [symbol.D_800E3514]
 kind = "data"
+de = 0x800DF4C4
+eu = 0x800EFB34
+eu-x = 0x800EACF4
+us = 0x800DE174
 us-rev1 = 0x800E3514
 
 [symbol.D_800E3518]
@@ -39914,55 +40228,10 @@ eu = 0x800E40B4
 eu-x = 0x800DF2FC
 us-rev1 = 0x800E40B4
 
-[symbol.D_800E40C4]
-kind = "data"
-eu = 0x800E40C4
-eu-x = 0x800DF308
-
-[symbol.D_800E40D4]
-kind = "data"
-eu = 0x800E40D4
-eu-x = 0x800DF314
-
-[symbol.D_800E40E4]
-kind = "data"
-eu = 0x800E40E4
-eu-x = 0x800DF320
-
-[symbol.D_800E40F4]
-kind = "data"
-eu = 0x800E40F4
-eu-x = 0x800DF32C
-
-[symbol.D_800E4104]
-kind = "data"
-eu = 0x800E4104
-eu-x = 0x800DF338
-
-[symbol.D_800E4114]
-kind = "data"
-eu = 0x800E4114
-eu-x = 0x800DF344
-
-[symbol.D_800E4124]
-kind = "data"
-eu = 0x800E4124
-eu-x = 0x800DF350
-
-[symbol.D_800E4134]
-kind = "data"
-eu = 0x800E4134
-eu-x = 0x800DF35C
-
 [symbol.D_800E4154]
 kind = "data"
 eu = 0x800E4154
 eu-x = 0x800DF374
-
-[symbol.D_800E41B4]
-kind = "data"
-eu = 0x800E41B4
-eu-x = 0x800DF3BC
 
 [symbol.D_800E41C0]
 kind = "data"
@@ -39971,11 +40240,6 @@ eu = 0x800F07E0
 eu-x = 0x800EB9A0
 us = 0x800DEE20
 us-rev1 = 0x800E41C0
-
-[symbol.D_800E41C4]
-kind = "data"
-eu = 0x800E41C4
-eu-x = 0x800DF3C8
 
 [symbol.D_800E42D0]
 kind = "data"
@@ -40214,11 +40478,6 @@ kind = "data"
 eu = 0x800E45D4
 eu-x = 0x800DF79C
 
-[symbol.D_800E45D8]
-kind = "data"
-eu = 0x800E45D8
-eu-x = 0x800DF7A0
-
 [symbol.D_800E4600]
 kind = "data"
 de = 0x800E05B0
@@ -40333,14 +40592,20 @@ us-rev1 = 0x800E4E28
 
 [symbol.D_800E4EC0]
 kind = "data"
+eu = 0x800F14E0
+eu-x = 0x800EC6C0
 us-rev1 = 0x800E4EC0
 
 [symbol.D_800E4EC4]
 kind = "data"
+eu = 0x800F14E4
+eu-x = 0x800EC6C4
 us-rev1 = 0x800E4EC4
 
 [symbol.D_800E4EC8]
 kind = "data"
+eu = 0x800F14E8
+eu-x = 0x800EC6C8
 us-rev1 = 0x800E4EC8
 
 [symbol.D_800E4EF0]
@@ -40540,6 +40805,7 @@ kind = "data"
 de = 0x800E1458
 eu = 0x800F1AC8
 eu-x = 0x800ECCA8
+us = 0x800E0108
 us-rev1 = 0x800E54A8
 
 [symbol.D_800E54AC]
@@ -40547,6 +40813,7 @@ kind = "data"
 de = 0x800E145C
 eu = 0x800F1ACC
 eu-x = 0x800ECCAC
+us = 0x800E010C
 us-rev1 = 0x800E54AC
 
 [symbol.D_800E54B0]
@@ -40554,6 +40821,7 @@ kind = "data"
 de = 0x800E1460
 eu = 0x800F1AD0
 eu-x = 0x800ECCB0
+us = 0x800E0110
 us-rev1 = 0x800E54B0
 
 [symbol.D_800E5550]
@@ -40633,6 +40901,7 @@ kind = "data"
 de = 0x800E15D8
 eu = 0x800F1C48
 eu-x = 0x800ECE28
+us = 0x800E0288
 us-rev1 = 0x800E5628
 
 [symbol.D_800E562C]
@@ -40640,6 +40909,7 @@ kind = "data"
 de = 0x800E15DC
 eu = 0x800F1C4C
 eu-x = 0x800ECE2C
+us = 0x800E028C
 us-rev1 = 0x800E562C
 
 [symbol.D_800E5630]
@@ -40647,6 +40917,7 @@ kind = "data"
 de = 0x800E15E0
 eu = 0x800F1C50
 eu-x = 0x800ECE30
+us = 0x800E0290
 us-rev1 = 0x800E5630
 
 [symbol.D_800E5690]
@@ -40729,14 +41000,20 @@ us-rev1 = 0x800E5784
 
 [symbol.D_800E57DC]
 kind = "data"
+eu = 0x800F1DFC
+eu-x = 0x800ECFDC
 us-rev1 = 0x800E57DC
 
 [symbol.D_800E57E0]
 kind = "data"
+eu = 0x800F1E00
+eu-x = 0x800ECFE0
 us-rev1 = 0x800E57E0
 
 [symbol.D_800E57E4]
 kind = "data"
+eu = 0x800F1E04
+eu-x = 0x800ECFE4
 us-rev1 = 0x800E57E4
 
 [symbol.D_800E5830]
@@ -41110,17 +41387,26 @@ us-rev1 = 0x800EACF4
 
 [symbol.D_800EB1A4]
 kind = "data"
+de = 0x800DF974
+eu = 0x800EFFE4
 eu-x = 0x800EB1A4
+us = 0x800DE624
 us-rev1 = 0x800E39C4
 
 [symbol.D_800EB1A8]
 kind = "data"
+de = 0x800DF978
+eu = 0x800EFFE8
 eu-x = 0x800EB1A8
+us = 0x800DE628
 us-rev1 = 0x800E39C8
 
 [symbol.D_800EB1AC]
 kind = "data"
+de = 0x800DF97C
+eu = 0x800EFFEC
 eu-x = 0x800EB1AC
+us = 0x800DE62C
 us-rev1 = 0x800E39CC
 
 [symbol.D_800ED3FC]
@@ -41194,37 +41480,49 @@ eu-x = 0x800E92C8
 
 [symbol.D_800EE144]
 kind = "data"
+de = 0x800DDAC4
 eu = 0x800EE144
+eu-x = 0x800E9304
 us = 0x800DC774
 us-rev1 = 0x800E1AF4
 
 [symbol.D_800EE148]
 kind = "data"
+de = 0x800DDAC8
 eu = 0x800EE148
+eu-x = 0x800E9308
 us = 0x800DC778
 us-rev1 = 0x800E1AF8
 
 [symbol.D_800EE150]
 kind = "data"
+de = 0x800DDAD0
 eu = 0x800EE150
+eu-x = 0x800E9310
 us = 0x800DC780
 us-rev1 = 0x800E1B00
 
 [symbol.D_800EE154]
 kind = "data"
+de = 0x800DDAD4
 eu = 0x800EE154
+eu-x = 0x800E9314
 us = 0x800DC784
 us-rev1 = 0x800E1B04
 
 [symbol.D_800EE158]
 kind = "data"
+de = 0x800DDAD8
 eu = 0x800EE158
+eu-x = 0x800E9318
 us = 0x800DC788
 us-rev1 = 0x800E1B08
 
 [symbol.D_800EE160]
 kind = "data"
+de = 0x800DDAE0
 eu = 0x800EE160
+eu-x = 0x800E9320
 us = 0x800DC790
 us-rev1 = 0x800E1B10
 
@@ -41254,21 +41552,6 @@ us-rev1 = 0x800EE540
 kind = "data"
 eu = 0x800EE970
 eu-x = 0x800E9B30
-
-[symbol.D_800EE978]
-kind = "data"
-eu = 0x800EE978
-eu-x = 0x800E9B38
-
-[symbol.D_800EE9B8]
-kind = "data"
-eu = 0x800EE9B8
-eu-x = 0x800E9B78
-
-[symbol.D_800EE9E0]
-kind = "data"
-eu = 0x800EE9E0
-eu-x = 0x800E9BA0
 
 [symbol.D_800EEAD0]
 kind = "data"
@@ -41317,11 +41600,6 @@ kind = "data"
 eu = 0x800EED80
 eu-x = 0x800E9F40
 us-rev1 = 0x800EED80
-
-[symbol.D_800EEDD0]
-kind = "data"
-eu = 0x800EEDD0
-eu-x = 0x800E9F90
 
 [symbol.D_800EEDE0]
 kind = "data"
@@ -41418,16 +41696,19 @@ us-rev1 = 0x800F5C90
 [symbol.D_800F1DA8]
 kind = "data"
 eu = 0x800F1DA8
+eu-x = 0x800ECF88
 us-rev1 = 0x800E5788
 
 [symbol.D_800F1DAC]
 kind = "data"
 eu = 0x800F1DAC
+eu-x = 0x800ECF8C
 us-rev1 = 0x800E578C
 
 [symbol.D_800F1DB0]
 kind = "data"
 eu = 0x800F1DB0
+eu-x = 0x800ECF90
 us-rev1 = 0x800E5790
 
 [symbol.D_800F1DB0_de]
@@ -43490,7 +43771,9 @@ eu-x = 0x80108B25
 
 [symbol.D_8010EB7D]
 kind = "data"
+de = 0x800FEB7D
 eu = 0x8010EB7D
+eu-x = 0x80108B7D
 us-rev1 = 0x80102B7D
 
 [symbol.D_8010EB94]
@@ -43540,13 +43823,17 @@ us-rev1 = 0x8010F328
 
 [symbol.D_8010FB54]
 kind = "data"
+de = 0x800FFB54
 eu = 0x8010FB54
+eu-x = 0x80109B54
 us = 0x800FDB54
 us-rev1 = 0x80103B54
 
 [symbol.D_8010FB5A]
 kind = "data"
+de = 0x800FFB5A
 eu = 0x8010FB5A
+eu-x = 0x80109B5A
 us = 0x800FDB5A
 us-rev1 = 0x80103B5A
 
@@ -43584,7 +43871,9 @@ us-rev1 = 0x8010FC4C
 
 [symbol.D_8010FE28]
 kind = "data"
+de = 0x800FFE28
 eu = 0x8010FE28
+eu-x = 0x80109E28
 us = 0x800FDE28
 us-rev1 = 0x80103E28
 
@@ -44630,41 +44919,49 @@ us-rev1 = 0x801462F3
 kind = "data"
 de = 0x80142235
 us = 0x80140235
+us-rev1 = 0x801462F5
 
 [symbol.D_80142236]
 kind = "data"
 de = 0x80142236
 us = 0x80140236
+us-rev1 = 0x801462F6
 
 [symbol.D_80142237]
 kind = "data"
 de = 0x80142237
 us = 0x80140237
+us-rev1 = 0x801462F7
 
 [symbol.D_80142238]
 kind = "data"
 de = 0x80142238
 us = 0x80140238
+us-rev1 = 0x801462F8
 
 [symbol.D_80142239]
 kind = "data"
 de = 0x80142239
 us = 0x80140239
+us-rev1 = 0x801462F9
 
 [symbol.D_8014223A]
 kind = "data"
 de = 0x8014223A
 us = 0x8014023A
+us-rev1 = 0x801462FA
 
 [symbol.D_8014223B]
 kind = "data"
 de = 0x8014223B
 us = 0x8014023B
+us-rev1 = 0x801462FB
 
 [symbol.D_8014223D]
 kind = "data"
 de = 0x8014223D
 us = 0x8014023D
+us-rev1 = 0x801462FD
 
 [symbol.D_801422C1]
 kind = "data"
@@ -45559,16 +45856,19 @@ us-rev1 = 0x8014D4AC
 kind = "data"
 de = 0x80147470
 eu = 0x80157470
+us-rev1 = 0x8014D700
 
 [symbol.D_801486A0]
 kind = "data"
 de = 0x801486A0
 eu = 0x801586A0
+us-rev1 = 0x8014E930
 
 [symbol.D_801486B8]
 kind = "data"
 de = 0x801486B8
 eu = 0x801586B8
+us-rev1 = 0x8014E948
 
 [symbol.D_801486C0]
 kind = "data"
@@ -45612,6 +45912,7 @@ us-rev1 = 0x8014EAD0
 [symbol.D_80148850]
 kind = "data"
 de = 0x80148850
+eu = 0x80158850
 eu-x = 0x80152850
 us = 0x80146850
 us-rev1 = 0x8014EAE0
@@ -45619,6 +45920,7 @@ us-rev1 = 0x8014EAE0
 [symbol.D_80149A80]
 kind = "data"
 de = 0x80149A80
+eu = 0x80159A80
 eu-x = 0x80153A80
 us = 0x80147A80
 us-rev1 = 0x8014FD10
@@ -45626,6 +45928,7 @@ us-rev1 = 0x8014FD10
 [symbol.D_80149AA0]
 kind = "data"
 de = 0x80149AA0
+eu = 0x80159AA0
 eu-x = 0x80153AA0
 us = 0x80147AA0
 us-rev1 = 0x8014FD30
@@ -45633,6 +45936,7 @@ us-rev1 = 0x8014FD30
 [symbol.D_80149AC0]
 kind = "data"
 de = 0x80149AC0
+eu = 0x80159AC0
 eu-x = 0x80153AC0
 us = 0x80147AC0
 us-rev1 = 0x8014FD50
@@ -45640,6 +45944,7 @@ us-rev1 = 0x8014FD50
 [symbol.D_80149AE0]
 kind = "data"
 de = 0x80149AE0
+eu = 0x80159AE0
 eu-x = 0x80153AE0
 us = 0x80147AE0
 us-rev1 = 0x8014FD70
@@ -53687,11 +53992,6 @@ de = 0x8022FDAC
 us = 0x8022FD8C
 us-rev1 = 0x8022FD9C
 
-[symbol.func_8022FEAC_eu]
-kind = "function"
-eu = 0x8022FEAC
-eu-x = 0x8022FEDC
-
 [symbol.func_8022FF04_de]
 kind = "function"
 de = 0x8022FF04
@@ -53856,6 +54156,8 @@ us-rev1 = 0x802325D0
 [symbol.func_802325FC_de]
 kind = "function"
 de = 0x802325FC
+eu = 0x8022FEAC
+eu-x = 0x8022FEDC
 us = 0x802325DC
 us-rev1 = 0x802325EC
 
@@ -57315,16 +57617,13 @@ us-rev1 = 0x8024F8CC
 kind = "function"
 de = 0x8024F944
 
-[symbol.func_8024F950_de]
-kind = "function"
-de = 0x8024F950
-
 [symbol.func_8024F954_eu]
 kind = "function"
 eu = 0x8024F954
 
 [symbol.func_8024F960_eu]
 kind = "function"
+de = 0x8024F950
 eu = 0x8024F960
 eu-x = 0x8024F990
 us = 0x8024F930
@@ -65885,19 +66184,13 @@ eu-x = 0x80291378
 us = 0x80291118
 us-rev1 = 0x802911E8
 
-[symbol.func_80291334_us]
-kind = "function"
-us = 0x80291334
-
 [symbol.func_80291404]
-kind = "function"
-us-rev1 = 0x80291404
-
-[symbol.func_80291424_de]
 kind = "function"
 de = 0x80291424
 eu = 0x80291564
 eu-x = 0x80291594
+us = 0x80291334
+us-rev1 = 0x80291404
 
 [symbol.func_802917D8_de]
 kind = "function"
@@ -70781,6 +71074,7 @@ de = 0x802B0388
 [symbol.func_802B0390_de]
 kind = "function"
 de = 0x802B0390
+eu = 0x802B0630
 eu-x = 0x802B0670
 us = 0x802B02C0
 us-rev1 = 0x802B5460
@@ -70824,10 +71118,6 @@ us-rev1 = 0x802B540C
 [symbol.func_802B0628_eu]
 kind = "function"
 eu = 0x802B0628
-
-[symbol.func_802B0630_eu]
-kind = "function"
-eu = 0x802B0630
 
 [symbol.func_802B0668_eu_x]
 kind = "function"
@@ -71215,6 +71505,7 @@ us-rev1 = 0x802B742C
 
 [symbol.func_802B2378]
 kind = "function"
+de = 0x802AD2A8
 eu = 0x802AD548
 eu-x = 0x802AD588
 us = 0x802AD1D8
@@ -73759,10 +74050,6 @@ us-rev1 = 0x802C0384
 kind = "function"
 de = 0x802BB5AC
 
-[symbol.func_802BB5B0_de]
-kind = "function"
-de = 0x802BB5B0
-
 [symbol.func_802BB5E0_de]
 kind = "function"
 de = 0x802BB5E0
@@ -73831,6 +74118,7 @@ eu = 0x802BB84C
 
 [symbol.func_802BB850_eu]
 kind = "function"
+de = 0x802BB5B0
 eu = 0x802BB850
 eu-x = 0x802BB890
 us = 0x802BB4E0
@@ -73998,17 +74286,12 @@ eu-x = 0x802BC838
 us = 0x802BC488
 us-rev1 = 0x802C1648
 
-[symbol.func_802BC570_de]
-kind = "function"
-de = 0x802BC570
-
-[symbol.func_802BC810_eu]
-kind = "function"
-eu = 0x802BC810
-
 [symbol.func_802BC850_eu_x]
 kind = "function"
+de = 0x802BC570
+eu = 0x802BC810
 eu-x = 0x802BC850
+us = 0x802BC4A0
 us-rev1 = 0x802C1660
 
 [symbol.func_802BCC90_de]
@@ -74832,10 +75115,6 @@ de = 0x802C1908
 kind = "function"
 eu = 0x802C1AC4
 
-[symbol.func_802C1B60_eu_x]
-kind = "data"
-eu-x = 0x802C1B60
-
 [symbol.func_802C1BA8_eu]
 kind = "function"
 eu = 0x802C1BA8
@@ -74854,6 +75133,10 @@ us-rev1 = 0x802C3988
 
 [symbol.func_802C6970_us_rev1]
 kind = "data"
+de = 0x802C1880
+eu = 0x802C1B20
+eu-x = 0x802C1B60
+us = 0x802C17B0
 us-rev1 = 0x802C6970
 
 [symbol.func_80400000_de]
@@ -84687,10 +84970,6 @@ us-rev1 = 0x80443F40
 kind = "function"
 de = 0x80443EB4
 
-[symbol.func_80443EC0_de]
-kind = "function"
-de = 0x80443EC0
-
 [symbol.func_80444024_us]
 kind = "function"
 us = 0x80444024
@@ -85077,6 +85356,7 @@ eu-x = 0x8044505C
 
 [symbol.func_80445074_eu]
 kind = "function"
+de = 0x80443EC0
 eu = 0x80445074
 eu-x = 0x804451A4
 us = 0x80444030
@@ -85722,10 +86002,6 @@ us-rev1 = 0x80449914
 kind = "function"
 de = 0x80448D18
 
-[symbol.func_80448D20_de]
-kind = "function"
-de = 0x80448D20
-
 [symbol.func_80448E7C_eu_x]
 kind = "function"
 eu-x = 0x80448E7C
@@ -85734,10 +86010,6 @@ us-rev1 = 0x8044873C
 [symbol.func_80448E88_us]
 kind = "function"
 us = 0x80448E88
-
-[symbol.func_80448E90_us]
-kind = "function"
-us = 0x80448E90
 
 [symbol.func_80448EA4_us_rev1]
 kind = "function"
@@ -85806,6 +86078,10 @@ us-rev1 = 0x80449968
 
 [symbol.func_80449970_us_rev1]
 kind = "function"
+de = 0x80448D20
+eu = 0x80449F80
+eu-x = 0x8044A0B0
+us = 0x80448E90
 us-rev1 = 0x80449970
 
 [symbol.func_804499B0_de]
@@ -85844,10 +86120,6 @@ us-rev1 = 0x8044AB34
 kind = "function"
 eu = 0x80449F78
 
-[symbol.func_80449F80_eu]
-kind = "function"
-eu = 0x80449F80
-
 [symbol.func_8044A020_de]
 kind = "function"
 de = 0x8044A020
@@ -85867,10 +86139,6 @@ us-rev1 = 0x8044ACCC
 [symbol.func_8044A0A8_eu_x]
 kind = "function"
 eu-x = 0x8044A0A8
-
-[symbol.func_8044A0B0_eu_x]
-kind = "function"
-eu-x = 0x8044A0B0
 
 [symbol.func_8044A0C4_de]
 kind = "function"
@@ -86022,10 +86290,16 @@ us-rev1 = 0x8044CBE0
 
 [symbol.func_8044BFD0]
 kind = "function"
+de = 0x8044B380
+eu = 0x8044C650
+eu-x = 0x8044C780
 us-rev1 = 0x8044BFD0
 
 [symbol.func_8044C050]
 kind = "function"
+de = 0x8044B400
+eu = 0x8044C6D0
+eu-x = 0x8044C800
 us-rev1 = 0x8044C050
 
 [symbol.func_8044C108_de]
@@ -86263,10 +86537,16 @@ de = 0x8044DF54
 
 [symbol.func_8044EBB0]
 kind = "function"
+de = 0x8044DF60
+eu = 0x8044F230
+eu-x = 0x8044F360
 us-rev1 = 0x8044EBB0
 
 [symbol.func_8044ED24]
 kind = "function"
+de = 0x8044E0D4
+eu = 0x8044F3A4
+eu-x = 0x8044F4D4
 us-rev1 = 0x8044ED24
 
 [symbol.func_8044EF2C_eu]
@@ -86397,7 +86677,9 @@ us-rev1 = 0x800C7230
 
 [symbol.jtbl_800C21D0]
 kind = "data"
+eu = 0x800C2190
 eu-x = 0x800C21D0
+us = 0x800C1E20
 us-rev1 = 0x800C6FE0
 
 [symbol.jtbl_800C2348]
@@ -86881,11 +87163,15 @@ us-rev1 = 0x800CCD68
 
 [symbol.jtbl_800C8BD0]
 kind = "data"
+de = 0x800C7610
+eu = 0x800C8200
 eu-x = 0x800C8BD0
 us-rev1 = 0x800CC860
 
 [symbol.jtbl_800C8EF0]
 kind = "data"
+de = 0x800C7930
+eu = 0x800C8520
 eu-x = 0x800C8EF0
 us-rev1 = 0x800CCB80
 
@@ -86912,11 +87198,13 @@ us-rev1 = 0x800E0E08
 
 [symbol.jtbl_800DCA38]
 kind = "data"
+de = 0x800DDD88
 us = 0x800DCA38
 us-rev1 = 0x800E1DB8
 
 [symbol.jtbl_800DCA58]
 kind = "data"
+de = 0x800DDDA8
 us = 0x800DCA58
 us-rev1 = 0x800E1DD8
 
@@ -87361,6 +87649,7 @@ de = 0x800DE1B8
 eu = 0x800EE838
 eu-x = 0x800E99F8
 us = 0x800DCE68
+us-rev1 = 0x800E21E8
 
 [symbol.jtbl_800DE1E8]
 kind = "data"
@@ -87368,6 +87657,7 @@ de = 0x800DE1E8
 eu = 0x800EE868
 eu-x = 0x800E9A28
 us = 0x800DCE98
+us-rev1 = 0x800E2218
 
 [symbol.jtbl_800DE218]
 kind = "data"
@@ -87375,6 +87665,7 @@ de = 0x800DE218
 eu = 0x800EE898
 eu-x = 0x800E9A58
 us = 0x800DCEC8
+us-rev1 = 0x800E2248
 
 [symbol.jtbl_800DE258]
 kind = "data"
@@ -87382,6 +87673,7 @@ de = 0x800DE258
 eu = 0x800EE8D8
 eu-x = 0x800E9A98
 us = 0x800DCF08
+us-rev1 = 0x800E2288
 
 [symbol.jtbl_800DE288]
 kind = "data"
@@ -87389,6 +87681,7 @@ de = 0x800DE288
 eu = 0x800EE908
 eu-x = 0x800E9AC8
 us = 0x800DCF38
+us-rev1 = 0x800E22B8
 
 [symbol.jtbl_800DE2B8]
 kind = "data"
@@ -87401,6 +87694,7 @@ us = 0x800DCF68
 kind = "data"
 de = 0x800DE300
 us = 0x800DCFB0
+us-rev1 = 0x800E2330
 
 [symbol.jtbl_800DE340]
 kind = "data"
@@ -87486,6 +87780,8 @@ us-rev1 = 0x800E27A0
 
 [symbol.jtbl_800E88A8]
 kind = "data"
+de = 0x800DD068
+eu = 0x800ED6E8
 eu-x = 0x800E88A8
 us = 0x800DBD18
 us-rev1 = 0x800E1098
@@ -87497,7 +87793,9 @@ eu-x = 0x800E8618
 
 [symbol.jtbl_800EDCA0]
 kind = "data"
+de = 0x800DD620
 eu = 0x800EDCA0
+eu-x = 0x800E8E60
 us-rev1 = 0x800E1650
 
 [symbol.jtbl_800EDD18]
@@ -87509,28 +87807,34 @@ eu-x = 0x800E8ED8
 kind = "data"
 de = 0x800DDA10
 eu = 0x800EE090
+eu-x = 0x800E9250
 us-rev1 = 0x800E1A40
 
 [symbol.jtbl_800EE120]
 kind = "data"
+de = 0x800DDAA0
 eu = 0x800EE120
+eu-x = 0x800E92E0
 us = 0x800DC750
 us-rev1 = 0x800E1AD0
 
 [symbol.jtbl_800EE3A8]
 kind = "data"
+de = 0x800DDD28
 eu = 0x800EE3A8
 us = 0x800DC9D8
 us-rev1 = 0x800E1D58
 
 [symbol.jtbl_800EE3C8]
 kind = "data"
+de = 0x800DDD48
 eu = 0x800EE3C8
 us = 0x800DC9F8
 us-rev1 = 0x800E1D78
 
 [symbol.jtbl_800EE3E8]
 kind = "data"
+de = 0x800DDD68
 eu = 0x800EE3E8
 us = 0x800DCA18
 us-rev1 = 0x800E1D98
@@ -87554,18 +87858,6 @@ eu-x = 0x800E9F68
 kind = "data"
 eu = 0x800EEDE8
 eu-x = 0x800E9FA8
-
-[symbol.ragewars_actor_mode_dispatch_us_rev1]
-kind = "data"
-us = 0x800C8710
-
-[symbol.ragewars_actor_primary_mask_events_us_rev1]
-kind = "data"
-us = 0x800C8F10
-
-[symbol.ragewars_character_preview_positions_00_us_rev1]
-kind = "data"
-us = 0x800DE6E0
 
 [symbol.ragewars_credits_label_blank_us_rev1]
 kind = "data"
@@ -87643,53 +87935,9 @@ us-rev1 = 0x800D579C
 kind = "data"
 us-rev1 = 0x800D5834
 
-[symbol.ragewars_movement_tuning_CF39C_us_rev1]
-kind = "data"
-us = 0x800C946C
-
-[symbol.ragewars_movement_tuning_CF3C0_us_rev1]
-kind = "data"
-us = 0x800C9490
-
-[symbol.ragewars_movement_tuning_CF42C_us_rev1]
-kind = "data"
-us = 0x800C94FC
-
-[symbol.ragewars_movement_tuning_CF450_us_rev1]
-kind = "data"
-us = 0x800C9520
-
 [symbol.ragewars_pak_ok_label_us_rev1]
 kind = "data"
 us-rev1 = 0x800D551C
-
-[symbol.ragewars_particle_draw_decal_us_rev1]
-kind = "data"
-us = 0x800CBFB0
-
-[symbol.ragewars_particle_draw_depth_us_rev1]
-kind = "data"
-us = 0x800CBF28
-
-[symbol.ragewars_particle_intensity_texture_us_rev1]
-kind = "data"
-us = 0x800CC170
-
-[symbol.ragewars_particle_state_depth_us_rev1]
-kind = "data"
-us = 0x800CDB00
-
-[symbol.ragewars_particle_state_primitive_us_rev1]
-kind = "data"
-us = 0x800CDBB8
-
-[symbol.ragewars_pixel_formats_us_rev1]
-kind = "data"
-us = 0x800DD780
-
-[symbol.ragewars_rdp_startup_us_rev1]
-kind = "data"
-us = 0x800CBC00
 
 [symbol.ragewars_resident_strings_CC164_us_rev1]
 kind = "data"
@@ -87706,18 +87954,6 @@ us-rev1 = 0x800CBCA4
 [symbol.ragewars_resident_strings_CCCEC_us_rev1]
 kind = "data"
 us-rev1 = 0x800CC0EC
-
-[symbol.ragewars_tlb_snapshot_us_rev1]
-kind = "data"
-us = 0x800D2C20
-
-[symbol.ragewars_u64_quotient_bitwidth_us_rev1]
-kind = "data"
-us = 0x800C7D20
-
-[symbol.ragewars_u64_remainder_bitwidth_us_rev1]
-kind = "data"
-us = 0x800C7E20
 
 [symbol.rw_menu_paged_func_80406434_de]
 kind = "data"
@@ -88794,11 +89030,3 @@ us-rev1 = 0x00446230
 [symbol.rw_menu_paged_func_80446330_us_rev1]
 kind = "data"
 us-rev1 = 0x00446330
-
-[symbol.rw_pool_cells_8027DD48_CA958_us_rev1]
-kind = "data"
-us = 0x800C4B98
-
-[symbol.rw_pool_cells_8027ED6C_CAA68_us_rev1]
-kind = "data"
-us = 0x800C4CA8
