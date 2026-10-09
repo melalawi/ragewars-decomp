@@ -695,18 +695,21 @@ us-rev1 = 0x002BB550
 kind = "data"
 de = 0x002B9010
 eu = 0x002B92B0
+eu-x = 0x002B92F0
 us-rev1 = 0x002BE100
 
 [symbol.D_002B93B0]
 kind = "data"
 de = 0x002B93B0
 eu = 0x002B9650
+eu-x = 0x002B9690
 us-rev1 = 0x002BE4A0
 
 [symbol.D_002B9A40]
 kind = "data"
 de = 0x002B9A40
 eu = 0x002B9CE0
+eu-x = 0x002B9D20
 us-rev1 = 0x002BEB30
 
 [symbol.D_002BA4C0]
@@ -27545,18 +27548,21 @@ us-rev1 = 0x800C8100
 kind = "data"
 de = 0x800C8100
 eu = 0x800C8CF0
+eu-x = 0x800C96C0
 us-rev1 = 0x800CD350
 
 [symbol.D_800C8108_de]
 kind = "data"
 de = 0x800C8108
 eu = 0x800C8CF8
+eu-x = 0x800C96C8
 us-rev1 = 0x800CD358
 
 [symbol.D_800C8110_de]
 kind = "data"
 de = 0x800C8110
 eu = 0x800C8D00
+eu-x = 0x800C96D0
 us-rev1 = 0x800CD360
 
 [symbol.D_800C8120_de]
@@ -33795,96 +33801,112 @@ us-rev1 = 0x800D7C7C
 [symbol.D_800D3D14]
 kind = "data"
 de = 0x800D3D14
+eu-x = 0x800DF170
 us = 0x800D29C0
 us-rev1 = 0x800D7D40
 
 [symbol.D_800D3D18]
 kind = "data"
 de = 0x800D3D18
+eu-x = 0x800DF17C
 us = 0x800D29C4
 us-rev1 = 0x800D7D44
 
 [symbol.D_800D3D1C]
 kind = "data"
 de = 0x800D3D1C
+eu-x = 0x800DF188
 us = 0x800D29C8
 us-rev1 = 0x800D7D48
 
 [symbol.D_800D3D20]
 kind = "data"
 de = 0x800D3D20
+eu-x = 0x800DF194
 us = 0x800D29CC
 us-rev1 = 0x800D7D4C
 
 [symbol.D_800D3D24]
 kind = "data"
 de = 0x800D3D24
+eu-x = 0x800DF1A0
 us = 0x800D29D0
 us-rev1 = 0x800D7D50
 
 [symbol.D_800D3D28]
 kind = "data"
 de = 0x800D3D28
+eu-x = 0x800DF1AC
 us = 0x800D29D4
 us-rev1 = 0x800D7D54
 
 [symbol.D_800D3D2C]
 kind = "data"
 de = 0x800D3D2C
+eu-x = 0x800DF1B8
 us = 0x800D29D8
 us-rev1 = 0x800D7D58
 
 [symbol.D_800D3D30]
 kind = "data"
 de = 0x800D3D30
+eu-x = 0x800DF1C4
 us = 0x800D29DC
 us-rev1 = 0x800D7D5C
 
 [symbol.D_800D3D34]
 kind = "data"
 de = 0x800D3D34
+eu-x = 0x800DF1D0
 us = 0x800D29E0
 us-rev1 = 0x800D7D60
 
 [symbol.D_800D3D38]
 kind = "data"
 de = 0x800D3D38
+eu-x = 0x800DF1DC
 us = 0x800D29E4
 us-rev1 = 0x800D7D64
 
 [symbol.D_800D3D3C]
 kind = "data"
 de = 0x800D3D3C
+eu-x = 0x800DF1E8
 us = 0x800D29E8
 us-rev1 = 0x800D7D68
 
 [symbol.D_800D3D40]
 kind = "data"
 de = 0x800D3D40
+eu-x = 0x800DF1F4
 us = 0x800D29EC
 us-rev1 = 0x800D7D6C
 
 [symbol.D_800D3D44]
 kind = "data"
 de = 0x800D3D44
+eu-x = 0x800DF200
 us = 0x800D29F0
 us-rev1 = 0x800D7D70
 
 [symbol.D_800D3D48]
 kind = "data"
 de = 0x800D3D48
+eu-x = 0x800DF20C
 us = 0x800D29F4
 us-rev1 = 0x800D7D74
 
 [symbol.D_800D3D4C]
 kind = "data"
 de = 0x800D3D4C
+eu-x = 0x800DF218
 us = 0x800D29F8
 us-rev1 = 0x800D7D78
 
 [symbol.D_800D3D50]
 kind = "data"
 de = 0x800D3D50
+eu-x = 0x800DF224
 us = 0x800D29FC
 us-rev1 = 0x800D7D7C
 
@@ -44819,48 +44841,56 @@ us-rev1 = 0x801462F3
 [symbol.D_80142235]
 kind = "data"
 de = 0x80142235
+eu-x = 0x8014C235
 us = 0x80140235
 us-rev1 = 0x801462F5
 
 [symbol.D_80142236]
 kind = "data"
 de = 0x80142236
+eu-x = 0x8014C236
 us = 0x80140236
 us-rev1 = 0x801462F6
 
 [symbol.D_80142237]
 kind = "data"
 de = 0x80142237
+eu-x = 0x8014C237
 us = 0x80140237
 us-rev1 = 0x801462F7
 
 [symbol.D_80142238]
 kind = "data"
 de = 0x80142238
+eu-x = 0x8014C238
 us = 0x80140238
 us-rev1 = 0x801462F8
 
 [symbol.D_80142239]
 kind = "data"
 de = 0x80142239
+eu-x = 0x8014C239
 us = 0x80140239
 us-rev1 = 0x801462F9
 
 [symbol.D_8014223A]
 kind = "data"
 de = 0x8014223A
+eu-x = 0x8014C23A
 us = 0x8014023A
 us-rev1 = 0x801462FA
 
 [symbol.D_8014223B]
 kind = "data"
 de = 0x8014223B
+eu-x = 0x8014C23B
 us = 0x8014023B
 us-rev1 = 0x801462FB
 
 [symbol.D_8014223D]
 kind = "data"
 de = 0x8014223D
+eu-x = 0x8014C23D
 us = 0x8014023D
 us-rev1 = 0x801462FD
 
@@ -45757,18 +45787,21 @@ us-rev1 = 0x8014D4AC
 kind = "data"
 de = 0x80147470
 eu = 0x80157470
+eu-x = 0x80151470
 us-rev1 = 0x8014D700
 
 [symbol.D_801486A0]
 kind = "data"
 de = 0x801486A0
 eu = 0x801586A0
+eu-x = 0x801526A0
 us-rev1 = 0x8014E930
 
 [symbol.D_801486B8]
 kind = "data"
 de = 0x801486B8
 eu = 0x801586B8
+eu-x = 0x801526B8
 us-rev1 = 0x8014E948
 
 [symbol.D_801486C0]
@@ -87595,6 +87628,7 @@ us = 0x800DCF68
 [symbol.jtbl_800DE300]
 kind = "data"
 de = 0x800DE300
+eu-x = 0x800E9B40
 us = 0x800DCFB0
 us-rev1 = 0x800E2330
 
