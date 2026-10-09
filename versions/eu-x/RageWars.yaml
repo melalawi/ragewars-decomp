@@ -3821,7 +3821,7 @@ segments:
       - [0xCD5E0, rodata, "rodata/func_80245D30_de/800CC9E0"]
       - [0xCD5E8, data, "rodata/unresolved/800CC9E8"]
       - [0xCD62C, data, "rodata/writable/800CCA2C"]
-      - [0xCD630, data, "rodata/unresolved/800CCA30"]
+      - [0xCD630, .data, "rodata/unresolved/800CCA30"]
       - [0xCD880, .data, "rodata/writable/800CCC80"]
       - [0xCD8D4, data, "rodata/unresolved/800CCCD4"]
       - [0xCDA98, rodata, "rodata/func_8025AA2C_de/800CCE98"]
