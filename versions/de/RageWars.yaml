@@ -3846,7 +3846,7 @@ segments:
       - [0xCE5A0, rodata, "rodata/func_802A18CC_de/800D2C10"]
       - [0xCE5A8, data, "rodata/writable/800CD9A8"]
       - [0xCE5B0, data, "rodata/unresolved/800CD9B0"]
-      - [0xCE620, data, "rodata/writable/800CDA20"]
+      - [0xCE620, .data, "rodata/writable/800CDA20"]
       - [0xCE7D0, data, "rodata/unresolved/800CDBD0"]
       - [0xCE7E8, data, "rodata/writable/800CDBE8"]
       - [0xCE7F0, data, "rodata/unresolved/800CDBF0"]
