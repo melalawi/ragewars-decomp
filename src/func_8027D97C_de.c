@@ -14,7 +14,6 @@ extern void func_8026F620_de(void *arg0, void *arg1, void *arg2);
 extern f32 func_802760BC_de(s32 arg0, s32 arg1);
 extern void func_802736D4_de(void *arg0, f32 arg1);
 
-extern void *jtbl_800C4C38[];
 
 
 
@@ -30,14 +29,23 @@ void *func_8027D97C_de(void *arg0, void *arg1) {
     f32 value;
 
     {
-        static void *sw_state_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_state_neg_8, &&sw_state_neg_6, &&sw_state_neg_5, &&sw_state_neg_4, &&sw_state_neg_1, &&sw_state_neg_3, &&sw_state_neg_2, &&sw_state_0, &&sw_state_1, &&sw_state_2, &&sw_state_default
-        };
         s32 sw_state_value = (s8)(((func_8027D950_S1 *)(arg0))->unk1D0.v0 + 8);
         if ((unsigned int)sw_state_value > 10) {
             goto sw_state_default;
         }
-        goto *jtbl_800C4C38[sw_state_value];
+        switch (sw_state_value) {
+        case 0: goto sw_state_neg_8;
+        case 1: goto sw_state_default;
+        case 2: goto sw_state_neg_6;
+        case 3: goto sw_state_neg_5;
+        case 4: goto sw_state_neg_4;
+        case 5: goto sw_state_neg_3;
+        case 6: goto sw_state_neg_2;
+        case 7: goto sw_state_neg_4;
+        case 8: goto sw_state_0;
+        case 9: goto sw_state_0;
+        case 10: goto sw_state_0;
+        }
     }
     do {
     sw_state_neg_8:

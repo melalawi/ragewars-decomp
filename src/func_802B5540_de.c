@@ -86,15 +86,22 @@ s32 func_802B5730_de(void *arg0, s32 arg1, s32 arg2) {
     void (*callback)(void *, s32, s32);
 
     {
-        static void *sw_message_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_message_1, &&sw_message_4, &&sw_message_9, &&sw_message_7, &&sw_message_8, &&sw_message_default
-        };
         s32 sw_message_value = arg1;
         sw_message_value -= (1);
         if ((unsigned int)sw_message_value > 8) {
             goto sw_message_default;
         }
-        goto *jtbl_800C7750[sw_message_value];
+        switch (sw_message_value) {
+        case 0: goto sw_message_1;
+        case 1: goto sw_message_default;
+        case 2: goto sw_message_default;
+        case 3: goto sw_message_4;
+        case 4: goto sw_message_default;
+        case 5: goto sw_message_default;
+        case 6: goto sw_message_7;
+        case 7: goto sw_message_8;
+        case 8: goto sw_message_9;
+        }
     }
     do {
     sw_message_1:

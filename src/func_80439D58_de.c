@@ -8,7 +8,6 @@
    3 for any other setting); 0x3DB sends code -1 to func_8042E988_de and calls func_802998A8_de.
    Returns zero. */
 extern u8 D_801462D5;
-extern void *jtbl_800DDF70[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
 extern void func_80298368_de(s32);
@@ -25,9 +24,6 @@ enum { MENU_80439F38_986 = 986, MENU_80439F38_987 = 987 };
 
 s32 func_80439D58_de(void) {
     /* FAKEMATCH: preserve resident jump-table labels and recovered dispatch schedule. */
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&wait_20, &&wait_15, &&wait_10, &&wait_3
-    };
     s32 time;
     u32 setting;
 
@@ -38,7 +34,13 @@ s32 func_80439D58_de(void) {
         if (setting >= 5) {
             goto wait_3;
         }
-        goto *jtbl_800DDF70[setting];
+        switch (setting) {
+        case 0: goto wait_20;
+        case 1: goto wait_3;
+        case 2: goto wait_15;
+        case 3: goto wait_10;
+        case 4: goto wait_10;
+        }
     wait_20:
         time = 20;
         goto wait;

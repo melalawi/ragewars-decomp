@@ -8,20 +8,33 @@
 
 
 extern u32 D_80153788;
-extern void *jtbl_800DCE18[];
 extern char D_800D781C[];
 extern char D_800D37F4[];
 
 s32 func_8040AC54_de(struct Field_func_8040A4A0_de *field) {
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&case_1
-    };
     u32 state = D_80153788;
 
     if (state >= 16) {
         goto state_other;
     }
-    goto *jtbl_800DCE18[state];
+    switch (state) {
+        case 0: goto state_other;
+        case 1: goto state_other;
+        case 2: goto state_other;
+        case 3: goto state_other;
+        case 4: goto state_other;
+        case 5: goto case_1;
+        case 6: goto case_1;
+        case 7: goto state_other;
+        case 8: goto state_other;
+        case 9: goto case_1;
+        case 10: goto case_1;
+        case 11: goto state_other;
+        case 12: goto case_1;
+        case 13: goto state_other;
+        case 14: goto state_other;
+        case 15: goto case_1;
+        }
 state_other:
     field->text = D_800D781C;
     goto done;

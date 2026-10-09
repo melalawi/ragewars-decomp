@@ -12,7 +12,6 @@ extern f32 D_800C3D6C_de;
 extern f32 D_800C3D70_de;
 
 
-extern void *jtbl_800C3D40[];
 
 
 
@@ -27,15 +26,24 @@ f32 func_8024E2FC_de(void *arg0) {
     void *state;
 
     {
-        static void *sw_state_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_state_11, &&sw_state_1, &&sw_state_2, &&sw_state_5, &&sw_state_8, &&sw_state_default
-        };
         s32 state_value = *(s32 *)((func_80205314_S1 *)(arg0))->unk18;
         s32 sw_state_value = state_value - 1;
         if ((unsigned int)sw_state_value > 10) {
             goto sw_state_default;
         }
-        goto *jtbl_800C3D40[sw_state_value];
+        switch (sw_state_value) {
+        case 0: goto sw_state_1;
+        case 1: goto sw_state_2;
+        case 2: goto sw_state_default;
+        case 3: goto sw_state_default;
+        case 4: goto sw_state_5;
+        case 5: goto sw_state_default;
+        case 6: goto sw_state_default;
+        case 7: goto sw_state_8;
+        case 8: goto sw_state_default;
+        case 9: goto sw_state_default;
+        case 10: goto sw_state_11;
+        }
     }
     do {
     sw_state_11:

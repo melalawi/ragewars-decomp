@@ -1,7 +1,6 @@
 #include "span_1000/code_8023D370.h"
 #include "types.h"
 
-extern void *jtbl_800C36A0[];
 
 
 
@@ -17,15 +16,22 @@ extern Output *D_80103FCC;
 
 void func_8023E45C_de(Input *arg0) {
     {
-        static void *sw_type_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_type_1, &&sw_type_2, &&sw_type_3, &&sw_type_4, &&sw_type_5, &&sw_type_6, &&sw_type_7, &&sw_type_8, &&sw_type_9, &&sw_type_default
-        };
         s32 type = arg0->type;
         s32 sw_type_value = type - 1;
         if ((unsigned int)sw_type_value > 8) {
             goto sw_type_default;
         }
-        goto *jtbl_800C36A0[sw_type_value];
+        switch (sw_type_value) {
+        case 0: goto sw_type_1;
+        case 1: goto sw_type_1;
+        case 2: goto sw_type_1;
+        case 3: goto sw_type_1;
+        case 4: goto sw_type_2;
+        case 5: goto sw_type_6;
+        case 6: goto sw_type_3;
+        case 7: goto sw_type_4;
+        case 8: goto sw_type_5;
+        }
     }
     do {
     sw_type_1:

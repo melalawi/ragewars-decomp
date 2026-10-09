@@ -11,7 +11,6 @@
    screen through func_8043C278_de. Returns zero. */
 extern MenuRules *D_800E5554;
 extern u8 D_801462D5;
-extern void *jtbl_800DDEF0[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
 extern void func_80298368_de(s32);
@@ -30,9 +29,6 @@ enum { MENU_80436224_979 = 979, MENU_80436224_981 = 981 };
 
 s32 func_80436044_de(void) {
     /* FAKEMATCH: preserve resident jump-table labels and recovered dispatch schedule. */
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&timer_10, &&timer_15, &&timer_10_again, &&timer_20
-    };
     u32 setting;
 
     func_8029973C_de();
@@ -49,7 +45,13 @@ s32 func_80436044_de(void) {
         if (setting >= 5) {
             goto timer_20;
         }
-        goto *jtbl_800DDEF0[setting];
+        switch (setting) {
+        case 0: goto timer_20;
+        case 1: goto timer_10;
+        case 2: goto timer_15;
+        case 3: goto timer_10_again;
+        case 4: goto timer_10_again;
+        }
     timer_10:
         D_800E5554->locked = 10;
         goto show;

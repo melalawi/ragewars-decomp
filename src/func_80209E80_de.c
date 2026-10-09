@@ -4,7 +4,6 @@
 
 extern s32 D_800C87F0;
 extern char D_800F3D20;
-extern void *jtbl_800C1CD0[];
 
 
 
@@ -38,17 +37,21 @@ void func_80209E80_de(void *arg0)
     type = actor->unk62E;
     mode -= 1;
     {
-        static void *keep_labels[0] __attribute__((section(".sdata"))) = {
-            &&case_0, &&case_1, &&case_2, &&case_3, &&case_4,
-            &&case_5, &&case_6, &&case_7, &&case_8
-        };
-    }
-    {
         u32 dispatch = *(&D_800C87F0 + mode + type * 2);
         if (dispatch >= 9) {
             return;
         }
-        goto *jtbl_800C1CD0[dispatch];
+        switch (dispatch) {
+        case 0: goto case_0;
+        case 1: goto case_0;
+        case 2: goto case_0;
+        case 3: goto case_0;
+        case 4: goto case_1;
+        case 5: goto case_3;
+        case 6: goto case_5;
+        case 7: goto case_4;
+        case 8: goto case_2;
+        }
     }
 case_0:
         func_8020A6D8_de(state, &D_800F3D20 + type * 0x38 + mode * 0x1C);

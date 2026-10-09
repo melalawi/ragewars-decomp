@@ -10,7 +10,6 @@
 /* The first message this handles and how many it takes: eu-x numbers the messages 4 higher, de 4
    lower and takes only 8, as each cartridge's own bytes show; us, us-rev1 and eu share 0x377 and 10. */
 extern struct Screen_func_80423828_de *D_800E4518;
-extern void *jtbl_800DD638[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
 extern void func_802A2394_de(void);
@@ -20,9 +19,6 @@ extern void func_80245B28_de(void);
 extern void func_8042E988_de(s32);
 extern s32 func_8042ACD8_de(void);
 s32 func_80423828_de(void) {
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&reopen, &&code_17, &&retry, &&code_13, &&code_12, &&code_14, &&other, &&done
-    };
     s32 handled;
     u32 message;
     func_8029973C_de();
@@ -44,7 +40,16 @@ s32 func_80423828_de(void) {
     ) {
         goto other;
     }
-    goto *jtbl_800DD638[message];
+    switch (message) {
+        case 0: goto reopen;
+        case 1: goto retry;
+        case 2: goto code_14;
+        case 3: goto code_17;
+        case 4: goto other;
+        case 5: goto other;
+        case 6: goto code_13;
+        case 7: goto code_12;
+        }
 reopen:
     func_802A2394_de();
     func_8043C278_de(D_800E4518);

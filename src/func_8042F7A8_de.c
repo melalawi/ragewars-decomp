@@ -15,7 +15,6 @@
 
 extern struct Block_func_8042F7A8_de *D_800E54A4;
 extern u8 D_801462D5;
-extern void *jtbl_800DDB80[];
 extern void func_802A2394_de();
 extern void func_802A2360_de();
 extern void func_80404E28_de(s32);
@@ -29,9 +28,6 @@ extern void func_8042D034_de();
 extern void func_804389F0_de();
 
 s32 func_8042F7A8_de(void *arg0, void *arg1, s32 event) {
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&option_a, &&option_b, &&option_c, &&done
-    };
     s32 i;
     u32 option;
 
@@ -65,7 +61,13 @@ s32 func_8042F7A8_de(void *arg0, void *arg1, s32 event) {
     if (option >= 5) {
         goto done;
     }
-    goto *jtbl_800DDB80[option];
+    switch (option) {
+        case 0: goto option_a;
+        case 1: goto option_c;
+        case 2: goto option_b;
+        case 3: goto option_c;
+        case 4: goto option_c;
+        }
 option_a:
     func_8042CFDC_de();
     return 0;

@@ -65,7 +65,6 @@ void func_80286080_de(void *arg0) {
     func_8028D108_de(state);
 }
 
-extern void *jtbl_800C50E8[];
 
 extern f32 D_800D2988;
 extern char D_80145040;
@@ -140,14 +139,17 @@ first_pass_done:
     if (func_8022A68C_de(&D_80145040)) {
         func_8025E2D4_de(0x34);
         {
-        static void *sw_mode_labels[0] __attribute__((section(".sdata"))) = {
-            &&sw_mode_0, &&sw_mode_2, &&sw_mode_1, &&sw_mode_3, &&sw_mode_4, &&sw_mode_default
-        };
         s32 sw_mode_value = ((GlobalMode *)&D_80145040)->mode;
         if ((unsigned int)sw_mode_value > 4) {
             goto sw_mode_default;
         }
-        goto *jtbl_800C50E8[sw_mode_value];
+        switch (sw_mode_value) {
+        case 0: goto sw_mode_0;
+        case 1: goto sw_mode_1;
+        case 2: goto sw_mode_0;
+        case 3: goto sw_mode_1;
+        case 4: goto sw_mode_1;
+        }
     }
     do {
         sw_mode_0:

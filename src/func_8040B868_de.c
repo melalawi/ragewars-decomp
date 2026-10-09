@@ -7,7 +7,6 @@
 
 
 extern u32 D_80153778;
-extern void *jtbl_800DCFD8[];
 extern char D_800D7998[];
 extern char D_800D3980[];
 extern char D_800D3994[];
@@ -15,15 +14,18 @@ extern char D_800D39A8[];
 extern char D_800D39BC[];
 
 s32 func_8040B868_de(struct Field_func_8040A4A0_de *field) {
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&state_1, &&state_2, &&state_3, &&state_4
-    };
     u32 state = D_80153778;
 
     if (state >= 5) {
         goto state_other;
     }
-    goto *jtbl_800DCFD8[state];
+    switch (state) {
+        case 0: goto state_other;
+        case 1: goto state_1;
+        case 2: goto state_2;
+        case 3: goto state_3;
+        case 4: goto state_4;
+        }
 state_other:
     field->text = D_800D7998;
     goto done;

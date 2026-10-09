@@ -12,7 +12,6 @@
 extern struct Player_func_80425014_de D_80102B00[];
 extern s32 D_8015402C;
 extern u8 *D_800E4680;
-extern void *jtbl_800DD760[];
 extern s32 func_80265650_de(u8 *, s32);
 extern void func_80265688_de(u8 *, s32, s32);
 extern void func_8022F3F8_de(struct Player_func_80425014_de *, s32);
@@ -25,13 +24,6 @@ extern void func_8022F364_de(struct Player_func_80425014_de *);
 extern void func_8022F388_de(struct Player_func_80425014_de *);
 
 s32 func_80425014_de(s32 index) {
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&effect_0, &&effect_1, &&effect_2, &&effect_3, &&effect_4, &&effect_5, &&effect_6, &&effect_7,
-        &&effect_8, &&effect_9, &&effect_10, &&effect_11, &&effect_12, &&effect_13, &&effect_14, &&effect_15,
-        &&effect_16, &&effect_17, &&effect_18, &&effect_19, &&effect_20, &&effect_21, &&effect_22, &&effect_23,
-        &&effect_24, &&effect_25, &&effect_26, &&effect_27, &&effect_28, &&effect_29, &&effect_30, &&effect_31,
-        &&effect_32, &&effect_33, &&effect_34, &&effect_35, &&unknown, &&done
-    };
     s32 result = -1;
     struct Player_func_80425014_de *player = &D_80102B00[index];
     s32 *key = &D_8015402C;
@@ -47,7 +39,66 @@ s32 func_80425014_de(s32 index) {
         if (code >= 58) {
             goto unknown;
         }
-        goto *jtbl_800DD760[code];
+        switch (code) {
+        case 0: goto unknown;
+        case 1: goto effect_0;
+        case 2: goto effect_1;
+        case 3: goto effect_2;
+        case 4: goto effect_3;
+        case 5: goto effect_4;
+        case 6: goto effect_5;
+        case 7: goto effect_6;
+        case 8: goto effect_7;
+        case 9: goto effect_8;
+        case 10: goto effect_9;
+        case 11: goto effect_10;
+        case 12: goto effect_11;
+        case 13: goto effect_12;
+        case 14: goto effect_13;
+        case 15: goto effect_14;
+        case 16: goto effect_15;
+        case 17: goto effect_16;
+        case 18: goto effect_17;
+        case 19: goto effect_18;
+        case 20: goto effect_19;
+        case 21: goto effect_20;
+        case 22: goto effect_21;
+        case 23: goto effect_22;
+        case 24: goto effect_23;
+        case 25: goto effect_24;
+        case 26: goto effect_25;
+        case 27: goto effect_26;
+        case 28: goto effect_27;
+        case 29: goto effect_28;
+        case 30: goto effect_29;
+        case 31: goto effect_30;
+        case 32: goto unknown;
+        case 33: goto effect_31;
+        case 34: goto effect_32;
+        case 35: goto unknown;
+        case 36: goto unknown;
+        case 37: goto effect_33;
+        case 38: goto unknown;
+        case 39: goto unknown;
+        case 40: goto unknown;
+        case 41: goto unknown;
+        case 42: goto unknown;
+        case 43: goto unknown;
+        case 44: goto unknown;
+        case 45: goto unknown;
+        case 46: goto unknown;
+        case 47: goto unknown;
+        case 48: goto unknown;
+        case 49: goto unknown;
+        case 50: goto unknown;
+        case 51: goto unknown;
+        case 52: goto done;
+        case 53: goto effect_34;
+        case 54: goto unknown;
+        case 55: goto unknown;
+        case 56: goto unknown;
+        case 57: goto effect_35;
+        }
     effect_0:
         func_8022F3F8_de(player, player->slot);
         func_8022F3F8_de(player, player->slot);

@@ -12,7 +12,6 @@
 
 
 extern Record_func_80433914_de D_80102B00[];
-extern void *jtbl_800DD848[];
 extern char *D_800D34E4;
 extern char *D_800D34E8;
 extern char *D_800D34EC;
@@ -134,13 +133,6 @@ extern u8 D_80152789;
 #endif
 char *func_804253C8_de(s32 result) {
     /* FAKEMATCH: retain the recovered resident jump-table labels and one-pass dispatch scheduling. */
-    static void *labels[0] __attribute__((section(".sdata"))) = {
-        &&text_0, &&text_1, &&text_2, &&text_3, &&text_4, &&text_5, &&text_6, &&text_7,
-        &&text_8, &&text_9, &&text_10, &&text_11, &&text_12, &&text_13, &&text_14, &&text_15,
-        &&text_16, &&text_17, &&text_18, &&text_19, &&text_20, &&text_21, &&text_22, &&text_23,
-        &&text_24, &&text_25, &&text_26, &&text_27, &&text_28, &&text_29, &&text_30, &&text_31,
-        &&text_32, &&text_33, &&text_34, &&text_35, &&done
-    };
     Record_func_80433914_de *player = D_80102B00;
     char *text = 0;
     u32 index;
@@ -153,7 +145,65 @@ char *func_804253C8_de(s32 result) {
         if (index >= 57) {
             goto done;
         }
-        goto *jtbl_800DD848[index];
+        switch (index) {
+        case 0: goto text_0;
+        case 1: goto text_1;
+        case 2: goto done;
+        case 3: goto text_2;
+        case 4: goto text_3;
+        case 5: goto text_4;
+        case 6: goto text_5;
+        case 7: goto text_6;
+        case 8: goto text_7;
+        case 9: goto text_8;
+        case 10: goto text_9;
+        case 11: goto text_10;
+        case 12: goto text_11;
+        case 13: goto text_12;
+        case 14: goto text_13;
+        case 15: goto text_14;
+        case 16: goto text_15;
+        case 17: goto text_16;
+        case 18: goto text_17;
+        case 19: goto text_18;
+        case 20: goto text_19;
+        case 21: goto text_20;
+        case 22: goto text_21;
+        case 23: goto text_22;
+        case 24: goto text_23;
+        case 25: goto text_24;
+        case 26: goto text_25;
+        case 27: goto text_26;
+        case 28: goto text_27;
+        case 29: goto text_28;
+        case 30: goto text_29;
+        case 31: goto done;
+        case 32: goto text_30;
+        case 33: goto text_31;
+        case 34: goto done;
+        case 35: goto done;
+        case 36: goto text_32;
+        case 37: goto done;
+        case 38: goto done;
+        case 39: goto done;
+        case 40: goto done;
+        case 41: goto done;
+        case 42: goto done;
+        case 43: goto done;
+        case 44: goto done;
+        case 45: goto done;
+        case 46: goto done;
+        case 47: goto done;
+        case 48: goto done;
+        case 49: goto done;
+        case 50: goto done;
+        case 51: goto text_34;
+        case 52: goto text_35;
+        case 53: goto done;
+        case 54: goto done;
+        case 55: goto done;
+        case 56: goto text_33;
+        }
     text_0:
         text = RW_LOCALIZED_TEXT(D_800D34E4, D_800E1DE4, D_800E1DE4, D_80152789);
         goto done;
