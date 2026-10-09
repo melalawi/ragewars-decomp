@@ -58,7 +58,7 @@ void func_80252A44_de(s32 unused, s32 left, s32 top, s32 right, s32 bottom) {
     s32 b;
     s32 full;
     s32 bright;
-    u32 packed;
+    u32 base = 0x80000000;
 
     gDPPipeSync(D_80110634++);
     gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
@@ -81,14 +81,14 @@ void func_80252A44_de(s32 unused, s32 left, s32 top, s32 right, s32 bottom) {
         func_802BCF50_de(lock);
     }
 
-    total = (u32)D_801011B0 - 0x80000000;
+    total = (u32)D_801011B0 - base;
     for (span = D_801011B0; span != 0; span = span->next) {
         total += span->used + span->free;
     }
 
     height = bottom - top;
     gDPSetPrimColor(D_80110634++, 0, 0, 0x64, 0x64, 0x00, 0xFF);
-    gDPFillRectangle(D_80110634++, left, bottom - ((u32)(((u32)D_801011B0 - 0x80000000) * height) / total) - 1, right, bottom + 1);
+    gDPFillRectangle(D_80110634++, left, bottom - ((u32)(((u32)D_801011B0 - base) * height) / total) - 1, right, bottom + 1);
 
     for (pass = 0; pass < 2; pass++) {
         for (node = D_80100584.first; node != 0; node = node->next) {
@@ -122,8 +122,8 @@ void func_80252A44_de(s32 unused, s32 left, s32 top, s32 right, s32 bottom) {
             }
 
             gDPSetPrimColor(D_80110634++, 0, 0, r, g, b, 0xFF);
-            hi = bottom - ((u32)(((node->start + node->end) - 0x80000000) * height) / total) - 1;
-            lo = bottom - ((u32)(((node->start - 0x80000000) - 0x20) * height) / total) - 1;
+            hi = bottom - ((u32)(((node->start + node->end) - base) * height) / total) - 1;
+            lo = bottom - ((u32)(((node->start - base) - 0x20) * height) / total) - 1;
             if (hi < lo) {
                 gDPFillRectangle(D_80110634++, left, hi, right, lo);
             }
