@@ -14,6 +14,7 @@ cppflags = ["-P", "-undef", "-nostdinc", "-D_LANGUAGE_C", "-DF3DEX_GBI_2", "-D__
 asflags = ["-march=vr4300", "-mabi=32", "-EB", "--no-pad-sections"]
 gnu_asflags = ["-mips3"]
 cflags = []
+text_mask = 536870911
 
 [version.de]
 baserom = "roms/baserom.de.z64"
