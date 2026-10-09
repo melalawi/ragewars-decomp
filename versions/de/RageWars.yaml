@@ -3211,7 +3211,7 @@ segments:
       - [0xC52D0, rodata, "rodata/func_8026EE20_de/800C97C0"]
       - [0xC52EC, rodata, "rodata/func_8026F620_de/800C46EC"]
       - [0xC52F0, .rodata, "rodata/func_8026FC9C_de/800C46F0"]
-      - [0xC5370, rodata, "rodata/func_8027027C_de/800C4770"]
+      - [0xC5370, .rodata, "rodata/func_8027027C_de/800C4770"]
       - [0xC53D0, rodata, "rodata/func_80270700_de/800C47D0"]
       - [0xC53D4, rodata, "rodata/func_80270910_de/800C47D4"]
       - [0xC53DC, rodata, "rodata/func_80270AAC_de/800C47DC"]
