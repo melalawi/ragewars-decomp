@@ -5,8 +5,8 @@
    otherwise starts it on arg0's 400-byte slot of D_80102C24 through func_80265688_de and returns
    0x13BC. */
 
-extern u8 D_800FEC24[];
-extern s32 D_8014DD9C;
+extern u8 D_80102C24[];
+extern s32 D_8015402C;
 extern s32 func_80265650_de(u8 *, s32);
 extern void func_80265688_de(u8 *, s32, s32);
 
@@ -16,7 +16,7 @@ s32 func_80425DFC_de(s32 arg0) {
     u8 *slot;
 
     result = -1;
-    switch (D_8014DD9C) {
+    switch (D_8015402C) {
     case 4:
         track = 0;
         break;
@@ -34,7 +34,7 @@ s32 func_80425DFC_de(s32 arg0) {
         break;
     }
     if (track != -1) {
-        slot = &D_800FEC24[arg0 * 0x190];
+        slot = &D_80102C24[arg0 * 0x190];
         if (func_80265650_de(slot, track) == 0) {
             result = 0x13BC;
             func_80265688_de(slot, track, 1);

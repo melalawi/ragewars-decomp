@@ -12,7 +12,7 @@
 
 
 
-extern char D_8012D540;
+extern char D_80131600;
 extern s32 func_8028FFD0_de(s32, s32, s32, Triple, Triple, s32, f32);
 
 s32 func_802686EC_de(s32 arg0, Input80216D3C *arg1, s32 arg2, Triple arg3, Extra arg6) {
@@ -25,5 +25,5 @@ s32 func_802686EC_de(s32 arg0, Input80216D3C *arg1, s32 arg2, Triple arg3, Extra
     scale.x = arg6.scale;
     scale.y = arg6.scale;
     scale.z = arg6.scale;
-    return func_8028FFD0_de((s32)&D_8012D540, 0, arg6.id, zero, arg1->vec, 0, 0.0f);
+    return func_8028FFD0_de((s32)&D_80131600, 0, arg6.id, zero, arg1->vec, 0, 0.0f);
 }

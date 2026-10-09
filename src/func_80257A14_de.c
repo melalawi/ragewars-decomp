@@ -89,7 +89,7 @@ s32 func_80257A14_de(void *arg0, s32 id) {
     return found;
 }
 
-extern char D_80140FC8;
+extern char D_80145088;
 
 extern void *func_802395A4_de(s32 *, Vec3 *);
 extern s32 func_8025BA4C_de(void *, s32);
@@ -118,7 +118,7 @@ s32 func_80257BB4_de(void *arg0, Item57BD4 *arg1, Vec3 *arg2, s32 arg3,
                   s32 arg4, s32 arg5, s32 arg6) {
     void *node;
 
-    ((func_80257BD4_S1 *)(arg0))->unk2B98 = func_802395A4_de(&D_80140FC8, arg2);
+    ((func_80257BD4_S1 *)(arg0))->unk2B98 = func_802395A4_de(&D_80145088, arg2);
     if (arg1->flags & 1) {
         if (func_8025BA4C_de(&((func_80257BD4_S1 *)(arg0))->unk1DB8, ((func_80257BD4_S1 *)(arg0))->unk2B8C) != 0) {
             return -1;

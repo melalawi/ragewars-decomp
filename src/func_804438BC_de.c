@@ -5,7 +5,7 @@
 /* Advances the actor inactivity timer and reports pending menu state. */
 s32 func_8022B178_de(void *); /* extern */
 void func_8044972C_de(void *); /* extern */
-extern State_func_8043E254_de D_801427E0[];
+extern State_func_8043E254_de D_801468A0[];
 s32 func_804438BC_de(State_func_804438BC_de *arg0) {
     State_func_8043E254_de *state;
     s32 temp_v0;
@@ -21,7 +21,7 @@ s32 func_804438BC_de(State_func_804438BC_de *arg0) {
         }
     }
     var_v0 = 0;
-    state = D_801427E0;
+    state = D_801468A0;
     if (state[0].unk28 || state[0].unk1C || state[0].unk20) var_v0 = 1;
     return var_v0;
 }

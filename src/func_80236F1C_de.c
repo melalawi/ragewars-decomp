@@ -7,15 +7,15 @@
 #include "types.h"
 #include "video_dimensions.h"
 #include "gfx.h"
-extern Gfx *D_8010C574;
+extern Gfx *D_80110634;
 extern Frame *D_8011BDC0;
-extern s32 D_800DE880_de;
-extern s32 D_800DE884_de;
-extern s32 D_800CD72C;
-extern s32 D_801427D4;
+extern s32 D_800E28D0;
+extern s32 D_800E28D4;
+extern s32 D_800D297C;
+extern s32 D_80146894;
 extern f32 D_800FF224_de;
-extern f32 D_800CD738;
-extern World_func_80236F1C_de D_80140F80;
+extern f32 D_800D2988;
+extern World_func_80236F1C_de D_80145040;
 extern char D_800CBCC0;
 extern char D_800CBCF0_de;
 extern void func_80253BBC_de(s32, s32);
@@ -39,11 +39,11 @@ void func_80236F1C_de(Race *race, s32 arg1)
     if (race->music != 0) {
         func_80253BBC_de(0, race->music);
     }
-    if (D_801427D4 != 0 || race->mode == 3) {
+    if (D_80146894 != 0 || race->mode == 3) {
         D_800FF224_de = 30.0f;
     }
     if (D_800FF224_de != 0.0f) {
-        D_800FF224_de -= D_800CD738;
+        D_800FF224_de -= D_800D2988;
     }
     if (D_800FF224_de < 0.0f) {
         D_800FF224_de = 0.0f;
@@ -51,21 +51,21 @@ void func_80236F1C_de(Race *race, s32 arg1)
     if (D_800FF224_de != 0.0f) {
         racer = race->racers;
         if (racer != 0) {
-            gDPPipeSync(D_8010C574++);
-            gSPDisplayList(D_8010C574++, ((&D_800CBCC0)));
-            gSPDisplayList(D_8010C574++, ((&D_800CBCF0_de)));
-            racer->viewports[D_800CD72C].vscale[0] = SCREEN_WD;
-            racer->viewports[D_800CD72C].vscale[1] = SCREEN_HT;
-            racer->viewports[D_800CD72C].vtrans[0] = SCREEN_WD;
-            racer->viewports[D_800CD72C].vtrans[1] = SCREEN_HT;
-            gSPMoveMem(D_8010C574++, G_MV_VIEWPORT, 0, 16, ((&racer->viewports[D_800CD72C])));
-            gDPSetScissorFrac(D_8010C574++, G_SC_NON_INTERLACE, (int)((float)((0)) * 4.0F), (int)((float)((0)) * 4.0F), (int)((float)((SCREEN_WD - 1)) * 4.0F), (int)((float)((SCREEN_HT - 1)) * 4.0F));
-            gDPSetColorImage(D_8010C574++, G_IM_FMT_RGBA, G_IM_SIZ_16b, SCREEN_WD, (u32)((D_8011BDC0->colorImage)));
-            gDPSetCycleType(D_8010C574++, G_CYC_FILL);
-            gDPSetCombineLERP(D_8010C574++, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE);
-            gDPSetRenderMode(D_8010C574++, ((0)), 0);
-            gDPSetFillColor(D_8010C574++, ((0x10001)));
-            gDPFillRectangle(D_8010C574++, 0, 0, (SCREEN_WD), (SCREEN_HT));
+            gDPPipeSync(D_80110634++);
+            gSPDisplayList(D_80110634++, ((&D_800CBCC0)));
+            gSPDisplayList(D_80110634++, ((&D_800CBCF0_de)));
+            racer->viewports[D_800D297C].vscale[0] = SCREEN_WD;
+            racer->viewports[D_800D297C].vscale[1] = SCREEN_HT;
+            racer->viewports[D_800D297C].vtrans[0] = SCREEN_WD;
+            racer->viewports[D_800D297C].vtrans[1] = SCREEN_HT;
+            gSPMoveMem(D_80110634++, G_MV_VIEWPORT, 0, 16, ((&racer->viewports[D_800D297C])));
+            gDPSetScissorFrac(D_80110634++, G_SC_NON_INTERLACE, (int)((float)((0)) * 4.0F), (int)((float)((0)) * 4.0F), (int)((float)((SCREEN_WD - 1)) * 4.0F), (int)((float)((SCREEN_HT - 1)) * 4.0F));
+            gDPSetColorImage(D_80110634++, G_IM_FMT_RGBA, G_IM_SIZ_16b, SCREEN_WD, (u32)((D_8011BDC0->colorImage)));
+            gDPSetCycleType(D_80110634++, G_CYC_FILL);
+            gDPSetCombineLERP(D_80110634++, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE, 0, 0, 0, SHADE);
+            gDPSetRenderMode(D_80110634++, ((0)), 0);
+            gDPSetFillColor(D_80110634++, ((0x10001)));
+            gDPFillRectangle(D_80110634++, 0, 0, (SCREEN_WD), (SCREEN_HT));
             func_8026D8F8_de();
         }
     }
@@ -90,16 +90,16 @@ void func_80236F1C_de(Race *race, s32 arg1)
         func_80233C88_de(&race->self);
     }
     func_80238314_de(race, &race->self);
-    if (D_80140F80.replay != 0) {
+    if (D_80145040.replay != 0) {
         racer = race->racers;
         if (racer != 0) {
-            func_8022A3F8_de(&D_80140F80, racer);
+            func_8022A3F8_de(&D_80145040, racer);
         }
     }
     func_804429D4_de(race->self.sound);
 }
 
-extern Gfx *D_8010C574;
+extern Gfx *D_80110634;
 extern void func_8026D8F8_de(void);
 
 void func_802372D4_de(Racer *racer) {
@@ -114,29 +114,29 @@ void func_802372D4_de(Racer *racer) {
     y = entity->y;
     width = entity->width;
     height = entity->height;
-    gDPPipeSync(D_8010C574++);
-    gDPSetCycleType(D_8010C574++, G_CYC_1CYCLE);
-    gDPSetCombineLERP(D_8010C574++, 0, 0, 0, PRIMITIVE, 0, 0, 0, PRIMITIVE,
+    gDPPipeSync(D_80110634++);
+    gDPSetCycleType(D_80110634++, G_CYC_1CYCLE);
+    gDPSetCombineLERP(D_80110634++, 0, 0, 0, PRIMITIVE, 0, 0, 0, PRIMITIVE,
                      0, 0, 0, PRIMITIVE, 0, 0, 0, PRIMITIVE);
-    gDPSetRenderMode(D_8010C574++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
-    gDPSetPrimColor(D_8010C574++, 0, 0, 0, 0, 0, 0);
-    gDPFillRectangle(D_8010C574++, x, y, (x + width) - 1.0f, y + 2.0f);
-    gDPFillRectangle(D_8010C574++, x, (y + height) - 2.0f,
+    gDPSetRenderMode(D_80110634++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
+    gDPSetPrimColor(D_80110634++, 0, 0, 0, 0, 0, 0);
+    gDPFillRectangle(D_80110634++, x, y, (x + width) - 1.0f, y + 2.0f);
+    gDPFillRectangle(D_80110634++, x, (y + height) - 2.0f,
                     (x + width) - 1.0f, (y + height) - 1.0f);
-    gDPFillRectangle(D_8010C574++, x, y, x + 2.0f, (y + height) - 1.0f);
-    gDPFillRectangle(D_8010C574++, (x + width) - 2.0f, y,
+    gDPFillRectangle(D_80110634++, x, y, x + 2.0f, (y + height) - 1.0f);
+    gDPFillRectangle(D_80110634++, (x + width) - 2.0f, y,
                     (x + width) - 1.0f, (y + height) - 1.0f);
-    gDPPipeSync(D_8010C574++);
-    gDPSetCycleType(D_8010C574++, G_CYC_FILL);
-    gDPSetCombineLERP(D_8010C574++, 0, 0, 0, SHADE, 0, 0, 0, SHADE,
+    gDPPipeSync(D_80110634++);
+    gDPSetCycleType(D_80110634++, G_CYC_FILL);
+    gDPSetCombineLERP(D_80110634++, 0, 0, 0, SHADE, 0, 0, 0, SHADE,
                      0, 0, 0, SHADE, 0, 0, 0, SHADE);
-    gDPSetRenderMode(D_8010C574++, G_RM_NOOP, G_RM_NOOP2);
-    gDPSetFillColor(D_8010C574++, (1 << 16) | 1);
-    gDPFillRectangle(D_8010C574++, x, y, (x + width) - 1.0f, y);
-    gDPFillRectangle(D_8010C574++, x, (y + height) - 1.0f,
+    gDPSetRenderMode(D_80110634++, G_RM_NOOP, G_RM_NOOP2);
+    gDPSetFillColor(D_80110634++, (1 << 16) | 1);
+    gDPFillRectangle(D_80110634++, x, y, (x + width) - 1.0f, y);
+    gDPFillRectangle(D_80110634++, x, (y + height) - 1.0f,
                     (x + width) - 1.0f, (y + height) - 1.0f);
-    gDPFillRectangle(D_8010C574++, x, y, x, (y + height) - 1.0f);
-    gDPFillRectangle(D_8010C574++, (x + width) - 1.0f, y,
+    gDPFillRectangle(D_80110634++, x, y, x, (y + height) - 1.0f);
+    gDPFillRectangle(D_80110634++, (x + width) - 1.0f, y,
                     x + width, (y + height) - 1.0f);
 }
 
@@ -149,11 +149,11 @@ void func_802372D4_de(Racer *racer) {
 
 
 
-extern func_80237E70_G1 D_800D2FFC;
+extern func_80237E70_G1 D_800D7028;
 
-extern func_80237E70_G1 D_800D3008;
+extern func_80237E70_G1 D_800D7034;
 
-extern s32 D_800DE880_de;
+extern s32 D_800E28D0;
 extern void func_80239CE0_de(Message *);
 extern void func_80255ED8_de(void *, Message *);
 extern void func_80255D14_de(void *, Message *);
@@ -192,8 +192,8 @@ static inline Message *post_lines(void *owner, void *pool, u8 *text, s32 kind, f
     if (pool == 0) {
         return message;
     }
-    if (text == D_800D3008.unk0) {
-        text = D_800D2FFC.unk0;
+    if (text == D_800D7034.unk0) {
+        text = D_800D7028.unk0;
     }
     p = text;
     line = p;
@@ -214,8 +214,8 @@ static inline Message *post_lines(void *owner, void *pool, u8 *text, s32 kind, f
                     message->pad2C = 0;
                     message->scaleX = 1.0f;
                     message->scaleY = 1.0f;
-                    height = (&D_800DE880_de)[1]; /* FAKEMATCH */
-                    message->x = D_800DE880_de / 2;
+                    height = (&D_800E28D0)[1]; /* FAKEMATCH */
+                    message->x = D_800E28D0 / 2;
                     message->y = height - 80;
                 }
                 line = p + 1;

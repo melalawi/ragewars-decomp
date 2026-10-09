@@ -13,10 +13,10 @@
 extern f32 D_800DD610[];
 
 extern Globals_func_804220A8_de D_80140FE8_de;
-extern State_func_804220A8_de *D_800DE7E0;
+extern State_func_804220A8_de *D_800E2830;
 
 
-extern char D_8011BDC8[];
+extern char D_8011FE88[];
 extern int func_804030E0_de(int);
 extern int func_8025477C_de(void);
 extern void func_8025476C_de(int);

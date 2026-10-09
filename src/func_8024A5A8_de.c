@@ -18,8 +18,8 @@
 
 
 
-extern s32 D_800CD72C;
-extern s32 D_800CC390;
+extern s32 D_800D297C;
+extern s32 D_800D15E0;
 
 
 extern char D_8011D8D0;
@@ -40,7 +40,7 @@ static inline void spawn(Actor_func_8024A3B0_de *actor) {
     Vec3 position;
 
     position = actor->position0;
-    position.y += func_8024D284_de(actor) * *(&D_800C3A58_de + 1);
+    position.y += func_8024D284_de(actor) * *(&D_800C8B48 + 1);
     func_802800C0_de(&D_8011D8D0, actor, actor, 0, 0, 0x94,
                   actor->position1, actor->rotation, position, 0, -1, 0);
 }
@@ -54,7 +54,7 @@ void func_8024A5A8_de(Actor_func_8024A3B0_de *actor, s32 arg1, s32 arg2, Lookup 
         func_8024AA18_de(actor, arg2, params);
     }
     if (params->unk0 != 0) {
-        func_8026DD50_de(params->value, arg1, actor->fieldB4, 1, &actor->blocks[D_800CD72C], 0, actor->field3);
+        func_8026DD50_de(params->value, arg1, actor->fieldB4, 1, &actor->blocks[D_800D297C], 0, actor->field3);
         if (func_8026E340_de() != 0) {
             node = func_8028FDB4_de(*params->value, 2);
             if ((*node != 0) &&
@@ -62,12 +62,12 @@ void func_8024A5A8_de(Actor_func_8024A3B0_de *actor, s32 arg1, s32 arg2, Lookup 
                 spawn(actor);
                 effect = func_802830B8_de(&D_8011D8D0);
                 if (effect != 0) {
-                    scale = D_800C3A60_de;
+                    scale = D_800C8B50;
                     effect->field150 = func_8024D398_de(actor) * scale;
                     effect->field154 = func_8024D284_de(actor) * scale;
                 }
             }
         }
     }
-    D_800CC390 = 0;
+    D_800D15E0 = 0;
 }

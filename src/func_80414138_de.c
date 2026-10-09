@@ -3,14 +3,14 @@
 
 /* Loads the byte at offset D_80153C78 of the buffer D_80153C7C points to into both D_80153C80 and
    D_80153C60. */
-extern u8 *D_8014D9EC;
-extern s32 D_8014D9E8;
-extern s32 D_8014D9F0;
-extern s32 D_8014D9D0;
+extern u8 *D_80153C7C;
+extern s32 D_80153C78;
+extern s32 D_80153C80;
+extern s32 D_80153C60;
 
 void func_80414138_de(void) {
-    s32 value = D_8014D9EC[D_8014D9E8];
+    s32 value = D_80153C7C[D_80153C78];
 
-    D_8014D9F0 = value;
-    D_8014D9D0 = value;
+    D_80153C80 = value;
+    D_80153C60 = value;
 }

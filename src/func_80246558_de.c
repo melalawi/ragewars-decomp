@@ -10,7 +10,7 @@
 
 
 
-extern CollisionState D_801001F0;
+extern CollisionState D_801041F0;
 extern s32 func_80243A90_de(Instance8020CD74 *, Vec3Words, CollisionInfo_func_80246558_de *);
 
 s32 func_80246558_de(Instance8020CD74 *arg0, Vec3Words arg1, CollisionInfo_func_80246558_de *arg2) {
@@ -25,6 +25,6 @@ s32 func_80246558_de(Instance8020CD74 *arg0, Vec3Words arg1, CollisionInfo_func_
     func_80243A90_de(arg0, arg1, &collision_info);
     *arg0 = saved;
 
-    collisions = D_801001F0.active0 || D_801001F0.active9c;
+    collisions = D_801041F0.active0 || D_801041F0.active9c;
     return !collisions;
 }

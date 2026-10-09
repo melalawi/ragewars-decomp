@@ -7,8 +7,8 @@
 
 
 s32 func_80404F04_de(s32 index) {
-    if (D_8014D260[index] != 3) {
+    if (D_801534F0[index] != 3) {
         return -2;
     }
-    return D_8014D270[index];
+    return D_80153500[index];
 }

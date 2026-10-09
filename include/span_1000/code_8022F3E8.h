@@ -264,7 +264,7 @@ struct func_80230620_S3 {
 extern float D_800C2F14_de;
 
 /* unbake published declaration: published_a2055080676415f8cbd205d6 */
-extern float D_800C2F18_de;
+extern float D_800C8008;
 
 struct func_80230620_S4;
 /* unbake published declaration: published_a7022ad07e30e9c784a439bc */

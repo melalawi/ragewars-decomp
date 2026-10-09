@@ -3,13 +3,13 @@
  * Packed fields preserve the original resident offsets.
  */
 struct rw_constants_8043FE3C_E3090_us_rev1_layout {
-    float D_800DE460;
+    float D_800E2490;
     float value_4;
     float D_800E2498;
-    float D_800DE46C;
-    float D_800DE470;
-    float D_800DE474_de;
-    float D_800DE478;
+    float D_800E249C;
+    float D_800E24A0;
+    float D_800E24A4;
+    float D_800E24A8;
 } __attribute__((packed));
 
 const struct rw_constants_8043FE3C_E3090_us_rev1_layout rw_constants_8043FE3C_E3090_us_rev1 = {

@@ -3,7 +3,7 @@
 /* FAKEMATCH: retains inherited volatile storage qualifiers to preserve compiler load/store order; semantic volatility has not been established. */
 #include "types.h"
 extern s32 D_80140FF8;
-extern void *D_800CB2EC[];
+extern void *D_800D052C[];
 
 
 extern void func_8021A9A4_de(void *arg0, s32 arg1);
@@ -42,8 +42,8 @@ void func_802330AC_de(void *arg0, void *arg1) {
     temp_a0 = ((func_8020A028_S3 *)(arg0))->unk1D8;
     index = ((func_80232C78_S2 *)(temp_a0))->unk62E;
     ((ObjectState134 *)(arg1))->unk_130 =
-        ((func_80232C78_S4 *)(D_800CB2EC[index]))->unk18 *
-        ((func_802077F4_S2 *)(&D_800C3040_de))->unk4;
+        ((func_80232C78_S4 *)(D_800D052C[index]))->unk18 *
+        ((func_802077F4_S2 *)(&D_800C8130))->unk4;
     if ((((func_80232C78_S2 *)(temp_a0))->unk62E == 8) &&
         (((func_80232C78_S2 *)(temp_a0))->unk11C0 == 0)) {
         func_8022AF74_de(temp_a0, 0xA3C);

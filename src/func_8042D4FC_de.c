@@ -13,12 +13,12 @@
 
 
 
-extern struct MenuRules *D_800E1370;
-extern u8 D_80142215;
-extern s32 D_80142858;
-extern s32 D_80142834;
-extern char D_80140FC8[];
-extern char D_8011BDC8[];
+extern struct MenuRules *D_800E53C0;
+extern u8 D_801462D5;
+extern s32 D_80146918;
+extern s32 D_801468F4;
+extern char D_80145088[];
+extern char D_8011FE88[];
 extern s32 func_8043C308_de(struct MenuRules *);
 extern void func_8043C080_de(struct MenuRules *);
 extern void func_8043C2A4_de(struct MenuRules *);
@@ -45,38 +45,38 @@ s32 func_8042D4FC_de(void *window, void *arg1, s32 event) {
     if (event != 1) {
         return 0;
     }
-    state = func_8043C308_de(D_800E1370);
+    state = func_8043C308_de(D_800E53C0);
     if (state == event) {
-        func_8043C080_de(D_800E1370);
-        func_8043C2A4_de(D_800E1370);
-        if (func_8043C308_de(D_800E1370) != 2) {
+        func_8043C080_de(D_800E53C0);
+        func_8043C2A4_de(D_800E53C0);
+        if (func_8043C308_de(D_800E53C0) != 2) {
             return 0;
         }
-        if (D_800E1370->locked != 0) {
-            if (D_800E1370->locked != state) {
+        if (D_800E53C0->locked != 0) {
+            if (D_800E53C0->locked != state) {
                 return 0;
             }
             func_8040C428_de(0);
             func_8040E8D8_de(window, 1);
-            object = D_80140FC8;
+            object = D_80145088;
             func_8044A370_de(object, 0);
             func_804499B0_de(object - 0x48, 0, 0);
-            func_80286AA8_de(D_8011BDC8, 0, 0);
+            func_80286AA8_de(D_8011FE88, 0, 0);
             ((MatchMenuObjects *)(object))->transition = 8;
         } else {
             func_8040E8D8_de(window, 0);
             func_8029973C_de();
-            if (D_80142215 == 0) {
-                D_80142858 = 0;
-                D_80142834 = 0;
+            if (D_801462D5 == 0) {
+                D_80146918 = 0;
+                D_801468F4 = 0;
                 if (func_8042AF28_de() != 0 && func_8042ACD8_de() != 0) {
                     func_8042DEA0_de();
                     return 0;
                 }
                 next = 0x14;
             } else {
-                D_80142858 = 0;
-                D_80142834 = 0;
+                D_80146918 = 0;
+                D_801468F4 = 0;
                 next = 0xF;
             }
             func_80298368_de(next);

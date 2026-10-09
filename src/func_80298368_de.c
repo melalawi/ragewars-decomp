@@ -61,7 +61,7 @@ s32 func_80296E3C_de(s32, s32, s32, s32, s32);
 s32 func_80297310_de(s32, s32, s32, s32, s32);
 s32 func_80297A34_de(s32, s32, s32, s32); 
 
-extern Shared_MenuManager *D_80146E00;
+extern Shared_MenuManager *D_8014D080;
 
 extern Shared_MenuDefinition *D_80146E10;
 
@@ -137,11 +137,11 @@ void func_80298368_de(s32 arg0) {
     func_80299CC4_de();
     var_s2 = 0;
     var_s5 = 1;
-    if (D_80146E00->unk4 >= 0) {
+    if (D_8014D080->unk4 >= 0) {
         func_80299958_de();
     }
-    temp_v1 = D_80146E00->unk4;
-    temp_s0 = D_80146E00->unkC;
+    temp_v1 = D_8014D080->unk4;
+    temp_s0 = D_8014D080->unkC;
     var_a0 = 0;
     if (temp_v1 >= 0) {
         search_bound = temp_v1;
@@ -163,10 +163,10 @@ block_search_check:
     }
     {
         temp_s4 = func_80299958_de();
-        var_a0_2 = D_80146E00->unk8;
-        temp_a1 = D_80146E00->unk4;
+        var_a0_2 = D_8014D080->unk8;
+        temp_a1 = D_8014D080->unk4;
         if (temp_a1 >= var_a0_2) {
-            search_entries = D_80146E00->unkC;
+            search_entries = D_8014D080->unkC;
             do {
                 if (search_entries[var_a0_2].id == arg0) {
                     var_s2 = 1;
@@ -174,21 +174,21 @@ block_search_check:
                 var_a0_2 += 1;
             } while (temp_a1 >= var_a0_2);
         }
-        temp_a0 = D_80146E00;
+        temp_a0 = D_8014D080;
         if (((Shared_MenuEntry *)temp_s0)[temp_a0->unk4].id != arg0) {
             do {
                 temp_a0->unk530 = 1;
                 func_80298ECC_de();
                 
-                temp_a0 = D_80146E00;
-            } while (((Shared_MenuEntry *)temp_s0)[D_80146E00->unk4].id != arg0);
+                temp_a0 = D_8014D080;
+            } while (((Shared_MenuEntry *)temp_s0)[D_8014D080->unk4].id != arg0);
         }
-        D_80146E00->unk540 = 0;
-        D_80146E00->unk528 = temp_s4;
+        D_8014D080->unk540 = 0;
+        D_8014D080->unk528 = temp_s4;
         if (var_s2 == 0) {
             func_804116CC_de(arg0);
             temp_v0 = func_80411DCC_de(arg0);
-            temp_a0_2 = ((void *)&D_80146E00->unkC[D_80146E00->unk4]);
+            temp_a0_2 = ((void *)&D_8014D080->unkC[D_8014D080->unk4]);
             temp_a0_2->object = temp_v0;
             temp_a0_2->id = arg0;
             temp_a0_2->focus = temp_v0->unk44;
@@ -198,48 +198,48 @@ block_search_check:
             if (((u16) var_s1->unk12 >> 0xC) & 1) {
                 
                 load_flag = 1;
-                temp_s2 = D_80146E00->unk4;
+                temp_s2 = D_8014D080->unk4;
 loop_18:
                 if ((((u16) var_s1->unk12 >> 0xC) & 1) == load_flag) {
-                    temp_v0_2 = --D_80146E00->unk4;
-                    D_80146E00->unk8 = temp_v0_2;
+                    temp_v0_2 = --D_8014D080->unk4;
+                    D_8014D080->unk8 = temp_v0_2;
                     
-                    var_a0 = D_80146E00->unk4;
-                    func_804116CC_de(D_80146E00->unkC[var_a0].id);
-                    temp_s0_2 = D_80146E00->unkC[D_80146E00->unk4].id;
+                    var_a0 = D_8014D080->unk4;
+                    func_804116CC_de(D_8014D080->unkC[var_a0].id);
+                    temp_s0_2 = D_8014D080->unkC[D_8014D080->unk4].id;
                     temp_v0_3 = func_80411DCC_de(temp_s0_2);
-                    temp_a0_3 = ((void *)&D_80146E00->unkC[D_80146E00->unk4]);
+                    temp_a0_3 = ((void *)&D_8014D080->unkC[D_8014D080->unk4]);
                     temp_a0_3->object = temp_v0_3;
                     temp_a0_3->id = temp_s0_2;
                     temp_a0_3->focus = temp_v0_3->unk44;
                     D_80146E10 = temp_v0_3->unk44;
-                    D_80146E00->unk540 = 0;
+                    D_8014D080->unk540 = 0;
                     var_s1 = temp_v0_3;
                     func_80297DBC_de();
                     goto loop_18;
                 }
-                D_80146E00->unk4 = temp_s2;
+                D_8014D080->unk4 = temp_s2;
             }
             goto block_78;
 block_found_trampoline:
             var_v0 = 1;
             goto block_search_check;
         } else {
-            var_s1 = D_80146E00->unkC[D_80146E00->unk4].object;
-            D_80146E00->unk540 = 0;
-            if (((Shared_MenuManager *)D_80146E00)->unk4 != -1) {
-                temp_v0_4 = D_80146E00->callback;
+            var_s1 = D_8014D080->unkC[D_8014D080->unk4].object;
+            D_8014D080->unk540 = 0;
+            if (((Shared_MenuManager *)D_8014D080)->unk4 != -1) {
+                temp_v0_4 = D_8014D080->callback;
                 if (temp_v0_4 != 0) {
-                    temp_s0_3 = D_80146E00->unk520;
-                    D_80146E00->unk520 = 0;
+                    temp_s0_3 = D_8014D080->unk520;
+                    D_8014D080->unk520 = 0;
                     temp_v0_4(0xE07, 0, 0, 0);
-                    callback_status = D_80146E00->unk520;
+                    callback_status = D_8014D080->unk520;
                     if (callback_status == 1) {
                         var_s5 = 0;
-                        D_80146E00->unk520 = temp_s0_3;
+                        D_8014D080->unk520 = temp_s0_3;
                         goto after_found_callback;
                     }
-                    D_80146E00->unk520 = temp_s0_3;
+                    D_8014D080->unk520 = temp_s0_3;
                 }
                 func_80297310_de(1, 0xE07, 0, 0, 0);
                 goto block_27;
@@ -254,110 +254,110 @@ after_found_callback:
 block_not_found:
     func_804116CC_de(arg0);
     if (((u16) (((Shared_MenuDefinition *)(func_80411DCC_de(arg0)))->unk12) >> 0xC) & 1) {
-        temp_a0_4 = D_80146E00->unkC[D_80146E00->unk4].focus;
-        if ((temp_a0_4 != 0) && ((temp_s1 = temp_a0_4->unkC, (func_80411DF0_de((s32) temp_s1) == 0)) || (temp_s1 == D_80146E00->unkC[D_80146E00->unk4].id)) && ((focus_index = D_80146E00->unk4), (temp_s1 != D_80146E00->unk528)) && ((temp_a1 = -1), (focus_index != temp_a1))) {
-            temp_v0_5 = D_80146E00->callback;
+        temp_a0_4 = D_8014D080->unkC[D_8014D080->unk4].focus;
+        if ((temp_a0_4 != 0) && ((temp_s1 = temp_a0_4->unkC, (func_80411DF0_de((s32) temp_s1) == 0)) || (temp_s1 == D_8014D080->unkC[D_8014D080->unk4].id)) && ((focus_index = D_8014D080->unk4), (temp_s1 != D_8014D080->unk528)) && ((temp_a1 = -1), (focus_index != temp_a1))) {
+            temp_v0_5 = D_8014D080->callback;
             if (temp_v0_5 != 0) {
-                temp_s0_4 = D_80146E00->unk520;
-                D_80146E00->unk520 = 0;
+                temp_s0_4 = D_8014D080->unk520;
+                D_8014D080->unk520 = 0;
                 temp_v0_5(0x10, 0, 0, 0);
-                callback_status = D_80146E00->unk520;
+                callback_status = D_8014D080->unk520;
                 if (callback_status == 1) {
-                    D_80146E00->unk520 = temp_s0_4;
+                    D_8014D080->unk520 = temp_s0_4;
                     goto after_focus10;
                 }
-                D_80146E00->unk520 = temp_s0_4;
+                D_8014D080->unk520 = temp_s0_4;
             }
-            if (temp_s1 == (((Shared_MenuDefinition *)(D_80146E00->unkC[D_80146E00->unk4].object))->unkC)) {
+            if (temp_s1 == (((Shared_MenuDefinition *)(D_8014D080->unkC[D_8014D080->unk4].object))->unkC)) {
                 func_80297A34_de(0x10, 0, 0, 0);
             } else {
                 func_80296E3C_de(temp_s1, 0x10, 0, 0, 0);
             }
         }
 after_focus10:
-        D_80146E00->unk528 = func_80299958_de();
-        D_80146E00->unk4 = (s32) (D_80146E00->unk4 + 1);
+        D_8014D080->unk528 = func_80299958_de();
+        D_8014D080->unk4 = (s32) (D_8014D080->unk4 + 1);
         temp_v0_6 = func_80411DCC_de(arg0);
-        temp_a0_5 = ((void *)&D_80146E00->unkC[D_80146E00->unk4]);
+        temp_a0_5 = ((void *)&D_8014D080->unkC[D_8014D080->unk4]);
         temp_a0_5->object = temp_v0_6;
         temp_a0_5->id = arg0;
         temp_a0_5->focus = temp_v0_6->unk44;
         var_s1 = temp_v0_6;
         D_80146E10 = var_s1->unk44;
-        func_80299C80_de((void *)&D_80146E00->unkC[D_80146E00->unk4].data);
-        temp_v0_7 = D_80146E00->callback2;
+        func_80299C80_de((void *)&D_8014D080->unkC[D_8014D080->unk4].data);
+        temp_v0_7 = D_8014D080->callback2;
         if (temp_v0_7 != 0) {
-            (((Shared_MenuDefinition *)(D_80146E00->unkC[D_80146E00->unk4].object))->unk40) = temp_v0_7(arg0);
+            (((Shared_MenuDefinition *)(D_8014D080->unkC[D_8014D080->unk4].object))->unk40) = temp_v0_7(arg0);
         }
-        D_80146E00->unk540 = 0;
-        if (D_80146E00->unk4 != -1) {
-            temp_v0_8 = D_80146E00->callback;
+        D_8014D080->unk540 = 0;
+        if (D_8014D080->unk4 != -1) {
+            temp_v0_8 = D_8014D080->callback;
             if (temp_v0_8 != 0) {
-                temp_s0_5 = D_80146E00->unk520;
-                D_80146E00->unk520 = 0;
+                temp_s0_5 = D_8014D080->unk520;
+                D_8014D080->unk520 = 0;
                 temp_v0_8(0xE06, 0, 0, 0);
-                callback_status_5 = D_80146E00->unk520;
+                callback_status_5 = D_8014D080->unk520;
                 if (callback_status_5 == 1) {
-                    D_80146E00->unk520 = temp_s0_5;
+                    D_8014D080->unk520 = temp_s0_5;
                     goto after_e06;
                 }
-                D_80146E00->unk520 = temp_s0_5;
+                D_8014D080->unk520 = temp_s0_5;
             }
             func_80297310_de(1, 0xE06, 0, 0, 0);
         }
 after_e06:
-        if (((Shared_MenuManager *)D_80146E00)->unk4 != -1) {
-            temp_v0_9 = D_80146E00->callback;
+        if (((Shared_MenuManager *)D_8014D080)->unk4 != -1) {
+            temp_v0_9 = D_8014D080->callback;
             if (temp_v0_9 != 0) {
-                temp_s0_6 = D_80146E00->unk520;
-                D_80146E00->unk520 = 0;
+                temp_s0_6 = D_8014D080->unk520;
+                D_8014D080->unk520 = 0;
                 temp_v0_9(0xE07, 0, 0, 0);
-                callback_status = D_80146E00->unk520;
+                callback_status = D_8014D080->unk520;
                 if (callback_status == 1) {
-                    D_80146E00->unk520 = temp_s0_6;
+                    D_8014D080->unk520 = temp_s0_6;
                     goto block_78;
                 }
-                D_80146E00->unk520 = temp_s0_6;
+                D_8014D080->unk520 = temp_s0_6;
             }
             func_80297310_de(1, 0xE07, 0, 0, 0);
         }
         goto block_78;
     }
-    if (D_80146E00->unk4 != -1) {
-        temp_v0_10 = D_80146E00->callback;
+    if (D_8014D080->unk4 != -1) {
+        temp_v0_10 = D_8014D080->callback;
         if (temp_v0_10 != 0) {
-            temp_s0_7 = D_80146E00->unk520;
-            D_80146E00->unk520 = 0;
+            temp_s0_7 = D_8014D080->unk520;
+            D_8014D080->unk520 = 0;
             temp_v0_10(0xE01, 0, 0, 0);
-            callback_status = D_80146E00->unk520;
+            callback_status = D_8014D080->unk520;
             if (callback_status == 1) {
-                D_80146E00->unk520 = temp_s0_7;
+                D_8014D080->unk520 = temp_s0_7;
                 goto after_e01;
             }
-            D_80146E00->unk520 = temp_s0_7;
+            D_8014D080->unk520 = temp_s0_7;
         }
         func_80297A34_de(0xE01, 0, 0, 0);
     }
 after_e01:
     func_80299CC4_de();
     e03_arg_copy = arg0;
-    if (D_80146E00->unk4 != -1) {
-        temp_v0_11 = D_80146E00->callback;
+    if (D_8014D080->unk4 != -1) {
+        temp_v0_11 = D_8014D080->callback;
         if (temp_v0_11 != 0) {
-            temp_s0_8 = D_80146E00->unk520;
-            D_80146E00->unk520 = 0;
+            temp_s0_8 = D_8014D080->unk520;
+            D_8014D080->unk520 = 0;
             temp_v0_11(0xE03, arg0, 0, 0);
-            callback_status = D_80146E00->unk520;
+            callback_status = D_8014D080->unk520;
             if (callback_status == 1) {
-                D_80146E00->unk520 = temp_s0_8;
+                D_8014D080->unk520 = temp_s0_8;
                 goto after_e03;
             }
-            D_80146E00->unk520 = temp_s0_8;
+            D_8014D080->unk520 = temp_s0_8;
         }
         func_80297A34_de(0xE03, e03_arg_copy, 0, 0);
     }
 after_e03:
-    temp_v1_2 = D_80146E00;
+    temp_v1_2 = D_8014D080;
     temp_v0_2 = temp_v1_2->unk4;
     var_s1_2 = temp_v1_2->unk8;
     if (temp_v0_2 >= 0) {
@@ -366,76 +366,76 @@ after_e03:
             do {
                 var_s1_2 += 1;
                 func_80411E18_de(temp_v1_2->unkC[var_s0].id);
-                temp_v1_2 = D_80146E00;
-                D_80146E00->unkC[var_s0].object = 0;
-                D_80146E00->unkC[var_s0].focus = 0;
+                temp_v1_2 = D_8014D080;
+                D_8014D080->unkC[var_s0].object = 0;
+                D_8014D080->unkC[var_s0].focus = 0;
                 var_s0 += 1;
-            } while (D_80146E00->unk4 >= var_s1_2);
+            } while (D_8014D080->unk4 >= var_s1_2);
         }
         var_v1_3 = 0x3F;
-        var_v0_2 = D_80146E00->cache;
+        var_v0_2 = D_8014D080->cache;
         do {
             var_v0_2->state = 0;
             var_v1_3 -= 1;
             var_v0_2++;
         } while (var_v1_3 >= 0);
         
-        temp_v1_2 = D_80146E00;
+        temp_v1_2 = D_8014D080;
     }
     temp_v1_2->unk8 = temp_v1_2->unk4;
-    D_80146E00->unk528 = func_80299958_de();
-    D_80146E00->unk4 = (s32) (D_80146E00->unk4 + 1);
+    D_8014D080->unk528 = func_80299958_de();
+    D_8014D080->unk4 = (s32) (D_8014D080->unk4 + 1);
     temp_v0_13 = func_80411DCC_de(arg0);
-    temp_a0_6 = ((void *)&D_80146E00->unkC[D_80146E00->unk4]);
+    temp_a0_6 = ((void *)&D_8014D080->unkC[D_8014D080->unk4]);
     temp_a0_6->object = temp_v0_13;
     temp_a0_6->id = arg0;
     temp_a0_6->focus = temp_v0_13->unk44;
     D_80146E10 = temp_v0_13->unk44;
-    D_80146E00->unk8 = (s32) D_80146E00->unk4;
-    temp_a2 = D_80146E00->callback2;
+    D_8014D080->unk8 = (s32) D_8014D080->unk4;
+    temp_a2 = D_8014D080->callback2;
     var_s1 = temp_v0_13;
     if (temp_a2 != 0) {
-        (((Shared_MenuDefinition *)(D_80146E00->unkC[D_80146E00->unk4].object))->unk40) = temp_a2(arg0);
+        (((Shared_MenuDefinition *)(D_8014D080->unkC[D_8014D080->unk4].object))->unk40) = temp_a2(arg0);
     }
-    D_80146E00->unk540 = 0;
-    if (D_80146E00->unk4 != -1) {
-        temp_v0_14 = D_80146E00->callback;
+    D_8014D080->unk540 = 0;
+    if (D_8014D080->unk4 != -1) {
+        temp_v0_14 = D_8014D080->callback;
         if (temp_v0_14 != 0) {
-            temp_s0_9 = D_80146E00->unk520;
-            D_80146E00->unk520 = 0;
+            temp_s0_9 = D_8014D080->unk520;
+            D_8014D080->unk520 = 0;
             temp_v0_14(0xE06, 0, 0, 0);
-            callback_status = D_80146E00->unk520;
+            callback_status = D_8014D080->unk520;
             if (callback_status == 1) {
-                D_80146E00->unk520 = temp_s0_9;
+                D_8014D080->unk520 = temp_s0_9;
                 goto after_e06_second;
             }
-            D_80146E00->unk520 = temp_s0_9;
+            D_8014D080->unk520 = temp_s0_9;
         }
         func_80297310_de(1, 0xE06, 0, 0, 0);
     }
 after_e06_second:
-    if (((Shared_MenuManager *)D_80146E00)->unk4 != -1) {
-        temp_v0_15 = D_80146E00->callback;
+    if (((Shared_MenuManager *)D_8014D080)->unk4 != -1) {
+        temp_v0_15 = D_8014D080->callback;
         if (temp_v0_15 != 0) {
-            temp_s0_10 = D_80146E00->unk520;
-            D_80146E00->unk520 = 0;
+            temp_s0_10 = D_8014D080->unk520;
+            D_8014D080->unk520 = 0;
             temp_v0_15(0xE07, 0, 0, 0);
-            callback_status = D_80146E00->unk520;
+            callback_status = D_8014D080->unk520;
             if (callback_status == 1) {
-                D_80146E00->unk520 = temp_s0_10;
+                D_8014D080->unk520 = temp_s0_10;
                 goto after_e07_second;
             }
-            D_80146E00->unk520 = temp_s0_10;
+            D_8014D080->unk520 = temp_s0_10;
         }
         func_80297310_de(1, 0xE07, 0, 0, 0);
     }
 after_e07_second:
     if (func_80299958_de() != arg0) {
-        D_80146E00->unk540 = 0;
+        D_8014D080->unk540 = 0;
         return;
     }
 block_78:
-    transition_state = &D_80146E00->unk530;
+    transition_state = &D_8014D080->unk530;
     *transition_state = 1;
     while (var_s5 != 0) {
         var_s5 = 0;
@@ -443,47 +443,47 @@ block_78:
         temp_a1_2 = var_s1->unk44;
         if (regpart_temp_v0_2 != temp_a1_2) {
             
-            temp_a0 = D_80146E00;
+            temp_a0 = D_8014D080;
             temp_v1 = temp_a0->unk4;
             temp_a0->unkC[temp_v1].focus = temp_a1_2;
         }
     }
-    temp_a0_7 = D_80146E00->unkC[D_80146E00->unk4].focus;
-    if ((temp_a0_7 != 0) && ((temp_s1_2 = temp_a0_7->unkC, (func_80411DF0_de((s32) temp_s1_2) == 0)) || (temp_s1_2 == D_80146E00->unkC[D_80146E00->unk4].id)) && ((focus_index_final = D_80146E00->unk4), (temp_s1_2 != D_80146E00->unk528)) && ((temp_a1 = -1), (focus_index_final != temp_a1))) {
-        temp_v0_16 = D_80146E00->callback;
+    temp_a0_7 = D_8014D080->unkC[D_8014D080->unk4].focus;
+    if ((temp_a0_7 != 0) && ((temp_s1_2 = temp_a0_7->unkC, (func_80411DF0_de((s32) temp_s1_2) == 0)) || (temp_s1_2 == D_8014D080->unkC[D_8014D080->unk4].id)) && ((focus_index_final = D_8014D080->unk4), (temp_s1_2 != D_8014D080->unk528)) && ((temp_a1 = -1), (focus_index_final != temp_a1))) {
+        temp_v0_16 = D_8014D080->callback;
         if (temp_v0_16 != 0) {
-            temp_s0_11 = D_80146E00->unk520;
-            D_80146E00->unk520 = 0;
+            temp_s0_11 = D_8014D080->unk520;
+            D_8014D080->unk520 = 0;
             temp_v0_16(0xF, 0, 0, 0);
-            callback_status = D_80146E00->unk520;
+            callback_status = D_8014D080->unk520;
             if (callback_status == 1) {
-                D_80146E00->unk520 = temp_s0_11;
+                D_8014D080->unk520 = temp_s0_11;
                 goto after_focus;
             }
-            D_80146E00->unk520 = temp_s0_11;
+            D_8014D080->unk520 = temp_s0_11;
         }
-        if (temp_s1_2 == (((Shared_MenuDefinition *)(D_80146E00->unkC[D_80146E00->unk4].object))->unkC)) {
+        if (temp_s1_2 == (((Shared_MenuDefinition *)(D_8014D080->unkC[D_8014D080->unk4].object))->unkC)) {
             func_80297A34_de(0xF, 0, 0, 0);
         } else {
             func_80296E3C_de(temp_s1_2, 0xF, 0, 0, 0);
         }
     }
 after_focus:
-    if (D_80146E00->unk4 != -1) {
-        temp_v0_17 = D_80146E00->callback;
+    if (D_8014D080->unk4 != -1) {
+        temp_v0_17 = D_8014D080->callback;
         if (temp_v0_17 != 0) {
-            temp_s0_12 = D_80146E00->unk520;
-            D_80146E00->unk520 = 0;
+            temp_s0_12 = D_8014D080->unk520;
+            D_8014D080->unk520 = 0;
             temp_v0_17(0xE08, 0, 0, 0);
-            callback_status = D_80146E00->unk520;
+            callback_status = D_8014D080->unk520;
             if (callback_status == 1) {
-                D_80146E00->unk520 = temp_s0_12;
+                D_8014D080->unk520 = temp_s0_12;
                 goto after_e08;
             }
-            D_80146E00->unk520 = temp_s0_12;
+            D_8014D080->unk520 = temp_s0_12;
         }
         temp_f2 = (s32)(func_802A18CC_de() * 1000.0);
-        func_80297310_de(1, 0xE08, temp_f2 - D_80146E00->unk524, temp_f2, 0);
+        func_80297310_de(1, 0xE08, temp_f2 - D_8014D080->unk524, temp_f2, 0);
     }
 after_e08:
 }

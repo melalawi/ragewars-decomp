@@ -5,8 +5,8 @@
 
 
 extern s32 D_8014D4C0_de;
-extern s32 D_8014D4CC;
-extern s32 D_8014D4D0;
+extern s32 D_8015375C;
+extern s32 D_80153760;
 extern s32 D_8014D4EC_de;
 extern char *D_800D373C[];
 extern char *D_800D3740[];
@@ -14,7 +14,7 @@ extern char *D_800D3744[];
 extern char *D_800D3748[];
 extern char *D_800D3750[];
 extern char *D_800D3760[];
-extern char *D_800D3DE8[];
+extern char *D_800D7E14[];
 
 /* Selects a menu field's label table from the connection mode and the option index. */
 s32 func_8040A37C_de(struct Field *field, s16 *arg1) {
@@ -23,7 +23,7 @@ s32 func_8040A37C_de(struct Field *field, s16 *arg1) {
 
     option = *arg1;
     rel = option - 3;
-    if (D_8014D4D0 != 0) {
+    if (D_80153760 != 0) {
         if (D_8014D4EC_de != 0) {
             field->text = D_800D373C;
         } else {
@@ -37,7 +37,7 @@ s32 func_8040A37C_de(struct Field *field, s16 *arg1) {
             return 0;
         }
         if (option == 0x15) {
-            field->text = D_800D3DE8;
+            field->text = D_800D7E14;
         } else if (D_8014D4EC_de != 0) {
             field->text = D_800D3740;
         } else {
@@ -45,7 +45,7 @@ s32 func_8040A37C_de(struct Field *field, s16 *arg1) {
         }
         goto done;
     }
-    if (D_8014D4CC != 0) {
+    if (D_8015375C != 0) {
         field->text = D_800D3760;
     }
 done:

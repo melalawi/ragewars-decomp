@@ -5,12 +5,12 @@ s32 func_80245618_de(s32 arg0, ContextCallback arg1, VoidCallback arg2) {
     s32 result;
 
     result = func_804030E0_de(arg0);
-    if (D_800DE7E0->requestE0 == arg0) {
-        D_800DE7E0->callbackE4 = arg1;
-        D_800DE7E0->callbackE8 = arg2;
+    if (D_800E2830->requestE0 == arg0) {
+        D_800E2830->callbackE4 = arg1;
+        D_800E2830->callbackE8 = arg2;
     } else {
         if (arg1 != 0) {
-            arg1(D_800DE7E0);
+            arg1(D_800E2830);
         }
         if (arg2 != 0) {
             arg2();

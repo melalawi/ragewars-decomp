@@ -6,8 +6,8 @@
 
 
 
-extern u8 D_801471DC_de[];
-extern char D_801471E0;
+extern u8 D_8014D46C[];
+extern char D_8014D470;
 
 void func_802B7AD8_de(u8 *valid, Entry_func_8023B9C0_eu *data) {
     u8 *ptr;
@@ -15,8 +15,8 @@ void func_802B7AD8_de(u8 *valid, Entry_func_8023B9C0_eu *data) {
     s32 i;
     u8 mask = 0;
 
-    ptr = (u8 *)&D_801471E0;
-    for (i = 0; i < D_801471DC_de[0]; i++, ptr += sizeof(readformat), data++) {
+    ptr = (u8 *)&D_8014D470;
+    for (i = 0; i < D_8014D46C[0]; i++, ptr += sizeof(readformat), data++) {
         readformat = *(__OSContRequesFormat *)ptr;
         data->slot = (readformat.rxsize & 0xC0) >> 4;
         if (data->slot != 0) {

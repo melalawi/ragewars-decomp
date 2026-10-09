@@ -89,7 +89,7 @@ extern int func_80411D10_de(void);
 extern signed char func_80411BE8_de(int entry, int index);
 
 /* unbake published declaration: published_c6420304324f3d3a5aa5ff4e */
-extern short D_8014D99C;
+extern short D_80153C2C;
 
 struct ObjectLinks490;
 /* unbake published declaration: published_c93e14014b8d732ace64bdea */

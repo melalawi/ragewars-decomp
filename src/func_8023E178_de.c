@@ -28,7 +28,7 @@ static inline s32 accepts(Ray_func_8023E178_de *ray, Polygon_func_8023E178_de *p
         if ((u32)(poly->type - 5) < 2) {
             return 0;
         }
-        if (poly->t * ray->slack < -(D_800CB408_de * D_800C3690_de[2])) {
+        if (poly->t * ray->slack < -(D_800D0648 * D_800C3690_de[2])) {
             return 0;
         }
     }

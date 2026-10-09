@@ -2,10 +2,10 @@
 #include "types.h"
 
 extern s32 D_800CBC18;
-extern s32 D_8010B328;
+extern s32 D_8010F328;
 extern u8 D_8010B3F4;
 extern s32 D_8010BC18[4];
-extern s32 D_8010AC90;
+extern s32 D_8010EC90;
 extern void func_80264248_de(void *arg0);
 extern void func_80285D30_de(s32 *);
 void func_802648C8_de(void)
@@ -25,8 +25,8 @@ void func_802648C8_de(void)
   }
   while (var_a0 < 4);
   var_s1 = 0;
-  func_80285D30_de(&D_8010AC90);
-  var_s0 = &D_8010B328;
+  func_80285D30_de(&D_8010EC90);
+  var_s0 = &D_8010F328;
   do
   {
     func_80264248_de(var_s0);

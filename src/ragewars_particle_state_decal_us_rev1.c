@@ -5,7 +5,7 @@
 
 /* Particle render-state lists using the shared runtime vertices.
  * ROM D3AC0..D3B18. */
-extern UnitVtx D_801428E0[4];
+extern UnitVtx D_801469A0[4];
 
 Gfx ragewars_particle_state_decal_us_rev1[11] = {
     gsDPSetTextureLUT(G_TT_NONE),

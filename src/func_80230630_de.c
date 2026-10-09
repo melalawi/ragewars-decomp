@@ -5,8 +5,8 @@
 
 
 
-extern char D_800C9698;
-extern AudioState D_801427E0;
+extern char D_800CE8DC;
+extern AudioState D_801468A0;
 
 extern s32 func_80222AA4_de(void *arg0, s16 arg1);
 extern s16 func_8022F96C_de(void *arg0);
@@ -33,7 +33,7 @@ void func_80230630_de(void *arg0, void *arg1) {
     s32 mode;
 
     actor = ((func_8020A028_S3 *)(arg0))->unk1D8;
-    state = *(s16 *)(&D_800C9698 +
+    state = *(s16 *)(&D_800CE8DC +
                      (((func_80230620_S2 *)(actor))->unk650 * 0x18));
     if (((func_80230620_S3 *)(arg1))->unkCB != 0) {
         if (func_80222AA4_de(actor, ((func_80230620_S2 *)(actor))->unk62E) == 0) {
@@ -50,7 +50,7 @@ void func_80230630_de(void *arg0, void *arg1) {
     ((func_80230620_S4 *)(((func_80230620_S2 *)(actor))->unk698))->unk168 = 0;
     ((func_80230620_S3 *)(arg1))->unk138 = 0;
 
-    audio = &D_801427E0;
+    audio = &D_801468A0;
     if ((audio->active != 0) &&
         (((func_8020EA10_S3 *)(((func_80230620_S2 *)(actor))->unk5D8))->unk8F != 0)) {
         if (((func_80230620_S2 *)(actor))->unk6B0 & 0x2000) {

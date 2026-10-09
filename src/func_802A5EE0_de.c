@@ -2,7 +2,7 @@
 #include "span_1000/code_802A6AC0.h"
 #include "types.h"
 
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 extern void func_802796F4_de(void *arg0, void *arg1);
 
 
@@ -21,7 +21,7 @@ void func_802A5EE0_de(void *arg0)
   {
     do
     {
-      value = (((ObjectLinks14_2 *)(node))->unk_8 = (((ObjectLinks14_2 *)(node))->unk_8) - D_800CD738);
+      value = (((ObjectLinks14_2 *)(node))->unk_8 = (((ObjectLinks14_2 *)(node))->unk_8) - D_800D2988);
       next = ((ObjectLinks14_2 *)(node))->next;
       if (value <= 0.0f)
       {

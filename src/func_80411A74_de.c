@@ -5,5 +5,5 @@
 
 
 s32 func_80411A74_de(void) {
-    return D_8014D978;
+    return D_80153C08;
 }

@@ -12,7 +12,7 @@
  * blending lean and tilt halfway through func_80270CD0_de; other players take func_8024D728_de's tilt, and
  * objects without a floor or held players get the identity. The sine is kept in D_80115DEC. */
 
-extern f32 D_80111D2C;
+extern f32 D_80115DEC;
 extern s32 func_802757E4_de(s32);
 extern void func_80275C94_de(Vec3 *, s32);
 extern void func_80272018_de(Vec3 *, Vec3 *, Vec3 *);
@@ -59,10 +59,10 @@ Vector4f func_8024D870_de(char *obj) {
                 func_80272018_de(&axis, &up, &normal);
                 func_8027207C_de(&axis);
                 slope = func_802745D0_de(up.x * normal.x + up.y * normal.y + up.z * normal.z);
-                D_80111D2C = func_802B7130_de(RW_MIN(slope, 0.43633235f) * 0.375f);
-                tilt.x = axis.x * D_80111D2C;
-                tilt.y = axis.y * D_80111D2C;
-                tilt.z = axis.z * D_80111D2C;
+                D_80115DEC = func_802B7130_de(RW_MIN(slope, 0.43633235f) * 0.375f);
+                tilt.x = axis.x * D_80115DEC;
+                tilt.y = axis.y * D_80115DEC;
+                tilt.z = axis.z * D_80115DEC;
                 tilt.w = func_802B6560_de(RW_MIN(slope, 0.43633235f) * 0.375f);
                 tilt = func_8024D728_de(obj);
                 sine = func_802B7130_de(((func_8024D860_S2 *)(self))->unk6C);
@@ -76,10 +76,10 @@ Vector4f func_8024D870_de(char *obj) {
                 slope = RW_MIN(slope, 25.0f) * 0.75f;
                 half = 0.5f;
                 angle = slope * half;
-                D_80111D2C = func_802B7130_de(angle);
+                D_80115DEC = func_802B7130_de(angle);
                 lean.y = 0.0f;
-                lean.x = cosine * D_80111D2C;
-                lean.z = -sine * D_80111D2C;
+                lean.x = cosine * D_80115DEC;
+                lean.z = -sine * D_80115DEC;
                 lean.w = func_802B6560_de(angle);
                 func_80270CD0_de(&result, half, &lean, &tilt);
                 return result;

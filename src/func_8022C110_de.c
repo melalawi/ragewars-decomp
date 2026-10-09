@@ -9,20 +9,20 @@
 
 
 
-extern Rules_func_8022C110_de D_80142208_de;
-extern Course *D_800E0630;
-extern char D_800FEB00[][0x190];
+extern Rules_func_8022C110_de D_801462C8;
+extern Course *D_800E4680;
+extern char D_80102B00[][0x190];
 extern unsigned char func_8022F454_de(char *, int);
 
 void func_8022C110_de(Player_func_8022C110_de *player) {
     short state;
 
-    if (D_80142208_de.started != 0) {
-        if (D_80142208_de.mode == 1 && player->isBot == 0) {
-            player->lives = (unsigned char)func_8022F454_de(D_800FEB00[player->character], player->info->unk80) / 2 + 1;
+    if (D_801462C8.started != 0) {
+        if (D_801462C8.mode == 1 && player->isBot == 0) {
+            player->lives = (unsigned char)func_8022F454_de(D_80102B00[player->character], player->info->unk80) / 2 + 1;
         }
-        if (D_80142208_de.mode == 4 && player->isBot == 0 && D_800E0630 != 0) {
-            player->lives = D_800E0630->laps;
+        if (D_801462C8.mode == 4 && player->isBot == 0 && D_800E4680 != 0) {
+            player->lives = D_800E4680->laps;
         }
         state = 1;
     } else {

@@ -4,5 +4,5 @@
 
 
 int func_8022BA90_de(void) {
-    return D_80140F88;
+    return D_80145048;
 }

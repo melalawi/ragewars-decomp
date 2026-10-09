@@ -43,7 +43,7 @@ struct Record_func_8020388C_de {
 };
 
 /* unbake published declaration: published_227e159573df718ae9499db8 */
-extern float D_800C1A3C_de;
+extern float D_800C6B2C;
 
 /* unbake published declaration: published_3f5ecda998ed84d90842684e */
 extern float D_800C1A04_de;
@@ -161,7 +161,7 @@ extern int func_80203A94_de(void *arg0);
 extern float D_800C1A48_de;
 
 /* unbake published declaration: published_d1b2aaebfc575b929b88defd */
-extern f32 D_80111D2C;
+extern f32 D_80115DEC;
 
 struct func_80203DF0_S2;
 /* unbake published declaration: published_da88eec1a4f9abb96eb308f8 */

@@ -17,7 +17,7 @@ extern s32 func_8042B78C_de(void *, s32, s32, s32, s32);
  * at stride12 with five o32 arguments and a signed result. Callback
  * relocations omit KSEG0 bias. This object is the complete table.
  * Unnamed callback entry rows remain in original extraction. */
-ResidentEventHandlerEntry D_800E1234[13] = {
+ResidentEventHandlerEntry D_800E5284[13] = {
     {3592, 20, (ResidentEventHandler)((char *)func_8042AE60_eu - 0x80000000U)},
     {3591, 20, (ResidentEventHandler)((char *)func_8042B3D4_de - 0x80000000U)},
     {10, 20, (ResidentEventHandler)((char *)func_8042B3DC_de - 0x80000000U)},

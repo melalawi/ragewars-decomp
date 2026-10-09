@@ -19,7 +19,7 @@
 
 
 
-extern struct State_func_80410448_de D_8014D720;
+extern struct State_func_80410448_de D_801539B0;
 
 extern s32 func_802A1934_de(void);
 extern void func_80411AF0_de(s32 index);
@@ -36,38 +36,38 @@ void func_80410448_de(void) {
     struct Resource_func_804101BC_de *resource;
 
     now = func_802A1934_de();
-    if (D_8014D720.locked != 0) {
+    if (D_801539B0.locked != 0) {
         return;
     }
-    for (i = 0; i < D_8014D720.count; i++) {
-        if (D_8014D720.entries[i].flags & 1) {
-            resource = &D_8014D720.resources[i];
+    for (i = 0; i < D_801539B0.count; i++) {
+        if (D_801539B0.entries[i].flags & 1) {
+            resource = &D_801539B0.resources[i];
             if (resource->id != -1 && resource->retained == 0 && resource->id < now) {
                 func_80411AF0_de(i);
                 return;
             }
         }
     }
-    for (i = 0; i < D_8014D720.chunkCount; i++) {
-        if (D_8014D720.chunks[i].live != 0 && D_8014D720.chunks[i].active != 0) {
-            for (j = 0; j < D_8014D720.chunks[i].header->unkE; j++) {
-                slots = D_8014D720.chunks[i].slots[j];
+    for (i = 0; i < D_801539B0.chunkCount; i++) {
+        if (D_801539B0.chunks[i].live != 0 && D_801539B0.chunks[i].active != 0) {
+            for (j = 0; j < D_801539B0.chunks[i].header->unkE; j++) {
+                slots = D_801539B0.chunks[i].slots[j];
                 for (k = 0; k < 0x60; k++) {
                     slot = &slots[k];
                     if ((slot->flags & 1) && slot->owner < now) {
                         func_80419624_de(slot->data);
                         slot->owner = 0;
                         slot->flags &= ~1;
-                        D_8014D720.chunks[i].live--;
-                        if (D_8014D720.chunks[i].live != 0) {
+                        D_801539B0.chunks[i].live--;
+                        if (D_801539B0.chunks[i].live != 0) {
                             return;
                         }
                     }
                 }
             }
-            if (D_8014D720.chunks[i].live == 0) {
+            if (D_801539B0.chunks[i].live == 0) {
                 func_80411518_de(i);
-                D_8014D720.chunks[i].active = 0;
+                D_801539B0.chunks[i].active = 0;
             }
         }
     }

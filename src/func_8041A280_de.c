@@ -40,10 +40,10 @@ Record_func_8041A280_de *func_8041A280_de(s32 frameId, s32 itemId) {
     result->field_0C = 0xB60;
     result->frame = frame;
     result->item = func_8040EC30_de(context, itemId & 0xFFFF);
-    result->scaleX = D_800DD440_de;
-    result->scaleY = D_800DD440_de;
+    result->scaleX = D_800E1470;
+    result->scaleY = D_800E1470;
     result->frame->field_20 = 0;
-    result->frame->field_24 = D_800DD444_de;
+    result->frame->field_24 = D_800E1474;
     result->copies[0] = result->item->colours[0];
     result->copies[1] = result->item->colours[1];
     result->copies[2] = result->item->colours[2];

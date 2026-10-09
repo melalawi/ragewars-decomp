@@ -1630,7 +1630,7 @@ struct Vec4s {
 };
 
 /* unbake published declaration: published_bec9a39278c3b2411528ff3e */
-extern float D_800C4448_de;
+extern float D_800C9538;
 
 struct func_80267540_S2;
 /* unbake published declaration: published_ca4479af19fd4f19fbebf837 */

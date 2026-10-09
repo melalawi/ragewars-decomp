@@ -11,6 +11,6 @@ struct ResidentTransformWorkspaces {
     f32 *secondTrigonometric;
     s32 *permutation;
 };
-struct ResidentTransformWorkspaces D_800D5340 = {
+struct ResidentTransformWorkspaces D_800D9370 = {
     D_80151AC8, D_80151BC8, D_80152B80
 };

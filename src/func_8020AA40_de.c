@@ -35,7 +35,7 @@ extern f32 D_800C1D40[];
 
 
 
-extern Shared_WeaponWorld D_8011BDC8;
+extern Shared_WeaponWorld D_8011FE88;
 
 
 
@@ -60,7 +60,7 @@ void func_8020AA40_de(Shared_Arg0 *arg0)
   Shared_WeaponSlot *var_s3;
   Shared_WeaponWorld *ww;
   var_s5 = arg0->unk24;
-  ww = &D_8011BDC8;
+  ww = &D_8011FE88;
   if (var_s5 != 0)
   {
     var_f21 = D_800C1D40[0];

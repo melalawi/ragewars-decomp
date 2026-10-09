@@ -6,7 +6,7 @@
 
 
 
-extern f32 D_800C3538_de[];
+extern f32 D_800C8628[];
 
 
 
@@ -26,7 +26,7 @@ static inline void set_emitter(char *obj, f32 a, f32 b, f32 c, f32 scale, s32 va
 void func_80239324_de(char *obj, f32 a, f32 b, f32 c, f32 scale, s32 value, Vec3 pos)
 {
     if (obj != 0) {
-        f32 k = D_800C3538_de[1];
+        f32 k = D_800C8628[1];
         set_emitter(obj, a * k, b * k, c * k, scale, value, pos);
     }
 }

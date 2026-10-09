@@ -40,8 +40,8 @@
 
 
 
-extern World_func_80281A9C_de D_8011BDC8;
-extern SharedPlayer_func_8022A398_de *D_80140FA0;
+extern World_func_80281A9C_de D_8011FE88;
+extern SharedPlayer_func_8022A398_de *D_80145060;
 extern void func_80271F68_de(Vec3 *out, Vec3 *a, Vec3 *b);
 
 void func_80281A9C_de(s32 unused, Actor_func_80281A9C_de *actor, Actor_func_80281A9C_de **others, s32 count) {
@@ -51,7 +51,7 @@ void func_80281A9C_de(s32 unused, Actor_func_80281A9C_de *actor, Actor_func_8028
     s32 i;
     s32 objectCount;
 
-    world = &D_8011BDC8;
+    world = &D_8011FE88;
     objectCount = world->objectCount;
     for (i = 0; i < objectCount; i++) {
         if (world->objects[i]->count > 0) {
@@ -62,7 +62,7 @@ void func_80281A9C_de(s32 unused, Actor_func_80281A9C_de *actor, Actor_func_8028
             }
         }
     }
-    for (player = D_80140FA0; player != 0; player = player->views16E0.view16E0_1.next) {
+    for (player = D_80145060; player != 0; player = player->views16E0.view16E0_1.next) {
         if (actor->owner != player && player->views5E4.view5E4_2.health > 0) {
             func_80271F68_de(&delta, &player->views0.view8_4.position, &actor->position);
             if (delta.x * delta.x + delta.y * delta.y + delta.z * delta.z <= 65536.0f) {

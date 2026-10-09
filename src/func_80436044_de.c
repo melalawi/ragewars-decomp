@@ -6,11 +6,11 @@
 
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de: 0x3D5 waits 1 through
    func_80298368_de; 0x3D3 plays cue 0x34 through func_8025E2D4_de when func_8025E2C4_de reports sound on,
-   resets through func_802A2394_de, sets the timer at 0x1C of screen D_800E1504 by setting
-   D_80142215 through jtbl_800DDEF0 (10, 15 or 10, and 20 for any other setting) and shows the
+   resets through func_802A2394_de, sets the timer at 0x1C of screen D_800E5554 by setting
+   D_801462D5 through jtbl_800DDEF0 (10, 15 or 10, and 20 for any other setting) and shows the
    screen through func_8043C278_de. Returns zero. */
-extern MenuRules *D_800E1504;
-extern u8 D_80142215;
+extern MenuRules *D_800E5554;
+extern u8 D_801462D5;
 extern void *jtbl_800DDEF0[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
@@ -45,24 +45,24 @@ s32 func_80436044_de(void) {
             func_8025E2D4_de(0x34);
         }
         func_802A2394_de();
-        setting = D_80142215;
+        setting = D_801462D5;
         if (setting >= 5) {
             goto timer_20;
         }
         goto *jtbl_800DDEF0[setting];
     timer_10:
-        D_800E1504->locked = 10;
+        D_800E5554->locked = 10;
         goto show;
     timer_15:
-        D_800E1504->locked = 15;
+        D_800E5554->locked = 15;
         goto show;
     timer_10_again:
-        D_800E1504->locked = 10;
+        D_800E5554->locked = 10;
         goto show;
     timer_20:
-        D_800E1504->locked = 20;
+        D_800E5554->locked = 20;
     show:
-        func_8043C278_de(D_800E1504);
+        func_8043C278_de(D_800E5554);
         return 0;
     }
     return 0;

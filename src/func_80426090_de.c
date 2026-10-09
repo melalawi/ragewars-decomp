@@ -4,7 +4,7 @@
 #include "stddef.h"
 /* Marks available inventory entries with their slot indices. */
 s32 func_8022F4DC_de(void *, s32); /* extern */
-extern char D_800FEB00[];
+extern char D_80102B00[];
 void func_80426090_de(Arg *arg0) {
     s32 temp_s0;
     s32 temp_s3;
@@ -22,7 +22,7 @@ void func_80426090_de(Arg *arg0) {
                 temp_s0 = var_s2->unk4C;
                 if (temp_s0 >= 0x4C3) {
                     temp_s0 = temp_s0 - 0x4C3;
-                    temp_v0 = func_8022F4DC_de(temp_s3 + D_800FEB00, temp_s0);
+                    temp_v0 = func_8022F4DC_de(temp_s3 + D_80102B00, temp_s0);
                     if (temp_v0 == 1) {
                         arg0->slots[temp_s0].available = temp_v0;
                         arg0->slots[temp_s0].slot = var_s1;

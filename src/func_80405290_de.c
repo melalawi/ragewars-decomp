@@ -12,7 +12,7 @@ extern s8 D_8010BBB8;
 extern char D_8014D280[];
 s32 func_80405290_de(s32 arg0) {
     s32 var_s0;
-    if (D_8014D260[arg0] != 3) {
+    if (D_801534F0[arg0] != 3) {
         return -2;
     }
     func_802644FC_de(1);

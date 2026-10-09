@@ -4,7 +4,7 @@
 #include "types.h"
 
 extern s32 D_800CD764_de;
-extern char D_8011BDC8;
+extern char D_8011FE88;
 extern s32 func_8028BEAC_de(void *arg0, s32 arg1, s32 arg2, s32 arg3);
 extern void func_802AA8EC_de(s32 arg0, s32 arg1, void **arg2, s32 *arg3);
 extern void func_80253754_de(s32 arg0, s32 arg1);
@@ -21,7 +21,7 @@ void func_802AA950_de(s32 arg0, s32 arg1, s32 *arg2, s32 *arg3)
   s32 temp_v0;
   if (D_800CD764_de != 0)
   {
-    temp_v0 = func_8028BEAC_de(&D_8011BDC8, arg0, 0, 1);
+    temp_v0 = func_8028BEAC_de(&D_8011FE88, arg0, 0, 1);
     if (temp_v0 != 0)
     {
       func_802AA8EC_de(temp_v0, arg1, &sp10, &sp14);

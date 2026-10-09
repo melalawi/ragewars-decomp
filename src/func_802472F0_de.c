@@ -21,9 +21,9 @@ extern void func_80272898_de(Matrix_func_80213CF8_de *, Vec3 *, Vec3 *);
 extern void func_80253754_de(s32, s32);
 
 
-extern struct Shape_func_8021A2D4_de_2 D_8011BDC8;
+extern struct Shape_func_8021A2D4_de_2 D_8011FE88;
 
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 
 
 extern char D_800C3930_de;
@@ -50,7 +50,7 @@ void func_802472F0_de(void *arg0) {
     void *track1;
     f32 value;
 
-    if (D_8011BDC8.field_0 == 4) {
+    if (D_8011FE88.field_0 == 4) {
         if (((func_802472E0_S1 *)arg0)->unk10F == 0)
             ((func_802472E0_S1 *)arg0)->unk10E = 1;
         if (((func_802472E0_S1 *)arg0)->unk123 == 0)
@@ -94,7 +94,7 @@ void func_802472F0_de(void *arg0) {
             if (func_802624D8_de(track1) != 0) {
                 f32 time;
                 f32 end;
-                time = ((func_802472E0_S1 *)arg0)->unk134 + D_800CD738;
+                time = ((func_802472E0_S1 *)arg0)->unk134 + D_800D2988;
                 end = (f32)((func_802472E0_S1 *)arg0)->unk12C.signedValue;
                 ((func_802472E0_S1 *)arg0)->unk134 = time;
                 if (end < time) {
@@ -102,7 +102,7 @@ void func_802472F0_de(void *arg0) {
                 } else {
                     f32 a = (f32)((func_802472E0_S1 *)arg0)->unk139;
                     f32 b = (f32)((func_802472E0_S1 *)arg0)->unk138;
-                    f32 t = time / (end + D_800CD738);
+                    f32 t = time / (end + D_800D2988);
                     ((func_802472E0_S1 *)arg0)->unk130 = (((a + D_800C3948_de + b) * t * t * t) +
                         ((((&D_800C3948_de)[1] - a) - (2.0f * b)) * t * t) + (b * t));
                     func_8026193C_de(&((func_802472E0_S1 *)(arg0))->unk118, &second, &second_value, arg0);

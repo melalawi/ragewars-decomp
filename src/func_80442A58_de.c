@@ -52,12 +52,12 @@ loop:
 extern u8 D_80152789;
 #endif
 
-/* Hands func_804422F0_de a target and the scale twice: the target is what func_8043F120_de returns for
+/* Hands func_804422F0_de a target and the scale twice: the target is what func_8043F290 returns for
    an object of kind 5, otherwise the word the pointer at offset 0x14 addresses. */
 
 
 #if defined(VERSION_DE) || defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-extern void * func_8043F120_de(struct Object_func_80442ADC_de *);
+extern void * func_8043F290(struct Object_func_80442ADC_de *);
 #else
 extern void * func_8043F114_de(struct Object_func_80442ADC_de *);
 #endif
@@ -69,7 +69,7 @@ void func_80442ADC_de(struct Object_func_80442ADC_de *object, f32 scale) {
     if (object->kind == 5) {
         target = 
 #if defined(VERSION_DE) || defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
-func_8043F120_de
+func_8043F290
 #else
 func_8043F114_de
 #endif
@@ -131,9 +131,9 @@ s32 func_80442B88_de(struct Object_func_80442B88_de *object) {
 }
 
 /* Draws a pulsing sprite for an active menu element: when the word at 0x1CC is set, it takes the frame at 0x1C8 folded back after 23, sets up drawing through func_802A84F8_de and func_8026925C_de, emits a yellow environment and primitive colour to the display list and draws sprite 0x67 at the owner's rectangle scaled to the screen through func_802AAC28_de. Adapted from func_8022C2B4_de. */
-extern Gfx *D_8010C574;
-extern s32 D_800DE880_de;
-extern s32 D_800DE884_de;
+extern Gfx *D_80110634;
+extern s32 D_800E28D0;
+extern s32 D_800E28D4;
 
 
 extern void func_8026925C_de(s32);
@@ -155,14 +155,14 @@ void func_80442BA8_de(MenuSpriteElement *e) {
         func_802A84F8_de();
         func_8026925C_de(0x15);
         o = e->owner;
-        gfx = D_8010C574++;
+        gfx = D_80110634++;
         w = o->width;
         h = o->height;
         gDPSetEnvColor(gfx, 255, 0, 0, 255);
-        gfx = D_8010C574++;
+        gfx = D_80110634++;
         gDPSetPrimColor(gfx, 0, 0, 224, 0, 0, 255);
         func_802AAC28_de(0x67, frame, e->owner->x, e->owner->y,
-                      w / (f32)D_800DE880_de * 5.0f, h / (f32)D_800DE884_de * 4.0f, 1);
+                      w / (f32)D_800E28D0 * 5.0f, h / (f32)D_800E28D4 * 4.0f, 1);
     }
 }
 
@@ -205,10 +205,10 @@ void func_80442D10_de(Widget_func_80442D10_de *w, Descriptor_func_80442D10_de *d
 }
 
 /* Selects the descriptor for a single masked category bit; on eu and eu-x the slot is
-   additionally offset by nine descriptors per local player, read from the byte after D_80142788. */
+   additionally offset by nine descriptors per local player, read from the byte after D_80146848. */
 
 extern char D_800E1E24_de[];
-extern u8 D_80142788;
+extern u8 D_80146848;
 void *func_80442DDC_de(Obj_func_80442DDC_de *arg0) {
  s32 index=0;
  switch(arg0->flags & 0x3fe0) {
@@ -224,7 +224,7 @@ void *func_80442DDC_de(Obj_func_80442DDC_de *arg0) {
  default: index=0; break;
  }
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
- index += (&D_80142788)[1] * 9;
+ index += (&D_80146848)[1] * 9;
 #endif
  return D_800E1E24_de+index*28;
 }

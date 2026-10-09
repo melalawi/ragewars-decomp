@@ -16,9 +16,9 @@ s32 func_8041DE94_de(void) {
 
 
 
-extern s32 D_800DF6D4;
-extern s32 D_800DF6D8;
-extern Handler802A2B50 D_800DF6DC;
+extern s32 D_800E3724;
+extern s32 D_800E3728;
+extern Handler802A2B50 D_800E372C;
 
 s32 func_8041DEB4_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     char *entry;
@@ -27,14 +27,14 @@ s32 func_8041DEB4_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4) {
     s32 actor_kind;
     s32 table_kind;
 
-    if (D_800DF6DC != 0) {
+    if (D_800E372C != 0) {
         wildcard = 0x7530;
-        entry = (char *)&D_800DF6DC;
+        entry = (char *)&D_800E372C;
         offset = 0;
         do {
-            if (((struct Shape_typemap_3 *) (((char *) (&D_800DF6D4)) + offset))->field_0 == arg1) {
+            if (((struct Shape_typemap_3 *) (((char *) (&D_800E3724)) + offset))->field_0 == arg1) {
                 actor_kind = ((struct func_8021C9B4_S3 *) ((char *) arg0))->unkC;
-                table_kind = ((struct Shape_typemap_3 *) (((char *) (&D_800DF6D8)) + offset))->field_0;
+                table_kind = ((struct Shape_typemap_3 *) (((char *) (&D_800E3728)) + offset))->field_0;
                 if ((table_kind == actor_kind) || (table_kind == wildcard)) {
                     return (*(Handler802A2B50 *)entry)(arg0, arg1, arg2, arg3, arg4);
                 }

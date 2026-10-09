@@ -4,10 +4,10 @@
 
 
 
-extern char D_8010AEB8[];
-extern char D_8010B328[];
-extern char D_80142208_de[];
-extern char D_801427E0[];
+extern char D_8010EEB8[];
+extern char D_8010F328[];
+extern char D_801462C8[];
+extern char D_801468A0[];
 extern s32 D_800C9684;
 
 extern void func_80255CA0_de(void *, s32, s32);
@@ -52,7 +52,7 @@ void func_804499B0_de(ObjectPool *pool, s32 count, s32 force_active) {
     func_80255CA0_de(pool->object_queue, 0x16DC, 0x16E0);
     func_80264854_de(0);
     func_80253908_de(0);
-    global = D_80142208_de;
+    global = D_801462C8;
 
     if (pool->allocation != 0) {
         func_80253838_de(0, pool->allocation);
@@ -93,10 +93,10 @@ initialize_object:
             ((func_804499B0_de_S3 *)(object))->unk1450 = ((ObjectState96 *)(entry))->unk_91;
             ((func_804499B0_de_S3 *)(object))->unk5D0 = 0;
             if (((func_804499B0_de_S3 *)(object))->unk1450 != 0) {
-                func_8026367C_de(object + 0x688, D_8010AEB8);
+                func_8026367C_de(object + 0x688, D_8010EEB8);
                 ((func_804499B0_de_S3 *)(object))->unk5D4 = ((ObjectState96 *)(entry))->unk_7F;
             } else {
-                func_8026367C_de(object + 0x688, D_8010B328 + attribute_offset);
+                func_8026367C_de(object + 0x688, D_8010F328 + attribute_offset);
                 ((func_804499B0_de_S3 *)(object))->unk5D4 = i;
             }
             owner = ((func_804499B0_de_S3 *)(object))->unk1454;
@@ -149,10 +149,10 @@ initialize_object:
         ((func_804499B0_de_S3 *)(object))->unk1450 = ((ObjectState96 *)(entry))->unk_91;
         ((func_804499B0_de_S3 *)(object))->unk5D0 = 0;
         if (((func_804499B0_de_S3 *)(object))->unk1450 != 0) {
-            func_8026367C_de(object + 0x688, D_8010AEB8);
+            func_8026367C_de(object + 0x688, D_8010EEB8);
             ((func_804499B0_de_S3 *)(object))->unk5D4 = ((ObjectState96 *)(entry))->unk_7F;
         } else {
-            func_8026367C_de(object + 0x688, D_8010B328 + roster_index * 0x224);
+            func_8026367C_de(object + 0x688, D_8010F328 + roster_index * 0x224);
             ((func_804499B0_de_S3 *)(object))->unk5D4 = roster_index;
         }
         owner = ((func_804499B0_de_S3 *)(object))->unk1454;
@@ -193,7 +193,7 @@ initialize_object:
     }
 
 initialized:
-    state = D_801427E0;
+    state = D_801468A0;
     ((IntegerState88 *)(state))->unk_74 = 1;
     ((IntegerState88 *)(state))->unk_84 = 3;
 }

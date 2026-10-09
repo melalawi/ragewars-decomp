@@ -5,5 +5,5 @@
 
 
 s16 func_80411D94_de(void) {
-    return D_8014D99C;
+    return D_80153C2C;
 }

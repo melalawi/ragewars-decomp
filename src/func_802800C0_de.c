@@ -7,17 +7,17 @@
 
 /* These canonical scalar owners are immutable ROM rodata. */
 
-extern Shared_GlobalRuntimeState D_80140FA0;
-extern EffectTarget *D_800FFFCC;
-extern EffectTarget D_801001F0;
+extern Shared_GlobalRuntimeState D_80145060;
+extern EffectTarget *D_80103FCC;
+extern EffectTarget D_801041F0;
 
-extern Vec3 D_801002C8;
+extern Vec3 D_801042C8;
 
 extern func_8028414C_S1 *D_80140FE8_de;
 extern s32 D_80140FF8;
 
 extern u8 D_801462E5;
-extern s32 D_800CD72C;
+extern s32 D_800D297C;
 
 extern f32 D_800CD6B0;
 
@@ -53,7 +53,7 @@ extern f32 func_80285630_de(CharacterScreenCell);
 #if defined(VERSION_EU)
 extern f32 func_802AD520_eu(s32);
 #else
-extern f32 func_802AD280_de(s32);
+extern f32 func_802B2350(s32);
 #endif
 
 extern void func_8022B040_de(s32, Effect_func_802800C0_de *);
@@ -126,17 +126,17 @@ static inline void effect_spawn_aim(Effect_func_802800C0_de *effect, EffectTarge
 
     if (aimTarget->matrixIndex != -1) {
         effect->mode = -4;
-        targetActor = D_801001F0.actor;
+        targetActor = D_801041F0.actor;
         targetTeam = aimTarget->unk7E;
-        func_80270910_de(&targetMtx, &targetActor->u60.link.matrixArray[D_801001F0.matrixIndex]);
+        func_80270910_de(&targetMtx, &targetActor->u60.link.matrixArray[D_801041F0.matrixIndex]);
         func_8026EF58_de(&targetInv, &targetMtx);
         func_80272898_de(&targetInv, &aimTarget->pos, &effect->unk50);
-        up = D_801002C8;
+        up = D_801042C8;
         func_8027207C_de(&up);
         func_80272B38_de(&targetInv, &up, vel);
         effect->unk134 = (s32) targetActor;
         effect->flags |= 0x10000;
-        effect->unk1D1 = D_801001F0.matrixIndex;
+        effect->unk1D1 = D_801041F0.matrixIndex;
         if (effect->kind == 0x56 && targetTeam == sourceType) {
             effect->flags |= 0x4000000;
         }
@@ -193,20 +193,20 @@ s32 func_802800C0_de(EffectSystem *sys, EffectActor *source, EffectActor *owner,
     s32 sourceType;
     s32 sound;
 
-    if (D_80140FA0.frozen != 0) {
+    if (D_80145060.frozen != 0) {
         return 0;
     }
     count = 0;
     resource = sys->resource;
-    D_800FFFCC = &target;
+    D_80103FCC = &target;
     sys->last = 0;
     block = func_8028FDB4_de(resource, 1);
     numEntries = block->count;
     if (func_80265550_de(block->entries, numEntries, kind, &first, &last) != 0) {
         entries = func_8028FDB4_de(resource, 2)->entries;
         anchor = 0;
-        if (D_80140FA0.actorList != 0) {
-            anchor = D_80140FA0.actorList;
+        if (D_80145060.actorList != 0) {
+            anchor = D_80145060.actorList;
         }
         ownerId = 0;
         if (owner != 0) {
@@ -290,12 +290,12 @@ s32 func_802800C0_de(EffectSystem *sys, EffectActor *source, EffectActor *owner,
                     break;
             }
             if (entry->flags & 0x2000000) {
-                if (D_80142223 == 0 || !(arg11 & 1)) {
+                if (D_801462E3 == 0 || !(arg11 & 1)) {
                     ok = 0;
                 }
             }
             if (entry->flags & 0x4000000) {
-                if (D_80142223 != 0) {
+                if (D_801462E3 != 0) {
                     ok = 0;
                 }
             }
@@ -319,13 +319,13 @@ s32 func_802800C0_de(EffectSystem *sys, EffectActor *source, EffectActor *owner,
                                 if (depth < 0.0f) {
                                     depth = -depth;
                                 }
-                                func_8027DD48_de(source, &source->u60.matrices[D_800CD72C], camera, depth);
+                                func_8027DD48_de(source, &source->u60.matrices[D_800D297C], camera, depth);
                             } else {
-                                func_8027DD48_de(source, &source->u60.matrices[D_800CD72C], 0, 0.0f);
+                                func_8027DD48_de(source, &source->u60.matrices[D_800D297C], 0, 0.0f);
                             }
                             source->flags |= 0x100000;
                         }
-                        func_80270910_de(&mtx, &source->u60.matrices[D_800CD72C]);
+                        func_80270910_de(&mtx, &source->u60.matrices[D_800D297C]);
                         scale = 0.09765625f;
                         if (source->model->unk14 != 0) {
                             scale = 2.857143f;
@@ -390,7 +390,7 @@ s32 func_802800C0_de(EffectSystem *sys, EffectActor *source, EffectActor *owner,
                 if (effect->entry->flags & 0x2000000) {
                     if (effect->flags & 2) {
                         layer = 2;
-                    } else if (D_80142223 == 2) {
+                    } else if (D_801462E3 == 2) {
                         layer = 1;
                     }
                 }
@@ -536,10 +536,10 @@ s32 func_802800C0_de(EffectSystem *sys, EffectActor *source, EffectActor *owner,
                 render->unk14 = func_802AD520_eu(entry->motion->unkC);
                 render->unk18 = func_802AD520_eu(entry->motion->unkE);
 #else
-                render->unkC = func_802AD280_de(entry->motion->unk8);
-                render->unk10 = func_802AD280_de(entry->motion->unkA);
-                render->unk14 = func_802AD280_de(entry->motion->unkC);
-                render->unk18 = func_802AD280_de(entry->motion->unkE);
+                render->unkC = func_802B2350(entry->motion->unk8);
+                render->unk10 = func_802B2350(entry->motion->unkA);
+                render->unk14 = func_802B2350(entry->motion->unkC);
+                render->unk18 = func_802B2350(entry->motion->unkE);
 #endif
                 if (render->unk5 == 8 || render->unk6 == 8 || render->unk4 == 8) {
                     if (effect->owner != 0 && effect->owner->type == 1 && (effect->owner->unk100 & 0x300000)) {
@@ -581,7 +581,7 @@ s32 func_802800C0_de(EffectSystem *sys, EffectActor *source, EffectActor *owner,
                 vel = &effect->velocity;
                 func_80271F9C_de(vel, vel, D_800CD6B0);
                 if ((kind == 0x2D || kind == 0x4F) && (sourceType = source->type) == 2) {
-                    aimTarget = &D_801001F0;
+                    aimTarget = &D_801041F0;
                     if (aimTarget->actor != 0) {
                         effect_spawn_aim(effect, aimTarget, vel, sourceType);
                     }
@@ -592,7 +592,7 @@ s32 func_802800C0_de(EffectSystem *sys, EffectActor *source, EffectActor *owner,
                     func_802A4598_de(&D_801379C0, effect, entry->unk6);
                 }
                 if (entry->unk7 != -1) {
-                    effect->unk138 = func_80268BE0_de(&D_801370E8, entry->unk7);
+                    effect->unk138 = func_80268BE0_de(&D_8013B1A8, entry->unk7);
                 } else {
                     effect->unk138 = 0;
                 }
@@ -612,6 +612,6 @@ s32 func_802800C0_de(EffectSystem *sys, EffectActor *source, EffectActor *owner,
             }
         }
     }
-    D_800FFFCC = &D_801001F0;
+    D_80103FCC = &D_801041F0;
     return count;
 }

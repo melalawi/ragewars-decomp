@@ -6,8 +6,8 @@
 #include "common/unused.h"
 #include "span_C76B0/data.h"
 
-extern s32 D_801371FC;
-extern AudioState D_801427E0;
+extern s32 D_8013B2BC;
+extern AudioState D_801468A0;
 
 extern u8 *func_8024E6A0_de(void *arg0);
 extern void func_8024E6D8_de(u8 *arg0, Vec3 *arg1);
@@ -37,7 +37,7 @@ void func_8022CA14_de(void *arg0, void *arg1) {
     AudioState *audio;
 
     scale = D_800C2D60_de;
-    if (D_801371FC == 0x1DB1) {
+    if (D_8013B2BC == 0x1DB1) {
         scale = ((func_802077F4_S2 *)(&D_800C2D60_de))->unk4;
     }
     ((func_8022CA04_S2 *)(arg1))->unk20 =
@@ -51,7 +51,7 @@ void func_8022CA14_de(void *arg0, void *arg1) {
 
     state = ((func_8020EA10_S3 *)(((func_8022CA04_S5 *)(arg0))->unk5D8))->unk8F;
     if (state == 1) {
-        audio = &D_801427E0;
+        audio = &D_801468A0;
         if (audio->active != 0) {
             mode = audio->mode;
             switch (mode) {
@@ -93,7 +93,7 @@ extern void func_8022CC34_de(void *arg0, void *arg1);
 
 
 
-extern s32 D_801371FC;
+extern s32 D_8013B2BC;
 
 
 
@@ -111,7 +111,7 @@ void func_8022CB5C_de(void *arg0, void *arg1) {
     f32 scale;
 
     scale = D_800C2D68_de;
-    if (D_801371FC == 0x1DB1) {
+    if (D_8013B2BC == 0x1DB1) {
         scale = D_800C2D6C_de;
     }
     if (((struct ObjectState1454 *)(arg0))->unk_1450 != 0) {
@@ -149,9 +149,9 @@ extern void func_802233F0_de(s32 arg0, s32 arg1, void *arg2);
 extern s32 func_8024E62C_de(void *arg0);
 extern void func_802227F4_de(void *, void *, s32);
 extern f32 func_8024E678_de(void *arg0, s32 arg1);
-extern char D_800C95A0;
+extern char D_800CE7E4;
 extern char D_800C94EC_de;
-extern s32 D_800C9AEC_de;
+extern s32 D_800CED30;
 extern f32 D_800C2D78_de[2];
 
 
@@ -163,7 +163,7 @@ void func_8022CC34_de(void *arg0, void *arg1) {
     s32 value;
 
     func_80274870_de((s32)arg0 + 0x72C, 0.0f, 0.25f);
-    func_802231D4_de((s32)arg0, (s32)arg1, &D_800C95A0);
+    func_802231D4_de((s32)arg0, (s32)arg1, &D_800CE7E4);
     if (!(((func_8022CC24_S1 *)(arg0))->unk660 & 0x8000)) {
         func_802233F0_de((s32)arg0, (s32)arg1, &D_800C94EC_de);
     }
@@ -179,7 +179,7 @@ void func_8022CC34_de(void *arg0, void *arg1) {
             }
         } else if (func_8024E678_de(arg1, 0) < D_800C2D78_de[1]) {
 set_value:
-            if (((func_8022CC24_S1 *)(arg0))->unk13B4 == &D_800C9AEC_de) {
+            if (((func_8022CC24_S1 *)(arg0))->unk13B4 == &D_800CED30) {
                 ((func_8022CC24_S1 *)(arg0))->unk86C = 0x5E2E;
             } else {
                 ((func_8022CC24_S1 *)(arg0))->unk86C = 0x7F8;

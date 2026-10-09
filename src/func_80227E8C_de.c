@@ -7,13 +7,13 @@
    scheduling D_80146924 = 3 otherwise) or moves to state 2, and ends the round through func_8022A748_de
    when func_802282EC_de reports it over. */
 
-extern s32 D_80142858;
+extern s32 D_80146918;
 extern s32 D_801427FC;
-extern s32 D_80142864;
-extern s32 D_800F3D10;
+extern s32 D_80146924;
+extern s32 D_800F7D10;
 
 
-extern StateBlock D_801427E0;
+extern StateBlock D_801468A0;
 
 
 
@@ -37,7 +37,7 @@ void func_80227E8C_de(Round *arg0) {
     s32 three; /* FAKEMATCH: constant-holding local places the li */
     s32 found; /* FAKEMATCH: flag local keeps the loop exit from being threaded past the found check */
 
-    if ((D_80142858 != 0) && (func_80245784_de() == 0) && (func_80245798_de() == 0)) {
+    if ((D_80146918 != 0) && (func_80245784_de() == 0) && (func_80245798_de() == 0)) {
         node = arg0->players;
         count = 0;
         if (node != 0) {
@@ -57,9 +57,9 @@ void func_80227E8C_de(Round *arg0) {
             }
             three = 3;
             if (node != 0) {
-                D_800F3D10 = 0;
+                D_800F7D10 = 0;
             }
-            state = &D_801427E0;
+            state = &D_801468A0;
             switch (state->unk84) {
             case 0:
             default:
@@ -72,7 +72,7 @@ void func_80227E8C_de(Round *arg0) {
                     three = 3;
                     if (node != 0) {
                         node->unk5D8->unk90 = 0;
-                        D_80142864 = three;
+                        D_80146924 = three;
                     }
                 } else {
                     state->unk84 = 2;
@@ -92,7 +92,7 @@ void func_80227E8C_de(Round *arg0) {
                         temp = node->unk5D8;
                         temp->unk4 = (u16) (temp->unk4 + 1);
                     } while (0);
-                    D_800F3D10 = 0;
+                    D_800F7D10 = 0;
                 }
                 break;
             case 2:

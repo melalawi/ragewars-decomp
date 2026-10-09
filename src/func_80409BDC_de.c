@@ -8,12 +8,12 @@
 
 
 
-extern s32 D_8014D4CC;
-extern s32 D_800DE878;
+extern s32 D_8015375C;
+extern s32 D_800E28C8;
 
 s32 func_80409BDC_de(struct Record_func_80409BDC_de *record) {
-    if (D_8014D4CC != 0) {
-        return D_800DE878;
+    if (D_8015375C != 0) {
+        return D_800E28C8;
     }
     return record->inner->unk4;
 }

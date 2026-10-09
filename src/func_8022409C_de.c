@@ -34,9 +34,9 @@
 
 
 
-extern f32 D_800CD738;
-extern char D_8011BDC8;
-extern char D_80140FC8;
+extern f32 D_800D2988;
+extern char D_8011FE88;
+extern char D_80145088;
 extern char D_800C2950_de;
 
 extern void func_80274870_de(f32 *, f32, f32);
@@ -141,10 +141,10 @@ void func_8022409C_de(void *arg0, void *arg1) {
     direction.z += ((func_80224078_Arg0 *)arg0)->unk6C4 *
                    func_802B6560_de(((func_80224078_Arg1 *)arg1)->unk6C - held);
 
-    func_80271F9C_de(&direction, &direction, D_800CD738);
+    func_80271F9C_de(&direction, &direction, D_800D2988);
     func_80271F34_de(&((func_80224078_Arg0 *)(arg0))->unk6E8,
                   &((func_80224078_Arg0 *)(arg0))->unk6E8, &direction);
-    result = func_80286728_de(&D_8011BDC8, &((func_80224078_Arg1 *)arg1)->unk8);
+    result = func_80286728_de(&D_8011FE88, &((func_80224078_Arg1 *)arg1)->unk8);
     if (result != 0) {
         ((func_80224078_Arg1 *)arg1)->unk14 = result;
     }
@@ -155,7 +155,7 @@ void func_8022409C_de(void *arg0, void *arg1) {
         func_802227F4_de(arg0, arg1, 2);
         data = ((func_80224078_Arg0 *)arg0)->unk5DC;
         if (data != 0) {
-            func_80237E80_de(&D_80140FC8, data, &D_800C2950_de);
+            func_80237E80_de(&D_80145088, data, &D_800C2950_de);
         }
     }
 }

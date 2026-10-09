@@ -6,8 +6,8 @@
 
 
 
-extern s32 D_80142878;
-extern u8 D_80142215;
+extern s32 D_80146938;
+extern u8 D_801462D5;
 extern Entry190 D_800FEB10[];
 
 
@@ -20,7 +20,7 @@ s32 func_8022AC00_de(void *arg0) {
     s32 value;
     s8 type;
 
-    if (D_80142878 != 0 && ((struct Record_func_80208158_de *) ((ObjectLinks1454_3 *) o)->unk_5D8)->display != 0) {
+    if (D_80146938 != 0 && ((struct Record_func_80208158_de *) ((ObjectLinks1454_3 *) o)->unk_5D8)->display != 0) {
         type = ((struct Record_func_80208158_de *) ((ObjectLinks1454_3 *) o)->unk_5D8)->kind;
         if (type == 0xB) {
             value = 0x19000;
@@ -36,7 +36,7 @@ s32 func_8022AC00_de(void *arg0) {
     } else {
         value = ((func_802066A4_S3 *)(((ObjectLinks1454_3 *)(o))->unk_18))->unk18 << 8;
     }
-    if (D_80142215 == 1 && ((ObjectLinks1454_3 *)(o))->unk_1450 == 0) {
+    if (D_801462D5 == 1 && ((ObjectLinks1454_3 *)(o))->unk_1450 == 0) {
         value += D_800FEB10[((ObjectLinks1454_3 *)(o))->unk_5D4].value;
     }
     return value;

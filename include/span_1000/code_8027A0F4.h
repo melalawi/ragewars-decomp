@@ -138,7 +138,7 @@ struct func_8027EB00_S2;
 typedef struct func_8027EB00_S2 func_8027EB00_S2;
 
 /* unbake published declaration: published_4abce60b94e9b4d6e2aa6250 */
-extern int D_801002C4;
+extern int D_801042C4;
 
 struct Actor_func_8027DAD0_de;
 /* unbake published declaration: published_4b67bf2ed900be63d854b5b0 */

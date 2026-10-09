@@ -7,8 +7,8 @@
 
 
 
-extern struct Entry_func_804101BC_de D_8014DCF0[];
-extern InstanceHdr D_800DF768[];
+extern struct Entry_func_804101BC_de D_80153F80[];
+extern InstanceHdr D_800E37B8[];
 
 static inline s32 entryScore(void) {
     s32 score;
@@ -18,8 +18,8 @@ static inline s32 entryScore(void) {
     score = 0;
     points = 0;
     for (i = 0; i < 3; i++) {
-        if (D_8014DCF0[i].unused >= 0) {
-            switch (D_8014DCF0[i].flags) {
+        if (D_80153F80[i].unused >= 0) {
+            switch (D_80153F80[i].flags) {
             case 0:
                 points = 5;
                 break;
@@ -43,7 +43,7 @@ static inline s32 activeCount(void) {
 
     count = 0;
     for (i = 0; i < 3; i++) {
-        if (D_8014DCF0[i].unused >= 0) {
+        if (D_80153F80[i].unused >= 0) {
             count++;
         }
     }
@@ -63,7 +63,7 @@ s32 func_8041E720_de(void) {
         return 0;
     }
     for (i = 0; i < 5; i++) {
-        if (D_800DF768[i].w[count - 1] >= score) {
+        if (D_800E37B8[i].w[count - 1] >= score) {
             rank = i;
             break;
         }

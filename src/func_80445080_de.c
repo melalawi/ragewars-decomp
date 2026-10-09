@@ -7,10 +7,10 @@
 #include "types.h"
 
 /* Shows one of three fixed volume texts for steps zero, fifteen and minus
- * sixteen from the option byte D_80142222. Other steps are formatted into
+ * sixteen from the option byte D_801462E2. Other steps are formatted into
  * the alternate text with the positive or negative format. */
 
-extern u8 *D_800D3DAC;
+extern u8 *D_800D7DD8;
 extern u8 *D_800D3DB0;
 extern u8 *D_800D3DB4;
 
@@ -22,14 +22,14 @@ extern u8 D_80152789;
 extern char D_800EEE10[];
 extern char D_800EEE18[];
 
-extern char D_800DE7A0[];
-extern char D_800DE7A8[];
+extern char D_800E27E0[];
+extern char D_800E27E8[];
 extern s32 func_80441FE8_de(Item_func_80441FE8_de *);
 extern void func_802658E4_de(char *, char *, s32);
 
 #if defined(VERSION_DE) || defined(VERSION_US_REV1)
-s32 func_80445080_de(Item_func_80441FE8_de *field) {
-    s32 step = (D_80142222 - 0x80) / 8;
+s32 func_80445AB8(Item_func_80441FE8_de *field) {
+    s32 step = (D_801462E2 - 0x80) / 8;
     char *text;
 
     if (step == 0) {
@@ -48,7 +48,7 @@ s32 func_80445080_de(Item_func_80441FE8_de *field) {
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
         field->text = D_800E4084;
 #else
-        field->text = &D_800D3DAC;
+        field->text = &D_800D7DD8;
 #endif
     } else if (step > 0) {
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
@@ -56,9 +56,9 @@ s32 func_80445080_de(Item_func_80441FE8_de *field) {
         text = (char *)field->text[D_80152789];
         func_802658E4_de(text + (func_80441FE8_de(field) - 4), D_800EEE10, step);
 #else
-        field->text = (u8 **)&D_800D3DB8;
+        field->text = (u8 **)&D_800D7DE4;
         text = (char *)*field->text;
-        func_802658E4_de(text + (func_80441FE8_de(field) - 4), D_800DE7A0, step);
+        func_802658E4_de(text + (func_80441FE8_de(field) - 4), D_800E27E0, step);
 #endif
     } else {
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
@@ -66,9 +66,9 @@ s32 func_80445080_de(Item_func_80441FE8_de *field) {
         text = (char *)field->text[D_80152789];
         func_802658E4_de(text + (func_80441FE8_de(field) - 4), D_800EEE18, step);
 #else
-        field->text = (u8 **)&D_800D3DB8;
+        field->text = (u8 **)&D_800D7DE4;
         text = (char *)*field->text;
-        func_802658E4_de(text + (func_80441FE8_de(field) - 4), D_800DE7A8, step);
+        func_802658E4_de(text + (func_80441FE8_de(field) - 4), D_800E27E8, step);
 #endif
     }
     return 0;

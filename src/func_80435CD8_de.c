@@ -10,7 +10,7 @@ enum { START_MATCH = 0x40, RETURN_MENU = 0x3C, WAIT_SHORT = 0x41, WAIT_LONG = 0x
 /* Handles the menu message func_80299A08_de reports after func_8029973C_de: 0x40 clears D_80146894 and
    calls func_802A230C_de and func_8025E384_de; 0x3C clears D_80146894 and calls func_80422F9C_de; 0x41 and
    0x3E wait 0x1F and 0x20 through func_80298368_de. Returns zero. */
-extern s32 D_801427D4;
+extern s32 D_80146894;
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
 extern void func_802A230C_de(void);
@@ -24,12 +24,12 @@ s32 func_80435CD8_de(void) {
     func_8029973C_de();
     switch (func_80299A08_de()) {
     case START_MATCH:
-        D_801427D4 = 0;
+        D_80146894 = 0;
         func_802A230C_de();
         func_8025E384_de();
         return 0;
     case RETURN_MENU:
-        D_801427D4 = 0;
+        D_80146894 = 0;
         func_80422F9C_de();
         return 0;
     case WAIT_SHORT:

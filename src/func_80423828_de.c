@@ -9,7 +9,7 @@
    func_80423080_de. Returns zero. */
 /* The first message this handles and how many it takes: eu-x numbers the messages 4 higher, de 4
    lower and takes only 8, as each cartridge's own bytes show; us, us-rev1 and eu share 0x377 and 10. */
-extern struct Screen_func_80423828_de *D_800E04C8;
+extern struct Screen_func_80423828_de *D_800E4518;
 extern void *jtbl_800DD638[];
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
@@ -47,11 +47,11 @@ s32 func_80423828_de(void) {
     goto *jtbl_800DD638[message];
 reopen:
     func_802A2394_de();
-    func_8043C278_de(D_800E04C8);
-    D_800E04C8->shown = 1;
-    D_800E04C8->timer = -1;
-    func_8040E8D8_de(D_800E04C8->window, 1);
-    func_8040E8D8_de(D_800E04C8->second_window, 1);
+    func_8043C278_de(D_800E4518);
+    D_800E4518->shown = 1;
+    D_800E4518->timer = -1;
+    func_8040E8D8_de(D_800E4518->window, 1);
+    func_8040E8D8_de(D_800E4518->second_window, 1);
     func_80245B28_de();
     goto done;
 code_17:
@@ -60,13 +60,13 @@ code_17:
 retry:
     func_802A2394_de();
     if (func_8042ACD8_de() == 0) {
-        D_800E04C8->mode = 5;
-        D_800E04C8->next_mode = 4;
-        D_800E04C8->timer = 20;
+        D_800E4518->mode = 5;
+        D_800E4518->next_mode = 4;
+        D_800E4518->timer = 20;
     } else {
-        func_8043C278_de(D_800E04C8);
-        D_800E04C8->shown = 1;
-        D_800E04C8->timer = 0;
+        func_8043C278_de(D_800E4518);
+        D_800E4518->shown = 1;
+        D_800E4518->timer = 0;
     }
     goto done;
 code_13:

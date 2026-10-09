@@ -4,11 +4,11 @@
 
 /* Marks the selected record's byte tag and clears the active menu state. */
 extern void func_80264770_de(int);
-extern s32 D_800DE870;
+extern s32 D_800E28C0;
 
 void func_8043E97C_de(void *arg0) {
     Obj8043EB20 *item = arg0;
 
     func_80264770_de(item->unk20->unk4);
-    D_800DE870 = 0;
+    D_800E28C0 = 0;
 }

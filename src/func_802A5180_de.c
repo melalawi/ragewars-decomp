@@ -19,11 +19,11 @@
 
 
 
-extern Gfx *D_8010C574;
-extern f32 D_800FF1F8;
-extern char D_800CC260;
-extern char D_800CDBF0_de;
-extern char D_801428E0;
+extern Gfx *D_80110634;
+extern f32 D_801031F8;
+extern char D_800D14B0;
+extern char D_800D2E60;
+extern char D_801469A0;
 extern void func_80255ED8_de(void *list, Particle *particle);
 extern void func_80255D14_de(void *list, Particle *particle);
 
@@ -43,19 +43,19 @@ void func_802A5180_de(Scene_func_802A5180_de *scene) {
     if (scene->state == 100) {
         return;
     }
-    gDPPipeSync(D_8010C574++);
-    gDPSetCycleType(D_8010C574++, G_CYC_2CYCLE);
-    gDPSetTextureImage(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)&D_800CC260);
-    gDPSetTile(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0);
-    gDPLoadSync(D_8010C574++);
-    gDPLoadBlock(D_8010C574++, G_TX_LOADTILE, 0, 0, 127, 1024);
-    gDPPipeSync(D_8010C574++);
-    gDPSetTile(D_8010C574++, G_IM_FMT_I, G_IM_SIZ_8b, 2, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0);
-    gDPSetTileSize(D_8010C574++, G_TX_RENDERTILE, 0, 0, 60, 60);
-    gDPSetPrimColor(D_8010C574++, 0, 0, 255, 255, 255, 200);
-    gSPDisplayList(D_8010C574++, (u32)&D_800CDBF0_de);
+    gDPPipeSync(D_80110634++);
+    gDPSetCycleType(D_80110634++, G_CYC_2CYCLE);
+    gDPSetTextureImage(D_80110634++, G_IM_FMT_I, G_IM_SIZ_16b, 1, (u32)&D_800D14B0);
+    gDPSetTile(D_80110634++, G_IM_FMT_I, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0);
+    gDPLoadSync(D_80110634++);
+    gDPLoadBlock(D_80110634++, G_TX_LOADTILE, 0, 0, 127, 1024);
+    gDPPipeSync(D_80110634++);
+    gDPSetTile(D_80110634++, G_IM_FMT_I, G_IM_SIZ_8b, 2, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0);
+    gDPSetTileSize(D_80110634++, G_TX_RENDERTILE, 0, 0, 60, 60);
+    gDPSetPrimColor(D_80110634++, 0, 0, 255, 255, 255, 200);
+    gSPDisplayList(D_80110634++, (u32)&D_800D2E60);
     for (i = 0; i < 10; i++) {
-        max = &((func_802077F4_S2 *)(&D_800FF1F8))->unk4;
+        max = &((func_802077F4_S2 *)(&D_801031F8))->unk4;
         list = &scene->lists[i];
         particle = list->active;
         while (particle != 0) {
@@ -70,9 +70,9 @@ void func_802A5180_de(Scene_func_802A5180_de *scene) {
                 func_80255ED8_de(list, particle);
                 func_80255D14_de(&scene->free, particle);
             } else {
-                gSPMatrix(D_8010C574++, (u32)transform, G_MTX_LOAD);
-                gSPVertex(D_8010C574++, (u32)&D_801428E0, 4, 0);
-                gSP2Triangles(D_8010C574++, 0, 1, 2, 0, 2, 3, 0, 0);
+                gSPMatrix(D_80110634++, (u32)transform, G_MTX_LOAD);
+                gSPVertex(D_80110634++, (u32)&D_801469A0, 4, 0);
+                gSP2Triangles(D_80110634++, 0, 1, 2, 0, 2, 3, 0, 0);
             }
             particle = next;
         }

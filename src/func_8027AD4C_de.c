@@ -117,7 +117,7 @@ void func_8027AD4C_de(Shared_Particle *arg0)
   }
   goto block_common;
   block_46:
-  var_a0 = D_80140FA0;
+  var_a0 = D_80145060;
 
   if (var_a0 != ((void *) 0))
   {
@@ -164,7 +164,7 @@ void func_8027AD4C_de(Shared_Particle *arg0)
 #if defined(VERSION_EU)
   func_80272748_de(temp_s0_2, func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12));
 #else
-  func_80272748_de(temp_s0_2, func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12));
+  func_80272748_de(temp_s0_2, func_802B2350((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12));
 #endif
   return;
   block_24:
@@ -176,12 +176,12 @@ void func_8027AD4C_de(Shared_Particle *arg0)
 
   return;
   block_26:
-  func_80228DC4_de(&D_80140F80, arg0);
+  func_80228DC4_de(&D_80145040, arg0);
 
 #if defined(VERSION_EU)
   temp_f0_3 = func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
 #else
-  temp_f0_3 = func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
+  temp_f0_3 = func_802B2350((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
 #endif
   if (temp_f0_3 != 0.0f)
   {
@@ -197,7 +197,7 @@ void func_8027AD4C_de(Shared_Particle *arg0)
 #if defined(VERSION_EU)
     temp_f0_5 = func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
 #else
-    temp_f0_5 = func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
+    temp_f0_5 = func_802B2350((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
 #endif
     if (temp_f0_3 > 0.0f)
     {
@@ -261,7 +261,7 @@ void func_8027AD4C_de(Shared_Particle *arg0)
 #if defined(VERSION_EU)
     temp_f0_9 = func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
 #else
-    temp_f0_9 = func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
+    temp_f0_9 = func_802B2350((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk10);
 #endif
     if (temp_f0_9 != 0.0f)
     {
@@ -277,7 +277,7 @@ void func_8027AD4C_de(Shared_Particle *arg0)
 #if defined(VERSION_EU)
       temp_f0_11 = func_802AD520_eu((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
 #else
-      temp_f0_11 = func_802AD280_de((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
+      temp_f0_11 = func_802B2350((s32) ((Shared_func_8027ADBC_S4 *)arg0->desc)->unk30->unk12);
 #endif
       if (temp_f0_9 > 0.0f)
       {
@@ -312,7 +312,7 @@ void func_8027AD4C_de(Shared_Particle *arg0)
 
 
 
-extern func_8024E8F0_S1 *D_801001F0;
+extern func_8024E8F0_S1 *D_801041F0;
 extern void func_80278D78_de(func_8024E8F0_S1 *state, s32 bits, Actor_func_8027B428_de *actor);
 
 static inline s32 is_group_a(Actor_func_8027B428_de *actor) {
@@ -355,29 +355,29 @@ static inline s32 is_group_c(Actor_func_8027B428_de *actor) {
 void func_8027B428_de(Actor_func_8027B428_de *actor) {
     func_8024E8F0_S1 *owner;
 
-    if (D_801001F0 == 0 || D_801001F0->unk0 != 1) {
+    if (D_801041F0 == 0 || D_801041F0->unk0 != 1) {
         return;
     }
     owner = actor->owner;
     if (owner != 0 && owner->unk0 == 1 && (owner->unk100 & 0x300000)) {
         if (is_group_a(actor)) {
-            func_80278D78_de(D_801001F0, 8, actor);
+            func_80278D78_de(D_801041F0, 8, actor);
         }
         if (is_group_b(actor)) {
-            func_80278D78_de(D_801001F0, 4, actor);
+            func_80278D78_de(D_801041F0, 4, actor);
         }
         if (is_group_c(actor)) {
-            func_80278D78_de(D_801001F0, 0x10, actor);
+            func_80278D78_de(D_801041F0, 0x10, actor);
         }
     } else if (actor->descriptor->field_0 == 1 || actor->descriptor->field_0 == 4) {
         if (is_group_a(actor)) {
-            func_80278D78_de(D_801001F0, 0x80, actor);
+            func_80278D78_de(D_801041F0, 0x80, actor);
         }
         if (is_group_b(actor)) {
-            func_80278D78_de(D_801001F0, 0x40, actor);
+            func_80278D78_de(D_801041F0, 0x40, actor);
         }
         if (is_group_c(actor)) {
-            func_80278D78_de(D_801001F0, 0x100, actor);
+            func_80278D78_de(D_801041F0, 0x100, actor);
         }
     }
 }

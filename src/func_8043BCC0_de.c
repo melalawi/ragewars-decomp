@@ -5,7 +5,7 @@
 
 
 
-extern char *D_800E1990;
+extern char *D_800E59E0;
 extern void func_8029973C_de();
 extern void func_8025DF34_de(s32);
 extern void func_8043ACF0_de(s32, s32);
@@ -17,7 +17,7 @@ s32 func_8043BCC0_de(void *first, void *second, s32 slot, s32 active) {
     func_8029973C_de();
     if (active == 1) {
         index = slot;
-        entry = (struct Entry_func_8043BCC0_de *) (D_800E1990 + index * 0x4D0);
+        entry = (struct Entry_func_8043BCC0_de *) (D_800E59E0 + index * 0x4D0);
         if (entry->nextActive != 0 && entry->state == active) {
             func_8025DF34_de(0xE7B);
             func_8043ACF0_de(index, 1);

@@ -7,13 +7,13 @@
    returns the value it left in D_80153C80. */
 
 
-extern struct func_8022BECC_S2 *D_8014DAC4;
-extern void (*D_8014DA48)(void);
-extern s32 D_8014D9E8;
-extern s32 D_8014D9F0;
+extern struct func_8022BECC_S2 *D_80153D54;
+extern void (*D_80153CD8)(void);
+extern s32 D_80153C78;
+extern s32 D_80153C80;
 
 s32 func_80413994_de(s32 x, s32 y) {
-    D_8014D9E8 = x + y * D_8014DAC4->unk8;
-    D_8014DA48();
-    return D_8014D9F0;
+    D_80153C78 = x + y * D_80153D54->unk8;
+    D_80153CD8();
+    return D_80153C80;
 }

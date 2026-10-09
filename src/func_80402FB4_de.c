@@ -13,10 +13,10 @@
 
 
 extern s32 D_800DE7E8;
-extern s32 *D_8011BE3C;
+extern s32 *D_8011FEFC;
 extern s32 D_8011BDFC;
-extern Record_func_80402FB4_de *D_800DE7E0;
-extern char D_800DCAFC;
+extern Record_func_80402FB4_de *D_800E2830;
+extern char D_800E0B2C;
 
 extern s32 func_8028FE3C_de(s32 *, s32, s32, s32 *);
 extern s32 **func_8025193C_de(s32, s32, s32, s32, s32, s32, s32, char *, s32);
@@ -37,13 +37,13 @@ void func_80402FB4_de(s32 owner, func_8020478C_S1 *obj) {
     if (D_800DE7E8 != 0) {
         id4 = obj->unk4;
         idA = obj->unkA;
-        key = func_8028FE3C_de(D_8011BE3C, D_8011BDFC, 0, &size);
+        key = func_8028FE3C_de(D_8011FEFC, D_8011BDFC, 0, &size);
         if (key == 0) {
             table = 0;
         } else {
-            table = func_8025193C_de(0, key, key, size, 0x33, 0, 0, &D_800DCAFC, 1);
+            table = func_8025193C_de(0, key, key, size, 0x33, 0, 0, &D_800E0B2C, 1);
         }
-        n = *D_8011BE3C - 1;
+        n = *D_8011FEFC - 1;
         entry = (Entry_func_80402FB4_de *)(*table + 2);
         for (i = 0; i < n; i++, entry++) {
             if (entry->id4 == id4 && entry->id0 == idA) {
@@ -51,10 +51,10 @@ void func_80402FB4_de(s32 owner, func_8020478C_S1 *obj) {
             }
         }
         if (found != -1) {
-            D_800DE7E0->owner = owner;
-            D_800DE7E0->id = idA;
-            D_800DE7E0->index = found;
-            D_800DE7E0->pending = 1;
+            D_800E2830->owner = owner;
+            D_800E2830->id = idA;
+            D_800E2830->index = found;
+            D_800E2830->pending = 1;
         }
         func_80253754_de(0, table);
     }

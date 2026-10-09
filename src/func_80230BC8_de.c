@@ -11,7 +11,7 @@
 
 
 extern s32 D_800CA2D8_de;
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 extern s32 D_80140FF8;
 extern void func_80214178_de(void *, void *, s32);
 extern s32 func_80222AA4_de(void *, s16);
@@ -41,7 +41,7 @@ static inline s32 released(void *actor, char *player) {
     char *control;
     s32 latch;
 
-    if (((func_80230BB8_S1 *)(player))->unk11D8 > D_800C2F18_de) {
+    if (((func_80230BB8_S1 *)(player))->unk11D8 > D_800C8008) {
         return 1;
     }
     if ((((func_80230BB8_S2 *)(actor))->unk100 & 0x300000) && ((func_80230BB8_S1 *)(player))->unk1450 != 0) {
@@ -76,11 +76,11 @@ void func_80230BC8_de(void *actor, void *attack) {
         func_8022AF40_de(player);
         func_8022B00C_de(player);
         func_8025DE54_de(0x794, position[0], position[1], position[2], position, -1);
-        func_80274870_de(&((func_80230BB8_S5 *)(attack))->unk128, (f32)D_800CA2D8_de * ((func_802077F4_S2 *)(&D_800C2F18_de))->unk4, 0.4f);
+        func_80274870_de(&((func_80230BB8_S5 *)(attack))->unk128, (f32)D_800CA2D8_de * ((func_802077F4_S2 *)(&D_800C8008))->unk4, 0.4f);
         return;
     }
     func_80274870_de(&((func_80230BB8_S5 *)(attack))->unk128, (f32)D_800CA2D8_de * D_800C2F20_de, 0.4f);
-    ((func_80230BB8_S5 *)(attack))->unk64 -= D_800CD738;
+    ((func_80230BB8_S5 *)(attack))->unk64 -= D_800D2988;
     if (((func_80230BB8_S5 *)(attack))->unk64 <= 0.0f) {
         ((func_80230BB8_S5 *)(attack))->unk64 += ((func_802077F4_S2 *)(&D_800C2F20_de))->unk4;
         if (((func_80230BB8_S1 *)(player))->unk1450 == 0 && D_80140FF8 == 1) {

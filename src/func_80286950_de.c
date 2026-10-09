@@ -9,7 +9,7 @@
 
 
 
-extern unsigned char *D_800E0630;
+extern unsigned char *D_800E4680;
 
 void func_80286950_de(World_func_80286950_de *world) {
     Object_func_80286950_de *object;
@@ -26,10 +26,10 @@ void func_80286950_de(World_func_80286950_de *world) {
     for (i = 0; i < world->count; object++, i++) {
         descriptor = object->descriptor;
         if (descriptor->type == 0xD) {
-            if (D_800E0630 != 0 && (unsigned)(descriptor->kind - 0xD34) < 4) {
+            if (D_800E4680 != 0 && (unsigned)(descriptor->kind - 0xD34) < 4) {
                 switch (descriptor->model) {
                 case 0xD2B:
-                    if (D_800E0630[1] == 0) {
+                    if (D_800E4680[1] == 0) {
                         descriptor->flags |= 4;
                     } else {
                         descriptor->flags &= ~4;
@@ -38,7 +38,7 @@ void func_80286950_de(World_func_80286950_de *world) {
                 case 0xD2C:
                 case 0xD2D:
                 case 0xD2E:
-                    if (D_800E0630[object->descriptor->model - 0xD2A] == 0) {
+                    if (D_800E4680[object->descriptor->model - 0xD2A] == 0) {
                         object->descriptor->flags |= 4;
                         break;
                     }

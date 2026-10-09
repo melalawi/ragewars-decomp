@@ -10,8 +10,8 @@
 
 
 
-extern struct Block_func_804356BC_de *D_800E1454_de;
-extern char D_800FEB00[];
+extern struct Block_func_804356BC_de *D_800E54A4;
+extern char D_80102B00[];
 extern void func_802A0724_de(void *, void *, s32);
 
 
@@ -22,11 +22,11 @@ void func_804356BC_de(s32 arg0) {
     s32 place;
     s32 owner;
 
-    place = D_800E1454_de->places[arg0].x;
-    owner = D_800E1454_de->places[arg0].y;
-    record = &D_800FEB00[arg0 * 400];
+    place = D_800E54A4->places[arg0].x;
+    owner = D_800E54A4->places[arg0].y;
+    record = &D_80102B00[arg0 * 400];
     if (place != -1) {
-        func_802A0724_de(record, D_800E1454_de->players[place].slots[owner], 400);
+        func_802A0724_de(record, D_800E54A4->players[place].slots[owner], 400);
         ((func_80435898_S1 *)(record))->unkC = (s8) owner;
     }
     ((func_80435898_S1 *)(record))->unkD = (s8) place;

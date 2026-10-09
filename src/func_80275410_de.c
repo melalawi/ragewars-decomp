@@ -13,13 +13,13 @@
 
 extern Polygon_func_80275410_de *D_800CD3E8;
 extern Polygon_func_80275410_de *D_800CD3EC;
-extern Vec3 D_80111D50;
+extern Vec3 D_80115E10;
 extern f32 D_80111D54;
 extern s32 D_80111D58;
-extern Vec3 D_80111D60;
+extern Vec3 D_80115E20;
 extern f32 D_80111D64;
 extern s32 D_80111D68;
-extern f32 D_80111D2C;
+extern f32 D_80115DEC;
 extern void func_80271F68_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern void func_80272018_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern void func_8027207C_de(Vec3 *v);
@@ -51,25 +51,25 @@ Vector4f *func_80275410_de(Vector4f *out, Polygon_func_80275410_de *polygon) {
     f32 scale;
 
     if (polygon == 0) {
-        *(s32 *)&D_80111D60 = 0;
+        *(s32 *)&D_80115E20 = 0;
         D_80111D68 = 0;
         D_80111D64 = 1.0f;
     } else if (polygon != D_800CD3EC) {
         if (polygon == 0) {
-            *(s32 *)&D_80111D50 = 0;
+            *(s32 *)&D_80115E10 = 0;
             D_80111D58 = 0;
             D_80111D54 = 1.0f;
         } else if (polygon != D_800CD3E8) {
             edge(&edge0, polygon->v1, polygon->v0);
             edge(&edge1, polygon->v2, polygon->v1);
-            func_80272018_de(&D_80111D50, &edge0, &edge1);
+            func_80272018_de(&D_80115E10, &edge0, &edge1);
         }
         D_800CD3E8 = polygon;
-        normalize_copy(&D_80111D60, &D_80111D50);
+        normalize_copy(&D_80115E20, &D_80115E10);
     }
     one = 1.0f;
     D_800CD3EC = polygon;
-    normal = D_80111D60;
+    normal = D_80115E20;
     up.x = 0.0f;
     up.y = one;
     up.z = 0.0f;
@@ -88,7 +88,7 @@ Vector4f *func_80275410_de(Vector4f *out, Polygon_func_80275410_de *polygon) {
         result.x = axis.x * scale;
         result.y = axis.y * scale;
         result.z = axis.z * scale;
-        D_80111D2C = scale;
+        D_80115DEC = scale;
         result.w = func_802B6560_de(angle);
     }
     *out = result;

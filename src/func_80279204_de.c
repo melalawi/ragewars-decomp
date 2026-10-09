@@ -5,7 +5,7 @@
 
 
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern s32 func_8028BC0C_de(s32 *world, Trigger *trigger);
 extern s32 func_8028C424_de(s32 *world, s32 id);
 extern void func_8028C4B4_de(s32 *world, s32 id);
@@ -25,7 +25,7 @@ void func_80279204_de(Trigger *triggers, s32 count, s32 require, s32 enter, s32 
     Trigger *trigger;
 
     for (trigger = triggers, i = 0; i < count; trigger++, i++) {
-        world = &D_8011BDC8;
+        world = &D_8011FE88;
         usable = 1;
         if (*world != 4) {
             usable = func_8028BC0C_de(world, trigger) == 0;

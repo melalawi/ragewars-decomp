@@ -16,7 +16,7 @@ typedef struct Query Query;
 
 
 extern Shape D_80100170;
-extern EntityTable D_8011BDC8;
+extern EntityTable D_8011FE88;
 extern void func_8023EF00_de(void *, Query *, u8 *);
 
 
@@ -40,7 +40,7 @@ void func_8023F43C_de(char *obj) {
     if (shape->enabled == 0 || shape == &D_80100170) {
         return;
     }
-    table = &D_8011BDC8;
+    table = &D_8011FE88;
     q = &query;
     radius = ((func_8023F42C_S1 *)(obj))->unkC;
     self = *(void **)obj;

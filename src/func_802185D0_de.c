@@ -6,7 +6,7 @@
 #include "gbi.h"
 /* Draws the team selection menu: each listed team icon is placed in the player's viewport, tinted
    with a pulsing shade under the cursor at 0x6C or grey 150 at three quarters alpha otherwise, faded by
-   the menu's opening and the options fade D_8014221E and drawn scaled to the viewport and its size,
+   the menu's opening and the options fade D_801462DE and drawn scaled to the viewport and its size,
    and the "Select Team" title is drawn in white centred on the viewport. Adapted from func_80217630_de
    with 0x1C-byte items, the grey tint and the title added, reusing the scale and position variables
    for the title. */
@@ -23,10 +23,10 @@
 
 
 
-extern u8 D_8014221E;
-extern Gfx *D_8010C574;
-extern s32 D_800DE880_de;
-extern s32 D_800DE884_de;
+extern u8 D_801462DE;
+extern Gfx *D_80110634;
+extern s32 D_800E28D0;
+extern s32 D_800E28D4;
 extern char D_800C2260_de[]; /* "Select Team" */
 extern void func_802AA950_de(s32, s32, s32 *, s32 *);
 extern f32 func_802B6560_de(f32);
@@ -55,7 +55,7 @@ void func_802185D0_de(struct TeamMenu *menu, Item_func_80218F9C_de *items, s32 c
     Item_func_80218F9C_de *item;
 
     titleView = player->view;
-    level = D_8014221E + 0x40;
+    level = D_801462DE + 0x40;
     fade = menu->open * (level < 0x100 ? level : 255.0f);
     item = items;
     while (--count != -1) {
@@ -79,15 +79,15 @@ void func_802185D0_de(struct TeamMenu *menu, Item_func_80218F9C_de *items, s32 c
                 blue = red;
                 alpha *= 0.75f;
             }
-            gDPSetEnvColor(D_8010C574++, red, green, blue, alpha * fade);
+            gDPSetEnvColor(D_80110634++, red, green, blue, alpha * fade);
             func_802AAC28_de(item->icon, 0, x - width * item->height * scaleX * 0.5f,
                           y - height * item->height * scaleY * 0.5f,
                           scaleX * item->height, scaleY * item->height, 1);
         }
         item++;
     }
-    scaleY = titleView->viewport[1] / D_800DE884_de;
-    scaleX = titleView->viewport[0] / D_800DE880_de;
+    scaleY = titleView->viewport[1] / D_800E28D4;
+    scaleX = titleView->viewport[0] / D_800E28D0;
     func_802A84F8_de();
     func_802AAB68_de(0.6f, 0.6f);
     func_802AAB3C_de(0xFF, 0xFF, 0xFF, 0xC8, 0xC8, 0xC8);

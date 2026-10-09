@@ -49,7 +49,7 @@ s16 func_80259B10_de(Vec3 *position, void *listener) {
     } else {
         pan = -fabsf(pan);
     }
-    return pan * D_800C3F08_de + D_800C3F08_de;
+    return pan * D_800C8FF8 + D_800C8FF8;
 }
 
 /* Updates a view's heading from its controller: clears its turn rates, takes the base angles from the controller's preset (or the heading from its default yaw), adds the stick turn derived from func_80274A90_de of the two stick axes, nudges it up for flag 0x40 and down for flag 0x80, caps it at the limit, optionally records the heading and the pitch step over the step count and the current pitch, and finally maps the heading through the 60-entry curve table D_800CB8EC with linear interpolation. The turn is truncated to 16 bits into an int, and the next table index is its own s16. */

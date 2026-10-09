@@ -58,15 +58,15 @@ typedef void (*PoseCallback)(PoseMatrix, Shared_PoseContext *);
 extern char D_800C3930_de;
 
 
-extern s32 D_800CD728;
-extern s32 D_800CD72C;
+extern s32 D_800D2978;
+extern s32 D_800D297C;
 extern Shared_FrameProfile D_80100530;
-extern char D_8011BDC8;
+extern char D_8011FE88;
 
 
 
 
-extern s32 D_80142208_de;
+extern s32 D_801462C8;
 
 extern s32 func_80245798_de(void);
 extern void func_80247F18_de(Shared_PoseActor *, Shared_PosePart *, PoseMatrix, Vec3, Vec3, s32);
@@ -84,7 +84,7 @@ extern void func_80270910_de(PoseMatrix, u8 *);
 extern void func_80270AAC_de(Vector4f *, f32, Vector4f *, Vector4f *);
 extern void func_80271F9C_de(Vec3 *, Vec3 *, f32);
 extern void func_80272D00_de(PoseMatrix, f32, f32, f32, f32);
-extern void func_80272FBC_de(PoseMatrix, PoseMatrix);
+extern void func_8027302C(PoseMatrix, PoseMatrix);
 extern void func_80273448_de(PoseMatrix, f32, f32, f32);
 extern void func_8027347C_de(PoseMatrix, f32, f32, f32);
 extern s32 func_802744D4_de(void);
@@ -116,10 +116,10 @@ static inline void twistPart(Shared_PosePart *part, PoseMatrix cur, s32 n, s32 i
         turn.y = cur[3][1];
         turn.z = cur[3][2];
         axis = part->unk_18;
-        angle = D_800CB480_de[0x19 - part->unk_12] * 0.5f;
+        angle = D_800D06C0[0x19 - part->unk_12] * 0.5f;
         angle *= 0.3f;
         angle *= (n == 5 ? -2.0f : (f32)n);
-        func_80272FBC_de(inv, cur);
+        func_8027302C(inv, cur);
         func_80271F9C_de(&turn, &turn, -1.0f);
         func_80273448_de(inv, turn.x, turn.y, turn.z);
         func_80272D00_de(rotm, angle, axis.x, axis.y, axis.z);
@@ -295,7 +295,7 @@ s32 func_802484B0_de(Shared_PoseActor *actor, void *arg1, s32 arg2) {
     world = 0;
     ctx.parts = func_8028FDB4_de(arg1, 5);
     count = ctx.parts->count;
-    actor->handle = func_802799C0_de(&D_8011BEF0, count);
+    actor->handle = func_802799C0_de(&D_8011FFB0, count);
     if (actor->handle == 0) {
         return 0;
     }
@@ -359,7 +359,7 @@ s32 func_802484B0_de(Shared_PoseActor *actor, void *arg1, s32 arg2) {
                 f.mode = 1;
             }
             if (!(actor->flags & 0x200000) && (kind == 1 || kind == 11)) {
-                if (D_80142208_de & 0x100) {
+                if (D_801462C8 & 0x100) {
                     id0 = 0xC3;
                     id1 = 0xC7;
                     id2 = 0xC2;
@@ -371,10 +371,10 @@ s32 func_802484B0_de(Shared_PoseActor *actor, void *arg1, s32 arg2) {
                     id3 = -1;
                 }
                 id4 = -1;
-                if (D_80142208_de & 0x20) {
+                if (D_801462C8 & 0x20) {
                     id4 = 1;
                 }
-                if (D_80142208_de & 0x80) {
+                if (D_801462C8 & 0x80) {
                     scaled = 1;
                     func_80271F9C_de(&scale, &scale, 0.5f);
                 }
@@ -486,7 +486,7 @@ s32 func_802484B0_de(Shared_PoseActor *actor, void *arg1, s32 arg2) {
                     func_8027347C_de(*cur, 3.0f, 3.0f, 3.0f);
                 }
                 if (scaled) {
-                    func_80272FBC_de(m, *cur);
+                    func_8027302C(m, *cur);
                     func_8027347C_de(m, scale.x, scale.y, scale.z);
                     packMtx(out, m);
                 } else {
@@ -494,11 +494,11 @@ s32 func_802484B0_de(Shared_PoseActor *actor, void *arg1, s32 arg2) {
                 }
             }
             dt = func_802BCF00_de() - D_80100530.start;
-            if (D_800CD728 != D_80100530.frame) {
+            if (D_800D2978 != D_80100530.frame) {
                 f32 last = D_80100530.cur;
                 s32 n = D_80100530.count;
 
-                D_80100530.frame = D_800CD728;
+                D_80100530.frame = D_800D2978;
                 D_80100530.cur = 0.0f;
                 D_80100530.count = 0;
                 D_80100530.prev = last;
@@ -561,7 +561,7 @@ s32 func_802484B0_de(Shared_PoseActor *actor, void *arg1, s32 arg2) {
                 pos = actor->pos;
                 pos.y += actor->unk_70;
                 pos.y += func_8024D284_de(actor) * 0.5f;
-                func_8028C6D4_de(&D_8011BDC8, &pos, actor->unk_140[D_800CD72C]);
+                func_8028C6D4_de(&D_8011FE88, &pos, actor->unk_140[D_800D297C]);
             }
             ret = 1;
             actor->flags |= 0x200;

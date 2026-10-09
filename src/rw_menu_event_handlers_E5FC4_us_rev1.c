@@ -12,7 +12,7 @@ extern s32 func_8042D908_de(void *, s32, s32, s32, s32);
 /* func_8042D958_de reads event/kind/callback triples at stride12,
  * invokes five o32 arguments, returns the callback result, and stops at
  * the first null callback. Original callback relocations omit KSEG0 bias. */
-ResidentEventHandlerEntry D_800E1374_de[9] = {
+ResidentEventHandlerEntry D_800E53C4[9] = {
     {3592, 17, (ResidentEventHandler)((char *)func_8042D690_de - 0x80000000U)},
     {3590, 17, (ResidentEventHandler)((char *)func_8042BB60_de - 0x80000000U)},
     {3587, 17, (ResidentEventHandler)((char *)func_8042D4CC_de - 0x80000000U)},

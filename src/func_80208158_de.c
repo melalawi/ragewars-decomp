@@ -41,7 +41,7 @@
 
 
 
-extern Tutorial D_801427E0;
+extern Tutorial D_801468A0;
 extern char D_801376F8[];
 
 
@@ -91,16 +91,16 @@ void func_80208158_de(Brain *brain) {
         meter = (f32)health / (f32)maximum * 100.0f;
         if (brain->player->views5D8.view5D8_1.record->kind == 14) {
             if (meter == 0.0f) {
-                meter = (3 - D_8014287C) * 33;
+                meter = (3 - D_8014693C) * 33;
             } else {
                 meter *= 0.33333334f;
-                meter += (2 - D_8014287C) * 33;
+                meter += (2 - D_8014693C) * 33;
             }
             if (meter < 0.0f) {
                 meter = 0.0f;
             }
         }
-        tutorial = &D_801427E0;
+        tutorial = &D_801468A0;
         if (tutorial->active != 0) {
             if (brain->player->views5D8.view5D8_1.record->kind == 11) {
                 func_802AA794_de(D_801376F8, (f32)tutorial->timer);

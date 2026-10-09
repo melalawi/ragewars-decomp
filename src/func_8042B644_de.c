@@ -14,7 +14,7 @@
 
 
 
-extern struct Screen_func_8042B644_de *D_800E0F10;
+extern struct Screen_func_8042B644_de *D_800E4F60;
 extern void func_8029973C_de();
 extern void func_8025DF34_de(s32);
 
@@ -35,8 +35,8 @@ s32 func_8042B644_de(void *arg0, void *arg1, void *arg2, s32 event) {
         return 0;
     }
     changed = 0;
-    count = func_8042B154_de(func_8042B294_de(D_800E0F10->category));
-    screen = D_800E0F10;
+    count = func_8042B154_de(func_8042B294_de(D_800E4F60->category));
+    screen = D_800E4F60;
     if (screen->category != 0) {
         next = screen->selection + 1;
         if (next < count) {
@@ -49,7 +49,7 @@ s32 func_8042B644_de(void *arg0, void *arg1, void *arg2, s32 event) {
             limit = 10;
         } else {
             limit = func_8042B154_de(func_8042B294_de(0));
-            screen = D_800E0F10;
+            screen = D_800E4F60;
             next = screen->selection + 1;
             if (next == limit) {
                 goto moved;
@@ -67,12 +67,12 @@ moved:
     }
     func_8025DF34_de(0xE7D);
     func_8042B2E4_de();
-    D_800E0F10->word45C = 0;
-    D_800E0F10->word464 = 0;
-    D_800E0F10->item->value = 0x41;
+    D_800E4F60->word45C = 0;
+    D_800E4F60->word464 = 0;
+    D_800E4F60->item->value = 0x41;
     func_8042A990_de();
-    func_8040E8D8_de(D_800E0F10->left, 0);
-    func_8040E8D8_de(D_800E0F10->right, 1);
-    func_8040E8D8_de(D_800E0F10->marker, 0);
+    func_8040E8D8_de(D_800E4F60->left, 0);
+    func_8040E8D8_de(D_800E4F60->right, 1);
+    func_8040E8D8_de(D_800E4F60->marker, 0);
     return 0;
 }

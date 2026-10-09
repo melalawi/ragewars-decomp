@@ -2,7 +2,7 @@
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_8020EAE0.h"
 /** Reset the float field of each occupied player slot's table entry to the default value. */
-extern char D_801372A4[];
+extern char D_8013B364[];
 
 extern char *func_8020CFE0_de(char *, int);
 
@@ -12,7 +12,7 @@ extern char *func_8020CFE0_de(char *, int);
 
 
 void func_8020EDCC_de(char *arg0) {
-    char *table = D_801372A4;
+    char *table = D_8013B364;
     int i;
     float value;
 

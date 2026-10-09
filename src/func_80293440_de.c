@@ -37,13 +37,13 @@ u8 *func_802934C0_de(u8 *arg0, u8 *arg1)
   return arg0;
 }
 
-extern int D_801427B8;
+extern int D_80146878;
 int func_802934F8_de(void) {
-    return D_801427B8 == 0xD;
+    return D_80146878 == 0xD;
 }
 
 s32 func_80292FC0_de(s32 *, s32);
-extern s32 D_8011BA00;
+extern s32 D_8011FAC0;
 void func_8029350C_de(s32 arg0) {
-    func_80292FC0_de(&D_8011BA00, arg0);
+    func_80292FC0_de(&D_8011FAC0, arg0);
 }

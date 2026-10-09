@@ -1,7 +1,7 @@
 #include "span_1000/code_8022A274.h"
 #include "types.h"
 
-extern void *D_800CB2EC[];
+extern void *D_800D052C[];
 extern s16 D_800CB348_de[];
 
 
@@ -14,7 +14,7 @@ s16 func_8022AB9C_de(void *arg0) {
     s32 temp_v1;
     void *temp_v0;
 
-    temp_v0 = D_800CB2EC[((func_8022AB8C_S1 *)(arg0))->unk62E];
+    temp_v0 = D_800D052C[((func_8022AB8C_S1 *)(arg0))->unk62E];
     if (((func_8022AB8C_S1 *)(arg0))->unk594 == 1) {
         var_v0 = ((func_8022AAC4_S2 *)(temp_v0))->unk20;
     } else {

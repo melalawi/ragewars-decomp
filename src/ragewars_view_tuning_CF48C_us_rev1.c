@@ -8,6 +8,6 @@ struct PlayerViewTuning {
     float pitch_down_scale;
     float pitch_up_scale;
 };
-struct PlayerViewTuning D_800C9648 = {
+struct PlayerViewTuning D_800CE88C = {
     0.200000003f, 0.25f, 0.5f, 0.125f, -1.57079649f, 1.57079649f
 };

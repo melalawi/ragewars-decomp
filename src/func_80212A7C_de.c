@@ -3,7 +3,7 @@
 #include "span_1000/code_802106E0.h"
 #include "types.h"
 
-extern char D_801372A4;
+extern char D_8013B364;
 extern char D_800C20C8_de;
 
 extern void func_8020D014_de(void *arg0);
@@ -42,7 +42,7 @@ void func_80212A7C_de(void *arg0)
     u32 flags;
 
     state = ((func_80212828_S2 *)(((func_8020A028_S3 *)(arg0))->unk1D8))->unk1454;
-    table = &D_801372A4;
+    table = &D_8013B364;
     if (((ObjectState2C *)(state))->unk_C == -1) {
         func_8020D014_de(table);
         func_8020D1FC_de((s32)table);

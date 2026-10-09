@@ -6,7 +6,7 @@
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_166e25c35a8d8f44d88e93e0 */
-extern float D_8014B230[];
+extern float D_801514C0[];
 
 /* unbake published declaration: published_21ed2113d5f3eb8200f5cf26 */
 extern void func_802C021C_de();
@@ -31,16 +31,16 @@ extern void func_802BFF30_de(float *arg0, float *arg1);
 extern void func_802BF514_de();
 
 /* unbake published declaration: published_80f6e9abb07bc8f984152106 */
-extern float D_800C7CC0;
+extern float D_800CCF10;
 
 /* unbake published declaration: published_82e002e86302c921492159c8 */
-extern float D_8014B030[];
+extern float D_801512C0[];
 
 /* unbake published declaration: published_8568150b229a4366bf4e3cfb */
 extern u32 func_802BFE3C_de(void);
 
 /* unbake published declaration: published_87507d630c6f9604eaf2c16e */
-extern float D_8014AE30[];
+extern float D_801510C0[];
 
 /* unbake published declaration: published_877df7ddce48ecbef14f80d5 */
 extern s16 func_802C0044_de(f32 arg0);
@@ -134,7 +134,7 @@ struct ALLoadFilter48_2 {
 };
 
 /* unbake published declaration: published_ce82aadae53deccb1969b496 */
-extern float D_8014B430_de[];
+extern float D_801516C0[];
 
 /* unbake published declaration: published_d4e5c5c3bcda2f502c7797d3 */
 extern float D_800C7CF0_de;
@@ -143,16 +143,16 @@ extern float D_800C7CF0_de;
 extern float D_800C7CF4_de;
 
 /* unbake published declaration: published_e09d227d11c165327e280b9c */
-extern float D_800C7CC8_de;
+extern float D_800CCF18;
 
 /* unbake published declaration: published_e27d56c63c90d27ab582c0dd */
-extern Acmd *func_802BE898_de(void *filter, s16 *outp, s32 byteCount, s32 sampleOffset, Acmd *p);
+extern Acmd *func_802C3988(void *filter, s16 *outp, s32 byteCount, s32 sampleOffset, Acmd *p);
 
 /* unbake published declaration: published_e2f46e253305334af1a7fd59 */
-extern float D_800C7CD4_de;
+extern float D_800CCF24;
 
 /* unbake published declaration: published_f2ddcff8c8b2479a6520374b */
-extern float D_800C7CD0_de;
+extern float D_800CCF20;
 
 /* unbake published declaration: published_fb723e935329b226225dab07 */
 extern float D_800C7CE8_de;

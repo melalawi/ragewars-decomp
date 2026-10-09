@@ -45,21 +45,21 @@
 
 
 
-extern s32 D_8014D4CC;
+extern s32 D_8015375C;
 
 
-extern s32 D_8014D4A0;
+extern s32 D_80153730;
 extern u8 D_8014D4B0_de;
-extern struct { u16 value; } D_8014D4A8_de;
+extern struct { u16 value; } D_80153738;
 extern struct { u16 value; } D_8014D4AA;
 extern struct { u16 value; } D_8014D4AC_de;
 extern struct { u16 value; } D_8014D4AE;
 extern u8 D_8014D4B4[];
 extern s8 D_8014D490;
 
-extern char D_80140F80;
+extern char D_80145040;
 extern char D_0044FA6C[];
-extern char D_8014155C[];
+extern char D_8014561C[];
 
 
 
@@ -79,21 +79,21 @@ s32 func_80408C4C_de(void *unused, Menu_func_80408C4C_de *menu) {
     Profile_func_80408C4C_de *profile;
     s32 i;
 
-    if (D_8014D4CC != 0) {
-        ch = D_800DE878;
+    if (D_8015375C != 0) {
+        ch = D_800E28C8;
     } else {
         ch = menu->slot->unk4;
     }
     if (func_80406178_de(menu, ch, 0) != 0) {
-        D_8014D4F4 = 1;
+        D_80153784 = 1;
         return 1;
     }
-    if (D_8014D4A0 != 0) {
-        player = func_8022A5C0_de(&D_80140F80, menu->slot);
+    if (D_80153730 != 0) {
+        player = func_8022A5C0_de(&D_80145040, menu->slot);
         menu->player = player;
         profile = player->views5D8.view5D8_6.profile;
         profile->flags = D_8014D4B0_de;
-        ((func_80408C78_S1 *)(profile))->unk0 = D_8014D4A8_de.value;
+        ((func_80408C78_S1 *)(profile))->unk0 = D_80153738.value;
         ((func_80408C78_S1 *)(profile))->unk2 = D_8014D4AA.value;
         ((func_80408C78_S1 *)(profile))->unk4 = D_8014D4AC_de.value;
         ((func_80408C78_S1 *)(profile))->unk6 = D_8014D4AE.value;
@@ -105,9 +105,9 @@ s32 func_80408C4C_de(void *unused, Menu_func_80408C4C_de *menu) {
         return 1;
     }
     if (func_80404858_de(ch, D_8014D4FC) == 0) {
-        func_80442574_de(D_8014155C, D_0044EB70, menu->player, menu->slot, menu->prompt);
+        func_80442574_de(D_8014561C, D_0044EB70, menu->player, menu->slot, menu->prompt);
     } else {
-        func_80442574_de(D_8014155C, D_0044EBDC, menu->player, menu->slot, menu->prompt);
+        func_80442574_de(D_8014561C, D_0044EBDC, menu->player, menu->slot, menu->prompt);
     }
     return 1;
 }

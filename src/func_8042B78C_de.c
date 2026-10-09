@@ -15,7 +15,7 @@
 
 
 
-extern struct Screen_func_8042B78C_de *D_800E0F10;
+extern struct Screen_func_8042B78C_de *D_800E4F60;
 extern void func_8029973C_de();
 extern void func_8025DF34_de(s32);
 
@@ -35,7 +35,7 @@ s32 func_8042B78C_de(void *arg0, void *arg1, void *arg2, s32 event) {
     if (event != 1) {
         return 0;
     }
-    screen = D_800E0F10;
+    screen = D_800E4F60;
     changed = 0;
     if (screen->category != 0) {
         changed = 1;
@@ -44,7 +44,7 @@ s32 func_8042B78C_de(void *arg0, void *arg1, void *arg2, s32 event) {
         mirror = 21 - screen->selection;
         if (mirror < func_8042B154_de(func_8042B294_de(0))) {
             changed = 1;
-            D_800E0F10->selection = mirror;
+            D_800E4F60->selection = mirror;
         }
     }
     if (changed != 1) {
@@ -52,18 +52,18 @@ s32 func_8042B78C_de(void *arg0, void *arg1, void *arg2, s32 event) {
     }
     func_8025DF34_de(0xE7D);
     func_8042B2E4_de();
-    D_800E0F10->word45C = 0;
-    D_800E0F10->word464 = 0;
-    D_800E0F10->item->alpha = 0x41;
-    count = func_8042B154_de(func_8042B294_de(D_800E0F10->category));
-    if (D_800E0F10->selection >= count) {
-        D_800E0F10->selection = count - 1;
+    D_800E4F60->word45C = 0;
+    D_800E4F60->word464 = 0;
+    D_800E4F60->item->alpha = 0x41;
+    count = func_8042B154_de(func_8042B294_de(D_800E4F60->category));
+    if (D_800E4F60->selection >= count) {
+        D_800E4F60->selection = count - 1;
     }
     func_8042A990_de();
-    if (D_800E0F10->selection == 0) {
-        func_80439C80_de(D_800E0F10->view, D_800E0F10->category + 0xEA6);
-        func_8040E8D8_de(D_800E0F10->marker, 1);
-        D_800E0F10->marker->x = D_800E0F10->category * 34 + 0x7C;
+    if (D_800E4F60->selection == 0) {
+        func_80439C80_de(D_800E4F60->view, D_800E4F60->category + 0xEA6);
+        func_8040E8D8_de(D_800E4F60->marker, 1);
+        D_800E4F60->marker->x = D_800E4F60->category * 34 + 0x7C;
     }
     return 0;
 }

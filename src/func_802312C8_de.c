@@ -14,7 +14,7 @@
 
 
 extern s32 D_800CA37C;
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 extern s32 D_80140FF8;
 extern void func_80214178_de(void *, void *, s32);
 extern s32 func_80222AA4_de(void *, s16);
@@ -80,7 +80,7 @@ void func_802312C8_de(void *actor, void *attack) {
         return;
     }
     func_80274870_de(&((func_80230BB8_S5 *)(attack))->unk128, (f32)D_800CA37C * D_800C2F60_de, 0.4f);
-    ((func_80230BB8_S5 *)(attack))->unk64 -= D_800CD738;
+    ((func_80230BB8_S5 *)(attack))->unk64 -= D_800D2988;
     if (((func_80230BB8_S5 *)(attack))->unk64 <= 0.0f) {
         ((func_80230BB8_S5 *)(attack))->unk64 = ((func_802077F4_S2 *)(&D_800C2F60_de))->unk4;
         if (((func_80230BB8_S1 *)(player))->unk1450 == 0 && D_80140FF8 == 1) {
@@ -91,7 +91,7 @@ void func_802312C8_de(void *actor, void *attack) {
     }
 }
 
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 extern f32 func_802747A0_de(f32, f32);
 extern void func_80274870_de(f32 *, f32, f32);
 
@@ -129,7 +129,7 @@ void func_80231474_de(Shared_Actor *arg0, WeaponFireState *arg1) {
             }
         }
     }
-    arg1->spinStep += (arg1->spin * D_800CD738) * 2.0f;
+    arg1->spinStep += (arg1->spin * D_800D2988) * 2.0f;
     temp_f1 = arg1->spin;
     temp_v0 = temp_s1->views5E8.view698_34.unk698;
     if (!(temp_f1 < 0.0f
@@ -153,12 +153,12 @@ void func_80231474_de(Shared_Actor *arg0, WeaponFireState *arg1) {
  * down by 0.5 to 1 while type 1 or up by 0.05 to 2 while type 2 and turns the barrel frame at 0x11F8 (of
  * 8); finally the default action for the player's state starts unless func_802301F4_de handled the request
  * or the actor is flagged 0x400. Adapted from func_80231BB0_de with the same static fire check. */
-extern WeaponActionRecord D_800C9698[];
-extern char D_800FEB00[];
-extern u8 D_80142215;
+extern WeaponActionRecord D_800CE8DC[];
+extern char D_80102B00[];
+extern u8 D_801462D5;
 extern s32 D_800D30BC[];
-extern char D_80140F80[];
-extern char D_80140FC8;
+extern char D_80145040[];
+extern char D_80145088;
 extern s32 func_80222AA4_de(void *, s16);
 extern s16 func_8022F96C_de(void *);
 extern s32 func_8022F55C_de(void *, s16);
@@ -183,14 +183,14 @@ static inline s32 can_fire(char *player) {
     if (((SharedPlayer_func_8022A398_de *)(player))->views1450.view1450_0.unk1450 != 0) {
         return 1;
     }
-    if (D_80142215 != 1) {
+    if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F55C_de(&D_800FEB00[((SharedPlayer_func_8022A398_de *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E);
+    ammo = func_8022F55C_de(&D_80102B00[((SharedPlayer_func_8022A398_de *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E);
     if (ammo == 0) {
         func_8025DF34_de(0xD4D);
         if (((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC != 0) {
-            func_80239908_de(&D_80140FC8, ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC[0], D_800E0D44, D_800DCC68, D_80152789), func_8022A5A0_de(D_80140F80, player),
+            func_80239908_de(&D_80145088, ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC[0], D_800E0D44, D_800DCC68, D_80152789), func_8022A5A0_de(D_80145040, player),
                           1.0f);
         }
     }
@@ -201,7 +201,7 @@ void func_80231664_de(void *actor, void *arg1) {
     s32 action;
     s32 single;
     player = ((Shared_Actor *)(actor))->entity;
-    action = D_800C9698[((SharedPlayer_func_8022A398_de *)(player))->views5E8.view650_15.unk650].action;
+    action = D_800CE8DC[((SharedPlayer_func_8022A398_de *)(player))->views5E8.view650_15.unk650].action;
     if (func_80222AA4_de(player, ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E) == 0) {
         if (((WeaponFireState *)(arg1))->mode != 2) {
             goto idle;
@@ -220,8 +220,8 @@ void func_80231664_de(void *actor, void *arg1) {
             if (func_80222AA4_de(player, ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E) == 0) {
                 func_8025DF34_de(0xD4D);
                 if (((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC != 0) {
-                    func_80239908_de(D_80140F80 + 0x48, ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC[0], D_800E0D44, D_800DCC68, (u8)D_80140F80[0x1809]),
-                                  func_8022A5A0_de(D_80140F80, player), 1.0f);
+                    func_80239908_de(D_80145040 + 0x48, ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC[0], D_800E0D44, D_800DCC68, (u8)D_80145040[0x1809]),
+                                  func_8022A5A0_de(D_80145040, player), 1.0f);
                 }
                 ((WeaponFireState *)(arg1))->mode = single;
                 goto spin;

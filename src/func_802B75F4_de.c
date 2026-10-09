@@ -4,12 +4,12 @@
 
 
 
-extern s8 D_801471DC_de;
-extern u8 D_801471E0[];
+extern s8 D_8014D46C;
+extern u8 D_8014D470[];
 
 void func_802B75F4_de(ContPad *data) {
-    u8 *ptr = D_801471E0;
-    u8 *count = &D_801471DC_de;
+    u8 *ptr = D_8014D470;
+    u8 *count = &D_8014D46C;
     ContReadFormat readformat;
     s32 i;
 

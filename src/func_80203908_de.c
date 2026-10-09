@@ -3,8 +3,8 @@
 #include "span_1000/code_802022E0.h"
 #include "types.h"
 
-extern s32 D_8011BDC8;
-extern f32 D_800C1A40_de[];
+extern s32 D_8011FE88;
+extern f32 D_800C6B30[];
 
 extern s32 func_80285F58_de(void *, void *);
 extern s32 func_80214178_de(void *, void *, s32);
@@ -25,14 +25,14 @@ void func_80203908_de(void *arg0, void *arg1) {
 
     record = &((func_80203908_S2 *)(((func_80203908_S1 *)(arg0))->unk18))->unk14;
     if (((func_80203908_S1 *)(arg0))->unkE4 == 0x40C) {
-        ((func_80203908_S3 *)(arg1))->unk124.v0 = D_800C1A40_de[1];
+        ((func_80203908_S3 *)(arg1))->unk124.v0 = D_800C6B30[1];
     } else {
         ((func_80203908_S3 *)(arg1))->unk124.v1 = 0;
     }
     ((func_80203908_S3 *)(arg1))->unk128 = 0;
     ((func_80203908_S3 *)(arg1))->unk64 = ((func_80203908_S4 *)(record))->unk6C;
 
-    if (func_80285F58_de(&D_8011BDC8, arg0) == 0) {
+    if (func_80285F58_de(&D_8011FE88, arg0) == 0) {
         if (*(s32 *)record & 0x1000) {
             flags = ((func_80203908_S1 *)(arg0))->unk100 & ~0x2000;
             flags = flags & ~0x100;

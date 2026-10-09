@@ -12,10 +12,10 @@
 
 extern Polygon_func_80275410_de *D_800CD3E8;
 extern Polygon_func_80275410_de *D_800CD3EC;
-extern Vec3 D_80111D50;
+extern Vec3 D_80115E10;
 extern f32 D_80111D54;
 extern s32 D_80111D58;
-extern Vec3 D_80111D60;
+extern Vec3 D_80115E20;
 extern void func_80271F68_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern void func_80272018_de(Vec3 *out, Vec3 *a, Vec3 *b);
 extern void func_8027207C_de(Vec3 *v);
@@ -46,20 +46,20 @@ s32 func_802757E4_de(Polygon_func_80275410_de *polygon) {
     up.z = 0.0f;
     if (polygon != D_800CD3EC) {
         if (polygon == 0) {
-            *(s32 *)&D_80111D50 = 0;
+            *(s32 *)&D_80115E10 = 0;
             D_80111D54 = *(&D_800C49E0_de + 1);
             D_80111D58 = 0;
         } else if (polygon != D_800CD3E8) {
             edge(&edge0, polygon->v1, polygon->v0);
             edge(&edge1, polygon->v2, polygon->v1);
-            func_80272018_de(&D_80111D50, &edge0, &edge1);
+            func_80272018_de(&D_80115E10, &edge0, &edge1);
         }
         D_800CD3E8 = polygon;
-        normalize_copy(&D_80111D60, &D_80111D50);
+        normalize_copy(&D_80115E20, &D_80115E10);
     }
-    normal = D_80111D60;
+    normal = D_80115E20;
     D_800CD3EC = polygon;
-    if (normal.x * up.x + normal.y * up.y + normal.z * up.z <= D_800C49E8_de) {
+    if (normal.x * up.x + normal.y * up.y + normal.z * up.z <= D_800C9AD8) {
         return 1;
     }
     return 0;

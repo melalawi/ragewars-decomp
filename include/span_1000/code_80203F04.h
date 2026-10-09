@@ -18,7 +18,7 @@ struct func_80204620_S2;
 typedef struct func_80204620_S2 func_80204620_S2;
 
 /* unbake published declaration: published_0e74f669590604cc6241e282 */
-extern float D_800C1A84_de;
+extern float D_800C6B74;
 
 /* unbake published declaration: published_151533815a49420bfd92ed5c */
 extern void func_80204728_de(void *arg0, void *arg1);

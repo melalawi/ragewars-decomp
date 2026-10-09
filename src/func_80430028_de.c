@@ -15,7 +15,7 @@
 
 
 
-extern struct Block_func_80430028_de *D_800E1454_de;
+extern struct Block_func_80430028_de *D_800E54A4;
 extern struct Resource_func_80419E54_de *func_8041B7FC_de(struct Slots_func_8041B7FC_de *, s32);
 extern s32 func_8025DF34_de(s32);
 
@@ -31,7 +31,7 @@ s32 func_80430028_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3) {
 
     index = arg2 & 0xFFFF;
     offset = index * 0xB68;
-    state = ((struct Row_func_80430028_de *)(offset + (char *)D_800E1454_de))->state;
+    state = ((struct Row_func_80430028_de *)(offset + (char *)D_800E54A4))->state;
     if (state == 0xD) {
         return 0;
     }
@@ -39,15 +39,15 @@ s32 func_80430028_de(s32 arg0, s32 arg1, s32 arg2, s32 arg3) {
         return 0;
     }
     if (state == 0xC && arg3 == 1) {
-        sound = func_8041B7FC_de(D_800E1454_de->slots, index);
-        row = (struct Row_func_80430028_de *)(index * 0xB68 + (char *)D_800E1454_de);
+        sound = func_8041B7FC_de(D_800E54A4->slots, index);
+        row = (struct Row_func_80430028_de *)(index * 0xB68 + (char *)D_800E54A4);
         row->phase = 2;
         count = row->count;
         row->timer = 0;
         if (count > 0) {
             row->count = count - 1;
         }
-        base = (char *)D_800E1454_de;
+        base = (char *)D_800E54A4;
         mark = (u8 *)(base + ((((struct Row_func_80430028_de *)(offset + base))->count * 2) +
                               index * 0xB68) + 0xB8C);
         if (*mark == 0) {

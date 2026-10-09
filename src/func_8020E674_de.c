@@ -15,8 +15,8 @@ typedef struct World World;
 
 
 
-extern char D_800FFFD0;
-extern World *D_800FFFCC;
+extern char D_80103FD0;
+extern World *D_80103FCC;
 
 extern f32 func_802B6560_de(f32 arg0);
 extern f32 func_802B7130_de(f32 arg0);
@@ -80,8 +80,8 @@ s32 func_8020E674_de(Actor_func_8020E674_de *actor, f32 scale, f32 lateral) {
 
     elapsed = segment;
 
-    if (func_802444A4_de(actor->instance, current, desired, &D_800FFFD0) != 0 &&
-        (unsigned)(D_800FFFCC->state - 7) >= 2) {
+    if (func_802444A4_de(actor->instance, current, desired, &D_80103FD0) != 0 &&
+        (unsigned)(D_80103FCC->state - 7) >= 2) {
         return 1;
     }
 
@@ -97,8 +97,8 @@ s32 func_8020E674_de(Actor_func_8020E674_de *actor, f32 scale, f32 lateral) {
         desired.y = current.y + delta.y * elapsed + accelY;
         desired.z = current.z + delta.z * elapsed + accelZ;
 
-        if (func_802444A4_de(actor->instance, current, desired, &D_800FFFD0) != 0 &&
-            (unsigned)(D_800FFFCC->state - 7) >= 2) {
+        if (func_802444A4_de(actor->instance, current, desired, &D_80103FD0) != 0 &&
+            (unsigned)(D_80103FCC->state - 7) >= 2) {
             return 1;
         }
 

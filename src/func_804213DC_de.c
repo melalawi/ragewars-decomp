@@ -3,12 +3,12 @@
 #include "types.h"
 #include "span_16E000/code_80420E90.h"
 
-/* Resets the number pad of the screen D_800E03B0_de: shows the item at 0x20, hides item 0x3AB of the
+/* Resets the number pad of the screen D_800E4400: shows the item at 0x20, hides item 0x3AB of the
    window at 0x8, sets the words at 0x2C, 0x28, 0x30 and 0x34 to 1, 8, 0 and 0, then for keys 0 to
    9 takes item 0x3B8 plus the key, sets its alpha to 0x96 and clears its word at 0x38, and
    finishes through func_80421568_de. */
 
-extern NumberPadScreen *D_800E03B0_de;
+extern NumberPadScreen *D_800E4400;
 extern MenuWidget *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(void *, s32);
 extern void func_80421568_de();
@@ -25,44 +25,44 @@ void func_804213DC_de(void) {
     MenuWidget *item;
     s32 key;
 
-    func_8040E8D8_de(D_800E03B0_de->pad, 1);
-    func_8040E8D8_de(func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_939), 0);
-    D_800E03B0_de->mode = 1;
-    D_800E03B0_de->length = 8;
-    D_800E03B0_de->value = 0;
-    D_800E03B0_de->cursor = 0;
+    func_8040E8D8_de(D_800E4400->pad, 1);
+    func_8040E8D8_de(func_8040EC30_de(D_800E4400->window, MENU_8042144C_939), 0);
+    D_800E4400->mode = 1;
+    D_800E4400->length = 8;
+    D_800E4400->value = 0;
+    D_800E4400->cursor = 0;
     for (key = 0; key < 10; key++) {
         switch (key) {
         case 1:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_953);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_953);
             break;
         case 2:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_954);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_954);
             break;
         case 3:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_955);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_955);
             break;
         case 4:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_956);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_956);
             break;
         case 5:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_957);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_957);
             break;
         case 6:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_958);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_958);
             break;
         case 7:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_959);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_959);
             break;
         case 8:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_960);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_960);
             break;
         case 9:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_961);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_961);
             break;
         case 0:
         default:
-            item = func_8040EC30_de(D_800E03B0_de->window, MENU_8042144C_952);
+            item = func_8040EC30_de(D_800E4400->window, MENU_8042144C_952);
             break;
         }
         item->alpha = 0x96;

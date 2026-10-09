@@ -4,7 +4,7 @@
 
 extern void *func_8020C994_de(void *, s32);
 extern void func_8020D220_de(void *, s32);
-extern s32 D_801372A4;
+extern s32 D_8013B364;
 
 
 
@@ -21,7 +21,7 @@ s32 func_8020F614_de(void) {
     void *result;
     s32 count;
 
-    base = &D_801372A4;
+    base = &D_8013B364;
     node = ((func_8020D0CC_S1 *)(base))->unk24;
     count = 0;
     if (node != 0) {

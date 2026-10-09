@@ -10,8 +10,8 @@
 
 
 
-extern s32 D_800CD72C;
-extern char D_801372A4[];
+extern s32 D_800D297C;
+extern char D_8013B364[];
 
 extern void func_80211020_de(Brain_func_802120A8_eu *);
 extern s32 func_802099B4_de(Brain_func_802120A8_eu *, Actor_func_802120A8_eu *);
@@ -73,7 +73,7 @@ void func_802120A8_eu(Actor_func_802120A8_eu *actor) {
         func_80209308_de(brain, &target->pos, 2.0f, func_80209DAC_de(brain));
         if (brain->pattern == 0) {
             dir = func_80210EFC_de(brain->player->yaw - 3.1415927f - 1.5707964f);
-            if (brain->player->slot % 2 == D_800CD72C) {
+            if (brain->player->slot % 2 == D_800D297C) {
                 func_80210964_de(brain->player, dir);
             }
             if (brain->walk[dir] < 100.0f) {
@@ -82,7 +82,7 @@ void func_802120A8_eu(Actor_func_802120A8_eu *actor) {
             brain->player->strafe = -speed;
         } else if (brain->pattern == 1) {
             dir = func_80210EFC_de(brain->player->yaw - 3.1415927f + 1.5707964f);
-            if (brain->player->slot % 2 == D_800CD72C) {
+            if (brain->player->slot % 2 == D_800D297C) {
                 func_80210964_de(brain->player, dir);
             }
             if (brain->walk[dir] < 100.0f) {
@@ -103,7 +103,7 @@ void func_802120A8_eu(Actor_func_802120A8_eu *actor) {
     }
     if (node != brain->node) {
         brain->node = node;
-        if (func_8020D1CC_de(D_801372A4, brain->route, node) == 0) {
+        if (func_8020D1CC_de(D_8013B364, brain->route, node) == 0) {
             brain->target = 0;
             func_80209874_de(brain, 2);
         }

@@ -270,7 +270,7 @@ struct MenuStrings_D4290 {
     char label_hard_266[8]; /* ROM0xD53D4 */
     char label_off_267[4]; /* ROM0xD53DC */
 };
-const struct MenuStrings_D4290 ragewars_menu_strings_D4290_us_rev1 = {
+const struct MenuStrings_D4290 D_800D3690 = {
     "2 health",
     "10 health",
     "15 health",

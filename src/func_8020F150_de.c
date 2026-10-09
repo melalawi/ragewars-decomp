@@ -8,7 +8,7 @@
 
 
 
-extern s32 D_801372A4;
+extern s32 D_8013B364;
 extern void *func_8020C994_de(s32 *, s32);
 extern void func_8020D220_de(s32 *, s32);
 
@@ -25,7 +25,7 @@ s32 func_8020F150_de(s32 *ids) {
     s32 count;
     s32 i;
 
-    base = &D_801372A4;
+    base = &D_8013B364;
     count = 0;
     for (node = ((func_8020F150_S1 *)(base))->unk24; node != 0; node = node->next) {
         record = func_8020C994_de(base, node->id);

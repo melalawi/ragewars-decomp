@@ -4,8 +4,8 @@
 
 
 extern s32 D_80140FF8;
-extern s32 D_800CD72C;
-extern char D_8011BEF0;
+extern s32 D_800D297C;
+extern char D_8011FFB0;
 extern char D_800C4D38_de;
 extern char D_800C4D50_de;
 extern char D_800C4D68_de;
@@ -41,9 +41,9 @@ void func_8027EB2C_de(void *arg0, void *arg1) {
 
     index = 0;
     if (D_80140FF8 == 1) {
-        lookup = (char *)arg0 + ((D_800CD72C << 6) + 0x60);
+        lookup = (char *)arg0 + ((D_800D297C << 6) + 0x60);
     } else {
-        lookup = (void *)func_802799C0_de(&D_8011BEF0, 1);
+        lookup = (void *)func_802799C0_de(&D_8011FFB0, 1);
         if (lookup == 0) {
             return;
         }
@@ -81,7 +81,7 @@ void func_8027EB2C_de(void *arg0, void *arg1) {
                             0, 0, &D_0026D7F4, &D_800C4D68_de, 1);
     if (resource != 0) {
         func_8026DC24_de(resource, (s32)lookup, 0,
-                      (char *)arg0 + (((D_800CD72C * 3) << 3) + 0xE0), 0, -1);
+                      (char *)arg0 + (((D_800D297C * 3) << 3) + 0xE0), 0, -1);
         func_80253754_de(0, resource);
     }
 }

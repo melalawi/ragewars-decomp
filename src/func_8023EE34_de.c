@@ -1,12 +1,12 @@
 #include "span_1000/code_8023D370.h"
-extern void *D_800FFFCC;
+extern void *D_80103FCC;
 
 
 
 
 /** Reset the selected fields of the current global record. */
 void func_8023EE34_de(void) {
-    char *record = (char *)D_800FFFCC;
+    char *record = (char *)D_80103FCC;
     ((func_8023EE24_S1 *)(record))->unk0 = 0;
     ((func_8023EE24_S1 *)(record))->unk14 = -1;
     ((func_8023EE24_S1 *)(record))->unk88 = 0;

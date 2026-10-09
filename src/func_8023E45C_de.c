@@ -13,7 +13,7 @@ extern void *jtbl_800C36A0[];
 
 
 
-extern Output *D_800FFFCC;
+extern Output *D_80103FCC;
 
 void func_8023E45C_de(Input *arg0) {
     {
@@ -29,41 +29,41 @@ void func_8023E45C_de(Input *arg0) {
     }
     do {
     sw_type_1:
-        D_800FFFCC->instance0 = arg0->instance104;
+        D_80103FCC->instance0 = arg0->instance104;
         if (arg0->instance104 != 0) {
-            D_800FFFCC->instanceValue4 = arg0->instance104->field14;
+            D_80103FCC->instanceValue4 = arg0->instance104->field14;
         } else {
-            D_800FFFCC->instanceValue4 = 0;
+            D_80103FCC->instanceValue4 = 0;
         }
-        D_800FFFCC->vec8 = arg0->vec180;
-        D_800FFFCC->field14 = -1;
+        D_80103FCC->vec8 = arg0->vec180;
+        D_80103FCC->field14 = -1;
         break;
     sw_type_2:
         if (arg0->instance104 != 0) {
-            D_800FFFCC->fieldC4 = arg0->instance104->field14;
+            D_80103FCC->fieldC4 = arg0->instance104->field14;
         } else {
-            D_800FFFCC->fieldC4 = 0;
+            D_80103FCC->fieldC4 = 0;
         }
-        D_800FFFCC->vecC8 = arg0->vec180;
-        D_800FFFCC->fieldD4 = arg0->fieldBC;
+        D_80103FCC->vecC8 = arg0->vec180;
+        D_80103FCC->fieldD4 = arg0->fieldBC;
         break;
     sw_type_3:
-        D_800FFFCC->instance0 = arg0->instance104;
-        D_800FFFCC->instanceValue4 = arg0->instance104->field14;
-        D_800FFFCC->vec8 = arg0->vec180;
-        D_800FFFCC->field14 = -1;
+        D_80103FCC->instance0 = arg0->instance104;
+        D_80103FCC->instanceValue4 = arg0->instance104->field14;
+        D_80103FCC->vec8 = arg0->vec180;
+        D_80103FCC->field14 = -1;
         break;
     sw_type_4:
-        D_800FFFCC->instance0 = arg0->instance104;
-        D_800FFFCC->instanceValue4 = arg0->instance104->field14;
-        D_800FFFCC->vec8 = arg0->vec180;
-        D_800FFFCC->field14 = arg0->field108;
-        D_800FFFCC->block18 = arg0->block10C;
+        D_80103FCC->instance0 = arg0->instance104;
+        D_80103FCC->instanceValue4 = arg0->instance104->field14;
+        D_80103FCC->vec8 = arg0->vec180;
+        D_80103FCC->field14 = arg0->field108;
+        D_80103FCC->block18 = arg0->block10C;
         break;
     sw_type_5:
-        D_800FFFCC->instance88 = arg0->instance104;
-        D_800FFFCC->instanceValue8C = arg0->instance104->field14;
-        D_800FFFCC->vec90 = arg0->vec180;
+        D_80103FCC->instance88 = arg0->instance104;
+        D_80103FCC->instanceValue8C = arg0->instance104->field14;
+        D_80103FCC->vec90 = arg0->vec180;
         break;
     sw_type_6:
     sw_type_7:
@@ -73,8 +73,8 @@ void func_8023E45C_de(Input *arg0) {
     
     sw_type_default:;
     } while (0);
-    D_800FFFCC->vecF0 = arg0->vecF8;
-    D_800FFFCC->vecE4 = arg0->vec180;
-    D_800FFFCC->typeFC = arg0->type;
-    D_800FFFCC->field100 = arg0->fieldC0;
+    D_80103FCC->vecF0 = arg0->vecF8;
+    D_80103FCC->vecE4 = arg0->vec180;
+    D_80103FCC->typeFC = arg0->type;
+    D_80103FCC->field100 = arg0->fieldC0;
 }

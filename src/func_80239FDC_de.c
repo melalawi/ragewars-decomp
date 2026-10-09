@@ -5,7 +5,7 @@
 extern s32 func_80245798_de(void);
 extern s32 func_80286728_de(void *arg0, void *arg1);
 extern f32 func_80275DD4_de(s32 arg0, f32 arg1, f32 arg2);
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern s32 D_800CD8D0;
 
 
@@ -25,7 +25,7 @@ void func_80239FDC_de(void *arg0) {
     f32 w;
 
     if (func_80245798_de() != 0) {
-        ((func_80239FCC_S1 *)(arg0))->unk58 = func_80286728_de(&D_8011BDC8, (char *)arg0 + 0x38);
+        ((func_80239FCC_S1 *)(arg0))->unk58 = func_80286728_de(&D_8011FE88, (char *)arg0 + 0x38);
     }
     object = ((func_80239FCC_S1 *)(arg0))->unk58;
     x = ((func_80239FCC_S1 *)(arg0))->unk38;

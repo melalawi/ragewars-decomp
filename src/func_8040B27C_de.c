@@ -7,23 +7,23 @@
    cases lay outside the interval; its case bodies are inside it. */
 
 
-extern u32 D_8014D4F8;
+extern u32 D_80153788;
 extern void *jtbl_800DCF98[];
-extern char D_800D37F8[];
+extern char D_800D7824[];
 extern char D_800D37FC[];
 
 s32 func_8040B27C_de(struct Field_func_8040A4A0_de *field) {
     static void *labels[0] __attribute__((section(".sdata"))) = {
         &&case_1
     };
-    u32 state = D_8014D4F8;
+    u32 state = D_80153788;
 
     if (state >= 16) {
         goto state_other;
     }
     goto *jtbl_800DCF98[state];
 state_other:
-    field->text = D_800D37F8;
+    field->text = D_800D7824;
     goto done;
 case_1:
     field->text = D_800D37FC;

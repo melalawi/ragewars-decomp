@@ -72,7 +72,7 @@ s32 func_8028C568_de(void *arg0, void *arg1) {
     return flag;
 }
 
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 extern void func_80278C10_de(void *);
 extern void func_80255ED8_de(void *, s32);
 extern s32 func_80255CB8_de(void *, s32);
@@ -103,7 +103,7 @@ void func_8028C60C_de(void *arg0) {
             next = ((func_8028C5E8_S2 *)(node))->unk4;
             expired = remove;
             if (((ModelDef *)(object))->colour & 2) {
-                value = ((func_8028C5E8_S2 *)(node))->unkC - D_800CD738;
+                value = ((func_8028C5E8_S2 *)(node))->unkC - D_800D2988;
                 ((func_8028C5E8_S2 *)(node))->unkC = value;
                 if (value <= zero) {
                     expired = 1;
@@ -123,7 +123,7 @@ void func_8028C60C_de(void *arg0) {
     }
 }
 
-/* Produces an object's placement: when one of its tracks has an active second node and D_800D2850 is set, it samples the track through func_802897B4_de and resolves the placement with func_80289970_de, and otherwise copies the default placement D_800D0EE0. */
+/* Produces an object's placement: when one of its tracks has an active second node and D_800D2850 is set, it samples the track through func_802897B4_de and resolves the placement with func_80289970_de, and otherwise copies the default placement D_800CBC90. */
 
 
 
@@ -156,7 +156,7 @@ void func_8028C6D4_de(Owner_func_8028C6D4_de *owner, s32 time, Block24 *out) {
     Sample sample;
     s32 segment;
 
-    if (!has_active(owner) || D_800CD600 == 0) {
+    if (!has_active(owner) || D_800D2850 == 0) {
         *out = D_800CBC90;
     } else {
         func_802897B4_de(owner, time, &sample, &segment);
@@ -193,7 +193,7 @@ Entry_func_8028C108_de *func_8028C7E0_de(World_func_8028C7E0_de *world, s32 id) 
 
 
 
-extern char D_80140F80;
+extern char D_80145040;
 extern Player *func_8022A414_de(void *list);
 #ifdef VERSION_EU
 extern Player *func_8022A414_de(void *list);
@@ -211,9 +211,9 @@ Player *func_8028C834_de(World_func_8028C834_de *world) {
     s32 i;
 
 #ifdef VERSION_EU
-    player = func_8022A414_de(&D_80140F80);
+    player = func_8022A414_de(&D_80145040);
 #else
-    player = func_8022A414_de(&D_80140F80);
+    player = func_8022A414_de(&D_80145040);
 #endif
     best = 9999999;
     nearest = 0;

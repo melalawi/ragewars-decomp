@@ -3,12 +3,12 @@
 
 /* Calls func_80264788_de on its second argument, then func_8044D528_de on D_8011FE88 with D_8013B2C8
    and 2. */
-extern char D_8011BDC8[];
-extern s32 D_80137208;
+extern char D_8011FE88[];
+extern s32 D_8013B2C8;
 extern void func_80264788_de(void *);
 extern void func_8044D528_de(void *, s32, s32);
 
 void func_80409F6C_de(void *unused, void *object) {
     func_80264788_de(object);
-    func_8044D528_de(D_8011BDC8, D_80137208, 2);
+    func_8044D528_de(D_8011FE88, D_8013B2C8, 2);
 }

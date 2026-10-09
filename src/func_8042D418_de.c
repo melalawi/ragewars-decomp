@@ -6,7 +6,7 @@
 
 void func_8040E8D8_de(s32, s32);                            /* extern */
 s32 func_8040EC30_de(s32, s32);                        /* extern */
-extern MenuPanelRoot *D_800E1370;
+extern MenuPanelRoot *D_800E53C0;
 
 #if defined(VERSION_DE)
 enum { ITEM0 = 616, ITEM1 = 615, ITEM2 = 614, ITEM3 = 613 };
@@ -21,7 +21,7 @@ void func_8042D418_de(s32 arg0) {
     s32 var_a1;
     s32 var_s0;
 
-    temp_s1 = func_8040EC30_de(D_800E1370->window, arg0 & 0xFFFF);
+    temp_s1 = func_8040EC30_de(D_800E53C0->window, arg0 & 0xFFFF);
     var_s0 = 0;
     do {
         switch(var_s0) {

@@ -1,7 +1,7 @@
 #include "span_1000/code_80299DB4.h"
 #include "types.h"
 
-extern s32 D_80146E30;
+extern s32 D_8014D0B0;
 
 
 
@@ -18,7 +18,7 @@ void func_8029AA34_de(void) {
         do {
             idx = var_a0 + var_a1 * 4;
             var_a0 += 1;
-            ptr = D_80146E30 + idx;
+            ptr = D_8014D0B0 + idx;
             ((func_8029BA34_S1 *)(ptr))->unkC04 = 0;
         } while (var_a0 < 4);
         var_a1 += 1;

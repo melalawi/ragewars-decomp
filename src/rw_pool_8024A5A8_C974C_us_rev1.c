@@ -2,4 +2,4 @@
  * US rev1 ROM 0xc974c-0xc9754; original .float/.double directives.
  */
 const float D_800C3A5C_de = 0.5f;
-const float D_800C3A60_de = 0.1000000015f;
+const float D_800C8B50 = 0.1000000015f;

@@ -15,11 +15,11 @@
 
 
 
-extern f32 D_800C3A48_de[];
+extern f32 D_800C8B38[];
 
 extern char D_8011D8D0;
-extern s32 D_800CD72C;
-extern s32 D_800CC390;
+extern s32 D_800D297C;
+extern s32 D_800D15E0;
 
 extern void func_8024AA18_de(void *arg0, void *arg1, void *arg2);
 extern void func_8026DA4C_de();
@@ -44,7 +44,7 @@ static inline void func_8024A1C0_spawn(Actor_func_8024A1D0_de *actor, Lookup *lo
         if ((*node != 0) &&
             (*func_8028FDB4_de(func_8028FDB4_de(node, 0), 0) & 0x8000)) {
             position = actor->position0;
-            position.y += func_8024D284_de(actor) * D_800C3A48_de[1];
+            position.y += func_8024D284_de(actor) * D_800C8B38[1];
             func_802800C0_de(&D_8011D8D0, actor, actor, 0, 0, 0x94,
                           actor->position1, actor->rotation, position, 0, -1, 0);
             effect = func_802830B8_de(&D_8011D8D0);
@@ -69,9 +69,9 @@ void func_8024A1D0_de(Actor_func_8024A1D0_de *actor, void *arg1, Lookup *lookup)
     if (lookup->unk0 != 0) {
         one = 1;
         func_8026DA4C_de((s32)lookup->value, ((func_8024A1C0_S1 *)(actor))->unkB4, one,
-                      (char *)actor + ((((D_800CD72C << one) + D_800CD72C) << 3) + 0x140),
+                      (char *)actor + ((((D_800D297C << one) + D_800D297C) << 3) + 0x140),
                       0, ((func_8024A1C0_S1 *)(actor))->unk3);
         func_8024A1C0_spawn(actor, lookup);
     }
-    D_800CC390 = 0;
+    D_800D15E0 = 0;
 }

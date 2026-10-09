@@ -8,7 +8,7 @@
 
 
 
-extern GlobalState D_801427E0;
+extern GlobalState D_801468A0;
 
 extern struct Shape_func_8021A2D4_de_2 D_801427FC;
 extern void func_80264854_de(s32 arg0);
@@ -21,7 +21,7 @@ void func_8022A748_de(void *arg0) {
     GlobalState *state;
     Node_func_8022A748_de *node;
 
-    state = &D_801427E0;
+    state = &D_801468A0;
     if ((state->field1C != 0) || (state->field20 != 0)) {
         return;
     }

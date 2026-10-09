@@ -2,14 +2,14 @@
 #include "types.h"
 
 extern f32 D_800C4960_de[2];
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 
 void func_80274870_de(f32 *value, f32 target, f32 rate) {
     f32 current;
     f32 next;
 
     current = *value;
-    next = (target - current) * rate * D_800CD738;
+    next = (target - current) * rate * D_800D2988;
     if (rate == D_800C4960_de[1]) {
         *value = target;
     } else if (current < target) {

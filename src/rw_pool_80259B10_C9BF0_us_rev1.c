@@ -3,4 +3,4 @@
  */
 const float D_800C3F00_de = 100.0f;
 const float D_800C3F04_de = 1.0f;
-const float D_800C3F08_de = 64.0f;
+const float D_800C8FF8 = 64.0f;

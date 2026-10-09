@@ -5,7 +5,7 @@
 
 
 
-extern Player_func_8041EAC4_de D_801422D8[];
+extern Player_func_8041EAC4_de D_80146398[];
 
 s32 func_8041EAC4_de(void) {
     s32 count;
@@ -14,7 +14,7 @@ s32 func_8041EAC4_de(void) {
     Player_func_8041EAC4_de *player;
 
     count = 0;
-    player = D_801422D8;
+    player = D_80146398;
     for (i = 0; i < 4; i++) {
         if (player[i].active == 1) {
             count++;

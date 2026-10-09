@@ -34,8 +34,8 @@
 
 
 
-extern char D_8010AEB8[];
-extern char D_8010B328[];
+extern char D_8010EEB8[];
+extern char D_8010F328[];
 extern char D_800C9684[];
 
 extern void func_8026367C_de(char *, char *);
@@ -55,10 +55,10 @@ void func_80449EE4_de(char *player, s32 slot, Record_func_80449EE4_de *record) {
     ((SharedPlayer_func_80449EE4_de *)player)->views1C.view5D0_44.f5D0 = 0;
     ((SharedPlayer_func_80449EE4_de *)player)->views1450.view1450_5.f1450 = computer;
     if (computer != 0) {
-        func_8026367C_de(player + 0x688, D_8010AEB8);
+        func_8026367C_de(player + 0x688, D_8010EEB8);
         ((SharedPlayer_func_80449EE4_de *)player)->views1C.view5D4_48.f5D4 = record->slot;
     } else {
-        func_8026367C_de(player + 0x688, D_8010B328 + slot * 0x224);
+        func_8026367C_de(player + 0x688, D_8010F328 + slot * 0x224);
         ((SharedPlayer_func_80449EE4_de *)player)->views1C.view5D4_48.f5D4 = slot;
     }
     ((SharedPlayer_func_80449EE4_de *)player)->views5D8.view5D8_8.f5D8 = (s32)record;

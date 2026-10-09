@@ -9,11 +9,11 @@
 #include "math_helpers.h"
 
 /* Draws an actor's ground shadow: probes the ground under the actor through func_80243A90_de into D_801041F0, and when ground is found tilts the shadow model from D_8011FFB0 to the ground normal, scales it by the actor's size shrinking with height above the ground, fades it with height (and with lost health for actors flagged 1), places it on the ground and draws it through func_8026992C_de between render-mode commands. */
-extern char D_8011BEF0;
+extern char D_8011FFB0;
 extern char D_80100030;
-extern Ground D_801001F0;
-extern f32 D_80111D2C;
-extern Gfx *D_8010C574;
+extern Ground D_801041F0;
+extern f32 D_80115DEC;
+extern Gfx *D_80110634;
 extern void *func_802799C0_de(void *, s32);
 extern s32 func_80243A90_de(Instance_func_8027E784_de *, Vec3, void *);
 extern void func_80271818_de(Vector4f *, Vec3 *);
@@ -44,7 +44,7 @@ void func_8027E784_de(Actor_func_8027E784_de *actor) {
     f32 floor;
     f32 shrink;
 
-    model = func_802799C0_de(&D_8011BEF0, 1);
+    model = func_802799C0_de(&D_8011FFB0, 1);
     if (model == 0) {
         return;
     }
@@ -57,13 +57,13 @@ void func_8027E784_de(Actor_func_8027E784_de *actor) {
     point.y = probe.position.y - 102400.0f;
     point.z = probe.position.z;
     func_80243A90_de(&probe, point, &D_80100030);
-    ground = &D_801001F0;
+    ground = &D_801041F0;
     if (ground->found == 0) {
         return;
     }
     angle = 0.78539824f;
     func_80271818_de(&tilt, &ground->normal);
-    roll.x = D_80111D2C = func_802B7130_de(angle);
+    roll.x = D_80115DEC = func_802B7130_de(angle);
     roll.y = 0.0f;
     roll.z = 0.0f;
     roll.w = func_802B6560_de(angle);
@@ -93,16 +93,16 @@ void func_8027E784_de(Actor_func_8027E784_de *actor) {
     func_80273448_de(matrix, point.x, point.y, point.z);
     func_8027027C_de(matrix, model);
     {
-        Gfx *cmd = D_8010C574++;
+        Gfx *cmd = D_80110634++;
         gDPPipeSync(cmd);
-        cmd = D_8010C574++;
+        cmd = D_80110634++;
         gDPSetCycleType(cmd, G_CYC_2CYCLE);
     }
     func_8026992C_de(model, 1, (u32)alpha);
     {
-        Gfx *cmd = D_8010C574++;
+        Gfx *cmd = D_80110634++;
         gDPPipeSync(cmd);
-        cmd = D_8010C574++;
+        cmd = D_80110634++;
         gDPSetCycleType(cmd, G_CYC_1CYCLE);
     }
 }

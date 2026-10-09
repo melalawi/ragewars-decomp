@@ -10,9 +10,9 @@
 
 
 
-extern struct Screen_func_8042D690_de *D_800E1370;
-extern s32 D_800DE890;
-extern s32 D_8014DD90[];
+extern struct Screen_func_8042D690_de *D_800E53C0;
+extern s32 D_800E28E0;
+extern s32 D_80154020[];
 
 extern void *func_8040EC30_de(s32, s32);
 extern s32 func_8040EBD0_de(void *);
@@ -35,9 +35,9 @@ s32 func_8042D690_de(s32 context) {
     s32 taken;
     s32 message;
 
-    if (D_800DE890 <= 0) {
-        if (D_800E1370->open == 0) {
-            D_800E1370->open = 1;
+    if (D_800E28E0 <= 0) {
+        if (D_800E53C0->open == 0) {
+            D_800E53C0->open = 1;
             if (func_8040EBD0_de(func_8040EC30_de(context, CONFIRM_MESSAGE)) == 0) {
                 message = CONFIRM_MESSAGE;
             } else {
@@ -46,19 +46,19 @@ s32 func_8042D690_de(s32 context) {
             func_802991D4_de(message);
             func_802A2360_de();
         }
-        choice = &D_8014DD90[1];
+        choice = &D_80154020[1];
         taken = choice[0];
         if (taken == 1) {
             choice[0] = 0;
             if (choice[-1] != -1) {
-                func_8040E8D8_de(D_800E1370->object, 0);
-                D_800E1370->choice = 0;
+                func_8040E8D8_de(D_800E53C0->object, 0);
+                D_800E53C0->choice = 0;
                 func_8029973C_de();
                 func_80298368_de(choice[-1]);
                 return 0;
             }
-            func_8040E8D8_de(D_800E1370->object, 1);
-            D_800E1370->choice = taken;
+            func_8040E8D8_de(D_800E53C0->object, 1);
+            D_800E53C0->choice = taken;
         }
     }
     return 0;

@@ -5,7 +5,7 @@
 #include "shared/particle_attachment.h"
 
 /* Transform the measured attachment position and direction into the target frame. */
-extern ParticleAttachmentState D_801001F0;
+extern ParticleAttachmentState D_801041F0;
 
 
 
@@ -29,12 +29,12 @@ void func_80283C1C_de(void *arg0, f32 *arg1, s32 arg2) {
 
     actor = arg0;
     mode = arg2;
-    current = D_801001F0.current;
+    current = D_801041F0.current;
     if (arg1 != 0) {
         func_8026EF58_de(matrix, arg1);
     } else {
         func_80270910_de(source,
-            &current->drawMatrices[D_801001F0.frame]);
+            &current->drawMatrices[D_801041F0.frame]);
         func_8026EF58_de(matrix, source);
     }
     matrix_ptr = matrix;

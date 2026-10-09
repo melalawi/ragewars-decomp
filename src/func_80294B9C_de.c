@@ -11,16 +11,16 @@ void func_804037D4_de(void *);                            /* extern */
 s32 func_80442A28_de(void *);                             
 
 
-extern func_80294BB0_S1 D_8014155C;
+extern func_80294BB0_S1 D_8014561C;
 extern s32 D_80142868;
 
 s32 func_80294B9C_de(func_80293C20_S1 *arg0) {
     s32 var_v0;
     Prompt *temp_a0;
 
-    if ((func_80442A28_de(&D_8014155C) == 0) && (func_80245798_de() != 0)) {
+    if ((func_80442A28_de(&D_8014561C) == 0) && (func_80245798_de() != 0)) {
         if (func_80245B0C_de() == 0x78) {
-            temp_a0 = &D_8014155C.unk1284;
+            temp_a0 = &D_8014561C.unk1284;
             if (temp_a0->unk88 == 0) {
                 if (arg0->unk26DD4 == 0) {
                     temp_a0->unk88 = 1;

@@ -10,26 +10,26 @@
 
 
 extern s32 D_800DF280;
-extern s32 D_800DF294;
-extern Gfx *D_8010C574;
+extern s32 D_800E32E4;
+extern Gfx *D_80110634;
 
 static inline void beginFrame(void) {
     Gfx *g;
 
-    D_800DF294 = 1;
-    g = D_8010C574++;
+    D_800E32E4 = 1;
+    g = D_80110634++;
     gDPPipeSync(g);
 }
 
 void func_804190C4_de(s32 mode) {
-    if (D_8014DCD8 == 0) {
+    if (D_80153F68 == 0) {
         mode = 14;
     }
     if (mode != D_800DF280) {
         D_800DF280 = mode;
-        if (D_800DF294 == 0) {
+        if (D_800E32E4 == 0) {
             beginFrame();
         }
-        if (mode == 13) gSPTexture(D_8010C574++, 32768, 32768, 0, 0, G_ON) else if (mode == 14) gSPTexture(D_8010C574++, 32768, 32768, 0, 0, G_OFF);
+        if (mode == 13) gSPTexture(D_80110634++, 32768, 32768, 0, 0, G_ON) else if (mode == 14) gSPTexture(D_80110634++, 32768, 32768, 0, 0, G_OFF);
     }
 }

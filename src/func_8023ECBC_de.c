@@ -2,7 +2,7 @@
 #include "span_1000/code_8023D370.h"
 #include "types.h"
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern void *func_8028B2F8_de(void *, u16 *);
 
 
@@ -25,7 +25,7 @@ void func_8023ECBC_de(void *arg0, u16 *arg1)
   ((func_8023EBEC_S1 *)(o))->unk3C = temp_v1_2 & 0xFFFC7FFF;
   if (temp_v1_2 & 0x7000)
   {
-    temp_v0 = func_8028B2F8_de(&D_8011BDC8, arg1);
+    temp_v0 = func_8028B2F8_de(&D_8011FE88, arg1);
     if (temp_v0 != 0)
     {
       if ((((func_8023ECAC_S2 *)(temp_v0))->unk44) & 0x400000)

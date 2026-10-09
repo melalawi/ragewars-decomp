@@ -7,7 +7,7 @@
 
 
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 extern void func_80267198_de(void *, void *, s32, Triple, struct Shape_func_802764D4_de_2);
 extern void func_80285DB0_de(void *, void *, s32);
 
@@ -20,5 +20,5 @@ void func_80204F10_de(void *arg0) {
 
     pair.field_0 = 0;
     func_80267198_de(arg0, arg0, 7, ((func_80204EA8_S1 *)(arg0))->unk8, pair);
-    func_80285DB0_de(&D_8011BDC8, arg0, 0);
+    func_80285DB0_de(&D_8011FE88, arg0, 0);
 }

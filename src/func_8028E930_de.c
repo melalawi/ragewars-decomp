@@ -25,7 +25,7 @@ extern void func_802BA1B0_de(s32 arg0);
 
 extern s32 D_800CD70C;
 
-extern s32 D_800DE888_de;
+extern s32 D_800E28D8;
 extern char D_800D47B0;
 extern char D_800D4530;
 
@@ -66,7 +66,7 @@ event_29a:
         if (D_800CD70C <= 0) {
             func_802BA870_de(D_800C5350_de);
             resource = &D_800D47B0;
-            if (D_800DE888_de == 0) {
+            if (D_800E28D8 == 0) {
                 resource = &D_800D4530;
             }
             func_802BA6B0_de(resource);

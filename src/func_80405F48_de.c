@@ -20,7 +20,7 @@ typedef struct Shared_PakMenu {
 #include "span_16E000/code_80403BCC.h"
 #include "span_16E000/code_80405DC0.h"
 
-extern s32 D_8014D4CC;
+extern s32 D_8015375C;
 
 extern char *D_800D36E0;
 
@@ -43,8 +43,8 @@ void func_80405F48_de(Shared_PakMenu *menu) {
     s32 exists;
     s32 size;
 
-    if (D_8014D4CC != 0) {
-        ch = D_800DE878;
+    if (D_8015375C != 0) {
+        ch = D_800E28C8;
     } else {
         ch = menu->owner->channel;
     }

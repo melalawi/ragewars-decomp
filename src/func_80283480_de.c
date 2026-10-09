@@ -7,7 +7,7 @@
 
 
 
-extern Triple D_801002C8;
+extern Triple D_801042C8;
 extern Params D_80100290;
 extern char D_8011D8D0;
 
@@ -22,7 +22,7 @@ void func_80283480_de(void *arg0, s32 arg1) {
     Triple pos;
 
     if ((*((func_80283454_S1 *)(arg0))->unk118 & 0x10) != 0) {
-        pos = D_801002C8;
+        pos = D_801042C8;
     } else {
         pos = ((func_80283454_S1 *)(arg0))->unk1C;
     }

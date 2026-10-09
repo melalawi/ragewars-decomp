@@ -3,7 +3,7 @@
 #include "device_io.h"
 
 extern __OSViContext_func_802BA910_de D_800D43B0[2];
-extern __OSViContext_func_802BA910_de *D_800D4410;
+extern __OSViContext_func_802BA910_de *D_800D8440;
 extern __OSViContext_func_802BA910_de *D_800D4414;
 extern OSViMode_func_802BA910_de D_800D4440;
 extern OSViMode_func_802BA910_de D_800D4490;
@@ -18,7 +18,7 @@ void func_802BA210_de(void)
 
     func_802A001C_de(contexts, 0, sizeof(D_800D43B0));
     tv_type = D_80000300;
-    D_800D4410 = &contexts[0];
+    D_800D8440 = &contexts[0];
     D_800D4414 = &contexts[1];
     contexts[1].retraceCount = 1;
     contexts[0].retraceCount = 1;

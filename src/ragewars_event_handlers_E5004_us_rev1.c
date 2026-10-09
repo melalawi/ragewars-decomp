@@ -10,7 +10,7 @@ extern s32 func_80421E70_eu(void *, s32, s32, s32, s32);
  * advances 12bytes, and stops at a null handler.
  * Callback relocations retain the original KSEG0-bias-free encoding.
  * ROM E5004..E504C. */
-ResidentEventHandlerEntry D_800E03B4[6] = {
+ResidentEventHandlerEntry D_800E4404[6] = {
     {3592, 28, (ResidentEventHandler)((char *)func_80421884_de - 0x80000000U)},
     {3590, 28, (ResidentEventHandler)((char *)func_80420E20_de - 0x80000000U)},
     {3587, 28, (ResidentEventHandler)((char *)func_80421854_de - 0x80000000U)},

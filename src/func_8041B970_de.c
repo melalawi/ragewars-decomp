@@ -8,8 +8,8 @@
 
 
 
-extern s32 D_800DF450;
-extern s32 D_800DF454;
+extern s32 D_800E34A0;
+extern s32 D_800E34A4;
 #if defined(VERSION_DE)
 extern Handler802A2B50 D_800DF458;
 #elif defined(VERSION_EU)
@@ -58,9 +58,9 @@ D_800E34A8
 ;
         offset = 0;
         do {
-            if (((struct Shape_typemap_3 *) (((char *) (&D_800DF450)) + offset))->field_0 == arg1) {
+            if (((struct Shape_typemap_3 *) (((char *) (&D_800E34A0)) + offset))->field_0 == arg1) {
                 actor_kind = ((struct func_8021C9B4_S3 *) ((char *) arg0))->unkC;
-                table_kind = ((struct Shape_typemap_3 *) (((char *) (&D_800DF454)) + offset))->field_0;
+                table_kind = ((struct Shape_typemap_3 *) (((char *) (&D_800E34A4)) + offset))->field_0;
                 if ((table_kind == actor_kind) || (table_kind == wildcard)) {
                     return (*(Handler802A2B50 *)entry)(arg0, arg1, arg2, arg3, arg4);
                 }

@@ -65,7 +65,7 @@ struct Ray {
 };
 
 /* unbake published declaration: published_16c0f5387f2184cbb7e6da9b */
-extern float D_800C36D0_de;
+extern float D_800C87C0;
 
 struct func_8023E844_S1;
 /* unbake published declaration: published_1b278e70fbc88f78d362bc31 */
@@ -205,7 +205,7 @@ struct func_8023EBC4_S1;
 typedef struct func_8023EBC4_S1 func_8023EBC4_S1;
 
 /* unbake published declaration: published_6a9649f2c1fc52691dbcf38a */
-extern float D_800CB408_de;
+extern float D_800D0648;
 
 struct Dst;
 /* unbake published declaration: published_6d711e2d81dfbf8a51257f40 */
@@ -412,7 +412,7 @@ struct Input;
 typedef struct Input Input;
 
 /* unbake published declaration: published_db79760f3c95c410fceddd2e */
-extern float D_800C36C4_de;
+extern float D_800C87B4;
 
 struct func_8023ED54_S2;
 /* unbake published declaration: published_df448dec3efe57c4ed0f00c7 */

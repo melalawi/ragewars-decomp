@@ -10,8 +10,8 @@
 
 
 
-extern s16 D_8014D97C;
-extern u16 *D_8014D9BC;
+extern s16 D_80153C0C;
+extern u16 *D_80153C4C;
 
 extern s32 func_80411DCC_de(u32 index);
 extern void func_804116CC_de(u32 index);
@@ -30,7 +30,7 @@ static inline void func_8040F75C_resolve(Widget_func_8040F6DC_de *widget) {
         if (data == 0) {
             func_804116CC_de(index);
             data = func_80411DCC_de(index);
-            D_8014D9BC[index] |= 1;
+            D_80153C4C[index] |= 1;
         }
         w->words[0] = data + offset;
     }
@@ -41,7 +41,7 @@ static inline void func_8040F75C_resolve(Widget_func_8040F6DC_de *widget) {
         if (data == 0) {
             func_804116CC_de(index);
             data = func_80411DCC_de(index);
-            D_8014D9BC[index] |= 1;
+            D_80153C4C[index] |= 1;
         }
         w->words[1] = data + offset;
     }
@@ -52,7 +52,7 @@ static inline void func_8040F75C_resolve(Widget_func_8040F6DC_de *widget) {
         if (data == 0) {
             func_804116CC_de(index);
             data = func_80411DCC_de(index);
-            D_8014D9BC[index] |= 1;
+            D_80153C4C[index] |= 1;
         }
         w->words[2] = data + offset;
     }
@@ -76,7 +76,7 @@ void func_8040F6DC_de(Widget_func_8040F6DC_de *widget, s32 base, s32 old) {
         }
         switch (widget->type) {
             case 3:
-                if (widget->words[0] < 0 || D_8014D97C - 1 < widget->words[0]) {
+                if (widget->words[0] < 0 || D_80153C0C - 1 < widget->words[0]) {
                     widget->words[0] = 0;
                 }
                 break;

@@ -17,8 +17,8 @@
 
 
 
-extern struct Block_func_8043497C_de *D_800E1454_de;
-extern struct Record_func_804347CC_de D_800FEB00[];
+extern struct Block_func_8043497C_de *D_800E54A4;
+extern struct Record_func_804347CC_de D_80102B00[];
 extern s32 func_804351E4_de();
 extern void func_802A0724_de(void *, void *, s32);
 extern void func_80433BCC_de(s32);
@@ -32,12 +32,12 @@ s32 func_8043497C_de(s32 player) {
     s32 result;
     s32 i;
 
-    chosen = D_800E1454_de->players[player].chosen;
+    chosen = D_800E54A4->players[player].chosen;
     result = 0;
-    if (D_800E1454_de->players[player].flags[chosen] == 1) {
+    if (D_800E54A4->players[player].flags[chosen] == 1) {
         found = -1;
         for (i = 0; i < 4 && found == -1; i++) {
-            if (D_800E1454_de->places[i].x == -1) {
+            if (D_800E54A4->places[i].x == -1) {
                 found = i;
             }
         }
@@ -45,14 +45,14 @@ s32 func_8043497C_de(s32 player) {
         if (place >= 0) {
             entry = func_804351E4_de();
             if (entry >= 0) {
-                D_800E1454_de->places[entry].x = 0;
-                D_800E1454_de->places[entry].y = place;
-                D_800E1454_de->places[entry].z = 1;
+                D_800E54A4->places[entry].x = 0;
+                D_800E54A4->places[entry].y = place;
+                D_800E54A4->places[entry].z = 1;
             }
-            record = &D_800FEB00[found];
-            func_802A0724_de(record, D_800E1454_de->players[player].slots[chosen], 400);
+            record = &D_80102B00[found];
+            func_802A0724_de(record, D_800E54A4->players[player].slots[chosen], 400);
             record->owner = player;
-            D_800E1454_de->players[player].word4 = 0;
+            D_800E54A4->players[player].word4 = 0;
             place = -1;
             func_80433BCC_de(place);
             result = 1;

@@ -11,7 +11,7 @@
    cartridge has it. */
 
 
-extern Record_func_80433914_de D_800FEB00[];
+extern Record_func_80433914_de D_80102B00[];
 extern void *jtbl_800DD848[];
 extern char *D_800D34E4;
 extern char *D_800D34E8;
@@ -141,7 +141,7 @@ char *func_804253C8_de(s32 result) {
         &&text_24, &&text_25, &&text_26, &&text_27, &&text_28, &&text_29, &&text_30, &&text_31,
         &&text_32, &&text_33, &&text_34, &&text_35, &&done
     };
-    Record_func_80433914_de *player = D_800FEB00;
+    Record_func_80433914_de *player = D_80102B00;
     char *text = 0;
     u32 index;
 

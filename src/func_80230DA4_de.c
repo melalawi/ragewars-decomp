@@ -17,13 +17,13 @@
 extern u8 D_80152789;
 extern s32 D_800E0D44[], D_800DCC68[];
 #endif
-extern WeaponActionRecord D_800C9698[];
-extern char D_800FEB00[];
-extern u8 D_80142215;
+extern WeaponActionRecord D_800CE8DC[];
+extern char D_80102B00[];
+extern u8 D_801462D5;
 extern s32 D_800D30BC;
-extern f32 D_800CD738;
-extern char D_80140F80[];
-extern char D_80140FC8;
+extern f32 D_800D2988;
+extern char D_80145040[];
+extern char D_80145088;
 extern s32 func_80222AA4_de(void *, s16);
 extern s16 func_8022F96C_de(void *);
 extern s32 func_8022F55C_de(void *, s16);
@@ -40,14 +40,14 @@ static inline s32 can_fire(char *player) {
     if (((SharedPlayer_func_8022A398_de *)(player))->views1450.view1450_0.unk1450 != 0) {
         return 1;
     }
-    if (D_80142215 != 1) {
+    if (D_801462D5 != 1) {
         return 1;
     }
-    ammo = func_8022F55C_de(&D_800FEB00[((SharedPlayer_func_8022A398_de *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E);
+    ammo = func_8022F55C_de(&D_80102B00[((SharedPlayer_func_8022A398_de *)(player))->views1C.view5D4_45.unk5D4 * 0x190], ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view62E_13.unk62E);
     if (ammo == 0) {
         func_8025DF34_de(0xD4D);
         if (((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC != 0) {
-            func_80239908_de(&D_80140FC8, ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC, D_800E0D44, D_800DCC68, D_80152789), func_8022A5A0_de(D_80140F80, player),
+            func_80239908_de(&D_80145088, ((SharedPlayer_func_8022A398_de *)(player))->views5DC.view5DC_0.unk5DC, RW_LOCALIZED_TEXT(D_800D30BC, D_800E0D44, D_800DCC68, D_80152789), func_8022A5A0_de(D_80145040, player),
                           1.0f);
         }
     }
@@ -60,7 +60,7 @@ void func_80230DA4_de(void *actor, void *weapon) {
     if (((WeaponFireState *)(weapon))->variant != 4) {
         ((WeaponFireState *)(weapon))->spin = func_802747A0_de(((WeaponFireState *)(weapon))->spin, 0.013613569f);
     }
-    ((WeaponFireState *)(weapon))->spinStep += ((WeaponFireState *)(weapon))->spin * D_800CD738 * 2.0f;
+    ((WeaponFireState *)(weapon))->spinStep += ((WeaponFireState *)(weapon))->spin * D_800D2988 * 2.0f;
     model = ((SharedPlayer_func_8022A398_de *)(player))->views5E8.view698_37.emitter;
     if (!(((WeaponFireState *)(weapon))->spin < 0.0f ? 1.0f < -((WeaponFireState *)(weapon))->spin * 1.7904929f
                                                    : 1.0f < ((WeaponFireState *)(weapon))->spin * 1.7904929f)) {

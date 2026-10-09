@@ -7,7 +7,7 @@ extern s32 func_804030E0_de(s32);
 extern void func_8044D528_de(void *arg0, s32 arg1, s32 arg2);
 extern void func_8044D054_de(void *arg0);
 extern void func_8044D0F0_de(void *arg0);
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 
 
 
@@ -15,7 +15,7 @@ extern s32 D_8011BDC8;
 void func_80293998_de(s32 arg0, s32 arg1) {
     func_8044A370_de(&((func_8029397C_S1 *)(arg0))->unk255C8, 1);
     func_804499B0_de(&((func_8029397C_S1 *)(arg0))->unk25580, (void *)1, 0);
-    func_8044D528_de(&D_8011BDC8, ~func_804030E0_de(arg1), 0);
-    func_8044D054_de(&D_8011BDC8);
-    func_8044D0F0_de(&D_8011BDC8);
+    func_8044D528_de(&D_8011FE88, ~func_804030E0_de(arg1), 0);
+    func_8044D054_de(&D_8011FE88);
+    func_8044D0F0_de(&D_8011FE88);
 }

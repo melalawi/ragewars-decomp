@@ -8,7 +8,7 @@ extern f32 func_802747A0_de(f32 value, f32 step);
 
 
 
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 
 u32 func_802337D0_de(State_func_802337D0_de *state) {
     f32 scale;
@@ -24,15 +24,15 @@ u32 func_802337D0_de(State_func_802337D0_de *state) {
         state->rate = state->limit + state->limit;
     }
 
-    step = D_800CD738;
+    step = D_800D2988;
     scale = D_800C3084_de;
     state->value = func_802747A0_de(state->value, step * scale);
-    state->limit = func_802747A0_de(state->limit, D_800CD738 * scale);
+    state->limit = func_802747A0_de(state->limit, D_800D2988 * scale);
 
     switch (state->mode) {
     case 1:
         if (state->rate > 0.0f) {
-            state->accumulator += (state->rate + state->rate) * (D_800CD738 * scale);
+            state->accumulator += (state->rate + state->rate) * (D_800D2988 * scale);
             state->rate = func_802747A0_de(state->rate, D_800C3088_de);
         }
         break;

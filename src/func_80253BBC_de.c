@@ -29,8 +29,8 @@ void func_80253BBC_de(s32 arg0, func_80205628_S3 *arg1) {
     base = &D_801005A8;
     index = *base;
     token = func_802BCF30_de();
-    counter = D_8010115C + 1;
-    D_8010115C = counter;
+    counter = D_8010515C + 1;
+    D_8010515C = counter;
     if (counter != 1) {
         func_802BCF50_de(token);
         func_802BB2A0_de((s32)((char *)base + 0xB98), 0, 1);
@@ -51,8 +51,8 @@ void func_80253BBC_de(s32 arg0, func_80205628_S3 *arg1) {
     }
 
     token2 = func_802BCF30_de();
-    counter2 = D_8010115C - 1;
-    D_8010115C = counter2;
+    counter2 = D_8010515C - 1;
+    D_8010515C = counter2;
     if (counter2 != 0) {
         func_802BCF50_de(token2);
         func_802BB420_de(&D_80101140, 0, 1);

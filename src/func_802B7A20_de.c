@@ -7,8 +7,8 @@
 
 
 
-extern u8 D_801471DC_de;
-extern OSPifRam D_801471E0;
+extern u8 D_8014D46C;
+extern OSPifRam D_8014D470;
 
 void func_802B7A20_de(u8 cmd) {
     u8 *ptr;
@@ -18,9 +18,9 @@ void func_802B7A20_de(u8 cmd) {
     OSPifRam *pifram;
 
     for (i = 0; i < 15; i++) {
-        ((u32 *)&D_801471E0)[i] = 0;
+        ((u32 *)&D_8014D470)[i] = 0;
     }
-    pifram = &D_801471E0;
+    pifram = &D_8014D470;
     pifram->pifstatus = 1;
     ptr = (u8 *)pifram->ramarray;
     requestformat.dummy = 0xFF;
@@ -32,7 +32,7 @@ void func_802B7A20_de(u8 cmd) {
     requestformat.status = 0xFF;
     requestformat.dummy1 = 0xFF;
 
-    count = &D_801471DC_de;
+    count = &D_8014D46C;
     for (i = 0; i < *count; i++) {
         *(__OSContRequesFormat *)ptr = requestformat;
         ptr += sizeof(requestformat);

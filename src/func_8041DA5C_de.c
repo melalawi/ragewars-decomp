@@ -11,7 +11,7 @@
 
 
 
-extern Menu_func_8041DA5C_de *D_800DF540;
+extern Menu_func_8041DA5C_de *D_800E3590;
 extern TextEntry D_800DF544[];
 extern PlayerRecord D_800FEB4A[];
 extern Node_func_8041DA5C_de *func_8040EC30_de(void *root, u16 id);
@@ -23,8 +23,8 @@ void func_8041DA5C_de(s32 style) {
     Node_func_8041DA5C_de *node;
 
     for (i = 0; i < 50; i++) {
-        node = func_8040EC30_de(D_800DF540->root, D_800DF544[i].id);
-        if (func_80265650_de(&D_800FEB4A[D_800DF540->player], i) == 1) {
+        node = func_8040EC30_de(D_800E3590->root, D_800DF544[i].id);
+        if (func_80265650_de(&D_800FEB4A[D_800E3590->player], i) == 1) {
             func_8040E8D8_de(node, 1);
             node->style = style;
         } else {

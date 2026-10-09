@@ -8,7 +8,7 @@
 
 
 
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 extern void func_8024BE3C_de(void *arg0);
 extern void func_80246E44_de(char *);
 
@@ -25,7 +25,7 @@ void func_8022A95C_de(void *arg0) {
 
     base = &((func_8022A94C_S1 *)(arg0))->unk2E8;
     old_value = ((func_8022A94C_S1 *)(arg0))->unk86C;
-    saved_value = D_800CD738;
+    saved_value = D_800D2988;
     base->value = 0x10;
     base->flags &= 0xFFFDFFFF;
     func_8024BE3C_de(base);
@@ -33,7 +33,7 @@ void func_8022A95C_de(void *arg0) {
         func_80246E44_de(base);
     }
     new_value = ((func_8022A94C_S1 *)(arg0))->unk86C;
-    D_800CD738 = saved_value;
+    D_800D2988 = saved_value;
     if (old_value != new_value) {
         ((func_8022A94C_S1 *)(arg0))->unk10E = 0;
     }

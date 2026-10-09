@@ -5,10 +5,10 @@
    the word at 0x188 to zero. */
 
 
-extern struct State_func_80438A88_de *D_800E17E0;
+extern struct State_func_80438A88_de *D_800E5830;
 
 void func_80438A88_de(void) {
-    struct State_func_80438A88_de *state = D_800E17E0;
+    struct State_func_80438A88_de *state = D_800E5830;
 
     state->first = -1;
     state->second = -1;

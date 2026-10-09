@@ -12,5 +12,5 @@ extern f32 func_80209AE8_de(void);
 
 
 f32 func_8020AA0C_de(void) {
-    return (((func_802077F4_S2 *)(&D_800C1D30_de))->unk4 - func_80209AE8_de()) * (D_800C1D38_de);
+    return (((func_802077F4_S2 *)(&D_800C6E20))->unk4 - func_80209AE8_de()) * (D_800C6E28);
 }

@@ -8,11 +8,11 @@
 
 
 
-extern SelectMenu *D_800E0280;
+extern SelectMenu *D_800E42D0;
 
 
 extern CharacterScreenCell D_800E029E[][9];
-extern Match_func_80420618_de D_80142208_de;
+extern Match_func_80420618_de D_801462C8;
 extern unsigned char D_800FEB0F[];
 
 extern void func_8041B7B4_de(void *, int, int);
@@ -30,19 +30,19 @@ void func_80420618_de(int player, int choice) {
     RosterSlot *slot;
     int kind;
 
-    D_800E0280->entries[player].state = 3;
-    func_8041B7B4_de(D_800E0280->menu, player, 1);
-    D_800E0280->entries[player].confirmed = 1;
+    D_800E42D0->entries[player].state = 3;
+    func_8041B7B4_de(D_800E42D0->menu, player, 1);
+    D_800E42D0->entries[player].confirmed = 1;
     for (i = 0; i < 3; i++) {
-        func_8040E8D8_de(func_8040EC30_de(D_800E0280->screen, D_800E029E[player][i].id), 1);
+        func_8040E8D8_de(func_8040EC30_de(D_800E42D0->screen, D_800E029E[player][i].id), 1);
     }
-    D_800E0280->entries[player].choice = choice;
+    D_800E42D0->entries[player].choice = choice;
     func_8041F18C_de(choice);
-    func_8041CE10_de(D_800E0280->entries[player].preview, 0);
+    func_8041CE10_de(D_800E42D0->entries[player].preview, 0);
 
     count = 0;
     for (j = 0; j < 4; j++) {
-        if (D_800E0280->entries[j].state == 1 || D_800E0280->entries[j].state == 2) {
+        if (D_800E42D0->entries[j].state == 1 || D_800E42D0->entries[j].state == 2) {
             count++;
         }
     }
@@ -50,24 +50,24 @@ void func_80420618_de(int player, int choice) {
         return;
     }
 
-    slot = D_80142208_de.slots;
+    slot = D_801462C8.slots;
     for (i = 0; i < 8; i++) {
         slot[i].active = 0;
-        if (D_800E0280->entries[i].state == 3) {
+        if (D_800E42D0->entries[i].state == 3) {
             slot[i].locked = 0;
             slot[i].active = 1;
             slot[i].player = i;
-            kind = func_8041F1D8_de(D_800E0280->entries[i].choice);
+            kind = func_8041F1D8_de(D_800E42D0->entries[i].choice);
             slot[i].kind = kind;
             {
-                Match_func_80420618_de *match = &D_80142208_de;
+                Match_func_80420618_de *match = &D_801462C8;
 
                 if (match->mode == 1) {
                     D_800FEB0F[i * 0x190] = kind;
                 }
             }
-            slot[i].variant = D_800E0280->entries[i].variant[3];
+            slot[i].variant = D_800E42D0->entries[i].variant[3];
         }
     }
-    func_80298368_de(D_80142208_de.mode == 1 ? 10 : 8);
+    func_80298368_de(D_801462C8.mode == 1 ? 10 : 8);
 }

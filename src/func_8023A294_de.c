@@ -5,7 +5,7 @@
 
 extern f32 D_800C359C_de;
 extern f32 D_800C35A0_de;
-extern f32 D_800FF220[];
+extern f32 D_80103220[];
 
 extern s32 func_80264B6C_de(void);
 
@@ -15,13 +15,13 @@ f32 func_8023A294_de(s32 arg0, f32 value, f32 target, f32 step) {
     }
     if (value < target) {
         value += step;
-        D_800FF220[1] = D_800C359C_de;
+        D_80103220[1] = D_800C359C_de;
         if (target < value) {
             value = target;
         }
     } else if (target < value) {
         value -= step;
-        D_800FF220[1] = D_800C35A0_de;
+        D_80103220[1] = D_800C35A0_de;
         if (value < target) {
             value = target;
         }
@@ -38,11 +38,11 @@ f32 func_8023A294_de(s32 arg0, f32 value, f32 target, f32 step) {
 
 
 
-extern u8 *D_800D2FFC;
+extern u8 *D_800D7028;
 
-extern u8 *D_800D3008;
+extern u8 *D_800D7034;
 
-extern s32 D_800DE880_de;
+extern s32 D_800E28D0;
 extern void func_80239CE0_de(Message *);
 extern void func_80255ED8_de(void *, Message *);
 extern void func_80255D14_de(void *, Message *);
@@ -77,8 +77,8 @@ Message *func_8023A344_de(void *owner, void *pool, u8 *text, s32 kind, f32 size,
     if (pool == 0) {
         return message;
     }
-    if (text == D_800D3008) {
-        text = D_800D2FFC;
+    if (text == D_800D7034) {
+        text = D_800D7028;
     }
     p = text;
     line = p;
@@ -98,8 +98,8 @@ Message *func_8023A344_de(void *owner, void *pool, u8 *text, s32 kind, f32 size,
                     message->pad2C = 0;
                     message->scaleX = 1.0f;
                     message->scaleY = 1.0f;
-                    height = (&D_800DE880_de)[1]; /* FAKEMATCH */
-                    message->x = D_800DE880_de / 2;
+                    height = (&D_800E28D0)[1]; /* FAKEMATCH */
+                    message->x = D_800E28D0 / 2;
                     message->y = height - 80;
                     message->size = size * 15.0f;
                 }

@@ -11,10 +11,10 @@ s32 func_8043E5D0_de(void) {
 
 
 
-extern State_func_8043E254_de D_801427E0;
+extern State_func_8043E254_de D_801468A0;
 
 s32 func_8043E5D8_de(void) {
-    State_func_8043E254_de *s = &D_801427E0;
+    State_func_8043E254_de *s = &D_801468A0;
     s32 result;
 
     result = 0;
@@ -68,17 +68,17 @@ s32 func_8043E658_de(void *arg0, Handle8043E788 *arg1) {
 
 /* Steps the selection D_800E1DF8_de through func_804423BC_de (a second step when func_802643A0_de or
    func_8026437C_de reports the object's controller busy), then sets D_80142228 to the chosen entry of the
-   float table D_00450854 plus the offset in D_800DE328, clamped between D_800DE330_de and (2.0f). */
+   float table D_00450854 plus the offset in D_800E2358, clamped between D_800DE330_de and (2.0f). */
 
 
 
 
 
 extern s32 D_800E1DF8_de;
-extern Extra D_800DE328;
+extern Extra D_800E2358;
 
 
-extern f32 D_0044FC28_de[];
+extern f32 D_00450854[];
 
 extern s32 func_804423BC_de(struct Shape_typemap_114 *, s32, s32, s32, s32, s32);
 extern s32 func_802643A0_de(s32);
@@ -92,7 +92,7 @@ s32 func_8043E6A4_de(void *arg0, struct Shape_typemap_114 *obj)
     if (func_802643A0_de(obj->field_20) != 0 || func_8026437C_de(obj->field_20) != 0) {
         func_804423BC_de(obj, D_800E1DF8_de, 1, 0, 15, 0);
     }
-    scale = D_0044FC28_de[D_800E1DF8_de] + D_800DE328.scale;
+    scale = D_00450854[D_800E1DF8_de] + D_800E2358.scale;
     if (!(scale < D_800DE330_de)) {
         if (!(scale > (2.0f))) {
             if (scale < D_800DE330_de) {

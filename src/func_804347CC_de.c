@@ -13,8 +13,8 @@
 
 
 
-extern struct Block_func_804347CC_de *D_800E1454_de;
-extern struct Record_func_804347CC_de D_800FEB00[];
+extern struct Block_func_804347CC_de *D_800E54A4;
+extern struct Record_func_804347CC_de D_80102B00[];
 extern void func_802A0724_de(void *, void *, s32);
 extern void func_8022EF30_de(struct Record_func_804347CC_de *);
 
@@ -26,25 +26,25 @@ void func_804347CC_de(void) {
     s32 j;
 
     size = 400;
-    func_802A0724_de(&D_800E1454_de->saved, D_800FEB00, 0x640);
+    func_802A0724_de(&D_800E54A4->saved, D_80102B00, 0x640);
     for (i = 0; i < 4; i++) {
-        func_8022EF30_de(&D_800FEB00[i]);
+        func_8022EF30_de(&D_80102B00[i]);
         used[i] = 0;
     }
     for (i = 0; i < 4; i++) {
-        chosen = D_800E1454_de->players[i].chosen;
+        chosen = D_800E54A4->players[i].chosen;
         if (chosen >= 0) {
-            func_802A0724_de(&D_800FEB00[i], &D_800E1454_de->saved[chosen], size);
+            func_802A0724_de(&D_80102B00[i], &D_800E54A4->saved[chosen], size);
             used[chosen] = 1;
         }
     }
     for (i = 0; i < 4; i++) {
-        if (used[i] != 0 || D_800E1454_de->saved[i].owner < 0) {
+        if (used[i] != 0 || D_800E54A4->saved[i].owner < 0) {
             continue;
         }
         for (j = 0; j < 4; j++) {
-            if (D_800FEB00[j].owner < 0) {
-                func_802A0724_de(&D_800FEB00[j], &D_800E1454_de->saved[i], size);
+            if (D_80102B00[j].owner < 0) {
+                func_802A0724_de(&D_80102B00[j], &D_800E54A4->saved[i], size);
                 break;
             }
         }

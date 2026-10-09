@@ -2,9 +2,9 @@
 #include "types.h"
 
 extern void func_802547E4_de(void *);
-extern s32 D_80146E30;
+extern s32 D_8014D0B0;
 
 void func_8029AAAC_de(void) {
-    func_802547E4_de(D_80146E30);
-    D_80146E30 = 0;
+    func_802547E4_de(D_8014D0B0);
+    D_8014D0B0 = 0;
 }

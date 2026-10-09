@@ -2,11 +2,11 @@
 #include "span_1000/code_8022BA90.h"
 #include "types.h"
 
-extern u8 D_8014221E;
+extern u8 D_801462DE;
 
 
-extern s32 D_800DE880_de;
-extern s32 D_800DE884_de;
+extern s32 D_800E28D0;
+extern s32 D_800E28D4;
 void func_802A9234_de(u8 arg0);
 void func_802AAC28_de(s32 arg0, s32 arg1, s16 arg2, s16 arg3, f32 arg4, f32 arg5, s32 arg6);
 
@@ -24,14 +24,14 @@ void func_8022C2B4_de(void *arg0, char *arg1)
   f32 by;
   f32 screenX;
   f32 screenY;
-  func_802A9234_de(D_8014221E);
+  func_802A9234_de(D_801462DE);
   x = ((func_80219490_S2 *)(arg1))->unk29C;
   ax = x * D_800C2D30_de;
   y = ((func_80219490_S2 *)(arg1))->unk2A0;
   ay = y * D_800C2D30_de;
-  sx = x / ((f32) D_800DE880_de);
+  sx = x / ((f32) D_800E28D0);
   bx = sx * D_800C2D34_de;
-  sy = y / ((f32) D_800DE884_de);
+  sy = y / ((f32) D_800E28D4);
   by = sy * D_800C2D34_de;
   screenX = ((((func_80219490_S2 *)(arg1))->unk2A4) + ax) - bx;
   screenY = ((((func_80219490_S2 *)(arg1))->unk2A8) + ay) - by;

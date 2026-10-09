@@ -9,9 +9,9 @@
    when its owner byte 0xD is not negative, or at nothing. */
 /* The first row item's id: eu-x numbers its items 9 higher and de 1 higher, as each cartridge's
    own bytes show; us, us-rev1 and eu share 0x28B. */
-extern struct Block_func_80433BCC_de *D_800E1454_de;
-extern char D_800FEB00[];
-extern s8 D_800FEB0D[];
+extern struct Block_func_80433BCC_de *D_800E54A4;
+extern char D_80102B00[];
+extern s8 D_80102B0D[];
 extern struct Item_func_80433BCC_de *func_8040EC30_de(void *, s32);
 extern void func_8040E950_de(struct Item_func_80433BCC_de *, s32);
 extern struct Item_func_80433BCC_de *func_8041B7FC_de(void *, s32);
@@ -59,13 +59,13 @@ void func_80433BCC_de(s32 player) {
 #endif
             break;
         }
-        item = func_8040EC30_de(D_800E1454_de->window, id);
+        item = func_8040EC30_de(D_800E54A4->window, id);
         func_8040E950_de(item, 0);
         label = item->label;
-        if (player != -1 && item == func_8041B7FC_de(D_800E1454_de->list, player)) {
-            label->unk38 = D_800E1454_de->players[player].slots[D_800E1454_de->players[player].chosen];
-        } else if (D_800FEB0D[i * 400] >= 0) {
-            label->unk38 = &D_800FEB00[i * 400];
+        if (player != -1 && item == func_8041B7FC_de(D_800E54A4->list, player)) {
+            label->unk38 = D_800E54A4->players[player].slots[D_800E54A4->players[player].chosen];
+        } else if (D_80102B0D[i * 400] >= 0) {
+            label->unk38 = &D_80102B00[i * 400];
         } else {
             label->unk38 = 0;
         }

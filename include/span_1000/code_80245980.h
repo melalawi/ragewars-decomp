@@ -482,14 +482,14 @@ struct func_80245990_S1 {
 };
 
 /* unbake published declaration: published_ee98a5058edcc7a6f8291973 */
-extern float D_800C37DC_de;
+extern float D_800C88CC;
 
 struct func_80245A68_S1;
 /* unbake published declaration: published_f01e18f365876dd939c6a6bf */
 typedef struct func_80245A68_S1 func_80245A68_S1;
 
 /* unbake published declaration: published_f2d0d819102b26705e74e661 */
-extern float D_800C3824_de;
+extern float D_800C8914;
 
 struct Access_s8_1A5;
 /* unbake published declaration: published_f34e7aaca1c0160ba68dd218 */

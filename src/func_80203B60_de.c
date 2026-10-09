@@ -6,7 +6,7 @@ extern s32 func_802170A0_de(void *arg0, void *arg1, s32 arg2, s32 arg3, s32 arg4
 extern void func_80285DB0_de(void *, void *, s32);
 extern void func_80278D78_de(void *arg0, s32 arg1, void *arg2);
 
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 
 
 
@@ -24,7 +24,7 @@ void func_80203B60_de(void *arg0, void *arg1) {
 
     tmp = ((func_80203B60_S1 *)(o0))->unk18 + 0x14;
     func_802170A0_de(arg0, arg1, 4, ((func_80203B60_S2 *)(tmp))->unkC, ((func_80203B60_S2 *)(tmp))->unk10);
-    pFlag = &D_8011BDC8;
+    pFlag = &D_8011FE88;
     ((func_80203B60_S3 *)(o1))->unk110 = 0;
     func_80285DB0_de(pFlag, arg0, 1);
     func_80278D78_de(arg0, 1, arg0);

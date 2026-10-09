@@ -23,10 +23,10 @@ extern void func_8028B274_de(void *arg0, void *arg1, s32 arg2, s32 arg3);
 extern void func_80226708_de();
 extern void func_8021AF6C_de(void *);
 extern u8 D_801462E5;
-extern s32 D_80142834;
+extern s32 D_801468F4;
 
 
-extern char D_8011BDC8;
+extern char D_8011FE88;
 
 
 
@@ -43,11 +43,11 @@ void func_8044A0C4_de(void *arg0, s32 arg1) {
     func_8021AF6C_de(arg0);
     if (D_801462E5 == 0) {
         var_a2 = 0x66;
-    } else if (D_80142834 != 0 && ((func_8021C9B4_S2 *)(((func_8044AD14_S1 *)(arg0))->unk5D8))->unk8F != 0) {
-        var_a2 = D_800C922C;
+    } else if (D_801468F4 != 0 && ((func_8021C9B4_S2 *)(((func_8044AD14_S1 *)(arg0))->unk5D8))->unk8F != 0) {
+        var_a2 = D_800CE47C;
     } else {
-        var_a2 = D_800C91E0_de[((func_8021C9B4_S3 *)(((func_8044AD14_S1 *)(arg0))->unk18))->unkC];
+        var_a2 = D_800CE430[((func_8021C9B4_S3 *)(((func_8044AD14_S1 *)(arg0))->unk18))->unkC];
         ((func_8044AD14_S1 *)(arg0))->unk3 = ((func_8021C9B4_S2 *)(((func_8044AD14_S1 *)(arg0))->unk5D8))->unk81;
     }
-    func_8028B274_de(&D_8011BDC8, arg0, var_a2, ((func_8044AD14_S1 *)(arg0))->unk86C);
+    func_8028B274_de(&D_8011FE88, arg0, var_a2, ((func_8044AD14_S1 *)(arg0))->unk86C);
 }

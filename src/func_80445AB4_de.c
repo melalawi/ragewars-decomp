@@ -4,28 +4,28 @@
 #include "stddef.h"
 /* Append one selected character to an eight-character entry buffer. */
 #if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
-extern char D_80140F80;
+extern char D_80145040;
 #elif defined(VERSION_EU) || defined(VERSION_EU_X)
-extern struct LocalizedInputState D_80140F80;
+extern struct LocalizedInputState D_80145040;
 #endif
-extern Entry_func_80445AB4_de D_800E20A0[];
+extern Entry_func_80445AB4_de D_800E63C0[];
 extern s32 func_8022A5A0_de(void *,s32);
 s32 func_80445AB4_de(Obj_func_8043CC10_de *arg0, MenuRules *arg1) {
- s32 value; s32 count; s32 index=func_8022A5A0_de(&D_80140F80,arg1->locked);
- D_800E20A0[index].timer=0;
- if(D_800E20A0[index].count == 8) return 0;
+ s32 value; s32 count; s32 index=func_8022A5A0_de(&D_80145040,arg1->locked);
+ D_800E63C0[index].timer=0;
+ if(D_800E63C0[index].count == 8) return 0;
  {
- D_800E20A0[index].text[D_800E20A0[index].value]=
+ D_800E63C0[index].text[D_800E63C0[index].value]=
 #if defined(VERSION_DE) || defined(VERSION_US) || defined(VERSION_US_REV1)
      **arg0->unk14;
 #elif defined(VERSION_EU) || defined(VERSION_EU_X)
-     *arg0->unk14[D_80140F80.language];
+     *arg0->unk14[D_80145040.language];
 #endif
- value=D_800E20A0[index].value+1;
- count=D_800E20A0[index].count+1;
- D_800E20A0[index].value=value;
- D_800E20A0[index].count=count;
- D_800E20A0[index].text[count]=0;
+ value=D_800E63C0[index].value+1;
+ count=D_800E63C0[index].count+1;
+ D_800E63C0[index].value=value;
+ D_800E63C0[index].count=count;
+ D_800E63C0[index].text[count]=0;
  }
  return 0;
 }

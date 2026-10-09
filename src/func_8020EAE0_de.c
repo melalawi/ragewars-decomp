@@ -8,7 +8,7 @@
    reselects the active entry, copies the four link words from 0x14 and records the request as
    committed. Always returns 1. Written from its own assembly with early returns. */
 
-extern s32 D_801372A4;
+extern s32 D_8013B364;
 extern s32 func_8020CC0C_de(s32 *, s32, s32);
 extern void func_8020D014_de(s32 *);
 extern void func_8020EDCC_de(void *);
@@ -29,7 +29,7 @@ s32 func_8020EAE0_de(void *arg0) {
     s32 current;
     s32 link;
 
-    base = &D_801372A4;
+    base = &D_8013B364;
     if (base == 0) {
         return 1;
     }

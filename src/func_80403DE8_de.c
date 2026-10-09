@@ -5,9 +5,9 @@
 /* Calls func_8028FDB4_de on the object at offset 4 of the structure D_800E2830 points to, with 3. */
 
 
-extern struct Field_void_4 *D_800DE7E0;
+extern struct Field_void_4 *D_800E2830;
 extern void func_8028FDB4_de(void *, s32);
 
 void func_80403DE8_de(void) {
-    func_8028FDB4_de(D_800DE7E0->value, 3);
+    func_8028FDB4_de(D_800E2830->value, 3);
 }

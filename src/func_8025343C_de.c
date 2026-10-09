@@ -25,8 +25,8 @@ struct Shape_typemap_165 *func_8025343C_de(s32 arg0, s32 arg1, u32 arg2, void *a
     temp_s1 = arg2;
     temp_s2 = arg3;
     temp_a0 = func_802BCF30_de();
-    temp_v1 = D_8010115C + 1;
-    D_8010115C = temp_v1;
+    temp_v1 = D_8010515C + 1;
+    D_8010515C = temp_v1;
     if (temp_v1 != 1) {
         func_802BCF50_de(temp_a0);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -35,8 +35,8 @@ struct Shape_typemap_165 *func_8025343C_de(s32 arg0, s32 arg1, u32 arg2, void *a
     }
     var_s0 = func_802548B8_de(0, temp_s0, temp_s1, temp_s2);
     temp_v0 = func_802BCF30_de();
-    temp_v1_2 = D_8010115C - 1;
-    D_8010115C = temp_v1_2;
+    temp_v1_2 = D_8010515C - 1;
+    D_8010515C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802BCF50_de(temp_v0);
         func_802BB420_de(&D_80101140, 0, 1);
@@ -47,7 +47,7 @@ struct Shape_typemap_165 *func_8025343C_de(s32 arg0, s32 arg1, u32 arg2, void *a
 }
 
 extern Queue_func_802517B4_de D_80101140;
-extern s8 D_801011A0;
+extern s8 D_801051A0;
 
 extern u32 func_802BCF30_de(void);
 extern void func_802BCF50_de(u32);
@@ -67,8 +67,8 @@ struct Shape_typemap_165 *func_80253530_de(void *arg0, void *arg1, s32 arg2) {
     u32 temp_v0_2;
 
     temp_a0 = func_802BCF30_de();
-    temp_v1 = D_8010115C + 1;
-    D_8010115C = temp_v1;
+    temp_v1 = D_8010515C + 1;
+    D_8010515C = temp_v1;
     if (temp_v1 != 1) {
         func_802BCF50_de(temp_a0);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -77,7 +77,7 @@ struct Shape_typemap_165 *func_80253530_de(void *arg0, void *arg1, s32 arg2) {
     }
     var_s0 = func_802514A8_de(0, 0U);
     if (var_s0 != 0) {
-        temp_v0 = func_80255630_de(&D_801011A0, arg1, arg2);
+        temp_v0 = func_80255630_de(&D_801051A0, arg1, arg2);
         var_s0->field_0 = temp_v0;
         if (temp_v0 != 0) {
             var_s0->field_4 = arg2;
@@ -89,8 +89,8 @@ struct Shape_typemap_165 *func_80253530_de(void *arg0, void *arg1, s32 arg2) {
         }
     }
     temp_v0_2 = func_802BCF30_de();
-    temp_v1_2 = D_8010115C - 1;
-    D_8010115C = temp_v1_2;
+    temp_v1_2 = D_8010515C - 1;
+    D_8010515C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802BCF50_de(temp_v0_2);
         func_802BB420_de(&D_80101140, 0, 1);
@@ -117,8 +117,8 @@ void func_80253670_de(void *arg0, Node80253610 *arg1) {
 
     temp_s0 = arg1;
     temp_a0 = func_802BCF30_de();
-    temp_v1 = D_8010115C + 1;
-    D_8010115C = temp_v1;
+    temp_v1 = D_8010515C + 1;
+    D_8010515C = temp_v1;
     if (temp_v1 != 1) {
         func_802BCF50_de(temp_a0);
         func_802BB2A0_de((s32)&D_80101140, 0, 1);
@@ -129,8 +129,8 @@ void func_80253670_de(void *arg0, Node80253610 *arg1) {
     temp_s0->references += 1;
     temp_s0->flags |= 0x100;
     temp_v0 = func_802BCF30_de();
-    temp_v1_2 = D_8010115C - 1;
-    D_8010115C = temp_v1_2;
+    temp_v1_2 = D_8010515C - 1;
+    D_8010515C = temp_v1_2;
     if (temp_v1_2 != 0) {
         func_802BCF50_de(temp_v0);
         func_802BB420_de(&D_80101140, 0, 1);

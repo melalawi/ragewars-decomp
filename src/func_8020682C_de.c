@@ -5,7 +5,7 @@
 extern int func_80245798_de(void);
 extern void func_802472F0_de(void *arg0);
 extern void func_80285DB0_de(void *, void *, s32);
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 
 
 
@@ -16,5 +16,5 @@ void func_8020682C_de(void *arg0, s32 *arg1) {
         *arg1 |= 0x200;
     }
     func_802472F0_de(arg0);
-    func_80285DB0_de(&D_8011BDC8, arg0, 0);
+    func_80285DB0_de(&D_8011FE88, arg0, 0);
 }

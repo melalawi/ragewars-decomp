@@ -9,13 +9,13 @@
 
 
 extern s32 func_80285F58_de(void *, void *);
-extern s32 D_8011BDC8;
+extern s32 D_8011FE88;
 
 void func_80206018_de(void *arg0, Event_func_80206018_de *arg1) {
     CallbackHolder *holder;
     s32 different;
 
-    different = func_80285F58_de(&D_8011BDC8, arg0) != 1;
+    different = func_80285F58_de(&D_8011FE88, arg0) != 1;
     if (different == 0) {
         holder = arg1->holder;
         if ((holder != 0) && (holder->callback != 0)) {

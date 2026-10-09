@@ -2,7 +2,7 @@
 #include "span_1000/code_80212C90.h"
 #include "types.h"
 
-extern s32 D_801372A4;
+extern s32 D_8013B364;
 
 
 extern void *func_8020C994_de(void *, s32);
@@ -33,7 +33,7 @@ void func_80213340_de(void *arg0)
         } while (index >= 0);
 
         {
-            s32 *table = &D_801372A4;
+            s32 *table = &D_8013B364;
         index = 0;
         if (table[1] > 0) {
             do {
@@ -48,8 +48,8 @@ void func_80213340_de(void *arg0)
     }
 
     if (count == 0) {
-        s32 global_count = D_801372A8;
-        s32 *table = &D_801372A4;
+        s32 global_count = D_8013B368;
+        s32 *table = &D_8013B364;
         s32 tries = 0;
         s32 candidate;
         if (global_count >= 2) {

@@ -6,7 +6,7 @@
    func_8042C018_de. Returns zero. */
 
 
-extern struct State_func_8042D908_de *D_800E1370;
+extern struct State_func_8042D908_de *D_800E53C0;
 extern void func_8029973C_de();
 extern void func_8042C018_de();
 
@@ -16,7 +16,7 @@ s32 func_8042D908_de(void *first, void *second, void *third, s32 fourth) {
 
     if (fourth == 1) {
         func_8029973C_de();
-        state = D_800E1370;
+        state = D_800E53C0;
         position = state->position;
         if (position + 4 < state->limit) {
             state->position = position + 1;

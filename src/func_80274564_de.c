@@ -16,7 +16,7 @@ f32 func_80274564_de(f32 arg0) {
     if (temp_v0 < 0) {
         var_f1 = var_f1 + D_800C4940_de;
     }
-    return (f32)var_f1 * arg0 * D_800C4948_de;
+    return (f32)var_f1 * arg0 * D_800C9A38;
 }
 
 f32 func_802745D0_de(f32 arg0) {
@@ -50,7 +50,7 @@ f32 func_802745D0_de(f32 arg0) {
 }
 
 extern f32 D_800C4960_de;
-extern f32 D_800CD738;
+extern f32 D_800D2988;
 
 f32 func_802746A0_de(f32 arg0, f32 arg1, f32 arg2) {
     if (arg1 < 0.0f) {
@@ -67,7 +67,7 @@ f32 func_802746A0_de(f32 arg0, f32 arg1, f32 arg2) {
         (0.0f < arg0 && arg1 < 0.0f)) {
         arg1 *= D_800C4960_de;
     }
-    arg0 += arg1 * D_800CD738;
+    arg0 += arg1 * D_800D2988;
     if (arg1 < 0.0f) {
         if (arg0 < -arg2) {
             arg0 = -arg2;

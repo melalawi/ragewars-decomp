@@ -2,13 +2,13 @@
 #include "span_1000/code_802AB3FC.h"
 #include "types.h"
 /* Returns whether a player actor can use the item picked up through func_8024E924_de: never for non-players or disabled actors, always during a team round when the model says so, and otherwise by the item's table: a D_800D31D0 power-up when the actor's team matches a D_800CE474 entry or its slot is free while not both states 3 and 7 are in use, a D_800D3230 weapon when on those teams or below the level from func_8022ACB8_de, a D_800D32A8 item when func_8022AC00_de exceeds the actor's count at 0x5E4, any D_800D34C0 item, and a D_800D3390 item unless it is item 0xBD6. */
-extern char D_800CDEF0;
-extern char D_800CDF50;
-extern char D_800CDFC8_de;
-extern char D_800CE0B0;
-extern char D_800CE1E0_de;
-extern s32 D_800C9224_de[2];
-extern s32 D_80142834;
+extern char D_800D31D0;
+extern char D_800D3230;
+extern char D_800D32A8;
+extern char D_800D3390;
+extern char D_800D34C0;
+extern s32 D_800CE474[2];
+extern s32 D_801468F4;
 extern s32 func_8024E924_de(s32 arg0);
 extern s32 func_8022ACB8_de(Actor_func_802AB400_de *actor, s16 index, s32 arg2);
 extern s32 func_8022AC00_de(Actor_func_802AB400_de *actor, s32 id);
@@ -40,14 +40,14 @@ s32 func_802AB400_de(s32 arg0, Actor_func_802AB400_de *actor) {
         if (player->count == 0) {
             return 0;
         }
-        if (D_80142834 != 0 && player->model->unk8F != 0) {
+        if (D_801468F4 != 0 && player->model->unk8F != 0) {
             return 1;
         }
-        powerup = find_entry(&D_800CDEF0, 3, 0x18, id);
+        powerup = find_entry(&D_800D31D0, 3, 0x18, id);
         if (powerup != 0) {
             noState3 = 1;
             noState7 = 1;
-            if (player->team == D_800C9224_de[0] || player->team == D_800C9224_de[1]) {
+            if (player->team == D_800CE474[0] || player->team == D_800CE474[1]) {
                 return 1;
             }
             if (player->slots[powerup->index].pad1 != -1) {
@@ -65,25 +65,25 @@ s32 func_802AB400_de(s32 arg0, Actor_func_802AB400_de *actor) {
             }
             return 0;
         }
-        weapon = find_entry(&D_800CDF50, 5, 0x14, id);
+        weapon = find_entry(&D_800D3230, 5, 0x14, id);
         if (weapon != 0) {
             level = func_8022ACB8_de(player, weapon->index, 0);
-            if (player->team == D_800C9224_de[0] || player->team == D_800C9224_de[1]) {
+            if (player->team == D_800CE474[0] || player->team == D_800CE474[1]) {
                 return 1;
             }
             return player->levels[weapon->index] < level;
         }
-        item = find_entry(&D_800CDFC8_de, 7, 0x18, id);
+        item = find_entry(&D_800D32A8, 7, 0x18, id);
         if (item != 0) {
             return player->count < func_8022AC00_de(player, id);
         }
-        bonus = find_entry(&D_800CE1E0_de, 15, 0x18, id);
+        bonus = find_entry(&D_800D34C0, 15, 0x18, id);
         if (bonus != 0) {
             return 1;
         }
-        special = find_entry(&D_800CE0B0, 2, 0x10, id);
+        special = find_entry(&D_800D3390, 2, 0x10, id);
         if (special != 0) {
-            if ((player->team == D_800C9224_de[0] || player->team == D_800C9224_de[1]) && special->id != 0xBD6) {
+            if ((player->team == D_800CE474[0] || player->team == D_800CE474[1]) && special->id != 0xBD6) {
                 return 1;
             }
             return special->id != 0xBD6;
@@ -94,14 +94,14 @@ s32 func_802AB400_de(s32 arg0, Actor_func_802AB400_de *actor) {
 }
 typedef struct Handler Handler;
 /* Dispatches an item effect with the given id to an actor that can receive it: looks the id up in each item handler table in turn (D_800D31D0, D_800D3230, D_800D32A8, D_800D3368, D_800D34C0, D_800D33C0 and D_800D3390) and returns the first nonzero handler result, clearing the given target from every actor's two lock-on slots after the D_800D34C0 handler. */
-extern char D_800CDEF0;
-extern char D_800CDF50;
-extern char D_800CDFC8_de;
-extern char D_800CE088;
-extern char D_800CE0B0;
-extern char D_800CE0E0;
-extern char D_800CE1E0_de;
-extern Actor_func_802AB6EC_de *D_80140FA0;
+extern char D_800D31D0;
+extern char D_800D3230;
+extern char D_800D32A8;
+extern char D_800D3368;
+extern char D_800D3390;
+extern char D_800D33C0;
+extern char D_800D34C0;
+extern Actor_func_802AB6EC_de *D_80145060;
 static inline Handler *find_handler(char *table, s32 count, s32 size, s32 id) {
     Handler *entry;
     s32 i;
@@ -122,39 +122,39 @@ s32 func_802AB6EC_de(Actor_func_802AB6EC_de *actor, s32 target, s32 id) {
     s32 result;
     result = 0;
     if (actor->enabled != 0) {
-        entry = find_handler(&D_800CDEF0, 3, 0x18, id);
+        entry = find_handler(&D_800D31D0, 3, 0x18, id);
         if (entry != 0) {
             result = entry->handle14(actor, entry);
         }
         if (result != 0) {
             return result;
         }
-        entry = find_handler(&D_800CDF50, 5, 0x14, id);
+        entry = find_handler(&D_800D3230, 5, 0x14, id);
         if (entry != 0) {
             result = entry->handle10(actor, entry);
         }
         if (result != 0) {
             return result;
         }
-        entry = find_handler(&D_800CDFC8_de, 7, 0x18, id);
+        entry = find_handler(&D_800D32A8, 7, 0x18, id);
         if (entry != 0) {
             result = entry->handle14(actor, entry);
         }
         if (result != 0) {
             return result;
         }
-        entry = find_handler(&D_800CE088, 1, 0x14, id);
+        entry = find_handler(&D_800D3368, 1, 0x14, id);
         if (entry != 0) {
             result = entry->handle10(actor, entry);
         }
         if (result != 0) {
             return result;
         }
-        entry = find_handler(&D_800CE1E0_de, 15, 0x18, id);
+        entry = find_handler(&D_800D34C0, 15, 0x18, id);
         if (entry != 0) {
             result = entry->handle14(actor, entry);
         }
-        for (other = D_80140FA0; other != 0; other = other->next) {
+        for (other = D_80145060; other != 0; other = other->next) {
             if (other->lockOn[0] == target) {
                 other->lockOn[0] = 0;
             } else if (other->lockOn[1] == target) {
@@ -164,14 +164,14 @@ s32 func_802AB6EC_de(Actor_func_802AB6EC_de *actor, s32 target, s32 id) {
         if (result != 0) {
             return result;
         }
-        entry = find_handler(&D_800CE0E0, 15, 0x10, id);
+        entry = find_handler(&D_800D33C0, 15, 0x10, id);
         if (entry != 0) {
             result = entry->handleC.targeted(actor, entry, target);
         }
         if (result != 0) {
             return result;
         }
-        entry = find_handler(&D_800CE0B0, 2, 0x10, id);
+        entry = find_handler(&D_800D3390, 2, 0x10, id);
         if (entry != 0) {
             result = entry->handleC.plain(actor, entry);
         }

@@ -20,9 +20,9 @@
 
 
 
-extern struct Screen_func_80426788_de *D_800E0640_de;
-extern struct Status D_801422D8[];
-extern struct Row_func_80426788_de D_800DFA08[];
+extern struct Screen_func_80426788_de *D_800E4690;
+extern struct Status D_80146398[];
+extern struct Row_func_80426788_de D_800E3A58[];
 extern void func_802A23C4_de(s32);
 extern void func_802A2394_de();
 
@@ -45,18 +45,18 @@ s32 func_80426788_de(void) {
     i = 0;
     offset = 0;
     view = 0x20;
-    D_800E0640_de->wordA58 = 0;
+    D_800E4690->wordA58 = 0;
 next:
-    status = (struct Status *)((char *)D_801422D8 + offset);
+    status = (struct Status *)((char *)D_80146398 + offset);
     if (status->active == 1) {
         shown++;
         row = func_8041F140_de(status->kind);
-        scale.x = D_800DFA08[row].scale[layout];
-        scale.y = D_800DFA08[row].scale[layout];
-        scale.z = D_800DFA08[row].scale[layout];
-        func_8041CAD8_de((char *)D_800E0640_de + view, 9, status->kind + 0x38F, 0x4B, 0x5DC0, scale,
-                      D_800DFA08[row].position[layout], D_800DFA08[row].distance[layout],
-                      D_800DFA08[row].light[layout]);
+        scale.x = D_800E3A58[row].scale[layout];
+        scale.y = D_800E3A58[row].scale[layout];
+        scale.z = D_800E3A58[row].scale[layout];
+        func_8041CAD8_de((char *)D_800E4690 + view, 9, status->kind + 0x38F, 0x4B, 0x5DC0, scale,
+                      D_800E3A58[row].position[layout], D_800E3A58[row].distance[layout],
+                      D_800E3A58[row].light[layout]);
         view += 0x4A8;
         layout = 2;
         if (shown >= layout) {

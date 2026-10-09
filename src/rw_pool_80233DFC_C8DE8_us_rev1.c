@@ -2,7 +2,7 @@
  * US rev1 ROM 0xc8de8-0xc8e50; original .float/.double directives.
  */
 const double D_800C30F8_de = 4294967296.0;
-const double D_800C3100_de = 4294967296.0;
+const double D_800C81F0 = 4294967296.0;
 const float D_800C3108_de = 120.0f;
 const float D_800C310C_de = 2147483648.0f;
 const float D_800C3110_de = 2147483648.0f;

@@ -12,10 +12,10 @@
 
 
 
-extern struct Screen_func_80428300_de *D_800E0640_de;
+extern struct Screen_func_80428300_de *D_800E4690;
 extern s8 D_80142358[];
-extern char D_800FEB00[];
-extern s32 D_8011BDC8;
+extern char D_80102B00[];
+extern s32 D_8011FE88;
 
 extern struct Model *func_8028CFA0_de(void *, s32, s32);
 extern s32 func_8022F4DC_de(char *, s32);
@@ -29,14 +29,14 @@ void func_80428300_de(void) {
     s32 i;
 
     func_80428700_de();
-    player = D_800E0640_de->player;
-    model = func_8028CFA0_de(&D_8011BDC8, 0xB, D_80142358[player * 150]);
+    player = D_800E4690->player;
+    model = func_8028CFA0_de(&D_8011FE88, 0xB, D_80142358[player * 150]);
     row = 0;
     for (i = 0; i < 8; i++) {
         id = model->slots[i];
         if (id >= 0x4C3) {
             id -= 0x4C3;
-            if (func_8022F4DC_de(&D_800FEB00[player * 400], id) == 1 && id != 0) {
+            if (func_8022F4DC_de(&D_80102B00[player * 400], id) == 1 && id != 0) {
                 func_8042854C_de(row, id, 0);
                 row++;
             }

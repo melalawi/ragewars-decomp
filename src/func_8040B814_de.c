@@ -2,10 +2,10 @@
 #include "types.h"
 
 /* Stores 2 in D_80153778 and 0 in D_80153770. */
-extern s32 D_8014D4E8;
-extern s32 D_8014D4E0;
+extern s32 D_80153778;
+extern s32 D_80153770;
 
 void func_8040B814_de(void) {
-    D_8014D4E8 = 2;
-    D_8014D4E0 = 0;
+    D_80153778 = 2;
+    D_80153770 = 0;
 }

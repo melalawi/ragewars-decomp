@@ -5,24 +5,24 @@
 
 
 
-extern MenuRules *D_800DF4C8;
+extern MenuRules *D_800E3518;
 extern void func_80404E28_de(s32 port);
 extern s32 func_80404F04_de(s32 port);
 
 void func_8041C19C_de(void) {
     s32 port;
 
-    D_800DF4C8->locked = 0;
+    D_800E3518->locked = 0;
     for (port = 0; port < 4; port++) {
         func_80404E28_de(port);
         switch (func_80404F04_de(port)) {
         case 0:
-            D_800DF4C8->locked = 1;
+            D_800E3518->locked = 1;
             return;
         case -1:
         case -3:
         case -4:
-            D_800DF4C8->locked = 1;
+            D_800E3518->locked = 1;
             return;
         }
     }

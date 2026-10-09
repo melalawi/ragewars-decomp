@@ -6,15 +6,15 @@
    zero: the label an option menu shows for that option. */
 
 
-extern s32 D_8014D4A4;
-extern char D_800D3944[];
-extern char D_800D3950[];
+extern s32 D_80153734;
+extern char D_800D7970[];
+extern char D_800D797C[];
 
 s32 func_8040B3DC_de(struct Field_func_8040A4A0_de *field) {
-    if (D_8014D4A4 != 0) {
-        field->text = D_800D3944;
+    if (D_80153734 != 0) {
+        field->text = D_800D7970;
     } else {
-        field->text = D_800D3950;
+        field->text = D_800D797C;
     }
     return 0;
 }
@@ -23,15 +23,15 @@ s32 func_8040B3DC_de(struct Field_func_8040A4A0_de *field) {
    zero: the label an option menu shows for that option. */
 
 
-extern s32 D_8014D4A4;
-extern char D_800D3948[];
-extern char D_800D3954[];
+extern s32 D_80153734;
+extern char D_800D7974[];
+extern char D_800D7980[];
 
 s32 func_8040B410_de(struct Field_func_8040A4A0_de *field) {
-    if (D_8014D4A4 != 0) {
-        field->text = D_800D3948;
+    if (D_80153734 != 0) {
+        field->text = D_800D7974;
     } else {
-        field->text = D_800D3954;
+        field->text = D_800D7980;
     }
     return 0;
 }

@@ -6,7 +6,7 @@
 #include "types.h"
 
 extern f32 D_800C20C0_de[];
-extern char D_801372A4[];
+extern char D_8013B364[];
 
 extern void func_80211020_de(void *);
 extern s32 func_8020D1CC_de(void *, s32, s32);
@@ -51,7 +51,7 @@ void func_80212828_de(void *arg0)
     ((func_80212828_S3 *)(state))->unkC = value;
     if (value != ((func_80212828_S3 *)(state))->unk10) {
         ((func_80212828_S3 *)(state))->unk10 = value;
-        if (!func_8020D1CC_de(D_801372A4, ((func_80212828_S3 *)(state))->unk4, value)) {
+        if (!func_8020D1CC_de(D_8013B364, ((func_80212828_S3 *)(state))->unk4, value)) {
             func_80209874_de(state, 1);
             return;
         }

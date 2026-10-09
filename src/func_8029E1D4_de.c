@@ -48,7 +48,7 @@ inline static f32 wrap(f32 arg0)
   return value;
 }
 
-extern f32 D_800C5CA0_de;
+extern f32 D_800CAE30;
 static inline f32 centered(f32 x)
 {
   f32 new_var;
@@ -60,7 +60,7 @@ static inline f32 centered(f32 x)
     new_var3 = new_var2;
   }
   new_var2 = wrap(new_var3);
-  return new_var2 - D_800C5CA0_de;
+  return new_var2 - D_800CAE30;
 }
 
 f32 func_8029E1D4_de(f32 a, f32 b) { return centered(a - b); }

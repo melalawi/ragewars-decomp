@@ -1,6 +1,6 @@
 #include "resident_arena_menu.h"
 
-/* 36 menu slots with category/index and four successor indices; runtime aliases D_800E0644..D_800E065C.
+/* 36 menu slots with category/index and four successor indices; runtime aliases D_800E4694..D_800E065C.
  * ROM E5294..E5684. */
 const ResidentArenaMenuSlot ragewars_arena_menu_slots_us_rev1[36] = {
     {422, 2, 0, 1, -1, 2, -1},

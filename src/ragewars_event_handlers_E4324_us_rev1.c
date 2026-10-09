@@ -13,7 +13,7 @@ extern s32 func_8041DE94_de(void *, s32, s32, s32, s32);
  * advances 12bytes, and stops at a null handler.
  * Callback relocations retain the original KSEG0-bias-free encoding.
  * ROM E4324..E4390. */
-ResidentEventHandlerEntry D_800DF6D4[9] = {
+ResidentEventHandlerEntry D_800E3724[9] = {
     {3592, 16, (ResidentEventHandler)((char *)func_8041D134_de - 0x80000000U)},
     {3591, 16, (ResidentEventHandler)((char *)func_8041DBCC_de - 0x80000000U)},
     {10, 16, (ResidentEventHandler)((char *)func_8041DDF4_de - 0x80000000U)},

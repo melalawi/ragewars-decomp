@@ -3,7 +3,7 @@
    is set. */
 extern int func_80245798_de(void);
 
-extern void *D_800DE7E0;
+extern void *D_800E2830;
 
 
 
@@ -13,7 +13,7 @@ int func_80245908_de(void) {
     if (func_80245798_de() == 0) {
         return 0;
     }
-    record = D_800DE7E0;
+    record = D_800E2830;
     if ((((func_802458F8_S1 *)(record))->unk74 & 2) != 0) {
         return 1;
     }

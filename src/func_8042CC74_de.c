@@ -4,7 +4,7 @@
 
 
 
-extern func_8042CE54_S1 *D_800E1370;
+extern func_8042CE54_S1 *D_800E53C0;
 
 extern ResourceBank D_800E12D2[];
 
@@ -22,25 +22,25 @@ void func_8042CC74_de(void)
     bank = 0;
     offset = 0;
     do {
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[0]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[0]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[2]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[2]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[4]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[4]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[6]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[6]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[8]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[8]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[10]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[10]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[12]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[12]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[14]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[14]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[16]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[16]);
         func_8040E8D8_de(resource, 0);
-        resource = func_8040EC30_de(D_800E1370->unkE0, D_800E12D2[bank].ids[18]);
+        resource = func_8040EC30_de(D_800E53C0->unkE0, D_800E12D2[bank].ids[18]);
         func_8040E8D8_de(resource, 0);
         offset += 0x28;
         bank++;

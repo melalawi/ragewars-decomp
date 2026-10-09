@@ -72,7 +72,7 @@ void func_8028C6D4_de(void *, Vec3 *, void *);
 void func_80290950_de(void *, void *);
 extern char D_8011B200;
 extern char D_8011B388;
-extern char D_8011BDC8;
+extern char D_8011FE88;
 extern u8 D_801462E5;
 extern s32 D_800CD764_de[];
 
@@ -93,7 +93,7 @@ void *func_8028FFD0_de(char *arg0, s32 *arg1, s32 arg2, Vec3 rotation, Vec3 posi
   s32 temp_v1_2;
   char *temp_s0;
   char *temp_v1;
-  if (((*D_800CD764_de) == 0) || ((temp_v0 = func_8028B21C_de(&D_8011BDC8, arg2), temp_v0 == (-1))))
+  if (((*D_800CD764_de) == 0) || ((temp_v0 = func_8028B21C_de(&D_8011FE88, arg2), temp_v0 == (-1))))
   {
     return 0;
   }
@@ -119,7 +119,7 @@ void *func_8028FFD0_de(char *arg0, s32 *arg1, s32 arg2, Vec3 rotation, Vec3 posi
   ((func_8028FFB0_S2 *)(temp_s0))->unk1D0 = (s32) ((((func_8028FFB0_S2 *)(temp_s0))->unk1D0) | 1);
   func_80246184_de(temp_s0);
   ((func_8028FFB0_S2 *)(temp_s0))->unk1C8 = 0;
-  temp_v1_2 = func_8028C198_de(&D_8011BDC8, temp_v0);
+  temp_v1_2 = func_8028C198_de(&D_8011FE88, temp_v0);
   ((func_8028FFB0_S2 *)(temp_s0))->unk1D4 = arg1;
   if (arg1 != 0)
   {
@@ -162,7 +162,7 @@ void *func_8028FFD0_de(char *arg0, s32 *arg1, s32 arg2, Vec3 rotation, Vec3 posi
   center.x = ((func_8028FFB0_S2 *)(temp_s0))->unk8.v1;
   center.y = (((func_8028FFB0_S4 *)(temp_s0))->unkC) + (func_8024D284_de(temp_s0) * 0.5f);
   center.z = ((func_8028FFB0_S4 *)(temp_s0))->unk10;
-  func_8028C6D4_de(&D_8011BDC8, &center, (char *)temp_s0 + 0x1A8);
+  func_8028C6D4_de(&D_8011FE88, &center, (char *)temp_s0 + 0x1A8);
   return temp_s0;
 }
 
@@ -173,8 +173,8 @@ void *func_8028FFD0_de(char *arg0, s32 *arg1, s32 arg2, Vec3 rotation, Vec3 posi
 
 
 
-extern f32 D_800FF1F0[];
-extern f32 D_800CD738;
+extern f32 D_801031F0[];
+extern f32 D_800D2988;
 extern void func_80290424_de(Actor_func_80290238_de *actor);
 
 void func_80290238_de(World_func_80290238_de *world) {
@@ -192,15 +192,15 @@ void func_80290238_de(World_func_80290238_de *world) {
         next = actor->next;
         expired = 0;
         if (actor->lifetime > 0.0f) {
-            lifetime = actor->lifetime - D_800CD738;
+            lifetime = actor->lifetime - D_800D2988;
             actor->lifetime = lifetime;
             if (lifetime <= 0.0f) {
                 expired = 1;
             }
         }
-        if (!((D_800FF1F0[3] > actor->minX) && (D_800FF1F0[0] < actor->maxX) &&
-              (D_800FF1F0[5] > actor->minZ) && (D_800FF1F0[2] < actor->maxZ) &&
-              (D_800FF1F0[4] > actor->minY) && (D_800FF1F0[1] < actor->maxY))) {
+        if (!((D_801031F0[3] > actor->minX) && (D_801031F0[0] < actor->maxX) &&
+              (D_801031F0[5] > actor->minZ) && (D_801031F0[2] < actor->maxZ) &&
+              (D_801031F0[4] > actor->minY) && (D_801031F0[1] < actor->maxY))) {
             if (!(actor->flags & 0x200)) {
                 expired = 1;
             }

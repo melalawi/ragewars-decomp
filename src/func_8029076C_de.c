@@ -2,7 +2,7 @@
 #include "span_1000/code_8028FC98.h"
 #include "types.h"
 
-extern f32 D_800FF1F8[];
+extern f32 D_801031F8[];
 
 extern s32 func_8024D160_de(void *arg0);
 
@@ -25,7 +25,7 @@ void func_8029076C_de(Container_func_8029076C_de *arg0, Results *arg1) {
     if (node != 0) {
         mask = 0x30000;
         required = 0x20000;
-        bounds = D_800FF1F8 + 1;
+        bounds = D_801031F8 + 1;
         limit = 0x200;
         do {
             func_8024F470_de(node);

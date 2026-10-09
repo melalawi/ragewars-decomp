@@ -6,13 +6,13 @@
    matches, or zero when none does. */
 
 
-extern struct Entry_func_8041EB50_de D_800E0644[];
+extern struct Entry_func_8041EB50_de D_800E4694[];
 
 s32 func_80428120_de(s32 id) {
     s32 i;
 
     for (i = 0; i < 0x24; i++) {
-        if (D_800E0644[i].value == id) {
+        if (D_800E4694[i].value == id) {
             return i;
         }
     }

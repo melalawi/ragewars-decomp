@@ -28,8 +28,8 @@ s32 func_80254284_de(s32 arg0, void **arg1, s32 arg2, void *arg3) {
     resource = func_8025193C_de(0, arg2, arg2, 4, 0x1B, 0, 0, &D_800C3EA0_de, one);
     size = **(s32 **)resource;
     token = func_802BCF30_de();
-    counter = D_8010115C + one;
-    D_8010115C = counter;
+    counter = D_8010515C + one;
+    D_8010515C = counter;
     if (counter != one) {
         func_802BCF50_de(token);
         func_802BB2A0_de((s32)&D_80101140, 0, one);
@@ -38,8 +38,8 @@ s32 func_80254284_de(s32 arg0, void **arg1, s32 arg2, void *arg3) {
     }
     func_80254990_de(0, resource);
     token2 = func_802BCF30_de();
-    counter2 = D_8010115C - 1;
-    D_8010115C = counter2;
+    counter2 = D_8010515C - 1;
+    D_8010515C = counter2;
     if (counter2 != 0) {
         func_802BCF50_de(token2);
         func_802BB420_de(&D_80101140, 0, 1);

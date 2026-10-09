@@ -6,15 +6,15 @@
    zero: the label an option menu shows for that option. */
 
 
-extern s32 D_8014D4F0;
-extern char D_800D37E4[];
-extern char D_800D37E8[];
+extern s32 D_80153780;
+extern char D_800D7810[];
+extern char D_800D7814[];
 
 s32 func_8040A6A8_de(struct Field_func_8040A4A0_de *field) {
-    if (D_8014D4F0 != 0) {
-        field->text = D_800D37E4;
+    if (D_80153780 != 0) {
+        field->text = D_800D7810;
     } else {
-        field->text = D_800D37E8;
+        field->text = D_800D7814;
     }
     return 0;
 }
@@ -24,38 +24,38 @@ s32 func_8040A6A8_de(struct Field_func_8040A4A0_de *field) {
    Returns one. */
 
 
-extern s32 D_8014D4F0;
-extern char D_8014155C[];
+extern s32 D_80153780;
+extern char D_8014561C[];
 extern char D_0044E4B0[];
 extern void func_80442574_de(void *, void *, s32, s32, s32);
 
 s32 func_8040A6DC_de(void *unused, struct Record_func_8040A6DC_de *record) {
     do {
-        if (D_8014D4F0 != 0) {
-            func_80442574_de(D_8014155C, D_0044E4B0, record->first, record->second, 0);
+        if (D_80153780 != 0) {
+            func_80442574_de(D_8014561C, D_0044E4B0, record->first, record->second, 0);
         } else {
-            func_80442574_de(D_8014155C, record->resource, record->first, record->second, 0);
+            func_80442574_de(D_8014561C, record->resource, record->first, record->second, 0);
         }
     } while (0);
     return 1;
 }
 
 /* Stores 1 in D_80153730 and 0 in D_80153774. */
-extern s32 D_8014D4A0;
-extern s32 D_8014D4E4;
+extern s32 D_80153730;
+extern s32 D_80153774;
 
 void func_8040A748_de(void) {
-    D_8014D4A0 = 1;
-    D_8014D4E4 = 0;
+    D_80153730 = 1;
+    D_80153774 = 0;
 }
 
 /* Stores 0 in D_80153730 and 0 in D_80153774. */
-extern s32 D_8014D4A0;
-extern s32 D_8014D4E4;
+extern s32 D_80153730;
+extern s32 D_80153774;
 
 void func_8040A764_de(void) {
-    D_8014D4A0 = 0;
-    D_8014D4E4 = 0;
+    D_80153730 = 0;
+    D_80153774 = 0;
 }
 
 /* Clears bits 23 and 24 of the flag words at offsets 0xA8 and 0xD0 of the object at offset 0xC
@@ -64,13 +64,13 @@ void func_8040A764_de(void) {
 
 
 
-extern s32 D_8014D4A0;
-extern s32 D_8014D4E4;
+extern s32 D_80153730;
+extern s32 D_80153774;
 
 void func_8040A77C_de(struct Record_func_8040A77C_de *record) {
     record->target->first &= ~0x01800000;
-    D_8014D4A0 = 0;
-    D_8014D4E4 = 1;
+    D_80153730 = 0;
+    D_80153774 = 1;
     record->target->second &= ~0x01800000;
 }
 
@@ -78,19 +78,19 @@ void func_8040A77C_de(struct Record_func_8040A77C_de *record) {
    D_800D77F0 otherwise. Returns zero. */
 
 
-extern s32 D_8014D4A0;
-extern s32 D_8014D4E4;
-extern char D_800D37C0[];
-extern char D_800D37C8[];
-extern char D_800D37C4[];
+extern s32 D_80153730;
+extern s32 D_80153774;
+extern char D_800D77EC[];
+extern char D_800D77F4[];
+extern char D_800D77F0[];
 
 s32 func_8040A7BC_de(struct Field_func_8040A4A0_de *field) {
-    if (D_8014D4A0 != 0) {
-        field->text = D_800D37C0;
-    } else if (D_8014D4E4 != 0) {
-        field->text = D_800D37C8;
+    if (D_80153730 != 0) {
+        field->text = D_800D77EC;
+    } else if (D_80153774 != 0) {
+        field->text = D_800D77F4;
     } else {
-        field->text = D_800D37C4;
+        field->text = D_800D77F0;
     }
     return 0;
 }

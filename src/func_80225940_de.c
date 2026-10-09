@@ -24,9 +24,9 @@ extern char D_00450AD0;
 extern char D_00450AF4;
 extern char D_00450B18;
 extern char D_00450B3C;
-extern char D_80140F80;
+extern char D_80145040;
 extern u8 D_801462E5;
-extern s32 D_80142878;
+extern s32 D_80146938;
 
 extern void func_8044A07C_de(void);
 extern void func_80442574_de(char *, char *, SharedPlayer_func_80225940_de *, void *, s32);
@@ -61,12 +61,12 @@ void func_80225940_de(SharedPlayer_func_80225940_de *player, Body_func_80225940_
                 break;
             }
         }
-        if (D_80142878 != 0 && player->views5D8.view5D8_2.controls->team == 0 && player->views5D8.view5D8_2.controls->active != 0) {
+        if (D_80146938 != 0 && player->views5D8.view5D8_2.controls->team == 0 && player->views5D8.view5D8_2.controls->active != 0) {
             active = 0;
             out = 0;
             leader = 0;
             for (i = 0; i < 8; i++) {
-                other = func_8022A5F4_de(&D_80140F80, i);
+                other = func_8022A5F4_de(&D_80145040, i);
                 if (other != 0) {
                     if (other->views5D8.view5D8_2.controls->active != 0) {
                         active++;
@@ -80,15 +80,15 @@ void func_80225940_de(SharedPlayer_func_80225940_de *player, Body_func_80225940_
                 }
             }
             if (out == active) {
-                if (D_8014287C == 2 && leader->views5E4.view5E4_3.alive == 0) {
+                if (D_8014693C == 2 && leader->views5E4.view5E4_3.alive == 0) {
                     for (i = 0; i < 8; i++) {
-                        other = func_8022A5F4_de(&D_80140F80, i);
+                        other = func_8022A5F4_de(&D_80145040, i);
                         if (other != 0 && other->views5D8.view5D8_2.controls->active != 0) {
                             func_8044972C_de(other);
                         }
                     }
                 }
-                if (D_8014287C < 3) {
+                if (D_8014693C < 3) {
                     func_8044972C_de(leader);
                 }
             }
@@ -106,8 +106,8 @@ extern s32 D_800C9FE4;
 extern s32 D_800CD6E0_de;
 extern void *D_800FE9F0;
 extern u8 D_800FEAD8[];
-extern s32 D_8011BDC8;
-extern s32 D_801371D0;
+extern s32 D_8011FE88;
+extern s32 D_8013B290;
 
 extern char D_0022ECCC;
 
@@ -131,22 +131,22 @@ void func_80225B98_de(void *arg0, void *arg1, s32 arg2)
     resource_flags = 0;
 
     if (((ObjectLinks854 *)(arg0))->unk_14 != 0) {
-        resource = func_8028B2F8_de(&D_8011BDC8, ((ObjectLinks854 *)(arg0))->unk_14);
+        resource = func_8028B2F8_de(&D_8011FE88, ((ObjectLinks854 *)(arg0))->unk_14);
         if (resource != 0) {
             resource_flags = ((ObjectState108 *)(resource))->unk_44;
         }
     }
 
-    if (D_801371D0 != 0) {
+    if (D_8013B290 != 0) {
         enabled = 0;
     }
     if (((ObjectLinks854 *)(arg0))->unk_664 & 0x8000) {
         enabled = 0;
     }
-    if (D_801371D0 != 0) {
+    if (D_8013B290 != 0) {
         enabled = 0;
     }
-    if (D_80140F88 >= 2) {
+    if (D_80145048 >= 2) {
         enabled = 0;
     }
     if (arg2 == 12) {
@@ -181,7 +181,7 @@ void func_80225B98_de(void *arg0, void *arg1, s32 arg2)
         func_80245618_de(arg2, 0, (VoidCallback)&D_0022ECCC);
     }
 
-    resource = func_8028CFA0_de(&D_8011BDC8, -1, 0xC45);
+    resource = func_8028CFA0_de(&D_8011FE88, -1, 0xC45);
     if (resource != 0) {
         ((ObjectLinks854 *)(arg0))->unk_50 = ((ObjectState108 *)(resource))->unk_FC;
         ((ObjectLinks854 *)(arg0))->unk_54 = ((ObjectState108 *)(resource))->unk_100;

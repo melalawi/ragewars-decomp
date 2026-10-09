@@ -1,7 +1,7 @@
 #include "span_1000/code_80213ED4.h"
 #include "types.h"
 
-extern s32 D_801371D0;
+extern s32 D_8013B290;
 
 
 
@@ -33,7 +33,7 @@ s32 func_802169AC_de(void *arg0, void *arg1, void *arg2) {
     if (((func_802169AC_S2 *)(arg2))->unkE4 == 0x64F) {
         return 7;
     }
-    if (D_801371D0 == 0) {
+    if (D_8013B290 == 0) {
         if (((func_802169AC_S2 *)(arg2))->unk100 & 0x300000) {
             temp_a2 = ((func_802169AC_S2 *)(arg2))->unk1D8;
             if ((((func_802169AC_S3 *)(temp_a2))->unk794 == arg0) &&

@@ -59,7 +59,7 @@
 /* Calls func_8029973C_de; when func_80299A08_de reports 0x1C8, passes the word at offset 0x14 of the
    object D_800E5694 points to to func_804369E8_de, then passes -1 to func_8042E988_de if func_802999A0_de
    reports 0x16 for zero and 0xB otherwise, and calls func_802998A8_de. Returns zero. */
-extern struct func_80204468_S3 *D_800E1644_de;
+extern struct func_80204468_S3 *D_800E5694;
 
 
 extern void func_804369E8_de(s32);
@@ -75,7 +75,7 @@ s32 func_8043705C_de(void) {
 #elif defined(VERSION_EU_X)
     if (func_80299A08_de() == 0x1CC) {
 #endif
-        func_804369E8_de(D_800E1644_de->unk14);
+        func_804369E8_de(D_800E5694->unk14);
         func_8042E988_de(func_802999A0_de(0) == 0x16 ? -1 : 0xB);
         func_802998A8_de();
     }

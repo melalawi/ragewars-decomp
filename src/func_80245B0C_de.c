@@ -5,9 +5,9 @@
 /* Returns the state object's word at its measured value field. */
 
 
-extern struct MenuPanelRoot *D_800DE7E0;
+extern struct MenuPanelRoot *D_800E2830;
 
 s32 func_80245B0C_de(void) {
-    return D_800DE7E0->window;
+    return D_800E2830->window;
 }
 

@@ -4,7 +4,7 @@
 #if defined(VERSION_EU)
 #define func_802B2350 func_802AD520_eu
 #else
-#define func_802B2350 func_802AD280_de
+#define func_802B2350 func_802B2350
 #endif
 
 #if defined(VERSION_DE)

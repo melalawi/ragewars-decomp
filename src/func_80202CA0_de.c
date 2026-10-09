@@ -34,7 +34,7 @@ Vector4f func_80202CA0_de(Vec3 *dir) {
         q.w = D_800C1A00_de;
     } else if (dir->y < D_800C1A04_de) {
         angle = D_800C1A08_de;
-        q.x = D_80111D2C = func_802B7130_de(angle);
+        q.x = D_80115DEC = func_802B7130_de(angle);
         q.y = 0.0f;
         q.z = 0.0f;
         q.w = func_802B6560_de(angle);
@@ -43,10 +43,10 @@ Vector4f func_80202CA0_de(Vec3 *dir) {
         func_80272018_de(&axis, &up, dir);
         func_8027207C_de(&axis);
         angle = turn * D_800C1A0C;
-        D_80111D2C = func_802B7130_de(angle);
-        q.x = axis.x * D_80111D2C;
-        q.y = axis.y * D_80111D2C;
-        q.z = axis.z * D_80111D2C;
+        D_80115DEC = func_802B7130_de(angle);
+        q.x = axis.x * D_80115DEC;
+        q.y = axis.y * D_80115DEC;
+        q.z = axis.z * D_80115DEC;
         q.w = func_802B6560_de(angle);
     }
     return q;

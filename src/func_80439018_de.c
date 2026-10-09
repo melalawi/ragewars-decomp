@@ -10,8 +10,8 @@
 
 
 
-extern struct State_func_80439018_de *D_800E1850;
-extern u8 D_80142221;
+extern struct State_func_80439018_de *D_800E58A0;
+extern u8 D_801462E1;
 extern s32 func_8041A470_de(void *);
 extern s32 func_8041A6E0_de(void *);
 extern void func_8029973C_de();
@@ -26,25 +26,25 @@ s32 func_80439018_de(void) {
     s32 value;
     s32 track;
 
-    switch (func_8041A470_de(D_800E1850->menu)) {
+    switch (func_8041A470_de(D_800E58A0->menu)) {
     case 3:
         break;
     case 4:
         func_8029973C_de();
-        if (D_800E1850->target != -1) {
-            func_80298368_de(D_800E1850->target);
+        if (D_800E58A0->target != -1) {
+            func_80298368_de(D_800E58A0->target);
             return 0;
         }
         func_802998A8_de();
         return 0;
     }
-    value = func_8041A6E0_de(D_800E1850->effects);
-    options = &D_80142221;
+    value = func_8041A6E0_de(D_800E58A0->effects);
+    options = &D_801462E1;
     if (value != options[0]) {
         options[0] = value;
         func_8025DF34_de(0x460);
     }
-    value = func_8041A6E0_de(D_800E1850->music);
+    value = func_8041A6E0_de(D_800E58A0->music);
     if (value != options[-1]) {
         options[-1] = value;
         track = 0;

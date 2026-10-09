@@ -8,8 +8,8 @@
 
 
 extern s32 D_800CD3F0;
-extern s32 D_800CC390;
-extern f32 D_800CC3A0;
+extern s32 D_800D15E0;
+extern f32 D_800D15F0;
 extern f32 D_800C3E50_de[];
 extern f32 D_800C3E58_de;
 
@@ -53,18 +53,18 @@ void func_80250274_de(Owner_func_80250274_de *owner) {
         if (owner->fade <= 0) {
             return;
         }
-        D_800CC390 = 1;
-        D_800CC3A0 = owner->fade << 5;
+        D_800D15E0 = 1;
+        D_800D15F0 = owner->fade << 5;
         { Descriptor_func_80250274_de **slot = &owner->descriptor; key = (*slot)->key; }
     } else {
         if (owner->fade < 8) {
-            D_800CC390 = 1;
+            D_800D15E0 = 1;
             alpha = owner->fade << 5;
         } else {
             alpha = D_800C3E50_de[1];
-            D_800CC390 = 0;
+            D_800D15E0 = 0;
         }
-        D_800CC3A0 = alpha;
+        D_800D15F0 = alpha;
     }
     instance = func_802507AC_de(owner, key);
     if (instance != 0) {
@@ -77,14 +77,14 @@ void func_80250274_de(Owner_func_80250274_de *owner) {
                 char *object = (char *)header + header[1];
                 char *colors = (char *)header + header[2];
 
-                if (owner->colorFrame != D_800CD72B) {
+                if (owner->colorFrame != D_800D297B) {
                     func_8027892C_de(object, colors);
                 }
                 data = object;
             } else {
                 data = (char *)(header + 2);
             }
-            if (D_800CC390 != 0) {
+            if (D_800D15E0 != 0) {
                 func_8026DA4C_de(instance, owner->transform, 0, 0, data, arg2);
             } else {
                 func_8026DC24_de(instance, owner->transform, 0, 0, data, arg2);
@@ -92,8 +92,8 @@ void func_80250274_de(Owner_func_80250274_de *owner) {
             func_80253754_de(0, resource);
         }
         func_80253754_de(0, instance);
-        owner->colorFrame = D_800CD72B;
+        owner->colorFrame = D_800D297B;
     }
-    D_800CC390 = 0;
-    D_800CC3A0 = D_800C3E58_de;
+    D_800D15E0 = 0;
+    D_800D15F0 = D_800C3E58_de;
 }

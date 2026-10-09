@@ -20,8 +20,8 @@
 
 
 
-extern struct Screen_func_804201A4_de *D_800E0280;
-extern struct Row_func_80420438_de D_800E0284_de[];
+extern struct Screen_func_804201A4_de *D_800E42D0;
+extern struct Row_func_80420438_de D_800E42D4[];
 extern u8 D_800FEB57[];
 extern struct Resource_func_80419E54_de *func_8040EC30_de(void *, s32);
 extern void func_8040E928_de(struct Resource_func_80419E54_de *, s32);
@@ -34,25 +34,25 @@ void func_80420438_de(s32 player) {
     s32 i;
 
     for (i = 0; i < 3; i++) {
-        func_8040E8D8_de(func_8040EC30_de(D_800E0280->entries[0].window, D_800E0284_de[player].options[i].flags), 1);
+        func_8040E8D8_de(func_8040EC30_de(D_800E42D0->entries[0].window, D_800E42D4[player].options[i].flags), 1);
     }
-    item = func_8040EC30_de(D_800E0280->entries[0].window,
-                         D_800E0284_de[player].cells[D_800E0280->entries[player].choice].flags);
+    item = func_8040EC30_de(D_800E42D0->entries[0].window,
+                         D_800E42D4[player].cells[D_800E42D0->entries[player].choice].flags);
     func_8040E928_de(item, 0);
     item->value = 0x50;
-    D_800E0280->entries[player].choice = 0;
-    if (D_800E0280->entries[player].kind == -1) {
+    D_800E42D0->entries[player].choice = 0;
+    if (D_800E42D0->entries[player].kind == -1) {
         return;
     }
-    count = D_800FEB57[func_8041F1D8_de(D_800E0280->entries[player].kind) + player * 400];
+    count = D_800FEB57[func_8041F1D8_de(D_800E42D0->entries[player].kind) + player * 400];
     if (count <= 0) {
         count = 1;
     }
     for (i = 0; i < count; i++) {
-        func_8040E8D8_de(func_8040EC30_de(D_800E0280->entries[0].window, D_800E0284_de[player].options[i].flags), 0);
+        func_8040E8D8_de(func_8040EC30_de(D_800E42D0->entries[0].window, D_800E42D4[player].options[i].flags), 0);
     }
-    item = func_8040EC30_de(D_800E0280->entries[0].window,
-                         D_800E0284_de[player].cells[D_800E0280->entries[player].choice].flags);
+    item = func_8040EC30_de(D_800E42D0->entries[0].window,
+                         D_800E42D4[player].cells[D_800E42D0->entries[player].choice].flags);
     func_8040E928_de(item, 1);
     item->value = 0x96;
 }

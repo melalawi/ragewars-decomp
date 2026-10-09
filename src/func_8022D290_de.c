@@ -6,7 +6,7 @@
 
 
 
-extern s32 D_800C9AEC_de;
+extern s32 D_800CED30;
 
 void func_8022D290_de(Actor_func_8022D290_de *arg0) {
     s32 temp_v0;
@@ -22,7 +22,7 @@ void func_8022D290_de(Actor_func_8022D290_de *arg0) {
     arg0->flags = temp_v0 | 0x01000000;
     arg0->unk_0x11FC = 0;
     arg0->flags = temp_v0 | 0x01000000;
-    if (arg0->unk_0x13B4 == &D_800C9AEC_de) {
+    if (arg0->unk_0x13B4 == &D_800CED30) {
         arg0->unk_0x086C = 0x5E24;
     } else {
         arg0->unk_0x086C = 1;

@@ -4,7 +4,7 @@
 /* Copies a player label with spaces for empty characters and refreshes the entry. */
 
 
-extern u8 D_80140F80[],D_800E20AC[];
+extern u8 D_80145040[],D_800E20AC[];
 extern s32 func_8022A5A0_de(void *,func_80209B64_S4 *);
 #if defined(VERSION_EU) || defined(VERSION_EU_X)
 extern void func_80442384_de(s32,Entry_func_80445E04_de *,s32), func_80444F30_eu(void *);
@@ -21,9 +21,9 @@ s32 func_80445E04_de(s32 arg0, Entry_func_80445E04_de *arg1, s32 arg2) {
     func_80209B64_S4 *temp_s1;
 
     temp_s1 = arg1->unk1C;
-    temp_v0 = func_8022A5A0_de(D_80140F80, temp_s1);
+    temp_v0 = func_8022A5A0_de(D_80145040, temp_s1);
     var_a2 = (temp_v0 * 0x18) + D_800E20AC;
-    var_v1 = (temp_v0 * 0x96) + (D_80140F80 + 0x13DC);
+    var_v1 = (temp_v0 * 0x96) + (D_80145040 + 0x13DC);
     var_a1 = 0;
     var_a0 = 0;
     do {

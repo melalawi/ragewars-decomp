@@ -6,15 +6,15 @@
    zero: the label an option menu shows for that option. */
 
 
-extern s32 D_80142834;
-extern char D_800D3BBC[];
-extern char D_800D3BB8[];
+extern s32 D_801468F4;
+extern char D_800D7BE8[];
+extern char D_800D7BE4[];
 
 s32 func_80443964_de(struct Field_func_8040A4A0_de *field) {
-    if (D_80142834 != 0) {
-        field->text = D_800D3BBC;
+    if (D_801468F4 != 0) {
+        field->text = D_800D7BE8;
     } else {
-        field->text = D_800D3BB8;
+        field->text = D_800D7BE4;
     }
     return 0;
 }

@@ -11,32 +11,32 @@ enum MatchEnd {
     MATCH_END_POINT_TARGET
 };
 typedef struct World World;
-extern Game_func_8042D060_de D_8014155C;
-extern World D_80140F80;
+extern Game_func_8042D060_de D_8014561C;
+extern World D_80145040;
 extern s32 D_8014DD98;
 extern s32 func_80228070_de(World *world);
 extern s32 func_802281F0_de(World *world);
 extern s32 func_802282EC_de(World *world);
 s32 func_8042D060_de(void) {
     Settings_func_8042D060_de *settings;
-    settings = &D_8014155C.settings;
-    if (settings->timeSetting > 0 && D_8014155C.rules.timeLeft == 0.0f) {
+    settings = &D_8014561C.settings;
+    if (settings->timeSetting > 0 && D_8014561C.rules.timeLeft == 0.0f) {
         return MATCH_END_TIME_UP;
     }
-    if (func_80228070_de(&D_80140F80) != 0) {
+    if (func_80228070_de(&D_80145040) != 0) {
         return MATCH_END_SCORE_LIMIT;
     }
     switch (D_8014DD98) {
     case 0:
-        if (func_802282EC_de(&D_80140F80) != 0) {
+        if (func_802282EC_de(&D_80145040) != 0) {
             return MATCH_END_POINT_TARGET;
         }
         break;
     case 1:
-        if (func_802281F0_de(&D_80140F80) != 0) {
+        if (func_802281F0_de(&D_80145040) != 0) {
             return MATCH_END_TAG_LIMIT;
         }
         break;
     }
-    return D_8014155C.rules.lastStanding == 1;
+    return D_8014561C.rules.lastStanding == 1;
 }

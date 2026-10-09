@@ -6,7 +6,7 @@
 /* Evaluates keyframe track 3 of the current record's resource at time t: before the first key or
    after the last it holds that key's value, otherwise it finds the surrounding keys and blends
    their values with the smoothstep weight 3u^2 - 2u^3; an empty track yields D_800E0B60[1]. */
-extern func_80203E78_S1 *D_800DE7E0;
+extern func_80203E78_S1 *D_800E2830;
 extern s32 *func_8028FDB4_de(s32 resource, s32 index);
 f32 func_8040184C_de(f32 t) {
     s32 *track;
@@ -14,13 +14,13 @@ f32 func_8040184C_de(f32 t) {
     s32 count;
     s32 i;
     f32 u;
-    track = func_8028FDB4_de(D_800DE7E0->unk4, 3);
+    track = func_8028FDB4_de(D_800E2830->unk4, 3);
     key = (D_800C7470_Pair *)(track + 2);
     count = track[1];
     for (i = 0; i < count; i++) {
     }
     if (count == 0) {
-        return D_800DCB30[1];
+        return D_800E0B60[1];
     }
     if (t <= key[0].second) {
         return key[0].first;

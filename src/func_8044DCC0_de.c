@@ -2,10 +2,10 @@
 #include "span_16E000/code_8044E2B8.h"
 #include "types.h"
 
-extern char D_801428E0;
+extern char D_801469A0;
 
 s32 func_8044DCC0_de(void) {
-    Vtx *vertices = (Vtx *)&D_801428E0;
+    Vtx *vertices = (Vtx *)&D_801469A0;
     s32 i = 0;
     s32 more;
 
@@ -43,9 +43,9 @@ s32 func_8044DCC0_de(void) {
    match block to 2 and its word at 0x26DBC to one. */
 
 
-extern struct State_func_8044DD50_de D_801427E0;
-extern char D_8010AC90[];
-extern char D_80140F80[];
+extern struct State_func_8044DD50_de D_801468A0;
+extern char D_8010EC90[];
+extern char D_80145040[];
 extern void func_80264854_de(s32);
 extern void func_80285D30_de(void *);
 extern void func_8022A880_de(void *);
@@ -57,9 +57,9 @@ void func_8044DD50_de(char *match) {
     struct State_func_8044DD50_de *state;
 
     func_80264854_de(0);
-    func_80285D30_de(D_8010AC90);
-    func_8022A880_de(D_80140F80);
-    state = &D_801427E0;
+    func_80285D30_de(D_8010EC90);
+    func_8022A880_de(D_80145040);
+    state = &D_801468A0;
     state->a = 0;
     state->b = 0;
     state->c = 0;

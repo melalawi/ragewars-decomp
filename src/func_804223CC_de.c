@@ -6,13 +6,13 @@
    D_800E44A0 points to. Returns zero. */
 
 
-extern struct func_8022A404_S1 *D_800E0450;
+extern struct func_8022A404_S1 *D_800E44A0;
 extern void func_8029973C_de();
 
 s32 func_804223CC_de(void *first, void *second, u32 event, s32 value) {
     if ((event >> 16) == 3 && value == 0xB) {
         func_8029973C_de();
-        D_800E0450->unk20 = 1;
+        D_800E44A0->unk20 = 1;
     }
     return 0;
 }

@@ -5,11 +5,11 @@
 
 
 
-extern s32 D_80146E00;
+extern s32 D_8014D080;
 void func_8029958C_de(s32 arg0) {
     if (arg0 != 0) {
-        (((struct IntegerState530 *) ((s8 *) D_80146E00))->unk_52C) = (s32) ((((struct IntegerState530 *) ((s8 *) D_80146E00))->unk_52C) | 1);
+        (((struct IntegerState530 *) ((s8 *) D_8014D080))->unk_52C) = (s32) ((((struct IntegerState530 *) ((s8 *) D_8014D080))->unk_52C) | 1);
         return;
     }
-    (((struct IntegerState530 *) ((s8 *) D_80146E00))->unk_52C) = (s32) ((((struct IntegerState530 *) ((s8 *) D_80146E00))->unk_52C) & ~1);
+    (((struct IntegerState530 *) ((s8 *) D_8014D080))->unk_52C) = (s32) ((((struct IntegerState530 *) ((s8 *) D_8014D080))->unk_52C) & ~1);
 }

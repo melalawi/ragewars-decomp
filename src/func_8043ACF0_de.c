@@ -16,9 +16,9 @@
 
 
 
-extern struct Screen_func_8043ACF0_de *D_800E1990;
-extern struct StateFlags D_800E19B6[][19];
-extern struct StateFlags D_800E19CA[][19];
+extern struct Screen_func_8043ACF0_de *D_800E59E0;
+extern struct StateFlags D_800E5A06[][19];
+extern struct StateFlags D_800E5A1A[][19];
 extern struct Resource_func_80419E54_de *func_8040EC30_de(void *, s32);
 extern void func_8040E8D8_de(struct Resource_func_80419E54_de *, s32);
 extern void func_8040E928_de(struct Resource_func_80419E54_de *, s32);
@@ -28,19 +28,19 @@ void func_8043ACF0_de(s32 player, s32 direction) {
     struct Resource_func_80419E54_de *item;
     s32 column;
 
-    column = D_800E1990->entries[player].column;
-    item = func_8040EC30_de(D_800E1990->window, D_800E19CA[player][column].value);
+    column = D_800E59E0->entries[player].column;
+    item = func_8040EC30_de(D_800E59E0->window, D_800E5A1A[player][column].value);
     func_8040E928_de(item, 0);
     item->value = 0x23;
     if (column != 5) {
-        func_8040E8D8_de(func_8040EC30_de(D_800E1990->window, D_800E19B6[player][column].value), 0);
+        func_8040E8D8_de(func_8040EC30_de(D_800E59E0->window, D_800E5A06[player][column].value), 0);
     }
     if (direction == 1) {
         if (column == 0) {
             column = 5;
         } else {
             column--;
-            if (D_800E1990->entries[player].mode == 1 && column >= 3) {
+            if (D_800E59E0->entries[player].mode == 1 && column >= 3) {
                 column = 2;
             }
         }
@@ -49,7 +49,7 @@ void func_8043ACF0_de(s32 player, s32 direction) {
             column = 0;
         } else {
             column++;
-            if (D_800E1990->entries[player].mode == 1 && column >= 3) {
+            if (D_800E59E0->entries[player].mode == 1 && column >= 3) {
                 column = 5;
             }
         }
