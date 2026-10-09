@@ -9,17 +9,7 @@
    its source and append the buffer, volume and envelope-mixer commands for one subframe,
    recomputing the ramp targets and rates on the first pull after a change. */
 extern s16 D_800D4210[128]; /* eqpower */
-#if defined(VERSION_DE)
-extern char D_800C7600[]; /* Resident "EX" assertion expression. */
-#elif defined(VERSION_EU)
-extern const double D_800C81F0; /* Resident "EX" assertion expression. */
-#elif defined(VERSION_EU_X)
-extern const float D_800C8BC0; /* Resident "EX" assertion expression. */
-#elif defined(VERSION_US)
-extern char D_800C7520[]; /* Resident "EX" assertion expression. */
-#else
 extern char D_800CC850[]; /* Resident "EX" assertion expression. */
-#endif
 extern char D_800C7604[]; /* "audio/env.c" */
 
 extern void func_802BAC50_de(const char *, const char *, s32); /* __assert */
@@ -35,17 +25,7 @@ Acmd *func_802B4C7C_de(void *filter, s16 *inp, s16 *outp, s32 outCount, s32 samp
     if (e->motion != 1 || !outCount)
         return ptr;
 
-#if defined(VERSION_DE)
-    ((source) ? ((void)0) : func_802BAC50_de(D_800C7600, D_800C7604, 366));
-#elif defined(VERSION_EU)
-    ((source) ? ((void)0) : func_802BAC50_de(&D_800C81F0, D_800C7604, 366));
-#elif defined(VERSION_EU_X)
-    ((source) ? ((void)0) : func_802BAC50_de(&D_800C8BC0, D_800C7604, 366));
-#elif defined(VERSION_US)
-    ((source) ? ((void)0) : func_802BAC50_de(D_800C7520, D_800C7604, 366));
-#else
     ((source) ? ((void)0) : func_802BAC50_de(D_800CC850, D_800C7604, 366));
-#endif
 
     ptr = (*source->handler)(source, inp, outCount, sampleOffset, p);
 
@@ -78,23 +58,10 @@ Acmd *func_802B4C7C_de(void *filter, s16 *inp, s16 *outp, s32 outCount, s32 samp
 
 /* _getRate: approximate per-step volume scaling using the public ultralib log table and repeated squaring. */
 
-extern const LogTab D_800C7658_de;
-extern const f32 D_800C7698_de;
-extern const f64 D_800C76A0_de;
-extern const f64 D_800C76B0_de;
-extern const f64 D_800C76C0_de;
-extern const f64 D_800C76C8_de;
-extern const f64 D_800C76D0_de;
-extern const f64 D_800C76D8_de;
-extern const f64 D_800C76E0_de;
-extern const f64 D_800C76E8_de;
-extern const f64 D_800C76F0_de;
-extern const f64 D_800C76F8_de;
-extern const f64 D_800C7700_de;
 s16 func_802B4F68_de(f64 vol, f64 tgt, s32 count, u16 *ratel)
 {
   s16 s;
-  f64 invn = D_800C7698_de / ((f32) count);
+  f64 invn = (1.0f) / ((f32) count);
   f64 eps;
   f64 a;
   f64 fs;
@@ -116,19 +83,19 @@ s16 func_802B4F68_de(f64 vol, f64 tgt, s32 count, u16 *ratel)
       return 0;
     }
   }
-  if (tgt < D_800C76A0_de)
+  if (tgt < (1.0))
   {
-    tgt = D_800C76A0_de;
+    tgt = (1.0);
   }
   if (vol <= (0.0))
   {
-    vol = D_800C76A0_de;
+    vol = (1.0);
   }
   {
-    LogTab logtab = D_800C7658_de;
+    LogTab logtab = { { -0.91253697872161865, -0.75207197666168213, -0.60768300294876099, -0.47643798589706421, -0.3561440110206604, -0.24511200189590454, -0.14201900362968445, -0.04580400139093399 } };
     f64 absvalue;
     s32 *eptr;
-    i_invn = (s32) (invn * D_800C76B0_de);
+    i_invn = (s32) (invn * (1073741824.0));
     tgt = tgt / vol;
     eptr = &ex;
     *eptr = 0;
@@ -139,36 +106,34 @@ s16 func_802B4F68_de(f64 vol, f64 tgt, s32 count, u16 *ratel)
     else
     {
       absvalue = __builtin_fabs(tgt);
-      if (absvalue >= D_800C76C0_de)
+      if (absvalue >= (1.0))
       {
         do
         {
-          absvalue *= D_800C76C8_de;
+          absvalue *= (0.5);
           ++(*eptr);
         }
-        while (absvalue >= D_800C76C0_de);
+        while (absvalue >= (1.0));
       }
-      if (absvalue < D_800C76D0_de)
+      if (absvalue < (0.5))
       {
         do
         {
           absvalue += absvalue;
           --(*eptr);
         }
-        while (absvalue < D_800C76D0_de);
+        while (absvalue < (0.5));
       }
       vol = absvalue;
-      if (!(tgt > D_800C76D8_de))
+      if (!(tgt > (0.0)))
       {
         vol = -vol;
       }
     }
-    indx = (s32) (vol * D_800C76E0_de);
-    absvalue = D_800C76E8_de;
+    indx = (s32) (vol * (16.0));
+    absvalue = (0.69314718246459961);
     eps = ((new_var = logtab.v[indx - 8]) + ex) * absvalue;
-    eps /= D_800C76F0_de;
-    fs = eps + D_800C76F8_de;
-    a = D_800C76F8_de;
+    mant = (1073741824.0); eps /= mant; fs = eps + (1.0); a = (1.0);
     while (i_invn)
     {
       if (i_invn & 1)
@@ -184,14 +149,14 @@ s16 func_802B4F68_de(f64 vol, f64 tgt, s32 count, u16 *ratel)
   {
     a *= (a *= (a *= a));
     s = (s16) a;
-    *ratel = (s16) ((a - ((f32) s)) * D_800C7700_de);
+    *ratel = (s16) ((a - ((f32) s)) * (65535.0));
     return (s16) a;
   }
   else
   {
     a *= (a *= (a *= a));
     s = (s16) a;
-    *ratel = (s16) ((a - ((f32) s)) * D_800C7700_de);
+    *ratel = (s16) ((a - ((f32) s)) * (65535.0));
     return (s16) a;
   }
 }
@@ -274,11 +239,6 @@ f32 func_802B5288_de(f32 arg0, s32 arg1, s32 arg2, s32 arg3)
     return arg0 * result;
 }
 
-extern const f64 D_800C7710_de;
-extern const f64 D_800C7718_de;
-extern const f64 D_800C7720_de;
-extern const f64 D_800C7728_de;
-extern const f64 D_800C7730_de;
 
 f64 func_802B5300_de(f64 arg0, s32 *arg2) {
     f64 value;

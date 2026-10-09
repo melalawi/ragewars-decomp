@@ -25,16 +25,9 @@ extern void func_8042E988_de(s32);
 extern void func_802998A8_de(void);
 
 
-#if defined(VERSION_DE)
 enum { MENU_804291A8_473 = 469, MENU_804291A8_474 = 470 };
-#elif defined(VERSION_EU_X)
-enum { MENU_804291A8_473 = 477, MENU_804291A8_474 = 478 };
-#else
-enum { MENU_804291A8_473 = 473, MENU_804291A8_474 = 474 };
-#endif
 
 s32 func_80428FC8_de(void) {
-    /* FAKEMATCH: preserve resident jump-table labels and recovered dispatch schedule. */
     char *objects;
     s32 code;
     u32 level;
@@ -75,7 +68,7 @@ s32 func_80428FC8_de(void) {
         goto send;
     send_10_again:
         code = 10;
-        goto send;
+        goto send_typed;
     send_3:
         code = 3;
         goto send;
@@ -85,6 +78,10 @@ s32 func_80428FC8_de(void) {
         } else {
             code = -1;
         }
+    send_typed:
+        func_8042E988_de(code);
+        func_802998A8_de();
+        return 0;
     send:
         func_8042E988_de(code);
         func_802998A8_de();
