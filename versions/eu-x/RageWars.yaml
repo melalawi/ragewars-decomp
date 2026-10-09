@@ -2793,7 +2793,7 @@ segments:
       - [0xC38A0, rodata, "rodata/func_8022470C_de/800C2CA0"]
       - [0xC38E0, rodata, "rodata/func_80224C4C_de/800C7AF0"]
       - [0xC3910, rodata, "rodata/func_80224F5C_de/800C7B20"]
-      - [0xC3938, rodata, "rodata/func_802251DC_de/800C2D38"]
+      - [0xC3938, .rodata, "rodata/func_802251DC_de/800C2D38"]
       - [0xC39C0, rodata, "rodata/func_80225D34_de/800C2DC0"]
       - [0xC39D4, rodata, "rodata/func_80225F44_de/800C2DD4"]
       - [0xC3A14, rodata, "rodata/func_80226340_de/800C7C24"]
