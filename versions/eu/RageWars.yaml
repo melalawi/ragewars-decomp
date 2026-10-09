@@ -2,7 +2,7 @@ name: "Turok: Rage Wars"
 sha1: 46b474fac79a4b21535bb6c78ce3039a2c202359
 options:
   symbol_name_format: auto_$VRAM
-  symbol_name_format_no_rom: auto_$VRAM_$SEG
+  symbol_name_format_no_rom: auto_$VRAM
   create_c_files: False
   platform: n64
   compiler: KMC
