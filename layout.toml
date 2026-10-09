@@ -35152,6 +35152,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/ragewars_debug_continuation_us_rev1.c"
+kind = "data"
+group = "code_80200400"
+members = ["src/ragewars_debug_continuation_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/rodata.func_8021111C_de.800C2010.c"
 kind = "data"
 group = "code_802106E0"
