@@ -3866,7 +3866,7 @@ segments:
       - [0xCFA50, data, "rodata/unresolved/800CEE50"]
       - [0xCFA90, data, "rodata/writable/800CEE90"]
       - [0xCFAA0, data, "rodata/unresolved/800CEEA0"]
-      - [0xCFAB0, data, "rodata/writable/800CEEB0"]
+      - [0xCFAB0, .data, "rodata/writable/800CEEB0"]
       - [0xCFB50, rodata, "rodata/func_802A18CC_de/800D2C10"]
       - [0xCFB58, data, "rodata/writable/800CEF58"]
       - [0xCFB60, data, "rodata/unresolved/800CEF60"]
