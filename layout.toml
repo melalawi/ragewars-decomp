@@ -2573,7 +2573,7 @@ omit = []
 path = "src/func_80206080_de.c"
 kind = "c"
 group = "code_80204E78"
-members = ["func_80206080_de", "rodata/func_80206080_de/800C1A00", "rodata/func_80206080_de/800C1A08", "rodata/func_80206080_de/800C1AD0", "rodata/func_80206080_de/800C1AD8", "rodata/func_80206080_de/800C1D70", "rodata/func_80206080_de/800C1D78", "rodata/func_80206080_de/800C1DB0", "rodata/func_80206080_de/800C1DB8"]
+members = ["func_80206080_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -3200,7 +3200,7 @@ omit = []
 path = "src/func_80209DAC_de.c"
 kind = "c"
 group = "code_80209AE8"
-members = ["func_80209DAC_de", "rodata/func_80209DAC_de/800C1BF0", "rodata/func_80209DAC_de/800C1CC0", "rodata/func_80209DAC_de/800C1F60", "rodata/func_80209DAC_de/800C1FA0", "rodata/func_80209DAC_de/800C8700", "rodata/func_80209DAC_de/800C87E0", "rodata/func_80209DAC_de/800C93D0", "rodata/func_80209DAC_de/800C9DA0"]
+members = ["func_80209DAC_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -4784,7 +4784,7 @@ omit = []
 path = "src/func_8021D408_de.c"
 kind = "c"
 group = "code_8021CD70"
-members = ["func_8021D408_de", "rodata/func_8021D408_de/800C22D4", "rodata/func_8021D408_de/800C23A4", "rodata/func_8021D408_de/800C2644", "rodata/func_8021D408_de/800C2684", "rodata/func_8021D408_de/800C9E84", "rodata/func_8021D408_de/800C9F70", "rodata/func_8021D408_de/800CAB54", "rodata/func_8021D408_de/800CB524"]
+members = ["func_8021D408_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -4806,7 +4806,7 @@ omit = []
 path = "src/func_8021E2A0_de.c"
 kind = "c"
 group = "code_8021CD70"
-members = ["func_8021E2A0_de", "rodata/func_8021E2A0_de/800C2310", "rodata/func_8021E2A0_de/800C23E0", "rodata/func_8021E2A0_de/800C23F8", "rodata/func_8021E2A0_de/800C24BC", "rodata/func_8021E2A0_de/800C2680", "rodata/func_8021E2A0_de/800C26C0", "rodata/func_8021E2A0_de/800C26D8", "rodata/func_8021E2A0_de/800C282C", "rodata/func_8021E2A0_de/800C74E8"]
+members = ["func_8021E2A0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -4817,7 +4817,7 @@ omit = []
 path = "src/func_8021EEFC_de.c"
 kind = "c"
 group = "code_8021CD70"
-members = ["func_8021EEFC_de", "rodata/func_8021EEFC_de/800C252C", "rodata/func_8021EEFC_de/800C2530", "rodata/func_8021EEFC_de/800C25FC", "rodata/func_8021EEFC_de/800C2600", "rodata/func_8021EEFC_de/800C289C", "rodata/func_8021EEFC_de/800C28A0", "rodata/func_8021EEFC_de/800C28DC", "rodata/func_8021EEFC_de/800C28E0", "rodata/func_8021EEFC_de/800C9E88", "rodata/func_8021EEFC_de/800C9E98", "rodata/func_8021EEFC_de/800C9F74", "rodata/func_8021EEFC_de/800C9F84", "rodata/func_8021EEFC_de/800CAB58", "rodata/func_8021EEFC_de/800CAB68", "rodata/func_8021EEFC_de/800CB528", "rodata/func_8021EEFC_de/800CB538"]
+members = ["func_8021EEFC_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -4905,7 +4905,7 @@ omit = []
 path = "src/func_8022409C_de.c"
 kind = "c"
 group = "code_8021CD70"
-members = ["func_8022409C_de", "rodata/func_8022409C_de/800C2880", "rodata/func_8022409C_de/800C2890", "rodata/func_8022409C_de/800C2950", "rodata/func_8022409C_de/800C2960", "rodata/func_8022409C_de/800C2BF0", "rodata/func_8022409C_de/800C2C00", "rodata/func_8022409C_de/800C2C30", "rodata/func_8022409C_de/800C2C40"]
+members = ["func_8022409C_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -7226,7 +7226,7 @@ omit = []
 path = "src/func_802312C8_de.c"
 kind = "c"
 group = "code_8022F3E8"
-members = ["func_802312C8_de", "rodata/func_802312C8_de/800C2E8C", "rodata/func_802312C8_de/800C2F5C", "rodata/func_802312C8_de/800C320C", "rodata/func_802312C8_de/800C324C", "rodata/func_802312C8_de/800CA28C", "rodata/func_802312C8_de/800CA37C", "rodata/func_802312C8_de/800CAF5C", "rodata/func_802312C8_de/800CB92C"]
+members = ["func_802312C8_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -9569,7 +9569,7 @@ omit = []
 path = "src/func_80245D30_de.c"
 kind = "c"
 group = "code_80245980"
-members = ["func_80245D30_de", "rodata/func_80245D30_de/800C3720", "rodata/func_80245D30_de/800C37F0", "rodata/func_80245D30_de/800C3AA0", "rodata/func_80245D30_de/800C3AE0", "rodata/func_80245D30_de/800CB340", "rodata/func_80245D30_de/800CB430", "rodata/func_80245D30_de/800CC010", "rodata/func_80245D30_de/800CC9E0"]
+members = ["func_80245D30_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -9657,7 +9657,7 @@ omit = []
 path = "src/func_80246BE8_de.c"
 kind = "c"
 group = "code_80245980"
-members = ["func_80246BE8_de", "rodata/func_80246BE8_de/800C37CC", "rodata/func_80246BE8_de/800C37E0", "rodata/func_80246BE8_de/800C37F4", "rodata/func_80246BE8_de/800C389C", "rodata/func_80246BE8_de/800C38B0", "rodata/func_80246BE8_de/800C38C4", "rodata/func_80246BE8_de/800C3B4C", "rodata/func_80246BE8_de/800C3B60", "rodata/func_80246BE8_de/800C3B74", "rodata/func_80246BE8_de/800C3B8C", "rodata/func_80246BE8_de/800C3BA0", "rodata/func_80246BE8_de/800C3BB4"]
+members = ["func_80246BE8_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -9800,7 +9800,7 @@ omit = []
 path = "src/func_8024A7A0_de.c"
 kind = "c"
 group = "code_80246E34"
-members = ["func_8024A7A0_de", "rodata/func_8024A7A0_de/800C3994", "rodata/func_8024A7A0_de/800C39A4", "rodata/func_8024A7A0_de/800C3A64", "rodata/func_8024A7A0_de/800C3A74", "rodata/func_8024A7A0_de/800C3D14", "rodata/func_8024A7A0_de/800C3D24", "rodata/func_8024A7A0_de/800C3D54", "rodata/func_8024A7A0_de/800C3D64"]
+members = ["func_8024A7A0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -9943,7 +9943,7 @@ omit = []
 path = "src/func_8024BFD4_de.c"
 kind = "c"
 group = "code_8024BA6C"
-members = ["func_8024BFD4_de", "rodata/func_8024BFD4_de/800C3A58", "rodata/func_8024BFD4_de/800C3A6C", "rodata/func_8024BFD4_de/800C3B28", "rodata/func_8024BFD4_de/800C3B3C", "rodata/func_8024BFD4_de/800C3DD8", "rodata/func_8024BFD4_de/800C3DEC", "rodata/func_8024BFD4_de/800C3E18", "rodata/func_8024BFD4_de/800C3E2C"]
+members = ["func_8024BFD4_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -12792,7 +12792,7 @@ omit = []
 path = "src/func_8025F434_de.c"
 kind = "c"
 group = "code_8025E568"
-members = ["func_8025F434_de", "rodata/func_8025F434_de/800C403C", "rodata/func_8025F434_de/800C410C", "rodata/func_8025F434_de/800C43BC", "rodata/func_8025F434_de/800C43FC", "rodata/func_8025F434_de/800CBA70", "rodata/func_8025F434_de/800CBB60", "rodata/func_8025F434_de/800CC740", "rodata/func_8025F434_de/800CD110"]
+members = ["func_8025F434_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -12836,7 +12836,7 @@ omit = []
 path = "src/func_80260138_de.c"
 kind = "c"
 group = "code_8025E568"
-members = ["func_80260138_de", "rodata/func_80260138_de/800C4088", "rodata/func_80260138_de/800C4090", "rodata/func_80260138_de/800C4158", "rodata/func_80260138_de/800C4160", "rodata/func_80260138_de/800C4408", "rodata/func_80260138_de/800C4410", "rodata/func_80260138_de/800C4448", "rodata/func_80260138_de/800C4450"]
+members = ["func_80260138_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -13276,7 +13276,7 @@ omit = []
 path = "src/func_80261E98_de.c"
 kind = "c"
 group = "code_802609CC"
-members = ["func_80261E98_de", "rodata/func_80261E98_de/800C4128", "rodata/func_80261E98_de/800C4160", "rodata/func_80261E98_de/800C41F8", "rodata/func_80261E98_de/800C4230", "rodata/func_80261E98_de/800C44A8", "rodata/func_80261E98_de/800C44E0", "rodata/func_80261E98_de/800C44E8", "rodata/func_80261E98_de/800C4520"]
+members = ["func_80261E98_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -13386,7 +13386,7 @@ omit = []
 path = "src/func_802627A0_de.c"
 kind = "c"
 group = "code_802624A0"
-members = ["func_802627A0_de", "rodata/func_802627A0_de/800C4190", "rodata/func_802627A0_de/800C41A4", "rodata/func_802627A0_de/800C4260", "rodata/func_802627A0_de/800C4274", "rodata/func_802627A0_de/800C4510", "rodata/func_802627A0_de/800C4524", "rodata/func_802627A0_de/800C4550", "rodata/func_802627A0_de/800C4564"]
+members = ["func_802627A0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -14563,7 +14563,7 @@ omit = []
 path = "src/func_8026C484_de.c"
 kind = "c"
 group = "code_8026AC38"
-members = ["func_8026C484_de", "rodata/func_8026C484_de/800C459C", "rodata/func_8026C484_de/800C45B0", "rodata/func_8026C484_de/800C45C4", "rodata/func_8026C484_de/800C466C", "rodata/func_8026C484_de/800C4680", "rodata/func_8026C484_de/800C4694", "rodata/func_8026C484_de/800C491C", "rodata/func_8026C484_de/800C4930", "rodata/func_8026C484_de/800C4944", "rodata/func_8026C484_de/800C495C", "rodata/func_8026C484_de/800C4970", "rodata/func_8026C484_de/800C4984"]
+members = ["func_8026C484_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -16147,7 +16147,7 @@ omit = []
 path = "src/func_8027EB2C_de.c"
 kind = "c"
 group = "code_8027A0F4"
-members = ["func_8027EB2C_de", "rodata/func_8027EB2C_de/800C4C68", "rodata/func_8027EB2C_de/800C4C80", "rodata/func_8027EB2C_de/800C4C98", "rodata/func_8027EB2C_de/800C4D38", "rodata/func_8027EB2C_de/800C4D50", "rodata/func_8027EB2C_de/800C4D68", "rodata/func_8027EB2C_de/800C4FE8", "rodata/func_8027EB2C_de/800C5000", "rodata/func_8027EB2C_de/800C5018", "rodata/func_8027EB2C_de/800C5028", "rodata/func_8027EB2C_de/800C5040", "rodata/func_8027EB2C_de/800C5058"]
+members = ["func_8027EB2C_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -16158,7 +16158,7 @@ omit = []
 path = "src/func_8027ED6C_de.c"
 kind = "c"
 group = "code_8027A0F4"
-members = ["func_8027ED6C_de", "rodata/func_8027ED6C_de/800C4D00", "rodata/func_8027ED6C_de/800C4D78", "rodata/func_8027ED6C_de/800C5028", "rodata/func_8027ED6C_de/800C5068", "rodata/func_8027ED6C_de/800C5080", "rodata/func_8027ED6C_de/800C9E68"]
+members = ["func_8027ED6C_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -16180,7 +16180,7 @@ omit = []
 path = "src/func_802800C0_de.c"
 kind = "c"
 group = "code_8027A0F4"
-members = ["func_802800C0_de", "rodata/func_802800C0_de/800C4D34", "rodata/func_802800C0_de/800C4D5C", "rodata/func_802800C0_de/800C4E04", "rodata/func_802800C0_de/800C50B4", "rodata/func_802800C0_de/800C50DC", "rodata/func_802800C0_de/800C50F4", "rodata/func_802800C0_de/800C9EF4", "rodata/func_802800C0_de/800CD5C4", "rodata/func_802800C0_de/800CD6B4", "rodata/func_802800C0_de/800CE294", "rodata/func_802800C0_de/800CEC64"]
+members = ["func_802800C0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -16631,7 +16631,7 @@ omit = []
 path = "src/func_80286AA8_de.c"
 kind = "c"
 group = "code_80286050"
-members = ["func_80286AA8_de", "rodata/func_80286AA8_de/800C5034", "rodata/func_80286AA8_de/800C504C", "rodata/func_80286AA8_de/800C5058", "rodata/func_80286AA8_de/800C5084", "rodata/func_80286AA8_de/800C5090", "rodata/func_80286AA8_de/800C5098", "rodata/func_80286AA8_de/800C50B0", "rodata/func_80286AA8_de/800C50E4", "rodata/func_80286AA8_de/800C50F0", "rodata/func_80286AA8_de/800C5104", "rodata/func_80286AA8_de/800C511C", "rodata/func_80286AA8_de/800C5128", "rodata/func_80286AA8_de/800C5154", "rodata/func_80286AA8_de/800C5160", "rodata/func_80286AA8_de/800C5168", "rodata/func_80286AA8_de/800C5180", "rodata/func_80286AA8_de/800C51B4", "rodata/func_80286AA8_de/800C51C0", "rodata/func_80286AA8_de/800C51D4", "rodata/func_80286AA8_de/800C53B4", "rodata/func_80286AA8_de/800C53CC", "rodata/func_80286AA8_de/800C53D8", "rodata/func_80286AA8_de/800C53F4", "rodata/func_80286AA8_de/800C5404", "rodata/func_80286AA8_de/800C540C", "rodata/func_80286AA8_de/800C5410", "rodata/func_80286AA8_de/800C5418", "rodata/func_80286AA8_de/800C5430", "rodata/func_80286AA8_de/800C5444", "rodata/func_80286AA8_de/800C5450", "rodata/func_80286AA8_de/800C5458", "rodata/func_80286AA8_de/800C5464", "rodata/func_80286AA8_de/800C5470", "rodata/func_80286AA8_de/800C5484", "rodata/func_80286AA8_de/800C54A4", "rodata/func_80286AA8_de/800C54B0", "rodata/func_80286AA8_de/800C54C4", "rodata/func_80286AA8_de/800CA218_unclaimed_CAE38", "rodata/func_80286AA8_de/800CA258_unclaimed_CAE64", "rodata/func_80286AA8_de/800CA270_unclaimed_CAE90"]
+members = ["func_80286AA8_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -17731,7 +17731,7 @@ omit = []
 path = "src/func_80293534_de.c"
 kind = "c"
 group = "code_80291054"
-members = ["func_80293534_de", "rodata/func_80293534_de/800C5330", "rodata/func_80293534_de/800C5338", "rodata/func_80293534_de/800C5400", "rodata/func_80293534_de/800C5408", "rodata/func_80293534_de/800C56B0", "rodata/func_80293534_de/800C56B8", "rodata/func_80293534_de/800C56F0", "rodata/func_80293534_de/800C56F8"]
+members = ["func_80293534_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -18611,7 +18611,7 @@ omit = []
 path = "src/func_80298FE8_de.c"
 kind = "c"
 group = "code_80297CD0"
-members = ["func_80298FE8_de", "rodata/func_80298FE8_de/800C55A8", "rodata/func_80298FE8_de/800C55B0", "rodata/func_80298FE8_de/800C5678", "rodata/func_80298FE8_de/800C5680", "rodata/func_80298FE8_de/800C5918", "rodata/func_80298FE8_de/800C5920", "rodata/func_80298FE8_de/800C5958", "rodata/func_80298FE8_de/800C5960"]
+members = ["func_80298FE8_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -19293,7 +19293,7 @@ omit = []
 path = "src/func_8029E104_de.c"
 kind = "c"
 group = "code_8029EB74"
-members = ["func_8029E104_de", "rodata/func_8029E104_de/800C5B90", "rodata/func_8029E104_de/800C5BA0", "rodata/func_8029E104_de/800C5C60", "rodata/func_8029E104_de/800C5C70", "rodata/func_8029E104_de/800C5F00", "rodata/func_8029E104_de/800C5F10", "rodata/func_8029E104_de/800C5F40", "rodata/func_8029E104_de/800C5F50"]
+members = ["func_8029E104_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -20855,7 +20855,7 @@ omit = []
 path = "src/func_802A7AA4_de.c"
 kind = "c"
 group = "code_802A8A94"
-members = ["func_802A7AA4_de", "rodata/func_802A7AA4_de/800C5E78", "rodata/func_802A7AA4_de/800C5EC0", "rodata/func_802A7AA4_de/800C5F48", "rodata/func_802A7AA4_de/800C5F58", "rodata/func_802A7AA4_de/800C5F78", "rodata/func_802A7AA4_de/800C61E8", "rodata/func_802A7AA4_de/800C6228", "rodata/func_802A7AA4_de/800C6230", "rodata/func_802A7AA4_de/800C6238", "rodata/func_802A7AA4_de/800C6258", "rodata/func_802A7AA4_de/800CB0E8", "rodata/func_802A7AA4_de/800CB108"]
+members = ["func_802A7AA4_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -20877,7 +20877,7 @@ omit = []
 path = "src/func_802A8F28_de.c"
 kind = "c"
 group = "code_802A8A94"
-members = ["func_802A8F28_de", "rodata/func_802A8F28_de/800C6094", "rodata/func_802A8F28_de/800C60CC", "rodata/func_802A8F28_de/800C6148", "rodata/func_802A8F28_de/800C6180", "rodata/func_802A8F28_de/800C6404", "rodata/func_802A8F28_de/800C6428", "rodata/func_802A8F28_de/800C643C", "rodata/func_802A8F28_de/800C6460", "rodata/func_802A8F28_de/800CB2D8", "rodata/func_802A8F28_de/800CB310"]
+members = ["func_802A8F28_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -21339,7 +21339,7 @@ omit = []
 path = "src/func_802AE824_de.c"
 kind = "c"
 group = "code_802AE028"
-members = ["func_802AE824_de", "rodata/func_802AE824_de/800C7248", "rodata/func_802AE824_de/800C7258", "rodata/func_802AE824_de/800C7328", "rodata/func_802AE824_de/800C7338", "rodata/func_802AE824_de/800C7F18", "rodata/func_802AE824_de/800C7F28", "rodata/func_802AE824_de/800C88E8", "rodata/func_802AE824_de/800C88F8"]
+members = ["func_802AE824_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -21427,7 +21427,7 @@ omit = []
 path = "src/func_802AEC20_de.c"
 kind = "c"
 group = "code_802AE028"
-members = ["func_802AEC20_de", "rodata/func_802AEC20_de/800C7288", "rodata/func_802AEC20_de/800C7368", "rodata/func_802AEC20_de/800C7370", "rodata/func_802AEC20_de/800C7F58", "rodata/func_802AEC20_de/800C8928", "rodata/func_802AEC20_de/800C8930", "rodata/func_802AEC20_de/800CC5C0"]
+members = ["func_802AEC20_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -21768,7 +21768,7 @@ omit = []
 path = "src/func_802B0554_de.c"
 kind = "c"
 group = "code_802B0388"
-members = ["func_802B0554_de", "rodata/func_802B0554_de/800C7378", "rodata/func_802B0554_de/800C7458", "rodata/func_802B0554_de/800C7460", "rodata/func_802B0554_de/800C8048", "rodata/func_802B0554_de/800C8A18", "rodata/func_802B0554_de/800C8A20", "rodata/func_802B0554_de/800CC6B0"]
+members = ["func_802B0554_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -22538,7 +22538,7 @@ omit = []
 path = "src/func_802B3D10_de.c"
 kind = "c"
 group = "code_802B369C"
-members = ["func_802B3D10_de", "rodata/func_802B3D10_de/800C7490", "rodata/func_802B3D10_de/800C7494", "rodata/func_802B3D10_de/800C7570", "rodata/func_802B3D10_de/800C7574", "rodata/func_802B3D10_de/800C8160", "rodata/func_802B3D10_de/800C8164", "rodata/func_802B3D10_de/800C8B30", "rodata/func_802B3D10_de/800C8B34"]
+members = ["func_802B3D10_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -22571,7 +22571,7 @@ omit = []
 path = "src/func_802B3F10_de.c"
 kind = "c"
 group = "code_802B369C"
-members = ["func_802B3F10_de", "rodata/func_802B3F10_de/800C74D8", "rodata/func_802B3F10_de/800C74E8", "rodata/func_802B3F10_de/800C75A0", "rodata/func_802B3F10_de/800C75C8", "rodata/func_802B3F10_de/800C81A8", "rodata/func_802B3F10_de/800C81B8", "rodata/func_802B3F10_de/800C8B60", "rodata/func_802B3F10_de/800C8B88", "rodata/func_802B3F10_de/800CC7F0"]
+members = ["func_802B3F10_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -22648,7 +22648,7 @@ omit = []
 path = "src/func_802B4C7C_de.c"
 kind = "c"
 group = "code_802B4730"
-members = ["func_802B4C7C_de", "rodata/func_802B4C7C_de/800C7520", "rodata/func_802B4C7C_de/800C7524"]
+members = ["func_802B4C7C_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -22692,7 +22692,7 @@ omit = []
 path = "src/func_802B57F0_de.c"
 kind = "c"
 group = "code_802B53FC"
-members = ["func_802B57F0_de", "rodata/func_802B57F0_de/800C76A0", "rodata/func_802B57F0_de/800C76A4", "rodata/func_802B57F0_de/800C7780", "rodata/func_802B57F0_de/800C7784", "rodata/func_802B57F0_de/800C8370", "rodata/func_802B57F0_de/800C8374", "rodata/func_802B57F0_de/800C8D40", "rodata/func_802B57F0_de/800C8D44"]
+members = ["func_802B57F0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -22703,7 +22703,7 @@ omit = []
 path = "src/func_802B5B94_de.c"
 kind = "c"
 group = "code_802B53FC"
-members = ["func_802B5B94_de", "rodata/func_802B5B94_de/800C76D8", "rodata/func_802B5B94_de/800C76E0", "rodata/func_802B5B94_de/800C7798", "rodata/func_802B5B94_de/800C77C0", "rodata/func_802B5B94_de/800C83B0", "rodata/func_802B5B94_de/800C8D58", "rodata/func_802B5B94_de/800C8D80", "rodata/func_802B5B94_de/800CC9E8"]
+members = ["func_802B5B94_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -22791,7 +22791,7 @@ omit = []
 path = "src/func_802B6560_de.c"
 kind = "c"
 group = "code_802B53FC"
-members = ["func_802B6560_de", "rodata/func_802B6560_de/800C7738", "rodata/func_802B6560_de/800C7778", "rodata/func_802B6560_de/800C7818", "rodata/func_802B6560_de/800C7858", "rodata/func_802B6560_de/800C8408", "rodata/func_802B6560_de/800C8448", "rodata/func_802B6560_de/800C8DD8", "rodata/func_802B6560_de/800C8E18"]
+members = ["func_802B6560_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -23187,7 +23187,7 @@ omit = []
 path = "src/func_802B9590_de.c"
 kind = "c"
 group = "code_802B8DD0"
-members = ["func_802B9590_de", "rodata/func_802B9590_de/800C7870", "rodata/func_802B9590_de/800C7874", "rodata/func_802B9590_de/800C7950", "rodata/func_802B9590_de/800C7954", "rodata/func_802B9590_de/800C8540", "rodata/func_802B9590_de/800C8544", "rodata/func_802B9590_de/800C8F10", "rodata/func_802B9590_de/800C8F14"]
+members = ["func_802B9590_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -23253,7 +23253,7 @@ omit = []
 path = "src/func_802B9B20_de.c"
 kind = "c"
 group = "code_802B8DD0"
-members = ["func_802B9B20_de", "rodata/func_802B9B20_de/800C7890", "rodata/func_802B9B20_de/800C7894", "rodata/func_802B9B20_de/800C7970", "rodata/func_802B9B20_de/800C7974", "rodata/func_802B9B20_de/800C8560", "rodata/func_802B9B20_de/800C8564", "rodata/func_802B9B20_de/800C8F30", "rodata/func_802B9B20_de/800C8F34"]
+members = ["func_802B9B20_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -23297,7 +23297,7 @@ omit = []
 path = "src/func_802B9CB0_de.c"
 kind = "c"
 group = "code_802B9BB4"
-members = ["func_802B9CB0_de", "rodata/func_802B9CB0_de/800C78B0", "rodata/func_802B9CB0_de/800C78B4", "rodata/func_802B9CB0_de/800C7990", "rodata/func_802B9CB0_de/800C7994", "rodata/func_802B9CB0_de/800C8580", "rodata/func_802B9CB0_de/800C8584", "rodata/func_802B9CB0_de/800C8F50", "rodata/func_802B9CB0_de/800C8F54"]
+members = ["func_802B9CB0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -23363,7 +23363,7 @@ omit = []
 path = "src/func_802B9FD0_de.c"
 kind = "c"
 group = "code_802B9ED8"
-members = ["func_802B9FD0_de", "rodata/func_802B9FD0_de/800C78D0", "rodata/func_802B9FD0_de/800C78D4", "rodata/func_802B9FD0_de/800C79B0", "rodata/func_802B9FD0_de/800C79B4", "rodata/func_802B9FD0_de/800C85A0", "rodata/func_802B9FD0_de/800C85A4", "rodata/func_802B9FD0_de/800C8F70", "rodata/func_802B9FD0_de/800C8F74"]
+members = ["func_802B9FD0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -24001,7 +24001,7 @@ omit = []
 path = "src/func_8040170C_de.c"
 kind = "c"
 group = "code_80400000"
-members = ["func_8040170C_de", "rodata/func_8040170C_de/800DB7DC", "rodata/func_8040170C_de/800DCB2C", "rodata/func_8040170C_de/800DD4A8", "rodata/func_8040170C_de/800DE7F8", "rodata/func_8040170C_de/800E836C", "rodata/func_8040170C_de/800EA028", "rodata/func_8040170C_de/800ED1AC", "rodata/func_8040170C_de/800EEE68"]
+members = ["func_8040170C_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -31008,7 +31008,7 @@ omit = []
 path = "src/func_804306D8_de.c"
 kind = "c"
 group = "code_8042F988"
-members = ["func_804306D8_de", "rodata/func_804306D8_de/800DDC90", "rodata/func_804306D8_de/800DDD08", "rodata/func_804306D8_de/800E1CC0", "rodata/func_804306D8_de/800E1D38", "rodata/func_804306D8_de/800E94D0", "rodata/func_804306D8_de/800E9548"]
+members = ["func_804306D8_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -31030,7 +31030,7 @@ omit = []
 path = "src/func_804322AC_de.c"
 kind = "c"
 group = "code_8042F988"
-members = ["func_804322AC_de", "rodata/func_804322AC_de/800DCA78", "rodata/func_804322AC_de/800DDDC8", "rodata/func_804322AC_de/800DDDD0", "rodata/func_804322AC_de/800E1E00", "rodata/func_804322AC_de/800E9608", "rodata/func_804322AC_de/800E9610", "rodata/func_804322AC_de/800EE448"]
+members = ["func_804322AC_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -31096,7 +31096,7 @@ omit = []
 path = "src/func_80433EA0_de.c"
 kind = "c"
 group = "code_8042F988"
-members = ["func_80433EA0_de", "rodata/func_80433EA0_de/800DCB60", "rodata/func_80433EA0_de/800DCB64", "rodata/func_80433EA0_de/800DCB70", "rodata/func_80433EA0_de/800DDEB0", "rodata/func_80433EA0_de/800DDEB4", "rodata/func_80433EA0_de/800DDEC0", "rodata/func_80433EA0_de/800E96F0", "rodata/func_80433EA0_de/800E96F4", "rodata/func_80433EA0_de/800E9700", "rodata/func_80433EA0_de/800EE530", "rodata/func_80433EA0_de/800EE534", "rodata/func_80433EA0_de/800EE540"]
+members = ["func_80433EA0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -32878,7 +32878,7 @@ omit = []
 path = "src/func_8043C688_de.c"
 kind = "c"
 group = "code_80426310"
-members = ["func_8043C688_de", "rodata/func_8043C688_de/800DE1B8", "rodata/func_8043C688_de/800DE1E8", "rodata/func_8043C688_de/800DE218", "rodata/func_8043C688_de/800E99F8", "rodata/func_8043C688_de/800E9A28", "rodata/func_8043C688_de/800E9A58"]
+members = ["func_8043C688_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -33538,7 +33538,7 @@ omit = []
 path = "src/func_8043F294_de.c"
 kind = "c"
 group = "code_8043E9A8"
-members = ["func_8043F294_de", "rodata/func_8043F294_de/800DD0A0", "rodata/func_8043F294_de/800DD0CC", "rodata/func_8043F294_de/800DE3C8", "rodata/func_8043F294_de/800DE3F0", "rodata/func_8043F294_de/800E23F8", "rodata/func_8043F294_de/800E2420", "rodata/func_8043F294_de/800E9C08", "rodata/func_8043F294_de/800E9C30", "rodata/func_8043F294_de/800EEA70", "rodata/func_8043F294_de/800EEA9C"]
+members = ["func_8043F294_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -33560,7 +33560,7 @@ omit = []
 path = "src/func_8043F52C_de.c"
 kind = "c"
 group = "code_8043F69C"
-members = ["func_8043F52C_de", "rodata/func_8043F52C_de/800DD0D8", "rodata/func_8043F52C_de/800DD0F8", "rodata/func_8043F52C_de/800DE428", "rodata/func_8043F52C_de/800DE430", "rodata/func_8043F52C_de/800E2460", "rodata/func_8043F52C_de/800E9C68", "rodata/func_8043F52C_de/800E9C70", "rodata/func_8043F52C_de/800EEAA8", "rodata/func_8043F52C_de/800EEAC8"]
+members = ["func_8043F52C_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -33714,7 +33714,7 @@ omit = []
 path = "src/func_80442EC0_de.c"
 kind = "c"
 group = "code_80442BC8"
-members = ["func_80442EC0_de", "rodata/func_80442EC0_de/800DD370", "rodata/func_80442EC0_de/800DE698", "rodata/func_80442EC0_de/800DE6C0", "rodata/func_80442EC0_de/800E26C8", "rodata/func_80442EC0_de/800E9ED8", "rodata/func_80442EC0_de/800E9F00", "rodata/func_80442EC0_de/800EED40"]
+members = ["func_80442EC0_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
