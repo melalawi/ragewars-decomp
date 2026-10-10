@@ -1910,6 +1910,15 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "data_800CF230"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800CF230"]
+evidence = "inferred"
+signals = ["adjacent"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "data_800D0A2C"
 segment = "span_C76B0"
 members = ["rodata/unresolved/800D0964_unclaimed_D162C", "src/ragewars_effect_id_scales_us_rev1.c"]
@@ -36595,6 +36604,17 @@ path = "src/rodata.unresolved.800CF1A0.c"
 kind = "data"
 group = "data_800CF1A0"
 members = ["rodata/unresolved/800CF1A0"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rodata.unresolved.800CF230.c"
+kind = "data"
+group = "data_800CF230"
+members = ["rodata/unresolved/800CF230"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
