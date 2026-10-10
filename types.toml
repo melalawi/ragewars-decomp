@@ -2196,7 +2196,7 @@ schema = 1
 "func_80294B9C_de" = { evidence = "landed", signature = "s32 func_80294B9C_de(func_80293C20_S1 *arg0)" }
 "func_80294C50_de" = { evidence = "landed", signature = "void func_80294C50_de(void)" }
 "func_80294C84_de" = { evidence = "authored", signature = "void func_80294C84_de(void)" }
-"func_80294C8C_de" = { evidence = "landed", signature = "void func_80294C8C_de(s32 arg0, Resource_func_80294C8C_de *arg1)" }
+"func_80294C8C_de" = { evidence = "landed", signature = "void func_80294C8C_de(s32 arg0, Resource *arg1)" }
 "func_80294F1C_us_rev1" = { evidence = "authored", signature = "void func_80294F1C_us_rev1()" }
 "func_802953FC_us_rev1" = { evidence = "landed", signature = "s32 func_802953FC_us_rev1(s32 arg0)" }
 "func_802954E0_us_rev1" = { evidence = "landed", signature = "void func_802954E0_us_rev1(void)" }

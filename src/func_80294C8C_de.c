@@ -1,6 +1,6 @@
-#include "span_1000/code_80294C64.h"
 #include "types.h"
-#include "common/unused.h"
+
+extern s32 D_800CD894_de;
 
 extern s32 func_80285180_de(void *, s32);
 extern s32 *func_8028FDB4_de(void *, s32);
@@ -10,8 +10,14 @@ extern s32 **func_80254480_de(s32, void *, s32);
 extern void func_80253D10_de(s32, void *, s32 **);
 extern void *func_802BD3A0_de(void *, const void *, s32);
 
+typedef struct {
+    s32 **handle;
+    s32 unk4;
+    u32 flags;
+} Resource;
+
 /* Recolours the RGBA5551 frames of a resource by the global or per-resource colour mode, then rebuilds it as a three-part block holding the header, one selected entry of list 1 and one of list 2. */
-void func_80294C8C_de(s32 arg0, Resource_func_80294C8C_de *arg1) {
+void func_80294C8C_de(s32 arg0, Resource *arg1) {
     u32 size;
     s32 rem1;
     s32 rem2;
