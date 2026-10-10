@@ -7,11 +7,11 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 ## Progress
 
 <!-- progress -->
-<pre><code>all      [███████████▒░░░░░░░░]  57.95% (~59.83%)  3,974,197 of 6,857,872 bytes</code><br><code>de       [███████████▒░░░░░░░░]  58.53% (~60.24%)  809,220 of 1,382,608 bytes</code><br><code>eu       [███████████▒░░░░░░░░]  58.44% (~60.64%)  810,891 of 1,387,504 bytes</code><br><code>eu-x     [███████████▒░░░░░░░░]  57.79% (~60.28%)  761,803 of 1,318,176 bytes</code><br><code>us       [███████████▒░░░░░░░░]  57.40% (~59.78%)  793,796 of 1,382,992 bytes</code><br><code>us-rev1  [███████████▒░░░░░░░░]  57.59% (~58.25%)  798,487 of 1,386,592 bytes</code></pre>
+<pre><code>all      [███████████▒░░░░░░░░]  57.95% (~59.89%)  3,974,197 of 6,857,872 bytes</code><br><code>de       [███████████▒░░░░░░░░]  58.53% (~60.54%)  809,220 of 1,382,608 bytes</code><br><code>eu       [███████████▒░░░░░░░░]  58.44% (~60.64%)  810,891 of 1,387,504 bytes</code><br><code>eu-x     [███████████▒░░░░░░░░]  57.79% (~60.28%)  761,803 of 1,318,176 bytes</code><br><code>us       [███████████▒░░░░░░░░]  57.40% (~59.78%)  793,796 of 1,382,992 bytes</code><br><code>us-rev1  [███████████▒░░░░░░░░]  57.59% (~58.25%)  798,487 of 1,386,592 bytes</code></pre>
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
-| <pre><code>code      [█████████████▒░░░░░░]  66.41% (~67.20%)  733,836 of 1,104,964</code><br><code>data      [█████▒▒░░░░░░░░░░░░░]  27.15% (~32.54%)  75,384 of 277,644</code><br><code>functions [███████████████░░░░░]  78.54%  2,877 of 3,663</code></pre> |
+| <pre><code>code      [█████████████▒░░░░░░]  66.41% (~67.20%)  733,836 of 1,104,964</code><br><code>data      [█████▒▒░░░░░░░░░░░░░]  27.15% (~34.01%)  75,384 of 277,644</code><br><code>functions [███████████████░░░░░]  78.54%  2,877 of 3,663</code></pre> |
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
