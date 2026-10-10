@@ -2302,6 +2302,7 @@ schema = 1
 "func_8043D244_de" = { evidence = "authored", signature = "int func_8043D244_de(void)" }
 "func_8043D24C_de" = { evidence = "authored", signature = "int func_8043D24C_de(void)" }
 "func_8043D254_de" = { evidence = "authored", signature = "int func_8043D254_de(void)" }
+"func_8043DADC_de" = { evidence = "landed", signature = "s32 func_8043DADC_de(void *arg0, MenuRules *arg1)" }
 "func_8043DB04_de" = { evidence = "authored", signature = "s32 func_8043DB04_de(void *unused, struct Holder *holder)" }
 "func_8043DE50_de" = { evidence = "authored", signature = "void func_8043DE50_de(func_80250BD4_S1 *arg0)" }
 "func_8043DEF8_de" = { evidence = "authored", signature = "void func_8043DEF8_de(void *arg0, s32 arg1)" }

@@ -7086,7 +7086,7 @@ segments:
       - [0x1AB458, c, "func_8043D278_de"]
       - [0x1AB4E0, c, "func_8043D4E0_us_rev1"]
       - [0x1AB54C, c, "func_8043D36C_de"]
-      - [0x1ABCBC, asm, "func_8043DADC_de"]
+      - [0x1ABCBC, c, "func_8043DADC_de"]
       - [0x1ABCE4, c, "func_8043DB04_de"]
       - [0x1ABD2C, asm, "func_8043DD2C_us_rev1"]
       - [0x1ABEDC, c, "func_8043DE50_de"]

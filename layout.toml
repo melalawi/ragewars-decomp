@@ -33362,6 +33362,18 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/func_8043DADC_de.c"
+kind = "c"
+group = "code_8043D54C"
+members = ["func_8043DADC_de"]
+toolchain = "gcc-2.8.1-sn64"
+withheld = ["de", "us-rev1"]
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/func_8043DB04_de.c"
 kind = "c"
 group = "code_8043D54C"

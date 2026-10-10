@@ -2,6 +2,7 @@
 #define UNBAKE_SPAN_16E000_CODE_8043D54C_H
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
+#include "resident_event_handler.h"
 struct Shared_func_8043DEDC_S2;
 /* unbake published declaration: published_46502b30199cfe2182fc51a6 */
 struct Shared_func_8043DEDC_S2 {
@@ -43,5 +44,7 @@ struct Shared_func_8043DEDC_S3 {
     char pad79[0x6];
     s8 unk7F;
 };
+
+extern s32 func_8044972C_de(s32 arg0);
 
 #endif

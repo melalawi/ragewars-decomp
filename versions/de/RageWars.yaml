@@ -5274,7 +5274,7 @@ segments:
       - [0x1A3278, c, "func_8043D278_de"]
       - [0x1A3300, asm, "func_8043D300_de"]
       - [0x1A336C, c, "func_8043D36C_de"]
-      - [0x1A3ADC, asm, "func_8043DADC_de"]
+      - [0x1A3ADC, c, "func_8043DADC_de"]
       - [0x1A3B04, c, "func_8043DB04_de"]
       - [0x1A3B4C, data, "func_8043DB4C_de_padding_1A3B4C"]
       - [0x1A3B50, asm, "func_8043DB50_de"]

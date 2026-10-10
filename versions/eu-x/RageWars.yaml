@@ -5250,7 +5250,7 @@ segments:
       - [0x12E320, asm, "func_8043D300_de"]
       - [0x12E38C, c, "func_8043D36C_de"]
       - [0x12EAFC, data, "func_8043DADC_de_padding_12EAFC"]
-      - [0x12EB00, asm, "func_8043DADC_de"]
+      - [0x12EB00, c, "func_8043DADC_de"]
       - [0x12EB24, c, "func_8043DB04_de"]
       - [0x12EB6C, asm, "func_8043EB6C_eu_x"]
       - [0x12ED1C, c, "func_8043DE50_de"]
