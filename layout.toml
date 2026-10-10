@@ -36626,6 +36626,11 @@ path = "src/fuzzy/func_8042AF3C_de.c"
 scores = {de = 0.7741935483870968, eu = 0.7741935483870968, eu-x = 0.7741935483870968, us = 0.7741935483870968, us-rev1 = 0.7741935483870968}
 
 [[fuzzy]]
+member = "func_80444314_eu"
+path = "src/fuzzy/func_80444314_eu.c"
+scores = {eu = 0.9230769230769231, us-rev1 = 1.0}
+
+[[fuzzy]]
 member = "rodata/func_80233DFC_de/800C33A8"
 path = "src/fuzzy/rodata.func_80233DFC_de.800C33A8.c"
 scores = {eu = 1.0, eu-x = 0.2727272727272727}
