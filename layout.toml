@@ -1919,6 +1919,15 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "data_800FE7E0"
+segment = "span_C24F0"
+members = ["rodata/unresolved/800FE7E0"]
+evidence = "inferred"
+signals = ["adjacent"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "data_800FF1A0"
 segment = "span_C24F0"
 members = ["rodata/unresolved/800FF1A0"]
@@ -36431,6 +36440,17 @@ path = "src/rodata.unresolved.800F3D20.c"
 kind = "data"
 group = "data_800F3D20"
 members = ["rodata/unresolved/800F3D20"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rodata.unresolved.800FE7E0.c"
+kind = "data"
+group = "data_800FE7E0"
+members = ["rodata/unresolved/800FE7E0"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
