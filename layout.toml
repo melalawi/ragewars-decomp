@@ -37623,11 +37623,6 @@ path = "src/fuzzy/func_80448BFC_de.c"
 scores = {de = 0.9999999999999999, eu = 1.0, eu-x = 1.0, us = 1.0, us-rev1 = 1.0}
 
 [[fuzzy]]
-member = "rodata/func_80233DFC_de/800C33A8"
-path = "src/fuzzy/rodata.func_80233DFC_de.800C33A8.c"
-scores = {eu = 1.0, eu-x = 0.2727272727272727}
-
-[[fuzzy]]
 member = "rodata/unresolved/800C6218"
 path = "src/fuzzy/rodata.unresolved.800C6218.c"
 scores = {us = 0.9980430528375733}
@@ -37658,19 +37653,9 @@ path = "src/fuzzy/rodata.unresolved.800CA1EC.c"
 scores = {us = 0.975}
 
 [[fuzzy]]
-member = "rodata/unresolved/800E1904"
-path = "src/fuzzy/rodata.unresolved.800E1904.c"
-scores = {de = 0.08571428571428572}
-
-[[fuzzy]]
-member = "rodata/unresolved/800FCAD8"
-path = "src/fuzzy/rodata.unresolved.800FCAD8.c"
-scores = {us = 0.9954337899543378}
-
-[[fuzzy]]
 member = "rodata/unresolved/800FEAD8"
-path = "src/fuzzy/rodata.unresolved.800FEAD8.c"
-scores = {de = 0.9954337899543378}
+path = "src/fuzzy/rodata.unresolved.800FCAD8.c"
+scores = {de = 0.9954337899543378, us = 0.9954337899543378}
 
 [[fuzzy]]
 member = "rodata/unresolved/8014D288"
@@ -37778,51 +37763,26 @@ path = "src/fuzzy/rodata.writable.800D3640_unclaimed_D611C_unclaimed_D611F.c"
 scores = {us-rev1 = 0.9999999999999999}
 
 [[fuzzy]]
-member = "rodata/writable/800D4168"
+member = "rodata/writable/800D94E8"
 path = "src/fuzzy/rodata.writable.800D4168.c"
-scores = {us = 0.9534883720930233}
-
-[[fuzzy]]
-member = "rodata/writable/800D54B8"
-path = "src/fuzzy/rodata.writable.800D54B8.c"
-scores = {de = 0.9534883720930233}
-
-[[fuzzy]]
-member = "rodata/writable/800DDF04"
-path = "src/fuzzy/rodata.writable.800DDF04.c"
-scores = {us = 0.8695652173913043}
-
-[[fuzzy]]
-member = "rodata/writable/800DF254"
-path = "src/fuzzy/rodata.writable.800DF254.c"
-scores = {de = 0.8695652173913043}
-
-[[fuzzy]]
-member = "rodata/writable/800E0CF8"
-path = "src/fuzzy/rodata.writable.800E0CF8.c"
-scores = {eu-x = 0.9534883720930233}
+scores = {de = 0.9534883720930233, eu = 0.9534883720930233, eu-x = 0.9534883720930233, us = 0.9534883720930233}
 
 [[fuzzy]]
 member = "rodata/writable/800E32A4"
-path = "src/fuzzy/rodata.writable.800E32A4.c"
-scores = {us-rev1 = 0.8695652173913043}
-
-[[fuzzy]]
-member = "rodata/writable/800E5B38"
-path = "src/fuzzy/rodata.writable.800E5B38.c"
-scores = {eu = 0.9534883720930233}
-
-[[fuzzy]]
-member = "rodata/writable/800EAA84"
-path = "src/fuzzy/rodata.writable.800EAA84.c"
-scores = {eu-x = 0.8695652173913043}
-
-[[fuzzy]]
-member = "rodata/writable/800EF8C4"
-path = "src/fuzzy/rodata.writable.800EF8C4.c"
-scores = {eu = 0.8695652173913043}
+path = "src/fuzzy/rodata.writable.800DDF04.c"
+scores = {de = 0.8695652173913043, eu = 0.8695652173913043, eu-x = 0.8695652173913043, us = 0.8695652173913043, us-rev1 = 0.8695652173913043}
 
 [[fuzzy]]
 member = "rodata/writable/800FE5A8"
 path = "src/fuzzy/rodata.writable.800FE5A8.c"
 scores = {us = 0.9859154929577465}
+
+[[fuzzy]]
+member = "src/rw_menu_event_handlers_E6554_us_rev1.c"
+path = "src/fuzzy/rodata.unresolved.800E1904.c"
+scores = {de = 0.08571428571428572}
+
+[[fuzzy]]
+member = "src/rw_pool_80233DFC_C8DA8_us_rev1.c"
+path = "src/fuzzy/rodata.func_80233DFC_de.800C33A8.c"
+scores = {eu = 1.0, eu-x = 0.2727272727272727}
