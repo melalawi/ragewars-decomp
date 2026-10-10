@@ -36651,6 +36651,11 @@ path = "src/fuzzy/rodata.unresolved.800CA1EC.c"
 scores = {us = 0.025}
 
 [[fuzzy]]
+member = "rodata/unresolved/800E1904"
+path = "src/fuzzy/rodata.unresolved.800E1904.c"
+scores = {de = 0.08571428571428572}
+
+[[fuzzy]]
 member = "rodata/writable/800D2B70_unclaimed_D3784"
 path = "src/fuzzy/rodata.writable.800D2B70_unclaimed_D3784.c"
 scores = {us-rev1 = 0.9142857142857143}
