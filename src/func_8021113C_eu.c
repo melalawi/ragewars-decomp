@@ -1,4 +1,4 @@
-/* Runs an AI rider's close attack state: refreshes its view, re-checks line of sight every fourth frame, backs off
+/* Runs a computer rider's close attack state: refreshes its view, re-checks line of sight every fourth frame, backs off
    when its target is out of its layer or too close, re-rolls its strafe pattern and steers toward the target. */
 #include "types.h"
 
@@ -50,21 +50,21 @@ typedef struct Brain {
 extern s32 D_800D297C;
 extern char D_8013B364[];
 
-extern void func_80211020_de(Brain *);
+extern void func_80211020_de(Brain *arg0);
 extern s32 func_802099B4_de(Brain *, Actor *);
 extern void func_80209874_de(Brain *, s32);
 extern f32 func_802726BC_de(Vec3 *, Vec3 *);
-extern f32 func_80209BE0_de(Brain *);
+extern f32 func_80209BE0_de(Brain *arg0);
 extern s32 func_802744D4_de(void);
-extern f32 func_80209DAC_de(Brain *);
+extern f32 func_80209DAC_de(Brain *arg0);
 extern f32 func_80209308_de(Brain *, Vec3 *, f32, f32);
 extern s32 func_80210EFC_de(f32);
 extern void func_80210964_de(Actor *, s32);
-extern void func_80209E80_de(Brain *);
+extern void func_80209E80_de(Brain *arg0);
 extern s32 func_8020D1CC_de(char *, s32, s32);
 
 
-extern void func_80208410_de(Brain *), func_80208AAC_de(Brain *);
+extern void func_80208410_de(Brain *arg0), func_80208AAC_de(Brain *arg0);
 void func_8021113C_eu(Actor *actor) {
     s32 mine, theirs, dir, route;
     Actor *player;
