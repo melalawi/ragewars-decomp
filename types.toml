@@ -324,7 +324,7 @@ schema = 1
 "func_80210090_de" = { evidence = "landed", signature = "int func_80210090_de(void *arg0)" }
 "func_802100B8_de" = { evidence = "landed", signature = "int func_802100B8_de(void *arg0)" }
 "func_802100E0_de" = { evidence = "landed", signature = "void func_802100E0_de(void *arg0)" }
-"func_80210198_eu" = { evidence = "landed", signature = "s32 func_80210198_eu(RouteArrivalBrain *brain)" }
+"func_80210198_eu" = { evidence = "landed", signature = "s32 func_80210198_eu(Brain *brain)" }
 "func_802106E0_de" = { evidence = "landed", signature = "void func_802106E0_de(Vehicle *vehicle, s32 wheel)" }
 "func_80210E88_de" = { evidence = "landed", signature = "int func_80210E88_de(Player_func_80210E88_de *p)" }
 "func_80210EFC_de" = { evidence = "landed", signature = "s32 func_80210EFC_de(f32 arg0)" }
