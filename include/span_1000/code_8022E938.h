@@ -1,6 +1,9 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8022E938_H
 #define UNBAKE_SPAN_1000_CODE_8022E938_H
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
+#include "resident_event_handler.h"
+#include "types.h"
 struct func_8022EA2C_S2;
 /* unbake published declaration: published_00125f582388c3885c71ed44 */
 typedef struct func_8022EA2C_S2 func_8022EA2C_S2;
@@ -610,5 +613,31 @@ extern float D_800C2E24_de;
 struct func_8022E938_S1;
 /* unbake published declaration: published_f6ecb1c0059641272bca0da1 */
 typedef struct func_8022E938_S1 func_8022E938_S1;
+
+extern void *D_800D052C[];
+typedef struct func_8022E998_S1 func_8022E998_S1;
+typedef struct func_8022E998_S2 func_8022E998_S2;
+typedef struct func_8022E998_S3 func_8022E998_S3;
+typedef union func_8022E998_S2_UC { s16 v0; u16 v1; } func_8022E998_S2_UC;
+struct func_8022E998_S1 {
+    char pad0[0x6AC];
+    s32 unk6AC;
+    char pad6AC[0x6B0 - 0x6AC - sizeof(s32)];
+    s32 unk6B0;
+    char pad6B0[0x770 - 0x6B0 - sizeof(s32)];
+    s16 unk770;
+    char pad770[0x938 - 0x770 - sizeof(s16)];
+    s32 unk938;
+    char pad938[0xCB8 - 0x938 - sizeof(s32)];
+    s32 unkCB8;
+};
+struct func_8022E998_S2 {
+    char pad0[0xC];
+    func_8022E998_S2_UC unkC;
+};
+struct func_8022E998_S3 {
+    char pad0[0x602];
+    s8 unk602;
+};
 
 #endif

@@ -372,7 +372,8 @@ schema = 1
 "func_8022E758_de" = { evidence = "authored", signature = "u8 func_8022E758_de(s32 arg0, s32 arg1)" }
 "func_8022E890_de" = { evidence = "authored", signature = "void func_8022E890_de(void *unused0, s32 *arg1)" }
 "func_8022E940_de" = { evidence = "authored", signature = "void func_8022E940_de(void)" }
-"func_8022E948_de" = { evidence = "authored", signature = "void func_8022E948_de(void *arg0)" }
+"func_8022E948_de" = { evidence = "landed", signature = "void func_8022E948_de(void *arg0)" }
+"func_8022E9A8_de" = { evidence = "landed", signature = "void func_8022E9A8_de(void *arg0)" }
 "func_8022EB04_de" = { evidence = "authored", signature = "void func_8022EB04_de(void)" }
 "func_8022EC3C_de" = { evidence = "authored", signature = "void func_8022EC3C_de(void *object)" }
 "func_8022ECC4_de" = { evidence = "authored", signature = "void func_8022ECC4_de(void)" }

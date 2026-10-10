@@ -627,7 +627,7 @@ segments:
       - [0x2F464, c, "func_8022E890_de"]
       - [0x2F4A4, c, "func_8022E8D0_de"]
       - [0x2F51C, c, "func_8022E948_de"]
-      - [0x2F57C, asm, "func_8022E9A8_de"]
+      - [0x2F57C, c, "func_8022E9A8_de"]
       - [0x2F610, c, "func_8022EA3C_de"]
       - [0x2FB04, data, "rodata/unresolved/8022EF04"]
       - [0x2FB10, c, "func_8022EF30_de"]
