@@ -3803,7 +3803,7 @@ segments:
       - [0xCCE70, .data, "rodata/writable/800CC270"]
       - [0xCCEC0, data, "rodata/unresolved/800CC2C0"]
       - [0xCCED0, data, "rodata/writable/800CC2D0"]
-      - [0xCCEE0, data, "rodata/unresolved/800CC2E0"]
+      - [0xCCEE0, .data, "rodata/unresolved/800CC2E0"]
       - [0xCDEE8, rodata, "rodata/func_802745D0_de/800CD2E8"]
       - [0xCDEEC, data, "rodata/unresolved/800CD2EC"]
       - [0xCDEF0, data, "rodata/writable/800CD2F0"]
