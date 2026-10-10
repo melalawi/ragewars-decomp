@@ -684,7 +684,7 @@ segments:
       - [0x334A8, asm, "func_80232878_eu"]
       - [0x334E8, asm, "func_802328D8_de"]
       - [0x3354C, c, "func_8023293C_de"]
-      - [0x33774, asm, "func_80232B44_eu"]
+      - [0x33774, c, "func_80232B44_eu"]
       - [0x337A4, c, "func_80232B64_de"]
       - [0x33810, c, "func_80232BD0_de"]
       - [0x338A8, c, "func_80232C68_de"]

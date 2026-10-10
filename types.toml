@@ -407,7 +407,10 @@ schema = 1
 "func_80232780_de" = { evidence = "authored", signature = "s32 func_80232780_de(s32 arg0)" }
 "func_802327A0_de" = { evidence = "declared", signature = "s32 func_802327A0_de(s32)" }
 "func_802327D4_de" = { evidence = "authored", signature = "s32 func_802327D4_de(s32 arg0)" }
-"func_8023293C_de" = { evidence = "authored", signature = "void func_8023293C_de(void *arg0, void *arg1, void *arg2)" }
+"func_8023293C_de" = { evidence = "landed", signature = "void func_8023293C_de(void *arg0, void *arg1, void *arg2)" }
+"func_80232A48_de" = { evidence = "landed", signature = "void func_80232A48_de(void *arg0, void *arg1)" }
+"func_80232ABC_de" = { evidence = "landed", signature = "s32 func_80232ABC_de(void *arg0)" }
+"func_80232B44_eu" = { evidence = "landed", signature = "void func_80232B44_eu(void *arg0, func_80232A38_S1 *arg1)" }
 "func_80232C68_de" = { evidence = "authored", signature = "void func_80232C68_de(void *arg0)" }
 "func_80232C88_de" = { evidence = "authored", signature = "void func_80232C88_de(void *arg0, void *arg1)" }
 "func_80232DF4_de" = { evidence = "authored", signature = "void func_80232DF4_de(void *arg0)" }
