@@ -279,8 +279,14 @@ schema = 1
 "func_8022C110_de" = { evidence = "authored", signature = "void func_8022C110_de(Player_func_8022C110_de *player)" }
 "func_8022C2B4_de" = { evidence = "authored", signature = "void func_8022C2B4_de(void *arg0, char *arg1)" }
 "func_8022C454_de" = { evidence = "authored", signature = "void *func_8022C454_de(void *arg0)" }
-"func_8022C55C_de" = { evidence = "authored", signature = "void *func_8022C55C_de(void *arg0, u32 arg1)" }
-"func_8022C67C_de" = { evidence = "authored", signature = "float func_8022C67C_de(void * arg0)" }
+"func_8022C460_de" = { evidence = "landed", signature = "s32 func_8022C460_de(void *arg0)" }
+"func_8022C490_de" = { evidence = "landed", signature = "void func_8022C490_de(Player1680 *player)" }
+"func_8022C55C_de" = { evidence = "landed", signature = "void *func_8022C55C_de(void *arg0, u32 arg1)" }
+"func_8022C5AC_de" = { evidence = "landed", signature = "void func_8022C5AC_de(char *object)" }
+"func_8022C5DC_de" = { evidence = "landed", signature = "void func_8022C5DC_de(void *object)" }
+"func_8022C620_de" = { evidence = "landed", signature = "s32 func_8022C620_de(char *object)" }
+"func_8022C650_de" = { evidence = "landed", signature = "s32 func_8022C650_de(char *object)" }
+"func_8022C67C_de" = { evidence = "landed", signature = "float func_8022C67C_de(void *arg0)" }
 "func_8022C6E4_de" = { evidence = "declared", signature = "void func_8022C6E4_de(void *, void *)" }
 "func_8022C894_de" = { evidence = "authored", signature = "void func_8022C894_de(void *arg0, void *arg1)" }
 "func_8022C8A4_de" = { evidence = "declared", signature = "void func_8022C8A4_de(void *, void *)" }
@@ -2391,6 +2397,8 @@ schema = 1
 "func_8044DB70_de" = { evidence = "declared", signature = "void func_8044DB70_de()" }
 "func_8044DCC0_de" = { evidence = "authored", signature = "int func_8044DCC0_de()" }
 "func_8044DDD4_de" = { evidence = "declared", signature = "void func_8044DDD4_de(char *)" }
+"getEye" = { evidence = "landed", signature = "inline static void getEye(Player1680 *player, Vec3 *pos)" }
+"getYaw" = { evidence = "landed", signature = "inline static float getYaw(void)" }
 
 [global]
 "data/unresolved/800DDA24" = { declaration = "extern u8 data/unresolved/800DDA24[0xC];", evidence = "splat", section = ".data", size = 12 }

@@ -2,6 +2,7 @@
 #define UNBAKE_SPAN_1000_CODE_8022BA90_H
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
+#include "audio_callbacks.h"
 /* unbake published declaration: published_01b6a34e751592e419a1fc4e */
 extern void *func_8022C454_de(void *arg0);
 
@@ -285,4 +286,23 @@ struct func_8022BC04_S1 {
 };
 
 extern float func_8022C67C_de(void * arg0);
+
+typedef struct func_8022C67C_S1 {
+    int unk0;
+    int unk4;
+    int unk8;
+    char padC[0x90 - 0xC];
+    float unk90;
+    float unk94;
+    float unk98;
+    int unk9C;
+    float unkA0;
+    int unkA4;
+    int unkA8;
+    float unkAC;
+    float unkB0;
+    int unkB4;
+    int unkB8;
+} func_8022C67C_S1;
+
 #endif
