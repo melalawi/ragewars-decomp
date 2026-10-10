@@ -1,20 +1,26 @@
-
-#include "types.h"
-struct Prize { s32 id; char **name; };
-struct Reward { s32 id; s32 tier; s32 mode; s32 shown; char name[12]; };
 /* Deals out random rewards for count entries at difficulty level: starts every entry at 5 points
    from the level's budget in D_800E37B8, then for up to 10001 random picks doubles an entry below
    20 points while the budget covers it; each entry then records mode 4 and its tier (points / 10)
    in D_80153F80's 0x1C-byte records and draws random tier items from the seventeen per tier in
    D_800E381C, copying the item's name, until it gets one that exists. */
+#include "types.h"
 
+typedef struct {
+    s32 id;
+    char **name;
+} Prize;
 
-
-
+typedef struct {
+    s32 id;
+    s32 tier;
+    s32 mode;
+    s32 shown;
+    char name[12];
+} Reward;
 
 extern s32 D_800E37B8[];
-extern struct Prize D_800E381C[][17];
-extern struct Reward D_80153F80[];
+extern Prize D_800E381C[][17];
+extern Reward D_80153F80[];
 
 extern s32 func_802744D4_de(void);
 extern void func_802A025C_de(char *dst, char *src);
