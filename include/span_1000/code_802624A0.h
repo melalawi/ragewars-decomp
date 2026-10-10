@@ -37,6 +37,7 @@ struct Effect_func_80262A9C_de;
 struct Effect_func_80262A9C_de {
     char pad0[0x2F0];
     s32 *ref;
+    char pad2F4[0x2F8 - 0x2F4];
 };
 
 struct EffectDesc;
@@ -205,7 +206,7 @@ union func_80262ABC_S1_U5F00 {
 struct func_80262ABC_S1;
 /* unbake published declaration: published_c08c3177527ef7bb16aaa56a */
 struct func_80262ABC_S1 {
-    char pad0[0x5F00];
+    Effect_func_80262A9C_de effects[0x20];
     IntrusiveList unk5F00;
     char pad5F00[0x5F14 - 0x5F00 - sizeof(IntrusiveList)];
     IntrusiveList unk5F14;

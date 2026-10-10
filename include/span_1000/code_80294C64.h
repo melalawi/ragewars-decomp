@@ -1,10 +1,26 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80294C64_H
 #define UNBAKE_SPAN_1000_CODE_80294C64_H
 #include "../types.h"
-struct func_802956AC_S2;
+struct ResidentState;
 /* unbake published declaration: published_0072273f0620a80a3dd1b162 */
-struct func_802956AC_S2 {
-    char pad0[0x2010];
+struct ResidentState {
+    s32 unk0;
+    s32 unk4;
+    s32 unk8;
+    s32 unkC;
+};
+
+struct ResidentSlot;
+struct ResidentSlot {
+    s32 unk0;
+    char pad4[0x21A0 - 0x4];
+    s32 unk21A0;
+};
+
+struct ResidentEntry;
+struct ResidentEntry {
+    s32 unk0;
+    char pad4[0x2010 - 0x4];
     s32 unk2010;
 };
 
@@ -27,9 +43,9 @@ extern void func_802958D8_us_rev1(void);
 /* unbake published declaration: published_3c2bf5b6d4e6f0c011447884 */
 extern void func_802954E0_us_rev1();
 
-struct func_802956AC_S2;
-/* unbake published declaration: published_4772247265295467a999b993 */
-typedef struct func_802956AC_S2 func_802956AC_S2;
+typedef struct ResidentState ResidentState;
+typedef struct ResidentSlot ResidentSlot;
+typedef struct ResidentEntry ResidentEntry;
 
 struct func_802953FC_S1;
 /* unbake published declaration: published_477c963744fb400d7cc7f19b */
@@ -99,24 +115,13 @@ struct func_802958D8_S1 {
 };
 
 /* unbake published declaration: published_6eb7334b48064eba5d851c9d */
-extern int D_8014AEB8;
+extern ResidentState D_8014AEB8;
 
 struct func_80295B18_S1;
 /* unbake published declaration: published_7036288ae0999ea1bade4bc7 */
 struct func_80295B18_S1 {
     char pad0[0x3];
     char unk3;
-};
-
-struct func_802956AC_S1;
-/* unbake published declaration: published_755ddb88d3bf9503246ee378 */
-typedef struct func_802956AC_S1 func_802956AC_S1;
-
-struct func_802956AC_S1;
-/* unbake published declaration: published_7f19bdff5763296fdb5115f5 */
-struct func_802956AC_S1 {
-    char pad0[0x21A0];
-    s32 unk21A0;
 };
 
 /* unbake published declaration: published_86ed956bc2c9ad1286e07311 */
