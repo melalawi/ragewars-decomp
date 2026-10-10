@@ -24,20 +24,22 @@ typedef struct TeamCounters {
 extern TeamCounters D_801468A0;
 
 void func_8022E17C_de(TeamPlayer *a, TeamPlayer *b, s32 mode) {
-    u8 teamA;
-    u8 teamB;
+    TeamCounters *c = &D_801468A0;
+    s32 teamA;
+    s32 teamB;
     s32 *win;
     s32 *loss;
 
-    if (D_801468A0.active != 0) {
+    if (c->active != 0) {
         teamA = a->stats->team;
         teamB = b->stats->team;
-        if ((s32)teamA >= 0 && (s32)teamA < 5) {
-            win = &D_801468A0.wins[teamA];
-            loss = &D_801468A0.losses[teamA];
+        if (teamA >= 0) {
+          if (teamA < 5) {
+            win = &c->wins[teamA];
+            loss = &c->losses[teamA];
             switch (mode) {
             case 0:
-                if (D_801468A0.frozen == 0 && D_801468A0.locked == 0) {
+                if (c->frozen == 0 && c->locked == 0) {
                     *win -= 1;
                 }
                 break;
@@ -57,6 +59,7 @@ void func_8022E17C_de(TeamPlayer *a, TeamPlayer *b, s32 mode) {
                 }
                 break;
             }
+          }
         }
     }
 }
