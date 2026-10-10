@@ -325,7 +325,7 @@ segments:
       - [0x12C88, c, "func_802120A8_eu"]
       - [0x12FDC, c, "func_802123FC_eu"]
       - [0x13050, c, "func_80212470_eu"]
-      - [0x131F0, asm, "func_80212610_eu"]
+      - [0x131F0, c, "func_80212610_eu"]
       - [0x013264, data, "func_80212610_eu_padding_13264"]
       - [0x13268, data, "rodata/unresolved/80212668"]
       - [0x13270, asm, "func_80212670_de"]

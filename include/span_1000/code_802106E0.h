@@ -2,6 +2,8 @@
 #define UNBAKE_SPAN_1000_CODE_802106E0_H
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_1dc8418c21db.h"
+#include "resident_event_handler.h"
 /* unbake published declaration: published_09ccbe7e7b0455e623071e2c */
 extern float D_800C1FD8_de;
 
@@ -397,4 +399,26 @@ struct func_802123DC_S3 {
 extern void func_802120A8_eu(Actor_func_802120A8_eu *actor);
 
 extern int func_80212610_eu(void * arg0);
+
+extern s32 func_802744D4_de(void);
+typedef struct func_802125F0_S1 func_802125F0_S1;
+typedef struct func_802125F0_S2 func_802125F0_S2;
+typedef struct func_802125F0_S3 func_802125F0_S3;
+struct func_802125F0_S1 {
+    char pad0[0x1D8];
+    void* unk1D8;
+};
+struct func_802125F0_S2 {
+    char pad0[0x1454];
+    void* unk1454;
+};
+struct func_802125F0_S3 {
+    char pad0[0x220];
+    s32 unk220;
+    char pad220[0x2D8 - 0x220 - sizeof(s32)];
+    s32 unk2D8;
+    char pad2D8[0x2DC - 0x2D8 - sizeof(s32)];
+    s32 unk2DC;
+};
+
 #endif

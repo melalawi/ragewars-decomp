@@ -4446,7 +4446,7 @@ omit = []
 path = "src/func_80212470_eu.c"
 kind = "c"
 group = "code_802106E0"
-members = ["func_80212470_eu"]
+members = ["func_80212470_eu", "func_80212610_eu"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]

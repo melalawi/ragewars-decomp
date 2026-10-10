@@ -59,3 +59,18 @@ void func_80212544_eu(void *arg0) {
     ((func_80212450_S3 *)(inner))->unk31C = 0;
     ((func_80212450_S3 *)(inner))->unk320 = -1;
 }
+
+int func_80212610_eu(void *arg0) {
+    void *level1 = ((func_802125F0_S1 *)(arg0))->unk1D8;
+    void *inner = ((func_802125F0_S2 *)(level1))->unk1454;
+    s32 r1, r2;
+
+    ((func_802125F0_S3 *)(inner))->unk220 = 0;
+    func_80209988_de(inner);
+
+    r1 = func_802744D4_de();
+    ((func_802125F0_S3 *)(inner))->unk2D8 = r1 % 4 + 0xC;
+
+    r2 = func_802744D4_de();
+    ((func_802125F0_S3 *)(inner))->unk2DC = r2 % 2;
+}

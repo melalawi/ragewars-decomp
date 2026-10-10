@@ -330,7 +330,7 @@ segments:
       - [0x12CA8, c, "func_802120A8_eu"]
       - [0x12FFC, c, "func_802123FC_eu"]
       - [0x13070, c, "func_80212470_eu"]
-      - [0x13210, asm, "func_80212610_eu"]
+      - [0x13210, c, "func_80212610_eu"]
       - [0x13284, asm, "func_80212684_eu"]
       - [0x13290, asm, "func_80212670_de"]
       - [0x13414, c, "func_802127F4_de"]

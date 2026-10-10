@@ -152,8 +152,9 @@ schema = 1
 "func_80211A9C_eu" = { evidence = "authored", signature = "void func_80211A9C_eu(CloseAttackActor *actor)" }
 "func_802120A8_eu" = { evidence = "authored", signature = "void func_802120A8_eu(Actor_func_802120A8_eu *actor)" }
 "func_802123FC_eu" = { evidence = "authored", signature = "void func_802123FC_eu(void *arg0)" }
-"func_80212470_eu" = { evidence = "authored", signature = "void func_80212470_eu(void *arg0)" }
-"func_80212610_eu" = { evidence = "authored", signature = "int func_80212610_eu(void * arg0)" }
+"func_80212470_eu" = { evidence = "landed", signature = "void func_80212470_eu(void *arg0)" }
+"func_80212544_eu" = { evidence = "landed", signature = "void func_80212544_eu(void *arg0)" }
+"func_80212610_eu" = { evidence = "landed", signature = "int func_80212610_eu(void *arg0)" }
 "func_802127F4_de" = { evidence = "authored", signature = "void func_802127F4_de(void *arg0)" }
 "func_80212828_de" = { evidence = "authored", signature = "void func_80212828_de(void *arg0)" }
 "func_8021290C_de" = { evidence = "authored", signature = "void func_8021290C_de(void *arg0)" }
