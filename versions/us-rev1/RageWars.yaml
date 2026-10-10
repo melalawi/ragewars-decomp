@@ -5069,7 +5069,7 @@ segments:
       - [0xD1F78, data, "rodata/unresolved/800D0F00_unclaimed_D1BA0_unclaimed_D1E68_unclaimed_D1F78"]
       - [0xD1F80, data, "src/ragewars_effect_callback_flags_us_rev1.c"]
       - [0xD20A8, data, "rodata/unresolved/800D0F00_unclaimed_D1BA0_unclaimed_D1E68_unclaimed_D1F78_unclaimed_D20A8"]
-      - [0xD20B0, data, "src/ragewars_particle_intensity_texture_us_rev1.c"]
+      - [0xD20B0, .data, "src/ragewars_particle_intensity_texture_us_rev1.c"]
       - [0xD21B0, .data, "rodata/writable/800D15B0"]
       - [0xD2200, data, "rodata/unresolved/800D1600"]
       - [0xD2210, data, "rodata/writable/800D1610"]

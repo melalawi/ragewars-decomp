@@ -1910,6 +1910,15 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "data_800D14A8"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800D0F00_unclaimed_D1BA0_unclaimed_D1E68_unclaimed_D1F78_unclaimed_D20A8", "src/ragewars_particle_intensity_texture_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "data_800D30D0"
 segment = "span_C24F0"
 members = ["rodata/unresolved/800D30D0"]
@@ -35401,6 +35410,17 @@ path = "src/ragewars_debug_continuation_us_rev1.c"
 kind = "data"
 group = "code_80200400"
 members = ["src/ragewars_debug_continuation_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_particle_intensity_texture_us_rev1.c"
+kind = "data"
+group = "data_800D14A8"
+members = ["src/ragewars_particle_intensity_texture_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
