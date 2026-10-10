@@ -3887,7 +3887,7 @@ segments:
       - [0xE07D0, data, "rodata/writable/800DFBD0"]
       - [0xE07F0, data, "rodata/unresolved/800DFBF0"]
       - [0xE0850, data, "rodata/writable/800DFC50"]
-      - [0xE0860, data, "rodata/unresolved/800DFC60"]
+      - [0xE0860, .data, "rodata/unresolved/800DFC60"]
       - [0xE1690, data, "rodata/writable/800E0A90"]
       - [0xE1694, data, "rodata/unresolved/800E0A94"]
       - [0xE1698, data, "rodata/writable/800E0A98"]
