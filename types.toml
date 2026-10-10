@@ -132,7 +132,7 @@ schema = 1
 "func_8020EE50_de" = { evidence = "declared", signature = "void func_8020EE50_de(void *)" }
 "func_8020EEA4_de" = { evidence = "declared", signature = "void func_8020EEA4_de(void *)" }
 "func_8020EF60_us" = { evidence = "authored", signature = "int func_8020EF60_us(void * arg0)" }
-"func_8020EF80_eu" = { evidence = "authored", signature = "int func_8020EF80_eu(void * arg0)" }
+"func_8020EF80_eu" = { evidence = "landed", signature = "int func_8020EF80_eu(void *self)" }
 "func_8020EF80_eu_x" = { evidence = "authored", signature = "s32 func_8020EF80_eu_x(PickupGoalObj8020EF60 *arg0)" }
 "func_8020F150_de" = { evidence = "authored", signature = "s32 func_8020F150_de(s32 *ids)" }
 "func_8020F2A8_de" = { evidence = "authored", signature = "s32 func_8020F2A8_de(void *arg0)" }

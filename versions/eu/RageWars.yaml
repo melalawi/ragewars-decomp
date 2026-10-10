@@ -293,7 +293,7 @@ segments:
       - [0xFA70, c, "func_8020EE50_de"]
       - [0xFAC4, c, "func_8020EEA4_de"]
       - [0xFB74, data, "func_8020EF74_eu_padding_FB74"]
-      - [0x00FB80, asm, "func_8020EF80_eu"]
+      - [0x00FB80, c, "func_8020EF80_eu"]
       - [0xFD70, c, "func_8020F150_de"]
       - [0xFEC8, c, "func_8020F2A8_de"]
       - [0xFFA8, c, "func_8020F388_de"]
