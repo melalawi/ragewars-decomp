@@ -4412,7 +4412,7 @@ segments:
       - [0x181E1C, c, "func_8040B9DC_de"]
       - [0x181E98, c, "func_8040BA58_de"]
       - [0x181F14, c, "func_8040BAD4_de"]
-      - [0x181F80, asm, "func_8040BF80_eu"]
+      - [0x181F80, c, "func_8040BF80_eu"]
       - [0x181FEC, asm, "func_8040BFEC_eu"]
       - [0x181FF0, c, "func_8040BBB0_de"]
       - [0x1821F8, asm, "func_8040BDB8_de"]

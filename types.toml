@@ -1692,6 +1692,7 @@ schema = 1
 "func_8040B84C_de" = { evidence = "authored", signature = "void func_8040B84C_de(void)" }
 "func_8040BBB0_de" = { evidence = "authored", signature = "void func_8040BBB0_de()" }
 "func_8040BDB8_de" = { evidence = "declared", signature = "void func_8040BDB8_de(unsigned,int,int,int,int,int)" }
+"func_8040BF80_eu" = { evidence = "landed", signature = "s32 func_8040BF80_eu(struct Field_func_8040A4A0_de *field)" }
 "func_8040C09C_de" = { evidence = "authored", signature = "void func_8040C09C_de()" }
 "func_8040C2F8_de" = { evidence = "authored", signature = "void func_8040C2F8_de()" }
 "func_8040C318_de" = { evidence = "authored", signature = "void func_8040C318_de()" }
