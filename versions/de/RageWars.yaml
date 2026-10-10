@@ -4268,7 +4268,7 @@ segments:
       - [0xE29F8, data, "rodata/writable/800E1DF8"]
       - [0xE2A24, data, "rodata/unresolved/800E1E24"]
       - [0xE2C94, data, "rodata/writable/800E2094"]
-      - [0xE2CA0, data, "rodata/unresolved/800E20A0"]
+      - [0xE2CA0, .data, "rodata/unresolved/800E20A0"]
       - [0xE4C00, rodata, "rodata/shared/800E4000"]
       - [0xE4C0A, data, "rodata/unresolved/800E400A"]
       - [0xF2880, data, "rodata/writable/800F1C80"]
