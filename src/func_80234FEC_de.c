@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_1000/code_80233920.h"
 
 #include "shared/gameplay_camera.h"
@@ -35,7 +36,7 @@ void func_802349C0_de(void *);                        /* extern */
 s32 func_8023AFF0_de();                  /* extern */
                /* extern */
 s32 func_802B6900_de(f32 *, f32, f32, f32, f32, f32, f32, f32, f32, f32); /* extern */
-extern s32 D_8011FE88;
+
 extern void *D_80145060;
 extern s32 D_80141008;
 extern s32 D_800D297C;

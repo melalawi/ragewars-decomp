@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8021CD70.h"
@@ -35,7 +36,7 @@
 
 
 extern f32 D_800D2988;
-extern char D_8011FE88;
+
 extern char D_80145088;
 extern char D_800C2950_de;
 

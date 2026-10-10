@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_8022BA90.h"
 #include "types.h"
@@ -7,7 +8,7 @@
 extern u8 D_801462C8[];
 
 
-extern char D_8011FE88;
+
 
 
 

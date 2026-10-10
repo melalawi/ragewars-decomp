@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "shared/unsigned_quotient.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8024BA6C.h"
@@ -61,7 +62,7 @@ extern char D_800C3930_de;
 extern s32 D_800D2978;
 extern s32 D_800D297C;
 extern Shared_FrameProfile D_80100530;
-extern char D_8011FE88;
+
 
 
 

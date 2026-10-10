@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8028567C.h"
@@ -5,7 +6,7 @@
 
 
 
-extern s32 D_8011FE88;
+
 extern void *func_8028CE78_de(void *object, int index);
 extern void func_80264DE0_de(unsigned int *record, unsigned int value);
 

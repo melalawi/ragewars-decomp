@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "gfx.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
@@ -28,7 +29,7 @@ extern s32 D_800E28D0;
 extern s32 D_800E28D4;
 extern s32 D_800E28D8;
 extern Gfx *D_80110634;
-extern char D_8011FE88;
+
 extern char D_8011D8D0;
 extern f32 D_801377B0;
 extern s32 D_80140FF8;

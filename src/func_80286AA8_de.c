@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "shared/sceneactorstride.h"
 #include "shared/sceneglobal.h"
 #include "shared/scenefontresources.h"
@@ -99,7 +100,7 @@ extern unsigned char D_80106248[];
 extern unsigned char D_8011AFC0[];
 
 
-extern unsigned char D_8011FE88[];
+
 
 
 extern struct Shared_SceneGlobal D_80145040;

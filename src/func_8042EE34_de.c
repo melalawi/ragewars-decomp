@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8042E080.h"
 #include "types.h"
@@ -8,11 +9,11 @@
 
 extern u8 D_801462D5;
 extern s32 D_8015402C;
-extern char D_8011FE88[];
+
 extern struct StateFlags *func_8028D474_de(void *, s32);
 
 s32 func_8042EE34_de(void) {
-    return (D_801462D5 == 1 ? func_8028D474_de(D_8011FE88, D_8015402C)->flags : D_8015402C) * 10 + 0xBC2;
+    return (D_801462D5 == 1 ? func_8028D474_de(&D_8011FE88, D_8015402C)->flags : D_8015402C) * 10 + 0xBC2;
 }
 
 extern struct Status D_80146398[];

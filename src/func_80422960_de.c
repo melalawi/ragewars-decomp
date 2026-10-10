@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_16E000/code_804221A0.h"
 #include "types.h"
 /* Event callback for the match setup screen D_800E4518: on event 1 with the screen in state 1 it
@@ -17,7 +18,7 @@ extern struct Game_func_80422960_de *D_800E2830;
 
 extern s32 D_8015402C;
 extern char D_80145088[];
-extern char D_8011FE88[];
+
 extern u8 D_801462C8[];
 
 extern s32 func_8043C308_de(struct Screen_func_80422960_de *);
@@ -96,7 +97,7 @@ s32 func_80422960_de(void *item, s32 arg1, s32 event) {
             }
             func_8044A370_de((u8 *)pause - 0x180C, 0);
             func_804499B0_de((u8 *)pause - 0x1854, 0, 0);
-            func_80286AA8_de(D_8011FE88, 0, 0);
+            func_80286AA8_de(&D_8011FE88, 0, 0);
             func_8042DEA0_de();
         }
     }

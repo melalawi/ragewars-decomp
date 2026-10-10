@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802393F4.h"
@@ -9,7 +10,7 @@
 
 
 
-extern char D_8011FE88;
+
 
 
 

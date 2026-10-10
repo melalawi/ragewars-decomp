@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80429C10.h"
 #include "types.h"
@@ -18,7 +19,7 @@ extern char *D_800D34D4_de[];
 extern u8 D_80152789;
 extern char *D_800E1DA4[];
 #endif
-extern char D_8011FE88[];
+
 extern void *func_8040EC30_de(void *, s32);
 extern void *func_8042B294_de(s32);
 extern s32 func_8042B1B8_de(void *, s32);
@@ -53,7 +54,7 @@ void func_8042A990_de(void) {
         func_802A025C_de(D_800E4F60->text, D_800E1DA4[D_80152789]);
 #endif
     } else {
-        func_8028D380_de(D_8011FE88,
+        func_8028D380_de(&D_8011FE88,
                       func_8042B1B8_de(func_8042B294_de(D_800E4F60->category), D_800E4F60->selection),
                       buffer, 0x3F);
         func_802A025C_de(D_800E4F60->text, func_802A0494_de(buffer));

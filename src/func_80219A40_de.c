@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/data.h"
@@ -33,7 +34,7 @@ s32 func_8021BFC4_de();
 
 
 
-extern s32 D_8011FE88;
+
 extern s32 D_8011D8D0;
 extern s8 D_8013B364;
 extern s32 D_80145040;

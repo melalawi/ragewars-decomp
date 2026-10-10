@@ -1,8 +1,9 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_80203F04.h"
 #include "types.h"
 
-extern s32 D_8011FE88;
+
 extern s32 D_800C8270_de;
 extern s32 func_80285F58_de(void *, void *);
 extern s32 func_80214178_de(void *, void *, s32);

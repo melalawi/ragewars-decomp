@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_80405DC0.h"
 #include "types.h"
@@ -26,7 +27,7 @@ extern s32 D_8015375C;
 extern s32 D_8014ADA0;
 extern s32 D_8013B2C8;
 
-extern char D_8011FE88[];
+
 extern char D_8011FAC0[];
 extern char D_8014561C[];
 extern char D_0044E48C[];
@@ -67,7 +68,7 @@ s32 func_80408DF0_de(void *owner, Menu_func_80408DF0_de *menu) {
                 ch = menu->slot->unk4;
             }
             func_80264788_de(ch);
-            func_8044D528_de(D_8011FE88, menu->player->menu, 2);
+            func_8044D528_de(&D_8011FE88, menu->player->menu, 2);
             return 1;
         }
         func_8044DDD4_de(D_8011FAC0);
@@ -80,7 +81,7 @@ s32 func_80408DF0_de(void *owner, Menu_func_80408DF0_de *menu) {
     }
     if (D_80153788 == 5) {
         func_80264788_de(ch);
-        func_8044D528_de(D_8011FE88, D_8013B2C8, 2);
+        func_8044D528_de(&D_8011FE88, D_8013B2C8, 2);
     }
     if (D_8015375C != 0 && D_80153788 == 6) {
         D_8014ADA0 = 1;

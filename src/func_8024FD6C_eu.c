@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_1000/code_8024E914.h"
 #include "span_1000/code_8024E914.h"
 #include "common/types_1dc8418c21db.h"
@@ -7,7 +8,7 @@
 /* Initialises a placed prop from its record: resets its state and owner, loads its model and caches the squared model radius, builds its rotation from the record's packed quaternion, scale and position into a matrix copied into the object, sets its bounding box either as a fixed cube for flag 0x40 or from the record's six extents through func_802B2350 with a half-unit margin, copies the position, links its path segment and takes the next colour key and colour frame. The fixed cube is written through do-while(0) vector macros, which the stores' order needs, and 102.4 is the cartridge's rounded 0x42CCCCCC. */
 extern s32 D_800CD8D0;
 
-extern char D_8011FE88;
+
 
 extern void func_8024DD10_de(PlacedProp *, PlacedPropRecord *, s32, char *);
 extern PropGeometry *func_8028CF6C_de(void *, s32);

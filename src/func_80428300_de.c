@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_804264F0.h"
@@ -15,7 +16,7 @@
 extern struct Screen_func_80428300_de *D_800E4690;
 extern s8 D_80142358[];
 extern char D_80102B00[];
-extern s32 D_8011FE88;
+
 
 extern struct Model *func_8028CFA0_de(void *, s32, s32);
 extern s32 func_8022F4DC_de(char *, s32);

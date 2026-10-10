@@ -24,7 +24,7 @@ void func_80422020_de(void) {
     object = D_80145088;
     func_8044A370_de(object, 0);
     func_804499B0_de(object - 0x48, 0, 0);
-    func_80286AA8_de(D_8011FE88, 0x24, 0);
+    func_80286AA8_de(&D_8011FE88, 0x24, 0);
     if (func_8025477C_de() == 0) {
         func_8025476C_de(1);
     }
@@ -44,6 +44,6 @@ void func_804220A8_de(int key) {
  o->a = state->a; o->b = state->b; o->c = state->c; o->d = state->d;
  selection = func_804030E0_de(key);
  if (!func_8025477C_de()) func_8025476C_de(1);
- func_8044D528_de(D_8011FE88, ~selection, 0);
+ func_8044D528_de(&D_8011FE88, ~selection, 0);
  g->width = width; width = height; g->height = width;
 }

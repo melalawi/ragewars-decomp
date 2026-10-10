@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_1000/code_80204E78.h"
 #include "types.h"
 
@@ -9,7 +10,7 @@
 
 
 extern s32 func_80285F58_de(void *, void *);
-extern s32 D_8011FE88;
+
 
 void func_80206018_de(void *arg0, Event_func_80206018_de *arg1) {
     CallbackHolder *holder;

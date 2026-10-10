@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "types.h"
 
@@ -36,7 +37,7 @@ void func_80278D78_de(Obj54E0 *arg0, s32 arg1, Obj54E0 *arg2);
 s32 func_8025DE54_de(s16 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5);
 void func_80216288_de(Obj54E0 *arg0, s32 arg1, Vec54E0 arg2, s32 arg3);
 void func_802170A0_de(Obj54E0 *arg0, void *arg1, s32 arg2, s32 arg3, s32 arg4);
-extern s32 D_8011FE88;
+
 
 void func_802054E0_de(Obj54E0 *arg0, void *arg1) {
     Rec54E0 *rec;
@@ -48,7 +49,7 @@ void func_802054E0_de(Obj54E0 *arg0, void *arg1) {
         arg0->flags &= ~0x2000;
         arg0->flags &= ~0x100;
     }
-    if (D_8011FE88 == 4) {
+    if (D_8011FE88.mode == 4) {
         if (rec->unk34 != -1) {
             func_8025DE54_de(rec->unk36, arg0->pos.x, arg0->pos.y, arg0->pos.z, 0, -1);
         }

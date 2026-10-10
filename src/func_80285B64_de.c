@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8028567C.h"
@@ -14,7 +15,7 @@
 
 
 
-extern char D_8011FE88;
+
 extern s32 func_802BCF30_de(void);
 extern void func_802BCF50_de(s32 mask);
 extern void func_80255ED8_de(IntrusiveList *list, Node_func_80285B64_de *node);

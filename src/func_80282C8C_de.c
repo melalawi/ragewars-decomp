@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8027A0F4.h"
@@ -94,7 +95,7 @@ s32 func_80282DEC_de(func_8022BC04_S2 *obj) {
     return 0;
 }
 
-extern s32 D_8011FE88;
+
 extern char D_8011D8D0;
 extern f32 D_800C4E58_de[];
 

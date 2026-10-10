@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #ifndef FUNC_804235A8_EU_CLOSED_H
 #define FUNC_804235A8_EU_CLOSED_H
 #include "types.h"
@@ -19,7 +20,7 @@ void func_804499B0_de(void *, s32, s32);
 void func_8044A370_de(void *, s32);
 void func_80286AA8_de(void *, s32, s32);
 void func_80298368_de(s32);
-extern char D_8011FE88;
+
 extern Shared_MenuReply D_80154020;
 extern Shared_MenuData D_80145040;
 extern Shared_MenuContext *D_800E2830;

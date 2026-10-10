@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802646F4.h"
 #include "span_16E000/code_80447BB0.h"
@@ -5,7 +6,7 @@
 /* Refreshes every instance owned by the holder and clears their pending flag. */
 
 
-extern s32 D_8011FE88;
+
 void func_80220A80_de(Node_func_80449E18_de *, Node_func_80449E18_de *);                 /* extern */
 void func_80245864_de(s32);                            /* extern */
 s32 func_80264B6C_de(void);                            /* extern */

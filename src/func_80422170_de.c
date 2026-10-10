@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_16E000/code_804221A0.h"
 #include "types.h"
 
@@ -6,7 +7,7 @@
    0x27D into D_8011FE88 through func_8044D528_de, and calls func_8025476C_de with one when func_8025477C_de
    reports nothing. */
 extern char D_80145088[];
-extern char D_8011FE88[];
+
 
 extern void func_8044A370_de(void *, s32);
 extern void func_804499B0_de(void *, s32, s32);
@@ -22,7 +23,7 @@ void func_80422170_de(void) {
     object = D_80145088;
     func_8044A370_de(object, 1);
     func_804499B0_de(object - 0x48, 1, 0);
-    func_8044D528_de(D_8011FE88, ~func_804030E0_de(0x27D), 0);
+    func_8044D528_de(&D_8011FE88, ~func_804030E0_de(0x27D), 0);
     if (func_8025477C_de() == 0) {
         func_8025476C_de(1);
     }

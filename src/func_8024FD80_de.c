@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8024E914.h"
 #include "span_1000/code_802508E0.h"
@@ -9,7 +10,7 @@ extern s32 func_8024E924_de(PlacedProp *);
 #elif defined(VERSION_EU) || defined(VERSION_EU_X) || defined(VERSION_US) || defined(VERSION_US_REV1)
 #endif
 extern s32 D_800CD8D0;
-extern char D_8011FE88;
+
 extern void func_8024DD10_de(PlacedProp *, PlacedPropRecord *, s32, char *);
 extern PropGeometry *func_8028CF6C_de(void *, s32);
 extern void func_80274244_de(f32 *, char *);

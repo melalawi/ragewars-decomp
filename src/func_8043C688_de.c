@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "types.h"
 typedef struct Shared_MenuSelection {
     u32 unknown0;
@@ -59,7 +60,7 @@ extern s32 D_801462CC;
 
 extern s32 D_80154034;
 extern char D_8011FAC0[];
-extern char D_8011FE88[];
+
 
 extern s32 func_8026437C_de(s32 buttons);
 
@@ -178,7 +179,7 @@ s32 func_8043C688_de(s32 arg0, Shared_MenuInput *pad) {
             return 1;
         }
         if (func_802934F8_de() != 0) {
-            func_8044D528_de(D_8011FE88, target, 2);
+            func_8044D528_de(&D_8011FE88, target, 2);
             return 0;
         }
         rules = &D_801462C8;

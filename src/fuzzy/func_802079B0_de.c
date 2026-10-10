@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "types.h"
 
 typedef struct Body {
@@ -28,7 +29,7 @@ typedef struct Rider {
     /* 0x13C */ f32 progress;
 } Rider;
 
-extern u8 D_8011FE88[];
+
 extern f32 D_800D2988;
 
 s32 func_80285F58_de(void *table, Mover *mover);
@@ -38,7 +39,7 @@ void func_80206DD4_de(Mover *mover, Rider *rider);
 void func_802079B0_de(Mover *mover, Rider *rider) {
     Body *body = (Body *)((u8 *)mover->body + 0x14);
 
-    if (func_80285F58_de(D_8011FE88, mover) == 0) {
+    if (func_80285F58_de(&D_8011FE88, mover) == 0) {
         mover->flags &= ~0x10000;
         mover->flags &= ~0x100;
         return;

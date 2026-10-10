@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_1000/code_80233920.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802AB3FC.h"
@@ -140,7 +141,7 @@ extern s32 func_802AB6EC_de(void *arg0, void *arg1, s32 arg2);
 extern void func_80290548_de(void *arg0);
 extern void func_8028B898_de(void *arg0, void *arg1, s32 arg2);
 extern void func_80278E04_de(s32 arg0, s32 arg1, void *arg2);
-extern char D_8011FE88[];
+
 
 
 
@@ -163,7 +164,7 @@ block_4:
                 func_80290548_de(arg1);
                 return;
             }
-            func_8028B898_de(D_8011FE88, arg1, 1);
+            func_8028B898_de(&D_8011FE88, arg1, 1);
             func_80278E04_de(((func_802ADA44_S1 *)(arg1))->unk14, 0x400, arg0);
         }
     }

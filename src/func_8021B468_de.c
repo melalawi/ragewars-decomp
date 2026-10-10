@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/unused.h"
 #include "shared/gameplay_transition.h"
@@ -54,7 +55,7 @@ s32 func_80448EF4_de(void *, s8, s32);         /* extern */
 void func_8044972C_de(void *);
 void func_8044A07C_de(void *);
 
-extern s32 D_8011FE88;
+
 extern s32 D_8011D8D0;
 
 

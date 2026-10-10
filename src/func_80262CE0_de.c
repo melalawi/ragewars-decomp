@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802624A0.h"
 #include "types.h"
@@ -15,7 +16,7 @@
 extern s32 D_800CD764_de;
 extern s32 D_800CD8D0;
 extern s32 D_8013B290;
-extern char D_8011FE88;
+
 extern s32 func_8028B21C_de(void *, s32);
 extern s32 func_8028B25C_de(void *, s32);
 extern void func_80255ED8_de(void *, Effect_func_80262A9C_de *);

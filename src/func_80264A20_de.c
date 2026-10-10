@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802646F4.h"
 #include "types.h"
@@ -11,7 +12,7 @@
 
 
 extern struct Shape_typemap_6 D_8010BC40;
-extern char D_8011FE88;
+
 extern s32 D_8013B2BC;
 
 extern ObjectState1E_2 D_801462C8;
@@ -33,7 +34,7 @@ void func_80264A20_de(void) {
     if (D_80145070 == 0) {
         enabled = 0;
     }
-    if (&D_8011FE88 == 0) {
+    if (&D_8011FE88.mode == 0) {
         enabled = 0;
     }
     if (enabled) {

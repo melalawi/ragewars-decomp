@@ -1,7 +1,8 @@
+#include "shared/world.h"
 #include "span_1000/code_802944E8.h"
 #include "types.h"
 
-extern s32 D_8011FE88;
+
 
 extern s32 func_8044D220_de(s8 *, s32, s32, void *, s32);
 

@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_8044ACCC.h"
 #include "types.h"
@@ -27,7 +28,7 @@ extern u8 D_801462E5;
 extern s32 D_801468F4;
 
 
-extern char D_8011FE88;
+
 
 
 

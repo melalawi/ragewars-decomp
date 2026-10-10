@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_1000/code_802646F4.h"
 #include "types.h"
 
@@ -15,7 +16,7 @@
 
 extern ActorList D_80145040;
 extern Snapshot_func_80264CE0_de D_8010BC40;
-extern char D_8011FE88;
+
 extern s32 func_8028B350_de(void *table, s32 id);
 
 void func_80264CE0_de(void) {

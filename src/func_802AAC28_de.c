@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_1000/code_802A8A94.h"
 #include "types.h"
 
@@ -10,7 +11,7 @@ extern Gfx_func_802AAC28_de *D_80110634;
 
 
 extern func_802ABC18_S1 *D_8011BDC0;
-extern char D_8011FE88;
+
 
 extern s32 func_8028BEAC_de(void *arg0, s32 arg1, s32 arg2, s32 arg3);
 extern void func_802AA1AC_de(s32 arg0, s32 arg1, s16 arg2, s16 arg3, f32 arg4, f32 arg5, s32 arg6);

@@ -1,9 +1,10 @@
+#include "shared/world.h"
 #include "types.h"
 #include "span_1000/code_8028DF6C.h"
 
 extern Actor_func_8028E284_de *D_800F3CF8[4];
 extern Actor_func_8028E284_de *D_800F3D08;
-extern s32 D_8011FE88;
+
 extern s32 func_8028B25C_de(s32, s32);
 
 s32 func_8028E108_de(void *arg0) {

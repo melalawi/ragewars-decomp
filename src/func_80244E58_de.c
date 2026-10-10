@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
@@ -25,7 +26,7 @@ extern Group D_80145060;
 
 extern struct { func_80219490_S2 *unk0; } D_80140FE8_de;
 extern char D_8010EC90;
-extern char D_8011FE88;
+
 
 extern struct Shape_func_8021A2D4_de_2 D_801371D4;
 
@@ -47,7 +48,7 @@ void func_80244E58_de(void) {
     Group *group;
     s32 target;
     s32 found;
-    char *table;
+    Shared_World *table;
 
     target = D_800E2830->unkD8;
     if (D_800E2830->unk40 != 0) {

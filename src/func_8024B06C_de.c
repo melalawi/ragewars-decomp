@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80246E34.h"
@@ -140,7 +141,7 @@ selected:
     }
 }
 
-extern s32 D_8011FE88;
+
 extern f32 D_800C3B48_de[];
 
 extern void *func_8028CF6C_de(void *, s32);

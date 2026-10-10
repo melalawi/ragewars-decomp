@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "gfx.h"
 #include "span_1000/code_802A8A94.h"
 #include "types.h"
@@ -7,7 +8,7 @@
 
 /* Draws a signed integer of up to four digits with the font sprite set from func_8028BEAC_de: splits the magnitude into thousands, hundreds, tens and ones, draws a leading minus sign through func_802AAC28_de when negative, then draws at least minDigits digits through func_802AA1AC_de, advancing 13 units per digit (0.7 of that for a one) scaled by the size, laid out right to left when rightAlign is set, and releases the sprite set. */
 
-extern char D_8011FE88;
+
 
 extern s32 func_8028BEAC_de(void *arg0, s32 arg1, s32 arg2, s32 arg3);
 extern void func_802AA1AC_de(s32 arg0, s32 arg1, s16 arg2, s16 arg3, f32 arg4, f32 arg5, s32 arg6);

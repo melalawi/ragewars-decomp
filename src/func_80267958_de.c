@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802661FC.h"
 #include "types.h"
@@ -44,7 +45,7 @@
 
 extern f32 D_800C4450_de;
 extern char D_8011D8D0;
-extern char D_8011FE88;
+
 
 extern void func_8022B09C_de(SharedPlayer_func_80267958_de *, Vec3 *);
 extern void func_80271818_de(struct Shape_typemap_165 *, Vec3 *);

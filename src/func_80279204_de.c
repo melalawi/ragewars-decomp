@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "span_1000/code_80279208.h"
 #include "types.h"
 
@@ -5,29 +6,29 @@
 
 
 
-extern s32 D_8011FE88;
-extern s32 func_8028BC0C_de(s32 *world, Trigger *trigger);
-extern s32 func_8028C424_de(s32 *world, s32 id);
-extern void func_8028C4B4_de(s32 *world, s32 id);
+
+extern s32 func_8028BC0C_de(Shared_World *world, Trigger *trigger);
+extern s32 func_8028C424_de(Shared_World *world, s32 id);
+extern void func_8028C4B4_de(Shared_World *world, s32 id);
 extern void func_80278F00_de(Trigger *trigger);
 extern s32 func_80279420_de(Trigger *trigger, s32 arg);
-extern void func_8028BB1C_de(s32 *world, Trigger *trigger, s32 arg);
-extern void func_8028BD4C_de(s32 *world, s32 id);
-extern s32 func_8028BDAC_de(s32 *world, s32 id);
-extern void func_8028C370_de(s32 *world, s32 id);
+extern void func_8028BB1C_de(Shared_World *world, Trigger *trigger, s32 arg);
+extern void func_8028BD4C_de(Shared_World *world, s32 id);
+extern s32 func_8028BDAC_de(Shared_World *world, s32 id);
+extern void func_8028C370_de(Shared_World *world, s32 id);
 extern void func_80278E7C_de(Trigger *trigger);
 
 void func_80279204_de(Trigger *triggers, s32 count, s32 require, s32 enter, s32 exclude, s32 group, s32 arg) {
     s32 i;
     s32 active;
     s32 usable;
-    s32 *world;
+    Shared_World *world;
     Trigger *trigger;
 
     for (trigger = triggers, i = 0; i < count; trigger++, i++) {
         world = &D_8011FE88;
         usable = 1;
-        if (*world != 4) {
+        if (world->mode != 4) {
             usable = func_8028BC0C_de(world, trigger) == 0;
         }
         if (!usable) {

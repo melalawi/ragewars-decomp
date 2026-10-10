@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_802192C0.h"
@@ -14,7 +15,7 @@
 
 
 
-extern char D_8011FE88;
+
 extern Clip *func_8028D218_de(char *, s32);
 
 void func_802192C0_de(Cursor *cursor) {
@@ -64,7 +65,7 @@ void func_802192C0_de(Cursor *cursor) {
 }
 
 extern s16 func_8028D28C_de(char *arg0);
-extern char D_8011FE88;
+
 
 void func_802193C8_de(Struct802193C8 *arg0, s8 arg1) {
     arg0->field0 = 1;
@@ -74,7 +75,7 @@ void func_802193C8_de(Struct802193C8 *arg0, s8 arg1) {
 }
 
 extern void *func_8028D244_de(char *a, unsigned char b, short c);
-extern char D_8011FE88;
+
 
 
 
@@ -84,7 +85,7 @@ void *func_80219408_de(void *arg0) {
 }
 
 extern void *func_8028D244_de(char *a, unsigned char b, short c);
-extern char D_8011FE88;
+
 
 
 

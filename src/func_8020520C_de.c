@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "shared/func_80206724_de_closed.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_80204E78.h"
@@ -28,7 +29,7 @@ void func_8020520C_de(void *source, void *dest) {
 
 extern s32 func_80285F58_de(void *, void *);
 extern s32 func_80214178_de(void *, void *, s32);
-extern s32 D_8011FE88;
+
 
 
 

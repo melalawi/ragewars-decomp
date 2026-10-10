@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802393F4.h"
 #include "types.h"
@@ -5,7 +6,7 @@
 extern s32 func_80245798_de(void);
 
 extern f32 func_80275DD4_de(s32 arg0, f32 arg1, f32 arg2);
-extern s32 D_8011FE88;
+
 extern s32 D_800CD8D0;
 
 

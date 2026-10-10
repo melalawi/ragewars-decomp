@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80204E78.h"
@@ -7,7 +8,7 @@
 
 
 
-extern s32 D_8011FE88;
+
 extern void func_80267198_de(void *, void *, s32, Triple, struct Shape_func_802764D4_de_2);
 extern void func_80285DB0_de(void *, void *, s32);
 

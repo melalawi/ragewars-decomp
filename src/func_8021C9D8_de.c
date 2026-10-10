@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_8fd754e1e915.h"
@@ -13,7 +14,7 @@
 
 
 
-extern s32 D_8011FE88;
+
 
 
 

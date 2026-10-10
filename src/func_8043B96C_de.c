@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_16E000/code_8043A0A4.h"
@@ -9,7 +10,7 @@
 
 
 
-extern s32 D_8011FE88;
+
 extern u8 D_80146398[];
 extern struct Model *func_8028CFA0_de(void *, s32, s32);
 extern void func_8043B6E8_de(s32);

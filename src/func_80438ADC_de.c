@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_804379C8.h"
 #include "types.h"
@@ -21,7 +22,7 @@ extern u8 D_801462D5;
 extern s32 D_80146918;
 extern s32 D_801468F4;
 extern char D_80145088[];
-extern char D_8011FE88[];
+
 extern s32 func_8043C308_de(struct MenuRules *);
 extern void func_8043C080_de(struct MenuRules *);
 extern void func_8043C2A4_de(struct MenuRules *);
@@ -61,7 +62,7 @@ s32 func_80438ADC_de(void *window, void *arg1, s32 event) {
             object = D_80145088;
             func_8044A370_de(object, 0);
             func_804499B0_de(object - 0x48, 0, 0);
-            func_80286AA8_de(D_8011FE88, 0, 0);
+            func_80286AA8_de(&D_8011FE88, 0, 0);
             ((MatchMenuObjects *)(object))->transition = 8;
         } else {
             func_8029973C_de();

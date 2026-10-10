@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_166000/code_80426310.h"
 #include "types.h"
@@ -12,7 +13,7 @@
    0x124D through jtbl_800E1A40, or 3 for any other value. 0x1DA sends 11 when func_802999A0_de(0)
    reports 11 and -1 otherwise. Either then calls func_802998A8_de. Returns zero. */
 extern char D_80145088[];
-extern char D_8011FE88[];
+
 extern void func_8029973C_de(void);
 extern s32 func_80299A08_de(void);
 extern s32 func_802999A0_de(s32);
@@ -41,7 +42,7 @@ s32 func_80428FC8_de(void) {
         objects = D_80145088;
         func_8044A370_de(objects, 0);
         func_804499B0_de(objects - 0x48, 0, 0);
-        func_80286AA8_de(D_8011FE88, 0, 0);
+        func_80286AA8_de(&D_8011FE88, 0, 0);
         if (func_8025477C_de() == 0) {
             func_8025476C_de(1);
         }

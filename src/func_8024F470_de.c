@@ -1,3 +1,4 @@
+#include "shared/world.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
@@ -164,7 +165,7 @@ void **func_8024F6EC_de(void *arg0, s32 arg1) {
     return 0;
 }
 
-extern s32 D_8011FE88;
+
 extern s32 D_801462C8;
 extern s32 func_8028B25C_de(void *arg0, s32 arg1);
 

@@ -1,10 +1,11 @@
+#include "shared/world.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802A8A94.h"
 #include "types.h"
 
 extern s32 D_800CD764_de;
-extern char D_8011FE88;
+
 extern s32 func_8028BEAC_de(void *arg0, s32 arg1, s32 arg2, s32 arg3);
 extern void func_802AA8EC_de(s32 arg0, s32 arg1, void **arg2, s32 *arg3);
 extern void func_80253754_de(s32 arg0, s32 arg1);
