@@ -3726,7 +3726,7 @@ segments:
       - [0xC9300, rodata, "rodata/func_80209DAC_de/800CDA30"]
       - [0xC930C, data, "rodata/unresolved/800C870C"]
       - [0x0C9310, data, "src/ragewars_actor_mode_dispatch_us_rev1.c"]
-      - [0x0C93B0, data, "rodata/unresolved/800C870C_0C93B0"]
+      - [0x0C93B0, .data, "rodata/unresolved/800C870C_0C93B0"]
       - [0x0C9B10, data, "src/ragewars_actor_primary_mask_events_us_rev1.c"]
       - [0x0C9C10, data, "rodata/unresolved/800C870C_0C9C10"]
       - [0xC9C5C, rodata, "rodata/shared/800C905C"]
