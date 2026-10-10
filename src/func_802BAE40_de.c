@@ -61,22 +61,10 @@
 
 extern s32 D_80000300;
 
-#if defined(VERSION_DE)
-extern u32 func_802BCF20_de(void);
-#elif defined(VERSION_EU)
-extern u32 func_802BD1C0_eu(void);
-#elif defined(VERSION_US)
-extern u32 func_802BCE50_us(void);
-#else
-extern u32 func_802BD200_eu_x(void);
-#endif
-extern void func_802BD220_de(u32 sr);
-extern u32 func_802BD160_de(u32 csr);
 
 extern void func_802BD280_de(void *addr, s32 size);
 extern void func_802BD010_de(void *addr, s32 size);
 
-extern s32 func_802B9B20_de(u32 devAddr, u32 *data);
 extern void *func_802A001C_de(void *dst, s32 value, u32 size);
 
 void func_802BAE40_de(void)
@@ -135,7 +123,6 @@ func_802BD200_eu_x
 }
 
 extern void func_802BAC50_de(void *arg0, void *arg1, s32 arg2);
-extern int func_802B9D70_de(void);
 #if defined(VERSION_DE)
 extern const float D_800C79E0;
 #elif defined(VERSION_EU)
@@ -184,7 +171,6 @@ int func_802BB060_de(u32 arg0, u32 *arg1) {
 }
 
 extern void func_802BAC50_de(void *arg0, void *arg1, s32 arg2);
-extern int func_802B9D70_de(void);
 extern s32 D_800C7A00_de;
 extern s32 D_800C7A04_de;
 

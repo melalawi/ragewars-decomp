@@ -1569,10 +1569,10 @@ schema = 1
 "func_802BA910_de" = { evidence = "authored", signature = "void func_802BA910_de()" }
 "func_802BAC50_de" = { evidence = "authored", signature = "void func_802BAC50_de(char *, char *, s32)" }
 "func_802BAD68_de" = { evidence = "authored", signature = "void func_802BAD68_de(void)" }
-"func_802BAE40_de" = { evidence = "authored", signature = "void func_802BAE40_de()" }
+"func_802BAE40_de" = { evidence = "landed", signature = "void func_802BAE40_de(void)" }
 "func_802BB008_eu" = { evidence = "authored", signature = "void func_802BB008_eu(void)" }
-"func_802BB060_de" = { evidence = "authored", signature = "int func_802BB060_de(unsigned int devAddr, unsigned int * data)" }
-"func_802BB0F0_de" = { evidence = "authored", signature = "int func_802BB0F0_de(unsigned int devAddr, unsigned int data)" }
+"func_802BB060_de" = { evidence = "landed", signature = "int func_802BB060_de(u32 arg0, u32 *arg1)" }
+"func_802BB0F0_de" = { evidence = "landed", signature = "int func_802BB0F0_de(u32 arg0, u32 arg1)" }
 "func_802BB2A0_de" = { evidence = "authored", signature = "void func_802BB2A0_de(s32, s32, s32)" }
 "func_802BB3D0_de" = { evidence = "authored", signature = "void func_802BB3D0_de(s32 arg0)" }
 "func_802BB420_de" = { evidence = "authored", signature = "s32 func_802BB420_de(Opaque_OSMesgQueue *mq, void * msg, s32 flag)" }
