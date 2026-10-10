@@ -16,7 +16,7 @@ Acmd *func_802B40E0_eu_x(void *filter, s16 *outp, s32 outCount, s32 sampleOffset
     aClearBuffer(ptr++, 0x800, outCount << 1);
 
     for (i = 0; i < m->sourceCount; i++) {
-        ptr = ((ALCmdHandler)sources[i]->handler)(sources[i], outp, outCount, sampleOffset, ptr);
+        ptr = sources[i]->handler(sources[i], outp, outCount, sampleOffset, ptr);
     }
     return ptr;
 }

@@ -701,7 +701,7 @@ struct ALFilter_s14;
 /* unbake published declaration: published_b56631290d354695c1fa2f29 */
 struct ALFilter_s14 {
     struct ALFilter_s14 *source;
-    void *handler;
+    ALCmdHandler handler;
     void *setParam;
     s16 inp;
     s16 outp;
