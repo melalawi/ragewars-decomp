@@ -4,6 +4,7 @@
 #include "common/types_8a8189af7b05.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
+#include "audio_callbacks.h"
 struct func_8024B8DC_S1;
 /* unbake published declaration: published_03f550b4f94a2508ae69afb6 */
 struct func_8024B8DC_S1 {
@@ -543,5 +544,17 @@ struct Actor_func_8024A3B0_de {
 struct Actor_func_8024A3B0_de;
 /* unbake published declaration: published_fed4b8af72700ff4f3528121 */
 typedef struct Actor_func_8024A3B0_de Actor_func_8024A3B0_de;
+
+typedef void (*FuncPtr)(void *, void *);
+extern void func_8026EE20_de(void *arg0, int arg1, void *arg2);
+typedef struct func_8024B4E4_S1 func_8024B4E4_S1;
+struct func_8024B4E4_S1 {
+    char pad0[0x74];
+    char unk74;
+    char pad74[0xE8 - 0x74 - sizeof(char)];
+    char unkE8[0x170 - 0xE8];
+    char unk170[0x28C - 0x170];
+    FuncPtr unk28C;
+};
 
 #endif

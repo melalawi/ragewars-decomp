@@ -952,7 +952,7 @@ segments:
       - [0x4B608, c, "func_8024AA18_de"]
       - [0x4B9C0, asm, "func_8024ADD0_de"]
       - [0x4BC5C, c, "func_8024B06C_de"]
-      - [0x4C0E4, asm, "func_8024B4F4_de"]
+      - [0x4C0E4, c, "func_8024B4F4_de"]
       - [0x4C12C, c, "func_8024B53C_de"]
       - [0x4C66C, c, "func_8024BA7C_de"]
       - [0x4C7A4, c, "func_8024BBB4_de"]
