@@ -26,35 +26,37 @@ extern TeamCounters D_801468A0;
 void func_8022E17C_de(TeamPlayer *a, TeamPlayer *b, s32 mode) {
     u8 teamA;
     u8 teamB;
+    s32 *win;
+    s32 *loss;
 
-    if (D_801468A0.active == 0) {
-        return;
-    }
-    teamA = a->stats->team;
-    teamB = b->stats->team;
-    if ((s32)teamA < 0 || (s32)teamA >= 5) {
-        return;
-    }
-    switch (mode) {
-    case 0:
-        if (D_801468A0.frozen == 0 && D_801468A0.locked == 0) {
-            D_801468A0.wins[teamA]--;
+    if (D_801468A0.active != 0) {
+        teamA = a->stats->team;
+        teamB = b->stats->team;
+        if ((s32)teamA >= 0 && (s32)teamA < 5) {
+            win = &D_801468A0.wins[teamA];
+            loss = &D_801468A0.losses[teamA];
+            switch (mode) {
+            case 0:
+                if (D_801468A0.frozen == 0 && D_801468A0.locked == 0) {
+                    *win -= 1;
+                }
+                break;
+            case 1:
+                if (teamB != teamA) {
+                    *win += 1;
+                }
+                break;
+            case 3:
+                *loss += 1;
+                break;
+            case 2:
+                if (teamB == teamA) {
+                    *win -= 1;
+                } else {
+                    *win += 1;
+                }
+                break;
+            }
         }
-        break;
-    case 1:
-        if (teamB != teamA) {
-            D_801468A0.wins[teamA]++;
-        }
-        break;
-    case 2:
-        if (teamB == teamA) {
-            D_801468A0.wins[teamA]--;
-        } else {
-            D_801468A0.wins[teamA]++;
-        }
-        break;
-    case 3:
-        D_801468A0.losses[teamA]++;
-        break;
     }
 }
