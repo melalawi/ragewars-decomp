@@ -4286,7 +4286,7 @@ segments:
       - [0xEE298, data, "rodata/writable/800ED698"]
       - [0xEE2C4, data, "rodata/unresolved/800ED6C4"]
       - [0xEE860, data, "rodata/writable/800EDC60"]
-      - [0xEE870, data, "rodata/unresolved/800EDC70"]
+      - [0xEE870, .data, "rodata/unresolved/800EDC70"]
   - name: span_F0000
     type: code
     start: 0xF0000
