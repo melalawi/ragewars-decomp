@@ -24,7 +24,7 @@ typedef struct Chaser {
     Racer *self;
     char pad4[0x34];
     s32 count;
-    Racer *target[10];
+    Racer *target[12];
     s32 cost[10];
     s32 dist[10];
 } Chaser;
