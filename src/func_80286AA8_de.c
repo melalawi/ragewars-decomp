@@ -36,6 +36,7 @@
 #include "common/unused.h"
 #include "span_C76B0/data.h"
 
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 #include "common/types_8a8189af7b05.h"
 
@@ -59,8 +60,6 @@ extern s32 func_80254284_de();
 extern void ** func_80254408_de();
 extern void func_8025476C_de();
 extern s32 func_80255228_de();
-extern void func_80255CA0_de();
-extern s32 func_80255D14_de();
 extern void func_8025C8D8_de();
 extern void func_80286950_de();
 extern void func_8028A948_de();

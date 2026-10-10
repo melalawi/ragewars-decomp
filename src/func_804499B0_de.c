@@ -1,5 +1,6 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_80447BB0.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 
 
@@ -10,12 +11,10 @@ extern char D_801462C8[];
 extern char D_801468A0[];
 extern s32 D_800C9684;
 
-extern void func_80255CA0_de(void *, s32, s32);
 
 extern void func_80253908_de(s32);
 extern void func_80253838_de(s32, void *);
 extern void func_80226950_de(ObjectPool *, s32);
-extern void func_80255D14_de(void *, void *);
 extern void func_8026367C_de(void *, void *);
 extern void func_802097E8_de(void *, void *);
 extern void func_8021A78C_de(void *);
@@ -48,8 +47,8 @@ void func_804499B0_de(ObjectPool *pool, s32 count, s32 force_active) {
     char *global;
     char *state;
 
-    func_80255CA0_de(pool->active_queue, 0x16DC, 0x16E0);
-    func_80255CA0_de(pool->object_queue, 0x16DC, 0x16E0);
+    func_80255CA0_de(&pool->active_queue, 0x16DC, 0x16E0);
+    func_80255CA0_de(&pool->object_queue, 0x16DC, 0x16E0);
     func_80264854_de(0);
     func_80253908_de(0);
     global = D_801462C8;
@@ -67,7 +66,7 @@ void func_804499B0_de(ObjectPool *pool, s32 count, s32 force_active) {
 
     func_80226950_de(pool, count);
     for (i = 0; i < pool->count; i++) {
-        func_80255D14_de(pool->active_queue, pool->objects + i * 0x16E8);
+        func_80255D14_de(&pool->active_queue, pool->objects + i * 0x16E8);
     }
 
     for (i = 0; i < pool->count; i++) {
@@ -133,8 +132,8 @@ initialize_object:
             func_802A6F68_de((char *)object + 0xD40);
             if (((ObjectState96 *)(entry))->unk_78 != 0) {
                 func_80448EF4_de(object, ((ObjectState96 *)(entry))->unk_80, 1);
-                func_80255ED8_de(pool->active_queue, object);
-                func_80255CB8_de(pool->object_queue, object);
+                func_80255ED8_de(&pool->active_queue, object);
+                func_80255CB8_de(&pool->object_queue, object);
             }
             player_index += 2;
             attribute_offset += 0x224;
@@ -188,8 +187,8 @@ initialize_object:
         ((func_804499B0_de_S3 *)(object))->unk16D8 = 0;
         func_802A6F68_de((char *)object + 0xD40);
         func_80448EF4_de(object, ((ObjectState96 *)(entry))->unk_80, force_active);
-        func_80255ED8_de(pool->active_queue, object);
-        func_80255CB8_de(pool->object_queue, object);
+        func_80255ED8_de(&pool->active_queue, object);
+        func_80255CB8_de(&pool->object_queue, object);
     }
 
 initialized:

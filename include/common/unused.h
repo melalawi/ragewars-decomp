@@ -772,7 +772,7 @@ extern int D_80115E00;
 extern char D_800E62F0[];
 
 /* unbake published declaration: published_305a11badabd07fe0808bde1 */
-extern struct Shared_HeapSortedList D_80100584;
+extern IntrusiveList D_80100584;
 
 /* unbake published declaration: published_305e88c03b1c3924a8695f86 */
 extern char *D_800E1E74[];
@@ -2958,7 +2958,7 @@ extern s32 D_8010F190;
 extern char *D_800E1EF4[];
 
 /* unbake published declaration: published_bcdecdc1a3aaebb9115ac5ff */
-extern s32 D_80137050;
+extern IntrusiveList D_80137050;
 
 /* unbake published declaration: published_bd04972c251b4b0da5ae82f2 */
 extern Handler802A2B50 D_800E445C;
@@ -4219,9 +4219,6 @@ typedef struct EffectColorParams EffectColorParams;
 
 struct EffectEntry;
 typedef struct EffectEntry EffectEntry;
-
-struct EffectList;
-typedef struct EffectList EffectList;
 
 struct EffectModel;
 typedef struct EffectModel EffectModel;
@@ -6322,13 +6319,7 @@ struct EffectRender {
 };
 struct EffectActor;
 struct EffectEntry;
-struct EffectList;
 struct Effect_func_802800C0_de;
-struct EffectList {
-    struct Effect_func_802800C0_de *head;
-    struct Effect_func_802800C0_de *tail;
-    char pad8[0xC];
-};
 struct Effect_func_802800C0_de {
     char pad0[4];
     u16 kind;
@@ -6374,7 +6365,7 @@ struct Effect_func_802800C0_de {
     u8 unk1D9;
     char pad1DA[6];
     f32 unk1E0;
-    struct EffectList *list;
+    IntrusiveList *list;
     char pad1E8[4];
     struct Effect_func_802800C0_de *next;
     s32 unk1F0;
@@ -6384,9 +6375,9 @@ struct EffectSystem;
 struct Effect_func_802800C0_de;
 struct EffectSystem {
     char pad0[0xFC00];
-    EffectList free;
-    EffectList groups;
-    EffectList lists[3];
+    IntrusiveList free;
+    IntrusiveList groups;
+    IntrusiveList lists[3];
     s32 resource;
     struct Effect_func_802800C0_de *last;
 };
@@ -22437,7 +22428,7 @@ struct func_8028C544_S1 {
     char pad11D8[0x11DC - 0x11D8 - sizeof(char)];
     void * unk11DC;
     char pad11DC[0x11EC - 0x11DC - sizeof(void*)];
-    func_80239C2C_S1_UF24 unk11EC;
+    IntrusiveList unk11EC;
 };
 struct func_8028C544_S2;
 struct func_8028C544_S2 {

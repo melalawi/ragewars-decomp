@@ -1613,7 +1613,7 @@ struct func_80237E70_S2;
 /* unbake published declaration: published_53ecc0d6133b1b8a81791bf6 */
 struct func_80237E70_S2 {
     char pad0[0xE40];
-    func_80237E70_S2_UE40 unkE40;
+    IntrusiveList unkE40;
 };
 
 struct ObjectLinks3C;
@@ -1715,7 +1715,7 @@ struct func_80237E70_S1;
 /* unbake published declaration: published_976a687fb0f4ca917c9183e4 */
 struct func_80237E70_S1 {
     char pad0[0xF24];
-    func_80237E70_S1_UF24 unkF24;
+    IntrusiveList unkF24;
 };
 
 struct Model_func_80223E34_de;

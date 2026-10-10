@@ -1,9 +1,8 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8025C544.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 
-extern void func_80255CA0_de(s32 *, s32, s32);
-extern s32 func_80255D14_de(void *, s32);
 
 
 

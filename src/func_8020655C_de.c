@@ -13,7 +13,7 @@ s32 func_8020655C_de(s32 arg0) {
     void *node;
 
     if (arg0 == 0x84F) {
-        node = D_80137064;
+        node = D_80137064.head;
         while (node != 0) {
             if (*((func_8020655C_S1 *)(node))->unk18 == 4) {
                 return 0;

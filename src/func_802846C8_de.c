@@ -1,6 +1,7 @@
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_8028469C.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 
 void *func_802846C8_de(void *arg0, s32 arg1, void *arg2) {
@@ -32,14 +33,13 @@ void *func_802846C8_de(void *arg0, s32 arg1, void *arg2) {
 
 extern void func_80255D70_de(void *, s32, s32);
 extern s32 func_80255CB8_de(void *, s32);
-extern s32 func_80255D14_de(void *, s32);
 
 void func_80284758_de(void *arg0, void *arg1)
 {
     void *current;
     s32 key;
 
-    current = ((func_8028472C_S1 *)(arg0))->unkFC14.v0;
+    current = ((func_8028472C_S1 *)(arg0))->unkFC14.head;
     if (current != 0) {
         key = ((func_8028472C_S2 *)(arg1))->unk118.v0;
 loop:
@@ -52,11 +52,11 @@ loop:
     }
 
     if (current != 0) {
-        func_80255D70_de(&((func_8028472C_S1 *)(arg0))->unkFC14.v1, current, arg1);
+        func_80255D70_de(&((func_8028472C_S1 *)(arg0))->unkFC14, current, arg1);
     } else if (*((func_8028472C_S2 *)(arg1))->unk118.v1 & 0x2000) {
-        func_80255CB8_de(&((func_8028472C_S1 *)(arg0))->unkFC14.v1, arg1);
+        func_80255CB8_de(&((func_8028472C_S1 *)(arg0))->unkFC14, arg1);
     } else {
-        func_80255D14_de(&((func_8028472C_S1 *)(arg0))->unkFC14.v1, arg1);
+        func_80255D14_de(&((func_8028472C_S1 *)(arg0))->unkFC14, arg1);
     }
 
     ((func_8028472C_S2 *)(arg1))->unk5C |= 0x01000000;

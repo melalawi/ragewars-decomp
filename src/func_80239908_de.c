@@ -1,5 +1,6 @@
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_802393F4.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 /* Posts a text as on-screen messages for a target: the target's messages still in the pool's list at 0xE40
  * are unlinked and returned to the owner's list at 0xF24, then the text (or D_800D7028 when given D_800D7034)
@@ -16,7 +17,6 @@ extern func_80237E70_G1 D_800D7034;
 extern s32 D_800E28D0;
 extern void func_80239CE0_de(Message *);
 extern void func_80255ED8_de(void *, Message *);
-extern void func_80255D14_de(void *, Message *);
 extern void func_80255CB8_de(void *, Message *);
 
 
@@ -33,11 +33,11 @@ extern void func_80255CB8_de(void *, Message *);
 static inline Message *recycle(void *owner, void *pool) {
     Message *oldest;
 
-    oldest = ((func_80237E70_S1 *)(owner))->unkF24.v0;
+    oldest = ((func_80237E70_S1 *)(owner))->unkF24.head;
     if (oldest != 0) {
         func_80239CE0_de(oldest);
-        func_80255ED8_de(&((func_80237E70_S1 *)(owner))->unkF24.v1, oldest);
-        func_80255D14_de(&((func_80237E70_S2 *)(pool))->unkE40.v0, oldest);
+        func_80255ED8_de(&((func_80237E70_S1 *)(owner))->unkF24, oldest);
+        func_80255D14_de(&((func_80237E70_S2 *)(pool))->unkE40, oldest);
     }
     return oldest;
 }
@@ -92,11 +92,11 @@ Message *func_80239908_de(void *owner, void *pool, u8 *text, s32 target, f32 siz
     if (pool == 0) {
         return 0;
     }
-    for (pending = ((func_80237E70_S2 *)(pool))->unkE40.v1; pending != 0; pending = next) {
+    for (pending = ((func_80237E70_S2 *)(pool))->unkE40.head; pending != 0; pending = next) {
         next = ((func_80237E70_S4 *)(pending))->unk4;
         if (pending->target == target) {
-            func_80255ED8_de(&((func_80237E70_S2 *)(pool))->unkE40.v0, pending);
-            func_80255CB8_de(&((func_80237E70_S1 *)(owner))->unkF24.v1, pending);
+            func_80255ED8_de(&((func_80237E70_S2 *)(pool))->unkE40, pending);
+            func_80255CB8_de(&((func_80237E70_S1 *)(owner))->unkF24, pending);
         }
     }
     pending = post_lines(owner, pool, text, 2, size, target);

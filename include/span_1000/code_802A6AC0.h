@@ -444,9 +444,8 @@ struct func_802A6D28_S1;
 /* unbake published declaration: published_98085f978546ee1eeb6134e4 */
 struct func_802A6D28_S1 {
     char pad0[0x94E0];
-    HeadRecord slots[10];
-    char pad95A8[0x10];
-    s32 unk95B8;
+    IntrusiveList slots[10];
+    IntrusiveList free;
 };
 
 struct func_802A6F8C_S1;

@@ -1,8 +1,6 @@
 #include "span_16E000/code_80429C10.h"
 #include "types.h"
 
-extern struct Cup D_80154010;
-
 s32 func_8042AF3C_de(void) {
     s32 complete = 1;
 

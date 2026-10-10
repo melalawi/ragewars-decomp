@@ -1,3 +1,4 @@
+#include "shared/heap_sorted_list.h"
 #include "span_1000/code_802508E0.h"
 #include "types.h"
 /* Reclaims one pool node: finds the first unlocked node (none of flags 0x702) in the D_80104574 list that
@@ -15,7 +16,6 @@ extern s32 D_8010513C;
 extern s32 D_80105180;
 extern char D_801051A0;
 extern char D_80100570;
-extern char D_80100584;
 extern void func_80254DD0_de(void *, Node_func_80251328_de *);
 extern s32 func_80255B2C_de(void *, s32);
 extern void func_80255ED8_de(void *, Node_func_80251328_de *);

@@ -152,6 +152,9 @@ struct Cup {
     u8 played[4];
 };
 
+/* The cup being played. */
+extern struct Cup D_80154010;
+
 /* unbake published declaration: published_952da37508f57003830cec05 */
 extern void func_8042AFE0_de();
 

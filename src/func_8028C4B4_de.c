@@ -53,9 +53,9 @@ s32 func_8028C568_de(void *arg0, void *arg1) {
     f32 val;
     s32 flag;
 
-    rec = ((func_8028C544_S1 *)(arg0))->unk11EC.v0;
+    rec = ((func_8028C544_S1 *)(arg0))->unk11EC.head;
     if (rec != 0) {
-        func_80255ED8_de(&((func_8028C544_S1 *)(arg0))->unk11EC.v1, (s32)rec);
+        func_80255ED8_de(&((func_8028C544_S1 *)(arg0))->unk11EC, (s32)rec);
         func_80255CB8_de(&((func_8028C544_S1 *)(arg0))->unk11D8, (s32) rec);
         ((func_8028C544_S2 *)(rec))->unk8 = arg1;
     } else {
@@ -94,7 +94,7 @@ void func_8028C60C_de(void *arg0) {
     f32 zero;
     f32 value;
 
-    node = ((func_8028C5E8_S1 *)(arg0))->unk11D8.v0;
+    node = ((func_8028C5E8_S1 *)(arg0))->unk11D8.head;
     remove = 0;
     if (node != 0) {
         zero = 0.0f;
@@ -114,7 +114,7 @@ void func_8028C60C_de(void *arg0) {
                 func_80278C10_de(object);
             }
             if (remove != 0) {
-                func_80255ED8_de(&((func_8028C5E8_S1 *)(arg0))->unk11D8.v1, (s32)node);
+                func_80255ED8_de(&((func_8028C5E8_S1 *)(arg0))->unk11D8, (s32)node);
                 func_80255CB8_de(&((func_8028C5E8_S1 *)(arg0))->unk11EC, (s32)node);
             }
             node = next;

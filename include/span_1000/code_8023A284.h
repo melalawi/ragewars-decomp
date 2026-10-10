@@ -167,7 +167,8 @@ struct IntegerState8A4;
 /* unbake published declaration: published_f067575a4d900db80e929878 */
 struct IntegerState8A4 {
     unsigned char padding_0[2208];
-    s32 unk_8A0;
+    IntrusiveList unk_8A0;
+    IntrusiveList unk_8B4;
 };
 
 #endif

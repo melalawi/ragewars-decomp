@@ -12,7 +12,6 @@
 
 
 
-extern struct Cup D_80154010;
 extern s32 D_800E51E4[];
 extern s32 D_800E51F8[];
 extern s32 D_800E5214[];

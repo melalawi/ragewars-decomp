@@ -2,6 +2,12 @@
 #define UNBAKE_SPAN_1000_CODE_80255BEC_H
 #include "../types.h"
 /* unbake published declaration: published_058b8d18d1fddeccf7610040 */
+/* Initializes an empty list whose nodes keep their links at the given offsets. */
+extern void func_80255CA0_de(IntrusiveList *list, s32 prevOffset, s32 nextOffset);
+
+/* Appends node at the tail and returns the new count. */
+extern s32 func_80255D14_de(IntrusiveList *list, void *node);
+
 extern void func_80255C4C_de(void *arg0, s32 *arg1, u32 *arg2);
 
 /* unbake published declaration: published_174cc56f20dc62afad99ad94 */

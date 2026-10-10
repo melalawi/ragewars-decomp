@@ -291,8 +291,8 @@ struct func_8028C5E8_S1;
 /* unbake published declaration: published_79e5ace8a709bbbe7641d29e */
 struct func_8028C5E8_S1 {
     char pad0[0x11D8];
-    func_80239C2C_S1_UF24 unk11D8;
-    char pad11D8[0x11EC - 0x11D8 - sizeof(func_80239C2C_S1_UF24)];
+    IntrusiveList unk11D8;
+    char pad11D8[0x11EC - 0x11D8 - sizeof(IntrusiveList)];
     char unk11EC;
 };
 

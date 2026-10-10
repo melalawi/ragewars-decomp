@@ -1,4 +1,5 @@
 #include "span_16E000/code_8044ACCC.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 
 /* Loads the preview resource into the sound buffer when idle, while the adjacent helper resets a changed selection. */
@@ -58,7 +59,6 @@ void func_8044D1B4_de(char *state) {
 
 extern s32 *func_8028FDB4_de(s32, s32);
 extern s32 func_80265550_de(s32 *, s32, s32, s32 *, s32 *);
-extern void func_80255CA0_de(List_func_8044D220_de *, s32, s32);
 extern void func_80255CB8_de(List_func_8044D220_de *, Node_func_8044D220_de *);
 extern Node_func_8044D220_de *func_80256190_de(List_func_8044D220_de *);
 extern void func_80255ED8_de(List_func_8044D220_de *, Node_func_8044D220_de *);

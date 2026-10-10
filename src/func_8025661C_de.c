@@ -18,9 +18,9 @@ void *func_8025661C_de(void *arg0) {
     void *temp_s0;
 
     temp_s2 = func_802BCF30_de();
-    temp_s0 = ((func_8025663C_S1 *)(arg0))->unk5068.v0;
+    temp_s0 = ((func_8025663C_S1 *)(arg0))->unk5068.head;
     if (temp_s0 != 0) {
-        func_80255ED8_de(&((func_8025663C_S1 *)(arg0))->unk5068.v1, (s32) temp_s0);
+        func_80255ED8_de(&((func_8025663C_S1 *)(arg0))->unk5068, (s32) temp_s0);
         ((func_80204468_S3 *)(temp_s0))->unk14 = 1;
         func_80255CB8_de(&((func_8025663C_S1 *)(arg0))->unk507C, (s32) temp_s0);
     }

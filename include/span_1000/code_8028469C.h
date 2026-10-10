@@ -318,7 +318,7 @@ struct func_8028472C_S1;
 /* unbake published declaration: published_e175da36b5a610a5e13bd248 */
 struct func_8028472C_S1 {
     char pad0[0xFC14];
-    func_80239C2C_S1_UF24 unkFC14;
+    IntrusiveList unkFC14;
 };
 
 /* unbake published declaration: published_e336afcf9c76ef9b84446b42 */

@@ -65,15 +65,22 @@ struct func_8044B27C_S1 {
     s32 unk4;
     char pad4[0x8 - 0x4 - sizeof(s32)];
     s32 unk8;
-    char pad8[0x38 - 0x8 - sizeof(s32)];
+    char pad8[0xC - 0x8 - sizeof(s32)];
+    IntrusiveList unkC;
+    IntrusiveList unk20;
+    char pad34[0x38 - 0x34];
     s32 unk38;
-    char pad38[0xF18 - 0x38 - sizeof(s32)];
+    char pad38[0x40 - 0x38 - sizeof(s32)];
+    char unk40;
+    char pad40[0xF18 - 0x40 - sizeof(char)];
     s32 unkF18;
     char padF18[0xF1C - 0xF18 - sizeof(s32)];
     s32 unkF1C;
     char padF1C[0xF20 - 0xF1C - sizeof(s32)];
     s32 unkF20;
-    char padF20[0x1200 - 0xF20 - sizeof(s32)];
+    char padF20[0xF24 - 0xF20 - sizeof(s32)];
+    IntrusiveList unkF24;
+    char padF24[0x1200 - 0xF24 - sizeof(IntrusiveList)];
     s32 unk1200;
 };
 
@@ -109,8 +116,8 @@ struct func_8044ADC0_S1 {
     char pad1E0[0x554 - 0x1E0 - sizeof(u8)];
     u8 unk554;
     char pad554[0xE40 - 0x554 - sizeof(u8)];
-    u8 unkE40;
-    char padE40[0xE54 - 0xE40 - sizeof(u8)];
+    IntrusiveList unkE40;
+    char padE40[0xE54 - 0xE40 - sizeof(IntrusiveList)];
     u8 unkE54;
     char padE54[0xE94 - 0xE54 - sizeof(u8)];
     u8 unkE94;
@@ -193,9 +200,7 @@ struct Record_func_8044B0E0_de;
 /* unbake published declaration: published_62b4bfbae9de117fc805f904 */
 typedef struct Record_func_8044B0E0_de Record_func_8044B0E0_de;
 
-struct List_func_8044D220_de;
-/* unbake published declaration: published_66c712d614cac603e75154b5 */
-typedef struct List_func_8044D220_de List_func_8044D220_de;
+typedef IntrusiveList List_func_8044D220_de;
 
 struct Bucket;
 /* unbake published declaration: published_67dad23f781318bbd3282061 */
@@ -279,7 +284,7 @@ struct func_8044CBE0_S1 {
     void * unkFC;
     void * unk100;
     char pad100[0x1B3FC];
-    func_8044CBE0_S1_U1B500 unk1B500;
+    IntrusiveList unk1B500;
 };
 
 struct State_func_8044D0F0_de;
@@ -349,6 +354,14 @@ struct Record_func_8044B0E0_de {
     s16 unk16;
 };
 
+struct Pool_func_8044B0E0_de;
+/* A list of the pool's eight records and a second, empty list. */
+struct Pool_func_8044B0E0_de {
+    IntrusiveList empty;
+    IntrusiveList records;
+    struct Record_func_8044B0E0_de entries[8];
+};
+
 /* unbake published declaration: published_a8cd9df325b9249a05caebaa */
 extern float D_800CA1F0;
 
@@ -366,13 +379,6 @@ struct Level_func_8044CD8C_de;
 /* unbake published declaration: published_ab2eebee946e6037911db766 */
 typedef struct Level_func_8044CD8C_de Level_func_8044CD8C_de;
 
-struct List_func_8044D220_de;
-/* unbake published declaration: published_acddcfd87550013140b21923 */
-struct List_func_8044D220_de {
-    char pad0[0x10];
-    s32 count;
-    s32 pad14;
-};
 
 struct func_8044AD14_S1;
 /* unbake published declaration: published_ad7d00f349fd0aead2ac4135 */
@@ -402,8 +408,8 @@ struct World_func_8044C108_de {
     void *edgeData;
     struct Face *faces;
     struct Face *edges;
-    char listA[0x14];
-    char listB[0x14];
+    IntrusiveList listA;
+    IntrusiveList listB;
     Bucket buckets[0x30];
     char pad1500[0x1B40C - 0x1500];
     s32 group;
@@ -453,8 +459,14 @@ typedef struct func_8044DE04_S1 func_8044DE04_S1;
 
 struct func_8044B420_S1;
 /* unbake published declaration: published_e11f3c33d8e73aa79a16e6e0 */
+struct Entry_func_8044A7D0_de {
+    char pad0[0x228];
+};
+
 struct func_8044B420_S1 {
-    char pad0[0x8C8];
+    struct Entry_func_8044A7D0_de entries[4];
+    IntrusiveList free;
+    IntrusiveList active;
     s16 unk8C8;
 };
 
@@ -464,7 +476,7 @@ struct func_8044B388_S1 {
     char pad0[0xC];
     char unkC;
     char padC[0x20 - 0xC - sizeof(char)];
-    char unk20;
+    IntrusiveList unk20;
 };
 
 struct func_8044ADC0_S2;

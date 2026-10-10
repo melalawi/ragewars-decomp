@@ -1106,7 +1106,7 @@ struct func_80204EA8_S1 {
 };
 
 /* unbake published declaration: published_2f854eb917d392155604fdcc */
-extern int D_80137064;
+extern IntrusiveList D_80137064;
 
 struct func_802A68A0_S3;
 /* unbake published declaration: published_2fd09ceb30ebda22c64e8ba7 */
@@ -3674,8 +3674,8 @@ struct func_8025C8F8_S1;
 /* unbake published declaration: published_771d6b6a35906ebebfa2010a */
 struct func_8025C8F8_S1 {
     char pad0[0x14];
-    char unk14;
-    char pad14[0x28 - 0x14 - sizeof(char)];
+    IntrusiveList unk14;
+    char pad14[0x28 - 0x14 - sizeof(IntrusiveList)];
     s32 unk28;
 };
 
@@ -4181,7 +4181,7 @@ struct func_80239760_S2;
 /* unbake published declaration: published_9761372e9707c70804eff089 */
 struct func_80239760_S2 {
     char pad0[0xE40];
-    char unkE40;
+    IntrusiveList unkE40;
 };
 
 struct func_802A2E5C_S2;
@@ -4331,7 +4331,7 @@ struct func_8025CA44_S1;
 /* unbake published declaration: published_a5ca2aee24189694990425ed */
 struct func_8025CA44_S1 {
     char pad0[0x14];
-    func_80239C2C_S1_UF24 unk14;
+    IntrusiveList unk14;
 };
 
 /* unbake published declaration: published_a5f18dd6ce967cceec610246 */

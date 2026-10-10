@@ -23,7 +23,7 @@ void func_80239B64_de(s32 arg0) {
 
     temp_s2 = (void *)(arg0 + 0x40);
     if (temp_s2 != 0) {
-        var_s1 = ((func_80239AE4_S1 *)(temp_s2))->unkE44;
+        var_s1 = ((func_80239AE4_S1 *)(temp_s2))->unkE40.tail;
         if (var_s1 != 0) {
             do {
                 temp_s0 = var_s1->next;
@@ -37,7 +37,7 @@ void func_80239B64_de(s32 arg0) {
     var_s2 = D_80140FE8_de;
     if (var_s2 != 0) {
         do {
-            var_s1_2 = ((func_80239B54_S2 *)(var_s2))->unkE44;
+            var_s1_2 = ((func_80239B54_S2 *)(var_s2))->unkE40.tail;
             if (var_s1_2 != 0) {
                 do {
                     temp_s0_2 = var_s1_2->next;

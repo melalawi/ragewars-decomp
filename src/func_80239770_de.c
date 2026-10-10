@@ -1,6 +1,7 @@
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "span_1000/code_802393F4.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 /* Posts a text as on-screen messages, one per line: the text (or D_800D7028 when given D_800D7034) is split
  * at newlines and for each non-empty line the oldest message node of the owner's list at 0xF24 is recycled
@@ -17,7 +18,6 @@ extern func_80237E70_G1 D_800D7034;
 extern s32 D_800E28D0;
 extern void func_80239CE0_de(Message *);
 extern void func_80255ED8_de(void *, Message *);
-extern void func_80255D14_de(void *, Message *);
 
 
 
@@ -30,10 +30,10 @@ extern void func_80255D14_de(void *, Message *);
 static inline Message *recycle(void *owner, void *pool) {
     Message *oldest;
 
-    oldest = ((func_80237E70_S1 *)(owner))->unkF24.v0;
+    oldest = ((func_80237E70_S1 *)(owner))->unkF24.head;
     if (oldest != 0) {
         func_80239CE0_de(oldest);
-        func_80255ED8_de(&((func_80237E70_S1 *)(owner))->unkF24.v1, oldest);
+        func_80255ED8_de(&((func_80237E70_S1 *)(owner))->unkF24, oldest);
         func_80255D14_de(&((func_80239760_S2 *)(pool))->unkE40, oldest);
     }
     return oldest;

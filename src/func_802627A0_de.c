@@ -30,12 +30,12 @@ extern void func_802466A0_de(Effect_func_80262A9C_de *, s32, s32, s32, s32, s32,
 extern void func_8024B2D0_de(Effect_func_80262A9C_de *);
 static inline Effect_func_80262A9C_de *take_effect(void *scene, s32 *ref) {
     Effect_func_80262A9C_de *effect;
-    if (D_8013B290 == 0 && (unsigned int)((func_80262ABC_S1 *)(scene))->unk5F24 >= 3) {
+    if (D_8013B290 == 0 && (unsigned int)((func_80262ABC_S1 *)(scene))->unk5F14.count >= 3) {
         return 0;
     }
-    effect = ((func_80262ABC_S1 *)(scene))->unk5F00.v0;
+    effect = ((func_80262ABC_S1 *)(scene))->unk5F00.head;
     if (effect != 0) {
-        func_80255ED8_de(&((func_80262ABC_S1 *)(scene))->unk5F00.v1, effect);
+        func_80255ED8_de(&((func_80262ABC_S1 *)(scene))->unk5F00, effect);
         func_80255CB8_de(&((func_80262ABC_S1 *)(scene))->unk5F14, effect);
         effect->ref = ref;
         if (ref != 0) {

@@ -11,6 +11,20 @@ typedef unsigned long long u64;
 typedef float f32;
 typedef double f64;
 
+struct IntrusiveList;
+/* A doubly linked list threaded through its nodes: head and tail are the end nodes, prevOffset and
+   nextOffset are the byte offsets of the previous and next links inside each node, and count is the
+   number of nodes. */
+struct IntrusiveList {
+    void *head;
+    void *tail;
+    s32 prevOffset;
+    s32 nextOffset;
+    s32 count;
+};
+
+typedef struct IntrusiveList IntrusiveList;
+
 extern s32 func_802005A0_de(s32 arg0);
 extern void func_80209988_de(void *arg0);
 extern s32 func_8020F2A8_de(void *arg0);

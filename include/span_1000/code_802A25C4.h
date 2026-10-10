@@ -494,11 +494,9 @@ struct Scene_func_802A5180_de;
 /* unbake published declaration: published_8e6cc645eb40b2d099268869 */
 struct Scene_func_802A5180_de {
     char pad0[0x94E0];
-    ParticleList lists[10];
+    IntrusiveList lists[10];
     char pad95A8[0x95A8 - 0x94E0 - 10 * 0x14];
-    struct Particle *free;
-    char pad95AC[0x95B8 - 0x95AC];
-    s32 state;
+    IntrusiveList free;
 };
 
 struct func_802A6A44_S1;

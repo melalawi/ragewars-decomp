@@ -1824,7 +1824,7 @@ struct func_80203908_S2;
 /* unbake published declaration: published_79259aa61f1767d062b75f69 */
 struct func_80203908_S2 {
     char pad0[0x14];
-    char unk14;
+    IntrusiveList unk14;
 };
 
 struct func_8022FD9C_S1;

@@ -1,5 +1,6 @@
 #include "span_C76B0/data.h"
 #include "common/data.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 #include "common/unused.h"
 
@@ -42,10 +43,9 @@ extern void func_80273448_de(Matrix_func_80213CF8_de *, f32, f32, f32);
 extern void func_8027DD48_de(EffectActor *, Matrix_func_80213CF8_de *, void *, f32);
 extern s32 func_802744D4_de(void);
 extern void func_80284570_de(EffectSystem *, Effect_func_802800C0_de *);
-extern void func_80255ED8_de(EffectList *, Effect_func_802800C0_de *);
-extern void func_80255CB8_de(EffectList *, Effect_func_802800C0_de *);
-extern void func_80255D14_de(EffectList *, Effect_func_802800C0_de *);
-extern void func_80255D70_de(EffectList *, Effect_func_802800C0_de *, Effect_func_802800C0_de *);
+extern void func_80255ED8_de(IntrusiveList *, Effect_func_802800C0_de *);
+extern void func_80255CB8_de(IntrusiveList *, Effect_func_802800C0_de *);
+extern void func_80255D70_de(IntrusiveList *, Effect_func_802800C0_de *, Effect_func_802800C0_de *);
 extern void func_80295E84_de(u32 *, s32);
 extern void func_80246184_de(Effect_func_802800C0_de *);
 extern f32 func_80285630_de(CharacterScreenCell);
@@ -70,7 +70,7 @@ static inline s32 effect_spawn_random_count(s32 range) {
     return range != 0 ? func_802744D4_de() % (range + 1) : 0;
 }
 
-static inline Effect_func_802800C0_de *effect_spawn_find_owned(EffectList *list, void *ownerId, EffectEntry *entry) {
+static inline Effect_func_802800C0_de *effect_spawn_find_owned(IntrusiveList *list, void *ownerId, EffectEntry *entry) {
     Effect_func_802800C0_de *effect;
 
     effect = list->head;
@@ -92,7 +92,7 @@ static inline Effect_func_802800C0_de *effect_spawn_find_owned(EffectList *list,
 
 static inline Effect_func_802800C0_de *effect_spawn_allocate(EffectSystem *sys, u8 index) {
     Effect_func_802800C0_de *effect;
-    EffectList *list;
+    IntrusiveList *list;
     s32 i;
 
     if (sys->free.head == 0) {

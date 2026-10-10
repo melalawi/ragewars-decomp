@@ -2,6 +2,7 @@
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
 #include "span_16E000/code_8043F69C.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 
 /* Returns the address 0x190 bytes into the block at offset 0x20 of an object, or null when the
@@ -145,7 +146,6 @@ s32 func_80442488_de(func_8022A404_S1 *arg0, s32 arg1, s32 arg2, s32 arg3, s32 a
     return var_v0;
 }
 
-extern void func_80255CA0_de(void *, int, int);
 
 void func_80442544_de(void *object) {
     func_80255CA0_de(object, 0x1D0, 0x1D4);

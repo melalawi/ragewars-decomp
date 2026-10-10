@@ -18,7 +18,7 @@ void func_80239AF4_de(s32 arg0, void *arg1) {
     void *var_a0;
 
     if (arg1 != 0) {
-        var_s1 = ((func_80239AE4_S1 *)(arg1))->unkE44;
+        var_s1 = ((func_80239AE4_S1 *)(arg1))->unkE40.tail;
         var_a0 = &((func_80239AE4_S1 *)(arg1))->unkE40;
         if (var_s1 != 0) {
             do {

@@ -79,8 +79,8 @@ struct Shared_func_80286A78_S1 {
     void * unk1B4EC; /* +0x1B4EC: src/func_80286A78.c */
     s32 unk1B4F0; /* +0x1B4F0: src/func_80286A78.c */
     char pad1B4F4[0xC];
-    u8 address1B500; /* +0x1B500: src/func_80286A78.c */
-    char pad1B501[0x1A3];
+    IntrusiveList address1B500; /* +0x1B500: src/func_80286A78.c */
+    char pad1B514[0x190];
     s32 unk1B6A4; /* +0x1B6A4: src/func_80286A78.c */
     char pad1B6A8[0x4];
     s32 unk1B6AC; /* +0x1B6AC: src/func_80286A78.c */

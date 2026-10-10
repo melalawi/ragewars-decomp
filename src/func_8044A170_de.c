@@ -1,5 +1,6 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_16E000/code_8044ACCC.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 /* Initializes camera transforms, viewport state, clipping records, and resource lists. */
 
@@ -8,7 +9,6 @@ void func_80238EB8_de(void *);                               /* extern */
 void func_802390F4_de(void *, s32);                         /* extern */
 void func_802393D8_de(void *);                            /* extern */
 void func_80239C20_de(void *);                            /* extern */
-void func_80255CA0_de(void *, s32, s32);                      /* extern */
 void func_802727D8_de(void *);                            /* extern */
 void func_80442544_de(void *);                    /* extern */
 
@@ -122,6 +122,6 @@ void func_8044A170_de(State_func_8044A170_de *arg0) {
     arg0->unk124 = 0x32;
     arg0->unk126 = 0;
     D_80103220.field_4 = 0;
-    func_80255CA0_de(((void *)&((func_8044ADC0_S1 *)(arg0))->unkE40), 0, 4);
+    func_80255CA0_de(&((func_8044ADC0_S1 *)(arg0))->unkE40, 0, 4);
     func_80239C20_de(arg0);
 }

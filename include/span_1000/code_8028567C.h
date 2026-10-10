@@ -21,8 +21,8 @@ struct func_80285D00_S1;
 /* unbake published declaration: published_35b7151ecb7fd050582abb1d */
 struct func_80285D00_S1 {
     char pad0[0x14];
-    func_80239C2C_S1_UF24 unk14;
-    char pad14[0x28 - 0x14 - sizeof(func_80239C2C_S1_UF24)];
+    IntrusiveList unk14;
+    char pad14[0x28 - 0x14 - sizeof(IntrusiveList)];
     s32 unk28;
 };
 
@@ -33,9 +33,8 @@ struct Node_func_80285B64_de;
 struct Pool_func_80285B64_de;
 /* unbake published declaration: published_49ebb3bf40525149f9cc30d6 */
 struct Pool_func_80285B64_de {
-    struct Node_func_80285B64_de *free;
-    char pad4[0x10];
-    struct Node_func_80285B64_de *active;
+    IntrusiveList free;
+    IntrusiveList active;
 };
 
 union func_80285D80_S2_U138;

@@ -7,7 +7,6 @@
 
 extern void func_8044A170_de(void *);
 extern void func_80255ED8_de(void *, void *);
-extern void func_80255D14_de(void *, void *);
 
 
 

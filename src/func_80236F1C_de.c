@@ -4,6 +4,7 @@
 #include "span_1000/code_8026AC38.h"
 #include "n64sdk.h"
 #include "gbi.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 #include "video_dimensions.h"
 #include "gfx.h"
@@ -156,7 +157,6 @@ extern func_80237E70_G1 D_800D7034;
 extern s32 D_800E28D0;
 extern void func_80239CE0_de(Message *);
 extern void func_80255ED8_de(void *, Message *);
-extern void func_80255D14_de(void *, Message *);
 extern s32 func_80245784_de(void);
 
 
@@ -173,11 +173,11 @@ extern s32 func_80245784_de(void);
 static inline Message *recycle(void *owner, void *pool) {
     Message *oldest;
 
-    oldest = ((func_80237E70_S1 *)(owner))->unkF24.v0;
+    oldest = ((func_80237E70_S1 *)(owner))->unkF24.head;
     if (oldest != 0) {
         func_80239CE0_de(oldest);
-        func_80255ED8_de(&((func_80237E70_S1 *)(owner))->unkF24.v1, oldest);
-        func_80255D14_de(&((func_80237E70_S2 *)(pool))->unkE40.v0, oldest);
+        func_80255ED8_de(&((func_80237E70_S1 *)(owner))->unkF24, oldest);
+        func_80255D14_de(&((func_80237E70_S2 *)(pool))->unkE40, oldest);
     }
     return oldest;
 }
@@ -234,7 +234,7 @@ Message *func_80237E80_de(void *owner, void *pool, u8 *text) {
         return 0;
     }
     if (func_80245784_de() != 0) {
-        pending = ((func_80237E70_S2 *)(pool))->unkE40.v1;
+        pending = ((func_80237E70_S2 *)(pool))->unkE40.head;
         if (pending != 0) {
             kind = 1;
             do {

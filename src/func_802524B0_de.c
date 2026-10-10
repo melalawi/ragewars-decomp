@@ -72,8 +72,8 @@ void func_802524B0_de(void *arg) {
                 request->flags = flags & ~8;
                 if (func_802551FC_de(&D_80106248, request, &D_801047E0) == 0) {
                     lock();
-                    func_80255ED8_de(D_801047E0.active, request);
-                    func_80255CB8_de(D_801047E0.pending, request);
+                    func_80255ED8_de(&D_801047E0.active, request);
+                    func_80255CB8_de(&D_801047E0.pending, request);
                     node = request->node;
                     node->flags &= ~2;
                     while (node->count != 0) {

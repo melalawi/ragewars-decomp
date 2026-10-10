@@ -154,9 +154,9 @@ struct func_80262EA8_S1;
 /* unbake published declaration: published_80809748cd7e9b5f9ceee72b */
 struct func_80262EA8_S1 {
     char pad0[0x5F00];
-    char unk5F00;
-    char pad5F00[0x5F14 - 0x5F00 - sizeof(char)];
-    func_80262EA8_S1_U5F14 unk5F14;
+    IntrusiveList unk5F00;
+    char pad5F00[0x5F14 - 0x5F00 - sizeof(IntrusiveList)];
+    IntrusiveList unk5F14;
 };
 
 struct ObjectLinks5F28;
@@ -206,11 +206,9 @@ struct func_80262ABC_S1;
 /* unbake published declaration: published_c08c3177527ef7bb16aaa56a */
 struct func_80262ABC_S1 {
     char pad0[0x5F00];
-    func_80262ABC_S1_U5F00 unk5F00;
-    char pad5F00[0x5F14 - 0x5F00 - sizeof(func_80262ABC_S1_U5F00)];
-    char unk5F14;
-    char pad5F14[0x5F24 - 0x5F14 - sizeof(char)];
-    s32 unk5F24;
+    IntrusiveList unk5F00;
+    char pad5F00[0x5F14 - 0x5F00 - sizeof(IntrusiveList)];
+    IntrusiveList unk5F14;
 };
 
 struct BitReader;
@@ -236,5 +234,8 @@ struct ResourceEntry {
 struct Six;
 /* unbake published declaration: published_f82fde6c24a3739c2a841e3f */
 typedef struct Six Six;
+
+/* The list func_80262C88_de appends its record to. */
+extern IntrusiveList D_80137050;
 
 #endif

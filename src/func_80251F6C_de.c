@@ -1,5 +1,6 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802508E0.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 /* Looks a key up in the request hash table under the manager lock: an existing request bumps its
    node's reference count and flags, stamps it and hands the node to func_80255FB8_de; otherwise, unless
@@ -39,7 +40,6 @@ extern void func_80254E88_de(s32, Request_func_80251F6C_de *);
 extern void func_80255170_de(s32 *, Request_func_80251F6C_de *);
 extern s32 func_802551FC_de(s32 *, Request_func_80251F6C_de *, Manager *);
 extern void func_80255CB8_de(void *, Request_func_80251F6C_de *);
-extern void func_80255D14_de(void *, Request_func_80251F6C_de *);
 extern void func_80255ED8_de(void *, Request_func_80251F6C_de *);
 extern void func_80255FB8_de(void *, Node_func_80251F6C_de *);
 extern Request_func_80251F6C_de *func_80252774_de(s32, Request_func_80251F6C_de *, s32);
@@ -132,7 +132,7 @@ done:
     }
 
     async |= D_801047E0.mask;
-    scan = *(Request_func_80251F6C_de **)D_801047E0.active;
+    scan = D_801047E0.active.head;
     while (scan != 0) {
         if (scan->key == key) {
             busy = 1;
@@ -158,8 +158,8 @@ done:
                 addref(second);
             }
 
-            func_80255ED8_de(D_801047E0.pending, found);
-            func_80255D14_de(D_801047E0.active, found);
+            func_80255ED8_de(&D_801047E0.pending, found);
+            func_80255D14_de(&D_801047E0.active, found);
             release();
 
             if (async != 0) {
@@ -182,8 +182,8 @@ done:
                 if (second != 0) {
                     unref(second);
                 }
-                func_80255ED8_de(D_801047E0.active, found);
-                func_80255CB8_de(D_801047E0.pending, found);
+                func_80255ED8_de(&D_801047E0.active, found);
+                func_80255CB8_de(&D_801047E0.pending, found);
                 func_80254E88_de(0, found);
                 release();
             }

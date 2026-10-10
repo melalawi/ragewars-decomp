@@ -8,8 +8,9 @@ struct Manager;
 /* unbake published declaration: published_12933b915dcbe0f860eb4329 */
 struct Manager {
     char queue[0x92C];
-    char pending[0x14];
-    char active[0x20];
+    IntrusiveList pending;
+    IntrusiveList active;
+    char padActive[0x20 - sizeof(IntrusiveList)];
     char lock[0x18];
     char unk978[0x24];
     s32 mask;
@@ -62,8 +63,9 @@ struct Manager_func_802524B0_de;
 /* unbake published declaration: published_4c800f7b799fc16868dca250 */
 struct Manager_func_802524B0_de {
     char queue[0x92C];
-    char pending[0x14];
-    char active[0x20];
+    IntrusiveList pending;
+    IntrusiveList active;
+    char padActive[0x20 - sizeof(IntrusiveList)];
     char lock[0x18];
 };
 

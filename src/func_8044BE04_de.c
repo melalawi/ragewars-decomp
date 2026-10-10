@@ -2,6 +2,7 @@
 #include "span_1000/code_8025D948.h"
 #include "span_1000/code_8025E280.h"
 #include "span_16E000/code_8044ACCC.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 #include "stddef.h"
 /* Loads a scene's light into the global light D_800CBC90: copies the ambient and directional colours from the scene's light settings (bytes 0xD and 0xA) into both colour copies and the direction bytes from 0x11, then scales the direction to D_800CA1F0 in length through func_802B72B0_de and func_80271F9C_de and stores it as shorts at 0x1B2B4 of the scene. */
@@ -87,12 +88,12 @@ void func_8044BF90_de(func_8044CBE0_S1 *arg0) {
         func_80253838_de(NULL, temp_a1_3);
     }
     func_8028D59C_de(arg0);
-    temp_s1 = arg0->unk1B500.v0;
+    temp_s1 = arg0->unk1B500.head;
     var_a1 = temp_s1;
     if (temp_s1 != NULL) {
         do {
             temp_s0 = var_a1->unk10;
-            func_80255ED8_de(&arg0->unk1B500.v1, (s32) var_a1);
+            func_80255ED8_de(&arg0->unk1B500, (s32) var_a1);
             var_a1 = temp_s0;
         } while (var_a1 != NULL);
     }
@@ -102,8 +103,6 @@ void func_8044BF90_de(func_8044CBE0_S1 *arg0) {
    node's four chunks with their counts, resets the two bucket lists and files the 48 buckets into
    the second, then for every face of both lists clears the solid bit when it is hidden and marks it
    0xF0 when its group bit is set in the current group's bitmap. */
-extern void func_80255CA0_de(void *list, s32 arg1, s32 arg2);
-extern void func_80255D14_de(void *list, void *item);
 extern s32 func_80285180_de(void ***handle, s32 arg1);
 extern void *func_8028FDB4_de(void *node, s32 index);
 extern void func_8028FDF8_de(void *node, s32 arg1);
@@ -145,10 +144,10 @@ void func_8044C108_de(World_func_8044C108_de *world, void ***handle) {
         world->edgeData = &((func_8020CC0C_S1 *)(l2))->unk8;
         world->edges = &((func_8044CD58_S2 *)(l3))->unk8;
         world->nedges = count;
-        func_80255CA0_de(world->listA, 0, 4);
-        func_80255CA0_de(world->listB, 0, 4);
+        func_80255CA0_de(&world->listA, 0, 4);
+        func_80255CA0_de(&world->listB, 0, 4);
         for (k = 0; k < 0x30; k++) {
-            func_80255D14_de(world->listB, &world->buckets[k]);
+            func_80255D14_de(&world->listB, &world->buckets[k]);
         }
         n = world->nfaces;
         for (i = 0; i < n; i++) {

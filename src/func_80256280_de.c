@@ -1,11 +1,10 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_80256220.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 
 extern void func_802BAC60_de(s32 arg0, s32 arg1, s32 arg2);
 extern void func_802BB550_de(s32 arg0, s32 arg1, s32 arg2);
-extern void func_80255CA0_de(s32 arg0, s32 arg1, s32 arg2);
-extern void func_80255D14_de(s32 arg0, s32 arg1);
 extern void func_802A001C_de(s32 arg0, s32 arg1, s32 arg2);
 extern void func_802BAC90_de(s32 arg0, s32 arg1, void *arg2, s32 arg3, s32 arg4, s32 arg5);
 extern void func_802BB750_de(s32 arg0);

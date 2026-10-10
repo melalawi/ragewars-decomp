@@ -1,5 +1,6 @@
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_802624A0.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 /* Culls a scene's active effects against the view box: effects whose bounds overlap the box ending at
  * D_801031F8 + 4 are passed to func_8028C934_de and, when idle, drop their counted reference; the others are
@@ -11,7 +12,6 @@
 extern f32 D_801031F8;
 extern void func_8028C934_de(s32, Effect_func_80262E88_de *);
 extern void func_80255ED8_de(void *, Effect_func_80262E88_de *);
-extern void func_80255D14_de(void *, Effect_func_80262E88_de *);
 
 static inline s32 overlaps(Effect_func_80262E88_de *effect, f32 *max) {
     if (max[0] > effect->min[0] && max[-3] < effect->max[0] && max[2] > effect->min[2] &&
@@ -32,7 +32,7 @@ void func_80262E88_de(void *scene, s32 arg1) {
     Effect_func_80262E88_de *next;
     f32 *max;
 
-    effect = ((func_80262EA8_S1 *)(scene))->unk5F14.v0;
+    effect = ((func_80262EA8_S1 *)(scene))->unk5F14.head;
     if (effect == 0) {
         return;
     }
@@ -52,7 +52,7 @@ void func_80262E88_de(void *scene, s32 arg1) {
             if (effect->ref != 0) {
                 *effect->ref -= 1;
             }
-            func_80255ED8_de(&((func_80262EA8_S1 *)(scene))->unk5F14.v1, effect);
+            func_80255ED8_de(&((func_80262EA8_S1 *)(scene))->unk5F14, effect);
             func_80255D14_de(&((func_80262EA8_S1 *)(scene))->unk5F00, effect);
         }
         effect = next;

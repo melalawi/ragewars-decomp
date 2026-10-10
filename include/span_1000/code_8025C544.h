@@ -405,7 +405,7 @@ struct func_8025CC0C_S1;
 /* unbake published declaration: published_e3fb2044f6695062fe0e3981 */
 struct func_8025CC0C_S1 {
     char pad0[0x14];
-    func_8025CC0C_S1_U14 unk14;
+    IntrusiveList unk14;
 };
 
 /* unbake published declaration: published_eb696884e840b62470e0a1e7 */

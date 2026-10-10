@@ -3,12 +3,12 @@
 #include "types.h"
 
 /** Initialize a five-word record. */
-void func_80255CA0_de(int *arg0, int arg1, int arg2) {
-    arg0[2] = arg1;
-    arg0[3] = arg2;
-    arg0[1] = 0;
-    arg0[0] = 0;
-    arg0[4] = 0;
+void func_80255CA0_de(IntrusiveList *list, s32 prevOffset, s32 nextOffset) {
+    list->prevOffset = prevOffset;
+    list->nextOffset = nextOffset;
+    list->tail = 0;
+    list->head = 0;
+    list->count = 0;
 }
 
 s32 func_80255CB8_de(void *arg0, s32 arg1) {

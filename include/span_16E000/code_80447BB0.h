@@ -3090,8 +3090,8 @@ struct ObjectPool {
     void *allocation;
     char *objects;
     s32 count;
-    s32 active_queue[5];
-    s32 object_queue[5];
+    IntrusiveList active_queue;
+    IntrusiveList object_queue;
 };
 
 struct Node_func_80449E18_de;
@@ -3132,5 +3132,19 @@ typedef struct SharedPlayer_func_80449EE4_de SharedPlayer_func_80449EE4_de;
 struct ObjectState96;
 /* unbake published declaration: published_de83d13959887efce071777b */
 typedef struct ObjectState96 ObjectState96;
+
+struct Record_func_80449DB0_de;
+/* A 0x44-byte record: three leading words, two lists of 0x16DC/0x16E0-linked nodes, four trailing words. */
+struct Record_func_80449DB0_de {
+    s32 word0;
+    s32 word4;
+    s32 word8;
+    IntrusiveList listC;
+    IntrusiveList list20;
+    s32 word34;
+    s32 word38;
+    s32 word3C;
+    s32 word40;
+};
 
 #endif

@@ -59,8 +59,8 @@ struct func_8025663C_S1;
 /* unbake published declaration: published_3997c3b6c319542b49717abe */
 struct func_8025663C_S1 {
     char pad0[0x5068];
-    func_80239C2C_S1_UF24 unk5068;
-    char pad5068[0x507C - 0x5068 - sizeof(func_80239C2C_S1_UF24)];
+    IntrusiveList unk5068;
+    char pad5068[0x507C - 0x5068 - sizeof(IntrusiveList)];
     char unk507C;
 };
 

@@ -4,11 +4,12 @@
 #include "span_1000/code_802A25C4.h"
 #include "n64sdk.h"
 #include "gbi.h"
+#include "span_1000/code_80255BEC.h"
 #include "types.h"
 #include "n64sdk.h"
 
 
-/* Draws the scene's ten particle lists unless the scene is in state 100: sets the render state and the shared particle texture D_800D14B0 (a 16x16 texture drawn in grey at alpha 200 through D_800D2E60), then for every particle inside the view box ending at D_801031F8 + 4 loads its matrix and draws the shared quad D_801469A0, while particles outside it are unlinked (func_80255ED8_de) and returned to the free list (func_80255D14_de); finally restores the render state through func_8026D8F8_de and func_80295FF4_de. */
+/* Draws the scene's ten particle lists unless the free list holds exactly 100 particles: sets the render state and the shared particle texture D_800D14B0 (a 16x16 texture drawn in grey at alpha 200 through D_800D2E60), then for every particle inside the view box ending at D_801031F8 + 4 loads its matrix and draws the shared quad D_801469A0, while particles outside it are unlinked (func_80255ED8_de) and returned to the free list (func_80255D14_de); finally restores the render state through func_8026D8F8_de and func_80295FF4_de. */
 
 
 
@@ -25,7 +26,6 @@ extern char D_800D14B0;
 extern char D_800D2E60;
 extern char D_801469A0;
 extern void func_80255ED8_de(void *list, Particle *particle);
-extern void func_80255D14_de(void *list, Particle *particle);
 
 
 
@@ -36,11 +36,11 @@ void func_802A5180_de(Scene_func_802A5180_de *scene) {
     Particle *particle;
     Particle *next;
     f32 *max;
-    ParticleList *list;
+    IntrusiveList *list;
     f32 pos[3];
     s32 i;
 
-    if (scene->state == 100) {
+    if (scene->free.count == 100) {
         return;
     }
     gDPPipeSync(D_80110634++);
@@ -57,7 +57,7 @@ void func_802A5180_de(Scene_func_802A5180_de *scene) {
     for (i = 0; i < 10; i++) {
         max = &((func_802077F4_S2 *)(&D_801031F8))->unk4;
         list = &scene->lists[i];
-        particle = list->active;
+        particle = list->head;
         while (particle != 0) {
             Transform *transform = &particle->transform;
 
