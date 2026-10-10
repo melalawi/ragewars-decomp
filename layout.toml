@@ -2552,7 +2552,7 @@ omit = []
 path = "src/func_802050A0_de.c"
 kind = "c"
 group = "code_80204E78"
-members = ["func_802050A0_de"]
+members = ["func_802050A0_de", "rodata/func_802050A0_de/800C1A90"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]

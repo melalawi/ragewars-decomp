@@ -2606,7 +2606,7 @@ segments:
       - [0xC2680, rodata, "rodata/func_80204868_de/800C1A80"]
       - [0xC2684, rodata, "rodata/func_80204A68_de/800C1A84"]
       - [0xC2688, data, "rodata/unresolved/800C1A88"]
-      - [0xC2690, rodata, "rodata/func_80205094_de/800C1A90"]
+      - [0xC2690, rodata, "rodata/func_802050A0_de/800C1A90"]
       - [0xC2698, data, "rodata/unresolved/800C1A98"]
       - [0xC26A0, rodata, "rodata/func_80205720_de/800C1AA0"]
       - [0xC26C8, rodata, "rodata/func_80205F18_de/800C1AC8"]
