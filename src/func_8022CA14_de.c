@@ -149,10 +149,7 @@ extern void func_802233F0_de(s32 arg0, s32 arg1, void *arg2);
 extern s32 func_8024E62C_de(void *arg0);
 extern void func_802227F4_de(void *, void *, s32);
 extern f32 func_8024E678_de(void *arg0, s32 arg1);
-extern char D_800CE7E4;
-extern char D_800C94EC_de;
 extern s32 D_800CED30;
-extern f32 D_800C2D78_de[2];
 
 
 

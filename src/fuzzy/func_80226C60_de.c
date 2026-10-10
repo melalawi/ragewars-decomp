@@ -7,8 +7,6 @@
 
 extern float D_800C2B70_de;
 extern f32 D_80115DEC;
-extern float func_802B7130_de(float x);
-extern float func_802B6560_de(float x);
 extern void func_80274098_de(void *arg0, void *arg1, void *arg2);
 
 void func_80226C60_de(void *object, Vector4f *output)

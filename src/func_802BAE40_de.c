@@ -58,13 +58,8 @@
 /* osInitialize, drafted from ultralib src/os/initialize.c (before 2.0J, _FINALROM): the clock
    rate comes from the ROM header through osPiRawReadIo. */
 
-extern Quad_func_802A1BE0_de D_002BBC70[];
-extern u64 D_80149B00;
-extern u32 D_80149B08;
 
-extern unsigned char D_8000031C[];
 extern s32 D_80000300;
-extern s32 D_800D5250;
 
 #if defined(VERSION_DE)
 extern u32 func_802BCF20_de(void);

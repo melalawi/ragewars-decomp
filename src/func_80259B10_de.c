@@ -18,7 +18,6 @@ extern void func_80272BCC_de(void *, Vec3 *, Vec3 *);
 extern void func_8027207C_de(Vec3 *);
 
 
-extern float fabsf(float);
 
 s16 func_80259B10_de(Vec3 *position, void *listener) {
     Vec3 forward;

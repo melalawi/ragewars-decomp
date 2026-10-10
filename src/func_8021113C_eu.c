@@ -9,7 +9,6 @@ extern s32 func_802099B4_de(void **, void *);
 extern s32 func_80209874_de(void *, s32);
 extern f32 func_802726BC_de(f32 *, f32 *);
 extern f32 func_80209BE0_de(void **);
-extern s32 func_802744D4_de(void);
 extern f32 func_80209DAC_de(void *);
 extern f32 func_80209308_de(Brain_func_80209308_de *, Vec3 *, f32, f32);
 extern s32 func_80210EFC_de(f32);

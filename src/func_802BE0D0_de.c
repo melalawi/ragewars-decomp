@@ -1,3 +1,4 @@
+#include "shared/abi.h"
 #include "span_1000/code_802BE0D0.h"
 #include "shared/func_802BE0D0_de_closed.h"
 

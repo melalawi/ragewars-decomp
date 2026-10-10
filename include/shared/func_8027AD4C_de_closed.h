@@ -1,7 +1,7 @@
 #ifndef FUNC_8027AD4C_DE_CLOSED_H
 #define FUNC_8027AD4C_DE_CLOSED_H
-#include "span_C76B0/data.h"
-#include "span_1000/code_8027A0F4.h"
+#include "types.h"
+#include "common/types_8a8189af7b05.h"
 
 /* Complete records from origin/legacy shared headers and source; historical gaps retained. */
 typedef struct Shared_func_8027ADBC_S2 Shared_func_8027ADBC_S2;

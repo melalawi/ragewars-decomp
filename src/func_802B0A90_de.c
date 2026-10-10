@@ -1,3 +1,5 @@
+#include "span_1000/code_8025A3EC.h"
+#include "common/unused.h"
 #include "span_1000/code_802B0388.h"
 #include "shared/func_802B0A90_de_closed.h"
 

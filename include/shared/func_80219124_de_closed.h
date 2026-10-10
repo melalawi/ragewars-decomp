@@ -2,7 +2,6 @@
 #define FUNC_80219124_DE_CLOSED_H
 #include "types.h"
 #include "span_C76B0/data.h"
-#include "types.h"
 typedef struct Shared_MenuItemRecord Shared_MenuItemRecord;
 struct Shared_MenuItemRecord {
     s32 index;

@@ -144,7 +144,6 @@ store_value:
     }
 }
 
-extern s32 D_800CBAFC;
 
 extern void func_8025AE1C_de(void *arg0);
 void func_8025BD00_de(void **arg0) {

@@ -2,8 +2,8 @@
 #define UNBAKE_SPAN_1000_CODE_80225D10_H
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
+#include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 struct func_802285C4_S2;
 /* unbake published declaration: published_037df425b11710e33a8249ff */
 typedef struct func_802285C4_S2 func_802285C4_S2;

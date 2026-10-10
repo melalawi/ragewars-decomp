@@ -1,5 +1,6 @@
 #ifndef FUNC_8044D794_DE_CLOSED_H
 #define FUNC_8044D794_DE_CLOSED_H
+#include "types.h"
 #include "common/unused.h"
 
 extern void func_80255CB8_de(void *, Entry_func_8044D794_de *);

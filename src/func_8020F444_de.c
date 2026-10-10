@@ -3,7 +3,6 @@
 #include "types.h"
 
 extern s32 D_8013B364;
-extern void *D_801372C8;
 
 extern void func_8020D014_de(void *arg0);
 extern void func_8020D1FC_de(s32);

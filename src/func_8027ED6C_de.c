@@ -42,7 +42,6 @@ struct Shared_AnimInfo;
 
 extern Gfx *D_80110634;
 extern struct Frame118 *D_8011BDC0;
-extern u32 D_800E28A4;
 extern f32 D_800D2988;
 extern s32 D_800D297C;
 extern char D_80100030;

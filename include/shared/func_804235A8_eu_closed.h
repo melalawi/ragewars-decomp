@@ -1,7 +1,7 @@
 #ifndef FUNC_804235A8_EU_CLOSED_H
 #define FUNC_804235A8_EU_CLOSED_H
+#include "types.h"
 #include "shared/func_804235A8_eu_layout.h"
-#include "common/unused.h"
 
 int func_80245798_de(void);
 void func_8025476C_de(unsigned int);

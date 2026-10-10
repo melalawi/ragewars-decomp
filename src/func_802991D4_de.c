@@ -12,7 +12,6 @@
 
 extern Menu_func_802991D4_de *D_8014D080;
 extern Element *func_80298170_de(s32 id);
-extern MenuElementHandler func_802997E4_de(s32 kind);
 extern s32 func_80411DF0_de(s32 id);
 
 

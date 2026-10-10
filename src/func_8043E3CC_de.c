@@ -14,7 +14,6 @@ s32 func_8043E3CC_de(void *arg0, Outer8043E458 *arg1) {
 }
 
 extern void func_804427C4_de(void *arg0, void *arg1, void *arg2);
-extern s32 D_004518A4;
 
 /** Forwards arg1 through and arg2 as the first parameter, adding the D_452834 record. */
 s32 func_8043E418_de(void *arg0, void *arg1, void *arg2) {
@@ -28,7 +27,6 @@ s32 func_8043E444_de(Shared_DebugWidget *widget, Shared_MenuHandle *handle) {
 }
 
 extern void func_804427C4_de(void *arg0, void *arg1, void *arg2);
-extern s32 D_0044F994_de;
 
 /* Forwards arg1 through and arg2 as the first parameter, adding the D_4505C0 record. */
 s32 func_8043E468_de(void *arg0, void *arg1, void *arg2) {

@@ -2,7 +2,6 @@
 #define UNBAKE_SPAN_1000_CODE_8023A284_H
 #include "../types.h"
 #include "common/types_8fd754e1e915.h"
-#include "gfx.h"
 /* unbake published declaration: published_18eaa73701f79305ca915876 */
 extern f32 func_8023A294_de(s32 arg0, f32 value, f32 target, f32 step);
 

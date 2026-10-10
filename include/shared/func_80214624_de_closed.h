@@ -1,6 +1,7 @@
 #ifndef FUNC_80214624_DE_CLOSED_H
 #define FUNC_80214624_DE_CLOSED_H
 #include "types.h"
+#include "common/types_8a8189af7b05.h"
 #include "common/unused.h"
 
 typedef struct { Vec3 pos; s32 unkC; } ApproachLocation;

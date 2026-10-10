@@ -1,3 +1,4 @@
+#include "gfx.h"
 #include "abi.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "span_1000/code_80217388.h"

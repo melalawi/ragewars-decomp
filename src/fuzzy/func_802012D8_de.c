@@ -2,7 +2,6 @@
 #include "span_1000/code_80200610.h"
 
 extern s32 func_802005A0_de(s32 address);
-extern void func_80200568_de(s32 address, s32 value);
 
 int func_802012D8_de(void) {
     u32 savedSource;

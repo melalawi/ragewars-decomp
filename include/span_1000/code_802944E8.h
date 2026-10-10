@@ -1,8 +1,7 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802944E8_H
 #define UNBAKE_SPAN_1000_CODE_802944E8_H
-#include "../types.h"
-#include "common/types_1dc8418c21db.h"
 #include "types.h"
+#include "common/types_1dc8418c21db.h"
 /* unbake published declaration: published_0b6fe6430bcac9e5123b716f */
 extern void func_802947A8_de(void);
 

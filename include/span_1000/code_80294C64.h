@@ -1,7 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80294C64_H
 #define UNBAKE_SPAN_1000_CODE_80294C64_H
 #include "../types.h"
-#include "resident_event_handler.h"
 struct func_802956AC_S2;
 /* unbake published declaration: published_0072273f0620a80a3dd1b162 */
 struct func_802956AC_S2 {

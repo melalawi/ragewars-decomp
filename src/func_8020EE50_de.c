@@ -2,7 +2,6 @@
 #include "types.h"
 
 
-extern void *D_801372C8;
 
 
 

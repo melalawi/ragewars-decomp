@@ -1,3 +1,4 @@
+#include "span_C76B0/data.h"
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_8028B64C.h"
 #include "types.h"
@@ -73,9 +74,6 @@ s32 func_8028C568_de(void *arg0, void *arg1) {
 }
 
 extern f32 D_800D2988;
-extern void func_80278C10_de(void *);
-extern void func_80255ED8_de(void *, s32);
-extern s32 func_80255CB8_de(void *, s32);
 
 
 

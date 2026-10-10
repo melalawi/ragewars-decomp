@@ -1,8 +1,7 @@
 #ifndef SHARED_SHARED_SCENEACTORTABLES_H
 #define SHARED_SHARED_SCENEACTORTABLES_H
 
-#include "types.h"
-#include "sceneactortables_types.h"
+#include "shared/sceneprimaryactors.h"
 
 typedef struct Shared_SceneActorTables Shared_SceneActorTables;
 struct Shared_SceneActorTables {

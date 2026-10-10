@@ -1,8 +1,8 @@
 #ifndef FUNC_80299A80_DE_CLOSED_H
 #define FUNC_80299A80_DE_CLOSED_H
 /* Phase1 source candidate; contract holds and immutable inputs in per-function JSON. */
-#include "common/unused.h"
 #include "types.h"
+#include "common/unused.h"
 struct Shared_WidgetIdE { u8 pad0[0xE]; u16 id; };
 
 

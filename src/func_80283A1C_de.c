@@ -4,8 +4,6 @@
 #include "common/unused.h"
 #include "packed_float.h"
 
-extern char D_801379C0;
-extern char D_8013B1A8;
 
 extern void func_80284178_de(void);
 extern void func_802A42F4_de(void *arg0, void *arg1);
@@ -53,7 +51,6 @@ void func_80283BA0_de(void *arg0, s32 arg1) {
     }
 }
 
-extern D801041F8_Layout D_801001F8;
 
 void func_80283BCC_de(void *arg0) {
     ((func_80283BA0_S1 *)(arg0))->unk5C |= 0x20000;

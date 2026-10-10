@@ -1,8 +1,5 @@
 #ifndef UNBAKE_SPAN_1000_CODE_8022E938_H
 #define UNBAKE_SPAN_1000_CODE_8022E938_H
-#include "../types.h"
-#include "common/types_1dc8418c21db.h"
-#include "resident_event_handler.h"
 #include "types.h"
 struct func_8022EA2C_S2;
 /* unbake published declaration: published_00125f582388c3885c71ed44 */

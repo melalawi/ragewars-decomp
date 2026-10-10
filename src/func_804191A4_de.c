@@ -1,3 +1,4 @@
+#include "gfx.h"
 #include "span_16E000/code_804143D8.h"
 #include "n64sdk.h"
 #include "gbi.h"

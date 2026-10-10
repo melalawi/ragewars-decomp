@@ -4,7 +4,6 @@
 #include "common/types_8a8189af7b05.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 struct func_80219490_S1;
 /* unbake published declaration: published_00af4daaab18587b1c2c1217 */
 struct func_80219490_S1 {

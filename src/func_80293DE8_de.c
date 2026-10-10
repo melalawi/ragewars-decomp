@@ -12,7 +12,6 @@ void func_80293DE8_de(void) {
 }
 
 extern s32 D_800E28C8;
-extern s32 D_80146D70;
 
 extern s32 D_80146D60;
 
@@ -34,7 +33,6 @@ void func_80293DF0_de(void *arg0) {
 }
 
 s32 func_802647C4_de();
-extern s32 D_8014ADA0;
 void func_80293E6C_de(void *arg0) {
     if (D_8014ADA0 != 0) {
         func_80293824_de(arg0, 1);

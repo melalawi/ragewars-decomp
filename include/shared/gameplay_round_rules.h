@@ -2,7 +2,6 @@
 #define RW_GAMEPLAY_ROUND_RULES_H
 #include "types.h"
 #include "common/types_8a8189af7b05.h"
-#include "shared/func_80425674_de_layout.h"
 /* Complete shared records retained from origin/legacy func_80227014.c and its shared headers. */
 typedef struct Shared_func_80227014_S1 Shared_func_80227014_S1;
 struct Shared_func_80227014_S1 {

@@ -66,8 +66,6 @@ void func_80286080_de(void *arg0) {
 }
 
 
-extern f32 D_800D2988;
-extern char D_80145040;
 
 extern void func_8024BE3C_de(void *arg0);
 extern void func_80246E44_de(char *);

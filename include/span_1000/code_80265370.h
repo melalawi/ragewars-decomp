@@ -1,7 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80265370_H
 #define UNBAKE_SPAN_1000_CODE_80265370_H
 #include "../types.h"
-#include "gfx.h"
 /* unbake published declaration: published_00d8fd7d904b847a92975352 */
 extern void func_80265DD0_de();
 

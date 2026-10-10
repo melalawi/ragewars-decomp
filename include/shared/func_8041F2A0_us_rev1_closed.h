@@ -1,10 +1,9 @@
 #ifndef FUNC_8041F2A0_US_REV1_CLOSED_H
 #define FUNC_8041F2A0_US_REV1_CLOSED_H
-#include "common/unused.h"
+#include "types.h"
 #include "common/types_8a8189af7b05.h"
 /* Remaining func_8041F2A0_* types are unresolved canonical identities. */
 /* Builds the four-player selection screen state, its preview models and sliding panels, then marks active players. */
-#include "types.h"
 struct func_8041F2A0_Vec3 {
     f32 x;
     f32 y;

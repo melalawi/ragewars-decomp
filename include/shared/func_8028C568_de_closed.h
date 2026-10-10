@@ -1,9 +1,8 @@
 #ifndef FUNC_8028C568_DE_CLOSED_H
 #define FUNC_8028C568_DE_CLOSED_H
+#include "types.h"
 #include "common/unused.h"
 
-#include "span_C76B0/data.h"
-#include "types.h"
 
 extern void func_80255ED8_de(void *, s32);
 extern s32 func_80255CB8_de(void *, s32);

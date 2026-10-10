@@ -3,8 +3,6 @@
 #include "types.h"
 /* __osInsertTimer, drafted from ultralib src/os/timerintr.c. */
 
-extern u32 func_802BCF30_de(void);
-extern void func_802BCF50_de(u32 mask);
 
 u64 func_802BBAAC_de(struct OSTimer_s *t)
 {

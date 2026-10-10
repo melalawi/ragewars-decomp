@@ -3,8 +3,6 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_06e4f7ef1f9e.h"
-#include "gfx.h"
-#include "decomp/attachment_effect_args.h"
 struct func_8026E5E0_S2;
 /* unbake published declaration: published_000a1a9b0b180505202e919a */
 typedef struct func_8026E5E0_S2 func_8026E5E0_S2;

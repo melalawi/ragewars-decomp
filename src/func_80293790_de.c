@@ -6,7 +6,6 @@
 #include "common/unused.h"
 #include "span_C76B0/data.h"
 
-extern func_802077F4_S2 D_800C5494;
 extern int func_80264B6C_de(void);
 
 void func_80293790_de(void *arg0, s32 arg1) {
@@ -33,9 +32,7 @@ typedef void (*Handler8029382C)(void *);
 
 
 extern void func_80292900_de(void *arg0);
-extern s32 D_800CD724;
 
-extern char D_800CD78C[];
 
 
 

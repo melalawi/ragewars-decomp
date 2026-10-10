@@ -51,9 +51,7 @@ void func_8044D794_de(Owner_func_8044D794_de *arg0) {
     }
 }
 
-extern s32 func_80285180_de(void ***, s32);
 extern s32 func_8028C198_de(s32, s32);
-extern void *func_8028FDB4_de(void *, s32);
 
 void func_8044D804_de(s32 arg0, void ***arg1) {
     void *obj;
@@ -92,8 +90,6 @@ void func_8044D804_de(s32 arg0, void ***arg1) {
     }
 }
 
-extern s32 func_80285180_de(void ***, s32);
-extern void *func_8028FDB4_de(void *, s32);
 
 void func_8044D934_de(s32 arg0, void ***arg1) {
     f32 scale;

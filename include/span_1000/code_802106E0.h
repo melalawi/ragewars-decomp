@@ -2,8 +2,6 @@
 #define UNBAKE_SPAN_1000_CODE_802106E0_H
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
-#include "common/types_1dc8418c21db.h"
-#include "resident_event_handler.h"
 /* unbake published declaration: published_09ccbe7e7b0455e623071e2c */
 extern float D_800C1FD8_de;
 

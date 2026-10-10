@@ -46,7 +46,6 @@ s32 func_8020F93C_de(void *arg0)
   return var_a1;
 }
 
-extern func_802077F4_S2 D_800C21F0_eu_x;
 
 s32 func_8020F984_de(void *arg0) {
     f32 temp_f0;

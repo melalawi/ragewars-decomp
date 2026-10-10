@@ -2,7 +2,6 @@
 #include "common/types_1dc8418c21db.h"
 #include "span_1000/code_802106E0.h"
 #include "types.h"
-extern s32 func_802744D4_de(void);
 
 
 

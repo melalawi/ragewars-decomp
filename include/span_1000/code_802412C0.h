@@ -1,8 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_802412C0_H
 #define UNBAKE_SPAN_1000_CODE_802412C0_H
 #include "../types.h"
-#include "common/draft_fields_func_802412D0_de.h"
-#include "common/draft_fields_func_802413C8_de.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_06e4f7ef1f9e.h"
 #include "common/types_1dc8418c21db.h"

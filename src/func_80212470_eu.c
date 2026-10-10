@@ -3,7 +3,6 @@
 #include "span_1000/code_802106E0.h"
 #include "types.h"
 
-extern s32 func_802744D4_de(void);
 
 
 
@@ -34,7 +33,6 @@ void func_80212470_eu(void *arg0) {
     ((func_80212450_S3 *)(inner))->unk2E0 = r3 % 250000 + 360000;
 }
 
-extern s32 func_802744D4_de(void);
 
 
 void func_80212544_eu(void *arg0) {

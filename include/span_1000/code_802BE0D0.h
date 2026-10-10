@@ -5,7 +5,6 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
-#include "resident_event_handler.h"
 /* unbake published declaration: published_166e25c35a8d8f44d88e93e0 */
 extern float D_801514C0[];
 

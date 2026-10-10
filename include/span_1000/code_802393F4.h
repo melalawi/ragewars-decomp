@@ -3,7 +3,6 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 /* unbake published declaration: published_067e292d3f46a83144b4ba27 */
 extern void func_8023A1F4_de(void *arg0);
 

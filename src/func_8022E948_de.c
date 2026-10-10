@@ -1,8 +1,10 @@
+#include "span_1000/code_8025A3EC.h"
+#include "common/unused.h"
+#include "shared/func_80286080_de_closed.h"
 #include "span_1000/code_8022E938.h"
 /* FAKEMATCH: retains inherited numeric field accesses because a verified live shared layout for those accesses is not available; the old access widths and evaluation order are preserved. */
 #include "types.h"
 #include "shared/func_8021E2A0_de_closed.h"
-extern u8 D_801462E5;
 
 
 

@@ -1,3 +1,4 @@
+#include "gfx.h"
 #include "span_1000/code_8023A284.h"
 #include "n64sdk.h"
 #include "gbi.h"

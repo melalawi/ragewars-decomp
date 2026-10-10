@@ -70,7 +70,6 @@ extern s32 D_800E28D4;
 
 extern u8 D_801462DE;
 extern func_80227014_S1 D_801468A0;
-extern u8 D_801462D5;
 
 
 

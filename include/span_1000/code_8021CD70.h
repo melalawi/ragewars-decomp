@@ -4,7 +4,6 @@
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
-#include "gfx.h"
 struct SharedPlayer_func_802227F4_de;
 /* unbake published declaration: published_074dd8864ce6d01863b0e7e9 */
 typedef struct SharedPlayer_func_802227F4_de SharedPlayer_func_802227F4_de;

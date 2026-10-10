@@ -27,11 +27,8 @@
 extern s32 D_8015375C;
 extern s32 D_800E28C0;
 extern char D_8014561C[];
-extern char D_0044FB50[];
-extern char D_0044EA2C[];
 extern char D_0044ED44[];
 extern char D_0044E468[];
-extern char D_0044E9C0[];
 
 extern void func_80404E28_de(s32 ch);
 extern s32 func_80404F04_de(s32 ch);

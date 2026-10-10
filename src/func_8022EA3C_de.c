@@ -39,7 +39,6 @@ void func_8022EA3C_de(void *arg0, void *arg1) {
 void func_8022EB04_de(void) {
 }
 
-extern void *D_800D052C[];
 extern char D_8011D8D0;
 extern s32 func_80283228_de(void *, s32);
 

@@ -1,9 +1,9 @@
 #ifndef FUNC_80438614_DE_CLOSED_H
 #define FUNC_80438614_DE_CLOSED_H
+#include "types.h"
+#include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/unused.h"
-#include "span_C76B0/data.h"
-#include "span_16E000/code_804379C8.h"
 
 
 

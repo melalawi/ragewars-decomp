@@ -1,8 +1,8 @@
 #ifndef SHARED_SHARED_FUNC_80286A78_S16_H
 #define SHARED_SHARED_FUNC_80286A78_S16_H
 
-#include "types.h"
-#include "func_80286a78_s16_types.h"
+#include "shared/sceneactorkind.h"
+#include "shared/sceneactorprefix.h"
 
 typedef struct Shared_func_80286A78_S16 Shared_func_80286A78_S16;
 struct Shared_func_80286A78_S16 {

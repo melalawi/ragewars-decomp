@@ -1,7 +1,6 @@
 #include "span_1000/code_80297CD0.h"
 #include "types.h"
 
-extern MenuElementHandler func_802997E4_de(s32 kind);
 
 s32 func_802998E0_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4)
 {

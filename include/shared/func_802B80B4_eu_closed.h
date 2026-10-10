@@ -1,7 +1,5 @@
 #ifndef FUNC_802B80B4_EU_CLOSED_H
 #define FUNC_802B80B4_EU_CLOSED_H
-#include "span_1000/code_802B7B80.h"
-#include "common/unused.h"
 #include "types.h"
 
 

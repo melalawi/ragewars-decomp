@@ -1,3 +1,4 @@
+#include "span_C76B0/data.h"
 #include "span_16E000/code_804379C8.h"
 #include "shared/func_80438614_de_closed.h"
 

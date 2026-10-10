@@ -1,3 +1,4 @@
+#include "shared/func_80206724_de_closed.h"
 #include "span_1000/code_80203F04.h"
 #include "shared/func_80204C34_de_closed.h"
 

@@ -1,7 +1,6 @@
 #ifndef SHARED_SHARED_FUNC_80286A78_S15_H
 #define SHARED_SHARED_FUNC_80286A78_S15_H
 
-#include "types.h"
 
 typedef struct Shared_func_80286A78_S15 Shared_func_80286A78_S15;
 struct Shared_func_80286A78_S15 {

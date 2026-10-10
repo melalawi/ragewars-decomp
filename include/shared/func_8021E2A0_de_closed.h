@@ -2,12 +2,7 @@
 #define FUNC_8021E2A0_DE_CLOSED_H
 #include "types.h"
 #include "common/types_8a8189af7b05.h"
-#include "shared/gameplay_movement.h"
 
-#include "common/data.h"
-#include "common/unused.h"
-#include "common/types_06e4f7ef1f9e.h"
-#include "span_1000/code_8021CD70.h"
 
 extern f32 D_800D2988;
 

@@ -1,7 +1,6 @@
 #ifndef SHARED_SHARED_SCENEPRIMARYACTORS_H
 #define SHARED_SHARED_SCENEPRIMARYACTORS_H
 
-#include "types.h"
 
 typedef struct Shared_ScenePrimaryActors Shared_ScenePrimaryActors;
 struct Shared_ScenePrimaryActors {

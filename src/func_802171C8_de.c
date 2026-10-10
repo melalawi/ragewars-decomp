@@ -1,3 +1,8 @@
+#include "shared/func_802052C4_de_closed.h"
+#include "span_1000/code_8021CD70.h"
+#include "span_1000/code_8025A3EC.h"
+#include "span_16E000/code_8043962C.h"
+#include "common/unused.h"
 #include "span_1000/code_80213ED4.h"
 #include "types.h"
 #include "shared/func_802171FC_de_closed.h"

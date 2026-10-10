@@ -74,7 +74,6 @@ enum { PAK_SLOT_RESOURCE_688 = 688, PAK_SLOT_RESOURCE_689 = 689, PAK_SLOT_RESOUR
 
 #endif
 extern PakMenuController *D_800E54A4;
-extern void *D_800D3250[];
 extern void func_8040E8D8_de(MenuWidget *,s32),func_8040E950_de(MenuWidget *,s32),func_8041B8DC_de(s32,s32,MenuWidget *);
 extern MenuWidget *func_8040EC30_de(MenuWidget *,s32),*func_8041B7FC_de(s32,s32);
 extern s32 func_8040EBD0_de(MenuWidget *),func_804358C0_de(s32,s8);

@@ -107,7 +107,6 @@ s32 func_8028F544_de(Ctx_func_8028F544_de *arg0, Node_func_8028F544_de **arg1, N
 
 
 
-extern char D_0028E930;
 extern void func_802BAC60_de(char *row, char *slots, s32 count);
 extern void func_802BB550_de(s32 slot, char *row, s32 text);
 extern void func_802BA650_de(char *row, s32 text, s32 style);

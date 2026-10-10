@@ -7,7 +7,6 @@
    func_80286AA8_de, calls func_8025476C_de with one when func_8025477C_de reports nothing, then calls
    func_80245A10_de, func_80245A20_de with zero and func_80245A30_de. */
 extern char D_80145088[];
-extern char D_8011FE88[];
 extern void func_80245B28_de();
 extern void func_8044A370_de(void *, s32);
 extern void func_804499B0_de(void *, s32, s32);

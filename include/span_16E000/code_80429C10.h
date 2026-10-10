@@ -2,7 +2,6 @@
 #define UNBAKE_SPAN_16E000_CODE_80429C10_H
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 struct Menu_func_8042AAD0_de;
 /* unbake published declaration: published_10689000d1675d4dd9632335 */
 struct Menu_func_8042AAD0_de {

@@ -201,7 +201,6 @@ void func_80416ECC_de(s32 mode) {
    func_80417138_de. */
 
 extern Triple D_80153F60;
-extern s32 D_8014DCDC;
 
 extern s32 D_800E32CC;
 

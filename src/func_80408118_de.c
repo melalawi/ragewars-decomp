@@ -7,7 +7,6 @@ extern s32 D_8015375C;
 
 extern s32 D_8011FECC;
 extern Digits D_800DCD78;
-extern char D_800E0DA4[];
 extern u8 *D_800D3754;
 extern u8 *D_800D376C;
 extern u8 *D_800D7E14;

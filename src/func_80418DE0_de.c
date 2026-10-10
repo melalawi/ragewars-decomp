@@ -1,3 +1,4 @@
+#include "gfx.h"
 #include "span_16E000/code_804143D8.h"
 #include "gbi.h"
 /* Draws a sprite with the standard 2D state: resets the render-state cache, selects render mode

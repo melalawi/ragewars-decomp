@@ -1,3 +1,5 @@
+#include "common/types_1dc8418c21db.h"
+#include "span_C76B0/data.h"
 #include "span_1000/code_8027A0F4.h"
 #include "shared/func_8027AD4C_de_closed.h"
 #include "common/types_8a8189af7b05.h"

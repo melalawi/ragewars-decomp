@@ -2,7 +2,6 @@
 #define UNBAKE_SPAN_16E000_CODE_80442BC8_H
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 struct Object1C8;
 /* unbake published declaration: published_0ba1cc40c2974d91467f499c */
 struct Object1C8 {

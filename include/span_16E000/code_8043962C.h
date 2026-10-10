@@ -2,7 +2,6 @@
 #define UNBAKE_SPAN_16E000_CODE_8043962C_H
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
-#include "gfx.h"
 /* unbake published declaration: published_0f7ca3fdb2581e88e019f299 */
 extern s32 func_80439E34_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4);
 

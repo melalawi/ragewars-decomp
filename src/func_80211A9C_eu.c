@@ -19,7 +19,6 @@ extern s32 func_802099B4_de(CloseAttackBrain *, CloseAttackActor *);
 extern void func_80209874_de(CloseAttackBrain *, s32);
 extern f32 func_802726BC_de(Vec3 *, Vec3 *);
 extern f32 func_80209BE0_de(CloseAttackBrain *);
-extern s32 func_802744D4_de(void);
 extern f32 func_80209DAC_de(CloseAttackBrain *);
 extern f32 func_80209308_de(CloseAttackBrain *, Vec3 *, f32, f32);
 extern s32 func_80210EFC_de(f32);

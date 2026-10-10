@@ -1,3 +1,4 @@
+#include "gfx.h"
 #include "common/types_8fd754e1e915.h"
 #include "n64sdk.h"
 #include "gbi.h"

@@ -18,7 +18,6 @@ extern s32 func_802099B4_de(Brain_func_802120A8_eu *, Actor_func_802120A8_eu *);
 extern void func_80209874_de(Brain_func_802120A8_eu *, s32);
 extern f32 func_802726BC_de(Vec3 *, Vec3 *);
 extern f32 func_80209BE0_de(Brain_func_802120A8_eu *);
-extern s32 func_802744D4_de(void);
 extern f32 func_80209DAC_de(Brain_func_802120A8_eu *);
 extern f32 func_80209308_de(Brain_func_802120A8_eu *, Vec3 *, f32, f32);
 extern s32 func_80210EFC_de(f32);

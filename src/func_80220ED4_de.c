@@ -11,7 +11,6 @@ extern s32 D_8014561C;
 #include "types.h"
 #include "span_1000/code_8026AC38.h"
 
-extern f32 D_800D2988;
 
 extern struct Shared_World D_8011FE88;
 extern char D_8013B364;
@@ -69,7 +68,6 @@ extern f32 func_8024E420_de(void *);
 extern f32 func_8024E464_de(void *);
 extern s32 func_8024E62C_de(void *);
 extern struct Shared_Surface *func_8024E7DC_de(void *);
-extern void func_8025476C_de(s32);
 extern s32 func_8025DE54_de(s16, Vec3, s32, s32);
 extern void func_8025E418_de(s32);
 

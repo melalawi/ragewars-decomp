@@ -1,8 +1,8 @@
 #ifndef SHARED_SHARED_SCENERESOURCES_H
 #define SHARED_SHARED_SCENERESOURCES_H
 
-#include "types.h"
-#include "sceneresources_types.h"
+#include "shared/sceneactorresources.h"
+#include "shared/scenefontresources.h"
 
 typedef struct Shared_SceneResources Shared_SceneResources;
 struct Shared_SceneResources {

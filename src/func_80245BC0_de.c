@@ -1,3 +1,5 @@
+#include "shared/func_802052C4_de_closed.h"
+#include "shared/func_802453D4_de_closed.h"
 #include "span_1000/code_80245980.h"
 #include "shared/func_80245BC0_de_closed.h"
 

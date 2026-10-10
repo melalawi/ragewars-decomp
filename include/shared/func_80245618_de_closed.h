@@ -1,10 +1,7 @@
 #ifndef FUNC_80245618_DE_CLOSED_H
 #define FUNC_80245618_DE_CLOSED_H
-#include "common/types_1dc8418c21db.h"
-#include "common/unused.h"
-#include "shared/func_804235A8_eu_layout.h"
 #include "types.h"
-#include "common/types_8a8189af7b05.h"
+#include "shared/func_804235A8_eu_layout.h"
 
 
 struct SharedTrackObject;

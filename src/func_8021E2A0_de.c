@@ -1,3 +1,9 @@
+#include "span_1000/code_8025A3EC.h"
+#include "span_16E000/code_8043962C.h"
+#include "common/unused.h"
+#include "shared/func_80286080_de_closed.h"
+#include "shared/gameplay_movement.h"
+#include "common/data.h"
 #include "span_1000/code_8021CD70.h"
 #include "shared/func_8021E2A0_de_closed.h"
 

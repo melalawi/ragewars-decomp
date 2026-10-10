@@ -1,7 +1,7 @@
 #ifndef FUNC_804220A8_DE_CLOSED_H
 #define FUNC_804220A8_DE_CLOSED_H
-#include "common/unused.h"
 #include "types.h"
+#include "common/unused.h"
 
 
 

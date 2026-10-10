@@ -2,7 +2,6 @@
 #define UNBAKE_SPAN_16E000_CODE_8043A0A4_H
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 /* unbake published declaration: published_27ad29a7c66d739b3c554ebd */
 extern void func_8043B96C_de();
 

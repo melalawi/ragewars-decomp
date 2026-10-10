@@ -2,7 +2,6 @@
 #define UNBAKE_SPAN_1000_CODE_80290980_H
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 /* unbake published declaration: published_1643d43474e80d6b1fb35f18 */
 extern void func_80290A50_us_rev1(void);
 

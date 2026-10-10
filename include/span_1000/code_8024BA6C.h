@@ -3,7 +3,6 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 struct func_8024BECC_S1;
 /* unbake published declaration: published_008b4db0659ea2920f200ea5 */
 typedef struct func_8024BECC_S1 func_8024BECC_S1;

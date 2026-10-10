@@ -1,10 +1,8 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80217388_H
 #define UNBAKE_SPAN_1000_CODE_80217388_H
 #include "../types.h"
-#include "common/reset_storage.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 struct TeamMenu;
 /* unbake published declaration: published_03df77f5a41514aa2b63bc80 */
 typedef struct TeamMenu TeamMenu;

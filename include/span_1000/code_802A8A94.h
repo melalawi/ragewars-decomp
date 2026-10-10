@@ -2,7 +2,6 @@
 #define UNBAKE_SPAN_1000_CODE_802A8A94_H
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 /* unbake published declaration: published_10ab4315289132ef269b9237 */
 extern void func_802A8710_de();
 

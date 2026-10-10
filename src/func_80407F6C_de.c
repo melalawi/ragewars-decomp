@@ -6,7 +6,6 @@ extern s32 D_8015375C;
 
 extern char *D_800D3758;
 extern char *D_800D375C;
-extern char D_800E0DA4[];
 
 extern s32 func_8040458C_de(s32 ch, s32 index, s32 *exists, u8 *name, u8 *ext, s32 *size,
                          char *companyCode, char *gameCode);

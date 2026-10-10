@@ -1,8 +1,6 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80254CE4_H
 #define UNBAKE_SPAN_1000_CODE_80254CE4_H
 #include "../types.h"
-#include "common/draft_fields_func_80255630_de.h"
-#include "resident_event_handler.h"
 struct func_80255428_S3;
 /* unbake published declaration: published_045461a1dd2b8d4beae95fea */
 struct func_80255428_S3 {

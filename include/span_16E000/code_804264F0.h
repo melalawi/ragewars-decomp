@@ -3,7 +3,6 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
-#include "gfx.h"
 struct State_func_80428214_de;
 /* unbake published declaration: published_072e26e1f20f7d5e60584028 */
 typedef struct State_func_80428214_de State_func_80428214_de;

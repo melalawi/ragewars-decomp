@@ -16,7 +16,6 @@ s32 func_80446088_eu(void *first, void *second, void *third) {
     return 1;
 }
 
-extern char D_00450E9C[];
 extern void func_804427C4_de(void *, void *, void *);
 s32 func_804460B4_eu(void *first, void *second, void *third) {
     func_804427C4_de(third, second, D_00450E9C);
@@ -29,7 +28,6 @@ s32 func_804460E0_eu(void *first, void *second, void *third) {
     return 1;
 }
 
-extern char D_0044F798[];
 extern void func_804427C4_de(void *, void *, void *);
 s32 func_8044610C_eu(void *first, void *second, void *third) {
     func_804427C4_de(third, second, D_0044F798);
