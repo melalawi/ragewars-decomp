@@ -3809,7 +3809,7 @@ segments:
       - [0xCC488, rodata, "rodata/shared/800CB888"]
       - [0xCC48C, data, "rodata/unresolved/800CB88C"]
       - [0xCC52C, rodata, "rodata/func_802312C8_de/800CB92C"]
-      - [0xCC530, data, "rodata/unresolved/800CB930"]
+      - [0xCC530, .data, "rodata/unresolved/800CB930"]
       - [0xCD538, rodata, "rodata/func_80236874_de/800CC938"]
       - [0xCD548, data, "rodata/unresolved/800CC948"]
       - [0xCD558, data, "rodata/writable/800CC958"]
