@@ -1919,6 +1919,15 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "data_800D0DA4"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800D0DA4", "src/ragewars_controller_button_remap_us_rev1.c", "rodata/unresolved/800D0DA4_unclaimed_D1A48"]
+evidence = "inferred"
+signals = ["adjacent"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "data_800D14A8"
 segment = "span_C76B0"
 members = ["rodata/unresolved/800D0F00_unclaimed_D1BA0_unclaimed_D1E68_unclaimed_D1F78_unclaimed_D20A8", "src/ragewars_particle_intensity_texture_us_rev1.c"]
@@ -35481,6 +35490,17 @@ path = "src/ragewars_arccos_table_us_rev1.c"
 kind = "data"
 group = "code_802412C0"
 members = ["src/ragewars_arccos_table_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_controller_button_remap_us_rev1.c"
+kind = "data"
+group = "data_800D0DA4"
+members = ["src/ragewars_controller_button_remap_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
