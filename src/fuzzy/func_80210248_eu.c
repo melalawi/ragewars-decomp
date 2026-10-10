@@ -52,9 +52,10 @@ s32 func_80210248_eu(Chaser *arg0) {
         arg0->dist[i] = -1;
     }
     count = 0;
+    i = count;
     world = &D_80145040;
     rules = &world->rules;
-    for (i = 0; i < 8; i++) {
+    for (; i < 8; i++) {
         other = func_8022A5F4_de(world, i);
         if (other != NULL && other != arg0->self
             && (rules->teamsEnabled == 0 || other->team->id != arg0->self->team->id)
