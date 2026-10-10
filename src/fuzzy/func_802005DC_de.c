@@ -4,14 +4,6 @@
 extern s32 D_800F1C80_de;
 
 s32 func_802005DC_de(s32 arg0) {
-    s16 temp_v0;
-
-    D_800F1C80_de = 0;
-loop_2:
-    temp_v0 = D_800F1C80_de < arg0;
-    if (temp_v0 != 0) {
-        D_800F1C80_de += 1;
-        goto loop_2;
+    for (D_800F1C80_de = 0; D_800F1C80_de < arg0; D_800F1C80_de++) {
     }
-    return temp_v0;
 }
