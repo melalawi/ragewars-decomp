@@ -63,6 +63,7 @@ schema = 1
 "func_80204DFC_de" = { evidence = "authored", signature = "void func_80204DFC_de(void *arg0)" }
 "func_80204E48_de" = { evidence = "authored", signature = "void func_80204E48_de(void *arg0)" }
 "func_80204F78_de" = { evidence = "authored", signature = "void func_80204F78_de(void *unused, char *object, float value)" }
+"func_802050A0_de" = { evidence = "landed", signature = "void func_802050A0_de(Damageable *obj, Health *health, Hit *hit)" }
 "func_802050C0_eu_x" = { evidence = "landed", signature = "void func_802050C0_eu_x(Damageable *obj, Health *health, Hit *hit)" }
 "func_8020520C_de" = { evidence = "authored", signature = "void func_8020520C_de(void *source, void *dest)" }
 "func_802052F8_de" = { evidence = "authored", signature = "int func_802052F8_de(void *arg0)" }
