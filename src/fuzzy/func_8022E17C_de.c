@@ -29,6 +29,7 @@ void func_8022E17C_de(TeamPlayer *a, TeamPlayer *b, s32 mode) {
     s32 teamB;
     s32 *win;
     s32 *loss;
+    s32 off;
     s32 *wins;
     s32 *losses;
 
@@ -37,10 +38,11 @@ void func_8022E17C_de(TeamPlayer *a, TeamPlayer *b, s32 mode) {
         teamB = b->stats->team;
         if (teamA >= 0) {
           if (teamA < 5) {
+            off = teamA * 4;
             wins = c->wins;
-            win = wins + teamA;
+            win = (s32 *)((char *)wins + off);
             losses = c->losses;
-            loss = losses + teamA;
+            loss = (s32 *)((char *)losses + off);
             switch (mode) {
             case 0:
                 if (c->frozen == 0 && c->locked == 0) {
