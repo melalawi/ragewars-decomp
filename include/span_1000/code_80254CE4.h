@@ -2,6 +2,7 @@
 #define UNBAKE_SPAN_1000_CODE_80254CE4_H
 #include "../types.h"
 #include "common/draft_fields_func_80255630_de.h"
+#include "resident_event_handler.h"
 struct func_80255428_S3;
 /* unbake published declaration: published_045461a1dd2b8d4beae95fea */
 struct func_80255428_S3 {
@@ -228,5 +229,7 @@ struct func_802551C8_S1 {
     char pad0[0x238];
     s32 unk238;
 };
+
+extern s32 D_80100560;
 
 #endif
