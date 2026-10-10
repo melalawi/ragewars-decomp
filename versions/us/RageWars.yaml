@@ -3849,7 +3849,7 @@ segments:
       - [0xD3C40, data, "rodata/writable/800D3040"]
       - [0xD3C60, data, "rodata/unresolved/800D3060"]
       - [0xD3CC0, data, "rodata/writable/800D30C0"]
-      - [0xD3CD0, data, "rodata/unresolved/800D30D0"]
+      - [0xD3CD0, .data, "rodata/unresolved/800D30D0"]
       - [0xD4B00, data, "rodata/writable/800D3F00"]
       - [0xD4B04, data, "rodata/unresolved/800D3F04"]
       - [0xD4B08, data, "rodata/writable/800D3F08"]
