@@ -38,8 +38,8 @@ void func_8022E17C_de(TeamPlayer *a, TeamPlayer *b, s32 mode) {
         if (teamA >= 0) {
           if (teamA < 5) {
             wins = c->wins;
-            losses = c->losses;
             win = wins + teamA;
+            losses = c->losses;
             loss = losses + teamA;
             switch (mode) {
             case 0:
