@@ -13413,6 +13413,7 @@ schema = 1
 "ResidentAmmoDescriptor" = { declaration = "typedef struct ResidentAmmoDescriptor { ResidentPickupPrefix common; s16 ammoAmount[3]; u16 flags; ResidentPickupHandler handler; } ResidentAmmoDescriptor;", evidence = "authored" }
 "ResidentArenaMenuSlot" = { declaration = "typedef struct ResidentArenaMenuSlot { s32 resource_id; s32 category; s32 category_index; s32 next_0c; s32 next_10; s32 next_14; s32 next_18; } ResidentArenaMenuSlot;", evidence = "authored" }
 "ResidentAudioDelayParameters" = { declaration = "typedef struct ResidentAudioDelayParameters { s32 input; s32 output; s32 feedback; s32 feedforward; s32 gain; s32 chorusRate; s32 chorusDepth; s32 lowpass; } ResidentAudioDelayParameters;", evidence = "authored" }
+"ResidentEntry" = { declaration = "struct ResidentEntry { s32 unk0; char pad4[0x2010 - 0x4]; s32 unk2010; };", evidence = "authored" }
 "ResidentEventHandlerEntry" = { declaration = "typedef struct ResidentEventHandlerEntry { s32 event; s32 actorKind; ResidentEventHandler handler; } ResidentEventHandlerEntry;", evidence = "authored" }
 "ResidentHealthDescriptor" = { declaration = "typedef struct ResidentHealthDescriptor { ResidentPickupPrefix common; s32 amount; s32 value; ResidentPickupHandler handler; } ResidentHealthDescriptor;", evidence = "authored" }
 "ResidentHuffmanBlockRange" = { declaration = "typedef struct ResidentHuffmanBlockRange { int enabled; int first_sample; int sample_count; int bit_cursor; const ResidentHuffmanDictionary *dictionary; } ResidentHuffmanBlockRange;", evidence = "authored" }
@@ -13424,7 +13425,9 @@ schema = 1
 "ResidentPickupPrefix" = { declaration = "typedef struct ResidentPickupPrefix { const char **labels; s16 itemId; s16 soundId; s16 effectId; u16 flags; } ResidentPickupPrefix;", evidence = "authored" }
 "ResidentPixelFormat" = { declaration = "typedef struct ResidentPixelFormat { int format_id; int indexed; int pixel_bits; int stored_color_bits; int meaningful_color_bits; unsigned int mask[4]; int shift[4]; } ResidentPixelFormat;", evidence = "authored" }
 "ResidentPowerupDescriptor" = { declaration = "typedef struct ResidentPowerupDescriptor { ResidentPickupPrefix common; s16 slotIndex; s16 powerupType; s32 amount; ResidentPickupHandler handler; } ResidentPowerupDescriptor;", evidence = "authored" }
+"ResidentSlot" = { declaration = "struct ResidentSlot { s32 unk0; char pad4[0x21A0 - 0x4]; s32 unk21A0; };", evidence = "authored" }
 "ResidentSpecialDescriptor" = { declaration = "typedef struct ResidentSpecialDescriptor { ResidentPickupPrefix common; ResidentPickupHandler handler; } ResidentSpecialDescriptor;", evidence = "authored" }
+"ResidentState" = { declaration = "struct ResidentState { s32 unk0; s32 unk4; s32 unk8; s32 unkC; };", evidence = "authored" }
 "ResidentTargetedDescriptor" = { declaration = "typedef struct ResidentTargetedDescriptor { ResidentPickupPrefix common; ResidentTargetedPickupHandler handler; } ResidentTargetedDescriptor;", evidence = "authored" }
 "ResidentWeaponDescriptor" = { declaration = "typedef struct ResidentWeaponDescriptor { ResidentPickupPrefix common; s16 weaponSlot; s16 ammoAmount; ResidentPickupHandler handler; } ResidentWeaponDescriptor;", evidence = "authored" }
 "Resource" = { declaration = "typedef struct Resource Resource;", evidence = "authored" }
@@ -15589,9 +15592,6 @@ schema = 1
 "func_80294AC4_S1" = { declaration = "typedef struct func_80294AC4_S1 func_80294AC4_S1;", evidence = "authored" }
 "func_80294BB0_S1" = { declaration = "typedef struct func_80294BB0_S1 func_80294BB0_S1;", evidence = "authored" }
 "func_802953FC_S1" = { declaration = "struct func_802953FC_S1 { char pad0[0x2]; u8 unk2; char pad2[0x3 - 0x2 - sizeof(u8)]; u8 unk3; };", evidence = "authored" }
-"ResidentEntry" = { declaration = "struct ResidentEntry { s32 unk0; char pad4[0x2010 - 0x4]; s32 unk2010; };", evidence = "authored" }
-"ResidentSlot" = { declaration = "struct ResidentSlot { s32 unk0; char pad4[0x21A0 - 0x4]; s32 unk21A0; };", evidence = "authored" }
-"ResidentState" = { declaration = "struct ResidentState { s32 unk0; s32 unk4; s32 unk8; s32 unkC; };", evidence = "authored" }
 "func_802958D8_S1" = { declaration = "struct func_802958D8_S1 { char unk0; char pad0[0x1 - 0x0 - sizeof(char)]; char unk1; char pad1[0x4 - 0x1 - sizeof(char)]; int unk4; char pad4[0x8 - 0x4 - sizeof(int)]; int unk8; char pad8[0xC - 0x8 - sizeof(int)]; int unkC; char padC[0x10 - 0xC - sizeof(int)]; int unk10; char pad10[0x14 - 0x10 - sizeof(int)]; int unk14; char pad14[0x1C - 0x14 - sizeof(int)]; int unk1C; char pad1C[0x20 - 0x1C - sizeof(int)]; int unk20; char pad20[0x24 - 0x20 - sizeof(int)]; int unk24; char pad24[0x28 - 0x24 - sizeof(int)]; int unk28; char pad28[0x212C - 0x28 - sizeof(int)]; int unk212C; char pad212C[0x2130 - 0x212C - sizeof(int)]; int unk2130; char pad2130[0x2134 - 0x2130 - sizeof(int)]; int unk2134; char pad2134[0x21B8 - 0x2134 - sizeof(int)]; int unk21B8; };", evidence = "authored" }
 "func_80295B00_S1" = { declaration = "typedef struct func_80295B00_S1 func_80295B00_S1;", evidence = "authored" }
 "func_80295B18_S1" = { declaration = "struct func_80295B18_S1 { char pad0[0x3]; char unk3; };", evidence = "authored" }
