@@ -11,7 +11,7 @@
 
 
 
-extern Shared_HeightBonuses D_800C2608_eu;
+extern const Shared_HeightBonuses D_800C2608_eu;
 extern const f32 D_800C22A0_us;
 extern const f32 D_800C22A4_us;
 extern s32 D_800C9228_de[2];

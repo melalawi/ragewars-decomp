@@ -438,7 +438,7 @@ struct Tracker {
 extern float D_800C2178_de;
 
 /* unbake published declaration: published_b2e67e8d89f7ea24c22a694e */
-extern float D_800C216C_de;
+extern const float D_800C216C_de;
 
 struct Field_void_88;
 /* unbake published declaration: published_b87d4af4d38e94a8c7069512 */

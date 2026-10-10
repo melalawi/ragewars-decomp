@@ -363,7 +363,7 @@ extern float D_800C25F8_de;
 extern float D_800C2600_de;
 extern float D_800C2604_de;
 extern float D_800C2608_de;
-extern float D_800C2608_eu;
+extern const struct Shared_HeightBonuses D_800C2608_eu;
 extern float D_800C260C_de;
 extern float D_800C2610_de;
 extern float D_800C2614_de;
