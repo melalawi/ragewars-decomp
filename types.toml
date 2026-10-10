@@ -3305,6 +3305,7 @@ schema = 1
 "func_80414384_de" = { evidence = "landed", signature = "void func_80414384_de(void)" }
 "func_804143B0_de" = { evidence = "authored", signature = "double func_804143B0_de()" }
 "func_804147F0_eu_x" = { evidence = "authored", signature = "double func_804147F0_eu_x()" }
+"func_80415C1C_de" = { evidence = "landed", signature = "void func_80415C1C_de(s32 arg0)" }
 "func_80415C90_de" = { evidence = "landed", signature = "void func_80415C90_de(f32 x, f32 y, f32 w, f32 h, u32 col0, u32 col1, u32 col2, u32 col3)" }
 "func_80416CF4_de" = { evidence = "landed", signature = "void func_80416CF4_de(int mode)" }
 "func_80416ECC_de" = { evidence = "landed", signature = "void func_80416ECC_de(s32 mode)" }

@@ -4659,7 +4659,7 @@ segments:
       - [0x1047F0, asm, "func_804147F0_eu_x"]
       - [0x104840, asm, "func_80414400_de"]
       - [0x10510C, asm, "func_80414CCC_de"]
-      - [0x10605C, asm, "func_80415C1C_de"]
+      - [0x10605C, c, "func_80415C1C_de"]
       - [0x1060C4, asm, "func_804160C4_eu_x"]
       - [0x1060D0, c, "func_80415C90_de"]
       - [0x107578, c, "func_80417138_de"]

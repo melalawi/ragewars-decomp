@@ -27455,6 +27455,18 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/func_80415C1C_de.c"
+kind = "c"
+group = "code_804143D8"
+members = ["func_80415C1C_de"]
+toolchain = "gcc-2.8.1-sn64"
+withheld = ["eu-x", "us-rev1"]
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/func_80415C90_de.c"
 kind = "c"
 group = "code_804143D8"

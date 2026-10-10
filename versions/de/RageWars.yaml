@@ -4685,7 +4685,7 @@ segments:
       - [0x17A400, asm, "func_80414400_de"]
       - [0x17ACCC, asm, "func_80414CCC_de"]
       - [0x17BC1C, data, "func_80415C1C_de_padding_17BC1C"]
-      - [0x17BC20, asm, "func_80415C1C_de"]
+      - [0x17BC20, c, "func_80415C1C_de"]
       - [0x17BC84, asm, "func_80415C84_de"]
       - [0x17BC90, c, "func_80415C90_de"]
       - [0x17D138, c, "func_80417138_de"]

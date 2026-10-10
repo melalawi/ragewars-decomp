@@ -1,6 +1,8 @@
 #ifndef UNBAKE_SPAN_16E000_CODE_804143D8_H
 #define UNBAKE_SPAN_16E000_CODE_804143D8_H
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
+#include "resident_event_handler.h"
 struct Texture;
 /* unbake published declaration: published_0046a35fa4ae4fa146339145 */
 typedef struct Texture Texture;
@@ -79,4 +81,7 @@ extern void func_804191E8_de(void);
 extern void func_80414384_de();
 
 extern void func_80419868_eu_x(void);
+
+extern void func_802BA1B0_de(s32 arg0);
+
 #endif

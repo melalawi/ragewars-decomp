@@ -6523,7 +6523,7 @@ segments:
       - [0x182430, asm, "func_804147F0_eu_x"]
       - [0x182480, asm, "func_80414400_de"]
       - [0x182D4C, asm, "func_80414CCC_de"]
-      - [0x183C9C, asm, "func_80415C1C_de"]
+      - [0x183C9C, c, "func_80415C1C_de"]
       - [0x183D04, asm, "func_804160C4_eu_x"]
       - [0x183D10, c, "func_80415C90_de"]
       - [0x1851B8, c, "func_80417138_de"]
