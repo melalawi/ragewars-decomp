@@ -15,7 +15,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | eu (NUS-NRWP-0, Europe). PAL release. SHA256 `d763cbbe485a5f9e1b7be97d5ac16735087e23d0bb62c05dc844e01b7e1156d1` |
 |---|
-| <pre><code>code      [█████████████▒░░░░░░]  66.57% (~68.80%)  740,296 of 1,111,996</code><br><code>data      [██████▒▒░░░░░░░░░░░░]  31.29% (~39.65%)  86,203 of 275,508</code><br><code>functions [███████████████░░░░░]  78.62%  2,887 of 3,672</code></pre> |
+| <pre><code>code      [█████████████▒░░░░░░]  66.57% (~68.80%)  740,296 of 1,111,996</code><br><code>data      [██████▒▒░░░░░░░░░░░░]  31.29% (~39.63%)  86,203 of 275,508</code><br><code>functions [███████████████░░░░░]  78.62%  2,887 of 3,672</code></pre> |
 
 | eu-x (NUS-NRWX-0, Europe). PAL multi-language release. SHA256 `511f6c876586bf401faf01a270c67f26fcb7db55ed3f35759c71ab15a29de750` |
 |---|
