@@ -37406,6 +37406,11 @@ path = "src/fuzzy/rodata.writable.800D2B70_unclaimed_D3784.c"
 scores = {us-rev1 = 0.9142857142857143}
 
 [[fuzzy]]
+member = "rodata/writable/800D3640_unclaimed_D611C_unclaimed_D611F"
+path = "src/fuzzy/rodata.writable.800D3640_unclaimed_D611C_unclaimed_D611F.c"
+scores = {us-rev1 = 0.9999999999999999}
+
+[[fuzzy]]
 member = "rodata/writable/800D4168"
 path = "src/fuzzy/rodata.writable.800D4168.c"
 scores = {us = 0.9534883720930233}
