@@ -4941,7 +4941,7 @@ segments:
       - [0x119C50, asm, "func_80429C50_eu_x"]
       - [0x119C78, asm, "func_80429C78_eu_x"]
       - [0x119DA4, c, "func_804290F4_de"]
-      - [0x119DEC, asm, "func_80429DEC_eu_x"]
+      - [0x119DEC, c, "func_80429DEC_eu_x"]
       - [0x119E7C, data, "func_80429DEC_eu_x_padding_119E7C"]
       - [0x119E80, asm, "func_804291D0_de"]
       - [0x11A1D0, c, "func_804294C4_de"]
