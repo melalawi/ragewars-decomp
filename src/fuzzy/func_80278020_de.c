@@ -49,7 +49,7 @@ s32 func_80278020_de(Bounds *arg0, void *arg1, void **arg2, s32 *arg3, u8 *arg4)
     s32 n;
     s32 *flagTable;
     s32 key;
-    s16 v;
+    s32 v;
     s16 *p;
     s16 len;
     IdList *list;
@@ -66,11 +66,11 @@ s32 func_80278020_de(Bounds *arg0, void *arg1, void **arg2, s32 *arg3, u8 *arg4)
     idx = table->count - 1;
     box = table->boxes;
     out = arg2;
-    if (idx != -1) {
-        do {
-            if (box->minX < arg0->maxX && arg0->minX < box->maxX
-                && box->minY < arg0->maxZ && arg0->minZ < box->maxZ
-                && box->minZ < arg0->maxY && arg0->minY < box->maxY) {
+    for (; idx != -1; idx--, box++) {
+        {
+            if (arg0->maxX > box->minX && arg0->minX < box->maxX
+                && arg0->maxZ > box->minZ && arg0->minZ < box->maxZ
+                && arg0->maxY > box->minY && arg0->minY < box->maxY) {
                 if (box->flagBD != 0 && *arg4 != 1) {
                     found = 0;
                     flagTable = func_8028FDB4_de(arg1, 3);
@@ -114,9 +114,7 @@ s32 func_80278020_de(Bounds *arg0, void *arg1, void **arg2, s32 *arg3, u8 *arg4)
                     }
                 }
             }
-            idx--;
-            box++;
-        } while (idx != -1);
+        }
     }
     *arg3 = count;
     return result;
