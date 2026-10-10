@@ -37361,6 +37361,11 @@ path = "src/fuzzy/rodata.unresolved.802BDFF8.c"
 scores = {us = 0.9968304278922345}
 
 [[fuzzy]]
+member = "rodata/unresolved/80423C18"
+path = "src/fuzzy/rodata.unresolved.80423C18.c"
+scores = {us = 0.9938271604938271}
+
+[[fuzzy]]
 member = "rodata/unresolved/80429178"
 path = "src/fuzzy/rodata.unresolved.80429178.c"
 scores = {us = 0.9939577039274925}
