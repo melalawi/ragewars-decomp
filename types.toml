@@ -1601,6 +1601,11 @@ schema = 1
 "func_802BD220_de" = { evidence = "authored", signature = "void func_802BD220_de(unsigned int sr)" }
 "func_802BD230_de" = { evidence = "authored", signature = "void func_802BD230_de()" }
 "func_802BD2F0_de" = { evidence = "authored", signature = "void func_802BD2F0_de()" }
+"func_802BD320_de" = { evidence = "landed", signature = "s32 func_802BD320_de(char *buffer, const char *format, ...)" }
+"func_802BD378_de" = { evidence = "landed", signature = "s32 func_802BD378_de(void *arg0, void *arg1, s32 arg2)" }
+"func_802BD3A0_de" = { evidence = "landed", signature = "void *func_802BD3A0_de(void *destination, const void *source, int count)" }
+"func_802BD3C8_de" = { evidence = "landed", signature = "unsigned char *func_802BD3C8_de(unsigned char *string, unsigned char value)" }
+"func_802BD400_de" = { evidence = "landed", signature = "s32 func_802BD400_de(u8 *arg0)" }
 "func_802BD430_de" = { evidence = "declared", signature = "s32 func_802BD430_de(void *(*)(void *, const char *, s32), void *, const char *, char *)" }
 "func_802BDEA0_us_rev1" = { evidence = "authored", signature = "unsigned int func_802BDEA0_us_rev1()" }
 "func_802BE0C0_de" = { evidence = "authored", signature = "void func_802BE0C0_de(void *unused_state, unsigned char unused_code)" }
