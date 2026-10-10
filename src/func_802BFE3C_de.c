@@ -1,6 +1,7 @@
 #include "common/types_8a8189af7b05.h"
 #include "span_1000/code_802BE0D0.h"
 #include "types.h"
+#include "common/unused.h"
 
 s16 func_802BF388_de();
 u32 func_802BFE3C_de(void) {
@@ -97,4 +98,26 @@ s16 func_802C0044_de(f32 arg0) {
         }
     }
     return (s16)(s32)f12;
+}
+
+/** Initialize the global decoder state and return its scaled period. */
+u32 func_802C00B0_de(s32 *source, u32 divisor, s32 *first)
+{
+    DecodeState *state = &D_8014BA38_de;
+    state->source = source;
+    state->cursor = source;
+    state->first = *(s32 *)state->cursor;
+    state->cursor = (s32 *)state->cursor + 1;
+    state->count = *(s32 *)state->cursor;
+    state->second = *(s32 *)state->cursor;
+    state->cursor = (s32 *)state->cursor + 1;
+    state->third = *(s32 *)state->cursor;
+    state->cursor = (s32 *)state->cursor + 1;
+    D_800D54BE = 0;
+    D_800D54C0_de = 0;
+    D_800D54B8 = 0;
+    D_800D54BA = 0;
+    D_800D54BC = 0;
+    *first = state->first;
+    return (u64)((s64)state->count * 0xF424000) / divisor;
 }

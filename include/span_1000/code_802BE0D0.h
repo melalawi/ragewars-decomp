@@ -5,6 +5,7 @@
 #include "../types.h"
 #include "common/types_8a8189af7b05.h"
 #include "common/types_1dc8418c21db.h"
+#include "resident_event_handler.h"
 /* unbake published declaration: published_166e25c35a8d8f44d88e93e0 */
 extern float D_801514C0[];
 
@@ -159,5 +160,19 @@ extern float D_800C7CE8_de;
 
 /* unbake published declaration: published_fc8ee64f5ea99e0e61f1731c */
 extern Acmd *func_802BE514_de(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, Acmd *p);
+
+typedef struct DecodeState {
+    s32 first;
+    s32 third;
+    void *source;
+    s32 second;
+    s32 count;
+    void *cursor;
+} DecodeState;
+extern unsigned short D_800D54B8;
+extern unsigned short D_800D54BA;
+extern unsigned short D_800D54BC;
+extern unsigned short D_800D54BE;
+extern unsigned short D_800D54C0_de;
 
 #endif

@@ -2575,7 +2575,7 @@ segments:
       - [0xC0808, asm, "func_802BF928_de"]
       - [0xC098C, asm, "func_802BFAAC_de"]
       - [0xC0D1C, c, "func_802BFE3C_de"]
-      - [0xC0F90, asm, "func_802C00B0_de"]
+      - [0xC0F90, c, "func_802C00B0_de"]
       - [0xC104C, c, "func_802C016C_de"]
       - [0xC10EC, c, "func_802C020C_de"]
       - [0xC10FC, c, "func_802C021C_de"]

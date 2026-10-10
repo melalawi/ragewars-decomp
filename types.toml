@@ -1589,13 +1589,13 @@ schema = 1
 "func_802BF514_de" = { evidence = "authored", signature = "void func_802BF514_de()" }
 "func_802BF67C_de" = { evidence = "authored", signature = "FftTables *func_802BF67C_de(s32 n)" }
 "func_802BF804_de" = { evidence = "authored", signature = "s32 func_802BF804_de(f32 *out, s16 *in)" }
-"func_802BFE3C_de" = { evidence = "authored", signature = "u32 func_802BFE3C_de(void)" }
-"func_802BFE68_de" = { evidence = "authored", signature = "void func_802BFE68_de(s32 *arg0, s32 arg1)" }
-"func_802BFF30_de" = { evidence = "authored", signature = "void func_802BFF30_de(float *arg0, float *arg1)" }
-"func_802BFF90_de" = { evidence = "authored", signature = "void func_802BFF90_de(float *arg0, float *arg1, float *arg2)" }
-"func_802C000C_de" = { evidence = "authored", signature = "void func_802C000C_de(s32 unused0, struct Shape_typemap_165 *arg1, s32 unused2)" }
-"func_802C0044_de" = { evidence = "authored", signature = "s16 func_802C0044_de(f32 arg0)" }
-"func_802C00B0_de" = { evidence = "declared", signature = "s32 func_802C00B0_de(void *, s32, s32 *)" }
+"func_802BFE3C_de" = { evidence = "landed", signature = "u32 func_802BFE3C_de(void)" }
+"func_802BFE68_de" = { evidence = "landed", signature = "void func_802BFE68_de(s32 *arg0, s32 arg1)" }
+"func_802BFF30_de" = { evidence = "landed", signature = "void func_802BFF30_de(float *arg0, float *arg1)" }
+"func_802BFF90_de" = { evidence = "landed", signature = "void func_802BFF90_de(float *arg0, float *arg1, float *arg2)" }
+"func_802C000C_de" = { evidence = "landed", signature = "void func_802C000C_de(s32 unused0, struct Shape_typemap_165 *arg1, s32 unused2)" }
+"func_802C0044_de" = { evidence = "landed", signature = "s16 func_802C0044_de(f32 arg0)" }
+"func_802C00B0_de" = { evidence = "landed", signature = "u32 func_802C00B0_de(s32 *source, u32 divisor, s32 *first)" }
 "func_802C016C_de" = { evidence = "declared", signature = "s32 func_802C016C_de()" }
 "func_802C020C_de" = { evidence = "declared", signature = "void func_802C020C_de(void)" }
 "func_802C021C_de" = { evidence = "authored", signature = "void func_802C021C_de()" }

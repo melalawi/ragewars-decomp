@@ -2558,7 +2558,7 @@ segments:
       - [0xC0458, asm, "func_802BF928_de"]
       - [0xC05DC, asm, "func_802BFAAC_de"]
       - [0xC096C, c, "func_802BFE3C_de"]
-      - [0xC0BE0, asm, "func_802C00B0_de"]
+      - [0xC0BE0, c, "func_802C00B0_de"]
       - [0xC0C9C, c, "func_802C016C_de"]
       - [0xC0D3C, c, "func_802C020C_de"]
       - [0xC0D4C, c, "func_802C021C_de"]
