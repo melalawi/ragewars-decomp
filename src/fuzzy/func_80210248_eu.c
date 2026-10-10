@@ -15,9 +15,14 @@ typedef struct Racer {
     s32 stateBits;
 } Racer;
 
-typedef struct World {
-    char pad0[0x1884];
+typedef struct Rules {
+    char pad0[0x24];
     s32 teamsEnabled;
+} Rules;
+
+typedef struct World {
+    char pad0[0x1860];
+    Rules rules;
 } World;
 
 typedef struct Chaser {
@@ -38,6 +43,8 @@ s32 func_80210248_eu(Chaser *arg0) {
     s32 i;
     s32 count;
     Racer *other;
+    World *world;
+    Rules *rules;
 
     for (i = 0; i < 10; i++) {
         arg0->target[i] = NULL;
@@ -45,10 +52,12 @@ s32 func_80210248_eu(Chaser *arg0) {
         arg0->dist[i] = -1;
     }
     count = 0;
+    world = &D_80145040;
+    rules = &world->rules;
     for (i = 0; i < 8; i++) {
-        other = func_8022A5F4_de(&D_80145040, i);
+        other = func_8022A5F4_de(world, i);
         if (other != NULL && other != arg0->self
-            && (D_80145040.teamsEnabled == 0 || other->team->id != arg0->self->team->id)
+            && (rules->teamsEnabled == 0 || other->team->id != arg0->self->team->id)
             && (other->stateBits >> 8) > 0) {
             arg0->target[count] = other;
             arg0->dist[count] = func_802726F8_de(&arg0->self->pos, &other->pos);
