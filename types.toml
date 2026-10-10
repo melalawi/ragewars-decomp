@@ -1541,6 +1541,7 @@ schema = 1
 "func_802B80B4_eu" = { evidence = "authored", signature = "unsigned int func_802B80B4_eu(void *arg0)" }
 "func_802B8C88_de" = { evidence = "authored", signature = "u32 func_802B8C88_de(void *arg0)" }
 "func_802B8DA0_de" = { evidence = "declared", signature = "Queue * func_802B8DA0_de(void)" }
+"func_802B8F48_de" = { evidence = "landed", signature = "DeviceState *func_802B8F48_de(void)" }
 "func_802B9590_de" = { evidence = "authored", signature = "s32 func_802B9590_de(struct OSPiHandle_s *handle, u32 address, u32 *value)" }
 "func_802B9950_de" = { evidence = "authored", signature = "void func_802B9950_de()" }
 "func_802B99A4_de" = { evidence = "authored", signature = "void func_802B99A4_de(void)" }

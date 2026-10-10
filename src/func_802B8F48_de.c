@@ -5,12 +5,6 @@
 #include "shared/func_80404D84_de_closed.h"
 #include "span_1000/code_802B8DD0.h"
 #include "types.h"
-s32 func_802B9B20_de(s32 arg0, s32 *arg1);
-typedef struct PiDevice {
-    DeviceState state;
-    u8 transfer[0x60];
-} PiDevice;
-extern PiDevice D_801486C0;
 
 DeviceState *func_802B8F48_de(void) {
     u32 sp10;
