@@ -332,7 +332,7 @@ schema = 1
 "func_80211000_de" = { evidence = "landed", signature = "int func_80211000_de(int arg0)" }
 "func_80211020_de" = { evidence = "landed", signature = "void func_80211020_de(void *arg0)" }
 "func_802110C4_de" = { evidence = "landed", signature = "void func_802110C4_de(struct Player_func_802110C4_de *player)" }
-"func_8021113C_eu" = { evidence = "landed", signature = "void func_8021113C_eu(CloseAttackActor *actor)" }
+"func_8021113C_eu" = { evidence = "landed", signature = "void func_8021113C_eu(Actor *actor)" }
 "func_80211490_eu" = { evidence = "landed", signature = "void func_80211490_eu(CloseAttackActor *actor)" }
 "func_80211A9C_eu" = { evidence = "landed", signature = "void func_80211A9C_eu(CloseAttackActor *actor)" }
 "func_802120A8_eu" = { evidence = "landed", signature = "void func_802120A8_eu(Actor_func_802120A8_eu *actor)" }
