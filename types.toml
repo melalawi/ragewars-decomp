@@ -1147,6 +1147,8 @@ schema = 1
 "func_802954E0_us_rev1" = { evidence = "authored", signature = "void func_802954E0_us_rev1()" }
 "func_802955AC_us_rev1" = { evidence = "authored", signature = "void func_802955AC_us_rev1(void)" }
 "func_802955C8_us_rev1" = { evidence = "authored", signature = "int func_802955C8_us_rev1()" }
+"func_802956AC_us_rev1" = { evidence = "landed", signature = "void func_802956AC_us_rev1(s32 arg0, s32 **arg1)" }
+"func_8029576C_us_rev1" = { evidence = "landed", signature = "void func_8029576C_us_rev1(void)" }
 "func_80295890_us_rev1" = { evidence = "authored", signature = "void func_80295890_us_rev1()" }
 "func_802958D8_us_rev1" = { evidence = "authored", signature = "void func_802958D8_us_rev1(void)" }
 "func_80295924_us_rev1" = { evidence = "authored", signature = "void func_80295924_us_rev1(void)" }

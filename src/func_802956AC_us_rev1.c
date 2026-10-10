@@ -1,5 +1,8 @@
 #include "span_1000/code_80294C64.h"
 #include "types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/unused.h"
+#include "resident_event_handler.h"
 
 extern s32 D_800D2AE0;
 extern s32 D_8014AEC8;
@@ -40,5 +43,19 @@ void func_802956AC_us_rev1(s32 arg0, s32 **arg1) {
             }
             *arg1 = (s32 *)D_8014AED8;
         }
+    }
+}
+
+void func_8029576C_us_rev1(void) {
+    s32 *p;
+    s32 temp_v1;
+
+    if (D_auto_800D2AE8++ >= 3) {
+        p = &D_8014AEBC;
+        temp_v1 = p[0] + 1;
+        D_auto_800D2AE8 = 0;
+        p[2] = 1;
+        p[0] = temp_v1;
+        p[0] = temp_v1 % p[-1];
     }
 }
