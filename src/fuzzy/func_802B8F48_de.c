@@ -17,6 +17,7 @@ DeviceState *func_802B8F48_de(void) {
     DeviceState *dev;
     DeviceState *head;
     u32 mask;
+    DeviceState **list;
 
     dev = &D_801486C0.state;
     sp10 = 0;
@@ -24,16 +25,17 @@ DeviceState *func_802B8F48_de(void) {
         dev->type = 0;
         dev->address = 0xB0000000;
         func_802B9B20_de(0, &sp10);
-        dev->domain = 0;
-        dev->queue = 0;
         dev->latency = sp10 & 0xFF;
         dev->pulse = (sp10 >> 8) & 0xFF;
         dev->page_size = (sp10 >> 0x10) & 0xF;
         dev->release = (sp10 >> 0x14) & 0xF;
+        dev->domain = 0;
+        dev->queue = 0;
         func_802A001C_de(D_801486C0.transfer, 0, 0x60U);
         mask = func_802BCF30_de();
-        head = D_800D437C;
-        D_800D437C = dev;
+        list = &D_800D437C;
+        head = *list;
+        *list = dev;
         dev->previous = head;
         func_802BCF50_de(mask);
     }
