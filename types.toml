@@ -2386,7 +2386,13 @@ schema = 1
 "func_80445B88_de" = { evidence = "authored", signature = "s32 func_80445B88_de(u8 *a, u8 *b, s32 count)" }
 "func_80445ECC" = { evidence = "authored", signature = "s32 func_80445ECC(struct Item_func_80441FE8_de *field)" }
 "func_80445EF4_de" = { evidence = "authored", signature = "s32 func_80445EF4_de(void)" }
+"func_8044605C_eu" = { evidence = "landed", signature = "s32 func_8044605C_eu(void *first, void *second, void *third)" }
+"func_80446088_eu" = { evidence = "landed", signature = "s32 func_80446088_eu(void *first, void *second, void *third)" }
+"func_804460B4_eu" = { evidence = "landed", signature = "s32 func_804460B4_eu(void *first, void *second, void *third)" }
+"func_804460E0_eu" = { evidence = "landed", signature = "s32 func_804460E0_eu(void *first, void *second, void *third)" }
 "func_804460F8_eu_x" = { evidence = "authored", signature = "void func_804460F8_eu_x(void)" }
+"func_8044610C_eu" = { evidence = "landed", signature = "s32 func_8044610C_eu(void *first, void *second, void *third)" }
+"func_80446138_eu" = { evidence = "landed", signature = "s32 func_80446138_eu(void *first, void *second, void *third)" }
 "func_80446330_us_rev1" = { evidence = "authored", signature = "int func_80446330_us_rev1(void * arg0)" }
 "func_80446920_eu" = { evidence = "authored", signature = "int func_80446920_eu(void * arg0)" }
 "func_80446A50_eu_x" = { evidence = "authored", signature = "int func_80446A50_eu_x(void * arg0)" }
