@@ -1,37 +1,53 @@
-#include "common/types_1dc8418c21db.h"
-#include "common/unused.h"
-#include "resident_event_handler.h"
-#include "shared/func_802BB8B0_de_closed.h"
-#include "shared/func_80404D84_de_closed.h"
-#include "span_1000/code_802B8DD0.h"
+/* osCartRomInit, drafted from ultralib src/io/cartrominit.c (the 2.0I branch, before 2.0J). */
 #include "types.h"
 
-DeviceState *func_802B8F48_de(void) {
-    u32 sp10;
-    DeviceState *dev;
-    DeviceState *head;
-    u32 mask;
-    DeviceState **list;
+typedef struct OSPiHandle_s {
+    struct OSPiHandle_s *next;
+    u8 type;
+    u8 latency;
+    u8 pageSize;
+    u8 relDuration;
+    u8 pulse;
+    u8 domain;
+    u32 baseAddress;
+    u32 speed;
+    u8 transferInfo[0x60];
+} OSPiHandle;
 
-    dev = &D_801486C0.state;
-    sp10 = 0;
-    if (dev->address != 0xB0000000) {
-        dev->type = 0;
-        dev->address = 0xB0000000;
-        func_802B9B20_de(0, &sp10);
-        dev->latency = sp10 & 0xFF;
-        dev->pulse = (sp10 >> 8) & 0xFF;
-        dev->page_size = (sp10 >> 0x10) & 0xF;
-        dev->release = (sp10 >> 0x14) & 0xF;
-        dev->domain = 0;
-        dev->queue = 0;
-        func_802A001C_de(D_801486C0.transfer, 0, 0x60U);
-        mask = func_802BCF30_de();
-        list = &D_800D437C;
-        head = *list;
-        *list = dev;
-        dev->previous = head;
-        func_802BCF50_de(mask);
-    }
-    return dev;
+extern OSPiHandle D_801486C0;
+extern OSPiHandle *D_800D437C;
+extern s32 func_802B9B20_de(u32 devAddr, u32 *data);
+extern void *func_802A001C_de(void *dst, s32 value, u32 size);
+extern u32 func_802BCF30_de(void);
+extern void func_802BCF50_de(u32 mask);
+
+OSPiHandle *func_802B8F48_de(void)
+{
+    u32 domain = 0;
+    u32 saveMask;
+    OSPiHandle *h = &D_801486C0;
+    OSPiHandle **table;
+
+    if (h->baseAddress == 0xB0000000)
+        return h;
+
+    h->type = 0;
+    h->baseAddress = 0xB0000000;
+    func_802B9B20_de(0, &domain);
+    h->latency = domain & 0xff;
+    h->pulse = (domain >> 8) & 0xff;
+    h->pageSize = (domain >> 0x10) & 0xf;
+    h->relDuration = (domain >> 0x14) & 0xf;
+    h->domain = 0;
+    h->speed = 0;
+
+    func_802A001C_de(&h->transferInfo, 0, sizeof(h->transferInfo));
+
+    saveMask = func_802BCF30_de();
+    table = &D_800D437C;
+    h->next = *table;
+    *table = h;
+    func_802BCF50_de(saveMask);
+
+    return h;
 }

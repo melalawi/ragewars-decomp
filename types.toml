@@ -2846,7 +2846,7 @@ schema = 1
 "func_802B8C88_de" = { evidence = "landed", signature = "u8 func_802B8C88_de(u8 *data)" }
 "func_802B8CF0_de" = { evidence = "landed", signature = "s32 func_802B8CF0_de(void *entry, s32 subtype, s32 arg2, s32 arg3, s32 arg4, s32 arg5, s32 arg6)" }
 "func_802B8DA0_de" = { evidence = "landed", signature = "s32 func_802B8DA0_de(void)" }
-"func_802B8F48_de" = { evidence = "landed", signature = "DeviceState *func_802B8F48_de(void)" }
+"func_802B8F48_de" = { evidence = "landed", signature = "OSPiHandle *func_802B8F48_de(void)" }
 "func_802B93B0_de" = { evidence = "landed", signature = "s32 func_802B93B0_de(OSPiHandle_s_func_802B93B0_de *pihandle, s32 direction, u32 devAddr, void *dramAddr, u32 size)" }
 "func_802B9590_de" = { evidence = "landed", signature = "s32 func_802B9590_de(OSPiHandle_s *arg0, u32 arg1, u32 *arg2)" }
 "func_802B9730_de" = { evidence = "landed", signature = "s32 func_802B9730_de(PiTransfer802BE820 *arg0, u32 arg1, u32 arg2)" }
