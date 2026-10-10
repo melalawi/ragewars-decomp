@@ -2476,7 +2476,7 @@ schema = 1
 "rodata/func_80204A68_de/800C1A84" = { declaration = "extern u8 rodata/func_80204A68_de/800C1A84[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_80204A68_de/800C1D24" = { declaration = "extern u8 rodata/func_80204A68_de/800C1D24[0x4];", evidence = "splat", section = ".rodata", size = 4 }
 "rodata/func_80204A68_de/800C1D64" = { declaration = "extern u8 rodata/func_80204A68_de/800C1D64[0x4];", evidence = "splat", section = ".rodata", size = 4 }
-"rodata/func_80205094_de/800C1A90" = { declaration = "extern u8 rodata/func_80205094_de/800C1A90[0x8];", evidence = "splat", section = ".rodata", size = 8 }
+"rodata/func_802050A0_de/800C1A90" = { declaration = "extern u8 rodata/func_802050A0_de/800C1A90[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "rodata/func_802050C0_eu/800C1D30" = { declaration = "extern u8 rodata/func_802050C0_eu/800C1D30[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "rodata/func_802050C0_eu_x/800C6B80" = { declaration = "extern u8 rodata/func_802050C0_eu_x/800C6B80[0x8];", evidence = "splat", section = ".rodata", size = 8 }
 "rodata/func_80205720_de/800C1AA0" = { declaration = "extern u8 rodata/func_80205720_de/800C1AA0[0x28];", evidence = "splat", section = ".rodata", size = 40 }
