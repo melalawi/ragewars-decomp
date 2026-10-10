@@ -37252,6 +37252,11 @@ path = "src/fuzzy/func_802BA140_de.c"
 scores = {de = 0.9999999999999999, eu = 1.0, eu-x = 1.0, us = 1.0, us-rev1 = 1.0}
 
 [[fuzzy]]
+member = "func_802BBAAC_de"
+path = "src/fuzzy/func_802BBAAC_de.c"
+scores = {de = 1.0, eu = 0.9565217391304348, eu-x = 1.0, us = 1.0, us-rev1 = 1.0}
+
+[[fuzzy]]
 member = "func_802BC508_de"
 path = "src/fuzzy/func_802BC508_de.c"
 scores = {de = 0.05, eu = 0.05, eu-x = 0.05, us = 0.05, us-rev1 = 0.05}
