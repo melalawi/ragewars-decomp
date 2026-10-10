@@ -3,6 +3,8 @@
 #include "../types.h"
 #include "common/types_1dc8418c21db.h"
 #include "gfx.h"
+#include "resident_event_handler.h"
+#include "types.h"
 struct Display;
 /* unbake published declaration: published_0fd98bf960b45acfd833434e */
 typedef struct Display Display;
@@ -140,4 +142,14 @@ typedef struct func_80293774_S1 func_80293774_S1;
 
 extern float func_802917D8_de();
 extern void func_80293534_de(void);
+
+typedef struct func_80293904_S1 {
+    char pad0[0x26DB0];
+    f32 unk26DB0;
+    char pad26DB4[0x26DBC - 0x26DB4];
+    s32 unk26DBC;
+    char pad26DC0[1];
+    s8 unk26DC1;
+} func_80293904_S1;
+
 #endif

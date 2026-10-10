@@ -18074,7 +18074,7 @@ omit = []
 path = "src/func_80293790_de.c"
 kind = "c"
 group = "code_80291054"
-members = ["func_80293790_de"]
+members = ["func_80293790_de", "func_80293904_de"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
