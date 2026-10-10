@@ -1482,6 +1482,7 @@ schema = 1
 "func_802B3C7C_de" = { evidence = "declared", signature = "void func_802B3C7C_de(ALSynth4C *)" }
 "func_802B3D10_de" = { evidence = "authored", signature = "s32 func_802B3D10_de(ALSynth4C *drvr, ALPlayer_s14 **client)" }
 "func_802B3DB8_de" = { evidence = "declared", signature = "s32 func_802B3DB8_de(ALSynth4C *, s32)" }
+"func_802B3E00_de" = { evidence = "landed", signature = "Acmd *func_802B3E00_de(void *filter, s16 *outp, s32 outCount, s32 sampleOffset, Acmd *p)" }
 "func_802B3EDC_de" = { evidence = "declared", signature = "s32 func_802B3EDC_de(void *, s32, void *)" }
 "func_802B43A4_de" = { evidence = "declared", signature = "void func_802B43A4_de(ALLoadFilter *, ALDMANew, ALHeap *)" }
 "func_802B4454_de" = { evidence = "declared", signature = "void func_802B4454_de(ALMainBus_s *, void *, s32)" }
