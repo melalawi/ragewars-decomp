@@ -3785,7 +3785,7 @@ segments:
       - [0xCAED8, rodata, "rodata/shared/800CA2D8"]
       - [0xCAEDC, data, "rodata/unresolved/800CA2DC"]
       - [0xCAF7C, rodata, "rodata/func_802312C8_de/800CA37C"]
-      - [0xCAF80, data, "rodata/unresolved/800CA380"]
+      - [0xCAF80, .data, "rodata/unresolved/800CA380"]
       - [0xCBF88, rodata, "rodata/func_80236874_de/800CB388"]
       - [0xCBF98, data, "rodata/unresolved/800CB398"]
       - [0xCBFA8, data, "rodata/writable/800CB3A8"]
