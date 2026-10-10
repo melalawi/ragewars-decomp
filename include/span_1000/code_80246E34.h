@@ -545,7 +545,7 @@ struct Actor_func_8024A3B0_de;
 /* unbake published declaration: published_fed4b8af72700ff4f3528121 */
 typedef struct Actor_func_8024A3B0_de Actor_func_8024A3B0_de;
 
-typedef void (*FuncPtr)(void *, void *);
+typedef void (*func_8024B4E4_de_FuncPtr)(void *, void *);
 extern void func_8026EE20_de(void *arg0, int arg1, void *arg2);
 typedef struct func_8024B4E4_S1 func_8024B4E4_S1;
 struct func_8024B4E4_S1 {
@@ -554,7 +554,7 @@ struct func_8024B4E4_S1 {
     char pad74[0xE8 - 0x74 - sizeof(char)];
     char unkE8[0x170 - 0xE8];
     char unk170[0x28C - 0x170];
-    FuncPtr unk28C;
+    func_8024B4E4_de_FuncPtr unk28C;
 };
 
 #endif
