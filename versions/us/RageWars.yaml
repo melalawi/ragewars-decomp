@@ -3773,7 +3773,7 @@ segments:
       - [0xCBF40, rodata, "rodata/func_80245D30_de/800CB340"]
       - [0xCBF48, data, "rodata/unresolved/800CB348"]
       - [0xCBF8C, data, "rodata/writable/800CB38C"]
-      - [0xCBF90, data, "rodata/unresolved/800CB390"]
+      - [0xCBF90, .data, "rodata/unresolved/800CB390"]
       - [0xCC1E0, .data, "rodata/writable/800CB5E0"]
       - [0xCC234, data, "rodata/unresolved/800CB634"]
       - [0xCC3F8, rodata, "rodata/func_8025AA2C_de/800CB7F8"]
