@@ -1955,6 +1955,15 @@ subsystem = "unknown"
 sdk = false
 
 [[group]]
+name = "data_800D9500"
+segment = "span_C76B0"
+members = ["src/resident_huffman_dictionaries.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+subsystem = "unknown"
+sdk = false
+
+[[group]]
 name = "data_800DFC60"
 segment = "span_C28A0"
 members = ["rodata/unresolved/800DFC60"]
@@ -35574,6 +35583,17 @@ path = "src/ragewars_texture_intensity_mip_us_rev1.c"
 kind = "data"
 group = "data_800D11D0"
 members = ["src/ragewars_texture_intensity_mip_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/resident_huffman_dictionaries.c"
+kind = "data"
+group = "data_800D9500"
+members = ["src/resident_huffman_dictionaries.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
