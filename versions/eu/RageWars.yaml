@@ -3812,7 +3812,7 @@ segments:
       - [0xCDB40, .data, "rodata/writable/800CCF40"]
       - [0xCDB90, data, "rodata/unresolved/800CCF90"]
       - [0xCDBA0, data, "rodata/writable/800CCFA0"]
-      - [0xCDBB0, data, "rodata/unresolved/800CCFB0"]
+      - [0xCDBB0, .data, "rodata/unresolved/800CCFB0"]
       - [0xCEBB8, rodata, "rodata/func_802745D0_de/800CDFB8"]
       - [0xCEBBC, data, "rodata/unresolved/800CDFBC"]
       - [0xCEBC0, data, "rodata/writable/800CDFC0"]
