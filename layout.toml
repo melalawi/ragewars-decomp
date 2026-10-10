@@ -1131,6 +1131,14 @@ sdk = false
 
 [[group]]
 name = "code_80403E88"
+segment = "span_166000"
+members = ["func_80403E88_de", "func_80408AC4_de", "func_8040A810_de", "func_8040A8D0_de", "func_8040BB40_de", "func_8040BBAC_de", "func_8040C5B8_de", "func_8040C5C8_de", "func_8040C6FC_de", "func_80414358_de", "func_804143A8_de", "func_804143B0_de", "func_804143FC_de", "func_80415C84_de", "func_80419428_de", "func_80419B0C_de", "func_8041C604_de", "func_8041CE40_de", "func_8041DF50_de", "func_8041F0A8_de", "func_8041F138_de", "func_8041F230_de", "func_80421928_de", "func_804219E0_de", "func_8042201C_de", "func_804224E0_de", "func_80422B94_de", "func_804230D4_de", "func_80423274_de", "func_8042342C_de", "func_804243D8_de"]
+evidence = "inferred"
+signals = ["version"]
+sdk = false
+
+[[group]]
+name = "code_80403E88_2"
 segment = "span_F0000"
 members = ["func_80403E88_eu_x", "func_80405DC4_eu_x", "func_80406A88_eu_x", "func_8041BA1C_eu_x", "func_8041D280_eu_x", "func_8041E3A0_eu_x", "func_8041F6E0_eu_x", "func_80421E70_eu_x", "func_8042251C_eu_x", "func_804229DC_eu_x", "func_804235E0_eu_x", "func_80423B68_eu_x", "func_80423D24_eu_x", "func_80423DB0_eu_x", "func_80424CC8_eu_x", "func_80426FA0_eu_x", "func_80429C50_eu_x", "func_80429C78_eu_x", "func_80429DEC_eu_x", "func_8042AFB0_eu_x", "func_8042E788_eu_x", "func_8042E790_eu_x", "func_8042FD3C_eu_x", "func_8043697C_eu_x", "func_804385E8_eu_x", "func_80438918_eu_x", "func_804389B0_eu_x", "func_8043A4E0_eu_x", "func_8043AD2C_eu_x", "func_8043D324_eu_x", "func_8043D55C_eu_x", "func_8043EB6C_eu_x"]
 evidence = "inferred"
@@ -2555,7 +2563,7 @@ omit = []
 path = "src/func_802050C0_eu_x.c"
 kind = "c"
 group = "code_80204E78"
-members = ["func_802050C0_eu_x"]
+members = ["func_802050C0_eu_x", "rodata/func_802050C0_eu_x/800C6B80"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -3886,7 +3894,7 @@ omit = []
 path = "src/func_8020EF80_eu.c"
 kind = "c"
 group = "code_8020EAE0"
-members = ["func_8020EF80_eu"]
+members = ["func_8020EF80_eu", "rodata/func_8020EF80_eu/800C2190"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -25799,7 +25807,7 @@ omit = []
 path = "src/func_8040BF80_eu.c"
 kind = "c"
 group = "code_80405DC4"
-members = ["func_8040BF80_eu"]
+members = ["func_8040BF80_eu", "rodata/func_8040BF80_eu/800ED6E8"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
@@ -30525,7 +30533,7 @@ omit = []
 [[unit]]
 path = "src/func_80429DEC_eu_x.c"
 kind = "c"
-group = "code_80403E88"
+group = "code_80403E88_2"
 members = ["func_80429DEC_eu_x"]
 toolchain = "gcc-2.8.1-sn64"
 
@@ -32462,7 +32470,7 @@ omit = []
 [[unit]]
 path = "src/func_80438918_eu_x.c"
 kind = "c"
-group = "code_80403E88"
+group = "code_80403E88_2"
 members = ["func_80438918_eu_x"]
 toolchain = "gcc-2.8.1-sn64"
 
