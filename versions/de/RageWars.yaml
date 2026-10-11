@@ -4303,7 +4303,7 @@ segments:
       - [0xF2884, .data, "rodata/unresolved/800F1C84"]
       - [0xF3900, data, "rodata/writable/800F2D00"]
       - [0xF390C, data, "rodata/unresolved/800F2D0C"]
-      - [0xF39C0, data, "rodata/writable/800F2DC0"]
+      - [0xF39C0, .data, "rodata/writable/800F2DC0"]
       - [0xF3B40, .data, "rodata/unresolved/800F2F40"]
       - [0xF4050, data, "rodata/writable/800F3450"]
       - [0xF4070, .data, "rodata/unresolved/800F3470"]
