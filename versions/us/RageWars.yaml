@@ -4205,7 +4205,7 @@ segments:
       - [0xE0754, data, "src/rw_menu_event_handlers_E5AF4_us_rev1.c"]
       - [0xE07C0, data, "rodata/writable/800E4F60"]
       - [0xE07C6, data, "rodata/unresolved/800E0F16"]
-      - [0xE07C8, data, "data/unresolved/800E0F18"]
+      - [0xE07C8, .data, "data/unresolved/800E0F18"]
       - [0xE0C20, data, "rodata/writable/800E53C0"]
       - [0xE0C24, data, "src/rw_menu_event_handlers_E5FC4_us_rev1.c"]
       - [0xE0C90, data, "rodata/writable/800E5430"]
