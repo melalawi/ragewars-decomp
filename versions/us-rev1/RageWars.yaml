@@ -4097,7 +4097,7 @@ segments:
       - [0xcf2e8, data, "src/rw_hud_squad_motion_script_us_rev1.c"]
       - [0xcf314, .data, "rodata/unresolved/800CE410_unclaimed_CF230_unclaimed_CF29C_unclaimed_CF2D8_unclaimed_CF314"]
       - [0xCF358, rodata, "src/rw_pool_80225F44_CF358_us_rev1.c"]
-      - [0xCF35C, data, "rodata/unresolved/800CE75C"]
+      - [0xCF35C, .data, "rodata/unresolved/800CE75C"]
       - [0xCF39C, data, "src/ragewars_movement_tuning_CF39C_us_rev1.c"]
       - [0xCF3BC, data, "rodata/unresolved/800CE75C_unclaimed_CF3BC"]
       - [0xCF3BE, data, "src/ragewars_movement_sound_CF39C_us_rev1.c"]
