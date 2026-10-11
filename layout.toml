@@ -1914,6 +1914,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D979C"
+segment = "span_C76B0"
+members = ["src/huffman_delta_single_zero_run_nodes.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D9FA8"
 segment = "span_C76B0"
 members = ["src/huffman_five_zero_runs.c"]
@@ -35847,6 +35855,17 @@ path = "src/huffman_delta_nine_zero_runs_nodes.c"
 kind = "data"
 group = "data_800DBFE4"
 members = ["src/huffman_delta_nine_zero_runs_nodes.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/huffman_delta_single_zero_run_nodes.c"
+kind = "data"
+group = "data_800D979C"
+members = ["src/huffman_delta_single_zero_run_nodes.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
