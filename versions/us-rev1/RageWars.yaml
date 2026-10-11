@@ -6097,7 +6097,7 @@ segments:
       - [0xE65E0, data, "rodata/writable/800E59E0"]
       - [0xE65E6, data, "rodata/unresolved/800E59E6"]
       - [0xE65E8, .data, "data/unresolved/800E59E8"]
-      - [0xe6714, data, "src/rw_loadout_equipment_items_us_rev1.c"]
+      - [0xe6714, .data, "src/rw_loadout_equipment_items_us_rev1.c"]
       - [0xe6744, .data, "src/rw_loadout_weapons_items_us_rev1.c"]
       - [0xe67c4, .data, "src/rw_loadout_abilities_items_us_rev1.c"]
       - [0xe6804, data, "src/rw_menu_event_handlers_E6804_us_rev1.c"]
