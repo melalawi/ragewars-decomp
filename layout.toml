@@ -3634,6 +3634,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D6BDC"
+segment = "span_C76B0"
+members = ["src/ragewars_menu_digit_labels_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D6C08"
 segment = "span_C76B0"
 members = ["src/ragewars_credits_lines_us_rev1.c", "rodata/unresolved/800D7028"]
@@ -39858,6 +39866,17 @@ path = "src/ragewars_match_option_label_slots_us_rev1.c"
 kind = "data"
 group = "data_800D7500"
 members = ["src/ragewars_match_option_label_slots_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_menu_digit_labels_us_rev1.c"
+kind = "data"
+group = "data_800D6BDC"
+members = ["src/ragewars_menu_digit_labels_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
