@@ -3868,7 +3868,7 @@ segments:
       - [0xCD960, rodata, "src/rw_text_802BD430_CD960_us_rev1.c"]
       - [0xCD964, data, "rodata/unresolved/800CCD64"]
       - [0xCD968, rodata, "rodata/func_802BD974_de/800CCD68"]
-      - [0xCDAB8, data, "rodata/unresolved/800CCEB8"]
+      - [0xCDAB8, .data, "rodata/unresolved/800CCEB8"]
       - [0xCDB10, rodata, "src/rw_pool_802BF514_CDB10_us_rev1.c"]
       - [0xCDB20, rodata, "src/rw_pool_802BF67C_CDB20_us_rev1.c"]
       - [0xCDB24, rodata, "src/rw_pool_802BF804_CDB24_us_rev1.c"]
