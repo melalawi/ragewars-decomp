@@ -5161,7 +5161,7 @@ segments:
       - [0xD3B8C, data, "rodata/unresolved/800D2E60_unclaimed_D3B78_unclaimed_D3B8C"]
       - [0xD3B90, data, "src/ragewars_font_resource_selector_us_rev1.c"]
       - [0xD3B94, .data, "src/ragewars_font_character_map_primary_us_rev1.c"]
-      - [0xD3C80, data, "src/ragewars_font_character_map_secondary_us_rev1.c"]
+      - [0xD3C80, .data, "src/ragewars_font_character_map_secondary_us_rev1.c"]
       - [0xD3D6C, data, "src/ragewars_menu_motion_scripts_us_rev1.c"]
       - [0xD3DC8, data, "rodata/writable/800D2F90_unclaimed_D3D6C_unclaimed_D3DC8"]
       - [0xD3DD0, data, "src/ragewars_pickup_powerups_us_rev1.c"]
