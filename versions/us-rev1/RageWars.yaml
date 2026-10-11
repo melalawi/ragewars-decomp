@@ -4012,7 +4012,7 @@ segments:
       - [0xCE9DC, data, "src/ragewars_actor_handler_run_CE9DC_us_rev1.c"]
       - [0xCE9E0, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750_unclaimed_CE9E0"]
       - [0xCE9E4, data, "src/ragewars_actor_handler_run_CE9E4_us_rev1.c"]
-      - [0xCE9EC, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750_unclaimed_CE9EC"]
+      - [0xCE9EC, .data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750_unclaimed_CE9EC"]
       - [0xCEA20, data, "src/ragewars_actor_handler_run_CEA20_us_rev1.c"]
       - [0xCEA2C, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750_unclaimed_CEA2C"]
       - [0xCEA30, data, "src/ragewars_actor_handler_run_CEA30_us_rev1.c"]
