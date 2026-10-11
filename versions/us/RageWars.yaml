@@ -5173,7 +5173,7 @@ segments:
       - [0x19DF0C, data, "func_80439F0C_us_padding_19DF0C"]
       - [0x19DF10, asm, "func_80439F10_us"]
       - [0x19DF38, c, "func_80439D58_de"]
-      - [0x19E0A4, data, "rodata/unresolved/8043A0A4"]
+      - [0x19E0A4, .data, "rodata/unresolved/8043A0A4"]
       - [0x19E510, asm, "func_8043A330_de"]
       - [0x19E7D8, asm, "func_8043A5F8_de"]
       - [0x19EA70, c, "func_8043A890_de"]
