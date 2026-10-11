@@ -1914,6 +1914,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D9FA8"
+segment = "span_C76B0"
+members = ["src/huffman_five_zero_runs.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800DB06C"
 segment = "span_C76B0"
 members = ["src/huffman_nine_zero_runs.c"]
@@ -35793,6 +35801,17 @@ path = "src/func_8044DDD4_de.c"
 kind = "c"
 group = "code_8044E2B8"
 members = ["func_8044DDD4_de"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/huffman_five_zero_runs.c"
+kind = "data"
+group = "data_800D9FA8"
+members = ["src/huffman_five_zero_runs.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
