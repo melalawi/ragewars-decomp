@@ -6088,7 +6088,7 @@ segments:
       - [0xE64A0, data, "rodata/writable/800E58A0"]
       - [0xe64a8, data, "src/rw_menu_event_handlers_E64A8_us_rev1.c"]
       - [0xe64c0, data, "rodata/unresolved/800E58A8_unclaimed_E64C0"]
-      - [0xe64cc, data, "src/rw_menu_event_handlers_E64CC_us_rev1.c"]
+      - [0xe64cc, .data, "src/rw_menu_event_handlers_E64CC_us_rev1.c"]
       - [0xe64fc, .data, "src/rw_menu_event_handlers_E64FC_us_rev1.c"]
       - [0xE6550, data, "rodata/writable/800E5950"]
       - [0xe6554, data, "src/rw_menu_event_handlers_E6554_us_rev1.c"]
