@@ -2500,7 +2500,7 @@ segments:
       - [0xBC5DC, c, "func_802BBAAC_de"]
       - [0xBC6E4, asm, "func_802BBAE4_us"]
       - [0xBC6F0, c, "func_802BBBC0_de"]
-      - [0xBC798, data, "rodata/unresolved/802BBB98"]
+      - [0xBC798, .data, "rodata/unresolved/802BBB98"]
       - [0xBCD98, asm, "func_802BC268_de"]
       - [0xBCE9C, asm, "func_802BC36C_de"]
       - [0xBD038, asm, "func_802BC508_de"]
