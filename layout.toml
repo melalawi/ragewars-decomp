@@ -2482,6 +2482,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D0510"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800CF5C0_unclaimed_D1110", "src/ragewars_weapon_resource_directory_us_rev1.c", "rodata/unresolved/800CF5C0_unclaimed_D1184"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D06C0"
 segment = "span_C76B0"
 members = ["src/ragewars_blast_falloff_us_rev1.c"]
@@ -38740,6 +38748,17 @@ path = "src/ragewars_vi_modes_us_rev1.c"
 kind = "data"
 group = "data_800D846C"
 members = ["src/ragewars_vi_modes_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_weapon_resource_directory_us_rev1.c"
+kind = "data"
+group = "data_800D0510"
+members = ["src/ragewars_weapon_resource_directory_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
