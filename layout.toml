@@ -1954,6 +1954,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_80154104"
+segment = "span_1BCBB0"
+members = ["rodata/unresolved/80154104", "src/resident_menu_pak_options.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_801603E8"
 segment = "span_1C5230"
 members = ["rodata/unresolved/801603E8"]
@@ -35651,6 +35659,17 @@ path = "src/resident_huffman_dictionaries.c"
 kind = "data"
 group = "data_800D9500"
 members = ["src/resident_huffman_dictionaries.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/resident_menu_pak_options.c"
+kind = "data"
+group = "data_80154104"
+members = ["src/resident_menu_pak_options.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
