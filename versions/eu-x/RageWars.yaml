@@ -3511,7 +3511,7 @@ segments:
       - [0xC65A0, rodata, "src/rw_constants_8029ABA0_CB450_us_rev1.c"]
       - [0xC65B8, .rodata, "rodata/func_8029AD38_de/800C59B8"]
       - [0xC6620, rodata, "rodata/func_8029AEA4_de/800CA8D0"]
-      - [0xC6728, rodata, "src/rw_pool_8029B278_CB5D8_us_rev1.c"]
+      - [0xC6728, .rodata, "src/rw_pool_8029B278_CB5D8_us_rev1.c"]
       - [0xC6758, rodata, "rodata/func_8029B3C0_de/800CAA08"]
       - [0xC6938, rodata, "src/rw_pool_8029C288_CB7E8_us_rev1.c"]
       - [0xC6964, rodata, "rodata/func_8029C4A0_de/800CAC14"]
