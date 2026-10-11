@@ -6012,7 +6012,7 @@ segments:
 
       - [0xE4DBC, data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4DAC_unclaimed_E4DBC"]
 
-      - [0xe4dc0, data, "src/rw_menu_player_scissor_rects_us_rev1.c"]
+      - [0xe4dc0, .data, "src/rw_menu_player_scissor_rects_us_rev1.c"]
 
       - [0xe4e00, .data, "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4DAC_unclaimed_E4DBC_unclaimed_E4E00"]
       - [0xE4ED0, data, "rodata/writable/800E42D0"]
