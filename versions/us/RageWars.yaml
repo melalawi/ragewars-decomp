@@ -4024,7 +4024,7 @@ segments:
       - [0xDD288, rodata, "rodata/func_8042854C_de/800E1A08"]
       - [0xDD29C, data, "rodata/unresolved/800DC69C"]
       - [0xDD2A0, rodata, "rodata/func_80428700_de/800E1A20"]
-      - [0xDD2B4, data, "rodata/unresolved/800DC6B4"]
+      - [0xDD2B4, .data, "rodata/unresolved/800DC6B4"]
       - [0xDD2E0, rodata, "rodata/func_8042972C_de/800E1A60"]
       - [0xDD318, data, "rodata/unresolved/800DC718"]
       - [0xDD33C, rodata, "rodata/func_80429FF0_de/800E1ABC"]
