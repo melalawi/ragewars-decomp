@@ -3774,7 +3774,7 @@ segments:
       - [0xC93E0, rodata, "rodata/func_80209DAC_de/800CDA30"]
       - [0xC93EC, .data, "rodata/unresolved/800C87EC"]
       - [0xC9D3C, rodata, "rodata/shared/800CE38C"]
-      - [0xC9D40, data, "rodata/unresolved/800C9140"]
+      - [0xC9D40, .data, "rodata/unresolved/800C9140"]
       - [0xC9D7C, rodata, "rodata/shared/800CE3CC"]
       - [0xC9D80, data, "rodata/unresolved/800C9180"]
       - [0xC9D90, rodata, "rodata/shared/800CE3E0"]
