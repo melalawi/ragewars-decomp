@@ -1986,6 +1986,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800CD250"
+segment = "span_C76B0"
+members = ["src/rw_u64_remainder_normalization_width_us_rev1.c", "rodata/unresolved/800CCF48_unclaimed_CDE50_unclaimed_CDF50"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800CD260"
 segment = "span_C28A0"
 members = ["rodata/unresolved/800CD260"]
@@ -40236,6 +40244,17 @@ path = "src/rw_reward_item_tiers_us_rev1.c"
 kind = "data"
 group = "data_800E381C"
 members = ["src/rw_reward_item_tiers_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rw_u64_remainder_normalization_width_us_rev1.c"
+kind = "data"
+group = "data_800CD250"
+members = ["src/rw_u64_remainder_normalization_width_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
