@@ -7377,7 +7377,7 @@ segments:
     align: 1
     subalign: 1
     subsegments:
-      - [0x1BCBB0, data, "rodata/unresolved/80153D68"]
+      - [0x1BCBB0, .data, "rodata/unresolved/80153D68"]
       - [0x1BCDA8, data, "rodata/writable/80153F60"]
       - [0x1BCDD3, data, "rodata/unresolved/80153F8B"]
       - [0x1BCDD4, data, "rodata/writable/80153F8C"]
