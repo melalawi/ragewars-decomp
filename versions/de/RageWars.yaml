@@ -3820,7 +3820,7 @@ segments:
       - [0xCC738, data, "rodata/unresolved/800D0D78"]
       - [0xCC750, data, "rodata/writable/800D0D90"]
       - [0xCC760, rodata, "src/rw_pool_8025F434_D19A0_us_rev1.c"]
-      - [0xCC764, data, "rodata/unresolved/800CBB64"]
+      - [0xCC764, .data, "rodata/unresolved/800CBB64"]
       - [0xCC810, data, "rodata/writable/800D0E50"]
       - [0xCC811, data, "rodata/unresolved/800D0E51"]
       - [0xCC812, data, "rodata/writable/800D0E52"]
