@@ -1999,7 +1999,7 @@ segments:
       - [0x9FF74, c, "func_8029F254_de"]
       - [0xA0088, c, "func_8029F368_de"]
       - [0xA0188, asm, "func_8029F588_eu"]
-      - [0xA0190, data, "retained_A0190"]
+      - [0xA0190, .data, "retained_A0190"]
       - [0xA0300, c, "func_8029F5E0_de"]
       - [0xA05A8, c, "func_8029F888_de"]
       - [0xA0DD0, asm, "func_802A00B0_de"]
