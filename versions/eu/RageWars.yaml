@@ -3811,7 +3811,7 @@ segments:
       - [0xCD318, data, "rodata/unresolved/800D0D78"]
       - [0xCD330, data, "rodata/writable/800D0D90"]
       - [0xCD340, rodata, "src/rw_pool_8025F434_D19A0_us_rev1.c"]
-      - [0xCD344, data, "rodata/unresolved/800CC744"]
+      - [0xCD344, .data, "rodata/unresolved/800CC744"]
       - [0xCD3F0, data, "rodata/writable/800D0E50"]
       - [0xCD3F1, data, "rodata/unresolved/800D0E51"]
       - [0xCD3F2, data, "rodata/writable/800D0E52"]
