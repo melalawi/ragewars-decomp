@@ -3924,7 +3924,7 @@ segments:
       - [0xDD880, rodata, "src/rw_pool_80403C58_E18B0_us_rev1.c"]
       - [0xDD884, rodata, "src/rw_pool_80403C98_E18B4_us_rev1.c"]
       - [0xDD888, data, "rodata/unresolved/800DCC88"]
-      - [0xDD890, rodata, "rodata/func_80404018_de/800E0CC0"]
+      - [0xDD890, .rodata, "rodata/func_80404018_de/800E0CC0"]
       - [0xDD8C0, rodata, "src/ragewars_resident_strings_E18F0_us_rev1.c"]
       - [0xDD8D0, rodata, "rodata/shared/800E0D00"]
       - [0xDD8E6, data, "rodata/unresolved/800DCCE6"]
