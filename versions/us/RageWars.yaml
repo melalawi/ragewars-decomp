@@ -3853,7 +3853,7 @@ segments:
       - [0xD28B4, rodata, "src/ragewars_menu_cinema_fade_label_us_rev1.c"]
       - [0xD28D7, data, "rodata/unresolved/800D1CD7"]
       - [0xD28D8, .data, "data/unresolved/800D1CD8"]
-      - [0x0D3820, data, "src/ragewars_tlb_snapshot_us_rev1.c"]
+      - [0x0D3820, .data, "src/ragewars_tlb_snapshot_us_rev1.c"]
       - [0x0D3918, data, "rodata/writable/800D2C20_0D3918"]
       - [0xD3920, .data, "rodata/unresolved/800D2D20"]
       - [0xD3C2C, data, "rodata/writable/800D437C"]
