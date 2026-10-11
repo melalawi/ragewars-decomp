@@ -3014,7 +3014,7 @@ segments:
       - [0xC4818, rodata, "rodata/func_80247BB4_de/800C8A58"]
       - [0xC4834, rodata, "rodata/func_802480F0_de/800C8A74"]
       - [0xC4850, rodata, "rodata/func_802484B0_de/800C8A90"]
-      - [0xC4894, rodata, "src/ragewars_resident_strings_C96D4_us_rev1.c"]
+      - [0xC4894, .rodata, "src/ragewars_resident_strings_C96D4_us_rev1.c"]
       - [0xC48D0, rodata, "src/ragewars_resident_strings_C9710_us_rev1.c"]
       - [0xC48FC, rodata, "src/rw_pool_8024A1D0_C973C_us_rev1.c"]
       - [0xC4904, rodata, "src/rw_pool_8024A3B0_C9744_us_rev1.c"]
