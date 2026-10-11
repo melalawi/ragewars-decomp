@@ -1123,7 +1123,7 @@ segments:
       - [0x5711C, c, "func_8025657C_de"]
       - [0x571BC, c, "func_8025661C_de"]
       - [0x057288, data, "func_80256688_de_padding_57288"]
-      - [0x5728C, data, "rodata/unresolved/8025668C"]
+      - [0x5728C, .data, "rodata/unresolved/8025668C"]
       - [0x57344, c, "func_802567A4_de"]
       - [0x57368, asm, "func_80256768_us"]
       - [0x57370, c, "func_802567D0_de"]
