@@ -4132,7 +4132,7 @@ segments:
       - [0xDEC30, rodata, "src/rw_pool_8043C080_E2C60_us_rev1.c"]
       - [0xDEC4C, data, "rodata/unresolved/800DE04C"]
       - [0xDEC50, .rodata, "rodata/func_8043C324_de/800DE050"]
-      - [0xDECD4, data, "rodata/unresolved/800DE0D4"]
+      - [0xDECD4, .data, "rodata/unresolved/800DE0D4"]
       - [0xDED88, rodata, "rodata/func_8043C54C_de/800DE188"]
       - [0xDEDB4, data, "rodata/unresolved/800DE1B4"]
       - [0xDEDB8, rodata, "rodata/func_8043C688_de/800E21E8"]
