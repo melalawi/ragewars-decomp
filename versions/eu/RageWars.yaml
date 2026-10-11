@@ -2995,7 +2995,7 @@ segments:
       - [0xC46D4, rodata, "src/rw_pool_80246184_C9514_us_rev1.c"]
       - [0xC46D8, rodata, "src/rw_pool_8024643C_C9518_us_rev1.c"]
       - [0xC46DC, data, "rodata/unresolved/800C3ADC"]
-      - [0xC46E0, rodata, "src/rw_text_8024C294_C9520_us_rev1.c"]
+      - [0xC46E0, .rodata, "src/rw_text_8024C294_C9520_us_rev1.c"]
       - [0xC4713, data, "rodata/unresolved/800C3B13"]
       - [0xC4714, .rodata, "src/ragewars_resident_strings_C9554_us_rev1.c"]
       - [0xC474C, rodata, "src/rw_text_80246BE8_C958C_us_rev1.c"]

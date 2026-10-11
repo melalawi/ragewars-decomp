@@ -2972,7 +2972,7 @@ segments:
       - [0xC4354, rodata, "src/rw_pool_80246184_C9514_us_rev1.c"]
       - [0xC4358, rodata, "src/rw_pool_8024643C_C9518_us_rev1.c"]
       - [0xC435C, data, "rodata/unresolved/800C375C"]
-      - [0xC4360, rodata, "src/rw_text_8024C294_C9520_us_rev1.c"]
+      - [0xC4360, .rodata, "src/rw_text_8024C294_C9520_us_rev1.c"]
       - [0xC4393, data, "rodata/unresolved/800C3793"]
       - [0xC4394, .rodata, "src/ragewars_resident_strings_C9554_us_rev1.c"]
       - [0xC43CC, rodata, "src/rw_text_80246BE8_C958C_us_rev1.c"]
