@@ -3723,7 +3723,7 @@ segments:
       - [0xC87F4, rodata, "src/rw_pool_802BF804_CDB24_us_rev1.c"]
       - [0xC87F8, rodata, "src/rw_pool_802BFAAC_CDB28_us_rev1.c"]
       - [0xC8808, rodata, "src/rw_pool_802C0044_CDB38_us_rev1.c"]
-      - [0xC8818, data, "rodata/unresolved/800C7C18"]
+      - [0xC8818, .data, "rodata/unresolved/800C7C18"]
       - [0x0C8920, data, "src/ragewars_u64_quotient_bitwidth_us_rev1.c"]
       - [0x0C8A20, data, "src/ragewars_u64_remainder_bitwidth_us_rev1.c"]
       - [0x0C8B20, .data, "rodata/unresolved/800C7C18_0C8A20_0C8B20"]
