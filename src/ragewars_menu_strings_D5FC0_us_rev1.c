@@ -1,51 +1,13 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D5FC0 {
-    char label_note_info_0[12]; /* ROM0xD5FC0 */
-    char label_delete_note_1[12]; /* ROM0xD5FCC */
-    char label_difficulty_easy_2[20]; /* ROM0xD5FD8 */
-    char label_difficulty_normal_3[20]; /* ROM0xD5FEC */
-    char label_difficulty_hard_4[20]; /* ROM0xD6000 */
-    char label_health_5[20]; /* ROM0xD6014 */
-    char label_lives_6[20]; /* ROM0xD6028 */
-    char label_time_000_00_00_7[16]; /* ROM0xD603C */
-    char label_note_info_8[12]; /* ROM0xD604C */
-    char label_delete_note_9[12]; /* ROM0xD6058 */
-    char label_delete_note_10[12]; /* ROM0xD6064 */
-    char label_name_ext_11[24]; /* ROM0xD6070 */
-    char label_message_12[24]; /* ROM0xD6088 */
-    char label_name_13[20]; /* ROM0xD60A0 */
-    char label_type_14[20]; /* ROM0xD60B4 */
-    char label_frags_15[20]; /* ROM0xD60C8 */
-    char label_rank_16[20]; /* ROM0xD60DC */
-    char label_load_17[8]; /* ROM0xD60F0 */
-    char label_delete_18[8]; /* ROM0xD60F8 */
-    char label_delete_19[8]; /* ROM0xD6100 */
-    char label_error_20[8]; /* ROM0xD6108 */
-    char label_important_21[12]; /* ROM0xD6110 */
+unsigned int D_auto_src_ragewars_menu_strings_D5FC0_us_rev1[87] = {
+    0x6E6F7465, 0x20696E66, 0x6F000000, 0x64656C65, 0x7465206E, 0x6F746500, 0x64696666, 0x6963756C,
+    0x7479203A, 0x20206561, 0x73790000, 0x64696666, 0x6963756C, 0x7479203A, 0x6E6F726D, 0x616C0000,
+    0x64696666, 0x6963756C, 0x7479203A, 0x20206861, 0x72640000, 0x6865616C, 0x74682020, 0x2020203A,
+    0x20202020, 0x20200000, 0x6C697665, 0x73202020, 0x2020203A, 0x20202020, 0x20200000, 0x74696D65,
+    0x203A3030, 0x302E3030, 0x2E303000, 0x6E6F7465, 0x20696E66, 0x6F000000, 0x64656C65, 0x7465206E,
+    0x6F746500, 0x64656C65, 0x7465206E, 0x6F746500, 0x6E616D65, 0x20202020, 0x20202020, 0x20202020,
+    0x20657874, 0x20000000, 0x20202020, 0x20202020, 0x20202020, 0x20202020, 0x20202020, 0x20000000,
+    0x6E616D65, 0x20203A20, 0x20202020, 0x20202020, 0x20202000, 0x74797065, 0x20203A20, 0x20202020,
+    0x20202020, 0x20202000, 0x66726167, 0x73203A20, 0x20202020, 0x20202020, 0x20202000, 0x72616E6B,
+    0x20203A20, 0x20202020, 0x20202020, 0x20202000, 0x6C6F6164, 0x3F000000, 0x64656C65, 0x74653F00,
+    0x64656C65, 0x74653F00, 0x6572726F, 0x72000000, 0x696D706F, 0x7274616E, 0x74000000,
 };
-const struct MenuStrings_D5FC0 ragewars_menu_strings_D5FC0_us_rev1 = {
-    "note info",
-    "delete note",
-    "difficulty :  easy",
-    "difficulty :normal",
-    "difficulty :  hard",
-    "health     :      ",
-    "lives      :      ",
-    "time :000.00.00",
-    "note info",
-    "delete note",
-    "delete note",
-    "name             ext ",
-    "                     ",
-    "name  :            ",
-    "type  :            ",
-    "frags :            ",
-    "rank  :            ",
-    "load?",
-    "delete?",
-    "delete?",
-    "error",
-    "important"
-};
-typedef char menu_strings_size_D5FC0[(sizeof(struct MenuStrings_D5FC0) == 348) ? 1 : -1];

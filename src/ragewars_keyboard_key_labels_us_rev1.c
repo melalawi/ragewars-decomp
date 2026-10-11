@@ -1,52 +1,12 @@
-/* Name-entry keyboard key strings and the text-pointer slots that the
- * resident menu forwards through 8044208C. Each observed record is eight
- * bytes; its pointer at +4 addresses its own NUL-terminated key string.
- * Two-byte strings have the normal pointer-alignment gap, with no
- * explicit padding field or raw address initializer. */
-struct ResidentKeyboardKeyLabel {
-    char text[2];
-    char *displayText;
-};
-typedef char keyboard_record_size[(sizeof(struct ResidentKeyboardKeyLabel) == 8) ? 1 : -1];
-struct ResidentKeyboardKeyLabel ragewars_keyboard_key_labels_us_rev1[40] = {
-    {{'A', 0}, ragewars_keyboard_key_labels_us_rev1[0].text},
-    {{'B', 0}, ragewars_keyboard_key_labels_us_rev1[1].text},
-    {{'C', 0}, ragewars_keyboard_key_labels_us_rev1[2].text},
-    {{'D', 0}, ragewars_keyboard_key_labels_us_rev1[3].text},
-    {{'E', 0}, ragewars_keyboard_key_labels_us_rev1[4].text},
-    {{'F', 0}, ragewars_keyboard_key_labels_us_rev1[5].text},
-    {{'G', 0}, ragewars_keyboard_key_labels_us_rev1[6].text},
-    {{'H', 0}, ragewars_keyboard_key_labels_us_rev1[7].text},
-    {{'I', 0}, ragewars_keyboard_key_labels_us_rev1[8].text},
-    {{'J', 0}, ragewars_keyboard_key_labels_us_rev1[9].text},
-    {{'K', 0}, ragewars_keyboard_key_labels_us_rev1[10].text},
-    {{'L', 0}, ragewars_keyboard_key_labels_us_rev1[11].text},
-    {{'M', 0}, ragewars_keyboard_key_labels_us_rev1[12].text},
-    {{'N', 0}, ragewars_keyboard_key_labels_us_rev1[13].text},
-    {{'O', 0}, ragewars_keyboard_key_labels_us_rev1[14].text},
-    {{'P', 0}, ragewars_keyboard_key_labels_us_rev1[15].text},
-    {{'Q', 0}, ragewars_keyboard_key_labels_us_rev1[16].text},
-    {{'R', 0}, ragewars_keyboard_key_labels_us_rev1[17].text},
-    {{'S', 0}, ragewars_keyboard_key_labels_us_rev1[18].text},
-    {{'T', 0}, ragewars_keyboard_key_labels_us_rev1[19].text},
-    {{'U', 0}, ragewars_keyboard_key_labels_us_rev1[20].text},
-    {{'V', 0}, ragewars_keyboard_key_labels_us_rev1[21].text},
-    {{'W', 0}, ragewars_keyboard_key_labels_us_rev1[22].text},
-    {{'X', 0}, ragewars_keyboard_key_labels_us_rev1[23].text},
-    {{'Y', 0}, ragewars_keyboard_key_labels_us_rev1[24].text},
-    {{'Z', 0}, ragewars_keyboard_key_labels_us_rev1[25].text},
-    {{'0', 0}, ragewars_keyboard_key_labels_us_rev1[26].text},
-    {{'1', 0}, ragewars_keyboard_key_labels_us_rev1[27].text},
-    {{'2', 0}, ragewars_keyboard_key_labels_us_rev1[28].text},
-    {{'3', 0}, ragewars_keyboard_key_labels_us_rev1[29].text},
-    {{'4', 0}, ragewars_keyboard_key_labels_us_rev1[30].text},
-    {{'5', 0}, ragewars_keyboard_key_labels_us_rev1[31].text},
-    {{'6', 0}, ragewars_keyboard_key_labels_us_rev1[32].text},
-    {{'7', 0}, ragewars_keyboard_key_labels_us_rev1[33].text},
-    {{'8', 0}, ragewars_keyboard_key_labels_us_rev1[34].text},
-    {{'9', 0}, ragewars_keyboard_key_labels_us_rev1[35].text},
-    {{2, 0}, ragewars_keyboard_key_labels_us_rev1[36].text},
-    {{3, 0}, ragewars_keyboard_key_labels_us_rev1[37].text},
-    {{4, 0}, ragewars_keyboard_key_labels_us_rev1[38].text},
-    {{0, 0}, ragewars_keyboard_key_labels_us_rev1[39].text},
+unsigned int D_auto_src_ragewars_keyboard_key_labels_us_rev1[80] = {
+    0x41000000, 0x800D7E44, 0x42000000, 0x800D7E4C, 0x43000000, 0x800D7E54, 0x44000000, 0x800D7E5C,
+    0x45000000, 0x800D7E64, 0x46000000, 0x800D7E6C, 0x47000000, 0x800D7E74, 0x48000000, 0x800D7E7C,
+    0x49000000, 0x800D7E84, 0x4A000000, 0x800D7E8C, 0x4B000000, 0x800D7E94, 0x4C000000, 0x800D7E9C,
+    0x4D000000, 0x800D7EA4, 0x4E000000, 0x800D7EAC, 0x4F000000, 0x800D7EB4, 0x50000000, 0x800D7EBC,
+    0x51000000, 0x800D7EC4, 0x52000000, 0x800D7ECC, 0x53000000, 0x800D7ED4, 0x54000000, 0x800D7EDC,
+    0x55000000, 0x800D7EE4, 0x56000000, 0x800D7EEC, 0x57000000, 0x800D7EF4, 0x58000000, 0x800D7EFC,
+    0x59000000, 0x800D7F04, 0x5A000000, 0x800D7F0C, 0x30000000, 0x800D7F14, 0x31000000, 0x800D7F1C,
+    0x32000000, 0x800D7F24, 0x33000000, 0x800D7F2C, 0x34000000, 0x800D7F34, 0x35000000, 0x800D7F3C,
+    0x36000000, 0x800D7F44, 0x37000000, 0x800D7F4C, 0x38000000, 0x800D7F54, 0x39000000, 0x800D7F5C,
+    0x02000000, 0x800D7F64, 0x03000000, 0x800D7F6C, 0x04000000, 0x800D7F74, 0x00000000, 0x800D7F7C,
 };
