@@ -2194,6 +2194,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D2A04"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800D29D8_unclaimed_D3604", "src/ragewars_mode_lifecycle_handlers_D3608_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D2CA8"
 segment = "span_C76B0"
 members = ["rodata/writable/800D2C90_unclaimed_D38A8", "rodata/unresolved/800D2E40"]
@@ -37455,6 +37463,17 @@ path = "src/ragewars_menu_strings_D6434_us_rev1.c"
 kind = "data"
 group = "data_800D5834"
 members = ["src/ragewars_menu_strings_D6434_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_mode_lifecycle_handlers_D3608_us_rev1.c"
+kind = "data"
+group = "data_800D2A04"
+members = ["src/ragewars_mode_lifecycle_handlers_D3608_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
