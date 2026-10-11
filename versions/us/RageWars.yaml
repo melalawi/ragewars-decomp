@@ -3803,7 +3803,7 @@ segments:
       - [0xCC7B4, data, "rodata/unresolved/800CBBB4"]
       - [0xCC7B8, rodata, "rodata/shared/800D0EF8"]
       - [0xCC7BC, rodata, "rodata/shared/800CBBBC"]
-      - [0xCC7C0, data, "rodata/unresolved/800CBBC0"]
+      - [0xCC7C0, .data, "rodata/unresolved/800CBBC0"]
       - [0x0CC800, .data, "src/ragewars_rdp_startup_us_rev1.c"]
       - [0x0CC860, .data, "rodata/unresolved/800CBBC0_0CC860"]
       - [0x0CCB28, data, "src/ragewars_particle_draw_depth_us_rev1.c"]
