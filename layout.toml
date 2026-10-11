@@ -2026,6 +2026,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800C81A8"
+segment = "span_C76B0"
+members = ["src/rw_pool_80233DFC_C8DA8_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800C81E8"
 segment = "span_C76B0"
 members = ["src/rw_pool_80233DFC_C8DE8_us_rev1.c"]
@@ -45395,6 +45403,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/rw_pool_80233DFC_C8DA8_us_rev1.c"
+kind = "data"
+group = "data_800C81A8"
+members = ["src/rw_pool_80233DFC_C8DA8_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/rw_pool_80233DFC_C8DE8_us_rev1.c"
 kind = "data"
 group = "data_800C81E8"
@@ -46193,8 +46212,3 @@ scores = {de = 0.8695652173913043, eu = 0.8695652173913043, eu-x = 0.86956521739
 member = "src/rw_menu_event_handlers_E6554_us_rev1.c"
 path = "src/fuzzy/rodata.unresolved.800E1904.c"
 scores = {de = 0.08571428571428572}
-
-[[fuzzy]]
-member = "src/rw_pool_80233DFC_C8DA8_us_rev1.c"
-path = "src/fuzzy/rodata.func_80233DFC_de.800C33A8.c"
-scores = {eu = 1.0, eu-x = 0.2727272727272727}

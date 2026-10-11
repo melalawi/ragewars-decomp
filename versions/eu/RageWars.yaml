@@ -2888,7 +2888,7 @@ segments:
       - [0xC3F50, rodata, "rodata/func_8044A170_de/800C8190"]
       - [0xC3F5C, rodata, "rodata/func_80233930_de/800C819C"]
       - [0xC3F64, data, "rodata/unresolved/800C3364"]
-      - [0xC3F68, rodata, "src/rw_pool_80233DFC_C8DA8_us_rev1.c"]
+      - [0xC3F68, .rodata, "src/rw_pool_80233DFC_C8DA8_us_rev1.c"]
       - [0xC3F94, data, "rodata/unresolved/800C3394"]
       - [0xC3F98, rodata, "src/rw_pool_80233DFC_C8DD8_us_rev1.c"]
       - [0xC3FA4, data, "rodata/unresolved/800C33A4"]
