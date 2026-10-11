@@ -397,4 +397,37 @@ extern s32 func_8025DE54_de(s16, Vec3, s32, s32);
 extern void func_802170A0_de(void *, s32 *, s32, s32, s32);
 extern void func_802A5D38_de(void *, s32);
 
+typedef struct {
+    s16 hi;
+    s16 id;
+} Half54E0;
+typedef union {
+    s32 whole;
+    Half54E0 half;
+} Word54E0;
+typedef struct {
+    char pad0[0x2C];
+    s32 unk2C;
+    s32 unk30;
+    Word54E0 unk34;
+    s32 unk38;
+    s32 unk3C;
+} Rec54E0;
+typedef struct {
+    char pad0[0x14];
+    Rec54E0 r;
+} Hold54E0;
+typedef union {
+    Vec3 v;
+    Triple t;
+} Pos54E0;
+typedef struct {
+    char pad0[0x8];
+    Pos54E0 pos;
+    char pad14[0x4];
+    Hold54E0 *holder;
+    char pad1C[0xE4];
+    s32 flags;
+} Obj54E0;
+
 #endif

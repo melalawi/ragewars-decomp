@@ -151,7 +151,7 @@ segments:
       - [0x5E0C, c, "func_8020520C_de"]
       - [0x5F24, c, "func_80205324_de"]
       - [0x6094, c, "func_80205494_de"]
-      - [0x60E0, asm, "func_802054E0_de"]
+      - [0x60E0, c, "func_802054E0_de"]
       - [0x61EC, c, "func_802055EC_de"]
       - [0x6228, c, "func_80205628_de"]
       - [0x6294, c, "func_80205694_de"]
