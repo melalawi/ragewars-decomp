@@ -2402,7 +2402,7 @@ segments:
       - [0xB9820, c, "func_802B8CF0_de"]
       - [0xB98CC, asm, "func_802B8CCC_us"]
       - [0xB98D0, c, "func_802B8DA0_de"]
-      - [0xB98F8, data, "rodata/unresolved/802B8CF8"]
+      - [0xB98F8, .data, "rodata/unresolved/802B8CF8"]
       - [0xB9EE0, c, "func_802B93B0_de"]
       - [0xBA0B4, data, "rodata/unresolved/802B94B4"]
       - [0xBA0C0, c, "func_802B9590_de"]
