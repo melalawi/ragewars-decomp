@@ -1,3149 +1,402 @@
-#include "sn64_type_records.h"
-
-/* Serialized symbol/type definitions: ROM 0xFDE08..0x101000,
- * resident VMA 0x800FD208. Boundary fields continue in
- * adjacent inventory spans; this object owns only this assigned interval. */
-typedef struct Sn64RuntimeTypeRecords {
-    /* ROM 0xFDE08: CDefragger_t / CDefragger_t */
-    struct {
-        Sn64DefinitionHeaderTail header;
-        unsigned char name_length;
-        char name[12];
-    } r0_CDefragger_t_CDefragger_t;
-    /* ROM 0xFDE21: CDefragger_t / Thread */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[6];
-    } r1_CDefragger_t_Thread;
-    /* ROM 0xFDE42: CDefragger_t / Stack */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[5];
-    } r2_CDefragger_t_Stack;
-    /* ROM 0xFDE5C: CDefragger_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[12];
-        unsigned char name_length;
-        char name[4];
-    } r3_CDefragger_t__eos;
-    /* ROM 0xFDE7D: CDefragger_t / CDefragger */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[12];
-        unsigned char name_length;
-        char name[10];
-    } r4_CDefragger_t_CDefragger;
-    /* ROM 0xFDEA4: CTextureInfo_t / CTextureInfo_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r5_CTextureInfo_t_CTextureInfo_t;
-    /* ROM 0xFDEC0: CTextureInfo_t / m_nBitmaps */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r6_CTextureInfo_t_m_nBitmaps;
-    /* ROM 0xFDED8: CTextureInfo_t / m_nPalettes */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r7_CTextureInfo_t_m_nPalettes;
-    /* ROM 0xFDEF1: CTextureInfo_t / m_pFormat */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[9];
-    } r8_CTextureInfo_t_m_pFormat;
-    /* ROM 0xFDF1E: CTextureInfo_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[14];
-        unsigned char name_length;
-        char name[4];
-    } r9_CTextureInfo_t__eos;
-    /* ROM 0xFDF41: CTextureInfo_t / CTextureInfo */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[14];
-        unsigned char name_length;
-        char name[12];
-    } r10_CTextureInfo_t_CTextureInfo;
-    /* ROM 0xFDF6C: CTextureLoader_t / CTextureLoader_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r11_CTextureLoader_t_CTextureLoader_t;
-    /* ROM 0xFDF8A: CTextureLoader_t / rpTextureSet */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r12_CTextureLoader_t_rpTextureSet;
-    /* ROM 0xFDFA4: CTextureLoader_t / TextureSetSize */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r13_CTextureLoader_t_TextureSetSize;
-    /* ROM 0xFDFC0: CTextureLoader_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[16];
-        unsigned char name_length;
-        char name[4];
-    } r14_CTextureLoader_t__eos;
-    /* ROM 0xFDFE5: CTextureLoader_t / CTextureLoader */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[16];
-        unsigned char name_length;
-        char name[14];
-    } r15_CTextureLoader_t_CTextureLoader;
-    /* ROM 0xFE014: PARTICLE_IMPACTS_GRASS_OR_WOODequ / PARTICLE_IMPACTS_GRASS_OR_WOODequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[33];
-    } r16_PARTICLE_IMPACTS_GRASS_OR_WOODequ_PARTICLE_IMPACTS_GRASS_OR_WOODequ;
-    /* ROM 0xFE043: PARTICLE_IMPACTS_GRASS_OR_WOODequ / PARTICLE_IMPACTS_GRASS_OR_WOOD */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[30];
-    } r17_PARTICLE_IMPACTS_GRASS_OR_WOODequ_PARTICLE_IMPACTS_GRASS_OR_WOOD;
-    /* ROM 0xFE06F: PARTICLE_IMPACTS_GRASS_OR_WOODequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[33];
-        unsigned char name_length;
-        char name[4];
-    } r18_PARTICLE_IMPACTS_GRASS_OR_WOODequ__eos;
-    /* ROM 0xFE0A5: PARTICLE_IMPACTS_WATERSURFACEequ / PARTICLE_IMPACTS_WATERSURFACEequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[32];
-    } r19_PARTICLE_IMPACTS_WATERSURFACEequ_PARTICLE_IMPACTS_WATERSURFACEequ;
-    /* ROM 0xFE0D3: PARTICLE_IMPACTS_WATERSURFACEequ / PARTICLE_IMPACTS_WATERSURFACE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[29];
-    } r20_PARTICLE_IMPACTS_WATERSURFACEequ_PARTICLE_IMPACTS_WATERSURFACE;
-    /* ROM 0xFE0FE: PARTICLE_IMPACTS_WATERSURFACEequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[32];
-        unsigned char name_length;
-        char name[4];
-    } r21_PARTICLE_IMPACTS_WATERSURFACEequ__eos;
-    /* ROM 0xFE133: PARTICLE_IMPACTS_STEELequ / PARTICLE_IMPACTS_STEELequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[25];
-    } r22_PARTICLE_IMPACTS_STEELequ_PARTICLE_IMPACTS_STEELequ;
-    /* ROM 0xFE15A: PARTICLE_IMPACTS_STEELequ / PARTICLE_IMPACTS_STEEL */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[22];
-    } r23_PARTICLE_IMPACTS_STEELequ_PARTICLE_IMPACTS_STEEL;
-    /* ROM 0xFE17E: PARTICLE_IMPACTS_STEELequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[25];
-        unsigned char name_length;
-        char name[4];
-    } r24_PARTICLE_IMPACTS_STEELequ__eos;
-    /* ROM 0xFE1AC: PARTICLE_IMPACTS_STONEequ / PARTICLE_IMPACTS_STONEequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[25];
-    } r25_PARTICLE_IMPACTS_STONEequ_PARTICLE_IMPACTS_STONEequ;
-    /* ROM 0xFE1D3: PARTICLE_IMPACTS_STONEequ / PARTICLE_IMPACTS_STONE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[22];
-    } r26_PARTICLE_IMPACTS_STONEequ_PARTICLE_IMPACTS_STONE;
-    /* ROM 0xFE1F7: PARTICLE_IMPACTS_STONEequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[25];
-        unsigned char name_length;
-        char name[4];
-    } r27_PARTICLE_IMPACTS_STONEequ__eos;
-    /* ROM 0xFE225: PARTICLE_IMPACTS_FLESHequ / PARTICLE_IMPACTS_FLESHequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[25];
-    } r28_PARTICLE_IMPACTS_FLESHequ_PARTICLE_IMPACTS_FLESHequ;
-    /* ROM 0xFE24C: PARTICLE_IMPACTS_FLESHequ / PARTICLE_IMPACTS_FLESH */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[22];
-    } r29_PARTICLE_IMPACTS_FLESHequ_PARTICLE_IMPACTS_FLESH;
-    /* ROM 0xFE270: PARTICLE_IMPACTS_FLESHequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[25];
-        unsigned char name_length;
-        char name[4];
-    } r30_PARTICLE_IMPACTS_FLESHequ__eos;
-    /* ROM 0xFE29E: PARTICLE_IMPACTS_ALIENFLESHequ / PARTICLE_IMPACTS_ALIENFLESHequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[30];
-    } r31_PARTICLE_IMPACTS_ALIENFLESHequ_PARTICLE_IMPACTS_ALIENFLESHequ;
-    /* ROM 0xFE2CA: PARTICLE_IMPACTS_ALIENFLESHequ / PARTICLE_IMPACTS_ALIENFLESH */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[27];
-    } r32_PARTICLE_IMPACTS_ALIENFLESHequ_PARTICLE_IMPACTS_ALIENFLESH;
-    /* ROM 0xFE2F3: PARTICLE_IMPACTS_ALIENFLESHequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[30];
-        unsigned char name_length;
-        char name[4];
-    } r33_PARTICLE_IMPACTS_ALIENFLESHequ__eos;
-    /* ROM 0xFE326: PARTICLE_IMPACTS_FLESHWATERequ / PARTICLE_IMPACTS_FLESHWATERequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[30];
-    } r34_PARTICLE_IMPACTS_FLESHWATERequ_PARTICLE_IMPACTS_FLESHWATERequ;
-    /* ROM 0xFE352: PARTICLE_IMPACTS_FLESHWATERequ / PARTICLE_IMPACTS_FLESHWATER */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[27];
-    } r35_PARTICLE_IMPACTS_FLESHWATERequ_PARTICLE_IMPACTS_FLESHWATER;
-    /* ROM 0xFE37B: PARTICLE_IMPACTS_FLESHWATERequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[30];
-        unsigned char name_length;
-        char name[4];
-    } r36_PARTICLE_IMPACTS_FLESHWATERequ__eos;
-    /* ROM 0xFE3AE: PARTICLE_IMPACTS_LAVAequ / PARTICLE_IMPACTS_LAVAequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[24];
-    } r37_PARTICLE_IMPACTS_LAVAequ_PARTICLE_IMPACTS_LAVAequ;
-    /* ROM 0xFE3D4: PARTICLE_IMPACTS_LAVAequ / PARTICLE_IMPACTS_LAVA */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[21];
-    } r38_PARTICLE_IMPACTS_LAVAequ_PARTICLE_IMPACTS_LAVA;
-    /* ROM 0xFE3F7: PARTICLE_IMPACTS_LAVAequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[24];
-        unsigned char name_length;
-        char name[4];
-    } r39_PARTICLE_IMPACTS_LAVAequ__eos;
-    /* ROM 0xFE424: PARTICLE_IMPACTS_SWAMPequ / PARTICLE_IMPACTS_SWAMPequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[25];
-    } r40_PARTICLE_IMPACTS_SWAMPequ_PARTICLE_IMPACTS_SWAMPequ;
-    /* ROM 0xFE44B: PARTICLE_IMPACTS_SWAMPequ / PARTICLE_IMPACTS_SWAMP */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[22];
-    } r41_PARTICLE_IMPACTS_SWAMPequ_PARTICLE_IMPACTS_SWAMP;
-    /* ROM 0xFE46F: PARTICLE_IMPACTS_SWAMPequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[25];
-        unsigned char name_length;
-        char name[4];
-    } r42_PARTICLE_IMPACTS_SWAMPequ__eos;
-    /* ROM 0xFE49D: PARTICLE_IMPACTS_FORCEFIELDequ / PARTICLE_IMPACTS_FORCEFIELDequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[30];
-    } r43_PARTICLE_IMPACTS_FORCEFIELDequ_PARTICLE_IMPACTS_FORCEFIELDequ;
-    /* ROM 0xFE4C9: PARTICLE_IMPACTS_FORCEFIELDequ / PARTICLE_IMPACTS_FORCEFIELD */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[27];
-    } r44_PARTICLE_IMPACTS_FORCEFIELDequ_PARTICLE_IMPACTS_FORCEFIELD;
-    /* ROM 0xFE4F2: PARTICLE_IMPACTS_FORCEFIELDequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[30];
-        unsigned char name_length;
-        char name[4];
-    } r45_PARTICLE_IMPACTS_FORCEFIELDequ__eos;
-    /* ROM 0xFE525: PARTICLE_IMPACTS_ENDLIFEequ / PARTICLE_IMPACTS_ENDLIFEequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[27];
-    } r46_PARTICLE_IMPACTS_ENDLIFEequ_PARTICLE_IMPACTS_ENDLIFEequ;
-    /* ROM 0xFE54E: PARTICLE_IMPACTS_ENDLIFEequ / PARTICLE_IMPACTS_ENDLIFE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[24];
-    } r47_PARTICLE_IMPACTS_ENDLIFEequ_PARTICLE_IMPACTS_ENDLIFE;
-    /* ROM 0xFE574: PARTICLE_IMPACTS_ENDLIFEequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[27];
-        unsigned char name_length;
-        char name[4];
-    } r48_PARTICLE_IMPACTS_ENDLIFEequ__eos;
-    /* ROM 0xFE5A4: PARTICLE_IMPACTS_EVERYFRAMEequ / PARTICLE_IMPACTS_EVERYFRAMEequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[30];
-    } r49_PARTICLE_IMPACTS_EVERYFRAMEequ_PARTICLE_IMPACTS_EVERYFRAMEequ;
-    /* ROM 0xFE5D0: PARTICLE_IMPACTS_EVERYFRAMEequ / PARTICLE_IMPACTS_EVERYFRAME */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[27];
-    } r50_PARTICLE_IMPACTS_EVERYFRAMEequ_PARTICLE_IMPACTS_EVERYFRAME;
-    /* ROM 0xFE5F9: PARTICLE_IMPACTS_EVERYFRAMEequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[30];
-        unsigned char name_length;
-        char name[4];
-    } r51_PARTICLE_IMPACTS_EVERYFRAMEequ__eos;
-    /* ROM 0xFE62C: PARTICLE_IMPACTS_ENDLIFEWATERequ / PARTICLE_IMPACTS_ENDLIFEWATERequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[32];
-    } r52_PARTICLE_IMPACTS_ENDLIFEWATERequ_PARTICLE_IMPACTS_ENDLIFEWATERequ;
-    /* ROM 0xFE65A: PARTICLE_IMPACTS_ENDLIFEWATERequ / PARTICLE_IMPACTS_ENDLIFEWATER */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[29];
-    } r53_PARTICLE_IMPACTS_ENDLIFEWATERequ_PARTICLE_IMPACTS_ENDLIFEWATER;
-    /* ROM 0xFE685: PARTICLE_IMPACTS_ENDLIFEWATERequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[32];
-        unsigned char name_length;
-        char name[4];
-    } r54_PARTICLE_IMPACTS_ENDLIFEWATERequ__eos;
-    /* ROM 0xFE6BA: PARTICLE_IMPACTS_EVERYFRAMEWATERequ / PARTICLE_IMPACTS_EVERYFRAMEWATERequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[35];
-    } r55_PARTICLE_IMPACTS_EVERYFRAMEWATERequ_PARTICLE_IMPACTS_EVERYFRAMEWATERequ;
-    /* ROM 0xFE6EB: PARTICLE_IMPACTS_EVERYFRAMEWATERequ / PARTICLE_IMPACTS_EVERYFRAMEWATER */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[32];
-    } r56_PARTICLE_IMPACTS_EVERYFRAMEWATERequ_PARTICLE_IMPACTS_EVERYFRAMEWATER;
-    /* ROM 0xFE719: PARTICLE_IMPACTS_EVERYFRAMEWATERequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[35];
-        unsigned char name_length;
-        char name[4];
-    } r57_PARTICLE_IMPACTS_EVERYFRAMEWATERequ__eos;
-    /* ROM 0xFE751: PARTICLE_IMPACTS_AMTequ / PARTICLE_IMPACTS_AMTequ */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[23];
-    } r58_PARTICLE_IMPACTS_AMTequ_PARTICLE_IMPACTS_AMTequ;
-    /* ROM 0xFE776: PARTICLE_IMPACTS_AMTequ / PARTICLE_IMPACTS_AMT */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[20];
-    } r59_PARTICLE_IMPACTS_AMTequ_PARTICLE_IMPACTS_AMT;
-    /* ROM 0xFE798: PARTICLE_IMPACTS_AMTequ / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[23];
-        unsigned char name_length;
-        char name[4];
-    } r60_PARTICLE_IMPACTS_AMTequ__eos;
-    /* ROM 0xFE7C4: PARTICLE_IMPACTS_AMTequ / SF */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[2];
-    } r61_PARTICLE_IMPACTS_AMTequ_SF;
-    /* ROM 0xFE7D4: CROMSection_t / CROMSection_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r62_CROMSection_t_CROMSection_t;
-    /* ROM 0xFE7EF: CROMSection_t / m_nTextureSet */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r63_CROMSection_t_m_nTextureSet;
-    /* ROM 0xFE80A: CROMSection_t / m_dwMatFlags */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r64_CROMSection_t_m_dwMatFlags;
-    /* ROM 0xFE824: CROMSection_t / m_nMaterial */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r65_CROMSection_t_m_nMaterial;
-    /* ROM 0xFE83D: CROMSection_t / m_NodeType */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r66_CROMSection_t_m_NodeType;
-    /* ROM 0xFE855: CROMSection_t / pad */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[3];
-    } r67_CROMSection_t_pad;
-    /* ROM 0xFE86D: CROMSection_t / m_Color */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[7];
-    } r68_CROMSection_t_m_Color;
-    /* ROM 0xFE889: CROMSection_t / m_BlackColor */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[12];
-    } r69_CROMSection_t_m_BlackColor;
-    /* ROM 0xFE8AA: CROMSection_t / m_MultU */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[7];
-    } r70_CROMSection_t_m_MultU;
-    /* ROM 0xFE8BF: CROMSection_t / m_MultV */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[7];
-    } r71_CROMSection_t_m_MultV;
-    /* ROM 0xFE8D4: CROMSection_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[13];
-        unsigned char name_length;
-        char name[4];
-    } r72_CROMSection_t__eos;
-    /* ROM 0xFE8F6: CROMSection_t / CROMSection */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[13];
-        unsigned char name_length;
-        char name[11];
-    } r73_CROMSection_t_CROMSection;
-    /* ROM 0xFE91F: CGameSection_t / CGameSection_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r74_CGameSection_t_CGameSection_t;
-    /* ROM 0xFE93B: CGameSection_t / m_dwMatFlags */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r75_CGameSection_t_m_dwMatFlags;
-    /* ROM 0xFE955: CGameSection_t / m_nMaterial */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r76_CGameSection_t_m_nMaterial;
-    /* ROM 0xFE96E: CGameSection_t / m_NodeType */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r77_CGameSection_t_m_NodeType;
-    /* ROM 0xFE986: CGameSection_t / m_LastTextureFrame */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[18];
-    } r78_CGameSection_t_m_LastTextureFrame;
-    /* ROM 0xFE9A6: CGameSection_t / m_TextureLoader */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[16];
-        unsigned char name_length;
-        char name[15];
-    } r79_CGameSection_t_m_TextureLoader;
-    /* ROM 0xFE9D6: CGameSection_t / m_Color */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[7];
-    } r80_CGameSection_t_m_Color;
-    /* ROM 0xFE9F2: CGameSection_t / m_BlackColor */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[12];
-    } r81_CGameSection_t_m_BlackColor;
-    /* ROM 0xFEA13: CGameSection_t / m_MultU */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[7];
-    } r82_CGameSection_t_m_MultU;
-    /* ROM 0xFEA28: CGameSection_t / m_MultV */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[7];
-    } r83_CGameSection_t_m_MultV;
-    /* ROM 0xFEA3D: CGameSection_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[14];
-        unsigned char name_length;
-        char name[4];
-    } r84_CGameSection_t__eos;
-    /* ROM 0xFEA60: CGameSection_t / CGameSection */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[14];
-        unsigned char name_length;
-        char name[12];
-    } r85_CGameSection_t_CGameSection;
-    /* ROM 0xFEA8B: CROMTextureFormat_t / CROMTextureFormat_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r86_CROMTextureFormat_t_CROMTextureFormat_t;
-    /* ROM 0xFEAAC: CROMTextureFormat_t / m_Format */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r87_CROMTextureFormat_t_m_Format;
-    /* ROM 0xFEAC2: CROMTextureFormat_t / m_PlaybackSpeed */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r88_CROMTextureFormat_t_m_PlaybackSpeed;
-    /* ROM 0xFEADF: CROMTextureFormat_t / m_WidthShift */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r89_CROMTextureFormat_t_m_WidthShift;
-    /* ROM 0xFEAF9: CROMTextureFormat_t / m_HeightShift */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r90_CROMTextureFormat_t_m_HeightShift;
-    /* ROM 0xFEB14: CROMTextureFormat_t / m_Effect */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r91_CROMTextureFormat_t_m_Effect;
-    /* ROM 0xFEB2A: CROMTextureFormat_t / m_EffectMode */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r92_CROMTextureFormat_t_m_EffectMode;
-    /* ROM 0xFEB44: CROMTextureFormat_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[4];
-    } r93_CROMTextureFormat_t__eos;
-    /* ROM 0xFEB6C: CROMTextureFormat_t / CROMTextureFormat */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[17];
-    } r94_CROMTextureFormat_t_CROMTextureFormat;
-    /* ROM 0xFEBA1: CROMLevel_t / CROMLevel_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r95_CROMLevel_t_CROMLevel_t;
-    /* ROM 0xFEBBA: CROMLevel_t / m_GridDistance */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r96_CROMLevel_t_m_GridDistance;
-    /* ROM 0xFEBD6: CROMLevel_t / m_BlackColor */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[12];
-    } r97_CROMLevel_t_m_BlackColor;
-    /* ROM 0xFEBF7: CROMLevel_t / m_WhiteColor */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[12];
-    } r98_CROMLevel_t_m_WhiteColor;
-    /* ROM 0xFEC18: CROMLevel_t / m_DirectionalLight */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[18];
-    } r99_CROMLevel_t_m_DirectionalLight;
-    /* ROM 0xFEC3F: CROMLevel_t / m_AmbientLight */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[14];
-    } r100_CROMLevel_t_m_AmbientLight;
-    /* ROM 0xFEC62: CROMLevel_t / m_bFlags */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r101_CROMLevel_t_m_bFlags;
-    /* ROM 0xFEC78: CROMLevel_t / m_Direction */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[11];
-    } r102_CROMLevel_t_m_Direction;
-    /* ROM 0xFEC98: CROMLevel_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[11];
-        unsigned char name_length;
-        char name[4];
-    } r103_CROMLevel_t__eos;
-    /* ROM 0xFECB8: CROMLevel_t / CROMLevel */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[11];
-        unsigned char name_length;
-        char name[9];
-    } r104_CROMLevel_t_CROMLevel;
-    /* ROM 0xFECDD: CRandomSFPair_t / CRandomSFPair_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r105_CRandomSFPair_t_CRandomSFPair_t;
-    /* ROM 0xFECFA: CRandomSFPair_t / v */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[1];
-    } r106_CRandomSFPair_t_v;
-    /* ROM 0xFED09: CRandomSFPair_t / r */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[1];
-    } r107_CRandomSFPair_t_r;
-    /* ROM 0xFED18: CRandomSFPair_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[4];
-    } r108_CRandomSFPair_t__eos;
-    /* ROM 0xFED3C: CRandomSFPair_t / CRandomSFPair */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[13];
-    } r109_CRandomSFPair_t_CRandomSFPair;
-    /* ROM 0xFED69: CRandomS8Pair_t / CRandomS8Pair_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r110_CRandomS8Pair_t_CRandomS8Pair_t;
-    /* ROM 0xFED86: CRandomS8Pair_t / v */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[1];
-    } r111_CRandomS8Pair_t_v;
-    /* ROM 0xFED95: CRandomS8Pair_t / r */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[1];
-    } r112_CRandomS8Pair_t_r;
-    /* ROM 0xFEDA4: CRandomS8Pair_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[4];
-    } r113_CRandomS8Pair_t__eos;
-    /* ROM 0xFEDC8: CRandomS8Pair_t / CRandomS8Pair */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[13];
-    } r114_CRandomS8Pair_t_CRandomS8Pair;
-    /* ROM 0xFEDF5: CROMParticleImpact_t / CROMParticleImpact_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[20];
-    } r115_CROMParticleImpact_t_CROMParticleImpact_t;
-    /* ROM 0xFEE17: CROMParticleImpact_t / m_ImpactEventValue */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        char tag[13];
-        unsigned char name_length;
-        char name[18];
-    } r116_CROMParticleImpact_t_m_ImpactEventValue;
-    /* ROM 0xFEE4B: CROMParticleImpact_t / m_ImpactParticleType */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[20];
-    } r117_CROMParticleImpact_t_m_ImpactParticleType;
-    /* ROM 0xFEE74: CROMParticleImpact_t / m_ImpactEventType */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[17];
-    } r118_CROMParticleImpact_t_m_ImpactEventType;
-    /* ROM 0xFEE9A: CROMParticleImpact_t / m_ImpactSoundType */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[17];
-    } r119_CROMParticleImpact_t_m_ImpactSoundType;
-    /* ROM 0xFEEC0: CROMParticleImpact_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[4];
-    } r120_CROMParticleImpact_t__eos;
-    /* ROM 0xFEEE9: CROMParticleImpact_t / CROMParticleImpact */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[18];
-    } r121_CROMParticleImpact_t_CROMParticleImpact;
-    /* ROM 0xFEF20: CROMParticleOffset_t / CROMParticleOffset_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[20];
-    } r122_CROMParticleOffset_t_CROMParticleOffset_t;
-    /* ROM 0xFEF42: CROMParticleOffset_t / m_XPosOffset */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r123_CROMParticleOffset_t_m_XPosOffset;
-    /* ROM 0xFEF6E: CROMParticleOffset_t / m_YPosOffset */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r124_CROMParticleOffset_t_m_YPosOffset;
-    /* ROM 0xFEF9A: CROMParticleOffset_t / m_ZPosOffset */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r125_CROMParticleOffset_t_m_ZPosOffset;
-    /* ROM 0xFEFC6: CROMParticleOffset_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[4];
-    } r126_CROMParticleOffset_t__eos;
-    /* ROM 0xFEFEF: CROMParticleOffset_t / CROMParticleOffset */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[18];
-    } r127_CROMParticleOffset_t_CROMParticleOffset;
-    /* ROM 0xFF026: CROMParticleRot_t / CROMParticleRot_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[17];
-    } r128_CROMParticleRot_t_CROMParticleRot_t;
-    /* ROM 0xFF045: CROMParticleRot_t / m_XRot */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[6];
-    } r129_CROMParticleRot_t_m_XRot;
-    /* ROM 0xFF06B: CROMParticleRot_t / m_XRotInc */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[9];
-    } r130_CROMParticleRot_t_m_XRotInc;
-    /* ROM 0xFF094: CROMParticleRot_t / m_YRot */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[6];
-    } r131_CROMParticleRot_t_m_YRot;
-    /* ROM 0xFF0BA: CROMParticleRot_t / m_YRotInc */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[9];
-    } r132_CROMParticleRot_t_m_YRotInc;
-    /* ROM 0xFF0E3: CROMParticleRot_t / m_ZRot */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[6];
-    } r133_CROMParticleRot_t_m_ZRot;
-    /* ROM 0xFF109: CROMParticleRot_t / m_ZRotInc */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[9];
-    } r134_CROMParticleRot_t_m_ZRotInc;
-    /* ROM 0xFF132: CROMParticleRot_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[17];
-        unsigned char name_length;
-        char name[4];
-    } r135_CROMParticleRot_t__eos;
-    /* ROM 0xFF158: CROMParticleRot_t / CROMParticleRot */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[17];
-        unsigned char name_length;
-        char name[15];
-    } r136_CROMParticleRot_t_CROMParticleRot;
-    /* ROM 0xFF189: CROMParticleScale_t / CROMParticleScale_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r137_CROMParticleScale_t_CROMParticleScale_t;
-    /* ROM 0xFF1AA: CROMParticleScale_t / m_XScale */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[8];
-    } r138_CROMParticleScale_t_m_XScale;
-    /* ROM 0xFF1D2: CROMParticleScale_t / m_XScaleInc */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[11];
-    } r139_CROMParticleScale_t_m_XScaleInc;
-    /* ROM 0xFF1FD: CROMParticleScale_t / m_YScale */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[8];
-    } r140_CROMParticleScale_t_m_YScale;
-    /* ROM 0xFF225: CROMParticleScale_t / m_YScaleInc */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[11];
-    } r141_CROMParticleScale_t_m_YScaleInc;
-    /* ROM 0xFF250: CROMParticleScale_t / m_ZScale */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[8];
-    } r142_CROMParticleScale_t_m_ZScale;
-    /* ROM 0xFF278: CROMParticleScale_t / m_ZScaleInc */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[11];
-    } r143_CROMParticleScale_t_m_ZScaleInc;
-    /* ROM 0xFF2A3: CROMParticleScale_t / m_ShadowScale */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r144_CROMParticleScale_t_m_ShadowScale;
-    /* ROM 0xFF2BE: CROMParticleScale_t / m_NearScale */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r145_CROMParticleScale_t_m_NearScale;
-    /* ROM 0xFF2D7: CROMParticleScale_t / m_FarScale */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r146_CROMParticleScale_t_m_FarScale;
-    /* ROM 0xFF2EF: CROMParticleScale_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[4];
-    } r147_CROMParticleScale_t__eos;
-    /* ROM 0xFF317: CROMParticleScale_t / CROMParticleScale */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[17];
-    } r148_CROMParticleScale_t_CROMParticleScale;
-    /* ROM 0xFF34C: CROMParticleDir_t / CROMParticleDir_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[17];
-    } r149_CROMParticleDir_t_CROMParticleDir_t;
-    /* ROM 0xFF36B: CROMParticleDir_t / m_XDirection */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r150_CROMParticleDir_t_m_XDirection;
-    /* ROM 0xFF397: CROMParticleDir_t / m_YDirection */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r151_CROMParticleDir_t_m_YDirection;
-    /* ROM 0xFF3C3: CROMParticleDir_t / m_ZDirection */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r152_CROMParticleDir_t_m_ZDirection;
-    /* ROM 0xFF3EF: CROMParticleDir_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[17];
-        unsigned char name_length;
-        char name[4];
-    } r153_CROMParticleDir_t__eos;
-    /* ROM 0xFF415: CROMParticleDir_t / CROMParticleDir */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[17];
-        unsigned char name_length;
-        char name[15];
-    } r154_CROMParticleDir_t_CROMParticleDir;
-    /* ROM 0xFF446: CROMParticleSineWave_t / CROMParticleSineWave_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[22];
-    } r155_CROMParticleSineWave_t_CROMParticleSineWave_t;
-    /* ROM 0xFF46A: CROMParticleSineWave_t / m_XAmplitude */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r156_CROMParticleSineWave_t_m_XAmplitude;
-    /* ROM 0xFF496: CROMParticleSineWave_t / m_XFrequency */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r157_CROMParticleSineWave_t_m_XFrequency;
-    /* ROM 0xFF4C2: CROMParticleSineWave_t / m_XPhase */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[8];
-    } r158_CROMParticleSineWave_t_m_XPhase;
-    /* ROM 0xFF4EA: CROMParticleSineWave_t / m_YAmplitude */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r159_CROMParticleSineWave_t_m_YAmplitude;
-    /* ROM 0xFF516: CROMParticleSineWave_t / m_YFrequency */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[12];
-    } r160_CROMParticleSineWave_t_m_YFrequency;
-    /* ROM 0xFF542: CROMParticleSineWave_t / m_YPhase */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[8];
-    } r161_CROMParticleSineWave_t_m_YPhase;
-    /* ROM 0xFF56A: CROMParticleSineWave_t / m_nSineWaveFadeIn */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[17];
-    } r162_CROMParticleSineWave_t_m_nSineWaveFadeIn;
-    /* ROM 0xFF589: CROMParticleSineWave_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[22];
-        unsigned char name_length;
-        char name[4];
-    } r163_CROMParticleSineWave_t__eos;
-    /* ROM 0xFF5B4: CROMParticleSineWave_t / CROMParticleSineWave */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[22];
-        unsigned char name_length;
-        char name[20];
-    } r164_CROMParticleSineWave_t_CROMParticleSineWave;
-    /* ROM 0xFF5EF: CROMParticlePhysics_t / CROMParticlePhysics_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[21];
-    } r165_CROMParticlePhysics_t_CROMParticlePhysics_t;
-    /* ROM 0xFF612: CROMParticlePhysics_t / m_Gravity */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[9];
-    } r166_CROMParticlePhysics_t_m_Gravity;
-    /* ROM 0xFF63B: CROMParticlePhysics_t / m_Velocity */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[10];
-    } r167_CROMParticlePhysics_t_m_Velocity;
-    /* ROM 0xFF665: CROMParticlePhysics_t / m_BounceEnergy */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r168_CROMParticlePhysics_t_m_BounceEnergy;
-    /* ROM 0xFF681: CROMParticlePhysics_t / m_GroundFriction */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r169_CROMParticlePhysics_t_m_GroundFriction;
-    /* ROM 0xFF69F: CROMParticlePhysics_t / m_AirFriction */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r170_CROMParticlePhysics_t_m_AirFriction;
-    /* ROM 0xFF6BA: CROMParticlePhysics_t / m_WaterFriction */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r171_CROMParticlePhysics_t_m_WaterFriction;
-    /* ROM 0xFF6D7: CROMParticlePhysics_t / m_Acceleration */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r172_CROMParticlePhysics_t_m_Acceleration;
-    /* ROM 0xFF6F3: CROMParticlePhysics_t / m_MinMaxVelocity */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r173_CROMParticlePhysics_t_m_MinMaxVelocity;
-    /* ROM 0xFF711: CROMParticlePhysics_t / m_CollRadius */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r174_CROMParticlePhysics_t_m_CollRadius;
-    /* ROM 0xFF72B: CROMParticlePhysics_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[21];
-        unsigned char name_length;
-        char name[4];
-    } r175_CROMParticlePhysics_t__eos;
-    /* ROM 0xFF755: CROMParticlePhysics_t / CROMParticlePhysics */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[21];
-        unsigned char name_length;
-        char name[19];
-    } r176_CROMParticlePhysics_t_CROMParticlePhysics;
-    /* ROM 0xFF78E: CROMParticleColor_t / CROMParticleColor_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r177_CROMParticleColor_t_CROMParticleColor_t;
-    /* ROM 0xFF7AF: CROMParticleColor_t / m_WhiteColor */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[12];
-    } r178_CROMParticleColor_t_m_WhiteColor;
-    /* ROM 0xFF7D0: CROMParticleColor_t / m_BlackColor */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[12];
-    } r179_CROMParticleColor_t_m_BlackColor;
-    /* ROM 0xFF7F1: CROMParticleColor_t / m_WhiteColor2 */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[13];
-    } r180_CROMParticleColor_t_m_WhiteColor2;
-    /* ROM 0xFF813: CROMParticleColor_t / m_BlackColor2 */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[13];
-    } r181_CROMParticleColor_t_m_BlackColor2;
-    /* ROM 0xFF835: CROMParticleColor_t / m_RandomizeHue */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r182_CROMParticleColor_t_m_RandomizeHue;
-    /* ROM 0xFF851: CROMParticleColor_t / m_RandomizeSaturation */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[21];
-    } r183_CROMParticleColor_t_m_RandomizeSaturation;
-    /* ROM 0xFF874: CROMParticleColor_t / m_RandomizeBrightness */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[21];
-    } r184_CROMParticleColor_t_m_RandomizeBrightness;
-    /* ROM 0xFF897: CROMParticleColor_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[4];
-    } r185_CROMParticleColor_t__eos;
-    /* ROM 0xFF8BF: CROMParticleColor_t / CROMParticleColor */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[17];
-    } r186_CROMParticleColor_t_CROMParticleColor;
-    /* ROM 0xFF8F4: CROMParticleGeneral_t / CROMParticleGeneral_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[21];
-    } r187_CROMParticleGeneral_t_CROMParticleGeneral_t;
-    /* ROM 0xFF917: CROMParticleGeneral_t / m_nFrames */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r188_CROMParticleGeneral_t_m_nFrames;
-    /* ROM 0xFF92E: CROMParticleGeneral_t / m_nFramesRnd */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r189_CROMParticleGeneral_t_m_nFramesRnd;
-    /* ROM 0xFF948: CROMParticleGeneral_t / m_Probability */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r190_CROMParticleGeneral_t_m_Probability;
-    /* ROM 0xFF963: CROMParticleGeneral_t / m_Visibility */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r191_CROMParticleGeneral_t_m_Visibility;
-    /* ROM 0xFF97D: CROMParticleGeneral_t / m_nParticles */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r192_CROMParticleGeneral_t_m_nParticles;
-    /* ROM 0xFF997: CROMParticleGeneral_t / m_nParticlesRnd */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r193_CROMParticleGeneral_t_m_nParticlesRnd;
-    /* ROM 0xFF9B4: CROMParticleGeneral_t / m_nPriority */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r194_CROMParticleGeneral_t_m_nPriority;
-    /* ROM 0xFF9CD: CROMParticleGeneral_t / m_nFadeIn */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r195_CROMParticleGeneral_t_m_nFadeIn;
-    /* ROM 0xFF9E4: CROMParticleGeneral_t / m_nFadeOut */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r196_CROMParticleGeneral_t_m_nFadeOut;
-    /* ROM 0xFF9FC: CROMParticleGeneral_t / m_FPS */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[5];
-    } r197_CROMParticleGeneral_t_m_FPS;
-    /* ROM 0xFFA0F: CROMParticleGeneral_t / m_nInBetweens */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r198_CROMParticleGeneral_t_m_nInBetweens;
-    /* ROM 0xFFA2A: CROMParticleGeneral_t / m_nMaxDelay */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r199_CROMParticleGeneral_t_m_nMaxDelay;
-    /* ROM 0xFFA43: CROMParticleGeneral_t / m_Alignment */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r200_CROMParticleGeneral_t_m_Alignment;
-    /* ROM 0xFFA5C: CROMParticleGeneral_t / m_Alert */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[7];
-    } r201_CROMParticleGeneral_t_m_Alert;
-    /* ROM 0xFFA71: CROMParticleGeneral_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[21];
-        unsigned char name_length;
-        char name[4];
-    } r202_CROMParticleGeneral_t__eos;
-    /* ROM 0xFFA9B: CROMParticleGeneral_t / CROMParticleGeneral */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[21];
-        unsigned char name_length;
-        char name[19];
-    } r203_CROMParticleGeneral_t_CROMParticleGeneral;
-    /* ROM 0xFFAD4: CROMParticleEffect_t / CROMParticleEffect_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[20];
-    } r204_CROMParticleEffect_t_CROMParticleEffect_t;
-    /* ROM 0xFFAF6: CROMParticleEffect_t / m_dwFlags */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r205_CROMParticleEffect_t_m_dwFlags;
-    /* ROM 0xFFB0D: CROMParticleEffect_t / m_nTextureSet */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r206_CROMParticleEffect_t_m_nTextureSet;
-    /* ROM 0xFFB28: CROMParticleEffect_t / m_nSwoosh */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r207_CROMParticleEffect_t_m_nSwoosh;
-    /* ROM 0xFFB3F: CROMParticleEffect_t / m_nDynamicLight */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r208_CROMParticleEffect_t_m_nDynamicLight;
-    /* ROM 0xFFB5C: CROMParticleEffect_t / m_Playback */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r209_CROMParticleEffect_t_m_Playback;
-    /* ROM 0xFFB74: CROMParticleEffect_t / m_InstanceBehavior */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[18];
-    } r210_CROMParticleEffect_t_m_InstanceBehavior;
-    /* ROM 0xFFB94: CROMParticleEffect_t / m_WallBehavior */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r211_CROMParticleEffect_t_m_WallBehavior;
-    /* ROM 0xFFBB0: CROMParticleEffect_t / m_GroundBehavior */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r212_CROMParticleEffect_t_m_GroundBehavior;
-    /* ROM 0xFFBCE: CROMParticleEffect_t / m_SoundType */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r213_CROMParticleEffect_t_m_SoundType;
-    /* ROM 0xFFBE7: CROMParticleEffect_t / m_MaxAngleChangePerFrame */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[24];
-    } r214_CROMParticleEffect_t_m_MaxAngleChangePerFrame;
-    /* ROM 0xFFC0D: CROMParticleEffect_t / m_ProximityDetectionRadius */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[26];
-    } r215_CROMParticleEffect_t_m_ProximityDetectionRadius;
-    /* ROM 0xFFC35: CROMParticleEffect_t / m_bFlags2 */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r216_CROMParticleEffect_t_m_bFlags2;
-    /* ROM 0xFFC4C: CROMParticleEffect_t / padding */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[7];
-    } r217_CROMParticleEffect_t_padding;
-    /* ROM 0xFFC68: CROMParticleEffect_t / m_rpObject */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r218_CROMParticleEffect_t_m_rpObject;
-    /* ROM 0xFFC80: CROMParticleEffect_t / m_pImpact */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[9];
-    } r219_CROMParticleEffect_t_m_pImpact;
-    /* ROM 0xFFCAE: CROMParticleEffect_t / m_pOffset */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[9];
-    } r220_CROMParticleEffect_t_m_pOffset;
-    /* ROM 0xFFCDC: CROMParticleEffect_t / m_pRot */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[17];
-        unsigned char name_length;
-        char name[6];
-    } r221_CROMParticleEffect_t_m_pRot;
-    /* ROM 0xFFD04: CROMParticleEffect_t / m_pScale */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[8];
-    } r222_CROMParticleEffect_t_m_pScale;
-    /* ROM 0xFFD30: CROMParticleEffect_t / m_pDir */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[17];
-        unsigned char name_length;
-        char name[6];
-    } r223_CROMParticleEffect_t_m_pDir;
-    /* ROM 0xFFD58: CROMParticleEffect_t / m_pSineWave */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[22];
-        unsigned char name_length;
-        char name[11];
-    } r224_CROMParticleEffect_t_m_pSineWave;
-    /* ROM 0xFFD8A: CROMParticleEffect_t / m_pPhysics */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[21];
-        unsigned char name_length;
-        char name[10];
-    } r225_CROMParticleEffect_t_m_pPhysics;
-    /* ROM 0xFFDBA: CROMParticleEffect_t / m_pColor */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[8];
-    } r226_CROMParticleEffect_t_m_pColor;
-    /* ROM 0xFFDE6: CROMParticleEffect_t / m_pGeneral */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[21];
-        unsigned char name_length;
-        char name[10];
-    } r227_CROMParticleEffect_t_m_pGeneral;
-    /* ROM 0xFFE16: CROMParticleEffect_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[4];
-    } r228_CROMParticleEffect_t__eos;
-    /* ROM 0xFFE3F: CROMParticleEffect_t / CROMParticleEffect */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[18];
-    } r229_CROMParticleEffect_t_CROMParticleEffect;
-    /* ROM 0xFFE76: CROMWarpPoint_t / CROMWarpPoint_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r230_CROMWarpPoint_t_CROMWarpPoint_t;
-    /* ROM 0xFFE93: CROMWarpPoint_t / m_vPos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[6];
-    } r231_CROMWarpPoint_t_m_vPos;
-    /* ROM 0xFFEB4: CROMWarpPoint_t / m_RotY */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[6];
-    } r232_CROMWarpPoint_t_m_RotY;
-    /* ROM 0xFFEC8: CROMWarpPoint_t / m_nLevel */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r233_CROMWarpPoint_t_m_nLevel;
-    /* ROM 0xFFEDE: CROMWarpPoint_t / m_nRegion */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r234_CROMWarpPoint_t_m_nRegion;
-    /* ROM 0xFFEF5: CROMWarpPoint_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[4];
-    } r235_CROMWarpPoint_t__eos;
-    /* ROM 0xFFF19: CROMWarpPoint_t / CROMWarpPoint */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[13];
-    } r236_CROMWarpPoint_t_CROMWarpPoint;
-    /* ROM 0xFFF46: CROMNode_t / CROMNode_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r237_CROMNode_t_CROMNode_t;
-    /* ROM 0xFFF5E: CROMNode_t / vBoundsCorners */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[14];
-    } r238_CROMNode_t_vBoundsCorners;
-    /* ROM 0xFFF8B: CROMNode_t / m_MaxBounds */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r239_CROMNode_t_m_MaxBounds;
-    /* ROM 0xFFFA4: CROMNode_t / m_ParentIndex */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r240_CROMNode_t_m_ParentIndex;
-    /* ROM 0xFFFBF: CROMNode_t / m_Symbol */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r241_CROMNode_t_m_Symbol;
-    /* ROM 0xFFFD5: CROMNode_t / m_MaterialType */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r242_CROMNode_t_m_MaterialType;
-    /* ROM 0xFFFF1: CROMNode_t / pad */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[3];
-    } r243_CROMNode_t_pad;
-    /* ROM 0x100009: CROMNode_t / m_DamageScaler */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r244_CROMNode_t_m_DamageScaler;
-    /* ROM 0x100025: CROMNode_t / m_dwModelFlags */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r245_CROMNode_t_m_dwModelFlags;
-    /* ROM 0x100041: CROMNode_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[4];
-    } r246_CROMNode_t__eos;
-    /* ROM 0x100060: CROMNode_t / CROMNode */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[8];
-    } r247_CROMNode_t_CROMNode;
-    /* ROM 0x100083: CROMObjectInfo_t / CROMObjectInfo_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r248_CROMObjectInfo_t_CROMObjectInfo_t;
-    /* ROM 0x1000A1: CROMObjectInfo_t / m_Bounds */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[12];
-        unsigned char name_length;
-        char name[8];
-    } r249_CROMObjectInfo_t_m_Bounds;
-    /* ROM 0x1000C6: CROMObjectInfo_t / m_HeadTrackStartNode */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[20];
-    } r250_CROMObjectInfo_t_m_HeadTrackStartNode;
-    /* ROM 0x1000E8: CROMObjectInfo_t / m_HeadTrackEndNode */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[18];
-    } r251_CROMObjectInfo_t_m_HeadTrackEndNode;
-    /* ROM 0x100108: CROMObjectInfo_t / m_HeadTrackFactor */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[17];
-    } r252_CROMObjectInfo_t_m_HeadTrackFactor;
-    /* ROM 0x100127: CROMObjectInfo_t / pad0 */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[4];
-    } r253_CROMObjectInfo_t_pad0;
-    /* ROM 0x100139: CROMObjectInfo_t / m_nVariation */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r254_CROMObjectInfo_t_m_nVariation;
-    /* ROM 0x100153: CROMObjectInfo_t / m_UnitScale */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r255_CROMObjectInfo_t_m_UnitScale;
-    /* ROM 0x10016C: CROMObjectInfo_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[16];
-        unsigned char name_length;
-        char name[4];
-    } r256_CROMObjectInfo_t__eos;
-    /* ROM 0x100191: CROMObjectInfo_t / CROMObjectInfo */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[16];
-        unsigned char name_length;
-        char name[14];
-    } r257_CROMObjectInfo_t_CROMObjectInfo;
-    /* ROM 0x1001C0: CNode_t / CNode_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[7];
-    } r258_CNode_t_CNode_t;
-    /* ROM 0x1001D5: CNode_t / m_pPrev */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[7];
-    } r259_CNode_t_m_pPrev;
-    /* ROM 0x1001F4: CNode_t / m_pNext */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[7];
-    } r260_CNode_t_m_pNext;
-    /* ROM 0x100213: CNode_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[4];
-    } r261_CNode_t__eos;
-    /* ROM 0x10022F: CNode_t / CNode */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[5];
-    } r262_CNode_t_CNode;
-    /* ROM 0x10024C: CNodeList_t / CNodeList_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r263_CNodeList_t_CNodeList_t;
-    /* ROM 0x100265: CNodeList_t / m_pHead */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[7];
-    } r264_CNodeList_t_m_pHead;
-    /* ROM 0x100284: CNodeList_t / m_pTail */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[7];
-    } r265_CNodeList_t_m_pTail;
-    /* ROM 0x1002A3: CNodeList_t / m_Length */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r266_CNodeList_t_m_Length;
-    /* ROM 0x1002B9: CNodeList_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[11];
-        unsigned char name_length;
-        char name[4];
-    } r267_CNodeList_t__eos;
-    /* ROM 0x1002D9: CNodeList_t / CNodeList */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[11];
-        unsigned char name_length;
-        char name[9];
-    } r268_CNodeList_t_CNodeList;
-    /* ROM 0x1002FE: CDynamicList_t / CDynamicList_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r269_CDynamicList_t_CDynamicList_t;
-    /* ROM 0x10031A: CDynamicList_t / m_FreeList */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[11];
-        unsigned char name_length;
-        char name[10];
-    } r270_CDynamicList_t_m_FreeList;
-    /* ROM 0x100340: CDynamicList_t / m_ActiveList */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[11];
-        unsigned char name_length;
-        char name[12];
-    } r271_CDynamicList_t_m_ActiveList;
-    /* ROM 0x100368: CDynamicList_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[14];
-        unsigned char name_length;
-        char name[4];
-    } r272_CDynamicList_t__eos;
-    /* ROM 0x10038B: CDynamicList_t / CDynamicList */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[14];
-        unsigned char name_length;
-        char name[12];
-    } r273_CDynamicList_t_CDynamicList;
-    /* ROM 0x1003B6: CSelection_t / CSelection_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r274_CSelection_t_CSelection_t;
-    /* ROM 0x1003D0: CSelection_t / m_Number */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r275_CSelection_t_m_Number;
-    /* ROM 0x1003E6: CSelection_t / m_Weight */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r276_CSelection_t_m_Weight;
-    /* ROM 0x1003FC: CSelection_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[12];
-        unsigned char name_length;
-        char name[4];
-    } r277_CSelection_t__eos;
-    /* ROM 0x10041D: CSelection_t / CSelection */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[12];
-        unsigned char name_length;
-        char name[10];
-    } r278_CSelection_t_CSelection;
-    /* ROM 0x100444: CSelectionList_t / CSelectionList_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r279_CSelectionList_t_CSelectionList_t;
-    /* ROM 0x100462: CSelectionList_t / m_Entries */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r280_CSelectionList_t_m_Entries;
-    /* ROM 0x100479: CSelectionList_t / m_List */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        char tag[12];
-        unsigned char name_length;
-        char name[6];
-    } r281_CSelectionList_t_m_List;
-    /* ROM 0x1004A0: CSelectionList_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[16];
-        unsigned char name_length;
-        char name[4];
-    } r282_CSelectionList_t__eos;
-    /* ROM 0x1004C5: CSelectionList_t / CSelectionList */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[16];
-        unsigned char name_length;
-        char name[14];
-    } r283_CSelectionList_t_CSelectionList;
-    /* ROM 0x1004F4: CGameAnimateState_t / CGameAnimateState_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r284_CGameAnimateState_t_CGameAnimateState_t;
-    /* ROM 0x100515: CGameAnimateState_t / cFrame */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[6];
-    } r285_CGameAnimateState_t_cFrame;
-    /* ROM 0x100529: CGameAnimateState_t / nAnim */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[5];
-    } r286_CGameAnimateState_t_nAnim;
-    /* ROM 0x10053C: CGameAnimateState_t / nDesiredAnim */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r287_CGameAnimateState_t_nDesiredAnim;
-    /* ROM 0x100556: CGameAnimateState_t / nFrames */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[7];
-    } r288_CGameAnimateState_t_nFrames;
-    /* ROM 0x10056B: CGameAnimateState_t / CycleCompleted */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r289_CGameAnimateState_t_CycleCompleted;
-    /* ROM 0x100587: CGameAnimateState_t / Active */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[6];
-    } r290_CGameAnimateState_t_Active;
-    /* ROM 0x10059B: CGameAnimateState_t / LoopTo */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[6];
-    } r291_CGameAnimateState_t_LoopTo;
-    /* ROM 0x1005AF: CGameAnimateState_t / pmeAnimData */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[11];
-        unsigned char name_length;
-        char name[11];
-    } r292_CGameAnimateState_t_pmeAnimData;
-    /* ROM 0x1005D6: CGameAnimateState_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[4];
-    } r293_CGameAnimateState_t__eos;
-    /* ROM 0x1005FE: CGameAnimateState_t / CGameAnimateState */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[17];
-    } r294_CGameAnimateState_t_CGameAnimateState;
-    /* ROM 0x100633: CGameAnimateState_t / CGAS */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[4];
-    } r295_CGameAnimateState_t_CGAS;
-    /* ROM 0x10065B: CGameAnimateState_t / CRIOrient */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[24];
-        unsigned char name_length;
-        char name[9];
-    } r296_CGameAnimateState_t_CRIOrient;
-    /* ROM 0x10068D: CGameAnimateState_t / CRNIndex */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[8];
-    } r297_CGameAnimateState_t_CRNIndex;
-    /* ROM 0x1006B5: AnimInfo_t / AnimInfo_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r298_AnimInfo_t_AnimInfo_t;
-    /* ROM 0x1006CD: AnimInfo_t / NodeAnimIndices */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[15];
-        unsigned char name_length;
-        char name[15];
-    } r299_AnimInfo_t_NodeAnimIndices;
-    /* ROM 0x1006FC: AnimInfo_t / InitialOrients */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[24];
-        unsigned char name_length;
-        char name[14];
-    } r300_AnimInfo_t_InitialOrients;
-    /* ROM 0x100733: AnimInfo_t / isTransSets */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[6];
-        unsigned char name_length;
-        char name[11];
-    } r301_AnimInfo_t_isTransSets;
-    /* ROM 0x100755: AnimInfo_t / isRotSets */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[6];
-        unsigned char name_length;
-        char name[9];
-    } r302_AnimInfo_t_isRotSets;
-    /* ROM 0x100775: AnimInfo_t / RotIndex1 */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r303_AnimInfo_t_RotIndex1;
-    /* ROM 0x10078C: AnimInfo_t / RotIndex2 */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r304_AnimInfo_t_RotIndex2;
-    /* ROM 0x1007A3: AnimInfo_t / TransIndex1 */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r305_AnimInfo_t_TransIndex1;
-    /* ROM 0x1007BC: AnimInfo_t / TransIndex2 */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r306_AnimInfo_t_TransIndex2;
-    /* ROM 0x1007D5: AnimInfo_t / Blend */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[5];
-    } r307_AnimInfo_t_Blend;
-    /* ROM 0x1007E8: AnimInfo_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[4];
-    } r308_AnimInfo_t__eos;
-    /* ROM 0x100807: AnimInfo_t / AnimInfo */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[8];
-    } r309_AnimInfo_t_AnimInfo;
-    /* ROM 0x10082A: CGameObjectInstanceModes / CGameObjectInstanceModes */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[24];
-    } r310_CGameObjectInstanceModes_CGameObjectInstanceModes;
-    /* ROM 0x100850: CGameObjectInstanceModes / IDLE_MODE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r311_CGameObjectInstanceModes_IDLE_MODE;
-    /* ROM 0x100867: CGameObjectInstanceModes / TRANS_FADE_OUT_MODE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r312_CGameObjectInstanceModes_TRANS_FADE_OUT_MODE;
-    /* ROM 0x100888: CGameObjectInstanceModes / END_OF_MODES */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r313_CGameObjectInstanceModes_END_OF_MODES;
-    /* ROM 0x1008A2: CGameObjectInstanceModes / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[24];
-        unsigned char name_length;
-        char name[4];
-    } r314_CGameObjectInstanceModes__eos;
-    /* ROM 0x1008CF: ModelTypes / ModelTypes */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r315_ModelTypes_ModelTypes;
-    /* ROM 0x1008E7: ModelTypes / NORMAL_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[17];
-    } r316_ModelTypes_NORMAL_MODEL_TYPE;
-    /* ROM 0x100906: ModelTypes / EXTREME1_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r317_ModelTypes_EXTREME1_MODEL_TYPE;
-    /* ROM 0x100927: ModelTypes / EXTREME2_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r318_ModelTypes_EXTREME2_MODEL_TYPE;
-    /* ROM 0x100948: ModelTypes / EXTREME3_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r319_ModelTypes_EXTREME3_MODEL_TYPE;
-    /* ROM 0x100969: ModelTypes / EXTREME4_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r320_ModelTypes_EXTREME4_MODEL_TYPE;
-    /* ROM 0x10098A: ModelTypes / EXTREME5_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r321_ModelTypes_EXTREME5_MODEL_TYPE;
-    /* ROM 0x1009AB: ModelTypes / EXTREME6_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r322_ModelTypes_EXTREME6_MODEL_TYPE;
-    /* ROM 0x1009CC: ModelTypes / EXTREME7_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r323_ModelTypes_EXTREME7_MODEL_TYPE;
-    /* ROM 0x1009ED: ModelTypes / EXTREME8_MODEL_TYPE */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[19];
-    } r324_ModelTypes_EXTREME8_MODEL_TYPE;
-    /* ROM 0x100A0E: ModelTypes / MODEL_TYPES */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r325_ModelTypes_MODEL_TYPES;
-    /* ROM 0x100A27: ModelTypes / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[4];
-    } r326_ModelTypes__eos;
-    /* ROM 0x100A46: CROMObjectInstance_t / CROMObjectInstance_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[20];
-    } r327_CROMObjectInstance_t_CROMObjectInstance_t;
-    /* ROM 0x100A68: CROMObjectInstance_t / m_VisBits */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[9];
-    } r328_CROMObjectInstance_t_m_VisBits;
-    /* ROM 0x100A8C: CROMObjectInstance_t / m_vPos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[6];
-    } r329_CROMObjectInstance_t_m_vPos;
-    /* ROM 0x100AAD: CROMObjectInstance_t / m_vScale */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[8];
-    } r330_CROMObjectInstance_t_m_vScale;
-    /* ROM 0x100AD0: CROMObjectInstance_t / m_nObjType */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r331_CROMObjectInstance_t_m_nObjType;
-    /* ROM 0x100AE8: CROMObjectInstance_t / m_nTypeFlag */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r332_CROMObjectInstance_t_m_nTypeFlag;
-    /* ROM 0x100B01: CROMObjectInstance_t / m_nCurrentRegion */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r333_CROMObjectInstance_t_m_nCurrentRegion;
-    /* ROM 0x100B1F: CROMObjectInstance_t / m_nVariation */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r334_CROMObjectInstance_t_m_nVariation;
-    /* ROM 0x100B39: CROMObjectInstance_t / m_RotY */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[6];
-    } r335_CROMObjectInstance_t_m_RotY;
-    /* ROM 0x100B4D: CROMObjectInstance_t / m_bFlags */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r336_CROMObjectInstance_t_m_bFlags;
-    /* ROM 0x100B63: CROMObjectInstance_t / m_nPath */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[7];
-    } r337_CROMObjectInstance_t_m_nPath;
-    /* ROM 0x100B78: CROMObjectInstance_t / .eos */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[4];
-    } r338_CROMObjectInstance_t__eos;
-    /* ROM 0x100BA1: CROMObjectInstance_t / CROMObjectInstance */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[20];
-        unsigned char name_length;
-        char name[18];
-    } r339_CROMObjectInstance_t_CROMObjectInstance;
-    /* ROM 0x100BD8: CGameObjectInstance_t / CGameObjectInstance_t */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[21];
-    } r340_CGameObjectInstance_t_CGameObjectInstance_t;
-    /* ROM 0x100BFB: CGameObjectInstance_t / ah */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[18];
-        unsigned char name_length;
-        char name[2];
-    } r341_CGameObjectInstance_t_ah;
-    /* ROM 0x100C20: CGameObjectInstance_t / m_vScale */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[8];
-    } r342_CGameObjectInstance_t_m_vScale;
-    /* ROM 0x100C43: CGameObjectInstance_t / m_qGround */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[10];
-        unsigned char name_length;
-        char name[9];
-    } r343_CGameObjectInstance_t_m_qGround;
-    /* ROM 0x100C67: CGameObjectInstance_t / m_RotY */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[6];
-    } r344_CGameObjectInstance_t_m_RotY;
-    /* ROM 0x100C7B: CGameObjectInstance_t / m_CollisionYOffset */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[18];
-    } r345_CGameObjectInstance_t_m_CollisionYOffset;
-    /* ROM 0x100C9B: CGameObjectInstance_t / m_mfOrient */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[2];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[10];
-    } r346_CGameObjectInstance_t_m_mfOrient;
-    /* ROM 0x100CBE: CGameObjectInstance_t / m_pmtDrawMtxs */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[13];
-    } r347_CGameObjectInstance_t_m_pmtDrawMtxs;
-    /* ROM 0x100CE3: CGameObjectInstance_t / m_pmtLastFrameDrawMtxs */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[22];
-    } r348_CGameObjectInstance_t_m_pmtLastFrameDrawMtxs;
-    /* ROM 0x100D11: CGameObjectInstance_t / m_pmfShadow */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[2];
-        unsigned char tag_length;
-        unsigned char name_length;
-        char name[11];
-    } r349_CGameObjectInstance_t_m_pmfShadow;
-    /* ROM 0x100D35: CGameObjectInstance_t / m_pDList */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[8];
-    } r350_CGameObjectInstance_t_m_pDList;
-    /* ROM 0x100D55: CGameObjectInstance_t / m_rpObjectInfo */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[14];
-    } r351_CGameObjectInstance_t_m_rpObjectInfo;
-    /* ROM 0x100D71: CGameObjectInstance_t / m_rpAnims */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r352_CGameObjectInstance_t_m_rpAnims;
-    /* ROM 0x100D88: CGameObjectInstance_t / m_rpModelsIndex */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r353_CGameObjectInstance_t_m_rpModelsIndex;
-    /* ROM 0x100DA5: CGameObjectInstance_t / m_ObjectInfoSize */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r354_CGameObjectInstance_t_m_ObjectInfoSize;
-    /* ROM 0x100DC3: CGameObjectInstance_t / m_ModelsIndexSize */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[17];
-    } r355_CGameObjectInstance_t_m_ModelsIndexSize;
-    /* ROM 0x100DE2: CGameObjectInstance_t / m_nCurrentModel */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[15];
-    } r356_CGameObjectInstance_t_m_nCurrentModel;
-    /* ROM 0x100DFF: CGameObjectInstance_t / m_rpModel */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r357_CGameObjectInstance_t_m_rpModel;
-    /* ROM 0x100E16: CGameObjectInstance_t / m_ModelSize */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r358_CGameObjectInstance_t_m_ModelSize;
-    /* ROM 0x100E2F: CGameObjectInstance_t / m_nTypeFlag */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[11];
-    } r359_CGameObjectInstance_t_m_nTypeFlag;
-    /* ROM 0x100E48: CGameObjectInstance_t / m_nAnims */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[8];
-    } r360_CGameObjectInstance_t_m_nAnims;
-    /* ROM 0x100E5E: CGameObjectInstance_t / m_nModels */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r361_CGameObjectInstance_t_m_nModels;
-    /* ROM 0x100E75: CGameObjectInstance_t / m_Bounds */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[12];
-        unsigned char name_length;
-        char name[8];
-    } r362_CGameObjectInstance_t_m_Bounds;
-    /* ROM 0x100E9A: CGameObjectInstance_t / m_dwFlags */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[9];
-    } r363_CGameObjectInstance_t_m_dwFlags;
-    /* ROM 0x100EB1: CGameObjectInstance_t / m_asCurrent */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[11];
-    } r364_CGameObjectInstance_t_m_asCurrent;
-    /* ROM 0x100EE0: CGameObjectInstance_t / m_asBlend */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[19];
-        unsigned char name_length;
-        char name[9];
-    } r365_CGameObjectInstance_t_m_asBlend;
-    /* ROM 0x100F0D: CGameObjectInstance_t / m_BlendLength */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r366_CGameObjectInstance_t_m_BlendLength;
-    /* ROM 0x100F28: CGameObjectInstance_t / m_uBlender */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r367_CGameObjectInstance_t_m_uBlender;
-    /* ROM 0x100F40: CGameObjectInstance_t / m_BlendPos */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[10];
-    } r368_CGameObjectInstance_t_m_BlendPos;
-    /* ROM 0x100F58: CGameObjectInstance_t / m_BlendStart */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[12];
-    } r369_CGameObjectInstance_t_m_BlendStart;
-    /* ROM 0x100F72: CGameObjectInstance_t / m_BlendFinish */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r370_CGameObjectInstance_t_m_BlendFinish;
-    /* ROM 0x100F8D: CGameObjectInstance_t / m_ShadowAlpha */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[13];
-    } r371_CGameObjectInstance_t_m_ShadowAlpha;
-    /* ROM 0x100FA8: CGameObjectInstance_t / m_ActiveSwooshes */
-    struct {
-        Sn64DefinitionHeader header;
-        unsigned char name_length;
-        char name[16];
-    } r372_CGameObjectInstance_t_m_ActiveSwooshes;
-    /* ROM 0x100FC6: CGameObjectInstance_t / m_Lights */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        Sn64Le32 dimensions[1];
-        unsigned char tag_length;
-        char tag[7];
-        unsigned char name_length;
-        char name[8];
-    } r373_CGameObjectInstance_t_m_Lights;
-    /* ROM 0x100FEA: CGameObjectInstance_t / m_AI */
-    struct {
-        Sn64DefinitionHeader header;
-        Sn64Le16 dimension_count;
-        unsigned char tag_length;
-        char tag[5];
-        unsigned char name_length;
-    } r374_CGameObjectInstance_t_m_AI;
-} Sn64RuntimeTypeRecords;
-
-const Sn64RuntimeTypeRecords sn64_runtime_type_records = {
-    { { SN64_VALUE_TAIL24(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(1584U) }, 12, "CDefragger_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(560U) }, SN64_LE16(0), 10, "OSThread_s", 6, "Thread" },
-    { { SN64_LE32(560U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003F), SN64_LE32(1024U) }, SN64_LE16(1), { SN64_LE32(128U) }, 0, 5, "Stack" },
-    { { SN64_LE32(1584U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(1584U) }, SN64_LE16(0), 12, "CDefragger_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(1584U) }, SN64_LE16(0), 12, "CDefragger_t", 10, "CDefragger" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(12U) }, 14, "CTextureInfo_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0004), SN64_LE32(0U) }, 10, "m_nBitmaps" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0004), SN64_LE32(0U) }, 11, "m_nPalettes" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(0U) }, SN64_LE16(0), 19, "CROMTextureFormat_t", 9, "m_pFormat" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(12U) }, SN64_LE16(0), 14, "CTextureInfo_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 14, "CTextureInfo_t", 12, "CTextureInfo" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(8U) }, 16, "CTextureLoader_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0011), SN64_LE32(0U) }, 12, "rpTextureSet" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 14, "TextureSetSize" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(8U) }, SN64_LE16(0), 16, "CTextureLoader_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(8U) }, SN64_LE16(0), 16, "CTextureLoader_t", 14, "CTextureLoader" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 33, "PARTICLE_IMPACTS_GRASS_OR_WOODequ" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 30, "PARTICLE_IMPACTS_GRASS_OR_WOOD" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 33, "PARTICLE_IMPACTS_GRASS_OR_WOODequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 32, "PARTICLE_IMPACTS_WATERSURFACEequ" },
-    { { SN64_LE32(1U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 29, "PARTICLE_IMPACTS_WATERSURFACE" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 32, "PARTICLE_IMPACTS_WATERSURFACEequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 25, "PARTICLE_IMPACTS_STEELequ" },
-    { { SN64_LE32(2U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 22, "PARTICLE_IMPACTS_STEEL" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 25, "PARTICLE_IMPACTS_STEELequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 25, "PARTICLE_IMPACTS_STONEequ" },
-    { { SN64_LE32(3U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 22, "PARTICLE_IMPACTS_STONE" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 25, "PARTICLE_IMPACTS_STONEequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 25, "PARTICLE_IMPACTS_FLESHequ" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 22, "PARTICLE_IMPACTS_FLESH" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 25, "PARTICLE_IMPACTS_FLESHequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 30, "PARTICLE_IMPACTS_ALIENFLESHequ" },
-    { { SN64_LE32(5U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 27, "PARTICLE_IMPACTS_ALIENFLESH" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 30, "PARTICLE_IMPACTS_ALIENFLESHequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 30, "PARTICLE_IMPACTS_FLESHWATERequ" },
-    { { SN64_LE32(6U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 27, "PARTICLE_IMPACTS_FLESHWATER" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 30, "PARTICLE_IMPACTS_FLESHWATERequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 24, "PARTICLE_IMPACTS_LAVAequ" },
-    { { SN64_LE32(7U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 21, "PARTICLE_IMPACTS_LAVA" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 24, "PARTICLE_IMPACTS_LAVAequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 25, "PARTICLE_IMPACTS_SWAMPequ" },
-    { { SN64_LE32(8U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 22, "PARTICLE_IMPACTS_SWAMP" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 25, "PARTICLE_IMPACTS_SWAMPequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 30, "PARTICLE_IMPACTS_FORCEFIELDequ" },
-    { { SN64_LE32(9U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 27, "PARTICLE_IMPACTS_FORCEFIELD" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 30, "PARTICLE_IMPACTS_FORCEFIELDequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 27, "PARTICLE_IMPACTS_ENDLIFEequ" },
-    { { SN64_LE32(10U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 24, "PARTICLE_IMPACTS_ENDLIFE" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 27, "PARTICLE_IMPACTS_ENDLIFEequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 30, "PARTICLE_IMPACTS_EVERYFRAMEequ" },
-    { { SN64_LE32(11U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 27, "PARTICLE_IMPACTS_EVERYFRAME" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 30, "PARTICLE_IMPACTS_EVERYFRAMEequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 32, "PARTICLE_IMPACTS_ENDLIFEWATERequ" },
-    { { SN64_LE32(12U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 29, "PARTICLE_IMPACTS_ENDLIFEWATER" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 32, "PARTICLE_IMPACTS_ENDLIFEWATERequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 35, "PARTICLE_IMPACTS_EVERYFRAMEWATERequ" },
-    { { SN64_LE32(13U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 32, "PARTICLE_IMPACTS_EVERYFRAMEWATER" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 35, "PARTICLE_IMPACTS_EVERYFRAMEWATERequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 23, "PARTICLE_IMPACTS_AMTequ" },
-    { { SN64_LE32(14U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 20, "PARTICLE_IMPACTS_AMT" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 23, "PARTICLE_IMPACTS_AMTequ", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x000D), SN64_LE32(0U) }, 2, "SF" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(24U) }, 13, "CROMSection_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 13, "m_nTextureSet" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 12, "m_dwMatFlags" },
-    { { SN64_LE32(8U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 11, "m_nMaterial" },
-    { { SN64_LE32(10U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 10, "m_NodeType" },
-    { { SN64_LE32(11U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(1U) }, SN64_LE16(1), { SN64_LE32(1U) }, 0, 3, "pad" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(4U) }, SN64_LE16(1), { SN64_LE32(4U) }, 0, 7, "m_Color" },
-    { { SN64_LE32(16U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(4U) }, SN64_LE16(1), { SN64_LE32(4U) }, 0, 12, "m_BlackColor" },
-    { { SN64_LE32(20U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 7, "m_MultU" },
-    { { SN64_LE32(22U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 7, "m_MultV" },
-    { { SN64_LE32(24U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(24U) }, SN64_LE16(0), 13, "CROMSection_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(24U) }, SN64_LE16(0), 13, "CROMSection_t", 11, "CROMSection" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(28U) }, 14, "CGameSection_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 12, "m_dwMatFlags" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 11, "m_nMaterial" },
-    { { SN64_LE32(6U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 10, "m_NodeType" },
-    { { SN64_LE32(7U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 18, "m_LastTextureFrame" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(8U) }, SN64_LE16(0), 16, "CTextureLoader_t", 15, "m_TextureLoader" },
-    { { SN64_LE32(16U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(4U) }, SN64_LE16(1), { SN64_LE32(4U) }, 0, 7, "m_Color" },
-    { { SN64_LE32(20U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(4U) }, SN64_LE16(1), { SN64_LE32(4U) }, 0, 12, "m_BlackColor" },
-    { { SN64_LE32(24U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 7, "m_MultU" },
-    { { SN64_LE32(26U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 7, "m_MultV" },
-    { { SN64_LE32(28U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(28U) }, SN64_LE16(0), 14, "CGameSection_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(28U) }, SN64_LE16(0), 14, "CGameSection_t", 12, "CGameSection" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(6U) }, 19, "CROMTextureFormat_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 8, "m_Format" },
-    { { SN64_LE32(1U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 15, "m_PlaybackSpeed" },
-    { { SN64_LE32(2U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 12, "m_WidthShift" },
-    { { SN64_LE32(3U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 13, "m_HeightShift" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 8, "m_Effect" },
-    { { SN64_LE32(5U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 12, "m_EffectMode" },
-    { { SN64_LE32(6U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(6U) }, SN64_LE16(0), 19, "CROMTextureFormat_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(6U) }, SN64_LE16(0), 19, "CROMTextureFormat_t", 17, "CROMTextureFormat" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(20U) }, 11, "CROMLevel_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 14, "m_GridDistance" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 12, "m_BlackColor" },
-    { { SN64_LE32(7U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 12, "m_WhiteColor" },
-    { { SN64_LE32(10U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 18, "m_DirectionalLight" },
-    { { SN64_LE32(13U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 14, "m_AmbientLight" },
-    { { SN64_LE32(16U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 8, "m_bFlags" },
-    { { SN64_LE32(17U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0032), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 11, "m_Direction" },
-    { { SN64_LE32(20U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(20U) }, SN64_LE16(0), 11, "CROMLevel_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(20U) }, SN64_LE16(0), 11, "CROMLevel_t", 9, "CROMLevel" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(4U) }, 15, "CRandomSFPair_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 1, "v" },
-    { { SN64_LE32(2U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 1, "r" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 13, "CRandomSFPair" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(2U) }, 15, "CRandomS8Pair_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 1, "v" },
-    { { SN64_LE32(1U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 1, "r" },
-    { { SN64_LE32(2U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(2U) }, SN64_LE16(0), 15, "CRandomS8Pair_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(2U) }, SN64_LE16(0), 15, "CRandomS8Pair_t", 13, "CRandomS8Pair" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(196U) }, 20, "CROMParticleImpact_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0038), SN64_LE32(112U) }, SN64_LE16(1), { SN64_LE32(14U) }, 13, "s_CEventValue", 18, "m_ImpactEventValue" },
-    { { SN64_LE32(112U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003D), SN64_LE32(28U) }, SN64_LE16(1), { SN64_LE32(14U) }, 0, 20, "m_ImpactParticleType" },
-    { { SN64_LE32(140U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003D), SN64_LE32(28U) }, SN64_LE16(1), { SN64_LE32(14U) }, 0, 17, "m_ImpactEventType" },
-    { { SN64_LE32(168U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003D), SN64_LE32(28U) }, SN64_LE16(1), { SN64_LE32(14U) }, 0, 17, "m_ImpactSoundType" },
-    { { SN64_LE32(196U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(196U) }, SN64_LE16(0), 20, "CROMParticleImpact_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(196U) }, SN64_LE16(0), 20, "CROMParticleImpact_t", 18, "CROMParticleImpact" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(12U) }, 20, "CROMParticleOffset_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_XPosOffset" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_YPosOffset" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_ZPosOffset" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(12U) }, SN64_LE16(0), 20, "CROMParticleOffset_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 20, "CROMParticleOffset_t", 18, "CROMParticleOffset" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(24U) }, 17, "CROMParticleRot_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 6, "m_XRot" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 9, "m_XRotInc" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 6, "m_YRot" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 9, "m_YRotInc" },
-    { { SN64_LE32(16U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 6, "m_ZRot" },
-    { { SN64_LE32(20U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 9, "m_ZRotInc" },
-    { { SN64_LE32(24U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(24U) }, SN64_LE16(0), 17, "CROMParticleRot_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(24U) }, SN64_LE16(0), 17, "CROMParticleRot_t", 15, "CROMParticleRot" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(36U) }, 19, "CROMParticleScale_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 8, "m_XScale" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 11, "m_XScaleInc" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 8, "m_YScale" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 11, "m_YScaleInc" },
-    { { SN64_LE32(16U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 8, "m_ZScale" },
-    { { SN64_LE32(20U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 11, "m_ZScaleInc" },
-    { { SN64_LE32(24U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 13, "m_ShadowScale" },
-    { { SN64_LE32(28U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 11, "m_NearScale" },
-    { { SN64_LE32(32U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 10, "m_FarScale" },
-    { { SN64_LE32(36U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(36U) }, SN64_LE16(0), 19, "CROMParticleScale_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(36U) }, SN64_LE16(0), 19, "CROMParticleScale_t", 17, "CROMParticleScale" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(12U) }, 17, "CROMParticleDir_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_XDirection" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_YDirection" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_ZDirection" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(12U) }, SN64_LE16(0), 17, "CROMParticleDir_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 17, "CROMParticleDir_t", 15, "CROMParticleDir" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(26U) }, 22, "CROMParticleSineWave_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_XAmplitude" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_XFrequency" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 8, "m_XPhase" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_YAmplitude" },
-    { { SN64_LE32(16U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 12, "m_YFrequency" },
-    { { SN64_LE32(20U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 8, "m_YPhase" },
-    { { SN64_LE32(24U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 17, "m_nSineWaveFadeIn" },
-    { { SN64_LE32(26U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(26U) }, SN64_LE16(0), 22, "CROMParticleSineWave_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(26U) }, SN64_LE16(0), 22, "CROMParticleSineWave_t", 20, "CROMParticleSineWave" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(22U) }, 21, "CROMParticlePhysics_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 9, "m_Gravity" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CRandomSFPair_t", 10, "m_Velocity" },
-    { { SN64_LE32(8U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 14, "m_BounceEnergy" },
-    { { SN64_LE32(10U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 16, "m_GroundFriction" },
-    { { SN64_LE32(12U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 13, "m_AirFriction" },
-    { { SN64_LE32(14U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 15, "m_WaterFriction" },
-    { { SN64_LE32(16U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 14, "m_Acceleration" },
-    { { SN64_LE32(18U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 16, "m_MinMaxVelocity" },
-    { { SN64_LE32(20U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 12, "m_CollRadius" },
-    { { SN64_LE32(22U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(22U) }, SN64_LE16(0), 21, "CROMParticlePhysics_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(22U) }, SN64_LE16(0), 21, "CROMParticlePhysics_t", 19, "CROMParticlePhysics" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(15U) }, 19, "CROMParticleColor_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 12, "m_WhiteColor" },
-    { { SN64_LE32(3U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 12, "m_BlackColor" },
-    { { SN64_LE32(6U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 13, "m_WhiteColor2" },
-    { { SN64_LE32(9U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(3U) }, SN64_LE16(1), { SN64_LE32(3U) }, 0, 13, "m_BlackColor2" },
-    { { SN64_LE32(12U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 14, "m_RandomizeHue" },
-    { { SN64_LE32(13U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 21, "m_RandomizeSaturation" },
-    { { SN64_LE32(14U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 21, "m_RandomizeBrightness" },
-    { { SN64_LE32(15U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(15U) }, SN64_LE16(0), 19, "CROMParticleColor_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(15U) }, SN64_LE16(0), 19, "CROMParticleColor_t", 17, "CROMParticleColor" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(16U) }, 21, "CROMParticleGeneral_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 9, "m_nFrames" },
-    { { SN64_LE32(2U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 12, "m_nFramesRnd" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 13, "m_Probability" },
-    { { SN64_LE32(5U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 12, "m_Visibility" },
-    { { SN64_LE32(6U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 12, "m_nParticles" },
-    { { SN64_LE32(7U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 15, "m_nParticlesRnd" },
-    { { SN64_LE32(8U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 11, "m_nPriority" },
-    { { SN64_LE32(9U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 9, "m_nFadeIn" },
-    { { SN64_LE32(10U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 10, "m_nFadeOut" },
-    { { SN64_LE32(11U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 5, "m_FPS" },
-    { { SN64_LE32(12U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 13, "m_nInBetweens" },
-    { { SN64_LE32(13U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 11, "m_nMaxDelay" },
-    { { SN64_LE32(14U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 11, "m_Alignment" },
-    { { SN64_LE32(15U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 7, "m_Alert" },
-    { { SN64_LE32(16U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(16U) }, SN64_LE16(0), 21, "CROMParticleGeneral_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(16U) }, SN64_LE16(0), 21, "CROMParticleGeneral_t", 19, "CROMParticleGeneral" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(60U) }, 20, "CROMParticleEffect_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 9, "m_dwFlags" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 13, "m_nTextureSet" },
-    { { SN64_LE32(6U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 9, "m_nSwoosh" },
-    { { SN64_LE32(7U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 15, "m_nDynamicLight" },
-    { { SN64_LE32(8U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 10, "m_Playback" },
-    { { SN64_LE32(9U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 18, "m_InstanceBehavior" },
-    { { SN64_LE32(10U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 14, "m_WallBehavior" },
-    { { SN64_LE32(11U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 16, "m_GroundBehavior" },
-    { { SN64_LE32(12U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 11, "m_SoundType" },
-    { { SN64_LE32(14U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 24, "m_MaxAngleChangePerFrame" },
-    { { SN64_LE32(16U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 26, "m_ProximityDetectionRadius" },
-    { { SN64_LE32(18U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 9, "m_bFlags2" },
-    { { SN64_LE32(19U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(1U) }, SN64_LE16(1), { SN64_LE32(1U) }, 0, 7, "padding" },
-    { { SN64_LE32(20U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0011), SN64_LE32(0U) }, 10, "m_rpObject" },
-    { { SN64_LE32(24U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(196U) }, SN64_LE16(0), 20, "CROMParticleImpact_t", 9, "m_pImpact" },
-    { { SN64_LE32(28U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(12U) }, SN64_LE16(0), 20, "CROMParticleOffset_t", 9, "m_pOffset" },
-    { { SN64_LE32(32U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(24U) }, SN64_LE16(0), 17, "CROMParticleRot_t", 6, "m_pRot" },
-    { { SN64_LE32(36U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(36U) }, SN64_LE16(0), 19, "CROMParticleScale_t", 8, "m_pScale" },
-    { { SN64_LE32(40U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(12U) }, SN64_LE16(0), 17, "CROMParticleDir_t", 6, "m_pDir" },
-    { { SN64_LE32(44U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(26U) }, SN64_LE16(0), 22, "CROMParticleSineWave_t", 11, "m_pSineWave" },
-    { { SN64_LE32(48U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(22U) }, SN64_LE16(0), 21, "CROMParticlePhysics_t", 10, "m_pPhysics" },
-    { { SN64_LE32(52U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(15U) }, SN64_LE16(0), 19, "CROMParticleColor_t", 8, "m_pColor" },
-    { { SN64_LE32(56U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(16U) }, SN64_LE16(0), 21, "CROMParticleGeneral_t", 10, "m_pGeneral" },
-    { { SN64_LE32(60U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(60U) }, SN64_LE16(0), 20, "CROMParticleEffect_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(60U) }, SN64_LE16(0), 20, "CROMParticleEffect_t", 18, "CROMParticleEffect" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(20U) }, 15, "CROMWarpPoint_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 10, "CVector3_t", 6, "m_vPos" },
-    { { SN64_LE32(12U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 6, "m_RotY" },
-    { { SN64_LE32(16U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 8, "m_nLevel" },
-    { { SN64_LE32(18U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 9, "m_nRegion" },
-    { { SN64_LE32(20U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(20U) }, SN64_LE16(0), 15, "CROMWarpPoint_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(20U) }, SN64_LE16(0), 15, "CROMWarpPoint_t", 13, "CROMWarpPoint" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(112U) }, 10, "CROMNode_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0038), SN64_LE32(96U) }, SN64_LE16(1), { SN64_LE32(8U) }, 10, "CVector3_t", 14, "vBoundsCorners" },
-    { { SN64_LE32(96U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 11, "m_MaxBounds" },
-    { { SN64_LE32(100U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 13, "m_ParentIndex" },
-    { { SN64_LE32(101U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 8, "m_Symbol" },
-    { { SN64_LE32(102U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 14, "m_MaterialType" },
-    { { SN64_LE32(103U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x003C), SN64_LE32(1U) }, SN64_LE16(1), { SN64_LE32(1U) }, 0, 3, "pad" },
-    { { SN64_LE32(104U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 14, "m_DamageScaler" },
-    { { SN64_LE32(108U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 14, "m_dwModelFlags" },
-    { { SN64_LE32(112U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(112U) }, SN64_LE16(0), 10, "CROMNode_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(112U) }, SN64_LE16(0), 10, "CROMNode_t", 8, "CROMNode" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(32U) }, 16, "CROMObjectInfo_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(24U) }, SN64_LE16(0), 12, "CROMBounds_t", 8, "m_Bounds" },
-    { { SN64_LE32(24U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 20, "m_HeadTrackStartNode" },
-    { { SN64_LE32(25U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 18, "m_HeadTrackEndNode" },
-    { { SN64_LE32(26U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 17, "m_HeadTrackFactor" },
-    { { SN64_LE32(27U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 4, "pad0" },
-    { { SN64_LE32(28U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 12, "m_nVariation" },
-    { { SN64_LE32(30U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 11, "m_UnitScale" },
-    { { SN64_LE32(32U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(32U) }, SN64_LE16(0), 16, "CROMObjectInfo_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(32U) }, SN64_LE16(0), 16, "CROMObjectInfo_t", 14, "CROMObjectInfo" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(8U) }, 7, "CNode_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(8U) }, SN64_LE16(0), 7, "CNode_t", 7, "m_pPrev" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(8U) }, SN64_LE16(0), 7, "CNode_t", 7, "m_pNext" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(8U) }, SN64_LE16(0), 7, "CNode_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(8U) }, SN64_LE16(0), 7, "CNode_t", 5, "CNode" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(12U) }, 11, "CNodeList_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(8U) }, SN64_LE16(0), 7, "CNode_t", 7, "m_pHead" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(8U) }, SN64_LE16(0), 7, "CNode_t", 7, "m_pTail" },
-    { { SN64_LE32(8U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0005), SN64_LE32(0U) }, 8, "m_Length" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(12U) }, SN64_LE16(0), 11, "CNodeList_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 11, "CNodeList_t", 9, "CNodeList" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(24U) }, 14, "CDynamicList_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 11, "CNodeList_t", 10, "m_FreeList" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 11, "CNodeList_t", 12, "m_ActiveList" },
-    { { SN64_LE32(24U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(24U) }, SN64_LE16(0), 14, "CDynamicList_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(24U) }, SN64_LE16(0), 14, "CDynamicList_t", 12, "CDynamicList" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(4U) }, 12, "CSelection_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 8, "m_Number" },
-    { { SN64_LE32(2U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 8, "m_Weight" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 12, "CSelection_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 12, "CSelection_t", 10, "CSelection" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(102U) }, 16, "CSelectionList_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 9, "m_Entries" },
-    { { SN64_LE32(2U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0038), SN64_LE32(100U) }, SN64_LE16(1), { SN64_LE32(25U) }, 12, "CSelection_t", 6, "m_List" },
-    { { SN64_LE32(102U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(102U) }, SN64_LE16(0), 16, "CSelectionList_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(102U) }, SN64_LE16(0), 16, "CSelectionList_t", 14, "CSelectionList" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(20U) }, 19, "CGameAnimateState_t" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 6, "cFrame" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 5, "nAnim" },
-    { { SN64_LE32(6U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 12, "nDesiredAnim" },
-    { { SN64_LE32(8U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 7, "nFrames" },
-    { { SN64_LE32(10U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 14, "CycleCompleted" },
-    { { SN64_LE32(11U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 6, "Active" },
-    { { SN64_LE32(12U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 6, "LoopTo" },
-    { { SN64_LE32(16U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(40U) }, SN64_LE16(0), 11, "CMemEntry_t", 11, "pmeAnimData" },
-    { { SN64_LE32(20U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(20U) }, SN64_LE16(0), 19, "CGameAnimateState_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(20U) }, SN64_LE16(0), 19, "CGameAnimateState_t", 17, "CGameAnimateState" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(20U) }, SN64_LE16(0), 19, "CGameAnimateState_t", 4, "CGAS" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(20U) }, SN64_LE16(0), 24, "CROMInitialOrientation_t", 9, "CRIOrient" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 15, "CROMNodeIndex_t", 8, "CRNIndex" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(36U) }, 10, "AnimInfo_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(4U) }, SN64_LE16(0), 15, "CROMNodeIndex_t", 15, "NodeAnimIndices" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(20U) }, SN64_LE16(0), 24, "CROMInitialOrientation_t", 14, "InitialOrients" },
-    { { SN64_LE32(8U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(8U) }, SN64_LE16(0), 6, "s_ISet", 11, "isTransSets" },
-    { { SN64_LE32(12U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0018), SN64_LE32(8U) }, SN64_LE16(0), 6, "s_ISet", 9, "isRotSets" },
-    { { SN64_LE32(16U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0004), SN64_LE32(0U) }, 9, "RotIndex1" },
-    { { SN64_LE32(20U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0004), SN64_LE32(0U) }, 9, "RotIndex2" },
-    { { SN64_LE32(24U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0004), SN64_LE32(0U) }, 11, "TransIndex1" },
-    { { SN64_LE32(28U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0004), SN64_LE32(0U) }, 11, "TransIndex2" },
-    { { SN64_LE32(32U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 5, "Blend" },
-    { { SN64_LE32(36U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(36U) }, SN64_LE16(0), 10, "AnimInfo_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(36U) }, SN64_LE16(0), 10, "AnimInfo_t", 8, "AnimInfo" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 24, "CGameObjectInstanceModes" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 9, "IDLE_MODE" },
-    { { SN64_LE32(1U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "TRANS_FADE_OUT_MODE" },
-    { { SN64_LE32(2U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 12, "END_OF_MODES" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 24, "CGameObjectInstanceModes", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_TAG), SN64_LE16(0x000A), SN64_LE32(4U) }, 10, "ModelTypes" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 17, "NORMAL_MODEL_TYPE" },
-    { { SN64_LE32(1U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "EXTREME1_MODEL_TYPE" },
-    { { SN64_LE32(2U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "EXTREME2_MODEL_TYPE" },
-    { { SN64_LE32(3U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "EXTREME3_MODEL_TYPE" },
-    { { SN64_LE32(4U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "EXTREME4_MODEL_TYPE" },
-    { { SN64_LE32(5U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "EXTREME5_MODEL_TYPE" },
-    { { SN64_LE32(6U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "EXTREME6_MODEL_TYPE" },
-    { { SN64_LE32(7U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "EXTREME7_MODEL_TYPE" },
-    { { SN64_LE32(8U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 19, "EXTREME8_MODEL_TYPE" },
-    { { SN64_LE32(9U), SN64_DEF, SN64_LE16(SN64_ENUM_MEMBER), SN64_LE16(0x000B), SN64_LE32(0U) }, 11, "MODEL_TYPES" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(4U) }, SN64_LE16(0), 10, "ModelTypes", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(40U) }, 20, "CROMObjectInstance_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(4U) }, SN64_LE16(0), 10, "CVisBits_t", 9, "m_VisBits" },
-    { { SN64_LE32(4U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 10, "CVector3_t", 6, "m_vPos" },
-    { { SN64_LE32(16U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 10, "CVector3_t", 8, "m_vScale" },
-    { { SN64_LE32(28U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 10, "m_nObjType" },
-    { { SN64_LE32(30U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 11, "m_nTypeFlag" },
-    { { SN64_LE32(32U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 16, "m_nCurrentRegion" },
-    { { SN64_LE32(34U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 12, "m_nVariation" },
-    { { SN64_LE32(36U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 6, "m_RotY" },
-    { { SN64_LE32(38U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 8, "m_bFlags" },
-    { { SN64_LE32(39U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 7, "m_nPath" },
-    { { SN64_LE32(40U), SN64_DEF2, SN64_LE16(SN64_END_STRUCT), SN64_LE16(0x0000), SN64_LE32(40U) }, SN64_LE16(0), 20, "CROMObjectInstance_t", 4, ".eos" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_TYPEDEF), SN64_LE16(0x0008), SN64_LE32(40U) }, SN64_LE16(0), 20, "CROMObjectInstance_t", 18, "CROMObjectInstance" },
-    { { SN64_LE32(0U), SN64_DEF, SN64_LE16(SN64_STRUCT_TAG), SN64_LE16(0x0008), SN64_LE32(744U) }, 21, "CGameObjectInstance_t" },
-    { { SN64_LE32(0U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(80U) }, SN64_LE16(0), 18, "CAnimInstanceHdr_t", 2, "ah" },
-    { { SN64_LE32(80U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(12U) }, SN64_LE16(0), 10, "CVector3_t", 8, "m_vScale" },
-    { { SN64_LE32(92U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(16U) }, SN64_LE16(0), 10, "CQuatern_t", 9, "m_qGround" },
-    { { SN64_LE32(108U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 6, "m_RotY" },
-    { { SN64_LE32(112U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 18, "m_CollisionYOffset" },
-    { { SN64_LE32(116U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x00F6), SN64_LE32(64U) }, SN64_LE16(2), { SN64_LE32(4U), SN64_LE32(4U) }, 0, 10, "m_mfOrient" },
-    { { SN64_LE32(180U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0019), SN64_LE32(64U) }, SN64_LE16(0), 7, ".26fake", 13, "m_pmtDrawMtxs" },
-    { { SN64_LE32(184U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0019), SN64_LE32(64U) }, SN64_LE16(0), 7, ".26fake", 22, "m_pmtLastFrameDrawMtxs" },
-    { { SN64_LE32(188U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x03D6), SN64_LE32(4U) }, SN64_LE16(2), { SN64_LE32(4U), SN64_LE32(4U) }, 0, 11, "m_pmfShadow" },
-    { { SN64_LE32(192U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0019), SN64_LE32(8U) }, SN64_LE16(0), 7, ".63fake", 8, "m_pDList" },
-    { { SN64_LE32(196U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0011), SN64_LE32(0U) }, 14, "m_rpObjectInfo" },
-    { { SN64_LE32(200U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0011), SN64_LE32(0U) }, 9, "m_rpAnims" },
-    { { SN64_LE32(204U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0011), SN64_LE32(0U) }, 15, "m_rpModelsIndex" },
-    { { SN64_LE32(208U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 16, "m_ObjectInfoSize" },
-    { { SN64_LE32(212U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 17, "m_ModelsIndexSize" },
-    { { SN64_LE32(216U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0005), SN64_LE32(0U) }, 15, "m_nCurrentModel" },
-    { { SN64_LE32(220U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0011), SN64_LE32(0U) }, 9, "m_rpModel" },
-    { { SN64_LE32(224U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 11, "m_ModelSize" },
-    { { SN64_LE32(228U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000D), SN64_LE32(0U) }, 11, "m_nTypeFlag" },
-    { { SN64_LE32(230U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 8, "m_nAnims" },
-    { { SN64_LE32(231U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0002), SN64_LE32(0U) }, 9, "m_nModels" },
-    { { SN64_LE32(232U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(24U) }, SN64_LE16(0), 12, "CROMBounds_t", 8, "m_Bounds" },
-    { { SN64_LE32(256U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000F), SN64_LE32(0U) }, 9, "m_dwFlags" },
-    { { SN64_LE32(260U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(20U) }, SN64_LE16(0), 19, "CGameAnimateState_t", 11, "m_asCurrent" },
-    { { SN64_LE32(280U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(20U) }, SN64_LE16(0), 19, "CGameAnimateState_t", 9, "m_asBlend" },
-    { { SN64_LE32(300U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0003), SN64_LE32(0U) }, 13, "m_BlendLength" },
-    { { SN64_LE32(304U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 10, "m_uBlender" },
-    { { SN64_LE32(308U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0006), SN64_LE32(0U) }, 10, "m_BlendPos" },
-    { { SN64_LE32(312U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 12, "m_BlendStart" },
-    { { SN64_LE32(313U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 13, "m_BlendFinish" },
-    { { SN64_LE32(314U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 13, "m_ShadowAlpha" },
-    { { SN64_LE32(315U), SN64_DEF, SN64_LE16(SN64_MEMBER), SN64_LE16(0x000C), SN64_LE32(0U) }, 16, "m_ActiveSwooshes" },
-    { { SN64_LE32(320U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0038), SN64_LE32(48U) }, SN64_LE16(1), { SN64_LE32(2U) }, 7, ".36fake", 8, "m_Lights" },
-    { { SN64_LE32(368U), SN64_DEF2, SN64_LE16(SN64_MEMBER), SN64_LE16(0x0008), SN64_LE32(368U) }, SN64_LE16(0), 5, "CAI_t", 4 },
+unsigned int D_auto_src_sn64_runtime_type_records[3198] = {
+    0x00000094, 0x0A000800, 0x30060000, 0x0C434465, 0x66726167, 0x6765725F, 0x74000000, 0x00960800,
+    0x08003002, 0x00000000, 0x0A4F5354, 0x68726561, 0x645F7306, 0x54687265, 0x61643002, 0x00009608,
+    0x003F0000, 0x04000001, 0x00800000, 0x00000553, 0x7461636B, 0x30060000, 0x96660000, 0x00300600,
+    0x0000000C, 0x43446566, 0x72616767, 0x65725F74, 0x042E656F, 0x73000000, 0x00960D00, 0x08003006,
+    0x00000000, 0x0C434465, 0x66726167, 0x6765725F, 0x740A4344, 0x65667261, 0x67676572, 0x00000000,
+    0x940A0008, 0x000C0000, 0x000E4354, 0x65787475, 0x7265496E, 0x666F5F74, 0x00000000, 0x94080004,
+    0x00000000, 0x000A6D5F, 0x6E426974, 0x6D617073, 0x04000000, 0x94080004, 0x00000000, 0x000B6D5F,
+    0x6E50616C, 0x65747465, 0x73080000, 0x00960800, 0x18000000, 0x00000000, 0x1343524F, 0x4D546578,
+    0x74757265, 0x466F726D, 0x61745F74, 0x096D5F70, 0x466F726D, 0x61740C00, 0x00009666, 0x0000000C,
+    0x00000000, 0x000E4354, 0x65787475, 0x7265496E, 0x666F5F74, 0x042E656F, 0x73000000, 0x00960D00,
+    0x08000C00, 0x00000000, 0x0E435465, 0x78747572, 0x65496E66, 0x6F5F740C, 0x43546578, 0x74757265,
+    0x496E666F, 0x00000000, 0x940A0008, 0x00080000, 0x00104354, 0x65787475, 0x72654C6F, 0x61646572,
+    0x5F740000, 0x00009408, 0x00110000, 0x0000000C, 0x72705465, 0x78747572, 0x65536574, 0x04000000,
+    0x9408000F, 0x00000000, 0x000E5465, 0x78747572, 0x65536574, 0x53697A65, 0x08000000, 0x96660000,
+    0x00080000, 0x00000010, 0x43546578, 0x74757265, 0x4C6F6164, 0x65725F74, 0x042E656F, 0x73000000,
+    0x00960D00, 0x08000800, 0x00000000, 0x10435465, 0x78747572, 0x654C6F61, 0x6465725F, 0x740E4354,
+    0x65787475, 0x72654C6F, 0x61646572, 0x00000000, 0x940F000A, 0x00040000, 0x00215041, 0x52544943,
+    0x4C455F49, 0x4D504143, 0x54535F47, 0x52415353, 0x5F4F525F, 0x574F4F44, 0x65717500, 0x00000094,
+    0x10000B00, 0x00000000, 0x1E504152, 0x5449434C, 0x455F494D, 0x50414354, 0x535F4752, 0x4153535F,
+    0x4F525F57, 0x4F4F4404, 0x00000096, 0x66000000, 0x04000000, 0x00002150, 0x41525449, 0x434C455F,
+    0x494D5041, 0x4354535F, 0x47524153, 0x535F4F52, 0x5F574F4F, 0x44657175, 0x042E656F, 0x73000000,
+    0x00940F00, 0x0A000400, 0x00002050, 0x41525449, 0x434C455F, 0x494D5041, 0x4354535F, 0x57415445,
+    0x52535552, 0x46414345, 0x65717501, 0x00000094, 0x10000B00, 0x00000000, 0x1D504152, 0x5449434C,
+    0x455F494D, 0x50414354, 0x535F5741, 0x54455253, 0x55524641, 0x43450400, 0x00009666, 0x00000004,
+    0x00000000, 0x00205041, 0x52544943, 0x4C455F49, 0x4D504143, 0x54535F57, 0x41544552, 0x53555246,
+    0x41434565, 0x7175042E, 0x656F7300, 0x00000094, 0x0F000A00, 0x04000000, 0x19504152, 0x5449434C,
+    0x455F494D, 0x50414354, 0x535F5354, 0x45454C65, 0x71750200, 0x00009410, 0x000B0000, 0x00000016,
+    0x50415254, 0x49434C45, 0x5F494D50, 0x41435453, 0x5F535445, 0x454C0400, 0x00009666, 0x00000004,
+    0x00000000, 0x00195041, 0x52544943, 0x4C455F49, 0x4D504143, 0x54535F53, 0x5445454C, 0x65717504,
+    0x2E656F73, 0x00000000, 0x940F000A, 0x00040000, 0x00195041, 0x52544943, 0x4C455F49, 0x4D504143,
+    0x54535F53, 0x544F4E45, 0x65717503, 0x00000094, 0x10000B00, 0x00000000, 0x16504152, 0x5449434C,
+    0x455F494D, 0x50414354, 0x535F5354, 0x4F4E4504, 0x00000096, 0x66000000, 0x04000000, 0x00001950,
+    0x41525449, 0x434C455F, 0x494D5041, 0x4354535F, 0x53544F4E, 0x45657175, 0x042E656F, 0x73000000,
+    0x00940F00, 0x0A000400, 0x00001950, 0x41525449, 0x434C455F, 0x494D5041, 0x4354535F, 0x464C4553,
+    0x48657175, 0x04000000, 0x9410000B, 0x00000000, 0x00165041, 0x52544943, 0x4C455F49, 0x4D504143,
+    0x54535F46, 0x4C455348, 0x04000000, 0x96660000, 0x00040000, 0x00000019, 0x50415254, 0x49434C45,
+    0x5F494D50, 0x41435453, 0x5F464C45, 0x53486571, 0x75042E65, 0x6F730000, 0x0000940F, 0x000A0004,
+    0x0000001E, 0x50415254, 0x49434C45, 0x5F494D50, 0x41435453, 0x5F414C49, 0x454E464C, 0x45534865,
+    0x71750500, 0x00009410, 0x000B0000, 0x0000001B, 0x50415254, 0x49434C45, 0x5F494D50, 0x41435453,
+    0x5F414C49, 0x454E464C, 0x45534804, 0x00000096, 0x66000000, 0x04000000, 0x00001E50, 0x41525449,
+    0x434C455F, 0x494D5041, 0x4354535F, 0x414C4945, 0x4E464C45, 0x53486571, 0x75042E65, 0x6F730000,
+    0x0000940F, 0x000A0004, 0x0000001E, 0x50415254, 0x49434C45, 0x5F494D50, 0x41435453, 0x5F464C45,
+    0x53485741, 0x54455265, 0x71750600, 0x00009410, 0x000B0000, 0x0000001B, 0x50415254, 0x49434C45,
+    0x5F494D50, 0x41435453, 0x5F464C45, 0x53485741, 0x54455204, 0x00000096, 0x66000000, 0x04000000,
+    0x00001E50, 0x41525449, 0x434C455F, 0x494D5041, 0x4354535F, 0x464C4553, 0x48574154, 0x45526571,
+    0x75042E65, 0x6F730000, 0x0000940F, 0x000A0004, 0x00000018, 0x50415254, 0x49434C45, 0x5F494D50,
+    0x41435453, 0x5F4C4156, 0x41657175, 0x07000000, 0x9410000B, 0x00000000, 0x00155041, 0x52544943,
+    0x4C455F49, 0x4D504143, 0x54535F4C, 0x41564104, 0x00000096, 0x66000000, 0x04000000, 0x00001850,
+    0x41525449, 0x434C455F, 0x494D5041, 0x4354535F, 0x4C415641, 0x65717504, 0x2E656F73, 0x00000000,
+    0x940F000A, 0x00040000, 0x00195041, 0x52544943, 0x4C455F49, 0x4D504143, 0x54535F53, 0x57414D50,
+    0x65717508, 0x00000094, 0x10000B00, 0x00000000, 0x16504152, 0x5449434C, 0x455F494D, 0x50414354,
+    0x535F5357, 0x414D5004, 0x00000096, 0x66000000, 0x04000000, 0x00001950, 0x41525449, 0x434C455F,
+    0x494D5041, 0x4354535F, 0x5357414D, 0x50657175, 0x042E656F, 0x73000000, 0x00940F00, 0x0A000400,
+    0x00001E50, 0x41525449, 0x434C455F, 0x494D5041, 0x4354535F, 0x464F5243, 0x45464945, 0x4C446571,
+    0x75090000, 0x00941000, 0x0B000000, 0x00001B50, 0x41525449, 0x434C455F, 0x494D5041, 0x4354535F,
+    0x464F5243, 0x45464945, 0x4C440400, 0x00009666, 0x00000004, 0x00000000, 0x001E5041, 0x52544943,
+    0x4C455F49, 0x4D504143, 0x54535F46, 0x4F524345, 0x4649454C, 0x44657175, 0x042E656F, 0x73000000,
+    0x00940F00, 0x0A000400, 0x00001B50, 0x41525449, 0x434C455F, 0x494D5041, 0x4354535F, 0x454E444C,
+    0x49464565, 0x71750A00, 0x00009410, 0x000B0000, 0x00000018, 0x50415254, 0x49434C45, 0x5F494D50,
+    0x41435453, 0x5F454E44, 0x4C494645, 0x04000000, 0x96660000, 0x00040000, 0x0000001B, 0x50415254,
+    0x49434C45, 0x5F494D50, 0x41435453, 0x5F454E44, 0x4C494645, 0x65717504, 0x2E656F73, 0x00000000,
+    0x940F000A, 0x00040000, 0x001E5041, 0x52544943, 0x4C455F49, 0x4D504143, 0x54535F45, 0x56455259,
+    0x4652414D, 0x45657175, 0x0B000000, 0x9410000B, 0x00000000, 0x001B5041, 0x52544943, 0x4C455F49,
+    0x4D504143, 0x54535F45, 0x56455259, 0x4652414D, 0x45040000, 0x00966600, 0x00000400, 0x00000000,
+    0x1E504152, 0x5449434C, 0x455F494D, 0x50414354, 0x535F4556, 0x45525946, 0x52414D45, 0x65717504,
+    0x2E656F73, 0x00000000, 0x940F000A, 0x00040000, 0x00205041, 0x52544943, 0x4C455F49, 0x4D504143,
+    0x54535F45, 0x4E444C49, 0x46455741, 0x54455265, 0x71750C00, 0x00009410, 0x000B0000, 0x0000001D,
+    0x50415254, 0x49434C45, 0x5F494D50, 0x41435453, 0x5F454E44, 0x4C494645, 0x57415445, 0x52040000,
+    0x00966600, 0x00000400, 0x00000000, 0x20504152, 0x5449434C, 0x455F494D, 0x50414354, 0x535F454E,
+    0x444C4946, 0x45574154, 0x45526571, 0x75042E65, 0x6F730000, 0x0000940F, 0x000A0004, 0x00000023,
+    0x50415254, 0x49434C45, 0x5F494D50, 0x41435453, 0x5F455645, 0x52594652, 0x414D4557, 0x41544552,
+    0x6571750D, 0x00000094, 0x10000B00, 0x00000000, 0x20504152, 0x5449434C, 0x455F494D, 0x50414354,
+    0x535F4556, 0x45525946, 0x52414D45, 0x57415445, 0x52040000, 0x00966600, 0x00000400, 0x00000000,
+    0x23504152, 0x5449434C, 0x455F494D, 0x50414354, 0x535F4556, 0x45525946, 0x52414D45, 0x57415445,
+    0x52657175, 0x042E656F, 0x73000000, 0x00940F00, 0x0A000400, 0x00001750, 0x41525449, 0x434C455F,
+    0x494D5041, 0x4354535F, 0x414D5465, 0x71750E00, 0x00009410, 0x000B0000, 0x00000014, 0x50415254,
+    0x49434C45, 0x5F494D50, 0x41435453, 0x5F414D54, 0x04000000, 0x96660000, 0x00040000, 0x00000017,
+    0x50415254, 0x49434C45, 0x5F494D50, 0x41435453, 0x5F414D54, 0x65717504, 0x2E656F73, 0x00000000,
+    0x940D000D, 0x00000000, 0x00025346, 0x00000000, 0x940A0008, 0x00180000, 0x000D4352, 0x4F4D5365,
+    0x6374696F, 0x6E5F7400, 0x00000094, 0x08000F00, 0x00000000, 0x0D6D5F6E, 0x54657874, 0x75726553,
+    0x65740400, 0x00009408, 0x000F0000, 0x0000000C, 0x6D5F6477, 0x4D617446, 0x6C616773, 0x08000000,
+    0x9408000D, 0x00000000, 0x000B6D5F, 0x6E4D6174, 0x65726961, 0x6C0A0000, 0x00940800, 0x0C000000,
+    0x00000A6D, 0x5F4E6F64, 0x65547970, 0x650B0000, 0x00960800, 0x3C000100, 0x00000100, 0x01000000,
+    0x00037061, 0x640C0000, 0x00960800, 0x3C000400, 0x00000100, 0x04000000, 0x00076D5F, 0x436F6C6F,
+    0x72100000, 0x00960800, 0x3C000400, 0x00000100, 0x04000000, 0x000C6D5F, 0x426C6163, 0x6B436F6C,
+    0x6F721400, 0x00009408, 0x000D0000, 0x00000007, 0x6D5F4D75, 0x6C745516, 0x00000094, 0x08000D00,
+    0x00000000, 0x076D5F4D, 0x756C7456, 0x18000000, 0x96660000, 0x00180000, 0x0000000D, 0x43524F4D,
+    0x53656374, 0x696F6E5F, 0x74042E65, 0x6F730000, 0x0000960D, 0x00080018, 0x00000000, 0x000D4352,
+    0x4F4D5365, 0x6374696F, 0x6E5F740B, 0x43524F4D, 0x53656374, 0x696F6E00, 0x00000094, 0x0A000800,
+    0x1C000000, 0x0E434761, 0x6D655365, 0x6374696F, 0x6E5F7400, 0x00000094, 0x08000F00, 0x00000000,
+    0x0C6D5F64, 0x774D6174, 0x466C6167, 0x73040000, 0x00940800, 0x0D000000, 0x00000B6D, 0x5F6E4D61,
+    0x74657269, 0x616C0600, 0x00009408, 0x000C0000, 0x0000000A, 0x6D5F4E6F, 0x64655479, 0x70650700,
+    0x00009408, 0x000C0000, 0x00000012, 0x6D5F4C61, 0x73745465, 0x78747572, 0x65467261, 0x6D650800,
+    0x00009608, 0x00080008, 0x00000000, 0x00104354, 0x65787475, 0x72654C6F, 0x61646572, 0x5F740F6D,
+    0x5F546578, 0x74757265, 0x4C6F6164, 0x65721000, 0x00009608, 0x003C0004, 0x00000001, 0x00040000,
+    0x0000076D, 0x5F436F6C, 0x6F721400, 0x00009608, 0x003C0004, 0x00000001, 0x00040000, 0x00000C6D,
+    0x5F426C61, 0x636B436F, 0x6C6F7218, 0x00000094, 0x08000D00, 0x00000000, 0x076D5F4D, 0x756C7455,
+    0x1A000000, 0x9408000D, 0x00000000, 0x00076D5F, 0x4D756C74, 0x561C0000, 0x00966600, 0x00001C00,
+    0x00000000, 0x0E434761, 0x6D655365, 0x6374696F, 0x6E5F7404, 0x2E656F73, 0x00000000, 0x960D0008,
+    0x001C0000, 0x0000000E, 0x4347616D, 0x65536563, 0x74696F6E, 0x5F740C43, 0x47616D65, 0x53656374,
+    0x696F6E00, 0x00000094, 0x0A000800, 0x06000000, 0x1343524F, 0x4D546578, 0x74757265, 0x466F726D,
+    0x61745F74, 0x00000000, 0x9408000C, 0x00000000, 0x00086D5F, 0x466F726D, 0x61740100, 0x00009408,
+    0x000C0000, 0x0000000F, 0x6D5F506C, 0x61796261, 0x636B5370, 0x65656402, 0x00000094, 0x08000C00,
+    0x00000000, 0x0C6D5F57, 0x69647468, 0x53686966, 0x74030000, 0x00940800, 0x0C000000, 0x00000D6D,
+    0x5F486569, 0x67687453, 0x68696674, 0x04000000, 0x9408000C, 0x00000000, 0x00086D5F, 0x45666665,
+    0x63740500, 0x00009408, 0x000C0000, 0x0000000C, 0x6D5F4566, 0x66656374, 0x4D6F6465, 0x06000000,
+    0x96660000, 0x00060000, 0x00000013, 0x43524F4D, 0x54657874, 0x75726546, 0x6F726D61, 0x745F7404,
+    0x2E656F73, 0x00000000, 0x960D0008, 0x00060000, 0x00000013, 0x43524F4D, 0x54657874, 0x75726546,
+    0x6F726D61, 0x745F7411, 0x43524F4D, 0x54657874, 0x75726546, 0x6F726D61, 0x74000000, 0x00940A00,
+    0x08001400, 0x00000B43, 0x524F4D4C, 0x6576656C, 0x5F740000, 0x00009408, 0x00060000, 0x0000000E,
+    0x6D5F4772, 0x69644469, 0x7374616E, 0x63650400, 0x00009608, 0x003C0003, 0x00000001, 0x00030000,
+    0x00000C6D, 0x5F426C61, 0x636B436F, 0x6C6F7207, 0x00000096, 0x08003C00, 0x03000000, 0x01000300,
+    0x0000000C, 0x6D5F5768, 0x69746543, 0x6F6C6F72, 0x0A000000, 0x9608003C, 0x00030000, 0x00010003,
+    0x00000000, 0x126D5F44, 0x69726563, 0x74696F6E, 0x616C4C69, 0x6768740D, 0x00000096, 0x08003C00,
+    0x03000000, 0x01000300, 0x0000000E, 0x6D5F416D, 0x6269656E, 0x744C6967, 0x68741000, 0x00009408,
+    0x000C0000, 0x00000008, 0x6D5F6246, 0x6C616773, 0x11000000, 0x96080032, 0x00030000, 0x00010003,
+    0x00000000, 0x0B6D5F44, 0x69726563, 0x74696F6E, 0x14000000, 0x96660000, 0x00140000, 0x0000000B,
+    0x43524F4D, 0x4C657665, 0x6C5F7404, 0x2E656F73, 0x00000000, 0x960D0008, 0x00140000, 0x0000000B,
+    0x43524F4D, 0x4C657665, 0x6C5F7409, 0x43524F4D, 0x4C657665, 0x6C000000, 0x00940A00, 0x08000400,
+    0x00000F43, 0x52616E64, 0x6F6D5346, 0x50616972, 0x5F740000, 0x00009408, 0x000D0000, 0x00000001,
+    0x76020000, 0x00940800, 0x0D000000, 0x00000172, 0x04000000, 0x96660000, 0x00040000, 0x0000000F,
+    0x4352616E, 0x646F6D53, 0x46506169, 0x725F7404, 0x2E656F73, 0x00000000, 0x960D0008, 0x00040000,
+    0x0000000F, 0x4352616E, 0x646F6D53, 0x46506169, 0x725F740D, 0x4352616E, 0x646F6D53, 0x46506169,
+    0x72000000, 0x00940A00, 0x08000200, 0x00000F43, 0x52616E64, 0x6F6D5338, 0x50616972, 0x5F740000,
+    0x00009408, 0x00020000, 0x00000001, 0x76010000, 0x00940800, 0x02000000, 0x00000172, 0x02000000,
+    0x96660000, 0x00020000, 0x0000000F, 0x4352616E, 0x646F6D53, 0x38506169, 0x725F7404, 0x2E656F73,
+    0x00000000, 0x960D0008, 0x00020000, 0x0000000F, 0x4352616E, 0x646F6D53, 0x38506169, 0x725F740D,
+    0x4352616E, 0x646F6D53, 0x38506169, 0x72000000, 0x00940A00, 0x0800C400, 0x00001443, 0x524F4D50,
+    0x61727469, 0x636C6549, 0x6D706163, 0x745F7400, 0x00000096, 0x08003800, 0x70000000, 0x01000E00,
+    0x00000D73, 0x5F434576, 0x656E7456, 0x616C7565, 0x126D5F49, 0x6D706163, 0x74457665, 0x6E745661,
+    0x6C756570, 0x00000096, 0x08003D00, 0x1C000000, 0x01000E00, 0x00000014, 0x6D5F496D, 0x70616374,
+    0x50617274, 0x69636C65, 0x54797065, 0x8C000000, 0x9608003D, 0x001C0000, 0x0001000E, 0x00000000,
+    0x116D5F49, 0x6D706163, 0x74457665, 0x6E745479, 0x7065A800, 0x00009608, 0x003D001C, 0x00000001,
+    0x000E0000, 0x0000116D, 0x5F496D70, 0x61637453, 0x6F756E64, 0x54797065, 0xC4000000, 0x96660000,
+    0x00C40000, 0x00000014, 0x43524F4D, 0x50617274, 0x69636C65, 0x496D7061, 0x63745F74, 0x042E656F,
+    0x73000000, 0x00960D00, 0x0800C400, 0x00000000, 0x1443524F, 0x4D506172, 0x7469636C, 0x65496D70,
+    0x6163745F, 0x74124352, 0x4F4D5061, 0x72746963, 0x6C65496D, 0x70616374, 0x00000000, 0x940A0008,
+    0x000C0000, 0x00144352, 0x4F4D5061, 0x72746963, 0x6C654F66, 0x66736574, 0x5F740000, 0x00009608,
+    0x00080004, 0x00000000, 0x000F4352, 0x616E646F, 0x6D534650, 0x6169725F, 0x740C6D5F, 0x58506F73,
+    0x4F666673, 0x65740400, 0x00009608, 0x00080004, 0x00000000, 0x000F4352, 0x616E646F, 0x6D534650,
+    0x6169725F, 0x740C6D5F, 0x59506F73, 0x4F666673, 0x65740800, 0x00009608, 0x00080004, 0x00000000,
+    0x000F4352, 0x616E646F, 0x6D534650, 0x6169725F, 0x740C6D5F, 0x5A506F73, 0x4F666673, 0x65740C00,
+    0x00009666, 0x0000000C, 0x00000000, 0x00144352, 0x4F4D5061, 0x72746963, 0x6C654F66, 0x66736574,
+    0x5F74042E, 0x656F7300, 0x00000096, 0x0D000800, 0x0C000000, 0x00001443, 0x524F4D50, 0x61727469,
+    0x636C654F, 0x66667365, 0x745F7412, 0x43524F4D, 0x50617274, 0x69636C65, 0x4F666673, 0x65740000,
+    0x0000940A, 0x00080018, 0x00000011, 0x43524F4D, 0x50617274, 0x69636C65, 0x526F745F, 0x74000000,
+    0x00960800, 0x08000400, 0x00000000, 0x0F435261, 0x6E646F6D, 0x53465061, 0x69725F74, 0x066D5F58,
+    0x526F7404, 0x00000096, 0x08000800, 0x04000000, 0x00000F43, 0x52616E64, 0x6F6D5346, 0x50616972,
+    0x5F74096D, 0x5F58526F, 0x74496E63, 0x08000000, 0x96080008, 0x00040000, 0x0000000F, 0x4352616E,
+    0x646F6D53, 0x46506169, 0x725F7406, 0x6D5F5952, 0x6F740C00, 0x00009608, 0x00080004, 0x00000000,
+    0x000F4352, 0x616E646F, 0x6D534650, 0x6169725F, 0x74096D5F, 0x59526F74, 0x496E6310, 0x00000096,
+    0x08000800, 0x04000000, 0x00000F43, 0x52616E64, 0x6F6D5346, 0x50616972, 0x5F74066D, 0x5F5A526F,
+    0x74140000, 0x00960800, 0x08000400, 0x00000000, 0x0F435261, 0x6E646F6D, 0x53465061, 0x69725F74,
+    0x096D5F5A, 0x526F7449, 0x6E631800, 0x00009666, 0x00000018, 0x00000000, 0x00114352, 0x4F4D5061,
+    0x72746963, 0x6C65526F, 0x745F7404, 0x2E656F73, 0x00000000, 0x960D0008, 0x00180000, 0x00000011,
+    0x43524F4D, 0x50617274, 0x69636C65, 0x526F745F, 0x740F4352, 0x4F4D5061, 0x72746963, 0x6C65526F,
+    0x74000000, 0x00940A00, 0x08002400, 0x00001343, 0x524F4D50, 0x61727469, 0x636C6553, 0x63616C65,
+    0x5F740000, 0x00009608, 0x00080004, 0x00000000, 0x000F4352, 0x616E646F, 0x6D534650, 0x6169725F,
+    0x74086D5F, 0x58536361, 0x6C650400, 0x00009608, 0x00080004, 0x00000000, 0x000F4352, 0x616E646F,
+    0x6D534650, 0x6169725F, 0x740B6D5F, 0x58536361, 0x6C65496E, 0x63080000, 0x00960800, 0x08000400,
+    0x00000000, 0x0F435261, 0x6E646F6D, 0x53465061, 0x69725F74, 0x086D5F59, 0x5363616C, 0x650C0000,
+    0x00960800, 0x08000400, 0x00000000, 0x0F435261, 0x6E646F6D, 0x53465061, 0x69725F74, 0x0B6D5F59,
+    0x5363616C, 0x65496E63, 0x10000000, 0x96080008, 0x00040000, 0x0000000F, 0x4352616E, 0x646F6D53,
+    0x46506169, 0x725F7408, 0x6D5F5A53, 0x63616C65, 0x14000000, 0x96080008, 0x00040000, 0x0000000F,
+    0x4352616E, 0x646F6D53, 0x46506169, 0x725F740B, 0x6D5F5A53, 0x63616C65, 0x496E6318, 0x00000094,
+    0x08000600, 0x00000000, 0x0D6D5F53, 0x6861646F, 0x77536361, 0x6C651C00, 0x00009408, 0x00060000,
+    0x0000000B, 0x6D5F4E65, 0x61725363, 0x616C6520, 0x00000094, 0x08000600, 0x00000000, 0x0A6D5F46,
+    0x61725363, 0x616C6524, 0x00000096, 0x66000000, 0x24000000, 0x00001343, 0x524F4D50, 0x61727469,
+    0x636C6553, 0x63616C65, 0x5F74042E, 0x656F7300, 0x00000096, 0x0D000800, 0x24000000, 0x00001343,
+    0x524F4D50, 0x61727469, 0x636C6553, 0x63616C65, 0x5F741143, 0x524F4D50, 0x61727469, 0x636C6553,
+    0x63616C65, 0x00000000, 0x940A0008, 0x000C0000, 0x00114352, 0x4F4D5061, 0x72746963, 0x6C654469,
+    0x725F7400, 0x00000096, 0x08000800, 0x04000000, 0x00000F43, 0x52616E64, 0x6F6D5346, 0x50616972,
+    0x5F740C6D, 0x5F584469, 0x72656374, 0x696F6E04, 0x00000096, 0x08000800, 0x04000000, 0x00000F43,
+    0x52616E64, 0x6F6D5346, 0x50616972, 0x5F740C6D, 0x5F594469, 0x72656374, 0x696F6E08, 0x00000096,
+    0x08000800, 0x04000000, 0x00000F43, 0x52616E64, 0x6F6D5346, 0x50616972, 0x5F740C6D, 0x5F5A4469,
+    0x72656374, 0x696F6E0C, 0x00000096, 0x66000000, 0x0C000000, 0x00001143, 0x524F4D50, 0x61727469,
+    0x636C6544, 0x69725F74, 0x042E656F, 0x73000000, 0x00960D00, 0x08000C00, 0x00000000, 0x1143524F,
+    0x4D506172, 0x7469636C, 0x65446972, 0x5F740F43, 0x524F4D50, 0x61727469, 0x636C6544, 0x69720000,
+    0x0000940A, 0x0008001A, 0x00000016, 0x43524F4D, 0x50617274, 0x69636C65, 0x53696E65, 0x57617665,
+    0x5F740000, 0x00009608, 0x00080004, 0x00000000, 0x000F4352, 0x616E646F, 0x6D534650, 0x6169725F,
+    0x740C6D5F, 0x58416D70, 0x6C697475, 0x64650400, 0x00009608, 0x00080004, 0x00000000, 0x000F4352,
+    0x616E646F, 0x6D534650, 0x6169725F, 0x740C6D5F, 0x58467265, 0x7175656E, 0x63790800, 0x00009608,
+    0x00080004, 0x00000000, 0x000F4352, 0x616E646F, 0x6D534650, 0x6169725F, 0x74086D5F, 0x58506861,
+    0x73650C00, 0x00009608, 0x00080004, 0x00000000, 0x000F4352, 0x616E646F, 0x6D534650, 0x6169725F,
+    0x740C6D5F, 0x59416D70, 0x6C697475, 0x64651000, 0x00009608, 0x00080004, 0x00000000, 0x000F4352,
+    0x616E646F, 0x6D534650, 0x6169725F, 0x740C6D5F, 0x59467265, 0x7175656E, 0x63791400, 0x00009608,
+    0x00080004, 0x00000000, 0x000F4352, 0x616E646F, 0x6D534650, 0x6169725F, 0x74086D5F, 0x59506861,
+    0x73651800, 0x00009408, 0x00020000, 0x00000011, 0x6D5F6E53, 0x696E6557, 0x61766546, 0x61646549,
+    0x6E1A0000, 0x00966600, 0x00001A00, 0x00000000, 0x1643524F, 0x4D506172, 0x7469636C, 0x6553696E,
+    0x65576176, 0x655F7404, 0x2E656F73, 0x00000000, 0x960D0008, 0x001A0000, 0x00000016, 0x43524F4D,
+    0x50617274, 0x69636C65, 0x53696E65, 0x57617665, 0x5F741443, 0x524F4D50, 0x61727469, 0x636C6553,
+    0x696E6557, 0x61766500, 0x00000094, 0x0A000800, 0x16000000, 0x1543524F, 0x4D506172, 0x7469636C,
+    0x65506879, 0x73696373, 0x5F740000, 0x00009608, 0x00080004, 0x00000000, 0x000F4352, 0x616E646F,
+    0x6D534650, 0x6169725F, 0x74096D5F, 0x47726176, 0x69747904, 0x00000096, 0x08000800, 0x04000000,
+    0x00000F43, 0x52616E64, 0x6F6D5346, 0x50616972, 0x5F740A6D, 0x5F56656C, 0x6F636974, 0x79080000,
+    0x00940800, 0x0D000000, 0x00000E6D, 0x5F426F75, 0x6E636545, 0x6E657267, 0x790A0000, 0x00940800,
+    0x0D000000, 0x0000106D, 0x5F47726F, 0x756E6446, 0x72696374, 0x696F6E0C, 0x00000094, 0x08000D00,
+    0x00000000, 0x0D6D5F41, 0x69724672, 0x69637469, 0x6F6E0E00, 0x00009408, 0x000D0000, 0x0000000F,
+    0x6D5F5761, 0x74657246, 0x72696374, 0x696F6E10, 0x00000094, 0x08000D00, 0x00000000, 0x0E6D5F41,
+    0x6363656C, 0x65726174, 0x696F6E12, 0x00000094, 0x08000D00, 0x00000000, 0x106D5F4D, 0x696E4D61,
+    0x7856656C, 0x6F636974, 0x79140000, 0x00940800, 0x0D000000, 0x00000C6D, 0x5F436F6C, 0x6C526164,
+    0x69757316, 0x00000096, 0x66000000, 0x16000000, 0x00001543, 0x524F4D50, 0x61727469, 0x636C6550,
+    0x68797369, 0x63735F74, 0x042E656F, 0x73000000, 0x00960D00, 0x08001600, 0x00000000, 0x1543524F,
+    0x4D506172, 0x7469636C, 0x65506879, 0x73696373, 0x5F741343, 0x524F4D50, 0x61727469, 0x636C6550,
+    0x68797369, 0x63730000, 0x0000940A, 0x0008000F, 0x00000013, 0x43524F4D, 0x50617274, 0x69636C65,
+    0x436F6C6F, 0x725F7400, 0x00000096, 0x08003C00, 0x03000000, 0x01000300, 0x0000000C, 0x6D5F5768,
+    0x69746543, 0x6F6C6F72, 0x03000000, 0x9608003C, 0x00030000, 0x00010003, 0x00000000, 0x0C6D5F42,
+    0x6C61636B, 0x436F6C6F, 0x72060000, 0x00960800, 0x3C000300, 0x00000100, 0x03000000, 0x000D6D5F,
+    0x57686974, 0x65436F6C, 0x6F723209, 0x00000096, 0x08003C00, 0x03000000, 0x01000300, 0x0000000D,
+    0x6D5F426C, 0x61636B43, 0x6F6C6F72, 0x320C0000, 0x00940800, 0x02000000, 0x00000E6D, 0x5F52616E,
+    0x646F6D69, 0x7A654875, 0x650D0000, 0x00940800, 0x02000000, 0x0000156D, 0x5F52616E, 0x646F6D69,
+    0x7A655361, 0x74757261, 0x74696F6E, 0x0E000000, 0x94080002, 0x00000000, 0x00156D5F, 0x52616E64,
+    0x6F6D697A, 0x65427269, 0x6768746E, 0x6573730F, 0x00000096, 0x66000000, 0x0F000000, 0x00001343,
+    0x524F4D50, 0x61727469, 0x636C6543, 0x6F6C6F72, 0x5F74042E, 0x656F7300, 0x00000096, 0x0D000800,
+    0x0F000000, 0x00001343, 0x524F4D50, 0x61727469, 0x636C6543, 0x6F6C6F72, 0x5F741143, 0x524F4D50,
+    0x61727469, 0x636C6543, 0x6F6C6F72, 0x00000000, 0x940A0008, 0x00100000, 0x00154352, 0x4F4D5061,
+    0x72746963, 0x6C654765, 0x6E657261, 0x6C5F7400, 0x00000094, 0x08000300, 0x00000000, 0x096D5F6E,
+    0x4672616D, 0x65730200, 0x00009408, 0x00030000, 0x0000000C, 0x6D5F6E46, 0x72616D65, 0x73526E64,
+    0x04000000, 0x94080002, 0x00000000, 0x000D6D5F, 0x50726F62, 0x6162696C, 0x69747905, 0x00000094,
+    0x08000200, 0x00000000, 0x0C6D5F56, 0x69736962, 0x696C6974, 0x79060000, 0x00940800, 0x02000000,
+    0x00000C6D, 0x5F6E5061, 0x72746963, 0x6C657307, 0x00000094, 0x08000200, 0x00000000, 0x0F6D5F6E,
+    0x50617274, 0x69636C65, 0x73526E64, 0x08000000, 0x94080002, 0x00000000, 0x000B6D5F, 0x6E507269,
+    0x6F726974, 0x79090000, 0x00940800, 0x02000000, 0x0000096D, 0x5F6E4661, 0x6465496E, 0x0A000000,
+    0x94080002, 0x00000000, 0x000A6D5F, 0x6E466164, 0x654F7574, 0x0B000000, 0x94080002, 0x00000000,
+    0x00056D5F, 0x4650530C, 0x00000094, 0x08000200, 0x00000000, 0x0D6D5F6E, 0x496E4265, 0x74776565,
+    0x6E730D00, 0x00009408, 0x00020000, 0x0000000B, 0x6D5F6E4D, 0x61784465, 0x6C61790E, 0x00000094,
+    0x08000200, 0x00000000, 0x0B6D5F41, 0x6C69676E, 0x6D656E74, 0x0F000000, 0x9408000C, 0x00000000,
+    0x00076D5F, 0x416C6572, 0x74100000, 0x00966600, 0x00001000, 0x00000000, 0x1543524F, 0x4D506172,
+    0x7469636C, 0x6547656E, 0x6572616C, 0x5F74042E, 0x656F7300, 0x00000096, 0x0D000800, 0x10000000,
+    0x00001543, 0x524F4D50, 0x61727469, 0x636C6547, 0x656E6572, 0x616C5F74, 0x1343524F, 0x4D506172,
+    0x7469636C, 0x6547656E, 0x6572616C, 0x00000000, 0x940A0008, 0x003C0000, 0x00144352, 0x4F4D5061,
+    0x72746963, 0x6C654566, 0x66656374, 0x5F740000, 0x00009408, 0x000F0000, 0x00000009, 0x6D5F6477,
+    0x466C6167, 0x73040000, 0x00940800, 0x03000000, 0x00000D6D, 0x5F6E5465, 0x78747572, 0x65536574,
+    0x06000000, 0x94080002, 0x00000000, 0x00096D5F, 0x6E53776F, 0x6F736807, 0x00000094, 0x08000200,
+    0x00000000, 0x0F6D5F6E, 0x44796E61, 0x6D69634C, 0x69676874, 0x08000000, 0x94080002, 0x00000000,
+    0x000A6D5F, 0x506C6179, 0x6261636B, 0x09000000, 0x94080002, 0x00000000, 0x00126D5F, 0x496E7374,
+    0x616E6365, 0x42656861, 0x76696F72, 0x0A000000, 0x94080002, 0x00000000, 0x000E6D5F, 0x57616C6C,
+    0x42656861, 0x76696F72, 0x0B000000, 0x94080002, 0x00000000, 0x00106D5F, 0x47726F75, 0x6E644265,
+    0x68617669, 0x6F720C00, 0x00009408, 0x00030000, 0x0000000B, 0x6D5F536F, 0x756E6454, 0x7970650E,
+    0x00000094, 0x08000300, 0x00000000, 0x186D5F4D, 0x6178416E, 0x676C6543, 0x68616E67, 0x65506572,
+    0x4672616D, 0x65100000, 0x00940800, 0x03000000, 0x00001A6D, 0x5F50726F, 0x78696D69, 0x74794465,
+    0x74656374, 0x696F6E52, 0x61646975, 0x73120000, 0x00940800, 0x0C000000, 0x0000096D, 0x5F62466C,
+    0x61677332, 0x13000000, 0x9608003C, 0x00010000, 0x00010001, 0x00000000, 0x07706164, 0x64696E67,
+    0x14000000, 0x94080011, 0x00000000, 0x000A6D5F, 0x72704F62, 0x6A656374, 0x18000000, 0x96080018,
+    0x00C40000, 0x00000014, 0x43524F4D, 0x50617274, 0x69636C65, 0x496D7061, 0x63745F74, 0x096D5F70,
+    0x496D7061, 0x63741C00, 0x00009608, 0x0018000C, 0x00000000, 0x00144352, 0x4F4D5061, 0x72746963,
+    0x6C654F66, 0x66736574, 0x5F74096D, 0x5F704F66, 0x66736574, 0x20000000, 0x96080018, 0x00180000,
+    0x00000011, 0x43524F4D, 0x50617274, 0x69636C65, 0x526F745F, 0x74066D5F, 0x70526F74, 0x24000000,
+    0x96080018, 0x00240000, 0x00000013, 0x43524F4D, 0x50617274, 0x69636C65, 0x5363616C, 0x655F7408,
+    0x6D5F7053, 0x63616C65, 0x28000000, 0x96080018, 0x000C0000, 0x00000011, 0x43524F4D, 0x50617274,
+    0x69636C65, 0x4469725F, 0x74066D5F, 0x70446972, 0x2C000000, 0x96080018, 0x001A0000, 0x00000016,
+    0x43524F4D, 0x50617274, 0x69636C65, 0x53696E65, 0x57617665, 0x5F740B6D, 0x5F705369, 0x6E655761,
+    0x76653000, 0x00009608, 0x00180016, 0x00000000, 0x00154352, 0x4F4D5061, 0x72746963, 0x6C655068,
+    0x79736963, 0x735F740A, 0x6D5F7050, 0x68797369, 0x63733400, 0x00009608, 0x0018000F, 0x00000000,
+    0x00134352, 0x4F4D5061, 0x72746963, 0x6C65436F, 0x6C6F725F, 0x74086D5F, 0x70436F6C, 0x6F723800,
+    0x00009608, 0x00180010, 0x00000000, 0x00154352, 0x4F4D5061, 0x72746963, 0x6C654765, 0x6E657261,
+    0x6C5F740A, 0x6D5F7047, 0x656E6572, 0x616C3C00, 0x00009666, 0x0000003C, 0x00000000, 0x00144352,
+    0x4F4D5061, 0x72746963, 0x6C654566, 0x66656374, 0x5F74042E, 0x656F7300, 0x00000096, 0x0D000800,
+    0x3C000000, 0x00001443, 0x524F4D50, 0x61727469, 0x636C6545, 0x66666563, 0x745F7412, 0x43524F4D,
+    0x50617274, 0x69636C65, 0x45666665, 0x63740000, 0x0000940A, 0x00080014, 0x0000000F, 0x43524F4D,
+    0x57617270, 0x506F696E, 0x745F7400, 0x00000096, 0x08000800, 0x0C000000, 0x00000A43, 0x56656374,
+    0x6F72335F, 0x74066D5F, 0x76506F73, 0x0C000000, 0x94080006, 0x00000000, 0x00066D5F, 0x526F7459,
+    0x10000000, 0x94080003, 0x00000000, 0x00086D5F, 0x6E4C6576, 0x656C1200, 0x00009408, 0x00030000,
+    0x00000009, 0x6D5F6E52, 0x6567696F, 0x6E140000, 0x00966600, 0x00001400, 0x00000000, 0x0F43524F,
+    0x4D576172, 0x70506F69, 0x6E745F74, 0x042E656F, 0x73000000, 0x00960D00, 0x08001400, 0x00000000,
+    0x0F43524F, 0x4D576172, 0x70506F69, 0x6E745F74, 0x0D43524F, 0x4D576172, 0x70506F69, 0x6E740000,
+    0x0000940A, 0x00080070, 0x0000000A, 0x43524F4D, 0x4E6F6465, 0x5F740000, 0x00009608, 0x00380060,
+    0x00000001, 0x00080000, 0x000A4356, 0x6563746F, 0x72335F74, 0x0E76426F, 0x756E6473, 0x436F726E,
+    0x65727360, 0x00000094, 0x08000600, 0x00000000, 0x0B6D5F4D, 0x6178426F, 0x756E6473, 0x64000000,
+    0x94080002, 0x00000000, 0x000D6D5F, 0x50617265, 0x6E74496E, 0x64657865, 0x00000094, 0x08000C00,
+    0x00000000, 0x086D5F53, 0x796D626F, 0x6C660000, 0x00940800, 0x0C000000, 0x00000E6D, 0x5F4D6174,
+    0x65726961, 0x6C547970, 0x65670000, 0x00960800, 0x3C000100, 0x00000100, 0x01000000, 0x00037061,
+    0x64680000, 0x00940800, 0x06000000, 0x00000E6D, 0x5F44616D, 0x61676553, 0x63616C65, 0x726C0000,
+    0x00940800, 0x0F000000, 0x00000E6D, 0x5F64774D, 0x6F64656C, 0x466C6167, 0x73700000, 0x00966600,
+    0x00007000, 0x00000000, 0x0A43524F, 0x4D4E6F64, 0x655F7404, 0x2E656F73, 0x00000000, 0x960D0008,
+    0x00700000, 0x0000000A, 0x43524F4D, 0x4E6F6465, 0x5F740843, 0x524F4D4E, 0x6F646500, 0x00000094,
+    0x0A000800, 0x20000000, 0x1043524F, 0x4D4F626A, 0x65637449, 0x6E666F5F, 0x74000000, 0x00960800,
+    0x08001800, 0x00000000, 0x0C43524F, 0x4D426F75, 0x6E64735F, 0x74086D5F, 0x426F756E, 0x64731800,
+    0x00009408, 0x00020000, 0x00000014, 0x6D5F4865, 0x61645472, 0x61636B53, 0x74617274, 0x4E6F6465,
+    0x19000000, 0x94080002, 0x00000000, 0x00126D5F, 0x48656164, 0x54726163, 0x6B456E64, 0x4E6F6465,
+    0x1A000000, 0x94080002, 0x00000000, 0x00116D5F, 0x48656164, 0x54726163, 0x6B466163, 0x746F721B,
+    0x00000094, 0x08000200, 0x00000000, 0x04706164, 0x301C0000, 0x00940800, 0x0D000000, 0x00000C6D,
+    0x5F6E5661, 0x72696174, 0x696F6E1E, 0x00000094, 0x08000D00, 0x00000000, 0x0B6D5F55, 0x6E697453,
+    0x63616C65, 0x20000000, 0x96660000, 0x00200000, 0x00000010, 0x43524F4D, 0x4F626A65, 0x6374496E,
+    0x666F5F74, 0x042E656F, 0x73000000, 0x00960D00, 0x08002000, 0x00000000, 0x1043524F, 0x4D4F626A,
+    0x65637449, 0x6E666F5F, 0x740E4352, 0x4F4D4F62, 0x6A656374, 0x496E666F, 0x00000000, 0x940A0008,
+    0x00080000, 0x0007434E, 0x6F64655F, 0x74000000, 0x00960800, 0x18000800, 0x00000000, 0x07434E6F,
+    0x64655F74, 0x076D5F70, 0x50726576, 0x04000000, 0x96080018, 0x00080000, 0x00000007, 0x434E6F64,
+    0x655F7407, 0x6D5F704E, 0x65787408, 0x00000096, 0x66000000, 0x08000000, 0x00000743, 0x4E6F6465,
+    0x5F74042E, 0x656F7300, 0x00000096, 0x0D000800, 0x08000000, 0x00000743, 0x4E6F6465, 0x5F740543,
+    0x4E6F6465, 0x00000000, 0x940A0008, 0x000C0000, 0x000B434E, 0x6F64654C, 0x6973745F, 0x74000000,
+    0x00960800, 0x18000800, 0x00000000, 0x07434E6F, 0x64655F74, 0x076D5F70, 0x48656164, 0x04000000,
+    0x96080018, 0x00080000, 0x00000007, 0x434E6F64, 0x655F7407, 0x6D5F7054, 0x61696C08, 0x00000094,
+    0x08000500, 0x00000000, 0x086D5F4C, 0x656E6774, 0x680C0000, 0x00966600, 0x00000C00, 0x00000000,
+    0x0B434E6F, 0x64654C69, 0x73745F74, 0x042E656F, 0x73000000, 0x00960D00, 0x08000C00, 0x00000000,
+    0x0B434E6F, 0x64654C69, 0x73745F74, 0x09434E6F, 0x64654C69, 0x73740000, 0x0000940A, 0x00080018,
+    0x0000000E, 0x4344796E, 0x616D6963, 0x4C697374, 0x5F740000, 0x00009608, 0x0008000C, 0x00000000,
+    0x000B434E, 0x6F64654C, 0x6973745F, 0x740A6D5F, 0x46726565, 0x4C697374, 0x0C000000, 0x96080008,
+    0x000C0000, 0x0000000B, 0x434E6F64, 0x654C6973, 0x745F740C, 0x6D5F4163, 0x74697665, 0x4C697374,
+    0x18000000, 0x96660000, 0x00180000, 0x0000000E, 0x4344796E, 0x616D6963, 0x4C697374, 0x5F74042E,
+    0x656F7300, 0x00000096, 0x0D000800, 0x18000000, 0x00000E43, 0x44796E61, 0x6D69634C, 0x6973745F,
+    0x740C4344, 0x796E616D, 0x69634C69, 0x73740000, 0x0000940A, 0x00080004, 0x0000000C, 0x4353656C,
+    0x65637469, 0x6F6E5F74, 0x00000000, 0x94080003, 0x00000000, 0x00086D5F, 0x4E756D62, 0x65720200,
+    0x00009408, 0x00030000, 0x00000008, 0x6D5F5765, 0x69676874, 0x04000000, 0x96660000, 0x00040000,
+    0x0000000C, 0x4353656C, 0x65637469, 0x6F6E5F74, 0x042E656F, 0x73000000, 0x00960D00, 0x08000400,
+    0x00000000, 0x0C435365, 0x6C656374, 0x696F6E5F, 0x740A4353, 0x656C6563, 0x74696F6E, 0x00000000,
+    0x940A0008, 0x00660000, 0x00104353, 0x656C6563, 0x74696F6E, 0x4C697374, 0x5F740000, 0x00009408,
+    0x00030000, 0x00000009, 0x6D5F456E, 0x74726965, 0x73020000, 0x00960800, 0x38006400, 0x00000100,
+    0x19000000, 0x0C435365, 0x6C656374, 0x696F6E5F, 0x74066D5F, 0x4C697374, 0x66000000, 0x96660000,
+    0x00660000, 0x00000010, 0x4353656C, 0x65637469, 0x6F6E4C69, 0x73745F74, 0x042E656F, 0x73000000,
+    0x00960D00, 0x08006600, 0x00000000, 0x10435365, 0x6C656374, 0x696F6E4C, 0x6973745F, 0x740E4353,
+    0x656C6563, 0x74696F6E, 0x4C697374, 0x00000000, 0x940A0008, 0x00140000, 0x00134347, 0x616D6541,
+    0x6E696D61, 0x74655374, 0x6174655F, 0x74000000, 0x00940800, 0x06000000, 0x00000663, 0x4672616D,
+    0x65040000, 0x00940800, 0x03000000, 0x0000056E, 0x416E696D, 0x06000000, 0x94080003, 0x00000000,
+    0x000C6E44, 0x65736972, 0x6564416E, 0x696D0800, 0x00009408, 0x00030000, 0x00000007, 0x6E467261,
+    0x6D65730A, 0x00000094, 0x08000200, 0x00000000, 0x0E437963, 0x6C65436F, 0x6D706C65, 0x7465640B,
+    0x00000094, 0x08000200, 0x00000000, 0x06416374, 0x6976650C, 0x00000094, 0x08000F00, 0x00000000,
+    0x064C6F6F, 0x70546F10, 0x00000096, 0x08001800, 0x28000000, 0x00000B43, 0x4D656D45, 0x6E747279,
+    0x5F740B70, 0x6D65416E, 0x696D4461, 0x74611400, 0x00009666, 0x00000014, 0x00000000, 0x00134347,
+    0x616D6541, 0x6E696D61, 0x74655374, 0x6174655F, 0x74042E65, 0x6F730000, 0x0000960D, 0x00080014,
+    0x00000000, 0x00134347, 0x616D6541, 0x6E696D61, 0x74655374, 0x6174655F, 0x74114347, 0x616D6541,
+    0x6E696D61, 0x74655374, 0x61746500, 0x00000096, 0x0D000800, 0x14000000, 0x00001343, 0x47616D65,
+    0x416E696D, 0x61746553, 0x74617465, 0x5F740443, 0x47415300, 0x00000096, 0x0D000800, 0x14000000,
+    0x00001843, 0x524F4D49, 0x6E697469, 0x616C4F72, 0x69656E74, 0x6174696F, 0x6E5F7409, 0x4352494F,
+    0x7269656E, 0x74000000, 0x00960D00, 0x08000400, 0x00000000, 0x0F43524F, 0x4D4E6F64, 0x65496E64,
+    0x65785F74, 0x0843524E, 0x496E6465, 0x78000000, 0x00940A00, 0x08002400, 0x00000A41, 0x6E696D49,
+    0x6E666F5F, 0x74000000, 0x00960800, 0x18000400, 0x00000000, 0x0F43524F, 0x4D4E6F64, 0x65496E64,
+    0x65785F74, 0x0F4E6F64, 0x65416E69, 0x6D496E64, 0x69636573, 0x04000000, 0x96080018, 0x00140000,
+    0x00000018, 0x43524F4D, 0x496E6974, 0x69616C4F, 0x7269656E, 0x74617469, 0x6F6E5F74, 0x0E496E69,
+    0x7469616C, 0x4F726965, 0x6E747308, 0x00000096, 0x08001800, 0x08000000, 0x00000673, 0x5F495365,
+    0x740B6973, 0x5472616E, 0x73536574, 0x730C0000, 0x00960800, 0x18000800, 0x00000000, 0x06735F49,
+    0x53657409, 0x6973526F, 0x74536574, 0x73100000, 0x00940800, 0x04000000, 0x00000952, 0x6F74496E,
+    0x64657831, 0x14000000, 0x94080004, 0x00000000, 0x0009526F, 0x74496E64, 0x65783218, 0x00000094,
+    0x08000400, 0x00000000, 0x0B547261, 0x6E73496E, 0x64657831, 0x1C000000, 0x94080004, 0x00000000,
+    0x000B5472, 0x616E7349, 0x6E646578, 0x32200000, 0x00940800, 0x06000000, 0x00000542, 0x6C656E64,
+    0x24000000, 0x96660000, 0x00240000, 0x0000000A, 0x416E696D, 0x496E666F, 0x5F74042E, 0x656F7300,
+    0x00000096, 0x0D000800, 0x24000000, 0x00000A41, 0x6E696D49, 0x6E666F5F, 0x7408416E, 0x696D496E,
+    0x666F0000, 0x0000940F, 0x000A0004, 0x00000018, 0x4347616D, 0x654F626A, 0x65637449, 0x6E737461,
+    0x6E63654D, 0x6F646573, 0x00000000, 0x9410000B, 0x00000000, 0x00094944, 0x4C455F4D, 0x4F444501,
+    0x00000094, 0x10000B00, 0x00000000, 0x13545241, 0x4E535F46, 0x4144455F, 0x4F55545F, 0x4D4F4445,
+    0x02000000, 0x9410000B, 0x00000000, 0x000C454E, 0x445F4F46, 0x5F4D4F44, 0x45530400, 0x00009666,
+    0x00000004, 0x00000000, 0x00184347, 0x616D654F, 0x626A6563, 0x74496E73, 0x74616E63, 0x654D6F64,
+    0x6573042E, 0x656F7300, 0x00000094, 0x0F000A00, 0x04000000, 0x0A4D6F64, 0x656C5479, 0x70657300,
+    0x00000094, 0x10000B00, 0x00000000, 0x114E4F52, 0x4D414C5F, 0x4D4F4445, 0x4C5F5459, 0x50450100,
+    0x00009410, 0x000B0000, 0x00000013, 0x45585452, 0x454D4531, 0x5F4D4F44, 0x454C5F54, 0x59504502,
+    0x00000094, 0x10000B00, 0x00000000, 0x13455854, 0x52454D45, 0x325F4D4F, 0x44454C5F, 0x54595045,
+    0x03000000, 0x9410000B, 0x00000000, 0x00134558, 0x5452454D, 0x45335F4D, 0x4F44454C, 0x5F545950,
+    0x45040000, 0x00941000, 0x0B000000, 0x00001345, 0x58545245, 0x4D45345F, 0x4D4F4445, 0x4C5F5459,
+    0x50450500, 0x00009410, 0x000B0000, 0x00000013, 0x45585452, 0x454D4535, 0x5F4D4F44, 0x454C5F54,
+    0x59504506, 0x00000094, 0x10000B00, 0x00000000, 0x13455854, 0x52454D45, 0x365F4D4F, 0x44454C5F,
+    0x54595045, 0x07000000, 0x9410000B, 0x00000000, 0x00134558, 0x5452454D, 0x45375F4D, 0x4F44454C,
+    0x5F545950, 0x45080000, 0x00941000, 0x0B000000, 0x00001345, 0x58545245, 0x4D45385F, 0x4D4F4445,
+    0x4C5F5459, 0x50450900, 0x00009410, 0x000B0000, 0x0000000B, 0x4D4F4445, 0x4C5F5459, 0x50455304,
+    0x00000096, 0x66000000, 0x04000000, 0x00000A4D, 0x6F64656C, 0x54797065, 0x73042E65, 0x6F730000,
+    0x0000940A, 0x00080028, 0x00000014, 0x43524F4D, 0x4F626A65, 0x6374496E, 0x7374616E, 0x63655F74,
+    0x00000000, 0x96080008, 0x00040000, 0x0000000A, 0x43566973, 0x42697473, 0x5F74096D, 0x5F566973,
+    0x42697473, 0x04000000, 0x96080008, 0x000C0000, 0x0000000A, 0x43566563, 0x746F7233, 0x5F74066D,
+    0x5F76506F, 0x73100000, 0x00960800, 0x08000C00, 0x00000000, 0x0A435665, 0x63746F72, 0x335F7408,
+    0x6D5F7653, 0x63616C65, 0x1C000000, 0x9408000D, 0x00000000, 0x000A6D5F, 0x6E4F626A, 0x54797065,
+    0x1E000000, 0x9408000D, 0x00000000, 0x000B6D5F, 0x6E547970, 0x65466C61, 0x67200000, 0x00940800,
+    0x0D000000, 0x0000106D, 0x5F6E4375, 0x7272656E, 0x74526567, 0x696F6E22, 0x00000094, 0x08000D00,
+    0x00000000, 0x0C6D5F6E, 0x56617269, 0x6174696F, 0x6E240000, 0x00940800, 0x03000000, 0x0000066D,
+    0x5F526F74, 0x59260000, 0x00940800, 0x0C000000, 0x0000086D, 0x5F62466C, 0x61677327, 0x00000094,
+    0x08000C00, 0x00000000, 0x076D5F6E, 0x50617468, 0x28000000, 0x96660000, 0x00280000, 0x00000014,
+    0x43524F4D, 0x4F626A65, 0x6374496E, 0x7374616E, 0x63655F74, 0x042E656F, 0x73000000, 0x00960D00,
+    0x08002800, 0x00000000, 0x1443524F, 0x4D4F626A, 0x65637449, 0x6E737461, 0x6E63655F, 0x74124352,
+    0x4F4D4F62, 0x6A656374, 0x496E7374, 0x616E6365, 0x00000000, 0x940A0008, 0x00E80200, 0x00154347,
+    0x616D654F, 0x626A6563, 0x74496E73, 0x74616E63, 0x655F7400, 0x00000096, 0x08000800, 0x50000000,
+    0x00001243, 0x416E696D, 0x496E7374, 0x616E6365, 0x4864725F, 0x74026168, 0x50000000, 0x96080008,
+    0x000C0000, 0x0000000A, 0x43566563, 0x746F7233, 0x5F74086D, 0x5F765363, 0x616C655C, 0x00000096,
+    0x08000800, 0x10000000, 0x00000A43, 0x51756174, 0x65726E5F, 0x74096D5F, 0x7147726F, 0x756E646C,
+    0x00000094, 0x08000600, 0x00000000, 0x066D5F52, 0x6F745970, 0x00000094, 0x08000600, 0x00000000,
+    0x126D5F43, 0x6F6C6C69, 0x73696F6E, 0x594F6666, 0x73657474, 0x00000096, 0x0800F600, 0x40000000,
+    0x02000400, 0x00000400, 0x0000000A, 0x6D5F6D66, 0x4F726965, 0x6E74B400, 0x00009608, 0x00190040,
+    0x00000000, 0x00072E32, 0x3666616B, 0x650D6D5F, 0x706D7444, 0x7261774D, 0x747873B8, 0x00000096,
+    0x08001900, 0x40000000, 0x0000072E, 0x32366661, 0x6B65166D, 0x5F706D74, 0x4C617374, 0x4672616D,
+    0x65447261, 0x774D7478, 0x73BC0000, 0x00960800, 0xD6030400, 0x00000200, 0x04000000, 0x04000000,
+    0x000B6D5F, 0x706D6653, 0x6861646F, 0x77C00000, 0x00960800, 0x19000800, 0x00000000, 0x072E3633,
+    0x66616B65, 0x086D5F70, 0x444C6973, 0x74C40000, 0x00940800, 0x11000000, 0x00000E6D, 0x5F72704F,
+    0x626A6563, 0x74496E66, 0x6FC80000, 0x00940800, 0x11000000, 0x0000096D, 0x5F727041, 0x6E696D73,
+    0xCC000000, 0x94080011, 0x00000000, 0x000F6D5F, 0x72704D6F, 0x64656C73, 0x496E6465, 0x78D00000,
+    0x00940800, 0x0F000000, 0x0000106D, 0x5F4F626A, 0x65637449, 0x6E666F53, 0x697A65D4, 0x00000094,
+    0x08000F00, 0x00000000, 0x116D5F4D, 0x6F64656C, 0x73496E64, 0x65785369, 0x7A65D800, 0x00009408,
+    0x00050000, 0x0000000F, 0x6D5F6E43, 0x75727265, 0x6E744D6F, 0x64656CDC, 0x00000094, 0x08001100,
+    0x00000000, 0x096D5F72, 0x704D6F64, 0x656CE000, 0x00009408, 0x000F0000, 0x0000000B, 0x6D5F4D6F,
+    0x64656C53, 0x697A65E4, 0x00000094, 0x08000D00, 0x00000000, 0x0B6D5F6E, 0x54797065, 0x466C6167,
+    0xE6000000, 0x94080002, 0x00000000, 0x00086D5F, 0x6E416E69, 0x6D73E700, 0x00009408, 0x00020000,
+    0x00000009, 0x6D5F6E4D, 0x6F64656C, 0x73E80000, 0x00960800, 0x08001800, 0x00000000, 0x0C43524F,
+    0x4D426F75, 0x6E64735F, 0x74086D5F, 0x426F756E, 0x64730001, 0x00009408, 0x000F0000, 0x00000009,
+    0x6D5F6477, 0x466C6167, 0x73040100, 0x00960800, 0x08001400, 0x00000000, 0x13434761, 0x6D65416E,
+    0x696D6174, 0x65537461, 0x74655F74, 0x0B6D5F61, 0x73437572, 0x72656E74, 0x18010000, 0x96080008,
+    0x00140000, 0x00000013, 0x4347616D, 0x65416E69, 0x6D617465, 0x53746174, 0x655F7409, 0x6D5F6173,
+    0x426C656E, 0x642C0100, 0x00940800, 0x03000000, 0x00000D6D, 0x5F426C65, 0x6E644C65, 0x6E677468,
+    0x30010000, 0x94080006, 0x00000000, 0x000A6D5F, 0x75426C65, 0x6E646572, 0x34010000, 0x94080006,
+    0x00000000, 0x000A6D5F, 0x426C656E, 0x64506F73, 0x38010000, 0x9408000C, 0x00000000, 0x000C6D5F,
+    0x426C656E, 0x64537461, 0x72743901, 0x00009408, 0x000C0000, 0x0000000D, 0x6D5F426C, 0x656E6446,
+    0x696E6973, 0x683A0100, 0x00940800, 0x0C000000, 0x00000D6D, 0x5F536861, 0x646F7741, 0x6C706861,
+    0x3B010000, 0x9408000C, 0x00000000, 0x00106D5F, 0x41637469, 0x76655377, 0x6F6F7368, 0x65734001,
+    0x00009608, 0x00380030, 0x00000001, 0x00020000, 0x00072E33, 0x3666616B, 0x65086D5F, 0x4C696768,
+    0x74737001, 0x00009608, 0x00080070, 0x01000000, 0x00054341, 0x495F7404,
 };
-typedef char sn64_runtime_type_records_size_check[(sizeof(Sn64RuntimeTypeRecords) == 12792) ? 1 : -1];

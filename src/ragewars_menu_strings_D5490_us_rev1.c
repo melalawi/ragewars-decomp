@@ -1,183 +1,75 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D5490 {
-    char label_gauntlet_0[12]; /* ROM0xD5490 */
-    char label_frag_fest_1[12]; /* ROM0xD549C */
-    char label_time_trial_2[12]; /* ROM0xD54A8 */
-    char label_player_d_3[12]; /* ROM0xD54B4 */
-    char label_acquired_eagle_talisman_1_up_4[32]; /* ROM0xD54C0 */
-    char label_acquired_half_eagle_talisman_another_gives_1_up_5[52]; /* ROM0xD54E0 */
-    char label_acquired_the_other_eagle_talisman_gained_1_up_6[48]; /* ROM0xD5514 */
-    char label_acquired_bear_talisman_explosive_ammo_up_5_7[44]; /* ROM0xD5544 */
-    char label_acquired_coyote_talisman_bullet_ammo_up_50_8[44]; /* ROM0xD5570 */
-    char label_acquired_cougar_talisman_energy_ammo_up_50_9[44]; /* ROM0xD559C */
-    char label_acquired_viper_talisman_health_max_up_5_10[44]; /* ROM0xD55C8 */
-    char label_acquired_cooperative_talisman_11[32]; /* ROM0xD55F4 */
-    char label_acquired_minigame_icon_12[24]; /* ROM0xD5614 */
-    char label_acquired_assault_rifle_13[24]; /* ROM0xD562C */
-    char label_acquired_assault_rifle_rapid_fire_upgrade_14[44]; /* ROM0xD5644 */
-    char label_acquired_tek_cross_bow_sniper_scope_15[36]; /* ROM0xD5670 */
-    char label_acquired_grenade_launcher_16[28]; /* ROM0xD5694 */
-    char label_acquired_grenade_launcher_upgrade_17[36]; /* ROM0xD56B0 */
-    char label_acquired_plasma_rifle_18[24]; /* ROM0xD56D4 */
-    char label_acquired_plasma_rifle_scope_19[28]; /* ROM0xD56EC */
-    char label_acquired_acid_spit_attack_20[28]; /* ROM0xD5708 */
-    char label_acquired_jump_claw_attack_21[28]; /* ROM0xD5724 */
-    char label_acquired_radioactive_flare_gun_22[32]; /* ROM0xD5740 */
-    char label_acquired_radioactive_flare_gun_upgrade_23[40]; /* ROM0xD5760 */
-    char label_acquired_scorpion_launcher_24[28]; /* ROM0xD5788 */
-    char label_acquired_scorpion_launcher_magnet_upgrade_25[44]; /* ROM0xD57A4 */
-    char label_acquired_freeze_gun_26[20]; /* ROM0xD57D0 */
-    char label_acquired_freeze_gun_upgrade_27[28]; /* ROM0xD57E4 */
-    char label_acquired_napalm_gel_28[20]; /* ROM0xD5800 */
-    char label_acquired_mag_60_laser_sight_upgrade_29[36]; /* ROM0xD5814 */
-    char label_acquired_chestburster_30[24]; /* ROM0xD5838 */
-    char label_acquired_inflator_31[20]; /* ROM0xD5850 */
-    char label_acquired_inflator_upgrade_32[28]; /* ROM0xD5864 */
-    char label_acquired_boomerang_33[20]; /* ROM0xD5880 */
-    char label_acquired_boomerang_upgrade_34[28]; /* ROM0xD5894 */
-    char label_acquired_minigun_35[20]; /* ROM0xD58B0 */
-    char label_acquired_minigun_personal_shield_upgrade_36[44]; /* ROM0xD58C4 */
-    char label_acquired_shotgun_streetsweeper_upgrade_37[40]; /* ROM0xD58F0 */
-    char label_acquired_emaciator_38[20]; /* ROM0xD5918 */
-    char label_acquired_emaciator_upgrade_39[28]; /* ROM0xD592C */
-    char label_acquired_warhammer_rocket_upgrade_40[36]; /* ROM0xD5948 */
-    char label_you_have_unlocked_s_41[24]; /* ROM0xD596C */
-    char label_mission_failed_42[16]; /* ROM0xD5984 */
-    char label_item_previously_acquired_43[28]; /* ROM0xD5994 */
-    char label_team_44[8]; /* ROM0xD59B0 */
-    char label_hit_45[8]; /* ROM0xD59B8 */
-    char label_tags_46[8]; /* ROM0xD59C0 */
-    char label_flags_47[8]; /* ROM0xD59C8 */
-    char label_congratulations_you_have_completed_frag_fest_48[48]; /* ROM0xD59D0 */
-    char label_congratulations_you_have_completed_time_trial_49[48]; /* ROM0xD5A00 */
-    char label_english_50[8]; /* ROM0xD5A30 */
-    char label_pistol_clip_10_rounds_51[24]; /* ROM0xD5A38 */
-    char label_rifle_clip_10_rounds_52[24]; /* ROM0xD5A50 */
-    char label_difficulty_easy_53[24]; /* ROM0xD5A68 */
-    char label_difficulty_normal_54[24]; /* ROM0xD5A80 */
-    char label_difficulty_hard_55[24]; /* ROM0xD5A98 */
-    char label_control_type_expert_56[24]; /* ROM0xD5AB0 */
-    char label_control_type_arcade_57[24]; /* ROM0xD5AC8 */
-    char label_control_type_58[24]; /* ROM0xD5AE0 */
-    char label_control_side_left_59[24]; /* ROM0xD5AF8 */
-    char label_control_side_right_60[24]; /* ROM0xD5B10 */
-    char label_look_spring_on_61[24]; /* ROM0xD5B28 */
-    char label_look_spring_off_62[24]; /* ROM0xD5B40 */
-    char label_auto_aim_on_63[24]; /* ROM0xD5B58 */
-    char label_auto_aim_off_64[24]; /* ROM0xD5B70 */
-    char label_blood_color_off_65[24]; /* ROM0xD5B88 */
-    char label_blood_color_red_66[24]; /* ROM0xD5BA0 */
-    char label_blood_color_green_67[24]; /* ROM0xD5BB8 */
-    char label_2_plyr_layout_horz_68[24]; /* ROM0xD5BD0 */
-    char label_2_plyr_layout_vert_69[24]; /* ROM0xD5BE8 */
-    char label_opacity_clear_70[24]; /* ROM0xD5C00 */
-    char label_opacity_opaque_71[24]; /* ROM0xD5C18 */
-    char label_opacity_72[24]; /* ROM0xD5C30 */
-    char label_control_stick_horz_norm_73[24]; /* ROM0xD5C48 */
-    char label_control_stick_horz_74[24]; /* ROM0xD5C60 */
-    char label_control_stick_vert_norm_75[24]; /* ROM0xD5C78 */
-    char label_control_stick_vert_76[24]; /* ROM0xD5C90 */
-    char label_weapon_select_quick_77[24]; /* ROM0xD5CA8 */
-    char label_weapon_select_norm_78[24]; /* ROM0xD5CC0 */
-    char label_resolution_lo_rez_79[24]; /* ROM0xD5CD8 */
-    char label_resolution_hi_rez_80[24]; /* ROM0xD5CF0 */
-    char label_resolution_hi_rez_lb_81[24]; /* ROM0xD5D08 */
-    char label_resolution_sm_lo_rez_82[24]; /* ROM0xD5D20 */
-    char label_resolution_lo_rez_lb_83[24]; /* ROM0xD5D38 */
-    char label_brightness_norm_84[24]; /* ROM0xD5D50 */
-    char label_brightness_85[24]; /* ROM0xD5D68 */
-    char label_language_english_86[24]; /* ROM0xD5D80 */
-    char label_go_back_87[8]; /* ROM0xD5D98 */
+unsigned int D_auto_src_ragewars_menu_strings_D5490_us_rev1[580] = {
+    0x4741554E, 0x544C4554, 0x00000000, 0x46524147, 0x20464553, 0x54000000, 0x54494D45, 0x20545249,
+    0x414C0000, 0x504C4159, 0x45522564, 0x00000000, 0x41435155, 0x49524544, 0x20454147, 0x4C452054,
+    0x414C4953, 0x4D414E2E, 0x20312055, 0x50210000, 0x41435155, 0x49524544, 0x2048414C, 0x46204541,
+    0x474C4520, 0x54414C49, 0x534D414E, 0x2E20414E, 0x6F544845, 0x52204749, 0x56455320, 0x31205550,
+    0x00000000, 0x41435155, 0x49524544, 0x20544845, 0x204F5448, 0x45522045, 0x41474C45, 0x2054414C,
+    0x49534D41, 0x4E2C2047, 0x41494E45, 0x44203120, 0x55502100, 0x41435155, 0x49524544, 0x20424541,
+    0x52205441, 0x4C49534D, 0x414E2E20, 0x4558504C, 0x4F534956, 0x4520414D, 0x4D4F2055, 0x50203500,
+    0x41435155, 0x49524544, 0x20434F59, 0x4F544520, 0x54414C49, 0x534D414E, 0x2E204255, 0x4C4C4554,
+    0x20414D4D, 0x4F205550, 0x20353000, 0x41435155, 0x49524544, 0x20434F55, 0x47415220, 0x54414C49,
+    0x534D414E, 0x2E20454E, 0x45524759, 0x20414D4D, 0x4F205550, 0x20353000, 0x41435155, 0x49524544,
+    0x20564950, 0x45522054, 0x414C4953, 0x4D414E2E, 0x20484541, 0x6C544820, 0x4D415820, 0x55502035,
+    0x00000000, 0x41435155, 0x49524544, 0x20434F4F, 0x50455241, 0x54495645, 0x2054414C, 0x49534D41,
+    0x4E000000, 0x41435155, 0x49524544, 0x204D494E, 0x4947414D, 0x45204943, 0x4F4E0000, 0x41435155,
+    0x49524544, 0x20415353, 0x41554C54, 0x20524946, 0x4C450000, 0x41435155, 0x49524544, 0x20415353,
+    0x41554C54, 0x20524946, 0x4C452052, 0x41504944, 0x20464952, 0x45205550, 0x47524144, 0x45000000,
+    0x41435155, 0x49524544, 0x2054454B, 0x2043524F, 0x53532042, 0x4F572053, 0x4E495045, 0x52205343,
+    0x4F504500, 0x41435155, 0x49524544, 0x20475245, 0x4E414445, 0x204C4155, 0x4E434845, 0x52000000,
+    0x41435155, 0x49524544, 0x20475245, 0x4E414445, 0x204C4155, 0x4E434845, 0x52205550, 0x47524144,
+    0x45000000, 0x41435155, 0x49524544, 0x20504C41, 0x534D4120, 0x5249464C, 0x45000000, 0x41435155,
+    0x49524544, 0x20504C41, 0x534D4120, 0x5249464C, 0x45205343, 0x4F504500, 0x41435155, 0x49524544,
+    0x20414349, 0x44205350, 0x49542041, 0x54544143, 0x4B000000, 0x41435155, 0x49524544, 0x204A554D,
+    0x5020434C, 0x41572041, 0x54544143, 0x4B000000, 0x41435155, 0x49524544, 0x20524144, 0x494F4143,
+    0x54495645, 0x20464C41, 0x52452047, 0x554E0000, 0x41435155, 0x49524544, 0x20524144, 0x494F4143,
+    0x54495645, 0x20464C41, 0x52452047, 0x554E2055, 0x50475241, 0x44450000, 0x41435155, 0x49524544,
+    0x2053434F, 0x5250494F, 0x4E204C41, 0x554E4348, 0x45520000, 0x41435155, 0x49524544, 0x2053434F,
+    0x5250494F, 0x4E204C41, 0x554E4348, 0x4552204D, 0x41474E45, 0x54205550, 0x47524144, 0x45000000,
+    0x41435155, 0x49524544, 0x20465245, 0x455A4520, 0x47554E00, 0x41435155, 0x49524544, 0x20465245,
+    0x455A4520, 0x47554E20, 0x55504752, 0x41444500, 0x41435155, 0x49524544, 0x204E4150, 0x414C4D20,
+    0x47454C00, 0x41435155, 0x49524544, 0x204D4147, 0x20363020, 0x4C415345, 0x52205349, 0x47485420,
+    0x55504752, 0x41444500, 0x41435155, 0x49524544, 0x20434845, 0x53544255, 0x52535445, 0x52000000,
+    0x41435155, 0x49524544, 0x20494E46, 0x4C41544F, 0x52000000, 0x41435155, 0x49524544, 0x20494E46,
+    0x4C41544F, 0x52205550, 0x47524144, 0x45000000, 0x41435155, 0x49524544, 0x20424F4F, 0x4D455241,
+    0x4E470000, 0x41435155, 0x49524544, 0x20424F4F, 0x4D455241, 0x4E472055, 0x50475241, 0x44450000,
+    0x41435155, 0x49524544, 0x204D494E, 0x4947554E, 0x00000000, 0x41435155, 0x49524544, 0x204D494E,
+    0x4947554E, 0x20504552, 0x534F4E41, 0x4C205348, 0x49454C44, 0x20555047, 0x52414445, 0x00000000,
+    0x41435155, 0x49524544, 0x2053484F, 0x5447554E, 0x20535452, 0x45455453, 0x57454550, 0x45522055,
+    0x50475241, 0x44450000, 0x41435155, 0x49524544, 0x20454D41, 0x43494154, 0x4F520000, 0x41435155,
+    0x49524544, 0x20454D41, 0x43494154, 0x4F522055, 0x50475241, 0x44450000, 0x41435155, 0x49524544,
+    0x20574152, 0x48414D4D, 0x45522052, 0x4F434B45, 0x54205550, 0x47524144, 0x45000000, 0x594F5520,
+    0x48415645, 0x20554E4C, 0x4F434B45, 0x44202573, 0x00000000, 0x4D495353, 0x494F4E20, 0x4641494C,
+    0x45440000, 0x4954454D, 0x20505245, 0x56494F55, 0x534C5920, 0x41435155, 0x49524544, 0x00000000,
+    0x5445414D, 0x00000000, 0x48495425, 0x00000000, 0x54414753, 0x00000000, 0x464C4147, 0x53000000,
+    0x434F4E47, 0x52415455, 0x4C415449, 0x4F4E5321, 0x20594F55, 0x20484156, 0x4520434F, 0x4D504C45,
+    0x54454420, 0x46524147, 0x20464553, 0x54000000, 0x434F4E47, 0x52415455, 0x4C415449, 0x4F4E5321,
+    0x20594F55, 0x20484156, 0x4520434F, 0x4D504C45, 0x54454420, 0x54494D45, 0x20545249, 0x414C0000,
+    0x454E474C, 0x49534800, 0x70697374, 0x6F6C2063, 0x6C697020, 0x28313020, 0x726F756E, 0x64732900,
+    0x7269666C, 0x6520636C, 0x69702028, 0x31302072, 0x6F756E64, 0x73290000, 0x64696666, 0x6963756C,
+    0x74792020, 0x203A2020, 0x20202065, 0x61737900, 0x64696666, 0x6963756C, 0x74792020, 0x203A2020,
+    0x206E6F72, 0x6D616C00, 0x64696666, 0x6963756C, 0x74792020, 0x203A2020, 0x20202068, 0x61726400,
+    0x636F6E74, 0x726F6C20, 0x74797065, 0x203A2020, 0x20657870, 0x65727400, 0x636F6E74, 0x726F6C20,
+    0x74797065, 0x203A2020, 0x20617263, 0x61646500, 0x636F6E74, 0x726F6C20, 0x74797065, 0x203A2020,
+    0x203F3F3F, 0x3F3F3F00, 0x636F6E74, 0x726F6C20, 0x73696465, 0x203A2020, 0x2020206C, 0x65667400,
+    0x636F6E74, 0x726F6C20, 0x73696465, 0x203A2020, 0x20207269, 0x67687400, 0x6C6F6F6B, 0x20737072,
+    0x696E6720, 0x203A2020, 0x20202020, 0x206F6E00, 0x6C6F6F6B, 0x20737072, 0x696E6720, 0x203A2020,
+    0x20202020, 0x6F666600, 0x6175746F, 0x2061696D, 0x20202020, 0x203A2020, 0x20202020, 0x206F6E00,
+    0x6175746F, 0x2061696D, 0x20202020, 0x203A2020, 0x20202020, 0x6F666600, 0x626C6F6F, 0x6420636F,
+    0x6C6F7220, 0x203A2020, 0x20202020, 0x6F666600, 0x626C6F6F, 0x6420636F, 0x6C6F7220, 0x203A2020,
+    0x20202020, 0x72656400, 0x626C6F6F, 0x6420636F, 0x6C6F7220, 0x203A2020, 0x20206772, 0x65656E00,
+    0x3220706C, 0x7972206C, 0x61796F75, 0x743A2020, 0x20202068, 0x6F727A00, 0x3220706C, 0x7972206C,
+    0x61796F75, 0x743A2020, 0x20202076, 0x65727400, 0x6F706163, 0x69747920, 0x20202020, 0x203A2020,
+    0x2020636C, 0x65617200, 0x6F706163, 0x69747920, 0x20202020, 0x203A2020, 0x206F7061, 0x71756500,
+    0x6F706163, 0x69747920, 0x20202020, 0x203A2020, 0x20202020, 0x20202000, 0x636F6E74, 0x726F6C20,
+    0x73746963, 0x6B20686F, 0x727A3A6E, 0x6F726D00, 0x636F6E74, 0x726F6C20, 0x73746963, 0x6B20686F,
+    0x727A3A20, 0x20202000, 0x636F6E74, 0x726F6C20, 0x73746963, 0x6B207665, 0x72743A6E, 0x6F726D00,
+    0x636F6E74, 0x726F6C20, 0x73746963, 0x6B207665, 0x72743A20, 0x20202000, 0x57656170, 0x6F6E2053,
+    0x656C6563, 0x743A2020, 0x20207175, 0x69636B00, 0x57656170, 0x6F6E2053, 0x656C6563, 0x743A2020,
+    0x2020206E, 0x6F726D00, 0x5265736F, 0x6C757469, 0x6F6E2020, 0x203A2020, 0x206C6F2D, 0x72657A00,
+    0x5265736F, 0x6C757469, 0x6F6E2020, 0x203A2020, 0x2068692D, 0x72657A00, 0x5265736F, 0x6C757469,
+    0x6F6E2020, 0x203A6869, 0x2D72657A, 0x2D6C6200, 0x5265736F, 0x6C757469, 0x6F6E2020, 0x203A736D,
+    0x2D6C6F2D, 0x72657A00, 0x5265736F, 0x6C757469, 0x6F6E2020, 0x203A6C6F, 0x2D72657A, 0x2D6C6200,
+    0x62726967, 0x68746E65, 0x73732020, 0x203A2020, 0x2020206E, 0x6F726D00, 0x62726967, 0x68746E65,
+    0x73732020, 0x203A2020, 0x20202020, 0x20202000, 0x6C616E67, 0x75616765, 0x20202020, 0x203A2020,
+    0x656E676C, 0x69736800, 0x676F2062, 0x61636B00,
 };
-const struct MenuStrings_D5490 ragewars_menu_strings_D5490_us_rev1 = {
-    "GAUNTLET",
-    "FRAG FEST",
-    "TIME TRIAL",
-    "PLAYER%d",
-    "ACQUIRED EAGLE TALISMAN. 1 UP!",
-    "ACQUIRED HALF EAGLE TALISMAN. ANoTHER GIVES 1 UP",
-    "ACQUIRED THE OTHER EAGLE TALISMAN, GAINED 1 UP!",
-    "ACQUIRED BEAR TALISMAN. EXPLOSIVE AMMO UP 5",
-    "ACQUIRED COYOTE TALISMAN. BULLET AMMO UP 50",
-    "ACQUIRED COUGAR TALISMAN. ENERGY AMMO UP 50",
-    "ACQUIRED VIPER TALISMAN. HEAlTH MAX UP 5",
-    "ACQUIRED COOPERATIVE TALISMAN",
-    "ACQUIRED MINIGAME ICON",
-    "ACQUIRED ASSAULT RIFLE",
-    "ACQUIRED ASSAULT RIFLE RAPID FIRE UPGRADE",
-    "ACQUIRED TEK CROSS BOW SNIPER SCOPE",
-    "ACQUIRED GRENADE LAUNCHER",
-    "ACQUIRED GRENADE LAUNCHER UPGRADE",
-    "ACQUIRED PLASMA RIFLE",
-    "ACQUIRED PLASMA RIFLE SCOPE",
-    "ACQUIRED ACID SPIT ATTACK",
-    "ACQUIRED JUMP CLAW ATTACK",
-    "ACQUIRED RADIOACTIVE FLARE GUN",
-    "ACQUIRED RADIOACTIVE FLARE GUN UPGRADE",
-    "ACQUIRED SCORPION LAUNCHER",
-    "ACQUIRED SCORPION LAUNCHER MAGNET UPGRADE",
-    "ACQUIRED FREEZE GUN",
-    "ACQUIRED FREEZE GUN UPGRADE",
-    "ACQUIRED NAPALM GEL",
-    "ACQUIRED MAG 60 LASER SIGHT UPGRADE",
-    "ACQUIRED CHESTBURSTER",
-    "ACQUIRED INFLATOR",
-    "ACQUIRED INFLATOR UPGRADE",
-    "ACQUIRED BOOMERANG",
-    "ACQUIRED BOOMERANG UPGRADE",
-    "ACQUIRED MINIGUN",
-    "ACQUIRED MINIGUN PERSONAL SHIELD UPGRADE",
-    "ACQUIRED SHOTGUN STREETSWEEPER UPGRADE",
-    "ACQUIRED EMACIATOR",
-    "ACQUIRED EMACIATOR UPGRADE",
-    "ACQUIRED WARHAMMER ROCKET UPGRADE",
-    "YOU HAVE UNLOCKED %s",
-    "MISSION FAILED",
-    "ITEM PREVIOUSLY ACQUIRED",
-    "TEAM",
-    "HIT%",
-    "TAGS",
-    "FLAGS",
-    "CONGRATULATIONS! YOU HAVE COMPLETED FRAG FEST",
-    "CONGRATULATIONS! YOU HAVE COMPLETED TIME TRIAL",
-    "ENGLISH",
-    "pistol clip (10 rounds)",
-    "rifle clip (10 rounds)",
-    "difficulty   :     easy",
-    "difficulty   :   normal",
-    "difficulty   :     hard",
-    "control type :   expert",
-    "control type :   arcade",
-    "control type :   ??????",
-    "control side :     left",
-    "control side :    right",
-    "look spring  :       on",
-    "look spring  :      off",
-    "auto aim     :       on",
-    "auto aim     :      off",
-    "blood color  :      off",
-    "blood color  :      red",
-    "blood color  :    green",
-    "2 plyr layout:     horz",
-    "2 plyr layout:     vert",
-    "opacity      :    clear",
-    "opacity      :   opaque",
-    "opacity      :         ",
-    "control stick horz:norm",
-    "control stick horz:    ",
-    "control stick vert:norm",
-    "control stick vert:    ",
-    "Weapon Select:    quick",
-    "Weapon Select:     norm",
-    "Resolution   :   lo-rez",
-    "Resolution   :   hi-rez",
-    "Resolution   :hi-rez-lb",
-    "Resolution   :sm-lo-rez",
-    "Resolution   :lo-rez-lb",
-    "brightness   :     norm",
-    "brightness   :         ",
-    "language     :  english",
-    "go back"
-};
-typedef char menu_strings_size_D5490[(sizeof(struct MenuStrings_D5490) == 2320) ? 1 : -1];

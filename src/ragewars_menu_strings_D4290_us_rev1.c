@@ -1,543 +1,141 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D4290 {
-    char label_2_health_0[12]; /* ROM0xD4290 */
-    char label_10_health_1[12]; /* ROM0xD429C */
-    char label_15_health_2[12]; /* ROM0xD42A8 */
-    char label_25_health_3[12]; /* ROM0xD42B4 */
-    char label_50_health_4[12]; /* ROM0xD42C0 */
-    char label_full_health_5[12]; /* ROM0xD42CC */
-    char label_ultra_health_6[16]; /* ROM0xD42D8 */
-    char label_1_life_force_7[16]; /* ROM0xD42E8 */
-    char label_10_life_force_8[16]; /* ROM0xD42F8 */
-    char label_invincibility_9[16]; /* ROM0xD4308 */
-    char label_plane_walker_10[16]; /* ROM0xD4318 */
-    char label_flashlight_11[12]; /* ROM0xD4328 */
-    char label_flashlight_battery_12[20]; /* ROM0xD4334 */
-    char label_infrared_goggles_13[20]; /* ROM0xD4348 */
-    char label_breath_of_life_14[16]; /* ROM0xD435C */
-    char label_eye_of_truth_15[16]; /* ROM0xD436C */
-    char label_leap_of_faith_16[16]; /* ROM0xD437C */
-    char label_whispers_17[12]; /* ROM0xD438C */
-    char label_heart_of_fire_18[16]; /* ROM0xD4398 */
-    char label_blue_eagle_feather_19[20]; /* ROM0xD43A8 */
-    char label_grey_eagle_feather_20[20]; /* ROM0xD43BC */
-    char label_brown_eagle_feather_21[20]; /* ROM0xD43D0 */
-    char label_purple_eagle_feather_22[24]; /* ROM0xD43E4 */
-    char label_red_eagle_feather_23[20]; /* ROM0xD43FC */
-    char label_nuke_weapon_part_24[20]; /* ROM0xD4410 */
-    char label_retaliation_25[16]; /* ROM0xD4424 */
-    char label_flag_was_claimed_26[20]; /* ROM0xD4434 */
-    char label_flag_was_captured_27[20]; /* ROM0xD4448 */
-    char label_flag_returned_28[16]; /* ROM0xD445C */
-    char label_the_power_is_yours_29[20]; /* ROM0xD446C */
-    char label_function_not_available_30[24]; /* ROM0xD4480 */
-    char label_warhammer_31[12]; /* ROM0xD4498 */
-    char label_raptor_claw_32[12]; /* ROM0xD44A4 */
-    char label_mite_bite_33[12]; /* ROM0xD44B0 */
-    char label_boomerang_34[12]; /* ROM0xD44BC */
-    char label_tek_crossbow_35[16]; /* ROM0xD44C8 */
-    char label_mag_60_36[8]; /* ROM0xD44D8 */
-    char label_shotgun_37[8]; /* ROM0xD44E0 */
-    char label_assault_rifle_38[16]; /* ROM0xD44E8 */
-    char label_minigun_39[8]; /* ROM0xD44F8 */
-    char label_plasma_rifle_40[16]; /* ROM0xD4500 */
-    char label_freeze_gun_41[12]; /* ROM0xD4510 */
-    char label_flare_gun_42[12]; /* ROM0xD451C */
-    char label_grenades_43[12]; /* ROM0xD4528 */
-    char label_scorpion_44[12]; /* ROM0xD4534 */
-    char label_napalm_gel_45[12]; /* ROM0xD4540 */
-    char label_emaciator_46[12]; /* ROM0xD454C */
-    char label_inflator_47[12]; /* ROM0xD4558 */
-    char label_chest_burster_48[16]; /* ROM0xD4564 */
-    char label_cerebral_bore_49[16]; /* ROM0xD4574 */
-    char label_pfm_mine_50[12]; /* ROM0xD4584 */
-    char label_iron_claw_51[12]; /* ROM0xD4590 */
-    char label_teleport_mine_52[16]; /* ROM0xD459C */
-    char label_sentry_turret_53[16]; /* ROM0xD45AC */
-    char label_attract_removed_54[16]; /* ROM0xD45BC */
-    char label_attract_marked_55[16]; /* ROM0xD45CC */
-    char label_repulse_marked_56[16]; /* ROM0xD45DC */
-    char label_joined_team_coyote_57[20]; /* ROM0xD45EC */
-    char label_joined_team_bear_58[20]; /* ROM0xD4600 */
-    char label_joined_team_cougar_59[20]; /* ROM0xD4614 */
-    char label_joined_team_viper_60[20]; /* ROM0xD4628 */
-    char label_you_fragged_yourself_61[24]; /* ROM0xD463C */
-    char label_mangled_by_s_62[16]; /* ROM0xD4654 */
-    char label_fragged_by_s_63[16]; /* ROM0xD4664 */
-    char label_smacked_by_s_64[16]; /* ROM0xD4674 */
-    char label_s_obliterated_you_65[20]; /* ROM0xD4684 */
-    char label_s_butchered_you_66[20]; /* ROM0xD4698 */
-    char label_s_crushed_you_67[16]; /* ROM0xD46AC */
-    char label_pounded_by_s_68[16]; /* ROM0xD46BC */
-    char label_your_other_left_69[20]; /* ROM0xD46CC */
-    char label_oops_70[8]; /* ROM0xD46E0 */
-    char label_bad_move_71[12]; /* ROM0xD46E8 */
-    char label_um_watch_your_step_72[24]; /* ROM0xD46F4 */
-    char label_oops_73[8]; /* ROM0xD470C */
-    char label_you_were_bested_74[20]; /* ROM0xD4714 */
-    char label_munch_75[8]; /* ROM0xD4728 */
-    char label_embryo_implanted_76[20]; /* ROM0xD4730 */
-    char label_embryo_destroyed_77[20]; /* ROM0xD4744 */
-    char label_smack_s_78[12]; /* ROM0xD4758 */
-    char label_or_find_power_core_79[20]; /* ROM0xD4764 */
-    char label_energy_rounds_80[16]; /* ROM0xD4778 */
-    char label_energy_rounds_81[16]; /* ROM0xD4788 */
-    char label_bullet_rounds_82[16]; /* ROM0xD4798 */
-    char label_bullet_rounds_83[16]; /* ROM0xD47A8 */
-    char label_explosive_rounds_84[20]; /* ROM0xD47B8 */
-    char label_explosive_rounds_85[20]; /* ROM0xD47CC */
-    char label_ammo_pack_86[12]; /* ROM0xD47E0 */
-    char label_bullet_87[8]; /* ROM0xD47EC */
-    char label_energy_round_88[16]; /* ROM0xD47F4 */
-    char label_explosive_round_89[16]; /* ROM0xD4804 */
-    char label_cerebral_bore_90[16]; /* ROM0xD4814 */
-    char label_pfm_mine_91[12]; /* ROM0xD4824 */
-    char label_sentry_turret_92[16]; /* ROM0xD4830 */
-    char label_iron_claw_93[12]; /* ROM0xD4840 */
-    char label_teleport_mine_94[16]; /* ROM0xD484C */
-    char label_slow_time_95[16]; /* ROM0xD485C */
-    char label_blast_shield_96[16]; /* ROM0xD486C */
-    char label_regeneration_97[16]; /* ROM0xD487C */
-    char label_petrify_98[12]; /* ROM0xD488C */
-    char label_damage_reversal_99[20]; /* ROM0xD4898 */
-    char label_invisibility_100[16]; /* ROM0xD48AC */
-    char label_life_force_vampire_101[24]; /* ROM0xD48BC */
-    char label_speed_burst_102[16]; /* ROM0xD48D4 */
-    char label_teleportation_103[20]; /* ROM0xD48E4 */
-    char label_teleported_to_safety_104[28]; /* ROM0xD48F8 */
-    char label_massive_damage_105[20]; /* ROM0xD4914 */
-    char label_invunerability_106[20]; /* ROM0xD4928 */
-    char label_bullet_shield_107[20]; /* ROM0xD493C */
-    char label_energy_absorption_108[24]; /* ROM0xD4950 */
-    char label_something_else_109[20]; /* ROM0xD4968 */
-    char label_shield_110[8]; /* ROM0xD497C */
-    char label_novice_111[8]; /* ROM0xD4984 */
-    char label_newcomer_112[12]; /* ROM0xD498C */
-    char label_grunt_113[8]; /* ROM0xD4998 */
-    char label_scout_114[8]; /* ROM0xD49A0 */
-    char label_brave_115[8]; /* ROM0xD49A8 */
-    char label_tracker_116[8]; /* ROM0xD49B0 */
-    char label_hunter_117[8]; /* ROM0xD49B8 */
-    char label_warrior_118[8]; /* ROM0xD49C0 */
-    char label_darkling_119[12]; /* ROM0xD49C8 */
-    char label_seeker_120[8]; /* ROM0xD49D4 */
-    char label_assassin_121[12]; /* ROM0xD49DC */
-    char label_bane_122[8]; /* ROM0xD49E8 */
-    char label_warlord_123[8]; /* ROM0xD49F0 */
-    char label_deathwind_124[12]; /* ROM0xD49F8 */
-    char label_conqueror_125[12]; /* ROM0xD4A04 */
-    char label_master_126[8]; /* ROM0xD4A10 */
-    char label_tyrant_127[8]; /* ROM0xD4A18 */
-    char label_warslave_128[12]; /* ROM0xD4A20 */
-    char label_godhand_129[8]; /* ROM0xD4A2C */
-    char label_chieftain_130[12]; /* ROM0xD4A34 */
-    char label_achievement_on_proving_grounds_131[32]; /* ROM0xD4A40 */
-    char label_achievement_on_basic_training_132[32]; /* ROM0xD4A60 */
-    char label_achievement_on_crossroads_133[28]; /* ROM0xD4A80 */
-    char label_achievement_on_grim_retreat_134[28]; /* ROM0xD4A9C */
-    char label_achievement_on_cathedral_135[28]; /* ROM0xD4AB8 */
-    char label_achievement_on_fallout_136[24]; /* ROM0xD4AD4 */
-    char label_achievement_on_boxed_set_137[28]; /* ROM0xD4AEC */
-    char label_achievement_on_dire_straight_138[32]; /* ROM0xD4B08 */
-    char label_achievement_on_prey_139[20]; /* ROM0xD4B28 */
-    char label_achievement_on_warehouse_140[28]; /* ROM0xD4B3C */
-    char label_achievement_on_water_temple_141[28]; /* ROM0xD4B58 */
-    char label_achievement_on_bomb_shelter_142[28]; /* ROM0xD4B74 */
-    char label_achievement_on_tempered_143[24]; /* ROM0xD4B90 */
-    char label_achievement_on_earth_temple_144[28]; /* ROM0xD4BA8 */
-    char label_achievement_on_fire_temple_145[28]; /* ROM0xD4BC4 */
-    char label_achievement_on_mystic_146[24]; /* ROM0xD4BE0 */
-    char label_achievement_on_bottleneck_147[28]; /* ROM0xD4BF8 */
-    char label_achievement_on_tightrope_148[28]; /* ROM0xD4C14 */
-    char label_achievement_on_the_pit_149[24]; /* ROM0xD4C30 */
-    char label_achievement_on_leap_of_faith_150[32]; /* ROM0xD4C48 */
-    char label_achievement_on_wicked_dance_151[28]; /* ROM0xD4C68 */
-    char label_achievement_on_bunker_152[24]; /* ROM0xD4C84 */
-    char label_achievement_on_amphitheater_153[28]; /* ROM0xD4C9C */
-    char label_achievement_on_fire_walker_154[28]; /* ROM0xD4CB8 */
-    char label_achievement_on_crypts_155[24]; /* ROM0xD4CD4 */
-    char label_achievement_on_breakdown_156[28]; /* ROM0xD4CEC */
-    char label_achievement_on_retaliation_157[28]; /* ROM0xD4D08 */
-    char label_achievement_on_hopeless_158[24]; /* ROM0xD4D24 */
-    char label_achievement_on_matrix_159[24]; /* ROM0xD4D3C */
-    char label_achievement_on_fathom_160[24]; /* ROM0xD4D54 */
-    char label_achievement_on_the_pedestal_161[28]; /* ROM0xD4D6C */
-    char label_achievement_on_defcon_5_162[24]; /* ROM0xD4D88 */
-    char label_achievement_on_spirit_temple_163[32]; /* ROM0xD4DA0 */
-    char label_achievement_on_stronghold_164[28]; /* ROM0xD4DC0 */
-    char label_achievement_on_courtyard_165[28]; /* ROM0xD4DDC */
-    char label_achievement_on_starlight_166[28]; /* ROM0xD4DF8 */
-    char label_attained_15_frags_in_5_minutes_167[32]; /* ROM0xD4E14 */
-    char label_attained_25_frags_in_10_minutes_168[32]; /* ROM0xD4E34 */
-    char label_not_getting_any_frags_169[24]; /* ROM0xD4E54 */
-    char label_killing_yourself_5_times_170[28]; /* ROM0xD4E6C */
-    char label_coming_in_last_171[16]; /* ROM0xD4E88 */
-    char label_total_frag_award_172[20]; /* ROM0xD4E98 */
-    char label_total_being_killed_award_173[28]; /* ROM0xD4EAC */
-    char label_sniping_10_people_in_a_round_174[32]; /* ROM0xD4EC8 */
-    char label_not_being_killed_in_a_round_175[28]; /* ROM0xD4EE8 */
-    char label_defeated_bastille_176[20]; /* ROM0xD4F04 */
-    char label_defeated_syra_177[16]; /* ROM0xD4F18 */
-    char label_defeated_symbiont_178[20]; /* ROM0xD4F28 */
-    char label_defeated_tal_set_179[20]; /* ROM0xD4F3C */
-    char label_beating_the_cooperative_scenario_180[36]; /* ROM0xD4F50 */
-    char label_empty_181[8]; /* ROM0xD4F74 */
-    char label_new_player_182[16]; /* ROM0xD4F7C */
-    char label_turok_183[8]; /* ROM0xD4F8C */
-    char label_warrior_184[8]; /* ROM0xD4F94 */
-    char label_master_185[8]; /* ROM0xD4F9C */
-    char label_adon_186[8]; /* ROM0xD4FA4 */
-    char label_seeker_187[8]; /* ROM0xD4FAC */
-    char label_huntress_188[12]; /* ROM0xD4FB4 */
-    char label_campain_189[8]; /* ROM0xD4FC0 */
-    char label_slaver_190[8]; /* ROM0xD4FC8 */
-    char label_tyrant_191[8]; /* ROM0xD4FD0 */
-    char label_fireborn_192[12]; /* ROM0xD4FD8 */
-    char label_icelord_193[8]; /* ROM0xD4FE4 */
-    char label_entrail_194[8]; /* ROM0xD4FEC */
-    char label_mites_195[8]; /* ROM0xD4FF4 */
-    char label_compies_196[8]; /* ROM0xD4FFC */
-    char label_teddies_197[8]; /* ROM0xD5004 */
-    char label_juggnaut_198[12]; /* ROM0xD500C */
-    char label_sloth_199[8]; /* ROM0xD5018 */
-    char label_mauler_200[8]; /* ROM0xD5020 */
-    char label_drone_201[8]; /* ROM0xD5028 */
-    char label_grunt_202[8]; /* ROM0xD5030 */
-    char label_slave_203[8]; /* ROM0xD5038 */
-    char label_soldier_204[8]; /* ROM0xD5040 */
-    char label_captain_205[8]; /* ROM0xD5048 */
-    char label_king_206[8]; /* ROM0xD5050 */
-    char label_bastille_207[12]; /* ROM0xD5058 */
-    char label_tal_set_208[8]; /* ROM0xD5064 */
-    char label_syra_209[8]; /* ROM0xD506C */
-    char label_symbiont_210[12]; /* ROM0xD5074 */
-    char label_guardian_211[12]; /* ROM0xD5080 */
-    char label_ravage_212[8]; /* ROM0xD508C */
-    char label_cyclops_213[8]; /* ROM0xD5094 */
-    char label_lorddead_214[12]; /* ROM0xD509C */
-    char label_maggot_215[8]; /* ROM0xD50A8 */
-    char label_vile_216[8]; /* ROM0xD50B0 */
-    char label_elite_217[8]; /* ROM0xD50B8 */
-    char label_biobot_218[8]; /* ROM0xD50C0 */
-    char label_killbot_219[8]; /* ROM0xD50C8 */
-    char label_death_220[8]; /* ROM0xD50D0 */
-    char label_reaper_221[8]; /* ROM0xD50D8 */
-    char label_maw_222[4]; /* ROM0xD50E0 */
-    char label_raptor_223[8]; /* ROM0xD50E4 */
-    char label_slag_224[8]; /* ROM0xD50EC */
-    char label_claw_225[8]; /* ROM0xD50F4 */
-    char label_warclubs_226[12]; /* ROM0xD50FC */
-    char label_turok_227[8]; /* ROM0xD5108 */
-    char label_mantid_drone_228[16]; /* ROM0xD5110 */
-    char label_campaigner_229[12]; /* ROM0xD5120 */
-    char label_fireborn_230[12]; /* ROM0xD512C */
-    char label_mantid_soldier_231[16]; /* ROM0xD5138 */
-    char label_adon_232[8]; /* ROM0xD5148 */
-    char label_lord_of_the_dead_233[20]; /* ROM0xD5150 */
-    char label_elite_guard_234[12]; /* ROM0xD5164 */
-    char label_guardian_235[12]; /* ROM0xD5170 */
-    char label_juggernaut_236[12]; /* ROM0xD517C */
-    char label_oblivion_spawn_237[16]; /* ROM0xD5188 */
-    char label_bastille_238[12]; /* ROM0xD5198 */
-    char label_syra_239[8]; /* ROM0xD51A4 */
-    char label_symbiont_240[12]; /* ROM0xD51AC */
-    char label_tal_set_241[8]; /* ROM0xD51B8 */
-    char label_raptor_242[8]; /* ROM0xD51C0 */
-    char label_mantid_mites_243[16]; /* ROM0xD51C8 */
-    char label_capture_the_flag_d_time_244[28]; /* ROM0xD51D8 */
-    char label_capture_the_flag_d_times_245[28]; /* ROM0xD51F4 */
-    char label_acquire_d_team_captures_246[28]; /* ROM0xD5210 */
-    char label_tag_the_monkey_d_time_247[24]; /* ROM0xD522C */
-    char label_tag_the_monkey_d_times_248[24]; /* ROM0xD5244 */
-    char label_acquire_d_creature_tags_249[28]; /* ROM0xD525C */
-    char label_acquire_d_frag_250[16]; /* ROM0xD5278 */
-    char label_acquire_d_frags_251[20]; /* ROM0xD5288 */
-    char label_acquire_d_team_frag_252[24]; /* ROM0xD529C */
-    char label_acquire_d_team_frags_253[24]; /* ROM0xD52B4 */
-    char label_in_02d_seconds_or_less_254[24]; /* ROM0xD52CC */
-    char label_in_d_minute_and_02d_seconds_or_less_255[40]; /* ROM0xD52E4 */
-    char label_in_d_minutes_and_02d_seconds_or_less_256[40]; /* ROM0xD530C */
-    char label_in_d_minute_or_less_257[24]; /* ROM0xD5334 */
-    char label_in_d_minutes_or_less_258[24]; /* ROM0xD534C */
-    char label_with_d_life_259[16]; /* ROM0xD5364 */
-    char label_with_d_lives_260[16]; /* ROM0xD5374 */
-    char label_defeat_s_261[12]; /* ROM0xD5384 */
-    char label_defeat_both_s_and_s_262[24]; /* ROM0xD5390 */
-    char label_every_man_for_themselves_263[28]; /* ROM0xD53A8 */
-    char label_easy_264[8]; /* ROM0xD53C4 */
-    char label_medium_265[8]; /* ROM0xD53CC */
-    char label_hard_266[8]; /* ROM0xD53D4 */
-    char label_off_267[4]; /* ROM0xD53DC */
+unsigned int D_auto_src_ragewars_menu_strings_D4290_us_rev1[1108] = {
+    0x32206865, 0x616C7468, 0x00000000, 0x31302068, 0x65616C74, 0x68000000, 0x31352068, 0x65616C74,
+    0x68000000, 0x32352068, 0x65616C74, 0x68000000, 0x35302068, 0x65616C74, 0x68000000, 0x66756C6C,
+    0x20686561, 0x6C746800, 0x756C7472, 0x61206865, 0x616C7468, 0x00000000, 0x31206C69, 0x66652066,
+    0x6F726365, 0x00000000, 0x3130206C, 0x69666520, 0x666F7263, 0x65000000, 0x696E7669, 0x6E636962,
+    0x696C6974, 0x79000000, 0x706C616E, 0x65207761, 0x6C6B6572, 0x00000000, 0x666C6173, 0x686C6967,
+    0x68740000, 0x666C6173, 0x686C6967, 0x68742062, 0x61747465, 0x72790000, 0x496E6672, 0x61526564,
+    0x20476F67, 0x676C6573, 0x00000000, 0x62726561, 0x7468206F, 0x66206C69, 0x66650000, 0x65796520,
+    0x6F662074, 0x72757468, 0x00000000, 0x6C656170, 0x206F6620, 0x66616974, 0x68000000, 0x77686973,
+    0x70657273, 0x00000000, 0x68656172, 0x74206F66, 0x20666972, 0x65000000, 0x626C7565, 0x20656167,
+    0x6C652066, 0x65617468, 0x65720000, 0x67726579, 0x20656167, 0x6C652066, 0x65617468, 0x65720000,
+    0x62726F77, 0x6E206561, 0x676C6520, 0x66656174, 0x68657200, 0x70757270, 0x6C652065, 0x61676C65,
+    0x20666561, 0x74686572, 0x00000000, 0x72656420, 0x6561676C, 0x65206665, 0x61746865, 0x72000000,
+    0x6E756B65, 0x20776561, 0x706F6E20, 0x70617274, 0x00000000, 0x52657461, 0x6C696174, 0x696F6E20,
+    0x21000000, 0x466C6167, 0x20776173, 0x20636C61, 0x696D6564, 0x00000000, 0x466C6167, 0x20776173,
+    0x20636170, 0x74757265, 0x64000000, 0x466C6167, 0x20726574, 0x75726E65, 0x64000000, 0x54686520,
+    0x506F7765, 0x72206973, 0x20596F75, 0x72730000, 0x46756E63, 0x74696F6E, 0x204E6F74, 0x20417661,
+    0x696C6162, 0x6C650000, 0x57415248, 0x414D4D45, 0x52000000, 0x52415054, 0x4F522043, 0x4C415700,
+    0x4D495445, 0x20424954, 0x45000000, 0x424F4F4D, 0x4552414E, 0x47000000, 0x54454B20, 0x43524F53,
+    0x53424F57, 0x00000000, 0x4D414720, 0x36300000, 0x53484F54, 0x47554E00, 0x41535341, 0x556C5420,
+    0x5249464C, 0x45000000, 0x4D494E49, 0x47554E00, 0x504C4153, 0x4D412052, 0x49464C45, 0x00000000,
+    0x46524545, 0x5A452047, 0x554E0000, 0x464C4152, 0x45204755, 0x4E000000, 0x4752454E, 0x41444553,
+    0x00000000, 0x53434F52, 0x50494F4E, 0x00000000, 0x4E415041, 0x4C4D2047, 0x454C0000, 0x454D4143,
+    0x4941544F, 0x52000000, 0x494E464C, 0x41544F52, 0x00000000, 0x43484553, 0x54204255, 0x52535445,
+    0x52000000, 0x43455245, 0x4252414C, 0x20424F52, 0x45000000, 0x50464D20, 0x4D494E45, 0x00000000,
+    0x49524F4E, 0x20434C41, 0x57000000, 0x54454C45, 0x504F5254, 0x204D494E, 0x45000000, 0x53454E54,
+    0x52592054, 0x55525245, 0x54000000, 0x41545452, 0x41435420, 0x52454D4F, 0x56454400, 0x41545452,
+    0x41435420, 0x4D41524B, 0x45440000, 0x52455055, 0x4C534520, 0x4D41524B, 0x45440000, 0x4A6F696E,
+    0x65642054, 0x65616D20, 0x436F796F, 0x74650000, 0x4A6F696E, 0x65642054, 0x65616D20, 0x42656172,
+    0x00000000, 0x4A6F696E, 0x65642054, 0x65616D20, 0x436F7567, 0x61720000, 0x4A6F696E, 0x65642054,
+    0x65616D20, 0x56697065, 0x72000000, 0x596F7520, 0x66726167, 0x67656420, 0x796F7572, 0x73656C66,
+    0x2E000000, 0x4D616E67, 0x6C656420, 0x62792025, 0x732E0000, 0x46726167, 0x67656420, 0x62792025,
+    0x732E0000, 0x536D6163, 0x6B656420, 0x20627920, 0x25732E00, 0x2573206F, 0x626C6974, 0x65726174,
+    0x65642079, 0x6F752E00, 0x25732062, 0x75746368, 0x65726564, 0x20796F75, 0x2E000000, 0x25732063,
+    0x72757368, 0x65642079, 0x6F752E00, 0x506F756E, 0x64656420, 0x62792025, 0x732E0000, 0x796F7572,
+    0x206F7468, 0x6572206C, 0x6566742E, 0x00000000, 0x4F6F7073, 0x2E2E2E00, 0x42616420, 0x6D6F7665,
+    0x2E2E2E00, 0x556D2E2E, 0x2E202057, 0x61746368, 0x20796F75, 0x72207374, 0x65703F00, 0x4F6F7073,
+    0x2E2E2E00, 0x596F7520, 0x77657265, 0x20626573, 0x7465642E, 0x00000000, 0x4D756E63, 0x682E0000,
+    0x456D6272, 0x796F2049, 0x6D706C61, 0x6E746564, 0x00000000, 0x456D6272, 0x796F2044, 0x65737472,
+    0x6F796564, 0x00000000, 0x536D6163, 0x6B202573, 0x00000000, 0x6F722066, 0x696E6420, 0x506F7765,
+    0x7220436F, 0x72650000, 0x456E6572, 0x67792072, 0x6F756E64, 0x73000000, 0x456E6572, 0x67792072,
+    0x6F756E64, 0x73000000, 0x42756C6C, 0x65742072, 0x6F756E64, 0x73000000, 0x42756C6C, 0x65742072,
+    0x6F756E64, 0x73000000, 0x4578706C, 0x6F736976, 0x6520726F, 0x756E6473, 0x00000000, 0x4578706C,
+    0x6F736976, 0x6520726F, 0x756E6473, 0x00000000, 0x416D6D6F, 0x20706163, 0x6B000000, 0x62756C6C,
+    0x65740000, 0x656E6572, 0x67792072, 0x6F756E64, 0x00000000, 0x6578706C, 0x6F736976, 0x6520726F,
+    0x756E6400, 0x63657265, 0x6272616C, 0x20626F72, 0x65000000, 0x70666D20, 0x6D696E65, 0x00000000,
+    0x73656E74, 0x72792074, 0x75727265, 0x74000000, 0x69726F6E, 0x20636C61, 0x77000000, 0x74656C65,
+    0x706F7274, 0x206D696E, 0x65000000, 0x536C6F77, 0x2054696D, 0x652E2E2E, 0x00000000, 0x426C6173,
+    0x74205368, 0x69656C64, 0x2E2E2E00, 0x52656765, 0x6E657261, 0x74696F6E, 0x2E2E2E00, 0x50657472,
+    0x6966792E, 0x2E2E0000, 0x44616D61, 0x67652052, 0x65766572, 0x73616C2E, 0x2E2E0000, 0x496E7669,
+    0x73696269, 0x6C697479, 0x2E2E2E00, 0x4C696665, 0x20466F72, 0x63652056, 0x616D7069, 0x72652E2E,
+    0x2E000000, 0x53706565, 0x64204275, 0x7273742E, 0x2E2E0000, 0x54656C65, 0x706F7274, 0x6174696F,
+    0x6E2E2E2E, 0x00000000, 0x54656C65, 0x706F7274, 0x65642074, 0x6F207361, 0x66657479, 0x2E2E2E28,
+    0x3F290000, 0x4D617373, 0x69766520, 0x44616D61, 0x67652E2E, 0x2E000000, 0x496E7675, 0x6E657261,
+    0x62696C69, 0x74792E2E, 0x2E000000, 0x42756C6C, 0x65742053, 0x6869656C, 0x642E2E2E, 0x00000000,
+    0x456E6572, 0x67792041, 0x62736F72, 0x7074696F, 0x6E2E2E2E, 0x00000000, 0x536F6D65, 0x7468696E,
+    0x6720456C, 0x73652E2E, 0x2E000000, 0x53686965, 0x6C640000, 0x4E4F5649, 0x43450000, 0x4E455743,
+    0x4F4D4552, 0x00000000, 0x4752554E, 0x54000000, 0x53434F55, 0x54000000, 0x42524156, 0x45000000,
+    0x54524143, 0x4B455200, 0x48554E54, 0x45520000, 0x57415252, 0x494F5200, 0x4441524B, 0x4C494E47,
+    0x00000000, 0x5345454B, 0x45520000, 0x41535341, 0x5353494E, 0x00000000, 0x42414E45, 0x00000000,
+    0x5741524C, 0x4F524400, 0x44454154, 0x4857494E, 0x44000000, 0x434F4E51, 0x5545524F, 0x52000000,
+    0x4D415354, 0x45520000, 0x54595241, 0x4E540000, 0x57415253, 0x4C415645, 0x00000000, 0x474F4448,
+    0x414E4400, 0x43484945, 0x46544149, 0x4E000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2050,
+    0x524F5649, 0x4E472047, 0x524F554E, 0x44530000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2042,
+    0x41534943, 0x20545241, 0x494E494E, 0x47000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2043,
+    0x524F5353, 0x524F4144, 0x53000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2047, 0x52494D20,
+    0x52455452, 0x45415400, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2043, 0x41544845, 0x4452414C,
+    0x00000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2046, 0x414C4C4F, 0x55540000, 0x41434849,
+    0x4556454D, 0x454E5420, 0x4F4E2042, 0x4F584544, 0x20534554, 0x00000000, 0x41434849, 0x4556454D,
+    0x454E5420, 0x4F4E2044, 0x49524520, 0x53545241, 0x49474854, 0x00000000, 0x41434849, 0x4556454D,
+    0x454E5420, 0x4F4E2050, 0x52455900, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2057, 0x41524548,
+    0x4F555345, 0x00000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2057, 0x41544552, 0x2054454D,
+    0x504C4500, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2042, 0x4F4D4220, 0x5348454C, 0x54455200,
+    0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2054, 0x454D5045, 0x52454400, 0x41434849, 0x4556454D,
+    0x454E5420, 0x4F4E2045, 0x41525448, 0x2054454D, 0x504C4500, 0x41434849, 0x4556454D, 0x454E5420,
+    0x4F4E2046, 0x49524520, 0x54454D50, 0x4C450000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E204D,
+    0x59535449, 0x43000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2042, 0x4F54544C, 0x454E4543,
+    0x4B000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2054, 0x49474854, 0x524F5045, 0x00000000,
+    0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2054, 0x48452050, 0x49540000, 0x41434849, 0x4556454D,
+    0x454E5420, 0x4F4E204C, 0x45415020, 0x4F462046, 0x41495448, 0x00000000, 0x41434849, 0x4556454D,
+    0x454E5420, 0x4F4E2057, 0x49434B45, 0x44204441, 0x4E434500, 0x41434849, 0x4556454D, 0x454E5420,
+    0x4F4E2042, 0x554E4B45, 0x52000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2041, 0x4D504849,
+    0x54484541, 0x54455200, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2046, 0x49524520, 0x57414C4B,
+    0x45520000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2043, 0x52595054, 0x53000000, 0x41434849,
+    0x4556454D, 0x454E5420, 0x4F4E2042, 0x5245414B, 0x444F574E, 0x00000000, 0x41434849, 0x4556454D,
+    0x454E5420, 0x4F4E2052, 0x4554414C, 0x49415449, 0x4F4E0000, 0x41434849, 0x4556454D, 0x454E5420,
+    0x4F4E2048, 0x4F50454C, 0x45535300, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E204D, 0x41545249,
+    0x58000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2046, 0x4154484F, 0x4D000000, 0x41434849,
+    0x4556454D, 0x454E5420, 0x4F4E2054, 0x48452050, 0x45444553, 0x54414C00, 0x41434849, 0x4556454D,
+    0x454E5420, 0x4F4E2044, 0x4546434F, 0x4E203500, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2053,
+    0x50495249, 0x54205445, 0x4D504C45, 0x00000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2053,
+    0x54524F4E, 0x47484F4C, 0x44000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2043, 0x4F555254,
+    0x59415244, 0x00000000, 0x41434849, 0x4556454D, 0x454E5420, 0x4F4E2053, 0x5441524C, 0x49474854,
+    0x00000000, 0x41545441, 0x494E4544, 0x20313520, 0x46524147, 0x5320494E, 0x2035204D, 0x494E5554,
+    0x45530000, 0x41545441, 0x494E4544, 0x20323520, 0x46524147, 0x5320494E, 0x20313020, 0x4D494E55,
+    0x54455300, 0x4E4F5420, 0x47455454, 0x494E4720, 0x414E5920, 0x46524147, 0x53000000, 0x4B494C4C,
+    0x494E4720, 0x594F5552, 0x53454C46, 0x20352054, 0x494D4553, 0x00000000, 0x434F4D49, 0x4E472049,
+    0x4E204C41, 0x53540000, 0x544F5441, 0x4C204652, 0x41472041, 0x57415244, 0x00000000, 0x544F5441,
+    0x4C204245, 0x494E4720, 0x4B494C4C, 0x45442041, 0x57415244, 0x00000000, 0x534E4950, 0x494E4720,
+    0x31302050, 0x454F504C, 0x4520494E, 0x20412052, 0x4F554E44, 0x00000000, 0x4E4F5420, 0x4245494E,
+    0x47204B49, 0x4C4C4544, 0x20494E20, 0x4120524F, 0x554E4400, 0x44454645, 0x41544544, 0x20424153,
+    0x54494C4C, 0x45000000, 0x44454645, 0x41544544, 0x20535952, 0x41000000, 0x44454645, 0x41544544,
+    0x2053594D, 0x42494F4E, 0x54000000, 0x44454645, 0x41544544, 0x2054414C, 0x20534554, 0x00000000,
+    0x42454154, 0x494E4720, 0x54484520, 0x434F4F50, 0x45524154, 0x49564520, 0x5343454E, 0x4152494F,
+    0x00000000, 0x3C454D50, 0x54593E00, 0x3C4E4557, 0x20504C41, 0x5945523E, 0x00000000, 0x5455524F,
+    0x4B000000, 0x57415252, 0x494F5200, 0x4D415354, 0x45520000, 0x41444F4E, 0x00000000, 0x5345454B,
+    0x45520000, 0x48554E54, 0x52455353, 0x00000000, 0x43414D50, 0x41494E00, 0x534C4156, 0x45520000,
+    0x54595241, 0x4E540000, 0x46495245, 0x424F524E, 0x00000000, 0x4943454C, 0x4F524400, 0x454E5452,
+    0x41494C00, 0x4D495445, 0x53000000, 0x434F4D50, 0x49455300, 0x54454444, 0x49455300, 0x4A554747,
+    0x4E415554, 0x00000000, 0x534C4F54, 0x48000000, 0x4D41554C, 0x45520000, 0x44524F4E, 0x45000000,
+    0x4752554E, 0x54000000, 0x534C4156, 0x45000000, 0x534F4C44, 0x49455200, 0x43415054, 0x41494E00,
+    0x4B494E47, 0x00000000, 0x42415354, 0x494C4C45, 0x00000000, 0x54414C20, 0x53455400, 0x53595241,
+    0x00000000, 0x53594D42, 0x494F4E54, 0x00000000, 0x47554152, 0x4449414E, 0x00000000, 0x52415641,
+    0x47450000, 0x4359434C, 0x4F505300, 0x4C4F5244, 0x44454144, 0x00000000, 0x4D414747, 0x4F540000,
+    0x56494C45, 0x00000000, 0x454C4954, 0x45000000, 0x42494F42, 0x4F540000, 0x4B494C4C, 0x424F5400,
+    0x44454154, 0x48000000, 0x52454150, 0x45520000, 0x4D415700, 0x52415054, 0x4F520000, 0x534C4147,
+    0x00000000, 0x434C4157, 0x00000000, 0x57415243, 0x4C554253, 0x00000000, 0x5455524F, 0x4B000000,
+    0x4D414E54, 0x49442044, 0x524F4E45, 0x00000000, 0x43414D50, 0x4149474E, 0x45520000, 0x46495245,
+    0x424F524E, 0x00000000, 0x4D414E54, 0x49442053, 0x4F4C4449, 0x45520000, 0x41444F4E, 0x00000000,
+    0x4C4F5244, 0x204F4620, 0x54484520, 0x44454144, 0x00000000, 0x454C4954, 0x45204755, 0x41524400,
+    0x47554152, 0x4449414E, 0x00000000, 0x4A554747, 0x45524E41, 0x55540000, 0x4F424C49, 0x56494F4E,
+    0x20535041, 0x574E0000, 0x42415354, 0x494C4C45, 0x00000000, 0x53595241, 0x00000000, 0x53594D42,
+    0x494F4E54, 0x00000000, 0x54414C20, 0x53455400, 0x52415054, 0x4F520000, 0x4D414E54, 0x4944204D,
+    0x49544553, 0x00000000, 0x63617074, 0x75726520, 0x74686520, 0x666C6167, 0x20256420, 0x74696D65,
+    0x00000000, 0x63617074, 0x75726520, 0x74686520, 0x666C6167, 0x20256420, 0x74696D65, 0x73000000,
+    0x61637175, 0x69726520, 0x25642074, 0x65616D20, 0x63617074, 0x75726573, 0x00000000, 0x74616720,
+    0x74686520, 0x6D6F6E6B, 0x65792025, 0x64207469, 0x6D650000, 0x74616720, 0x74686520, 0x6D6F6E6B,
+    0x65792025, 0x64207469, 0x6D657300, 0x61637175, 0x69726520, 0x25642063, 0x72656174, 0x75726520,
+    0x74616773, 0x00000000, 0x61637175, 0x69726520, 0x25642066, 0x72616700, 0x61637175, 0x69726520,
+    0x25642066, 0x72616773, 0x00000000, 0x61637175, 0x69726520, 0x25642074, 0x65616D20, 0x66726167,
+    0x00000000, 0x61637175, 0x69726520, 0x25642074, 0x65616D20, 0x66726167, 0x73000000, 0x696E2025,
+    0x30326420, 0x7365636F, 0x6E647320, 0x6F72206C, 0x65737300, 0x696E2025, 0x64206D69, 0x6E757465,
+    0x20616E64, 0x20253032, 0x64207365, 0x636F6E64, 0x73206F72, 0x206C6573, 0x73000000, 0x696E2025,
+    0x64206D69, 0x6E757465, 0x7320616E, 0x64202530, 0x32642073, 0x65636F6E, 0x6473206F, 0x72206C65,
+    0x73730000, 0x696E2025, 0x64206D69, 0x6E757465, 0x206F7220, 0x6C657373, 0x00000000, 0x696E2025,
+    0x64206D69, 0x6E757465, 0x73206F72, 0x206C6573, 0x73000000, 0x77697468, 0x20256420, 0x6C696665,
+    0x00000000, 0x77697468, 0x20256420, 0x6C697665, 0x73000000, 0x64656665, 0x61742025, 0x73000000,
+    0x64656665, 0x61742062, 0x6F746820, 0x25732061, 0x6E642025, 0x73000000, 0x65766572, 0x79206D61,
+    0x6E20666F, 0x72207468, 0x656D7365, 0x6C766573, 0x00000000, 0x45415359, 0x00000000, 0x4D454449,
+    0x554D0000, 0x48415244, 0x00000000, 0x4F464600,
 };
-const struct MenuStrings_D4290 D_800D3690 = {
-    "2 health",
-    "10 health",
-    "15 health",
-    "25 health",
-    "50 health",
-    "full health",
-    "ultra health",
-    "1 life force",
-    "10 life force",
-    "invincibility",
-    "plane walker",
-    "flashlight",
-    "flashlight battery",
-    "InfraRed Goggles",
-    "breath of life",
-    "eye of truth",
-    "leap of faith",
-    "whispers",
-    "heart of fire",
-    "blue eagle feather",
-    "grey eagle feather",
-    "brown eagle feather",
-    "purple eagle feather",
-    "red eagle feather",
-    "nuke weapon part",
-    "Retaliation !",
-    "Flag was claimed",
-    "Flag was captured",
-    "Flag returned",
-    "The Power is Yours",
-    "Function Not Available",
-    "WARHAMMER",
-    "RAPTOR CLAW",
-    "MITE BITE",
-    "BOOMERANG",
-    "TEK CROSSBOW",
-    "MAG 60",
-    "SHOTGUN",
-    "ASSAUlT RIFLE",
-    "MINIGUN",
-    "PLASMA RIFLE",
-    "FREEZE GUN",
-    "FLARE GUN",
-    "GRENADES",
-    "SCORPION",
-    "NAPALM GEL",
-    "EMACIATOR",
-    "INFLATOR",
-    "CHEST BURSTER",
-    "CEREBRAL BORE",
-    "PFM MINE",
-    "IRON CLAW",
-    "TELEPORT MINE",
-    "SENTRY TURRET",
-    "ATTRACT REMOVED",
-    "ATTRACT MARKED",
-    "REPULSE MARKED",
-    "Joined Team Coyote",
-    "Joined Team Bear",
-    "Joined Team Cougar",
-    "Joined Team Viper",
-    "You fragged yourself.",
-    "Mangled by %s.",
-    "Fragged by %s.",
-    "Smacked  by %s.",
-    "%s obliterated you.",
-    "%s butchered you.",
-    "%s crushed you.",
-    "Pounded by %s.",
-    "your other left.",
-    "Oops...",
-    "Bad move...",
-    "Um...  Watch your step?",
-    "Oops...",
-    "You were bested.",
-    "Munch.",
-    "Embryo Implanted",
-    "Embryo Destroyed",
-    "Smack %s",
-    "or find Power Core",
-    "Energy rounds",
-    "Energy rounds",
-    "Bullet rounds",
-    "Bullet rounds",
-    "Explosive rounds",
-    "Explosive rounds",
-    "Ammo pack",
-    "bullet",
-    "energy round",
-    "explosive round",
-    "cerebral bore",
-    "pfm mine",
-    "sentry turret",
-    "iron claw",
-    "teleport mine",
-    "Slow Time...",
-    "Blast Shield...",
-    "Regeneration...",
-    "Petrify...",
-    "Damage Reversal...",
-    "Invisibility...",
-    "Life Force Vampire...",
-    "Speed Burst...",
-    "Teleportation...",
-    "Teleported to safety...(?)",
-    "Massive Damage...",
-    "Invunerability...",
-    "Bullet Shield...",
-    "Energy Absorption...",
-    "Something Else...",
-    "Shield",
-    "NOVICE",
-    "NEWCOMER",
-    "GRUNT",
-    "SCOUT",
-    "BRAVE",
-    "TRACKER",
-    "HUNTER",
-    "WARRIOR",
-    "DARKLING",
-    "SEEKER",
-    "ASSASSIN",
-    "BANE",
-    "WARLORD",
-    "DEATHWIND",
-    "CONQUEROR",
-    "MASTER",
-    "TYRANT",
-    "WARSLAVE",
-    "GODHAND",
-    "CHIEFTAIN",
-    "ACHIEVEMENT ON PROVING GROUNDS",
-    "ACHIEVEMENT ON BASIC TRAINING",
-    "ACHIEVEMENT ON CROSSROADS",
-    "ACHIEVEMENT ON GRIM RETREAT",
-    "ACHIEVEMENT ON CATHEDRAL",
-    "ACHIEVEMENT ON FALLOUT",
-    "ACHIEVEMENT ON BOXED SET",
-    "ACHIEVEMENT ON DIRE STRAIGHT",
-    "ACHIEVEMENT ON PREY",
-    "ACHIEVEMENT ON WAREHOUSE",
-    "ACHIEVEMENT ON WATER TEMPLE",
-    "ACHIEVEMENT ON BOMB SHELTER",
-    "ACHIEVEMENT ON TEMPERED",
-    "ACHIEVEMENT ON EARTH TEMPLE",
-    "ACHIEVEMENT ON FIRE TEMPLE",
-    "ACHIEVEMENT ON MYSTIC",
-    "ACHIEVEMENT ON BOTTLENECK",
-    "ACHIEVEMENT ON TIGHTROPE",
-    "ACHIEVEMENT ON THE PIT",
-    "ACHIEVEMENT ON LEAP OF FAITH",
-    "ACHIEVEMENT ON WICKED DANCE",
-    "ACHIEVEMENT ON BUNKER",
-    "ACHIEVEMENT ON AMPHITHEATER",
-    "ACHIEVEMENT ON FIRE WALKER",
-    "ACHIEVEMENT ON CRYPTS",
-    "ACHIEVEMENT ON BREAKDOWN",
-    "ACHIEVEMENT ON RETALIATION",
-    "ACHIEVEMENT ON HOPELESS",
-    "ACHIEVEMENT ON MATRIX",
-    "ACHIEVEMENT ON FATHOM",
-    "ACHIEVEMENT ON THE PEDESTAL",
-    "ACHIEVEMENT ON DEFCON 5",
-    "ACHIEVEMENT ON SPIRIT TEMPLE",
-    "ACHIEVEMENT ON STRONGHOLD",
-    "ACHIEVEMENT ON COURTYARD",
-    "ACHIEVEMENT ON STARLIGHT",
-    "ATTAINED 15 FRAGS IN 5 MINUTES",
-    "ATTAINED 25 FRAGS IN 10 MINUTES",
-    "NOT GETTING ANY FRAGS",
-    "KILLING YOURSELF 5 TIMES",
-    "COMING IN LAST",
-    "TOTAL FRAG AWARD",
-    "TOTAL BEING KILLED AWARD",
-    "SNIPING 10 PEOPLE IN A ROUND",
-    "NOT BEING KILLED IN A ROUND",
-    "DEFEATED BASTILLE",
-    "DEFEATED SYRA",
-    "DEFEATED SYMBIONT",
-    "DEFEATED TAL SET",
-    "BEATING THE COOPERATIVE SCENARIO",
-    "<EMPTY>",
-    "<NEW PLAYER>",
-    "TUROK",
-    "WARRIOR",
-    "MASTER",
-    "ADON",
-    "SEEKER",
-    "HUNTRESS",
-    "CAMPAIN",
-    "SLAVER",
-    "TYRANT",
-    "FIREBORN",
-    "ICELORD",
-    "ENTRAIL",
-    "MITES",
-    "COMPIES",
-    "TEDDIES",
-    "JUGGNAUT",
-    "SLOTH",
-    "MAULER",
-    "DRONE",
-    "GRUNT",
-    "SLAVE",
-    "SOLDIER",
-    "CAPTAIN",
-    "KING",
-    "BASTILLE",
-    "TAL SET",
-    "SYRA",
-    "SYMBIONT",
-    "GUARDIAN",
-    "RAVAGE",
-    "CYCLOPS",
-    "LORDDEAD",
-    "MAGGOT",
-    "VILE",
-    "ELITE",
-    "BIOBOT",
-    "KILLBOT",
-    "DEATH",
-    "REAPER",
-    "MAW",
-    "RAPTOR",
-    "SLAG",
-    "CLAW",
-    "WARCLUBS",
-    "TUROK",
-    "MANTID DRONE",
-    "CAMPAIGNER",
-    "FIREBORN",
-    "MANTID SOLDIER",
-    "ADON",
-    "LORD OF THE DEAD",
-    "ELITE GUARD",
-    "GUARDIAN",
-    "JUGGERNAUT",
-    "OBLIVION SPAWN",
-    "BASTILLE",
-    "SYRA",
-    "SYMBIONT",
-    "TAL SET",
-    "RAPTOR",
-    "MANTID MITES",
-    "capture the flag %d time",
-    "capture the flag %d times",
-    "acquire %d team captures",
-    "tag the monkey %d time",
-    "tag the monkey %d times",
-    "acquire %d creature tags",
-    "acquire %d frag",
-    "acquire %d frags",
-    "acquire %d team frag",
-    "acquire %d team frags",
-    "in %02d seconds or less",
-    "in %d minute and %02d seconds or less",
-    "in %d minutes and %02d seconds or less",
-    "in %d minute or less",
-    "in %d minutes or less",
-    "with %d life",
-    "with %d lives",
-    "defeat %s",
-    "defeat both %s and %s",
-    "every man for themselves",
-    "EASY",
-    "MEDIUM",
-    "HARD",
-    "OFF"
-};
-typedef char menu_strings_size_D4290[(sizeof(struct MenuStrings_D4290) == 4432) ? 1 : -1];

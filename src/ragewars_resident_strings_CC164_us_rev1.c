@@ -1,107 +1,42 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_CC164 {
-    char label_accessing_the_0[16]; /* ROM0xCC164 */
-    char label_expansion_pak_found_1[20]; /* ROM0xCC174 */
-    char label_press_any_button_2[20]; /* ROM0xCC188 */
-    char label_visit_our_website_at_www_acclaim_net_3[40]; /* ROM0xCC19C */
-    char label_their_patience_4[16]; /* ROM0xCC1C4 */
-    char label_pam_truman_and_tucker_for_5[28]; /* ROM0xCC1D4 */
-    char label_and_lilly_6[12]; /* ROM0xCC1F0 */
-    char label_jim_delbridge_hailey_sebastian_7[36]; /* ROM0xCC1FC */
-    char label_anna_langston_simon_skedd_8[28]; /* ROM0xCC220 */
-    char label_rami_for_teaching_me_about_monkeys_9[36]; /* ROM0xCC23C */
-    char label_angela_for_waiting_up_for_me_at_night_10[40]; /* ROM0xCC260 */
-    char label_lorraine_brittany_and_katie_11[32]; /* ROM0xCC288 */
-    char label_grey_thanks_kas_ts_behr_and_ben_12[36]; /* ROM0xCC2A8 */
-    char label_dan_hill_and_family_13[20]; /* ROM0xCC2CC */
-    char label_mike_marques_14[16]; /* ROM0xCC2E0 */
-    char label_shea_mackin_cade_kylan_and_family_15[40]; /* ROM0xCC2F0 */
-    char label_half_of_his_team_16[20]; /* ROM0xCC318 */
-    char label_jeff_everett_for_letting_us_borrow_17[36]; /* ROM0xCC32C */
-    char label_david_and_matt_at_satellite_studio_18[36]; /* ROM0xCC350 */
-    char label_brother_be_free_i_miss_you_19[32]; /* ROM0xCC374 */
-    char label_dr_don_t_huey_jr_d_c_my_big_20[36]; /* ROM0xCC394 */
-    char label_for_letting_me_do_what_i_love_21[32]; /* ROM0xCC3B8 */
-    char label_marlene_and_raymond_pacini_thanks_22[36]; /* ROM0xCC3D8 */
-    char label_damaris_coco_and_snikers_too_23[32]; /* ROM0xCC3FC */
-    char label_jenny_cowlishaw_24[16]; /* ROM0xCC41C */
-    char label_additional_special_thanks_to_25[40]; /* ROM0xCC42C */
-    char label_of_why_we_were_never_home_26[28]; /* ROM0xCC454 */
-    char label_support_and_understanding_27[28]; /* ROM0xCC470 */
-    char label_rage_wars_team_for_their_28[28]; /* ROM0xCC48C */
-    char label_friends_and_family_of_the_29[28]; /* ROM0xCC4A8 */
-    char label_thank_you_to_all_of_the_30[24]; /* ROM0xCC4C4 */
-    char label_we_would_like_to_extend_a_special_31[36]; /* ROM0xCC4DC */
-    char label_special_thanks_32[40]; /* ROM0xCC500 */
-    char label_ed_fortune_33[12]; /* ROM0xCC528 */
-    char label_online_editor_34[16]; /* ROM0xCC534 */
-    char label_bobby_saha_35[12]; /* ROM0xCC544 */
-    char label_internet_architect_36[20]; /* ROM0xCC550 */
-    char label_ben_fischbach_37[16]; /* ROM0xCC564 */
-    char label_sr_manager_acclaim_online_38[28]; /* ROM0xCC574 */
-    char label_michelle_seebach_39[20]; /* ROM0xCC590 */
-    char label_pr_manager_40[12]; /* ROM0xCC5A4 */
-    char label_jack_scalici_41[16]; /* ROM0xCC5B0 */
-    char label_jp_carnovale_42[16]; /* ROM0xCC5C0 */
-    char label_marketing_game_analyst_43[24]; /* ROM0xCC5D0 */
-    char label_don_jackson_44[12]; /* ROM0xCC5E8 */
-    char label_marketing_product_manager_45[28]; /* ROM0xCC5F4 */
-    char label_ulises_batalla_46[16]; /* ROM0xCC610 */
-    char label_chris_frisone_47[16]; /* ROM0xCC620 */
-    char label_mike_sterzel_48[16]; /* ROM0xCC630 */
-    char label_chris_zino_49[12]; /* ROM0xCC640 */
+unsigned int D_auto_src_ragewars_resident_strings_CC164_us_rev1[314] = {
+    0x61636365, 0x7373696E, 0x67207468, 0x65000000, 0x45585041, 0x4E53494F, 0x4E205041, 0x4B20464F,
+    0x554E4400, 0x50524553, 0x5320414E, 0x59204255, 0x54544F4E, 0x00000000, 0x56495349, 0x54204F55,
+    0x52205745, 0x42534954, 0x45204154, 0x20575757, 0x2E414343, 0x4C41494D, 0x2E4E4554, 0x00000000,
+    0x54484549, 0x52205041, 0x5449454E, 0x43450000, 0x50414D2C, 0x20545255, 0x4D414E20, 0x414E4420,
+    0x5455434B, 0x45522046, 0x4F520000, 0x414E4420, 0x4C494C4C, 0x59000000, 0x4A494D20, 0x44454C42,
+    0x52494447, 0x452C2048, 0x41494C45, 0x592C2053, 0x45424153, 0x5449414E, 0x00000000, 0x414E4E41,
+    0x204C414E, 0x4753544F, 0x4E2C2053, 0x494D4F4E, 0x20534B45, 0x44442C00, 0x52414D49, 0x20464F52,
+    0x20544541, 0x4348494E, 0x47204D45, 0x2041424F, 0x5554204D, 0x4F4E4B45, 0x59530000, 0x414E4745,
+    0x4C412046, 0x4F522057, 0x41495449, 0x4E472055, 0x5020464F, 0x52204D45, 0x20415420, 0x4E494748,
+    0x54000000, 0x4C4F5252, 0x41494E45, 0x2C204252, 0x49545441, 0x4E592041, 0x4E44204B, 0x41544945,
+    0x00000000, 0x47524559, 0x20544841, 0x4E4B5320, 0x4B41532C, 0x20545320, 0x42454852, 0x2C20414E,
+    0x44204245, 0x4E000000, 0x44414E20, 0x48494C4C, 0x20414E44, 0x2046414D, 0x494C5900, 0x4D494B45,
+    0x204D4152, 0x51554553, 0x00000000, 0x53484541, 0x204D4143, 0x4B494E2C, 0x20434144, 0x452C204B,
+    0x594C414E, 0x2C20414E, 0x44204641, 0x4D494C59, 0x00000000, 0x48414C46, 0x204F4620, 0x48495320,
+    0x5445414D, 0x00000000, 0x4A454646, 0x20455645, 0x52455454, 0x20464F52, 0x204C4554, 0x54494E47,
+    0x20555320, 0x424F5252, 0x4F570000, 0x44415649, 0x4420414E, 0x44204D41, 0x54542041, 0x54205341,
+    0x54454C4C, 0x49544520, 0x53545544, 0x494F0000, 0x42524F54, 0x4845522E, 0x20424520, 0x46524545,
+    0x2E204920, 0x4D495353, 0x20594F55, 0x2E000000, 0x44522E20, 0x444F4E20, 0x542E2048, 0x5545592C,
+    0x204A522E, 0x2C20442E, 0x432E202D, 0x204D5920, 0x42494700, 0x464F5220, 0x4C455454, 0x494E4720,
+    0x4D452044, 0x4F205748, 0x41542049, 0x204C4F56, 0x45210000, 0x4D41524C, 0x454E4520, 0x414E4420,
+    0x5241594D, 0x4F4E4420, 0x50414349, 0x4E49202D, 0x20544841, 0x4E4B5300, 0x44414D41, 0x52495320,
+    0x28434F43, 0x4F20414E, 0x4420534E, 0x494B4552, 0x5320544F, 0x4F212900, 0x4A454E4E, 0x5920434F,
+    0x574C4953, 0x48415700, 0x20202020, 0x20202020, 0x20202041, 0x44444954, 0x494F4E41, 0x4C205350,
+    0x45434941, 0x4C205448, 0x414E4B53, 0x20544F00, 0x4F462057, 0x48592057, 0x45205745, 0x5245204E,
+    0x45564552, 0x20484F4D, 0x452E0000, 0x53555050, 0x4F525420, 0x414E4420, 0x554E4445, 0x52535441,
+    0x4E44494E, 0x47000000, 0x52414745, 0x20574152, 0x53205445, 0x414D2046, 0x4F522054, 0x48454952,
+    0x00000000, 0x46524945, 0x4E445320, 0x414E4420, 0x46414D49, 0x4C59204F, 0x46205448, 0x45000000,
+    0x5448414E, 0x4B20594F, 0x5520544F, 0x20414C4C, 0x204F4620, 0x54484500, 0x57452057, 0x4F554C44,
+    0x204C494B, 0x4520544F, 0x20455854, 0x454E4420, 0x41205350, 0x45434941, 0x4C000000, 0x20202020,
+    0x20202020, 0x20202020, 0x20202020, 0x20202020, 0x20205350, 0x45434941, 0x4C205448, 0x414E4B53,
+    0x00000000, 0x45442046, 0x4F525455, 0x4E450000, 0x4F4E4C49, 0x4E452045, 0x4449544F, 0x52000000,
+    0x424F4242, 0x59205341, 0x48410000, 0x494E5445, 0x524E4554, 0x20415243, 0x48495445, 0x43540000,
+    0x42454E20, 0x46495343, 0x48424143, 0x48000000, 0x53522E20, 0x4D414E41, 0x47455220, 0x4143434C,
+    0x41494D20, 0x4F4E4C49, 0x4E450000, 0x4D494348, 0x454C4C45, 0x20534545, 0x42414348, 0x00000000,
+    0x5052204D, 0x414E4147, 0x45520000, 0x4A41434B, 0x20534341, 0x4C494349, 0x00000000, 0x4A502043,
+    0x41524E4F, 0x56414C45, 0x00000000, 0x4D41524B, 0x4554494E, 0x47204741, 0x4D452041, 0x4E414C59,
+    0x53540000, 0x444F4E20, 0x4A41434B, 0x534F4E00, 0x4D41524B, 0x4554494E, 0x47205052, 0x4F445543,
+    0x54204D41, 0x4E414745, 0x52000000, 0x554C4953, 0x45532042, 0x4154414C, 0x4C410000, 0x43485249,
+    0x53204652, 0x49534F4E, 0x45000000, 0x4D494B45, 0x20535445, 0x525A454C, 0x00000000, 0x43485249,
+    0x53205A49, 0x4E4F0000,
 };
-const struct MenuStrings_CC164 ragewars_resident_strings_CC164_us_rev1 = {
-    "accessing the",
-    "EXPANSION PAK FOUND",
-    "PRESS ANY BUTTON",
-    "VISIT OUR WEBSITE AT WWW.ACCLAIM.NET",
-    "THEIR PATIENCE",
-    "PAM, TRUMAN AND TUCKER FOR",
-    "AND LILLY",
-    "JIM DELBRIDGE, HAILEY, SEBASTIAN",
-    "ANNA LANGSTON, SIMON SKEDD,",
-    "RAMI FOR TEACHING ME ABOUT MONKEYS",
-    "ANGELA FOR WAITING UP FOR ME AT NIGHT",
-    "LORRAINE, BRITTANY AND KATIE",
-    "GREY THANKS KAS, TS BEHR, AND BEN",
-    "DAN HILL AND FAMILY",
-    "MIKE MARQUES",
-    "SHEA MACKIN, CADE, KYLAN, AND FAMILY",
-    "HALF OF HIS TEAM",
-    "JEFF EVERETT FOR LETTING US BORROW",
-    "DAVID AND MATT AT SATELLITE STUDIO",
-    "BROTHER. BE FREE. I MISS YOU.",
-    "DR. DON T. HUEY, JR., D.C. - MY BIG",
-    "FOR LETTING ME DO WHAT I LOVE!",
-    "MARLENE AND RAYMOND PACINI - THANKS",
-    "DAMARIS (COCO AND SNIKERS TOO!)",
-    "JENNY COWLISHAW",
-    "           ADDITIONAL SPECIAL THANKS TO",
-    "OF WHY WE WERE NEVER HOME.",
-    "SUPPORT AND UNDERSTANDING",
-    "RAGE WARS TEAM FOR THEIR",
-    "FRIENDS AND FAMILY OF THE",
-    "THANK YOU TO ALL OF THE",
-    "WE WOULD LIKE TO EXTEND A SPECIAL",
-    "                      SPECIAL THANKS",
-    "ED FORTUNE",
-    "ONLINE EDITOR",
-    "BOBBY SAHA",
-    "INTERNET ARCHITECT",
-    "BEN FISCHBACH",
-    "SR. MANAGER ACCLAIM ONLINE",
-    "MICHELLE SEEBACH",
-    "PR MANAGER",
-    "JACK SCALICI",
-    "JP CARNOVALE",
-    "MARKETING GAME ANALYST",
-    "DON JACKSON",
-    "MARKETING PRODUCT MANAGER",
-    "ULISES BATALLA",
-    "CHRIS FRISONE",
-    "MIKE STERZEL",
-    "CHRIS ZINO"
-};
-typedef char menu_strings_size_CC164[(sizeof(struct MenuStrings_CC164) == 1256) ? 1 : -1];
