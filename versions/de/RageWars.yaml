@@ -3790,7 +3790,7 @@ segments:
       - [0xCAB84, rodata, "rodata/func_8021EEFC_de/800C9F84"]
       - [0xCAB88, data, "rodata/unresolved/800C9F88"]
       - [0xCABA0, data, "rodata/writable/800CF1E4"]
-      - [0xCABA8, data, "rodata/unresolved/800C9FA8"]
+      - [0xCABA8, .data, "rodata/unresolved/800C9FA8"]
       - [0xCABE4, data, "rodata/writable/800CF228"]
       - [0xCABE8, rodata, "src/rw_pool_80225F44_CFE2C_us_rev1.c"]
       - [0xCABEC, .data, "rodata/unresolved/800C9FEC"]
