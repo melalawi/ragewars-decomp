@@ -4073,7 +4073,7 @@ segments:
       - [0xcee0c, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750_unclaimed_CEBCC_unclaimed_CEC6C_unclaimed_CEC8C_unclaimed_CECAC_unclaimed_CECCC_unclaimed_CECEC_unclaimed_CED0C_unclaimed_CED2C_unclaimed_CED4C_unclaimed_CED6C_unclaimed_CED8C_unclaimed_CEDAC_unclaimed_CEDCC_unclaimed_CEDEC_unclaimed_CEE04_unclaimed_CEE0C"]
       - [0xcee20, data, "src/rw_controller_state_end_CEE20_us_rev1.c"]
       - [0xcee24, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750_unclaimed_CEBCC_unclaimed_CEC6C_unclaimed_CEC8C_unclaimed_CECAC_unclaimed_CECCC_unclaimed_CECEC_unclaimed_CED0C_unclaimed_CED2C_unclaimed_CED4C_unclaimed_CED6C_unclaimed_CED8C_unclaimed_CEDAC_unclaimed_CEDCC_unclaimed_CEDEC_unclaimed_CEE04_unclaimed_CEE0C_unclaimed_CEE24"]
-      - [0xCEE40, data, "src/ragewars_actor_primary_mask_events_us_rev1.c"]
+      - [0xCEE40, .data, "src/ragewars_actor_primary_mask_events_us_rev1.c"]
       - [0xCEF40, data, "src/ragewars_actor_primary_mask_end_us_rev1.c"]
       - [0xCEF44, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750_unclaimed_CEF44"]
       - [0xCEF48, data, "src/ragewars_actor_secondary_mask_events_us_rev1.c"]
