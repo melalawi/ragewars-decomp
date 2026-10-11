@@ -5092,7 +5092,7 @@ segments:
       - [0xD1AF4, data, "rodata/unresolved/800D0EF4"]
       - [0xD1AF8, rodata, "rodata/shared/800D0EF8"]
       - [0xD1AFC, rodata, "rodata/shared/800D0EFC"]
-      - [0xD1B00, data, "rodata/unresolved/800D0F00"]
+      - [0xD1B00, .data, "rodata/unresolved/800D0F00"]
       - [0xD1B40, .data, "src/ragewars_rdp_startup_us_rev1.c"]
       - [0xD1BA0, .data, "src/ragewars_texture_rgba16_mip_us_rev1.c"]
       - [0xD1C20, .data, "src/ragewars_texture_rgba16_mip_clamp_us_rev1.c"]
