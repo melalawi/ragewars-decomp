@@ -4378,6 +4378,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800E59A8"
+segment = "span_E1720"
+members = ["rodata/unresolved/800E5954_unclaimed_E65A8", "src/rw_menu_event_handlers_E65B0_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800E59E6"
 segment = "span_E1720"
 members = ["rodata/unresolved/800E59E6", "data/unresolved/800E59E8"]
@@ -45123,6 +45131,17 @@ path = "src/rw_menu_event_handlers_E64FC_us_rev1.c"
 kind = "data"
 group = "data_800E58FC"
 members = ["src/rw_menu_event_handlers_E64FC_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rw_menu_event_handlers_E65B0_us_rev1.c"
+kind = "data"
+group = "data_800E59A8"
+members = ["src/rw_menu_event_handlers_E65B0_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
