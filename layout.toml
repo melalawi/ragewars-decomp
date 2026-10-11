@@ -1978,6 +1978,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D0B2C"
+segment = "span_C76B0"
+members = ["src/ragewars_interpolated_ratio_curve_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D0DA4"
 segment = "span_C76B0"
 members = ["rodata/unresolved/800D0DA4", "src/ragewars_controller_button_remap_us_rev1.c", "rodata/unresolved/800D0DA4_unclaimed_D1A48"]
@@ -36616,6 +36624,17 @@ path = "src/ragewars_effect_id_scales_us_rev1.c"
 kind = "data"
 group = "data_800D0A2C"
 members = ["src/ragewars_effect_id_scales_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_interpolated_ratio_curve_us_rev1.c"
+kind = "data"
+group = "data_800D0B2C"
+members = ["src/ragewars_interpolated_ratio_curve_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
