@@ -7,7 +7,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 ## Progress
 
 <!-- progress -->
-<pre><code>all      [█████████████▒░░░░░░]  65.46% (~67.21%)  4,489,416 of 6,857,872 bytes</code><br><code>de       [█████████████▒░░░░░░]  66.45% (~68.08%)  918,696 of 1,382,608 bytes</code><br><code>eu       [████████████▒░░░░░░░]  62.53% (~64.23%)  867,667 of 1,387,504 bytes</code><br><code>eu-x     [████████████▒░░░░░░░]  62.23% (~63.96%)  820,303 of 1,318,176 bytes</code><br><code>us       [█████████████▒░░░░░░]  67.94% (~69.77%)  939,640 of 1,382,992 bytes</code><br><code>us-rev1  [█████████████▒░░░░░░]  68.02% (~69.84%)  943,110 of 1,386,592 bytes</code></pre>
+<pre><code>all      [█████████████▒░░░░░░]  65.48% (~67.21%)  4,490,864 of 6,857,872 bytes</code><br><code>de       [█████████████▒░░░░░░]  66.45% (~68.08%)  918,696 of 1,382,608 bytes</code><br><code>eu       [████████████▒░░░░░░░]  62.53% (~64.23%)  867,667 of 1,387,504 bytes</code><br><code>eu-x     [████████████▒░░░░░░░]  62.23% (~63.96%)  820,303 of 1,318,176 bytes</code><br><code>us       [█████████████▒░░░░░░]  68.05% (~69.77%)  941,088 of 1,382,992 bytes</code><br><code>us-rev1  [█████████████▒░░░░░░]  68.02% (~69.84%)  943,110 of 1,386,592 bytes</code></pre>
 
 | de (NUS-NRWD-0, Germany). Censored German release. SHA256 `9dc401252bacb2ad7412ef003f97f28cb225d76b3cc76f430fbc27fa05067ca8` |
 |---|
@@ -23,7 +23,7 @@ A matching decompilation of *Turok: Rage Wars* for the Nintendo 64.
 
 | us (NUS-NRWE-0, North America). First NTSC release (black cartridge). SHA256 `0433043aaba2649bdd1fe717c4020550ac663c0362527aa082490f5977a3e46b` |
 |---|
-| <pre><code>code      [█████████████▒░░░░░░]  68.70% (~70.49%)  729,808 of 1,062,244</code><br><code>data      [█████████████▒░░░░░░]  65.42% (~67.40%)  209,832 of 320,748</code><br><code>functions [████████████████░░░░]  82.53%  2,848 of 3,451</code></pre> |
+| <pre><code>code      [█████████████▒░░░░░░]  68.70% (~70.49%)  729,808 of 1,062,244</code><br><code>data      [█████████████▒░░░░░░]  65.87% (~67.40%)  211,280 of 320,748</code><br><code>functions [████████████████░░░░]  82.53%  2,848 of 3,451</code></pre> |
 
 | us-rev1 (NUS-NRWE-1, North America). Revised NTSC release (grey cartridge). SHA256 `5dfbae59e4a3860b740ccbb28f33aad624315e30bfca6d60abd62d12a89e0089` |
 |---|

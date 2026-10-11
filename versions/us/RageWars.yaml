@@ -5403,7 +5403,7 @@ segments:
       - [0x1AE8A8, c, "func_8044A738_de"]
       - [0x1AE900, c, "func_8044A790_de"]
       - [0x1AE940, c, "func_8044A7D0_de"]
-      - [0x1AE9B8, data, "rodata/unresolved/8044A9B8"]
+      - [0x1AE9B8, .data, "rodata/unresolved/8044A9B8"]
       - [0x1AEF60, c, "func_8044ADF0_de"]
       - [0x1AEFD4, data, "rodata/unresolved/8044AFD4"]
       - [0x1AEFE0, c, "func_8044AE70_de"]
