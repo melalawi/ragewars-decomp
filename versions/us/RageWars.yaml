@@ -5354,7 +5354,7 @@ segments:
       - [0x1A8E68, c, "func_80444CF8_de"]
       - [0x1A8EC0, c, "func_80444D50_de"]
       - [0x1A8F0C, c, "func_80444D9C_de"]
-      - [0x1A8F98, data, "rodata/unresolved/80444F98"]
+      - [0x1A8F98, .data, "rodata/unresolved/80444F98"]
       - [0x1AA0F0, c, "func_80445F80_de"]
       - [0x1AAB8C, asm, "func_80446B8C_us"]
       - [0x1AAB90, c, "func_80446A20_de"]
