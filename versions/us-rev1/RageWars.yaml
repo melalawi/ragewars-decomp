@@ -6079,7 +6079,7 @@ segments:
       - [0xe637c, data, "rodata/unresolved/800E5698_unclaimed_E62B0_unclaimed_E6310_unclaimed_E637C"]
       - [0xE6380, data, "rodata/writable/800E5780"]
       - [0xe6388, data, "src/rw_menu_event_handlers_E6388_us_rev1.c"]
-      - [0xe63dc, data, "rodata/unresolved/800E5788_unclaimed_E63DC"]
+      - [0xe63dc, .data, "rodata/unresolved/800E5788_unclaimed_E63DC"]
       - [0xE6430, data, "rodata/writable/800E5830"]
       - [0xe6434, data, "src/rw_menu_event_handlers_E6434_us_rev1.c"]
       - [0xe644c, data, "rodata/unresolved/800E5834_unclaimed_E644C"]
