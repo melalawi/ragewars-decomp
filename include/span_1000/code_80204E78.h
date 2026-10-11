@@ -1,6 +1,10 @@
 #ifndef UNBAKE_SPAN_1000_CODE_80204E78_H
 #define UNBAKE_SPAN_1000_CODE_80204E78_H
 #include "../types.h"
+#include "common/types_1dc8418c21db.h"
+#include "common/types_8a8189af7b05.h"
+#include "resident_event_handler.h"
+#include "types.h"
 struct func_8020612C_S3;
 /* unbake published declaration: published_04eb475a6a22b3d188fcac15 */
 struct func_8020612C_S3 {
@@ -353,5 +357,44 @@ struct func_80205628_S1 {
     char padB4[0x17C - 0xB4 - sizeof(s32)];
     s32 unk17C;
 };
+
+typedef struct {
+    s16 hi;
+    s16 id;
+} Half5324;
+typedef union {
+    s32 whole;
+    Half5324 half;
+} Word5324;
+typedef struct {
+    char pad0[0x18];
+    s32 unk18;
+    s32 unk1C;
+    Word5324 unk20;
+    s32 unk24;
+    s32 unk28;
+} Rec5324;
+typedef struct {
+    char pad0[0x14];
+    Rec5324 r;
+} Hold5324;
+typedef union {
+    Vec3 v;
+    Triple t;
+} Pos5324;
+typedef struct {
+    char pad0[0x8];
+    Pos5324 pos;
+    char pad14[0x4];
+    Hold5324 *holder;
+    char pad1C[0xE4];
+    s32 flags;
+} Obj5324;
+extern void func_80285DB0_de(void *, void *, s32);
+extern void func_80278D78_de(void *, s32, void *);
+extern void func_80216288_de(void *, s32, Triple, s32);
+extern s32 func_8025DE54_de(s16, Vec3, s32, s32);
+extern void func_802170A0_de(void *, s32 *, s32, s32, s32);
+extern void func_802A5D38_de(void *, s32);
 
 #endif

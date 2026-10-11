@@ -6,6 +6,8 @@
 #include "shared/func_802052C4_de_closed.h"
 #include "common/types_1dc8418c21db.h"
 #include "common/types_8fd754e1e915.h"
+#include "common/types_8a8189af7b05.h"
+#include "common/unused.h"
 
 extern char D_800C8420_de;
 extern char D_002052C4;
@@ -68,4 +70,41 @@ int func_802052F8_de(void *arg0) {
 
 int func_80205314_de(void *arg0) {
     return ((func_80205314_S2 *)((((func_80205314_S1 *)(arg0))->unk18)))->unk2C;
+}
+
+void func_80205324_de(Obj5324 *arg0, s32 *arg1) {
+    s32 temp_s3;
+    Rec5324 *rec;
+    Shared_World *pFlag;
+
+    rec = &arg0->holder->r;
+    pFlag = &D_8011FE88;
+    func_80285DB0_de(pFlag, arg0, 1);
+    func_80278D78_de(arg0, 0x40000, arg0);
+    if (arg1[1] == 0) {
+        arg0->flags = arg0->flags & 0xFFFEFFFF;
+    }
+    if (rec->unk18 == 0) {
+        arg0->flags &= ~0x2000;
+        arg0->flags &= ~0x100;
+    }
+    temp_s3 = pFlag->mode;
+    if (temp_s3 == 4) {
+        if (rec->unk20.whole != -1) {
+            func_8025DE54_de(rec->unk20.half.id, arg0->pos.v, 0, -1);
+        }
+        if (rec->unk1C != -1) {
+            func_80216288_de(arg0, rec->unk1C, arg0->pos.t, 0);
+        }
+        func_802170A0_de(arg0, arg1, 4, rec->unk24, rec->unk28);
+        /* func_802A5D38_de unlinks the walker by the object's 32-bit identity;
+         * the registry holds those identities as s32. */
+        func_802A5D38_de(&D_801379C0, (s32)arg0);
+        if (pFlag->mode != temp_s3) {
+            goto block_10;
+        }
+    } else {
+block_10:
+        arg0->flags = (arg0->flags & ~0x100) | 0x08000000;
+    }
 }

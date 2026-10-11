@@ -161,6 +161,7 @@ schema = 1
 "func_802052C4_de" = { evidence = "landed", signature = "void func_802052C4_de(void *arg0, void *arg1)" }
 "func_802052F8_de" = { evidence = "landed", signature = "int func_802052F8_de(void *arg0)" }
 "func_80205314_de" = { evidence = "landed", signature = "int func_80205314_de(void *arg0)" }
+"func_80205324_de" = { evidence = "landed", signature = "void func_80205324_de(Obj5324 *arg0, s32 *arg1)" }
 "func_80205494_de" = { evidence = "landed", signature = "void func_80205494_de(void *arg0, void *arg1)" }
 "func_802054D0_de" = { evidence = "landed", signature = "int func_802054D0_de(void *object)" }
 "func_802055EC_de" = { evidence = "landed", signature = "void func_802055EC_de(void *arg0, void *arg1)" }
@@ -10160,6 +10161,7 @@ schema = 1
 "Group" = { declaration = "struct Group { void *lead; char pad4[0x24]; char members[1]; };", evidence = "authored" }
 "Group18" = { declaration = "struct Group18 { char pad0[3]; s8 mode; Material18 *material; Mesh *meshes; char padc[8]; struct Group18 *next; };", evidence = "authored" }
 "Group_func_8044D794_de" = { declaration = "typedef struct Group_func_8044D794_de Group_func_8044D794_de;", evidence = "authored" }
+"Half5324" = { declaration = "typedef struct { s16 hi; s16 id; } Half5324;", evidence = "authored" }
 "Handle8043E788" = { declaration = "struct Handle8043E788 { char pad0[0x1C]; struct Obj1C *unk1C; };", evidence = "authored" }
 "Handler" = { declaration = "struct Handler { char pad0[4]; s16 id; char pad6[6]; union { s32 (*targeted)(void *actor, struct Handler *entry, s32 target); s32 (*plain)(void *actor, struct Handler *entry); } handleC; s32 (*handle10)(void *actor, struct Handler *entry); s32 (*handle14)(void *actor, struct Handler *entry); };", evidence = "authored" }
 "Handlers" = { declaration = "struct Handlers { char pad[0xC]; void (*callback)(void *, void *); };", evidence = "authored" }
@@ -10180,6 +10182,7 @@ schema = 1
 "Hit" = { declaration = "struct Hit { u8 pad0[4]; s32 damage; u8 pad8[4]; u32 flags; };", evidence = "authored" }
 "Hit8" = { declaration = "struct Hit8 { ElementE8 *element; f32 t; };", evidence = "authored" }
 "Hit_func_802106E0_de" = { declaration = "struct Hit_func_802106E0_de { char pad0[0xE4]; Vec3 pos; };", evidence = "authored" }
+"Hold5324" = { declaration = "typedef struct { char pad0[0x14]; Rec5324 r; } Hold5324;", evidence = "authored" }
 "Holder" = { declaration = "struct Holder { char pad[0x1C]; struct Owner_func_8043DB04_de *owner; };", evidence = "authored" }
 "Holder_func_8043E2D8_de" = { declaration = "struct Holder_func_8043E2D8_de { char pad[0x1C]; struct Owner_func_8043E2D8_de *owner; struct func_80242278_S1 *mode; };", evidence = "authored" }
 "Holder_func_8043F048_de" = { declaration = "struct Holder_func_8043F048_de { char pad[0x1C]; struct Player_func_8043F048_de *player; };", evidence = "authored" }
@@ -10670,6 +10673,7 @@ schema = 1
 "Obj" = { declaration = "typedef struct Obj Obj;", evidence = "authored" }
 "Obj1C" = { declaration = "struct Obj1C { char pad0[0x5D4]; s32 unk5D4; func_80229BE0_S2 *unk5D8; s32 unk5DC; char pad5E0[0x698 - 0x5E0]; s32 unk698; char pad69C[0x858 - 0x69C]; s32 unk858; };", evidence = "authored" }
 "Obj5" = { declaration = "typedef struct Obj5 Obj5;", evidence = "authored" }
+"Obj5324" = { declaration = "typedef struct { char pad0[0x8]; Pos5324 pos; char pad14[0x4]; Hold5324 *holder; char pad1C[0xE4]; s32 flags; } Obj5324;", evidence = "authored" }
 "Obj8020BC50" = { declaration = "typedef struct Obj8020BC50 Obj8020BC50;", evidence = "authored" }
 "Obj80264124" = { declaration = "struct Obj80264124 { char pad00[8]; s32 x; s32 y; s32 z; char pad14[0xB4]; s32 active; s32 state; f32 amount; f32 timer; char status[0x68]; char object[1]; };", evidence = "authored" }
 "Obj8043EB20" = { declaration = "typedef struct Obj8043EB20 Obj8043EB20;", evidence = "authored" }
@@ -11105,6 +11109,7 @@ schema = 1
 "Pool_func_80410E1C_de" = { declaration = "struct Pool_func_80410E1C_de { s16 count; struct Resource_func_80410E1C_de *resources; s32 unk8; struct Timer_func_80410E1C_de *timers; };", evidence = "authored" }
 "Pool_func_80411518_de" = { declaration = "struct Pool_func_80411518_de { s16 count; char pad2[6]; struct Entry_func_80411518_de *entries; };", evidence = "authored" }
 "Pool_func_8044B0E0_de" = { declaration = "struct Pool_func_8044B0E0_de { IntrusiveList empty; IntrusiveList records; struct Record_func_8044B0E0_de entries[8]; };", evidence = "authored" }
+"Pos5324" = { declaration = "typedef union { Vec3 v; Triple t; } Pos5324;", evidence = "authored" }
 "Preset" = { declaration = "struct Preset { u8 bytes[0x2A]; };", evidence = "authored" }
 "PresetRow" = { declaration = "typedef struct PresetRow PresetRow;", evidence = "authored" }
 "PresetTable" = { declaration = "struct PresetTable { char pad0[0x16]; PresetRow rows[1]; };", evidence = "authored" }
@@ -11149,6 +11154,7 @@ schema = 1
 "ReadWordByte" = { declaration = "typedef struct ReadWordByte ReadWordByte;", evidence = "authored" }
 "ReadWord_func_802AEF84_us_rev1" = { declaration = "typedef struct ReadWord_func_802AEF84_us_rev1 ReadWord_func_802AEF84_us_rev1;", evidence = "authored" }
 "Rec" = { declaration = "typedef struct Rec Rec;", evidence = "authored" }
+"Rec5324" = { declaration = "typedef struct { char pad0[0x18]; s32 unk18; s32 unk1C; Word5324 unk20; s32 unk24; s32 unk28; } Rec5324;", evidence = "authored" }
 "Rec_func_8024C92C_de" = { declaration = "typedef struct Rec_func_8024C92C_de Rec_func_8024C92C_de;", evidence = "authored" }
 "Rec_func_802BA650_de" = { declaration = "typedef struct Rec_func_802BA650_de Rec_func_802BA650_de;", evidence = "authored" }
 "Rec_func_80424B90_de" = { declaration = "typedef struct Rec_func_80424B90_de Rec_func_80424B90_de;", evidence = "authored" }
@@ -12467,6 +12473,7 @@ schema = 1
 "Widget_func_80442D10_de" = { declaration = "struct Widget_func_80442D10_de { int id; unsigned short type; unsigned short pad; int flags; unsigned short x; unsigned short y; unsigned char r; unsigned char g; unsigned char b; unsigned char a; int value; struct Descriptor_func_80442D10_de *desc; int index; void *extra; int arg; };", evidence = "authored" }
 "Window" = { declaration = "typedef struct Window Window;", evidence = "authored" }
 "Window_func_80421AE8_de" = { declaration = "typedef struct Window_func_80421AE8_de Window_func_80421AE8_de;", evidence = "authored" }
+"Word5324" = { declaration = "typedef union { s32 whole; Half5324 half; } Word5324;", evidence = "authored" }
 "Work56EC8" = { declaration = "struct Work56EC8 { void *owner; s16 id; char pad6[2]; char payload[0x40]; void *base; s32 offset; };", evidence = "authored" }
 "Work80244494" = { declaration = "typedef struct Work80244494 Work80244494;", evidence = "authored" }
 "World" = { declaration = "struct World { u8 pad000[0xFC]; s32 state; };", evidence = "authored" }
