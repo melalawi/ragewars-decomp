@@ -2218,6 +2218,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800CBF78"
+segment = "span_C2860"
+members = ["rodata/unresolved/800CBF78", "rodata/writable/800CBF88"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800CC038"
 segment = "span_C24F0"
 members = ["rodata/unresolved/800CBBC0_0CCBB0_0CCC38"]
@@ -41855,6 +41863,17 @@ path = "src/rodata.writable.800CB6D0.c"
 kind = "data"
 group = "code_8024E914"
 members = ["rodata/writable/800CB6D0"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rodata.writable.800CBF88.c"
+kind = "data"
+group = "data_800CBF78"
+members = ["rodata/writable/800CBF88"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
