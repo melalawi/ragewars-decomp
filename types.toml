@@ -379,7 +379,7 @@ schema = 1
 "func_80215410_de" = { evidence = "landed", signature = "void func_80215410_de(void *arg0, void *arg1, s32 unused, void *arg3)" }
 "func_80215410_kind" = { evidence = "landed", signature = "static inline s32 func_80215410_kind(void *self, void *ctx, void *target)" }
 "func_80216108_de" = { evidence = "landed", signature = "s32 func_80216108_de(void *arg0)" }
-"func_80216288_de" = { evidence = "landed", signature = "void func_80216288_de(CActor_t *actor, s32 arg1, Triple input)" }
+"func_80216288_de" = { evidence = "landed", signature = "void func_80216288_de(void *actor, s32 arg1, Triple input, s32 unused0)" }
 "func_80216488_de" = { evidence = "landed", signature = "void func_80216488_de(void *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5)" }
 "func_802164A8_de" = { evidence = "landed", signature = "void func_802164A8_de(Source_func_802164A8_de *src, Dest_func_802164A8_de *dst)" }
 "func_802165F8_de" = { evidence = "landed", signature = "void func_802165F8_de(void *arg0, void *arg1, Result_func_802165F8_de *result)" }
