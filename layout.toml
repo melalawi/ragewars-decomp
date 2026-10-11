@@ -2050,6 +2050,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D34C0"
+segment = "span_C76B0"
+members = ["src/ragewars_pickup_ammo_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D3690"
 segment = "span_C76B0"
 members = ["src/ragewars_menu_strings_D4290_us_rev1.c"]
@@ -36822,6 +36830,17 @@ path = "src/ragewars_particle_intensity_texture_us_rev1.c"
 kind = "data"
 group = "data_800D14A8"
 members = ["src/ragewars_particle_intensity_texture_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_pickup_ammo_us_rev1.c"
+kind = "data"
+group = "data_800D34C0"
+members = ["src/ragewars_pickup_ammo_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
