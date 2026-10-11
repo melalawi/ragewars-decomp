@@ -3871,7 +3871,7 @@ segments:
       - [0xD3C2B, data, "rodata/unresolved/800D302B"]
       - [0xD3C2C, .data, "data/unresolved/800D302C"]
       - [0xD4B70, .data, "rodata/writable/800D3F70"]
-      - [0xD4C70, data, "rodata/unresolved/800D4070"]
+      - [0xD4C70, .data, "rodata/unresolved/800D4070"]
       - [0xD4F7C, data, "rodata/writable/800D437C"]
       - [0xD4F80, data, "src/ragewars_pi_domain_handles_us_rev1.c"]
       - [0xD4F90, data, "src/ragewars_pi_access_queue_initialized_us_rev1.c"]
