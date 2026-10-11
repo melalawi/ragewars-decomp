@@ -3488,7 +3488,7 @@ segments:
       - [0xCAF30, .rodata, "src/rw_pool_80289970_CAF30_us_rev1.c"]
       - [0xCAF74, rodata, "rodata/shared/800CA374"]
       - [0xCAF7F, data, "rodata/unresolved/800CA37F"]
-      - [0xCAF80, rodata, "rodata/shared/800CA380"]
+      - [0xCAF80, .rodata, "rodata/shared/800CA380"]
       - [0xCAFAB, data, "rodata/unresolved/800CA3AB"]
       - [0xCAFAC, rodata, "rodata/shared/800CA3AC"]
       - [0xCAFD1, data, "rodata/unresolved/800CA3D1"]

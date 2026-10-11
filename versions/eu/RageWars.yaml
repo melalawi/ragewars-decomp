@@ -3421,7 +3421,7 @@ segments:
       - [0xC60F0, .rodata, "src/rw_pool_80289970_CAF30_us_rev1.c"]
       - [0xC6134, rodata, "rodata/shared/800CA374"]
       - [0xC613F, data, "rodata/unresolved/800C553F"]
-      - [0xC6140, rodata, "rodata/shared/800CA380"]
+      - [0xC6140, .rodata, "rodata/shared/800CA380"]
       - [0xC616B, data, "rodata/unresolved/800C556B"]
       - [0xC616C, rodata, "rodata/shared/800CA3AC"]
       - [0xC6191, data, "rodata/unresolved/800C5591"]
