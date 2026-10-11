@@ -4659,7 +4659,7 @@ segments:
       - [0x17D4A8, data, "rodata/unresolved/804194A8"]
       - [0x17D4B0, c, "func_80419430_de"]
       - [0x17D6C0, c, "func_80419640_de"]
-      - [0x17D758, data, "rodata/unresolved/80419758"]
+      - [0x17D758, .data, "rodata/unresolved/80419758"]
       - [0x17D91C, c, "func_8041989C_de"]
       - [0x17D94C, c, "func_804198CC_de"]
       - [0x17DA5C, c, "func_804199DC_de"]
