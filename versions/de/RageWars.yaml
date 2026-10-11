@@ -3807,7 +3807,7 @@ segments:
       - [0xCC00C, data, "rodata/unresolved/800CB40C"]
       - [0xCC010, data, "rodata/writable/800D0650"]
       - [0xCC030, rodata, "src/rw_pool_80245D30_D1270_us_rev1.c"]
-      - [0xCC038, data, "rodata/unresolved/800CB438"]
+      - [0xCC038, .data, "rodata/unresolved/800CB438"]
       - [0xCC07C, data, "rodata/writable/800D06BC"]
       - [0xCC080, .data, "rodata/unresolved/800CB480"]
       - [0xCC2D0, .data, "rodata/writable/800CB6D0"]
