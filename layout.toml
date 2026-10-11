@@ -1914,6 +1914,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D6C08"
+segment = "span_C76B0"
+members = ["src/ragewars_credits_lines_us_rev1.c", "rodata/unresolved/800D7028"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D846C"
 segment = "span_C76B0"
 members = ["rodata/unresolved/800D8450_unclaimed_D906C", "src/ragewars_vi_modes_us_rev1.c"]
@@ -36121,6 +36129,17 @@ path = "src/ragewars_controller_button_remap_us_rev1.c"
 kind = "data"
 group = "data_800D0DA4"
 members = ["src/ragewars_controller_button_remap_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_credits_lines_us_rev1.c"
+kind = "data"
+group = "data_800D6C08"
+members = ["src/ragewars_credits_lines_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
