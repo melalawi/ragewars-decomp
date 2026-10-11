@@ -2349,7 +2349,7 @@ segments:
       - [0xB6FF0, c, "func_802B64C0_de"]
       - [0xB7084, data, "rodata/unresolved/802B6484"]
       - [0xB7090, c, "func_802B6560_de"]
-      - [0xB7194, data, "rodata/unresolved/802B6594"]
+      - [0xB7194, .data, "rodata/unresolved/802B6594"]
       - [0xB7430, asm, "func_802B6900_de"]
       - [0xB76A8, data, "rodata/unresolved/802B6AA8"]
       - [0xB76B0, c, "func_802B6B80_de"]
