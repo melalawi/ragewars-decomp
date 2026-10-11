@@ -3783,7 +3783,7 @@ segments:
       - [0xC9DB8, data, "rodata/writable/800CE408"]
       - [0xC9DC0, data, "rodata/unresolved/800C91C0"]
       - [0xCA114, rodata, "src/rw_pool_80225F44_CF358_us_rev1.c"]
-      - [0xCA118, data, "rodata/unresolved/800C9518"]
+      - [0xCA118, .data, "rodata/unresolved/800C9518"]
       - [0xCAB70, rodata, "src/rw_text_8021D408_CFDB4_us_rev1.c"]
       - [0xCAB74, rodata, "src/rw_pool_8021EEFC_CFDB8_us_rev1.c"]
       - [0xCAB78, data, "rodata/unresolved/800C9F78"]
