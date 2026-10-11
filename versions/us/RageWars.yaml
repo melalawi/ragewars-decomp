@@ -2003,7 +2003,7 @@ segments:
       - [0xA1264, asm, "func_802A0724_de"]
       - [0xA1288, c, "func_802A0748_de"]
       - [0x0A1604, data, "func_802A0AA4_de_padding_A1604"]
-      - [0xA1608, data, "rodata/unresolved/802A0A08"]
+      - [0xA1608, .data, "rodata/unresolved/802A0A08"]
       - [0xA1748, c, "func_802A0C08_de"]
       - [0xA1778, c, "func_802A0C38_de"]
       - [0xA1878, c, "func_802A0D38_de"]
