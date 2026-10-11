@@ -3032,7 +3032,7 @@ segments:
       - [0xC4768, rodata, "rodata/func_8024C6E8_de/800C8C58"]
       - [0xC4778, rodata, "rodata/func_8024CA10_de/800C8C68"]
       - [0xC477C, rodata, "src/rw_pool_8024CB4C_C986C_us_rev1.c"]
-      - [0xC4780, rodata, "src/rw_pool_8024CC30_C9870_us_rev1.c"]
+      - [0xC4780, .rodata, "src/rw_pool_8024CC30_C9870_us_rev1.c"]
       - [0xC47B0, rodata, "src/rw_pool_8024D028_C98A0_us_rev1.c"]
       - [0xC47B4, .rodata, "rodata/unresolved/800C3BB4"]
       - [0xC47F8, rodata, "rodata/func_8024D284_de/800C8CE8"]
