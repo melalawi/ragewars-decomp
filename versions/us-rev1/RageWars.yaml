@@ -4569,7 +4569,7 @@ segments:
       - [0xd02a8, data, "rodata/unresolved/800CF5C0_unclaimed_D01E8_unclaimed_D0200_unclaimed_D0208_unclaimed_D0220_unclaimed_D0228_unclaimed_D0240_unclaimed_D0244_unclaimed_D0288_unclaimed_D02A0_unclaimed_D02A8"]
       - [0xd02b0, data, "src/rw_weapon_state_resource_animation_D02B0_us_rev1.c"]
       - [0xd02c0, data, "src/rw_weapon_state_end_D02C0_us_rev1.c"]
-      - [0xd02c4, data, "rodata/unresolved/800CF5C0_unclaimed_D01E8_unclaimed_D0200_unclaimed_D0208_unclaimed_D0220_unclaimed_D0228_unclaimed_D0240_unclaimed_D0244_unclaimed_D0288_unclaimed_D02A0_unclaimed_D02A8_unclaimed_D02C0_unclaimed_D02C4"]
+      - [0xd02c4, .data, "rodata/unresolved/800CF5C0_unclaimed_D01E8_unclaimed_D0200_unclaimed_D0208_unclaimed_D0220_unclaimed_D0228_unclaimed_D0240_unclaimed_D0244_unclaimed_D0288_unclaimed_D02A0_unclaimed_D02A8_unclaimed_D02C0_unclaimed_D02C4"]
       - [0xd0300, data, "src/rw_weapon_state_entry_D0300_us_rev1.c"]
       - [0xd0308, data, "rodata/unresolved/800CF5C0_unclaimed_D01E8_unclaimed_D0200_unclaimed_D0208_unclaimed_D0220_unclaimed_D0228_unclaimed_D0240_unclaimed_D0244_unclaimed_D0288_unclaimed_D02A0_unclaimed_D02A8_unclaimed_D02C0_unclaimed_D02C4_unclaimed_D0308"]
       - [0xd0314, data, "src/rw_weapon_state_animation_D0314_us_rev1.c"]
