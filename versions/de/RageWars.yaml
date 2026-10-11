@@ -3875,7 +3875,7 @@ segments:
       - [0xD4F7C, data, "rodata/writable/800D437C"]
       - [0xD4F80, data, "src/ragewars_pi_domain_handles_us_rev1.c"]
       - [0xD4F90, data, "src/ragewars_pi_access_queue_initialized_us_rev1.c"]
-      - [0xD4FB0, data, "src/ragewars_vi_contexts_us_rev1.c"]
+      - [0xD4FB0, .data, "src/ragewars_vi_contexts_us_rev1.c"]
       - [0xD5010, data, "src/ragewars_vi_context_selectors_us_rev1.c"]
       - [0xD5020, .data, "rodata/unresolved/800D4420"]
       - [0xD5E40, rodata, "rodata/func_802B72D4_de/800D5240"]

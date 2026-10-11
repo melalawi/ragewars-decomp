@@ -3899,7 +3899,7 @@ segments:
       - [0xE07BC, data, "rodata/writable/800D437C"]
       - [0xE07C0, data, "src/ragewars_pi_domain_handles_us_rev1.c"]
       - [0xE07D0, data, "src/ragewars_pi_access_queue_initialized_us_rev1.c"]
-      - [0xE07F0, data, "src/ragewars_vi_contexts_us_rev1.c"]
+      - [0xE07F0, .data, "src/ragewars_vi_contexts_us_rev1.c"]
       - [0xE0850, data, "src/ragewars_vi_context_selectors_us_rev1.c"]
       - [0xE0860, .data, "rodata/unresolved/800DFC60"]
       - [0xE1690, data, "src/ragewars_audio_interface_clock_us_rev1.c"]
