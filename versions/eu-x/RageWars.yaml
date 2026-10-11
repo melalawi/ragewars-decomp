@@ -5518,7 +5518,7 @@ segments:
     align: 1
     subalign: 1
     subsegments:
-      - [0x13F360, data, "rodata/unresolved/8015A518"]
+      - [0x13F360, .data, "rodata/unresolved/8015A518"]
   - name: "retained_142D20"
     type: bin
     start: 0x142D20
