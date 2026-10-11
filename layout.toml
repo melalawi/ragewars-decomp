@@ -2050,6 +2050,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D551F"
+segment = "span_C76B0"
+members = ["rodata/writable/800D3640_unclaimed_D611C_unclaimed_D611F"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D5834"
 segment = "span_C76B0"
 members = ["src/ragewars_menu_strings_D6434_us_rev1.c"]
@@ -39179,6 +39187,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/rodata.writable.800D3640_unclaimed_D611C_unclaimed_D611F.c"
+kind = "data"
+group = "data_800D551F"
+members = ["rodata/writable/800D3640_unclaimed_D611C_unclaimed_D611F"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/rodata.writable.800D3F70.c"
 kind = "data"
 group = "code_802AD608"
@@ -39746,11 +39765,6 @@ scores = {us-rev1 = 0.9142857142857143}
 member = "rodata/writable/800D2C90_unclaimed_D38A8"
 path = "src/fuzzy/rodata.writable.800D2C90_unclaimed_D38A8.c"
 scores = {us-rev1 = 0.9803921568627451}
-
-[[fuzzy]]
-member = "rodata/writable/800D3640_unclaimed_D611C_unclaimed_D611F"
-path = "src/fuzzy/rodata.writable.800D3640_unclaimed_D611C_unclaimed_D611F.c"
-scores = {us-rev1 = 0.9999999999999999}
 
 [[fuzzy]]
 member = "rodata/writable/800D94E8"
