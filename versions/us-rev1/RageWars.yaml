@@ -6045,7 +6045,7 @@ segments:
       - [0xE5294, data, "src/ragewars_arena_menu_slots_us_rev1.c"]
       - [0xE5684, .data, "src/ragewars_arena_compatibility_us_rev1.c"]
       - [0xe5984, .data, "src/rw_menu_event_handlers_E5984_us_rev1.c"]
-      - [0xe5a20, data, "src/rw_menu_event_handlers_E5A20_us_rev1.c"]
+      - [0xe5a20, .data, "src/rw_menu_event_handlers_E5A20_us_rev1.c"]
       - [0xe5abc, data, "rodata/unresolved/800E4694_unclaimed_E5984_unclaimed_E5A20_unclaimed_E5ABC"]
       - [0xE5AF0, data, "rodata/writable/800E4EF0"]
       - [0xe5af4, data, "src/rw_menu_event_handlers_E5AF4_us_rev1.c"]
