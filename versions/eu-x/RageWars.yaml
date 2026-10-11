@@ -3890,7 +3890,7 @@ segments:
       - [0xCFECA, data, "rodata/unresolved/800CF2CA"]
       - [0xCFECC, data, "data/unresolved/800CF2CC"]
       - [0xCFED0, .data, "rodata/writable/800CF2D0"]
-      - [0xD00CC, data, "rodata/unresolved/800CDEB4"]
+      - [0xD00CC, .data, "rodata/unresolved/800CDEB4"]
       - [0xDD690, rodata, "src/ragewars_menu_cinema_fade_label_us_rev1.c"]
       - [0xDD6B3, data, "rodata/unresolved/800DCAB3"]
       - [0xDD6B4, .data, "data/unresolved/800DCAB4"]
