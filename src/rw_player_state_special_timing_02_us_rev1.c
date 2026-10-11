@@ -1,5 +1,3 @@
-#include "rw_player_state_fields.h"
-
-/* Original special state2: signed timer and parameter, consumed
- * by func_802227F4_de; zero parameter preserves the previous value. */
-RwPlayerStateTiming rw_player_state_special_timing_02_us_rev1 = {0, 24100};
+unsigned int D_auto_src_rw_player_state_special_timing_02_us_rev1[2] = {
+    0x00000000, 0x00005E24,
+};

@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80286AA8_de; US rev1 ROM 0xcadf4-0xcadfd.
- */
-const char D_800C5104_de[9] = "Matrices";
+const unsigned char D_auto_src_rw_text_80286AA8_CADF4_us_rev1[9] = {
+    0x4D, 0x61, 0x74, 0x72, 0x69, 0x63, 0x65, 0x73, 0x00,
+};

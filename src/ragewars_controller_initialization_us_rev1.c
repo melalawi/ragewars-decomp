@@ -1,5 +1,3 @@
-#include "types.h"
-
-/* 802B7880 tests and sets this controller initialization flag before setup.
- * Adjacent pointer fields remain unclaimed. ROM D8F70..D8F74. */
-s32 D_800D4340 = 0;
+unsigned int D_auto_src_ragewars_controller_initialization_us_rev1[1] = {
+    0x00000000,
+};

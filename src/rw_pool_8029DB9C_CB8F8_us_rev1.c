@@ -1,15 +1,5 @@
-/* Numeric constants loaded by func_8029DB9C_de.
- * US rev1 ROM 0xcb8f8-0xcb958; original .float/.double directives.
- */
-const double D_800C5B68_de = -2.71050494653762122e-20;
-const double D_800C5B70_de = 2.71050494653762122e-20;
-const double D_800C5B78_de = 1.0;
-const double D_800C5B80_de = 1.4426950216293335;
-const double D_800C5B88_de = 0.5;
-const double D_800C5B90_de = 0.693359375;
-const double D_800C5B98_de = 0.000212194441701285568;
-const double D_800C5BA0_de = 1.65203291544457898e-05;
-const double D_800C5BA8_de = 0.00694359978660941124;
-const double D_800C5BB0_de = 0.000495862856041640043;
-const double D_800C5BB8_de = 0.0555538684129714966;
-const double D_800C5BC0_de = 0.25;
+const unsigned int D_auto_src_rw_pool_8029DB9C_CB8F8_us_rev1[24] = {
+    0xBBDFFFFF, 0xA0000001, 0x3BDFFFFF, 0xA0000001, 0x3FF00000, 0x00000000, 0x3FF71547, 0x60000000,
+    0x3FE00000, 0x00000000, 0x3FE63000, 0x00000000, 0x3F2BD010, 0x60000001, 0x3EF152A4, 0x60000000,
+    0x3F7C70E4, 0x60000000, 0x3F403F99, 0x60000000, 0x3FAC718E, 0x80000000, 0x3FD00000, 0x00000000,
+};

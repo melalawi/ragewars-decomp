@@ -1,2 +1,4 @@
-/* Menu label slots include terminators and original word padding. */
-const char ragewars_menu_digit_labels_us_rev1[11][4] = {" ", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+unsigned int D_auto_src_ragewars_menu_digit_labels_us_rev1[11] = {
+    0x20000000, 0x30000000, 0x31000000, 0x32000000, 0x33000000, 0x34000000, 0x35000000, 0x36000000,
+    0x37000000, 0x38000000, 0x39000000,
+};

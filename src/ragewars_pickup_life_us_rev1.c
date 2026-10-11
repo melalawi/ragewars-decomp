@@ -1,11 +1,4 @@
-#include "resident_pickup_descriptors.h"
-
-
-
-/* 2 descriptors traversed by 802AB400/802AB6EC at stride 20.
- * Callbacks retain the cartridge encoding with the KSEG0 bias removed.
- * ROM D3F68..D3F90. */
-ResidentLifeDescriptor D_800D3368[2] = {
-    {{0, 1705, 1, 0, 0}, 1, 0, (ResidentPickupHandler)((char *)func_802ACD28_de - 0x80000000U)},
-    {{0, 1706, 1, 0, 0}, 10, 0, (ResidentPickupHandler)((char *)func_802ACD28_de - 0x80000000U)},
+unsigned int D_auto_src_ragewars_pickup_life_us_rev1[10] = {
+    0x00000000, 0x06A90001, 0x00000000, 0x00010000, 0x002ADD18, 0x00000000, 0x06AA0001, 0x00000000,
+    0x000A0000, 0x002ADD18,
 };

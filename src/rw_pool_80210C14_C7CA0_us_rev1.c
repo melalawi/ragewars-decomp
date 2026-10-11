@@ -1,13 +1,4 @@
-/* Numeric constants loaded by func_80210C14_de.
- * US rev1 ROM 0xc7ca0-0xc7cc8; original .float/.double directives.
- */
-const float D_800C1FB0_de = 3.141592741f;
-const float D_800C1FB4_de = 0.3926990926f;
-const float D_800C1FB8_de = 6.283185482f;
-const float D_800C1FBC_de = 6.283185482f;
-const float D_800C1FC0_de = 6.183185577f;
-const float D_800C1FC4_de = 0.1000000015f;
-const float D_800C1FC8_de = 0.1591549367f;
-const float D_800C1FCC_de = 8.0f;
-const float D_800C1FD0_de = 180.0f;
-const float D_800C1FD4_de = 140.0f;
+const unsigned int D_auto_src_rw_pool_80210C14_C7CA0_us_rev1[10] = {
+    0x40490FDB, 0x3EC90FDB, 0x40C90FDB, 0x40C90FDB, 0x40C5DCA8, 0x3DCCCCCD, 0x3E22F983, 0x41000000,
+    0x43340000, 0x430C0000,
+};

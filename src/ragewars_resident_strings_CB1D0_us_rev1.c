@@ -1,9 +1,3 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_CB1D0 {
-    char label_artsend_texture_0[16]; /* ROM0xCB1D0 */
+const unsigned int D_auto_src_ragewars_resident_strings_CB1D0_us_rev1[4] = {
+    0x41727473, 0x656E6420, 0x54657874, 0x75726500,
 };
-const struct MenuStrings_CB1D0 ragewars_resident_strings_CB1D0_us_rev1 = {
-    "Artsend Texture"
-};
-typedef char menu_strings_size_CB1D0[(sizeof(struct MenuStrings_CB1D0) == 16) ? 1 : -1];

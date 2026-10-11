@@ -1,13 +1,4 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_E2D5C {
-    char label_hdgfv_um_hd_0[12]; /* ROM0xE2D5C */
-    char label_wicwwdrbp_yi_o_1[20]; /* ROM0xE2D68 */
-    char label_ifmweg_f_2[12]; /* ROM0xE2D7C */
+unsigned int D_auto_src_ragewars_resident_strings_E2D5C_us_rev1[11] = {
+    0x48444746, 0x5640554D, 0x5D484400, 0x57494357, 0x57445242, 0x505D5F59, 0x49404F5F, 0x00000000,
+    0x49464D57, 0x45474046, 0x00000000,
 };
-const struct MenuStrings_E2D5C ragewars_resident_strings_E2D5C_us_rev1 = {
-    "HDGFV@UM]HD",
-    "WICWWDRBP]_YI@O_",
-    "IFMWEG@F"
-};
-typedef char menu_strings_size_E2D5C[(sizeof(struct MenuStrings_E2D5C) == 44) ? 1 : -1];

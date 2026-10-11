@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80288938_de; US rev1 ROM 0xcaf1c-0xcaf2e.
- */
-const char D_800C522C_de[18] = "Multi player data";
+const unsigned short D_auto_src_rw_text_80288938_CAF1C_us_rev1[9] = {
+    0x4D75, 0x6C74, 0x6920, 0x706C, 0x6179, 0x6572, 0x2064, 0x6174, 0x6100,
+};

@@ -1,5 +1,3 @@
-/* Numeric constants loaded by func_8028D108_de.
- * US rev1 ROM 0xcafe4-0xcafec; original .float/.double directives.
- */
-const float D_800C52F4 = 255.0f;
-const float D_800C52F8_de = 2147483648.0f;
+const unsigned int D_auto_src_rw_pool_8028D108_CAFE4_us_rev1[2] = {
+    0x437F0000, 0x4F000000,
+};

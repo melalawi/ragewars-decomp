@@ -1,4 +1,3 @@
-/* US-rev1 credits renderer selects entry zero of this language table.
- * Later adjacent keyboard records have a separate layout. */
-extern char *ragewars_credits_lines_us_rev1[264];
-char **D_800D3E14_de[1] = {ragewars_credits_lines_us_rev1};
+unsigned int D_auto_src_ragewars_credits_language_table_us_rev1[1] = {
+    0x800D6C08,
+};

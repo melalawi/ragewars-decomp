@@ -1,0 +1,10 @@
+#ifdef VERSION_DE
+const unsigned int D_auto_rodata_func_802ACE38_de_800CB448[8] = {
+    0x002ACE90, 0x002ACEA0, 0x002ACEB0, 0x002ACEB0, 0x002ACEFC, 0x002ACEFC, 0x002ACEFC, 0x002ACEC4,
+};
+#endif
+#ifdef VERSION_US_REV
+const unsigned int D_auto_rodata_func_802ACE38_de_800CB448[8] = {
+    0x002ADE80, 0x002ADE90, 0x002ADEA0, 0x002ADEA0, 0x002ADEEC, 0x002ADEEC, 0x002ADEEC, 0x002ADEB4,
+};
+#endif

@@ -1,22 +1,28 @@
-#include "resident_event_handler.h"
-
-extern s32 func_80439628_de(void *, s32, s32, s32, s32);
-extern s32 func_804396C0_us_rev1(void *, s32, s32, s32, s32);
-extern s32 func_804395F8_de(void *, s32, s32, s32, s32);
-extern s32 func_80439750_de(void *, s32, s32, s32, s32);
-extern s32 func_80439730_de(void *, s32, s32, s32, s32);
-extern s32 func_804396F0_de(void *, s32, s32, s32, s32);
-
-/* func_80439758_de consumes these event/actor-kind/callback rows
- * at stride12 with five o32 arguments and a signed result. Callback
- * relocations omit KSEG0 bias. This object is the complete table.
- * Unnamed callback entry rows remain in original extraction. */
-ResidentEventHandlerEntry D_800E5954[7] = {
-    {3592, 24, (ResidentEventHandler)((char *)func_80439628_de - 0x80000000U)},
-    {3590, 24, (ResidentEventHandler)((char *)func_804396C0_us_rev1 - 0x80000000U)},
-    {3587, 24, (ResidentEventHandler)((char *)func_804395F8_de - 0x80000000U)},
-    {1, 24, (ResidentEventHandler)((char *)func_80439750_de - 0x80000000U)},
-    {2, 24, (ResidentEventHandler)((char *)func_80439730_de - 0x80000000U)},
-    {10, 24, (ResidentEventHandler)((char *)func_804396F0_de - 0x80000000U)},
-    {0, 0, 0},
+#ifdef VERSION_DE
+unsigned int D_auto_src_rw_menu_event_handlers_E6554_us_rev1[21] = {
+    0x00000E08, 0x00000018, 0x00439628, 0x00000E06, 0x00000018, 0x004394E0, 0x00000E03, 0x00000018,
+    0x004395F8, 0x00000001, 0x00000018, 0x00439750, 0x00000002, 0x00000018, 0x00439730, 0x0000000A,
+    0x00000018, 0x004396F0, 0x00000000, 0x00000000, 0x00000000,
 };
+#endif
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_rw_menu_event_handlers_E6554_us_rev1[21] = {
+    0x00000E08, 0x00000018, 0x0043A628, 0x00000E06, 0x00000018, 0x0043A4E0, 0x00000E03, 0x00000018,
+    0x0043A5F8, 0x00000001, 0x00000018, 0x0043A750, 0x00000002, 0x00000018, 0x0043A730, 0x0000000A,
+    0x00000018, 0x0043A6F0, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_rw_menu_event_handlers_E6554_us_rev1[21] = {
+    0x00000E08, 0x00000018, 0x00439808, 0x00000E06, 0x00000018, 0x004396C0, 0x00000E03, 0x00000018,
+    0x004397D8, 0x00000001, 0x00000018, 0x00439930, 0x00000002, 0x00000018, 0x00439910, 0x0000000A,
+    0x00000018, 0x004398D0, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US
+unsigned int D_auto_src_rw_menu_event_handlers_E6554_us_rev1[21] = {
+    0x00000E08, 0x00000018, 0x00439808, 0x00000E06, 0x00000018, 0x004396C0, 0x00000E03, 0x00000018,
+    0x004397D8, 0x00000001, 0x00000018, 0x00439930, 0x00000002, 0x00000018, 0x00439910, 0x0000000A,
+    0x00000018, 0x004398D0, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif

@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_802BD430_de; US rev1 ROM 0xcd940-0xcd946.
- */
-const char D_800C7AF0_de[6] = " +-#0";
+const unsigned short D_auto_src_rw_text_802BD430_CD940_us_rev1[3] = {
+    0x202B, 0x2D23, 0x3000,
+};

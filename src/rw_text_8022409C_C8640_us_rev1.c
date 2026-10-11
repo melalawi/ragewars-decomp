@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8022409C_de; US rev1 ROM 0xc8640-0xc864d.
- */
-const char D_800C2950_de[13] = "Fly Mode Off";
+const unsigned char D_auto_src_rw_text_8022409C_C8640_us_rev1[13] = {
+    0x46, 0x6C, 0x79, 0x20, 0x4D, 0x6F, 0x64, 0x65, 0x20, 0x4F, 0x66, 0x66, 0x00,
+};

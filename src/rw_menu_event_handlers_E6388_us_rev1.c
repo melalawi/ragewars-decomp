@@ -1,22 +1,21 @@
-#include "resident_event_handler.h"
-
-extern s32 func_80437444_de(void *, s32, s32, s32, s32);
-extern s32 func_80437304_de(void *, s32, s32, s32, s32);
-extern s32 func_80437414_de(void *, s32, s32, s32, s32);
-extern s32 func_804373E4_de(void *, s32, s32, s32, s32);
-extern s32 func_804375B0_de(void *, s32, s32, s32, s32);
-extern s32 func_80437574_de(void *, s32, s32, s32, s32);
-
-/* func_804384B8_eu consumes these event/actor-kind/callback rows
- * at stride12 with five o32 arguments and a signed result. Callback
- * relocations omit KSEG0 bias. This object is the complete table.
- * Unnamed callback entry rows remain in original extraction. */
-ResidentEventHandlerEntry D_800F1DA8[7] = {
-    {3592, 9, (ResidentEventHandler)((char *)func_80437444_de - 0x80000000U)},
-    {3590, 9, (ResidentEventHandler)((char *)func_80437304_de - 0x80000000U)},
-    {3591, 9, (ResidentEventHandler)((char *)func_80437414_de - 0x80000000U)},
-    {3587, 9, (ResidentEventHandler)((char *)func_804373E4_de - 0x80000000U)},
-    {1, 9, (ResidentEventHandler)((char *)func_804375B0_de - 0x80000000U)},
-    {2, 9, (ResidentEventHandler)((char *)func_80437574_de - 0x80000000U)},
-    {0, 0, 0},
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_rw_menu_event_handlers_E6388_us_rev1[21] = {
+    0x00000E08, 0x00000009, 0x004383A4, 0x00000E06, 0x00000009, 0x00438270, 0x00000E07, 0x00000009,
+    0x00438374, 0x00000E03, 0x00000009, 0x00438344, 0x00000001, 0x00000009, 0x00438510, 0x00000002,
+    0x00000009, 0x004384D4, 0x00000000, 0x00000000, 0x00000000,
 };
+#endif
+#ifdef VERSION_EU
+unsigned int D_auto_src_rw_menu_event_handlers_E6388_us_rev1[21] = {
+    0x00000E08, 0x00000009, 0x00438274, 0x00000E06, 0x00000009, 0x00438140, 0x00000E07, 0x00000009,
+    0x00438244, 0x00000E03, 0x00000009, 0x00438214, 0x00000001, 0x00000009, 0x004383E0, 0x00000002,
+    0x00000009, 0x004383A4, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_rw_menu_event_handlers_E6388_us_rev1[21] = {
+    0x00000E08, 0x00000009, 0x00437624, 0x00000E06, 0x00000009, 0x004374F0, 0x00000E07, 0x00000009,
+    0x004375F4, 0x00000E03, 0x00000009, 0x004375C4, 0x00000001, 0x00000009, 0x00437790, 0x00000002,
+    0x00000009, 0x00437754, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif

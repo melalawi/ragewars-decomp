@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8043F290; US rev1 ROM 0xe2fb8-0xe2fbe.
- */
-const char D_800DE388_de[6] = "%s %s";
+const unsigned short D_auto_src_rw_text_8043F120_E2FB8_us_rev1[3] = {
+    0x2573, 0x2025, 0x7300,
+};

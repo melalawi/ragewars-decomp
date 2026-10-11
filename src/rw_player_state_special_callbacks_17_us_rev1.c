@@ -1,10 +1,3 @@
-#include "rw_player_state_fields.h"
-
-extern void func_8022D1A0_de(void *, void *);
-extern void func_8022D1A8_de(void *, void *);
-
-/* Original special state17: symbolic entry and update callbacks. */
-RwPlayerStateCallbacks rw_player_state_special_callbacks_17_us_rev1 = {
-    (RwPlayerStateCallback)((char *)func_8022D1A0_de - 0x80000000U),
-    (RwPlayerStateCallback)((char *)func_8022D1A8_de - 0x80000000U),
+unsigned int D_auto_src_rw_player_state_special_callbacks_17_us_rev1[2] = {
+    0x0022D190, 0x0022D198,
 };

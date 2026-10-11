@@ -1,0 +1,18 @@
+#ifdef VERSION_DE
+const unsigned int D_auto_rodata_func_8043F120_de_800E23C8[9] = {
+    0x0043F174, 0x0043F1A8, 0x0043F1A8, 0x0043F180, 0x0043F194, 0x0043F1A8, 0x0043F1B8, 0x0043F1CC,
+    0x0043F1E0,
+};
+#endif
+#ifdef VERSION_EU_X
+const unsigned int D_auto_rodata_func_8043F120_de_800E23C8[9] = {
+    0x00440144, 0x00440178, 0x00440178, 0x00440150, 0x00440164, 0x00440178, 0x00440188, 0x0044019C,
+    0x004401B0,
+};
+#endif
+#ifdef VERSION_US_REV
+const unsigned int D_auto_rodata_func_8043F120_de_800E23C8[9] = {
+    0x0043F2E4, 0x0043F318, 0x0043F318, 0x0043F2F0, 0x0043F304, 0x0043F318, 0x0043F328, 0x0043F33C,
+    0x0043F350,
+};
+#endif

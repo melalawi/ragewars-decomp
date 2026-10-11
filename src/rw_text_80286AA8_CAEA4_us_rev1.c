@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80286AA8_de; US rev1 ROM 0xcaea4-0xcaeaf.
- */
-const char D_800C51B4_de[11] = "sky layers";
+const unsigned char D_auto_src_rw_text_80286AA8_CAEA4_us_rev1[11] = {
+    0x73, 0x6B, 0x79, 0x20, 0x6C, 0x61, 0x79, 0x65, 0x72, 0x73, 0x00,
+};

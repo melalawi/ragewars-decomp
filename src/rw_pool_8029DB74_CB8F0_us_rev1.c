@@ -1,4 +1,3 @@
-/* Numeric constants loaded by func_8029DB74_de.
- * US rev1 ROM 0xcb8f0-0xcb8f8; original .float/.double directives.
- */
-const double D_800C5B60_de = 0.434294492006301824;
+const unsigned int D_auto_src_rw_pool_8029DB74_CB8F0_us_rev1[2] = {
+    0x3FDBCB7B, 0x1FFFFFFF,
+};

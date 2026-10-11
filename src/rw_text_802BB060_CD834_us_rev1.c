@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_802BB060_de; US rev1 ROM 0xcd834-0xcd843.
- */
-const char D_800C79E4_de[15] = "io/sirawread.c";
+const unsigned char D_auto_src_rw_text_802BB060_CD834_us_rev1[15] = {
+    0x69, 0x6F, 0x2F, 0x73, 0x69, 0x72, 0x61, 0x77, 0x72, 0x65, 0x61, 0x64, 0x2E, 0x63, 0x00,
+};

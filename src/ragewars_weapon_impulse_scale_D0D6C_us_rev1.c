@@ -1,4 +1,3 @@
-/* impulse scale member of D_800CBB0C.
- * Retained consumers: func_802330AC_de.
- * Only these observed member bytes are source-backed here. */
-float ragewars_weapon_impulse_scale_D0D6C_us_rev1 = 0.0f;
+unsigned int D_auto_src_ragewars_weapon_impulse_scale_D0D6C_us_rev1[1] = {
+    0x00000000,
+};

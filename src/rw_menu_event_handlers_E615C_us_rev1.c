@@ -1,26 +1,40 @@
-#include "resident_event_handler.h"
-
-extern s32 func_80435C40_de(void *, s32, s32, s32, s32);
-extern s32 func_80435C68_de(void *, s32, s32, s32, s32);
-extern s32 func_80435C60_de(void *, s32, s32, s32, s32);
-extern s32 func_80435B34_de(void *, s32, s32, s32, s32);
-extern s32 func_80435C00_de(void *, s32, s32, s32, s32);
-extern s32 func_80435CD8_de(void *, s32, s32, s32, s32);
-extern s32 func_80435CB8_de(void *, s32, s32, s32, s32);
-extern s32 func_80435C70_de(void *, s32, s32, s32, s32);
-
-/* func_80435D90_de consumes these event/actor-kind/callback rows
- * at stride12 with five o32 arguments and a signed result. Callback
- * relocations omit KSEG0 bias. This object is the complete table.
- * Unnamed callback entry rows remain in original extraction. */
-ResidentEventHandlerEntry D_800E555C[9] = {
-    {3591, 1, (ResidentEventHandler)((char *)func_80435C40_de - 0x80000000U)},
-    {3592, 1, (ResidentEventHandler)((char *)func_80435C68_de - 0x80000000U)},
-    {3594, 1, (ResidentEventHandler)((char *)func_80435C60_de - 0x80000000U)},
-    {3590, 1, (ResidentEventHandler)((char *)func_80435B34_de - 0x80000000U)},
-    {3587, 1, (ResidentEventHandler)((char *)func_80435C00_de - 0x80000000U)},
-    {1, 1, (ResidentEventHandler)((char *)func_80435CD8_de - 0x80000000U)},
-    {2, 1, (ResidentEventHandler)((char *)func_80435CB8_de - 0x80000000U)},
-    {10, 1, (ResidentEventHandler)((char *)func_80435C70_de - 0x80000000U)},
-    {0, 0, 0},
+#ifdef VERSION_DE
+unsigned int D_auto_src_rw_menu_event_handlers_E615C_us_rev1[27] = {
+    0x00000E07, 0x00000001, 0x00435C40, 0x00000E08, 0x00000001, 0x00435C68, 0x00000E0A, 0x00000001,
+    0x00435C60, 0x00000E06, 0x00000001, 0x00435B34, 0x00000E03, 0x00000001, 0x00435C00, 0x00000001,
+    0x00000001, 0x00435CD8, 0x00000002, 0x00000001, 0x00435CB8, 0x0000000A, 0x00000001, 0x00435C70,
+    0x00000000, 0x00000000, 0x00000000,
 };
+#endif
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_rw_menu_event_handlers_E615C_us_rev1[27] = {
+    0x00000E07, 0x00000001, 0x00436AB0, 0x00000E08, 0x00000001, 0x00436AD8, 0x00000E0A, 0x00000001,
+    0x00436AD0, 0x00000E06, 0x00000001, 0x004369A4, 0x00000E03, 0x00000001, 0x00436A70, 0x00000001,
+    0x00000001, 0x00436B48, 0x00000002, 0x00000001, 0x00436B28, 0x0000000A, 0x00000001, 0x00436AE0,
+    0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_EU
+unsigned int D_auto_src_rw_menu_event_handlers_E615C_us_rev1[27] = {
+    0x00000E07, 0x00000001, 0x00436970, 0x00000E08, 0x00000001, 0x00436998, 0x00000E0A, 0x00000001,
+    0x00436990, 0x00000E06, 0x00000001, 0x00436864, 0x00000E03, 0x00000001, 0x00436930, 0x00000001,
+    0x00000001, 0x00436A08, 0x00000002, 0x00000001, 0x004369E8, 0x0000000A, 0x00000001, 0x004369A0,
+    0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_rw_menu_event_handlers_E615C_us_rev1[27] = {
+    0x00000E07, 0x00000001, 0x00435E20, 0x00000E08, 0x00000001, 0x00435E48, 0x00000E0A, 0x00000001,
+    0x00435E40, 0x00000E06, 0x00000001, 0x00435D14, 0x00000E03, 0x00000001, 0x00435DE0, 0x00000001,
+    0x00000001, 0x00435EB8, 0x00000002, 0x00000001, 0x00435E98, 0x0000000A, 0x00000001, 0x00435E50,
+    0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US
+unsigned int D_auto_src_rw_menu_event_handlers_E615C_us_rev1[27] = {
+    0x00000E07, 0x00000001, 0x00435E20, 0x00000E08, 0x00000001, 0x00435E48, 0x00000E0A, 0x00000001,
+    0x00435E40, 0x00000E06, 0x00000001, 0x00435D14, 0x00000E03, 0x00000001, 0x00435DE0, 0x00000001,
+    0x00000001, 0x00435EB8, 0x00000002, 0x00000001, 0x00435E98, 0x0000000A, 0x00000001, 0x00435E50,
+    0x00000000, 0x00000000, 0x00000000,
+};
+#endif

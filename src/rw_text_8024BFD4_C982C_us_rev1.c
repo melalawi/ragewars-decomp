@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8024BFD4_de; US rev1 ROM 0xc982c-0xc983b.
- */
-const char D_800C3B3C[15] = "animated model";
+const unsigned char D_auto_src_rw_text_8024BFD4_C982C_us_rev1[15] = {
+    0x61, 0x6E, 0x69, 0x6D, 0x61, 0x74, 0x65, 0x64, 0x20, 0x6D, 0x6F, 0x64, 0x65, 0x6C, 0x00,
+};

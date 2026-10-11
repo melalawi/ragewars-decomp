@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80293534_de; US rev1 ROM 0xcb0f0-0xcb0f6.
- */
-const char D_800C5400_de[6] = "%s %s";
+const unsigned short D_auto_src_rw_text_80293534_CB0F0_us_rev1[3] = {
+    0x2573, 0x2025, 0x7300,
+};

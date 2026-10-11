@@ -1,4 +1,4 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcad4c-0xcad5d.
- */
-const char D_800C505C_de[17] = "link group types";
+const unsigned char D_auto_src_rw_text_8044B7C0_CAD4C_us_rev1[17] = {
+    0x6C, 0x69, 0x6E, 0x6B, 0x20, 0x67, 0x72, 0x6F, 0x75, 0x70, 0x20, 0x74, 0x79, 0x70, 0x65, 0x73,
+    0x00,
+};

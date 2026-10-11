@@ -1,17 +1,4 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D6308 {
-    char label_save_0[8]; /* ROM0xD6308 */
-    char label_load_1[8]; /* ROM0xD6310 */
-    char label_health_2[8]; /* ROM0xD6318 */
-    char label_ammo_3[8]; /* ROM0xD6320 */
-    char label_go_back_4[8]; /* ROM0xD6328 */
+unsigned int D_auto_src_ragewars_menu_strings_D6308_us_rev1[10] = {
+    0x20202073, 0x61766500, 0x2020206C, 0x6F616400, 0x20686561, 0x6C746800, 0x20202061, 0x6D6D6F00,
+    0x676F2062, 0x61636B00,
 };
-const struct MenuStrings_D6308 ragewars_menu_strings_D6308_us_rev1 = {
-    "   save",
-    "   load",
-    " health",
-    "   ammo",
-    "go back"
-};
-typedef char menu_strings_size_D6308[(sizeof(struct MenuStrings_D6308) == 40) ? 1 : -1];

@@ -1,4 +1,3 @@
-/* Scalar 3.0 loaded with lwc1 by func_8021D408_de.
- * US rev1 ROM 0xCFDB4-0xCFDB8; the original bytes were inferred as an ASCII string.
- */
-const float D_800C9F70_de = 3.0f;
+const unsigned int D_auto_src_rw_text_8021D408_CFDB4_us_rev1[1] = {
+    0x40400000,
+};

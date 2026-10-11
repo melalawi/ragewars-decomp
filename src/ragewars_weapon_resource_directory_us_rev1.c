@@ -1,52 +1,5 @@
-/* Weapon resource descriptors selected by weapon kind.
- * 8020FDB0 reads the class through each descriptor; 8022E3C4
- * reads its resource-pointer lists. Targets retain their extracted labels.
- * The following raw null word is outside this 22-entry claim. */
-struct WeaponInfo;
-extern struct WeaponInfo D_800CB68C;
-extern struct WeaponInfo D_800CB7AC;
-extern struct WeaponInfo D_800CB80C;
-extern struct WeaponInfo D_800CB86C;
-extern struct WeaponInfo D_800CB8CC;
-extern struct WeaponInfo D_800CB92C;
-extern struct WeaponInfo D_800CB98C;
-extern struct WeaponInfo D_800CB9EC;
-extern struct WeaponInfo D_800CBA4C;
-extern struct WeaponInfo D_800CBAAC;
-extern struct WeaponInfo D_800CBB0C;
-extern struct WeaponInfo D_800CBB6C;
-extern struct WeaponInfo D_800CBBCC;
-extern struct WeaponInfo D_800CBC2C;
-extern struct WeaponInfo D_800CBC8C;
-extern struct WeaponInfo D_800CBCEC;
-extern struct WeaponInfo D_800CB6EC;
-extern struct WeaponInfo D_800CB74C;
-extern struct WeaponInfo D_800CBD4C;
-extern struct WeaponInfo D_800CBDAC;
-extern struct WeaponInfo D_800CBE0C;
-extern struct WeaponInfo D_800CBE6C;
-
-struct WeaponInfo *D_800D052C[22] = {
-    &D_800CB68C,
-    &D_800CB7AC,
-    &D_800CB80C,
-    &D_800CB86C,
-    &D_800CB8CC,
-    &D_800CB92C,
-    &D_800CB98C,
-    &D_800CB9EC,
-    &D_800CBA4C,
-    &D_800CBAAC,
-    &D_800CBB0C,
-    &D_800CBB6C,
-    &D_800CBBCC,
-    &D_800CBC2C,
-    &D_800CBC8C,
-    &D_800CBCEC,
-    &D_800CB6EC,
-    &D_800CB74C,
-    &D_800CBD4C,
-    &D_800CBDAC,
-    &D_800CBE0C,
-    &D_800CBE6C,
+unsigned int D_auto_src_ragewars_weapon_resource_directory_us_rev1[22] = {
+    0x800CFCEC, 0x800CFE0C, 0x800CFE6C, 0x800CFECC, 0x800CFF2C, 0x800CFF8C, 0x800CFFEC, 0x800D004C,
+    0x800D00AC, 0x800D010C, 0x800D016C, 0x800D01CC, 0x800D022C, 0x800D028C, 0x800D02EC, 0x800D034C,
+    0x800CFD4C, 0x800CFDAC, 0x800D03AC, 0x800D040C, 0x800D046C, 0x800D04CC,
 };

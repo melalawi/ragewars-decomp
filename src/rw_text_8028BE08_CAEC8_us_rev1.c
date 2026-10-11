@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8028BE08_de; US rev1 ROM 0xcaec8-0xcaed5.
- */
-const char D_800C51D8[13] = "binary block";
+const unsigned char D_auto_src_rw_text_8028BE08_CAEC8_us_rev1[13] = {
+    0x62, 0x69, 0x6E, 0x61, 0x72, 0x79, 0x20, 0x62, 0x6C, 0x6F, 0x63, 0x6B, 0x00,
+};

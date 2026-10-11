@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcac74-0xcac81.
- */
-const char D_800C4F84_de[13] = "object types";
+const unsigned char D_auto_src_rw_text_8044B7C0_CAC74_us_rev1[13] = {
+    0x6F, 0x62, 0x6A, 0x65, 0x63, 0x74, 0x20, 0x74, 0x79, 0x70, 0x65, 0x73, 0x00,
+};

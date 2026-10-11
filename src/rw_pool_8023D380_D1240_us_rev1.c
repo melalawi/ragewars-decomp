@@ -1,4 +1,3 @@
-/* Numeric constants loaded by func_8023D380_de.
- * US rev1 ROM 0xd1240-0xd1244; original .float/.double directives.
- */
-const float D_800D0640 = 0.01999999955f;
+const unsigned int D_auto_src_rw_pool_8023D380_D1240_us_rev1[1] = {
+    0x3CA3D70A,
+};

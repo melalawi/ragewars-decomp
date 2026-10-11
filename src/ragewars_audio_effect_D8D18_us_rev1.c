@@ -1,18 +1,7 @@
-#include "resident_audio_effect_config.h"
-
-/* Selected by the effect type in 802B3F10.
- * ROM D8D18..D8DA0. */
-struct EffectParameters_D8D18 {
-    s32 delayCount;
-    s32 delaySamples;
-    ResidentAudioDelayParameters delays[4];
-};
-struct EffectParameters_D8D18 D_800D40E8 = {
-    4, 4000,
-    {
-        {0, 2640, 9830, -9830, 0, 0, 0, 0},
-        {880, 2160, 3276, -3276, 16383, 0, 0, 0},
-        {2640, 3640, 3276, -3276, 16383, 0, 0, 0},
-        {0, 3760, 8000, 0, 0, 0, 0, 20480},
-    }
+unsigned int D_auto_src_ragewars_audio_effect_D8D18_us_rev1[34] = {
+    0x00000004, 0x00000FA0, 0x00000000, 0x00000A50, 0x00002666, 0xFFFFD99A, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000370, 0x00000870, 0x00000CCC, 0xFFFFF334, 0x00003FFF, 0x00000000,
+    0x00000000, 0x00000000, 0x00000A50, 0x00000E38, 0x00000CCC, 0xFFFFF334, 0x00003FFF, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000EB0, 0x00001F40, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00005000,
 };

@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_804009F4_de; US rev1 ROM 0xe1740-0xe1747.
- */
-const char D_800DCB10[7] = "Cinema";
+const unsigned char D_auto_src_rw_text_804009F4_E1740_us_rev1[7] = {
+    0x43, 0x69, 0x6E, 0x65, 0x6D, 0x61, 0x00,
+};

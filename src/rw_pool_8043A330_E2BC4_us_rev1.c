@@ -1,10 +1,3 @@
-/* Numeric constants loaded by func_8043A330_de.
- * US rev1 ROM 0xe2bc4-0xe2be0; original .float/.double directives.
- */
-const float D_800E1FC4 = 0.003500000108f;
-const float D_800DDF98_de = 5.0f;
-const float D_800DDF9C = -100.0f;
-const float D_800E1FD0 = 28.0f;
-const float D_800E1FD4 = 12.0f;
-const float D_800DDFA8 = -3.0f;
-const float D_800DDFAC_de = -18.0f;
+const unsigned int D_auto_src_rw_pool_8043A330_E2BC4_us_rev1[7] = {
+    0x3B656042, 0x40A00000, 0xC2C80000, 0x41E00000, 0x41400000, 0xC0400000, 0xC1900000,
+};

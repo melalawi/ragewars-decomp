@@ -1,5 +1,3 @@
-#include "types.h"
-
-/* Real lhu lookup: region0..2, flags0/2/5/7 only.
- * High halfword and unreachable indices remain extraction. */
-u16 rw_video_vi_mode_r1_f2_E3676_us_rev1 = 16;
+unsigned short D_auto_src_rw_video_vi_mode_r1_f2_E3676_us_rev1[1] = {
+    0x0010,
+};

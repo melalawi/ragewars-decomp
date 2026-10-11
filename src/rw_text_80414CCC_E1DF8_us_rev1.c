@@ -1,4 +1,4 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80414CCC_de; US rev1 ROM 0xe1df8-0xe1e09.
- */
-const char D_800DD1C8[17] = "0123456789abcdef";
+const unsigned char D_auto_src_rw_text_80414CCC_E1DF8_us_rev1[17] = {
+    0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x61, 0x62, 0x63, 0x64, 0x65, 0x66,
+    0x00,
+};

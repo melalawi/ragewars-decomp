@@ -1,4 +1,4 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8041C610_de; US rev1 ROM 0xe20a4-0xe20b5.
- */
-const char D_800DD474[17] = "anim object info";
+const unsigned char D_auto_src_rw_text_8041C610_E20A4_us_rev1[17] = {
+    0x61, 0x6E, 0x69, 0x6D, 0x20, 0x6F, 0x62, 0x6A, 0x65, 0x63, 0x74, 0x20, 0x69, 0x6E, 0x66, 0x6F,
+    0x00,
+};

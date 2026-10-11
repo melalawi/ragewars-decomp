@@ -1,12 +1,4 @@
-#include "types.h"
-/* Four player-panel scissor rectangles. Primary draw callbacks
- * func_8041FC50_de and func_8043A890_de index these signed word
- * coordinates at stride16 and feed left/top/right/bottom to RDP
- * scissor commands. Both loops stop after four players. */
-typedef struct RwScissorRect { s32 left, top, right, bottom; } RwScissorRect;
-RwScissorRect rw_menu_player_scissor_rects_us_rev1[4] = {
-    {18, 15, 52, 94},
-    {232, 15, 267, 94},
-    {18, 128, 52, 206},
-    {232, 128, 267, 206},
+unsigned int D_auto_src_rw_menu_player_scissor_rects_us_rev1[16] = {
+    0x00000012, 0x0000000F, 0x00000034, 0x0000005E, 0x000000E8, 0x0000000F, 0x0000010B, 0x0000005E,
+    0x00000012, 0x00000080, 0x00000034, 0x000000CE, 0x000000E8, 0x00000080, 0x0000010B, 0x000000CE,
 };

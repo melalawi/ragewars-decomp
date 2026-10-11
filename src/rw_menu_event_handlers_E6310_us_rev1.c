@@ -1,26 +1,6 @@
-#include "resident_event_handler.h"
-
-extern s32 func_8043704C_de(void *, s32, s32, s32, s32);
-extern s32 func_80437054_de(void *, s32, s32, s32, s32);
-extern s32 func_80436E94_de(void *, s32, s32, s32, s32);
-extern s32 func_8043701C_de(void *, s32, s32, s32, s32);
-extern s32 func_804370CC_de(void *, s32, s32, s32, s32);
-extern s32 func_8043705C_de(void *, s32, s32, s32, s32);
-extern s32 func_80437114_de(void *, s32, s32, s32, s32);
-extern s32 func_804371C4_de(void *, s32, s32, s32, s32);
-
-/* func_80437274_de consumes these event/actor-kind/callback rows
- * at stride12 with five o32 arguments and a signed result. Callback
- * relocations omit KSEG0 bias. This object is the complete table.
- * Unnamed callback entry rows remain in original extraction. */
-ResidentEventHandlerEntry D_800E5710[9] = {
-    {3591, 12, (ResidentEventHandler)((char *)func_8043704C_de - 0x80000000U)},
-    {3592, 12, (ResidentEventHandler)((char *)func_80437054_de - 0x80000000U)},
-    {3590, 12, (ResidentEventHandler)((char *)func_80436E94_de - 0x80000000U)},
-    {3587, 12, (ResidentEventHandler)((char *)func_8043701C_de - 0x80000000U)},
-    {2, 12, (ResidentEventHandler)((char *)func_804370CC_de - 0x80000000U)},
-    {1, 12, (ResidentEventHandler)((char *)func_8043705C_de - 0x80000000U)},
-    {8, 454, (ResidentEventHandler)((char *)func_80437114_de - 0x80000000U)},
-    {7, 454, (ResidentEventHandler)((char *)func_804371C4_de - 0x80000000U)},
-    {0, 0, 0},
+unsigned int D_auto_src_rw_menu_event_handlers_E6310_us_rev1[27] = {
+    0x00000E07, 0x0000000C, 0x0043722C, 0x00000E08, 0x0000000C, 0x00437234, 0x00000E06, 0x0000000C,
+    0x00437074, 0x00000E03, 0x0000000C, 0x004371FC, 0x00000002, 0x0000000C, 0x004372AC, 0x00000001,
+    0x0000000C, 0x0043723C, 0x00000008, 0x000001C6, 0x004372F4, 0x00000007, 0x000001C6, 0x004373A4,
+    0x00000000, 0x00000000, 0x00000000,
 };

@@ -1,15 +1,3 @@
-/* Eight movement floats read by func_802233F0_de.
- * The following two-byte reserved gap remains raw and unclaimed. */
-struct PlayerMovementTuning {
-    float forward_acceleration;
-    float forward_limit;
-    float forward_decay;
-    float strafe_acceleration;
-    float strafe_limit;
-    float strafe_decay;
-    float impulse_speed;
-    float impulse_decay;
-};
-struct PlayerMovementTuning D_800C9558_de = {
-    10.2399998f, 30.7199993f, 13.4399996f, 10.2399998f, 35.8400002f, 13.4399996f, 0.0f, 0.0f
+unsigned int D_auto_src_ragewars_movement_tuning_CF39C_us_rev1[8] = {
+    0x4123D70A, 0x41F5C28F, 0x41570A3D, 0x4123D70A, 0x420F5C29, 0x41570A3D, 0x00000000, 0x00000000,
 };

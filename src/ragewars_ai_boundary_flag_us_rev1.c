@@ -1,5 +1,3 @@
-#include "types.h"
-
-/* osAiSetNextBuffer tests this byte, then stores whether the submitted
- * buffer ends on an 8 KiB boundary. */
-u8 D_800D8360[1] = {0};
+unsigned char D_auto_src_ragewars_ai_boundary_flag_us_rev1[1] = {
+    0x00,
+};

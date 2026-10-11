@@ -1,25 +1,10 @@
-#include "resident_pickup_descriptors.h"
-
-extern s32 func_802ACE38_de(void *, void *, s32);
-
-/* 16 descriptors traversed by 802AB400/802AB6EC at stride 16.
- * Callbacks retain the cartridge encoding with the KSEG0 bias removed.
- * ROM D3FC0..D40C0. */
-ResidentTargetedDescriptor D_800D33C0[16] = {
-    {{&D_800D7070[9], 1800, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[10], 1801, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[11], 1802, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[12], 1803, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[14], 4380, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[15], 4381, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[16], 4382, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[17], 4383, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[18], 4384, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[19], 4400, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[20], 4401, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[21], 4402, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[22], 4403, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[23], 4404, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[24], 4500, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
-    {{&D_800D7070[13], 1807, 1, 299, 0}, (ResidentTargetedPickupHandler)((char *)func_802ACE38_de - 0x80000000U)},
+unsigned int D_auto_src_ragewars_pickup_targeted_us_rev1[64] = {
+    0x800D7094, 0x07080001, 0x012B0000, 0x002ADE28, 0x800D7098, 0x07090001, 0x012B0000, 0x002ADE28,
+    0x800D709C, 0x070A0001, 0x012B0000, 0x002ADE28, 0x800D70A0, 0x070B0001, 0x012B0000, 0x002ADE28,
+    0x800D70A8, 0x111C0001, 0x012B0000, 0x002ADE28, 0x800D70AC, 0x111D0001, 0x012B0000, 0x002ADE28,
+    0x800D70B0, 0x111E0001, 0x012B0000, 0x002ADE28, 0x800D70B4, 0x111F0001, 0x012B0000, 0x002ADE28,
+    0x800D70B8, 0x11200001, 0x012B0000, 0x002ADE28, 0x800D70BC, 0x11300001, 0x012B0000, 0x002ADE28,
+    0x800D70C0, 0x11310001, 0x012B0000, 0x002ADE28, 0x800D70C4, 0x11320001, 0x012B0000, 0x002ADE28,
+    0x800D70C8, 0x11330001, 0x012B0000, 0x002ADE28, 0x800D70CC, 0x11340001, 0x012B0000, 0x002ADE28,
+    0x800D70D0, 0x11940001, 0x012B0000, 0x002ADE28, 0x800D70A4, 0x070F0001, 0x012B0000, 0x002ADE28,
 };

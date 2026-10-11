@@ -1,35 +1,6 @@
-/* Numeric constants used by func_8029AD38_de; US rev1 ROM 0xcb468-0xcb4d0.
- * Types follow actual lwc1/ldc1 uses, including symbol+offset loads.
- * Packed fields preserve the original resident offsets.
- */
-struct rw_constants_8029AD38_CB468_us_rev1_layout {
-    double D_800C56D8_de;
-    double D_800C56E0_de;
-    double D_800C56E8_de;
-    double D_800C56F0_de;
-    double D_800C56F8_de;
-    double D_800C5700_de;
-    double D_800C5708_de;
-    double D_800C5710_de;
-    double D_800C5718_de;
-    double D_800C5720_de;
-    double D_800C5728_de;
-    double D_800C5730_de;
-    double D_800C5738_de;
-} __attribute__((packed));
-
-const struct rw_constants_8029AD38_CB468_us_rev1_layout rw_constants_8029AD38_CB468_us_rev1 = {
-    -1.0 / 0.0,
-    0.0,
-    0.7071067690849304,
-    0.5,
-    0.5,
-    -0.7895611524581909,
-    16.383943557739258,
-    35.66797637939453,
-    312.0322265625,
-    64.12494659423828,
-    769.4993286132812,
-    -0.00021219444170128557,
-    0.693359375,
+const unsigned int D_auto_src_rw_constants_8029AD38_CB468_us_rev1[26] = {
+    0xFFF00000, 0x00000000, 0x00000000, 0x00000000, 0x3FE6A09E, 0x60000000, 0x3FE00000, 0x00000000,
+    0x3FE00000, 0x00000000, 0xBFE94415, 0xC0000000, 0x4030624A, 0x20000000, 0x4041D580, 0x40000000,
+    0x40738084, 0x00000000, 0x405007FF, 0x20000000, 0x40880BFE, 0xA0000000, 0xBF2BD010, 0x60000001,
+    0x3FE63000, 0x00000000,
 };

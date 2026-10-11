@@ -1,5 +1,3 @@
-/* Numeric constants loaded by func_8022ADBC_de.
- * US rev1 ROM 0xc89f0-0xc89f8; original .float/.double directives.
- */
-const float D_800C2D00_de = 82.94399261f;
-const float D_800C2D04_de = 0.8999999762f;
+const unsigned int D_auto_src_rw_pool_8022ADBC_C89F0_us_rev1[2] = {
+    0x42A5E353, 0x3F666666,
+};

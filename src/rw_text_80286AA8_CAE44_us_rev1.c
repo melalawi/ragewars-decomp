@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80286AA8_de; US rev1 ROM 0xcae44-0xcae4d.
- */
-const char D_800C5154_de[9] = "temp vis";
+const unsigned char D_auto_src_rw_text_80286AA8_CAE44_us_rev1[9] = {
+    0x74, 0x65, 0x6D, 0x70, 0x20, 0x76, 0x69, 0x73, 0x00,
+};

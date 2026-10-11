@@ -1,4 +1,4 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80286AA8_de; US rev1 ROM 0xcaeb0-0xcaec3.
- */
-const char D_800C51C0_de[19] = "animated instances";
+const unsigned char D_auto_src_rw_text_80286AA8_CAEB0_us_rev1[19] = {
+    0x61, 0x6E, 0x69, 0x6D, 0x61, 0x74, 0x65, 0x64, 0x20, 0x69, 0x6E, 0x73, 0x74, 0x61, 0x6E, 0x63,
+    0x65, 0x73, 0x00,
+};

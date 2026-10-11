@@ -1,24 +1,5 @@
-/* Numeric constants loaded by func_802ACBCC.
- * US rev1 ROM 0xcbff0-0xcc044; original .float/.double directives.
- */
-const float D_800C6260 = 105.0f;
-const float D_800C6264 = 195.0f;
-const float D_800CB3F8 = 300.0f;
-const float D_800C626C = 255.0f;
-const float D_800C6270_de = 225.0f;
-const float D_800C6274_de = 150.0f;
-const float D_800C6278_de = 255.0f;
-const float D_800C627C_de = 150.0f;
-const float D_800CB410 = 255.0f;
-const float D_800CB414 = 180.0f;
-const float D_800C6288_de = 225.0f;
-const float D_800C628C_de = 225.0f;
-const float D_800C6290_de = 450.0f;
-const float D_800C6294_de = 270.0f;
-const float D_800C6298 = 255.0f;
-const float D_800C629C = 180.0f;
-const float D_800C62A0 = 255.0f;
-const float D_800C62A4 = 300.0f;
-const float D_800C62A8 = 255.0f;
-const float D_800C62AC = 300.0f;
-const float D_800C62B0 = 255.0f;
+const unsigned int D_auto_src_rw_pool_802ABBDC_CBFF0_us_rev1[21] = {
+    0x42D20000, 0x43430000, 0x43960000, 0x437F0000, 0x43610000, 0x43160000, 0x437F0000, 0x43160000,
+    0x437F0000, 0x43340000, 0x43610000, 0x43610000, 0x43E10000, 0x43870000, 0x437F0000, 0x43340000,
+    0x437F0000, 0x43960000, 0x437F0000, 0x43960000, 0x437F0000,
+};

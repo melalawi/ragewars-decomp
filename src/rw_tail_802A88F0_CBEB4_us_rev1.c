@@ -1,24 +1,3 @@
-/* Numeric suffix loaded by func_802A88F0_de, after its compiler switch table.
- * US rev1 ROM 0xcbeb4-0xcbed4; original floating point directives and loads.
- */
-struct rw_tail_802A88F0_CBEB4_us_rev1_layout {
-    float D_800C6124_de;
-    float D_800CB2B8;
-    float D_800C612C_de;
-    float D_800C6130_de;
-    float D_800C6134_de;
-    float D_800C6138_de;
-    float D_800C613C_de;
-    float D_800C6140_de;
-} __attribute__((packed));
-
-const struct rw_tail_802A88F0_CBEB4_us_rev1_layout rw_tail_802A88F0_CBEB4_us_rev1 = {
-    24.0f,
-    12.0f,
-    6.0f,
-    16.0f,
-    8.0f,
-    1.0f,
-    0.003521126695f,
-    0.004504504614f,
+const unsigned int D_auto_src_rw_tail_802A88F0_CBEB4_us_rev1[8] = {
+    0x41C00000, 0x41400000, 0x40C00000, 0x41800000, 0x41000000, 0x3F800000, 0x3B66C2B4, 0x3B939A86,
 };

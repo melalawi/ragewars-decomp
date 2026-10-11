@@ -1,3 +1,3 @@
-/* Elapsed session time and state; updated as a float and read alongside its following state word. */
-struct SessionTimerState { float elapsed; int state; };
-struct SessionTimerState D_800CDA30_de = {0.0f, 1};
+unsigned int D_auto_src_ragewars_session_state_D38A0_us_rev1[2] = {
+    0x00000000, 0x00000001,
+};

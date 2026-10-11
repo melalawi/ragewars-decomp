@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_804058B0_de; US rev1 ROM 0xe197c-0xe1981.
- */
-const char D_800DCD4C[5] = "fifo";
+const unsigned char D_auto_src_rw_text_804058B0_E197C_us_rev1[5] = {
+    0x66, 0x69, 0x66, 0x6F, 0x00,
+};

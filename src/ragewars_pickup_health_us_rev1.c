@@ -1,17 +1,8 @@
-#include "resident_pickup_descriptors.h"
-
-extern s32 func_802ACC04_de(void *, void *);
-
-/* 8 descriptors traversed by 802AB400/802AB6EC at stride 24.
- * Callbacks retain the cartridge encoding with the KSEG0 bias removed.
- * ROM D3EA8..D3F68. */
-ResidentHealthDescriptor D_800D32A8[8] = {
-    {{&D_800D7070[0], 1701, 1, 0, 0}, 2, 200, (ResidentPickupHandler)((char *)func_802ACC04_de - 0x80000000U)},
-    {{&D_800D7070[1], 1702, 1, 0, 0}, 10, 100, (ResidentPickupHandler)((char *)func_802ACC04_de - 0x80000000U)},
-    {{&D_800D7070[5], 1703, 1, 299, 0}, 100, 100, (ResidentPickupHandler)((char *)func_802ACC04_de - 0x80000000U)},
-    {{&D_800D7070[6], 1704, 1, 299, 0}, 100, 200, (ResidentPickupHandler)((char *)func_802ACC04_de - 0x80000000U)},
-    {{&D_800D7070[1], 1720, 1, 0, 0}, 10, 100, (ResidentPickupHandler)((char *)func_802ACC04_de - 0x80000000U)},
-    {{&D_800D7070[2], 1721, 3560, 0, 0}, 15, 100, (ResidentPickupHandler)((char *)func_802ACC04_de - 0x80000000U)},
-    {{&D_800D7070[3], 1722, 3560, 0, 0}, 25, 100, (ResidentPickupHandler)((char *)func_802ACC04_de - 0x80000000U)},
-    {{&D_800D7070[4], 1723, 3570, 0, 0}, 50, 100, (ResidentPickupHandler)((char *)func_802ACC04_de - 0x80000000U)},
+unsigned int D_auto_src_ragewars_pickup_health_us_rev1[48] = {
+    0x800D7070, 0x06A50001, 0x00000000, 0x00000002, 0x000000C8, 0x002ADBF4, 0x800D7074, 0x06A60001,
+    0x00000000, 0x0000000A, 0x00000064, 0x002ADBF4, 0x800D7084, 0x06A70001, 0x012B0000, 0x00000064,
+    0x00000064, 0x002ADBF4, 0x800D7088, 0x06A80001, 0x012B0000, 0x00000064, 0x000000C8, 0x002ADBF4,
+    0x800D7074, 0x06B80001, 0x00000000, 0x0000000A, 0x00000064, 0x002ADBF4, 0x800D7078, 0x06B90DE8,
+    0x00000000, 0x0000000F, 0x00000064, 0x002ADBF4, 0x800D707C, 0x06BA0DE8, 0x00000000, 0x00000019,
+    0x00000064, 0x002ADBF4, 0x800D7080, 0x06BB0DF2, 0x00000000, 0x00000032, 0x00000064, 0x002ADBF4,
 };

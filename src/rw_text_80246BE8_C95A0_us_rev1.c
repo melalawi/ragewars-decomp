@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80246BE8_de; US rev1 ROM 0xc95a0-0xc95b2.
- */
-const char D_800C38B0_de[18] = "anim models index";
+const unsigned short D_auto_src_rw_text_80246BE8_C95A0_us_rev1[9] = {
+    0x616E, 0x696D, 0x206D, 0x6F64, 0x656C, 0x7320, 0x696E, 0x6465, 0x7800,
+};

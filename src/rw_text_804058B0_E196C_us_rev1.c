@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_804058B0_de; US rev1 ROM 0xe196c-0xe197a.
- */
-const char D_800DCD3C[14] = "display lists";
+const unsigned short D_auto_src_rw_text_804058B0_E196C_us_rev1[7] = {
+    0x6469, 0x7370, 0x6C61, 0x7920, 0x6C69, 0x7374, 0x7300,
+};

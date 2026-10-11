@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8026C484_de; US rev1 ROM 0xca35c-0xca36e.
- */
-const char D_800C466C_de[18] = "simp object index";
+const unsigned short D_auto_src_rw_text_8026C484_CA35C_us_rev1[9] = {
+    0x7369, 0x6D70, 0x206F, 0x626A, 0x6563, 0x7420, 0x696E, 0x6465, 0x7800,
+};

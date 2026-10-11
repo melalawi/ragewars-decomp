@@ -1,19 +1,35 @@
-#include "resident_huffman.h"
-
-/* USrev1 ROM DA194..DA1E4, resident VMA 800D9594. The decoder at
- * 802C4478 selects these 20-byte ranges, reads start+count at offsets
- * 4/8, advances the bit cursor at 12, and follows the dictionary at 16.
- * Imported dictionaries reside in the preceding, separately owned extent. */
-extern const ResidentHuffmanDictionary huffman_signed7_single_dictionary;
-extern const ResidentHuffmanDictionary huffman_signed7_five_dictionary;
-extern const ResidentHuffmanDictionary huffman_signed7_nine_dictionary;
-extern const ResidentHuffmanDictionary huffman_signed6_dictionary;
-
-ResidentHuffmanBlockRange huffman_initial_block_ranges[4] = {
-    { 1,   0,  16, 0, &huffman_signed6_dictionary },
-    { 0,   0,  35, 0, &huffman_signed7_single_dictionary },
-    { 0,  35,  89, 0, &huffman_signed7_five_dictionary },
-    { 0, 124, 132, 0, &huffman_signed7_nine_dictionary }
+#ifdef VERSION_DE
+unsigned int D_auto_src_huffman_initial_block_ranges[20] = {
+    0x00000001, 0x00000000, 0x00000010, 0x00000000, 0x800D553C, 0x00000000, 0x00000000, 0x00000023,
+    0x00000000, 0x800D54D0, 0x00000000, 0x00000023, 0x00000059, 0x00000000, 0x800D54F4, 0x00000000,
+    0x0000007C, 0x00000084, 0x00000000, 0x800D5518,
 };
-typedef char huffman_initial_block_ranges_size_check[
-    (sizeof(huffman_initial_block_ranges) == 80) ? 1 : -1];
+#endif
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_huffman_initial_block_ranges[20] = {
+    0x00000001, 0x00000000, 0x00000010, 0x00000000, 0x800E0D7C, 0x00000000, 0x00000000, 0x00000023,
+    0x00000000, 0x800E0D10, 0x00000000, 0x00000023, 0x00000059, 0x00000000, 0x800E0D34, 0x00000000,
+    0x0000007C, 0x00000084, 0x00000000, 0x800E0D58,
+};
+#endif
+#ifdef VERSION_EU
+unsigned int D_auto_src_huffman_initial_block_ranges[20] = {
+    0x00000001, 0x00000000, 0x00000010, 0x00000000, 0x800E5BBC, 0x00000000, 0x00000000, 0x00000023,
+    0x00000000, 0x800E5B50, 0x00000000, 0x00000023, 0x00000059, 0x00000000, 0x800E5B74, 0x00000000,
+    0x0000007C, 0x00000084, 0x00000000, 0x800E5B98,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_huffman_initial_block_ranges[20] = {
+    0x00000001, 0x00000000, 0x00000010, 0x00000000, 0x800D956C, 0x00000000, 0x00000000, 0x00000023,
+    0x00000000, 0x800D9500, 0x00000000, 0x00000023, 0x00000059, 0x00000000, 0x800D9524, 0x00000000,
+    0x0000007C, 0x00000084, 0x00000000, 0x800D9548,
+};
+#endif
+#ifdef VERSION_US
+unsigned int D_auto_src_huffman_initial_block_ranges[20] = {
+    0x00000001, 0x00000000, 0x00000010, 0x00000000, 0x800D41EC, 0x00000000, 0x00000000, 0x00000023,
+    0x00000000, 0x800D4180, 0x00000000, 0x00000023, 0x00000059, 0x00000000, 0x800D41A4, 0x00000000,
+    0x0000007C, 0x00000084, 0x00000000, 0x800D41C8,
+};
+#endif

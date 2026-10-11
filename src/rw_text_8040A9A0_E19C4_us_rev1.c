@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8040A9A0_de; US rev1 ROM 0xe19c4-0xe19c9.
- */
-const char D_800DCD94_de[5] = "%04d";
+const unsigned char D_auto_src_rw_text_8040A9A0_E19C4_us_rev1[5] = {
+    0x25, 0x30, 0x34, 0x64, 0x00,
+};

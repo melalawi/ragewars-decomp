@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8024F294_de; US rev1 ROM 0xc9ad0-0xc9add.
- */
-const char D_800C8ED0[13] = "lit vertices";
+const unsigned char D_auto_src_rw_text_8024F294_C9AD0_us_rev1[13] = {
+    0x6C, 0x69, 0x74, 0x20, 0x76, 0x65, 0x72, 0x74, 0x69, 0x63, 0x65, 0x73, 0x00,
+};

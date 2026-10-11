@@ -1,5 +1,3 @@
-/* Consumed scale distance for character slot 1.
- * Native selectors walk seventeen 0x70-byte slots. The preview
- * renderer selects four layouts; only proven fields are emitted. */
-struct PreviewScaleDistance { float scale[4]; float distance[4]; };
-struct PreviewScaleDistance ragewars_character_preview_scale_distance_01_us_rev1 = {{0.109999999f, 0.109999999f, 0.109999999f, 0.109999999f}, {160.0f, 200.0f, 160.0f, 210.0f}};
+unsigned int D_auto_src_ragewars_character_preview_scale_distance_01_us_rev1[8] = {
+    0x3DE147AE, 0x3DE147AE, 0x3DE147AE, 0x3DE147AE, 0x43200000, 0x43480000, 0x43200000, 0x43520000,
+};

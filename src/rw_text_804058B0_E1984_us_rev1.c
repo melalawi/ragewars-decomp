@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_804058B0_de; US rev1 ROM 0xe1984-0xe198f.
- */
-const char D_800DCD54[11] = "audio heap";
+const unsigned char D_auto_src_rw_text_804058B0_E1984_us_rev1[11] = {
+    0x61, 0x75, 0x64, 0x69, 0x6F, 0x20, 0x68, 0x65, 0x61, 0x70, 0x00,
+};

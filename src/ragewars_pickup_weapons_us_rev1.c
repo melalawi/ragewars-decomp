@@ -1,15 +1,6 @@
-#include "resident_pickup_descriptors.h"
-
-
-
-/* 6 descriptors traversed by 802AB400/802AB6EC at stride 20.
- * Callbacks retain the cartridge encoding with the KSEG0 bias removed.
- * ROM D3E30..D3EA8. */
-ResidentWeaponDescriptor D_800D3230[6] = {
-    {{&D_800D7070[96], 3012, 3510, 0, 0}, 1, 100, (ResidentPickupHandler)((char *)func_802ACB18_de - 0x80000000U)},
-    {{&D_800D7070[97], 3013, 3510, 0, 0}, 1, 100, (ResidentPickupHandler)((char *)func_802ACB18_de - 0x80000000U)},
-    {{&D_800D7070[98], 3014, 3500, 0, 0}, 0, 50, (ResidentPickupHandler)((char *)func_802ACB18_de - 0x80000000U)},
-    {{&D_800D7070[99], 3015, 3500, 0, 0}, 0, 50, (ResidentPickupHandler)((char *)func_802ACB18_de - 0x80000000U)},
-    {{&D_800D7070[100], 3016, 3520, 0, 0}, 2, 5, (ResidentPickupHandler)((char *)func_802ACB18_de - 0x80000000U)},
-    {{&D_800D7070[101], 3017, 3520, 0, 0}, 2, 5, (ResidentPickupHandler)((char *)func_802ACB18_de - 0x80000000U)},
+unsigned int D_auto_src_ragewars_pickup_weapons_us_rev1[30] = {
+    0x800D71F0, 0x0BC40DB6, 0x00000000, 0x00010064, 0x002ADB08, 0x800D71F4, 0x0BC50DB6, 0x00000000,
+    0x00010064, 0x002ADB08, 0x800D71F8, 0x0BC60DAC, 0x00000000, 0x00000032, 0x002ADB08, 0x800D71FC,
+    0x0BC70DAC, 0x00000000, 0x00000032, 0x002ADB08, 0x800D7200, 0x0BC80DC0, 0x00000000, 0x00020005,
+    0x002ADB08, 0x800D7204, 0x0BC90DC0, 0x00000000, 0x00020005, 0x002ADB08,
 };

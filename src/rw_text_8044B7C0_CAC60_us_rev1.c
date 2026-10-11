@@ -1,4 +1,4 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcac60-0xcac73.
- */
-const char D_800C4F70_de[19] = "texture sets index";
+const unsigned char D_auto_src_rw_text_8044B7C0_CAC60_us_rev1[19] = {
+    0x74, 0x65, 0x78, 0x74, 0x75, 0x72, 0x65, 0x20, 0x73, 0x65, 0x74, 0x73, 0x20, 0x69, 0x6E, 0x64,
+    0x65, 0x78, 0x00,
+};

@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8028BEAC_de; US rev1 ROM 0xcaed8-0xcaee3.
- */
-const char D_800C51E8[11] = "graphicset";
+const unsigned char D_auto_src_rw_text_8028BEAC_CAED8_us_rev1[11] = {
+    0x67, 0x72, 0x61, 0x70, 0x68, 0x69, 0x63, 0x73, 0x65, 0x74, 0x00,
+};

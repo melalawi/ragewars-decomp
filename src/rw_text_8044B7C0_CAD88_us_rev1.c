@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcad88-0xcad9e.
- */
-const char D_800C5098_de[22] = "Bloodlust Weapon Data";
+const unsigned short D_auto_src_rw_text_8044B7C0_CAD88_us_rev1[11] = {
+    0x426C, 0x6F6F, 0x646C, 0x7573, 0x7420, 0x5765, 0x6170, 0x6F6E, 0x2044, 0x6174, 0x6100,
+};

@@ -1,4 +1,3 @@
-/* Numeric constants loaded by func_8021EEFC_de.
- * US rev1 ROM 0xcfdb8-0xcfdbc; original .float/.double directives.
- */
-const float D_800C9F74_de = -118.0f;
+const unsigned int D_auto_src_rw_pool_8021EEFC_CFDB8_us_rev1[1] = {
+    0xC2EC0000,
+};

@@ -1,4 +1,3 @@
-/* Numeric constants loaded by func_802BF804_de.
- * US rev1 ROM 0xcdb24-0xcdb28; original .float/.double directives.
- */
-const float D_800CCF24 = 3.051757812e-05f;
+const unsigned int D_auto_src_rw_pool_802BF804_CDB24_us_rev1[1] = {
+    0x38000000,
+};

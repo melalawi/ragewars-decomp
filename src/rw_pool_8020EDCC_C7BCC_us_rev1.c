@@ -1,4 +1,3 @@
-/* Numeric constants loaded by func_8020EDCC_de.
- * US rev1 ROM 0xc7bcc-0xc7bd0; original .float/.double directives.
- */
-const float D_800C1EDC_de = 51200.0f;
+const unsigned int D_auto_src_rw_pool_8020EDCC_C7BCC_us_rev1[1] = {
+    0x47480000,
+};

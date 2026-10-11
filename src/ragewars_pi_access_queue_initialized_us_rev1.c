@@ -1,5 +1,3 @@
-#include "types.h"
-
-/* 802B9950 creates the PI access queue and sets this flag; the manager
- * checks it before setup. ROM D8FC0..D8FC4. */
-s32 D_800D83C0 = 0;
+unsigned int D_auto_src_ragewars_pi_access_queue_initialized_us_rev1[1] = {
+    0x00000000,
+};

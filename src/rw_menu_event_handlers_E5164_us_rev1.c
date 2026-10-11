@@ -1,18 +1,5 @@
-#include "resident_event_handler.h"
-
-extern s32 func_80423620_de(void *, s32, s32, s32, s32);
-extern s32 func_804234CC_de(void *, s32, s32, s32, s32);
-extern s32 func_804235E8_de(void *, s32, s32, s32, s32);
-extern s32 func_80423720_de(void *, s32, s32, s32, s32);
-extern s32 func_80423654_de(void *, s32, s32, s32, s32);
-
-/* func_80423758_de: event, actor kind, callback; stride12; five
- * o32 arguments and signed result. Unresolved callback rows excluded. */
-ResidentEventHandlerEntry D_800E4564[6] = {
-    {3592, 11, (ResidentEventHandler)((char *)func_80423620_de - 0x80000000U)},
-    {3590, 11, (ResidentEventHandler)((char *)func_804234CC_de - 0x80000000U)},
-    {3587, 11, (ResidentEventHandler)((char *)func_804235E8_de - 0x80000000U)},
-    {2, 11, (ResidentEventHandler)((char *)func_80423720_de - 0x80000000U)},
-    {1, 11, (ResidentEventHandler)((char *)func_80423654_de - 0x80000000U)},
-    {0, 0, 0},
+unsigned int D_auto_src_rw_menu_event_handlers_E5164_us_rev1[18] = {
+    0x00000E08, 0x0000000B, 0x004237F8, 0x00000E06, 0x0000000B, 0x0042362C, 0x00000E03, 0x0000000B,
+    0x004237C0, 0x00000002, 0x0000000B, 0x004238F8, 0x00000001, 0x0000000B, 0x0042382C, 0x00000000,
+    0x00000000, 0x00000000,
 };

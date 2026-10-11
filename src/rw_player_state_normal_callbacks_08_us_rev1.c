@@ -1,9 +1,3 @@
-#include "rw_player_state_fields.h"
-
-extern void func_8022CE78_de(void *, void *);
-
-/* Original normal state8: symbolic entry and update callbacks. */
-RwPlayerStateCallbacks rw_player_state_normal_callbacks_08_us_rev1 = {
-    0,
-    (RwPlayerStateCallback)((char *)func_8022CE78_de - 0x80000000U),
+unsigned int D_auto_src_rw_player_state_normal_callbacks_08_us_rev1[2] = {
+    0x00000000, 0x0022CE68,
 };

@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcacb8-0xcacc7.
- */
-const char D_800C4FC8_de[15] = "binaries index";
+const unsigned char D_auto_src_rw_text_8044B7C0_CACB8_us_rev1[15] = {
+    0x62, 0x69, 0x6E, 0x61, 0x72, 0x69, 0x65, 0x73, 0x20, 0x69, 0x6E, 0x64, 0x65, 0x78, 0x00,
+};

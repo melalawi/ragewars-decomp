@@ -1,6 +1,3 @@
-/* Numeric constants loaded by func_8042ED70_de.
- * US rev1 ROM 0xe2784-0xe2790; original .float/.double directives.
- */
-const float D_800DDB54 = 900.0f;
-const float D_800DDB58 = 15.0f;
-const float D_800DDB5C_de = -1.0f;
+const unsigned int D_auto_src_rw_pool_8042ED70_E2784_us_rev1[3] = {
+    0x44610000, 0x41700000, 0xBF800000,
+};

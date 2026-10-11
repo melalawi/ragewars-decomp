@@ -1,9 +1,3 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_E6D04 {
-    char label_3d_shadows_off_0[24]; /* ROM0xE6D04 */
+unsigned int D_auto_src_ragewars_resident_strings_E6D04_us_rev1[6] = {
+    0x33642073, 0x6861646F, 0x77732020, 0x20203A20, 0x20206F66, 0x66000000,
 };
-const struct MenuStrings_E6D04 ragewars_resident_strings_E6D04_us_rev1 = {
-    "3d shadows    :   off"
-};
-typedef char menu_strings_size_E6D04[(sizeof(struct MenuStrings_E6D04) == 24) ? 1 : -1];

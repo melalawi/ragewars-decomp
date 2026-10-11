@@ -1,16 +1,20 @@
-#include "types.h"
-
-/* 802BF67C stores sine/cosine values through the first two float buffers
- * and builds an integer permutation table through the third pointer.
- * ROM D9F70..D9F7C. */
-extern f32 D_80151AC8[];
-extern f32 D_80151BC8[];
-extern s32 D_80152B80[];
-struct ResidentTransformWorkspaces {
-    f32 *firstTrigonometric;
-    f32 *secondTrigonometric;
-    s32 *permutation;
+#ifdef VERSION_DE
+unsigned int D_auto_src_ragewars_transform_workspaces_us_rev1[3] = {
+    0x8014B838, 0x8014B938, 0x8014C8F0,
 };
-struct ResidentTransformWorkspaces D_800D9370 = {
-    D_80151AC8, D_80151BC8, D_80152B80
+#endif
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_ragewars_transform_workspaces_us_rev1[3] = {
+    0x80155838, 0x80155938, 0x801568F0,
 };
+#endif
+#ifdef VERSION_EU
+unsigned int D_auto_src_ragewars_transform_workspaces_us_rev1[3] = {
+    0x8015B838, 0x8015B938, 0x8015C8F0,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_ragewars_transform_workspaces_us_rev1[3] = {
+    0x80151AC8, 0x80151BC8, 0x80152B80,
+};
+#endif

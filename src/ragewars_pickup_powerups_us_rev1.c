@@ -1,13 +1,5 @@
-#include "resident_pickup_descriptors.h"
-
-extern s32 func_802AC66C_de(void *, void *);
-
-/* 4 descriptors traversed by 802AB400/802AB6EC at stride 24.
- * Callbacks retain the cartridge encoding with the KSEG0 bias removed.
- * ROM D3DD0..D3E30. */
-ResidentPowerupDescriptor D_800D31D0[4] = {
-    {{&D_800D7070[49], 2123, 3596, -1, 0}, 18, 3, 65536, (ResidentPickupHandler)((char *)func_802AC66C_de - 0x80000000U)},
-    {{&D_800D7070[50], 2124, 3596, -1, 0}, 19, 4, 196608, (ResidentPickupHandler)((char *)func_802AC66C_de - 0x80000000U)},
-    {{&D_800D7070[51], 2125, 3596, -1, 0}, 20, 6, 65536, (ResidentPickupHandler)((char *)func_802AC66C_de - 0x80000000U)},
-    {{&D_800D7070[53], 2127, 3596, -1, 0}, 21, 5, 65536, (ResidentPickupHandler)((char *)func_802AC66C_de - 0x80000000U)},
+unsigned int D_auto_src_ragewars_pickup_powerups_us_rev1[24] = {
+    0x800D7134, 0x084B0E0C, 0xFFFF0000, 0x00120003, 0x00010000, 0x002AD65C, 0x800D7138, 0x084C0E0C,
+    0xFFFF0000, 0x00130004, 0x00030000, 0x002AD65C, 0x800D713C, 0x084D0E0C, 0xFFFF0000, 0x00140006,
+    0x00010000, 0x002AD65C, 0x800D7144, 0x084F0E0C, 0xFFFF0000, 0x00150005, 0x00010000, 0x002AD65C,
 };

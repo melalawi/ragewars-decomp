@@ -1,4 +1,3 @@
-/* Numeric constants loaded by func_8044A370_de.
- * US rev1 ROM 0xc8fdc-0xc8fe0; original .float/.double directives.
- */
-const float D_800C32EC_de = 1.0f;
+const unsigned int D_auto_src_rw_pool_8044A370_C8FDC_us_rev1[1] = {
+    0x3F800000,
+};

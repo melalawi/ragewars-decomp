@@ -1,13 +1,3 @@
-/* View-turn tuning passed to func_802231D4_de: it reads six floats
- * at offsets 0,4,8,12,16,20 to scale yaw and directional pitch updates. */
-struct PlayerViewTuning {
-    float yaw_turn_scale;
-    float yaw_response;
-    float pitch_scale;
-    float pitch_response;
-    float pitch_down_scale;
-    float pitch_up_scale;
-};
-struct PlayerViewTuning D_800CE88C = {
-    0.200000003f, 0.25f, 0.5f, 0.125f, -1.57079649f, 1.57079649f
+unsigned int D_auto_src_ragewars_view_tuning_CF48C_us_rev1[6] = {
+    0x3E4CCCCD, 0x3E800000, 0x3F000000, 0x3E000000, 0xBFC90FDC, 0x3FC90FDC,
 };

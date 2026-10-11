@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80288470_de; US rev1 ROM 0xcaf10-0xcaf19.
- */
-const char D_800C5220_de[9] = "Vis Info";
+const unsigned char D_auto_src_rw_text_80288470_CAF10_us_rev1[9] = {
+    0x56, 0x69, 0x73, 0x20, 0x49, 0x6E, 0x66, 0x6F, 0x00,
+};

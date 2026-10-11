@@ -1,20 +1,35 @@
-#include "resident_event_handler.h"
-
-extern s32 func_80421BEC_de(void *, s32, s32, s32, s32);
-extern s32 func_80421AE8_de(void *, s32, s32, s32, s32);
-extern s32 func_80421BBC_de(void *, s32, s32, s32, s32);
-extern s32 func_80421D94_de(void *, s32, s32, s32, s32);
-extern s32 func_80421CE8_de(void *, s32, s32, s32, s32);
-
-/* func_80421DD0_de matches event and actor kind with wildcard30000,
- * advances 12bytes, and stops at a null handler.
- * Callback relocations retain the original KSEG0-bias-free encoding.
- * ROM E5054..E509C. */
-ResidentEventHandlerEntry D_800E4454[6] = {
-    {3592, 27, (ResidentEventHandler)((char *)func_80421BEC_de - 0x80000000U)},
-    {3590, 27, (ResidentEventHandler)((char *)func_80421AE8_de - 0x80000000U)},
-    {3587, 27, (ResidentEventHandler)((char *)func_80421BBC_de - 0x80000000U)},
-    {2, 27, (ResidentEventHandler)((char *)func_80421D94_de - 0x80000000U)},
-    {1, 27, (ResidentEventHandler)((char *)func_80421CE8_de - 0x80000000U)},
-    {0, 0, 0}
+#ifdef VERSION_DE
+unsigned int D_auto_src_ragewars_event_handlers_E5054_us_rev1[18] = {
+    0x00000E08, 0x0000001B, 0x00421BEC, 0x00000E06, 0x0000001B, 0x00421AF0, 0x00000E03, 0x0000001B,
+    0x00421BBC, 0x00000002, 0x0000001B, 0x00421D94, 0x00000001, 0x0000001B, 0x00421CE8, 0x00000000,
+    0x00000000, 0x00000000,
 };
+#endif
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_ragewars_event_handlers_E5054_us_rev1[18] = {
+    0x00000E08, 0x0000001B, 0x004220EC, 0x00000E06, 0x0000001B, 0x00421FF0, 0x00000E03, 0x0000001B,
+    0x004220BC, 0x00000002, 0x0000001B, 0x00422294, 0x00000001, 0x0000001B, 0x004221E8, 0x00000000,
+    0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_EU
+unsigned int D_auto_src_ragewars_event_handlers_E5054_us_rev1[18] = {
+    0x00000E08, 0x0000001B, 0x004220EC, 0x00000E06, 0x0000001B, 0x00421FF0, 0x00000E03, 0x0000001B,
+    0x004220BC, 0x00000002, 0x0000001B, 0x00422294, 0x00000001, 0x0000001B, 0x004221E8, 0x00000000,
+    0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_ragewars_event_handlers_E5054_us_rev1[18] = {
+    0x00000E08, 0x0000001B, 0x00421C1C, 0x00000E06, 0x0000001B, 0x00421B20, 0x00000E03, 0x0000001B,
+    0x00421BEC, 0x00000002, 0x0000001B, 0x00421DC4, 0x00000001, 0x0000001B, 0x00421D18, 0x00000000,
+    0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US
+unsigned int D_auto_src_ragewars_event_handlers_E5054_us_rev1[18] = {
+    0x00000E08, 0x0000001B, 0x00421C1C, 0x00000E06, 0x0000001B, 0x00421B20, 0x00000E03, 0x0000001B,
+    0x00421BEC, 0x00000002, 0x0000001B, 0x00421DC4, 0x00000001, 0x0000001B, 0x00421D18, 0x00000000,
+    0x00000000, 0x00000000,
+};
+#endif

@@ -1,6 +1,3 @@
-/* presentation member of D_800CBDAC.
- * Retained consumers: func_802325FC_de, func_8022BC14_de, func_80217928_de.
- * Only these observed member bytes are source-backed here. */
-#include "resident_pickup_descriptors.h"
-struct WeaponPresentation { const char **localized_label; unsigned short resource_id; unsigned short icon_id; };
-struct WeaponPresentation ragewars_weapon_presentation_D100C_us_rev1 = { &D_800D7070[50], 1238, 3017 };
+unsigned int D_auto_src_ragewars_weapon_presentation_D100C_us_rev1[2] = {
+    0x800D7138, 0x04D60BC9,
+};

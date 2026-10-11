@@ -1,21 +1,4 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D53E4 {
-    char label_red_0[4]; /* ROM0xD53E4 */
-    char label_green_1[8]; /* ROM0xD53E8 */
-    char label_horizontal_2[12]; /* ROM0xD53F0 */
-    char label_vertical_3[12]; /* ROM0xD53FC */
-    char label_lorez_4[8]; /* ROM0xD5408 */
-    char label_hirez_5[8]; /* ROM0xD5410 */
-    char label_letterbox_6[12]; /* ROM0xD5418 */
+unsigned int D_auto_src_ragewars_menu_strings_D53E4_us_rev1[16] = {
+    0x52454400, 0x47524545, 0x4E000000, 0x484F5249, 0x5A4F4E54, 0x414C0000, 0x56455254, 0x4943414C,
+    0x00000000, 0x4C4F5245, 0x5A000000, 0x48495245, 0x5A000000, 0x4C455454, 0x4552424F, 0x58000000,
 };
-const struct MenuStrings_D53E4 ragewars_menu_strings_D53E4_us_rev1 = {
-    "RED",
-    "GREEN",
-    "HORIZONTAL",
-    "VERTICAL",
-    "LOREZ",
-    "HIREZ",
-    "LETTERBOX"
-};
-typedef char menu_strings_size_D53E4[(sizeof(struct MenuStrings_D53E4) == 64) ? 1 : -1];

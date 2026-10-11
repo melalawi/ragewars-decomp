@@ -1,4 +1,3 @@
-/* Scrolling credits label used by the line table at ROM D7808.
- * func_80290E6C_de selects each string and stops at its NUL terminator.
- * Only the observed string and terminator are owned; trailing bytes remain raw. */
-const char ragewars_credits_label_producer_us_rev1[9] = "PRODUCER";
+unsigned char D_auto_src_ragewars_credits_label_producer_us_rev1[9] = {
+    0x50, 0x52, 0x4F, 0x44, 0x55, 0x43, 0x45, 0x52, 0x00,
+};

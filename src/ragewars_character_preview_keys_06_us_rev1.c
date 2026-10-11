@@ -1,5 +1,3 @@
-/* Consumed keys for character slot 6.
- * Native selectors walk seventeen 0x70-byte slots. The preview
- * renderer selects four layouts; only proven fields are emitted. */
-struct SelectionKeys { int selection_key; int character_key; };
-struct SelectionKeys ragewars_character_preview_keys_06_us_rev1 = {142, 6};
+unsigned int D_auto_src_ragewars_character_preview_keys_06_us_rev1[2] = {
+    0x0000008E, 0x00000006,
+};

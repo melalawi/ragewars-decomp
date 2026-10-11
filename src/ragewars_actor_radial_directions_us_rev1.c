@@ -1,14 +1,5 @@
-/* Eight horizontal sampling directions for actor collision probes.
- * 802106E0/80210964 load vectors with stride12; 80210C14 walks
- * all eight x/z pairs, scales them, and probes actor positions. */
-struct ActorRadialDirection { float x; float y; float z; };
-struct ActorRadialDirection D_800C88A0_de[8] = {
-    {0.0f, 0.0f, 1.0f},
-    {0.707106769f, 0.0f, 0.707106769f},
-    {1.0f, 0.0f, 0.0f},
-    {0.707106769f, 0.0f, -0.707106769f},
-    {0.0f, 0.0f, -1.0f},
-    {-0.707106769f, 0.0f, -0.707106769f},
-    {-1.0f, 0.0f, 0.0f},
-    {-0.707106769f, 0.0f, 0.707106769f},
+unsigned int D_auto_src_ragewars_actor_radial_directions_us_rev1[24] = {
+    0x00000000, 0x00000000, 0x3F800000, 0x3F3504F3, 0x00000000, 0x3F3504F3, 0x3F800000, 0x00000000,
+    0x00000000, 0x3F3504F3, 0x00000000, 0xBF3504F3, 0x00000000, 0x00000000, 0xBF800000, 0xBF3504F3,
+    0x00000000, 0xBF3504F3, 0xBF800000, 0x00000000, 0x00000000, 0xBF3504F3, 0x00000000, 0x3F3504F3,
 };

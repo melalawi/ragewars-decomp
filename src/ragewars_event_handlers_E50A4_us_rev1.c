@@ -1,24 +1,35 @@
-#include "resident_event_handler.h"
-
-extern s32 func_80422228_de(void *, s32, s32, s32, s32);
-extern s32 func_80422278_de(void *, s32, s32, s32, s32);
-extern s32 func_8042242C_de(void *, s32, s32, s32, s32);
-extern s32 func_80422414_de(void *, s32, s32, s32, s32);
-extern s32 func_804222A8_de(void *, s32, s32, s32, s32);
-extern s32 func_80422340_de(void *, s32, s32, s32, s32);
-extern s32 func_804223CC_de(void *, s32, s32, s32, s32);
-
-/* func_8042244C_de matches event and actor kind with wildcard30000,
- * advances 12bytes, and stops at a null handler.
- * Callback relocations retain the original KSEG0-bias-free encoding.
- * ROM E50A4..E5104. */
-ResidentEventHandlerEntry D_800E44A4[8] = {
-    {3590, 25, (ResidentEventHandler)((char *)func_80422228_de - 0x80000000U)},
-    {3587, 25, (ResidentEventHandler)((char *)func_80422278_de - 0x80000000U)},
-    {2, 25, (ResidentEventHandler)((char *)func_8042242C_de - 0x80000000U)},
-    {1, 25, (ResidentEventHandler)((char *)func_80422414_de - 0x80000000U)},
-    {3594, 25, (ResidentEventHandler)((char *)func_804222A8_de - 0x80000000U)},
-    {3592, 25, (ResidentEventHandler)((char *)func_80422340_de - 0x80000000U)},
-    {10, 25, (ResidentEventHandler)((char *)func_804223CC_de - 0x80000000U)},
-    {0, 0, 0}
+#ifdef VERSION_DE
+unsigned int D_auto_src_ragewars_event_handlers_E50A4_us_rev1[24] = {
+    0x00000E06, 0x00000019, 0x00422230, 0x00000E03, 0x00000019, 0x00422278, 0x00000002, 0x00000019,
+    0x0042242C, 0x00000001, 0x00000019, 0x00422414, 0x00000E0A, 0x00000019, 0x004222A8, 0x00000E08,
+    0x00000019, 0x00422340, 0x0000000A, 0x00000019, 0x004223CC, 0x00000000, 0x00000000, 0x00000000,
 };
+#endif
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_ragewars_event_handlers_E50A4_us_rev1[24] = {
+    0x00000E06, 0x00000019, 0x00422730, 0x00000E03, 0x00000019, 0x00422778, 0x00000002, 0x00000019,
+    0x0042292C, 0x00000001, 0x00000019, 0x00422914, 0x00000E0A, 0x00000019, 0x004227A8, 0x00000E08,
+    0x00000019, 0x00422840, 0x0000000A, 0x00000019, 0x004228CC, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_EU
+unsigned int D_auto_src_ragewars_event_handlers_E50A4_us_rev1[24] = {
+    0x00000E06, 0x00000019, 0x00422730, 0x00000E03, 0x00000019, 0x00422778, 0x00000002, 0x00000019,
+    0x0042292C, 0x00000001, 0x00000019, 0x00422914, 0x00000E0A, 0x00000019, 0x004227A8, 0x00000E08,
+    0x00000019, 0x00422840, 0x0000000A, 0x00000019, 0x004228CC, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_ragewars_event_handlers_E50A4_us_rev1[24] = {
+    0x00000E06, 0x00000019, 0x00422260, 0x00000E03, 0x00000019, 0x004222A8, 0x00000002, 0x00000019,
+    0x0042245C, 0x00000001, 0x00000019, 0x00422444, 0x00000E0A, 0x00000019, 0x004222D8, 0x00000E08,
+    0x00000019, 0x00422370, 0x0000000A, 0x00000019, 0x004223FC, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US
+unsigned int D_auto_src_ragewars_event_handlers_E50A4_us_rev1[24] = {
+    0x00000E06, 0x00000019, 0x00422260, 0x00000E03, 0x00000019, 0x004222A8, 0x00000002, 0x00000019,
+    0x0042245C, 0x00000001, 0x00000019, 0x00422444, 0x00000E0A, 0x00000019, 0x004222D8, 0x00000E08,
+    0x00000019, 0x00422370, 0x0000000A, 0x00000019, 0x004223FC, 0x00000000, 0x00000000, 0x00000000,
+};
+#endif

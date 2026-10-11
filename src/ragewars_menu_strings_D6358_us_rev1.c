@@ -1,17 +1,4 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D6358 {
-    char label_pmf_shot_0[12]; /* ROM0xD6358 */
-    char label_body_shot_1[12]; /* ROM0xD6364 */
-    char label_head_shot_2[12]; /* ROM0xD6370 */
-    char label_arm_shot_3[12]; /* ROM0xD637C */
-    char label_edit_4[8]; /* ROM0xD6388 */
+unsigned int D_auto_src_ragewars_menu_strings_D6358_us_rev1[14] = {
+    0x706D6620, 0x73686F74, 0x21000000, 0x626F6479, 0x2073686F, 0x74210000, 0x68656164, 0x2073686F,
+    0x74210000, 0x61726D20, 0x73686F74, 0x21000000, 0x65646974, 0x00000000,
 };
-const struct MenuStrings_D6358 ragewars_menu_strings_D6358_us_rev1 = {
-    "pmf shot!",
-    "body shot!",
-    "head shot!",
-    "arm shot!",
-    "edit"
-};
-typedef char menu_strings_size_D6358[(sizeof(struct MenuStrings_D6358) == 56) ? 1 : -1];

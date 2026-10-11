@@ -1,15 +1,3 @@
-/* Eight movement floats read by func_802238E0_de.
- * The following two-byte reserved gap remains raw and unclaimed. */
-struct PlayerMovementTuning {
-    float thrust_acceleration;
-    float thrust_limit;
-    float thrust_decay;
-    float impulse_speed;
-    float impulse_decay;
-    float vertical_acceleration;
-    float vertical_limit;
-    float vertical_impulse;
-};
-struct PlayerMovementTuning D_800CE850 = {
-    2.0480001f, 15.3599997f, 1.02400005f, 20.4799995f, 1.53600001f, 20.4799995f, 153.599991f, 102.399994f
+unsigned int D_auto_src_ragewars_movement_tuning_CF450_us_rev1[8] = {
+    0x4003126F, 0x4175C28F, 0x3F83126F, 0x41A3D70A, 0x3FC49BA6, 0x41A3D70A, 0x43199999, 0x42CCCCCC,
 };

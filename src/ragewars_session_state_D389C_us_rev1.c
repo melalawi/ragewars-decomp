@@ -1,2 +1,3 @@
-/* Session selection value set and queried by the control API. */
-int D_800CDA2C = 1;
+unsigned int D_auto_src_ragewars_session_state_D389C_us_rev1[1] = {
+    0x00000001,
+};

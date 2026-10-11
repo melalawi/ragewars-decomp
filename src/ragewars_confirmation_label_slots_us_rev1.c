@@ -1,19 +1,4 @@
-/* Gameplay kill, flag and confirmation text-pointer slots.
- * resident_menu_pak_options passes D_800D3A58 slot addresses
- * to 80442064, which dereferences the text pointer before drawing.
- * Targets are retained character members of the label producer. */
-struct MenuStrings_D639C;
-extern const struct MenuStrings_D639C ragewars_menu_strings_D639C_us_rev1;
-
-char *ragewars_confirmation_label_slots_us_rev1[10] = {
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 0,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 12,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 24,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 36,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 48,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 68,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 92,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 116,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 132,
-    (char *)&ragewars_menu_strings_D639C_us_rev1 + 144,
+unsigned int D_auto_src_ragewars_confirmation_label_slots_us_rev1[10] = {
+    0x800D579C, 0x800D57A8, 0x800D57B4, 0x800D57C0, 0x800D57CC, 0x800D57E0, 0x800D57F8, 0x800D5810,
+    0x800D5820, 0x800D582C,
 };

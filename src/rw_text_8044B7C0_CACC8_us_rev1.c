@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcacc8-0xcacda.
- */
-const char D_800C4FD8_de[18] = "particle swooshes";
+const unsigned short D_auto_src_rw_text_8044B7C0_CACC8_us_rev1[9] = {
+    0x7061, 0x7274, 0x6963, 0x6C65, 0x2073, 0x776F, 0x6F73, 0x6865, 0x7300,
+};

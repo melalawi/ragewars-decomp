@@ -1,4 +1,4 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8024BFD4_de; US rev1 ROM 0xc9818-0xc9829.
- */
-const char D_800C3B28[17] = "anim model index";
+const unsigned char D_auto_src_rw_text_8024BFD4_C9818_us_rev1[17] = {
+    0x61, 0x6E, 0x69, 0x6D, 0x20, 0x6D, 0x6F, 0x64, 0x65, 0x6C, 0x20, 0x69, 0x6E, 0x64, 0x65, 0x78,
+    0x00,
+};

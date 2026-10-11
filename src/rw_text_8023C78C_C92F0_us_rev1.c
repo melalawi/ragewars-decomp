@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8023C78C_de; US rev1 ROM 0xc92f0-0xc92ff.
- */
-const char D_800C3600_de[15] = "Virtual Region";
+const unsigned char D_auto_src_rw_text_8023C78C_C92F0_us_rev1[15] = {
+    0x56, 0x69, 0x72, 0x74, 0x75, 0x61, 0x6C, 0x20, 0x52, 0x65, 0x67, 0x69, 0x6F, 0x6E, 0x00,
+};

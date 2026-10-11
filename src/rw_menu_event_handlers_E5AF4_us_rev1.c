@@ -1,24 +1,40 @@
-#include "resident_event_handler.h"
-
-extern s32 func_804291D0_de(void *, s32, s32, s32, s32);
-extern s32 func_804296F4_de(void *, s32, s32, s32, s32);
-extern s32 func_80429724_de(void *, s32, s32, s32, s32);
-extern s32 func_804298F8_de(void *, s32, s32, s32, s32);
-extern s32 func_804297F8_de(void *, s32, s32, s32, s32);
-extern s32 func_8042972C_de(void *, s32, s32, s32, s32);
-extern s32 func_80429970_de(void *, s32, s32, s32, s32);
-extern s32 func_8042994C_de(void *, s32, s32, s32, s32);
-
-/* func_80429994_de: event, actor kind, callback; stride12; five
- * o32 arguments and signed result. Unresolved callback rows excluded. */
-ResidentEventHandlerEntry D_800E4EF4[9] = {
-    {3590, 21, (ResidentEventHandler)((char *)func_804291D0_de - 0x80000000U)},
-    {3587, 21, (ResidentEventHandler)((char *)func_804296F4_de - 0x80000000U)},
-    {3594, 21, (ResidentEventHandler)((char *)func_80429724_de - 0x80000000U)},
-    {2, 21, (ResidentEventHandler)((char *)func_804298F8_de - 0x80000000U)},
-    {1, 21, (ResidentEventHandler)((char *)func_804297F8_de - 0x80000000U)},
-    {10, 21, (ResidentEventHandler)((char *)func_8042972C_de - 0x80000000U)},
-    {8, 878, (ResidentEventHandler)((char *)func_80429970_de - 0x80000000U)},
-    {7, 878, (ResidentEventHandler)((char *)func_8042994C_de - 0x80000000U)},
-    {0, 0, 0},
+#ifdef VERSION_DE
+unsigned int D_auto_src_rw_menu_event_handlers_E5AF4_us_rev1[27] = {
+    0x00000E06, 0x00000015, 0x004291D0, 0x00000E03, 0x00000015, 0x004296F4, 0x00000E0A, 0x00000015,
+    0x00429724, 0x00000002, 0x00000015, 0x004298F8, 0x00000001, 0x00000015, 0x004297F8, 0x0000000A,
+    0x00000015, 0x0042972C, 0x00000008, 0x0000036A, 0x00429970, 0x00000007, 0x0000036A, 0x0042994C,
+    0x00000000, 0x00000000, 0x00000000,
 };
+#endif
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_rw_menu_event_handlers_E5AF4_us_rev1[27] = {
+    0x00000E06, 0x00000015, 0x00429E80, 0x00000E03, 0x00000015, 0x0042A400, 0x00000E0A, 0x00000015,
+    0x0042A430, 0x00000002, 0x00000015, 0x0042A604, 0x00000001, 0x00000015, 0x0042A504, 0x0000000A,
+    0x00000015, 0x0042A438, 0x00000008, 0x00000372, 0x0042A67C, 0x00000007, 0x00000372, 0x0042A658,
+    0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_EU
+unsigned int D_auto_src_rw_menu_event_handlers_E5AF4_us_rev1[27] = {
+    0x00000E06, 0x00000015, 0x00429D30, 0x00000E03, 0x00000015, 0x0042A2B0, 0x00000E0A, 0x00000015,
+    0x0042A2E0, 0x00000002, 0x00000015, 0x0042A4B4, 0x00000001, 0x00000015, 0x0042A3B4, 0x0000000A,
+    0x00000015, 0x0042A2E8, 0x00000008, 0x0000036E, 0x0042A52C, 0x00000007, 0x0000036E, 0x0042A508,
+    0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_rw_menu_event_handlers_E5AF4_us_rev1[27] = {
+    0x00000E06, 0x00000015, 0x004293B0, 0x00000E03, 0x00000015, 0x004298D4, 0x00000E0A, 0x00000015,
+    0x00429904, 0x00000002, 0x00000015, 0x00429AD8, 0x00000001, 0x00000015, 0x004299D8, 0x0000000A,
+    0x00000015, 0x0042990C, 0x00000008, 0x0000036E, 0x00429B50, 0x00000007, 0x0000036E, 0x00429B2C,
+    0x00000000, 0x00000000, 0x00000000,
+};
+#endif
+#ifdef VERSION_US
+unsigned int D_auto_src_rw_menu_event_handlers_E5AF4_us_rev1[27] = {
+    0x00000E06, 0x00000015, 0x004293B0, 0x00000E03, 0x00000015, 0x004298D4, 0x00000E0A, 0x00000015,
+    0x00429904, 0x00000002, 0x00000015, 0x00429AD8, 0x00000001, 0x00000015, 0x004299D8, 0x0000000A,
+    0x00000015, 0x0042990C, 0x00000008, 0x0000036E, 0x00429B50, 0x00000007, 0x0000036E, 0x00429B2C,
+    0x00000000, 0x00000000, 0x00000000,
+};
+#endif

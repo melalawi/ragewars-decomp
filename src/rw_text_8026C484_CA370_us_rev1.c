@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8026C484_de; US rev1 ROM 0xca370-0xca382.
- */
-const char D_800C4680_de[18] = "simp models index";
+const unsigned short D_auto_src_rw_text_8026C484_CA370_us_rev1[9] = {
+    0x7369, 0x6D70, 0x206D, 0x6F64, 0x656C, 0x7320, 0x696E, 0x6465, 0x7800,
+};

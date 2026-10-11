@@ -1,22 +1,5 @@
-#include "gfx.h"
-#include "types.h"
-#include "n64sdk.h"
-#include "gbi.h"
-
-/* RDP startup state, used by the renderer through D_800CBCF0_de.
- * ROM D1B40..D1BA0, VMA 800D0F40: twelve F3DEX2 commands. */
-Gfx D_800CBCF0_de[12] = {
-    gsDPSetCycleType(G_CYC_1CYCLE),
-    gsSPSetOtherMode(G_SETOTHERMODE_H, G_MDSFT_PIPELINE, 1, G_PM_NPRIMITIVE),
-    gsDPSetTextureLOD(G_TL_TILE),
-    gsDPSetTextureLUT(G_TT_NONE),
-    gsDPSetTextureDetail(G_TD_CLAMP),
-    gsDPSetTexturePersp(G_TP_PERSP),
-    gsDPSetTextureFilter(G_TF_BILERP),
-    gsDPSetTextureConvert(G_TC_FILT),
-    gsDPSetCombineKey(G_CK_NONE),
-    gsDPSetAlphaCompare(G_AC_NONE),
-    gsDPPipeSync(),
-    gsSPEndDisplayList()
+unsigned int D_auto_src_ragewars_rdp_startup_us_rev1[24] = {
+    0xE3000A01, 0x00000000, 0xE3000800, 0x00000000, 0xE3000F00, 0x00000000, 0xE3001001, 0x00000000,
+    0xE3000D01, 0x00000000, 0xE3000C00, 0x00080000, 0xE3001201, 0x00002000, 0xE3001402, 0x00000C00,
+    0xE3001700, 0x00000000, 0xE2001E01, 0x00000000, 0xE7000000, 0x00000000, 0xDF000000, 0x00000000,
 };
-typedef char rdp_startup_size[(sizeof(D_800CBCF0_de) == 96) ? 1 : -1];

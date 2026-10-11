@@ -1,5 +1,3 @@
-#include "rw_player_state_fields.h"
-
-/* Original normal state36: signed timer and parameter, consumed
- * by func_802227F4_de; zero parameter preserves the previous value. */
-RwPlayerStateTiming rw_player_state_normal_timing_36_us_rev1 = {32768, 2010};
+unsigned int D_auto_src_rw_player_state_normal_timing_36_us_rev1[2] = {
+    0x00008000, 0x000007DA,
+};

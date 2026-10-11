@@ -1,4 +1,3 @@
-#include "types.h"
-
-/* Signed state ID sentinel, consumed by the native stride32 search. */
-s32 rw_weapon_state_end_D0664_us_rev1 = -1;
+unsigned int D_auto_src_rw_weapon_state_end_D0664_us_rev1[1] = {
+    0xFFFFFFFF,
+};

@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80294F1C_us_rev1; US rev1 ROM 0xcb20c-0xcb21e.
- */
-const char D_800CA60C[18] = "Artsend Activated";
+const unsigned short D_auto_src_rw_text_80294F1C_us_rev1_CB20C_us_rev1[9] = {
+    0x4172, 0x7473, 0x656E, 0x6420, 0x4163, 0x7469, 0x7661, 0x7465, 0x6400,
+};

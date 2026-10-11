@@ -1,9 +1,3 @@
-/* Numeric constants loaded by func_8023D380_de.
- * US rev1 ROM 0xc9324-0xc933c; original .float/.double directives.
- */
-const float D_800C3634_de = 10.23999977f;
-const float D_800C3638_de = 30.71999931f;
-const float D_800C363C_de = 0.2047999948f;
-const float D_800C3640_de = 1.0f;
-const float D_800C3644_de = 4.096000195f;
-const float D_800C3648_de = 1.048576117f;
+const unsigned int D_auto_src_rw_pool_8023D380_C9324_us_rev1[6] = {
+    0x4123D70A, 0x41F5C28F, 0x3E51B717, 0x3F800000, 0x4083126F, 0x3F8637BE,
+};

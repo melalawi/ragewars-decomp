@@ -1,13 +1,25 @@
-#include "resident_event_handler.h"
-
-extern s32 func_80439010_de(void *, s32, s32, s32, s32);
-extern s32 func_80439018_de(void *, s32, s32, s32, s32);
-
-/* func_804391B0_de consumes these event/actor-kind/callback rows
- * at stride12 with five o32 arguments and a signed result. Callback
- * relocations omit KSEG0 bias. This object is a proved contiguous fragment of the original table.
- * Unnamed callback entry rows remain in original extraction. */
-ResidentEventHandlerEntry D_800E58A8[2] = {
-    {3591, 6, (ResidentEventHandler)((char *)func_80439010_de - 0x80000000U)},
-    {3592, 6, (ResidentEventHandler)((char *)func_80439018_de - 0x80000000U)},
+#ifdef VERSION_DE
+unsigned int D_auto_src_rw_menu_event_handlers_E64A8_us_rev1[6] = {
+    0x00000E07, 0x00000006, 0x00439010, 0x00000E08, 0x00000006, 0x00439018,
 };
+#endif
+#ifdef VERSION_EU_X
+unsigned int D_auto_src_rw_menu_event_handlers_E64A8_us_rev1[6] = {
+    0x00000E07, 0x00000006, 0x0043A010, 0x00000E08, 0x00000006, 0x0043A018,
+};
+#endif
+#ifdef VERSION_EU
+unsigned int D_auto_src_rw_menu_event_handlers_E64A8_us_rev1[6] = {
+    0x00000E07, 0x00000006, 0x00439EE0, 0x00000E08, 0x00000006, 0x00439EE8,
+};
+#endif
+#ifdef VERSION_US_REV
+unsigned int D_auto_src_rw_menu_event_handlers_E64A8_us_rev1[6] = {
+    0x00000E07, 0x00000006, 0x004391F0, 0x00000E08, 0x00000006, 0x004391F8,
+};
+#endif
+#ifdef VERSION_US
+unsigned int D_auto_src_rw_menu_event_handlers_E64A8_us_rev1[6] = {
+    0x00000E07, 0x00000006, 0x004391F0, 0x00000E08, 0x00000006, 0x004391F8,
+};
+#endif

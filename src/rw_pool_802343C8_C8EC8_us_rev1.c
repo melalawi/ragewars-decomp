@@ -1,8 +1,3 @@
-/* Numeric constants loaded by func_802343C8_de.
- * US rev1 ROM 0xc8ec8-0xc8ee8; original .float/.double directives.
- */
-const double D_800C31D8_de = 4294967296.0;
-const double D_800C31E0_de = 4294967296.0;
-const double D_800C31E8_de = 4294967296.0;
-const float D_800C31F0_de = 2147483648.0f;
-const float D_800C31F4_de = 1024.0f;
+const unsigned int D_auto_src_rw_pool_802343C8_C8EC8_us_rev1[8] = {
+    0x41F00000, 0x00000000, 0x41F00000, 0x00000000, 0x41F00000, 0x00000000, 0x4F000000, 0x44800000,
+};

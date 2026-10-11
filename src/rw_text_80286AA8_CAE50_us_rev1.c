@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80286AA8_de; US rev1 ROM 0xcae50-0xcae56.
- */
-const char D_800C5160_de[6] = "links";
+const unsigned short D_auto_src_rw_text_80286AA8_CAE50_us_rev1[3] = {
+    0x6C69, 0x6E6B, 0x7300,
+};

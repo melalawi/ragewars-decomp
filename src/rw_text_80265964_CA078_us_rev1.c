@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_80265964_de; US rev1 ROM 0xca078-0xca087.
- */
-const char D_800C4388_de[15] = "ROMLookupTable";
+const unsigned char D_auto_src_rw_text_80265964_CA078_us_rev1[15] = {
+    0x52, 0x4F, 0x4D, 0x4C, 0x6F, 0x6F, 0x6B, 0x75, 0x70, 0x54, 0x61, 0x62, 0x6C, 0x65, 0x00,
+};

@@ -1,4 +1,3 @@
-/* Consumed lights for character slot 0.
- * Native selectors walk seventeen 0x70-byte slots. The preview
- * renderer selects four layouts; only proven fields are emitted. */
-int ragewars_character_preview_lights_00_us_rev1[4] = {0, 0, -20, -20};
+unsigned int D_auto_src_ragewars_character_preview_lights_00_us_rev1[4] = {
+    0x00000000, 0x00000000, 0xFFFFFFEC, 0xFFFFFFEC,
+};

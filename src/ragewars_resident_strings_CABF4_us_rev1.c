@@ -1,9 +1,4 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_CABF4 {
-    char label_cscene_constructmap_simp_models_index_0[40]; /* ROM0xCABF4 */
+const unsigned int D_auto_src_ragewars_resident_strings_CABF4_us_rev1[10] = {
+    0x43536365, 0x6E655F5F, 0x436F6E73, 0x74727563, 0x744D6170, 0x3A207369, 0x6D70206D, 0x6F64656C,
+    0x7320696E, 0x64657800,
 };
-const struct MenuStrings_CABF4 ragewars_resident_strings_CABF4_us_rev1 = {
-    "CScene__ConstructMap: simp models index"
-};
-typedef char menu_strings_size_CABF4[(sizeof(struct MenuStrings_CABF4) == 40) ? 1 : -1];

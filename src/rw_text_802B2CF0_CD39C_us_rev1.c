@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_802B2CF0_de; US rev1 ROM 0xcd39c-0xcd3ae.
- */
-const char D_800C754C[18] = "audio/sndplayer.c";
+const unsigned short D_auto_src_rw_text_802B2CF0_CD39C_us_rev1[9] = {
+    0x6175, 0x6469, 0x6F2F, 0x736E, 0x6470, 0x6C61, 0x7965, 0x722E, 0x6300,
+};

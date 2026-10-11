@@ -1,9 +1,3 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D5EF4 {
-    char label_nrwe_0[8]; /* ROM0xD5EF4 */
+unsigned int D_auto_src_ragewars_menu_strings_D5EF4_us_rev1[2] = {
+    0x4E525745, 0x00000000,
 };
-const struct MenuStrings_D5EF4 ragewars_menu_strings_D5EF4_us_rev1 = {
-    "NRWE"
-};
-typedef char menu_strings_size_D5EF4[(sizeof(struct MenuStrings_D5EF4) == 8) ? 1 : -1];

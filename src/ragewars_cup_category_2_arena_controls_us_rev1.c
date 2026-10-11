@@ -1,6 +1,5 @@
-/* Cup catalogue control list. 8042B1B8 and 8042ACD8 select
- * the category list and map its control to the arena record. The first
- * control is the observed category sentinel; remaining entries are stages. */
-int ragewars_cup_category_2_arena_controls_us_rev1[17] = {
-    790, 787, 804, 803, 802, 809, 808, 807, 814, 813, 786, 785, 799, 800, 793, 794, 795
+unsigned int D_auto_src_ragewars_cup_category_2_arena_controls_us_rev1[17] = {
+    0x00000316, 0x00000313, 0x00000324, 0x00000323, 0x00000322, 0x00000329, 0x00000328, 0x00000327,
+    0x0000032E, 0x0000032D, 0x00000312, 0x00000311, 0x0000031F, 0x00000320, 0x00000319, 0x0000031A,
+    0x0000031B,
 };

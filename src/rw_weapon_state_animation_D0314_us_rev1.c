@@ -1,4 +1,3 @@
-#include "types.h"
-
-typedef struct StateAnimation { f32 scale; s32 threshold; u32 flags; } StateAnimation;
-StateAnimation rw_weapon_state_animation_D0314_us_rev1 = {1.0f, 3, 0U};
+unsigned int D_auto_src_rw_weapon_state_animation_D0314_us_rev1[3] = {
+    0x3F800000, 0x00000003, 0x00000000,
+};

@@ -1,9 +1,4 @@
-#include "types.h"
-
-/* 802BEDB0 loads halfword masks by code width before extracting packed coefficients.
- * ROM D9F80..D9FA2. */
-u16 D_800D5350[17] = {
-    0, 1, 3, 7, 15, 31, 63, 127,
-    255, 511, 1023, 2047, 4095, 8191, 16383, 32767,
-    65535,
+unsigned short D_auto_src_ragewars_decoder_bit_masks_us_rev1[17] = {
+    0x0000, 0x0001, 0x0003, 0x0007, 0x000F, 0x001F, 0x003F, 0x007F, 0x00FF, 0x01FF, 0x03FF, 0x07FF,
+    0x0FFF, 0x1FFF, 0x3FFF, 0x7FFF, 0xFFFF,
 };

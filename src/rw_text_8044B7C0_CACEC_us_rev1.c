@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcacec-0xcacf7.
- */
-const char D_800C4FFC_de[11] = "warp dests";
+const unsigned char D_auto_src_rw_text_8044B7C0_CACEC_us_rev1[11] = {
+    0x77, 0x61, 0x72, 0x70, 0x20, 0x64, 0x65, 0x73, 0x74, 0x73, 0x00,
+};

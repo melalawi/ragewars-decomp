@@ -1,2 +1,3 @@
-/* Menu label slots include terminators and original word padding. */
-const char ragewars_menu_on_label_us_rev1[1][4] = {"ON"};
+unsigned int D_auto_src_ragewars_menu_on_label_us_rev1[1] = {
+    0x4F4E0000,
+};

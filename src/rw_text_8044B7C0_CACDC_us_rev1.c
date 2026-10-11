@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcacdc-0xcaceb.
- */
-const char D_800C4FEC_de[15] = "dynamic lights";
+const unsigned char D_auto_src_rw_text_8044B7C0_CACDC_us_rev1[15] = {
+    0x64, 0x79, 0x6E, 0x61, 0x6D, 0x69, 0x63, 0x20, 0x6C, 0x69, 0x67, 0x68, 0x74, 0x73, 0x00,
+};

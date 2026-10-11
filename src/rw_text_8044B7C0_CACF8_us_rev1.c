@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_8044B7C0_de; US rev1 ROM 0xcacf8-0xcacff.
- */
-const char D_800C5008_de[7] = "curves";
+const unsigned char D_auto_src_rw_text_8044B7C0_CACF8_us_rev1[7] = {
+    0x63, 0x75, 0x72, 0x76, 0x65, 0x73, 0x00,
+};

@@ -1,27 +1,7 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D639C {
-    char label_tagged_by_0[12]; /* ROM0xD639C */
-    char label_you_tagged_1[12]; /* ROM0xD63A8 */
-    char label_killed_by_2[12]; /* ROM0xD63B4 */
-    char label_you_killed_3[12]; /* ROM0xD63C0 */
-    char label_you_killed_yourself_4[20]; /* ROM0xD63CC */
-    char label_you_lost_the_flag_5[24]; /* ROM0xD63E0 */
-    char label_he_dropped_the_flag_6[24]; /* ROM0xD63F8 */
-    char label_are_you_sure_7[16]; /* ROM0xD6410 */
-    char label_you_want_to_8[12]; /* ROM0xD6420 */
-    char label_yes_9[4]; /* ROM0xD642C */
+unsigned int D_auto_src_ragewars_menu_strings_D639C_us_rev1[37] = {
+    0x74616767, 0x65642062, 0x79200000, 0x796F7520, 0x74616767, 0x65642000, 0x6B696C6C, 0x65642062,
+    0x79200000, 0x796F7520, 0x6B696C6C, 0x65642000, 0x796F7520, 0x6B696C6C, 0x65642079, 0x6F757273,
+    0x656C6600, 0x796F7520, 0x6C6F7374, 0x20746865, 0x20666C61, 0x67212121, 0x00000000, 0x48652064,
+    0x726F7070, 0x65642074, 0x68652066, 0x6C616721, 0x21210000, 0x61726520, 0x796F7520, 0x73757265,
+    0x3F000000, 0x796F7520, 0x77616E74, 0x20746F00, 0x79657300,
 };
-const struct MenuStrings_D639C ragewars_menu_strings_D639C_us_rev1 = {
-    "tagged by ",
-    "you tagged ",
-    "killed by ",
-    "you killed ",
-    "you killed yourself",
-    "you lost the flag!!!",
-    "He dropped the flag!!!",
-    "are you sure?",
-    "you want to",
-    "yes"
-};
-typedef char menu_strings_size_D639C[(sizeof(struct MenuStrings_D639C) == 148) ? 1 : -1];

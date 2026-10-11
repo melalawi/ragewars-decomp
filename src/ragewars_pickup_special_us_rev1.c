@@ -1,12 +1,4 @@
-#include "resident_pickup_descriptors.h"
-
-extern s32 func_802ACBCC(void *, void *);
-
-/* 3 descriptors traversed by 802AB400/802AB6EC at stride 16.
- * Callbacks retain the cartridge encoding with the KSEG0 bias removed.
- * ROM D3F90..D3FC0. */
-ResidentSpecialDescriptor D_800D3390[3] = {
-    {{&D_800D7070[25], 3030, 3598, 0, 0}, (ResidentPickupHandler)((char *)func_802ACBCC - 0x80000000U)},
-    {{&D_800D7070[26], 3031, 710, 0, 0}, (ResidentPickupHandler)((char *)func_802ACBCC - 0x80000000U)},
-    {{&D_800D7070[29], 3032, 3530, 0, 0}, (ResidentPickupHandler)((char *)func_802ACBCC - 0x80000000U)},
+unsigned int D_auto_src_ragewars_pickup_special_us_rev1[12] = {
+    0x800D70D4, 0x0BD60E0E, 0x00000000, 0x002ACBCC, 0x800D70D8, 0x0BD702C6, 0x00000000, 0x002ACBCC,
+    0x800D70E4, 0x0BD80DCA, 0x00000000, 0x002ACBCC,
 };

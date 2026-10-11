@@ -1,4 +1,3 @@
-/* NUL terminated text from the original .asciz directive.
- * Used by func_80445ECC; US rev1 ROM 0xe33f0-0xe33f4.
- */
-const char D_800DE7B0_de[4] = "%2d";
+const unsigned int D_auto_src_rw_text_80445494_E33F0_us_rev1[1] = {
+    0x25326400,
+};

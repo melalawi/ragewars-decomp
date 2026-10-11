@@ -1,3 +1,3 @@
-/* func_802170A0_de reads this zero mask to terminate its event walk.
- * It never reads the following word; that word remains unclaimed. */
-unsigned int ragewars_actor_primary_mask_end_us_rev1 = 0;
+unsigned int D_auto_src_ragewars_actor_primary_mask_end_us_rev1[1] = {
+    0x00000000,
+};

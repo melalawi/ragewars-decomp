@@ -1,6 +1,3 @@
-#include "types.h"
-
-/* Six signed arguments transported to the native VI setup call.
- * Actual mode stride28; the seventh word remains extraction. */
-typedef struct RwVideoArguments { s32 width, height; s32 horizontalOffset, verticalOffset; s32 horizontalInset, verticalInset; } RwVideoArguments;
-RwVideoArguments rw_video_arguments_r0_m1_E3514_us_rev1 = {480, 360, 29, 18, -41, -32};
+unsigned int D_auto_src_rw_video_arguments_r0_m1_E3514_us_rev1[6] = {
+    0x000001E0, 0x00000168, 0x0000001D, 0x00000012, 0xFFFFFFD7, 0xFFFFFFE0,
+};

@@ -1,4 +1,3 @@
-/* NUL terminated text from the original .asciz directive.
- * Used by func_802BD430_de; US rev1 ROM 0xcd960-0xcd964.
- */
-const char D_800C7B10_de[4] = "hlL";
+const unsigned int D_auto_src_rw_text_802BD430_CD960_us_rev1[1] = {
+    0x686C4C00,
+};

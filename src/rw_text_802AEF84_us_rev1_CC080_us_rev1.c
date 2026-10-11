@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_802AEF84_us_rev1; US rev1 ROM 0xcc080-0xcc08a.
- */
-const char D_800CB480[10] = "N64 V1.00";
+const unsigned short D_auto_src_rw_text_802AEF84_us_rev1_CC080_us_rev1[5] = {
+    0x4E36, 0x3420, 0x5631, 0x2E30, 0x3000,
+};

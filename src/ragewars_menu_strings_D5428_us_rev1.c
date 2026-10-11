@@ -1,33 +1,5 @@
-/* Resident player, weapon, pickup and menu labels. String slots include
- * their NUL terminator and original word alignment padding. */
-struct MenuStrings_D5428 {
-    char label_yes_0[4]; /* ROM0xD5428 */
-    char label_novice_1[8]; /* ROM0xD542C */
-    char label_easy_2[8]; /* ROM0xD5434 */
-    char label_normal_3[8]; /* ROM0xD543C */
-    char label_veteran_4[8]; /* ROM0xD5444 */
-    char label_expert_5[8]; /* ROM0xD544C */
-    char label_arcade_6[8]; /* ROM0xD5454 */
-    char label_wheel_7[8]; /* ROM0xD545C */
-    char label_tap_8[4]; /* ROM0xD5464 */
-    char label_mixed_9[8]; /* ROM0xD5468 */
-    char label_controller_d_10[16]; /* ROM0xD5470 */
-    char label_ctf_11[4]; /* ROM0xD5480 */
-    char label_tbl_12[4]; /* ROM0xD5484 */
+unsigned int D_auto_src_ragewars_menu_strings_D5428_us_rev1[24] = {
+    0x59455300, 0x4E4F5649, 0x43450000, 0x45415359, 0x00000000, 0x4E4F524D, 0x414C0000, 0x56455445,
+    0x52414E00, 0x45585045, 0x52540000, 0x41524341, 0x44450000, 0x57484545, 0x4C000000, 0x54415000,
+    0x4D495845, 0x44000000, 0x434F4E54, 0x524F4C4C, 0x45522025, 0x64000000, 0x43544600, 0x54424C00,
 };
-const struct MenuStrings_D5428 ragewars_menu_strings_D5428_us_rev1 = {
-    "YES",
-    "NOVICE",
-    "EASY",
-    "NORMAL",
-    "VETERAN",
-    "EXPERT",
-    "ARCADE",
-    "WHEEL",
-    "TAP",
-    "MIXED",
-    "CONTROLLER %d",
-    "CTF",
-    "TBL"
-};
-typedef char menu_strings_size_D5428[(sizeof(struct MenuStrings_D5428) == 96) ? 1 : -1];

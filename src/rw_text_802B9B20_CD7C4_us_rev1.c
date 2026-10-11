@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_802B9B20_de; US rev1 ROM 0xcd7c4-0xcd7d3.
- */
-const char D_800C7974_de[15] = "io/pirawread.c";
+const unsigned char D_auto_src_rw_text_802B9B20_CD7C4_us_rev1[15] = {
+    0x69, 0x6F, 0x2F, 0x70, 0x69, 0x72, 0x61, 0x77, 0x72, 0x65, 0x61, 0x64, 0x2E, 0x63, 0x00,
+};

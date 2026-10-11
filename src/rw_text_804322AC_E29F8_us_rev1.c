@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_804322AC_de; US rev1 ROM 0xe29f8-0xe29ff.
- */
-const char D_800DDDC8[7] = "[MODE]";
+const unsigned char D_auto_src_rw_text_804322AC_E29F8_us_rev1[7] = {
+    0x5B, 0x4D, 0x4F, 0x44, 0x45, 0x5D, 0x00,
+};

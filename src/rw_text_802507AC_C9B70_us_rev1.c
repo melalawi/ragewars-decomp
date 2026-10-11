@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_802507AC_de; US rev1 ROM 0xc9b70-0xc9b82.
- */
-const char D_800C8F70[18] = "stat models index";
+const unsigned short D_auto_src_rw_text_802507AC_C9B70_us_rev1[9] = {
+    0x7374, 0x6174, 0x206D, 0x6F64, 0x656C, 0x7320, 0x696E, 0x6465, 0x7800,
+};

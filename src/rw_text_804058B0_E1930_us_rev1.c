@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_804058B0_de; US rev1 ROM 0xe1930-0xe1939.
- */
-const char D_800DCD00_de[9] = "Z-Buffer";
+const unsigned char D_auto_src_rw_text_804058B0_E1930_us_rev1[9] = {
+    0x5A, 0x2D, 0x42, 0x75, 0x66, 0x66, 0x65, 0x72, 0x00,
+};

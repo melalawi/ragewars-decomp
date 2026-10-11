@@ -1,23 +1,6 @@
-#include "types.h"
-/* Native loadout selection records. func_8043B6E8_de scans3/8/4
- * records and tests profile[ownedIndex+0x4C]. func_8043B49C_de
- * copies captionResource into a UI child, passes modelResource to
- * the preview loader, and dereferences labelSlots for the name.
- * func_8042863C_de maps ownedIndex back to captionResource. */
-extern const char *D_800D7070[103];
-typedef struct RwLoadoutItem {
-    s32 captionResource;
-    s32 modelResource;
-    s32 ownedIndex;
-    const char **labelSlots;
-} RwLoadoutItem;
-RwLoadoutItem rw_loadout_weapons_items_us_rev1[8] = {
-    {179, 5033, 1, &D_800D7070[34]},
-    {162, 5019, 15, &D_800D7070[48]},
-    {154, 5025, 13, &D_800D7070[46]},
-    {155, 5026, 9, &D_800D7070[42]},
-    {153, 5018, 8, &D_800D7070[41]},
-    {170, 5005, 14, &D_800D7070[47]},
-    {174, 5007, 7, &D_800D7070[40]},
-    {176, 5004, 2, &D_800D7070[35]},
+unsigned int D_auto_src_rw_loadout_weapons_items_us_rev1[32] = {
+    0x000000B3, 0x000013A9, 0x00000001, 0x800D70F8, 0x000000A2, 0x0000139B, 0x0000000F, 0x800D7130,
+    0x0000009A, 0x000013A1, 0x0000000D, 0x800D7128, 0x0000009B, 0x000013A2, 0x00000009, 0x800D7118,
+    0x00000099, 0x0000139A, 0x00000008, 0x800D7114, 0x000000AA, 0x0000138D, 0x0000000E, 0x800D712C,
+    0x000000AE, 0x0000138F, 0x00000007, 0x800D7110, 0x000000B0, 0x0000138C, 0x00000002, 0x800D70FC,
 };

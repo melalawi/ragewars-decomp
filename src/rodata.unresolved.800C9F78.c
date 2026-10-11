@@ -1,0 +1,3 @@
+unsigned int D_auto_rodata_unresolved_800C9F78[3] = {
+    0x42940000, 0x42940000, 0xC2EC0000,
+};

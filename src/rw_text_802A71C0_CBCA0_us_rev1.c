@@ -1,4 +1,3 @@
-/* NUL terminated diagnostic or format text; original word directives prove its prefix.
- * Used by func_802A71C0_de; US rev1 ROM 0xcbca0-0xcbcaf.
- */
-const char D_800C5F10_de[15] = "systembootdone";
+const unsigned char D_auto_src_rw_text_802A71C0_CBCA0_us_rev1[15] = {
+    0x73, 0x79, 0x73, 0x74, 0x65, 0x6D, 0x62, 0x6F, 0x6F, 0x74, 0x64, 0x6F, 0x6E, 0x65, 0x00,
+};
