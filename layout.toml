@@ -3146,6 +3146,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800CE6D8"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800CE410_unclaimed_CF230_unclaimed_CF29C_unclaimed_CF2D8", "src/rw_hud_squad_motion_script_us_rev1.c", "rodata/unresolved/800CE410_unclaimed_CF230_unclaimed_CF29C_unclaimed_CF2D8_unclaimed_CF314"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800CE714"
 segment = "span_C76B0"
 members = ["rodata/unresolved/800CE410_unclaimed_CF230_unclaimed_CF29C_unclaimed_CF2D8_unclaimed_CF314"]
@@ -45166,6 +45174,17 @@ path = "src/rw_hud_count_motion_script_us_rev1.c"
 kind = "data"
 group = "data_800CE69C"
 members = ["src/rw_hud_count_motion_script_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rw_hud_squad_motion_script_us_rev1.c"
+kind = "data"
+group = "data_800CE6D8"
+members = ["src/rw_hud_squad_motion_script_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
