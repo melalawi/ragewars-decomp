@@ -44415,6 +44415,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/rw_video_configurations_E3610_us_rev1.c"
+kind = "data"
+group = "data_800E29D4"
+members = ["src/rw_video_configurations_E3610_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/sn64_intelligence_type_records.c"
 kind = "data"
 group = "data_800F8202"
