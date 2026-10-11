@@ -338,7 +338,7 @@ segments:
       - [0x137D0, c, "func_80212BD0_de"]
       - [0x13804, c, "func_80212C04_de"]
       - [0x13890, c, "func_80212C90_de"]
-      - [0x13958, data, "rodata/unresolved/80212D58"]
+      - [0x13958, .data, "rodata/unresolved/80212D58"]
       - [0x13F40, c, "func_80213340_de"]
       - [0x14100, c, "func_80213500_de"]
       - [0x144E8, data, "rodata/unresolved/802138E8"]

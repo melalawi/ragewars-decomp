@@ -2178,6 +2178,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_80212D58"
+segment = "span_1000"
+members = ["rodata/unresolved/80212D58"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_802BBB98"
 segment = "span_1000"
 members = ["rodata/unresolved/802BBB98"]
@@ -37614,6 +37622,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/rodata.unresolved.80212D58.c"
+kind = "data"
+group = "data_80212D58"
+members = ["rodata/unresolved/80212D58"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/rodata.unresolved.802BBB98.c"
 kind = "data"
 group = "data_802BBB98"
@@ -38501,11 +38520,6 @@ scores = {de = 0.9999999999999999, eu = 1.0, eu-x = 1.0, us = 1.0, us-rev1 = 1.0
 member = "rodata/unresolved/800CA1EC"
 path = "src/fuzzy/rodata.unresolved.800CA1EC.c"
 scores = {us = 0.975}
-
-[[fuzzy]]
-member = "rodata/unresolved/80212D58"
-path = "src/fuzzy/rodata.unresolved.80212D58.c"
-scores = {us = 0.9947089947089947}
 
 [[fuzzy]]
 member = "rodata/unresolved/802B4658"
