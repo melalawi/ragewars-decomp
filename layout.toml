@@ -2354,6 +2354,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800FE5A0"
+segment = "span_C24F0"
+members = ["rodata/unresolved/800FE5A0", "rodata/writable/800FE5A8", "rodata/unresolved/800FE7E0"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800FE7E0"
 segment = "span_C24F0"
 members = ["rodata/unresolved/800FE7E0"]
@@ -39077,6 +39085,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/rodata.writable.800FE5A8.c"
+kind = "data"
+group = "data_800FE5A0"
+members = ["rodata/writable/800FE5A8"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/rodata.writable.800FE9F0.c"
 kind = "data"
 group = "code_8021CD70"
@@ -39571,11 +39590,6 @@ scores = {de = 0.9534883720930233, eu = 0.9534883720930233, eu-x = 0.95348837209
 member = "rodata/writable/800E32A4"
 path = "src/fuzzy/rodata.writable.800DDF04.c"
 scores = {de = 0.8695652173913043, eu = 0.8695652173913043, eu-x = 0.8695652173913043, us = 0.8695652173913043, us-rev1 = 0.8695652173913043}
-
-[[fuzzy]]
-member = "rodata/writable/800FE5A8"
-path = "src/fuzzy/rodata.writable.800FE5A8.c"
-scores = {us = 0.9859154929577465}
 
 [[fuzzy]]
 member = "src/rw_menu_event_handlers_E6554_us_rev1.c"
