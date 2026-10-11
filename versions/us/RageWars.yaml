@@ -5273,7 +5273,7 @@ segments:
       - [0x1A2EC0, c, "func_8043ED48_de"]
       - [0x1A2EC8, c, "func_8043ED50_de"]
       - [0x1A2EF0, c, "func_8043ED78_de"]
-      - [0x1A2F1C, data, "rodata/unresolved/8043EF1C"]
+      - [0x1A2F1C, .data, "rodata/unresolved/8043EF1C"]
       - [0x1A2F4C, c, "func_8043EDDC_de"]
       - [0x1A2FCC, .data, "rodata/unresolved/8043EFCC"]
       - [0x1A3290, asm, "func_8043F120_de"]
