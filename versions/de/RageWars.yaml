@@ -291,7 +291,7 @@ segments:
       - [0xF9CC, c, "func_8020EDCC_de"]
       - [0xFA50, c, "func_8020EE50_de"]
       - [0xFAA4, c, "func_8020EEA4_de"]
-      - [0xFB54, data, "rodata/unresolved/8020EF54"]
+      - [0xFB54, .data, "rodata/unresolved/8020EF54"]
       - [0xFD50, c, "func_8020F150_de"]
       - [0xFEA8, c, "func_8020F2A8_de"]
       - [0xFF88, c, "func_8020F388_de"]
