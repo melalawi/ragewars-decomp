@@ -4286,6 +4286,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/data.unresolved.800D28B0.c"
+kind = "data"
+group = "data_800D2850"
+members = ["data/unresolved/800D28B0"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/data.unresolved.800D302C.c"
 kind = "data"
 group = "data_800D302B"
