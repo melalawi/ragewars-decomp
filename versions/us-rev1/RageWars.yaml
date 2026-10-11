@@ -5285,7 +5285,7 @@ segments:
       - [0xD9FA4, data, "src/ragewars_decoder_sign_bits_us_rev1.c"]
       - [0xD9FC6, data, "rodata/unresolved/800D9370_unclaimed_D9FC6"]
       - [0xD9FC8, data, "src/ragewars_decoder_band_ends_us_rev1.c"]
-      - [0xD9FE8, data, "src/ragewars_decoder_quantizer_steps_us_rev1.c"]
+      - [0xD9FE8, .data, "src/ragewars_decoder_quantizer_steps_us_rev1.c"]
       - [0xDA0E8, data, "rodata/writable/800D94E8"]
       - [0xDA100, .data, "src/resident_huffman_dictionaries.c"]
       - [0xDA190, data, "rodata/writable/800D94E8_unclaimed_DA190"]
