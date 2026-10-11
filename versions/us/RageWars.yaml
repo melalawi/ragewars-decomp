@@ -2343,7 +2343,7 @@ segments:
       - [0xB6D8C, c, "func_802B625C_de"]
       - [0xB6E30, c, "func_802B6300_de"]
       - [0x0B6EA8, data, "func_802B6300_de_padding_B6EA8"]
-      - [0xB6EAC, data, "rodata/unresolved/802B62AC"]
+      - [0xB6EAC, .data, "rodata/unresolved/802B62AC"]
       - [0xB6FB0, c, "func_802B6480_de"]
       - [0xB6FE4, asm, "func_802B63E4_us"]
       - [0xB6FF0, c, "func_802B64C0_de"]
