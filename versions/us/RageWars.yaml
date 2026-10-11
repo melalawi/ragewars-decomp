@@ -1860,7 +1860,7 @@ segments:
       - [0x956D8, asm, "func_80294AD8_us"]
       - [0x956E0, c, "func_80294B9C_de"]
       - [0x95794, c, "func_80294C50_de"]
-      - [0x957C8, data, "rodata/unresolved/80294BC8"]
+      - [0x957C8, .data, "rodata/unresolved/80294BC8"]
       - [0x95BF4, asm, "func_802950B4_de"]
       - [0x969B8, c, "func_80295E78_de"]
       - [0x969EC, asm, "func_80295EAC_de"]
