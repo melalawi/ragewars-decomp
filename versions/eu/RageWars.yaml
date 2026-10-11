@@ -3860,7 +3860,7 @@ segments:
       - [0xCF6FC, data, "rodata/unresolved/800CDEB4"]
       - [0xE16E0, rodata, "src/ragewars_menu_cinema_fade_label_us_rev1.c"]
       - [0xE1703, data, "rodata/unresolved/800E0B03"]
-      - [0xE1704, data, "data/unresolved/800E0B04"]
+      - [0xE1704, .data, "data/unresolved/800E0B04"]
       - [0xE51F0, .data, "rodata/writable/800E45F0"]
       - [0xE52F0, .data, "rodata/unresolved/800E46F0"]
       - [0xE55FC, data, "rodata/writable/800D437C"]
