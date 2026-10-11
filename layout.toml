@@ -2706,6 +2706,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800E63C0"
+segment = "span_E1720"
+members = ["src/ragewars_spinner_states_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800E6490"
 segment = "span_E1720"
 members = ["rodata/unresolved/psyq_name_suffix_os", "src/ragewars_debug_stream_us_rev1.c"]
@@ -37666,6 +37674,17 @@ path = "src/ragewars_resident_strings_CCCEC_us_rev1.c"
 kind = "data"
 group = "data_800CC0EB"
 members = ["src/ragewars_resident_strings_CCCEC_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_spinner_states_us_rev1.c"
+kind = "data"
+group = "data_800E63C0"
+members = ["src/ragewars_spinner_states_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
