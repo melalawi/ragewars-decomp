@@ -2162,6 +2162,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D2F94"
+segment = "span_C76B0"
+members = ["src/ragewars_font_character_map_primary_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D302B"
 segment = "span_C25C0"
 members = ["rodata/unresolved/800D302B", "data/unresolved/800D302C"]
@@ -37238,6 +37246,17 @@ path = "src/ragewars_effect_id_scales_us_rev1.c"
 kind = "data"
 group = "data_800D0A2C"
 members = ["src/ragewars_effect_id_scales_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_font_character_map_primary_us_rev1.c"
+kind = "data"
+group = "data_800D2F94"
+members = ["src/ragewars_font_character_map_primary_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
