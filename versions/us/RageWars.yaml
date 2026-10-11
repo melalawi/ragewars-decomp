@@ -5015,7 +5015,7 @@ segments:
       - [0x192B68, c, "func_8042E988_de"]
       - [0x192F50, asm, "func_8042ED70_de"]
       - [0x193014, c, "func_8042EE34_de"]
-      - [0x19312C, data, "rodata/unresolved/8042F12C"]
+      - [0x19312C, .data, "rodata/unresolved/8042F12C"]
       - [0x193988, c, "func_8042F7A8_de"]
       - [0x193AFC, c, "func_8042F91C_de"]
       - [0x193D28, c, "func_8042FB48_de"]
