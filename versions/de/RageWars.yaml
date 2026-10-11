@@ -312,7 +312,7 @@ segments:
       - [0x10C90, c, "func_80210090_de"]
       - [0x10CB8, c, "func_802100B8_de"]
       - [0x10CE0, c, "func_802100E0_de"]
-      - [0x10D78, data, "rodata/unresolved/80210178"]
+      - [0x10D78, .data, "rodata/unresolved/80210178"]
       - [0x10F5C, asm, "func_8021035C_de"]
       - [0x112DC, asm, "func_802106DC_de"]
       - [0x112E0, c, "func_802106E0_de"]
