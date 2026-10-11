@@ -4050,7 +4050,7 @@ segments:
       - [0xDD448, rodata, "rodata/func_8042F91C_de/800E1BC8"]
       - [0xDD45C, data, "rodata/unresolved/800DC85C"]
       - [0xDD460, rodata, "rodata/func_8042FB48_de/800E1BE0"]
-      - [0xDD480, rodata, "rodata/unresolved/800DC880"]
+      - [0xDD480, .rodata, "rodata/unresolved/800DC880"]
       - [0xDD540, rodata, "rodata/func_804306D8_de/800E1CC0"]
       - [0xDD678, rodata, "src/rw_text_804322AC_E29F8_us_rev1.c"]
       - [0xDD67F, data, "rodata/unresolved/800DCA7F"]
