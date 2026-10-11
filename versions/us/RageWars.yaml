@@ -130,7 +130,7 @@ segments:
       - [0x53BC, c, "func_802047BC_de"]
       - [0x53D8, c, "func_802047D8_de"]
       - [0x5408, c, "func_80204808_de"]
-      - [0x5468, data, "rodata/unresolved/80204868"]
+      - [0x5468, .data, "rodata/unresolved/80204868"]
       - [0x5668, c, "func_80204A68_de"]
       - [0x5834, c, "func_80204C34_de"]
       - [0x5868, c, "func_80204C68_de"]
