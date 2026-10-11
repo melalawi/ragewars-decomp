@@ -5777,7 +5777,7 @@ segments:
       - [0xe36aa, data, "src/rw_video_vi_mode_r2_f7_E36AA_us_rev1.c"]
       - [0xe36ac, data, "rodata/unresolved/800E28F0_unclaimed_E34F8_unclaimed_E3510_unclaimed_E352C_unclaimed_E3548_unclaimed_E359C_unclaimed_E35B8_unclaimed_E35D4_unclaimed_E364C_unclaimed_E3650_unclaimed_E3658_unclaimed_E3664_unclaimed_E366C_unclaimed_E3670_unclaimed_E3678_unclaimed_E3684_unclaimed_E368C_unclaimed_E3690_unclaimed_E3698_unclaimed_E36A4_unclaimed_E36AC"]
       - [0xE36B0, data, "rodata/writable/800E2AB0"]
-      - [0xE36D0, data, "src/ragewars_event_handlers_E36D0_us_rev1.c"]
+      - [0xE36D0, .data, "src/ragewars_event_handlers_E36D0_us_rev1.c"]
       - [0xE3718, data, "rodata/unresolved/800E2AD0_unclaimed_E3718"]
       - [0xE3720, .data, "src/ragewars_pixel_formats_us_rev1.c"]
       - [0xE3E70, data, "rodata/unresolved/800E2AD0_unclaimed_E3718_unclaimed_E3E70"]
