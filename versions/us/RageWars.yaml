@@ -4686,7 +4686,7 @@ segments:
       - [0x17E01C, c, "func_80419F9C_de"]
       - [0x17E0AC, c, "func_8041A02C_de"]
       - [0x17E0BC, c, "func_8041A03C_de"]
-      - [0x17E0DC, data, "rodata/unresolved/8041A0DC"]
+      - [0x17E0DC, .data, "rodata/unresolved/8041A0DC"]
       - [0x17E300, c, "func_8041A280_de"]
       - [0x17E4B0, c, "func_8041A430_de"]
       - [0x17E4F0, c, "func_8041A470_de"]
