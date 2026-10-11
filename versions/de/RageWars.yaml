@@ -4331,7 +4331,7 @@ segments:
       - [0x100BA0, data, "rodata/writable/800FFFA0"]
       - [0x100BD0, .data, "rodata/unresolved/800FFFD0"]
       - [0x100EE0, data, "rodata/writable/801002E0"]
-      - [0x100EEC, data, "rodata/unresolved/801002EC"]
+      - [0x100EEC, .data, "rodata/unresolved/801002EC"]
       - [0x100FE0, data, "rodata/writable/801003E0"]
       - [0x100FE4, data, "rodata/unresolved/801003E4"]
   - name: "retained_101000"
