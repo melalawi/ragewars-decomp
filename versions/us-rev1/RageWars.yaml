@@ -6033,7 +6033,7 @@ segments:
       - [0xe5128, data, "src/rw_menu_event_match_E5128_us_rev1.c"]
       - [0xe5130, data, "rodata/unresolved/800E451C_unclaimed_E5128_unclaimed_E5130"]
       - [0xe5134, data, "src/rw_menu_event_handlers_E5134_us_rev1.c"]
-      - [0xe5164, data, "src/rw_menu_event_handlers_E5164_us_rev1.c"]
+      - [0xe5164, .data, "src/rw_menu_event_handlers_E5164_us_rev1.c"]
       - [0xe51ac, .data, "src/rw_menu_event_handlers_E51AC_us_rev1.c"]
       - [0xE5200, data, "rodata/writable/800E4600"]
       - [0xe5204, data, "src/rw_menu_event_handlers_E5204_us_rev1.c"]
