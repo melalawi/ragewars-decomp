@@ -2930,6 +2930,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800E5B44"
+segment = "span_E1720"
+members = ["src/rw_loadout_weapons_items_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800E5CF8"
 segment = "span_E1720"
 members = ["rodata/unresolved/800E5CAC_unclaimed_E68F8"]
@@ -41425,6 +41433,17 @@ path = "src/rodata.writable.800FF1B0.c"
 kind = "data"
 group = "code_8022F3E8"
 members = ["rodata/writable/800FF1B0"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rw_loadout_weapons_items_us_rev1.c"
+kind = "data"
+group = "data_800E5B44"
+members = ["src/rw_loadout_weapons_items_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
