@@ -5000,7 +5000,7 @@ segments:
       - [0x191AA4, c, "func_8042D8C4_de"]
       - [0x191AE8, c, "func_8042D908_de"]
       - [0x191B38, c, "func_8042D958_de"]
-      - [0x191BC8, data, "rodata/unresolved/8042DBC8"]
+      - [0x191BC8, .data, "rodata/unresolved/8042DBC8"]
       - [0x191CA8, c, "func_8042DAC8_de"]
       - [0x191CD8, c, "func_8042DAF8_de"]
       - [0x191DE4, c, "func_8042DC04_de"]
