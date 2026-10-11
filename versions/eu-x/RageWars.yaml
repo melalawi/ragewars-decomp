@@ -4192,7 +4192,7 @@ segments:
       - [0xEA808, rodata, "rodata/func_8043F294_de/800E23F8"]
       - [0xEA868, rodata, "src/rw_pool_8043F52C_E3058_us_rev1.c"]
       - [0xEA86C, data, "rodata/unresolved/800E9C6C"]
-      - [0xEA870, rodata, "rodata/func_8043F52C_de/800E9C70"]
+      - [0xEA870, .rodata, "rodata/func_8043F52C_de/800E9C70"]
       - [0xEA8A0, rodata, "rodata/func_8043FE3C_de/800E2490"]
       - [0xEA8BC, rodata, "src/rw_pool_804402DC_E30AC_us_rev1.c"]
       - [0xEA8C0, rodata, "src/rw_pool_80440838_E30B0_us_rev1.c"]
