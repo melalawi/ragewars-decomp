@@ -298,7 +298,7 @@ segments:
       - [0x1019C, c, "func_8020F59C_de"]
       - [0x101A4, c, "func_8020F5A4_de"]
       - [0x10214, c, "func_8020F614_de"]
-      - [0x102B8, data, "rodata/unresolved/8020F6B8"]
+      - [0x102B8, .data, "rodata/unresolved/8020F6B8"]
       - [0x104F0, c, "func_8020F8F0_de"]
       - [0x10610, asm, "func_8020FA10_de"]
       - [0x109B0, c, "func_8020FDB0_de"]
