@@ -6050,7 +6050,7 @@ segments:
       - [0xE5AF0, data, "rodata/writable/800E4EF0"]
       - [0xe5af4, data, "src/rw_menu_event_handlers_E5AF4_us_rev1.c"]
       - [0xE5B60, data, "rodata/writable/800E4F60"]
-      - [0xE5B64, data, "src/ragewars_catalogue_arena_records_us_rev1.c"]
+      - [0xE5B64, .data, "src/ragewars_catalogue_arena_records_us_rev1.c"]
       - [0xE5DE4, data, "src/ragewars_cup_category_0_arena_controls_us_rev1.c"]
       - [0xE5DF8, data, "src/ragewars_cup_category_1_arena_controls_us_rev1.c"]
       - [0xE5E14, data, "src/ragewars_cup_category_3_arena_controls_us_rev1.c"]
