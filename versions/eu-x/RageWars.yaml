@@ -3939,7 +3939,7 @@ segments:
       - [0xE906C, data, "rodata/unresolved/800E846C"]
       - [0xE9070, rodata, "src/rw_constants_80402BA0_E1860_us_rev1.c"]
       - [0xE907C, data, "rodata/unresolved/800E847C"]
-      - [0xE9080, rodata, "src/rw_constants_80402BA0_E1870_us_rev1.c"]
+      - [0xE9080, .rodata, "src/rw_constants_80402BA0_E1870_us_rev1.c"]
       - [0xE90B0, rodata, "rodata/func_80403458_de/800E0CA0"]
       - [0xE90B8, rodata, "src/rw_pool_80403658_E18A8_us_rev1.c"]
       - [0xE90BC, rodata, "src/rw_pool_8040390C_E18AC_us_rev1.c"]
