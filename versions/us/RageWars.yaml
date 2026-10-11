@@ -4166,7 +4166,7 @@ segments:
       - [0xDE13C, data, "src/rw_video_previous_mode_E34DC_us_rev1.c"]
       - [0xDE150, data, "src/rw_video_mode_counts_E34F0_us_rev1.c"]
       - [0xDE310, data, "rodata/writable/800E2AB0"]
-      - [0xDE330, data, "rodata/unresolved/800DD730"]
+      - [0xDE330, .data, "rodata/unresolved/800DD730"]
       - [0x0DE380, .data, "src/ragewars_pixel_formats_us_rev1.c"]
       - [0x0DEAD0, data, "rodata/unresolved/800DD730_0DEAD0"]
       - [0xDEAE0, data, "rodata/writable/800E3280"]
