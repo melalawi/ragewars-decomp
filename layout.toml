@@ -3410,6 +3410,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800E285C"
+segment = "span_E1720"
+members = ["src/rw_controller_pak_filename_alphabet_us_rev1.c", "rodata/unresolved/800E285C_unclaimed_E349E"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800E2AD0"
 segment = "span_E1720"
 members = ["src/ragewars_event_handlers_E36D0_us_rev1.c", "rodata/unresolved/800E2AD0_unclaimed_E3718"]
@@ -43222,6 +43230,18 @@ kind = "data"
 group = "data_800CCB28"
 members = ["src/rw_constants_802B7130_CD728_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rw_controller_pak_filename_alphabet_us_rev1.c"
+kind = "data"
+group = "data_800E285C"
+members = ["src/rw_controller_pak_filename_alphabet_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+withheld = ["de", "eu", "eu-x", "us"]
 
 [unit.options]
 add = []

@@ -4158,7 +4158,7 @@ segments:
       - [0xDE0A8, rodata, "src/rw_constants_8040170C_E3448_us_rev1.c"]
       - [0xDE0AC, data, "rodata/unresolved/800DD4AC"]
       - [0xDE0B0, data, "rodata/writable/800E2850"]
-      - [0xDE0BC, data, "src/rw_controller_pak_filename_alphabet_us_rev1.c"]
+      - [0xDE0BC, .data, "src/rw_controller_pak_filename_alphabet_us_rev1.c"]
       - [0xDE100, data, "rodata/writable/800E28A0"]
       - [0xDE104, data, "rodata/unresolved/800E28A4"]
       - [0xDE110, data, "rodata/writable/800E28B0"]

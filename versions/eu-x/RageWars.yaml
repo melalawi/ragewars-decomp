@@ -4243,7 +4243,7 @@ segments:
       - [0xEAC28, rodata, "src/rw_constants_8040170C_E3448_us_rev1.c"]
       - [0xEAC2C, data, "rodata/unresolved/800EA02C"]
       - [0xEAC30, data, "rodata/writable/800E2850"]
-      - [0xEAC3C, data, "src/rw_controller_pak_filename_alphabet_us_rev1.c"]
+      - [0xEAC3C, .data, "src/rw_controller_pak_filename_alphabet_us_rev1.c"]
       - [0xEAC80, data, "rodata/writable/800E28A0"]
       - [0xEAC84, data, "rodata/unresolved/800EA084"]
       - [0xEAC90, data, "rodata/writable/800E28B0"]
