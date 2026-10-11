@@ -3716,7 +3716,7 @@ segments:
       - [0xCC898, data, "src/ragewars_credits_label_producer_us_rev1.c"]
       - [0xCC8A1, data, "rodata/unresolved/800CB550_unclaimed_CC898_unclaimed_CC8A1"]
       - [0xCC8A4, .data, "src/ragewars_resident_strings_CC8A4_us_rev1.c"]
-      - [0xCCCC0, data, "src/ragewars_credits_label_testers_us_rev1.c"]
+      - [0xCCCC0, .data, "src/ragewars_credits_label_testers_us_rev1.c"]
       - [0xCCCEB, data, "rodata/unresolved/800CB550_unclaimed_CCCC0_unclaimed_CCCEB"]
       - [0xCCCEC, .data, "src/ragewars_resident_strings_CCCEC_us_rev1.c"]
       - [0xCD108, data, "src/ragewars_credits_label_team_us_rev1.c"]
