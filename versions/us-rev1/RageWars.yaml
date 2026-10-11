@@ -5102,7 +5102,7 @@ segments:
       - [0xD1E68, data, "src/ragewars_particle_draw_depth_us_rev1.c"]
       - [0xD1EF0, data, "src/ragewars_particle_draw_decal_us_rev1.c"]
       - [0xD1F78, data, "rodata/unresolved/800D0F00_unclaimed_D1BA0_unclaimed_D1E68_unclaimed_D1F78"]
-      - [0xD1F80, data, "src/ragewars_effect_callback_flags_us_rev1.c"]
+      - [0xD1F80, .data, "src/ragewars_effect_callback_flags_us_rev1.c"]
       - [0xD20A8, data, "rodata/unresolved/800D0F00_unclaimed_D1BA0_unclaimed_D1E68_unclaimed_D1F78_unclaimed_D20A8"]
       - [0xD20B0, .data, "src/ragewars_particle_intensity_texture_us_rev1.c"]
       - [0xD21B0, .data, "rodata/writable/800D15B0"]
