@@ -3805,7 +3805,7 @@ segments:
       - [0xCB354, rodata, "rodata/shared/800CE3E4"]
       - [0xCB358, data, "rodata/unresolved/800CE3E8"]
       - [0xCB378, data, "rodata/writable/800CE408"]
-      - [0xCB380, data, "rodata/unresolved/800CA780"]
+      - [0xCB380, .data, "rodata/unresolved/800CA780"]
       - [0xCB6C8, rodata, "src/rw_pool_80225F44_CF358_us_rev1.c"]
       - [0xCB6CC, .data, "rodata/unresolved/800CAACC"]
       - [0xCC124, rodata, "src/rw_text_8021D408_CFDB4_us_rev1.c"]
