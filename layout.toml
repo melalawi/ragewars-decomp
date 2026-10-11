@@ -2098,6 +2098,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D274C"
+segment = "span_C76B0"
+members = ["src/ragewars_cone_attenuation_us_rev1.c", "rodata/unresolved/800D2648_unclaimed_D3450"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D2CA8"
 segment = "span_C76B0"
 members = ["rodata/writable/800D2C90_unclaimed_D38A8", "rodata/unresolved/800D2E40"]
@@ -37004,6 +37012,17 @@ path = "src/ragewars_catalogue_arena_records_us_rev1.c"
 kind = "data"
 group = "data_800E4F64"
 members = ["src/ragewars_catalogue_arena_records_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_cone_attenuation_us_rev1.c"
+kind = "data"
+group = "data_800D274C"
+members = ["src/ragewars_cone_attenuation_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
