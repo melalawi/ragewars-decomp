@@ -5097,7 +5097,7 @@ segments:
       - [0xD1BA0, data, "src/ragewars_texture_rgba16_mip_us_rev1.c"]
       - [0xD1C20, data, "src/ragewars_texture_rgba16_mip_clamp_us_rev1.c"]
       - [0xD1CA0, .data, "src/ragewars_texture_rgba16_detail_us_rev1.c"]
-      - [0xD1D38, data, "src/ragewars_texture_rgba16_sharpen_us_rev1.c"]
+      - [0xD1D38, .data, "src/ragewars_texture_rgba16_sharpen_us_rev1.c"]
       - [0xD1DD0, .data, "src/ragewars_texture_intensity_mip_us_rev1.c"]
       - [0xD1E68, data, "src/ragewars_particle_draw_depth_us_rev1.c"]
       - [0xD1EF0, data, "src/ragewars_particle_draw_decal_us_rev1.c"]
