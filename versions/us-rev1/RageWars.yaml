@@ -6054,7 +6054,7 @@ segments:
       - [0xE5DE4, data, "src/ragewars_cup_category_0_arena_controls_us_rev1.c"]
       - [0xE5DF8, data, "src/ragewars_cup_category_1_arena_controls_us_rev1.c"]
       - [0xE5E14, data, "src/ragewars_cup_category_3_arena_controls_us_rev1.c"]
-      - [0xE5E40, data, "src/ragewars_cup_category_2_arena_controls_us_rev1.c"]
+      - [0xE5E40, .data, "src/ragewars_cup_category_2_arena_controls_us_rev1.c"]
       - [0xe5e84, .data, "src/rw_menu_event_handlers_E5E84_us_rev1.c"]
       - [0xe5f20, .data, "rodata/writable/800E4F60_unclaimed_E5DE4_unclaimed_E5E84_unclaimed_E5F20"]
       - [0xE5FC0, data, "rodata/writable/800E53C0"]

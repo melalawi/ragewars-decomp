@@ -3554,6 +3554,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800E5240"
+segment = "span_E1720"
+members = ["src/ragewars_cup_category_2_arena_controls_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800E5284"
 segment = "span_E1720"
 members = ["src/rw_menu_event_handlers_E5E84_us_rev1.c"]
@@ -38517,6 +38525,17 @@ path = "src/ragewars_credits_lines_us_rev1.c"
 kind = "data"
 group = "data_800D6C08"
 members = ["src/ragewars_credits_lines_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_cup_category_2_arena_controls_us_rev1.c"
+kind = "data"
+group = "data_800E5240"
+members = ["src/ragewars_cup_category_2_arena_controls_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
