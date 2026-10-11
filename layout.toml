@@ -4162,6 +4162,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800E409C"
+segment = "span_E1720"
+members = ["src/ragewars_character_preview_positions_14_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800E41BC"
 segment = "span_E1720"
 members = ["rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4DAC_unclaimed_E4DBC", "src/rw_menu_player_scissor_rects_us_rev1.c", "rodata/unresolved/800E3A7F_remaining_E4680_unclaimed_E4DAC_unclaimed_E4DBC_unclaimed_E4E00"]
@@ -39392,6 +39400,17 @@ path = "src/ragewars_character_preview_positions_13_us_rev1.c"
 kind = "data"
 group = "data_800E402C"
 members = ["src/ragewars_character_preview_positions_13_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_character_preview_positions_14_us_rev1.c"
+kind = "data"
+group = "data_800E409C"
+members = ["src/ragewars_character_preview_positions_14_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
