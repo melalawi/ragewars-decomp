@@ -832,7 +832,7 @@ segments:
       - [0x4004C, c, "func_8023F43C_de"]
       - [0x040354, data, "func_8023F644_de_padding_40354"]
       - [0x40358, asm, "func_8023F758_eu"]
-      - [0x40360, data, "retained_40360"]
+      - [0x40360, .data, "retained_40360"]
       - [0x40928, asm, "func_8023FD18_de"]
       - [0x40E70, asm, "func_80240260_de"]
       - [0x41148, c, "func_80240538_de"]
