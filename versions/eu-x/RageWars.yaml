@@ -3835,7 +3835,7 @@ segments:
       - [0xCD62C, data, "rodata/writable/800D06BC"]
       - [0xCD630, .data, "rodata/unresolved/800CCA30"]
       - [0xCD880, .data, "rodata/writable/800CCC80"]
-      - [0xCD8D4, data, "src/ragewars_audio_effect_D1564_us_rev1.c"]
+      - [0xCD8D4, .data, "src/ragewars_audio_effect_D1564_us_rev1.c"]
       - [0xCDA98, rodata, "src/rw_pool_8025AA2C_D1728_us_rev1.c"]
       - [0xCDA9C, .data, "src/ragewars_interpolated_ratio_curve_us_rev1.c"]
       - [0xCDC80, data, "rodata/writable/800D0D10"]

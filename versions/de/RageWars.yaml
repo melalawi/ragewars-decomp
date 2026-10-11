@@ -3811,7 +3811,7 @@ segments:
       - [0xCC07C, data, "rodata/writable/800D06BC"]
       - [0xCC080, .data, "rodata/unresolved/800CB480"]
       - [0xCC2D0, .data, "rodata/writable/800CB6D0"]
-      - [0xCC324, data, "src/ragewars_audio_effect_D1564_us_rev1.c"]
+      - [0xCC324, .data, "src/ragewars_audio_effect_D1564_us_rev1.c"]
       - [0xCC4E8, rodata, "src/rw_pool_8025AA2C_D1728_us_rev1.c"]
       - [0xCC4EC, .data, "src/ragewars_interpolated_ratio_curve_us_rev1.c"]
       - [0xCC6D0, data, "rodata/writable/800D0D10"]
