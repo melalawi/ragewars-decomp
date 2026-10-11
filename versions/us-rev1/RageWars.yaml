@@ -5181,7 +5181,7 @@ segments:
       - [0xD5428, .data, "src/ragewars_menu_strings_D5428_us_rev1.c"]
       - [0xD5488, data, "src/ragewars_menu_abbreviations_us_rev1.c"]
       - [0xD5490, .data, "src/ragewars_menu_strings_D5490_us_rev1.c"]
-      - [0xD5DA0, data, "rodata/writable/800D3640_unclaimed_D5DA0"]
+      - [0xD5DA0, .data, "rodata/writable/800D3640_unclaimed_D5DA0"]
       - [0xD5DF8, .data, "src/ragewars_menu_strings_D5DF8_us_rev1.c"]
       - [0xD5ED8, data, "rodata/writable/800D3640_unclaimed_D5ED8"]
       - [0xD5EDC, data, "src/ragewars_menu_strings_D5EDC_us_rev1.c"]
