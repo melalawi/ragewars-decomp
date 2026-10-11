@@ -1954,6 +1954,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800CCF48"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800CCF48", "src/ragewars_u64_combined_bitwidth_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800CCFB0"
 segment = "span_C2860"
 members = ["rodata/unresolved/800CCFB0"]
@@ -37318,6 +37326,17 @@ path = "src/ragewars_texture_intensity_mip_us_rev1.c"
 kind = "data"
 group = "data_800D11D0"
 members = ["src/ragewars_texture_intensity_mip_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_u64_combined_bitwidth_us_rev1.c"
+kind = "data"
+group = "data_800CCF48"
+members = ["src/ragewars_u64_combined_bitwidth_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
