@@ -266,7 +266,7 @@ segments:
       - [0xDF18, c, "func_8020D318_de"]
       - [0xDF28, c, "func_8020D328_de"]
       - [0xDF5C, c, "func_8020D35C_de"]
-      - [0xDF64, data, "rodata/unresolved/8020D364"]
+      - [0xDF64, .data, "rodata/unresolved/8020D364"]
       - [0xE0AC, c, "func_8020D4AC_de"]
       - [0xE2E4, asm, "func_8020D6E4_de"]
       - [0xE5C0, c, "func_8020D9C0_de"]
