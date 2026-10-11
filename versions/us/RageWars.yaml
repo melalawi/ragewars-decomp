@@ -1786,7 +1786,7 @@ segments:
       - [0x91580, asm, "func_80290980_us"]
       - [0x91588, asm, "func_80290988_us"]
       - [0x91590, asm, "func_80290990_us"]
-      - [0x91598, data, "rodata/unresolved/80290998"]
+      - [0x91598, .data, "rodata/unresolved/80290998"]
       - [0x9197C, c, "func_80290E6C_de"]
       - [0x91B84, asm, "func_80291074_de"]
       - [0x91D18, asm, "func_80291208_de"]
