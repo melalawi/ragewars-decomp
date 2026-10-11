@@ -5826,7 +5826,7 @@ segments:
 
       - [0xE46CC, data, "src/ragewars_character_preview_scale_distance_01_us_rev1.c"]
 
-      - [0xE46EC, data, "src/ragewars_character_preview_positions_01_us_rev1.c"]
+      - [0xE46EC, .data, "src/ragewars_character_preview_positions_01_us_rev1.c"]
 
       - [0xE471C, data, "src/ragewars_character_preview_lights_01_us_rev1.c"]
 
