@@ -3106,6 +3106,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D5380"
+segment = "span_C76B0"
+members = ["rodata/writable/800D3640_unclaimed_D5F80"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D53C0"
 segment = "span_C76B0"
 members = ["src/ragewars_menu_strings_D5FC0_us_rev1.c"]
@@ -43267,6 +43275,17 @@ path = "src/rodata.writable.800D3640_unclaimed_D5EFC.c"
 kind = "data"
 group = "data_800D52FC"
 members = ["rodata/writable/800D3640_unclaimed_D5EFC"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/rodata.writable.800D3640_unclaimed_D5F80.c"
+kind = "data"
+group = "data_800D5380"
+members = ["rodata/writable/800D3640_unclaimed_D5F80"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
