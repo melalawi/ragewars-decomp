@@ -2146,6 +2146,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800CDA3C"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800CDA3C", "src/ragewars_actor_mode_dispatch_us_rev1.c", "rodata/unresolved/800CDA3C_unclaimed_CE6E0"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800CDBF0"
 segment = "span_C25C0"
 members = ["rodata/unresolved/800CDBF0"]
@@ -37363,6 +37371,17 @@ path = "src/huffman_single_zero_runs.c"
 kind = "data"
 group = "data_800D95E4"
 members = ["src/huffman_single_zero_runs.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_actor_mode_dispatch_us_rev1.c"
+kind = "data"
+group = "data_800CDA3C"
+members = ["src/ragewars_actor_mode_dispatch_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]

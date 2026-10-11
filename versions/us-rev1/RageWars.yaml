@@ -3965,7 +3965,7 @@ segments:
       - [0xce5b4, data, "rodata/unresolved/800CD4C4_unclaimed_CE0F0_unclaimed_CE104_unclaimed_CE10C_unclaimed_CE124_unclaimed_CE130_unclaimed_CE144_unclaimed_CE148_unclaimed_CE1F8_unclaimed_CE210_unclaimed_CE21C_unclaimed_CE230_unclaimed_CE234_unclaimed_CE29C_unclaimed_CE2B0_unclaimed_CE2B4_unclaimed_CE2D0_unclaimed_CE2D4_unclaimed_CE2F0_unclaimed_CE2F4_unclaimed_CE3C8_unclaimed_CE3DC_unclaimed_CE3E0_unclaimed_CE3FC_unclaimed_CE400_unclaimed_CE46C_unclaimed_CE480_unclaimed_CE484_unclaimed_CE51C_unclaimed_CE530_unclaimed_CE53C_unclaimed_CE550_unclaimed_CE55C_unclaimed_CE570_unclaimed_CE57C_unclaimed_CE590_unclaimed_CE59C_unclaimed_CE5B0_unclaimed_CE5B4"]
       - [0xCE630, rodata, "rodata/func_80209DAC_de/800CDA30"]
       - [0xCE63C, data, "rodata/unresolved/800CDA3C"]
-      - [0xCE640, data, "src/ragewars_actor_mode_dispatch_us_rev1.c"]
+      - [0xCE640, .data, "src/ragewars_actor_mode_dispatch_us_rev1.c"]
       - [0xCE6E0, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0"]
       - [0xCE6F0, data, "src/ragewars_actor_radial_directions_us_rev1.c"]
       - [0xCE750, data, "rodata/unresolved/800CDA3C_unclaimed_CE6E0_unclaimed_CE750"]
