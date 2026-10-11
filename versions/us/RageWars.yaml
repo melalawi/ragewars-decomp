@@ -3644,7 +3644,7 @@ segments:
       - [0xC8120, rodata, "rodata/shared/800CC850"]
       - [0xC8123, data, "rodata/unresolved/800C7523"]
       - [0xC8124, rodata, "src/ragewars_resident_strings_CD454_us_rev1.c"]
-      - [0xC8130, data, "rodata/unresolved/800C7530"]
+      - [0xC8130, .data, "rodata/unresolved/800C7530"]
       - [0xC8178, rodata, "rodata/func_802B4C7C_de/800CC8A8"]
       - [0xC8228, rodata, "src/rw_pool_802B5288_CD558_us_rev1.c"]
       - [0xC8230, rodata, "src/rw_pool_802B5300_CD560_us_rev1.c"]
