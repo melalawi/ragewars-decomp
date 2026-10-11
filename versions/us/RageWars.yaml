@@ -4264,7 +4264,7 @@ segments:
       - [0xFEBD0, data, "rodata/unresolved/800FDFD0"]
       - [0xFEBF0, rodata, "rodata/shared/800FDFF0"]
       - [0xFEBF3, data, "rodata/unresolved/800FDFF3"]
-      - [0xFEBF4, data, "data/unresolved/800FDFF4"]
+      - [0xFEBF4, .data, "data/unresolved/800FDFF4"]
       - [0xFEC80, rodata, "rodata/shared/800FE080"]
       - [0xFEC83, data, "rodata/unresolved/800FE083"]
       - [0xFEC84, .data, "data/unresolved/800FE084"]
