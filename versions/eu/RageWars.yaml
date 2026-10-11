@@ -4249,7 +4249,7 @@ segments:
       - [0xF2AC0, data, "rodata/writable/800E58A0"]
       - [0xF2AC8, data, "src/rw_menu_event_handlers_E64A8_us_rev1.c"]
       - [0xF2B70, data, "rodata/writable/800E5950"]
-      - [0xF2B74, data, "rodata/unresolved/800F1F74"]
+      - [0xF2B74, .data, "rodata/unresolved/800F1F74"]
       - [0xF2C00, data, "rodata/writable/800E59E0"]
       - [0xF2C06, data, "rodata/unresolved/800E59E6"]
       - [0xF2C08, .data, "data/unresolved/800F2008"]
