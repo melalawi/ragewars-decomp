@@ -5293,7 +5293,7 @@ segments:
       - [0xDA1E4, data, "src/huffman_single_zero_runs.c"]
       - [0xDA39C, data, "src/huffman_delta_single_zero_run_nodes.c"]
       - [0xDABA8, .data, "src/huffman_five_zero_runs.c"]
-      - [0xDB440, data, "src/huffman_delta_five_zero_runs_nodes.c"]
+      - [0xDB440, .data, "src/huffman_delta_five_zero_runs_nodes.c"]
       - [0xDBC6C, .data, "src/huffman_nine_zero_runs.c"]
       - [0xDCBE4, .data, "src/huffman_delta_nine_zero_runs_nodes.c"]
       - [0xDD430, data, "src/huffman_signed_small_nodes.c"]
