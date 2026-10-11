@@ -3800,7 +3800,7 @@ segments:
       - [0xCCC10, rodata, "src/rw_pool_80245D30_D1270_us_rev1.c"]
       - [0xCCC18, data, "rodata/unresolved/800CC018"]
       - [0xCCC5C, data, "rodata/writable/800D06BC"]
-      - [0xCCC60, data, "rodata/unresolved/800CC060"]
+      - [0xCCC60, .data, "rodata/unresolved/800CC060"]
       - [0xCCEB0, .data, "rodata/writable/800CC2B0"]
       - [0xCCF04, data, "src/ragewars_audio_effect_D1564_us_rev1.c"]
       - [0xCD0C8, rodata, "src/rw_pool_8025AA2C_D1728_us_rev1.c"]
