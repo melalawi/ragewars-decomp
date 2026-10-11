@@ -4214,7 +4214,7 @@ segments:
       - [0xF0CA0, data, "src/ragewars_character_preview_positions_00_us_rev1.c"]
       - [0xF14F0, data, "rodata/writable/800E42D0"]
       - [0xF14F6, data, "rodata/unresolved/800E42D6"]
-      - [0xF14F8, data, "data/unresolved/800F08F8"]
+      - [0xF14F8, .data, "data/unresolved/800F08F8"]
       - [0xF1620, data, "rodata/writable/800E4400"]
       - [0xF1624, data, "src/ragewars_event_handlers_E5004_us_rev1.c"]
       - [0xF1670, data, "rodata/writable/800E4450"]
