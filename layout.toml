@@ -2026,6 +2026,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D2CA8"
+segment = "span_C76B0"
+members = ["rodata/writable/800D2C90_unclaimed_D38A8", "rodata/unresolved/800D2E40"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D302B"
 segment = "span_C25C0"
 members = ["rodata/unresolved/800D302B", "data/unresolved/800D302C"]
@@ -39320,6 +39328,17 @@ add = []
 omit = []
 
 [[unit]]
+path = "src/rodata.writable.800D2C90_unclaimed_D38A8.c"
+kind = "data"
+group = "data_800D2CA8"
+members = ["rodata/writable/800D2C90_unclaimed_D38A8"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
 path = "src/rodata.writable.800D3640_unclaimed_D611C_unclaimed_D611F.c"
 kind = "data"
 group = "data_800D551F"
@@ -39893,11 +39912,6 @@ scores = {us = 0.975}
 member = "rodata/writable/800D2B70_unclaimed_D3784"
 path = "src/fuzzy/rodata.writable.800D2B70_unclaimed_D3784.c"
 scores = {us-rev1 = 0.9142857142857143}
-
-[[fuzzy]]
-member = "rodata/writable/800D2C90_unclaimed_D38A8"
-path = "src/fuzzy/rodata.writable.800D2C90_unclaimed_D38A8.c"
-scores = {us-rev1 = 0.9803921568627451}
 
 [[fuzzy]]
 member = "rodata/writable/800D94E8"
