@@ -1970,6 +1970,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D0724"
+segment = "span_C76B0"
+members = ["src/ragewars_model_sway_samples_us_rev1.c", "rodata/unresolved/800D06C0_unclaimed_D1504"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D0A2C"
 segment = "span_C76B0"
 members = ["rodata/unresolved/800D0964_unclaimed_D162C", "src/ragewars_effect_id_scales_us_rev1.c"]
@@ -36687,6 +36695,17 @@ path = "src/ragewars_menu_strings_D6434_us_rev1.c"
 kind = "data"
 group = "data_800D5834"
 members = ["src/ragewars_menu_strings_D6434_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_model_sway_samples_us_rev1.c"
+kind = "data"
+group = "data_800D0724"
+members = ["src/ragewars_model_sway_samples_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
