@@ -1,5 +1,5 @@
 #ifdef VERSION_DE
-unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
+const unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
     0x000001A4, 0x00000002, 0x00000000, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000156,
     0x00000002, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000000, 0x00000155, 0x00000002,
     0x00000002, 0x00000001, 0x00000003, 0x00000004, 0x00000000, 0x00000157, 0x00000002, 0x00000003,
@@ -35,7 +35,7 @@ unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
 };
 #endif
 #ifdef VERSION_EU_X
-unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
+const unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
     0x000001AA, 0x00000002, 0x00000000, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x0000015C,
     0x00000002, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000000, 0x0000015B, 0x00000002,
     0x00000002, 0x00000001, 0x00000003, 0x00000004, 0x00000000, 0x0000015D, 0x00000002, 0x00000003,
@@ -71,7 +71,7 @@ unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
 };
 #endif
 #ifdef VERSION_EU
-unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
+const unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
     0x000001A6, 0x00000002, 0x00000000, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000158,
     0x00000002, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000000, 0x00000157, 0x00000002,
     0x00000002, 0x00000001, 0x00000003, 0x00000004, 0x00000000, 0x00000159, 0x00000002, 0x00000003,
@@ -107,7 +107,7 @@ unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
 };
 #endif
 #ifdef VERSION_US_REV
-unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
+const unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
     0x000001A6, 0x00000002, 0x00000000, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000158,
     0x00000002, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000000, 0x00000157, 0x00000002,
     0x00000002, 0x00000001, 0x00000003, 0x00000004, 0x00000000, 0x00000159, 0x00000002, 0x00000003,
@@ -143,7 +143,7 @@ unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
 };
 #endif
 #ifdef VERSION_US
-unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
+const unsigned int D_auto_src_ragewars_arena_menu_slots_us_rev1[252] = {
     0x000001A6, 0x00000002, 0x00000000, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000158,
     0x00000002, 0x00000001, 0xFFFFFFFF, 0x00000002, 0xFFFFFFFF, 0x00000000, 0x00000157, 0x00000002,
     0x00000002, 0x00000001, 0x00000003, 0x00000004, 0x00000000, 0x00000159, 0x00000002, 0x00000003,
