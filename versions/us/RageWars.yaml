@@ -3764,7 +3764,7 @@ segments:
       - [0xCAA98, rodata, "rodata/func_8021EEFC_de/800C9E98"]
       - [0xCAA9C, data, "rodata/unresolved/800C9E9C"]
       - [0xCAAB4, data, "rodata/writable/800CF1E4"]
-      - [0xCAABC, data, "rodata/unresolved/800CF1EC"]
+      - [0xCAABC, .data, "rodata/unresolved/800CF1EC"]
       - [0xCAAF8, data, "rodata/writable/800CF228"]
       - [0xCAAFC, rodata, "src/rw_pool_80225F44_CFE2C_us_rev1.c"]
       - [0xCAB00, .data, "rodata/unresolved/800C9F00"]
