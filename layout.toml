@@ -1882,6 +1882,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800F8202"
+segment = "span_E1720"
+members = ["rodata/unresolved/psyq_next_record_value_low_byte", "src/sn64_intelligence_type_records.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800FE7E0"
 segment = "span_C24F0"
 members = ["rodata/unresolved/800FE7E0"]
@@ -37273,6 +37281,17 @@ path = "src/rw_pool_8026FC9C_CA3E0_us_rev1.c"
 kind = "data"
 group = "data_800C97E0"
 members = ["src/rw_pool_8026FC9C_CA3E0_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/sn64_intelligence_type_records.c"
+kind = "data"
+group = "data_800F8202"
+members = ["src/sn64_intelligence_type_records.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
