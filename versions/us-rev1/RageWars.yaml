@@ -7389,7 +7389,7 @@ segments:
       - [0x1BCF28, data, "rodata/writable/801540E0"]
       - [0x1BCF4C, data, "rodata/unresolved/80154104"]
       - [0x1BCF94, .data, "src/resident_menu_pak_options.c"]
-      - [0x1BEE48, data, "src/resident_menu_inventory_settings.c"]
+      - [0x1BEE48, .data, "src/resident_menu_inventory_settings.c"]
   - name: "retained_1C0860"
     type: bin
     start: 0x1C0860
