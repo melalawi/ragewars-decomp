@@ -2442,6 +2442,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800D0F00"
+segment = "span_C76B0"
+members = ["rodata/unresolved/800D0F00", "src/ragewars_rdp_startup_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800D0FA0"
 segment = "span_C76B0"
 members = ["src/ragewars_texture_rgba16_mip_us_rev1.c"]
@@ -38341,6 +38349,17 @@ path = "src/ragewars_pixel_formats_us_rev1.c"
 kind = "data"
 group = "data_800E2B18"
 members = ["src/ragewars_pixel_formats_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_rdp_startup_us_rev1.c"
+kind = "data"
+group = "data_800D0F00"
+members = ["src/ragewars_rdp_startup_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
