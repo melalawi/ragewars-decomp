@@ -4280,7 +4280,7 @@ segments:
       - [0xE2240, data, "rodata/writable/800E5690"]
       - [0xE2248, data, "src/rw_menu_event_handlers_E6298_us_rev1.c"]
       - [0xE2330, data, "rodata/writable/800E5780"]
-      - [0xE2338, data, "rodata/unresolved/800E1738"]
+      - [0xE2338, .data, "rodata/unresolved/800E1738"]
       - [0xE23E0, data, "rodata/writable/800E5830"]
       - [0xE23E4, data, "src/rw_menu_event_handlers_E6434_us_rev1.c"]
       - [0xE2450, data, "rodata/writable/800E58A0"]
