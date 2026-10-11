@@ -5814,7 +5814,7 @@ segments:
 
       - [0xE467C, rodata, "src/rw_viewport_scalar_E467C_us_rev1.c"]
 
-      - [0xE4680, data, "src/ragewars_character_preview_positions_00_us_rev1.c"]
+      - [0xE4680, .data, "src/ragewars_character_preview_positions_00_us_rev1.c"]
 
       - [0xE46AC, data, "src/ragewars_character_preview_lights_00_us_rev1.c"]
 
