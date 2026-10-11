@@ -2754,6 +2754,14 @@ signals = ["adjacent"]
 sdk = false
 
 [[group]]
+name = "data_800E42D6"
+segment = "span_E1720"
+members = ["rodata/unresolved/800E42D6", "data/unresolved/800E42D8", "src/ragewars_event_handlers_E4F64_us_rev1.c"]
+evidence = "inferred"
+signals = ["adjacent"]
+sdk = false
+
+[[group]]
 name = "data_800E4A84"
 segment = "span_E1720"
 members = ["src/ragewars_arena_compatibility_us_rev1.c"]
@@ -37557,6 +37565,17 @@ path = "src/ragewars_effect_id_scales_us_rev1.c"
 kind = "data"
 group = "data_800D0A2C"
 members = ["src/ragewars_effect_id_scales_us_rev1.c"]
+toolchain = "gcc-2.8.1-sn64"
+
+[unit.options]
+add = []
+omit = []
+
+[[unit]]
+path = "src/ragewars_event_handlers_E4F64_us_rev1.c"
+kind = "data"
+group = "data_800E42D6"
+members = ["src/ragewars_event_handlers_E4F64_us_rev1.c"]
 toolchain = "gcc-2.8.1-sn64"
 
 [unit.options]
